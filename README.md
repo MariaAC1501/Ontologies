@@ -13,8 +13,8 @@ https://github.com/growgraph/ontocast
 ## Tasks
 - [x] Determinar si hay lenguaje formal para describir Ontologías.
 - [x] Buscar Ontología usada en el paper de Montero.
-- [x] Convertir la Ontología del paper a OWL.
-- [x] Investigar como cargar OWL a Python.+
-- [ ] Determinar que formato se necesita para extraer la información (PDF o qué)
+- [x] Descargar la Ontología del paper a OWL.
+- [x] Investigar como cargar OWL a Python.
+- [ ] Determinar que formato necesita el repositorio para extraer la información (PDF o qué)
 - [ ] Donde se guardarían los resultados, en que base de datos
 - [ ] Investigar si hay forma de que la base de datos que se cree se fusione con la Ontología OMSSA o si hay que buscar como fusionarlas
