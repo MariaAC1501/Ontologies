@@ -18,3 +18,5 @@ https://github.com/growgraph/ontocast
 - [ ] Determinar que formato necesita el repositorio para extraer la información (PDF o qué)
 - [ ] Donde se guardarían los resultados, en que base de datos
 - [ ] Investigar si hay forma de que la base de datos que se cree se fusione con la Ontología OMSSA o si hay que buscar como fusionarlas
+- [ ] Revisar documento nuevo
+- [ ] Si en el documento no está el enlace a Git debo pedirselo a Montero
