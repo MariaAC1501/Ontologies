@@ -18,3 +18,4 @@ https://github.com/growgraph/ontocast
 - [x] Investigar si hay forma de que la base de datos que se cree se fusione con la Ontología OMSSA o si hay que buscar como fusionarlas
 - [x] Revisar documento nuevo
 - [x] Si en el documento no está el enlace a Git debo pedirselo a Montero
+- [ ] Add OntoCast as submodule

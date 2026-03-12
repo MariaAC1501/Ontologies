@@ -388,3 +388,56 @@ Before using in CBR:
 | Append to existing OWL | ❌ **UNSAFE** | Must regenerate from clean |
 | Skip CSV step | ❌ **UNSAFE** | CSV is primary input format |
 | Manual OWL edit | ⚠️ **RISKY** | May break consistency |
+
+---
+
+## CBR Repository Setup
+
+### Encoding Fixes
+
+The CBR Java source files in `CBR-Ontology-For-Predictive-Maintenance/` use ISO-8859-1 encoding which causes compilation errors on modern systems. The following fixes were applied:
+
+#### Files Converted to UTF-8
+- `CBR-Ontology/CBRproject/src/OntologyTools/CSVtoOntology.java`
+- `CBR-Ontology/CBRproject/src/OntologyTools/OntologytoCSV.java`
+- `CBR-Ontology/CBRproject/src/User/CSVtoOntologyExec.java`
+- `CBR-Ontology/CBRproject/src/User/GeneralMethods.java`
+
+#### Configuration Updated
+- `CBR-Ontology/CBRproject/src/User/AppConfiguration.java` - Updated `data_path` to local directory
+
+#### Fix Script
+
+```bash
+# Convert ISO-8859-1 files to UTF-8
+cd CBR-Ontology-For-Predictive-Maintenance/CBR-Ontology/CBRproject/src
+for file in $(find . -name "*.java" -exec file {} \; | grep "ISO-8859" | cut -d: -f1); do
+  iconv -f ISO-8859-1 -t UTF-8 "$file" > "${file}.tmp" && mv "${file}.tmp" "$file"
+done
+
+# Update data_path in AppConfiguration.java
+# Edit: CBR-Ontology/CBRproject/src/User/AppConfiguration.java
+# Change: data_path = "C:YOUR-DIRECTORY\\..."
+# To: data_path = "C:\\Users\\...\\CBR-Ontology\\CBRproject\\data\\"
+```
+
+#### Git Setup
+
+```bash
+# Add .gitignore to exclude compiled files
+cat > CBR-Ontology-For-Predictive-Maintenance/.gitignore << 'EOF'
+# Compiled Java files
+*.class
+
+# Eclipse metadata
+.metadata/
+
+# Build directories
+bin/
+
+# IDE files
+.classpath
+.project
+.settings/
+EOF
+```
