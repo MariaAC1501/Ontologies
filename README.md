@@ -8,7 +8,7 @@ This project extracts structured ontological knowledge from academic papers to p
 
 ### Workflow
 
-1. **Input** 📄
+1. **Input**
    - Academic papers are provided in PDF format
 
 2. **Ontology Extraction with OntoCast** 🔧
