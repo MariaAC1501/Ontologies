@@ -2,16 +2,17 @@
 
 This project extracts structured ontological knowledge from academic papers to populate a Case-Based Reasoning (CBR) database for predictive maintenance strategy selection.
 
+**🚀 Quick Start:** See [ONTOCAST_CBR_INTEGRATION.md](ONTOCAST_CBR_INTEGRATION.md) for the complete integration guide.
+
 ---
 
 ### Workflow
 
 1. **Input** 📄
-   - Academic papers are provided in Markdown format
-   - *Note: Paper retriever and PDF-to-Markdown converter components are already implemented and will be integrated in a future iteration*
+   - Academic papers are provided in PDF format
 
 2. **Ontology Extraction with OntoCast** 🔧
-   - Processes Markdown documents using LLM-based extraction
+   - Processes PDF documents using LLM-based extraction
    - Generates RDF/Turtle semantic triples (instances conforming to OMSSA schema)
    - **⚠️ Does NOT evolve OMSSA schema** (uses `--skip-ontology-critique`)
 
@@ -97,7 +98,7 @@ The OMSSA ontology provides:
 The CBR system uses **CSV import via Java/Eclipse**, not direct OWL merging:
 
 ```
-Markdown Papers
+PDF Papers
       ↓
 OntoCast (RDF extraction)
       ↓
@@ -176,17 +177,7 @@ The CSV must have **19 columns** (0-18). Some columns in the data file are **not
 
 The `OntologytoCSVExec` cannot fully reconstruct the original CSV because some columns are **not stored** in the ontology.
 
-#### Problem 6: Java/Eclipse Dependency
-
-The CBR tool **requires**:
-- Eclipse IDE with Java 8+
-- Multiple JAR dependencies (OWL API 5.1.9, HermiT reasoner, myCBR SDK, Jena)
-- `AppConfiguration.java` must be edited to set file paths
-- `external-libs/` folder with all dependencies
-
-**Cannot run standalone** - must use Eclipse project structure.
-
-#### Problem 7: Reference Index Management
+#### Problem 6: Reference Index Management
 
 - Current max ID: **438** (from existing cases)
 - New cases must start from **439**
@@ -213,133 +204,9 @@ SKIP_ONTOLOGY_DEVELOPMENT=true
 SKIP_FACTS_RENDERING=false
 ```
 
-Run OntoCast on markdown papers → produces `extracted.ttl`
+Run OntoCast on PDF papers → produces `extracted.ttl`
 
 #### 2. Convert RDF → CSV (Complex Transformation)
-
-**Implementation needed**: `scripts/rdf_to_cbr_csv.py`
-
-```python
-#!/usr/bin/env python3
-"""
-Convert OntoCast RDF to CBR-compatible CSV.
-Handles text transformations, column ordering, and format requirements.
-"""
-
-import rdflib
-import pandas as pd
-import re
-from rdflib import Namespace
-
-OMSSA = Namespace("http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#")
-
-def to_sparql_safe(text):
-    """Convert to SPARQL-safe format"""
-    if not text:
-        return ""
-    text = text.replace(" ", "-")      # space → -
-    text = text.replace("-", "--")     # - → --
-    text = text.replace("/", "---")    # / → ---
-    return text
-
-def to_display_format(text):
-    """Convert underscores to spaces for display"""
-    if not text:
-        return ""
-    return text.replace("_", " ")
-
-def format_input_type(values):
-    """Format Input type: capitalize each word, comma+space separated"""
-    if not values:
-        return ""
-    formatted = []
-    for val in values:
-        # Capitalize each word
-        val = val.title()
-        formatted.append(val)
-    return ", ".join(formatted)
-
-def rdf_to_cbr_csv(rdf_file, csv_file, next_id=439):
-    """
-    Convert OntoCast RDF to CBR CSV format.
-    
-    Critical: Must maintain order-dependent column pairs!
-    """
-    g = rdflib.Graph()
-    g.parse(rdf_file, format="turtle")
-    
-    cases = []
-    
-    # Query each case with all relationships
-    query = """
-    SELECT ?case ?ref ?year ?task ?study ?studyType ?inputModel ?inputType 
-           ?modelType ?models ?onlineOffline ?title ?doi
-    WHERE {
-        ?case rdf:type def:Predictive_maintenance_case .
-        OPTIONAL { ?case def:has_text_value ?ref }
-        OPTIONAL { ?case def:has_publication_year ?year }
-        OPTIONAL { ?case def:has_predictive_maintenance_function ?task }
-        OPTIONAL { ?case def:has_part ?study }
-        OPTIONAL { ?study rdf:type ?studyType }
-        OPTIONAL { ?case def:has_part ?inputModel }
-        OPTIONAL { ?inputModel rdf:type ?inputModelType }
-        OPTIONAL { ?inputModel def:is_carrier_of ?inputType }
-        OPTIONAL { ?case def:function_uses_model ?models }
-        OPTIONAL { ?models rdf:type ?modelType }
-        OPTIONAL { ?case def:has_synchronization ?onlineOffline }
-        OPTIONAL { ?case def:has_title ?title }
-        OPTIONAL { ?case def:has_identifier ?doi }
-    }
-    """
-    
-    results = g.query(query, initNs={"def": OMSSA, "rdf": rdflib.RDF})
-    
-    for row in results:
-        case_data = {
-            'Reference': next_id,
-            'Publication Year': row.year or '',
-            'Task': to_display_format(row.task),
-            'Case study': to_display_format(row.study),
-            'Case study type': to_display_format(row.studyType),
-            'Input for the model': to_display_format(row.inputModel),
-            'Input type': format_input_type(row.inputType),
-            'Model Type': to_display_format(row.modelType),
-            'Models': to_display_format(row.models),
-            'Online/Off-line': to_display_format(row.onlineOffline),
-            'Study title': row.title or '',
-            'Publication identifier': row.doi or '',
-            # Fill remaining required columns with empty values
-            'Number of input variables': '',  # Not imported
-            'Data Pre-processing': '',         # Not imported
-            'Model Approach': '',              # Not imported
-            'Number of failure modes': '',
-            'Performance indicator': '',
-            'Performance': '',
-            'Complementary notes': '',
-        }
-        cases.append(case_data)
-        next_id += 1
-    
-    # Create DataFrame with exact column order
-    columns = [
-        'Reference', 'Publication Year', 'Task', 'Case study', 'Case study type',
-        'Input for the model', 'Number of input variables', 'Input type',
-        'Data Pre-processing', 'Model Approach', 'Model Type', 'Models',
-        'Online/Off-line', 'Number of failure modes', 'Performance indicator',
-        'Performance', 'Complementary notes', 'Study title', 'Publication identifier'
-    ]
-    
-    df = pd.DataFrame(cases, columns=columns)
-    
-    # CRITICAL: Save with semicolon separator!
-    df.to_csv(csv_file, sep=';', index=False, encoding='utf-8')
-    
-    return len(cases)
-
-if __name__ == "__main__":
-    count = rdf_to_cbr_csv("extracted.ttl", "new_cases.csv", next_id=439)
-    print(f"Converted {count} cases to CBR CSV")
-```
 
 #### 3. Import into CBR (Java/Eclipse Required)
 
@@ -363,20 +230,6 @@ base_ont_file_name = "OPMAD.owl"  # Clean ontology
 # 3. Run myCBRSetting.java (takes minutes - runs HermiT reasoner)
 # 4. Run GUI2.java or GUI3.java for queries
 ```
-
-#### 4. Validation Checklist
-
-Before using in CBR:
-
-- [ ] CSV has **19 columns** (0-18)
-- [ ] Separator is **semicolon** (`;`)
-- [ ] Reference IDs start from **439** (sequential)
-- [ ] Input type values are **capitalized** (e.g., `Temperature`)
-- [ ] Order-dependent columns have **matching element counts**
-- [ ] Text transformations applied (spaces→dashes in URIs)
-- [ ] OWL file is **RDF/XML** format (not Turtle)
-- [ ] HermiT reasoner runs without errors
-- [ ] `.prj` file is regenerated by `myCBRSetting`
 
 ### Safe vs. Unsafe Operations
 
@@ -419,25 +272,4 @@ done
 # Edit: CBR-Ontology/CBRproject/src/User/AppConfiguration.java
 # Change: data_path = "C:YOUR-DIRECTORY\\..."
 # To: data_path = "C:\\Users\\...\\CBR-Ontology\\CBRproject\\data\\"
-```
-
-#### Git Setup
-
-```bash
-# Add .gitignore to exclude compiled files
-cat > CBR-Ontology-For-Predictive-Maintenance/.gitignore << 'EOF'
-# Compiled Java files
-*.class
-
-# Eclipse metadata
-.metadata/
-
-# Build directories
-bin/
-
-# IDE files
-.classpath
-.project
-.settings/
-EOF
 ```

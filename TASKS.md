@@ -18,4 +18,15 @@ https://github.com/growgraph/ontocast
 - [x] Investigar si hay forma de que la base de datos que se cree se fusione con la Ontología OMSSA o si hay que buscar como fusionarlas
 - [x] Revisar documento nuevo
 - [x] Si en el documento no está el enlace a Git debo pedirselo a Montero
-- [ ] Add OntoCast as submodule
+- [x] Fix OntoCast bugs (custom model names, prefix handling, chunk sizes)
+- [x] Fix OntoCast file upload for .md/.txt files (was failing on markdown)
+- [x] Create RDF → CBR CSV converter script
+- [x] Create OMSSA user instruction for OntoCast
+- [x] Create pipeline integration script
+- [x] Test converter with sample cases
+- [x] Test end-to-end pipeline with real PDF
+- [x] Create JSON-to-CBR converter (RDF-star workaround)
+- [ ] Fix regex patterns in json_to_cbr.py
+- [ ] Test CBR import with generated CSV
+- [ ] Populate CBR database with extracted cases
+- [ ] Create batch processing script for multiple papers
