@@ -4,6 +4,78 @@ This project extracts structured ontological knowledge from academic papers to p
 
 ** Quick Start:** See [ONTOCAST_CBR_INTEGRATION.md](ONTOCAST_CBR_INTEGRATION.md) for the complete integration guide.
 
+**Headless CBR:** See [scripts/README.md](scripts/README.md) for non-GUI build and run commands.
+
+---
+
+## Setup on a new machine
+
+### 1. Clone the repository with submodules
+
+The Java CBR dependency is tracked as a git submodule in:
+
+- `external/CBR-Ontology-For-Predictive-Maintenance`
+
+Clone with:
+
+```bash
+git clone --recurse-submodules <repo-url>
+cd Ontologies
+```
+
+If you already cloned the repo without submodules, run:
+
+```bash
+git submodule update --init --recursive
+```
+
+### 2. Install Python dependencies
+
+`ontocast` is managed through this project's Python environment:
+
+```bash
+uv sync
+```
+
+### 3. Install Java
+
+The headless CBR workflow requires a JDK.
+
+Check that Java is available:
+
+```bash
+java -version
+javac -version
+```
+
+A modern JDK should work; the headless setup here was tested with Java 11.
+
+### 4. Build the headless CBR tooling
+
+No Eclipse is required for the headless workflow:
+
+```bash
+bash scripts/build_cbr.sh
+```
+
+This compiles:
+- the upstream CBR Java code from the submodule
+- the local headless adapter in `tools/cbr/HeadlessCBR.java`
+
+### 5. Run headless CBR commands
+
+Examples:
+
+```bash
+bash scripts/run_cbr.sh rebuild --csv "CleanedDATA V12-05-2021.csv"
+```
+
+```bash
+bash scripts/run_cbr.sh query-batch input_file.csv retrieval_results
+```
+
+See [scripts/README.md](scripts/README.md) for details.
+
 ---
 
 ### Workflow
