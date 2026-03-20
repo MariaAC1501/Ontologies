@@ -41,7 +41,7 @@ public class HeadlessCBR {
         parseArgs(args, options, positional);
 
         String command = positional.isEmpty() ? "help" : positional.get(0);
-        String dataDir = options.getOrDefault("data-dir", DEFAULT_DATA_DIR);
+        String dataDir = options.getOrDefault("data-dir", detectDefaultDataDir());
         String csv = options.getOrDefault("csv", "CleanedDATA V12-05-2021.csv");
         String baseOnt = options.getOrDefault("base-ont", "OPMAD.owl");
         String ont = options.getOrDefault("ont", "OPMADdatabase.owl");
@@ -210,6 +210,46 @@ public class HeadlessCBR {
         return value.endsWith(".csv") ? value.substring(0, value.length() - 4) : value;
     }
 
+    private static String detectDefaultDataDir() {
+        List<String> candidates = new ArrayList<>();
+
+        String explicit = System.getenv("ONTOLOGIES_CBR_DATA_DIR");
+        if (explicit != null && !explicit.isBlank()) {
+            candidates.add(explicit);
+        }
+
+        candidates.add(DEFAULT_DATA_DIR);
+
+        String condaPrefix = System.getenv("CONDA_PREFIX");
+        if (condaPrefix != null && !condaPrefix.isBlank()) {
+            candidates.add(Paths.get(condaPrefix, "share", "ontologies-cbr", "data").toString());
+        }
+
+        try {
+            Path codeSource = Paths.get(HeadlessCBR.class.getProtectionDomain().getCodeSource().getLocation().toURI());
+            Path base = Files.isRegularFile(codeSource) ? codeSource.getParent() : codeSource;
+            if (base != null) {
+                candidates.add(base.resolve("data").toString());
+                if (base.getParent() != null) {
+                    candidates.add(base.getParent().resolve("share").resolve("ontologies-cbr").resolve("data").toString());
+                }
+            }
+        } catch (Exception ignored) {
+        }
+
+        for (String candidate : candidates) {
+            if (candidate == null || candidate.isBlank()) {
+                continue;
+            }
+            Path path = Paths.get(candidate).toAbsolutePath().normalize();
+            if (Files.isDirectory(path)) {
+                return path.toString();
+            }
+        }
+
+        return Paths.get(DEFAULT_DATA_DIR).toAbsolutePath().normalize().toString();
+    }
+
     private static void bootstrapAppConfiguration(String dataDir, String csv, String baseOnt, String ont, String project) throws Exception {
         Path normalized = Paths.get(dataDir).toAbsolutePath().normalize();
         if (!Files.isDirectory(normalized)) {
@@ -296,11 +336,17 @@ public class HeadlessCBR {
             System.err.println();
         }
         System.out.println("Usage:");
-        System.out.println("  HeadlessCBR [--data-dir DIR] [--csv FILE] [--base-ont FILE] [--ont FILE] [--project FILE] csv-to-ontology");
-        System.out.println("  HeadlessCBR [--data-dir DIR] [--csv FILE] [--base-ont FILE] [--ont FILE] [--project FILE] prepare-project");
-        System.out.println("  HeadlessCBR [--data-dir DIR] [--csv FILE] [--base-ont FILE] [--ont FILE] [--project FILE] rebuild");
-        System.out.println("  HeadlessCBR [--data-dir DIR] [--project FILE] query-batch <input.csv> <output-prefix>");
-        System.out.println("  HeadlessCBR [--data-dir DIR] [--project FILE] query-one [--task VALUE] [--case-study-type VALUE] [--case-study VALUE] [--online-offline VALUE] [--input-for-model VALUE] [--input-type VALUE] [--number-of-cases N] [--amalgamation VALUE] [--w1 N] [--w2 N] [--w3 N] [--w4 N] [--w5 N] [--w6 N]");
+        System.out.println("  ontologies-cbr [--data-dir DIR] [--csv FILE] [--base-ont FILE] [--ont FILE] [--project FILE] csv-to-ontology");
+        System.out.println("  ontologies-cbr [--data-dir DIR] [--csv FILE] [--base-ont FILE] [--ont FILE] [--project FILE] prepare-project");
+        System.out.println("  ontologies-cbr [--data-dir DIR] [--csv FILE] [--base-ont FILE] [--ont FILE] [--project FILE] rebuild");
+        System.out.println("  ontologies-cbr [--data-dir DIR] [--project FILE] query-batch <input.csv> <output-prefix>");
+        System.out.println("  ontologies-cbr [--data-dir DIR] [--project FILE] query-one [--task VALUE] [--case-study-type VALUE] [--case-study VALUE] [--online-offline VALUE] [--input-for-model VALUE] [--input-type VALUE] [--number-of-cases N] [--amalgamation VALUE] [--w1 N] [--w2 N] [--w3 N] [--w4 N] [--w5 N] [--w6 N]");
+        System.out.println();
+        System.out.println("Data directory resolution order:");
+        System.out.println("  1. --data-dir");
+        System.out.println("  2. ONTOLOGIES_CBR_DATA_DIR");
+        System.out.println("  3. repository default: " + DEFAULT_DATA_DIR);
+        System.out.println("  4. $CONDA_PREFIX/share/ontologies-cbr/data");
         System.exit(error == null ? 0 : 1);
     }
 }

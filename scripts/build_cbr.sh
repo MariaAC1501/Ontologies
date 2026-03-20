@@ -6,8 +6,11 @@ CBR_DIR="$ROOT_DIR/external/CBR-Ontology-For-Predictive-Maintenance/CBR-Ontology
 BUILD_DIR="$ROOT_DIR/.build/cbr"
 UPSTREAM_BIN="$BUILD_DIR/upstream-bin"
 LOCAL_BIN="$BUILD_DIR/local-bin"
+DIST_DIR="$BUILD_DIR/dist"
+JAR_PATH="$DIST_DIR/ontologies-cbr-headless.jar"
 
-mkdir -p "$UPSTREAM_BIN" "$LOCAL_BIN"
+rm -rf "$UPSTREAM_BIN" "$LOCAL_BIN"
+mkdir -p "$UPSTREAM_BIN" "$LOCAL_BIN" "$DIST_DIR"
 
 CLASSPATH=$(find "$CBR_DIR/external-libs" -name '*.jar' | sort | paste -sd: -)
 
@@ -25,9 +28,14 @@ javac \
   -d "$LOCAL_BIN" \
   "$ROOT_DIR/tools/cbr/HeadlessCBR.java"
 
-printf '%s\n' "$LOCAL_BIN:$UPSTREAM_BIN:$CLASSPATH" > "$BUILD_DIR/classpath.txt"
+jar --create --file "$JAR_PATH" -C "$UPSTREAM_BIN" . -C "$LOCAL_BIN" .
 
-echo "Built CBR classes"
-echo "  upstream: $UPSTREAM_BIN"
-echo "  local:    $LOCAL_BIN"
-echo "  cp file:  $BUILD_DIR/classpath.txt"
+printf '%s\n' "$LOCAL_BIN:$UPSTREAM_BIN:$CLASSPATH" > "$BUILD_DIR/classpath.txt"
+printf '%s\n' "$JAR_PATH:$CLASSPATH" > "$BUILD_DIR/jar-classpath.txt"
+
+echo "Built CBR classes and jar"
+echo "  upstream:      $UPSTREAM_BIN"
+echo "  local:         $LOCAL_BIN"
+echo "  jar:           $JAR_PATH"
+echo "  cp file:       $BUILD_DIR/classpath.txt"
+echo "  jar cp file:   $BUILD_DIR/jar-classpath.txt"

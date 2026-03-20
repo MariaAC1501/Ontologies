@@ -1,0 +1,38 @@
+{% set name = "ontologies-cbr" %}
+{% set version = "0.1.0" %}
+
+package:
+  name: {{ name }}
+  version: {{ version }}
+
+source:
+  path: ../../..
+
+build:
+  number: 0
+  noarch: generic
+
+requirements:
+  build:
+    - openjdk =11
+    - bash
+    - findutils
+    - coreutils
+  run:
+    - openjdk =11
+    - bash
+
+test:
+  commands:
+    - test -f "$PREFIX/share/ontologies-cbr/ontologies-cbr-headless.jar"
+    - test -d "$PREFIX/share/ontologies-cbr/data"
+    - test -d "$PREFIX/share/ontologies-cbr/lib"
+    - ontologies-cbr help
+    - ontologies-cbr query-one --task "Remaining useful life estimation" --case-study-type "Rotary machines" --input-for-model "Time series" --input-type "Temperature, Fluid Pressure, Spinning speed" --number-of-cases 1
+
+about:
+  summary: Headless Java CBR tooling and ontology assets for the Ontologies project
+  license: LicenseRef-Project-Internal
+  description: |
+    Packages the vendored predictive-maintenance CBR Java code as a relocatable
+    jar plus ontology/data assets and a thin CLI entrypoint for Conda-based setup.
