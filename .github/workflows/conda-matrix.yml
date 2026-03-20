@@ -17,24 +17,22 @@ jobs:
           - os: ubuntu-latest
             artifact_name: conda-bld-linux
             conda_root: /home/runner/miniforge3
+            env_prefix: /home/runner/miniforge3/envs/ontologies-ci
             shell: bash
-            build_script: bash scripts/build_conda_packages.sh
-            artifact_path: /home/runner/miniforge3/conda-bld
           - os: windows-latest
             artifact_name: conda-bld-windows
             conda_root: C:\Miniforge3
+            env_prefix: C:\Miniforge3\envs\ontologies-ci
             shell: pwsh
-            build_script: powershell -ExecutionPolicy Bypass -File scripts/build_conda_packages.ps1
-            artifact_path: C:\Miniforge3\conda-bld
           - os: macos-latest
             artifact_name: conda-bld-macos
             conda_root: /Users/runner/miniforge3
+            env_prefix: /Users/runner/miniforge3/envs/ontologies-ci
             shell: bash
-            build_script: bash scripts/build_conda_packages.sh
-            artifact_path: /Users/runner/miniforge3/conda-bld
     runs-on: ${{ matrix.os }}
     env:
       CONDA_ROOT: ${{ matrix.conda_root }}
+      ENV_PREFIX: ${{ matrix.env_prefix }}
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -57,15 +55,21 @@ jobs:
         shell: ${{ matrix.shell }}
         run: conda env update -n base -f environment.yml
 
-      - name: Build local Conda packages
-        shell: ${{ matrix.shell }}
-        run: ${{ matrix.build_script }}
+      - name: Build local Conda packages on Unix
+        if: runner.os != 'Windows'
+        shell: bash
+        run: bash scripts/build_conda_packages.sh
+
+      - name: Build local Conda packages on Windows
+        if: runner.os == 'Windows'
+        shell: pwsh
+        run: powershell -ExecutionPolicy Bypass -File scripts/build_conda_packages.ps1
 
       - name: Upload local conda channel
         uses: actions/upload-artifact@v4
         with:
           name: ${{ matrix.artifact_name }}
-          path: ${{ matrix.artifact_path }}
+          path: ${{ env.CONDA_ROOT }}/conda-bld
           if-no-files-found: error
 
   test:
@@ -77,38 +81,22 @@ jobs:
           - os: ubuntu-latest
             artifact_name: conda-bld-linux
             conda_root: /home/runner/miniforge3
-            download_path: /home/runner/miniforge3/conda-bld
-            shell: bash
-            create_script: bash scripts/create_conda_env.sh "$CONDA_ROOT/envs/ontologies-ci"
             env_prefix: /home/runner/miniforge3/envs/ontologies-ci
-            smoke_test: |
-              conda run -p "$ENV_PREFIX" ontologies-cbr help
-              conda run -p "$ENV_PREFIX" ontocast --help
+            shell: bash
           - os: windows-latest
             artifact_name: conda-bld-windows
             conda_root: C:\Miniforge3
-            download_path: C:\Miniforge3\conda-bld
-            shell: pwsh
-            create_script: powershell -ExecutionPolicy Bypass -File scripts/create_conda_env.ps1 "$env:CONDA_ROOT\envs\ontologies-ci"
             env_prefix: C:\Miniforge3\envs\ontologies-ci
-            smoke_test: |
-              conda run -p "$env:ENV_PREFIX" ontologies-cbr help
-              conda run -p "$env:ENV_PREFIX" ontocast --help
+            shell: pwsh
           - os: macos-latest
             artifact_name: conda-bld-macos
             conda_root: /Users/runner/miniforge3
-            download_path: /Users/runner/miniforge3/conda-bld
-            shell: bash
-            create_script: bash scripts/create_conda_env.sh "$CONDA_ROOT/envs/ontologies-ci"
             env_prefix: /Users/runner/miniforge3/envs/ontologies-ci
-            smoke_test: |
-              conda run -p "$ENV_PREFIX" ontologies-cbr help
-              conda run -p "$ENV_PREFIX" ontocast --help
+            shell: bash
     runs-on: ${{ matrix.os }}
     env:
       CONDA_ROOT: ${{ matrix.conda_root }}
       ENV_PREFIX: ${{ matrix.env_prefix }}
-      DOWNLOAD_PATH: ${{ matrix.download_path }}
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -135,12 +123,28 @@ jobs:
         uses: actions/download-artifact@v4
         with:
           name: ${{ matrix.artifact_name }}
-          path: ${{ matrix.download_path }}
+          path: ${{ env.CONDA_ROOT }}/conda-bld
 
-      - name: Create stack environment from local channel
-        shell: ${{ matrix.shell }}
-        run: ${{ matrix.create_script }}
+      - name: Create stack environment on Unix
+        if: runner.os != 'Windows'
+        shell: bash
+        run: bash scripts/create_conda_env.sh "$CONDA_ROOT/envs/ontologies-ci"
 
-      - name: Smoke test installed CLIs
-        shell: ${{ matrix.shell }}
-        run: ${{ matrix.smoke_test }}
+      - name: Create stack environment on Windows
+        if: runner.os == 'Windows'
+        shell: pwsh
+        run: powershell -ExecutionPolicy Bypass -File scripts/create_conda_env.ps1 "$env:CONDA_ROOT\envs\ontologies-ci"
+
+      - name: Smoke test installed CLIs on Unix
+        if: runner.os != 'Windows'
+        shell: bash
+        run: |
+          conda run -p "$ENV_PREFIX" ontologies-cbr help
+          conda run -p "$ENV_PREFIX" ontocast --help
+
+      - name: Smoke test installed CLIs on Windows
+        if: runner.os == 'Windows'
+        shell: pwsh
+        run: |
+          conda run -p "$env:ENV_PREFIX" ontologies-cbr help
+          conda run -p "$env:ENV_PREFIX" ontocast --help
