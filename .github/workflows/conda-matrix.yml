@@ -18,17 +18,14 @@ jobs:
             artifact_name: conda-bld-linux
             conda_root: /home/runner/miniforge3
             env_prefix: /home/runner/miniforge3/envs/ontologies-ci
-            shell: bash
           - os: windows-latest
             artifact_name: conda-bld-windows
             conda_root: C:\Miniforge3
             env_prefix: C:\Miniforge3\envs\ontologies-ci
-            shell: pwsh
           - os: macos-latest
             artifact_name: conda-bld-macos
             conda_root: /Users/runner/miniforge3
             env_prefix: /Users/runner/miniforge3/envs/ontologies-ci
-            shell: bash
     runs-on: ${{ matrix.os }}
     env:
       CONDA_ROOT: ${{ matrix.conda_root }}
@@ -51,8 +48,14 @@ jobs:
           channels: conda-forge
           channel-priority: strict
 
-      - name: Install build dependencies
-        shell: ${{ matrix.shell }}
+      - name: Install build dependencies on Unix
+        if: runner.os != 'Windows'
+        shell: bash
+        run: conda env update -n base -f environment.yml
+
+      - name: Install build dependencies on Windows
+        if: runner.os == 'Windows'
+        shell: pwsh
         run: conda env update -n base -f environment.yml
 
       - name: Build local Conda packages on Unix
@@ -82,17 +85,14 @@ jobs:
             artifact_name: conda-bld-linux
             conda_root: /home/runner/miniforge3
             env_prefix: /home/runner/miniforge3/envs/ontologies-ci
-            shell: bash
           - os: windows-latest
             artifact_name: conda-bld-windows
             conda_root: C:\Miniforge3
             env_prefix: C:\Miniforge3\envs\ontologies-ci
-            shell: pwsh
           - os: macos-latest
             artifact_name: conda-bld-macos
             conda_root: /Users/runner/miniforge3
             env_prefix: /Users/runner/miniforge3/envs/ontologies-ci
-            shell: bash
     runs-on: ${{ matrix.os }}
     env:
       CONDA_ROOT: ${{ matrix.conda_root }}
@@ -115,8 +115,14 @@ jobs:
           channels: conda-forge
           channel-priority: strict
 
-      - name: Install build dependencies
-        shell: ${{ matrix.shell }}
+      - name: Install build dependencies on Unix
+        if: runner.os != 'Windows'
+        shell: bash
+        run: conda env update -n base -f environment.yml
+
+      - name: Install build dependencies on Windows
+        if: runner.os == 'Windows'
+        shell: pwsh
         run: conda env update -n base -f environment.yml
 
       - name: Download local conda channel
