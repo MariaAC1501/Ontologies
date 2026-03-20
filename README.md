@@ -2,13 +2,13 @@
 
 This project extracts structured ontological knowledge from academic papers to populate a Case-Based Reasoning (CBR) database for predictive maintenance strategy selection.
 
-**🚀 Quick Start:** See [ONTOCAST_CBR_INTEGRATION.md](ONTOCAST_CBR_INTEGRATION.md) for the complete integration guide.
+** Quick Start:** See [ONTOCAST_CBR_INTEGRATION.md](ONTOCAST_CBR_INTEGRATION.md) for the complete integration guide.
 
 ---
 
 ### Workflow
 
-1. **Input** 📄
+1. **Input**
    - Academic papers are provided in PDF format
 
 2. **Ontology Extraction with OntoCast** 🔧
