@@ -10,23 +10,24 @@ source:
 
 build:
   number: 0
-  noarch: generic
 
 requirements:
   build:
     - openjdk =11
-    - bash
-    - findutils
-    - coreutils
+    - bash  # [not win]
+    - findutils  # [not win]
+    - coreutils  # [not win]
   run:
     - openjdk =11
-    - bash
 
 test:
   commands:
-    - test -f "$PREFIX/share/ontologies-cbr/ontologies-cbr-headless.jar"
-    - test -d "$PREFIX/share/ontologies-cbr/data"
-    - test -d "$PREFIX/share/ontologies-cbr/lib"
+    - test -f "$PREFIX/share/ontologies-cbr/ontologies-cbr-headless.jar"  # [not win]
+    - test -d "$PREFIX/share/ontologies-cbr/data"  # [not win]
+    - test -d "$PREFIX/share/ontologies-cbr/lib"  # [not win]
+    - if not exist "%PREFIX%\\share\\ontologies-cbr\\ontologies-cbr-headless.jar" exit 1  # [win]
+    - if not exist "%PREFIX%\\share\\ontologies-cbr\\data" exit 1  # [win]
+    - if not exist "%PREFIX%\\share\\ontologies-cbr\\lib" exit 1  # [win]
     - ontologies-cbr help
     - ontologies-cbr query-one --task "Remaining useful life estimation" --case-study-type "Rotary machines" --input-for-model "Time series" --input-type "Temperature, Fluid Pressure, Spinning speed" --number-of-cases 1
 

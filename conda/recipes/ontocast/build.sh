@@ -7,10 +7,10 @@ install_pkg() {
   "$PYTHON" -m pip install --no-deps --no-index --find-links "$WHEEL_DIR" "$@"
 }
 
-install_pkg ontocast==0.3.0
-install_pkg neo4j==6.1.0
-install_pkg duckduckgo-search==8.1.1
-install_pkg suthing==0.5.1
+install_pkg "$WHEEL_DIR/ontocast-0.3.0-py3-none-any.whl"
+install_pkg "$WHEEL_DIR/neo4j-6.1.0-py3-none-any.whl"
+install_pkg "$WHEEL_DIR/duckduckgo_search-8.1.1-py3-none-any.whl"
+install_pkg "$WHEEL_DIR/suthing-0.5.1-py3-none-any.whl"
 
 if [[ "${target_platform:-}" == osx-* ]]; then
   install_pkg "$WHEEL_DIR/primp-0.15.0-cp38-abi3-macosx_11_0_arm64.whl"
