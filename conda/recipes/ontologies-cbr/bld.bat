@@ -27,7 +27,7 @@ powershell -NoProfile -ExecutionPolicy Bypass -Command ^
   "$upstreamBin = $env:UPSTREAM_BIN;" ^
   "$localBin = $env:LOCAL_BIN;" ^
   "$jarPath = $env:JAR_PATH;" ^
-  "$jars = Get-ChildItem -Path (Join-Path $cbrDir 'external-libs') -Filter *.jar | Sort-Object FullName | ForEach-Object { $_.FullName };" ^
+  "$jars = Get-ChildItem -Path (Join-Path $cbrDir 'external-libs') -Filter *.jar -Recurse | Sort-Object FullName | ForEach-Object { $_.FullName };" ^
   "$classpath = ($jars -join ';');" ^
   "$sources = Join-Path $buildDir 'upstream-sources.txt';" ^
   "Get-ChildItem -Path (Join-Path $cbrDir 'src') -Filter *.java -Recurse | Sort-Object FullName | ForEach-Object { $_.FullName } | Set-Content -Encoding ascii $sources;" ^
@@ -44,7 +44,7 @@ if not exist "%INSTALL_BIN%" mkdir "%INSTALL_BIN%" || exit /b 1
 copy /y "%JAR_PATH%" "%INSTALL_ROOT%\ontologies-cbr-headless.jar" >nul || exit /b 1
 powershell -NoProfile -ExecutionPolicy Bypass -Command ^
   "$ErrorActionPreference = 'Stop';" ^
-  "Copy-Item -Path (Join-Path $env:CBR_PROJECT_DIR 'external-libs\*.jar') -Destination $env:INSTALL_LIB -Force;" ^
+  "Get-ChildItem -Path (Join-Path $env:CBR_PROJECT_DIR 'external-libs') -Filter *.jar -Recurse | Copy-Item -Destination $env:INSTALL_LIB -Force;" ^
   "Copy-Item -Path (Join-Path $env:CBR_PROJECT_DIR 'data\*') -Destination $env:INSTALL_DATA -Recurse -Force" || exit /b 1
 
 echo @echo off> "%INSTALL_BIN%\ontologies-cbr.bat"
