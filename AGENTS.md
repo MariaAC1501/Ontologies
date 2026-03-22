@@ -1,4 +1,5 @@
 - Starting the OntoCast server is a blocking command.
+- The Conda packaging for OntoCast (`conda/recipes/ontocast/`) and the vendored wheels in `conda/recipes/ontocast/wheels/` are **our own internal work**, not part of the upstream OntoCast project. When filing issues or communicating with the upstream `growgraph/ontocast` repo, never reference the conda recipe, vendored wheels, `conda/recipes/`, helper scripts, or any other internal packaging detail. Frame everything in terms of standard `pip install` / `pyproject.toml` that any upstream user would encounter.
 - Prefer the Conda-first workflow for project setup.
 - Current Conda packaging status:
   - `ontologies-cbr`: builds and smoke-tests successfully
