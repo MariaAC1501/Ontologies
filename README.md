@@ -35,6 +35,7 @@ git submodule update --init --recursive
 ## Conda-first setup
 
 This is the recommended setup for colleagues because it installs the Python and Java parts together.
+The Conda workflow in this repo is now validated in CI on macOS, Linux, and Windows.
 
 ### 1. Install Conda
 
@@ -128,9 +129,27 @@ Default env location:
 
 ### 5. Verify the installed tools
 
+After creating the environment, activate it and run:
+
 ```bash
+conda activate ontologies
 ontologies-cbr help
 ontocast --help
+```
+
+On Windows PowerShell:
+
+```powershell
+conda activate ontologies
+ontologies-cbr help
+python -c "import ontocast; import ontocast.cli.serve"
+```
+
+If you created the environment at a custom prefix instead of the default name, use `conda run`:
+
+```bash
+conda run -p /path/to/env ontologies-cbr help
+conda run -p /path/to/env ontocast --help
 ```
 
 ## Supported Conda packaging targets
@@ -164,7 +183,10 @@ Each CI job:
 3. installs build dependencies from `environment.yml`
 4. builds `ontologies-cbr`, `ontocast`, and `ontologies-stack`
 5. creates a fresh environment from the locally built channel
-6. runs smoke tests for `ontologies-cbr` and `ontocast`
+6. runs smoke tests for the installed tools
+
+Current status:
+- the Conda matrix build/test workflow is passing on macOS, Linux, and Windows
 
 ## Local non-Conda CBR workflow
 

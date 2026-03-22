@@ -1,14 +1,20 @@
 - Starting the OntoCast server is a blocking command.
 - Prefer the Conda-first workflow for project setup.
-- Current local Conda packaging status:
+- Current Conda packaging status:
   - `ontologies-cbr`: builds and smoke-tests successfully
   - `ontocast`: packaged for `osx-arm64`, `linux-64`, and `win-64`
   - `ontologies-stack`: meta-package installs both
+  - GitHub Actions Conda matrix is green on macOS, Linux, and Windows
 - Key helper scripts:
   - `scripts/build_conda_packages.sh`
   - `scripts/create_conda_env.sh`
   - `scripts/build_conda_packages.ps1`
   - `scripts/create_conda_env.ps1`
+- Conda usage:
+  - build local packages with the `build_conda_packages` helper for your shell
+  - create the runnable stack env with the `create_conda_env` helper
+  - default env name/prefix is `ontologies` under `CONDA_ROOT`
+  - on Windows, prefer `python -c "import ontocast; import ontocast.cli.serve"` for smoke checks in automation
 - OntoCast recipe uses vendored wheels in `conda/recipes/ontocast/wheels/` for PyPI-only deps.
 - Windows support for OntoCast uses `conda/recipes/ontocast/bld.bat`.
 - CI workflow: `.github/workflows/conda-matrix.yml` builds/tests the stack on macOS, Linux, and Windows.
