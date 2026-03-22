@@ -55,9 +55,9 @@ requirements:
 
 test:
   commands:
-    - ontocast --help
-    - cmp-states --help
-    - python -c "import ontocast; import ontocast.cli.serve"
+    - ontocast --help  # [not win]
+    - cmp-states --help  # [not win]
+    - python -c "import ontocast; import ontocast.cli.serve; import ontocast.cli.cmp_states"
 
 about:
   summary: Agentic ontology and knowledge graph co-generation

@@ -153,4 +153,4 @@ jobs:
         shell: pwsh
         run: |
           conda run -p "$env:ENV_PREFIX" ontologies-cbr help
-          conda run -p "$env:ENV_PREFIX" ontocast --help
+          conda run -p "$env:ENV_PREFIX" python -c "import ontocast; import ontocast.cli.serve; import ontocast.cli.cmp_states"
