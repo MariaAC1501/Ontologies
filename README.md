@@ -297,8 +297,48 @@ bash scripts/run_cbr.sh query-one \
 | `pipeline/SCHEMA_MAPPING.md` | Detailed documentation of the OPMAD field mapping |
 | `pipeline/INTEGRATION_RESULTS.md` | End-to-end test results |
 
+## Full OntoCast mode (evolved ontology)
+
+A second extraction mode runs OntoCast with full ontology evolution — no seed ontology, no skipped critique — and queries results via SPARQL instead of CBR.
+
+### Run full-mode extraction
+
+```bash
+export OPENAI_API_KEY=sk-...
+bash pipeline/full_mode/run_full_extraction.sh your_paper.pdf
+```
+
+### Query the evolved ontology with SPARQL
+
+```bash
+# Summary statistics
+python pipeline/full_mode/sparql_query.py \
+  --ontology pipeline/full_mode/test_output/ontology_*.ttl \
+  --facts pipeline/full_mode/test_output/facts_*.ttl \
+  --preset summary
+
+# List all discovered classes
+python pipeline/full_mode/sparql_query.py \
+  --ontology pipeline/full_mode/test_output/ontology_*.ttl \
+  --facts pipeline/full_mode/test_output/facts_*.ttl \
+  --preset classes
+
+# Custom SPARQL query
+python pipeline/full_mode/sparql_query.py \
+  --ontology pipeline/full_mode/test_output/ontology_*.ttl \
+  --facts pipeline/full_mode/test_output/facts_*.ttl \
+  --query "SELECT ?s ?type WHERE { ?s a ?type } LIMIT 10"
+```
+
+### Compare both extraction modes
+
+```bash
+bash pipeline/comparison/run_comparison.sh
+# Writes pipeline/comparison/COMPARISON_RESULTS.md
+```
+
 ## Notes
 
 - `ontocast` requires an OpenAI API key for extraction runs.
-- In this repo, OntoCast is used as a **fixed-ontology extractor** for the CBR system, not for full ontology evolution.
+- The **fixed OPMAD** mode feeds into the CBR system via CSV. The **full evolution** mode is queried via SPARQL.
 - Starting the OntoCast server is a blocking command.
