@@ -19,12 +19,13 @@ Run OntoCast in full ontology-evolution mode against `example_paper.pdf` with:
 
 ## Environment
 
-The run script looks for `ontocast` in this order:
-1. `ONTOCAST_BIN` environment variable (if set)
-2. `ontocast` on PATH (e.g., from an activated Conda environment)
-3. Local venv at `pipeline/full_mode/.venv/bin/ontocast`
+Activate the Conda environment built by `scripts/create_conda_env.sh`:
 
-**Recommended**: use the Conda environment built by `scripts/create_conda_env.sh`.
+```bash
+conda activate ontologies
+```
+
+The run script uses `ontocast` from PATH. You can override with `ONTOCAST_BIN` if needed.
 
 - `OPENAI_API_KEY` is loaded from the repo-root `.env`
 - Model: `gpt-4o` (configurable in `ontocast_full_config.env`)
@@ -86,10 +87,10 @@ The first full-mode attempt failed during clustering with:
 Entity clustering requires the sentence-transformers package.
 ```
 
-Fix applied locally for the venv:
+Fix: ensure `sentence-transformers` is installed in the Conda environment:
 
 ```bash
-source pipeline/full_mode/.venv/bin/activate
+conda activate ontologies
 pip install sentence-transformers
 ```
 
