@@ -19,11 +19,13 @@ A later comparison between extraction against a fixed ontology and extraction ag
 
 - `external/CBR-Ontology-For-Predictive-Maintenance/` — upstream Java CBR project
 - `tools/cbr/HeadlessCBR.java` — relocatable CLI adapter for CBR
+- `pipeline/` — integrated extraction pipeline (schema, seed ontology, bridge, config)
 - `scripts/build_cbr.sh` — local jar build
 - `scripts/run_cbr.sh` — local jar runner
 - `conda/recipes/ontologies-cbr/` — Conda recipe for the packaged CBR CLI
-- `conda/recipes/ontocast/` — Conda recipe for OntoCast
-- `conda/recipes/ontologies-stack/` — meta-package that installs both
+- `conda/recipes/ontocast/` — Conda recipe for OntoCast (with local patches)
+- `conda/recipes/ontologies-pipeline/` — Conda recipe for the extraction pipeline
+- `conda/recipes/ontologies-stack/` — meta-package that installs all three
 - `scripts/build_conda_packages.sh` / `scripts/build_conda_packages.ps1` — build local Conda packages
 - `scripts/create_conda_env.sh` / `scripts/create_conda_env.ps1` — create an env from the local package channel
 - `.github/workflows/conda-matrix.yml` — CI matrix build/test workflow
@@ -102,6 +104,7 @@ powershell -ExecutionPolicy Bypass -File scripts/build_conda_packages.ps1
 This builds:
 - `ontologies-cbr`
 - `ontocast`
+- `ontologies-pipeline`
 - `ontologies-stack`
 
 and indexes your local Conda channel at:
@@ -192,12 +195,27 @@ Each CI job:
 1. checks out the repo with submodules
 2. installs Miniforge
 3. installs build dependencies from `environment.yml`
-4. builds `ontologies-cbr`, `ontocast`, and `ontologies-stack`
+4. builds `ontologies-cbr`, `ontocast`, `ontologies-pipeline`, and `ontologies-stack`
 5. creates a fresh environment from the locally built channel
 6. runs smoke tests for the installed tools
 
 Current status:
 - the Conda matrix build/test workflow is passing on macOS, Linux, and Windows
+
+## Conda package details
+
+| Package | Type | Contents |
+|---------|------|----------|
+| `ontologies-cbr` | `noarch` | Headless CBR jar, upstream jars, ontology/data assets, `ontologies-cbr` CLI wrapper |
+| `ontocast` | per-platform | OntoCast Python package with vendored PyPI wheels and local patches |
+| `ontologies-pipeline` | `noarch` | Extraction schema, seed ontology, facts→CSV bridge, config, run scripts |
+| `ontologies-stack` | `noarch` | Meta-package installing all three above |
+
+The `ontologies-cbr` CLI resolves its data directory in this order:
+1. `--data-dir DIR`
+2. `ONTOLOGIES_CBR_DATA_DIR`
+3. repository-local default during development
+4. `$CONDA_PREFIX/share/ontologies-cbr/data`
 
 ## Local non-Conda CBR workflow
 
@@ -226,9 +244,61 @@ bash scripts/run_cbr.sh query-one \
   --number-of-cases 1
 ```
 
+## Extraction pipeline
+
+The integrated pipeline extracts structured data from predictive-maintenance papers and feeds it into the CBR system.
+
+### Pipeline flow
+
+```
+PDF paper
+  → OntoCast (fixed-ontology, facts-only mode)
+  → RDF/Turtle facts (OPMAD-typed)
+  → facts_to_csv.py
+  → 19-column semicolon-delimited CSV
+  → HeadlessCBR query
+```
+
+### Run extraction (local, requires OpenAI API key)
+
+```bash
+export OPENAI_API_KEY=sk-...
+bash pipeline/run_extraction.sh your_paper.pdf
+```
+
+### Convert facts to CSV
+
+```bash
+python pipeline/facts_to_csv.py \
+  --facts pipeline/test_output/facts_*.ttl \
+  --ontology pipeline/seed_ontology/opmad_seed.ttl \
+  --output extracted_cases.csv
+```
+
+### Query CBR with extracted parameters
+
+```bash
+bash scripts/run_cbr.sh query-one \
+  --task "One step future state forecast" \
+  --input-for-model "Signals" \
+  --input-type "Pressure, Tension" \
+  --number-of-cases 3
+```
+
+### Pipeline files
+
+| File | Purpose |
+|------|---------|
+| `pipeline/extraction_schema.py` | Pydantic model mapping 19 CSV columns to OPMAD ontology IRIs |
+| `pipeline/seed_ontology/opmad_seed.ttl` | Self-contained OPMAD seed ontology for fixed-ontology extraction |
+| `pipeline/ontocast_config.env` | OntoCast configuration for constrained extraction mode |
+| `pipeline/run_extraction.sh` | Wrapper script to run OntoCast on a PDF |
+| `pipeline/facts_to_csv.py` | Converts RDF/Turtle facts to CBR-compatible CSV |
+| `pipeline/SCHEMA_MAPPING.md` | Detailed documentation of the OPMAD field mapping |
+| `pipeline/INTEGRATION_RESULTS.md` | End-to-end test results |
+
 ## Notes
 
-- `ontocast` may require provider-specific configuration and API keys before a real extraction run.
-- In this repo, OntoCast should be evaluated primarily as a **fixed-ontology extractor** for the CBR system, not as a requirement to run every ontology-evolution feature successfully.
+- `ontocast` requires an OpenAI API key for extraction runs.
+- In this repo, OntoCast is used as a **fixed-ontology extractor** for the CBR system, not for full ontology evolution.
 - Starting the OntoCast server is a blocking command.
-- For packaging details, see `CONDA_PACKAGING_PLAN.md`.

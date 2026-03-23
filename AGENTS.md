@@ -21,3 +21,4 @@
 - Windows support for OntoCast uses `conda/recipes/ontocast/bld.bat`.
 - CI workflow: `.github/workflows/conda-matrix.yml` builds/tests the stack on macOS, Linux, and Windows.
 - After making any local patches to OntoCast, document them to the `Ontologies#1` issue.
+- The instructions to run myCBR are in `Code-Guide.md`
