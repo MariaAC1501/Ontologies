@@ -64,11 +64,14 @@ conda activate base
 
 #### Windows PowerShell
 
-Install Miniforge, then open a new PowerShell and run:
+Install Miniforge, then open a new PowerShell and configure it to allow Conda's initialization script:
 
 ```powershell
-conda activate base
+Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
+conda init powershell
 ```
+
+Close the PowerShell window and open a new one. Your prompt should now begin with `(base)`, meaning Conda is active and ready to manage environments.
 
 If Miniforge is installed in a non-default location, set `CONDA_ROOT` before using the helper scripts.
 
