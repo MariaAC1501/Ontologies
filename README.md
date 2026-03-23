@@ -46,8 +46,8 @@ git submodule update --init --recursive
 
 ## Conda-first setup
 
-This is the recommended setup for colleagues because it installs the Python and Java parts together.
-The Conda workflow in this repo is now validated in CI on macOS, Linux, and Windows.
+This is the recommended setup because it installs the Python and Java parts together.
+The Conda workflow in this repo is validated in CI on macOS, Linux, and Windows.
 
 ### 1. Install Conda
 
@@ -72,20 +72,18 @@ conda activate base
 
 If Miniforge is installed in a non-default location, set `CONDA_ROOT` before using the helper scripts.
 
-### 2. Create the build environment
+### 2. Update the base environment for building
 
-This environment is only for building the Conda packages — it is separate from the runtime environment created in step 4.
+The build dependencies (like `conda-build`) must be installed in your `base` Conda environment. This environment is only for building the Conda packages — it is separate from the runtime environment created in step 4.
 
 ```bash
-conda env create -f environment.yml
-conda activate ontologies
+conda env update -n base -f environment.yml
 ```
 
 On Windows PowerShell:
 
 ```powershell
-conda env create -f environment.yml
-conda activate ontologies
+conda env update -n base -f environment.yml
 ```
 
 ### 3. Build the local Conda packages
