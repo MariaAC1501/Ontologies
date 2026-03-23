@@ -11,6 +11,7 @@ install_pkg "$WHEEL_DIR/ontocast-0.3.0-py3-none-any.whl"
 install_pkg "$WHEEL_DIR/neo4j-6.1.0-py3-none-any.whl"
 install_pkg "$WHEEL_DIR/duckduckgo_search-8.1.1-py3-none-any.whl"
 install_pkg "$WHEEL_DIR/suthing-0.5.1-py3-none-any.whl"
+"$PYTHON" "$RECIPE_DIR/patch_ontocast.py"
 
 if [[ "${target_platform:-}" == osx-* ]]; then
   install_pkg "$WHEEL_DIR/primp-0.15.0-cp38-abi3-macosx_11_0_arm64.whl"

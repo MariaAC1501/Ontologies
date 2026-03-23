@@ -1,4 +1,5 @@
 - Starting the OntoCast server is a blocking command.
+- There is an `.env` file at the repo root with OPENAI_API_KEY set.
 - The Conda packaging for OntoCast (`conda/recipes/ontocast/`) and the vendored wheels in `conda/recipes/ontocast/wheels/` are **our own internal work**, not part of the upstream OntoCast project. When filing issues or communicating with the upstream `growgraph/ontocast` repo, never reference the conda recipe, vendored wheels, `conda/recipes/`, helper scripts, or any other internal packaging detail. Frame everything in terms of standard `pip install` / `pyproject.toml` that any upstream user would encounter.
 - Prefer the Conda-first workflow for project setup.
 - Current Conda packaging status:
@@ -19,3 +20,4 @@
 - OntoCast recipe uses vendored wheels in `conda/recipes/ontocast/wheels/` for PyPI-only deps.
 - Windows support for OntoCast uses `conda/recipes/ontocast/bld.bat`.
 - CI workflow: `.github/workflows/conda-matrix.yml` builds/tests the stack on macOS, Linux, and Windows.
+- After making any local patches to OntoCast, document them to the `Ontologies#1` issue.

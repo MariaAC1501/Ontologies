@@ -1,8 +1,19 @@
 # Ontology Extraction for Predictive Maintenance CBR
 
 This repo combines:
-- **OntoCast** for ontology / knowledge graph extraction from papers
+- **OntoCast** as a constrained extractor for papers relevant to predictive-maintenance CBR
 - **headless Java CBR tooling** for querying the predictive-maintenance case base
+
+## Current project direction
+
+The target system in this repo is the existing predictive-maintenance CBR stack in `external/CBR-Ontology-For-Predictive-Maintenance/`, documented in `Code-Guide.md`.
+
+We are **not** currently trying to make OntoCast's full ontology-development feature suite the centerpiece of this project. For this use case, the main goal is narrower:
+- use OntoCast only for the extraction functionality we actually need
+- keep extraction aligned to a **fixed ontology / fixed vocabulary** suitable for the CBR workflow
+- avoid depending on ontology bootstrap, ontology critique loops, and open-ended ontology evolution as core requirements
+
+A later comparison between extraction against a fixed ontology and extraction against an evolved ontology could still be interesting, but it is explicitly **deferred** until the constrained workflow is stable.
 
 ## Repository layout
 
@@ -218,5 +229,6 @@ bash scripts/run_cbr.sh query-one \
 ## Notes
 
 - `ontocast` may require provider-specific configuration and API keys before a real extraction run.
+- In this repo, OntoCast should be evaluated primarily as a **fixed-ontology extractor** for the CBR system, not as a requirement to run every ontology-evolution feature successfully.
 - Starting the OntoCast server is a blocking command.
 - For packaging details, see `CONDA_PACKAGING_PLAN.md`.
