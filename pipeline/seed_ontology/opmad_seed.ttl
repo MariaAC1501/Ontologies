@@ -1,0 +1,394 @@
+@prefix : <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#> .
+@prefix cco: <http://www.ontologyrepository.com/CommonCoreOntologies/> .
+@prefix obo: <http://purl.obolibrary.org/obo/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD/seed>
+    a owl:Ontology ;
+    rdfs:label "OPMAD seed ontology for OntoCast fixed-ontology mode"@en ;
+    rdfs:comment "Self-contained Turtle subset of OPMAD plus minimal BFO/CCO/RO vocabulary required by pipeline/extraction_schema.py and OntoCast fixed seed extraction. This file intentionally omits owl:imports and the full external dependency chain."@en .
+
+#################################################################
+# Minimal external hierarchy: BFO / CCO / RO
+#################################################################
+
+obo:BFO_0000001 a owl:Class ;
+    rdfs:label "entity"@en .
+
+obo:BFO_0000002 a owl:Class ;
+    rdfs:subClassOf obo:BFO_0000001 ;
+    rdfs:label "continuant"@en .
+
+obo:BFO_0000004 a owl:Class ;
+    rdfs:subClassOf obo:BFO_0000002 ;
+    rdfs:label "independent continuant"@en ;
+    rdfs:comment "A continuant that does not specifically depend on another entity for its existence."@en .
+
+obo:BFO_0000017 a owl:Class ;
+    rdfs:subClassOf obo:BFO_0000020 ;
+    rdfs:label "realizable entity"@en .
+
+obo:BFO_0000019 a owl:Class ;
+    rdfs:subClassOf obo:BFO_0000020 ;
+    rdfs:label "quality"@en .
+
+obo:BFO_0000020 a owl:Class ;
+    rdfs:subClassOf obo:BFO_0000002 ;
+    rdfs:label "specifically dependent continuant"@en ;
+    rdfs:comment "A continuant that specifically depends on some independent continuant."@en .
+
+obo:BFO_0000030 a owl:Class ;
+    rdfs:subClassOf obo:BFO_0000004 ;
+    rdfs:label "object"@en .
+
+obo:BFO_0000031 a owl:Class ;
+    rdfs:subClassOf obo:BFO_0000002 ;
+    rdfs:label "generically dependent continuant"@en ;
+    rdfs:comment "A continuant that can depend on one or more bearers over time."@en .
+
+obo:BFO_0000034 a owl:Class ;
+    rdfs:subClassOf obo:BFO_0000017 ;
+    rdfs:label "function"@en .
+
+cco:InformationContentEntity a owl:Class ;
+    rdfs:subClassOf obo:BFO_0000031 ;
+    rdfs:label "Information Content Entity"@en ;
+    rdfs:comment "A generically dependent continuant that is about some entity and generically depends on an information bearer."@en .
+
+cco:DesignativeInformationContentEntity a owl:Class ;
+    rdfs:subClassOf cco:InformationContentEntity ;
+    rdfs:label "Designative Information Content Entity"@en ;
+    rdfs:comment "An information content entity consisting of symbols that denote some entity."@en .
+
+cco:DescriptiveInformationContentEntity a owl:Class ;
+    rdfs:subClassOf cco:InformationContentEntity ;
+    rdfs:label "Descriptive Information Content Entity"@en ;
+    rdfs:comment "An information content entity consisting of propositions that describe some entity."@en .
+
+cco:DirectiveInformationContentEntity a owl:Class ;
+    rdfs:subClassOf cco:InformationContentEntity ;
+    rdfs:label "Directive Information Content Entity"@en ;
+    rdfs:comment "An information content entity that prescribes some entity or action."@en .
+
+cco:DesignativeName a owl:Class ;
+    rdfs:subClassOf cco:DesignativeInformationContentEntity ;
+    rdfs:label "Designative Name"@en ;
+    rdfs:comment "A designative information content entity that names something in a social or cultural namespace."@en .
+
+cco:ArtifactIdentifier a owl:Class ;
+    rdfs:subClassOf cco:DesignativeInformationContentEntity ;
+    rdfs:label "Artifact Identifier"@en ;
+    rdfs:comment "A designative information content entity that identifies some artifact."@en .
+
+cco:Algorithm a owl:Class ;
+    rdfs:subClassOf cco:DirectiveInformationContentEntity ;
+    rdfs:label "Algorithm"@en ;
+    rdfs:comment "A directive information content entity prescribing inputs, outputs, and workflow for achieving an objective."@en .
+
+cco:Artifact a owl:Class ;
+    rdfs:subClassOf obo:BFO_0000030 ;
+    rdfs:label "Artifact"@en ;
+    rdfs:comment "An object designed by an agent to realize a function."@en .
+
+cco:InformationBearingArtifact a owl:Class ;
+    rdfs:subClassOf cco:Artifact ;
+    rdfs:label "Information Bearing Artifact"@en ;
+    rdfs:comment "An artifact designed to bear information content entities in some format or structure."@en .
+
+cco:InformationProcessingArtifact a owl:Class ;
+    rdfs:subClassOf cco:Artifact ;
+    rdfs:label "Information Processing Artifact"@en ;
+    rdfs:comment "An artifact designed to transform information using algorithms."@en .
+
+cco:Database a owl:Class ;
+    rdfs:subClassOf cco:InformationBearingArtifact ;
+    rdfs:label "Database"@en ;
+    rdfs:comment "An information bearing artifact designed to store information for searching and retrieval."@en .
+
+cco:is_about a owl:ObjectProperty ;
+    rdfs:domain cco:InformationContentEntity ;
+    rdfs:range obo:BFO_0000001 ;
+    rdfs:label "is about"@en ;
+    rdfs:comment "Primitive relation between an information content entity and some entity."@en .
+
+cco:describes a owl:ObjectProperty ;
+    rdfs:subPropertyOf cco:is_about ;
+    rdfs:domain cco:DescriptiveInformationContentEntity ;
+    rdfs:label "describes"@en ;
+    rdfs:comment "Relates a descriptive information content entity to the entity it describes."@en .
+
+cco:designates a owl:ObjectProperty ;
+    rdfs:subPropertyOf cco:is_about ;
+    rdfs:domain cco:DesignativeInformationContentEntity ;
+    rdfs:label "designates"@en ;
+    rdfs:comment "Relates a designative information content entity to the entity it uniquely picks out in context."@en .
+
+obo:BFO_0000051 a owl:ObjectProperty ;
+    rdfs:label "has part"@en ;
+    rdfs:comment "Core part-whole relation between a whole and its part."@en .
+
+obo:RO_0000085 a owl:ObjectProperty ;
+    rdfs:domain obo:BFO_0000004 ;
+    rdfs:range obo:BFO_0000034 ;
+    rdfs:label "has function"@en ;
+    rdfs:comment "Relation between an independent continuant and a function that specifically depends on it."@en .
+
+obo:RO_0000086 a owl:ObjectProperty ;
+    rdfs:range obo:BFO_0000019 ;
+    rdfs:label "has quality"@en ;
+    rdfs:comment "Relation between a bearer and a quality that specifically depends on it."@en .
+
+obo:RO_0010002 a owl:ObjectProperty ;
+    rdfs:domain obo:BFO_0000004 ;
+    rdfs:range obo:BFO_0000031 ;
+    rdfs:label "is carrier of"@en ;
+    rdfs:comment "Relates an independent continuant to a generically dependent continuant it carries."@en .
+
+#################################################################
+# OPMAD properties used by extraction
+#################################################################
+
+:has_publication_year a owl:ObjectProperty ;
+    rdfs:subPropertyOf obo:RO_0010002 ;
+    rdfs:domain :Predictive_Maintenance_Article ;
+    rdfs:range :Publication_year ;
+    rdfs:label "has publication year"@en .
+
+:has_predictive_maintenance_function a owl:ObjectProperty ;
+    rdfs:subPropertyOf obo:RO_0000085 ;
+    rdfs:domain :Predictive_maintenance_system_module ;
+    rdfs:range :Predictive_maintenance_module_function ;
+    rdfs:label "has predictive maintenance function"@en .
+
+:has_synchronization a owl:ObjectProperty ;
+    rdfs:subPropertyOf obo:RO_0000086 ;
+    rdfs:domain :Predictive_maintenance_system_module ;
+    rdfs:range :Module_synchronization ;
+    rdfs:label "has synchronization"@en .
+
+:has_title a owl:ObjectProperty ;
+    rdfs:subPropertyOf obo:RO_0010002 ;
+    rdfs:domain :Predictive_Maintenance_Article ;
+    rdfs:range :Article_title ;
+    rdfs:label "has title"@en .
+
+:has_identifier a owl:ObjectProperty ;
+    rdfs:subPropertyOf obo:RO_0010002 ;
+    rdfs:domain :Predictive_Maintenance_Article ;
+    rdfs:range :Article_identifier ;
+    rdfs:label "has identifier"@en .
+
+:has_design_detail a owl:ObjectProperty ;
+    rdfs:subPropertyOf obo:RO_0000086 ;
+    rdfs:domain :Predictive_maintenance_system_module ;
+    rdfs:range :Design_detail ;
+    rdfs:label "has design detail"@en .
+
+:describes_configuration a owl:ObjectProperty ;
+    rdfs:subPropertyOf cco:describes ;
+    rdfs:domain :Model_configuration ;
+    rdfs:range :Predictive_maintenance_model ;
+    rdfs:label "describes configuration"@en .
+
+:describes_type a owl:ObjectProperty ;
+    rdfs:subPropertyOf cco:describes ;
+    rdfs:label "describes type"@en .
+
+:has_text_value a owl:DatatypeProperty ;
+    rdfs:range xsd:string ;
+    rdfs:label "information has text value"@en ;
+    rdfs:comment "Constraint for classes whose lexical value is a string."@en .
+
+:has_interger_value a owl:DatatypeProperty ;
+    rdfs:range xsd:integer ;
+    rdfs:label "information has interger value"@en ;
+    rdfs:comment "Constraint for classes whose lexical value is an integer."@en .
+
+#################################################################
+# Core OPMAD classes needed by extraction
+#################################################################
+
+:Predictive_maintenance_case a owl:Class ;
+    rdfs:subClassOf cco:DesignativeName ;
+    rdfs:label "Predictive maintenance case"@en ;
+    rdfs:comment "A designative information content entity that names a case in a predictive maintenance case base and is about a predictive maintenance model explained in an article."@en .
+
+:Publication_year a owl:Class ;
+    rdfs:subClassOf cco:DescriptiveInformationContentEntity ;
+    rdfs:label "Publication year"@en ;
+    rdfs:comment "An integer value representing the Gregorian year in which an article was published."@en .
+
+:Predictive_maintenance_module_function a owl:Class ;
+    rdfs:subClassOf obo:BFO_0000034 ;
+    rdfs:label "predictive maintenance module function"@en ;
+    rdfs:comment "A realizable entity that is the purpose of a predictive maintenance module."@en .
+
+:Maintainable_item a owl:Class ;
+    rdfs:subClassOf obo:BFO_0000030 ;
+    rdfs:label "Maintainable item"@en ;
+    rdfs:comment "Subject being considered for maintenance."@en .
+
+:Data_variable a owl:Class ;
+    rdfs:subClassOf cco:DescriptiveInformationContentEntity ;
+    rdfs:label "Data variable"@en ;
+    rdfs:comment "A descriptive information content entity representing an input variable used by a predictive maintenance model."@en .
+
+:Design_detail a owl:Class ;
+    rdfs:subClassOf obo:BFO_0000019 ;
+    rdfs:label "Design detail"@en ;
+    rdfs:comment "A generic quality of predictive maintenance modules containing design details not covered by other classes."@en .
+
+:Model_configuration a owl:Class ;
+    rdfs:subClassOf cco:DescriptiveInformationContentEntity ;
+    rdfs:label "Model configuration"@en ;
+    rdfs:comment "An arrangement of models in a predictive maintenance module."@en .
+
+:Model_type a owl:Class ;
+    rdfs:subClassOf cco:DescriptiveInformationContentEntity ;
+    rdfs:label "Model type"@en ;
+    rdfs:comment "A descriptive information content entity describing the family of a predictive maintenance model."@en .
+
+:Predictive_maintenance_model a owl:Class ;
+    rdfs:subClassOf cco:Algorithm ;
+    rdfs:label "Predictive maintenance model"@en ;
+    rdfs:comment "A directive information content entity consisting of propositions used for predictive maintenance purposes."@en .
+
+:Module_synchronization a owl:Class ;
+    rdfs:subClassOf obo:BFO_0000019 ;
+    rdfs:label "Module Synchronization"@en ;
+    rdfs:comment "A quality of a predictive maintenance module describing whether it works online, off-line, or both relative to the maintainable item."@en .
+
+:Article_title a owl:Class ;
+    rdfs:subClassOf cco:DesignativeName ;
+    rdfs:label "Article title"@en ;
+    rdfs:comment "A designative name for an article."@en .
+
+:Article_identifier a owl:Class ;
+    rdfs:subClassOf cco:ArtifactIdentifier ;
+    rdfs:label "Article identifier"@en ;
+    rdfs:comment "An artifact identifier that designates an article."@en .
+
+:item_type a owl:Class ;
+    rdfs:subClassOf cco:DescriptiveInformationContentEntity ;
+    rdfs:label "item type"@en ;
+    rdfs:comment "A descriptive information content entity describing the family of a maintainable item from a predictive maintenance perspective."@en .
+
+:maintainable_item_record a owl:Class ;
+    rdfs:subClassOf cco:Database ;
+    rdfs:label "maintainable item record"@en ;
+    rdfs:comment "A database-like record carrying information about a maintainable item."@en .
+
+:number_if_input_variables a owl:Class ;
+    rdfs:subClassOf obo:BFO_0000019 ;
+    rdfs:label "number of input variables"@en ;
+    rdfs:comment "A quality stating the number of input variables used by a predictive maintenance model for a specific item in a case."@en .
+
+:Number_of_failure_modes a owl:Class ;
+    rdfs:subClassOf obo:BFO_0000019 ;
+    rdfs:label "number of failures modes"@en ;
+    rdfs:comment "A quality stating the number of failure modes known for a maintainable item."@en .
+
+:Performance_indicator a owl:Class ;
+    rdfs:subClassOf cco:DescriptiveInformationContentEntity ;
+    rdfs:label "Performance indicator"@en ;
+    rdfs:comment "A descriptive information content entity that describes a predictive maintenance module performance criterion."@en .
+
+:Performance_value a owl:Class ;
+    rdfs:subClassOf cco:DescriptiveInformationContentEntity ;
+    rdfs:label "Performance value"@en ;
+    rdfs:comment "A descriptive information content entity about a performance indicator's reported value."@en .
+
+:Predictive_Maintenance_Article a owl:Class ;
+    rdfs:subClassOf cco:InformationBearingArtifact ;
+    rdfs:label "Predictive Maintenance Article"@en ;
+    rdfs:comment "An information bearing artifact such as a journal or conference article on predictive maintenance."@en .
+
+:Predictive_maintenance_system_module a owl:Class ;
+    rdfs:subClassOf cco:InformationProcessingArtifact ;
+    rdfs:label "Predictive maintenance system module"@en ;
+    rdfs:comment "An information processing artifact that hosts predictive maintenance functions, models, design details, and synchronization qualities."@en .
+
+#################################################################
+# Task taxonomy used by the schema
+#################################################################
+
+:Data_mining_technique_function a owl:Class ;
+    rdfs:subClassOf obo:BFO_0000034 ;
+    rdfs:label "data mining technique fucntion"@en ;
+    rdfs:comment "A realizable entity that is the purpose of a data mining technique."@en .
+
+:Association_discovery a owl:Class ;
+    rdfs:subClassOf :Data_mining_technique_function ;
+    rdfs:label "association discovery"@en ;
+    rdfs:comment "A function whose purpose is discovery of association patterns from data."@en .
+
+:Classification a owl:Class ;
+    rdfs:subClassOf :Data_mining_technique_function ;
+    rdfs:label "classification"@en ;
+    rdfs:comment "A function whose purpose is separation of data based on predefined parameters."@en .
+
+:Clustering a owl:Class ;
+    rdfs:subClassOf :Data_mining_technique_function ;
+    rdfs:label "clustering"@en ;
+    rdfs:comment "A function whose purpose is grouping data with similar characteristics."@en .
+
+:Deviation_detection a owl:Class ;
+    rdfs:subClassOf :Data_mining_technique_function ;
+    rdfs:label "deviation detection"@en ;
+    rdfs:comment "A function whose purpose is detecting changes in known behavior in data."@en .
+
+:Regression a owl:Class ;
+    rdfs:subClassOf :Data_mining_technique_function ;
+    rdfs:label "regression"@en ;
+    rdfs:comment "A function whose purpose is finding trends in data."@en .
+
+:Sequential_pattern_discovery a owl:Class ;
+    rdfs:subClassOf :Data_mining_technique_function ;
+    rdfs:label "sequential pattern discovery"@en ;
+    rdfs:comment "A function whose purpose is finding sequential patterns."@en .
+
+:Fault_detection a owl:Class ;
+    rdfs:subClassOf :Predictive_maintenance_module_function ;
+    rdfs:label "Fault detection"@en ;
+    rdfs:comment "A function whose purpose is searching for faults by assessing maintainable item parameters."@en .
+
+:Fault_feature_extraction a owl:Class ;
+    rdfs:subClassOf :Predictive_maintenance_module_function ;
+    rdfs:label "Fault feature extraction"@en ;
+    rdfs:comment "A function whose purpose is identifying symptoms corresponding to a specific fault."@en .
+
+:Fault_identification a owl:Class ;
+    rdfs:subClassOf :Predictive_maintenance_module_function ;
+    rdfs:label "Fault identification"@en ;
+    rdfs:comment "A function whose purpose is comparing symptoms against known criteria to identify a fault."@en .
+
+:Health_assessment a owl:Class ;
+    rdfs:subClassOf :Predictive_maintenance_module_function ;
+    rdfs:label "Health assessment"@en ;
+    rdfs:comment "A function whose purpose is rating the current condition of a maintainable item against a predefined scale."@en .
+
+:Health_modelling a owl:Class ;
+    rdfs:subClassOf :Predictive_maintenance_module_function ;
+    rdfs:label "Health modelling"@en ;
+    rdfs:comment "A function whose purpose is establishing a scale to rate the condition of a maintainable item."@en .
+
+:Future_state_forecast a owl:Class ;
+    rdfs:subClassOf :Predictive_maintenance_module_function ;
+    rdfs:label "Future state forecast"@en ;
+    rdfs:comment "A function whose purpose is forecasting a near-future condition from the current state of a maintainable item."@en .
+
+:Multiple_steps_future_state_forecast a owl:Class ;
+    rdfs:subClassOf :Future_state_forecast ;
+    rdfs:label "Multiple steps future state forecast"@en .
+
+:One_step_future_state_forecast a owl:Class ;
+    rdfs:subClassOf :Future_state_forecast ;
+    rdfs:label "One step future state forecast"@en .
+
+:Remaining_useful_life_estimation a owl:Class ;
+    rdfs:subClassOf :Predictive_maintenance_module_function ;
+    rdfs:label "Remaining useful life estimation"@en ;
+    rdfs:comment "A function whose purpose is forecasting the remaining operational life based on the current state of the maintainable item."@en .
