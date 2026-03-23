@@ -278,7 +278,9 @@ conda activate ontologies
 bash pipeline/run_extraction.sh your_paper.pdf
 ```
 
-The API key is read automatically from `.env` at the repo root.
+The API key is read automatically from `.env` at the repo root. Output goes to `pipeline/test_output/`.
+
+> **First run required.** The regression tests and comparison scripts need extraction output to exist. Run at least one extraction before running tests.
 
 ### Convert facts to CSV
 
