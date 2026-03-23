@@ -88,35 +88,31 @@ def main() -> None:
     )
 
     # --- Patch 5: deepcopy fix for parallel workers (upstream #48) ---
+    # Each replacement uses enough unique context to avoid the global-replace
+    # pitfall (str.replace touches every match).
+
+    # 5a: bootstrap (non-parallel) path — only change max_visits_per_node
     replace_once(
         base,
         "stategraph/node_factories.py",
-        '            max_visits_per_node=tools.config.server.max_visits_per_node,\n',
-        '            max_visits_per_node=tools.config.server.parallel_ontology_retries,\n',
+        '            budget_tracker=state.budget_tracker,\n            max_visits_per_node=tools.config.server.max_visits_per_node,\n            current_domain=state.current_domain,\n            ontology_max_triples=tools.config.server.ontology_max_triples,\n        )\n        result = await ontology_loop(bootstrap_state, atomic_tools)',
+        '            budget_tracker=state.budget_tracker,\n            max_visits_per_node=tools.config.server.parallel_ontology_retries,\n            current_domain=state.current_domain,\n            ontology_max_triples=tools.config.server.ontology_max_triples,\n        )\n        result = await ontology_loop(bootstrap_state, atomic_tools)',
     )
+
+    # 5b: parallel ontology workers — deepcopy budget_tracker + max_visits
     replace_once(
         base,
         "stategraph/node_factories.py",
-        '                base_state = state.model_copy(deep=True)\n                ontology_state = UnitOntologyState(\n',
-        '                budget_tracker = state.budget_tracker.model_copy(deep=True)\n                ontology_state = UnitOntologyState(\n',
+        '                base_state = state.model_copy(deep=True)\n                ontology_state = UnitOntologyState(\n                    content_unit=state.content_units[unit_index],\n                    ontology_snapshot=state.current_ontology,\n                    ontology_user_instruction=state.ontology_user_instruction,\n                    budget_tracker=base_state.budget_tracker,\n                    max_visits_per_node=tools.config.server.max_visits_per_node,\n                    current_domain=state.current_domain,\n                    ontology_max_triples=tools.config.server.ontology_max_triples,\n                )\n                result = await ontology_loop(ontology_state, atomic_tools)',
+        '                budget_tracker = state.budget_tracker.model_copy(deep=True)\n                ontology_state = UnitOntologyState(\n                    content_unit=state.content_units[unit_index],\n                    ontology_snapshot=state.current_ontology,\n                    ontology_user_instruction=state.ontology_user_instruction,\n                    budget_tracker=budget_tracker,\n                    max_visits_per_node=tools.config.server.parallel_ontology_retries,\n                    current_domain=state.current_domain,\n                    ontology_max_triples=tools.config.server.ontology_max_triples,\n                )\n                result = await ontology_loop(ontology_state, atomic_tools)',
     )
+
+    # 5c: parallel facts workers — deepcopy budget_tracker + max_visits
     replace_once(
         base,
         "stategraph/node_factories.py",
-        '                    budget_tracker=base_state.budget_tracker,\n                    max_visits_per_node=tools.config.server.parallel_ontology_retries,\n',
-        '                    budget_tracker=budget_tracker,\n                    max_visits_per_node=tools.config.server.parallel_ontology_retries,\n',
-    )
-    replace_once(
-        base,
-        "stategraph/node_factories.py",
-        '                base_state = state.model_copy(deep=True)\n                facts_state = UnitFactsState(\n',
-        '                budget_tracker = state.budget_tracker.model_copy(deep=True)\n                facts_state = UnitFactsState(\n',
-    )
-    replace_once(
-        base,
-        "stategraph/node_factories.py",
-        '                    budget_tracker=base_state.budget_tracker,\n                    max_visits_per_node=tools.config.server.parallel_ontology_retries,\n',
-        '                    budget_tracker=budget_tracker,\n                    max_visits_per_node=tools.config.server.parallel_facts_retries,\n',
+        '                base_state = state.model_copy(deep=True)\n                facts_state = UnitFactsState(\n                    content_unit=state.content_units[unit_index],\n                    ontology_snapshot=state.current_ontology,\n                    facts_user_instruction=state.facts_user_instruction,\n                    budget_tracker=base_state.budget_tracker,\n                    max_visits_per_node=tools.config.server.max_visits_per_node,\n                )\n                result = await facts_loop(facts_state, atomic_tools)',
+        '                budget_tracker = state.budget_tracker.model_copy(deep=True)\n                facts_state = UnitFactsState(\n                    content_unit=state.content_units[unit_index],\n                    ontology_snapshot=state.current_ontology,\n                    facts_user_instruction=state.facts_user_instruction,\n                    budget_tracker=budget_tracker,\n                    max_visits_per_node=tools.config.server.parallel_facts_retries,\n                )\n                result = await facts_loop(facts_state, atomic_tools)',
     )
 
     # --- Patch 6: RDFGraph.__deepcopy__ (upstream #48) ---
