@@ -3,8 +3,7 @@ set -euo pipefail
 
 SCRIPT_DIR="$(cd -- "$(dirname -- "${BASH_SOURCE[0]}")" && pwd)"
 REPO_ROOT="$(cd -- "${SCRIPT_DIR}/.." && pwd)"
-VENV_BIN="${REPO_ROOT}/.tmp-ontocast-test/bin"
-ONTOCAST_BIN="${VENV_BIN}/ontocast"
+ONTOCAST_BIN="${ONTOCAST_BIN:-$(command -v ontocast 2>/dev/null || true)}"
 CONFIG_FILE="${SCRIPT_DIR}/ontocast_config.env"
 OUTPUT_DIR="${SCRIPT_DIR}/test_output"
 INPUT_DIR="${OUTPUT_DIR}/input"
@@ -27,8 +26,8 @@ if [[ ! -f "${PDF_PATH}" ]]; then
   exit 1
 fi
 
-if [[ ! -x "${ONTOCAST_BIN}" ]]; then
-  echo "OntoCast CLI not found: ${ONTOCAST_BIN}" >&2
+if [[ -z "${ONTOCAST_BIN}" || ! -x "${ONTOCAST_BIN}" ]]; then
+  echo "OntoCast CLI not found. Install via Conda or set ONTOCAST_BIN." >&2
   exit 1
 fi
 

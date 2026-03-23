@@ -19,7 +19,7 @@ The automated test script is:
 ### 1. Regenerate CSV from existing facts
 
 ```bash
-.tmp-ontocast-test/bin/python3 pipeline/facts_to_csv.py \
+python pipeline/facts_to_csv.py \
   --facts pipeline/test_output/facts_5cc89b5bfaf6.ttl \
   --ontology pipeline/seed_ontology/opmad_seed.ttl \
   --output pipeline/test_output/extracted_cases.csv

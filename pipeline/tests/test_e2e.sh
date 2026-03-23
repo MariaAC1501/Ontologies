@@ -4,10 +4,7 @@ set -euo pipefail
 ROOT_DIR=$(cd "$(dirname "${BASH_SOURCE[0]}")/../.." && pwd)
 cd "$ROOT_DIR"
 
-PYTHON_BIN=${PYTHON_BIN:-$ROOT_DIR/.tmp-ontocast-test/bin/python3}
-if [[ ! -x "$PYTHON_BIN" ]]; then
-  PYTHON_BIN=${PYTHON_BIN_FALLBACK:-python3}
-fi
+PYTHON_BIN=${PYTHON_BIN:-python3}
 
 FACTS_PATH=${FACTS_PATH:-pipeline/test_output/facts_5cc89b5bfaf6.ttl}
 ONTOLOGY_PATH=${ONTOLOGY_PATH:-pipeline/seed_ontology/opmad_seed.ttl}
