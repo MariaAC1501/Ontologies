@@ -285,8 +285,11 @@ bash pipeline/run_extraction.sh your_paper.pdf
 
 ```powershell
 conda activate ontologies
+pip install docling
 powershell -ExecutionPolicy Bypass -File pipeline\run_extraction.ps1 your_paper.pdf
 ```
+
+> **Note on Windows:** `docling` is currently missing some dependencies on the Windows Conda-forge channel, so it must be installed manually via `pip` before running the extraction pipeline.
 
 The API key is read automatically from `.env` at the repo root. Output goes to `pipeline/test_output/`.
 
@@ -340,6 +343,7 @@ bash pipeline/full_mode/run_full_extraction.sh your_paper.pdf
 
 ```powershell
 conda activate ontologies
+pip install docling
 powershell -ExecutionPolicy Bypass -File pipeline\full_mode\run_full_extraction.ps1 your_paper.pdf
 ```
 
