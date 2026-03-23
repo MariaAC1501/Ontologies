@@ -71,8 +71,12 @@ Write-Host "  chunks: $HeadChunks"
 
 Push-Location $RepoRoot
 try {
-    ontocast --env-file $ConfigFile --input-path $InputDir --head-chunks $HeadChunks 2>&1 | Tee-Object -FilePath $LogFile -Append
+    $OldErrorAction = $ErrorActionPreference
+    $ErrorActionPreference = "Continue"
+    # Execute through cmd.exe to prevent PowerShell from wrapping stderr in fatal ErrorRecords
+    cmd.exe /c "ontocast --env-file `"$ConfigFile`" --input-path `"$InputDir`" --head-chunks $HeadChunks 2>&1" | Tee-Object -FilePath $LogFile -Append
 } finally {
+    $ErrorActionPreference = $OldErrorAction
     Pop-Location
 }
 
