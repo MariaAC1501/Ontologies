@@ -44,6 +44,8 @@ If you already cloned without submodules:
 git submodule update --init --recursive
 ```
 
+> **Note on Windows:** If the submodule clone fails with a `Filename too long` error, your system is hitting the 260-character path limit. Tell Git to support long paths by running `git config --global core.longpaths true` in your terminal and then retry the clone.
+
 ## Conda-first setup
 
 This is the recommended setup because it installs the Python and Java parts together.
@@ -100,7 +102,7 @@ bash scripts/build_conda_packages.sh
 #### Windows PowerShell
 
 ```powershell
-powershell -ExecutionPolicy Bypass -File scripts/build_conda_packages.ps1
+.\scripts\build_conda_packages.ps1
 ```
 
 This builds:
@@ -130,13 +132,13 @@ bash scripts/create_conda_env.sh /path/to/env
 #### Windows PowerShell
 
 ```powershell
-powershell -ExecutionPolicy Bypass -File scripts/create_conda_env.ps1
+.\scripts\create_conda_env.ps1
 ```
 
 Or choose your own prefix:
 
 ```powershell
-powershell -ExecutionPolicy Bypass -File scripts/create_conda_env.ps1 C:\path\to\env
+.\scripts\create_conda_env.ps1 C:\path\to\env
 ```
 
 Default env location:
@@ -286,10 +288,13 @@ bash pipeline/run_extraction.sh your_paper.pdf
 ```powershell
 conda activate ontologies
 pip install docling
-powershell -ExecutionPolicy Bypass -File pipeline\run_extraction.ps1 your_paper.pdf
+.\pipeline\run_extraction.ps1 your_paper.pdf
 ```
 
-> **Note on Windows:** `docling` is currently missing some dependencies on the Windows Conda-forge channel, so it must be installed manually via `pip` before running the extraction pipeline.
+> **Note on Windows:** 
+> 1. `docling` is currently missing some dependencies on the Windows Conda-forge channel, so it must be installed manually via `pip` before running the extraction pipeline.
+> 2. The `pytorch` CUDA builds on the Windows `conda-forge` channel are frequently broken and may fail to load DLLs (e.g., `shm.dll` throwing `WinError 127`). If this happens, cleanly reinstall the working CPU version using: `pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cpu --upgrade --force-reinstall`
+> 3. During its first extraction run, Hugging Face Hub will download models and attempt to cache them using symbolic links. By default, Windows standard users cannot create symlinks, causing a crash (`WinError 1314: El cliente no dispone de un privilegio requerido`). To bypass this one-time cache step, either run your PowerShell terminal as **Administrator** for the very first extraction, or permanently turn on "Developer Mode" in your Windows Settings.
 
 The API key is read automatically from `.env` at the repo root. Output goes to `pipeline/test_output/`.
 
@@ -344,10 +349,10 @@ bash pipeline/full_mode/run_full_extraction.sh your_paper.pdf
 ```powershell
 conda activate ontologies
 pip install docling
-powershell -ExecutionPolicy Bypass -File pipeline\full_mode\run_full_extraction.ps1 your_paper.pdf
+.\pipeline\full_mode\run_full_extraction.ps1 your_paper.pdf
 ```
 
-All required OntoCast patches are applied at Conda build time (see issue #1 for the full list).
+> **Note on Windows:** Review the previous Windows note on `docling`, `pytorch`, and `Hugging Face Hub` symlinks if your extraction run crashes. All required OntoCast patches are applied at Conda build time (see issue #1 for the full list).
 
 ### Query the evolved ontology with SPARQL
 
@@ -382,7 +387,7 @@ bash pipeline/comparison/run_comparison.sh
 #### Windows PowerShell
 
 ```powershell
-powershell -ExecutionPolicy Bypass -File pipeline\comparison\run_comparison.ps1
+.\pipeline\comparison\run_comparison.ps1
 ```
 
 Both write the report to `pipeline/comparison/COMPARISON_RESULTS.md`.
