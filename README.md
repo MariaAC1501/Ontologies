@@ -74,6 +74,8 @@ If Miniforge is installed in a non-default location, set `CONDA_ROOT` before usi
 
 ### 2. Create the build environment
 
+This environment is only for building the Conda packages — it is separate from the runtime environment created in step 4.
+
 ```bash
 conda env create -f environment.yml
 conda activate ontologies
@@ -250,9 +252,13 @@ The integrated pipeline extracts structured data from predictive-maintenance pap
 ### Prerequisites
 
 Both extraction modes require:
-- An activated Conda environment with `ontocast`, `ontologies-cbr`, and `ontologies-pipeline` installed (see [Conda-first setup](#conda-first-setup))
-- An OpenAI API key in `.env` at the repo root (format: `OPENAI_API_KEY=sk-...`)
-- Python packages `rdflib` and `pydantic` (included in the Conda environment)
+- The runtime Conda environment created in step 4 of [Conda-first setup](#conda-first-setup), activated with `conda activate ontologies`
+- An OpenAI API key in `.env` at the repo root:
+
+```bash
+cp .env.example .env
+# Edit .env and set your actual API key
+```
 
 ### Pipeline flow
 
@@ -316,7 +322,7 @@ conda activate ontologies
 bash pipeline/full_mode/run_full_extraction.sh your_paper.pdf
 ```
 
-The script automatically applies runtime patches to the installed OntoCast package (deepcopy fixes, SPARQL hardening, critic threshold relaxation — see issue #1 for the full list). These patches are idempotent and safe to apply repeatedly.
+All required OntoCast patches are applied at Conda build time (see issue #1 for the full list).
 
 ### Query the evolved ontology with SPARQL
 

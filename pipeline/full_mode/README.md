@@ -31,17 +31,15 @@ The run script uses `ontocast` from PATH.
 - Model: `gpt-4o` (configurable in `ontocast_full_config.env`)
 - Default chunk limit: `--head-chunks 2` (to control API costs)
 
-## Installed-package patches applied before the run
+## OntoCast patches
 
-The runner applies the previously known local installed-package patches needed for OntoCast evaluation:
+All required patches are applied at Conda build time by `conda/recipes/ontocast/patch_ontocast.py`. The patches are documented in GitHub issue #1 and cover:
 
 1. `ontology_prefix` fresh-ontology prompt fix
-2. oxigraph deepcopy hardening in parallel worker paths / `RDFGraph.__deepcopy__`
-3. SPARQL generation hardening for tuple-valued RDF-star triple-terms
-4. critic / retry hardening
-5. `skip_ontology_critique` support patch (kept available even though full mode does not enable it)
-
-No new OntoCast source patch beyond that existing local patch set was required for this issue.
+2. oxigraph deepcopy hardening / `RDFGraph.__deepcopy__`
+3. SPARQL generation hardening for RDF-star triple-terms
+4. critic / retry threshold relaxation
+5. `skip_ontology_critique` config flag (used by fixed mode, not by full mode)
 
 ## Command run
 
