@@ -3,9 +3,23 @@ set -euo pipefail
 
 SCRIPT_DIR="$(cd -- "$(dirname -- "${BASH_SOURCE[0]}")" && pwd)"
 REPO_ROOT="$(cd -- "${SCRIPT_DIR}/../.." && pwd)"
-VENV_DIR="${SCRIPT_DIR}/.venv"
-PYTHON_BIN="${VENV_DIR}/bin/python"
-ONTOCAST_BIN="${VENV_DIR}/bin/ontocast"
+# Use Conda env by default; fall back to local .venv if present
+if [[ -n "${ONTOCAST_BIN:-}" ]]; then
+  # Caller explicitly set ONTOCAST_BIN
+  PYTHON_BIN="${PYTHON_BIN:-python3}"
+elif command -v ontocast &>/dev/null; then
+  ONTOCAST_BIN="$(command -v ontocast)"
+  PYTHON_BIN="${PYTHON_BIN:-python3}"
+elif [[ -x "${SCRIPT_DIR}/.venv/bin/ontocast" ]]; then
+  ONTOCAST_BIN="${SCRIPT_DIR}/.venv/bin/ontocast"
+  PYTHON_BIN="${SCRIPT_DIR}/.venv/bin/python"
+else
+  echo "OntoCast not found. Install via Conda (recommended) or create a local venv:" >&2
+  echo "  python3 -m venv pipeline/full_mode/.venv" >&2
+  echo "  source pipeline/full_mode/.venv/bin/activate" >&2
+  echo "  pip install conda/recipes/ontocast/wheels/ontocast-0.3.0-py3-none-any.whl" >&2
+  exit 1
+fi
 CONFIG_FILE="${SCRIPT_DIR}/ontocast_full_config.env"
 OUTPUT_DIR="${SCRIPT_DIR}/test_output"
 INPUT_DIR="${OUTPUT_DIR}/input"
@@ -28,11 +42,8 @@ if [[ ! -f "${PDF_PATH}" ]]; then
   exit 1
 fi
 
-if [[ ! -x "${PYTHON_BIN}" || ! -x "${ONTOCAST_BIN}" ]]; then
-  echo "Missing OntoCast venv at ${VENV_DIR}. Create it first, e.g.:" >&2
-  echo "  python3.13 -m venv pipeline/full_mode/.venv" >&2
-  echo "  source pipeline/full_mode/.venv/bin/activate" >&2
-  echo "  pip install conda/recipes/ontocast/wheels/ontocast-0.3.0-py3-none-any.whl" >&2
+if [[ ! -x "${ONTOCAST_BIN}" ]]; then
+  echo "OntoCast CLI not found at: ${ONTOCAST_BIN}" >&2
   exit 1
 fi
 

@@ -4,16 +4,15 @@ This repo combines:
 - **OntoCast** as a constrained extractor for papers relevant to predictive-maintenance CBR
 - **headless Java CBR tooling** for querying the predictive-maintenance case base
 
-## Current project direction
+## Two extraction modes
 
-The target system in this repo is the existing predictive-maintenance CBR stack in `external/CBR-Ontology-For-Predictive-Maintenance/`, documented in `Code-Guide.md`.
+This repo supports two ways to extract knowledge from predictive-maintenance papers:
 
-We are **not** currently trying to make OntoCast's full ontology-development feature suite the centerpiece of this project. For this use case, the main goal is narrower:
-- use OntoCast only for the extraction functionality we actually need
-- keep extraction aligned to a **fixed ontology / fixed vocabulary** suitable for the CBR workflow
-- avoid depending on ontology bootstrap, ontology critique loops, and open-ended ontology evolution as core requirements
+1. **Fixed OPMAD mode** — OntoCast extracts facts against the pre-defined OPMAD seed ontology, converts them to a 19-column CSV, and feeds them into the myCBR case-based reasoning system. This is the production path.
 
-A later comparison between extraction against a fixed ontology and extraction against an evolved ontology could still be interesting, but it is explicitly **deferred** until the constrained workflow is stable.
+2. **Full evolution mode** — OntoCast bootstraps and evolves its own ontology from scratch, then extracts facts against it. Results are queried via SPARQL. This is useful for comparing what an unconstrained ontology discovers vs the fixed OPMAD vocabulary.
+
+Both modes are fully functional and can be run on the same paper for side-by-side comparison.
 
 ## Repository layout
 
@@ -248,6 +247,13 @@ bash scripts/run_cbr.sh query-one \
 
 The integrated pipeline extracts structured data from predictive-maintenance papers and feeds it into the CBR system.
 
+### Prerequisites
+
+Both extraction modes require:
+- An activated Conda environment with `ontocast`, `ontologies-cbr`, and `ontologies-pipeline` installed (see [Conda-first setup](#conda-first-setup))
+- An OpenAI API key in `.env` at the repo root (format: `OPENAI_API_KEY=sk-...`)
+- Python packages `rdflib` and `pydantic` (included in the Conda environment)
+
 ### Pipeline flow
 
 ```
@@ -259,12 +265,14 @@ PDF paper
   → HeadlessCBR query
 ```
 
-### Run extraction (local, requires OpenAI API key)
+### Run extraction
 
 ```bash
-export OPENAI_API_KEY=sk-...
+conda activate ontologies
 bash pipeline/run_extraction.sh your_paper.pdf
 ```
+
+The API key is read automatically from `.env` at the repo root.
 
 ### Convert facts to CSV
 
@@ -304,9 +312,11 @@ A second extraction mode runs OntoCast with full ontology evolution — no seed 
 ### Run full-mode extraction
 
 ```bash
-export OPENAI_API_KEY=sk-...
+conda activate ontologies
 bash pipeline/full_mode/run_full_extraction.sh your_paper.pdf
 ```
+
+The script automatically applies runtime patches to the installed OntoCast package (deepcopy fixes, SPARQL hardening, critic threshold relaxation — see issue #1 for the full list). These patches are idempotent and safe to apply repeatedly.
 
 ### Query the evolved ontology with SPARQL
 

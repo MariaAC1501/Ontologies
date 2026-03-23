@@ -17,13 +17,18 @@ Run OntoCast in full ontology-evolution mode against `example_paper.pdf` with:
 - Runner: `pipeline/full_mode/run_full_extraction.sh`
 - Output dir: `pipeline/full_mode/test_output/` *(gitignored)*
 
-## Environment used
+## Environment
 
-- Local venv: `pipeline/full_mode/.venv`
-- OntoCast installed from the local `ontocast-0.3.0` wheel into that venv
-- `OPENAI_API_KEY` loaded from repo-root `.env`
-- Model used for the recorded run: `gpt-4o`
-- Run limit: `--head-chunks 2`
+The run script looks for `ontocast` in this order:
+1. `ONTOCAST_BIN` environment variable (if set)
+2. `ontocast` on PATH (e.g., from an activated Conda environment)
+3. Local venv at `pipeline/full_mode/.venv/bin/ontocast`
+
+**Recommended**: use the Conda environment built by `scripts/create_conda_env.sh`.
+
+- `OPENAI_API_KEY` is loaded from the repo-root `.env`
+- Model: `gpt-4o` (configurable in `ontocast_full_config.env`)
+- Default chunk limit: `--head-chunks 2` (to control API costs)
 
 ## Installed-package patches applied before the run
 
