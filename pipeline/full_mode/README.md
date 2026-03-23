@@ -25,7 +25,7 @@ Activate the Conda environment built by `scripts/create_conda_env.sh`:
 conda activate ontologies
 ```
 
-The run script uses `ontocast` from PATH. You can override with `ONTOCAST_BIN` if needed.
+The run script uses `ontocast` from PATH.
 
 - `OPENAI_API_KEY` is loaded from the repo-root `.env`
 - Model: `gpt-4o` (configurable in `ontocast_full_config.env`)
