@@ -273,9 +273,18 @@ PDF paper
 
 ### Run extraction
 
+#### macOS / Linux
+
 ```bash
 conda activate ontologies
 bash pipeline/run_extraction.sh your_paper.pdf
+```
+
+#### Windows PowerShell
+
+```powershell
+conda activate ontologies
+powershell -ExecutionPolicy Bypass -File pipeline\run_extraction.ps1 your_paper.pdf
 ```
 
 The API key is read automatically from `.env` at the repo root. Output goes to `pipeline/test_output/`.
@@ -319,9 +328,18 @@ A second extraction mode runs OntoCast with full ontology evolution — no seed 
 
 ### Run full-mode extraction
 
+#### macOS / Linux
+
 ```bash
 conda activate ontologies
 bash pipeline/full_mode/run_full_extraction.sh your_paper.pdf
+```
+
+#### Windows PowerShell
+
+```powershell
+conda activate ontologies
+powershell -ExecutionPolicy Bypass -File pipeline\full_mode\run_full_extraction.ps1 your_paper.pdf
 ```
 
 All required OntoCast patches are applied at Conda build time (see issue #1 for the full list).
@@ -350,10 +368,19 @@ python pipeline/full_mode/sparql_query.py \
 
 ### Compare both extraction modes
 
+#### macOS / Linux
+
 ```bash
 bash pipeline/comparison/run_comparison.sh
-# Writes pipeline/comparison/COMPARISON_RESULTS.md
 ```
+
+#### Windows PowerShell
+
+```powershell
+powershell -ExecutionPolicy Bypass -File pipeline\comparison\run_comparison.ps1
+```
+
+Both write the report to `pipeline/comparison/COMPARISON_RESULTS.md`.
 
 ## Notes
 
