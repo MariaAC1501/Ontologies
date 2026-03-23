@@ -26,12 +26,12 @@ def _locate_package() -> Path:
 def replace_once(base: Path, rel_path: str, old: str, new: str) -> None:
     """Replace `old` with `new` in a file, skipping if already patched."""
     target = base / rel_path
-    text = target.read_text()
+    text = target.read_text(encoding="utf-8")
     if new in text:
         return  # already patched
     if old not in text:
         raise RuntimeError(f"Expected patch anchor not found in {target}")
-    target.write_text(text.replace(old, new))
+    target.write_text(text.replace(old, new), encoding="utf-8")
 
 
 def main() -> None:
@@ -117,23 +117,23 @@ def main() -> None:
 
     # --- Patch 6: RDFGraph.__deepcopy__ (upstream #48) ---
     rdf_path = base / "onto/rdfgraph.py"
-    rdf_text = rdf_path.read_text()
+    rdf_text = rdf_path.read_text(encoding="utf-8")
     if "def __deepcopy__(self, memo):" not in rdf_text:
         marker = '    def copy(self) -> "RDFGraph":\n        """Create a copy of this RDFGraph.\n\n        Returns:\n            RDFGraph: A new RDFGraph instance with all triples and namespace bindings copied.\n        """\n        result = RDFGraph()\n\n        # Copy all triples\n        for triple in self:\n            result.add(triple)\n\n        # Copy namespace bindings\n        for prefix, uri in self.namespaces():\n            result.bind(prefix, uri)\n\n        return result\n'
         deepcopy_method = '\n    def __deepcopy__(self, memo):\n        """Deep-copy oxigraph-backed graphs into a plain in-memory RDFGraph."""\n        cached = memo.get(id(self))\n        if cached is not None:\n            return cached\n\n        result = RDFGraph()\n        memo[id(self)] = result\n\n        for prefix, uri in self.namespaces():\n            result.bind(prefix, uri)\n\n        skipped = 0\n        for subject, predicate, obj in self:\n            if isinstance(subject, tuple) or isinstance(predicate, tuple) or isinstance(obj, tuple):\n                skipped += 1\n                continue\n            try:\n                result.add((subject, predicate, obj))\n            except Exception as exc:\n                skipped += 1\n                logger.debug("Skipping triple during RDFGraph deepcopy: %s", exc)\n\n        if skipped:\n            logger.warning("Skipped %s RDF-star / unsupported triple(s) during RDFGraph deepcopy", skipped)\n\n        return result\n'
         if marker not in rdf_text:
             raise RuntimeError(f"Expected patch anchor not found in {rdf_path}")
-        rdf_path.write_text(rdf_text.replace(marker, marker + deepcopy_method))
+        rdf_path.write_text(rdf_text.replace(marker, marker + deepcopy_method), encoding="utf-8")
 
     # --- Patch 7: SPARQL generation for RDF-star triples (upstream #49) ---
     sparql_path = base / "onto/sparql_models.py"
-    sparql_text = sparql_path.read_text()
+    sparql_text = sparql_path.read_text(encoding="utf-8")
     if "def _iter_supported_triples" not in sparql_text:
         old_sparql = '    def _generate_insert_query(self, graph: RDFGraph, prefix_block: str) -> str:\n        """Generate a SPARQL INSERT query for the given RDFGraph."""\n        if len(graph) == 0:\n            return ""\n\n        # Format triples for SPARQL using proper RDF term serialization\n        triple_patterns = []\n        for subject, predicate, obj in graph:\n            triple_patterns.append(\n                f"    {self._serialize_rdf_term(subject)} {self._serialize_rdf_term(predicate)} {self._serialize_rdf_term(obj)} ."\n            )\n\n        triples_block = "\\n".join(triple_patterns)\n\n        query_parts = []\n        if prefix_block:\n            query_parts.append(prefix_block)\n        query_parts.append("INSERT DATA {")\n        query_parts.append(triples_block)\n        query_parts.append("}")\n\n        return "\\n".join(query_parts)\n\n    def _generate_delete_query(self, graph: RDFGraph, prefix_block: str) -> str:\n        """Generate a SPARQL DELETE query for the given RDFGraph."""\n        if len(graph) == 0:\n            return ""\n\n        # Format triples for SPARQL using proper RDF term serialization\n        triple_patterns = []\n        for subject, predicate, obj in graph:\n            triple_patterns.append(\n                f"    {self._serialize_rdf_term(subject)} {self._serialize_rdf_term(predicate)} {self._serialize_rdf_term(obj)} ."\n            )\n\n        triples_block = "\\n".join(triple_patterns)\n\n        query_parts = []\n        if prefix_block:\n            query_parts.append(prefix_block)\n        query_parts.append("DELETE DATA {")\n        query_parts.append(triples_block)\n        query_parts.append("}")\n\n        return "\\n".join(query_parts)\n\n    def _serialize_rdf_term(self, term: Node) -> str:\n        """Serialize an RDF term to its SPARQL string representation."""\n'
         new_sparql = '    def _iter_supported_triples(self, graph: RDFGraph):\n        """Yield only triples safe for SPARQL update text."""\n        skipped = 0\n        for subject, predicate, obj in graph:\n            if isinstance(subject, tuple) or isinstance(predicate, tuple) or isinstance(obj, tuple):\n                skipped += 1\n                continue\n            yield subject, predicate, obj\n        if skipped:\n            logger.warning("Skipped %s tuple-valued RDF-star triple(s) in SPARQL update", skipped)\n\n    def _generate_insert_query(self, graph: RDFGraph, prefix_block: str) -> str:\n        """Generate a SPARQL INSERT query for the given RDFGraph."""\n        if len(graph) == 0:\n            return ""\n        triple_patterns = []\n        for subject, predicate, obj in self._iter_supported_triples(graph):\n            triple_patterns.append(\n                f"    {self._serialize_rdf_term(subject)} {self._serialize_rdf_term(predicate)} {self._serialize_rdf_term(obj)} ."\n            )\n        if not triple_patterns:\n            return ""\n        triples_block = "\\n".join(triple_patterns)\n        query_parts = []\n        if prefix_block:\n            query_parts.append(prefix_block)\n        query_parts.append("INSERT DATA {")\n        query_parts.append(triples_block)\n        query_parts.append("}")\n        return "\\n".join(query_parts)\n\n    def _generate_delete_query(self, graph: RDFGraph, prefix_block: str) -> str:\n        """Generate a SPARQL DELETE query for the given RDFGraph."""\n        if len(graph) == 0:\n            return ""\n        triple_patterns = []\n        for subject, predicate, obj in self._iter_supported_triples(graph):\n            triple_patterns.append(\n                f"    {self._serialize_rdf_term(subject)} {self._serialize_rdf_term(predicate)} {self._serialize_rdf_term(obj)} ."\n            )\n        if not triple_patterns:\n            return ""\n        triples_block = "\\n".join(triple_patterns)\n        query_parts = []\n        if prefix_block:\n            query_parts.append(prefix_block)\n        query_parts.append("DELETE DATA {")\n        query_parts.append(triples_block)\n        query_parts.append("}")\n        return "\\n".join(query_parts)\n\n    def _serialize_rdf_term(self, term: Node) -> str:\n        """Serialize an RDF term to its SPARQL string representation."""\n        if isinstance(term, tuple):\n            raise TypeError(f"Unsupported tuple-valued RDF term: {term!r}")\n'
         if old_sparql not in sparql_text:
             raise RuntimeError(f"Expected patch anchor not found in {sparql_path}")
-        sparql_path.write_text(sparql_text.replace(old_sparql, new_sparql))
+        sparql_path.write_text(sparql_text.replace(old_sparql, new_sparql), encoding="utf-8")
 
     # --- Patch 8: critic threshold relaxation ---
     replace_once(base, "agent/criticise_ontology.py",
