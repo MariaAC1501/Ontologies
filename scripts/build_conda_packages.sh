@@ -12,6 +12,7 @@ conda activate base
 
 conda build conda/recipes/ontologies-cbr
 conda build conda/recipes/ontocast
+conda build conda/recipes/ontologies-pipeline
 conda build conda/recipes/ontologies-stack
 conda index "$CONDA_ROOT/conda-bld"
 

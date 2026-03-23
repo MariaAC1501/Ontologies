@@ -11,6 +11,8 @@ if (-not (Test-Path $CondaExe)) {
 if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
 & $CondaExe build conda/recipes/ontocast
 if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
+& $CondaExe build conda/recipes/ontologies-pipeline
+if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
 & $CondaExe build conda/recipes/ontologies-stack
 if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
 & $CondaExe index (Join-Path $CondaRoot 'conda-bld')

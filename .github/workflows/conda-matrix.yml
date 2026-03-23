@@ -141,16 +141,19 @@ jobs:
         shell: pwsh
         run: powershell -ExecutionPolicy Bypass -File scripts/create_conda_env.ps1 "$env:CONDA_ROOT\envs\ontologies-ci"
 
-      - name: Smoke test installed CLIs on Unix
+      - name: Smoke test installed packages on Unix
         if: runner.os != 'Windows'
         shell: bash
         run: |
           conda run -p "$ENV_PREFIX" ontologies-cbr help
           conda run -p "$ENV_PREFIX" ontocast --help
+          conda run -p "$ENV_PREFIX" python -c "import os; from pathlib import Path; import ontologies_pipeline.extraction_schema; prefix = Path(os.environ['CONDA_PREFIX']); assert (prefix / 'share' / 'ontologies-pipeline' / 'seed_ontology' / 'opmad_seed.ttl').is_file(); assert (prefix / 'share' / 'ontologies-pipeline' / 'extraction_schema.py').is_file(); assert (prefix / 'share' / 'ontologies-pipeline' / 'facts_to_csv.py').is_file(); assert (prefix / 'share' / 'ontologies-pipeline' / 'ontocast_config.env').is_file(); assert (prefix / 'share' / 'ontologies-pipeline' / 'run_extraction.sh').is_file()"
+          conda run -p "$ENV_PREFIX" python -m ontologies_pipeline.facts_to_csv --help
 
-      - name: Smoke test installed CLIs on Windows
+      - name: Smoke test installed packages on Windows
         if: runner.os == 'Windows'
         shell: pwsh
         run: |
           conda run -p "$env:ENV_PREFIX" ontologies-cbr help
-          conda run -p "$env:ENV_PREFIX" python -c "import ontocast; import ontocast.cli.serve; import ontocast.cli.cmp_states"
+          conda run -p "$env:ENV_PREFIX" python -c "import os; from pathlib import Path; import ontocast; import ontocast.cli.serve; import ontocast.cli.cmp_states; import ontologies_pipeline.extraction_schema; prefix = Path(os.environ['CONDA_PREFIX']); assert (prefix / 'share' / 'ontologies-pipeline' / 'seed_ontology' / 'opmad_seed.ttl').is_file(); assert (prefix / 'share' / 'ontologies-pipeline' / 'extraction_schema.py').is_file(); assert (prefix / 'share' / 'ontologies-pipeline' / 'facts_to_csv.py').is_file(); assert (prefix / 'share' / 'ontologies-pipeline' / 'ontocast_config.env').is_file(); assert (prefix / 'share' / 'ontologies-pipeline' / 'run_extraction.sh').is_file()"
+          conda run -p "$env:ENV_PREFIX" python -m ontologies_pipeline.facts_to_csv --help

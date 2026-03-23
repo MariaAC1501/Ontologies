@@ -1,9 +1,10 @@
-# Conda packaging plan for CBR
+# Conda packaging plan for the Ontologies stack
 
 This repository is moving toward a Conda-first setup where:
 
 - `ontocast` is installed into the Conda environment as a Python dependency
 - the Java CBR tooling is packaged as a Conda package
+- the integrated extraction pipeline is packaged as a Conda package
 - colleagues can create one environment and get Python + Java + the CBR CLI in one step
 
 ## Packaging target
@@ -38,7 +39,8 @@ The CLI resolves its data directory in this order:
 - `conda/recipes/ontologies-cbr/meta.yaml` — Conda package recipe
 - `conda/recipes/ontologies-cbr/build.sh` — package build/install script
 - `conda/recipes/ontocast/` — Conda recipe for OntoCast
-- `conda/recipes/ontologies-stack/` — meta-package that installs both
+- `conda/recipes/ontologies-pipeline/` — Conda recipe for the integrated extraction pipeline
+- `conda/recipes/ontologies-stack/` — meta-package that installs the full stack
 - `scripts/build_conda_packages.sh` — build all local packages and index the local channel
 - `scripts/create_conda_env.sh` — create an environment from the local package channel
 
@@ -62,25 +64,35 @@ From an activated Conda environment with `conda-build` installed:
 
 ```bash
 conda build conda/recipes/ontologies-cbr
+conda build conda/recipes/ontocast
+conda build conda/recipes/ontologies-pipeline
+conda build conda/recipes/ontologies-stack
 ```
 
-Then install the built package into your environment, for example from the local build output.
+Then install the built packages into your environment, for example from the local build output.
 
 ## Current status
 
-Verified locally on macOS arm64:
+Current package layout:
 
-- `ontologies-cbr` package builds and passes a real headless query smoke test
-- `ontocast` package builds and passes import/CLI smoke tests
-- `ontologies-stack` meta-package builds
-- a fresh Conda environment can be created from the local build channel and run both:
-  - `ontologies-cbr help`
-  - `ontocast --help`
+- `ontologies-cbr` — headless Java CBR tooling and ontology/data assets
+- `ontocast` — OntoCast Python package
+- `ontologies-pipeline` — integrated extraction pipeline modules plus packaged seed/config/scripts
+- `ontologies-stack` — meta-package that installs all three
+
+Smoke-test expectations:
+
+- `ontologies-cbr` provides the `ontologies-cbr` CLI and packaged data assets
+- `ontocast` provides the OntoCast CLI and importable Python modules
+- `ontologies-pipeline` installs:
+  - importable Python modules under `ontologies_pipeline`
+  - pipeline assets under `$CONDA_PREFIX/share/ontologies-pipeline`
+  - a smoke test that imports `ontologies_pipeline.extraction_schema` and runs `python -m ontologies_pipeline.facts_to_csv --help`
+- a fresh Conda environment created from the local build channel should expose the full stack together
 
 ## Recommended next steps
 
 1. Publish the local packages to an internal Conda channel or artifact store.
-2. Add CI to build and test the packages automatically.
-3. Add Linux recipes/variants for OntoCast if the team needs cross-platform support.
-4. Decide whether to package OntoCast optional `doc-processing` extras in a separate package variant.
-5. Document the full OntoCast → RDF → CSV → CBR workflow once OntoCast execution is finalized.
+2. Keep the macOS/Linux/Windows Conda matrix green as pipeline packaging evolves.
+3. Decide whether to package OntoCast optional `doc-processing` extras in a separate package variant.
+4. Document the full OntoCast → RDF → CSV → CBR workflow for colleagues using the packaged stack.

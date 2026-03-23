@@ -1,0 +1,35 @@
+{% set name = "ontologies-pipeline" %}
+{% set version = "0.1.0" %}
+
+package:
+  name: {{ name }}
+  version: {{ version }}
+
+source:
+  path: ../../..
+
+build:
+  number: 0
+  noarch: python
+
+requirements:
+  host:
+    - python =3.12
+  run:
+    - python =3.12
+    - pydantic >=2.11.9
+    - rdflib >=7.1.4
+    - ontocast =0.3.0
+    - ontologies-cbr =0.1.0
+
+test:
+  commands:
+    - python -c "import os; from pathlib import Path; import ontologies_pipeline.extraction_schema; prefix = Path(os.environ['PREFIX']); assert (prefix / 'share' / 'ontologies-pipeline' / 'seed_ontology' / 'opmad_seed.ttl').is_file(); assert (prefix / 'share' / 'ontologies-pipeline' / 'extraction_schema.py').is_file(); assert (prefix / 'share' / 'ontologies-pipeline' / 'facts_to_csv.py').is_file(); assert (prefix / 'share' / 'ontologies-pipeline' / 'ontocast_config.env').is_file(); assert (prefix / 'share' / 'ontologies-pipeline' / 'run_extraction.sh').is_file(); assert (prefix / 'share' / 'ontologies-pipeline' / 'tests' / 'test_facts_to_csv.py').is_file()"
+    - python -m ontologies_pipeline.facts_to_csv --help
+
+about:
+  summary: Integrated OntoCast-to-CBR extraction pipeline assets for the Ontologies project
+  license: LicenseRef-Project-Internal
+  description: |
+    Packages the extraction pipeline Python modules and supporting data/config
+    files so the full PDF → facts → CSV → CBR flow can be installed from Conda.

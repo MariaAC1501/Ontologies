@@ -33,7 +33,10 @@ from rdflib import Graph, Literal, Namespace, RDF, RDFS, URIRef
 if __package__ is None or __package__ == "":
     sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
 
-from pipeline.extraction_schema import PredictiveMaintenanceCase, TASK_CLASS_IRIS
+try:
+    from pipeline.extraction_schema import PredictiveMaintenanceCase, TASK_CLASS_IRIS
+except ImportError:
+    from .extraction_schema import PredictiveMaintenanceCase, TASK_CLASS_IRIS
 
 SCHEMA = Namespace("http://schema.org/")
 SCHEMA_ALT = Namespace("https://schema.org/")
