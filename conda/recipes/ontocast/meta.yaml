@@ -11,6 +11,12 @@ build:
   skip: true  # [linux and not x86_64]
   skip: true  # [osx and not arm64]
   skip: true  # [not win and not linux and not osx]
+  entry_points:
+    - cmp-states = ontocast.cli.cmp_states:main
+    - ontocast = ontocast.cli.serve:run
+    - pdfs-to-markdown = ontocast.cli.pdfs_to_markdown:main
+    - plot-graph = ontocast.cli.plot_graph:main
+    - test-api = ontocast.cli.test_api:main
 
 requirements:
   host:

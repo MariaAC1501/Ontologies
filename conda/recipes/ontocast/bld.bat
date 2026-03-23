@@ -12,3 +12,9 @@ set "WHEEL_DIR=%RECIPE_DIR%\wheels"
 %PYTHON% -m pip install --no-deps --no-index --find-links "%WHEEL_DIR%" "%WHEEL_DIR%\primp-0.15.0-cp38-abi3-win_amd64.whl" || exit /b 1
 %PYTHON% -m pip install --no-deps --no-index --find-links "%WHEEL_DIR%" "%WHEEL_DIR%\robyn-0.81.0-cp312-cp312-win_amd64.whl" || exit /b 1
 %PYTHON% -m pip install --no-deps --no-index --find-links "%WHEEL_DIR%" "%WHEEL_DIR%\simsimd-6.5.16-cp312-cp312-win_amd64.whl" || exit /b 1
+
+del /q "%PREFIX%\Scripts\cmp-states.exe"
+del /q "%PREFIX%\Scripts\ontocast.exe"
+del /q "%PREFIX%\Scripts\pdfs-to-markdown.exe"
+del /q "%PREFIX%\Scripts\plot-graph.exe"
+del /q "%PREFIX%\Scripts\test-api.exe"
