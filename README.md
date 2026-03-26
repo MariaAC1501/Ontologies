@@ -152,6 +152,7 @@ After creating the environment, activate it and run:
 ```bash
 conda activate ontologies
 ontologies-cbr help
+pip install docling
 ontocast --help
 ```
 
@@ -199,6 +200,19 @@ bash scripts/run_cbr.sh query-one \
   --number-of-cases 1
 ```
 
+> **Windows note:** There is currently no repo-local PowerShell wrapper equivalent to `scripts/run_cbr.sh`. On Windows, use the packaged CLI installed by the Conda environment instead:
+>
+> ```powershell
+> conda activate ontologies
+> ontologies-cbr help
+> ontologies-cbr query-one `
+>   --task "Remaining useful life estimation" `
+>   --case-study-type "Rotary machines" `
+>   --input-for-model "Time series" `
+>   --input-type "Temperature, Fluid Pressure, Spinning speed" `
+>   --number-of-cases 1
+> ```
+
 ## Extraction pipeline
 
 The integrated pipeline extracts structured data from predictive-maintenance papers and feeds it into the CBR system.
@@ -225,6 +239,8 @@ PDF paper
   → HeadlessCBR query
 ```
 
+This is the logical end-to-end flow. The extraction wrapper scripts run the **OntoCast extraction step only**; the RDF/Turtle → CSV conversion is a separate follow-up step performed by `pipeline/facts_to_csv.py`.
+
 ### Run extraction
 
 #### macOS / Linux
@@ -238,7 +254,6 @@ bash pipeline/run_extraction.sh your_paper.pdf
 
 ```powershell
 conda activate ontologies
-pip install docling
 .\pipeline\run_extraction.ps1 your_paper.pdf
 ```
 
@@ -249,24 +264,49 @@ pip install docling
 
 The API key is read automatically from `.env` at the repo root. Output goes to `pipeline/test_output/`.
 
+The extraction scripts write OntoCast outputs such as `facts_*.ttl`, ontology files, and `run.log`. They do **not** automatically call `pipeline/facts_to_csv.py`, and they do **not** remove an existing `pipeline/test_output/extracted_cases.csv`. If you already see a CSV after running extraction, it may be a leftover file from an earlier conversion.
+
 > **First run required.** The regression tests and comparison scripts need extraction output to exist. Run at least one extraction before running tests.
 
 ### Convert facts to CSV
+
+Use this script when you want to turn existing OntoCast facts into the 19-column CBR CSV format without rerunning extraction. This is also how the test scripts regenerate CSV output from frozen facts fixtures.
 
 ```bash
 python pipeline/facts_to_csv.py \
   --facts pipeline/test_output/facts_*.ttl \
   --ontology pipeline/seed_ontology/opmad_seed.ttl \
-  --output extracted_cases.csv
+  --output pipeline/test_output/extracted_cases.csv
+```
+
+The same command works in Windows PowerShell:
+
+```powershell
+python pipeline\facts_to_csv.py `
+  --facts pipeline\test_output\facts_*.ttl `
+  --ontology pipeline\seed_ontology\opmad_seed.ttl `
+  --output pipeline\test_output\extracted_cases.csv
 ```
 
 ### Query CBR with extracted parameters
+
+#### macOS / Linux
 
 ```bash
 bash scripts/run_cbr.sh query-one \
   --task "One step future state forecast" \
   --input-for-model "Signals" \
   --input-type "Pressure, Tension" \
+  --number-of-cases 3
+```
+
+#### Windows PowerShell
+
+```powershell
+ontologies-cbr query-one `
+  --task "One step future state forecast" `
+  --input-for-model "Signals" `
+  --input-type "Pressure, Tension" `
   --number-of-cases 3
 ```
 
@@ -277,8 +317,9 @@ bash scripts/run_cbr.sh query-one \
 | `pipeline/extraction_schema.py` | Pydantic model mapping 19 CSV columns to OPMAD ontology IRIs |
 | `pipeline/seed_ontology/opmad_seed.ttl` | Self-contained OPMAD seed ontology for fixed-ontology extraction |
 | `pipeline/ontocast_config.env` | OntoCast configuration for constrained extraction mode |
-| `pipeline/run_extraction.sh` | Wrapper script to run OntoCast on a PDF |
-| `pipeline/facts_to_csv.py` | Converts RDF/Turtle facts to CBR-compatible CSV |
+| `pipeline/run_extraction.sh` | macOS/Linux wrapper script that runs OntoCast on a PDF |
+| `pipeline/run_extraction.ps1` | Windows PowerShell wrapper script that runs OntoCast on a PDF |
+| `pipeline/facts_to_csv.py` | Standalone bridge that converts existing RDF/Turtle facts to CBR-compatible CSV |
 | `pipeline/SCHEMA_MAPPING.md` | Detailed documentation of the OPMAD field mapping |
 | `pipeline/INTEGRATION_RESULTS.md` | End-to-end test results |
 
