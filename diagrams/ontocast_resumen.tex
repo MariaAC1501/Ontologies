@@ -1,0 +1,272 @@
+\documentclass[12pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[spanish]{babel}
+\usepackage{float}
+\usepackage{xcolor}
+\usepackage[margin=2.5cm]{geometry}
+\usepackage{tikz}
+\usetikzlibrary{arrows.meta, positioning, shapes.geometric, calc}
+
+% Colores académicos suaves
+\definecolor{myblue}{RGB}{52, 101, 164}
+\definecolor{mygreen}{RGB}{78, 154, 6}
+\definecolor{myorange}{RGB}{245, 121, 0}
+\definecolor{mygray}{RGB}{80, 80, 80}
+\definecolor{lightblue}{RGB}{232, 240, 254}
+\definecolor{lightgreen}{RGB}{235, 247, 228}
+\definecolor{lightorange}{RGB}{255, 241, 224}
+\definecolor{lightgray}{RGB}{245, 245, 245}
+
+\title{Resumen y diagramas conceptuales de OntoCast}
+\author{}
+\date{}
+
+\begin{document}
+\maketitle
+
+\section{¿Qué es OntoCast y qué problema resuelve?}
+
+OntoCast es una herramienta orientada a transformar el contenido de artículos científicos en una representación estructurada de conocimiento. Su propósito principal es tomar información expresada en lenguaje natural dentro de un PDF y convertirla en una forma que pueda consultarse, compararse y reutilizarse de manera más sistemática.
+
+El problema que intenta resolver es que los \textit{papers} contienen conocimiento valioso, pero normalmente ese conocimiento está disperso en texto libre. Eso dificulta responder preguntas como: qué modelo se usó, qué tarea de mantenimiento predictivo se abordó, qué variables se midieron o qué tipo de sistema fue estudiado. OntoCast ayuda a pasar de una descripción narrativa a una estructura semántica más formal.
+
+En este proyecto, esa transformación es especialmente útil porque permite conectar artículos científicos con un flujo de trabajo posterior de análisis y consulta. Dependiendo de la configuración, OntoCast puede extraer hechos para una ontología ya existente o bien construir una ontología nueva a partir del contenido del documento.
+
+\section{Resumen ejecutivo}
+
+\textbf{OntoCast} es la pieza del proyecto que transforma artículos científicos en conocimiento estructurado. En este repositorio se utiliza sobre \textit{papers} de mantenimiento predictivo para extraer hechos semánticos desde archivos PDF y luego integrarlos con un sistema de razonamiento basado en casos (\textit{Case-Based Reasoning}, CBR).
+
+OntoCast puede operar de \textbf{dos formas principales}. En la primera, trabaja con una \textbf{ontología semilla} ya definida. En este proyecto, dicha ontología corresponde a OPMAD. En este modo, OntoCast no inventa la estructura conceptual, sino que toma la información del \textit{paper} y la acomoda dentro de categorías ya existentes, como tarea, modelo, variables de entrada y caso de estudio. Esta modalidad es la más útil cuando se requiere una salida estable, comparable entre documentos y compatible con sistemas previos, como el \textit{pipeline} que finaliza en un archivo CSV de 19 columnas para el sistema CBR.
+
+En la segunda forma, OntoCast puede trabajar en \textbf{modo libre} o de \textbf{evolución ontológica}. En este caso no parte de una ontología fija, sino que intenta descubrir por sí mismo qué conceptos, clases y relaciones son relevantes en el documento. Así, además de extraer hechos, genera una ontología nueva o evolucionada. Esta modalidad permite captar mejor la especificidad del \textit{paper} y descubrir conceptos que no están contemplados en una ontología previa, pero produce resultados más heterogéneos y menos compatibles con sistemas legados.
+
+La diferencia de fondo entre ambos enfoques es conceptual. Con ontología semilla, OntoCast responde a la pregunta: \textit{``¿Cómo encaja este \textit{paper} dentro de un vocabulario ya definido?''}. En modo libre, responde a: \textit{``¿Qué ontología tendría sentido construir a partir de este \textit{paper}?''}. Por ello, el primer enfoque es ideal para producción e interoperabilidad, mientras que el segundo es más adecuado para exploración y descubrimiento semántico.
+
+También se discutió una tercera posibilidad intermedia: \textbf{proporcionar a OntoCast un conjunto de columnas objetivo} en lugar de una ontología formal completa. Por ejemplo, columnas como \texttt{Task}, \texttt{Model}, \texttt{Input type}, \texttt{Performance} o \texttt{Study title}. En dicho escenario, OntoCast podría inducir una ontología mínima compatible con esa estructura. Esto no sería una generación completamente libre, porque las columnas ya imponen un esquema conceptual implícito, pero sí permitiría trabajar sin una ontología semilla OWL completa. En la práctica, se trataría de un enfoque de \textbf{extracción guiada por esquema}, ubicado entre la ontología fija y la ontología emergente.
+
+Finalmente, se concluyó que en este proyecto el modo con semilla es el más robusto para alimentar el sistema CBR, mientras que el modo libre es más experimental y todavía frágil. Sin embargo, ambos demuestran que OntoCast no solo sirve para extraer datos: también puede participar en la construcción o evolución del modelo conceptual con el que esos datos se representan.
+
+\section{Ejemplo simple: del texto libre a la salida estructurada}
+
+Un modo sencillo de entender OntoCast es observar cómo convierte una frase de un \textit{paper} en información estructurada.
+
+\subsection*{Entrada en lenguaje natural}
+
+\begin{quote}
+``The ARIMA model was used to forecast the behavior of the slitting machine using pressure and tension data.''
+\end{quote}
+
+\subsection*{Posible interpretación estructurada}
+
+\begin{itemize}
+  \item \textbf{Task:} Forecasting
+  \item \textbf{Model:} ARIMA
+  \item \textbf{Case study:} Slitting machine
+  \item \textbf{Input variables:} Pressure, Tension
+\end{itemize}
+
+Este ejemplo muestra la idea central: OntoCast toma una descripción textual y la reorganiza en una estructura que luego puede expresarse como hechos RDF, como instancias dentro de una ontología o como columnas de salida para otros sistemas.
+
+\section{Glosario breve}
+
+\begin{itemize}
+  \item \textbf{Ontología:} modelo formal que define conceptos y relaciones de un dominio.
+  \item \textbf{Ontología semilla:} ontología inicial que se entrega como guía para extraer información.
+  \item \textbf{RDF:} formato para representar conocimiento como tripletas sujeto--predicado--objeto.
+  \item \textbf{Facts:} afirmaciones concretas extraídas de un documento.
+  \item \textbf{CBR:} razonamiento basado en casos; compara un caso nuevo con casos previos.
+  \item \textbf{SPARQL:} lenguaje de consulta para datos representados en RDF.
+\end{itemize}
+
+\section{Diagramas conceptuales del flujo de OntoCast}
+
+\tikzset{
+  baseblock/.style={
+    rectangle,
+    rounded corners=4pt,
+    draw,
+    thick,
+    align=center,
+    minimum height=1cm,
+    text width=4.2cm,
+    inner sep=6pt,
+    font=\small
+  },
+  blueblock/.style={
+    baseblock,
+    draw=myblue,
+    fill=lightblue
+  },
+  greenblock/.style={
+    baseblock,
+    draw=mygreen,
+    fill=lightgreen
+  },
+  orangeblock/.style={
+    baseblock,
+    draw=myorange,
+    fill=lightorange
+  },
+  grayblock/.style={
+    baseblock,
+    draw=mygray,
+    fill=lightgray
+  },
+  arrow/.style={
+    -{Latex[length=3mm,width=2mm]},
+    thick,
+    draw=mygray
+  }
+}
+
+\subsection{Vista general}
+
+\begin{figure}[H]
+\centering
+\begin{tikzpicture}[node distance=1.6cm and 2.6cm]
+
+\node[grayblock] (pdf) {Paper en PDF};
+\node[blueblock, below=of pdf] (ontocast) {\textbf{OntoCast}};
+
+\node[greenblock, below left=2.0cm and 1.8cm of ontocast] (seed) {Modo con semilla\\(ontología fija)};
+\node[orangeblock, below right=2.0cm and 1.8cm of ontocast] (free) {Modo libre\\(evolución ontológica)};
+
+\draw[arrow] (pdf) -- (ontocast);
+\draw[arrow] (ontocast) -- (seed);
+\draw[arrow] (ontocast) -- (free);
+
+\end{tikzpicture}
+\caption{Vista general de los modos de operación de OntoCast.}
+\label{fig:ontocast-general}
+\end{figure}
+
+\subsection{Flujo con ontología semilla}
+
+\begin{figure}[H]
+\centering
+\begin{tikzpicture}[node distance=1.15cm]
+
+\node[grayblock] (pdf) {Paper PDF};
+\node[blueblock, below=of pdf] (ontocast) {\textbf{OntoCast}};
+\node[greenblock, below=of ontocast] (seed) {Usa ontología semilla\\(por ejemplo, OPMAD)};
+\node[greenblock, below=of seed] (facts) {Extrae hechos alineados\\con clases ya conocidas};
+\node[grayblock, below=of facts] (ttl) {\texttt{facts\_*.ttl}};
+\node[grayblock, below=of ttl] (csvtool) {\texttt{facts\_to\_csv.py}};
+\node[grayblock, below=of csvtool] (csv) {CSV de 19 columnas};
+\node[grayblock, below=of csv] (cbr) {Sistema CBR};
+
+\draw[arrow] (pdf) -- (ontocast);
+\draw[arrow] (ontocast) -- (seed);
+\draw[arrow] (seed) -- (facts);
+\draw[arrow] (facts) -- (ttl);
+\draw[arrow] (ttl) -- (csvtool);
+\draw[arrow] (csvtool) -- (csv);
+\draw[arrow] (csv) -- (cbr);
+
+\end{tikzpicture}
+\caption{Flujo de OntoCast cuando trabaja con una ontología semilla.}
+\label{fig:ontocast-seed}
+\end{figure}
+
+\noindent\textbf{Idea clave:} en este modo, OntoCast actúa como un \textbf{extractor guiado}.
+
+\subsection{Flujo en modo libre}
+
+\begin{figure}[H]
+\centering
+\begin{tikzpicture}[node distance=1.15cm and 2.2cm]
+
+\node[grayblock] (pdf) {Paper PDF};
+\node[blueblock, below=of pdf] (ontocast) {\textbf{OntoCast}};
+\node[orangeblock, below=of ontocast] (detect) {Detecta conceptos\\relevantes del \textit{paper}};
+\node[orangeblock, below=of detect] (propose) {Propone clases,\\relaciones e instancias};
+\node[orangeblock, below=of propose] (emergent) {Genera ontología emergente};
+
+\node[grayblock, below left=1.9cm and 1.7cm of emergent, text width=3.3cm] (ontology) {\texttt{ontology\_*.ttl}};
+\node[grayblock, below right=1.9cm and 1.7cm of emergent, text width=3.3cm] (facts) {\texttt{facts\_*.ttl}};
+
+\node[grayblock, below=2.1cm of emergent] (sparql) {Consulta SPARQL};
+
+\draw[arrow] (pdf) -- (ontocast);
+\draw[arrow] (ontocast) -- (detect);
+\draw[arrow] (detect) -- (propose);
+\draw[arrow] (propose) -- (emergent);
+\draw[arrow] (emergent) -- (ontology);
+\draw[arrow] (emergent) -- (facts);
+\draw[arrow] (ontology) -- (sparql);
+\draw[arrow] (facts) -- (sparql);
+
+\end{tikzpicture}
+\caption{Flujo de OntoCast en modo libre o de evolución ontológica.}
+\label{fig:ontocast-free}
+\end{figure}
+
+\noindent\textbf{Idea clave:} en este modo, OntoCast actúa como \textbf{extractor y constructor de ontología}.
+
+\subsection{Flujo intermedio propuesto: guiado por columnas}
+
+\begin{figure}[H]
+\centering
+\begin{tikzpicture}[node distance=1.2cm and 2.2cm]
+
+\node[grayblock, text width=5.0cm] (cols) {Columnas objetivo\\(\texttt{Task}, \texttt{Model}, \texttt{Input type}, \texttt{Performance}, etc.)};
+\node[grayblock, below=of cols] (pdf) {Paper PDF};
+\node[blueblock, below=of pdf] (ontocast) {\textbf{OntoCast}};
+\node[greenblock, below=of ontocast, text width=5cm] (induce) {Induce ontología mínima\\compatible con el esquema};
+
+\node[grayblock, below left=1.9cm and 1.7cm of induce, text width=3.4cm] (funcont) {Ontología funcional};
+\node[grayblock, below right=1.9cm and 1.7cm of induce, text width=3.4cm] (facts) {Facts};
+
+\node[grayblock, below=2.1cm of induce, text width=4.5cm] (export) {Exportación a CSV, RDF o consultas};
+
+\draw[arrow] (cols) -- (pdf);
+\draw[arrow] (pdf) -- (ontocast);
+\draw[arrow] (ontocast) -- (induce);
+\draw[arrow] (induce) -- (funcont);
+\draw[arrow] (induce) -- (facts);
+\draw[arrow] (funcont) -- (export);
+\draw[arrow] (facts) -- (export);
+
+\end{tikzpicture}
+\caption{Flujo intermedio propuesto: extracción guiada por un esquema de columnas.}
+\label{fig:ontocast-columns}
+\end{figure}
+
+\noindent\textbf{Idea clave:} no existe una semilla ontológica completa, pero sí un \textbf{esquema de extracción}.
+
+\subsection{Comparación conceptual rápida}
+
+\begin{figure}[H]
+\centering
+\begin{tikzpicture}[node distance=1.1cm]
+
+\node[greenblock, text width=10.8cm] (seedq) {\textbf{Con semilla:} ``¿Dónde encaja esto en la ontología dada?''};
+
+\node[orangeblock, below=of seedq, text width=10.8cm] (freeq) {\textbf{Sin semilla:} ``¿Qué ontología describe mejor este documento?''};
+
+\node[blueblock, below=of freeq, text width=10.8cm] (colsq) {\textbf{Con columnas objetivo:} ``¿Qué ontología mínima necesito para poblar este esquema?''};
+
+\end{tikzpicture}
+\caption{Comparación conceptual de los tres enfoques discutidos para OntoCast.}
+\label{fig:ontocast-questions}
+\end{figure}
+
+\section{¿Cuándo usar cada modo?}
+
+\begin{itemize}
+  \item \textbf{Modo con semilla:} conviene cuando se necesita consistencia entre documentos, interoperabilidad con un sistema existente y una salida más controlada.
+  \item \textbf{Modo libre:} conviene cuando se quiere explorar el dominio, descubrir conceptos nuevos y analizar qué ontología podría emerger del contenido del documento.
+  \item \textbf{Modo guiado por columnas:} conviene cuando no se quiere imponer una ontología completa, pero sí mantener una estructura mínima de salida.
+\end{itemize}
+
+\section{Qué no hace OntoCast}
+
+\begin{itemize}
+  \item No reemplaza automáticamente el juicio experto del dominio.
+  \item No garantiza que la ontología generada en modo libre sea perfecta o definitiva.
+  \item No es solamente una herramienta de OCR o extracción textual plana.
+  \item No siempre produce una ontología libre totalmente estable; en este proyecto, ese modo sigue siendo más frágil que el modo con semilla.
+\end{itemize}
+
+\end{document}

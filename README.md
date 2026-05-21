@@ -282,10 +282,7 @@ python pipeline/facts_to_csv.py \
 The same command works in Windows PowerShell:
 
 ```powershell
-python pipeline\facts_to_csv.py `
-  --facts pipeline\test_output\facts_*.ttl `
-  --ontology pipeline\seed_ontology\opmad_seed.ttl `
-  --output pipeline\test_output\extracted_cases.csv
+python pipeline\facts_to_csv.py `--facts pipeline\test_output\facts_*.ttl `--ontology pipeline\seed_ontology\opmad_seed.ttl `--output pipeline\test_output\extracted_cases.csv
 ```
 
 ### Query CBR with extracted parameters
@@ -303,11 +300,7 @@ bash scripts/run_cbr.sh query-one \
 #### Windows PowerShell
 
 ```powershell
-ontologies-cbr query-one `
-  --task "One step future state forecast" `
-  --input-for-model "Signals" `
-  --input-type "Pressure, Tension" `
-  --number-of-cases 3
+ontologies-cbr query-one `--task "One step future state forecast" `--input-for-model "Signals" `--input-type "Pressure, Tension" `--number-of-cases 3
 ```
 
 ### Pipeline files

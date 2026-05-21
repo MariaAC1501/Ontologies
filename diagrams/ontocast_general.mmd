@@ -1,0 +1,43 @@
+flowchart TD
+    A["Artículo científico<br/>PDF input"] --> B["Ingesta de documento<br/>(OntoCast + docling)"]
+    B --> C["Segmentación en chunks<br/>/ unidades de contenido"]
+    C --> D["OntoCast core<br/>LLM + prompts + bucles de crítica<br/>+ normalización + manejo RDF"]
+
+    subgraph FIXED["Modo fijo / semilla"]
+        E["OPMAD seed ontology"]
+        G["facts_*.ttl<br/>RDF facts alineados"]
+        H["pipeline/facts_to_csv.py<br/>RDF → CSV 19 columnas"]
+        I["extracted_cases.csv<br/>formato compatible CBR"]
+        J["Headless CBR / myCBR<br/>recuperación de casos"]
+        K["Casos similares / salida<br/>de recomendación"]
+
+        E --> G
+        G --> H
+        H --> I
+        I --> J
+        J --> K
+    end
+
+    subgraph FREE["Modo libre / evolución ontológica"]
+        L["ontology_*.ttl<br/>ontología emergente"]
+        M["facts_*.ttl<br/>hechos extraídos"]
+        N["SPARQL query layer<br/>sparql_query.py"]
+
+        L --> N
+        M --> N
+    end
+
+    D --> E
+    D --> L
+    D --> M
+
+    classDef input fill:#e8f0fe,stroke:#3465a4,stroke-width:2px,color:#000;
+    classDef core fill:#fff4e5,stroke:#f57900,stroke-width:2px,color:#000;
+    classDef fixed fill:#eaf7e6,stroke:#4e9a06,stroke-width:2px,color:#000;
+    classDef free fill:#fdebd0,stroke:#c17d11,stroke-width:2px,color:#000;
+    classDef output fill:#f5f5f5,stroke:#555,stroke-width:1.5px,color:#000;
+
+    class A,B,C input;
+    class D core;
+    class E,G,H,I,J,K fixed;
+    class L,M,N free;
