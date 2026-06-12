@@ -1,0 +1,714 @@
+@prefix None: <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD/seed#> .
+@prefix cco: <http://www.ontologyrepository.com/CommonCoreOntologies/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doc: <https://growgraph.dev/doc/0e5bc1020e80/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix obo: <http://purl.obolibrary.org/obo/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix cd: <https://growgraph.dev/facts> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix schema: <https://schema.org/> .
+@prefix schema1: <http://schema.org/> .
+doc:d6aa37501c18 a prov:Entity , schema:text ;
+	prov:generatedAtTime "2026-06-12T01:50:03.134173Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+	schema:position 0 ;
+	schema:identifier "d6aa37501c18" .
+doc:Factsaffiliation_2 schema1:address "Bolgatanga P.O. Box 767, Ghana" .
+_:b624acd95a945edbb6a3b484e3ce4381 rdf:reifies <<( doc:Factsaffiliation_2 schema1:address "Bolgatanga P.O. Box 767, Ghana" )>> ;
+	prov:wasDerivedFrom doc:d6aa37501c18 .
+doc:FactsXilinWang schema1:affiliation doc:Factsaffiliation_2 .
+_:b372e316be5282e2bed19a683de31bba rdf:reifies <<( doc:FactsXilinWang schema1:affiliation doc:Factsaffiliation_2 )>> ;
+	prov:wasDerivedFrom doc:d6aa37501c18 .
+doc:Factsrevised_2026_04_13 a schema1:Action .
+_:a07e5e1c57be35c5fc265d174c3d9523 rdf:reifies <<( doc:Factsrevised_2026_04_13 rdf:type schema1:Action )>> ;
+	prov:wasDerivedFrom doc:d6aa37501c18 .
+doc:Factsexperiment_1 cd:appliesMethod doc:FactsCwt .
+_:cee5ac5b9e7b4802c010cf5665178a54 rdf:reifies <<( doc:Factsexperiment_1 cd:appliesMethod doc:FactsCwt )>> ;
+	prov:wasDerivedFrom doc:d6aa37501c18 .
+doc:FactsCwt a cco:Algorithm .
+_:b52a8d57256d61c5c303d45d72318a41 rdf:reifies <<( doc:FactsCwt rdf:type cco:Algorithm )>> ;
+	prov:wasDerivedFrom doc:d6aa37501c18 .
+doc:FactsFbgSensor a cco:Artifact .
+_:a01376eed0e0e96cdd2568ed7ab1a57c rdf:reifies <<( doc:FactsFbgSensor rdf:type cco:Artifact )>> ;
+	prov:wasDerivedFrom doc:d6aa37501c18 .
+doc:Factsclaim_1 None:has_text_value "Proposed framework provides a physically interpretable and computationally efficient approach for defect detection using low-bandwidth FBG sensing without reliance on high-speed acquisition or data-intensive learning models." .
+_:a945ccb190c0ed3f3fa48fb7614cdf7e rdf:reifies <<( doc:Factsclaim_1 None:has_text_value "Proposed framework provides a physically interpretable and computationally efficient approach for defect detection using low-bandwidth FBG sensing without reliance on high-speed acquisition or data-intensive learning models." )>> ;
+	prov:wasDerivedFrom doc:d6aa37501c18 .
+doc:Factsaffiliation_2 schema1:name "Faculty of Civil Engineering and Mechanics, Jiangsu University and National Center for International Research on Structural Health Management of Critical Components" .
+_:f014995d4ba36f1ca45e79d51909d31c rdf:reifies <<( doc:Factsaffiliation_2 schema1:name "Faculty of Civil Engineering and Mechanics, Jiangsu University and National Center for International Research on Structural Health Management of Critical Components" )>> ;
+	prov:wasDerivedFrom doc:d6aa37501c18 .
+doc:Factsexperiment_1 schema1:about doc:FactsPressureVessel .
+_:d5befb396b317d3043f8f2aa33c48866 rdf:reifies <<( doc:Factsexperiment_1 schema1:about doc:FactsPressureVessel )>> ;
+	prov:wasDerivedFrom doc:d6aa37501c18 .
+doc:Factsarticle_EnergyBased2026 None:has_title doc:Factstitle_1_1 .
+_:fcb9b7444729dc999515c0cc81f619b5 rdf:reifies <<( doc:Factsarticle_EnergyBased2026 None:has_title doc:Factstitle_1_1 )>> ;
+	prov:wasDerivedFrom doc:d6aa37501c18 .
+doc:FactsVoidPresence schema1:name "Void defect (internal void)" .
+_:ced19ec063e8d781a53d294ead6036b0 rdf:reifies <<( doc:FactsVoidPresence schema1:name "Void defect (internal void)" )>> ;
+	prov:wasDerivedFrom doc:d6aa37501c18 .
+doc:FactsVoidPresence a schema1:Thing .
+_:e33c04e1c81c699e8396d5ae664acbee rdf:reifies <<( doc:FactsVoidPresence rdf:type schema1:Thing )>> ;
+	prov:wasDerivedFrom doc:d6aa37501c18 .
+doc:Factsexperiment_1 cd:usesInterrogator doc:FactsOpticalInterrogator .
+_:b10dc732e0694a4828fde63aa3add794 rdf:reifies <<( doc:Factsexperiment_1 cd:usesInterrogator doc:FactsOpticalInterrogator )>> ;
+	prov:wasDerivedFrom doc:d6aa37501c18 .
+doc:FactsPauloFernandoDaCostaAntunes schema1:name "Paulo Fernando da Costa Antunes" .
+_:fb49655f8a1ce2cbc6fa38edf77e1510 rdf:reifies <<( doc:FactsPauloFernandoDaCostaAntunes schema1:name "Paulo Fernando da Costa Antunes" )>> ;
+	prov:wasDerivedFrom doc:d6aa37501c18 .
+doc:FactsFindingEnergyRedistribution cco:is_about doc:FactsPressureVessel .
+_:a01e5d16b568effe69cc2915f2a7b5e2 rdf:reifies <<( doc:FactsFindingEnergyRedistribution cco:is_about doc:FactsPressureVessel )>> ;
+	prov:wasDerivedFrom doc:d6aa37501c18 .
+doc:FactsXilinWang schema1:email "2212323012@stmail.ujs.edu.cn" .
+_:bd3241a42c7d9ec527e92292c173ebf3 rdf:reifies <<( doc:FactsXilinWang schema1:email "2212323012@stmail.ujs.edu.cn" )>> ;
+	prov:wasDerivedFrom doc:d6aa37501c18 .
+doc:Factsarticle_EnergyBased2026 None:has_identifier doc:Factsarticleidentifier_1 .
+_:d54d18086bfd2c4db02a9d49b8f33f64 rdf:reifies <<( doc:Factsarticle_EnergyBased2026 None:has_identifier doc:Factsarticleidentifier_1 )>> ;
+	prov:wasDerivedFrom doc:d6aa37501c18 .
+doc:Factsaffiliation_2 schema1:name "Department of Aeronautics, Polytechnic University of Madrid" .
+_:cbae34364312bfec0ebd831a46450692 rdf:reifies <<( doc:Factsaffiliation_2 schema1:name "Department of Aeronautics, Polytechnic University of Madrid" )>> ;
+	prov:wasDerivedFrom doc:d6aa37501c18 .
+doc:FactsXilinWang schema1:email "napoleon.kuebutornye@bolgatu.edu.gh" .
+_:e022d0bf23a65e73bd00e064b541b8c6 rdf:reifies <<( doc:FactsXilinWang schema1:email "napoleon.kuebutornye@bolgatu.edu.gh" )>> ;
+	prov:wasDerivedFrom doc:d6aa37501c18 .
+doc:Factsarticle_EnergyBased2026 schema1:publisher doc:FactsMdpi_1 .
+_:fb31e41c667bf3c2902462fdad28ea1d rdf:reifies <<( doc:Factsarticle_EnergyBased2026 schema1:publisher doc:FactsMdpi_1 )>> ;
+	prov:wasDerivedFrom doc:d6aa37501c18 .
+doc:FactsXilinWang schema1:name "Qingwei Xia" .
+_:f6d63486e05f37c12a71c9e5e2348aa7 rdf:reifies <<( doc:FactsXilinWang schema1:name "Qingwei Xia" )>> ;
+	prov:wasDerivedFrom doc:d6aa37501c18 .
+doc:Factsaffiliation_2 a schema1:Organization .
+_:eaeb3dc5090feda669bfc42ea17b62fc rdf:reifies <<( doc:Factsaffiliation_2 rdf:type schema1:Organization )>> ;
+	prov:wasDerivedFrom doc:d6aa37501c18 .
+doc:FactsXilinWang schema1:roleName "Corresponding author" .
+_:f29ca779c39c730fd0a910ff43c6af09 rdf:reifies <<( doc:FactsXilinWang schema1:roleName "Corresponding author" )>> ;
+	prov:wasDerivedFrom doc:d6aa37501c18 .
+doc:Factsaffiliation_2 schema1:name "Bolgatanga Technical University" .
+_:f8ad877df3878f7f7c72ffee248bb5bd rdf:reifies <<( doc:Factsaffiliation_2 schema1:name "Bolgatanga Technical University" )>> ;
+	prov:wasDerivedFrom doc:d6aa37501c18 .
+doc:FactsFindingEnergyRedistribution cd:observedEffect_1 "consistent redistribution of wavelet-domain energy between intact and damaged cases" .
+_:d2e467b1bfc7e7a695716e4222b99fee rdf:reifies <<( doc:FactsFindingEnergyRedistribution cd:observedEffect_1 "consistent redistribution of wavelet-domain energy between intact and damaged cases" )>> ;
+	prov:wasDerivedFrom doc:d6aa37501c18 .
+doc:FactsXilinWang schema1:email "alfredo.guemes@upm.es" .
+_:a0d008cc934d298e936b01908950a687 rdf:reifies <<( doc:FactsXilinWang schema1:email "alfredo.guemes@upm.es" )>> ;
+	prov:wasDerivedFrom doc:d6aa37501c18 .
+doc:Factspubyear_2026_3 a None:Publication_year .
+_:b5eff151adad7fcd153e2ccab49ee28f rdf:reifies <<( doc:Factspubyear_2026_3 rdf:type None:Publication_year )>> ;
+	prov:wasDerivedFrom doc:d6aa37501c18 .
+doc:FactsOpticalInterrogator a cco:Artifact .
+_:f6a3eeb875fa268d2f965be31c6d20e rdf:reifies <<( doc:FactsOpticalInterrogator rdf:type cco:Artifact )>> ;
+	prov:wasDerivedFrom doc:d6aa37501c18 .
+doc:FactsXilinWang a schema1:Person .
+_:ab909d1543934e4acd6b4c1fb2d3a544 rdf:reifies <<( doc:FactsXilinWang rdf:type schema1:Person )>> ;
+	prov:wasDerivedFrom doc:d6aa37501c18 .
+doc:FactsMdpi_1 schema1:name "MDPI" .
+_:a02f0fb8ef7fdaa2424247ab258ea5e3 rdf:reifies <<( doc:FactsMdpi_1 schema1:name "MDPI" )>> ;
+	prov:wasDerivedFrom doc:d6aa37501c18 .
+doc:Factsaffiliation_2 schema1:address "Yangzhou 225000, China" .
+_:e462c0f86ab3373bc7814eb2393637a9 rdf:reifies <<( doc:Factsaffiliation_2 schema1:address "Yangzhou 225000, China" )>> ;
+	prov:wasDerivedFrom doc:d6aa37501c18 .
+doc:FactsXilinWang schema1:email "wang.xilin@sz.tsinghua.edu.cn" .
+_:b3834fdcf426e60e05fba36a824d020f rdf:reifies <<( doc:FactsXilinWang schema1:email "wang.xilin@sz.tsinghua.edu.cn" )>> ;
+	prov:wasDerivedFrom doc:d6aa37501c18 .
+doc:Factsarticle_EnergyBased2026 None:has_publication_year doc:Factspubyear_2026_3 .
+_:a96a96b39ed5d4b8d4acefdf3e92ba46 rdf:reifies <<( doc:Factsarticle_EnergyBased2026 None:has_publication_year doc:Factspubyear_2026_3 )>> ;
+	prov:wasDerivedFrom doc:d6aa37501c18 .
+doc:FactsXilinWang schema1:name "Antonio Fernandez Lopez" .
+_:da82d4c1c24218161884d43a99d5a840 rdf:reifies <<( doc:FactsXilinWang schema1:name "Antonio Fernandez Lopez" )>> ;
+	prov:wasDerivedFrom doc:d6aa37501c18 .
+doc:Factsarticleidentifier_1 None:has_text_value "wzpxx2004@126.com" .
+_:c5b6efe2da7125af30c8fbd6bc2dfdfd rdf:reifies <<( doc:Factsarticleidentifier_1 None:has_text_value "wzpxx2004@126.com" )>> ;
+	prov:wasDerivedFrom doc:d6aa37501c18 .
+doc:Factsarticle_EnergyBased2026 schema1:author doc:FactsXilinWang .
+_:c0323339b13740eb8e27c3e0ae532127 rdf:reifies <<( doc:Factsarticle_EnergyBased2026 schema1:author doc:FactsXilinWang )>> ;
+	prov:wasDerivedFrom doc:d6aa37501c18 .
+doc:Factsaffiliation_2 schema1:name "Yangzhou Ruitan Technology Co., Ltd." .
+_:c234f0c95815429caca81d151d1d941 rdf:reifies <<( doc:Factsaffiliation_2 schema1:name "Yangzhou Ruitan Technology Co., Ltd." )>> ;
+	prov:wasDerivedFrom doc:d6aa37501c18 .
+doc:FactsXilinWang schema1:email "antonio.fernandez.lopez@upm.es" .
+_:c04a5f2d75d4e49afc01936516e5c6ab rdf:reifies <<( doc:FactsXilinWang schema1:email "antonio.fernandez.lopez@upm.es" )>> ;
+	prov:wasDerivedFrom doc:d6aa37501c18 .
+doc:Factstitle_1_1 a None:Article_title .
+_:b2a4b3d9a849e8dc54beaa15237506c6 rdf:reifies <<( doc:Factstitle_1_1 rdf:type None:Article_title )>> ;
+	prov:wasDerivedFrom doc:d6aa37501c18 .
+doc:Factstitle_1_1 None:has_text_value "Energy-Based Multiresolution Analysis of FBG-Measured Strain Responses for Void Detection in Curved Pressure Vessel Structures Under Guided Wave Excitation" .
+_:ff80159ba7389f573d38e600a2f54cc2 rdf:reifies <<( doc:Factstitle_1_1 None:has_text_value "Energy-Based Multiresolution Analysis of FBG-Measured Strain Responses for Void Detection in Curved Pressure Vessel Structures Under Guided Wave Excitation" )>> ;
+	prov:wasDerivedFrom doc:d6aa37501c18 .
+doc:Factsaffiliation_2 schema1:name "Shenzhen International Graduate School, Institute of Ocean Engineering, Tsinghua University" .
+_:f7d89135dcee63e5e900f3c6f85d922c rdf:reifies <<( doc:Factsaffiliation_2 schema1:name "Shenzhen International Graduate School, Institute of Ocean Engineering, Tsinghua University" )>> ;
+	prov:wasDerivedFrom doc:d6aa37501c18 .
+doc:FactsXilinWang schema1:name "Ziping Wang" .
+_:f24efee28109c8a9963bac73a65df1c9 rdf:reifies <<( doc:FactsXilinWang schema1:name "Ziping Wang" )>> ;
+	prov:wasDerivedFrom doc:d6aa37501c18 .
+doc:Factsrevised_2026_04_13 schema1:startTime "2026-04-22"^^<http://www.w3.org/2001/XMLSchema#date> .
+_:bce668b81b5bd06ea573cb0087bbbc41 rdf:reifies <<( doc:Factsrevised_2026_04_13 schema1:startTime "2026-04-22"^^<http://www.w3.org/2001/XMLSchema#date> )>> ;
+	prov:wasDerivedFrom doc:d6aa37501c18 .
+doc:FactsFbgSensor schema1:name "Fiber Bragg grating (FBG) sensor" .
+_:c8cd2ff76d893a511ca0a4809befb0 rdf:reifies <<( doc:FactsFbgSensor schema1:name "Fiber Bragg grating (FBG) sensor" )>> ;
+	prov:wasDerivedFrom doc:d6aa37501c18 .
+doc:Factsarticle_EnergyBased2026 schema1:copyrightYear 2026 .
+_:f7e7a5243994af5a856c5f35c87acbdd rdf:reifies <<( doc:Factsarticle_EnergyBased2026 schema1:copyrightYear 2026 )>> ;
+	prov:wasDerivedFrom doc:d6aa37501c18 .
+doc:Factsexperiment_1 a cco:Artifact .
+_:cda014a0cc9f33fbfff66fca516711db rdf:reifies <<( doc:Factsexperiment_1 rdf:type cco:Artifact )>> ;
+	prov:wasDerivedFrom doc:d6aa37501c18 .
+doc:FactsCwt schema1:name "Wavelet packet transform (WPT)" .
+_:d852748f9aaec93459046cfff5401b99 rdf:reifies <<( doc:FactsCwt schema1:name "Wavelet packet transform (WPT)" )>> ;
+	prov:wasDerivedFrom doc:d6aa37501c18 .
+doc:Factsclaim_1 a cco:DescriptiveInformationContentEntity .
+_:e33db1c577a7838c54561eca17bab038 rdf:reifies <<( doc:Factsclaim_1 rdf:type cco:DescriptiveInformationContentEntity )>> ;
+	prov:wasDerivedFrom doc:d6aa37501c18 .
+doc:FactsFindingEnergyRedistribution cco:is_about doc:FactsVoidPresence .
+_:e394155ba5ffa7b7139e6707c9fa31d rdf:reifies <<( doc:FactsFindingEnergyRedistribution cco:is_about doc:FactsVoidPresence )>> ;
+	prov:wasDerivedFrom doc:d6aa37501c18 .
+doc:FactsXilinWang schema1:name "Alfredo Guemes" .
+_:f20ad9e72bdb506056b65cefe2bf39f2 rdf:reifies <<( doc:FactsXilinWang schema1:name "Alfredo Guemes" )>> ;
+	prov:wasDerivedFrom doc:d6aa37501c18 .
+doc:FactsPiezoelectricActuator a cco:Artifact .
+_:f40284434f26425cae877e84f3bc244e rdf:reifies <<( doc:FactsPiezoelectricActuator rdf:type cco:Artifact )>> ;
+	prov:wasDerivedFrom doc:d6aa37501c18 .
+doc:FactsXilinWang schema1:email "wzpxx2004@126.com" .
+_:b00e337d15c84fe7b7c300eb4f41f377 rdf:reifies <<( doc:FactsXilinWang schema1:email "wzpxx2004@126.com" )>> ;
+	prov:wasDerivedFrom doc:d6aa37501c18 .
+doc:Factsarticle_EnergyBased2026 schema1:datePublished "2026-04-29"^^<http://www.w3.org/2001/XMLSchema#date> .
+_:ccc7edd6f780a0b6ae77c30bf96a93a5 rdf:reifies <<( doc:Factsarticle_EnergyBased2026 schema1:datePublished "2026-04-29"^^<http://www.w3.org/2001/XMLSchema#date> )>> ;
+	prov:wasDerivedFrom doc:d6aa37501c18 .
+doc:FactsMdpi_1 a schema1:Organization .
+_:a20e4981a91fd639b5a7160b8052ccfa rdf:reifies <<( doc:FactsMdpi_1 rdf:type schema1:Organization )>> ;
+	prov:wasDerivedFrom doc:d6aa37501c18 .
+doc:Factsarticle_EnergyBased2026 schema1:license "CC BY" .
+_:bfa3a2b5e67c95980b138a227eb7e5c3 rdf:reifies <<( doc:Factsarticle_EnergyBased2026 schema1:license "CC BY" )>> ;
+	prov:wasDerivedFrom doc:d6aa37501c18 .
+doc:FactsOpticalInterrogator schema1:name "Optical interrogator (limited bandwidth)" .
+_:c653f32e69b8de2c7846bf13b8db5f5c rdf:reifies <<( doc:FactsOpticalInterrogator schema1:name "Optical interrogator (limited bandwidth)" )>> ;
+	prov:wasDerivedFrom doc:d6aa37501c18 .
+doc:FactsPressureVessel schema1:name "Curved pressure vessel structure" .
+_:aec04fdd74232ce4f0be0aadf738caec rdf:reifies <<( doc:FactsPressureVessel schema1:name "Curved pressure vessel structure" )>> ;
+	prov:wasDerivedFrom doc:d6aa37501c18 .
+doc:Factsrevised_2026_04_13 schema1:agent doc:Factsarticle_EnergyBased2026 .
+_:e9a5c019bfe059ebb9fde0f9703165dc rdf:reifies <<( doc:Factsrevised_2026_04_13 schema1:agent doc:Factsarticle_EnergyBased2026 )>> ;
+	prov:wasDerivedFrom doc:d6aa37501c18 .
+doc:Factsrevised_2026_04_13 schema1:startTime "2026-03-24"^^<http://www.w3.org/2001/XMLSchema#date> .
+_:a9c81d82aa56ba0bf9bb0d12bf678714 rdf:reifies <<( doc:Factsrevised_2026_04_13 schema1:startTime "2026-03-24"^^<http://www.w3.org/2001/XMLSchema#date> )>> ;
+	prov:wasDerivedFrom doc:d6aa37501c18 .
+doc:Factsarticleidentifier_1 a None:Article_identifier .
+_:ec87e86ba86a55a7a4e005b0284ab82f rdf:reifies <<( doc:Factsarticleidentifier_1 rdf:type None:Article_identifier )>> ;
+	prov:wasDerivedFrom doc:d6aa37501c18 .
+doc:FactsFiniteElementSimulation a cco:Algorithm .
+_:be07aee6f22a9234107cb66fd86e41f rdf:reifies <<( doc:FactsFiniteElementSimulation rdf:type cco:Algorithm )>> ;
+	prov:wasDerivedFrom doc:d6aa37501c18 .
+doc:Factsexperiment_1 cd:usesSensor doc:FactsFbgSensor .
+_:d486ddcda57c03e119d077be4278253 rdf:reifies <<( doc:Factsexperiment_1 cd:usesSensor doc:FactsFbgSensor )>> ;
+	prov:wasDerivedFrom doc:d6aa37501c18 .
+doc:Factsarticle_EnergyBased2026 schema1:editor doc:FactsPauloFernandoDaCostaAntunes .
+_:b2dc90c147aa333cf04138e34c18f67e rdf:reifies <<( doc:Factsarticle_EnergyBased2026 schema1:editor doc:FactsPauloFernandoDaCostaAntunes )>> ;
+	prov:wasDerivedFrom doc:d6aa37501c18 .
+doc:FactsFindingEnergyRedistribution cd:observedEffect_2 "increased non-stationarity in measured strain responses associated with void defects" .
+_:b429cba898a9950dba7592456bfc0811 rdf:reifies <<( doc:FactsFindingEnergyRedistribution cd:observedEffect_2 "increased non-stationarity in measured strain responses associated with void defects" )>> ;
+	prov:wasDerivedFrom doc:d6aa37501c18 .
+doc:Factsclaim_1 cco:is_about doc:Factsexperiment_1 .
+_:fe1fa526c23113c99a12b084bf0bddbe rdf:reifies <<( doc:Factsclaim_1 cco:is_about doc:Factsexperiment_1 )>> ;
+	prov:wasDerivedFrom doc:d6aa37501c18 .
+doc:FactsFiniteElementSimulation schema1:name "Finite-element simulation" .
+_:e4ee903e7e11b3a61fc7b7698cf32090 rdf:reifies <<( doc:FactsFiniteElementSimulation schema1:name "Finite-element simulation" )>> ;
+	prov:wasDerivedFrom doc:d6aa37501c18 .
+doc:FactsPiezoelectricActuator schema1:name "Piezoelectric actuator" .
+_:d23353f54f09404fea28135a5355a6b5 rdf:reifies <<( doc:FactsPiezoelectricActuator schema1:name "Piezoelectric actuator" )>> ;
+	prov:wasDerivedFrom doc:d6aa37501c18 .
+doc:FactsCwt schema1:name "Continuous wavelet transform (CWT)" .
+_:b27308ccbec27008a21b42d0b1547a1a rdf:reifies <<( doc:FactsCwt schema1:name "Continuous wavelet transform (CWT)" )>> ;
+	prov:wasDerivedFrom doc:d6aa37501c18 .
+doc:Factsaffiliation_2 schema1:address "Zhenjiang 212013, China" .
+_:d12d782c0cb1c97c19d8aefb89965f19 rdf:reifies <<( doc:Factsaffiliation_2 schema1:address "Zhenjiang 212013, China" )>> ;
+	prov:wasDerivedFrom doc:d6aa37501c18 .
+doc:FactsPressureVessel a None:Maintainable_item .
+_:ae4903151241aaa1b4604f0894ce5f5a rdf:reifies <<( doc:FactsPressureVessel rdf:type None:Maintainable_item )>> ;
+	prov:wasDerivedFrom doc:d6aa37501c18 .
+doc:Factsaffiliation_2 schema1:address "Shenzhen 518055, China" .
+_:a223eaabbb2dd4f6b4f872eec7dd97c9 rdf:reifies <<( doc:Factsaffiliation_2 schema1:address "Shenzhen 518055, China" )>> ;
+	prov:wasDerivedFrom doc:d6aa37501c18 .
+doc:FactsPauloFernandoDaCostaAntunes a schema1:Person .
+_:eb282588bcf87e27089dfa849ba1e75b rdf:reifies <<( doc:FactsPauloFernandoDaCostaAntunes rdf:type schema1:Person )>> ;
+	prov:wasDerivedFrom doc:d6aa37501c18 .
+doc:Factsexperiment_1 cd:usesSimulation doc:FactsFiniteElementSimulation .
+_:b4f5ed77846cd51df4bfb07d8fa0c97d rdf:reifies <<( doc:Factsexperiment_1 cd:usesSimulation doc:FactsFiniteElementSimulation )>> ;
+	prov:wasDerivedFrom doc:d6aa37501c18 .
+doc:Factsaffiliation_2 schema1:address "28040 Madrid, Spain" .
+_:b566056e39b3b816895016386e9eb4c0 rdf:reifies <<( doc:Factsaffiliation_2 schema1:address "28040 Madrid, Spain" )>> ;
+	prov:wasDerivedFrom doc:d6aa37501c18 .
+doc:Factsexperiment_1 cd:usesActuator doc:FactsPiezoelectricActuator .
+_:e127629645a802b25e7aeac1412d14fe rdf:reifies <<( doc:Factsexperiment_1 cd:usesActuator doc:FactsPiezoelectricActuator )>> ;
+	prov:wasDerivedFrom doc:d6aa37501c18 .
+doc:Factspubyear_2026_3 None:has_interger_value 2026 .
+_:fb2f19e42307e883521b7eb9e1802b18 rdf:reifies <<( doc:Factspubyear_2026_3 None:has_interger_value 2026 )>> ;
+	prov:wasDerivedFrom doc:d6aa37501c18 .
+doc:FactsXilinWang schema1:name "Xilin Wang" .
+_:fdc71e9ddae326ed296a3020fb20e229 rdf:reifies <<( doc:FactsXilinWang schema1:name "Xilin Wang" )>> ;
+	prov:wasDerivedFrom doc:d6aa37501c18 .
+doc:Factsrevised_2026_04_13 schema1:startTime "2026-04-13"^^<http://www.w3.org/2001/XMLSchema#date> .
+_:fc84e9436920630887131d8ab968834f rdf:reifies <<( doc:Factsrevised_2026_04_13 schema1:startTime "2026-04-13"^^<http://www.w3.org/2001/XMLSchema#date> )>> ;
+	prov:wasDerivedFrom doc:d6aa37501c18 .
+doc:Factsarticle_EnergyBased2026 a None:Predictive_Maintenance_Article .
+_:a4d822cc1d29e0cc977b76ddd74b281d rdf:reifies <<( doc:Factsarticle_EnergyBased2026 rdf:type None:Predictive_Maintenance_Article )>> ;
+	prov:wasDerivedFrom doc:d6aa37501c18 .
+doc:FactsFindingEnergyRedistribution a cco:DescriptiveInformationContentEntity .
+_:df11efbe3f6c7a1fa72cf7f78800b970 rdf:reifies <<( doc:FactsFindingEnergyRedistribution rdf:type cco:DescriptiveInformationContentEntity )>> ;
+	prov:wasDerivedFrom doc:d6aa37501c18 .
+doc:FactsXilinWang schema1:name "Napoleon Kuebutornye" .
+_:ae64ce10b3e7fadf49dcaa412b86e730 rdf:reifies <<( doc:FactsXilinWang schema1:name "Napoleon Kuebutornye" )>> ;
+	prov:wasDerivedFrom doc:d6aa37501c18 .
+doc:FactsCwt schema1:name "Discrete wavelet transform (DWT)" .
+_:fc636ba610ed71bcfc7243c1eeb213fa rdf:reifies <<( doc:FactsCwt schema1:name "Discrete wavelet transform (DWT)" )>> ;
+	prov:wasDerivedFrom doc:d6aa37501c18 .
+doc:bc523e159a8f a prov:Entity , schema:text ;
+	prov:generatedAtTime "2026-06-12T01:50:03.141173Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+	schema:position 1 ;
+	schema:identifier "bc523e159a8f" .
+doc:FactsFbgSensor a schema1:Device .
+_:b59b3baf0478a5d68767944f1280def4 rdf:reifies <<( doc:FactsFbgSensor rdf:type schema1:Device )>> ;
+	prov:wasDerivedFrom doc:bc523e159a8f .
+doc:FactsDesignDetailMultiresolution None:describes_type doc:FactsMultiresolutionWaveletAnalysis .
+_:bae6065a26babb070ce8b5bdb112ab4c rdf:reifies <<( doc:FactsDesignDetailMultiresolution None:describes_type doc:FactsMultiresolutionWaveletAnalysis )>> ;
+	prov:wasDerivedFrom doc:bc523e159a8f .
+doc:FactsIoTMonitoringSystem None:has_predictive_maintenance_function doc:FactsEnergyBasedMultiresolutionAnalysis .
+_:af404259d0a0883c73b0d8f8e6217064 rdf:reifies <<( doc:FactsIoTMonitoringSystem None:has_predictive_maintenance_function doc:FactsEnergyBasedMultiresolutionAnalysis )>> ;
+	prov:wasDerivedFrom doc:bc523e159a8f .
+doc:FactsDesignDetailMultiresolution rdfs:label "multiresolution wavelet analysis design detail" .
+_:f5c6d5e2f63fbd4aad54583dcdb4a187 rdf:reifies <<( doc:FactsDesignDetailMultiresolution rdfs:label "multiresolution wavelet analysis design detail" )>> ;
+	prov:wasDerivedFrom doc:bc523e159a8f .
+doc:FactsNdtDevelopment rdfs:label "Development of non-destructive testing and evaluation (NDT/E)" .
+_:e3d1876597dee757d9e3b5794caae26f rdf:reifies <<( doc:FactsNdtDevelopment rdfs:label "Development of non-destructive testing and evaluation (NDT/E)" )>> ;
+	prov:wasDerivedFrom doc:bc523e159a8f .
+doc:FactsEnergyBasedMultiresolutionAnalysis a None:Data_mining_technique_function .
+_:f3f75abad854701c9713e4787e3c526a rdf:reifies <<( doc:FactsEnergyBasedMultiresolutionAnalysis rdf:type None:Data_mining_technique_function )>> ;
+	prov:wasDerivedFrom doc:bc523e159a8f .
+doc:FactsGuidedUltrasonicWaveTechnique rdfs:label "guided ultrasonic wave-based structural health monitoring" .
+_:aced7341593cc97f9c4caabb15b63d6d rdf:reifies <<( doc:FactsGuidedUltrasonicWaveTechnique rdfs:label "guided ultrasonic wave-based structural health monitoring" )>> ;
+	prov:wasDerivedFrom doc:bc523e159a8f .
+doc:FactsKeywords a rdfs:Resource .
+_:c0c8b9a9383bbda2fba104608a7eb38d rdf:reifies <<( doc:FactsKeywords rdf:type rdfs:Resource )>> ;
+	prov:wasDerivedFrom doc:bc523e159a8f .
+doc:FactsFbgSensor rdfs:label "fiber Bragg grating sensor" .
+_:e22fcfdd81b26de16d9754fd91158885 rdf:reifies <<( doc:FactsFbgSensor rdfs:label "fiber Bragg grating sensor" )>> ;
+	prov:wasDerivedFrom doc:bc523e159a8f .
+doc:FactsEnergyBasedMultiresolutionAnalysis a None:Predictive_maintenance_module_function .
+_:e05d1403f4dfb35fc45252e9cb260959 rdf:reifies <<( doc:FactsEnergyBasedMultiresolutionAnalysis rdf:type None:Predictive_maintenance_module_function )>> ;
+	prov:wasDerivedFrom doc:bc523e159a8f .
+doc:FactsIoTMonitoringSystem None:has_predictive_maintenance_function doc:FactsAcousticEmissionTechnique .
+_:c7dacdf690642f18707a7608bd58a918 rdf:reifies <<( doc:FactsIoTMonitoringSystem None:has_predictive_maintenance_function doc:FactsAcousticEmissionTechnique )>> ;
+	prov:wasDerivedFrom doc:bc523e159a8f .
+doc:Facts15kg_LPG_pressure_vessel cd:mass_unit "kg" .
+_:faa351422cadea4e4089e2180a177b92 rdf:reifies <<( doc:Facts15kg_LPG_pressure_vessel cd:mass_unit "kg" )>> ;
+	prov:wasDerivedFrom doc:bc523e159a8f .
+doc:FactsIoTMonitoringSystem None:has_design_detail doc:FactsDesignDetailMultiresolution .
+_:a474035c4597a932134f721b3b9af45 rdf:reifies <<( doc:FactsIoTMonitoringSystem None:has_design_detail doc:FactsDesignDetailMultiresolution )>> ;
+	prov:wasDerivedFrom doc:bc523e159a8f .
+doc:FactsVisualInspection rdfs:label "visual inspection (surface inspection)" .
+_:a686e02f2efb1970a57651556500e773 rdf:reifies <<( doc:FactsVisualInspection rdfs:label "visual inspection (surface inspection)" )>> ;
+	prov:wasDerivedFrom doc:bc523e159a8f .
+doc:FactsMultiresolutionWaveletAnalysis a None:Data_mining_technique_function .
+_:ea2579010bc38ef78e4607ca913b4a7f rdf:reifies <<( doc:FactsMultiresolutionWaveletAnalysis rdf:type None:Data_mining_technique_function )>> ;
+	prov:wasDerivedFrom doc:bc523e159a8f .
+doc:FactsNdtDevelopment a schema1:Event .
+_:d1d73503872ce85a664d110cd0e54d26 rdf:reifies <<( doc:FactsNdtDevelopment rdf:type schema1:Event )>> ;
+	prov:wasDerivedFrom doc:bc523e159a8f .
+doc:Facts15kg_LPG_pressure_vessel a None:Maintainable_item .
+_:c9f21685da2016154f0ec5742713eabd rdf:reifies <<( doc:Facts15kg_LPG_pressure_vessel rdf:type None:Maintainable_item )>> ;
+	prov:wasDerivedFrom doc:bc523e159a8f .
+doc:FactsEnergyBasedMultiresolutionAnalysis rdfs:label "energy-based multiresolution analysis of FBG strain signals" .
+_:b6084f5038d6ec56a86ee27f54a0cc36 rdf:reifies <<( doc:FactsEnergyBasedMultiresolutionAnalysis rdfs:label "energy-based multiresolution analysis of FBG strain signals" )>> ;
+	prov:wasDerivedFrom doc:bc523e159a8f .
+doc:FactsAcousticEmissionTechnique a None:Fault_detection .
+_:f28c8ad8c28f53db58207aec5e1d726a rdf:reifies <<( doc:FactsAcousticEmissionTechnique rdf:type None:Fault_detection )>> ;
+	prov:wasDerivedFrom doc:bc523e159a8f .
+doc:FactsMultiresolutionWaveletAnalysis rdfs:label "multiresolution wavelet analysis" .
+_:d74388fcadf0c148b60b01a9a8dfd05f rdf:reifies <<( doc:FactsMultiresolutionWaveletAnalysis rdfs:label "multiresolution wavelet analysis" )>> ;
+	prov:wasDerivedFrom doc:bc523e159a8f .
+doc:FactsKeywords rdfs:label "structural health monitoring; guided wave excitation; fiber Bragg grating sensors; multiresolution wavelet analysis; energy-based diagnostics" .
+_:addda47450d481ce29eaf33a6ccbfddf rdf:reifies <<( doc:FactsKeywords rdfs:label "structural health monitoring; guided wave excitation; fiber Bragg grating sensors; multiresolution wavelet analysis; energy-based diagnostics" )>> ;
+	prov:wasDerivedFrom doc:bc523e159a8f .
+doc:Facts15kg_LPG_pressure_vessel rdfs:label "15 kg LPG pressure vessel" .
+_:b77bd4e7583626b14cfacd614475f409 rdf:reifies <<( doc:Facts15kg_LPG_pressure_vessel rdfs:label "15 kg LPG pressure vessel" )>> ;
+	prov:wasDerivedFrom doc:bc523e159a8f .
+doc:FactsFbgStrainSignal cco:describes doc:Facts15kg_LPG_pressure_vessel .
+_:ee69fb98f674873793feeb1c6dc8fc3b rdf:reifies <<( doc:FactsFbgStrainSignal cco:describes doc:Facts15kg_LPG_pressure_vessel )>> ;
+	prov:wasDerivedFrom doc:bc523e159a8f .
+doc:FactsVisualInspection a schema1:Action .
+_:db69f053bce3438e2a91e83200b9bbb7 rdf:reifies <<( doc:FactsVisualInspection rdf:type schema1:Action )>> ;
+	prov:wasDerivedFrom doc:bc523e159a8f .
+doc:FactsNdtDevelopment cd:start_year "1950"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+_:e7469175ece0d4eb8da3d9a20f1b47ba rdf:reifies <<( doc:FactsNdtDevelopment cd:start_year "1950"^^<http://www.w3.org/2001/XMLSchema#gYear> )>> ;
+	prov:wasDerivedFrom doc:bc523e159a8f .
+doc:FactsDesignDetailMultiresolution a None:Design_detail .
+_:f642365ad3e58be12e1e465131b98243 rdf:reifies <<( doc:FactsDesignDetailMultiresolution rdf:type None:Design_detail )>> ;
+	prov:wasDerivedFrom doc:bc523e159a8f .
+doc:FactsNdtDevelopment cd:end_year "1960"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+_:f5d96caced91d37f2e13c4959e6b8976 rdf:reifies <<( doc:FactsNdtDevelopment cd:end_year "1960"^^<http://www.w3.org/2001/XMLSchema#gYear> )>> ;
+	prov:wasDerivedFrom doc:bc523e159a8f .
+doc:FactsExperiment1 a schema1:Event .
+_:ced11914bffce827bca4d30396efbf9 rdf:reifies <<( doc:FactsExperiment1 rdf:type schema1:Event )>> ;
+	prov:wasDerivedFrom doc:bc523e159a8f .
+doc:FactsExperiment1 rdfs:label "Experimental configuration of pressure vessel structure (Figure 1)" .
+_:e99e79aaf830ea8a6dd2766ecd713664 rdf:reifies <<( doc:FactsExperiment1 rdfs:label "Experimental configuration of pressure vessel structure (Figure 1)" )>> ;
+	prov:wasDerivedFrom doc:bc523e159a8f .
+doc:FactsFbgStrainSignal a None:Data_variable .
+_:a8812e17b156c89b16a74e1b7a61f97f rdf:reifies <<( doc:FactsFbgStrainSignal rdf:type None:Data_variable )>> ;
+	prov:wasDerivedFrom doc:bc523e159a8f .
+doc:FactsGuidedUltrasonicWaveTechnique rdfs:comment "Technique with high sensitivity to structural discontinuities and ability to inspect large areas with few sensors" .
+_:e6edfbedac777ee5e27c97c4845d468e rdf:reifies <<( doc:FactsGuidedUltrasonicWaveTechnique rdfs:comment "Technique with high sensitivity to structural discontinuities and ability to inspect large areas with few sensors" )>> ;
+	prov:wasDerivedFrom doc:bc523e159a8f .
+doc:FactsExperiment1 obo:BFO_0000051 doc:Facts15kg_LPG_pressure_vessel .
+_:a571508fcffcfbcb89b4889ff17500c4 rdf:reifies <<( doc:FactsExperiment1 obo:BFO_0000051 doc:Facts15kg_LPG_pressure_vessel )>> ;
+	prov:wasDerivedFrom doc:bc523e159a8f .
+doc:FactsGuidedUltrasonicWaveTechnique a None:Data_mining_technique_function .
+_:a114e81171d78df7a35308ce123dcdc2 rdf:reifies <<( doc:FactsGuidedUltrasonicWaveTechnique rdf:type None:Data_mining_technique_function )>> ;
+	prov:wasDerivedFrom doc:bc523e159a8f .
+doc:FactsFbgStrainSignal rdfs:label "FBG strain signal" .
+_:cf6c9df444fc98cd96b8b32c9c516e67 rdf:reifies <<( doc:FactsFbgStrainSignal rdfs:label "FBG strain signal" )>> ;
+	prov:wasDerivedFrom doc:bc523e159a8f .
+doc:FactsEnergyBasedDiagnostics rdfs:label "energy-based diagnostics" .
+_:fb041ed77669d0dec9f1e6c2c3a9fa4e rdf:reifies <<( doc:FactsEnergyBasedDiagnostics rdfs:label "energy-based diagnostics" )>> ;
+	prov:wasDerivedFrom doc:bc523e159a8f .
+doc:FactsAsvd a None:Data_mining_technique_function .
+_:eea9ed32049b6142af5eb883b95407d2 rdf:reifies <<( doc:FactsAsvd rdf:type None:Data_mining_technique_function )>> ;
+	prov:wasDerivedFrom doc:bc523e159a8f .
+doc:FactsIoTMonitoringSystem None:has_predictive_maintenance_function doc:FactsGuidedUltrasonicWaveTechnique .
+_:dc889ec50afbf375526baf081d790c47 rdf:reifies <<( doc:FactsIoTMonitoringSystem None:has_predictive_maintenance_function doc:FactsGuidedUltrasonicWaveTechnique )>> ;
+	prov:wasDerivedFrom doc:bc523e159a8f .
+doc:FactsGuidedWaveApplication rdfs:label "guided wave-based SHM application to composite and hybrid structures" .
+_:aca3d54b4e1f9ae132799a49f06927c rdf:reifies <<( doc:FactsGuidedWaveApplication rdfs:label "guided wave-based SHM application to composite and hybrid structures" )>> ;
+	prov:wasDerivedFrom doc:bc523e159a8f .
+doc:FactsAcousticEmissionTechnique rdfs:label "acoustic emission (AE) technique" .
+_:d9d4c4b0c1399cb0419d334fe38caa40 rdf:reifies <<( doc:FactsAcousticEmissionTechnique rdfs:label "acoustic emission (AE) technique" )>> ;
+	prov:wasDerivedFrom doc:bc523e159a8f .
+doc:FactsIoTMonitoringSystem a None:Predictive_maintenance_system_module .
+_:fb458670089e7d12a96a7847a9c53885 rdf:reifies <<( doc:FactsIoTMonitoringSystem rdf:type None:Predictive_maintenance_system_module )>> ;
+	prov:wasDerivedFrom doc:bc523e159a8f .
+doc:FactsAsvd rdfs:label "adaptive singular value decomposition (ASVD)" .
+_:db7c291fadbc73e01e90aa03ca8c1e75 rdf:reifies <<( doc:FactsAsvd rdfs:label "adaptive singular value decomposition (ASVD)" )>> ;
+	prov:wasDerivedFrom doc:bc523e159a8f .
+doc:FactsEnergyBasedDiagnostics a None:Fault_detection .
+_:ea03d8e70260004b9c63dc65d8f36aef rdf:reifies <<( doc:FactsEnergyBasedDiagnostics rdf:type None:Fault_detection )>> ;
+	prov:wasDerivedFrom doc:bc523e159a8f .
+doc:FactsGuidedUltrasonicWaveTechnique a None:Predictive_maintenance_module_function .
+_:ed862e7f62c2b4726e4ba6e13656aea8 rdf:reifies <<( doc:FactsGuidedUltrasonicWaveTechnique rdf:type None:Predictive_maintenance_module_function )>> ;
+	prov:wasDerivedFrom doc:bc523e159a8f .
+doc:Facts15kg_LPG_pressure_vessel cd:mass "15"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+_:f08ae2aa6f0daf0d87af6d164539be1f rdf:reifies <<( doc:Facts15kg_LPG_pressure_vessel cd:mass "15"^^<http://www.w3.org/2001/XMLSchema#decimal> )>> ;
+	prov:wasDerivedFrom doc:bc523e159a8f .
+doc:FactsGuidedWaveApplication a None:Predictive_maintenance_module_function .
+_:be349b11ef5a052fa8012012db5c8604 rdf:reifies <<( doc:FactsGuidedWaveApplication rdf:type None:Predictive_maintenance_module_function )>> ;
+	prov:wasDerivedFrom doc:bc523e159a8f .
+doc:FactsAsvd a None:Predictive_maintenance_module_function .
+_:ca5b479adce54f181db6efd5815b13ed rdf:reifies <<( doc:FactsAsvd rdf:type None:Predictive_maintenance_module_function )>> ;
+	prov:wasDerivedFrom doc:bc523e159a8f .
+doc:FactsAcousticEmissionTechnique a None:Predictive_maintenance_module_function .
+_:d264aeb0e17b7cf047d21a7ff2d2e503 rdf:reifies <<( doc:FactsAcousticEmissionTechnique rdf:type None:Predictive_maintenance_module_function )>> ;
+	prov:wasDerivedFrom doc:bc523e159a8f .
+doc:FactsIoTMonitoringSystem rdfs:label "IoT-enabled monitoring system" .
+_:a7ad254f4db03741a8890ff5def13014 rdf:reifies <<( doc:FactsIoTMonitoringSystem rdfs:label "IoT-enabled monitoring system" )>> ;
+	prov:wasDerivedFrom doc:bc523e159a8f .
+doc:FactsFbgSensor cd:measures doc:FactsFbgStrainSignal .
+_:ddb039304fc5cd9fd29c719bfeeb0938 rdf:reifies <<( doc:FactsFbgSensor cd:measures doc:FactsFbgStrainSignal )>> ;
+	prov:wasDerivedFrom doc:bc523e159a8f .
+doc:FactsEnergyBasedMultiresolutionAnalysis None:describes_type None:Predictive_maintenance_model .
+_:dead42be8373a86a432c510d5c80a12f rdf:reifies <<( doc:FactsEnergyBasedMultiresolutionAnalysis None:describes_type None:Predictive_maintenance_model )>> ;
+	prov:wasDerivedFrom doc:bc523e159a8f .
+doc:6d39850d68cd a prov:Entity , schema:text ;
+	prov:generatedAtTime "2026-06-12T01:50:03.144677Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+	schema:position 2 ;
+	schema:identifier "6d39850d68cd" .
+doc:FactsFbgEffectiveness cd:depends_on doc:FactsBondingQuality .
+_:cceacdbc52a1d55d24b4e0dd46cd6c38 rdf:reifies <<( doc:FactsFbgEffectiveness cd:depends_on doc:FactsBondingQuality )>> ;
+	prov:wasDerivedFrom doc:6d39850d68cd .
+doc:FactsFbgEffectiveness cd:depends_on doc:FactsSensorOrientation .
+_:f83582beb67986c0df06b09cb5b8f844 rdf:reifies <<( doc:FactsFbgEffectiveness cd:depends_on doc:FactsSensorOrientation )>> ;
+	prov:wasDerivedFrom doc:6d39850d68cd .
+doc:FactsActiveApproach cd:enables doc:FactsRepeatableMeasurements .
+_:ef9f1669f26376d457aad0d9dd4eab13 rdf:reifies <<( doc:FactsActiveApproach cd:enables doc:FactsRepeatableMeasurements )>> ;
+	prov:wasDerivedFrom doc:6d39850d68cd .
+_:a01376eed0e0e96cdd2568ed7ab1a57c prov:wasDerivedFrom doc:6d39850d68cd .
+doc:FactsImmuneToEm a None:Design_detail .
+_:fb8b71b417c6a5e99e5e572d389f0b87 rdf:reifies <<( doc:FactsImmuneToEm rdf:type None:Design_detail )>> ;
+	prov:wasDerivedFrom doc:6d39850d68cd .
+doc:FactsHardwareComplexity a None:Design_detail .
+_:acf69d1c0fd6897a7e92bc2dabf140c1 rdf:reifies <<( doc:FactsHardwareComplexity rdf:type None:Design_detail )>> ;
+	prov:wasDerivedFrom doc:6d39850d68cd .
+doc:FactsMultiresolutionWaveletEnergyFeatures rdfs:label "multiresolution wavelet-energy features"@en .
+_:f7b66993732784a8fa6487eaece3cadc rdf:reifies <<( doc:FactsMultiresolutionWaveletEnergyFeatures rdfs:label "multiresolution wavelet-energy features"@en )>> ;
+	prov:wasDerivedFrom doc:6d39850d68cd .
+doc:FactsInterrogationBandwidth rdfs:label "interrogation bandwidth"@en .
+_:a517b78836e4f1687d3a00447060e4e2 rdf:reifies <<( doc:FactsInterrogationBandwidth rdfs:label "interrogation bandwidth"@en )>> ;
+	prov:wasDerivedFrom doc:6d39850d68cd .
+doc:FactsWaveletEnergyFeaturesIndicator rdfs:label "wavelet-energy features as indicators of void presence"@en .
+_:d31861c16e70752a41bf228df1cbb828 rdf:reifies <<( doc:FactsWaveletEnergyFeaturesIndicator rdfs:label "wavelet-energy features as indicators of void presence"@en )>> ;
+	prov:wasDerivedFrom doc:6d39850d68cd .
+doc:FactsThisStudy_1 a None:Predictive_Maintenance_Article .
+_:a804edfd8ac90823323596a001a5431b rdf:reifies <<( doc:FactsThisStudy_1 rdf:type None:Predictive_Maintenance_Article )>> ;
+	prov:wasDerivedFrom doc:6d39850d68cd .
+doc:FactsAcousticEmission rdfs:label "acoustic emission (AE)"@en .
+_:f35dccd5ce83749c9f7a7cc5e383f688 rdf:reifies <<( doc:FactsAcousticEmission rdfs:label "acoustic emission (AE)"@en )>> ;
+	prov:wasDerivedFrom doc:6d39850d68cd .
+doc:FactsPressureVessel rdfs:label "curved pressure vessel structures"@en .
+_:c3c3632babab8028a8e54f470f035fd3 rdf:reifies <<( doc:FactsPressureVessel rdfs:label "curved pressure vessel structures"@en )>> ;
+	prov:wasDerivedFrom doc:6d39850d68cd .
+doc:FactsPracticalChallenges cd:include doc:FactsDenseSensorLayouts .
+_:d0984570dbb9dc49d64233ef2a0891f1 rdf:reifies <<( doc:FactsPracticalChallenges cd:include doc:FactsDenseSensorLayouts )>> ;
+	prov:wasDerivedFrom doc:6d39850d68cd .
+doc:FactsMultiresolutionWaveletEnergyFeatures a cco:DescriptiveInformationContentEntity .
+_:d424e9a2842d86334e2dbd577b28a34f rdf:reifies <<( doc:FactsMultiresolutionWaveletEnergyFeatures rdf:type cco:DescriptiveInformationContentEntity )>> ;
+	prov:wasDerivedFrom doc:6d39850d68cd .
+doc:FactsActiveApproach a cco:Algorithm .
+_:bc80383ebb3b03aef1855d30be4e591d rdf:reifies <<( doc:FactsActiveApproach rdf:type cco:Algorithm )>> ;
+	prov:wasDerivedFrom doc:6d39850d68cd .
+doc:FactsPracticalChallenges cd:include doc:FactsCarrierResolvedWaveformAnalysis .
+_:a7bf40fc41164640d4e12d86f5070e0f rdf:reifies <<( doc:FactsPracticalChallenges cd:include doc:FactsCarrierResolvedWaveformAnalysis )>> ;
+	prov:wasDerivedFrom doc:6d39850d68cd .
+doc:FactsPracticalChallenges cd:include doc:FactsHighSpeedAcquisition .
+_:eeaac1bff4d0b37c2b357be950d09d81 rdf:reifies <<( doc:FactsPracticalChallenges cd:include doc:FactsHighSpeedAcquisition )>> ;
+	prov:wasDerivedFrom doc:6d39850d68cd .
+doc:FactsFbgSensor cd:has_property doc:FactsHighSensitivityStrainMeasurement .
+_:e7c1ab8cf9ed6ca881dcba474a2b816a rdf:reifies <<( doc:FactsFbgSensor cd:has_property doc:FactsHighSensitivityStrainMeasurement )>> ;
+	prov:wasDerivedFrom doc:6d39850d68cd .
+doc:FactsThisStudy_1 cco:is_about doc:FactsFbgSensor .
+_:cfc8a1b7baa2ecc4210390f59b91026b rdf:reifies <<( doc:FactsThisStudy_1 cco:is_about doc:FactsFbgSensor )>> ;
+	prov:wasDerivedFrom doc:6d39850d68cd .
+doc:FactsLightweight a None:Design_detail .
+_:a6e127a77c7e7f2dcb489400adb739bd rdf:reifies <<( doc:FactsLightweight rdf:type None:Design_detail )>> ;
+	prov:wasDerivedFrom doc:6d39850d68cd .
+doc:FactsBondingQuality a None:Design_detail .
+_:c05f84b5146d200b589848e454136107 rdf:reifies <<( doc:FactsBondingQuality rdf:type None:Design_detail )>> ;
+	prov:wasDerivedFrom doc:6d39850d68cd .
+doc:FactsPracticalChallenges rdfs:label "practical challenges for pressure vessel SHM"@en .
+_:e1469cbd329fcdd384d8abbf246424d6 rdf:reifies <<( doc:FactsPracticalChallenges rdfs:label "practical challenges for pressure vessel SHM"@en )>> ;
+	prov:wasDerivedFrom doc:6d39850d68cd .
+doc:FactsCarrierResolvedWaveformAnalysis a None:Design_detail .
+_:af605e6e9fdc489f5af019f3cf1e154a rdf:reifies <<( doc:FactsCarrierResolvedWaveformAnalysis rdf:type None:Design_detail )>> ;
+	prov:wasDerivedFrom doc:6d39850d68cd .
+doc:FactsActiveApproach cd:reliesOn doc:FactsAcousticEmission .
+_:fc76c96a7dc26ebe3f2db80615d84462 rdf:reifies <<( doc:FactsActiveApproach cd:reliesOn doc:FactsAcousticEmission )>> ;
+	prov:wasDerivedFrom doc:6d39850d68cd .
+doc:FactsThisStudy_1 cco:is_about doc:FactsMultiresolutionWaveletEnergyFeatures .
+_:ee80fa5c5b6b6218a085cec2bbf965a7 rdf:reifies <<( doc:FactsThisStudy_1 cco:is_about doc:FactsMultiresolutionWaveletEnergyFeatures )>> ;
+	prov:wasDerivedFrom doc:6d39850d68cd .
+doc:FactsPracticalChallenges a cco:DesignativeInformationContentEntity .
+_:d6fb16343c934b044d14ec9fb07c8969 rdf:reifies <<( doc:FactsPracticalChallenges rdf:type cco:DesignativeInformationContentEntity )>> ;
+	prov:wasDerivedFrom doc:6d39850d68cd .
+doc:FactsWaveletEnergyFeaturesIndicator a None:Performance_indicator .
+_:a35530e033b837c7162899ba0728db1a rdf:reifies <<( doc:FactsWaveletEnergyFeaturesIndicator rdf:type None:Performance_indicator )>> ;
+	prov:wasDerivedFrom doc:6d39850d68cd .
+doc:FactsDenseSensorLayouts cd:increases doc:FactsHardwareComplexity .
+_:b7744b5f1b2bfddd128dad863ced90da rdf:reifies <<( doc:FactsDenseSensorLayouts cd:increases doc:FactsHardwareComplexity )>> ;
+	prov:wasDerivedFrom doc:6d39850d68cd .
+doc:FactsHighSpeedAcquisition cd:increases doc:FactsHardwareComplexity .
+_:acbfa1124847165b70bd513738dc15a6 rdf:reifies <<( doc:FactsHighSpeedAcquisition cd:increases doc:FactsHardwareComplexity )>> ;
+	prov:wasDerivedFrom doc:6d39850d68cd .
+doc:FactsHardwareComplexity rdfs:label "increased hardware complexity"@en .
+_:bce9d99837a978ff798d655569b668ea rdf:reifies <<( doc:FactsHardwareComplexity rdfs:label "increased hardware complexity"@en )>> ;
+	prov:wasDerivedFrom doc:6d39850d68cd .
+doc:FactsLowCostDeploymentPracticality a None:Design_detail .
+_:f44a5ec26de7bbb55f2ccb0fbcbbf4b7 rdf:reifies <<( doc:FactsLowCostDeploymentPracticality rdf:type None:Design_detail )>> ;
+	prov:wasDerivedFrom doc:6d39850d68cd .
+_:ae4903151241aaa1b4604f0894ce5f5a prov:wasDerivedFrom doc:6d39850d68cd .
+doc:FactsAcousticEmission cd:has_limitation doc:FactsLimitedRepeatability .
+_:b6637e3e3f8fb5c1d91cf93c0e1830d2 rdf:reifies <<( doc:FactsAcousticEmission cd:has_limitation doc:FactsLimitedRepeatability )>> ;
+	prov:wasDerivedFrom doc:6d39850d68cd .
+doc:FactsCarrierResolvedWaveformAnalysis rdfs:label "carrier-resolved waveform analysis"@en .
+_:a240135f8fc246c3b108b74b3f5096bc rdf:reifies <<( doc:FactsCarrierResolvedWaveformAnalysis rdfs:label "carrier-resolved waveform analysis"@en )>> ;
+	prov:wasDerivedFrom doc:6d39850d68cd .
+doc:FactsFbgSensor rdfs:label "FBG sensor (fiber Bragg grating)"@en .
+_:f8c5f0161260076fb5bf91c95b228094 rdf:reifies <<( doc:FactsFbgSensor rdfs:label "FBG sensor (fiber Bragg grating)"@en )>> ;
+	prov:wasDerivedFrom doc:6d39850d68cd .
+doc:FactsWaveletEnergyFeaturesIndicator cd:robust_under_low_bandwidth true .
+_:f0ef857a141bca0f473b12ea8aa4694a rdf:reifies <<( doc:FactsWaveletEnergyFeaturesIndicator cd:robust_under_low_bandwidth true )>> ;
+	prov:wasDerivedFrom doc:6d39850d68cd .
+doc:FactsVoidPresence rdfs:label "void presence (defect)"@en .
+_:c6e882d6d350e8f642b84c979c2b25b rdf:reifies <<( doc:FactsVoidPresence rdfs:label "void presence (defect)"@en )>> ;
+	prov:wasDerivedFrom doc:6d39850d68cd .
+doc:FactsLowCostDeploymentPracticality rdfs:label "practicality for low-cost deployment"@en .
+_:df47c50a756c4498257c0487c9d39f4e rdf:reifies <<( doc:FactsLowCostDeploymentPracticality rdfs:label "practicality for low-cost deployment"@en )>> ;
+	prov:wasDerivedFrom doc:6d39850d68cd .
+doc:FactsLimitedRepeatability rdfs:label "limited repeatability"@en .
+_:c036f82bbee3c8f0bc1c2502e9ee3866 rdf:reifies <<( doc:FactsLimitedRepeatability rdfs:label "limited repeatability"@en )>> ;
+	prov:wasDerivedFrom doc:6d39850d68cd .
+doc:FactsElectricalSensor rdfs:label "conventional electrical sensor"@en .
+_:ceb9ccaa2d72badf0d82458d54f422f2 rdf:reifies <<( doc:FactsElectricalSensor rdfs:label "conventional electrical sensor"@en )>> ;
+	prov:wasDerivedFrom doc:6d39850d68cd .
+doc:FactsGeometryLimitations cd:note_less_explored doc:FactsVoidPresence .
+_:cdcde3da01b24449d932a51a454708e6 rdf:reifies <<( doc:FactsGeometryLimitations cd:note_less_explored doc:FactsVoidPresence )>> ;
+	prov:wasDerivedFrom doc:6d39850d68cd .
+doc:FactsDenseSensorLayouts a None:Design_detail .
+_:e49b605fdb6916e3bdcd914795abcb45 rdf:reifies <<( doc:FactsDenseSensorLayouts rdf:type None:Design_detail )>> ;
+	prov:wasDerivedFrom doc:6d39850d68cd .
+doc:FactsControlledExcitation rdfs:label "controlled excitation"@en .
+_:f800c37569a81bc108b588ec50dfbb2a rdf:reifies <<( doc:FactsControlledExcitation rdfs:label "controlled excitation"@en )>> ;
+	prov:wasDerivedFrom doc:6d39850d68cd .
+doc:FactsVoidPresence a obo:BFO_0000001 .
+_:aaebd4e0654a3e25a030420c54193c83 rdf:reifies <<( doc:FactsVoidPresence rdf:type obo:BFO_0000001 )>> ;
+	prov:wasDerivedFrom doc:6d39850d68cd .
+doc:FactsFbgEffectiveness rdfs:label "FBG effectiveness dependencies"@en .
+_:c2b27d4b4e3ba6c59e20cce6f8e5fb rdf:reifies <<( doc:FactsFbgEffectiveness rdfs:label "FBG effectiveness dependencies"@en )>> ;
+	prov:wasDerivedFrom doc:6d39850d68cd .
+doc:FactsRepeatableMeasurements a None:Performance_value .
+_:af3cd027a7f3014f3e26715e7450e576 rdf:reifies <<( doc:FactsRepeatableMeasurements rdf:type None:Performance_value )>> ;
+	prov:wasDerivedFrom doc:6d39850d68cd .
+doc:FactsSignalInterpretation rdfs:label "improved signal interpretation"@en .
+_:f13412f8a789368a9629645c44c6fd18 rdf:reifies <<( doc:FactsSignalInterpretation rdfs:label "improved signal interpretation"@en )>> ;
+	prov:wasDerivedFrom doc:6d39850d68cd .
+doc:FactsFbgEffectiveness a None:Design_detail .
+_:e474beb3eb4d4520ef6292b39903a9a0 rdf:reifies <<( doc:FactsFbgEffectiveness rdf:type None:Design_detail )>> ;
+	prov:wasDerivedFrom doc:6d39850d68cd .
+doc:FactsPressureVessel rdfs:label "curved pressure vessel (maintainable item)"@en .
+_:dbb95dbbcf1af8f47c104c0584d13eee rdf:reifies <<( doc:FactsPressureVessel rdfs:label "curved pressure vessel (maintainable item)"@en )>> ;
+	prov:wasDerivedFrom doc:6d39850d68cd .
+doc:FactsGuidedWaveShm rdfs:label "guided wave-based SHM methods"@en .
+_:f108b38189079b7c440bad523167ff63 rdf:reifies <<( doc:FactsGuidedWaveShm rdfs:label "guided wave-based SHM methods"@en )>> ;
+	prov:wasDerivedFrom doc:6d39850d68cd .
+doc:FactsImmuneToEm rdfs:label "immune to electromagnetic interference"@en .
+_:a69d47af0a2f07f8dfa49f05adc0a7b8 rdf:reifies <<( doc:FactsImmuneToEm rdfs:label "immune to electromagnetic interference"@en )>> ;
+	prov:wasDerivedFrom doc:6d39850d68cd .
+doc:FactsSensorOrientation rdfs:label "sensor orientation"@en .
+_:ac4315582874d4dad696a0bb760887db rdf:reifies <<( doc:FactsSensorOrientation rdfs:label "sensor orientation"@en )>> ;
+	prov:wasDerivedFrom doc:6d39850d68cd .
+doc:FactsHighSpeedAcquisition rdfs:label "high-speed acquisition systems"@en .
+_:fdbc9767623f5b0aaaee028f4b73bf96 rdf:reifies <<( doc:FactsHighSpeedAcquisition rdfs:label "high-speed acquisition systems"@en )>> ;
+	prov:wasDerivedFrom doc:6d39850d68cd .
+doc:FactsFbgSensor cd:has_property doc:FactsLightweight .
+_:a3a1d41d6ea25d37342d2765359230cf rdf:reifies <<( doc:FactsFbgSensor cd:has_property doc:FactsLightweight )>> ;
+	prov:wasDerivedFrom doc:6d39850d68cd .
+doc:FactsFbgEffectiveness cd:depends_on doc:FactsInterrogationBandwidth .
+_:ea6f0aa4ff47e27e2b488ee4885ab213 rdf:reifies <<( doc:FactsFbgEffectiveness cd:depends_on doc:FactsInterrogationBandwidth )>> ;
+	prov:wasDerivedFrom doc:6d39850d68cd .
+doc:FactsCarrierResolvedWaveformAnalysis cd:increases doc:FactsHardwareComplexity .
+_:b405b1876fd6c5493f7157db0c6913b rdf:reifies <<( doc:FactsCarrierResolvedWaveformAnalysis cd:increases doc:FactsHardwareComplexity )>> ;
+	prov:wasDerivedFrom doc:6d39850d68cd .
+doc:FactsControlledExcitation a obo:BFO_0000034 .
+_:e06ca1788f01df1e7a38853611f044b3 rdf:reifies <<( doc:FactsControlledExcitation rdf:type obo:BFO_0000034 )>> ;
+	prov:wasDerivedFrom doc:6d39850d68cd .
+doc:FactsDefectLocalization a None:Fault_identification .
+_:c0c2dea2ffa743b21a2354c9e3423e40 rdf:reifies <<( doc:FactsDefectLocalization rdf:type None:Fault_identification )>> ;
+	prov:wasDerivedFrom doc:6d39850d68cd .
+doc:FactsInterrogationBandwidth a None:Design_detail .
+_:ff52356081edb41249fdf21f4db264c3 rdf:reifies <<( doc:FactsInterrogationBandwidth rdf:type None:Design_detail )>> ;
+	prov:wasDerivedFrom doc:6d39850d68cd .
+doc:FactsElectricalSensor a cco:Artifact .
+_:fe64c1f0125725e2aac8ea8fb89fa96c rdf:reifies <<( doc:FactsElectricalSensor rdf:type cco:Artifact )>> ;
+	prov:wasDerivedFrom doc:6d39850d68cd .
+doc:FactsFbgSensor cd:alternativeTo doc:FactsElectricalSensor .
+_:c8d24cbec15d7e719dfe5c19c6b2b4e1 rdf:reifies <<( doc:FactsFbgSensor cd:alternativeTo doc:FactsElectricalSensor )>> ;
+	prov:wasDerivedFrom doc:6d39850d68cd .
+doc:FactsHighSensitivityStrainMeasurement a None:Design_detail .
+_:ca43ad41d4f6dbd7f192f56dbbdd658b rdf:reifies <<( doc:FactsHighSensitivityStrainMeasurement rdf:type None:Design_detail )>> ;
+	prov:wasDerivedFrom doc:6d39850d68cd .
+doc:FactsActiveApproach cd:employs doc:FactsControlledExcitation .
+_:f369cfe4258689cbda973fd012e14517 rdf:reifies <<( doc:FactsActiveApproach cd:employs doc:FactsControlledExcitation )>> ;
+	prov:wasDerivedFrom doc:6d39850d68cd .
+doc:FactsWaveletEnergyFeaturesIndicator cd:indicates doc:FactsVoidPresence .
+_:f0600ffd761b1fc6078b5dbd736ed5a8 rdf:reifies <<( doc:FactsWaveletEnergyFeaturesIndicator cd:indicates doc:FactsVoidPresence )>> ;
+	prov:wasDerivedFrom doc:6d39850d68cd .
+doc:FactsGeometryLimitations a cco:DesignativeInformationContentEntity .
+_:cf4d60a7928e93c0a65abf5267122234 rdf:reifies <<( doc:FactsGeometryLimitations rdf:type cco:DesignativeInformationContentEntity )>> ;
+	prov:wasDerivedFrom doc:6d39850d68cd .
+doc:FactsFbgSensor cd:has_property doc:FactsImmuneToEm .
+_:bc8348a8a9097393026c420fe096bded rdf:reifies <<( doc:FactsFbgSensor cd:has_property doc:FactsImmuneToEm )>> ;
+	prov:wasDerivedFrom doc:6d39850d68cd .
+doc:FactsGuidedWaveShm a cco:Algorithm .
+_:eda2c657ee3dc7b6ac458c3dc14ddfe4 rdf:reifies <<( doc:FactsGuidedWaveShm rdf:type cco:Algorithm )>> ;
+	prov:wasDerivedFrom doc:6d39850d68cd .
+doc:FactsDenseSensorLayouts rdfs:label "dense sensor layouts"@en .
+_:dba9b2bcf7ea6b774f2e81a04211f7b7 rdf:reifies <<( doc:FactsDenseSensorLayouts rdfs:label "dense sensor layouts"@en )>> ;
+	prov:wasDerivedFrom doc:6d39850d68cd .
+doc:FactsDefectLocalization rdfs:label "defect localization"@en .
+_:cb8fd576002e947982ac5bb8745129d5 rdf:reifies <<( doc:FactsDefectLocalization rdfs:label "defect localization"@en )>> ;
+	prov:wasDerivedFrom doc:6d39850d68cd .
+doc:FactsFbgEffectiveness cd:depends_on doc:FactsOpticalResponseWavefieldRelation .
+_:d6b70b01c4ca19b96721b38e27fd5ac8 rdf:reifies <<( doc:FactsFbgEffectiveness cd:depends_on doc:FactsOpticalResponseWavefieldRelation )>> ;
+	prov:wasDerivedFrom doc:6d39850d68cd .
+doc:FactsActiveApproach rdfs:label "passive guided-wave SHM approach"@en .
+_:c767f6fe5c34cee7756e7127c376c230 rdf:reifies <<( doc:FactsActiveApproach rdfs:label "passive guided-wave SHM approach"@en )>> ;
+	prov:wasDerivedFrom doc:6d39850d68cd .
+doc:FactsGeometryLimitations cd:note_less_explored doc:FactsPressureVessel .
+_:bea0ec16a23b3104f939eab64890a2c9 rdf:reifies <<( doc:FactsGeometryLimitations cd:note_less_explored doc:FactsPressureVessel )>> ;
+	prov:wasDerivedFrom doc:6d39850d68cd .
+doc:FactsLightweight rdfs:label "suitable for harsh environments"@en .
+_:ca8fbabfd72cba4b589ddb07f3af2e4 rdf:reifies <<( doc:FactsLightweight rdfs:label "suitable for harsh environments"@en )>> ;
+	prov:wasDerivedFrom doc:6d39850d68cd .
+doc:FactsOpticalResponseWavefieldRelation rdfs:label "relationship between measured optical response and structural wavefield"@en .
+_:b641b4e35f26904ce82871e2e5be429a rdf:reifies <<( doc:FactsOpticalResponseWavefieldRelation rdfs:label "relationship between measured optical response and structural wavefield"@en )>> ;
+	prov:wasDerivedFrom doc:6d39850d68cd .
+doc:FactsSignalInterpretation a None:Design_detail .
+_:b511360ff71efd17de97a97a5bfd60ad rdf:reifies <<( doc:FactsSignalInterpretation rdf:type None:Design_detail )>> ;
+	prov:wasDerivedFrom doc:6d39850d68cd .
+doc:FactsLowComplexityMonitoring a None:Design_detail .
+_:f0fc0a9450faf2ddd2f6f0c68bdbd33f rdf:reifies <<( doc:FactsLowComplexityMonitoring rdf:type None:Design_detail )>> ;
+	prov:wasDerivedFrom doc:6d39850d68cd .
+doc:FactsThisStudy_1 cd:demonstrates doc:FactsWaveletEnergyFeaturesIndicator .
+_:ba9b6756b9b003d6e30c5a031e3989a7 rdf:reifies <<( doc:FactsThisStudy_1 cd:demonstrates doc:FactsWaveletEnergyFeaturesIndicator )>> ;
+	prov:wasDerivedFrom doc:6d39850d68cd .
+doc:FactsRepeatableMeasurements rdfs:label "repeatable measurements"@en .
+_:f8d7d60233a70212724e9f11740b02b5 rdf:reifies <<( doc:FactsRepeatableMeasurements rdfs:label "repeatable measurements"@en )>> ;
+	prov:wasDerivedFrom doc:6d39850d68cd .
+doc:FactsThisStudy_1 cco:is_about doc:FactsPressureVessel .
+_:b3e569fbfc10bffc696d642d3221ba9b rdf:reifies <<( doc:FactsThisStudy_1 cco:is_about doc:FactsPressureVessel )>> ;
+	prov:wasDerivedFrom doc:6d39850d68cd .
+doc:FactsGeometryLimitations rdfs:label "geometry and defect-type limitations in literature"@en .
+_:d8bb1de1d32bab3583e2bc89010c1831 rdf:reifies <<( doc:FactsGeometryLimitations rdfs:label "geometry and defect-type limitations in literature"@en )>> ;
+	prov:wasDerivedFrom doc:6d39850d68cd .
+doc:FactsBondingQuality rdfs:label "bonding quality"@en .
+_:e89154bd582083cfb363415ae5b6d77e rdf:reifies <<( doc:FactsBondingQuality rdfs:label "bonding quality"@en )>> ;
+	prov:wasDerivedFrom doc:6d39850d68cd .
+doc:FactsLightweight rdfs:label "lightweight"@en .
+_:ec955cbc9b96e4fa67a9faa7e0016d6a rdf:reifies <<( doc:FactsLightweight rdfs:label "lightweight"@en )>> ;
+	prov:wasDerivedFrom doc:6d39850d68cd .
+doc:FactsThisStudy_1 cd:used_interrogator_sampling_rate 2000 .
+_:e2e4498ea3b5fd384f79f4ecf0d2473a rdf:reifies <<( doc:FactsThisStudy_1 cd:used_interrogator_sampling_rate 2000 )>> ;
+	prov:wasDerivedFrom doc:6d39850d68cd .
+doc:FactsAcousticEmission a obo:BFO_0000001 .
+_:a8dc5f1f3a54b751d0ee0a3f74c1206a rdf:reifies <<( doc:FactsAcousticEmission rdf:type obo:BFO_0000001 )>> ;
+	prov:wasDerivedFrom doc:6d39850d68cd .
+doc:FactsSensorOrientation a None:Design_detail .
+_:c3d764d001e2c0a13bd949c0cc18a90e rdf:reifies <<( doc:FactsSensorOrientation rdf:type None:Design_detail )>> ;
+	prov:wasDerivedFrom doc:6d39850d68cd .
+doc:FactsThisStudy_1 cd:used_guided_wave_excitation_frequency 100000 .
+_:fb362f8ce8dfce86d2ea38c10671702b rdf:reifies <<( doc:FactsThisStudy_1 cd:used_guided_wave_excitation_frequency 100000 )>> ;
+	prov:wasDerivedFrom doc:6d39850d68cd .
+doc:FactsOpticalResponseWavefieldRelation a None:Design_detail .
+_:a44b1c6f25f1bc8a98a0c59ab9c6fed3 rdf:reifies <<( doc:FactsOpticalResponseWavefieldRelation rdf:type None:Design_detail )>> ;
+	prov:wasDerivedFrom doc:6d39850d68cd .
+doc:FactsVoidPresence rdfs:label "internal void-type defects"@en .
+_:ed525ceec2414bfdb49ef5b8c34b6682 rdf:reifies <<( doc:FactsVoidPresence rdfs:label "internal void-type defects"@en )>> ;
+	prov:wasDerivedFrom doc:6d39850d68cd .
+doc:FactsThisStudy_1 rdfs:label "present study"@en .
+_:a7be844a3e39119fa8b35fa720370210 rdf:reifies <<( doc:FactsThisStudy_1 rdfs:label "present study"@en )>> ;
+	prov:wasDerivedFrom doc:6d39850d68cd .
+doc:FactsActiveApproach cd:improves doc:FactsDefectLocalization .
+_:d74294328ca1f57d153ca92db639bb6a rdf:reifies <<( doc:FactsActiveApproach cd:improves doc:FactsDefectLocalization )>> ;
+	prov:wasDerivedFrom doc:6d39850d68cd .
+doc:FactsFbgSensor cco:is_about doc:FactsLowComplexityMonitoring .
+_:ddd1761fc1e36d68ef2e57ff7630ac2 rdf:reifies <<( doc:FactsFbgSensor cco:is_about doc:FactsLowComplexityMonitoring )>> ;
+	prov:wasDerivedFrom doc:6d39850d68cd .
+doc:FactsLowComplexityMonitoring rdfs:label "low-complexity monitoring scenarios"@en .
+_:c55ead5312500e184e8e19f8df52e236 rdf:reifies <<( doc:FactsLowComplexityMonitoring rdfs:label "low-complexity monitoring scenarios"@en )>> ;
+	prov:wasDerivedFrom doc:6d39850d68cd .
+doc:FactsLimitedRepeatability a obo:BFO_0000019 .
+_:fe85468e17a20b5b4b71f06baa3fa5ae rdf:reifies <<( doc:FactsLimitedRepeatability rdf:type obo:BFO_0000019 )>> ;
+	prov:wasDerivedFrom doc:6d39850d68cd .
+doc:FactsHighSensitivityStrainMeasurement rdfs:label "high-sensitivity strain measurement"@en .
+_:f7a4fcb92b780cda20e9198958773551 rdf:reifies <<( doc:FactsHighSensitivityStrainMeasurement rdfs:label "high-sensitivity strain measurement"@en )>> ;
+	prov:wasDerivedFrom doc:6d39850d68cd .
+doc:FactsActiveApproach rdfs:label "active guided-wave SHM approach"@en .
+_:ebef0b958d014dbef03f9a105c1b9011 rdf:reifies <<( doc:FactsActiveApproach rdfs:label "active guided-wave SHM approach"@en )>> ;
+	prov:wasDerivedFrom doc:6d39850d68cd .
+doc:FactsHighSpeedAcquisition a None:Design_detail .
+_:f4e4adb425296c346b438f355a0fdc49 rdf:reifies <<( doc:FactsHighSpeedAcquisition rdf:type None:Design_detail )>> ;
+	prov:wasDerivedFrom doc:6d39850d68cd .
+doc:FactsHardwareComplexity cd:reduces doc:FactsLowCostDeploymentPracticality .
+_:a680274752491b80f7e982ac782b8f2 rdf:reifies <<( doc:FactsHardwareComplexity cd:reduces doc:FactsLowCostDeploymentPracticality )>> ;
+	prov:wasDerivedFrom doc:6d39850d68cd .
+doc:FactsLimitedRepeatability rdfs:label "limited controllability"@en .
+_:a7fd7297116eeeefdcd988ba20ba873b rdf:reifies <<( doc:FactsLimitedRepeatability rdfs:label "limited controllability"@en )>> ;
+	prov:wasDerivedFrom doc:6d39850d68cd .
+doc:FactsActiveApproach cd:improves doc:FactsSignalInterpretation .
+_:b6c5328c432ac202666c6c7e87b2b7e8 rdf:reifies <<( doc:FactsActiveApproach cd:improves doc:FactsSignalInterpretation )>> ;
+	prov:wasDerivedFrom doc:6d39850d68cd .
+obo:BFO_0000001 owl:sameAs obo:BFO_0000019 .
+cco:DescriptiveInformationContentEntity owl:sameAs cco:DesignativeInformationContentEntity .

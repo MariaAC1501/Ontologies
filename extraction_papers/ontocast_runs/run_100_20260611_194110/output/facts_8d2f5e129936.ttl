@@ -1,0 +1,636 @@
+@prefix None: <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD/seed#> .
+@prefix cco: <http://www.ontologyrepository.com/CommonCoreOntologies/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doc: <https://growgraph.dev/doc/8d2f5e129936/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix obo: <http://purl.obolibrary.org/obo/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix cd: <https://growgraph.dev/facts> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix schema: <https://schema.org/> .
+@prefix schema1: <http://schema.org/> .
+doc:2e3a7c52d6a4 a prov:Entity , schema:text ;
+	prov:generatedAtTime "2026-06-12T01:43:25.546029Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+	schema:position 0 ;
+	schema:identifier "2e3a7c52d6a4" .
+doc:FactsCrossVal None:has_text_value "stratified 5-fold cross-validation" .
+_:a2698ff1306fe834db3755b86022ec73 rdf:reifies <<( doc:FactsCrossVal None:has_text_value "stratified 5-fold cross-validation" )>> ;
+	prov:wasDerivedFrom doc:2e3a7c52d6a4 .
+doc:FactsPerfRmse schema1:value 0.0336 .
+_:d4dec7f044fb10025917c998e9bd3e82 rdf:reifies <<( doc:FactsPerfRmse schema1:value 0.0336 )>> ;
+	prov:wasDerivedFrom doc:2e3a7c52d6a4 .
+doc:FactsAuthorHuiLou schema1:email "hongkaixing@cjlu.edu.cn" .
+_:d71d0f3f1de368bdc0bc1f0e002809d5 rdf:reifies <<( doc:FactsAuthorHuiLou schema1:email "hongkaixing@cjlu.edu.cn" )>> ;
+	prov:wasDerivedFrom doc:2e3a7c52d6a4 .
+doc:FactsPerfRmse rdfs:label "R2" .
+_:cd01ae838a0fc05d53f3576f40a89efa rdf:reifies <<( doc:FactsPerfRmse rdfs:label "R2" )>> ;
+	prov:wasDerivedFrom doc:2e3a7c52d6a4 .
+doc:Factsalpha1 None:has_text_value "experimental platform used to collect strain signals under multiple voltage levels and bias ratios" .
+_:fbd8eb8c47d7ba7e1c33f08619bc4cd4 rdf:reifies <<( doc:Factsalpha1 None:has_text_value "experimental platform used to collect strain signals under multiple voltage levels and bias ratios" )>> ;
+	prov:wasDerivedFrom doc:2e3a7c52d6a4 .
+doc:Factsmodel_1 a None:Predictive_Maintenance_Article .
+_:c3ee57e9165bfd9cac4c1a0c69e24e75 rdf:reifies <<( doc:Factsmodel_1 rdf:type None:Predictive_Maintenance_Article )>> ;
+	prov:wasDerivedFrom doc:2e3a7c52d6a4 .
+doc:FactsAuthorHuiLou schema1:name "Hui Lou" .
+_:cc83842083581b2fec3e5bbc5e937960 rdf:reifies <<( doc:FactsAuthorHuiLou schema1:name "Hui Lou" )>> ;
+	prov:wasDerivedFrom doc:2e3a7c52d6a4 .
+doc:FactsVoltageLevelsPart rdfs:label "voltage levels (count)" .
+_:aaede624f1a3cb3dbe7d446f26dc3f78 rdf:reifies <<( doc:FactsVoltageLevelsPart rdfs:label "voltage levels (count)" )>> ;
+	prov:wasDerivedFrom doc:2e3a7c52d6a4 .
+doc:FactsAuthorHuiLou schema1:affiliation doc:FactsOrgCjlu .
+_:a49d0912b7e249f9318b5c943b391dea rdf:reifies <<( doc:FactsAuthorHuiLou schema1:affiliation doc:FactsOrgCjlu )>> ;
+	prov:wasDerivedFrom doc:2e3a7c52d6a4 .
+doc:FactsContactHong schema1:email "hongkaixing@cjlu.edu.cn" .
+_:a9a1a394648214580cd1e155aabcf60 rdf:reifies <<( doc:FactsContactHong schema1:email "hongkaixing@cjlu.edu.cn" )>> ;
+	prov:wasDerivedFrom doc:2e3a7c52d6a4 .
+doc:FactsPerfRmse rdfs:label "RMSE" .
+_:d3af68a4634948a73eaf67945c629d29 rdf:reifies <<( doc:FactsPerfRmse rdfs:label "RMSE" )>> ;
+	prov:wasDerivedFrom doc:2e3a7c52d6a4 .
+doc:Factsmodel_1 schema1:author doc:FactsAuthorHuiLou .
+_:cf6678a0069d5db1ee2b5e75d3aaebad rdf:reifies <<( doc:Factsmodel_1 schema1:author doc:FactsAuthorHuiLou )>> ;
+	prov:wasDerivedFrom doc:2e3a7c52d6a4 .
+doc:FactsAuthorHuiLou a schema:Person .
+_:ab96404cdfe9c19e9b1633a1f0b12a57 rdf:reifies <<( doc:FactsAuthorHuiLou rdf:type schema:Person )>> ;
+	prov:wasDerivedFrom doc:2e3a7c52d6a4 .
+doc:FactsAuthorHuiLou schema1:name "Kaixing Hong" .
+_:f115909ab12c4a7f6046b2bf0619700e rdf:reifies <<( doc:FactsAuthorHuiLou schema1:name "Kaixing Hong" )>> ;
+	prov:wasDerivedFrom doc:2e3a7c52d6a4 .
+doc:Factsmodel_1 None:has_design_detail doc:Factsalpha1 .
+_:d241017edc9484cb7f48c8a48bd98403 rdf:reifies <<( doc:Factsmodel_1 None:has_design_detail doc:Factsalpha1 )>> ;
+	prov:wasDerivedFrom doc:2e3a7c52d6a4 .
+doc:FactsDataset1 None:has_text_value "strain signals collected under six voltage levels and seven bias ratios across operating conditions" .
+_:b636f4a70d2527c3caa19380a3c71dc6 rdf:reifies <<( doc:FactsDataset1 None:has_text_value "strain signals collected under six voltage levels and seven bias ratios across operating conditions" )>> ;
+	prov:wasDerivedFrom doc:2e3a7c52d6a4 .
+doc:FactsBiasRatiosPart a None:Design_detail .
+_:cc7b8bb16e74de09b814721076c4e9c5 rdf:reifies <<( doc:FactsBiasRatiosPart rdf:type None:Design_detail )>> ;
+	prov:wasDerivedFrom doc:2e3a7c52d6a4 .
+doc:Factsmodel_1 None:describes_configuration doc:Factsmodelconfig_1 .
+_:f0ad0b5c82ece0d8f9a2d6b98f32b608 rdf:reifies <<( doc:Factsmodel_1 None:describes_configuration doc:Factsmodelconfig_1 )>> ;
+	prov:wasDerivedFrom doc:2e3a7c52d6a4 .
+doc:Factsalpha1 obo:BFO_0000051 doc:FactsDataset1 .
+_:a15483d2294a933f04da1b9d8597ddb1 rdf:reifies <<( doc:Factsalpha1 obo:BFO_0000051 doc:FactsDataset1 )>> ;
+	prov:wasDerivedFrom doc:2e3a7c52d6a4 .
+doc:FactsOrgCjlu a schema:Organization .
+_:c139afd0ccfac2ae1d418041153464bd rdf:reifies <<( doc:FactsOrgCjlu rdf:type schema:Organization )>> ;
+	prov:wasDerivedFrom doc:2e3a7c52d6a4 .
+doc:Factsalpha1 obo:BFO_0000051 doc:FactsBiasRatiosPart .
+_:ec3c1e970e53e26f6353f9e2dfb35f21 rdf:reifies <<( doc:Factsalpha1 obo:BFO_0000051 doc:FactsBiasRatiosPart )>> ;
+	prov:wasDerivedFrom doc:2e3a7c52d6a4 .
+doc:FactsAuthorHuiLou schema1:email "s23010811004@cjlu.edu.cn" .
+_:fd3227db8857d717e646655cb068dfa5 rdf:reifies <<( doc:FactsAuthorHuiLou schema1:email "s23010811004@cjlu.edu.cn" )>> ;
+	prov:wasDerivedFrom doc:2e3a7c52d6a4 .
+doc:FactsAuthorHuiLou schema1:email "louhui@klec.com.cn" .
+_:fca219a08ed3cd937836b56d38aa9984 rdf:reifies <<( doc:FactsAuthorHuiLou schema1:email "louhui@klec.com.cn" )>> ;
+	prov:wasDerivedFrom doc:2e3a7c52d6a4 .
+doc:FactsContactHong a schema1:ContactPoint .
+_:b5e3eb014e702e844679102d5d319004 rdf:reifies <<( doc:FactsContactHong rdf:type schema1:ContactPoint )>> ;
+	prov:wasDerivedFrom doc:2e3a7c52d6a4 .
+doc:Factsalpha1 a None:Design_detail .
+_:a84c51ac6f5866f9fae51fad81e2239 rdf:reifies <<( doc:Factsalpha1 rdf:type None:Design_detail )>> ;
+	prov:wasDerivedFrom doc:2e3a7c52d6a4 .
+doc:Factstitle_1 a None:Article_title .
+_:d61a5d9a31ada8d701414d72063713e9 rdf:reifies <<( doc:Factstitle_1 rdf:type None:Article_title )>> ;
+	prov:wasDerivedFrom doc:2e3a7c52d6a4 .
+doc:Factstitle_1 None:has_text_value "Magnetostriction of Silicon Steel Sheets and Its Application in Predicting DC Bias" .
+_:c9cbcacd21050e9ed7acab4be1a26f91 rdf:reifies <<( doc:Factstitle_1 None:has_text_value "Magnetostriction of Silicon Steel Sheets and Its Application in Predicting DC Bias" )>> ;
+	prov:wasDerivedFrom doc:2e3a7c52d6a4 .
+doc:FactsPerfRmse None:describes_type doc:Factsmodel_1 .
+_:a178db9ba54e342546d9c12f81b242c9 rdf:reifies <<( doc:FactsPerfRmse None:describes_type doc:Factsmodel_1 )>> ;
+	prov:wasDerivedFrom doc:2e3a7c52d6a4 .
+doc:FactsAlgorithmLstm a cco:Algorithm .
+_:c1ba51c387dbdbd9a7f11abe54964344 rdf:reifies <<( doc:FactsAlgorithmLstm rdf:type cco:Algorithm )>> ;
+	prov:wasDerivedFrom doc:2e3a7c52d6a4 .
+doc:Factsmodel_1 None:has_title doc:Factstitle_1 .
+_:d623199344f61ae567add4ff7a7f5be8 rdf:reifies <<( doc:Factsmodel_1 None:has_title doc:Factstitle_1 )>> ;
+	prov:wasDerivedFrom doc:2e3a7c52d6a4 .
+doc:Factsmodel_1 schema1:algorithm doc:FactsAlgorithmLstm .
+_:a43cb6dcd6ab57f973483b7875029d52 rdf:reifies <<( doc:Factsmodel_1 schema1:algorithm doc:FactsAlgorithmLstm )>> ;
+	prov:wasDerivedFrom doc:2e3a7c52d6a4 .
+doc:FactsOrgCjlu schema1:name "School of Mechanical and Electrical Engineering, China Jiliang University" .
+_:b3767e28934d3b89ab1f7858b1b69a9a rdf:reifies <<( doc:FactsOrgCjlu schema1:name "School of Mechanical and Electrical Engineering, China Jiliang University" )>> ;
+	prov:wasDerivedFrom doc:2e3a7c52d6a4 .
+doc:FactsVoltageLevelsPart None:has_interger_value 6 .
+_:fdad5f415ae1cecc6877e82df0fd2e87 rdf:reifies <<( doc:FactsVoltageLevelsPart None:has_interger_value 6 )>> ;
+	prov:wasDerivedFrom doc:2e3a7c52d6a4 .
+doc:Factsmodelconfig_1 None:describes_configuration doc:Factsmodel_1 .
+_:fbb679b84f359fa336fd902d5e7707f8 rdf:reifies <<( doc:Factsmodelconfig_1 None:describes_configuration doc:Factsmodel_1 )>> ;
+	prov:wasDerivedFrom doc:2e3a7c52d6a4 .
+doc:FactsCrossVal a None:Design_detail .
+_:fc8f5ea8de7982363d6328dd4514b3b0 rdf:reifies <<( doc:FactsCrossVal rdf:type None:Design_detail )>> ;
+	prov:wasDerivedFrom doc:2e3a7c52d6a4 .
+doc:Factsmodel_1 schema1:about doc:Factsmodel_1 .
+_:b658d998518f76b8a27b98dec46eb96f rdf:reifies <<( doc:Factsmodel_1 schema1:about doc:Factsmodel_1 )>> ;
+	prov:wasDerivedFrom doc:2e3a7c52d6a4 .
+doc:FactsAuthorHuiLou schema1:name "Zhuangzhuang Ding" .
+_:f4b43ede57a383acd3e3dc4bd652434e rdf:reifies <<( doc:FactsAuthorHuiLou schema1:name "Zhuangzhuang Ding" )>> ;
+	prov:wasDerivedFrom doc:2e3a7c52d6a4 .
+doc:FactsContactHong schema1:contactType "correspondence" .
+_:e6852b759be35069c8a026f64583711c rdf:reifies <<( doc:FactsContactHong schema1:contactType "correspondence" )>> ;
+	prov:wasDerivedFrom doc:2e3a7c52d6a4 .
+doc:FactsBiasRatiosPart None:has_interger_value 7 .
+_:bc3e9ea982983c7ed56fd272e7499939 rdf:reifies <<( doc:FactsBiasRatiosPart None:has_interger_value 7 )>> ;
+	prov:wasDerivedFrom doc:2e3a7c52d6a4 .
+doc:Factsmodel_1 a None:Predictive_maintenance_model .
+_:ce4d03bc9979c99def26ce98bc7c8c37 rdf:reifies <<( doc:Factsmodel_1 rdf:type None:Predictive_maintenance_model )>> ;
+	prov:wasDerivedFrom doc:2e3a7c52d6a4 .
+doc:FactsVoltageLevelsPart a None:Design_detail .
+_:a35af76e5829944943895c2963534888 rdf:reifies <<( doc:FactsVoltageLevelsPart rdf:type None:Design_detail )>> ;
+	prov:wasDerivedFrom doc:2e3a7c52d6a4 .
+doc:FactsCrossVal None:has_interger_value 5 .
+_:ae96581b37457fe0039969b13f775d44 rdf:reifies <<( doc:FactsCrossVal None:has_interger_value 5 )>> ;
+	prov:wasDerivedFrom doc:2e3a7c52d6a4 .
+doc:FactsOrgCjlu schema1:address "Hangzhou 310018, China" .
+_:e39105391d23a9a484160e7ddc71bcea rdf:reifies <<( doc:FactsOrgCjlu schema1:address "Hangzhou 310018, China" )>> ;
+	prov:wasDerivedFrom doc:2e3a7c52d6a4 .
+doc:FactsAlgorithmLstm rdfs:label "long short-term memory (LSTM) network" .
+_:d124f9f33646beb23fcd635d9789082 rdf:reifies <<( doc:FactsAlgorithmLstm rdfs:label "long short-term memory (LSTM) network" )>> ;
+	prov:wasDerivedFrom doc:2e3a7c52d6a4 .
+doc:FactsOrgCjlu schema1:name "Hangzhou Kelin New Energy Co., Ltd." .
+_:c219e20543462aca86db6924830c1bb7 rdf:reifies <<( doc:FactsOrgCjlu schema1:name "Hangzhou Kelin New Energy Co., Ltd." )>> ;
+	prov:wasDerivedFrom doc:2e3a7c52d6a4 .
+doc:Factsmodel_1 schema1:description "Prediction method integrating multi-scale mutual information features with frequency-domain features and employing a long short-term memory (LSTM) network for DC bias identification" .
+_:ad596d107e6cd004423c852bbb9bef3d rdf:reifies <<( doc:Factsmodel_1 schema1:description "Prediction method integrating multi-scale mutual information features with frequency-domain features and employing a long short-term memory (LSTM) network for DC bias identification" )>> ;
+	prov:wasDerivedFrom doc:2e3a7c52d6a4 .
+doc:Factsmodelconfig_1 a None:Model_configuration .
+_:f4e7be34fae1d9e0f99b919ac119c9a0 rdf:reifies <<( doc:Factsmodelconfig_1 rdf:type None:Model_configuration )>> ;
+	prov:wasDerivedFrom doc:2e3a7c52d6a4 .
+doc:Factsmodel_1 None:describes_type doc:Factsmodel_1 .
+_:e90991d85dddedbef953d349d52c5972 rdf:reifies <<( doc:Factsmodel_1 None:describes_type doc:Factsmodel_1 )>> ;
+	prov:wasDerivedFrom doc:2e3a7c52d6a4 .
+doc:FactsPerfRmse a None:Performance_value .
+_:e3967ac1d05e53a7f1e7d892eb4e9050 rdf:reifies <<( doc:FactsPerfRmse rdf:type None:Performance_value )>> ;
+	prov:wasDerivedFrom doc:2e3a7c52d6a4 .
+doc:Factsmodelconfig_1 None:has_text_value "multi-scale mutual information features; frequency-domain features" .
+_:a54f94c7afc85a2bfca94e34ba08cf6e rdf:reifies <<( doc:Factsmodelconfig_1 None:has_text_value "multi-scale mutual information features; frequency-domain features" )>> ;
+	prov:wasDerivedFrom doc:2e3a7c52d6a4 .
+doc:FactsOrgCjlu schema1:address "Hangzhou 311222, China" .
+_:ff30c4aa70d9ee83b1d4ede3dd27f71e rdf:reifies <<( doc:FactsOrgCjlu schema1:address "Hangzhou 311222, China" )>> ;
+	prov:wasDerivedFrom doc:2e3a7c52d6a4 .
+doc:FactsBiasRatiosPart rdfs:label "bias ratios (count)" .
+_:f9a4864fc31ded833ba66e9b618cc993 rdf:reifies <<( doc:FactsBiasRatiosPart rdfs:label "bias ratios (count)" )>> ;
+	prov:wasDerivedFrom doc:2e3a7c52d6a4 .
+doc:FactsDataset1 a None:maintainable_item_record .
+_:f85125a95fbfd37107878c75d0551799 rdf:reifies <<( doc:FactsDataset1 rdf:type None:maintainable_item_record )>> ;
+	prov:wasDerivedFrom doc:2e3a7c52d6a4 .
+doc:Factsalpha1 obo:BFO_0000051 doc:FactsVoltageLevelsPart .
+_:b0db056267a26c49e63a9ac044dde1a1 rdf:reifies <<( doc:Factsalpha1 obo:BFO_0000051 doc:FactsVoltageLevelsPart )>> ;
+	prov:wasDerivedFrom doc:2e3a7c52d6a4 .
+doc:Factsmodel_1 schema1:keywords "silicon steel; DC bias; magnetostriction; mutual information; state prediction" .
+_:c8cf38366aebb104b5b318cdb4962bbb rdf:reifies <<( doc:Factsmodel_1 schema1:keywords "silicon steel; DC bias; magnetostriction; mutual information; state prediction" )>> ;
+	prov:wasDerivedFrom doc:2e3a7c52d6a4 .
+doc:FactsAuthorHuiLou schema1:contactPoint doc:FactsContactHong .
+_:c84b901197eb24844ea2dde332ebcf95 rdf:reifies <<( doc:FactsAuthorHuiLou schema1:contactPoint doc:FactsContactHong )>> ;
+	prov:wasDerivedFrom doc:2e3a7c52d6a4 .
+doc:FactsPerfRmse schema1:value 0.881 .
+_:a35cdb2120641ea313a3129f3cbc95e0 rdf:reifies <<( doc:FactsPerfRmse schema1:value 0.881 )>> ;
+	prov:wasDerivedFrom doc:2e3a7c52d6a4 .
+doc:FactsCrossVal None:describes_type doc:Factsmodel_1 .
+_:e133e75ba2f2bd956f07e3a3138eb681 rdf:reifies <<( doc:FactsCrossVal None:describes_type doc:Factsmodel_1 )>> ;
+	prov:wasDerivedFrom doc:2e3a7c52d6a4 .
+doc:6fc4e12d1502 a prov:Entity , schema:text ;
+	prov:generatedAtTime "2026-06-12T01:43:25.550029Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+	schema:position 1 ;
+	schema:identifier "6fc4e12d1502" .
+doc:Factsmodel_1 None:has_publication_year None:Publication_year_2026 .
+_:e461648bd99697c5e9c9fd51e91013df rdf:reifies <<( doc:Factsmodel_1 None:has_publication_year None:Publication_year_2026 )>> ;
+	prov:wasDerivedFrom doc:6fc4e12d1502 .
+doc:FactsMagnetostriction rdfs:label "magnetostriction spectral structure" .
+_:d967f6eb0a0976378ea9b82e0fd81145 rdf:reifies <<( doc:FactsMagnetostriction rdfs:label "magnetostriction spectral structure" )>> ;
+	prov:wasDerivedFrom doc:6fc4e12d1502 .
+doc:FactsLiu cd:proposed doc:FactsWaveletCnn .
+_:ddbc395bc32edb10a953c9d60c3358c4 rdf:reifies <<( doc:FactsLiu cd:proposed doc:FactsWaveletCnn )>> ;
+	prov:wasDerivedFrom doc:6fc4e12d1502 .
+doc:FactsBpnn a cco:Algorithm .
+_:a087dd1f3570e7805b34c0852db1691f rdf:reifies <<( doc:FactsBpnn rdf:type cco:Algorithm )>> ;
+	prov:wasDerivedFrom doc:6fc4e12d1502 .
+None:Publication_year_2026 a None:Publication_year .
+_:b48310a785316490815723e50e29075c rdf:reifies <<( None:Publication_year_2026 rdf:type None:Publication_year )>> ;
+	prov:wasDerivedFrom doc:6fc4e12d1502 .
+doc:FactsMagnetostriction a obo:BFO_0000019 .
+_:a81dfe3e10954b7352800c9dac9ab882 rdf:reifies <<( doc:FactsMagnetostriction rdf:type obo:BFO_0000019 )>> ;
+	prov:wasDerivedFrom doc:6fc4e12d1502 .
+doc:FactsLiu cd:examined doc:FactsTransformerVibrationAndNoise .
+_:a83a94c9af3b31dfcdd9932dd18f1c3e rdf:reifies <<( doc:FactsLiu cd:examined doc:FactsTransformerVibrationAndNoise )>> ;
+	prov:wasDerivedFrom doc:6fc4e12d1502 .
+doc:FactsMdpi a schema:Organization .
+_:a0889fedaa9a3a4b48dfb16363e4bf3e rdf:reifies <<( doc:FactsMdpi rdf:type schema:Organization )>> ;
+	prov:wasDerivedFrom doc:6fc4e12d1502 .
+doc:FactsTJointLocalStructure cd:increases doc:FactsMagnetostriction .
+_:c00ef29059649e865ec017d1e14085ed rdf:reifies <<( doc:FactsTJointLocalStructure cd:increases doc:FactsMagnetostriction )>> ;
+	prov:wasDerivedFrom doc:6fc4e12d1502 .
+doc:FactsBpnn rdfs:label "backpropagation neural network (BPNN)" .
+_:afa10a9269729d574c57716bbba4a864 rdf:reifies <<( doc:FactsBpnn rdfs:label "backpropagation neural network (BPNN)" )>> ;
+	prov:wasDerivedFrom doc:6fc4e12d1502 .
+doc:FactsHarmonicComponents a obo:BFO_0000001 .
+_:b2afdd4d7a5becc4c2cf1605da4f3149 rdf:reifies <<( doc:FactsHarmonicComponents rdf:type obo:BFO_0000001 )>> ;
+	prov:wasDerivedFrom doc:6fc4e12d1502 .
+doc:FactsYan cd:analyzedEffectsOf doc:FactsDcBias .
+_:b5b9b0ab830b2e22e5403190642b98d3 rdf:reifies <<( doc:FactsYan cd:analyzedEffectsOf doc:FactsDcBias )>> ;
+	prov:wasDerivedFrom doc:6fc4e12d1502 .
+doc:FactsWaveletCnn rdfs:label "wavelet convolutional neural network" .
+_:f6c93035a26bc6947dab4be44d38d2a2 rdf:reifies <<( doc:FactsWaveletCnn rdfs:label "wavelet convolutional neural network" )>> ;
+	prov:wasDerivedFrom doc:6fc4e12d1502 .
+doc:FactsDynamicHysteresisCurves rdfs:label "dynamic hysteresis curves" .
+_:ca322a51b7011d78bf83dd1ec287270 rdf:reifies <<( doc:FactsDynamicHysteresisCurves rdfs:label "dynamic hysteresis curves" )>> ;
+	prov:wasDerivedFrom doc:6fc4e12d1502 .
+doc:FactsOperatingConditions a obo:BFO_0000001 .
+_:b8e680744a635923ddcb1bf0a83c1464 rdf:reifies <<( doc:FactsOperatingConditions rdf:type obo:BFO_0000001 )>> ;
+	prov:wasDerivedFrom doc:6fc4e12d1502 .
+doc:FactsFourierTransform rdfs:label "Fourier transform method" .
+_:d6c28c40cf186b819340cbe2b250712f rdf:reifies <<( doc:FactsFourierTransform rdfs:label "Fourier transform method" )>> ;
+	prov:wasDerivedFrom doc:6fc4e12d1502 .
+doc:FactsMagnetostriction a obo:BFO_0000001 .
+_:fd97b8d9db3d1042e5b4d6abf7da9060 rdf:reifies <<( doc:FactsMagnetostriction rdf:type obo:BFO_0000001 )>> ;
+	prov:wasDerivedFrom doc:6fc4e12d1502 .
+doc:FactsMagnetostriction rdfs:label "rotating magnetization" .
+_:d424e36ba4816356a6348872eabbbf90 rdf:reifies <<( doc:FactsMagnetostriction rdfs:label "rotating magnetization" )>> ;
+	prov:wasDerivedFrom doc:6fc4e12d1502 .
+doc:FactsfrequencyDomainFeatures rdfs:label "time-domain statistical features" .
+_:ecb214c2225a98219f40fb5be54de8e rdf:reifies <<( doc:FactsfrequencyDomainFeatures rdfs:label "time-domain statistical features" )>> ;
+	prov:wasDerivedFrom doc:6fc4e12d1502 .
+doc:FactsNonlinearity rdfs:label "nonlinearity" .
+_:e1594e9eb9b48bc7996fb038bc931425 rdf:reifies <<( doc:FactsNonlinearity rdfs:label "nonlinearity" )>> ;
+	prov:wasDerivedFrom doc:6fc4e12d1502 .
+doc:FactsWaveformDistortion a obo:BFO_0000019 .
+_:e1a27b1128b7eb80e78b8d5a4f75879b rdf:reifies <<( doc:FactsWaveformDistortion rdf:type obo:BFO_0000019 )>> ;
+	prov:wasDerivedFrom doc:6fc4e12d1502 .
+doc:FactsPinn rdfs:label "physics-informed neural network (PINN)" .
+_:a62bbc36c59c0a7981cb8f527fa05fce rdf:reifies <<( doc:FactsPinn rdfs:label "physics-informed neural network (PINN)" )>> ;
+	prov:wasDerivedFrom doc:6fc4e12d1502 .
+doc:FactsDynamicHysteresisCurves a obo:BFO_0000019 .
+_:a02fd80eaca7de034ecb289979e4caf4 rdf:reifies <<( doc:FactsDynamicHysteresisCurves rdf:type obo:BFO_0000019 )>> ;
+	prov:wasDerivedFrom doc:6fc4e12d1502 .
+doc:FactsMultiscaleMutualInformation cco:describes doc:FactsDcBiasIdentificationFramework .
+_:c1b0f5953ab4feca91d4a563f40044c2 rdf:reifies <<( doc:FactsMultiscaleMutualInformation cco:describes doc:FactsDcBiasIdentificationFramework )>> ;
+	prov:wasDerivedFrom doc:6fc4e12d1502 .
+doc:FactsMagnetostriction rdfs:label "alternating magnetization" .
+_:ff0db1a285fa8ab93095fa4c6ee56acf rdf:reifies <<( doc:FactsMagnetostriction rdfs:label "alternating magnetization" )>> ;
+	prov:wasDerivedFrom doc:6fc4e12d1502 .
+doc:FactsLiu a schema:Person .
+_:acdd0daaf46c53cd4d5e9b2cf4c8e6dc rdf:reifies <<( doc:FactsLiu rdf:type schema:Person )>> ;
+	prov:wasDerivedFrom doc:6fc4e12d1502 .
+doc:FactsWaveformDistortion rdfs:label "waveform distortion" .
+_:aee73ee0379387086ba763e3e61a4c9b rdf:reifies <<( doc:FactsWaveformDistortion rdfs:label "waveform distortion" )>> ;
+	prov:wasDerivedFrom doc:6fc4e12d1502 .
+doc:FactsDcBias a obo:BFO_0000001 .
+_:d254d5571e1176706385a99b0dadd668 rdf:reifies <<( doc:FactsDcBias rdf:type obo:BFO_0000001 )>> ;
+	prov:wasDerivedFrom doc:6fc4e12d1502 .
+doc:FactsVibrationSignalsWaveletTransform a obo:BFO_0000019 .
+_:b4780e4f8fd949acb1986c030e0d87d3 rdf:reifies <<( doc:FactsVibrationSignalsWaveletTransform rdf:type obo:BFO_0000019 )>> ;
+	prov:wasDerivedFrom doc:6fc4e12d1502 .
+doc:FactsLiu rdfs:label "Guo et al." .
+_:eab70ad8433f1c920e7d3636070adfd9 rdf:reifies <<( doc:FactsLiu rdfs:label "Guo et al." )>> ;
+	prov:wasDerivedFrom doc:6fc4e12d1502 .
+doc:FactsMultiscaleMutualInformation rdfs:label "multiscale mutual information features extracted from the magnetostriction series" .
+_:ef6993e7127d56d4fe8c29062ecb884e rdf:reifies <<( doc:FactsMultiscaleMutualInformation rdfs:label "multiscale mutual information features extracted from the magnetostriction series" )>> ;
+	prov:wasDerivedFrom doc:6fc4e12d1502 .
+doc:FactsTJointLocalStructure rdfs:label "T-joint local structural feature" .
+_:b96ee5f2921cad4392ebb513e8a4f1c2 rdf:reifies <<( doc:FactsTJointLocalStructure rdfs:label "T-joint local structural feature" )>> ;
+	prov:wasDerivedFrom doc:6fc4e12d1502 .
+doc:Factsmodel_1 schema:datePublished "2026-04-29"^^<http://www.w3.org/2001/XMLSchema#date> .
+_:ef82b3c1480eea94b768ce8acdde0adf rdf:reifies <<( doc:Factsmodel_1 schema:datePublished "2026-04-29"^^<http://www.w3.org/2001/XMLSchema#date> )>> ;
+	prov:wasDerivedFrom doc:6fc4e12d1502 .
+doc:FactsTJointLocalStructure a obo:BFO_0000030 .
+_:f864c7291a9ecaa1dd94580c76c26049 rdf:reifies <<( doc:FactsTJointLocalStructure rdf:type obo:BFO_0000030 )>> ;
+	prov:wasDerivedFrom doc:6fc4e12d1502 .
+doc:FactsMdpi schema:location "Basel, Switzerland" .
+_:f83ceb368541452829a020ba866d1201 rdf:reifies <<( doc:FactsMdpi schema:location "Basel, Switzerland" )>> ;
+	prov:wasDerivedFrom doc:6fc4e12d1502 .
+doc:FactsHuseyinHiziroglu a schema:Person .
+_:d1a1d53376fe5c7db39812524c0efca3 rdf:reifies <<( doc:FactsHuseyinHiziroglu rdf:type schema:Person )>> ;
+	prov:wasDerivedFrom doc:6fc4e12d1502 .
+doc:FactsDcBiasIdentificationFramework cd:integrates doc:FactsfrequencyDomainFeatures .
+_:e8848a41538a0ef7cdbab0f5171b285f rdf:reifies <<( doc:FactsDcBiasIdentificationFramework cd:integrates doc:FactsfrequencyDomainFeatures )>> ;
+	prov:wasDerivedFrom doc:6fc4e12d1502 .
+doc:FactsMagnetostriction rdfs:label "magnetic field phase" .
+_:c8bd5b8fa6d9a8aa59b90c7ad805ddae rdf:reifies <<( doc:FactsMagnetostriction rdfs:label "magnetic field phase" )>> ;
+	prov:wasDerivedFrom doc:6fc4e12d1502 .
+doc:FactsNonlinearity a obo:BFO_0000019 .
+_:b7036ebfc06ae94f6c6a69deb3171815 rdf:reifies <<( doc:FactsNonlinearity rdf:type obo:BFO_0000019 )>> ;
+	prov:wasDerivedFrom doc:6fc4e12d1502 .
+doc:FactsMagnetostriction rdfs:label "magnetostriction phenomenon" .
+_:e4492d042850e55bdef0f57d43cce9e2 rdf:reifies <<( doc:FactsMagnetostriction rdfs:label "magnetostriction phenomenon" )>> ;
+	prov:wasDerivedFrom doc:6fc4e12d1502 .
+doc:Factsmodel_1 schema:dateModified "2026-04-22"^^<http://www.w3.org/2001/XMLSchema#date> .
+_:b3c48180ee23a0600ca198fb1465456 rdf:reifies <<( doc:Factsmodel_1 schema:dateModified "2026-04-22"^^<http://www.w3.org/2001/XMLSchema#date> )>> ;
+	prov:wasDerivedFrom doc:6fc4e12d1502 .
+doc:FactsMultiscaleMutualInformation a None:Data_variable .
+_:d711941929e5c688ea1f2b3ff4bd04e2 rdf:reifies <<( doc:FactsMultiscaleMutualInformation rdf:type None:Data_variable )>> ;
+	prov:wasDerivedFrom doc:6fc4e12d1502 .
+doc:FactsFourierTransform a cco:Algorithm .
+_:f5beab365e280a25a2db2e4860a6d48f rdf:reifies <<( doc:FactsFourierTransform rdf:type cco:Algorithm )>> ;
+	prov:wasDerivedFrom doc:6fc4e12d1502 .
+doc:FactsDcBias cd:worsens doc:FactsWaveformDistortion .
+_:c756d5df4b39206a876dc00e411c2cdf rdf:reifies <<( doc:FactsDcBias cd:worsens doc:FactsWaveformDistortion )>> ;
+	prov:wasDerivedFrom doc:6fc4e12d1502 .
+doc:FactsTransformerVibrationAndNoise rdfs:label "transformer vibration and noise characteristics" .
+_:e04ee22e1510d0cf200a0c36b852ab02 rdf:reifies <<( doc:FactsTransformerVibrationAndNoise rdfs:label "transformer vibration and noise characteristics" )>> ;
+	prov:wasDerivedFrom doc:6fc4e12d1502 .
+doc:FactsfrequencyDomainFeatures a cco:DescriptiveInformationContentEntity .
+_:e4fc17c61f8020e9afcd32b27d9b5a83 rdf:reifies <<( doc:FactsfrequencyDomainFeatures rdf:type cco:DescriptiveInformationContentEntity )>> ;
+	prov:wasDerivedFrom doc:6fc4e12d1502 .
+doc:FactsLiu cd:uses doc:FactsBpnn .
+_:b24a74e86328106eaa82c81d9cada8f rdf:reifies <<( doc:FactsLiu cd:uses doc:FactsBpnn )>> ;
+	prov:wasDerivedFrom doc:6fc4e12d1502 .
+doc:FactsMagnetostriction rdfs:label "magnetostriction strain" .
+_:e2e77265a0b75d214b8a0a1a7edf2877 rdf:reifies <<( doc:FactsMagnetostriction rdfs:label "magnetostriction strain" )>> ;
+	prov:wasDerivedFrom doc:6fc4e12d1502 .
+doc:FactsOperatingConditions rdfs:label "operating conditions" .
+_:b02990d2ceaf36bd54b06e42bf03f975 rdf:reifies <<( doc:FactsOperatingConditions rdfs:label "operating conditions" )>> ;
+	prov:wasDerivedFrom doc:6fc4e12d1502 .
+doc:FactsDcBias cd:distorts doc:FactsMagnetostriction .
+_:d5b4c687706d5df6f8c84411a2839b0c rdf:reifies <<( doc:FactsDcBias cd:distorts doc:FactsMagnetostriction )>> ;
+	prov:wasDerivedFrom doc:6fc4e12d1502 .
+doc:FactsMagnetostriction rdfs:label "magnetostriction amplitude" .
+_:f61161b985367bff87f5466f06cf4822 rdf:reifies <<( doc:FactsMagnetostriction rdfs:label "magnetostriction amplitude" )>> ;
+	prov:wasDerivedFrom doc:6fc4e12d1502 .
+doc:FactsDcBias cd:intensifies doc:FactsNonlinearity .
+_:d406fb9596a02f9bd1bea06ef0f045ff rdf:reifies <<( doc:FactsDcBias cd:intensifies doc:FactsNonlinearity )>> ;
+	prov:wasDerivedFrom doc:6fc4e12d1502 .
+doc:FactsOperatingConditions cd:affect doc:FactsTransformerVibrationAndNoise .
+_:ece5775b83f67f2da90cb7770779efb5 rdf:reifies <<( doc:FactsOperatingConditions cd:affect doc:FactsTransformerVibrationAndNoise )>> ;
+	prov:wasDerivedFrom doc:6fc4e12d1502 .
+doc:FactsWaveletTransform rdfs:comment "limited by reliance on accurate amplitude estimation and may fail to capture interdependence in time sequences under non-ideal conditions" .
+_:a6f4c91a9fca0aac609a020712de2e38 rdf:reifies <<( doc:FactsWaveletTransform rdfs:comment "limited by reliance on accurate amplitude estimation and may fail to capture interdependence in time sequences under non-ideal conditions" )>> ;
+	prov:wasDerivedFrom doc:6fc4e12d1502 .
+doc:FactsHarmonicComponents cd:influences doc:FactsMagnetostriction .
+_:ec5ece37c8f90ccd67f06aa5bb1ffff4 rdf:reifies <<( doc:FactsHarmonicComponents cd:influences doc:FactsMagnetostriction )>> ;
+	prov:wasDerivedFrom doc:6fc4e12d1502 .
+doc:FactsJilesAthertonModel rdfs:label "Jiles-Atherton model" .
+_:a0787d5d891400b8ebe8cfb0ce8bec80 rdf:reifies <<( doc:FactsJilesAthertonModel rdfs:label "Jiles-Atherton model" )>> ;
+	prov:wasDerivedFrom doc:6fc4e12d1502 .
+doc:FactsMagnetostriction rdfs:label "magnetic field amplitude" .
+_:d0630604c12bf3eb8422a2d7974b0f48 rdf:reifies <<( doc:FactsMagnetostriction rdfs:label "magnetic field amplitude" )>> ;
+	prov:wasDerivedFrom doc:6fc4e12d1502 .
+doc:FactsYan rdfs:label "Yan et al." .
+_:e69dd29444b19cdd026ffb6682bd6be9 rdf:reifies <<( doc:FactsYan rdfs:label "Yan et al." )>> ;
+	prov:wasDerivedFrom doc:6fc4e12d1502 .
+doc:Factsmodel_1 schema:dateReceived "2026-04-03"^^<http://www.w3.org/2001/XMLSchema#date> .
+_:d400dadf5f0de4adba53dd8932636a4c rdf:reifies <<( doc:Factsmodel_1 schema:dateReceived "2026-04-03"^^<http://www.w3.org/2001/XMLSchema#date> )>> ;
+	prov:wasDerivedFrom doc:6fc4e12d1502 .
+doc:FactsfrequencyDomainFeatures rdfs:label "frequency-domain physical features" .
+_:ff69d96e2e107e01307f76cee6d5478d rdf:reifies <<( doc:FactsfrequencyDomainFeatures rdfs:label "frequency-domain physical features" )>> ;
+	prov:wasDerivedFrom doc:6fc4e12d1502 .
+doc:FactsFourierTransform rdfs:comment "limited by reliance on accurate amplitude estimation; amplitude estimates can be affected by noise and spectral leakage" .
+_:b9168966676693ad4f3ff738ff6a0c52 rdf:reifies <<( doc:FactsFourierTransform rdfs:comment "limited by reliance on accurate amplitude estimation; amplitude estimates can be affected by noise and spectral leakage" )>> ;
+	prov:wasDerivedFrom doc:6fc4e12d1502 .
+doc:Factsprevious_Study_17 cco:describes doc:FactsPinn .
+_:f6ce556356f82d9dea6513c084fb9b8b rdf:reifies <<( doc:Factsprevious_Study_17 cco:describes doc:FactsPinn )>> ;
+	prov:wasDerivedFrom doc:6fc4e12d1502 .
+doc:FactsDcBias cd:alters doc:FactsMagnetostriction .
+_:b60c33e305226ce830a8188f49cf2e5e rdf:reifies <<( doc:FactsDcBias cd:alters doc:FactsMagnetostriction )>> ;
+	prov:wasDerivedFrom doc:6fc4e12d1502 .
+doc:FactsMagnetostriction cd:producesGreaterMagnetostrictionThan doc:FactsMagnetostriction .
+_:b97936cd8b83a7325755616b153f7aef rdf:reifies <<( doc:FactsMagnetostriction cd:producesGreaterMagnetostrictionThan doc:FactsMagnetostriction )>> ;
+	prov:wasDerivedFrom doc:6fc4e12d1502 .
+None:Publication_year_2026 None:has_interger_value 2026 .
+_:bd7849d51dbe0e46097f03df3a9b3e3f rdf:reifies <<( None:Publication_year_2026 None:has_interger_value 2026 )>> ;
+	prov:wasDerivedFrom doc:6fc4e12d1502 .
+doc:FactsMdpi rdfs:label "MDPI" .
+_:ab8becdac595713e4c82c51073e7649f rdf:reifies <<( doc:FactsMdpi rdfs:label "MDPI" )>> ;
+	prov:wasDerivedFrom doc:6fc4e12d1502 .
+doc:FactsFerromagneticMaterials rdfs:label "ferromagnetic materials" .
+_:d526fd384baee8f3dca1ab28c6d6edca rdf:reifies <<( doc:FactsFerromagneticMaterials rdfs:label "ferromagnetic materials" )>> ;
+	prov:wasDerivedFrom doc:6fc4e12d1502 .
+doc:Factscc_BY_4_0 rdfs:label "Creative Commons Attribution (CC BY)" .
+_:b560bf5ac26c7d555d2561adc80ec875 rdf:reifies <<( doc:Factscc_BY_4_0 rdfs:label "Creative Commons Attribution (CC BY)" )>> ;
+	prov:wasDerivedFrom doc:6fc4e12d1502 .
+doc:Factsmodel_1 schema:copyrightYear 2026 .
+_:add15184e8606861a214d39451a7995d rdf:reifies <<( doc:Factsmodel_1 schema:copyrightYear 2026 )>> ;
+	prov:wasDerivedFrom doc:6fc4e12d1502 .
+doc:FactsWaveletTransform rdfs:label "wavelet transform method" .
+_:d7d0d66573d5e1b932f746d5f8fa4289 rdf:reifies <<( doc:FactsWaveletTransform rdfs:label "wavelet transform method" )>> ;
+	prov:wasDerivedFrom doc:6fc4e12d1502 .
+doc:FactsDcBiasIdentificationFramework rdfs:label "DC bias identification framework (proposed)" .
+_:add6dc0f5fd1b71200417c2c7522609d rdf:reifies <<( doc:FactsDcBiasIdentificationFramework rdfs:label "DC bias identification framework (proposed)" )>> ;
+	prov:wasDerivedFrom doc:6fc4e12d1502 .
+doc:Factscc_BY_4_0 a schema:CreativeWork .
+_:ab98ed70d488dc054ff8ad188f02bd83 rdf:reifies <<( doc:Factscc_BY_4_0 rdf:type schema:CreativeWork )>> ;
+	prov:wasDerivedFrom doc:6fc4e12d1502 .
+doc:FactsWaveletCnn cd:usesFeaturesFrom doc:FactsVibrationSignalsWaveletTransform .
+_:be8ed901b733c6d24c36f8b955d1293c rdf:reifies <<( doc:FactsWaveletCnn cd:usesFeaturesFrom doc:FactsVibrationSignalsWaveletTransform )>> ;
+	prov:wasDerivedFrom doc:6fc4e12d1502 .
+doc:FactsLiu rdfs:label "Wang et al." .
+_:cf95250ebfc15f4f87d3a8a9c275d501 rdf:reifies <<( doc:FactsLiu rdfs:label "Wang et al." )>> ;
+	prov:wasDerivedFrom doc:6fc4e12d1502 .
+doc:FactsPinn a cco:Algorithm .
+_:ddde2e89584a8b207508e1f164a00858 rdf:reifies <<( doc:FactsPinn rdf:type cco:Algorithm )>> ;
+	prov:wasDerivedFrom doc:6fc4e12d1502 .
+doc:FactsWaveletTransform a cco:Algorithm .
+_:b18a9f0b829fbdc46aa082036c27b9e2 rdf:reifies <<( doc:FactsWaveletTransform rdf:type cco:Algorithm )>> ;
+	prov:wasDerivedFrom doc:6fc4e12d1502 .
+doc:Factsprevious_Study_17 a cco:InformationBearingArtifact .
+_:ab687772a6f92ea59caf425043ddf313 rdf:reifies <<( doc:Factsprevious_Study_17 rdf:type cco:InformationBearingArtifact )>> ;
+	prov:wasDerivedFrom doc:6fc4e12d1502 .
+doc:Factsprevious_Study_17 rdfs:label "previous study [17] (proposed PINN)" .
+_:bcca91d66b6aabb521506cabc465c742 rdf:reifies <<( doc:Factsprevious_Study_17 rdfs:label "previous study [17] (proposed PINN)" )>> ;
+	prov:wasDerivedFrom doc:6fc4e12d1502 .
+doc:Factsmodel_1 schema:publisher doc:FactsMdpi .
+_:b66096a608c208083f7c36c81165420d rdf:reifies <<( doc:Factsmodel_1 schema:publisher doc:FactsMdpi )>> ;
+	prov:wasDerivedFrom doc:6fc4e12d1502 .
+doc:FactsHuseyinHiziroglu rdfs:label "Huseyin Hiziroglu" .
+_:c171ab28c338ced85a17ab57a3198ba rdf:reifies <<( doc:FactsHuseyinHiziroglu rdfs:label "Huseyin Hiziroglu" )>> ;
+	prov:wasDerivedFrom doc:6fc4e12d1502 .
+doc:Factsmodel_1 schema:license doc:Factscc_BY_4_0 .
+_:ca79ffeae8d111f29737f1ae3f8e317b rdf:reifies <<( doc:Factsmodel_1 schema:license doc:Factscc_BY_4_0 )>> ;
+	prov:wasDerivedFrom doc:6fc4e12d1502 .
+doc:Factsmodel_1 schema:dateAccepted "2026-04-25"^^<http://www.w3.org/2001/XMLSchema#date> .
+_:a7f34b3e4f6f1dcfe8b0efdb5874aab rdf:reifies <<( doc:Factsmodel_1 schema:dateAccepted "2026-04-25"^^<http://www.w3.org/2001/XMLSchema#date> )>> ;
+	prov:wasDerivedFrom doc:6fc4e12d1502 .
+doc:Factsmodel_1 schema:copyrightHolder "the authors" .
+_:c440652c76fa87202e88fbe98a4d3a2b rdf:reifies <<( doc:Factsmodel_1 schema:copyrightHolder "the authors" )>> ;
+	prov:wasDerivedFrom doc:6fc4e12d1502 .
+doc:FactsTransformerVibrationAndNoise a obo:BFO_0000019 .
+_:d9975e5b6add35a069ecc4414e5904a6 rdf:reifies <<( doc:FactsTransformerVibrationAndNoise rdf:type obo:BFO_0000019 )>> ;
+	prov:wasDerivedFrom doc:6fc4e12d1502 .
+doc:FactsLiu rdfs:label "Liu et al." .
+_:e799e991a82dbd2ead3fd29c948a7eba rdf:reifies <<( doc:FactsLiu rdfs:label "Liu et al." )>> ;
+	prov:wasDerivedFrom doc:6fc4e12d1502 .
+doc:FactsYan a schema:Person .
+_:eff2520cc76e1f72993d620e04b64f2b rdf:reifies <<( doc:FactsYan rdf:type schema:Person )>> ;
+	prov:wasDerivedFrom doc:6fc4e12d1502 .
+doc:FactsVibrationSignalsWaveletTransform rdfs:label "wavelet transform of vibration signals" .
+_:eadb9cb8261309bdd34a7e7ce6da9f81 rdf:reifies <<( doc:FactsVibrationSignalsWaveletTransform rdfs:label "wavelet transform of vibration signals" )>> ;
+	prov:wasDerivedFrom doc:6fc4e12d1502 .
+doc:FactsJilesAthertonModel rdfs:comment "provides a theoretical basis for the hysteresis characteristics of ferromagnetic materials" .
+_:b4abea0acb4a3dbcbc54bafb26365e12 rdf:reifies <<( doc:FactsJilesAthertonModel rdfs:comment "provides a theoretical basis for the hysteresis characteristics of ferromagnetic materials" )>> ;
+	prov:wasDerivedFrom doc:6fc4e12d1502 .
+doc:FactsMagnetostriction rdfs:label "magnetostriction symmetry" .
+_:aa1c5b28597f7b517f6be4c744986cbd rdf:reifies <<( doc:FactsMagnetostriction rdfs:label "magnetostriction symmetry" )>> ;
+	prov:wasDerivedFrom doc:6fc4e12d1502 .
+_:c3ee57e9165bfd9cac4c1a0c69e24e75 prov:wasDerivedFrom doc:6fc4e12d1502 .
+doc:FactsJilesAthertonModel a None:Predictive_maintenance_model .
+_:c77378012b7b19a2e6ff9f96a30549 rdf:reifies <<( doc:FactsJilesAthertonModel rdf:type None:Predictive_maintenance_model )>> ;
+	prov:wasDerivedFrom doc:6fc4e12d1502 .
+doc:FactsDcBiasIdentificationFramework a None:Predictive_maintenance_model .
+_:e286ae20998b8a35ce88c4c1ba74d104 rdf:reifies <<( doc:FactsDcBiasIdentificationFramework rdf:type None:Predictive_maintenance_model )>> ;
+	prov:wasDerivedFrom doc:6fc4e12d1502 .
+doc:FactsWaveletCnn a cco:Algorithm .
+_:be15bc93894a22bebe64feedddca835c rdf:reifies <<( doc:FactsWaveletCnn rdf:type cco:Algorithm )>> ;
+	prov:wasDerivedFrom doc:6fc4e12d1502 .
+doc:FactsDynamicHysteresisCurves cd:isModeledFrom doc:FactsMagnetostriction .
+_:bcbe579ea3102f6d60914866179c175a rdf:reifies <<( doc:FactsDynamicHysteresisCurves cd:isModeledFrom doc:FactsMagnetostriction )>> ;
+	prov:wasDerivedFrom doc:6fc4e12d1502 .
+doc:FactsFerromagneticMaterials a obo:BFO_0000030 .
+_:f3c31cf1a997e2b992ff958b53fe8926 rdf:reifies <<( doc:FactsFerromagneticMaterials rdf:type obo:BFO_0000030 )>> ;
+	prov:wasDerivedFrom doc:6fc4e12d1502 .
+doc:FactsPinn rdfs:comment "proposed in previous study [17] to compute magnetostriction value from magnetic field excitation; effectiveness constrained by reliance on accurate underlying physical models" .
+_:e289a8313452e557eec74e784406cbcc rdf:reifies <<( doc:FactsPinn rdfs:comment "proposed in previous study [17] to compute magnetostriction value from magnetic field excitation; effectiveness constrained by reliance on accurate underlying physical models" )>> ;
+	prov:wasDerivedFrom doc:6fc4e12d1502 .
+doc:Factsmodel_1 schema:editor doc:FactsHuseyinHiziroglu .
+_:ba5fea88fbfbb42214d8f0e03b29c4a7 rdf:reifies <<( doc:Factsmodel_1 schema:editor doc:FactsHuseyinHiziroglu )>> ;
+	prov:wasDerivedFrom doc:6fc4e12d1502 .
+doc:FactsDcBias rdfs:label "DC bias (magnetic bias)" .
+_:d375fb22a707134cb996406692738a06 rdf:reifies <<( doc:FactsDcBias rdfs:label "DC bias (magnetic bias)" )>> ;
+	prov:wasDerivedFrom doc:6fc4e12d1502 .
+doc:FactsHarmonicComponents rdfs:label "harmonic components" .
+_:bfd48423d4bbfd409984ddaa4f2b0fbf rdf:reifies <<( doc:FactsHarmonicComponents rdfs:label "harmonic components" )>> ;
+	prov:wasDerivedFrom doc:6fc4e12d1502 .
+doc:f4288d0700b1 a prov:Entity , schema:text ;
+	prov:generatedAtTime "2026-06-12T01:43:25.557536Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+	schema:position 2 ;
+	schema:identifier "f4288d0700b1" .
+doc:FactsLstm obo:RO_0000085 None:Sequential_pattern_discovery .
+_:e20a21c15334af04f2626493eb1f0adf rdf:reifies <<( doc:FactsLstm obo:RO_0000085 None:Sequential_pattern_discovery )>> ;
+	prov:wasDerivedFrom doc:f4288d0700b1 .
+doc:FactsMagnetostriction None:has_design_detail doc:Factsalpha1 .
+_:c82f5c1e507b42cbee745610e704e512 rdf:reifies <<( doc:FactsMagnetostriction None:has_design_detail doc:Factsalpha1 )>> ;
+	prov:wasDerivedFrom doc:f4288d0700b1 .
+doc:FactsvoltageMin schema1:unitCode "Hz" .
+_:c7e14dfe7b73e2aca81f400c6e942214 rdf:reifies <<( doc:FactsvoltageMin schema1:unitCode "Hz" )>> ;
+	prov:wasDerivedFrom doc:f4288d0700b1 .
+doc:FactsfrequencyDomainFeatures rdfs:label "time-domain feature set capturing nonlinear dependencies"@en .
+_:bc8b52ef63ee558f741dddc81a2d4d28 rdf:reifies <<( doc:FactsfrequencyDomainFeatures rdfs:label "time-domain feature set capturing nonlinear dependencies"@en )>> ;
+	prov:wasDerivedFrom doc:f4288d0700b1 .
+doc:FactsfrequencyDomainFeatures a None:Data_variable .
+_:a2871cc2d2fee81d062d453d628130ba rdf:reifies <<( doc:FactsfrequencyDomainFeatures rdf:type None:Data_variable )>> ;
+	prov:wasDerivedFrom doc:f4288d0700b1 .
+_:a84c51ac6f5866f9fae51fad81e2239 prov:wasDerivedFrom doc:f4288d0700b1 .
+doc:FactsmachineLearning a cco:Algorithm .
+_:a4347067e811fc766edcc660f53fcb24 rdf:reifies <<( doc:FactsmachineLearning rdf:type cco:Algorithm )>> ;
+	prov:wasDerivedFrom doc:f4288d0700b1 .
+doc:FactsvoltageMin a schema1:QuantitativeValue .
+_:decf7944d92c3377cab441f441de123b rdf:reifies <<( doc:FactsvoltageMin rdf:type schema1:QuantitativeValue )>> ;
+	prov:wasDerivedFrom doc:f4288d0700b1 .
+doc:FactsexperimentalSystem rdfs:label "experimental system for magnetostriction dataset collection"@en .
+_:b71f345c5c951096f5de57e963126e0a rdf:reifies <<( doc:FactsexperimentalSystem rdfs:label "experimental system for magnetostriction dataset collection"@en )>> ;
+	prov:wasDerivedFrom doc:f4288d0700b1 .
+doc:FactsvoltageMin schema1:unitCode "V" .
+_:fc18d9bcdad84fbe8a012f213824b2c4 rdf:reifies <<( doc:FactsvoltageMin schema1:unitCode "V" )>> ;
+	prov:wasDerivedFrom doc:f4288d0700b1 .
+doc:FactsfeatureExtraction cco:describes doc:FactsMagnetostriction .
+_:b8d0fad6244afcc81339459c14e6d704 rdf:reifies <<( doc:FactsfeatureExtraction cco:describes doc:FactsMagnetostriction )>> ;
+	prov:wasDerivedFrom doc:f4288d0700b1 .
+doc:FactsLstm doc:factscollects doc:FactsfrequencyDomainFeatures .
+_:b3b408e2e62487eef701ea47d6906e8 rdf:reifies <<( doc:FactsLstm doc:factscollects doc:FactsfrequencyDomainFeatures )>> ;
+	prov:wasDerivedFrom doc:f4288d0700b1 .
+doc:FactsvoltageMin schema1:unitCode "%" .
+_:c14afa2bb307cd5675752ec12b4e2873 rdf:reifies <<( doc:FactsvoltageMin schema1:unitCode "%" )>> ;
+	prov:wasDerivedFrom doc:f4288d0700b1 .
+doc:FactsMagnetostriction rdfs:label "magnetostriction mechanism (ferromagnetic dimensional change during magnetization)"@en .
+_:d49e81923b336d439dae873887416340 rdf:reifies <<( doc:FactsMagnetostriction rdfs:label "magnetostriction mechanism (ferromagnetic dimensional change during magnetization)"@en )>> ;
+	prov:wasDerivedFrom doc:f4288d0700b1 .
+doc:FactsvoltageMin schema1:value 100 .
+_:dc3c49da0f9a5edb9695e3df0f5e336a rdf:reifies <<( doc:FactsvoltageMin schema1:value 100 )>> ;
+	prov:wasDerivedFrom doc:f4288d0700b1 .
+doc:FactsMagnetostriction rdfs:label "magnetostriction strain (Î»)"@en .
+_:d13166c424f87063d8da6e7efaa03808 rdf:reifies <<( doc:FactsMagnetostriction rdfs:label "magnetostriction strain (Î»)"@en )>> ;
+	prov:wasDerivedFrom doc:f4288d0700b1 .
+doc:FactsvoltageMin schema1:value "4"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+_:ff4b6995cad2c73cd65101971e405a05 rdf:reifies <<( doc:FactsvoltageMin schema1:value "4"^^<http://www.w3.org/2001/XMLSchema#decimal> )>> ;
+	prov:wasDerivedFrom doc:f4288d0700b1 .
+doc:FactsexperimentalSystem doc:factshasVoltageMax doc:FactsvoltageMin .
+_:dbb32ee245ad652c3368f1199171a009 rdf:reifies <<( doc:FactsexperimentalSystem doc:factshasVoltageMax doc:FactsvoltageMin )>> ;
+	prov:wasDerivedFrom doc:f4288d0700b1 .
+doc:FactsmagnetostrictionDataset a cco:Database .
+_:e7c2dbf245f7841cd9d3dfc683e81c99 rdf:reifies <<( doc:FactsmagnetostrictionDataset rdf:type cco:Database )>> ;
+	prov:wasDerivedFrom doc:f4288d0700b1 .
+doc:factshasVoltageMax a rdf:Property .
+_:e838377f76f98b68693749594b8c5524 rdf:reifies <<( doc:factshasVoltageMax rdf:type rdf:Property )>> ;
+	prov:wasDerivedFrom doc:f4288d0700b1 .
+doc:FactsexperimentalSystem a obo:BFO_0000030 .
+_:c26081fdf54c8ac53ee2becb8efeeb65 rdf:reifies <<( doc:FactsexperimentalSystem rdf:type obo:BFO_0000030 )>> ;
+	prov:wasDerivedFrom doc:f4288d0700b1 .
+doc:factscollects a rdf:Property .
+_:da0217fff7fe09e881ef55112786a071 rdf:reifies <<( doc:factscollects rdf:type rdf:Property )>> ;
+	prov:wasDerivedFrom doc:f4288d0700b1 .
+doc:FactsfrequencyDomainFeatures rdfs:label "frequency-domain features (harmonic amplitudes)"@en .
+_:ef0c71aee445865288d1906f479020bc rdf:reifies <<( doc:FactsfrequencyDomainFeatures rdfs:label "frequency-domain features (harmonic amplitudes)"@en )>> ;
+	prov:wasDerivedFrom doc:f4288d0700b1 .
+_:fd97b8d9db3d1042e5b4d6abf7da9060 prov:wasDerivedFrom doc:f4288d0700b1 .
+doc:FactsvoltageMin schema1:value 30 .
+_:b4e08df105ce4e230bc257a2659a95ee rdf:reifies <<( doc:FactsvoltageMin schema1:value 30 )>> ;
+	prov:wasDerivedFrom doc:f4288d0700b1 .
+doc:FactsmultiScaleMutualInformation a cco:Algorithm .
+_:caa5a5c9c2f008ef4244b2b994bc40f0 rdf:reifies <<( doc:FactsmultiScaleMutualInformation rdf:type cco:Algorithm )>> ;
+	prov:wasDerivedFrom doc:f4288d0700b1 .
+doc:FactsvoltageMin schema1:value 7 .
+_:e4a9aa31445fa0efc082618fcce6637f rdf:reifies <<( doc:FactsvoltageMin schema1:value 7 )>> ;
+	prov:wasDerivedFrom doc:f4288d0700b1 .
+doc:FactsdeepLearning obo:RO_0000085 None:Deviation_detection .
+_:e5d1da612ca0c86fdd2422f89ef13dbc rdf:reifies <<( doc:FactsdeepLearning obo:RO_0000085 None:Deviation_detection )>> ;
+	prov:wasDerivedFrom doc:f4288d0700b1 .
+doc:FactsvoltageMin schema1:value 50 .
+_:b1de38dec77acdf97d471b8386e33d4c rdf:reifies <<( doc:FactsvoltageMin schema1:value 50 )>> ;
+	prov:wasDerivedFrom doc:f4288d0700b1 .
+doc:FactsdeepLearning a cco:Algorithm .
+_:f89b69b7cab9d449e45ed65959b66007 rdf:reifies <<( doc:FactsdeepLearning rdf:type cco:Algorithm )>> ;
+	prov:wasDerivedFrom doc:f4288d0700b1 .
+doc:FactsfrequencyDomainFeatures rdfs:label "frequency-domain feature set (key harmonic amplitudes)"@en .
+_:aa367cfb3ecfdf6759d3b7970d207dd5 rdf:reifies <<( doc:FactsfrequencyDomainFeatures rdfs:label "frequency-domain feature set (key harmonic amplitudes)"@en )>> ;
+	prov:wasDerivedFrom doc:f4288d0700b1 .
+doc:FactsexperimentalSystem doc:factscollects doc:FactsmagnetostrictionDataset .
+_:b0821b298328ef555feee7f775bed6c6 rdf:reifies <<( doc:FactsexperimentalSystem doc:factscollects doc:FactsmagnetostrictionDataset )>> ;
+	prov:wasDerivedFrom doc:f4288d0700b1 .
+doc:FactssiliconSteelSheet rdfs:label "grain-oriented silicon steel sheet"@en .
+_:dd7ee73d4fb493574889d276ea679fa4 rdf:reifies <<( doc:FactssiliconSteelSheet rdfs:label "grain-oriented silicon steel sheet"@en )>> ;
+	prov:wasDerivedFrom doc:f4288d0700b1 .
+doc:Factsalpha1 cco:describes doc:FactsMagnetostriction .
+_:c30bfbc4002e4e0e04b06a7424d059b0 rdf:reifies <<( doc:Factsalpha1 cco:describes doc:FactsMagnetostriction )>> ;
+	prov:wasDerivedFrom doc:f4288d0700b1 .
+doc:FactsmultiScaleMutualInformation rdfs:label "multi-scale mutual information (feature extraction technique)"@en .
+_:bd0a6fc61c77233138eeff5a1e6c87c6 rdf:reifies <<( doc:FactsmultiScaleMutualInformation rdfs:label "multi-scale mutual information (feature extraction technique)"@en )>> ;
+	prov:wasDerivedFrom doc:f4288d0700b1 .
+doc:FactsLstm obo:RO_0000085 None:Future_state_forecast .
+_:c222a9f05155f7ddc84d427382becfcd rdf:reifies <<( doc:FactsLstm obo:RO_0000085 None:Future_state_forecast )>> ;
+	prov:wasDerivedFrom doc:f4288d0700b1 .
+doc:FactsmagnetostrictionDataset cco:describes doc:FactsMagnetostriction .
+_:eb1bf90c6166d45b4c959f1c349600e8 rdf:reifies <<( doc:FactsmagnetostrictionDataset cco:describes doc:FactsMagnetostriction )>> ;
+	prov:wasDerivedFrom doc:f4288d0700b1 .
+doc:FactsLstm a cco:Algorithm .
+_:e0280768debd40cd10e077dc3531c182 rdf:reifies <<( doc:FactsLstm rdf:type cco:Algorithm )>> ;
+	prov:wasDerivedFrom doc:f4288d0700b1 .
+doc:FactsmachineLearning rdfs:label "machine learning"@en .
+_:e6df3a9968322859883c486a7de10ac8 rdf:reifies <<( doc:FactsmachineLearning rdfs:label "machine learning"@en )>> ;
+	prov:wasDerivedFrom doc:f4288d0700b1 .
+doc:FactsvoltageMin doc:factscollects 2 .
+_:da61b1082500735bae8fe3012e40c185 rdf:reifies <<( doc:FactsvoltageMin doc:factscollects 2 )>> ;
+	prov:wasDerivedFrom doc:f4288d0700b1 .
+doc:FactsvoltageMin schema1:value 0 .
+_:f81c2285ed5be85d4d16b6e0c8069435 rdf:reifies <<( doc:FactsvoltageMin schema1:value 0 )>> ;
+	prov:wasDerivedFrom doc:f4288d0700b1 .
+doc:FactsvoltageMin schema1:value "2"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+_:de68f9b63fff49cce0927b66e0b64a0c rdf:reifies <<( doc:FactsvoltageMin schema1:value "2"^^<http://www.w3.org/2001/XMLSchema#decimal> )>> ;
+	prov:wasDerivedFrom doc:f4288d0700b1 .
+doc:FactsfeatureExtraction a None:Fault_feature_extraction .
+_:d290cbe92427dcc100fc7a32dda4ae69 rdf:reifies <<( doc:FactsfeatureExtraction rdf:type None:Fault_feature_extraction )>> ;
+	prov:wasDerivedFrom doc:f4288d0700b1 .
+doc:FactsvoltageMin schema1:unitCode "count" .
+_:eef14d0e645929ce31c7f7870bef394d rdf:reifies <<( doc:FactsvoltageMin schema1:unitCode "count" )>> ;
+	prov:wasDerivedFrom doc:f4288d0700b1 .
+doc:FactsdeepLearning rdfs:label "deep learning"@en .
+_:c6ff54b6f023ffb825708be0663ee882 rdf:reifies <<( doc:FactsdeepLearning rdfs:label "deep learning"@en )>> ;
+	prov:wasDerivedFrom doc:f4288d0700b1 .
+doc:FactsfeatureExtraction None:has_design_detail doc:FactsmultiScaleMutualInformation .
+_:ae362585d5fd08273adb1578efbdf518 rdf:reifies <<( doc:FactsfeatureExtraction None:has_design_detail doc:FactsmultiScaleMutualInformation )>> ;
+	prov:wasDerivedFrom doc:f4288d0700b1 .
+doc:FactsMagnetostriction a None:Data_variable .
+_:bfa805aa583bf1054ec7905dd6ea65d5 rdf:reifies <<( doc:FactsMagnetostriction rdf:type None:Data_variable )>> ;
+	prov:wasDerivedFrom doc:f4288d0700b1 .
+doc:FactssiliconSteelSheet a obo:BFO_0000030 .
+_:ddba4e50ff7d0a7b9995410c16d1ff1a rdf:reifies <<( doc:FactssiliconSteelSheet rdf:type obo:BFO_0000030 )>> ;
+	prov:wasDerivedFrom doc:f4288d0700b1 .
+doc:FactsvoltageMin doc:factscollects doc:FactsvoltageMin .
+_:ed5093e51021dab7fb61e67e5699ff79 rdf:reifies <<( doc:FactsvoltageMin doc:factscollects doc:FactsvoltageMin )>> ;
+	prov:wasDerivedFrom doc:f4288d0700b1 .
+obo:BFO_0000001 owl:sameAs obo:BFO_0000019 , obo:BFO_0000030 .

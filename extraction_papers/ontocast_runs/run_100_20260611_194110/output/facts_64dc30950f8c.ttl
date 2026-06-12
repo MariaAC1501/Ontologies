@@ -1,0 +1,426 @@
+@prefix None: <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD/seed#> .
+@prefix cco: <http://www.ontologyrepository.com/CommonCoreOntologies/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doc: <https://growgraph.dev/doc/64dc30950f8c/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix obo: <http://purl.obolibrary.org/obo/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix schema: <https://schema.org/> .
+@prefix schema1: <http://schema.org/> .
+doc:9ba762db92d1 a prov:Entity , schema:text ;
+	prov:generatedAtTime "2026-06-12T01:43:13.852705Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+	schema:position 0 ;
+	schema:identifier "9ba762db92d1" .
+doc:Factsstudy1 None:has_publication_year doc:Factspubyear_2026 .
+_:a760d70ec8b6644c94377e1880e1b367 rdf:reifies <<( doc:Factsstudy1 None:has_publication_year doc:Factspubyear_2026 )>> ;
+	prov:wasDerivedFrom doc:9ba762db92d1 .
+doc:Factsstudy1 dcterms:dateAccepted "2026-04-14"^^<http://www.w3.org/2001/XMLSchema#date> .
+_:f56db23c3d9bf75cc7c27c3c721b1454 rdf:reifies <<( doc:Factsstudy1 dcterms:dateAccepted "2026-04-14"^^<http://www.w3.org/2001/XMLSchema#date> )>> ;
+	prov:wasDerivedFrom doc:9ba762db92d1 .
+doc:FactspersonJisungKim a schema1:Person .
+_:b5f6519aca7daf9248dfde3e38648b99 rdf:reifies <<( doc:FactspersonJisungKim rdf:type schema1:Person )>> ;
+	prov:wasDerivedFrom doc:9ba762db92d1 .
+doc:FactsfindingImbalanceTraining None:has_text_value "Under severe class imbalance, imbalance-aware training significantly improves detection performance in precision-recall space, but performance remains sensitive to temporal variation." .
+_:f6975d616e8c3ce3351d3f6b32ae0a47 rdf:reifies <<( doc:FactsfindingImbalanceTraining None:has_text_value "Under severe class imbalance, imbalance-aware training significantly improves detection performance in precision-recall space, but performance remains sensitive to temporal variation." )>> ;
+	prov:wasDerivedFrom doc:9ba762db92d1 .
+doc:FactsoneStep a None:Multiple_steps_future_state_forecast .
+_:a2c7084d9d06d788b9a203b9d66cc908 rdf:reifies <<( doc:FactsoneStep rdf:type None:Multiple_steps_future_state_forecast )>> ;
+	prov:wasDerivedFrom doc:9ba762db92d1 .
+doc:FactsdesignDetail1 None:has_text_value "Threshold-based alarm policies exhibit a structural trade-off between detection performance and alarm burden: achieving moderate early-warning capability requires substantially increased alarm rates." .
+_:a30e36a2187b973dd368d2e08404be7a rdf:reifies <<( doc:FactsdesignDetail1 None:has_text_value "Threshold-based alarm policies exhibit a structural trade-off between detection performance and alarm burden: achieving moderate early-warning capability requires substantially increased alarm rates." )>> ;
+	prov:wasDerivedFrom doc:9ba762db92d1 .
+doc:FactspredictiveModel schema1:description "Model operates on sliding-window sensor data and outputs probabilistic fault predictions across multiple future horizons; outputs aggregated risk score used by threshold-based alarm policies." .
+_:d01295bb46ec0f390ce1f51d57b8a033 rdf:reifies <<( doc:FactspredictiveModel schema1:description "Model operates on sliding-window sensor data and outputs probabilistic fault predictions across multiple future horizons; outputs aggregated risk score used by threshold-based alarm policies." )>> ;
+	prov:wasDerivedFrom doc:9ba762db92d1 .
+doc:Factsstudy1 dcterms:dateReceived "2026-03-21"^^<http://www.w3.org/2001/XMLSchema#date> .
+_:d68e2621b45f3ebe46db0a17221b72b2 rdf:reifies <<( doc:Factsstudy1 dcterms:dateReceived "2026-03-21"^^<http://www.w3.org/2001/XMLSchema#date> )>> ;
+	prov:wasDerivedFrom doc:9ba762db92d1 .
+doc:FactspersonJisungKim schema1:email "gyjki@leeds.ac.uk" .
+_:e754360e889b7ace69db598943334a20 rdf:reifies <<( doc:FactspersonJisungKim schema1:email "gyjki@leeds.ac.uk" )>> ;
+	prov:wasDerivedFrom doc:9ba762db92d1 .
+doc:FactsorgSkkuniv schema1:name "School of Geography, University of Leeds" .
+_:b433b0dfe2e28371d0052ed6786a6469 rdf:reifies <<( doc:FactsorgSkkuniv schema1:name "School of Geography, University of Leeds" )>> ;
+	prov:wasDerivedFrom doc:9ba762db92d1 .
+doc:FactsorgMdpi schema1:name "MDPI, Basel, Switzerland" .
+_:e2bbd6175b1b39351cc041daa195fda6 rdf:reifies <<( doc:FactsorgMdpi schema1:name "MDPI, Basel, Switzerland" )>> ;
+	prov:wasDerivedFrom doc:9ba762db92d1 .
+doc:FactsorgMdpi a schema1:Organization .
+_:a4f01eb5345a7664dbfb68e378624b26 rdf:reifies <<( doc:FactsorgMdpi rdf:type schema1:Organization )>> ;
+	prov:wasDerivedFrom doc:9ba762db92d1 .
+doc:FactspersonJisungKim schema1:affiliation doc:FactsorgSkkuniv .
+_:f392f160acf0a22d1d8ea7b44bb17b1 rdf:reifies <<( doc:FactspersonJisungKim schema1:affiliation doc:FactsorgSkkuniv )>> ;
+	prov:wasDerivedFrom doc:9ba762db92d1 .
+doc:Factstitle1 None:has_text_value "Decision-Aware Multi-Horizon Fault Prediction for Photovoltaic Inverters: Analysis of Threshold-Based Alarm Policies Under Operational Constraints" .
+_:d124c3ea572233044bbdb625473eba8c rdf:reifies <<( doc:Factstitle1 None:has_text_value "Decision-Aware Multi-Horizon Fault Prediction for Photovoltaic Inverters: Analysis of Threshold-Based Alarm Policies Under Operational Constraints" )>> ;
+	prov:wasDerivedFrom doc:9ba762db92d1 .
+doc:FactsmodelConfig a None:Model_configuration .
+_:cce45a1b45222947ac26abaa687381fe rdf:reifies <<( doc:FactsmodelConfig rdf:type None:Model_configuration )>> ;
+	prov:wasDerivedFrom doc:9ba762db92d1 .
+doc:FactsorgSkkuniv schema1:address "Leeds LS2 9JT, UK" .
+_:d5f5d0e22a4fefcf2b31e87afe48322a rdf:reifies <<( doc:FactsorgSkkuniv schema1:address "Leeds LS2 9JT, UK" )>> ;
+	prov:wasDerivedFrom doc:9ba762db92d1 .
+doc:Factsstudy1 a None:Predictive_Maintenance_Article .
+_:bc8eb122b86b15732306e654f2422cc4 rdf:reifies <<( doc:Factsstudy1 rdf:type None:Predictive_Maintenance_Article )>> ;
+	prov:wasDerivedFrom doc:9ba762db92d1 .
+doc:FactsorgSkkuniv a schema1:Organization .
+_:fae9bc812443d2725d0c328f14ad62b1 rdf:reifies <<( doc:FactsorgSkkuniv rdf:type schema1:Organization )>> ;
+	prov:wasDerivedFrom doc:9ba762db92d1 .
+doc:FactspersonJisungKim schema1:name "Jisung Kim" .
+_:e0dd8686d9497af1f3923b4e4270017a rdf:reifies <<( doc:FactspersonJisungKim schema1:name "Jisung Kim" )>> ;
+	prov:wasDerivedFrom doc:9ba762db92d1 .
+doc:FactspredictiveModel None:has_predictive_maintenance_function doc:FactsoneStep .
+_:d3495eb6067cb3a399602032d58fce71 rdf:reifies <<( doc:FactspredictiveModel None:has_predictive_maintenance_function doc:FactsoneStep )>> ;
+	prov:wasDerivedFrom doc:9ba762db92d1 .
+doc:FactspredictiveModel schema1:algorithm doc:FactstimexerEmbedding .
+_:bc39454e9571565948d2e216f8c82a10 rdf:reifies <<( doc:FactspredictiveModel schema1:algorithm doc:FactstimexerEmbedding )>> ;
+	prov:wasDerivedFrom doc:9ba762db92d1 .
+doc:FactsperfValueEarlyWarning None:has_text_value "Multi-horizon prediction provides useful early-warning signals only within limited near-term horizons." .
+_:d31b4ce2ac86b5b6987fc7e7f69c3dae rdf:reifies <<( doc:FactsperfValueEarlyWarning None:has_text_value "Multi-horizon prediction provides useful early-warning signals only within limited near-term horizons." )>> ;
+	prov:wasDerivedFrom doc:9ba762db92d1 .
+doc:FactspredictiveModel a None:Predictive_maintenance_system_module .
+_:b7e3e7471e1f0dca9dfb089b269d842d rdf:reifies <<( doc:FactspredictiveModel rdf:type None:Predictive_maintenance_system_module )>> ;
+	prov:wasDerivedFrom doc:9ba762db92d1 .
+doc:FactsdesignDetail1 a None:Design_detail .
+_:d2e3522459ff91d80b3ed03bbd437012 rdf:reifies <<( doc:FactsdesignDetail1 rdf:type None:Design_detail )>> ;
+	prov:wasDerivedFrom doc:9ba762db92d1 .
+doc:FactspersonJisungKim schema1:name "Tae-Yun Kim" .
+_:d2cdc411b03f791305e7c287e2c338d7 rdf:reifies <<( doc:FactspersonJisungKim schema1:name "Tae-Yun Kim" )>> ;
+	prov:wasDerivedFrom doc:9ba762db92d1 .
+doc:FactstimexerEmbedding a cco:Algorithm .
+_:e57a794181c110221f324ca716b05975 rdf:reifies <<( doc:FactstimexerEmbedding rdf:type cco:Algorithm )>> ;
+	prov:wasDerivedFrom doc:9ba762db92d1 .
+doc:FactsfindingImbalanceTraining a None:Performance_value .
+_:e2d34e3e9f365303ff2b26361d42c139 rdf:reifies <<( doc:FactsfindingImbalanceTraining rdf:type None:Performance_value )>> ;
+	prov:wasDerivedFrom doc:9ba762db92d1 .
+doc:Factsstudy1 schema1:author doc:FactspersonJisungKim .
+_:f93a04e2b614471ada9f415beb88db0c rdf:reifies <<( doc:Factsstudy1 schema1:author doc:FactspersonJisungKim )>> ;
+	prov:wasDerivedFrom doc:9ba762db92d1 .
+doc:FactspredictiveModel None:has_design_detail doc:FactsdesignDetail1 .
+_:a709ff710021440152184523cac5153a rdf:reifies <<( doc:FactspredictiveModel None:has_design_detail doc:FactsdesignDetail1 )>> ;
+	prov:wasDerivedFrom doc:9ba762db92d1 .
+doc:FactspersonJisungKim schema1:name "Hong-Sic Yun" .
+_:d7bccd37277b621f7f3a74dd40191f81 rdf:reifies <<( doc:FactspersonJisungKim schema1:name "Hong-Sic Yun" )>> ;
+	prov:wasDerivedFrom doc:9ba762db92d1 .
+doc:FactsmodelConfig None:describes_configuration doc:FactspredictiveModel .
+_:a0a8899f00870b35ea3edaad67e3c99a rdf:reifies <<( doc:FactsmodelConfig None:describes_configuration doc:FactspredictiveModel )>> ;
+	prov:wasDerivedFrom doc:9ba762db92d1 .
+doc:Factsstudy1 None:has_title doc:Factstitle1 .
+_:b52fc5dcd152b4488de9e4acb8a66ab4 rdf:reifies <<( doc:Factsstudy1 None:has_title doc:Factstitle1 )>> ;
+	prov:wasDerivedFrom doc:9ba762db92d1 .
+doc:FactstimexerEmbedding schema1:name "XGBoost (probabilistic classification)" .
+_:eff4d2c1e209019dad586bf77b980bba rdf:reifies <<( doc:FactstimexerEmbedding schema1:name "XGBoost (probabilistic classification)" )>> ;
+	prov:wasDerivedFrom doc:9ba762db92d1 .
+doc:FactspersonJisungKim schema1:email "issue7942@naver.com" .
+_:ae4b140da792659ff9f2c17d3f847d9c rdf:reifies <<( doc:FactspersonJisungKim schema1:email "issue7942@naver.com" )>> ;
+	prov:wasDerivedFrom doc:9ba762db92d1 .
+doc:Factsstudy1 dcterms:date "2026-04-16"^^<http://www.w3.org/2001/XMLSchema#date> .
+_:b5dd8cfc0aa6f7fa6a4fb8ea4798a1b1 rdf:reifies <<( doc:Factsstudy1 dcterms:date "2026-04-16"^^<http://www.w3.org/2001/XMLSchema#date> )>> ;
+	prov:wasDerivedFrom doc:9ba762db92d1 .
+doc:FactsperfValueEarlyWarning None:has_text_value "Early-warning utility concentrated in near-term horizons; predictive lead-time information decays for longer horizons." .
+_:d3057637f68cdbfed4207b14bc6a634e rdf:reifies <<( doc:FactsperfValueEarlyWarning None:has_text_value "Early-warning utility concentrated in near-term horizons; predictive lead-time information decays for longer horizons." )>> ;
+	prov:wasDerivedFrom doc:9ba762db92d1 .
+doc:FactsfindingImbalanceTraining cco:describes doc:FactspredictiveModel .
+_:fb54bfa88965b2d55dede126026b43d9 rdf:reifies <<( doc:FactsfindingImbalanceTraining cco:describes doc:FactspredictiveModel )>> ;
+	prov:wasDerivedFrom doc:9ba762db92d1 .
+doc:FactsperfValueEarlyWarning a None:Performance_indicator .
+_:d242c13040ccd9152303f408cde5e1b rdf:reifies <<( doc:FactsperfValueEarlyWarning rdf:type None:Performance_indicator )>> ;
+	prov:wasDerivedFrom doc:9ba762db92d1 .
+doc:FactspredictiveModel a None:Predictive_maintenance_model .
+_:d93fb18f3b3484310f443c055088ac15 rdf:reifies <<( doc:FactspredictiveModel rdf:type None:Predictive_maintenance_model )>> ;
+	prov:wasDerivedFrom doc:9ba762db92d1 .
+doc:FactsperfValueEarlyWarning a None:Performance_value .
+_:d2f563b4a07b42b362fea9b10495d368 rdf:reifies <<( doc:FactsperfValueEarlyWarning rdf:type None:Performance_value )>> ;
+	prov:wasDerivedFrom doc:9ba762db92d1 .
+doc:Factspubyear_2026 None:has_interger_value 2026 .
+_:b1b1d00db824454e03f62fd470ff94a4 rdf:reifies <<( doc:Factspubyear_2026 None:has_interger_value 2026 )>> ;
+	prov:wasDerivedFrom doc:9ba762db92d1 .
+doc:Factsstudy1 schema1:publisher doc:FactsorgMdpi .
+_:d561d783c53eae10f234c48f72166dc2 rdf:reifies <<( doc:Factsstudy1 schema1:publisher doc:FactsorgMdpi )>> ;
+	prov:wasDerivedFrom doc:9ba762db92d1 .
+doc:Factsstudy1 schema1:license "CC BY" .
+_:ea63820045b180cd50bd8c928a47fd1e rdf:reifies <<( doc:Factsstudy1 schema1:license "CC BY" )>> ;
+	prov:wasDerivedFrom doc:9ba762db92d1 .
+doc:FactsdesignDetail1 None:has_text_value "Modular prediction framework combining transformer-based TimeXer embeddings with probabilistic classification using XGBoost; operates on sliding-window sensor data; produces fault probabilities across multiple future horizons; aggregates probabilities into a single risk score; evaluates threshold-based alarm policies via systematic threshold sweep." .
+_:ad7cd7306b1d0af57ab51b71f9ee150e rdf:reifies <<( doc:FactsdesignDetail1 None:has_text_value "Modular prediction framework combining transformer-based TimeXer embeddings with probabilistic classification using XGBoost; operates on sliding-window sensor data; produces fault probabilities across multiple future horizons; aggregates probabilities into a single risk score; evaluates threshold-based alarm policies via systematic threshold sweep." )>> ;
+	prov:wasDerivedFrom doc:9ba762db92d1 .
+doc:FactstimexerEmbedding schema1:name "TimeXer embeddings (transformer-based)" .
+_:ce2ec9fe3736b700412fee5013900d9e rdf:reifies <<( doc:FactstimexerEmbedding schema1:name "TimeXer embeddings (transformer-based)" )>> ;
+	prov:wasDerivedFrom doc:9ba762db92d1 .
+doc:FactsdesignDetail1 obo:BFO_0000051 doc:FactsdesignDetail1 .
+_:b9261077baef2b4e34287fc02952f9fa rdf:reifies <<( doc:FactsdesignDetail1 obo:BFO_0000051 doc:FactsdesignDetail1 )>> ;
+	prov:wasDerivedFrom doc:9ba762db92d1 .
+doc:FactsorgSkkuniv schema1:address "Suwon 16419, Republic of Korea" .
+_:e0d35f68acc7ab3cc85740619362b905 rdf:reifies <<( doc:FactsorgSkkuniv schema1:address "Suwon 16419, Republic of Korea" )>> ;
+	prov:wasDerivedFrom doc:9ba762db92d1 .
+doc:FactsorgSkkuniv schema1:name "Department of Civil and Environmental Engineering, Sungkyunkwan University" .
+_:c01ce674e07d87f24f02d02521bb982b rdf:reifies <<( doc:FactsorgSkkuniv schema1:name "Department of Civil and Environmental Engineering, Sungkyunkwan University" )>> ;
+	prov:wasDerivedFrom doc:9ba762db92d1 .
+doc:Factstitle1 a None:Article_title .
+_:d8f3a0c4da525eebe65ef5fbc99e76b2 rdf:reifies <<( doc:Factstitle1 rdf:type None:Article_title )>> ;
+	prov:wasDerivedFrom doc:9ba762db92d1 .
+doc:Factspubyear_2026 a None:Publication_year .
+_:be2708e0c63d820253ae7024d6884d43 rdf:reifies <<( doc:Factspubyear_2026 rdf:type None:Publication_year )>> ;
+	prov:wasDerivedFrom doc:9ba762db92d1 .
+doc:FactsperfValueEarlyWarning cco:describes doc:FactspredictiveModel .
+_:a40d7cb272ba048a0c0597d54681ed28 rdf:reifies <<( doc:FactsperfValueEarlyWarning cco:describes doc:FactspredictiveModel )>> ;
+	prov:wasDerivedFrom doc:9ba762db92d1 .
+doc:FactspersonJisungKim schema1:name "Seung-Jun Lee" .
+_:dc411d559ef3b6d119461ec8f968151 rdf:reifies <<( doc:FactspersonJisungKim schema1:name "Seung-Jun Lee" )>> ;
+	prov:wasDerivedFrom doc:9ba762db92d1 .
+doc:05bd04c20fe4 a prov:Entity , schema:text ;
+	prov:generatedAtTime "2026-06-12T01:43:13.857707Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+	schema:position 1 ;
+	schema:identifier "05bd04c20fe4" .
+doc:FactsPowerMeasurement rdfs:label "AC-side output variable" .
+_:dbe5cfded1ace6afa1c73f950d985ef8 rdf:reifies <<( doc:FactsPowerMeasurement rdfs:label "AC-side output variable" )>> ;
+	prov:wasDerivedFrom doc:05bd04c20fe4 .
+doc:FactsPowerMeasurement a None:Data_variable .
+_:b084344fcc47ea6c91cf0611404121bd rdf:reifies <<( doc:FactsPowerMeasurement rdf:type None:Data_variable )>> ;
+	prov:wasDerivedFrom doc:05bd04c20fe4 .
+doc:FactsThermalFault doc:factsmanifestsThrough doc:FactsPowerMeasurement .
+_:d3c696cc9b018c02f56cde024b349589 rdf:reifies <<( doc:FactsThermalFault doc:factsmanifestsThrough doc:FactsPowerMeasurement )>> ;
+	prov:wasDerivedFrom doc:05bd04c20fe4 .
+doc:FactspredictiveModel None:has_predictive_maintenance_function None:Remaining_useful_life_estimation .
+_:b8f6da4eb62eb052b7c21b3551ce9aa4 rdf:reifies <<( doc:FactspredictiveModel None:has_predictive_maintenance_function None:Remaining_useful_life_estimation )>> ;
+	prov:wasDerivedFrom doc:05bd04c20fe4 .
+doc:FactsPvInverterConfigurationString rdfs:label "string configuration" .
+_:c0023e43fc27d12a15a9b6bea648c8fa rdf:reifies <<( doc:FactsPvInverterConfigurationString rdfs:label "string configuration" )>> ;
+	prov:wasDerivedFrom doc:05bd04c20fe4 .
+doc:FactsThermalFault a rdfs:Class .
+_:cf9a665882d0a8b316cd2ae57d4bcc34 rdf:reifies <<( doc:FactsThermalFault rdf:type rdfs:Class )>> ;
+	prov:wasDerivedFrom doc:05bd04c20fe4 .
+doc:FactsGridConnectedInverter schema:description "Converts direct current (DC) into alternating current (AC) and regulates interaction with the power grid." .
+_:d234d79ea27d5dd989dde61b2298650a rdf:reifies <<( doc:FactsGridConnectedInverter schema:description "Converts direct current (DC) into alternating current (AC) and regulates interaction with the power grid." )>> ;
+	prov:wasDerivedFrom doc:05bd04c20fe4 .
+doc:FactsThermalFault rdfs:label "thermal fault" .
+_:fa2b6488b83718da68b1859ba7dad8c6 rdf:reifies <<( doc:FactsThermalFault rdfs:label "thermal fault" )>> ;
+	prov:wasDerivedFrom doc:05bd04c20fe4 .
+doc:FactsThermalFault rdfs:subClassOf doc:FactsThermalFault .
+_:edb7cdedcd1b70181f8b4c969e024b9e rdf:reifies <<( doc:FactsThermalFault rdfs:subClassOf doc:FactsThermalFault )>> ;
+	prov:wasDerivedFrom doc:05bd04c20fe4 .
+doc:FactsPvMeasurementDataset doc:factscontainsMeasurement doc:FactsPowerMeasurement .
+_:b4cd751ba1aeac5792e4c02e7f89f240 rdf:reifies <<( doc:FactsPvMeasurementDataset doc:factscontainsMeasurement doc:FactsPowerMeasurement )>> ;
+	prov:wasDerivedFrom doc:05bd04c20fe4 .
+doc:FactsTemperatureMeasurement rdfs:label "temperature measurement" .
+_:c6368620d982145e5dd63581ec87117e rdf:reifies <<( doc:FactsTemperatureMeasurement rdfs:label "temperature measurement" )>> ;
+	prov:wasDerivedFrom doc:05bd04c20fe4 .
+doc:FactsGridConnectedInverter rdfs:label "Grid-connected inverter" .
+_:b7802f595562ace22433e1bcb18f99c6 rdf:reifies <<( doc:FactsGridConnectedInverter rdfs:label "Grid-connected inverter" )>> ;
+	prov:wasDerivedFrom doc:05bd04c20fe4 .
+doc:FactspvInverter a None:Maintainable_item .
+_:ab942a03200f0a9c12a5c5b9e63956ab rdf:reifies <<( doc:FactspvInverter rdf:type None:Maintainable_item )>> ;
+	prov:wasDerivedFrom doc:05bd04c20fe4 .
+doc:FactspredictiveModel None:has_design_detail doc:FactsDecisionLevelBehaviorConsideration .
+_:b27a1dcc0f898f916192369dfa18ff7b rdf:reifies <<( doc:FactspredictiveModel None:has_design_detail doc:FactsDecisionLevelBehaviorConsideration )>> ;
+	prov:wasDerivedFrom doc:05bd04c20fe4 .
+doc:factsmayCause a rdf:Property .
+_:c5c72624a07396e07014b5b029529529 rdf:reifies <<( doc:factsmayCause rdf:type rdf:Property )>> ;
+	prov:wasDerivedFrom doc:05bd04c20fe4 .
+doc:factscontainsMeasurement a rdf:Property .
+_:b55de700608febd4b281bf7bb289f8dc rdf:reifies <<( doc:factscontainsMeasurement rdf:type rdf:Property )>> ;
+	prov:wasDerivedFrom doc:05bd04c20fe4 .
+doc:FactsDecisionLevelBehaviorConsideration schema:description "Decision-level behavior must be explicitly considered when designing predictive maintenance systems under operational constraints." .
+_:a4e98e6432f23f1deb4a67fea4155572 rdf:reifies <<( doc:FactsDecisionLevelBehaviorConsideration schema:description "Decision-level behavior must be explicitly considered when designing predictive maintenance systems under operational constraints." )>> ;
+	prov:wasDerivedFrom doc:05bd04c20fe4 .
+doc:FactsTemperatureMeasurement a None:Data_variable .
+_:c1c88b1dd83a043cb874777fbc6ec2b2 rdf:reifies <<( doc:FactsTemperatureMeasurement rdf:type None:Data_variable )>> ;
+	prov:wasDerivedFrom doc:05bd04c20fe4 .
+doc:FactspvInverter doc:factshasConfiguration doc:FactsPvInverterConfigurationString .
+_:c391e48e49074ba1741dda1f7a98d698 rdf:reifies <<( doc:FactspvInverter doc:factshasConfiguration doc:FactsPvInverterConfigurationString )>> ;
+	prov:wasDerivedFrom doc:05bd04c20fe4 .
+doc:FactsSafetyRisk rdfs:label "safety risk" .
+_:af963d123791063afe3b02fb988aad6e rdf:reifies <<( doc:FactsSafetyRisk rdfs:label "safety risk" )>> ;
+	prov:wasDerivedFrom doc:05bd04c20fe4 .
+doc:FactsDecisionLevelBehaviorConsideration rdfs:label "Decision-level behavior consideration" .
+_:af6c68dda44830c9fc9ab053e34c83c rdf:reifies <<( doc:FactsDecisionLevelBehaviorConsideration rdfs:label "Decision-level behavior consideration" )>> ;
+	prov:wasDerivedFrom doc:05bd04c20fe4 .
+doc:FactsPvInverterConfigurationString rdfs:label "module-level configuration" .
+_:b31d42f63152116c7cece75fd37c5f29 rdf:reifies <<( doc:FactsPvInverterConfigurationString rdfs:label "module-level configuration" )>> ;
+	prov:wasDerivedFrom doc:05bd04c20fe4 .
+doc:factshasConfiguration a rdf:Property .
+_:f274a2a9a78b2004f15901d8576d5da7 rdf:reifies <<( doc:factshasConfiguration rdf:type rdf:Property )>> ;
+	prov:wasDerivedFrom doc:05bd04c20fe4 .
+doc:FactsThermalFault doc:factsmanifestsThrough doc:FactsTemperatureMeasurement .
+_:addbcc4ee26c97908abed35e08dcf36 rdf:reifies <<( doc:FactsThermalFault doc:factsmanifestsThrough doc:FactsTemperatureMeasurement )>> ;
+	prov:wasDerivedFrom doc:05bd04c20fe4 .
+doc:FactsPvInverterConfigurationString a rdfs:Class .
+_:bc8b8a242fb208551ce4067515e205ea rdf:reifies <<( doc:FactsPvInverterConfigurationString rdf:type rdfs:Class )>> ;
+	prov:wasDerivedFrom doc:05bd04c20fe4 .
+_:b7e3e7471e1f0dca9dfb089b269d842d prov:wasDerivedFrom doc:05bd04c20fe4 .
+doc:FactsEnergyYieldLoss rdfs:label "energy yield loss" .
+_:d14583ea9edf40bb016251a65263a66a rdf:reifies <<( doc:FactsEnergyYieldLoss rdfs:label "energy yield loss" )>> ;
+	prov:wasDerivedFrom doc:05bd04c20fe4 .
+doc:FactsPvMeasurementDataset a cco:Database .
+_:e0f41d1306112776de2484dc12d5cda2 rdf:reifies <<( doc:FactsPvMeasurementDataset rdf:type cco:Database )>> ;
+	prov:wasDerivedFrom doc:05bd04c20fe4 .
+_:a2c7084d9d06d788b9a203b9d66cc908 prov:wasDerivedFrom doc:05bd04c20fe4 .
+doc:FactsUnplannedDowntime rdfs:label "unplanned downtime" .
+_:f8990fd00e9ec6ac5f631625b9ff2283 rdf:reifies <<( doc:FactsUnplannedDowntime rdfs:label "unplanned downtime" )>> ;
+	prov:wasDerivedFrom doc:05bd04c20fe4 .
+doc:FactsPowerMeasurement rdfs:label "grid-related indicator" .
+_:cc71426ba475e978fba73942b878b9b9 rdf:reifies <<( doc:FactsPowerMeasurement rdfs:label "grid-related indicator" )>> ;
+	prov:wasDerivedFrom doc:05bd04c20fe4 .
+doc:FactsPvMeasurementDataset doc:factscontainsMeasurement doc:FactsTemperatureMeasurement .
+_:ce3e5274388da964e45cf1f4412399d9 rdf:reifies <<( doc:FactsPvMeasurementDataset doc:factscontainsMeasurement doc:FactsTemperatureMeasurement )>> ;
+	prov:wasDerivedFrom doc:05bd04c20fe4 .
+doc:FactsPowerMeasurement rdfs:label "power measurement" .
+_:ddd8ecb8daf778059b93854f126deaae rdf:reifies <<( doc:FactsPowerMeasurement rdfs:label "power measurement" )>> ;
+	prov:wasDerivedFrom doc:05bd04c20fe4 .
+doc:FactsGridConnectedInverter a None:Maintainable_item .
+_:dfee73282d7a621ebb9a890a1e7d6a4d rdf:reifies <<( doc:FactsGridConnectedInverter rdf:type None:Maintainable_item )>> ;
+	prov:wasDerivedFrom doc:05bd04c20fe4 .
+doc:FactsThermalFault rdfs:label "control-related fault" .
+_:aa9593a5aca8c26327862c237b3312b2 rdf:reifies <<( doc:FactsThermalFault rdfs:label "control-related fault" )>> ;
+	prov:wasDerivedFrom doc:05bd04c20fe4 .
+doc:factscontainsMeasurement rdfs:label "contains measurement" .
+_:adf0132ef26e95c842045d3254082674 rdf:reifies <<( doc:factscontainsMeasurement rdfs:label "contains measurement" )>> ;
+	prov:wasDerivedFrom doc:05bd04c20fe4 .
+doc:FactsThermalFault doc:factsmayCause doc:FactsEnergyYieldLoss .
+_:ad8b0c5456d963f66540558f4b5a3d34 rdf:reifies <<( doc:FactsThermalFault doc:factsmayCause doc:FactsEnergyYieldLoss )>> ;
+	prov:wasDerivedFrom doc:05bd04c20fe4 .
+doc:FactsPowerMeasurement rdfs:label "current measurement" .
+_:e97b6776de96e09685b92a8afd61b9c2 rdf:reifies <<( doc:FactsPowerMeasurement rdfs:label "current measurement" )>> ;
+	prov:wasDerivedFrom doc:05bd04c20fe4 .
+doc:FactsPvInverterConfigurationString rdfs:label "central configuration" .
+_:cc2be4034108b4532042200efa2cf915 rdf:reifies <<( doc:FactsPvInverterConfigurationString rdfs:label "central configuration" )>> ;
+	prov:wasDerivedFrom doc:05bd04c20fe4 .
+doc:FactsPvMeasurementDataset doc:factscontainsMeasurement doc:FactsOperatingStateVariable .
+_:ebc9998d314e2b33f8f03ed7d9c3829a rdf:reifies <<( doc:FactsPvMeasurementDataset doc:factscontainsMeasurement doc:FactsOperatingStateVariable )>> ;
+	prov:wasDerivedFrom doc:05bd04c20fe4 .
+doc:FactsThermalFault doc:factsmayCause doc:FactsUnplannedDowntime .
+_:ef7fa1bcae1926b54eee0b201c65059a rdf:reifies <<( doc:FactsThermalFault doc:factsmayCause doc:FactsUnplannedDowntime )>> ;
+	prov:wasDerivedFrom doc:05bd04c20fe4 .
+doc:FactsPowerMeasurement rdfs:label "DC-side measurement" .
+_:d093ff04c551fe94cf746e4a5f6297b6 rdf:reifies <<( doc:FactsPowerMeasurement rdfs:label "DC-side measurement" )>> ;
+	prov:wasDerivedFrom doc:05bd04c20fe4 .
+doc:FactsOperatingStateVariable a None:Data_variable .
+_:e823705ecd57e7c202cd539892495f96 rdf:reifies <<( doc:FactsOperatingStateVariable rdf:type None:Data_variable )>> ;
+	prov:wasDerivedFrom doc:05bd04c20fe4 .
+doc:FactspredictiveModel rdfs:label "PV inverter predictive maintenance system module" .
+_:d93275c9b4e45b34dfdfb10e40c8dfca rdf:reifies <<( doc:FactspredictiveModel rdfs:label "PV inverter predictive maintenance system module" )>> ;
+	prov:wasDerivedFrom doc:05bd04c20fe4 .
+doc:factsmayCause rdfs:label "may cause" .
+_:b3342bd16831092957ae9ac03d6be32d rdf:reifies <<( doc:factsmayCause rdfs:label "may cause" )>> ;
+	prov:wasDerivedFrom doc:05bd04c20fe4 .
+doc:factshasConfiguration rdfs:label "has configuration" .
+_:ce62961aa2889aec5305e8d2a4aa9cc8 rdf:reifies <<( doc:factshasConfiguration rdfs:label "has configuration" )>> ;
+	prov:wasDerivedFrom doc:05bd04c20fe4 .
+doc:FactsThermalFault doc:factsmayCause doc:FactsSafetyRisk .
+_:b41a027be172f2865b3ea63817a06503 rdf:reifies <<( doc:FactsThermalFault doc:factsmayCause doc:FactsSafetyRisk )>> ;
+	prov:wasDerivedFrom doc:05bd04c20fe4 .
+doc:FactsThermalFault rdfs:label "grid-interaction-related fault" .
+_:c953570e324a4b0204fd8c19b5bc2b78 rdf:reifies <<( doc:FactsThermalFault rdfs:label "grid-interaction-related fault" )>> ;
+	prov:wasDerivedFrom doc:05bd04c20fe4 .
+doc:FactspredictiveModel None:has_predictive_maintenance_function None:Fault_detection .
+_:a9d2ea461eb8722a43da76c634222771 rdf:reifies <<( doc:FactspredictiveModel None:has_predictive_maintenance_function None:Fault_detection )>> ;
+	prov:wasDerivedFrom doc:05bd04c20fe4 .
+doc:FactspredictiveModel None:has_predictive_maintenance_function None:Multiple_steps_future_state_forecast .
+_:b8c3e5b663d483f9889ae42ee565076b rdf:reifies <<( doc:FactspredictiveModel None:has_predictive_maintenance_function None:Multiple_steps_future_state_forecast )>> ;
+	prov:wasDerivedFrom doc:05bd04c20fe4 .
+doc:FactsPowerMeasurement rdfs:label "grid-related telemetry measurement" .
+_:ebd7bdcdb0b9b944eb6e52e6fee8b495 rdf:reifies <<( doc:FactsPowerMeasurement rdfs:label "grid-related telemetry measurement" )>> ;
+	prov:wasDerivedFrom doc:05bd04c20fe4 .
+doc:FactspvInverter rdfs:label "Photovoltaic inverter" .
+_:b2379ee5f61be467516817e9dfa29710 rdf:reifies <<( doc:FactspvInverter rdfs:label "Photovoltaic inverter" )>> ;
+	prov:wasDerivedFrom doc:05bd04c20fe4 .
+doc:FactsThermalFault rdfs:label "inverter fault" .
+_:e01dddccbb81e45109f2886a748876a7 rdf:reifies <<( doc:FactsThermalFault rdfs:label "inverter fault" )>> ;
+	prov:wasDerivedFrom doc:05bd04c20fe4 .
+doc:FactsUnplannedDowntime a rdfs:Class .
+_:a954649119cc47c6dab48de2fb86c74f rdf:reifies <<( doc:FactsUnplannedDowntime rdf:type rdfs:Class )>> ;
+	prov:wasDerivedFrom doc:05bd04c20fe4 .
+doc:FactsEnergyYieldLoss a rdfs:Class .
+_:cb209a43f4b15ea252d9db7ef4c46d52 rdf:reifies <<( doc:FactsEnergyYieldLoss rdf:type rdfs:Class )>> ;
+	prov:wasDerivedFrom doc:05bd04c20fe4 .
+doc:FactsDecisionLevelBehaviorConsideration a None:Design_detail .
+_:f87f586fe61e63c768c021cef19be424 rdf:reifies <<( doc:FactsDecisionLevelBehaviorConsideration rdf:type None:Design_detail )>> ;
+	prov:wasDerivedFrom doc:05bd04c20fe4 .
+doc:FactsPvMeasurementDataset rdfs:label "PV inverter measurement dataset" .
+_:cd21cd8ba9c20da1bed9f21ce2f04084 rdf:reifies <<( doc:FactsPvMeasurementDataset rdfs:label "PV inverter measurement dataset" )>> ;
+	prov:wasDerivedFrom doc:05bd04c20fe4 .
+doc:FactsSafetyRisk a rdfs:Class .
+_:a395560fcca76da59f7e52e4afec60a0 rdf:reifies <<( doc:FactsSafetyRisk rdf:type rdfs:Class )>> ;
+	prov:wasDerivedFrom doc:05bd04c20fe4 .
+doc:FactsThermalFault rdfs:label "electrical fault" .
+_:b7c89a681be7a6e6bade97ded27fee0f rdf:reifies <<( doc:FactsThermalFault rdfs:label "electrical fault" )>> ;
+	prov:wasDerivedFrom doc:05bd04c20fe4 .
+doc:FactsoneStep rdfs:label "multi-horizon forecasting" .
+_:f4366befc7db20664967786dbc21ed24 rdf:reifies <<( doc:FactsoneStep rdfs:label "multi-horizon forecasting" )>> ;
+	prov:wasDerivedFrom doc:05bd04c20fe4 .
+doc:factsmanifestsThrough rdfs:label "manifests through" .
+_:aa77b55b19be404ca32bf00366c30a01 rdf:reifies <<( doc:factsmanifestsThrough rdfs:label "manifests through" )>> ;
+	prov:wasDerivedFrom doc:05bd04c20fe4 .
+doc:FactsPowerMeasurement rdfs:label "voltage measurement" .
+_:e6889ab9594bcd763c773ae41e28a381 rdf:reifies <<( doc:FactsPowerMeasurement rdfs:label "voltage measurement" )>> ;
+	prov:wasDerivedFrom doc:05bd04c20fe4 .
+doc:FactsOperatingStateVariable rdfs:label "operating-state variable" .
+_:f3bae8eced2180a011eb03142cc526e7 rdf:reifies <<( doc:FactsOperatingStateVariable rdfs:label "operating-state variable" )>> ;
+	prov:wasDerivedFrom doc:05bd04c20fe4 .
+doc:factsmanifestsThrough a rdf:Property .
+_:f02c47304535d268dfd65b3b0ab1daf1 rdf:reifies <<( doc:factsmanifestsThrough rdf:type rdf:Property )>> ;
+	prov:wasDerivedFrom doc:05bd04c20fe4 .
+doc:5e9d70352c5d a prov:Entity , schema:text ;
+	prov:generatedAtTime "2026-06-12T01:43:13.862711Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+	schema:position 2 ;
+	schema:identifier "5e9d70352c5d" .
+_:b52fc5dcd152b4488de9e4acb8a66ab4 prov:wasDerivedFrom doc:5e9d70352c5d .
+doc:FactsmodelConfig cco:is_about doc:FactspredictiveModel .
+_:cd2a423f85049311ec90ecbea1ea0615 rdf:reifies <<( doc:FactsmodelConfig cco:is_about doc:FactspredictiveModel )>> ;
+	prov:wasDerivedFrom doc:5e9d70352c5d .
+_:d8f3a0c4da525eebe65ef5fbc99e76b2 prov:wasDerivedFrom doc:5e9d70352c5d .
+doc:FactsslidingWindow a None:Data_variable .
+_:ab5f9fbbf869d2c074f17a1651a28bd2 rdf:reifies <<( doc:FactsslidingWindow rdf:type None:Data_variable )>> ;
+	prov:wasDerivedFrom doc:5e9d70352c5d .
+doc:Factstitle1 None:has_text_value "Multi-horizon fault prediction for PV inverters from an operational perspective" .
+_:a6d5d778f1fa2196b256b76e1d41b6ee rdf:reifies <<( doc:Factstitle1 None:has_text_value "Multi-horizon fault prediction for PV inverters from an operational perspective" )>> ;
+	prov:wasDerivedFrom doc:5e9d70352c5d .
+doc:FactsonlineSync a None:Module_synchronization .
+_:faabd25f07273db8bd74b9ebef3342e8 rdf:reifies <<( doc:FactsonlineSync rdf:type None:Module_synchronization )>> ;
+	prov:wasDerivedFrom doc:5e9d70352c5d .
+doc:FactspredictiveModel None:has_synchronization doc:FactsonlineSync .
+_:ffcd05280d85395c56899531ec225d67 rdf:reifies <<( doc:FactspredictiveModel None:has_synchronization doc:FactsonlineSync )>> ;
+	prov:wasDerivedFrom doc:5e9d70352c5d .
+doc:FactsdesignDetail1 None:has_text_value "Uses transformer-based TimeXer embeddings with XGBoost probabilistic classification on sliding-window sensor data to produce fault probabilities across multiple future horizons; outputs are converted to alarm decisions balancing early detection and false-alarm burden" .
+_:d7ba41dc8ff00401fdc72b5db70ba4b5 rdf:reifies <<( doc:FactsdesignDetail1 None:has_text_value "Uses transformer-based TimeXer embeddings with XGBoost probabilistic classification on sliding-window sensor data to produce fault probabilities across multiple future horizons; outputs are converted to alarm decisions balancing early detection and false-alarm burden" )>> ;
+	prov:wasDerivedFrom doc:5e9d70352c5d .
+doc:FactspredictiveModel None:describes_type doc:FactsXgBoost .
+_:b06799c231f32583113e8f5a9b1ae9f8 rdf:reifies <<( doc:FactspredictiveModel None:describes_type doc:FactsXgBoost )>> ;
+	prov:wasDerivedFrom doc:5e9d70352c5d .
+_:bc8eb122b86b15732306e654f2422cc4 prov:wasDerivedFrom doc:5e9d70352c5d .
+_:a2c7084d9d06d788b9a203b9d66cc908 prov:wasDerivedFrom doc:5e9d70352c5d .
+doc:FactspredictiveModel cco:is_about doc:FactsslidingWindow .
+_:b3c5baab1ffb48693c55f004125aa3e0 rdf:reifies <<( doc:FactspredictiveModel cco:is_about doc:FactsslidingWindow )>> ;
+	prov:wasDerivedFrom doc:5e9d70352c5d .
+_:d93fb18f3b3484310f443c055088ac15 prov:wasDerivedFrom doc:5e9d70352c5d .
+doc:FactsonlineSync None:has_text_value "online (real-time inference)" .
+_:eeacc036e7df5dabec31dce182b05b3f rdf:reifies <<( doc:FactsonlineSync None:has_text_value "online (real-time inference)" )>> ;
+	prov:wasDerivedFrom doc:5e9d70352c5d .
+_:b7e3e7471e1f0dca9dfb089b269d842d prov:wasDerivedFrom doc:5e9d70352c5d .
+doc:FactspredictiveModel cco:is_about doc:FactspvInverter .
+_:fd4770035beb0403d91a3cbc5eaf8ccc rdf:reifies <<( doc:FactspredictiveModel cco:is_about doc:FactspvInverter )>> ;
+	prov:wasDerivedFrom doc:5e9d70352c5d .
+doc:FactstimeXer a cco:Algorithm .
+_:a9b1aee00034d29e8a62b64eb95e876 rdf:reifies <<( doc:FactstimeXer rdf:type cco:Algorithm )>> ;
+	prov:wasDerivedFrom doc:5e9d70352c5d .
+doc:FactspredictiveModel None:describes_type doc:FactstimeXer .
+_:f97947933cf29e9575391d7d9e34d796 rdf:reifies <<( doc:FactspredictiveModel None:describes_type doc:FactstimeXer )>> ;
+	prov:wasDerivedFrom doc:5e9d70352c5d .
+_:b8c3e5b663d483f9889ae42ee565076b prov:wasDerivedFrom doc:5e9d70352c5d .
+_:a0a8899f00870b35ea3edaad67e3c99a prov:wasDerivedFrom doc:5e9d70352c5d .
+_:cce45a1b45222947ac26abaa687381fe prov:wasDerivedFrom doc:5e9d70352c5d .
+doc:FactsXgBoost a cco:Algorithm .
+_:b63c182e263533275cad786517d9d68c rdf:reifies <<( doc:FactsXgBoost rdf:type cco:Algorithm )>> ;
+	prov:wasDerivedFrom doc:5e9d70352c5d .
+_:ab942a03200f0a9c12a5c5b9e63956ab prov:wasDerivedFrom doc:5e9d70352c5d .
+doc:FactspredictiveModel None:has_predictive_maintenance_function None:Future_state_forecast .
+_:ee9c0877be7f2e2a4b6822755afad24d rdf:reifies <<( doc:FactspredictiveModel None:has_predictive_maintenance_function None:Future_state_forecast )>> ;
+	prov:wasDerivedFrom doc:5e9d70352c5d .
+_:d2e3522459ff91d80b3ed03bbd437012 prov:wasDerivedFrom doc:5e9d70352c5d .
+doc:FactsoneStep a None:One_step_future_state_forecast .
+_:ad56517284de355bd1188e6686aa6b06 rdf:reifies <<( doc:FactsoneStep rdf:type None:One_step_future_state_forecast )>> ;
+	prov:wasDerivedFrom doc:5e9d70352c5d .
+_:a709ff710021440152184523cac5153a prov:wasDerivedFrom doc:5e9d70352c5d .
+doc:Factsstudy1 cco:is_about doc:FactspredictiveModel .
+_:e6c6854ddadcc142f5064765fd047e7c rdf:reifies <<( doc:Factsstudy1 cco:is_about doc:FactspredictiveModel )>> ;
+	prov:wasDerivedFrom doc:5e9d70352c5d .

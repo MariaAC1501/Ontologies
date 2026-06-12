@@ -1,0 +1,526 @@
+@prefix None: <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD/seed#> .
+@prefix cco: <http://www.ontologyrepository.com/CommonCoreOntologies/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doc: <https://growgraph.dev/doc/fa4fa2d69a6d/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix obo: <http://purl.obolibrary.org/obo/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix schema: <https://schema.org/> .
+@prefix schema1: <http://schema.org/> .
+doc:33bc353df16d a prov:Entity , schema:text ;
+	prov:generatedAtTime "2026-06-12T06:29:33.97624Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+	schema:position 0 ;
+	schema:identifier "33bc353df16d" .
+doc:Factsperson2 a schema1:Person .
+_:f5c6d4fd121e26076c854f3af2cec1f8 rdf:reifies <<( doc:Factsperson2 rdf:type schema1:Person )>> ;
+	prov:wasDerivedFrom doc:33bc353df16d .
+doc:Factsorg1_1 a schema1:Organization .
+_:d3384b49bd8e8cb6ae49d049c887c36b rdf:reifies <<( doc:Factsorg1_1 rdf:type schema1:Organization )>> ;
+	prov:wasDerivedFrom doc:33bc353df16d .
+doc:Factsdataset1 schema1:about doc:Factsigbt1 .
+_:e8f63b108f6dc363a1b683ddc859c5a2 rdf:reifies <<( doc:Factsdataset1 schema1:about doc:Factsigbt1 )>> ;
+	prov:wasDerivedFrom doc:33bc353df16d .
+doc:Factsperson2 schema1:affiliation doc:Factsorg1_1 .
+_:ae7be22abd7bac956f2c4fb835c651f2 rdf:reifies <<( doc:Factsperson2 schema1:affiliation doc:Factsorg1_1 )>> ;
+	prov:wasDerivedFrom doc:33bc353df16d .
+doc:Factstitle1_7 a None:Article_title .
+_:ef0074933793f11509a9b96a4590d532 rdf:reifies <<( doc:Factstitle1_7 rdf:type None:Article_title )>> ;
+	prov:wasDerivedFrom doc:33bc353df16d .
+doc:Factsperf_val1 cco:describes doc:Factsperf_ind1 .
+_:e33e10a72ecffce00752042c92d51ee2 rdf:reifies <<( doc:Factsperf_val1 cco:describes doc:Factsperf_ind1 )>> ;
+	prov:wasDerivedFrom doc:33bc353df16d .
+doc:Factsconfig1_3 None:describes_configuration doc:FactsPinnModel .
+_:d9aec5528e8c4742f5c6ac5ad73a478e rdf:reifies <<( doc:Factsconfig1_3 None:describes_configuration doc:FactsPinnModel )>> ;
+	prov:wasDerivedFrom doc:33bc353df16d .
+doc:FactsEgnood None:has_design_detail doc:Factsdesign1_1 .
+_:c82bbb1a7730d8cca81a92f0789ffd1e rdf:reifies <<( doc:FactsEgnood None:has_design_detail doc:Factsdesign1_1 )>> ;
+	prov:wasDerivedFrom doc:33bc353df16d .
+doc:FactsEgnood None:describes_type doc:FactsPinnModel .
+_:bc9ce0bc37c8d2e24d489e7411091518 rdf:reifies <<( doc:FactsEgnood None:describes_type doc:FactsPinnModel )>> ;
+	prov:wasDerivedFrom doc:33bc353df16d .
+doc:FactsPinnModel a None:Predictive_maintenance_model .
+_:eb01b709c26ea1ae33c48ae3eaa7f354 rdf:reifies <<( doc:FactsPinnModel rdf:type None:Predictive_maintenance_model )>> ;
+	prov:wasDerivedFrom doc:33bc353df16d .
+doc:FactsEgnood a None:Predictive_maintenance_system_module .
+_:eeac4e7de96d794f78d9980c1753410d rdf:reifies <<( doc:FactsEgnood rdf:type None:Predictive_maintenance_system_module )>> ;
+	prov:wasDerivedFrom doc:33bc353df16d .
+doc:Factsarticle1_14 a None:Predictive_Maintenance_Article .
+_:db8685c630e9cd0480403ae8f859f553 rdf:reifies <<( doc:Factsarticle1_14 rdf:type None:Predictive_Maintenance_Article )>> ;
+	prov:wasDerivedFrom doc:33bc353df16d .
+doc:Factsclaim1 rdfs:label "Validation claim: method reduces RUL error to 27.2% of LSTM and achieves online update time < 800 ms/cycle" .
+_:b5c48390ee12ebd2668f977eade1465b rdf:reifies <<( doc:Factsclaim1 rdfs:label "Validation claim: method reduces RUL error to 27.2% of LSTM and achieves online update time < 800 ms/cycle" )>> ;
+	prov:wasDerivedFrom doc:33bc353df16d .
+doc:Factsconfig1_3 a None:Model_configuration .
+_:fd5fde18fefd110dbe701b355797ae82 rdf:reifies <<( doc:Factsconfig1_3 rdf:type None:Model_configuration )>> ;
+	prov:wasDerivedFrom doc:33bc353df16d .
+doc:Factssync1 a None:Module_synchronization .
+_:ea323532e741dc94de454966b271fb69 rdf:reifies <<( doc:Factssync1 rdf:type None:Module_synchronization )>> ;
+	prov:wasDerivedFrom doc:33bc353df16d .
+doc:Factsdataset1 a schema1:Dataset .
+_:b10e0f7befc07e94cef382e9d1d4c943 rdf:reifies <<( doc:Factsdataset1 rdf:type schema1:Dataset )>> ;
+	prov:wasDerivedFrom doc:33bc353df16d .
+doc:Factsdesign1_1 None:has_text_value "Online Physics-Informed Neural Network (PINN) framework integrated with continual learning to adapt dynamically to new degradation patterns" .
+_:e3bb222e31742d8285b645ff19641df8 rdf:reifies <<( doc:Factsdesign1_1 None:has_text_value "Online Physics-Informed Neural Network (PINN) framework integrated with continual learning to adapt dynamically to new degradation patterns" )>> ;
+	prov:wasDerivedFrom doc:33bc353df16d .
+doc:Factsperf_val1 None:has_text_value 27.2 .
+_:f671f16dc226056ff0e6e0b2a5af56e6 rdf:reifies <<( doc:Factsperf_val1 None:has_text_value 27.2 )>> ;
+	prov:wasDerivedFrom doc:33bc353df16d .
+doc:Factsperf_ind1 a None:Performance_indicator .
+_:d6e94011dc79c65ab6004aaab5140006 rdf:reifies <<( doc:Factsperf_ind1 rdf:type None:Performance_indicator )>> ;
+	prov:wasDerivedFrom doc:33bc353df16d .
+doc:Factsperf_val1 rdfs:label "27.2% of traditional LSTM model error" .
+_:f0165a307ba35a00cacd5c76cfd32970 rdf:reifies <<( doc:Factsperf_val1 rdfs:label "27.2% of traditional LSTM model error" )>> ;
+	prov:wasDerivedFrom doc:33bc353df16d .
+doc:Factsclaim1 a cco:InformationProcessingArtifact .
+_:b103695a0a4ed7093a6fb7d67a25bfb6 rdf:reifies <<( doc:Factsclaim1 rdf:type cco:InformationProcessingArtifact )>> ;
+	prov:wasDerivedFrom doc:33bc353df16d .
+doc:Factsclaim1 schema1:about doc:Factsdataset1 .
+_:e63139fbd710772c3aba9c9b43973462 rdf:reifies <<( doc:Factsclaim1 schema1:about doc:Factsdataset1 )>> ;
+	prov:wasDerivedFrom doc:33bc353df16d .
+doc:FactsEgnood None:has_predictive_maintenance_function None:Remaining_useful_life_estimation .
+_:dbe313e51679581d8e86bf120a4ac484 rdf:reifies <<( doc:FactsEgnood None:has_predictive_maintenance_function None:Remaining_useful_life_estimation )>> ;
+	prov:wasDerivedFrom doc:33bc353df16d .
+doc:Factsarticle1_14 schema1:author doc:Factsperson2 .
+_:cf7a8d68b7109350c91f0cd263a9309e rdf:reifies <<( doc:Factsarticle1_14 schema1:author doc:Factsperson2 )>> ;
+	prov:wasDerivedFrom doc:33bc353df16d .
+doc:Factsdesign1_1 None:has_text_value "online update time upper bound in milliseconds per cycle (< 800 ms/cycle)" .
+_:b67b5ac1d6fad72517d743c0903c3aa1 rdf:reifies <<( doc:Factsdesign1_1 None:has_text_value "online update time upper bound in milliseconds per cycle (< 800 ms/cycle)" )>> ;
+	prov:wasDerivedFrom doc:33bc353df16d .
+doc:Factssync1 None:has_text_value "online" .
+_:c082f9bd4e5c4ecddfdf17c86006ea4f rdf:reifies <<( doc:Factssync1 None:has_text_value "online" )>> ;
+	prov:wasDerivedFrom doc:33bc353df16d .
+doc:Factsclaim1 schema1:about doc:FactsPinnModel .
+_:bd9bb41d775d474cde39a3f9732bb49f rdf:reifies <<( doc:Factsclaim1 schema1:about doc:FactsPinnModel )>> ;
+	prov:wasDerivedFrom doc:33bc353df16d .
+doc:Factsperf_val1 a None:Performance_value .
+_:b681837b383e9131dc0a49981ff01cb5 rdf:reifies <<( doc:Factsperf_val1 rdf:type None:Performance_value )>> ;
+	prov:wasDerivedFrom doc:33bc353df16d .
+doc:Factsorg1_1 rdfs:label "Beijing Aerospace Automatic Control Institute" .
+_:a6ba97af0ee18d1596125673341f0a94 rdf:reifies <<( doc:Factsorg1_1 rdfs:label "Beijing Aerospace Automatic Control Institute" )>> ;
+	prov:wasDerivedFrom doc:33bc353df16d .
+doc:Factsperson2 rdfs:label "Feng Han" .
+_:d0513f6b95c6f66644d7a03d0c82b05 rdf:reifies <<( doc:Factsperson2 rdfs:label "Feng Han" )>> ;
+	prov:wasDerivedFrom doc:33bc353df16d .
+doc:Factsperson2 schema1:email "3120225045@bit.edu.cn" .
+_:b06405083ef172c1bca7c9996c20276a rdf:reifies <<( doc:Factsperson2 schema1:email "3120225045@bit.edu.cn" )>> ;
+	prov:wasDerivedFrom doc:33bc353df16d .
+doc:Factsorg1_1 rdfs:label "School of Aerospace Engineering, Beijing Institution of Technology" .
+_:a4a4c8a180df39486727bef0697a488c rdf:reifies <<( doc:Factsorg1_1 rdfs:label "School of Aerospace Engineering, Beijing Institution of Technology" )>> ;
+	prov:wasDerivedFrom doc:33bc353df16d .
+doc:FactsEgnood None:has_synchronization doc:Factssync1 .
+_:f915fc144e16e6d3315814437617a86a rdf:reifies <<( doc:FactsEgnood None:has_synchronization doc:Factssync1 )>> ;
+	prov:wasDerivedFrom doc:33bc353df16d .
+doc:Factsdesign1_1 None:has_interger_value 800 .
+_:d4f841e4af662e2a2f51a39f568b1c64 rdf:reifies <<( doc:Factsdesign1_1 None:has_interger_value 800 )>> ;
+	prov:wasDerivedFrom doc:33bc353df16d .
+doc:Factsarticle1_14 None:has_title doc:Factstitle1_7 .
+_:f733b96e169cb943f047201a7825abfe rdf:reifies <<( doc:Factsarticle1_14 None:has_title doc:Factstitle1_7 )>> ;
+	prov:wasDerivedFrom doc:33bc353df16d .
+doc:Factsigbt1 a None:Maintainable_item .
+_:df8a11d8d4718cbbadbfba38faeb7772 rdf:reifies <<( doc:Factsigbt1 rdf:type None:Maintainable_item )>> ;
+	prov:wasDerivedFrom doc:33bc353df16d .
+doc:Factsdesign1_1 a None:Design_detail .
+_:fc8c5d5b2fb9f9da96ce10340fbd888a rdf:reifies <<( doc:Factsdesign1_1 rdf:type None:Design_detail )>> ;
+	prov:wasDerivedFrom doc:33bc353df16d .
+doc:Factsarticle1_14 schema1:mentions doc:Factsperf_val1 .
+_:edc8a634c5694d541ad8325306254b8a rdf:reifies <<( doc:Factsarticle1_14 schema1:mentions doc:Factsperf_val1 )>> ;
+	prov:wasDerivedFrom doc:33bc353df16d .
+doc:Factstitle1_7 None:has_text_value "Prediction of remaining useful life for electronic equipment based on online PINN" .
+_:c0368da6102c04bd1ee32f7f15b2266f rdf:reifies <<( doc:Factstitle1_7 None:has_text_value "Prediction of remaining useful life for electronic equipment based on online PINN" )>> ;
+	prov:wasDerivedFrom doc:33bc353df16d .
+doc:Factsdataset1 rdfs:label "NASA IGBT dataset" .
+_:bf657f8b8f014e89d9de0076087c7f00 rdf:reifies <<( doc:Factsdataset1 rdfs:label "NASA IGBT dataset" )>> ;
+	prov:wasDerivedFrom doc:33bc353df16d .
+doc:Factsarticle1_14 schema1:about doc:Factsdataset1 .
+_:e08bc966283f7fe8b92fd293cb62240e rdf:reifies <<( doc:Factsarticle1_14 schema1:about doc:Factsdataset1 )>> ;
+	prov:wasDerivedFrom doc:33bc353df16d .
+doc:Factsperson2 rdfs:label "Bo Mo" .
+_:b5d8672e27d040356c3dbdd215f6b978 rdf:reifies <<( doc:Factsperson2 rdfs:label "Bo Mo" )>> ;
+	prov:wasDerivedFrom doc:33bc353df16d .
+doc:Factsigbt1 rdfs:label "Insulated Gate Bipolar Transistor (IGBT)" .
+_:b6f1ea9087a16ddbf653991dcf35de60 rdf:reifies <<( doc:Factsigbt1 rdfs:label "Insulated Gate Bipolar Transistor (IGBT)" )>> ;
+	prov:wasDerivedFrom doc:33bc353df16d .
+doc:Factsperf_ind1 None:has_text_value "RUL prediction error relative to traditional LSTM" .
+_:a26946d88bc966d64153dca62b319971 rdf:reifies <<( doc:Factsperf_ind1 None:has_text_value "RUL prediction error relative to traditional LSTM" )>> ;
+	prov:wasDerivedFrom doc:33bc353df16d .
+doc:FactsPinnModel schema1:about doc:Factsdataset1 .
+_:e221babee0ff70bdc32af3cf37e0c0cc rdf:reifies <<( doc:FactsPinnModel schema1:about doc:Factsdataset1 )>> ;
+	prov:wasDerivedFrom doc:33bc353df16d .
+doc:d995695575d6 a prov:Entity , schema:text ;
+	prov:generatedAtTime "2026-06-12T06:29:33.97824Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+	schema:position 1 ;
+	schema:identifier "d995695575d6" .
+doc:FactsLiuJiacheng a schema1:Person .
+_:cfd01f4ce352a1fb5bf84c23d6fb4086 rdf:reifies <<( doc:FactsLiuJiacheng rdf:type schema1:Person )>> ;
+	prov:wasDerivedFrom doc:d995695575d6 .
+doc:FactsChenStudy a None:Predictive_Maintenance_Article .
+_:f31f831fc8f7013cbe35711927c8f07d rdf:reifies <<( doc:FactsChenStudy rdf:type None:Predictive_Maintenance_Article )>> ;
+	prov:wasDerivedFrom doc:d995695575d6 .
+doc:FactsCatBoostModel a None:Predictive_maintenance_model .
+_:b78ddb105437fd71b05ba23c5d2f84d5 rdf:reifies <<( doc:FactsCatBoostModel rdf:type None:Predictive_maintenance_model )>> ;
+	prov:wasDerivedFrom doc:d995695575d6 .
+doc:FactsGnNs a cco:Algorithm .
+_:c942d1c59f66cd42170d9d0c4ad4dee9 rdf:reifies <<( doc:FactsGnNs rdf:type cco:Algorithm )>> ;
+	prov:wasDerivedFrom doc:d995695575d6 .
+doc:FactsEyringModel a cco:Algorithm .
+_:b5d932d60a122a68a08b27b40f0e32cc rdf:reifies <<( doc:FactsEyringModel rdf:type cco:Algorithm )>> ;
+	prov:wasDerivedFrom doc:d995695575d6 .
+doc:FactsDataDrivenMethods cco:is_about doc:FactsRulEstimation_1 .
+_:fbfa69b4cbcc5e659421143567c91d5 rdf:reifies <<( doc:FactsDataDrivenMethods cco:is_about doc:FactsRulEstimation_1 )>> ;
+	prov:wasDerivedFrom doc:d995695575d6 .
+doc:FactsEyringModel cco:describes doc:FactsProductLifeConversion .
+_:d1085a6fd44e3f845f9aea5e59cc86b5 rdf:reifies <<( doc:FactsEyringModel cco:describes doc:FactsProductLifeConversion )>> ;
+	prov:wasDerivedFrom doc:d995695575d6 .
+doc:FactsGnNs cco:is_about None:Remaining_useful_life_estimation .
+_:c29da5c48e031d33432705e88dfe822c rdf:reifies <<( doc:FactsGnNs cco:is_about None:Remaining_useful_life_estimation )>> ;
+	prov:wasDerivedFrom doc:d995695575d6 .
+doc:FactsGnNs cco:is_about doc:FactsOodRecognition .
+_:b54a3abfa6a7344d431496608ac9a16d rdf:reifies <<( doc:FactsGnNs cco:is_about doc:FactsOodRecognition )>> ;
+	prov:wasDerivedFrom doc:d995695575d6 .
+doc:FactsSpacecraftExample a obo:BFO_0000019 .
+_:e522a22567cd3d9b504f8a5a10f84e3e rdf:reifies <<( doc:FactsSpacecraftExample rdf:type obo:BFO_0000019 )>> ;
+	prov:wasDerivedFrom doc:d995695575d6 .
+doc:FactsNasaAgingDataset a cco:InformationBearingArtifact .
+_:f02c1d4ccf2ac9ced8ededde6b427f7c rdf:reifies <<( doc:FactsNasaAgingDataset rdf:type cco:InformationBearingArtifact )>> ;
+	prov:wasDerivedFrom doc:d995695575d6 .
+doc:FactsSolvingDifferentialEquations a cco:DirectiveInformationContentEntity .
+_:eab3ff5618e09d4e13e6dfb6b3932151 rdf:reifies <<( doc:FactsSolvingDifferentialEquations rdf:type cco:DirectiveInformationContentEntity )>> ;
+	prov:wasDerivedFrom doc:d995695575d6 .
+doc:FactsGnNs cco:is_about None:Fault_detection .
+_:a60eb9ea01b4877876537e85728e0cf6 rdf:reifies <<( doc:FactsGnNs cco:is_about None:Fault_detection )>> ;
+	prov:wasDerivedFrom doc:d995695575d6 .
+doc:FactsSpacecraftExample None:has_text_value "zero maintenance" .
+_:eb798dbb8920e9529b443b725efe328a rdf:reifies <<( doc:FactsSpacecraftExample None:has_text_value "zero maintenance" )>> ;
+	prov:wasDerivedFrom doc:d995695575d6 .
+doc:FactsIgbtDevice a None:Maintainable_item .
+_:e2e92ffa1cc303246200d965aac051b9 rdf:reifies <<( doc:FactsIgbtDevice rdf:type None:Maintainable_item )>> ;
+	prov:wasDerivedFrom doc:d995695575d6 .
+doc:FactsDbso cco:describes doc:FactsCatBoostModel .
+_:ed0a24a0e36dbd50c4991ee9cf22c22b rdf:reifies <<( doc:FactsDbso cco:describes doc:FactsCatBoostModel )>> ;
+	prov:wasDerivedFrom doc:d995695575d6 .
+doc:FactsGnNs cco:is_about doc:FactsRulEstimation_1 .
+_:d2c6dc8f9cfaefc01c55e1c1fb97e3d0 rdf:reifies <<( doc:FactsGnNs cco:is_about doc:FactsRulEstimation_1 )>> ;
+	prov:wasDerivedFrom doc:d995695575d6 .
+doc:FactsChenStudy cco:is_about doc:FactsDbso .
+_:f6350bd6fdb46519c743d5aa72c191e2 rdf:reifies <<( doc:FactsChenStudy cco:is_about doc:FactsDbso )>> ;
+	prov:wasDerivedFrom doc:d995695575d6 .
+doc:FactsDbso a cco:Algorithm .
+_:eaef1f89e2490ae8ba69fe05c956e3a5 rdf:reifies <<( doc:FactsDbso rdf:type cco:Algorithm )>> ;
+	prov:wasDerivedFrom doc:d995695575d6 .
+doc:FactsIgbtLiuCase cco:is_about doc:FactsNasaAgingDataset .
+_:e7b521ed911ae27420e3f5d9ca963f8f rdf:reifies <<( doc:FactsIgbtLiuCase cco:is_about doc:FactsNasaAgingDataset )>> ;
+	prov:wasDerivedFrom doc:d995695575d6 .
+doc:FactsGnNs cco:describes doc:FactsSolvingDifferentialEquations .
+_:e2d1bf32555762c0db26d620aa3e4648 rdf:reifies <<( doc:FactsGnNs cco:describes doc:FactsSolvingDifferentialEquations )>> ;
+	prov:wasDerivedFrom doc:d995695575d6 .
+doc:FactsRulEstimation_1 cco:is_about doc:FactsSpacecraftExample .
+_:b6933d7e00e3cb16d6fadf073f01971d rdf:reifies <<( doc:FactsRulEstimation_1 cco:is_about doc:FactsSpacecraftExample )>> ;
+	prov:wasDerivedFrom doc:d995695575d6 .
+doc:FactsDataDrivenMethods a None:Data_mining_technique_function .
+_:b796ae5a6adac2a67a30904ee078fea5 rdf:reifies <<( doc:FactsDataDrivenMethods rdf:type None:Data_mining_technique_function )>> ;
+	prov:wasDerivedFrom doc:d995695575d6 .
+doc:FactsSpacecraftExample obo:RO_0000086 doc:FactsSpacecraftExample .
+_:e66d8e0d5d6069155e49e9521499a637 rdf:reifies <<( doc:FactsSpacecraftExample obo:RO_0000086 doc:FactsSpacecraftExample )>> ;
+	prov:wasDerivedFrom doc:d995695575d6 .
+doc:FactsRulEstimation_1 a None:Remaining_useful_life_estimation .
+_:a258f5a63cd1c3136a2ec4de9c93591b rdf:reifies <<( doc:FactsRulEstimation_1 rdf:type None:Remaining_useful_life_estimation )>> ;
+	prov:wasDerivedFrom doc:d995695575d6 .
+doc:FactsProductLifeConversion a cco:DesignativeInformationContentEntity .
+_:ed571b2e6194e5ecd2be5d3d2af39902 rdf:reifies <<( doc:FactsProductLifeConversion rdf:type cco:DesignativeInformationContentEntity )>> ;
+	prov:wasDerivedFrom doc:d995695575d6 .
+doc:FactsSpacecraftExample None:has_interger_value 15 .
+_:b2f1c384ce916d1d8fbf3305a55983c9 rdf:reifies <<( doc:FactsSpacecraftExample None:has_interger_value 15 )>> ;
+	prov:wasDerivedFrom doc:d995695575d6 .
+doc:FactsGnNs cco:describes doc:FactsEyringModel .
+_:edafecdba942c3daf806fc8dd3d2360d rdf:reifies <<( doc:FactsGnNs cco:describes doc:FactsEyringModel )>> ;
+	prov:wasDerivedFrom doc:d995695575d6 .
+doc:FactsIgbtLiuCase a None:Predictive_maintenance_case .
+_:ff9dd4d335ecf9d2a7d29a6714c55082 rdf:reifies <<( doc:FactsIgbtLiuCase rdf:type None:Predictive_maintenance_case )>> ;
+	prov:wasDerivedFrom doc:d995695575d6 .
+doc:FactsIgbtLiuCase cco:is_about doc:FactsIgbtDevice .
+_:b32ce97bed40db580e5a88b4ec338a20 rdf:reifies <<( doc:FactsIgbtLiuCase cco:is_about doc:FactsIgbtDevice )>> ;
+	prov:wasDerivedFrom doc:d995695575d6 .
+doc:FactsTaoXueqing a schema1:Person .
+_:aa08c89c9647e07e830370179724830d rdf:reifies <<( doc:FactsTaoXueqing rdf:type schema1:Person )>> ;
+	prov:wasDerivedFrom doc:d995695575d6 .
+doc:FactsChenStudy cco:is_about doc:FactsCatBoostModel .
+_:b9d9f680e96eec6386a3bb3d1081913a rdf:reifies <<( doc:FactsChenStudy cco:is_about doc:FactsCatBoostModel )>> ;
+	prov:wasDerivedFrom doc:d995695575d6 .
+doc:FactsSpacecraftExample a None:Maintainable_item .
+_:b96271117b5724ae3e46fb99e1722e59 rdf:reifies <<( doc:FactsSpacecraftExample rdf:type None:Maintainable_item )>> ;
+	prov:wasDerivedFrom doc:d995695575d6 .
+doc:FactsEyringModel cco:is_about doc:FactsRulEstimation_1 .
+_:a008b9971a5740a7deaad304960e7829 rdf:reifies <<( doc:FactsEyringModel cco:is_about doc:FactsRulEstimation_1 )>> ;
+	prov:wasDerivedFrom doc:d995695575d6 .
+doc:FactsEyringModel cco:is_about doc:FactsProductLifeConversion .
+_:d106a8280563d4e48e75656adfbcbfe9 rdf:reifies <<( doc:FactsEyringModel cco:is_about doc:FactsProductLifeConversion )>> ;
+	prov:wasDerivedFrom doc:d995695575d6 .
+doc:FactsOodRecognition a obo:BFO_0000034 .
+_:d17e37ea5d7db11eb9477125e2f07c4 rdf:reifies <<( doc:FactsOodRecognition rdf:type obo:BFO_0000034 )>> ;
+	prov:wasDerivedFrom doc:d995695575d6 .
+doc:2e5aa27a2786 a prov:Entity , schema:text ;
+	prov:generatedAtTime "2026-06-12T06:29:33.98024Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+	schema:position 2 ;
+	schema:identifier "2e5aa27a2786" .
+doc:factsuses_7 a rdf:Property .
+_:c948599fd9ec4ad6fccde03c4cafe0d rdf:reifies <<( doc:factsuses_7 rdf:type rdf:Property )>> ;
+	prov:wasDerivedFrom doc:2e5aa27a2786 .
+doc:FactsEgnood None:has_predictive_maintenance_function None:Fault_detection .
+_:c5cc8e53cd250740291488c1e1da6197 rdf:reifies <<( doc:FactsEgnood None:has_predictive_maintenance_function None:Fault_detection )>> ;
+	prov:wasDerivedFrom doc:2e5aa27a2786 .
+doc:FactsBayererModel doc:factsuses_7 doc:FactsBondWireDiameter .
+_:d349cc50ab0a109cc170f8707a62b748 rdf:reifies <<( doc:FactsBayererModel doc:factsuses_7 doc:FactsBondWireDiameter )>> ;
+	prov:wasDerivedFrom doc:2e5aa27a2786 .
+doc:FactsCoffinMansonModel rdfs:label "Coffin-Manson model" .
+_:fe752d1ccdfd63766140ee36ff9d0367 rdf:reifies <<( doc:FactsCoffinMansonModel rdfs:label "Coffin-Manson model" )>> ;
+	prov:wasDerivedFrom doc:2e5aa27a2786 .
+doc:FactsPredictivePerformanceDegradation rdfs:label "predictive performance degradation" .
+_:da301d8c48e6a992f411c1a282a4ee5c rdf:reifies <<( doc:FactsPredictivePerformanceDegradation rdfs:label "predictive performance degradation" )>> ;
+	prov:wasDerivedFrom doc:2e5aa27a2786 .
+doc:FactsCumulativeDamageModel rdfs:label "cumulative damage model (rainflow counting)" .
+_:f0d6fede9fc3c24488031f1f97116d4 rdf:reifies <<( doc:FactsCumulativeDamageModel rdfs:label "cumulative damage model (rainflow counting)" )>> ;
+	prov:wasDerivedFrom doc:2e5aa27a2786 .
+doc:FactsPinnModel doc:factsuses_7 "improves physical consistency but relies on offline training; performance degrades when operational conditions shift" .
+_:ee9b2ed1d978a230912a25e79eec2a47 rdf:reifies <<( doc:FactsPinnModel doc:factsuses_7 "improves physical consistency but relies on offline training; performance degrades when operational conditions shift" )>> ;
+	prov:wasDerivedFrom doc:2e5aa27a2786 .
+doc:FactsPinn_1 rdfs:label "PINN (physics-informed neural network)" .
+_:b0e690b2f463f1e2a23f646be7a0f5c9 rdf:reifies <<( doc:FactsPinn_1 rdfs:label "PINN (physics-informed neural network)" )>> ;
+	prov:wasDerivedFrom doc:2e5aa27a2786 .
+_:eeac4e7de96d794f78d9980c1753410d prov:wasDerivedFrom doc:2e5aa27a2786 .
+doc:FactsPinnModel doc:factsuses_7 "trained in an offline manner" .
+_:e821fbc5e40564c5e1c33d97189b989d rdf:reifies <<( doc:FactsPinnModel doc:factsuses_7 "trained in an offline manner" )>> ;
+	prov:wasDerivedFrom doc:2e5aa27a2786 .
+doc:FactsRetrainingWithNewDegradationData rdfs:label "retraining with new degradation data" .
+_:f267427444276777cecd1ec5ba8984fd rdf:reifies <<( doc:FactsRetrainingWithNewDegradationData rdfs:label "retraining with new degradation data" )>> ;
+	prov:wasDerivedFrom doc:2e5aa27a2786 .
+doc:FactsRelationalDependenciesAmongSignals a cco:DescriptiveInformationContentEntity .
+_:bc4dd9cd6a13f5ac5e49063d6cdd9df0 rdf:reifies <<( doc:FactsRelationalDependenciesAmongSignals rdf:type cco:DescriptiveInformationContentEntity )>> ;
+	prov:wasDerivedFrom doc:2e5aa27a2786 .
+doc:FactsBayererModel doc:factsuses_7 doc:FactsHeatingDuration .
+_:b107eaaf8540e223976e907649a08f34 rdf:reifies <<( doc:FactsBayererModel doc:factsuses_7 doc:FactsHeatingDuration )>> ;
+	prov:wasDerivedFrom doc:2e5aa27a2786 .
+doc:FactsDcCurrent rdfs:label "DC current (I)" .
+_:ddbc71c786c89c62b56b294bae5ed970 rdf:reifies <<( doc:FactsDcCurrent rdfs:label "DC current (I)" )>> ;
+	prov:wasDerivedFrom doc:2e5aa27a2786 .
+doc:FactsEgnood doc:factsuses_7 doc:FactsGraphConvolution .
+_:d79d67aefd5b26e2a0646e9c9be0f8b9 rdf:reifies <<( doc:FactsEgnood doc:factsuses_7 doc:FactsGraphConvolution )>> ;
+	prov:wasDerivedFrom doc:2e5aa27a2786 .
+doc:FactsEgnood doc:factsuses_7 doc:FactsEnergyBasedGraphNeuralNetwork .
+_:b6fd3d0fcbe317589d1c673525cd2616 rdf:reifies <<( doc:FactsEgnood doc:factsuses_7 doc:FactsEnergyBasedGraphNeuralNetwork )>> ;
+	prov:wasDerivedFrom doc:2e5aa27a2786 .
+doc:FactsEgnood rdfs:label "proposed online continual-PINN RUL framework" .
+_:e34349e2ae317b363de967e6163ef856 rdf:reifies <<( doc:FactsEgnood rdfs:label "proposed online continual-PINN RUL framework" )>> ;
+	prov:wasDerivedFrom doc:2e5aa27a2786 .
+doc:FactsGnnDetection rdfs:label "GNN-based detection" .
+_:be18b5c9850c6c6a11d5f2a299113b49 rdf:reifies <<( doc:FactsGnnDetection rdfs:label "GNN-based detection" )>> ;
+	prov:wasDerivedFrom doc:2e5aa27a2786 .
+_:e2e92ffa1cc303246200d965aac051b9 prov:wasDerivedFrom doc:2e5aa27a2786 .
+doc:FactsEnergyBasedGraphNeuralNetwork a cco:Algorithm .
+_:eb15d52ee457e23778d906f34b24c2f7 rdf:reifies <<( doc:FactsEnergyBasedGraphNeuralNetwork rdf:type cco:Algorithm )>> ;
+	prov:wasDerivedFrom doc:2e5aa27a2786 .
+doc:FactsPredictionAccuracy_1 a None:Performance_indicator .
+_:bb8a7c5bdd5e8f1f454d92525b0f1e15 rdf:reifies <<( doc:FactsPredictionAccuracy_1 rdf:type None:Performance_indicator )>> ;
+	prov:wasDerivedFrom doc:2e5aa27a2786 .
+doc:FactsRainflowCounting rdfs:label "rainflow counting technique" .
+_:e6617de51b1f9cd95f740822248be848 rdf:reifies <<( doc:FactsRainflowCounting rdfs:label "rainflow counting technique" )>> ;
+	prov:wasDerivedFrom doc:2e5aa27a2786 .
+doc:FactsBondWireDiameter rdfs:label "bond wire diameter (D)" .
+_:ae0eedca3e2921d7006add59c363090c rdf:reifies <<( doc:FactsBondWireDiameter rdfs:label "bond wire diameter (D)" )>> ;
+	prov:wasDerivedFrom doc:2e5aa27a2786 .
+doc:FactsContinualLearning doc:factsmaintainsLearningEfficiency true .
+_:c49010ef714551f96b8a9aab056d8521 rdf:reifies <<( doc:FactsContinualLearning doc:factsmaintainsLearningEfficiency true )>> ;
+	prov:wasDerivedFrom doc:2e5aa27a2786 .
+doc:FactsInformationPropagation a cco:Algorithm .
+_:f6834052e1e50cfda6c84097213a51d1 rdf:reifies <<( doc:FactsInformationPropagation rdf:type cco:Algorithm )>> ;
+	prov:wasDerivedFrom doc:2e5aa27a2786 .
+doc:FactsNorrisLandzbergModel rdfs:label "Norris-Landzberg equation" .
+_:c3b85fd06db70200bb1aeed0d1771bb3 rdf:reifies <<( doc:FactsNorrisLandzbergModel rdfs:label "Norris-Landzberg equation" )>> ;
+	prov:wasDerivedFrom doc:2e5aa27a2786 .
+doc:FactsRetrainingWithNewDegradationData a schema1:Action .
+_:b94270d13382095b4060ccf3df1158c rdf:reifies <<( doc:FactsRetrainingWithNewDegradationData rdf:type schema1:Action )>> ;
+	prov:wasDerivedFrom doc:2e5aa27a2786 .
+doc:factsmaintainsLearningEfficiency a rdf:Property .
+_:d2cd38407bc471b8dcd87c80486bf0c2 rdf:reifies <<( doc:factsmaintainsLearningEfficiency rdf:type rdf:Property )>> ;
+	prov:wasDerivedFrom doc:2e5aa27a2786 .
+doc:FactsGraphConvolution rdfs:label "graph convolution" .
+_:d3d60d7bea6e9aae4c20299247cda8e4 rdf:reifies <<( doc:FactsGraphConvolution rdfs:label "graph convolution" )>> ;
+	prov:wasDerivedFrom doc:2e5aa27a2786 .
+doc:FactsNorrisLandzbergModel a None:Predictive_maintenance_model .
+_:a8fecc0993f70e97664b5c21535b11a rdf:reifies <<( doc:FactsNorrisLandzbergModel rdf:type None:Predictive_maintenance_model )>> ;
+	prov:wasDerivedFrom doc:2e5aa27a2786 .
+doc:FactsHeatingDuration a None:Data_variable .
+_:e91976ad2486cf76afac3b4042aa2aa6 rdf:reifies <<( doc:FactsHeatingDuration rdf:type None:Data_variable )>> ;
+	prov:wasDerivedFrom doc:2e5aa27a2786 .
+doc:FactsFailureCycleCount rdfs:label "failure cycle count (Nf)" .
+_:b8ac744431d9b4995bba2c9ce6bcf171 rdf:reifies <<( doc:FactsFailureCycleCount rdfs:label "failure cycle count (Nf)" )>> ;
+	prov:wasDerivedFrom doc:2e5aa27a2786 .
+doc:FactsRelationalDependenciesAmongSignals rdfs:label "relational dependencies among signals" .
+_:fb64d05c5282a5619e87793a7960a507 rdf:reifies <<( doc:FactsRelationalDependenciesAmongSignals rdfs:label "relational dependencies among signals" )>> ;
+	prov:wasDerivedFrom doc:2e5aa27a2786 .
+doc:FactsCumulativeDamageModel a None:Predictive_maintenance_model .
+_:c6df4c1391621389c92b4a2cd60c4730 rdf:reifies <<( doc:FactsCumulativeDamageModel rdf:type None:Predictive_maintenance_model )>> ;
+	prov:wasDerivedFrom doc:2e5aa27a2786 .
+doc:FactsHeatingDuration rdfs:label "heating duration (t_on)" .
+_:d3bcdb5b2c7d3d35b8f7ba63abec1989 rdf:reifies <<( doc:FactsHeatingDuration rdfs:label "heating duration (t_on)" )>> ;
+	prov:wasDerivedFrom doc:2e5aa27a2786 .
+doc:FactsEgnood doc:factsuses_7 doc:FactsIgbtDevice .
+_:fdeafe2f75f8218bc8b2aaf1ce8290c6 rdf:reifies <<( doc:FactsEgnood doc:factsuses_7 doc:FactsIgbtDevice )>> ;
+	prov:wasDerivedFrom doc:2e5aa27a2786 .
+doc:FactsEnergyHypothesisModel rdfs:label "energy-hypothesis-based lifespan model" .
+_:b8f3df431d002c76e480115e43808150 rdf:reifies <<( doc:FactsEnergyHypothesisModel rdfs:label "energy-hypothesis-based lifespan model" )>> ;
+	prov:wasDerivedFrom doc:2e5aa27a2786 .
+doc:FactsBlockingVoltage rdfs:label "blocking voltage (V)" .
+_:a4fd0bc0baba4af16ba2be9237da2117 rdf:reifies <<( doc:FactsBlockingVoltage rdfs:label "blocking voltage (V)" )>> ;
+	prov:wasDerivedFrom doc:2e5aa27a2786 .
+doc:FactsPinnModel doc:factsuses_7 "requires large amounts of training data" .
+_:a2738a7afb1adc8c71aad9733f49a344 rdf:reifies <<( doc:FactsPinnModel doc:factsuses_7 "requires large amounts of training data" )>> ;
+	prov:wasDerivedFrom doc:2e5aa27a2786 .
+doc:FactsPredictivePerformanceDegradation a None:Performance_value .
+_:e735d5fce06e275cca88dd32a4117a15 rdf:reifies <<( doc:FactsPredictivePerformanceDegradation rdf:type None:Performance_value )>> ;
+	prov:wasDerivedFrom doc:2e5aa27a2786 .
+doc:FactsRainflowCounting a cco:Algorithm .
+_:e92df59347419ad9cbbbd16a9b98d2e4 rdf:reifies <<( doc:FactsRainflowCounting rdf:type cco:Algorithm )>> ;
+	prov:wasDerivedFrom doc:2e5aa27a2786 .
+_:dbe313e51679581d8e86bf120a4ac484 prov:wasDerivedFrom doc:2e5aa27a2786 .
+doc:FactsPinnModel rdfs:label "PINN+LSTM approach" .
+_:a025f60343ca27f1b68c5a35381b1846 rdf:reifies <<( doc:FactsPinnModel rdfs:label "PINN+LSTM approach" )>> ;
+	prov:wasDerivedFrom doc:2e5aa27a2786 .
+doc:FactsEnergyBasedGraphNeuralNetwork rdfs:label "energy-based graph neural network" .
+_:a93cde296f462491047c4342bc8ed80c rdf:reifies <<( doc:FactsEnergyBasedGraphNeuralNetwork rdfs:label "energy-based graph neural network" )>> ;
+	prov:wasDerivedFrom doc:2e5aa27a2786 .
+doc:FactsCatastrophicForgetting rdfs:label "catastrophic forgetting" .
+_:dbab1b29ff7326f8861ddd10e65ccdcd rdf:reifies <<( doc:FactsCatastrophicForgetting rdfs:label "catastrophic forgetting" )>> ;
+	prov:wasDerivedFrom doc:2e5aa27a2786 .
+doc:FactsRetrainingWithNewDegradationData doc:factsuses_7 doc:FactsPredictivePerformanceDegradation .
+_:a55afb2c149f9a36d0c2c0ad5574d556 rdf:reifies <<( doc:FactsRetrainingWithNewDegradationData doc:factsuses_7 doc:FactsPredictivePerformanceDegradation )>> ;
+	prov:wasDerivedFrom doc:2e5aa27a2786 .
+doc:FactsModelBasedMethods doc:factsuses_7 doc:FactsFailureCycleCount .
+_:dd2ccaee4a29d92625fd6c2d8f912b7d rdf:reifies <<( doc:FactsModelBasedMethods doc:factsuses_7 doc:FactsFailureCycleCount )>> ;
+	prov:wasDerivedFrom doc:2e5aa27a2786 .
+doc:FactsPinnModel rdfs:label "PINN in RUL prediction" .
+_:d9721e01b16aa811209f46a65432836d rdf:reifies <<( doc:FactsPinnModel rdfs:label "PINN in RUL prediction" )>> ;
+	prov:wasDerivedFrom doc:2e5aa27a2786 .
+doc:FactsGatheringPastDegradationData doc:factshasCostEstimate "high" .
+_:bfdebd64f17233004ce9538a6e85c386 rdf:reifies <<( doc:FactsGatheringPastDegradationData doc:factshasCostEstimate "high" )>> ;
+	prov:wasDerivedFrom doc:2e5aa27a2786 .
+doc:FactsPinnModel doc:factsuses_7 "fails to retain knowledge under changing conditions (catastrophic forgetting)" .
+_:d94e5123d3eb300d01d6f2deba41e4db rdf:reifies <<( doc:FactsPinnModel doc:factsuses_7 "fails to retain knowledge under changing conditions (catastrophic forgetting)" )>> ;
+	prov:wasDerivedFrom doc:2e5aa27a2786 .
+doc:FactsEgnood doc:factsuses_7 doc:FactsAerospacePowerControlAndPropulsion .
+_:f3274de9745f0f644c4a63c174ff5787 rdf:reifies <<( doc:FactsEgnood doc:factsuses_7 doc:FactsAerospacePowerControlAndPropulsion )>> ;
+	prov:wasDerivedFrom doc:2e5aa27a2786 .
+doc:FactsAerospacePowerControlAndPropulsion rdfs:label "aerospace power control and propulsion systems" .
+_:e60d7b76e0b0ab0902c2ceeac059afd2 rdf:reifies <<( doc:FactsAerospacePowerControlAndPropulsion rdfs:label "aerospace power control and propulsion systems" )>> ;
+	prov:wasDerivedFrom doc:2e5aa27a2786 .
+_:eb01b709c26ea1ae33c48ae3eaa7f354 prov:wasDerivedFrom doc:2e5aa27a2786 .
+doc:FactsAerospacePowerControlAndPropulsion a schema1:Thing .
+_:a2ba9bee3c36041de9b4c2b699e99bf0 rdf:reifies <<( doc:FactsAerospacePowerControlAndPropulsion rdf:type schema1:Thing )>> ;
+	prov:wasDerivedFrom doc:2e5aa27a2786 .
+doc:FactsFailureCycleCount a None:Performance_value .
+_:c879bdde9dcb6eb292b7c44d827b08d4 rdf:reifies <<( doc:FactsFailureCycleCount rdf:type None:Performance_value )>> ;
+	prov:wasDerivedFrom doc:2e5aa27a2786 .
+doc:FactsEnergyHypothesisModel a None:Predictive_maintenance_model .
+_:fd1117e159665c954d6e6852e91b1843 rdf:reifies <<( doc:FactsEnergyHypothesisModel rdf:type None:Predictive_maintenance_model )>> ;
+	prov:wasDerivedFrom doc:2e5aa27a2786 .
+doc:FactsEgnood doc:factsuses_7 doc:FactsPredictionAccuracy_1 .
+_:c9adad560e93101be685472f62a44c9b rdf:reifies <<( doc:FactsEgnood doc:factsuses_7 doc:FactsPredictionAccuracy_1 )>> ;
+	prov:wasDerivedFrom doc:2e5aa27a2786 .
+doc:FactsBondWireDiameter a None:Data_variable .
+_:be66989e31cceecd8333477a92135ab1 rdf:reifies <<( doc:FactsBondWireDiameter rdf:type None:Data_variable )>> ;
+	prov:wasDerivedFrom doc:2e5aa27a2786 .
+doc:FactsGnnDetection doc:factsuses_7 doc:FactsRelationalDependenciesAmongSignals .
+_:e4d23823bf2a7e8fc0e8df2d82d1228e rdf:reifies <<( doc:FactsGnnDetection doc:factsuses_7 doc:FactsRelationalDependenciesAmongSignals )>> ;
+	prov:wasDerivedFrom doc:2e5aa27a2786 .
+doc:FactsBayererModel a None:Predictive_maintenance_model .
+_:ce68330f5565528f95691a01e69d1414 rdf:reifies <<( doc:FactsBayererModel rdf:type None:Predictive_maintenance_model )>> ;
+	prov:wasDerivedFrom doc:2e5aa27a2786 .
+doc:FactsBlockingVoltage a None:Data_variable .
+_:c91674086331efac15db6f43814651e1 rdf:reifies <<( doc:FactsBlockingVoltage rdf:type None:Data_variable )>> ;
+	prov:wasDerivedFrom doc:2e5aa27a2786 .
+doc:FactsPinn_1 a None:Predictive_maintenance_model .
+_:dc990b071e5eeabbb8abebfff8ba8a84 rdf:reifies <<( doc:FactsPinn_1 rdf:type None:Predictive_maintenance_model )>> ;
+	prov:wasDerivedFrom doc:2e5aa27a2786 .
+doc:FactsEgnood doc:factsuses_7 doc:FactsInformationPropagation .
+_:d3c4052ed340c90d0308dc069fbdc988 rdf:reifies <<( doc:FactsEgnood doc:factsuses_7 doc:FactsInformationPropagation )>> ;
+	prov:wasDerivedFrom doc:2e5aa27a2786 .
+doc:FactsModelBasedMethods a cco:Algorithm .
+_:bbcd2b5459804c7e72d67dd4a476e9e9 rdf:reifies <<( doc:FactsModelBasedMethods rdf:type cco:Algorithm )>> ;
+	prov:wasDerivedFrom doc:2e5aa27a2786 .
+doc:FactsModelBasedMethods rdfs:label "model-based methods" .
+_:d72fe9475efb1b4a447ffcbc6f4aa75c rdf:reifies <<( doc:FactsModelBasedMethods rdfs:label "model-based methods" )>> ;
+	prov:wasDerivedFrom doc:2e5aa27a2786 .
+doc:FactsContinualLearning rdfs:label "continual learning" .
+_:ffd094f2cc1df9634c7532938dc2e75 rdf:reifies <<( doc:FactsContinualLearning rdfs:label "continual learning" )>> ;
+	prov:wasDerivedFrom doc:2e5aa27a2786 .
+doc:FactsCoffinMansonModel a None:Predictive_maintenance_model .
+_:d6cf29b51a5bb2c3f5567054be635612 rdf:reifies <<( doc:FactsCoffinMansonModel rdf:type None:Predictive_maintenance_model )>> ;
+	prov:wasDerivedFrom doc:2e5aa27a2786 .
+doc:FactsContinualLearning a None:Model_type .
+_:c35947581f1f0213fc971900944ee161 rdf:reifies <<( doc:FactsContinualLearning rdf:type None:Model_type )>> ;
+	prov:wasDerivedFrom doc:2e5aa27a2786 .
+doc:FactsContinualLearning doc:factsuses_7 doc:FactsCatastrophicForgetting .
+_:e5b09adb95c662589f1f9672aa6ffb1 rdf:reifies <<( doc:FactsContinualLearning doc:factsuses_7 doc:FactsCatastrophicForgetting )>> ;
+	prov:wasDerivedFrom doc:2e5aa27a2786 .
+doc:FactsCatastrophicForgetting a schema1:Thing .
+_:efa9f120bc1fd0f8febe9ce7b1b12f73 rdf:reifies <<( doc:FactsCatastrophicForgetting rdf:type schema1:Thing )>> ;
+	prov:wasDerivedFrom doc:2e5aa27a2786 .
+doc:FactsEgnood rdfs:label "GCI-ODG framework" .
+_:ee34ba91814a15a6c17b12d10dc57529 rdf:reifies <<( doc:FactsEgnood rdfs:label "GCI-ODG framework" )>> ;
+	prov:wasDerivedFrom doc:2e5aa27a2786 .
+doc:FactsCumulativeDamageModel doc:factsuses_7 doc:FactsRainflowCounting .
+_:de8f73dae48e01dde509fa985c863a23 rdf:reifies <<( doc:FactsCumulativeDamageModel doc:factsuses_7 doc:FactsRainflowCounting )>> ;
+	prov:wasDerivedFrom doc:2e5aa27a2786 .
+doc:FactsBayererModel rdfs:label "Bayerer model" .
+_:cada1285fab238743f2bb27c7445a88 rdf:reifies <<( doc:FactsBayererModel rdfs:label "Bayerer model" )>> ;
+	prov:wasDerivedFrom doc:2e5aa27a2786 .
+doc:FactsGatheringPastDegradationData a schema1:Action .
+_:f1d2bda2cc4f329e1c33cf259b9e438a rdf:reifies <<( doc:FactsGatheringPastDegradationData rdf:type schema1:Action )>> ;
+	prov:wasDerivedFrom doc:2e5aa27a2786 .
+doc:FactsDcCurrent a None:Data_variable .
+_:a136f179318a74bc299c368ebf2933ed rdf:reifies <<( doc:FactsDcCurrent rdf:type None:Data_variable )>> ;
+	prov:wasDerivedFrom doc:2e5aa27a2786 .
+doc:FactsEgnood rdfs:label "EGNOOD framework" .
+_:fc8e317c4d8d5550caab3dc79582fffe rdf:reifies <<( doc:FactsEgnood rdfs:label "EGNOOD framework" )>> ;
+	prov:wasDerivedFrom doc:2e5aa27a2786 .
+doc:FactsIgbtDevice rdfs:label "power electronic device" .
+_:cf212690b750092d6802e779cdb4a07a rdf:reifies <<( doc:FactsIgbtDevice rdfs:label "power electronic device" )>> ;
+	prov:wasDerivedFrom doc:2e5aa27a2786 .
+doc:FactsGraphConvolution a cco:Algorithm .
+_:bc363890861ce1ee7784c478b0346252 rdf:reifies <<( doc:FactsGraphConvolution rdf:type cco:Algorithm )>> ;
+	prov:wasDerivedFrom doc:2e5aa27a2786 .
+doc:FactsHeatingDuration rdfs:label "peak junction temperature (T(j, max))" .
+_:c4914ad2115a5a6bef6f857bf5020161 rdf:reifies <<( doc:FactsHeatingDuration rdfs:label "peak junction temperature (T(j, max))" )>> ;
+	prov:wasDerivedFrom doc:2e5aa27a2786 .
+doc:FactsIgbtDevice rdfs:label "IGBT device" .
+_:e2e44a280dfe52eff3940075ede0869b rdf:reifies <<( doc:FactsIgbtDevice rdfs:label "IGBT device" )>> ;
+	prov:wasDerivedFrom doc:2e5aa27a2786 .
+doc:FactsBayererModel doc:factsuses_7 doc:FactsDcCurrent .
+_:bbf8635f300afc081964842daf89c3f0 rdf:reifies <<( doc:FactsBayererModel doc:factsuses_7 doc:FactsDcCurrent )>> ;
+	prov:wasDerivedFrom doc:2e5aa27a2786 .
+doc:FactsInformationPropagation rdfs:label "information propagation" .
+_:cee2878f98ddc9011a93370d3b1e3ba6 rdf:reifies <<( doc:FactsInformationPropagation rdfs:label "information propagation" )>> ;
+	prov:wasDerivedFrom doc:2e5aa27a2786 .
+doc:FactsBayererModel doc:factsuses_7 doc:FactsBlockingVoltage .
+_:af8486c1327dd8e3cda4d8a5304f2e13 rdf:reifies <<( doc:FactsBayererModel doc:factsuses_7 doc:FactsBlockingVoltage )>> ;
+	prov:wasDerivedFrom doc:2e5aa27a2786 .
+doc:factshasCostEstimate a rdf:Property .
+_:a92d8296f8489ccbbb8868f9d86fb332 rdf:reifies <<( doc:factshasCostEstimate rdf:type rdf:Property )>> ;
+	prov:wasDerivedFrom doc:2e5aa27a2786 .
+doc:FactsGatheringPastDegradationData rdfs:label "gathering all past degradation data" .
+_:f4941847989eb890352830f7bed42d93 rdf:reifies <<( doc:FactsGatheringPastDegradationData rdfs:label "gathering all past degradation data" )>> ;
+	prov:wasDerivedFrom doc:2e5aa27a2786 .
+doc:FactsGatheringPastDegradationData doc:factsuses_7 true .
+_:b5ef3a8d5252db83ff020f2f28797d0c rdf:reifies <<( doc:FactsGatheringPastDegradationData doc:factsuses_7 true )>> ;
+	prov:wasDerivedFrom doc:2e5aa27a2786 .
+doc:FactsEgnood None:has_predictive_maintenance_function None:Deviation_detection .
+_:d881fb758d75d0660c2e4dafc5a74eca rdf:reifies <<( doc:FactsEgnood None:has_predictive_maintenance_function None:Deviation_detection )>> ;
+	prov:wasDerivedFrom doc:2e5aa27a2786 .
+doc:factsuses_7 rdfs:label "has limitation" .
+_:ba3b90b253efaa2b1d5fc317dfef210c rdf:reifies <<( doc:factsuses_7 rdfs:label "has limitation" )>> ;
+	prov:wasDerivedFrom doc:2e5aa27a2786 .
+doc:FactsGnnDetection a None:Data_mining_technique_function .
+_:a2b3a1bb30ea8a3894736235946d7de1 rdf:reifies <<( doc:FactsGnnDetection rdf:type None:Data_mining_technique_function )>> ;
+	prov:wasDerivedFrom doc:2e5aa27a2786 .
+cco:DirectiveInformationContentEntity owl:sameAs cco:DescriptiveInformationContentEntity , cco:DesignativeInformationContentEntity .
+cco:InformationBearingArtifact owl:sameAs cco:InformationProcessingArtifact .

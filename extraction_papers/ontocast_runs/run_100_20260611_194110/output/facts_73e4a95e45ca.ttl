@@ -1,0 +1,570 @@
+@prefix None: <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD/seed#> .
+@prefix cco: <http://www.ontologyrepository.com/CommonCoreOntologies/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doc: <https://growgraph.dev/doc/73e4a95e45ca/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix schema: <https://schema.org/> .
+@prefix schema1: <http://schema.org/> .
+doc:512c48ed89f9 a prov:Entity , schema:text ;
+	prov:generatedAtTime "2026-06-12T03:56:32.10621Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+	schema:position 0 ;
+	schema:identifier "512c48ed89f9" .
+doc:FactsDalianMaritimeUniversity schema1:name "College of Marine Engineering, Dalian Maritime University" .
+_:c90f3cda16e080c10b5dbf743c68ef28 rdf:reifies <<( doc:FactsDalianMaritimeUniversity schema1:name "College of Marine Engineering, Dalian Maritime University" )>> ;
+	prov:wasDerivedFrom doc:512c48ed89f9 .
+doc:FactsSiliconeRubberTengArticle a None:Predictive_Maintenance_Article .
+_:c7482bcea3e50a8dea2dd0b3c995d4de rdf:reifies <<( doc:FactsSiliconeRubberTengArticle rdf:type None:Predictive_Maintenance_Article )>> ;
+	prov:wasDerivedFrom doc:512c48ed89f9 .
+doc:FactsComparativeAssessment None:has_text_value "Quantitative comparison with existing TENG vibration sensors indicates SRTENG outperforms most reported devices in comprehensive detection range and linear sensing performance" .
+_:dae55a7f97522e616330b3caf2fc459d rdf:reifies <<( doc:FactsComparativeAssessment None:has_text_value "Quantitative comparison with existing TENG vibration sensors indicates SRTENG outperforms most reported devices in comprehensive detection range and linear sensing performance" )>> ;
+	prov:wasDerivedFrom doc:512c48ed89f9 .
+doc:FactsAuthorLeiGuo a schema1:Person .
+_:deea0f287b62d9b3d787f4a5ece481b1 rdf:reifies <<( doc:FactsAuthorLeiGuo rdf:type schema1:Person )>> ;
+	prov:wasDerivedFrom doc:512c48ed89f9 .
+doc:FactsFrequencyRangeValue None:has_text_value "acceleration detection range: 5-50 m/s^2" .
+_:becf67c69a258d02c700eec6f5c1132a rdf:reifies <<( doc:FactsFrequencyRangeValue None:has_text_value "acceleration detection range: 5-50 m/s^2" )>> ;
+	prov:wasDerivedFrom doc:512c48ed89f9 .
+doc:FactsAuthorLeiGuo schema1:familyName "Zou" .
+_:e6cce0256e84a7b0fb65106350df2c44 rdf:reifies <<( doc:FactsAuthorLeiGuo schema1:familyName "Zou" )>> ;
+	prov:wasDerivedFrom doc:512c48ed89f9 .
+doc:FactsAuthorLeiGuo schema1:affiliation doc:FactsDalianMaritimeUniversity .
+_:b4e9a6f2cd3119a060bacc8aa6c47209 rdf:reifies <<( doc:FactsAuthorLeiGuo schema1:affiliation doc:FactsDalianMaritimeUniversity )>> ;
+	prov:wasDerivedFrom doc:512c48ed89f9 .
+doc:FactsAuthorLeiGuo schema1:email "zouyj0421@dlmu.edu.cn" .
+_:e8a60d65ff03396dbd3893048034d479 rdf:reifies <<( doc:FactsAuthorLeiGuo schema1:email "zouyj0421@dlmu.edu.cn" )>> ;
+	prov:wasDerivedFrom doc:512c48ed89f9 .
+doc:FactsComparativeAssessment cco:describes doc:FactsSrtengDevice .
+_:babdc8354c25e6902879f068b8a7ee7f rdf:reifies <<( doc:FactsComparativeAssessment cco:describes doc:FactsSrtengDevice )>> ;
+	prov:wasDerivedFrom doc:512c48ed89f9 .
+doc:Factsdurability_2h None:has_text_value "Silicone rubber layer (Dragon Skin-30, 1 mm), PET films, conductive fabric electrodes, PLA arch frame" .
+_:cd02dc8ce6f45ac146d3ba7bb97af60b rdf:reifies <<( doc:Factsdurability_2h None:has_text_value "Silicone rubber layer (Dragon Skin-30, 1 mm), PET films, conductive fabric electrodes, PLA arch frame" )>> ;
+	prov:wasDerivedFrom doc:512c48ed89f9 .
+doc:FactsFrequencyRangeValue cco:describes doc:FactsSrtengDevice .
+_:f5953d9deb2e225f90d02959309dc00b rdf:reifies <<( doc:FactsFrequencyRangeValue cco:describes doc:FactsSrtengDevice )>> ;
+	prov:wasDerivedFrom doc:512c48ed89f9 .
+doc:FactsAuthorLeiGuo schema1:email "lijunqi@dlmu.edu.cn" .
+_:dd254e6f273a05a1365542a567b6547b rdf:reifies <<( doc:FactsAuthorLeiGuo schema1:email "lijunqi@dlmu.edu.cn" )>> ;
+	prov:wasDerivedFrom doc:512c48ed89f9 .
+doc:Factslinearity_R2_Value None:has_text_value "high linearity in acceleration sensing (R^2 >= 0.97974)" .
+_:d6e8a1d559c0eefc43f76033f4eb60ed rdf:reifies <<( doc:Factslinearity_R2_Value None:has_text_value "high linearity in acceleration sensing (R^2 >= 0.97974)" )>> ;
+	prov:wasDerivedFrom doc:512c48ed89f9 .
+doc:FactsFrequencyRangeValue a None:Performance_value .
+_:fc629544c8ed9761aa440154907ddc80 rdf:reifies <<( doc:FactsFrequencyRangeValue rdf:type None:Performance_value )>> ;
+	prov:wasDerivedFrom doc:512c48ed89f9 .
+doc:FactsSrtengDevice schema1:name "Silicone Rubber Triboelectric Nanogenerator (SRTENG) vibration sensor" .
+_:c4c42f1d0a89e3d76c0001839260d278 rdf:reifies <<( doc:FactsSrtengDevice schema1:name "Silicone Rubber Triboelectric Nanogenerator (SRTENG) vibration sensor" )>> ;
+	prov:wasDerivedFrom doc:512c48ed89f9 .
+doc:FactsDalianMaritimeUniversity schema1:postalCode "116026" .
+_:b1a0433f5972b3cede679d908fff28f4 rdf:reifies <<( doc:FactsDalianMaritimeUniversity schema1:postalCode "116026" )>> ;
+	prov:wasDerivedFrom doc:512c48ed89f9 .
+doc:FactsSrtengDevice None:has_predictive_maintenance_function doc:Factshealth_assessment_function_1 .
+_:ee5ccd1c7fe4e6aa64931364a1951731 rdf:reifies <<( doc:FactsSrtengDevice None:has_predictive_maintenance_function doc:Factshealth_assessment_function_1 )>> ;
+	prov:wasDerivedFrom doc:512c48ed89f9 .
+doc:FactsSrtengDevice a None:Predictive_maintenance_system_module .
+_:e1eb38f27f347a4186378bc1e567ff21 rdf:reifies <<( doc:FactsSrtengDevice rdf:type None:Predictive_maintenance_system_module )>> ;
+	prov:wasDerivedFrom doc:512c48ed89f9 .
+doc:FactsAuthorLeiGuo schema1:telephone "+86-13478948607" .
+_:d8089f9561794dda4219b9abe4c1ffae rdf:reifies <<( doc:FactsAuthorLeiGuo schema1:telephone "+86-13478948607" )>> ;
+	prov:wasDerivedFrom doc:512c48ed89f9 .
+doc:FactsFrequencyRangeValue None:has_text_value "frequency detection range: 1-300 Hz" .
+_:e2ef67370b6ccb18b63aafc20dd7524b rdf:reifies <<( doc:FactsFrequencyRangeValue None:has_text_value "frequency detection range: 1-300 Hz" )>> ;
+	prov:wasDerivedFrom doc:512c48ed89f9 .
+doc:FactsAuthorLeiGuo schema1:givenName "Yongjiu" .
+_:f65334c6d40497763cf831a9e1808067 rdf:reifies <<( doc:FactsAuthorLeiGuo schema1:givenName "Yongjiu" )>> ;
+	prov:wasDerivedFrom doc:512c48ed89f9 .
+doc:FactsSrtengDevice None:has_design_detail doc:Factsdurability_2h .
+_:a516f8b8fd33ddc8afad6a6c2070bfa7 rdf:reifies <<( doc:FactsSrtengDevice None:has_design_detail doc:Factsdurability_2h )>> ;
+	prov:wasDerivedFrom doc:512c48ed89f9 .
+doc:Factshealth_assessment_function_1 None:has_text_value "Equipment health assessment via vibration monitoring" .
+_:b42abe1289c53801e97ac88b73e06ff9 rdf:reifies <<( doc:Factshealth_assessment_function_1 None:has_text_value "Equipment health assessment via vibration monitoring" )>> ;
+	prov:wasDerivedFrom doc:512c48ed89f9 .
+doc:FactsAuthorLeiGuo schema1:givenName "Lei" .
+_:e5027ec9a132e70f44e7084ff0f34234 rdf:reifies <<( doc:FactsAuthorLeiGuo schema1:givenName "Lei" )>> ;
+	prov:wasDerivedFrom doc:512c48ed89f9 .
+doc:Factslinearity_R2_Value schema1:value 0.97974 .
+_:a40c998882f6c4cdd97f710cac606cd7 rdf:reifies <<( doc:Factslinearity_R2_Value schema1:value 0.97974 )>> ;
+	prov:wasDerivedFrom doc:512c48ed89f9 .
+doc:FactsMarineBlower None:has_text_value "marine blower equipment (practical validation target)" .
+_:fc5f01914c0074b8ae04080b6277602b rdf:reifies <<( doc:FactsMarineBlower None:has_text_value "marine blower equipment (practical validation target)" )>> ;
+	prov:wasDerivedFrom doc:512c48ed89f9 .
+doc:FactsSrtengDevice cco:is_about doc:FactsMarineBlower .
+_:cd4a758561e5b3fa6b83dee3af566d8a rdf:reifies <<( doc:FactsSrtengDevice cco:is_about doc:FactsMarineBlower )>> ;
+	prov:wasDerivedFrom doc:512c48ed89f9 .
+doc:FactsAuthorLeiGuo schema1:familyName "Zeng" .
+_:d090065bcc1d1767762fa9f7ed9ad571 rdf:reifies <<( doc:FactsAuthorLeiGuo schema1:familyName "Zeng" )>> ;
+	prov:wasDerivedFrom doc:512c48ed89f9 .
+doc:FactsSiliconeRubberTengArticle schema1:author doc:FactsAuthorLeiGuo .
+_:a42807c1b6b564d3dfc8a7df24931858 rdf:reifies <<( doc:FactsSiliconeRubberTengArticle schema1:author doc:FactsAuthorLeiGuo )>> ;
+	prov:wasDerivedFrom doc:512c48ed89f9 .
+doc:FactsSrtengDevice a schema1:Product .
+_:e130b92b05bc118658dd8db060eb399b rdf:reifies <<( doc:FactsSrtengDevice rdf:type schema1:Product )>> ;
+	prov:wasDerivedFrom doc:512c48ed89f9 .
+doc:FactsSiliconeRubberTengArticle None:has_title doc:Factsarticle_Title_1 .
+_:aa8f03f277616db0876312fe411cb057 rdf:reifies <<( doc:FactsSiliconeRubberTengArticle None:has_title doc:Factsarticle_Title_1 )>> ;
+	prov:wasDerivedFrom doc:512c48ed89f9 .
+doc:FactsDalianMaritimeUniversity schema1:address "Dalian, China" .
+_:ca8431b609b78583b6c3e23ab90579d rdf:reifies <<( doc:FactsDalianMaritimeUniversity schema1:address "Dalian, China" )>> ;
+	prov:wasDerivedFrom doc:512c48ed89f9 .
+doc:FactsAuthorLeiGuo schema1:familyName "Guo" .
+_:cbfaa20695b867a9d15133032437be07 rdf:reifies <<( doc:FactsAuthorLeiGuo schema1:familyName "Guo" )>> ;
+	prov:wasDerivedFrom doc:512c48ed89f9 .
+doc:FactsAuthorLeiGuo schema1:givenName "Hong" .
+_:eaab1b042fa0f836edcee6c35b338325 rdf:reifies <<( doc:FactsAuthorLeiGuo schema1:givenName "Hong" )>> ;
+	prov:wasDerivedFrom doc:512c48ed89f9 .
+doc:FactsAuthorLeiGuo schema1:email "zenghong@dlmu.edu.cn" .
+_:f2e16f01eb2cc3231eff79f085330db rdf:reifies <<( doc:FactsAuthorLeiGuo schema1:email "zenghong@dlmu.edu.cn" )>> ;
+	prov:wasDerivedFrom doc:512c48ed89f9 .
+doc:Factsdurability_2h a None:Design_detail .
+_:d46442e2bf7253beebe4b58cfc98779b rdf:reifies <<( doc:Factsdurability_2h rdf:type None:Design_detail )>> ;
+	prov:wasDerivedFrom doc:512c48ed89f9 .
+doc:FactsAuthorLeiGuo schema1:givenName "Junqi" .
+_:b4b11315d827e9dfac0897ee0e2bbd9d rdf:reifies <<( doc:FactsAuthorLeiGuo schema1:givenName "Junqi" )>> ;
+	prov:wasDerivedFrom doc:512c48ed89f9 .
+doc:Factsdurability_2h None:has_text_value "Durability test: stable output after 2 hours" .
+_:a72ffbe7d039755062e7c15c487b3c23 rdf:reifies <<( doc:Factsdurability_2h None:has_text_value "Durability test: stable output after 2 hours" )>> ;
+	prov:wasDerivedFrom doc:512c48ed89f9 .
+doc:FactsAuthorLeiGuo schema1:givenName "Juntian" .
+_:d6b24cabbe214930f84c68cd1f58a8ba rdf:reifies <<( doc:FactsAuthorLeiGuo schema1:givenName "Juntian" )>> ;
+	prov:wasDerivedFrom doc:512c48ed89f9 .
+doc:FactsMarineBlower a None:Maintainable_item .
+_:bf5d418d4253fedcb9d6fe4628f94cae rdf:reifies <<( doc:FactsMarineBlower rdf:type None:Maintainable_item )>> ;
+	prov:wasDerivedFrom doc:512c48ed89f9 .
+doc:FactsAuthorLeiGuo schema1:email "engineering_glay@dlmu.edu.cn" .
+_:be3d68d1b4b2ff6f05da427b2d107ce8 rdf:reifies <<( doc:FactsAuthorLeiGuo schema1:email "engineering_glay@dlmu.edu.cn" )>> ;
+	prov:wasDerivedFrom doc:512c48ed89f9 .
+doc:FactsSiliconeRubberTengArticle cco:is_about doc:FactsMarineBlower .
+_:dd98adf16feaee889bd32712012e9e0d rdf:reifies <<( doc:FactsSiliconeRubberTengArticle cco:is_about doc:FactsMarineBlower )>> ;
+	prov:wasDerivedFrom doc:512c48ed89f9 .
+doc:FactsFrequencyRangeValue None:has_text_value "amplitude detection range: 0.1-2 mm" .
+_:c82fdc6002b41a29d77636b6f29a44e5 rdf:reifies <<( doc:FactsFrequencyRangeValue None:has_text_value "amplitude detection range: 0.1-2 mm" )>> ;
+	prov:wasDerivedFrom doc:512c48ed89f9 .
+doc:FactsAuthorLeiGuo schema1:familyName "Liu" .
+_:a75a6ae42ef5bb6746b40988e24ca498 rdf:reifies <<( doc:FactsAuthorLeiGuo schema1:familyName "Liu" )>> ;
+	prov:wasDerivedFrom doc:512c48ed89f9 .
+doc:FactsAuthorLeiGuo schema1:familyName "Zhang" .
+_:fe541616c72f9f693f5e7e65bacf8ded rdf:reifies <<( doc:FactsAuthorLeiGuo schema1:familyName "Zhang" )>> ;
+	prov:wasDerivedFrom doc:512c48ed89f9 .
+doc:Factslinearity_R2_Value a None:Performance_value .
+_:f1292939d88fdce41644e023f73cf4dc rdf:reifies <<( doc:Factslinearity_R2_Value rdf:type None:Performance_value )>> ;
+	prov:wasDerivedFrom doc:512c48ed89f9 .
+doc:FactsAuthorLeiGuo schema1:email "zhjundong@126.com" .
+_:f8fcd107ee6697591673d26f04041390 rdf:reifies <<( doc:FactsAuthorLeiGuo schema1:email "zhjundong@126.com" )>> ;
+	prov:wasDerivedFrom doc:512c48ed89f9 .
+doc:FactsDalianMaritimeUniversity a schema1:Organization .
+_:d602a51018b85553fa1f8a12081fa6c3 rdf:reifies <<( doc:FactsDalianMaritimeUniversity rdf:type schema1:Organization )>> ;
+	prov:wasDerivedFrom doc:512c48ed89f9 .
+doc:FactsComparativeAssessment a None:Performance_indicator .
+_:d157f8be31414d9f3981a1201a4a63a4 rdf:reifies <<( doc:FactsComparativeAssessment rdf:type None:Performance_indicator )>> ;
+	prov:wasDerivedFrom doc:512c48ed89f9 .
+doc:Factslinearity_R2_Value cco:describes doc:FactsSrtengDevice .
+_:d691b16d75b7b158120ef8836b714134 rdf:reifies <<( doc:Factslinearity_R2_Value cco:describes doc:FactsSrtengDevice )>> ;
+	prov:wasDerivedFrom doc:512c48ed89f9 .
+doc:Factsarticle_Title_1 a None:Article_title .
+_:a55307fd74cdc478a2958d1d036117cb rdf:reifies <<( doc:Factsarticle_Title_1 rdf:type None:Article_title )>> ;
+	prov:wasDerivedFrom doc:512c48ed89f9 .
+doc:FactsAuthorLeiGuo schema1:familyName "Li" .
+_:ac629edeed4154004f482753604f0c75 rdf:reifies <<( doc:FactsAuthorLeiGuo schema1:familyName "Li" )>> ;
+	prov:wasDerivedFrom doc:512c48ed89f9 .
+doc:FactsAuthorLeiGuo schema1:givenName "Jundong" .
+_:f19fb5fcec750b1a33cf5adea8b39a3a rdf:reifies <<( doc:FactsAuthorLeiGuo schema1:givenName "Jundong" )>> ;
+	prov:wasDerivedFrom doc:512c48ed89f9 .
+doc:Factshealth_assessment_function_1 a None:Health_assessment .
+_:b5f7c465129b0e0a80098e06aadbce69 rdf:reifies <<( doc:Factshealth_assessment_function_1 rdf:type None:Health_assessment )>> ;
+	prov:wasDerivedFrom doc:512c48ed89f9 .
+doc:FactsSiliconeRubberTengArticle cco:is_about doc:FactsSrtengDevice .
+_:f5c94b7884768a5ed76cd9ee1f9cc6ce rdf:reifies <<( doc:FactsSiliconeRubberTengArticle cco:is_about doc:FactsSrtengDevice )>> ;
+	prov:wasDerivedFrom doc:512c48ed89f9 .
+doc:Factsdurability_2h None:has_interger_value 2 .
+_:a930551e0b3e32be46b2db746134a3bb rdf:reifies <<( doc:Factsdurability_2h None:has_interger_value 2 )>> ;
+	prov:wasDerivedFrom doc:512c48ed89f9 .
+doc:FactsAuthorLeiGuo schema1:email "ljt1208@dlmu.edu.cn" .
+_:eb1c3712921489d2820d42ca58e42c3a rdf:reifies <<( doc:FactsAuthorLeiGuo schema1:email "ljt1208@dlmu.edu.cn" )>> ;
+	prov:wasDerivedFrom doc:512c48ed89f9 .
+doc:Factsarticle_Title_1 None:has_text_value "Silicone Rubber Triboelectric Nanogenerator for Self-Powered Wide-Range Frequency Vibration Monitoring" .
+_:f63842cf765402124cddc98a774185bb rdf:reifies <<( doc:Factsarticle_Title_1 None:has_text_value "Silicone Rubber Triboelectric Nanogenerator for Self-Powered Wide-Range Frequency Vibration Monitoring" )>> ;
+	prov:wasDerivedFrom doc:512c48ed89f9 .
+doc:8376d883021f a prov:Entity , schema:text ;
+	prov:generatedAtTime "2026-06-12T03:56:32.112195Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+	schema:position 1 ;
+	schema:identifier "8376d883021f" .
+doc:FactsArticle1_9 None:has_publication_year doc:FactsPubYear2026_2 .
+_:d9ba058b31995f630b0c4bbe2ef78eff rdf:reifies <<( doc:FactsArticle1_9 None:has_publication_year doc:FactsPubYear2026_2 )>> ;
+	prov:wasDerivedFrom doc:8376d883021f .
+doc:FactsDomenicaTonelli rdfs:label "Domenica Tonelli"@en .
+_:bdc682b489fec71669920f42c7778831 rdf:reifies <<( doc:FactsDomenicaTonelli rdfs:label "Domenica Tonelli"@en )>> ;
+	prov:wasDerivedFrom doc:8376d883021f .
+doc:FactsArticle1_9 schema1:dateAccepted "2026-03-30"^^<http://www.w3.org/2001/XMLSchema#date> .
+_:c6ec4fa039f06b9dec9669e286b93893 rdf:reifies <<( doc:FactsArticle1_9 schema1:dateAccepted "2026-03-30"^^<http://www.w3.org/2001/XMLSchema#date> )>> ;
+	prov:wasDerivedFrom doc:8376d883021f .
+doc:FactsSrTeng None:has_predictive_maintenance_function None:Fault_feature_extraction .
+_:d59822d5cd9318061f3b67d378eea64f rdf:reifies <<( doc:FactsSrTeng None:has_predictive_maintenance_function None:Fault_feature_extraction )>> ;
+	prov:wasDerivedFrom doc:8376d883021f .
+doc:FactsConductiveFabricElectrodes a cco:Artifact .
+_:a9e5da37862b1624d7ccc5da68072592 rdf:reifies <<( doc:FactsConductiveFabricElectrodes rdf:type cco:Artifact )>> ;
+	prov:wasDerivedFrom doc:8376d883021f .
+doc:FactsSrTeng schema1:material doc:FactsConductiveFabricElectrodes .
+_:a153d9243c98a52e7b5f123fd400bc43 rdf:reifies <<( doc:FactsSrTeng schema1:material doc:FactsConductiveFabricElectrodes )>> ;
+	prov:wasDerivedFrom doc:8376d883021f .
+doc:DesignativeInformationContentEntity rdfs:comment "Â© 2026 by the author. Licensee MDPI, Basel, Switzerland. Open access under CC BY" .
+_:dcfbe73fe9a39865aabba39f1b264e90 rdf:reifies <<( doc:DesignativeInformationContentEntity rdfs:comment "Â© 2026 by the author. Licensee MDPI, Basel, Switzerland. Open access under CC BY" )>> ;
+	prov:wasDerivedFrom doc:8376d883021f .
+doc:FactsArticle1_9 schema1:datePublished "2026-03-30"^^<http://www.w3.org/2001/XMLSchema#date> .
+_:cf4a5853ee509ca264327a3fa17eab08 rdf:reifies <<( doc:FactsArticle1_9 schema1:datePublished "2026-03-30"^^<http://www.w3.org/2001/XMLSchema#date> )>> ;
+	prov:wasDerivedFrom doc:8376d883021f .
+doc:FactsArticle1_9 schema1:dateReceived "2026-02-12"^^<http://www.w3.org/2001/XMLSchema#date> .
+_:cdb14be9a714de685799f7c9c4e759d7 rdf:reifies <<( doc:FactsArticle1_9 schema1:dateReceived "2026-02-12"^^<http://www.w3.org/2001/XMLSchema#date> )>> ;
+	prov:wasDerivedFrom doc:8376d883021f .
+doc:FactsSrTeng None:has_design_detail doc:Factsdurability_2h .
+_:ca72f110032640ebb6e3275ee2401a75 rdf:reifies <<( doc:FactsSrTeng None:has_design_detail doc:Factsdurability_2h )>> ;
+	prov:wasDerivedFrom doc:8376d883021f .
+doc:FactsTeng a cco:Artifact .
+_:e019ac033bc57c4923eddb7248fd582b rdf:reifies <<( doc:FactsTeng rdf:type cco:Artifact )>> ;
+	prov:wasDerivedFrom doc:8376d883021f .
+doc:FactsTeng rdfs:label "triboelectric nanogenerator (TENG)"@en .
+_:a7425fe5181a38d75ed2fd88920ca021 rdf:reifies <<( doc:FactsTeng rdfs:label "triboelectric nanogenerator (TENG)"@en )>> ;
+	prov:wasDerivedFrom doc:8376d883021f .
+_:d46442e2bf7253beebe4b58cfc98779b prov:wasDerivedFrom doc:8376d883021f .
+doc:FactsConductiveFabricElectrodes rdfs:label "conductive fabric electrodes"@en .
+_:ab2f50550a6d50a20d97bd2c6d0337ae rdf:reifies <<( doc:FactsConductiveFabricElectrodes rdfs:label "conductive fabric electrodes"@en )>> ;
+	prov:wasDerivedFrom doc:8376d883021f .
+doc:FactsPubYear2026_2 None:has_interger_value 2026 .
+_:c8b5e6f3d148def08055dc147e5d22e4 rdf:reifies <<( doc:FactsPubYear2026_2 None:has_interger_value 2026 )>> ;
+	prov:wasDerivedFrom doc:8376d883021f .
+doc:Factsdurability_2h None:has_text_value "environmentally robust; tolerant to temperature, humidity, and electromagnetic interference" .
+_:c555f836a8bec7f0011b760dbea2ce74 rdf:reifies <<( doc:Factsdurability_2h None:has_text_value "environmentally robust; tolerant to temperature, humidity, and electromagnetic interference" )>> ;
+	prov:wasDerivedFrom doc:8376d883021f .
+doc:Factsdurability_2h None:has_text_value "operates via contact electrification and electrostatic induction" .
+_:d185be102e8dcbe8f858ddc055ad059f rdf:reifies <<( doc:Factsdurability_2h None:has_text_value "operates via contact electrification and electrostatic induction" )>> ;
+	prov:wasDerivedFrom doc:8376d883021f .
+doc:FactsArticle1_9 schema1:dateModified "2026-03-27"^^<http://www.w3.org/2001/XMLSchema#date> .
+_:d2669d6a3610ca3478e2871f39e654d4 rdf:reifies <<( doc:FactsArticle1_9 schema1:dateModified "2026-03-27"^^<http://www.w3.org/2001/XMLSchema#date> )>> ;
+	prov:wasDerivedFrom doc:8376d883021f .
+doc:Factsdurability_2h None:has_text_value "self-powered" .
+_:b035b356a3148a02d5f7cb31c5c1d83 rdf:reifies <<( doc:Factsdurability_2h None:has_text_value "self-powered" )>> ;
+	prov:wasDerivedFrom doc:8376d883021f .
+doc:FactsSrTeng None:has_predictive_maintenance_function None:Fault_detection .
+_:e77cff92cb06a0067fa7544c1a4dbb2a rdf:reifies <<( doc:FactsSrTeng None:has_predictive_maintenance_function None:Fault_detection )>> ;
+	prov:wasDerivedFrom doc:8376d883021f .
+doc:Factsdurability_2h None:has_text_value "requires seamless compatibility with diverse monitoring systems and data interfaces" .
+_:fc6544f12c35776cc782291f4d07b8e0 rdf:reifies <<( doc:Factsdurability_2h None:has_text_value "requires seamless compatibility with diverse monitoring systems and data interfaces" )>> ;
+	prov:wasDerivedFrom doc:8376d883021f .
+doc:FactsArticle1_9 a None:Predictive_Maintenance_Article .
+_:d26f6d5aa9a5a5322ec482155c4f8d55 rdf:reifies <<( doc:FactsArticle1_9 rdf:type None:Predictive_Maintenance_Article )>> ;
+	prov:wasDerivedFrom doc:8376d883021f .
+doc:FactsSrTeng rdfs:label "SR-TENG"@en .
+_:a24348acd9ed09ac77fc1c59097a6704 rdf:reifies <<( doc:FactsSrTeng rdfs:label "SR-TENG"@en )>> ;
+	prov:wasDerivedFrom doc:8376d883021f .
+doc:Factsdurability_2h None:has_text_value "optimize thickness and hardness to balance mechanical durability and high vibration sensitivity" .
+_:cb1106e7d08feac7a01123e1cdc83ebc rdf:reifies <<( doc:Factsdurability_2h None:has_text_value "optimize thickness and hardness to balance mechanical durability and high vibration sensitivity" )>> ;
+	prov:wasDerivedFrom doc:8376d883021f .
+doc:FactsArticle1_9 rdfs:label "Article describing SR-TENG"@en .
+_:cc8a2ecbc80c8f1101968d1aa8df3203 rdf:reifies <<( doc:FactsArticle1_9 rdfs:label "Article describing SR-TENG"@en )>> ;
+	prov:wasDerivedFrom doc:8376d883021f .
+doc:FactsTeng None:has_design_detail doc:Factsdurability_2h .
+_:dd4e12e7294d383617ca374676c1441f rdf:reifies <<( doc:FactsTeng None:has_design_detail doc:Factsdurability_2h )>> ;
+	prov:wasDerivedFrom doc:8376d883021f .
+doc:FactsSrTeng schema1:material doc:FactsSiliconeRubber .
+_:a142c3f75f9b850e1e009140c85b0945 rdf:reifies <<( doc:FactsSrTeng schema1:material doc:FactsSiliconeRubber )>> ;
+	prov:wasDerivedFrom doc:8376d883021f .
+doc:FactsSiliconeRubber rdfs:label "silicone rubber"@en .
+_:a85af4770e02b42f4a7af12fc04cd006 rdf:reifies <<( doc:FactsSiliconeRubber rdfs:label "silicone rubber"@en )>> ;
+	prov:wasDerivedFrom doc:8376d883021f .
+doc:FactsSrTeng a None:Predictive_maintenance_system_module .
+_:f30e9b888d5f64f0cb808bb9a92ed7a0 rdf:reifies <<( doc:FactsSrTeng rdf:type None:Predictive_maintenance_system_module )>> ;
+	prov:wasDerivedFrom doc:8376d883021f .
+doc:FactsArticle1_9 schema1:editor doc:FactsDomenicaTonelli .
+_:f4eda532bf345920033b1f736dbf8a rdf:reifies <<( doc:FactsArticle1_9 schema1:editor doc:FactsDomenicaTonelli )>> ;
+	prov:wasDerivedFrom doc:8376d883021f .
+doc:FactsPubYear2026_2 a None:Publication_year .
+_:b559370dceaeaca9293b969d0f642aa7 rdf:reifies <<( doc:FactsPubYear2026_2 rdf:type None:Publication_year )>> ;
+	prov:wasDerivedFrom doc:8376d883021f .
+doc:DesignativeInformationContentEntity a cco:DesignativeInformationContentEntity .
+_:c4eb12df56ce2af338c5ebcc7e4a3bd1 rdf:reifies <<( doc:DesignativeInformationContentEntity rdf:type cco:DesignativeInformationContentEntity )>> ;
+	prov:wasDerivedFrom doc:8376d883021f .
+doc:FactsDomenicaTonelli a schema1:Person .
+_:e24af25428ce17b5af2eeef20bf0ef41 rdf:reifies <<( doc:FactsDomenicaTonelli rdf:type schema1:Person )>> ;
+	prov:wasDerivedFrom doc:8376d883021f .
+doc:FactsSiliconeRubber a cco:Artifact .
+_:c962bf5f47c06ed133adca9149f006d1 rdf:reifies <<( doc:FactsSiliconeRubber rdf:type cco:Artifact )>> ;
+	prov:wasDerivedFrom doc:8376d883021f .
+doc:da74585dd6de a prov:Entity , schema:text ;
+	prov:generatedAtTime "2026-06-12T03:56:32.114887Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+	schema:position 2 ;
+	schema:identifier "da74585dd6de" .
+doc:FactsTestSetup a cco:InformationProcessingArtifact .
+_:c6aa6a2a62daf4d9fe798571cbefbc28 rdf:reifies <<( doc:FactsTestSetup rdf:type cco:InformationProcessingArtifact )>> ;
+	prov:wasDerivedFrom doc:da74585dd6de .
+doc:FactsElectrodeTop doc:factssteps "conductive fabric laminated on PET" .
+_:c64b500616a2bc8db12f2a1151d4a14a rdf:reifies <<( doc:FactsElectrodeTop doc:factssteps "conductive fabric laminated on PET" )>> ;
+	prov:wasDerivedFrom doc:da74585dd6de .
+doc:factssteps a rdf:Property .
+_:e9cc076fb0285a3c5ed47325fe575fcd rdf:reifies <<( doc:factssteps rdf:type rdf:Property )>> ;
+	prov:wasDerivedFrom doc:da74585dd6de .
+doc:FactsTestSetup doc:factssteps doc:Factsdasp_V10 .
+_:ece2a72fef8ba81d00810117b07f815c rdf:reifies <<( doc:FactsTestSetup doc:factssteps doc:Factsdasp_V10 )>> ;
+	prov:wasDerivedFrom doc:da74585dd6de .
+doc:FactsSiliconeRubberSheet doc:factssteps "Dragon Skin-30" .
+_:bcf079c1a705950ede6d27e989ff8925 rdf:reifies <<( doc:FactsSiliconeRubberSheet doc:factssteps "Dragon Skin-30" )>> ;
+	prov:wasDerivedFrom doc:da74585dd6de .
+doc:Factselectrometer_Keithley_6514 rdfs:label "Keithley 6514 electrometer" .
+_:f7c5ed1397c290e9f51997dc9d090d21 rdf:reifies <<( doc:Factselectrometer_Keithley_6514 rdfs:label "Keithley 6514 electrometer" )>> ;
+	prov:wasDerivedFrom doc:da74585dd6de .
+doc:FactsMonitoringShipboardBlowers a schema1:UseAction .
+_:be3a4dbaace1ad95ff341e5fd812f8c8 rdf:reifies <<( doc:FactsMonitoringShipboardBlowers rdf:type schema1:UseAction )>> ;
+	prov:wasDerivedFrom doc:da74585dd6de .
+doc:FactsTestSetup rdfs:label "electrical measurement test setup for SR-TENG" .
+_:d95e5c085a9ffa5c21d06f972071d77 rdf:reifies <<( doc:FactsTestSetup rdfs:label "electrical measurement test setup for SR-TENG" )>> ;
+	prov:wasDerivedFrom doc:da74585dd6de .
+doc:FactsPlaFrameAssembly doc:factssteps 30 .
+_:c486568aeebb94d2f170999e04aa4146 rdf:reifies <<( doc:FactsPlaFrameAssembly doc:factssteps 30 )>> ;
+	prov:wasDerivedFrom doc:da74585dd6de .
+doc:Factsdasp_V10 doc:factssteps "V10" .
+_:c2850f3d5887af961101af803660765 rdf:reifies <<( doc:Factsdasp_V10 doc:factssteps "V10" )>> ;
+	prov:wasDerivedFrom doc:da74585dd6de .
+doc:factssteps rdfs:label "used for" .
+_:c0d07de07379c5e4766a3cb917dd3ed9 rdf:reifies <<( doc:factssteps rdfs:label "used for" )>> ;
+	prov:wasDerivedFrom doc:da74585dd6de .
+doc:FactsSrTeng doc:factssteps doc:FactsMonitoringShipboardBlowers .
+_:a2a9d995a8beb440a08e1c4f412e6e5 rdf:reifies <<( doc:FactsSrTeng doc:factssteps doc:FactsMonitoringShipboardBlowers )>> ;
+	prov:wasDerivedFrom doc:da74585dd6de .
+doc:FactsEpoxyResin doc:factssteps "adhesive to secure integrated vibration layer between PLA frames" .
+_:d8fda8795da58207562a717489816d rdf:reifies <<( doc:FactsEpoxyResin doc:factssteps "adhesive to secure integrated vibration layer between PLA frames" )>> ;
+	prov:wasDerivedFrom doc:da74585dd6de .
+doc:FactsCopperWires a schema1:Product .
+_:c12f10543018f4a229a734d65b247d36 rdf:reifies <<( doc:FactsCopperWires rdf:type schema1:Product )>> ;
+	prov:wasDerivedFrom doc:da74585dd6de .
+doc:FactsTemperatureHumidityChamber a schema1:Device .
+_:d2122adc2797a1a6c1b94e5d089eefa4 rdf:reifies <<( doc:FactsTemperatureHumidityChamber rdf:type schema1:Device )>> ;
+	prov:wasDerivedFrom doc:da74585dd6de .
+doc:FactsVibrationLayer a cco:Artifact .
+_:dfee37a0619c7a950500bdc1aed7156d rdf:reifies <<( doc:FactsVibrationLayer rdf:type cco:Artifact )>> ;
+	prov:wasDerivedFrom doc:da74585dd6de .
+doc:FactsSiliconeRubberSheet doc:factssteps true .
+_:e769d66cfaea7e7903f377d71aa4d3b2 rdf:reifies <<( doc:FactsSiliconeRubberSheet doc:factssteps true )>> ;
+	prov:wasDerivedFrom doc:da74585dd6de .
+doc:Factsdasp_V10 doc:factssteps "Inelta, Chengdu, China" .
+_:d33a840318c4f92a5ba7311ad1322ce3 rdf:reifies <<( doc:Factsdasp_V10 doc:factssteps "Inelta, Chengdu, China" )>> ;
+	prov:wasDerivedFrom doc:da74585dd6de .
+doc:FactsSiliconeRubberSheet doc:factssteps "silicone rubber" .
+_:c4237ebc0afc8fce68b3d5f16cce3d4b rdf:reifies <<( doc:FactsSiliconeRubberSheet doc:factssteps "silicone rubber" )>> ;
+	prov:wasDerivedFrom doc:da74585dd6de .
+doc:FactsElectrodeTop a cco:Artifact .
+_:e3bc677174800af64f03481e314012bb rdf:reifies <<( doc:FactsElectrodeTop rdf:type cco:Artifact )>> ;
+	prov:wasDerivedFrom doc:da74585dd6de .
+doc:FactsElectrodeTop rdfs:label "Flexible electrode (bottom)" .
+_:e700393df0e3ff84b8c4b1f1e47ae7bf rdf:reifies <<( doc:FactsElectrodeTop rdfs:label "Flexible electrode (bottom)" )>> ;
+	prov:wasDerivedFrom doc:da74585dd6de .
+doc:factstemperatureHumidityTestsConductedIn a rdf:Property .
+_:e44a4408514d9c2589a3aa303e413bb3 rdf:reifies <<( doc:factstemperatureHumidityTestsConductedIn rdf:type rdf:Property )>> ;
+	prov:wasDerivedFrom doc:da74585dd6de .
+doc:FactsSiliconeRubberSheet doc:factssteps 24 .
+_:f4ccd28dcbb20065df9ecb494212f69 rdf:reifies <<( doc:FactsSiliconeRubberSheet doc:factssteps 24 )>> ;
+	prov:wasDerivedFrom doc:da74585dd6de .
+doc:FactsElectrodeTop doc:factssteps 36 .
+_:ab0c81cbcecefe0dd4f14e29673bdba8 rdf:reifies <<( doc:FactsElectrodeTop doc:factssteps 36 )>> ;
+	prov:wasDerivedFrom doc:da74585dd6de .
+doc:FactsSrTeng doc:factssteps doc:FactsHeatShrinkTubing .
+_:fc03b9795a37e5b124989f72259f8861 rdf:reifies <<( doc:FactsSrTeng doc:factssteps doc:FactsHeatShrinkTubing )>> ;
+	prov:wasDerivedFrom doc:da74585dd6de .
+doc:FactsPlaFrameAssembly doc:factssteps "isopropyl alcohol (IPA)" .
+_:db9b8224edd853fd9cf37ec7189aa5e8 rdf:reifies <<( doc:FactsPlaFrameAssembly doc:factssteps "isopropyl alcohol (IPA)" )>> ;
+	prov:wasDerivedFrom doc:da74585dd6de .
+doc:FactsVibrationLayer doc:factssteps doc:FactsElectrodeTop .
+_:a04842a496edfe2b57b1e4df639bde70 rdf:reifies <<( doc:FactsVibrationLayer doc:factssteps doc:FactsElectrodeTop )>> ;
+	prov:wasDerivedFrom doc:da74585dd6de .
+doc:factsthermalCuringTime a rdf:Property .
+_:f88776672a6d7240084619af1d46c62e rdf:reifies <<( doc:factsthermalCuringTime rdf:type rdf:Property )>> ;
+	prov:wasDerivedFrom doc:da74585dd6de .
+doc:Factselectrodynamic_Shaker_JZK20 a schema1:Device .
+_:ab45cc95f8455c52fdc614df3325930b rdf:reifies <<( doc:Factselectrodynamic_Shaker_JZK20 rdf:type schema1:Device )>> ;
+	prov:wasDerivedFrom doc:da74585dd6de .
+doc:factssteps rdfs:label "has component" .
+_:d94e0baa9966912218c83e8cc6404abe rdf:reifies <<( doc:factssteps rdfs:label "has component" )>> ;
+	prov:wasDerivedFrom doc:da74585dd6de .
+doc:FactsElectrodeTop rdfs:label "Flexible electrode (top)" .
+_:f2fdc594f9107b8b8d62f3804d72d41d rdf:reifies <<( doc:FactsElectrodeTop rdfs:label "Flexible electrode (top)" )>> ;
+	prov:wasDerivedFrom doc:da74585dd6de .
+doc:FactsCopperWires doc:factsthermalCuringTime "80"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+_:d6377aee0e9ccfba5e57f59f86a1890 rdf:reifies <<( doc:FactsCopperWires doc:factsthermalCuringTime "80"^^<http://www.w3.org/2001/XMLSchema#decimal> )>> ;
+	prov:wasDerivedFrom doc:da74585dd6de .
+doc:FactsMonitoringShipboardBlowers rdfs:label "monitoring of shipboard blowers (application demonstration)" .
+_:aca02c01c1cb0b8594a54dcfacdd10c3 rdf:reifies <<( doc:FactsMonitoringShipboardBlowers rdfs:label "monitoring of shipboard blowers (application demonstration)" )>> ;
+	prov:wasDerivedFrom doc:da74585dd6de .
+doc:FactsPlaFrameAssembly doc:factssteps 40 .
+_:e6e19bcdea7017755a46d5504f9c0132 rdf:reifies <<( doc:FactsPlaFrameAssembly doc:factssteps 40 )>> ;
+	prov:wasDerivedFrom doc:da74585dd6de .
+doc:Factselectrometer_Keithley_6514 rdfs:label "KS96.100 accelerometer" .
+_:a0635ee7929e17ecb9f1b9cd4bbee8a2 rdf:reifies <<( doc:Factselectrometer_Keithley_6514 rdfs:label "KS96.100 accelerometer" )>> ;
+	prov:wasDerivedFrom doc:da74585dd6de .
+doc:Factselectrometer_Keithley_6514 a schema1:Device .
+_:b7ef97cba41c72f2e1dbb1a1e68d9905 rdf:reifies <<( doc:Factselectrometer_Keithley_6514 rdf:type schema1:Device )>> ;
+	prov:wasDerivedFrom doc:da74585dd6de .
+doc:FactsVibrationLayer rdfs:label "freestanding vibration layer (silicone rubber sandwiched between two PET-conductive fabric electrodes)" .
+_:afef5f2f883c9d57779fba4f3c2f78b0 rdf:reifies <<( doc:FactsVibrationLayer rdfs:label "freestanding vibration layer (silicone rubber sandwiched between two PET-conductive fabric electrodes)" )>> ;
+	prov:wasDerivedFrom doc:da74585dd6de .
+doc:FactsSiliconeRubberSheet doc:factsthermalCuringTime "60"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+_:ee10559516f53a4417026c37ac1f5242 rdf:reifies <<( doc:FactsSiliconeRubberSheet doc:factsthermalCuringTime "60"^^<http://www.w3.org/2001/XMLSchema#decimal> )>> ;
+	prov:wasDerivedFrom doc:da74585dd6de .
+doc:FactsSiliconeRubberSheet doc:factssteps "1"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+_:be8684d8171e766419064d9e69ed02e9 rdf:reifies <<( doc:FactsSiliconeRubberSheet doc:factssteps "1"^^<http://www.w3.org/2001/XMLSchema#decimal> )>> ;
+	prov:wasDerivedFrom doc:da74585dd6de .
+doc:FactsHeatShrinkTubing a schema1:Product .
+_:b1191c85efc97bd69fe398be9bbec4e2 rdf:reifies <<( doc:FactsHeatShrinkTubing rdf:type schema1:Product )>> ;
+	prov:wasDerivedFrom doc:da74585dd6de .
+doc:FactsSiliconeRubberSheet doc:factssteps "10:1" .
+_:b229f0b163530d50e62abb79faf917ef rdf:reifies <<( doc:FactsSiliconeRubberSheet doc:factssteps "10:1" )>> ;
+	prov:wasDerivedFrom doc:da74585dd6de .
+doc:FactsSiliconeRubberSheet rdfs:label "Silicone rubber sheet (Dragon Skin-30)" .
+_:e88e2b3559dc3fa5b4c800e75f397b09 rdf:reifies <<( doc:FactsSiliconeRubberSheet rdfs:label "Silicone rubber sheet (Dragon Skin-30)" )>> ;
+	prov:wasDerivedFrom doc:da74585dd6de .
+doc:FactsTemperatureHumidityChamber doc:factssteps "temperature and humidity performance verification" .
+_:dfbd83ad2e928c33695a344fc4fbb16d rdf:reifies <<( doc:FactsTemperatureHumidityChamber doc:factssteps "temperature and humidity performance verification" )>> ;
+	prov:wasDerivedFrom doc:da74585dd6de .
+doc:FactsTestSetup doc:factssteps doc:Factselectrometer_Keithley_6514 .
+_:f5d6bb14bd17ea80e544dfa87a96c2ce rdf:reifies <<( doc:FactsTestSetup doc:factssteps doc:Factselectrometer_Keithley_6514 )>> ;
+	prov:wasDerivedFrom doc:da74585dd6de .
+doc:FactsPlaFrameAssembly doc:factsinnerCavityWidth 32 .
+_:a7ddce78840d091502ef55fb2c3ddb58 rdf:reifies <<( doc:FactsPlaFrameAssembly doc:factsinnerCavityWidth 32 )>> ;
+	prov:wasDerivedFrom doc:da74585dd6de .
+doc:Factselectrometer_Keithley_6514 doc:factssteps "open-circuit voltage; short-circuit current; transferred charge" .
+_:dc6acca8bb7b6a7ee805a75f77eaaa41 rdf:reifies <<( doc:Factselectrometer_Keithley_6514 doc:factssteps "open-circuit voltage; short-circuit current; transferred charge" )>> ;
+	prov:wasDerivedFrom doc:da74585dd6de .
+doc:FactsPlaFrameAssembly doc:factsinnerCavityWidth 22 .
+_:f0da0ec11c86d1f4b3d7d455dd72e199 rdf:reifies <<( doc:FactsPlaFrameAssembly doc:factsinnerCavityWidth 22 )>> ;
+	prov:wasDerivedFrom doc:da74585dd6de .
+doc:FactsSrTeng doc:factssteps doc:FactsCopperWires .
+_:cf9d1fd4bed2aab8729f96723ee303e7 rdf:reifies <<( doc:FactsSrTeng doc:factssteps doc:FactsCopperWires )>> ;
+	prov:wasDerivedFrom doc:da74585dd6de .
+doc:Factsfunction_Generator_YE1311 rdfs:label "YE1311 function generator" .
+_:d87662d9c3748490a7879ed102ec866a rdf:reifies <<( doc:Factsfunction_Generator_YE1311 rdfs:label "YE1311 function generator" )>> ;
+	prov:wasDerivedFrom doc:da74585dd6de .
+doc:factsinnerCavityWidth a rdf:Property .
+_:f046dd0c0deb4282af9f1556d5c01e0e rdf:reifies <<( doc:factsinnerCavityWidth rdf:type rdf:Property )>> ;
+	prov:wasDerivedFrom doc:da74585dd6de .
+doc:FactsFabricationProcess doc:factssteps doc:FactsFabricationEnvironment .
+_:e0a10f856efe698304763949c65502eb rdf:reifies <<( doc:FactsFabricationProcess doc:factssteps doc:FactsFabricationEnvironment )>> ;
+	prov:wasDerivedFrom doc:da74585dd6de .
+doc:FactsSrTeng a schema1:Device .
+_:d605f30475a7277c937665e60bd6807f rdf:reifies <<( doc:FactsSrTeng rdf:type schema1:Device )>> ;
+	prov:wasDerivedFrom doc:da74585dd6de .
+doc:Factsamplifier_YE5852 a schema1:Device .
+_:cb6e559411fbf3c4c32acd966022d316 rdf:reifies <<( doc:Factsamplifier_YE5852 rdf:type schema1:Device )>> ;
+	prov:wasDerivedFrom doc:da74585dd6de .
+doc:FactsMonitoringShipboardBlowers doc:factssteps doc:FactsSrTeng .
+_:cb90dd9ec520ebf319e93a2c4063b19b rdf:reifies <<( doc:FactsMonitoringShipboardBlowers doc:factssteps doc:FactsSrTeng )>> ;
+	prov:wasDerivedFrom doc:da74585dd6de .
+doc:FactsSrTeng doc:factssteps doc:FactsEpoxyResin .
+_:e7e644fe9dc5752353ad07824dd04a9c rdf:reifies <<( doc:FactsSrTeng doc:factssteps doc:FactsEpoxyResin )>> ;
+	prov:wasDerivedFrom doc:da74585dd6de .
+doc:FactsHeatShrinkTubing rdfs:label "heat-shrink tubing (insulation)" .
+_:d5e5a0b8f09e179c8851956345d5642a rdf:reifies <<( doc:FactsHeatShrinkTubing rdfs:label "heat-shrink tubing (insulation)" )>> ;
+	prov:wasDerivedFrom doc:da74585dd6de .
+doc:FactsCopperWires doc:factsthermalCuringTime "PT30M"^^<http://www.w3.org/2001/XMLSchema#duration> .
+_:b4cf157f7bb72d49bc240ecbdea40222 rdf:reifies <<( doc:FactsCopperWires doc:factsthermalCuringTime "PT30M"^^<http://www.w3.org/2001/XMLSchema#duration> )>> ;
+	prov:wasDerivedFrom doc:da74585dd6de .
+doc:FactsSrTeng rdfs:label "SR-TENG" .
+_:ba657eca0995e84a0d0ca611be290ef2 rdf:reifies <<( doc:FactsSrTeng rdfs:label "SR-TENG" )>> ;
+	prov:wasDerivedFrom doc:da74585dd6de .
+doc:FactsTemperatureHumidityChamber rdfs:label "programmable temperature and humidity test chamber" .
+_:c3b9c942e26fe53895dc1018b06f4eb8 rdf:reifies <<( doc:FactsTemperatureHumidityChamber rdfs:label "programmable temperature and humidity test chamber" )>> ;
+	prov:wasDerivedFrom doc:da74585dd6de .
+doc:FactsSrTeng doc:factssteps doc:FactsElectrodeTop .
+_:b99ed539b1c2dfab5e637a628acb21eb rdf:reifies <<( doc:FactsSrTeng doc:factssteps doc:FactsElectrodeTop )>> ;
+	prov:wasDerivedFrom doc:da74585dd6de .
+doc:Factsdasp_V10 rdfs:label "DASP software (Version V10, Inelta, Chengdu, China)" .
+_:f55696fdb9dbced538af0cf844aa60c5 rdf:reifies <<( doc:Factsdasp_V10 rdfs:label "DASP software (Version V10, Inelta, Chengdu, China)" )>> ;
+	prov:wasDerivedFrom doc:da74585dd6de .
+doc:Factsdasp_V10 a schema1:SoftwareApplication .
+_:b677257b2c11ec303de2b088c414ffb6 rdf:reifies <<( doc:Factsdasp_V10 rdf:type schema1:SoftwareApplication )>> ;
+	prov:wasDerivedFrom doc:da74585dd6de .
+doc:FactsSrTeng doc:factssteps doc:FactsPlaFrameAssembly .
+_:f9ce0bb07aa140ebf8c8cdc51c5e0c3c rdf:reifies <<( doc:FactsSrTeng doc:factssteps doc:FactsPlaFrameAssembly )>> ;
+	prov:wasDerivedFrom doc:da74585dd6de .
+doc:FactsHeatShrinkTubing doc:factssteps "insulating exposed copper leads" .
+_:bb7ca559973aea4c548f486c42476f55 rdf:reifies <<( doc:FactsHeatShrinkTubing doc:factssteps "insulating exposed copper leads" )>> ;
+	prov:wasDerivedFrom doc:da74585dd6de .
+doc:Factsfunction_Generator_YE1311 a schema1:Device .
+_:b74f70ae8dee8c8d1b538bcf404b98ea rdf:reifies <<( doc:Factsfunction_Generator_YE1311 rdf:type schema1:Device )>> ;
+	prov:wasDerivedFrom doc:da74585dd6de .
+doc:FactsFabricationProcess doc:factssteps "layer-by-layer assembly; lamination of conductive fabric on PET; mixing and casting silicone; degassing; thermal curing; electrode lamination; attachment of copper wires; curing; assembly; insulation" .
+_:e7a39eafa56df2f9596ba85f92ae914a rdf:reifies <<( doc:FactsFabricationProcess doc:factssteps "layer-by-layer assembly; lamination of conductive fabric on PET; mixing and casting silicone; degassing; thermal curing; electrode lamination; attachment of copper wires; curing; assembly; insulation" )>> ;
+	prov:wasDerivedFrom doc:da74585dd6de .
+doc:FactsSiliconeRubberSheet doc:factsthermalCuringTime "PT2H"^^<http://www.w3.org/2001/XMLSchema#duration> .
+_:f660c89383d06356f45eb22384436e5e rdf:reifies <<( doc:FactsSiliconeRubberSheet doc:factsthermalCuringTime "PT2H"^^<http://www.w3.org/2001/XMLSchema#duration> )>> ;
+	prov:wasDerivedFrom doc:da74585dd6de .
+doc:FactsFabricationProcess a cco:InformationProcessingArtifact .
+_:d4bb72d79fb8d020f0d6fe889e7433a8 rdf:reifies <<( doc:FactsFabricationProcess rdf:type cco:InformationProcessingArtifact )>> ;
+	prov:wasDerivedFrom doc:da74585dd6de .
+doc:FactsTestSetup doc:factssteps doc:Factsamplifier_YE5852 .
+_:e8cf81a24e088dda94ddac3804666b7e rdf:reifies <<( doc:FactsTestSetup doc:factssteps doc:Factsamplifier_YE5852 )>> ;
+	prov:wasDerivedFrom doc:da74585dd6de .
+doc:FactsEpoxyResin rdfs:label "epoxy resin (used to secure vibration layer between frames)" .
+_:f51d546991c333b8c6e026ff5c103c69 rdf:reifies <<( doc:FactsEpoxyResin rdfs:label "epoxy resin (used to secure vibration layer between frames)" )>> ;
+	prov:wasDerivedFrom doc:da74585dd6de .
+doc:FactsVibrationLayer doc:factssteps doc:FactsSiliconeRubberSheet .
+_:f30e987b77d6c06585536708441672af rdf:reifies <<( doc:FactsVibrationLayer doc:factssteps doc:FactsSiliconeRubberSheet )>> ;
+	prov:wasDerivedFrom doc:da74585dd6de .
+doc:FactsSrTeng doc:factssteps doc:FactsSiliconeRubberSheet .
+_:a58dfa176f81a4af56ce27004cf5e917 rdf:reifies <<( doc:FactsSrTeng doc:factssteps doc:FactsSiliconeRubberSheet )>> ;
+	prov:wasDerivedFrom doc:da74585dd6de .
+doc:FactsPlaFrameAssembly doc:factssteps "3D printing" .
+_:d2c4fb4c87159a5a1bfeb6a541a514b5 rdf:reifies <<( doc:FactsPlaFrameAssembly doc:factssteps "3D printing" )>> ;
+	prov:wasDerivedFrom doc:da74585dd6de .
+doc:FactsSrTeng a cco:Artifact .
+_:ef6f50beae54dee7aafcc3b5a1d68184 rdf:reifies <<( doc:FactsSrTeng rdf:type cco:Artifact )>> ;
+	prov:wasDerivedFrom doc:da74585dd6de .
+doc:Factsamplifier_YE5852 rdfs:label "YE5852 amplifier" .
+_:bae13ae0c8a54526a800b797bf071e9d rdf:reifies <<( doc:Factsamplifier_YE5852 rdfs:label "YE5852 amplifier" )>> ;
+	prov:wasDerivedFrom doc:da74585dd6de .
+doc:FactsElectrodeTop doc:factssteps 26 .
+_:d1d906d48eeae7999a8d8bfde9005deb rdf:reifies <<( doc:FactsElectrodeTop doc:factssteps 26 )>> ;
+	prov:wasDerivedFrom doc:da74585dd6de .
+doc:FactsPlaFrameAssembly doc:factssteps 8 .
+_:b85ed8af98e294337827051c3e86597b rdf:reifies <<( doc:FactsPlaFrameAssembly doc:factssteps 8 )>> ;
+	prov:wasDerivedFrom doc:da74585dd6de .
+doc:FactsTestSetup doc:factssteps doc:Factsfunction_Generator_YE1311 .
+_:d31130d2c65ebe0274b2d0137afa548a rdf:reifies <<( doc:FactsTestSetup doc:factssteps doc:Factsfunction_Generator_YE1311 )>> ;
+	prov:wasDerivedFrom doc:da74585dd6de .
+doc:FactsFabricationProcess rdfs:label "SR-TENG fabrication procedure" .
+_:f9b5d11e9881b44e90a6757f9723f1ea rdf:reifies <<( doc:FactsFabricationProcess rdfs:label "SR-TENG fabrication procedure" )>> ;
+	prov:wasDerivedFrom doc:da74585dd6de .
+doc:FactsSiliconeRubberSheet doc:factssteps 34 .
+_:c5eb2f3e6c65b7d9d20f5f49ade14bba rdf:reifies <<( doc:FactsSiliconeRubberSheet doc:factssteps 34 )>> ;
+	prov:wasDerivedFrom doc:da74585dd6de .
+doc:Factselectrometer_Keithley_6514 doc:factssteps "acceleration" .
+_:f01d1a444a59fdf5040ce929b8a7e633 rdf:reifies <<( doc:Factselectrometer_Keithley_6514 doc:factssteps "acceleration" )>> ;
+	prov:wasDerivedFrom doc:da74585dd6de .
+doc:FactsTestSetup doc:factstemperatureHumidityTestsConductedIn doc:FactsTemperatureHumidityChamber .
+_:bd525d409e364fb2fb51afe4088f7714 rdf:reifies <<( doc:FactsTestSetup doc:factstemperatureHumidityTestsConductedIn doc:FactsTemperatureHumidityChamber )>> ;
+	prov:wasDerivedFrom doc:da74585dd6de .
+doc:FactsPlaFrameAssembly a cco:Artifact .
+_:be543f6a31f9ace6d926904b23ae053b rdf:reifies <<( doc:FactsPlaFrameAssembly rdf:type cco:Artifact )>> ;
+	prov:wasDerivedFrom doc:da74585dd6de .
+doc:FactsEpoxyResin a schema1:Product .
+_:e18c8cc782640401fc6954dfa1298c65 rdf:reifies <<( doc:FactsEpoxyResin rdf:type schema1:Product )>> ;
+	prov:wasDerivedFrom doc:da74585dd6de .
+doc:FactsFabricationEnvironment a schema1:Place .
+_:ff1962f2876b63f80d593473d724148f rdf:reifies <<( doc:FactsFabricationEnvironment rdf:type schema1:Place )>> ;
+	prov:wasDerivedFrom doc:da74585dd6de .
+doc:FactsPlaFrameAssembly rdfs:label "PLA arch-frame assembly (two frames)" .
+_:e7b88de5cef80cc643d7ed5390e60957 rdf:reifies <<( doc:FactsPlaFrameAssembly rdfs:label "PLA arch-frame assembly (two frames)" )>> ;
+	prov:wasDerivedFrom doc:da74585dd6de .
+doc:FactsSiliconeRubberSheet a schema1:Product .
+_:fbb1b73c46cf8dd680ce2f67701d653 rdf:reifies <<( doc:FactsSiliconeRubberSheet rdf:type schema1:Product )>> ;
+	prov:wasDerivedFrom doc:da74585dd6de .
+doc:FactsTestSetup doc:factssteps doc:Factselectrodynamic_Shaker_JZK20 .
+_:e0c5ad2186cdfd896eb307f83104ebf5 rdf:reifies <<( doc:FactsTestSetup doc:factssteps doc:Factselectrodynamic_Shaker_JZK20 )>> ;
+	prov:wasDerivedFrom doc:da74585dd6de .
+doc:FactsCopperWires rdfs:label "copper wires" .
+_:edfeeb0c8d1f48cf82a07d648f042ace rdf:reifies <<( doc:FactsCopperWires rdfs:label "copper wires" )>> ;
+	prov:wasDerivedFrom doc:da74585dd6de .
+doc:FactsCopperWires doc:factssteps "silver paste" .
+_:d4e7d7db3a5cd7842e1877864b02cf3 rdf:reifies <<( doc:FactsCopperWires doc:factssteps "silver paste" )>> ;
+	prov:wasDerivedFrom doc:da74585dd6de .
+doc:FactsFabricationEnvironment rdfs:label "Class 1000 cleanroom" .
+_:d049640bdaec3d975f4fdb1f44e64594 rdf:reifies <<( doc:FactsFabricationEnvironment rdfs:label "Class 1000 cleanroom" )>> ;
+	prov:wasDerivedFrom doc:da74585dd6de .
+doc:Factselectrodynamic_Shaker_JZK20 rdfs:label "JZK-20 electrodynamic shaker" .
+_:ae24a0f2d68557f9ed36cbbc1d07f13b rdf:reifies <<( doc:Factselectrodynamic_Shaker_JZK20 rdfs:label "JZK-20 electrodynamic shaker" )>> ;
+	prov:wasDerivedFrom doc:da74585dd6de .

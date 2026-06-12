@@ -1,0 +1,599 @@
+@prefix None: <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD/seed#> .
+@prefix cco: <http://www.ontologyrepository.com/CommonCoreOntologies/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doc: <https://growgraph.dev/doc/df8ade058f3c/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix obo: <http://purl.obolibrary.org/obo/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix schema: <https://schema.org/> .
+@prefix schema1: <http://schema.org/> .
+doc:fbf123739222 a prov:Entity , schema:text ;
+	prov:generatedAtTime "2026-06-12T07:14:42.255097Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+	schema:position 0 ;
+	schema:identifier "fbf123739222" .
+doc:factsperfRvflGadfS3 a None:Performance_value .
+_:eda5f0de57c4c50ac75bf8594d0a5b75 rdf:reifies <<( doc:factsperfRvflGadfS3 rdf:type None:Performance_value )>> ;
+	prov:wasDerivedFrom doc:fbf123739222 .
+doc:FactsArticle1_14 schema1:mentions doc:FactsSaConSinGan .
+_:b215a3a5403a68658f6f42afda14036d rdf:reifies <<( doc:FactsArticle1_14 schema1:mentions doc:FactsSaConSinGan )>> ;
+	prov:wasDerivedFrom doc:fbf123739222 .
+doc:factsperfRvflGadfS3 rdfs:label "fault classification accuracy for RVFL+GASF" .
+_:d73be43e1859186b65897bfc5b838afd rdf:reifies <<( doc:factsperfRvflGadfS3 rdfs:label "fault classification accuracy for RVFL+GASF" )>> ;
+	prov:wasDerivedFrom doc:fbf123739222 .
+doc:FactsGasf a cco:Algorithm .
+_:bc47bfd47a939271878f5acea25dda4f rdf:reifies <<( doc:FactsGasf rdf:type cco:Algorithm )>> ;
+	prov:wasDerivedFrom doc:fbf123739222 .
+doc:FactsArticle1_14 rdfs:label "predictive maintenance system (GAF + SA-ConSinGAN + reservoir computing)" .
+_:b992ffd47674c6a4c49cd9b8300c8c86 rdf:reifies <<( doc:FactsArticle1_14 rdfs:label "predictive maintenance system (GAF + SA-ConSinGAN + reservoir computing)" )>> ;
+	prov:wasDerivedFrom doc:fbf123739222 .
+doc:FactsArticle1_14 a None:Predictive_Maintenance_Article .
+_:c5cfb80b472226abaf3c53cfe329f913 rdf:reifies <<( doc:FactsArticle1_14 rdf:type None:Predictive_Maintenance_Article )>> ;
+	prov:wasDerivedFrom doc:fbf123739222 .
+doc:FactsSaConSinGan a cco:Algorithm .
+_:df68796939c81a4b3e41f36931f098cc rdf:reifies <<( doc:FactsSaConSinGan rdf:type cco:Algorithm )>> ;
+	prov:wasDerivedFrom doc:fbf123739222 .
+doc:FactstitleSaConSinGan rdfs:label "SA-ConSinGAN and reservoir computing fusion for accurate bearing fault classification and severity identification using GAFbased techniques" .
+_:a469580029d25a43f3b2cabeef923177 rdf:reifies <<( doc:FactstitleSaConSinGan rdfs:label "SA-ConSinGAN and reservoir computing fusion for accurate bearing fault classification and severity identification using GAFbased techniques" )>> ;
+	prov:wasDerivedFrom doc:fbf123739222 .
+doc:FactsimageAugmentation rdfs:label "increase number of transformed images (image augmentation)" .
+_:fff8297e24b8034cb897a71b74939e23 rdf:reifies <<( doc:FactsimageAugmentation rdfs:label "increase number of transformed images (image augmentation)" )>> ;
+	prov:wasDerivedFrom doc:fbf123739222 .
+doc:FactsLsm rdfs:label "Liquid State Machine (LSM)" .
+_:a31065fae72ca3b54404c2c0e4168dd1 rdf:reifies <<( doc:FactsLsm rdfs:label "Liquid State Machine (LSM)" )>> ;
+	prov:wasDerivedFrom doc:fbf123739222 .
+doc:FactsTenFoldCv a cco:DirectiveInformationContentEntity .
+_:d3056a4bcf4d8ef513b2746afe953aa4 rdf:reifies <<( doc:FactsTenFoldCv rdf:type cco:DirectiveInformationContentEntity )>> ;
+	prov:wasDerivedFrom doc:fbf123739222 .
+cco:describes doc:factsperfRvflGadfS3 doc:FactsRvflGasf .
+_:f2c8ad8b94ed22f533a8f6c6d572b3a rdf:reifies <<( cco:describes doc:factsperfRvflGadfS3 doc:FactsRvflGasf )>> ;
+	prov:wasDerivedFrom doc:fbf123739222 .
+cco:describes doc:factsperfRvflGadfS3 doc:Factsseverity_S3 .
+_:a8809823a0d853595474ded933975bc5 rdf:reifies <<( cco:describes doc:factsperfRvflGadfS3 doc:Factsseverity_S3 )>> ;
+	prov:wasDerivedFrom doc:fbf123739222 .
+doc:FactsArticle1_14 schema1:mentions doc:FactsEsn .
+_:cc2edf39564e451ba523c1cebd246047 rdf:reifies <<( doc:FactsArticle1_14 schema1:mentions doc:FactsEsn )>> ;
+	prov:wasDerivedFrom doc:fbf123739222 .
+doc:FactsSaConSinGan rdfs:label "SA-ConSinGAN" .
+_:fd5de4e4362e229183d3ce7d641e8d6f rdf:reifies <<( doc:FactsSaConSinGan rdfs:label "SA-ConSinGAN" )>> ;
+	prov:wasDerivedFrom doc:fbf123739222 .
+doc:FactsArticle1_14 None:has_predictive_maintenance_function None:Fault_detection .
+_:b6f12053d25ac00fe085b5d2e2766eba rdf:reifies <<( doc:FactsArticle1_14 None:has_predictive_maintenance_function None:Fault_detection )>> ;
+	prov:wasDerivedFrom doc:fbf123739222 .
+doc:FactsRvflGasf rdfs:label "RVFL + GADF combination" .
+_:d1ecf4f7e5674027d9026677a18ecd85 rdf:reifies <<( doc:FactsRvflGasf rdfs:label "RVFL + GADF combination" )>> ;
+	prov:wasDerivedFrom doc:fbf123739222 .
+doc:FactsRgasf a cco:Algorithm .
+_:d6b2a9acf7d6feb432d01dbe8229c8c5 rdf:reifies <<( doc:FactsRgasf rdf:type cco:Algorithm )>> ;
+	prov:wasDerivedFrom doc:fbf123739222 .
+doc:FactsRvflGasf a None:Predictive_maintenance_model .
+_:d519f60f815d72668dba29cc52bbaa2d rdf:reifies <<( doc:FactsRvflGasf rdf:type None:Predictive_maintenance_model )>> ;
+	prov:wasDerivedFrom doc:fbf123739222 .
+doc:FactsArticle1_14 cco:is_about doc:FactsArticle1_14 .
+_:e2e64dc6c3ea980ce73dc81d72fdca83 rdf:reifies <<( doc:FactsArticle1_14 cco:is_about doc:FactsArticle1_14 )>> ;
+	prov:wasDerivedFrom doc:fbf123739222 .
+doc:FactsEsn a None:Predictive_maintenance_model .
+_:a69791039b7e9b4cab5a81249cd79cd2 rdf:reifies <<( doc:FactsEsn rdf:type None:Predictive_maintenance_model )>> ;
+	prov:wasDerivedFrom doc:fbf123739222 .
+doc:FactsRvflGasf rdfs:label "RVFL + GASF combination" .
+_:e49a56ef0b80003245c4861a55a223e2 rdf:reifies <<( doc:FactsRvflGasf rdfs:label "RVFL + GASF combination" )>> ;
+	prov:wasDerivedFrom doc:fbf123739222 .
+doc:FactsGasf rdfs:label "Gramian Angular Summation Field (GASF)" .
+_:e9b810b0795fa2a960faabcdcfcffd75 rdf:reifies <<( doc:FactsGasf rdfs:label "Gramian Angular Summation Field (GASF)" )>> ;
+	prov:wasDerivedFrom doc:fbf123739222 .
+doc:FactsArticle1_14 schema1:author doc:FactsVinayVakharia .
+_:ad1248bd3398afce2d9a412f0133bb15 rdf:reifies <<( doc:FactsArticle1_14 schema1:author doc:FactsVinayVakharia )>> ;
+	prov:wasDerivedFrom doc:fbf123739222 .
+doc:Factsseverity_S3 a cco:DesignativeName .
+_:ad5a45631b276c10045686a310120a79 rdf:reifies <<( doc:Factsseverity_S3 rdf:type cco:DesignativeName )>> ;
+	prov:wasDerivedFrom doc:fbf123739222 .
+doc:FactsBearing_1 a None:Maintainable_item .
+_:f91e4600d24fabde40a3bc5598a8a8c2 rdf:reifies <<( doc:FactsBearing_1 rdf:type None:Maintainable_item )>> ;
+	prov:wasDerivedFrom doc:fbf123739222 .
+doc:FactsArticle1_14 cco:is_about doc:FactsvibrationStatisticalFeatures .
+_:b4404c88e2b474b2d255ef9335a59211 rdf:reifies <<( doc:FactsArticle1_14 cco:is_about doc:FactsvibrationStatisticalFeatures )>> ;
+	prov:wasDerivedFrom doc:fbf123739222 .
+doc:FactsVinayVakharia rdfs:label "Muhammad Fazal Ijaz" .
+_:a123e06223f9ba2e03f01301624cbebe rdf:reifies <<( doc:FactsVinayVakharia rdfs:label "Muhammad Fazal Ijaz" )>> ;
+	prov:wasDerivedFrom doc:fbf123739222 .
+doc:FactsRvflGasf rdfs:label "RVFL + RGASF combination" .
+_:acf4d9c31aad82e1159d87a1a0af16ab rdf:reifies <<( doc:FactsRvflGasf rdfs:label "RVFL + RGASF combination" )>> ;
+	prov:wasDerivedFrom doc:fbf123739222 .
+doc:FactsSaConSinGan cco:is_about doc:FactsimageAugmentation .
+_:f76895594c2e464ce88528f1b7722a54 rdf:reifies <<( doc:FactsSaConSinGan cco:is_about doc:FactsimageAugmentation )>> ;
+	prov:wasDerivedFrom doc:fbf123739222 .
+doc:factsperfRvflGadfS3 rdfs:label "fault classification accuracy for RVFL+RGASF" .
+_:c6897ecafc099e7129277f734894bf9b rdf:reifies <<( doc:factsperfRvflGadfS3 rdfs:label "fault classification accuracy for RVFL+RGASF" )>> ;
+	prov:wasDerivedFrom doc:fbf123739222 .
+doc:FactsEsn rdfs:label "Deep Echo State Network (Deep-ESN)" .
+_:ec827874dc0e664f58fbe48c60c6751f rdf:reifies <<( doc:FactsEsn rdfs:label "Deep Echo State Network (Deep-ESN)" )>> ;
+	prov:wasDerivedFrom doc:fbf123739222 .
+doc:FactsArticle1_14 schema1:mentions doc:FactsLsm .
+_:f3ff95d293a307f554ec6c851d3ca726 rdf:reifies <<( doc:FactsArticle1_14 schema1:mentions doc:FactsLsm )>> ;
+	prov:wasDerivedFrom doc:fbf123739222 .
+doc:FactsVinayVakharia rdfs:label "Vinay Vakharia" .
+_:bb9cd1966dbc0875a11c4ad901a20f2a rdf:reifies <<( doc:FactsVinayVakharia rdfs:label "Vinay Vakharia" )>> ;
+	prov:wasDerivedFrom doc:fbf123739222 .
+doc:FactsArticle1_14 None:has_title doc:FactstitleSaConSinGan .
+_:be22cf48a60d697ccd1d80de9711593f rdf:reifies <<( doc:FactsArticle1_14 None:has_title doc:FactstitleSaConSinGan )>> ;
+	prov:wasDerivedFrom doc:fbf123739222 .
+doc:FactsvibrationStatisticalFeatures a None:Data_variable .
+_:af3467932565d53929cb645270f276c6 rdf:reifies <<( doc:FactsvibrationStatisticalFeatures rdf:type None:Data_variable )>> ;
+	prov:wasDerivedFrom doc:fbf123739222 .
+doc:FactsGadf a cco:Algorithm .
+_:d7bccd71957b9ded800024dc81dd810b rdf:reifies <<( doc:FactsGadf rdf:type cco:Algorithm )>> ;
+	prov:wasDerivedFrom doc:fbf123739222 .
+doc:FactsArticle1_14 schema1:mentions doc:FactsNalsm .
+_:ed2ed403e5947f0d22aa8537597671 rdf:reifies <<( doc:FactsArticle1_14 schema1:mentions doc:FactsNalsm )>> ;
+	prov:wasDerivedFrom doc:fbf123739222 .
+doc:Factsseverity_S3 rdfs:label "S3" .
+_:cff2e0f92da013ef7e321d30a38fb7e3 rdf:reifies <<( doc:Factsseverity_S3 rdfs:label "S3" )>> ;
+	prov:wasDerivedFrom doc:fbf123739222 .
+doc:FactsVinayVakharia rdfs:label "Marcin WoÅºniak" .
+_:dca4391960c01051428c232873da5433 rdf:reifies <<( doc:FactsVinayVakharia rdfs:label "Marcin WoÅºniak" )>> ;
+	prov:wasDerivedFrom doc:fbf123739222 .
+doc:factsperfRvflGadfS3 schema1:value 99.96 .
+_:a68d6228f1b86607342be9f155883372 rdf:reifies <<( doc:factsperfRvflGadfS3 schema1:value 99.96 )>> ;
+	prov:wasDerivedFrom doc:fbf123739222 .
+doc:FactsVinayVakharia rdfs:label "Anjil Shah" .
+_:aa0ab1ca89a1e346e86d19368d778d47 rdf:reifies <<( doc:FactsVinayVakharia rdfs:label "Anjil Shah" )>> ;
+	prov:wasDerivedFrom doc:fbf123739222 .
+doc:FactsArticle1_14 cco:is_about doc:FactsBearing_1 .
+_:b4d45e84d65fcc6bddaf73ad6b5bd5b1 rdf:reifies <<( doc:FactsArticle1_14 cco:is_about doc:FactsBearing_1 )>> ;
+	prov:wasDerivedFrom doc:fbf123739222 .
+doc:FactsNalsm a None:Predictive_maintenance_model .
+_:a5d8554bd6b757355a2118abd85973b0 rdf:reifies <<( doc:FactsNalsm rdf:type None:Predictive_maintenance_model )>> ;
+	prov:wasDerivedFrom doc:fbf123739222 .
+doc:FactstitleSaConSinGan a None:Article_title .
+_:fd5c98c3cf201e7044a0f19034110452 rdf:reifies <<( doc:FactstitleSaConSinGan rdf:type None:Article_title )>> ;
+	prov:wasDerivedFrom doc:fbf123739222 .
+doc:FactsVinayVakharia a schema1:Person .
+_:c3b2b9193aceda87245e212bcdb82efe rdf:reifies <<( doc:FactsVinayVakharia rdf:type schema1:Person )>> ;
+	prov:wasDerivedFrom doc:fbf123739222 .
+doc:FactsRvfl a None:Predictive_maintenance_model .
+_:b5f4294c80317476d038ed1668872959 rdf:reifies <<( doc:FactsRvfl rdf:type None:Predictive_maintenance_model )>> ;
+	prov:wasDerivedFrom doc:fbf123739222 .
+doc:FactsArticle1_14 schema1:mentions doc:FactsGasf .
+_:ba011a7563461c86ae407959567cc573 rdf:reifies <<( doc:FactsArticle1_14 schema1:mentions doc:FactsGasf )>> ;
+	prov:wasDerivedFrom doc:fbf123739222 .
+doc:FactsLsm a None:Predictive_maintenance_model .
+_:b16df85d6d045a4366a95ab569e01ff6 rdf:reifies <<( doc:FactsLsm rdf:type None:Predictive_maintenance_model )>> ;
+	prov:wasDerivedFrom doc:fbf123739222 .
+doc:factsperfRvflGadfS3 schema1:value "100"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+_:ef531755749126ae40df95cc445ea76c rdf:reifies <<( doc:factsperfRvflGadfS3 schema1:value "100"^^<http://www.w3.org/2001/XMLSchema#decimal> )>> ;
+	prov:wasDerivedFrom doc:fbf123739222 .
+doc:FactsTenFoldCv rdfs:label "ten-fold cross-validation" .
+_:a43ae6c6539158cbb38eca3dfbf8bece rdf:reifies <<( doc:FactsTenFoldCv rdfs:label "ten-fold cross-validation" )>> ;
+	prov:wasDerivedFrom doc:fbf123739222 .
+doc:FactsvibrationStatisticalFeatures rdfs:label "vibration statistical features (time-domain, frequency-domain, time-frequency)" .
+_:b1ba94a03ce1af0cff1dad44334590a5 rdf:reifies <<( doc:FactsvibrationStatisticalFeatures rdfs:label "vibration statistical features (time-domain, frequency-domain, time-frequency)" )>> ;
+	prov:wasDerivedFrom doc:fbf123739222 .
+doc:FactsRgasf rdfs:label "Robust Gramian Angular Summation Field (RGASF)" .
+_:d2e9c2a2349e0417382141242644206f rdf:reifies <<( doc:FactsRgasf rdfs:label "Robust Gramian Angular Summation Field (RGASF)" )>> ;
+	prov:wasDerivedFrom doc:fbf123739222 .
+doc:FactsArticle1_14 schema1:mentions doc:FactsGadf .
+_:caa04d1d7ea97ba38a846a804e2f3a07 rdf:reifies <<( doc:FactsArticle1_14 schema1:mentions doc:FactsGadf )>> ;
+	prov:wasDerivedFrom doc:fbf123739222 .
+doc:FactsNalsm rdfs:label "Neuron-Astrocyte Liquid State Machine (NALSM)" .
+_:b25b5b164b36a1289c797ea6a130f8dd rdf:reifies <<( doc:FactsNalsm rdfs:label "Neuron-Astrocyte Liquid State Machine (NALSM)" )>> ;
+	prov:wasDerivedFrom doc:fbf123739222 .
+doc:FactsBearing_1 rdfs:label "rolling element bearing" .
+_:ec283888549b424fadacd69cbfbadf35 rdf:reifies <<( doc:FactsBearing_1 rdfs:label "rolling element bearing" )>> ;
+	prov:wasDerivedFrom doc:fbf123739222 .
+doc:FactsArticle1_14 schema1:mentions doc:FactsRvfl .
+_:bbbc9ca1fc294092e00874d0ac4594be rdf:reifies <<( doc:FactsArticle1_14 schema1:mentions doc:FactsRvfl )>> ;
+	prov:wasDerivedFrom doc:fbf123739222 .
+doc:FactsGadf rdfs:label "Gramian Angular Difference Field (GADF)" .
+_:c1aa565ff321aa047886e5221cbae621 rdf:reifies <<( doc:FactsGadf rdfs:label "Gramian Angular Difference Field (GADF)" )>> ;
+	prov:wasDerivedFrom doc:fbf123739222 .
+doc:FactsArticle1_14 a None:Predictive_maintenance_system_module .
+_:fb6a62788a711196dd00c574f4dc1f8c rdf:reifies <<( doc:FactsArticle1_14 rdf:type None:Predictive_maintenance_system_module )>> ;
+	prov:wasDerivedFrom doc:fbf123739222 .
+doc:FactsEsn rdfs:label "Echo State Network (ESN)" .
+_:bf3d5ad4192664bcac26b9b93c19c23a rdf:reifies <<( doc:FactsEsn rdfs:label "Echo State Network (ESN)" )>> ;
+	prov:wasDerivedFrom doc:fbf123739222 .
+doc:factsperfRvflGadfS3 rdfs:label "severity S3 classification accuracy for RVFL+GADF" .
+_:bb34d8f9a9843a8e00817881fd492c27 rdf:reifies <<( doc:factsperfRvflGadfS3 rdfs:label "severity S3 classification accuracy for RVFL+GADF" )>> ;
+	prov:wasDerivedFrom doc:fbf123739222 .
+doc:factsperfRvflGadfS3 rdfs:label "fault classification accuracy for RVFL+GADF" .
+_:ec36187f3921d8c18f5c913c2b22b7f8 rdf:reifies <<( doc:factsperfRvflGadfS3 rdfs:label "fault classification accuracy for RVFL+GADF" )>> ;
+	prov:wasDerivedFrom doc:fbf123739222 .
+doc:FactsArticle1_14 schema1:mentions doc:FactsRgasf .
+_:c9763291806e2595319fb46b0a08a49 rdf:reifies <<( doc:FactsArticle1_14 schema1:mentions doc:FactsRgasf )>> ;
+	prov:wasDerivedFrom doc:fbf123739222 .
+doc:FactsRvfl rdfs:label "Random Vector Functional Link (RVFL)" .
+_:a9de1d94cc9a28672c13a14ed838dcd6 rdf:reifies <<( doc:FactsRvfl rdfs:label "Random Vector Functional Link (RVFL)" )>> ;
+	prov:wasDerivedFrom doc:fbf123739222 .
+doc:FactsimageAugmentation a cco:InformationContentEntity .
+_:dceeb085c7f69f5b3ececec449641762 rdf:reifies <<( doc:FactsimageAugmentation rdf:type cco:InformationContentEntity )>> ;
+	prov:wasDerivedFrom doc:fbf123739222 .
+doc:FactsVinayVakharia rdfs:label "Yogesh Kumar" .
+_:c4968daf13529812c2a5cbfc19d1f75e rdf:reifies <<( doc:FactsVinayVakharia rdfs:label "Yogesh Kumar" )>> ;
+	prov:wasDerivedFrom doc:fbf123739222 .
+doc:FactsArticle1_14 schema1:mentions doc:FactsTenFoldCv .
+_:d6d0664e0eb7524b5b10034eeaf128c6 rdf:reifies <<( doc:FactsArticle1_14 schema1:mentions doc:FactsTenFoldCv )>> ;
+	prov:wasDerivedFrom doc:fbf123739222 .
+doc:b360978810a1 a prov:Entity , schema:text ;
+	prov:generatedAtTime "2026-06-12T07:14:42.260097Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+	schema:position 1 ;
+	schema:identifier "b360978810a1" .
+doc:FactsNonstationaryOperationQuality a obo:BFO_0000019 .
+_:c10c126665519d8f4bf8a9ff638d211e rdf:reifies <<( doc:FactsNonstationaryOperationQuality rdf:type obo:BFO_0000019 )>> ;
+	prov:wasDerivedFrom doc:b360978810a1 .
+_:c3b2b9193aceda87245e212bcdb82efe prov:wasDerivedFrom doc:b360978810a1 .
+doc:FactsMlPipeline rdfs:label "Robust ML pipeline (physics-informed demodulation + ML)"@en .
+_:d67ad8428e74da5daf7382ef8054a166 rdf:reifies <<( doc:FactsMlPipeline rdfs:label "Robust ML pipeline (physics-informed demodulation + ML)"@en )>> ;
+	prov:wasDerivedFrom doc:b360978810a1 .
+doc:FactsVinayVakharia schema1:email "Vinay.Vakharia@sot.pdpu.ac.in" .
+_:f07d4f40bb8a757c05a460b151ffc2e6 rdf:reifies <<( doc:FactsVinayVakharia schema1:email "Vinay.Vakharia@sot.pdpu.ac.in" )>> ;
+	prov:wasDerivedFrom doc:b360978810a1 .
+doc:FactsAffiliation3_1 a schema1:Organization .
+_:fc8f615b1a27d74aa9672cb768e29c6f rdf:reifies <<( doc:FactsAffiliation3_1 rdf:type schema1:Organization )>> ;
+	prov:wasDerivedFrom doc:b360978810a1 .
+doc:FactsVinayVakharia schema1:affiliation doc:FactsAffiliation1_2 .
+_:fd5689b141beca4fe06f2e9e2948b11e rdf:reifies <<( doc:FactsVinayVakharia schema1:affiliation doc:FactsAffiliation1_2 )>> ;
+	prov:wasDerivedFrom doc:b360978810a1 .
+doc:FactsFixedBandDetector cco:is_about doc:FactsNonstationaryOperationQuality .
+_:da931d1770dbd20e721a31cff865e963 rdf:reifies <<( doc:FactsFixedBandDetector cco:is_about doc:FactsNonstationaryOperationQuality )>> ;
+	prov:wasDerivedFrom doc:b360978810a1 .
+doc:FactsZhangCnn None:has_text_value "Zhang et al. developed a CNN with customized training protocols to enhance performance in noisy environments and varying workloads; reported CNN models can outperform traditional feature-engineering methods" .
+_:e8f5f46839457216425fad491d9b8c6 rdf:reifies <<( doc:FactsZhangCnn None:has_text_value "Zhang et al. developed a CNN with customized training protocols to enhance performance in noisy environments and varying workloads; reported CNN models can outperform traditional feature-engineering methods" )>> ;
+	prov:wasDerivedFrom doc:b360978810a1 .
+doc:FactsZhangCnn cco:is_about None:Fault_detection .
+_:b99a08dba0ddb07f06a8f58c6bc228f1 rdf:reifies <<( doc:FactsZhangCnn cco:is_about None:Fault_detection )>> ;
+	prov:wasDerivedFrom doc:b360978810a1 .
+doc:FactsMlp None:has_text_value "Convolutional neural networks autonomously derive hierarchical fault patterns from raw processed inputs; large first-layer kernels mitigate noise and speed drift for better feature extraction" .
+_:e2bfd40360793f0d5eb7e804ab61c458 rdf:reifies <<( doc:FactsMlp None:has_text_value "Convolutional neural networks autonomously derive hierarchical fault patterns from raw processed inputs; large first-layer kernels mitigate noise and speed drift for better feature extraction" )>> ;
+	prov:wasDerivedFrom doc:b360978810a1 .
+doc:FactsZhangCnn a cco:Algorithm .
+_:de4a36711ef143752af7055e651061b8 rdf:reifies <<( doc:FactsZhangCnn rdf:type cco:Algorithm )>> ;
+	prov:wasDerivedFrom doc:b360978810a1 .
+_:f91e4600d24fabde40a3bc5598a8a8c2 prov:wasDerivedFrom doc:b360978810a1 .
+_:ad1248bd3398afce2d9a412f0133bb15 prov:wasDerivedFrom doc:b360978810a1 .
+doc:FactsArticle1_14 None:has_text_value "Zhao et al. conducted a comprehensive assessment of deep learning methodologies for machine health monitoring, covering autoencoders, deep belief networks, CNNs, and RNNs" .
+_:fe2f3c5c4b51ee5449981a7ac5867bef rdf:reifies <<( doc:FactsArticle1_14 None:has_text_value "Zhao et al. conducted a comprehensive assessment of deep learning methodologies for machine health monitoring, covering autoencoders, deep belief networks, CNNs, and RNNs" )>> ;
+	prov:wasDerivedFrom doc:b360978810a1 .
+doc:FactsArticle1_14 cco:is_about None:Predictive_maintenance_model .
+_:ca07cdebd166d2dce1b41909cac753b1 rdf:reifies <<( doc:FactsArticle1_14 cco:is_about None:Predictive_maintenance_model )>> ;
+	prov:wasDerivedFrom doc:b360978810a1 .
+doc:FactsAffiliation1_2 rdfs:label "Department of Computer Science and Engineering, School of Technology, PDEU Gandhinagar, Gandhinagar, Gujarat 382426, India" .
+_:d3aa511b403b176419a1563d27e4066c rdf:reifies <<( doc:FactsAffiliation1_2 rdfs:label "Department of Computer Science and Engineering, School of Technology, PDEU Gandhinagar, Gandhinagar, Gujarat 382426, India" )>> ;
+	prov:wasDerivedFrom doc:b360978810a1 .
+doc:FactsAffiliation1_2 rdfs:label "Department of Mechanical Engineering, School of Technology, PDEU Gandhinagar, Gandhinagar, Gujarat 382426, India" .
+_:e867a6e8793dde5b7d8b67e775e7e4fd rdf:reifies <<( doc:FactsAffiliation1_2 rdfs:label "Department of Mechanical Engineering, School of Technology, PDEU Gandhinagar, Gandhinagar, Gujarat 382426, India" )>> ;
+	prov:wasDerivedFrom doc:b360978810a1 .
+doc:FactsMlp a cco:Algorithm .
+_:cb92a7dfb7e8cfea7f7ea23e054e9d67 rdf:reifies <<( doc:FactsMlp rdf:type cco:Algorithm )>> ;
+	prov:wasDerivedFrom doc:b360978810a1 .
+doc:FactsAffiliation4_1 a schema1:Organization .
+_:b1e2532cc1ca848cab17fb564e9769d4 rdf:reifies <<( doc:FactsAffiliation4_1 rdf:type schema1:Organization )>> ;
+	prov:wasDerivedFrom doc:b360978810a1 .
+doc:FactsVinayVakharia schema1:email "marcin.wozniak@polsl.pl" .
+_:d85b7d29e7e7a55694e61f79509a12e4 rdf:reifies <<( doc:FactsVinayVakharia schema1:email "marcin.wozniak@polsl.pl" )>> ;
+	prov:wasDerivedFrom doc:b360978810a1 .
+doc:FactsVibrationNonstationaryQuality a obo:BFO_0000019 .
+_:b260ed398ba0a47a3a8ae1211212cc61 rdf:reifies <<( doc:FactsVibrationNonstationaryQuality rdf:type obo:BFO_0000019 )>> ;
+	prov:wasDerivedFrom doc:b360978810a1 .
+_:c5cfb80b472226abaf3c53cfe329f913 prov:wasDerivedFrom doc:b360978810a1 .
+doc:FactsAffiliation1_2 a schema1:Organization .
+_:d9ce0756cd9635f5a9ac38298abb421e rdf:reifies <<( doc:FactsAffiliation1_2 rdf:type schema1:Organization )>> ;
+	prov:wasDerivedFrom doc:b360978810a1 .
+doc:FactsVinayVakharia schema1:affiliation doc:FactsAffiliation4_1 .
+_:fcaf9d6c4fae010b0ba0e0f0d4c30d62 rdf:reifies <<( doc:FactsVinayVakharia schema1:affiliation doc:FactsAffiliation4_1 )>> ;
+	prov:wasDerivedFrom doc:b360978810a1 .
+doc:FactsDeepLearning_3 rdfs:label "Deep Learning (DL) methods"@en .
+_:ce29943241a57d5be15e1ada687a2835 rdf:reifies <<( doc:FactsDeepLearning_3 rdfs:label "Deep Learning (DL) methods"@en )>> ;
+	prov:wasDerivedFrom doc:b360978810a1 .
+doc:Factsarticle1_Title_3 a None:Article_title .
+_:ec766fed606dd550810929a147b1f8fb rdf:reifies <<( doc:Factsarticle1_Title_3 rdf:type None:Article_title )>> ;
+	prov:wasDerivedFrom doc:b360978810a1 .
+doc:FactsBearing_1 obo:RO_0000086 doc:FactsVibrationNonstationaryQuality .
+_:d26f56a98ffc7afe5f84139171cc9e5 rdf:reifies <<( doc:FactsBearing_1 obo:RO_0000086 doc:FactsVibrationNonstationaryQuality )>> ;
+	prov:wasDerivedFrom doc:b360978810a1 .
+doc:FactsNonstationaryOperationQuality None:has_text_value "non-stationary operation that challenges assumptions of fixed-band/fixed-frequency detectors" .
+_:c5f366fa49a9ae392d17e7bfdc9ddbbd rdf:reifies <<( doc:FactsNonstationaryOperationQuality None:has_text_value "non-stationary operation that challenges assumptions of fixed-band/fixed-frequency detectors" )>> ;
+	prov:wasDerivedFrom doc:b360978810a1 .
+doc:FactsVibrationNonstationaryQuality rdfs:label "non-stationary vibration response"@en .
+_:ea6eabfd48b762915d13335fa655b8c rdf:reifies <<( doc:FactsVibrationNonstationaryQuality rdfs:label "non-stationary vibration response"@en )>> ;
+	prov:wasDerivedFrom doc:b360978810a1 .
+doc:FactsFixedBandDetector a obo:BFO_0000030 .
+_:ae393fa421962d87e4d3cace2b049e55 rdf:reifies <<( doc:FactsFixedBandDetector rdf:type obo:BFO_0000030 )>> ;
+	prov:wasDerivedFrom doc:b360978810a1 .
+doc:Factsarticle1_Title_3 None:has_text_value "Detection of new problems in non-stationary conditions linking robust machine learning pipelines with physics-informed demodulation and deep learning for bearing fault diagnosis" .
+_:ab61d77a807f10b28b13a0c0ba49714e rdf:reifies <<( doc:Factsarticle1_Title_3 None:has_text_value "Detection of new problems in non-stationary conditions linking robust machine learning pipelines with physics-informed demodulation and deep learning for bearing fault diagnosis" )>> ;
+	prov:wasDerivedFrom doc:b360978810a1 .
+doc:FactsFixedBandDetector None:has_text_value "fixed-band, fixed-frequency detector" .
+_:a5ae9e60801878c9554cb464e96f14f1 rdf:reifies <<( doc:FactsFixedBandDetector None:has_text_value "fixed-band, fixed-frequency detector" )>> ;
+	prov:wasDerivedFrom doc:b360978810a1 .
+doc:FactsVinayVakharia schema1:email "muhammadfazal.ijaz@torrens.edu.au" .
+_:d6a2538f95dcf2d569f0e3cc39f18688 rdf:reifies <<( doc:FactsVinayVakharia schema1:email "muhammadfazal.ijaz@torrens.edu.au" )>> ;
+	prov:wasDerivedFrom doc:b360978810a1 .
+doc:FactsVibrationNonstationaryQuality None:has_text_value "vibration response is non-stationary; statistical characteristics and spectrum content change over time due to periodic changes in operating point and fault-related impulses" .
+_:ad6fc85497b81f8674d8f4e42c066b9c rdf:reifies <<( doc:FactsVibrationNonstationaryQuality None:has_text_value "vibration response is non-stationary; statistical characteristics and spectrum content change over time due to periodic changes in operating point and fault-related impulses" )>> ;
+	prov:wasDerivedFrom doc:b360978810a1 .
+doc:FactsAffiliation4_1 rdfs:label "School of Technology, Business and Hospitality Faculty, Torrens University Australia, Campus Flinders, Melbourne, VIC 3000, Australia" .
+_:bce341b9002f0f50ef19a6a71383301f rdf:reifies <<( doc:FactsAffiliation4_1 rdfs:label "School of Technology, Business and Hospitality Faculty, Torrens University Australia, Campus Flinders, Melbourne, VIC 3000, Australia" )>> ;
+	prov:wasDerivedFrom doc:b360978810a1 .
+doc:FactsMlPipeline cco:is_about None:Fault_detection .
+_:dc3d80590c0a951e2b5d5542e4e440e rdf:reifies <<( doc:FactsMlPipeline cco:is_about None:Fault_detection )>> ;
+	prov:wasDerivedFrom doc:b360978810a1 .
+doc:FactsDeepLearning_3 None:has_text_value "deep learning (DL) algorithms automate feature engineering and address weak and transient signals; map raw waveform segments to fault labels enabling real-time analysis" .
+_:e59ec22b33de3020b9f4847a31d6f694 rdf:reifies <<( doc:FactsDeepLearning_3 None:has_text_value "deep learning (DL) algorithms automate feature engineering and address weak and transient signals; map raw waveform segments to fault labels enabling real-time analysis" )>> ;
+	prov:wasDerivedFrom doc:b360978810a1 .
+doc:FactsMlp cco:is_about None:Fault_feature_extraction .
+_:e7e2d7921b582f5c3c89478bc9f5827 rdf:reifies <<( doc:FactsMlp cco:is_about None:Fault_feature_extraction )>> ;
+	prov:wasDerivedFrom doc:b360978810a1 .
+doc:FactsMlp rdfs:label "Convolutional Neural Network (CNN) - applied instance"@en .
+_:eef148d240ebc5c9ef350e0c0daf2ca6 rdf:reifies <<( doc:FactsMlp rdfs:label "Convolutional Neural Network (CNN) - applied instance"@en )>> ;
+	prov:wasDerivedFrom doc:b360978810a1 .
+doc:FactsVinayVakharia schema1:affiliation doc:FactsAffiliation3_1 .
+_:d971930e723e263eeeb0dac30129047 rdf:reifies <<( doc:FactsVinayVakharia schema1:affiliation doc:FactsAffiliation3_1 )>> ;
+	prov:wasDerivedFrom doc:b360978810a1 .
+doc:FactsDeepLearning_3 cco:is_about None:Fault_detection .
+_:a06168b5713bb223fe4ff67cfd24a279 rdf:reifies <<( doc:FactsDeepLearning_3 cco:is_about None:Fault_detection )>> ;
+	prov:wasDerivedFrom doc:b360978810a1 .
+doc:FactsMlPipeline a cco:Algorithm .
+_:ec8b66009095484ce9ab8c4a90527e5 rdf:reifies <<( doc:FactsMlPipeline rdf:type cco:Algorithm )>> ;
+	prov:wasDerivedFrom doc:b360978810a1 .
+doc:FactsAffiliation3_1 rdfs:label "Faculty of Applied Mathematics, Silesian University of Technology, Gliwice, Poland" .
+_:c9fc83c14690de2f17eb54965aca8e0b rdf:reifies <<( doc:FactsAffiliation3_1 rdfs:label "Faculty of Applied Mathematics, Silesian University of Technology, Gliwice, Poland" )>> ;
+	prov:wasDerivedFrom doc:b360978810a1 .
+doc:FactsArticle1_14 None:has_title doc:Factsarticle1_Title_3 .
+_:c1eb9ac9e1c67dccdd12ef9e7204c2ae rdf:reifies <<( doc:FactsArticle1_14 None:has_title doc:Factsarticle1_Title_3 )>> ;
+	prov:wasDerivedFrom doc:b360978810a1 .
+doc:FactsMlPipeline None:has_text_value "robust machine learning (ML) pipeline linked with physics-informed demodulation" .
+_:efcf28161e459ce7081c32d54e434ab9 rdf:reifies <<( doc:FactsMlPipeline None:has_text_value "robust machine learning (ML) pipeline linked with physics-informed demodulation" )>> ;
+	prov:wasDerivedFrom doc:b360978810a1 .
+doc:FactsDeepLearning_3 a cco:Algorithm .
+_:bbf7823a8979bf912f0bb17f70fd8d36 rdf:reifies <<( doc:FactsDeepLearning_3 rdf:type cco:Algorithm )>> ;
+	prov:wasDerivedFrom doc:b360978810a1 .
+doc:4f8d308392d9 a prov:Entity , schema:text ;
+	prov:generatedAtTime "2026-06-12T07:14:42.263097Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+	schema:position 2 ;
+	schema:identifier "4f8d308392d9" .
+doc:FactsmechanisticDefectSignals a cco:DesignativeInformationContentEntity .
+_:bdd2aff55df6a3650137ddb9b22c1ab1 rdf:reifies <<( doc:FactsmechanisticDefectSignals rdf:type cco:DesignativeInformationContentEntity )>> ;
+	prov:wasDerivedFrom doc:4f8d308392d9 .
+doc:FactsimprovedGeneralization cco:is_about doc:FactsMlp .
+_:bd782a7e377b0a75494eb1bf00e4baa4 rdf:reifies <<( doc:FactsimprovedGeneralization cco:is_about doc:FactsMlp )>> ;
+	prov:wasDerivedFrom doc:4f8d308392d9 .
+_:c5cfb80b472226abaf3c53cfe329f913 prov:wasDerivedFrom doc:4f8d308392d9 .
+doc:FactsimprovedGeneralization cco:is_about doc:FactsnetworkDepth .
+_:e57da971f66bdf484030369693b6799e rdf:reifies <<( doc:FactsimprovedGeneralization cco:is_about doc:FactsnetworkDepth )>> ;
+	prov:wasDerivedFrom doc:4f8d308392d9 .
+doc:FactsimprovedGeneralization None:has_text_value "improves interpretability and aligns diagnostic decisions with fundamental physical mechanisms" .
+_:cccd240cda6e3231379b4cc37fca6153 rdf:reifies <<( doc:FactsimprovedGeneralization None:has_text_value "improves interpretability and aligns diagnostic decisions with fundamental physical mechanisms" )>> ;
+	prov:wasDerivedFrom doc:4f8d308392d9 .
+doc:FactsrotorBearingSystemDynamics rdfs:label "rotor-bearing system dynamics (physical model)" .
+_:a64ca28f0feb898001846ce3d8b404d8 rdf:reifies <<( doc:FactsrotorBearingSystemDynamics rdfs:label "rotor-bearing system dynamics (physical model)" )>> ;
+	prov:wasDerivedFrom doc:4f8d308392d9 .
+doc:FactsphysicsBasedSampleGenerationMethod a cco:Algorithm .
+_:dee77eb336e8ebad2df890fb2b1f9641 rdf:reifies <<( doc:FactsphysicsBasedSampleGenerationMethod rdf:type cco:Algorithm )>> ;
+	prov:wasDerivedFrom doc:4f8d308392d9 .
+doc:FactsMlp None:has_design_detail doc:FactsrotorBearingSystemDynamics .
+_:e5ab07b77e0ff71a173a88334cae9460 rdf:reifies <<( doc:FactsMlp None:has_design_detail doc:FactsrotorBearingSystemDynamics )>> ;
+	prov:wasDerivedFrom doc:4f8d308392d9 .
+doc:FactsphysicalConstraints a cco:DescriptiveInformationContentEntity .
+_:fd67b028932bfc1f2db00526e2df3853 rdf:reifies <<( doc:FactsphysicalConstraints rdf:type cco:DescriptiveInformationContentEntity )>> ;
+	prov:wasDerivedFrom doc:4f8d308392d9 .
+doc:FactsMetricEncapsulation cco:describes doc:FactsimprovedGeneralization .
+_:dcc5b7879a462a70b7cc7d71af230de1 rdf:reifies <<( doc:FactsMetricEncapsulation cco:describes doc:FactsimprovedGeneralization )>> ;
+	prov:wasDerivedFrom doc:4f8d308392d9 .
+doc:FactsimprovedGeneralization None:has_text_value "enhanced classification accuracy and stability, particularly when fault indicators are distributed over many signal characteristics" .
+_:ee888546fa23d4f77e21474b987ea030 rdf:reifies <<( doc:FactsimprovedGeneralization None:has_text_value "enhanced classification accuracy and stability, particularly when fault indicators are distributed over many signal characteristics" )>> ;
+	prov:wasDerivedFrom doc:4f8d308392d9 .
+doc:FactsdataPartitioningMethods a None:Data_variable .
+_:e18fbd047c3fc3442ffb912dfc37cc12 rdf:reifies <<( doc:FactsdataPartitioningMethods rdf:type None:Data_variable )>> ;
+	prov:wasDerivedFrom doc:4f8d308392d9 .
+doc:FactsStandardBearingBenchmarks cco:describes doc:FactsBearing_1 .
+_:c278d39dde257dcc70f60a63ff9461aa rdf:reifies <<( doc:FactsStandardBearingBenchmarks cco:describes doc:FactsBearing_1 )>> ;
+	prov:wasDerivedFrom doc:4f8d308392d9 .
+doc:FactsrotorBearingSystemDynamics a cco:DescriptiveInformationContentEntity .
+_:dbd50d127bc8f20c137e0e81f0db4960 rdf:reifies <<( doc:FactsrotorBearingSystemDynamics rdf:type cco:DescriptiveInformationContentEntity )>> ;
+	prov:wasDerivedFrom doc:4f8d308392d9 .
+doc:FactsfeatureFusionModel rdfs:label "feature-fusion model" .
+_:d6970c524adc74f2a65fc2e45c798bb7 rdf:reifies <<( doc:FactsfeatureFusionModel rdfs:label "feature-fusion model" )>> ;
+	prov:wasDerivedFrom doc:4f8d308392d9 .
+doc:FactsArticle1_14 cco:is_about doc:FactsMlp .
+_:d5c07f0b5f08b9ae9693c196ace4ddc2 rdf:reifies <<( doc:FactsArticle1_14 cco:is_about doc:FactsMlp )>> ;
+	prov:wasDerivedFrom doc:4f8d308392d9 .
+doc:FactsboundedMetricLearning rdfs:label "bounded metric learning" .
+_:f5dfa57dad98b04696350979c80af223 rdf:reifies <<( doc:FactsboundedMetricLearning rdfs:label "bounded metric learning" )>> ;
+	prov:wasDerivedFrom doc:4f8d308392d9 .
+doc:FactsMetricEncapsulation None:has_predictive_maintenance_function None:Health_modelling .
+_:ee93513388d5911c0124ede93fffff7 rdf:reifies <<( doc:FactsMetricEncapsulation None:has_predictive_maintenance_function None:Health_modelling )>> ;
+	prov:wasDerivedFrom doc:4f8d308392d9 .
+doc:FactsRotatingMachineryDatasets a cco:Database .
+_:ddbcfc0447dfdb2997aa6ad5ee270431 rdf:reifies <<( doc:FactsRotatingMachineryDatasets rdf:type cco:Database )>> ;
+	prov:wasDerivedFrom doc:4f8d308392d9 .
+doc:FactsMetricEncapsulation None:has_design_detail doc:FactsphysicalConstraints .
+_:f7cb7ce5e92191b6a14072ae40e51713 rdf:reifies <<( doc:FactsMetricEncapsulation None:has_design_detail doc:FactsphysicalConstraints )>> ;
+	prov:wasDerivedFrom doc:4f8d308392d9 .
+doc:FactsMlp rdfs:label "AE" .
+_:b8f934b7fb593fe834870c244a693735 rdf:reifies <<( doc:FactsMlp rdfs:label "AE" )>> ;
+	prov:wasDerivedFrom doc:4f8d308392d9 .
+doc:FactsimprovedGeneralization None:has_text_value "enhances generalization in limited data conditions and elevates emerging fault sensitivity" .
+_:b00438c5f70523c748119ef077847196 rdf:reifies <<( doc:FactsimprovedGeneralization None:has_text_value "enhances generalization in limited data conditions and elevates emerging fault sensitivity" )>> ;
+	prov:wasDerivedFrom doc:4f8d308392d9 .
+doc:FactsphysicsBasedSampleGenerationMethod rdfs:label "physics-based sample generation method for few-shot bearing condition monitoring" .
+_:a5d0da8832a71834e2558df8ce92c16b rdf:reifies <<( doc:FactsphysicsBasedSampleGenerationMethod rdfs:label "physics-based sample generation method for few-shot bearing condition monitoring" )>> ;
+	prov:wasDerivedFrom doc:4f8d308392d9 .
+doc:FactsArticle1_14 schema1:author doc:FactsLiAuthor .
+_:a095514a44f6d46acd8128552b536a27 rdf:reifies <<( doc:FactsArticle1_14 schema1:author doc:FactsLiAuthor )>> ;
+	prov:wasDerivedFrom doc:4f8d308392d9 .
+doc:FactsimprovedGeneralization a None:Performance_value .
+_:bcb42cfbe746ed16c19002be05ca3624 rdf:reifies <<( doc:FactsimprovedGeneralization rdf:type None:Performance_value )>> ;
+	prov:wasDerivedFrom doc:4f8d308392d9 .
+doc:FactsStandardBearingBenchmarks rdfs:label "standard bearing benchmarks" .
+_:a45cf740a9a574591f9c2bad5b797c3c rdf:reifies <<( doc:FactsStandardBearingBenchmarks rdfs:label "standard bearing benchmarks" )>> ;
+	prov:wasDerivedFrom doc:4f8d308392d9 .
+doc:FactshyperparameterChoices a None:Data_variable .
+_:adf0daecde29763ac01a2b50aa946e3a rdf:reifies <<( doc:FactshyperparameterChoices rdf:type None:Data_variable )>> ;
+	prov:wasDerivedFrom doc:4f8d308392d9 .
+doc:FactsphysicalConstraints rdfs:label "physical constraints" .
+_:f24bbc52dcaa612c8abf50966b25dab6 rdf:reifies <<( doc:FactsphysicalConstraints rdfs:label "physical constraints" )>> ;
+	prov:wasDerivedFrom doc:4f8d308392d9 .
+doc:FactsArticle1_14 a schema1:Article .
+_:c650ca389e7b2ffbb84288e6adb2d279 rdf:reifies <<( doc:FactsArticle1_14 rdf:type schema1:Article )>> ;
+	prov:wasDerivedFrom doc:4f8d308392d9 .
+doc:FactsfeatureFusionModel cco:describes doc:FactsHybridAndEnsembleDeepLearning .
+_:f9b53b5b55c5a676c32c849a23552ef rdf:reifies <<( doc:FactsfeatureFusionModel cco:describes doc:FactsHybridAndEnsembleDeepLearning )>> ;
+	prov:wasDerivedFrom doc:4f8d308392d9 .
+doc:FactsimprovedGeneralization cco:is_about doc:FactshyperparameterChoices .
+_:e9ea69b77cde2879afcd3596000edbd7 rdf:reifies <<( doc:FactsimprovedGeneralization cco:is_about doc:FactshyperparameterChoices )>> ;
+	prov:wasDerivedFrom doc:4f8d308392d9 .
+doc:FactsMlp rdfs:label "RNN variants" .
+_:ec9140fbcef2bb888198c7624fd38b80 rdf:reifies <<( doc:FactsMlp rdfs:label "RNN variants" )>> ;
+	prov:wasDerivedFrom doc:4f8d308392d9 .
+doc:FactsDcmldf None:has_design_detail doc:FactscausalGraphInference .
+_:e842cbed1a265a67590b8f64644927b3 rdf:reifies <<( doc:FactsDcmldf None:has_design_detail doc:FactscausalGraphInference )>> ;
+	prov:wasDerivedFrom doc:4f8d308392d9 .
+doc:FactsaugmentedTrainingSet rdfs:label "training set augmented with physics-based samples" .
+_:edfd20804b4ba5f44dfed7912a01e7fc rdf:reifies <<( doc:FactsaugmentedTrainingSet rdfs:label "training set augmented with physics-based samples" )>> ;
+	prov:wasDerivedFrom doc:4f8d308392d9 .
+doc:FactsboundedMetricLearning a cco:DescriptiveInformationContentEntity .
+_:d3cfc5567c0986e02a8229650d314d82 rdf:reifies <<( doc:FactsboundedMetricLearning rdf:type cco:DescriptiveInformationContentEntity )>> ;
+	prov:wasDerivedFrom doc:4f8d308392d9 .
+doc:FactsLiAuthor schema1:name "Li et al." .
+_:d7027eeec0fb241c08180f30035afc88 rdf:reifies <<( doc:FactsLiAuthor schema1:name "Li et al." )>> ;
+	prov:wasDerivedFrom doc:4f8d308392d9 .
+doc:FactsDcmldf None:has_predictive_maintenance_function None:Fault_identification .
+_:d7a98c2c3b5b15e7efa67a69f532bfb rdf:reifies <<( doc:FactsDcmldf None:has_predictive_maintenance_function None:Fault_identification )>> ;
+	prov:wasDerivedFrom doc:4f8d308392d9 .
+doc:FactsfeatureFusionArchitecture rdfs:label "feature-fusion architecture (CNN feature extractors + ensemble DNNs)" .
+_:b17d3da62808e10bbb4c709349865b4a rdf:reifies <<( doc:FactsfeatureFusionArchitecture rdfs:label "feature-fusion architecture (CNN feature extractors + ensemble DNNs)" )>> ;
+	prov:wasDerivedFrom doc:4f8d308392d9 .
+doc:FactsMlp a None:Predictive_maintenance_model .
+_:db8f8a6bb5c47b3688660cec7c91c156 rdf:reifies <<( doc:FactsMlp rdf:type None:Predictive_maintenance_model )>> ;
+	prov:wasDerivedFrom doc:4f8d308392d9 .
+doc:FactsfeatureFusionModel a None:Predictive_maintenance_model .
+_:be15c31fe0ab87c6d120784f7652c502 rdf:reifies <<( doc:FactsfeatureFusionModel rdf:type None:Predictive_maintenance_model )>> ;
+	prov:wasDerivedFrom doc:4f8d308392d9 .
+doc:FactsHybridAndEnsembleDeepLearning rdfs:label "hybrid and ensemble deep learning techniques" .
+_:c46d0695e1c78329ee5a7cf15918ab31 rdf:reifies <<( doc:FactsHybridAndEnsembleDeepLearning rdfs:label "hybrid and ensemble deep learning techniques" )>> ;
+	prov:wasDerivedFrom doc:4f8d308392d9 .
+_:f91e4600d24fabde40a3bc5598a8a8c2 prov:wasDerivedFrom doc:4f8d308392d9 .
+doc:FactsfeatureFusionArchitecture None:describes_configuration doc:FactsfeatureFusionModel .
+_:bb8009925d5c7abb00745db527d6f2c7 rdf:reifies <<( doc:FactsfeatureFusionArchitecture None:describes_configuration doc:FactsfeatureFusionModel )>> ;
+	prov:wasDerivedFrom doc:4f8d308392d9 .
+doc:FactsHybridAndEnsembleDeepLearning a None:Data_mining_technique_function .
+_:ac58705f663cc087dad43cc045baaa46 rdf:reifies <<( doc:FactsHybridAndEnsembleDeepLearning rdf:type None:Data_mining_technique_function )>> ;
+	prov:wasDerivedFrom doc:4f8d308392d9 .
+doc:FactsDcmldf a None:Predictive_maintenance_system_module .
+_:a9f518d55fcb2f5b8727ce276c551569 rdf:reifies <<( doc:FactsDcmldf rdf:type None:Predictive_maintenance_system_module )>> ;
+	prov:wasDerivedFrom doc:4f8d308392d9 .
+doc:FactsLiAuthor a schema1:Person .
+_:b427c0d4f78d2aa6eae36bbae2a80544 rdf:reifies <<( doc:FactsLiAuthor rdf:type schema1:Person )>> ;
+	prov:wasDerivedFrom doc:4f8d308392d9 .
+doc:FactscausalGraphInference rdfs:label "causal graph inference" .
+_:e5e2bd6e2773df9108fbd3d644485c9a rdf:reifies <<( doc:FactscausalGraphInference rdfs:label "causal graph inference" )>> ;
+	prov:wasDerivedFrom doc:4f8d308392d9 .
+doc:FactsDcmldf None:has_design_detail doc:FactsadaptiveDynamicStructureLearning .
+_:f6d7a324cdd5cb5c0ca5d699d6de8f30 rdf:reifies <<( doc:FactsDcmldf None:has_design_detail doc:FactsadaptiveDynamicStructureLearning )>> ;
+	prov:wasDerivedFrom doc:4f8d308392d9 .
+doc:FactsadaptiveDynamicStructureLearning a cco:DescriptiveInformationContentEntity .
+_:f6568e35578373d862ea6a8e55c5d96e rdf:reifies <<( doc:FactsadaptiveDynamicStructureLearning rdf:type cco:DescriptiveInformationContentEntity )>> ;
+	prov:wasDerivedFrom doc:4f8d308392d9 .
+doc:FactsArticle1_14 cco:is_about doc:FactsMetricEncapsulation .
+_:c90e5983cc97c6e59bc058ca28e57956 rdf:reifies <<( doc:FactsArticle1_14 cco:is_about doc:FactsMetricEncapsulation )>> ;
+	prov:wasDerivedFrom doc:4f8d308392d9 .
+doc:FactsimprovedGeneralization cco:is_about doc:FactsdataPartitioningMethods .
+_:c356294a67b5989b8b2273d750e2f06b rdf:reifies <<( doc:FactsimprovedGeneralization cco:is_about doc:FactsdataPartitioningMethods )>> ;
+	prov:wasDerivedFrom doc:4f8d308392d9 .
+doc:FactsMlp a None:Model_type .
+_:eced68d16dd30b8836d37c7487e9ce41 rdf:reifies <<( doc:FactsMlp rdf:type None:Model_type )>> ;
+	prov:wasDerivedFrom doc:4f8d308392d9 .
+doc:FactsnetworkDepth rdfs:label "network depth" .
+_:d0aa5839a86f281ab26af277a7b8ea28 rdf:reifies <<( doc:FactsnetworkDepth rdfs:label "network depth" )>> ;
+	prov:wasDerivedFrom doc:4f8d308392d9 .
+doc:FactsphysicsBasedSampleGenerationMethod cco:describes doc:FactsaugmentedTrainingSet .
+_:ce1031c08b627afdcba9de6c46d5a024 rdf:reifies <<( doc:FactsphysicsBasedSampleGenerationMethod cco:describes doc:FactsaugmentedTrainingSet )>> ;
+	prov:wasDerivedFrom doc:4f8d308392d9 .
+doc:FactsArticle1_14 cco:is_about doc:FactsStandardBearingBenchmarks .
+_:f178c11e47b2805319cc9b2e2b3cd98b rdf:reifies <<( doc:FactsArticle1_14 cco:is_about doc:FactsStandardBearingBenchmarks )>> ;
+	prov:wasDerivedFrom doc:4f8d308392d9 .
+doc:FactsfeatureFusionModel cco:describes doc:FactsMlp .
+_:ae6ce1ec91cf95ff651172a90a30967d rdf:reifies <<( doc:FactsfeatureFusionModel cco:describes doc:FactsMlp )>> ;
+	prov:wasDerivedFrom doc:4f8d308392d9 .
+doc:FactsMlp cco:describes doc:FactsphysicsBasedSampleGenerationMethod .
+_:a3b4e7ea150152164d75d6b3b8282e05 rdf:reifies <<( doc:FactsMlp cco:describes doc:FactsphysicsBasedSampleGenerationMethod )>> ;
+	prov:wasDerivedFrom doc:4f8d308392d9 .
+doc:FactsMetricEncapsulation a None:Predictive_maintenance_system_module .
+_:e964bf897830245a0e28c7ea570d9b47 rdf:reifies <<( doc:FactsMetricEncapsulation rdf:type None:Predictive_maintenance_system_module )>> ;
+	prov:wasDerivedFrom doc:4f8d308392d9 .
+doc:FactsMetricEncapsulation rdfs:label "MetricEncapsulation (ME)" .
+_:ce32f2bcb3d30d1851398335ca881957 rdf:reifies <<( doc:FactsMetricEncapsulation rdfs:label "MetricEncapsulation (ME)" )>> ;
+	prov:wasDerivedFrom doc:4f8d308392d9 .
+doc:FactshyperparameterChoices rdfs:label "hyperparameter choices" .
+_:b3d33865c4f7a472d83d68bf9ffb0d1f rdf:reifies <<( doc:FactshyperparameterChoices rdfs:label "hyperparameter choices" )>> ;
+	prov:wasDerivedFrom doc:4f8d308392d9 .
+doc:FactsMetricEncapsulation None:has_design_detail doc:FactsboundedMetricLearning .
+_:c36fda023359fa35f0fca4119b015cb4 rdf:reifies <<( doc:FactsMetricEncapsulation None:has_design_detail doc:FactsboundedMetricLearning )>> ;
+	prov:wasDerivedFrom doc:4f8d308392d9 .
+doc:FactsDcmldf rdfs:label "Dynamic causal mechanism learning diagnostics framework (DCMLDF)" .
+_:fe4e1dd277677910f0a411854f9a22cf rdf:reifies <<( doc:FactsDcmldf rdfs:label "Dynamic causal mechanism learning diagnostics framework (DCMLDF)" )>> ;
+	prov:wasDerivedFrom doc:4f8d308392d9 .
+doc:FactsStandardBearingBenchmarks a cco:Database .
+_:b2aded2b31db06248c7597f42ea7765a rdf:reifies <<( doc:FactsStandardBearingBenchmarks rdf:type cco:Database )>> ;
+	prov:wasDerivedFrom doc:4f8d308392d9 .
+doc:FactsMlp rdfs:label "MLP" .
+_:d9db2db84319705763c232a41f44a2c8 rdf:reifies <<( doc:FactsMlp rdfs:label "MLP" )>> ;
+	prov:wasDerivedFrom doc:4f8d308392d9 .
+doc:FactsLiAuthor schema1:name "Zhao et al." .
+_:d06121fb511032e394d224ef0c4f5db9 rdf:reifies <<( doc:FactsLiAuthor schema1:name "Zhao et al." )>> ;
+	prov:wasDerivedFrom doc:4f8d308392d9 .
+doc:FactsDcmldf cco:describes doc:FactsimprovedGeneralization .
+_:bf0c4bd6ead73fcbdd86c7ac7e80aa15 rdf:reifies <<( doc:FactsDcmldf cco:describes doc:FactsimprovedGeneralization )>> ;
+	prov:wasDerivedFrom doc:4f8d308392d9 .
+doc:FactsMlp rdfs:label "CNN" .
+_:b6f37dd9416a924ddd40c38d42aaaca8 rdf:reifies <<( doc:FactsMlp rdfs:label "CNN" )>> ;
+	prov:wasDerivedFrom doc:4f8d308392d9 .
+doc:FactscausalGraphInference a cco:DescriptiveInformationContentEntity .
+_:d119892f17d274726b7ee590186f4627 rdf:reifies <<( doc:FactscausalGraphInference rdf:type cco:DescriptiveInformationContentEntity )>> ;
+	prov:wasDerivedFrom doc:4f8d308392d9 .
+doc:FactsArticle1_14 cco:is_about doc:FactsfeatureFusionArchitecture .
+_:bf4e96c5fcc068fc41d1770ada57b907 rdf:reifies <<( doc:FactsArticle1_14 cco:is_about doc:FactsfeatureFusionArchitecture )>> ;
+	prov:wasDerivedFrom doc:4f8d308392d9 .
+doc:FactsMlp a None:Predictive_maintenance_system_module .
+_:de05091577a3ca8d09ac0818e0468993 rdf:reifies <<( doc:FactsMlp rdf:type None:Predictive_maintenance_system_module )>> ;
+	prov:wasDerivedFrom doc:4f8d308392d9 .
+doc:FactsimprovedGeneralization None:has_text_value "deep models often achieve high accuracy" .
+_:bd1761554b02bf9611897dbb48b2ca58 rdf:reifies <<( doc:FactsimprovedGeneralization None:has_text_value "deep models often achieve high accuracy" )>> ;
+	prov:wasDerivedFrom doc:4f8d308392d9 .
+doc:FactsdataPartitioningMethods rdfs:label "data partitioning methods" .
+_:dc546b87a6758fa9f57e32959f1a5261 rdf:reifies <<( doc:FactsdataPartitioningMethods rdfs:label "data partitioning methods" )>> ;
+	prov:wasDerivedFrom doc:4f8d308392d9 .
+doc:FactsadaptiveDynamicStructureLearning rdfs:label "adaptive dynamic structure learning" .
+_:b5eb4dbc4de8ebafdb4285dee80905e7 rdf:reifies <<( doc:FactsadaptiveDynamicStructureLearning rdfs:label "adaptive dynamic structure learning" )>> ;
+	prov:wasDerivedFrom doc:4f8d308392d9 .
+doc:FactsBearing_1 rdfs:label "bearing" .
+_:baad10c9c70a053bb555591e81da221c rdf:reifies <<( doc:FactsBearing_1 rdfs:label "bearing" )>> ;
+	prov:wasDerivedFrom doc:4f8d308392d9 .
+doc:FactsfeatureFusionArchitecture a None:Model_configuration .
+_:eea816c361d590c189c6291fb4c5a87f rdf:reifies <<( doc:FactsfeatureFusionArchitecture rdf:type None:Model_configuration )>> ;
+	prov:wasDerivedFrom doc:4f8d308392d9 .
+doc:FactsArticle1_14 cco:is_about doc:FactsRotatingMachineryDatasets .
+_:d0a1f701b11a527cd87f4eb5f749f112 rdf:reifies <<( doc:FactsArticle1_14 cco:is_about doc:FactsRotatingMachineryDatasets )>> ;
+	prov:wasDerivedFrom doc:4f8d308392d9 .
+doc:FactsaugmentedTrainingSet a cco:Database .
+_:a06b7556be5754d3d30b56b6568cdc34 rdf:reifies <<( doc:FactsaugmentedTrainingSet rdf:type cco:Database )>> ;
+	prov:wasDerivedFrom doc:4f8d308392d9 .
+doc:FactsMlp rdfs:label "hybrid modeling approaches (ML + physical models)" .
+_:eded90e5eef5dacd6781770c49448d8d rdf:reifies <<( doc:FactsMlp rdfs:label "hybrid modeling approaches (ML + physical models)" )>> ;
+	prov:wasDerivedFrom doc:4f8d308392d9 .
+doc:FactsRotatingMachineryDatasets rdfs:label "rotating machinery datasets" .
+_:d7c45225a6dd228040c996dee96ed79d rdf:reifies <<( doc:FactsRotatingMachineryDatasets rdfs:label "rotating machinery datasets" )>> ;
+	prov:wasDerivedFrom doc:4f8d308392d9 .
+doc:FactsnetworkDepth a None:Data_variable .
+_:fbedf3ff552075e10ce44a6658816722 rdf:reifies <<( doc:FactsnetworkDepth rdf:type None:Data_variable )>> ;
+	prov:wasDerivedFrom doc:4f8d308392d9 .
+doc:FactsmechanisticDefectSignals rdfs:label "interpretable mechanistic defect signals" .
+_:a7975b745d63786438507cf825a20ac8 rdf:reifies <<( doc:FactsmechanisticDefectSignals rdfs:label "interpretable mechanistic defect signals" )>> ;
+	prov:wasDerivedFrom doc:4f8d308392d9 .
+doc:FactsHybridAndEnsembleDeepLearning cco:describes doc:FactsimprovedGeneralization .
+_:db8fbb03c53d124b2ad835ac4b363291 rdf:reifies <<( doc:FactsHybridAndEnsembleDeepLearning cco:describes doc:FactsimprovedGeneralization )>> ;
+	prov:wasDerivedFrom doc:4f8d308392d9 .
+doc:FactsphysicsBasedSampleGenerationMethod cco:describes doc:FactsmechanisticDefectSignals .
+_:b64e6b0719c426556d97169f90849129 rdf:reifies <<( doc:FactsphysicsBasedSampleGenerationMethod cco:describes doc:FactsmechanisticDefectSignals )>> ;
+	prov:wasDerivedFrom doc:4f8d308392d9 .
+cco:InformationContentEntity owl:sameAs cco:DescriptiveInformationContentEntity , cco:DesignativeInformationContentEntity , cco:DirectiveInformationContentEntity .

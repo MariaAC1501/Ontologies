@@ -1,0 +1,501 @@
+@prefix None: <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD/seed#> .
+@prefix cco: <http://www.ontologyrepository.com/CommonCoreOntologies/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doc: <https://growgraph.dev/doc/8c97841ffeb0/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix obo: <http://purl.obolibrary.org/obo/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix schema: <https://schema.org/> .
+@prefix schema1: <http://schema.org/> .
+doc:ec5727bd3907 a prov:Entity , schema:text ;
+	prov:generatedAtTime "2026-06-12T03:45:15.408057Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+	schema:position 0 ;
+	schema:identifier "ec5727bd3907" .
+doc:factsModel1 None:describes_type doc:FactsAnnModelType .
+_:c49d8321eb1628e909c9fe02a5d0b7b3 rdf:reifies <<( doc:factsModel1 None:describes_type doc:FactsAnnModelType )>> ;
+	prov:wasDerivedFrom doc:ec5727bd3907 .
+doc:factsHi1 None:has_text_value "health indicator (HI) based on latest historical observations" .
+_:a82fd0b82db089ee8103b9da90752444 rdf:reifies <<( doc:factsHi1 None:has_text_value "health indicator (HI) based on latest historical observations" )>> ;
+	prov:wasDerivedFrom doc:ec5727bd3907 .
+doc:FactsArticleTitle1_2 a None:Article_identifier .
+_:dbc3773ecb1b649fe2b5315ae75e7c44 rdf:reifies <<( doc:FactsArticleTitle1_2 rdf:type None:Article_identifier )>> ;
+	prov:wasDerivedFrom doc:ec5727bd3907 .
+doc:FactsAnnModelType a None:Model_type .
+_:f6ea7a7dd0bfdccd6202e00bdbc19d25 rdf:reifies <<( doc:FactsAnnModelType rdf:type None:Model_type )>> ;
+	prov:wasDerivedFrom doc:ec5727bd3907 .
+doc:FactsPersonKarimaB schema1:givenName "Karima" .
+_:fbbda926f9b774d5adf374f1ba0c6755 rdf:reifies <<( doc:FactsPersonKarimaB schema1:givenName "Karima" )>> ;
+	prov:wasDerivedFrom doc:ec5727bd3907 .
+doc:FactsPersonKarimaB schema1:affiliation doc:FactsOrgLmcs .
+_:d3ff8d11e71a8526476d9599884b3b08 rdf:reifies <<( doc:FactsPersonKarimaB schema1:affiliation doc:FactsOrgLmcs )>> ;
+	prov:wasDerivedFrom doc:ec5727bd3907 .
+doc:FactsBearingMaintainableItem a None:Maintainable_item .
+_:df30258ff02dde346af900f8fa1d73e6 rdf:reifies <<( doc:FactsBearingMaintainableItem rdf:type None:Maintainable_item )>> ;
+	prov:wasDerivedFrom doc:ec5727bd3907 .
+doc:factsModel1 None:has_synchronization doc:FactsSyncOnline .
+_:bac8eaa95e219bac0aec2e50e3eb41cd rdf:reifies <<( doc:factsModel1 None:has_synchronization doc:FactsSyncOnline )>> ;
+	prov:wasDerivedFrom doc:ec5727bd3907 .
+doc:FactsClusteringMethod a None:Clustering .
+_:c9077cb4fdfb205ac50e3241d3f679dd rdf:reifies <<( doc:FactsClusteringMethod rdf:type None:Clustering )>> ;
+	prov:wasDerivedFrom doc:ec5727bd3907 .
+cco:describes doc:factsHi1 doc:factsModel1 .
+_:ab92a942cdb7cebefd500d828cfd054 rdf:reifies <<( cco:describes doc:factsHi1 doc:factsModel1 )>> ;
+	prov:wasDerivedFrom doc:ec5727bd3907 .
+doc:FactsOrgShanghaiMaritimeUniversity None:has_text_value "Logistics Engineering College, Shanghai Maritime University, Shanghai 201306, China" .
+_:fd025b085dd0e7cf8d4cedb39fd83993 rdf:reifies <<( doc:FactsOrgShanghaiMaritimeUniversity None:has_text_value "Logistics Engineering College, Shanghai Maritime University, Shanghai 201306, China" )>> ;
+	prov:wasDerivedFrom doc:ec5727bd3907 .
+doc:factsTemperatureVar None:has_text_value "temperature signal" .
+_:d9c7a6d1f37a8e81e5d6bd5fee23d03c rdf:reifies <<( doc:factsTemperatureVar None:has_text_value "temperature signal" )>> ;
+	prov:wasDerivedFrom doc:ec5727bd3907 .
+doc:FactsDesignDetail1_1 a None:Design_detail .
+_:b8735c8b628660bc7ddbab8f911969ca rdf:reifies <<( doc:FactsDesignDetail1_1 rdf:type None:Design_detail )>> ;
+	prov:wasDerivedFrom doc:ec5727bd3907 .
+doc:FactsHealthAssessment_1 None:has_text_value "construct bearing health stages (HS) and assess health" .
+_:fee0bb80ec7c44d93ed37389fda3bf9 rdf:reifies <<( doc:FactsHealthAssessment_1 None:has_text_value "construct bearing health stages (HS) and assess health" )>> ;
+	prov:wasDerivedFrom doc:ec5727bd3907 .
+obo:BFO_0000051 doc:factsPronostia doc:factsVibrationVar .
+_:df8eca75b744b7a69c0715728ba97b2f rdf:reifies <<( obo:BFO_0000051 doc:factsPronostia doc:factsVibrationVar )>> ;
+	prov:wasDerivedFrom doc:ec5727bd3907 .
+doc:FactsArticle1_8 schema1:author doc:FactsPersonKarimaB .
+_:c507a317c4cced2c8c0cd5cad1486d14 rdf:reifies <<( doc:FactsArticle1_8 schema1:author doc:FactsPersonKarimaB )>> ;
+	prov:wasDerivedFrom doc:ec5727bd3907 .
+doc:FactsArticle1_8 cco:is_about doc:factsModel1 .
+_:e82e31ed3666a736e4617b6928025956 rdf:reifies <<( doc:FactsArticle1_8 cco:is_about doc:factsModel1 )>> ;
+	prov:wasDerivedFrom doc:ec5727bd3907 .
+doc:FactsArticle1_8 None:has_title doc:FactsArticleTitle1_2 .
+_:f3d753ac2193fb94fbdcaf0f58cae4bf rdf:reifies <<( doc:FactsArticle1_8 None:has_title doc:FactsArticleTitle1_2 )>> ;
+	prov:wasDerivedFrom doc:ec5727bd3907 .
+doc:FactsBearingMaintainableItem None:has_text_value "induction machine bearing" .
+_:e642a8b3838772e8f39ede6773a6d536 rdf:reifies <<( doc:FactsBearingMaintainableItem None:has_text_value "induction machine bearing" )>> ;
+	prov:wasDerivedFrom doc:ec5727bd3907 .
+doc:FactsPersonKarimaB a schema1:Person .
+_:b609b45f5eeb5b3f6d93af220f07e1e6 rdf:reifies <<( doc:FactsPersonKarimaB rdf:type schema1:Person )>> ;
+	prov:wasDerivedFrom doc:ec5727bd3907 .
+doc:FactsOrgLmcs None:has_text_value "Institut de Recherche Dupuy de LÃ´me (UMR CNRS 6027), University of Brest, 29238 Brest, France" .
+_:fd3083626bac13a78ef33777e9c7d8f rdf:reifies <<( doc:FactsOrgLmcs None:has_text_value "Institut de Recherche Dupuy de LÃ´me (UMR CNRS 6027), University of Brest, 29238 Brest, France" )>> ;
+	prov:wasDerivedFrom doc:ec5727bd3907 .
+doc:FactsPersonKarimaB schema1:familyName "Khamoudj" .
+_:a1788783a17851125bb6493174a662c4 rdf:reifies <<( doc:FactsPersonKarimaB schema1:familyName "Khamoudj" )>> ;
+	prov:wasDerivedFrom doc:ec5727bd3907 .
+doc:FactsPersonKarimaB schema1:givenName "Mohamed" .
+_:f36ccafaf3c8b9da0e9bd927293b96ef rdf:reifies <<( doc:FactsPersonKarimaB schema1:givenName "Mohamed" )>> ;
+	prov:wasDerivedFrom doc:ec5727bd3907 .
+doc:FactsOrgShanghaiMaritimeUniversity a schema1:Organization .
+_:eb9cf0adfbf6089481875f6ff34c6d0f rdf:reifies <<( doc:FactsOrgShanghaiMaritimeUniversity rdf:type schema1:Organization )>> ;
+	prov:wasDerivedFrom doc:ec5727bd3907 .
+doc:factsModel1 a None:Predictive_maintenance_model .
+_:eab25f776ae202c12b714775144d000a rdf:reifies <<( doc:factsModel1 rdf:type None:Predictive_maintenance_model )>> ;
+	prov:wasDerivedFrom doc:ec5727bd3907 .
+doc:FactsRul_2 a None:Remaining_useful_life_estimation .
+_:a8588255017a7066268dc6fd74aa2853 rdf:reifies <<( doc:FactsRul_2 rdf:type None:Remaining_useful_life_estimation )>> ;
+	prov:wasDerivedFrom doc:ec5727bd3907 .
+doc:factsHi1 a None:Performance_indicator .
+_:d39d0302008459d9492bc5276f70fa09 rdf:reifies <<( doc:factsHi1 rdf:type None:Performance_indicator )>> ;
+	prov:wasDerivedFrom doc:ec5727bd3907 .
+doc:FactsPersonKarimaB schema1:email "k_benatchba@esi.dz" .
+_:e68f1ba1ee9e553a02e79654d354550f rdf:reifies <<( doc:FactsPersonKarimaB schema1:email "k_benatchba@esi.dz" )>> ;
+	prov:wasDerivedFrom doc:ec5727bd3907 .
+doc:factsVibrationVar None:has_text_value "vibration signal" .
+_:aeda583c0db9f4fa5c0193a99fb4dc65 rdf:reifies <<( doc:factsVibrationVar None:has_text_value "vibration signal" )>> ;
+	prov:wasDerivedFrom doc:ec5727bd3907 .
+doc:factsPronostia None:has_text_value "NASA-IMS experimentation platform" .
+_:a0b9d943385b583509e588f4a3d5531d rdf:reifies <<( doc:factsPronostia None:has_text_value "NASA-IMS experimentation platform" )>> ;
+	prov:wasDerivedFrom doc:ec5727bd3907 .
+obo:RO_0010002 doc:factsModel1 doc:factsModel1 .
+_:bffb43cf225c2ad9f1e6eece593ee2ad rdf:reifies <<( obo:RO_0010002 doc:factsModel1 doc:factsModel1 )>> ;
+	prov:wasDerivedFrom doc:ec5727bd3907 .
+doc:factsModel1 None:has_design_detail doc:FactsDesignDetail1_1 .
+_:fe51b871924f41a152da2d47639f8dc4 rdf:reifies <<( doc:factsModel1 None:has_design_detail doc:FactsDesignDetail1_1 )>> ;
+	prov:wasDerivedFrom doc:ec5727bd3907 .
+cco:describes doc:factsHi1 doc:FactsBearingMaintainableItem .
+_:d6e4fb6e130a9a72a2f14ff25412d22b rdf:reifies <<( cco:describes doc:factsHi1 doc:FactsBearingMaintainableItem )>> ;
+	prov:wasDerivedFrom doc:ec5727bd3907 .
+cco:describes doc:factsVibrationVar doc:factsModel1 .
+_:a791dc0f1d3ae98e625e3f0a664f07d0 rdf:reifies <<( cco:describes doc:factsVibrationVar doc:factsModel1 )>> ;
+	prov:wasDerivedFrom doc:ec5727bd3907 .
+cco:is_about doc:factsModel1 doc:FactsBearingMaintainableItem .
+_:c1c0c58303ec2065911b21623faf2141 rdf:reifies <<( cco:is_about doc:factsModel1 doc:FactsBearingMaintainableItem )>> ;
+	prov:wasDerivedFrom doc:ec5727bd3907 .
+doc:FactsPersonKarimaB schema1:givenName "Charafeddine" .
+_:cc841f97f69300ad848da8de54e0a231 rdf:reifies <<( doc:FactsPersonKarimaB schema1:givenName "Charafeddine" )>> ;
+	prov:wasDerivedFrom doc:ec5727bd3907 .
+doc:FactsPersonKarimaB schema1:givenName "Fatima" .
+_:a31f72a35e0b775d0c20918fad028b1d rdf:reifies <<( doc:FactsPersonKarimaB schema1:givenName "Fatima" )>> ;
+	prov:wasDerivedFrom doc:ec5727bd3907 .
+doc:factsVibrationVar a None:Data_variable .
+_:c7c0748bc99b50df0ee38a5c053ce914 rdf:reifies <<( doc:factsVibrationVar rdf:type None:Data_variable )>> ;
+	prov:wasDerivedFrom doc:ec5727bd3907 .
+doc:FactsOrgLmcs a schema1:Organization .
+_:cd1c5fcf773cdc8c555a3649282603e2 rdf:reifies <<( doc:FactsOrgLmcs rdf:type schema1:Organization )>> ;
+	prov:wasDerivedFrom doc:ec5727bd3907 .
+doc:FactsArticleTitle1_2 a None:Article_title .
+_:e397400c5b996fc371be084b062b3309 rdf:reifies <<( doc:FactsArticleTitle1_2 rdf:type None:Article_title )>> ;
+	prov:wasDerivedFrom doc:ec5727bd3907 .
+doc:FactsArticleTitle1_2 None:has_text_value "Correspondence: mohamed.benbouzid@univ-brest.fr; Tel.: +86-332-9801-8007" .
+_:b50240a0ba31aa5eb97ddb495aa11c35 rdf:reifies <<( doc:FactsArticleTitle1_2 None:has_text_value "Correspondence: mohamed.benbouzid@univ-brest.fr; Tel.: +86-332-9801-8007" )>> ;
+	prov:wasDerivedFrom doc:ec5727bd3907 .
+doc:FactsDesignDetail1_1 None:has_text_value "Unsupervised data-driven prognostic framework integrating signal preprocessing, data clustering for health stage construction, designed health indicator (HI), ANN forecasting, and fine-tuning model for remaining useful life estimation" .
+_:b2a1451d0c1e4c525d2b2ff31a09e38a rdf:reifies <<( doc:FactsDesignDetail1_1 None:has_text_value "Unsupervised data-driven prognostic framework integrating signal preprocessing, data clustering for health stage construction, designed health indicator (HI), ANN forecasting, and fine-tuning model for remaining useful life estimation" )>> ;
+	prov:wasDerivedFrom doc:ec5727bd3907 .
+doc:factsModel1 None:has_predictive_maintenance_function doc:FactsHealthAssessment_1 .
+_:f9e9132c9842c6df64e1d4c3f3ebad4d rdf:reifies <<( doc:factsModel1 None:has_predictive_maintenance_function doc:FactsHealthAssessment_1 )>> ;
+	prov:wasDerivedFrom doc:ec5727bd3907 .
+doc:FactsPersonKarimaB schema1:telephone "+86-332-9801-8007" .
+_:b2030e266e4fa2bdab6c6e4cecec0a78 rdf:reifies <<( doc:FactsPersonKarimaB schema1:telephone "+86-332-9801-8007" )>> ;
+	prov:wasDerivedFrom doc:ec5727bd3907 .
+doc:FactsSyncOnline a None:Module_synchronization .
+_:b86ca7c7001c381dbac5865ee5855d6f rdf:reifies <<( doc:FactsSyncOnline rdf:type None:Module_synchronization )>> ;
+	prov:wasDerivedFrom doc:ec5727bd3907 .
+doc:FactsSyncOnline None:has_text_value "online" .
+_:e6980ffeb4735da006aca7739ae88a52 rdf:reifies <<( doc:FactsSyncOnline None:has_text_value "online" )>> ;
+	prov:wasDerivedFrom doc:ec5727bd3907 .
+cco:describes doc:factsTemperatureVar doc:factsModel1 .
+_:eb479fad6ac680db70061d5851998a01 rdf:reifies <<( cco:describes doc:factsTemperatureVar doc:factsModel1 )>> ;
+	prov:wasDerivedFrom doc:ec5727bd3907 .
+doc:factsModel1 None:has_predictive_maintenance_function doc:FactsClusteringMethod .
+_:c001f51e1af70895ceb95f1a428e9ae1 rdf:reifies <<( doc:factsModel1 None:has_predictive_maintenance_function doc:FactsClusteringMethod )>> ;
+	prov:wasDerivedFrom doc:ec5727bd3907 .
+obo:BFO_0000051 doc:factsPronostia doc:factsTemperatureVar .
+_:bad7020789a2190ce8cafaad5660caed rdf:reifies <<( obo:BFO_0000051 doc:factsPronostia doc:factsTemperatureVar )>> ;
+	prov:wasDerivedFrom doc:ec5727bd3907 .
+doc:factsPronostia None:has_text_value "PRONOSTIA experimentation platform (bearing run-to-failure dataset)" .
+_:e073d93da833147fe9b7ab0ae58c5f4f rdf:reifies <<( doc:factsPronostia None:has_text_value "PRONOSTIA experimentation platform (bearing run-to-failure dataset)" )>> ;
+	prov:wasDerivedFrom doc:ec5727bd3907 .
+doc:FactsRul_2 None:has_text_value "remaining useful life (RUL) estimation using ANN and fine-tuning model" .
+_:d8af8dcf37de333b0fcc35ef33663b31 rdf:reifies <<( doc:FactsRul_2 None:has_text_value "remaining useful life (RUL) estimation using ANN and fine-tuning model" )>> ;
+	prov:wasDerivedFrom doc:ec5727bd3907 .
+doc:FactsOrgLmcs None:has_text_value "Laboratoire des MÃ©thodes de Conception de SystÃ¨mes (LMCS), Ãcole Nationale SupÃ©rieure d'Informatique (ESI), BP68M, OuedSmar, Algiers 16270, Algeria" .
+_:af9d9fcc6f6163f84f663859564e105 rdf:reifies <<( doc:FactsOrgLmcs None:has_text_value "Laboratoire des MÃ©thodes de Conception de SystÃ¨mes (LMCS), Ãcole Nationale SupÃ©rieure d'Informatique (ESI), BP68M, OuedSmar, Algiers 16270, Algeria" )>> ;
+	prov:wasDerivedFrom doc:ec5727bd3907 .
+doc:factsPronostia a schema1:Dataset .
+_:ae6aca842b1d90586419228e153c10c4 rdf:reifies <<( doc:factsPronostia rdf:type schema1:Dataset )>> ;
+	prov:wasDerivedFrom doc:ec5727bd3907 .
+doc:FactsHealthAssessment_1 a None:Health_assessment .
+_:dd0a5e560defc392c1705b8aeb0c3d05 rdf:reifies <<( doc:FactsHealthAssessment_1 rdf:type None:Health_assessment )>> ;
+	prov:wasDerivedFrom doc:ec5727bd3907 .
+doc:FactsArticle1_8 a None:Predictive_Maintenance_Article .
+_:b81592afba4f77de69b7d94ebdaf440b rdf:reifies <<( doc:FactsArticle1_8 rdf:type None:Predictive_Maintenance_Article )>> ;
+	prov:wasDerivedFrom doc:ec5727bd3907 .
+doc:factsModel1 a None:Predictive_maintenance_system_module .
+_:b66dbe1300a1069c6e9f01d332387563 rdf:reifies <<( doc:factsModel1 rdf:type None:Predictive_maintenance_system_module )>> ;
+	prov:wasDerivedFrom doc:ec5727bd3907 .
+doc:FactsPersonKarimaB schema1:email "c_khamoudj@esi.dz" .
+_:bb87a680c5067b34d6a1c47155f30051 rdf:reifies <<( doc:FactsPersonKarimaB schema1:email "c_khamoudj@esi.dz" )>> ;
+	prov:wasDerivedFrom doc:ec5727bd3907 .
+doc:factsModel1 None:has_predictive_maintenance_function doc:FactsRul_2 .
+_:d307af17dc9ade5795390c7f4db523f4 rdf:reifies <<( doc:factsModel1 None:has_predictive_maintenance_function doc:FactsRul_2 )>> ;
+	prov:wasDerivedFrom doc:ec5727bd3907 .
+doc:FactsPersonKarimaB schema1:familyName "Benatchba" .
+_:fddf7d758d9d6e19741fa397ea0a8ace rdf:reifies <<( doc:FactsPersonKarimaB schema1:familyName "Benatchba" )>> ;
+	prov:wasDerivedFrom doc:ec5727bd3907 .
+doc:factsTemperatureVar a None:Data_variable .
+_:fb9a3a24e668f79995ba00ce44133e63 rdf:reifies <<( doc:factsTemperatureVar rdf:type None:Data_variable )>> ;
+	prov:wasDerivedFrom doc:ec5727bd3907 .
+doc:FactsPersonKarimaB schema1:email "mohamed.benbouzid@univ-brest.fr" .
+_:ee9439e887a67de66104931d18fab0b rdf:reifies <<( doc:FactsPersonKarimaB schema1:email "mohamed.benbouzid@univ-brest.fr" )>> ;
+	prov:wasDerivedFrom doc:ec5727bd3907 .
+doc:FactsArticle1_8 None:has_identifier doc:FactsArticleTitle1_2 .
+_:ebf3d036f79ad29d6b357dc1a10d698 rdf:reifies <<( doc:FactsArticle1_8 None:has_identifier doc:FactsArticleTitle1_2 )>> ;
+	prov:wasDerivedFrom doc:ec5727bd3907 .
+doc:FactsAnnModelType None:has_text_value "Artificial Neural Network (ANN)" .
+_:b59994b8e90854baecf8d4742b91af92 rdf:reifies <<( doc:FactsAnnModelType None:has_text_value "Artificial Neural Network (ANN)" )>> ;
+	prov:wasDerivedFrom doc:ec5727bd3907 .
+doc:FactsArticleTitle1_2 None:has_text_value "An Unsupervised Data-Driven Framework for Bearing Failure Prognosis via Health Stage Clustering and Artificial Neural Network-Based Remaining Useful Life Estimation" .
+_:c6687091c56aacee97ca30f74c9c303b rdf:reifies <<( doc:FactsArticleTitle1_2 None:has_text_value "An Unsupervised Data-Driven Framework for Bearing Failure Prognosis via Health Stage Clustering and Artificial Neural Network-Based Remaining Useful Life Estimation" )>> ;
+	prov:wasDerivedFrom doc:ec5727bd3907 .
+doc:FactsPersonKarimaB schema1:familyName "Benbouzid" .
+_:dc0d041940a6c0d5d52b9c853f004214 rdf:reifies <<( doc:FactsPersonKarimaB schema1:familyName "Benbouzid" )>> ;
+	prov:wasDerivedFrom doc:ec5727bd3907 .
+doc:FactsPersonKarimaB schema1:familyName "Benbouzid-Si Tayeb" .
+_:d16a37004abee93fbf9a56361bc9a21c rdf:reifies <<( doc:FactsPersonKarimaB schema1:familyName "Benbouzid-Si Tayeb" )>> ;
+	prov:wasDerivedFrom doc:ec5727bd3907 .
+doc:FactsPersonKarimaB schema1:email "f_sitayeb@esi.dz" .
+_:a3cb781161074a5783afe5e527cdfc7d rdf:reifies <<( doc:FactsPersonKarimaB schema1:email "f_sitayeb@esi.dz" )>> ;
+	prov:wasDerivedFrom doc:ec5727bd3907 .
+doc:FactsClusteringMethod None:has_text_value "data clustering to construct bearing health stages (unsupervised)" .
+_:e02f07d4d084c9d81f60971c821ea5dc rdf:reifies <<( doc:FactsClusteringMethod None:has_text_value "data clustering to construct bearing health stages (unsupervised)" )>> ;
+	prov:wasDerivedFrom doc:ec5727bd3907 .
+doc:FactsPersonKarimaB schema1:affiliation doc:FactsOrgShanghaiMaritimeUniversity .
+_:f9894ef1de4d3ffef5ac7da6bc72b832 rdf:reifies <<( doc:FactsPersonKarimaB schema1:affiliation doc:FactsOrgShanghaiMaritimeUniversity )>> ;
+	prov:wasDerivedFrom doc:ec5727bd3907 .
+doc:77adf9732ea8 a prov:Entity , schema:text ;
+	prov:generatedAtTime "2026-06-12T03:45:15.413074Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+	schema:position 1 ;
+	schema:identifier "77adf9732ea8" .
+doc:FactseditorJanPitel schema1:name "Kamil Å½idek" .
+_:b93c99c5131f9878a1ac8fb4a2d7e96c rdf:reifies <<( doc:FactseditorJanPitel schema1:name "Kamil Å½idek" )>> ;
+	prov:wasDerivedFrom doc:77adf9732ea8 .
+doc:FactssensorElectric a schema1:Device .
+_:ee59ae61023046126922fe95f8ac61fb rdf:reifies <<( doc:FactssensorElectric rdf:type schema1:Device )>> ;
+	prov:wasDerivedFrom doc:77adf9732ea8 .
+doc:FactsArticle1_8 schema1:dateAccepted "2026-02-27"^^<http://www.w3.org/2001/XMLSchema#date> .
+_:fb72347ee584df7e1d325a370d43f060 rdf:reifies <<( doc:FactsArticle1_8 schema1:dateAccepted "2026-02-27"^^<http://www.w3.org/2001/XMLSchema#date> )>> ;
+	prov:wasDerivedFrom doc:77adf9732ea8 .
+doc:FactssensorMagnetic a schema1:Device .
+_:d8ca90b8209c5fffd94062c8e4647ae1 rdf:reifies <<( doc:FactssensorMagnetic rdf:type schema1:Device )>> ;
+	prov:wasDerivedFrom doc:77adf9732ea8 .
+doc:FactsdataAnalytics a schema1:Thing .
+_:c1193abd13eda763eb12f74e17161258 rdf:reifies <<( doc:FactsdataAnalytics rdf:type schema1:Thing )>> ;
+	prov:wasDerivedFrom doc:77adf9732ea8 .
+doc:FactsMl a schema1:Thing .
+_:fdc0a2274215f02f56b5ccdff70a8e78 rdf:reifies <<( doc:FactsMl rdf:type schema1:Thing )>> ;
+	prov:wasDerivedFrom doc:77adf9732ea8 .
+doc:FactseditorJanPitel schema1:name "Tibor Krenicky" .
+_:c7f49895cddd11ed5319e5ba7584d058 rdf:reifies <<( doc:FactseditorJanPitel schema1:name "Tibor Krenicky" )>> ;
+	prov:wasDerivedFrom doc:77adf9732ea8 .
+_:a8588255017a7066268dc6fd74aa2853 prov:wasDerivedFrom doc:77adf9732ea8 .
+doc:FactsArticle1_8 schema1:license <https://creativecommons.org/licenses/by/4.0/> .
+_:b1d3b05b5c173ff8cbb5dbb98a99aa93 rdf:reifies <<( doc:FactsArticle1_8 schema1:license <https://creativecommons.org/licenses/by/4.0/> )>> ;
+	prov:wasDerivedFrom doc:77adf9732ea8 .
+doc:FactsAi_1 rdfs:label "artificial intelligence (AI)" .
+_:ef2dacd1d49f02c7978252f9ad5911e6 rdf:reifies <<( doc:FactsAi_1 rdfs:label "artificial intelligence (AI)" )>> ;
+	prov:wasDerivedFrom doc:77adf9732ea8 .
+doc:FactsCbm_2 rdfs:label "predictive maintenance" .
+_:bc1ffbcd5ba6fa0429d907d58beac2d7 rdf:reifies <<( doc:FactsCbm_2 rdfs:label "predictive maintenance" )>> ;
+	prov:wasDerivedFrom doc:77adf9732ea8 .
+doc:FactseditorJanPitel a schema1:Person .
+_:a33b2067b4770445575d2a7a267dea02 rdf:reifies <<( doc:FactseditorJanPitel rdf:type schema1:Person )>> ;
+	prov:wasDerivedFrom doc:77adf9732ea8 .
+doc:FactsdataAnalytics rdfs:label "data analytics" .
+_:c20a8400974a51128d676352a5ad019f rdf:reifies <<( doc:FactsdataAnalytics rdfs:label "data analytics" )>> ;
+	prov:wasDerivedFrom doc:77adf9732ea8 .
+doc:FactsprognosticAlgorithm cco:describes doc:FactsRul_2 .
+_:b67a6fe14e8e90b99c1a0b6f9b4659fa rdf:reifies <<( doc:FactsprognosticAlgorithm cco:describes doc:FactsRul_2 )>> ;
+	prov:wasDerivedFrom doc:77adf9732ea8 .
+doc:FactsMl rdfs:label "machine learning (ML)" .
+_:a08348bb372d22525d526f79d876afd5 rdf:reifies <<( doc:FactsMl rdfs:label "machine learning (ML)" )>> ;
+	prov:wasDerivedFrom doc:77adf9732ea8 .
+doc:FactseditorJanPitel schema1:name "JÃ¡n Pitel'" .
+_:d740652019a6702ef4ce90392a9f05ab rdf:reifies <<( doc:FactseditorJanPitel schema1:name "JÃ¡n Pitel'" )>> ;
+	prov:wasDerivedFrom doc:77adf9732ea8 .
+doc:FactsHi rdfs:comment "Descriptive indicator used to represent component degradation for prognostics" .
+_:be6ea5c11562277ae8fd39709644492 rdf:reifies <<( doc:FactsHi rdfs:comment "Descriptive indicator used to represent component degradation for prognostics" )>> ;
+	prov:wasDerivedFrom doc:77adf9732ea8 .
+_:b81592afba4f77de69b7d94ebdaf440b prov:wasDerivedFrom doc:77adf9732ea8 .
+doc:FactsCbm_2 a None:Predictive_maintenance_model .
+_:c24c1c6d29f1aa29208227367dc27ea rdf:reifies <<( doc:FactsCbm_2 rdf:type None:Predictive_maintenance_model )>> ;
+	prov:wasDerivedFrom doc:77adf9732ea8 .
+doc:FactsHi rdfs:label "Health indicator (HI)" .
+_:f8f3679ea00fc6f5033d6125262ef618 rdf:reifies <<( doc:FactsHi rdfs:label "Health indicator (HI)" )>> ;
+	prov:wasDerivedFrom doc:77adf9732ea8 .
+doc:FactspublisherMdpi schema1:name "MDPI, Basel, Switzerland" .
+_:f0322653eb1136aa615110e12e2e8e11 rdf:reifies <<( doc:FactspublisherMdpi schema1:name "MDPI, Basel, Switzerland" )>> ;
+	prov:wasDerivedFrom doc:77adf9732ea8 .
+doc:FactssensorVibration_1 rdfs:label "vibration sensor" .
+_:ff701c2f5d64ccd9538fee1d58d7671f rdf:reifies <<( doc:FactssensorVibration_1 rdfs:label "vibration sensor" )>> ;
+	prov:wasDerivedFrom doc:77adf9732ea8 .
+doc:FactsArticle1_8 schema1:publisher doc:FactspublisherMdpi .
+_:d76db4fe7809cdb4e1abb6c036728152 rdf:reifies <<( doc:FactsArticle1_8 schema1:publisher doc:FactspublisherMdpi )>> ;
+	prov:wasDerivedFrom doc:77adf9732ea8 .
+doc:FactsprognosticAlgorithm rdfs:label "prognostic algorithm" .
+_:b5f095dc26d27e322c6b7657d909135b rdf:reifies <<( doc:FactsprognosticAlgorithm rdfs:label "prognostic algorithm" )>> ;
+	prov:wasDerivedFrom doc:77adf9732ea8 .
+doc:FactsArticle1_8 schema1:editor doc:FactseditorJanPitel .
+_:ae91206365071cc5f91cb2e8981c0e6a rdf:reifies <<( doc:FactsArticle1_8 schema1:editor doc:FactseditorJanPitel )>> ;
+	prov:wasDerivedFrom doc:77adf9732ea8 .
+doc:FactssensorTemperature rdfs:label "temperature sensor" .
+_:d71e275421029bfa6a4930facc934432 rdf:reifies <<( doc:FactssensorTemperature rdfs:label "temperature sensor" )>> ;
+	prov:wasDerivedFrom doc:77adf9732ea8 .
+doc:FactssensorAcoustic a schema1:Device .
+_:ce823f70675e46de44dc4e5fed5e0cca rdf:reifies <<( doc:FactssensorAcoustic rdf:type schema1:Device )>> ;
+	prov:wasDerivedFrom doc:77adf9732ea8 .
+doc:FactsAi_1 a schema1:Thing .
+_:b13cc3cebb14cc84d03a7829ddac71a6 rdf:reifies <<( doc:FactsAi_1 rdf:type schema1:Thing )>> ;
+	prov:wasDerivedFrom doc:77adf9732ea8 .
+doc:FactsprognosticAlgorithm a cco:Algorithm .
+_:cd43998f563527c92a37ce694095599b rdf:reifies <<( doc:FactsprognosticAlgorithm rdf:type cco:Algorithm )>> ;
+	prov:wasDerivedFrom doc:77adf9732ea8 .
+doc:FactssensorVibration_1 cco:designates doc:FactsCbm_2 .
+_:b6fcf1d31b8327e8378b3c165672cc49 rdf:reifies <<( doc:FactssensorVibration_1 cco:designates doc:FactsCbm_2 )>> ;
+	prov:wasDerivedFrom doc:77adf9732ea8 .
+doc:FactsArticle1_8 schema1:dateModified "2026-02-24"^^<http://www.w3.org/2001/XMLSchema#date> .
+_:d1bbd8adf44acf5b5e2e8915e40e3dd9 rdf:reifies <<( doc:FactsArticle1_8 schema1:dateModified "2026-02-24"^^<http://www.w3.org/2001/XMLSchema#date> )>> ;
+	prov:wasDerivedFrom doc:77adf9732ea8 .
+doc:FactsCbm_2 rdfs:comment "Determines maintenance needs from real-time sensor signal analysis to target interventions, reducing over-maintenance and preventing downtime" .
+_:c82368ff2f1a6dc44f0f26cbde2b3ce2 rdf:reifies <<( doc:FactsCbm_2 rdfs:comment "Determines maintenance needs from real-time sensor signal analysis to target interventions, reducing over-maintenance and preventing downtime" )>> ;
+	prov:wasDerivedFrom doc:77adf9732ea8 .
+doc:FactssensorTemperature a schema1:Device .
+_:e70407ea334d349ce4e821cf57560f8c rdf:reifies <<( doc:FactssensorTemperature rdf:type schema1:Device )>> ;
+	prov:wasDerivedFrom doc:77adf9732ea8 .
+doc:FactspublisherMdpi a schema1:Organization .
+_:c990a02f5a3790e09c90eb1e74cc117e rdf:reifies <<( doc:FactspublisherMdpi rdf:type schema1:Organization )>> ;
+	prov:wasDerivedFrom doc:77adf9732ea8 .
+doc:FactssensorAcoustic rdfs:label "acoustic sensor" .
+_:b265c915ca3dfc6b41f3e58f4c1e3535 rdf:reifies <<( doc:FactssensorAcoustic rdfs:label "acoustic sensor" )>> ;
+	prov:wasDerivedFrom doc:77adf9732ea8 .
+doc:FactssensorVibration_1 a schema1:Device .
+_:d9f4f34dab5cfe1ad69ea8fd6dadbf82 rdf:reifies <<( doc:FactssensorVibration_1 rdf:type schema1:Device )>> ;
+	prov:wasDerivedFrom doc:77adf9732ea8 .
+doc:FactsRul_2 None:describes_type doc:FactsprognosticAlgorithm .
+_:f26f04f5cc011cf64b33734da102c418 rdf:reifies <<( doc:FactsRul_2 None:describes_type doc:FactsprognosticAlgorithm )>> ;
+	prov:wasDerivedFrom doc:77adf9732ea8 .
+doc:FactsArticle1_8 schema1:copyrightYear "2026"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+_:ba7c8d5ae2a7f4ddfb0da392d4efc3a2 rdf:reifies <<( doc:FactsArticle1_8 schema1:copyrightYear "2026"^^<http://www.w3.org/2001/XMLSchema#gYear> )>> ;
+	prov:wasDerivedFrom doc:77adf9732ea8 .
+doc:FactsCbm_2 rdfs:label "Condition-based maintenance (CBM)" .
+_:ead83052df89a3eb0de535244715d838 rdf:reifies <<( doc:FactsCbm_2 rdfs:label "Condition-based maintenance (CBM)" )>> ;
+	prov:wasDerivedFrom doc:77adf9732ea8 .
+doc:FactssensorMagnetic rdfs:label "magnetic field sensor" .
+_:cf95bfa2976cf714db0fdf48167a5bbe rdf:reifies <<( doc:FactssensorMagnetic rdfs:label "magnetic field sensor" )>> ;
+	prov:wasDerivedFrom doc:77adf9732ea8 .
+doc:FactsCbm_2 rdfs:comment "Strategy that relies on real-time condition of equipment and prognostics to schedule maintenance interventions" .
+_:bcd5b1c37baaa867c3f4a1a5dd4a65d8 rdf:reifies <<( doc:FactsCbm_2 rdfs:comment "Strategy that relies on real-time condition of equipment and prognostics to schedule maintenance interventions" )>> ;
+	prov:wasDerivedFrom doc:77adf9732ea8 .
+doc:FactsArticle1_8 schema1:datePublished "2026-03-04"^^<http://www.w3.org/2001/XMLSchema#date> .
+_:fe359bbee7438734bec548141aa28cd1 rdf:reifies <<( doc:FactsArticle1_8 schema1:datePublished "2026-03-04"^^<http://www.w3.org/2001/XMLSchema#date> )>> ;
+	prov:wasDerivedFrom doc:77adf9732ea8 .
+doc:FactsRul_2 rdfs:label "Remaining useful life (RUL)" .
+_:bc84bd7617a93bad31c06be345b7d616 rdf:reifies <<( doc:FactsRul_2 rdfs:label "Remaining useful life (RUL)" )>> ;
+	prov:wasDerivedFrom doc:77adf9732ea8 .
+doc:FactsHi a None:Performance_indicator .
+_:f1eb7a44f59fa96a2ac7b51103f0d728 rdf:reifies <<( doc:FactsHi rdf:type None:Performance_indicator )>> ;
+	prov:wasDerivedFrom doc:77adf9732ea8 .
+doc:FactsArticle1_8 schema1:dateReceived "2026-01-31"^^<http://www.w3.org/2001/XMLSchema#date> .
+_:aabf90b5734ea43b1af20f7092333b88 rdf:reifies <<( doc:FactsArticle1_8 schema1:dateReceived "2026-01-31"^^<http://www.w3.org/2001/XMLSchema#date> )>> ;
+	prov:wasDerivedFrom doc:77adf9732ea8 .
+doc:FactsHi None:describes_type doc:FactsprognosticAlgorithm .
+_:b35f8e4abf0f9184155f880ac8541acb rdf:reifies <<( doc:FactsHi None:describes_type doc:FactsprognosticAlgorithm )>> ;
+	prov:wasDerivedFrom doc:77adf9732ea8 .
+doc:FactsprognosticAlgorithm rdfs:comment "Algorithm used to estimate RUL and predict failures from sensor-derived inputs" .
+_:b365feeffd7e9ae308d26f64510694ce rdf:reifies <<( doc:FactsprognosticAlgorithm rdfs:comment "Algorithm used to estimate RUL and predict failures from sensor-derived inputs" )>> ;
+	prov:wasDerivedFrom doc:77adf9732ea8 .
+doc:FactssensorElectric rdfs:label "electric sensor" .
+_:a5cd9ee68bb93109d21cd04e6ce1435b rdf:reifies <<( doc:FactssensorElectric rdfs:label "electric sensor" )>> ;
+	prov:wasDerivedFrom doc:77adf9732ea8 .
+doc:59bb3336b282 a prov:Entity , schema:text ;
+	prov:generatedAtTime "2026-06-12T03:45:15.41625Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+	schema:position 2 ;
+	schema:identifier "59bb3336b282" .
+doc:FactsproposedMethod cco:describes doc:Factsclustering_technique_1 .
+_:e7bf536f15a2f86faf3e88aab8215e70 rdf:reifies <<( doc:FactsproposedMethod cco:describes doc:Factsclustering_technique_1 )>> ;
+	prov:wasDerivedFrom doc:59bb3336b282 .
+doc:FactsdirectRulMapping rdfs:label "direct remaining useful life mapping (trained from run-to-failure experiments)" .
+_:dca1967ccd867d8aa4df73b8e8adbad0 rdf:reifies <<( doc:FactsdirectRulMapping rdfs:label "direct remaining useful life mapping (trained from run-to-failure experiments)" )>> ;
+	prov:wasDerivedFrom doc:59bb3336b282 .
+doc:FactsdataDrivenApproach a cco:Algorithm .
+_:fc590a9db58f53bf31ef6f255f5e0e16 rdf:reifies <<( doc:FactsdataDrivenApproach rdf:type cco:Algorithm )>> ;
+	prov:wasDerivedFrom doc:59bb3336b282 .
+doc:Factsinduction_machine_1 obo:BFO_0000051 doc:Factsbearing_1 .
+_:d36ac52f5edba25090c815fe268036a1 rdf:reifies <<( doc:Factsinduction_machine_1 obo:BFO_0000051 doc:Factsbearing_1 )>> ;
+	prov:wasDerivedFrom doc:59bb3336b282 .
+doc:FactscumulativeDegradation cco:describes doc:FactstimeSeriesAnalysis .
+_:f9eb6dd5cfa3413325c34160e738877a rdf:reifies <<( doc:FactscumulativeDegradation cco:describes doc:FactstimeSeriesAnalysis )>> ;
+	prov:wasDerivedFrom doc:59bb3336b282 .
+doc:FactsmodelBasedMethod a cco:Algorithm .
+_:ba180a8b5154f830a46ba1f13dbadab7 rdf:reifies <<( doc:FactsmodelBasedMethod rdf:type cco:Algorithm )>> ;
+	prov:wasDerivedFrom doc:59bb3336b282 .
+doc:FactsmodelBasedMethod rdfs:label "model-based approach" .
+_:b60f6cbff6a2901e31c1d1b3f243676c rdf:reifies <<( doc:FactsmodelBasedMethod rdfs:label "model-based approach" )>> ;
+	prov:wasDerivedFrom doc:59bb3336b282 .
+doc:FactspriorSemiSupervisedZhu rdfs:label "semi-supervised model (Wang et al.)" .
+_:d1863adc0a5f7dced81789711b8bb331 rdf:reifies <<( doc:FactspriorSemiSupervisedZhu rdfs:label "semi-supervised model (Wang et al.)" )>> ;
+	prov:wasDerivedFrom doc:59bb3336b282 .
+doc:FactsdataDrivenApproach rdfs:label "data-driven approach (AI/ML based)" .
+_:e78e343e2e728ef304ce1bfb7edbca68 rdf:reifies <<( doc:FactsdataDrivenApproach rdfs:label "data-driven approach (AI/ML based)" )>> ;
+	prov:wasDerivedFrom doc:59bb3336b282 .
+doc:Factsclustering_technique_1 a None:Clustering .
+_:cb7c66963ad07489b73b742b46c5312a rdf:reifies <<( doc:Factsclustering_technique_1 rdf:type None:Clustering )>> ;
+	prov:wasDerivedFrom doc:59bb3336b282 .
+_:c24c1c6d29f1aa29208227367dc27ea prov:wasDerivedFrom doc:59bb3336b282 .
+doc:FactsunlabeledTrainingDataUsage rdfs:label "eliminates need for manual labeling of degradation states" .
+_:d96fe34e88964cbf87d3b88f01e0c112 rdf:reifies <<( doc:FactsunlabeledTrainingDataUsage rdfs:label "eliminates need for manual labeling of degradation states" )>> ;
+	prov:wasDerivedFrom doc:59bb3336b282 .
+doc:Factsresiduals cco:describes doc:Factsfault_signature_1 .
+_:ddb094d8eb84aaef7414223606511279 rdf:reifies <<( doc:Factsresiduals cco:describes doc:Factsfault_signature_1 )>> ;
+	prov:wasDerivedFrom doc:59bb3336b282 .
+doc:FactsmlTechniques a None:Data_mining_technique_function .
+_:cfd620f6817558954f8a670742edbaaf rdf:reifies <<( doc:FactsmlTechniques rdf:type None:Data_mining_technique_function )>> ;
+	prov:wasDerivedFrom doc:59bb3336b282 .
+doc:FactstemperatureSignal a None:Data_variable .
+_:a0614b593197713dcf299ece09dc154f rdf:reifies <<( doc:FactstemperatureSignal rdf:type None:Data_variable )>> ;
+	prov:wasDerivedFrom doc:59bb3336b282 .
+doc:FactstemperatureSignal cco:describes doc:Factsbearing_1 .
+_:ecf8fc52ac7a65e5dabc541b7386264c rdf:reifies <<( doc:FactstemperatureSignal cco:describes doc:Factsbearing_1 )>> ;
+	prov:wasDerivedFrom doc:59bb3336b282 .
+doc:FactsproposedMethod rdfs:label "unsupervised CMO-based clustering approach for direct RUL mapping" .
+_:ab925ca8c605fc29d1e13bac74b64bf6 rdf:reifies <<( doc:FactsproposedMethod rdfs:label "unsupervised CMO-based clustering approach for direct RUL mapping" )>> ;
+	prov:wasDerivedFrom doc:59bb3336b282 .
+doc:Factsinduction_machine_1 a None:Maintainable_item .
+_:ddd9d1b271cbb5f1262d26732a16c114 rdf:reifies <<( doc:Factsinduction_machine_1 rdf:type None:Maintainable_item )>> ;
+	prov:wasDerivedFrom doc:59bb3336b282 .
+doc:FactscumulativeDegradation cco:describes doc:FactsmlTechniques .
+_:b14271e383e4e5c647fa7356026ab7a0 rdf:reifies <<( doc:FactscumulativeDegradation cco:describes doc:FactsmlTechniques )>> ;
+	prov:wasDerivedFrom doc:59bb3336b282 .
+doc:FactspriorSemiSupervisedZhu a cco:Algorithm .
+_:d2c5c714954d5bdea9a1d073795d6162 rdf:reifies <<( doc:FactspriorSemiSupervisedZhu rdf:type cco:Algorithm )>> ;
+	prov:wasDerivedFrom doc:59bb3336b282 .
+doc:FactsproposedMethod cco:describes doc:Factsdegradation_model_1 .
+_:dcef2b59629e0eedcdc90ba68d027675 rdf:reifies <<( doc:FactsproposedMethod cco:describes doc:Factsdegradation_model_1 )>> ;
+	prov:wasDerivedFrom doc:59bb3336b282 .
+doc:Factsbearing_1 a None:Maintainable_item .
+_:f4107dc5f6428c1240cddc1b75e9e43c rdf:reifies <<( doc:Factsbearing_1 rdf:type None:Maintainable_item )>> ;
+	prov:wasDerivedFrom doc:59bb3336b282 .
+doc:FactsdirectRulMapping a None:Remaining_useful_life_estimation .
+_:c0a291afaea72d3e20d53137e195ecc6 rdf:reifies <<( doc:FactsdirectRulMapping rdf:type None:Remaining_useful_life_estimation )>> ;
+	prov:wasDerivedFrom doc:59bb3336b282 .
+doc:Factshealth_indicator_1 cco:describes doc:FactsCbm_2 .
+_:e5f1c2165a4c1538b213685d17bf37ab rdf:reifies <<( doc:Factshealth_indicator_1 cco:describes doc:FactsCbm_2 )>> ;
+	prov:wasDerivedFrom doc:59bb3336b282 .
+doc:FactsdataDrivenApproach cco:describes doc:FactsCbm_2 .
+_:c14747cf35bb9dd9c4904894818ab8a8 rdf:reifies <<( doc:FactsdataDrivenApproach cco:describes doc:FactsCbm_2 )>> ;
+	prov:wasDerivedFrom doc:59bb3336b282 .
+doc:FactsvibrationSignal rdfs:label "vibration signal" .
+_:e11b11b8aa0239d547d8dfa91ddba87b rdf:reifies <<( doc:FactsvibrationSignal rdfs:label "vibration signal" )>> ;
+	prov:wasDerivedFrom doc:59bb3336b282 .
+doc:FactsvibrationSignal cco:describes doc:Factsbearing_1 .
+_:b09ee36b8dbe70d6f279911a4de1f5cb rdf:reifies <<( doc:FactsvibrationSignal cco:describes doc:Factsbearing_1 )>> ;
+	prov:wasDerivedFrom doc:59bb3336b282 .
+doc:FactspriorSemiSupervisedZhu rdfs:label "semi-supervised model (Zhu et al.)" .
+_:aab1fb08f3641291a2c6e4d4feb2d512 rdf:reifies <<( doc:FactspriorSemiSupervisedZhu rdfs:label "semi-supervised model (Zhu et al.)" )>> ;
+	prov:wasDerivedFrom doc:59bb3336b282 .
+doc:FactsproposedMethod a None:Predictive_maintenance_model .
+_:a2722b8c988e3bada1fc6f6337dbe216 rdf:reifies <<( doc:FactsproposedMethod rdf:type None:Predictive_maintenance_model )>> ;
+	prov:wasDerivedFrom doc:59bb3336b282 .
+doc:FactscumulativeDegradation rdfs:label "cumulative degradation prognostic approach" .
+_:c4da869c16d737e28fba9617fa3eeb56 rdf:reifies <<( doc:FactscumulativeDegradation rdfs:label "cumulative degradation prognostic approach" )>> ;
+	prov:wasDerivedFrom doc:59bb3336b282 .
+doc:Factsfault_signature_1 a cco:DescriptiveInformationContentEntity .
+_:dcd1fff6765413b501df6194d0c6d789 rdf:reifies <<( doc:Factsfault_signature_1 rdf:type cco:DescriptiveInformationContentEntity )>> ;
+	prov:wasDerivedFrom doc:59bb3336b282 .
+doc:Factsresiduals a None:Fault_feature_extraction .
+_:adadc89d62cec1f9a335c6ae11e1da8c rdf:reifies <<( doc:Factsresiduals rdf:type None:Fault_feature_extraction )>> ;
+	prov:wasDerivedFrom doc:59bb3336b282 .
+doc:Factsdegradation_model_1 a None:Model_configuration .
+_:c2e7183df76b91b58a96e8cce8d516e6 rdf:reifies <<( doc:Factsdegradation_model_1 rdf:type None:Model_configuration )>> ;
+	prov:wasDerivedFrom doc:59bb3336b282 .
+doc:FactscumulativeDegradation a None:Remaining_useful_life_estimation .
+_:f91b321aa42e930a92d5b1a848bb6f64 rdf:reifies <<( doc:FactscumulativeDegradation rdf:type None:Remaining_useful_life_estimation )>> ;
+	prov:wasDerivedFrom doc:59bb3336b282 .
+doc:Factsresiduals rdfs:label "residuals (fault indicators)" .
+_:ebd79da663a5af044a4ed3b746ec8030 rdf:reifies <<( doc:Factsresiduals rdfs:label "residuals (fault indicators)" )>> ;
+	prov:wasDerivedFrom doc:59bb3336b282 .
+doc:Factsdegradation_model_1 rdfs:label "representative degradation model constructed from training data" .
+_:a16c33a108f79bed29eb74bf5ec7f199 rdf:reifies <<( doc:Factsdegradation_model_1 rdfs:label "representative degradation model constructed from training data" )>> ;
+	prov:wasDerivedFrom doc:59bb3336b282 .
+doc:FactstemperatureSignal rdfs:label "temperature signal" .
+_:e299c2a510b7ea0c9ed119f3d2bb0f5c rdf:reifies <<( doc:FactstemperatureSignal rdfs:label "temperature signal" )>> ;
+	prov:wasDerivedFrom doc:59bb3336b282 .
+doc:Factsinduction_machine_1 rdfs:label "induction machine" .
+_:c7bd995b6bd2a9b81a1e183bfb0cfb0 rdf:reifies <<( doc:Factsinduction_machine_1 rdfs:label "induction machine" )>> ;
+	prov:wasDerivedFrom doc:59bb3336b282 .
+doc:FactsvibrationSignal a None:Data_variable .
+_:b3822dea1dfd08c8c4492b6908b44719 rdf:reifies <<( doc:FactsvibrationSignal rdf:type None:Data_variable )>> ;
+	prov:wasDerivedFrom doc:59bb3336b282 .
+doc:Factsbearing_1 rdfs:label "bearing (component)" .
+_:cf205813b9ed6913184cdc772bdd8dab rdf:reifies <<( doc:Factsbearing_1 rdfs:label "bearing (component)" )>> ;
+	prov:wasDerivedFrom doc:59bb3336b282 .
+doc:Factsclustering_technique_1 rdfs:label "CMO-based unsupervised clustering" .
+_:e8ee964e43fe538c0079ec0108228a6b rdf:reifies <<( doc:Factsclustering_technique_1 rdfs:label "CMO-based unsupervised clustering" )>> ;
+	prov:wasDerivedFrom doc:59bb3336b282 .
+doc:FactsunlabeledTrainingDataUsage a cco:DescriptiveInformationContentEntity .
+_:e49e40f7ca0b3b267d5721f7cd3a5bc rdf:reifies <<( doc:FactsunlabeledTrainingDataUsage rdf:type cco:DescriptiveInformationContentEntity )>> ;
+	prov:wasDerivedFrom doc:59bb3336b282 .
+doc:FactsproposedMethod cco:describes doc:FactsunlabeledTrainingDataUsage .
+_:f84623a3712c95467916316985713070 rdf:reifies <<( doc:FactsproposedMethod cco:describes doc:FactsunlabeledTrainingDataUsage )>> ;
+	prov:wasDerivedFrom doc:59bb3336b282 .
+doc:FactstimeSeriesAnalysis a None:Regression .
+_:b75bba8555000abf730016477dc7ac6f rdf:reifies <<( doc:FactstimeSeriesAnalysis rdf:type None:Regression )>> ;
+	prov:wasDerivedFrom doc:59bb3336b282 .
+doc:Factshealth_indicator_1 a None:Data_variable .
+_:a5c53ad980cc262999cdde755ffec759 rdf:reifies <<( doc:Factshealth_indicator_1 rdf:type None:Data_variable )>> ;
+	prov:wasDerivedFrom doc:59bb3336b282 .

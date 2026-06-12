@@ -1,0 +1,333 @@
+@prefix None: <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD/seed#> .
+@prefix cco: <http://www.ontologyrepository.com/CommonCoreOntologies/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doc: <https://growgraph.dev/doc/9b53e6caba2d/> .
+@prefix obo: <http://purl.obolibrary.org/obo/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix cd: <https://growgraph.dev/facts> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix schema: <https://schema.org/> .
+@prefix schema1: <http://schema.org/> .
+doc:b64fa7692b9f a prov:Entity , schema:text ;
+	prov:generatedAtTime "2026-06-12T06:23:15.861956Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+	schema:position 0 ;
+	schema:identifier "b64fa7692b9f" .
+doc:FactsGan_1 a cco:Algorithm .
+_:dd4c037fb88b801c437ae66f474259d0 rdf:reifies <<( doc:FactsGan_1 rdf:type cco:Algorithm )>> ;
+	prov:wasDerivedFrom doc:b64fa7692b9f .
+doc:FactsDbscan None:has_text_value "DBSCAN density-based clustering used to group components by RUL degradation for opportunistic maintenance" .
+_:d4265b72da41a8b3c16ed4cebbc5548f rdf:reifies <<( doc:FactsDbscan None:has_text_value "DBSCAN density-based clustering used to group components by RUL degradation for opportunistic maintenance" )>> ;
+	prov:wasDerivedFrom doc:b64fa7692b9f .
+doc:FactsGan_1 None:has_text_value "Wasserstein Generative Adversarial Network with Gradient Penalty (WGAN-GP) used to augment run-to-failure sequences and mitigate failure-data sparsity" .
+_:cbf775d24d591ce5127b53641b0c7965 rdf:reifies <<( doc:FactsGan_1 None:has_text_value "Wasserstein Generative Adversarial Network with Gradient Penalty (WGAN-GP) used to augment run-to-failure sequences and mitigate failure-data sparsity" )>> ;
+	prov:wasDerivedFrom doc:b64fa7692b9f .
+doc:FactsDbscan a None:Clustering .
+_:a49e96967ddeff1224c3c29891ad5c42 rdf:reifies <<( doc:FactsDbscan rdf:type None:Clustering )>> ;
+	prov:wasDerivedFrom doc:b64fa7692b9f .
+doc:FactsPerfValue1 a None:Performance_value .
+_:ed91e11af8668c15d6c7a0a80c1c7e4f rdf:reifies <<( doc:FactsPerfValue1 rdf:type None:Performance_value )>> ;
+	prov:wasDerivedFrom doc:b64fa7692b9f .
+doc:FactsPerfValue1 cco:is_about doc:FactsPerfValue1 .
+_:fd6198f51497f79c6afd8a91ce13afba rdf:reifies <<( doc:FactsPerfValue1 cco:is_about doc:FactsPerfValue1 )>> ;
+	prov:wasDerivedFrom doc:b64fa7692b9f .
+doc:FactsDesignDetail1_2 a None:Design_detail .
+_:b609900ef1e6e0a6daf4a2f7f31ce184 rdf:reifies <<( doc:FactsDesignDetail1_2 rdf:type None:Design_detail )>> ;
+	prov:wasDerivedFrom doc:b64fa7692b9f .
+doc:FactsLstmModel_1 a None:Predictive_maintenance_model .
+_:e7a5df5a49eee9cf95cdf9877f44d570 rdf:reifies <<( doc:FactsLstmModel_1 rdf:type None:Predictive_maintenance_model )>> ;
+	prov:wasDerivedFrom doc:b64fa7692b9f .
+doc:FactsMfcc None:has_text_value "Empirical experimentation performed across multiple industrial components of a water bottling plant system" .
+_:f62899afc9cc9d69f5c232905cf513ef rdf:reifies <<( doc:FactsMfcc None:has_text_value "Empirical experimentation performed across multiple industrial components of a water bottling plant system" )>> ;
+	prov:wasDerivedFrom doc:b64fa7692b9f .
+doc:FactsDesignDetail1_2 None:has_text_value "Stage 1: component-specific Remaining Useful Life (RUL) prediction using Long Short-Term Memory (LSTM) models; WGAN-GP (Wasserstein GAN with gradient penalty) for run-to-failure data augmentation to address failure-data sparsity. Stage 2: cluster components by RUL degradation using DBSCAN to enable opportunistic maintenance; optimize maintenance decisions via a cost-aware grid search on fitted RUL distributions and a risk proxy." .
+_:e5e8a6626b07ab28905ec02c91b7468d rdf:reifies <<( doc:FactsDesignDetail1_2 None:has_text_value "Stage 1: component-specific Remaining Useful Life (RUL) prediction using Long Short-Term Memory (LSTM) models; WGAN-GP (Wasserstein GAN with gradient penalty) for run-to-failure data augmentation to address failure-data sparsity. Stage 2: cluster components by RUL degradation using DBSCAN to enable opportunistic maintenance; optimize maintenance decisions via a cost-aware grid search on fitted RUL distributions and a risk proxy." )>> ;
+	prov:wasDerivedFrom doc:b64fa7692b9f .
+doc:FactsTwoStageFramework None:has_predictive_maintenance_function doc:FactsClusteringFunction .
+_:b26b36aa1411439a2cd5fa6833364b9a rdf:reifies <<( doc:FactsTwoStageFramework None:has_predictive_maintenance_function doc:FactsClusteringFunction )>> ;
+	prov:wasDerivedFrom doc:b64fa7692b9f .
+doc:FactsTitle1_5 None:has_text_value "A two-stage framework for costsensitive predictive maintenance using deep learning, GANs, and risk-aware clustering" .
+_:b54374bec521e8f576b706c01d929d9c rdf:reifies <<( doc:FactsTitle1_5 None:has_text_value "A two-stage framework for costsensitive predictive maintenance using deep learning, GANs, and risk-aware clustering" )>> ;
+	prov:wasDerivedFrom doc:b64fa7692b9f .
+doc:FactsArticle1_13 None:has_title doc:FactsTitle1_5 .
+_:afeeb7069a61ed6ada8ca8f1368ac626 rdf:reifies <<( doc:FactsArticle1_13 None:has_title doc:FactsTitle1_5 )>> ;
+	prov:wasDerivedFrom doc:b64fa7692b9f .
+doc:FactsWaterBottlingPlant schema1:name "water bottling plant" .
+_:b64a10ce88f132a0358b284a46b2ef9e rdf:reifies <<( doc:FactsWaterBottlingPlant schema1:name "water bottling plant" )>> ;
+	prov:wasDerivedFrom doc:b64fa7692b9f .
+doc:FactsAliHakami schema1:name "Ali Hakami" .
+_:e14a0c61e88dc064cd8d15ce9ebee21c rdf:reifies <<( doc:FactsAliHakami schema1:name "Ali Hakami" )>> ;
+	prov:wasDerivedFrom doc:b64fa7692b9f .
+doc:FactsTwoStageFramework None:has_design_detail doc:FactsDesignDetail1_2 .
+_:a8a85b5a4db9cc5b72b15f09ce9bb1f3 rdf:reifies <<( doc:FactsTwoStageFramework None:has_design_detail doc:FactsDesignDetail1_2 )>> ;
+	prov:wasDerivedFrom doc:b64fa7692b9f .
+doc:FactsArticle1_13 schema1:author doc:FactsAliHakami .
+_:e124893e40542f0a144e1954c651f272 rdf:reifies <<( doc:FactsArticle1_13 schema1:author doc:FactsAliHakami )>> ;
+	prov:wasDerivedFrom doc:b64fa7692b9f .
+doc:FactsTwoStageFramework a None:Predictive_maintenance_system_module .
+_:a4d9ebfc7bdb26b03173785fda1a541e rdf:reifies <<( doc:FactsTwoStageFramework rdf:type None:Predictive_maintenance_system_module )>> ;
+	prov:wasDerivedFrom doc:b64fa7692b9f .
+doc:FactsLstmModel_1 None:has_text_value "Long Short-Term Memory (LSTM) model used for predicting Remaining Useful Life (RUL) of individual components" .
+_:f6e186ce9ebb60db03bea37946e46e95 rdf:reifies <<( doc:FactsLstmModel_1 None:has_text_value "Long Short-Term Memory (LSTM) model used for predicting Remaining Useful Life (RUL) of individual components" )>> ;
+	prov:wasDerivedFrom doc:b64fa7692b9f .
+doc:FactsRul_3 a None:Remaining_useful_life_estimation .
+_:f43c2c17585af7e26e91c76e3e20db6c rdf:reifies <<( doc:FactsRul_3 rdf:type None:Remaining_useful_life_estimation )>> ;
+	prov:wasDerivedFrom doc:b64fa7692b9f .
+doc:FactsArticle1_13 a None:Predictive_Maintenance_Article .
+_:da4d25cdef006c5059465f7357a57652 rdf:reifies <<( doc:FactsArticle1_13 rdf:type None:Predictive_Maintenance_Article )>> ;
+	prov:wasDerivedFrom doc:b64fa7692b9f .
+doc:FactsPerfValue1 cco:describes doc:FactsTwoStageFramework .
+_:c2ed9f525fadb3dd919f9e159f2d031b rdf:reifies <<( doc:FactsPerfValue1 cco:describes doc:FactsTwoStageFramework )>> ;
+	prov:wasDerivedFrom doc:b64fa7692b9f .
+doc:FactsLstmModel_1 a cco:Algorithm .
+_:bd40db05a177688f826fabde7f0a493f rdf:reifies <<( doc:FactsLstmModel_1 rdf:type cco:Algorithm )>> ;
+	prov:wasDerivedFrom doc:b64fa7692b9f .
+doc:FactsWaterBottlingPlant a schema1:Organization .
+_:b3dc96297c03da28edb97854a146d981 rdf:reifies <<( doc:FactsWaterBottlingPlant rdf:type schema1:Organization )>> ;
+	prov:wasDerivedFrom doc:b64fa7692b9f .
+doc:FactsDbscan a cco:Algorithm .
+_:e547929d5f5f85ce09f53ace25480cd8 rdf:reifies <<( doc:FactsDbscan rdf:type cco:Algorithm )>> ;
+	prov:wasDerivedFrom doc:b64fa7692b9f .
+doc:FactsTwoStageFramework None:has_predictive_maintenance_function doc:FactsRul_3 .
+_:e2d6853ba314b91a0338d2220cba730b rdf:reifies <<( doc:FactsTwoStageFramework None:has_predictive_maintenance_function doc:FactsRul_3 )>> ;
+	prov:wasDerivedFrom doc:b64fa7692b9f .
+doc:FactsClusteringFunction a None:Clustering .
+_:bebeb4937beb40762bbf4ba57ae5ea50 rdf:reifies <<( doc:FactsClusteringFunction rdf:type None:Clustering )>> ;
+	prov:wasDerivedFrom doc:b64fa7692b9f .
+doc:FactsMfcc a cco:InformationContentEntity .
+_:f1d5cbcc8ded9f2e1da82bcf92772a41 rdf:reifies <<( doc:FactsMfcc rdf:type cco:InformationContentEntity )>> ;
+	prov:wasDerivedFrom doc:b64fa7692b9f .
+doc:FactsAliHakami a schema1:Person .
+_:a8dc38cce552f49cf7ad27799df09d6b rdf:reifies <<( doc:FactsAliHakami rdf:type schema1:Person )>> ;
+	prov:wasDerivedFrom doc:b64fa7692b9f .
+doc:FactsPerfValue1 None:has_text_value "Empirical experiments across multiple industrial components of a water bottling plant demonstrate reduced corrective failures and lower normalized maintenance costs compared to non-clustering baselines (random choice, fixed choice). Sensitivity analysis shows optimal maintenance levels stable across a wide range of cost assumptions." .
+_:b38a2ed913e73b7d637c04b3d3f15f80 rdf:reifies <<( doc:FactsPerfValue1 None:has_text_value "Empirical experiments across multiple industrial components of a water bottling plant demonstrate reduced corrective failures and lower normalized maintenance costs compared to non-clustering baselines (random choice, fixed choice). Sensitivity analysis shows optimal maintenance levels stable across a wide range of cost assumptions." )>> ;
+	prov:wasDerivedFrom doc:b64fa7692b9f .
+doc:FactsMfcc cco:describes doc:FactsTwoStageFramework .
+_:a3f8c7ac8f7187b1b60c371e4320cf43 rdf:reifies <<( doc:FactsMfcc cco:describes doc:FactsTwoStageFramework )>> ;
+	prov:wasDerivedFrom doc:b64fa7692b9f .
+doc:FactsPerfValue1 a None:Performance_indicator .
+_:c52668edc571b1afce9f6a152b4e8f87 rdf:reifies <<( doc:FactsPerfValue1 rdf:type None:Performance_indicator )>> ;
+	prov:wasDerivedFrom doc:b64fa7692b9f .
+doc:FactsArticle1_13 cco:is_about doc:FactsTwoStageFramework .
+_:a2a53c73bcc659111c856ae785a684b9 rdf:reifies <<( doc:FactsArticle1_13 cco:is_about doc:FactsTwoStageFramework )>> ;
+	prov:wasDerivedFrom doc:b64fa7692b9f .
+doc:FactsTitle1_5 a None:Article_title .
+_:ab5f440ded219ee1ae79f7e57097eff4 rdf:reifies <<( doc:FactsTitle1_5 rdf:type None:Article_title )>> ;
+	prov:wasDerivedFrom doc:b64fa7692b9f .
+doc:3c8497ffc776 a prov:Entity , schema:text ;
+	prov:generatedAtTime "2026-06-12T06:23:15.863556Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+	schema:position 1 ;
+	schema:identifier "3c8497ffc776" .
+doc:FactsAliHakami schema1:affiliation doc:FactsUmmAlQura .
+_:f62e8202836714442875e473c2cf74f6 rdf:reifies <<( doc:FactsAliHakami schema1:affiliation doc:FactsUmmAlQura )>> ;
+	prov:wasDerivedFrom doc:3c8497ffc776 .
+doc:FactsSmote_1 a cco:Algorithm .
+_:a2ed3e3dcb091ef83aac032c3a40c9f rdf:reifies <<( doc:FactsSmote_1 rdf:type cco:Algorithm )>> ;
+	prov:wasDerivedFrom doc:3c8497ffc776 .
+_:dd4c037fb88b801c437ae66f474259d0 prov:wasDerivedFrom doc:3c8497ffc776 .
+_:f43c2c17585af7e26e91c76e3e20db6c prov:wasDerivedFrom doc:3c8497ffc776 .
+doc:FactsTwoStageFramework None:has_predictive_maintenance_function None:Remaining_useful_life_estimation .
+_:e352112ca44336c66d1199e4abc310a7 rdf:reifies <<( doc:FactsTwoStageFramework None:has_predictive_maintenance_function None:Remaining_useful_life_estimation )>> ;
+	prov:wasDerivedFrom doc:3c8497ffc776 .
+doc:FactsRul_3 None:has_text_value "Remaining Useful Life (RUL) prediction estimates degradation or remaining operational life of components using historical failure datasets" .
+_:efdcfaf25fe02fd98740312ed190f446 rdf:reifies <<( doc:FactsRul_3 None:has_text_value "Remaining Useful Life (RUL) prediction estimates degradation or remaining operational life of components using historical failure datasets" )>> ;
+	prov:wasDerivedFrom doc:3c8497ffc776 .
+doc:FactsSmote_1 cco:is_about doc:FactsMfcc .
+_:e6b732feb492321bc10b7f68b1e46f79 rdf:reifies <<( doc:FactsSmote_1 cco:is_about doc:FactsMfcc )>> ;
+	prov:wasDerivedFrom doc:3c8497ffc776 .
+doc:FactsGan_1 cco:is_about doc:FactsSyntheticFailureTrajectories .
+_:b0587cd9d95298e4ae20a805741e8c1b rdf:reifies <<( doc:FactsGan_1 cco:is_about doc:FactsSyntheticFailureTrajectories )>> ;
+	prov:wasDerivedFrom doc:3c8497ffc776 .
+doc:FactsPhysicsInformedModel a cco:Algorithm .
+_:b447f85d377ee0b6239824271ecc9c54 rdf:reifies <<( doc:FactsPhysicsInformedModel rdf:type cco:Algorithm )>> ;
+	prov:wasDerivedFrom doc:3c8497ffc776 .
+doc:FactsSyntheticFailureTrajectories None:has_text_value "synthetic run-to-failure trajectories that mimic failure regions and failure pattern characteristics" .
+_:c9ffb25105a2490a907b97ae532b6db8 rdf:reifies <<( doc:FactsSyntheticFailureTrajectories None:has_text_value "synthetic run-to-failure trajectories that mimic failure regions and failure pattern characteristics" )>> ;
+	prov:wasDerivedFrom doc:3c8497ffc776 .
+doc:FactsGan_1 None:has_text_value "Scarcity-GAN (uses external defect datasets and encoder-decoder network)" .
+_:d9b1a91894125e12beddfbb7275401fb rdf:reifies <<( doc:FactsGan_1 None:has_text_value "Scarcity-GAN (uses external defect datasets and encoder-decoder network)" )>> ;
+	prov:wasDerivedFrom doc:3c8497ffc776 .
+doc:FactsMfcc None:has_text_value "leads to poor model generalization and poor ability to predict failure" .
+_:a4ec6c9b1cbcea368e271c59a13f49ef rdf:reifies <<( doc:FactsMfcc None:has_text_value "leads to poor model generalization and poor ability to predict failure" )>> ;
+	prov:wasDerivedFrom doc:3c8497ffc776 .
+doc:FactsAliHakami schema1:email "amahakami@uqu.edu.sa" .
+_:b05c778b253f6f3e80919464f4c4f5b0 rdf:reifies <<( doc:FactsAliHakami schema1:email "amahakami@uqu.edu.sa" )>> ;
+	prov:wasDerivedFrom doc:3c8497ffc776 .
+doc:FactsGan_1 None:has_text_value "EffBaGAN (EfficientNet-based discriminator/generator on BAGAN backbone)" .
+_:f58371d0de1e30ea6ec8c0e5e87b8ebe rdf:reifies <<( doc:FactsGan_1 None:has_text_value "EffBaGAN (EfficientNet-based discriminator/generator on BAGAN backbone)" )>> ;
+	prov:wasDerivedFrom doc:3c8497ffc776 .
+doc:FactsMfcc a cco:DescriptiveInformationContentEntity .
+_:e0647080648edddae05b42b23c784e42 rdf:reifies <<( doc:FactsMfcc rdf:type cco:DescriptiveInformationContentEntity )>> ;
+	prov:wasDerivedFrom doc:3c8497ffc776 .
+doc:FactsTwoStageFramework None:has_predictive_maintenance_function None:Fault_detection .
+_:f1313a8c13ce10120fceb657c0e11f8e rdf:reifies <<( doc:FactsTwoStageFramework None:has_predictive_maintenance_function None:Fault_detection )>> ;
+	prov:wasDerivedFrom doc:3c8497ffc776 .
+doc:FactsGan_1 None:has_text_value "Conditional Wasserstein GANs (CWGANs) for conditional spectral data generation" .
+_:c407ade42bc4d597766e236e2224f0e1 rdf:reifies <<( doc:FactsGan_1 None:has_text_value "Conditional Wasserstein GANs (CWGANs) for conditional spectral data generation" )>> ;
+	prov:wasDerivedFrom doc:3c8497ffc776 .
+_:a8dc38cce552f49cf7ad27799df09d6b prov:wasDerivedFrom doc:3c8497ffc776 .
+doc:FactsMfcc cco:is_about None:Predictive_maintenance_model .
+_:f8bd672fb8ca36c863dbed0f5641df93 rdf:reifies <<( doc:FactsMfcc cco:is_about None:Predictive_maintenance_model )>> ;
+	prov:wasDerivedFrom doc:3c8497ffc776 .
+_:e124893e40542f0a144e1954c651f272 prov:wasDerivedFrom doc:3c8497ffc776 .
+doc:FactsTwoStageFramework None:has_predictive_maintenance_function None:Fault_identification .
+_:bff96c93ab0e3eae6c1be9968db44c34 rdf:reifies <<( doc:FactsTwoStageFramework None:has_predictive_maintenance_function None:Fault_identification )>> ;
+	prov:wasDerivedFrom doc:3c8497ffc776 .
+doc:FactsUmmAlQura a schema1:CollegeOrUniversity .
+_:dab1168ad513a4f1e0a81a9677933981 rdf:reifies <<( doc:FactsUmmAlQura rdf:type schema1:CollegeOrUniversity )>> ;
+	prov:wasDerivedFrom doc:3c8497ffc776 .
+_:afeeb7069a61ed6ada8ca8f1368ac626 prov:wasDerivedFrom doc:3c8497ffc776 .
+doc:FactsGan_1 cco:is_about doc:FactsSmote_1 .
+_:b5aeea63ca02d24ed2b810eda1ba6164 rdf:reifies <<( doc:FactsGan_1 cco:is_about doc:FactsSmote_1 )>> ;
+	prov:wasDerivedFrom doc:3c8497ffc776 .
+_:da4d25cdef006c5059465f7357a57652 prov:wasDerivedFrom doc:3c8497ffc776 .
+doc:FactsTwoStageFramework None:has_predictive_maintenance_function None:Health_assessment .
+_:bd96e0dcbbe3841f150ff8fda70e2ac rdf:reifies <<( doc:FactsTwoStageFramework None:has_predictive_maintenance_function None:Health_assessment )>> ;
+	prov:wasDerivedFrom doc:3c8497ffc776 .
+doc:FactsUmmAlQura schema1:address "Al-Gunfudha, Mecca, Saudi Arabia" .
+_:e6978c4aaa3c2dead039b967843659e2 rdf:reifies <<( doc:FactsUmmAlQura schema1:address "Al-Gunfudha, Mecca, Saudi Arabia" )>> ;
+	prov:wasDerivedFrom doc:3c8497ffc776 .
+_:a4d9ebfc7bdb26b03173785fda1a541e prov:wasDerivedFrom doc:3c8497ffc776 .
+doc:FactsSyntheticFailureTrajectories a cco:InformationContentEntity .
+_:bba22f1a23a1a370276ff282cd906243 rdf:reifies <<( doc:FactsSyntheticFailureTrajectories rdf:type cco:InformationContentEntity )>> ;
+	prov:wasDerivedFrom doc:3c8497ffc776 .
+doc:FactsMfcc None:has_text_value "Mel-Frequency Cepstral Coefficients (MFCCs) used as augmented features" .
+_:e1a7a5bbbd650bfb78662d00076fefd8 rdf:reifies <<( doc:FactsMfcc None:has_text_value "Mel-Frequency Cepstral Coefficients (MFCCs) used as augmented features" )>> ;
+	prov:wasDerivedFrom doc:3c8497ffc776 .
+doc:FactsTwoStageFramework None:has_predictive_maintenance_function None:Fault_feature_extraction .
+_:b926e5d0d16b2c6ed92a53950f795635 rdf:reifies <<( doc:FactsTwoStageFramework None:has_predictive_maintenance_function None:Fault_feature_extraction )>> ;
+	prov:wasDerivedFrom doc:3c8497ffc776 .
+doc:FactsSmote_1 cco:is_about None:Predictive_maintenance_model .
+_:f93f623bc5ba56f74ee2bede3a6d4a04 rdf:reifies <<( doc:FactsSmote_1 cco:is_about None:Predictive_maintenance_model )>> ;
+	prov:wasDerivedFrom doc:3c8497ffc776 .
+doc:FactsMfcc None:has_text_value "new components or systems may have little to no historical data; limited failure instances" .
+_:a39cf42c0beca294818b92ccc5899720 rdf:reifies <<( doc:FactsMfcc None:has_text_value "new components or systems may have little to no historical data; limited failure instances" )>> ;
+	prov:wasDerivedFrom doc:3c8497ffc776 .
+doc:FactsMfcc cco:describes doc:FactsMfcc .
+_:ba66ea0db1f2614ae4b751c386f89b8a rdf:reifies <<( doc:FactsMfcc cco:describes doc:FactsMfcc )>> ;
+	prov:wasDerivedFrom doc:3c8497ffc776 .
+doc:FactsMfcc a obo:BFO_0000019 .
+_:c974e0f9916cafd50a792d38ef2a1d1 rdf:reifies <<( doc:FactsMfcc rdf:type obo:BFO_0000019 )>> ;
+	prov:wasDerivedFrom doc:3c8497ffc776 .
+doc:FactsTitle1_5 None:has_text_value "Industrial maintenance strategies can be categorized as reactive (run-to-failure), time-based, and condition-based; predictive maintenance and GAN-based data augmentation to mitigate data scarcity" .
+_:d4c14630c4073e8fbee65c06e8fa6ef2 rdf:reifies <<( doc:FactsTitle1_5 None:has_text_value "Industrial maintenance strategies can be categorized as reactive (run-to-failure), time-based, and condition-based; predictive maintenance and GAN-based data augmentation to mitigate data scarcity" )>> ;
+	prov:wasDerivedFrom doc:3c8497ffc776 .
+_:ab5f440ded219ee1ae79f7e57097eff4 prov:wasDerivedFrom doc:3c8497ffc776 .
+doc:14e264d3542e a prov:Entity , schema:text ;
+	prov:generatedAtTime "2026-06-12T06:23:15.864658Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+	schema:position 2 ;
+	schema:identifier "14e264d3542e" .
+doc:FactsLdaForMaintenance a cco:Algorithm .
+_:b03690f8a6a277bacc0e1a1f79f9fb6d rdf:reifies <<( doc:FactsLdaForMaintenance rdf:type cco:Algorithm )>> ;
+	prov:wasDerivedFrom doc:14e264d3542e .
+_:a49e96967ddeff1224c3c29891ad5c42 prov:wasDerivedFrom doc:14e264d3542e .
+doc:FactsDbscan None:has_text_value "groups components with similar degradation states" .
+_:c86206b3b3de9dc0bab12f5dc7a16211 rdf:reifies <<( doc:FactsDbscan None:has_text_value "groups components with similar degradation states" )>> ;
+	prov:wasDerivedFrom doc:14e264d3542e .
+doc:FactsTwoStageFramework a None:Predictive_maintenance_module_function .
+_:e7c9b12490d0396dda0523c676785e31 rdf:reifies <<( doc:FactsTwoStageFramework rdf:type None:Predictive_maintenance_module_function )>> ;
+	prov:wasDerivedFrom doc:14e264d3542e .
+doc:FactsglobalApproach a cco:Algorithm .
+_:c52c2ced7d9cd8c7e240dc40911907ba rdf:reifies <<( doc:FactsglobalApproach rdf:type cco:Algorithm )>> ;
+	prov:wasDerivedFrom doc:14e264d3542e .
+doc:FactsglobalApproach None:has_text_value "global modeling approach: train models to predict failure probability or Remaining Useful Life (RUL) for the overall system" .
+_:e1bcc60a30610dad76fc3fa03daa9784 rdf:reifies <<( doc:FactsglobalApproach None:has_text_value "global modeling approach: train models to predict failure probability or Remaining Useful Life (RUL) for the overall system" )>> ;
+	prov:wasDerivedFrom doc:14e264d3542e .
+doc:FactsfaultAnnotatedDatabases None:has_text_value "scarcity of fault-annotated databases for supervised learning" .
+_:d0ec9b458276d8a5e5d4b3eb45c70cb5 rdf:reifies <<( doc:FactsfaultAnnotatedDatabases None:has_text_value "scarcity of fault-annotated databases for supervised learning" )>> ;
+	prov:wasDerivedFrom doc:14e264d3542e .
+doc:FactsRul_3 None:has_text_value "different components have different RULs; some parts may be over-maintained while others under-maintained leading to ineffectiveness" .
+_:c96907682494cc6c856df7c9feae1e83 rdf:reifies <<( doc:FactsRul_3 None:has_text_value "different components have different RULs; some parts may be over-maintained while others under-maintained leading to ineffectiveness" )>> ;
+	prov:wasDerivedFrom doc:14e264d3542e .
+doc:FactsDbscan None:has_text_value "reduced cost and time optimization when clustering maintenance actions in manufacturing considering failure modes" .
+_:d4bedfd1d8346fae273e2535e9fc6d8c rdf:reifies <<( doc:FactsDbscan None:has_text_value "reduced cost and time optimization when clustering maintenance actions in manufacturing considering failure modes" )>> ;
+	prov:wasDerivedFrom doc:14e264d3542e .
+doc:FactsgainPlanning cd:unit "percent" .
+_:bdb0e7e5416fc2102363bd5dc50ffced rdf:reifies <<( doc:FactsgainPlanning cd:unit "percent" )>> ;
+	prov:wasDerivedFrom doc:14e264d3542e .
+_:f43c2c17585af7e26e91c76e3e20db6c prov:wasDerivedFrom doc:14e264d3542e .
+doc:FactsDbscan cco:is_about doc:FactsgainPlanning .
+_:d07a466a80255e3e9e3ce7b9ae7b5e13 rdf:reifies <<( doc:FactsDbscan cco:is_about doc:FactsgainPlanning )>> ;
+	prov:wasDerivedFrom doc:14e264d3542e .
+doc:FactsRul_3 None:has_text_value "incorporating probabilistic RUL prognostics in maintenance planning for turbofan engines improves ability to reduce costs versus non-probabilistic time-based policies" .
+_:b3a4220d8b63e53173ae3f10afa458f0 rdf:reifies <<( doc:FactsRul_3 None:has_text_value "incorporating probabilistic RUL prognostics in maintenance planning for turbofan engines improves ability to reduce costs versus non-probabilistic time-based policies" )>> ;
+	prov:wasDerivedFrom doc:14e264d3542e .
+doc:FactsgainPlanning a None:Performance_value .
+_:a9aaecacf3c3ad55fde0640e5f9e2e61 rdf:reifies <<( doc:FactsgainPlanning rdf:type None:Performance_value )>> ;
+	prov:wasDerivedFrom doc:14e264d3542e .
+doc:FactscomponentsWithSimilarDegradation a obo:BFO_0000030 .
+_:d0f436ce88fdadad0cbf906a0bce6253 rdf:reifies <<( doc:FactscomponentsWithSimilarDegradation rdf:type obo:BFO_0000030 )>> ;
+	prov:wasDerivedFrom doc:14e264d3542e .
+doc:FactsRul_3 cco:is_about doc:FactsturbofanEngines .
+_:ea7f1e82949f67c617804f7d6a62617c rdf:reifies <<( doc:FactsRul_3 cco:is_about doc:FactsturbofanEngines )>> ;
+	prov:wasDerivedFrom doc:14e264d3542e .
+doc:Factsfailure_modes_3 a None:Number_of_failure_modes .
+_:a19bea477f8def42976872f73cc73e15 rdf:reifies <<( doc:Factsfailure_modes_3 rdf:type None:Number_of_failure_modes )>> ;
+	prov:wasDerivedFrom doc:14e264d3542e .
+doc:FactsDbscan cco:is_about doc:FactscomponentsWithSimilarDegradation .
+_:e85b906df52240aa92034a6ce6d5a82a rdf:reifies <<( doc:FactsDbscan cco:is_about doc:FactscomponentsWithSimilarDegradation )>> ;
+	prov:wasDerivedFrom doc:14e264d3542e .
+doc:FactsLdaForMaintenance cco:is_about None:Clustering .
+_:cb36245d0df659a8c49eec48d4d70bec rdf:reifies <<( doc:FactsLdaForMaintenance cco:is_about None:Clustering )>> ;
+	prov:wasDerivedFrom doc:14e264d3542e .
+doc:FactsconditionBasedMaintenance a schema1:Service .
+_:e2906e365b432339c65e2f7dae015497 rdf:reifies <<( doc:FactsconditionBasedMaintenance rdf:type schema1:Service )>> ;
+	prov:wasDerivedFrom doc:14e264d3542e .
+doc:Factsfailure_modes_3 None:has_interger_value 3 .
+_:b5829f695e35ba8610640137886dd01e rdf:reifies <<( doc:Factsfailure_modes_3 None:has_interger_value 3 )>> ;
+	prov:wasDerivedFrom doc:14e264d3542e .
+doc:FactsfaultAnnotatedDatabases a schema1:Dataset .
+_:aa5984212e592ee97c52fdbd1b89c9c9 rdf:reifies <<( doc:FactsfaultAnnotatedDatabases rdf:type schema1:Dataset )>> ;
+	prov:wasDerivedFrom doc:14e264d3542e .
+doc:FactsHealthcareFacilities a schema1:MedicalOrganization .
+_:ec5213f5a5fb4c9c437e4da16b9d36b3 rdf:reifies <<( doc:FactsHealthcareFacilities rdf:type schema1:MedicalOrganization )>> ;
+	prov:wasDerivedFrom doc:14e264d3542e .
+doc:FactsglobalApproach cco:is_about None:Clustering .
+_:bb8728efb3256c1c965c63fe63218a2d rdf:reifies <<( doc:FactsglobalApproach cco:is_about None:Clustering )>> ;
+	prov:wasDerivedFrom doc:14e264d3542e .
+doc:FactsglobalApproach cco:is_about doc:FactsTwoStageFramework .
+_:bd355936dc81196f156d1dc9699e20de rdf:reifies <<( doc:FactsglobalApproach cco:is_about doc:FactsTwoStageFramework )>> ;
+	prov:wasDerivedFrom doc:14e264d3542e .
+doc:FactsglobalApproach None:has_text_value "genetic algorithm applied to clustering in maintenance scheduling for healthcare facilities; reported improved asset performance and high operational availability" .
+_:cc6c1033f4224a03047ebc1fb526f959 rdf:reifies <<( doc:FactsglobalApproach None:has_text_value "genetic algorithm applied to clustering in maintenance scheduling for healthcare facilities; reported improved asset performance and high operational availability" )>> ;
+	prov:wasDerivedFrom doc:14e264d3542e .
+doc:FactsgainPlanning schema1:value 2.7 .
+_:e0dce8dc19c178cbb5c48c124c9cf07e rdf:reifies <<( doc:FactsgainPlanning schema1:value 2.7 )>> ;
+	prov:wasDerivedFrom doc:14e264d3542e .
+doc:FactsDbscan None:has_text_value "supports risk-aware optimization of maintenance thresholds" .
+_:d7fad1e92328e2e9dd2254e2dee5e37b rdf:reifies <<( doc:FactsDbscan None:has_text_value "supports risk-aware optimization of maintenance thresholds" )>> ;
+	prov:wasDerivedFrom doc:14e264d3542e .
+doc:FactsgainPlanning schema1:value 2.4 .
+_:f72b88c1c8c022fbb422485ffde0072d rdf:reifies <<( doc:FactsgainPlanning schema1:value 2.4 )>> ;
+	prov:wasDerivedFrom doc:14e264d3542e .
+doc:FactsglobalApproach a None:Model_type .
+_:eab059afc6fe52fc3eef48b306ad3b07 rdf:reifies <<( doc:FactsglobalApproach rdf:type None:Model_type )>> ;
+	prov:wasDerivedFrom doc:14e264d3542e .
+doc:FactsglobalApproach cco:is_about doc:FactsRul_3 .
+_:fe0f8fe09e91022a3d455f0878d37a59 rdf:reifies <<( doc:FactsglobalApproach cco:is_about doc:FactsRul_3 )>> ;
+	prov:wasDerivedFrom doc:14e264d3542e .
+doc:FactsgainPlanning schema1:value 4.6 .
+_:cb864098a852dec4ab918c1ef1cadb2f rdf:reifies <<( doc:FactsgainPlanning schema1:value 4.6 )>> ;
+	prov:wasDerivedFrom doc:14e264d3542e .
+doc:FactsconditionBasedMaintenance None:has_text_value "assets grouped according to wear patterns to improve modeling" .
+_:f7a5dda4d44dee3faca3ece57adfd9f9 rdf:reifies <<( doc:FactsconditionBasedMaintenance None:has_text_value "assets grouped according to wear patterns to improve modeling" )>> ;
+	prov:wasDerivedFrom doc:14e264d3542e .
+doc:FactsDbscan cco:is_about doc:Factsfailure_modes_3 .
+_:d861f5989d389aac0bad6ab9c2a614cd rdf:reifies <<( doc:FactsDbscan cco:is_about doc:Factsfailure_modes_3 )>> ;
+	prov:wasDerivedFrom doc:14e264d3542e .
+doc:FactsglobalApproach None:has_text_value "integration of data augmentation, decision-oriented clustering, and scheduling to produce a coordinated component-level maintenance strategy" .
+_:ef31590502a9ee8427cd66e79c9daaae rdf:reifies <<( doc:FactsglobalApproach None:has_text_value "integration of data augmentation, decision-oriented clustering, and scheduling to produce a coordinated component-level maintenance strategy" )>> ;
+	prov:wasDerivedFrom doc:14e264d3542e .
+doc:FactsDbscan None:has_text_value "categorize components or maintenance tasks based on degradation pattern, operational condition, or failure risk to improve scheduling and resource allocation" .
+_:e02be5e560c610606766ff436a90fa0a rdf:reifies <<( doc:FactsDbscan None:has_text_value "categorize components or maintenance tasks based on degradation pattern, operational condition, or failure risk to improve scheduling and resource allocation" )>> ;
+	prov:wasDerivedFrom doc:14e264d3542e .
+doc:FactsLdaForMaintenance cd:applied_when doc:FactsfaultAnnotatedDatabases .
+_:e3aeb91faa73ac2f29d5b7a50f72c530 rdf:reifies <<( doc:FactsLdaForMaintenance cd:applied_when doc:FactsfaultAnnotatedDatabases )>> ;
+	prov:wasDerivedFrom doc:14e264d3542e .
+doc:FactsglobalApproach cd:applied_to doc:FactsHealthcareFacilities .
+_:d506025609085f4cf8fc0e9f1435ceae rdf:reifies <<( doc:FactsglobalApproach cd:applied_to doc:FactsHealthcareFacilities )>> ;
+	prov:wasDerivedFrom doc:14e264d3542e .
+doc:FactsturbofanEngines a schema1:Product .
+_:e3b43829bbb7806c3d7ce0f3101779cd rdf:reifies <<( doc:FactsturbofanEngines rdf:type schema1:Product )>> ;
+	prov:wasDerivedFrom doc:14e264d3542e .
+cco:InformationContentEntity owl:sameAs cco:DescriptiveInformationContentEntity .

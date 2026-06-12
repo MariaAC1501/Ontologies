@@ -1,0 +1,488 @@
+@prefix None: <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD/seed#> .
+@prefix cco: <http://www.ontologyrepository.com/CommonCoreOntologies/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doc: <https://growgraph.dev/doc/098cb9c7ac60/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix obo: <http://purl.obolibrary.org/obo/> .
+@prefix cd: <https://growgraph.dev/facts> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix schema: <https://schema.org/> .
+@prefix schema1: <http://schema.org/> .
+doc:8741c65fe2cb a prov:Entity , schema:text ;
+	prov:generatedAtTime "2026-06-12T03:32:47.159722Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+	schema:position 0 ;
+	schema:identifier "8741c65fe2cb" .
+doc:FactsArticleTitle1_1 a None:Article_title .
+_:d3e041d169f5efe83a48a1f5419d9a24 rdf:reifies <<( doc:FactsArticleTitle1_1 rdf:type None:Article_title )>> ;
+	prov:wasDerivedFrom doc:8741c65fe2cb .
+doc:FactsMaeValueCross schema1:value 50.51 .
+_:c0eed38d70244b16d58268c622a7b88b rdf:reifies <<( doc:FactsMaeValueCross schema1:value 50.51 )>> ;
+	prov:wasDerivedFrom doc:8741c65fe2cb .
+doc:FactsMaeValueCross a None:Performance_indicator .
+_:cde25e33d8a3c08d885e4fd42f023561 rdf:reifies <<( doc:FactsMaeValueCross rdf:type None:Performance_indicator )>> ;
+	prov:wasDerivedFrom doc:8741c65fe2cb .
+doc:FactsinDomainEvaluation cco:is_about doc:FactsCgf .
+_:ec3b9ce7fe81af47fe1bd682db7bce5b rdf:reifies <<( doc:FactsinDomainEvaluation cco:is_about doc:FactsCgf )>> ;
+	prov:wasDerivedFrom doc:8741c65fe2cb .
+doc:FactsYeTu a schema1:Person .
+_:b8dfe6ab0736a4be05b30be35754c9d0 rdf:reifies <<( doc:FactsYeTu rdf:type schema1:Person )>> ;
+	prov:wasDerivedFrom doc:8741c65fe2cb .
+doc:FactsMaeValueCross rdfs:label "MAE reduction (cross-dataset)" .
+_:fa741e3ebde14557c5c81183f636a051 rdf:reifies <<( doc:FactsMaeValueCross rdfs:label "MAE reduction (cross-dataset)" )>> ;
+	prov:wasDerivedFrom doc:8741c65fe2cb .
+doc:FactsarticleAMultiStep schema1:author doc:FactsYeTu .
+_:b6b523acb00c450218de676b64cc358 rdf:reifies <<( doc:FactsarticleAMultiStep schema1:author doc:FactsYeTu )>> ;
+	prov:wasDerivedFrom doc:8741c65fe2cb .
+doc:FactsMaeValueCross cd:has_performance_value doc:FactsMaeValueCross .
+_:c7664bc22b1ff071f0acc71af88e11a rdf:reifies <<( doc:FactsMaeValueCross cd:has_performance_value doc:FactsMaeValueCross )>> ;
+	prov:wasDerivedFrom doc:8741c65fe2cb .
+doc:FactsYuxiNormalUniversity a schema1:Organization .
+_:fb0d7614f6a23c2672806ceff9f7708e rdf:reifies <<( doc:FactsYuxiNormalUniversity rdf:type schema1:Organization )>> ;
+	prov:wasDerivedFrom doc:8741c65fe2cb .
+doc:FactsCgf rdfs:label "cross-gated fusion module (CGF)" .
+_:ba4133850b7be256997afc7cd26f6eb rdf:reifies <<( doc:FactsCgf rdfs:label "cross-gated fusion module (CGF)" )>> ;
+	prov:wasDerivedFrom doc:8741c65fe2cb .
+doc:FactsCgf obo:BFO_0000051 doc:FactsCgf .
+_:b8e164a071d1646638ca20568ebf569d rdf:reifies <<( doc:FactsCgf obo:BFO_0000051 doc:FactsCgf )>> ;
+	prov:wasDerivedFrom doc:8741c65fe2cb .
+doc:FactscrossDatasetEvaluation schema1:dataset doc:FactsNasaDataset .
+_:d70d5bd6b83cb08013b8d34b012cafb2 rdf:reifies <<( doc:FactscrossDatasetEvaluation schema1:dataset doc:FactsNasaDataset )>> ;
+	prov:wasDerivedFrom doc:8741c65fe2cb .
+doc:FactsMaeValueCross rdfs:label "percentage RMSE reduction (cross-dataset)" .
+_:d03b571b3778766d196e1d9af45b2600 rdf:reifies <<( doc:FactsMaeValueCross rdfs:label "percentage RMSE reduction (cross-dataset)" )>> ;
+	prov:wasDerivedFrom doc:8741c65fe2cb .
+doc:FactscrossDatasetEvaluation rdfs:label "cross-dataset test (train/validate on NASA -> test on Maryland)" .
+_:c54012cba03773e2cf9610c8f75736a7 rdf:reifies <<( doc:FactscrossDatasetEvaluation rdfs:label "cross-dataset test (train/validate on NASA -> test on Maryland)" )>> ;
+	prov:wasDerivedFrom doc:8741c65fe2cb .
+doc:FactscrossDatasetEvaluation a None:Predictive_maintenance_case .
+_:d2e4927ed684747206b26d8eaaf700c7 rdf:reifies <<( doc:FactscrossDatasetEvaluation rdf:type None:Predictive_maintenance_case )>> ;
+	prov:wasDerivedFrom doc:8741c65fe2cb .
+doc:FactsYeTu schema1:affiliation doc:FactsYuxiNormalUniversity .
+_:a4f168d547e652328b889b0bfb11c3c4 rdf:reifies <<( doc:FactsYeTu schema1:affiliation doc:FactsYuxiNormalUniversity )>> ;
+	prov:wasDerivedFrom doc:8741c65fe2cb .
+doc:FactsNasaDataset rdfs:label "NASA battery dataset (B005/B007)" .
+_:c0f8e4dfdf4c44410cd6489b1b233fe6 rdf:reifies <<( doc:FactsNasaDataset rdfs:label "NASA battery dataset (B005/B007)" )>> ;
+	prov:wasDerivedFrom doc:8741c65fe2cb .
+doc:FactsYunnanKeyLaboratory a schema1:Organization .
+_:c5d216b38077b2a5c1db9242234aa2cc rdf:reifies <<( doc:FactsYunnanKeyLaboratory rdf:type schema1:Organization )>> ;
+	prov:wasDerivedFrom doc:8741c65fe2cb .
+doc:FactsMaeValueCross a None:Performance_value .
+_:e484669ca110bba4e85aa9ddef49e25e rdf:reifies <<( doc:FactsMaeValueCross rdf:type None:Performance_value )>> ;
+	prov:wasDerivedFrom doc:8741c65fe2cb .
+doc:FactsMaeValueCross cco:describes doc:FactsCgf .
+_:d4f06b463ed11d56b3b5176047511c2b rdf:reifies <<( doc:FactsMaeValueCross cco:describes doc:FactsCgf )>> ;
+	prov:wasDerivedFrom doc:8741c65fe2cb .
+doc:FactsarticleAMultiStep a None:Predictive_Maintenance_Article .
+_:e3ded94bcb0e0e3157cb0c3520d6e3c3 rdf:reifies <<( doc:FactsarticleAMultiStep rdf:type None:Predictive_Maintenance_Article )>> ;
+	prov:wasDerivedFrom doc:8741c65fe2cb .
+doc:FactsCgf a cco:Algorithm .
+_:d0006f34acdc735a1fc2b0e099cb0c75 rdf:reifies <<( doc:FactsCgf rdf:type cco:Algorithm )>> ;
+	prov:wasDerivedFrom doc:8741c65fe2cb .
+doc:FactsYeTu rdfs:label "Jie Wang" .
+_:e9cbdf19787370034640d949bf66ffb rdf:reifies <<( doc:FactsYeTu rdfs:label "Jie Wang" )>> ;
+	prov:wasDerivedFrom doc:8741c65fe2cb .
+doc:FactsYuxiNormalUniversity rdfs:label "College of Engineering, Yuxi Normal University" .
+_:aa56da6f11e07e2a9aadf784b5902be rdf:reifies <<( doc:FactsYuxiNormalUniversity rdfs:label "College of Engineering, Yuxi Normal University" )>> ;
+	prov:wasDerivedFrom doc:8741c65fe2cb .
+doc:FactsYuxiNormalUniversity rdfs:label "College of Mathematics and Physics, Yuxi Normal University" .
+_:e3d3ddfc09816821038aa62e0d0be13b rdf:reifies <<( doc:FactsYuxiNormalUniversity rdfs:label "College of Mathematics and Physics, Yuxi Normal University" )>> ;
+	prov:wasDerivedFrom doc:8741c65fe2cb .
+doc:FactsYeTu schema1:email "2024101067@yxnu.edu.cn" .
+_:d54eeaca2233dec01bfae60bf1b895c0 rdf:reifies <<( doc:FactsYeTu schema1:email "2024101067@yxnu.edu.cn" )>> ;
+	prov:wasDerivedFrom doc:8741c65fe2cb .
+doc:FactsCgf a None:Predictive_maintenance_system_module .
+_:f739614ca3bbbd7e2aeff666980b7c28 rdf:reifies <<( doc:FactsCgf rdf:type None:Predictive_maintenance_system_module )>> ;
+	prov:wasDerivedFrom doc:8741c65fe2cb .
+doc:FactsMarylandDataset rdfs:label "Maryland dataset (CS-35/CS-37)" .
+_:a702ed18bc13d2a88c6a0226dc34dd94 rdf:reifies <<( doc:FactsMarylandDataset rdfs:label "Maryland dataset (CS-35/CS-37)" )>> ;
+	prov:wasDerivedFrom doc:8741c65fe2cb .
+doc:FactsArticleTitle1_1 None:has_text_value "AMulti-Step RUL Prediction Method for Lithium-Ion Batteries Based on Multi-Scale Temporal Features and Frequency-Domain Spectral Interaction" .
+_:fff478f1c61255eb888a931bf65840ac rdf:reifies <<( doc:FactsArticleTitle1_1 None:has_text_value "AMulti-Step RUL Prediction Method for Lithium-Ion Batteries Based on Multi-Scale Temporal Features and Frequency-Domain Spectral Interaction" )>> ;
+	prov:wasDerivedFrom doc:8741c65fe2cb .
+doc:FactsCgf None:describes_type None:Multiple_steps_future_state_forecast .
+_:eac7bcfd4a0299d6d9898934e5c01461 rdf:reifies <<( doc:FactsCgf None:describes_type None:Multiple_steps_future_state_forecast )>> ;
+	prov:wasDerivedFrom doc:8741c65fe2cb .
+doc:FactsMaeValueCross rdfs:label "percentage MAE reduction (cross-dataset)" .
+_:b661ead6f15ebb61d8a65e6289910450 rdf:reifies <<( doc:FactsMaeValueCross rdfs:label "percentage MAE reduction (cross-dataset)" )>> ;
+	prov:wasDerivedFrom doc:8741c65fe2cb .
+doc:FactsCgf rdfs:label "multi-head spectral interaction (MHSI)" .
+_:cc014662a020b20ffa4dd9aec4be9bd1 rdf:reifies <<( doc:FactsCgf rdfs:label "multi-head spectral interaction (MHSI)" )>> ;
+	prov:wasDerivedFrom doc:8741c65fe2cb .
+doc:FactsYeTu schema1:email "mt_jin@yxnu.edu.cn" .
+_:c46404873e1e87634f7c4c68a9aa9bab rdf:reifies <<( doc:FactsYeTu schema1:email "mt_jin@yxnu.edu.cn" )>> ;
+	prov:wasDerivedFrom doc:8741c65fe2cb .
+doc:FactsYeTu schema1:email "tuye@yxnu.edu.cn" .
+_:e549b8d08e6a75f8f7f494949cb8ef49 rdf:reifies <<( doc:FactsYeTu schema1:email "tuye@yxnu.edu.cn" )>> ;
+	prov:wasDerivedFrom doc:8741c65fe2cb .
+doc:FactsarticleAMultiStep rdfs:label "Article: AMulti-Step RUL Prediction Method for Lithium-Ion Batteries..." .
+_:a7f7c1362ff46fbef8bc9299f233ed8b rdf:reifies <<( doc:FactsarticleAMultiStep rdfs:label "Article: AMulti-Step RUL Prediction Method for Lithium-Ion Batteries..." )>> ;
+	prov:wasDerivedFrom doc:8741c65fe2cb .
+doc:FactsCgf rdfs:label "TF-RULNet (Time-Frequency RUL Network)" .
+_:dfa4e7469bebee40c4564d64d2f094da rdf:reifies <<( doc:FactsCgf rdfs:label "TF-RULNet (Time-Frequency RUL Network)" )>> ;
+	prov:wasDerivedFrom doc:8741c65fe2cb .
+doc:FactsinDomainEvaluation rdfs:label "in-domain evaluation on NASA dataset (B005/B007)" .
+_:c52de84aeb82055fae39584fb4f1b6ec rdf:reifies <<( doc:FactsinDomainEvaluation rdfs:label "in-domain evaluation on NASA dataset (B005/B007)" )>> ;
+	prov:wasDerivedFrom doc:8741c65fe2cb .
+doc:FactsYeTu rdfs:label "Ye Tu" .
+_:c8c6d45dd0c2bae6bdafb0275d4d0cf4 rdf:reifies <<( doc:FactsYeTu rdfs:label "Ye Tu" )>> ;
+	prov:wasDerivedFrom doc:8741c65fe2cb .
+doc:FactsCgf a None:Predictive_maintenance_model .
+_:bed8230bd377c74ed3ec99945fbb1cf5 rdf:reifies <<( doc:FactsCgf rdf:type None:Predictive_maintenance_model )>> ;
+	prov:wasDerivedFrom doc:8741c65fe2cb .
+doc:FactsMaeValueCross rdfs:label "RMSE reduction (in-domain)" .
+_:e493fe94536a0207eb32599513d98bba rdf:reifies <<( doc:FactsMaeValueCross rdfs:label "RMSE reduction (in-domain)" )>> ;
+	prov:wasDerivedFrom doc:8741c65fe2cb .
+doc:FactsMaeValueCross rdfs:label "RMSE reduction (cross-dataset)" .
+_:bc682bfd5ee7407977087f29ec1b442 rdf:reifies <<( doc:FactsMaeValueCross rdfs:label "RMSE reduction (cross-dataset)" )>> ;
+	prov:wasDerivedFrom doc:8741c65fe2cb .
+doc:FactsYuxiNormalUniversity rdfs:label "Yuxi Normal University" .
+_:d9441a6f43c3101e0ebb40503f6395b rdf:reifies <<( doc:FactsYuxiNormalUniversity rdfs:label "Yuxi Normal University" )>> ;
+	prov:wasDerivedFrom doc:8741c65fe2cb .
+doc:FactsMaeValueCross schema1:value "24"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+_:ffffa10baeeae9fef8101baee01153b7 rdf:reifies <<( doc:FactsMaeValueCross schema1:value "24"^^<http://www.w3.org/2001/XMLSchema#decimal> )>> ;
+	prov:wasDerivedFrom doc:8741c65fe2cb .
+doc:FactsYeTu rdfs:label "Shixiong Xu" .
+_:ef6a4961d61298b992bfd1e9e2bbd4c2 rdf:reifies <<( doc:FactsYeTu rdfs:label "Shixiong Xu" )>> ;
+	prov:wasDerivedFrom doc:8741c65fe2cb .
+doc:FactsMaeValueCross rdfs:label "approximate percentage RMSE reduction (in-domain)" .
+_:a20d59b23cec781517f8b692487f36b3 rdf:reifies <<( doc:FactsMaeValueCross rdfs:label "approximate percentage RMSE reduction (in-domain)" )>> ;
+	prov:wasDerivedFrom doc:8741c65fe2cb .
+doc:FactsCgf None:describes_type None:Remaining_useful_life_estimation .
+_:c3cd16c3bdf14b24273e136608a337c8 rdf:reifies <<( doc:FactsCgf None:describes_type None:Remaining_useful_life_estimation )>> ;
+	prov:wasDerivedFrom doc:8741c65fe2cb .
+doc:FactscrossDatasetEvaluation schema1:dataset doc:FactsMarylandDataset .
+_:c2a6674a2eae4a4527f932b554d95d65 rdf:reifies <<( doc:FactscrossDatasetEvaluation schema1:dataset doc:FactsMarylandDataset )>> ;
+	prov:wasDerivedFrom doc:8741c65fe2cb .
+doc:FactsMarylandDataset a schema1:Dataset .
+_:cb2da135c8c157fcce03dec494d26944 rdf:reifies <<( doc:FactsMarylandDataset rdf:type schema1:Dataset )>> ;
+	prov:wasDerivedFrom doc:8741c65fe2cb .
+doc:FactscrossDatasetEvaluation cco:is_about doc:FactsCgf .
+_:cc60c0807f1b3c413ed0534ea381c82d rdf:reifies <<( doc:FactscrossDatasetEvaluation cco:is_about doc:FactsCgf )>> ;
+	prov:wasDerivedFrom doc:8741c65fe2cb .
+doc:FactsMaeValueCross schema1:value 38.23 .
+_:c9251bd130429539f353a1081e4ffd41 rdf:reifies <<( doc:FactsMaeValueCross schema1:value 38.23 )>> ;
+	prov:wasDerivedFrom doc:8741c65fe2cb .
+doc:FactsYeTu schema1:affiliation doc:FactsUniversityOfNewSouthWales .
+_:edab0bfa82929c4fbca98f447614ea74 rdf:reifies <<( doc:FactsYeTu schema1:affiliation doc:FactsUniversityOfNewSouthWales )>> ;
+	prov:wasDerivedFrom doc:8741c65fe2cb .
+doc:FactsCgf rdfs:label "multi-scale temporal convolution encoder (MSTC)" .
+_:f54f16eaf1b96a025505e08ccd306152 rdf:reifies <<( doc:FactsCgf rdfs:label "multi-scale temporal convolution encoder (MSTC)" )>> ;
+	prov:wasDerivedFrom doc:8741c65fe2cb .
+doc:FactsYunnanKeyLaboratory rdfs:label "Yunnan Key Laboratory of Smart City in Cyberspace Security" .
+_:c70e7d20ee59f0a65e946bab46508e1a rdf:reifies <<( doc:FactsYunnanKeyLaboratory rdfs:label "Yunnan Key Laboratory of Smart City in Cyberspace Security" )>> ;
+	prov:wasDerivedFrom doc:8741c65fe2cb .
+doc:FactsUniversityOfNewSouthWales rdfs:label "The University of New South Wales" .
+_:f1849b2bdd3b484585a45cdf327c9eb5 rdf:reifies <<( doc:FactsUniversityOfNewSouthWales rdfs:label "The University of New South Wales" )>> ;
+	prov:wasDerivedFrom doc:8741c65fe2cb .
+doc:FactsYeTu rdfs:label "Mengting Jin" .
+_:ccaf8ab0d4acaca8e21accfc78254425 rdf:reifies <<( doc:FactsYeTu rdfs:label "Mengting Jin" )>> ;
+	prov:wasDerivedFrom doc:8741c65fe2cb .
+doc:FactsYeTu schema1:email "z5719247@ad.unsw.edu.au" .
+_:e316a74fa4d40c2b3bb33117d4895613 rdf:reifies <<( doc:FactsYeTu schema1:email "z5719247@ad.unsw.edu.au" )>> ;
+	prov:wasDerivedFrom doc:8741c65fe2cb .
+doc:FactsNasaDataset a schema1:Dataset .
+_:d2c26218e3140d03336aa7e5f83cfe3e rdf:reifies <<( doc:FactsNasaDataset rdf:type schema1:Dataset )>> ;
+	prov:wasDerivedFrom doc:8741c65fe2cb .
+doc:FactsinDomainEvaluation schema1:dataset doc:FactsNasaDataset .
+_:a5626876d8dbd5b636cb10c04962c445 rdf:reifies <<( doc:FactsinDomainEvaluation schema1:dataset doc:FactsNasaDataset )>> ;
+	prov:wasDerivedFrom doc:8741c65fe2cb .
+doc:FactsarticleAMultiStep None:has_title doc:FactsArticleTitle1_1 .
+_:e7e394e7cc001f40a713f6c76ff69cb4 rdf:reifies <<( doc:FactsarticleAMultiStep None:has_title doc:FactsArticleTitle1_1 )>> ;
+	prov:wasDerivedFrom doc:8741c65fe2cb .
+doc:FactsinDomainEvaluation a None:Predictive_maintenance_case .
+_:a60854120b9b003bae24d7fa177587d4 rdf:reifies <<( doc:FactsinDomainEvaluation rdf:type None:Predictive_maintenance_case )>> ;
+	prov:wasDerivedFrom doc:8741c65fe2cb .
+doc:FactsUniversityOfNewSouthWales a schema1:Organization .
+_:a1f410dfe999617e96eae6f3c1d10e46 rdf:reifies <<( doc:FactsUniversityOfNewSouthWales rdf:type schema1:Organization )>> ;
+	prov:wasDerivedFrom doc:8741c65fe2cb .
+doc:f6a9e5f55b1b a prov:Entity , schema:text ;
+	prov:generatedAtTime "2026-06-12T03:32:47.164729Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+	schema:position 1 ;
+	schema:identifier "f6a9e5f55b1b" .
+_:bed8230bd377c74ed3ec99945fbb1cf5 prov:wasDerivedFrom doc:f6a9e5f55b1b .
+doc:FactsCgf None:has_design_detail doc:FactsSelfAttentionComplexity .
+_:bda0d2261985fe7b181569c5683e9fb9 rdf:reifies <<( doc:FactsCgf None:has_design_detail doc:FactsSelfAttentionComplexity )>> ;
+	prov:wasDerivedFrom doc:f6a9e5f55b1b .
+doc:FactsBatteryDegradation None:has_text_value "nonlinearity, stage-wise variation, random fluctuations, long-term capacity fading, regime shifts, short-term recovery phenomena" .
+_:f6f4190fb19431525245a223d93c44b rdf:reifies <<( doc:FactsBatteryDegradation None:has_text_value "nonlinearity, stage-wise variation, random fluctuations, long-term capacity fading, regime shifts, short-term recovery phenomena" )>> ;
+	prov:wasDerivedFrom doc:f6a9e5f55b1b .
+doc:FactsAccuracyQuality rdfs:label "robustness"@en .
+_:debd56b238f23f911b08f43f0aa5ecfd rdf:reifies <<( doc:FactsAccuracyQuality rdfs:label "robustness"@en )>> ;
+	prov:wasDerivedFrom doc:f6a9e5f55b1b .
+doc:FactsCgf rdfs:label "LSTM-based RUL prediction"@en .
+_:fc10596a3e5753c14af4619655781466 rdf:reifies <<( doc:FactsCgf rdfs:label "LSTM-based RUL prediction"@en )>> ;
+	prov:wasDerivedFrom doc:f6a9e5f55b1b .
+doc:FactsCgf obo:RO_0000086 doc:FactsAccuracyQuality .
+_:eeb482b6c00889aff427caf98e605d6d rdf:reifies <<( doc:FactsCgf obo:RO_0000086 doc:FactsAccuracyQuality )>> ;
+	prov:wasDerivedFrom doc:f6a9e5f55b1b .
+doc:FactsSelfAttentionComplexity a None:Design_detail .
+_:c32bccf30e60d2c796968a914e383c37 rdf:reifies <<( doc:FactsSelfAttentionComplexity rdf:type None:Design_detail )>> ;
+	prov:wasDerivedFrom doc:f6a9e5f55b1b .
+doc:FactsRulIndicator a None:Performance_indicator .
+_:abcdc762c7298b5c216bd5e9d0cf2cd9 rdf:reifies <<( doc:FactsRulIndicator rdf:type None:Performance_indicator )>> ;
+	prov:wasDerivedFrom doc:f6a9e5f55b1b .
+doc:FactsDataDrivenApproach cco:describes doc:FactsRulIndicator .
+_:b9c4fc1eb9a5b6efd0f4d401fa5508e5 rdf:reifies <<( doc:FactsDataDrivenApproach cco:describes doc:FactsRulIndicator )>> ;
+	prov:wasDerivedFrom doc:f6a9e5f55b1b .
+doc:FactsSelfAttentionComplexity None:has_text_value "most existing methods lack sufficient multi-scale awareness and cannot effectively characterize coexistence of long-term degradation trends and short-term fluctuations" .
+_:baf0fbb0563c47a46185380b1e6c58e7 rdf:reifies <<( doc:FactsSelfAttentionComplexity None:has_text_value "most existing methods lack sufficient multi-scale awareness and cannot effectively characterize coexistence of long-term degradation trends and short-term fluctuations" )>> ;
+	prov:wasDerivedFrom doc:f6a9e5f55b1b .
+doc:FactsInternalElectrochemicalEvolution a None:Data_variable .
+_:c834fe009854560d142ab3754c622705 rdf:reifies <<( doc:FactsInternalElectrochemicalEvolution rdf:type None:Data_variable )>> ;
+	prov:wasDerivedFrom doc:f6a9e5f55b1b .
+doc:FactsFederatedLearningFramework rdfs:label "federated learning framework for distributed scenarios"@en .
+_:db2a39def087acad47987c0df166c66c rdf:reifies <<( doc:FactsFederatedLearningFramework rdfs:label "federated learning framework for distributed scenarios"@en )>> ;
+	prov:wasDerivedFrom doc:f6a9e5f55b1b .
+doc:FactsCgf rdfs:label "multi-scale CNN-TimesNet for SOH and RUL"@en .
+_:eeb50ab548e3befd42b0a926ca8b87a1 rdf:reifies <<( doc:FactsCgf rdfs:label "multi-scale CNN-TimesNet for SOH and RUL"@en )>> ;
+	prov:wasDerivedFrom doc:f6a9e5f55b1b .
+doc:FactsPubYear2026_1 None:has_interger_value 2026 .
+_:dab9b6237edc2c491af692d0d8f5a23a rdf:reifies <<( doc:FactsPubYear2026_1 None:has_interger_value 2026 )>> ;
+	prov:wasDerivedFrom doc:f6a9e5f55b1b .
+doc:FactsArticle1_7 schema1:dateAccepted "2026-04-10"^^<http://www.w3.org/2001/XMLSchema#date> .
+_:ffc8800777bda981a406d7b9e11f5252 rdf:reifies <<( doc:FactsArticle1_7 schema1:dateAccepted "2026-04-10"^^<http://www.w3.org/2001/XMLSchema#date> )>> ;
+	prov:wasDerivedFrom doc:f6a9e5f55b1b .
+doc:FactsCgf rdfs:label "Transformer-based RUL prediction"@en .
+_:f7907ba6a3c576166ee3bd61b7fba668 rdf:reifies <<( doc:FactsCgf rdfs:label "Transformer-based RUL prediction"@en )>> ;
+	prov:wasDerivedFrom doc:f6a9e5f55b1b .
+doc:FactsArticle1_7 schema1:dateReceived "2026-03-16"^^<http://www.w3.org/2001/XMLSchema#date> .
+_:e1d0b686a9114ae28ffa1c9114380f45 rdf:reifies <<( doc:FactsArticle1_7 schema1:dateReceived "2026-03-16"^^<http://www.w3.org/2001/XMLSchema#date> )>> ;
+	prov:wasDerivedFrom doc:f6a9e5f55b1b .
+doc:FactsDataDrivenApproach rdfs:label "data-driven RUL prediction approaches"@en .
+_:d5344dedb95a06639c85b2c2dcdb95da rdf:reifies <<( doc:FactsDataDrivenApproach rdfs:label "data-driven RUL prediction approaches"@en )>> ;
+	prov:wasDerivedFrom doc:f6a9e5f55b1b .
+doc:FactsEnvironmentalFactors_1 rdfs:label "environmental factors"@en .
+_:a1d954926c2a2709d1fe04b3700bdaf1 rdf:reifies <<( doc:FactsEnvironmentalFactors_1 rdfs:label "environmental factors"@en )>> ;
+	prov:wasDerivedFrom doc:f6a9e5f55b1b .
+doc:FactsFrequencyDomainUnderexploited None:has_text_value "frequency-domain information is under-exploited in many current studies" .
+_:af7c9dfa9fa8c94f869ae5aaa65e6669 rdf:reifies <<( doc:FactsFrequencyDomainUnderexploited None:has_text_value "frequency-domain information is under-exploited in many current studies" )>> ;
+	prov:wasDerivedFrom doc:f6a9e5f55b1b .
+doc:FactsArticle1_7 schema1:copyrightYear 2026 .
+_:a4a719a23d66139fc1bdd95fe8d4ea8f rdf:reifies <<( doc:FactsArticle1_7 schema1:copyrightYear 2026 )>> ;
+	prov:wasDerivedFrom doc:f6a9e5f55b1b .
+doc:FactsAccuracyQuality a obo:BFO_0000019 .
+_:f5c04b1c4e4440520569da0b56f2d93f rdf:reifies <<( doc:FactsAccuracyQuality rdf:type obo:BFO_0000019 )>> ;
+	prov:wasDerivedFrom doc:f6a9e5f55b1b .
+doc:FactsEquivalentCircuitModelType a None:Model_type .
+_:ef986137c6781ee3d6a1e1500adf76af rdf:reifies <<( doc:FactsEquivalentCircuitModelType rdf:type None:Model_type )>> ;
+	prov:wasDerivedFrom doc:f6a9e5f55b1b .
+doc:FactsStaticFusionLimitation None:has_text_value "time-domain and frequency-domain features are often fused through simple concatenation or static weighting without adaptive adjustment across degradation stages" .
+_:e558c080248546c20436f4d56bf204bc rdf:reifies <<( doc:FactsStaticFusionLimitation None:has_text_value "time-domain and frequency-domain features are often fused through simple concatenation or static weighting without adaptive adjustment across degradation stages" )>> ;
+	prov:wasDerivedFrom doc:f6a9e5f55b1b .
+doc:FactsMdpi_2 rdfs:label "MDPI, Basel, Switzerland"@en .
+_:ad2afa48bd1e321c4240c4c31d6120d0 rdf:reifies <<( doc:FactsMdpi_2 rdfs:label "MDPI, Basel, Switzerland"@en )>> ;
+	prov:wasDerivedFrom doc:f6a9e5f55b1b .
+doc:FactsBatteryDegradation obo:BFO_0000051 doc:FactsEnvironmentalFactors_1 .
+_:c3b3f9fb723cb10bd91e57f7fd455713 rdf:reifies <<( doc:FactsBatteryDegradation obo:BFO_0000051 doc:FactsEnvironmentalFactors_1 )>> ;
+	prov:wasDerivedFrom doc:f6a9e5f55b1b .
+doc:FactsStaticFusionLimitation a None:Design_detail .
+_:ea328f0a9b93ddc0c691ecb3bd169313 rdf:reifies <<( doc:FactsStaticFusionLimitation rdf:type None:Design_detail )>> ;
+	prov:wasDerivedFrom doc:f6a9e5f55b1b .
+doc:FactsAutoencoderHealthIndicator rdfs:label "interpretable autoencoder for health indicator construction"@en .
+_:c5340da9cecfb35267c2e86ebf69a0b rdf:reifies <<( doc:FactsAutoencoderHealthIndicator rdfs:label "interpretable autoencoder for health indicator construction"@en )>> ;
+	prov:wasDerivedFrom doc:f6a9e5f55b1b .
+doc:FactsGeneralizationAbilityQuality rdfs:label "generalization ability"@en .
+_:ac36a6cb8d2c7891232900f36c0f569f rdf:reifies <<( doc:FactsGeneralizationAbilityQuality rdfs:label "generalization ability"@en )>> ;
+	prov:wasDerivedFrom doc:f6a9e5f55b1b .
+doc:FactsCgf obo:RO_0000086 doc:FactsGeneralizationAbilityQuality .
+_:d1c68d5bcef813450884ea373c8ba568 rdf:reifies <<( doc:FactsCgf obo:RO_0000086 doc:FactsGeneralizationAbilityQuality )>> ;
+	prov:wasDerivedFrom doc:f6a9e5f55b1b .
+doc:FactsStatisticalDegradationProcessType a None:Model_type .
+_:f84d63e0d835f6877f5e3645a6d250f1 rdf:reifies <<( doc:FactsStatisticalDegradationProcessType rdf:type None:Model_type )>> ;
+	prov:wasDerivedFrom doc:f6a9e5f55b1b .
+doc:FactsPubYear2026_1 a None:Publication_year .
+_:e125ac43f02f76157585d9e5c5e31725 rdf:reifies <<( doc:FactsPubYear2026_1 rdf:type None:Publication_year )>> ;
+	prov:wasDerivedFrom doc:f6a9e5f55b1b .
+doc:FactsAccuracyQuality rdfs:label "accuracy"@en .
+_:f18709f9191cbd0617c9a7db750ef48d rdf:reifies <<( doc:FactsAccuracyQuality rdfs:label "accuracy"@en )>> ;
+	prov:wasDerivedFrom doc:f6a9e5f55b1b .
+doc:FactsArticle1_7 schema1:copyrightHolder "the authors" .
+_:a8d5012fb5299288d5e47bb2272995ed rdf:reifies <<( doc:FactsArticle1_7 schema1:copyrightHolder "the authors" )>> ;
+	prov:wasDerivedFrom doc:f6a9e5f55b1b .
+doc:FactsFederatedLearningFramework a None:Predictive_maintenance_model .
+_:c0d1be4a092db41de3e957cc03c154b4 rdf:reifies <<( doc:FactsFederatedLearningFramework rdf:type None:Predictive_maintenance_model )>> ;
+	prov:wasDerivedFrom doc:f6a9e5f55b1b .
+doc:FactsArticle1_7 schema1:publisher doc:FactsMdpi_2 .
+_:da1fa4134f3e39d7db28a68ab695b692 rdf:reifies <<( doc:FactsArticle1_7 schema1:publisher doc:FactsMdpi_2 )>> ;
+	prov:wasDerivedFrom doc:f6a9e5f55b1b .
+doc:FactsRulFunction_1 cco:is_about doc:FactsLiIonBattery_1 .
+_:ff2c659b8c4195bcad999e32792f897f rdf:reifies <<( doc:FactsRulFunction_1 cco:is_about doc:FactsLiIonBattery_1 )>> ;
+	prov:wasDerivedFrom doc:f6a9e5f55b1b .
+doc:FactsArticle1_7 None:has_publication_year doc:FactsPubYear2026_1 .
+_:c5bffa9c34fdac6dd2278da9792d8750 rdf:reifies <<( doc:FactsArticle1_7 None:has_publication_year doc:FactsPubYear2026_1 )>> ;
+	prov:wasDerivedFrom doc:f6a9e5f55b1b .
+doc:FactsLiIonBattery_1 rdfs:label "lithium-ion battery"@en .
+_:ca306d50d9ccd98b2c6485f077e47a2d rdf:reifies <<( doc:FactsLiIonBattery_1 rdfs:label "lithium-ion battery"@en )>> ;
+	prov:wasDerivedFrom doc:f6a9e5f55b1b .
+doc:FactsInternalElectrochemicalEvolution rdfs:label "internal electrochemical evolution"@en .
+_:bfa08d13b48741cbd0dcd4069c4fa89a rdf:reifies <<( doc:FactsInternalElectrochemicalEvolution rdfs:label "internal electrochemical evolution"@en )>> ;
+	prov:wasDerivedFrom doc:f6a9e5f55b1b .
+doc:FactsSelfAttentionComplexity None:has_text_value "self-attention quadratic complexity O(L^2) limits deployment efficiency under long-sequence settings" .
+_:f5f9f73d10b8f758b9bcfb3506afed4b rdf:reifies <<( doc:FactsSelfAttentionComplexity None:has_text_value "self-attention quadratic complexity O(L^2) limits deployment efficiency under long-sequence settings" )>> ;
+	prov:wasDerivedFrom doc:f6a9e5f55b1b .
+_:f739614ca3bbbd7e2aeff666980b7c28 prov:wasDerivedFrom doc:f6a9e5f55b1b .
+doc:FactsBatteryDegradation a None:Design_detail .
+_:be2d48db11b37c7a247daefb16e64f09 rdf:reifies <<( doc:FactsBatteryDegradation rdf:type None:Design_detail )>> ;
+	prov:wasDerivedFrom doc:f6a9e5f55b1b .
+doc:FactsAutoencoderHealthIndicator cco:is_about doc:FactsRulIndicator .
+_:e07abcc90448c557a8097383b97bd205 rdf:reifies <<( doc:FactsAutoencoderHealthIndicator cco:is_about doc:FactsRulIndicator )>> ;
+	prov:wasDerivedFrom doc:f6a9e5f55b1b .
+doc:FactsBatteryDegradation obo:BFO_0000051 doc:FactsChargeDischargeConditions .
+_:d572d1c23235563aa07adb004507feed rdf:reifies <<( doc:FactsBatteryDegradation obo:BFO_0000051 doc:FactsChargeDischargeConditions )>> ;
+	prov:wasDerivedFrom doc:f6a9e5f55b1b .
+doc:FactsBatteryDegradation obo:BFO_0000051 doc:FactsInternalElectrochemicalEvolution .
+_:d1badb16c223635790552a03070ed44d rdf:reifies <<( doc:FactsBatteryDegradation obo:BFO_0000051 doc:FactsInternalElectrochemicalEvolution )>> ;
+	prov:wasDerivedFrom doc:f6a9e5f55b1b .
+doc:FactsMdpi_2 a schema1:Organization .
+_:c9199a7383f23861a41e88026b1581f4 rdf:reifies <<( doc:FactsMdpi_2 rdf:type schema1:Organization )>> ;
+	prov:wasDerivedFrom doc:f6a9e5f55b1b .
+doc:FactsRulFunction_1 rdfs:label "RUL estimation function"@en .
+_:f767bc11e29c962b6f3eb9ae4c99a135 rdf:reifies <<( doc:FactsRulFunction_1 rdfs:label "RUL estimation function"@en )>> ;
+	prov:wasDerivedFrom doc:f6a9e5f55b1b .
+doc:FactsEquivalentCircuitModelType rdfs:label "equivalent circuit model"@en .
+_:dcabe53e375897f5e6a71fd3e3d5a87e rdf:reifies <<( doc:FactsEquivalentCircuitModelType rdfs:label "equivalent circuit model"@en )>> ;
+	prov:wasDerivedFrom doc:f6a9e5f55b1b .
+doc:FactsArticle1_7 schema1:datePublished "2026-04-14"^^<http://www.w3.org/2001/XMLSchema#date> .
+_:f12d15cbed5cacc46b406e8a74b9fbcd rdf:reifies <<( doc:FactsArticle1_7 schema1:datePublished "2026-04-14"^^<http://www.w3.org/2001/XMLSchema#date> )>> ;
+	prov:wasDerivedFrom doc:f6a9e5f55b1b .
+doc:FactsDataDrivenApproach a None:Data_mining_technique_function .
+_:f330b06db0b3d9f4b4a48b1a2e806b6a rdf:reifies <<( doc:FactsDataDrivenApproach rdf:type None:Data_mining_technique_function )>> ;
+	prov:wasDerivedFrom doc:f6a9e5f55b1b .
+doc:FactsGeneralizationAbilityQuality a obo:BFO_0000019 .
+_:dd93d46178bb287c69206f492bb27f3e rdf:reifies <<( doc:FactsGeneralizationAbilityQuality rdf:type obo:BFO_0000019 )>> ;
+	prov:wasDerivedFrom doc:f6a9e5f55b1b .
+doc:FactsArticle1_7 schema1:dateModified "2026-04-06"^^<http://www.w3.org/2001/XMLSchema#date> .
+_:d1b0b168caa38df365b4ae40a9ea39d rdf:reifies <<( doc:FactsArticle1_7 schema1:dateModified "2026-04-06"^^<http://www.w3.org/2001/XMLSchema#date> )>> ;
+	prov:wasDerivedFrom doc:f6a9e5f55b1b .
+doc:FactsElectrochemicalModelType rdfs:label "electrochemical model"@en .
+_:ec044cf06ccc03156be69219cb9c6558 rdf:reifies <<( doc:FactsElectrochemicalModelType rdfs:label "electrochemical model"@en )>> ;
+	prov:wasDerivedFrom doc:f6a9e5f55b1b .
+doc:FactsCgf cco:is_about doc:FactsRulIndicator .
+_:ce6b13282738544c1e4f13ef561a3e9e rdf:reifies <<( doc:FactsCgf cco:is_about doc:FactsRulIndicator )>> ;
+	prov:wasDerivedFrom doc:f6a9e5f55b1b .
+doc:FactsStatisticalDegradationProcessType rdfs:label "statistical degradation process"@en .
+_:a706d48292471af543f22e8bf2ed82c7 rdf:reifies <<( doc:FactsStatisticalDegradationProcessType rdfs:label "statistical degradation process"@en )>> ;
+	prov:wasDerivedFrom doc:f6a9e5f55b1b .
+doc:FactsCgf None:has_design_detail doc:FactsFrequencyDomainUnderexploited .
+_:a7f870676cd13cc2f3e6aba5abbfe77f rdf:reifies <<( doc:FactsCgf None:has_design_detail doc:FactsFrequencyDomainUnderexploited )>> ;
+	prov:wasDerivedFrom doc:f6a9e5f55b1b .
+doc:FactsFederatedLearningFramework cco:is_about doc:FactsRulIndicator .
+_:d4eef91c9ccf9a1509d5843a85316a7 rdf:reifies <<( doc:FactsFederatedLearningFramework cco:is_about doc:FactsRulIndicator )>> ;
+	prov:wasDerivedFrom doc:f6a9e5f55b1b .
+doc:FactsElectrochemicalModelType a None:Model_type .
+_:c6ac4b424818df166340f8da34a2efe8 rdf:reifies <<( doc:FactsElectrochemicalModelType rdf:type None:Model_type )>> ;
+	prov:wasDerivedFrom doc:f6a9e5f55b1b .
+doc:FactsFrequencyDomainUnderexploited a None:Design_detail .
+_:d9b5b909f5f125bf522cb46633bb6354 rdf:reifies <<( doc:FactsFrequencyDomainUnderexploited rdf:type None:Design_detail )>> ;
+	prov:wasDerivedFrom doc:f6a9e5f55b1b .
+doc:FactsArticle1_7 schema1:license <https://creativecommons.org/licenses/by/4.0/> .
+_:ada08db2db2bc7260059e07572ba7434 rdf:reifies <<( doc:FactsArticle1_7 schema1:license <https://creativecommons.org/licenses/by/4.0/> )>> ;
+	prov:wasDerivedFrom doc:f6a9e5f55b1b .
+doc:FactsArticle1_7 a None:Predictive_Maintenance_Article .
+_:a4bda1f98b2baf0642cd0de6ebe02337 rdf:reifies <<( doc:FactsArticle1_7 rdf:type None:Predictive_Maintenance_Article )>> ;
+	prov:wasDerivedFrom doc:f6a9e5f55b1b .
+doc:FactsRulIndicator None:has_text_value "Remaining useful life: the number of cycles or the remaining time from the current operating state until a predefined failure threshold is reached" .
+_:a683edcf84334b51d87225c24a1a4986 rdf:reifies <<( doc:FactsRulIndicator None:has_text_value "Remaining useful life: the number of cycles or the remaining time from the current operating state until a predefined failure threshold is reached" )>> ;
+	prov:wasDerivedFrom doc:f6a9e5f55b1b .
+doc:FactsRulFunction_1 cco:designates doc:FactsRulIndicator .
+_:ee055068238254ccf2ebeca08836bcdf rdf:reifies <<( doc:FactsRulFunction_1 cco:designates doc:FactsRulIndicator )>> ;
+	prov:wasDerivedFrom doc:f6a9e5f55b1b .
+doc:FactsAutoencoderHealthIndicator a None:Predictive_maintenance_model .
+_:dcf060d10bba767d5ccfa40c9a890f8e rdf:reifies <<( doc:FactsAutoencoderHealthIndicator rdf:type None:Predictive_maintenance_model )>> ;
+	prov:wasDerivedFrom doc:f6a9e5f55b1b .
+doc:FactsRulFunction_1 a None:Remaining_useful_life_estimation .
+_:a14cff022ed7e65c0bc29bb0bccb026a rdf:reifies <<( doc:FactsRulFunction_1 rdf:type None:Remaining_useful_life_estimation )>> ;
+	prov:wasDerivedFrom doc:f6a9e5f55b1b .
+doc:FactsCgf None:has_design_detail doc:FactsStaticFusionLimitation .
+_:bc6c7050ac8e6689b78963404d6d3d30 rdf:reifies <<( doc:FactsCgf None:has_design_detail doc:FactsStaticFusionLimitation )>> ;
+	prov:wasDerivedFrom doc:f6a9e5f55b1b .
+doc:FactsEnvironmentalFactors_1 a None:Data_variable .
+_:b17cb99f4e3554c524b3223f052f34d8 rdf:reifies <<( doc:FactsEnvironmentalFactors_1 rdf:type None:Data_variable )>> ;
+	prov:wasDerivedFrom doc:f6a9e5f55b1b .
+doc:FactsBatteryDegradation rdfs:label "battery degradation patterns"@en .
+_:e926154b2e6b0a0dd2d47f4e144c8552 rdf:reifies <<( doc:FactsBatteryDegradation rdfs:label "battery degradation patterns"@en )>> ;
+	prov:wasDerivedFrom doc:f6a9e5f55b1b .
+doc:FactsChargeDischargeConditions a None:Data_variable .
+_:e49004c70e19cd5c747ec0c393d66eb6 rdf:reifies <<( doc:FactsChargeDischargeConditions rdf:type None:Data_variable )>> ;
+	prov:wasDerivedFrom doc:f6a9e5f55b1b .
+doc:FactsChargeDischargeConditions rdfs:label "charge/discharge conditions"@en .
+_:c91ba79a1e98f654225782235183881d rdf:reifies <<( doc:FactsChargeDischargeConditions rdfs:label "charge/discharge conditions"@en )>> ;
+	prov:wasDerivedFrom doc:f6a9e5f55b1b .
+doc:FactsRulIndicator cco:describes doc:FactsLiIonBattery_1 .
+_:fffe59317326c505acc6c1e79ef88434 rdf:reifies <<( doc:FactsRulIndicator cco:describes doc:FactsLiIonBattery_1 )>> ;
+	prov:wasDerivedFrom doc:f6a9e5f55b1b .
+doc:FactsLiIonBattery_1 a None:Maintainable_item .
+_:dc236570c6096c4537ff0d8ddca77e77 rdf:reifies <<( doc:FactsLiIonBattery_1 rdf:type None:Maintainable_item )>> ;
+	prov:wasDerivedFrom doc:f6a9e5f55b1b .
+doc:31c8e91f6b57 a prov:Entity , schema:text ;
+	prov:generatedAtTime "2026-06-12T03:32:47.169737Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+	schema:position 2 ;
+	schema:identifier "31c8e91f6b57" .
+_:bed8230bd377c74ed3ec99945fbb1cf5 prov:wasDerivedFrom doc:31c8e91f6b57 .
+doc:FactsCapacityMeasure a None:Data_variable .
+_:cc9bda20353143526daeadd4f6066179 rdf:reifies <<( doc:FactsCapacityMeasure rdf:type None:Data_variable )>> ;
+	prov:wasDerivedFrom doc:31c8e91f6b57 .
+doc:FactsCgf None:has_predictive_maintenance_function None:Remaining_useful_life_estimation .
+_:c1943d73e57daf214e934e6828864cbb rdf:reifies <<( doc:FactsCgf None:has_predictive_maintenance_function None:Remaining_useful_life_estimation )>> ;
+	prov:wasDerivedFrom doc:31c8e91f6b57 .
+doc:FactsCgf None:has_text_value "multi-head spectral interaction module performing 1D FFT and learnable band masks to capture global spectral structures with linear-logarithmic complexity" .
+_:ce06e664c29ece0e65bf3c104f094c4c rdf:reifies <<( doc:FactsCgf None:has_text_value "multi-head spectral interaction module performing 1D FFT and learnable band masks to capture global spectral structures with linear-logarithmic complexity" )>> ;
+	prov:wasDerivedFrom doc:31c8e91f6b57 .
+_:f739614ca3bbbd7e2aeff666980b7c28 prov:wasDerivedFrom doc:31c8e91f6b57 .
+doc:FactsTfRulNetConfig a None:Model_configuration .
+_:df7a259305954a0b24bb0dfde56368a2 rdf:reifies <<( doc:FactsTfRulNetConfig rdf:type None:Model_configuration )>> ;
+	prov:wasDerivedFrom doc:31c8e91f6b57 .
+doc:Factsbattery_RUL_Estimation1 None:has_text_value "RUL defined as number of remaining charge-discharge cycles until EOL" .
+_:b7f2a436ca5bbb4c88d46473cec0467d rdf:reifies <<( doc:Factsbattery_RUL_Estimation1 None:has_text_value "RUL defined as number of remaining charge-discharge cycles until EOL" )>> ;
+	prov:wasDerivedFrom doc:31c8e91f6b57 .
+doc:FactsArticleTitle1_1 None:has_text_value "TF-RULNet: Time-Frequency Cross-Gated Network for battery RUL prediction" .
+_:da5c988324077b0550230dd5a4fb45ac rdf:reifies <<( doc:FactsArticleTitle1_1 None:has_text_value "TF-RULNet: Time-Frequency Cross-Gated Network for battery RUL prediction" )>> ;
+	prov:wasDerivedFrom doc:31c8e91f6b57 .
+_:c32bccf30e60d2c796968a914e383c37 prov:wasDerivedFrom doc:31c8e91f6b57 .
+doc:FactsSelfAttentionComplexity None:has_text_value "dynamically modulates contributions of time-domain and frequency-domain features enabling stage-aware time-frequency collaboration" .
+_:abb1488a2d1649369fe6fa55137b9881 rdf:reifies <<( doc:FactsSelfAttentionComplexity None:has_text_value "dynamically modulates contributions of time-domain and frequency-domain features enabling stage-aware time-frequency collaboration" )>> ;
+	prov:wasDerivedFrom doc:31c8e91f6b57 .
+doc:FactsTfRulNetConfig obo:BFO_0000051 doc:FactsCgf .
+_:ce73c20ea6609e10d128125e8fd95e4a rdf:reifies <<( doc:FactsTfRulNetConfig obo:BFO_0000051 doc:FactsCgf )>> ;
+	prov:wasDerivedFrom doc:31c8e91f6b57 .
+doc:FactsCgf None:has_title doc:FactsArticleTitle1_1 .
+_:e2784cc8aafae235e2c78acd67843b3e rdf:reifies <<( doc:FactsCgf None:has_title doc:FactsArticleTitle1_1 )>> ;
+	prov:wasDerivedFrom doc:31c8e91f6b57 .
+doc:FactsCgf None:has_text_value "multi-scale time-domain convolutional encoder that extracts degradation cues at multiple temporal scales" .
+_:feb2d74a8af3897abb765dc281829697 rdf:reifies <<( doc:FactsCgf None:has_text_value "multi-scale time-domain convolutional encoder that extracts degradation cues at multiple temporal scales" )>> ;
+	prov:wasDerivedFrom doc:31c8e91f6b57 .
+doc:Factsbattery_RUL_Estimation1 cco:is_about doc:FactsBattery1 .
+_:dedd892ad0e7de1174014482e0823672 rdf:reifies <<( doc:Factsbattery_RUL_Estimation1 cco:is_about doc:FactsBattery1 )>> ;
+	prov:wasDerivedFrom doc:31c8e91f6b57 .
+doc:FactsCapacityMeasure cco:is_about doc:FactsBattery1 .
+_:e2047ffab3d49d981667908bf2d084ab rdf:reifies <<( doc:FactsCapacityMeasure cco:is_about doc:FactsBattery1 )>> ;
+	prov:wasDerivedFrom doc:31c8e91f6b57 .
+doc:FactsBattery1 a None:Maintainable_item .
+_:b61d89f004c0ccbc933205b0b811b28f rdf:reifies <<( doc:FactsBattery1 rdf:type None:Maintainable_item )>> ;
+	prov:wasDerivedFrom doc:31c8e91f6b57 .
+doc:FactsSelfAttentionComplexity None:has_text_value "battery reaches end-of-life when measured capacity <= 0.8 * nominal capacity (80%)" .
+_:ea2ad4e2c427ad530c693cba1eb85bc rdf:reifies <<( doc:FactsSelfAttentionComplexity None:has_text_value "battery reaches end-of-life when measured capacity <= 0.8 * nominal capacity (80%)" )>> ;
+	prov:wasDerivedFrom doc:31c8e91f6b57 .
+doc:FactsCapacityMeasure None:has_text_value "measured capacity C(n) at cycle n" .
+_:c75af0904accfe5671c0c37f82451523 rdf:reifies <<( doc:FactsCapacityMeasure None:has_text_value "measured capacity C(n) at cycle n" )>> ;
+	prov:wasDerivedFrom doc:31c8e91f6b57 .
+doc:FactsCgf None:has_predictive_maintenance_function None:Future_state_forecast .
+_:adb595a8345a6abb49d4eb3c5f955c09 rdf:reifies <<( doc:FactsCgf None:has_predictive_maintenance_function None:Future_state_forecast )>> ;
+	prov:wasDerivedFrom doc:31c8e91f6b57 .
+_:bda0d2261985fe7b181569c5683e9fb9 prov:wasDerivedFrom doc:31c8e91f6b57 .
+doc:Factsbattery_RUL_Estimation1 a None:Remaining_useful_life_estimation .
+_:f5894271b32794a8f95350a143d2de7e rdf:reifies <<( doc:Factsbattery_RUL_Estimation1 rdf:type None:Remaining_useful_life_estimation )>> ;
+	prov:wasDerivedFrom doc:31c8e91f6b57 .
+doc:FactsCgf a None:Predictive_Maintenance_Article .
+_:ba1285f0ac400ea0b6fef12c1da5a69b rdf:reifies <<( doc:FactsCgf rdf:type None:Predictive_Maintenance_Article )>> ;
+	prov:wasDerivedFrom doc:31c8e91f6b57 .
+doc:FactsTfRulNetConfig None:describes_configuration doc:FactsCgf .
+_:bc1cd3b036a951ee556a73edb7101e81 rdf:reifies <<( doc:FactsTfRulNetConfig None:describes_configuration doc:FactsCgf )>> ;
+	prov:wasDerivedFrom doc:31c8e91f6b57 .
+doc:FactsBattery1 None:has_text_value "battery (subject of RUL prediction)" .
+_:c0942261d666b07e04e503dd67261e36 rdf:reifies <<( doc:FactsBattery1 None:has_text_value "battery (subject of RUL prediction)" )>> ;
+	prov:wasDerivedFrom doc:31c8e91f6b57 .
+doc:FactsCgf None:has_predictive_maintenance_function None:Fault_feature_extraction .
+_:c76f82f4967c50c4cbd7cd04067f2c9e rdf:reifies <<( doc:FactsCgf None:has_predictive_maintenance_function None:Fault_feature_extraction )>> ;
+	prov:wasDerivedFrom doc:31c8e91f6b57 .
+_:d3e041d169f5efe83a48a1f5419d9a24 prov:wasDerivedFrom doc:31c8e91f6b57 .

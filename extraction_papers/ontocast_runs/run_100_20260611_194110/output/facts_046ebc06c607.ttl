@@ -1,0 +1,610 @@
+@prefix None: <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD/seed#> .
+@prefix cco: <http://www.ontologyrepository.com/CommonCoreOntologies/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doc: <https://growgraph.dev/doc/046ebc06c607/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix obo: <http://purl.obolibrary.org/obo/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix cd: <https://growgraph.dev/facts> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix schema: <https://schema.org/> .
+@prefix schema1: <http://schema.org/> .
+doc:98881486de33 a prov:Entity , schema:text ;
+	prov:generatedAtTime "2026-06-12T05:01:41.057922Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+	schema:position 0 ;
+	schema:identifier "98881486de33" .
+doc:FactsArticle1_11 schema1:author doc:FactsAuthorAli .
+_:c5f2ede6a664bd4376b90f888a8007ba rdf:reifies <<( doc:FactsArticle1_11 schema1:author doc:FactsAuthorAli )>> ;
+	prov:wasDerivedFrom doc:98881486de33 .
+doc:FactsArticle1_11 cco:is_about doc:FactsXlpeCable .
+_:b8279e080d5bb0013a00030e09b7a754 rdf:reifies <<( doc:FactsArticle1_11 cco:is_about doc:FactsXlpeCable )>> ;
+	prov:wasDerivedFrom doc:98881486de33 .
+doc:FactsAuthorAli schema1:name "Waleed M. Hamanah"@en .
+_:c1cefa94ad14f65301e8e7be70b63d8e rdf:reifies <<( doc:FactsAuthorAli schema1:name "Waleed M. Hamanah"@en )>> ;
+	prov:wasDerivedFrom doc:98881486de33 .
+doc:FactsMechanicalFindings a cco:DescriptiveInformationContentEntity .
+_:d807088e054a2f2bebd167c55e0492ed rdf:reifies <<( doc:FactsMechanicalFindings rdf:type cco:DescriptiveInformationContentEntity )>> ;
+	prov:wasDerivedFrom doc:98881486de33 .
+doc:Factsxlpe_Sample_5yrs a None:maintainable_item_record .
+_:fbb5b0d33b5dbf64b2be9d1c556fa43a rdf:reifies <<( doc:Factsxlpe_Sample_5yrs rdf:type None:maintainable_item_record )>> ;
+	prov:wasDerivedFrom doc:98881486de33 .
+doc:FactsAuthorAli a schema1:Person .
+_:af1b6260941403985ed6e5139dfea85c rdf:reifies <<( doc:FactsAuthorAli rdf:type schema1:Person )>> ;
+	prov:wasDerivedFrom doc:98881486de33 .
+doc:FactsXlpeDevelopment schema1:releaseDate "1963"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+_:cc52d5bbb79afadf9df02fcf3e402654 rdf:reifies <<( doc:FactsXlpeDevelopment schema1:releaseDate "1963"^^<http://www.w3.org/2001/XMLSchema#gYear> )>> ;
+	prov:wasDerivedFrom doc:98881486de33 .
+doc:FactsXlpeDevelopment schema1:manufacturer doc:FactsGeResearchLaboratory .
+_:be9d71d89874d695b0abcc76738c2057 rdf:reifies <<( doc:FactsXlpeDevelopment schema1:manufacturer doc:FactsGeResearchLaboratory )>> ;
+	prov:wasDerivedFrom doc:98881486de33 .
+doc:FactsGeResearchLaboratory a schema1:Organization .
+_:a9251f9a154617b2b05609e4c7143f37 rdf:reifies <<( doc:FactsGeResearchLaboratory rdf:type schema1:Organization )>> ;
+	prov:wasDerivedFrom doc:98881486de33 .
+doc:Factsxlpe_Sample_5yrs None:has_interger_value 10 .
+_:b0a4a3e8b1b951d7cb867bafdb962a5e rdf:reifies <<( doc:Factsxlpe_Sample_5yrs None:has_interger_value 10 )>> ;
+	prov:wasDerivedFrom doc:98881486de33 .
+doc:FactsXlpeCable rdfs:label "34.5 kV cross-linked polyethylene (XLPE) power cables"@en .
+_:b83feba2fbf1cd378144e818f145a144 rdf:reifies <<( doc:FactsXlpeCable rdfs:label "34.5 kV cross-linked polyethylene (XLPE) power cables"@en )>> ;
+	prov:wasDerivedFrom doc:98881486de33 .
+doc:FactsEdx a cco:Algorithm .
+_:fb1e343c35cb3ff613722e4eca741a2f rdf:reifies <<( doc:FactsEdx rdf:type cco:Algorithm )>> ;
+	prov:wasDerivedFrom doc:98881486de33 .
+doc:Factsbreakdownvoltage_5yrs schema1:value 20.85 .
+_:f4a4b72adfe7857ea9ea06297803d283 rdf:reifies <<( doc:Factsbreakdownvoltage_5yrs schema1:value 20.85 )>> ;
+	prov:wasDerivedFrom doc:98881486de33 .
+doc:FactsFlashoverVoltage cco:is_about doc:FactsXlpeCable .
+_:c4fe4c526209d84eb02490a3ba167390 rdf:reifies <<( doc:FactsFlashoverVoltage cco:is_about doc:FactsXlpeCable )>> ;
+	prov:wasDerivedFrom doc:98881486de33 .
+doc:FactsFlashoverVoltage a None:Performance_value .
+_:f414b916c7e86152005e0b57b0b06358 rdf:reifies <<( doc:FactsFlashoverVoltage rdf:type None:Performance_value )>> ;
+	prov:wasDerivedFrom doc:98881486de33 .
+doc:FactsElongationTest rdfs:label "Elongation analysis"@en .
+_:c47ab8e4c0ad783176ef6edd4be25738 rdf:reifies <<( doc:FactsElongationTest rdfs:label "Elongation analysis"@en )>> ;
+	prov:wasDerivedFrom doc:98881486de33 .
+doc:FactsMechanicalFindings cco:describes doc:FactsTensileTest .
+_:e4fd7fc13b939c42e42c7b6728cf9d83 rdf:reifies <<( doc:FactsMechanicalFindings cco:describes doc:FactsTensileTest )>> ;
+	prov:wasDerivedFrom doc:98881486de33 .
+doc:Factsbreakdownvoltage_5yrs schema1:unitText "percent" .
+_:c4f4cea5092e23faa1f30a38f05ce9ef rdf:reifies <<( doc:Factsbreakdownvoltage_5yrs schema1:unitText "percent" )>> ;
+	prov:wasDerivedFrom doc:98881486de33 .
+doc:FactsChemicalStructuralFindings cco:describes doc:FactsSem .
+_:a04ec3a1aed3d9b6056877e65ccb2278 rdf:reifies <<( doc:FactsChemicalStructuralFindings cco:describes doc:FactsSem )>> ;
+	prov:wasDerivedFrom doc:98881486de33 .
+doc:FactsMechanicalFindings rdfs:label "Mechanical property changes: tensile strength and elongation analyzed"@en .
+_:bd8559460c5729b841127b756293b5b4 rdf:reifies <<( doc:FactsMechanicalFindings rdfs:label "Mechanical property changes: tensile strength and elongation analyzed"@en )>> ;
+	prov:wasDerivedFrom doc:98881486de33 .
+doc:FactsCritic a cco:Algorithm .
+_:d581ef3a1d1c87f23fdca0a4df9e7cbe rdf:reifies <<( doc:FactsCritic rdf:type cco:Algorithm )>> ;
+	prov:wasDerivedFrom doc:98881486de33 .
+doc:FactsChiEvaluation rdfs:label "Integrated entropy/CRITIC weighting achieves highest classification accuracy and ROC-AUC"@en .
+_:b6c96a8b8f668e45874f861ab1936f8f rdf:reifies <<( doc:FactsChiEvaluation rdfs:label "Integrated entropy/CRITIC weighting achieves highest classification accuracy and ROC-AUC"@en )>> ;
+	prov:wasDerivedFrom doc:98881486de33 .
+doc:Factsbreakdownvoltage_5yrs schema1:value 13.6 .
+_:fce00b75b7e7b310fd5a6a78a51b510e rdf:reifies <<( doc:Factsbreakdownvoltage_5yrs schema1:value 13.6 )>> ;
+	prov:wasDerivedFrom doc:98881486de33 .
+doc:Factsbreakdownvoltage_5yrs rdfs:label "Breakdown voltage decrease (5-year sample)"@en .
+_:ebbe6acd784a65371b6dbe44916623ca rdf:reifies <<( doc:Factsbreakdownvoltage_5yrs rdfs:label "Breakdown voltage decrease (5-year sample)"@en )>> ;
+	prov:wasDerivedFrom doc:98881486de33 .
+doc:FactsChemicalStructuralFindings cco:is_about doc:FactsXlpeCable .
+_:c6cace37de3672bfbbc4d0f1091e9561 rdf:reifies <<( doc:FactsChemicalStructuralFindings cco:is_about doc:FactsXlpeCable )>> ;
+	prov:wasDerivedFrom doc:98881486de33 .
+doc:FactsXlpeCable a None:Maintainable_item .
+_:e65ed413d5087b55e5c34c77247dd979 rdf:reifies <<( doc:FactsXlpeCable rdf:type None:Maintainable_item )>> ;
+	prov:wasDerivedFrom doc:98881486de33 .
+doc:FactsDsc rdfs:label "Differential Scanning Calorimetry (DSC)"@en .
+_:f21637a991b7a2c3f7e04e88f6774788 rdf:reifies <<( doc:FactsDsc rdfs:label "Differential Scanning Calorimetry (DSC)"@en )>> ;
+	prov:wasDerivedFrom doc:98881486de33 .
+doc:FactsMaintenanceRecommendation rdfs:label "Findings support condition-based maintenance and life extension strategies for high-voltage systems"@en .
+_:bcb7c8c75f503574ab65d6e11c21baaf rdf:reifies <<( doc:FactsMaintenanceRecommendation rdfs:label "Findings support condition-based maintenance and life extension strategies for high-voltage systems"@en )>> ;
+	prov:wasDerivedFrom doc:98881486de33 .
+doc:FactsTensileTest a cco:Algorithm .
+_:abd2a89d6ac352187b3484bea8a3f853 rdf:reifies <<( doc:FactsTensileTest rdf:type cco:Algorithm )>> ;
+	prov:wasDerivedFrom doc:98881486de33 .
+doc:FactsChemicalStructuralFindings cco:describes doc:Factstomography_3D .
+_:bceaba5ec616cc7252707f7479de7d95 rdf:reifies <<( doc:FactsChemicalStructuralFindings cco:describes doc:Factstomography_3D )>> ;
+	prov:wasDerivedFrom doc:98881486de33 .
+doc:FactsChemicalStructuralFindings rdfs:label "Aged samples show surface cracking, elemental variation, and decreased crystallinity; altered thermal properties"@en .
+_:da86671704f94da86b171f6c4cfb99f4 rdf:reifies <<( doc:FactsChemicalStructuralFindings rdfs:label "Aged samples show surface cracking, elemental variation, and decreased crystallinity; altered thermal properties"@en )>> ;
+	prov:wasDerivedFrom doc:98881486de33 .
+doc:Factsarticle1_Title_2 rdfs:label "Characterization and health index assessment of 34.5 kV cross-linked polyethylene (XLPE) power cables"@en .
+_:d76d9cb717dcf0e8212b7038e80ff6b rdf:reifies <<( doc:Factsarticle1_Title_2 rdfs:label "Characterization and health index assessment of 34.5 kV cross-linked polyethylene (XLPE) power cables"@en )>> ;
+	prov:wasDerivedFrom doc:98881486de33 .
+doc:FactsChiEvaluation a None:Performance_value .
+_:c0ef863c11d77a86bdc3b20b180495e9 rdf:reifies <<( doc:FactsChiEvaluation rdf:type None:Performance_value )>> ;
+	prov:wasDerivedFrom doc:98881486de33 .
+doc:Factsxlpe_Sample_5yrs rdfs:label "XLPE cable sample aged 5 years"@en .
+_:e5a2c4db080b0a47e88bbc162b46bda5 rdf:reifies <<( doc:Factsxlpe_Sample_5yrs rdfs:label "XLPE cable sample aged 5 years"@en )>> ;
+	prov:wasDerivedFrom doc:98881486de33 .
+doc:Factsbreakdownvoltage_5yrs cco:is_about doc:FactsXlpeCable .
+_:c3b39ca623851123d76777e229e991a4 rdf:reifies <<( doc:Factsbreakdownvoltage_5yrs cco:is_about doc:FactsXlpeCable )>> ;
+	prov:wasDerivedFrom doc:98881486de33 .
+doc:FactsMechanicalFindings cco:is_about doc:FactsXlpeCable .
+_:f49837e942732b99bfdcbd7925689f18 rdf:reifies <<( doc:FactsMechanicalFindings cco:is_about doc:FactsXlpeCable )>> ;
+	prov:wasDerivedFrom doc:98881486de33 .
+doc:Factsbreakdownvoltage_5yrs a None:Performance_value .
+_:c546afdaa4377bc93305df4dfd91e9f9 rdf:reifies <<( doc:Factsbreakdownvoltage_5yrs rdf:type None:Performance_value )>> ;
+	prov:wasDerivedFrom doc:98881486de33 .
+doc:Factstomography_3D a cco:Algorithm .
+_:e3e4f0f555a635e90816928edbeeddef rdf:reifies <<( doc:Factstomography_3D rdf:type cco:Algorithm )>> ;
+	prov:wasDerivedFrom doc:98881486de33 .
+doc:Factsxlpe_Sample_5yrs cco:is_about doc:FactsXlpeCable .
+_:c41e2d3ffebe30c0600d82cc06a1d70f rdf:reifies <<( doc:Factsxlpe_Sample_5yrs cco:is_about doc:FactsXlpeCable )>> ;
+	prov:wasDerivedFrom doc:98881486de33 .
+doc:FactsAuthorAli schema1:name "Salem Mgammal Al-Ameri"@en .
+_:a300cffa9f7d75e49892d0bed2a4ae76 rdf:reifies <<( doc:FactsAuthorAli schema1:name "Salem Mgammal Al-Ameri"@en )>> ;
+	prov:wasDerivedFrom doc:98881486de33 .
+doc:FactsAuthorAli schema1:name "Ali Ahmed Salem"@en .
+_:b7b325380afeefe88e5df16d9e07700b rdf:reifies <<( doc:FactsAuthorAli schema1:name "Ali Ahmed Salem"@en )>> ;
+	prov:wasDerivedFrom doc:98881486de33 .
+doc:FactsFlashoverVoltage rdfs:label "Flashover voltage (tested)"@en .
+_:b0e734cbc2619a107d36fae1491c615e rdf:reifies <<( doc:FactsFlashoverVoltage rdfs:label "Flashover voltage (tested)"@en )>> ;
+	prov:wasDerivedFrom doc:98881486de33 .
+doc:FactsElongationTest a cco:Algorithm .
+_:f6eefdbd303843006dd441f2768ef2fd rdf:reifies <<( doc:FactsElongationTest rdf:type cco:Algorithm )>> ;
+	prov:wasDerivedFrom doc:98881486de33 .
+doc:FactsTensileTest rdfs:label "Tensile strength test"@en .
+_:f8faf341c90d84a9647e5355b3965ec6 rdf:reifies <<( doc:FactsTensileTest rdfs:label "Tensile strength test"@en )>> ;
+	prov:wasDerivedFrom doc:98881486de33 .
+doc:Factsbreakdownvoltage_5yrs rdfs:label "Breakdown voltage decrease (10-year sample)"@en .
+_:fac01c095370404eedc86732f3680e8a rdf:reifies <<( doc:Factsbreakdownvoltage_5yrs rdfs:label "Breakdown voltage decrease (10-year sample)"@en )>> ;
+	prov:wasDerivedFrom doc:98881486de33 .
+doc:FactsFtir a cco:Algorithm .
+_:ecc48ee7230c11312ce2636f3a40b529 rdf:reifies <<( doc:FactsFtir rdf:type cco:Algorithm )>> ;
+	prov:wasDerivedFrom doc:98881486de33 .
+doc:FactsXlpeDevelopment a schema1:Product .
+_:b7c6edda5d10a6df761b52dc910ae219 rdf:reifies <<( doc:FactsXlpeDevelopment rdf:type schema1:Product )>> ;
+	prov:wasDerivedFrom doc:98881486de33 .
+doc:FactsGeResearchLaboratory schema1:name "General Electric Research Laboratory"@en .
+_:d7980da0ce94f94c7f4ccb9c4a8b5e4e rdf:reifies <<( doc:FactsGeResearchLaboratory schema1:name "General Electric Research Laboratory"@en )>> ;
+	prov:wasDerivedFrom doc:98881486de33 .
+doc:FactsMaintenanceRecommendation cco:is_about doc:FactsXlpeCable .
+_:b11ba1f1c373b6801de843fbe7586dc rdf:reifies <<( doc:FactsMaintenanceRecommendation cco:is_about doc:FactsXlpeCable )>> ;
+	prov:wasDerivedFrom doc:98881486de33 .
+doc:FactsChi a None:Performance_indicator .
+_:d8bf7d06cc6aab91158351542ea35303 rdf:reifies <<( doc:FactsChi rdf:type None:Performance_indicator )>> ;
+	prov:wasDerivedFrom doc:98881486de33 .
+doc:FactsXrd_1 rdfs:label "X-ray Diffraction (XRD)"@en .
+_:d4c821389ae1dd75944c7900d17b9e66 rdf:reifies <<( doc:FactsXrd_1 rdfs:label "X-ray Diffraction (XRD)"@en )>> ;
+	prov:wasDerivedFrom doc:98881486de33 .
+doc:FactsAuthorAli schema1:name "Mahmood Alhajj"@en .
+_:ac444903d1c5bcfbaa1ef354df20b316 rdf:reifies <<( doc:FactsAuthorAli schema1:name "Mahmood Alhajj"@en )>> ;
+	prov:wasDerivedFrom doc:98881486de33 .
+doc:FactsChemicalStructuralFindings cco:describes doc:FactsDsc .
+_:f3f1bd5ec2d365d44391ccb32b660618 rdf:reifies <<( doc:FactsChemicalStructuralFindings cco:describes doc:FactsDsc )>> ;
+	prov:wasDerivedFrom doc:98881486de33 .
+doc:Factstomography_3D rdfs:label "3D X-ray tomography"@en .
+_:b0b28006539325ad475784b90dabc31f rdf:reifies <<( doc:Factstomography_3D rdfs:label "3D X-ray tomography"@en )>> ;
+	prov:wasDerivedFrom doc:98881486de33 .
+doc:Factsarticle1_Title_2 a None:Article_title .
+_:a22301d327efba3b13f9c40e9b1e7603 rdf:reifies <<( doc:Factsarticle1_Title_2 rdf:type None:Article_title )>> ;
+	prov:wasDerivedFrom doc:98881486de33 .
+doc:FactsMechanicalFindings cco:describes doc:FactsElongationTest .
+_:d2720e296bdff1fe0cf0f90b9dd4ed2 rdf:reifies <<( doc:FactsMechanicalFindings cco:describes doc:FactsElongationTest )>> ;
+	prov:wasDerivedFrom doc:98881486de33 .
+doc:FactsEntropy rdfs:label "Entropy (weighting method)"@en .
+_:e95d05fac6bf326d8b554ffa23816932 rdf:reifies <<( doc:FactsEntropy rdfs:label "Entropy (weighting method)"@en )>> ;
+	prov:wasDerivedFrom doc:98881486de33 .
+doc:FactsEdx rdfs:label "Energy-dispersive X-ray spectroscopy (EDX)"@en .
+_:c42ded6a5f545abcf1c622db426b1960 rdf:reifies <<( doc:FactsEdx rdfs:label "Energy-dispersive X-ray spectroscopy (EDX)"@en )>> ;
+	prov:wasDerivedFrom doc:98881486de33 .
+doc:FactsChi cd:usesMethod doc:FactsCritic .
+_:a3fdba3d4a3be4b91d69a7adefab02d rdf:reifies <<( doc:FactsChi cd:usesMethod doc:FactsCritic )>> ;
+	prov:wasDerivedFrom doc:98881486de33 .
+doc:FactsSem rdfs:label "Scanning Electron Microscopy (SEM)"@en .
+_:b445d204aa5dc6b107eb300c2bc19810 rdf:reifies <<( doc:FactsSem rdfs:label "Scanning Electron Microscopy (SEM)"@en )>> ;
+	prov:wasDerivedFrom doc:98881486de33 .
+doc:FactsChemicalStructuralFindings cco:describes doc:FactsEdx .
+_:a3ecc2eb1930ed86feb0e2a570327dfe rdf:reifies <<( doc:FactsChemicalStructuralFindings cco:describes doc:FactsEdx )>> ;
+	prov:wasDerivedFrom doc:98881486de33 .
+doc:FactsSem a cco:Algorithm .
+_:c946a3a18c5913bb53952eaa13d7ad7a rdf:reifies <<( doc:FactsSem rdf:type cco:Algorithm )>> ;
+	prov:wasDerivedFrom doc:98881486de33 .
+doc:Factsxlpe_Sample_5yrs None:has_interger_value 5 .
+_:a838c1d57f50978bf5e745070c679048 rdf:reifies <<( doc:Factsxlpe_Sample_5yrs None:has_interger_value 5 )>> ;
+	prov:wasDerivedFrom doc:98881486de33 .
+doc:Factsxlpe_Sample_5yrs rdfs:label "XLPE cable sample aged 10 years"@en .
+_:fc2bd9bc3d02c74a646397edab3e6dc2 rdf:reifies <<( doc:Factsxlpe_Sample_5yrs rdfs:label "XLPE cable sample aged 10 years"@en )>> ;
+	prov:wasDerivedFrom doc:98881486de33 .
+doc:FactsDsc a cco:Algorithm .
+_:b5a68f1e605a43a97d5f7091ec696f59 rdf:reifies <<( doc:FactsDsc rdf:type cco:Algorithm )>> ;
+	prov:wasDerivedFrom doc:98881486de33 .
+doc:FactsArticle1_11 a None:Predictive_Maintenance_Article .
+_:e0447ebba729420bbaba69cc589d17f5 rdf:reifies <<( doc:FactsArticle1_11 rdf:type None:Predictive_Maintenance_Article )>> ;
+	prov:wasDerivedFrom doc:98881486de33 .
+doc:FactsChi cd:usesMethod doc:FactsEntropy .
+_:c23092efee821fe15a401083a3182b4f rdf:reifies <<( doc:FactsChi cd:usesMethod doc:FactsEntropy )>> ;
+	prov:wasDerivedFrom doc:98881486de33 .
+doc:FactsChemicalStructuralFindings cco:describes doc:FactsXrd_1 .
+_:d7803a8d07727eaf45167f599bf0c3cc rdf:reifies <<( doc:FactsChemicalStructuralFindings cco:describes doc:FactsXrd_1 )>> ;
+	prov:wasDerivedFrom doc:98881486de33 .
+doc:FactsChiEvaluation cco:is_about doc:FactsChi .
+_:cba89ad928bd453a7cda93eb3b9b5949 rdf:reifies <<( doc:FactsChiEvaluation cco:is_about doc:FactsChi )>> ;
+	prov:wasDerivedFrom doc:98881486de33 .
+doc:FactsEntropy a cco:Algorithm .
+_:f561a1e0176e8c80254b29d0c4125c34 rdf:reifies <<( doc:FactsEntropy rdf:type cco:Algorithm )>> ;
+	prov:wasDerivedFrom doc:98881486de33 .
+doc:FactsXlpeDevelopment rdfs:label "Cross-Linked Polyethylene (XLPE) insulation"@en .
+_:e01d6264c07cfc86f5d62b0b7fc4ac21 rdf:reifies <<( doc:FactsXlpeDevelopment rdfs:label "Cross-Linked Polyethylene (XLPE) insulation"@en )>> ;
+	prov:wasDerivedFrom doc:98881486de33 .
+doc:FactsChemicalStructuralFindings cco:describes doc:FactsFtir .
+_:e80b28f46e8a9ee8b3c3e35d7c3a0f02 rdf:reifies <<( doc:FactsChemicalStructuralFindings cco:describes doc:FactsFtir )>> ;
+	prov:wasDerivedFrom doc:98881486de33 .
+doc:FactsMaintenanceRecommendation a cco:DescriptiveInformationContentEntity .
+_:cb3ea9e831b42030adbeae1edd6bb508 rdf:reifies <<( doc:FactsMaintenanceRecommendation rdf:type cco:DescriptiveInformationContentEntity )>> ;
+	prov:wasDerivedFrom doc:98881486de33 .
+doc:FactsCritic rdfs:label "CRITIC (weighting method)"@en .
+_:d565f7fdbaf5d706c903bbd6d0a27f83 rdf:reifies <<( doc:FactsCritic rdfs:label "CRITIC (weighting method)"@en )>> ;
+	prov:wasDerivedFrom doc:98881486de33 .
+doc:FactsXrd_1 a cco:Algorithm .
+_:c8cdb00b6029b52759dafbaff4da81e rdf:reifies <<( doc:FactsXrd_1 rdf:type cco:Algorithm )>> ;
+	prov:wasDerivedFrom doc:98881486de33 .
+doc:FactsChi cco:is_about doc:FactsXlpeCable .
+_:a0b94887f029b7c4361162dae89a4ebf rdf:reifies <<( doc:FactsChi cco:is_about doc:FactsXlpeCable )>> ;
+	prov:wasDerivedFrom doc:98881486de33 .
+doc:FactsChi rdfs:label "Cable Health Index (CHI)"@en .
+_:a9ef0de3aefb6bd0a75e1a728bd7aba6 rdf:reifies <<( doc:FactsChi rdfs:label "Cable Health Index (CHI)"@en )>> ;
+	prov:wasDerivedFrom doc:98881486de33 .
+doc:FactsXlpeCable cd:has_voltage 34.5 .
+_:eda135744c1e6419c83316930f810a1f rdf:reifies <<( doc:FactsXlpeCable cd:has_voltage 34.5 )>> ;
+	prov:wasDerivedFrom doc:98881486de33 .
+doc:FactsAuthorAli schema1:name "Samir Ahmed Al-Gailani"@en .
+_:f105f65853d139fe49f69221de1e49f2 rdf:reifies <<( doc:FactsAuthorAli schema1:name "Samir Ahmed Al-Gailani"@en )>> ;
+	prov:wasDerivedFrom doc:98881486de33 .
+doc:FactsXlpeCable cd:has_voltage_unit "kV" .
+_:c82d34df08f1d2b125207ca3157a9eba rdf:reifies <<( doc:FactsXlpeCable cd:has_voltage_unit "kV" )>> ;
+	prov:wasDerivedFrom doc:98881486de33 .
+doc:FactsChemicalStructuralFindings a cco:DescriptiveInformationContentEntity .
+_:e2414dc39e5c29943356b5678c1a398 rdf:reifies <<( doc:FactsChemicalStructuralFindings rdf:type cco:DescriptiveInformationContentEntity )>> ;
+	prov:wasDerivedFrom doc:98881486de33 .
+doc:FactsArticle1_11 None:has_title doc:Factsarticle1_Title_2 .
+_:b939dc5ec5ec823a458e252ce030a379 rdf:reifies <<( doc:FactsArticle1_11 None:has_title doc:Factsarticle1_Title_2 )>> ;
+	prov:wasDerivedFrom doc:98881486de33 .
+doc:FactsFtir rdfs:label "Fourier Transform Infrared Spectroscopy (FTIR)"@en .
+_:fb70c4b5f452329dc69000934bf54f3e rdf:reifies <<( doc:FactsFtir rdfs:label "Fourier Transform Infrared Spectroscopy (FTIR)"@en )>> ;
+	prov:wasDerivedFrom doc:98881486de33 .
+doc:7cc2236ff115 a prov:Entity , schema:text ;
+	prov:generatedAtTime "2026-06-12T05:01:41.063027Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+	schema:position 1 ;
+	schema:identifier "7cc2236ff115" .
+doc:FactsSpaceCharge cco:describes doc:FactsDegradation .
+_:f6c1f6cf4f946306953acf6545ba650b rdf:reifies <<( doc:FactsSpaceCharge cco:describes doc:FactsDegradation )>> ;
+	prov:wasDerivedFrom doc:7cc2236ff115 .
+doc:FactsCableJoint a obo:BFO_0000030 .
+_:f893599234cb20f0b126675c2c485604 rdf:reifies <<( doc:FactsCableJoint rdf:type obo:BFO_0000030 )>> ;
+	prov:wasDerivedFrom doc:7cc2236ff115 .
+doc:factsreduces a rdf:Property .
+_:b1cf87df88a0da485149ef76079e18a0 rdf:reifies <<( doc:factsreduces rdf:type rdf:Property )>> ;
+	prov:wasDerivedFrom doc:7cc2236ff115 .
+doc:FactsLongCable obo:RO_0000086 doc:FactsTemperatureRelatedVariation .
+_:e51aeb0efb2819dac5877bc96b5a321e rdf:reifies <<( doc:FactsLongCable obo:RO_0000086 doc:FactsTemperatureRelatedVariation )>> ;
+	prov:wasDerivedFrom doc:7cc2236ff115 .
+doc:FactsXlpe a None:item_type .
+_:bc7d314a08efc0fb5b09147fcf0bc9b rdf:reifies <<( doc:FactsXlpe rdf:type None:item_type )>> ;
+	prov:wasDerivedFrom doc:7cc2236ff115 .
+_:e0447ebba729420bbaba69cc589d17f5 prov:wasDerivedFrom doc:7cc2236ff115 .
+doc:FactsGuidelinesForMaterialSelection cco:describes doc:FactsHvdcCable .
+_:eba604c61bbde624ce2f0c64191a2704 rdf:reifies <<( doc:FactsGuidelinesForMaterialSelection cco:describes doc:FactsHvdcCable )>> ;
+	prov:wasDerivedFrom doc:7cc2236ff115 .
+doc:FactsCableInsulationLifetime a obo:BFO_0000019 .
+_:aad6c853e8895d3743ca8ced25360370 rdf:reifies <<( doc:FactsCableInsulationLifetime rdf:type obo:BFO_0000019 )>> ;
+	prov:wasDerivedFrom doc:7cc2236ff115 .
+doc:FactsSpaceCharge cco:describes doc:FactsConductivity .
+_:a89323a61aec9f2c5a5f0289c7722bc0 rdf:reifies <<( doc:FactsSpaceCharge cco:describes doc:FactsConductivity )>> ;
+	prov:wasDerivedFrom doc:7cc2236ff115 .
+doc:FactsLongCable obo:RO_0000086 doc:FactsHighPowerRequirement .
+_:b5b2f9bdde13b65343122300c36824e0 rdf:reifies <<( doc:FactsLongCable obo:RO_0000086 doc:FactsHighPowerRequirement )>> ;
+	prov:wasDerivedFrom doc:7cc2236ff115 .
+doc:FactsHighTemperatureAging a obo:BFO_0000019 .
+_:e78b3a30f0c4de644ffada15ff698f14 rdf:reifies <<( doc:FactsHighTemperatureAging rdf:type obo:BFO_0000019 )>> ;
+	prov:wasDerivedFrom doc:7cc2236ff115 .
+doc:FactsIrTesting a None:Fault_detection .
+_:f9047e8d8682774a6ead45bfa93756a6 rdf:reifies <<( doc:FactsIrTesting rdf:type None:Fault_detection )>> ;
+	prov:wasDerivedFrom doc:7cc2236ff115 .
+doc:FactsHomoPolarCharges a obo:BFO_0000019 .
+_:c7d0a75f9f6449f57e2f6c288ee9e3cb rdf:reifies <<( doc:FactsHomoPolarCharges rdf:type obo:BFO_0000019 )>> ;
+	prov:wasDerivedFrom doc:7cc2236ff115 .
+doc:FactsFdr doc:factsreduces doc:FactsCableJoint .
+_:d7ba786fb0415f857b0c73aad117e9e4 rdf:reifies <<( doc:FactsFdr doc:factsreduces doc:FactsCableJoint )>> ;
+	prov:wasDerivedFrom doc:7cc2236ff115 .
+doc:FactsGuidelinesForMaterialSelection doc:factsreduces doc:FactsSpaceChargeSuppression .
+_:ac913187749b4140aa963309ad3c4779 rdf:reifies <<( doc:FactsGuidelinesForMaterialSelection doc:factsreduces doc:FactsSpaceChargeSuppression )>> ;
+	prov:wasDerivedFrom doc:7cc2236ff115 .
+doc:FactsDegradation a obo:BFO_0000019 .
+_:fdf69c2dacb97f3ef2b016a87746c369 rdf:reifies <<( doc:FactsDegradation rdf:type obo:BFO_0000019 )>> ;
+	prov:wasDerivedFrom doc:7cc2236ff115 .
+doc:FactsHighTemperatureAging doc:factsreduces doc:FactsElectrodeInjection .
+_:f100c7e3f8b5316e3c79962984ab4aec rdf:reifies <<( doc:FactsHighTemperatureAging doc:factsreduces doc:FactsElectrodeInjection )>> ;
+	prov:wasDerivedFrom doc:7cc2236ff115 .
+doc:FactsHomoPolarCharges doc:factsreduces doc:FactsAgingByProducts .
+_:b389d85e4fcd2ce85c6239c0a5a86050 rdf:reifies <<( doc:FactsHomoPolarCharges doc:factsreduces doc:FactsAgingByProducts )>> ;
+	prov:wasDerivedFrom doc:7cc2236ff115 .
+doc:FactsDegradation cco:describes doc:FactsXlpe .
+_:df2f06215aca5a7d32eb337abef19b77 rdf:reifies <<( doc:FactsDegradation cco:describes doc:FactsXlpe )>> ;
+	prov:wasDerivedFrom doc:7cc2236ff115 .
+doc:FactsDegradation doc:factsreduces doc:FactsDegradation .
+_:d931df958e02912c1ba3a3ede6906156 rdf:reifies <<( doc:FactsDegradation doc:factsreduces doc:FactsDegradation )>> ;
+	prov:wasDerivedFrom doc:7cc2236ff115 .
+doc:FactsChainScission a obo:BFO_0000019 .
+_:ea88482fc6d4e99d5593ae064aafdd51 rdf:reifies <<( doc:FactsChainScission rdf:type obo:BFO_0000019 )>> ;
+	prov:wasDerivedFrom doc:7cc2236ff115 .
+doc:FactsHomoPolarCharges doc:factsreduces doc:FactsElectrodeInjection .
+_:ebce13fb631367faab50c63ba1cb867d rdf:reifies <<( doc:FactsHomoPolarCharges doc:factsreduces doc:FactsElectrodeInjection )>> ;
+	prov:wasDerivedFrom doc:7cc2236ff115 .
+doc:FactsDielectricLoss a None:Performance_indicator .
+_:cfb7a8cfbc90b259f55200449045b911 rdf:reifies <<( doc:FactsDielectricLoss rdf:type None:Performance_indicator )>> ;
+	prov:wasDerivedFrom doc:7cc2236ff115 .
+doc:FactsFdrAccuracyIssue a obo:BFO_0000019 .
+_:b8d4f1bb6003e8435dbf34a84fc3c485 rdf:reifies <<( doc:FactsFdrAccuracyIssue rdf:type obo:BFO_0000019 )>> ;
+	prov:wasDerivedFrom doc:7cc2236ff115 .
+doc:FactsInversePowerLaw a cco:DescriptiveInformationContentEntity .
+_:fb083f5d2690729c6cbc84bbd13a20f4 rdf:reifies <<( doc:FactsInversePowerLaw rdf:type cco:DescriptiveInformationContentEntity )>> ;
+	prov:wasDerivedFrom doc:7cc2236ff115 .
+doc:FactsTemperatureRelatedVariation a obo:BFO_0000019 .
+_:a9cff9364d4ec45f4ea5433ae17caf93 rdf:reifies <<( doc:FactsTemperatureRelatedVariation rdf:type obo:BFO_0000019 )>> ;
+	prov:wasDerivedFrom doc:7cc2236ff115 .
+doc:FactsXlpe cco:describes doc:FactsLongCable .
+_:cc6ccafe355c9449ad044f32bf6c890f rdf:reifies <<( doc:FactsXlpe cco:describes doc:FactsLongCable )>> ;
+	prov:wasDerivedFrom doc:7cc2236ff115 .
+doc:FactsFdr a None:Fault_detection .
+_:e167bd138892e3e820ca5af092b3a2ab rdf:reifies <<( doc:FactsFdr rdf:type None:Fault_detection )>> ;
+	prov:wasDerivedFrom doc:7cc2236ff115 .
+doc:FactsPartialDischargeActivity a obo:BFO_0000019 .
+_:f6601e760b880ea647d10afc6d3cc956 rdf:reifies <<( doc:FactsPartialDischargeActivity rdf:type obo:BFO_0000019 )>> ;
+	prov:wasDerivedFrom doc:7cc2236ff115 .
+doc:FactsAgingByProducts a obo:BFO_0000019 .
+_:bf7dcc931fd6288d928f9a951e5e6f5c rdf:reifies <<( doc:FactsAgingByProducts rdf:type obo:BFO_0000019 )>> ;
+	prov:wasDerivedFrom doc:7cc2236ff115 .
+doc:FactsConductivity a obo:BFO_0000019 .
+_:b330841c38ef522b7a3658f6ac3a2e9e rdf:reifies <<( doc:FactsConductivity rdf:type obo:BFO_0000019 )>> ;
+	prov:wasDerivedFrom doc:7cc2236ff115 .
+doc:FactsImpuritiesIonizedUnderField a obo:BFO_0000019 .
+_:ce2a1c9964f2907f4fbf6ae9ae87f5c rdf:reifies <<( doc:FactsImpuritiesIonizedUnderField rdf:type obo:BFO_0000019 )>> ;
+	prov:wasDerivedFrom doc:7cc2236ff115 .
+doc:FactsHvdcCable a None:item_type .
+_:adcda0a811a8b939effc22e00886d6eb rdf:reifies <<( doc:FactsHvdcCable rdf:type None:item_type )>> ;
+	prov:wasDerivedFrom doc:7cc2236ff115 .
+doc:FactsSpaceCharge a None:Data_variable .
+_:c9ddafcb9456e6f63fa687f5c80ede64 rdf:reifies <<( doc:FactsSpaceCharge rdf:type None:Data_variable )>> ;
+	prov:wasDerivedFrom doc:7cc2236ff115 .
+doc:FactsArticle1_11 schema1:about doc:FactsSpaceCharge .
+_:ff85e8e34109be87020e2cfe98b61083 rdf:reifies <<( doc:FactsArticle1_11 schema1:about doc:FactsSpaceCharge )>> ;
+	prov:wasDerivedFrom doc:7cc2236ff115 .
+doc:FactsCrossLinking doc:factsreduces doc:FactsDegradation .
+_:bc42599c5cdf97e3b500abba12f36965 rdf:reifies <<( doc:FactsCrossLinking doc:factsreduces doc:FactsDegradation )>> ;
+	prov:wasDerivedFrom doc:7cc2236ff115 .
+doc:FactsGuidelinesForMaterialSelection a cco:DescriptiveInformationContentEntity .
+_:b3e7a9a0a60286a06ce93fb39990e4a2 rdf:reifies <<( doc:FactsGuidelinesForMaterialSelection rdf:type cco:DescriptiveInformationContentEntity )>> ;
+	prov:wasDerivedFrom doc:7cc2236ff115 .
+doc:FactsSpaceCharge cco:is_about doc:FactsInversePowerLaw .
+_:e1e22fc5b6acc89faa8c46a08d9fcba3 rdf:reifies <<( doc:FactsSpaceCharge cco:is_about doc:FactsInversePowerLaw )>> ;
+	prov:wasDerivedFrom doc:7cc2236ff115 .
+doc:FactsLongCable a None:Maintainable_item .
+_:b78dcebf63ecdb5116af648836467910 rdf:reifies <<( doc:FactsLongCable rdf:type None:Maintainable_item )>> ;
+	prov:wasDerivedFrom doc:7cc2236ff115 .
+doc:FactsInversePowerLaw cco:describes doc:FactsCableInsulationLifetime .
+_:c169830a395ebe8f68283f88d174df99 rdf:reifies <<( doc:FactsInversePowerLaw cco:describes doc:FactsCableInsulationLifetime )>> ;
+	prov:wasDerivedFrom doc:7cc2236ff115 .
+doc:FactsCrossLinking a obo:BFO_0000019 .
+_:a4684020cae574c303c81d3b5cfa6c97 rdf:reifies <<( doc:FactsCrossLinking rdf:type obo:BFO_0000019 )>> ;
+	prov:wasDerivedFrom doc:7cc2236ff115 .
+doc:FactsSpaceChargeSuppression a obo:BFO_0000019 .
+_:c916a67514ef98125bdec1a23242f10d rdf:reifies <<( doc:FactsSpaceChargeSuppression rdf:type obo:BFO_0000019 )>> ;
+	prov:wasDerivedFrom doc:7cc2236ff115 .
+doc:FactsElectrodeInjection a cco:DescriptiveInformationContentEntity .
+_:d5d1603998b4eedba3487bbf8c46376a rdf:reifies <<( doc:FactsElectrodeInjection rdf:type cco:DescriptiveInformationContentEntity )>> ;
+	prov:wasDerivedFrom doc:7cc2236ff115 .
+doc:FactsIrTesting schema1:instrument doc:FactsHandheldIrTester .
+_:de00900fe533779c3d409a6ab942fe99 rdf:reifies <<( doc:FactsIrTesting schema1:instrument doc:FactsHandheldIrTester )>> ;
+	prov:wasDerivedFrom doc:7cc2236ff115 .
+doc:FactsHandheldIrTester a cco:Artifact .
+_:c4a855c909f4dd51316c624bb0e87bd1 rdf:reifies <<( doc:FactsHandheldIrTester rdf:type cco:Artifact )>> ;
+	prov:wasDerivedFrom doc:7cc2236ff115 .
+doc:FactsIrTesting None:has_text_value "rough signal of the state of insulation" .
+_:ee9fc7b0addd41584e88ab4c7d5a484f rdf:reifies <<( doc:FactsIrTesting None:has_text_value "rough signal of the state of insulation" )>> ;
+	prov:wasDerivedFrom doc:7cc2236ff115 .
+doc:FactsSpaceCharge cco:describes doc:FactsPartialDischargeActivity .
+_:f005e9419259b759e8df5206ac57f20c rdf:reifies <<( doc:FactsSpaceCharge cco:describes doc:FactsPartialDischargeActivity )>> ;
+	prov:wasDerivedFrom doc:7cc2236ff115 .
+doc:FactsHomoPolarCharges doc:factsreduces doc:FactsImpuritiesIonizedUnderField .
+_:a437d1bc20bdb1a3081498880b1abf3c rdf:reifies <<( doc:FactsHomoPolarCharges doc:factsreduces doc:FactsImpuritiesIonizedUnderField )>> ;
+	prov:wasDerivedFrom doc:7cc2236ff115 .
+doc:FactsHighPowerRequirement a obo:BFO_0000019 .
+_:d6130a25b4039b8bae889be4b00a4eb2 rdf:reifies <<( doc:FactsHighPowerRequirement rdf:type obo:BFO_0000019 )>> ;
+	prov:wasDerivedFrom doc:7cc2236ff115 .
+doc:d064167a1d30 a prov:Entity , schema:text ;
+	prov:generatedAtTime "2026-06-12T05:01:41.066021Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+	schema:position 2 ;
+	schema:identifier "d064167a1d30" .
+doc:FactsThermalProperty rdfs:label "thermal property (used to evaluate insulation degradation)"@en .
+_:a60fc74feecead766697a34a75ba335a rdf:reifies <<( doc:FactsThermalProperty rdfs:label "thermal property (used to evaluate insulation degradation)"@en )>> ;
+	prov:wasDerivedFrom doc:d064167a1d30 .
+doc:Factsthermo_ageing_experiment_1 schema1:about doc:FactsXlpeWithWaterBarrier .
+_:a85b1ee0f708fae77448aebc06100bde rdf:reifies <<( doc:Factsthermo_ageing_experiment_1 schema1:about doc:FactsXlpeWithWaterBarrier )>> ;
+	prov:wasDerivedFrom doc:d064167a1d30 .
+doc:FactsConductionCurrent a None:Data_variable .
+_:a4b00877eb3ad2c017a1604e4d329c98 rdf:reifies <<( doc:FactsConductionCurrent rdf:type None:Data_variable )>> ;
+	prov:wasDerivedFrom doc:d064167a1d30 .
+doc:FactsCrosslinkDensityIncrease a obo:BFO_0000019 .
+_:d5e5f01572b51707dd2887a489fdc131 rdf:reifies <<( doc:FactsCrosslinkDensityIncrease rdf:type obo:BFO_0000019 )>> ;
+	prov:wasDerivedFrom doc:d064167a1d30 .
+doc:FactsWaterTreeing None:has_text_value "phenomenon known to start under high moisture conditions" .
+_:be56d8ac8e74410beee76e6d97535261 rdf:reifies <<( doc:FactsWaterTreeing None:has_text_value "phenomenon known to start under high moisture conditions" )>> ;
+	prov:wasDerivedFrom doc:d064167a1d30 .
+doc:FactsAcceleratedAgeingTest rdfs:label "accelerated ageing test on insulation"@en .
+_:e4146e9cee1f269139b0fe6574194c5d rdf:reifies <<( doc:FactsAcceleratedAgeingTest rdfs:label "accelerated ageing test on insulation"@en )>> ;
+	prov:wasDerivedFrom doc:d064167a1d30 .
+doc:FactsXlpeInsulation obo:RO_0000086 doc:FactsWaterTreeing .
+_:a19e42e391d3dfbc18d56f606cd3e56a rdf:reifies <<( doc:FactsXlpeInsulation obo:RO_0000086 doc:FactsWaterTreeing )>> ;
+	prov:wasDerivedFrom doc:d064167a1d30 .
+doc:FactsRemainingServiceLifeEstimate a None:Remaining_useful_life_estimation .
+_:b03dd315980ab31f6bba0ffa9b5a68ec rdf:reifies <<( doc:FactsRemainingServiceLifeEstimate rdf:type None:Remaining_useful_life_estimation )>> ;
+	prov:wasDerivedFrom doc:d064167a1d30 .
+doc:FactsHealthIndexModel schema1:potentialAction doc:FactsReplaceAction .
+_:c968c77f1fd6d39f31f5dd2fe706745b rdf:reifies <<( doc:FactsHealthIndexModel schema1:potentialAction doc:FactsReplaceAction )>> ;
+	prov:wasDerivedFrom doc:d064167a1d30 .
+doc:Factsthermo_ageing_experiment_1 a schema1:Event .
+_:ad123a94e5bb4206950b2e50bf1f47e6 rdf:reifies <<( doc:Factsthermo_ageing_experiment_1 rdf:type schema1:Event )>> ;
+	prov:wasDerivedFrom doc:d064167a1d30 .
+doc:FactsRealPermittivity rdfs:label "imaginary component of complex permittivity"@en .
+_:f04320f5eca201168acdb2c7d5efdb28 rdf:reifies <<( doc:FactsRealPermittivity rdfs:label "imaginary component of complex permittivity"@en )>> ;
+	prov:wasDerivedFrom doc:d064167a1d30 .
+doc:FactsReplaceAction a schema1:Action .
+_:b46c82d5aff8beed74a9f9c7c6c2268c rdf:reifies <<( doc:FactsReplaceAction rdf:type schema1:Action )>> ;
+	prov:wasDerivedFrom doc:d064167a1d30 .
+doc:Factswet_ageing_experiment_1 schema1:about doc:FactsXlpeInsulation .
+_:ed2103f95ae294834cbcb7236b94c45d rdf:reifies <<( doc:Factswet_ageing_experiment_1 schema1:about doc:FactsXlpeInsulation )>> ;
+	prov:wasDerivedFrom doc:d064167a1d30 .
+doc:Factsincreased_crystallinity_1 rdfs:label "increased crystallinity after extensive heat treatment"@en .
+_:e26641e91a242f6d0115f50eda900032 rdf:reifies <<( doc:Factsincreased_crystallinity_1 rdfs:label "increased crystallinity after extensive heat treatment"@en )>> ;
+	prov:wasDerivedFrom doc:d064167a1d30 .
+doc:FactsHealthIndexFinalScore rdfs:label "health index final numeric score"@en .
+_:dcb66b60fcd8dd115ff85973e5878f05 rdf:reifies <<( doc:FactsHealthIndexFinalScore rdfs:label "health index final numeric score"@en )>> ;
+	prov:wasDerivedFrom doc:d064167a1d30 .
+doc:FactsMechanicalProperty rdfs:label "electrical property (used to evaluate insulation degradation)"@en .
+_:ba89f4fe74d0ab4276d0d69fc08d9f2d rdf:reifies <<( doc:FactsMechanicalProperty rdfs:label "electrical property (used to evaluate insulation degradation)"@en )>> ;
+	prov:wasDerivedFrom doc:d064167a1d30 .
+doc:Factswet_ageing_experiment_1 rdfs:label "Wet ageing experiment (high moisture)"@en .
+_:edc548fcf363901e168776396b3f23c8 rdf:reifies <<( doc:Factswet_ageing_experiment_1 rdfs:label "Wet ageing experiment (high moisture)"@en )>> ;
+	prov:wasDerivedFrom doc:d064167a1d30 .
+doc:FactsRefurbishAction rdfs:label "perform refurbishment"@en .
+_:a81485785e0b5de4e0df9d0abfd2b4dc rdf:reifies <<( doc:FactsRefurbishAction rdfs:label "perform refurbishment"@en )>> ;
+	prov:wasDerivedFrom doc:d064167a1d30 .
+doc:Factsincreased_crystallinity_1 a obo:BFO_0000019 .
+_:a2b5ea050daef63b49b6b5288301a824 rdf:reifies <<( doc:Factsincreased_crystallinity_1 rdf:type obo:BFO_0000019 )>> ;
+	prov:wasDerivedFrom doc:d064167a1d30 .
+doc:FactsHealthIndexModel a None:Performance_indicator .
+_:a1e02f90576cb3febf1c267d347de3dd rdf:reifies <<( doc:FactsHealthIndexModel rdf:type None:Performance_indicator )>> ;
+	prov:wasDerivedFrom doc:d064167a1d30 .
+doc:FactsHealthIndexModel cco:describes doc:FactsXlpeInsulation .
+_:c5f4ddc63e022886cc74c4e295f412b5 rdf:reifies <<( doc:FactsHealthIndexModel cco:describes doc:FactsXlpeInsulation )>> ;
+	prov:wasDerivedFrom doc:d064167a1d30 .
+doc:FactsHealthIndexFinalScore a None:Performance_value .
+_:a28726d6a66f10edd3ae6057081440cb rdf:reifies <<( doc:FactsHealthIndexFinalScore rdf:type None:Performance_value )>> ;
+	prov:wasDerivedFrom doc:d064167a1d30 .
+doc:FactsMechanicalProperty a obo:BFO_0000019 .
+_:d167f8e88b7458dc24933ea35e79835a rdf:reifies <<( doc:FactsMechanicalProperty rdf:type obo:BFO_0000019 )>> ;
+	prov:wasDerivedFrom doc:d064167a1d30 .
+doc:FactsHealthIndexModel schema1:potentialAction doc:FactsMaintainAction .
+_:cca0fb5c6437fd826d80f0e50824d76 rdf:reifies <<( doc:FactsHealthIndexModel schema1:potentialAction doc:FactsMaintainAction )>> ;
+	prov:wasDerivedFrom doc:d064167a1d30 .
+doc:FactsConductionCurrent rdfs:label "conduction current"@en .
+_:f4b66dade73928427721ecf29143d9fc rdf:reifies <<( doc:FactsConductionCurrent rdfs:label "conduction current"@en )>> ;
+	prov:wasDerivedFrom doc:d064167a1d30 .
+doc:FactsXlpeInsulation obo:RO_0000086 doc:FactsCrosslinkDensityIncrease .
+_:bf707d5203e383c533d637359d7b99a rdf:reifies <<( doc:FactsXlpeInsulation obo:RO_0000086 doc:FactsCrosslinkDensityIncrease )>> ;
+	prov:wasDerivedFrom doc:d064167a1d30 .
+doc:FactsMechanicalProperty None:has_text_value "exposure of insulation to high stress levels over specified periods until allowed degradation level is achieved" .
+_:c3c457ee1179631d888c1b0d01656c73 rdf:reifies <<( doc:FactsMechanicalProperty None:has_text_value "exposure of insulation to high stress levels over specified periods until allowed degradation level is achieved" )>> ;
+	prov:wasDerivedFrom doc:d064167a1d30 .
+doc:FactsRealPermittivity rdfs:label "real component of complex permittivity"@en .
+_:afebb385c10b5530b160eeb31f6122a6 rdf:reifies <<( doc:FactsRealPermittivity rdfs:label "real component of complex permittivity"@en )>> ;
+	prov:wasDerivedFrom doc:d064167a1d30 .
+doc:Factswet_ageing_experiment_1 a schema1:Event .
+_:c829048fc6b2d07f005eaf5591069dd3 rdf:reifies <<( doc:Factswet_ageing_experiment_1 rdf:type schema1:Event )>> ;
+	prov:wasDerivedFrom doc:d064167a1d30 .
+doc:FactsXlpeInsulation a None:Maintainable_item .
+_:d12aac94294910c3eff97254b48eb924 rdf:reifies <<( doc:FactsXlpeInsulation rdf:type None:Maintainable_item )>> ;
+	prov:wasDerivedFrom doc:d064167a1d30 .
+doc:FactsRealPermittivity a None:Data_variable .
+_:b9ee4a39f26a3aadc7dfa42516833701 rdf:reifies <<( doc:FactsRealPermittivity rdf:type None:Data_variable )>> ;
+	prov:wasDerivedFrom doc:d064167a1d30 .
+doc:FactsConductionCurrent None:has_text_value "decreased during stage 1; rose during stage 2; stabilized during stage 3" .
+_:c5ed3671890824c0fb65026d5179077b rdf:reifies <<( doc:FactsConductionCurrent None:has_text_value "decreased during stage 1; rose during stage 2; stabilized during stage 3" )>> ;
+	prov:wasDerivedFrom doc:d064167a1d30 .
+doc:FactsMechanicalProperty a None:Design_detail .
+_:a8a3fa7b26bdca7450b04861a04ce057 rdf:reifies <<( doc:FactsMechanicalProperty rdf:type None:Design_detail )>> ;
+	prov:wasDerivedFrom doc:d064167a1d30 .
+doc:FactsHealthIndexModel cco:is_about doc:FactsRemainingServiceLifeEstimate .
+_:bc97e808818c34d41c927b6d10c5054 rdf:reifies <<( doc:FactsHealthIndexModel cco:is_about doc:FactsRemainingServiceLifeEstimate )>> ;
+	prov:wasDerivedFrom doc:d064167a1d30 .
+doc:FactsHealthIndexFinalScore cco:describes doc:FactsXlpeInsulation .
+_:cf54742bae106f0660d0d4bf9097cef5 rdf:reifies <<( doc:FactsHealthIndexFinalScore cco:describes doc:FactsXlpeInsulation )>> ;
+	prov:wasDerivedFrom doc:d064167a1d30 .
+doc:FactsXlpeInsulation rdfs:label "XLPE insulation"@en .
+_:a22254948c1d0c638f0476facb35af04 rdf:reifies <<( doc:FactsXlpeInsulation rdfs:label "XLPE insulation"@en )>> ;
+	prov:wasDerivedFrom doc:d064167a1d30 .
+doc:FactsRealPermittivity None:has_text_value "lowered during stage 1; rose during stage 2; continued to grow in stage 3" .
+_:c3bb78e9931970a54d8d260a3d5f05c7 rdf:reifies <<( doc:FactsRealPermittivity None:has_text_value "lowered during stage 1; rose during stage 2; continued to grow in stage 3" )>> ;
+	prov:wasDerivedFrom doc:d064167a1d30 .
+doc:FactsWaterTreeing a obo:BFO_0000001 .
+_:dfa966627b02a84bbc9109678dfdbe8a rdf:reifies <<( doc:FactsWaterTreeing rdf:type obo:BFO_0000001 )>> ;
+	prov:wasDerivedFrom doc:d064167a1d30 .
+doc:FactsRealPermittivity None:has_text_value "rose during stage 2; continued growth reported in stage 3" .
+_:d436e283cbafcb01b1f4b322132b7e4f rdf:reifies <<( doc:FactsRealPermittivity None:has_text_value "rose during stage 2; continued growth reported in stage 3" )>> ;
+	prov:wasDerivedFrom doc:d064167a1d30 .
+doc:FactsHealthIndexModel None:has_text_value "holistic evaluation integrating operational performance, laboratory diagnostics, and field inspection outcomes" .
+_:e54a5d4f4c81ee7fac003145f5a3cd0e rdf:reifies <<( doc:FactsHealthIndexModel None:has_text_value "holistic evaluation integrating operational performance, laboratory diagnostics, and field inspection outcomes" )>> ;
+	prov:wasDerivedFrom doc:d064167a1d30 .
+doc:FactsMechanicalProperty rdfs:label "mechanical property (used to evaluate insulation degradation)"@en .
+_:f3fb041ec88a848db475230493f33557 rdf:reifies <<( doc:FactsMechanicalProperty rdfs:label "mechanical property (used to evaluate insulation degradation)"@en )>> ;
+	prov:wasDerivedFrom doc:d064167a1d30 .
+doc:FactsHealthIndexModel a cco:DescriptiveInformationContentEntity .
+_:d5e16dbd3cfccdc002ce485ff31e58b1 rdf:reifies <<( doc:FactsHealthIndexModel rdf:type cco:DescriptiveInformationContentEntity )>> ;
+	prov:wasDerivedFrom doc:d064167a1d30 .
+doc:FactsMaintainAction rdfs:label "perform maintenance"@en .
+_:dac0d8ebdd91f5c1493ec4bc7909471e rdf:reifies <<( doc:FactsMaintainAction rdfs:label "perform maintenance"@en )>> ;
+	prov:wasDerivedFrom doc:d064167a1d30 .
+doc:Factsthermo_ageing_experiment_1 rdfs:label "Thermo ageing experiment on XLPE cables"@en .
+_:de20366efc10ffccd65cc3bfe5727df rdf:reifies <<( doc:Factsthermo_ageing_experiment_1 rdfs:label "Thermo ageing experiment on XLPE cables"@en )>> ;
+	prov:wasDerivedFrom doc:d064167a1d30 .
+doc:FactsMechanicalProperty rdfs:label "evaluation of insulation degradation using electrical, thermal and mechanical properties"@en .
+_:c5d52559262f04f8b9a76f0e35cb9c13 rdf:reifies <<( doc:FactsMechanicalProperty rdfs:label "evaluation of insulation degradation using electrical, thermal and mechanical properties"@en )>> ;
+	prov:wasDerivedFrom doc:d064167a1d30 .
+doc:FactsAcceleratedAgeingTest a schema1:Event .
+_:b9d38d6b4d36ebbcf396106238342502 rdf:reifies <<( doc:FactsAcceleratedAgeingTest rdf:type schema1:Event )>> ;
+	prov:wasDerivedFrom doc:d064167a1d30 .
+doc:FactsRemainingServiceLifeEstimate rdfs:label "estimate of remaining service life (RUL)"@en .
+_:e9a5fd021c3d9588af241f6516b73673 rdf:reifies <<( doc:FactsRemainingServiceLifeEstimate rdfs:label "estimate of remaining service life (RUL)"@en )>> ;
+	prov:wasDerivedFrom doc:d064167a1d30 .
+doc:FactsHealthIndexFinalScore None:has_text_value "numeric health score summarizing equipment condition" .
+_:a1e46dfa9f33e529d859dcd88e71377b rdf:reifies <<( doc:FactsHealthIndexFinalScore None:has_text_value "numeric health score summarizing equipment condition" )>> ;
+	prov:wasDerivedFrom doc:d064167a1d30 .
+doc:FactsCrosslinkDensityIncrease rdfs:label "increased crosslink density (stage 1)"@en .
+_:f21c563234e5b33415de3347ff234bec rdf:reifies <<( doc:FactsCrosslinkDensityIncrease rdfs:label "increased crosslink density (stage 1)"@en )>> ;
+	prov:wasDerivedFrom doc:d064167a1d30 .
+doc:FactsXlpeInsulation obo:RO_0000086 doc:FactsMechanicalProperty .
+_:c7065aebf7df67e758625bfd2cee929d rdf:reifies <<( doc:FactsXlpeInsulation obo:RO_0000086 doc:FactsMechanicalProperty )>> ;
+	prov:wasDerivedFrom doc:d064167a1d30 .
+doc:FactsReplaceAction rdfs:label "perform replacement"@en .
+_:d121e67f7f45d030c3b1d92c4135693 rdf:reifies <<( doc:FactsReplaceAction rdfs:label "perform replacement"@en )>> ;
+	prov:wasDerivedFrom doc:d064167a1d30 .
+doc:FactsRemainingServiceLifeEstimate None:has_text_value "approximation of remaining operational life derived from health index" .
+_:c72f42c166cb9305731f389854fc3f03 rdf:reifies <<( doc:FactsRemainingServiceLifeEstimate None:has_text_value "approximation of remaining operational life derived from health index" )>> ;
+	prov:wasDerivedFrom doc:d064167a1d30 .
+doc:FactsXlpeWithWaterBarrier obo:RO_0000086 doc:Factsincreased_crystallinity_1 .
+_:ddc7b109d1d3a11bc0f82fdeb04fc080 rdf:reifies <<( doc:FactsXlpeWithWaterBarrier obo:RO_0000086 doc:Factsincreased_crystallinity_1 )>> ;
+	prov:wasDerivedFrom doc:d064167a1d30 .
+doc:FactsThermalProperty a obo:BFO_0000019 .
+_:ba6c5682b6a4f951710f04b305732261 rdf:reifies <<( doc:FactsThermalProperty rdf:type obo:BFO_0000019 )>> ;
+	prov:wasDerivedFrom doc:d064167a1d30 .
+doc:FactsAcceleratedAgeingTest None:has_text_value "laboratory replication of operational and environmental stresses; may not reproduce long-term synergism of electrical, thermal, mechanical and environmental stresses occurring in field" .
+_:b1b9eb2c63319f0c59d03859c49962bf rdf:reifies <<( doc:FactsAcceleratedAgeingTest None:has_text_value "laboratory replication of operational and environmental stresses; may not reproduce long-term synergism of electrical, thermal, mechanical and environmental stresses occurring in field" )>> ;
+	prov:wasDerivedFrom doc:d064167a1d30 .
+doc:FactsHealthIndexModel rdfs:label "health index model"@en .
+_:dd334602104b1bafd9cbde583d559271 rdf:reifies <<( doc:FactsHealthIndexModel rdfs:label "health index model"@en )>> ;
+	prov:wasDerivedFrom doc:d064167a1d30 .
+doc:FactsMaintainAction a schema1:Action .
+_:e29ddb28fd3fe0e76229b8d25006e260 rdf:reifies <<( doc:FactsMaintainAction rdf:type schema1:Action )>> ;
+	prov:wasDerivedFrom doc:d064167a1d30 .
+doc:FactsHealthIndexModel schema1:potentialAction doc:FactsRefurbishAction .
+_:f6aa0db78c17165bcc82d1675e62c26b rdf:reifies <<( doc:FactsHealthIndexModel schema1:potentialAction doc:FactsRefurbishAction )>> ;
+	prov:wasDerivedFrom doc:d064167a1d30 .
+doc:Factsthermo_ageing_experiment_1 schema1:about doc:FactsXlpeInsulation .
+_:e7ff837884929fcd3cf516a3c9e7f952 rdf:reifies <<( doc:Factsthermo_ageing_experiment_1 schema1:about doc:FactsXlpeInsulation )>> ;
+	prov:wasDerivedFrom doc:d064167a1d30 .
+doc:FactsXlpeWithWaterBarrier rdfs:label "XLPE cable with water barrier"@en .
+_:fe4688f4c496230fc787d41d36165f0f rdf:reifies <<( doc:FactsXlpeWithWaterBarrier rdfs:label "XLPE cable with water barrier"@en )>> ;
+	prov:wasDerivedFrom doc:d064167a1d30 .
+doc:FactsRefurbishAction a schema1:Action .
+_:e47176f3f621e01c2c5d52a38d1b1d75 rdf:reifies <<( doc:FactsRefurbishAction rdf:type schema1:Action )>> ;
+	prov:wasDerivedFrom doc:d064167a1d30 .
+doc:FactsXlpeWithWaterBarrier a None:Maintainable_item .
+_:f1f12740ccd00df8d4899a8f5587fdfb rdf:reifies <<( doc:FactsXlpeWithWaterBarrier rdf:type None:Maintainable_item )>> ;
+	prov:wasDerivedFrom doc:d064167a1d30 .
+doc:FactsAcceleratedAgeingTest schema1:about doc:FactsXlpeInsulation .
+_:caee3ff95e95e9f6bc279aac58be2d5b rdf:reifies <<( doc:FactsAcceleratedAgeingTest schema1:about doc:FactsXlpeInsulation )>> ;
+	prov:wasDerivedFrom doc:d064167a1d30 .
+doc:FactsWaterTreeing rdfs:label "water treeing in XLPE"@en .
+_:e0346038268a5eba5c7d0efde30861d5 rdf:reifies <<( doc:FactsWaterTreeing rdfs:label "water treeing in XLPE"@en )>> ;
+	prov:wasDerivedFrom doc:d064167a1d30 .
+obo:BFO_0000001 owl:sameAs obo:BFO_0000019 , obo:BFO_0000030 .

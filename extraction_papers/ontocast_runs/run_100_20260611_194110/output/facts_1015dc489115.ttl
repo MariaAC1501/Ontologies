@@ -1,0 +1,580 @@
+@prefix None: <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD/seed#> .
+@prefix cco: <http://www.ontologyrepository.com/CommonCoreOntologies/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doc: <https://growgraph.dev/doc/1015dc489115/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix obo: <http://purl.obolibrary.org/obo/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix schema: <https://schema.org/> .
+@prefix schema1: <http://schema.org/> .
+doc:ac68765a4d13 a prov:Entity , schema:text ;
+	prov:generatedAtTime "2026-06-12T02:17:00.481451Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+	schema:position 0 ;
+	schema:identifier "ac68765a4d13" .
+doc:Factsdoc1 dcterms:creator doc:FactsAuthorBFares .
+_:c210c489b42103c83b4bf21b936e3ea5 rdf:reifies <<( doc:Factsdoc1 dcterms:creator doc:FactsAuthorBFares )>> ;
+	prov:wasDerivedFrom doc:ac68765a4d13 .
+doc:Factsdoc1 None:has_identifier doc:Factsarticle1_id .
+_:e7b9201b871c770dc7eca0c73dc9ff64 rdf:reifies <<( doc:Factsdoc1 None:has_identifier doc:Factsarticle1_id )>> ;
+	prov:wasDerivedFrom doc:ac68765a4d13 .
+doc:FactsStudyGoal cco:is_about doc:FactsSeig .
+_:c9e429af1c8b214eb5c902864843feb9 rdf:reifies <<( doc:FactsStudyGoal cco:is_about doc:FactsSeig )>> ;
+	prov:wasDerivedFrom doc:ac68765a4d13 .
+doc:FactsSeig obo:RO_0000086 doc:FactsVoltageUnbalance .
+_:d2be48429f68add84a05d0afffe9c01 rdf:reifies <<( doc:FactsSeig obo:RO_0000086 doc:FactsVoltageUnbalance )>> ;
+	prov:wasDerivedFrom doc:ac68765a4d13 .
+doc:FactsFaults a obo:BFO_0000001 .
+_:e8c5dca800b04e9e0f52f67c5ca5872f rdf:reifies <<( doc:FactsFaults rdf:type obo:BFO_0000001 )>> ;
+	prov:wasDerivedFrom doc:ac68765a4d13 .
+doc:Factsarticle1_id None:has_text_value "References:24; Tables:1; Figures:12" .
+_:ab10b60e5d2b3278368cf69ef6948c41 rdf:reifies <<( doc:Factsarticle1_id None:has_text_value "References:24; Tables:1; Figures:12" )>> ;
+	prov:wasDerivedFrom doc:ac68765a4d13 .
+doc:FactsFindingCapacitorFaultsEffects cco:is_about doc:FactsCapacitor .
+_:cca0ff942c35e4302c0c22c1bf812e31 rdf:reifies <<( doc:FactsFindingCapacitorFaultsEffects cco:is_about doc:FactsCapacitor )>> ;
+	prov:wasDerivedFrom doc:ac68765a4d13 .
+doc:FactsRotorSpeed None:describes_type doc:FactsVoltageUnbalance .
+_:a3c667dcd98aeddfe9531699e860560d rdf:reifies <<( doc:FactsRotorSpeed None:describes_type doc:FactsVoltageUnbalance )>> ;
+	prov:wasDerivedFrom doc:ac68765a4d13 .
+doc:FactsAuthorBFares schema1:name "A. Dilmi" .
+_:d9d94a0167aee5dbfd34dde07abfc1b5 rdf:reifies <<( doc:FactsAuthorBFares schema1:name "A. Dilmi" )>> ;
+	prov:wasDerivedFrom doc:ac68765a4d13 .
+doc:FactsStudyGoal a cco:DescriptiveInformationContentEntity .
+_:d170ba4d791345cba0cc47722df2354d rdf:reifies <<( doc:FactsStudyGoal rdf:type cco:DescriptiveInformationContentEntity )>> ;
+	prov:wasDerivedFrom doc:ac68765a4d13 .
+doc:Factsarticle1_id a None:Article_identifier .
+_:d8451c9d0f57e6dfb8072e2337d3b4ec rdf:reifies <<( doc:Factsarticle1_id rdf:type None:Article_identifier )>> ;
+	prov:wasDerivedFrom doc:ac68765a4d13 .
+doc:FactsStudyGoal cco:describes doc:FactsRotorSpeed .
+_:ff35e9369a98a59d44a64897bc9c8353 rdf:reifies <<( doc:FactsStudyGoal cco:describes doc:FactsRotorSpeed )>> ;
+	prov:wasDerivedFrom doc:ac68765a4d13 .
+doc:FactsCapacitor a obo:BFO_0000019 .
+_:bc435f6cbcddd19e6cfa55b74aa29e3c rdf:reifies <<( doc:FactsCapacitor rdf:type obo:BFO_0000019 )>> ;
+	prov:wasDerivedFrom doc:ac68765a4d13 .
+doc:FactsVoltageUnbalance a obo:BFO_0000019 .
+_:ced7a09f2d9fed9a714b4a6616a33e6c rdf:reifies <<( doc:FactsVoltageUnbalance rdf:type obo:BFO_0000019 )>> ;
+	prov:wasDerivedFrom doc:ac68765a4d13 .
+doc:FactsSeig a None:Maintainable_item .
+_:c264a7345ab44cde94aff6c09b6c04e7 rdf:reifies <<( doc:FactsSeig rdf:type None:Maintainable_item )>> ;
+	prov:wasDerivedFrom doc:ac68765a4d13 .
+doc:FactsExcitationCapacitance a None:Data_variable .
+_:aed0ed01ed4950d981be37c97f18b6d3 rdf:reifies <<( doc:FactsExcitationCapacitance rdf:type None:Data_variable )>> ;
+	prov:wasDerivedFrom doc:ac68765a4d13 .
+doc:FactsFindingCapacitorFaultsEffects cco:describes doc:FactsCurrentDistortion .
+_:e0238b784e1ed4404a32abf3a5044f64 rdf:reifies <<( doc:FactsFindingCapacitorFaultsEffects cco:describes doc:FactsCurrentDistortion )>> ;
+	prov:wasDerivedFrom doc:ac68765a4d13 .
+doc:FactsCapacitor obo:RO_0000086 doc:FactsCapacitor .
+_:f4fbab1834bb37336869a08254d275da rdf:reifies <<( doc:FactsCapacitor obo:RO_0000086 doc:FactsCapacitor )>> ;
+	prov:wasDerivedFrom doc:ac68765a4d13 .
+doc:FactsFindingCapacitorFaultsEffects cco:describes doc:FactsReducedEfficiency .
+_:b277ebbb22598793fde5561f48a0c0ca rdf:reifies <<( doc:FactsFindingCapacitorFaultsEffects cco:describes doc:FactsReducedEfficiency )>> ;
+	prov:wasDerivedFrom doc:ac68765a4d13 .
+doc:FactsRotorSpeed a None:Data_variable .
+_:a625c0ca398c4de514d9d510efa0de6c rdf:reifies <<( doc:FactsRotorSpeed rdf:type None:Data_variable )>> ;
+	prov:wasDerivedFrom doc:ac68765a4d13 .
+doc:FactsStudyGoal cco:describes doc:FactsLoad .
+_:aae85a0247e2b11ae1922bfb077db1e6 rdf:reifies <<( doc:FactsStudyGoal cco:describes doc:FactsLoad )>> ;
+	prov:wasDerivedFrom doc:ac68765a4d13 .
+doc:FactsExcitationCapacitance None:describes_type doc:FactsCurrentDistortion .
+_:bda558fc3eb5883ea97d6b62dcef90c6 rdf:reifies <<( doc:FactsExcitationCapacitance None:describes_type doc:FactsCurrentDistortion )>> ;
+	prov:wasDerivedFrom doc:ac68765a4d13 .
+doc:Factsarticle1_Title_1 None:has_text_value "Analysis of the external network parameters influence on the operating characteristics of self-excited induction generators" .
+_:a83b4180079464e7f7988336706a9dc3 rdf:reifies <<( doc:Factsarticle1_Title_1 None:has_text_value "Analysis of the external network parameters influence on the operating characteristics of self-excited induction generators" )>> ;
+	prov:wasDerivedFrom doc:ac68765a4d13 .
+doc:FactsStudyGoal cco:describes doc:FactsReducedEfficiency .
+_:caf7b3bf9a5af0ec3b7cad50ca520ad6 rdf:reifies <<( doc:FactsStudyGoal cco:describes doc:FactsReducedEfficiency )>> ;
+	prov:wasDerivedFrom doc:ac68765a4d13 .
+doc:FactsRotorSpeed cco:describes doc:FactsSeig .
+_:d7d27bade6642efb0252778b3e8117d7 rdf:reifies <<( doc:FactsRotorSpeed cco:describes doc:FactsSeig )>> ;
+	prov:wasDerivedFrom doc:ac68765a4d13 .
+doc:FactsStudyGoal cco:describes doc:FactsSimulationResults .
+_:a1a1981f980158dc7a78bf9e37d6595b rdf:reifies <<( doc:FactsStudyGoal cco:describes doc:FactsSimulationResults )>> ;
+	prov:wasDerivedFrom doc:ac68765a4d13 .
+doc:FactsAuthorBFares a schema1:Person .
+_:ecef4ea400b08bfd89320ccbfcdf3149 rdf:reifies <<( doc:FactsAuthorBFares rdf:type schema1:Person )>> ;
+	prov:wasDerivedFrom doc:ac68765a4d13 .
+doc:FactsFemWithAnsys a cco:InformationProcessingArtifact .
+_:b30346a8f621015f3b0f2d80ce189eb5 rdf:reifies <<( doc:FactsFemWithAnsys rdf:type cco:InformationProcessingArtifact )>> ;
+	prov:wasDerivedFrom doc:ac68765a4d13 .
+doc:FactsAuthorBFares schema1:name "N. Yassa" .
+_:a414492d18775f228684e24273e24de2 rdf:reifies <<( doc:FactsAuthorBFares schema1:name "N. Yassa" )>> ;
+	prov:wasDerivedFrom doc:ac68765a4d13 .
+doc:FactsFindingCapacitorFaultsEffects cco:is_about doc:FactsFaults .
+_:e69dc9391db6fe8556574b3e1a6f75e3 rdf:reifies <<( doc:FactsFindingCapacitorFaultsEffects cco:is_about doc:FactsFaults )>> ;
+	prov:wasDerivedFrom doc:ac68765a4d13 .
+doc:FactsStudyGoal cco:is_about doc:FactsCapacitor .
+_:f633eeb9af2ef8d534b3c08360022e2b rdf:reifies <<( doc:FactsStudyGoal cco:is_about doc:FactsCapacitor )>> ;
+	prov:wasDerivedFrom doc:ac68765a4d13 .
+doc:FactsSeig obo:BFO_0000051 doc:FactsCapacitor .
+_:c265d1973355a42cda06a399ab71b9ba rdf:reifies <<( doc:FactsSeig obo:BFO_0000051 doc:FactsCapacitor )>> ;
+	prov:wasDerivedFrom doc:ac68765a4d13 .
+doc:FactsLoad a None:Data_variable .
+_:ef135ac702066da692d9a4e9d5f04530 rdf:reifies <<( doc:FactsLoad rdf:type None:Data_variable )>> ;
+	prov:wasDerivedFrom doc:ac68765a4d13 .
+doc:FactsLoad None:describes_type doc:FactsCurrentDistortion .
+_:f1b04cd97c886e435d80d5e4fc6667f6 rdf:reifies <<( doc:FactsLoad None:describes_type doc:FactsCurrentDistortion )>> ;
+	prov:wasDerivedFrom doc:ac68765a4d13 .
+doc:FactsAuthorBFares schema1:name "A. Bouzida" .
+_:d67b8c08c05e3438ab972dfe693db659 rdf:reifies <<( doc:FactsAuthorBFares schema1:name "A. Bouzida" )>> ;
+	prov:wasDerivedFrom doc:ac68765a4d13 .
+doc:FactsFindingCapacitorFaultsEffects a cco:DescriptiveInformationContentEntity .
+_:a4455afe2fb3c16daaaeab12f83db42c rdf:reifies <<( doc:FactsFindingCapacitorFaultsEffects rdf:type cco:DescriptiveInformationContentEntity )>> ;
+	prov:wasDerivedFrom doc:ac68765a4d13 .
+doc:FactsLoad cco:describes doc:FactsSeig .
+_:cc52c0087553b3d7eba70cc76b823c8 rdf:reifies <<( doc:FactsLoad cco:describes doc:FactsSeig )>> ;
+	prov:wasDerivedFrom doc:ac68765a4d13 .
+doc:FactsSimulationResults cco:is_about doc:FactsFemWithAnsys .
+_:f15e8e018aa311edad634bd165de859 rdf:reifies <<( doc:FactsSimulationResults cco:is_about doc:FactsFemWithAnsys )>> ;
+	prov:wasDerivedFrom doc:ac68765a4d13 .
+doc:FactsSimulationResults cco:describes doc:FactsCurrentDistortion .
+_:ae400dbde75fac0fd683fa9eff4eae7e rdf:reifies <<( doc:FactsSimulationResults cco:describes doc:FactsCurrentDistortion )>> ;
+	prov:wasDerivedFrom doc:ac68765a4d13 .
+doc:FactsFindingCapacitorFaultsEffects cco:describes doc:FactsVoltageUnbalance .
+_:c6e12ecbd6c279b4feb0f33a624739fd rdf:reifies <<( doc:FactsFindingCapacitorFaultsEffects cco:describes doc:FactsVoltageUnbalance )>> ;
+	prov:wasDerivedFrom doc:ac68765a4d13 .
+doc:FactsStudyGoal cco:is_about doc:FactsFemWithAnsys .
+_:db0481624da59f3f0b8e795b950b44de rdf:reifies <<( doc:FactsStudyGoal cco:is_about doc:FactsFemWithAnsys )>> ;
+	prov:wasDerivedFrom doc:ac68765a4d13 .
+doc:FactsSimulationResults cco:describes doc:FactsReducedEfficiency .
+_:a09ac1b61104e56974d7d0bdabcd38c3 rdf:reifies <<( doc:FactsSimulationResults cco:describes doc:FactsReducedEfficiency )>> ;
+	prov:wasDerivedFrom doc:ac68765a4d13 .
+doc:FactsExcitationCapacitance None:describes_type doc:FactsVoltageUnbalance .
+_:e841774fe6b44b1dffb3923bc71f3d84 rdf:reifies <<( doc:FactsExcitationCapacitance None:describes_type doc:FactsVoltageUnbalance )>> ;
+	prov:wasDerivedFrom doc:ac68765a4d13 .
+doc:FactsCapacitor a obo:BFO_0000030 .
+_:d8952b1047e5e5af6a06e2d10bda0c58 rdf:reifies <<( doc:FactsCapacitor rdf:type obo:BFO_0000030 )>> ;
+	prov:wasDerivedFrom doc:ac68765a4d13 .
+doc:Factsdoc1 obo:RO_0010002 doc:FactsSimulationResults .
+_:a0db07f9a4e0da80b598bba3b358eff9 rdf:reifies <<( doc:Factsdoc1 obo:RO_0010002 doc:FactsSimulationResults )>> ;
+	prov:wasDerivedFrom doc:ac68765a4d13 .
+doc:FactsSeig obo:RO_0000086 doc:FactsCurrentDistortion .
+_:d27bc09c56123ccaa850d57603a4cd90 rdf:reifies <<( doc:FactsSeig obo:RO_0000086 doc:FactsCurrentDistortion )>> ;
+	prov:wasDerivedFrom doc:ac68765a4d13 .
+doc:Factsarticle1_Title_1 a None:Article_title .
+_:b45e77f98c6c9d43edd79dfccdfa7df9 rdf:reifies <<( doc:Factsarticle1_Title_1 rdf:type None:Article_title )>> ;
+	prov:wasDerivedFrom doc:ac68765a4d13 .
+doc:FactsAuthorBFares schema1:name "B. Fares" .
+_:a8f7d9724a968f5c36e50c4158d9fd5c rdf:reifies <<( doc:FactsAuthorBFares schema1:name "B. Fares" )>> ;
+	prov:wasDerivedFrom doc:ac68765a4d13 .
+doc:FactsSimulationResults cco:is_about doc:FactsSeig .
+_:c773582532ed23d8ebc242870818261a rdf:reifies <<( doc:FactsSimulationResults cco:is_about doc:FactsSeig )>> ;
+	prov:wasDerivedFrom doc:ac68765a4d13 .
+doc:FactsSeig obo:RO_0000086 doc:FactsReducedEfficiency .
+_:fe2c85934b8d07c5e35f29ab4da39fe rdf:reifies <<( doc:FactsSeig obo:RO_0000086 doc:FactsReducedEfficiency )>> ;
+	prov:wasDerivedFrom doc:ac68765a4d13 .
+doc:FactsRotorSpeed None:describes_type doc:FactsCurrentDistortion .
+_:c5d5d188b4555088538fa80521531d96 rdf:reifies <<( doc:FactsRotorSpeed None:describes_type doc:FactsCurrentDistortion )>> ;
+	prov:wasDerivedFrom doc:ac68765a4d13 .
+doc:Factsdoc1 a None:Predictive_Maintenance_Article .
+_:eaa675cd6c73f380ee0cc25b43a08ab rdf:reifies <<( doc:Factsdoc1 rdf:type None:Predictive_Maintenance_Article )>> ;
+	prov:wasDerivedFrom doc:ac68765a4d13 .
+doc:FactsLoad None:describes_type doc:FactsVoltageUnbalance .
+_:f9f177468a6a1825fad930e2aa8f3e85 rdf:reifies <<( doc:FactsLoad None:describes_type doc:FactsVoltageUnbalance )>> ;
+	prov:wasDerivedFrom doc:ac68765a4d13 .
+doc:FactsStudyGoal cco:describes doc:FactsExcitationCapacitance .
+_:f010d8583e5511d96b86dbf910f0d093 rdf:reifies <<( doc:FactsStudyGoal cco:describes doc:FactsExcitationCapacitance )>> ;
+	prov:wasDerivedFrom doc:ac68765a4d13 .
+doc:FactsSimulationResults a cco:DescriptiveInformationContentEntity .
+_:c7a6271b85289aadbd0e979347144787 rdf:reifies <<( doc:FactsSimulationResults rdf:type cco:DescriptiveInformationContentEntity )>> ;
+	prov:wasDerivedFrom doc:ac68765a4d13 .
+doc:FactsExcitationCapacitance cco:describes doc:FactsSeig .
+_:e0637668d78997f42da891355754985f rdf:reifies <<( doc:FactsExcitationCapacitance cco:describes doc:FactsSeig )>> ;
+	prov:wasDerivedFrom doc:ac68765a4d13 .
+doc:FactsReducedEfficiency a obo:BFO_0000019 .
+_:ee315773f03930a6be32c5aacd23066f rdf:reifies <<( doc:FactsReducedEfficiency rdf:type obo:BFO_0000019 )>> ;
+	prov:wasDerivedFrom doc:ac68765a4d13 .
+doc:FactsCurrentDistortion a obo:BFO_0000019 .
+_:a0543efa77461a37df4ad743f3b38d37 rdf:reifies <<( doc:FactsCurrentDistortion rdf:type obo:BFO_0000019 )>> ;
+	prov:wasDerivedFrom doc:ac68765a4d13 .
+doc:FactsSimulationResults cco:describes doc:FactsVoltageUnbalance .
+_:b405072f9daedee7cef4417e76f664a5 rdf:reifies <<( doc:FactsSimulationResults cco:describes doc:FactsVoltageUnbalance )>> ;
+	prov:wasDerivedFrom doc:ac68765a4d13 .
+doc:Factsdoc1 None:has_title doc:Factsarticle1_Title_1 .
+_:c43b7fc1c9e4c4e251147b3fc0f79711 rdf:reifies <<( doc:Factsdoc1 None:has_title doc:Factsarticle1_Title_1 )>> ;
+	prov:wasDerivedFrom doc:ac68765a4d13 .
+doc:4e96cf1a073a a prov:Entity , schema:text ;
+	prov:generatedAtTime "2026-06-12T02:17:00.485959Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+	schema:position 1 ;
+	schema:identifier "4e96cf1a073a" .
+doc:Factskw5 a cco:DesignativeName .
+_:ee1206f87a5cee05655dd1e0e49dc38a rdf:reifies <<( doc:Factskw5 rdf:type cco:DesignativeName )>> ;
+	prov:wasDerivedFrom doc:4e96cf1a073a .
+doc:FactsVoltageFluctuations a obo:BFO_0000019 .
+_:d36f8c284b7e6e8b11db1ed958eefa86 rdf:reifies <<( doc:FactsVoltageFluctuations rdf:type obo:BFO_0000019 )>> ;
+	prov:wasDerivedFrom doc:4e96cf1a073a .
+doc:Factsrotor a obo:BFO_0000030 .
+_:bc0c67cc7eaeb2349b5571546a2afdf8 rdf:reifies <<( doc:Factsrotor rdf:type obo:BFO_0000030 )>> ;
+	prov:wasDerivedFrom doc:4e96cf1a073a .
+doc:Factskw5 None:has_text_value "ÑÐ¾ÑÐ¾Ñ"@uk .
+_:d48cff46ea4dc1f59ab244df22a6584 rdf:reifies <<( doc:Factskw5 None:has_text_value "ÑÐ¾ÑÐ¾Ñ"@uk )>> ;
+	prov:wasDerivedFrom doc:4e96cf1a073a .
+doc:factsreports a rdf:Property .
+_:ef5ce8a73d932ce0b469491210bcaddb rdf:reifies <<( doc:factsreports rdf:type rdf:Property )>> ;
+	prov:wasDerivedFrom doc:4e96cf1a073a .
+doc:Factskw5 None:has_text_value "ÑÑÐ°Ð±ÑÐ»ÑÐ½ÑÑÑÑ Ð½Ð°Ð¿ÑÑÐ³Ð¸"@uk .
+_:bfd78265d2176d17a45959282618849e rdf:reifies <<( doc:Factskw5 None:has_text_value "ÑÑÐ°Ð±ÑÐ»ÑÐ½ÑÑÑÑ Ð½Ð°Ð¿ÑÑÐ³Ð¸"@uk )>> ;
+	prov:wasDerivedFrom doc:4e96cf1a073a .
+_:eaa675cd6c73f380ee0cc25b43a08ab prov:wasDerivedFrom doc:4e96cf1a073a .
+doc:FactsFaults doc:factsreports doc:FactsTorque .
+_:bf10c6b02d9ad619e9bbe177f8b91fab rdf:reifies <<( doc:FactsFaults doc:factsreports doc:FactsTorque )>> ;
+	prov:wasDerivedFrom doc:4e96cf1a073a .
+doc:FactsFaults doc:factsdegradesPerformance doc:FactsSeig .
+_:d7fbeab0305947c906e08779514013c5 rdf:reifies <<( doc:FactsFaults doc:factsdegradesPerformance doc:FactsSeig )>> ;
+	prov:wasDerivedFrom doc:4e96cf1a073a .
+doc:FactsSeig None:has_design_detail doc:FactsexcitationCapacitance .
+_:f2dcdcc230791c5466d264386e02818e rdf:reifies <<( doc:FactsSeig None:has_design_detail doc:FactsexcitationCapacitance )>> ;
+	prov:wasDerivedFrom doc:4e96cf1a073a .
+doc:FactsDistortedStatorCurrents rdfs:label "distorted stator currents"@en .
+_:c3868d03dbbec4e8263dcfbee161f1bd rdf:reifies <<( doc:FactsDistortedStatorCurrents rdfs:label "distorted stator currents"@en )>> ;
+	prov:wasDerivedFrom doc:4e96cf1a073a .
+doc:FactsFem doc:factsreports doc:FactsSeigModeling .
+_:d9e8b120e1a3909020301d50b915de2 rdf:reifies <<( doc:FactsFem doc:factsreports doc:FactsSeigModeling )>> ;
+	prov:wasDerivedFrom doc:4e96cf1a073a .
+doc:FactsSeigModeling a cco:InformationProcessingArtifact .
+_:c7c6ef3da07105187cc5af2ed6b6d7f4 rdf:reifies <<( doc:FactsSeigModeling rdf:type cco:InformationProcessingArtifact )>> ;
+	prov:wasDerivedFrom doc:4e96cf1a073a .
+doc:FactsCapacitor rdfs:label "excitation capacitor failure"@en .
+_:ab6f7c7be164b57568ea4c8c322f54f4 rdf:reifies <<( doc:FactsCapacitor rdfs:label "excitation capacitor failure"@en )>> ;
+	prov:wasDerivedFrom doc:4e96cf1a073a .
+doc:FactsRotorSpeed rdfs:label "rotor speed"@en .
+_:dd23d68713a4654c3f3086dba1dd4ec6 rdf:reifies <<( doc:FactsRotorSpeed rdfs:label "rotor speed"@en )>> ;
+	prov:wasDerivedFrom doc:4e96cf1a073a .
+doc:FactsFem a cco:Algorithm .
+_:f46fcb7ec07db06de838fe6db68879eb rdf:reifies <<( doc:FactsFem rdf:type cco:Algorithm )>> ;
+	prov:wasDerivedFrom doc:4e96cf1a073a .
+doc:FactsPmSg a obo:BFO_0000030 .
+_:c0845643ce8198f8cdc40cc986f516c3 rdf:reifies <<( doc:FactsPmSg rdf:type obo:BFO_0000030 )>> ;
+	prov:wasDerivedFrom doc:4e96cf1a073a .
+doc:factsdegradesPerformance a rdf:Property .
+_:d2c629f9d9f874e48ec6e0cfc80ab74d rdf:reifies <<( doc:factsdegradesPerformance rdf:type rdf:Property )>> ;
+	prov:wasDerivedFrom doc:4e96cf1a073a .
+doc:Factskw5 None:has_text_value "Ð¿ÑÐ´Ð²Ð¸ÑÐµÐ½Ð½Ñ Ð½Ð°Ð´ÑÐ¹Ð½Ð¾ÑÑÑ"@uk .
+_:dd7766e49a6d1eb849739f1cc7637a5c rdf:reifies <<( doc:Factskw5 None:has_text_value "Ð¿ÑÐ´Ð²Ð¸ÑÐµÐ½Ð½Ñ Ð½Ð°Ð´ÑÐ¹Ð½Ð¾ÑÑÑ"@uk )>> ;
+	prov:wasDerivedFrom doc:4e96cf1a073a .
+doc:FactsLoad rdfs:label "load variation"@en .
+_:fe910252fc4e79b5d056819a13ee529f rdf:reifies <<( doc:FactsLoad rdfs:label "load variation"@en )>> ;
+	prov:wasDerivedFrom doc:4e96cf1a073a .
+doc:FactsPmSg rdfs:label "permanent magnet synchronous generator"@en .
+_:b48c6add3b900b4cbd5d8cbaf2288050 rdf:reifies <<( doc:FactsPmSg rdfs:label "permanent magnet synchronous generator"@en )>> ;
+	prov:wasDerivedFrom doc:4e96cf1a073a .
+_:e8c5dca800b04e9e0f52f67c5ca5872f prov:wasDerivedFrom doc:4e96cf1a073a .
+_:c264a7345ab44cde94aff6c09b6c04e7 prov:wasDerivedFrom doc:4e96cf1a073a .
+doc:FactsexcitationCapacitance rdfs:label "excitation capacitance"@en .
+_:ef57ab7e5623b96327f4f18d721cc34a rdf:reifies <<( doc:FactsexcitationCapacitance rdfs:label "excitation capacitance"@en )>> ;
+	prov:wasDerivedFrom doc:4e96cf1a073a .
+_:d170ba4d791345cba0cc47722df2354d prov:wasDerivedFrom doc:4e96cf1a073a .
+doc:Factsdoc1 None:has_title doc:FactsStudyGoal .
+_:aa54ee69cf0dfeddbf539920bd978b59 rdf:reifies <<( doc:Factsdoc1 None:has_title doc:FactsStudyGoal )>> ;
+	prov:wasDerivedFrom doc:4e96cf1a073a .
+doc:FactsSeig rdfs:label "Self-excited induction generator (SEIG)"@en .
+_:d49fb5d0ba52a4be5ff8e256f3702f5b rdf:reifies <<( doc:FactsSeig rdfs:label "Self-excited induction generator (SEIG)"@en )>> ;
+	prov:wasDerivedFrom doc:4e96cf1a073a .
+doc:FactsSeigModeling rdfs:label "SEIG finite-element model (simulation)"@en .
+_:d3c2d8681f28df72da36c3d3914df2dd rdf:reifies <<( doc:FactsSeigModeling rdfs:label "SEIG finite-element model (simulation)"@en )>> ;
+	prov:wasDerivedFrom doc:4e96cf1a073a .
+doc:FactsFaults doc:factsreports doc:FactsVoltageFluctuations .
+_:d4ee4983817745de7eb7d5ec25f4895d rdf:reifies <<( doc:FactsFaults doc:factsreports doc:FactsVoltageFluctuations )>> ;
+	prov:wasDerivedFrom doc:4e96cf1a073a .
+doc:FactsFem rdfs:label "finite element modeling (FEM)"@en .
+_:d94d85de85adc86c2aa26510383b8b92 rdf:reifies <<( doc:FactsFem rdfs:label "finite element modeling (FEM)"@en )>> ;
+	prov:wasDerivedFrom doc:4e96cf1a073a .
+doc:FactsexcitationCapacitance a None:Design_detail .
+_:e5cc6751c4236c5b3ca99f41e99e78 rdf:reifies <<( doc:FactsexcitationCapacitance rdf:type None:Design_detail )>> ;
+	prov:wasDerivedFrom doc:4e96cf1a073a .
+doc:FactsFaults rdfs:label "faults and parameter variations"@en .
+_:d4a2c822b742e7feaf66fdf55d437775 rdf:reifies <<( doc:FactsFaults rdfs:label "faults and parameter variations"@en )>> ;
+	prov:wasDerivedFrom doc:4e96cf1a073a .
+doc:FactsVoltageFluctuations rdfs:label "voltage fluctuations"@en .
+_:d9ad3ae736467f9f53861e1074ad660e rdf:reifies <<( doc:FactsVoltageFluctuations rdfs:label "voltage fluctuations"@en )>> ;
+	prov:wasDerivedFrom doc:4e96cf1a073a .
+doc:FactsCapacitor doc:factsreports doc:FactsDistortedStatorCurrents .
+_:f24715a2ccb5096a30db7028cb96869e rdf:reifies <<( doc:FactsCapacitor doc:factsreports doc:FactsDistortedStatorCurrents )>> ;
+	prov:wasDerivedFrom doc:4e96cf1a073a .
+doc:FactsExpComparison a cco:InformationBearingArtifact .
+_:a7974ebdd54fd551c03006ef4660ca24 rdf:reifies <<( doc:FactsExpComparison rdf:type cco:InformationBearingArtifact )>> ;
+	prov:wasDerivedFrom doc:4e96cf1a073a .
+doc:FactsStudyGoal None:has_text_value "Analyze influence of excitation capacitance, rotor speed and load variations on SEIG performance, focusing on capacitor degradation and open-phase faults to provide guidelines for reliable design." .
+_:dc2379b63b44585669b355f925e3a7cc rdf:reifies <<( doc:FactsStudyGoal None:has_text_value "Analyze influence of excitation capacitance, rotor speed and load variations on SEIG performance, focusing on capacitor degradation and open-phase faults to provide guidelines for reliable design." )>> ;
+	prov:wasDerivedFrom doc:4e96cf1a073a .
+doc:FactsExpComparison None:has_text_value "Experimental comparison of a SEIG and a permanent magnet synchronous generator (driven by micro-hydro turbine) under different load scenarios." .
+_:ced874116e4e47a464d022e1a928797 rdf:reifies <<( doc:FactsExpComparison None:has_text_value "Experimental comparison of a SEIG and a permanent magnet synchronous generator (driven by micro-hydro turbine) under different load scenarios." )>> ;
+	prov:wasDerivedFrom doc:4e96cf1a073a .
+_:ef135ac702066da692d9a4e9d5f04530 prov:wasDerivedFrom doc:4e96cf1a073a .
+doc:Factskw5 None:has_text_value "ÑÐ¿Ð¾ÑÐ²Ð¾ÑÐµÐ½Ð½Ñ ÑÑÑÑÐ¼Ñ"@uk .
+_:bd5daf9a757788db0fc820935f102751 rdf:reifies <<( doc:Factskw5 None:has_text_value "ÑÐ¿Ð¾ÑÐ²Ð¾ÑÐµÐ½Ð½Ñ ÑÑÑÑÐ¼Ñ"@uk )>> ;
+	prov:wasDerivedFrom doc:4e96cf1a073a .
+doc:FactsCapacitor a obo:BFO_0000001 .
+_:f3286f5e82232507555b725504edb247 rdf:reifies <<( doc:FactsCapacitor rdf:type obo:BFO_0000001 )>> ;
+	prov:wasDerivedFrom doc:4e96cf1a073a .
+doc:FactsDistortedStatorCurrents a obo:BFO_0000019 .
+_:b3a6314a41443a6370bbb5ca779b0277 rdf:reifies <<( doc:FactsDistortedStatorCurrents rdf:type obo:BFO_0000019 )>> ;
+	prov:wasDerivedFrom doc:4e96cf1a073a .
+doc:FactsSeig obo:BFO_0000051 doc:Factsrotor .
+_:b4b628cd11bf5a02f00b10847684f5a rdf:reifies <<( doc:FactsSeig obo:BFO_0000051 doc:Factsrotor )>> ;
+	prov:wasDerivedFrom doc:4e96cf1a073a .
+doc:FactsExpComparison rdfs:label "experimental comparison (SEIG vs PMS generator)"@en .
+_:ad1e21f5d23d271d287da2cccd763a7c rdf:reifies <<( doc:FactsExpComparison rdfs:label "experimental comparison (SEIG vs PMS generator)"@en )>> ;
+	prov:wasDerivedFrom doc:4e96cf1a073a .
+doc:FactsTorque a obo:BFO_0000019 .
+_:c81d4a2eed2e229306e75363ce4dc0ff rdf:reifies <<( doc:FactsTorque rdf:type obo:BFO_0000019 )>> ;
+	prov:wasDerivedFrom doc:4e96cf1a073a .
+doc:Factsdoc1 doc:factsreports doc:FactsExpComparison .
+_:f5687e23515c8f59137f7b41661ea638 rdf:reifies <<( doc:Factsdoc1 doc:factsreports doc:FactsExpComparison )>> ;
+	prov:wasDerivedFrom doc:4e96cf1a073a .
+doc:Factskw5 None:has_text_value "Ð°ÑÐ¸Ð½ÑÑÐ¾Ð½Ð½Ð¸Ð¹ Ð³ÐµÐ½ÐµÑÐ°ÑÐ¾Ñ Ð· ÑÐ°Ð¼Ð¾Ð·Ð±ÑÐ´Ð¶ÐµÐ½Ð½ÑÐ¼"@uk .
+_:ac5b99adaef19b9b96723ae0b4529f5 rdf:reifies <<( doc:Factskw5 None:has_text_value "Ð°ÑÐ¸Ð½ÑÑÐ¾Ð½Ð½Ð¸Ð¹ Ð³ÐµÐ½ÐµÑÐ°ÑÐ¾Ñ Ð· ÑÐ°Ð¼Ð¾Ð·Ð±ÑÐ´Ð¶ÐµÐ½Ð½ÑÐ¼"@uk )>> ;
+	prov:wasDerivedFrom doc:4e96cf1a073a .
+_:a625c0ca398c4de514d9d510efa0de6c prov:wasDerivedFrom doc:4e96cf1a073a .
+doc:FactsFaults rdfs:label "open-phase fault"@en .
+_:c35dfa59a73d7454136f8e2d2af28c91 rdf:reifies <<( doc:FactsFaults rdfs:label "open-phase fault"@en )>> ;
+	prov:wasDerivedFrom doc:4e96cf1a073a .
+doc:Factsdoc1 None:has_text_value "Study analyzing the influence of excitation capacitance, rotor speed and load variations on SEIG performance; uses finite element modeling (FEM); examines capacitor degradation and open-phase faults; reports experimental comparison with a permanent magnet synchronous generator." .
+_:abf777279a62a3a06b7cc3711639f405 rdf:reifies <<( doc:Factsdoc1 None:has_text_value "Study analyzing the influence of excitation capacitance, rotor speed and load variations on SEIG performance; uses finite element modeling (FEM); examines capacitor degradation and open-phase faults; reports experimental comparison with a permanent magnet synchronous generator." )>> ;
+	prov:wasDerivedFrom doc:4e96cf1a073a .
+doc:FactsTorque rdfs:label "unstable torque"@en .
+_:cdf60d7cbc358939b5eabb5f503f810a rdf:reifies <<( doc:FactsTorque rdfs:label "unstable torque"@en )>> ;
+	prov:wasDerivedFrom doc:4e96cf1a073a .
+doc:Factskw5 None:has_text_value "ÐºÐ¾Ð½Ð´ÐµÐ½ÑÐ°ÑÐ¾Ñ"@uk .
+_:ea764d4d1944f4db797c1015f91bd45d rdf:reifies <<( doc:Factskw5 None:has_text_value "ÐºÐ¾Ð½Ð´ÐµÐ½ÑÐ°ÑÐ¾Ñ"@uk )>> ;
+	prov:wasDerivedFrom doc:4e96cf1a073a .
+doc:7ffc1c2c81f6 a prov:Entity , schema:text ;
+	prov:generatedAtTime "2026-06-12T02:17:00.48996Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+	schema:position 2 ;
+	schema:identifier "7ffc1c2c81f6" .
+doc:Factsdoc1 doc:factsreports doc:FactsDstatcom .
+_:f0200aa8688dda1be9457290028f69ee rdf:reifies <<( doc:Factsdoc1 doc:factsreports doc:FactsDstatcom )>> ;
+	prov:wasDerivedFrom doc:7ffc1c2c81f6 .
+doc:factsreports rdfs:label "analyzed"@en .
+_:f81f223bd47abe2138c35cbf5d8484ca rdf:reifies <<( doc:factsreports rdfs:label "analyzed"@en )>> ;
+	prov:wasDerivedFrom doc:7ffc1c2c81f6 .
+doc:FactsTorqueZero rdfs:label "Torque reduced to zero (reported effect)"@en .
+_:a446ea5bb38faf11c9d1da6f1d0fce0a rdf:reifies <<( doc:FactsTorqueZero rdfs:label "Torque reduced to zero (reported effect)"@en )>> ;
+	prov:wasDerivedFrom doc:7ffc1c2c81f6 .
+_:a625c0ca398c4de514d9d510efa0de6c prov:wasDerivedFrom doc:7ffc1c2c81f6 .
+doc:FactsSmallSignalModel a cco:Algorithm .
+_:a49bbca8d3585c14985d36879a2198bb rdf:reifies <<( doc:FactsSmallSignalModel rdf:type cco:Algorithm )>> ;
+	prov:wasDerivedFrom doc:7ffc1c2c81f6 .
+doc:Factsdoc1 schema1:description "Proposed an improved DSTATCOM control scheme using an enhanced phase-locked loop based on the current synchronous detection method, improving terminal voltage regulation and power quality" .
+_:ed7ebf29a7c330495505f4dd7f86ad70 rdf:reifies <<( doc:Factsdoc1 schema1:description "Proposed an improved DSTATCOM control scheme using an enhanced phase-locked loop based on the current synchronous detection method, improving terminal voltage regulation and power quality" )>> ;
+	prov:wasDerivedFrom doc:7ffc1c2c81f6 .
+doc:FactsPreviousModels a cco:Algorithm .
+_:fd359b20ed428beab68908429d3d153f rdf:reifies <<( doc:FactsPreviousModels rdf:type cco:Algorithm )>> ;
+	prov:wasDerivedFrom doc:7ffc1c2c81f6 .
+doc:FactsHilbertHuangTransform a cco:Algorithm .
+_:ea6165dd2c6628ad18c04f11d2c5669f rdf:reifies <<( doc:FactsHilbertHuangTransform rdf:type cco:Algorithm )>> ;
+	prov:wasDerivedFrom doc:7ffc1c2c81f6 .
+doc:FactsPhaseLockedLoop a cco:Algorithm .
+_:ea8eabebe317dd0eaa3550979afee37d rdf:reifies <<( doc:FactsPhaseLockedLoop rdf:type cco:Algorithm )>> ;
+	prov:wasDerivedFrom doc:7ffc1c2c81f6 .
+doc:FactsDqAxisModel rdfs:label "d-q axis model"@en .
+_:fbd1aa916fdd1c28265b2b4865378c47 rdf:reifies <<( doc:FactsDqAxisModel rdfs:label "d-q axis model"@en )>> ;
+	prov:wasDerivedFrom doc:7ffc1c2c81f6 .
+doc:FactsLoad rdfs:label "Load (electrical)"@en .
+_:fe36f39dccfef53afced2d1ea7cf28e9 rdf:reifies <<( doc:FactsLoad rdfs:label "Load (electrical)"@en )>> ;
+	prov:wasDerivedFrom doc:7ffc1c2c81f6 .
+doc:FactsDqAxisModel a cco:Algorithm .
+_:f4c56193ec00c076829fe8b2ec2b9856 rdf:reifies <<( doc:FactsDqAxisModel rdf:type cco:Algorithm )>> ;
+	prov:wasDerivedFrom doc:7ffc1c2c81f6 .
+_:ef5ce8a73d932ce0b469491210bcaddb prov:wasDerivedFrom doc:7ffc1c2c81f6 .
+doc:Factsdoc1 doc:factsreports doc:FactsHilbertHuangTransform .
+_:efdeaea99ff33b88a7489376591796e9 rdf:reifies <<( doc:Factsdoc1 doc:factsreports doc:FactsHilbertHuangTransform )>> ;
+	prov:wasDerivedFrom doc:7ffc1c2c81f6 .
+doc:FactsCapacitorAging rdfs:label "Capacitor aging"@en .
+_:ec736c1b63313e47ef744b7e615225d4 rdf:reifies <<( doc:FactsCapacitorAging rdfs:label "Capacitor aging"@en )>> ;
+	prov:wasDerivedFrom doc:7ffc1c2c81f6 .
+doc:FactsRotorSpeed rdfs:label "Rotor speed"@en .
+_:c14911aa6788d60cd55cbadf8f2a8a7c rdf:reifies <<( doc:FactsRotorSpeed rdfs:label "Rotor speed"@en )>> ;
+	prov:wasDerivedFrom doc:7ffc1c2c81f6 .
+doc:FactsDstatcom rdfs:label "DSTATCOM"@en .
+_:ad62c41324428ca305f412071071afd6 rdf:reifies <<( doc:FactsDstatcom rdfs:label "DSTATCOM"@en )>> ;
+	prov:wasDerivedFrom doc:7ffc1c2c81f6 .
+doc:FactsSeig schema1:description "Economical and practical option for small-scale independent power generation used for reactive power compensation without relying on power electronic switches" .
+_:ae687e15519591f5af45a21b10a5372e rdf:reifies <<( doc:FactsSeig schema1:description "Economical and practical option for small-scale independent power generation used for reactive power compensation without relying on power electronic switches" )>> ;
+	prov:wasDerivedFrom doc:7ffc1c2c81f6 .
+_:f46fcb7ec07db06de838fe6db68879eb prov:wasDerivedFrom doc:7ffc1c2c81f6 .
+doc:factsreports rdfs:label "focuses on"@en .
+_:d501cfabd705a6ef49692a9e21648d6a rdf:reifies <<( doc:factsreports rdfs:label "focuses on"@en )>> ;
+	prov:wasDerivedFrom doc:7ffc1c2c81f6 .
+_:e8c5dca800b04e9e0f52f67c5ca5872f prov:wasDerivedFrom doc:7ffc1c2c81f6 .
+doc:factsreports rdfs:label "instance"@en .
+_:c680376f45058f9e98e7f8d2c9ab61e4 rdf:reifies <<( doc:factsreports rdfs:label "instance"@en )>> ;
+	prov:wasDerivedFrom doc:7ffc1c2c81f6 .
+_:eaa675cd6c73f380ee0cc25b43a08ab prov:wasDerivedFrom doc:7ffc1c2c81f6 .
+doc:FactsCapacitor rdfs:label "Capacitor"@en .
+_:d7a0b3deec6642cb88768e9ff4ccebc2 rdf:reifies <<( doc:FactsCapacitor rdfs:label "Capacitor"@en )>> ;
+	prov:wasDerivedFrom doc:7ffc1c2c81f6 .
+doc:Factsdoc1 doc:factsreports doc:FactsTorqueZero .
+_:b74bfb6e152febd5eeed4c1736434e25 rdf:reifies <<( doc:Factsdoc1 doc:factsreports doc:FactsTorqueZero )>> ;
+	prov:wasDerivedFrom doc:7ffc1c2c81f6 .
+doc:FactsFaults rdfs:label "Phase-opening fault"@en .
+_:f2041963876d8fbc2f017e470ef70c2b rdf:reifies <<( doc:FactsFaults rdfs:label "Phase-opening fault"@en )>> ;
+	prov:wasDerivedFrom doc:7ffc1c2c81f6 .
+doc:FactsPreviousModels doc:factsreports doc:FactsSmallSignalModel .
+_:bb6c8f278f40b4dc04e041c6d50103fd rdf:reifies <<( doc:FactsPreviousModels doc:factsreports doc:FactsSmallSignalModel )>> ;
+	prov:wasDerivedFrom doc:7ffc1c2c81f6 .
+doc:factsreports rdfs:label "addresses"@en .
+_:b09e31cdaf562988f4f7f1bf215d2589 rdf:reifies <<( doc:factsreports rdfs:label "addresses"@en )>> ;
+	prov:wasDerivedFrom doc:7ffc1c2c81f6 .
+_:d8952b1047e5e5af6a06e2d10bda0c58 prov:wasDerivedFrom doc:7ffc1c2c81f6 .
+_:c264a7345ab44cde94aff6c09b6c04e7 prov:wasDerivedFrom doc:7ffc1c2c81f6 .
+doc:FactsTorqueZero a obo:BFO_0000019 .
+_:a63331c0a876b4bc6bdab3287e9f1fd8 rdf:reifies <<( doc:FactsTorqueZero rdf:type obo:BFO_0000019 )>> ;
+	prov:wasDerivedFrom doc:7ffc1c2c81f6 .
+doc:Factsdoc1 schema1:description "Evaluates effects of capacitor aging, capacitance variation, load changes, rotor speed fluctuations and phase-opening faults on SEIG performance and reliability" .
+_:e17143b8d7085b147609147f01123dc1 rdf:reifies <<( doc:Factsdoc1 schema1:description "Evaluates effects of capacitor aging, capacitance variation, load changes, rotor speed fluctuations and phase-opening faults on SEIG performance and reliability" )>> ;
+	prov:wasDerivedFrom doc:7ffc1c2c81f6 .
+doc:Factsdoc1 rdfs:label "Study [13]"@en .
+_:e2f4e84f22f11d446a532e9628f7e2d3 rdf:reifies <<( doc:Factsdoc1 rdfs:label "Study [13]"@en )>> ;
+	prov:wasDerivedFrom doc:7ffc1c2c81f6 .
+_:c81d4a2eed2e229306e75363ce4dc0ff prov:wasDerivedFrom doc:7ffc1c2c81f6 .
+doc:Factsdoc1 doc:factsincludesVariation doc:FactsRotorSpeed .
+_:c714c7d2955ceb14a9518fcfd7884bc6 rdf:reifies <<( doc:Factsdoc1 doc:factsincludesVariation doc:FactsRotorSpeed )>> ;
+	prov:wasDerivedFrom doc:7ffc1c2c81f6 .
+doc:FactsFailureToCaptureNonlinearBehaviour rdfs:label "Failure to capture nonlinear behaviour under variable operating conditions"@en .
+_:e3a4e039520ea57dba9397b1fe36f6c3 rdf:reifies <<( doc:FactsFailureToCaptureNonlinearBehaviour rdfs:label "Failure to capture nonlinear behaviour under variable operating conditions"@en )>> ;
+	prov:wasDerivedFrom doc:7ffc1c2c81f6 .
+doc:Factsdoc1 doc:factsreports doc:FactsFaults .
+_:c7a089dcb5090a66d08f09ade2180be9 rdf:reifies <<( doc:Factsdoc1 doc:factsreports doc:FactsFaults )>> ;
+	prov:wasDerivedFrom doc:7ffc1c2c81f6 .
+doc:factsreports rdfs:label "proposed method"@en .
+_:e970c0905137cdffb135956eba67d46f rdf:reifies <<( doc:factsreports rdfs:label "proposed method"@en )>> ;
+	prov:wasDerivedFrom doc:7ffc1c2c81f6 .
+doc:Factsdoc1 rdfs:label "Study [12]"@en .
+_:b1ab26f8899e23d849eb20232fa04164 rdf:reifies <<( doc:Factsdoc1 rdfs:label "Study [12]"@en )>> ;
+	prov:wasDerivedFrom doc:7ffc1c2c81f6 .
+doc:FactsCapacitorAging schema1:description "Degradation process of capacitor electrical characteristics over time" .
+_:cec0a066a689e386b026f0391cdef75b rdf:reifies <<( doc:FactsCapacitorAging schema1:description "Degradation process of capacitor electrical characteristics over time" )>> ;
+	prov:wasDerivedFrom doc:7ffc1c2c81f6 .
+doc:FactsPreviousModels doc:factsreports doc:FactsDqAxisModel .
+_:c010b5466b9184ca2e69b4bea70e6a7d rdf:reifies <<( doc:FactsPreviousModels doc:factsreports doc:FactsDqAxisModel )>> ;
+	prov:wasDerivedFrom doc:7ffc1c2c81f6 .
+doc:factsreports rdfs:label "limitation"@en .
+_:cdb86712ae76dda53e3e3beb4955e173 rdf:reifies <<( doc:factsreports rdfs:label "limitation"@en )>> ;
+	prov:wasDerivedFrom doc:7ffc1c2c81f6 .
+doc:FactsPreviousModels rdfs:label "Traditional SEIG modelling approaches"@en .
+_:cc37f204d7a50daa87b37f2921d29b80 rdf:reifies <<( doc:FactsPreviousModels rdfs:label "Traditional SEIG modelling approaches"@en )>> ;
+	prov:wasDerivedFrom doc:7ffc1c2c81f6 .
+doc:Factsdoc1 doc:factsincludesVariation doc:FactsFaults .
+_:e6bfbdeff665b2524678ed15c71a7c3a rdf:reifies <<( doc:Factsdoc1 doc:factsincludesVariation doc:FactsFaults )>> ;
+	prov:wasDerivedFrom doc:7ffc1c2c81f6 .
+doc:Factsdoc1 rdfs:label "This study (article)"@en .
+_:ac510c5dab1dfca79f47046b194d5985 rdf:reifies <<( doc:Factsdoc1 rdfs:label "This study (article)"@en )>> ;
+	prov:wasDerivedFrom doc:7ffc1c2c81f6 .
+doc:FactsFailureToCaptureNonlinearBehaviour a cco:DescriptiveInformationContentEntity .
+_:eef8936855302cb10dfc1fd921d9c822 rdf:reifies <<( doc:FactsFailureToCaptureNonlinearBehaviour rdf:type cco:DescriptiveInformationContentEntity )>> ;
+	prov:wasDerivedFrom doc:7ffc1c2c81f6 .
+doc:FactsDstatcom a obo:BFO_0000030 .
+_:f27099c1f23fdd90c4a2ad1329b46b1c rdf:reifies <<( doc:FactsDstatcom rdf:type obo:BFO_0000030 )>> ;
+	prov:wasDerivedFrom doc:7ffc1c2c81f6 .
+doc:FactsMaxwellEquations a cco:DescriptiveInformationContentEntity .
+_:c29c4d30c37e83b2aab1b447cbe3ec12 rdf:reifies <<( doc:FactsMaxwellEquations rdf:type cco:DescriptiveInformationContentEntity )>> ;
+	prov:wasDerivedFrom doc:7ffc1c2c81f6 .
+doc:FactsDstatcom schema1:description "Distribution Static Synchronous Compensator (power electronic device for reactive power compensation)" .
+_:d80f821fa92385fda996d1a2a5e963d5 rdf:reifies <<( doc:FactsDstatcom schema1:description "Distribution Static Synchronous Compensator (power electronic device for reactive power compensation)" )>> ;
+	prov:wasDerivedFrom doc:7ffc1c2c81f6 .
+doc:factsincludesVariation a rdf:Property .
+_:d02d6f6e6f4048b555de9e17d8ed8d32 rdf:reifies <<( doc:factsincludesVariation rdf:type rdf:Property )>> ;
+	prov:wasDerivedFrom doc:7ffc1c2c81f6 .
+doc:FactsSeig rdfs:label "Self-Excited Induction Generator"@en .
+_:d5b844646a123654a2659a99f14cc5c3 rdf:reifies <<( doc:FactsSeig rdfs:label "Self-Excited Induction Generator"@en )>> ;
+	prov:wasDerivedFrom doc:7ffc1c2c81f6 .
+doc:FactsPreviousModels doc:factsreports doc:FactsFailureToCaptureNonlinearBehaviour .
+_:e460247167b4bb9da337e4da3a0fc8d7 rdf:reifies <<( doc:FactsPreviousModels doc:factsreports doc:FactsFailureToCaptureNonlinearBehaviour )>> ;
+	prov:wasDerivedFrom doc:7ffc1c2c81f6 .
+doc:FactsRotorSpeed rdfs:label "Rotor speed variation"@en .
+_:d15dbf68a7dab798bfde39048dfcdbe1 rdf:reifies <<( doc:FactsRotorSpeed rdfs:label "Rotor speed variation"@en )>> ;
+	prov:wasDerivedFrom doc:7ffc1c2c81f6 .
+doc:factsreports rdfs:label "is governed by"@en .
+_:b0a09bd87ddc0ec5e772731f6347c340 rdf:reifies <<( doc:factsreports rdfs:label "is governed by"@en )>> ;
+	prov:wasDerivedFrom doc:7ffc1c2c81f6 .
+doc:FactsCapacitorAging a obo:BFO_0000019 .
+_:c1e0cb5422352b410c7a9baca9f9ab81 rdf:reifies <<( doc:FactsCapacitorAging rdf:type obo:BFO_0000019 )>> ;
+	prov:wasDerivedFrom doc:7ffc1c2c81f6 .
+doc:FactsFem rdfs:label "Finite Element Method"@en .
+_:cd04b5dd0fb13713da14ebbefa63e91b rdf:reifies <<( doc:FactsFem rdfs:label "Finite Element Method"@en )>> ;
+	prov:wasDerivedFrom doc:7ffc1c2c81f6 .
+doc:factsincludesVariation rdfs:label "includes variation"@en .
+_:f1cac5be11e9b3a791759cf8d625d42a rdf:reifies <<( doc:factsincludesVariation rdfs:label "includes variation"@en )>> ;
+	prov:wasDerivedFrom doc:7ffc1c2c81f6 .
+doc:FactsPhaseLockedLoop rdfs:label "Phase-locked loop"@en .
+_:a9dd1b035efe44569ab37fb519ab9a84 rdf:reifies <<( doc:FactsPhaseLockedLoop rdfs:label "Phase-locked loop"@en )>> ;
+	prov:wasDerivedFrom doc:7ffc1c2c81f6 .
+doc:Factsdoc1 doc:factsreports doc:FactsCapacitorAging .
+_:b4a30cd54d6c0318a2a60fe038c2f688 rdf:reifies <<( doc:Factsdoc1 doc:factsreports doc:FactsCapacitorAging )>> ;
+	prov:wasDerivedFrom doc:7ffc1c2c81f6 .
+doc:factsreports rdfs:label "reports effect"@en .
+_:f51fd11585e5548873f03d84811053fe rdf:reifies <<( doc:factsreports rdfs:label "reports effect"@en )>> ;
+	prov:wasDerivedFrom doc:7ffc1c2c81f6 .
+doc:FactsCapacitanceVariation rdfs:label "Capacitance variation"@en .
+_:d930085192210bd0d2e206ece655df7c rdf:reifies <<( doc:FactsCapacitanceVariation rdfs:label "Capacitance variation"@en )>> ;
+	prov:wasDerivedFrom doc:7ffc1c2c81f6 .
+doc:FactsCapacitanceVariation a None:Data_variable .
+_:fcb49d6449d2b40092c728f5ffc55c8a rdf:reifies <<( doc:FactsCapacitanceVariation rdf:type None:Data_variable )>> ;
+	prov:wasDerivedFrom doc:7ffc1c2c81f6 .
+doc:Factsdoc1 doc:factsreports doc:FactsPhaseLockedLoop .
+_:ad262b358baa90d8720c3303dc8e6354 rdf:reifies <<( doc:Factsdoc1 doc:factsreports doc:FactsPhaseLockedLoop )>> ;
+	prov:wasDerivedFrom doc:7ffc1c2c81f6 .
+doc:Factsdoc1 schema1:description "Analyzed open-circuit capacitor faults in SEIGs and demonstrated that such faults can reduce torque to zero, destabilizing the system (did not consider capacitor aging)" .
+_:a52ab00e03fa5ea67b6a3ee9f3f1814 rdf:reifies <<( doc:Factsdoc1 schema1:description "Analyzed open-circuit capacitor faults in SEIGs and demonstrated that such faults can reduce torque to zero, destabilizing the system (did not consider capacitor aging)" )>> ;
+	prov:wasDerivedFrom doc:7ffc1c2c81f6 .
+doc:Factsdoc1 rdfs:label "Study [14]"@en .
+_:eedb8a7133c40581f3433f334e670896 rdf:reifies <<( doc:Factsdoc1 rdfs:label "Study [14]"@en )>> ;
+	prov:wasDerivedFrom doc:7ffc1c2c81f6 .
+doc:FactsMaxwellEquations schema1:description "Fundamental relationships governing electric and magnetic fields used as foundation for electromagnetic modelling" .
+_:af20f900c4bf180b5503dfdd40038817 rdf:reifies <<( doc:FactsMaxwellEquations schema1:description "Fundamental relationships governing electric and magnetic fields used as foundation for electromagnetic modelling" )>> ;
+	prov:wasDerivedFrom doc:7ffc1c2c81f6 .
+doc:FactsCurrentSynchronousDetectionMethod a cco:Algorithm .
+_:d03c358e4ad0993cf0c8b4be00d1ba08 rdf:reifies <<( doc:FactsCurrentSynchronousDetectionMethod rdf:type cco:Algorithm )>> ;
+	prov:wasDerivedFrom doc:7ffc1c2c81f6 .
+doc:Factsdoc1 doc:factsreports doc:FactsCurrentSynchronousDetectionMethod .
+_:e8b13cade9a5e1556f735f2d19a1e666 rdf:reifies <<( doc:Factsdoc1 doc:factsreports doc:FactsCurrentSynchronousDetectionMethod )>> ;
+	prov:wasDerivedFrom doc:7ffc1c2c81f6 .
+doc:FactsElectromagneticSystemBehavior rdfs:label "Electromagnetic system behavior"@en .
+_:c8fac78f9b197d4ff601495b372e3f72 rdf:reifies <<( doc:FactsElectromagneticSystemBehavior rdfs:label "Electromagnetic system behavior"@en )>> ;
+	prov:wasDerivedFrom doc:7ffc1c2c81f6 .
+doc:Factsdoc1 doc:factsreports doc:FactsFem .
+_:e3ad0e4351f6d399aa5dc6a92f19f42 rdf:reifies <<( doc:Factsdoc1 doc:factsreports doc:FactsFem )>> ;
+	prov:wasDerivedFrom doc:7ffc1c2c81f6 .
+doc:FactsCurrentSynchronousDetectionMethod rdfs:label "Current synchronous detection method"@en .
+_:b9dea773889dd140bd452d2964412a35 rdf:reifies <<( doc:FactsCurrentSynchronousDetectionMethod rdfs:label "Current synchronous detection method"@en )>> ;
+	prov:wasDerivedFrom doc:7ffc1c2c81f6 .
+doc:Factsdoc1 doc:factsincludesVariation doc:FactsLoad .
+_:f9d7d7020ea4f1fa3aac131ef1b711c0 rdf:reifies <<( doc:Factsdoc1 doc:factsincludesVariation doc:FactsLoad )>> ;
+	prov:wasDerivedFrom doc:7ffc1c2c81f6 .
+doc:FactsElectromagneticSystemBehavior a cco:DescriptiveInformationContentEntity .
+_:d6e8826f5534affb142f1bfbddb0878d rdf:reifies <<( doc:FactsElectromagneticSystemBehavior rdf:type cco:DescriptiveInformationContentEntity )>> ;
+	prov:wasDerivedFrom doc:7ffc1c2c81f6 .
+doc:Factsdoc1 doc:factsreports doc:FactsSeig .
+_:fef9a7f73f4d9aaf0ee2b78758d29208 rdf:reifies <<( doc:Factsdoc1 doc:factsreports doc:FactsSeig )>> ;
+	prov:wasDerivedFrom doc:7ffc1c2c81f6 .
+doc:FactsMaxwellEquations rdfs:label "Maxwell's equations"@en .
+_:a0e4939890970d48d09c158e24a13fa4 rdf:reifies <<( doc:FactsMaxwellEquations rdfs:label "Maxwell's equations"@en )>> ;
+	prov:wasDerivedFrom doc:7ffc1c2c81f6 .
+doc:FactsSmallSignalModel rdfs:label "Small-signal model"@en .
+_:b858e9be3a44c5674cabca701ea27845 rdf:reifies <<( doc:FactsSmallSignalModel rdfs:label "Small-signal model"@en )>> ;
+	prov:wasDerivedFrom doc:7ffc1c2c81f6 .
+doc:FactsElectromagneticSystemBehavior doc:factsreports doc:FactsMaxwellEquations .
+_:b1a2481d229926366624c8349f029144 rdf:reifies <<( doc:FactsElectromagneticSystemBehavior doc:factsreports doc:FactsMaxwellEquations )>> ;
+	prov:wasDerivedFrom doc:7ffc1c2c81f6 .
+_:ef135ac702066da692d9a4e9d5f04530 prov:wasDerivedFrom doc:7ffc1c2c81f6 .
+doc:Factsdoc1 rdfs:label "Study [11]"@en .
+_:f5d7e4fcdc19d976725be887ce28e6c3 rdf:reifies <<( doc:Factsdoc1 rdfs:label "Study [11]"@en )>> ;
+	prov:wasDerivedFrom doc:7ffc1c2c81f6 .
+doc:FactsHilbertHuangTransform rdfs:label "Hilbert-Huang transform"@en .
+_:c6323f2a9c9299ad5ec8b237c9b7cf46 rdf:reifies <<( doc:FactsHilbertHuangTransform rdfs:label "Hilbert-Huang transform"@en )>> ;
+	prov:wasDerivedFrom doc:7ffc1c2c81f6 .
+doc:FactsFaults schema1:description "Fault consisting of an opened phase in the generator circuit" .
+_:ebf0bc3bc46ce74b6967490eeb1ba81b rdf:reifies <<( doc:FactsFaults schema1:description "Fault consisting of an opened phase in the generator circuit" )>> ;
+	prov:wasDerivedFrom doc:7ffc1c2c81f6 .
+doc:Factsdoc1 doc:factsincludesVariation doc:FactsCapacitanceVariation .
+_:bdc4f758cd94d13d8bd13d093a7f373f rdf:reifies <<( doc:Factsdoc1 doc:factsincludesVariation doc:FactsCapacitanceVariation )>> ;
+	prov:wasDerivedFrom doc:7ffc1c2c81f6 .
+doc:FactsTorque rdfs:label "Torque"@en .
+_:e1cd9746928143e45c00ba946b9c4f1b rdf:reifies <<( doc:FactsTorque rdfs:label "Torque"@en )>> ;
+	prov:wasDerivedFrom doc:7ffc1c2c81f6 .
+doc:factsreports rdfs:label "uses method"@en .
+_:e26cea22d7b54b497ddc80bd59f5d163 rdf:reifies <<( doc:factsreports rdfs:label "uses method"@en )>> ;
+	prov:wasDerivedFrom doc:7ffc1c2c81f6 .
+obo:BFO_0000001 owl:sameAs obo:BFO_0000019 , obo:BFO_0000030 .
+cco:InformationBearingArtifact owl:sameAs cco:InformationProcessingArtifact .

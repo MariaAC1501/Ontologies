@@ -1,0 +1,504 @@
+@prefix None: <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD/seed#> .
+@prefix cco: <http://www.ontologyrepository.com/CommonCoreOntologies/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doc: <https://growgraph.dev/doc/22483bb7fa86/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix obo: <http://purl.obolibrary.org/obo/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix schema: <https://schema.org/> .
+@prefix schema1: <http://schema.org/> .
+doc:eaa6bb642e00 a prov:Entity , schema:text ;
+	prov:generatedAtTime "2026-06-12T02:42:01.899402Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+	schema:position 0 ;
+	schema:identifier "eaa6bb642e00" .
+doc:FactsArticle1_3 schema1:author doc:FactsAshwithaK .
+_:ccd5a63a42c46b00429a8bcbd338464a rdf:reifies <<( doc:FactsArticle1_3 schema1:author doc:FactsAshwithaK )>> ;
+	prov:wasDerivedFrom doc:eaa6bb642e00 .
+doc:FactsTemporalFeatureEngineering a None:Data_mining_technique_function .
+_:f4a8da4c73fbda8befa188395ba06a65 rdf:reifies <<( doc:FactsTemporalFeatureEngineering rdf:type None:Data_mining_technique_function )>> ;
+	prov:wasDerivedFrom doc:eaa6bb642e00 .
+doc:FactsRocketStackModel a None:Predictive_maintenance_system_module .
+_:eb95ebb2a6bc0fda8af2ced0018ce22f rdf:reifies <<( doc:FactsRocketStackModel rdf:type None:Predictive_maintenance_system_module )>> ;
+	prov:wasDerivedFrom doc:eaa6bb642e00 .
+doc:FactsAshwithaK schema1:name "Ashwitha K" .
+_:f6bbe832a70865733cec08640bde4851 rdf:reifies <<( doc:FactsAshwithaK schema1:name "Ashwitha K" )>> ;
+	prov:wasDerivedFrom doc:eaa6bb642e00 .
+doc:FactsMetricMacroRecall a None:Performance_indicator .
+_:e0912b8ff2fcc75872c747d5499c4d8e rdf:reifies <<( doc:FactsMetricMacroRecall rdf:type None:Performance_indicator )>> ;
+	prov:wasDerivedFrom doc:eaa6bb642e00 .
+doc:FactsMetricMacroRecall None:has_text_value "macro recall reported (aggregate recall across classes)" .
+_:d9ca1c4fb0a3237c5f004e24bd7b122c rdf:reifies <<( doc:FactsMetricMacroRecall None:has_text_value "macro recall reported (aggregate recall across classes)" )>> ;
+	prov:wasDerivedFrom doc:eaa6bb642e00 .
+doc:FactsRfe a cco:Algorithm .
+_:daca7fcacddda28a9d70389a43d6b43d rdf:reifies <<( doc:FactsRfe rdf:type cco:Algorithm )>> ;
+	prov:wasDerivedFrom doc:eaa6bb642e00 .
+doc:FactsAshwithaK schema1:affiliation doc:FactsAffil4 .
+_:ea31b857d228eddaa0f8ed3324c48fb3 rdf:reifies <<( doc:FactsAshwithaK schema1:affiliation doc:FactsAffil4 )>> ;
+	prov:wasDerivedFrom doc:eaa6bb642e00 .
+doc:FactsRn rdfs:label "Artificial Neural Network (ANN)" .
+_:d9d9cf8c4b8a39d82ae25f9e06b684a3 rdf:reifies <<( doc:FactsRn rdfs:label "Artificial Neural Network (ANN)" )>> ;
+	prov:wasDerivedFrom doc:eaa6bb642e00 .
+doc:FactsIsolationForestFeature None:has_text_value "Isolation Forest-derived novelty feature (input variable)" .
+_:e17fb7c315c1b6fcc4e2f18c8ffd6e85 rdf:reifies <<( doc:FactsIsolationForestFeature None:has_text_value "Isolation Forest-derived novelty feature (input variable)" )>> ;
+	prov:wasDerivedFrom doc:eaa6bb642e00 .
+doc:Factslogistic_L1 a cco:Algorithm .
+_:a2078354f55520124394a06c4f096b rdf:reifies <<( doc:Factslogistic_L1 rdf:type cco:Algorithm )>> ;
+	prov:wasDerivedFrom doc:eaa6bb642e00 .
+doc:FactsAshwithaK a schema1:Person .
+_:bd5ab8df658155125cc75a3e365aaaa6 rdf:reifies <<( doc:FactsAshwithaK rdf:type schema1:Person )>> ;
+	prov:wasDerivedFrom doc:eaa6bb642e00 .
+doc:FactsModuleSync1 None:has_text_value "online/offline mode not explicitly specified; module evaluated in both offline (training/test) and applied online-like inference scenarios" .
+_:b727a22b167275908552e35ce5eb8770 rdf:reifies <<( doc:FactsModuleSync1 None:has_text_value "online/offline mode not explicitly specified; module evaluated in both offline (training/test) and applied online-like inference scenarios" )>> ;
+	prov:wasDerivedFrom doc:eaa6bb642e00 .
+doc:FactsRocketStackModel schema1:algorithm doc:FactsRn .
+_:e796f0e291a1feca54355ab30571b325 rdf:reifies <<( doc:FactsRocketStackModel schema1:algorithm doc:FactsRn )>> ;
+	prov:wasDerivedFrom doc:eaa6bb642e00 .
+doc:FactsKeywords1 a None:Design_detail .
+_:d031dacdd57a3408091a8f7061005e62 rdf:reifies <<( doc:FactsKeywords1 rdf:type None:Design_detail )>> ;
+	prov:wasDerivedFrom doc:eaa6bb642e00 .
+doc:FactsIsolationForestFeature cco:describes doc:FactsRocketStackModel .
+_:c3e29daf7f5d9843546726e1fbe677a3 rdf:reifies <<( doc:FactsIsolationForestFeature cco:describes doc:FactsRocketStackModel )>> ;
+	prov:wasDerivedFrom doc:eaa6bb642e00 .
+doc:FactsAccuracyPrivate cco:describes doc:FactsPrivateDataset .
+_:b6cf265d788e089d021de45dc5ee3115 rdf:reifies <<( doc:FactsAccuracyPrivate cco:describes doc:FactsPrivateDataset )>> ;
+	prov:wasDerivedFrom doc:eaa6bb642e00 .
+doc:FactsMetricMacroRecall cco:describes doc:FactsRocketStackModel .
+_:e9c8016fd33ce20c811a49726abe9b65 rdf:reifies <<( doc:FactsMetricMacroRecall cco:describes doc:FactsRocketStackModel )>> ;
+	prov:wasDerivedFrom doc:eaa6bb642e00 .
+doc:FactsPubYear2026 None:has_interger_value 2026 .
+_:bcf6a9ebe6f8ca18e9454baf98e57529 rdf:reifies <<( doc:FactsPubYear2026 None:has_interger_value 2026 )>> ;
+	prov:wasDerivedFrom doc:eaa6bb642e00 .
+doc:FactsMetricMacroRecall None:has_text_value "class-wise F1-score reported (details in article)" .
+_:f2641cc6baca2715712b4cbec1880937 rdf:reifies <<( doc:FactsMetricMacroRecall None:has_text_value "class-wise F1-score reported (details in article)" )>> ;
+	prov:wasDerivedFrom doc:eaa6bb642e00 .
+doc:FactsRocketStackModel schema1:algorithm doc:Factslogistic_L1 .
+_:e1d800965d12346df53747fa3d1cebda rdf:reifies <<( doc:FactsRocketStackModel schema1:algorithm doc:Factslogistic_L1 )>> ;
+	prov:wasDerivedFrom doc:eaa6bb642e00 .
+doc:FactsKeywords1 a cco:DesignativeName .
+_:bcc9caafe042ad08bf844fd9debebe9f rdf:reifies <<( doc:FactsKeywords1 rdf:type cco:DesignativeName )>> ;
+	prov:wasDerivedFrom doc:eaa6bb642e00 .
+doc:FactsAccuracyGe None:has_text_value 0.98 .
+_:ddf4a4e89875643246d1d797dae83bd3 rdf:reifies <<( doc:FactsAccuracyGe None:has_text_value 0.98 )>> ;
+	prov:wasDerivedFrom doc:eaa6bb642e00 .
+doc:FactsAffil4 schema1:name "Department of Master of Computer Applications, NMAM Institute of Technology (NMAMIT), Nitte, Karkala, Karnataka, India" .
+_:eb74284a2f810f95aec3d7da11cdd71f rdf:reifies <<( doc:FactsAffil4 schema1:name "Department of Master of Computer Applications, NMAM Institute of Technology (NMAMIT), Nitte, Karkala, Karnataka, India" )>> ;
+	prov:wasDerivedFrom doc:eaa6bb642e00 .
+doc:FactsAshwithaK schema1:name "Surendra Shetty" .
+_:a7fab2c5c9b8d628ab49ef28b08bfe05 rdf:reifies <<( doc:FactsAshwithaK schema1:name "Surendra Shetty" )>> ;
+	prov:wasDerivedFrom doc:eaa6bb642e00 .
+doc:FactsAffil4 schema1:name "Department of Master of Computer Applications, NMAM Institute of Technology, NITTE (Deemed to be University), Nitte, Karnataka 574110, India" .
+_:a0b318bd2b3470665259b7ff1d28444f rdf:reifies <<( doc:FactsAffil4 schema1:name "Department of Master of Computer Applications, NMAM Institute of Technology, NITTE (Deemed to be University), Nitte, Karnataka 574110, India" )>> ;
+	prov:wasDerivedFrom doc:eaa6bb642e00 .
+doc:FactsAccuracyPrivate None:has_text_value 0.85 .
+_:a27c87fee9268c666c2a5737e6ee1eb9 rdf:reifies <<( doc:FactsAccuracyPrivate None:has_text_value 0.85 )>> ;
+	prov:wasDerivedFrom doc:eaa6bb642e00 .
+doc:FactsAffil4 a schema1:Organization .
+_:ad618d2dea57ddf54e846770440345a2 rdf:reifies <<( doc:FactsAffil4 rdf:type schema1:Organization )>> ;
+	prov:wasDerivedFrom doc:eaa6bb642e00 .
+doc:FactsKeywords1 None:has_text_value "Z-location, Chord-wise size, Side wise size, Functional, Leaky ReLU, Innovation, Affordable (sustainable development goals-SDG 9)" .
+_:de16ee1ce3e7a56f9105f4278110aca9 rdf:reifies <<( doc:FactsKeywords1 None:has_text_value "Z-location, Chord-wise size, Side wise size, Functional, Leaky ReLU, Innovation, Affordable (sustainable development goals-SDG 9)" )>> ;
+	prov:wasDerivedFrom doc:eaa6bb642e00 .
+doc:FactsRocketStackModel schema1:algorithm doc:FactsXgBoost_1 .
+_:ba5400b934c08d5f94e8b40667fb3af4 rdf:reifies <<( doc:FactsRocketStackModel schema1:algorithm doc:FactsXgBoost_1 )>> ;
+	prov:wasDerivedFrom doc:eaa6bb642e00 .
+doc:FactsRocketStackModel schema1:algorithm doc:FactsSvc .
+_:b05c8951738cf70c873a2b475ea8b6f5 rdf:reifies <<( doc:FactsRocketStackModel schema1:algorithm doc:FactsSvc )>> ;
+	prov:wasDerivedFrom doc:eaa6bb642e00 .
+doc:FactsKeywords1 None:has_text_value "ANN-Enhanced RocketStack ensemble combining ANN, SVC, reduced-capacity XGBoost base classifiers; probabilistic outputs refined using L1-regularized Logistic Regression and a Random Forest meta-classifier; Isolation Forest-derived novelty feature; RFE feature selection; temporal feature engineering; Targeted Undersampling (TUS) with sample weighting to address class imbalance" .
+_:fb7c57d8b3f284a396918d571b725727 rdf:reifies <<( doc:FactsKeywords1 None:has_text_value "ANN-Enhanced RocketStack ensemble combining ANN, SVC, reduced-capacity XGBoost base classifiers; probabilistic outputs refined using L1-regularized Logistic Regression and a Random Forest meta-classifier; Isolation Forest-derived novelty feature; RFE feature selection; temporal feature engineering; Targeted Undersampling (TUS) with sample weighting to address class imbalance" )>> ;
+	prov:wasDerivedFrom doc:eaa6bb642e00 .
+doc:FactsAccuracyGe cco:describes doc:FactsGeSiemensDataset .
+_:e822df5a984d252ad93b81eb6d4742ea rdf:reifies <<( doc:FactsAccuracyGe cco:describes doc:FactsGeSiemensDataset )>> ;
+	prov:wasDerivedFrom doc:eaa6bb642e00 .
+doc:FactsPubYear2026 a None:Publication_year .
+_:b51a3b475fa9d6657e2e01d9a696b45 rdf:reifies <<( doc:FactsPubYear2026 rdf:type None:Publication_year )>> ;
+	prov:wasDerivedFrom doc:eaa6bb642e00 .
+doc:FactsAshwithaK schema1:email "nagaraj.shetty@manipal.edu" .
+_:aaf101b108eefe4c9b083b9dd89e1a22 rdf:reifies <<( doc:FactsAshwithaK schema1:email "nagaraj.shetty@manipal.edu" )>> ;
+	prov:wasDerivedFrom doc:eaa6bb642e00 .
+doc:FactsAccuracyPrivate cco:describes doc:FactsRocketStackModel .
+_:ff89ad16f3c814949d555945b426973f rdf:reifies <<( doc:FactsAccuracyPrivate cco:describes doc:FactsRocketStackModel )>> ;
+	prov:wasDerivedFrom doc:eaa6bb642e00 .
+doc:FactsAccuracyGe a None:Performance_value .
+_:e2c6c4bf0e671b566c70705149814b66 rdf:reifies <<( doc:FactsAccuracyGe rdf:type None:Performance_value )>> ;
+	prov:wasDerivedFrom doc:eaa6bb642e00 .
+doc:FactsRfe rdfs:label "Recursive Feature Elimination (RFE)" .
+_:cbc2d6637a26c55aa938d0c0692d7870 rdf:reifies <<( doc:FactsRfe rdfs:label "Recursive Feature Elimination (RFE)" )>> ;
+	prov:wasDerivedFrom doc:eaa6bb642e00 .
+doc:FactsTitle1_2 None:has_text_value "Feature-enhanced RocketStack ensemble for multi-class wind turbine blade crack severity prediction" .
+_:bcbe33fdbd2fc2cbdf83f2a2c6a0e169 rdf:reifies <<( doc:FactsTitle1_2 None:has_text_value "Feature-enhanced RocketStack ensemble for multi-class wind turbine blade crack severity prediction" )>> ;
+	prov:wasDerivedFrom doc:eaa6bb642e00 .
+doc:FactsRocketStackModel cco:describes doc:FactsRocketStackModel .
+_:bbe2cc6a05f331b10e8d409221363cc3 rdf:reifies <<( doc:FactsRocketStackModel cco:describes doc:FactsRocketStackModel )>> ;
+	prov:wasDerivedFrom doc:eaa6bb642e00 .
+doc:FactsArticle1_3 None:has_publication_year doc:FactsPubYear2026 .
+_:c1ddf9e47e734c9c729adc366f149e8c rdf:reifies <<( doc:FactsArticle1_3 None:has_publication_year doc:FactsPubYear2026 )>> ;
+	prov:wasDerivedFrom doc:eaa6bb642e00 .
+doc:FactsRocketStackModel None:describes_configuration doc:FactsRocketStackModel .
+_:f0ccbf3a3666ea433c62b8fda7b8d4f6 rdf:reifies <<( doc:FactsRocketStackModel None:describes_configuration doc:FactsRocketStackModel )>> ;
+	prov:wasDerivedFrom doc:eaa6bb642e00 .
+doc:FactsAccuracyPrivate a None:Performance_value .
+_:bf7173b531f044eaa2771a983497270f rdf:reifies <<( doc:FactsAccuracyPrivate rdf:type None:Performance_value )>> ;
+	prov:wasDerivedFrom doc:eaa6bb642e00 .
+doc:FactsRocketStackModel None:has_design_detail doc:FactsKeywords1 .
+_:ebb7c5fcaa5c8cc9182c3f04712e32b1 rdf:reifies <<( doc:FactsRocketStackModel None:has_design_detail doc:FactsKeywords1 )>> ;
+	prov:wasDerivedFrom doc:eaa6bb642e00 .
+doc:FactsRocketStackModel None:has_predictive_maintenance_function None:Classification .
+_:abc558d4be833b45accb161a8a2446d5 rdf:reifies <<( doc:FactsRocketStackModel None:has_predictive_maintenance_function None:Classification )>> ;
+	prov:wasDerivedFrom doc:eaa6bb642e00 .
+doc:FactsRocketStackModel None:has_synchronization doc:FactsModuleSync1 .
+_:c85f6060b67e4a0f2eab761a80cdd60e rdf:reifies <<( doc:FactsRocketStackModel None:has_synchronization doc:FactsModuleSync1 )>> ;
+	prov:wasDerivedFrom doc:eaa6bb642e00 .
+doc:FactsTargetedUndersampling rdfs:label "Targeted Undersampling (TUS) with sample weighting" .
+_:ac2383c6528d8cc2b22028248dd40d51 rdf:reifies <<( doc:FactsTargetedUndersampling rdfs:label "Targeted Undersampling (TUS) with sample weighting" )>> ;
+	prov:wasDerivedFrom doc:eaa6bb642e00 .
+doc:FactsKeywords1 None:has_text_value "Confusion matrices reveal class imbalances" .
+_:cff07f00087d5c59f477279336002bd9 rdf:reifies <<( doc:FactsKeywords1 None:has_text_value "Confusion matrices reveal class imbalances" )>> ;
+	prov:wasDerivedFrom doc:eaa6bb642e00 .
+doc:FactsArticle1_3 obo:RO_0010002 doc:FactsRocketStackModel .
+_:d6c3d64e85a494d82993f495c2b4145d rdf:reifies <<( doc:FactsArticle1_3 obo:RO_0010002 doc:FactsRocketStackModel )>> ;
+	prov:wasDerivedFrom doc:eaa6bb642e00 .
+doc:FactsKeywords1 cco:describes doc:FactsRocketStackModel .
+_:db75f44efe1838a2e220ae9a174bcb3a rdf:reifies <<( doc:FactsKeywords1 cco:describes doc:FactsRocketStackModel )>> ;
+	prov:wasDerivedFrom doc:eaa6bb642e00 .
+doc:Factslogistic_L1 rdfs:label "L1-regularized Logistic Regression" .
+_:bd3b2c1d093ff549899387ca71481972 rdf:reifies <<( doc:Factslogistic_L1 rdfs:label "L1-regularized Logistic Regression" )>> ;
+	prov:wasDerivedFrom doc:eaa6bb642e00 .
+doc:FactsSvc a cco:Algorithm .
+_:ac7100054cc38e2b809d414adb665aed rdf:reifies <<( doc:FactsSvc rdf:type cco:Algorithm )>> ;
+	prov:wasDerivedFrom doc:eaa6bb642e00 .
+doc:FactsAshwithaK schema1:name "Srinivas Byatarayanapura Venkataswamy" .
+_:c9d3e4d6a20eec71f1485cd5e782d298 rdf:reifies <<( doc:FactsAshwithaK schema1:name "Srinivas Byatarayanapura Venkataswamy" )>> ;
+	prov:wasDerivedFrom doc:eaa6bb642e00 .
+doc:FactsRandomForest rdfs:label "Random Forest meta-classifier" .
+_:edce533811e75b4c92a33f03ab1d128c rdf:reifies <<( doc:FactsRandomForest rdfs:label "Random Forest meta-classifier" )>> ;
+	prov:wasDerivedFrom doc:eaa6bb642e00 .
+doc:FactsIsolationForestFeature a None:Data_variable .
+_:cad9ba57ef2831b25d9ac1510a24e8e3 rdf:reifies <<( doc:FactsIsolationForestFeature rdf:type None:Data_variable )>> ;
+	prov:wasDerivedFrom doc:eaa6bb642e00 .
+doc:FactsRocketStackModel a None:Model_configuration .
+_:c931957f6b3f9014d3d4c9083b3744f rdf:reifies <<( doc:FactsRocketStackModel rdf:type None:Model_configuration )>> ;
+	prov:wasDerivedFrom doc:eaa6bb642e00 .
+doc:FactsGeSiemensDataset a schema1:Dataset .
+_:b425bcab58ba67daa073104d23496e5d rdf:reifies <<( doc:FactsGeSiemensDataset rdf:type schema1:Dataset )>> ;
+	prov:wasDerivedFrom doc:eaa6bb642e00 .
+doc:FactsAshwithaK schema1:email "hsshetty@nitte.edu.in" .
+_:b88d67a449849821b86139d534c6ea78 rdf:reifies <<( doc:FactsAshwithaK schema1:email "hsshetty@nitte.edu.in" )>> ;
+	prov:wasDerivedFrom doc:eaa6bb642e00 .
+doc:FactsGeSiemensDataset schema1:name "Industrial dataset from GE and Siemens (public)" .
+_:e7db3c98435df52dc05bd9fcbed0dd34 rdf:reifies <<( doc:FactsGeSiemensDataset schema1:name "Industrial dataset from GE and Siemens (public)" )>> ;
+	prov:wasDerivedFrom doc:eaa6bb642e00 .
+doc:FactsPrivateDataset schema1:name "Private dataset (challenging domain-specific problems)" .
+_:e7a9352fcc105aa8ad106f1ef7fda526 rdf:reifies <<( doc:FactsPrivateDataset schema1:name "Private dataset (challenging domain-specific problems)" )>> ;
+	prov:wasDerivedFrom doc:eaa6bb642e00 .
+doc:FactsRandomForest a cco:Algorithm .
+_:da25145ab66263f1979eb88f4bf38df2 rdf:reifies <<( doc:FactsRandomForest rdf:type cco:Algorithm )>> ;
+	prov:wasDerivedFrom doc:eaa6bb642e00 .
+doc:FactsAffil4 schema1:name "Manipal Institute of Technology, Manipal Academy of Higher Education, Manipal, India" .
+_:ce05ed8f4443edb4a0a5a2dec645e92f rdf:reifies <<( doc:FactsAffil4 schema1:name "Manipal Institute of Technology, Manipal Academy of Higher Education, Manipal, India" )>> ;
+	prov:wasDerivedFrom doc:eaa6bb642e00 .
+doc:FactsAshwithaK schema1:name "Nagaraja Shetty" .
+_:b07f582a1c81a3a28b919d2dd013e168 rdf:reifies <<( doc:FactsAshwithaK schema1:name "Nagaraja Shetty" )>> ;
+	prov:wasDerivedFrom doc:eaa6bb642e00 .
+doc:FactsArticle1_3 None:has_title doc:FactsTitle1_2 .
+_:c014e02bd9c485809f42a60c8f0cdb3e rdf:reifies <<( doc:FactsArticle1_3 None:has_title doc:FactsTitle1_2 )>> ;
+	prov:wasDerivedFrom doc:eaa6bb642e00 .
+doc:FactsKeywords1 cco:describes doc:FactsArticle1_3 .
+_:dbe8d4bea2bb61fb479fbc40f36811fa rdf:reifies <<( doc:FactsKeywords1 cco:describes doc:FactsArticle1_3 )>> ;
+	prov:wasDerivedFrom doc:eaa6bb642e00 .
+doc:FactsArticle1_3 a None:Predictive_Maintenance_Article .
+_:a1d8d85fcde915d0fef4ebdf1f1d3f20 rdf:reifies <<( doc:FactsArticle1_3 rdf:type None:Predictive_Maintenance_Article )>> ;
+	prov:wasDerivedFrom doc:eaa6bb642e00 .
+doc:FactsPrivateDataset a schema1:Dataset .
+_:a980765c3c74a4cfc1e3f1edf3b22cff rdf:reifies <<( doc:FactsPrivateDataset rdf:type schema1:Dataset )>> ;
+	prov:wasDerivedFrom doc:eaa6bb642e00 .
+doc:FactsRocketStackModel schema1:algorithm doc:FactsRandomForest .
+_:ac71f043ff50e35c8078d7b829dd5c73 rdf:reifies <<( doc:FactsRocketStackModel schema1:algorithm doc:FactsRandomForest )>> ;
+	prov:wasDerivedFrom doc:eaa6bb642e00 .
+doc:FactsTemporalFeatureEngineering rdfs:label "Temporal feature engineering (operational trend mapping)" .
+_:de283d2a8f58c92df565be9b96db5cbb rdf:reifies <<( doc:FactsTemporalFeatureEngineering rdfs:label "Temporal feature engineering (operational trend mapping)" )>> ;
+	prov:wasDerivedFrom doc:eaa6bb642e00 .
+doc:FactsRocketStackModel a None:Predictive_maintenance_model .
+_:f51b467622f5cc7f1170401688375f17 rdf:reifies <<( doc:FactsRocketStackModel rdf:type None:Predictive_maintenance_model )>> ;
+	prov:wasDerivedFrom doc:eaa6bb642e00 .
+doc:FactsModuleSync1 a None:Module_synchronization .
+_:e855562e1caee5e20d50d87da077f030 rdf:reifies <<( doc:FactsModuleSync1 rdf:type None:Module_synchronization )>> ;
+	prov:wasDerivedFrom doc:eaa6bb642e00 .
+doc:FactsAffil4 schema1:name "Department of Computer Science and Engineering, BMS Institute of Technology and Management, Yelahanka Bangalore, Karnataka 560119, India" .
+_:d0304d1f184b6bc8c0a5286bdbf8af6 rdf:reifies <<( doc:FactsAffil4 schema1:name "Department of Computer Science and Engineering, BMS Institute of Technology and Management, Yelahanka Bangalore, Karnataka 560119, India" )>> ;
+	prov:wasDerivedFrom doc:eaa6bb642e00 .
+doc:FactsRn a cco:Algorithm .
+_:f152df6f6bc274cd2b962d51bb12010f rdf:reifies <<( doc:FactsRn rdf:type cco:Algorithm )>> ;
+	prov:wasDerivedFrom doc:eaa6bb642e00 .
+doc:FactsXgBoost_1 rdfs:label "XGBoost (reduced-capacity)" .
+_:f8333c32c25b3b84926ad359101a0fac rdf:reifies <<( doc:FactsXgBoost_1 rdfs:label "XGBoost (reduced-capacity)" )>> ;
+	prov:wasDerivedFrom doc:eaa6bb642e00 .
+doc:FactsAccuracyGe cco:describes doc:FactsRocketStackModel .
+_:b7b2e1fd4a769b28010b9df3e004a87f rdf:reifies <<( doc:FactsAccuracyGe cco:describes doc:FactsRocketStackModel )>> ;
+	prov:wasDerivedFrom doc:eaa6bb642e00 .
+doc:FactsTitle1_2 a None:Article_title .
+_:e4799e0943a7c534097167c149afbb1d rdf:reifies <<( doc:FactsTitle1_2 rdf:type None:Article_title )>> ;
+	prov:wasDerivedFrom doc:eaa6bb642e00 .
+doc:FactsXgBoost_1 a cco:Algorithm .
+_:a3eb5e8bc4570326c804fcd51edb6468 rdf:reifies <<( doc:FactsXgBoost_1 rdf:type cco:Algorithm )>> ;
+	prov:wasDerivedFrom doc:eaa6bb642e00 .
+doc:FactsSvc rdfs:label "Support Vector Classifier (SVC)" .
+_:caa0c25f175b9bc6ba0e43636c56edf5 rdf:reifies <<( doc:FactsSvc rdfs:label "Support Vector Classifier (SVC)" )>> ;
+	prov:wasDerivedFrom doc:eaa6bb642e00 .
+doc:FactsTargetedUndersampling a cco:Algorithm .
+_:fac320bf549919cd7e54ac837cabd6a0 rdf:reifies <<( doc:FactsTargetedUndersampling rdf:type cco:Algorithm )>> ;
+	prov:wasDerivedFrom doc:eaa6bb642e00 .
+doc:4149941a21b9 a prov:Entity , schema:text ;
+	prov:generatedAtTime "2026-06-12T02:42:01.9034Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+	schema:position 1 ;
+	schema:identifier "4149941a21b9" .
+doc:FactsProj2030 schema1:value "32"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+_:bfbc3dabd234c6e681fc0c9397a508be rdf:reifies <<( doc:FactsProj2030 schema1:value "32"^^<http://www.w3.org/2001/XMLSchema#decimal> )>> ;
+	prov:wasDerivedFrom doc:4149941a21b9 .
+doc:FactsProj2030 a cco:DescriptiveInformationContentEntity .
+_:eba5b30b60d5a3683206a25d449b0acf rdf:reifies <<( doc:FactsProj2030 rdf:type cco:DescriptiveInformationContentEntity )>> ;
+	prov:wasDerivedFrom doc:4149941a21b9 .
+doc:FactsNoveltyFeature cco:describes doc:FactsRn .
+_:b730a2dc08f2a86ea79d63ff8235f049 rdf:reifies <<( doc:FactsNoveltyFeature cco:describes doc:FactsRn )>> ;
+	prov:wasDerivedFrom doc:4149941a21b9 .
+doc:FactsVibrationSoundAnalysis a None:Data_mining_technique_function .
+_:a7861958e6506a035fca2c5ae0c38dc9 rdf:reifies <<( doc:FactsVibrationSoundAnalysis rdf:type None:Data_mining_technique_function )>> ;
+	prov:wasDerivedFrom doc:4149941a21b9 .
+doc:FactsWindTurbineBlade None:has_text_value "wind turbine blade (maintainable item)" .
+_:e3737c79af90cd133b1d388b2b119ad9 rdf:reifies <<( doc:FactsWindTurbineBlade None:has_text_value "wind turbine blade (maintainable item)" )>> ;
+	prov:wasDerivedFrom doc:4149941a21b9 .
+doc:FactsNormalization_1 a cco:Algorithm .
+_:dbeb6e2ca81af81aa1041a8adf4e3e45 rdf:reifies <<( doc:FactsNormalization_1 rdf:type cco:Algorithm )>> ;
+	prov:wasDerivedFrom doc:4149941a21b9 .
+doc:FactsRul_1 a None:Remaining_useful_life_estimation .
+_:b00ece56ae4bea0bb86ac69870fb4f91 rdf:reifies <<( doc:FactsRul_1 rdf:type None:Remaining_useful_life_estimation )>> ;
+	prov:wasDerivedFrom doc:4149941a21b9 .
+doc:FactsWindTurbineBlade obo:RO_0000086 doc:FactsFatigue .
+_:ddcb5a18395d2a62dac5f7d037724510 rdf:reifies <<( doc:FactsWindTurbineBlade obo:RO_0000086 doc:FactsFatigue )>> ;
+	prov:wasDerivedFrom doc:4149941a21b9 .
+doc:FactsVibrationSoundAnalysis None:has_text_value "early research analyzed vibrations and sounds to detect cracks, erosion, or delamination" .
+_:bba6a02217b406740c32ffad2a03e9cf rdf:reifies <<( doc:FactsVibrationSoundAnalysis None:has_text_value "early research analyzed vibrations and sounds to detect cracks, erosion, or delamination" )>> ;
+	prov:wasDerivedFrom doc:4149941a21b9 .
+doc:FactsIceAccumulation a obo:BFO_0000019 .
+_:d275bb7c979a07e848f4fd93c49c06d7 rdf:reifies <<( doc:FactsIceAccumulation rdf:type obo:BFO_0000019 )>> ;
+	prov:wasDerivedFrom doc:4149941a21b9 .
+doc:FactsVibrationSoundAnalysis cco:is_about doc:FactsCracking .
+_:d2b259250732175779ed1ab0893917d9 rdf:reifies <<( doc:FactsVibrationSoundAnalysis cco:is_about doc:FactsCracking )>> ;
+	prov:wasDerivedFrom doc:4149941a21b9 .
+doc:FactsWorldElectricityMix a obo:BFO_0000001 .
+_:ced38f1672f90343ab6febd7dd764406 rdf:reifies <<( doc:FactsWorldElectricityMix rdf:type obo:BFO_0000001 )>> ;
+	prov:wasDerivedFrom doc:4149941a21b9 .
+doc:FactsProj2030 None:has_text_value "IEA projects 46% of global electricity will come from renewable energy sources by 2030" .
+_:b857730737fa62a9bd934046ad845a57 rdf:reifies <<( doc:FactsProj2030 None:has_text_value "IEA projects 46% of global electricity will come from renewable energy sources by 2030" )>> ;
+	prov:wasDerivedFrom doc:4149941a21b9 .
+doc:FactsProj2030 None:has_text_value "IEA projects over 32% of the world's electricity will come from renewable sources by 2024" .
+_:d33b9ba4c32ea1bcfff5fecc95dafcad rdf:reifies <<( doc:FactsProj2030 None:has_text_value "IEA projects over 32% of the world's electricity will come from renewable sources by 2024" )>> ;
+	prov:wasDerivedFrom doc:4149941a21b9 .
+doc:FactsNormalization_1 None:has_text_value "entire numerical feature set was normalized before modeling to guarantee consistent scaling" .
+_:d30f77dc92fea300a7a1f2c05acabde0 rdf:reifies <<( doc:FactsNormalization_1 None:has_text_value "entire numerical feature set was normalized before modeling to guarantee consistent scaling" )>> ;
+	prov:wasDerivedFrom doc:4149941a21b9 .
+doc:FactsWindTurbineBlade a None:Maintainable_item .
+_:be8df2d8ad38a39843ff3ed204d10480 rdf:reifies <<( doc:FactsWindTurbineBlade rdf:type None:Maintainable_item )>> ;
+	prov:wasDerivedFrom doc:4149941a21b9 .
+doc:FactsFaultDetectionFunction cco:is_about doc:FactsWindTurbineBlade .
+_:c6e90ad99545c3862e290939fc7dcafa rdf:reifies <<( doc:FactsFaultDetectionFunction cco:is_about doc:FactsWindTurbineBlade )>> ;
+	prov:wasDerivedFrom doc:4149941a21b9 .
+doc:FactsFaultIdentification a None:Fault_feature_extraction .
+_:ee14a6c72f78edfa05920a305494f7e9 rdf:reifies <<( doc:FactsFaultIdentification rdf:type None:Fault_feature_extraction )>> ;
+	prov:wasDerivedFrom doc:4149941a21b9 .
+doc:FactsBladeFailureIncrease a schema1:Event .
+_:dd321b8415bde888c349c876a92f273 rdf:reifies <<( doc:FactsBladeFailureIncrease rdf:type schema1:Event )>> ;
+	prov:wasDerivedFrom doc:4149941a21b9 .
+doc:FactsNoveltyFeature None:has_text_value "specialized novelty feature providing unambiguous, model-independent information about statistical departures (anomaly detection feature) used by a supervised stacking model" .
+_:e18e55bf921228d06200303c5b401242 rdf:reifies <<( doc:FactsNoveltyFeature None:has_text_value "specialized novelty feature providing unambiguous, model-independent information about statistical departures (anomaly detection feature) used by a supervised stacking model" )>> ;
+	prov:wasDerivedFrom doc:4149941a21b9 .
+doc:FactsFaultIdentification a None:Fault_identification .
+_:dbaa02c523bb2f10c95413cd99040a7d rdf:reifies <<( doc:FactsFaultIdentification rdf:type None:Fault_identification )>> ;
+	prov:wasDerivedFrom doc:4149941a21b9 .
+doc:FactsFaultDetectionFunction None:has_text_value "function aimed at searching for faults by assessing maintainable item parameters (applies to blade faults)" .
+_:b5f4ad1eac023278c58ca2f5969aae98 rdf:reifies <<( doc:FactsFaultDetectionFunction None:has_text_value "function aimed at searching for faults by assessing maintainable item parameters (applies to blade faults)" )>> ;
+	prov:wasDerivedFrom doc:4149941a21b9 .
+doc:FactsNoveltyFeature a None:Data_variable .
+_:c016de8cdb6ca345e25c9a7b3eb0c227 rdf:reifies <<( doc:FactsNoveltyFeature rdf:type None:Data_variable )>> ;
+	prov:wasDerivedFrom doc:4149941a21b9 .
+doc:FactsIea rdfs:label "International Energy Agency" .
+_:aa7b2576ed838667c5d1a3225f6ea4b1 rdf:reifies <<( doc:FactsIea rdfs:label "International Energy Agency" )>> ;
+	prov:wasDerivedFrom doc:4149941a21b9 .
+doc:FactsErosion a obo:BFO_0000019 .
+_:e8a7996f1c0084679e43e6e4c431d824 rdf:reifies <<( doc:FactsErosion rdf:type obo:BFO_0000019 )>> ;
+	prov:wasDerivedFrom doc:4149941a21b9 .
+doc:FactsImputation None:has_text_value "missing values caused by time-series transformations were filled in (imputation step)" .
+_:f0362bf3408fdfe3090cb5d465146b26 rdf:reifies <<( doc:FactsImputation None:has_text_value "missing values caused by time-series transformations were filled in (imputation step)" )>> ;
+	prov:wasDerivedFrom doc:4149941a21b9 .
+_:a1d8d85fcde915d0fef4ebdf1f1d3f20 prov:wasDerivedFrom doc:4149941a21b9 .
+doc:FactsProj2030 cco:is_about doc:FactsIea .
+_:b22b93ed78d9bbc933306076e44c5fbc rdf:reifies <<( doc:FactsProj2030 cco:is_about doc:FactsIea )>> ;
+	prov:wasDerivedFrom doc:4149941a21b9 .
+doc:FactsProj2030 cco:describes doc:FactsWorldElectricityMix .
+_:c932e256a4e7cb5dbdde4c83b2a51049 rdf:reifies <<( doc:FactsProj2030 cco:describes doc:FactsWorldElectricityMix )>> ;
+	prov:wasDerivedFrom doc:4149941a21b9 .
+doc:FactsFaultDetectionFunction a None:Fault_detection .
+_:ab87727f2e97e88e544a545d252ef6d3 rdf:reifies <<( doc:FactsFaultDetectionFunction rdf:type None:Fault_detection )>> ;
+	prov:wasDerivedFrom doc:4149941a21b9 .
+doc:FactsProj2030 schema1:value "46"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+_:eafbb12c0831ae752760692baea8cad rdf:reifies <<( doc:FactsProj2030 schema1:value "46"^^<http://www.w3.org/2001/XMLSchema#decimal> )>> ;
+	prov:wasDerivedFrom doc:4149941a21b9 .
+doc:FactsHealthAssessment a None:Health_assessment .
+_:f7dea705637d5fcf79f328a18a78e14 rdf:reifies <<( doc:FactsHealthAssessment rdf:type None:Health_assessment )>> ;
+	prov:wasDerivedFrom doc:4149941a21b9 .
+doc:FactsFaultIdentification cco:is_about doc:FactsWindTurbineBlade .
+_:bd1891912f58cdd32381d7bf71b77d2f rdf:reifies <<( doc:FactsFaultIdentification cco:is_about doc:FactsWindTurbineBlade )>> ;
+	prov:wasDerivedFrom doc:4149941a21b9 .
+doc:FactsFatigue a obo:BFO_0000019 .
+_:bc67f3cca1fa8aa744027047731f4560 rdf:reifies <<( doc:FactsFatigue rdf:type obo:BFO_0000019 )>> ;
+	prov:wasDerivedFrom doc:4149941a21b9 .
+doc:FactsBladeFailureIncrease schema1:about doc:FactsWindTurbineBlade .
+_:c575e2ce7593d9100247bab6fce843d3 rdf:reifies <<( doc:FactsBladeFailureIncrease schema1:about doc:FactsWindTurbineBlade )>> ;
+	prov:wasDerivedFrom doc:4149941a21b9 .
+doc:FactsCracking a obo:BFO_0000019 .
+_:b9e91c0e8bc2ea63b20d8954330dc347 rdf:reifies <<( doc:FactsCracking rdf:type obo:BFO_0000019 )>> ;
+	prov:wasDerivedFrom doc:4149941a21b9 .
+doc:FactsWindTurbineBlade obo:RO_0000086 doc:FactsErosion .
+_:f34200d4cd3b1e26b4de2c7124067c4a rdf:reifies <<( doc:FactsWindTurbineBlade obo:RO_0000086 doc:FactsErosion )>> ;
+	prov:wasDerivedFrom doc:4149941a21b9 .
+doc:FactsWorldElectricityMix rdfs:label "world electricity generation mix" .
+_:b9f2019428421925ca859e99ae194f9a rdf:reifies <<( doc:FactsWorldElectricityMix rdfs:label "world electricity generation mix" )>> ;
+	prov:wasDerivedFrom doc:4149941a21b9 .
+doc:FactsHealthModelling a None:Health_modelling .
+_:e6c733f77b5d9dc8541a9c47b976fa81 rdf:reifies <<( doc:FactsHealthModelling rdf:type None:Health_modelling )>> ;
+	prov:wasDerivedFrom doc:4149941a21b9 .
+doc:FactsWindTurbineBlade obo:RO_0000086 doc:FactsIceAccumulation .
+_:bb036f2e464917e6037e7c6f23cde5f2 rdf:reifies <<( doc:FactsWindTurbineBlade obo:RO_0000086 doc:FactsIceAccumulation )>> ;
+	prov:wasDerivedFrom doc:4149941a21b9 .
+doc:FactsRn None:has_text_value "supervised stacking architecture used for classification; accepts an independent novelty feature to improve detection of infrequent critical occurrences" .
+_:bc20953100fdb4bc205db3446684833e rdf:reifies <<( doc:FactsRn None:has_text_value "supervised stacking architecture used for classification; accepts an independent novelty feature to improve detection of infrequent critical occurrences" )>> ;
+	prov:wasDerivedFrom doc:4149941a21b9 .
+doc:FactsNoveltyFeature cco:is_about None:Deviation_detection .
+_:d6fe00c789e6bca388fea4e5df2868da rdf:reifies <<( doc:FactsNoveltyFeature cco:is_about None:Deviation_detection )>> ;
+	prov:wasDerivedFrom doc:4149941a21b9 .
+doc:FactsIea a schema1:Organization .
+_:f2bb03ce09ad0d6ac45b17485366fc21 rdf:reifies <<( doc:FactsIea rdf:type schema1:Organization )>> ;
+	prov:wasDerivedFrom doc:4149941a21b9 .
+doc:FactsBladeFailureIncrease None:has_text_value "turbine blade failures have increased as wind turbines become more widespread" .
+_:d5d762b6787e1bfa8ea373843b855f rdf:reifies <<( doc:FactsBladeFailureIncrease None:has_text_value "turbine blade failures have increased as wind turbines become more widespread" )>> ;
+	prov:wasDerivedFrom doc:4149941a21b9 .
+doc:FactsArticle1_3 None:has_text_value "Open Access article; introduction discusses renewable energy growth, wind turbine blade failures, monitoring and predictive maintenance approaches." .
+_:b7de72b973532974ec28a339697d3d4b rdf:reifies <<( doc:FactsArticle1_3 None:has_text_value "Open Access article; introduction discusses renewable energy growth, wind turbine blade failures, monitoring and predictive maintenance approaches." )>> ;
+	prov:wasDerivedFrom doc:4149941a21b9 .
+doc:FactsRn a None:Predictive_maintenance_model .
+_:b3c01a173cdbdd23db703b22ba1d874e rdf:reifies <<( doc:FactsRn rdf:type None:Predictive_maintenance_model )>> ;
+	prov:wasDerivedFrom doc:4149941a21b9 .
+doc:FactsWindTurbineBlade obo:RO_0000086 doc:FactsCracking .
+_:ca9e3583149a4691ac1a4a001655d84 rdf:reifies <<( doc:FactsWindTurbineBlade obo:RO_0000086 doc:FactsCracking )>> ;
+	prov:wasDerivedFrom doc:4149941a21b9 .
+doc:FactsRul_1 cco:is_about doc:FactsWindTurbineBlade .
+_:bfcee32c90abc949784b518cd87c0b08 rdf:reifies <<( doc:FactsRul_1 cco:is_about doc:FactsWindTurbineBlade )>> ;
+	prov:wasDerivedFrom doc:4149941a21b9 .
+doc:FactsImputation a cco:Algorithm .
+_:c295298006a8f19a6fe8259615a14289 rdf:reifies <<( doc:FactsImputation rdf:type cco:Algorithm )>> ;
+	prov:wasDerivedFrom doc:4149941a21b9 .
+doc:416ff3b17765 a prov:Entity , schema:text ;
+	prov:generatedAtTime "2026-06-12T02:42:01.906417Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+	schema:position 2 ;
+	schema:identifier "416ff3b17765" .
+doc:FactsAcousticResidualNetwork a None:Predictive_maintenance_model .
+_:a0251aaaeba760cb2d541309366d2af0 rdf:reifies <<( doc:FactsAcousticResidualNetwork rdf:type None:Predictive_maintenance_model )>> ;
+	prov:wasDerivedFrom doc:416ff3b17765 .
+doc:FactsRn None:has_design_detail doc:FactsKeywords1 .
+_:bd8d25c1380db32d5b93280c7f9ec911 rdf:reifies <<( doc:FactsRn None:has_design_detail doc:FactsKeywords1 )>> ;
+	prov:wasDerivedFrom doc:416ff3b17765 .
+_:e2c6c4bf0e671b566c70705149814b66 prov:wasDerivedFrom doc:416ff3b17765 .
+doc:FactsVisualInspection_1 a None:Fault_detection .
+_:a758e961e284ed647c3861c6c19e7bb3 rdf:reifies <<( doc:FactsVisualInspection_1 rdf:type None:Fault_detection )>> ;
+	prov:wasDerivedFrom doc:416ff3b17765 .
+doc:FactsUavImages a None:Data_variable .
+_:d5570d5b0b37fa727ae307d2fdd6ea3 rdf:reifies <<( doc:FactsUavImages rdf:type None:Data_variable )>> ;
+	prov:wasDerivedFrom doc:416ff3b17765 .
+_:d031dacdd57a3408091a8f7061005e62 prov:wasDerivedFrom doc:416ff3b17765 .
+doc:FactsAccuracyGe cco:is_about doc:FactsRn .
+_:d3d9e086d99d522f39bfb1b6399b6360 rdf:reifies <<( doc:FactsAccuracyGe cco:is_about doc:FactsRn )>> ;
+	prov:wasDerivedFrom doc:416ff3b17765 .
+doc:FactsAccuracyGe None:has_interger_value 97 .
+_:fea7b4820fc5f3b9831e073afd2167d4 rdf:reifies <<( doc:FactsAccuracyGe None:has_interger_value 97 )>> ;
+	prov:wasDerivedFrom doc:416ff3b17765 .
+doc:FactsAccuracyGe None:has_text_value "enhances feature extraction from vibration data enabling accurate fault type prediction in complex scenarios" .
+_:dca3394f8302711f88077538c0c0ac23 rdf:reifies <<( doc:FactsAccuracyGe None:has_text_value "enhances feature extraction from vibration data enabling accurate fault type prediction in complex scenarios" )>> ;
+	prov:wasDerivedFrom doc:416ff3b17765 .
+_:b3c01a173cdbdd23db703b22ba1d874e prov:wasDerivedFrom doc:416ff3b17765 .
+doc:FactsKeywords1 None:has_text_value "1D CNN + BiLSTM + AdaBoost hybrid model; improved diagnostic robustness across erosion, icing, and compound fault scenarios" .
+_:ec3b045305b7d2ad9aa29dc8d709067e rdf:reifies <<( doc:FactsKeywords1 None:has_text_value "1D CNN + BiLSTM + AdaBoost hybrid model; improved diagnostic robustness across erosion, icing, and compound fault scenarios" )>> ;
+	prov:wasDerivedFrom doc:416ff3b17765 .
+doc:FactsRn None:describes_type None:Future_state_forecast .
+_:d164f75da0972fedda2cd9d5425476b7 rdf:reifies <<( doc:FactsRn None:describes_type None:Future_state_forecast )>> ;
+	prov:wasDerivedFrom doc:416ff3b17765 .
+doc:FactsKeywords1 None:has_text_value "guided crack segmentation; multimodal information fusion; attention mechanisms" .
+_:efa999f4945037cf9c040b1d284f2f5d rdf:reifies <<( doc:FactsKeywords1 None:has_text_value "guided crack segmentation; multimodal information fusion; attention mechanisms" )>> ;
+	prov:wasDerivedFrom doc:416ff3b17765 .
+doc:FactsThermalImaging a None:Data_variable .
+_:e534dfdbfee656e37f58a31e8be6746d rdf:reifies <<( doc:FactsThermalImaging rdf:type None:Data_variable )>> ;
+	prov:wasDerivedFrom doc:416ff3b17765 .
+doc:FactsInfraredThermography a None:Fault_detection .
+_:dad85564d232b721e1815eabff71d799 rdf:reifies <<( doc:FactsInfraredThermography rdf:type None:Fault_detection )>> ;
+	prov:wasDerivedFrom doc:416ff3b17765 .
+doc:FactsAccuracyGe None:has_text_value "detection accuracy reported >90% when CNN applied to UAV images, thermal imaging, and blade surface images" .
+_:f5e75858317d10a4ee8ee105d95ab6ae rdf:reifies <<( doc:FactsAccuracyGe None:has_text_value "detection accuracy reported >90% when CNN applied to UAV images, thermal imaging, and blade surface images" )>> ;
+	prov:wasDerivedFrom doc:416ff3b17765 .
+doc:FactsRandomForestApp a None:Performance_value .
+_:a694895b544b14745da99bd429918b53 rdf:reifies <<( doc:FactsRandomForestApp rdf:type None:Performance_value )>> ;
+	prov:wasDerivedFrom doc:416ff3b17765 .
+doc:FactsRandomForest_1 a None:Predictive_maintenance_model .
+_:c781adcbf9ae8b6e9007e6c38f8c2e0d rdf:reifies <<( doc:FactsRandomForest_1 rdf:type None:Predictive_maintenance_model )>> ;
+	prov:wasDerivedFrom doc:416ff3b17765 .
+doc:FactsAccuracyGe None:has_text_value "97% accuracy achieved with Relief and KNN across several databases" .
+_:aff389da31f1b6f7aefd535bfdbb8c0c rdf:reifies <<( doc:FactsAccuracyGe None:has_text_value "97% accuracy achieved with Relief and KNN across several databases" )>> ;
+	prov:wasDerivedFrom doc:416ff3b17765 .
+doc:FactsPgiCrackNet a None:Predictive_maintenance_model .
+_:f969ef2244fbde205905907e79e10a34 rdf:reifies <<( doc:FactsPgiCrackNet rdf:type None:Predictive_maintenance_model )>> ;
+	prov:wasDerivedFrom doc:416ff3b17765 .
+doc:FactsAccuracyGe None:has_text_value "performed exceptionally well in classification tasks" .
+_:b6696f604a43a7c739682ecca685dfa1 rdf:reifies <<( doc:FactsAccuracyGe None:has_text_value "performed exceptionally well in classification tasks" )>> ;
+	prov:wasDerivedFrom doc:416ff3b17765 .
+doc:FactsAccuracyGe None:has_text_value "excellent precision" .
+_:de58180655b2dd1f83afdf9b3c44fff rdf:reifies <<( doc:FactsAccuracyGe None:has_text_value "excellent precision" )>> ;
+	prov:wasDerivedFrom doc:416ff3b17765 .
+doc:FactsAccuracyGe None:has_text_value "promising results for fatigue detection and long-term wind speed forecasts" .
+_:d84d9a6dcbf587edaabf86c953580b7e rdf:reifies <<( doc:FactsAccuracyGe None:has_text_value "promising results for fatigue detection and long-term wind speed forecasts" )>> ;
+	prov:wasDerivedFrom doc:416ff3b17765 .
+doc:FactsAccuracyGe None:has_interger_value 90 .
+_:d339ac662880babd0b08252ded93d791 rdf:reifies <<( doc:FactsAccuracyGe None:has_interger_value 90 )>> ;
+	prov:wasDerivedFrom doc:416ff3b17765 .
+doc:FactsRn None:describes_type None:Fault_identification .
+_:d97e121d617b5e82672f1e4232bbc2c rdf:reifies <<( doc:FactsRn None:describes_type None:Fault_identification )>> ;
+	prov:wasDerivedFrom doc:416ff3b17765 .
+doc:FactsRn None:describes_type None:Remaining_useful_life_estimation .
+_:b45e84b52b43bf744b560b69bcfc2893 rdf:reifies <<( doc:FactsRn None:describes_type None:Remaining_useful_life_estimation )>> ;
+	prov:wasDerivedFrom doc:416ff3b17765 .
+doc:FactsRandomForestApp cco:is_about doc:FactsRandomForest_1 .
+_:ac676c70fd78c453fc2b69befe125a5 rdf:reifies <<( doc:FactsRandomForestApp cco:is_about doc:FactsRandomForest_1 )>> ;
+	prov:wasDerivedFrom doc:416ff3b17765 .
+doc:FactsVibrationAnalysis a None:Predictive_maintenance_system_module .
+_:f2461d2f184016c174d14eff2a463f46 rdf:reifies <<( doc:FactsVibrationAnalysis rdf:type None:Predictive_maintenance_system_module )>> ;
+	prov:wasDerivedFrom doc:416ff3b17765 .
+doc:FactsAccuracyGe None:has_text_value "state-of-the-art accuracy on extremely unbalanced datasets using a distance-based classifier" .
+_:ae70a200fd36b76266df8844cfd8fa2a rdf:reifies <<( doc:FactsAccuracyGe None:has_text_value "state-of-the-art accuracy on extremely unbalanced datasets using a distance-based classifier" )>> ;
+	prov:wasDerivedFrom doc:416ff3b17765 .
+doc:FactsRandomForestApp None:has_text_value "used for wind farm power generation prediction and structural fatigue monitoring" .
+_:be837063aabf2f273152416f38c240a1 rdf:reifies <<( doc:FactsRandomForestApp None:has_text_value "used for wind farm power generation prediction and structural fatigue monitoring" )>> ;
+	prov:wasDerivedFrom doc:416ff3b17765 .
+doc:FactsRn a None:Predictive_maintenance_system_module .
+_:bc9b9623ac8ea38b498d3227c9064ebf rdf:reifies <<( doc:FactsRn rdf:type None:Predictive_maintenance_system_module )>> ;
+	prov:wasDerivedFrom doc:416ff3b17765 .
+doc:FactsRn None:describes_type None:Fault_detection .
+_:ba7f94c54924bc29922f0bfe76d12c78 rdf:reifies <<( doc:FactsRn None:describes_type None:Fault_detection )>> ;
+	prov:wasDerivedFrom doc:416ff3b17765 .
+doc:FactsAccuracyGe None:has_text_value "surpassed BPNN and PSO_ANN in accuracy, convergence speed, and resilience" .
+_:a76b086b7d77af9b76a6fb8c0ffbc0db rdf:reifies <<( doc:FactsAccuracyGe None:has_text_value "surpassed BPNN and PSO_ANN in accuracy, convergence speed, and resilience" )>> ;
+	prov:wasDerivedFrom doc:416ff3b17765 .
+doc:FactsVibrationData a None:Data_variable .
+_:dd55301ed5fceba824c23d8378546f6e rdf:reifies <<( doc:FactsVibrationData rdf:type None:Data_variable )>> ;
+	prov:wasDerivedFrom doc:416ff3b17765 .
+doc:FactsMicrowaveImaging a None:Fault_detection .
+_:bba75b65319737f7f3a3f2aee848e29e rdf:reifies <<( doc:FactsMicrowaveImaging rdf:type None:Fault_detection )>> ;
+	prov:wasDerivedFrom doc:416ff3b17765 .
+obo:BFO_0000001 owl:sameAs obo:BFO_0000019 .

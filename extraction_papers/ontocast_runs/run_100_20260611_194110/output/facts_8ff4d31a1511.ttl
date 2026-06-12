@@ -1,0 +1,484 @@
+@prefix None: <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD/seed#> .
+@prefix cco: <http://www.ontologyrepository.com/CommonCoreOntologies/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doc: <https://growgraph.dev/doc/8ff4d31a1511/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix obo: <http://purl.obolibrary.org/obo/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix cd: <https://growgraph.dev/facts> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix schema: <https://schema.org/> .
+@prefix schema1: <http://schema.org/> .
+doc:01aa95ed145d a prov:Entity , schema:text ;
+	prov:generatedAtTime "2026-06-12T07:39:24.962371Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+	schema:position 0 ;
+	schema:identifier "01aa95ed145d" .
+doc:Factsauthor3 schema1:email "patrick.harfmann@hs-aalen.de" .
+_:c00535c8a78f158d53c23308bc04c15 rdf:reifies <<( doc:Factsauthor3 schema1:email "patrick.harfmann@hs-aalen.de" )>> ;
+	prov:wasDerivedFrom doc:01aa95ed145d .
+doc:Factscase1 a None:Predictive_maintenance_case .
+_:a604fe84cac56ab2b76e3e3313f81cb8 rdf:reifies <<( doc:Factscase1 rdf:type None:Predictive_maintenance_case )>> ;
+	prov:wasDerivedFrom doc:01aa95ed145d .
+doc:Factscase1 cco:is_about doc:FactsenhancedPdiagram .
+_:aa998031234cb6380e3b045b207192e2 rdf:reifies <<( doc:Factscase1 cco:is_about doc:FactsenhancedPdiagram )>> ;
+	prov:wasDerivedFrom doc:01aa95ed145d .
+doc:Factsauthor3 a schema1:Person .
+_:f74b4ca6fb992be631bed3f8aa89479e rdf:reifies <<( doc:Factsauthor3 rdf:type schema1:Person )>> ;
+	prov:wasDerivedFrom doc:01aa95ed145d .
+doc:Factsdesign_detail1_2 a None:Design_detail .
+_:ee7d0899c5ec1e2ad796b085a036ebe6 rdf:reifies <<( doc:Factsdesign_detail1_2 rdf:type None:Design_detail )>> ;
+	prov:wasDerivedFrom doc:01aa95ed145d .
+doc:FactsenhancedPdiagram cco:describes doc:Factsdesign_detail1_2 .
+_:f1a64d8e70125f5885273f3b718e4fea rdf:reifies <<( doc:FactsenhancedPdiagram cco:describes doc:Factsdesign_detail1_2 )>> ;
+	prov:wasDerivedFrom doc:01aa95ed145d .
+doc:Factsinst2 schema1:address "Aalen, Germany" .
+_:a170e3f77e722a123bee64822c074af6 rdf:reifies <<( doc:Factsinst2 schema1:address "Aalen, Germany" )>> ;
+	prov:wasDerivedFrom doc:01aa95ed145d .
+doc:Factsarticle1_19 schema1:author doc:Factsauthor3 .
+_:dd6e035d4212144fa9b23f8ad0ff206b rdf:reifies <<( doc:Factsarticle1_19 schema1:author doc:Factsauthor3 )>> ;
+	prov:wasDerivedFrom doc:01aa95ed145d .
+doc:FactsscrewCompressor rdfs:label "screw compressor" .
+_:ff8c978f92b3567cd44536df02ca5ecd rdf:reifies <<( doc:FactsscrewCompressor rdfs:label "screw compressor" )>> ;
+	prov:wasDerivedFrom doc:01aa95ed145d .
+doc:Factsauthor3 schema1:familyName "Harfmann" .
+_:f1e025339f30a5a97e2f29f531ddf2d5 rdf:reifies <<( doc:Factsauthor3 schema1:familyName "Harfmann" )>> ;
+	prov:wasDerivedFrom doc:01aa95ed145d .
+doc:Factsauthor3 schema1:affiliation doc:Factsinst2 .
+_:d1f96415eb986cf0e64e891ffd83007e rdf:reifies <<( doc:Factsauthor3 schema1:affiliation doc:Factsinst2 )>> ;
+	prov:wasDerivedFrom doc:01aa95ed145d .
+doc:Factsarticle1_19 cco:is_about doc:FactsenhancedPdiagram .
+_:d89e504dbf5a74282ed33f23bb4dcca0 rdf:reifies <<( doc:Factsarticle1_19 cco:is_about doc:FactsenhancedPdiagram )>> ;
+	prov:wasDerivedFrom doc:01aa95ed145d .
+doc:Factsarticle1_19 None:has_publication_year doc:Factsarticle1_pubyear .
+_:c9242615e745470abc9c10cffd0e46a7 rdf:reifies <<( doc:Factsarticle1_19 None:has_publication_year doc:Factsarticle1_pubyear )>> ;
+	prov:wasDerivedFrom doc:01aa95ed145d .
+doc:FactsscrewCompressor a None:Maintainable_item .
+_:e1271cb4138624e6fc34d479ab36502d rdf:reifies <<( doc:FactsscrewCompressor rdf:type None:Maintainable_item )>> ;
+	prov:wasDerivedFrom doc:01aa95ed145d .
+doc:Factsauthor3 schema1:givenName "Marcus" .
+_:c88a3437c9b15f4659dda5deb8030cf5 rdf:reifies <<( doc:Factsauthor3 schema1:givenName "Marcus" )>> ;
+	prov:wasDerivedFrom doc:01aa95ed145d .
+doc:FactsenhancedPdiagram cco:describes doc:FactsscrewCompressor .
+_:a606873d0d7a08b8d1f65cd2838e4d7b rdf:reifies <<( doc:FactsenhancedPdiagram cco:describes doc:FactsscrewCompressor )>> ;
+	prov:wasDerivedFrom doc:01aa95ed145d .
+doc:Factsauthor3 schema1:givenName "Patrick" .
+_:fdb5331c698cf7e4599c6f2b448d60ed rdf:reifies <<( doc:Factsauthor3 schema1:givenName "Patrick" )>> ;
+	prov:wasDerivedFrom doc:01aa95ed145d .
+doc:Factsarticle1_19 a None:Predictive_Maintenance_Article .
+_:ca066fa23d107be535cc6976e03d2176 rdf:reifies <<( doc:Factsarticle1_19 rdf:type None:Predictive_Maintenance_Article )>> ;
+	prov:wasDerivedFrom doc:01aa95ed145d .
+doc:Factsvalidation1 None:has_text_value "Methodology validated using a screw compressor as a representative system (case study)." .
+_:cc94200e3da350e106ed87c0ec4cd6e8 rdf:reifies <<( doc:Factsvalidation1 None:has_text_value "Methodology validated using a screw compressor as a representative system (case study)." )>> ;
+	prov:wasDerivedFrom doc:01aa95ed145d .
+doc:Factsarticle1_19 None:has_title doc:Factsarticle1_title_7 .
+_:d5f9a6e35743c88e18b8a76d69a37699 rdf:reifies <<( doc:Factsarticle1_19 None:has_title doc:Factsarticle1_title_7 )>> ;
+	prov:wasDerivedFrom doc:01aa95ed145d .
+doc:Factsauthor3 schema1:givenName "Akash Mangaluru" .
+_:f58caa205090b3d5b402729d69bfd1e4 rdf:reifies <<( doc:Factsauthor3 schema1:givenName "Akash Mangaluru" )>> ;
+	prov:wasDerivedFrom doc:01aa95ed145d .
+doc:Factsinst2 schema1:name "Institute of Drive Technology, Aalen University of Applied Sciences" .
+_:cb4783821bfab9d483774ac2238faf18 rdf:reifies <<( doc:Factsinst2 schema1:name "Institute of Drive Technology, Aalen University of Applied Sciences" )>> ;
+	prov:wasDerivedFrom doc:01aa95ed145d .
+doc:Factsinst2 schema1:name "Faculty of Electronics and Computer Science, Aalen University of Applied Sciences" .
+_:c06d3cdd4296eb0289d241eaf935c33b rdf:reifies <<( doc:Factsinst2 schema1:name "Faculty of Electronics and Computer Science, Aalen University of Applied Sciences" )>> ;
+	prov:wasDerivedFrom doc:01aa95ed145d .
+doc:Factsauthor3 schema1:familyName "Kopp" .
+_:ecc7043d6dc243c7c0b2bf67feaf37b0 rdf:reifies <<( doc:Factsauthor3 schema1:familyName "Kopp" )>> ;
+	prov:wasDerivedFrom doc:01aa95ed145d .
+doc:Factsvalidation1 cco:is_about doc:FactsenhancedPdiagram .
+_:a79e4db9d4f15bc17b96b0e74a2bb8e6 rdf:reifies <<( doc:Factsvalidation1 cco:is_about doc:FactsenhancedPdiagram )>> ;
+	prov:wasDerivedFrom doc:01aa95ed145d .
+doc:Factsinst2 a schema1:Organization .
+_:a01970eb160fd0f4ef8cbf17efaecc14 rdf:reifies <<( doc:Factsinst2 rdf:type schema1:Organization )>> ;
+	prov:wasDerivedFrom doc:01aa95ed145d .
+doc:Factscase1 cco:designates doc:FactsenhancedPdiagram .
+_:a471c1d088f7b6deabb8bbcfecf176c8 rdf:reifies <<( doc:Factscase1 cco:designates doc:FactsenhancedPdiagram )>> ;
+	prov:wasDerivedFrom doc:01aa95ed145d .
+doc:Factsvalidation1 a cco:DescriptiveInformationContentEntity .
+_:d2fe916498a4cfecaf9fb066a4b2667b rdf:reifies <<( doc:Factsvalidation1 rdf:type cco:DescriptiveInformationContentEntity )>> ;
+	prov:wasDerivedFrom doc:01aa95ed145d .
+doc:Factsarticle1_title_7 a None:Article_title .
+_:fe526e9dd5d6d6bd181fd348ad5691cb rdf:reifies <<( doc:Factsarticle1_title_7 rdf:type None:Article_title )>> ;
+	prov:wasDerivedFrom doc:01aa95ed145d .
+doc:Factsarticle1_pubyear a None:Publication_year .
+_:fd46036cfbc764fc3e152fff8778609 rdf:reifies <<( doc:Factsarticle1_pubyear rdf:type None:Publication_year )>> ;
+	prov:wasDerivedFrom doc:01aa95ed145d .
+doc:Factsauthor3 schema1:givenName "Lennart" .
+_:b72e5520ff9f8bf3cf7e5397d028295a rdf:reifies <<( doc:Factsauthor3 schema1:givenName "Lennart" )>> ;
+	prov:wasDerivedFrom doc:01aa95ed145d .
+doc:Factsauthor3 schema1:familyName "Liebschner" .
+_:d87d59b00558530549c0de3f30728b39 rdf:reifies <<( doc:Factsauthor3 schema1:familyName "Liebschner" )>> ;
+	prov:wasDerivedFrom doc:01aa95ed145d .
+doc:FactsenhancedPdiagram a None:Predictive_maintenance_model .
+_:f4f2e2a61f85db53401189601d4318c8 rdf:reifies <<( doc:FactsenhancedPdiagram rdf:type None:Predictive_maintenance_model )>> ;
+	prov:wasDerivedFrom doc:01aa95ed145d .
+doc:Factsvalidation1 cco:is_about doc:FactsscrewCompressor .
+_:d141e3b460267d2f2712bf673f33c52 rdf:reifies <<( doc:Factsvalidation1 cco:is_about doc:FactsscrewCompressor )>> ;
+	prov:wasDerivedFrom doc:01aa95ed145d .
+doc:Factsauthor3 schema1:familyName "Ramananda" .
+_:c02cf9a898cb67c75411199dc1e4c2d9 rdf:reifies <<( doc:Factsauthor3 schema1:familyName "Ramananda" )>> ;
+	prov:wasDerivedFrom doc:01aa95ed145d .
+doc:Factsinst2 schema1:address "BeethovenstraÃe 1, 73430 Aalen, Germany" .
+_:aa1dfae131af669f177cf09453266635 rdf:reifies <<( doc:Factsinst2 schema1:address "BeethovenstraÃe 1, 73430 Aalen, Germany" )>> ;
+	prov:wasDerivedFrom doc:01aa95ed145d .
+doc:Factsdesign_detail1_2 None:has_text_value "Extends classical parameter diagram with sensor-relevant variables: SI units, expected measurement ranges, sensor assignments; refines output classification into intended, unintended, deviating; provides structured representation of control and noise factors; supports systematic sensor selection and traceability." .
+_:b1c34bdcd30dda904f37ef17f346e107 rdf:reifies <<( doc:Factsdesign_detail1_2 None:has_text_value "Extends classical parameter diagram with sensor-relevant variables: SI units, expected measurement ranges, sensor assignments; refines output classification into intended, unintended, deviating; provides structured representation of control and noise factors; supports systematic sensor selection and traceability." )>> ;
+	prov:wasDerivedFrom doc:01aa95ed145d .
+doc:Factsarticle1_pubyear None:has_interger_value 2026 .
+_:b3bee2d73c26f61b96f6c019d403216f rdf:reifies <<( doc:Factsarticle1_pubyear None:has_interger_value 2026 )>> ;
+	prov:wasDerivedFrom doc:01aa95ed145d .
+doc:Factsarticle1_title_7 None:has_text_value "Enhanced methodology of parameter diagram for system analysis and sensor integration in condition monitoring" .
+_:d77f172411f310f2fbd62c27c392a45d rdf:reifies <<( doc:Factsarticle1_title_7 None:has_text_value "Enhanced methodology of parameter diagram for system analysis and sensor integration in condition monitoring" )>> ;
+	prov:wasDerivedFrom doc:01aa95ed145d .
+doc:2be0c9a3326a a prov:Entity , schema:text ;
+	prov:generatedAtTime "2026-06-12T07:39:24.965368Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+	schema:position 1 ;
+	schema:identifier "2be0c9a3326a" .
+doc:FactsanomalyDetection_1 rdfs:label "anomaly detection" .
+_:fa4dc6b738dd01c56a74eea85a8ae8a7 rdf:reifies <<( doc:FactsanomalyDetection_1 rdfs:label "anomaly detection" )>> ;
+	prov:wasDerivedFrom doc:2be0c9a3326a .
+doc:Factssubfunction_1 a obo:BFO_0000034 .
+_:e99356b6f27052cae2c9983f5d480b6c rdf:reifies <<( doc:Factssubfunction_1 rdf:type obo:BFO_0000034 )>> ;
+	prov:wasDerivedFrom doc:2be0c9a3326a .
+doc:Factstechnical_function_1 cd:description "Describes a clear relationship between input and output variables and performs a specific task" .
+_:e2e4372672eab038eb0b57cd87f5438 rdf:reifies <<( doc:Factstechnical_function_1 cd:description "Describes a clear relationship between input and output variables and performs a specific task" )>> ;
+	prov:wasDerivedFrom doc:2be0c9a3326a .
+doc:FactspDiagram rdfs:label "Noise factors (P-Diagram group)" .
+_:eda3cf4ac9a7f31819bce7980f309801 rdf:reifies <<( doc:FactspDiagram rdfs:label "Noise factors (P-Diagram group)" )>> ;
+	prov:wasDerivedFrom doc:2be0c9a3326a .
+doc:Factstechnical_function_1 cd:has_output doc:FactspDiagram .
+_:cff944a89ce5257fc2f94204e5c9b403 rdf:reifies <<( doc:Factstechnical_function_1 cd:has_output doc:FactspDiagram )>> ;
+	prov:wasDerivedFrom doc:2be0c9a3326a .
+doc:Factswsn a schema1:Thing .
+_:d012338b603834e45fb46787e5df9081 rdf:reifies <<( doc:Factswsn rdf:type schema1:Thing )>> ;
+	prov:wasDerivedFrom doc:2be0c9a3326a .
+doc:FactspDiagram cd:origin doc:FactsgenichiTaguchi .
+_:aa838ae69b407b2453412fc4083612cb rdf:reifies <<( doc:FactspDiagram cd:origin doc:FactsgenichiTaguchi )>> ;
+	prov:wasDerivedFrom doc:2be0c9a3326a .
+doc:FactsconditionMonitoring cd:uses doc:FactsenhancedPdiagram .
+_:d7e8268e98b70307665992a9b098ce9c rdf:reifies <<( doc:FactsconditionMonitoring cd:uses doc:FactsenhancedPdiagram )>> ;
+	prov:wasDerivedFrom doc:2be0c9a3326a .
+doc:Factstechnical_function_1 cd:affected_by doc:FactspDiagram .
+_:e0037c3ae00cfa8499ae00c1f7ef0a1f rdf:reifies <<( doc:Factstechnical_function_1 cd:affected_by doc:FactspDiagram )>> ;
+	prov:wasDerivedFrom doc:2be0c9a3326a .
+doc:FactspDiagram a cco:DescriptiveInformationContentEntity .
+_:c8ed5cbedfbdfccde329573734a28242 rdf:reifies <<( doc:FactspDiagram rdf:type cco:DescriptiveInformationContentEntity )>> ;
+	prov:wasDerivedFrom doc:2be0c9a3326a .
+doc:FactsaiagVdaHandbook rdfs:label "AIAG & VDA FMEA Handbook" .
+_:e4bb245e695b7cb050491550d03190bf rdf:reifies <<( doc:FactsaiagVdaHandbook rdfs:label "AIAG & VDA FMEA Handbook" )>> ;
+	prov:wasDerivedFrom doc:2be0c9a3326a .
+doc:FactsconditionMonitoring rdfs:label "condition monitoring (data-driven, ML-based)" .
+_:ff078983fbb02bbca114a528fa5c3b79 rdf:reifies <<( doc:FactsconditionMonitoring rdfs:label "condition monitoring (data-driven, ML-based)" )>> ;
+	prov:wasDerivedFrom doc:2be0c9a3326a .
+doc:Factstechnical_function_1 cd:has_input doc:FactspDiagram .
+_:a03195d0d6665514c3a1218d6ed294e2 rdf:reifies <<( doc:Factstechnical_function_1 cd:has_input doc:FactspDiagram )>> ;
+	prov:wasDerivedFrom doc:2be0c9a3326a .
+doc:FactsfeatureExtraction_1 rdfs:label "feature extraction" .
+_:abbb478aa6f3e962a9525fcc44c2f36 rdf:reifies <<( doc:FactsfeatureExtraction_1 rdfs:label "feature extraction" )>> ;
+	prov:wasDerivedFrom doc:2be0c9a3326a .
+doc:FactspDiagram cd:has_group doc:FactspDiagram .
+_:e5b9f95825326abe8a514dfe3dea7147 rdf:reifies <<( doc:FactspDiagram cd:has_group doc:FactspDiagram )>> ;
+	prov:wasDerivedFrom doc:2be0c9a3326a .
+doc:FactsaiagVdaHandbook a None:Predictive_Maintenance_Article .
+_:ff2a5423b3a7f01fcb87faebac604a53 rdf:reifies <<( doc:FactsaiagVdaHandbook rdf:type None:Predictive_Maintenance_Article )>> ;
+	prov:wasDerivedFrom doc:2be0c9a3326a .
+doc:Factslubricant_1 rdfs:label "lubricant (component example)" .
+_:c9de8dfa18d0a554a032d783a76ba941 rdf:reifies <<( doc:Factslubricant_1 rdfs:label "lubricant (component example)" )>> ;
+	prov:wasDerivedFrom doc:2be0c9a3326a .
+doc:FactsconditionMonitoring cd:has_infrastructure doc:Factswsn .
+_:c61f0d1572cd3ab605a4041abcfad73d rdf:reifies <<( doc:FactsconditionMonitoring cd:has_infrastructure doc:Factswsn )>> ;
+	prov:wasDerivedFrom doc:2be0c9a3326a .
+doc:Factstechnical_function_1 rdfs:label "technical function (text)" .
+_:c8b648b4ab342c1cc256a8bd8b236b43 rdf:reifies <<( doc:Factstechnical_function_1 rdfs:label "technical function (text)" )>> ;
+	prov:wasDerivedFrom doc:2be0c9a3326a .
+doc:FactspDiagram cd:category "information" .
+_:a5014a7964d46a4cde50c2f07dae0cab rdf:reifies <<( doc:FactspDiagram cd:category "information" )>> ;
+	prov:wasDerivedFrom doc:2be0c9a3326a .
+doc:FactsiotInfrastructure rdfs:label "IoT-based infrastructure" .
+_:a64cbd07500652d7b06e9a59932cd5f rdf:reifies <<( doc:FactsiotInfrastructure rdfs:label "IoT-based infrastructure" )>> ;
+	prov:wasDerivedFrom doc:2be0c9a3326a .
+_:f4f2e2a61f85db53401189601d4318c8 prov:wasDerivedFrom doc:2be0c9a3326a .
+doc:Factssae_j1739 a None:Predictive_Maintenance_Article .
+_:c71401870cccf6f6a092aba9be7e816c rdf:reifies <<( doc:Factssae_j1739 rdf:type None:Predictive_Maintenance_Article )>> ;
+	prov:wasDerivedFrom doc:2be0c9a3326a .
+doc:FactsmlSensorFusion rdfs:label "machine learning for sensor data fusion" .
+_:f02d2035e468620a833558e48fbcc7ce rdf:reifies <<( doc:FactsmlSensorFusion rdfs:label "machine learning for sensor data fusion" )>> ;
+	prov:wasDerivedFrom doc:2be0c9a3326a .
+doc:FactspDiagram rdfs:label "P-Diagram (Parameter diagram)" .
+_:d201f2035a4ece8dda1c62909e396312 rdf:reifies <<( doc:FactspDiagram rdfs:label "P-Diagram (Parameter diagram)" )>> ;
+	prov:wasDerivedFrom doc:2be0c9a3326a .
+doc:FactspDiagram rdfs:label "internal noise factor" .
+_:a08e046e1f1efa92ce26a0db9a8c8a0a rdf:reifies <<( doc:FactspDiagram rdfs:label "internal noise factor" )>> ;
+	prov:wasDerivedFrom doc:2be0c9a3326a .
+doc:FactsgenichiTaguchi a schema1:Person .
+_:a8d6417d183ea216b372a8a2291474d0 rdf:reifies <<( doc:FactsgenichiTaguchi rdf:type schema1:Person )>> ;
+	prov:wasDerivedFrom doc:2be0c9a3326a .
+doc:FactspDiagram rdfs:label "external noise factor" .
+_:eeb04dc59f9251de474225b4ba5aa1de rdf:reifies <<( doc:FactspDiagram rdfs:label "external noise factor" )>> ;
+	prov:wasDerivedFrom doc:2be0c9a3326a .
+doc:FactspDiagram rdfs:label "Output (P-Diagram group)" .
+_:a6c925287308d86c3a14b2d568938692 rdf:reifies <<( doc:FactspDiagram rdfs:label "Output (P-Diagram group)" )>> ;
+	prov:wasDerivedFrom doc:2be0c9a3326a .
+doc:FactspDiagram a None:Data_variable .
+_:f4023bceebd21d70e894638a4a2b88e9 rdf:reifies <<( doc:FactspDiagram rdf:type None:Data_variable )>> ;
+	prov:wasDerivedFrom doc:2be0c9a3326a .
+doc:FactspDiagram cd:category "material" .
+_:ba27c5f42c51baa22e156b6758d1c519 rdf:reifies <<( doc:FactspDiagram cd:category "material" )>> ;
+	prov:wasDerivedFrom doc:2be0c9a3326a .
+doc:FactspDiagram cd:description "Intended function or performance of the system (system output)" .
+_:e36ca91da84ee32b65caf38f45b7676c rdf:reifies <<( doc:FactspDiagram cd:description "Intended function or performance of the system (system output)" )>> ;
+	prov:wasDerivedFrom doc:2be0c9a3326a .
+doc:FactsgenichiTaguchi rdfs:label "Genichi Taguchi" .
+_:ba1d4cd18d82f9a85f7bfce9a60b3849 rdf:reifies <<( doc:FactsgenichiTaguchi rdfs:label "Genichi Taguchi" )>> ;
+	prov:wasDerivedFrom doc:2be0c9a3326a .
+doc:FactsconditionMonitoring cd:has_infrastructure doc:FactsiotInfrastructure .
+_:f0815fa9f91ef7dfc10c53eecd3cf8a5 rdf:reifies <<( doc:FactsconditionMonitoring cd:has_infrastructure doc:FactsiotInfrastructure )>> ;
+	prov:wasDerivedFrom doc:2be0c9a3326a .
+doc:Factsseal_1 a None:Maintainable_item .
+_:ff9f6ec310235fff7ae11d92f3f849fd rdf:reifies <<( doc:Factsseal_1 rdf:type None:Maintainable_item )>> ;
+	prov:wasDerivedFrom doc:2be0c9a3326a .
+doc:FactsconditionMonitoring cd:uses doc:FactsanomalyDetection_1 .
+_:bdfc4f68b61a5af158f1030865ac6478 rdf:reifies <<( doc:FactsconditionMonitoring cd:uses doc:FactsanomalyDetection_1 )>> ;
+	prov:wasDerivedFrom doc:2be0c9a3326a .
+doc:FactsFmea_1 a cco:DirectiveInformationContentEntity .
+_:c340ddb725b0cf256c681096884497a1 rdf:reifies <<( doc:FactsFmea_1 rdf:type cco:DirectiveInformationContentEntity )>> ;
+	prov:wasDerivedFrom doc:2be0c9a3326a .
+doc:Factswsn rdfs:label "wireless sensor network (WSN)" .
+_:a8d1a3605bbdf39e32bb6698689e8ed6 rdf:reifies <<( doc:Factswsn rdfs:label "wireless sensor network (WSN)" )>> ;
+	prov:wasDerivedFrom doc:2be0c9a3326a .
+doc:Factsseal_1 cd:input_count 0 .
+_:deca5e21a2d7206d2753d493e2b081b6 rdf:reifies <<( doc:Factsseal_1 cd:input_count 0 )>> ;
+	prov:wasDerivedFrom doc:2be0c9a3326a .
+doc:Factstechnical_function_1 a obo:BFO_0000034 .
+_:b520e17bcfe259e7edeb397edbd5cd50 rdf:reifies <<( doc:Factstechnical_function_1 rdf:type obo:BFO_0000034 )>> ;
+	prov:wasDerivedFrom doc:2be0c9a3326a .
+doc:FactsconditionMonitoring a None:Predictive_maintenance_system_module .
+_:a270217518404af5c14c4b3f8562e67 rdf:reifies <<( doc:FactsconditionMonitoring rdf:type None:Predictive_maintenance_system_module )>> ;
+	prov:wasDerivedFrom doc:2be0c9a3326a .
+doc:FactspDiagram rdfs:label "output variable" .
+_:cc86eb10b6c1f7b615071ee50a3e1e26 rdf:reifies <<( doc:FactspDiagram rdfs:label "output variable" )>> ;
+	prov:wasDerivedFrom doc:2be0c9a3326a .
+doc:Factssubfunction_1 rdfs:label "subfunction (decomposition)" .
+_:a75fb23ee7f66f1cae1e7782fbb92024 rdf:reifies <<( doc:Factssubfunction_1 rdfs:label "subfunction (decomposition)" )>> ;
+	prov:wasDerivedFrom doc:2be0c9a3326a .
+doc:FactspDiagram rdfs:label "input variable (information)" .
+_:b51078d6cdb84a23d73ba27a7644a3ad rdf:reifies <<( doc:FactspDiagram rdfs:label "input variable (information)" )>> ;
+	prov:wasDerivedFrom doc:2be0c9a3326a .
+doc:Factsseal_1 cd:output_count 0 .
+_:b4b360152cacb339f397657e8ea02d66 rdf:reifies <<( doc:Factsseal_1 cd:output_count 0 )>> ;
+	prov:wasDerivedFrom doc:2be0c9a3326a .
+doc:Factsconnector_1 a None:Maintainable_item .
+_:a8c274150b598d426cf9129d5d5d1592 rdf:reifies <<( doc:Factsconnector_1 rdf:type None:Maintainable_item )>> ;
+	prov:wasDerivedFrom doc:2be0c9a3326a .
+doc:Factslubricant_1 a None:Maintainable_item .
+_:faab68e15a3238060dda5963a85aa152 rdf:reifies <<( doc:Factslubricant_1 rdf:type None:Maintainable_item )>> ;
+	prov:wasDerivedFrom doc:2be0c9a3326a .
+doc:FactsanomalyDetection_1 a None:Deviation_detection .
+_:a18440f99c799488d939d0b054c4319b rdf:reifies <<( doc:FactsanomalyDetection_1 rdf:type None:Deviation_detection )>> ;
+	prov:wasDerivedFrom doc:2be0c9a3326a .
+doc:FactsconditionMonitoring cd:uses doc:FactsfeatureExtraction_1 .
+_:e1d667b022e6a8ce126e1e35b7412bb5 rdf:reifies <<( doc:FactsconditionMonitoring cd:uses doc:FactsfeatureExtraction_1 )>> ;
+	prov:wasDerivedFrom doc:2be0c9a3326a .
+doc:FactsFmea_1 rdfs:label "FMEA (Failure Mode and Effects Analysis)" .
+_:af645c5dd464b39af63997aac2049bfa rdf:reifies <<( doc:FactsFmea_1 rdfs:label "FMEA (Failure Mode and Effects Analysis)" )>> ;
+	prov:wasDerivedFrom doc:2be0c9a3326a .
+doc:FactspDiagram rdfs:label "Input factors (P-Diagram group)" .
+_:ec606369a3a7d25be130c6965c309ba8 rdf:reifies <<( doc:FactspDiagram rdfs:label "Input factors (P-Diagram group)" )>> ;
+	prov:wasDerivedFrom doc:2be0c9a3326a .
+doc:Factssae_j1739 rdfs:label "SAE J1739 standard (origin of handbooks)" .
+_:e46a6639d06d352dde11db9cf765ab4b rdf:reifies <<( doc:Factssae_j1739 rdfs:label "SAE J1739 standard (origin of handbooks)" )>> ;
+	prov:wasDerivedFrom doc:2be0c9a3326a .
+doc:FactspDiagram a obo:BFO_0000019 .
+_:d7a7ba42110cbfab601da0ea8b8e3c3f rdf:reifies <<( doc:FactspDiagram rdf:type obo:BFO_0000019 )>> ;
+	prov:wasDerivedFrom doc:2be0c9a3326a .
+doc:FactspDiagram rdfs:label "Control factors (P-Diagram group)" .
+_:efd2a3d7967b0fad05feca01613974e1 rdf:reifies <<( doc:FactspDiagram rdfs:label "Control factors (P-Diagram group)" )>> ;
+	prov:wasDerivedFrom doc:2be0c9a3326a .
+doc:FactspDiagram rdfs:label "input variable (material)" .
+_:dd32f640c11c9cf791331b53aaab3f64 rdf:reifies <<( doc:FactspDiagram rdfs:label "input variable (material)" )>> ;
+	prov:wasDerivedFrom doc:2be0c9a3326a .
+doc:FactsconditionMonitoring cd:uses doc:FactsmlSensorFusion .
+_:c1ee8ccb86ebaf9d8c4ac352a6e50f0b rdf:reifies <<( doc:FactsconditionMonitoring cd:uses doc:FactsmlSensorFusion )>> ;
+	prov:wasDerivedFrom doc:2be0c9a3326a .
+doc:FactsconditionMonitoring cd:requires_sensor_data true .
+_:ed12b5ab53666eafb441c874162bd9b8 rdf:reifies <<( doc:FactsconditionMonitoring cd:requires_sensor_data true )>> ;
+	prov:wasDerivedFrom doc:2be0c9a3326a .
+doc:FactspDiagram a cco:InformationBearingArtifact .
+_:a12a94c41772087719066f1e6e3ccf55 rdf:reifies <<( doc:FactspDiagram rdf:type cco:InformationBearingArtifact )>> ;
+	prov:wasDerivedFrom doc:2be0c9a3326a .
+doc:FactsenhancedPdiagram rdfs:label "predictive maintenance strategy (model)" .
+_:f3a9687656c906e2ad618089789e2cea rdf:reifies <<( doc:FactsenhancedPdiagram rdfs:label "predictive maintenance strategy (model)" )>> ;
+	prov:wasDerivedFrom doc:2be0c9a3326a .
+doc:FactspDiagram cd:supports doc:FactsFmea_1 .
+_:aea202b0dd43ae7e80f7edcb97a33e24 rdf:reifies <<( doc:FactspDiagram cd:supports doc:FactsFmea_1 )>> ;
+	prov:wasDerivedFrom doc:2be0c9a3326a .
+doc:Factstechnical_function_1 obo:BFO_0000051 doc:Factssubfunction_1 .
+_:a62f0559c04402bdd128b3f2daa72694 rdf:reifies <<( doc:Factstechnical_function_1 obo:BFO_0000051 doc:Factssubfunction_1 )>> ;
+	prov:wasDerivedFrom doc:2be0c9a3326a .
+doc:FactsiotInfrastructure a schema1:Thing .
+_:dd2ef1c2cc03532e1bf340bb12ed3197 rdf:reifies <<( doc:FactsiotInfrastructure rdf:type schema1:Thing )>> ;
+	prov:wasDerivedFrom doc:2be0c9a3326a .
+doc:FactsmlSensorFusion a None:Data_mining_technique_function .
+_:f3dd7f18c6fcdfd4e61a333fba9d61c9 rdf:reifies <<( doc:FactsmlSensorFusion rdf:type None:Data_mining_technique_function )>> ;
+	prov:wasDerivedFrom doc:2be0c9a3326a .
+doc:FactsfeatureExtraction_1 a None:Fault_feature_extraction .
+_:f6d58f3059373d5ef5b33ce8403f6340 rdf:reifies <<( doc:FactsfeatureExtraction_1 rdf:type None:Fault_feature_extraction )>> ;
+	prov:wasDerivedFrom doc:2be0c9a3326a .
+doc:FactsaiagVdaHandbook rdfs:label "Ford FMEA Handbook" .
+_:d491897b2ef4b69f3d341886f8ad8c19 rdf:reifies <<( doc:FactsaiagVdaHandbook rdfs:label "Ford FMEA Handbook" )>> ;
+	prov:wasDerivedFrom doc:2be0c9a3326a .
+doc:FactspDiagram rdfs:label "input variable (energy)" .
+_:d9460efc9893ec1226f2a85891c03338 rdf:reifies <<( doc:FactspDiagram rdfs:label "input variable (energy)" )>> ;
+	prov:wasDerivedFrom doc:2be0c9a3326a .
+doc:Factsseal_1 rdfs:label "seal (component example)" .
+_:b8ecf7a2d438950d459a71a43da30736 rdf:reifies <<( doc:Factsseal_1 rdfs:label "seal (component example)" )>> ;
+	prov:wasDerivedFrom doc:2be0c9a3326a .
+doc:FactspDiagram cd:category "energy" .
+_:e21db4d34d917a2220496c5a494345be rdf:reifies <<( doc:FactspDiagram cd:category "energy" )>> ;
+	prov:wasDerivedFrom doc:2be0c9a3326a .
+doc:Factsconnector_1 rdfs:label "connector (component example)" .
+_:fee300da8f483d794c0256e209478c11 rdf:reifies <<( doc:Factsconnector_1 rdfs:label "connector (component example)" )>> ;
+	prov:wasDerivedFrom doc:2be0c9a3326a .
+doc:df08b47516bb a prov:Entity , schema:text ;
+	prov:generatedAtTime "2026-06-12T07:39:24.970364Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+	schema:position 2 ;
+	schema:identifier "df08b47516bb" .
+doc:FactsVda a schema1:Organization .
+_:d45792cb0e8a07986c5df81d5ef00357 rdf:reifies <<( doc:FactsVda rdf:type schema1:Organization )>> ;
+	prov:wasDerivedFrom doc:df08b47516bb .
+doc:FactsconditionMonitoring dcterms:description "Uses changes in intended and unintended outputs over time to infer system condition." .
+_:dba512bd8ff9c1224b5db85da17fbf38 rdf:reifies <<( doc:FactsconditionMonitoring dcterms:description "Uses changes in intended and unintended outputs over time to infer system condition." )>> ;
+	prov:wasDerivedFrom doc:df08b47516bb .
+doc:FactsconditionMonitoring rdfs:label "Sensor-based condition monitoring" .
+_:ac3c9d81945a3a492e988e1da58b6b41 rdf:reifies <<( doc:FactsconditionMonitoring rdfs:label "Sensor-based condition monitoring" )>> ;
+	prov:wasDerivedFrom doc:df08b47516bb .
+doc:FactspDiagram dcterms:description "Employed during functional analysis to support comprehensive understanding of the system under investigation." .
+_:db4fd56336f91a0e43ee3ca4dd371ce1 rdf:reifies <<( doc:FactspDiagram dcterms:description "Employed during functional analysis to support comprehensive understanding of the system under investigation." )>> ;
+	prov:wasDerivedFrom doc:df08b47516bb .
+doc:FactspDiagram rdfs:label "P-Diagram (Parameter Diagram)" .
+_:ea8af5ba17e8207040b79d296e5f0671 rdf:reifies <<( doc:FactspDiagram rdfs:label "P-Diagram (Parameter Diagram)" )>> ;
+	prov:wasDerivedFrom doc:df08b47516bb .
+doc:FactspDiagram rdfs:label "changes over time" .
+_:a46f3b71abe4bf26e9bd039be48f36e7 rdf:reifies <<( doc:FactspDiagram rdfs:label "changes over time" )>> ;
+	prov:wasDerivedFrom doc:df08b47516bb .
+doc:FactsFordFmeaHandbook schema1:mentions doc:FactspDiagram .
+_:a6360b67dc5d986f2a7afa295243c5b1 rdf:reifies <<( doc:FactsFordFmeaHandbook schema1:mentions doc:FactspDiagram )>> ;
+	prov:wasDerivedFrom doc:df08b47516bb .
+doc:FactspDiagram rdfs:label "customer usage" .
+_:d344c03908bcab6a97365c580631b4f9 rdf:reifies <<( doc:FactspDiagram rdfs:label "customer usage" )>> ;
+	prov:wasDerivedFrom doc:df08b47516bb .
+doc:FactsFord rdfs:label "Ford Motor Company" .
+_:fd4ea8270aa084a124fc0c97de8cd25 rdf:reifies <<( doc:FactsFord rdfs:label "Ford Motor Company" )>> ;
+	prov:wasDerivedFrom doc:df08b47516bb .
+_:c8ed5cbedfbdfccde329573734a28242 prov:wasDerivedFrom doc:df08b47516bb .
+doc:FactspDiagram schema1:creator doc:FactsTaguchi .
+_:d8d5a356cb8c3d26368ca6744ab69db2 rdf:reifies <<( doc:FactspDiagram schema1:creator doc:FactsTaguchi )>> ;
+	prov:wasDerivedFrom doc:df08b47516bb .
+doc:FactsFord a schema1:Organization .
+_:c23bd978b745ad1d118c9c25f93e821e rdf:reifies <<( doc:FactsFord rdf:type schema1:Organization )>> ;
+	prov:wasDerivedFrom doc:df08b47516bb .
+doc:FactspDiagram obo:BFO_0000051 doc:FactspDiagram .
+_:b75ff96c1f93248df279fbefb251814d rdf:reifies <<( doc:FactspDiagram obo:BFO_0000051 doc:FactspDiagram )>> ;
+	prov:wasDerivedFrom doc:df08b47516bb .
+doc:FactsFordFmeaHandbook schema1:isBasedOn doc:Factssae_J1739_standard .
+_:f2385c4f204defcc53ed32f25cefd08c rdf:reifies <<( doc:FactsFordFmeaHandbook schema1:isBasedOn doc:Factssae_J1739_standard )>> ;
+	prov:wasDerivedFrom doc:df08b47516bb .
+doc:FactsFordFmeaHandbook a schema1:CreativeWork .
+_:cce26935f0929bdee3d4a451cf941ac5 rdf:reifies <<( doc:FactsFordFmeaHandbook rdf:type schema1:CreativeWork )>> ;
+	prov:wasDerivedFrom doc:df08b47516bb .
+doc:FactsconditionMonitoring a None:Predictive_maintenance_module_function .
+_:f6bacb6fb69ce57c0a738b4681b3ee62 rdf:reifies <<( doc:FactsconditionMonitoring rdf:type None:Predictive_maintenance_module_function )>> ;
+	prov:wasDerivedFrom doc:df08b47516bb .
+doc:FactsDeviationOfIntendedOutput None:has_text_value "equal to Potential Failure Modes" .
+_:c17a91637a43cd3ec9c0519e2a397a31 rdf:reifies <<( doc:FactsDeviationOfIntendedOutput None:has_text_value "equal to Potential Failure Modes" )>> ;
+	prov:wasDerivedFrom doc:df08b47516bb .
+doc:FactsPieceToPieceVariation a cco:DescriptiveInformationContentEntity .
+_:ff86722ee3cb82adf2dce41caa16b2bf rdf:reifies <<( doc:FactsPieceToPieceVariation rdf:type cco:DescriptiveInformationContentEntity )>> ;
+	prov:wasDerivedFrom doc:df08b47516bb .
+doc:FactsFordFmeaHandbook schema1:mentions doc:FactsDeviationOfIntendedOutput .
+_:b9a077c5de79e9bcd8dab4609995c289 rdf:reifies <<( doc:FactsFordFmeaHandbook schema1:mentions doc:FactsDeviationOfIntendedOutput )>> ;
+	prov:wasDerivedFrom doc:df08b47516bb .
+doc:FactsGapLackOfCategorisation rdfs:label "Lack of categorisation of input and output variables into energy, material, and information domains" .
+_:fac40a8f9e2b4bcf68c8bc092e85f369 rdf:reifies <<( doc:FactsGapLackOfCategorisation rdfs:label "Lack of categorisation of input and output variables into energy, material, and information domains" )>> ;
+	prov:wasDerivedFrom doc:df08b47516bb .
+doc:FactsVda rdfs:label "Verband der Automobilindustrie (VDA)" .
+_:b6ec8ca3ad8c1e47c4dbbeb387f98628 rdf:reifies <<( doc:FactsVda rdfs:label "Verband der Automobilindustrie (VDA)" )>> ;
+	prov:wasDerivedFrom doc:df08b47516bb .
+doc:Factssae_J1739_standard rdfs:label "SAE J1739 standard" .
+_:a6a81c12993a1b1958614ef6b528fb88 rdf:reifies <<( doc:Factssae_J1739_standard rdfs:label "SAE J1739 standard" )>> ;
+	prov:wasDerivedFrom doc:df08b47516bb .
+doc:FactspDiagram rdfs:label "Taguchi's P-Diagram" .
+_:a657c61b01a3711ed7d974ed6b05f05d rdf:reifies <<( doc:FactspDiagram rdfs:label "Taguchi's P-Diagram" )>> ;
+	prov:wasDerivedFrom doc:df08b47516bb .
+doc:FactsVda rdfs:label "Automotive Industry Action Group (AIAG)" .
+_:d91764a0f01626b3656e18a5a746be6c rdf:reifies <<( doc:FactsVda rdfs:label "Automotive Industry Action Group (AIAG)" )>> ;
+	prov:wasDerivedFrom doc:df08b47516bb .
+_:a12a94c41772087719066f1e6e3ccf55 prov:wasDerivedFrom doc:df08b47516bb .
+doc:FactspDiagram rdfs:label "Control factors" .
+_:f140f528087ff7282fcca8fa2f64cb40 rdf:reifies <<( doc:FactspDiagram rdfs:label "Control factors" )>> ;
+	prov:wasDerivedFrom doc:df08b47516bb .
+doc:FactsDeviationOfIntendedOutput a cco:DescriptiveInformationContentEntity .
+_:ad0549c51d7441ddb494d227905101fc rdf:reifies <<( doc:FactsDeviationOfIntendedOutput rdf:type cco:DescriptiveInformationContentEntity )>> ;
+	prov:wasDerivedFrom doc:df08b47516bb .
+doc:FactsGapLackOfCategorisation None:has_text_value "Necessary for systematic sensor mapping in sensor-based condition monitoring." .
+_:d34d89ae5e53a876e12d967dcf8b1e66 rdf:reifies <<( doc:FactsGapLackOfCategorisation None:has_text_value "Necessary for systematic sensor mapping in sensor-based condition monitoring." )>> ;
+	prov:wasDerivedFrom doc:df08b47516bb .
+doc:FactsFordFmeaHandbook schema1:creator doc:FactsFord .
+_:f0ad1e100a68b820049bc55ca5b93509 rdf:reifies <<( doc:FactsFordFmeaHandbook schema1:creator doc:FactsFord )>> ;
+	prov:wasDerivedFrom doc:df08b47516bb .
+doc:FactspDiagram obo:BFO_0000051 doc:FactsPieceToPieceVariation .
+_:f0c292dca340226252139df20ea358da rdf:reifies <<( doc:FactspDiagram obo:BFO_0000051 doc:FactsPieceToPieceVariation )>> ;
+	prov:wasDerivedFrom doc:df08b47516bb .
+doc:FactsFordFmeaHandbook rdfs:label "Ford FMEA Handbook" .
+_:af5cb1443990c530fd21cbe0fa9e544b rdf:reifies <<( doc:FactsFordFmeaHandbook rdfs:label "Ford FMEA Handbook" )>> ;
+	prov:wasDerivedFrom doc:df08b47516bb .
+doc:FactsDeviationOfIntendedOutput rdfs:label "Deviation of intended output" .
+_:a2663e3c02309f78398fcdcff7e74f04 rdf:reifies <<( doc:FactsDeviationOfIntendedOutput rdfs:label "Deviation of intended output" )>> ;
+	prov:wasDerivedFrom doc:df08b47516bb .
+doc:FactsTaguchi rdfs:label "Genichi Taguchi" .
+_:e4951ae68236e6cd5bfcfc09ab0a6373 rdf:reifies <<( doc:FactsTaguchi rdfs:label "Genichi Taguchi" )>> ;
+	prov:wasDerivedFrom doc:df08b47516bb .
+doc:FactsFordFmeaHandbook a cco:InformationBearingArtifact .
+_:dba491931b84bf944efe4c67f9f47340 rdf:reifies <<( doc:FactsFordFmeaHandbook rdf:type cco:InformationBearingArtifact )>> ;
+	prov:wasDerivedFrom doc:df08b47516bb .
+doc:FactsGapLackOfCategorisation a cco:DescriptiveInformationContentEntity .
+_:b44d8c584560395540019fe22a344457 rdf:reifies <<( doc:FactsGapLackOfCategorisation rdf:type cco:DescriptiveInformationContentEntity )>> ;
+	prov:wasDerivedFrom doc:df08b47516bb .
+doc:FactspDiagram rdfs:label "system interactions" .
+_:e614333cac68558cf89abdcece9bfe9a rdf:reifies <<( doc:FactspDiagram rdfs:label "system interactions" )>> ;
+	prov:wasDerivedFrom doc:df08b47516bb .
+doc:FactsFordFmeaHandbook schema1:creator doc:FactsVda .
+_:fa010e23d46409f8312159086493bfd1 rdf:reifies <<( doc:FactsFordFmeaHandbook schema1:creator doc:FactsVda )>> ;
+	prov:wasDerivedFrom doc:df08b47516bb .
+doc:FactsPieceToPieceVariation rdfs:label "piece to piece variation" .
+_:b787fc70fbfa1670d1361c2b48726309 rdf:reifies <<( doc:FactsPieceToPieceVariation rdfs:label "piece to piece variation" )>> ;
+	prov:wasDerivedFrom doc:df08b47516bb .
+doc:FactspDiagram rdfs:label "Intended output" .
+_:acee7e604697294fabfa3c161c1e7394 rdf:reifies <<( doc:FactspDiagram rdfs:label "Intended output" )>> ;
+	prov:wasDerivedFrom doc:df08b47516bb .
+doc:FactspDiagram rdfs:label "environmental influences" .
+_:d5aa6d4fc04b976b9e9215b440b94262 rdf:reifies <<( doc:FactspDiagram rdfs:label "environmental influences" )>> ;
+	prov:wasDerivedFrom doc:df08b47516bb .
+doc:FactsTaguchi a schema1:Person .
+_:c096dc50efe3b33cb8106d2daf476406 rdf:reifies <<( doc:FactsTaguchi rdf:type schema1:Person )>> ;
+	prov:wasDerivedFrom doc:df08b47516bb .
+doc:FactsFordFmeaHandbook rdfs:label "AIAG & VDA FMEA Handbook" .
+_:f9fd437adaae72c4dd612fb65efbf321 rdf:reifies <<( doc:FactsFordFmeaHandbook rdfs:label "AIAG & VDA FMEA Handbook" )>> ;
+	prov:wasDerivedFrom doc:df08b47516bb .
+doc:FactspDiagram rdfs:label "Unintended output" .
+_:ec191bbae0e1f6b4fb4b41b509cb4abc rdf:reifies <<( doc:FactspDiagram rdfs:label "Unintended output" )>> ;
+	prov:wasDerivedFrom doc:df08b47516bb .
+doc:FactspDiagram dcterms:description "Parameter Diagram used in functional analysis representing inputs, control and noise factors, and outputs." .
+_:d55c66266c54a42bde0e699e814f1418 rdf:reifies <<( doc:FactspDiagram dcterms:description "Parameter Diagram used in functional analysis representing inputs, control and noise factors, and outputs." )>> ;
+	prov:wasDerivedFrom doc:df08b47516bb .
+doc:FactspDiagram rdfs:label "Input variables" .
+_:ff514da48e12e0953731aa95354073d7 rdf:reifies <<( doc:FactspDiagram rdfs:label "Input variables" )>> ;
+	prov:wasDerivedFrom doc:df08b47516bb .
+doc:Factssae_J1739_standard a schema1:CreativeWork .
+_:f694ef1c29d9e733fb91d69c9fc9026d rdf:reifies <<( doc:Factssae_J1739_standard rdf:type schema1:CreativeWork )>> ;
+	prov:wasDerivedFrom doc:df08b47516bb .
+doc:FactspDiagram rdfs:label "Noise factors" .
+_:fe8accb8c0e574b86965c4793e151fb3 rdf:reifies <<( doc:FactspDiagram rdfs:label "Noise factors" )>> ;
+	prov:wasDerivedFrom doc:df08b47516bb .
+cco:DirectiveInformationContentEntity owl:sameAs cco:DescriptiveInformationContentEntity .

@@ -1,0 +1,834 @@
+@prefix None: <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD/seed#> .
+@prefix cco: <http://www.ontologyrepository.com/CommonCoreOntologies/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doc: <https://growgraph.dev/doc/374ab1994bf9/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix obo: <http://purl.obolibrary.org/obo/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix cd: <https://growgraph.dev/facts> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix schema: <https://schema.org/> .
+@prefix schema1: <http://schema.org/> .
+doc:8c589b5a9948 a prov:Entity , schema:text ;
+	prov:generatedAtTime "2026-06-12T07:46:22.478834Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+	schema:position 0 ;
+	schema:identifier "8c589b5a9948" .
+doc:Factsarticle1_20 schema1:about doc:FactsSvm_3 .
+_:cc72e3f3e75fbf621834f4bb19bb011c rdf:reifies <<( doc:Factsarticle1_20 schema1:about doc:FactsSvm_3 )>> ;
+	prov:wasDerivedFrom doc:8c589b5a9948 .
+doc:Factsorg1_2 a schema1:Organization .
+_:e55365d24f26b497c1fdd86603e30e21 rdf:reifies <<( doc:Factsorg1_2 rdf:type schema1:Organization )>> ;
+	prov:wasDerivedFrom doc:8c589b5a9948 .
+doc:FactsSvm_3 a cco:Algorithm .
+_:d4fe30750cac5e3b501e69be0a96818 rdf:reifies <<( doc:FactsSvm_3 rdf:type cco:Algorithm )>> ;
+	prov:wasDerivedFrom doc:8c589b5a9948 .
+doc:Factsarticle1_20 cd:asserts doc:FactseffectNL .
+_:bd3dbdab3aa7e70072a54eccbafb4d85 rdf:reifies <<( doc:Factsarticle1_20 cd:asserts doc:FactseffectNL )>> ;
+	prov:wasDerivedFrom doc:8c589b5a9948 .
+doc:Factsauthor3_1 schema1:name "Domingos SÃ¡vio Tavares Mendes Junior" .
+_:dd31f8c8048c976d0b45d0ea77976e37 rdf:reifies <<( doc:Factsauthor3_1 schema1:name "Domingos SÃ¡vio Tavares Mendes Junior" )>> ;
+	prov:wasDerivedFrom doc:8c589b5a9948 .
+doc:FactsAccuracy rdfs:label "Method 2 accuracy during deceleration (Test B)" .
+_:d9050650eec93fe6fe4687e8bf53802d rdf:reifies <<( doc:FactsAccuracy rdfs:label "Method 2 accuracy during deceleration (Test B)" )>> ;
+	prov:wasDerivedFrom doc:8c589b5a9948 .
+doc:Factsauthor3_1 schema1:name "Alexandre Luiz Amarante Mesquita" .
+_:d5c86faca789fe227741a6289141bc88 rdf:reifies <<( doc:Factsauthor3_1 schema1:name "Alexandre Luiz Amarante Mesquita" )>> ;
+	prov:wasDerivedFrom doc:8c589b5a9948 .
+doc:Factsarticle1_20 cd:evaluatedConfiguration doc:FactsMethod2 .
+_:abd6380b95c4a51900088f0bd7a89a7c rdf:reifies <<( doc:Factsarticle1_20 cd:evaluatedConfiguration doc:FactsMethod2 )>> ;
+	prov:wasDerivedFrom doc:8c589b5a9948 .
+doc:Factsarticle1_20 None:has_publication_year doc:Factspubyear2026_6 .
+_:cafffeca35080d8fe97517649cd1f964 rdf:reifies <<( doc:Factsarticle1_20 None:has_publication_year doc:Factspubyear2026_6 )>> ;
+	prov:wasDerivedFrom doc:8c589b5a9948 .
+doc:FactseffectNL rdfs:label "Empirical choice of N and L directly affects classifier accuracy in stationary and nonstationary scenarios" .
+_:c9fa498a69c52b842b0d011a1e5925a2 rdf:reifies <<( doc:FactseffectNL rdfs:label "Empirical choice of N and L directly affects classifier accuracy in stationary and nonstationary scenarios" )>> ;
+	prov:wasDerivedFrom doc:8c589b5a9948 .
+doc:FactsArModel a cco:Algorithm .
+_:fad0817cfd881a6f80c712a9aabc6389 rdf:reifies <<( doc:FactsArModel rdf:type cco:Algorithm )>> ;
+	prov:wasDerivedFrom doc:8c589b5a9948 .
+doc:FactsAccuracy cd:has_decimal_value "95"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+_:d6c83cb8eef62dd921f23872d1c0901b rdf:reifies <<( doc:FactsAccuracy cd:has_decimal_value "95"^^<http://www.w3.org/2001/XMLSchema#decimal> )>> ;
+	prov:wasDerivedFrom doc:8c589b5a9948 .
+doc:FactsAccuracy rdfs:label "Method 2 accuracy during acceleration (Test A)" .
+_:fdadba87c2e3ccca152f0bd774e77fac rdf:reifies <<( doc:FactsAccuracy rdfs:label "Method 2 accuracy during acceleration (Test A)" )>> ;
+	prov:wasDerivedFrom doc:8c589b5a9948 .
+doc:Factsauthor3_1 schema1:affiliation doc:Factsorg1_2 .
+_:bcb920af0b4e7d4f8a3b96a59808e963 rdf:reifies <<( doc:Factsauthor3_1 schema1:affiliation doc:Factsorg1_2 )>> ;
+	prov:wasDerivedFrom doc:8c589b5a9948 .
+doc:FactsMethod2 cd:has_performance doc:FactsAccuracy .
+_:d61cc4a5cf1d76f0b68c278bcc894494 rdf:reifies <<( doc:FactsMethod2 cd:has_performance doc:FactsAccuracy )>> ;
+	prov:wasDerivedFrom doc:8c589b5a9948 .
+doc:FactsAccuracy a None:Performance_value .
+_:f198323333bb071da52206b7378902bc rdf:reifies <<( doc:FactsAccuracy rdf:type None:Performance_value )>> ;
+	prov:wasDerivedFrom doc:8c589b5a9948 .
+doc:Factsarticle1_20 cd:receivedDate "2026-01-22"^^<http://www.w3.org/2001/XMLSchema#date> .
+_:fd1123de842d3cea5a4fafd20673df4f rdf:reifies <<( doc:Factsarticle1_20 cd:receivedDate "2026-01-22"^^<http://www.w3.org/2001/XMLSchema#date> )>> ;
+	prov:wasDerivedFrom doc:8c589b5a9948 .
+doc:Factsarticle1_20 schema1:about doc:FactsArModel .
+_:cbe178ca33d5d1d9560b2fc5cd441b8f rdf:reifies <<( doc:Factsarticle1_20 schema1:about doc:FactsArModel )>> ;
+	prov:wasDerivedFrom doc:8c589b5a9948 .
+doc:FactsouterRaceFault rdfs:label "outer race remained the most challenging fault type; separability improved when EEMD preceded segmentation" .
+_:e1082275cad2170bc5d5029b45924059 rdf:reifies <<( doc:FactsouterRaceFault rdfs:label "outer race remained the most challenging fault type; separability improved when EEMD preceded segmentation" )>> ;
+	prov:wasDerivedFrom doc:8c589b5a9948 .
+doc:Factsarticle1_20 cd:acceptedDate "2026-03-26"^^<http://www.w3.org/2001/XMLSchema#date> .
+_:c5369e33fbca3b30e16920f473363b44 rdf:reifies <<( doc:Factsarticle1_20 cd:acceptedDate "2026-03-26"^^<http://www.w3.org/2001/XMLSchema#date> )>> ;
+	prov:wasDerivedFrom doc:8c589b5a9948 .
+doc:Factsarticle1_20 a None:Predictive_Maintenance_Article .
+_:eb298a89de4f2f458ae986d22d5ab2c0 rdf:reifies <<( doc:Factsarticle1_20 rdf:type None:Predictive_Maintenance_Article )>> ;
+	prov:wasDerivedFrom doc:8c589b5a9948 .
+doc:Factsarticle1_20 cd:reportsQuality doc:FactsouterRaceFault .
+_:faf29f617d0bbaae219516d793014f2a rdf:reifies <<( doc:Factsarticle1_20 cd:reportsQuality doc:FactsouterRaceFault )>> ;
+	prov:wasDerivedFrom doc:8c589b5a9948 .
+doc:Factsarticle1_20 cd:reportsPerformance doc:FactsAccuracy .
+_:f1b316399f39631042d39fde2b342bd5 rdf:reifies <<( doc:Factsarticle1_20 cd:reportsPerformance doc:FactsAccuracy )>> ;
+	prov:wasDerivedFrom doc:8c589b5a9948 .
+doc:FactsparamL a cco:DescriptiveInformationContentEntity .
+_:cc211a8e34dc0d60ff6a367f170be3ea rdf:reifies <<( doc:FactsparamL rdf:type cco:DescriptiveInformationContentEntity )>> ;
+	prov:wasDerivedFrom doc:8c589b5a9948 .
+doc:Factsauthor3_1 schema1:email "alexmesq@ufpa.br" .
+_:b913c49791c8acfdcd0ffef7e76661e8 rdf:reifies <<( doc:Factsauthor3_1 schema1:email "alexmesq@ufpa.br" )>> ;
+	prov:wasDerivedFrom doc:8c589b5a9948 .
+doc:FactsouterRaceFault a cco:DescriptiveInformationContentEntity .
+_:f33d3b54d74738f6821a02fbae7a79a8 rdf:reifies <<( doc:FactsouterRaceFault rdf:type cco:DescriptiveInformationContentEntity )>> ;
+	prov:wasDerivedFrom doc:8c589b5a9948 .
+doc:FactsparamN a None:Data_variable .
+_:f4ceef960bf7dacd64d13814f4cce1f2 rdf:reifies <<( doc:FactsparamN rdf:type None:Data_variable )>> ;
+	prov:wasDerivedFrom doc:8c589b5a9948 .
+doc:FactsMethod2 rdfs:label "Method 2: EEMD applied prior to segmentation" .
+_:b65de8ed440bf17c4e748d7bbe857de3 rdf:reifies <<( doc:FactsMethod2 rdfs:label "Method 2: EEMD applied prior to segmentation" )>> ;
+	prov:wasDerivedFrom doc:8c589b5a9948 .
+doc:FactsAccuracy cd:measurementUnit "percent" .
+_:a4848f1c1e9bf5fac26cdb2e354e8374 rdf:reifies <<( doc:FactsAccuracy cd:measurementUnit "percent" )>> ;
+	prov:wasDerivedFrom doc:8c589b5a9948 .
+doc:FactsAccuracy cd:has_decimal_value 94.12 .
+_:ebe9bcd142c9ff07a24f271aa8eaee6f rdf:reifies <<( doc:FactsAccuracy cd:has_decimal_value 94.12 )>> ;
+	prov:wasDerivedFrom doc:8c589b5a9948 .
+doc:Factsarticle1_20 schema1:author doc:Factsauthor3_1 .
+_:e7201b5040ff2abe88a0d6cbffb95666 rdf:reifies <<( doc:Factsarticle1_20 schema1:author doc:Factsauthor3_1 )>> ;
+	prov:wasDerivedFrom doc:8c589b5a9948 .
+doc:Factsarticle1_20 cd:reportsSetting doc:FactswnAmp .
+_:c030a16f0290d115e134dd04a631f8ba rdf:reifies <<( doc:Factsarticle1_20 cd:reportsSetting doc:FactswnAmp )>> ;
+	prov:wasDerivedFrom doc:8c589b5a9948 .
+doc:FactswnAmp cd:has_decimal_value 0.3 .
+_:dbdb61c75109397fadb09762ccc55845 rdf:reifies <<( doc:FactswnAmp cd:has_decimal_value 0.3 )>> ;
+	prov:wasDerivedFrom doc:8c589b5a9948 .
+doc:FactswnAmp cd:unit "sigma" .
+_:eae566e17b898f7afd0bcd1100303618 rdf:reifies <<( doc:FactswnAmp cd:unit "sigma" )>> ;
+	prov:wasDerivedFrom doc:8c589b5a9948 .
+doc:Factsarticle1_20 schema1:keywords "bearing fault diagnosis; nonstationary vibration signals; EEMD; autoregressive modeling; SVM; hyperparameter selection" .
+_:faffd626551dd54bd84ca39533c4263c rdf:reifies <<( doc:Factsarticle1_20 schema1:keywords "bearing fault diagnosis; nonstationary vibration signals; EEMD; autoregressive modeling; SVM; hyperparameter selection" )>> ;
+	prov:wasDerivedFrom doc:8c589b5a9948 .
+doc:FactswnAmp a cco:DescriptiveInformationContentEntity .
+_:f52b63d55aa0b60a0ebfd1c9b86ecf10 rdf:reifies <<( doc:FactswnAmp rdf:type cco:DescriptiveInformationContentEntity )>> ;
+	prov:wasDerivedFrom doc:8c589b5a9948 .
+doc:Factsauthor3_1 schema1:name "Rafael Suzuki Bayma" .
+_:b2892ddf14eabd3209bfc756cf1e3953 rdf:reifies <<( doc:Factsauthor3_1 schema1:name "Rafael Suzuki Bayma" )>> ;
+	prov:wasDerivedFrom doc:8c589b5a9948 .
+doc:FactseffectNL a cco:DescriptiveInformationContentEntity .
+_:c62afd37f27a7efa33e015c9d1279b39 rdf:reifies <<( doc:FactseffectNL rdf:type cco:DescriptiveInformationContentEntity )>> ;
+	prov:wasDerivedFrom doc:8c589b5a9948 .
+doc:Factstitle1_10 a None:Article_title .
+_:c6b8e941ec370a60135119cd448deaa rdf:reifies <<( doc:Factstitle1_10 rdf:type None:Article_title )>> ;
+	prov:wasDerivedFrom doc:8c589b5a9948 .
+doc:Factsauthor3_1 a schema1:Person .
+_:dfcdf4cd6febc20f62c9f5ceb70394e0 rdf:reifies <<( doc:Factsauthor3_1 rdf:type schema1:Person )>> ;
+	prov:wasDerivedFrom doc:8c589b5a9948 .
+doc:FactsouterRaceFault rdfs:label "outer race (bearing fault type)" .
+_:d3801ceb4eee51d9757aae620694d16 rdf:reifies <<( doc:FactsouterRaceFault rdfs:label "outer race (bearing fault type)" )>> ;
+	prov:wasDerivedFrom doc:8c589b5a9948 .
+doc:Factsarticle1_20 schema1:about doc:FactsEemd .
+_:c9148aff09a468ac2f417311e3d13197 rdf:reifies <<( doc:Factsarticle1_20 schema1:about doc:FactsEemd )>> ;
+	prov:wasDerivedFrom doc:8c589b5a9948 .
+doc:FactsAccuracy rdfs:label "Classification accuracy under constant-speed operation" .
+_:f7d777cddb34d6cfba70152a738d5cbe rdf:reifies <<( doc:FactsAccuracy rdfs:label "Classification accuracy under constant-speed operation" )>> ;
+	prov:wasDerivedFrom doc:8c589b5a9948 .
+doc:FactsAccuracy cd:has_decimal_value "100"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+_:c31ce07365ad3a0738df8385c5c838ed rdf:reifies <<( doc:FactsAccuracy cd:has_decimal_value "100"^^<http://www.w3.org/2001/XMLSchema#decimal> )>> ;
+	prov:wasDerivedFrom doc:8c589b5a9948 .
+doc:FactsMethod2 a cco:Algorithm .
+_:b7961ac09cec28dd35f26a8e6b0e9765 rdf:reifies <<( doc:FactsMethod2 rdf:type cco:Algorithm )>> ;
+	prov:wasDerivedFrom doc:8c589b5a9948 .
+doc:Factsarticle1_20 dcterms:date "2026-04-07"^^<http://www.w3.org/2001/XMLSchema#date> .
+_:e06d47b3b44f033fb004151e871744c2 rdf:reifies <<( doc:Factsarticle1_20 dcterms:date "2026-04-07"^^<http://www.w3.org/2001/XMLSchema#date> )>> ;
+	prov:wasDerivedFrom doc:8c589b5a9948 .
+doc:Factsarticle1_20 cd:revisedDate "2026-03-10"^^<http://www.w3.org/2001/XMLSchema#date> .
+_:f37dbe9cc165de736fa9dfa5d161c018 rdf:reifies <<( doc:Factsarticle1_20 cd:revisedDate "2026-03-10"^^<http://www.w3.org/2001/XMLSchema#date> )>> ;
+	prov:wasDerivedFrom doc:8c589b5a9948 .
+doc:Factspubyear2026_6 None:has_interger_value 2026 .
+_:b3d00620e28568b2eb6f0af90526af09 rdf:reifies <<( doc:Factspubyear2026_6 None:has_interger_value 2026 )>> ;
+	prov:wasDerivedFrom doc:8c589b5a9948 .
+doc:FactsparamN rdfs:label "Number of Intrinsic Mode Functions (N)" .
+_:f4a86085e6f0f096e493cb113e140b62 rdf:reifies <<( doc:FactsparamN rdfs:label "Number of Intrinsic Mode Functions (N)" )>> ;
+	prov:wasDerivedFrom doc:8c589b5a9948 .
+doc:Factsorg1_2 schema1:name "Faculty of Electrical Engineering, Federal University of ParÃ¡" .
+_:ccb9443031d13d0a31418e3d4f20cf3e rdf:reifies <<( doc:Factsorg1_2 schema1:name "Faculty of Electrical Engineering, Federal University of ParÃ¡" )>> ;
+	prov:wasDerivedFrom doc:8c589b5a9948 .
+doc:FactsparamL rdfs:label "Autoregressive model order (L)" .
+_:f7fe7d22d6b383acb2f814ad25e880c0 rdf:reifies <<( doc:FactsparamL rdfs:label "Autoregressive model order (L)" )>> ;
+	prov:wasDerivedFrom doc:8c589b5a9948 .
+doc:FactsMethod2 cd:improvedSeparability doc:FactsouterRaceFault .
+_:b7fe8ee1ad14247ccb2f01ff32efb6df rdf:reifies <<( doc:FactsMethod2 cd:improvedSeparability doc:FactsouterRaceFault )>> ;
+	prov:wasDerivedFrom doc:8c589b5a9948 .
+doc:Factsorg1_2 schema1:address "BR 422 Road km 13, TucuruÃ­ 68464-000, PA, Brazil" .
+_:e23fb6ac403472c65956f7c27cd79970 rdf:reifies <<( doc:Factsorg1_2 schema1:address "BR 422 Road km 13, TucuruÃ­ 68464-000, PA, Brazil" )>> ;
+	prov:wasDerivedFrom doc:8c589b5a9948 .
+doc:FactsMethod2 cd:outperformed doc:FactsMethod2 .
+_:cc4b32cd194ef113e230dd0326a893eb rdf:reifies <<( doc:FactsMethod2 cd:outperformed doc:FactsMethod2 )>> ;
+	prov:wasDerivedFrom doc:8c589b5a9948 .
+doc:Factsarticle1_20 cd:mentionsParameter doc:FactsparamN .
+_:b6d31152cef41a270e3bcd7e33ea4b63 rdf:reifies <<( doc:Factsarticle1_20 cd:mentionsParameter doc:FactsparamN )>> ;
+	prov:wasDerivedFrom doc:8c589b5a9948 .
+doc:FactsEemd a cco:Algorithm .
+_:a60080382d66ff1dd59b083115b8a3dd rdf:reifies <<( doc:FactsEemd rdf:type cco:Algorithm )>> ;
+	prov:wasDerivedFrom doc:8c589b5a9948 .
+doc:Factsorg1_2 schema1:name "Institute of Technology, Federal University of ParÃ¡" .
+_:fbbd993c93d0d33e1fe66ba50992d5fd rdf:reifies <<( doc:Factsorg1_2 schema1:name "Institute of Technology, Federal University of ParÃ¡" )>> ;
+	prov:wasDerivedFrom doc:8c589b5a9948 .
+doc:Factsarticle1_20 None:has_title doc:Factstitle1_10 .
+_:af425d6f0bd54988a05c7615c66f579e rdf:reifies <<( doc:Factsarticle1_20 None:has_title doc:Factstitle1_10 )>> ;
+	prov:wasDerivedFrom doc:8c589b5a9948 .
+doc:Factstitle1_10 None:has_text_value "Selection of Number of IMFs and Order of Their AR Models for Feature Extraction in SVM-Based Bearing Diagnosis" .
+_:f98096c6626b25fae5a02277ca093253 rdf:reifies <<( doc:Factstitle1_10 None:has_text_value "Selection of Number of IMFs and Order of Their AR Models for Feature Extraction in SVM-Based Bearing Diagnosis" )>> ;
+	prov:wasDerivedFrom doc:8c589b5a9948 .
+doc:FactsouterRaceFault a None:Maintainable_item .
+_:aed8f7d1b6438702ac4341f40b533078 rdf:reifies <<( doc:FactsouterRaceFault rdf:type None:Maintainable_item )>> ;
+	prov:wasDerivedFrom doc:8c589b5a9948 .
+doc:FactsMethod2 rdfs:label "Method 1: EEMD applied after segmentation" .
+_:d9c5f0912c7f2bd8cf282b40e693af9d rdf:reifies <<( doc:FactsMethod2 rdfs:label "Method 1: EEMD applied after segmentation" )>> ;
+	prov:wasDerivedFrom doc:8c589b5a9948 .
+doc:FactswnAmp rdfs:label "white noise relative amplitude (relative to signal stddev)" .
+_:e248103c5676e72793a6219a7b3fe08e rdf:reifies <<( doc:FactswnAmp rdfs:label "white noise relative amplitude (relative to signal stddev)" )>> ;
+	prov:wasDerivedFrom doc:8c589b5a9948 .
+doc:Factsorg1_2 schema1:address "Augusto CorrÃªa Street, 01, BelÃ©m 66075-110, PA, Brazil" .
+_:d99a771aa7515dbfdf3132727201a711 rdf:reifies <<( doc:Factsorg1_2 schema1:address "Augusto CorrÃªa Street, 01, BelÃ©m 66075-110, PA, Brazil" )>> ;
+	prov:wasDerivedFrom doc:8c589b5a9948 .
+doc:Factsarticle1_20 cd:mentionsParameter doc:FactsparamL .
+_:c56e7745aff521485072a652f5d5d1a7 rdf:reifies <<( doc:Factsarticle1_20 cd:mentionsParameter doc:FactsparamL )>> ;
+	prov:wasDerivedFrom doc:8c589b5a9948 .
+doc:Factspubyear2026_6 a None:Publication_year .
+_:c8661bb886baf02e017448c5c0d148ed rdf:reifies <<( doc:Factspubyear2026_6 rdf:type None:Publication_year )>> ;
+	prov:wasDerivedFrom doc:8c589b5a9948 .
+doc:7ba8b55b3bef a prov:Entity , schema:text ;
+	prov:generatedAtTime "2026-06-12T07:46:22.482476Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+	schema:position 1 ;
+	schema:identifier "7ba8b55b3bef" .
+_:d4fe30750cac5e3b501e69be0a96818 prov:wasDerivedFrom doc:7ba8b55b3bef .
+doc:FactsRotationFreqCwru rdfs:label "Rotation frequency in CWRU experiment"@en .
+_:aeb2c078effab63ff93300261093b20 rdf:reifies <<( doc:FactsRotationFreqCwru rdfs:label "Rotation frequency in CWRU experiment"@en )>> ;
+	prov:wasDerivedFrom doc:7ba8b55b3bef .
+doc:Factswindowsize_800 None:has_interger_value 900 .
+_:cd0239819dce74b8ed13f1c900bca4a6 rdf:reifies <<( doc:Factswindowsize_800 None:has_interger_value 900 )>> ;
+	prov:wasDerivedFrom doc:7ba8b55b3bef .
+doc:FactsMethod2 a cco:DirectiveInformationContentEntity .
+_:eee26fea3a9a790cf308253b1d8674a8 rdf:reifies <<( doc:FactsMethod2 rdf:type cco:DirectiveInformationContentEntity )>> ;
+	prov:wasDerivedFrom doc:7ba8b55b3bef .
+doc:FactsSelectedImFs cco:describes doc:FactsBearingCondition .
+_:c0aa913f2c13b0eac643db039b9e41cd rdf:reifies <<( doc:FactsSelectedImFs cco:describes doc:FactsBearingCondition )>> ;
+	prov:wasDerivedFrom doc:7ba8b55b3bef .
+doc:FactsDiagnosisModule None:has_predictive_maintenance_function None:Fault_identification .
+_:e86ef06f1d41200da2e9c74ac2b7e476 rdf:reifies <<( doc:FactsDiagnosisModule None:has_predictive_maintenance_function None:Fault_identification )>> ;
+	prov:wasDerivedFrom doc:7ba8b55b3bef .
+doc:FactsCwruDataset rdfs:label "CWRU bearing dataset (constant-speed regime)"@en .
+_:d2177000f99e0cefc1f631c80750b30d rdf:reifies <<( doc:FactsCwruDataset rdfs:label "CWRU bearing dataset (constant-speed regime)"@en )>> ;
+	prov:wasDerivedFrom doc:7ba8b55b3bef .
+doc:FactsDiagnosisModule rdfs:label "Predictive maintenance diagnosis module (SVM-based)"@en .
+_:f9edc66f8dab8b0727195964776f71fc rdf:reifies <<( doc:FactsDiagnosisModule rdfs:label "Predictive maintenance diagnosis module (SVM-based)"@en )>> ;
+	prov:wasDerivedFrom doc:7ba8b55b3bef .
+doc:FactsModelOrderParameter None:has_text_value "empirically adjusted via evaluation of classification performance" .
+_:b46a1aad974b68c31154aa77b99dbea7 rdf:reifies <<( doc:FactsModelOrderParameter None:has_text_value "empirically adjusted via evaluation of classification performance" )>> ;
+	prov:wasDerivedFrom doc:7ba8b55b3bef .
+doc:FactsConfusionMatrix a cco:DescriptiveInformationContentEntity .
+_:a601a5e857a14312bc11c8a53bc0b098 rdf:reifies <<( doc:FactsConfusionMatrix rdf:type cco:DescriptiveInformationContentEntity )>> ;
+	prov:wasDerivedFrom doc:7ba8b55b3bef .
+doc:Factswindowsize_800 rdfs:label "Window size 100 data points"@en .
+_:f688a299de615b86c043d76f29f8ab3c rdf:reifies <<( doc:Factswindowsize_800 rdfs:label "Window size 100 data points"@en )>> ;
+	prov:wasDerivedFrom doc:7ba8b55b3bef .
+doc:Factswindowsize_800 None:has_interger_value 500 .
+_:ae6632b2cf8705c41cf94c538ee13c02 rdf:reifies <<( doc:Factswindowsize_800 None:has_interger_value 500 )>> ;
+	prov:wasDerivedFrom doc:7ba8b55b3bef .
+doc:FactsCwruDataset a cco:Database .
+_:c0d914b59ba268e2c3784d007f72bd7b rdf:reifies <<( doc:FactsCwruDataset rdf:type cco:Database )>> ;
+	prov:wasDerivedFrom doc:7ba8b55b3bef .
+doc:FactsMethod2 doc:factsusedBy doc:FactsMethod2 .
+_:b0a4da4f0184504b55f4b5ffa966512b rdf:reifies <<( doc:FactsMethod2 doc:factsusedBy doc:FactsMethod2 )>> ;
+	prov:wasDerivedFrom doc:7ba8b55b3bef .
+doc:FactsMethod2 rdfs:label "Method 2: EEMD on whole signal, then segment IMFs"@en .
+_:ab26f2f9cc49ecad4af1b1cfaf6508be rdf:reifies <<( doc:FactsMethod2 rdfs:label "Method 2: EEMD on whole signal, then segment IMFs"@en )>> ;
+	prov:wasDerivedFrom doc:7ba8b55b3bef .
+doc:FactsVariableSpeedTests schema1:value "TestA: 13.5-29.0 Hz; TestB: 28.9-10.3 Hz" .
+_:df43ea2c7fb8428a731fc28c95e61c7f rdf:reifies <<( doc:FactsVariableSpeedTests schema1:value "TestA: 13.5-29.0 Hz; TestB: 28.9-10.3 Hz" )>> ;
+	prov:wasDerivedFrom doc:7ba8b55b3bef .
+doc:FactsBearingCondition a cco:DescriptiveInformationContentEntity .
+_:f65aaec1f12f780a66dd9dcf93a2ef8 rdf:reifies <<( doc:FactsBearingCondition rdf:type cco:DescriptiveInformationContentEntity )>> ;
+	prov:wasDerivedFrom doc:7ba8b55b3bef .
+doc:Factsaccelerometer_623C01 a cco:Artifact .
+_:be8f9391d3a89e413981705bdc54e2b2 rdf:reifies <<( doc:Factsaccelerometer_623C01 rdf:type cco:Artifact )>> ;
+	prov:wasDerivedFrom doc:7ba8b55b3bef .
+doc:Factswindowsize_800 a cco:DescriptiveInformationContentEntity .
+_:dc0168569063d69c8765a88711a75c9e rdf:reifies <<( doc:Factswindowsize_800 rdf:type cco:DescriptiveInformationContentEntity )>> ;
+	prov:wasDerivedFrom doc:7ba8b55b3bef .
+doc:Factswindowsize_800 None:has_interger_value 400 .
+_:addaca90866a348614c69e6a0acaa03d rdf:reifies <<( doc:Factswindowsize_800 None:has_interger_value 400 )>> ;
+	prov:wasDerivedFrom doc:7ba8b55b3bef .
+doc:FactsCwruExperiment obo:BFO_0000051 doc:Factsmotor_Reliance_2HP .
+_:be1b5925b3c532f39ff55a42c8a8de04 rdf:reifies <<( doc:FactsCwruExperiment obo:BFO_0000051 doc:Factsmotor_Reliance_2HP )>> ;
+	prov:wasDerivedFrom doc:7ba8b55b3bef .
+doc:FactsBearing_2 rdfs:label "Ball bearing (generic)"@en .
+_:e2c1b09ab0746073d13d1d951da6d456 rdf:reifies <<( doc:FactsBearing_2 rdfs:label "Ball bearing (generic)"@en )>> ;
+	prov:wasDerivedFrom doc:7ba8b55b3bef .
+doc:FactsCwruExperiment schema1:value 28.83 .
+_:f3999bbb2c48a90e82eca7e1ee607b18 rdf:reifies <<( doc:FactsCwruExperiment schema1:value 28.83 )>> ;
+	prov:wasDerivedFrom doc:7ba8b55b3bef .
+doc:FactsSvm_3 a None:Classification .
+_:a38bc9a1f5652f3a0b680d5b65472455 rdf:reifies <<( doc:FactsSvm_3 rdf:type None:Classification )>> ;
+	prov:wasDerivedFrom doc:7ba8b55b3bef .
+doc:FactsLearningCurves rdfs:label "Learning curves used to assess training-set-size impact and overfitting/underfitting"@en .
+_:a98b3fed9b9ee82ff5330649babd23b8 rdf:reifies <<( doc:FactsLearningCurves rdfs:label "Learning curves used to assess training-set-size impact and overfitting/underfitting"@en )>> ;
+	prov:wasDerivedFrom doc:7ba8b55b3bef .
+doc:FactsSelectedImFs a cco:DescriptiveInformationContentEntity .
+_:dbdbbb8b92a1a7bb2ac4b58b24338823 rdf:reifies <<( doc:FactsSelectedImFs rdf:type cco:DescriptiveInformationContentEntity )>> ;
+	prov:wasDerivedFrom doc:7ba8b55b3bef .
+doc:Factsmotor_Reliance_2HP a cco:Artifact .
+_:df5bf9b0ac18f7119093a812d5246d94 rdf:reifies <<( doc:Factsmotor_Reliance_2HP rdf:type cco:Artifact )>> ;
+	prov:wasDerivedFrom doc:7ba8b55b3bef .
+doc:FactsSelectedImFs rdfs:label "N selected IMFs concatenated to form feature vectors"@en .
+_:f578e50592dcf6df3edf8c1e9afc5360 rdf:reifies <<( doc:FactsSelectedImFs rdfs:label "N selected IMFs concatenated to form feature vectors"@en )>> ;
+	prov:wasDerivedFrom doc:7ba8b55b3bef .
+doc:FactsSlackVariables a cco:DescriptiveInformationContentEntity .
+_:c1229d0676b3bbeeafd84ed2661d07c8 rdf:reifies <<( doc:FactsSlackVariables rdf:type cco:DescriptiveInformationContentEntity )>> ;
+	prov:wasDerivedFrom doc:7ba8b55b3bef .
+doc:FactsSpectraQuestMfs rdfs:label "SpectraQuest machine failure simulator (MFS-PK5M)"@en .
+_:c4c96aa192f4cb16e691d135575af6b6 rdf:reifies <<( doc:FactsSpectraQuestMfs rdfs:label "SpectraQuest machine failure simulator (MFS-PK5M)"@en )>> ;
+	prov:wasDerivedFrom doc:7ba8b55b3bef .
+doc:FactsHuangBaddourDataset a cco:Database .
+_:cade0cc5e0ff9934e5c279236dc12b3 rdf:reifies <<( doc:FactsHuangBaddourDataset rdf:type cco:Database )>> ;
+	prov:wasDerivedFrom doc:7ba8b55b3bef .
+doc:FactsImf a cco:DescriptiveInformationContentEntity .
+_:f74b4967f313f672da5c42ad40f48312 rdf:reifies <<( doc:FactsImf rdf:type cco:DescriptiveInformationContentEntity )>> ;
+	prov:wasDerivedFrom doc:7ba8b55b3bef .
+doc:FactsCwruExperiment a cco:Artifact .
+_:cd629c887830403c4be3fb18cd0976ae rdf:reifies <<( doc:FactsCwruExperiment rdf:type cco:Artifact )>> ;
+	prov:wasDerivedFrom doc:7ba8b55b3bef .
+doc:FactsFaultTypes rdfs:label "Fault classes observed in datasets: inner race, outer race, ball fault, fault-free"@en .
+_:a99a91667fe81b9b6efeebb115910c15 rdf:reifies <<( doc:FactsFaultTypes rdfs:label "Fault classes observed in datasets: inner race, outer race, ball fault, fault-free"@en )>> ;
+	prov:wasDerivedFrom doc:7ba8b55b3bef .
+doc:FactsFeatureExtraction_1 rdfs:label "Extraction of AR coefficients from IMFs as input features for SVM"@en .
+_:b4b2078a4d688b75f61e7140d0931666 rdf:reifies <<( doc:FactsFeatureExtraction_1 rdfs:label "Extraction of AR coefficients from IMFs as input features for SVM"@en )>> ;
+	prov:wasDerivedFrom doc:7ba8b55b3bef .
+doc:FactsAccuracy rdfs:label "Accuracy (derived from confusion matrices) used to evaluate classifier performance"@en .
+_:cb03ffa3a78ee290f4885dfc52ddebad rdf:reifies <<( doc:FactsAccuracy rdfs:label "Accuracy (derived from confusion matrices) used to evaluate classifier performance"@en )>> ;
+	prov:wasDerivedFrom doc:7ba8b55b3bef .
+doc:FactsSpectraQuestMfs obo:BFO_0000051 doc:Factser16k_Bearings .
+_:c245fc43fd867b7f5794e23ff8398a6b rdf:reifies <<( doc:FactsSpectraQuestMfs obo:BFO_0000051 doc:Factser16k_Bearings )>> ;
+	prov:wasDerivedFrom doc:7ba8b55b3bef .
+doc:FactsRegularizationParameterC a cco:DescriptiveInformationContentEntity .
+_:b4bb8e1bdf73314ee6d4a5f70bbd276c rdf:reifies <<( doc:FactsRegularizationParameterC rdf:type cco:DescriptiveInformationContentEntity )>> ;
+	prov:wasDerivedFrom doc:7ba8b55b3bef .
+doc:FactsConfusionMatrix rdfs:label "Confusion matrix used to derive accuracy"@en .
+_:ae0e5815cc70230e994b171e666cb09d rdf:reifies <<( doc:FactsConfusionMatrix rdfs:label "Confusion matrix used to derive accuracy"@en )>> ;
+	prov:wasDerivedFrom doc:7ba8b55b3bef .
+doc:Factsaccelerometer_623C01 rdfs:label "ICP accelerometer (model 623C01)"@en .
+_:f507b18b0d71621c947bc7ee950cb1e0 rdf:reifies <<( doc:Factsaccelerometer_623C01 rdfs:label "ICP accelerometer (model 623C01)"@en )>> ;
+	prov:wasDerivedFrom doc:7ba8b55b3bef .
+doc:FactsCwruExperiment schema1:value 12000 .
+_:bdba5cf865b07ad1840a99bfbd1c9e23 rdf:reifies <<( doc:FactsCwruExperiment schema1:value 12000 )>> ;
+	prov:wasDerivedFrom doc:7ba8b55b3bef .
+doc:Factswindowsize_800 rdfs:label "Window size 600 data points"@en .
+_:b84dcfbf644df20fc883d6f3fa357430 rdf:reifies <<( doc:Factswindowsize_800 rdfs:label "Window size 600 data points"@en )>> ;
+	prov:wasDerivedFrom doc:7ba8b55b3bef .
+doc:Factswindowsize_800 rdfs:label "Window size 500 data points"@en .
+_:e54f3b95548e690416c58904e6c743e6 rdf:reifies <<( doc:Factswindowsize_800 rdfs:label "Window size 500 data points"@en )>> ;
+	prov:wasDerivedFrom doc:7ba8b55b3bef .
+doc:FactsSamplingRateCwru schema1:unitText "Hz" .
+_:afe6e946c2a546c9efe7963cf1e6f21b rdf:reifies <<( doc:FactsSamplingRateCwru schema1:unitText "Hz" )>> ;
+	prov:wasDerivedFrom doc:7ba8b55b3bef .
+doc:FactsImf rdfs:label "Intrinsic Mode Function (IMF)"@en .
+_:bc4323f9f0e603683d841064115ba371 rdf:reifies <<( doc:FactsImf rdfs:label "Intrinsic Mode Function (IMF)"@en )>> ;
+	prov:wasDerivedFrom doc:7ba8b55b3bef .
+doc:FactsThetaVector a None:Data_variable .
+_:ca65b40d806bd4a900e01d28595693a3 rdf:reifies <<( doc:FactsThetaVector rdf:type None:Data_variable )>> ;
+	prov:wasDerivedFrom doc:7ba8b55b3bef .
+doc:Factswindowsize_800 rdfs:label "Window size 1000 data points"@en .
+_:b1b2b618fdb8aea849c316b97266fbc0 rdf:reifies <<( doc:Factswindowsize_800 rdfs:label "Window size 1000 data points"@en )>> ;
+	prov:wasDerivedFrom doc:7ba8b55b3bef .
+doc:FactsMethod2 cd:produces doc:FactsImf .
+_:c183112815cc7ebe6540cdb059a97941 rdf:reifies <<( doc:FactsMethod2 cd:produces doc:FactsImf )>> ;
+	prov:wasDerivedFrom doc:7ba8b55b3bef .
+doc:FactsArModel None:describes_type None:Model_type .
+_:d2738ae0558d42a5b362aea2bac29550 rdf:reifies <<( doc:FactsArModel None:describes_type None:Model_type )>> ;
+	prov:wasDerivedFrom doc:7ba8b55b3bef .
+doc:FactsAccuracy a None:Performance_indicator .
+_:e3c2cb62ac342ed36747fdadb3c91d10 rdf:reifies <<( doc:FactsAccuracy rdf:type None:Performance_indicator )>> ;
+	prov:wasDerivedFrom doc:7ba8b55b3bef .
+doc:FactsVariableSpeedTests rdfs:label "Variable-speed tests A (acceleration) and B (deceleration) with specified Hz/RPM ranges"@en .
+_:f258e7de2ef5575a4f2010be8fe294bd rdf:reifies <<( doc:FactsVariableSpeedTests rdfs:label "Variable-speed tests A (acceleration) and B (deceleration) with specified Hz/RPM ranges"@en )>> ;
+	prov:wasDerivedFrom doc:7ba8b55b3bef .
+doc:FactsTorqueTransducer a cco:Artifact .
+_:cce7a1cf0a90f5f48d2496b20fda6631 rdf:reifies <<( doc:FactsTorqueTransducer rdf:type cco:Artifact )>> ;
+	prov:wasDerivedFrom doc:7ba8b55b3bef .
+doc:Factswindowsize_800 rdfs:label "Window size 300 data points"@en .
+_:b0ccc8507ef3670b4c4cd384ecea4319 rdf:reifies <<( doc:Factswindowsize_800 rdfs:label "Window size 300 data points"@en )>> ;
+	prov:wasDerivedFrom doc:7ba8b55b3bef .
+doc:FactsCwruExperiment rdfs:label "CWRU experimental test bench (constant-speed)"@en .
+_:dbdf84e485104b945a61776da056a311 rdf:reifies <<( doc:FactsCwruExperiment rdfs:label "CWRU experimental test bench (constant-speed)"@en )>> ;
+	prov:wasDerivedFrom doc:7ba8b55b3bef .
+doc:FactsTorqueTransducer rdfs:label "Torque transducer"@en .
+_:f4afe42a23ae7528850d6e45800c44e rdf:reifies <<( doc:FactsTorqueTransducer rdfs:label "Torque transducer"@en )>> ;
+	prov:wasDerivedFrom doc:7ba8b55b3bef .
+doc:FactsRegularizationParameterC rdfs:label "Regularization hyperparameter C (>0) controlling margin / misclassification trade-off"@en .
+_:a0f813b0f63559857fc3d8122e2130a rdf:reifies <<( doc:FactsRegularizationParameterC rdfs:label "Regularization hyperparameter C (>0) controlling margin / misclassification trade-off"@en )>> ;
+	prov:wasDerivedFrom doc:7ba8b55b3bef .
+doc:FactsRotationFreqCwru schema1:value 28.83 .
+_:fa95d26bc9b9865c943d5b56ba57a65e rdf:reifies <<( doc:FactsRotationFreqCwru schema1:value 28.83 )>> ;
+	prov:wasDerivedFrom doc:7ba8b55b3bef .
+doc:Factser16k_Bearings a cco:Artifact .
+_:a3bb5b22f300f7547a81fc2e5347a82e rdf:reifies <<( doc:Factser16k_Bearings rdf:type cco:Artifact )>> ;
+	prov:wasDerivedFrom doc:7ba8b55b3bef .
+doc:factsusedBy a rdf:Property .
+_:ffd612f72fd6dd97d7e33b811d6e958f rdf:reifies <<( doc:factsusedBy rdf:type rdf:Property )>> ;
+	prov:wasDerivedFrom doc:7ba8b55b3bef .
+doc:Factser16k_Bearings rdfs:label "Two ER16K ball bearings (one healthy, one experimental)"@en .
+_:d703673a1e3e8c939c9df5448194ff6e rdf:reifies <<( doc:Factser16k_Bearings rdfs:label "Two ER16K ball bearings (one healthy, one experimental)"@en )>> ;
+	prov:wasDerivedFrom doc:7ba8b55b3bef .
+doc:Factswindowsize_800 None:has_interger_value 100 .
+_:ab0a2d43b224c024ce35767128c35ef2 rdf:reifies <<( doc:Factswindowsize_800 None:has_interger_value 100 )>> ;
+	prov:wasDerivedFrom doc:7ba8b55b3bef .
+doc:FactsVariableSpeedTests a cco:DescriptiveInformationContentEntity .
+_:f75a4c02768b42655514b1aa89188b2b rdf:reifies <<( doc:FactsVariableSpeedTests rdf:type cco:DescriptiveInformationContentEntity )>> ;
+	prov:wasDerivedFrom doc:7ba8b55b3bef .
+doc:FactsDecisionFunction rdfs:label "SVM decision function f(z) (sign-based classifier output)"@en .
+_:c3cf4b90d34f0d9f04da54b8f7a7bf9f rdf:reifies <<( doc:FactsDecisionFunction rdfs:label "SVM decision function f(z) (sign-based classifier output)"@en )>> ;
+	prov:wasDerivedFrom doc:7ba8b55b3bef .
+doc:FactsRotationFreqCwru schema1:unitText "Hz (approx. 1730 RPM)" .
+_:b731302c7bc5cc75c31399de8d2d186e rdf:reifies <<( doc:FactsRotationFreqCwru schema1:unitText "Hz (approx. 1730 RPM)" )>> ;
+	prov:wasDerivedFrom doc:7ba8b55b3bef .
+doc:Factswindowsize_800 None:has_interger_value 600 .
+_:f29dd506d65c9358b03f6292fd0d3580 rdf:reifies <<( doc:Factswindowsize_800 None:has_interger_value 600 )>> ;
+	prov:wasDerivedFrom doc:7ba8b55b3bef .
+doc:FactsHuangBaddourDataset rdfs:label "Huang and Baddour variable-speed bearing dataset"@en .
+_:cd12501f70f91262727cc6e03f2d2070 rdf:reifies <<( doc:FactsHuangBaddourDataset rdfs:label "Huang and Baddour variable-speed bearing dataset"@en )>> ;
+	prov:wasDerivedFrom doc:7ba8b55b3bef .
+doc:FactsDiagnosisModule a None:Predictive_maintenance_system_module .
+_:e693832d1d639e4c92331d134ff6dbf7 rdf:reifies <<( doc:FactsDiagnosisModule rdf:type None:Predictive_maintenance_system_module )>> ;
+	prov:wasDerivedFrom doc:7ba8b55b3bef .
+doc:FactsSpectraQuestMfs a cco:Artifact .
+_:e2428b8320597627182254cc413f8ae4 rdf:reifies <<( doc:FactsSpectraQuestMfs rdf:type cco:Artifact )>> ;
+	prov:wasDerivedFrom doc:7ba8b55b3bef .
+doc:FactsArModel rdfs:label "Autoregressive (AR) model"@en .
+_:d524c37b3d6e6af4264a233bc8eb4ac8 rdf:reifies <<( doc:FactsArModel rdfs:label "Autoregressive (AR) model"@en )>> ;
+	prov:wasDerivedFrom doc:7ba8b55b3bef .
+doc:FactsFaultTypes schema1:value "inner race; outer race; ball; fault-free" .
+_:fca0c266de5198e0280462b6e8dcef45 rdf:reifies <<( doc:FactsFaultTypes schema1:value "inner race; outer race; ball; fault-free" )>> ;
+	prov:wasDerivedFrom doc:7ba8b55b3bef .
+doc:FactsSvm_3 rdfs:label "Support Vector Machine"@en .
+_:b2fd4b2ea52907d1174694fcdd405456 rdf:reifies <<( doc:FactsSvm_3 rdfs:label "Support Vector Machine"@en )>> ;
+	prov:wasDerivedFrom doc:7ba8b55b3bef .
+doc:FactsSelectedImFs rdfs:label "Feature vector (concatenated AR coefficients from N selected IMFs)"@en .
+_:d7a98f5079fd58ffe58bd7cee110cca3 rdf:reifies <<( doc:FactsSelectedImFs rdfs:label "Feature vector (concatenated AR coefficients from N selected IMFs)"@en )>> ;
+	prov:wasDerivedFrom doc:7ba8b55b3bef .
+doc:Factswindowsize_800 rdfs:label "Window size 200 data points"@en .
+_:c36a99fcac36a7743685f0e2d0a2a54 rdf:reifies <<( doc:Factswindowsize_800 rdfs:label "Window size 200 data points"@en )>> ;
+	prov:wasDerivedFrom doc:7ba8b55b3bef .
+doc:FactsDecisionFunction a cco:Algorithm .
+_:d3182e9fe93e19b0e3cf29854b50b9b9 rdf:reifies <<( doc:FactsDecisionFunction rdf:type cco:Algorithm )>> ;
+	prov:wasDerivedFrom doc:7ba8b55b3bef .
+doc:Factswindowsize_800 rdfs:label "Window size 800 data points"@en .
+_:e0d96ea17ccc7d3f98db3c4cb08f1341 rdf:reifies <<( doc:Factswindowsize_800 rdfs:label "Window size 800 data points"@en )>> ;
+	prov:wasDerivedFrom doc:7ba8b55b3bef .
+doc:FactsCwruExperiment obo:BFO_0000051 doc:Factsaccelerometer_623C01 .
+_:a6c82b1f5c3b4260a7962a2db4ae6752 rdf:reifies <<( doc:FactsCwruExperiment obo:BFO_0000051 doc:Factsaccelerometer_623C01 )>> ;
+	prov:wasDerivedFrom doc:7ba8b55b3bef .
+doc:FactsEemd rdfs:label "Ensemble Empirical Mode Decomposition (EEMD)"@en .
+_:f5dd9971dde6e4b187479c72a44f1ebc rdf:reifies <<( doc:FactsEemd rdfs:label "Ensemble Empirical Mode Decomposition (EEMD)"@en )>> ;
+	prov:wasDerivedFrom doc:7ba8b55b3bef .
+doc:Factswindowsize_800 None:has_interger_value 800 .
+_:f982cd284127bde4ed8b9ebd7a498d3 rdf:reifies <<( doc:Factswindowsize_800 None:has_interger_value 800 )>> ;
+	prov:wasDerivedFrom doc:7ba8b55b3bef .
+doc:FactsSamplingRateCwru schema1:value 12000 .
+_:d731a031b463b50f6d7f4dea23c782d6 rdf:reifies <<( doc:FactsSamplingRateCwru schema1:value 12000 )>> ;
+	prov:wasDerivedFrom doc:7ba8b55b3bef .
+doc:Factswindowsize_800 rdfs:label "Window size 700 data points"@en .
+_:d4238babe3ffecb97a258f8f0f708ebf rdf:reifies <<( doc:Factswindowsize_800 rdfs:label "Window size 700 data points"@en )>> ;
+	prov:wasDerivedFrom doc:7ba8b55b3bef .
+doc:Factswindowsize_800 rdfs:label "Window size 900 data points"@en .
+_:fa0ff3f6c16d74985e855080556e5385 rdf:reifies <<( doc:Factswindowsize_800 rdfs:label "Window size 900 data points"@en )>> ;
+	prov:wasDerivedFrom doc:7ba8b55b3bef .
+doc:FactsBearingCondition rdfs:label "Bearing condition (healthy / inner race / outer race / ball fault)"@en .
+_:a2c68bed187bb98d8806cf424a8aa3e7 rdf:reifies <<( doc:FactsBearingCondition rdfs:label "Bearing condition (healthy / inner race / outer race / ball fault)"@en )>> ;
+	prov:wasDerivedFrom doc:7ba8b55b3bef .
+doc:Factswindowsize_800 rdfs:label "Window size 400 data points"@en .
+_:d3f02fba85bc36f8e24ab04203705c0d rdf:reifies <<( doc:Factswindowsize_800 rdfs:label "Window size 400 data points"@en )>> ;
+	prov:wasDerivedFrom doc:7ba8b55b3bef .
+doc:FactsRotationFreqCwru a cco:DescriptiveInformationContentEntity .
+_:f24774b4e51c0d7b975f71481de0ce4a rdf:reifies <<( doc:FactsRotationFreqCwru rdf:type cco:DescriptiveInformationContentEntity )>> ;
+	prov:wasDerivedFrom doc:7ba8b55b3bef .
+doc:Factsmotor_Reliance_2HP rdfs:label "Reliance Electric motor (2 HP)"@en .
+_:c4e8a05ca73c8d75165db7b11cde507a rdf:reifies <<( doc:Factsmotor_Reliance_2HP rdfs:label "Reliance Electric motor (2 HP)"@en )>> ;
+	prov:wasDerivedFrom doc:7ba8b55b3bef .
+doc:Factswindowsize_800 None:has_interger_value 1000 .
+_:f1a71aac940ada44de1cd69fcfdf189b rdf:reifies <<( doc:Factswindowsize_800 None:has_interger_value 1000 )>> ;
+	prov:wasDerivedFrom doc:7ba8b55b3bef .
+doc:FactsSvm_3 doc:factsusedBy doc:FactsDiagnosisModule .
+_:c08f760b961db3414cfc42f732589ea9 rdf:reifies <<( doc:FactsSvm_3 doc:factsusedBy doc:FactsDiagnosisModule )>> ;
+	prov:wasDerivedFrom doc:7ba8b55b3bef .
+doc:Factswindowsize_800 None:has_interger_value 700 .
+_:b51acbce7c2e737ddf60b33c74656c9c rdf:reifies <<( doc:Factswindowsize_800 None:has_interger_value 700 )>> ;
+	prov:wasDerivedFrom doc:7ba8b55b3bef .
+doc:Factswindowsize_800 None:has_interger_value 300 .
+_:aecf576576a93eed90afb70bde5db7c6 rdf:reifies <<( doc:Factswindowsize_800 None:has_interger_value 300 )>> ;
+	prov:wasDerivedFrom doc:7ba8b55b3bef .
+doc:FactsCwruExperiment obo:BFO_0000051 doc:FactsTorqueTransducer .
+_:a4a286577f67c6cb48e2c38328292724 rdf:reifies <<( doc:FactsCwruExperiment obo:BFO_0000051 doc:FactsTorqueTransducer )>> ;
+	prov:wasDerivedFrom doc:7ba8b55b3bef .
+doc:FactsSamplingRateCwru rdfs:label "Sampling frequency for CWRU acquisition"@en .
+_:fee7bb083df63f51743d5490e8a558a5 rdf:reifies <<( doc:FactsSamplingRateCwru rdfs:label "Sampling frequency for CWRU acquisition"@en )>> ;
+	prov:wasDerivedFrom doc:7ba8b55b3bef .
+doc:FactsFeatureExtraction_1 a None:Fault_feature_extraction .
+_:a1ff25783bc769ecf062e9b096142866 rdf:reifies <<( doc:FactsFeatureExtraction_1 rdf:type None:Fault_feature_extraction )>> ;
+	prov:wasDerivedFrom doc:7ba8b55b3bef .
+doc:FactsModelOrderParameter rdfs:label "AR model order parameter L (empirically adjusted)"@en .
+_:ce7711b73e3345d94b44603a37b84f54 rdf:reifies <<( doc:FactsModelOrderParameter rdfs:label "AR model order parameter L (empirically adjusted)"@en )>> ;
+	prov:wasDerivedFrom doc:7ba8b55b3bef .
+doc:FactsThetaVector rdfs:label "AR coefficient vector (theta)"@en .
+_:c8c55d4da44ff4cfc085eb7313c48757 rdf:reifies <<( doc:FactsThetaVector rdfs:label "AR coefficient vector (theta)"@en )>> ;
+	prov:wasDerivedFrom doc:7ba8b55b3bef .
+doc:FactsMethod2 rdfs:label "Method 1: segmentation first, then EEMD per segment"@en .
+_:f1acce9942f7799dcb6ac1f9a0408d80 rdf:reifies <<( doc:FactsMethod2 rdfs:label "Method 1: segmentation first, then EEMD per segment"@en )>> ;
+	prov:wasDerivedFrom doc:7ba8b55b3bef .
+doc:FactsSlackVariables rdfs:label "Slack variables (xi) vector for soft-margin SVM"@en .
+_:c94f1fcb84af40578b4e942098346e22 rdf:reifies <<( doc:FactsSlackVariables rdfs:label "Slack variables (xi) vector for soft-margin SVM"@en )>> ;
+	prov:wasDerivedFrom doc:7ba8b55b3bef .
+_:a60080382d66ff1dd59b083115b8a3dd prov:wasDerivedFrom doc:7ba8b55b3bef .
+doc:FactsFaultTypes a cco:DescriptiveInformationContentEntity .
+_:d4d8d69c94354dafc48cc8ec28908a77 rdf:reifies <<( doc:FactsFaultTypes rdf:type cco:DescriptiveInformationContentEntity )>> ;
+	prov:wasDerivedFrom doc:7ba8b55b3bef .
+doc:FactsModelOrderParameter a None:Model_configuration .
+_:b8f10c542e86d609f8cb71bd7d7127c4 rdf:reifies <<( doc:FactsModelOrderParameter rdf:type None:Model_configuration )>> ;
+	prov:wasDerivedFrom doc:7ba8b55b3bef .
+doc:FactsLearningCurves a cco:DescriptiveInformationContentEntity .
+_:eeefb64d81f1bf9ac4c757dd7e32f87c rdf:reifies <<( doc:FactsLearningCurves rdf:type cco:DescriptiveInformationContentEntity )>> ;
+	prov:wasDerivedFrom doc:7ba8b55b3bef .
+doc:FactsDiagnosisModule None:has_predictive_maintenance_function None:Fault_detection .
+_:e2dbb1b29d0bb0fed0cbbf91ee1c908e rdf:reifies <<( doc:FactsDiagnosisModule None:has_predictive_maintenance_function None:Fault_detection )>> ;
+	prov:wasDerivedFrom doc:7ba8b55b3bef .
+doc:Factswindowsize_800 None:has_interger_value 200 .
+_:edc86978a3696bacfd273159167820a4 rdf:reifies <<( doc:Factswindowsize_800 None:has_interger_value 200 )>> ;
+	prov:wasDerivedFrom doc:7ba8b55b3bef .
+_:fad0817cfd881a6f80c712a9aabc6389 prov:wasDerivedFrom doc:7ba8b55b3bef .
+doc:FactsBearing_2 a None:Maintainable_item .
+_:ba7821f4a66443168c9ac1afc4beabee rdf:reifies <<( doc:FactsBearing_2 rdf:type None:Maintainable_item )>> ;
+	prov:wasDerivedFrom doc:7ba8b55b3bef .
+doc:FactsEemd a None:Data_mining_technique_function .
+_:e2607d6aa7fd4240dde7e531f72c0bdc rdf:reifies <<( doc:FactsEemd rdf:type None:Data_mining_technique_function )>> ;
+	prov:wasDerivedFrom doc:7ba8b55b3bef .
+doc:FactsSamplingRateCwru a cco:DescriptiveInformationContentEntity .
+_:eb1a482a946c5b549218a4cc0d4f27a rdf:reifies <<( doc:FactsSamplingRateCwru rdf:type cco:DescriptiveInformationContentEntity )>> ;
+	prov:wasDerivedFrom doc:7ba8b55b3bef .
+doc:0a9aa0c2bae8 a prov:Entity , schema:text ;
+	prov:generatedAtTime "2026-06-12T07:46:22.487616Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+	schema:position 2 ;
+	schema:identifier "0a9aa0c2bae8" .
+doc:Factsdell_inspiron_15 a schema1:Computer .
+_:b8aeae454d2c9a6f4bccaa784d176147 rdf:reifies <<( doc:Factsdell_inspiron_15 rdf:type schema1:Computer )>> ;
+	prov:wasDerivedFrom doc:0a9aa0c2bae8 .
+doc:FactsNParamTestA cco:describes doc:Factsconfig_method1_testA .
+_:b4c4edec73245a490732fb6275e0eebd rdf:reifies <<( doc:FactsNParamTestA cco:describes doc:Factsconfig_method1_testA )>> ;
+	prov:wasDerivedFrom doc:0a9aa0c2bae8 .
+doc:Factsconfig_method1_testA a None:Model_configuration .
+_:cc325d86ff17a0c25a1f3843e799a80f rdf:reifies <<( doc:Factsconfig_method1_testA rdf:type None:Model_configuration )>> ;
+	prov:wasDerivedFrom doc:0a9aa0c2bae8 .
+doc:Factsdell_inspiron_15 schema1:memory 16 .
+_:d67d95123ac21428fc04a999883cd950 rdf:reifies <<( doc:Factsdell_inspiron_15 schema1:memory 16 )>> ;
+	prov:wasDerivedFrom doc:0a9aa0c2bae8 .
+doc:FactsAccuracy cco:describes doc:FactssvmModel .
+_:b72736fb9bba4d11dfda610e64b8a85c rdf:reifies <<( doc:FactsAccuracy cco:describes doc:FactssvmModel )>> ;
+	prov:wasDerivedFrom doc:0a9aa0c2bae8 .
+_:f198323333bb071da52206b7378902bc prov:wasDerivedFrom doc:0a9aa0c2bae8 .
+doc:Factsmethod2 a cco:Algorithm .
+_:ca4351931505bb28618349e66e927aa1 rdf:reifies <<( doc:Factsmethod2 rdf:type cco:Algorithm )>> ;
+	prov:wasDerivedFrom doc:0a9aa0c2bae8 .
+doc:FactsholdoutSplit None:has_text_value "100% accuracy cases may be related to controlled conditions of the CWRU database (artificially induced failures)" .
+_:a69e01da553eeb860ba8a867b77b7bc2 rdf:reifies <<( doc:FactsholdoutSplit None:has_text_value "100% accuracy cases may be related to controlled conditions of the CWRU database (artificially induced failures)" )>> ;
+	prov:wasDerivedFrom doc:0a9aa0c2bae8 .
+doc:FactsholdoutSplit a cco:DescriptiveInformationContentEntity .
+_:e48b30a5b8ee5f8a34bc2cf2d4ea0675 rdf:reifies <<( doc:FactsholdoutSplit rdf:type cco:DescriptiveInformationContentEntity )>> ;
+	prov:wasDerivedFrom doc:0a9aa0c2bae8 .
+doc:FactsNParamTestA a cco:DescriptiveInformationContentEntity .
+_:bb8155251bfb9776f5ff6a73b9d89d2f rdf:reifies <<( doc:FactsNParamTestA rdf:type cco:DescriptiveInformationContentEntity )>> ;
+	prov:wasDerivedFrom doc:0a9aa0c2bae8 .
+doc:FactsregularizationC cco:describes doc:FactssvmModel .
+_:f8e2ff4f0ffc3a4f58efb2260c93fc10 rdf:reifies <<( doc:FactsregularizationC cco:describes doc:FactssvmModel )>> ;
+	prov:wasDerivedFrom doc:0a9aa0c2bae8 .
+doc:FactsAccuracy schema1:value 0.9762 .
+_:b0105710f4eb5de078ef24e5ff8b28b6 rdf:reifies <<( doc:FactsAccuracy schema1:value 0.9762 )>> ;
+	prov:wasDerivedFrom doc:0a9aa0c2bae8 .
+doc:FactsAccuracy rdfs:label "class 0 test samples (no fault) in Test A confusion matrix" .
+_:e7ee5b2a8c52f1ac80812aaa72289159 rdf:reifies <<( doc:FactsAccuracy rdfs:label "class 0 test samples (no fault) in Test A confusion matrix" )>> ;
+	prov:wasDerivedFrom doc:0a9aa0c2bae8 .
+_:eb298a89de4f2f458ae986d22d5ab2c0 prov:wasDerivedFrom doc:0a9aa0c2bae8 .
+doc:FactsholdoutSplit None:has_text_value "class balancing ensured in all partitions" .
+_:ac749701c1b7e2c38c22e8c44c494ff8 rdf:reifies <<( doc:FactsholdoutSplit None:has_text_value "class balancing ensured in all partitions" )>> ;
+	prov:wasDerivedFrom doc:0a9aa0c2bae8 .
+doc:Factsstatsmodels a schema1:SoftwareApplication .
+_:df962e3098c9b3c560e32285149f6640 rdf:reifies <<( doc:Factsstatsmodels rdf:type schema1:SoftwareApplication )>> ;
+	prov:wasDerivedFrom doc:0a9aa0c2bae8 .
+doc:FactsAccuracy schema1:value 0.6111 .
+_:f1acdfc6ec004ccc9e1e7642ce0b1598 rdf:reifies <<( doc:FactsAccuracy schema1:value 0.6111 )>> ;
+	prov:wasDerivedFrom doc:0a9aa0c2bae8 .
+doc:Factsdell_inspiron_15 schema1:storage "1 TB HDD + 256 GB SSD" .
+_:b68cb985a1cff9ec1b2008af53284982 rdf:reifies <<( doc:Factsdell_inspiron_15 schema1:storage "1 TB HDD + 256 GB SSD" )>> ;
+	prov:wasDerivedFrom doc:0a9aa0c2bae8 .
+doc:FactsholdoutSplit schema1:value 0.3 .
+_:effae92411b94ab14a54c872034ba131 rdf:reifies <<( doc:FactsholdoutSplit schema1:value 0.3 )>> ;
+	prov:wasDerivedFrom doc:0a9aa0c2bae8 .
+doc:FactsAccuracy schema1:value 3 .
+_:c7c7475e199972683ae854b853b773a7 rdf:reifies <<( doc:FactsAccuracy schema1:value 3 )>> ;
+	prov:wasDerivedFrom doc:0a9aa0c2bae8 .
+doc:FactshyperparameterSelectionStrategy cco:describes doc:FactssvmModel .
+_:d280accb0fecb25745c6b8e5c472831c rdf:reifies <<( doc:FactshyperparameterSelectionStrategy cco:describes doc:FactssvmModel )>> ;
+	prov:wasDerivedFrom doc:0a9aa0c2bae8 .
+doc:FactsAccuracy schema1:value 0.8331 .
+_:a26d7e89a301806ee5859470fedb5e67 rdf:reifies <<( doc:FactsAccuracy schema1:value 0.8331 )>> ;
+	prov:wasDerivedFrom doc:0a9aa0c2bae8 .
+doc:FactsAccuracy schema1:value 54 .
+_:d959a4abeeba4e32ffc116a16d016eae rdf:reifies <<( doc:FactsAccuracy schema1:value 54 )>> ;
+	prov:wasDerivedFrom doc:0a9aa0c2bae8 .
+doc:FactsAccuracy rdfs:label "best accuracy for Test B (800 data points per segment)" .
+_:f4a78d443da82a29786488737791d9be rdf:reifies <<( doc:FactsAccuracy rdfs:label "best accuracy for Test B (800 data points per segment)" )>> ;
+	prov:wasDerivedFrom doc:0a9aa0c2bae8 .
+doc:Factsarticle1_20 rdfs:label "Source article (extracted text)" .
+_:b2ef9b2d1606837081938422f7bd3a5c rdf:reifies <<( doc:Factsarticle1_20 rdfs:label "Source article (extracted text)" )>> ;
+	prov:wasDerivedFrom doc:0a9aa0c2bae8 .
+doc:FactsregularizationC rdfs:label "regularization parameter C (SVM)" .
+_:f9d1169b609bcb2e42d5addfeb01c8b2 rdf:reifies <<( doc:FactsregularizationC rdfs:label "regularization parameter C (SVM)" )>> ;
+	prov:wasDerivedFrom doc:0a9aa0c2bae8 .
+doc:FactsNParamTestA None:has_interger_value 4 .
+_:fd2481b9448048abf33eefebfdca8d28 rdf:reifies <<( doc:FactsNParamTestA None:has_interger_value 4 )>> ;
+	prov:wasDerivedFrom doc:0a9aa0c2bae8 .
+doc:FactsimplementationEnv schema1:operatingSystem "Microsoft Windows 10 Home" .
+_:cdce46af0ec92bd9c1b0dc2a251753fd rdf:reifies <<( doc:FactsimplementationEnv schema1:operatingSystem "Microsoft Windows 10 Home" )>> ;
+	prov:wasDerivedFrom doc:0a9aa0c2bae8 .
+doc:FactsNParamTestA rdfs:label "L (AR model order) for Method 1 constant-speed" .
+_:c73e1871c3acccad56b8e1cec71b598a rdf:reifies <<( doc:FactsNParamTestA rdfs:label "L (AR model order) for Method 1 constant-speed" )>> ;
+	prov:wasDerivedFrom doc:0a9aa0c2bae8 .
+doc:FactsAccuracy schema1:value 0.9056 .
+_:b1482faf0a77aeeab73eb0983137b853 rdf:reifies <<( doc:FactsAccuracy schema1:value 0.9056 )>> ;
+	prov:wasDerivedFrom doc:0a9aa0c2bae8 .
+doc:FactsAccuracy rdfs:label "class 2 -> class 0 misclassified count (Test A)" .
+_:c6953da421eeadb5ba15eb53b8974093 rdf:reifies <<( doc:FactsAccuracy rdfs:label "class 2 -> class 0 misclassified count (Test A)" )>> ;
+	prov:wasDerivedFrom doc:0a9aa0c2bae8 .
+doc:Factspython_3_9_7 rdfs:label "Python" .
+_:e07c74eab3569976d6ca885ecd03b665 rdf:reifies <<( doc:Factspython_3_9_7 rdfs:label "Python" )>> ;
+	prov:wasDerivedFrom doc:0a9aa0c2bae8 .
+doc:FactsAccuracy rdfs:label "class 0 accuracy (Test A, 1000 pts)" .
+_:ac2a2ace1ae9a4292b6478b6a0038dcb rdf:reifies <<( doc:FactsAccuracy rdfs:label "class 0 accuracy (Test A, 1000 pts)" )>> ;
+	prov:wasDerivedFrom doc:0a9aa0c2bae8 .
+doc:FactsholdoutSplit cco:describes doc:FactsholdoutSplit .
+_:bc34adc09bea86d32c69a3c6d62f3599 rdf:reifies <<( doc:FactsholdoutSplit cco:describes doc:FactsholdoutSplit )>> ;
+	prov:wasDerivedFrom doc:0a9aa0c2bae8 .
+doc:Factspyemd schema1:softwareRequirements doc:Factspython_3_9_7 .
+_:c92347b543c14e8790304227c290a4e0 rdf:reifies <<( doc:Factspyemd schema1:softwareRequirements doc:Factspython_3_9_7 )>> ;
+	prov:wasDerivedFrom doc:0a9aa0c2bae8 .
+doc:FactsAccuracy rdfs:label "class 1 test samples (inner race fault) in Test A confusion matrix" .
+_:bba03c38d1890859cc8a046c2f9347e1 rdf:reifies <<( doc:FactsAccuracy rdfs:label "class 1 test samples (inner race fault) in Test A confusion matrix" )>> ;
+	prov:wasDerivedFrom doc:0a9aa0c2bae8 .
+doc:FactsscikitLearn rdfs:label "scikit-learn" .
+_:b078dd9b801e88f4fb748d077ba5ea80 rdf:reifies <<( doc:FactsscikitLearn rdfs:label "scikit-learn" )>> ;
+	prov:wasDerivedFrom doc:0a9aa0c2bae8 .
+doc:FactssvmModel rdfs:label "Support Vector Machine classifier (linear kernel)" .
+_:dce53978c361753657c299e08135ea3e rdf:reifies <<( doc:FactssvmModel rdfs:label "Support Vector Machine classifier (linear kernel)" )>> ;
+	prov:wasDerivedFrom doc:0a9aa0c2bae8 .
+doc:FactsNParamTestA rdfs:label "N (number of IMFs) for Method 1 Test A" .
+_:da3e19c7cea0fa6be74de9b739270ff rdf:reifies <<( doc:FactsNParamTestA rdfs:label "N (number of IMFs) for Method 1 Test A" )>> ;
+	prov:wasDerivedFrom doc:0a9aa0c2bae8 .
+doc:FactsimplementationEnv a cco:InformationProcessingArtifact .
+_:b5ded9be41ce56b11c5e905fd8598bba rdf:reifies <<( doc:FactsimplementationEnv rdf:type cco:InformationProcessingArtifact )>> ;
+	prov:wasDerivedFrom doc:0a9aa0c2bae8 .
+doc:FactsholdoutSplit schema1:value 0.7 .
+_:ca2a1797918a7bb821b0f510718a1ee9 rdf:reifies <<( doc:FactsholdoutSplit schema1:value 0.7 )>> ;
+	prov:wasDerivedFrom doc:0a9aa0c2bae8 .
+doc:FactsAccuracy rdfs:label "total test samples for Test A confusion matrix (1000 points)" .
+_:aa14d6be0786878d8a47a9a75f400606 rdf:reifies <<( doc:FactsAccuracy rdfs:label "total test samples for Test A confusion matrix (1000 points)" )>> ;
+	prov:wasDerivedFrom doc:0a9aa0c2bae8 .
+doc:FactsNParamTestA None:has_interger_value 5 .
+_:fe7089f8c3560875cdf4577adb4dd751 rdf:reifies <<( doc:FactsNParamTestA None:has_interger_value 5 )>> ;
+	prov:wasDerivedFrom doc:0a9aa0c2bae8 .
+doc:FactsAccuracy schema1:value 18 .
+_:ebbb6525b49fa2130adf74edf42b5ba8 rdf:reifies <<( doc:FactsAccuracy schema1:value 18 )>> ;
+	prov:wasDerivedFrom doc:0a9aa0c2bae8 .
+doc:Factsmethod1 a cco:Algorithm .
+_:e3c3f717ae7f774641b7627d87ee727a rdf:reifies <<( doc:Factsmethod1 rdf:type cco:Algorithm )>> ;
+	prov:wasDerivedFrom doc:0a9aa0c2bae8 .
+doc:FactsAccuracy schema1:value 7 .
+_:c3ca70a85900b0eeae751416c3065868 rdf:reifies <<( doc:FactsAccuracy schema1:value 7 )>> ;
+	prov:wasDerivedFrom doc:0a9aa0c2bae8 .
+doc:FactsscikitLearn a schema1:SoftwareApplication .
+_:f4b719d14c1493a81ab772a560e1d0b0 rdf:reifies <<( doc:FactsscikitLearn rdf:type schema1:SoftwareApplication )>> ;
+	prov:wasDerivedFrom doc:0a9aa0c2bae8 .
+doc:FactsholdoutSplit None:has_text_value "training curve shows sharp initial drop stabilizing ~0.88; validation curve grows and approaches training curve indicating improved generalization with more data" .
+_:a65e61a621fef9ba4ce78ec5c35010f6 rdf:reifies <<( doc:FactsholdoutSplit None:has_text_value "training curve shows sharp initial drop stabilizing ~0.88; validation curve grows and approaches training curve indicating improved generalization with more data" )>> ;
+	prov:wasDerivedFrom doc:0a9aa0c2bae8 .
+doc:FactsAccuracy schema1:value 0.9444 .
+_:c5f471ca1bc15b4f0275d43039b2881c rdf:reifies <<( doc:FactsAccuracy schema1:value 0.9444 )>> ;
+	prov:wasDerivedFrom doc:0a9aa0c2bae8 .
+doc:FactsNParamTestA rdfs:label "L (AR model order) for Method 1 Test A" .
+_:a91f4a83245fc720c75076c677bb07af rdf:reifies <<( doc:FactsNParamTestA rdfs:label "L (AR model order) for Method 1 Test A" )>> ;
+	prov:wasDerivedFrom doc:0a9aa0c2bae8 .
+doc:Factsconfig_method1_testA None:describes_configuration doc:FactssvmModel .
+_:fb892bbe7d33aaec83ccd226ad4d2b6c rdf:reifies <<( doc:Factsconfig_method1_testA None:describes_configuration doc:FactssvmModel )>> ;
+	prov:wasDerivedFrom doc:0a9aa0c2bae8 .
+doc:FactsimplementationEnv schema1:hardware doc:Factsdell_inspiron_15 .
+_:a6f68aff4b99e6237e286f92b062e981 rdf:reifies <<( doc:FactsimplementationEnv schema1:hardware doc:Factsdell_inspiron_15 )>> ;
+	prov:wasDerivedFrom doc:0a9aa0c2bae8 .
+doc:Factspyemd rdfs:label "PyEMD (Ensemble Empirical Mode Decomposition implementation)" .
+_:d4dbb67deb02d8c552023a58749bfa0c rdf:reifies <<( doc:Factspyemd rdfs:label "PyEMD (Ensemble Empirical Mode Decomposition implementation)" )>> ;
+	prov:wasDerivedFrom doc:0a9aa0c2bae8 .
+doc:FactsholdoutSplit None:has_text_value "linear kernel; regularization parameter C = 1.0 (default in scikit-learn); class_weight = 'balanced' used during training" .
+_:e8659056b04ff3657a71bfae8c71ca02 rdf:reifies <<( doc:FactsholdoutSplit None:has_text_value "linear kernel; regularization parameter C = 1.0 (default in scikit-learn); class_weight = 'balanced' used during training" )>> ;
+	prov:wasDerivedFrom doc:0a9aa0c2bae8 .
+doc:FactsNParamTestA None:has_interger_value 8 .
+_:f7f7cfd75a329a4412248869ad9a5da0 rdf:reifies <<( doc:FactsNParamTestA None:has_interger_value 8 )>> ;
+	prov:wasDerivedFrom doc:0a9aa0c2bae8 .
+doc:FactssvmModel schema1:softwareRequirements doc:Factspython_3_9_7 .
+_:ce3b8d1e5c628dc4cb4812b52cb16c7e rdf:reifies <<( doc:FactssvmModel schema1:softwareRequirements doc:Factspython_3_9_7 )>> ;
+	prov:wasDerivedFrom doc:0a9aa0c2bae8 .
+doc:FactsAccuracy rdfs:label "accuracy for 700 data points per segment (Method 1, constant-speed)" .
+_:b6b9e36baa091a67378664a1082c62ae rdf:reifies <<( doc:FactsAccuracy rdfs:label "accuracy for 700 data points per segment (Method 1, constant-speed)" )>> ;
+	prov:wasDerivedFrom doc:0a9aa0c2bae8 .
+doc:FactsAccuracy rdfs:label "average accuracy for Test B (Method 1)" .
+_:b677a5a65d9f4685798e88e13f60d4f4 rdf:reifies <<( doc:FactsAccuracy rdfs:label "average accuracy for Test B (Method 1)" )>> ;
+	prov:wasDerivedFrom doc:0a9aa0c2bae8 .
+doc:FactsholdoutSplit None:has_text_value "all segments above 200 data points (except 600) exceeded 80% accuracy" .
+_:b0a20a2baeec6cae2a48e630ddcb248f rdf:reifies <<( doc:FactsholdoutSplit None:has_text_value "all segments above 200 data points (except 600) exceeded 80% accuracy" )>> ;
+	prov:wasDerivedFrom doc:0a9aa0c2bae8 .
+doc:FactsAccuracy rdfs:label "accuracy for 100 data points per segment (Method 1, constant-speed)" .
+_:a86dc5c152969a09e3dc49f92908dcde rdf:reifies <<( doc:FactsAccuracy rdfs:label "accuracy for 100 data points per segment (Method 1, constant-speed)" )>> ;
+	prov:wasDerivedFrom doc:0a9aa0c2bae8 .
+doc:FactssvmModel schema1:softwareRequirements doc:FactsscikitLearn .
+_:d2d2cc3cdb3aeaa5fb188c1b7c3790cf rdf:reifies <<( doc:FactssvmModel schema1:softwareRequirements doc:FactsscikitLearn )>> ;
+	prov:wasDerivedFrom doc:0a9aa0c2bae8 .
+doc:FactsimplementationEnv rdfs:label "Computational experiment environment (software & hardware)" .
+_:c26e57bd5b3d99ff8ffb93cbe0614e88 rdf:reifies <<( doc:FactsimplementationEnv rdfs:label "Computational experiment environment (software & hardware)" )>> ;
+	prov:wasDerivedFrom doc:0a9aa0c2bae8 .
+doc:FactsNParamTestA rdfs:label "N (number of IMFs) for Method 1 constant-speed" .
+_:ef38283da36d851963956461af3cda07 rdf:reifies <<( doc:FactsNParamTestA rdfs:label "N (number of IMFs) for Method 1 constant-speed" )>> ;
+	prov:wasDerivedFrom doc:0a9aa0c2bae8 .
+doc:Factsconfig_method1_testA rdfs:label "Model configuration for Method 1 under constant-speed regime" .
+_:ac5f8fa45d755430776ab9c1eeea9372 rdf:reifies <<( doc:Factsconfig_method1_testA rdfs:label "Model configuration for Method 1 under constant-speed regime" )>> ;
+	prov:wasDerivedFrom doc:0a9aa0c2bae8 .
+doc:Factsmethod1 cco:is_about doc:Factspyemd .
+_:fe32ccf56ce7970eb1e66e8d2cf8231d rdf:reifies <<( doc:Factsmethod1 cco:is_about doc:Factspyemd )>> ;
+	prov:wasDerivedFrom doc:0a9aa0c2bae8 .
+doc:FactsAccuracy rdfs:label "class 2 -> class 1 misclassified count (Test A)" .
+_:d184255d7a907c11c9acea09a67ed24a rdf:reifies <<( doc:FactsAccuracy rdfs:label "class 2 -> class 1 misclassified count (Test A)" )>> ;
+	prov:wasDerivedFrom doc:0a9aa0c2bae8 .
+doc:Factsmethod1 rdfs:label "Method 1 (EEMD applied after segmentation)" .
+_:fa79d0d8111ae4d7d1d3512937779d1e rdf:reifies <<( doc:Factsmethod1 rdfs:label "Method 1 (EEMD applied after segmentation)" )>> ;
+	prov:wasDerivedFrom doc:0a9aa0c2bae8 .
+doc:FactsNParamTestA None:has_interger_value 12 .
+_:c8848a390b329ad10e2481279d841405 rdf:reifies <<( doc:FactsNParamTestA None:has_interger_value 12 )>> ;
+	prov:wasDerivedFrom doc:0a9aa0c2bae8 .
+doc:FactsAccuracy schema1:value "1"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+_:f3dc9e5a3c28f48d324186030f44dd4f rdf:reifies <<( doc:FactsAccuracy schema1:value "1"^^<http://www.w3.org/2001/XMLSchema#decimal> )>> ;
+	prov:wasDerivedFrom doc:0a9aa0c2bae8 .
+doc:FactsAccuracy schema1:value 4 .
+_:b65368dcdd216d4cc38e1aacadec55ee rdf:reifies <<( doc:FactsAccuracy schema1:value 4 )>> ;
+	prov:wasDerivedFrom doc:0a9aa0c2bae8 .
+doc:Factspython_3_9_7 a schema1:SoftwareApplication .
+_:a6e2bbfb9c73991262c7bc502557b622 rdf:reifies <<( doc:Factspython_3_9_7 rdf:type schema1:SoftwareApplication )>> ;
+	prov:wasDerivedFrom doc:0a9aa0c2bae8 .
+doc:FactsholdoutSplit cco:describes doc:FactssvmModel .
+_:c8dbc6f5df4e86dd945145e6a7b86260 rdf:reifies <<( doc:FactsholdoutSplit cco:describes doc:FactssvmModel )>> ;
+	prov:wasDerivedFrom doc:0a9aa0c2bae8 .
+doc:Factsdell_inspiron_15 schema1:processor "Intel Core i7" .
+_:d02c67f3e1c051da80b943693a11a88a rdf:reifies <<( doc:Factsdell_inspiron_15 schema1:processor "Intel Core i7" )>> ;
+	prov:wasDerivedFrom doc:0a9aa0c2bae8 .
+doc:FactsAccuracy rdfs:label "accuracy for 1000 data points per segment (Method 1, constant-speed)" .
+_:c436fc75df1503ba0aea12bc44f80683 rdf:reifies <<( doc:FactsAccuracy rdfs:label "accuracy for 1000 data points per segment (Method 1, constant-speed)" )>> ;
+	prov:wasDerivedFrom doc:0a9aa0c2bae8 .
+doc:Factsconfig_method1_testA rdfs:label "Model configuration for Method 1 under variable-speed Test B (deceleration)" .
+_:a5b3893042fa5dcd660e5b3b123d68f0 rdf:reifies <<( doc:Factsconfig_method1_testA rdfs:label "Model configuration for Method 1 under variable-speed Test B (deceleration)" )>> ;
+	prov:wasDerivedFrom doc:0a9aa0c2bae8 .
+doc:FactsAccuracy rdfs:label "class 2 test samples (outer race fault) in Test A confusion matrix" .
+_:b42a05904405f462aca1954ac7c5e1f4 rdf:reifies <<( doc:FactsAccuracy rdfs:label "class 2 test samples (outer race fault) in Test A confusion matrix" )>> ;
+	prov:wasDerivedFrom doc:0a9aa0c2bae8 .
+doc:FactshyperparameterSelectionStrategy None:has_text_value "one hyperparameter varied at a time while keeping the other fixed; repeated per operating regime and IMF method; final config maximizes mean accuracy across segment sizes" .
+_:d78aa92ae566ad4a6766863461582b92 rdf:reifies <<( doc:FactshyperparameterSelectionStrategy None:has_text_value "one hyperparameter varied at a time while keeping the other fixed; repeated per operating regime and IMF method; final config maximizes mean accuracy across segment sizes" )>> ;
+	prov:wasDerivedFrom doc:0a9aa0c2bae8 .
+doc:FactsAccuracy rdfs:label "best accuracy for Test A (1000 data points per segment, Method 1)" .
+_:f25c7e2fb64c0ebee3a7ed6619425c8d rdf:reifies <<( doc:FactsAccuracy rdfs:label "best accuracy for Test A (1000 data points per segment, Method 1)" )>> ;
+	prov:wasDerivedFrom doc:0a9aa0c2bae8 .
+doc:FactsregularizationC schema1:value "1"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+_:ba8cfc90e70f197b3d2c614863cfef66 rdf:reifies <<( doc:FactsregularizationC schema1:value "1"^^<http://www.w3.org/2001/XMLSchema#decimal> )>> ;
+	prov:wasDerivedFrom doc:0a9aa0c2bae8 .
+doc:FactsAccuracy rdfs:label "average overall accuracy (Method 1, constant-speed, N=4, L=12)" .
+_:a839ad7d7d19d3d10d6d06f12aedf857 rdf:reifies <<( doc:FactsAccuracy rdfs:label "average overall accuracy (Method 1, constant-speed, N=4, L=12)" )>> ;
+	prov:wasDerivedFrom doc:0a9aa0c2bae8 .
+doc:Factsdell_inspiron_15 rdfs:label "Dell Inspiron 15 Gaming i157567-A30P" .
+_:f55944e67409bb5f712687ac4b1eea2a rdf:reifies <<( doc:Factsdell_inspiron_15 rdfs:label "Dell Inspiron 15 Gaming i157567-A30P" )>> ;
+	prov:wasDerivedFrom doc:0a9aa0c2bae8 .
+doc:Factsmethod2 rdfs:label "Method 2" .
+_:fe448d58eafcb444f8c5854d5b36abaa rdf:reifies <<( doc:Factsmethod2 rdfs:label "Method 2" )>> ;
+	prov:wasDerivedFrom doc:0a9aa0c2bae8 .
+doc:FactssvmModel a None:Predictive_maintenance_model .
+_:f572b069d23413a54e303a70d32b2b0 rdf:reifies <<( doc:FactssvmModel rdf:type None:Predictive_maintenance_model )>> ;
+	prov:wasDerivedFrom doc:0a9aa0c2bae8 .
+doc:FactsAccuracy rdfs:label "total misclassified samples from class 2 (Test A, 1000 pts)" .
+_:b48949177df01e7a8e851ae388a5d5b2 rdf:reifies <<( doc:FactsAccuracy rdfs:label "total misclassified samples from class 2 (Test A, 1000 pts)" )>> ;
+	prov:wasDerivedFrom doc:0a9aa0c2bae8 .
+doc:Factsstatsmodels rdfs:label "statsmodels" .
+_:c26e966d840af2c5ea8c9255f6753674 rdf:reifies <<( doc:Factsstatsmodels rdfs:label "statsmodels" )>> ;
+	prov:wasDerivedFrom doc:0a9aa0c2bae8 .
+doc:Factsdell_inspiron_15 schema1:manufacturer "Dell" .
+_:c02203dbecc7b33a1832a20609dff032 rdf:reifies <<( doc:Factsdell_inspiron_15 schema1:manufacturer "Dell" )>> ;
+	prov:wasDerivedFrom doc:0a9aa0c2bae8 .
+doc:Factsstatsmodels schema1:softwareRequirements doc:Factspython_3_9_7 .
+_:a8c1e182dce4d27c86d4d3bed4f524c5 rdf:reifies <<( doc:Factsstatsmodels schema1:softwareRequirements doc:Factspython_3_9_7 )>> ;
+	prov:wasDerivedFrom doc:0a9aa0c2bae8 .
+doc:FactsAccuracy rdfs:label "class 2 accuracy (Test A, 1000 pts)" .
+_:f430baf4e074efce20e84973a1064b95 rdf:reifies <<( doc:FactsAccuracy rdfs:label "class 2 accuracy (Test A, 1000 pts)" )>> ;
+	prov:wasDerivedFrom doc:0a9aa0c2bae8 .
+doc:FactsholdoutSplit None:has_text_value "five-fold stratified cross-validation applied on training set for learning curves" .
+_:af9080ae2e80b85942c06d4d29c8c859 rdf:reifies <<( doc:FactsholdoutSplit None:has_text_value "five-fold stratified cross-validation applied on training set for learning curves" )>> ;
+	prov:wasDerivedFrom doc:0a9aa0c2bae8 .
+doc:FactsAccuracy schema1:value 0.8333 .
+_:bf667ea051b997b2e5748514d3234271 rdf:reifies <<( doc:FactsAccuracy schema1:value 0.8333 )>> ;
+	prov:wasDerivedFrom doc:0a9aa0c2bae8 .
+doc:FactssvmModel a cco:Algorithm .
+_:a78ec7b35b0c86e92174ebf72af01c72 rdf:reifies <<( doc:FactssvmModel rdf:type cco:Algorithm )>> ;
+	prov:wasDerivedFrom doc:0a9aa0c2bae8 .
+doc:FactsholdoutSplit None:has_interger_value 5 .
+_:e2c263725f7b2f84c76b0fbc05d77ae rdf:reifies <<( doc:FactsholdoutSplit None:has_interger_value 5 )>> ;
+	prov:wasDerivedFrom doc:0a9aa0c2bae8 .
+doc:Factsconfig_method1_testA rdfs:label "Model configuration for Method 1 under variable-speed Test A (acceleration)" .
+_:ad0abb452b218c0e7457056e9432ac94 rdf:reifies <<( doc:Factsconfig_method1_testA rdfs:label "Model configuration for Method 1 under variable-speed Test A (acceleration)" )>> ;
+	prov:wasDerivedFrom doc:0a9aa0c2bae8 .
+doc:FactsregularizationC a cco:DescriptiveInformationContentEntity .
+_:cf526c20dfda89d520f5f466c8b5d8a6 rdf:reifies <<( doc:FactsregularizationC rdf:type cco:DescriptiveInformationContentEntity )>> ;
+	prov:wasDerivedFrom doc:0a9aa0c2bae8 .
+doc:FactsAccuracy rdfs:label "class 1 accuracy (Test A, 1000 pts)" .
+_:cb1ddc4f518e680958f2235ae72bea rdf:reifies <<( doc:FactsAccuracy rdfs:label "class 1 accuracy (Test A, 1000 pts)" )>> ;
+	prov:wasDerivedFrom doc:0a9aa0c2bae8 .
+doc:FactsAccuracy schema1:value 0.8971 .
+_:bf857e2b1f50c83aca897e64f31e4606 rdf:reifies <<( doc:FactsAccuracy schema1:value 0.8971 )>> ;
+	prov:wasDerivedFrom doc:0a9aa0c2bae8 .
+doc:Factspython_3_9_7 schema1:softwareVersion "3.9.7" .
+_:fd07ea6524de64ae720cf30a54910a5e rdf:reifies <<( doc:Factspython_3_9_7 schema1:softwareVersion "3.9.7" )>> ;
+	prov:wasDerivedFrom doc:0a9aa0c2bae8 .
+doc:FactsNParamTestA rdfs:label "L (AR model order) for Method 1 Test B" .
+_:aadd7245d4e8cbad98e1288b1f95a824 rdf:reifies <<( doc:FactsNParamTestA rdfs:label "L (AR model order) for Method 1 Test B" )>> ;
+	prov:wasDerivedFrom doc:0a9aa0c2bae8 .
+doc:FactsholdoutSplit None:has_text_value "70/30 (70% training, 30% testing) hold-out split" .
+_:ac5bad7c78b885de58c033abc999df8d rdf:reifies <<( doc:FactsholdoutSplit None:has_text_value "70/30 (70% training, 30% testing) hold-out split" )>> ;
+	prov:wasDerivedFrom doc:0a9aa0c2bae8 .
+doc:FactshyperparameterSelectionStrategy a cco:DescriptiveInformationContentEntity .
+_:fb5281ddc77cf595e704fba76088c7a8 rdf:reifies <<( doc:FactshyperparameterSelectionStrategy rdf:type cco:DescriptiveInformationContentEntity )>> ;
+	prov:wasDerivedFrom doc:0a9aa0c2bae8 .
+doc:Factspyemd a cco:Algorithm .
+_:a9626bf5f50498d83c67eca96bad112 rdf:reifies <<( doc:Factspyemd rdf:type cco:Algorithm )>> ;
+	prov:wasDerivedFrom doc:0a9aa0c2bae8 .
+doc:FactsNParamTestA rdfs:label "N (number of IMFs) for Method 1 Test B" .
+_:a3f30fd82f97e55e05c614bf19a85d7e rdf:reifies <<( doc:FactsNParamTestA rdfs:label "N (number of IMFs) for Method 1 Test B" )>> ;
+	prov:wasDerivedFrom doc:0a9aa0c2bae8 .
+cco:DirectiveInformationContentEntity owl:sameAs cco:DescriptiveInformationContentEntity .
