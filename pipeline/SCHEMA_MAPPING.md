@@ -9,6 +9,14 @@ This document maps the 19-column CBR CSV schema in `CleanedDATA V21-07-2021.csv`
 - `external/CBR-Ontology-For-Predictive-Maintenance/CBR-Ontology/CBRproject/src/User/AppConfiguration.java`
 - `external/CBR-Ontology-For-Predictive-Maintenance/CBR-Ontology/CBRproject/data/CleanedDATA V21-07-2021.csv`
 
+## Scope of this mapping
+
+This is the target mapping for the 19-column CBR schema. It is not a claim that every OntoCast fact is materialized through the same OPMAD property path by the current bridge.
+
+`pipeline/facts_to_csv.py` is a conservative interoperability bridge for OntoCast output. It accepts one or more fact TTL paths or globs, strips OntoCast RDF-star reification statements that stock `rdflib` cannot parse, combines the remaining graphs, and writes a UTF-8 semicolon-delimited CSV. It obtains labels from `schema:name`, `rdfs:label`, and the supplied ontology; unavailable values are represented by schema-valid defaults such as `Not reported`, `Unknown synchronization`, or `0`. It derives preprocessing from design details and model approach from the number of extracted models.
+
+Consequently, inspect the generated CSV before using it as a production case base. Conversion does not rebuild the CBR ontology or myCBR project; copy the CSV into the CBR data directory and run the `rebuild` command when the new cases must be searchable.
+
 ## Namespaces
 
 - `OPMAD:` `http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#`

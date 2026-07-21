@@ -7,6 +7,7 @@ CONFIG_FILE="${RUN_DIR}/ontocast_100_config.env"
 INPUT_DIR="${RUN_DIR}/input"
 OUTPUT_DIR="${RUN_DIR}/output"
 HEAD_CHUNKS="${ONTOCAST_HEAD_CHUNKS:-3}"
+ONTOCAST_BIN="$(command -v ontocast 2>/dev/null || true)"
 cd "${REPO_ROOT}" || exit 1
 set -a
 source "${REPO_ROOT}/.env"
@@ -24,9 +25,15 @@ echo "  config:  ${CONFIG_FILE}"
 echo "  input:   ${INPUT_DIR} (${pdf_count} PDFs)"
 echo "  output:  ${OUTPUT_DIR}"
 echo "  chunks:  ${HEAD_CHUNKS}"
-echo "  conda:   ontologies"
+echo "  venv:    .venv"
+if [[ -z "${ONTOCAST_BIN}" ]]; then
+  echo "OntoCast CLI not found. Activate the repo venv and run the submodule setup first:" >&2
+  echo "  source .venv/bin/activate" >&2
+  echo "  bash scripts/setup_submodules.sh" >&2
+  exit 1
+fi
 set +e
-conda run --no-capture-output -n ontologies ontocast \
+"${ONTOCAST_BIN}" \
   --env-file "${CONFIG_FILE}" \
   --input-path "${INPUT_DIR}" \
   --head-chunks "${HEAD_CHUNKS}"

@@ -33,7 +33,7 @@ if (-not (Test-Path $PdfPath)) {
 # Check ontocast is available
 $OntocastBin = Get-Command ontocast -ErrorAction SilentlyContinue
 if (-not $OntocastBin) {
-    Write-Error "OntoCast CLI not found. Activate the Conda environment first: conda activate ontologies"
+    Write-Error "OntoCast CLI not found. Activate the repo venv and run the submodule setup first: .\.venv\Scripts\Activate.ps1; .\scripts\setup_submodules.ps1"
     exit 1
 }
 

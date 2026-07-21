@@ -127,6 +127,8 @@ def generate_report(
     lines = [
         "# Comparison: Fixed OPMAD vs Evolved Ontology Extraction",
         "",
+        "> **Generated report:** Metrics describe the output files supplied to this run. They are not a general benchmark and should be regenerated for each paper or extraction configuration.",
+        "",
         "## Summary Metrics",
         "",
         "| Metric | Fixed OPMAD | Evolved Ontology |",

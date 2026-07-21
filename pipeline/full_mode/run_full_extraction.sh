@@ -7,8 +7,9 @@ ONTOCAST_BIN="$(command -v ontocast 2>/dev/null || true)"
 PYTHON_BIN="python3"
 
 if [[ -z "${ONTOCAST_BIN}" ]]; then
-  echo "OntoCast CLI not found. Activate the Conda environment first:" >&2
-  echo "  conda activate ontologies" >&2
+  echo "OntoCast CLI not found. Activate the repo venv and run the submodule setup first:" >&2
+  echo "  source .venv/bin/activate" >&2
+  echo "  bash scripts/setup_submodules.sh" >&2
   exit 1
 fi
 CONFIG_FILE="${SCRIPT_DIR}/ontocast_full_config.env"

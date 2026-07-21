@@ -19,10 +19,18 @@ Run OntoCast in full ontology-evolution mode against `example_paper.pdf` with:
 
 ## Environment
 
-Activate the Conda environment built by `scripts/create_conda_env.sh`:
+Activate the repo `.venv` and ensure the submodule stack has been set up:
 
 ```bash
-conda activate ontologies
+source ../../.venv/bin/activate
+bash ../../scripts/setup_submodules.sh
+```
+
+From Windows PowerShell at the repo root:
+
+```powershell
+.\.venv\Scripts\Activate.ps1
+.\scripts\setup_submodules.ps1
 ```
 
 The run script uses `ontocast` from PATH.
@@ -33,47 +41,35 @@ The run script uses `ontocast` from PATH.
 
 ## OntoCast patches
 
-All required patches are applied at Conda build time by `conda/recipes/ontocast/patch_ontocast.py`. The patches are documented in GitHub issue #1 and cover:
+All required patches are applied by `scripts/setup_submodules.*` via `scripts/apply_local_patches.py`. The maintained patch inventory and update procedure are in [`../../scripts/LOCAL_PATCHES.md`](../../scripts/LOCAL_PATCHES.md).
 
-1. `ontology_prefix` fresh-ontology prompt fix
-2. oxigraph deepcopy hardening / `RDFGraph.__deepcopy__`
-3. SPARQL generation hardening for RDF-star triple-terms
-4. critic / retry threshold relaxation
-5. `skip_ontology_critique` config flag (used by fixed mode, not by full mode)
+Full mode deliberately does **not** set `SKIP_ONTOLOGY_CRITIQUE` or an ontology directory. In contrast, fixed mode supplies the OPMAD seed and skips ontology critique. The complete effective settings are in `ontocast_full_config.env` and `../ontocast_config.env`.
 
-## Command run
+## Run and outputs
+
+```bash
+bash pipeline/full_mode/run_full_extraction.sh example_paper.pdf
+```
+
+Pass an optional second argument to set the chunk limit:
 
 ```bash
 bash pipeline/full_mode/run_full_extraction.sh example_paper.pdf 2
 ```
 
-## Recorded result
+The default is two chunks. On Bash, `ONTOCAST_HEAD_CHUNKS` supplies the default when the argument is omitted. The runners clear previous top-level `*.ttl`, `*.json`, and `*.log` files in `pipeline/full_mode/test_output/`, stage the PDF under `test_output/input/`, and then require at least one of each output:
 
-The full-mode run completed and wrote both ontology and facts output:
-
-- `pipeline/full_mode/test_output/ontology_brick_1.0.1.ttl`
-- `pipeline/full_mode/test_output/facts_5cc89b5bfaf6.ttl`
+- `pipeline/full_mode/test_output/ontology_*.ttl`
+- `pipeline/full_mode/test_output/facts_*.ttl`
 - `pipeline/full_mode/test_output/run.log`
 
-The run still showed salvage / fallback behavior, but it did **not** crash:
+OntoCast serializes RDF-star/Turtle-star provenance (`rdf:reifies <<(...)>>`). Stock `rdflib` does not parse that syntax directly. `pipeline/full_mode/sparql_query.py`, `pipeline/facts_to_csv.py`, and the comparison tool remove those provenance statements before their ordinary-Turtle processing; use an RDF-star-capable parser when provenance itself must be retained.
 
-- ontology bootstrap did not yield a usable seed ontology
-- parallel ontology map salvaged output from `2/2` non-converged unit loops
-- normalization reported that no base ontology was available and continued with merged aggregated ontology output
-- parallel facts map salvaged output from `2/2` non-converged unit loops
+## Historical validation record
 
-Key log lines are in `pipeline/full_mode/test_output/run.log`.
+Previous validation produced a non-empty ontology and facts graph, but the named artifacts from that run are generated output and are not part of this checkout. Earlier reports referred to `ontology_brick_1.0.1.ttl` and `facts_5cc89b5bfaf6.ttl`; treat their counts and logs as historical evidence, not as the result of the current working tree. Run the command above before using the SPARQL examples or comparison workflow.
 
-## Output validation notes
-
-The output files exist and are non-empty.
-
-Because OntoCast serializes RDF-star / Turtle-star provenance (for `rdf:reifies <<(...)>>` statements), stock `rdflib` Turtle parsing in this environment does not accept the emitted syntax. Validation with `pyoxigraph` succeeded:
-
-- `ontology_brick_1.0.1.ttl`: 157 quads
-- `facts_5cc89b5bfaf6.ttl`: 163 quads
-
-So the deliverable files are present, but they remain RDF-star flavored outputs rather than plain Turtle consumable by vanilla `rdflib` parsing.
+The earlier run completed with salvage/fallback behavior: bootstrap did not yield a usable seed ontology, parallel ontology and facts loops salvaged non-converged units, and normalization continued without a base ontology. A successful exit therefore demonstrates pipeline execution, not clean ontology convergence.
 
 ## Runtime issues observed
 
@@ -85,11 +81,10 @@ The first full-mode attempt failed during clustering with:
 Entity clustering requires the sentence-transformers package.
 ```
 
-Fix: ensure `sentence-transformers` is installed in the Conda environment:
+Fix: ensure `sentence-transformers` is installed in the activated `.venv` with UV (it is included by the standard setup):
 
 ```bash
-conda activate ontologies
-pip install sentence-transformers
+uv pip install --python ../../.venv/bin/python sentence-transformers
 ```
 
 ### 2. Missing `docling`
@@ -102,22 +97,14 @@ Could not import DocumentConverter: No module named 'docling'
 
 This did **not** block the recorded run, but it remains a runtime warning.
 
-## Regression check
+## Validation and caveats
 
-The fixed-mode regression test still passed after this work:
+Run the fixed-mode regression only after a fixed-mode facts fixture exists:
 
 ```bash
 bash pipeline/tests/test_regression.sh
 ```
 
-## Assessment against issue criteria
+`pipeline/tests/test_sparql_query.py` runs only when its expected full-mode fixture files are present; otherwise its tests are skipped. Generated outputs are intentionally isolated under `pipeline/full_mode/test_output/` and should not be committed as source documentation.
 
-- [x] Full OntoCast run completes without crashes on `example_paper.pdf`
-- [x] Output includes both an evolved ontology TTL and facts TTL
-- [x] Fixed-mode pipeline regression test still passes
-- [x] Full-mode output is isolated under `pipeline/full_mode/test_output/`
-- [x] Existing local patch set documented / referenced
-
-## Remaining quality caveat
-
-This is a **successful but still fragile** full-mode run. It completed only with the known local installed-package hardening and still relied on salvage / fallback behavior rather than a cleanly converged ontology-bootstrap path.
+Full mode remains experimental. It can finish by salvaging non-converged units, so evaluate the produced ontology and facts for completeness and consistency before drawing research conclusions.

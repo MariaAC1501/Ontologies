@@ -1,4 +1,6 @@
-# Comparison: Fixed OPMAD vs Evolved Ontology Extraction
+# Historical comparison: Fixed OPMAD vs Evolved Ontology Extraction
+
+> **Generated snapshot:** The metrics below came from an earlier pair of generated extraction outputs. Those inputs are not versioned with this checkout, so this file is illustrative historical evidence rather than a current validation result. Generate a fresh report with `pipeline/comparison/run_comparison.sh` or `pipeline/comparison/run_comparison.ps1` after running both extraction modes on the paper to compare.
 
 ## Summary Metrics
 

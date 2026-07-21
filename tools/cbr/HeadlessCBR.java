@@ -220,11 +220,6 @@ public class HeadlessCBR {
 
         candidates.add(DEFAULT_DATA_DIR);
 
-        String condaPrefix = System.getenv("CONDA_PREFIX");
-        if (condaPrefix != null && !condaPrefix.isBlank()) {
-            candidates.add(Paths.get(condaPrefix, "share", "ontologies-cbr", "data").toString());
-        }
-
         try {
             Path codeSource = Paths.get(HeadlessCBR.class.getProtectionDomain().getCodeSource().getLocation().toURI());
             Path base = Files.isRegularFile(codeSource) ? codeSource.getParent() : codeSource;
@@ -346,7 +341,6 @@ public class HeadlessCBR {
         System.out.println("  1. --data-dir");
         System.out.println("  2. ONTOLOGIES_CBR_DATA_DIR");
         System.out.println("  3. repository default: " + DEFAULT_DATA_DIR);
-        System.out.println("  4. $CONDA_PREFIX/share/ontologies-cbr/data");
         System.exit(error == null ? 0 : 1);
     }
 }

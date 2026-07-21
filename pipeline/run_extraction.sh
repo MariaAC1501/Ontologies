@@ -27,8 +27,9 @@ if [[ ! -f "${PDF_PATH}" ]]; then
 fi
 
 if [[ -z "${ONTOCAST_BIN}" ]]; then
-  echo "OntoCast CLI not found. Activate the Conda environment first:" >&2
-  echo "  conda activate ontologies" >&2
+  echo "OntoCast CLI not found. Activate the repo venv and run the submodule setup first:" >&2
+  echo "  source .venv/bin/activate" >&2
+  echo "  bash scripts/setup_submodules.sh" >&2
   exit 1
 fi
 

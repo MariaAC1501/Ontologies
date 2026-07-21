@@ -1,138 +1,64 @@
-# Integration results: PDF → OntoCast facts → CSV → CBR query
+# Integration validation: OntoCast facts → CSV → CBR
 
-Issue: #10
+## Purpose
 
-## Scope
+This document describes the repository-owned integration check from extracted OntoCast facts to a 19-column CBR CSV and a headless CBR retrieval. It is a validation procedure, not evidence that every generated extraction is semantically correct.
 
-This integration check validates the pipeline using the existing OntoCast extraction output for `example_paper.pdf`.
+## Prerequisites
 
-Per issue guidance, this test **did not rerun OntoCast**. It reused the previously generated facts file:
+- Complete the local setup in the root [`README.md`](../README.md).
+- Activate the same Python environment used for setup.
+- Ensure a fixed-mode facts file exists under `pipeline/test_output/`.
+- Ensure the CBR submodule and its Java dependencies are initialized.
 
-- `pipeline/test_output/facts_5cc89b5bfaf6.ttl`
+The generated files in `pipeline/test_output/` are working artifacts, not a versioned test fixture. A clean checkout must run fixed-mode extraction before the integration scripts can use them.
 
-The automated test script is:
+## Current validation procedure
 
-- `pipeline/tests/test_e2e.sh`
+1. Run fixed-mode extraction for a PDF:
 
-## Commands run
+   ```bash
+   bash pipeline/run_extraction.sh your_paper.pdf
+   ```
 
-### 1. Regenerate CSV from existing facts
+2. Select the facts file from that run and pass it explicitly to the end-to-end script. The explicit value prevents a historical default from selecting a missing file:
 
-```bash
-python pipeline/facts_to_csv.py \
-  --facts pipeline/test_output/facts_5cc89b5bfaf6.ttl \
-  --ontology pipeline/seed_ontology/opmad_seed.ttl \
-  --output pipeline/test_output/extracted_cases.csv
-```
+   ```bash
+   FACTS_PATH=pipeline/test_output/facts_<run-id>.ttl \
+     PYTHON_BIN=python \
+     bash pipeline/tests/test_e2e.sh
+   ```
 
-### 2. Run the end-to-end test
+   The script converts the facts with `pipeline/facts_to_csv.py`, verifies the 19-column semicolon-delimited header against the legacy CBR case base, derives a query that only uses compatible CBR vocabulary, runs `query-one`, and writes its CSV/log artifacts under `pipeline/test_output/`.
 
-```bash
-pipeline/tests/test_e2e.sh
-```
+3. Run the broader regression check once one or more fixed-mode facts files exist:
 
-The test script then executed this headless CBR query:
+   ```bash
+   PYTHON_BIN=python bash pipeline/tests/test_regression.sh
+   ```
 
-```bash
-bash scripts/run_cbr.sh query-one \
-  --number-of-cases 3 \
-  --task 'One step future state forecast' \
-  --input-for-model 'Signals' \
-  --input-type 'Pressure, Tension, Time Stamp, Width'
-```
+   This test consumes every `pipeline/test_output/facts_*.ttl` file. Clear or archive older outputs before running it when you need a single-paper result.
 
-## Extracted case summary
+## Latest local check
 
-Source CSV:
+On 2026-07-10, the UV-managed `.venv` passed the dependency import check and both integration scripts against the available `pipeline/test_output/facts_a0c666fbbd74.ttl` artifact:
 
-- `pipeline/test_output/extracted_cases.csv`
+- `test_e2e.sh` generated one CSV row and returned three CBR results.
+- `test_regression.sh` parsed the seed ontology, validated the 19-column schema, converted the facts artifact, and returned three CBR results.
+- The extracted query retained `Fault identification` and `Input type = Not reported`; it dropped unavailable case-study type, case-study, and input-mode values before querying the legacy case base.
 
-The regenerated CSV contained 1 extracted case row with these key values:
+This is a local interoperability check against generated data, not a semantic-quality assessment of the extraction.
 
-- **Study title:** Machine Learning for Predictive Maintenance of Industrial Machines using IoT Sensor Data
-- **Task:** One step future state forecast
-- **Case study:** Slitting Machine
-- **Case study type:** Maintainable item
-- **Input for the model:** Data Collection
-- **Input type:** Pressure, Tension, Time Stamp, Width
-- **Models:** ARIMA Model
-- **Model type:** Data Analysis
-- **Number of input variables:** 4
+## Vocabulary adaptation
 
-## CSV validation
+The extracted labels can be broader or different from the legacy CBR case-base vocabulary. The integration scripts keep a compatible task when possible, drop unavailable case-study/case-study-type fields, and currently map `Data Collection` to `Signals`. Inspect `e2e_query_meta.json` or the temporary regression metadata to see the actual values, applied mapping, and dropped fields for a run.
 
-The test script compared the generated CSV header against:
+A successful retrieval therefore proves technical interoperability; it does not prove an exact semantic match between the extracted paper and the returned legacy cases.
 
-- `external/CBR-Ontology-For-Predictive-Maintenance/CBR-Ontology/CBRproject/data/CleanedDATA V21-07-2021.csv`
+## Test-fixture caveat
 
-Result:
+Some Python unit tests and the default `test_e2e.sh` path retain identifiers from an earlier, generated fixture (`facts_5cc89b5bfaf6.ttl`, and full-mode files with the same identifier). That fixture is not present in this checkout. Use the explicit `FACTS_PATH` command above for the end-to-end test. The fixture-dependent Python tests need either that historical output restored or their fixture constants updated before they can be used as a clean-checkout test suite.
 
-- Header structure matched the existing 19-column CBR CSV exactly
-- Row count was `1`
-- The generated row remained parseable as the expected semicolon-delimited format
+## Historical result
 
-## Query parameter adaptation
-
-The extracted values do not fully match the vocabulary present in the existing CBR case base, so the test script applied the closest safe query it could derive from the extracted row:
-
-- Kept **Task** as `One step future state forecast`
-- Dropped **Case study type** `Maintainable item` because that value is not present in the existing case base
-- Dropped **Case study** `Slitting Machine` because that value is not present in the existing case base
-- Mapped **Input for the model** from `Data Collection` to the closest CBR value: `Signals`
-- Kept **Input type** as `Pressure, Tension, Time Stamp, Width`
-
-This derivation is recorded in:
-
-- `pipeline/test_output/e2e_query_meta.json`
-
-## CBR results
-
-Saved outputs:
-
-- Raw output: `pipeline/test_output/cbr_query_output.txt`
-- Parsed results: `pipeline/test_output/cbr_query_results.csv`
-
-Top 3 returned cases:
-
-| Reference | Sim | Task | Case study type | Case study | Input for the model | Models |
-|---|---:|---|---|---|---|---|
-| 131 | 0.707 | One step future state forecast | Rotary machines | Cutter tool | Signals | Gaussian Process Regression (GPR) |
-| 132 | 0.707 | One step future state forecast | Rotary machines | Cutter tool | Signals | v-support vector regression |
-| 135 | 0.707 | One step future state forecast | Rotary machines | Cutter tool | Signals | Elman Neural Network Model |
-
-Shared characteristics of the returned cases:
-
-- Same task family: **One step future state forecast**
-- Same query input mode after mapping: **Signals**
-- Similar measured-variable flavor: tool-condition / physical sensor variables
-- All three results come from the same 2017 cutter-tool forecasting study
-
-## Assessment
-
-### What worked
-
-- Existing OntoCast facts were converted to CSV without crashes
-- Facts→CSV produced a valid semicolon-delimited CSV with 1 case row
-- The CSV column structure matched the established CBR dataset schema
-- Headless CBR query returned 3 results successfully
-- Outputs were saved under `pipeline/test_output/`
-
-### Quality notes
-
-- The extracted row is coherent and useful as a retrieval seed:
-  - task extraction is strong
-  - model extraction is strong (`ARIMA Model`)
-  - input variables are plausible for the paper
-- Retrieval quality is **reasonable but not exact** because the extracted ontology labels do not fully align with the legacy CBR vocabulary:
-  - `Maintainable item` is too generic for the CBR case-base categories
-  - `Data Collection` had to be mapped to `Signals`
-  - `Slitting Machine` is not a named case already present in the case base
-- Even with those vocabulary gaps, the CBR system still retrieved relevant one-step forecasting cases, which is sufficient to demonstrate end-to-end interoperability
-
-## Acceptance criteria status
-
-- [x] OntoCast extraction completes without crashes *(validated via existing facts output reused for this integration test)*
-- [x] Facts→CSV produces a valid CSV with at least 1 case row
-- [x] CBR query returns results when given extracted case parameters
-- [x] Results documented in `pipeline/INTEGRATION_RESULTS.md`
-- [ ] All patches documented in #1 *(no new OntoCast patch was required for this issue; if desired, note that explicitly in issue #1)*
+A prior run against an IoT slitting-machine paper converted one facts file into one CSV row and retrieved three one-step forecasting cases after vocabulary adaptation. It reported a matching 19-column header and CBR similarities of `0.707` for the top three returned cases. Those files and their exact query metadata were generated artifacts, so this is retained as historical evidence only; rerun the procedure above to obtain current results.

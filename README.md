@@ -12,26 +12,39 @@ This repo supports two ways to extract knowledge from predictive-maintenance pap
 
 2. **Full evolution mode** — OntoCast bootstraps and evolves its own ontology from scratch, then extracts facts against it. Results are queried via SPARQL. This is useful for comparing what an unconstrained ontology discovers vs the fixed OPMAD vocabulary.
 
-Both modes are fully functional and can be run on the same paper for side-by-side comparison.
+Both modes can be run on the same paper for side-by-side comparison. Fixed OPMAD mode is the operational path; full evolution mode is experimental and its generated ontology should be reviewed before use.
 
 ## Repository layout
 
-- `external/CBR-Ontology-For-Predictive-Maintenance/` — upstream Java CBR project
+- `external/CBR-Ontology-For-Predictive-Maintenance/` — upstream Java CBR project submodule
+- `external/Diversity-Improvement-in-CBR/` — upstream Diversity-in-CBR Python project submodule
+- `external/ontocast/` — upstream OntoCast Python project submodule
 - `tools/cbr/HeadlessCBR.java` — relocatable CLI adapter for CBR
 - `pipeline/` — integrated extraction pipeline (schema, seed ontology, bridge, config)
-- `scripts/build_cbr.sh` — local jar build
+- `requirements.txt` — UV-installed Python requirements for the pipeline and diversity tooling
+- `scripts/setup_submodules.sh` / `scripts/setup_submodules.ps1` — initialize submodules, apply local patches, install editable Python submodules, and build CBR
+- `scripts/build_cbr.py` / `scripts/build_cbr.sh` — local jar build
 - `scripts/run_cbr.sh` — local jar runner
-- `conda/recipes/ontologies-cbr/` — Conda recipe for the packaged CBR CLI
-- `conda/recipes/ontocast/` — Conda recipe for OntoCast (with local patches)
-- `conda/recipes/ontologies-pipeline/` — Conda recipe for the extraction pipeline
-- `conda/recipes/ontologies-stack/` — meta-package that installs all three
-- `scripts/build_conda_packages.sh` / `scripts/build_conda_packages.ps1` — build local Conda packages
-- `scripts/create_conda_env.sh` / `scripts/create_conda_env.ps1` — create an env from the local package channel
-- `.github/workflows/conda-matrix.yml` — CI matrix build/test workflow
+- `scripts/diversify_cbr_results.py` / `pipeline/diversity_rerank.py` — Diversity-in-CBR post-processor for reranking CBR result CSVs
+- `scripts/compare_diversity_all_papers.py` — reproducible baseline-vs-diversity batch comparison for all available OntoCast facts under `extraction_papers/`
+
+## Documentation map
+
+| Document | Scope |
+|---|---|
+| `README.md` | Installation and end-to-end workflows maintained by this repository |
+| `scripts/README.md` | Headless CBR commands and diversity-aware reranking |
+| `scripts/LOCAL_PATCHES.md` | Locally maintained, reproducible patches for vendored submodules |
+| `DIVERSITY_COMPARISON_RESULTS.md` | Current batch comparison of plain and diversity-aware CBR retrieval |
+| `pipeline/SCHEMA_MAPPING.md` | OPMAD/CSV field mapping and the facts-to-CSV bridge |
+| `pipeline/full_mode/README.md` | Full ontology-evolution mode, outputs, and caveats |
+| `pipeline/INTEGRATION_RESULTS.md` | Integration-validation procedure and historical evidence |
+
+Documentation under `external/` belongs to its upstream projects and is deliberately not maintained here.
 
 ## Clone
 
-Clone with submodules so the vendored CBR source is available:
+Clone with submodules so all vendored sources are available:
 
 ```bash
 git clone --recurse-submodules <repo-url>
@@ -46,134 +59,74 @@ git submodule update --init --recursive
 
 > **Note on Windows:** If the submodule clone fails with a `Filename too long` error, your system is hitting the 260-character path limit. Tell Git to support long paths by running `git config --global core.longpaths true` in your terminal and then retry the clone.
 
-## Conda-first setup
+## Prerequisites
 
-This is the recommended setup because it installs the Python and Java parts together.
-The Conda workflow in this repo is validated in CI on macOS, Linux, and Windows.
+- Git, with submodule support
+- Python 3.12 or later
+- [uv](https://docs.astral.sh/uv/) on `PATH` for virtual-environment and dependency management
+- A JDK that provides both `javac` and `jar` on `PATH` for the CBR build
+- Bash for the `.sh` helpers on macOS/Linux (Git Bash is suitable on Windows); PowerShell equivalents are provided for setup and extraction
 
-### 1. Install Conda
+## UV environment setup (recommended)
 
-Miniforge works well.
+The recommended local workflow keeps the three upstream projects checked out under `external/`, uses `uv` for every Python dependency installation, applies this repository's local compatibility patches, installs the Python submodule in editable mode, and builds the headless CBR jar locally.
 
-#### macOS / Linux
+### 1. Create and activate `.venv`
 
-```bash
-curl -L -O "https://github.com/conda-forge/miniforge/releases/latest/download/Miniforge3-$(uname)-$(uname -m).sh"
-bash Miniforge3-$(uname)-$(uname -m).sh
-source "$HOME/miniforge3/etc/profile.d/conda.sh"
-conda activate base
-```
-
-#### Windows PowerShell
-
-Install Miniforge, then open a new PowerShell and configure it to allow Conda's initialization script:
-
-```powershell
-Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
-conda init powershell
-```
-
-Close the PowerShell window and open a new one. Your prompt should now begin with `(base)`, meaning Conda is active and ready to manage environments.
-
-If Miniforge is installed in a non-default location, set `CONDA_ROOT` before using the helper scripts.
-
-### 2. Update the base environment for building
-
-The build dependencies (like `conda-build`) must be installed in your `base` Conda environment. This environment is only for building the Conda packages — it is separate from the runtime environment created in step 4.
+#### Bash
 
 ```bash
-conda env update -n base -f environment.yml
-```
-
-On Windows PowerShell:
-
-```powershell
-conda env update -n base -f environment.yml
-```
-
-### 3. Build the local Conda packages
-
-#### macOS / Linux
-
-```bash
-bash scripts/build_conda_packages.sh
+uv venv --python 3.12 .venv
+source .venv/bin/activate
+uv pip install --python .venv/bin/python -r requirements.txt
 ```
 
 #### Windows PowerShell
 
 ```powershell
-.\scripts\build_conda_packages.ps1
+uv venv --python 3.12 .venv
+.\.venv\Scripts\Activate.ps1
+uv pip install --python .\.venv\Scripts\python.exe -r requirements.txt
 ```
 
-This builds:
-- `ontologies-cbr`
-- `ontocast`
-- `ontologies-pipeline`
-- `ontologies-stack`
+If PowerShell blocks activation scripts, run `Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser` once and open a new terminal.
 
-and indexes your local Conda channel at:
-- `~/miniforge3/conda-bld` on macOS/Linux
-- `%USERPROFILE%\miniforge3\conda-bld` or your configured `CONDA_ROOT` on Windows
+### 2. Initialize submodules, apply patches, and install/build the stack
 
-### 4. Create a runnable stack environment
+Run this from the activated `.venv` so editable installs and generated entry points land in the local environment.
 
-#### macOS / Linux
+#### Bash
 
 ```bash
-bash scripts/create_conda_env.sh
-```
-
-Or choose your own prefix:
-
-```bash
-bash scripts/create_conda_env.sh /path/to/env
+bash scripts/setup_submodules.sh
 ```
 
 #### Windows PowerShell
 
 ```powershell
-.\scripts\create_conda_env.ps1
+.\scripts\setup_submodules.ps1
 ```
 
-Or choose your own prefix:
+The setup script runs `git submodule update --init --recursive`, applies local patches via `scripts/apply_local_patches.py`, installs `external/ontocast` in editable mode, registers `external/Diversity-Improvement-in-CBR` on the Python path, builds the local CBR jar, and installs the `ontologies-cbr` launcher in the active environment. Patch rationale and maintenance rules are in [`scripts/LOCAL_PATCHES.md`](scripts/LOCAL_PATCHES.md).
 
-```powershell
-.\scripts\create_conda_env.ps1 C:\path\to\env
-```
+For a partial setup, pass `--help` to either setup wrapper. The available flags can skip submodule initialization, patching, a dependency, the CBR build, or UV dependency installation; use them only when the skipped component is already available.
 
-Default env location:
-- macOS/Linux: `~/miniforge3/envs/ontologies`
-- Windows: `miniforge3\envs\ontologies` under `CONDA_ROOT`
-
-### 5. Verify the installed tools
-
-After creating the environment, activate it and run:
+### 3. Verify the stack
 
 ```bash
-conda activate ontologies
-ontologies-cbr help
-pip install docling
 ontocast --help
+python -c "import ontocast; import ontocast.cli.serve"
+bash scripts/run_cbr.sh help
 ```
 
-On Windows PowerShell:
+On Windows PowerShell, verify the launcher installed in `.venv\Scripts` instead:
 
 ```powershell
-conda activate ontologies
+ontocast --help
 ontologies-cbr help
-python -c "import ontocast; import ontocast.cli.serve"
 ```
 
-If you created the environment at a custom prefix instead of the default name, use `conda run`:
-
-```bash
-conda run -p /path/to/env ontologies-cbr help
-conda run -p /path/to/env ontocast --help
-```
-
-> **For maintainers:** Details on supported build targets, the CI matrix, and internal package contents have been moved to [conda/README.md](conda/README.md).
-
-## Local non-Conda CBR workflow
+## Local CBR workflow
 
 If you only want to build and run the headless Java CBR tooling from the repo:
 
@@ -200,18 +153,7 @@ bash scripts/run_cbr.sh query-one \
   --number-of-cases 1
 ```
 
-> **Windows note:** There is currently no repo-local PowerShell wrapper equivalent to `scripts/run_cbr.sh`. On Windows, use the packaged CLI installed by the Conda environment instead:
->
-> ```powershell
-> conda activate ontologies
-> ontologies-cbr help
-> ontologies-cbr query-one `
->   --task "Remaining useful life estimation" `
->   --case-study-type "Rotary machines" `
->   --input-for-model "Time series" `
->   --input-type "Temperature, Fluid Pressure, Spinning speed" `
->   --number-of-cases 1
-> ```
+> **Windows note:** There is no repo-local PowerShell version of `scripts/run_cbr.sh`. After `scripts/setup_submodules.ps1`, use the `ontologies-cbr` launcher installed in the active `.venv`; Git Bash can also run the Bash wrapper. Set `ONTOLOGIES_CBR_DATA_DIR` to use another CBR data directory.
 
 ## Extraction pipeline
 
@@ -220,7 +162,7 @@ The integrated pipeline extracts structured data from predictive-maintenance pap
 ### Prerequisites
 
 Both extraction modes require:
-- The runtime Conda environment created in step 4 of [Conda-first setup](#conda-first-setup), activated with `conda activate ontologies`
+- The `.venv` from [UV environment setup](#uv-environment-setup-recommended), activated in your shell
 - An OpenAI API key in `.env` at the repo root:
 
 ```bash
@@ -246,31 +188,31 @@ This is the logical end-to-end flow. The extraction wrapper scripts run the **On
 #### macOS / Linux
 
 ```bash
-conda activate ontologies
+source .venv/bin/activate
 bash pipeline/run_extraction.sh your_paper.pdf
 ```
 
 #### Windows PowerShell
 
 ```powershell
-conda activate ontologies
+.\.venv\Scripts\Activate.ps1
 .\pipeline\run_extraction.ps1 your_paper.pdf
 ```
 
-> **Note on Windows:** 
-> 1. `docling` is currently missing some dependencies on the Windows Conda-forge channel, so it must be installed manually via `pip` before running the extraction pipeline.
-> 2. The `pytorch` CUDA builds on the Windows `conda-forge` channel are frequently broken and may fail to load DLLs (e.g., `shm.dll` throwing `WinError 127`). If this happens, cleanly reinstall the working CPU version using: `pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cpu --upgrade --force-reinstall`
+> **Note on Windows:**
+> 1. The standard UV setup installs `docling`, `easyocr`, and `sentence-transformers` for PDF/document processing. If they were intentionally skipped, restore them with `uv pip install --python .\.venv\Scripts\python.exe docling easyocr sentence-transformers`.
+> 2. If a PyTorch CUDA wheel fails to load DLLs (e.g., `shm.dll` throwing `WinError 127`), reinstall the CPU wheels with: `uv pip install --python .\.venv\Scripts\python.exe torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cpu --upgrade --reinstall`
 > 3. During its first extraction run, Hugging Face Hub will download models and attempt to cache them using symbolic links. By default, Windows standard users cannot create symlinks, causing a crash (`WinError 1314: El cliente no dispone de un privilegio requerido`). To bypass this one-time cache step, either run your PowerShell terminal as **Administrator** for the very first extraction, or permanently turn on "Developer Mode" in your Windows Settings.
 
-The API key is read automatically from `.env` at the repo root. Output goes to `pipeline/test_output/`.
+The API key is read automatically from `.env` at the repo root. Output goes to `pipeline/test_output/`. The fixed-mode runners process three chunks by default; pass a second positional `head-chunks` argument to override it. The Bash runner also accepts `ONTOCAST_HEAD_CHUNKS` when that argument is omitted.
 
-The extraction scripts write OntoCast outputs such as `facts_*.ttl`, ontology files, and `run.log`. They do **not** automatically call `pipeline/facts_to_csv.py`, and they do **not** remove an existing `pipeline/test_output/extracted_cases.csv`. If you already see a CSV after running extraction, it may be a leftover file from an earlier conversion.
+The extraction scripts write OntoCast outputs such as `facts_*.ttl`, ontology files, and `run.log`. They do **not** automatically call `pipeline/facts_to_csv.py`, and they do **not** remove an existing `pipeline/test_output/extracted_cases.csv` or older fact/ontology outputs. Clear or archive that directory before a new isolated run; otherwise a later wildcard conversion can combine files from different papers. The Bash runner stages the input PDF as a symbolic link, whereas the PowerShell runner copies it.
 
 > **First run required.** The regression tests and comparison scripts need extraction output to exist. Run at least one extraction before running tests.
 
 ### Convert facts to CSV
 
-Use this script when you want to turn existing OntoCast facts into the 19-column CBR CSV format without rerunning extraction. This is also how the test scripts regenerate CSV output from frozen facts fixtures.
+Use this script when you want to turn existing OntoCast facts into the 19-column CBR CSV format without rerunning extraction. This is also how the test scripts regenerate CSV output from facts fixtures when those generated files are available.
 
 ```bash
 python pipeline/facts_to_csv.py \
@@ -282,7 +224,10 @@ python pipeline/facts_to_csv.py \
 The same command works in Windows PowerShell:
 
 ```powershell
-python pipeline\facts_to_csv.py `--facts pipeline\test_output\facts_*.ttl `--ontology pipeline\seed_ontology\opmad_seed.ttl `--output pipeline\test_output\extracted_cases.csv
+python pipeline\facts_to_csv.py `
+  --facts "pipeline\test_output\facts_*.ttl" `
+  --ontology "pipeline\seed_ontology\opmad_seed.ttl" `
+  --output "pipeline\test_output\extracted_cases.csv"
 ```
 
 ### Query CBR with extracted parameters
@@ -300,7 +245,11 @@ bash scripts/run_cbr.sh query-one \
 #### Windows PowerShell
 
 ```powershell
-ontologies-cbr query-one `--task "One step future state forecast" `--input-for-model "Signals" `--input-type "Pressure, Tension" `--number-of-cases 3
+ontologies-cbr query-one `
+  --task "One step future state forecast" `
+  --input-for-model "Signals" `
+  --input-type "Pressure, Tension" `
+  --number-of-cases 3
 ```
 
 ### Pipeline files
@@ -314,30 +263,30 @@ ontologies-cbr query-one `--task "One step future state forecast" `--input-for-m
 | `pipeline/run_extraction.ps1` | Windows PowerShell wrapper script that runs OntoCast on a PDF |
 | `pipeline/facts_to_csv.py` | Standalone bridge that converts existing RDF/Turtle facts to CBR-compatible CSV |
 | `pipeline/SCHEMA_MAPPING.md` | Detailed documentation of the OPMAD field mapping |
-| `pipeline/INTEGRATION_RESULTS.md` | End-to-end test results |
+| `pipeline/INTEGRATION_RESULTS.md` | End-to-end validation procedure and historical evidence |
 
 ## Full OntoCast mode (evolved ontology)
 
-A second extraction mode runs OntoCast with full ontology evolution — no seed ontology, no skipped critique — and queries results via SPARQL instead of CBR.
+A second extraction mode runs OntoCast with full ontology evolution — no seed ontology and ontology critique enabled — and queries results via SPARQL instead of CBR. Its runners default to two chunks, clear prior TTL/JSON/log outputs before running, and verify that both `ontology_*.ttl` and `facts_*.ttl` were produced.
 
 ### Run full-mode extraction
 
 #### macOS / Linux
 
 ```bash
-conda activate ontologies
+source .venv/bin/activate
 bash pipeline/full_mode/run_full_extraction.sh your_paper.pdf
 ```
 
 #### Windows PowerShell
 
 ```powershell
-conda activate ontologies
-pip install docling
+.\.venv\Scripts\Activate.ps1
+uv pip install --python .\.venv\Scripts\python.exe docling easyocr sentence-transformers
 .\pipeline\full_mode\run_full_extraction.ps1 your_paper.pdf
 ```
 
-> **Note on Windows:** Review the previous Windows note on `docling`, `pytorch`, and `Hugging Face Hub` symlinks if your extraction run crashes. All required OntoCast patches are applied at Conda build time (see issue #1 for the full list).
+> **Note on Windows:** Review the previous Windows note on `docling`, `pytorch`, and `Hugging Face Hub` symlinks if your extraction run crashes. Required OntoCast patches are applied by `scripts/setup_submodules.*`.
 
 ### Query the evolved ontology with SPARQL
 
