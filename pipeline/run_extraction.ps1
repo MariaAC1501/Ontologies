@@ -37,19 +37,28 @@ if (-not $OntocastBin) {
     exit 1
 }
 
-# Load .env
+# Load optional .env for subscription-proxy settings only.
 $EnvFile = Join-Path $RepoRoot ".env"
-if (-not (Test-Path $EnvFile)) {
-    Write-Error "Repo root .env not found: $EnvFile"
-    exit 1
-}
-Get-Content $EnvFile | ForEach-Object {
-    if ($_ -match '^\s*([^#][^=]+)=(.*)$') {
-        [Environment]::SetEnvironmentVariable($Matches[1].Trim(), $Matches[2].Trim(), "Process")
+if (Test-Path $EnvFile) {
+    Get-Content $EnvFile | ForEach-Object {
+        if ($_ -match '^\s*([^#][^=]+)=(.*)$') {
+            [Environment]::SetEnvironmentVariable($Matches[1].Trim(), $Matches[2].Trim(), "Process")
+        }
     }
 }
-if (-not $env:OPENAI_API_KEY) {
-    Write-Error "OPENAI_API_KEY is not set after loading $EnvFile"
+
+if ($env:OPENAI_API_KEY -or $env:LLM_API_KEY) {
+    Write-Error "Direct OpenAI API keys are disabled for this workflow. Use the local Pi Codex subscription proxy instead: node tools/pi_codex_openai_proxy.mjs"
+    exit 1
+}
+
+$SubscriptionProxyBase = if ($env:LLM_BASE_URL) { $env:LLM_BASE_URL } else { "http://127.0.0.1:8977/v1" }
+$SubscriptionProxyHealthBase = $SubscriptionProxyBase.TrimEnd('/') -replace '/v1$',''
+$SubscriptionProxyHealth = "$SubscriptionProxyHealthBase/health"
+try {
+    Invoke-RestMethod -Uri $SubscriptionProxyHealth -TimeoutSec 5 | Out-Null
+} catch {
+    Write-Error "Subscription proxy is not reachable at $SubscriptionProxyHealth. Start it with: node tools/pi_codex_openai_proxy.mjs"
     exit 1
 }
 
@@ -68,6 +77,7 @@ Write-Host "  staged: $InputDir\$PdfName"
 Write-Host "  output: $OutputDir"
 Write-Host "  log:    $LogFile"
 Write-Host "  chunks: $HeadChunks"
+Write-Host "  llm:    Pi Codex subscription proxy ($SubscriptionProxyBase)"
 
 Push-Location $RepoRoot
 try {

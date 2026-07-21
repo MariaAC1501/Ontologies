@@ -39,18 +39,29 @@ if [[ ! -x "${ONTOCAST_BIN}" ]]; then
   exit 1
 fi
 
-if [[ ! -f "${REPO_ROOT}/.env" ]]; then
-  echo "Repo root .env not found: ${REPO_ROOT}/.env" >&2
+if [[ -f "${REPO_ROOT}/.env" ]]; then
+  set -a
+  source "${REPO_ROOT}/.env"
+  set +a
+fi
+
+if [[ -n "${OPENAI_API_KEY:-}" || -n "${LLM_API_KEY:-}" ]]; then
+  echo "Direct OpenAI API keys are disabled for this workflow." >&2
+  echo "Use the local Pi Codex subscription proxy instead: node tools/pi_codex_openai_proxy.mjs" >&2
   exit 1
 fi
 
-set -a
-source "${REPO_ROOT}/.env"
-set +a
-
-if [[ -z "${OPENAI_API_KEY:-}" ]]; then
-  echo "OPENAI_API_KEY is not set after loading ${REPO_ROOT}/.env" >&2
-  exit 1
+SUBSCRIPTION_PROXY_BASE="${LLM_BASE_URL:-http://127.0.0.1:8977/v1}"
+SUBSCRIPTION_PROXY_HEALTH="${SUBSCRIPTION_PROXY_BASE%/}"
+SUBSCRIPTION_PROXY_HEALTH="${SUBSCRIPTION_PROXY_HEALTH%/v1}/health"
+if command -v curl >/dev/null 2>&1; then
+  if ! curl -fsS --max-time 5 "${SUBSCRIPTION_PROXY_HEALTH}" >/dev/null; then
+    echo "Subscription proxy is not reachable at ${SUBSCRIPTION_PROXY_HEALTH}." >&2
+    echo "Start it with: node tools/pi_codex_openai_proxy.mjs" >&2
+    exit 1
+  fi
+else
+  echo "Warning: curl not found; skipping subscription proxy health check for ${SUBSCRIPTION_PROXY_HEALTH}" >&2
 fi
 
 mkdir -p "${OUTPUT_DIR}" "${INPUT_DIR}"
@@ -65,10 +76,10 @@ echo "  staged: ${INPUT_DIR}/$(basename -- "${PDF_PATH}")"
 echo "  output: ${OUTPUT_DIR}"
 echo "  log:    ${LOG_FILE}"
 echo "  chunks: ${HEAD_CHUNKS}"
+echo "  llm:    Pi Codex subscription proxy (${SUBSCRIPTION_PROXY_BASE})"
 
 (
   cd "${REPO_ROOT}"
-  export OPENAI_API_KEY
   "${ONTOCAST_BIN}" \
     --env-file "${CONFIG_FILE}" \
     --input-path "${INPUT_DIR}" \

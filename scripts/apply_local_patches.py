@@ -113,6 +113,59 @@ class LocalPatcher:
         self.write_patch_text(path, text.replace(old, new), patch_text.newline)
         self.results.append(PatchResult(dependency, rel_path, label, "patched"))
 
+    def replace_any_exact(
+        self,
+        dependency: str,
+        path: Path,
+        old_values: tuple[str, ...],
+        new: str,
+        label: str,
+    ) -> None:
+        """Replace the first matching exact anchor from several accepted states."""
+        self.require_file(dependency, path)
+        patch_text = self.read_patch_text(path)
+        text = patch_text.text
+        rel_path = self.rel(path)
+
+        if new in text:
+            self.results.append(PatchResult(dependency, rel_path, label, "already"))
+            return
+
+        for old in old_values:
+            if old in text:
+                self.write_patch_text(path, text.replace(old, new), patch_text.newline)
+                self.results.append(PatchResult(dependency, rel_path, label, "patched"))
+                return
+
+        previews = "\n--- or ---\n".join(preview(old) for old in old_values)
+        raise PatchError(
+            f"[{dependency}] Expected one of several patch anchors not found in {rel_path} "
+            f"for '{label}'. Anchor previews:\n{previews}"
+        )
+
+    def replace_optional_exact(
+        self,
+        dependency: str,
+        path: Path,
+        old: str,
+        new: str,
+        label: str,
+    ) -> None:
+        """Replace an exact anchor when present; skip clean upstream states."""
+        self.require_file(dependency, path)
+        patch_text = self.read_patch_text(path)
+        text = patch_text.text
+        rel_path = self.rel(path)
+
+        if new in text:
+            self.results.append(PatchResult(dependency, rel_path, label, "already"))
+            return
+        if old in text:
+            self.write_patch_text(path, text.replace(old, new), patch_text.newline)
+            self.results.append(PatchResult(dependency, rel_path, label, "patched"))
+            return
+        self.results.append(PatchResult(dependency, rel_path, label, "skipped"))
+
     def insert_after_exact(
         self,
         dependency: str,
@@ -193,13 +246,32 @@ def apply_ontocast(patcher: LocalPatcher) -> None:
         "ontology_prefix escaped in render ontology prompt",
     )
 
-    # --- Patch 1b: allow repo .env OPENAI_API_KEY to be the default LLM key ---
+    # --- Patch 1b: remove legacy direct OpenAI API-key support from this repo workflow ---
+    patcher.replace_any_exact(
+        "ontocast",
+        target("config.py"),
+        (
+            '    api_key: str | None = Field(\n        default=None,\n        description="API key for LLM provider",\n        validation_alias=AliasChoices("LLM_API_KEY", "OPENAI_API_KEY"),\n    )',
+            '    api_key: str | None = Field(default=None, description="API key for LLM provider")',
+        ),
+        '    api_key: str | None = Field(default=None, description="Direct OpenAI API keys are disabled; use the local subscription proxy via LLM_BASE_URL")',
+        "OpenAI provider documents subscription proxy key policy",
+    )
+
     patcher.replace_exact(
         "ontocast",
         target("config.py"),
-        '    api_key: str | None = Field(default=None, description="API key for LLM provider")',
-        '    api_key: str | None = Field(\n        default=None,\n        description="API key for LLM provider",\n        validation_alias=AliasChoices("LLM_API_KEY", "OPENAI_API_KEY"),\n    )',
-        "LLM api_key accepts OPENAI_API_KEY",
+        '    def validate_llm_config(self) -> None:\n        """Validate LLM configuration and raise errors for missing required settings."""\n        if (\n            self.tool_config.llm_config.provider == LLMProvider.OPENAI\n            and not self.tool_config.llm_config.api_key\n        ):\n            raise ValueError(\n                "LLM_API_KEY environment variable is required for OpenAI provider"\n            )\n',
+        '    def validate_llm_config(self) -> None:\n        """Validate LLM configuration and raise errors for missing required settings."""\n        llm_config = self.tool_config.llm_config\n        if llm_config.provider == LLMProvider.OPENAI:\n            if llm_config.api_key:\n                raise ValueError(\n                    "Direct OpenAI API keys are disabled in this repository workflow. "\n                    "Use the local Pi Codex subscription proxy via LLM_BASE_URL instead."\n                )\n            if not llm_config.base_url:\n                raise ValueError(\n                    "LLM_BASE_URL must point to the local Pi Codex subscription proxy "\n                    "for OpenAI-compatible extraction runs."\n                )\n',
+        "OpenAI provider requires subscription proxy and rejects direct keys",
+    )
+
+    patcher.replace_exact(
+        "ontocast",
+        target("tool/llm.py"),
+        '                api_key=(\n                    SecretStr(self.config.api_key) if self.config.api_key else None\n                ),  # type: ignore\n',
+        '                api_key=SecretStr(self.config.api_key or "subscription-proxy"),  # type: ignore\n',
+        "OpenAI-compatible subscription proxy uses non-secret placeholder key",
     )
 
     # --- Patch 2: skip_ontology_critique config flag ---
@@ -341,6 +413,13 @@ def apply_ontocast(patcher: LocalPatcher) -> None:
         "import asyncio\nimport logging\nimport os\n",
         "serve imports os for quota retry configuration",
     )
+    patcher.replace_optional_exact(
+        "ontocast",
+        target("cli/serve.py"),
+        '"OpenAI quota exhausted while processing %s; "',
+        '"Subscription usage limit reached while processing %s; "',
+        "legacy OpenAI quota log migrated to subscription wording",
+    )
     patcher.replace_exact(
         "ontocast",
         target("cli/serve.py"),
@@ -404,7 +483,7 @@ def apply_ontocast(patcher: LocalPatcher) -> None:
                         if any(marker in message.lower() for marker in quota_error_markers):
                             quota_attempt += 1
                             logger.error(
-                                "OpenAI quota exhausted while processing %s; "
+                                "Subscription usage limit reached while processing %s; "
                                 "retry %s in %s seconds without advancing to the next file.",
                                 file_path,
                                 quota_attempt,
@@ -416,7 +495,7 @@ def apply_ontocast(patcher: LocalPatcher) -> None:
                         break
 
 ''',
-        "retry the same document indefinitely after insufficient quota",
+        "retry the same document indefinitely after subscription usage limits",
     )
 
 

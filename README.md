@@ -27,6 +27,7 @@ Both modes can be run on the same paper for side-by-side comparison. Fixed OPMAD
 - `scripts/run_cbr.sh` — local jar runner
 - `scripts/diversify_cbr_results.py` / `pipeline/diversity_rerank.py` — Diversity-in-CBR post-processor for reranking CBR result CSVs
 - `scripts/compare_diversity_all_papers.py` — reproducible baseline-vs-diversity batch comparison for all available OntoCast facts under `extraction_papers/`
+- `tools/pi_codex_openai_proxy.mjs` — local OpenAI-compatible proxy backed by the Pi ChatGPT Plus/Pro (Codex) subscription OAuth credential
 
 ## Documentation map
 
@@ -163,11 +164,19 @@ The integrated pipeline extracts structured data from predictive-maintenance pap
 
 Both extraction modes require:
 - The `.venv` from [UV environment setup](#uv-environment-setup-recommended), activated in your shell
-- An OpenAI API key in `.env` at the repo root:
+- A Pi/OpenAI Codex OAuth login backed by the ChatGPT Plus/Pro subscription. Direct OpenAI API keys (`OPENAI_API_KEY` or `LLM_API_KEY`) are intentionally rejected by the extraction wrappers.
+- The local subscription proxy running in a separate terminal:
+
+```bash
+# Run Pi login first if the Codex OAuth credential is not present yet.
+# In Pi, use /login and select ChatGPT Plus/Pro (Codex).
+node tools/pi_codex_openai_proxy.mjs
+```
+
+`.env` is optional and is only used for non-secret proxy overrides such as `LLM_BASE_URL`, `PI_CODEX_PROXY_PORT`, or `PI_CODEX_MODEL`:
 
 ```bash
 cp .env.example .env
-# Edit .env and set your actual API key
 ```
 
 ### Pipeline flow
@@ -204,7 +213,7 @@ bash pipeline/run_extraction.sh your_paper.pdf
 > 2. If a PyTorch CUDA wheel fails to load DLLs (e.g., `shm.dll` throwing `WinError 127`), reinstall the CPU wheels with: `uv pip install --python .\.venv\Scripts\python.exe torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cpu --upgrade --reinstall`
 > 3. During its first extraction run, Hugging Face Hub will download models and attempt to cache them using symbolic links. By default, Windows standard users cannot create symlinks, causing a crash (`WinError 1314: El cliente no dispone de un privilegio requerido`). To bypass this one-time cache step, either run your PowerShell terminal as **Administrator** for the very first extraction, or permanently turn on "Developer Mode" in your Windows Settings.
 
-The API key is read automatically from `.env` at the repo root. Output goes to `pipeline/test_output/`. The fixed-mode runners process three chunks by default; pass a second positional `head-chunks` argument to override it. The Bash runner also accepts `ONTOCAST_HEAD_CHUNKS` when that argument is omitted.
+The extraction scripts call OntoCast through the local subscription proxy configured by `LLM_BASE_URL` (default: `http://127.0.0.1:8977/v1`). Output goes to `pipeline/test_output/`. The fixed-mode runners process three chunks by default; pass a second positional `head-chunks` argument to override it. The Bash runner also accepts `ONTOCAST_HEAD_CHUNKS` when that argument is omitted.
 
 The extraction scripts write OntoCast outputs such as `facts_*.ttl`, ontology files, and `run.log`. They do **not** automatically call `pipeline/facts_to_csv.py`, and they do **not** remove an existing `pipeline/test_output/extracted_cases.csv` or older fact/ontology outputs. Clear or archive that directory before a new isolated run; otherwise a later wildcard conversion can combine files from different papers. The Bash runner stages the input PDF as a symbolic link, whereas the PowerShell runner copies it.
 
@@ -328,6 +337,6 @@ Both write the report to `pipeline/comparison/COMPARISON_RESULTS.md`.
 
 ## Notes
 
-- `ontocast` requires an OpenAI API key for extraction runs.
+- Extraction runs use the Pi Codex subscription proxy only; direct OpenAI API keys are not supported in this repository workflow.
 - The **fixed OPMAD** mode feeds into the CBR system via CSV. The **full evolution** mode is queried via SPARQL.
 - Starting the OntoCast server is a blocking command.

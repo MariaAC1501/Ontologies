@@ -33,11 +33,16 @@ From Windows PowerShell at the repo root:
 .\scripts\setup_submodules.ps1
 ```
 
-The run script uses `ontocast` from PATH.
+The run script uses `ontocast` from PATH and the local Pi Codex subscription proxy at `LLM_BASE_URL` (default: `http://127.0.0.1:8977/v1`). Direct OpenAI API keys are rejected.
 
-- `OPENAI_API_KEY` is loaded from the repo-root `.env`
-- Model: `gpt-4o` (configurable in `ontocast_full_config.env`)
-- Default chunk limit: `--head-chunks 2` (to control API costs)
+Start the proxy in another terminal before running extraction:
+
+```bash
+node tools/pi_codex_openai_proxy.mjs
+```
+
+- Model sent to the OpenAI-compatible proxy: `gpt-5-mini` (the proxy can route to `PI_CODEX_MODEL`)
+- Default chunk limit: `--head-chunks 2` (to control subscription usage)
 
 ## OntoCast patches
 
