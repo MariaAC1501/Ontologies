@@ -1,0 +1,603 @@
+@prefix None: <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD/seed#> .
+@prefix cco: <http://www.ontologyrepository.com/CommonCoreOntologies/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doc: <https://growgraph.dev/doc/bed905cc86c9/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix obo: <http://purl.obolibrary.org/obo/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix schema: <https://schema.org/> .
+@prefix schema1: <http://schema.org/> .
+doc:ac5615bd9374 a prov:Entity , schema:text ;
+	prov:generatedAtTime "2026-07-22T01:13:37.376355Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+	schema:position 0 ;
+	schema:identifier "ac5615bd9374" .
+doc:Factsperf3_1 a cco:DescriptiveInformationContentEntity .
+_:bc9ee63e567d7e7c12b5ef7181184f48 rdf:reifies <<( doc:Factsperf3_1 rdf:type cco:DescriptiveInformationContentEntity )>> ;
+	prov:wasDerivedFrom doc:ac5615bd9374 .
+doc:Factssite1 rdfs:label "El Oued desalination plant"@en .
+_:f52731173922c71d57b6a3139bc7d606 rdf:reifies <<( doc:Factssite1 rdfs:label "El Oued desalination plant"@en )>> ;
+	prov:wasDerivedFrom doc:ac5615bd9374 .
+doc:Factsperf3_1 a None:Performance_value .
+_:a5980673f092f6e0a426b61aa9f2eb9a rdf:reifies <<( doc:Factsperf3_1 rdf:type None:Performance_value )>> ;
+	prov:wasDerivedFrom doc:ac5615bd9374 .
+doc:Factscase1_19 cco:is_about doc:Factsperf3_1 .
+_:cbba80e107d9240c95f8eeda8cd90397 rdf:reifies <<( doc:Factscase1_19 cco:is_about doc:Factsperf3_1 )>> ;
+	prov:wasDerivedFrom doc:ac5615bd9374 .
+doc:Factspumpspectra cco:is_about doc:Factsfact5_21 .
+_:edeae25241fff2f689f565b0e6b4dfeb rdf:reifies <<( doc:Factspumpspectra cco:is_about doc:Factsfact5_21 )>> ;
+	prov:wasDerivedFrom doc:ac5615bd9374 .
+doc:Factsid1_41 a None:Article_identifier .
+_:ee30346b263f73ad5e7ee13ebceba74d rdf:reifies <<( doc:Factsid1_41 rdf:type None:Article_identifier )>> ;
+	prov:wasDerivedFrom doc:ac5615bd9374 .
+doc:Factspumpspectra a None:Predictive_maintenance_module_function .
+_:a8b509147665f457995148f2ad364c05 rdf:reifies <<( doc:Factspumpspectra rdf:type None:Predictive_maintenance_module_function )>> ;
+	prov:wasDerivedFrom doc:ac5615bd9374 .
+doc:Factspumpspectra a obo:BFO_0000034 .
+_:a0a67309ada4d80301064eed0a00f014 rdf:reifies <<( doc:Factspumpspectra rdf:type obo:BFO_0000034 )>> ;
+	prov:wasDerivedFrom doc:ac5615bd9374 .
+doc:Factsperf3_1 None:has_text_value "91.2%" .
+_:d01ff81d3fd220e49e92fef7f1afbb2f rdf:reifies <<( doc:Factsperf3_1 None:has_text_value "91.2%" )>> ;
+	prov:wasDerivedFrom doc:ac5615bd9374 .
+doc:Factsfault1_4 a schema1:MedicalCondition .
+_:c654e0f4e2d0f758a26c0419e1565d0d rdf:reifies <<( doc:Factsfault1_4 rdf:type schema1:MedicalCondition )>> ;
+	prov:wasDerivedFrom doc:ac5615bd9374 .
+doc:Factspumpspectra a None:Fault_detection .
+_:aaffeb07b823a78dac2ae4cfb9102cdb rdf:reifies <<( doc:Factspumpspectra rdf:type None:Fault_detection )>> ;
+	prov:wasDerivedFrom doc:ac5615bd9374 .
+doc:Factsid1_41 a None:Article_title .
+_:e268d6068572b90e41414f3e58d2606 rdf:reifies <<( doc:Factsid1_41 rdf:type None:Article_title )>> ;
+	prov:wasDerivedFrom doc:ac5615bd9374 .
+doc:Factscase1_19 cco:designates doc:Factsfact3_25 .
+_:ed6ad4644f44cf862eb1b694b7679883 rdf:reifies <<( doc:Factscase1_19 cco:designates doc:Factsfact3_25 )>> ;
+	prov:wasDerivedFrom doc:ac5615bd9374 .
+doc:Factspumpspectra a cco:InformationBearingArtifact .
+_:c1f4565d213a848b82645140a3d8d1d1 rdf:reifies <<( doc:Factspumpspectra rdf:type cco:InformationBearingArtifact )>> ;
+	prov:wasDerivedFrom doc:ac5615bd9374 .
+doc:Factspumpspectra cco:is_about doc:Factsfault1_4 .
+_:bc0a43a11c8d0292f69867ad7294a5d8 rdf:reifies <<( doc:Factspumpspectra cco:is_about doc:Factsfault1_4 )>> ;
+	prov:wasDerivedFrom doc:ac5615bd9374 .
+doc:Factspumpspectra rdfs:label "FFT/STFT"@en .
+_:a0fbbc14ab5a619a2caa87b3317f8565 rdf:reifies <<( doc:Factspumpspectra rdfs:label "FFT/STFT"@en )>> ;
+	prov:wasDerivedFrom doc:ac5615bd9374 .
+doc:Factsfault1_4 rdfs:label "bearing defects"@en .
+_:ae1cb7952dc24e6463cf5e340178f62c rdf:reifies <<( doc:Factsfault1_4 rdfs:label "bearing defects"@en )>> ;
+	prov:wasDerivedFrom doc:ac5615bd9374 .
+doc:Factspumpspectra None:describes_configuration doc:Factsconfig1_9 .
+_:c4b2f1d8e4cd4c66e585641abb367023 rdf:reifies <<( doc:Factspumpspectra None:describes_configuration doc:Factsconfig1_9 )>> ;
+	prov:wasDerivedFrom doc:ac5615bd9374 .
+doc:Factspumpspectra rdfs:label "predictive maintenance"@en .
+_:d5bc2c786f9c236a0caaf4c4c242f20f rdf:reifies <<( doc:Factspumpspectra rdfs:label "predictive maintenance"@en )>> ;
+	prov:wasDerivedFrom doc:ac5615bd9374 .
+doc:Factstech1_3 cco:designates doc:Factspumpspectra .
+_:c3be471b4e8a90edc0eba027d8ece80 rdf:reifies <<( doc:Factstech1_3 cco:designates doc:Factspumpspectra )>> ;
+	prov:wasDerivedFrom doc:ac5615bd9374 .
+doc:Factsperf3_1 None:has_interger_value 95 .
+_:e2b685fe34a8bfa985a3697feca15d8a rdf:reifies <<( doc:Factsperf3_1 None:has_interger_value 95 )>> ;
+	prov:wasDerivedFrom doc:ac5615bd9374 .
+doc:Factsid1_41 cco:designates doc:Factspumpspectra .
+_:df98b739dd71c7e3f76843e7d91f5b82 rdf:reifies <<( doc:Factsid1_41 cco:designates doc:Factspumpspectra )>> ;
+	prov:wasDerivedFrom doc:ac5615bd9374 .
+doc:Factsconfig1_9 cco:describes doc:Factspumpspectra .
+_:d01c9df9904d56f6701410a10124149 rdf:reifies <<( doc:Factsconfig1_9 cco:describes doc:Factspumpspectra )>> ;
+	prov:wasDerivedFrom doc:ac5615bd9374 .
+doc:Factspumpspectra a cco:Algorithm .
+_:fd617ffd94cd4c580bfdd33788ca5047 rdf:reifies <<( doc:Factspumpspectra rdf:type cco:Algorithm )>> ;
+	prov:wasDerivedFrom doc:ac5615bd9374 .
+doc:Factspumpspectra cco:is_about doc:Factskeyword2_1 .
+_:c703175a50f757ff8688f29bb4dd09c9 rdf:reifies <<( doc:Factspumpspectra cco:is_about doc:Factskeyword2_1 )>> ;
+	prov:wasDerivedFrom doc:ac5615bd9374 .
+doc:Factssite1 a schema1:Place .
+_:a0fb8b37db16dd4210090e90916bc61e rdf:reifies <<( doc:Factssite1 rdf:type schema1:Place )>> ;
+	prov:wasDerivedFrom doc:ac5615bd9374 .
+doc:Factspumpspectra None:has_title doc:Factsid1_41 .
+_:fb9df8863e1de462a2bf1856b2148564 rdf:reifies <<( doc:Factspumpspectra None:has_title doc:Factsid1_41 )>> ;
+	prov:wasDerivedFrom doc:ac5615bd9374 .
+doc:Factsyear1_75 a cco:DescriptiveInformationContentEntity .
+_:f48a1716c4fb77be5ed8908da452c10e rdf:reifies <<( doc:Factsyear1_75 rdf:type cco:DescriptiveInformationContentEntity )>> ;
+	prov:wasDerivedFrom doc:ac5615bd9374 .
+doc:Factsfault1_4 rdfs:label "impeller anomalies"@en .
+_:de9ed0e3e24726cbe62fedd999055f47 rdf:reifies <<( doc:Factsfault1_4 rdfs:label "impeller anomalies"@en )>> ;
+	prov:wasDerivedFrom doc:ac5615bd9374 .
+doc:Factspumpspectra a None:Data_mining_technique_function .
+_:cccfc9b975431c0d61e69baa6f4f14f9 rdf:reifies <<( doc:Factspumpspectra rdf:type None:Data_mining_technique_function )>> ;
+	prov:wasDerivedFrom doc:ac5615bd9374 .
+doc:Factsfact3_25 a None:Maintainable_item .
+_:e5515e0da9467afd275d158a0d474741 rdf:reifies <<( doc:Factsfact3_25 rdf:type None:Maintainable_item )>> ;
+	prov:wasDerivedFrom doc:ac5615bd9374 .
+doc:Factsconfig1_9 a cco:DescriptiveInformationContentEntity .
+_:dead006a98d6857466622f4edb4961be rdf:reifies <<( doc:Factsconfig1_9 rdf:type cco:DescriptiveInformationContentEntity )>> ;
+	prov:wasDerivedFrom doc:ac5615bd9374 .
+doc:Factspumpspectra obo:BFO_0000051 doc:Factspumpspectra .
+_:fe72282e59b503a7bffacc71902ca44 rdf:reifies <<( doc:Factspumpspectra obo:BFO_0000051 doc:Factspumpspectra )>> ;
+	prov:wasDerivedFrom doc:ac5615bd9374 .
+doc:Factspumpspectra cco:is_about doc:Factsfact3_25 .
+_:a6b290bcd5ba2b19f9058da774551b1b rdf:reifies <<( doc:Factspumpspectra cco:is_about doc:Factsfact3_25 )>> ;
+	prov:wasDerivedFrom doc:ac5615bd9374 .
+doc:Factsfault1_4 rdfs:label "misalignment"@en .
+_:f5375d8a7aecd8d1d4c25ed116bb6439 rdf:reifies <<( doc:Factsfault1_4 rdfs:label "misalignment"@en )>> ;
+	prov:wasDerivedFrom doc:ac5615bd9374 .
+doc:Factstech1_3 a None:Data_mining_technique_function .
+_:a2c35ec36763ba88d57bfc9e6bb6f912 rdf:reifies <<( doc:Factstech1_3 rdf:type None:Data_mining_technique_function )>> ;
+	prov:wasDerivedFrom doc:ac5615bd9374 .
+doc:Factspumpspectra cco:designates doc:Factspumpspectra .
+_:c74b083feaa40db6d2ad14b29b0a6da2 rdf:reifies <<( doc:Factspumpspectra cco:designates doc:Factspumpspectra )>> ;
+	prov:wasDerivedFrom doc:ac5615bd9374 .
+doc:Factsfact5_21 a cco:DescriptiveInformationContentEntity .
+_:f680f7a66acf2835f89b65ea16518947 rdf:reifies <<( doc:Factsfact5_21 rdf:type cco:DescriptiveInformationContentEntity )>> ;
+	prov:wasDerivedFrom doc:ac5615bd9374 .
+doc:Factsyear1_75 None:has_interger_value 2025 .
+_:df419a1698d9f7679cdb11c4a59c21e2 rdf:reifies <<( doc:Factsyear1_75 None:has_interger_value 2025 )>> ;
+	prov:wasDerivedFrom doc:ac5615bd9374 .
+doc:Factsfact3_25 a obo:BFO_0000030 .
+_:b287e2f56344aff79703c8856bd10bf2 rdf:reifies <<( doc:Factsfact3_25 rdf:type obo:BFO_0000030 )>> ;
+	prov:wasDerivedFrom doc:ac5615bd9374 .
+doc:Factscase1_19 a cco:DesignativeName .
+_:dcdad61568b641fb807fbfedb9bd97d1 rdf:reifies <<( doc:Factscase1_19 rdf:type cco:DesignativeName )>> ;
+	prov:wasDerivedFrom doc:ac5615bd9374 .
+doc:Factspumpspectra a None:Predictive_maintenance_model .
+_:d8e2568e50dce6e0fe930f1ff68cefd8 rdf:reifies <<( doc:Factspumpspectra rdf:type None:Predictive_maintenance_model )>> ;
+	prov:wasDerivedFrom doc:ac5615bd9374 .
+doc:Factskeyword3 a cco:DescriptiveInformationContentEntity .
+_:b89bb141aac09bc32fa3d0e4c5b716b1 rdf:reifies <<( doc:Factskeyword3 rdf:type cco:DescriptiveInformationContentEntity )>> ;
+	prov:wasDerivedFrom doc:ac5615bd9374 .
+doc:Factspumpspectra None:has_identifier doc:Factsid1_41 .
+_:c04293a21ad14a55470b514f20a19de rdf:reifies <<( doc:Factspumpspectra None:has_identifier doc:Factsid1_41 )>> ;
+	prov:wasDerivedFrom doc:ac5615bd9374 .
+doc:Factspumpspectra cco:is_about doc:Factskeyword3 .
+_:f01a4b72c25b7191015fe3415d6f6fc0 rdf:reifies <<( doc:Factspumpspectra cco:is_about doc:Factskeyword3 )>> ;
+	prov:wasDerivedFrom doc:ac5615bd9374 .
+doc:Factskeyword2_1 rdfs:label "spectral analysis"@en .
+_:cfff3bafaef0d6f3446416ecec8ce8e4 rdf:reifies <<( doc:Factskeyword2_1 rdfs:label "spectral analysis"@en )>> ;
+	prov:wasDerivedFrom doc:ac5615bd9374 .
+doc:Factsid1_41 a cco:DesignativeName .
+_:f06e86feb969d1a65c0309277a6f4dd2 rdf:reifies <<( doc:Factsid1_41 rdf:type cco:DesignativeName )>> ;
+	prov:wasDerivedFrom doc:ac5615bd9374 .
+doc:Factstech1_3 rdfs:label "Motor Current Signature Analysis"@en .
+_:edeef01591ede46d98129d9acdbfc7b3 rdf:reifies <<( doc:Factstech1_3 rdfs:label "Motor Current Signature Analysis"@en )>> ;
+	prov:wasDerivedFrom doc:ac5615bd9374 .
+doc:Factspumpspectra cco:is_about doc:Factspumpspectra .
+_:c2d3d0beff58da13f06142c45232d3 rdf:reifies <<( doc:Factspumpspectra cco:is_about doc:Factspumpspectra )>> ;
+	prov:wasDerivedFrom doc:ac5615bd9374 .
+doc:Factskeyword3 rdfs:label "induction motor"@en .
+_:b542ec624d05059961dcf89df4d6ad65 rdf:reifies <<( doc:Factskeyword3 rdfs:label "induction motor"@en )>> ;
+	prov:wasDerivedFrom doc:ac5615bd9374 .
+doc:Factscase1_19 cco:is_about doc:Factssite1 .
+_:d8cf2ea0fa5316f68ba88192d3349ed7 rdf:reifies <<( doc:Factscase1_19 cco:is_about doc:Factssite1 )>> ;
+	prov:wasDerivedFrom doc:ac5615bd9374 .
+doc:Factsid1_41 a cco:ArtifactIdentifier .
+_:b944726019f4bae22f9d0d14aba85be rdf:reifies <<( doc:Factsid1_41 rdf:type cco:ArtifactIdentifier )>> ;
+	prov:wasDerivedFrom doc:ac5615bd9374 .
+doc:Factspumpspectra a None:Predictive_maintenance_system_module .
+_:c7ab28eac3fc05b18b0394ce1100d89d rdf:reifies <<( doc:Factspumpspectra rdf:type None:Predictive_maintenance_system_module )>> ;
+	prov:wasDerivedFrom doc:ac5615bd9374 .
+doc:Factstech1_3 a obo:BFO_0000034 .
+_:b4ce804b10a3a9bf4df2bdcfa6598d39 rdf:reifies <<( doc:Factstech1_3 rdf:type obo:BFO_0000034 )>> ;
+	prov:wasDerivedFrom doc:ac5615bd9374 .
+doc:Factspumpspectra None:has_publication_year doc:Factsyear1_75 .
+_:f27dc82be25575a75363d781b54d2112 rdf:reifies <<( doc:Factspumpspectra None:has_publication_year doc:Factsyear1_75 )>> ;
+	prov:wasDerivedFrom doc:ac5615bd9374 .
+doc:Factspumpspectra a None:Predictive_Maintenance_Article .
+_:d0b35b84ffd839498157c7165f80f0e3 rdf:reifies <<( doc:Factspumpspectra rdf:type None:Predictive_Maintenance_Article )>> ;
+	prov:wasDerivedFrom doc:ac5615bd9374 .
+doc:Factskeyword2_1 a cco:DescriptiveInformationContentEntity .
+_:fe5e8f90f692c172e4613b8701cfde0d rdf:reifies <<( doc:Factskeyword2_1 rdf:type cco:DescriptiveInformationContentEntity )>> ;
+	prov:wasDerivedFrom doc:ac5615bd9374 .
+doc:Factsfact5_21 rdfs:label "fault detection"@en .
+_:ac44b812527d743c828b0ab9f99ca246 rdf:reifies <<( doc:Factsfact5_21 rdfs:label "fault detection"@en )>> ;
+	prov:wasDerivedFrom doc:ac5615bd9374 .
+doc:Factscase1_19 a None:Predictive_maintenance_case .
+_:d6d807b06de2a75a6883a8a277e2e5e6 rdf:reifies <<( doc:Factscase1_19 rdf:type None:Predictive_maintenance_case )>> ;
+	prov:wasDerivedFrom doc:ac5615bd9374 .
+doc:Factsfact3_25 rdfs:label "centrifugal pump systems"@en .
+_:e77e5af2fa024c6816d9803b81ddd8ad rdf:reifies <<( doc:Factsfact3_25 rdfs:label "centrifugal pump systems"@en )>> ;
+	prov:wasDerivedFrom doc:ac5615bd9374 .
+doc:Factsyear1_75 a None:Publication_year .
+_:e8cbca244db11d0ffa4479323eaee6d1 rdf:reifies <<( doc:Factsyear1_75 rdf:type None:Publication_year )>> ;
+	prov:wasDerivedFrom doc:ac5615bd9374 .
+doc:Factspumpspectra None:has_predictive_maintenance_function doc:Factspumpspectra .
+_:c46f70e83a0abe715d8c6e1eca2629c5 rdf:reifies <<( doc:Factspumpspectra None:has_predictive_maintenance_function doc:Factspumpspectra )>> ;
+	prov:wasDerivedFrom doc:ac5615bd9374 .
+doc:Factspumpspectra a cco:InformationProcessingArtifact .
+_:d62f1cf64c6257dd0f910266bc36cb0d rdf:reifies <<( doc:Factspumpspectra rdf:type cco:InformationProcessingArtifact )>> ;
+	prov:wasDerivedFrom doc:ac5615bd9374 .
+doc:Factsconfig1_9 a None:Model_configuration .
+_:a179cb7389709b8b365aa4c07fd4aa05 rdf:reifies <<( doc:Factsconfig1_9 rdf:type None:Model_configuration )>> ;
+	prov:wasDerivedFrom doc:ac5615bd9374 .
+doc:Factsperf3_1 None:has_text_value "3.8%" .
+_:b7847d32ce3547c2b8626ce67b3aa713 rdf:reifies <<( doc:Factsperf3_1 None:has_text_value "3.8%" )>> ;
+	prov:wasDerivedFrom doc:ac5615bd9374 .
+doc:Factspumpspectra a cco:DescriptiveInformationContentEntity .
+_:b1c8e5a46f486fb265e88ff39168524b rdf:reifies <<( doc:Factspumpspectra rdf:type cco:DescriptiveInformationContentEntity )>> ;
+	prov:wasDerivedFrom doc:ac5615bd9374 .
+doc:ccf2a5dcc4cb a prov:Entity , schema:text ;
+	prov:generatedAtTime "2026-07-22T01:13:37.381383Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+	schema:position 1 ;
+	schema:identifier "ccf2a5dcc4cb" .
+_:d8e2568e50dce6e0fe930f1ff68cefd8 prov:wasDerivedFrom doc:ccf2a5dcc4cb .
+_:c2d3d0beff58da13f06142c45232d3 prov:wasDerivedFrom doc:ccf2a5dcc4cb .
+doc:Factsitem5_3 rdfs:label "bearing" .
+_:f6ac11d067d9ec39b0a9b7aa969ce14b rdf:reifies <<( doc:Factsitem5_3 rdfs:label "bearing" )>> ;
+	prov:wasDerivedFrom doc:ccf2a5dcc4cb .
+doc:Factsfact3_25 rdfs:label "centrifugal pump" .
+_:bbb61d5e569f1928604fb752415bc799 rdf:reifies <<( doc:Factsfact3_25 rdfs:label "centrifugal pump" )>> ;
+	prov:wasDerivedFrom doc:ccf2a5dcc4cb .
+_:a6b290bcd5ba2b19f9058da774551b1b prov:wasDerivedFrom doc:ccf2a5dcc4cb .
+doc:Factsvar5_3 rdfs:label "current spectrum" .
+_:bef6609f7720a3d0f312d23a38fb8a66 rdf:reifies <<( doc:Factsvar5_3 rdfs:label "current spectrum" )>> ;
+	prov:wasDerivedFrom doc:ccf2a5dcc4cb .
+_:ee30346b263f73ad5e7ee13ebceba74d prov:wasDerivedFrom doc:ccf2a5dcc4cb .
+doc:Factsvar5_3 a None:Data_variable .
+_:bb6dafd8ec76e437e12bd709ff76c062 rdf:reifies <<( doc:Factsvar5_3 rdf:type None:Data_variable )>> ;
+	prov:wasDerivedFrom doc:ccf2a5dcc4cb .
+_:f27dc82be25575a75363d781b54d2112 prov:wasDerivedFrom doc:ccf2a5dcc4cb .
+_:d0b35b84ffd839498157c7165f80f0e3 prov:wasDerivedFrom doc:ccf2a5dcc4cb .
+doc:Factsitem5_3 rdfs:label "shaft" .
+_:cacf69c9ed0559bfd2a1ecafae07475e rdf:reifies <<( doc:Factsitem5_3 rdfs:label "shaft" )>> ;
+	prov:wasDerivedFrom doc:ccf2a5dcc4cb .
+doc:Factspumpspectra rdfs:label "rule-based detection" .
+_:c4064178a6ecec7d2ec9299a65545ae4 rdf:reifies <<( doc:Factspumpspectra rdfs:label "rule-based detection" )>> ;
+	prov:wasDerivedFrom doc:ccf2a5dcc4cb .
+_:a5980673f092f6e0a426b61aa9f2eb9a prov:wasDerivedFrom doc:ccf2a5dcc4cb .
+doc:Factsfact3_25 obo:BFO_0000051 doc:Factsitem5_3 .
+_:e058d2db80f999abc7e22a6690591020 rdf:reifies <<( doc:Factsfact3_25 obo:BFO_0000051 doc:Factsitem5_3 )>> ;
+	prov:wasDerivedFrom doc:ccf2a5dcc4cb .
+doc:Factspumpspectra a None:Deviation_detection .
+_:ce12292ae7a52af309c5e6200eae009 rdf:reifies <<( doc:Factspumpspectra rdf:type None:Deviation_detection )>> ;
+	prov:wasDerivedFrom doc:ccf2a5dcc4cb .
+doc:Factspumpspectra cco:is_about doc:Factsdet5 .
+_:d345f8066f0ff8c1f332df216067b221 rdf:reifies <<( doc:Factspumpspectra cco:is_about doc:Factsdet5 )>> ;
+	prov:wasDerivedFrom doc:ccf2a5dcc4cb .
+doc:Factsvar3_7 rdfs:label "vibration sensors" .
+_:d30094b3f9191c2ccf0aea53c136d4ef rdf:reifies <<( doc:Factsvar3_7 rdfs:label "vibration sensors" )>> ;
+	prov:wasDerivedFrom doc:ccf2a5dcc4cb .
+_:aaffeb07b823a78dac2ae4cfb9102cdb prov:wasDerivedFrom doc:ccf2a5dcc4cb .
+_:e268d6068572b90e41414f3e58d2606 prov:wasDerivedFrom doc:ccf2a5dcc4cb .
+doc:Factspumpspectra None:has_predictive_maintenance_function doc:Factsfunc2_5 .
+_:a025209bba37f21d9948faad8b1d18b2 rdf:reifies <<( doc:Factspumpspectra None:has_predictive_maintenance_function doc:Factsfunc2_5 )>> ;
+	prov:wasDerivedFrom doc:ccf2a5dcc4cb .
+doc:Factscase1_19 rdfs:label "El Oued desalination plant deployment" .
+_:db58b9a745eae00ce4ce1ec91b0cbce5 rdf:reifies <<( doc:Factscase1_19 rdfs:label "El Oued desalination plant deployment" )>> ;
+	prov:wasDerivedFrom doc:ccf2a5dcc4cb .
+doc:Factspumpspectra rdfs:label "Short-Time Fourier Transform" .
+_:f3605abde0a7345be0537a5cf3c38258 rdf:reifies <<( doc:Factspumpspectra rdfs:label "Short-Time Fourier Transform" )>> ;
+	prov:wasDerivedFrom doc:ccf2a5dcc4cb .
+_:c7ab28eac3fc05b18b0394ce1100d89d prov:wasDerivedFrom doc:ccf2a5dcc4cb .
+doc:Factsindicator1_2 rdfs:label "Key Performance Indicators" .
+_:e3b1a46a7b0f4973996729717ca8fa8e rdf:reifies <<( doc:Factsindicator1_2 rdfs:label "Key Performance Indicators" )>> ;
+	prov:wasDerivedFrom doc:ccf2a5dcc4cb .
+_:c04293a21ad14a55470b514f20a19de prov:wasDerivedFrom doc:ccf2a5dcc4cb .
+doc:Factssite1 schema1:additionalType doc:Factsfact3_25 .
+_:aa5711a8fcf1af140cff05116c878204 rdf:reifies <<( doc:Factssite1 schema1:additionalType doc:Factsfact3_25 )>> ;
+	prov:wasDerivedFrom doc:ccf2a5dcc4cb .
+_:a0fb8b37db16dd4210090e90916bc61e prov:wasDerivedFrom doc:ccf2a5dcc4cb .
+doc:Factsdet4 a None:Design_detail .
+_:b223bbef32d9dd4025806944fd3d68bc rdf:reifies <<( doc:Factsdet4 rdf:type None:Design_detail )>> ;
+	prov:wasDerivedFrom doc:ccf2a5dcc4cb .
+doc:Factspumpspectra cco:is_about doc:Factscase1_19 .
+_:e4eee6125a697f3973b474e3c827d23d rdf:reifies <<( doc:Factspumpspectra cco:is_about doc:Factscase1_19 )>> ;
+	prov:wasDerivedFrom doc:ccf2a5dcc4cb .
+doc:Factscase1_19 cco:designates doc:Factssite1 .
+_:c141238a139a5273df699b9bc66e3f06 rdf:reifies <<( doc:Factscase1_19 cco:designates doc:Factssite1 )>> ;
+	prov:wasDerivedFrom doc:ccf2a5dcc4cb .
+doc:Factsdet3 a None:Design_detail .
+_:b4ce62ee0d98237dd4f914a19068592a rdf:reifies <<( doc:Factsdet3 rdf:type None:Design_detail )>> ;
+	prov:wasDerivedFrom doc:ccf2a5dcc4cb .
+doc:Factsdet5 a None:Design_detail .
+_:fa7cfa45b26ded3caf154d1762ab783b rdf:reifies <<( doc:Factsdet5 rdf:type None:Design_detail )>> ;
+	prov:wasDerivedFrom doc:ccf2a5dcc4cb .
+doc:Factsvar5_3 rdfs:label "stator current signals" .
+_:dae8c708bddb128497690c3aa71a7dea rdf:reifies <<( doc:Factsvar5_3 rdfs:label "stator current signals" )>> ;
+	prov:wasDerivedFrom doc:ccf2a5dcc4cb .
+doc:Factspumpspectra cco:is_about doc:Factsdet2 .
+_:eb0415b30b3fe2ded644f31e06c4c949 rdf:reifies <<( doc:Factspumpspectra cco:is_about doc:Factsdet2 )>> ;
+	prov:wasDerivedFrom doc:ccf2a5dcc4cb .
+doc:Factsdet1 rdfs:label "offline signal uploading" .
+_:ed2606e8fcdf1e1d39e83a6316901f4 rdf:reifies <<( doc:Factsdet1 rdfs:label "offline signal uploading" )>> ;
+	prov:wasDerivedFrom doc:ccf2a5dcc4cb .
+doc:Factspumpspectra rdfs:label "machine learning classifiers" .
+_:f1582ce395ff30272dc2cb56c6546fa rdf:reifies <<( doc:Factspumpspectra rdfs:label "machine learning classifiers" )>> ;
+	prov:wasDerivedFrom doc:ccf2a5dcc4cb .
+doc:Factsitem5_3 rdfs:label "impeller" .
+_:e1b0a64a2146309fd7ae1177bcc8cea rdf:reifies <<( doc:Factsitem5_3 rdfs:label "impeller" )>> ;
+	prov:wasDerivedFrom doc:ccf2a5dcc4cb .
+doc:Factsvar4_2 rdfs:label "sidebands" .
+_:c887dc67086f96d7b892545b3b450ee5 rdf:reifies <<( doc:Factsvar4_2 rdfs:label "sidebands" )>> ;
+	prov:wasDerivedFrom doc:ccf2a5dcc4cb .
+doc:Factsvar4_2 a None:Data_variable .
+_:e359fa0cab335365307268243796b60f rdf:reifies <<( doc:Factsvar4_2 rdf:type None:Data_variable )>> ;
+	prov:wasDerivedFrom doc:ccf2a5dcc4cb .
+doc:Factsdet2 rdfs:label "spectral analysis" .
+_:ff817cc8702420a14e675e5fdbdb75db rdf:reifies <<( doc:Factsdet2 rdfs:label "spectral analysis" )>> ;
+	prov:wasDerivedFrom doc:ccf2a5dcc4cb .
+doc:Factssite1 schema1:additionalType doc:Factsitem2_6 .
+_:c3a74b244f6d5c665bfbd9352dee8f7 rdf:reifies <<( doc:Factssite1 schema1:additionalType doc:Factsitem2_6 )>> ;
+	prov:wasDerivedFrom doc:ccf2a5dcc4cb .
+doc:Factspumpspectra cco:is_about doc:Factstech1_3 .
+_:e96687a0c0dcb546fff8d148d32c97cf rdf:reifies <<( doc:Factspumpspectra cco:is_about doc:Factstech1_3 )>> ;
+	prov:wasDerivedFrom doc:ccf2a5dcc4cb .
+_:c46f70e83a0abe715d8c6e1eca2629c5 prov:wasDerivedFrom doc:ccf2a5dcc4cb .
+doc:Factspumpspectra cco:is_about doc:Factsdet4 .
+_:afa174f0e58cdb6069bcc288f1985216 rdf:reifies <<( doc:Factspumpspectra cco:is_about doc:Factsdet4 )>> ;
+	prov:wasDerivedFrom doc:ccf2a5dcc4cb .
+doc:Factssync1_26 a None:Module_synchronization .
+_:dcaf7a5be50ff3f4ddf455b05cb8591d rdf:reifies <<( doc:Factssync1_26 rdf:type None:Module_synchronization )>> ;
+	prov:wasDerivedFrom doc:ccf2a5dcc4cb .
+doc:Factstech1_3 rdfs:label "Motor Current Signature Analysis" .
+_:cdba229767433e07bd949ef353cfbe0b rdf:reifies <<( doc:Factstech1_3 rdfs:label "Motor Current Signature Analysis" )>> ;
+	prov:wasDerivedFrom doc:ccf2a5dcc4cb .
+doc:Factsindicator1_2 a None:Performance_indicator .
+_:e77acd0b7a35abf8ce700b7e04b3ff7b rdf:reifies <<( doc:Factsindicator1_2 rdf:type None:Performance_indicator )>> ;
+	prov:wasDerivedFrom doc:ccf2a5dcc4cb .
+_:fb9df8863e1de462a2bf1856b2148564 prov:wasDerivedFrom doc:ccf2a5dcc4cb .
+doc:Factspumpspectra cco:is_about doc:Factsindicator1_2 .
+_:fdfd2c18907eafec8902ba13312120b1 rdf:reifies <<( doc:Factspumpspectra cco:is_about doc:Factsindicator1_2 )>> ;
+	prov:wasDerivedFrom doc:ccf2a5dcc4cb .
+doc:Factspumpspectra cco:is_about doc:Factsitem5_3 .
+_:cd4afcbe9d1df6317ee48eaeff263036 rdf:reifies <<( doc:Factspumpspectra cco:is_about doc:Factsitem5_3 )>> ;
+	prov:wasDerivedFrom doc:ccf2a5dcc4cb .
+doc:Factsid1_41 None:has_text_value "Condition monitoring and predictive maintenance for centrifugal pump systems using MCSA" .
+_:dbbb5462c64517702dcb03ee381a842e rdf:reifies <<( doc:Factsid1_41 None:has_text_value "Condition monitoring and predictive maintenance for centrifugal pump systems using MCSA" )>> ;
+	prov:wasDerivedFrom doc:ccf2a5dcc4cb .
+doc:Factspumpspectra None:has_predictive_maintenance_function doc:Factsfunc4_1 .
+_:f293c74a9ea82fcd2dedf1c63f30da74 rdf:reifies <<( doc:Factspumpspectra None:has_predictive_maintenance_function doc:Factsfunc4_1 )>> ;
+	prov:wasDerivedFrom doc:ccf2a5dcc4cb .
+doc:Factspumpspectra rdfs:label "PumpSpectra" .
+_:f92d82485b06c4ca1e9aa9f54ff4862a rdf:reifies <<( doc:Factspumpspectra rdfs:label "PumpSpectra" )>> ;
+	prov:wasDerivedFrom doc:ccf2a5dcc4cb .
+doc:Factspumpspectra cco:is_about doc:Factsitem2_6 .
+_:d4039753bb26410f578bd9e154a450d7 rdf:reifies <<( doc:Factspumpspectra cco:is_about doc:Factsitem2_6 )>> ;
+	prov:wasDerivedFrom doc:ccf2a5dcc4cb .
+doc:Factsyear1_75 None:has_interger_value 2024 .
+_:bbde0a8a8bcf11dc352b743035039e00 rdf:reifies <<( doc:Factsyear1_75 None:has_interger_value 2024 )>> ;
+	prov:wasDerivedFrom doc:ccf2a5dcc4cb .
+doc:Factsperf3_1 None:has_text_value "scalable" .
+_:fdcc13877f47b8fe87f313d1f826ac55 rdf:reifies <<( doc:Factsperf3_1 None:has_text_value "scalable" )>> ;
+	prov:wasDerivedFrom doc:ccf2a5dcc4cb .
+doc:Factsitem2_6 rdfs:label "three-phase induction motor" .
+_:a745f6cf5e8b688a27c06c1f6d5e555c rdf:reifies <<( doc:Factsitem2_6 rdfs:label "three-phase induction motor" )>> ;
+	prov:wasDerivedFrom doc:ccf2a5dcc4cb .
+doc:Factsid1_41 None:has_text_value "unknown" .
+_:d1b54f16b688915a27639b173084ce6 rdf:reifies <<( doc:Factsid1_41 None:has_text_value "unknown" )>> ;
+	prov:wasDerivedFrom doc:ccf2a5dcc4cb .
+doc:Factssite1 rdfs:label "El Oued desalination plant" .
+_:eb6f9aa2875b9f4a734b0c85fd8a6cba rdf:reifies <<( doc:Factssite1 rdfs:label "El Oued desalination plant" )>> ;
+	prov:wasDerivedFrom doc:ccf2a5dcc4cb .
+doc:Factsitem5_3 a None:Maintainable_item .
+_:b994df484a4f24cc0e6804f684ef53d3 rdf:reifies <<( doc:Factsitem5_3 rdf:type None:Maintainable_item )>> ;
+	prov:wasDerivedFrom doc:ccf2a5dcc4cb .
+doc:Factspumpspectra cco:is_about doc:Factsdet3 .
+_:a2e173b93fe11c6f4112515cfefcabc6 rdf:reifies <<( doc:Factspumpspectra cco:is_about doc:Factsdet3 )>> ;
+	prov:wasDerivedFrom doc:ccf2a5dcc4cb .
+doc:Factsdet4 rdfs:label "slip-aware electrical order tracking" .
+_:d5b7a8ae1936d1599f8097658502feec rdf:reifies <<( doc:Factsdet4 rdfs:label "slip-aware electrical order tracking" )>> ;
+	prov:wasDerivedFrom doc:ccf2a5dcc4cb .
+_:e5515e0da9467afd275d158a0d474741 prov:wasDerivedFrom doc:ccf2a5dcc4cb .
+doc:Factsperf3_1 None:has_text_value "traceable" .
+_:adc4d2873bc5b359af0729782b319f62 rdf:reifies <<( doc:Factsperf3_1 None:has_text_value "traceable" )>> ;
+	prov:wasDerivedFrom doc:ccf2a5dcc4cb .
+doc:Factstech1_3 a None:Predictive_maintenance_model .
+_:b2690773f2626533286344b435f43cc rdf:reifies <<( doc:Factstech1_3 rdf:type None:Predictive_maintenance_model )>> ;
+	prov:wasDerivedFrom doc:ccf2a5dcc4cb .
+doc:Factsfunc2_5 a None:Health_assessment .
+_:cee4b5c3031e8a50cb214f8f6d8d142f rdf:reifies <<( doc:Factsfunc2_5 rdf:type None:Health_assessment )>> ;
+	prov:wasDerivedFrom doc:ccf2a5dcc4cb .
+doc:Factsfunc4_1 a None:Remaining_useful_life_estimation .
+_:e197358d560575dadf3312710e103f1c rdf:reifies <<( doc:Factsfunc4_1 rdf:type None:Remaining_useful_life_estimation )>> ;
+	prov:wasDerivedFrom doc:ccf2a5dcc4cb .
+doc:Factsvar5_3 rdfs:label "frequency components" .
+_:f9a50bff5eca7ef37eb71349badc3da1 rdf:reifies <<( doc:Factsvar5_3 rdfs:label "frequency components" )>> ;
+	prov:wasDerivedFrom doc:ccf2a5dcc4cb .
+doc:Factsdet1 a None:Design_detail .
+_:a6a350ac96d3403b7398ea5377b2300a rdf:reifies <<( doc:Factsdet1 rdf:type None:Design_detail )>> ;
+	prov:wasDerivedFrom doc:ccf2a5dcc4cb .
+doc:Factsperf3_1 None:has_text_value "explainable" .
+_:d891e22176db61635de47c576fe1d82e rdf:reifies <<( doc:Factsperf3_1 None:has_text_value "explainable" )>> ;
+	prov:wasDerivedFrom doc:ccf2a5dcc4cb .
+doc:Factsvar3_7 a None:Data_variable .
+_:d82d617e37327c44eac9f52760217d62 rdf:reifies <<( doc:Factsvar3_7 rdf:type None:Data_variable )>> ;
+	prov:wasDerivedFrom doc:ccf2a5dcc4cb .
+doc:Factsdet3 rdfs:label "automated rule-based detection" .
+_:eab022c5bc2530efdd79d7f7bc30a09c rdf:reifies <<( doc:Factsdet3 rdfs:label "automated rule-based detection" )>> ;
+	prov:wasDerivedFrom doc:ccf2a5dcc4cb .
+doc:Factsdet5 rdfs:label "exportable results" .
+_:c1e9c12e740d28597d30c3d99b4e16f5 rdf:reifies <<( doc:Factsdet5 rdfs:label "exportable results" )>> ;
+	prov:wasDerivedFrom doc:ccf2a5dcc4cb .
+_:d6d807b06de2a75a6883a8a277e2e5e6 prov:wasDerivedFrom doc:ccf2a5dcc4cb .
+doc:Factspumpspectra cco:is_about doc:Factsdet1 .
+_:ced4cd53fbe7e8edc82f5fd999844773 rdf:reifies <<( doc:Factspumpspectra cco:is_about doc:Factsdet1 )>> ;
+	prov:wasDerivedFrom doc:ccf2a5dcc4cb .
+_:e8cbca244db11d0ffa4479323eaee6d1 prov:wasDerivedFrom doc:ccf2a5dcc4cb .
+doc:Factspumpspectra a None:Fault_identification .
+_:cd9c99dd5288f0123b4d370274ef5ad1 rdf:reifies <<( doc:Factspumpspectra rdf:type None:Fault_identification )>> ;
+	prov:wasDerivedFrom doc:ccf2a5dcc4cb .
+doc:Factspumpspectra rdfs:label "Fast Fourier Transform" .
+_:ce3c6cc441a24cbb24b126caa38f4e13 rdf:reifies <<( doc:Factspumpspectra rdfs:label "Fast Fourier Transform" )>> ;
+	prov:wasDerivedFrom doc:ccf2a5dcc4cb .
+doc:Factsitem2_6 a None:Maintainable_item .
+_:f5ccbf26cd9cfd39130bc260721d8706 rdf:reifies <<( doc:Factsitem2_6 rdf:type None:Maintainable_item )>> ;
+	prov:wasDerivedFrom doc:ccf2a5dcc4cb .
+doc:Factssync1_26 rdfs:label "offline" .
+_:b20f465807a01c242075674c0cd41378 rdf:reifies <<( doc:Factssync1_26 rdfs:label "offline" )>> ;
+	prov:wasDerivedFrom doc:ccf2a5dcc4cb .
+doc:Factsdet2 a None:Design_detail .
+_:ad538c936831f00ae97207f46d26b4d1 rdf:reifies <<( doc:Factsdet2 rdf:type None:Design_detail )>> ;
+	prov:wasDerivedFrom doc:ccf2a5dcc4cb .
+doc:79bf98ba79f2 a prov:Entity , schema:text ;
+	prov:generatedAtTime "2026-07-22T01:13:37.387382Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+	schema:position 2 ;
+	schema:identifier "79bf98ba79f2" .
+_:f680f7a66acf2835f89b65ea16518947 prov:wasDerivedFrom doc:79bf98ba79f2 .
+doc:Factsfact5_21 cco:describes doc:Factsfact3_25 .
+_:ff92dfd0ccbd84ee308ca8efd2beda65 rdf:reifies <<( doc:Factsfact5_21 cco:describes doc:Factsfact3_25 )>> ;
+	prov:wasDerivedFrom doc:79bf98ba79f2 .
+doc:Factsfact27_7 rdfs:label "uploadbased deployment architecture"@en .
+_:b6f63bd388f2207dacad2c9f408d499f rdf:reifies <<( doc:Factsfact27_7 rdfs:label "uploadbased deployment architecture"@en )>> ;
+	prov:wasDerivedFrom doc:79bf98ba79f2 .
+doc:Factsfact24_7 rdfs:label "classification"@en .
+_:db7c3b09e036933c0f900062f466bd3e rdf:reifies <<( doc:Factsfact24_7 rdfs:label "classification"@en )>> ;
+	prov:wasDerivedFrom doc:79bf98ba79f2 .
+doc:Factsfact5_21 a None:Fault_detection .
+_:b284211aa18731524e42a692084775db rdf:reifies <<( doc:Factsfact5_21 rdf:type None:Fault_detection )>> ;
+	prov:wasDerivedFrom doc:79bf98ba79f2 .
+doc:Factsfact5_21 rdfs:label "FFT"@en .
+_:bc1637e69b6a5a552ae6e9b331f07ef4 rdf:reifies <<( doc:Factsfact5_21 rdfs:label "FFT"@en )>> ;
+	prov:wasDerivedFrom doc:79bf98ba79f2 .
+doc:Factsfact26_11 cco:describes doc:Factsfact5_21 .
+_:daa0041c9a191a69508412b25463c211 rdf:reifies <<( doc:Factsfact26_11 cco:describes doc:Factsfact5_21 )>> ;
+	prov:wasDerivedFrom doc:79bf98ba79f2 .
+doc:Factsfact5_21 rdfs:label "vibration signals"@en .
+_:fc1862391c46f96617ec9e11357d9d92 rdf:reifies <<( doc:Factsfact5_21 rdfs:label "vibration signals"@en )>> ;
+	prov:wasDerivedFrom doc:79bf98ba79f2 .
+doc:Factsfact5_21 rdfs:label "STFT"@en .
+_:cdb1016aee53d89913fc5d802aac737e rdf:reifies <<( doc:Factsfact5_21 rdfs:label "STFT"@en )>> ;
+	prov:wasDerivedFrom doc:79bf98ba79f2 .
+doc:Factsfact5_21 rdfs:label "vibration sensors cannot be reliably installed"@en .
+_:a77c1bc36b8fa5ee177381e32f8ad08a rdf:reifies <<( doc:Factsfact5_21 rdfs:label "vibration sensors cannot be reliably installed"@en )>> ;
+	prov:wasDerivedFrom doc:79bf98ba79f2 .
+doc:Factsfact5_21 cco:describes doc:Factsfact5_21 .
+_:d4e919adcf14b551323dfea5dd679744 rdf:reifies <<( doc:Factsfact5_21 cco:describes doc:Factsfact5_21 )>> ;
+	prov:wasDerivedFrom doc:79bf98ba79f2 .
+doc:Factsfact5_21 rdfs:label "vibration-based methods"@en .
+_:b669abb1e373def689eb0458bdf08c2 rdf:reifies <<( doc:Factsfact5_21 rdfs:label "vibration-based methods"@en )>> ;
+	prov:wasDerivedFrom doc:79bf98ba79f2 .
+doc:Factsfact5_21 rdfs:label "rapid technician-facing feedback"@en .
+_:caeed3c27151c5eb4c43c4d43784c1c2 rdf:reifies <<( doc:Factsfact5_21 rdfs:label "rapid technician-facing feedback"@en )>> ;
+	prov:wasDerivedFrom doc:79bf98ba79f2 .
+doc:Factsfact5_21 rdfs:label "current-based fault diagnosis"@en .
+_:d60d267684822e08799553553ec96922 rdf:reifies <<( doc:Factsfact5_21 rdfs:label "current-based fault diagnosis"@en )>> ;
+	prov:wasDerivedFrom doc:79bf98ba79f2 .
+doc:Factsfact3_25 rdfs:label "centrifugal pumps"@en .
+_:dedfc4116ca1e5a196bb71590f9ec326 rdf:reifies <<( doc:Factsfact3_25 rdfs:label "centrifugal pumps"@en )>> ;
+	prov:wasDerivedFrom doc:79bf98ba79f2 .
+doc:Factsfact5_21 rdfs:label "machine health"@en .
+_:d658b33af982ada345324af6c78b8574 rdf:reifies <<( doc:Factsfact5_21 rdfs:label "machine health"@en )>> ;
+	prov:wasDerivedFrom doc:79bf98ba79f2 .
+doc:Factsfact27_7 cco:describes doc:Factsfact5_21 .
+_:cf84f5a2933f0fd54e523a1bceaddb1b rdf:reifies <<( doc:Factsfact27_7 cco:describes doc:Factsfact5_21 )>> ;
+	prov:wasDerivedFrom doc:79bf98ba79f2 .
+doc:Factsfact5_21 rdfs:label "signal processing methods"@en .
+_:edc3fc7f56cbb1ce2ecf4e524562750f rdf:reifies <<( doc:Factsfact5_21 rdfs:label "signal processing methods"@en )>> ;
+	prov:wasDerivedFrom doc:79bf98ba79f2 .
+doc:Factsfact5_21 rdfs:label "Wavelets"@en .
+_:cf926799de48d0fb66ad97f26476b4b0 rdf:reifies <<( doc:Factsfact5_21 rdfs:label "Wavelets"@en )>> ;
+	prov:wasDerivedFrom doc:79bf98ba79f2 .
+_:e5515e0da9467afd275d158a0d474741 prov:wasDerivedFrom doc:79bf98ba79f2 .
+doc:Factsfact5_21 rdfs:label "Empirical Mode Decomposition"@en .
+_:e60cedde288f11c5edae62bdfca48ba9 rdf:reifies <<( doc:Factsfact5_21 rdfs:label "Empirical Mode Decomposition"@en )>> ;
+	prov:wasDerivedFrom doc:79bf98ba79f2 .
+doc:Factsfact26_11 rdfs:label "learning-based methods"@en .
+_:cc03de718e32bcb9ea65f52a6deedb87 rdf:reifies <<( doc:Factsfact26_11 rdfs:label "learning-based methods"@en )>> ;
+	prov:wasDerivedFrom doc:79bf98ba79f2 .
+doc:Factsfact5_21 rdfs:label "Bearing Pulse Frequency"@en .
+_:cbd9288077d4cac8a428061a37475d08 rdf:reifies <<( doc:Factsfact5_21 rdfs:label "Bearing Pulse Frequency"@en )>> ;
+	prov:wasDerivedFrom doc:79bf98ba79f2 .
+doc:Factsfact5_21 cco:describes doc:Factsfact26_11 .
+_:b83da2de5f8febc60dacfa87bca2554a rdf:reifies <<( doc:Factsfact5_21 cco:describes doc:Factsfact26_11 )>> ;
+	prov:wasDerivedFrom doc:79bf98ba79f2 .
+doc:Factsfact5_21 rdfs:label "automated feature extraction"@en .
+_:ba0bb7770a69d3280af2a3974c599564 rdf:reifies <<( doc:Factsfact5_21 rdfs:label "automated feature extraction"@en )>> ;
+	prov:wasDerivedFrom doc:79bf98ba79f2 .
+doc:Factsfact5_21 rdfs:label "feature extraction"@en .
+_:bef858d499887fc6dc7deef78a3c16fa rdf:reifies <<( doc:Factsfact5_21 rdfs:label "feature extraction"@en )>> ;
+	prov:wasDerivedFrom doc:79bf98ba79f2 .
+doc:Factsfact5_21 a None:Fault_feature_extraction .
+_:b6b1d935cd4016dc5b5291c173520bbd rdf:reifies <<( doc:Factsfact5_21 rdf:type None:Fault_feature_extraction )>> ;
+	prov:wasDerivedFrom doc:79bf98ba79f2 .
+doc:Factsfact5_21 rdfs:label "current-based methods"@en .
+_:c0d2412c011f04c6a91ed6968f1a5ab7 rdf:reifies <<( doc:Factsfact5_21 rdfs:label "current-based methods"@en )>> ;
+	prov:wasDerivedFrom doc:79bf98ba79f2 .
+doc:Factsitem5_3 a obo:BFO_0000030 .
+_:c3f4147b1da272c7d413246a40632f68 rdf:reifies <<( doc:Factsitem5_3 rdf:type obo:BFO_0000030 )>> ;
+	prov:wasDerivedFrom doc:79bf98ba79f2 .
+doc:Factsfact5_21 rdfs:label "current measurements"@en .
+_:b2c4837d468bbf011dbd6c08b525e6a6 rdf:reifies <<( doc:Factsfact5_21 rdfs:label "current measurements"@en )>> ;
+	prov:wasDerivedFrom doc:79bf98ba79f2 .
+doc:Factsfact5_21 rdfs:label "reduced interpretability"@en .
+_:b90ec4ec96543e027ad6c6b65c2eb458 rdf:reifies <<( doc:Factsfact5_21 rdfs:label "reduced interpretability"@en )>> ;
+	prov:wasDerivedFrom doc:79bf98ba79f2 .
+doc:Factsfact5_21 rdfs:label "vibration-based fault diagnosis"@en .
+_:d819cc2006e24547774d88c41210e1fe rdf:reifies <<( doc:Factsfact5_21 rdfs:label "vibration-based fault diagnosis"@en )>> ;
+	prov:wasDerivedFrom doc:79bf98ba79f2 .
+doc:Factsfact5_21 cco:describes doc:Factsitem5_3 .
+_:cdc806d687f8501406a843d561efc751 rdf:reifies <<( doc:Factsfact5_21 cco:describes doc:Factsitem5_3 )>> ;
+	prov:wasDerivedFrom doc:79bf98ba79f2 .
+doc:Factsfact5_21 rdfs:label "accessibility is limited"@en .
+_:f32a9773ff5b32eb88e63bf2c0003b93 rdf:reifies <<( doc:Factsfact5_21 rdfs:label "accessibility is limited"@en )>> ;
+	prov:wasDerivedFrom doc:79bf98ba79f2 .
+doc:Factsfact5_21 rdfs:label "wavelet transforms"@en .
+_:cf3560b8d980122ff030b83f46bc817e rdf:reifies <<( doc:Factsfact5_21 rdfs:label "wavelet transforms"@en )>> ;
+	prov:wasDerivedFrom doc:79bf98ba79f2 .
+doc:Factsfact5_21 rdfs:label "fault diagnosis approaches"@en .
+_:b8e8214f8724cb7ac698466ccaa5b7a5 rdf:reifies <<( doc:Factsfact5_21 rdfs:label "fault diagnosis approaches"@en )>> ;
+	prov:wasDerivedFrom doc:79bf98ba79f2 .
+doc:Factsfact5_21 rdfs:label "pattern-recognition capabilities"@en .
+_:dd806d07aef2e192e5e8fea7f2629d29 rdf:reifies <<( doc:Factsfact5_21 rdfs:label "pattern-recognition capabilities"@en )>> ;
+	prov:wasDerivedFrom doc:79bf98ba79f2 .
+doc:Factsfact5_21 rdfs:label "fault frequencies"@en .
+_:fa9afe317beb6fd3adbe81821686d913 rdf:reifies <<( doc:Factsfact5_21 rdfs:label "fault frequencies"@en )>> ;
+	prov:wasDerivedFrom doc:79bf98ba79f2 .
+doc:Factsfact24_7 a None:Classification .
+_:ae22f387cfc2b7a199f2cc2b61b25526 rdf:reifies <<( doc:Factsfact24_7 rdf:type None:Classification )>> ;
+	prov:wasDerivedFrom doc:79bf98ba79f2 .
+doc:Factsfact5_21 rdfs:label "MCSA"@en .
+_:c8d8701fc71dc573485d2c6d232fbd9c rdf:reifies <<( doc:Factsfact5_21 rdfs:label "MCSA"@en )>> ;
+	prov:wasDerivedFrom doc:79bf98ba79f2 .
+doc:Factsfact5_21 rdfs:label "real-time MCSA pipelines"@en .
+_:f70c76cfbf18405abacdfdb82d753ffb rdf:reifies <<( doc:Factsfact5_21 rdfs:label "real-time MCSA pipelines"@en )>> ;
+	prov:wasDerivedFrom doc:79bf98ba79f2 .
+doc:Factsfact5_21 a None:Classification .
+_:bc0442a85567bcc4fb0f81814250f46 rdf:reifies <<( doc:Factsfact5_21 rdf:type None:Classification )>> ;
+	prov:wasDerivedFrom doc:79bf98ba79f2 .
+doc:Factsfact5_21 rdfs:label "labeling costs"@en .
+_:f4ae71339e074d0ff0c4f18ca25df4be rdf:reifies <<( doc:Factsfact5_21 rdfs:label "labeling costs"@en )>> ;
+	prov:wasDerivedFrom doc:79bf98ba79f2 .
+doc:Factsfact27_7 a None:Model_configuration .
+_:ce7b6e9b5bb2f7dcea5b677519add5d2 rdf:reifies <<( doc:Factsfact27_7 rdf:type None:Model_configuration )>> ;
+	prov:wasDerivedFrom doc:79bf98ba79f2 .
+doc:Factsfact26_11 a cco:DescriptiveInformationContentEntity .
+_:d2d6897f16c99c6a13044a791fc51031 rdf:reifies <<( doc:Factsfact26_11 rdf:type cco:DescriptiveInformationContentEntity )>> ;
+	prov:wasDerivedFrom doc:79bf98ba79f2 .
+doc:Factsfact5_21 rdfs:label "industrial environments"@en .
+_:f5f9b5ab5dc05afc54ed2ee5b0d17c3b rdf:reifies <<( doc:Factsfact5_21 rdfs:label "industrial environments"@en )>> ;
+	prov:wasDerivedFrom doc:79bf98ba79f2 .
+doc:Factsfact26_11 a None:Regression .
+_:a219408e9e1ef612dcce73c56ac4dc60 rdf:reifies <<( doc:Factsfact26_11 rdf:type None:Regression )>> ;
+	prov:wasDerivedFrom doc:79bf98ba79f2 .
+_:b994df484a4f24cc0e6804f684ef53d3 prov:wasDerivedFrom doc:79bf98ba79f2 .
+doc:Factsfact5_21 rdfs:label "low-latency inference pipeline"@en .
+_:f2c5a2b5444ff7a883920cdc90a52bd6 rdf:reifies <<( doc:Factsfact5_21 rdfs:label "low-latency inference pipeline"@en )>> ;
+	prov:wasDerivedFrom doc:79bf98ba79f2 .
+doc:Factsitem5_3 rdfs:label "mechanical systems"@en .
+_:ab025d420cf7ef748573fead898f3f50 rdf:reifies <<( doc:Factsitem5_3 rdfs:label "mechanical systems"@en )>> ;
+	prov:wasDerivedFrom doc:79bf98ba79f2 .
+doc:Factsfact5_21 rdfs:label "Ball Pass Frequency Inner"@en .
+_:b0e3ce74f2fcaf337c6051ecad2cb5a0 rdf:reifies <<( doc:Factsfact5_21 rdfs:label "Ball Pass Frequency Inner"@en )>> ;
+	prov:wasDerivedFrom doc:79bf98ba79f2 .
+doc:Factsfact5_21 rdfs:label "Convolutional Neural Networks"@en .
+_:f7d0260f1a4639a73ee049856e84dc3a rdf:reifies <<( doc:Factsfact5_21 rdfs:label "Convolutional Neural Networks"@en )>> ;
+	prov:wasDerivedFrom doc:79bf98ba79f2 .
+_:b287e2f56344aff79703c8856bd10bf2 prov:wasDerivedFrom doc:79bf98ba79f2 .
+doc:Factsfact5_21 rdfs:label "diagnostic accuracy"@en .
+_:ea62413ed7b6f5d2413f33df5d6d7c4b rdf:reifies <<( doc:Factsfact5_21 rdfs:label "diagnostic accuracy"@en )>> ;
+	prov:wasDerivedFrom doc:79bf98ba79f2 .
+doc:Factsfact5_21 rdfs:label "torque oscillation detection"@en .
+_:e717bddf1d8d0ad5da17f8556befe316 rdf:reifies <<( doc:Factsfact5_21 rdfs:label "torque oscillation detection"@en )>> ;
+	prov:wasDerivedFrom doc:79bf98ba79f2 .
+doc:Factsfact5_21 rdfs:label "dataset size"@en .
+_:ccb3980e3572e8c20eea3c36c58a7a81 rdf:reifies <<( doc:Factsfact5_21 rdfs:label "dataset size"@en )>> ;
+	prov:wasDerivedFrom doc:79bf98ba79f2 .
+doc:Factsfact5_21 rdfs:label "cavitation"@en .
+_:ad5c0940d2428e5fa2668ec6f12a69db rdf:reifies <<( doc:Factsfact5_21 rdfs:label "cavitation"@en )>> ;
+	prov:wasDerivedFrom doc:79bf98ba79f2 .
+doc:Factsfact5_21 rdfs:label "edge monitoring"@en .
+_:fa603a114f9fefb82e77cae0f5d48c8 rdf:reifies <<( doc:Factsfact5_21 rdfs:label "edge monitoring"@en )>> ;
+	prov:wasDerivedFrom doc:79bf98ba79f2 .
+doc:Factsfact5_21 rdfs:label "fault diagnosis"@en .
+_:ea20ec7977ff09ddbd5012e2ba842f58 rdf:reifies <<( doc:Factsfact5_21 rdfs:label "fault diagnosis"@en )>> ;
+	prov:wasDerivedFrom doc:79bf98ba79f2 .
+doc:Factsfact5_21 rdfs:label "explainability"@en .
+_:e527b65e3664b1d3e7af0094b2c3b3b4 rdf:reifies <<( doc:Factsfact5_21 rdfs:label "explainability"@en )>> ;
+	prov:wasDerivedFrom doc:79bf98ba79f2 .
+obo:BFO_0000034 owl:sameAs obo:BFO_0000030 .
+cco:InformationBearingArtifact owl:sameAs cco:InformationProcessingArtifact .

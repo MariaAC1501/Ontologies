@@ -1,0 +1,636 @@
+@prefix None: <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#> .
+@prefix cco: <http://www.ontologyrepository.com/CommonCoreOntologies/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doc: <https://growgraph.dev/doc/686ae6735d60/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix obo: <http://purl.obolibrary.org/obo/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix cd: <https://growgraph.dev/facts> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix schema: <https://schema.org/> .
+doc:b6782f64343f a prov:Entity , schema:text ;
+	prov:generatedAtTime "2026-07-25T06:18:58.759013Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+	schema:position 0 ;
+	schema:identifier "b6782f64343f" .
+doc:FactssvmModel_7 schema:name "IPSO-SVM model" .
+_:acdb65b66daa76ab8f499b3b1c0b77cc rdf:reifies <<( doc:FactssvmModel_7 schema:name "IPSO-SVM model" )>> ;
+	prov:wasDerivedFrom doc:b6782f64343f .
+doc:FactsInputData schema:name "pressure" .
+_:f0a20ca8c6a639a199ba63b4a1bb9e5f rdf:reifies <<( doc:FactsInputData schema:name "pressure" )>> ;
+	prov:wasDerivedFrom doc:b6782f64343f .
+doc:FactspsoSvmPredictionAccuracy schema:value "85"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+_:f4fb921637567d98c4471ab42c4611ba rdf:reifies <<( doc:FactspsoSvmPredictionAccuracy schema:value "85"^^<http://www.w3.org/2001/XMLSchema#decimal> )>> ;
+	prov:wasDerivedFrom doc:b6782f64343f .
+doc:FactsipsoMethod schema:name "particle swarm optimization algorithm" .
+_:a4643c546bfb2438f659200b72b290f1 rdf:reifies <<( doc:FactsipsoMethod schema:name "particle swarm optimization algorithm" )>> ;
+	prov:wasDerivedFrom doc:b6782f64343f .
+doc:Factsarticle_105 schema:mentions doc:FactsipsoMethod .
+_:bd9b4b2411f4c5adff8c5f701ebd401b rdf:reifies <<( doc:Factsarticle_105 schema:mentions doc:FactsipsoMethod )>> ;
+	prov:wasDerivedFrom doc:b6782f64343f .
+doc:FactssvmModel_7 a None:Predictive_maintenance_model .
+_:abcb466f695a7f7145cb12aeef7d9254 rdf:reifies <<( doc:FactssvmModel_7 rdf:type None:Predictive_maintenance_model )>> ;
+	prov:wasDerivedFrom doc:b6782f64343f .
+doc:FactspsoSvmPredictionAccuracy a None:Performance_value .
+_:ebbcdb9b48dac9b176d807a338d4418e rdf:reifies <<( doc:FactspsoSvmPredictionAccuracy rdf:type None:Performance_value )>> ;
+	prov:wasDerivedFrom doc:b6782f64343f .
+doc:FactsfaultDetectionFunction_68 schema:name "fault prediction" .
+_:b15013c9f437b6e12ed68e8d36fefaff rdf:reifies <<( doc:FactsfaultDetectionFunction_68 schema:name "fault prediction" )>> ;
+	prov:wasDerivedFrom doc:b6782f64343f .
+doc:FactsauthorLi_1 schema:affiliation doc:FactsnorthUniversityOfChina_1 .
+_:cf9c7bc53c7205171f92f2bd8a8f8d39 rdf:reifies <<( doc:FactsauthorLi_1 schema:affiliation doc:FactsnorthUniversityOfChina_1 )>> ;
+	prov:wasDerivedFrom doc:b6782f64343f .
+doc:Factsarticle_105 schema:author doc:FactsauthorLi_1 .
+_:cc691e36c5b059af3d9403f56c4d6aa1 rdf:reifies <<( doc:Factsarticle_105 schema:author doc:FactsauthorLi_1 )>> ;
+	prov:wasDerivedFrom doc:b6782f64343f .
+doc:FactssvmModel_7 schema:measurementTechnique "IPSO-SVM" .
+_:abb72a83f49aaff97e2f9c603ccce029 rdf:reifies <<( doc:FactssvmModel_7 schema:measurementTechnique "IPSO-SVM" )>> ;
+	prov:wasDerivedFrom doc:b6782f64343f .
+doc:FactsauthorLi_1 schema:email "dingyonghong@nuc.edu.cn" .
+_:cdc32a46129be50d09b78dd52574c66f rdf:reifies <<( doc:FactsauthorLi_1 schema:email "dingyonghong@nuc.edu.cn" )>> ;
+	prov:wasDerivedFrom doc:b6782f64343f .
+doc:FactsauthorLi_1 a schema:Person .
+_:a68610011a0b78391eb14091881d047c rdf:reifies <<( doc:FactsauthorLi_1 rdf:type schema:Person )>> ;
+	prov:wasDerivedFrom doc:b6782f64343f .
+doc:FactsnorthUniversityOfChina_1 schema:name "North University of China" .
+_:aff057e32e0b828eb14504b8904f0f1a rdf:reifies <<( doc:FactsnorthUniversityOfChina_1 schema:name "North University of China" )>> ;
+	prov:wasDerivedFrom doc:b6782f64343f .
+doc:FactsschoolElectricalControlEngineering a schema:Organization .
+_:c5dfb1dd4bb2e89493d83ce03782b832 rdf:reifies <<( doc:FactsschoolElectricalControlEngineering rdf:type schema:Organization )>> ;
+	prov:wasDerivedFrom doc:b6782f64343f .
+doc:FactsipsoMethod schema:name "improved particle swarm optimization algorithm" .
+_:beab40736305882acd3839d6c0ecaf1b rdf:reifies <<( doc:FactsipsoMethod schema:name "improved particle swarm optimization algorithm" )>> ;
+	prov:wasDerivedFrom doc:b6782f64343f .
+doc:FactssmallSampleCondition a schema:Thing .
+_:a887108730861ef8b680b08cc94bc108 rdf:reifies <<( doc:FactssmallSampleCondition rdf:type schema:Thing )>> ;
+	prov:wasDerivedFrom doc:b6782f64343f .
+doc:FactsnationalKeyLaboratoryElectronicTestTechnology a schema:Organization .
+_:e6fea7acf24227642656985a5a1724ff rdf:reifies <<( doc:FactsnationalKeyLaboratoryElectronicTestTechnology rdf:type schema:Organization )>> ;
+	prov:wasDerivedFrom doc:b6782f64343f .
+doc:FactssvmModel_7 schema:condition doc:FactssmallSampleCondition .
+_:db9d103721ad5ae2595c8002c1ef53fb rdf:reifies <<( doc:FactssvmModel_7 schema:condition doc:FactssmallSampleCondition )>> ;
+	prov:wasDerivedFrom doc:b6782f64343f .
+doc:FactsInputData a None:Data_variable .
+_:bec4b94a19e73cdf3541d37273e49867 rdf:reifies <<( doc:FactsInputData rdf:type None:Data_variable )>> ;
+	prov:wasDerivedFrom doc:b6782f64343f .
+doc:FactssvmModel_7 schema:crossValidation "5-fold cross-validation" .
+_:e76fa5b6d50b02c24e4ef5fd455f078 rdf:reifies <<( doc:FactssvmModel_7 schema:crossValidation "5-fold cross-validation" )>> ;
+	prov:wasDerivedFrom doc:b6782f64343f .
+doc:Factsarticle_105 schema:mentions doc:FactsInputData .
+_:f3756dd4b6bcfd4a0269fffb5be2fb9c rdf:reifies <<( doc:Factsarticle_105 schema:mentions doc:FactsInputData )>> ;
+	prov:wasDerivedFrom doc:b6782f64343f .
+doc:FactsarticleTitle_130 a None:Article_title .
+_:b28efd02995afa253116ccfe158bdccc rdf:reifies <<( doc:FactsarticleTitle_130 rdf:type None:Article_title )>> ;
+	prov:wasDerivedFrom doc:b6782f64343f .
+doc:FactsauthorLi_1 schema:name "Wenbin You" .
+_:db762060acdde3be142b6f4c3293d15d rdf:reifies <<( doc:FactsauthorLi_1 schema:name "Wenbin You" )>> ;
+	prov:wasDerivedFrom doc:b6782f64343f .
+doc:FactsnationalKeyLaboratoryElectronicTestTechnology schema:name "The National Key Laboratory of Electronic Test Technology" .
+_:f5f2ed076b2e61ae7ca8ce29307357e4 rdf:reifies <<( doc:FactsnationalKeyLaboratoryElectronicTestTechnology schema:name "The National Key Laboratory of Electronic Test Technology" )>> ;
+	prov:wasDerivedFrom doc:b6782f64343f .
+doc:FactsnorthUniversityOfChina_1 a schema:Organization .
+_:cde815985037639f52d2f44fe8e22ee7 rdf:reifies <<( doc:FactsnorthUniversityOfChina_1 rdf:type schema:Organization )>> ;
+	prov:wasDerivedFrom doc:b6782f64343f .
+doc:Factsarticle_105 schema:mentions doc:FactshighImpactRecorder .
+_:d16addd7e06a6c5377dc57ac1092cab8 rdf:reifies <<( doc:Factsarticle_105 schema:mentions doc:FactshighImpactRecorder )>> ;
+	prov:wasDerivedFrom doc:b6782f64343f .
+doc:Factsarticle_105 schema:mentions doc:FactssvmModel_7 .
+_:b28f66989e74fe1446d620e359074fcd rdf:reifies <<( doc:Factsarticle_105 schema:mentions doc:FactssvmModel_7 )>> ;
+	prov:wasDerivedFrom doc:b6782f64343f .
+doc:FactssvmModel_7 schema:measurementTechnique "support vector machine" .
+_:c4093584a4e82cba028a99c78e66341d rdf:reifies <<( doc:FactssvmModel_7 schema:measurementTechnique "support vector machine" )>> ;
+	prov:wasDerivedFrom doc:b6782f64343f .
+doc:FactsInputData schema:name "acceleration" .
+_:b0cf7c4a1ff6795763d0d097ee49f866 rdf:reifies <<( doc:FactsInputData schema:name "acceleration" )>> ;
+	prov:wasDerivedFrom doc:b6782f64343f .
+doc:FactsipsoMethod a cco:Algorithm .
+_:fb3eb69482c2c7bcdc7ea31127ffa452 rdf:reifies <<( doc:FactsipsoMethod rdf:type cco:Algorithm )>> ;
+	prov:wasDerivedFrom doc:b6782f64343f .
+doc:FactsauthorLi_1 schema:name "Yonghong Ding" .
+_:f65ada8170239eed2abec3302c1cae00 rdf:reifies <<( doc:FactsauthorLi_1 schema:name "Yonghong Ding" )>> ;
+	prov:wasDerivedFrom doc:b6782f64343f .
+doc:FactspsoSvmPredictionAccuracy schema:about doc:FactssvmModel_7 .
+_:b9d510bf79fcfb2650ba6c7f252e0101 rdf:reifies <<( doc:FactspsoSvmPredictionAccuracy schema:about doc:FactssvmModel_7 )>> ;
+	prov:wasDerivedFrom doc:b6782f64343f .
+doc:FactssvmModel_7 schema:name "support vector machine model" .
+_:c2b9ab0c62da0871840922d54fa8e866 rdf:reifies <<( doc:FactssvmModel_7 schema:name "support vector machine model" )>> ;
+	prov:wasDerivedFrom doc:b6782f64343f .
+doc:FactsauthorLi_1 schema:name "Linyu Li" .
+_:bc7fac4843589d740f342b32b8148107 rdf:reifies <<( doc:FactsauthorLi_1 schema:name "Linyu Li" )>> ;
+	prov:wasDerivedFrom doc:b6782f64343f .
+doc:FactspsoSvmPredictionAccuracy schema:unitText "%" .
+_:aef5b0a796475edd677c01b8d608cd6f rdf:reifies <<( doc:FactspsoSvmPredictionAccuracy schema:unitText "%" )>> ;
+	prov:wasDerivedFrom doc:b6782f64343f .
+doc:Factsarticle_105 a schema:ScholarlyArticle .
+_:ff7b1ab7bfa29eb887dd345a274c3729 rdf:reifies <<( doc:Factsarticle_105 rdf:type schema:ScholarlyArticle )>> ;
+	prov:wasDerivedFrom doc:b6782f64343f .
+doc:FactspsoSvmPredictionAccuracy schema:value 90.5 .
+_:b1b8fb97e5d89354b7ed4b1bd6b69e7b rdf:reifies <<( doc:FactspsoSvmPredictionAccuracy schema:value 90.5 )>> ;
+	prov:wasDerivedFrom doc:b6782f64343f .
+doc:FactsInputData schema:name "angular velocity" .
+_:e440f378f5bf6cc2381d1984da6c742a rdf:reifies <<( doc:FactsInputData schema:name "angular velocity" )>> ;
+	prov:wasDerivedFrom doc:b6782f64343f .
+doc:FactshighImpactRecorder a None:Maintainable_item .
+_:a1c05e514604ca83791fc56b31fe0707 rdf:reifies <<( doc:FactshighImpactRecorder rdf:type None:Maintainable_item )>> ;
+	prov:wasDerivedFrom doc:b6782f64343f .
+doc:FactssvmModel_7 schema:name "backpropagation neural network" .
+_:d36a6857a18e60dfc863ef17bd3647ab rdf:reifies <<( doc:FactssvmModel_7 schema:name "backpropagation neural network" )>> ;
+	prov:wasDerivedFrom doc:b6782f64343f .
+doc:FactshighImpactRecorder schema:name "high-impact recorder" .
+_:c2cf5e7d4aaa8f44f8b7c65cffb9ef95 rdf:reifies <<( doc:FactshighImpactRecorder schema:name "high-impact recorder" )>> ;
+	prov:wasDerivedFrom doc:b6782f64343f .
+doc:Factsarticle_105 a None:Predictive_Maintenance_Article .
+_:d1599210d38b66e0738853002ec3355c rdf:reifies <<( doc:Factsarticle_105 rdf:type None:Predictive_Maintenance_Article )>> ;
+	prov:wasDerivedFrom doc:b6782f64343f .
+doc:FactssvmModel_7 schema:accuracyImprovement 5.5 .
+_:c431d2c66eb54cedb200841d45a7fbaf rdf:reifies <<( doc:FactssvmModel_7 schema:accuracyImprovement 5.5 )>> ;
+	prov:wasDerivedFrom doc:b6782f64343f .
+doc:FactssvmModel_7 cco:is_about doc:FactshighImpactRecorder .
+_:c7ee8cc9c84672fe3e839325ca460d03 rdf:reifies <<( doc:FactssvmModel_7 cco:is_about doc:FactshighImpactRecorder )>> ;
+	prov:wasDerivedFrom doc:b6782f64343f .
+doc:Factsarticle_105 None:has_title doc:FactsarticleTitle_130 .
+_:e8d01fa6d2eab57619b05958a90714b1 rdf:reifies <<( doc:Factsarticle_105 None:has_title doc:FactsarticleTitle_130 )>> ;
+	prov:wasDerivedFrom doc:b6782f64343f .
+doc:FactsschoolElectricalControlEngineering schema:parentOrganization doc:FactsnorthUniversityOfChina_1 .
+_:f33abfb622052419828e60c03abf7e93 rdf:reifies <<( doc:FactsschoolElectricalControlEngineering schema:parentOrganization doc:FactsnorthUniversityOfChina_1 )>> ;
+	prov:wasDerivedFrom doc:b6782f64343f .
+doc:FactsauthorLi_1 schema:email "youwenbin@nuc.edu.cn" .
+_:f9670028ce9bff142602ccc63f2781ff rdf:reifies <<( doc:FactsauthorLi_1 schema:email "youwenbin@nuc.edu.cn" )>> ;
+	prov:wasDerivedFrom doc:b6782f64343f .
+doc:FactssmallSampleCondition schema:name "small-sample conditions" .
+_:bfe0f82e9b33753af84dda0a30881304 rdf:reifies <<( doc:FactssmallSampleCondition schema:name "small-sample conditions" )>> ;
+	prov:wasDerivedFrom doc:b6782f64343f .
+doc:FactsarticleTitle_130 None:has_text_value "Fault Prediction Modeling for High-Impact Recorders Based on IPSO-SVM" .
+_:ed2ed8928e7af1af81c740fb5a930b18 rdf:reifies <<( doc:FactsarticleTitle_130 None:has_text_value "Fault Prediction Modeling for High-Impact Recorders Based on IPSO-SVM" )>> ;
+	prov:wasDerivedFrom doc:b6782f64343f .
+doc:FactsschoolElectricalControlEngineering schema:name "School of Electrical and Control Engineering" .
+_:a3cb47e39e0b876df1df99961812a2dc rdf:reifies <<( doc:FactsschoolElectricalControlEngineering schema:name "School of Electrical and Control Engineering" )>> ;
+	prov:wasDerivedFrom doc:b6782f64343f .
+doc:FactssvmModel_7 schema:accuracy 90.5 .
+_:fd75c7c32d6c42171294f0d56a4382af rdf:reifies <<( doc:FactssvmModel_7 schema:accuracy 90.5 )>> ;
+	prov:wasDerivedFrom doc:b6782f64343f .
+doc:FactsfaultDetectionFunction_68 a None:Fault_detection .
+_:de8fbec2841ac20e915cd18b329ce6a8 rdf:reifies <<( doc:FactsfaultDetectionFunction_68 rdf:type None:Fault_detection )>> ;
+	prov:wasDerivedFrom doc:b6782f64343f .
+doc:FactsnationalKeyLaboratoryElectronicTestTechnology schema:parentOrganization doc:FactsnorthUniversityOfChina_1 .
+_:c13d2936f63055ceb669761d0c1e901b rdf:reifies <<( doc:FactsnationalKeyLaboratoryElectronicTestTechnology schema:parentOrganization doc:FactsnorthUniversityOfChina_1 )>> ;
+	prov:wasDerivedFrom doc:b6782f64343f .
+doc:FactspsoSvmPredictionAccuracy schema:about doc:FactsipsoMethod .
+_:c355e41b77b96e8d8d492c4df89ae76b rdf:reifies <<( doc:FactspsoSvmPredictionAccuracy schema:about doc:FactsipsoMethod )>> ;
+	prov:wasDerivedFrom doc:b6782f64343f .
+doc:aa7767b23e99 a prov:Entity , schema:text ;
+	prov:generatedAtTime "2026-07-25T06:18:58.763013Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+	schema:position 1 ;
+	schema:identifier "aa7767b23e99" .
+doc:FactsarticleTitle_130 <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD/seed#has_text_value> "Fault Prediction Modeling for High-Impact Recorders Based on IPSO-SVM" .
+_:a0a1a7769812b47c30a23d29e4c94a21 rdf:reifies <<( doc:FactsarticleTitle_130 <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD/seed#has_text_value> "Fault Prediction Modeling for High-Impact Recorders Based on IPSO-SVM" )>> ;
+	prov:wasDerivedFrom doc:aa7767b23e99 .
+_:a68610011a0b78391eb14091881d047c prov:wasDerivedFrom doc:aa7767b23e99 .
+doc:FactssvmModel_7 schema:description "A support vector machine model used for fault prediction and diagnosis." .
+_:da5883c6d549bb125cbf2f8d966403bb rdf:reifies <<( doc:FactssvmModel_7 schema:description "A support vector machine model used for fault prediction and diagnosis." )>> ;
+	prov:wasDerivedFrom doc:aa7767b23e99 .
+doc:FactsipsoMethod schema:name "Whale Optimization Algorithm (WOA)" .
+_:aadda39f298f28eb865eeff48bc0e0e rdf:reifies <<( doc:FactsipsoMethod schema:name "Whale Optimization Algorithm (WOA)" )>> ;
+	prov:wasDerivedFrom doc:aa7767b23e99 .
+doc:FactssvmModel_7 cco:has_function doc:FactsfaultDetectionFunction_68 .
+_:ec49c9d0129a43fbf8012665e76705b2 rdf:reifies <<( doc:FactssvmModel_7 cco:has_function doc:FactsfaultDetectionFunction_68 )>> ;
+	prov:wasDerivedFrom doc:aa7767b23e99 .
+doc:Factsarticle_105 schema:dateReceived "2024-12-11"^^<http://www.w3.org/2001/XMLSchema#date> .
+_:a5db01585135eb4d11e1c8fc8e6324c6 rdf:reifies <<( doc:Factsarticle_105 schema:dateReceived "2024-12-11"^^<http://www.w3.org/2001/XMLSchema#date> )>> ;
+	prov:wasDerivedFrom doc:aa7767b23e99 .
+doc:FactsclassificationFunction_47 a None:Classification .
+_:e2fce8789f68c7d8fbfe438db0bd9543 rdf:reifies <<( doc:FactsclassificationFunction_47 rdf:type None:Classification )>> ;
+	prov:wasDerivedFrom doc:aa7767b23e99 .
+doc:FactshighImpactRecorder a schema:Product .
+_:f39ae14d05d3574c46f580603ccc5911 rdf:reifies <<( doc:FactshighImpactRecorder rdf:type schema:Product )>> ;
+	prov:wasDerivedFrom doc:aa7767b23e99 .
+_:de8fbec2841ac20e915cd18b329ce6a8 prov:wasDerivedFrom doc:aa7767b23e99 .
+doc:FactssvmModel_7 schema:name "IPSO-SVM" .
+_:fd35b1be7a35d65e57e2d81d24c0a344 rdf:reifies <<( doc:FactssvmModel_7 schema:name "IPSO-SVM" )>> ;
+	prov:wasDerivedFrom doc:aa7767b23e99 .
+_:c7ee8cc9c84672fe3e839325ca460d03 prov:wasDerivedFrom doc:aa7767b23e99 .
+doc:FactsipsoMethod schema:name "neural network" .
+_:a0d4f61845ccc3defd001e345933ede0 rdf:reifies <<( doc:FactsipsoMethod schema:name "neural network" )>> ;
+	prov:wasDerivedFrom doc:aa7767b23e99 .
+_:b3a08b1db081740e75ca8a22da35316e rdf:reifies <<( doc:FactssmallSampleCondition schema:name "small-sample conditions" )>> ;
+	prov:wasDerivedFrom doc:aa7767b23e99 .
+doc:FactsipsoMethod cco:is_about doc:FactssvmModel_7 .
+_:f9e4459dd197beeac71e3de9df29a8ed rdf:reifies <<( doc:FactsipsoMethod cco:is_about doc:FactssvmModel_7 )>> ;
+	prov:wasDerivedFrom doc:aa7767b23e99 .
+doc:Factsarticle_105 schema:dateModified "2025-01-24"^^<http://www.w3.org/2001/XMLSchema#date> .
+_:fbb555507c76109b40127a5ac9eb955b rdf:reifies <<( doc:Factsarticle_105 schema:dateModified "2025-01-24"^^<http://www.w3.org/2001/XMLSchema#date> )>> ;
+	prov:wasDerivedFrom doc:aa7767b23e99 .
+doc:FactshighImpactRecorder schema:description "A recorder considered for fault prediction under small-sample conditions." .
+_:baf8b910e49855b8fe073edd5b99f8b4 rdf:reifies <<( doc:FactshighImpactRecorder schema:description "A recorder considered for fault prediction under small-sample conditions." )>> ;
+	prov:wasDerivedFrom doc:aa7767b23e99 .
+_:fb3eb69482c2c7bcdc7ea31127ffa452 prov:wasDerivedFrom doc:aa7767b23e99 .
+_:cc691e36c5b059af3d9403f56c4d6aa1 prov:wasDerivedFrom doc:aa7767b23e99 .
+doc:FactspublicationYear_103 <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD/seed#has_interger_value> 2025 .
+_:c27d54e4a34cfb5fe309cde952b50d2e rdf:reifies <<( doc:FactspublicationYear_103 <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD/seed#has_interger_value> 2025 )>> ;
+	prov:wasDerivedFrom doc:aa7767b23e99 .
+doc:FactsauthorLi_1 schema:givenName "W." .
+_:f0e57b6561bfbaae652ffc91e7c32a1b rdf:reifies <<( doc:FactsauthorLi_1 schema:givenName "W." )>> ;
+	prov:wasDerivedFrom doc:aa7767b23e99 .
+doc:FactssvmModel_7 schema:description "An improved particle swarm optimization support vector machine model for fault prediction of high-impact recorders." .
+_:cfe179c23a7a1604d107417dbd6b9b98 rdf:reifies <<( doc:FactssvmModel_7 schema:description "An improved particle swarm optimization support vector machine model for fault prediction of high-impact recorders." )>> ;
+	prov:wasDerivedFrom doc:aa7767b23e99 .
+doc:Factsarticle_105 cco:is_about doc:FactshighImpactRecorder .
+_:b7fc74b126aef41ffe39b374a730a15d rdf:reifies <<( doc:Factsarticle_105 cco:is_about doc:FactshighImpactRecorder )>> ;
+	prov:wasDerivedFrom doc:aa7767b23e99 .
+_:a8ac2db1c0d4429579129076468fc384 rdf:reifies <<( doc:FactsfaultDetectionFunction_68 schema:name "fault prediction" )>> ;
+	prov:wasDerivedFrom doc:aa7767b23e99 .
+doc:FactsipsoMethod schema:name "YUKI algorithm" .
+_:cf806b8608f666ce7621f6b0b0b1c4a8 rdf:reifies <<( doc:FactsipsoMethod schema:name "YUKI algorithm" )>> ;
+	prov:wasDerivedFrom doc:aa7767b23e99 .
+_:b28efd02995afa253116ccfe158bdccc prov:wasDerivedFrom doc:aa7767b23e99 .
+_:abcb466f695a7f7145cb12aeef7d9254 prov:wasDerivedFrom doc:aa7767b23e99 .
+doc:Factsarticle_105 schema:license <https://creativecommons.org/licenses/by/4.0/> .
+_:c05e6b40a2462d035b9b3062f4a47790 rdf:reifies <<( doc:Factsarticle_105 schema:license <https://creativecommons.org/licenses/by/4.0/> )>> ;
+	prov:wasDerivedFrom doc:aa7767b23e99 .
+_:a1c05e514604ca83791fc56b31fe0707 prov:wasDerivedFrom doc:aa7767b23e99 .
+doc:FactssmallSampleCondition a schema:Condition .
+_:f0f63c31b8fbd846e00e242e21d3172d rdf:reifies <<( doc:FactssmallSampleCondition rdf:type schema:Condition )>> ;
+	prov:wasDerivedFrom doc:aa7767b23e99 .
+doc:FactsdoiIdentifier_44 schema:value "10.3390/app15031343" .
+_:de2ba5a233d7cfd1c9325c023f69a86a rdf:reifies <<( doc:FactsdoiIdentifier_44 schema:value "10.3390/app15031343" )>> ;
+	prov:wasDerivedFrom doc:aa7767b23e99 .
+doc:FactssvmModel_7 schema:name "SVM" .
+_:c0791c4ad3b765fb61d09800487935f3 rdf:reifies <<( doc:FactssvmModel_7 schema:name "SVM" )>> ;
+	prov:wasDerivedFrom doc:aa7767b23e99 .
+doc:Factsarticle_105 cco:is_about doc:FactsipsoMethod .
+_:bdbcd93ea66b6983e229c1aee0660403 rdf:reifies <<( doc:Factsarticle_105 cco:is_about doc:FactsipsoMethod )>> ;
+	prov:wasDerivedFrom doc:aa7767b23e99 .
+doc:FactsipsoMethod schema:description "A model family reported to perform well in fault prediction but requiring large amounts of high-quality data." .
+_:a0afa070a4183a038c306eeaa01b9c75 rdf:reifies <<( doc:FactsipsoMethod schema:description "A model family reported to perform well in fault prediction but requiring large amounts of high-quality data." )>> ;
+	prov:wasDerivedFrom doc:aa7767b23e99 .
+doc:Factsarticle_105 <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD/seed#has_identifier> doc:FactsdoiIdentifier_44 .
+_:c8e25260900d66a6a012d7bc89707a7c rdf:reifies <<( doc:Factsarticle_105 <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD/seed#has_identifier> doc:FactsdoiIdentifier_44 )>> ;
+	prov:wasDerivedFrom doc:aa7767b23e99 .
+_:e2ce51a515dd565b0576ec40548c3b57 rdf:reifies <<( doc:FactshighImpactRecorder schema:name "high-impact recorder" )>> ;
+	prov:wasDerivedFrom doc:aa7767b23e99 .
+doc:FactsauthorLi_1 schema:givenName "Y." .
+_:d0961b221ffc047b5d4770a4d77297d2 rdf:reifies <<( doc:FactsauthorLi_1 schema:givenName "Y." )>> ;
+	prov:wasDerivedFrom doc:aa7767b23e99 .
+doc:FactssvmModel_7 a cco:Algorithm .
+_:ab1b10a2e0875b753c774e68a4a70c8 rdf:reifies <<( doc:FactssvmModel_7 rdf:type cco:Algorithm )>> ;
+	prov:wasDerivedFrom doc:aa7767b23e99 .
+_:ff7b1ab7bfa29eb887dd345a274c3729 prov:wasDerivedFrom doc:aa7767b23e99 .
+doc:FactsipsoMethod schema:name "improved particle swarm optimization" .
+_:c168652c81517a4484602427f754736f rdf:reifies <<( doc:FactsipsoMethod schema:name "improved particle swarm optimization" )>> ;
+	prov:wasDerivedFrom doc:aa7767b23e99 .
+doc:FactsipsoMethod schema:description "An improved PSO method proposed to address premature convergence and local optima in SVM parameter optimization." .
+_:c9ff810cd52ef88af3916fef8a026d13 rdf:reifies <<( doc:FactsipsoMethod schema:description "An improved PSO method proposed to address premature convergence and local optima in SVM parameter optimization." )>> ;
+	prov:wasDerivedFrom doc:aa7767b23e99 .
+doc:FactsipsoMethod schema:description "A function optimizer used to determine SVM penalty and kernel parameters." .
+_:fce019bc81d2c6f6d86e94bf3f2c9c4f rdf:reifies <<( doc:FactsipsoMethod schema:description "A function optimizer used to determine SVM penalty and kernel parameters." )>> ;
+	prov:wasDerivedFrom doc:aa7767b23e99 .
+doc:FactsfaultDetectionFunction_68 schema:description "Searching for faults by assessing maintainable item parameters." .
+_:ffb8eb6178eb4f75b8fe7291c9b81c1 rdf:reifies <<( doc:FactsfaultDetectionFunction_68 schema:description "Searching for faults by assessing maintainable item parameters." )>> ;
+	prov:wasDerivedFrom doc:aa7767b23e99 .
+doc:Factsarticle_105 a None:Predictive_maintenance_model .
+_:a36f984a6f086acce8c72a694389cd4c rdf:reifies <<( doc:Factsarticle_105 rdf:type None:Predictive_maintenance_model )>> ;
+	prov:wasDerivedFrom doc:aa7767b23e99 .
+doc:Factsarticle_105 schema:datePublished "2025-01-27"^^<http://www.w3.org/2001/XMLSchema#date> .
+_:d48d650a7a71d269b9faa4b113f12c38 rdf:reifies <<( doc:Factsarticle_105 schema:datePublished "2025-01-27"^^<http://www.w3.org/2001/XMLSchema#date> )>> ;
+	prov:wasDerivedFrom doc:aa7767b23e99 .
+doc:FactsauthorLi_1 schema:familyName "Li" .
+_:b47fe05a9bba54f26d27d1c8d27b441c rdf:reifies <<( doc:FactsauthorLi_1 schema:familyName "Li" )>> ;
+	prov:wasDerivedFrom doc:aa7767b23e99 .
+doc:FactssmallSampleCondition schema:description "A condition involving limited high-quality training data." .
+_:f4b6ee7fd4b8d7e1a670fe6f83618113 rdf:reifies <<( doc:FactssmallSampleCondition schema:description "A condition involving limited high-quality training data." )>> ;
+	prov:wasDerivedFrom doc:aa7767b23e99 .
+doc:Factsarticle_105 cco:is_about doc:FactssmallSampleCondition .
+_:a27e79cac932043e0fdc7d4bbfd0fac3 rdf:reifies <<( doc:Factsarticle_105 cco:is_about doc:FactssmallSampleCondition )>> ;
+	prov:wasDerivedFrom doc:aa7767b23e99 .
+doc:Factsarticle_105 schema:dateAccepted "2025-01-25"^^<http://www.w3.org/2001/XMLSchema#date> .
+_:f61393892383e30b5aa5e090c771bc58 rdf:reifies <<( doc:Factsarticle_105 schema:dateAccepted "2025-01-25"^^<http://www.w3.org/2001/XMLSchema#date> )>> ;
+	prov:wasDerivedFrom doc:aa7767b23e99 .
+doc:Factsarticle_105 schema:citation "Li, L.; You, W.; Ding, Y. Fault Prediction Modeling for High-Impact Recorders Based on IPSO-SVM. Applied Sciences 2025, 15, 1343." .
+_:c1171bfcaebd2735350680c001f707ab rdf:reifies <<( doc:Factsarticle_105 schema:citation "Li, L.; You, W.; Ding, Y. Fault Prediction Modeling for High-Impact Recorders Based on IPSO-SVM. Applied Sciences 2025, 15, 1343." )>> ;
+	prov:wasDerivedFrom doc:aa7767b23e99 .
+doc:Factsarticle_105 <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD/seed#has_publication_year> doc:FactspublicationYear_103 .
+_:ca02b3cc53979fd39e1365bd9c317510 rdf:reifies <<( doc:Factsarticle_105 <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD/seed#has_publication_year> doc:FactspublicationYear_103 )>> ;
+	prov:wasDerivedFrom doc:aa7767b23e99 .
+doc:FactsauthorLi_1 schema:familyName "Ding" .
+_:ffffbf6bda8e004fb735693202f702a1 rdf:reifies <<( doc:FactsauthorLi_1 schema:familyName "Ding" )>> ;
+	prov:wasDerivedFrom doc:aa7767b23e99 .
+doc:FactsauthorLi_1 schema:givenName "L." .
+_:fb34a5c456c48a951102a35ff9dd3f59 rdf:reifies <<( doc:FactsauthorLi_1 schema:givenName "L." )>> ;
+	prov:wasDerivedFrom doc:aa7767b23e99 .
+doc:FactssvmModel_7 cco:has_function doc:FactsclassificationFunction_47 .
+_:e46bd9e663ebccee452613a56f471d0 rdf:reifies <<( doc:FactssvmModel_7 cco:has_function doc:FactsclassificationFunction_47 )>> ;
+	prov:wasDerivedFrom doc:aa7767b23e99 .
+doc:FactsauthorLi_1 schema:familyName "You" .
+_:b7af890d32753229dda63a9c7018732d rdf:reifies <<( doc:FactsauthorLi_1 schema:familyName "You" )>> ;
+	prov:wasDerivedFrom doc:aa7767b23e99 .
+doc:FactspublicationYear_103 a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD/seed#Publication_year> .
+_:d74d2e2a6d384c85f948d43ef2fab712 rdf:reifies <<( doc:FactspublicationYear_103 rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD/seed#Publication_year> )>> ;
+	prov:wasDerivedFrom doc:aa7767b23e99 .
+doc:FactsdoiIdentifier_44 a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD/seed#Article_identifier> .
+_:d7d612815bdb53c0e192f72ada792c83 rdf:reifies <<( doc:FactsdoiIdentifier_44 rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD/seed#Article_identifier> )>> ;
+	prov:wasDerivedFrom doc:aa7767b23e99 .
+doc:FactsipsoMethod schema:name "particle swarm optimization (PSO)" .
+_:d6cce94cebc434681e26f33125c4330b rdf:reifies <<( doc:FactsipsoMethod schema:name "particle swarm optimization (PSO)" )>> ;
+	prov:wasDerivedFrom doc:aa7767b23e99 .
+doc:FactsdoiIdentifier_44 schema:propertyID "DOI" .
+_:a421836d6dd7e6e0320c57d35eefb740 rdf:reifies <<( doc:FactsdoiIdentifier_44 schema:propertyID "DOI" )>> ;
+	prov:wasDerivedFrom doc:aa7767b23e99 .
+doc:FactsclassificationFunction_47 schema:name "classification" .
+_:beab1fc9de7d2e9d7729fe60f0a1c26a rdf:reifies <<( doc:FactsclassificationFunction_47 schema:name "classification" )>> ;
+	prov:wasDerivedFrom doc:aa7767b23e99 .
+doc:Factsarticle_105 <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD/seed#has_title> doc:FactsarticleTitle_130 .
+_:d7ab7f01b669b2b87bfd8df0c56fbbf2 rdf:reifies <<( doc:Factsarticle_105 <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD/seed#has_title> doc:FactsarticleTitle_130 )>> ;
+	prov:wasDerivedFrom doc:aa7767b23e99 .
+doc:Factsarticle_105 cco:is_about doc:FactssvmModel_7 .
+_:a7ebecc378d87d90bdadba2d3c6ede9 rdf:reifies <<( doc:Factsarticle_105 cco:is_about doc:FactssvmModel_7 )>> ;
+	prov:wasDerivedFrom doc:aa7767b23e99 .
+doc:f7cf3995ab19 a prov:Entity , schema:text ;
+	prov:generatedAtTime "2026-07-25T06:18:58.765012Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+	schema:position 2 ;
+	schema:identifier "f7cf3995ab19" .
+doc:FactsTestDataset a schema:ResearchProject .
+_:da59f670095f77a78a7d9ee4ae26ad42 rdf:reifies <<( doc:FactsTestDataset rdf:type schema:ResearchProject )>> ;
+	prov:wasDerivedFrom doc:f7cf3995ab19 .
+doc:factsmapsTo a owl:ObjectProperty .
+_:f8656db0b4a5cc9f4c31a3184783cb55 rdf:reifies <<( doc:factsmapsTo rdf:type owl:ObjectProperty )>> ;
+	prov:wasDerivedFrom doc:f7cf3995ab19 .
+doc:FactsTestDataset doc:factsmapsTo doc:FactsTestDataset .
+_:cc9beb163b5ae9a36c548f494e74bb24 rdf:reifies <<( doc:FactsTestDataset doc:factsmapsTo doc:FactsTestDataset )>> ;
+	prov:wasDerivedFrom doc:f7cf3995ab19 .
+doc:FactsImpactExperiment a schema:ResearchProject .
+_:c5b48ebb6ccf0fbed0876ede8f4e3a4 rdf:reifies <<( doc:FactsImpactExperiment rdf:type schema:ResearchProject )>> ;
+	prov:wasDerivedFrom doc:f7cf3995ab19 .
+doc:FactsSvmClassificationFunction a None:Classification .
+_:df115d05ef12996b7e1f384aa9ee2918 rdf:reifies <<( doc:FactsSvmClassificationFunction rdf:type None:Classification )>> ;
+	prov:wasDerivedFrom doc:f7cf3995ab19 .
+doc:FactsIpsoAlgorithm doc:factsmapsTo doc:FactsCec2022BenchmarkFunctions .
+_:e509be379c65f8c6c9ddaadd1f71174d rdf:reifies <<( doc:FactsIpsoAlgorithm doc:factsmapsTo doc:FactsCec2022BenchmarkFunctions )>> ;
+	prov:wasDerivedFrom doc:f7cf3995ab19 .
+doc:FactsBiasTerm rdfs:label "bias term"@en .
+_:c369df31c4ad54abeb88f7340aa595fb rdf:reifies <<( doc:FactsBiasTerm rdfs:label "bias term"@en )>> ;
+	prov:wasDerivedFrom doc:f7cf3995ab19 .
+doc:FactsDynamicInertiaWeightMechanism a cco:Algorithm .
+_:ff0a2fe394dbde53317240556d62cb82 rdf:reifies <<( doc:FactsDynamicInertiaWeightMechanism rdf:type cco:Algorithm )>> ;
+	prov:wasDerivedFrom doc:f7cf3995ab19 .
+doc:FactsTestDataset doc:factsmapsTo doc:FactsStability .
+_:c6660e4284a453a540873b9e42e3d460 rdf:reifies <<( doc:FactsTestDataset doc:factsmapsTo doc:FactsStability )>> ;
+	prov:wasDerivedFrom doc:f7cf3995ab19 .
+doc:FactsTestDataset rdfs:label "experimental data"@en .
+_:c86f7785932248d27bb36a4743a04946 rdf:reifies <<( doc:FactsTestDataset rdfs:label "experimental data"@en )>> ;
+	prov:wasDerivedFrom doc:f7cf3995ab19 .
+doc:FactsTestDataset rdfs:label "IPSO algorithm validation"@en .
+_:cf49f57438026f67c23f237db1a920aa rdf:reifies <<( doc:FactsTestDataset rdfs:label "IPSO algorithm validation"@en )>> ;
+	prov:wasDerivedFrom doc:f7cf3995ab19 .
+doc:FactsTestDataset a schema:Dataset .
+_:b2d44f35a15a99e702e5aa51cc277214 rdf:reifies <<( doc:FactsTestDataset rdf:type schema:Dataset )>> ;
+	prov:wasDerivedFrom doc:f7cf3995ab19 .
+doc:FactsDynamicInertiaWeightMechanism doc:factsmapsTo doc:FactsIpsoAlgorithm .
+_:b89727c76fd5e478843b60c7b39ea55a rdf:reifies <<( doc:FactsDynamicInertiaWeightMechanism doc:factsmapsTo doc:FactsIpsoAlgorithm )>> ;
+	prov:wasDerivedFrom doc:f7cf3995ab19 .
+doc:FactsDynamicGroupingRatio doc:factsmapsTo doc:FactsIpsoAlgorithm .
+_:fe34f444c7a274017c3d160def97b3d7 rdf:reifies <<( doc:FactsDynamicGroupingRatio doc:factsmapsTo doc:FactsIpsoAlgorithm )>> ;
+	prov:wasDerivedFrom doc:f7cf3995ab19 .
+doc:FactsTestDataset doc:factsmapsTo doc:FactsPsoAlgorithm .
+_:a7645d0e20b7716d57d19371bdf02e90 rdf:reifies <<( doc:FactsTestDataset doc:factsmapsTo doc:FactsPsoAlgorithm )>> ;
+	prov:wasDerivedFrom doc:f7cf3995ab19 .
+doc:FactsClassificationMargin a None:Design_detail .
+_:c917adadcc0ffec1087a0b669bfd1dad rdf:reifies <<( doc:FactsClassificationMargin rdf:type None:Design_detail )>> ;
+	prov:wasDerivedFrom doc:f7cf3995ab19 .
+doc:FactsTestDataset rdfs:label "training dataset"@en .
+_:d82bb313ad051307eb68c09ff207a08f rdf:reifies <<( doc:FactsTestDataset rdfs:label "training dataset"@en )>> ;
+	prov:wasDerivedFrom doc:f7cf3995ab19 .
+doc:FactsTestDataset doc:factsmapsTo doc:FactsCec2022BenchmarkFunctions .
+_:be94ec63f473383528cee52134e376a9 rdf:reifies <<( doc:FactsTestDataset doc:factsmapsTo doc:FactsCec2022BenchmarkFunctions )>> ;
+	prov:wasDerivedFrom doc:f7cf3995ab19 .
+doc:FactsFormulaOutput rdfs:label "model output"@en .
+_:a86b817d31f38056b6fed77561b53ad3 rdf:reifies <<( doc:FactsFormulaOutput rdfs:label "model output"@en )>> ;
+	prov:wasDerivedFrom doc:f7cf3995ab19 .
+doc:FactsKernelFunction rdfs:label "kernel function"@en .
+_:d749ad4f862475e00139b6d350d810c9 rdf:reifies <<( doc:FactsKernelFunction rdfs:label "kernel function"@en )>> ;
+	prov:wasDerivedFrom doc:f7cf3995ab19 .
+doc:FactsParticleGroupingMechanism doc:factsmapsTo doc:FactsDynamicGroupingRatio .
+_:fad6f3b38c4ff250b48d914dfc1c02c5 rdf:reifies <<( doc:FactsParticleGroupingMechanism doc:factsmapsTo doc:FactsDynamicGroupingRatio )>> ;
+	prov:wasDerivedFrom doc:f7cf3995ab19 .
+doc:FactsImpactExperiment rdfs:label "impact experiment"@en .
+_:a49d9052165e225b504a02e13927822a rdf:reifies <<( doc:FactsImpactExperiment rdfs:label "impact experiment"@en )>> ;
+	prov:wasDerivedFrom doc:f7cf3995ab19 .
+doc:FactsKernelFunction doc:factsmapsTo doc:FactsKernelFunction .
+_:a88216a50cec4e648eef1c25886589c1 rdf:reifies <<( doc:FactsKernelFunction doc:factsmapsTo doc:FactsKernelFunction )>> ;
+	prov:wasDerivedFrom doc:f7cf3995ab19 .
+doc:FactsIpsoAlgorithm rdfs:label "IPSO iterations"@en .
+_:df7a671a0245efd41d336a29679521d5 rdf:reifies <<( doc:FactsIpsoAlgorithm rdfs:label "IPSO iterations"@en )>> ;
+	prov:wasDerivedFrom doc:f7cf3995ab19 .
+doc:FactsPsoAlgorithm a cco:Algorithm .
+_:b28328680124b6b23b957480f3faa55a rdf:reifies <<( doc:FactsPsoAlgorithm rdf:type cco:Algorithm )>> ;
+	prov:wasDerivedFrom doc:f7cf3995ab19 .
+doc:FactsFormulaOutput doc:factsmapsTo doc:FactsClassLabel .
+_:d3ec715c71b6487801e9a0c135bec7cd rdf:reifies <<( doc:FactsFormulaOutput doc:factsmapsTo doc:FactsClassLabel )>> ;
+	prov:wasDerivedFrom doc:f7cf3995ab19 .
+doc:FactsFormulaOutput a None:Performance_value .
+_:a66ace0e4df893f05ab1ee2bade2a24c rdf:reifies <<( doc:FactsFormulaOutput rdf:type None:Performance_value )>> ;
+	prov:wasDerivedFrom doc:f7cf3995ab19 .
+doc:FactsSvmClassifier doc:factsmapsTo doc:FactsSvmClassificationFunction .
+_:fa1bf9123516709b72f965f511003e0 rdf:reifies <<( doc:FactsSvmClassifier doc:factsmapsTo doc:FactsSvmClassificationFunction )>> ;
+	prov:wasDerivedFrom doc:f7cf3995ab19 .
+doc:FactsSupportVectors rdfs:label "support vectors"@en .
+_:de4abee23b86fa71424abba32bf1c7b5 rdf:reifies <<( doc:FactsSupportVectors rdfs:label "support vectors"@en )>> ;
+	prov:wasDerivedFrom doc:f7cf3995ab19 .
+_:bec4b94a19e73cdf3541d37273e49867 prov:wasDerivedFrom doc:f7cf3995ab19 .
+doc:FactsHigherDimensionalSpace a schema:Thing .
+_:cf091a07d846077ff7fe5478cd89c44e rdf:reifies <<( doc:FactsHigherDimensionalSpace rdf:type schema:Thing )>> ;
+	prov:wasDerivedFrom doc:f7cf3995ab19 .
+doc:FactsIpsoAlgorithm a schema:Thing .
+_:a85986541c6ee66cdcf4de1c6ab86895 rdf:reifies <<( doc:FactsIpsoAlgorithm rdf:type schema:Thing )>> ;
+	prov:wasDerivedFrom doc:f7cf3995ab19 .
+doc:FactsModelAccuracy doc:factsmapsTo doc:FactsTestDataset .
+_:f4d77a13d5b37d9e371fc585615737bc rdf:reifies <<( doc:FactsModelAccuracy doc:factsmapsTo doc:FactsTestDataset )>> ;
+	prov:wasDerivedFrom doc:f7cf3995ab19 .
+doc:FactsClassLabel rdfs:label "class label"@en .
+_:c844f4b952263f6475cff24930936c8d rdf:reifies <<( doc:FactsClassLabel rdfs:label "class label"@en )>> ;
+	prov:wasDerivedFrom doc:f7cf3995ab19 .
+doc:FactsStability cd:improvedBy doc:FactsIpsoAlgorithm .
+_:ca09b179c206852cce558365ed2e4848 rdf:reifies <<( doc:FactsStability cd:improvedBy doc:FactsIpsoAlgorithm )>> ;
+	prov:wasDerivedFrom doc:f7cf3995ab19 .
+doc:FactsDecisionBoundary a None:Design_detail .
+_:bf16264d09808768639a3f5f71276a1d rdf:reifies <<( doc:FactsDecisionBoundary rdf:type None:Design_detail )>> ;
+	prov:wasDerivedFrom doc:f7cf3995ab19 .
+doc:FactsBiasTerm a None:Data_variable .
+_:ce26234093c2fdc9370c6c770b3ef716 rdf:reifies <<( doc:FactsBiasTerm rdf:type None:Data_variable )>> ;
+	prov:wasDerivedFrom doc:f7cf3995ab19 .
+doc:FactsDecisionBoundary rdfs:label "decision boundary"@en .
+_:ae6725196915cd9e95016718df683be1 rdf:reifies <<( doc:FactsDecisionBoundary rdfs:label "decision boundary"@en )>> ;
+	prov:wasDerivedFrom doc:f7cf3995ab19 .
+doc:FactsStability a None:Performance_indicator .
+_:db30dce3bfeb7a2ce55e82f53fd226e5 rdf:reifies <<( doc:FactsStability rdf:type None:Performance_indicator )>> ;
+	prov:wasDerivedFrom doc:f7cf3995ab19 .
+doc:FactsClassificationMargin rdfs:label "classification margin"@en .
+_:e1bde467eaa4d336732ff807c8f88e46 rdf:reifies <<( doc:FactsClassificationMargin rdfs:label "classification margin"@en )>> ;
+	prov:wasDerivedFrom doc:f7cf3995ab19 .
+doc:FactsHigherDimensionalSpace rdfs:label "higher-dimensional space"@en .
+_:ffe251a915ea5049209b14a0b8d9d4bf rdf:reifies <<( doc:FactsHigherDimensionalSpace rdfs:label "higher-dimensional space"@en )>> ;
+	prov:wasDerivedFrom doc:f7cf3995ab19 .
+doc:FactsSvmClassifier doc:factsmapsTo doc:FactsClassLabel .
+_:d8a9e0281ae4983f4b1f5bfb38a52949 rdf:reifies <<( doc:FactsSvmClassifier doc:factsmapsTo doc:FactsClassLabel )>> ;
+	prov:wasDerivedFrom doc:f7cf3995ab19 .
+doc:FactsSvmClassifier doc:factsmapsTo doc:FactsKernelFunction .
+_:cd5434b1e67f1af5f11a0c2455622d6 rdf:reifies <<( doc:FactsSvmClassifier doc:factsmapsTo doc:FactsKernelFunction )>> ;
+	prov:wasDerivedFrom doc:f7cf3995ab19 .
+doc:FactsDynamicGroupingRatio doc:factsmapsTo "real-time"@en .
+_:b8f13e3cceb4ca62f6c7523dd02ac05d rdf:reifies <<( doc:FactsDynamicGroupingRatio doc:factsmapsTo "real-time"@en )>> ;
+	prov:wasDerivedFrom doc:f7cf3995ab19 .
+doc:FactsParticleGroupingMechanism a cco:Algorithm .
+_:e3e5f9d264dd61a85a5577ac30298f18 rdf:reifies <<( doc:FactsParticleGroupingMechanism rdf:type cco:Algorithm )>> ;
+	prov:wasDerivedFrom doc:f7cf3995ab19 .
+doc:FactsSvmClassifier rdfs:label "support vector machine classifier"@en .
+_:edd6466cc84ccd0b17316b88a468d8e2 rdf:reifies <<( doc:FactsSvmClassifier rdfs:label "support vector machine classifier"@en )>> ;
+	prov:wasDerivedFrom doc:f7cf3995ab19 .
+doc:FactsLagrangeMultipliers rdfs:label "Lagrange multipliers"@en .
+_:be532d64710ab24f0779a1d8343ee44a rdf:reifies <<( doc:FactsLagrangeMultipliers rdfs:label "Lagrange multipliers"@en )>> ;
+	prov:wasDerivedFrom doc:f7cf3995ab19 .
+doc:FactsLagrangeMultipliers doc:factsmapsTo doc:FactsSupportVectors .
+_:e3eea64df4adaa20236290ab976e18e1 rdf:reifies <<( doc:FactsLagrangeMultipliers doc:factsmapsTo doc:FactsSupportVectors )>> ;
+	prov:wasDerivedFrom doc:f7cf3995ab19 .
+doc:FactsPenaltyParameter a None:Data_variable .
+_:d86fc5bfba49e1fb65a4d5373f0c8181 rdf:reifies <<( doc:FactsPenaltyParameter rdf:type None:Data_variable )>> ;
+	prov:wasDerivedFrom doc:f7cf3995ab19 .
+doc:FactsModelAccuracy rdfs:label "model accuracy"@en .
+_:bfc26779262e54dae5f90a9a7e114b74 rdf:reifies <<( doc:FactsModelAccuracy rdfs:label "model accuracy"@en )>> ;
+	prov:wasDerivedFrom doc:f7cf3995ab19 .
+doc:FactsIpsoAlgorithm rdfs:label "IPSO algorithm"@en .
+_:c9a50813f9ee5caa4bbcc999ced26e43 rdf:reifies <<( doc:FactsIpsoAlgorithm rdfs:label "IPSO algorithm"@en )>> ;
+	prov:wasDerivedFrom doc:f7cf3995ab19 .
+doc:FactsClassLabel rdfs:label "predicted class label"@en .
+_:a1955245d536b175ebde2c3b89774b6e rdf:reifies <<( doc:FactsClassLabel rdfs:label "predicted class label"@en )>> ;
+	prov:wasDerivedFrom doc:f7cf3995ab19 .
+doc:FactsParticleGroupingMechanism doc:factsmapsTo doc:FactsExplorationFunction .
+_:dfc10184194895170df9fcfbf18dd0eb rdf:reifies <<( doc:FactsParticleGroupingMechanism doc:factsmapsTo doc:FactsExplorationFunction )>> ;
+	prov:wasDerivedFrom doc:f7cf3995ab19 .
+doc:factsmapsTo a owl:DatatypeProperty .
+_:de5855ebad69b82d981042f56cdec15f rdf:reifies <<( doc:factsmapsTo rdf:type owl:DatatypeProperty )>> ;
+	prov:wasDerivedFrom doc:f7cf3995ab19 .
+doc:FactsSvmClassifier doc:factsmapsTo doc:FactsInputData .
+_:d31e64097ec1e4fda22d612a8ab8900c rdf:reifies <<( doc:FactsSvmClassifier doc:factsmapsTo doc:FactsInputData )>> ;
+	prov:wasDerivedFrom doc:f7cf3995ab19 .
+doc:FactsTestDataset doc:factsmapsTo doc:FactsSvmClassifier .
+_:c1d7884347a403c7acb155f10c0a58a3 rdf:reifies <<( doc:FactsTestDataset doc:factsmapsTo doc:FactsSvmClassifier )>> ;
+	prov:wasDerivedFrom doc:f7cf3995ab19 .
+doc:factsusesRecorderCount a owl:DatatypeProperty .
+_:c5212ea24c85ced3b46f3548eb683c4b rdf:reifies <<( doc:factsusesRecorderCount rdf:type owl:DatatypeProperty )>> ;
+	prov:wasDerivedFrom doc:f7cf3995ab19 .
+doc:FactsIpsoAlgorithm doc:factsmapsTo doc:FactsPsoAlgorithm .
+_:bc3bcb6633b0924025c4932c9062db8b rdf:reifies <<( doc:FactsIpsoAlgorithm doc:factsmapsTo doc:FactsPsoAlgorithm )>> ;
+	prov:wasDerivedFrom doc:f7cf3995ab19 .
+doc:FactsPsoAlgorithm rdfs:label "standard PSO algorithm"@en .
+_:a767456e9db4e5edab5267992ea4805b rdf:reifies <<( doc:FactsPsoAlgorithm rdfs:label "standard PSO algorithm"@en )>> ;
+	prov:wasDerivedFrom doc:f7cf3995ab19 .
+doc:FactsKernelFunction a None:Data_variable .
+_:eb859390869d0a99ef29e24390a95bf6 rdf:reifies <<( doc:FactsKernelFunction rdf:type None:Data_variable )>> ;
+	prov:wasDerivedFrom doc:f7cf3995ab19 .
+doc:FactsTestDataset rdfs:label "test dataset"@en .
+_:d35c655db93aab0560a842f571194322 rdf:reifies <<( doc:FactsTestDataset rdfs:label "test dataset"@en )>> ;
+	prov:wasDerivedFrom doc:f7cf3995ab19 .
+doc:FactsIpsoAlgorithm doc:factsmapsTo doc:FactsParticleGroupingMechanism .
+_:c6bd83b7ffcc0c900f65f3c9ac371126 rdf:reifies <<( doc:FactsIpsoAlgorithm doc:factsmapsTo doc:FactsParticleGroupingMechanism )>> ;
+	prov:wasDerivedFrom doc:f7cf3995ab19 .
+doc:FactsLagrangeMultipliers a None:Data_variable .
+_:c768f10e7f7de6e05ddd0588bdbe0a24 rdf:reifies <<( doc:FactsLagrangeMultipliers rdf:type None:Data_variable )>> ;
+	prov:wasDerivedFrom doc:f7cf3995ab19 .
+doc:FactsSvmClassificationFunction rdfs:label "SVM classification function"@en .
+_:b735f5ec075d9de85331ed2009331eda rdf:reifies <<( doc:FactsSvmClassificationFunction rdfs:label "SVM classification function"@en )>> ;
+	prov:wasDerivedFrom doc:f7cf3995ab19 .
+doc:FactsInputData rdfs:label "input data"@en .
+_:bc662bf128666e7a5941199224160996 rdf:reifies <<( doc:FactsInputData rdfs:label "input data"@en )>> ;
+	prov:wasDerivedFrom doc:f7cf3995ab19 .
+doc:FactsDynamicGroupingRatio a None:Design_detail .
+_:ca3490e0fa458b8985c94777c758e5a1 rdf:reifies <<( doc:FactsDynamicGroupingRatio rdf:type None:Design_detail )>> ;
+	prov:wasDerivedFrom doc:f7cf3995ab19 .
+doc:FactsExplorationFunction rdfs:label "exploration function"@en .
+_:abf7e7c418d316e2d24c3626afc4d690 rdf:reifies <<( doc:FactsExplorationFunction rdfs:label "exploration function"@en )>> ;
+	prov:wasDerivedFrom doc:f7cf3995ab19 .
+doc:FactsSupportVectors a schema:Thing .
+_:ede54f5e6316d70b308a4387bd1d9ca3 rdf:reifies <<( doc:FactsSupportVectors rdf:type schema:Thing )>> ;
+	prov:wasDerivedFrom doc:f7cf3995ab19 .
+doc:FactsSvmClassifier a cco:Algorithm .
+_:f1785fee8c64a3deff5a9fb61a0857c1 rdf:reifies <<( doc:FactsSvmClassifier rdf:type cco:Algorithm )>> ;
+	prov:wasDerivedFrom doc:f7cf3995ab19 .
+doc:FactsClassLabel doc:factsmapsTo doc:FactsSupportVectors .
+_:be4442adeef23ecb3cf4b89929123fd1 rdf:reifies <<( doc:FactsClassLabel doc:factsmapsTo doc:FactsSupportVectors )>> ;
+	prov:wasDerivedFrom doc:f7cf3995ab19 .
+doc:FactsBiasTerm doc:factsmapsTo doc:FactsDecisionBoundary .
+_:ce04ac19e161a2f12216df9580a84166 rdf:reifies <<( doc:FactsBiasTerm doc:factsmapsTo doc:FactsDecisionBoundary )>> ;
+	prov:wasDerivedFrom doc:f7cf3995ab19 .
+doc:FactsImpactExperiment doc:factsusesRecorderCount 10 .
+_:baa4ef9415aeba392248401947d0ecb8 rdf:reifies <<( doc:FactsImpactExperiment doc:factsusesRecorderCount 10 )>> ;
+	prov:wasDerivedFrom doc:f7cf3995ab19 .
+doc:FactsDynamicInertiaWeightMechanism rdfs:label "dynamic inertia weight mechanism"@en .
+_:bc4c0e354ecba2ba18f89eb915846404 rdf:reifies <<( doc:FactsDynamicInertiaWeightMechanism rdfs:label "dynamic inertia weight mechanism"@en )>> ;
+	prov:wasDerivedFrom doc:f7cf3995ab19 .
+doc:FactsSvmClassifier doc:factsmapsTo doc:FactsPenaltyParameter .
+_:afc0367fbf97d03543d4d3a5616138f rdf:reifies <<( doc:FactsSvmClassifier doc:factsmapsTo doc:FactsPenaltyParameter )>> ;
+	prov:wasDerivedFrom doc:f7cf3995ab19 .
+doc:FactsImpactExperiment doc:factsmapsTo doc:FactsTestDataset .
+_:acde160760c9b263720194d2b260e03d rdf:reifies <<( doc:FactsImpactExperiment doc:factsmapsTo doc:FactsTestDataset )>> ;
+	prov:wasDerivedFrom doc:f7cf3995ab19 .
+doc:FactsParticleGroupingMechanism rdfs:label "particle grouping mechanism"@en .
+_:e95c200165076f66a7738452cb97037f rdf:reifies <<( doc:FactsParticleGroupingMechanism rdfs:label "particle grouping mechanism"@en )>> ;
+	prov:wasDerivedFrom doc:f7cf3995ab19 .
+doc:FactsPenaltyParameter rdfs:label "penalty parameter"@en .
+_:fac3153c5e5e3d952251285eea104c16 rdf:reifies <<( doc:FactsPenaltyParameter rdfs:label "penalty parameter"@en )>> ;
+	prov:wasDerivedFrom doc:f7cf3995ab19 .
+doc:FactsPenaltyParameter doc:factsmapsTo doc:FactsMisclassificationPenalty .
+_:f33a9561c13959b2480024fe99073956 rdf:reifies <<( doc:FactsPenaltyParameter doc:factsmapsTo doc:FactsMisclassificationPenalty )>> ;
+	prov:wasDerivedFrom doc:f7cf3995ab19 .
+doc:FactsExplorationFunction a obo:BFO_0000034 .
+_:ba08a9264701095f5014d4e997b9265 rdf:reifies <<( doc:FactsExplorationFunction rdf:type obo:BFO_0000034 )>> ;
+	prov:wasDerivedFrom doc:f7cf3995ab19 .
+doc:FactsIpsoAlgorithm doc:factsmapsTo doc:FactsSvmClassifier .
+_:e6ccb6b567833cd58cfd296089382b81 rdf:reifies <<( doc:FactsIpsoAlgorithm doc:factsmapsTo doc:FactsSvmClassifier )>> ;
+	prov:wasDerivedFrom doc:f7cf3995ab19 .
+doc:FactsIpsoAlgorithm a cco:Algorithm .
+_:d87eaa168696f5856bd7a3245c56b24b rdf:reifies <<( doc:FactsIpsoAlgorithm rdf:type cco:Algorithm )>> ;
+	prov:wasDerivedFrom doc:f7cf3995ab19 .
+doc:FactsModelAccuracy a None:Performance_indicator .
+_:f67e68bb4d479173e97f3ab74c1d930a rdf:reifies <<( doc:FactsModelAccuracy rdf:type None:Performance_indicator )>> ;
+	prov:wasDerivedFrom doc:f7cf3995ab19 .
+doc:FactsIpsoAlgorithm doc:factsmapsTo doc:FactsDynamicInertiaWeightMechanism .
+_:b93b862e0c8e40eafaecdc09f9cf3a42 rdf:reifies <<( doc:FactsIpsoAlgorithm doc:factsmapsTo doc:FactsDynamicInertiaWeightMechanism )>> ;
+	prov:wasDerivedFrom doc:f7cf3995ab19 .
+doc:FactsCec2022BenchmarkFunctions rdfs:label "CEC2022 benchmark functions"@en .
+_:ffb3c397721a8def3334d459074d6e48 rdf:reifies <<( doc:FactsCec2022BenchmarkFunctions rdfs:label "CEC2022 benchmark functions"@en )>> ;
+	prov:wasDerivedFrom doc:f7cf3995ab19 .
+doc:FactsStability rdfs:label "convergence accuracy"@en .
+_:e2f8a169541f76e58046d922c7e33a81 rdf:reifies <<( doc:FactsStability rdfs:label "convergence accuracy"@en )>> ;
+	prov:wasDerivedFrom doc:f7cf3995ab19 .
+doc:FactsClassLabel a None:Data_variable .
+_:c9d0c2405b76f09493c7a60b305a9e27 rdf:reifies <<( doc:FactsClassLabel rdf:type None:Data_variable )>> ;
+	prov:wasDerivedFrom doc:f7cf3995ab19 .
+doc:FactsKernelFunction rdfs:label "kernel parameter"@en .
+_:f11d5fd86b4d51914944b5e7a166defa rdf:reifies <<( doc:FactsKernelFunction rdfs:label "kernel parameter"@en )>> ;
+	prov:wasDerivedFrom doc:f7cf3995ab19 .
+doc:FactsDynamicGroupingRatio rdfs:label "dynamic grouping ratio"@en .
+_:d92ca0585ecec2e52053387e1deeb655 rdf:reifies <<( doc:FactsDynamicGroupingRatio rdfs:label "dynamic grouping ratio"@en )>> ;
+	prov:wasDerivedFrom doc:f7cf3995ab19 .
+doc:FactsKernelFunction doc:factsmapsTo doc:FactsHigherDimensionalSpace .
+_:eeb4a18d126d2de022336e6e71df370c rdf:reifies <<( doc:FactsKernelFunction doc:factsmapsTo doc:FactsHigherDimensionalSpace )>> ;
+	prov:wasDerivedFrom doc:f7cf3995ab19 .
+doc:FactsExplorationFunction rdfs:label "exploitation function"@en .
+_:b929fd67c1cc55bdb681beb6487e17e2 rdf:reifies <<( doc:FactsExplorationFunction rdfs:label "exploitation function"@en )>> ;
+	prov:wasDerivedFrom doc:f7cf3995ab19 .
+doc:FactsPenaltyParameter doc:factsmapsTo doc:FactsClassificationMargin .
+_:f53cfa8f919fecc452ccbfb483d88556 rdf:reifies <<( doc:FactsPenaltyParameter doc:factsmapsTo doc:FactsClassificationMargin )>> ;
+	prov:wasDerivedFrom doc:f7cf3995ab19 .
+doc:FactsSupportVectors rdfs:label "support vector and input"@en .
+_:f08edf4f2454d7aa1370611a41c36e6d rdf:reifies <<( doc:FactsSupportVectors rdfs:label "support vector and input"@en )>> ;
+	prov:wasDerivedFrom doc:f7cf3995ab19 .
+doc:FactsKernelFunction doc:factsmapsTo doc:FactsSupportVectors .
+_:f4dd5d9a0b097d950a12410d0ae93095 rdf:reifies <<( doc:FactsKernelFunction doc:factsmapsTo doc:FactsSupportVectors )>> ;
+	prov:wasDerivedFrom doc:f7cf3995ab19 .
+doc:FactsCec2022BenchmarkFunctions a schema:Dataset .
+_:dba87ab82ac9241a182c76386b1136b2 rdf:reifies <<( doc:FactsCec2022BenchmarkFunctions rdf:type schema:Dataset )>> ;
+	prov:wasDerivedFrom doc:f7cf3995ab19 .
+doc:FactsKernelFunction a obo:BFO_0000034 .
+_:cd076b18ee13fb21eaf41bbad6f289c8 rdf:reifies <<( doc:FactsKernelFunction rdf:type obo:BFO_0000034 )>> ;
+	prov:wasDerivedFrom doc:f7cf3995ab19 .
+doc:FactsStability rdfs:label "stability"@en .
+_:c0e862a24dec589641ee0243db269395 rdf:reifies <<( doc:FactsStability rdfs:label "stability"@en )>> ;
+	prov:wasDerivedFrom doc:f7cf3995ab19 .
+None:Predictive_maintenance_model owl:sameAs None:Predictive_Maintenance_Article .

@@ -1,0 +1,783 @@
+@prefix None: <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD/seed#> .
+@prefix cco: <http://www.ontologyrepository.com/CommonCoreOntologies/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doc: <https://growgraph.dev/doc/834e768e64ba/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix obo: <http://purl.obolibrary.org/obo/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix cd: <https://growgraph.dev/facts> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix schema: <https://schema.org/> .
+@prefix schema1: <http://schema.org/> .
+doc:0317e376b049 a prov:Entity , schema:text ;
+	prov:generatedAtTime "2026-07-13T19:19:57.72242Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+	schema:position 0 ;
+	schema:identifier "0317e376b049" .
+doc:Factsorganization_2_1 schema1:name "Smart Automation Technologies" .
+_:a01f2b2a097187f55328f4bea133842f rdf:reifies <<( doc:Factsorganization_2_1 schema1:name "Smart Automation Technologies" )>> ;
+	prov:wasDerivedFrom doc:0317e376b049 .
+doc:FactsgruType a None:Model_type .
+_:be6ca3c3da356be348aca06e9aae7ce1 rdf:reifies <<( doc:FactsgruType rdf:type None:Model_type )>> ;
+	prov:wasDerivedFrom doc:0317e376b049 .
+doc:Factskeyword_9 schema1:name "synthetic data" .
+_:b82b05c8074cca8d56ba4b2f7d6faa94 rdf:reifies <<( doc:Factskeyword_9 schema1:name "synthetic data" )>> ;
+	prov:wasDerivedFrom doc:0317e376b049 .
+doc:Factskeyword_9 schema1:name "automotive industry" .
+_:b85ca14dc50a324c06fd63d3c9353809 rdf:reifies <<( doc:Factskeyword_9 schema1:name "automotive industry" )>> ;
+	prov:wasDerivedFrom doc:0317e376b049 .
+doc:Factskeyword_9 a schema1:DefinedTerm .
+_:c17c26abcd0fbdf9a156a6c55ec2860c rdf:reifies <<( doc:Factskeyword_9 rdf:type schema1:DefinedTerm )>> ;
+	prov:wasDerivedFrom doc:0317e376b049 .
+doc:Factskeyword_9 schema1:name "edge computing" .
+_:b5d9ff52d31c7bcd3f75cb60daf217ac rdf:reifies <<( doc:Factskeyword_9 schema1:name "edge computing" )>> ;
+	prov:wasDerivedFrom doc:0317e376b049 .
+doc:Factsaccuracy_7 None:has_text_value "Mean Absolute Error" .
+_:b0d536a5f6ddc900b606aea3a8149731 rdf:reifies <<( doc:Factsaccuracy_7 None:has_text_value "Mean Absolute Error" )>> ;
+	prov:wasDerivedFrom doc:0317e376b049 .
+doc:Factsauthor_4_4 schema1:name "Jabir El Aaraj" .
+_:dbc220e929eaee0dc5bb55c345c02fc9 rdf:reifies <<( doc:Factsauthor_4_4 schema1:name "Jabir El Aaraj" )>> ;
+	prov:wasDerivedFrom doc:0317e376b049 .
+doc:FactsfunctionPrediction a None:Remaining_useful_life_estimation .
+_:cb0c8013d31cea6828064b96a99bd134 rdf:reifies <<( doc:FactsfunctionPrediction rdf:type None:Remaining_useful_life_estimation )>> ;
+	prov:wasDerivedFrom doc:0317e376b049 .
+doc:FactstitleThis a None:Article_title .
+_:b12fb3f11823ce6b7ffe8296b9f7e42b rdf:reifies <<( doc:FactstitleThis rdf:type None:Article_title )>> ;
+	prov:wasDerivedFrom doc:0317e376b049 .
+doc:Factsaccuracy_7 a None:Performance_value .
+_:b84b6c7dfd09a4511ca7f67e0b316d72 rdf:reifies <<( doc:Factsaccuracy_7 rdf:type None:Performance_value )>> ;
+	prov:wasDerivedFrom doc:0317e376b049 .
+doc:FactscidynoRefapp a schema1:SoftwareApplication .
+_:af39a1047fe146865e6832d3a2133756 rdf:reifies <<( doc:FactscidynoRefapp rdf:type schema1:SoftwareApplication )>> ;
+	prov:wasDerivedFrom doc:0317e376b049 .
+doc:Predictive_maintenance_model None:has_publication_year doc:FactsyearThis .
+_:b2b4683034db024202eec5d12b733350 rdf:reifies <<( doc:Predictive_maintenance_model None:has_publication_year doc:FactsyearThis )>> ;
+	prov:wasDerivedFrom doc:0317e376b049 .
+doc:Factsorganization_2_1 schema1:address "Tetouan 93000, Morocco" .
+_:c5461c4f3543ef2d5e9ef608572ddea2 rdf:reifies <<( doc:Factsorganization_2_1 schema1:address "Tetouan 93000, Morocco" )>> ;
+	prov:wasDerivedFrom doc:0317e376b049 .
+doc:Predictive_maintenance_model None:describes_type doc:FactsgruType .
+_:a1c5adc4ed260cadd5bf0c9eb5a1d5db rdf:reifies <<( doc:Predictive_maintenance_model None:describes_type doc:FactsgruType )>> ;
+	prov:wasDerivedFrom doc:0317e376b049 .
+doc:Predictive_maintenance_model schema1:about doc:Factskeyword_9 .
+_:ac733c75e3fe35d09f5064e0c031144 rdf:reifies <<( doc:Predictive_maintenance_model schema1:about doc:Factskeyword_9 )>> ;
+	prov:wasDerivedFrom doc:0317e376b049 .
+doc:Predictive_maintenance_model schema1:author doc:Factsauthor_4_4 .
+_:b25338ac514c9dc228f293e11d48465d rdf:reifies <<( doc:Predictive_maintenance_model schema1:author doc:Factsauthor_4_4 )>> ;
+	prov:wasDerivedFrom doc:0317e376b049 .
+doc:Factsauthor_4_4 a schema1:Person .
+_:f82ba90ec2cc08851f6c7b100d206640 rdf:reifies <<( doc:Factsauthor_4_4 rdf:type schema1:Person )>> ;
+	prov:wasDerivedFrom doc:0317e376b049 .
+doc:FactsyearThis None:has_interger_value 2025 .
+_:bd593abff211423c7996ef887324fa0d rdf:reifies <<( doc:FactsyearThis None:has_interger_value 2025 )>> ;
+	prov:wasDerivedFrom doc:0317e376b049 .
+doc:Factsauthor_4_4 schema1:name "Mohammed Said Boukhryss" .
+_:a3bd0d175271ab971c2d0a972a0cf2f3 rdf:reifies <<( doc:Factsauthor_4_4 schema1:name "Mohammed Said Boukhryss" )>> ;
+	prov:wasDerivedFrom doc:0317e376b049 .
+doc:Predictive_maintenance_model None:has_identifier doc:Factsdoi_1_4 .
+_:d129434a1899a39e3c5b607a32a8daeb rdf:reifies <<( doc:Predictive_maintenance_model None:has_identifier doc:Factsdoi_1_4 )>> ;
+	prov:wasDerivedFrom doc:0317e376b049 .
+doc:Predictive_maintenance_model a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Predictive_maintenance_model> .
+_:bc2dd94eb693be111216bb475262a48e rdf:reifies <<( doc:Predictive_maintenance_model rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Predictive_maintenance_model> )>> ;
+	prov:wasDerivedFrom doc:0317e376b049 .
+doc:Factskeyword_9 schema1:name "exhaust backpressure" .
+_:aa6cf4cc5a7c19edd9e083933f847756 rdf:reifies <<( doc:Factskeyword_9 schema1:name "exhaust backpressure" )>> ;
+	prov:wasDerivedFrom doc:0317e376b049 .
+doc:FactstitleThis None:has_text_value "Using Deep Learning for Predictive Maintenance: A Study on Exhaust Backpressure and Power Loss" .
+_:c479dc9b157781307571475d55392582 rdf:reifies <<( doc:FactstitleThis None:has_text_value "Using Deep Learning for Predictive Maintenance: A Study on Exhaust Backpressure and Power Loss" )>> ;
+	prov:wasDerivedFrom doc:0317e376b049 .
+doc:FactsedgeAi schema1:name "synthetic data" .
+_:c5c572319044a32bb9f917c997e836e8 rdf:reifies <<( doc:FactsedgeAi schema1:name "synthetic data" )>> ;
+	prov:wasDerivedFrom doc:0317e376b049 .
+doc:Factskeyword_9 schema1:name "predictive maintenance" .
+_:f177bf1cc75d9e22b43ccc99d4a3f977 rdf:reifies <<( doc:Factskeyword_9 schema1:name "predictive maintenance" )>> ;
+	prov:wasDerivedFrom doc:0317e376b049 .
+doc:Factskeyword_9 schema1:name "power loss" .
+_:d7fead1a581afee949ac73de1f5d2e22 rdf:reifies <<( doc:Factskeyword_9 schema1:name "power loss" )>> ;
+	prov:wasDerivedFrom doc:0317e376b049 .
+doc:FactsedgeAi a schema1:Dataset .
+_:d7c799df0966e92bd662c1d4131cf8e rdf:reifies <<( doc:FactsedgeAi rdf:type schema1:Dataset )>> ;
+	prov:wasDerivedFrom doc:0317e376b049 .
+doc:Predictive_maintenance_model None:has_predictive_maintenance_function doc:FactsfunctionPrediction .
+_:c68d888c669c5d27fb131f94350fa709 rdf:reifies <<( doc:Predictive_maintenance_model None:has_predictive_maintenance_function doc:FactsfunctionPrediction )>> ;
+	prov:wasDerivedFrom doc:0317e376b049 .
+doc:FactscidynoRefapp schema1:name "MATLAB 2023b" .
+_:d9a8663f6988d693d28028f4dd7e16f9 rdf:reifies <<( doc:FactscidynoRefapp schema1:name "MATLAB 2023b" )>> ;
+	prov:wasDerivedFrom doc:0317e376b049 .
+doc:Factskeyword_9 schema1:name "OBD2 protocol" .
+_:c2832c21ef4d8f80fa1c21fceb57af35 rdf:reifies <<( doc:Factskeyword_9 schema1:name "OBD2 protocol" )>> ;
+	prov:wasDerivedFrom doc:0317e376b049 .
+doc:Factsauthor_4_4 schema1:affiliation doc:Factsorganization_2_1 .
+_:e3557eb427a2771b9e735d28e11d5769 rdf:reifies <<( doc:Factsauthor_4_4 schema1:affiliation doc:Factsorganization_2_1 )>> ;
+	prov:wasDerivedFrom doc:0317e376b049 .
+doc:Factsorganization_2_1 schema1:address "Tangier 90000, Morocco" .
+_:fffc7239281b0497fad721081cb1560b rdf:reifies <<( doc:Factsorganization_2_1 schema1:address "Tangier 90000, Morocco" )>> ;
+	prov:wasDerivedFrom doc:0317e376b049 .
+doc:Factsdoi_1_4 None:has_text_value "10.3390/vehicles7040134" .
+_:ea4d66e10b2df0e2f36cda826bd06a32 rdf:reifies <<( doc:Factsdoi_1_4 None:has_text_value "10.3390/vehicles7040134" )>> ;
+	prov:wasDerivedFrom doc:0317e376b049 .
+doc:Factskeyword_9 schema1:name "MATLAB" .
+_:b266c2880b34efa9719a8c428b4b653d rdf:reifies <<( doc:Factskeyword_9 schema1:name "MATLAB" )>> ;
+	prov:wasDerivedFrom doc:0317e376b049 .
+doc:Predictive_maintenance_model None:has_design_detail doc:Factsobd2_protocol .
+_:eb336e355f76fe26070caad8ad787707 rdf:reifies <<( doc:Predictive_maintenance_model None:has_design_detail doc:Factsobd2_protocol )>> ;
+	prov:wasDerivedFrom doc:0317e376b049 .
+doc:Factsbackpressure_1 None:has_text_value "exhaust gas backpressure" .
+_:b68e95067a95facec71a35723ffa4bc4 rdf:reifies <<( doc:Factsbackpressure_1 None:has_text_value "exhaust gas backpressure" )>> ;
+	prov:wasDerivedFrom doc:0317e376b049 .
+doc:FactsgruType None:has_text_value "Gated Recurrent Unit (GRU)" .
+_:c067f5ec96d6b3e32a6d655fa095828 rdf:reifies <<( doc:FactsgruType None:has_text_value "Gated Recurrent Unit (GRU)" )>> ;
+	prov:wasDerivedFrom doc:0317e376b049 .
+doc:Factsobd2_protocol None:has_text_value "OBD2 protocol" .
+_:b95fafe2abed731cf99a6496e771c19c rdf:reifies <<( doc:Factsobd2_protocol None:has_text_value "OBD2 protocol" )>> ;
+	prov:wasDerivedFrom doc:0317e376b049 .
+doc:Factsauthor_4_4 schema1:name "Said Amghar" .
+_:dd5826cd78a91ad572ddefc7d49113f3 rdf:reifies <<( doc:Factsauthor_4_4 schema1:name "Said Amghar" )>> ;
+	prov:wasDerivedFrom doc:0317e376b049 .
+doc:Predictive_maintenance_model dcterms:title "Using Deep Learning for Predictive Maintenance: A Study on Exhaust Backpressure and Power Loss" .
+_:d041e5e57e4b78087a8e489dd31372da rdf:reifies <<( doc:Predictive_maintenance_model dcterms:title "Using Deep Learning for Predictive Maintenance: A Study on Exhaust Backpressure and Power Loss" )>> ;
+	prov:wasDerivedFrom doc:0317e376b049 .
+doc:Factskeyword_9 schema1:name "GRU" .
+_:a932f4e69216d49aea4eeddb734fdc13 rdf:reifies <<( doc:Factskeyword_9 schema1:name "GRU" )>> ;
+	prov:wasDerivedFrom doc:0317e376b049 .
+doc:FactsdieselEngine a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Maintainable_item> .
+_:ed70a7cdaf84412bc53fbc8bbf4c467e rdf:reifies <<( doc:FactsdieselEngine rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Maintainable_item> )>> ;
+	prov:wasDerivedFrom doc:0317e376b049 .
+doc:Factsaccuracy_7 a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Performance_indicator> .
+_:ec610802622b813deda4c28511f16a75 rdf:reifies <<( doc:Factsaccuracy_7 rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Performance_indicator> )>> ;
+	prov:wasDerivedFrom doc:0317e376b049 .
+doc:FactsgruType None:has_text_value "Long Short-Term Memory (LSTM)" .
+_:b04216f51e1bbf5a1096109ab6ba0cfb rdf:reifies <<( doc:FactsgruType None:has_text_value "Long Short-Term Memory (LSTM)" )>> ;
+	prov:wasDerivedFrom doc:0317e376b049 .
+doc:Predictive_maintenance_model None:has_predictive_maintenance_function doc:Factsdiagnostics_5 .
+_:e9c025df700ba678d6aa4e109dab6e76 rdf:reifies <<( doc:Predictive_maintenance_model None:has_predictive_maintenance_function doc:Factsdiagnostics_5 )>> ;
+	prov:wasDerivedFrom doc:0317e376b049 .
+doc:Factsdoi_1_4 a None:Article_identifier .
+_:adb61139e4cda7866a921474a443a46c rdf:reifies <<( doc:Factsdoi_1_4 rdf:type None:Article_identifier )>> ;
+	prov:wasDerivedFrom doc:0317e376b049 .
+doc:Predictive_maintenance_model schema1:datePublished "2025-11-21"^^<http://www.w3.org/2001/XMLSchema#date> .
+_:b897b4688dbf519912fcd50d356c2925 rdf:reifies <<( doc:Predictive_maintenance_model schema1:datePublished "2025-11-21"^^<http://www.w3.org/2001/XMLSchema#date> )>> ;
+	prov:wasDerivedFrom doc:0317e376b049 .
+doc:Predictive_maintenance_model None:has_title doc:FactstitleThis .
+_:bb2ca6aafb3a49686832fe0d2cb78981 rdf:reifies <<( doc:Predictive_maintenance_model None:has_title doc:FactstitleThis )>> ;
+	prov:wasDerivedFrom doc:0317e376b049 .
+doc:Factskeyword_9 schema1:name "LSTM" .
+_:d463aebefe1d7dfb6663bf09b224f9c7 rdf:reifies <<( doc:Factskeyword_9 schema1:name "LSTM" )>> ;
+	prov:wasDerivedFrom doc:0317e376b049 .
+doc:FactsdieselEngine rdfs:label "diesel engine"@en .
+_:a61d58f37e696bfa5f9c8c33c707e2ce rdf:reifies <<( doc:FactsdieselEngine rdfs:label "diesel engine"@en )>> ;
+	prov:wasDerivedFrom doc:0317e376b049 .
+doc:Factsorganization_2_1 schema1:name "Faculty of Science and Technologies of Tangier, Abdelmalek Essaadi University" .
+_:e496ea04cd7d8e6843452f828249ab25 rdf:reifies <<( doc:Factsorganization_2_1 schema1:name "Faculty of Science and Technologies of Tangier, Abdelmalek Essaadi University" )>> ;
+	prov:wasDerivedFrom doc:0317e376b049 .
+doc:Factsdiagnostics_5 a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Fault_detection> .
+_:fc6da71454ab653cfa35743cde45a97a rdf:reifies <<( doc:Factsdiagnostics_5 rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Fault_detection> )>> ;
+	prov:wasDerivedFrom doc:0317e376b049 .
+doc:Factsauthor_4_4 schema1:name "Abdellah Azmani" .
+_:c7ed99593c9adb1626883300d7196e9d rdf:reifies <<( doc:Factsauthor_4_4 schema1:name "Abdellah Azmani" )>> ;
+	prov:wasDerivedFrom doc:0317e376b049 .
+doc:Factsaccuracy_7 None:has_text_value "power loss" .
+_:e0efe788354b8435e4ec9247c1728b5a rdf:reifies <<( doc:Factsaccuracy_7 None:has_text_value "power loss" )>> ;
+	prov:wasDerivedFrom doc:0317e376b049 .
+doc:Factsauthor_4_4 schema1:name "Soulaimane Idiri" .
+_:c1add0a4088b48adb1a465aa998fa31f rdf:reifies <<( doc:Factsauthor_4_4 schema1:name "Soulaimane Idiri" )>> ;
+	prov:wasDerivedFrom doc:0317e376b049 .
+doc:Factsobd2_protocol a None:Model_type .
+_:a00364e02702ca078ddd40c040c429c3 rdf:reifies <<( doc:Factsobd2_protocol rdf:type None:Model_type )>> ;
+	prov:wasDerivedFrom doc:0317e376b049 .
+doc:FactscidynoRefapp schema1:name "Compression Ignition Dynamometer Reference Application (CIDynoRefApp)" .
+_:af3b6aa8ffc3f9a67aca55d5ac828a68 rdf:reifies <<( doc:FactscidynoRefapp schema1:name "Compression Ignition Dynamometer Reference Application (CIDynoRefApp)" )>> ;
+	prov:wasDerivedFrom doc:0317e376b049 .
+doc:FactscidynoRefapp schema1:name "Powertrain Blockset" .
+_:dff1201982f652a13c621f8441bd11d4 rdf:reifies <<( doc:FactscidynoRefapp schema1:name "Powertrain Blockset" )>> ;
+	prov:wasDerivedFrom doc:0317e376b049 .
+doc:Factsorganization_2_1 a schema1:Organization .
+_:e583fd03ae4d0f06a891e27358dbd72 rdf:reifies <<( doc:Factsorganization_2_1 rdf:type schema1:Organization )>> ;
+	prov:wasDerivedFrom doc:0317e376b049 .
+doc:Factsaccuracy_7 None:has_text_value "Mean Squared Error" .
+_:c404adac3bb4ea9081962832774ce782 rdf:reifies <<( doc:Factsaccuracy_7 None:has_text_value "Mean Squared Error" )>> ;
+	prov:wasDerivedFrom doc:0317e376b049 .
+doc:Factsbackpressure_1 a None:Design_detail .
+_:fe6a489a36bdf041c6091c23edb232f4 rdf:reifies <<( doc:Factsbackpressure_1 rdf:type None:Design_detail )>> ;
+	prov:wasDerivedFrom doc:0317e376b049 .
+doc:FactsyearThis a None:Publication_year .
+_:d6994611361dd0c3a34c253eeec93829 rdf:reifies <<( doc:FactsyearThis rdf:type None:Publication_year )>> ;
+	prov:wasDerivedFrom doc:0317e376b049 .
+doc:b0324fe47552 a prov:Entity , schema:text ;
+	prov:generatedAtTime "2026-07-13T19:19:57.726927Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+	schema:position 1 ;
+	schema:identifier "b0324fe47552" .
+doc:FactssyntheticFaultInjection a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Fault_feature_extraction> .
+_:a14647879cb0f61bfb92ab82834f05a8 rdf:reifies <<( doc:FactssyntheticFaultInjection rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Fault_feature_extraction> )>> ;
+	prov:wasDerivedFrom doc:b0324fe47552 .
+doc:FactsexhaustGasRecirculation a cco:DesignativeInformationContentEntity .
+_:ea421bd0926d626c70a43a9cb61f0155 rdf:reifies <<( doc:FactsexhaustGasRecirculation rdf:type cco:DesignativeInformationContentEntity )>> ;
+	prov:wasDerivedFrom doc:b0324fe47552 .
+doc:FactsdpfLoad rdfs:label "DPF load"@en .
+_:c0f938bbd80987f4884358931712df19 rdf:reifies <<( doc:FactsdpfLoad rdfs:label "DPF load"@en )>> ;
+	prov:wasDerivedFrom doc:b0324fe47552 .
+doc:FactsdataPrivacy_1 rdfs:label "data privacy"@en .
+_:a1549e180df7291cea83a4dd48989766 rdf:reifies <<( doc:FactsdataPrivacy_1 rdfs:label "data privacy"@en )>> ;
+	prov:wasDerivedFrom doc:b0324fe47552 .
+doc:FactsalarmThreshold cd:has_text_value "200 mbar for more than five seconds" .
+_:b83c9284467bdfee31863bef4903f0eb rdf:reifies <<( doc:FactsalarmThreshold cd:has_text_value "200 mbar for more than five seconds" )>> ;
+	prov:wasDerivedFrom doc:b0324fe47552 .
+doc:Factsvgt rdfs:label "Variable Geometry Turbochargers"@en .
+_:c77e8d8ca0bc34c15271bc609702224d rdf:reifies <<( doc:Factsvgt rdfs:label "Variable Geometry Turbochargers"@en )>> ;
+	prov:wasDerivedFrom doc:b0324fe47552 .
+doc:FactsrealTimeEbpMonitoring a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Health_assessment> .
+_:a487df1daefc98563026628a901deb4d rdf:reifies <<( doc:FactsrealTimeEbpMonitoring rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Health_assessment> )>> ;
+	prov:wasDerivedFrom doc:b0324fe47552 .
+doc:Factsvgt rdfs:label "Turbochargers"@en .
+_:f022f25b4c2232952d04d6558e009c3f rdf:reifies <<( doc:Factsvgt rdfs:label "Turbochargers"@en )>> ;
+	prov:wasDerivedFrom doc:b0324fe47552 .
+doc:FactslightweightAiModels rdfs:label "lightweight AI models"@en .
+_:ac8da66c1382b5b938a4c13812022cba rdf:reifies <<( doc:FactslightweightAiModels rdfs:label "lightweight AI models"@en )>> ;
+	prov:wasDerivedFrom doc:b0324fe47552 .
+doc:Factsvgt cd:regulates doc:FactsexhaustFlow .
+_:abc6dbd74c4bb8933d84ee4646f71cb1 rdf:reifies <<( doc:Factsvgt cd:regulates doc:FactsexhaustFlow )>> ;
+	prov:wasDerivedFrom doc:b0324fe47552 .
+doc:FactsspecificApprovals rdfs:label "specific approvals"@en .
+_:a26c1add9ea6988b1079010dae256b4c rdf:reifies <<( doc:FactsspecificApprovals rdfs:label "specific approvals"@en )>> ;
+	prov:wasDerivedFrom doc:b0324fe47552 .
+doc:Predictive_maintenance_model rdfs:label "localized inference models"@en .
+_:d29c3dca628be577d8c2d644eb93152 rdf:reifies <<( doc:Predictive_maintenance_model rdfs:label "localized inference models"@en )>> ;
+	prov:wasDerivedFrom doc:b0324fe47552 .
+doc:Factsdiagnostics_5 rdfs:label "diagnostics"@en .
+_:c2cd1533bad6c1b7275b80073cd56cea rdf:reifies <<( doc:Factsdiagnostics_5 rdfs:label "diagnostics"@en )>> ;
+	prov:wasDerivedFrom doc:b0324fe47552 .
+doc:FactsrealTimeEbpMonitoring rdfs:label "real-time EBP monitoring"@en .
+_:c7c52bd63bf37d4e081c79a8133212db rdf:reifies <<( doc:FactsrealTimeEbpMonitoring rdfs:label "real-time EBP monitoring"@en )>> ;
+	prov:wasDerivedFrom doc:b0324fe47552 .
+doc:Factsdpf a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Maintainable_item> .
+_:f6e7b04e9b32f536ab11659df94d2ea6 rdf:reifies <<( doc:Factsdpf rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Maintainable_item> )>> ;
+	prov:wasDerivedFrom doc:b0324fe47552 .
+doc:DesignativeInformationContentEntity cd:optimizes doc:Factsmaintenance_5 .
+_:d1bab7795a5e6955e4a1f38e23a6670d rdf:reifies <<( doc:DesignativeInformationContentEntity cd:optimizes doc:Factsmaintenance_5 )>> ;
+	prov:wasDerivedFrom doc:b0324fe47552 .
+_:bc2dd94eb693be111216bb475262a48e prov:wasDerivedFrom doc:b0324fe47552 .
+doc:FactsalarmThreshold rdfs:label "alarm threshold"@en .
+_:c20b6c949608fe156b85a2f19f25e9a rdf:reifies <<( doc:FactsalarmThreshold rdfs:label "alarm threshold"@en )>> ;
+	prov:wasDerivedFrom doc:b0324fe47552 .
+doc:FactsphysicalFaultSimulation a cco:Algorithm .
+_:ce8531e4e0ce2a42f8141190a734869c rdf:reifies <<( doc:FactsphysicalFaultSimulation rdf:type cco:Algorithm )>> ;
+	prov:wasDerivedFrom doc:b0324fe47552 .
+doc:FactsserviceMigration rdfs:label "service migration"@en .
+_:b9b333758abd1e52c870fb9e69f90077 rdf:reifies <<( doc:FactsserviceMigration rdfs:label "service migration"@en )>> ;
+	prov:wasDerivedFrom doc:b0324fe47552 .
+doc:FactsreducedBends rdfs:label "reduced bends"@en .
+_:acdeabcbf18cd596ca0ba1618d1c52b2 rdf:reifies <<( doc:FactsreducedBends rdfs:label "reduced bends"@en )>> ;
+	prov:wasDerivedFrom doc:b0324fe47552 .
+doc:FactsconnectedVehicles rdfs:label "connected vehicles"@en .
+_:fe434dbb2f28adf17028a94e99265210 rdf:reifies <<( doc:FactsconnectedVehicles rdfs:label "connected vehicles"@en )>> ;
+	prov:wasDerivedFrom doc:b0324fe47552 .
+doc:Factsdpf rdfs:label "new DPF"@en .
+_:b52985339dfd4d84d263265a057ae0ca rdf:reifies <<( doc:Factsdpf rdfs:label "new DPF"@en )>> ;
+	prov:wasDerivedFrom doc:b0324fe47552 .
+doc:Factsmaintenance_5 cd:used_for doc:FactsbehaviorRecognition .
+_:cdfad7efa4bf553fe3ff613cd4bc4ee1 rdf:reifies <<( doc:Factsmaintenance_5 cd:used_for doc:FactsbehaviorRecognition )>> ;
+	prov:wasDerivedFrom doc:b0324fe47552 .
+doc:FactsdpfLoad a obo:BFO_0000019 .
+_:eadcb48424cb9753b986905c908f60d8 rdf:reifies <<( doc:FactsdpfLoad rdf:type obo:BFO_0000019 )>> ;
+	prov:wasDerivedFrom doc:b0324fe47552 .
+doc:Predictive_maintenance_model cd:compared_with doc:Predictive_maintenance_model .
+_:b3463bc3fc1765d9eb56febfebba87a8 rdf:reifies <<( doc:Predictive_maintenance_model cd:compared_with doc:Predictive_maintenance_model )>> ;
+	prov:wasDerivedFrom doc:b0324fe47552 .
+doc:FactsbehaviorRecognition a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Classification> .
+_:d3ddf6775e1f620f9d5a1e31e441616e rdf:reifies <<( doc:FactsbehaviorRecognition rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Classification> )>> ;
+	prov:wasDerivedFrom doc:b0324fe47552 .
+_:ed70a7cdaf84412bc53fbc8bbf4c467e prov:wasDerivedFrom doc:b0324fe47552 .
+doc:Predictive_maintenance_model a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Predictive_maintenance_module_function> .
+_:ec3fe5a52d677a7ed517d53140a476e2 rdf:reifies <<( doc:Predictive_maintenance_model rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Predictive_maintenance_module_function> )>> ;
+	prov:wasDerivedFrom doc:b0324fe47552 .
+doc:FactsengineType rdfs:label "engine type"@en .
+_:a6ebb21fe4e38f550908f55e0ef4db9a rdf:reifies <<( doc:FactsengineType rdfs:label "engine type"@en )>> ;
+	prov:wasDerivedFrom doc:b0324fe47552 .
+doc:Factsmaintenance_5 cd:used_for doc:Factsdiagnostics_5 .
+_:e0c2dc39670e0400774d5ad03c222afe rdf:reifies <<( doc:Factsmaintenance_5 cd:used_for doc:Factsdiagnostics_5 )>> ;
+	prov:wasDerivedFrom doc:b0324fe47552 .
+doc:FactsphysicalFaultSimulation cd:details doc:Factsml .
+_:ee4ac9102e43b312e6bf278c0fbf1dbc rdf:reifies <<( doc:FactsphysicalFaultSimulation cd:details doc:Factsml )>> ;
+	prov:wasDerivedFrom doc:b0324fe47552 .
+doc:FactsconnectedVehicles a cco:Artifact .
+_:d1669ff494bae347dac0a6aa209e32c9 rdf:reifies <<( doc:FactsconnectedVehicles rdf:type cco:Artifact )>> ;
+	prov:wasDerivedFrom doc:b0324fe47552 .
+doc:Factsemissions a cco:DescriptiveInformationContentEntity .
+_:ecb2d5f515bde4c42759e360c96f3e07 rdf:reifies <<( doc:Factsemissions rdf:type cco:DescriptiveInformationContentEntity )>> ;
+	prov:wasDerivedFrom doc:b0324fe47552 .
+doc:DesignativeInformationContentEntity rdfs:label "industrial applications"@en .
+_:bd53c74a0f7e7a2fc29b7cb6d700dfde rdf:reifies <<( doc:DesignativeInformationContentEntity rdfs:label "industrial applications"@en )>> ;
+	prov:wasDerivedFrom doc:b0324fe47552 .
+doc:FactssyntheticFaultInjection rdfs:label "synthetic fault injection"@en .
+_:c6964d09692b75ef84cec11fa13f43e2 rdf:reifies <<( doc:FactssyntheticFaultInjection rdfs:label "synthetic fault injection"@en )>> ;
+	prov:wasDerivedFrom doc:b0324fe47552 .
+doc:Factsdpf cd:has_quality doc:FactshighIdle .
+_:ea98b1016c60f312daf253a1af75e90 rdf:reifies <<( doc:Factsdpf cd:has_quality doc:FactshighIdle )>> ;
+	prov:wasDerivedFrom doc:b0324fe47552 .
+doc:Factsemissions cd:is_increased_by doc:FactsincompleteCombustion .
+_:a18ec4119043b0e776f1a1abb8fc65d5 rdf:reifies <<( doc:Factsemissions cd:is_increased_by doc:FactsincompleteCombustion )>> ;
+	prov:wasDerivedFrom doc:b0324fe47552 .
+doc:FactsembeddedDeployment a cco:InformationProcessingArtifact .
+_:ee2f97c046982efbbde6825fe86ae670 rdf:reifies <<( doc:FactsembeddedDeployment rdf:type cco:InformationProcessingArtifact )>> ;
+	prov:wasDerivedFrom doc:b0324fe47552 .
+doc:Factsaccuracy_7 rdfs:label "accuracy"@en .
+_:ed0f0227654daf05716f05a6b795f37a rdf:reifies <<( doc:Factsaccuracy_7 rdfs:label "accuracy"@en )>> ;
+	prov:wasDerivedFrom doc:b0324fe47552 .
+doc:Factsmaintenance_5 rdfs:label "excessive backpressure"@en .
+_:b519ae837155770a0b856fbbb5710dcd rdf:reifies <<( doc:Factsmaintenance_5 rdfs:label "excessive backpressure"@en )>> ;
+	prov:wasDerivedFrom doc:b0324fe47552 .
+doc:Predictive_maintenance_model rdfs:label "LSTM"@en .
+_:d7141eccae1159c40006a337f36f978b rdf:reifies <<( doc:Predictive_maintenance_model rdfs:label "LSTM"@en )>> ;
+	prov:wasDerivedFrom doc:b0324fe47552 .
+doc:FactsedgeAi cd:enhances doc:FactsdataPrivacy_1 .
+_:a22197c4e3166454b53a6f4898e97561 rdf:reifies <<( doc:FactsedgeAi cd:enhances doc:FactsdataPrivacy_1 )>> ;
+	prov:wasDerivedFrom doc:b0324fe47552 .
+doc:FactsedgeAi cd:enables doc:FactspredictiveMaintenance_10 .
+_:cf888b10e6fbd88d310e48ce143387cd rdf:reifies <<( doc:FactsedgeAi cd:enables doc:FactspredictiveMaintenance_10 )>> ;
+	prov:wasDerivedFrom doc:b0324fe47552 .
+doc:FactsedgeAi rdfs:label "Edge artificial intelligence"@en .
+_:e5ad49c23167aed680d1e8486727fcc3 rdf:reifies <<( doc:FactsedgeAi rdfs:label "Edge artificial intelligence"@en )>> ;
+	prov:wasDerivedFrom doc:b0324fe47552 .
+doc:FactsphysicalFaultSimulation cd:lacks doc:FactsrealVehicleObdIiPipelines .
+_:f88071ec20afd16c65e63cde99afea63 rdf:reifies <<( doc:FactsphysicalFaultSimulation cd:lacks doc:FactsrealVehicleObdIiPipelines )>> ;
+	prov:wasDerivedFrom doc:b0324fe47552 .
+doc:FactsalarmThreshold a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Performance_indicator> .
+_:e7586c20d09bd3eba122c7c0147426af rdf:reifies <<( doc:FactsalarmThreshold rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Performance_indicator> )>> ;
+	prov:wasDerivedFrom doc:b0324fe47552 .
+doc:FactsexhaustGasRecirculation rdfs:label "Exhaust Gas Recirculation"@en .
+_:f4af59329e485187500ee504f9379028 rdf:reifies <<( doc:FactsexhaustGasRecirculation rdfs:label "Exhaust Gas Recirculation"@en )>> ;
+	prov:wasDerivedFrom doc:b0324fe47552 .
+_:fc6da71454ab653cfa35743cde45a97a prov:wasDerivedFrom doc:b0324fe47552 .
+doc:FactsembeddedDeployment rdfs:label "embedded deployment"@en .
+_:af90595d967376e052b8b552e671729 rdf:reifies <<( doc:FactsembeddedDeployment rdfs:label "embedded deployment"@en )>> ;
+	prov:wasDerivedFrom doc:b0324fe47552 .
+doc:FactsrealVehicleObdIiPipelines a cco:InformationProcessingArtifact .
+_:ad593af508973304cd3670e02fe5fe43 rdf:reifies <<( doc:FactsrealVehicleObdIiPipelines rdf:type cco:InformationProcessingArtifact )>> ;
+	prov:wasDerivedFrom doc:b0324fe47552 .
+doc:FactslargerPipes a cco:DesignativeInformationContentEntity .
+_:d674f892685865f5cf6eb0519c2b8c27 rdf:reifies <<( doc:FactslargerPipes rdf:type cco:DesignativeInformationContentEntity )>> ;
+	prov:wasDerivedFrom doc:b0324fe47552 .
+doc:Factsobd2_1 cd:used_for doc:FactsrealTimeParameterLogging .
+_:ae3b42c0a19d20b14f847c060682446b rdf:reifies <<( doc:Factsobd2_1 cd:used_for doc:FactsrealTimeParameterLogging )>> ;
+	prov:wasDerivedFrom doc:b0324fe47552 .
+doc:Predictive_maintenance_model rdfs:label "deep temporal models"@en .
+_:e685a0642477d0e2894872730a947fa8 rdf:reifies <<( doc:Predictive_maintenance_model rdfs:label "deep temporal models"@en )>> ;
+	prov:wasDerivedFrom doc:b0324fe47552 .
+doc:FactsedgeAi cd:equipped_with doc:FactslightweightAiModels .
+_:afca5e99505aefb0ba31379ed1286919 rdf:reifies <<( doc:FactsedgeAi cd:equipped_with doc:FactslightweightAiModels )>> ;
+	prov:wasDerivedFrom doc:b0324fe47552 .
+doc:FactsphysicalFaultSimulation cd:details doc:FactsphysicalFaultSimulation .
+_:aae5a6d51ab19d65cf94cb2eebfbb085 rdf:reifies <<( doc:FactsphysicalFaultSimulation cd:details doc:FactsphysicalFaultSimulation )>> ;
+	prov:wasDerivedFrom doc:b0324fe47552 .
+doc:FactslargerPipes rdfs:label "larger pipes"@en .
+_:fdcfe94c2767aef1d31a313ea83e04ba rdf:reifies <<( doc:FactslargerPipes rdfs:label "larger pipes"@en )>> ;
+	prov:wasDerivedFrom doc:b0324fe47552 .
+doc:Factssimulink_1 a cco:Algorithm .
+_:cd1cdcebec1be05be38a25bf86913f2d rdf:reifies <<( doc:Factssimulink_1 rdf:type cco:Algorithm )>> ;
+	prov:wasDerivedFrom doc:b0324fe47552 .
+doc:Factsemissions cd:is_increased_by doc:Factsmaintenance_5 .
+_:d9839316f8ffa41ca969a5067d00eaa3 rdf:reifies <<( doc:Factsemissions cd:is_increased_by doc:Factsmaintenance_5 )>> ;
+	prov:wasDerivedFrom doc:b0324fe47552 .
+doc:FactslightweightAiModels a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Predictive_maintenance_model> .
+_:ec8d5604137d9f6021fc7d5b50f5a637 rdf:reifies <<( doc:FactslightweightAiModels rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Predictive_maintenance_model> )>> ;
+	prov:wasDerivedFrom doc:b0324fe47552 .
+doc:Factsdpf cd:has_quality doc:FactsdpfLoad .
+_:e11d532889c3220499a0684b382e3b5 rdf:reifies <<( doc:Factsdpf cd:has_quality doc:FactsdpfLoad )>> ;
+	prov:wasDerivedFrom doc:b0324fe47552 .
+doc:Factsobd2_1 rdfs:label "OBD-II"@en .
+_:f11891b0e1accac607c8629ff7bdd3e7 rdf:reifies <<( doc:Factsobd2_1 rdfs:label "OBD-II"@en )>> ;
+	prov:wasDerivedFrom doc:b0324fe47552 .
+doc:DesignativeInformationContentEntity a cco:DesignativeInformationContentEntity .
+_:d98ee19adb3ce6350c01b86817673a63 rdf:reifies <<( doc:DesignativeInformationContentEntity rdf:type cco:DesignativeInformationContentEntity )>> ;
+	prov:wasDerivedFrom doc:b0324fe47552 .
+doc:Factsvgt a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Maintainable_item> .
+_:ce2a475709ede7feb559fd01872e2062 rdf:reifies <<( doc:Factsvgt rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Maintainable_item> )>> ;
+	prov:wasDerivedFrom doc:b0324fe47552 .
+doc:Factsdpf cd:reduces doc:Factsemissions .
+_:e2e0f84e235d364047d4bc002b310b94 rdf:reifies <<( doc:Factsdpf cd:reduces doc:Factsemissions )>> ;
+	prov:wasDerivedFrom doc:b0324fe47552 .
+doc:FactsconnectedVehicles cd:validate doc:FactsserviceMigration .
+_:c99dc00d648bd8561e52f5af8d804af rdf:reifies <<( doc:FactsconnectedVehicles cd:validate doc:FactsserviceMigration )>> ;
+	prov:wasDerivedFrom doc:b0324fe47552 .
+doc:FactsphysicalFaultSimulation cd:lacks doc:Predictive_maintenance_model .
+_:c5623790319892cd567c5612ecedd3e9 rdf:reifies <<( doc:FactsphysicalFaultSimulation cd:lacks doc:Predictive_maintenance_model )>> ;
+	prov:wasDerivedFrom doc:b0324fe47552 .
+doc:Factsemissions rdfs:label "emissions"@en .
+_:cfd16414f107a51a78826338ca4a324e rdf:reifies <<( doc:Factsemissions rdfs:label "emissions"@en )>> ;
+	prov:wasDerivedFrom doc:b0324fe47552 .
+doc:FactshighIdle a cco:DescriptiveInformationContentEntity .
+_:a46a42c8db9bdddb7d128234c1982bfe rdf:reifies <<( doc:FactshighIdle rdf:type cco:DescriptiveInformationContentEntity )>> ;
+	prov:wasDerivedFrom doc:b0324fe47552 .
+doc:Predictive_maintenance_model rdfs:label "GRU"@en .
+_:b14c12d661c6f9271894f87ae97a3779 rdf:reifies <<( doc:Predictive_maintenance_model rdfs:label "GRU"@en )>> ;
+	prov:wasDerivedFrom doc:b0324fe47552 .
+doc:FactshighIdle rdfs:label "high idle"@en .
+_:a5320b63b0e24ab6812d523f3eadde81 rdf:reifies <<( doc:FactshighIdle rdfs:label "high idle"@en )>> ;
+	prov:wasDerivedFrom doc:b0324fe47552 .
+doc:FactsmoreThanFiveSeconds a cco:DescriptiveInformationContentEntity .
+_:a8359ac4d4aa13b34aa70ad536004c39 rdf:reifies <<( doc:FactsmoreThanFiveSeconds rdf:type cco:DescriptiveInformationContentEntity )>> ;
+	prov:wasDerivedFrom doc:b0324fe47552 .
+doc:FactsenginePerformance a cco:DescriptiveInformationContentEntity .
+_:cb915ad3cd877b8e74321222dafd62ff rdf:reifies <<( doc:FactsenginePerformance rdf:type cco:DescriptiveInformationContentEntity )>> ;
+	prov:wasDerivedFrom doc:b0324fe47552 .
+_:ec610802622b813deda4c28511f16a75 prov:wasDerivedFrom doc:b0324fe47552 .
+doc:FactslargerPipes cd:mitigates doc:Factsmaintenance_5 .
+_:f2f89b74546c99fa58fddc01c416ea33 rdf:reifies <<( doc:FactslargerPipes cd:mitigates doc:Factsmaintenance_5 )>> ;
+	prov:wasDerivedFrom doc:b0324fe47552 .
+doc:FactsenginePerformance rdfs:label "engine performance"@en .
+_:c85881da84995caa26f4cd1c21c6de25 rdf:reifies <<( doc:FactsenginePerformance rdfs:label "engine performance"@en )>> ;
+	prov:wasDerivedFrom doc:b0324fe47552 .
+doc:FactsvehicularSystems a cco:InformationProcessingArtifact .
+_:ee9d064aa1b1c4e45034c1547c74ce7c rdf:reifies <<( doc:FactsvehicularSystems rdf:type cco:InformationProcessingArtifact )>> ;
+	prov:wasDerivedFrom doc:b0324fe47552 .
+doc:Factsdiagnostics_5 rdfs:label "security/IDS"@en .
+_:c47b2c7cb940f03c3159316982273033 rdf:reifies <<( doc:Factsdiagnostics_5 rdfs:label "security/IDS"@en )>> ;
+	prov:wasDerivedFrom doc:b0324fe47552 .
+doc:Predictive_maintenance_model cd:enable doc:FactsrealTimeInference .
+_:b66cfc6830773f7938ffd0d6678e92a1 rdf:reifies <<( doc:Predictive_maintenance_model cd:enable doc:FactsrealTimeInference )>> ;
+	prov:wasDerivedFrom doc:b0324fe47552 .
+doc:FactscloudInfrastructure a cco:InformationProcessingArtifact .
+_:dce0cba00bd084a43d072c3afcd96368 rdf:reifies <<( doc:FactscloudInfrastructure rdf:type cco:InformationProcessingArtifact )>> ;
+	prov:wasDerivedFrom doc:b0324fe47552 .
+doc:FactsaftertreatmentDevices cd:requires doc:Factsmaintenance_5 .
+_:a852d9977bec25b702776cecffc651dc rdf:reifies <<( doc:FactsaftertreatmentDevices cd:requires doc:Factsmaintenance_5 )>> ;
+	prov:wasDerivedFrom doc:b0324fe47552 .
+doc:FactsedgeAi a cco:DescriptiveInformationContentEntity .
+_:df07080d08b3e0f9a5a43c4735ac013e rdf:reifies <<( doc:FactsedgeAi rdf:type cco:DescriptiveInformationContentEntity )>> ;
+	prov:wasDerivedFrom doc:b0324fe47552 .
+doc:Factsemissions rdfs:label "fuel consumption"@en .
+_:b549fbcbae32bc9814cfaf8f2d4c39a5 rdf:reifies <<( doc:Factsemissions rdfs:label "fuel consumption"@en )>> ;
+	prov:wasDerivedFrom doc:b0324fe47552 .
+doc:FactsphysicalFaultSimulation rdfs:label "physical fault simulation"@en .
+_:f5a656923fabacc62de382fb8e693f3f rdf:reifies <<( doc:FactsphysicalFaultSimulation rdfs:label "physical fault simulation"@en )>> ;
+	prov:wasDerivedFrom doc:b0324fe47552 .
+doc:Factsml rdfs:label "ASMs"@en .
+_:aedc2bee933fc1d6e83cb4bb1c094b0a rdf:reifies <<( doc:Factsml rdfs:label "ASMs"@en )>> ;
+	prov:wasDerivedFrom doc:b0324fe47552 .
+doc:FactsedgeAi cd:improve doc:FactsrealTimeEbpMonitoring .
+_:bf0c69a4e62a6bd863c780fdb42a211c rdf:reifies <<( doc:FactsedgeAi cd:improve doc:FactsrealTimeEbpMonitoring )>> ;
+	prov:wasDerivedFrom doc:b0324fe47552 .
+doc:FactsdieselEngine rdfs:label "engines without Exhaust Gas Recirculation"@en .
+_:b189a7dabb99e2869f43d1f9138e2566 rdf:reifies <<( doc:FactsdieselEngine rdfs:label "engines without Exhaust Gas Recirculation"@en )>> ;
+	prov:wasDerivedFrom doc:b0324fe47552 .
+doc:FactsrealVehicleObdIiPipelines rdfs:label "real-vehicle OBD-II pipelines"@en .
+_:eb90a36a785362a5dee4726446bdb781 rdf:reifies <<( doc:FactsrealVehicleObdIiPipelines rdfs:label "real-vehicle OBD-II pipelines"@en )>> ;
+	prov:wasDerivedFrom doc:b0324fe47552 .
+doc:Factslatency_2 rdfs:label "latency"@en .
+_:fc293250fa307add3b90054c5d99aee1 rdf:reifies <<( doc:Factslatency_2 rdfs:label "latency"@en )>> ;
+	prov:wasDerivedFrom doc:b0324fe47552 .
+doc:FactsedgeAi rdfs:label "CAN data"@en .
+_:d452c8acaff230c0956f6d911e1e206a rdf:reifies <<( doc:FactsedgeAi rdfs:label "CAN data"@en )>> ;
+	prov:wasDerivedFrom doc:b0324fe47552 .
+doc:Predictive_maintenance_model rdfs:label "regeneration"@en .
+_:a045af4473f7d319cebecdc5f52046f0 rdf:reifies <<( doc:Predictive_maintenance_model rdfs:label "regeneration"@en )>> ;
+	prov:wasDerivedFrom doc:b0324fe47552 .
+doc:Factsmaintenance_5 a obo:BFO_0000019 .
+_:a68481a9040468122377d8e7fb90783c rdf:reifies <<( doc:Factsmaintenance_5 rdf:type obo:BFO_0000019 )>> ;
+	prov:wasDerivedFrom doc:b0324fe47552 .
+doc:FactsaftertreatmentDevices a cco:Artifact .
+_:d797596a4cb91f6949e5bde6bd6cccd rdf:reifies <<( doc:FactsaftertreatmentDevices rdf:type cco:Artifact )>> ;
+	prov:wasDerivedFrom doc:b0324fe47552 .
+doc:FactscloudInfrastructure rdfs:label "cloud infrastructure"@en .
+_:cc34d30043304ec2ca479eb17279bc89 rdf:reifies <<( doc:FactscloudInfrastructure rdfs:label "cloud infrastructure"@en )>> ;
+	prov:wasDerivedFrom doc:b0324fe47552 .
+doc:Factsml a cco:Algorithm .
+_:fadaab1a57a3652a2b87314d40791ec9 rdf:reifies <<( doc:Factsml rdf:type cco:Algorithm )>> ;
+	prov:wasDerivedFrom doc:b0324fe47552 .
+doc:FactsgatewayLevel a cco:DesignativeInformationContentEntity .
+_:b5e5197751311eac6e3e432b795b0da7 rdf:reifies <<( doc:FactsgatewayLevel rdf:type cco:DesignativeInformationContentEntity )>> ;
+	prov:wasDerivedFrom doc:b0324fe47552 .
+doc:Factsobd2_1 cd:used_for doc:Factsml .
+_:cae04863d157353ac2302250349a55a4 rdf:reifies <<( doc:Factsobd2_1 cd:used_for doc:Factsml )>> ;
+	prov:wasDerivedFrom doc:b0324fe47552 .
+doc:FactsbehaviorRecognition rdfs:label "behavior recognition"@en .
+_:fd9a998b00e73145448364f2cf97df6d rdf:reifies <<( doc:FactsbehaviorRecognition rdfs:label "behavior recognition"@en )>> ;
+	prov:wasDerivedFrom doc:b0324fe47552 .
+doc:FactsconnectedVehicles cd:validate doc:FactsrealTimeInference .
+_:aff9b2059c7316457d626f95b6dabd5d rdf:reifies <<( doc:FactsconnectedVehicles cd:validate doc:FactsrealTimeInference )>> ;
+	prov:wasDerivedFrom doc:b0324fe47552 .
+doc:FactsaftertreatmentDevices cd:requires doc:Predictive_maintenance_model .
+_:c3346a3e196072805e22871da0e8e913 rdf:reifies <<( doc:FactsaftertreatmentDevices cd:requires doc:Predictive_maintenance_model )>> ;
+	prov:wasDerivedFrom doc:b0324fe47552 .
+doc:Factsml rdfs:label "ML"@en .
+_:fda265174bf91cd7617c4317b99ce62a rdf:reifies <<( doc:Factsml rdfs:label "ML"@en )>> ;
+	prov:wasDerivedFrom doc:b0324fe47552 .
+doc:FactsfleetScaleImplementations a cco:DesignativeInformationContentEntity .
+_:a98d8e2639f99690b67f7ef3752fda43 rdf:reifies <<( doc:FactsfleetScaleImplementations rdf:type cco:DesignativeInformationContentEntity )>> ;
+	prov:wasDerivedFrom doc:b0324fe47552 .
+doc:FactscatalyticConverter rdfs:label "catalytic converters"@en .
+_:ed446489410211e0609f295467e60bce rdf:reifies <<( doc:FactscatalyticConverter rdfs:label "catalytic converters"@en )>> ;
+	prov:wasDerivedFrom doc:b0324fe47552 .
+doc:FactsedgeAi a cco:InformationProcessingArtifact .
+_:c662839bd639691ab524584a04291abf rdf:reifies <<( doc:FactsedgeAi rdf:type cco:InformationProcessingArtifact )>> ;
+	prov:wasDerivedFrom doc:b0324fe47552 .
+doc:Predictive_maintenance_model rdfs:label "on-device inference"@en .
+_:ed2ad5a6abcd4450437b24cb5b774442 rdf:reifies <<( doc:Predictive_maintenance_model rdfs:label "on-device inference"@en )>> ;
+	prov:wasDerivedFrom doc:b0324fe47552 .
+doc:FactsphysicalFaultSimulation cd:details doc:Factssimulink_1 .
+_:ab64834a8b6bfbff7687873e7503698e rdf:reifies <<( doc:FactsphysicalFaultSimulation cd:details doc:Factssimulink_1 )>> ;
+	prov:wasDerivedFrom doc:b0324fe47552 .
+doc:FactsserviceMigration a cco:DesignativeInformationContentEntity .
+_:fd454844db13d97002528dccf4fe6127 rdf:reifies <<( doc:FactsserviceMigration rdf:type cco:DesignativeInformationContentEntity )>> ;
+	prov:wasDerivedFrom doc:b0324fe47552 .
+doc:Predictive_maintenance_model rdfs:label "Transformer-based models"@en .
+_:e1418d1dc819ced53fc5d7e4a6485f5f rdf:reifies <<( doc:Predictive_maintenance_model rdfs:label "Transformer-based models"@en )>> ;
+	prov:wasDerivedFrom doc:b0324fe47552 .
+doc:Factsaccuracy_7 rdfs:label "robustness"@en .
+_:a18beeee0daccb1000d8911e17e5242c rdf:reifies <<( doc:Factsaccuracy_7 rdfs:label "robustness"@en )>> ;
+	prov:wasDerivedFrom doc:b0324fe47552 .
+doc:FactsedgeAi cd:perform doc:Factsdiagnostics_5 .
+_:f8a91d3be6be81cb80629792cad6724e rdf:reifies <<( doc:FactsedgeAi cd:perform doc:Factsdiagnostics_5 )>> ;
+	prov:wasDerivedFrom doc:b0324fe47552 .
+doc:FactsrealTimeParameterLogging rdfs:label "real-time parameter logging"@en .
+_:aaf2f6340e0dd47f0137615faf36c723 rdf:reifies <<( doc:FactsrealTimeParameterLogging rdfs:label "real-time parameter logging"@en )>> ;
+	prov:wasDerivedFrom doc:b0324fe47552 .
+doc:Factsdpf cd:increases doc:Factsmaintenance_5 .
+_:adce43d24b663f0ed98d57298473c1d9 rdf:reifies <<( doc:Factsdpf cd:increases doc:Factsmaintenance_5 )>> ;
+	prov:wasDerivedFrom doc:b0324fe47552 .
+doc:Factsmaintenance_5 cd:used_on doc:FactsedgeAi .
+_:e349578f1bb34b68e2001d9fa201b843 rdf:reifies <<( doc:Factsmaintenance_5 cd:used_on doc:FactsedgeAi )>> ;
+	prov:wasDerivedFrom doc:b0324fe47552 .
+doc:FactsaftertreatmentDevices rdfs:label "aftertreatment devices"@en .
+_:c18a98ddfcbc9835aa4c62a46da8255 rdf:reifies <<( doc:FactsaftertreatmentDevices rdfs:label "aftertreatment devices"@en )>> ;
+	prov:wasDerivedFrom doc:b0324fe47552 .
+doc:FactsedgeAi rdfs:label "embedded systems"@en .
+_:b37544851b85f0ba29960d3f56f621f0 rdf:reifies <<( doc:FactsedgeAi rdfs:label "embedded systems"@en )>> ;
+	prov:wasDerivedFrom doc:b0324fe47552 .
+doc:FactsreducedBends cd:mitigates doc:Factsmaintenance_5 .
+_:a6abba6539e8143a4574b5c421a03b46 rdf:reifies <<( doc:FactsreducedBends cd:mitigates doc:Factsmaintenance_5 )>> ;
+	prov:wasDerivedFrom doc:b0324fe47552 .
+doc:FactsgatewayLevel rdfs:label "gateway level"@en .
+_:df31f80323db3b3dd20ede7810933bab rdf:reifies <<( doc:FactsgatewayLevel rdfs:label "gateway level"@en )>> ;
+	prov:wasDerivedFrom doc:b0324fe47552 .
+doc:Factssimulink_1 rdfs:label "Simulink"@en .
+_:e7289a7471c9f0c8365939f1fe0e2b02 rdf:reifies <<( doc:Factssimulink_1 rdfs:label "Simulink"@en )>> ;
+	prov:wasDerivedFrom doc:b0324fe47552 .
+doc:FactssootAndAshAccumulation a obo:BFO_0000019 .
+_:f80ba7739c226fb182ab751f18cac9fa rdf:reifies <<( doc:FactssootAndAshAccumulation rdf:type obo:BFO_0000019 )>> ;
+	prov:wasDerivedFrom doc:b0324fe47552 .
+doc:Factslatency_2 a obo:BFO_0000019 .
+_:e2d415c147e9477d03d6aa318920c3be rdf:reifies <<( doc:Factslatency_2 rdf:type obo:BFO_0000019 )>> ;
+	prov:wasDerivedFrom doc:b0324fe47552 .
+doc:FactscatalyticConverter cd:reduces doc:Factsemissions .
+_:db9d25f756550a941af3b51a66c7572e rdf:reifies <<( doc:FactscatalyticConverter cd:reduces doc:Factsemissions )>> ;
+	prov:wasDerivedFrom doc:b0324fe47552 .
+doc:FactsdieselEngine cd:has_quality doc:FactsexhaustGasRecirculation .
+_:a0644e43b02cfb14f0b596a5e84dfdaf rdf:reifies <<( doc:FactsdieselEngine cd:has_quality doc:FactsexhaustGasRecirculation )>> ;
+	prov:wasDerivedFrom doc:b0324fe47552 .
+doc:FactsspecificApprovals a cco:DesignativeInformationContentEntity .
+_:d6d2a5d400b21a2334a24ef60d10dee7 rdf:reifies <<( doc:FactsspecificApprovals rdf:type cco:DesignativeInformationContentEntity )>> ;
+	prov:wasDerivedFrom doc:b0324fe47552 .
+doc:FactsrealTimeParameterLogging a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Performance_indicator> .
+_:d22510ad34c9e762c754cadda86426e rdf:reifies <<( doc:FactsrealTimeParameterLogging rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Performance_indicator> )>> ;
+	prov:wasDerivedFrom doc:b0324fe47552 .
+doc:FactsfleetScaleImplementations rdfs:label "fleet-scale implementations"@en .
+_:e55a664cad5bba73386888126c087d7c rdf:reifies <<( doc:FactsfleetScaleImplementations rdfs:label "fleet-scale implementations"@en )>> ;
+	prov:wasDerivedFrom doc:b0324fe47552 .
+doc:FactsengineType a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#item_type> .
+_:c2c73159cf184decac4e0d6b9d2e93ed rdf:reifies <<( doc:FactsengineType rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#item_type> )>> ;
+	prov:wasDerivedFrom doc:b0324fe47552 .
+doc:FactsvehicularSystems rdfs:label "vehicular systems"@en .
+_:a7db0a723f47fe0193e24d35986b1d2a rdf:reifies <<( doc:FactsvehicularSystems rdfs:label "vehicular systems"@en )>> ;
+	prov:wasDerivedFrom doc:b0324fe47552 .
+doc:Factsobd2_1 a cco:ArtifactIdentifier .
+_:f693ab24f494bf6057f5c78d7d452d21 rdf:reifies <<( doc:Factsobd2_1 rdf:type cco:ArtifactIdentifier )>> ;
+	prov:wasDerivedFrom doc:b0324fe47552 .
+doc:FactsedgeAi cd:reduces doc:Factslatency_2 .
+_:d2d9042379e9632a2a1dc27622290dba rdf:reifies <<( doc:FactsedgeAi cd:reduces doc:Factslatency_2 )>> ;
+	prov:wasDerivedFrom doc:b0324fe47552 .
+doc:FactsdataPrivacy_1 a cco:DesignativeInformationContentEntity .
+_:bd793ebd2b160aa1590a4913e79d3488 rdf:reifies <<( doc:FactsdataPrivacy_1 rdf:type cco:DesignativeInformationContentEntity )>> ;
+	prov:wasDerivedFrom doc:b0324fe47552 .
+doc:FactssootAndAshAccumulation rdfs:label "soot and ash accumulation"@en .
+_:be8da36e4b21725aaf8b54a277fbeb36 rdf:reifies <<( doc:FactssootAndAshAccumulation rdfs:label "soot and ash accumulation"@en )>> ;
+	prov:wasDerivedFrom doc:b0324fe47552 .
+doc:FactsmoreThanFiveSeconds rdfs:label "more than five seconds"@en .
+_:c6451f6d5b816152a60c03edcfab05e8 rdf:reifies <<( doc:FactsmoreThanFiveSeconds rdfs:label "more than five seconds"@en )>> ;
+	prov:wasDerivedFrom doc:b0324fe47552 .
+doc:FactscatalyticConverter a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Maintainable_item> .
+_:d85553ab88f365cf6d1d14dd51fc5142 rdf:reifies <<( doc:FactscatalyticConverter rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Maintainable_item> )>> ;
+	prov:wasDerivedFrom doc:b0324fe47552 .
+doc:FactsphysicalFaultSimulation rdfs:label "simulation-based fault construction"@en .
+_:eac488cc87cd25c0aa2523be4aeb7368 rdf:reifies <<( doc:FactsphysicalFaultSimulation rdfs:label "simulation-based fault construction"@en )>> ;
+	prov:wasDerivedFrom doc:b0324fe47552 .
+doc:Factsdpf rdfs:label "DPFs"@en .
+_:efbfffbd954d341839e85f10302e2fd7 rdf:reifies <<( doc:Factsdpf rdfs:label "DPFs"@en )>> ;
+	prov:wasDerivedFrom doc:b0324fe47552 .
+doc:FactsreducedBends a cco:DesignativeInformationContentEntity .
+_:c2149963b277239f860d2ed16a1978dc rdf:reifies <<( doc:FactsreducedBends rdf:type cco:DesignativeInformationContentEntity )>> ;
+	prov:wasDerivedFrom doc:b0324fe47552 .
+doc:Factsdpf cd:has_quality doc:FactssootAndAshAccumulation .
+_:a9515293c78392173f1bbb7aee58a2ff rdf:reifies <<( doc:Factsdpf cd:has_quality doc:FactssootAndAshAccumulation )>> ;
+	prov:wasDerivedFrom doc:b0324fe47552 .
+doc:FactsenginePerformance cd:is_adversely_affected_by doc:Factsmaintenance_5 .
+_:c7b0fc38401aecc31a58f4b4cec8443c rdf:reifies <<( doc:FactsenginePerformance cd:is_adversely_affected_by doc:Factsmaintenance_5 )>> ;
+	prov:wasDerivedFrom doc:b0324fe47552 .
+doc:DesignativeInformationContentEntity rdfs:label "exhaust design"@en .
+_:bf61266276cecd2b53c301f9951bff40 rdf:reifies <<( doc:DesignativeInformationContentEntity rdfs:label "exhaust design"@en )>> ;
+	prov:wasDerivedFrom doc:b0324fe47552 .
+doc:FactsedgeAi rdfs:label "measurement systems"@en .
+_:ecce9fc4f7356675c4b692a5870488ec rdf:reifies <<( doc:FactsedgeAi rdfs:label "measurement systems"@en )>> ;
+	prov:wasDerivedFrom doc:b0324fe47552 .
+doc:f7dd1e856edf a prov:Entity , schema:text ;
+	prov:generatedAtTime "2026-07-13T19:19:57.735927Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+	schema:position 2 ;
+	schema:identifier "f7dd1e856edf" .
+_:b2b4683034db024202eec5d12b733350 prov:wasDerivedFrom doc:f7dd1e856edf .
+_:bc2dd94eb693be111216bb475262a48e prov:wasDerivedFrom doc:f7dd1e856edf .
+_:ec610802622b813deda4c28511f16a75 prov:wasDerivedFrom doc:f7dd1e856edf .
+doc:FactsexhaustResistance rdfs:label "exhaust resistance" .
+_:c44627e249cb3efd8cf819160aeec46b rdf:reifies <<( doc:FactsexhaustResistance rdfs:label "exhaust resistance" )>> ;
+	prov:wasDerivedFrom doc:f7dd1e856edf .
+doc:Predictive_maintenance_model rdfs:label "GRU" .
+_:ad28c71901ea4060e006bdd2f4975fa2 rdf:reifies <<( doc:Predictive_maintenance_model rdfs:label "GRU" )>> ;
+	prov:wasDerivedFrom doc:f7dd1e856edf .
+doc:Factsobd2_1 a cco:Artifact .
+_:edd5edf2648fc3087f8147b6fe10787c rdf:reifies <<( doc:Factsobd2_1 rdf:type cco:Artifact )>> ;
+	prov:wasDerivedFrom doc:f7dd1e856edf .
+doc:FactsbackpressurePrediction rdfs:label "backpressure prediction" .
+_:e384b01171d96f40a7c5c38645feb7bc rdf:reifies <<( doc:FactsbackpressurePrediction rdfs:label "backpressure prediction" )>> ;
+	prov:wasDerivedFrom doc:f7dd1e856edf .
+doc:FactsedgeGateway a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Predictive_maintenance_model> .
+_:c12acb7084ea336dbcb878357bec1575 rdf:reifies <<( doc:FactsedgeGateway rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Predictive_maintenance_model> )>> ;
+	prov:wasDerivedFrom doc:f7dd1e856edf .
+doc:FactsexhaustAftertreatmentSystem rdfs:label "exhaust aftertreatment system" .
+_:e51f755fe2a4c39adf44f6bf3715db56 rdf:reifies <<( doc:FactsexhaustAftertreatmentSystem rdfs:label "exhaust aftertreatment system" )>> ;
+	prov:wasDerivedFrom doc:f7dd1e856edf .
+doc:FactsbackpressurePrediction a None:Future_state_forecast .
+_:d901c1f2828565ae5fff9819b7f9fef9 rdf:reifies <<( doc:FactsbackpressurePrediction rdf:type None:Future_state_forecast )>> ;
+	prov:wasDerivedFrom doc:f7dd1e856edf .
+doc:Factsebp a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Maintainable_item> .
+_:bf6b37150a928e9a57c353530bccb321 rdf:reifies <<( doc:Factsebp rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Maintainable_item> )>> ;
+	prov:wasDerivedFrom doc:f7dd1e856edf .
+doc:FactsexhaustFlow a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Performance_indicator> .
+_:ad83504ea89130ab6600fbd3848dacd0 rdf:reifies <<( doc:FactsexhaustFlow rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Performance_indicator> )>> ;
+	prov:wasDerivedFrom doc:f7dd1e856edf .
+doc:Factslive_obd2_streaming rdfs:label "live OBD2 streaming" .
+_:f53da24903e30769bbd4678f4d598792 rdf:reifies <<( doc:Factslive_obd2_streaming rdfs:label "live OBD2 streaming" )>> ;
+	prov:wasDerivedFrom doc:f7dd1e856edf .
+doc:Predictive_maintenance_model rdfs:label "edge-based inference" .
+_:eae5601eddc9fecf2a5cc9a20f3be2f7 rdf:reifies <<( doc:Predictive_maintenance_model rdfs:label "edge-based inference" )>> ;
+	prov:wasDerivedFrom doc:f7dd1e856edf .
+_:f6e7b04e9b32f536ab11659df94d2ea6 prov:wasDerivedFrom doc:f7dd1e856edf .
+_:cd1cdcebec1be05be38a25bf86913f2d prov:wasDerivedFrom doc:f7dd1e856edf .
+doc:FactscloudDependency rdfs:label "without cloud dependency" .
+_:e11106d4b216805de86ca5cdd3349c56 rdf:reifies <<( doc:FactscloudDependency rdfs:label "without cloud dependency" )>> ;
+	prov:wasDerivedFrom doc:f7dd1e856edf .
+doc:Factsaccuracy_7 rdfs:label "engine efficiency" .
+_:ebfa2167ff60643937aea610b91ab771 rdf:reifies <<( doc:Factsaccuracy_7 rdfs:label "engine efficiency" )>> ;
+	prov:wasDerivedFrom doc:f7dd1e856edf .
+doc:Factssoot a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Maintainable_item> .
+_:df9994a1840a4279a07438ff9907888c rdf:reifies <<( doc:Factssoot rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Maintainable_item> )>> ;
+	prov:wasDerivedFrom doc:f7dd1e856edf .
+_:b12fb3f11823ce6b7ffe8296b9f7e42b prov:wasDerivedFrom doc:f7dd1e856edf .
+doc:FactspowerLossPrediction a None:Future_state_forecast .
+_:a4bd55c0ab59a864cf4cbdf63062cdd2 rdf:reifies <<( doc:FactspowerLossPrediction rdf:type None:Future_state_forecast )>> ;
+	prov:wasDerivedFrom doc:f7dd1e856edf .
+doc:FactsdieselEngine rdfs:label "diesel engine" .
+_:befe3e81092f8fce9f7f25fac9fcc353 rdf:reifies <<( doc:FactsdieselEngine rdfs:label "diesel engine" )>> ;
+	prov:wasDerivedFrom doc:f7dd1e856edf .
+doc:FactssyntheticFaultGeneration rdfs:label "synthetic fault generation" .
+_:b3b065fd22784b13c8c228e18d731a39 rdf:reifies <<( doc:FactssyntheticFaultGeneration rdfs:label "synthetic fault generation" )>> ;
+	prov:wasDerivedFrom doc:f7dd1e856edf .
+_:d6994611361dd0c3a34c253eeec93829 prov:wasDerivedFrom doc:f7dd1e856edf .
+doc:Factslive_obd2_streaming a None:Predictive_maintenance_module_function .
+_:c65e26d4b95e3330d2be60d0b840da85 rdf:reifies <<( doc:Factslive_obd2_streaming rdf:type None:Predictive_maintenance_module_function )>> ;
+	prov:wasDerivedFrom doc:f7dd1e856edf .
+doc:Factsdpf rdfs:label "DPF" .
+_:adb050256ecbfdea1491a617038d9e88 rdf:reifies <<( doc:Factsdpf rdfs:label "DPF" )>> ;
+	prov:wasDerivedFrom doc:f7dd1e856edf .
+_:bb2ca6aafb3a49686832fe0d2cb78981 prov:wasDerivedFrom doc:f7dd1e856edf .
+_:d85553ab88f365cf6d1d14dd51fc5142 prov:wasDerivedFrom doc:f7dd1e856edf .
+doc:FactsexhaustFlow rdfs:label "exhaust flow" .
+_:a77683730511f43a10e01b5eb9fa14df rdf:reifies <<( doc:FactsexhaustFlow rdfs:label "exhaust flow" )>> ;
+	prov:wasDerivedFrom doc:f7dd1e856edf .
+doc:FactsyearThis None:has_interger_value 2024 .
+_:ebf925b3a2b905fcc0859b935686ac51 rdf:reifies <<( doc:FactsyearThis None:has_interger_value 2024 )>> ;
+	prov:wasDerivedFrom doc:f7dd1e856edf .
+doc:Factsash a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Maintainable_item> .
+_:b97bb9744e82418cee6b807693b50ac6 rdf:reifies <<( doc:Factsash rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Maintainable_item> )>> ;
+	prov:wasDerivedFrom doc:f7dd1e856edf .
+doc:FactstitleThis None:has_text_value "This study" .
+_:bf67067e3a42059f68d51b37ef3874e1 rdf:reifies <<( doc:FactstitleThis None:has_text_value "This study" )>> ;
+	prov:wasDerivedFrom doc:f7dd1e856edf .
+doc:Factsebp rdfs:label "exhaust backpressure" .
+_:f31ebd33a503c9fba5bafa12af1aa626 rdf:reifies <<( doc:Factsebp rdfs:label "exhaust backpressure" )>> ;
+	prov:wasDerivedFrom doc:f7dd1e856edf .
+doc:FactscatalyticConverter rdfs:label "catalytic converter" .
+_:b9c3346b9ca63fee6d9706ae9254eddd rdf:reifies <<( doc:FactscatalyticConverter rdfs:label "catalytic converter" )>> ;
+	prov:wasDerivedFrom doc:f7dd1e856edf .
+doc:FactsedgeGateway rdfs:label "Raspberry Pi-based edge gateway" .
+_:e2fe6cecc2682cedf204fca60ce35ec1 rdf:reifies <<( doc:FactsedgeGateway rdfs:label "Raspberry Pi-based edge gateway" )>> ;
+	prov:wasDerivedFrom doc:f7dd1e856edf .
+doc:Factsaccuracy_7 rdfs:label "conversion efficiency" .
+_:bdda8ebda65cc114d552dad68a482635 rdf:reifies <<( doc:Factsaccuracy_7 rdfs:label "conversion efficiency" )>> ;
+	prov:wasDerivedFrom doc:f7dd1e856edf .
+doc:FactsexhaustResistance a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Performance_indicator> .
+_:db350c31119898046b84e34c3f60612a rdf:reifies <<( doc:FactsexhaustResistance rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Performance_indicator> )>> ;
+	prov:wasDerivedFrom doc:f7dd1e856edf .
+doc:FactsthermalDegradation rdfs:label "thermal degradation" .
+_:e92445cf281a56c1135f5002ba7157cf rdf:reifies <<( doc:FactsthermalDegradation rdfs:label "thermal degradation" )>> ;
+	prov:wasDerivedFrom doc:f7dd1e856edf .
+doc:Factscan a cco:Artifact .
+_:b5b7d2e83f63b95426982b670773c8bb rdf:reifies <<( doc:Factscan rdf:type cco:Artifact )>> ;
+	prov:wasDerivedFrom doc:f7dd1e856edf .
+doc:Predictive_maintenance_model a None:Predictive_maintenance_module_function .
+_:bdf74ee51e25c04af7891e323ac6a1d9 rdf:reifies <<( doc:Predictive_maintenance_model rdf:type None:Predictive_maintenance_module_function )>> ;
+	prov:wasDerivedFrom doc:f7dd1e856edf .
+doc:Factsash rdfs:label "ash" .
+_:cb2d295f7d67b0e766d43bc438650e4e rdf:reifies <<( doc:Factsash rdfs:label "ash" )>> ;
+	prov:wasDerivedFrom doc:f7dd1e856edf .
+doc:Factssimulink_1 rdfs:label "Simulink" .
+_:dc049e7475ac904f381e59161830128a rdf:reifies <<( doc:Factssimulink_1 rdfs:label "Simulink" )>> ;
+	prov:wasDerivedFrom doc:f7dd1e856edf .
+_:ed70a7cdaf84412bc53fbc8bbf4c467e prov:wasDerivedFrom doc:f7dd1e856edf .
+doc:FactscloudDependency a None:Design_detail .
+_:b460149b002dce10d7df2bd660c1d90 rdf:reifies <<( doc:FactscloudDependency rdf:type None:Design_detail )>> ;
+	prov:wasDerivedFrom doc:f7dd1e856edf .
+doc:FactsedgeGateway None:has_predictive_maintenance_function doc:Factslive_obd2_streaming .
+_:d00d6d921981104c18be8f1836b7b352 rdf:reifies <<( doc:FactsedgeGateway None:has_predictive_maintenance_function doc:Factslive_obd2_streaming )>> ;
+	prov:wasDerivedFrom doc:f7dd1e856edf .
+doc:FactspressureLevels a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Performance_indicator> .
+_:c1c1e3f7802204bb4d445860e6f93986 rdf:reifies <<( doc:FactspressureLevels rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Performance_indicator> )>> ;
+	prov:wasDerivedFrom doc:f7dd1e856edf .
+doc:FactsinspectionBestPractice rdfs:label "regular inspections" .
+_:d0a5c6e0a10cd6001f981d911afa3684 rdf:reifies <<( doc:FactsinspectionBestPractice rdfs:label "regular inspections" )>> ;
+	prov:wasDerivedFrom doc:f7dd1e856edf .
+doc:Factscan rdfs:label "CAN" .
+_:c63de41fbd1aa33b70491fd05432b70b rdf:reifies <<( doc:Factscan rdfs:label "CAN" )>> ;
+	prov:wasDerivedFrom doc:f7dd1e856edf .
+doc:FactsexhaustAftertreatmentSystem a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Maintainable_item> .
+_:e9f78e0abcc876566bdb2c3e256992ac rdf:reifies <<( doc:FactsexhaustAftertreatmentSystem rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Maintainable_item> )>> ;
+	prov:wasDerivedFrom doc:f7dd1e856edf .
+doc:Factsmatlab_2 a cco:Algorithm .
+_:abcc3b28af1485b699e6400593d0bfc4 rdf:reifies <<( doc:Factsmatlab_2 rdf:type cco:Algorithm )>> ;
+	prov:wasDerivedFrom doc:f7dd1e856edf .
+doc:FactsthermalDegradation a None:Design_detail .
+_:aacfde4427a87b942434b818e6a73fa9 rdf:reifies <<( doc:FactsthermalDegradation rdf:type None:Design_detail )>> ;
+	prov:wasDerivedFrom doc:f7dd1e856edf .
+doc:FactspowerLossPrediction rdfs:label "power loss prediction" .
+_:efa9e0d63cb1c98687d5d9f782dd1857 rdf:reifies <<( doc:FactspowerLossPrediction rdfs:label "power loss prediction" )>> ;
+	prov:wasDerivedFrom doc:f7dd1e856edf .
+doc:Predictive_maintenance_model rdfs:label "LSTM" .
+_:fb16c64b46f34a85b74302f7838513d6 rdf:reifies <<( doc:Predictive_maintenance_model rdfs:label "LSTM" )>> ;
+	prov:wasDerivedFrom doc:f7dd1e856edf .
+doc:FactsinspectionBestPractice a None:Design_detail .
+_:df190c34b5b47be79b16723e62c2f0e6 rdf:reifies <<( doc:FactsinspectionBestPractice rdf:type None:Design_detail )>> ;
+	prov:wasDerivedFrom doc:f7dd1e856edf .
+doc:Factsobd2_1 rdfs:label "OBD-II/CAN" .
+_:e5357048b3b71a667a704fe2ebebfa91 rdf:reifies <<( doc:Factsobd2_1 rdfs:label "OBD-II/CAN" )>> ;
+	prov:wasDerivedFrom doc:f7dd1e856edf .
+doc:Factsmatlab_2 rdfs:label "MATLAB-based synthetic fault generation" .
+_:a5620b2b465ebc68bb737588797f85d rdf:reifies <<( doc:Factsmatlab_2 rdfs:label "MATLAB-based synthetic fault generation" )>> ;
+	prov:wasDerivedFrom doc:f7dd1e856edf .
+doc:FactssyntheticFaultGeneration a None:Predictive_maintenance_module_function .
+_:b4ad5f42da002d2701e94e716c621cd1 rdf:reifies <<( doc:FactssyntheticFaultGeneration rdf:type None:Predictive_maintenance_module_function )>> ;
+	prov:wasDerivedFrom doc:f7dd1e856edf .
+doc:FactspressureLevels rdfs:label "pressure levels" .
+_:dfa960345007044238ac32472ba93cd7 rdf:reifies <<( doc:FactspressureLevels rdfs:label "pressure levels" )>> ;
+	prov:wasDerivedFrom doc:f7dd1e856edf .
+doc:Factssoot rdfs:label "soot" .
+_:c523484d63ee12f9bb333c92d27044e4 rdf:reifies <<( doc:Factssoot rdfs:label "soot" )>> ;
+	prov:wasDerivedFrom doc:f7dd1e856edf .
+cco:DesignativeInformationContentEntity owl:sameAs cco:DescriptiveInformationContentEntity .

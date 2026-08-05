@@ -1,0 +1,392 @@
+@prefix None: <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD/seed#> .
+@prefix cco: <http://www.ontologyrepository.com/CommonCoreOntologies/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doc: <https://growgraph.dev/doc/cd64449792ac/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix schema: <https://schema.org/> .
+doc:f06c670405f8 a prov:Entity , schema:text ;
+	prov:generatedAtTime "2026-07-25T12:58:16.647129Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+	schema:position 0 ;
+	schema:identifier "f06c670405f8" .
+doc:FactsanisMhalla schema:givenName "Anis" .
+_:c82de5ceacad763df38167d5c7cc4a25 rdf:reifies <<( doc:FactsanisMhalla schema:givenName "Anis" )>> ;
+	prov:wasDerivedFrom doc:f06c670405f8 .
+doc:FactsanisMhalla schema:familyName "Messaoud" .
+_:aca4ba6d795fefa69b2ce2b194e6400 rdf:reifies <<( doc:FactsanisMhalla schema:familyName "Messaoud" )>> ;
+	prov:wasDerivedFrom doc:f06c670405f8 .
+doc:FactscurrentArticle_1 None:has_title doc:FactsarticleTitle1_17 .
+_:ec0abd22243371ad4bca0563907d220c rdf:reifies <<( doc:FactscurrentArticle_1 None:has_title doc:FactsarticleTitle1_17 )>> ;
+	prov:wasDerivedFrom doc:f06c670405f8 .
+doc:Factsmethod1 schema:name "fuzzy-logic maintenance scheduling method" .
+_:bc21fc9aabea0bb8a2998fe37d431fcb rdf:reifies <<( doc:Factsmethod1 schema:name "fuzzy-logic maintenance scheduling method" )>> ;
+	prov:wasDerivedFrom doc:f06c670405f8 .
+doc:FactsanisMhalla schema:affiliation doc:Factsenim .
+_:ddf0de9f6804a219d52d7213f6ad00a rdf:reifies <<( doc:FactsanisMhalla schema:affiliation doc:Factsenim )>> ;
+	prov:wasDerivedFrom doc:f06c670405f8 .
+doc:Factsenim a schema:Organization .
+_:d2621a905ac02c039e9fa7b3692ecef8 rdf:reifies <<( doc:Factsenim rdf:type schema:Organization )>> ;
+	prov:wasDerivedFrom doc:f06c670405f8 .
+doc:FactscurrentArticle_1 schema:mentions doc:Factsemu .
+_:fee6806fda18c1ec2634ec2f0a44c813 rdf:reifies <<( doc:FactscurrentArticle_1 schema:mentions doc:Factsemu )>> ;
+	prov:wasDerivedFrom doc:f06c670405f8 .
+doc:Factsemu a None:Maintainable_item .
+_:f95676df943a7c8c2a36b28374ab2e3e rdf:reifies <<( doc:Factsemu rdf:type None:Maintainable_item )>> ;
+	prov:wasDerivedFrom doc:f06c670405f8 .
+doc:FactscurrentArticle_1 schema:author doc:FactsanisMhalla .
+_:b67a45f3ce7f2388c13e62628311ac45 rdf:reifies <<( doc:FactscurrentArticle_1 schema:author doc:FactsanisMhalla )>> ;
+	prov:wasDerivedFrom doc:f06c670405f8 .
+doc:Factsenim schema:location doc:FactsmonastirTunisia .
+_:c4143acb83819cef7dcf3e98d97c8e5a rdf:reifies <<( doc:Factsenim schema:location doc:FactsmonastirTunisia )>> ;
+	prov:wasDerivedFrom doc:f06c670405f8 .
+doc:FactscurrentArticle_1 schema:mentions doc:FactscurrentArticle_1 .
+_:b3b5e05741cf43898c030920215dd44d rdf:reifies <<( doc:FactscurrentArticle_1 schema:mentions doc:FactscurrentArticle_1 )>> ;
+	prov:wasDerivedFrom doc:f06c670405f8 .
+doc:FactssahelMetro schema:name "Sahel metro" .
+_:cb3bcdc098a195c7ff763e4360f69326 rdf:reifies <<( doc:FactssahelMetro schema:name "Sahel metro" )>> ;
+	prov:wasDerivedFrom doc:f06c670405f8 .
+doc:FactscurrentArticle_1 schema:name "maintenance scheduling" .
+_:e183bc034545dfb5850ab6de7ddbbcd6 rdf:reifies <<( doc:FactscurrentArticle_1 schema:name "maintenance scheduling" )>> ;
+	prov:wasDerivedFrom doc:f06c670405f8 .
+doc:FactscurrentArticle_1 a None:Predictive_Maintenance_Article .
+_:a49b8d95b11a99e66bd29556b071a633 rdf:reifies <<( doc:FactscurrentArticle_1 rdf:type None:Predictive_Maintenance_Article )>> ;
+	prov:wasDerivedFrom doc:f06c670405f8 .
+doc:FactsmonastirTunisia schema:name "Monastir, Tunisia" .
+_:ddcb482843766e7c9a1dd9630018bdf6 rdf:reifies <<( doc:FactsmonastirTunisia schema:name "Monastir, Tunisia" )>> ;
+	prov:wasDerivedFrom doc:f06c670405f8 .
+doc:Factsenim schema:name "COSYS Department" .
+_:d34e04a49d773a418873ab923bc343e6 rdf:reifies <<( doc:Factsenim schema:name "COSYS Department" )>> ;
+	prov:wasDerivedFrom doc:f06c670405f8 .
+doc:FactslilleFrance schema:name "Lille, France" .
+_:c1551ee6c39a0fcfacad12f9ca6931a4 rdf:reifies <<( doc:FactslilleFrance schema:name "Lille, France" )>> ;
+	prov:wasDerivedFrom doc:f06c670405f8 .
+doc:Factsenim schema:parentOrganization doc:Factsenim .
+_:f2ad5d2752e1f737de3a4e80fb789044 rdf:reifies <<( doc:Factsenim schema:parentOrganization doc:Factsenim )>> ;
+	prov:wasDerivedFrom doc:f06c670405f8 .
+doc:FactscurrentArticle_1 schema:mentions doc:Factsmethod1 .
+_:f12a514483917f2de2de33dd0f122d80 rdf:reifies <<( doc:FactscurrentArticle_1 schema:mentions doc:Factsmethod1 )>> ;
+	prov:wasDerivedFrom doc:f06c670405f8 .
+doc:FactsmonastirTunisia a schema:Place .
+_:c27ba059e4f7d68dcae9982f16c548e9 rdf:reifies <<( doc:FactsmonastirTunisia rdf:type schema:Place )>> ;
+	prov:wasDerivedFrom doc:f06c670405f8 .
+doc:Factsenim schema:location doc:FactslilleFrance .
+_:c36d714eb7b7c11fcfd524c4be9f02b rdf:reifies <<( doc:Factsenim schema:location doc:FactslilleFrance )>> ;
+	prov:wasDerivedFrom doc:f06c670405f8 .
+doc:FactsfuzzyLogic_1 a schema:Thing .
+_:e7ac8224ba80aebb10f4940e8b3d2a2f rdf:reifies <<( doc:FactsfuzzyLogic_1 rdf:type schema:Thing )>> ;
+	prov:wasDerivedFrom doc:f06c670405f8 .
+doc:FactscurrentArticle_1 schema:mentions doc:FactssahelMetro .
+_:c51aac7c22fa8855b9df4ef12be66805 rdf:reifies <<( doc:FactscurrentArticle_1 schema:mentions doc:FactssahelMetro )>> ;
+	prov:wasDerivedFrom doc:f06c670405f8 .
+doc:FactsfuzzyLogic_1 schema:name "fuzzy logic" .
+_:f61bb945ca560fc0274b5e55026f6f1d rdf:reifies <<( doc:FactsfuzzyLogic_1 schema:name "fuzzy logic" )>> ;
+	prov:wasDerivedFrom doc:f06c670405f8 .
+doc:Factsmethod1 a cco:Algorithm .
+_:cd569311f886600c33ed2f971b381e69 rdf:reifies <<( doc:Factsmethod1 rdf:type cco:Algorithm )>> ;
+	prov:wasDerivedFrom doc:f06c670405f8 .
+doc:Factsenim schema:name "Laboratory of Automation, Electrical Systems Environment (LAESE)" .
+_:c5527fcecd46d590accf13763d42afc0 rdf:reifies <<( doc:Factsenim schema:name "Laboratory of Automation, Electrical Systems Environment (LAESE)" )>> ;
+	prov:wasDerivedFrom doc:f06c670405f8 .
+doc:FactscurrentArticle_1 schema:about doc:FactsrailwayTransportNetwork .
+_:a8d67efa153be098affc5a0864208500 rdf:reifies <<( doc:FactscurrentArticle_1 schema:about doc:FactsrailwayTransportNetwork )>> ;
+	prov:wasDerivedFrom doc:f06c670405f8 .
+doc:FactssahelMetro a schema:Place .
+_:a71933f46a899d8aec51ee51b53be45b rdf:reifies <<( doc:FactssahelMetro rdf:type schema:Place )>> ;
+	prov:wasDerivedFrom doc:f06c670405f8 .
+doc:FactscurrentArticle_1 schema:keywords "Safety" .
+_:f1bd70cbba39677e5196e3247bce2c00 rdf:reifies <<( doc:FactscurrentArticle_1 schema:keywords "Safety" )>> ;
+	prov:wasDerivedFrom doc:f06c670405f8 .
+doc:Factsenim schema:name "Laboratory of Automatic Signal and Image Processing (LARATSI)" .
+_:b15ec23e8cbb6ee151fbda3969ae097e rdf:reifies <<( doc:Factsenim schema:name "Laboratory of Automatic Signal and Image Processing (LARATSI)" )>> ;
+	prov:wasDerivedFrom doc:f06c670405f8 .
+doc:FactsrollingStock schema:name "rolling stock" .
+_:f93e9f3960f5ff1aeb3e8f4e5b56e3a9 rdf:reifies <<( doc:FactsrollingStock schema:name "rolling stock" )>> ;
+	prov:wasDerivedFrom doc:f06c670405f8 .
+doc:FactscurrentArticle_1 schema:keywords "Maintenance scheduling" .
+_:a8a5e3ff2dd7dbba9aa3b6c9d7858ba7 rdf:reifies <<( doc:FactscurrentArticle_1 schema:keywords "Maintenance scheduling" )>> ;
+	prov:wasDerivedFrom doc:f06c670405f8 .
+doc:FactsanisMhalla a schema:Person .
+_:d6fb9839e7032c35bb9a7c90b3262f93 rdf:reifies <<( doc:FactsanisMhalla rdf:type schema:Person )>> ;
+	prov:wasDerivedFrom doc:f06c670405f8 .
+doc:FactslilleFrance a schema:Place .
+_:cd73646f1d2c31a03df7c4c32f87a044 rdf:reifies <<( doc:FactslilleFrance rdf:type schema:Place )>> ;
+	prov:wasDerivedFrom doc:f06c670405f8 .
+doc:FactscurrentArticle_1 a schema:Action .
+_:d3b5791c811d373ff77ce5d0f6c84e80 rdf:reifies <<( doc:FactscurrentArticle_1 rdf:type schema:Action )>> ;
+	prov:wasDerivedFrom doc:f06c670405f8 .
+doc:FactscurrentArticle_1 schema:keywords "Railway transport networks" .
+_:bd7ce8ef9bf96027bf029a74ab674c8a rdf:reifies <<( doc:FactscurrentArticle_1 schema:keywords "Railway transport networks" )>> ;
+	prov:wasDerivedFrom doc:f06c670405f8 .
+doc:Factsenim schema:name "ESTAS Laboratory" .
+_:a22bc19ead7bdd2c77ae8af659d56a0d rdf:reifies <<( doc:Factsenim schema:name "ESTAS Laboratory" )>> ;
+	prov:wasDerivedFrom doc:f06c670405f8 .
+doc:FactscurrentArticle_1 schema:about doc:FactsfuzzyLogic_1 .
+_:bd337282e47886dcaa3b0584e754d3ed rdf:reifies <<( doc:FactscurrentArticle_1 schema:about doc:FactsfuzzyLogic_1 )>> ;
+	prov:wasDerivedFrom doc:f06c670405f8 .
+doc:FactscurrentArticle_1 a schema:ScholarlyArticle .
+_:f75ef6a2e880286c1ab4a03b6412509c rdf:reifies <<( doc:FactscurrentArticle_1 rdf:type schema:ScholarlyArticle )>> ;
+	prov:wasDerivedFrom doc:f06c670405f8 .
+doc:FactsarticleTitle1_17 a None:Article_title .
+_:fb029afa38c083c83f2814700fd1b6f6 rdf:reifies <<( doc:FactsarticleTitle1_17 rdf:type None:Article_title )>> ;
+	prov:wasDerivedFrom doc:f06c670405f8 .
+doc:FactsanisMhalla schema:email "sarra.mellouli@enim.u-monastir.tn" .
+_:e22fb2aaec2e835fda2fc7b6f5d33c4e rdf:reifies <<( doc:FactsanisMhalla schema:email "sarra.mellouli@enim.u-monastir.tn" )>> ;
+	prov:wasDerivedFrom doc:f06c670405f8 .
+doc:FactsanisMhalla schema:email "simon.collart-dutilleul@univ-eiffel.fr" .
+_:bc282cdb458ccae45be1e0cbf64f9ada rdf:reifies <<( doc:FactsanisMhalla schema:email "simon.collart-dutilleul@univ-eiffel.fr" )>> ;
+	prov:wasDerivedFrom doc:f06c670405f8 .
+doc:Factsmethod1 schema:name "algorithm for inserting planned machine recovery tasks" .
+_:d2af1305908414bbd1faab01b035620 rdf:reifies <<( doc:Factsmethod1 schema:name "algorithm for inserting planned machine recovery tasks" )>> ;
+	prov:wasDerivedFrom doc:f06c670405f8 .
+doc:FactsanisMhalla schema:email "anis.mhalla@enim.rnu.tn" .
+_:c6a8c41b26cd39041bfb185f3d8cfdb3 rdf:reifies <<( doc:FactsanisMhalla schema:email "anis.mhalla@enim.rnu.tn" )>> ;
+	prov:wasDerivedFrom doc:f06c670405f8 .
+doc:FactsanisMhalla schema:givenName "Hassani" .
+_:d8756f6fd9055b6f084ad7d315c7ba59 rdf:reifies <<( doc:FactsanisMhalla schema:givenName "Hassani" )>> ;
+	prov:wasDerivedFrom doc:f06c670405f8 .
+doc:FactscurrentArticle_1 schema:keywords "Fuzzy logic" .
+_:f0e69b5506ba90ebcfe58c2ab37731d7 rdf:reifies <<( doc:FactscurrentArticle_1 schema:keywords "Fuzzy logic" )>> ;
+	prov:wasDerivedFrom doc:f06c670405f8 .
+doc:FactsanisMhalla schema:givenName "Simon" .
+_:f847bc523ad5d8f714896800e16592cd rdf:reifies <<( doc:FactsanisMhalla schema:givenName "Simon" )>> ;
+	prov:wasDerivedFrom doc:f06c670405f8 .
+doc:FactsanisMhalla schema:email "hassani.messaoud@enim.rnu.tn" .
+_:f1604af1b4d2028721454ae57929ab75 rdf:reifies <<( doc:FactsanisMhalla schema:email "hassani.messaoud@enim.rnu.tn" )>> ;
+	prov:wasDerivedFrom doc:f06c670405f8 .
+doc:FactsanisMhalla schema:familyName "Mhalla" .
+_:efe962ad8d4775ca6c6062fb8f803418 rdf:reifies <<( doc:FactsanisMhalla schema:familyName "Mhalla" )>> ;
+	prov:wasDerivedFrom doc:f06c670405f8 .
+doc:Factsmethod1 schema:about doc:FactscurrentArticle_1 .
+_:df4b8efaf2ecab831f7ef55afcb7f05c rdf:reifies <<( doc:Factsmethod1 schema:about doc:FactscurrentArticle_1 )>> ;
+	prov:wasDerivedFrom doc:f06c670405f8 .
+doc:Factsemu schema:name "railway equipment item" .
+_:a9f9493e9aceeab43aaac9267071e925 rdf:reifies <<( doc:Factsemu schema:name "railway equipment item" )>> ;
+	prov:wasDerivedFrom doc:f06c670405f8 .
+doc:FactsrailwayTransportNetwork schema:name "railway transport network" .
+_:aa1fc37a2aad09b2ef75b089c469779a rdf:reifies <<( doc:FactsrailwayTransportNetwork schema:name "railway transport network" )>> ;
+	prov:wasDerivedFrom doc:f06c670405f8 .
+doc:FactsanisMhalla schema:familyName "Mellouli" .
+_:b13552c82efb263ca713a70b60d68093 rdf:reifies <<( doc:FactsanisMhalla schema:familyName "Mellouli" )>> ;
+	prov:wasDerivedFrom doc:f06c670405f8 .
+doc:FactscurrentArticle_1 schema:name "preventive maintenance operation" .
+_:bf02d197d247757ac398925ab342e76f rdf:reifies <<( doc:FactscurrentArticle_1 schema:name "preventive maintenance operation" )>> ;
+	prov:wasDerivedFrom doc:f06c670405f8 .
+doc:FactscurrentArticle_1 schema:about doc:FactscurrentArticle_1 .
+_:a995cb703e776a885c9ddc6b8157eb33 rdf:reifies <<( doc:FactscurrentArticle_1 schema:about doc:FactscurrentArticle_1 )>> ;
+	prov:wasDerivedFrom doc:f06c670405f8 .
+doc:FactsrailwayTransportNetwork a schema:Thing .
+_:df68d7f3216fa64059683cbfa87fc18d rdf:reifies <<( doc:FactsrailwayTransportNetwork rdf:type schema:Thing )>> ;
+	prov:wasDerivedFrom doc:f06c670405f8 .
+doc:Factsenim schema:name "Gustave Eiffel University" .
+_:a4b5f2c6da15455f75d55d6bd6e8ef11 rdf:reifies <<( doc:Factsenim schema:name "Gustave Eiffel University" )>> ;
+	prov:wasDerivedFrom doc:f06c670405f8 .
+doc:FactscurrentArticle_1 schema:mentions doc:FactsrollingStock .
+_:f89f974e94b11480ba5b624fd5308d41 rdf:reifies <<( doc:FactscurrentArticle_1 schema:mentions doc:FactsrollingStock )>> ;
+	prov:wasDerivedFrom doc:f06c670405f8 .
+doc:FactscurrentArticle_1 schema:name "corrective maintenance operation" .
+_:c3e2bedfa4a362b4a69837dab295708a rdf:reifies <<( doc:FactscurrentArticle_1 schema:name "corrective maintenance operation" )>> ;
+	prov:wasDerivedFrom doc:f06c670405f8 .
+doc:FactsrollingStock a None:Maintainable_item .
+_:f309e167fcef0190b44345660214a332 rdf:reifies <<( doc:FactsrollingStock rdf:type None:Maintainable_item )>> ;
+	prov:wasDerivedFrom doc:f06c670405f8 .
+doc:FactsanisMhalla schema:familyName "Collart-Dutilleul" .
+_:be1329c19be006cf21ecd1c3d031669c rdf:reifies <<( doc:FactsanisMhalla schema:familyName "Collart-Dutilleul" )>> ;
+	prov:wasDerivedFrom doc:f06c670405f8 .
+doc:FactscurrentArticle_1 schema:abstract "This paper presents a fuzzy-logic method for integrating preventive and corrective maintenance operations into railway transport networks, inserting planned machine recovery tasks during rolling-stock availability periods to reduce downtime and preserve network stability and safety." .
+_:fc2a1e0390b860470e2d530bcf3c7490 rdf:reifies <<( doc:FactscurrentArticle_1 schema:abstract "This paper presents a fuzzy-logic method for integrating preventive and corrective maintenance operations into railway transport networks, inserting planned machine recovery tasks during rolling-stock availability periods to reduce downtime and preserve network stability and safety." )>> ;
+	prov:wasDerivedFrom doc:f06c670405f8 .
+doc:Factsmethod1 schema:name "algorithm for inserting recovery tasks with scheduling modification" .
+_:cbedf3f3b1c7d7c70ec753aa6cdf6274 rdf:reifies <<( doc:Factsmethod1 schema:name "algorithm for inserting recovery tasks with scheduling modification" )>> ;
+	prov:wasDerivedFrom doc:f06c670405f8 .
+doc:Factsenim schema:name "National Engineering School of Monastir (ENIM)" .
+_:a15b3a0207ec5107c20b7b41397493a rdf:reifies <<( doc:Factsenim schema:name "National Engineering School of Monastir (ENIM)" )>> ;
+	prov:wasDerivedFrom doc:f06c670405f8 .
+doc:FactscurrentArticle_1 a schema:Thing .
+_:dc0c29785ad6ed290ce0b3948f090017 rdf:reifies <<( doc:FactscurrentArticle_1 rdf:type schema:Thing )>> ;
+	prov:wasDerivedFrom doc:f06c670405f8 .
+doc:FactsarticleTitle1_17 None:has_text_value "Fuzzy Predictive Maintenance for Railway Transport Networks" .
+_:ef4c8874edb7caf75844e49613c22830 rdf:reifies <<( doc:FactsarticleTitle1_17 None:has_text_value "Fuzzy Predictive Maintenance for Railway Transport Networks" )>> ;
+	prov:wasDerivedFrom doc:f06c670405f8 .
+doc:FactsanisMhalla schema:givenName "Sarra" .
+_:d237a44540fed44cdc471918d4fb81da rdf:reifies <<( doc:FactsanisMhalla schema:givenName "Sarra" )>> ;
+	prov:wasDerivedFrom doc:f06c670405f8 .
+doc:7802c96ac5ff a prov:Entity , schema:text ;
+	prov:generatedAtTime "2026-07-25T12:58:16.651128Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+	schema:position 1 ;
+	schema:identifier "7802c96ac5ff" .
+doc:FactsfuzzyLogic_1 a cco:Algorithm .
+_:cbea27c3040d067f8925038246994657 rdf:reifies <<( doc:FactsfuzzyLogic_1 rdf:type cco:Algorithm )>> ;
+	prov:wasDerivedFrom doc:7802c96ac5ff .
+doc:FactsmetroPtDataset schema:variable doc:FactsgpsInformation .
+_:f7fd99f87d2e2739697027f4910da20a rdf:reifies <<( doc:FactsmetroPtDataset schema:variable doc:FactsgpsInformation )>> ;
+	prov:wasDerivedFrom doc:7802c96ac5ff .
+doc:FactsmetroPtDataset schema:about doc:FactsfaultPrediction .
+_:df970f314a2d59ebe81ed2c0c2a7ba31 rdf:reifies <<( doc:FactsmetroPtDataset schema:about doc:FactsfaultPrediction )>> ;
+	prov:wasDerivedFrom doc:7802c96ac5ff .
+doc:FactsanalogSensorSignals a None:Data_variable .
+_:d4790c2e3fed9aae2dbff271955714dc rdf:reifies <<( doc:FactsanalogSensorSignals rdf:type None:Data_variable )>> ;
+	prov:wasDerivedFrom doc:7802c96ac5ff .
+doc:FactssparseAutoencoderNetwork a cco:Algorithm .
+_:f9afcba69380c42aa496c1c6a6e4fef8 rdf:reifies <<( doc:FactssparseAutoencoderNetwork rdf:type cco:Algorithm )>> ;
+	prov:wasDerivedFrom doc:7802c96ac5ff .
+doc:FactssparseAutoencoderNetwork cco:is_about doc:Factsemu .
+_:d51007318ec34c5c5bc73d5ef93063bb rdf:reifies <<( doc:FactssparseAutoencoderNetwork cco:is_about doc:Factsemu )>> ;
+	prov:wasDerivedFrom doc:7802c96ac5ff .
+doc:FactsmetroPtDataset a schema:Dataset .
+_:bf2a0d412d61c3241a2cf2b77d743e55 rdf:reifies <<( doc:FactsmetroPtDataset rdf:type schema:Dataset )>> ;
+	prov:wasDerivedFrom doc:7802c96ac5ff .
+doc:FactscurrentArticle_1 cco:is_about doc:Factsemu .
+_:e248acc468bb0ac7bf2fddc871f13e1 rdf:reifies <<( doc:FactscurrentArticle_1 cco:is_about doc:Factsemu )>> ;
+	prov:wasDerivedFrom doc:7802c96ac5ff .
+doc:FactsdeepLearningApproach a cco:Algorithm .
+_:bc0f16941f57cc66a35f02929fcbdc67 rdf:reifies <<( doc:FactsdeepLearningApproach rdf:type cco:Algorithm )>> ;
+	prov:wasDerivedFrom doc:7802c96ac5ff .
+doc:FactsmetroPtDataset schema:variable doc:FactsanalogSensorSignals .
+_:fe9e94eb1d5130652e2ffc9ec508254d rdf:reifies <<( doc:FactsmetroPtDataset schema:variable doc:FactsanalogSensorSignals )>> ;
+	prov:wasDerivedFrom doc:7802c96ac5ff .
+doc:FactsgpsInformation a None:Data_variable .
+_:b2f391209ee894aa866f6a53d59d030e rdf:reifies <<( doc:FactsgpsInformation rdf:type None:Data_variable )>> ;
+	prov:wasDerivedFrom doc:7802c96ac5ff .
+doc:FactscomplexFuzzySystem a cco:Algorithm .
+_:a27620b9ae1e658a758d5e960f42b6fa rdf:reifies <<( doc:FactscomplexFuzzySystem rdf:type cco:Algorithm )>> ;
+	prov:wasDerivedFrom doc:7802c96ac5ff .
+_:d3b5791c811d373ff77ce5d0f6c84e80 prov:wasDerivedFrom doc:7802c96ac5ff .
+doc:FactsmaintenanceEstimation a None:Health_assessment .
+_:b1774b060039f5a9722a1f1b6e55dfbc rdf:reifies <<( doc:FactsmaintenanceEstimation rdf:type None:Health_assessment )>> ;
+	prov:wasDerivedFrom doc:7802c96ac5ff .
+_:a49b8d95b11a99e66bd29556b071a633 prov:wasDerivedFrom doc:7802c96ac5ff .
+doc:FactscurrentArticle_1 cco:is_about doc:FactscurrentArticle_1 .
+_:ed97fd4b8933662eb4e769994575a14f rdf:reifies <<( doc:FactscurrentArticle_1 cco:is_about doc:FactscurrentArticle_1 )>> ;
+	prov:wasDerivedFrom doc:7802c96ac5ff .
+doc:FactsfaultPrediction a None:Deviation_detection .
+_:a12427ebcc6c8d02b96806d4066df007 rdf:reifies <<( doc:FactsfaultPrediction rdf:type None:Deviation_detection )>> ;
+	prov:wasDerivedFrom doc:7802c96ac5ff .
+doc:FactsfaultPrediction cco:is_about doc:Factsemu .
+_:b84bde71007a6e8cde59dfa0309ac83b rdf:reifies <<( doc:FactsfaultPrediction cco:is_about doc:Factsemu )>> ;
+	prov:wasDerivedFrom doc:7802c96ac5ff .
+doc:FactsfuzzyLogic_1 cco:is_about doc:FactscurrentArticle_1 .
+_:b22e0bac8f36de54c5f32614febeb27d rdf:reifies <<( doc:FactsfuzzyLogic_1 cco:is_about doc:FactscurrentArticle_1 )>> ;
+	prov:wasDerivedFrom doc:7802c96ac5ff .
+doc:FactssahelMetro schema:location doc:Factsportugal .
+_:ffb2e1de706182fb2a6e5d6411682c7c rdf:reifies <<( doc:FactssahelMetro schema:location doc:Factsportugal )>> ;
+	prov:wasDerivedFrom doc:7802c96ac5ff .
+doc:FactscomplexFuzzySystem cco:is_about doc:Factsemu .
+_:d06e3c0ae56a075a5f16a5a8a8361293 rdf:reifies <<( doc:FactscomplexFuzzySystem cco:is_about doc:Factsemu )>> ;
+	prov:wasDerivedFrom doc:7802c96ac5ff .
+doc:FactsrailwayTransportNetwork a schema:TransportationSystem .
+_:ead176885d261b535d749bff94a6ce42 rdf:reifies <<( doc:FactsrailwayTransportNetwork rdf:type schema:TransportationSystem )>> ;
+	prov:wasDerivedFrom doc:7802c96ac5ff .
+_:f95676df943a7c8c2a36b28374ab2e3e prov:wasDerivedFrom doc:7802c96ac5ff .
+doc:FactscurrentArticle_1 a None:Predictive_maintenance_model .
+_:d4154460110242d8ccbd0ea0ff0f6607 rdf:reifies <<( doc:FactscurrentArticle_1 rdf:type None:Predictive_maintenance_model )>> ;
+	prov:wasDerivedFrom doc:7802c96ac5ff .
+doc:FactssahelMetro a schema:Organization .
+_:f311b9a8b2e600db575c233a9361e859 rdf:reifies <<( doc:FactssahelMetro rdf:type schema:Organization )>> ;
+	prov:wasDerivedFrom doc:7802c96ac5ff .
+doc:FactscurrentArticle_1 cco:is_about doc:FactsmetroPtDataset .
+_:ec2360e194fd866c03524400314e3274 rdf:reifies <<( doc:FactscurrentArticle_1 cco:is_about doc:FactsmetroPtDataset )>> ;
+	prov:wasDerivedFrom doc:7802c96ac5ff .
+doc:FactsmetroPtDataset schema:locationCreated doc:FactssahelMetro .
+_:c13b46ce80c2ad3cbbecc15e6ebf3d4d rdf:reifies <<( doc:FactsmetroPtDataset schema:locationCreated doc:FactssahelMetro )>> ;
+	prov:wasDerivedFrom doc:7802c96ac5ff .
+doc:FactsfaultPrediction a None:Fault_detection .
+_:bb15132969b9af389b02698eb7ad52cc rdf:reifies <<( doc:FactsfaultPrediction rdf:type None:Fault_detection )>> ;
+	prov:wasDerivedFrom doc:7802c96ac5ff .
+doc:Factsportugal a schema:Country .
+_:c908350e0c1e29bf86c2b6f86adc1cef rdf:reifies <<( doc:Factsportugal rdf:type schema:Country )>> ;
+	prov:wasDerivedFrom doc:7802c96ac5ff .
+doc:FactscurrentArticle_1 cco:is_about doc:FactsfuzzyLogic_1 .
+_:a08ed1808948ca624681dfb5b35bb979 rdf:reifies <<( doc:FactscurrentArticle_1 cco:is_about doc:FactsfuzzyLogic_1 )>> ;
+	prov:wasDerivedFrom doc:7802c96ac5ff .
+doc:c0e4ccf41507 a prov:Entity , schema:text ;
+	prov:generatedAtTime "2026-07-25T12:58:16.653129Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+	schema:position 2 ;
+	schema:identifier "c0e4ccf41507" .
+doc:FactsmaintenanceInfrastructure rdfs:label "Maintenance infrastructure"@en .
+_:dd3f3d78cc0fbf8cfdc776fd1747d829 rdf:reifies <<( doc:FactsmaintenanceInfrastructure rdfs:label "Maintenance infrastructure"@en )>> ;
+	prov:wasDerivedFrom doc:c0e4ccf41507 .
+doc:FactscurrentArticle_1 None:has_publication_year doc:FactspublicationYear2020 .
+_:e7ac95f72c4573c8502c4aebfc926839 rdf:reifies <<( doc:FactscurrentArticle_1 None:has_publication_year doc:FactspublicationYear2020 )>> ;
+	prov:wasDerivedFrom doc:c0e4ccf41507 .
+doc:FactsmaintenanceInfrastructure a None:Maintainable_item .
+_:ecae0487e4a211c6f031eab4c859c5a9 rdf:reifies <<( doc:FactsmaintenanceInfrastructure rdf:type None:Maintainable_item )>> ;
+	prov:wasDerivedFrom doc:c0e4ccf41507 .
+doc:FactsrailwaySystem rdfs:label "Railway system"@en .
+_:a22a94e49a56a992674d9c7a4c98ea8a rdf:reifies <<( doc:FactsrailwaySystem rdfs:label "Railway system"@en )>> ;
+	prov:wasDerivedFrom doc:c0e4ccf41507 .
+doc:FactspublicationYear2020 None:has_interger_value 2020 .
+_:cde542015559ee19a1f9a2e59e593ffc rdf:reifies <<( doc:FactspublicationYear2020 None:has_interger_value 2020 )>> ;
+	prov:wasDerivedFrom doc:c0e4ccf41507 .
+doc:FactscurrentArticle_1 rdfs:label "Integrated maintenance model"@en .
+_:aebea13f0d9dbc2e99190016c1b97fd9 rdf:reifies <<( doc:FactscurrentArticle_1 rdfs:label "Integrated maintenance model"@en )>> ;
+	prov:wasDerivedFrom doc:c0e4ccf41507 .
+doc:FactsprognosticFunction a None:Future_state_forecast .
+_:ae5fd97d4bc47223ca8d20aa105ddc1 rdf:reifies <<( doc:FactsprognosticFunction rdf:type None:Future_state_forecast )>> ;
+	prov:wasDerivedFrom doc:c0e4ccf41507 .
+doc:FactscurrentArticle_1 rdfs:label "Work of Catelani et al."@en .
+_:fbd538d7f715ed599c7a516a28535d23 rdf:reifies <<( doc:FactscurrentArticle_1 rdfs:label "Work of Catelani et al."@en )>> ;
+	prov:wasDerivedFrom doc:c0e4ccf41507 .
+doc:FactsrailwayInfrastructureManagers rdfs:label "Railway infrastructure managers"@en .
+_:fbbd450bb037452fded4e18d09356474 rdf:reifies <<( doc:FactsrailwayInfrastructureManagers rdfs:label "Railway infrastructure managers"@en )>> ;
+	prov:wasDerivedFrom doc:c0e4ccf41507 .
+doc:FactscurrentArticle_1 None:has_design_detail doc:FactsmaintenanceStrategy .
+_:fc2cc96d36b9dbd65644fd4d895ed674 rdf:reifies <<( doc:FactscurrentArticle_1 None:has_design_detail doc:FactsmaintenanceStrategy )>> ;
+	prov:wasDerivedFrom doc:c0e4ccf41507 .
+doc:FactsrailwaySystem a None:Maintainable_item .
+_:a8ea0f66fdd487555d31189b3228154c rdf:reifies <<( doc:FactsrailwaySystem rdf:type None:Maintainable_item )>> ;
+	prov:wasDerivedFrom doc:c0e4ccf41507 .
+doc:FactscurrentArticle_1 None:has_predictive_maintenance_function doc:FactsprognosticFunction .
+_:c0de938aa0bf06ba184bc09b511a67c8 rdf:reifies <<( doc:FactscurrentArticle_1 None:has_predictive_maintenance_function doc:FactsprognosticFunction )>> ;
+	prov:wasDerivedFrom doc:c0e4ccf41507 .
+doc:FactsrepairTimeIndicator rdfs:label "Repair time"@en .
+_:c94d634c2a1a103a51c1644a5f9bbc64 rdf:reifies <<( doc:FactsrepairTimeIndicator rdfs:label "Repair time"@en )>> ;
+	prov:wasDerivedFrom doc:c0e4ccf41507 .
+doc:FactsmaintenanceStrategy rdfs:label "Suggested maintenance strategy"@en .
+_:c811759f7a5a65adcf49db716e3523ea rdf:reifies <<( doc:FactsmaintenanceStrategy rdfs:label "Suggested maintenance strategy"@en )>> ;
+	prov:wasDerivedFrom doc:c0e4ccf41507 .
+_:a49b8d95b11a99e66bd29556b071a633 prov:wasDerivedFrom doc:c0e4ccf41507 .
+doc:FactsoperatingCostsIndicator rdfs:label "Operating costs"@en .
+_:f414be8c1a3a5decb1dc95fcf267f2d9 rdf:reifies <<( doc:FactsoperatingCostsIndicator rdfs:label "Operating costs"@en )>> ;
+	prov:wasDerivedFrom doc:c0e4ccf41507 .
+doc:FactscurrentArticle_1 a None:Predictive_maintenance_system_module .
+_:d57fa3cd712975bfc73829f9655aa3b1 rdf:reifies <<( doc:FactscurrentArticle_1 rdf:type None:Predictive_maintenance_system_module )>> ;
+	prov:wasDerivedFrom doc:c0e4ccf41507 .
+doc:FactscurrentArticle_1 cco:is_about doc:FactsrailwaySystem .
+_:b8096352232166eeb0602c104abb9852 rdf:reifies <<( doc:FactscurrentArticle_1 cco:is_about doc:FactsrailwaySystem )>> ;
+	prov:wasDerivedFrom doc:c0e4ccf41507 .
+doc:FactsrailwayInfrastructureManagers a schema:Organization .
+_:a6444be2dde24e676fccf47cc2be9117 rdf:reifies <<( doc:FactsrailwayInfrastructureManagers rdf:type schema:Organization )>> ;
+	prov:wasDerivedFrom doc:c0e4ccf41507 .
+doc:FactsoperatingCostsIndicator cco:describes doc:FactsrailwaySystem .
+_:ba6085ef7704b70992475d6471753d00 rdf:reifies <<( doc:FactsoperatingCostsIndicator cco:describes doc:FactsrailwaySystem )>> ;
+	prov:wasDerivedFrom doc:c0e4ccf41507 .
+doc:FactsoperatingCostsIndicator a None:Performance_indicator .
+_:d68f67336298311a92431f4ce83e998 rdf:reifies <<( doc:FactsoperatingCostsIndicator rdf:type None:Performance_indicator )>> ;
+	prov:wasDerivedFrom doc:c0e4ccf41507 .
+_:f309e167fcef0190b44345660214a332 prov:wasDerivedFrom doc:c0e4ccf41507 .
+_:d4154460110242d8ccbd0ea0ff0f6607 prov:wasDerivedFrom doc:c0e4ccf41507 .
+doc:FactsrepairTimeIndicator cco:describes doc:FactsrailwaySystem .
+_:bb7e44d89bf5a77f3ef2f0b5e42570e0 rdf:reifies <<( doc:FactsrepairTimeIndicator cco:describes doc:FactsrailwaySystem )>> ;
+	prov:wasDerivedFrom doc:c0e4ccf41507 .
+doc:FactspublicationYear2020 a None:Publication_year .
+_:cfc218ed8ec6acd390b8fda084930002 rdf:reifies <<( doc:FactspublicationYear2020 rdf:type None:Publication_year )>> ;
+	prov:wasDerivedFrom doc:c0e4ccf41507 .
+doc:FactsrepairTimeIndicator a None:Performance_indicator .
+_:a08539178d33330666123ba2f1d16cd6 rdf:reifies <<( doc:FactsrepairTimeIndicator rdf:type None:Performance_indicator )>> ;
+	prov:wasDerivedFrom doc:c0e4ccf41507 .
+_:ed97fd4b8933662eb4e769994575a14f prov:wasDerivedFrom doc:c0e4ccf41507 .
+doc:FactsmaintenanceStrategy a None:Design_detail .
+_:aaf8bc37e2a6a9a701513684b3770f3b rdf:reifies <<( doc:FactsmaintenanceStrategy rdf:type None:Design_detail )>> ;
+	prov:wasDerivedFrom doc:c0e4ccf41507 .
+doc:FactsrollingStock rdfs:label "Rolling stock"@en .
+_:e758f62b6c02673311dfb30bc6814d2b rdf:reifies <<( doc:FactsrollingStock rdfs:label "Rolling stock"@en )>> ;
+	prov:wasDerivedFrom doc:c0e4ccf41507 .
+doc:FactscurrentArticle_1 rdfs:label "Proposed predictive maintenance module"@en .
+_:a292307e75064b599a1585ca218a176a rdf:reifies <<( doc:FactscurrentArticle_1 rdfs:label "Proposed predictive maintenance module"@en )>> ;
+	prov:wasDerivedFrom doc:c0e4ccf41507 .
+doc:FactsprognosticFunction rdfs:label "Provision of prognostic information"@en .
+_:c44177265d4f014b5975eb9d001ef93c rdf:reifies <<( doc:FactsprognosticFunction rdfs:label "Provision of prognostic information"@en )>> ;
+	prov:wasDerivedFrom doc:c0e4ccf41507 .
+doc:FactscurrentArticle_1 rdfs:label "Proposed maintenance approach article"@en .
+_:b4120b86b17dc0e26a45cf4b61080ca2 rdf:reifies <<( doc:FactscurrentArticle_1 rdfs:label "Proposed maintenance approach article"@en )>> ;
+	prov:wasDerivedFrom doc:c0e4ccf41507 .

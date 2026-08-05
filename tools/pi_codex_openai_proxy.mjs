@@ -19,7 +19,7 @@ import { pathToFileURL } from "node:url";
 
 const host = process.env.PI_CODEX_PROXY_HOST || "127.0.0.1";
 const port = Number.parseInt(process.env.PI_CODEX_PROXY_PORT || "8977", 10);
-const modelId = process.env.PI_CODEX_MODEL || "gpt-5-mini";
+const modelId = process.env.PI_CODEX_MODEL || "gpt-5.6-luna";
 const maxRequestBytes = 50 * 1024 * 1024;
 const defaultAuthFile = join(
   process.env.USERPROFILE || process.env.HOME || ".",
@@ -79,10 +79,27 @@ async function resolvePiAiCompatPath() {
 }
 
 const compatPath = await resolvePiAiCompatPath();
-const oauthPath = join(dirname(compatPath), "utils", "oauth", "openai-codex.js");
+const oauthCandidates = [
+  // Older pi-ai versions.
+  join(dirname(compatPath), "utils", "oauth", "openai-codex.js"),
+  // Current pi-ai versions.
+  join(dirname(compatPath), "auth", "oauth", "openai-codex.js"),
+];
+let oauthPath = "";
+for (const candidate of oauthCandidates) {
+  if (await fileExists(candidate)) {
+    oauthPath = candidate;
+    break;
+  }
+}
+if (!oauthPath) {
+  throw new Error(`Could not locate OpenAI Codex OAuth helper. Tried: ${oauthCandidates.join(", ")}`);
+}
 
 const { openAICodexResponsesApi } = await import(pathToFileURL(compatPath).href);
-const { refreshOpenAICodexToken } = await import(pathToFileURL(oauthPath).href);
+const oauthModule = await import(pathToFileURL(oauthPath).href);
+const refreshOpenAICodexToken = oauthModule.refreshOpenAICodexToken ||
+  (async (refreshToken) => oauthModule.openaiCodexOAuth.refresh({ refresh: refreshToken }));
 
 function log(message) {
   process.stdout.write(`[${new Date().toISOString()}] ${message}\n`);

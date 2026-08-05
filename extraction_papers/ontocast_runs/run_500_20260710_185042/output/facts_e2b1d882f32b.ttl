@@ -1,0 +1,465 @@
+@prefix cco: <http://www.ontologyrepository.com/CommonCoreOntologies/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doc: <https://growgraph.dev/doc/e2b1d882f32b/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix obo: <http://purl.obolibrary.org/obo/> .
+@prefix cd: <https://growgraph.dev/facts> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix schema: <https://schema.org/> .
+@prefix schema1: <http://schema.org/> .
+doc:1de84234ff9d a prov:Entity , schema:text ;
+	prov:generatedAtTime "2026-07-12T23:28:21.088281Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+	schema:position 0 ;
+	schema:identifier "1de84234ff9d" .
+doc:Factsyear1_63 schema1:author doc:Factsauthor2_10 .
+_:d5f34eec0a404617922d94d5f6eeebb rdf:reifies <<( doc:Factsyear1_63 schema1:author doc:Factsauthor2_10 )>> ;
+	prov:wasDerivedFrom doc:1de84234ff9d .
+doc:Factsyear1_63 schema1:about doc:Factsr1234yf_refrigerant .
+_:c61f49da93fc93faf24b24d7644dfe53 rdf:reifies <<( doc:Factsyear1_63 schema1:about doc:Factsr1234yf_refrigerant )>> ;
+	prov:wasDerivedFrom doc:1de84234ff9d .
+doc:Factsr1234yf_refrigerant schema1:priceCurrency "USD" .
+_:d03ace4379fb1082a1d82b39bcf6d37f rdf:reifies <<( doc:Factsr1234yf_refrigerant schema1:priceCurrency "USD" )>> ;
+	prov:wasDerivedFrom doc:1de84234ff9d .
+doc:FactsleakRepair cco:is_about doc:FactsairConditioningSystem .
+_:e52c1223504f6ce8f83155e03da086bd rdf:reifies <<( doc:FactsleakRepair cco:is_about doc:FactsairConditioningSystem )>> ;
+	prov:wasDerivedFrom doc:1de84234ff9d .
+doc:Factsauthor2_10 a schema1:Person .
+_:aa0642a475efe85e3d7b6becd0e06750 rdf:reifies <<( doc:Factsauthor2_10 rdf:type schema1:Person )>> ;
+	prov:wasDerivedFrom doc:1de84234ff9d .
+doc:FactsairConditioningSystem rdfs:label "air conditioning system" .
+_:b5375144db809041d849d1bd1b4ff350 rdf:reifies <<( doc:FactsairConditioningSystem rdfs:label "air conditioning system" )>> ;
+	prov:wasDerivedFrom doc:1de84234ff9d .
+doc:FactsairConditioningSystem a cco:Artifact .
+_:cc24c3a5db442e274fea62147b63970 rdf:reifies <<( doc:FactsairConditioningSystem rdf:type cco:Artifact )>> ;
+	prov:wasDerivedFrom doc:1de84234ff9d .
+doc:FactsthresholdValue <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD/seed#has_text_value> "+/- 0.5 bar" .
+_:c4b8dfdad18f4ea209b161502e2a8a7a rdf:reifies <<( doc:FactsthresholdValue <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD/seed#has_text_value> "+/- 0.5 bar" )>> ;
+	prov:wasDerivedFrom doc:1de84234ff9d .
+doc:Factsr1234yf_refrigerant schema1:flammable true .
+_:f916e34c5cb917a148ec5e3e49bac5eb rdf:reifies <<( doc:Factsr1234yf_refrigerant schema1:flammable true )>> ;
+	prov:wasDerivedFrom doc:1de84234ff9d .
+doc:Factsr1234yf_refrigerant a cco:Artifact .
+_:b7a6b7b78204343538e04a5db9685d69 rdf:reifies <<( doc:Factsr1234yf_refrigerant rdf:type cco:Artifact )>> ;
+	prov:wasDerivedFrom doc:1de84234ff9d .
+doc:FactsthresholdValue a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD/seed#Performance_value> .
+_:ebeffb2ba06e432d884bee8f66b93af5 rdf:reifies <<( doc:FactsthresholdValue rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD/seed#Performance_value> )>> ;
+	prov:wasDerivedFrom doc:1de84234ff9d .
+doc:Factsauthor2_10 schema1:name "Istvan Lakatos" .
+_:b753ccdd036ff939c76d7038d556e3ac rdf:reifies <<( doc:Factsauthor2_10 schema1:name "Istvan Lakatos" )>> ;
+	prov:wasDerivedFrom doc:1de84234ff9d .
+doc:Factsorganization1_8 a schema1:Organization .
+_:af3d8d1072cacd1ad3fe64a0ac24e257 rdf:reifies <<( doc:Factsorganization1_8 rdf:type schema1:Organization )>> ;
+	prov:wasDerivedFrom doc:1de84234ff9d .
+doc:FactsleakRepair a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD/seed#Fault_detection> .
+_:a8a343f90ef9865f76ecba9658157969 rdf:reifies <<( doc:FactsleakRepair rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD/seed#Fault_detection> )>> ;
+	prov:wasDerivedFrom doc:1de84234ff9d .
+doc:Factsorganization1_8 schema1:email "lakatos@sze.hu" .
+_:c935f5b2f3fc342c41e9371fbf910286 rdf:reifies <<( doc:Factsorganization1_8 schema1:email "lakatos@sze.hu" )>> ;
+	prov:wasDerivedFrom doc:1de84234ff9d .
+doc:Factsyear1_63 a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD/seed#Publication_year> .
+_:faa48a8fd6c6684722ca6428fcaa8043 rdf:reifies <<( doc:Factsyear1_63 rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD/seed#Publication_year> )>> ;
+	prov:wasDerivedFrom doc:1de84234ff9d .
+doc:Factsauthor2_10 schema1:name "Jozsef Nagy" .
+_:c5adb12aa1493a1d1698d234d26dbb1c rdf:reifies <<( doc:Factsauthor2_10 schema1:name "Jozsef Nagy" )>> ;
+	prov:wasDerivedFrom doc:1de84234ff9d .
+doc:FactspredictiveRepair a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD/seed#Predictive_maintenance_module_function> .
+_:e15f939ed1e6b364220742a94050f7e8 rdf:reifies <<( doc:FactspredictiveRepair rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD/seed#Predictive_maintenance_module_function> )>> ;
+	prov:wasDerivedFrom doc:1de84234ff9d .
+doc:FactstestFleet schema1:vehicleCount 500 .
+_:b3307de80ad2aba80818761bb9b9eca7 rdf:reifies <<( doc:FactstestFleet schema1:vehicleCount 500 )>> ;
+	prov:wasDerivedFrom doc:1de84234ff9d .
+doc:Factsyear1_63 <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD/seed#has_identifier> doc:Factsarticle1_id_3 .
+_:cb992dfff9db37a5c4fad1b3f5a211da rdf:reifies <<( doc:Factsyear1_63 <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD/seed#has_identifier> doc:Factsarticle1_id_3 )>> ;
+	prov:wasDerivedFrom doc:1de84234ff9d .
+doc:FactsthresholdValue <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD/seed#has_text_value> "1.2" .
+_:a7ba4849c44761628d97bec79b7acd0c rdf:reifies <<( doc:FactsthresholdValue <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD/seed#has_text_value> "1.2" )>> ;
+	prov:wasDerivedFrom doc:1de84234ff9d .
+doc:Factsr1234yf_refrigerant schema1:identifier "R1234yf" .
+_:bb926f336db60ede948890d431e606b6 rdf:reifies <<( doc:Factsr1234yf_refrigerant schema1:identifier "R1234yf" )>> ;
+	prov:wasDerivedFrom doc:1de84234ff9d .
+doc:Factsarticle1_title_8 cco:is_about doc:Factsyear1_63 .
+_:b3828f50a67f3304ae0cc606dcd4b948 rdf:reifies <<( doc:Factsarticle1_title_8 cco:is_about doc:Factsyear1_63 )>> ;
+	prov:wasDerivedFrom doc:1de84234ff9d .
+doc:FactstestFleet schema1:name "test fleet" .
+_:d2f7d64811cd1acbd60146a452585942 rdf:reifies <<( doc:FactstestFleet schema1:name "test fleet" )>> ;
+	prov:wasDerivedFrom doc:1de84234ff9d .
+doc:Factsyear1_63 <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD/seed#has_publication_year> doc:Factsyear1_63 .
+_:b8b46dc9bf90bb2e03c89557fbd4a9ec rdf:reifies <<( doc:Factsyear1_63 <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD/seed#has_publication_year> doc:Factsyear1_63 )>> ;
+	prov:wasDerivedFrom doc:1de84234ff9d .
+doc:Factsarticle1_id_3 a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD/seed#Article_identifier> .
+_:cdb161d920d214699920d83f31254774 rdf:reifies <<( doc:Factsarticle1_id_3 rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD/seed#Article_identifier> )>> ;
+	prov:wasDerivedFrom doc:1de84234ff9d .
+doc:Factsarticle1_title_8 <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD/seed#has_text_value> "Predictive Repair of Vehicle R1234yf Refrigerant Systems Based on Monitoring of Micro-Leakages" .
+_:bb995432fd4a1b348d5941823731e2e9 rdf:reifies <<( doc:Factsarticle1_title_8 <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD/seed#has_text_value> "Predictive Repair of Vehicle R1234yf Refrigerant Systems Based on Monitoring of Micro-Leakages" )>> ;
+	prov:wasDerivedFrom doc:1de84234ff9d .
+doc:Factsarticle1_id_3 <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD/seed#has_text_value> "article" .
+_:f7a366b0126b357cc328445b5774c3f0 rdf:reifies <<( doc:Factsarticle1_id_3 <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD/seed#has_text_value> "article" )>> ;
+	prov:wasDerivedFrom doc:1de84234ff9d .
+doc:FactspredictiveRepair rdfs:label "predictive maintenance" .
+_:f43c0c1d9d156de4e7b24c42a7c1169e rdf:reifies <<( doc:FactspredictiveRepair rdfs:label "predictive maintenance" )>> ;
+	prov:wasDerivedFrom doc:1de84234ff9d .
+doc:FactsonlineMonitoring_1 <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD/seed#has_text_value> "online" .
+_:b0730ab56d7d622e66d050f0cb1576ee rdf:reifies <<( doc:FactsonlineMonitoring_1 <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD/seed#has_text_value> "online" )>> ;
+	prov:wasDerivedFrom doc:1de84234ff9d .
+doc:FactsonlineMonitoring_1 a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD/seed#Module_synchronization> .
+_:a571cdd83dae24ff0883f183f515bdba rdf:reifies <<( doc:FactsonlineMonitoring_1 rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD/seed#Module_synchronization> )>> ;
+	prov:wasDerivedFrom doc:1de84234ff9d .
+doc:FactsairConditioningSystem rdfs:label "air conditioning systems of modern vehicles" .
+_:e1983d2710b2c8f1f960f34392ef9ac4 rdf:reifies <<( doc:FactsairConditioningSystem rdfs:label "air conditioning systems of modern vehicles" )>> ;
+	prov:wasDerivedFrom doc:1de84234ff9d .
+doc:Factsyear1_63 <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD/seed#has_interger_value> 2017 .
+_:f2f85377d3e12e857cdda78cc14dbc11 rdf:reifies <<( doc:Factsyear1_63 <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD/seed#has_interger_value> 2017 )>> ;
+	prov:wasDerivedFrom doc:1de84234ff9d .
+doc:Factsyear1_63 schema1:publisher doc:Factsorganization1_8 .
+_:edb2b4a709e947df7f1e52e40732b46a rdf:reifies <<( doc:Factsyear1_63 schema1:publisher doc:Factsorganization1_8 )>> ;
+	prov:wasDerivedFrom doc:1de84234ff9d .
+doc:Factsyear1_63 <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD/seed#has_title> doc:Factsarticle1_title_8 .
+_:cbb5c17a3b891d64b54f915cd0a32222 rdf:reifies <<( doc:Factsyear1_63 <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD/seed#has_title> doc:Factsarticle1_title_8 )>> ;
+	prov:wasDerivedFrom doc:1de84234ff9d .
+doc:FactspredictiveRepair rdfs:label "predictive repair" .
+_:da6ac90f31065dcc7f78a0380d4b38a1 rdf:reifies <<( doc:FactspredictiveRepair rdfs:label "predictive repair" )>> ;
+	prov:wasDerivedFrom doc:1de84234ff9d .
+doc:FactsonlineMonitoring_1 <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD/seed#has_text_value> "offline" .
+_:e4c84fabb42148e405e3315b1c2618f4 rdf:reifies <<( doc:FactsonlineMonitoring_1 <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD/seed#has_text_value> "offline" )>> ;
+	prov:wasDerivedFrom doc:1de84234ff9d .
+doc:FactstestFleet a schema1:Dataset .
+_:aeccf64dedb2b12528587c832fc02688 rdf:reifies <<( doc:FactstestFleet rdf:type schema1:Dataset )>> ;
+	prov:wasDerivedFrom doc:1de84234ff9d .
+doc:FactsleakRepair rdfs:label "leak detection" .
+_:a36d96ed261b3b9416668fed577f36c0 rdf:reifies <<( doc:FactsleakRepair rdfs:label "leak detection" )>> ;
+	prov:wasDerivedFrom doc:1de84234ff9d .
+doc:Factsorganization1_8 schema1:name "Department of Vehicle Maintenance and Diagnostics, AHFE, Szechenyi Istvan University" .
+_:c10c51d01ff48eb896dcd8e84e768187 rdf:reifies <<( doc:Factsorganization1_8 schema1:name "Department of Vehicle Maintenance and Diagnostics, AHFE, Szechenyi Istvan University" )>> ;
+	prov:wasDerivedFrom doc:1de84234ff9d .
+doc:Factsr1234yf_refrigerant schema1:description "slightly flammable refrigerant with high price" .
+_:ec755156848aaf20e378383beae468c6 rdf:reifies <<( doc:Factsr1234yf_refrigerant schema1:description "slightly flammable refrigerant with high price" )>> ;
+	prov:wasDerivedFrom doc:1de84234ff9d .
+doc:Factsyear1_63 a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD/seed#Predictive_Maintenance_Article> .
+_:a4c889fc05235c7852b73809304d112f rdf:reifies <<( doc:Factsyear1_63 rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD/seed#Predictive_Maintenance_Article> )>> ;
+	prov:wasDerivedFrom doc:1de84234ff9d .
+doc:FactsthresholdValue <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD/seed#has_text_value> "0.2" .
+_:e8d9a1d3ce00d4e7867247ab5c3f6000 rdf:reifies <<( doc:FactsthresholdValue <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD/seed#has_text_value> "0.2" )>> ;
+	prov:wasDerivedFrom doc:1de84234ff9d .
+doc:Factsr1234yf_refrigerant rdfs:label "R1234yf refrigerant" .
+_:dbee50e479853197d83fefbbfd00f8a8 rdf:reifies <<( doc:Factsr1234yf_refrigerant rdfs:label "R1234yf refrigerant" )>> ;
+	prov:wasDerivedFrom doc:1de84234ff9d .
+doc:Factsarticle1_title_8 a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD/seed#Article_title> .
+_:e5c86757f34431924e6d270a741dc628 rdf:reifies <<( doc:Factsarticle1_title_8 rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD/seed#Article_title> )>> ;
+	prov:wasDerivedFrom doc:1de84234ff9d .
+doc:Factsorganization1_8 schema1:address "H-9025 Gyor, Hungary" .
+_:bf4a69672d939b6350fa159b3cf45ea0 rdf:reifies <<( doc:Factsorganization1_8 schema1:address "H-9025 Gyor, Hungary" )>> ;
+	prov:wasDerivedFrom doc:1de84234ff9d .
+doc:Factsarticle1_id_3 cco:is_about doc:Factsyear1_63 .
+_:a6774eba0899e9434211a3a05b5cada rdf:reifies <<( doc:Factsarticle1_id_3 cco:is_about doc:Factsyear1_63 )>> ;
+	prov:wasDerivedFrom doc:1de84234ff9d .
+doc:a3b43e727bac a prov:Entity , schema:text ;
+	prov:generatedAtTime "2026-07-12T23:28:21.092278Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+	schema:position 1 ;
+	schema:identifier "a3b43e727bac" .
+doc:FactsenergyConsumption a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD/seed#Performance_indicator> .
+_:f168b1e1d9ea97c2c4d04054500834bb rdf:reifies <<( doc:FactsenergyConsumption rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD/seed#Performance_indicator> )>> ;
+	prov:wasDerivedFrom doc:a3b43e727bac .
+doc:FactspressureAndVacuumDecayTests cco:is_about doc:FactsleakRepair .
+_:d2bd0193208547fb532d747eb750b456 rdf:reifies <<( doc:FactspressureAndVacuumDecayTests cco:is_about doc:FactsleakRepair )>> ;
+	prov:wasDerivedFrom doc:a3b43e727bac .
+doc:FactsairConditioningSystem a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD/seed#Maintainable_item> .
+_:c73dd53e47b1a2f012f73964c57d526c rdf:reifies <<( doc:FactsairConditioningSystem rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD/seed#Maintainable_item> )>> ;
+	prov:wasDerivedFrom doc:a3b43e727bac .
+doc:Factsyear1_63 schema1:editor doc:Factsacademic_editor_1 .
+_:a88b89644c2d30392695c314111817b5 rdf:reifies <<( doc:Factsyear1_63 schema1:editor doc:Factsacademic_editor_1 )>> ;
+	prov:wasDerivedFrom doc:a3b43e727bac .
+_:e52c1223504f6ce8f83155e03da086bd prov:wasDerivedFrom doc:a3b43e727bac .
+doc:FactsenergyConsumption cco:is_about doc:FactsairConditioningSystem .
+_:be978f8068461c0d04a64eee1a3880e rdf:reifies <<( doc:FactsenergyConsumption cco:is_about doc:FactsairConditioningSystem )>> ;
+	prov:wasDerivedFrom doc:a3b43e727bac .
+doc:Factsacademic_editor_1 schema1:name "Francesco Castellani" .
+_:fdc6578188c39a65bd861abec40f6805 rdf:reifies <<( doc:Factsacademic_editor_1 schema1:name "Francesco Castellani" )>> ;
+	prov:wasDerivedFrom doc:a3b43e727bac .
+doc:Factsyear1_63 cd:has_interger_value 2026 .
+_:f6a3765ed089636102fa8add87a80ee8 rdf:reifies <<( doc:Factsyear1_63 cd:has_interger_value 2026 )>> ;
+	prov:wasDerivedFrom doc:a3b43e727bac .
+doc:Factsr1234yf rdfs:label "R1234yf refrigerant" .
+_:c604116da1c53476df5223cfb6afe9fd rdf:reifies <<( doc:Factsr1234yf rdfs:label "R1234yf refrigerant" )>> ;
+	prov:wasDerivedFrom doc:a3b43e727bac .
+doc:Factsyear1_63 schema1:about doc:FactsairConditioningSystem .
+_:bfeb5b6679d10fd829c21925d178de06 rdf:reifies <<( doc:Factsyear1_63 schema1:about doc:FactsairConditioningSystem )>> ;
+	prov:wasDerivedFrom doc:a3b43e727bac .
+_:a8a343f90ef9865f76ecba9658157969 prov:wasDerivedFrom doc:a3b43e727bac .
+doc:FactsleakRepair rdfs:label "repair of leaks" .
+_:cf30f6c3e7169dfef77af4e92fafa523 rdf:reifies <<( doc:FactsleakRepair rdfs:label "repair of leaks" )>> ;
+	prov:wasDerivedFrom doc:a3b43e727bac .
+doc:Factscompressor rdfs:label "compressor" .
+_:b5853a32a8d37c20b70202d794f8637e rdf:reifies <<( doc:Factscompressor rdfs:label "compressor" )>> ;
+	prov:wasDerivedFrom doc:a3b43e727bac .
+doc:Factsr134a cco:designates doc:Factsr134a_substance .
+_:a2a176ce35bec5a1e9dfb58f50b87c52 rdf:reifies <<( doc:Factsr134a cco:designates doc:Factsr134a_substance )>> ;
+	prov:wasDerivedFrom doc:a3b43e727bac .
+_:cb992dfff9db37a5c4fad1b3f5a211da prov:wasDerivedFrom doc:a3b43e727bac .
+doc:Factscompressor a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD/seed#Maintainable_item> .
+_:a2f19034b2379d19d0420549f23bcc88 rdf:reifies <<( doc:Factscompressor rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD/seed#Maintainable_item> )>> ;
+	prov:wasDerivedFrom doc:a3b43e727bac .
+doc:Factsr1234yf a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD/seed#Maintainable_item> .
+_:a0ce60a5f49c4ecc8579ed38bc8b329d rdf:reifies <<( doc:Factsr1234yf rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD/seed#Maintainable_item> )>> ;
+	prov:wasDerivedFrom doc:a3b43e727bac .
+doc:FactsoRingDamage a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD/seed#Fault_detection> .
+_:ba6a37fead4bebc622cf194011312305 rdf:reifies <<( doc:FactsoRingDamage rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD/seed#Fault_detection> )>> ;
+	prov:wasDerivedFrom doc:a3b43e727bac .
+doc:FactsaluminumChips a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD/seed#Fault_detection> .
+_:c908c06cfe42e684c4f727898eb627fe rdf:reifies <<( doc:FactsaluminumChips rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD/seed#Fault_detection> )>> ;
+	prov:wasDerivedFrom doc:a3b43e727bac .
+doc:FactssoapyBubbleSolution rdfs:label "Soapy bubble solution" .
+_:d98f4ffbeab8d561aea53c0bf40b8fa8 rdf:reifies <<( doc:FactssoapyBubbleSolution rdfs:label "Soapy bubble solution" )>> ;
+	prov:wasDerivedFrom doc:a3b43e727bac .
+doc:Factsr1234yf cco:designates doc:Factsr134a_substance .
+_:e19acfbaaf81dc8fb87a045e84812f3a rdf:reifies <<( doc:Factsr1234yf cco:designates doc:Factsr134a_substance )>> ;
+	prov:wasDerivedFrom doc:a3b43e727bac .
+doc:Factsyear1_63 schema1:about doc:FactsleakRepair .
+_:aea861f0a366ed6aafce3058d17188c rdf:reifies <<( doc:Factsyear1_63 schema1:about doc:FactsleakRepair )>> ;
+	prov:wasDerivedFrom doc:a3b43e727bac .
+doc:Factsyear1_63 dcterms:title doc:Factsarticle1_title_8 .
+_:e49e98f57bedc6bacd1763df2424055 rdf:reifies <<( doc:Factsyear1_63 dcterms:title doc:Factsarticle1_title_8 )>> ;
+	prov:wasDerivedFrom doc:a3b43e727bac .
+doc:FactsairTightness rdfs:label "airtightness" .
+_:c0013c281d0d88c7d764eba4e9ceb27 rdf:reifies <<( doc:FactsairTightness rdfs:label "airtightness" )>> ;
+	prov:wasDerivedFrom doc:a3b43e727bac .
+doc:FactsaluminumChips rdfs:label "Aluminum chips" .
+_:ffddcfddd8824a98c06e5cd66914da38 rdf:reifies <<( doc:FactsaluminumChips rdfs:label "Aluminum chips" )>> ;
+	prov:wasDerivedFrom doc:a3b43e727bac .
+doc:Factsnitrogen rdfs:label "nitrogen" .
+_:cba69772613b002d23306f06f32a3915 rdf:reifies <<( doc:Factsnitrogen rdfs:label "nitrogen" )>> ;
+	prov:wasDerivedFrom doc:a3b43e727bac .
+doc:Factsacademic_editor_1 a schema1:Person .
+_:e6640e38b2dc714e4f47a0267a7dcc81 rdf:reifies <<( doc:Factsacademic_editor_1 rdf:type schema1:Person )>> ;
+	prov:wasDerivedFrom doc:a3b43e727bac .
+doc:FactssoapyBubbleSolution cco:is_about doc:FactsleakRepair .
+_:b0372725525f15a9416949380e9b2970 rdf:reifies <<( doc:FactssoapyBubbleSolution cco:is_about doc:FactsleakRepair )>> ;
+	prov:wasDerivedFrom doc:a3b43e727bac .
+doc:Factsr134a rdfs:label "R-134a refrigerant" .
+_:ffe53e50e0cac8063b5732d6be06a1f5 rdf:reifies <<( doc:Factsr134a rdfs:label "R-134a refrigerant" )>> ;
+	prov:wasDerivedFrom doc:a3b43e727bac .
+_:cdb161d920d214699920d83f31254774 prov:wasDerivedFrom doc:a3b43e727bac .
+doc:Factsgwp a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD/seed#Performance_indicator> .
+_:d8952de4815ab89a1492bf000226fbc8 rdf:reifies <<( doc:Factsgwp rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD/seed#Performance_indicator> )>> ;
+	prov:wasDerivedFrom doc:a3b43e727bac .
+doc:Factsyear1_63 schema1:about doc:Factsr1234yf .
+_:fa901ab63ab271bce14793987735907b rdf:reifies <<( doc:Factsyear1_63 schema1:about doc:Factsr1234yf )>> ;
+	prov:wasDerivedFrom doc:a3b43e727bac .
+doc:Factsgwp rdfs:label "GWP" .
+_:d390a39b87e2b3ce0b135bda8fec30f5 rdf:reifies <<( doc:Factsgwp rdfs:label "GWP" )>> ;
+	prov:wasDerivedFrom doc:a3b43e727bac .
+doc:FactsoRingDamage cco:is_about doc:Factscompressor .
+_:ff00c7d66e988d3d6ddcffcca4070010 rdf:reifies <<( doc:FactsoRingDamage cco:is_about doc:Factscompressor )>> ;
+	prov:wasDerivedFrom doc:a3b43e727bac .
+_:a36d96ed261b3b9416668fed577f36c0 prov:wasDerivedFrom doc:a3b43e727bac .
+_:b5375144db809041d849d1bd1b4ff350 prov:wasDerivedFrom doc:a3b43e727bac .
+doc:Factsgwp cco:is_about doc:Factsr134a .
+_:a899c49d9b43184e66677b1e635e7b81 rdf:reifies <<( doc:Factsgwp cco:is_about doc:Factsr134a )>> ;
+	prov:wasDerivedFrom doc:a3b43e727bac .
+doc:FactssystemEfficiency rdfs:label "system's efficiency" .
+_:cf0980035d9cac8fae9bb40292fed263 rdf:reifies <<( doc:FactssystemEfficiency rdfs:label "system's efficiency" )>> ;
+	prov:wasDerivedFrom doc:a3b43e727bac .
+doc:FactsenergyConsumption rdfs:label "energy consumption" .
+_:ae7ced63781ed2e7aba5d80a9c3a28e4 rdf:reifies <<( doc:FactsenergyConsumption rdfs:label "energy consumption" )>> ;
+	prov:wasDerivedFrom doc:a3b43e727bac .
+_:ebeffb2ba06e432d884bee8f66b93af5 prov:wasDerivedFrom doc:a3b43e727bac .
+doc:FactshvacSystem rdfs:label "HVAC system" .
+_:a2e7c8a43a2b551fc4fb0f2e1d693f39 rdf:reifies <<( doc:FactshvacSystem rdfs:label "HVAC system" )>> ;
+	prov:wasDerivedFrom doc:a3b43e727bac .
+doc:FactssystemEfficiency cco:is_about doc:FactsairConditioningSystem .
+_:c9a9bbc35dea7a6be94474f13d8b6212 rdf:reifies <<( doc:FactssystemEfficiency cco:is_about doc:FactsairConditioningSystem )>> ;
+	prov:wasDerivedFrom doc:a3b43e727bac .
+doc:FactscoolingPerformance a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD/seed#Performance_indicator> .
+_:a720e78ed4755a0c786cdcddc458e71b rdf:reifies <<( doc:FactscoolingPerformance rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD/seed#Performance_indicator> )>> ;
+	prov:wasDerivedFrom doc:a3b43e727bac .
+doc:FactsleakRepair rdfs:label "micro-leakages" .
+_:fcaadc49930cf0a2cfcee72720e75512 rdf:reifies <<( doc:FactsleakRepair rdfs:label "micro-leakages" )>> ;
+	prov:wasDerivedFrom doc:a3b43e727bac .
+doc:FactsthresholdValue cd:has_text_value "100 years" .
+_:f264e51f6ca80d91924a0e0b08a520d8 rdf:reifies <<( doc:FactsthresholdValue cd:has_text_value "100 years" )>> ;
+	prov:wasDerivedFrom doc:a3b43e727bac .
+doc:FactspressureAndVacuumDecayTests a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD/seed#Fault_detection> .
+_:f54f9b7f574ed7565d226d9667d2f63e rdf:reifies <<( doc:FactspressureAndVacuumDecayTests rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD/seed#Fault_detection> )>> ;
+	prov:wasDerivedFrom doc:a3b43e727bac .
+doc:Factsnitrogen a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD/seed#Maintainable_item> .
+_:c8eb9a5aa8f820d49a4a47b754b2df5 rdf:reifies <<( doc:Factsnitrogen rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD/seed#Maintainable_item> )>> ;
+	prov:wasDerivedFrom doc:a3b43e727bac .
+_:cbb5c17a3b891d64b54f915cd0a32222 prov:wasDerivedFrom doc:a3b43e727bac .
+doc:FactsairConditioningSystem rdfs:label "air conditioning system of cars" .
+_:c6878625f5590ed574fba490fe697b2f rdf:reifies <<( doc:FactsairConditioningSystem rdfs:label "air conditioning system of cars" )>> ;
+	prov:wasDerivedFrom doc:a3b43e727bac .
+doc:Factsgwp cco:is_about doc:FactsthresholdValue .
+_:cc99c45bcde43c595f29ed46625e5c94 rdf:reifies <<( doc:Factsgwp cco:is_about doc:FactsthresholdValue )>> ;
+	prov:wasDerivedFrom doc:a3b43e727bac .
+doc:Factsarticle1_id_3 cd:has_text_value "2026" .
+_:e2a43d6cdfb50d1d7330653631891da7 rdf:reifies <<( doc:Factsarticle1_id_3 cd:has_text_value "2026" )>> ;
+	prov:wasDerivedFrom doc:a3b43e727bac .
+_:a4c889fc05235c7852b73809304d112f prov:wasDerivedFrom doc:a3b43e727bac .
+doc:FactssystemLongevity a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD/seed#Performance_indicator> .
+_:eaed18d4b46a7f47731b34c8688266b9 rdf:reifies <<( doc:FactssystemLongevity rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD/seed#Performance_indicator> )>> ;
+	prov:wasDerivedFrom doc:a3b43e727bac .
+_:b8b46dc9bf90bb2e03c89557fbd4a9ec prov:wasDerivedFrom doc:a3b43e727bac .
+doc:FactshvacSystem a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD/seed#Maintainable_item> .
+_:a02e82dc1cdfe4972e4ec1ef4571d224 rdf:reifies <<( doc:FactshvacSystem rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD/seed#Maintainable_item> )>> ;
+	prov:wasDerivedFrom doc:a3b43e727bac .
+doc:Factsgwp cco:is_about doc:Factsr1234yf .
+_:da9650251ad5a06857ab5dcc97e0492b rdf:reifies <<( doc:Factsgwp cco:is_about doc:Factsr1234yf )>> ;
+	prov:wasDerivedFrom doc:a3b43e727bac .
+doc:FactsairTightness cco:is_about doc:FactsairConditioningSystem .
+_:abc7be487138f5bb444eaf9963fadf2b rdf:reifies <<( doc:FactsairTightness cco:is_about doc:FactsairConditioningSystem )>> ;
+	prov:wasDerivedFrom doc:a3b43e727bac .
+doc:FactsoRingDamage rdfs:label "O-ring damage" .
+_:ebd866f510a6c502bdec95b44c6c9443 rdf:reifies <<( doc:FactsoRingDamage rdfs:label "O-ring damage" )>> ;
+	prov:wasDerivedFrom doc:a3b43e727bac .
+doc:Factsr134a a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD/seed#Maintainable_item> .
+_:b1e1d43831efec5a506c488bc2b9af53 rdf:reifies <<( doc:Factsr134a rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD/seed#Maintainable_item> )>> ;
+	prov:wasDerivedFrom doc:a3b43e727bac .
+doc:Factsyear1_63 schema1:about doc:FactspressureAndVacuumDecayTests .
+_:ce78e27ca1604bfceb49eda2e3df7877 rdf:reifies <<( doc:Factsyear1_63 schema1:about doc:FactspressureAndVacuumDecayTests )>> ;
+	prov:wasDerivedFrom doc:a3b43e727bac .
+doc:FactssystemLongevity cco:is_about doc:FactsairConditioningSystem .
+_:eb50fab8fd0a4ceee960c7f5ccbf240a rdf:reifies <<( doc:FactssystemLongevity cco:is_about doc:FactsairConditioningSystem )>> ;
+	prov:wasDerivedFrom doc:a3b43e727bac .
+doc:FactssystemLongevity rdfs:label "longevity" .
+_:fb110d213be1156024f5ad405f60d0a3 rdf:reifies <<( doc:FactssystemLongevity rdfs:label "longevity" )>> ;
+	prov:wasDerivedFrom doc:a3b43e727bac .
+doc:Factsarticle1_title_8 cd:has_text_value "Leak testing procedures for R-1234yf systems" .
+_:e8c497786ae2b7391f18f2b47948276e rdf:reifies <<( doc:Factsarticle1_title_8 cd:has_text_value "Leak testing procedures for R-1234yf systems" )>> ;
+	prov:wasDerivedFrom doc:a3b43e727bac .
+doc:FactscoolingPerformance cco:is_about doc:FactsairConditioningSystem .
+_:b86d0eab64877443accefcd49008fd2a rdf:reifies <<( doc:FactscoolingPerformance cco:is_about doc:FactsairConditioningSystem )>> ;
+	prov:wasDerivedFrom doc:a3b43e727bac .
+_:e5c86757f34431924e6d270a741dc628 prov:wasDerivedFrom doc:a3b43e727bac .
+doc:FactsairTightness a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD/seed#Design_detail> .
+_:c0988bacb21f31c9ee30d05968bca869 rdf:reifies <<( doc:FactsairTightness rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD/seed#Design_detail> )>> ;
+	prov:wasDerivedFrom doc:a3b43e727bac .
+doc:FactspressureAndVacuumDecayTests rdfs:label "Pressure and vacuum decay tests" .
+_:b0c4d1e87f7a0405df06db7f843383fe rdf:reifies <<( doc:FactspressureAndVacuumDecayTests rdfs:label "Pressure and vacuum decay tests" )>> ;
+	prov:wasDerivedFrom doc:a3b43e727bac .
+doc:FactscoolingPerformance rdfs:label "cooling performance" .
+_:f47be2acbfbd44086100ffc2d8e965e2 rdf:reifies <<( doc:FactscoolingPerformance rdfs:label "cooling performance" )>> ;
+	prov:wasDerivedFrom doc:a3b43e727bac .
+_:faa48a8fd6c6684722ca6428fcaa8043 prov:wasDerivedFrom doc:a3b43e727bac .
+doc:FactssoapyBubbleSolution a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD/seed#Predictive_maintenance_module_function> .
+_:f5f63165bb39070f2087afa327e80630 rdf:reifies <<( doc:FactssoapyBubbleSolution rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD/seed#Predictive_maintenance_module_function> )>> ;
+	prov:wasDerivedFrom doc:a3b43e727bac .
+doc:FactsaluminumChips cco:is_about doc:FactsairConditioningSystem .
+_:ec01617e8e2033dc10051a057ec0d9bb rdf:reifies <<( doc:FactsaluminumChips cco:is_about doc:FactsairConditioningSystem )>> ;
+	prov:wasDerivedFrom doc:a3b43e727bac .
+doc:FactssystemEfficiency a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD/seed#Performance_indicator> .
+_:e63b50cb0cecef5e302fd083ade3c96d rdf:reifies <<( doc:FactssystemEfficiency rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD/seed#Performance_indicator> )>> ;
+	prov:wasDerivedFrom doc:a3b43e727bac .
+doc:049beaa171b3 a prov:Entity , schema:text ;
+	prov:generatedAtTime "2026-07-12T23:28:21.097785Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+	schema:position 2 ;
+	schema:identifier "049beaa171b3" .
+doc:Factsyear1_63 cd:has_identifier doc:Factsarticle1_id_3 .
+_:bfecf0ad3ceac564675e1c2d45c76f60 rdf:reifies <<( doc:Factsyear1_63 cd:has_identifier doc:Factsarticle1_id_3 )>> ;
+	prov:wasDerivedFrom doc:049beaa171b3 .
+doc:FactsmicroLeak a obo:BFO_0000019 .
+_:d3f672464f056cc570a8963eda4fc435 rdf:reifies <<( doc:FactsmicroLeak rdf:type obo:BFO_0000019 )>> ;
+	prov:wasDerivedFrom doc:049beaa171b3 .
+doc:FactsfluorescentDyeInjection a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD/seed#Fault_detection> .
+_:ae9db8a95404dab22bde306bec123092 rdf:reifies <<( doc:FactsfluorescentDyeInjection rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD/seed#Fault_detection> )>> ;
+	prov:wasDerivedFrom doc:049beaa171b3 .
+_:c73dd53e47b1a2f012f73964c57d526c prov:wasDerivedFrom doc:049beaa171b3 .
+_:b1e1d43831efec5a506c488bc2b9af53 prov:wasDerivedFrom doc:049beaa171b3 .
+doc:FactspredictionConfiguration a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD/seed#Model_configuration> .
+_:e6c620ecc87b59330def5d087046470a rdf:reifies <<( doc:FactspredictionConfiguration rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD/seed#Model_configuration> )>> ;
+	prov:wasDerivedFrom doc:049beaa171b3 .
+doc:FactsleakRepair cd:has_predictive_maintenance_function doc:FactsleakRepair .
+_:c4daafc417399855e9ff0bbb4236c9f0 rdf:reifies <<( doc:FactsleakRepair cd:has_predictive_maintenance_function doc:FactsleakRepair )>> ;
+	prov:wasDerivedFrom doc:049beaa171b3 .
+doc:FactspressureMeasurementData rdfs:label "pressure measurement data"@en .
+_:b643a6b5b7f97b4f97f4db3e6e352499 rdf:reifies <<( doc:FactspressureMeasurementData rdfs:label "pressure measurement data"@en )>> ;
+	prov:wasDerivedFrom doc:049beaa171b3 .
+doc:FactsstandardPressureMeasurementDashboard a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD/seed#Model_configuration> .
+_:ea9378674fbaefa39db6b70e951edf0e rdf:reifies <<( doc:FactsstandardPressureMeasurementDashboard rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD/seed#Model_configuration> )>> ;
+	prov:wasDerivedFrom doc:049beaa171b3 .
+doc:FactspassengerCar a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD/seed#Maintainable_item> .
+_:f0c2432f441acc188caac92d0da0b01 rdf:reifies <<( doc:FactspassengerCar rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD/seed#Maintainable_item> )>> ;
+	prov:wasDerivedFrom doc:049beaa171b3 .
+doc:FactspassengerCar rdfs:label "standard passenger cars"@en .
+_:a546dbe34c63086c077004fa6bbe3b44 rdf:reifies <<( doc:FactspassengerCar rdfs:label "standard passenger cars"@en )>> ;
+	prov:wasDerivedFrom doc:049beaa171b3 .
+doc:FactsleakRepair rdfs:label "ultrasonic detectors"@en .
+_:cfe95b00016e1e0eb0d6af36d77af072 rdf:reifies <<( doc:FactsleakRepair rdfs:label "ultrasonic detectors"@en )>> ;
+	prov:wasDerivedFrom doc:049beaa171b3 .
+_:faa48a8fd6c6684722ca6428fcaa8043 prov:wasDerivedFrom doc:049beaa171b3 .
+doc:FactssolderingPoints cd:has_text_value "few grams per year" .
+_:ee4db842a7e84335346ba1627c33a067 rdf:reifies <<( doc:FactssolderingPoints cd:has_text_value "few grams per year" )>> ;
+	prov:wasDerivedFrom doc:049beaa171b3 .
+doc:Factsr1234yf rdfs:label "R1234yf"@en .
+_:e8c1789e9034dc4254e82ed57ec12af5 rdf:reifies <<( doc:Factsr1234yf rdfs:label "R1234yf"@en )>> ;
+	prov:wasDerivedFrom doc:049beaa171b3 .
+doc:FactsfluorescentDyeInjection rdfs:label "fluorescent dye injection"@en .
+_:f5987c3bbdef5703fcdf8ec1a7e8c3ea rdf:reifies <<( doc:FactsfluorescentDyeInjection rdfs:label "fluorescent dye injection"@en )>> ;
+	prov:wasDerivedFrom doc:049beaa171b3 .
+doc:Factsyear1_63 cd:has_publication_year doc:Factsyear1_63 .
+_:d65a7b426150a5c2ae51d2479d27dc6d rdf:reifies <<( doc:Factsyear1_63 cd:has_publication_year doc:Factsyear1_63 )>> ;
+	prov:wasDerivedFrom doc:049beaa171b3 .
+doc:Factsbus a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD/seed#Maintainable_item> .
+_:ee8d44b2e20343be8c4e8fafd2520276 rdf:reifies <<( doc:Factsbus rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD/seed#Maintainable_item> )>> ;
+	prov:wasDerivedFrom doc:049beaa171b3 .
+doc:FactsdamagedSeals a obo:BFO_0000019 .
+_:b3a611a00580518d2726f072a5b71026 rdf:reifies <<( doc:FactsdamagedSeals rdf:type obo:BFO_0000019 )>> ;
+	prov:wasDerivedFrom doc:049beaa171b3 .
+_:a8a343f90ef9865f76ecba9658157969 prov:wasDerivedFrom doc:049beaa171b3 .
+doc:FactsstandardPressureMeasurementDashboard cd:describes_configuration doc:FactspredictionConfiguration .
+_:b07f906829daf4df0e9fd089ca50b10a rdf:reifies <<( doc:FactsstandardPressureMeasurementDashboard cd:describes_configuration doc:FactspredictionConfiguration )>> ;
+	prov:wasDerivedFrom doc:049beaa171b3 .
+doc:FactsleakRepair rdfs:label "electronic leak detectors"@en .
+_:cae94748839bdf7250a560ee898184da rdf:reifies <<( doc:FactsleakRepair rdfs:label "electronic leak detectors"@en )>> ;
+	prov:wasDerivedFrom doc:049beaa171b3 .
+_:a0ce60a5f49c4ecc8579ed38bc8b329d prov:wasDerivedFrom doc:049beaa171b3 .
+doc:Factsyear1_63 cd:has_title doc:Factsarticle1_title_8 .
+_:d8def212b512294b8a94f1f808cb62bd rdf:reifies <<( doc:Factsyear1_63 cd:has_title doc:Factsarticle1_title_8 )>> ;
+	prov:wasDerivedFrom doc:049beaa171b3 .
+doc:FactsslowGrowingLeak a obo:BFO_0000019 .
+_:ea6c36d4055efda47527ddf65223d51 rdf:reifies <<( doc:FactsslowGrowingLeak rdf:type obo:BFO_0000019 )>> ;
+	prov:wasDerivedFrom doc:049beaa171b3 .
+doc:FactsleakRepair rdfs:label "vacuum-hold test"@en .
+_:a62209d02f03e0f12aafc2250129f4d5 rdf:reifies <<( doc:FactsleakRepair rdfs:label "vacuum-hold test"@en )>> ;
+	prov:wasDerivedFrom doc:049beaa171b3 .
+doc:FactsleakRepair rdfs:label "IoT and Remote Monitoring"@en .
+_:acb3311ecb8a105130d8d7d1ba6c9a81 rdf:reifies <<( doc:FactsleakRepair rdfs:label "IoT and Remote Monitoring"@en )>> ;
+	prov:wasDerivedFrom doc:049beaa171b3 .
+_:cdb161d920d214699920d83f31254774 prov:wasDerivedFrom doc:049beaa171b3 .
+doc:Factsyear1_63 cd:has_interger_value 2024 .
+_:dadb219b9cd12bd0e515f5622ce6f87d rdf:reifies <<( doc:Factsyear1_63 cd:has_interger_value 2024 )>> ;
+	prov:wasDerivedFrom doc:049beaa171b3 .
+doc:FactsvibrationWear a obo:BFO_0000019 .
+_:baa4dbbe9d3660b1da5fe13ddb56ac37 rdf:reifies <<( doc:FactsvibrationWear rdf:type obo:BFO_0000019 )>> ;
+	prov:wasDerivedFrom doc:049beaa171b3 .
+doc:FactssolderingPoints cd:has_text_value "few ppm in the air" .
+_:b7caf6054d1f6289223e6da78c3278 rdf:reifies <<( doc:FactssolderingPoints cd:has_text_value "few ppm in the air" )>> ;
+	prov:wasDerivedFrom doc:049beaa171b3 .
+doc:FactspressureMeasurementData a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD/seed#Data_variable> .
+_:fc2f1323b905305fca9ef89b9388cf1e rdf:reifies <<( doc:FactspressureMeasurementData rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD/seed#Data_variable> )>> ;
+	prov:wasDerivedFrom doc:049beaa171b3 .
+doc:FactsslowGrowingLeak rdfs:label "slow-growing leak"@en .
+_:f779c0cd3c570d44339b15eaf99d14e8 rdf:reifies <<( doc:FactsslowGrowingLeak rdfs:label "slow-growing leak"@en )>> ;
+	prov:wasDerivedFrom doc:049beaa171b3 .
+doc:FactssolderingPoints a obo:BFO_0000019 .
+_:b519287e36932de92de06e65f1d3bda6 rdf:reifies <<( doc:FactssolderingPoints rdf:type obo:BFO_0000019 )>> ;
+	prov:wasDerivedFrom doc:049beaa171b3 .
+doc:FactspressureMeasurementData cd:has_text_value "standard pressure measurement data" .
+_:d14018d1ae1c475f60f7710ebbb71e9d rdf:reifies <<( doc:FactspressureMeasurementData cd:has_text_value "standard pressure measurement data" )>> ;
+	prov:wasDerivedFrom doc:049beaa171b3 .
+_:a4c889fc05235c7852b73809304d112f prov:wasDerivedFrom doc:049beaa171b3 .
+_:e5c86757f34431924e6d270a741dc628 prov:wasDerivedFrom doc:049beaa171b3 .
+doc:FactsmicroLeak rdfs:label "micro-leaks"@en .
+_:f58ef82a74bcf934a7be047bed11079b rdf:reifies <<( doc:FactsmicroLeak rdfs:label "micro-leaks"@en )>> ;
+	prov:wasDerivedFrom doc:049beaa171b3 .
+doc:Factsbus rdfs:label "bus"@en .
+_:c57608be6a46aad0ce94cc6f8fff36ed rdf:reifies <<( doc:Factsbus rdfs:label "bus"@en )>> ;
+	prov:wasDerivedFrom doc:049beaa171b3 .
+doc:Factsr134a rdfs:label "refrigerant system"@en .
+_:d6692564b4ff776d6978ef0e38734167 rdf:reifies <<( doc:Factsr134a rdfs:label "refrigerant system"@en )>> ;
+	prov:wasDerivedFrom doc:049beaa171b3 .
+doc:FactsairConditioningSystem rdfs:label "air conditioning system"@en .
+_:d2e61001afbeb58170c566bb1d686a6f rdf:reifies <<( doc:FactsairConditioningSystem rdfs:label "air conditioning system"@en )>> ;
+	prov:wasDerivedFrom doc:049beaa171b3 .
+doc:FactsfluorescentDyeInjection cd:has_predictive_maintenance_function doc:FactsleakRepair .
+_:ca117f2b66e016e9a69ae5ebe8ca4a88 rdf:reifies <<( doc:FactsfluorescentDyeInjection cd:has_predictive_maintenance_function doc:FactsleakRepair )>> ;
+	prov:wasDerivedFrom doc:049beaa171b3 .

@@ -1,0 +1,416 @@
+@prefix None: <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD/seed#> .
+@prefix cco: <http://www.ontologyrepository.com/CommonCoreOntologies/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doc: <https://growgraph.dev/doc/fae7e975c642/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix obo: <http://purl.obolibrary.org/obo/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix schema: <https://schema.org/> .
+doc:7bb30e3036d1 a prov:Entity , schema:text ;
+	prov:generatedAtTime "2026-07-24T06:18:31.591608Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+	schema:position 0 ;
+	schema:identifier "7bb30e3036d1" .
+doc:Predictive_maintenance_model schema:name "gas pipeline intelligent management system" .
+_:d98d2ef1c2d09d03011ddbb2739cd287 rdf:reifies <<( doc:Predictive_maintenance_model schema:name "gas pipeline intelligent management system" )>> ;
+	prov:wasDerivedFrom doc:7bb30e3036d1 .
+doc:FactshaoLi schema:name "Zhiyong Song" .
+_:fcc38744ec9371f1d2dab0267d0dc244 rdf:reifies <<( doc:FactshaoLi schema:name "Zhiyong Song" )>> ;
+	prov:wasDerivedFrom doc:7bb30e3036d1 .
+doc:Factspressure_1 a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Data_variable> .
+_:d9ca2539ac362033e788e821eae429ed rdf:reifies <<( doc:Factspressure_1 rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Data_variable> )>> ;
+	prov:wasDerivedFrom doc:7bb30e3036d1 .
+doc:Factspressure_1 schema:name "flow rate" .
+_:c1929068dc9df050920276e00ef8eed6 rdf:reifies <<( doc:Factspressure_1 schema:name "flow rate" )>> ;
+	prov:wasDerivedFrom doc:7bb30e3036d1 .
+doc:Factsarticle_9 schema:author doc:FactshaoLi .
+_:eb67c9224f6293aca1885b105b41148b rdf:reifies <<( doc:Factsarticle_9 schema:author doc:FactshaoLi )>> ;
+	prov:wasDerivedFrom doc:7bb30e3036d1 .
+doc:Factspressure_1 cco:describes doc:FactsgasPipeline .
+_:d6b6814f13636c32d24e4d28c07aec55 rdf:reifies <<( doc:Factspressure_1 cco:describes doc:FactsgasPipeline )>> ;
+	prov:wasDerivedFrom doc:7bb30e3036d1 .
+doc:Predictive_maintenance_model None:has_predictive_maintenance_function doc:Predictive_maintenance_model .
+_:d7a3cf24db2ba7ae5f7076799c9f8f59 rdf:reifies <<( doc:Predictive_maintenance_model None:has_predictive_maintenance_function doc:Predictive_maintenance_model )>> ;
+	prov:wasDerivedFrom doc:7bb30e3036d1 .
+doc:FactsfailurePredictionAccuracy a None:Performance_value .
+_:eebda9cf912e2ab74516ebd0f004eca6 rdf:reifies <<( doc:FactsfailurePredictionAccuracy rdf:type None:Performance_value )>> ;
+	prov:wasDerivedFrom doc:7bb30e3036d1 .
+doc:FactswaSrfModelType None:has_text_value "Wombat Algorithm-driven Scalable Random Forest" .
+_:d61077578961e529062f7ff83ae68627 rdf:reifies <<( doc:FactswaSrfModelType None:has_text_value "Wombat Algorithm-driven Scalable Random Forest" )>> ;
+	prov:wasDerivedFrom doc:7bb30e3036d1 .
+doc:FactsarticleDoi_5 a None:Article_identifier .
+_:bbf98ce1f0bde57f7f08523c058f307a rdf:reifies <<( doc:FactsarticleDoi_5 rdf:type None:Article_identifier )>> ;
+	prov:wasDerivedFrom doc:7bb30e3036d1 .
+doc:Predictive_maintenance_model a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Fault_detection> .
+_:f876918b0919053cf388648da0b32e01 rdf:reifies <<( doc:Predictive_maintenance_model rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Fault_detection> )>> ;
+	prov:wasDerivedFrom doc:7bb30e3036d1 .
+doc:FactshaoLi a schema:Person .
+_:bf6bf91ddd66bdfada9be091f80d11b4 rdf:reifies <<( doc:FactshaoLi rdf:type schema:Person )>> ;
+	prov:wasDerivedFrom doc:7bb30e3036d1 .
+doc:Predictive_maintenance_model None:has_design_detail doc:FactszScoreNormalization .
+_:a2513870a0e59612ea679e4f52379e6a rdf:reifies <<( doc:Predictive_maintenance_model None:has_design_detail doc:FactszScoreNormalization )>> ;
+	prov:wasDerivedFrom doc:7bb30e3036d1 .
+doc:FactsarticleDoi_5 None:has_text_value "10.1177/14727978251324145" .
+_:f5195a8eda6cee2a9fed692f5cabb4b rdf:reifies <<( doc:FactsarticleDoi_5 None:has_text_value "10.1177/14727978251324145" )>> ;
+	prov:wasDerivedFrom doc:7bb30e3036d1 .
+doc:Predictive_maintenance_model a None:Classification .
+_:bef260e070b4f200361c806c28cff6db rdf:reifies <<( doc:Predictive_maintenance_model rdf:type None:Classification )>> ;
+	prov:wasDerivedFrom doc:7bb30e3036d1 .
+doc:FactsgasPipeline a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Maintainable_item> .
+_:abea536b5258351bbe8c18030e89a90d rdf:reifies <<( doc:FactsgasPipeline rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Maintainable_item> )>> ;
+	prov:wasDerivedFrom doc:7bb30e3036d1 .
+doc:Predictive_maintenance_model a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Predictive_maintenance_model> .
+_:a9edbc535c2db905fae412bbde6b297b rdf:reifies <<( doc:Predictive_maintenance_model rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Predictive_maintenance_model> )>> ;
+	prov:wasDerivedFrom doc:7bb30e3036d1 .
+doc:FactsfailurePredictionAccuracy schema:unitText "percent" .
+_:f28b2b4ebfbf1b398b99ee1563a69ee4 rdf:reifies <<( doc:FactsfailurePredictionAccuracy schema:unitText "percent" )>> ;
+	prov:wasDerivedFrom doc:7bb30e3036d1 .
+doc:FactspublicationYear_7 None:has_interger_value 2025 .
+_:eebbf91504722903c4c0726b315953e rdf:reifies <<( doc:FactspublicationYear_7 None:has_interger_value 2025 )>> ;
+	prov:wasDerivedFrom doc:7bb30e3036d1 .
+doc:FactswaSrfModelType None:describes_type doc:Predictive_maintenance_model .
+_:d2a6e6d902172a04cc18eedfc2d0e669 rdf:reifies <<( doc:FactswaSrfModelType None:describes_type doc:Predictive_maintenance_model )>> ;
+	prov:wasDerivedFrom doc:7bb30e3036d1 .
+doc:FactsanomalyDetectionAuc a None:Performance_value .
+_:c871e67d609b1dcea62b8fb94580ddc4 rdf:reifies <<( doc:FactsanomalyDetectionAuc rdf:type None:Performance_value )>> ;
+	prov:wasDerivedFrom doc:7bb30e3036d1 .
+doc:FactshaoLi schema:name "Hao Li" .
+_:f3e824cf78d96f3a49a69681a6c9b664 rdf:reifies <<( doc:FactshaoLi schema:name "Hao Li" )>> ;
+	prov:wasDerivedFrom doc:7bb30e3036d1 .
+doc:Predictive_maintenance_model schema:programmingLanguage "Python" .
+_:a58af32c0b31b54327ab0aacb82e7ed7 rdf:reifies <<( doc:Predictive_maintenance_model schema:programmingLanguage "Python" )>> ;
+	prov:wasDerivedFrom doc:7bb30e3036d1 .
+doc:FactswaSrfModelType a None:Model_type .
+_:f524ec5dd9f14e07acd64bfd152abce1 rdf:reifies <<( doc:FactswaSrfModelType rdf:type None:Model_type )>> ;
+	prov:wasDerivedFrom doc:7bb30e3036d1 .
+doc:FactsarticleTitle_10 a None:Article_title .
+_:f871404b91e069b49506187d960c0495 rdf:reifies <<( doc:FactsarticleTitle_10 rdf:type None:Article_title )>> ;
+	prov:wasDerivedFrom doc:7bb30e3036d1 .
+doc:FactssensorMonitoring a None:Design_detail .
+_:accc14cdc359420f7632003cdf8c7ee7 rdf:reifies <<( doc:FactssensorMonitoring rdf:type None:Design_detail )>> ;
+	prov:wasDerivedFrom doc:7bb30e3036d1 .
+doc:Factsarticle_9 None:has_identifier doc:FactsarticleDoi_5 .
+_:b55f1ca8f963e79efa853d74a6a545dd rdf:reifies <<( doc:Factsarticle_9 None:has_identifier doc:FactsarticleDoi_5 )>> ;
+	prov:wasDerivedFrom doc:7bb30e3036d1 .
+doc:Factsarticle_9 schema:isPartOf doc:Factsjournal .
+_:e8722b996cdd5a7d439298e6fcd946de rdf:reifies <<( doc:Factsarticle_9 schema:isPartOf doc:Factsjournal )>> ;
+	prov:wasDerivedFrom doc:7bb30e3036d1 .
+doc:FactsarticleTitle_10 None:has_text_value "Data analysis and modeling of gas pipeline intelligent management system based on machine learning algorithm" .
+_:f7595f3af41882797034be2787e28638 rdf:reifies <<( doc:FactsarticleTitle_10 None:has_text_value "Data analysis and modeling of gas pipeline intelligent management system based on machine learning algorithm" )>> ;
+	prov:wasDerivedFrom doc:7bb30e3036d1 .
+doc:Predictive_maintenance_model a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Deviation_detection> .
+_:fa427cfb1ba05ab3e1aaaa797add12ba rdf:reifies <<( doc:Predictive_maintenance_model rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Deviation_detection> )>> ;
+	prov:wasDerivedFrom doc:7bb30e3036d1 .
+doc:Predictive_maintenance_model None:has_design_detail doc:FactssensorMonitoring .
+_:f0fdbd10c38a47563159b6cc806fffea rdf:reifies <<( doc:Predictive_maintenance_model None:has_design_detail doc:FactssensorMonitoring )>> ;
+	prov:wasDerivedFrom doc:7bb30e3036d1 .
+doc:FactsgasPipeline schema:name "gas pipeline" .
+_:c547651dd9328ce0e80aa2f366a03b47 rdf:reifies <<( doc:FactsgasPipeline schema:name "gas pipeline" )>> ;
+	prov:wasDerivedFrom doc:7bb30e3036d1 .
+doc:Factsarticle_9 schema:dateAccepted "2025-02-10"^^<http://www.w3.org/2001/XMLSchema#date> .
+_:d5a1cdf7397c5b06e445eb6c433d62ef rdf:reifies <<( doc:Factsarticle_9 schema:dateAccepted "2025-02-10"^^<http://www.w3.org/2001/XMLSchema#date> )>> ;
+	prov:wasDerivedFrom doc:7bb30e3036d1 .
+doc:FactshaoLi schema:name "Junfeng Zhang" .
+_:eb9ad6f55bdad71cd77f7e01b0497f39 rdf:reifies <<( doc:FactshaoLi schema:name "Junfeng Zhang" )>> ;
+	prov:wasDerivedFrom doc:7bb30e3036d1 .
+doc:FactsanomalyDetectionAuc schema:name "AUC for anomaly detection" .
+_:fea9bf8857e012d4e698ad91cfa605b rdf:reifies <<( doc:FactsanomalyDetectionAuc schema:name "AUC for anomaly detection" )>> ;
+	prov:wasDerivedFrom doc:7bb30e3036d1 .
+doc:Factsjournal a schema:Periodical .
+_:dd23f78efbe9840962aa2496e916f14f rdf:reifies <<( doc:Factsjournal rdf:type schema:Periodical )>> ;
+	prov:wasDerivedFrom doc:7bb30e3036d1 .
+doc:Factsarticle_9 a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Predictive_maintenance_model> .
+_:f9ba3460ea8b2dd725ecb571dabaf9a0 rdf:reifies <<( doc:Factsarticle_9 rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Predictive_maintenance_model> )>> ;
+	prov:wasDerivedFrom doc:7bb30e3036d1 .
+doc:Predictive_maintenance_model None:has_design_detail doc:FactsfftFeatureExtraction .
+_:c81f6b92b3cac42119740c60e8b40979 rdf:reifies <<( doc:Predictive_maintenance_model None:has_design_detail doc:FactsfftFeatureExtraction )>> ;
+	prov:wasDerivedFrom doc:7bb30e3036d1 .
+doc:Factspressure_1 schema:name "temperature" .
+_:c59bc63ec275eb74dbc3a0c62d6d8037 rdf:reifies <<( doc:Factspressure_1 schema:name "temperature" )>> ;
+	prov:wasDerivedFrom doc:7bb30e3036d1 .
+doc:FactszScoreNormalization schema:name "Z-score normalization" .
+_:f9bea2db6e8c3e6264d419a75107b183 rdf:reifies <<( doc:FactszScoreNormalization schema:name "Z-score normalization" )>> ;
+	prov:wasDerivedFrom doc:7bb30e3036d1 .
+doc:FactsanomalyDetectionAuc schema:value 0.98 .
+_:fe750c3b561960d6faaa6745477fac4a rdf:reifies <<( doc:FactsanomalyDetectionAuc schema:value 0.98 )>> ;
+	prov:wasDerivedFrom doc:7bb30e3036d1 .
+doc:Factsarticle_9 None:has_publication_year doc:FactspublicationYear_7 .
+_:ed25db856698de287e0d58d44ff1c2d rdf:reifies <<( doc:Factsarticle_9 None:has_publication_year doc:FactspublicationYear_7 )>> ;
+	prov:wasDerivedFrom doc:7bb30e3036d1 .
+doc:Predictive_maintenance_model schema:name "Wombat Algorithm-driven Scalable Random Forest (WA-SRF)" .
+_:f872a166665158fb60791bc4734ac02b rdf:reifies <<( doc:Predictive_maintenance_model schema:name "Wombat Algorithm-driven Scalable Random Forest (WA-SRF)" )>> ;
+	prov:wasDerivedFrom doc:7bb30e3036d1 .
+doc:FactsfailurePredictionAccuracy schema:value 98.7 .
+_:cc50205f6409fd476290177ce74925e7 rdf:reifies <<( doc:FactsfailurePredictionAccuracy schema:value 98.7 )>> ;
+	prov:wasDerivedFrom doc:7bb30e3036d1 .
+doc:Factsarticle_9 schema:datePublished "2025"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+_:c6fb460d113d4ea40fc9260320a68279 rdf:reifies <<( doc:Factsarticle_9 schema:datePublished "2025"^^<http://www.w3.org/2001/XMLSchema#gYear> )>> ;
+	prov:wasDerivedFrom doc:7bb30e3036d1 .
+doc:FactszScoreNormalization a None:Design_detail .
+_:c8e56faf345ade7148a02bc509eccb66 rdf:reifies <<( doc:FactszScoreNormalization rdf:type None:Design_detail )>> ;
+	prov:wasDerivedFrom doc:7bb30e3036d1 .
+doc:FactsfftFeatureExtraction schema:name "Fast Fourier Transform feature extraction" .
+_:d07e665992f303afb5ed726da7c643a7 rdf:reifies <<( doc:FactsfftFeatureExtraction schema:name "Fast Fourier Transform feature extraction" )>> ;
+	prov:wasDerivedFrom doc:7bb30e3036d1 .
+doc:Factsjournal schema:name "Journal of Computational Methods in Sciences and Engineering" .
+_:dec0bbaf137f2ab62ba226f0d7e2a304 rdf:reifies <<( doc:Factsjournal schema:name "Journal of Computational Methods in Sciences and Engineering" )>> ;
+	prov:wasDerivedFrom doc:7bb30e3036d1 .
+doc:Factspressure_1 schema:name "pressure" .
+_:efbb3b94e1d9384c5e8d648d766667c5 rdf:reifies <<( doc:Factspressure_1 schema:name "pressure" )>> ;
+	prov:wasDerivedFrom doc:7bb30e3036d1 .
+doc:FactshaoLi schema:name "Jianxin Tan" .
+_:b1eb9ab4c1c900886299dae0cc9e5610 rdf:reifies <<( doc:FactshaoLi schema:name "Jianxin Tan" )>> ;
+	prov:wasDerivedFrom doc:7bb30e3036d1 .
+doc:FactshaoLi schema:name "Yiwei Lu" .
+_:e5643afff77b130c4ecb146ef56b0a32 rdf:reifies <<( doc:FactshaoLi schema:name "Yiwei Lu" )>> ;
+	prov:wasDerivedFrom doc:7bb30e3036d1 .
+doc:FactspublicationYear_7 a None:Publication_year .
+_:bca40b8d5c28364f825fad3a40c9ae93 rdf:reifies <<( doc:FactspublicationYear_7 rdf:type None:Publication_year )>> ;
+	prov:wasDerivedFrom doc:7bb30e3036d1 .
+doc:FactssensorMonitoring schema:description "Embedded sensors collect real-time pressure, flow-rate, and temperature metrics from the gas pipeline." .
+_:b062a6695534b648fbeda8d578862e2f rdf:reifies <<( doc:FactssensorMonitoring schema:description "Embedded sensors collect real-time pressure, flow-rate, and temperature metrics from the gas pipeline." )>> ;
+	prov:wasDerivedFrom doc:7bb30e3036d1 .
+doc:FactshaoLi schema:name "Jiankun Liu" .
+_:c358b2337e8498d4c8a9ba2679e8ae43 rdf:reifies <<( doc:FactshaoLi schema:name "Jiankun Liu" )>> ;
+	prov:wasDerivedFrom doc:7bb30e3036d1 .
+doc:FactsfftFeatureExtraction a None:Design_detail .
+_:f723e8e0b52c6c3083bface0339ea0c9 rdf:reifies <<( doc:FactsfftFeatureExtraction rdf:type None:Design_detail )>> ;
+	prov:wasDerivedFrom doc:7bb30e3036d1 .
+doc:Factsarticle_9 None:has_title doc:FactsarticleTitle_10 .
+_:f8068c10e112ef1ed7832540a93107f1 rdf:reifies <<( doc:Factsarticle_9 None:has_title doc:FactsarticleTitle_10 )>> ;
+	prov:wasDerivedFrom doc:7bb30e3036d1 .
+doc:422bfb141071 a prov:Entity , schema:text ;
+	prov:generatedAtTime "2026-07-24T06:18:31.595606Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+	schema:position 1 ;
+	schema:identifier "422bfb141071" .
+doc:BFO_0000051 a None:Design_detail .
+_:bfcb5b9b53096dbaed4144622ef33ba0 rdf:reifies <<( doc:BFO_0000051 rdf:type None:Design_detail )>> ;
+	prov:wasDerivedFrom doc:422bfb141071 .
+doc:FactsgasPipeline rdfs:label "gas pipeline"@en .
+_:eb8d43eba9094ac87369127052a232c7 rdf:reifies <<( doc:FactsgasPipeline rdfs:label "gas pipeline"@en )>> ;
+	prov:wasDerivedFrom doc:422bfb141071 .
+doc:BFO_0000051 rdfs:label "corrosion prediction"@en .
+_:fdcf055a7e0172dc9ab2ea71d09b6f21 rdf:reifies <<( doc:BFO_0000051 rdfs:label "corrosion prediction"@en )>> ;
+	prov:wasDerivedFrom doc:422bfb141071 .
+doc:FactsliveSensorInformation a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Data_variable> .
+_:ec27033b497972a2d8213618e56ea5e4 rdf:reifies <<( doc:FactsliveSensorInformation rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Data_variable> )>> ;
+	prov:wasDerivedFrom doc:422bfb141071 .
+None:has_design_detail doc:factssmartGasPipelineManagementSystem doc:BFO_0000051 .
+_:acc12ea1e9989c281b16abae6859280f rdf:reifies <<( None:has_design_detail doc:factssmartGasPipelineManagementSystem doc:BFO_0000051 )>> ;
+	prov:wasDerivedFrom doc:422bfb141071 .
+None:has_predictive_maintenance_function doc:factssmartGasPipelineManagementSystem doc:BFO_0000051 .
+_:e35b1de4f1446296db8e699f47748b79 rdf:reifies <<( None:has_predictive_maintenance_function doc:factssmartGasPipelineManagementSystem doc:BFO_0000051 )>> ;
+	prov:wasDerivedFrom doc:422bfb141071 .
+doc:BFO_0000051 a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Deviation_detection> .
+_:bb3d018582924554a3736b9e539f4e22 rdf:reifies <<( doc:BFO_0000051 rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Deviation_detection> )>> ;
+	prov:wasDerivedFrom doc:422bfb141071 .
+doc:Predictive_maintenance_model rdfs:label "machine learning model"@en .
+_:e8dd90d1232cedd42f163a0f04f4bb46 rdf:reifies <<( doc:Predictive_maintenance_model rdfs:label "machine learning model"@en )>> ;
+	prov:wasDerivedFrom doc:422bfb141071 .
+doc:Predictive_maintenance_model cco:is_about doc:FactsgasPipeline .
+_:efe03e36b164f95b05ef9b96a9d5151b rdf:reifies <<( doc:Predictive_maintenance_model cco:is_about doc:FactsgasPipeline )>> ;
+	prov:wasDerivedFrom doc:422bfb141071 .
+doc:FactsmachineLearningModelType rdfs:label "machine learning"@en .
+_:f16313a6e3e6ca25f87ed63c202ce46 rdf:reifies <<( doc:FactsmachineLearningModelType rdfs:label "machine learning"@en )>> ;
+	prov:wasDerivedFrom doc:422bfb141071 .
+_:f876918b0919053cf388648da0b32e01 prov:wasDerivedFrom doc:422bfb141071 .
+doc:BFO_0000051 rdfs:label "anomaly detection"@en .
+_:aab39e887cbf4608f4fc835fababbf05 rdf:reifies <<( doc:BFO_0000051 rdfs:label "anomaly detection"@en )>> ;
+	prov:wasDerivedFrom doc:422bfb141071 .
+doc:FactsliveSensorInformation rdfs:label "live sensor information"@en .
+_:a604ac7a157b4a71d6f2438d1368243f rdf:reifies <<( doc:FactsliveSensorInformation rdfs:label "live sensor information"@en )>> ;
+	prov:wasDerivedFrom doc:422bfb141071 .
+doc:FactshealthAssessmentFunction_6 rdfs:label "pipeline condition monitoring"@en .
+_:a1805bb6b08568ab04a3ff6688942d9d rdf:reifies <<( doc:FactshealthAssessmentFunction_6 rdfs:label "pipeline condition monitoring"@en )>> ;
+	prov:wasDerivedFrom doc:422bfb141071 .
+doc:FactshistoricalData rdfs:label "historical data"@en .
+_:f5a666ed3dc948fca96c3c040310f3a1 rdf:reifies <<( doc:FactshistoricalData rdfs:label "historical data"@en )>> ;
+	prov:wasDerivedFrom doc:422bfb141071 .
+doc:Predictive_maintenance_model rdfs:label "potential failure detection"@en .
+_:dc8caccbe10735d4c882168f62571f80 rdf:reifies <<( doc:Predictive_maintenance_model rdfs:label "potential failure detection"@en )>> ;
+	prov:wasDerivedFrom doc:422bfb141071 .
+doc:factssmartGasPipelineManagementSystem a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Predictive_maintenance_model> .
+_:d50d3b1bb160c1d8734932a8cbbe68c2 rdf:reifies <<( doc:factssmartGasPipelineManagementSystem rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Predictive_maintenance_model> )>> ;
+	prov:wasDerivedFrom doc:422bfb141071 .
+doc:Factsshijiazhuang rdfs:label "Shijiazhuang"@en .
+_:edb50e8ad855f65fdda76e81d3692995 rdf:reifies <<( doc:Factsshijiazhuang rdfs:label "Shijiazhuang"@en )>> ;
+	prov:wasDerivedFrom doc:422bfb141071 .
+_:abea536b5258351bbe8c18030e89a90d prov:wasDerivedFrom doc:422bfb141071 .
+doc:FactsmachineLearningModelType None:describes_type doc:Predictive_maintenance_model .
+_:f01750d001a5f01415f99a0f59f2f412 rdf:reifies <<( doc:FactsmachineLearningModelType None:describes_type doc:Predictive_maintenance_model )>> ;
+	prov:wasDerivedFrom doc:422bfb141071 .
+doc:BFO_0000051 rdfs:label "pressure management"@en .
+_:fe72fca38c3596864b6c220bc57139cb rdf:reifies <<( doc:BFO_0000051 rdfs:label "pressure management"@en )>> ;
+	prov:wasDerivedFrom doc:422bfb141071 .
+doc:FactshistoricalData a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Data_variable> .
+_:abee843298b131a485b4b0285c5505ad rdf:reifies <<( doc:FactshistoricalData rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Data_variable> )>> ;
+	prov:wasDerivedFrom doc:422bfb141071 .
+doc:Factsshijiazhuang a schema:Place .
+_:c8102a753fdfc93a8ecb613230bd0a73 rdf:reifies <<( doc:Factsshijiazhuang rdf:type schema:Place )>> ;
+	prov:wasDerivedFrom doc:422bfb141071 .
+_:a9edbc535c2db905fae412bbde6b297b prov:wasDerivedFrom doc:422bfb141071 .
+doc:FactshebeiGasCoLtd a schema:Organization .
+_:f1f0e773326785dc6687f3401086a0cc rdf:reifies <<( doc:FactshebeiGasCoLtd rdf:type schema:Organization )>> ;
+	prov:wasDerivedFrom doc:422bfb141071 .
+doc:FactshebeiGasCoLtd rdfs:label "Hebei Gas Co., Ltd"@en .
+_:f428d5312770a0ed4a23cfd708a4302 rdf:reifies <<( doc:FactshebeiGasCoLtd rdfs:label "Hebei Gas Co., Ltd"@en )>> ;
+	prov:wasDerivedFrom doc:422bfb141071 .
+obo:BFO_0000051 doc:factssmartGasPipelineManagementSystem doc:Predictive_maintenance_model .
+_:beaec327119936ca91b82a02064d035a rdf:reifies <<( obo:BFO_0000051 doc:factssmartGasPipelineManagementSystem doc:Predictive_maintenance_model )>> ;
+	prov:wasDerivedFrom doc:422bfb141071 .
+doc:FactshebeiGasCoLtd schema:location doc:Factsshijiazhuang .
+_:ed689e9de9aeef5958f1519eee212eff rdf:reifies <<( doc:FactshebeiGasCoLtd schema:location doc:Factsshijiazhuang )>> ;
+	prov:wasDerivedFrom doc:422bfb141071 .
+None:has_predictive_maintenance_function doc:factssmartGasPipelineManagementSystem doc:Predictive_maintenance_model .
+_:a16ee091a40b69bf0cd3b1a601229445 rdf:reifies <<( None:has_predictive_maintenance_function doc:factssmartGasPipelineManagementSystem doc:Predictive_maintenance_model )>> ;
+	prov:wasDerivedFrom doc:422bfb141071 .
+None:has_predictive_maintenance_function doc:factssmartGasPipelineManagementSystem doc:FactshealthAssessmentFunction_6 .
+_:d1312f63f883568f7c34484ad1f4e157 rdf:reifies <<( None:has_predictive_maintenance_function doc:factssmartGasPipelineManagementSystem doc:FactshealthAssessmentFunction_6 )>> ;
+	prov:wasDerivedFrom doc:422bfb141071 .
+doc:factssmartGasPipelineManagementSystem rdfs:label "smart gas pipeline management system"@en .
+_:bdb63aaa0530aa3c51c59529a0dae0ec rdf:reifies <<( doc:factssmartGasPipelineManagementSystem rdfs:label "smart gas pipeline management system"@en )>> ;
+	prov:wasDerivedFrom doc:422bfb141071 .
+doc:BFO_0000051 rdfs:label "leak detection"@en .
+_:e0f13d9a96b3943b6dcd861bf2ce4034 rdf:reifies <<( doc:BFO_0000051 rdfs:label "leak detection"@en )>> ;
+	prov:wasDerivedFrom doc:422bfb141071 .
+doc:FactshealthAssessmentFunction_6 a None:Health_assessment .
+_:ced3da80778cacd7b4bd594bb2f5fae9 rdf:reifies <<( doc:FactshealthAssessmentFunction_6 rdf:type None:Health_assessment )>> ;
+	prov:wasDerivedFrom doc:422bfb141071 .
+doc:FactsmachineLearningModelType a None:Model_type .
+_:c84e7aeea51182c6ee47c6a5b2c83356 rdf:reifies <<( doc:FactsmachineLearningModelType rdf:type None:Model_type )>> ;
+	prov:wasDerivedFrom doc:422bfb141071 .
+doc:f95a40877573 a prov:Entity , schema:text ;
+	prov:generatedAtTime "2026-07-24T06:18:31.597606Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+	schema:position 2 ;
+	schema:identifier "f95a40877573" .
+doc:FactshumanErrorReduction a schema:Goal .
+_:ffdf8557326ef76f0a9ab3b8eafee30a rdf:reifies <<( doc:FactshumanErrorReduction rdf:type schema:Goal )>> ;
+	prov:wasDerivedFrom doc:f95a40877573 .
+doc:FactsenvironmentalFootprintReduction schema:name "reduction of the environmental footprint of pipeline maintenance"@en .
+_:f5ca0102ecbb96f82dfa5ed4fad15085 rdf:reifies <<( doc:FactsenvironmentalFootprintReduction schema:name "reduction of the environmental footprint of pipeline maintenance"@en )>> ;
+	prov:wasDerivedFrom doc:f95a40877573 .
+doc:Factspressure_1 schema:about doc:FactsgasPipelineNetwork .
+_:b20c73e27588f5a1f17b79de144e76db rdf:reifies <<( doc:Factspressure_1 schema:about doc:FactsgasPipelineNetwork )>> ;
+	prov:wasDerivedFrom doc:f95a40877573 .
+doc:FactsmachineLearningModelType schema:about doc:FactsgasPipelineNetwork .
+_:db8c5345e335f1fb7462fb1729d2bc33 rdf:reifies <<( doc:FactsmachineLearningModelType schema:about doc:FactsgasPipelineNetwork )>> ;
+	prov:wasDerivedFrom doc:f95a40877573 .
+doc:Predictive_maintenance_model <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#has_predictive_maintenance_function> doc:Predictive_maintenance_model .
+_:d71abb8dd47c7c8d928a3aade9ca4b6c rdf:reifies <<( doc:Predictive_maintenance_model <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#has_predictive_maintenance_function> doc:Predictive_maintenance_model )>> ;
+	prov:wasDerivedFrom doc:f95a40877573 .
+doc:Predictive_maintenance_model schema:name "pressure anomaly detection"@en .
+_:cf5cf5d4cb41d380543069cd55a882da rdf:reifies <<( doc:Predictive_maintenance_model schema:name "pressure anomaly detection"@en )>> ;
+	prov:wasDerivedFrom doc:f95a40877573 .
+doc:Predictive_maintenance_model a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Predictive_maintenance_module_function> .
+_:ebf5ee87f96859dec2ff4ff48a5a7d9 rdf:reifies <<( doc:Predictive_maintenance_model rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Predictive_maintenance_module_function> )>> ;
+	prov:wasDerivedFrom doc:f95a40877573 .
+doc:FactsfailureForecastFunction a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Future_state_forecast> .
+_:e433b59181260c6dd948b3b3d20fb471 rdf:reifies <<( doc:FactsfailureForecastFunction rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Future_state_forecast> )>> ;
+	prov:wasDerivedFrom doc:f95a40877573 .
+doc:Predictive_maintenance_model schema:about doc:FactsgasPipelineNetwork .
+_:faec1e7cb556d66e06c5939cbaceb80d rdf:reifies <<( doc:Predictive_maintenance_model schema:about doc:FactsgasPipelineNetwork )>> ;
+	prov:wasDerivedFrom doc:f95a40877573 .
+doc:FactsresourceAllocationObjective a schema:Action .
+_:bd298bbaad7ad24783a819397f0115d7 rdf:reifies <<( doc:FactsresourceAllocationObjective rdf:type schema:Action )>> ;
+	prov:wasDerivedFrom doc:f95a40877573 .
+doc:FactsenvironmentalFootprintReduction a schema:Goal .
+_:b591a32018c9027f98e62fbe68e86625 rdf:reifies <<( doc:FactsenvironmentalFootprintReduction rdf:type schema:Goal )>> ;
+	prov:wasDerivedFrom doc:f95a40877573 .
+doc:Predictive_maintenance_model schema:description "Machine-learning model designed to improve scalability and fault-detection accuracy."@en .
+_:a8820dab0f918f2cb11177bf326bf039 rdf:reifies <<( doc:Predictive_maintenance_model schema:description "Machine-learning model designed to improve scalability and fault-detection accuracy."@en )>> ;
+	prov:wasDerivedFrom doc:f95a40877573 .
+doc:FactsmachineLearningModelType schema:name "machine-learning algorithms"@en .
+_:b47ee4414df79525f9d00a07f10df881 rdf:reifies <<( doc:FactsmachineLearningModelType schema:name "machine-learning algorithms"@en )>> ;
+	prov:wasDerivedFrom doc:f95a40877573 .
+doc:Predictive_maintenance_model schema:name "Wombat Algorithm-driven Scalable Random Forest model"@en .
+_:e480a33d04335a05d1e80e4c11103826 rdf:reifies <<( doc:Predictive_maintenance_model schema:name "Wombat Algorithm-driven Scalable Random Forest model"@en )>> ;
+	prov:wasDerivedFrom doc:f95a40877573 .
+doc:FactsfailureForecastFunction schema:about doc:FactsgasPipelineNetwork .
+_:f66150979c2f43df60454e2b33c8171b rdf:reifies <<( doc:FactsfailureForecastFunction schema:about doc:FactsgasPipelineNetwork )>> ;
+	prov:wasDerivedFrom doc:f95a40877573 .
+_:f876918b0919053cf388648da0b32e01 prov:wasDerivedFrom doc:f95a40877573 .
+doc:FactsresourceAllocationObjective schema:name "optimization of resource allocation"@en .
+_:afaec7258439955888649a274484eae7 rdf:reifies <<( doc:FactsresourceAllocationObjective schema:name "optimization of resource allocation"@en )>> ;
+	prov:wasDerivedFrom doc:f95a40877573 .
+doc:FactsoperationalLifespanExtension schema:about doc:FactsgasPipelineNetwork .
+_:d9346e2acfab9ae5440fe687e31703af rdf:reifies <<( doc:FactsoperationalLifespanExtension schema:about doc:FactsgasPipelineNetwork )>> ;
+	prov:wasDerivedFrom doc:f95a40877573 .
+doc:FactsoperationalLifespanExtension schema:name "extension of pipeline operational lifespan"@en .
+_:bc13fe703d195bfdba2ca07c32d4cd33 rdf:reifies <<( doc:FactsoperationalLifespanExtension schema:name "extension of pipeline operational lifespan"@en )>> ;
+	prov:wasDerivedFrom doc:f95a40877573 .
+_:a9edbc535c2db905fae412bbde6b297b prov:wasDerivedFrom doc:f95a40877573 .
+doc:Predictive_maintenance_model schema:alternateName "WASRF"@en .
+_:cb9a710bf0217eb47d2617199e27719f rdf:reifies <<( doc:Predictive_maintenance_model schema:alternateName "WASRF"@en )>> ;
+	prov:wasDerivedFrom doc:f95a40877573 .
+doc:Predictive_maintenance_model schema:name "hybrid artificial intelligence models"@en .
+_:fe7b1aba8a6ea4c55befb8d85a12076 rdf:reifies <<( doc:Predictive_maintenance_model schema:name "hybrid artificial intelligence models"@en )>> ;
+	prov:wasDerivedFrom doc:f95a40877573 .
+doc:Predictive_maintenance_model schema:name "deep learning models"@en .
+_:af2dee594c976a1effa9125d173c53ea rdf:reifies <<( doc:Predictive_maintenance_model schema:name "deep learning models"@en )>> ;
+	prov:wasDerivedFrom doc:f95a40877573 .
+doc:Predictive_maintenance_model schema:name "corrosion detection"@en .
+_:d119234c1dcd724b3c4b7bea9634e5d0 rdf:reifies <<( doc:Predictive_maintenance_model schema:name "corrosion detection"@en )>> ;
+	prov:wasDerivedFrom doc:f95a40877573 .
+doc:FactshumanErrorReduction schema:about doc:Predictive_maintenance_model .
+_:fe18ff63e188bbae19089ce3bfa2fc63 rdf:reifies <<( doc:FactshumanErrorReduction schema:about doc:Predictive_maintenance_model )>> ;
+	prov:wasDerivedFrom doc:f95a40877573 .
+doc:Predictive_maintenance_model schema:name "leak detection"@en .
+_:abe9c59156330aa969766afb91f901d3 rdf:reifies <<( doc:Predictive_maintenance_model schema:name "leak detection"@en )>> ;
+	prov:wasDerivedFrom doc:f95a40877573 .
+doc:FactsresourceAllocationObjective schema:object doc:FactsgasPipelineNetwork .
+_:cd203366097c49e51a818911c601b2f2 rdf:reifies <<( doc:FactsresourceAllocationObjective schema:object doc:FactsgasPipelineNetwork )>> ;
+	prov:wasDerivedFrom doc:f95a40877573 .
+doc:Predictive_maintenance_model schema:name "ML-based predictive maintenance"@en .
+_:bee68746bd3ed887ea74a4ae39a9005f rdf:reifies <<( doc:Predictive_maintenance_model schema:name "ML-based predictive maintenance"@en )>> ;
+	prov:wasDerivedFrom doc:f95a40877573 .
+doc:FactsrealTimeIoTMonitoring a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Data_variable> .
+_:a253e550a277a7f246d198bc0c221abb rdf:reifies <<( doc:FactsrealTimeIoTMonitoring rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Data_variable> )>> ;
+	prov:wasDerivedFrom doc:f95a40877573 .
+doc:Predictive_maintenance_model <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#has_predictive_maintenance_function> doc:FactsfailureForecastFunction .
+_:d3da9509ab45c93b114cf6ede4ed516b rdf:reifies <<( doc:Predictive_maintenance_model <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#has_predictive_maintenance_function> doc:FactsfailureForecastFunction )>> ;
+	prov:wasDerivedFrom doc:f95a40877573 .
+doc:FactsoperationalLifespanExtension a schema:Goal .
+_:f0d343a16f86a504498d5057750759a6 rdf:reifies <<( doc:FactsoperationalLifespanExtension rdf:type schema:Goal )>> ;
+	prov:wasDerivedFrom doc:f95a40877573 .
+doc:Predictive_maintenance_model schema:name "pipeline management system"@en .
+_:c80a14ee0a98050e567dc6c5fe9d1318 rdf:reifies <<( doc:Predictive_maintenance_model schema:name "pipeline management system"@en )>> ;
+	prov:wasDerivedFrom doc:f95a40877573 .
+doc:FactsrealTimeIoTMonitoring schema:name "real-time monitoring through IoT integration"@en .
+_:b1c12344a53484303bc0143246433495 rdf:reifies <<( doc:FactsrealTimeIoTMonitoring schema:name "real-time monitoring through IoT integration"@en )>> ;
+	prov:wasDerivedFrom doc:f95a40877573 .
+doc:FactsrealTimeIoTMonitoring schema:about doc:FactsgasPipelineNetwork .
+_:b3e9e6b3a88b7a3acc0ae38949759800 rdf:reifies <<( doc:FactsrealTimeIoTMonitoring schema:about doc:FactsgasPipelineNetwork )>> ;
+	prov:wasDerivedFrom doc:f95a40877573 .
+doc:Predictive_maintenance_model schema:name "fault detection"@en .
+_:b1f73b1ba6aadae5c7801684c16f4673 rdf:reifies <<( doc:Predictive_maintenance_model schema:name "fault detection"@en )>> ;
+	prov:wasDerivedFrom doc:f95a40877573 .
+doc:Predictive_maintenance_model a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Predictive_maintenance_system_module> .
+_:aaf5bed1c0fd2c46ca1239e2cb76fac rdf:reifies <<( doc:Predictive_maintenance_model rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Predictive_maintenance_system_module> )>> ;
+	prov:wasDerivedFrom doc:f95a40877573 .
+doc:FactsgasPipelineNetwork a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Maintainable_item> .
+_:f125d52d7c2beb7c089dc610c1c93ea rdf:reifies <<( doc:FactsgasPipelineNetwork rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Maintainable_item> )>> ;
+	prov:wasDerivedFrom doc:f95a40877573 .
+doc:FactsenvironmentalFootprintReduction schema:about doc:FactsgasPipelineNetwork .
+_:a71f195112c4f426724ae2299b8c9857 rdf:reifies <<( doc:FactsenvironmentalFootprintReduction schema:about doc:FactsgasPipelineNetwork )>> ;
+	prov:wasDerivedFrom doc:f95a40877573 .
+_:d9ca2539ac362033e788e821eae429ed prov:wasDerivedFrom doc:f95a40877573 .
+doc:FactsmachineLearningModelType a cco:Algorithm .
+_:b9e1d044a6b3f3087eb217a85e404993 rdf:reifies <<( doc:FactsmachineLearningModelType rdf:type cco:Algorithm )>> ;
+	prov:wasDerivedFrom doc:f95a40877573 .
+doc:Factspressure_1 schema:name "sensor data"@en .
+_:bdeaa041845cb96df88e5e8fd2e5f745 rdf:reifies <<( doc:Factspressure_1 schema:name "sensor data"@en )>> ;
+	prov:wasDerivedFrom doc:f95a40877573 .
+doc:FactsgasPipelineNetwork schema:name "gas pipeline network"@en .
+_:ccdba0c57e8b24dea712773da06840c1 rdf:reifies <<( doc:FactsgasPipelineNetwork schema:name "gas pipeline network"@en )>> ;
+	prov:wasDerivedFrom doc:f95a40877573 .
+_:fa427cfb1ba05ab3e1aaaa797add12ba prov:wasDerivedFrom doc:f95a40877573 .
+doc:FactsfailureForecastFunction schema:name "pipeline failure forecasting"@en .
+_:fff362150d528982b18618dd4956a71c rdf:reifies <<( doc:FactsfailureForecastFunction schema:name "pipeline failure forecasting"@en )>> ;
+	prov:wasDerivedFrom doc:f95a40877573 .
+doc:FactsresourceAllocationObjective schema:name "optimization of pipeline maintenance scheduling"@en .
+_:bd246db5e6370d06f50c47124864697d rdf:reifies <<( doc:FactsresourceAllocationObjective schema:name "optimization of pipeline maintenance scheduling"@en )>> ;
+	prov:wasDerivedFrom doc:f95a40877573 .
+doc:FactshumanErrorReduction schema:name "reduction of human-associated errors"@en .
+_:cca67d01d4ec8ff6d67b7f609ea6df25 rdf:reifies <<( doc:FactshumanErrorReduction schema:name "reduction of human-associated errors"@en )>> ;
+	prov:wasDerivedFrom doc:f95a40877573 .
+<http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Predictive_maintenance_model> owl:sameAs <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Predictive_maintenance_system_module> .

@@ -28,7 +28,7 @@ from typing import Iterable
 REPO_ROOT = Path(__file__).resolve().parents[1]
 DEFAULT_CASEBASE_CSV = REPO_ROOT / (
     "external/CBR-Ontology-For-Predictive-Maintenance/CBR-Ontology/CBRproject/data/"
-    "CleanedDATA V21-07-2021.csv"
+    "CleanedDATA V12-05-2021.csv"
 )
 DEFAULT_DIVERSITY_SUBMODULE = REPO_ROOT / "external/Diversity-Improvement-in-CBR"
 DEFAULT_WEIGHTS = (0.20, 0.25, 0.40, 0.15)  # approach, model type, models, preprocessing

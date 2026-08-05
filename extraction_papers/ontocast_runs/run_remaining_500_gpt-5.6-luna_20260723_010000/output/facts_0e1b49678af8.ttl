@@ -1,0 +1,652 @@
+@prefix None: <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD/seed#> .
+@prefix cco: <http://www.ontologyrepository.com/CommonCoreOntologies/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doc: <https://growgraph.dev/doc/0e1b49678af8/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix obo: <http://purl.obolibrary.org/obo/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix schema: <https://schema.org/> .
+doc:65e9d9f58032 a prov:Entity , schema:text ;
+	prov:generatedAtTime "2026-07-24T04:53:20.062785Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+	schema:position 0 ;
+	schema:identifier "65e9d9f58032" .
+doc:FactsfityaMozar a schema:Person .
+_:eba6972fa256dc8c109e22ef6dbed184 rdf:reifies <<( doc:FactsfityaMozar rdf:type schema:Person )>> ;
+	prov:wasDerivedFrom doc:65e9d9f58032 .
+doc:Factspredictive_maintenance_module_1 None:has_predictive_maintenance_function doc:Factsregression_1 .
+_:e5adc427062b5543dd0a75142b5c9289 rdf:reifies <<( doc:Factspredictive_maintenance_module_1 None:has_predictive_maintenance_function doc:Factsregression_1 )>> ;
+	prov:wasDerivedFrom doc:65e9d9f58032 .
+doc:Factsarticle_1_1 a schema:ScholarlyArticle .
+_:c23e3bd0e00b8968c4917ebe33d7da9f rdf:reifies <<( doc:Factsarticle_1_1 rdf:type schema:ScholarlyArticle )>> ;
+	prov:wasDerivedFrom doc:65e9d9f58032 .
+doc:Factsarticle_1_1 schema:keywords "SVR"@en .
+_:c15002ae32d02d32e1a5c19d3bf3c84f rdf:reifies <<( doc:Factsarticle_1_1 schema:keywords "SVR"@en )>> ;
+	prov:wasDerivedFrom doc:65e9d9f58032 .
+doc:FactshealthAssessmentFunction a None:Predictive_maintenance_module_function .
+_:f39cd2d3f7fb62a801627b7147435040 rdf:reifies <<( doc:FactshealthAssessmentFunction rdf:type None:Predictive_maintenance_module_function )>> ;
+	prov:wasDerivedFrom doc:65e9d9f58032 .
+doc:Factssvr_model_1 None:describes_type doc:FactssvrRmseValue .
+_:e8b056a1aed0920295d617d0a3a5fc01 rdf:reifies <<( doc:Factssvr_model_1 None:describes_type doc:FactssvrRmseValue )>> ;
+	prov:wasDerivedFrom doc:65e9d9f58032 .
+doc:Factsarticle_1_1 schema:keywords "SOH"@en .
+_:b02dbacc8ebdfb9386dd87511ee7a8d8 rdf:reifies <<( doc:Factsarticle_1_1 schema:keywords "SOH"@en )>> ;
+	prov:wasDerivedFrom doc:65e9d9f58032 .
+doc:Factsorec schema:address "Klamath Falls, USA"@en .
+_:d0bd195c9821a171041f7082ef512b57 rdf:reifies <<( doc:Factsorec schema:address "Klamath Falls, USA"@en )>> ;
+	prov:wasDerivedFrom doc:65e9d9f58032 .
+doc:Factsarticle_1_1 schema:keywords "remote agriculture areas"@en .
+_:a008ce1eb72552356e2af4e76432605b rdf:reifies <<( doc:Factsarticle_1_1 schema:keywords "remote agriculture areas"@en )>> ;
+	prov:wasDerivedFrom doc:65e9d9f58032 .
+doc:FactsleadAcidBatteryType cco:describes doc:Factsbattery .
+_:fe4744ef1e0ac220573f93becee8d233 rdf:reifies <<( doc:FactsleadAcidBatteryType cco:describes doc:Factsbattery )>> ;
+	prov:wasDerivedFrom doc:65e9d9f58032 .
+doc:FactssvrRmseValue a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Model_type> .
+_:ff1c6b8477d8da803f9f954fdf997308 rdf:reifies <<( doc:FactssvrRmseValue rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Model_type> )>> ;
+	prov:wasDerivedFrom doc:65e9d9f58032 .
+doc:Factssvr_model_1 rdfs:label "Long Short-Term Memory model"@en .
+_:fa809c02378222be9856f692dd010d2e rdf:reifies <<( doc:Factssvr_model_1 rdfs:label "Long Short-Term Memory model"@en )>> ;
+	prov:wasDerivedFrom doc:65e9d9f58032 .
+doc:FactsenergyStorageSystem a schema:Thing .
+_:dfdc4803f13d1b04d66e0e88b3c31160 rdf:reifies <<( doc:FactsenergyStorageSystem rdf:type schema:Thing )>> ;
+	prov:wasDerivedFrom doc:65e9d9f58032 .
+doc:FactssvrRmseValue None:has_text_value "Support Vector Regression (SVR) with RBF kernel" .
+_:ac2f89709c0e2329a6af406c38543f48 rdf:reifies <<( doc:FactssvrRmseValue None:has_text_value "Support Vector Regression (SVR) with RBF kernel" )>> ;
+	prov:wasDerivedFrom doc:65e9d9f58032 .
+doc:Factsbattery schema:additionalType doc:FactsleadAcidBatteryType .
+_:af463ee2878ad8a54474dbfd7cce214e rdf:reifies <<( doc:Factsbattery schema:additionalType doc:FactsleadAcidBatteryType )>> ;
+	prov:wasDerivedFrom doc:65e9d9f58032 .
+doc:FactsfityaMozar schema:name "Muhammad Asrol"@en .
+_:f8e77f635a0503af126c4d5f02db49bb rdf:reifies <<( doc:FactsfityaMozar schema:name "Muhammad Asrol"@en )>> ;
+	prov:wasDerivedFrom doc:65e9d9f58032 .
+doc:Factsarticle_1_1 schema:keywords "LSTM"@en .
+_:bb5bc793fefdffcecb641f592c802999 rdf:reifies <<( doc:Factsarticle_1_1 schema:keywords "LSTM"@en )>> ;
+	prov:wasDerivedFrom doc:65e9d9f58032 .
+doc:FactssvrRmseValue cco:is_about doc:FactssvrRmseValue .
+_:ef070f9ee9d48d9a8cd81b1036a44286 rdf:reifies <<( doc:FactssvrRmseValue cco:is_about doc:FactssvrRmseValue )>> ;
+	prov:wasDerivedFrom doc:65e9d9f58032 .
+doc:Factsarticle_1_1 schema:abstract "The study uses machine learning to estimate battery degradation in an energy storage system."@en .
+_:e55926dc237d26d3041aa104d66d1177 rdf:reifies <<( doc:Factsarticle_1_1 schema:abstract "The study uses machine learning to estimate battery degradation in an energy storage system."@en )>> ;
+	prov:wasDerivedFrom doc:65e9d9f58032 .
+doc:FactssvrRmseValue a cco:DescriptiveInformationContentEntity .
+_:d98c1a9f2c894d8c771666e670e45639 rdf:reifies <<( doc:FactssvrRmseValue rdf:type cco:DescriptiveInformationContentEntity )>> ;
+	prov:wasDerivedFrom doc:65e9d9f58032 .
+doc:FactsfityaMozar schema:affiliation doc:Factsorec .
+_:ec45c56f9d19c2b84cf583df019d24c5 rdf:reifies <<( doc:FactsfityaMozar schema:affiliation doc:Factsorec )>> ;
+	prov:wasDerivedFrom doc:65e9d9f58032 .
+doc:Factsbattery rdfs:label "lead-acid battery"@en .
+_:b7f38b8013080f08c871ec0d00c7ca2a rdf:reifies <<( doc:Factsbattery rdfs:label "lead-acid battery"@en )>> ;
+	prov:wasDerivedFrom doc:65e9d9f58032 .
+doc:Factspredictive_maintenance_module_1 None:has_predictive_maintenance_function doc:FactshealthAssessmentFunction .
+_:f49c9603fb602453285f9c6748852c1c rdf:reifies <<( doc:Factspredictive_maintenance_module_1 None:has_predictive_maintenance_function doc:FactshealthAssessmentFunction )>> ;
+	prov:wasDerivedFrom doc:65e9d9f58032 .
+doc:FactsfityaMozar schema:name "Bens Pardamean"@en .
+_:b9be26cc9c141e7a2007a2c1005fdd34 rdf:reifies <<( doc:FactsfityaMozar schema:name "Bens Pardamean"@en )>> ;
+	prov:wasDerivedFrom doc:65e9d9f58032 .
+doc:FactssvrRmseValue cco:describes doc:Factssvr_model_1 .
+_:df93ac95e777ac5d30e0443ad3c9820e rdf:reifies <<( doc:FactssvrRmseValue cco:describes doc:Factssvr_model_1 )>> ;
+	prov:wasDerivedFrom doc:65e9d9f58032 .
+doc:Factsarticle_1_1 schema:about doc:Factsbattery .
+_:af7b4141ad3b0b6b6a5e22bf2242324d rdf:reifies <<( doc:Factsarticle_1_1 schema:about doc:Factsbattery )>> ;
+	prov:wasDerivedFrom doc:65e9d9f58032 .
+doc:FactssvrRmseValue None:has_text_value "Long Short-Term Memory (LSTM)" .
+_:cc109cc54fa72977c49a01f3edf9dfaf rdf:reifies <<( doc:FactssvrRmseValue None:has_text_value "Long Short-Term Memory (LSTM)" )>> ;
+	prov:wasDerivedFrom doc:65e9d9f58032 .
+doc:FactsfityaMozar schema:name "Arief S. Budiman"@en .
+_:dc1ac996f945814f332a410b50bb0da3 rdf:reifies <<( doc:FactsfityaMozar schema:name "Arief S. Budiman"@en )>> ;
+	prov:wasDerivedFrom doc:65e9d9f58032 .
+doc:FactssvrRmseValue schema:value "5377"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+_:d781a67d03e75cf144d0e1cc5b0751ea rdf:reifies <<( doc:FactssvrRmseValue schema:value "5377"^^<http://www.w3.org/2001/XMLSchema#decimal> )>> ;
+	prov:wasDerivedFrom doc:65e9d9f58032 .
+doc:Factspredictive_maintenance_module_1 a cco:InformationProcessingArtifact .
+_:f0d19b9561806b5fbc22bf48f020b286 rdf:reifies <<( doc:Factspredictive_maintenance_module_1 rdf:type cco:InformationProcessingArtifact )>> ;
+	prov:wasDerivedFrom doc:65e9d9f58032 .
+doc:Factssvr_model_1 a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Predictive_maintenance_model> .
+_:d2b283d8ed3adbe3e69ab638648ca5fe rdf:reifies <<( doc:Factssvr_model_1 rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Predictive_maintenance_model> )>> ;
+	prov:wasDerivedFrom doc:65e9d9f58032 .
+doc:FactsfityaMozar schema:name "Rayya Fajarna"@en .
+_:e69f172facf840c5e13181859970483f rdf:reifies <<( doc:FactsfityaMozar schema:name "Rayya Fajarna"@en )>> ;
+	prov:wasDerivedFrom doc:65e9d9f58032 .
+doc:FactsfityaMozar schema:email "rayya.fajarna@binus.ac.id" .
+_:bbcfe182b3302df9a206da126c63eb08 rdf:reifies <<( doc:FactsfityaMozar schema:email "rayya.fajarna@binus.ac.id" )>> ;
+	prov:wasDerivedFrom doc:65e9d9f58032 .
+doc:Factsbattery a schema:Product .
+_:e9c92c67ee1957e4b78c58ada5f56b08 rdf:reifies <<( doc:Factsbattery rdf:type schema:Product )>> ;
+	prov:wasDerivedFrom doc:65e9d9f58032 .
+doc:FactssvrRmseValue a None:Performance_value .
+_:ed7c7165c178aa105a62911229844b35 rdf:reifies <<( doc:FactssvrRmseValue rdf:type None:Performance_value )>> ;
+	prov:wasDerivedFrom doc:65e9d9f58032 .
+doc:FactsfityaMozar schema:email "bpardamean@binus.edu" .
+_:e9d2dbae6545e05e9db710c9a9b2ab62 rdf:reifies <<( doc:FactsfityaMozar schema:email "bpardamean@binus.edu" )>> ;
+	prov:wasDerivedFrom doc:65e9d9f58032 .
+doc:FactsfityaMozar schema:email "edjuana@trisakti.ac.id" .
+_:a182f61231d15697a1e96e87c89eb1b3 rdf:reifies <<( doc:FactsfityaMozar schema:email "edjuana@trisakti.ac.id" )>> ;
+	prov:wasDerivedFrom doc:65e9d9f58032 .
+doc:Factsorec schema:address "Jakarta, Indonesia"@en .
+_:e45901039dc2fc2bc1fbafe228fea552 rdf:reifies <<( doc:Factsorec schema:address "Jakarta, Indonesia"@en )>> ;
+	prov:wasDerivedFrom doc:65e9d9f58032 .
+doc:Factsarticle_1_1 schema:author doc:FactsfityaMozar .
+_:c21b5ddb6494f3edb28561a4933cc7aa rdf:reifies <<( doc:Factsarticle_1_1 schema:author doc:FactsfityaMozar )>> ;
+	prov:wasDerivedFrom doc:65e9d9f58032 .
+doc:FactsfityaMozar schema:name "Christian Harito"@en .
+_:bd3737448341ce5277d073c0b8625e04 rdf:reifies <<( doc:FactsfityaMozar schema:name "Christian Harito"@en )>> ;
+	prov:wasDerivedFrom doc:65e9d9f58032 .
+doc:FactsfityaMozar schema:name "Endang Djuana"@en .
+_:fdcbddaee9ed2763e44a10ffd1a7db0d rdf:reifies <<( doc:FactsfityaMozar schema:name "Endang Djuana"@en )>> ;
+	prov:wasDerivedFrom doc:65e9d9f58032 .
+doc:FactssvrRmseValue schema:value 0.0688 .
+_:dfc21517690d4ba1f63f235e9de7a22 rdf:reifies <<( doc:FactssvrRmseValue schema:value 0.0688 )>> ;
+	prov:wasDerivedFrom doc:65e9d9f58032 .
+doc:Factsregression_1 a None:Regression .
+_:ba402a0f64b05fb7a7a6c2defc901114 rdf:reifies <<( doc:Factsregression_1 rdf:type None:Regression )>> ;
+	prov:wasDerivedFrom doc:65e9d9f58032 .
+doc:Factsarticle_1_1 schema:keywords "RUL estimation"@en .
+_:c5035e5a6f408aa62129d5f6fd04d95f rdf:reifies <<( doc:Factsarticle_1_1 schema:keywords "RUL estimation"@en )>> ;
+	prov:wasDerivedFrom doc:65e9d9f58032 .
+doc:FactsleadAcidBatteryType a cco:DescriptiveInformationContentEntity .
+_:ace813ed3df4411cafbe0f6ebf31bde4 rdf:reifies <<( doc:FactsleadAcidBatteryType rdf:type cco:DescriptiveInformationContentEntity )>> ;
+	prov:wasDerivedFrom doc:65e9d9f58032 .
+doc:Factsarticle_1_1 None:has_title doc:FactsarticleTitle_1 .
+_:bbd5891dc895fbc464ed8d8d6b5f1e23 rdf:reifies <<( doc:Factsarticle_1_1 None:has_title doc:FactsarticleTitle_1 )>> ;
+	prov:wasDerivedFrom doc:65e9d9f58032 .
+doc:FactsenergyStorageSystem rdfs:label "battery energy storage system"@en .
+_:f43d32930d0cbe0fbec6fff00871433e rdf:reifies <<( doc:FactsenergyStorageSystem rdfs:label "battery energy storage system"@en )>> ;
+	prov:wasDerivedFrom doc:65e9d9f58032 .
+doc:Factsorec a schema:Organization .
+_:b5f728d53ad4085cc0bad848e24c64b8 rdf:reifies <<( doc:Factsorec rdf:type schema:Organization )>> ;
+	prov:wasDerivedFrom doc:65e9d9f58032 .
+doc:FactshealthAssessmentFunction a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Remaining_useful_life_estimation> .
+_:ea40bbf7392c057b301601b471c1b0b8 rdf:reifies <<( doc:FactshealthAssessmentFunction rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Remaining_useful_life_estimation> )>> ;
+	prov:wasDerivedFrom doc:65e9d9f58032 .
+doc:FactsfityaMozar schema:email "fitya.syarifa@binus.edu" .
+_:b4e2117c85166addace0a090fd443b43 rdf:reifies <<( doc:FactsfityaMozar schema:email "fitya.syarifa@binus.edu" )>> ;
+	prov:wasDerivedFrom doc:65e9d9f58032 .
+doc:Factssvr_model_1 a cco:Algorithm .
+_:df4162f8d8886c70005dc6c142077020 rdf:reifies <<( doc:Factssvr_model_1 rdf:type cco:Algorithm )>> ;
+	prov:wasDerivedFrom doc:65e9d9f58032 .
+doc:FactssvrRmseValue a None:Performance_indicator .
+_:f19390f8c36f6a0f8533226a2ec7289d rdf:reifies <<( doc:FactssvrRmseValue rdf:type None:Performance_indicator )>> ;
+	prov:wasDerivedFrom doc:65e9d9f58032 .
+doc:FactssvrRmseValue None:has_text_value "accuracy" .
+_:f2bc10c8b6cb6bb1dc00b8e87aa65ed3 rdf:reifies <<( doc:FactssvrRmseValue None:has_text_value "accuracy" )>> ;
+	prov:wasDerivedFrom doc:65e9d9f58032 .
+doc:FactsleadAcidBatteryType None:has_text_value "Lead-acid battery" .
+_:d83c9a4660923e84202dba8277f8bd9c rdf:reifies <<( doc:FactsleadAcidBatteryType None:has_text_value "Lead-acid battery" )>> ;
+	prov:wasDerivedFrom doc:65e9d9f58032 .
+doc:Factssvr_model_1 rdfs:label "Support Vector Regression model"@en .
+_:d7bb1a4ae5cdfbde6496d388a31b74ae rdf:reifies <<( doc:Factssvr_model_1 rdfs:label "Support Vector Regression model"@en )>> ;
+	prov:wasDerivedFrom doc:65e9d9f58032 .
+doc:FactssvrRmseValue schema:value 0.0127 .
+_:b34248e4d74061a8f4583cf2b30c584c rdf:reifies <<( doc:FactssvrRmseValue schema:value 0.0127 )>> ;
+	prov:wasDerivedFrom doc:65e9d9f58032 .
+doc:Factsbattery a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Maintainable_item> .
+_:eeb54ec1510f411caec5046d0602d57 rdf:reifies <<( doc:Factsbattery rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Maintainable_item> )>> ;
+	prov:wasDerivedFrom doc:65e9d9f58032 .
+doc:Factsarticle_1_1 schema:keywords "battery aging"@en .
+_:be653aa74194f2d16e424a142a223844 rdf:reifies <<( doc:Factsarticle_1_1 schema:keywords "battery aging"@en )>> ;
+	prov:wasDerivedFrom doc:65e9d9f58032 .
+doc:FactssvrRmseValue None:has_text_value "RMSE" .
+_:a13ff5f71f6eaaffb7f84bb8a84ca116 rdf:reifies <<( doc:FactssvrRmseValue None:has_text_value "RMSE" )>> ;
+	prov:wasDerivedFrom doc:65e9d9f58032 .
+doc:FactsarticleTitle_1 a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Article_title> .
+_:a49ab3150d750fd6874256ce25c9fc79 rdf:reifies <<( doc:FactsarticleTitle_1 rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Article_title> )>> ;
+	prov:wasDerivedFrom doc:65e9d9f58032 .
+doc:Factsarticle_1_1 a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Predictive_maintenance_model> .
+_:d2320cb59bcbb158ad0619407a29b47d rdf:reifies <<( doc:Factsarticle_1_1 rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Predictive_maintenance_model> )>> ;
+	prov:wasDerivedFrom doc:65e9d9f58032 .
+doc:FactsfityaMozar schema:email "christian.harito@binus.edu" .
+_:f10100bb093af8d43fb962b5556e7bcd rdf:reifies <<( doc:FactsfityaMozar schema:email "christian.harito@binus.edu" )>> ;
+	prov:wasDerivedFrom doc:65e9d9f58032 .
+doc:Factspredictive_maintenance_module_1 a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Predictive_maintenance_model> .
+_:d0a8844d5ea9dbb5f8a7e7f5152f1ce1 rdf:reifies <<( doc:Factspredictive_maintenance_module_1 rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Predictive_maintenance_model> )>> ;
+	prov:wasDerivedFrom doc:65e9d9f58032 .
+doc:FactsarticleTitle_1 a cco:DesignativeName .
+_:baea2f1ae743a8c337e1607f697a4a79 rdf:reifies <<( doc:FactsarticleTitle_1 rdf:type cco:DesignativeName )>> ;
+	prov:wasDerivedFrom doc:65e9d9f58032 .
+doc:FactsenergyStorageSystem a schema:Product .
+_:cda89e0f9bcdb652cd2ec0d1249bcf1e rdf:reifies <<( doc:FactsenergyStorageSystem rdf:type schema:Product )>> ;
+	prov:wasDerivedFrom doc:65e9d9f58032 .
+doc:Factspredictive_maintenance_module_1 obo:BFO_0000051 doc:Factssvr_model_1 .
+_:ae33093930dc3faf90b4b844d67ebb32 rdf:reifies <<( doc:Factspredictive_maintenance_module_1 obo:BFO_0000051 doc:Factssvr_model_1 )>> ;
+	prov:wasDerivedFrom doc:65e9d9f58032 .
+doc:Factsorec schema:name "Bina Nusantara University"@en .
+_:a8afcb6a94bc66c7309bba65ca840147 rdf:reifies <<( doc:Factsorec schema:name "Bina Nusantara University"@en )>> ;
+	prov:wasDerivedFrom doc:65e9d9f58032 .
+doc:Factsarticle_1_1 schema:about doc:FactsenergyStorageSystem .
+_:d00e1cc03d80f32a4ef5079db5c288d8 rdf:reifies <<( doc:Factsarticle_1_1 schema:about doc:FactsenergyStorageSystem )>> ;
+	prov:wasDerivedFrom doc:65e9d9f58032 .
+doc:FactsfityaMozar schema:name "Derrick Speaks"@en .
+_:bf3e9d2c945f039fac12fc1524c73f17 rdf:reifies <<( doc:FactsfityaMozar schema:name "Derrick Speaks"@en )>> ;
+	prov:wasDerivedFrom doc:65e9d9f58032 .
+doc:Factsorec schema:name "Universitas Trisakti"@en .
+_:ce72f6d398abe618e331a21fcfaaf39f rdf:reifies <<( doc:Factsorec schema:name "Universitas Trisakti"@en )>> ;
+	prov:wasDerivedFrom doc:65e9d9f58032 .
+doc:FactsfityaMozar schema:name "Fitya Syarifa Mozar"@en .
+_:f88f4f58d3e5c2c2998d8b7415efc49f rdf:reifies <<( doc:FactsfityaMozar schema:name "Fitya Syarifa Mozar"@en )>> ;
+	prov:wasDerivedFrom doc:65e9d9f58032 .
+doc:Factsregression_1 a None:Data_mining_technique_function .
+_:f771aad6c05dc170854cc78d6713bf75 rdf:reifies <<( doc:Factsregression_1 rdf:type None:Data_mining_technique_function )>> ;
+	prov:wasDerivedFrom doc:65e9d9f58032 .
+doc:FactsleadAcidBatteryType a None:item_type .
+_:bef7145ec3dbeb1dc1dd07e1773725db rdf:reifies <<( doc:FactsleadAcidBatteryType rdf:type None:item_type )>> ;
+	prov:wasDerivedFrom doc:65e9d9f58032 .
+doc:Factsorec schema:name "Oregon Institute of Technology"@en .
+_:e9d5aef3e19a2cdfc23c74c652842081 rdf:reifies <<( doc:Factsorec schema:name "Oregon Institute of Technology"@en )>> ;
+	prov:wasDerivedFrom doc:65e9d9f58032 .
+doc:FactsfityaMozar schema:email "derrick.speaks@asu.edu" .
+_:e97797367464e6751a10321b75b646be rdf:reifies <<( doc:FactsfityaMozar schema:email "derrick.speaks@asu.edu" )>> ;
+	prov:wasDerivedFrom doc:65e9d9f58032 .
+doc:FactsfityaMozar schema:email "muhammad.asrol@binus.edu" .
+_:ec4833d82c7891a5ad8576cb701e5a2c rdf:reifies <<( doc:FactsfityaMozar schema:email "muhammad.asrol@binus.edu" )>> ;
+	prov:wasDerivedFrom doc:65e9d9f58032 .
+doc:FactsarticleTitle_1 None:has_text_value "Estimation of Lead Acid Battery Degradation-A Model for the Optimization of Battery Energy Storage System Using Machine Learning" .
+_:d482baa1b866b3b707f65bae1f1e3f4d rdf:reifies <<( doc:FactsarticleTitle_1 None:has_text_value "Estimation of Lead Acid Battery Degradation-A Model for the Optimization of Battery Energy Storage System Using Machine Learning" )>> ;
+	prov:wasDerivedFrom doc:65e9d9f58032 .
+doc:Factsorec schema:name "Oregon Renewable Energy Center"@en .
+_:f241981fe752683e30e51c2cb6739896 rdf:reifies <<( doc:Factsorec schema:name "Oregon Renewable Energy Center"@en )>> ;
+	prov:wasDerivedFrom doc:65e9d9f58032 .
+doc:d8f1ef529b57 a prov:Entity , schema:text ;
+	prov:generatedAtTime "2026-07-24T04:53:20.070563Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+	schema:position 1 ;
+	schema:identifier "d8f1ef529b57" .
+doc:FactsbatteryDegradationModel schema:input doc:Factstemperature_1 .
+_:e807d38756f2a5b0d95b9219c175513 rdf:reifies <<( doc:FactsbatteryDegradationModel schema:input doc:Factstemperature_1 )>> ;
+	prov:wasDerivedFrom doc:d8f1ef529b57 .
+doc:FactseditorQifengZhang a schema:Person .
+_:c13c83e2294f3bce7adf13e8769fb175 rdf:reifies <<( doc:FactseditorQifengZhang rdf:type schema:Person )>> ;
+	prov:wasDerivedFrom doc:d8f1ef529b57 .
+doc:Factsarticle_1_1 cco:is_about doc:FactsbatteryDegradationModel .
+_:e1d4ffb433a8730386db4a18a513dc3a rdf:reifies <<( doc:Factsarticle_1_1 cco:is_about doc:FactsbatteryDegradationModel )>> ;
+	prov:wasDerivedFrom doc:d8f1ef529b57 .
+_:eba6972fa256dc8c109e22ef6dbed184 prov:wasDerivedFrom doc:d8f1ef529b57 .
+_:c21b5ddb6494f3edb28561a4933cc7aa prov:wasDerivedFrom doc:d8f1ef529b57 .
+doc:Factsarticle_1_1 cco:is_about doc:Factsbattery .
+_:fdc8defc00b242ded5b26d9f14e9ba73 rdf:reifies <<( doc:Factsarticle_1_1 cco:is_about doc:Factsbattery )>> ;
+	prov:wasDerivedFrom doc:d8f1ef529b57 .
+doc:FactssolarPowerPlantEnergyStorageSystem schema:name "Solar power plant energy storage system" .
+_:a5990e6b970a0b4a4d2bba7395220165 rdf:reifies <<( doc:FactssolarPowerPlantEnergyStorageSystem schema:name "Solar power plant energy storage system" )>> ;
+	prov:wasDerivedFrom doc:d8f1ef529b57 .
+_:c23e3bd0e00b8968c4917ebe33d7da9f prov:wasDerivedFrom doc:d8f1ef529b57 .
+doc:FactsmachineLearningAlgorithm schema:name "Machine learning algorithm" .
+_:c924c19add24a132b645f4f70bcf4305 rdf:reifies <<( doc:FactsmachineLearningAlgorithm schema:name "Machine learning algorithm" )>> ;
+	prov:wasDerivedFrom doc:d8f1ef529b57 .
+doc:FactsarticleTitle_1 <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#has_text_value> "Estimation of Lead Acid Battery Degradation-A Model for the Optimization of Battery Energy Storage System Using Machine Learning" .
+_:c0e0b714f45d45cbbbb133e081a48ad3 rdf:reifies <<( doc:FactsarticleTitle_1 <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#has_text_value> "Estimation of Lead Acid Battery Degradation-A Model for the Optimization of Battery Energy Storage System Using Machine Learning" )>> ;
+	prov:wasDerivedFrom doc:d8f1ef529b57 .
+doc:FactssolarEnergy schema:name "Photovoltaic energy source" .
+_:abc96d215ef0a65f8396f22fba7619e9 rdf:reifies <<( doc:FactssolarEnergy schema:name "Photovoltaic energy source" )>> ;
+	prov:wasDerivedFrom doc:d8f1ef529b57 .
+doc:FactsdepthOfDischarge a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Data_variable> .
+_:f2858def7d7692fdf0720929fde49c02 rdf:reifies <<( doc:FactsdepthOfDischarge rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Data_variable> )>> ;
+	prov:wasDerivedFrom doc:d8f1ef529b57 .
+_:eeb54ec1510f411caec5046d0602d57 prov:wasDerivedFrom doc:d8f1ef529b57 .
+doc:FactssolarEnergy a schema:Thing .
+_:d7c24eb2e7e87c2fd6224be514108e44 rdf:reifies <<( doc:FactssolarEnergy rdf:type schema:Thing )>> ;
+	prov:wasDerivedFrom doc:d8f1ef529b57 .
+doc:FactsagriculturalProductDrying a schema:Thing .
+_:c3e0d36bff12fd9ae199ee37c3adf8ea rdf:reifies <<( doc:FactsagriculturalProductDrying rdf:type schema:Thing )>> ;
+	prov:wasDerivedFrom doc:d8f1ef529b57 .
+doc:Factsarticle_1_1 a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Predictive_Maintenance_Article> .
+_:dab2c6e391ada073ed6feb757c035203 rdf:reifies <<( doc:Factsarticle_1_1 rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Predictive_Maintenance_Article> )>> ;
+	prov:wasDerivedFrom doc:d8f1ef529b57 .
+doc:FactsbatteryDegradationModel schema:input doc:FactsstateOfHealth .
+_:e2af0ba8d0f5945ec5c3936b557a47cd rdf:reifies <<( doc:FactsbatteryDegradationModel schema:input doc:FactsstateOfHealth )>> ;
+	prov:wasDerivedFrom doc:d8f1ef529b57 .
+doc:FactssolarEnergy schema:name "Solar energy" .
+_:c8ccb3cdacfedd44bf27ad1236e53d15 rdf:reifies <<( doc:FactssolarEnergy schema:name "Solar energy" )>> ;
+	prov:wasDerivedFrom doc:d8f1ef529b57 .
+doc:FactselectrochemicalCell schema:name "Electrochemical cell" .
+_:ff7b0a1d7c4e1156ca6cd5d3a0fc1620 rdf:reifies <<( doc:FactselectrochemicalCell schema:name "Electrochemical cell" )>> ;
+	prov:wasDerivedFrom doc:d8f1ef529b57 .
+doc:Factstemperature_1 a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Data_variable> .
+_:b3f367413a077c5bd8ec825eb38d523 rdf:reifies <<( doc:Factstemperature_1 rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Data_variable> )>> ;
+	prov:wasDerivedFrom doc:d8f1ef529b57 .
+doc:Factstemperature_1 <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#has_text_value> "Battery capacity" .
+_:f2205ec1e17bc813e7944fee96124555 rdf:reifies <<( doc:Factstemperature_1 <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#has_text_value> "Battery capacity" )>> ;
+	prov:wasDerivedFrom doc:d8f1ef529b57 .
+doc:Factsarticle_1_1 <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#has_publication_year> doc:Factspublication_year_2025_2 .
+_:e7b63737e20442ddf8d18a248f6bdb97 rdf:reifies <<( doc:Factsarticle_1_1 <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#has_publication_year> doc:Factspublication_year_2025_2 )>> ;
+	prov:wasDerivedFrom doc:d8f1ef529b57 .
+doc:FactsfityaMozar schema:name "D. Speaks" .
+_:a0abb6ac5a77ea56268ee3c5ba9d553a rdf:reifies <<( doc:FactsfityaMozar schema:name "D. Speaks" )>> ;
+	prov:wasDerivedFrom doc:d8f1ef529b57 .
+doc:FactseditorQifengZhang schema:name "Qifeng Zhang" .
+_:f67f984d1da35617305b77ce71d431de rdf:reifies <<( doc:FactseditorQifengZhang schema:name "Qifeng Zhang" )>> ;
+	prov:wasDerivedFrom doc:d8f1ef529b57 .
+doc:FactsstateOfHealth <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#has_text_value> "State of health (SOH)" .
+_:a2929470fd3468935f6f8095b9a2ccc1 rdf:reifies <<( doc:FactsstateOfHealth <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#has_text_value> "State of health (SOH)" )>> ;
+	prov:wasDerivedFrom doc:d8f1ef529b57 .
+doc:FactsbatteryDegradationModel <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#describes_type> doc:FactssvrRmseValue .
+_:f9f6ab54f5f2ec0db4d7a534ff47e213 rdf:reifies <<( doc:FactsbatteryDegradationModel <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#describes_type> doc:FactssvrRmseValue )>> ;
+	prov:wasDerivedFrom doc:d8f1ef529b57 .
+doc:Factsbattery schema:name "Lead-acid battery" .
+_:ea43dd93daa6cec9b6d9f9feff18020 rdf:reifies <<( doc:Factsbattery schema:name "Lead-acid battery" )>> ;
+	prov:wasDerivedFrom doc:d8f1ef529b57 .
+doc:FactsnumberOfBatteryCycles a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Data_variable> .
+_:abb5e19b9bccc698c7d77b6257932978 rdf:reifies <<( doc:FactsnumberOfBatteryCycles rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Data_variable> )>> ;
+	prov:wasDerivedFrom doc:d8f1ef529b57 .
+doc:FactsbatteryDegradationModel a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Predictive_maintenance_model> .
+_:e65a3b107765d16c230e8aa896f1bf3c rdf:reifies <<( doc:FactsbatteryDegradationModel rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Predictive_maintenance_model> )>> ;
+	prov:wasDerivedFrom doc:d8f1ef529b57 .
+doc:FactsfityaMozar schema:name "B. Pardamean" .
+_:b21158b71aab166ddc600ec690bbeb34 rdf:reifies <<( doc:FactsfityaMozar schema:name "B. Pardamean" )>> ;
+	prov:wasDerivedFrom doc:d8f1ef529b57 .
+_:a49ab3150d750fd6874256ce25c9fc79 prov:wasDerivedFrom doc:d8f1ef529b57 .
+doc:Factsarticle_1_1 <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#has_identifier> doc:FactsarticleDoi .
+_:a7ca2bb1c85e69e1151b55c8cb33d299 rdf:reifies <<( doc:Factsarticle_1_1 <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#has_identifier> doc:FactsarticleDoi )>> ;
+	prov:wasDerivedFrom doc:d8f1ef529b57 .
+doc:Factssmart_dome_4_0 a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Maintainable_item> .
+_:ddca979dc0628029022156fb37583098 rdf:reifies <<( doc:Factssmart_dome_4_0 rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Maintainable_item> )>> ;
+	prov:wasDerivedFrom doc:d8f1ef529b57 .
+doc:Factsarticle_1_1 schema:datePublished "2025-09-05"^^<http://www.w3.org/2001/XMLSchema#date> .
+_:e971693ba4d4711def6efb4ff6702d76 rdf:reifies <<( doc:Factsarticle_1_1 schema:datePublished "2025-09-05"^^<http://www.w3.org/2001/XMLSchema#date> )>> ;
+	prov:wasDerivedFrom doc:d8f1ef529b57 .
+doc:FactsremainingUsefulLifeEstimation cco:is_about doc:Factsbattery .
+_:cf437a028e3706ef68421fa7920512ea rdf:reifies <<( doc:FactsremainingUsefulLifeEstimation cco:is_about doc:Factsbattery )>> ;
+	prov:wasDerivedFrom doc:d8f1ef529b57 .
+doc:FactssolarEnergy schema:name "Renewable energy source" .
+_:ed7657adf223eeedc9f8de7aebdd7a4 rdf:reifies <<( doc:FactssolarEnergy schema:name "Renewable energy source" )>> ;
+	prov:wasDerivedFrom doc:d8f1ef529b57 .
+doc:FactsfityaMozar schema:name "R. Fajarna" .
+_:b196f85292187ac3c20240c121ab8675 rdf:reifies <<( doc:FactsfityaMozar schema:name "R. Fajarna" )>> ;
+	prov:wasDerivedFrom doc:d8f1ef529b57 .
+doc:FactsremainingUsefulLifeEstimation a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Remaining_useful_life_estimation> .
+_:fca8c6537d6cf58e034f83939ea055be rdf:reifies <<( doc:FactsremainingUsefulLifeEstimation rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Remaining_useful_life_estimation> )>> ;
+	prov:wasDerivedFrom doc:d8f1ef529b57 .
+doc:FactsfityaMozar schema:name "C. Harito" .
+_:fd4150a431aa88767eb4b521d1ec6516 rdf:reifies <<( doc:FactsfityaMozar schema:name "C. Harito" )>> ;
+	prov:wasDerivedFrom doc:d8f1ef529b57 .
+doc:Factssmart_dome_4_0 schema:about doc:FactsagriculturalProductDrying .
+_:d6314dd0555bf0068b44ddeda4b99f00 rdf:reifies <<( doc:Factssmart_dome_4_0 schema:about doc:FactsagriculturalProductDrying )>> ;
+	prov:wasDerivedFrom doc:d8f1ef529b57 .
+doc:FactsbatteryDegradationModel schema:output doc:FactsremainingUsefulLifeEstimation .
+_:c9b6876b55267aa0c664a00addcd7614 rdf:reifies <<( doc:FactsbatteryDegradationModel schema:output doc:FactsremainingUsefulLifeEstimation )>> ;
+	prov:wasDerivedFrom doc:d8f1ef529b57 .
+doc:FactsfityaMozar schema:name "F.S. Mozar" .
+_:ac36621a05951b21e5d2f1341327a5ab rdf:reifies <<( doc:FactsfityaMozar schema:name "F.S. Mozar" )>> ;
+	prov:wasDerivedFrom doc:d8f1ef529b57 .
+doc:Factspublication_year_2025_2 <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#has_interger_value> 2025 .
+_:dbe41a7ddb312a0fbe3d2bd68b5dbe48 rdf:reifies <<( doc:Factspublication_year_2025_2 <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#has_interger_value> 2025 )>> ;
+	prov:wasDerivedFrom doc:d8f1ef529b57 .
+doc:FactsbatteryDegradationModel schema:name "Battery degradation model" .
+_:b6cbe3981d58fd95000c424ac2acd900 rdf:reifies <<( doc:FactsbatteryDegradationModel schema:name "Battery degradation model" )>> ;
+	prov:wasDerivedFrom doc:d8f1ef529b57 .
+doc:FactsdepthOfDischarge <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#has_text_value> "Depth of discharge (DoD)" .
+_:dfa015a3a09f6b41f83fd7d0b5fa55d8 rdf:reifies <<( doc:FactsdepthOfDischarge <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#has_text_value> "Depth of discharge (DoD)" )>> ;
+	prov:wasDerivedFrom doc:d8f1ef529b57 .
+doc:FactselectrochemicalCell a schema:Thing .
+_:c77cab007cdf6138c53a21449532391f rdf:reifies <<( doc:FactselectrochemicalCell rdf:type schema:Thing )>> ;
+	prov:wasDerivedFrom doc:d8f1ef529b57 .
+doc:FactssolarPowerPlantEnergyStorageSystem schema:hasPart doc:Factsbattery .
+_:ce589ea57a6cbcb4f33b2c4a21a17f5f rdf:reifies <<( doc:FactssolarPowerPlantEnergyStorageSystem schema:hasPart doc:Factsbattery )>> ;
+	prov:wasDerivedFrom doc:d8f1ef529b57 .
+doc:FactsfityaMozar schema:name "A.S. Budiman" .
+_:b5a0fded04ba21a4ede96ed1e9d78738 rdf:reifies <<( doc:FactsfityaMozar schema:name "A.S. Budiman" )>> ;
+	prov:wasDerivedFrom doc:d8f1ef529b57 .
+doc:FactssolarEnergy schema:isPartOf doc:FactssolarEnergy .
+_:ecd9d801c7680f565ed59c34ffce4b0f rdf:reifies <<( doc:FactssolarEnergy schema:isPartOf doc:FactssolarEnergy )>> ;
+	prov:wasDerivedFrom doc:d8f1ef529b57 .
+doc:FactsfityaMozar schema:name "E. Djuana" .
+_:a58b9e42434420fa83192175a3e73744 rdf:reifies <<( doc:FactsfityaMozar schema:name "E. Djuana" )>> ;
+	prov:wasDerivedFrom doc:d8f1ef529b57 .
+doc:FactsarticleDoi a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Article_identifier> .
+_:e6dbec24afe19961fb8d54ed0524e173 rdf:reifies <<( doc:FactsarticleDoi rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Article_identifier> )>> ;
+	prov:wasDerivedFrom doc:d8f1ef529b57 .
+doc:FactsarticleDoi <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#has_text_value> "https://doi.org/10.3390/electrochem6030033" .
+_:f457b6100c1b3f85723343003d24e8d8 rdf:reifies <<( doc:FactsarticleDoi <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#has_text_value> "https://doi.org/10.3390/electrochem6030033" )>> ;
+	prov:wasDerivedFrom doc:d8f1ef529b57 .
+doc:FactsstateOfHealth a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Data_variable> .
+_:cf508dc6cb1008ccd96c19cdcf100dd7 rdf:reifies <<( doc:FactsstateOfHealth rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Data_variable> )>> ;
+	prov:wasDerivedFrom doc:d8f1ef529b57 .
+doc:FactsmachineLearningAlgorithm a cco:Algorithm .
+_:f6b8eecc47507d91b89c96bd0d470f5d rdf:reifies <<( doc:FactsmachineLearningAlgorithm rdf:type cco:Algorithm )>> ;
+	prov:wasDerivedFrom doc:d8f1ef529b57 .
+doc:FactsagriculturalProductDrying schema:name "Drying process of agricultural products" .
+_:bb36588f717141a5fa28341fe87c82c rdf:reifies <<( doc:FactsagriculturalProductDrying schema:name "Drying process of agricultural products" )>> ;
+	prov:wasDerivedFrom doc:d8f1ef529b57 .
+doc:Factstemperature_1 <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#has_text_value> "Battery temperature" .
+_:f2611dc12ad649ba6c5ff586985bdbff rdf:reifies <<( doc:Factstemperature_1 <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#has_text_value> "Battery temperature" )>> ;
+	prov:wasDerivedFrom doc:d8f1ef529b57 .
+doc:FactsnumberOfBatteryCycles <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#has_text_value> "Number of battery cycles" .
+_:d5bf10a1a40b19efb6482d233d0117e3 rdf:reifies <<( doc:FactsnumberOfBatteryCycles <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#has_text_value> "Number of battery cycles" )>> ;
+	prov:wasDerivedFrom doc:d8f1ef529b57 .
+doc:Factsarticle_1_1 <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#has_title> doc:FactsarticleTitle_1 .
+_:c7ad17c0563416ef707c8db3144b7bcf rdf:reifies <<( doc:Factsarticle_1_1 <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#has_title> doc:FactsarticleTitle_1 )>> ;
+	prov:wasDerivedFrom doc:d8f1ef529b57 .
+doc:FactssolarPowerPlantEnergyStorageSystem a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Maintainable_item> .
+_:e05a8e519473452c8f1386ce9c2399dc rdf:reifies <<( doc:FactssolarPowerPlantEnergyStorageSystem rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Maintainable_item> )>> ;
+	prov:wasDerivedFrom doc:d8f1ef529b57 .
+doc:FactssvrRmseValue <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#has_text_value> "Machine learning" .
+_:f113e394472face626503b415cfb9b26 rdf:reifies <<( doc:FactssvrRmseValue <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#has_text_value> "Machine learning" )>> ;
+	prov:wasDerivedFrom doc:d8f1ef529b57 .
+doc:Factspublication_year_2025_2 a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Publication_year> .
+_:f14d365e6e074e67744a2bda2b94eb96 rdf:reifies <<( doc:Factspublication_year_2025_2 rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Publication_year> )>> ;
+	prov:wasDerivedFrom doc:d8f1ef529b57 .
+doc:Factstemperature_1 <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#has_text_value> "Battery efficiency" .
+_:b2e3fb041488ac754033dcaf294e8656 rdf:reifies <<( doc:Factstemperature_1 <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#has_text_value> "Battery efficiency" )>> ;
+	prov:wasDerivedFrom doc:d8f1ef529b57 .
+doc:FactsremainingUsefulLifeEstimation schema:name "Remaining useful lifetime estimation" .
+_:caf8be0259598633b8ac14c4edc39b9c rdf:reifies <<( doc:FactsremainingUsefulLifeEstimation schema:name "Remaining useful lifetime estimation" )>> ;
+	prov:wasDerivedFrom doc:d8f1ef529b57 .
+doc:FactsfityaMozar schema:name "M. Asrol" .
+_:f03efdf49a9518ca6dcdc995f202a6a7 rdf:reifies <<( doc:FactsfityaMozar schema:name "M. Asrol" )>> ;
+	prov:wasDerivedFrom doc:d8f1ef529b57 .
+doc:Factsarticle_1_1 schema:editor doc:FactseditorQifengZhang .
+_:b129784f67210dafee699ff783060aec rdf:reifies <<( doc:Factsarticle_1_1 schema:editor doc:FactseditorQifengZhang )>> ;
+	prov:wasDerivedFrom doc:d8f1ef529b57 .
+doc:Factsarticle_1_1 cco:is_about doc:FactssolarPowerPlantEnergyStorageSystem .
+_:e65ddb5e6484746cfdbeb836896e05e1 rdf:reifies <<( doc:Factsarticle_1_1 cco:is_about doc:FactssolarPowerPlantEnergyStorageSystem )>> ;
+	prov:wasDerivedFrom doc:d8f1ef529b57 .
+doc:FactsdepthOfDischarge <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#has_text_value> "Charge and discharge rate" .
+_:e20338acbd718ad4914e853c42fb2972 rdf:reifies <<( doc:FactsdepthOfDischarge <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#has_text_value> "Charge and discharge rate" )>> ;
+	prov:wasDerivedFrom doc:d8f1ef529b57 .
+doc:Factssmart_dome_4_0 schema:name "SMART DOME 4.0" .
+_:bcdd8b73759669fe715afe4800281e49 rdf:reifies <<( doc:Factssmart_dome_4_0 schema:name "SMART DOME 4.0" )>> ;
+	prov:wasDerivedFrom doc:d8f1ef529b57 .
+doc:Factsbattery schema:hasPart doc:FactselectrochemicalCell .
+_:b0124f90d5d1b77a00ad27331be72185 rdf:reifies <<( doc:Factsbattery schema:hasPart doc:FactselectrochemicalCell )>> ;
+	prov:wasDerivedFrom doc:d8f1ef529b57 .
+_:ff1c6b8477d8da803f9f954fdf997308 prov:wasDerivedFrom doc:d8f1ef529b57 .
+doc:ec46c15f6743 a prov:Entity , schema:text ;
+	prov:generatedAtTime "2026-07-24T04:53:20.075557Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+	schema:position 2 ;
+	schema:identifier "ec46c15f6743" .
+doc:FactsstateOfHealth_1 cco:is_about doc:Factsbattery .
+_:cb1bd783164a254320c7ddf67f01c62 rdf:reifies <<( doc:FactsstateOfHealth_1 cco:is_about doc:Factsbattery )>> ;
+	prov:wasDerivedFrom doc:ec46c15f6743 .
+doc:Factsvoltage rdfs:label "voltage"@en .
+_:bd6fde2f33611783da4d7ba4dd5bda83 rdf:reifies <<( doc:Factsvoltage rdfs:label "voltage"@en )>> ;
+	prov:wasDerivedFrom doc:ec46c15f6743 .
+doc:Factsbattery rdfs:label "battery"@en .
+_:d1bd3204bdcb950737d6844630c222da rdf:reifies <<( doc:Factsbattery rdfs:label "battery"@en )>> ;
+	prov:wasDerivedFrom doc:ec46c15f6743 .
+doc:FactsdataDrivenApproach None:describes_type doc:FactscoulombCounting .
+_:a1432656f378b6b540c9c1db5f94ae2f rdf:reifies <<( doc:FactsdataDrivenApproach None:describes_type doc:FactscoulombCounting )>> ;
+	prov:wasDerivedFrom doc:ec46c15f6743 .
+doc:FactsrecurrentNeuralNetwork rdfs:label "Artificial Neural Network"@en .
+_:a352dc6b801ad4f88ad57a2a003436c4 rdf:reifies <<( doc:FactsrecurrentNeuralNetwork rdfs:label "Artificial Neural Network"@en )>> ;
+	prov:wasDerivedFrom doc:ec46c15f6743 .
+doc:FactsbatteryEstimationModule rdfs:label "battery SOH and RUL estimation module"@en .
+_:f2c1ea0a2fde2a7ae6b8c251439108fa rdf:reifies <<( doc:FactsbatteryEstimationModule rdfs:label "battery SOH and RUL estimation module"@en )>> ;
+	prov:wasDerivedFrom doc:ec46c15f6743 .
+doc:FactsnonlinearBatteryDegradation rdfs:label "nonlinear battery degradation"@en .
+_:fad00d83eabe0c93accf87d50d42edb5 rdf:reifies <<( doc:FactsnonlinearBatteryDegradation rdfs:label "nonlinear battery degradation"@en )>> ;
+	prov:wasDerivedFrom doc:ec46c15f6743 .
+doc:FactsrecurrentNeuralNetwork cco:is_about doc:Factsbattery .
+_:fbfc1017b856d3f67b41d431ee6249f1 rdf:reifies <<( doc:FactsrecurrentNeuralNetwork cco:is_about doc:Factsbattery )>> ;
+	prov:wasDerivedFrom doc:ec46c15f6743 .
+doc:FactsregressionFunction cco:is_about doc:Factsbattery .
+_:edc48a740feb5f9c6a8999a3507edd17 rdf:reifies <<( doc:FactsregressionFunction cco:is_about doc:Factsbattery )>> ;
+	prov:wasDerivedFrom doc:ec46c15f6743 .
+doc:Factstemperature_1 cco:describes doc:Factsbattery .
+_:ad27dd9f57581b2c1cf8a53f53665239 rdf:reifies <<( doc:Factstemperature_1 cco:describes doc:Factsbattery )>> ;
+	prov:wasDerivedFrom doc:ec46c15f6743 .
+doc:FactsdataDrivenApproach None:describes_type doc:FactsrecurrentNeuralNetwork .
+_:af12422e60e23b50ff55329f94595755 rdf:reifies <<( doc:FactsdataDrivenApproach None:describes_type doc:FactsrecurrentNeuralNetwork )>> ;
+	prov:wasDerivedFrom doc:ec46c15f6743 .
+doc:FactsnonlinearBatteryDegradation a None:Design_detail .
+_:bb3a6c6e7395ea9f4ea5a926d66d9912 rdf:reifies <<( doc:FactsnonlinearBatteryDegradation rdf:type None:Design_detail )>> ;
+	prov:wasDerivedFrom doc:ec46c15f6743 .
+doc:Factsvoltage a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Data_variable> .
+_:c88d758010e82729d682a500774bd23a rdf:reifies <<( doc:Factsvoltage rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Data_variable> )>> ;
+	prov:wasDerivedFrom doc:ec46c15f6743 .
+doc:FactsbatteryEstimationModule a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Predictive_maintenance_model> .
+_:a88ad3ef6bd4bcbcb2eb2bf031862692 rdf:reifies <<( doc:FactsbatteryEstimationModule rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Predictive_maintenance_model> )>> ;
+	prov:wasDerivedFrom doc:ec46c15f6743 .
+doc:FactsrecurrentNeuralNetwork a cco:Algorithm .
+_:a427ca6b3e0cb7c97661ece3d2ce1858 rdf:reifies <<( doc:FactsrecurrentNeuralNetwork rdf:type cco:Algorithm )>> ;
+	prov:wasDerivedFrom doc:ec46c15f6743 .
+doc:FactssmartDome40 rdfs:label "SMART DOME 4.0"@en .
+_:d72b64d670f2b5d55e9d89ec503e49f3 rdf:reifies <<( doc:FactssmartDome40 rdfs:label "SMART DOME 4.0"@en )>> ;
+	prov:wasDerivedFrom doc:ec46c15f6743 .
+doc:FactsdataDrivenApproach None:describes_type doc:FactssupportVectorMachine .
+_:c66927935b663b16742f64ff06235d76 rdf:reifies <<( doc:FactsdataDrivenApproach None:describes_type doc:FactssupportVectorMachine )>> ;
+	prov:wasDerivedFrom doc:ec46c15f6743 .
+doc:FactsdataDrivenApproach rdfs:label "direct measurement approach"@en .
+_:f10c31dac7317b6078baf45ce2662684 rdf:reifies <<( doc:FactsdataDrivenApproach rdfs:label "direct measurement approach"@en )>> ;
+	prov:wasDerivedFrom doc:ec46c15f6743 .
+doc:FactsremainingUsefulLife rdfs:label "remaining useful life"@en .
+_:e9122559f7ff4a0216b72de683d916ba rdf:reifies <<( doc:FactsremainingUsefulLife rdfs:label "remaining useful life"@en )>> ;
+	prov:wasDerivedFrom doc:ec46c15f6743 .
+doc:FactsdataDrivenApproach None:describes_type doc:FactskalmanFilter .
+_:a990f3d0736ae3b1ee9ccca0067e4e63 rdf:reifies <<( doc:FactsdataDrivenApproach None:describes_type doc:FactskalmanFilter )>> ;
+	prov:wasDerivedFrom doc:ec46c15f6743 .
+doc:FactsbatteryEstimationModule None:has_design_detail doc:FactsnonlinearBatteryDegradation .
+_:b7aee1e6aa5684ecb297d65d7ba28133 rdf:reifies <<( doc:FactsbatteryEstimationModule None:has_design_detail doc:FactsnonlinearBatteryDegradation )>> ;
+	prov:wasDerivedFrom doc:ec46c15f6743 .
+doc:FactssupportVectorMachine rdfs:label "support vector regression"@en .
+_:aca7800488036992876c554088f45ebd rdf:reifies <<( doc:FactssupportVectorMachine rdfs:label "support vector regression"@en )>> ;
+	prov:wasDerivedFrom doc:ec46c15f6743 .
+doc:FactsregressionFunction rdfs:label "regression"@en .
+_:eae40d0e97e5acf871869df9b1a85f2d rdf:reifies <<( doc:FactsregressionFunction rdfs:label "regression"@en )>> ;
+	prov:wasDerivedFrom doc:ec46c15f6743 .
+doc:FactshealthAssessmentFunction rdfs:seeAlso doc:FactsstateOfHealth_1 .
+_:edde5a6abc41316a707d08bdac4f67ea rdf:reifies <<( doc:FactshealthAssessmentFunction rdfs:seeAlso doc:FactsstateOfHealth_1 )>> ;
+	prov:wasDerivedFrom doc:ec46c15f6743 .
+doc:FactsstateOfHealth_1 rdfs:label "state of health"@en .
+_:c0747315446a5bd90d02d5a419b1b8f7 rdf:reifies <<( doc:FactsstateOfHealth_1 rdfs:label "state of health"@en )>> ;
+	prov:wasDerivedFrom doc:ec46c15f6743 .
+doc:FactsdataDrivenApproach a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Model_type> .
+_:ffb844fbfa16802df91e932fe665d1ad rdf:reifies <<( doc:FactsdataDrivenApproach rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Model_type> )>> ;
+	prov:wasDerivedFrom doc:ec46c15f6743 .
+doc:FactsfuzzyLogic cco:is_about doc:Factsbattery .
+_:a6248394001f84f2bc4139ffef0235a3 rdf:reifies <<( doc:FactsfuzzyLogic cco:is_about doc:Factsbattery )>> ;
+	prov:wasDerivedFrom doc:ec46c15f6743 .
+doc:FactsremainingUsefulLife a cco:DescriptiveInformationContentEntity .
+_:b86e9d7f0f5f6ca6b042683e5d6d48bf rdf:reifies <<( doc:FactsremainingUsefulLife rdf:type cco:DescriptiveInformationContentEntity )>> ;
+	prov:wasDerivedFrom doc:ec46c15f6743 .
+doc:FactsbatteryCapacity rdfs:label "battery capacity"@en .
+_:c209036a3950de8caefc53bb999bb192 rdf:reifies <<( doc:FactsbatteryCapacity rdfs:label "battery capacity"@en )>> ;
+	prov:wasDerivedFrom doc:ec46c15f6743 .
+doc:FactssupportVectorMachine a cco:Algorithm .
+_:c2fd73eba6b6432f2ed9d8313e43c6a3 rdf:reifies <<( doc:FactssupportVectorMachine rdf:type cco:Algorithm )>> ;
+	prov:wasDerivedFrom doc:ec46c15f6743 .
+doc:FactsrecurrentNeuralNetwork rdfs:label "Recurrent Neural Network"@en .
+_:c3f803fb00e01b375cc83f43d31029b7 rdf:reifies <<( doc:FactsrecurrentNeuralNetwork rdfs:label "Recurrent Neural Network"@en )>> ;
+	prov:wasDerivedFrom doc:ec46c15f6743 .
+doc:Factscurrent a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Data_variable> .
+_:b52b751c9c13d0e8fee602b249624bc8 rdf:reifies <<( doc:Factscurrent rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Data_variable> )>> ;
+	prov:wasDerivedFrom doc:ec46c15f6743 .
+doc:FactssupportVectorMachine cco:is_about doc:Factsbattery .
+_:a2e189de7cd728e2de937d30d05b8698 rdf:reifies <<( doc:FactssupportVectorMachine cco:is_about doc:Factsbattery )>> ;
+	prov:wasDerivedFrom doc:ec46c15f6743 .
+doc:FactslongShortTermMemory a cco:Algorithm .
+_:a4e85434b7226c594c74d7882d4a3051 rdf:reifies <<( doc:FactslongShortTermMemory rdf:type cco:Algorithm )>> ;
+	prov:wasDerivedFrom doc:ec46c15f6743 .
+doc:Factsbattery schema:partOf doc:FactssmartDome40 .
+_:c625683c877d2ad134673f526f9ec27b rdf:reifies <<( doc:Factsbattery schema:partOf doc:FactssmartDome40 )>> ;
+	prov:wasDerivedFrom doc:ec46c15f6743 .
+doc:FactshealthAssessmentFunction a None:Health_assessment .
+_:a9068eb90efb18edceba0ff2343faf70 rdf:reifies <<( doc:FactshealthAssessmentFunction rdf:type None:Health_assessment )>> ;
+	prov:wasDerivedFrom doc:ec46c15f6743 .
+doc:FactscoulombCounting a cco:Algorithm .
+_:d6e7342c371fb4d8aff86ce9fff3667e rdf:reifies <<( doc:FactscoulombCounting rdf:type cco:Algorithm )>> ;
+	prov:wasDerivedFrom doc:ec46c15f6743 .
+doc:FactsbatteryEstimationModule None:has_predictive_maintenance_function doc:FactshealthAssessmentFunction .
+_:e5b50e4bd51ef39d4bfaf62ee72ef3df rdf:reifies <<( doc:FactsbatteryEstimationModule None:has_predictive_maintenance_function doc:FactshealthAssessmentFunction )>> ;
+	prov:wasDerivedFrom doc:ec46c15f6743 .
+doc:FactsstateOfHealth_1 a cco:DescriptiveInformationContentEntity .
+_:a7aeda452c6365643042623e3ba9bde1 rdf:reifies <<( doc:FactsstateOfHealth_1 rdf:type cco:DescriptiveInformationContentEntity )>> ;
+	prov:wasDerivedFrom doc:ec46c15f6743 .
+_:b3f367413a077c5bd8ec825eb38d523 prov:wasDerivedFrom doc:ec46c15f6743 .
+doc:FactslongShortTermMemory cco:is_about doc:Factsbattery .
+_:af6fbc0663a4c3a04279735f4ae98cd9 rdf:reifies <<( doc:FactslongShortTermMemory cco:is_about doc:Factsbattery )>> ;
+	prov:wasDerivedFrom doc:ec46c15f6743 .
+doc:FactscoulombCounting rdfs:label "Coulomb Counting"@en .
+_:e1d8d0360f2cf5a4cf0f5cc6ef233db1 rdf:reifies <<( doc:FactscoulombCounting rdfs:label "Coulomb Counting"@en )>> ;
+	prov:wasDerivedFrom doc:ec46c15f6743 .
+doc:FactsdataDrivenApproach None:describes_type doc:FactslongShortTermMemory .
+_:de7e9e8a470361f3f14b7cbbb1797881 rdf:reifies <<( doc:FactsdataDrivenApproach None:describes_type doc:FactslongShortTermMemory )>> ;
+	prov:wasDerivedFrom doc:ec46c15f6743 .
+doc:FactshealthAssessmentFunction cco:is_about doc:Factsbattery .
+_:cf64dc2630c180b1f571f55bc8bd84dd rdf:reifies <<( doc:FactshealthAssessmentFunction cco:is_about doc:Factsbattery )>> ;
+	prov:wasDerivedFrom doc:ec46c15f6743 .
+doc:FactssmartDome40 a schema:Product .
+_:b9387288afe7b4a4e3735898004fe214 rdf:reifies <<( doc:FactssmartDome40 rdf:type schema:Product )>> ;
+	prov:wasDerivedFrom doc:ec46c15f6743 .
+_:ea40bbf7392c057b301601b471c1b0b8 prov:wasDerivedFrom doc:ec46c15f6743 .
+doc:FactshealthAssessmentFunction rdfs:label "battery state-of-health estimation"@en .
+_:d12baf7eaeb01c91a7412c8a053bab08 rdf:reifies <<( doc:FactshealthAssessmentFunction rdfs:label "battery state-of-health estimation"@en )>> ;
+	prov:wasDerivedFrom doc:ec46c15f6743 .
+doc:FactsnonlinearBatteryDegradation cco:is_about doc:Factsbattery .
+_:a44bb583d9355632548b218206ef03a rdf:reifies <<( doc:FactsnonlinearBatteryDegradation cco:is_about doc:Factsbattery )>> ;
+	prov:wasDerivedFrom doc:ec46c15f6743 .
+doc:Factscurrent rdfs:label "current"@en .
+_:d9bda76da2cf3257a7fb67f7b9d60e97 rdf:reifies <<( doc:Factscurrent rdfs:label "current"@en )>> ;
+	prov:wasDerivedFrom doc:ec46c15f6743 .
+doc:FactsdataDrivenApproach rdfs:label "model-based approach"@en .
+_:c3bff380ed757bd68e0719241a8ff249 rdf:reifies <<( doc:FactsdataDrivenApproach rdfs:label "model-based approach"@en )>> ;
+	prov:wasDerivedFrom doc:ec46c15f6743 .
+doc:Factsvoltage cco:describes doc:Factsbattery .
+_:a4cbb0c0924a68e5d66f71b406db69ef rdf:reifies <<( doc:Factsvoltage cco:describes doc:Factsbattery )>> ;
+	prov:wasDerivedFrom doc:ec46c15f6743 .
+doc:FactshealthAssessmentFunction rdfs:label "battery remaining useful life estimation"@en .
+_:ca502d4677f838780223030a50422ca3 rdf:reifies <<( doc:FactshealthAssessmentFunction rdfs:label "battery remaining useful life estimation"@en )>> ;
+	prov:wasDerivedFrom doc:ec46c15f6743 .
+doc:FactsbatteryCapacity a cco:DescriptiveInformationContentEntity .
+_:f1060c43d4804e14208c4ee1b1547a23 rdf:reifies <<( doc:FactsbatteryCapacity rdf:type cco:DescriptiveInformationContentEntity )>> ;
+	prov:wasDerivedFrom doc:ec46c15f6743 .
+doc:FactsfuzzyLogic a cco:Algorithm .
+_:c2c9042e00c5c08ba0fa139d33bf7d6a rdf:reifies <<( doc:FactsfuzzyLogic rdf:type cco:Algorithm )>> ;
+	prov:wasDerivedFrom doc:ec46c15f6743 .
+_:eeb54ec1510f411caec5046d0602d57 prov:wasDerivedFrom doc:ec46c15f6743 .
+doc:FactshealthAssessmentFunction rdfs:seeAlso doc:FactsremainingUsefulLife .
+_:f5e78c685bab177afbf7cd4841c0c747 rdf:reifies <<( doc:FactshealthAssessmentFunction rdfs:seeAlso doc:FactsremainingUsefulLife )>> ;
+	prov:wasDerivedFrom doc:ec46c15f6743 .
+doc:FactsremainingUsefulLife cco:is_about doc:Factsbattery .
+_:d7518512ed5f640b7552df8f83ee2de5 rdf:reifies <<( doc:FactsremainingUsefulLife cco:is_about doc:Factsbattery )>> ;
+	prov:wasDerivedFrom doc:ec46c15f6743 .
+doc:FactslongShortTermMemory rdfs:label "long short-term memory"@en .
+_:ff0318a9242d43deafc2f4fa1919ceda rdf:reifies <<( doc:FactslongShortTermMemory rdfs:label "long short-term memory"@en )>> ;
+	prov:wasDerivedFrom doc:ec46c15f6743 .
+doc:FactskalmanFilter a cco:Algorithm .
+_:a75ebe7befba21d867b6b1ebbda5b125 rdf:reifies <<( doc:FactskalmanFilter rdf:type cco:Algorithm )>> ;
+	prov:wasDerivedFrom doc:ec46c15f6743 .
+doc:FactssupportVectorMachine rdfs:label "support vector machine"@en .
+_:b286adddb084abf306c81beca0dff350 rdf:reifies <<( doc:FactssupportVectorMachine rdfs:label "support vector machine"@en )>> ;
+	prov:wasDerivedFrom doc:ec46c15f6743 .
+doc:FactskalmanFilter rdfs:label "Kalman filter"@en .
+_:f0611546cfe8ff81ae5ce698b8b8bb rdf:reifies <<( doc:FactskalmanFilter rdfs:label "Kalman filter"@en )>> ;
+	prov:wasDerivedFrom doc:ec46c15f6743 .
+doc:FactsregressionFunction a None:Regression .
+_:e69ffc7cdf9c1c6ea2a8c587bddaf44a rdf:reifies <<( doc:FactsregressionFunction rdf:type None:Regression )>> ;
+	prov:wasDerivedFrom doc:ec46c15f6743 .
+doc:FactskalmanFilter cco:is_about doc:Factsbattery .
+_:bc00fb57e2f47e172b55b2d3b08be8b8 rdf:reifies <<( doc:FactskalmanFilter cco:is_about doc:Factsbattery )>> ;
+	prov:wasDerivedFrom doc:ec46c15f6743 .
+doc:FactscoulombCounting cco:is_about doc:Factsbattery .
+_:a181021857ce95dd15d43c128305dfab rdf:reifies <<( doc:FactscoulombCounting cco:is_about doc:Factsbattery )>> ;
+	prov:wasDerivedFrom doc:ec46c15f6743 .
+doc:Factstemperature_1 rdfs:label "temperature"@en .
+_:ed539acf41509808449056af171bb73f rdf:reifies <<( doc:Factstemperature_1 rdfs:label "temperature"@en )>> ;
+	prov:wasDerivedFrom doc:ec46c15f6743 .
+doc:Factscurrent cco:describes doc:Factsbattery .
+_:b865bf25e4ce79d8ce8d181352d1288a rdf:reifies <<( doc:Factscurrent cco:describes doc:Factsbattery )>> ;
+	prov:wasDerivedFrom doc:ec46c15f6743 .
+doc:FactsfuzzyLogic rdfs:label "Fuzzy Logic"@en .
+_:b8d307deee8f4f895898a1cb5d67ab4e rdf:reifies <<( doc:FactsfuzzyLogic rdfs:label "Fuzzy Logic"@en )>> ;
+	prov:wasDerivedFrom doc:ec46c15f6743 .
+doc:FactsdataDrivenApproach rdfs:label "data-driven approach"@en .
+_:d6366ffb8c1fb21da65082f2d4d4dfc3 rdf:reifies <<( doc:FactsdataDrivenApproach rdfs:label "data-driven approach"@en )>> ;
+	prov:wasDerivedFrom doc:ec46c15f6743 .
+<http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Predictive_maintenance_model> owl:sameAs <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Predictive_Maintenance_Article> .

@@ -1,0 +1,612 @@
+@prefix None: <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD/seed#> .
+@prefix cco: <http://www.ontologyrepository.com/CommonCoreOntologies/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doc: <https://growgraph.dev/doc/6328c37d8c38/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix obo: <http://purl.obolibrary.org/obo/> .
+@prefix cd: <https://growgraph.dev/facts> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix schema: <https://schema.org/> .
+@prefix schema1: <http://schema.org/> .
+doc:d0c57149aed1 a prov:Entity , schema:text ;
+	prov:generatedAtTime "2026-07-22T09:52:20.121006Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+	schema:position 0 ;
+	schema:identifier "d0c57149aed1" .
+doc:Factscb1_1 a None:Maintainable_item .
+_:f012db7df0ef531b5263725a5b1a2fc9 rdf:reifies <<( doc:Factscb1_1 rdf:type None:Maintainable_item )>> ;
+	prov:wasDerivedFrom doc:d0c57149aed1 .
+doc:FactsclusteringMethod_1 rdfs:label "clustering method" .
+_:fee5320e985c9d1ea9859085af206869 rdf:reifies <<( doc:FactsclusteringMethod_1 rdfs:label "clustering method" )>> ;
+	prov:wasDerivedFrom doc:d0c57149aed1 .
+doc:FactsclusteringFn a None:Deviation_detection .
+_:ce0247eb0fae384229bf17e8bdf78653 rdf:reifies <<( doc:FactsclusteringFn rdf:type None:Deviation_detection )>> ;
+	prov:wasDerivedFrom doc:d0c57149aed1 .
+doc:Factscondition_monitoring1_4 rdfs:label "condition monitoring application" .
+_:c942ee2b7187b90a96ab0c0c819d9ea5 rdf:reifies <<( doc:Factscondition_monitoring1_4 rdfs:label "condition monitoring application" )>> ;
+	prov:wasDerivedFrom doc:d0c57149aed1 .
+doc:Factsid1_92 a None:Article_identifier .
+_:ae1ed67353f7683063cf8490b51e810f rdf:reifies <<( doc:Factsid1_92 rdf:type None:Article_identifier )>> ;
+	prov:wasDerivedFrom doc:d0c57149aed1 .
+doc:Factspaper1_9 schema1:author doc:Factsauthor1_90 .
+_:d0fdbfcdcb02a19a2ac243ebb40676ab rdf:reifies <<( doc:Factspaper1_9 schema1:author doc:Factsauthor1_90 )>> ;
+	prov:wasDerivedFrom doc:d0c57149aed1 .
+doc:FactssedmaModule a None:Predictive_maintenance_system_module .
+_:b93d35f24f881d2b14efbd442c4d9a58 rdf:reifies <<( doc:FactssedmaModule rdf:type None:Predictive_maintenance_system_module )>> ;
+	prov:wasDerivedFrom doc:d0c57149aed1 .
+doc:Factsid1_92 a None:Article_title .
+_:c0d05e687313fdf2666aa5e753a5866e rdf:reifies <<( doc:Factsid1_92 rdf:type None:Article_title )>> ;
+	prov:wasDerivedFrom doc:d0c57149aed1 .
+doc:FactsclusteringFn a None:Health_assessment .
+_:d3ea5b2cd365a9ed738d26fc34e21884 rdf:reifies <<( doc:FactsclusteringFn rdf:type None:Health_assessment )>> ;
+	prov:wasDerivedFrom doc:d0c57149aed1 .
+doc:Factssedma cco:describes doc:FactssedmaConfig .
+_:a6c311bb974f079fc0044a79973a444b rdf:reifies <<( doc:Factssedma cco:describes doc:FactssedmaConfig )>> ;
+	prov:wasDerivedFrom doc:d0c57149aed1 .
+doc:FactssedmaConfig None:describes_configuration doc:Factssedma .
+_:c030e01b09d758a14b50aaf9e5144108 rdf:reifies <<( doc:FactssedmaConfig None:describes_configuration doc:Factssedma )>> ;
+	prov:wasDerivedFrom doc:d0c57149aed1 .
+doc:Factsid1_92 None:has_text_value "OPEN" .
+_:c8ff5a3077f763fffd8b591750f14f49 rdf:reifies <<( doc:Factsid1_92 None:has_text_value "OPEN" )>> ;
+	prov:wasDerivedFrom doc:d0c57149aed1 .
+doc:FactsbayesianBaseline a schema1:CreativeWork .
+_:ba05ae4c61facf4760207f7aca580791 rdf:reifies <<( doc:FactsbayesianBaseline rdf:type schema1:CreativeWork )>> ;
+	prov:wasDerivedFrom doc:d0c57149aed1 .
+doc:Factspaper1_9 None:has_title doc:Factsid1_92 .
+_:d1e01e57af7797c17b26b8f95536fb4 rdf:reifies <<( doc:Factspaper1_9 None:has_title doc:Factsid1_92 )>> ;
+	prov:wasDerivedFrom doc:d0c57149aed1 .
+doc:FactsEquipment a None:Maintainable_item .
+_:dd92ba5ea9099822514b69ee0e47b0be rdf:reifies <<( doc:FactsEquipment rdf:type None:Maintainable_item )>> ;
+	prov:wasDerivedFrom doc:d0c57149aed1 .
+doc:FactssedmaModule None:has_predictive_maintenance_function doc:FactsclusteringFn .
+_:e51c636c06e97975b4bb40a981aeb023 rdf:reifies <<( doc:FactssedmaModule None:has_predictive_maintenance_function doc:FactsclusteringFn )>> ;
+	prov:wasDerivedFrom doc:d0c57149aed1 .
+doc:Factssedma a None:Predictive_maintenance_model .
+_:f9c8ff43e2311eaada787088a2871d0e rdf:reifies <<( doc:Factssedma rdf:type None:Predictive_maintenance_model )>> ;
+	prov:wasDerivedFrom doc:d0c57149aed1 .
+doc:Factsauthor1_90 a schema1:Person .
+_:ed995a547f42c495b34e7a9f5760ccc8 rdf:reifies <<( doc:Factsauthor1_90 rdf:type schema1:Person )>> ;
+	prov:wasDerivedFrom doc:d0c57149aed1 .
+doc:FactsoutlierData a schema1:Thing .
+_:a38dbbba6e97f8269597f7e1790432f6 rdf:reifies <<( doc:FactsoutlierData rdf:type schema1:Thing )>> ;
+	prov:wasDerivedFrom doc:d0c57149aed1 .
+doc:Factsauthor1_90 schema1:name "B. Vahidi" .
+_:a922dacf9d3b0cbaf01dd20119d29473 rdf:reifies <<( doc:Factsauthor1_90 schema1:name "B. Vahidi" )>> ;
+	prov:wasDerivedFrom doc:d0c57149aed1 .
+doc:Factsvariation1 schema1:unitText "%" .
+_:f27df21363322e8de9ea9c5316db5c51 rdf:reifies <<( doc:Factsvariation1 schema1:unitText "%" )>> ;
+	prov:wasDerivedFrom doc:d0c57149aed1 .
+doc:FactsFuzzyLogic a schema1:CreativeWork .
+_:cb2e60e602aadafc89c93d0162722a37 rdf:reifies <<( doc:FactsFuzzyLogic rdf:type schema1:CreativeWork )>> ;
+	prov:wasDerivedFrom doc:d0c57149aed1 .
+doc:FactsclusteringFn a None:Association_discovery .
+_:daef1eb440479313d401e4edc9a624c2 rdf:reifies <<( doc:FactsclusteringFn rdf:type None:Association_discovery )>> ;
+	prov:wasDerivedFrom doc:d0c57149aed1 .
+doc:FactsEquipment rdfs:label "electrical equipment" .
+_:c272c0a0e13c9959c4007e46942c63f2 rdf:reifies <<( doc:FactsEquipment rdfs:label "electrical equipment" )>> ;
+	prov:wasDerivedFrom doc:d0c57149aed1 .
+doc:Factsauthor1_90 schema1:name "A. Aranizadeh" .
+_:b9533e57b47ce03a53bc4b88504ea6f4 rdf:reifies <<( doc:Factsauthor1_90 schema1:name "A. Aranizadeh" )>> ;
+	prov:wasDerivedFrom doc:d0c57149aed1 .
+doc:Factsvariation1 schema1:value "5"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+_:e34fe904562d53316550bb164a9b5c91 rdf:reifies <<( doc:Factsvariation1 schema1:value "5"^^<http://www.w3.org/2001/XMLSchema#decimal> )>> ;
+	prov:wasDerivedFrom doc:d0c57149aed1 .
+doc:Factsid1_92 None:has_text_value "Data inherent assessment of electrical equipment by failure pattern and self-evaluation decision-making algorithm" .
+_:f0584f5a15905bef7c003e63794cde34 rdf:reifies <<( doc:Factsid1_92 None:has_text_value "Data inherent assessment of electrical equipment by failure pattern and self-evaluation decision-making algorithm" )>> ;
+	prov:wasDerivedFrom doc:d0c57149aed1 .
+doc:Factscondition_monitoring1_4 a schema1:Event .
+_:e81c60620360af31684bd2a660197acb rdf:reifies <<( doc:Factscondition_monitoring1_4 rdf:type schema1:Event )>> ;
+	prov:wasDerivedFrom doc:d0c57149aed1 .
+doc:Factsauthor1_90 schema1:name "A. Khorsandi" .
+_:fd6e8698b3e36a953609c16d8a3f3172 rdf:reifies <<( doc:Factsauthor1_90 schema1:name "A. Khorsandi" )>> ;
+	prov:wasDerivedFrom doc:d0c57149aed1 .
+doc:Factspaper1_9 None:has_identifier doc:Factsid1_92 .
+_:ea5a3a583d339e7c4cf93cd4e1f48038 rdf:reifies <<( doc:Factspaper1_9 None:has_identifier doc:Factsid1_92 )>> ;
+	prov:wasDerivedFrom doc:d0c57149aed1 .
+doc:FactsfuzzyLogic_1 a schema1:CreativeWork .
+_:ff04f2a670869ebd34006932787814a1 rdf:reifies <<( doc:FactsfuzzyLogic_1 rdf:type schema1:CreativeWork )>> ;
+	prov:wasDerivedFrom doc:d0c57149aed1 .
+doc:FactssedmaConfig a None:Model_configuration .
+_:a521d62e29030c3177e2491ae05f2ff rdf:reifies <<( doc:FactssedmaConfig rdf:type None:Model_configuration )>> ;
+	prov:wasDerivedFrom doc:d0c57149aed1 .
+doc:FactsstatisticalBaseline a schema1:CreativeWork .
+_:e88ddeaa2931049809bb753396d7b5f5 rdf:reifies <<( doc:FactsstatisticalBaseline rdf:type schema1:CreativeWork )>> ;
+	prov:wasDerivedFrom doc:d0c57149aed1 .
+doc:Factsyear1_139 None:has_interger_value 0 .
+_:cb4be87977227d2136fab5d8db9dee4a rdf:reifies <<( doc:Factsyear1_139 None:has_interger_value 0 )>> ;
+	prov:wasDerivedFrom doc:d0c57149aed1 .
+doc:FactswearOutFunction rdfs:label "wear-out assessment" .
+_:ca477780e84c85abb0054b2e2681477a rdf:reifies <<( doc:FactswearOutFunction rdfs:label "wear-out assessment" )>> ;
+	prov:wasDerivedFrom doc:d0c57149aed1 .
+doc:FactsFuzzyLogic rdfs:label "entropy-based degradation modeling" .
+_:fd3b38a1521ded66bf332dae388da72 rdf:reifies <<( doc:FactsFuzzyLogic rdfs:label "entropy-based degradation modeling" )>> ;
+	prov:wasDerivedFrom doc:d0c57149aed1 .
+doc:FactsoutlierData rdfs:label "outlier data" .
+_:a51277fc04bfc4626690d561c7926c00 rdf:reifies <<( doc:FactsoutlierData rdfs:label "outlier data" )>> ;
+	prov:wasDerivedFrom doc:d0c57149aed1 .
+doc:Factsmaintenance1_5 rdfs:label "maintenance" .
+_:cb7b629560f8da286dde72d80e81a48d rdf:reifies <<( doc:Factsmaintenance1_5 rdfs:label "maintenance" )>> ;
+	prov:wasDerivedFrom doc:d0c57149aed1 .
+doc:FactsmeasurementData a schema1:Thing .
+_:c9393dadbee593643d6f0d2f710444db rdf:reifies <<( doc:FactsmeasurementData rdf:type schema1:Thing )>> ;
+	prov:wasDerivedFrom doc:d0c57149aed1 .
+doc:FactsEquipment obo:RO_0000085 doc:FactswearOutFunction .
+_:a6e74a682498cef390497ce6e3ef84f4 rdf:reifies <<( doc:FactsEquipment obo:RO_0000085 doc:FactswearOutFunction )>> ;
+	prov:wasDerivedFrom doc:d0c57149aed1 .
+doc:FactsstatisticalBaseline rdfs:label "statistical baseline" .
+_:f7c6636a7831982323b58630a04f704e rdf:reifies <<( doc:FactsstatisticalBaseline rdfs:label "statistical baseline" )>> ;
+	prov:wasDerivedFrom doc:d0c57149aed1 .
+doc:Factsvariation1 a schema1:PropertyValue .
+_:a0811600a43b18eae54d887127468d5a rdf:reifies <<( doc:Factsvariation1 rdf:type schema1:PropertyValue )>> ;
+	prov:wasDerivedFrom doc:d0c57149aed1 .
+doc:FactsnoisyData_1 a schema1:Thing .
+_:bcf126391b084883402dae300cf02d1a rdf:reifies <<( doc:FactsnoisyData_1 rdf:type schema1:Thing )>> ;
+	prov:wasDerivedFrom doc:d0c57149aed1 .
+doc:FactsstableResults rdfs:label "stable and interpretable condition assessment results" .
+_:ce6d9803598c87d71f9cc9588790644d rdf:reifies <<( doc:FactsstableResults rdfs:label "stable and interpretable condition assessment results" )>> ;
+	prov:wasDerivedFrom doc:d0c57149aed1 .
+doc:Factscb1_1 rdfs:label "circuit breaker" .
+_:a462f29ffdb052f7be87d09bedbbcdc1 rdf:reifies <<( doc:Factscb1_1 rdfs:label "circuit breaker" )>> ;
+	prov:wasDerivedFrom doc:d0c57149aed1 .
+doc:FactsclusteringMethod_1 a None:Clustering .
+_:c1774aafd9678711f5a5d78b109892b rdf:reifies <<( doc:FactsclusteringMethod_1 rdf:type None:Clustering )>> ;
+	prov:wasDerivedFrom doc:d0c57149aed1 .
+doc:FactsstableResults a schema1:PropertyValue .
+_:f34316fd321ff3e135c2421b47a6b29c rdf:reifies <<( doc:FactsstableResults rdf:type schema1:PropertyValue )>> ;
+	prov:wasDerivedFrom doc:d0c57149aed1 .
+doc:FactsnoisyData_1 rdfs:label "noisy data" .
+_:e1dd9b4510b097ef5a777b9fd16a4dd6 rdf:reifies <<( doc:FactsnoisyData_1 rdfs:label "noisy data" )>> ;
+	prov:wasDerivedFrom doc:d0c57149aed1 .
+doc:FactsfuzzyLogic_1 rdfs:label "fuzzy logic" .
+_:b080be65c1353b0685834c9013360f41 rdf:reifies <<( doc:FactsfuzzyLogic_1 rdfs:label "fuzzy logic" )>> ;
+	prov:wasDerivedFrom doc:d0c57149aed1 .
+doc:Factssedma rdfs:label "SEDMA" .
+_:fd266ba14e646215641a1bccba9e5b83 rdf:reifies <<( doc:Factssedma rdfs:label "SEDMA" )>> ;
+	prov:wasDerivedFrom doc:d0c57149aed1 .
+doc:FactsuncertainData rdfs:label "uncertain data" .
+_:d6bd87f248f15477237b12302dea5c6b rdf:reifies <<( doc:FactsuncertainData rdfs:label "uncertain data" )>> ;
+	prov:wasDerivedFrom doc:d0c57149aed1 .
+doc:Factspaper1_9 None:has_publication_year doc:Factsyear1_139 .
+_:ebd70e3b4e1a8fd475aea8d109e270b6 rdf:reifies <<( doc:Factspaper1_9 None:has_publication_year doc:Factsyear1_139 )>> ;
+	prov:wasDerivedFrom doc:d0c57149aed1 .
+doc:Factspaper1_9 a None:Predictive_Maintenance_Article .
+_:fbbf9ce8ebe3531a95a404c6f11426ab rdf:reifies <<( doc:Factspaper1_9 rdf:type None:Predictive_Maintenance_Article )>> ;
+	prov:wasDerivedFrom doc:d0c57149aed1 .
+doc:FactsuncertainData a schema1:Thing .
+_:b89617da2f5f6f2655c244872406f250 rdf:reifies <<( doc:FactsuncertainData rdf:type schema1:Thing )>> ;
+	prov:wasDerivedFrom doc:d0c57149aed1 .
+doc:Factssedma dcterms:description "self-evaluation decision-making algorithm" .
+_:c4da62c946648965ead6478d452c0fc rdf:reifies <<( doc:Factssedma dcterms:description "self-evaluation decision-making algorithm" )>> ;
+	prov:wasDerivedFrom doc:d0c57149aed1 .
+doc:Factsmaintenance1_5 a schema1:Event .
+_:db3290d9f874368970e5e69ded02611f rdf:reifies <<( doc:Factsmaintenance1_5 rdf:type schema1:Event )>> ;
+	prov:wasDerivedFrom doc:d0c57149aed1 .
+doc:FactsbayesianBaseline rdfs:label "Bayesian baseline" .
+_:ca9d8d095ec77621a280c5f2a5e73216 rdf:reifies <<( doc:FactsbayesianBaseline rdfs:label "Bayesian baseline" )>> ;
+	prov:wasDerivedFrom doc:d0c57149aed1 .
+doc:Factsyear1_139 a None:Publication_year .
+_:c83e2673a4e9af6766962fc15a50dc3b rdf:reifies <<( doc:Factsyear1_139 rdf:type None:Publication_year )>> ;
+	prov:wasDerivedFrom doc:d0c57149aed1 .
+doc:Factsvariation1 schema1:value "linear computational complexity" .
+_:f9dde193034b7b092ca045e66be17f39 rdf:reifies <<( doc:Factsvariation1 schema1:value "linear computational complexity" )>> ;
+	prov:wasDerivedFrom doc:d0c57149aed1 .
+doc:FactswearOutFunction a None:Future_state_forecast .
+_:f565e3eb6262658ad1cbaeaec36e8d42 rdf:reifies <<( doc:FactswearOutFunction rdf:type None:Future_state_forecast )>> ;
+	prov:wasDerivedFrom doc:d0c57149aed1 .
+doc:Factspaper1_9 dcterms:title "Data inherent assessment of electrical equipment by failure pattern and self-evaluation decision-making algorithm" .
+_:d30c361e1460653f6d2dfbf3b20d5304 rdf:reifies <<( doc:Factspaper1_9 dcterms:title "Data inherent assessment of electrical equipment by failure pattern and self-evaluation decision-making algorithm" )>> ;
+	prov:wasDerivedFrom doc:d0c57149aed1 .
+doc:FactsmeasurementData rdfs:label "measurement data" .
+_:ad0de407c09f6f697cc2be09193962d0 rdf:reifies <<( doc:FactsmeasurementData rdfs:label "measurement data" )>> ;
+	prov:wasDerivedFrom doc:d0c57149aed1 .
+doc:8857087e1cdc a prov:Entity , schema:text ;
+	prov:generatedAtTime "2026-07-22T09:52:20.124004Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+	schema:position 1 ;
+	schema:identifier "8857087e1cdc" .
+_:ebd70e3b4e1a8fd475aea8d109e270b6 prov:wasDerivedFrom doc:8857087e1cdc .
+doc:FactssedmaSync a None:Module_synchronization .
+_:dc473331cbfe0f04655cea1f96439ff rdf:reifies <<( doc:FactssedmaSync rdf:type None:Module_synchronization )>> ;
+	prov:wasDerivedFrom doc:8857087e1cdc .
+_:d3ea5b2cd365a9ed738d26fc34e21884 prov:wasDerivedFrom doc:8857087e1cdc .
+doc:FactssedmaDetail a None:Design_detail .
+_:f620ff208e0724e5ffe75d5bc232fed8 rdf:reifies <<( doc:FactssedmaDetail rdf:type None:Design_detail )>> ;
+	prov:wasDerivedFrom doc:8857087e1cdc .
+doc:FactssedmaFramework a cco:Algorithm .
+_:d8b38fc436f8f41e3a236f3fa4ece755 rdf:reifies <<( doc:FactssedmaFramework rdf:type cco:Algorithm )>> ;
+	prov:wasDerivedFrom doc:8857087e1cdc .
+_:f012db7df0ef531b5263725a5b1a2fc9 prov:wasDerivedFrom doc:8857087e1cdc .
+doc:FactsprojectionPursuitMethod a None:Data_mining_technique_function .
+_:f3130f69f7f5c800fd4e3b662dfce410 rdf:reifies <<( doc:FactsprojectionPursuitMethod rdf:type None:Data_mining_technique_function )>> ;
+	prov:wasDerivedFrom doc:8857087e1cdc .
+doc:FactsconditionChanges rdfs:label "condition changes"@en .
+_:e833389da02a1a4361fe3037e5f89330 rdf:reifies <<( doc:FactsconditionChanges rdfs:label "condition changes"@en )>> ;
+	prov:wasDerivedFrom doc:8857087e1cdc .
+_:d1e01e57af7797c17b26b8f95536fb4 prov:wasDerivedFrom doc:8857087e1cdc .
+_:b93d35f24f881d2b14efbd442c4d9a58 prov:wasDerivedFrom doc:8857087e1cdc .
+doc:FactssedmaSync None:has_text_value "online" .
+_:c7355ce87a271ae61c578221d5489ffc rdf:reifies <<( doc:FactssedmaSync None:has_text_value "online" )>> ;
+	prov:wasDerivedFrom doc:8857087e1cdc .
+_:ae1ed67353f7683063cf8490b51e810f prov:wasDerivedFrom doc:8857087e1cdc .
+doc:FactsclusteringFn a None:Fault_detection .
+_:fd6c49db091389f0f918a760b2168c47 rdf:reifies <<( doc:FactsclusteringFn rdf:type None:Fault_detection )>> ;
+	prov:wasDerivedFrom doc:8857087e1cdc .
+_:ea5a3a583d339e7c4cf93cd4e1f48038 prov:wasDerivedFrom doc:8857087e1cdc .
+doc:FactssedmaFramework rdfs:label "self-evaluation decision-making algorithm"@en .
+_:aadd1a47a10753d522cd1214e52b225a rdf:reifies <<( doc:FactssedmaFramework rdfs:label "self-evaluation decision-making algorithm"@en )>> ;
+	prov:wasDerivedFrom doc:8857087e1cdc .
+doc:FactscbFailureBehavior a cco:DescriptiveInformationContentEntity .
+_:d73456172da2842f0c70b64f24f8f33d rdf:reifies <<( doc:FactscbFailureBehavior rdf:type cco:DescriptiveInformationContentEntity )>> ;
+	prov:wasDerivedFrom doc:8857087e1cdc .
+doc:FactshealthCondition a None:Health_assessment .
+_:e2a8bd75031e34a14da3c30db7f4ddc7 rdf:reifies <<( doc:FactshealthCondition rdf:type None:Health_assessment )>> ;
+	prov:wasDerivedFrom doc:8857087e1cdc .
+doc:FactsprojectionPursuitMethod rdfs:label "projection pursuit method"@en .
+_:ecdce8c3d52a460a2fc8f4725300fd9a rdf:reifies <<( doc:FactsprojectionPursuitMethod rdfs:label "projection pursuit method"@en )>> ;
+	prov:wasDerivedFrom doc:8857087e1cdc .
+doc:FactsdynamicFuzzyClusteringModel rdfs:label "dynamic fuzzy clustering model"@en .
+_:bad1eec57578089a3f8b4f79cdf03652 rdf:reifies <<( doc:FactsdynamicFuzzyClusteringModel rdfs:label "dynamic fuzzy clustering model"@en )>> ;
+	prov:wasDerivedFrom doc:8857087e1cdc .
+doc:FactsFuzzyLogic rdfs:label "entropy"@en .
+_:b11a69197039835fb49ae23cb1dbfe1e rdf:reifies <<( doc:FactsFuzzyLogic rdfs:label "entropy"@en )>> ;
+	prov:wasDerivedFrom doc:8857087e1cdc .
+doc:FactstimeSeries a cco:DescriptiveInformationContentEntity .
+_:fe9d4c8aea45975a22fba2e51642ec4f rdf:reifies <<( doc:FactstimeSeries rdf:type cco:DescriptiveInformationContentEntity )>> ;
+	prov:wasDerivedFrom doc:8857087e1cdc .
+doc:FactsDecisionForestEnsemble a cco:Algorithm .
+_:e8e0af55bed39928986c68eb90fe1159 rdf:reifies <<( doc:FactsDecisionForestEnsemble rdf:type cco:Algorithm )>> ;
+	prov:wasDerivedFrom doc:8857087e1cdc .
+doc:FactsclusteringFn a None:Clustering .
+_:de9f4796c181fac7b33e4cffcc46146d rdf:reifies <<( doc:FactsclusteringFn rdf:type None:Clustering )>> ;
+	prov:wasDerivedFrom doc:8857087e1cdc .
+doc:FactstimeSeries rdfs:label "time series"@en .
+_:f3f152f9cc0c20815cd9bb1c5f6de7f4 rdf:reifies <<( doc:FactstimeSeries rdfs:label "time series"@en )>> ;
+	prov:wasDerivedFrom doc:8857087e1cdc .
+doc:FactsconditionChanges a cco:DescriptiveInformationContentEntity .
+_:fbea38dc94b542eb51e3d6379e35c212 rdf:reifies <<( doc:FactsconditionChanges rdf:type cco:DescriptiveInformationContentEntity )>> ;
+	prov:wasDerivedFrom doc:8857087e1cdc .
+doc:FactsDecisionForestEnsemble rdfs:label "ensemble decision-forest classifiers"@en .
+_:f201eb2c6d20fc8e3326223026e15bf3 rdf:reifies <<( doc:FactsDecisionForestEnsemble rdfs:label "ensemble decision-forest classifiers"@en )>> ;
+	prov:wasDerivedFrom doc:8857087e1cdc .
+doc:Factssedma rdfs:label "SEDMA"@en .
+_:e4073121328d3c741e1cd21c9fc8dbff rdf:reifies <<( doc:Factssedma rdfs:label "SEDMA"@en )>> ;
+	prov:wasDerivedFrom doc:8857087e1cdc .
+doc:FactssedmaModule None:has_design_detail doc:FactssedmaDetail .
+_:f99c04c937c1b57701fa922876dea42b rdf:reifies <<( doc:FactssedmaModule None:has_design_detail doc:FactssedmaDetail )>> ;
+	prov:wasDerivedFrom doc:8857087e1cdc .
+doc:FactssedmaDetail None:has_text_value "data-driven yet physically interpretable" .
+_:f0228f82c953c4f757a4314741fc790f rdf:reifies <<( doc:FactssedmaDetail None:has_text_value "data-driven yet physically interpretable" )>> ;
+	prov:wasDerivedFrom doc:8857087e1cdc .
+doc:FactsoutlierData a cco:DescriptiveInformationContentEntity .
+_:dbc06f936d70679b4abb17d4738f5c67 rdf:reifies <<( doc:FactsoutlierData rdf:type cco:DescriptiveInformationContentEntity )>> ;
+	prov:wasDerivedFrom doc:8857087e1cdc .
+doc:Factscb1_1 rdfs:label "power circuit breaker"@en .
+_:beaa692c0a6f231075fb6db20dc1b242 rdf:reifies <<( doc:Factscb1_1 rdfs:label "power circuit breaker"@en )>> ;
+	prov:wasDerivedFrom doc:8857087e1cdc .
+_:c83e2673a4e9af6766962fc15a50dc3b prov:wasDerivedFrom doc:8857087e1cdc .
+doc:FactsconditionChanges rdfs:label "degradation patterns"@en .
+_:ef6613765a36af9656e6e275eb83ae72 rdf:reifies <<( doc:FactsconditionChanges rdfs:label "degradation patterns"@en )>> ;
+	prov:wasDerivedFrom doc:8857087e1cdc .
+doc:Factsid1_92 None:has_text_value "Reference document" .
+_:cac137a26ce9fec8431c1eaa636146f7 rdf:reifies <<( doc:Factsid1_92 None:has_text_value "Reference document" )>> ;
+	prov:wasDerivedFrom doc:8857087e1cdc .
+_:fbbf9ce8ebe3531a95a404c6f11426ab prov:wasDerivedFrom doc:8857087e1cdc .
+_:e51c636c06e97975b4bb40a981aeb023 prov:wasDerivedFrom doc:8857087e1cdc .
+_:c0d05e687313fdf2666aa5e753a5866e prov:wasDerivedFrom doc:8857087e1cdc .
+doc:FactsdynamicFuzzyClusteringModel a None:Clustering .
+_:a0e6695a83ccf08e04fa2bf7ca755d75 rdf:reifies <<( doc:FactsdynamicFuzzyClusteringModel rdf:type None:Clustering )>> ;
+	prov:wasDerivedFrom doc:8857087e1cdc .
+doc:FactscostSensitiveLearningAlgorithm rdfs:label "cost-sensitive learning algorithm"@en .
+_:dc6a4eb2ea8a1e439f2c0f776ac1664e rdf:reifies <<( doc:FactscostSensitiveLearningAlgorithm rdfs:label "cost-sensitive learning algorithm"@en )>> ;
+	prov:wasDerivedFrom doc:8857087e1cdc .
+_:f9c8ff43e2311eaada787088a2871d0e prov:wasDerivedFrom doc:8857087e1cdc .
+doc:FactscostSensitiveLearningAlgorithm a cco:Algorithm .
+_:a9d0c5ad6898e161c6edc53072ef7aa4 rdf:reifies <<( doc:FactscostSensitiveLearningAlgorithm rdf:type cco:Algorithm )>> ;
+	prov:wasDerivedFrom doc:8857087e1cdc .
+doc:FactscbFailureBehavior rdfs:label "failure behavior"@en .
+_:d9265584dfa9caf6d2d41613ae2b1ebd rdf:reifies <<( doc:FactscbFailureBehavior rdfs:label "failure behavior"@en )>> ;
+	prov:wasDerivedFrom doc:8857087e1cdc .
+doc:FactssedmaModule None:has_synchronization doc:FactssedmaSync .
+_:d0e898c027ab6351c7865c68d7a86921 rdf:reifies <<( doc:FactssedmaModule None:has_synchronization doc:FactssedmaSync )>> ;
+	prov:wasDerivedFrom doc:8857087e1cdc .
+doc:FactsconditionChanges rdfs:label "anomalous patterns"@en .
+_:ce73927b24fbdb3b3f53dfdeae96ee69 rdf:reifies <<( doc:FactsconditionChanges rdfs:label "anomalous patterns"@en )>> ;
+	prov:wasDerivedFrom doc:8857087e1cdc .
+doc:FactshealthCondition rdfs:label "health condition"@en .
+_:dab809906fd05fe58ba95e722f6dc655 rdf:reifies <<( doc:FactshealthCondition rdfs:label "health condition"@en )>> ;
+	prov:wasDerivedFrom doc:8857087e1cdc .
+_:ce0247eb0fae384229bf17e8bdf78653 prov:wasDerivedFrom doc:8857087e1cdc .
+doc:FactsFuzzyLogic a cco:DescriptiveInformationContentEntity .
+_:c86053853744e7dc6f81b48250f021af rdf:reifies <<( doc:FactsFuzzyLogic rdf:type cco:DescriptiveInformationContentEntity )>> ;
+	prov:wasDerivedFrom doc:8857087e1cdc .
+_:cb4be87977227d2136fab5d8db9dee4a prov:wasDerivedFrom doc:8857087e1cdc .
+doc:FactsclusteringFn a None:Classification .
+_:ad621ec04d5e1893f47e0443033df856 rdf:reifies <<( doc:FactsclusteringFn rdf:type None:Classification )>> ;
+	prov:wasDerivedFrom doc:8857087e1cdc .
+doc:FactsoutlierData rdfs:label "outlier data"@en .
+_:f5f4d4e23a5a4a62d494f7f27bf6c919 rdf:reifies <<( doc:FactsoutlierData rdfs:label "outlier data"@en )>> ;
+	prov:wasDerivedFrom doc:8857087e1cdc .
+doc:Factsid1_92 None:has_text_value "SEDMA framework for power circuit breakers" .
+_:eaf6f413caded02b37fae7ce94a9c817 rdf:reifies <<( doc:Factsid1_92 None:has_text_value "SEDMA framework for power circuit breakers" )>> ;
+	prov:wasDerivedFrom doc:8857087e1cdc .
+doc:0a4b60234f9e a prov:Entity , schema:text ;
+	prov:generatedAtTime "2026-07-22T09:52:20.125623Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+	schema:position 2 ;
+	schema:identifier "0a4b60234f9e" .
+doc:FactsSensorMonitoring rdfs:label "Transformer diagnostics"@en .
+_:b7b1ea19b51151f1344b26ba9dd5fa3 rdf:reifies <<( doc:FactsSensorMonitoring rdfs:label "Transformer diagnostics"@en )>> ;
+	prov:wasDerivedFrom doc:0a4b60234f9e .
+doc:FactsSelfComparisonMatrixDiDii a cco:DescriptiveInformationContentEntity .
+_:a0c51193f593bc96e2d8adb7fc4de726 rdf:reifies <<( doc:FactsSelfComparisonMatrixDiDii rdf:type cco:DescriptiveInformationContentEntity )>> ;
+	prov:wasDerivedFrom doc:0a4b60234f9e .
+doc:FactsReliabilityEstimation a cco:DescriptiveInformationContentEntity .
+_:b5052025698ba347b70534e3ddf33f32 rdf:reifies <<( doc:FactsReliabilityEstimation rdf:type cco:DescriptiveInformationContentEntity )>> ;
+	prov:wasDerivedFrom doc:0a4b60234f9e .
+doc:FactsClusteringBasedOutlierDetection a None:Clustering .
+_:ed429f437fb905e88c72a26db4c16b34 rdf:reifies <<( doc:FactsClusteringBasedOutlierDetection rdf:type None:Clustering )>> ;
+	prov:wasDerivedFrom doc:0a4b60234f9e .
+doc:Factssedma cco:describes doc:FactsSelfEvaluationConcept .
+_:e2aefe2129c0f65e640d469ca62d4d3c rdf:reifies <<( doc:Factssedma cco:describes doc:FactsSelfEvaluationConcept )>> ;
+	prov:wasDerivedFrom doc:0a4b60234f9e .
+doc:FactsSedmaAdvantages a cco:DescriptiveInformationContentEntity .
+_:f570e46c02b5c23e6b147769e9fa8b1e rdf:reifies <<( doc:FactsSedmaAdvantages rdf:type cco:DescriptiveInformationContentEntity )>> ;
+	prov:wasDerivedFrom doc:0a4b60234f9e .
+doc:FactsSedmaAdvantages schema1:name "self-adaptive, interpretable"@en .
+_:b1ac645c576de2067b737a583aa4fb2d rdf:reifies <<( doc:FactsSedmaAdvantages schema1:name "self-adaptive, interpretable"@en )>> ;
+	prov:wasDerivedFrom doc:0a4b60234f9e .
+doc:FactsStatisticalThresholding schema1:name "statistical thresholding"@en .
+_:e9d29a242393143458eaea5ebce1b040 rdf:reifies <<( doc:FactsStatisticalThresholding schema1:name "statistical thresholding"@en )>> ;
+	prov:wasDerivedFrom doc:0a4b60234f9e .
+doc:FactsSelfEvaluationConcept rdfs:label "Inherent Base Evaluation"@en .
+_:dde502bc2851f24b982d09fefaff93f4 rdf:reifies <<( doc:FactsSelfEvaluationConcept rdfs:label "Inherent Base Evaluation"@en )>> ;
+	prov:wasDerivedFrom doc:0a4b60234f9e .
+doc:FactsPairwiseComparisonOverTime cco:is_about doc:FactsEquipment .
+_:b4e85996c897eea67de36bd9e2432099 rdf:reifies <<( doc:FactsPairwiseComparisonOverTime cco:is_about doc:FactsEquipment )>> ;
+	prov:wasDerivedFrom doc:0a4b60234f9e .
+doc:FactsImbalancedEegDatasets schema1:name "imbalanced EEG datasets"@en .
+_:c5eb454d19504b4e22de6de72c0eb25f rdf:reifies <<( doc:FactsImbalancedEegDatasets schema1:name "imbalanced EEG datasets"@en )>> ;
+	prov:wasDerivedFrom doc:0a4b60234f9e .
+doc:FactsSensorMonitoring a cco:DescriptiveInformationContentEntity .
+_:e1f4be8baa8267e378f88f4d6e21b25d rdf:reifies <<( doc:FactsSensorMonitoring rdf:type cco:DescriptiveInformationContentEntity )>> ;
+	prov:wasDerivedFrom doc:0a4b60234f9e .
+doc:FactsSelfEvaluationConcept rdfs:label "self-evaluation concept"@en .
+_:fdf6c20bedfe960ba9d3d135b691db2a rdf:reifies <<( doc:FactsSelfEvaluationConcept rdfs:label "self-evaluation concept"@en )>> ;
+	prov:wasDerivedFrom doc:0a4b60234f9e .
+_:c86053853744e7dc6f81b48250f021af prov:wasDerivedFrom doc:0a4b60234f9e .
+doc:FactsFuzzyExpertSystem schema1:name "fuzzy expert system"@en .
+_:d8c9d69490c5778d2501bae5514f4159 rdf:reifies <<( doc:FactsFuzzyExpertSystem schema1:name "fuzzy expert system"@en )>> ;
+	prov:wasDerivedFrom doc:0a4b60234f9e .
+doc:FactsPairwiseComparisonOverTime a cco:DescriptiveInformationContentEntity .
+_:bd3a9a3c0560c8d1c71e48be740aa6ca rdf:reifies <<( doc:FactsPairwiseComparisonOverTime rdf:type cco:DescriptiveInformationContentEntity )>> ;
+	prov:wasDerivedFrom doc:0a4b60234f9e .
+doc:FactsFuzzyLogic cco:describes doc:FactsSelfEvaluationConcept .
+_:d3ff382fae0cc7d4aadcfd554d14f4b0 rdf:reifies <<( doc:FactsFuzzyLogic cco:describes doc:FactsSelfEvaluationConcept )>> ;
+	prov:wasDerivedFrom doc:0a4b60234f9e .
+doc:FactsConditionMonitoringDatabases a cco:Database .
+_:c083b103074206c3aba1899aba412f83 rdf:reifies <<( doc:FactsConditionMonitoringDatabases rdf:type cco:Database )>> ;
+	prov:wasDerivedFrom doc:0a4b60234f9e .
+doc:FactsFuzzyExpertSystem cco:is_about doc:FactsFaultDiagnosis .
+_:c4eac5145da544f1f0780b95819533a rdf:reifies <<( doc:FactsFuzzyExpertSystem cco:is_about doc:FactsFaultDiagnosis )>> ;
+	prov:wasDerivedFrom doc:0a4b60234f9e .
+doc:FactsSensorMonitoring rdfs:label "sensor monitoring"@en .
+_:cf7b2ba4cb39ba80c39fb46634855f4c rdf:reifies <<( doc:FactsSensorMonitoring rdfs:label "sensor monitoring"@en )>> ;
+	prov:wasDerivedFrom doc:0a4b60234f9e .
+_:e4073121328d3c741e1cd21c9fc8dbff prov:wasDerivedFrom doc:0a4b60234f9e .
+doc:FactsCostSensitiveMlClassifier cco:is_about doc:FactsImbalancedEegDatasets .
+_:f3b37c4702b496eae58c4a4fd14597ad rdf:reifies <<( doc:FactsCostSensitiveMlClassifier cco:is_about doc:FactsImbalancedEegDatasets )>> ;
+	prov:wasDerivedFrom doc:0a4b60234f9e .
+doc:FactsSelfComparisonMatrixDiDii cco:describes doc:FactsPairwiseComparisonOverTime .
+_:c9a957b36c573cf8484ae7fa7937c361 rdf:reifies <<( doc:FactsSelfComparisonMatrixDiDii cco:describes doc:FactsPairwiseComparisonOverTime )>> ;
+	prov:wasDerivedFrom doc:0a4b60234f9e .
+doc:Factssedma cco:describes doc:FactsFuzzyLogic .
+_:c7da5be8a5dfd2b7e5b7d21d9a988c48 rdf:reifies <<( doc:Factssedma cco:describes doc:FactsFuzzyLogic )>> ;
+	prov:wasDerivedFrom doc:0a4b60234f9e .
+doc:FactsSelfEvaluationConcept a cco:DescriptiveInformationContentEntity .
+_:f881af3e726ab068558f6cf0c6def610 rdf:reifies <<( doc:FactsSelfEvaluationConcept rdf:type cco:DescriptiveInformationContentEntity )>> ;
+	prov:wasDerivedFrom doc:0a4b60234f9e .
+doc:Factssedma cco:hasPart doc:FactsSelfComparisonMatrixDiDii .
+_:d82465e330fff424328fed78e8a8e462 rdf:reifies <<( doc:Factssedma cco:hasPart doc:FactsSelfComparisonMatrixDiDii )>> ;
+	prov:wasDerivedFrom doc:0a4b60234f9e .
+doc:Factssedma cco:hasPart doc:FactsComputationalEfficiency .
+_:b4ca181f8d1640a456be179a77321f17 rdf:reifies <<( doc:Factssedma cco:hasPart doc:FactsComputationalEfficiency )>> ;
+	prov:wasDerivedFrom doc:0a4b60234f9e .
+doc:FactsComputationalEfficiency rdfs:label "computational efficiency"@en .
+_:e8c92cdd06fe24e6633f04ada995248d rdf:reifies <<( doc:FactsComputationalEfficiency rdfs:label "computational efficiency"@en )>> ;
+	prov:wasDerivedFrom doc:0a4b60234f9e .
+doc:FactsFuzzyLogic rdfs:label "fuzzy-entropy self-evaluation"@en .
+_:b05c5e1ec412f72eba99cdf08df24985 rdf:reifies <<( doc:FactsFuzzyLogic rdfs:label "fuzzy-entropy self-evaluation"@en )>> ;
+	prov:wasDerivedFrom doc:0a4b60234f9e .
+doc:FactsFuzzyLogic cco:describes doc:FactsFuzzyLogic .
+_:be65a3e18748baa837d97d3dd06aecaf rdf:reifies <<( doc:FactsFuzzyLogic cco:describes doc:FactsFuzzyLogic )>> ;
+	prov:wasDerivedFrom doc:0a4b60234f9e .
+doc:FactsComputationalEfficiency schema1:name "computational efficiency"@en .
+_:e09fd86fe92942315ede3d3314d8b30c rdf:reifies <<( doc:FactsComputationalEfficiency schema1:name "computational efficiency"@en )>> ;
+	prov:wasDerivedFrom doc:0a4b60234f9e .
+doc:FactsSelfEvaluationConcept cco:describes doc:FactsSelfEvaluationConcept .
+_:cdae5f04b20d46d17b2fea7fa35c4fbe rdf:reifies <<( doc:FactsSelfEvaluationConcept cco:describes doc:FactsSelfEvaluationConcept )>> ;
+	prov:wasDerivedFrom doc:0a4b60234f9e .
+doc:FactsStatisticalThresholding cco:is_about doc:FactsSensorMonitoring .
+_:c47fad5a5a3b99926864ac91954db4fe rdf:reifies <<( doc:FactsStatisticalThresholding cco:is_about doc:FactsSensorMonitoring )>> ;
+	prov:wasDerivedFrom doc:0a4b60234f9e .
+doc:FactsFuzzyLogic rdfs:label "fuzzy logic"@en .
+_:d5ee7a93cd661e9d4707e47e94ce17a2 rdf:reifies <<( doc:FactsFuzzyLogic rdfs:label "fuzzy logic"@en )>> ;
+	prov:wasDerivedFrom doc:0a4b60234f9e .
+doc:Factssedma schema1:name "SEDMA"@en .
+_:d7141d54d2aed183bd3e0cd0ef3e4eca rdf:reifies <<( doc:Factssedma schema1:name "SEDMA"@en )>> ;
+	prov:wasDerivedFrom doc:0a4b60234f9e .
+doc:FactsSelfComparisonMatrixDiDii rdfs:label "self-comparison matrix (DI/DII)"@en .
+_:ad3e600a81b84938d5c2e8fc9caa66de rdf:reifies <<( doc:FactsSelfComparisonMatrixDiDii rdfs:label "self-comparison matrix (DI/DII)"@en )>> ;
+	prov:wasDerivedFrom doc:0a4b60234f9e .
+doc:FactsSelfEvaluationConcept cco:is_about doc:FactsEquipment .
+_:a22c9e8b6907a90a136e26e4fcfc7da0 rdf:reifies <<( doc:FactsSelfEvaluationConcept cco:is_about doc:FactsEquipment )>> ;
+	prov:wasDerivedFrom doc:0a4b60234f9e .
+doc:FactsImbalancedEegDatasets a cco:DescriptiveInformationContentEntity .
+_:c00be3ad4d2c75eaa095a720be29961b rdf:reifies <<( doc:FactsImbalancedEegDatasets rdf:type cco:DescriptiveInformationContentEntity )>> ;
+	prov:wasDerivedFrom doc:0a4b60234f9e .
+doc:FactsCostSensitiveMlClassifier rdfs:label "cost-sensitive ML classifier"@en .
+_:cecaaa16e7e6b77b87836e924042a885 rdf:reifies <<( doc:FactsCostSensitiveMlClassifier rdfs:label "cost-sensitive ML classifier"@en )>> ;
+	prov:wasDerivedFrom doc:0a4b60234f9e .
+doc:FactsFuzzyLogic rdfs:label "entropy-based degradation modeling"@en .
+_:a39402c8fe1ed97bc90404f9800ace50 rdf:reifies <<( doc:FactsFuzzyLogic rdfs:label "entropy-based degradation modeling"@en )>> ;
+	prov:wasDerivedFrom doc:0a4b60234f9e .
+doc:FactsOwnHistoricalBehavior schema1:name "own historical data"@en .
+_:c768b48d53042d2c06579805e11194f2 rdf:reifies <<( doc:FactsOwnHistoricalBehavior schema1:name "own historical data"@en )>> ;
+	prov:wasDerivedFrom doc:0a4b60234f9e .
+doc:FactsBayesianInferenceModel rdfs:label "Bayesian inference model"@en .
+_:e63fef1fba2b319b8dc84bce496caf15 rdf:reifies <<( doc:FactsBayesianInferenceModel rdfs:label "Bayesian inference model"@en )>> ;
+	prov:wasDerivedFrom doc:0a4b60234f9e .
+_:dd92ba5ea9099822514b69ee0e47b0be prov:wasDerivedFrom doc:0a4b60234f9e .
+doc:FactsComputationalEfficiency cd:has_text_value "linear computational complexity" .
+_:ee4527ad8dbd838d6dd5217a830ecafc rdf:reifies <<( doc:FactsComputationalEfficiency cd:has_text_value "linear computational complexity" )>> ;
+	prov:wasDerivedFrom doc:0a4b60234f9e .
+doc:FactsStatisticalThresholding rdfs:label "statistical thresholding"@en .
+_:c013bf9f101f435599134ce6495a5265 rdf:reifies <<( doc:FactsStatisticalThresholding rdfs:label "statistical thresholding"@en )>> ;
+	prov:wasDerivedFrom doc:0a4b60234f9e .
+doc:FactsClusteringBasedOutlierDetection rdfs:label "clustering-based outlier detection"@en .
+_:d0f774d26d62f7655ee01c0d7d945760 rdf:reifies <<( doc:FactsClusteringBasedOutlierDetection rdfs:label "clustering-based outlier detection"@en )>> ;
+	prov:wasDerivedFrom doc:0a4b60234f9e .
+doc:FactsECoGAnomalyDetection rdfs:label "ECoG anomaly detection"@en .
+_:a220437442e5fff2fc9019e6db697544 rdf:reifies <<( doc:FactsECoGAnomalyDetection rdfs:label "ECoG anomaly detection"@en )>> ;
+	prov:wasDerivedFrom doc:0a4b60234f9e .
+doc:FactsEquipment rdfs:label "equipment"@en .
+_:a3661c5e40c48ceff89243455360a750 rdf:reifies <<( doc:FactsEquipment rdfs:label "equipment"@en )>> ;
+	prov:wasDerivedFrom doc:0a4b60234f9e .
+doc:FactsDecisionForestEnsemble rdfs:label "decision-forest ensemble"@en .
+_:c2822aac41011c399b4b110d15f2199e rdf:reifies <<( doc:FactsDecisionForestEnsemble rdfs:label "decision-forest ensemble"@en )>> ;
+	prov:wasDerivedFrom doc:0a4b60234f9e .
+doc:FactsFuzzyLogic schema1:name "fuzzy logic"@en .
+_:e8ea383b318bc3ed782959ba54bf427a rdf:reifies <<( doc:FactsFuzzyLogic schema1:name "fuzzy logic"@en )>> ;
+	prov:wasDerivedFrom doc:0a4b60234f9e .
+doc:FactsECoGAnomalyDetection a cco:DescriptiveInformationContentEntity .
+_:ac27b996aa8622d4c5d56c5fb56c402b rdf:reifies <<( doc:FactsECoGAnomalyDetection rdf:type cco:DescriptiveInformationContentEntity )>> ;
+	prov:wasDerivedFrom doc:0a4b60234f9e .
+doc:Factssedma a cco:Algorithm .
+_:c4d5e62b1abb721276d4d7991fe8e235 rdf:reifies <<( doc:Factssedma rdf:type cco:Algorithm )>> ;
+	prov:wasDerivedFrom doc:0a4b60234f9e .
+doc:FactsCostSensitiveMlClassifier schema1:name "cost-sensitive ML classifier"@en .
+_:fcdd96dc18927048b226fed2f9943fa6 rdf:reifies <<( doc:FactsCostSensitiveMlClassifier schema1:name "cost-sensitive ML classifier"@en )>> ;
+	prov:wasDerivedFrom doc:0a4b60234f9e .
+doc:FactsFuzzyLogic schema1:name "entropy-based degradation modeling"@en .
+_:b18a7aa964701ed99af7fb5497e49d2c rdf:reifies <<( doc:FactsFuzzyLogic schema1:name "entropy-based degradation modeling"@en )>> ;
+	prov:wasDerivedFrom doc:0a4b60234f9e .
+doc:FactsSedmaAdvantages rdfs:label "self-adaptive, interpretable"@en .
+_:c43927b06f3089ce94038e45f6a2fae9 rdf:reifies <<( doc:FactsSedmaAdvantages rdfs:label "self-adaptive, interpretable"@en )>> ;
+	prov:wasDerivedFrom doc:0a4b60234f9e .
+doc:FactsClusteringBasedOutlierDetection schema1:name "clustering-based outlier detection"@en .
+_:cca7aa1344eafdf93f7e9955ce0c4117 rdf:reifies <<( doc:FactsClusteringBasedOutlierDetection schema1:name "clustering-based outlier detection"@en )>> ;
+	prov:wasDerivedFrom doc:0a4b60234f9e .
+doc:FactsReliabilityEstimation rdfs:label "reliability estimation"@en .
+_:b94a242dc34bb277bb7ef4dbcc90ac57 rdf:reifies <<( doc:FactsReliabilityEstimation rdfs:label "reliability estimation"@en )>> ;
+	prov:wasDerivedFrom doc:0a4b60234f9e .
+doc:FactsDecisionForestEnsemble cco:is_about doc:FactsECoGAnomalyDetection .
+_:fbbb1837ba9c9d23509e5b252a6f8986 rdf:reifies <<( doc:FactsDecisionForestEnsemble cco:is_about doc:FactsECoGAnomalyDetection )>> ;
+	prov:wasDerivedFrom doc:0a4b60234f9e .
+doc:FactsFuzzyExpertSystem rdfs:label "fuzzy expert system"@en .
+_:dc1fca106bdffc86637de2794c62be8b rdf:reifies <<( doc:FactsFuzzyExpertSystem rdfs:label "fuzzy expert system"@en )>> ;
+	prov:wasDerivedFrom doc:0a4b60234f9e .
+doc:FactsDecisionForestEnsemble schema1:name "decision-forest ensemble"@en .
+_:d100f44f19f0e51e8e3914b60ca4c3ef rdf:reifies <<( doc:FactsDecisionForestEnsemble schema1:name "decision-forest ensemble"@en )>> ;
+	prov:wasDerivedFrom doc:0a4b60234f9e .
+doc:FactsSensorMonitoring schema1:name "Transformer diagnostics"@en .
+_:c33bc032525e99cc80261b2d8f2b76ee rdf:reifies <<( doc:FactsSensorMonitoring schema1:name "Transformer diagnostics"@en )>> ;
+	prov:wasDerivedFrom doc:0a4b60234f9e .
+doc:FactsFaultDiagnosis rdfs:label "fault diagnosis"@en .
+_:dd861da933654c5cac235e72f62b6608 rdf:reifies <<( doc:FactsFaultDiagnosis rdfs:label "fault diagnosis"@en )>> ;
+	prov:wasDerivedFrom doc:0a4b60234f9e .
+doc:FactsBayesianInferenceModel a cco:Algorithm .
+_:f409337f1ca65eca53f104f8262f49de rdf:reifies <<( doc:FactsBayesianInferenceModel rdf:type cco:Algorithm )>> ;
+	prov:wasDerivedFrom doc:0a4b60234f9e .
+doc:FactsBayesianInferenceModel cco:is_about doc:FactsReliabilityEstimation .
+_:a675fb524b4bac8466cfe4301805ad7 rdf:reifies <<( doc:FactsBayesianInferenceModel cco:is_about doc:FactsReliabilityEstimation )>> ;
+	prov:wasDerivedFrom doc:0a4b60234f9e .
+doc:FactsReliabilityEstimation schema1:name "reliability estimation"@en .
+_:fb702f1b6a9a733841da74d0ab07298c rdf:reifies <<( doc:FactsReliabilityEstimation schema1:name "reliability estimation"@en )>> ;
+	prov:wasDerivedFrom doc:0a4b60234f9e .
+doc:FactsComputationalEfficiency a cco:DescriptiveInformationContentEntity .
+_:f0acb8e731cd4dbe41d6a52f097a31e4 rdf:reifies <<( doc:FactsComputationalEfficiency rdf:type cco:DescriptiveInformationContentEntity )>> ;
+	prov:wasDerivedFrom doc:0a4b60234f9e .
+doc:FactsConditionMonitoringDatabases rdfs:label "large-scale condition monitoring databases"@en .
+_:e1afce708d00658e99fd4085b43f2e69 rdf:reifies <<( doc:FactsConditionMonitoringDatabases rdfs:label "large-scale condition monitoring databases"@en )>> ;
+	prov:wasDerivedFrom doc:0a4b60234f9e .
+doc:FactsStatisticalThresholding a cco:Algorithm .
+_:cfcddb4c4acef07295a9b222b92ac29 rdf:reifies <<( doc:FactsStatisticalThresholding rdf:type cco:Algorithm )>> ;
+	prov:wasDerivedFrom doc:0a4b60234f9e .
+doc:FactsPairwiseComparisonOverTime rdfs:label "pairwise comparison"@en .
+_:fd77a7edf13f29ca02f42154c422c94e rdf:reifies <<( doc:FactsPairwiseComparisonOverTime rdfs:label "pairwise comparison"@en )>> ;
+	prov:wasDerivedFrom doc:0a4b60234f9e .
+doc:FactsFuzzyLogic rdfs:label "fuzzy-entropy reasoning"@en .
+_:f2ef083e426127d5cab2c7b7a5e9f128 rdf:reifies <<( doc:FactsFuzzyLogic rdfs:label "fuzzy-entropy reasoning"@en )>> ;
+	prov:wasDerivedFrom doc:0a4b60234f9e .
+doc:FactsSelfEvaluationConcept rdfs:label "self-referential assessment"@en .
+_:e34dc02d8baf1bfea6df92b017b6e0b6 rdf:reifies <<( doc:FactsSelfEvaluationConcept rdfs:label "self-referential assessment"@en )>> ;
+	prov:wasDerivedFrom doc:0a4b60234f9e .
+doc:FactsSedmaAdvantages cco:is_about doc:Factssedma .
+_:c2030403a14f868079c02a40cd6b22b1 rdf:reifies <<( doc:FactsSedmaAdvantages cco:is_about doc:Factssedma )>> ;
+	prov:wasDerivedFrom doc:0a4b60234f9e .
+doc:FactsFaultDiagnosis schema1:name "fault diagnosis"@en .
+_:b7ecc8b3dd630210088698ee7088c942 rdf:reifies <<( doc:FactsFaultDiagnosis schema1:name "fault diagnosis"@en )>> ;
+	prov:wasDerivedFrom doc:0a4b60234f9e .
+_:f9c8ff43e2311eaada787088a2871d0e prov:wasDerivedFrom doc:0a4b60234f9e .
+doc:FactsCostSensitiveMlClassifier a cco:Algorithm .
+_:c592e83de12003e9af64934d739f5426 rdf:reifies <<( doc:FactsCostSensitiveMlClassifier rdf:type cco:Algorithm )>> ;
+	prov:wasDerivedFrom doc:0a4b60234f9e .
+doc:FactsConditionMonitoringDatabases schema1:name "large-scale condition monitoring databases"@en .
+_:c77675b4f08bc6e127665af7b10361e5 rdf:reifies <<( doc:FactsConditionMonitoringDatabases schema1:name "large-scale condition monitoring databases"@en )>> ;
+	prov:wasDerivedFrom doc:0a4b60234f9e .
+doc:Factssedma cco:hasPart doc:FactsFuzzyLogic .
+_:fa8836285f4c56a63df44aec9eb3a8e8 rdf:reifies <<( doc:Factssedma cco:hasPart doc:FactsFuzzyLogic )>> ;
+	prov:wasDerivedFrom doc:0a4b60234f9e .
+doc:FactsFuzzyExpertSystem a cco:Algorithm .
+_:aa899ba708aada30d22948e29342cc82 rdf:reifies <<( doc:FactsFuzzyExpertSystem rdf:type cco:Algorithm )>> ;
+	prov:wasDerivedFrom doc:0a4b60234f9e .
+doc:FactsOwnHistoricalBehavior rdfs:label "own historical data"@en .
+_:ea4f360f08bc14ed76c24c5cc147995a rdf:reifies <<( doc:FactsOwnHistoricalBehavior rdfs:label "own historical data"@en )>> ;
+	prov:wasDerivedFrom doc:0a4b60234f9e .
+doc:FactsPairwiseComparisonOverTime schema1:name "pairwise comparison"@en .
+_:c4b289503bc530f479d23a55583d0b9f rdf:reifies <<( doc:FactsPairwiseComparisonOverTime schema1:name "pairwise comparison"@en )>> ;
+	prov:wasDerivedFrom doc:0a4b60234f9e .
+doc:FactsOwnHistoricalBehavior a cco:DescriptiveInformationContentEntity .
+_:e244b6290ca3ec9a4e9e99a7570c256c rdf:reifies <<( doc:FactsOwnHistoricalBehavior rdf:type cco:DescriptiveInformationContentEntity )>> ;
+	prov:wasDerivedFrom doc:0a4b60234f9e .
+doc:FactsSelfEvaluationConcept schema1:name "Inherent Base Evaluation"@en .
+_:e11cec04b1ff1dc340bb66b15ca450bb rdf:reifies <<( doc:FactsSelfEvaluationConcept schema1:name "Inherent Base Evaluation"@en )>> ;
+	prov:wasDerivedFrom doc:0a4b60234f9e .
+doc:FactsSelfEvaluationConcept schema1:name "self-evaluation concept"@en .
+_:a05e2b1cf5afd30c4c7702f9b2dd7489 rdf:reifies <<( doc:FactsSelfEvaluationConcept schema1:name "self-evaluation concept"@en )>> ;
+	prov:wasDerivedFrom doc:0a4b60234f9e .
+doc:FactsFuzzyLogic schema1:name "fuzzy-entropy reasoning"@en .
+_:fb20e428c07f37645eb6344fa8de27ce rdf:reifies <<( doc:FactsFuzzyLogic schema1:name "fuzzy-entropy reasoning"@en )>> ;
+	prov:wasDerivedFrom doc:0a4b60234f9e .
+doc:FactsSelfEvaluationConcept schema1:name "self-referential assessment"@en .
+_:b3e52904e3a2f02a8fbe2a6d737b2f2 rdf:reifies <<( doc:FactsSelfEvaluationConcept schema1:name "self-referential assessment"@en )>> ;
+	prov:wasDerivedFrom doc:0a4b60234f9e .
+doc:FactsFuzzyLogic schema1:name "fuzzy-entropy self-evaluation"@en .
+_:a7116c82ce1cd7b96fccc3f52eff90bf rdf:reifies <<( doc:FactsFuzzyLogic schema1:name "fuzzy-entropy self-evaluation"@en )>> ;
+	prov:wasDerivedFrom doc:0a4b60234f9e .
+doc:FactsEquipment cco:describes doc:FactsOwnHistoricalBehavior .
+_:abe85d65aba995eb714253b2518bfa21 rdf:reifies <<( doc:FactsEquipment cco:describes doc:FactsOwnHistoricalBehavior )>> ;
+	prov:wasDerivedFrom doc:0a4b60234f9e .
+doc:FactsSensorMonitoring schema1:name "sensor monitoring"@en .
+_:f3bece07a29d23747af683612e64c9f1 rdf:reifies <<( doc:FactsSensorMonitoring schema1:name "sensor monitoring"@en )>> ;
+	prov:wasDerivedFrom doc:0a4b60234f9e .
+doc:FactsSelfComparisonMatrixDiDii schema1:name "self-comparison matrix (DI/DII)"@en .
+_:f3d1da34cc89b49e7fafc12190433294 rdf:reifies <<( doc:FactsSelfComparisonMatrixDiDii schema1:name "self-comparison matrix (DI/DII)"@en )>> ;
+	prov:wasDerivedFrom doc:0a4b60234f9e .
+doc:FactsFaultDiagnosis a None:Fault_detection .
+_:f456755b6eefd4b4152d1355c2dfaa17 rdf:reifies <<( doc:FactsFaultDiagnosis rdf:type None:Fault_detection )>> ;
+	prov:wasDerivedFrom doc:0a4b60234f9e .
+_:e8e0af55bed39928986c68eb90fe1159 prov:wasDerivedFrom doc:0a4b60234f9e .
+doc:FactsBayesianInferenceModel schema1:name "Bayesian inference model"@en .
+_:abe00832d990ba4c644bad0f57dac561 rdf:reifies <<( doc:FactsBayesianInferenceModel schema1:name "Bayesian inference model"@en )>> ;
+	prov:wasDerivedFrom doc:0a4b60234f9e .
+doc:FactsECoGAnomalyDetection schema1:name "ECoG anomaly detection"@en .
+_:b89e7949b6b94954472d9fea1e5a08b5 rdf:reifies <<( doc:FactsECoGAnomalyDetection schema1:name "ECoG anomaly detection"@en )>> ;
+	prov:wasDerivedFrom doc:0a4b60234f9e .
+doc:FactsEquipment schema1:name "equipment"@en .
+_:e6fb53b99761a79a108847039ccd4f52 rdf:reifies <<( doc:FactsEquipment schema1:name "equipment"@en )>> ;
+	prov:wasDerivedFrom doc:0a4b60234f9e .
+doc:FactsImbalancedEegDatasets rdfs:label "imbalanced EEG datasets"@en .
+_:f11c376fb57f171f074805163f3686e6 rdf:reifies <<( doc:FactsImbalancedEegDatasets rdfs:label "imbalanced EEG datasets"@en )>> ;
+	prov:wasDerivedFrom doc:0a4b60234f9e .
+doc:FactsClusteringBasedOutlierDetection cco:is_about doc:FactsSensorMonitoring .
+_:d25827b4d9a44104ee937a30be6738be rdf:reifies <<( doc:FactsClusteringBasedOutlierDetection cco:is_about doc:FactsSensorMonitoring )>> ;
+	prov:wasDerivedFrom doc:0a4b60234f9e .

@@ -1,0 +1,413 @@
+@prefix None: <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#> .
+@prefix cco: <http://www.ontologyrepository.com/CommonCoreOntologies/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doc: <https://growgraph.dev/doc/dfd5f29532e4/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix obo: <http://purl.obolibrary.org/obo/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix schema: <https://schema.org/> .
+doc:0d782b91d815 a prov:Entity , schema:text ;
+	prov:generatedAtTime "2026-07-25T05:19:00.512365Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+	schema:position 0 ;
+	schema:identifier "0d782b91d815" .
+doc:Predictive_maintenance_case rdfs:label "AAKNN-DWGAT"@en .
+_:ec5e90ff7fce5020ee96818baf9de661 rdf:reifies <<( doc:Predictive_maintenance_case rdfs:label "AAKNN-DWGAT"@en )>> ;
+	prov:wasDerivedFrom doc:0d782b91d815 .
+doc:FactsliJiang schema:affiliation doc:FactswuhanUniversityOfTechnology_3 .
+_:f60cccba6b2df2c72350da86d72ab1ef rdf:reifies <<( doc:FactsliJiang schema:affiliation doc:FactswuhanUniversityOfTechnology_3 )>> ;
+	prov:wasDerivedFrom doc:0d782b91d815 .
+doc:Factsarticle_101 a schema:ScholarlyArticle .
+_:bf10a675358cf3a44717e396a4891920 rdf:reifies <<( doc:Factsarticle_101 rdf:type schema:ScholarlyArticle )>> ;
+	prov:wasDerivedFrom doc:0d782b91d815 .
+doc:FactsfrequencySimilarityMatrix rdfs:label "frequency similarity matrix"@en .
+_:ee60b17625b31c0aa4ec77d372d102e2 rdf:reifies <<( doc:FactsfrequencySimilarityMatrix rdfs:label "frequency similarity matrix"@en )>> ;
+	prov:wasDerivedFrom doc:0d782b91d815 .
+doc:Factsarticle_101 schema:author doc:FactsliJiang .
+_:db55d77feb699eddb240406e4d988640 rdf:reifies <<( doc:Factsarticle_101 schema:author doc:FactsliJiang )>> ;
+	prov:wasDerivedFrom doc:0d782b91d815 .
+doc:Predictive_maintenance_case None:has_predictive_maintenance_function doc:FactsfaultDiagnosis_14 .
+_:d179f41f7c269940f4025949eab5fe98 rdf:reifies <<( doc:Predictive_maintenance_case None:has_predictive_maintenance_function doc:FactsfaultDiagnosis_14 )>> ;
+	prov:wasDerivedFrom doc:0d782b91d815 .
+doc:Factsengine_6 rdfs:label "gearbox"@en .
+_:c31b379428842b7c7ac5c34a28b04bf9 rdf:reifies <<( doc:Factsengine_6 rdfs:label "gearbox"@en )>> ;
+	prov:wasDerivedFrom doc:0d782b91d815 .
+doc:Factsengine_6 a None:Maintainable_item .
+_:c4bec048a41813652b191d4f54b1fee rdf:reifies <<( doc:Factsengine_6 rdf:type None:Maintainable_item )>> ;
+	prov:wasDerivedFrom doc:0d782b91d815 .
+doc:FactsfaultDiagnosis_14 a None:Fault_identification .
+_:d536b145a30ae1ffeebf074f47547de7 rdf:reifies <<( doc:FactsfaultDiagnosis_14 rdf:type None:Fault_identification )>> ;
+	prov:wasDerivedFrom doc:0d782b91d815 .
+doc:FactsliJiang schema:familyName "You" .
+_:c07ab5b6c4118e688a672a29e53dbdd0 rdf:reifies <<( doc:FactsliJiang schema:familyName "You" )>> ;
+	prov:wasDerivedFrom doc:0d782b91d815 .
+doc:Predictive_maintenance_case a cco:Algorithm .
+_:cb027a0ac3e9a27108f72fb2c3f677b7 rdf:reifies <<( doc:Predictive_maintenance_case rdf:type cco:Algorithm )>> ;
+	prov:wasDerivedFrom doc:0d782b91d815 .
+doc:Factsarticle_101 a None:Predictive_Maintenance_Article .
+_:b5be8ccaffebe19ee36c450f1a7c76cd rdf:reifies <<( doc:Factsarticle_101 rdf:type None:Predictive_Maintenance_Article )>> ;
+	prov:wasDerivedFrom doc:0d782b91d815 .
+doc:FactsfrequencyDomainFeatures_4 a None:Data_variable .
+_:becb8c8fe66b04827e1a1af776a833e6 rdf:reifies <<( doc:FactsfrequencyDomainFeatures_4 rdf:type None:Data_variable )>> ;
+	prov:wasDerivedFrom doc:0d782b91d815 .
+doc:FactsliJiang schema:familyName "Li" .
+_:a207e39dbdb6b6e6b05a7f355f59d477 rdf:reifies <<( doc:FactsliJiang schema:familyName "Li" )>> ;
+	prov:wasDerivedFrom doc:0d782b91d815 .
+doc:Predictive_maintenance_case a None:Predictive_maintenance_system_module .
+_:ea199c4584f64635a89a751838fb71c2 rdf:reifies <<( doc:Predictive_maintenance_case rdf:type None:Predictive_maintenance_system_module )>> ;
+	prov:wasDerivedFrom doc:0d782b91d815 .
+doc:Predictive_maintenance_case a None:Predictive_maintenance_model .
+_:b4fab0c883ac04c2674bf45ac3de1f44 rdf:reifies <<( doc:Predictive_maintenance_case rdf:type None:Predictive_maintenance_model )>> ;
+	prov:wasDerivedFrom doc:0d782b91d815 .
+doc:Factstitle1_26 None:has_text_value "Adaptive adjustment graph representation learning method for rotating machinery fault diagnosis under noisy signals" .
+_:cb5f76d25e496327bf8194ccceeefe00 rdf:reifies <<( doc:Factstitle1_26 None:has_text_value "Adaptive adjustment graph representation learning method for rotating machinery fault diagnosis under noisy signals" )>> ;
+	prov:wasDerivedFrom doc:0d782b91d815 .
+doc:FactsaxialFlowPump rdfs:label "axial flow pump"@en .
+_:a97bef574cc003a6329d6624d8b7a3e2 rdf:reifies <<( doc:FactsaxialFlowPump rdfs:label "axial flow pump"@en )>> ;
+	prov:wasDerivedFrom doc:0d782b91d815 .
+doc:FactsliJiang schema:familyName "Zhang" .
+_:dbec65efe64a9bc5a1ae1a8a9d25b4ac rdf:reifies <<( doc:FactsliJiang schema:familyName "Zhang" )>> ;
+	prov:wasDerivedFrom doc:0d782b91d815 .
+doc:Factsarticle_101 schema:about doc:FactsfaultDiagnosis_14 .
+_:ff22413f2f89723506f14943bf954fe8 rdf:reifies <<( doc:Factsarticle_101 schema:about doc:FactsfaultDiagnosis_14 )>> ;
+	prov:wasDerivedFrom doc:0d782b91d815 .
+doc:Predictive_maintenance_case rdfs:label "AAKNN-DWGAT predictive maintenance module"@en .
+_:deef822c1773193b52be34679cc47a4c rdf:reifies <<( doc:Predictive_maintenance_case rdfs:label "AAKNN-DWGAT predictive maintenance module"@en )>> ;
+	prov:wasDerivedFrom doc:0d782b91d815 .
+doc:FactsrotatingMachinery_16 a None:Maintainable_item .
+_:d64633fa84dd9a7b6b457756e6102122 rdf:reifies <<( doc:FactsrotatingMachinery_16 rdf:type None:Maintainable_item )>> ;
+	prov:wasDerivedFrom doc:0d782b91d815 .
+doc:FactsfaultDiagnosis_14 rdfs:label "fault identification"@en .
+_:fe2cd3a0f2e7dbf49e1a5a67b0b73b49 rdf:reifies <<( doc:FactsfaultDiagnosis_14 rdfs:label "fault identification"@en )>> ;
+	prov:wasDerivedFrom doc:0d782b91d815 .
+doc:Factsarticle_101 None:has_title doc:Factstitle1_26 .
+_:a12d6625a25b17e252220b7e39c062a rdf:reifies <<( doc:Factsarticle_101 None:has_title doc:Factstitle1_26 )>> ;
+	prov:wasDerivedFrom doc:0d782b91d815 .
+doc:FactsliJiang a schema:Person .
+_:b3551ea4cca16cf419ce0b9f974f4635 rdf:reifies <<( doc:FactsliJiang rdf:type schema:Person )>> ;
+	prov:wasDerivedFrom doc:0d782b91d815 .
+doc:FactsclassificationFunction_44 a None:Classification .
+_:dc3ef04d436269c30f17dd40fb488b2d rdf:reifies <<( doc:FactsclassificationFunction_44 rdf:type None:Classification )>> ;
+	prov:wasDerivedFrom doc:0d782b91d815 .
+doc:Factsyear2025_5 a None:Publication_year .
+_:e612372c2a6d538b1c2775337f78c65b rdf:reifies <<( doc:Factsyear2025_5 rdf:type None:Publication_year )>> ;
+	prov:wasDerivedFrom doc:0d782b91d815 .
+doc:Predictive_maintenance_case cco:is_about doc:FactsrotatingMachinery_16 .
+_:f25f7b52d8464c785dfc108a733365b0 rdf:reifies <<( doc:Predictive_maintenance_case cco:is_about doc:FactsrotatingMachinery_16 )>> ;
+	prov:wasDerivedFrom doc:0d782b91d815 .
+doc:Factstitle1_26 a None:Article_title .
+_:a4b159ec55c8b62108684350e933d3f4 rdf:reifies <<( doc:Factstitle1_26 rdf:type None:Article_title )>> ;
+	prov:wasDerivedFrom doc:0d782b91d815 .
+doc:FactsliJiang schema:givenName "Yibing" .
+_:fdaf4b642ce18af5825517b1395fcc97 rdf:reifies <<( doc:FactsliJiang schema:givenName "Yibing" )>> ;
+	prov:wasDerivedFrom doc:0d782b91d815 .
+doc:FactswuhanUniversityOfTechnology_3 schema:name "The Hong Kong University of Science and Technology" .
+_:e428cbb84d7462e449d1ceb2bdaad2e6 rdf:reifies <<( doc:FactswuhanUniversityOfTechnology_3 schema:name "The Hong Kong University of Science and Technology" )>> ;
+	prov:wasDerivedFrom doc:0d782b91d815 .
+doc:FactsfaultDiagnosis_14 a None:Fault_feature_extraction .
+_:a6701f923fcf05200303c518b6f7a82 rdf:reifies <<( doc:FactsfaultDiagnosis_14 rdf:type None:Fault_feature_extraction )>> ;
+	prov:wasDerivedFrom doc:0d782b91d815 .
+doc:FactsfaultDiagnosis_14 rdfs:label "fault detection"@en .
+_:bbbc0ce3e34058cadda1778e983b4752 rdf:reifies <<( doc:FactsfaultDiagnosis_14 rdfs:label "fault detection"@en )>> ;
+	prov:wasDerivedFrom doc:0d782b91d815 .
+doc:FactsfrequencyDomainFeatures_4 rdfs:label "frequency-domain features"@en .
+_:cab00847121234c03319f2695988cdae rdf:reifies <<( doc:FactsfrequencyDomainFeatures_4 rdfs:label "frequency-domain features"@en )>> ;
+	prov:wasDerivedFrom doc:0d782b91d815 .
+doc:FactswuhanUniversityOfTechnology_3 a schema:Organization .
+_:cdc5896b70fef4ea4e57ed8ad60f8884 rdf:reifies <<( doc:FactswuhanUniversityOfTechnology_3 rdf:type schema:Organization )>> ;
+	prov:wasDerivedFrom doc:0d782b91d815 .
+doc:FactsliJiang schema:givenName "Peijie" .
+_:f72c758b3b696356a80ff89e518bc779 rdf:reifies <<( doc:FactsliJiang schema:givenName "Peijie" )>> ;
+	prov:wasDerivedFrom doc:0d782b91d815 .
+doc:FactsliJiang schema:email "mexzyl@ust.hk" .
+_:dfef6632a41a2ed7dd9fd4cc6fe0d92a rdf:reifies <<( doc:FactsliJiang schema:email "mexzyl@ust.hk" )>> ;
+	prov:wasDerivedFrom doc:0d782b91d815 .
+doc:FactsclassificationFunction_44 rdfs:label "softmax classification"@en .
+_:c949651e8a2051422a30e809c3503309 rdf:reifies <<( doc:FactsclassificationFunction_44 rdfs:label "softmax classification"@en )>> ;
+	prov:wasDerivedFrom doc:0d782b91d815 .
+doc:FactsliJiang schema:familyName "Jiang" .
+_:f1394e1e2fbe1a217a19da2744380cf0 rdf:reifies <<( doc:FactsliJiang schema:familyName "Jiang" )>> ;
+	prov:wasDerivedFrom doc:0d782b91d815 .
+doc:FactsliJiang schema:givenName "Li" .
+_:af15baa2d589f6ab7d17a67eac1d39e0 rdf:reifies <<( doc:FactsliJiang schema:givenName "Li" )>> ;
+	prov:wasDerivedFrom doc:0d782b91d815 .
+doc:FactsfaultDiagnosis_14 a None:Fault_detection .
+_:e5c3e33f8b4c6b8788b53a2175e0557e rdf:reifies <<( doc:FactsfaultDiagnosis_14 rdf:type None:Fault_detection )>> ;
+	prov:wasDerivedFrom doc:0d782b91d815 .
+doc:Factsarticle_101 schema:about doc:FactsrotatingMachinery_16 .
+_:dbc4e249ac106fe9eeb19d4b3d8c803b rdf:reifies <<( doc:Factsarticle_101 schema:about doc:FactsrotatingMachinery_16 )>> ;
+	prov:wasDerivedFrom doc:0d782b91d815 .
+doc:Predictive_maintenance_case None:has_predictive_maintenance_function doc:FactsclassificationFunction_44 .
+_:e82a9a8658ca56927a89952475f6dec7 rdf:reifies <<( doc:Predictive_maintenance_case None:has_predictive_maintenance_function doc:FactsclassificationFunction_44 )>> ;
+	prov:wasDerivedFrom doc:0d782b91d815 .
+doc:Factsyear2025_5 None:has_interger_value 2025 .
+_:ae23802bd39df4999c9b54387ba1402c rdf:reifies <<( doc:Factsyear2025_5 None:has_interger_value 2025 )>> ;
+	prov:wasDerivedFrom doc:0d782b91d815 .
+doc:Factsarticle_101 None:has_publication_year doc:Factsyear2025_5 .
+_:dee6e53632d3f55634cf9fe1f89ffee6 rdf:reifies <<( doc:Factsarticle_101 None:has_publication_year doc:Factsyear2025_5 )>> ;
+	prov:wasDerivedFrom doc:0d782b91d815 .
+doc:Factsarticle_101 schema:about doc:Predictive_maintenance_case .
+_:a419c292cd3f80ed3814c2aed92b9726 rdf:reifies <<( doc:Factsarticle_101 schema:about doc:Predictive_maintenance_case )>> ;
+	prov:wasDerivedFrom doc:0d782b91d815 .
+doc:FactsaxialFlowPump a None:Maintainable_item .
+_:d447c44d64eaa438c153b4dda8c1ffe3 rdf:reifies <<( doc:FactsaxialFlowPump rdf:type None:Maintainable_item )>> ;
+	prov:wasDerivedFrom doc:0d782b91d815 .
+doc:FactsliJiang schema:givenName "Xin" .
+_:f1bcb95376ec978deab4969f26a2ff6e rdf:reifies <<( doc:FactsliJiang schema:givenName "Xin" )>> ;
+	prov:wasDerivedFrom doc:0d782b91d815 .
+doc:FactsrotatingMachinery_16 rdfs:label "rotating machinery"@en .
+_:fa1781fa38bd08ea5609734bed4dec01 rdf:reifies <<( doc:FactsrotatingMachinery_16 rdfs:label "rotating machinery"@en )>> ;
+	prov:wasDerivedFrom doc:0d782b91d815 .
+doc:Factsengine_6 rdfs:label "engine"@en .
+_:df6ec2d229ebf55750b4d095f237bde6 rdf:reifies <<( doc:Factsengine_6 rdfs:label "engine"@en )>> ;
+	prov:wasDerivedFrom doc:0d782b91d815 .
+doc:FactsrotatingMachineryFaultDiagnosisCase a None:Predictive_maintenance_case .
+_:f9ab2299bb916855be9501a142b00f1 rdf:reifies <<( doc:FactsrotatingMachineryFaultDiagnosisCase rdf:type None:Predictive_maintenance_case )>> ;
+	prov:wasDerivedFrom doc:0d782b91d815 .
+doc:FactstimeDomainSignals rdfs:label "time-domain signals"@en .
+_:a3abb5cf5e4935d2c6f9d96c75815728 rdf:reifies <<( doc:FactstimeDomainSignals rdfs:label "time-domain signals"@en )>> ;
+	prov:wasDerivedFrom doc:0d782b91d815 .
+doc:FactsfaultFeatures_1 rdfs:label "fault features"@en .
+_:c0843d60224091a3179f5118c7266d6f rdf:reifies <<( doc:FactsfaultFeatures_1 rdfs:label "fault features"@en )>> ;
+	prov:wasDerivedFrom doc:0d782b91d815 .
+doc:FactsrotatingMachineryFaultDiagnosisCase cco:designates doc:Predictive_maintenance_case .
+_:a363b9d56fa1b1131e71dff269f24330 rdf:reifies <<( doc:FactsrotatingMachineryFaultDiagnosisCase cco:designates doc:Predictive_maintenance_case )>> ;
+	prov:wasDerivedFrom doc:0d782b91d815 .
+doc:FactsrotatingMachinery_16 a schema:Thing .
+_:eb8850fec3217e833985840276a19273 rdf:reifies <<( doc:FactsrotatingMachinery_16 rdf:type schema:Thing )>> ;
+	prov:wasDerivedFrom doc:0d782b91d815 .
+doc:FactstimeDomainSignals a None:Data_variable .
+_:f1ca4cefd0eda8d02b632afcec31e4d5 rdf:reifies <<( doc:FactstimeDomainSignals rdf:type None:Data_variable )>> ;
+	prov:wasDerivedFrom doc:0d782b91d815 .
+doc:FactsfaultDiagnosis_14 rdfs:label "fault diagnosis"@en .
+_:cf2a5bbb6e2a4d48090f6d24362d87fa rdf:reifies <<( doc:FactsfaultDiagnosis_14 rdfs:label "fault diagnosis"@en )>> ;
+	prov:wasDerivedFrom doc:0d782b91d815 .
+doc:FactsliJiang schema:givenName "Lei" .
+_:f194b46839a7a6e1dfcab426638fbeb4 rdf:reifies <<( doc:FactsliJiang schema:givenName "Lei" )>> ;
+	prov:wasDerivedFrom doc:0d782b91d815 .
+doc:Predictive_maintenance_case cco:is_about doc:FactsfaultDiagnosis_14 .
+_:eceb3c98bfe0bc811b62f3b9ef3bfd99 rdf:reifies <<( doc:Predictive_maintenance_case cco:is_about doc:FactsfaultDiagnosis_14 )>> ;
+	prov:wasDerivedFrom doc:0d782b91d815 .
+doc:FactsfrequencySimilarityMatrix a None:Data_variable .
+_:a64d13c9aa02f66588270d9b19b2d1a2 rdf:reifies <<( doc:FactsfrequencySimilarityMatrix rdf:type None:Data_variable )>> ;
+	prov:wasDerivedFrom doc:0d782b91d815 .
+doc:FactsfaultDiagnosis_14 rdfs:label "fault feature extraction"@en .
+_:d7cdb5e24364192940a4d0af8524a18c rdf:reifies <<( doc:FactsfaultDiagnosis_14 rdfs:label "fault feature extraction"@en )>> ;
+	prov:wasDerivedFrom doc:0d782b91d815 .
+doc:FactsliJiang schema:familyName "Wang" .
+_:ba7a93f3ab27a3a23eea9a5ff86fe6b0 rdf:reifies <<( doc:FactsliJiang schema:familyName "Wang" )>> ;
+	prov:wasDerivedFrom doc:0d782b91d815 .
+doc:FactsfaultFeatures_1 a None:Data_variable .
+_:aa4dded34a69f6a6dab2c1e2df071154 rdf:reifies <<( doc:FactsfaultFeatures_1 rdf:type None:Data_variable )>> ;
+	prov:wasDerivedFrom doc:0d782b91d815 .
+doc:FactswuhanUniversityOfTechnology_3 schema:name "Wuhan University of Technology" .
+_:e76dc9ff021bf048e6b058ad60f9f515 rdf:reifies <<( doc:FactswuhanUniversityOfTechnology_3 schema:name "Wuhan University of Technology" )>> ;
+	prov:wasDerivedFrom doc:0d782b91d815 .
+doc:9363fa063a67 a prov:Entity , schema:text ;
+	prov:generatedAtTime "2026-07-25T05:19:00.515365Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+	schema:position 1 ;
+	schema:identifier "9363fa063a67" .
+doc:FactsDfwMethod a cco:Algorithm .
+_:c9b965c8cec644df36730a18edfe2e94 rdf:reifies <<( doc:FactsDfwMethod rdf:type cco:Algorithm )>> ;
+	prov:wasDerivedFrom doc:9363fa063a67 .
+doc:FactsDfwMethod schema:mentions doc:FactsnoiseInterference_1 .
+_:d0a3abf5e8fc48524de7c837a75e6286 rdf:reifies <<( doc:FactsDfwMethod schema:mentions doc:FactsnoiseInterference_1 )>> ;
+	prov:wasDerivedFrom doc:9363fa063a67 .
+doc:FactsDfwMethod schema:name "dynamic-weighted GAT" .
+_:af3b6637cc747c75345f89a1ff4a894c rdf:reifies <<( doc:FactsDfwMethod schema:name "dynamic-weighted GAT" )>> ;
+	prov:wasDerivedFrom doc:9363fa063a67 .
+doc:FactsDfwMethod cco:is_about doc:FactsfrequencySimilarityAssessment .
+_:c3b456f5dbb1145d3d40e27620f24d9c rdf:reifies <<( doc:FactsDfwMethod cco:is_about doc:FactsfrequencySimilarityAssessment )>> ;
+	prov:wasDerivedFrom doc:9363fa063a67 .
+doc:FactsfaultLabels schema:name "graph representation ability" .
+_:cb7b77e18fe0411a004640d7d00a2c94 rdf:reifies <<( doc:FactsfaultLabels schema:name "graph representation ability" )>> ;
+	prov:wasDerivedFrom doc:9363fa063a67 .
+doc:FactsDfwMethod schema:name "DFW method" .
+_:c21371ed257a0673e89fb9a7bf1e8688 rdf:reifies <<( doc:FactsDfwMethod schema:name "DFW method" )>> ;
+	prov:wasDerivedFrom doc:9363fa063a67 .
+doc:FactsfrequencySimilarityAssessment schema:name "frequency similarity assessment" .
+_:fb910c469130d2519c13c4fb9f653e62 rdf:reifies <<( doc:FactsfrequencySimilarityAssessment schema:name "frequency similarity assessment" )>> ;
+	prov:wasDerivedFrom doc:9363fa063a67 .
+doc:FactsDfwMethod schema:name "AAKNN-DWGAT" .
+_:c8b5003df4529f454807bab6fab667aa rdf:reifies <<( doc:FactsDfwMethod schema:name "AAKNN-DWGAT" )>> ;
+	prov:wasDerivedFrom doc:9363fa063a67 .
+doc:FactsDfwMethod cco:is_about doc:FactsfaultLabels .
+_:a2821647d2766c0e1945f2cfa850ad4c rdf:reifies <<( doc:FactsDfwMethod cco:is_about doc:FactsfaultLabels )>> ;
+	prov:wasDerivedFrom doc:9363fa063a67 .
+doc:FactsDfwMethod cco:is_about doc:FactstimeFrequencyDomainTransformation .
+_:d4cdbae671d4eaf2a77fc5196f8bdf82 rdf:reifies <<( doc:FactsDfwMethod cco:is_about doc:FactstimeFrequencyDomainTransformation )>> ;
+	prov:wasDerivedFrom doc:9363fa063a67 .
+doc:FactsfaultDiagnosis_14 schema:name "fault feature extraction" .
+_:c6603428c86622c4af23aeca831c1765 rdf:reifies <<( doc:FactsfaultDiagnosis_14 schema:name "fault feature extraction" )>> ;
+	prov:wasDerivedFrom doc:9363fa063a67 .
+_:d64633fa84dd9a7b6b457756e6102122 prov:wasDerivedFrom doc:9363fa063a67 .
+doc:Factsarticle_101 schema:mentions doc:FactsDfwMethod .
+_:b71ea8f57c50723eba5e2c99571b7801 rdf:reifies <<( doc:Factsarticle_101 schema:mentions doc:FactsDfwMethod )>> ;
+	prov:wasDerivedFrom doc:9363fa063a67 .
+doc:FactsfaultLabels a schema:Thing .
+_:b6fcd6637205bbb628a37a2a71fa33f4 rdf:reifies <<( doc:FactsfaultLabels rdf:type schema:Thing )>> ;
+	prov:wasDerivedFrom doc:9363fa063a67 .
+doc:FactssimilarityDistribution schema:name "similarity distribution" .
+_:e794084d570bb0e23ac393e7122c60d8 rdf:reifies <<( doc:FactssimilarityDistribution schema:name "similarity distribution" )>> ;
+	prov:wasDerivedFrom doc:9363fa063a67 .
+_:a6701f923fcf05200303c518b6f7a82 prov:wasDerivedFrom doc:9363fa063a67 .
+doc:FactsweightedTopologicalGraphStructure schema:name "weighted topological graph structure" .
+_:bbfea96e622dae5d1cfa318d4553c610 rdf:reifies <<( doc:FactsweightedTopologicalGraphStructure schema:name "weighted topological graph structure" )>> ;
+	prov:wasDerivedFrom doc:9363fa063a67 .
+_:e82a9a8658ca56927a89952475f6dec7 prov:wasDerivedFrom doc:9363fa063a67 .
+doc:FactsfaultLabels schema:name "discriminative fault information" .
+_:dd11174b3d981231ea20211b4b915504 rdf:reifies <<( doc:FactsfaultLabels schema:name "discriminative fault information" )>> ;
+	prov:wasDerivedFrom doc:9363fa063a67 .
+doc:FactsweightedTopologicalGraphStructure a schema:Thing .
+_:eb0b01e0d34ba4198abe5e7cf4f79cff rdf:reifies <<( doc:FactsweightedTopologicalGraphStructure rdf:type schema:Thing )>> ;
+	prov:wasDerivedFrom doc:9363fa063a67 .
+doc:FactsmultiHeadGraphAttentionNetwork schema:name "multi-head graph attention network" .
+_:fff406d47c10fb19a6dacf467867e0ae rdf:reifies <<( doc:FactsmultiHeadGraphAttentionNetwork schema:name "multi-head graph attention network" )>> ;
+	prov:wasDerivedFrom doc:9363fa063a67 .
+doc:FactsDfwMethod schema:name "adaptive edge adjustment method" .
+_:f844fb557c7c0309097da410a316a332 rdf:reifies <<( doc:FactsDfwMethod schema:name "adaptive edge adjustment method" )>> ;
+	prov:wasDerivedFrom doc:9363fa063a67 .
+doc:FactsfaultLabels schema:name "multiple scales" .
+_:ae447d6b85f375d4e5f2d27f658d2827 rdf:reifies <<( doc:FactsfaultLabels schema:name "multiple scales" )>> ;
+	prov:wasDerivedFrom doc:9363fa063a67 .
+doc:FactsDfwMethod cco:is_about doc:FactsweightedTopologicalGraphStructure .
+_:fc53bad283635e78ae9049342aeba176 rdf:reifies <<( doc:FactsDfwMethod cco:is_about doc:FactsweightedTopologicalGraphStructure )>> ;
+	prov:wasDerivedFrom doc:9363fa063a67 .
+doc:FactsrotatingMachinery_16 schema:name "rotating machinery" .
+_:cfeea0e95bd4e9b8d5c251225123065c rdf:reifies <<( doc:FactsrotatingMachinery_16 schema:name "rotating machinery" )>> ;
+	prov:wasDerivedFrom doc:9363fa063a67 .
+doc:FactsDfwMethod schema:mentions doc:FactsclassificationFunction_44 .
+_:f6213693ddea741a7e43d9c9b3af4a10 rdf:reifies <<( doc:FactsDfwMethod schema:mentions doc:FactsclassificationFunction_44 )>> ;
+	prov:wasDerivedFrom doc:9363fa063a67 .
+_:dc3ef04d436269c30f17dd40fb488b2d prov:wasDerivedFrom doc:9363fa063a67 .
+doc:Factsarticle_101 schema:mentions doc:FactsrotatingMachinery_16 .
+_:fcc88a9d97df91fc7776915e7c787c3f rdf:reifies <<( doc:Factsarticle_101 schema:mentions doc:FactsrotatingMachinery_16 )>> ;
+	prov:wasDerivedFrom doc:9363fa063a67 .
+doc:FactsnoiseInterference_1 a schema:Thing .
+_:afe0e9f6a0a4e168372c73c0f46caaf0 rdf:reifies <<( doc:FactsnoiseInterference_1 rdf:type schema:Thing )>> ;
+	prov:wasDerivedFrom doc:9363fa063a67 .
+doc:FactsfaultLabels schema:name "graph structure" .
+_:e7fd1fb4822ed16288b869c26a98bf54 rdf:reifies <<( doc:FactsfaultLabels schema:name "graph structure" )>> ;
+	prov:wasDerivedFrom doc:9363fa063a67 .
+doc:FactsfrequencySimilarityAssessment a schema:Thing .
+_:d56ff039f40c62f280085b2c9859d2ba rdf:reifies <<( doc:FactsfrequencySimilarityAssessment rdf:type schema:Thing )>> ;
+	prov:wasDerivedFrom doc:9363fa063a67 .
+_:b5be8ccaffebe19ee36c450f1a7c76cd prov:wasDerivedFrom doc:9363fa063a67 .
+doc:FactsDfwMethod schema:mentions doc:FactsfaultLabels .
+_:e554444a05e72b06a2c3ac80fec16e89 rdf:reifies <<( doc:FactsDfwMethod schema:mentions doc:FactsfaultLabels )>> ;
+	prov:wasDerivedFrom doc:9363fa063a67 .
+doc:FactsmultiHeadGraphAttentionNetwork a cco:Algorithm .
+_:dfea39bc1b778d5df949f425c50a2ae6 rdf:reifies <<( doc:FactsmultiHeadGraphAttentionNetwork rdf:type cco:Algorithm )>> ;
+	prov:wasDerivedFrom doc:9363fa063a67 .
+doc:FactsclassificationFunction_44 schema:name "classification" .
+_:df0556138c0e919f9dd579388436c8b6 rdf:reifies <<( doc:FactsclassificationFunction_44 schema:name "classification" )>> ;
+	prov:wasDerivedFrom doc:9363fa063a67 .
+_:d179f41f7c269940f4025949eab5fe98 prov:wasDerivedFrom doc:9363fa063a67 .
+doc:Factsarticle_101 schema:name "Predictive maintenance article" .
+_:ed98d263f1d3c04750b63f1aabcbe986 rdf:reifies <<( doc:Factsarticle_101 schema:name "Predictive maintenance article" )>> ;
+	prov:wasDerivedFrom doc:9363fa063a67 .
+doc:FactsnoiseInterference_1 schema:name "noise interference" .
+_:f5c62d1292f10d2b794aba281affc650 rdf:reifies <<( doc:FactsnoiseInterference_1 schema:name "noise interference" )>> ;
+	prov:wasDerivedFrom doc:9363fa063a67 .
+doc:FactstimeFrequencyDomainTransformation a schema:Thing .
+_:aab73788a3119cf71e18bf996bf63bed rdf:reifies <<( doc:FactstimeFrequencyDomainTransformation rdf:type schema:Thing )>> ;
+	prov:wasDerivedFrom doc:9363fa063a67 .
+doc:FactstimeFrequencyDomainTransformation schema:name "time-frequency domain transformation" .
+_:fe9281cf4cd7c3260e69258908320473 rdf:reifies <<( doc:FactstimeFrequencyDomainTransformation schema:name "time-frequency domain transformation" )>> ;
+	prov:wasDerivedFrom doc:9363fa063a67 .
+doc:FactssimilarityDistribution a schema:Thing .
+_:d5042312e54486953dc640c50c4133a9 rdf:reifies <<( doc:FactssimilarityDistribution rdf:type schema:Thing )>> ;
+	prov:wasDerivedFrom doc:9363fa063a67 .
+doc:FactsDfwMethod cco:is_about doc:FactsrotatingMachinery_16 .
+_:a4a976aebd66b94a1a1253a64f137fdb rdf:reifies <<( doc:FactsDfwMethod cco:is_about doc:FactsrotatingMachinery_16 )>> ;
+	prov:wasDerivedFrom doc:9363fa063a67 .
+doc:FactsmultiHeadGraphAttentionNetwork cco:is_about doc:FactsfaultLabels .
+_:dd82e1a837fb2883e62f0cf4bae8e95f rdf:reifies <<( doc:FactsmultiHeadGraphAttentionNetwork cco:is_about doc:FactsfaultLabels )>> ;
+	prov:wasDerivedFrom doc:9363fa063a67 .
+doc:FactsDfwMethod cco:is_about doc:FactssimilarityDistribution .
+_:a1c21096c084c05a7fa2be133d0ff086 rdf:reifies <<( doc:FactsDfwMethod cco:is_about doc:FactssimilarityDistribution )>> ;
+	prov:wasDerivedFrom doc:9363fa063a67 .
+doc:FactsDfwMethod schema:name "K-nearest neighbors algorithm" .
+_:ddc68bf99315cdb96247d5db8e62244b rdf:reifies <<( doc:FactsDfwMethod schema:name "K-nearest neighbors algorithm" )>> ;
+	prov:wasDerivedFrom doc:9363fa063a67 .
+_:ea199c4584f64635a89a751838fb71c2 prov:wasDerivedFrom doc:9363fa063a67 .
+doc:FactsfaultLabels schema:name "fault labels" .
+_:b375d782da41e10d7da9fe0ea17057e2 rdf:reifies <<( doc:FactsfaultLabels schema:name "fault labels" )>> ;
+	prov:wasDerivedFrom doc:9363fa063a67 .
+doc:963168888727 a prov:Entity , schema:text ;
+	prov:generatedAtTime "2026-07-25T05:19:00.516365Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+	schema:position 2 ;
+	schema:identifier "963168888727" .
+doc:Factsmodels a cco:Algorithm .
+_:a347fd91a64fa1514c8dee88649dd8c6 rdf:reifies <<( doc:Factsmodels rdf:type cco:Algorithm )>> ;
+	prov:wasDerivedFrom doc:963168888727 .
+doc:factsenables_1 a rdf:Property .
+_:e07992c6ca927d237d77ffd28e37ab42 rdf:reifies <<( doc:factsenables_1 rdf:type rdf:Property )>> ;
+	prov:wasDerivedFrom doc:963168888727 .
+doc:Factsfeatures rdfs:label "graph data"@en .
+_:f61fc5cd83559786c872f175c327b59a rdf:reifies <<( doc:Factsfeatures rdfs:label "graph data"@en )>> ;
+	prov:wasDerivedFrom doc:963168888727 .
+doc:FactsrecentStudies rdfs:label "recent studies"@en .
+_:a00c31313faed14192d587377f71f768 rdf:reifies <<( doc:FactsrecentStudies rdfs:label "recent studies"@en )>> ;
+	prov:wasDerivedFrom doc:963168888727 .
+doc:Factsfeatures a cco:InformationContentEntity .
+_:daf17b04d137cd78373c53bc01438cb4 rdf:reifies <<( doc:Factsfeatures rdf:type cco:InformationContentEntity )>> ;
+	prov:wasDerivedFrom doc:963168888727 .
+doc:FactsGnn_1 doc:factsenables_1 doc:Factsfeatures .
+_:a9ad0f318ba43a5d78be4454ff3c1e2a rdf:reifies <<( doc:FactsGnn_1 doc:factsenables_1 doc:Factsfeatures )>> ;
+	prov:wasDerivedFrom doc:963168888727 .
+doc:FactsattentionMechanism_6 a schema:Thing .
+_:be6e9269ca3d18e48054023ae61b317 rdf:reifies <<( doc:FactsattentionMechanism_6 rdf:type schema:Thing )>> ;
+	prov:wasDerivedFrom doc:963168888727 .
+doc:FactsattentionMechanism_6 doc:factsenables_1 doc:FactsmodelPerformance_1 .
+_:a9b55d93ab94ca81483155116cabe213 rdf:reifies <<( doc:FactsattentionMechanism_6 doc:factsenables_1 doc:FactsmodelPerformance_1 )>> ;
+	prov:wasDerivedFrom doc:963168888727 .
+doc:Factsmodels doc:factsenables_1 doc:Factsfeatures .
+_:f3838614cc79b6075e9f8a474b32c7c1 rdf:reifies <<( doc:Factsmodels doc:factsenables_1 doc:Factsfeatures )>> ;
+	prov:wasDerivedFrom doc:963168888727 .
+doc:Factsfeatures rdfs:label "input segments"@en .
+_:ec5a84ffa2721ef2382218b566583aac rdf:reifies <<( doc:Factsfeatures rdfs:label "input segments"@en )>> ;
+	prov:wasDerivedFrom doc:963168888727 .
+doc:FactsrecentStudies a schema:CreativeWork .
+_:c04f280fc78402c7ea6639906427e9f2 rdf:reifies <<( doc:FactsrecentStudies rdf:type schema:CreativeWork )>> ;
+	prov:wasDerivedFrom doc:963168888727 .
+doc:FactsattentionMechanism_6 doc:factsenables_1 doc:FactsGnn_1 .
+_:ed848b46de3219fb942ffcd8a4210d5f rdf:reifies <<( doc:FactsattentionMechanism_6 doc:factsenables_1 doc:FactsGnn_1 )>> ;
+	prov:wasDerivedFrom doc:963168888727 .
+doc:Factsfeatures rdfs:label "features"@en .
+_:b860dca2eb333eee213c0a0106c36581 rdf:reifies <<( doc:Factsfeatures rdfs:label "features"@en )>> ;
+	prov:wasDerivedFrom doc:963168888727 .
+doc:FactsGnn_1 a cco:Algorithm .
+_:c9d72141f990cc1d98c0260e2ff8fe5c rdf:reifies <<( doc:FactsGnn_1 rdf:type cco:Algorithm )>> ;
+	prov:wasDerivedFrom doc:963168888727 .
+doc:Factsmodels rdfs:label "models"@en .
+_:f585f257478bd81646e46a86073786c8 rdf:reifies <<( doc:Factsmodels rdfs:label "models"@en )>> ;
+	prov:wasDerivedFrom doc:963168888727 .
+doc:FactsmodelPerformance_1 a obo:BFO_0000019 .
+_:edda088177e96556136aadf99b9c4217 rdf:reifies <<( doc:FactsmodelPerformance_1 rdf:type obo:BFO_0000019 )>> ;
+	prov:wasDerivedFrom doc:963168888727 .
+doc:FactsattentionMechanism_6 rdfs:label "attention mechanism"@en .
+_:a5805ab2ea96b082efa828e09606c92 rdf:reifies <<( doc:FactsattentionMechanism_6 rdfs:label "attention mechanism"@en )>> ;
+	prov:wasDerivedFrom doc:963168888727 .
+doc:FactsGnn_1 doc:factsenables_1 doc:FactsGnn_1 .
+_:e248cac35949984c8e2d66f3e0c0432a rdf:reifies <<( doc:FactsGnn_1 doc:factsenables_1 doc:FactsGnn_1 )>> ;
+	prov:wasDerivedFrom doc:963168888727 .
+doc:FactsattentionMechanism_6 doc:factsenables_1 doc:Factsmodels .
+_:ed9556a934faf41f12a61c509450a3cc rdf:reifies <<( doc:FactsattentionMechanism_6 doc:factsenables_1 doc:Factsmodels )>> ;
+	prov:wasDerivedFrom doc:963168888727 .
+doc:FactsGnn_1 rdfs:label "GATs"@en .
+_:d71ea6107b5e8c1d932f5c9a55943c57 rdf:reifies <<( doc:FactsGnn_1 rdfs:label "GATs"@en )>> ;
+	prov:wasDerivedFrom doc:963168888727 .
+doc:Factsfeatures rdfs:label "representations"@en .
+_:cd07bcd131f1e4c51e72ba23957c1093 rdf:reifies <<( doc:Factsfeatures rdfs:label "representations"@en )>> ;
+	prov:wasDerivedFrom doc:963168888727 .
+doc:FactsGnn_1 rdfs:label "GNN"@en .
+_:c57a617303abc4a01eaaa7114be21cd2 rdf:reifies <<( doc:FactsGnn_1 rdfs:label "GNN"@en )>> ;
+	prov:wasDerivedFrom doc:963168888727 .
+doc:FactsrecentStudies doc:factsenables_1 doc:FactsGnn_1 .
+_:e14513d851666be4ea4342bebda26b96 rdf:reifies <<( doc:FactsrecentStudies doc:factsenables_1 doc:FactsGnn_1 )>> ;
+	prov:wasDerivedFrom doc:963168888727 .
+doc:FactsmodelPerformance_1 rdfs:label "model performance"@en .
+_:abc70a5c86e11d46aeded2951ebf59f7 rdf:reifies <<( doc:FactsmodelPerformance_1 rdfs:label "model performance"@en )>> ;
+	prov:wasDerivedFrom doc:963168888727 .
+None:Predictive_maintenance_case owl:sameAs None:Predictive_maintenance_model , None:Predictive_Maintenance_Article .

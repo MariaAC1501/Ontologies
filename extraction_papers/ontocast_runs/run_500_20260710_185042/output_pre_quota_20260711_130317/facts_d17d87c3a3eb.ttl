@@ -1,0 +1,510 @@
+@prefix None: <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD/seed#> .
+@prefix cco: <http://www.ontologyrepository.com/CommonCoreOntologies/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doc: <https://growgraph.dev/doc/d17d87c3a3eb/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix obo: <http://purl.obolibrary.org/obo/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix schema: <https://schema.org/> .
+@prefix schema1: <http://schema.org/> .
+doc:bda5d88d47d7 a prov:Entity , schema:text ;
+	prov:generatedAtTime "2026-07-11T01:02:09.812335Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+	schema:position 0 ;
+	schema:identifier "bda5d88d47d7" .
+doc:FactsAucValue cco:describes doc:FactsTwoBranchNetwork .
+_:eec454d52f7dcfa9489ed9a51fddba1 rdf:reifies <<( doc:FactsAucValue cco:describes doc:FactsTwoBranchNetwork )>> ;
+	prov:wasDerivedFrom doc:bda5d88d47d7 .
+doc:FactsCsdTransformer a cco:Algorithm .
+_:abf83ccb763efc3a0824b9c6005fabd rdf:reifies <<( doc:FactsCsdTransformer rdf:type cco:Algorithm )>> ;
+	prov:wasDerivedFrom doc:bda5d88d47d7 .
+doc:FactsFalseAlarmRateValue cco:describes doc:FactsTwoBranchNetwork .
+_:d8fb4c628df04d2188fb92161eb4b706 rdf:reifies <<( doc:FactsFalseAlarmRateValue cco:describes doc:FactsTwoBranchNetwork )>> ;
+	prov:wasDerivedFrom doc:bda5d88d47d7 .
+doc:FactsSystemModule cco:describes doc:FactsRollerGuideSystem .
+_:c13b289463193e268278d5e183fdf92b rdf:reifies <<( doc:FactsSystemModule cco:describes doc:FactsRollerGuideSystem )>> ;
+	prov:wasDerivedFrom doc:bda5d88d47d7 .
+doc:FactsDatasetRollingMill cco:describes doc:FactsSystemModule .
+_:cd595848ef608afaadf667bad0fe4440 rdf:reifies <<( doc:FactsDatasetRollingMill cco:describes doc:FactsSystemModule )>> ;
+	prov:wasDerivedFrom doc:bda5d88d47d7 .
+doc:FactsDatasetRollingMill a cco:Database .
+_:fd33adf6e4b217c2c31d8d5b4da1acf rdf:reifies <<( doc:FactsDatasetRollingMill rdf:type cco:Database )>> ;
+	prov:wasDerivedFrom doc:bda5d88d47d7 .
+doc:Factsarticle_2026_PhysicsEnhancedOrthogonalSensing None:has_publication_year doc:Factspublicationyear_2026 .
+_:e3dbfeb9be7d257706320ddf750ae6aa rdf:reifies <<( doc:Factsarticle_2026_PhysicsEnhancedOrthogonalSensing None:has_publication_year doc:Factspublicationyear_2026 )>> ;
+	prov:wasDerivedFrom doc:bda5d88d47d7 .
+doc:FactsRealTimeRequirementStatement a None:Design_detail .
+_:c3bf4a4a3ccba0f192fb9a39fb645a75 rdf:reifies <<( doc:FactsRealTimeRequirementStatement rdf:type None:Design_detail )>> ;
+	prov:wasDerivedFrom doc:bda5d88d47d7 .
+doc:FactsAucValue schema1:measurementTechnique "ROC" .
+_:d2fb84c7afb4a4f4e598b477372e3757 rdf:reifies <<( doc:FactsAucValue schema1:measurementTechnique "ROC" )>> ;
+	prov:wasDerivedFrom doc:bda5d88d47d7 .
+doc:FactsTwoBranchNetwork a cco:Algorithm .
+_:fcc3abf1438f4169b032e13d9073f8f rdf:reifies <<( doc:FactsTwoBranchNetwork rdf:type cco:Algorithm )>> ;
+	prov:wasDerivedFrom doc:bda5d88d47d7 .
+doc:FactsFalseAlarmRateValue cco:describes doc:FactsFalseAlarmRateValue .
+_:af3541453dbf2698f7b3d94e8eecf4a5 rdf:reifies <<( doc:FactsFalseAlarmRateValue cco:describes doc:FactsFalseAlarmRateValue )>> ;
+	prov:wasDerivedFrom doc:bda5d88d47d7 .
+doc:FactsVqvaeAlgorithm rdfs:label "VQ-VAE" .
+_:c06b04977cdea23141e5b232ac421096 rdf:reifies <<( doc:FactsVqvaeAlgorithm rdfs:label "VQ-VAE" )>> ;
+	prov:wasDerivedFrom doc:bda5d88d47d7 .
+doc:FactsFalseAlarmRateValue rdfs:label "false alarm rate under 95% TPR" .
+_:b142a4db9cbed4aedae18b39cc891fb4 rdf:reifies <<( doc:FactsFalseAlarmRateValue rdfs:label "false alarm rate under 95% TPR" )>> ;
+	prov:wasDerivedFrom doc:bda5d88d47d7 .
+doc:FactsFalseAlarmRateValue schema1:additionalProperty doc:FactsFalseAlarmRateValue .
+_:ffb05c0f5d446e054f65123a26c51b97 rdf:reifies <<( doc:FactsFalseAlarmRateValue schema1:additionalProperty doc:FactsFalseAlarmRateValue )>> ;
+	prov:wasDerivedFrom doc:bda5d88d47d7 .
+doc:FactsSystemModule None:has_predictive_maintenance_function doc:FactsFaultDetectionFunc1 .
+_:c6cfaebbf6f82a8e9df79a048d9ca61d rdf:reifies <<( doc:FactsSystemModule None:has_predictive_maintenance_function doc:FactsFaultDetectionFunc1 )>> ;
+	prov:wasDerivedFrom doc:bda5d88d47d7 .
+doc:FactsLatencyPerWindow rdfs:label "end-to-end processing latency per window" .
+_:a69b8b7e8ce794ee6a95b6e46504ba7f rdf:reifies <<( doc:FactsLatencyPerWindow rdfs:label "end-to-end processing latency per window" )>> ;
+	prov:wasDerivedFrom doc:bda5d88d47d7 .
+doc:FactsResponseTimeSystem a None:Performance_value .
+_:ba2bf52057eb799cc7dbf9ca1146e41c rdf:reifies <<( doc:FactsResponseTimeSystem rdf:type None:Performance_value )>> ;
+	prov:wasDerivedFrom doc:bda5d88d47d7 .
+doc:FactsSystemModule a None:Predictive_maintenance_system_module .
+_:a045eef7932d934ec0e85a05581431eb rdf:reifies <<( doc:FactsSystemModule rdf:type None:Predictive_maintenance_system_module )>> ;
+	prov:wasDerivedFrom doc:bda5d88d47d7 .
+doc:FactsLatencyPerWindow schema1:unitCode "ms" .
+_:c4bb01458f7c109423e14f011e4bfe3b rdf:reifies <<( doc:FactsLatencyPerWindow schema1:unitCode "ms" )>> ;
+	prov:wasDerivedFrom doc:bda5d88d47d7 .
+doc:FactsBinZheng schema1:name "Bin Zheng" .
+_:c62fb472312b1b83bb8c068e8bb45d1a rdf:reifies <<( doc:FactsBinZheng schema1:name "Bin Zheng" )>> ;
+	prov:wasDerivedFrom doc:bda5d88d47d7 .
+doc:FactsBinZheng a schema1:Person .
+_:be31ec4a7f74792269ea5d147d7d2027 rdf:reifies <<( doc:FactsBinZheng rdf:type schema1:Person )>> ;
+	prov:wasDerivedFrom doc:bda5d88d47d7 .
+doc:FactsAcademicEditorJiaweiXiang a schema1:Person .
+_:bc680f8ae3c564ca28bcb4a0a35e5b35 rdf:reifies <<( doc:FactsAcademicEditorJiaweiXiang rdf:type schema1:Person )>> ;
+	prov:wasDerivedFrom doc:bda5d88d47d7 .
+doc:FactsFudanSchoolOfInfoScienceAndTech a schema:Organization .
+_:d8c187aebd256a4d0487f721464701be rdf:reifies <<( doc:FactsFudanSchoolOfInfoScienceAndTech rdf:type schema:Organization )>> ;
+	prov:wasDerivedFrom doc:bda5d88d47d7 .
+doc:FactsBinZheng schema1:name "Yehan Feng" .
+_:f590036b8bdf342819119f6b96b4a026 rdf:reifies <<( doc:FactsBinZheng schema1:name "Yehan Feng" )>> ;
+	prov:wasDerivedFrom doc:bda5d88d47d7 .
+doc:FactsGuangdongZhongnanIronAndSteelCo a schema:Organization .
+_:a1937b0aacac36ff05c6bae4918ceae7 rdf:reifies <<( doc:FactsGuangdongZhongnanIronAndSteelCo rdf:type schema:Organization )>> ;
+	prov:wasDerivedFrom doc:bda5d88d47d7 .
+doc:FactsFaultDetectionFunc1 cco:describes doc:FactsSystemModule .
+_:e3b3ae7b9ade32dc507a45ce49657481 rdf:reifies <<( doc:FactsFaultDetectionFunc1 cco:describes doc:FactsSystemModule )>> ;
+	prov:wasDerivedFrom doc:bda5d88d47d7 .
+doc:FactsRollerGuideSystem a None:Maintainable_item .
+_:db44e9609d34ca20e4431315d9cc7722 rdf:reifies <<( doc:FactsRollerGuideSystem rdf:type None:Maintainable_item )>> ;
+	prov:wasDerivedFrom doc:bda5d88d47d7 .
+doc:FactsRollerGuideSystem rdfs:label "roller guide system" .
+_:e9fb6cacce78cc03d76fc0c05193028f rdf:reifies <<( doc:FactsRollerGuideSystem rdfs:label "roller guide system" )>> ;
+	prov:wasDerivedFrom doc:bda5d88d47d7 .
+doc:Factsarticle_2026_PhysicsEnhancedOrthogonalSensing schema1:author doc:FactsBinZheng .
+_:a1819347dac69c43b8db0a57034405dc rdf:reifies <<( doc:Factsarticle_2026_PhysicsEnhancedOrthogonalSensing schema1:author doc:FactsBinZheng )>> ;
+	prov:wasDerivedFrom doc:bda5d88d47d7 .
+doc:FactsBinZheng schema1:name "Xiong Chen" .
+_:b18849f1135b2acab4a7946bf149b009 rdf:reifies <<( doc:FactsBinZheng schema1:name "Xiong Chen" )>> ;
+	prov:wasDerivedFrom doc:bda5d88d47d7 .
+doc:FactsDatasetRollingMill rdfs:label "dataset comprising real operational data and expert-validated synthetic fault scenarios" .
+_:b3bab41cfc3366458b3a1165668f39a7 rdf:reifies <<( doc:FactsDatasetRollingMill rdfs:label "dataset comprising real operational data and expert-validated synthetic fault scenarios" )>> ;
+	prov:wasDerivedFrom doc:bda5d88d47d7 .
+doc:FactsFalseAlarmRateValue rdfs:label "true positive rate (target) 95%" .
+_:e14b3b50e0c29d5b32022b9a8731fe84 rdf:reifies <<( doc:FactsFalseAlarmRateValue rdfs:label "true positive rate (target) 95%" )>> ;
+	prov:wasDerivedFrom doc:bda5d88d47d7 .
+doc:FactsTwoBranchNetwork rdfs:label "two-branch network architecture (CSD transformer + VQ-VAE)" .
+_:c929d59c304bfe6bd011f7df658e62c3 rdf:reifies <<( doc:FactsTwoBranchNetwork rdfs:label "two-branch network architecture (CSD transformer + VQ-VAE)" )>> ;
+	prov:wasDerivedFrom doc:bda5d88d47d7 .
+doc:Factsarticle_2026_PhysicsEnhancedOrthogonalSensing a None:Predictive_Maintenance_Article .
+_:d201dcf882155239e1ff9e104b5fddce rdf:reifies <<( doc:Factsarticle_2026_PhysicsEnhancedOrthogonalSensing rdf:type None:Predictive_Maintenance_Article )>> ;
+	prov:wasDerivedFrom doc:bda5d88d47d7 .
+doc:FactsVqvaeAlgorithm a cco:Algorithm .
+_:dd9f2b9c1e64f7b24a0841caac038d86 rdf:reifies <<( doc:FactsVqvaeAlgorithm rdf:type cco:Algorithm )>> ;
+	prov:wasDerivedFrom doc:bda5d88d47d7 .
+doc:FactsAucValue rdfs:label "AUC-ROC value" .
+_:a519f0f8c10ed0b4031803a5f00f5a2 rdf:reifies <<( doc:FactsAucValue rdfs:label "AUC-ROC value" )>> ;
+	prov:wasDerivedFrom doc:bda5d88d47d7 .
+doc:FactsOrthogonalSensingLayout a None:Design_detail .
+_:e84582f9da1ee674427bc6322c125e6e rdf:reifies <<( doc:FactsOrthogonalSensingLayout rdf:type None:Design_detail )>> ;
+	prov:wasDerivedFrom doc:bda5d88d47d7 .
+doc:Factsarticletitle_2026_PhysicsEnhancedOrthogonalSensing a None:Article_title .
+_:a31fda23436e4cea27af5c71b02d137c rdf:reifies <<( doc:Factsarticletitle_2026_PhysicsEnhancedOrthogonalSensing rdf:type None:Article_title )>> ;
+	prov:wasDerivedFrom doc:bda5d88d47d7 .
+doc:FactsFalseAlarmRateValue a None:Performance_value .
+_:dfbb66ee877ae1cb46943cbbf5655917 rdf:reifies <<( doc:FactsFalseAlarmRateValue rdf:type None:Performance_value )>> ;
+	prov:wasDerivedFrom doc:bda5d88d47d7 .
+doc:Factspublicationyear_2026 a None:Publication_year .
+_:c0731f49fff4e67f6ff1f783b836cca7 rdf:reifies <<( doc:Factspublicationyear_2026 rdf:type None:Publication_year )>> ;
+	prov:wasDerivedFrom doc:bda5d88d47d7 .
+doc:FactsAucValue a None:Performance_indicator .
+_:f6c31e96c421cb9ed03281153c847e9c rdf:reifies <<( doc:FactsAucValue rdf:type None:Performance_indicator )>> ;
+	prov:wasDerivedFrom doc:bda5d88d47d7 .
+doc:FactsAucValue cco:describes doc:FactsAucValue .
+_:cd43186a476c5c903da49f85d27f17ab rdf:reifies <<( doc:FactsAucValue cco:describes doc:FactsAucValue )>> ;
+	prov:wasDerivedFrom doc:bda5d88d47d7 .
+doc:FactsLatencyPerWindow schema1:value "8"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+_:e300a74bc97359b81fdf2a16498b3c34 rdf:reifies <<( doc:FactsLatencyPerWindow schema1:value "8"^^<http://www.w3.org/2001/XMLSchema#decimal> )>> ;
+	prov:wasDerivedFrom doc:bda5d88d47d7 .
+doc:FactsBinZheng schema1:affiliation doc:FactsFudanSchoolOfInfoScienceAndTech .
+_:b95e5da470a77e22e033be886fba1966 rdf:reifies <<( doc:FactsBinZheng schema1:affiliation doc:FactsFudanSchoolOfInfoScienceAndTech )>> ;
+	prov:wasDerivedFrom doc:bda5d88d47d7 .
+doc:FactsSystemModule rdfs:label "physics-enhanced orthogonal-sensing cyber-physical architecture" .
+_:b6d537d7ac5b8e40269d57e5af1e6e2c rdf:reifies <<( doc:FactsSystemModule rdfs:label "physics-enhanced orthogonal-sensing cyber-physical architecture" )>> ;
+	prov:wasDerivedFrom doc:bda5d88d47d7 .
+doc:FactsRealTimeRequirementStatement cco:describes doc:FactsSystemModule .
+_:ae34921580b0ee606ba19db0012ba47 rdf:reifies <<( doc:FactsRealTimeRequirementStatement cco:describes doc:FactsSystemModule )>> ;
+	prov:wasDerivedFrom doc:bda5d88d47d7 .
+doc:FactsBinZheng schema1:email "chenxiong@fudan.edu.cn" .
+_:b492a6563531a36e8650205ad4e34987 rdf:reifies <<( doc:FactsBinZheng schema1:email "chenxiong@fudan.edu.cn" )>> ;
+	prov:wasDerivedFrom doc:bda5d88d47d7 .
+doc:FactsFudanSchoolOfInfoScienceAndTech schema1:name "School of Information Science and Technology, Fudan University, Shanghai 200438, China" .
+_:cca34cc9677d052e02226ca41b3e04d3 rdf:reifies <<( doc:FactsFudanSchoolOfInfoScienceAndTech schema1:name "School of Information Science and Technology, Fudan University, Shanghai 200438, China" )>> ;
+	prov:wasDerivedFrom doc:bda5d88d47d7 .
+doc:Factsarticle_2026_PhysicsEnhancedOrthogonalSensing schema1:dateReceived "2026-03-26"^^<http://www.w3.org/2001/XMLSchema#date> .
+_:c41108d2717991d568233c7723c8a890 rdf:reifies <<( doc:Factsarticle_2026_PhysicsEnhancedOrthogonalSensing schema1:dateReceived "2026-03-26"^^<http://www.w3.org/2001/XMLSchema#date> )>> ;
+	prov:wasDerivedFrom doc:bda5d88d47d7 .
+doc:FactsSystemModule None:has_design_detail doc:FactsOrthogonalSensingLayout .
+_:d2944a89b287ca3bdd7b05c09e6c6845 rdf:reifies <<( doc:FactsSystemModule None:has_design_detail doc:FactsOrthogonalSensingLayout )>> ;
+	prov:wasDerivedFrom doc:bda5d88d47d7 .
+doc:FactsGuangdongZhongnanIronAndSteelCo schema1:name "Business Department for Quality Special Steels, Guangdong Zhongnan Iron and Steel Co., Ltd., Shaoguan 512100, China" .
+_:d0402663fb5c6990c415192ae8354ba rdf:reifies <<( doc:FactsGuangdongZhongnanIronAndSteelCo schema1:name "Business Department for Quality Special Steels, Guangdong Zhongnan Iron and Steel Co., Ltd., Shaoguan 512100, China" )>> ;
+	prov:wasDerivedFrom doc:bda5d88d47d7 .
+doc:FactsResponseTimeSystem schema1:value "108"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+_:da27a4bee692555556e8c8bb04b883f7 rdf:reifies <<( doc:FactsResponseTimeSystem schema1:value "108"^^<http://www.w3.org/2001/XMLSchema#decimal> )>> ;
+	prov:wasDerivedFrom doc:bda5d88d47d7 .
+doc:FactsFaultDetectionFunc1 a None:Deviation_detection .
+_:f7e10a623f613804c80ae989798901bf rdf:reifies <<( doc:FactsFaultDetectionFunc1 rdf:type None:Deviation_detection )>> ;
+	prov:wasDerivedFrom doc:bda5d88d47d7 .
+doc:FactsOrthogonalSensingLayout None:has_text_value "embedded orthogonal sensing layout (P â¥ V) designed to decouple drive-chain vibration from rolling-force fluctuations at the transducer level" .
+_:c442dadc128a50ccc2c9496ff56ecd06 rdf:reifies <<( doc:FactsOrthogonalSensingLayout None:has_text_value "embedded orthogonal sensing layout (P â¥ V) designed to decouple drive-chain vibration from rolling-force fluctuations at the transducer level" )>> ;
+	prov:wasDerivedFrom doc:bda5d88d47d7 .
+doc:FactsFaultDetectionFunc1 rdfs:label "self-supervised anomaly detection for state monitoring of guiding system" .
+_:e0b94cdf0bd576ab344d732ec30df56f rdf:reifies <<( doc:FactsFaultDetectionFunc1 rdfs:label "self-supervised anomaly detection for state monitoring of guiding system" )>> ;
+	prov:wasDerivedFrom doc:bda5d88d47d7 .
+doc:Factsarticle_2026_PhysicsEnhancedOrthogonalSensing cco:is_about doc:FactsSystemModule .
+_:fa214c2b542417ab80eadf82775e65cb rdf:reifies <<( doc:Factsarticle_2026_PhysicsEnhancedOrthogonalSensing cco:is_about doc:FactsSystemModule )>> ;
+	prov:wasDerivedFrom doc:bda5d88d47d7 .
+doc:FactsLatencyPerWindow cco:describes doc:FactsTwoBranchNetwork .
+_:f98b1dda55be8fbde8b0d042d2884c8 rdf:reifies <<( doc:FactsLatencyPerWindow cco:describes doc:FactsTwoBranchNetwork )>> ;
+	prov:wasDerivedFrom doc:bda5d88d47d7 .
+doc:FactsAcademicEditorJiaweiXiang schema1:name "Jiawei Xiang" .
+_:a7f93bd15d44d276e6efda940c1c34a7 rdf:reifies <<( doc:FactsAcademicEditorJiaweiXiang schema1:name "Jiawei Xiang" )>> ;
+	prov:wasDerivedFrom doc:bda5d88d47d7 .
+doc:FactsAucValue a None:Performance_value .
+_:bf48a9de33dc988e42eb724323e30ccc rdf:reifies <<( doc:FactsAucValue rdf:type None:Performance_value )>> ;
+	prov:wasDerivedFrom doc:bda5d88d47d7 .
+doc:FactsFaultDetectionFunc1 a None:Predictive_maintenance_module_function .
+_:af5f92cc9cee57e76b557d8c91858951 rdf:reifies <<( doc:FactsFaultDetectionFunc1 rdf:type None:Predictive_maintenance_module_function )>> ;
+	prov:wasDerivedFrom doc:bda5d88d47d7 .
+doc:FactsAucValue schema1:value 0.952 .
+_:fdf97a974708f7fd3ac4178e33cbfa33 rdf:reifies <<( doc:FactsAucValue schema1:value 0.952 )>> ;
+	prov:wasDerivedFrom doc:bda5d88d47d7 .
+doc:FactsFalseAlarmRateValue schema1:value 0.048 .
+_:c17863a188e214fe14774a842377a3b0 rdf:reifies <<( doc:FactsFalseAlarmRateValue schema1:value 0.048 )>> ;
+	prov:wasDerivedFrom doc:bda5d88d47d7 .
+doc:FactsFalseAlarmRateValue a None:Performance_indicator .
+_:e395501f5171f570d436f6af385b4e4d rdf:reifies <<( doc:FactsFalseAlarmRateValue rdf:type None:Performance_indicator )>> ;
+	prov:wasDerivedFrom doc:bda5d88d47d7 .
+doc:FactsCsdTransformer rdfs:label "CSD transformer" .
+_:e3640cfc2e810902cfb975fc2512126d rdf:reifies <<( doc:FactsCsdTransformer rdfs:label "CSD transformer" )>> ;
+	prov:wasDerivedFrom doc:bda5d88d47d7 .
+doc:Factsarticletitle_2026_PhysicsEnhancedOrthogonalSensing None:has_text_value "Physics-Enhanced Orthogonal Sensing for Self-Supervised Anomaly Detection in Rolling Mills" .
+_:ea776699b52bbd3a78171ef21f2968ae rdf:reifies <<( doc:Factsarticletitle_2026_PhysicsEnhancedOrthogonalSensing None:has_text_value "Physics-Enhanced Orthogonal Sensing for Self-Supervised Anomaly Detection in Rolling Mills" )>> ;
+	prov:wasDerivedFrom doc:bda5d88d47d7 .
+doc:Factspublicationyear_2026 None:has_interger_value 2026 .
+_:cb20b013994ef7b217e6bb7ec12137eb rdf:reifies <<( doc:Factspublicationyear_2026 None:has_interger_value 2026 )>> ;
+	prov:wasDerivedFrom doc:bda5d88d47d7 .
+doc:FactsBinZheng schema1:affiliation doc:FactsGuangdongZhongnanIronAndSteelCo .
+_:d46e4878ae7f29bb32e968fea30c7abb rdf:reifies <<( doc:FactsBinZheng schema1:affiliation doc:FactsGuangdongZhongnanIronAndSteelCo )>> ;
+	prov:wasDerivedFrom doc:bda5d88d47d7 .
+doc:FactsBinZheng schema1:name "Yifan Wang" .
+_:bc9c7d8ea0166577694d10bea7387540 rdf:reifies <<( doc:FactsBinZheng schema1:name "Yifan Wang" )>> ;
+	prov:wasDerivedFrom doc:bda5d88d47d7 .
+doc:Factsarticle_2026_PhysicsEnhancedOrthogonalSensing schema1:datePublished "2026-05-05"^^<http://www.w3.org/2001/XMLSchema#date> .
+_:e6bcc21cced43a6818008c555db50df0 rdf:reifies <<( doc:Factsarticle_2026_PhysicsEnhancedOrthogonalSensing schema1:datePublished "2026-05-05"^^<http://www.w3.org/2001/XMLSchema#date> )>> ;
+	prov:wasDerivedFrom doc:bda5d88d47d7 .
+doc:FactsResponseTimeSystem cco:describes doc:FactsTwoBranchNetwork .
+_:f401194a7491589ae4f34ba6321cf0bc rdf:reifies <<( doc:FactsResponseTimeSystem cco:describes doc:FactsTwoBranchNetwork )>> ;
+	prov:wasDerivedFrom doc:bda5d88d47d7 .
+doc:FactsAucValue rdfs:label "AUC-ROC" .
+_:bbf4621cae9ec6e8c69aad4bb89853d5 rdf:reifies <<( doc:FactsAucValue rdfs:label "AUC-ROC" )>> ;
+	prov:wasDerivedFrom doc:bda5d88d47d7 .
+doc:FactsTwoBranchNetwork cco:describes doc:FactsSystemModule .
+_:a2831877a8a99e6e6b74156757ae71b8 rdf:reifies <<( doc:FactsTwoBranchNetwork cco:describes doc:FactsSystemModule )>> ;
+	prov:wasDerivedFrom doc:bda5d88d47d7 .
+doc:FactsFalseAlarmRateValue schema1:value 0.95 .
+_:dd12a53cba2653c8dd407d7fb934933f rdf:reifies <<( doc:FactsFalseAlarmRateValue schema1:value 0.95 )>> ;
+	prov:wasDerivedFrom doc:bda5d88d47d7 .
+doc:Factsarticle_2026_PhysicsEnhancedOrthogonalSensing schema1:license <https://creativecommons.org/licenses/by/4.0/> .
+_:c7de3b9acfae53ce02f261efcd709f3b rdf:reifies <<( doc:Factsarticle_2026_PhysicsEnhancedOrthogonalSensing schema1:license <https://creativecommons.org/licenses/by/4.0/> )>> ;
+	prov:wasDerivedFrom doc:bda5d88d47d7 .
+doc:FactsFalseAlarmRateValue rdfs:label "False alarm rate" .
+_:fdb8787702ae4661ea969ea8c5886fba rdf:reifies <<( doc:FactsFalseAlarmRateValue rdfs:label "False alarm rate" )>> ;
+	prov:wasDerivedFrom doc:bda5d88d47d7 .
+doc:Factsarticle_2026_PhysicsEnhancedOrthogonalSensing schema1:dateModified "2026-04-28"^^<http://www.w3.org/2001/XMLSchema#date> .
+_:bb0d0dd709e227566aaeb8b4f1807e3d rdf:reifies <<( doc:Factsarticle_2026_PhysicsEnhancedOrthogonalSensing schema1:dateModified "2026-04-28"^^<http://www.w3.org/2001/XMLSchema#date> )>> ;
+	prov:wasDerivedFrom doc:bda5d88d47d7 .
+doc:FactsLatencyPerWindow a None:Performance_value .
+_:bf8706710290d1ea6c147e51364b30bb rdf:reifies <<( doc:FactsLatencyPerWindow rdf:type None:Performance_value )>> ;
+	prov:wasDerivedFrom doc:bda5d88d47d7 .
+doc:FactsResponseTimeSystem rdfs:label "system-level fault response time" .
+_:b0ecda24309ae0b144b8a2ab7a91c1d1 rdf:reifies <<( doc:FactsResponseTimeSystem rdfs:label "system-level fault response time" )>> ;
+	prov:wasDerivedFrom doc:bda5d88d47d7 .
+doc:FactsTwoBranchNetwork None:has_text_value "one branch uses the CSD transformer to capture physical coupling characteristics; the other branch uses VQ-VAE to extract operating-condition context" .
+_:dd16ddcad2e7d72c0054e1e9d36c72fd rdf:reifies <<( doc:FactsTwoBranchNetwork None:has_text_value "one branch uses the CSD transformer to capture physical coupling characteristics; the other branch uses VQ-VAE to extract operating-condition context" )>> ;
+	prov:wasDerivedFrom doc:bda5d88d47d7 .
+doc:FactsRealTimeRequirementStatement None:has_text_value "System achieves target AUC and latency metrics and meets requirements of real-time industrial monitoring for the rolling mill guiding system" .
+_:b90d698b1cfd01ae7239edde2f645029 rdf:reifies <<( doc:FactsRealTimeRequirementStatement None:has_text_value "System achieves target AUC and latency metrics and meets requirements of real-time industrial monitoring for the rolling mill guiding system" )>> ;
+	prov:wasDerivedFrom doc:bda5d88d47d7 .
+doc:FactsResponseTimeSystem schema1:unitCode "ms" .
+_:d534e769f53e6658df0d434da25c85b2 rdf:reifies <<( doc:FactsResponseTimeSystem schema1:unitCode "ms" )>> ;
+	prov:wasDerivedFrom doc:bda5d88d47d7 .
+doc:Factsarticle_2026_PhysicsEnhancedOrthogonalSensing None:has_title doc:Factsarticletitle_2026_PhysicsEnhancedOrthogonalSensing .
+_:a55f555c88c37cf17b29a00a127ea431 rdf:reifies <<( doc:Factsarticle_2026_PhysicsEnhancedOrthogonalSensing None:has_title doc:Factsarticletitle_2026_PhysicsEnhancedOrthogonalSensing )>> ;
+	prov:wasDerivedFrom doc:bda5d88d47d7 .
+doc:FactsDatasetRollingMill schema1:about doc:FactsRollerGuideSystem .
+_:f93b1462166e471bada0446f33c62392 rdf:reifies <<( doc:FactsDatasetRollingMill schema1:about doc:FactsRollerGuideSystem )>> ;
+	prov:wasDerivedFrom doc:bda5d88d47d7 .
+doc:Factsarticle_2026_PhysicsEnhancedOrthogonalSensing schema1:editor doc:FactsAcademicEditorJiaweiXiang .
+_:f7eea465f7d6349f4d2ec4a794f8dfdb rdf:reifies <<( doc:Factsarticle_2026_PhysicsEnhancedOrthogonalSensing schema1:editor doc:FactsAcademicEditorJiaweiXiang )>> ;
+	prov:wasDerivedFrom doc:bda5d88d47d7 .
+doc:5099173889fc a prov:Entity , schema:text ;
+	prov:generatedAtTime "2026-07-11T01:02:09.815888Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+	schema:position 1 ;
+	schema:identifier "5099173889fc" .
+doc:FactsIntelligentGuideArmModule None:has_predictive_maintenance_function doc:FactsFaultDetectionFunc1 .
+_:bb4b9b54f14f6d81b7121ac7278ba1ba rdf:reifies <<( doc:FactsIntelligentGuideArmModule None:has_predictive_maintenance_function doc:FactsFaultDetectionFunc1 )>> ;
+	prov:wasDerivedFrom doc:5099173889fc .
+doc:FactsCsdMatrixConfig None:describes_configuration doc:FactsDualBranchSslModel .
+_:a5b142b70b966fe038b89aebd8057dc rdf:reifies <<( doc:FactsCsdMatrixConfig None:describes_configuration doc:FactsDualBranchSslModel )>> ;
+	prov:wasDerivedFrom doc:5099173889fc .
+doc:FactsSensorSignal obo:RO_0000086 doc:FactsUnlabeledDataQuality .
+_:c12e08d0a0398a38fd6a0c81f9938712 rdf:reifies <<( doc:FactsSensorSignal obo:RO_0000086 doc:FactsUnlabeledDataQuality )>> ;
+	prov:wasDerivedFrom doc:5099173889fc .
+doc:FactsDualBranchSslModel obo:BFO_0000051 doc:FactsContextBranch .
+_:f97563f0df7db927e854b572649d9d93 rdf:reifies <<( doc:FactsDualBranchSslModel obo:BFO_0000051 doc:FactsContextBranch )>> ;
+	prov:wasDerivedFrom doc:5099173889fc .
+doc:FactsFaultDetectionFunc1 a None:Fault_detection .
+_:f9c16d3bfc524dd9d1e223897598cbac rdf:reifies <<( doc:FactsFaultDetectionFunc1 rdf:type None:Fault_detection )>> ;
+	prov:wasDerivedFrom doc:5099173889fc .
+doc:FactsDualBranchSslModel a None:Predictive_maintenance_model .
+_:c8fb7dbe936cc0fe572ae8f1f53502b7 rdf:reifies <<( doc:FactsDualBranchSslModel rdf:type None:Predictive_maintenance_model )>> ;
+	prov:wasDerivedFrom doc:5099173889fc .
+doc:FactsUnlabeledDataQuality None:has_text_value "majority of operational data unlabeled because of preemptive human interventions and prolonged normal-operation periods" .
+_:f12c2ebb9582683bc0a2f78b8795a2af rdf:reifies <<( doc:FactsUnlabeledDataQuality None:has_text_value "majority of operational data unlabeled because of preemptive human interventions and prolonged normal-operation periods" )>> ;
+	prov:wasDerivedFrom doc:5099173889fc .
+doc:FactsPhysicsContextGatedFusion a None:Design_detail .
+_:d44a2704181f01a9ba607816e9f5b41a rdf:reifies <<( doc:FactsPhysicsContextGatedFusion rdf:type None:Design_detail )>> ;
+	prov:wasDerivedFrom doc:5099173889fc .
+doc:FactsPhysicsContextGatedFusion None:has_text_value "physics-context gated fusion that treats excitation modality as contextual condition enabling conditional density estimation (anomaly score conditioned on excitation)" .
+_:d6f98782421f1e9e7976c029c7ffbc24 rdf:reifies <<( doc:FactsPhysicsContextGatedFusion None:has_text_value "physics-context gated fusion that treats excitation modality as contextual condition enabling conditional density estimation (anomaly score conditioned on excitation)" )>> ;
+	prov:wasDerivedFrom doc:5099173889fc .
+doc:FactsCsdMatrixConfig None:has_text_value "16 x 16 cross-spectral density (CSD) matrix constructed from virtually expanded channels" .
+_:f63df108039bc648977c4b8eb7caa5e1 rdf:reifies <<( doc:FactsCsdMatrixConfig None:has_text_value "16 x 16 cross-spectral density (CSD) matrix constructed from virtually expanded channels" )>> ;
+	prov:wasDerivedFrom doc:5099173889fc .
+_:db44e9609d34ca20e4431315d9cc7722 prov:wasDerivedFrom doc:5099173889fc .
+_:dd9f2b9c1e64f7b24a0841caac038d86 prov:wasDerivedFrom doc:5099173889fc .
+doc:FactsContextBranch obo:BFO_0000051 doc:FactsVqvaeAlgorithm .
+_:ca7d983c7cc42a9044f29c4e28d6b5c5 rdf:reifies <<( doc:FactsContextBranch obo:BFO_0000051 doc:FactsVqvaeAlgorithm )>> ;
+	prov:wasDerivedFrom doc:5099173889fc .
+doc:FactsCsdPairTokenTransformer a cco:Algorithm .
+_:c2d93454a6d7421315a8de4b4fbab270 rdf:reifies <<( doc:FactsCsdPairTokenTransformer rdf:type cco:Algorithm )>> ;
+	prov:wasDerivedFrom doc:5099173889fc .
+doc:FactsIntelligentGuideArmModule obo:BFO_0000051 doc:FactsPressureSensor1 .
+_:f746185407811bd42f2de521681927bb rdf:reifies <<( doc:FactsIntelligentGuideArmModule obo:BFO_0000051 doc:FactsPressureSensor1 )>> ;
+	prov:wasDerivedFrom doc:5099173889fc .
+doc:FactsUnlabeledDataQuality None:has_text_value "severe non-stationarity due to stage transitions and distributional shifts in rolling force and billet temperature" .
+_:da61a1a704f7683cc85bbe53e1e5bf9a rdf:reifies <<( doc:FactsUnlabeledDataQuality None:has_text_value "severe non-stationarity due to stage transitions and distributional shifts in rolling force and billet temperature" )>> ;
+	prov:wasDerivedFrom doc:5099173889fc .
+doc:FactsCsdMatrixConfig a None:Model_configuration .
+_:f30502082586bb6f4e11db5f97e6131c rdf:reifies <<( doc:FactsCsdMatrixConfig rdf:type None:Model_configuration )>> ;
+	prov:wasDerivedFrom doc:5099173889fc .
+doc:FactsOrthogonalSensingLayout None:has_text_value "Orthogonal sensing layout (P â V): pressure sensors orthogonally installed relative to vibration sensors to decouple clamping force and structural vibration; minimally invasive installation on each guide arm" .
+_:aef925d0013e4518b2a131f55f30b4f9 rdf:reifies <<( doc:FactsOrthogonalSensingLayout None:has_text_value "Orthogonal sensing layout (P â V): pressure sensors orthogonally installed relative to vibration sensors to decouple clamping force and structural vibration; minimally invasive installation on each guide arm" )>> ;
+	prov:wasDerivedFrom doc:5099173889fc .
+doc:FactsStructuralVibration a None:Data_variable .
+_:a77cc5bbdc9e2e00375370e289878ffc rdf:reifies <<( doc:FactsStructuralVibration rdf:type None:Data_variable )>> ;
+	prov:wasDerivedFrom doc:5099173889fc .
+doc:FactsIntelligentGuideArmModule None:has_design_detail doc:FactsOrthogonalSensingLayout .
+_:a3c64378f1edc0f1133057f8af9e2625 rdf:reifies <<( doc:FactsIntelligentGuideArmModule None:has_design_detail doc:FactsOrthogonalSensingLayout )>> ;
+	prov:wasDerivedFrom doc:5099173889fc .
+_:f7e10a623f613804c80ae989798901bf prov:wasDerivedFrom doc:5099173889fc .
+doc:FactsIntelligentGuideArmModule obo:BFO_0000051 doc:FactsVibrationSensor1 .
+_:f38a87504ddef3dc2aecec7dce7d285c rdf:reifies <<( doc:FactsIntelligentGuideArmModule obo:BFO_0000051 doc:FactsVibrationSensor1 )>> ;
+	prov:wasDerivedFrom doc:5099173889fc .
+doc:FactsSensorSignal None:has_text_value "sensor signals exhibiting severe non-stationarity across production stages (idle, biting steel, steady-state rolling, tailing) and predominantly unlabeled" .
+_:faeca6afa39a39cd70abe8d82d138b8d rdf:reifies <<( doc:FactsSensorSignal None:has_text_value "sensor signals exhibiting severe non-stationarity across production stages (idle, biting steel, steady-state rolling, tailing) and predominantly unlabeled" )>> ;
+	prov:wasDerivedFrom doc:5099173889fc .
+doc:FactsContextBranch obo:BFO_0000051 doc:FactsCsdPairTokenTransformer .
+_:b33131f61075e8f1dcb01853b66a150a rdf:reifies <<( doc:FactsContextBranch obo:BFO_0000051 doc:FactsCsdPairTokenTransformer )>> ;
+	prov:wasDerivedFrom doc:5099173889fc .
+doc:FactsSensorSignal a None:Data_variable .
+_:a11c162c5e169663c2530225abf4cc57 rdf:reifies <<( doc:FactsSensorSignal rdf:type None:Data_variable )>> ;
+	prov:wasDerivedFrom doc:5099173889fc .
+doc:FactsPressureSensor1 a schema1:Sensor .
+_:cba2f0a28450abdae944e38d50b82d8 rdf:reifies <<( doc:FactsPressureSensor1 rdf:type schema1:Sensor )>> ;
+	prov:wasDerivedFrom doc:5099173889fc .
+doc:FactsCsdPairTokenTransformer None:has_text_value "CSD Pair-Token Transformer modeling physical coupling patterns between sensors using 16x16 CSD" .
+_:c93441c6b3b89200f6c87e43839cfcb0 rdf:reifies <<( doc:FactsCsdPairTokenTransformer None:has_text_value "CSD Pair-Token Transformer modeling physical coupling patterns between sensors using 16x16 CSD" )>> ;
+	prov:wasDerivedFrom doc:5099173889fc .
+doc:FactsUnlabeledDataQuality a obo:BFO_0000019 .
+_:adb956575380ac3e9c063292bdcc9720 rdf:reifies <<( doc:FactsUnlabeledDataQuality rdf:type obo:BFO_0000019 )>> ;
+	prov:wasDerivedFrom doc:5099173889fc .
+doc:FactsAnomalyScoring None:has_text_value "anomaly scoring via conditional density estimation that remains sensitive to coupling anomalies while robust to normal working condition changes" .
+_:d8ba9a2b225646461d27ee636600b4b9 rdf:reifies <<( doc:FactsAnomalyScoring None:has_text_value "anomaly scoring via conditional density estimation that remains sensitive to coupling anomalies while robust to normal working condition changes" )>> ;
+	prov:wasDerivedFrom doc:5099173889fc .
+doc:FactsPressureSensor1 schema1:observes doc:FactsClampingForce .
+_:a032f1ffceb17d58a5c277376e1ed4c4 rdf:reifies <<( doc:FactsPressureSensor1 schema1:observes doc:FactsClampingForce )>> ;
+	prov:wasDerivedFrom doc:5099173889fc .
+doc:FactsContextBranch a cco:InformationProcessingArtifact .
+_:db6fd6f6ddcd8323aa91e3bd453d9530 rdf:reifies <<( doc:FactsContextBranch rdf:type cco:InformationProcessingArtifact )>> ;
+	prov:wasDerivedFrom doc:5099173889fc .
+doc:FactsDualBranchSslModel obo:BFO_0000051 doc:FactsAnomalyScoring .
+_:e0183ce42610aa1a4f37faebfa830289 rdf:reifies <<( doc:FactsDualBranchSslModel obo:BFO_0000051 doc:FactsAnomalyScoring )>> ;
+	prov:wasDerivedFrom doc:5099173889fc .
+_:e84582f9da1ee674427bc6322c125e6e prov:wasDerivedFrom doc:5099173889fc .
+doc:FactsRollerGuideSystem obo:BFO_0000051 doc:FactsIntelligentGuideArmModule .
+_:daf76940c50fb2476b9035c88cff476e rdf:reifies <<( doc:FactsRollerGuideSystem obo:BFO_0000051 doc:FactsIntelligentGuideArmModule )>> ;
+	prov:wasDerivedFrom doc:5099173889fc .
+doc:FactsIntelligentGuideArmModule a None:Predictive_maintenance_system_module .
+_:e8ff64a31d9eb9fbd232712116fbcd93 rdf:reifies <<( doc:FactsIntelligentGuideArmModule rdf:type None:Predictive_maintenance_system_module )>> ;
+	prov:wasDerivedFrom doc:5099173889fc .
+doc:FactsClampingForce a None:Data_variable .
+_:c2efbcd7c665b82bd2c8ad7176cba564 rdf:reifies <<( doc:FactsClampingForce rdf:type None:Data_variable )>> ;
+	prov:wasDerivedFrom doc:5099173889fc .
+doc:FactsFaultDetectionFunc1 a None:Fault_feature_extraction .
+_:ed7c315a32a3b7fcdb4c9a9a43d28fb5 rdf:reifies <<( doc:FactsFaultDetectionFunc1 rdf:type None:Fault_feature_extraction )>> ;
+	prov:wasDerivedFrom doc:5099173889fc .
+doc:FactsAnomalyScoring a cco:DirectiveInformationContentEntity .
+_:c7d4b3eb66cd0abe0042014a906f4750 rdf:reifies <<( doc:FactsAnomalyScoring rdf:type cco:DirectiveInformationContentEntity )>> ;
+	prov:wasDerivedFrom doc:5099173889fc .
+doc:FactsVibrationSensor1 schema1:observes doc:FactsStructuralVibration .
+_:e45e7ad338affb6c4a02d9c948bdd6b8 rdf:reifies <<( doc:FactsVibrationSensor1 schema1:observes doc:FactsStructuralVibration )>> ;
+	prov:wasDerivedFrom doc:5099173889fc .
+doc:FactsVibrationSensor1 a schema1:Sensor .
+_:e0d5ddd48afbcb2a9735b7a88b5cc956 rdf:reifies <<( doc:FactsVibrationSensor1 rdf:type schema1:Sensor )>> ;
+	prov:wasDerivedFrom doc:5099173889fc .
+doc:FactsVqvaeAlgorithm None:has_text_value "dual-channel VQ-VAE discretizes pressure trajectories into working condition prototypes and produces conditional context vectors" .
+_:a0c1a1146c0a6e593cbffc31675003c rdf:reifies <<( doc:FactsVqvaeAlgorithm None:has_text_value "dual-channel VQ-VAE discretizes pressure trajectories into working condition prototypes and produces conditional context vectors" )>> ;
+	prov:wasDerivedFrom doc:5099173889fc .
+doc:FactsDualBranchSslModel None:has_design_detail doc:FactsPhysicsContextGatedFusion .
+_:c6b9e7e970319af23cde32396ad11a81 rdf:reifies <<( doc:FactsDualBranchSslModel None:has_design_detail doc:FactsPhysicsContextGatedFusion )>> ;
+	prov:wasDerivedFrom doc:5099173889fc .
+doc:16debb5bb709 a prov:Entity , schema:text ;
+	prov:generatedAtTime "2026-07-11T01:02:09.81789Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+	schema:position 2 ;
+	schema:identifier "16debb5bb709" .
+doc:FactspressureSensor a cco:Artifact .
+_:b3d8cc570934a90b21e0301403f220a4 rdf:reifies <<( doc:FactspressureSensor rdf:type cco:Artifact )>> ;
+	prov:wasDerivedFrom doc:16debb5bb709 .
+_:ca7d983c7cc42a9044f29c4e28d6b5c5 prov:wasDerivedFrom doc:16debb5bb709 .
+doc:FactsaucValue doc:factshasValue 0.062 .
+_:e5e3f31d056864ae79e0ca6410876d45 rdf:reifies <<( doc:FactsaucValue doc:factshasValue 0.062 )>> ;
+	prov:wasDerivedFrom doc:16debb5bb709 .
+doc:FactsPPerpVLayout a None:Design_detail .
+_:ba41e2501f324d204d3382a56240969 rdf:reifies <<( doc:FactsPPerpVLayout rdf:type None:Design_detail )>> ;
+	prov:wasDerivedFrom doc:16debb5bb709 .
+_:f7e10a623f613804c80ae989798901bf prov:wasDerivedFrom doc:16debb5bb709 .
+doc:FactscommercialSolutionMonitoring None:has_text_value "commercial roller guide modules relying on single-sensor statistical indicators (cannot exploit force-vibration cross-modal coupling)" .
+_:c805ce98ca2991ef9b11c9f166d8aa12 rdf:reifies <<( doc:FactscommercialSolutionMonitoring None:has_text_value "commercial roller guide modules relying on single-sensor statistical indicators (cannot exploit force-vibration cross-modal coupling)" )>> ;
+	prov:wasDerivedFrom doc:16debb5bb709 .
+doc:FactsaucValue a None:Performance_indicator .
+_:e60cce3979a6c89d997c3c1077e62242 rdf:reifies <<( doc:FactsaucValue rdf:type None:Performance_indicator )>> ;
+	prov:wasDerivedFrom doc:16debb5bb709 .
+doc:Factsdanieli None:has_text_value "Evaluation performed on a real operating hot rolling production line reporting AUC-ROC 0.952, FPR@95%TPR 0.048, per-window latency 8 ms, system response 108 ms" .
+_:b7a69351cea972a14b70b0e4301096a3 rdf:reifies <<( doc:Factsdanieli None:has_text_value "Evaluation performed on a real operating hot rolling production line reporting AUC-ROC 0.952, FPR@95%TPR 0.048, per-window latency 8 ms, system response 108 ms" )>> ;
+	prov:wasDerivedFrom doc:16debb5bb709 .
+doc:FactsaucValue cco:describes doc:FactsIntelligentGuideArmModule .
+_:d661ac9380cda96afaea047d6544ef19 rdf:reifies <<( doc:FactsaucValue cco:describes doc:FactsIntelligentGuideArmModule )>> ;
+	prov:wasDerivedFrom doc:16debb5bb709 .
+doc:FactsIntelligentGuideArmModule a None:Predictive_maintenance_model .
+_:b32a840155c57ca8b503809dae7a4e30 rdf:reifies <<( doc:FactsIntelligentGuideArmModule rdf:type None:Predictive_maintenance_model )>> ;
+	prov:wasDerivedFrom doc:16debb5bb709 .
+_:a3c64378f1edc0f1133057f8af9e2625 prov:wasDerivedFrom doc:16debb5bb709 .
+doc:FactsaucValue doc:factshasValue doc:FactsaucValue .
+_:dd1073e8cb2055d40b538b4648a93fa5 rdf:reifies <<( doc:FactsaucValue doc:factshasValue doc:FactsaucValue )>> ;
+	prov:wasDerivedFrom doc:16debb5bb709 .
+doc:FactsaucValue doc:factshasValue 0.952 .
+_:b10dd7e605c281a113a16ae318ed4db6 rdf:reifies <<( doc:FactsaucValue doc:factshasValue 0.952 )>> ;
+	prov:wasDerivedFrom doc:16debb5bb709 .
+_:c2d93454a6d7421315a8de4b4fbab270 prov:wasDerivedFrom doc:16debb5bb709 .
+doc:FactsIntelligentGuideArmModule doc:factshasValue doc:FactsrollerGuide .
+_:ba9c7b107ce9dcf05baa7a2f9e324027 rdf:reifies <<( doc:FactsIntelligentGuideArmModule doc:factshasValue doc:FactsrollerGuide )>> ;
+	prov:wasDerivedFrom doc:16debb5bb709 .
+cco:describes a rdf:Property .
+_:c2626dc39885574bb73f5d05c17a6f03 rdf:reifies <<( cco:describes rdf:type rdf:Property )>> ;
+	prov:wasDerivedFrom doc:16debb5bb709 .
+None:has_text_value a rdf:Property .
+_:ddfc99dbb47177e6d08c25f86a37359b rdf:reifies <<( None:has_text_value rdf:type rdf:Property )>> ;
+	prov:wasDerivedFrom doc:16debb5bb709 .
+_:e8ff64a31d9eb9fbd232712116fbcd93 prov:wasDerivedFrom doc:16debb5bb709 .
+_:b33131f61075e8f1dcb01853b66a150a prov:wasDerivedFrom doc:16debb5bb709 .
+doc:FactsaucValue a None:Performance_value .
+_:d4932defe0fa9b7ec105c21166af4ecc rdf:reifies <<( doc:FactsaucValue rdf:type None:Performance_value )>> ;
+	prov:wasDerivedFrom doc:16debb5bb709 .
+doc:factshasValue a rdf:Property .
+_:eb2a6a90ecbc531577134bfc5d341dfe rdf:reifies <<( doc:factshasValue rdf:type rdf:Property )>> ;
+	prov:wasDerivedFrom doc:16debb5bb709 .
+doc:FactsaucValue doc:factshasValue 0.048 .
+_:a1b3df68abdfcf241f4f6831b861070e rdf:reifies <<( doc:FactsaucValue doc:factshasValue 0.048 )>> ;
+	prov:wasDerivedFrom doc:16debb5bb709 .
+_:dd9f2b9c1e64f7b24a0841caac038d86 prov:wasDerivedFrom doc:16debb5bb709 .
+doc:FactsaucValue doc:factshasValue "108"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+_:fb22837be32f681b6900bb2d97d6cf21 rdf:reifies <<( doc:FactsaucValue doc:factshasValue "108"^^<http://www.w3.org/2001/XMLSchema#decimal> )>> ;
+	prov:wasDerivedFrom doc:16debb5bb709 .
+_:e84582f9da1ee674427bc6322c125e6e prov:wasDerivedFrom doc:16debb5bb709 .
+doc:FactsIntelligentGuideArmModule obo:BFO_0000051 doc:FactspressureSensor .
+_:f8900abdbd181192dbd3939264e8b73e rdf:reifies <<( doc:FactsIntelligentGuideArmModule obo:BFO_0000051 doc:FactspressureSensor )>> ;
+	prov:wasDerivedFrom doc:16debb5bb709 .
+doc:Factsdanieli a cco:InformationContentEntity .
+_:fd214bdd31ef45345b1ea258230eb8a2 rdf:reifies <<( doc:Factsdanieli rdf:type cco:InformationContentEntity )>> ;
+	prov:wasDerivedFrom doc:16debb5bb709 .
+doc:Factsdanieli a schema:Organization .
+_:c9d17bfa49ff79c46f764663aa43dcca rdf:reifies <<( doc:Factsdanieli rdf:type schema:Organization )>> ;
+	prov:wasDerivedFrom doc:16debb5bb709 .
+doc:FactscommercialSolutionMonitoring a cco:Artifact .
+_:d5cfecef15303bcf8fde43539b14e5ed rdf:reifies <<( doc:FactscommercialSolutionMonitoring rdf:type cco:Artifact )>> ;
+	prov:wasDerivedFrom doc:16debb5bb709 .
+doc:Factsmodel_configuration_1 obo:BFO_0000051 doc:FactsContextBranch .
+_:dd9ef0bb8e2cf227d28ac80424376da5 rdf:reifies <<( doc:Factsmodel_configuration_1 obo:BFO_0000051 doc:FactsContextBranch )>> ;
+	prov:wasDerivedFrom doc:16debb5bb709 .
+doc:FactsPPerpVLayout None:has_text_value "P â V layout" .
+_:ba1142c9d8d448fce701914dc244e36d rdf:reifies <<( doc:FactsPPerpVLayout None:has_text_value "P â V layout" )>> ;
+	prov:wasDerivedFrom doc:16debb5bb709 .
+doc:Factsdanieli None:has_text_value "Danieli" .
+_:f832f91fca6e7a9687842ccbab19906d rdf:reifies <<( doc:Factsdanieli None:has_text_value "Danieli" )>> ;
+	prov:wasDerivedFrom doc:16debb5bb709 .
+doc:FactsContextBranch a None:Data_mining_technique_function .
+_:a2fabec5294eb448530ea8ffd58d4db8 rdf:reifies <<( doc:FactsContextBranch rdf:type None:Data_mining_technique_function )>> ;
+	prov:wasDerivedFrom doc:16debb5bb709 .
+None:describes_configuration a rdf:Property .
+_:c7bb47a89243f49cb1f2cc57d5dbe659 rdf:reifies <<( None:describes_configuration rdf:type rdf:Property )>> ;
+	prov:wasDerivedFrom doc:16debb5bb709 .
+doc:Factsdanieli None:has_text_value "Primetals Technologies" .
+_:dda862cb9888e50f5e38fa25d7f4fd9c rdf:reifies <<( doc:Factsdanieli None:has_text_value "Primetals Technologies" )>> ;
+	prov:wasDerivedFrom doc:16debb5bb709 .
+doc:Factsmodel_configuration_1 None:describes_configuration doc:FactsIntelligentGuideArmModule .
+_:c66e3c7eecc4986209837cf8b3216add rdf:reifies <<( doc:Factsmodel_configuration_1 None:describes_configuration doc:FactsIntelligentGuideArmModule )>> ;
+	prov:wasDerivedFrom doc:16debb5bb709 .
+doc:FactsaucValue doc:factshasValue "8"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+_:de354b5900a1e7513fc440e5d953b1b1 rdf:reifies <<( doc:FactsaucValue doc:factshasValue "8"^^<http://www.w3.org/2001/XMLSchema#decimal> )>> ;
+	prov:wasDerivedFrom doc:16debb5bb709 .
+doc:FactsIntelligentGuideArmModule None:has_design_detail doc:FactsPPerpVLayout .
+_:f605333e36a2c21832047274c3e31afb rdf:reifies <<( doc:FactsIntelligentGuideArmModule None:has_design_detail doc:FactsPPerpVLayout )>> ;
+	prov:wasDerivedFrom doc:16debb5bb709 .
+doc:FactsaucValue None:has_text_value "ms" .
+_:de0b6fd8934e43bd24e6b6963bbd90ed rdf:reifies <<( doc:FactsaucValue None:has_text_value "ms" )>> ;
+	prov:wasDerivedFrom doc:16debb5bb709 .
+doc:Factsmodel_configuration_1 a None:Model_configuration .
+_:bd530d2e579f502bf9ba216f8fb4ddff rdf:reifies <<( doc:Factsmodel_configuration_1 rdf:type None:Model_configuration )>> ;
+	prov:wasDerivedFrom doc:16debb5bb709 .
+doc:FactsOrthogonalSensingLayout None:has_text_value "multi-modal orthogonal integration to prevent single-modality fault masking" .
+_:fdf63bd5e28dba54a8f150597eefac80 rdf:reifies <<( doc:FactsOrthogonalSensingLayout None:has_text_value "multi-modal orthogonal integration to prevent single-modality fault masking" )>> ;
+	prov:wasDerivedFrom doc:16debb5bb709 .
+doc:FactsrollerGuide a None:Maintainable_item .
+_:d4450284e811772af485fdc8be89f3b7 rdf:reifies <<( doc:FactsrollerGuide rdf:type None:Maintainable_item )>> ;
+	prov:wasDerivedFrom doc:16debb5bb709 .
+doc:Factsdanieli cco:describes doc:FactsIntelligentGuideArmModule .
+_:a97c1fab756efaa321b38887ab9a99b5 rdf:reifies <<( doc:Factsdanieli cco:describes doc:FactsIntelligentGuideArmModule )>> ;
+	prov:wasDerivedFrom doc:16debb5bb709 .
+doc:FactsIntelligentGuideArmModule cco:describes doc:FactsrollerGuide .
+_:f7f1f8718af3222fce80b66890781fac rdf:reifies <<( doc:FactsIntelligentGuideArmModule cco:describes doc:FactsrollerGuide )>> ;
+	prov:wasDerivedFrom doc:16debb5bb709 .
+_:bb4b9b54f14f6d81b7121ac7278ba1ba prov:wasDerivedFrom doc:16debb5bb709 .
+cco:InformationContentEntity owl:sameAs cco:DirectiveInformationContentEntity .

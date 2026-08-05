@@ -1,0 +1,678 @@
+@prefix None: <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#> .
+@prefix cco: <http://www.ontologyrepository.com/CommonCoreOntologies/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doc: <https://growgraph.dev/doc/00ab9259d632/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix schema: <https://schema.org/> .
+doc:fe668e3e8e20 a prov:Entity , schema:text ;
+	prov:generatedAtTime "2026-07-24T21:38:11.821664Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+	schema:position 0 ;
+	schema:identifier "fe668e3e8e20" .
+doc:FactsloadCell schema:name "Load cell"@en .
+_:bc7fa28614f25b2fb9a954468abf05ca rdf:reifies <<( doc:FactsloadCell schema:name "Load cell"@en )>> ;
+	prov:wasDerivedFrom doc:fe668e3e8e20 .
+doc:FactsarticleTitle_87 a None:Article_title .
+_:a76316a34ed5524bd509bcfbf7cc22b1 rdf:reifies <<( doc:FactsarticleTitle_87 rdf:type None:Article_title )>> ;
+	prov:wasDerivedFrom doc:fe668e3e8e20 .
+doc:FactsarticleTitle_87 None:has_text_value "Tool wear prediction based on multisensor data fusion and machine learning" .
+_:e857674ece44027b6b839f5b7277de5f rdf:reifies <<( doc:FactsarticleTitle_87 None:has_text_value "Tool wear prediction based on multisensor data fusion and machine learning" )>> ;
+	prov:wasDerivedFrom doc:fe668e3e8e20 .
+doc:FactsyangCao schema:affiliation doc:FactsmontanaStateUniversity .
+_:f56101b7f9f3c63f1001da134bb79c9c rdf:reifies <<( doc:FactsyangCao schema:affiliation doc:FactsmontanaStateUniversity )>> ;
+	prov:wasDerivedFrom doc:fe668e3e8e20 .
+doc:FactssensorFusionDetail a None:Model_configuration .
+_:c8552c2694fb58dca7b5bcfb4423f759 rdf:reifies <<( doc:FactssensorFusionDetail rdf:type None:Model_configuration )>> ;
+	prov:wasDerivedFrom doc:fe668e3e8e20 .
+doc:FactsrmseValue_1 a None:Performance_value .
+_:e5384f65ddf247e93d4c60492b98d82e rdf:reifies <<( doc:FactsrmseValue_1 rdf:type None:Performance_value )>> ;
+	prov:wasDerivedFrom doc:fe668e3e8e20 .
+doc:Factsarticle_67 schema:author doc:FactsyangCao .
+_:a6049c75a07bd683cd681a934da436f4 rdf:reifies <<( doc:Factsarticle_67 schema:author doc:FactsyangCao )>> ;
+	prov:wasDerivedFrom doc:fe668e3e8e20 .
+doc:Factsarticle_67 schema:dateReceived "2024-12-10"^^<http://www.w3.org/2001/XMLSchema#date> .
+_:e05620ddaedab015ea14964b3200848f rdf:reifies <<( doc:Factsarticle_67 schema:dateReceived "2024-12-10"^^<http://www.w3.org/2001/XMLSchema#date> )>> ;
+	prov:wasDerivedFrom doc:fe668e3e8e20 .
+doc:Factsarticle_67 schema:keywords "Preventative maintenance"@en .
+_:e3c24e5c52959cc9129c06b2926c7fa9 rdf:reifies <<( doc:Factsarticle_67 schema:keywords "Preventative maintenance"@en )>> ;
+	prov:wasDerivedFrom doc:fe668e3e8e20 .
+doc:FactsrmseValue_1 schema:name "Root mean squared error"@en .
+_:e28b23478e44f4354d5a8c8cf405154 rdf:reifies <<( doc:FactsrmseValue_1 schema:name "Root mean squared error"@en )>> ;
+	prov:wasDerivedFrom doc:fe668e3e8e20 .
+doc:Factsarticle_67 schema:author doc:FactstannerJones .
+_:a9ed227ffde8947406e780c7768d02f0 rdf:reifies <<( doc:Factsarticle_67 schema:author doc:FactstannerJones )>> ;
+	prov:wasDerivedFrom doc:fe668e3e8e20 .
+doc:FactsmontanaStateUniversity schema:postalCode "59717" .
+_:b38363de7c7f3866c7766efeab7813a0 rdf:reifies <<( doc:FactsmontanaStateUniversity schema:postalCode "59717" )>> ;
+	prov:wasDerivedFrom doc:fe668e3e8e20 .
+doc:FactspublicationYear_66 a None:Publication_year .
+_:b3353f28446090f416a31da0f9cf2855 rdf:reifies <<( doc:FactspublicationYear_66 rdf:type None:Publication_year )>> ;
+	prov:wasDerivedFrom doc:fe668e3e8e20 .
+doc:FactstannerJones a schema:Person .
+_:d399bcad1ee5e66aaeb9dc6997550796 rdf:reifies <<( doc:FactstannerJones rdf:type schema:Person )>> ;
+	prov:wasDerivedFrom doc:fe668e3e8e20 .
+doc:Factsarticle_67 schema:mentions doc:FactsrmseValue_1 .
+_:bb6b4eac7e87c22988b6fc5fb4b5ebdf rdf:reifies <<( doc:Factsarticle_67 schema:mentions doc:FactsrmseValue_1 )>> ;
+	prov:wasDerivedFrom doc:fe668e3e8e20 .
+doc:FactsrmseValue_1 schema:unitText "Âµm" .
+_:d4c7015db319d39e281904682d416b89 rdf:reifies <<( doc:FactsrmseValue_1 schema:unitText "Âµm" )>> ;
+	prov:wasDerivedFrom doc:fe668e3e8e20 .
+doc:FactsstackingEnsemble cco:has_part doc:FactsextremeGradientBoosting .
+_:ab466a47656eaa0da26b92d1a0735ad rdf:reifies <<( doc:FactsstackingEnsemble cco:has_part doc:FactsextremeGradientBoosting )>> ;
+	prov:wasDerivedFrom doc:fe668e3e8e20 .
+doc:FactsextremeGradientBoosting schema:name "Extreme gradient boosting"@en .
+_:ea982447ea6dfe52edef5f0441b34739 rdf:reifies <<( doc:FactsextremeGradientBoosting schema:name "Extreme gradient boosting"@en )>> ;
+	prov:wasDerivedFrom doc:fe668e3e8e20 .
+doc:Factsmachine_3 cco:is_about doc:FactstoolFlankWear .
+_:c48b85c9158cf5a1e2963df98cc1509c rdf:reifies <<( doc:Factsmachine_3 cco:is_about doc:FactstoolFlankWear )>> ;
+	prov:wasDerivedFrom doc:fe668e3e8e20 .
+doc:FactsrmseValue_1 schema:alternateName "RMSE"@en .
+_:f90a2ccfb5b4e833180a16a8ec14cde3 rdf:reifies <<( doc:FactsrmseValue_1 schema:alternateName "RMSE"@en )>> ;
+	prov:wasDerivedFrom doc:fe668e3e8e20 .
+doc:Factsmachine_3 a None:Maintainable_item .
+_:ae501adf23e038c16469de28236092e7 rdf:reifies <<( doc:Factsmachine_3 rdf:type None:Maintainable_item )>> ;
+	prov:wasDerivedFrom doc:fe668e3e8e20 .
+doc:FactsartificialNeuralNetwork_3 schema:alternateName "ANN"@en .
+_:d84d7e087b613daa1930782d9a1a34f1 rdf:reifies <<( doc:FactsartificialNeuralNetwork_3 schema:alternateName "ANN"@en )>> ;
+	prov:wasDerivedFrom doc:fe668e3e8e20 .
+doc:FactsstackingEnsemble a cco:Algorithm .
+_:ee540845f50856ed83b14c06acc7f555 rdf:reifies <<( doc:FactsstackingEnsemble rdf:type cco:Algorithm )>> ;
+	prov:wasDerivedFrom doc:fe668e3e8e20 .
+doc:FactsrandomForest_5 schema:name "Random forest"@en .
+_:ef200bfdec2a80ceba5ab55842f12ad7 rdf:reifies <<( doc:FactsrandomForest_5 schema:name "Random forest"@en )>> ;
+	prov:wasDerivedFrom doc:fe668e3e8e20 .
+doc:FactsloadCell a None:Data_variable .
+_:e6aa465d0bd1725c830414199dd29f2 rdf:reifies <<( doc:FactsloadCell rdf:type None:Data_variable )>> ;
+	prov:wasDerivedFrom doc:fe668e3e8e20 .
+doc:FactstoolWearPrediction_1 schema:name "Tool wear prediction"@en .
+_:bd83418b1359f9bebc445ef2ac785495 rdf:reifies <<( doc:FactstoolWearPrediction_1 schema:name "Tool wear prediction"@en )>> ;
+	prov:wasDerivedFrom doc:fe668e3e8e20 .
+doc:FactsyangCao schema:familyName "Cao" .
+_:e7d6451bb21a6fc1dfb9b69d91a28845 rdf:reifies <<( doc:FactsyangCao schema:familyName "Cao" )>> ;
+	prov:wasDerivedFrom doc:fe668e3e8e20 .
+doc:FactstoolWearPrediction_1 a cco:Algorithm .
+_:bf6f5fd8096c13befc0fca04e5e85f76 rdf:reifies <<( doc:FactstoolWearPrediction_1 rdf:type cco:Algorithm )>> ;
+	prov:wasDerivedFrom doc:fe668e3e8e20 .
+doc:Factsarticle_67 schema:keywords "Stacking ensemble"@en .
+_:d1767c5dc3870ebec323a3cadfe7cbb1 rdf:reifies <<( doc:Factsarticle_67 schema:keywords "Stacking ensemble"@en )>> ;
+	prov:wasDerivedFrom doc:fe668e3e8e20 .
+doc:FactshealthAssessmentFunction_45 schema:name "Prognostics and health management"@en .
+_:d3d5e19bb1da0003d0342cdbd30baa91 rdf:reifies <<( doc:FactshealthAssessmentFunction_45 schema:name "Prognostics and health management"@en )>> ;
+	prov:wasDerivedFrom doc:fe668e3e8e20 .
+doc:FactstoolWearPrediction_1 cco:is_about doc:FactstoolFlankWear .
+_:cdea5c1c1ba50332315d2916ff71409c rdf:reifies <<( doc:FactstoolWearPrediction_1 cco:is_about doc:FactstoolFlankWear )>> ;
+	prov:wasDerivedFrom doc:fe668e3e8e20 .
+doc:FactstoolWearPrediction_1 a None:Predictive_maintenance_model .
+_:e6a2460c32d82805487327c27edebdfb rdf:reifies <<( doc:FactstoolWearPrediction_1 rdf:type None:Predictive_maintenance_model )>> ;
+	prov:wasDerivedFrom doc:fe668e3e8e20 .
+doc:FactsacousticEmissionSensor a schema:Thing .
+_:cc2896ca1de30234069fbd3b79a398c2 rdf:reifies <<( doc:FactsacousticEmissionSensor rdf:type schema:Thing )>> ;
+	prov:wasDerivedFrom doc:fe668e3e8e20 .
+doc:Factsarticle_67 schema:keywords "Prognostics and health management"@en .
+_:c9f41aaea77bc8223f22cc3166c00f6 rdf:reifies <<( doc:Factsarticle_67 schema:keywords "Prognostics and health management"@en )>> ;
+	prov:wasDerivedFrom doc:fe668e3e8e20 .
+doc:FactstannerJones schema:givenName "Tanner" .
+_:e6cd8d9fc16216444d1c6a934314c52c rdf:reifies <<( doc:FactstannerJones schema:givenName "Tanner" )>> ;
+	prov:wasDerivedFrom doc:fe668e3e8e20 .
+doc:FactsmontanaStateUniversity schema:addressLocality "Bozeman" .
+_:b35e8df2dfece1dd709b7e4475139b67 rdf:reifies <<( doc:FactsmontanaStateUniversity schema:addressLocality "Bozeman" )>> ;
+	prov:wasDerivedFrom doc:fe668e3e8e20 .
+doc:FactsrandomForest_5 a cco:Algorithm .
+_:e6d7f6b5eb0a19cbc1ffa2376b96bd23 rdf:reifies <<( doc:FactsrandomForest_5 rdf:type cco:Algorithm )>> ;
+	prov:wasDerivedFrom doc:fe668e3e8e20 .
+doc:Factsarticle_67 schema:about doc:FactspredictiveMaintenance_6 .
+_:ab15c1163b44f4cf2af70f4cfb46fc77 rdf:reifies <<( doc:Factsarticle_67 schema:about doc:FactspredictiveMaintenance_6 )>> ;
+	prov:wasDerivedFrom doc:fe668e3e8e20 .
+doc:FactspublicationYear_66 None:has_interger_value 2025 .
+_:c553bea71eeea67a23aa8730c618fe5f rdf:reifies <<( doc:FactspublicationYear_66 None:has_interger_value 2025 )>> ;
+	prov:wasDerivedFrom doc:fe668e3e8e20 .
+doc:FactsyangCao schema:email "yang.cao1@montana.edu" .
+_:a5c3ff5198a63df1e6cacc2977a11880 rdf:reifies <<( doc:FactsyangCao schema:email "yang.cao1@montana.edu" )>> ;
+	prov:wasDerivedFrom doc:fe668e3e8e20 .
+doc:FactsloadCell a schema:Thing .
+_:c12b7bcdde1368a5e7085cef743a30dc rdf:reifies <<( doc:FactsloadCell rdf:type schema:Thing )>> ;
+	prov:wasDerivedFrom doc:fe668e3e8e20 .
+doc:FactsacousticEmissionSensor schema:name "Acoustic emission sensor"@en .
+_:b970f8024114e09525565795fc2895b0 rdf:reifies <<( doc:FactsacousticEmissionSensor schema:name "Acoustic emission sensor"@en )>> ;
+	prov:wasDerivedFrom doc:fe668e3e8e20 .
+doc:Factsaccelerometer_4 a schema:Thing .
+_:a93b53d0170afa91cca1c29192ab250c rdf:reifies <<( doc:Factsaccelerometer_4 rdf:type schema:Thing )>> ;
+	prov:wasDerivedFrom doc:fe668e3e8e20 .
+doc:FactsrmseValue_1 cco:describes doc:FactsrmseValue_1 .
+_:b01d929fafefdee14eab0482b61a1d7b rdf:reifies <<( doc:FactsrmseValue_1 cco:describes doc:FactsrmseValue_1 )>> ;
+	prov:wasDerivedFrom doc:fe668e3e8e20 .
+doc:FactsyangCao schema:givenName "Yang" .
+_:c259e1ae7f00a8b673dbc75e13e34a5a rdf:reifies <<( doc:FactsyangCao schema:givenName "Yang" )>> ;
+	prov:wasDerivedFrom doc:fe668e3e8e20 .
+doc:Factsarticle_67 schema:dateAccepted "2025-03-25"^^<http://www.w3.org/2001/XMLSchema#date> .
+_:bab097f00940f87380099b7ea909d25d rdf:reifies <<( doc:Factsarticle_67 schema:dateAccepted "2025-03-25"^^<http://www.w3.org/2001/XMLSchema#date> )>> ;
+	prov:wasDerivedFrom doc:fe668e3e8e20 .
+doc:FactsartificialNeuralNetwork_3 a cco:Algorithm .
+_:b9603b38f6ed4abf673a3d7578a229e7 rdf:reifies <<( doc:FactsartificialNeuralNetwork_3 rdf:type cco:Algorithm )>> ;
+	prov:wasDerivedFrom doc:fe668e3e8e20 .
+doc:FactsmontanaStateUniversity schema:addressCountry "USA" .
+_:d4233fc7a24605360ca930cccb32d1ca rdf:reifies <<( doc:FactsmontanaStateUniversity schema:addressCountry "USA" )>> ;
+	prov:wasDerivedFrom doc:fe668e3e8e20 .
+doc:Factsarticle_67 schema:datePublished "2025-04-03"^^<http://www.w3.org/2001/XMLSchema#date> .
+_:a3e8037b397fdd3fbf16dd7e1b5249c8 rdf:reifies <<( doc:Factsarticle_67 schema:datePublished "2025-04-03"^^<http://www.w3.org/2001/XMLSchema#date> )>> ;
+	prov:wasDerivedFrom doc:fe668e3e8e20 .
+doc:FactsstackingEnsemble cco:has_part doc:FactsrandomForest_5 .
+_:a078df86029d91494482dd632335895c rdf:reifies <<( doc:FactsstackingEnsemble cco:has_part doc:FactsrandomForest_5 )>> ;
+	prov:wasDerivedFrom doc:fe668e3e8e20 .
+doc:Factsarticle_67 schema:about doc:Factsmachine_3 .
+_:d90f5fb65397d828303a85fcbb0b7aa0 rdf:reifies <<( doc:Factsarticle_67 schema:about doc:Factsmachine_3 )>> ;
+	prov:wasDerivedFrom doc:fe668e3e8e20 .
+doc:FactsrmseValue_1 schema:value 58.237 .
+_:bf43cf2b636b4f1fbc4d7bef6b65c4e7 rdf:reifies <<( doc:FactsrmseValue_1 schema:value 58.237 )>> ;
+	prov:wasDerivedFrom doc:fe668e3e8e20 .
+doc:Factsarticle_67 schema:keywords "Tool wear prediction"@en .
+_:aea22fe1d1793470a063ce6d6fe305d6 rdf:reifies <<( doc:Factsarticle_67 schema:keywords "Tool wear prediction"@en )>> ;
+	prov:wasDerivedFrom doc:fe668e3e8e20 .
+doc:FactsstackingEnsemble cco:has_part doc:FactsartificialNeuralNetwork_3 .
+_:be6a7db7eeb826c42eaccb583b6bffbf rdf:reifies <<( doc:FactsstackingEnsemble cco:has_part doc:FactsartificialNeuralNetwork_3 )>> ;
+	prov:wasDerivedFrom doc:fe668e3e8e20 .
+doc:FactshealthAssessmentFunction_45 a None:Health_assessment .
+_:c05814300536af858af0aa08966b15d4 rdf:reifies <<( doc:FactshealthAssessmentFunction_45 rdf:type None:Health_assessment )>> ;
+	prov:wasDerivedFrom doc:fe668e3e8e20 .
+doc:FactsloadCell schema:name "Accelerometer data"@en .
+_:bc69f7694a0395fb5b80430e28da8621 rdf:reifies <<( doc:FactsloadCell schema:name "Accelerometer data"@en )>> ;
+	prov:wasDerivedFrom doc:fe668e3e8e20 .
+doc:Factsarticle_67 None:has_publication_year doc:FactspublicationYear_66 .
+_:f5701a1cdf88801cd7eb2976bc5ae57f rdf:reifies <<( doc:Factsarticle_67 None:has_publication_year doc:FactspublicationYear_66 )>> ;
+	prov:wasDerivedFrom doc:fe668e3e8e20 .
+doc:Factsmachine_3 schema:name "Computer numerical control machining equipment"@en .
+_:f4cf119592e7beac307a0a7fac3168bb rdf:reifies <<( doc:Factsmachine_3 schema:name "Computer numerical control machining equipment"@en )>> ;
+	prov:wasDerivedFrom doc:fe668e3e8e20 .
+doc:FactsrmseValue_1 schema:value 0.955 .
+_:da78ad5b27f7fb0afccc2df5bc487962 rdf:reifies <<( doc:FactsrmseValue_1 schema:value 0.955 )>> ;
+	prov:wasDerivedFrom doc:fe668e3e8e20 .
+doc:Factsarticle_67 schema:keywords "Multisensor data fusion"@en .
+_:b74bb2ec6e12d2817a09aa6f5c2ae099 rdf:reifies <<( doc:Factsarticle_67 schema:keywords "Multisensor data fusion"@en )>> ;
+	prov:wasDerivedFrom doc:fe668e3e8e20 .
+doc:FactstoolFlankWear schema:name "Tool flank wear"@en .
+_:ea07b2fc2aa3df33b7a0b07206f1c17f rdf:reifies <<( doc:FactstoolFlankWear schema:name "Tool flank wear"@en )>> ;
+	prov:wasDerivedFrom doc:fe668e3e8e20 .
+doc:FactsyangCao a schema:Person .
+_:c15776dc0f8d14f6fa9c1dca70869cc rdf:reifies <<( doc:FactsyangCao rdf:type schema:Person )>> ;
+	prov:wasDerivedFrom doc:fe668e3e8e20 .
+doc:FactsmontanaStateUniversity schema:name "Montana State University" .
+_:ce08bd6b6e9a559a2a161e5144c6e772 rdf:reifies <<( doc:FactsmontanaStateUniversity schema:name "Montana State University" )>> ;
+	prov:wasDerivedFrom doc:fe668e3e8e20 .
+doc:FactsrmseValue_1 schema:name "R squared"@en .
+_:a83af01bb5b17f838ca452d659e4f126 rdf:reifies <<( doc:FactsrmseValue_1 schema:name "R squared"@en )>> ;
+	prov:wasDerivedFrom doc:fe668e3e8e20 .
+doc:Factsarticle_67 a schema:ScholarlyArticle .
+_:d1b4c7072fcc6e6df8231459ec92333c rdf:reifies <<( doc:Factsarticle_67 rdf:type schema:ScholarlyArticle )>> ;
+	prov:wasDerivedFrom doc:fe668e3e8e20 .
+doc:FactsartificialNeuralNetwork_3 schema:name "Artificial neural network"@en .
+_:cced8800093de30b84c92f7a28199df rdf:reifies <<( doc:FactsartificialNeuralNetwork_3 schema:name "Artificial neural network"@en )>> ;
+	prov:wasDerivedFrom doc:fe668e3e8e20 .
+doc:Factsaccelerometer_4 schema:name "Accelerometer"@en .
+_:b8ff702d58d226dbf4f343757893fb4e rdf:reifies <<( doc:Factsaccelerometer_4 schema:name "Accelerometer"@en )>> ;
+	prov:wasDerivedFrom doc:fe668e3e8e20 .
+doc:FactsrmseValue_1 schema:alternateName "R2"@en .
+_:acac7c556f974d355f53a32044644fab rdf:reifies <<( doc:FactsrmseValue_1 schema:alternateName "R2"@en )>> ;
+	prov:wasDerivedFrom doc:fe668e3e8e20 .
+doc:Factsarticle_67 schema:keywords "Machine learning"@en .
+_:b20571613bf293f12bb9f6a3058f0885 rdf:reifies <<( doc:Factsarticle_67 schema:keywords "Machine learning"@en )>> ;
+	prov:wasDerivedFrom doc:fe668e3e8e20 .
+doc:FactsloadCell schema:name "Load cell data"@en .
+_:bb3f3c55d4cf06e2e4efd88fc9dd400a rdf:reifies <<( doc:FactsloadCell schema:name "Load cell data"@en )>> ;
+	prov:wasDerivedFrom doc:fe668e3e8e20 .
+doc:FactsrmseValue_1 a None:Performance_indicator .
+_:f178cc807f7ee0e5279fb9db61e7d56a rdf:reifies <<( doc:FactsrmseValue_1 rdf:type None:Performance_indicator )>> ;
+	prov:wasDerivedFrom doc:fe668e3e8e20 .
+doc:Factsarticle_67 schema:mentions doc:FactsstackingEnsemble .
+_:ef99179ebe5dee3bad25d3524fd9d482 rdf:reifies <<( doc:Factsarticle_67 schema:mentions doc:FactsstackingEnsemble )>> ;
+	prov:wasDerivedFrom doc:fe668e3e8e20 .
+doc:Factsarticle_67 a None:Predictive_Maintenance_Article .
+_:df35885cbf7ea94ef62c2f1ca89cff92 rdf:reifies <<( doc:Factsarticle_67 rdf:type None:Predictive_Maintenance_Article )>> ;
+	prov:wasDerivedFrom doc:fe668e3e8e20 .
+doc:FactstannerJones schema:familyName "Jones" .
+_:f909da35c1b73ad80d86964dce2bdc6d rdf:reifies <<( doc:FactstannerJones schema:familyName "Jones" )>> ;
+	prov:wasDerivedFrom doc:fe668e3e8e20 .
+doc:Factsarticle_67 schema:mentions doc:FactsloadCell .
+_:bf757914aa3dc558f2e39fc346feef99 rdf:reifies <<( doc:Factsarticle_67 schema:mentions doc:FactsloadCell )>> ;
+	prov:wasDerivedFrom doc:fe668e3e8e20 .
+doc:Factsarticle_67 None:has_title doc:FactsarticleTitle_87 .
+_:d3068c68430f91acbd3e7d6725958f5d rdf:reifies <<( doc:Factsarticle_67 None:has_title doc:FactsarticleTitle_87 )>> ;
+	prov:wasDerivedFrom doc:fe668e3e8e20 .
+doc:FactstoolWearPrediction_1 cco:describes doc:FactssensorFusionDetail .
+_:a370bf4e94d44dc3455b6f9feefa22b4 rdf:reifies <<( doc:FactstoolWearPrediction_1 cco:describes doc:FactssensorFusionDetail )>> ;
+	prov:wasDerivedFrom doc:fe668e3e8e20 .
+doc:FactsextremeGradientBoosting a cco:Algorithm .
+_:d8c1a7903cd87f7907ec7f3dbb9ff863 rdf:reifies <<( doc:FactsextremeGradientBoosting rdf:type cco:Algorithm )>> ;
+	prov:wasDerivedFrom doc:fe668e3e8e20 .
+doc:Remaining_useful_life_estimation a None:Remaining_useful_life_estimation .
+_:e3810263554673d68d92fce97f6cb29b rdf:reifies <<( doc:Remaining_useful_life_estimation rdf:type None:Remaining_useful_life_estimation )>> ;
+	prov:wasDerivedFrom doc:fe668e3e8e20 .
+doc:Factsarticle_67 schema:about doc:FactstoolWearPrediction_1 .
+_:b946a4a1879389d843d683c10fb58fab rdf:reifies <<( doc:Factsarticle_67 schema:about doc:FactstoolWearPrediction_1 )>> ;
+	prov:wasDerivedFrom doc:fe668e3e8e20 .
+doc:Factsarticle_67 schema:mentions doc:FactsacousticEmissionSensor .
+_:dbc4d90b27217a5edb30d4815f7e424b rdf:reifies <<( doc:Factsarticle_67 schema:mentions doc:FactsacousticEmissionSensor )>> ;
+	prov:wasDerivedFrom doc:fe668e3e8e20 .
+doc:FactssensorFusionDetail cco:describes doc:FactstoolWearPrediction_1 .
+_:beaebcf797b81dd0a146102834aba0e1 rdf:reifies <<( doc:FactssensorFusionDetail cco:describes doc:FactstoolWearPrediction_1 )>> ;
+	prov:wasDerivedFrom doc:fe668e3e8e20 .
+doc:FactsstackingEnsemble schema:name "Stacking ensemble"@en .
+_:e128b908045c128f0448caa6301e4cc rdf:reifies <<( doc:FactsstackingEnsemble schema:name "Stacking ensemble"@en )>> ;
+	prov:wasDerivedFrom doc:fe668e3e8e20 .
+doc:FactsloadCell schema:name "Acoustic emission data"@en .
+_:b90808332612deeea7b2be980a930dba rdf:reifies <<( doc:FactsloadCell schema:name "Acoustic emission data"@en )>> ;
+	prov:wasDerivedFrom doc:fe668e3e8e20 .
+doc:FactsextremeGradientBoosting schema:alternateName "XGBoost"@en .
+_:d81424f32c792a8971ede4e3036a00eb rdf:reifies <<( doc:FactsextremeGradientBoosting schema:alternateName "XGBoost"@en )>> ;
+	prov:wasDerivedFrom doc:fe668e3e8e20 .
+doc:Factsarticle_67 schema:mentions doc:Factsaccelerometer_4 .
+_:e65f411abc0372b9ee63f9f3a0e9593f rdf:reifies <<( doc:Factsarticle_67 schema:mentions doc:Factsaccelerometer_4 )>> ;
+	prov:wasDerivedFrom doc:fe668e3e8e20 .
+doc:FactsmontanaStateUniversity a schema:Organization .
+_:dfa5fb5f4a5b0df89fa46278f70bbbc4 rdf:reifies <<( doc:FactsmontanaStateUniversity rdf:type schema:Organization )>> ;
+	prov:wasDerivedFrom doc:fe668e3e8e20 .
+doc:Remaining_useful_life_estimation schema:name "Tool wear prediction and prognostics"@en .
+_:a11d66bc086671e47cdc11e189e0be5f rdf:reifies <<( doc:Remaining_useful_life_estimation schema:name "Tool wear prediction and prognostics"@en )>> ;
+	prov:wasDerivedFrom doc:fe668e3e8e20 .
+doc:FactsrandomForest_5 schema:alternateName "RF"@en .
+_:c0e70d132a8e67dcb220699766e78bd2 rdf:reifies <<( doc:FactsrandomForest_5 schema:alternateName "RF"@en )>> ;
+	prov:wasDerivedFrom doc:fe668e3e8e20 .
+doc:FactstoolFlankWear a None:Design_detail .
+_:cd8845a3156035c2bda2682474026a0 rdf:reifies <<( doc:FactstoolFlankWear rdf:type None:Design_detail )>> ;
+	prov:wasDerivedFrom doc:fe668e3e8e20 .
+doc:FactssensorFusionDetail schema:name "Three-level data fusion architecture"@en .
+_:b6bacb88558c1eff6bef9c8dcac4205f rdf:reifies <<( doc:FactssensorFusionDetail schema:name "Three-level data fusion architecture"@en )>> ;
+	prov:wasDerivedFrom doc:fe668e3e8e20 .
+doc:Factsarticle_67 schema:headline "Tool wear prediction based on multisensor data fusion and machine learning"@en .
+_:d354bfc2aeb21474291b8132011e6f95 rdf:reifies <<( doc:Factsarticle_67 schema:headline "Tool wear prediction based on multisensor data fusion and machine learning"@en )>> ;
+	prov:wasDerivedFrom doc:fe668e3e8e20 .
+doc:Factsmachine_3 schema:name "Cutting tool"@en .
+_:a0fa52d03b03a6688636a0eef27ff306 rdf:reifies <<( doc:Factsmachine_3 schema:name "Cutting tool"@en )>> ;
+	prov:wasDerivedFrom doc:fe668e3e8e20 .
+doc:a759bf483c3d a prov:Entity , schema:text ;
+	prov:generatedAtTime "2026-07-24T21:38:11.82721Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+	schema:position 1 ;
+	schema:identifier "a759bf483c3d" .
+doc:FactswienerProcess_2 a cco:Algorithm .
+_:a061916d7d57fc0358d7e870301ed694 rdf:reifies <<( doc:FactswienerProcess_2 rdf:type cco:Algorithm )>> ;
+	prov:wasDerivedFrom doc:a759bf483c3d .
+doc:FactsdataDrivenApproach_4 a cco:Algorithm .
+_:a987fe09917f2d0f5fd57ddb066d9701 rdf:reifies <<( doc:FactsdataDrivenApproach_4 rdf:type cco:Algorithm )>> ;
+	prov:wasDerivedFrom doc:a759bf483c3d .
+doc:FactswienerProcess_2 rdfs:label "Wiener process"@en .
+_:e3ee495819332962b19b9b7dd9f8fe02 rdf:reifies <<( doc:FactswienerProcess_2 rdfs:label "Wiener process"@en )>> ;
+	prov:wasDerivedFrom doc:a759bf483c3d .
+doc:Factsmachine_3 rdfs:label "worn-out cutting tool"@en .
+_:dab2ba64685d0ddbf18e73b82b3f8418 rdf:reifies <<( doc:Factsmachine_3 rdfs:label "worn-out cutting tool"@en )>> ;
+	prov:wasDerivedFrom doc:a759bf483c3d .
+_:ae501adf23e038c16469de28236092e7 prov:wasDerivedFrom doc:a759bf483c3d .
+doc:Factsmachine_3 rdfs:label "machine components"@en .
+_:dd504e2fd20744ac0a8c50681eb51f1d rdf:reifies <<( doc:Factsmachine_3 rdfs:label "machine components"@en )>> ;
+	prov:wasDerivedFrom doc:a759bf483c3d .
+doc:FactskalmanFilter_1 cco:is_about doc:Factsmachine_3 .
+_:e8ece6cc9cb386b963c2d3a4c43d6694 rdf:reifies <<( doc:FactskalmanFilter_1 cco:is_about doc:Factsmachine_3 )>> ;
+	prov:wasDerivedFrom doc:a759bf483c3d .
+doc:FactsrtscnnModel a None:Predictive_maintenance_model .
+_:bd776fc4d9d86d06c8aef8fd74000b3d rdf:reifies <<( doc:FactsrtscnnModel rdf:type None:Predictive_maintenance_model )>> ;
+	prov:wasDerivedFrom doc:a759bf483c3d .
+doc:FactsphysicsInformedMetaLearning cco:is_about doc:Factsmachine_3 .
+_:e30daa1c2a1d181169015f80727b8255 rdf:reifies <<( doc:FactsphysicsInformedMetaLearning cco:is_about doc:Factsmachine_3 )>> ;
+	prov:wasDerivedFrom doc:a759bf483c3d .
+_:e6a2460c32d82805487327c27edebdfb prov:wasDerivedFrom doc:a759bf483c3d .
+doc:Factsmachine_3 rdfs:label "cutting tool"@en .
+_:c85c24493ca39949ec5a2bf97604a05e rdf:reifies <<( doc:Factsmachine_3 rdfs:label "cutting tool"@en )>> ;
+	prov:wasDerivedFrom doc:a759bf483c3d .
+doc:FactstoolWearPrediction_1 rdfs:label "probabilistic tool wear prediction model"@en .
+_:ed82cd740fbf0d00b2f1f35c9985a9a5 rdf:reifies <<( doc:FactstoolWearPrediction_1 rdfs:label "probabilistic tool wear prediction model"@en )>> ;
+	prov:wasDerivedFrom doc:a759bf483c3d .
+doc:FactssupportVectorMachine_14 a cco:Algorithm .
+_:c698fd226a0d882de05441e2d7c521c4 rdf:reifies <<( doc:FactssupportVectorMachine_14 rdf:type cco:Algorithm )>> ;
+	prov:wasDerivedFrom doc:a759bf483c3d .
+doc:FactsregressionFunction_30 rdfs:label "multiple linear regression"@en .
+_:e8b1c87c688dae2e847c9d12df83f72f rdf:reifies <<( doc:FactsregressionFunction_30 rdfs:label "multiple linear regression"@en )>> ;
+	prov:wasDerivedFrom doc:a759bf483c3d .
+doc:Predictive_maintenance_model None:has_predictive_maintenance_function doc:FactshealthForecastingFunction .
+_:c8734c99117d2714edc3df9a2f7c6c4a rdf:reifies <<( doc:Predictive_maintenance_model None:has_predictive_maintenance_function doc:FactshealthForecastingFunction )>> ;
+	prov:wasDerivedFrom doc:a759bf483c3d .
+doc:FactsanalysisOfVariance a cco:Algorithm .
+_:a02e0e7ef4f8781fb6402f361cbd270f rdf:reifies <<( doc:FactsanalysisOfVariance rdf:type cco:Algorithm )>> ;
+	prov:wasDerivedFrom doc:a759bf483c3d .
+doc:FactstoolWearPrediction_1 a None:Future_state_forecast .
+_:dcab45fb8356917d83d2d6dacb12696a rdf:reifies <<( doc:FactstoolWearPrediction_1 rdf:type None:Future_state_forecast )>> ;
+	prov:wasDerivedFrom doc:a759bf483c3d .
+doc:FactsdataDrivenApproach_4 rdfs:label "physics-based approach"@en .
+_:f637baa019635be40f15c227b37b9838 rdf:reifies <<( doc:FactsdataDrivenApproach_4 rdfs:label "physics-based approach"@en )>> ;
+	prov:wasDerivedFrom doc:a759bf483c3d .
+doc:FactsregressionFunction_30 cco:is_about doc:Factsmachine_3 .
+_:d57dc8ac6255cd0385b0c031ce4d261 rdf:reifies <<( doc:FactsregressionFunction_30 cco:is_about doc:Factsmachine_3 )>> ;
+	prov:wasDerivedFrom doc:a759bf483c3d .
+doc:FactsrtscnnModel rdfs:label "physics-guided neural network"@en .
+_:f6ae4a0583a195fd894d1720d7add46f rdf:reifies <<( doc:FactsrtscnnModel rdfs:label "physics-guided neural network"@en )>> ;
+	prov:wasDerivedFrom doc:a759bf483c3d .
+doc:FactsrtscnnModel rdfs:label "physical model"@en .
+_:d7039ef88ad245ed5e58644998e1e9b5 rdf:reifies <<( doc:FactsrtscnnModel rdfs:label "physical model"@en )>> ;
+	prov:wasDerivedFrom doc:a759bf483c3d .
+doc:FactsloadCell cco:describes doc:Factsmachine_3 .
+_:df7d094f7e5e415154ad80cf2305e160 rdf:reifies <<( doc:FactsloadCell cco:describes doc:Factsmachine_3 )>> ;
+	prov:wasDerivedFrom doc:a759bf483c3d .
+doc:FactsoperatingConditionFeatures a None:Data_variable .
+_:e4204385a2b01f8cca4190133abef0ed rdf:reifies <<( doc:FactsoperatingConditionFeatures rdf:type None:Data_variable )>> ;
+	prov:wasDerivedFrom doc:a759bf483c3d .
+doc:FactsmachineLearningAlgorithm_2 rdfs:label "machine learning algorithm"@en .
+_:c00b353da3187c1a7a7b23f0ae61137d rdf:reifies <<( doc:FactsmachineLearningAlgorithm_2 rdfs:label "machine learning algorithm"@en )>> ;
+	prov:wasDerivedFrom doc:a759bf483c3d .
+doc:Predictive_maintenance_model a None:Predictive_maintenance_system_module .
+_:ed9ad944c074dd2bdf8e4e0131e5b013 rdf:reifies <<( doc:Predictive_maintenance_model rdf:type None:Predictive_maintenance_system_module )>> ;
+	prov:wasDerivedFrom doc:a759bf483c3d .
+doc:FactsregressionFunction_30 rdfs:label "Gaussian regression"@en .
+_:d20efe42913345d69a9ad3194b7820d4 rdf:reifies <<( doc:FactsregressionFunction_30 rdfs:label "Gaussian regression"@en )>> ;
+	prov:wasDerivedFrom doc:a759bf483c3d .
+doc:FactsmachineLearningAlgorithm_2 a cco:Algorithm .
+_:d59162c19656daf3f8b66d12581874f8 rdf:reifies <<( doc:FactsmachineLearningAlgorithm_2 rdf:type cco:Algorithm )>> ;
+	prov:wasDerivedFrom doc:a759bf483c3d .
+doc:FactsdataDrivenApproach_4 cco:is_about doc:Factsmachine_3 .
+_:d4926d5f1291c734c7e1589bb988e2c8 rdf:reifies <<( doc:FactsdataDrivenApproach_4 cco:is_about doc:Factsmachine_3 )>> ;
+	prov:wasDerivedFrom doc:a759bf483c3d .
+_:b9603b38f6ed4abf673a3d7578a229e7 prov:wasDerivedFrom doc:a759bf483c3d .
+doc:FactsregressionFunction_30 a None:Predictive_maintenance_model .
+_:abb21c045c6eb47433e63c091e0226cc rdf:reifies <<( doc:FactsregressionFunction_30 rdf:type None:Predictive_maintenance_model )>> ;
+	prov:wasDerivedFrom doc:a759bf483c3d .
+doc:FactsartificialNeuralNetwork_3 rdfs:label "artificial neural network"@en .
+_:dacdbdec787f5f336b3e6d08ff044d30 rdf:reifies <<( doc:FactsartificialNeuralNetwork_3 rdfs:label "artificial neural network"@en )>> ;
+	prov:wasDerivedFrom doc:a759bf483c3d .
+doc:FactshealthForecastingFunction a None:Future_state_forecast .
+_:b7333227bfaf92d5faa8714834f7c2f6 rdf:reifies <<( doc:FactshealthForecastingFunction rdf:type None:Future_state_forecast )>> ;
+	prov:wasDerivedFrom doc:a759bf483c3d .
+_:c05814300536af858af0aa08966b15d4 prov:wasDerivedFrom doc:a759bf483c3d .
+doc:Predictive_maintenance_model a None:Fault_detection .
+_:fe98ccdd954b0dc17cd5a896a9ae4834 rdf:reifies <<( doc:Predictive_maintenance_model rdf:type None:Fault_detection )>> ;
+	prov:wasDerivedFrom doc:a759bf483c3d .
+doc:FactsmachineParameters a None:Data_variable .
+_:f888bd794454d00c2a0cbf6d8aeb6ee0 rdf:reifies <<( doc:FactsmachineParameters rdf:type None:Data_variable )>> ;
+	prov:wasDerivedFrom doc:a759bf483c3d .
+doc:FactsanalysisOfVariance rdfs:label "analysis of variance"@en .
+_:b2c4dafdb58d92a034a147e24ba2a66c rdf:reifies <<( doc:FactsanalysisOfVariance rdfs:label "analysis of variance"@en )>> ;
+	prov:wasDerivedFrom doc:a759bf483c3d .
+doc:FactstargetVariable a None:Data_variable .
+_:e6cc9a509af2515afe5bd5c23025ea12 rdf:reifies <<( doc:FactstargetVariable rdf:type None:Data_variable )>> ;
+	prov:wasDerivedFrom doc:a759bf483c3d .
+doc:FactsphysicsInformedMetaLearning rdfs:label "physics-informed meta-learning"@en .
+_:a003cbf2b16b41f56c1859428304fcd3 rdf:reifies <<( doc:FactsphysicsInformedMetaLearning rdfs:label "physics-informed meta-learning"@en )>> ;
+	prov:wasDerivedFrom doc:a759bf483c3d .
+doc:FactswienerProcess_2 cco:is_about doc:Factsmachine_3 .
+_:eab6a783d7df51bee6689e64a177b54a rdf:reifies <<( doc:FactswienerProcess_2 cco:is_about doc:Factsmachine_3 )>> ;
+	prov:wasDerivedFrom doc:a759bf483c3d .
+doc:FactsoperatingConditionFeatures cco:describes doc:Factsmachine_3 .
+_:ec9a8e640ee7344005e330ab7558b5f4 rdf:reifies <<( doc:FactsoperatingConditionFeatures cco:describes doc:Factsmachine_3 )>> ;
+	prov:wasDerivedFrom doc:a759bf483c3d .
+doc:Predictive_maintenance_model None:has_predictive_maintenance_function doc:Predictive_maintenance_model .
+_:a077d4b36e42c58dadee938fde14cbf rdf:reifies <<( doc:Predictive_maintenance_model None:has_predictive_maintenance_function doc:Predictive_maintenance_model )>> ;
+	prov:wasDerivedFrom doc:a759bf483c3d .
+doc:FactshealthAssessmentFunction_45 rdfs:label "health assessment"@en .
+_:ca5e685c67d432848aba74fce2f70d36 rdf:reifies <<( doc:FactshealthAssessmentFunction_45 rdfs:label "health assessment"@en )>> ;
+	prov:wasDerivedFrom doc:a759bf483c3d .
+doc:FactsrtscnnModel cco:is_about doc:Factsmachine_3 .
+_:e9d262e69698529beedb6be6a165762b rdf:reifies <<( doc:FactsrtscnnModel cco:is_about doc:Factsmachine_3 )>> ;
+	prov:wasDerivedFrom doc:a759bf483c3d .
+_:e6aa465d0bd1725c830414199dd29f2 prov:wasDerivedFrom doc:a759bf483c3d .
+doc:FactstargetVariable rdfs:label "target variable"@en .
+_:c9575f73c3a43ecfd3daa6fdcf7835da rdf:reifies <<( doc:FactstargetVariable rdfs:label "target variable"@en )>> ;
+	prov:wasDerivedFrom doc:a759bf483c3d .
+doc:FactsprobabilityDistributionFunction a cco:Algorithm .
+_:f67d1bc591362988c666b0f92feced2b rdf:reifies <<( doc:FactsprobabilityDistributionFunction rdf:type cco:Algorithm )>> ;
+	prov:wasDerivedFrom doc:a759bf483c3d .
+doc:Predictive_maintenance_model rdfs:label "tool condition monitoring"@en .
+_:ebbe361fd7f54d6e45333ea9e6d59b12 rdf:reifies <<( doc:Predictive_maintenance_model rdfs:label "tool condition monitoring"@en )>> ;
+	prov:wasDerivedFrom doc:a759bf483c3d .
+doc:FactsmachineParameters rdfs:label "machine parameters"@en .
+_:ea7b74ee5fd939f58a05ba0b6b118bb2 rdf:reifies <<( doc:FactsmachineParameters rdfs:label "machine parameters"@en )>> ;
+	prov:wasDerivedFrom doc:a759bf483c3d .
+doc:FactsmachineParameters cco:describes doc:Factsmachine_3 .
+_:f80871a99bfc2d3ca946e0f81a9e2087 rdf:reifies <<( doc:FactsmachineParameters cco:describes doc:Factsmachine_3 )>> ;
+	prov:wasDerivedFrom doc:a759bf483c3d .
+doc:Predictive_maintenance_model rdfs:label "automated monitoring system"@en .
+_:b35dc11833da36c31fa706b14dcda1f9 rdf:reifies <<( doc:Predictive_maintenance_model rdfs:label "automated monitoring system"@en )>> ;
+	prov:wasDerivedFrom doc:a759bf483c3d .
+doc:FactsloadCell rdfs:label "signal data"@en .
+_:fce08c3cd1d0208c8181740bacb98e86 rdf:reifies <<( doc:FactsloadCell rdfs:label "signal data"@en )>> ;
+	prov:wasDerivedFrom doc:a759bf483c3d .
+doc:FactshealthForecastingFunction rdfs:label "health forecasting"@en .
+_:f22d5d30af5c9053079b80d2124f86d0 rdf:reifies <<( doc:FactshealthForecastingFunction rdfs:label "health forecasting"@en )>> ;
+	prov:wasDerivedFrom doc:a759bf483c3d .
+doc:FactskalmanFilter_1 a cco:Algorithm .
+_:b2554075f0fb805aada7e148cf43e066 rdf:reifies <<( doc:FactskalmanFilter_1 rdf:type cco:Algorithm )>> ;
+	prov:wasDerivedFrom doc:a759bf483c3d .
+doc:Factsmachine_3 rdfs:label "machine"@en .
+_:bb649f2087355515d95db3112b5d466e rdf:reifies <<( doc:Factsmachine_3 rdfs:label "machine"@en )>> ;
+	prov:wasDerivedFrom doc:a759bf483c3d .
+doc:FactssupportVectorMachine_14 rdfs:label "support vector machine"@en .
+_:eb12afdca6d85cb2533dc1fa0b347d00 rdf:reifies <<( doc:FactssupportVectorMachine_14 rdfs:label "support vector machine"@en )>> ;
+	prov:wasDerivedFrom doc:a759bf483c3d .
+doc:FactskalmanFilter_1 rdfs:label "particle filtering"@en .
+_:b96f22c4a280c9bfaa33bead25e48a24 rdf:reifies <<( doc:FactskalmanFilter_1 rdfs:label "particle filtering"@en )>> ;
+	prov:wasDerivedFrom doc:a759bf483c3d .
+doc:FactskalmanFilter_1 rdfs:label "Kalman filter"@en .
+_:e521c85d3f0f76e7ffd938291185606f rdf:reifies <<( doc:FactskalmanFilter_1 rdfs:label "Kalman filter"@en )>> ;
+	prov:wasDerivedFrom doc:a759bf483c3d .
+doc:FactsprobabilityDistributionFunction rdfs:label "probability distribution function"@en .
+_:e823f0759ff69ca8d00eca2fa93601f5 rdf:reifies <<( doc:FactsprobabilityDistributionFunction rdfs:label "probability distribution function"@en )>> ;
+	prov:wasDerivedFrom doc:a759bf483c3d .
+doc:FactsoperatingConditionFeatures rdfs:label "features related to machine operating conditions"@en .
+_:aacb143428b148491dd361e3c57c84c9 rdf:reifies <<( doc:FactsoperatingConditionFeatures rdfs:label "features related to machine operating conditions"@en )>> ;
+	prov:wasDerivedFrom doc:a759bf483c3d .
+doc:FactstoolWearPrediction_1 cco:is_about doc:Factsmachine_3 .
+_:f1004613d88511c66de661a51c625e65 rdf:reifies <<( doc:FactstoolWearPrediction_1 cco:is_about doc:Factsmachine_3 )>> ;
+	prov:wasDerivedFrom doc:a759bf483c3d .
+doc:FactstoolWearPrediction_1 rdfs:label "tool wear prediction"@en .
+_:b8c7b0b33f72190aef488747c86ca774 rdf:reifies <<( doc:FactstoolWearPrediction_1 rdfs:label "tool wear prediction"@en )>> ;
+	prov:wasDerivedFrom doc:a759bf483c3d .
+doc:Predictive_maintenance_model rdfs:label "continuous tool condition monitoring"@en .
+_:e55004ee54971ff196109be910d95266 rdf:reifies <<( doc:Predictive_maintenance_model rdfs:label "continuous tool condition monitoring"@en )>> ;
+	prov:wasDerivedFrom doc:a759bf483c3d .
+doc:FactsphysicsInformedMetaLearning a cco:Algorithm .
+_:dd71fce23503c51df30e2df8f5f35021 rdf:reifies <<( doc:FactsphysicsInformedMetaLearning rdf:type cco:Algorithm )>> ;
+	prov:wasDerivedFrom doc:a759bf483c3d .
+doc:FactsrtscnnModel rdfs:label "hidden Markov model"@en .
+_:a12331307a5ce360171178a4cf8425f1 rdf:reifies <<( doc:FactsrtscnnModel rdfs:label "hidden Markov model"@en )>> ;
+	prov:wasDerivedFrom doc:a759bf483c3d .
+doc:FactsdataDrivenApproach_4 rdfs:label "data-driven approach"@en .
+_:acd84f47eaa7e298cefe4ccbe8e9c285 rdf:reifies <<( doc:FactsdataDrivenApproach_4 rdfs:label "data-driven approach"@en )>> ;
+	prov:wasDerivedFrom doc:a759bf483c3d .
+doc:ff684a9282ec a prov:Entity , schema:text ;
+	prov:generatedAtTime "2026-07-24T21:38:11.830209Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+	schema:position 2 ;
+	schema:identifier "ff684a9282ec" .
+doc:FactsstackedSparseAutoencoderModel a None:Predictive_maintenance_model .
+_:ca450a7ff275f3ba405bed196293dfaf rdf:reifies <<( doc:FactsstackedSparseAutoencoderModel rdf:type None:Predictive_maintenance_model )>> ;
+	prov:wasDerivedFrom doc:ff684a9282ec .
+_:e6aa465d0bd1725c830414199dd29f2 prov:wasDerivedFrom doc:ff684a9282ec .
+doc:FactscuttingDepth_1 rdfs:label "depth of cut"@en .
+_:d480a28d6d5519f4402b5904eaa31813 rdf:reifies <<( doc:FactscuttingDepth_1 rdfs:label "depth of cut"@en )>> ;
+	prov:wasDerivedFrom doc:ff684a9282ec .
+doc:FactscuttingSpeed_2 a None:Data_variable .
+_:ad8cdda85b6a3a80ca2e094f38dac8b5 rdf:reifies <<( doc:FactscuttingSpeed_2 rdf:type None:Data_variable )>> ;
+	prov:wasDerivedFrom doc:ff684a9282ec .
+doc:FactsrandomForest_5 a None:Model_type .
+_:f9fdb2a1720437ad30976259f4d9eb5b rdf:reifies <<( doc:FactsrandomForest_5 rdf:type None:Model_type )>> ;
+	prov:wasDerivedFrom doc:ff684a9282ec .
+doc:FactsrandomForest_5 rdfs:label "random forest model"@en .
+_:ce0d18e8bf73caf775ad713698421071 rdf:reifies <<( doc:FactsrandomForest_5 rdfs:label "random forest model"@en )>> ;
+	prov:wasDerivedFrom doc:ff684a9282ec .
+doc:FactsacousticEmissionSensor a None:Data_variable .
+_:e4dff1029ee7043621d492079225d6ee rdf:reifies <<( doc:FactsacousticEmissionSensor rdf:type None:Data_variable )>> ;
+	prov:wasDerivedFrom doc:ff684a9282ec .
+doc:FactsloadCell rdfs:label "force signal"@en .
+_:baa5ffecdf7bd031db4dd5f678ae3f2a rdf:reifies <<( doc:FactsloadCell rdfs:label "force signal"@en )>> ;
+	prov:wasDerivedFrom doc:ff684a9282ec .
+doc:FactsregressionFunction_30 a None:Regression .
+_:f57bc4138f928ef0bc7d2a2f27fa310a rdf:reifies <<( doc:FactsregressionFunction_30 rdf:type None:Regression )>> ;
+	prov:wasDerivedFrom doc:ff684a9282ec .
+_:e9d262e69698529beedb6be6a165762b prov:wasDerivedFrom doc:ff684a9282ec .
+doc:FactsartificialNeuralNetwork_3 a None:Model_type .
+_:c5ab5be5e5fa39444d3eeb78f9f7480a rdf:reifies <<( doc:FactsartificialNeuralNetwork_3 rdf:type None:Model_type )>> ;
+	prov:wasDerivedFrom doc:ff684a9282ec .
+doc:FactsmultisensorDataFusionModule a None:Predictive_maintenance_system_module .
+_:ab43ba07d59c33293857182b72675dd6 rdf:reifies <<( doc:FactsmultisensorDataFusionModule rdf:type None:Predictive_maintenance_system_module )>> ;
+	prov:wasDerivedFrom doc:ff684a9282ec .
+doc:FactsrtscnnModel cco:is_about doc:FactscuttingSpeed_2 .
+_:c2dbf658e437a01054ac9158457d5d3b rdf:reifies <<( doc:FactsrtscnnModel cco:is_about doc:FactscuttingSpeed_2 )>> ;
+	prov:wasDerivedFrom doc:ff684a9282ec .
+doc:FactstoolWearPrediction_1 rdfs:label "tool wear prediction error value"@en .
+_:d7091ab7d4e5f0ca00a9d21025dc69c rdf:reifies <<( doc:FactstoolWearPrediction_1 rdfs:label "tool wear prediction error value"@en )>> ;
+	prov:wasDerivedFrom doc:ff684a9282ec .
+doc:FactstoolWearPrediction_1 schema:unitText "%" .
+_:b6b300828b2d876f6c714ca1cfd941d7 rdf:reifies <<( doc:FactstoolWearPrediction_1 schema:unitText "%" )>> ;
+	prov:wasDerivedFrom doc:ff684a9282ec .
+doc:FactsloadCell rdfs:label "acceleration signal"@en .
+_:b782fbcef32b2588336ad3e3562091c4 rdf:reifies <<( doc:FactsloadCell rdfs:label "acceleration signal"@en )>> ;
+	prov:wasDerivedFrom doc:ff684a9282ec .
+doc:FactsloadCell rdfs:label "power sensor"@en .
+_:e18d73ed0b9ae2a49eae45f7dc6246b9 rdf:reifies <<( doc:FactsloadCell rdfs:label "power sensor"@en )>> ;
+	prov:wasDerivedFrom doc:ff684a9282ec .
+doc:FactsregressionFunction_30 rdfs:label "data-driven prediction"@en .
+_:e53c5922966f75bb5fa54b7d92b60b7f rdf:reifies <<( doc:FactsregressionFunction_30 rdfs:label "data-driven prediction"@en )>> ;
+	prov:wasDerivedFrom doc:ff684a9282ec .
+_:c8552c2694fb58dca7b5bcfb4423f759 prov:wasDerivedFrom doc:ff684a9282ec .
+doc:FactsrtscnnModel rdfs:label "reshaped time-series convolutional neural network"@en .
+_:a70b75604fc993e2a7b14cc267107c72 rdf:reifies <<( doc:FactsrtscnnModel rdfs:label "reshaped time-series convolutional neural network"@en )>> ;
+	prov:wasDerivedFrom doc:ff684a9282ec .
+doc:FactsacousticEmissionSensor rdfs:label "acoustic emission sensor"@en .
+_:b9c630deff610e767ab75320659947d1 rdf:reifies <<( doc:FactsacousticEmissionSensor rdfs:label "acoustic emission sensor"@en )>> ;
+	prov:wasDerivedFrom doc:ff684a9282ec .
+doc:FactsxgboostModel_3 a None:Predictive_maintenance_model .
+_:cc0f4a9d648ff073ab183a89f20fcbbc rdf:reifies <<( doc:FactsxgboostModel_3 rdf:type None:Predictive_maintenance_model )>> ;
+	prov:wasDerivedFrom doc:ff684a9282ec .
+doc:FactscuttingDepth_1 a None:Data_variable .
+_:ca7263f44f530e86dda2c95b348c6001 rdf:reifies <<( doc:FactscuttingDepth_1 rdf:type None:Data_variable )>> ;
+	prov:wasDerivedFrom doc:ff684a9282ec .
+doc:FactstoolWearPrediction_1 rdfs:label "tool wear prediction error"@en .
+_:cc46e6a364c8b00931a4541cd6395689 rdf:reifies <<( doc:FactstoolWearPrediction_1 rdfs:label "tool wear prediction error"@en )>> ;
+	prov:wasDerivedFrom doc:ff684a9282ec .
+doc:FactsmultisensorDataFusionModule None:has_design_detail doc:FactsonlineMonitoringDetail .
+_:c83a0ed5cf922e33f77d1cc0ba94f8a6 rdf:reifies <<( doc:FactsmultisensorDataFusionModule None:has_design_detail doc:FactsonlineMonitoringDetail )>> ;
+	prov:wasDerivedFrom doc:ff684a9282ec .
+doc:FactsfeedRate_3 a None:Data_variable .
+_:b8c486e401041ac675b31a7a71065985 rdf:reifies <<( doc:FactsfeedRate_3 rdf:type None:Data_variable )>> ;
+	prov:wasDerivedFrom doc:ff684a9282ec .
+doc:FactsloadCell rdfs:label "force sensor"@en .
+_:d50bee1e40bd94f3da9429ba31eb4efa rdf:reifies <<( doc:FactsloadCell rdfs:label "force sensor"@en )>> ;
+	prov:wasDerivedFrom doc:ff684a9282ec .
+doc:FactsrandomForest_5 cco:is_about doc:Factsmachine_3 .
+_:a0ca51239e3750cd231f974ebdec6e4 rdf:reifies <<( doc:FactsrandomForest_5 cco:is_about doc:Factsmachine_3 )>> ;
+	prov:wasDerivedFrom doc:ff684a9282ec .
+_:dacdbdec787f5f336b3e6d08ff044d30 prov:wasDerivedFrom doc:ff684a9282ec .
+doc:FactsmultisensorDataFusionModule rdfs:label "multisensor data fusion module"@en .
+_:e5e56d1432c7b1ee0e1d94edd945f6ee rdf:reifies <<( doc:FactsmultisensorDataFusionModule rdfs:label "multisensor data fusion module"@en )>> ;
+	prov:wasDerivedFrom doc:ff684a9282ec .
+doc:FactstoolWearPrediction_1 cco:is_about doc:FactsmultisensorDataFusionModule .
+_:a7ad85408599c5723b44d02cdd845017 rdf:reifies <<( doc:FactstoolWearPrediction_1 cco:is_about doc:FactsmultisensorDataFusionModule )>> ;
+	prov:wasDerivedFrom doc:ff684a9282ec .
+doc:FactstoolWearPrediction_1 cco:is_about doc:FactsrtscnnModel .
+_:fc17617d655e634f4a77b9acdcc02e98 rdf:reifies <<( doc:FactstoolWearPrediction_1 cco:is_about doc:FactsrtscnnModel )>> ;
+	prov:wasDerivedFrom doc:ff684a9282ec .
+doc:FactsloadCell rdfs:label "sound signal"@en .
+_:c13c6d9876a4ae089cc0d9a1e52740bf rdf:reifies <<( doc:FactsloadCell rdfs:label "sound signal"@en )>> ;
+	prov:wasDerivedFrom doc:ff684a9282ec .
+doc:FactsrtscnnModel cco:is_about doc:FactsfeedRate_3 .
+_:d889864faa514ebdc97c5b35ea062572 rdf:reifies <<( doc:FactsrtscnnModel cco:is_about doc:FactsfeedRate_3 )>> ;
+	prov:wasDerivedFrom doc:ff684a9282ec .
+doc:Factsxgboost rdfs:label "XGBoost"@en .
+_:f98e5849dc7ca8ff5188e7ef738151a7 rdf:reifies <<( doc:Factsxgboost rdfs:label "XGBoost"@en )>> ;
+	prov:wasDerivedFrom doc:ff684a9282ec .
+doc:Factsxgboost a None:Model_type .
+_:cac62e8903244eea913b15fc651b7de rdf:reifies <<( doc:Factsxgboost rdf:type None:Model_type )>> ;
+	prov:wasDerivedFrom doc:ff684a9282ec .
+doc:Factsmachine_3 rdfs:label "CNC machine tool"@en .
+_:b3bec01c914a7844834a76dec454bd6a rdf:reifies <<( doc:Factsmachine_3 rdfs:label "CNC machine tool"@en )>> ;
+	prov:wasDerivedFrom doc:ff684a9282ec .
+doc:FactsstackedSparseAutoencoderModel cco:is_about doc:Factsmachine_3 .
+_:f8477ff81cd2592cf3fac293f5aa859f rdf:reifies <<( doc:FactsstackedSparseAutoencoderModel cco:is_about doc:Factsmachine_3 )>> ;
+	prov:wasDerivedFrom doc:ff684a9282ec .
+_:bd776fc4d9d86d06c8aef8fd74000b3d prov:wasDerivedFrom doc:ff684a9282ec .
+doc:FactsonlineMonitoringDetail rdfs:label "continuous online monitoring"@en .
+_:c1f4dc0b4f696260553ef23a12815aee rdf:reifies <<( doc:FactsonlineMonitoringDetail rdfs:label "continuous online monitoring"@en )>> ;
+	prov:wasDerivedFrom doc:ff684a9282ec .
+doc:FactstoolWearPrediction_1 a None:Performance_value .
+_:ce0c96713d59ff3484d9155a8239f612 rdf:reifies <<( doc:FactstoolWearPrediction_1 rdf:type None:Performance_value )>> ;
+	prov:wasDerivedFrom doc:ff684a9282ec .
+doc:FactsfeedRate_3 rdfs:label "feed rate"@en .
+_:b00325ad5f212c5015f4c436ed259aa8 rdf:reifies <<( doc:FactsfeedRate_3 rdfs:label "feed rate"@en )>> ;
+	prov:wasDerivedFrom doc:ff684a9282ec .
+doc:FactssensorFusionDetail rdfs:label "multisensor data fusion configuration"@en .
+_:bba9f7034288ed1c40951e187b88117b rdf:reifies <<( doc:FactssensorFusionDetail rdfs:label "multisensor data fusion configuration"@en )>> ;
+	prov:wasDerivedFrom doc:ff684a9282ec .
+doc:FactstoolWearPrediction_1 a None:Performance_indicator .
+_:cfba19452cdd48b7e31306f0fcb01ab2 rdf:reifies <<( doc:FactstoolWearPrediction_1 rdf:type None:Performance_indicator )>> ;
+	prov:wasDerivedFrom doc:ff684a9282ec .
+doc:FactsmultisensorDataFusionModule None:has_design_detail doc:FactssensorFusionDetail .
+_:d64210885d67e875688d34c188a42083 rdf:reifies <<( doc:FactsmultisensorDataFusionModule None:has_design_detail doc:FactssensorFusionDetail )>> ;
+	prov:wasDerivedFrom doc:ff684a9282ec .
+doc:FactstoolWearPrediction_1 schema:value "2"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+_:f8ed93f5cae8210db97435afa885322d rdf:reifies <<( doc:FactstoolWearPrediction_1 schema:value "2"^^<http://www.w3.org/2001/XMLSchema#decimal> )>> ;
+	prov:wasDerivedFrom doc:ff684a9282ec .
+doc:FactsmultisensorDataFusionModule None:has_predictive_maintenance_function doc:FactsregressionFunction_30 .
+_:a0d373b5e3661235d58d2ae507776f98 rdf:reifies <<( doc:FactsmultisensorDataFusionModule None:has_predictive_maintenance_function doc:FactsregressionFunction_30 )>> ;
+	prov:wasDerivedFrom doc:ff684a9282ec .
+doc:FactssensorFusionDetail None:describes_configuration doc:FactsmultisensorDataFusionModule .
+_:c5ddc0ee2ed89db0e95e350292468694 rdf:reifies <<( doc:FactssensorFusionDetail None:describes_configuration doc:FactsmultisensorDataFusionModule )>> ;
+	prov:wasDerivedFrom doc:ff684a9282ec .
+doc:FactsstackedSparseAutoencoderModel rdfs:label "stacked sparse autoencoder model"@en .
+_:c1a70ce47d60f0df7da41f037e2dd646 rdf:reifies <<( doc:FactsstackedSparseAutoencoderModel rdfs:label "stacked sparse autoencoder model"@en )>> ;
+	prov:wasDerivedFrom doc:ff684a9282ec .
+doc:FactstoolWearPrediction_1 cco:is_about doc:FactstoolWearPrediction_1 .
+_:eb88ac2cb4688ad5f1174e929ca56979 rdf:reifies <<( doc:FactstoolWearPrediction_1 cco:is_about doc:FactstoolWearPrediction_1 )>> ;
+	prov:wasDerivedFrom doc:ff684a9282ec .
+doc:FactssensorFusionDetail a None:Design_detail .
+_:a8a3581eb20e35e068c566d0656894ab rdf:reifies <<( doc:FactssensorFusionDetail rdf:type None:Design_detail )>> ;
+	prov:wasDerivedFrom doc:ff684a9282ec .
+doc:FactstoolWearPrediction_1 a None:Predictive_Maintenance_Article .
+_:becc67260ce25c7a5741210bd2c29e5b rdf:reifies <<( doc:FactstoolWearPrediction_1 rdf:type None:Predictive_Maintenance_Article )>> ;
+	prov:wasDerivedFrom doc:ff684a9282ec .
+doc:FactscuttingSpeed_2 rdfs:label "cutting speed"@en .
+_:b53df566951545c014c9b0f6f47b5af3 rdf:reifies <<( doc:FactscuttingSpeed_2 rdfs:label "cutting speed"@en )>> ;
+	prov:wasDerivedFrom doc:ff684a9282ec .
+doc:FactsxgboostModel_3 rdfs:label "extreme gradient boosting model"@en .
+_:e90c55d0d157ef5d3c1f872636a67bb9 rdf:reifies <<( doc:FactsxgboostModel_3 rdfs:label "extreme gradient boosting model"@en )>> ;
+	prov:wasDerivedFrom doc:ff684a9282ec .
+doc:FactsvibrationSensor_2 a None:Data_variable .
+_:e5dafb7b47708435b80e294987e94b69 rdf:reifies <<( doc:FactsvibrationSensor_2 rdf:type None:Data_variable )>> ;
+	prov:wasDerivedFrom doc:ff684a9282ec .
+doc:FactstoolWearPrediction_1 cco:is_about doc:FactsrandomForest_5 .
+_:c80797ed29f61428b4e57385b153907b rdf:reifies <<( doc:FactstoolWearPrediction_1 cco:is_about doc:FactsrandomForest_5 )>> ;
+	prov:wasDerivedFrom doc:ff684a9282ec .
+doc:FactsrandomForest_5 rdfs:label "random forest"@en .
+_:f1d0fdd30af950a120c54b5ce33b3968 rdf:reifies <<( doc:FactsrandomForest_5 rdfs:label "random forest"@en )>> ;
+	prov:wasDerivedFrom doc:ff684a9282ec .
+doc:FactsrtscnnModel rdfs:label "artificial neural network model"@en .
+_:fd998fb311ecad8fe2d6d4eed7052719 rdf:reifies <<( doc:FactsrtscnnModel rdfs:label "artificial neural network model"@en )>> ;
+	prov:wasDerivedFrom doc:ff684a9282ec .
+doc:FactstoolWearPrediction_1 cco:is_about doc:FactsstackedSparseAutoencoderModel .
+_:d40c01c979e08b26e70f400f2bba208f rdf:reifies <<( doc:FactstoolWearPrediction_1 cco:is_about doc:FactsstackedSparseAutoencoderModel )>> ;
+	prov:wasDerivedFrom doc:ff684a9282ec .
+doc:FactsrandomForest_5 a None:Predictive_maintenance_model .
+_:b803cfb6d537ba486e4d21271d30d841 rdf:reifies <<( doc:FactsrandomForest_5 rdf:type None:Predictive_maintenance_model )>> ;
+	prov:wasDerivedFrom doc:ff684a9282ec .
+doc:FactsxgboostModel_3 cco:is_about doc:Factsmachine_3 .
+_:b411c56a34a9a58d0fcb3a991bf52b78 rdf:reifies <<( doc:FactsxgboostModel_3 cco:is_about doc:Factsmachine_3 )>> ;
+	prov:wasDerivedFrom doc:ff684a9282ec .
+doc:FactsrtscnnModel cco:is_about doc:FactscuttingDepth_1 .
+_:d4b4db1ff87dd7cc9627f7d0e84cb921 rdf:reifies <<( doc:FactsrtscnnModel cco:is_about doc:FactscuttingDepth_1 )>> ;
+	prov:wasDerivedFrom doc:ff684a9282ec .
+_:f1004613d88511c66de661a51c625e65 prov:wasDerivedFrom doc:ff684a9282ec .
+_:ae501adf23e038c16469de28236092e7 prov:wasDerivedFrom doc:ff684a9282ec .
+doc:FactsonlineMonitoringDetail a None:Design_detail .
+_:ac7562eefc58257da52facef5889da32 rdf:reifies <<( doc:FactsonlineMonitoringDetail rdf:type None:Design_detail )>> ;
+	prov:wasDerivedFrom doc:ff684a9282ec .
+doc:FactstoolWearPrediction_1 cco:is_about doc:FactsxgboostModel_3 .
+_:edf75bf26f9bad6672bafe040da0cfd5 rdf:reifies <<( doc:FactstoolWearPrediction_1 cco:is_about doc:FactsxgboostModel_3 )>> ;
+	prov:wasDerivedFrom doc:ff684a9282ec .
+doc:FactsvibrationSensor_2 rdfs:label "vibration sensor"@en .
+_:ea0c8efd529bce8da99191e4e9e94020 rdf:reifies <<( doc:FactsvibrationSensor_2 rdfs:label "vibration sensor"@en )>> ;
+	prov:wasDerivedFrom doc:ff684a9282ec .
+doc:FactssensorFusionDetail rdfs:label "integration of data from multiple sensors"@en .
+_:f01cc08951ff1ffd0e25fff0d4cf894f rdf:reifies <<( doc:FactssensorFusionDetail rdfs:label "integration of data from multiple sensors"@en )>> ;
+	prov:wasDerivedFrom doc:ff684a9282ec .
+doc:FactstoolWearPrediction_1 rdfs:label "Data-driven tool wear prediction research"@en .
+_:fe462ac658b0c11040c9314b3dd45741 rdf:reifies <<( doc:FactstoolWearPrediction_1 rdfs:label "Data-driven tool wear prediction research"@en )>> ;
+	prov:wasDerivedFrom doc:ff684a9282ec .
+None:Predictive_maintenance_model owl:sameAs None:Predictive_maintenance_system_module , None:Predictive_Maintenance_Article .

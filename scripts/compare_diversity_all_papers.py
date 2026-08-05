@@ -15,6 +15,7 @@ from __future__ import annotations
 
 import argparse
 import csv
+import hashlib
 import json
 import shutil
 import subprocess
@@ -50,7 +51,11 @@ from pipeline.facts_to_csv import (  # noqa: E402
 CBR_DATA_RELATIVE = Path(
     "external/CBR-Ontology-For-Predictive-Maintenance/CBR-Ontology/CBRproject/data"
 )
-CASEBASE_RELATIVE = CBR_DATA_RELATIVE / "CleanedDATA V21-07-2021.csv"
+# The bundled PredictMaint_myCBR.prj contains the 263 cases from V12.
+# Use the matching CSV so every retrieved reference has a complete solution
+# signature during diversity scoring. V21 remains the 200-row extraction-schema
+# validation target documented in pipeline/SCHEMA_MAPPING.md.
+CASEBASE_RELATIVE = CBR_DATA_RELATIVE / "CleanedDATA V12-05-2021.csv"
 SEED_ONTOLOGY_RELATIVE = Path("pipeline/seed_ontology/opmad_seed.ttl")
 QUERY_HEADERS = [
     "Task",
@@ -65,6 +70,7 @@ QUERY_HEADERS = [
     "w5",
     "Input type",
     "w6",
+    "Query Year",
     "Number of cases to retrieve",
     "Amalgamation function",
 ]
@@ -100,6 +106,14 @@ def repo_relative(path: Path) -> str:
         return str(path.resolve().relative_to(ROOT.resolve()))
     except ValueError:
         return str(path)
+
+
+def file_sha256(path: Path) -> str:
+    digest = hashlib.sha256()
+    with path.open("rb") as handle:
+        for block in iter(lambda: handle.read(1024 * 1024), b""):
+            digest.update(block)
+    return digest.hexdigest()
 
 
 def read_semicolon_csv(path: Path, *, encoding: str = "utf-8-sig") -> list[dict[str, str]]:
@@ -142,7 +156,12 @@ def is_generated_or_missing(value: str) -> bool:
     return not normalized or normalized == "not reported" or normalized.startswith("facts")
 
 
-def normalize_query(case_row: dict[str, str], vocabulary: dict[str, set[str]]) -> tuple[dict[str, str], list[str]]:
+def normalize_query(
+    case_row: dict[str, str],
+    vocabulary: dict[str, set[str]],
+    *,
+    drop_default_synchronization: bool = False,
+) -> tuple[dict[str, str], list[str]]:
     query = {
         "task": case_row.get("Task", "").strip(),
         "case_study_type": case_row.get("Case study type", "").strip(),
@@ -172,7 +191,10 @@ def normalize_query(case_row: dict[str, str], vocabulary: dict[str, set[str]]) -
         if query["case_study"]:
             notes.append(f"case study dropped: {query['case_study']}")
         query["case_study"] = ""
-    if query["online_offline"] not in vocabulary["online_offline"]:
+    if drop_default_synchronization and normalize_text(query["online_offline"]) == "unknown synchronization":
+        notes.append("default online/offline dropped: Unknown synchronization")
+        query["online_offline"] = ""
+    elif query["online_offline"] not in vocabulary["online_offline"]:
         if query["online_offline"]:
             notes.append(f"online/offline dropped: {query['online_offline']}")
         query["online_offline"] = ""
@@ -207,7 +229,7 @@ def normalize_query(case_row: dict[str, str], vocabulary: dict[str, set[str]]) -
     return query, notes
 
 
-def query_csv_row(query: dict[str, str], number_of_cases: int) -> dict[str, str]:
+def query_csv_row(query: dict[str, str], number_of_cases: int, query_year: int) -> dict[str, str]:
     def weight(value: str) -> str:
         return "1" if value else ""
 
@@ -224,12 +246,19 @@ def query_csv_row(query: dict[str, str], number_of_cases: int) -> dict[str, str]
         "w5": weight(query["input_for_model"]),
         "Input type": query["input_type"],
         "w6": weight(query["input_type"]),
+        "Query Year": str(query_year),
         "Number of cases to retrieve": str(number_of_cases),
         "Amalgamation function": "euclidean",
     }
 
 
-def derive_queries(fact_paths: list[Path], ontology_path: Path, vocabulary: dict[str, set[str]]) -> tuple[list[QueryRecord], list[dict[str, str]]]:
+def derive_queries(
+    fact_paths: list[Path],
+    ontology_path: Path,
+    vocabulary: dict[str, set[str]],
+    *,
+    drop_default_synchronization: bool = False,
+) -> tuple[list[QueryRecord], list[dict[str, str]]]:
     ontology_labels = parse_ontology_labels(ontology_path)
     records: list[QueryRecord] = []
     query_rows: list[dict[str, str]] = []
@@ -242,7 +271,11 @@ def derive_queries(fact_paths: list[Path], ontology_path: Path, vocabulary: dict
         # facts file represents one input PDF, so retain its first deterministic
         # case rather than treating citations as additional papers.
         case_row = cases_to_csv_rows([cases[0]])[0]
-        query, notes = normalize_query(case_row, vocabulary)
+        query, notes = normalize_query(
+            case_row,
+            vocabulary,
+            drop_default_synchronization=drop_default_synchronization,
+        )
         records.append(
             QueryRecord(
                 query_index=index,
@@ -349,12 +382,14 @@ def write_report(path: Path, summary: dict[str, object], *, run_dir: Path) -> No
         "",
         "## Cobertura",
         "",
-        f"- PDFs de primer nivel en `extraction_papers`: **{coverage['corpus_pdfs']}**.",
+        f"- Archivos PDF de primer nivel en `extraction_papers`: **{coverage['corpus_pdf_files']}**.",
+        f"- Documentos PDF únicos por SHA-256: **{coverage['unique_pdf_documents']}**.",
+        f"- Archivos duplicados adicionales: **{coverage['duplicate_pdf_files']}**.",
         f"- Artefactos canónicos `facts_*.ttl` disponibles: **{coverage['facts_artifacts']}**.",
         f"- Consultas comparadas (una por artefacto): **{coverage['queries_analyzed']}**.",
-        f"- PDFs aún sin facts canónicos: **{coverage['pdfs_without_facts_estimate']}**.",
+        f"- Documentos únicos sin facts canónicos (estimación por conteo): **{coverage['unique_documents_without_facts_estimate']}**.",
         "",
-        "Los PDFs sin un artefacto OntoCast canónico no se inventan ni se envían a un LLM; por tanto, el resultado cubre todos los papers ya extraídos, no los PDFs pendientes de extracción.",
+        "La cobertura distingue archivos de documentos únicos para no contar un duplicado exacto como extracción ausente.",
         "",
         "## Método",
         "",
@@ -389,11 +424,31 @@ def parse_args(argv: list[str] | None = None) -> argparse.Namespace:
     parser.add_argument("--papers-dir", default="extraction_papers", help="Corpus directory containing PDFs and OntoCast output.")
     parser.add_argument("--facts-glob", default="ontocast_runs/*/output/facts_*.ttl", help="Glob relative to --papers-dir used to discover canonical facts artifacts.")
     parser.add_argument("--ontology", default=str(SEED_ONTOLOGY_RELATIVE), help="OPMAD ontology used to label facts.")
+    parser.add_argument(
+        "--casebase-csv",
+        default=str(CASEBASE_RELATIVE),
+        help=(
+            "Case-base CSV used for query vocabulary and solution-field enrichment. "
+            "It must correspond to the loaded myCBR project (the bundled 263-case "
+            "PredictMaint_myCBR.prj corresponds to CleanedDATA V12-05-2021.csv)."
+        ),
+    )
     parser.add_argument("--output-dir", help="New directory for the comparison artifacts (default: .build/diversity_comparison_<timestamp>).")
     parser.add_argument("--top-k", type=int, default=5, help="Number of baseline and reranked recommendations.")
     parser.add_argument("--pool-size", type=int, default=15, help="CBR candidate pool size before MMR reranking.")
     parser.add_argument("--lambda-relevance", type=float, default=0.70, help="MMR relevance weight in [0, 1].")
+    parser.add_argument(
+        "--query-year",
+        type=int,
+        default=datetime.now().year,
+        help="Year supplied to myCBR's publication-recency similarity (default: current year).",
+    )
     parser.add_argument("--max-facts", type=int, default=0, help="Optional cap for a smoke test; 0 processes every available facts artifact.")
+    parser.add_argument(
+        "--drop-default-synchronization",
+        action="store_true",
+        help="Treat the bridge default 'Unknown synchronization' as missing (weight zero) for an ablation.",
+    )
     parser.add_argument("--skip-build", action="store_true", help="Use an existing .build/cbr/jar-classpath.txt instead of rebuilding CBR.")
     return parser.parse_args(argv)
 
@@ -408,7 +463,9 @@ def main(argv: list[str] | None = None) -> int:
     papers_dir = (ROOT / args.papers_dir).resolve()
     ontology_path = (ROOT / args.ontology).resolve()
     source_data_dir = (ROOT / CBR_DATA_RELATIVE).resolve()
-    casebase_path = (ROOT / CASEBASE_RELATIVE).resolve()
+    casebase_path = Path(args.casebase_csv)
+    if not casebase_path.is_absolute():
+        casebase_path = (ROOT / casebase_path).resolve()
     diversity_dir = (ROOT / "external" / "Diversity-Improvement-in-CBR").resolve()
     if not papers_dir.is_dir():
         raise SystemExit(f"Papers directory does not exist: {papers_dir}")
@@ -432,9 +489,14 @@ def main(argv: list[str] | None = None) -> int:
     run_dir.mkdir(parents=True)
 
     vocabulary = read_reference_vocabulary(casebase_path)
-    records, query_data = derive_queries(fact_paths, ontology_path, vocabulary)
-    top_queries = [query_csv_row(query, args.top_k) for query in query_data]
-    pool_queries = [query_csv_row(query, args.pool_size) for query in query_data]
+    records, query_data = derive_queries(
+        fact_paths,
+        ontology_path,
+        vocabulary,
+        drop_default_synchronization=args.drop_default_synchronization,
+    )
+    top_queries = [query_csv_row(query, args.top_k, args.query_year) for query in query_data]
+    pool_queries = [query_csv_row(query, args.pool_size, args.query_year) for query in query_data]
 
     query_rows = []
     for record, top_query, pool_query in zip(records, top_queries, pool_queries):
@@ -531,6 +593,10 @@ def main(argv: list[str] | None = None) -> int:
     write_semicolon_csv(run_dir / "per_query.csv", list(per_query_rows[0]), per_query_rows)
 
     corpus_pdfs = [path for path in papers_dir.iterdir() if path.is_file() and path.suffix.lower() == ".pdf"]
+    pdfs_by_hash: dict[str, list[str]] = {}
+    for pdf_path in corpus_pdfs:
+        pdfs_by_hash.setdefault(file_sha256(pdf_path), []).append(pdf_path.name)
+    duplicate_pdf_groups = [sorted(names) for names in pdfs_by_hash.values() if len(names) > 1]
     task_distribution = Counter(record.task for record in records)
     baseline_summary = aggregate(baseline_metrics)
     diverse_summary = aggregate(diverse_metrics)
@@ -538,11 +604,14 @@ def main(argv: list[str] | None = None) -> int:
         "run_dir": repo_relative(run_dir),
         "coverage": {
             "papers_dir": repo_relative(papers_dir),
-            "corpus_pdfs": len(corpus_pdfs),
+            "corpus_pdf_files": len(corpus_pdfs),
+            "unique_pdf_documents": len(pdfs_by_hash),
+            "duplicate_pdf_files": len(corpus_pdfs) - len(pdfs_by_hash),
+            "duplicate_pdf_groups": duplicate_pdf_groups,
             "facts_artifacts": len(fact_paths),
             "queries_analyzed": len(records),
-            "pdfs_without_facts_estimate": max(0, len(corpus_pdfs) - len(fact_paths)),
-            "note": "Canonical facts artifacts are the extractable CBR inputs; PDFs without one were not sent to an external LLM.",
+            "unique_documents_without_facts_estimate": max(0, len(pdfs_by_hash) - len(fact_paths)),
+            "note": "Coverage is computed over unique PDF content; exact duplicate files are not treated as missing facts.",
         },
         "method": {
             "baseline": f"HeadlessCBR top-{args.top_k} similarity retrieval",
@@ -550,7 +619,11 @@ def main(argv: list[str] | None = None) -> int:
             "top_k": args.top_k,
             "pool_size": args.pool_size,
             "lambda_relevance": args.lambda_relevance,
+            "query_year": args.query_year,
+            "drop_default_synchronization": args.drop_default_synchronization,
             "solution_weights": DEFAULT_WEIGHTS,
+            "casebase_csv": repo_relative(casebase_path),
+            "casebase_rows_loaded": len(casebase_by_reference),
             "diversity_submodule": repo_relative(diversity_dir),
             "taxonomy_terms_loaded": len(taxonomy_index),
             "first_result_is_preserved": True,

@@ -1,0 +1,405 @@
+@prefix None: <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD/seed#> .
+@prefix cco: <http://www.ontologyrepository.com/CommonCoreOntologies/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doc: <https://growgraph.dev/doc/f34d0afa1e71/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix obo: <http://purl.obolibrary.org/obo/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix schema: <https://schema.org/> .
+@prefix schema1: <http://schema.org/> .
+doc:10b15b6e1a28 a prov:Entity , schema:text ;
+	prov:generatedAtTime "2026-07-12T23:16:29.756699Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+	schema:position 0 ;
+	schema:identifier "10b15b6e1a28" .
+doc:Factsarticle_1_3 a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Predictive_Maintenance_Article> .
+_:eb992d940b8b7862b71e2e51a4881663 rdf:reifies <<( doc:Factsarticle_1_3 rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Predictive_Maintenance_Article> )>> ;
+	prov:wasDerivedFrom doc:10b15b6e1a28 .
+doc:Factsarticle_1_3 rdfs:label "Condition Monitoring Model Development for Belt Systems Using Hybrid CNN-BiLSTM Deep-Learning Techniques" .
+_:fe19652133cd8b9bcdf9841734faef4e rdf:reifies <<( doc:Factsarticle_1_3 rdfs:label "Condition Monitoring Model Development for Belt Systems Using Hybrid CNN-BiLSTM Deep-Learning Techniques" )>> ;
+	prov:wasDerivedFrom doc:10b15b6e1a28 .
+doc:Factsarticle_1_3 a schema1:ScholarlyArticle .
+_:f67b2702a24ce3464af10f97fdf33277 rdf:reifies <<( doc:Factsarticle_1_3 rdf:type schema1:ScholarlyArticle )>> ;
+	prov:wasDerivedFrom doc:10b15b6e1a28 .
+doc:2d8988d6963e a prov:Entity , schema:text ;
+	prov:generatedAtTime "2026-07-12T23:16:29.757699Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+	schema:position 1 ;
+	schema:identifier "2d8988d6963e" .
+doc:Factsauthor3_32 schema:affiliation doc:Factsorg3_5 .
+_:e63b5f6972801452fb0c6147157ad62b rdf:reifies <<( doc:Factsauthor3_32 schema:affiliation doc:Factsorg3_5 )>> ;
+	prov:wasDerivedFrom doc:2d8988d6963e .
+doc:Factsmodel1_20 schema:name "Combined Convolutional Neural Network with Bi-directional Long Short-Term Memory" .
+_:b2d5d13644b55a3fd96b5ceb06f2ceec rdf:reifies <<( doc:Factsmodel1_20 schema:name "Combined Convolutional Neural Network with Bi-directional Long Short-Term Memory" )>> ;
+	prov:wasDerivedFrom doc:2d8988d6963e .
+doc:Factsyear1_55 None:has_interger_value 2026 .
+_:ef514ccd3163e821e8162a8d8e1408f1 rdf:reifies <<( doc:Factsyear1_55 None:has_interger_value 2026 )>> ;
+	prov:wasDerivedFrom doc:2d8988d6963e .
+doc:Factsauthor3_32 a schema:Person .
+_:a547d9d7f0cdb7dd57fbef0f682b946c rdf:reifies <<( doc:Factsauthor3_32 rdf:type schema:Person )>> ;
+	prov:wasDerivedFrom doc:2d8988d6963e .
+doc:Factsmodel1_20 None:has_predictive_maintenance_function doc:Factsfunction1_11 .
+_:fd6e699cb52b8864026a0240fcbaffa rdf:reifies <<( doc:Factsmodel1_20 None:has_predictive_maintenance_function doc:Factsfunction1_11 )>> ;
+	prov:wasDerivedFrom doc:2d8988d6963e .
+doc:Factsauthor3_32 schema:familyName "Mohammed Sahib" .
+_:b5cef135c11ba838b577b83c54aeac40 rdf:reifies <<( doc:Factsauthor3_32 schema:familyName "Mohammed Sahib" )>> ;
+	prov:wasDerivedFrom doc:2d8988d6963e .
+doc:Factsyear1_55 cco:designates doc:Factsarticle1_63 .
+_:f02869070ea5a0db825feec66aac844d rdf:reifies <<( doc:Factsyear1_55 cco:designates doc:Factsarticle1_63 )>> ;
+	prov:wasDerivedFrom doc:2d8988d6963e .
+doc:Factsorg3_5 a schema:CollegeOrUniversity .
+_:dfa8230b18302de65cfea4d323d2fe7a rdf:reifies <<( doc:Factsorg3_5 rdf:type schema:CollegeOrUniversity )>> ;
+	prov:wasDerivedFrom doc:2d8988d6963e .
+doc:Factsorg3_5 schema:name "University of Miskolc" .
+_:aa9fbb29dba04403b8c3c10596ad3966 rdf:reifies <<( doc:Factsorg3_5 schema:name "University of Miskolc" )>> ;
+	prov:wasDerivedFrom doc:2d8988d6963e .
+doc:Factsdetail2_3 a None:Design_detail .
+_:ae218ef99f7999303650ce0d28081814 rdf:reifies <<( doc:Factsdetail2_3 rdf:type None:Design_detail )>> ;
+	prov:wasDerivedFrom doc:2d8988d6963e .
+doc:Factsvar5_5 cco:describes doc:Factsmodel1_20 .
+_:b218e5e86ff926431837f8a761fe4f8f rdf:reifies <<( doc:Factsvar5_5 cco:describes doc:Factsmodel1_20 )>> ;
+	prov:wasDerivedFrom doc:2d8988d6963e .
+doc:Factsorg3_5 schema:addressLocality "Miskolc" .
+_:a0a2fd9a390da2d8bfbe454d493e4bac rdf:reifies <<( doc:Factsorg3_5 schema:addressLocality "Miskolc" )>> ;
+	prov:wasDerivedFrom doc:2d8988d6963e .
+doc:Factsitem1_12 None:has_design_detail doc:Factsdetail2_3 .
+_:e5c6422c09f15446f3f7a9cedea77406 rdf:reifies <<( doc:Factsitem1_12 None:has_design_detail doc:Factsdetail2_3 )>> ;
+	prov:wasDerivedFrom doc:2d8988d6963e .
+doc:Factsfunction1_11 cco:is_about doc:Factsitem1_12 .
+_:ef7bef4d698cf3aba681d9c768f42874 rdf:reifies <<( doc:Factsfunction1_11 cco:is_about doc:Factsitem1_12 )>> ;
+	prov:wasDerivedFrom doc:2d8988d6963e .
+doc:Factsid1_28 cco:designates doc:Factsarticle1_63 .
+_:d4805808c5e25ae7a1ad1a1d65c46bd3 rdf:reifies <<( doc:Factsid1_28 cco:designates doc:Factsarticle1_63 )>> ;
+	prov:wasDerivedFrom doc:2d8988d6963e .
+doc:Factsfunction1_11 a None:Classification .
+_:b3819e40f26e6f8a2af9ea495fe379a4 rdf:reifies <<( doc:Factsfunction1_11 rdf:type None:Classification )>> ;
+	prov:wasDerivedFrom doc:2d8988d6963e .
+doc:Factsorg3_5 schema:addressCountry "Hungary" .
+_:e4c27bfd25719f4824be20d41b8c307 rdf:reifies <<( doc:Factsorg3_5 schema:addressCountry "Hungary" )>> ;
+	prov:wasDerivedFrom doc:2d8988d6963e .
+doc:Factsvar5_5 a None:Data_variable .
+_:bb0d01e9ae0771ef72c87f3a437453dc rdf:reifies <<( doc:Factsvar5_5 rdf:type None:Data_variable )>> ;
+	prov:wasDerivedFrom doc:2d8988d6963e .
+doc:Factsdetail2_3 cco:describes doc:Factsitem1_12 .
+_:c3492b5c847e136228f1a1db8e6315a4 rdf:reifies <<( doc:Factsdetail2_3 cco:describes doc:Factsitem1_12 )>> ;
+	prov:wasDerivedFrom doc:2d8988d6963e .
+doc:Factsarticle1_63 dcterms:subject doc:Factsitem1_12 .
+_:bac31698479ee6af9ba4c847abc2aca7 rdf:reifies <<( doc:Factsarticle1_63 dcterms:subject doc:Factsitem1_12 )>> ;
+	prov:wasDerivedFrom doc:2d8988d6963e .
+doc:Factsfunction3_8 cco:is_about doc:Factsitem1_12 .
+_:bed4462918b2a39618d7eee60827c1fe rdf:reifies <<( doc:Factsfunction3_8 cco:is_about doc:Factsitem1_12 )>> ;
+	prov:wasDerivedFrom doc:2d8988d6963e .
+doc:Factsmodel1_20 a None:Predictive_maintenance_system_module .
+_:c8c4715bc6373d9b860305b266b3797c rdf:reifies <<( doc:Factsmodel1_20 rdf:type None:Predictive_maintenance_system_module )>> ;
+	prov:wasDerivedFrom doc:2d8988d6963e .
+doc:Factsmodel1_20 None:has_predictive_maintenance_function doc:Factsfunction3_8 .
+_:e41b396b8d285f1493c15cc94929566 rdf:reifies <<( doc:Factsmodel1_20 None:has_predictive_maintenance_function doc:Factsfunction3_8 )>> ;
+	prov:wasDerivedFrom doc:2d8988d6963e .
+doc:Factsauthor3_32 schema:givenName "Mortda" .
+_:ce725e06d8702d7128af2092bf0ac0f1 rdf:reifies <<( doc:Factsauthor3_32 schema:givenName "Mortda" )>> ;
+	prov:wasDerivedFrom doc:2d8988d6963e .
+doc:Factsid1_28 None:has_text_value "10.3390/" .
+_:e56807affba549904b98ab5fd9986fed rdf:reifies <<( doc:Factsid1_28 None:has_text_value "10.3390/" )>> ;
+	prov:wasDerivedFrom doc:2d8988d6963e .
+doc:Factsorg3_5 schema:department "Basrah Technical Institute" .
+_:a7662071b51e016b3cb2e33ba4a9eb72 rdf:reifies <<( doc:Factsorg3_5 schema:department "Basrah Technical Institute" )>> ;
+	prov:wasDerivedFrom doc:2d8988d6963e .
+doc:Factsid1_28 a None:Article_title .
+_:dd5d7d9842d5d9dedce8a215a97a282d rdf:reifies <<( doc:Factsid1_28 rdf:type None:Article_title )>> ;
+	prov:wasDerivedFrom doc:2d8988d6963e .
+doc:Factsauthor3_32 schema:familyName "PlÃ¤nitz" .
+_:eeff883fb668b34340fbbe639759c7fc rdf:reifies <<( doc:Factsauthor3_32 schema:familyName "PlÃ¤nitz" )>> ;
+	prov:wasDerivedFrom doc:2d8988d6963e .
+doc:Factsarticle1_63 None:has_publication_year doc:Factsyear1_55 .
+_:a9107c7d5c39ee81862ba44124cdb5ba rdf:reifies <<( doc:Factsarticle1_63 None:has_publication_year doc:Factsyear1_55 )>> ;
+	prov:wasDerivedFrom doc:2d8988d6963e .
+doc:Factsvar5_5 None:has_text_value "raw vibration signals" .
+_:d534a78f68a0026cf028e3f5864c5952 rdf:reifies <<( doc:Factsvar5_5 None:has_text_value "raw vibration signals" )>> ;
+	prov:wasDerivedFrom doc:2d8988d6963e .
+doc:Factsid1_28 a None:Article_identifier .
+_:d016dd7b0cc295a9bec3dd221bbe2b22 rdf:reifies <<( doc:Factsid1_28 rdf:type None:Article_identifier )>> ;
+	prov:wasDerivedFrom doc:2d8988d6963e .
+doc:Factsarticle1_63 dcterms:creator doc:Factsauthor3_32 .
+_:dc20e112472c13e63b10d1824b0cb4aa rdf:reifies <<( doc:Factsarticle1_63 dcterms:creator doc:Factsauthor3_32 )>> ;
+	prov:wasDerivedFrom doc:2d8988d6963e .
+doc:Factsvar5_5 None:has_text_value "operational parameters" .
+_:b67873cc0d345929bf57356f0027236a rdf:reifies <<( doc:Factsvar5_5 None:has_text_value "operational parameters" )>> ;
+	prov:wasDerivedFrom doc:2d8988d6963e .
+doc:Factsmodel1_20 None:describes_type doc:Factsvar5_5 .
+_:d9af85802fe160fff570522bea289893 rdf:reifies <<( doc:Factsmodel1_20 None:describes_type doc:Factsvar5_5 )>> ;
+	prov:wasDerivedFrom doc:2d8988d6963e .
+doc:Factsarticle1_63 a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Predictive_Maintenance_Article> .
+_:cb367e80cd16825bbda99fb91c4a52f1 rdf:reifies <<( doc:Factsarticle1_63 rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Predictive_Maintenance_Article> )>> ;
+	prov:wasDerivedFrom doc:2d8988d6963e .
+doc:Factsauthor3_32 schema:email "philipp.plaenitz@ovgu.de" .
+_:e6809a4eb4e00a189556f447e01493d1 rdf:reifies <<( doc:Factsauthor3_32 schema:email "philipp.plaenitz@ovgu.de" )>> ;
+	prov:wasDerivedFrom doc:2d8988d6963e .
+doc:Factsmodel1_20 cco:describes doc:Factsitem1_12 .
+_:a9a37f6768f5c13d02dcd715dc201d97 rdf:reifies <<( doc:Factsmodel1_20 cco:describes doc:Factsitem1_12 )>> ;
+	prov:wasDerivedFrom doc:2d8988d6963e .
+doc:Factsdetail2_3 None:has_text_value "unbalanced or balanced condition" .
+_:daea4632bb5621a6b718d762b4d7e3e6 rdf:reifies <<( doc:Factsdetail2_3 None:has_text_value "unbalanced or balanced condition" )>> ;
+	prov:wasDerivedFrom doc:2d8988d6963e .
+doc:Factsid1_28 None:has_text_value "CNN-BiLSTM model for belt-drive system condition monitoring using raw vibration signals" .
+_:c00412c08f163931b80ca5d4cf801f30 rdf:reifies <<( doc:Factsid1_28 None:has_text_value "CNN-BiLSTM model for belt-drive system condition monitoring using raw vibration signals" )>> ;
+	prov:wasDerivedFrom doc:2d8988d6963e .
+doc:Factsyear1_55 a None:Publication_year .
+_:de834569bacbe1cd02b9648dc389ed1b rdf:reifies <<( doc:Factsyear1_55 rdf:type None:Publication_year )>> ;
+	prov:wasDerivedFrom doc:2d8988d6963e .
+doc:Factsfunction3_8 a None:Health_assessment .
+_:e8567ac249bb9de9c1c1d20b0febcd68 rdf:reifies <<( doc:Factsfunction3_8 rdf:type None:Health_assessment )>> ;
+	prov:wasDerivedFrom doc:2d8988d6963e .
+doc:Factsdetail2_3 None:has_text_value "faulty or healthy condition" .
+_:b3766548e07132813b5c7671c086540f rdf:reifies <<( doc:Factsdetail2_3 None:has_text_value "faulty or healthy condition" )>> ;
+	prov:wasDerivedFrom doc:2d8988d6963e .
+doc:Factsvar5_5 None:has_text_value "vibrational signals" .
+_:ff2fc551085584918e3968cb0c883f79 rdf:reifies <<( doc:Factsvar5_5 None:has_text_value "vibrational signals" )>> ;
+	prov:wasDerivedFrom doc:2d8988d6963e .
+doc:Factsorg3_5 schema:addressLocality "Magdeburg" .
+_:f6115fea4d4392c867032d0ee98fb615 rdf:reifies <<( doc:Factsorg3_5 schema:addressLocality "Magdeburg" )>> ;
+	prov:wasDerivedFrom doc:2d8988d6963e .
+doc:Factsorg3_5 schema:addressLocality "Basrah" .
+_:c9b8c1e0b204899784227c280659f5f5 rdf:reifies <<( doc:Factsorg3_5 schema:addressLocality "Basrah" )>> ;
+	prov:wasDerivedFrom doc:2d8988d6963e .
+doc:Factsfunction2_11 a None:Fault_detection .
+_:d70bf4871a10da618b57d1360648a7b4 rdf:reifies <<( doc:Factsfunction2_11 rdf:type None:Fault_detection )>> ;
+	prov:wasDerivedFrom doc:2d8988d6963e .
+doc:Factsvar5_5 a None:Model_type .
+_:afaa49132f455efdff4f86dc384cc58f rdf:reifies <<( doc:Factsvar5_5 rdf:type None:Model_type )>> ;
+	prov:wasDerivedFrom doc:2d8988d6963e .
+doc:Factsauthor3_32 schema:email "mortdamohammed@gmail.com" .
+_:edea471de46cf040099da49f17dfd655 rdf:reifies <<( doc:Factsauthor3_32 schema:email "mortdamohammed@gmail.com" )>> ;
+	prov:wasDerivedFrom doc:2d8988d6963e .
+doc:Factsauthor3_32 schema:familyName "Hackert-OschÃ¤tzchen" .
+_:c7dc89aefafd396c20aa9be4e7a5a2d6 rdf:reifies <<( doc:Factsauthor3_32 schema:familyName "Hackert-OschÃ¤tzchen" )>> ;
+	prov:wasDerivedFrom doc:2d8988d6963e .
+doc:Factsmodel1_20 None:has_predictive_maintenance_function doc:Factsfunction2_11 .
+_:cdb2d8e9eca0c0bce075e54f8b722306 rdf:reifies <<( doc:Factsmodel1_20 None:has_predictive_maintenance_function doc:Factsfunction2_11 )>> ;
+	prov:wasDerivedFrom doc:2d8988d6963e .
+doc:Factsorg3_5 schema:addressCountry "Iraq" .
+_:e16c238c0bdf1373a91b2b12b14e8a21 rdf:reifies <<( doc:Factsorg3_5 schema:addressCountry "Iraq" )>> ;
+	prov:wasDerivedFrom doc:2d8988d6963e .
+doc:Factsarticle1_63 None:has_identifier doc:Factsid1_28 .
+_:e06abfd64ce5eb1f1b50c0522e3f2945 rdf:reifies <<( doc:Factsarticle1_63 None:has_identifier doc:Factsid1_28 )>> ;
+	prov:wasDerivedFrom doc:2d8988d6963e .
+doc:Factsarticle1_63 dcterms:subject doc:Factsmodel1_20 .
+_:bc08f82584853c05d7ffb24cbfef0abe rdf:reifies <<( doc:Factsarticle1_63 dcterms:subject doc:Factsmodel1_20 )>> ;
+	prov:wasDerivedFrom doc:2d8988d6963e .
+doc:Factsvar5_5 None:has_text_value "deep-learning neural network" .
+_:c6af1ae8b3c8e2a61d691d9ca30e7b45 rdf:reifies <<( doc:Factsvar5_5 None:has_text_value "deep-learning neural network" )>> ;
+	prov:wasDerivedFrom doc:2d8988d6963e .
+doc:Factsauthor3_32 schema:givenName "Matthias" .
+_:e3cdb110ad8718ab5265c4e86b0d4635 rdf:reifies <<( doc:Factsauthor3_32 schema:givenName "Matthias" )>> ;
+	prov:wasDerivedFrom doc:2d8988d6963e .
+doc:Factsmodel1_20 cco:designates doc:Factsmodel1_20 .
+_:d72202e65f4a9ef20aa82ba6338e81a2 rdf:reifies <<( doc:Factsmodel1_20 cco:designates doc:Factsmodel1_20 )>> ;
+	prov:wasDerivedFrom doc:2d8988d6963e .
+doc:Factsmodel1_20 rdfs:label "CNN-BiLSTM" .
+_:da06b97cfa8d5903ac6e8cb1c2403c67 rdf:reifies <<( doc:Factsmodel1_20 rdfs:label "CNN-BiLSTM" )>> ;
+	prov:wasDerivedFrom doc:2d8988d6963e .
+doc:Factsauthor3_32 schema:givenName "Philipp" .
+_:d946fb864a18202589275ed197f5ab11 rdf:reifies <<( doc:Factsauthor3_32 schema:givenName "Philipp" )>> ;
+	prov:wasDerivedFrom doc:2d8988d6963e .
+doc:Factsauthor3_32 schema:familyName "Lerez" .
+_:a8d136fa89956eca3d43524cf1fc44ed rdf:reifies <<( doc:Factsauthor3_32 schema:familyName "Lerez" )>> ;
+	prov:wasDerivedFrom doc:2d8988d6963e .
+doc:Factsarticle1_63 None:has_title doc:Factsid1_28 .
+_:db984a713389deae9fc43eee6b336a9f rdf:reifies <<( doc:Factsarticle1_63 None:has_title doc:Factsid1_28 )>> ;
+	prov:wasDerivedFrom doc:2d8988d6963e .
+doc:Factsfunction1_11 a None:Sequential_pattern_discovery .
+_:feea49d166cdd97b5a65c4458248ba3a rdf:reifies <<( doc:Factsfunction1_11 rdf:type None:Sequential_pattern_discovery )>> ;
+	prov:wasDerivedFrom doc:2d8988d6963e .
+doc:Factsorg3_5 schema:name "Southern Technical University" .
+_:bff2446f24fad22aff4323e75674d323 rdf:reifies <<( doc:Factsorg3_5 schema:name "Southern Technical University" )>> ;
+	prov:wasDerivedFrom doc:2d8988d6963e .
+doc:Factsfunction2_11 cco:is_about doc:Factsitem1_12 .
+_:d25c2753a66611e9591679474fdfc189 rdf:reifies <<( doc:Factsfunction2_11 cco:is_about doc:Factsitem1_12 )>> ;
+	prov:wasDerivedFrom doc:2d8988d6963e .
+doc:Factsitem1_12 schema:name "belt-drive system" .
+_:b2edf502da0b8f828975663f0ef19f6 rdf:reifies <<( doc:Factsitem1_12 schema:name "belt-drive system" )>> ;
+	prov:wasDerivedFrom doc:2d8988d6963e .
+doc:Factsorg3_5 schema:name "Otto von Guericke University Magdeburg" .
+_:de60e5c1fefaead9da4e0f9ef78230c0 rdf:reifies <<( doc:Factsorg3_5 schema:name "Otto von Guericke University Magdeburg" )>> ;
+	prov:wasDerivedFrom doc:2d8988d6963e .
+doc:Factsitem1_12 a None:Maintainable_item .
+_:e063de9856ed749d39b90295429bc008 rdf:reifies <<( doc:Factsitem1_12 rdf:type None:Maintainable_item )>> ;
+	prov:wasDerivedFrom doc:2d8988d6963e .
+doc:Factsmodel1_20 a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Predictive_Maintenance_Article> .
+_:c584557b705e04c2731bdc88dda35519 rdf:reifies <<( doc:Factsmodel1_20 rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Predictive_Maintenance_Article> )>> ;
+	prov:wasDerivedFrom doc:2d8988d6963e .
+doc:Factsauthor3_32 schema:givenName "Christoph" .
+_:f1c0e5cdff00845b59f5a8d3768bfa5c rdf:reifies <<( doc:Factsauthor3_32 schema:givenName "Christoph" )>> ;
+	prov:wasDerivedFrom doc:2d8988d6963e .
+doc:Factsorg3_5 schema:addressCountry "Germany" .
+_:b947a101b806e2bbb47c07a31b0609fc rdf:reifies <<( doc:Factsorg3_5 schema:addressCountry "Germany" )>> ;
+	prov:wasDerivedFrom doc:2d8988d6963e .
+doc:7d12f6a30af8 a prov:Entity , schema:text ;
+	prov:generatedAtTime "2026-07-12T23:16:29.7637Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+	schema:position 2 ;
+	schema:identifier "7d12f6a30af8" .
+_:a9107c7d5c39ee81862ba44124cdb5ba prov:wasDerivedFrom doc:7d12f6a30af8 .
+_:fd6e699cb52b8864026a0240fcbaffa prov:wasDerivedFrom doc:7d12f6a30af8 .
+doc:Factstech7 a None:Fault_feature_extraction .
+_:b71ea0a29caedcb9d43fee486fee1981 rdf:reifies <<( doc:Factstech7 rdf:type None:Fault_feature_extraction )>> ;
+	prov:wasDerivedFrom doc:7d12f6a30af8 .
+doc:Factsfunction1_11 a None:Fault_identification .
+_:a397bfdcc3a6346f755c5607e5530773 rdf:reifies <<( doc:Factsfunction1_11 rdf:type None:Fault_identification )>> ;
+	prov:wasDerivedFrom doc:7d12f6a30af8 .
+doc:Factstech1 a None:Association_discovery .
+_:ea798a58f3c5a3e14e3c6913189564b2 rdf:reifies <<( doc:Factstech1 rdf:type None:Association_discovery )>> ;
+	prov:wasDerivedFrom doc:7d12f6a30af8 .
+doc:Factscase1_16 cco:designates doc:Factsitem1_12 .
+_:d88c59aea6b5cb0080c277b0fbd5b4de rdf:reifies <<( doc:Factscase1_16 cco:designates doc:Factsitem1_12 )>> ;
+	prov:wasDerivedFrom doc:7d12f6a30af8 .
+_:ae218ef99f7999303650ce0d28081814 prov:wasDerivedFrom doc:7d12f6a30af8 .
+doc:Factsfunction3_8 a None:Remaining_useful_life_estimation .
+_:c226f12878750bd0fad089f95e99f333 rdf:reifies <<( doc:Factsfunction3_8 rdf:type None:Remaining_useful_life_estimation )>> ;
+	prov:wasDerivedFrom doc:7d12f6a30af8 .
+doc:Factsdataset1_9 None:has_text_value "459 runs across 17 rotational speeds, 3 tension levels, healthy and faulty belts, and balanced and unbalanced conditions" .
+_:fe21288bd1fb006e57ffecf9a7b27d47 rdf:reifies <<( doc:Factsdataset1_9 None:has_text_value "459 runs across 17 rotational speeds, 3 tension levels, healthy and faulty belts, and balanced and unbalanced conditions" )>> ;
+	prov:wasDerivedFrom doc:7d12f6a30af8 .
+_:e5c6422c09f15446f3f7a9cedea77406 prov:wasDerivedFrom doc:7d12f6a30af8 .
+doc:Factsfunction1_11 a None:Fault_detection .
+_:d4c5b265d6e73c4f68fd4f5716f99eb6 rdf:reifies <<( doc:Factsfunction1_11 rdf:type None:Fault_detection )>> ;
+	prov:wasDerivedFrom doc:7d12f6a30af8 .
+doc:Factspi4_1 a None:Performance_value .
+_:d9e99f4299144cce00df7f17b76811ef rdf:reifies <<( doc:Factspi4_1 rdf:type None:Performance_value )>> ;
+	prov:wasDerivedFrom doc:7d12f6a30af8 .
+doc:Factsquality1_1 None:has_interger_value 2 .
+_:e805f25c30853ab8a5d35e848d6213db rdf:reifies <<( doc:Factsquality1_1 None:has_interger_value 2 )>> ;
+	prov:wasDerivedFrom doc:7d12f6a30af8 .
+doc:Factsdataset1_9 obo:BFO_0000051 doc:Factsvar5_5 .
+_:cf2e862fcd86fc969e388ebb10d66f4f rdf:reifies <<( doc:Factsdataset1_9 obo:BFO_0000051 doc:Factsvar5_5 )>> ;
+	prov:wasDerivedFrom doc:7d12f6a30af8 .
+doc:Factspi4_1 None:has_text_value "improves robustness and fairness in fault detection" .
+_:f7d79a85fec9676e3ea9a6c5a20e850a rdf:reifies <<( doc:Factspi4_1 None:has_text_value "improves robustness and fairness in fault detection" )>> ;
+	prov:wasDerivedFrom doc:7d12f6a30af8 .
+doc:Factspi4_1 None:has_text_value "enhanced practical deployment flexibility" .
+_:d06d1dff68ce9e98bb837cd94237318d rdf:reifies <<( doc:Factspi4_1 None:has_text_value "enhanced practical deployment flexibility" )>> ;
+	prov:wasDerivedFrom doc:7d12f6a30af8 .
+_:c8c4715bc6373d9b860305b266b3797c prov:wasDerivedFrom doc:7d12f6a30af8 .
+doc:Factsquality3_1 None:has_text_value "online and offline retraining capable" .
+_:a040bab5557e770f83b7ff1cad5cac23 rdf:reifies <<( doc:Factsquality3_1 None:has_text_value "online and offline retraining capable" )>> ;
+	prov:wasDerivedFrom doc:7d12f6a30af8 .
+doc:Factspi4_1 None:has_text_value "fairness" .
+_:ebfc037aa2e71291f3224ff3ebf7983b rdf:reifies <<( doc:Factspi4_1 None:has_text_value "fairness" )>> ;
+	prov:wasDerivedFrom doc:7d12f6a30af8 .
+doc:Factstech1 a None:Classification .
+_:ace929908831b223ffa7c913dde91a03 rdf:reifies <<( doc:Factstech1 rdf:type None:Classification )>> ;
+	prov:wasDerivedFrom doc:7d12f6a30af8 .
+_:e41b396b8d285f1493c15cc94929566 prov:wasDerivedFrom doc:7d12f6a30af8 .
+_:bb0d01e9ae0771ef72c87f3a437453dc prov:wasDerivedFrom doc:7d12f6a30af8 .
+doc:Factstech2 a None:Clustering .
+_:b34654c62b9c6ba8cd4a378df23d7c8a rdf:reifies <<( doc:Factstech2 rdf:type None:Clustering )>> ;
+	prov:wasDerivedFrom doc:7d12f6a30af8 .
+doc:Factsvar5_5 a None:Model_configuration .
+_:f0c2bf8c32b4c3787f6e47a8d0b4c398 rdf:reifies <<( doc:Factsvar5_5 rdf:type None:Model_configuration )>> ;
+	prov:wasDerivedFrom doc:7d12f6a30af8 .
+_:dd5d7d9842d5d9dedce8a215a97a282d prov:wasDerivedFrom doc:7d12f6a30af8 .
+doc:Factspi4_1 a None:Performance_indicator .
+_:fc81eec3299b5543fc5fe6237ce9df2c rdf:reifies <<( doc:Factspi4_1 rdf:type None:Performance_indicator )>> ;
+	prov:wasDerivedFrom doc:7d12f6a30af8 .
+doc:Factsdetail2_3 None:has_text_value "operating conditions include varying rotational speed, belt pretension, healthy and faulty belt conditions, and balanced or unbalanced configurations" .
+_:ac0e83feeda49eba629e1829fe84bda rdf:reifies <<( doc:Factsdetail2_3 None:has_text_value "operating conditions include varying rotational speed, belt pretension, healthy and faulty belt conditions, and balanced or unbalanced configurations" )>> ;
+	prov:wasDerivedFrom doc:7d12f6a30af8 .
+doc:Factspi4_1 None:has_text_value "accuracy" .
+_:dd3aa00d171125bf6677c8afb6533de4 rdf:reifies <<( doc:Factspi4_1 None:has_text_value "accuracy" )>> ;
+	prov:wasDerivedFrom doc:7d12f6a30af8 .
+doc:Factspi4_1 None:has_text_value "robustness" .
+_:bd764d9b793bb27a07d4ad8263d55017 rdf:reifies <<( doc:Factspi4_1 None:has_text_value "robustness" )>> ;
+	prov:wasDerivedFrom doc:7d12f6a30af8 .
+doc:Factstech3 a None:Regression .
+_:dc9bdff7c01242b03d2589e087fbc807 rdf:reifies <<( doc:Factstech3 rdf:type None:Regression )>> ;
+	prov:wasDerivedFrom doc:7d12f6a30af8 .
+_:cb367e80cd16825bbda99fb91c4a52f1 prov:wasDerivedFrom doc:7d12f6a30af8 .
+doc:Factstech5 a None:Sequential_pattern_discovery .
+_:eb11ba48c2a5aeb376647fb3397a4848 rdf:reifies <<( doc:Factstech5 rdf:type None:Sequential_pattern_discovery )>> ;
+	prov:wasDerivedFrom doc:7d12f6a30af8 .
+doc:Factsmodel1_20 None:describes_configuration doc:Factsvar5_5 .
+_:caa1066f70a2a4d2610e1b5e85d61f7 rdf:reifies <<( doc:Factsmodel1_20 None:describes_configuration doc:Factsvar5_5 )>> ;
+	prov:wasDerivedFrom doc:7d12f6a30af8 .
+doc:Factsdetail2_3 None:has_text_value "Python 3.10 used for create, train, validate, and test model; preprocessing included noise removal, scaling, and augmentation" .
+_:eccdf15efb9b117024bcc2a66980aaee rdf:reifies <<( doc:Factsdetail2_3 None:has_text_value "Python 3.10 used for create, train, validate, and test model; preprocessing included noise removal, scaling, and augmentation" )>> ;
+	prov:wasDerivedFrom doc:7d12f6a30af8 .
+doc:Factsquality2_1 a None:number_if_input_variables .
+_:c9acdf91f110b3e23a750aa8af17813b rdf:reifies <<( doc:Factsquality2_1 rdf:type None:number_if_input_variables )>> ;
+	prov:wasDerivedFrom doc:7d12f6a30af8 .
+doc:Factsquality3_1 a None:Module_synchronization .
+_:ce78e7a4edaa9ebb2cb278502fdb1fe8 rdf:reifies <<( doc:Factsquality3_1 rdf:type None:Module_synchronization )>> ;
+	prov:wasDerivedFrom doc:7d12f6a30af8 .
+doc:Factsmodel1_20 None:has_design_detail doc:Factsdetail2_3 .
+_:f487974ac5592aadb0ca052e5a98b50b rdf:reifies <<( doc:Factsmodel1_20 None:has_design_detail doc:Factsdetail2_3 )>> ;
+	prov:wasDerivedFrom doc:7d12f6a30af8 .
+doc:Factstech9 a None:Multiple_steps_future_state_forecast .
+_:ed55c954bab4de8d46e0c24d188cb29e rdf:reifies <<( doc:Factstech9 rdf:type None:Multiple_steps_future_state_forecast )>> ;
+	prov:wasDerivedFrom doc:7d12f6a30af8 .
+doc:Factsdataset1_9 rdfs:label "experimental vibration dataset" .
+_:f317107fdd2d5d5b3605f795d3bb2305 rdf:reifies <<( doc:Factsdataset1_9 rdfs:label "experimental vibration dataset" )>> ;
+	prov:wasDerivedFrom doc:7d12f6a30af8 .
+_:de834569bacbe1cd02b9648dc389ed1b prov:wasDerivedFrom doc:7d12f6a30af8 .
+doc:Factsmodel1_20 rdfs:label "Hybrid CNN-BiLSTM model" .
+_:b0b78e968da1723a96548e567665ad4c rdf:reifies <<( doc:Factsmodel1_20 rdfs:label "Hybrid CNN-BiLSTM model" )>> ;
+	prov:wasDerivedFrom doc:7d12f6a30af8 .
+doc:Factsvar5_5 None:has_text_value "balance condition" .
+_:c7a87c818918f65395538b0a17d1d262 rdf:reifies <<( doc:Factsvar5_5 None:has_text_value "balance condition" )>> ;
+	prov:wasDerivedFrom doc:7d12f6a30af8 .
+_:cdb2d8e9eca0c0bce075e54f8b722306 prov:wasDerivedFrom doc:7d12f6a30af8 .
+doc:Factspi4_1 None:has_text_value "improved generalization across operational variations" .
+_:f4ac725fc883dcf9ae2d38070ee37583 rdf:reifies <<( doc:Factspi4_1 None:has_text_value "improved generalization across operational variations" )>> ;
+	prov:wasDerivedFrom doc:7d12f6a30af8 .
+doc:Factsyear1_55 None:has_interger_value 2024 .
+_:f31afb1f1b494bb906cd617bce14fc8d rdf:reifies <<( doc:Factsyear1_55 None:has_interger_value 2024 )>> ;
+	prov:wasDerivedFrom doc:7d12f6a30af8 .
+doc:Factsitem1_12 rdfs:label "belt-drive system" .
+_:dd0c9c57ebc9322497a091af76706cd2 rdf:reifies <<( doc:Factsitem1_12 rdfs:label "belt-drive system" )>> ;
+	prov:wasDerivedFrom doc:7d12f6a30af8 .
+doc:Factspi4_1 None:has_text_value "predictive performance" .
+_:e0dc127e2a0ed7dfe2e3ac162996330a rdf:reifies <<( doc:Factspi4_1 None:has_text_value "predictive performance" )>> ;
+	prov:wasDerivedFrom doc:7d12f6a30af8 .
+doc:Factsvar5_5 None:has_text_value "CNN-BiLSTM end-to-end deep-learning framework" .
+_:cbe619bfff95bb6fe4ec867924ab63bb rdf:reifies <<( doc:Factsvar5_5 None:has_text_value "CNN-BiLSTM end-to-end deep-learning framework" )>> ;
+	prov:wasDerivedFrom doc:7d12f6a30af8 .
+doc:Factsfunction2_11 a None:Health_assessment .
+_:ba66d9bd0d5ca6519bf746ebbc143747 rdf:reifies <<( doc:Factsfunction2_11 rdf:type None:Health_assessment )>> ;
+	prov:wasDerivedFrom doc:7d12f6a30af8 .
+doc:Factsquality1_1 a None:Number_of_failure_modes .
+_:c59e218a634884ac8100149f75e0d5b7 rdf:reifies <<( doc:Factsquality1_1 rdf:type None:Number_of_failure_modes )>> ;
+	prov:wasDerivedFrom doc:7d12f6a30af8 .
+doc:Factsvar5_5 None:has_text_value "belt condition" .
+_:ee9aee0c2519e36db3df99f4f2925ff6 rdf:reifies <<( doc:Factsvar5_5 None:has_text_value "belt condition" )>> ;
+	prov:wasDerivedFrom doc:7d12f6a30af8 .
+doc:Factstech9 a None:One_step_future_state_forecast .
+_:ab585b3ea77a0bf85b4bcac430ce962e rdf:reifies <<( doc:Factstech9 rdf:type None:One_step_future_state_forecast )>> ;
+	prov:wasDerivedFrom doc:7d12f6a30af8 .
+doc:Factstech8 a None:Health_modelling .
+_:efbc6c7e26aedc0993333563e213733 rdf:reifies <<( doc:Factstech8 rdf:type None:Health_modelling )>> ;
+	prov:wasDerivedFrom doc:7d12f6a30af8 .
+doc:Factscase1_16 a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Predictive_Maintenance_Article> .
+_:f16cde7a2cc02177d7892de90ccf56db rdf:reifies <<( doc:Factscase1_16 rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Predictive_Maintenance_Article> )>> ;
+	prov:wasDerivedFrom doc:7d12f6a30af8 .
+_:db984a713389deae9fc43eee6b336a9f prov:wasDerivedFrom doc:7d12f6a30af8 .
+doc:Factsvar5_5 None:has_text_value "rotational speed" .
+_:e78e2242acd1ddfefaf91fc40e684279 rdf:reifies <<( doc:Factsvar5_5 None:has_text_value "rotational speed" )>> ;
+	prov:wasDerivedFrom doc:7d12f6a30af8 .
+doc:Factstech6 a None:Deviation_detection .
+_:e76bb706960bc63ff985b08cd22820f8 rdf:reifies <<( doc:Factstech6 rdf:type None:Deviation_detection )>> ;
+	prov:wasDerivedFrom doc:7d12f6a30af8 .
+doc:Factsvar5_5 None:has_text_value "belt pretension force" .
+_:c82c72e80970a3d031e5fb95b1cde76d rdf:reifies <<( doc:Factsvar5_5 None:has_text_value "belt pretension force" )>> ;
+	prov:wasDerivedFrom doc:7d12f6a30af8 .
+doc:Factsvar5_5 None:has_text_value "vibration signal" .
+_:cc9592955a7edc0abdd67bf55cf9e2ed rdf:reifies <<( doc:Factsvar5_5 None:has_text_value "vibration signal" )>> ;
+	prov:wasDerivedFrom doc:7d12f6a30af8 .
+doc:Factsdataset1_9 a None:maintainable_item_record .
+_:b9316a2a6f669d50325a2708b30f1cc1 rdf:reifies <<( doc:Factsdataset1_9 rdf:type None:maintainable_item_record )>> ;
+	prov:wasDerivedFrom doc:7d12f6a30af8 .
+doc:Factscase1_16 None:has_text_value "belt-drive condition monitoring case" .
+_:ff59eb1f46d19a4d181fd8f1ef9518c1 rdf:reifies <<( doc:Factscase1_16 None:has_text_value "belt-drive condition monitoring case" )>> ;
+	prov:wasDerivedFrom doc:7d12f6a30af8 .
+doc:Factsquality2_1 None:has_interger_value 4 .
+_:c76e95c8ac24e4bb936cdd5c16c5a80d rdf:reifies <<( doc:Factsquality2_1 None:has_interger_value 4 )>> ;
+	prov:wasDerivedFrom doc:7d12f6a30af8 .
+doc:Factsid1_28 None:has_text_value "Methodology of the Deep-Learning Model for Belt-Drive Condition Monitoring" .
+_:c584264e06ae89d2433e4f4f98b43a9e rdf:reifies <<( doc:Factsid1_28 None:has_text_value "Methodology of the Deep-Learning Model for Belt-Drive Condition Monitoring" )>> ;
+	prov:wasDerivedFrom doc:7d12f6a30af8 .
+_:e063de9856ed749d39b90295429bc008 prov:wasDerivedFrom doc:7d12f6a30af8 .
+_:c584557b705e04c2731bdc88dda35519 prov:wasDerivedFrom doc:7d12f6a30af8 .

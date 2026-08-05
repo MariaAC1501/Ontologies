@@ -1,0 +1,479 @@
+@prefix None: <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD/seed#> .
+@prefix cco: <http://www.ontologyrepository.com/CommonCoreOntologies/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doc: <https://growgraph.dev/doc/5d3a0c7776f1/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix obo: <http://purl.obolibrary.org/obo/> .
+@prefix cd: <https://growgraph.dev/facts> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix schema: <https://schema.org/> .
+@prefix schema1: <http://schema.org/> .
+doc:336e4d4db487 a prov:Entity , schema:text ;
+	prov:generatedAtTime "2026-07-11T19:05:03.548414Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+	schema:position 0 ;
+	schema:identifier "336e4d4db487" .
+doc:FactsdesignServerless None:has_text_value "Cloud-based platform (AUTO-MAINT) offering automation, customization, and support in the MLOps pipeline" .
+_:a446682df2a4f59ff36b9aaa82069e66 rdf:reifies <<( doc:FactsdesignServerless None:has_text_value "Cloud-based platform (AUTO-MAINT) offering automation, customization, and support in the MLOps pipeline" )>> ;
+	prov:wasDerivedFrom doc:336e4d4db487 .
+doc:Factspubyear_2026_9 None:has_interger_value 2026 .
+_:de6bdc48bc1d3730077f2074606e5615 rdf:reifies <<( doc:Factspubyear_2026_9 None:has_interger_value 2026 )>> ;
+	prov:wasDerivedFrom doc:336e4d4db487 .
+doc:FactsAutomaint None:has_design_detail doc:FactsdesignServerless .
+_:e70523a8dc829d0db58170baaf48b3cc rdf:reifies <<( doc:FactsAutomaint None:has_design_detail doc:FactsdesignServerless )>> ;
+	prov:wasDerivedFrom doc:336e4d4db487 .
+doc:FactsdesignServerless a None:Design_detail .
+_:fe68489253779113469d056cd7018995 rdf:reifies <<( doc:FactsdesignServerless rdf:type None:Design_detail )>> ;
+	prov:wasDerivedFrom doc:336e4d4db487 .
+doc:FactsorgPesuCiot a schema1:Organization .
+_:bcfb63adb3bd81192f9f41f0cb78d1c6 rdf:reifies <<( doc:FactsorgPesuCiot rdf:type schema1:Organization )>> ;
+	prov:wasDerivedFrom doc:336e4d4db487 .
+doc:FactspersonAdnanZaki schema1:givenName "Adnan" .
+_:b28913a904eb2ffb1ea9ad94594ca4a3 rdf:reifies <<( doc:FactspersonAdnanZaki schema1:givenName "Adnan" )>> ;
+	prov:wasDerivedFrom doc:336e4d4db487 .
+doc:FactsAutomaint None:has_predictive_maintenance_function doc:FactsfuncFaultDetection .
+_:e2fcb8af12ec71c23d84c130294fc6c9 rdf:reifies <<( doc:FactsAutomaint None:has_predictive_maintenance_function doc:FactsfuncFaultDetection )>> ;
+	prov:wasDerivedFrom doc:336e4d4db487 .
+doc:Factsarticle_AUTOMAINT_2026 dcterms:creator doc:FactspersonAdnanZaki .
+_:f4bf3d8dec707feab3bcd98a70afecdf rdf:reifies <<( doc:Factsarticle_AUTOMAINT_2026 dcterms:creator doc:FactspersonAdnanZaki )>> ;
+	prov:wasDerivedFrom doc:336e4d4db487 .
+doc:Factsarticle_AUTOMAINT_2026 a None:Predictive_Maintenance_Article .
+_:dae3f7df3a7daae223ddd0f72875ea42 rdf:reifies <<( doc:Factsarticle_AUTOMAINT_2026 rdf:type None:Predictive_Maintenance_Article )>> ;
+	prov:wasDerivedFrom doc:336e4d4db487 .
+doc:FactspersonAdnanZaki schema1:familyName "Acharya" .
+_:e0be4f60203102a1be3171ab3928b000 rdf:reifies <<( doc:FactspersonAdnanZaki schema1:familyName "Acharya" )>> ;
+	prov:wasDerivedFrom doc:336e4d4db487 .
+doc:FactspersonAdnanZaki schema1:affiliation doc:FactsorgPesuCiot .
+_:a2c4584560b592485c29f130232405f2 rdf:reifies <<( doc:FactspersonAdnanZaki schema1:affiliation doc:FactsorgPesuCiot )>> ;
+	prov:wasDerivedFrom doc:336e4d4db487 .
+doc:FactspersonAdnanZaki schema1:email "vadiraja@pes.edu" .
+_:fc050d996b1d6e2af7494196912aeacc rdf:reifies <<( doc:FactspersonAdnanZaki schema1:email "vadiraja@pes.edu" )>> ;
+	prov:wasDerivedFrom doc:336e4d4db487 .
+doc:FactsAutomaint a None:Predictive_maintenance_system_module .
+_:e25c1b3d7f7bf6f7853c470ded1b40c5 rdf:reifies <<( doc:FactsAutomaint rdf:type None:Predictive_maintenance_system_module )>> ;
+	prov:wasDerivedFrom doc:336e4d4db487 .
+doc:Factsarticle_AUTOMAINT_2026 schema1:keywords "Predictive maintenance, Machine learning, Cloud computing, Real-time monitoring, IoT, AWS, MQTT, Micro services" .
+_:a0b3fca056bc468b81bcd1d050dd3945 rdf:reifies <<( doc:Factsarticle_AUTOMAINT_2026 schema1:keywords "Predictive maintenance, Machine learning, Cloud computing, Real-time monitoring, IoT, AWS, MQTT, Micro services" )>> ;
+	prov:wasDerivedFrom doc:336e4d4db487 .
+doc:FactspersonAdnanZaki a schema1:Person .
+_:ee38949542d5984dd2c12d1da09dc03c rdf:reifies <<( doc:FactspersonAdnanZaki rdf:type schema1:Person )>> ;
+	prov:wasDerivedFrom doc:336e4d4db487 .
+doc:FactspersonAdnanZaki schema1:familyName "Jain" .
+_:f78ef05cc9d01a7b33657c69a5254e0e rdf:reifies <<( doc:FactspersonAdnanZaki schema1:familyName "Jain" )>> ;
+	prov:wasDerivedFrom doc:336e4d4db487 .
+doc:Factsarticle_AUTOMAINT_2026 schema1:license doc:FactsarticleLicense .
+_:b0898b5c9eca4c2fa36c938a2c4c8d40 rdf:reifies <<( doc:Factsarticle_AUTOMAINT_2026 schema1:license doc:FactsarticleLicense )>> ;
+	prov:wasDerivedFrom doc:336e4d4db487 .
+doc:FactsmoduleSyncOnline a None:Module_synchronization .
+_:cbe97e664a4eb078854e21267bf8e16d rdf:reifies <<( doc:FactsmoduleSyncOnline rdf:type None:Module_synchronization )>> ;
+	prov:wasDerivedFrom doc:336e4d4db487 .
+doc:FactsArticleTitle1_1 a None:Article_title .
+_:acf8efbbca691f02d6c875d5de96dae1 rdf:reifies <<( doc:FactsArticleTitle1_1 rdf:type None:Article_title )>> ;
+	prov:wasDerivedFrom doc:336e4d4db487 .
+doc:FactspersonAdnanZaki schema1:givenName "Naitik" .
+_:e12461f30489c2859ede812a4dff029d rdf:reifies <<( doc:FactspersonAdnanZaki schema1:givenName "Naitik" )>> ;
+	prov:wasDerivedFrom doc:336e4d4db487 .
+doc:FactspersonAdnanZaki schema1:familyName "Honnavalli" .
+_:e9232c5fd973d72b76a0305af8e65d2 rdf:reifies <<( doc:FactspersonAdnanZaki schema1:familyName "Honnavalli" )>> ;
+	prov:wasDerivedFrom doc:336e4d4db487 .
+doc:FactsArticleTitle1_1 None:has_text_value "A serverless automated MLOps framework for scalable industrial predictive maintenance" .
+_:e42608a4dff13f7ec01bee9b4a9371a8 rdf:reifies <<( doc:FactsArticleTitle1_1 None:has_text_value "A serverless automated MLOps framework for scalable industrial predictive maintenance" )>> ;
+	prov:wasDerivedFrom doc:336e4d4db487 .
+doc:FactsAutomaint None:has_synchronization doc:FactsmoduleSyncOnline .
+_:d4957dfefe98288954246968e4a99ff2 rdf:reifies <<( doc:FactsAutomaint None:has_synchronization doc:FactsmoduleSyncOnline )>> ;
+	prov:wasDerivedFrom doc:336e4d4db487 .
+doc:FactspersonAdnanZaki schema1:givenName "V. Naga" .
+_:d8be28e81239dd4587cd810992890b24 rdf:reifies <<( doc:FactspersonAdnanZaki schema1:givenName "V. Naga" )>> ;
+	prov:wasDerivedFrom doc:336e4d4db487 .
+doc:FactsAutomaint a None:Predictive_maintenance_model .
+_:f5ca715541828d75687105826fb1de6a rdf:reifies <<( doc:FactsAutomaint rdf:type None:Predictive_maintenance_model )>> ;
+	prov:wasDerivedFrom doc:336e4d4db487 .
+doc:Factsarticle_AUTOMAINT_2026 None:has_publication_year doc:Factspubyear_2026_9 .
+_:bb4632adcfeae501dfaf3aecb6a8ec44 rdf:reifies <<( doc:Factsarticle_AUTOMAINT_2026 None:has_publication_year doc:Factspubyear_2026_9 )>> ;
+	prov:wasDerivedFrom doc:336e4d4db487 .
+doc:FactspersonAdnanZaki schema1:givenName "Vadiraja" .
+_:c310d23bf29a4fef9f97f1477ab45b4c rdf:reifies <<( doc:FactspersonAdnanZaki schema1:givenName "Vadiraja" )>> ;
+	prov:wasDerivedFrom doc:336e4d4db487 .
+doc:FactsdesignServerless None:has_text_value "Automation of MLOps pipeline for full model lifecycle management without manual intervention" .
+_:e6f9a167b26f840b28e291f382544757 rdf:reifies <<( doc:FactsdesignServerless None:has_text_value "Automation of MLOps pipeline for full model lifecycle management without manual intervention" )>> ;
+	prov:wasDerivedFrom doc:336e4d4db487 .
+doc:FactsdesignServerless None:has_text_value "Microservices-based cloud-native platform to simplify ML model implementation and deployment" .
+_:ef48e3dcf4a023c4b3c7251b7157b868 rdf:reifies <<( doc:FactsdesignServerless None:has_text_value "Microservices-based cloud-native platform to simplify ML model implementation and deployment" )>> ;
+	prov:wasDerivedFrom doc:336e4d4db487 .
+doc:FactspersonAdnanZaki schema1:familyName "Zaki" .
+_:edbea7750be68ba8cb015a6a2de39b03 rdf:reifies <<( doc:FactspersonAdnanZaki schema1:familyName "Zaki" )>> ;
+	prov:wasDerivedFrom doc:336e4d4db487 .
+doc:FactspersonAdnanZaki schema1:givenName "Prasad B." .
+_:fa50867223d28426f0843c6d1a6bc459 rdf:reifies <<( doc:FactspersonAdnanZaki schema1:givenName "Prasad B." )>> ;
+	prov:wasDerivedFrom doc:336e4d4db487 .
+doc:FactsAutomaint None:has_predictive_maintenance_function doc:FactsfuncRul_1 .
+_:d3a4c9048a52922c7169d078738b941d rdf:reifies <<( doc:FactsAutomaint None:has_predictive_maintenance_function doc:FactsfuncRul_1 )>> ;
+	prov:wasDerivedFrom doc:336e4d4db487 .
+doc:FactsAutomaint None:has_text_value "ML models automated and managed by the AUTO-MAINT MLOps framework" .
+_:c1410e7904565d79304bc811c04f835 rdf:reifies <<( doc:FactsAutomaint None:has_text_value "ML models automated and managed by the AUTO-MAINT MLOps framework" )>> ;
+	prov:wasDerivedFrom doc:336e4d4db487 .
+doc:FactsorgPesuCiot schema1:address "Bangalore, Karnataka 560085, India" .
+_:a359776bf8839597d161d4501d4f6153 rdf:reifies <<( doc:FactsorgPesuCiot schema1:address "Bangalore, Karnataka 560085, India" )>> ;
+	prov:wasDerivedFrom doc:336e4d4db487 .
+doc:FactsmoduleSyncOnline None:has_text_value "online" .
+_:fbe6165b11fe9c16306d6b24671f05c3 rdf:reifies <<( doc:FactsmoduleSyncOnline None:has_text_value "online" )>> ;
+	prov:wasDerivedFrom doc:336e4d4db487 .
+doc:FactsdesignServerless None:has_text_value "Real-time monitoring and processing of heterogeneous sensor data via cloud services and messaging (e.g., MQTT)" .
+_:c708d9adc30787afa5535cad988c9f4c rdf:reifies <<( doc:FactsdesignServerless None:has_text_value "Real-time monitoring and processing of heterogeneous sensor data via cloud services and messaging (e.g., MQTT)" )>> ;
+	prov:wasDerivedFrom doc:336e4d4db487 .
+doc:FactsarticleLicense schema1:name "Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International" .
+_:ed901a2d61afd8ec170f18911ab4a8d9 rdf:reifies <<( doc:FactsarticleLicense schema1:name "Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International" )>> ;
+	prov:wasDerivedFrom doc:336e4d4db487 .
+doc:FactspersonAdnanZaki schema1:familyName "Saketh" .
+_:a2840126951c40910b3c07201820fa2 rdf:reifies <<( doc:FactspersonAdnanZaki schema1:familyName "Saketh" )>> ;
+	prov:wasDerivedFrom doc:336e4d4db487 .
+doc:FactspersonAdnanZaki schema1:givenName "M. Manas" .
+_:c3a018f8cb723046e33eebd85c868f5b rdf:reifies <<( doc:FactspersonAdnanZaki schema1:givenName "M. Manas" )>> ;
+	prov:wasDerivedFrom doc:336e4d4db487 .
+doc:FactsfuncFaultDetection None:has_text_value "Function to search for faults by assessing maintainable item parameters (real-time fault detection)" .
+_:a81318b47bde45ccbe02acb342794298 rdf:reifies <<( doc:FactsfuncFaultDetection None:has_text_value "Function to search for faults by assessing maintainable item parameters (real-time fault detection)" )>> ;
+	prov:wasDerivedFrom doc:336e4d4db487 .
+doc:FactsarticleLicense a schema1:CreativeWork .
+_:c50c1e3777a1e48edb3600b61d441ee4 rdf:reifies <<( doc:FactsarticleLicense rdf:type schema1:CreativeWork )>> ;
+	prov:wasDerivedFrom doc:336e4d4db487 .
+doc:FactsdesignServerless None:has_text_value "Serverless architecture enabled scalable processing of heterogeneous sensor data in real-time" .
+_:b33bc13b2e688bea3eced99f44cdd31b rdf:reifies <<( doc:FactsdesignServerless None:has_text_value "Serverless architecture enabled scalable processing of heterogeneous sensor data in real-time" )>> ;
+	prov:wasDerivedFrom doc:336e4d4db487 .
+doc:FactsfuncFaultDetection a None:Fault_detection .
+_:d5306d3db7d7e5a96e514f6aaea46f1c rdf:reifies <<( doc:FactsfuncFaultDetection rdf:type None:Fault_detection )>> ;
+	prov:wasDerivedFrom doc:336e4d4db487 .
+doc:Factsarticle_AUTOMAINT_2026 None:has_title doc:FactsArticleTitle1_1 .
+_:af6cb3827fa18fcaa22368cb2f29931f rdf:reifies <<( doc:Factsarticle_AUTOMAINT_2026 None:has_title doc:FactsArticleTitle1_1 )>> ;
+	prov:wasDerivedFrom doc:336e4d4db487 .
+doc:FactsorgPesuCiot schema1:name "PESU-C-IoT, Department of Computer Science and Engineering, PES University" .
+_:e83d36c35fa0487bd3713078cb203729 rdf:reifies <<( doc:FactsorgPesuCiot schema1:name "PESU-C-IoT, Department of Computer Science and Engineering, PES University" )>> ;
+	prov:wasDerivedFrom doc:336e4d4db487 .
+doc:FactspersonAdnanZaki schema1:familyName "Gowda" .
+_:a2e1159d31ae49385fe6634168a134c7 rdf:reifies <<( doc:FactspersonAdnanZaki schema1:familyName "Gowda" )>> ;
+	prov:wasDerivedFrom doc:336e4d4db487 .
+doc:FactsfuncRul_1 None:has_text_value "Function to forecast remaining operational life (estimate next failure / remaining useful life)" .
+_:a4280a64d55dea524d482007678269fb rdf:reifies <<( doc:FactsfuncRul_1 None:has_text_value "Function to forecast remaining operational life (estimate next failure / remaining useful life)" )>> ;
+	prov:wasDerivedFrom doc:336e4d4db487 .
+doc:FactsdesignServerless None:has_text_value "Integrated continuous learning to maintain high prediction accuracy" .
+_:a8173a3cec85b93ccd26f53e5e5959a2 rdf:reifies <<( doc:FactsdesignServerless None:has_text_value "Integrated continuous learning to maintain high prediction accuracy" )>> ;
+	prov:wasDerivedFrom doc:336e4d4db487 .
+doc:FactsfuncRul_1 a None:Remaining_useful_life_estimation .
+_:dbb18483f284830b8e682dc7596b5040 rdf:reifies <<( doc:FactsfuncRul_1 rdf:type None:Remaining_useful_life_estimation )>> ;
+	prov:wasDerivedFrom doc:336e4d4db487 .
+doc:Factsarticle_AUTOMAINT_2026 cco:describes doc:FactsAutomaint .
+_:a4007218b3da4190baa64905b2a0d726 rdf:reifies <<( doc:Factsarticle_AUTOMAINT_2026 cco:describes doc:FactsAutomaint )>> ;
+	prov:wasDerivedFrom doc:336e4d4db487 .
+doc:Factspubyear_2026_9 a None:Publication_year .
+_:c09b8c1e5b120d4de2c9dae0a84b924f rdf:reifies <<( doc:Factspubyear_2026_9 rdf:type None:Publication_year )>> ;
+	prov:wasDerivedFrom doc:336e4d4db487 .
+doc:FactsarticleLicense schema1:url "http://creativecommons.org/licenses/by-nc-nd/4.0/" .
+_:aae34c9e9d1da02ef18da4a1be4d2ae0 rdf:reifies <<( doc:FactsarticleLicense schema1:url "http://creativecommons.org/licenses/by-nc-nd/4.0/" )>> ;
+	prov:wasDerivedFrom doc:336e4d4db487 .
+doc:FactsorgPesuCiot schema1:name "Department of Computer Science and Engineering, PES University" .
+_:d878058b285abdbf2c4b16238bba150f rdf:reifies <<( doc:FactsorgPesuCiot schema1:name "Department of Computer Science and Engineering, PES University" )>> ;
+	prov:wasDerivedFrom doc:336e4d4db487 .
+doc:FactsAutomaint obo:RO_0010002 doc:FactsAutomaint .
+_:f3c3388b0b3eded5e67bb22e7e7b9f04 rdf:reifies <<( doc:FactsAutomaint obo:RO_0010002 doc:FactsAutomaint )>> ;
+	prov:wasDerivedFrom doc:336e4d4db487 .
+doc:30f41ab891f6 a prov:Entity , schema:text ;
+	prov:generatedAtTime "2026-07-11T19:05:03.553138Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+	schema:position 1 ;
+	schema:identifier "30f41ab891f6" .
+doc:FactsUsageTime rdfs:label "usage time"@en .
+_:b4b72cb9ad4da1e779c3f84062d1301f rdf:reifies <<( doc:FactsUsageTime rdfs:label "usage time"@en )>> ;
+	prov:wasDerivedFrom doc:30f41ab891f6 .
+doc:FactsPdMSystem cd:employs doc:FactsRegressionModel .
+_:c7d8378a2c8f954ed84f98b48635b0f3 rdf:reifies <<( doc:FactsPdMSystem cd:employs doc:FactsRegressionModel )>> ;
+	prov:wasDerivedFrom doc:30f41ab891f6 .
+doc:FactsSafetyHazard rdfs:label "safety hazard to plant personnel"@en .
+_:b3e6800f2cf71e64039de37d95af0e25 rdf:reifies <<( doc:FactsSafetyHazard rdfs:label "safety hazard to plant personnel"@en )>> ;
+	prov:wasDerivedFrom doc:30f41ab891f6 .
+doc:FactsEmergencyRepair rdfs:label "emergency repair"@en .
+_:eb748b14a12ba9b1b5bf6460eb2ece03 rdf:reifies <<( doc:FactsEmergencyRepair rdfs:label "emergency repair"@en )>> ;
+	prov:wasDerivedFrom doc:30f41ab891f6 .
+doc:FactsEquipment a None:Maintainable_item .
+_:b009e3db5fbecb577d487ba17a4908f3 rdf:reifies <<( doc:FactsEquipment rdf:type None:Maintainable_item )>> ;
+	prov:wasDerivedFrom doc:30f41ab891f6 .
+doc:FactsAnomalyDetection rdfs:label "anomaly detection"@en .
+_:da79dd530119cc8b41027450e61f1e7f rdf:reifies <<( doc:FactsAnomalyDetection rdfs:label "anomaly detection"@en )>> ;
+	prov:wasDerivedFrom doc:30f41ab891f6 .
+doc:FactsDowntime rdfs:comment "Prolonged periods of non-operational equipment disrupting production."@en .
+_:c0a1b6aab14334f9d82327ab9e91741a rdf:reifies <<( doc:FactsDowntime rdfs:comment "Prolonged periods of non-operational equipment disrupting production."@en )>> ;
+	prov:wasDerivedFrom doc:30f41ab891f6 .
+doc:FactsHumidity cco:describes doc:FactsEquipment .
+_:c12a82ada557021a28114af9536e2aff rdf:reifies <<( doc:FactsHumidity cco:describes doc:FactsEquipment )>> ;
+	prov:wasDerivedFrom doc:30f41ab891f6 .
+doc:FactsVibration rdfs:label "vibration"@en .
+_:d4d26866ee4c093c25ce2bf28ef7338d rdf:reifies <<( doc:FactsVibration rdfs:label "vibration"@en )>> ;
+	prov:wasDerivedFrom doc:30f41ab891f6 .
+doc:FactsExcessiveServicing a obo:BFO_0000019 .
+_:f5a6f37b54c2744247890db3a9738463 rdf:reifies <<( doc:FactsExcessiveServicing rdf:type obo:BFO_0000019 )>> ;
+	prov:wasDerivedFrom doc:30f41ab891f6 .
+doc:FactsReactiveMaintenance rdfs:comment "Maintenance performed only after equipment failure; also called 'run-to-failure'."@en .
+_:f1f6389db6050765202606895cbc3150 rdf:reifies <<( doc:FactsReactiveMaintenance rdfs:comment "Maintenance performed only after equipment failure; also called 'run-to-failure'."@en )>> ;
+	prov:wasDerivedFrom doc:30f41ab891f6 .
+doc:FactsTemperature cco:describes doc:FactsEquipment .
+_:bf46d105db6a93103e41502228dc4d72 rdf:reifies <<( doc:FactsTemperature cco:describes doc:FactsEquipment )>> ;
+	prov:wasDerivedFrom doc:30f41ab891f6 .
+doc:FactsHumidity rdfs:label "humidity"@en .
+_:edc0e66b3b54add218d2bee26b11d82c rdf:reifies <<( doc:FactsHumidity rdfs:label "humidity"@en )>> ;
+	prov:wasDerivedFrom doc:30f41ab891f6 .
+doc:FactsExcessiveServicing rdfs:label "excessive servicing"@en .
+_:eaec782272444893262069c26e69822b rdf:reifies <<( doc:FactsExcessiveServicing rdfs:label "excessive servicing"@en )>> ;
+	prov:wasDerivedFrom doc:30f41ab891f6 .
+doc:FactsUsageTime a None:Data_variable .
+_:a0109af05505cfee2abfdfdd97b1b3f3 rdf:reifies <<( doc:FactsUsageTime rdf:type None:Data_variable )>> ;
+	prov:wasDerivedFrom doc:30f41ab891f6 .
+doc:FactsVibration cco:describes doc:FactsEquipment .
+_:f4ea888328b7abb9b769bd73c7687da6 rdf:reifies <<( doc:FactsVibration cco:describes doc:FactsEquipment )>> ;
+	prov:wasDerivedFrom doc:30f41ab891f6 .
+doc:FactsScheduledIntervals a rdfs:Class .
+_:b80184a8c96c7f627035099309990c0b rdf:reifies <<( doc:FactsScheduledIntervals rdf:type rdfs:Class )>> ;
+	prov:wasDerivedFrom doc:30f41ab891f6 .
+doc:FactsPdMSystem rdfs:label "predictive maintenance (PdM) system"@en .
+_:a42f53b342d17e11f2cd6d20e67b6ce3 rdf:reifies <<( doc:FactsPdMSystem rdfs:label "predictive maintenance (PdM) system"@en )>> ;
+	prov:wasDerivedFrom doc:30f41ab891f6 .
+doc:FactsAnomalyDetection a None:Deviation_detection .
+_:ab9f79d8959d733e23a5fd6c8b816b59 rdf:reifies <<( doc:FactsAnomalyDetection rdf:type None:Deviation_detection )>> ;
+	prov:wasDerivedFrom doc:30f41ab891f6 .
+doc:FactsWearAndTear rdfs:label "wear and tear"@en .
+_:edb57aad95ac319c7db1b77a82b333fd rdf:reifies <<( doc:FactsWearAndTear rdfs:label "wear and tear"@en )>> ;
+	prov:wasDerivedFrom doc:30f41ab891f6 .
+doc:FactsRegressionModel rdfs:label "regression (machine learning)"@en .
+_:af925a1acc1eb6da4ff073543c2180f5 rdf:reifies <<( doc:FactsRegressionModel rdfs:label "regression (machine learning)"@en )>> ;
+	prov:wasDerivedFrom doc:30f41ab891f6 .
+doc:FactsScheduledIntervals rdfs:label "scheduled intervals"@en .
+_:e97c69645bf8888d0ed4227e4d2159cf rdf:reifies <<( doc:FactsScheduledIntervals rdfs:label "scheduled intervals"@en )>> ;
+	prov:wasDerivedFrom doc:30f41ab891f6 .
+doc:FactsPdMSystem cco:describes None:Predictive_maintenance_model .
+_:c64a25543adfd964427e58b11ef77b2f rdf:reifies <<( doc:FactsPdMSystem cco:describes None:Predictive_maintenance_model )>> ;
+	prov:wasDerivedFrom doc:30f41ab891f6 .
+doc:FactsTemperature rdfs:label "temperature"@en .
+_:a22cef6fea7798d7944fe60d4bf6d0f rdf:reifies <<( doc:FactsTemperature rdfs:label "temperature"@en )>> ;
+	prov:wasDerivedFrom doc:30f41ab891f6 .
+doc:FactsPdMSystem cd:employs doc:FactsTimeSeriesAnalysis .
+_:a55477c39e77db36bea48a10bfbc3ee4 rdf:reifies <<( doc:FactsPdMSystem cd:employs doc:FactsTimeSeriesAnalysis )>> ;
+	prov:wasDerivedFrom doc:30f41ab891f6 .
+doc:FactsEquipment rdfs:label "critical machinery"@en .
+_:f34a7bc95c70f8bd447c98bca9675307 rdf:reifies <<( doc:FactsEquipment rdfs:label "critical machinery"@en )>> ;
+	prov:wasDerivedFrom doc:30f41ab891f6 .
+doc:FactsDowntime a obo:BFO_0000019 .
+_:d87d7e16ab7aacf40a303aed76ad9dad rdf:reifies <<( doc:FactsDowntime rdf:type obo:BFO_0000019 )>> ;
+	prov:wasDerivedFrom doc:30f41ab891f6 .
+doc:FactsExcessiveServicing rdfs:comment "Unnecessary replacement of components before end-of-life leading to higher costs and downtime."@en .
+_:deff645825d41cfcc649a7d0e5016bfb rdf:reifies <<( doc:FactsExcessiveServicing rdfs:comment "Unnecessary replacement of components before end-of-life leading to higher costs and downtime."@en )>> ;
+	prov:wasDerivedFrom doc:30f41ab891f6 .
+doc:FactsWearAndTear cco:describes doc:FactsEquipment .
+_:f3c42b7c2451c3906673678ec32abbb7 rdf:reifies <<( doc:FactsWearAndTear cco:describes doc:FactsEquipment )>> ;
+	prov:wasDerivedFrom doc:30f41ab891f6 .
+doc:FactsHumidity a None:Data_variable .
+_:e627a96e701d78d1b132e926b2a7e5db rdf:reifies <<( doc:FactsHumidity rdf:type None:Data_variable )>> ;
+	prov:wasDerivedFrom doc:30f41ab891f6 .
+doc:FactsTemperatureThresholdCritical rdfs:comment "Example indicator: a model may predict motor failure when temperature exceeds a specific threshold."@en .
+_:c4174c966fc339a4bd1ac32af8265061 rdf:reifies <<( doc:FactsTemperatureThresholdCritical rdfs:comment "Example indicator: a model may predict motor failure when temperature exceeds a specific threshold."@en )>> ;
+	prov:wasDerivedFrom doc:30f41ab891f6 .
+doc:FactsPdMSystem None:has_predictive_maintenance_function None:Future_state_forecast .
+_:ffbc8738b0c29a54d15a9db6dbd92358 rdf:reifies <<( doc:FactsPdMSystem None:has_predictive_maintenance_function None:Future_state_forecast )>> ;
+	prov:wasDerivedFrom doc:30f41ab891f6 .
+doc:FactsVibration a None:Data_variable .
+_:fb0c1e5e8d65f83cc50f03f358a30f22 rdf:reifies <<( doc:FactsVibration rdf:type None:Data_variable )>> ;
+	prov:wasDerivedFrom doc:30f41ab891f6 .
+doc:FactsTemperature a None:Data_variable .
+_:ca8839fbe365dc7fa7047f31cd70fa66 rdf:reifies <<( doc:FactsTemperature rdf:type None:Data_variable )>> ;
+	prov:wasDerivedFrom doc:30f41ab891f6 .
+doc:FactsDowntime rdfs:label "downtime"@en .
+_:edd8abadf989651371d0d229160cf4d rdf:reifies <<( doc:FactsDowntime rdfs:label "downtime"@en )>> ;
+	prov:wasDerivedFrom doc:30f41ab891f6 .
+doc:FactsPdMSystem cd:employs doc:FactsAnomalyDetection .
+_:ba10e3e3554b33e42f429f3644ec3ba9 rdf:reifies <<( doc:FactsPdMSystem cd:employs doc:FactsAnomalyDetection )>> ;
+	prov:wasDerivedFrom doc:30f41ab891f6 .
+doc:FactsPdMSystem rdfs:comment "System leveraging sensors and machine learning to continuously monitor equipment health and anticipate maintenance."@en .
+_:a47e4f0bf2da26f4fc4cf30b28f919c6 rdf:reifies <<( doc:FactsPdMSystem rdfs:comment "System leveraging sensors and machine learning to continuously monitor equipment health and anticipate maintenance."@en )>> ;
+	prov:wasDerivedFrom doc:30f41ab891f6 .
+doc:FactsUsageTime rdfs:label "usage frequency"@en .
+_:c35f6e77afbb275c4d9454a890982bca rdf:reifies <<( doc:FactsUsageTime rdfs:label "usage frequency"@en )>> ;
+	prov:wasDerivedFrom doc:30f41ab891f6 .
+doc:FactsRegressionModel a None:Regression .
+_:b81fee315adc26e1638a0af8d2995f5a rdf:reifies <<( doc:FactsRegressionModel rdf:type None:Regression )>> ;
+	prov:wasDerivedFrom doc:30f41ab891f6 .
+doc:FactsPreventiveMaintenance cd:uses doc:FactsScheduledIntervals .
+_:ae907561938e0423add72c5dbaa7c6e0 rdf:reifies <<( doc:FactsPreventiveMaintenance cd:uses doc:FactsScheduledIntervals )>> ;
+	prov:wasDerivedFrom doc:30f41ab891f6 .
+doc:FactsScheduledIntervals rdfs:comment "Fixed schedules based on usage time or manufacturer's recommended service life."@en .
+_:c558ab0938ed31f4ac8e78e8b40c1af9 rdf:reifies <<( doc:FactsScheduledIntervals rdfs:comment "Fixed schedules based on usage time or manufacturer's recommended service life."@en )>> ;
+	prov:wasDerivedFrom doc:30f41ab891f6 .
+doc:FactsTimeSeriesAnalysis a None:Sequential_pattern_discovery .
+_:fc83c364dac2441f956d133e36ea8301 rdf:reifies <<( doc:FactsTimeSeriesAnalysis rdf:type None:Sequential_pattern_discovery )>> ;
+	prov:wasDerivedFrom doc:30f41ab891f6 .
+doc:FactsEmergencyRepair rdfs:comment "Urgent repair activities that are time-constrained and typically more expensive."@en .
+_:d6676011efcb0ce28c63ee59c4f3e9eb rdf:reifies <<( doc:FactsEmergencyRepair rdfs:comment "Urgent repair activities that are time-constrained and typically more expensive."@en )>> ;
+	prov:wasDerivedFrom doc:30f41ab891f6 .
+doc:FactsEmergencyRepair a rdfs:Class .
+_:ea0d060f79312835a031ba09a866ff2c rdf:reifies <<( doc:FactsEmergencyRepair rdf:type rdfs:Class )>> ;
+	prov:wasDerivedFrom doc:30f41ab891f6 .
+doc:FactsWearAndTear a None:Data_variable .
+_:df9918ef60ba819b8c066b70d7ec936e rdf:reifies <<( doc:FactsWearAndTear rdf:type None:Data_variable )>> ;
+	prov:wasDerivedFrom doc:30f41ab891f6 .
+doc:FactsManufacturerRecommendation a rdfs:Class .
+_:ad6187b90d620d60fadd18cdbf50ddf8 rdf:reifies <<( doc:FactsManufacturerRecommendation rdf:type rdfs:Class )>> ;
+	prov:wasDerivedFrom doc:30f41ab891f6 .
+doc:FactsSafetyHazard a obo:BFO_0000019 .
+_:bc56b3c8ee92b10099d7505f12ff3684 rdf:reifies <<( doc:FactsSafetyHazard rdf:type obo:BFO_0000019 )>> ;
+	prov:wasDerivedFrom doc:30f41ab891f6 .
+doc:FactsReactiveMaintenance schema1:result doc:FactsDowntime .
+_:ab4c6c2e7ca9db200b7f7c81636c0a9 rdf:reifies <<( doc:FactsReactiveMaintenance schema1:result doc:FactsDowntime )>> ;
+	prov:wasDerivedFrom doc:30f41ab891f6 .
+doc:FactsPreventiveMaintenance rdfs:label "preventive maintenance"@en .
+_:f88e3abc0eacae00369339484f9421dd rdf:reifies <<( doc:FactsPreventiveMaintenance rdfs:label "preventive maintenance"@en )>> ;
+	prov:wasDerivedFrom doc:30f41ab891f6 .
+doc:FactsPdMSystem a None:Predictive_maintenance_system_module .
+_:ac9154a59b80afbfcf9a8df056bd6377 rdf:reifies <<( doc:FactsPdMSystem rdf:type None:Predictive_maintenance_system_module )>> ;
+	prov:wasDerivedFrom doc:30f41ab891f6 .
+doc:FactsTemperatureThresholdCritical a None:Performance_indicator .
+_:e0fbd98a65bf1117b1391035b7f561bc rdf:reifies <<( doc:FactsTemperatureThresholdCritical rdf:type None:Performance_indicator )>> ;
+	prov:wasDerivedFrom doc:30f41ab891f6 .
+doc:FactsUsageTime cco:describes doc:FactsEquipment .
+_:c46d2ccd00a8bcb75875a6a92d560255 rdf:reifies <<( doc:FactsUsageTime cco:describes doc:FactsEquipment )>> ;
+	prov:wasDerivedFrom doc:30f41ab891f6 .
+doc:FactsManufacturerRecommendation rdfs:label "manufacturer recommended service life"@en .
+_:a77657593f4de7d3cd451269c266fe6f rdf:reifies <<( doc:FactsManufacturerRecommendation rdfs:label "manufacturer recommended service life"@en )>> ;
+	prov:wasDerivedFrom doc:30f41ab891f6 .
+doc:FactsEquipment rdfs:label "equipment"@en .
+_:a88fa33d59cc5d55347a436ebad9d38d rdf:reifies <<( doc:FactsEquipment rdfs:label "equipment"@en )>> ;
+	prov:wasDerivedFrom doc:30f41ab891f6 .
+doc:FactsReactiveMaintenance rdfs:seeAlso doc:FactsEmergencyRepair .
+_:f77b77821fa40c8cb725571800522374 rdf:reifies <<( doc:FactsReactiveMaintenance rdfs:seeAlso doc:FactsEmergencyRepair )>> ;
+	prov:wasDerivedFrom doc:30f41ab891f6 .
+doc:FactsPreventiveMaintenance rdfs:comment "Maintenance performed at regular predetermined intervals to anticipate and mitigate failures."@en .
+_:eaec945679b531240ffb5060abd110a rdf:reifies <<( doc:FactsPreventiveMaintenance rdfs:comment "Maintenance performed at regular predetermined intervals to anticipate and mitigate failures."@en )>> ;
+	prov:wasDerivedFrom doc:30f41ab891f6 .
+doc:FactsReactiveMaintenance a rdfs:Class .
+_:bef1d82cf42c013860460f64e009e537 rdf:reifies <<( doc:FactsReactiveMaintenance rdf:type rdfs:Class )>> ;
+	prov:wasDerivedFrom doc:30f41ab891f6 .
+doc:FactsTimeSeriesAnalysis rdfs:label "time-series analysis"@en .
+_:d9478ac9763656c6d2c65fcff43affca rdf:reifies <<( doc:FactsTimeSeriesAnalysis rdfs:label "time-series analysis"@en )>> ;
+	prov:wasDerivedFrom doc:30f41ab891f6 .
+doc:FactsReactiveMaintenance rdfs:label "reactive maintenance"@en .
+_:f791cd4910a11753ac735c0463603a30 rdf:reifies <<( doc:FactsReactiveMaintenance rdfs:label "reactive maintenance"@en )>> ;
+	prov:wasDerivedFrom doc:30f41ab891f6 .
+doc:FactsPreventiveMaintenance a rdfs:Class .
+_:ce0fde92723309145123d907444a7272 rdf:reifies <<( doc:FactsPreventiveMaintenance rdf:type rdfs:Class )>> ;
+	prov:wasDerivedFrom doc:30f41ab891f6 .
+doc:FactsTemperatureThresholdCritical rdfs:label "temperature threshold indicating likely failure"@en .
+_:ccf16c13ee34173627e9500404592bdd rdf:reifies <<( doc:FactsTemperatureThresholdCritical rdfs:label "temperature threshold indicating likely failure"@en )>> ;
+	prov:wasDerivedFrom doc:30f41ab891f6 .
+doc:2c6f6a08e6ff a prov:Entity , schema:text ;
+	prov:generatedAtTime "2026-07-11T19:05:03.557132Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+	schema:position 2 ;
+	schema:identifier "2c6f6a08e6ff" .
+doc:FactsAutomaint obo:RO_0000086 doc:FactsScalable .
+_:c99b4833b0020989a293ae3dbd96d481 rdf:reifies <<( doc:FactsAutomaint obo:RO_0000086 doc:FactsScalable )>> ;
+	prov:wasDerivedFrom doc:2c6f6a08e6ff .
+doc:FactsMqtt a schema1:SoftwareApplication .
+_:bbe3465e2a6b45e4c06ec92228c31394 rdf:reifies <<( doc:FactsMqtt rdf:type schema1:SoftwareApplication )>> ;
+	prov:wasDerivedFrom doc:2c6f6a08e6ff .
+doc:FactsResearchQuestion1 None:has_text_value "Can ML models within a serverless pipeline achieve high predictive performance?" .
+_:f141be3cf46769fe0b077e4a8e6db16c rdf:reifies <<( doc:FactsResearchQuestion1 None:has_text_value "Can ML models within a serverless pipeline achieve high predictive performance?" )>> ;
+	prov:wasDerivedFrom doc:2c6f6a08e6ff .
+doc:FactsResearchQuestion1 cco:is_about doc:FactsAutomaint .
+_:ebc55c675dd8a9ea4c970bdb6c6f162b rdf:reifies <<( doc:FactsResearchQuestion1 cco:is_about doc:FactsAutomaint )>> ;
+	prov:wasDerivedFrom doc:2c6f6a08e6ff .
+doc:FactsInsufficientCapital a obo:BFO_0000019 .
+_:d2a3d49401dbc9e4bb9b09f3afeac566 rdf:reifies <<( doc:FactsInsufficientCapital rdf:type obo:BFO_0000019 )>> ;
+	prov:wasDerivedFrom doc:2c6f6a08e6ff .
+doc:FactsResearchQuestion1 None:has_text_value "Can a customizable and automated ML pipeline enhance usability and accessibility for users with varying expertise?" .
+_:c83d18f71a2512e9d3381bd05b2f4fce rdf:reifies <<( doc:FactsResearchQuestion1 None:has_text_value "Can a customizable and automated ML pipeline enhance usability and accessibility for users with varying expertise?" )>> ;
+	prov:wasDerivedFrom doc:2c6f6a08e6ff .
+_:e70523a8dc829d0db58170baaf48b3cc prov:wasDerivedFrom doc:2c6f6a08e6ff .
+doc:FactsNeedForPdM a None:Design_detail .
+_:e3fbd5ea645edc2bd0a281da82ac1b7b rdf:reifies <<( doc:FactsNeedForPdM rdf:type None:Design_detail )>> ;
+	prov:wasDerivedFrom doc:2c6f6a08e6ff .
+doc:FactsThisArticle obo:RO_0010002 doc:FactsRulTask .
+_:cc6d14a5e3b5422b574145e00a3c1a66 rdf:reifies <<( doc:FactsThisArticle obo:RO_0010002 doc:FactsRulTask )>> ;
+	prov:wasDerivedFrom doc:2c6f6a08e6ff .
+doc:FactsFlask a schema1:SoftwareApplication .
+_:ce570c3d20c672c352bdeec4f1b115b3 rdf:reifies <<( doc:FactsFlask rdf:type schema1:SoftwareApplication )>> ;
+	prov:wasDerivedFrom doc:2c6f6a08e6ff .
+_:fe68489253779113469d056cd7018995 prov:wasDerivedFrom doc:2c6f6a08e6ff .
+doc:FactsAutomaint schema1:hasPart doc:FactsModelTrainingAlgorithm .
+_:d1d2ccc1a99f8efee1181a40577e1d39 rdf:reifies <<( doc:FactsAutomaint schema1:hasPart doc:FactsModelTrainingAlgorithm )>> ;
+	prov:wasDerivedFrom doc:2c6f6a08e6ff .
+doc:FactsAutomaint schema1:hasPart doc:FactsMqtt .
+_:b2131b3c7cb70c6f5a07e927fd6763f rdf:reifies <<( doc:FactsAutomaint schema1:hasPart doc:FactsMqtt )>> ;
+	prov:wasDerivedFrom doc:2c6f6a08e6ff .
+doc:FactsScalable a obo:BFO_0000019 .
+_:c19d80b940745fb458ebd518cbd3ffdc rdf:reifies <<( doc:FactsScalable rdf:type obo:BFO_0000019 )>> ;
+	prov:wasDerivedFrom doc:2c6f6a08e6ff .
+doc:FactsRealTimePredictionFunction a None:Future_state_forecast .
+_:b699de62ea1aacf3b0a5220c2578e0a6 rdf:reifies <<( doc:FactsRealTimePredictionFunction rdf:type None:Future_state_forecast )>> ;
+	prov:wasDerivedFrom doc:2c6f6a08e6ff .
+doc:FactsResearchQuestion1 None:has_text_value "Can a serverless architecture be feasible for PdM?" .
+_:c65c0eb7264cec24821cf2f0741c6fbf rdf:reifies <<( doc:FactsResearchQuestion1 None:has_text_value "Can a serverless architecture be feasible for PdM?" )>> ;
+	prov:wasDerivedFrom doc:2c6f6a08e6ff .
+_:d3a4c9048a52922c7169d078738b941d prov:wasDerivedFrom doc:2c6f6a08e6ff .
+doc:FactsArticleTitle1_1 None:has_text_value "AUTO-MAINT: A Serverless PdM Platform" .
+_:a394e137d9c78258460d5c53d4fcea11 rdf:reifies <<( doc:FactsArticleTitle1_1 None:has_text_value "AUTO-MAINT: A Serverless PdM Platform" )>> ;
+	prov:wasDerivedFrom doc:2c6f6a08e6ff .
+doc:FactsFirebase a schema1:SoftwareApplication .
+_:e940bc3575039843aa423c0ab0b82ab9 rdf:reifies <<( doc:FactsFirebase rdf:type schema1:SoftwareApplication )>> ;
+	prov:wasDerivedFrom doc:2c6f6a08e6ff .
+doc:FactsResearchQuestion1 a cco:DescriptiveInformationContentEntity .
+_:b3613196fed505a84639664cf7169dac rdf:reifies <<( doc:FactsResearchQuestion1 rdf:type cco:DescriptiveInformationContentEntity )>> ;
+	prov:wasDerivedFrom doc:2c6f6a08e6ff .
+doc:FactsSkilledLaborShortage a obo:BFO_0000019 .
+_:d9490b3fce3d8053cd3a8be6e9b1d39f rdf:reifies <<( doc:FactsSkilledLaborShortage rdf:type obo:BFO_0000019 )>> ;
+	prov:wasDerivedFrom doc:2c6f6a08e6ff .
+_:e25c1b3d7f7bf6f7853c470ded1b40c5 prov:wasDerivedFrom doc:2c6f6a08e6ff .
+doc:Factsaws_S3 a schema1:Service .
+_:f336b01ab3a06b730f5adc1c4ec6caaa rdf:reifies <<( doc:Factsaws_S3 rdf:type schema1:Service )>> ;
+	prov:wasDerivedFrom doc:2c6f6a08e6ff .
+doc:FactsAws a schema1:Organization .
+_:b05b36301cf20c8ab92f9c856f81d4d5 rdf:reifies <<( doc:FactsAws rdf:type schema1:Organization )>> ;
+	prov:wasDerivedFrom doc:2c6f6a08e6ff .
+_:dbb18483f284830b8e682dc7596b5040 prov:wasDerivedFrom doc:2c6f6a08e6ff .
+doc:FactsMsme a schema1:Organization .
+_:fb362390c87954bb3fa5249f0b460b3b rdf:reifies <<( doc:FactsMsme rdf:type schema1:Organization )>> ;
+	prov:wasDerivedFrom doc:2c6f6a08e6ff .
+doc:FactsAutomaint schema1:hasPart doc:Factsaws_S3 .
+_:c040f57f6f4e9defe1ce0f134bd4a39a rdf:reifies <<( doc:FactsAutomaint schema1:hasPart doc:Factsaws_S3 )>> ;
+	prov:wasDerivedFrom doc:2c6f6a08e6ff .
+doc:FactsAutomaint schema1:hasPart doc:FactsFirebase .
+_:be36035366738dc7f31bbf2f0f9c24e3 rdf:reifies <<( doc:FactsAutomaint schema1:hasPart doc:FactsFirebase )>> ;
+	prov:wasDerivedFrom doc:2c6f6a08e6ff .
+doc:FactsMsme obo:RO_0000086 doc:FactsScalable .
+_:b3286ed0fbd1ca77ad20a60912d9333f rdf:reifies <<( doc:FactsMsme obo:RO_0000086 doc:FactsScalable )>> ;
+	prov:wasDerivedFrom doc:2c6f6a08e6ff .
+doc:FactsThisArticle a None:Predictive_Maintenance_Article .
+_:b0ee09c3a1018e587574af1059581b78 rdf:reifies <<( doc:FactsThisArticle rdf:type None:Predictive_Maintenance_Article )>> ;
+	prov:wasDerivedFrom doc:2c6f6a08e6ff .
+_:acf8efbbca691f02d6c875d5de96dae1 prov:wasDerivedFrom doc:2c6f6a08e6ff .
+doc:FactsResearchQuestion1 None:has_text_value "Can the platform scale effectively under varying loads and concurrent usage?" .
+_:fd666c36efdfc467cc4c25f3b2110b19 rdf:reifies <<( doc:FactsResearchQuestion1 None:has_text_value "Can the platform scale effectively under varying loads and concurrent usage?" )>> ;
+	prov:wasDerivedFrom doc:2c6f6a08e6ff .
+doc:FactsRulTask a None:Remaining_useful_life_estimation .
+_:c517b6ee634ff5fd62c84ca06a8c16bd rdf:reifies <<( doc:FactsRulTask rdf:type None:Remaining_useful_life_estimation )>> ;
+	prov:wasDerivedFrom doc:2c6f6a08e6ff .
+doc:FactsMsme obo:RO_0000086 doc:FactsNeedForPdM .
+_:d7722708dfe25f52b67fec68300fb63b rdf:reifies <<( doc:FactsMsme obo:RO_0000086 doc:FactsNeedForPdM )>> ;
+	prov:wasDerivedFrom doc:2c6f6a08e6ff .
+doc:FactsModelTrainingAlgorithm a cco:Algorithm .
+_:ff6a7e8bc8e82e2feba08d6d14efa3db rdf:reifies <<( doc:FactsModelTrainingAlgorithm rdf:type cco:Algorithm )>> ;
+	prov:wasDerivedFrom doc:2c6f6a08e6ff .
+doc:FactsMsme obo:RO_0000086 doc:FactsInsufficientCapital .
+_:feb6bda0b9f04eec4f4161595811bff8 rdf:reifies <<( doc:FactsMsme obo:RO_0000086 doc:FactsInsufficientCapital )>> ;
+	prov:wasDerivedFrom doc:2c6f6a08e6ff .
+doc:FactsAutomaint None:has_predictive_maintenance_function doc:FactsRealTimePredictionFunction .
+_:dd71ed42128f1d8c055a619f3b3928cd rdf:reifies <<( doc:FactsAutomaint None:has_predictive_maintenance_function doc:FactsRealTimePredictionFunction )>> ;
+	prov:wasDerivedFrom doc:2c6f6a08e6ff .
+doc:FactsAutomaint schema1:hasPart doc:FactsFlask .
+_:f4282d7ce59b52a25b2e74b95250a39 rdf:reifies <<( doc:FactsAutomaint schema1:hasPart doc:FactsFlask )>> ;
+	prov:wasDerivedFrom doc:2c6f6a08e6ff .
+doc:FactsThisArticle None:has_title doc:FactsArticleTitle1_1 .
+_:a64d2b7f652f6c3670d98dc93b6928a7 rdf:reifies <<( doc:FactsThisArticle None:has_title doc:FactsArticleTitle1_1 )>> ;
+	prov:wasDerivedFrom doc:2c6f6a08e6ff .
+doc:FactsAutomaint schema1:hasPart doc:FactsRealTimePredictionFunction .
+_:e43f7088c5035db12f1bf161074bf528 rdf:reifies <<( doc:FactsAutomaint schema1:hasPart doc:FactsRealTimePredictionFunction )>> ;
+	prov:wasDerivedFrom doc:2c6f6a08e6ff .
+doc:FactsMsme obo:RO_0000086 doc:FactsSkilledLaborShortage .
+_:fab0a0cda0b26374ca996e95a6f8f9bb rdf:reifies <<( doc:FactsMsme obo:RO_0000086 doc:FactsSkilledLaborShortage )>> ;
+	prov:wasDerivedFrom doc:2c6f6a08e6ff .

@@ -1,0 +1,626 @@
+@prefix None: <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD/seed#> .
+@prefix cco: <http://www.ontologyrepository.com/CommonCoreOntologies/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doc: <https://growgraph.dev/doc/d6a09466de9a/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix obo: <http://purl.obolibrary.org/obo/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix cd: <https://growgraph.dev/facts> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix schema: <https://schema.org/> .
+@prefix schema1: <http://schema.org/> .
+doc:b8d977697aab a prov:Entity , schema:text ;
+	prov:generatedAtTime "2026-07-13T00:46:26.399764Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+	schema:position 0 ;
+	schema:identifier "b8d977697aab" .
+doc:Factsyear1_94 None:has_interger_value 2026 .
+_:f117f36b5da0dca6514004852e1cc6a4 rdf:reifies <<( doc:Factsyear1_94 None:has_interger_value 2026 )>> ;
+	prov:wasDerivedFrom doc:b8d977697aab .
+doc:Factsdataset1_21 rdfs:label "Scania component X dataset"@en .
+_:e04988995596591ba33a6fbbb76bdcb5 rdf:reifies <<( doc:Factsdataset1_21 rdfs:label "Scania component X dataset"@en )>> ;
+	prov:wasDerivedFrom doc:b8d977697aab .
+doc:FactsstageA rdfs:label "Stage B severity classification"@en .
+_:ebc61ba121652d6c26d9b88afb1a62f9 rdf:reifies <<( doc:FactsstageA rdfs:label "Stage B severity classification"@en )>> ;
+	prov:wasDerivedFrom doc:b8d977697aab .
+doc:Factsid8_1 a None:Design_detail .
+_:afdcb2fcee3c956b0e0757ca74cf5072 rdf:reifies <<( doc:Factsid8_1 rdf:type None:Design_detail )>> ;
+	prov:wasDerivedFrom doc:b8d977697aab .
+doc:Factsauthor2_17 a schema1:Person .
+_:dbf1ae600a99d15294effc5e3cc895cf rdf:reifies <<( doc:Factsauthor2_17 rdf:type schema1:Person )>> ;
+	prov:wasDerivedFrom doc:b8d977697aab .
+doc:Factsid8_1 a None:Article_identifier .
+_:da354ce77a2ac4bd24625c092ee740e4 rdf:reifies <<( doc:Factsid8_1 rdf:type None:Article_identifier )>> ;
+	prov:wasDerivedFrom doc:b8d977697aab .
+doc:FactslastKSummary schema1:description "Transforms recent operational records into compact statistical and trend-based descriptors while preserving missingness." .
+_:f934b6e0d5b1cd0cd3b80ac8736478ee rdf:reifies <<( doc:FactslastKSummary schema1:description "Transforms recent operational records into compact statistical and trend-based descriptors while preserving missingness." )>> ;
+	prov:wasDerivedFrom doc:b8d977697aab .
+doc:Factslightgbm_1 a cco:Algorithm .
+_:b618b7ac9c9825632a29fae89e3778c4 rdf:reifies <<( doc:Factslightgbm_1 rdf:type cco:Algorithm )>> ;
+	prov:wasDerivedFrom doc:b8d977697aab .
+doc:Factspdm_3 a None:Predictive_maintenance_system_module .
+_:b66ed1e1fcb2fcb9e1c7414cf96b6958 rdf:reifies <<( doc:Factspdm_3 rdf:type None:Predictive_maintenance_system_module )>> ;
+	prov:wasDerivedFrom doc:b8d977697aab .
+doc:Factsaffiliation1_10 schema1:name "Industrial and System Engineering, Kyonggi University, Suwon, 16227, Republic of Korea" .
+_:c78e5f3f28f98b82085a4e87a6948a6 rdf:reifies <<( doc:Factsaffiliation1_10 schema1:name "Industrial and System Engineering, Kyonggi University, Suwon, 16227, Republic of Korea" )>> ;
+	prov:wasDerivedFrom doc:b8d977697aab .
+doc:Factsauthor2_17 schema1:name "Si-Woo Kim" .
+_:dab7a6718f8b9add84a42d553993aa9f rdf:reifies <<( doc:Factsauthor2_17 schema1:name "Si-Woo Kim" )>> ;
+	prov:wasDerivedFrom doc:b8d977697aab .
+doc:FactslastKSummary rdfs:label "last_k_summary"@en .
+_:f2fbad8be0ae6eeab093b2cbdfcd825 rdf:reifies <<( doc:FactslastKSummary rdfs:label "last_k_summary"@en )>> ;
+	prov:wasDerivedFrom doc:b8d977697aab .
+doc:Factsyear1_94 None:has_identifier doc:Factsid8_1 .
+_:a4e1707127323b400a1e8c6a7e07dda rdf:reifies <<( doc:Factsyear1_94 None:has_identifier doc:Factsid8_1 )>> ;
+	prov:wasDerivedFrom doc:b8d977697aab .
+doc:FactsstageA a None:Classification .
+_:b5bd73901fe46b9c94c2b7a411389e13 rdf:reifies <<( doc:FactsstageA rdf:type None:Classification )>> ;
+	prov:wasDerivedFrom doc:b8d977697aab .
+doc:Factspdm_3 None:has_design_detail doc:Factsid8_1 .
+_:bf2e36adb8f2723d139ff7ff0a33acf rdf:reifies <<( doc:Factspdm_3 None:has_design_detail doc:Factsid8_1 )>> ;
+	prov:wasDerivedFrom doc:b8d977697aab .
+doc:Factsyear1_94 schema1:keywords "two-stage classification" .
+_:d56f846cf63f949256da41ddbb3a3c1a rdf:reifies <<( doc:Factsyear1_94 schema1:keywords "two-stage classification" )>> ;
+	prov:wasDerivedFrom doc:b8d977697aab .
+doc:Factsid8_1 a None:Article_title .
+_:e6257df8fda0bfcba326ea155429a4fd rdf:reifies <<( doc:Factsid8_1 rdf:type None:Article_title )>> ;
+	prov:wasDerivedFrom doc:b8d977697aab .
+doc:Factsyear1_94 None:has_publication_year doc:Factsyear1_94 .
+_:e79b41e85b469fde601a3a88aed17a6c rdf:reifies <<( doc:Factsyear1_94 None:has_publication_year doc:Factsyear1_94 )>> ;
+	prov:wasDerivedFrom doc:b8d977697aab .
+doc:Factsxgboost_3 rdfs:label "XGBoost"@en .
+_:fcfd1a56267cfb51d3d289644a5f6cf4 rdf:reifies <<( doc:Factsxgboost_3 rdfs:label "XGBoost"@en )>> ;
+	prov:wasDerivedFrom doc:b8d977697aab .
+doc:FactsstageA schema1:description "normal vs. fault with a false-negative-weighted objective" .
+_:bf6e8320886c6b45cc912a89644461e8 rdf:reifies <<( doc:FactsstageA schema1:description "normal vs. fault with a false-negative-weighted objective" )>> ;
+	prov:wasDerivedFrom doc:b8d977697aab .
+doc:FactsbiLstm a cco:Algorithm .
+_:d9e16c2828e8b4ab44619e9a40414b27 rdf:reifies <<( doc:FactsbiLstm rdf:type cco:Algorithm )>> ;
+	prov:wasDerivedFrom doc:b8d977697aab .
+doc:FactsrecallTest a None:Performance_value .
+_:cbe09aa16ef1e94a4a7217161211d792 rdf:reifies <<( doc:FactsrecallTest rdf:type None:Performance_value )>> ;
+	prov:wasDerivedFrom doc:b8d977697aab .
+doc:Factsyear1_94 schema1:keywords "LightGBM" .
+_:f9bd85b1aa6a5b89575e2fb9a4f2705d rdf:reifies <<( doc:Factsyear1_94 schema1:keywords "LightGBM" )>> ;
+	prov:wasDerivedFrom doc:b8d977697aab .
+doc:Factsauthor2_17 schema1:affiliation doc:Factsaffiliation1_10 .
+_:f522ee28ff212f32e724d3bb66eedbe2 rdf:reifies <<( doc:Factsauthor2_17 schema1:affiliation doc:Factsaffiliation1_10 )>> ;
+	prov:wasDerivedFrom doc:b8d977697aab .
+doc:Factspdm_3 None:has_predictive_maintenance_function None:Fault_detection .
+_:df893cac4645636a9e7f3d349a2b6812 rdf:reifies <<( doc:Factspdm_3 None:has_predictive_maintenance_function None:Fault_detection )>> ;
+	prov:wasDerivedFrom doc:b8d977697aab .
+doc:Factsyear1_94 dcterms:creator doc:Factsauthor2_17 .
+_:abedb32f9b3c421a604884530912a96e rdf:reifies <<( doc:Factsyear1_94 dcterms:creator doc:Factsauthor2_17 )>> ;
+	prov:wasDerivedFrom doc:b8d977697aab .
+doc:FactsrecallTest None:has_text_value "0.83" .
+_:bb415ccc9229b44fbc25c18d904f5bd6 rdf:reifies <<( doc:FactsrecallTest None:has_text_value "0.83" )>> ;
+	prov:wasDerivedFrom doc:b8d977697aab .
+doc:Factspdm_3 None:has_predictive_maintenance_function None:Classification .
+_:e383b43eb1b1a5da7586fc7a67aa4940 rdf:reifies <<( doc:Factspdm_3 None:has_predictive_maintenance_function None:Classification )>> ;
+	prov:wasDerivedFrom doc:b8d977697aab .
+doc:Factsyear1_94 a None:Predictive_Maintenance_Article .
+_:e8241856b33de68ff6822095ac39466d rdf:reifies <<( doc:Factsyear1_94 rdf:type None:Predictive_Maintenance_Article )>> ;
+	prov:wasDerivedFrom doc:b8d977697aab .
+doc:FactscomponentX a None:Maintainable_item .
+_:b78e2bc3d747f19104483ca3f386a3bc rdf:reifies <<( doc:FactscomponentX rdf:type None:Maintainable_item )>> ;
+	prov:wasDerivedFrom doc:b8d977697aab .
+doc:Factslightgbm_1 rdfs:label "LightGBM"@en .
+_:d32171a58ee41bc2f089a64f67a4a5ce rdf:reifies <<( doc:Factslightgbm_1 rdfs:label "LightGBM"@en )>> ;
+	prov:wasDerivedFrom doc:b8d977697aab .
+doc:FactsrecallTest None:has_text_value "36113" .
+_:e0cb3f2b1bbc2bf02c279f01b9195426 rdf:reifies <<( doc:FactsrecallTest None:has_text_value "36113" )>> ;
+	prov:wasDerivedFrom doc:b8d977697aab .
+doc:FactsstageA rdfs:label "Stage A fault screening"@en .
+_:ad8b5b68cdad7096da7c6499402045e8 rdf:reifies <<( doc:FactsstageA rdfs:label "Stage A fault screening"@en )>> ;
+	prov:wasDerivedFrom doc:b8d977697aab .
+doc:Factsaffiliation1_10 a schema1:Organization .
+_:c513c5c22c7342824fd8c36e74112da9 rdf:reifies <<( doc:Factsaffiliation1_10 rdf:type schema1:Organization )>> ;
+	prov:wasDerivedFrom doc:b8d977697aab .
+doc:FactsidaChallenge rdfs:label "IDA Industrial Challenge"@en .
+_:a37b8c70c1c9f5fd5fbffa02ed924e9f rdf:reifies <<( doc:FactsidaChallenge rdfs:label "IDA Industrial Challenge"@en )>> ;
+	prov:wasDerivedFrom doc:b8d977697aab .
+doc:Factsyear1_94 a None:Publication_year .
+_:f51f6e7efe13e66e3f4d70b2c3537c88 rdf:reifies <<( doc:Factsyear1_94 rdf:type None:Publication_year )>> ;
+	prov:wasDerivedFrom doc:b8d977697aab .
+doc:Factsxgboost_3 a cco:Algorithm .
+_:a15dad85f6f76c97ac2a6c8c8e0f83aa rdf:reifies <<( doc:Factsxgboost_3 rdf:type cco:Algorithm )>> ;
+	prov:wasDerivedFrom doc:b8d977697aab .
+doc:Factsyear1_94 schema1:keywords "cost-based evaluation" .
+_:fcdc05df7d72c2924c0a3d264750ff7 rdf:reifies <<( doc:Factsyear1_94 schema1:keywords "cost-based evaluation" )>> ;
+	prov:wasDerivedFrom doc:b8d977697aab .
+doc:Factspdm_3 rdfs:label "Two-Stage LightGBM Framework"@en .
+_:c6ba859ddd1e77855b79df667d3ed5ed rdf:reifies <<( doc:Factspdm_3 rdfs:label "Two-Stage LightGBM Framework"@en )>> ;
+	prov:wasDerivedFrom doc:b8d977697aab .
+doc:Factspdm_3 rdfs:label "Predictive maintenance (PdM)"@en .
+_:c9a3d6e6a22da5132cfb1cb143a7e380 rdf:reifies <<( doc:Factspdm_3 rdfs:label "Predictive maintenance (PdM)"@en )>> ;
+	prov:wasDerivedFrom doc:b8d977697aab .
+doc:Factsauthor2_17 schema1:name "Yong Soo Kim" .
+_:b8b2432552cddf50ac61e2ac8807bf5 rdf:reifies <<( doc:Factsauthor2_17 schema1:name "Yong Soo Kim" )>> ;
+	prov:wasDerivedFrom doc:b8d977697aab .
+doc:FactsscaniaTrucks a None:Maintainable_item .
+_:f45e265fb8034af6fdf295703eeb09f2 rdf:reifies <<( doc:FactsscaniaTrucks rdf:type None:Maintainable_item )>> ;
+	prov:wasDerivedFrom doc:b8d977697aab .
+doc:FactsstageA a None:Fault_detection .
+_:e8198791abe60822fac899a1aafb1807 rdf:reifies <<( doc:FactsstageA rdf:type None:Fault_detection )>> ;
+	prov:wasDerivedFrom doc:b8d977697aab .
+doc:Factsyear1_94 schema1:datePublished "2026-01-12"^^<http://www.w3.org/2001/XMLSchema#date> .
+_:b13ea7911b9e919f3cc9ec881624ddcf rdf:reifies <<( doc:Factsyear1_94 schema1:datePublished "2026-01-12"^^<http://www.w3.org/2001/XMLSchema#date> )>> ;
+	prov:wasDerivedFrom doc:b8d977697aab .
+doc:FactscomponentX rdfs:label "Component X"@en .
+_:c1d08a015699669934eddf933b6ed114 rdf:reifies <<( doc:FactscomponentX rdfs:label "Component X"@en )>> ;
+	prov:wasDerivedFrom doc:b8d977697aab .
+doc:Factsauthor2_17 schema1:email "kimys@kgu.ac.kr" .
+_:da7d5ffa3ec0201441c59bfbc03ee705 rdf:reifies <<( doc:Factsauthor2_17 schema1:email "kimys@kgu.ac.kr" )>> ;
+	prov:wasDerivedFrom doc:b8d977697aab .
+doc:FactsrecallTest None:has_text_value "0.77" .
+_:ef99587a98e815a9f62b91e751b29bd4 rdf:reifies <<( doc:FactsrecallTest None:has_text_value "0.77" )>> ;
+	prov:wasDerivedFrom doc:b8d977697aab .
+doc:Factsyear1_94 schema1:keywords "scania component X dataset" .
+_:a298319e1b5befedf6d7854dffe9658a rdf:reifies <<( doc:Factsyear1_94 schema1:keywords "scania component X dataset" )>> ;
+	prov:wasDerivedFrom doc:b8d977697aab .
+doc:Factspdm_3 schema1:description "A data-driven paradigm using sensor data, diagnostic logs, and operational histories to forecast potential failures in advance." .
+_:accbbb0a4ab2077fde704a6d9a77cf49 rdf:reifies <<( doc:Factspdm_3 schema1:description "A data-driven paradigm using sensor data, diagnostic logs, and operational histories to forecast potential failures in advance." )>> ;
+	prov:wasDerivedFrom doc:b8d977697aab .
+doc:FactsbiLstm rdfs:label "Bi-LSTM"@en .
+_:b9dd85ace132fba1078d00c01cb69d5f rdf:reifies <<( doc:FactsbiLstm rdfs:label "Bi-LSTM"@en )>> ;
+	prov:wasDerivedFrom doc:b8d977697aab .
+doc:Factsyear1_94 None:has_title doc:Factsid8_1 .
+_:c06bec7113c1659465fb2427f816e10d rdf:reifies <<( doc:Factsyear1_94 None:has_title doc:Factsid8_1 )>> ;
+	prov:wasDerivedFrom doc:b8d977697aab .
+doc:Factspdm_3 a None:Predictive_maintenance_model .
+_:eea6d916fc85664fa9f68d45ec6df094 rdf:reifies <<( doc:Factspdm_3 rdf:type None:Predictive_maintenance_model )>> ;
+	prov:wasDerivedFrom doc:b8d977697aab .
+doc:FactsidaChallenge a schema1:Event .
+_:f5bf815b64bfceac136481a47a056db5 rdf:reifies <<( doc:FactsidaChallenge rdf:type schema1:Event )>> ;
+	prov:wasDerivedFrom doc:b8d977697aab .
+doc:Factsid8_1 None:has_text_value "10.32604/cmc.2025.073492" .
+_:ce96389e59c70e7b089896192f79935 rdf:reifies <<( doc:Factsid8_1 None:has_text_value "10.32604/cmc.2025.073492" )>> ;
+	prov:wasDerivedFrom doc:b8d977697aab .
+doc:Factsdataset1_21 a None:maintainable_item_record .
+_:a12a96aaa16a9bc591645a23525502ad rdf:reifies <<( doc:Factsdataset1_21 rdf:type None:maintainable_item_record )>> ;
+	prov:wasDerivedFrom doc:b8d977697aab .
+doc:FactsrecallTest None:has_text_value "36314" .
+_:ce883f31ed59b9a77d702a96fd39eca5 rdf:reifies <<( doc:FactsrecallTest None:has_text_value "36314" )>> ;
+	prov:wasDerivedFrom doc:b8d977697aab .
+doc:FactslastKSummary a None:Data_mining_technique_function .
+_:e0c37263210ee034809edf0cc230793a rdf:reifies <<( doc:FactslastKSummary rdf:type None:Data_mining_technique_function )>> ;
+	prov:wasDerivedFrom doc:b8d977697aab .
+doc:Factsid8_1 None:has_text_value "cost-sensitive hierarchical classification with Stage A fault screening and Stage B severity classification" .
+_:b5938a0bc8fc88c91252b9e44ed15f6 rdf:reifies <<( doc:Factsid8_1 None:has_text_value "cost-sensitive hierarchical classification with Stage A fault screening and Stage B severity classification" )>> ;
+	prov:wasDerivedFrom doc:b8d977697aab .
+doc:Factsyear1_94 schema1:headline "Two-Stage LightGBM Framework for Cost-Sensitive Prediction of Impending Failures of Component X in Scania Trucks" .
+_:ee7c40cfa2f1a512ff05e611b9d96a36 rdf:reifies <<( doc:Factsyear1_94 schema1:headline "Two-Stage LightGBM Framework for Cost-Sensitive Prediction of Impending Failures of Component X in Scania Trucks" )>> ;
+	prov:wasDerivedFrom doc:b8d977697aab .
+doc:FactsstageA schema1:description "four severity levels through a cascaded hierarchy of binary classifiers" .
+_:a7c3699698084d3d68eb298b0aa6bcaa rdf:reifies <<( doc:FactsstageA schema1:description "four severity levels through a cascaded hierarchy of binary classifiers" )>> ;
+	prov:wasDerivedFrom doc:b8d977697aab .
+doc:Factsid8_1 None:has_text_value "Two-Stage LightGBM Framework for Cost-Sensitive Prediction of Impending Failures of Component X in Scania Trucks" .
+_:a8c4915fc98dfe54d32fb6f86c3cdf4c rdf:reifies <<( doc:Factsid8_1 None:has_text_value "Two-Stage LightGBM Framework for Cost-Sensitive Prediction of Impending Failures of Component X in Scania Trucks" )>> ;
+	prov:wasDerivedFrom doc:b8d977697aab .
+doc:Factsyear1_94 schema1:keywords "Predictive maintenance" .
+_:a36b3645f2c9d07752874362df78ad0f rdf:reifies <<( doc:Factsyear1_94 schema1:keywords "Predictive maintenance" )>> ;
+	prov:wasDerivedFrom doc:b8d977697aab .
+doc:FactsscaniaTrucks rdfs:label "Scania trucks"@en .
+_:f67e2faa2b6f492bb24d38138d1a4ec5 rdf:reifies <<( doc:FactsscaniaTrucks rdfs:label "Scania trucks"@en )>> ;
+	prov:wasDerivedFrom doc:b8d977697aab .
+doc:4e3518e3a1f1 a prov:Entity , schema:text ;
+	prov:generatedAtTime "2026-07-13T00:46:26.404273Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+	schema:position 1 ;
+	schema:identifier "4e3518e3a1f1" .
+doc:Factsquality1_6 rdfs:label "cost asymmetry" .
+_:d4a03d03a41d7a48e90b1a568e5d60ce rdf:reifies <<( doc:Factsquality1_6 rdfs:label "cost asymmetry" )>> ;
+	prov:wasDerivedFrom doc:4e3518e3a1f1 .
+doc:FactslastKSummary cd:has_text_value "compresses the most recent k observations into statistical descriptors of trend, variability, and volatility" .
+_:d576aa86efd029ee5578ce639c5f0f23 rdf:reifies <<( doc:FactslastKSummary cd:has_text_value "compresses the most recent k observations into statistical descriptors of trend, variability, and volatility" )>> ;
+	prov:wasDerivedFrom doc:4e3518e3a1f1 .
+_:afdcb2fcee3c956b0e0757ca74cf5072 prov:wasDerivedFrom doc:4e3518e3a1f1 .
+_:da354ce77a2ac4bd24625c092ee740e4 prov:wasDerivedFrom doc:4e3518e3a1f1 .
+doc:Factsid8_1 cd:has_text_value "[22]" .
+_:dca87557244cd27cfd509e49af8c67ac rdf:reifies <<( doc:Factsid8_1 cd:has_text_value "[22]" )>> ;
+	prov:wasDerivedFrom doc:4e3518e3a1f1 .
+doc:Factsquality1_6 a None:Design_detail .
+_:aa155d3966f09ea1a54f50a84d418255 rdf:reifies <<( doc:Factsquality1_6 rdf:type None:Design_detail )>> ;
+	prov:wasDerivedFrom doc:4e3518e3a1f1 .
+doc:Factsfunc7_1 rdfs:label "threshold optimization" .
+_:b31237b9674c732cd46d9c8b6fcd9617 rdf:reifies <<( doc:Factsfunc7_1 rdfs:label "threshold optimization" )>> ;
+	prov:wasDerivedFrom doc:4e3518e3a1f1 .
+doc:Factsyear1_94 cd:has_identifier doc:Factsid8_1 .
+_:a810485eefe56d8deda65c942f021582 rdf:reifies <<( doc:Factsyear1_94 cd:has_identifier doc:Factsid8_1 )>> ;
+	prov:wasDerivedFrom doc:4e3518e3a1f1 .
+doc:Factspdm_3 cd:has_design_detail doc:Factsid8_1 .
+_:d38ddd02195b87854c47c253b549377e rdf:reifies <<( doc:Factspdm_3 cd:has_design_detail doc:Factsid8_1 )>> ;
+	prov:wasDerivedFrom doc:4e3518e3a1f1 .
+_:b66ed1e1fcb2fcb9e1c7414cf96b6958 prov:wasDerivedFrom doc:4e3518e3a1f1 .
+doc:FactslastKSummary obo:BFO_0000051 doc:Factsdescriptor1 .
+_:fe5f0b00845d248acfd4925426af5c6a rdf:reifies <<( doc:FactslastKSummary obo:BFO_0000051 doc:Factsdescriptor1 )>> ;
+	prov:wasDerivedFrom doc:4e3518e3a1f1 .
+doc:Factsid8_1 cd:has_text_value "aligns model behavior with cost asymmetry and operational priorities" .
+_:cd0b96d3e65f78cd19e4813c48372455 rdf:reifies <<( doc:Factsid8_1 cd:has_text_value "aligns model behavior with cost asymmetry and operational priorities" )>> ;
+	prov:wasDerivedFrom doc:4e3518e3a1f1 .
+doc:Factsyear1_94 cd:has_title doc:Factsid8_1 .
+_:daa9ebeda00c35650f3168cfb085419f rdf:reifies <<( doc:Factsyear1_94 cd:has_title doc:Factsid8_1 )>> ;
+	prov:wasDerivedFrom doc:4e3518e3a1f1 .
+doc:Factsdescriptor1 rdfs:label "statistical descriptors" .
+_:b5087e50d4236ec16f84623c8830f89d rdf:reifies <<( doc:Factsdescriptor1 rdfs:label "statistical descriptors" )>> ;
+	prov:wasDerivedFrom doc:4e3518e3a1f1 .
+doc:FactsfaultCandidates rdfs:label "fault candidates" .
+_:f784d0479769535535cad28b53c69583 rdf:reifies <<( doc:FactsfaultCandidates rdfs:label "fault candidates" )>> ;
+	prov:wasDerivedFrom doc:4e3518e3a1f1 .
+doc:Factsid8_1 cd:has_text_value "[10]" .
+_:fbc53fc6d64f451861aae3589af0babb rdf:reifies <<( doc:Factsid8_1 cd:has_text_value "[10]" )>> ;
+	prov:wasDerivedFrom doc:4e3518e3a1f1 .
+doc:Factsfunc6_4 rdfs:label "high recall for incipient failures" .
+_:c0faf560ccd9f37be613c12bd4d21cfc rdf:reifies <<( doc:Factsfunc6_4 rdfs:label "high recall for incipient failures" )>> ;
+	prov:wasDerivedFrom doc:4e3518e3a1f1 .
+_:e6257df8fda0bfcba326ea155429a4fd prov:wasDerivedFrom doc:4e3518e3a1f1 .
+doc:FactsstageA rdfs:label "Stage B" .
+_:c81b265b68a782f980a1423618df6006 rdf:reifies <<( doc:FactsstageA rdfs:label "Stage B" )>> ;
+	prov:wasDerivedFrom doc:4e3518e3a1f1 .
+doc:Factscost_protocol1 cd:describes_type doc:Factsbenchmark_metric1 .
+_:fa6aaf30800323b658fdcb0ebe70207f rdf:reifies <<( doc:Factscost_protocol1 cd:describes_type doc:Factsbenchmark_metric1 )>> ;
+	prov:wasDerivedFrom doc:4e3518e3a1f1 .
+doc:FactsstageA a cco:Algorithm .
+_:fcdcd58d04c3c67cf00e8bd55aba8445 rdf:reifies <<( doc:FactsstageA rdf:type cco:Algorithm )>> ;
+	prov:wasDerivedFrom doc:4e3518e3a1f1 .
+doc:Factsid8_1 cd:has_text_value "[19]" .
+_:b973443d77e0818869575e4c194811f6 rdf:reifies <<( doc:Factsid8_1 cd:has_text_value "[19]" )>> ;
+	prov:wasDerivedFrom doc:4e3518e3a1f1 .
+doc:Factsfunc3_8 rdfs:label "Stage B severity categorization" .
+_:d097993f977f95fe895a4341069fca30 rdf:reifies <<( doc:Factsfunc3_8 rdfs:label "Stage B severity categorization" )>> ;
+	prov:wasDerivedFrom doc:4e3518e3a1f1 .
+_:eea6d916fc85664fa9f68d45ec6df094 prov:wasDerivedFrom doc:4e3518e3a1f1 .
+doc:Factsdataset1_21 rdfs:label "Scania Component X dataset" .
+_:d99e3ae839ac440e78be7f456bc809d9 rdf:reifies <<( doc:Factsdataset1_21 rdfs:label "Scania Component X dataset" )>> ;
+	prov:wasDerivedFrom doc:4e3518e3a1f1 .
+doc:Factspdm_3 cd:has_predictive_maintenance_function doc:Factsfunc3_8 .
+_:e20ade0e790f6b3ddaba874739755115 rdf:reifies <<( doc:Factspdm_3 cd:has_predictive_maintenance_function doc:Factsfunc3_8 )>> ;
+	prov:wasDerivedFrom doc:4e3518e3a1f1 .
+doc:Factsyear1_94 cd:has_interger_value 2024 .
+_:e1f92e792ff8658f8371c6e5aabebd80 rdf:reifies <<( doc:Factsyear1_94 cd:has_interger_value 2024 )>> ;
+	prov:wasDerivedFrom doc:4e3518e3a1f1 .
+doc:Factsfunc3_8 rdfs:label "potential fault screening" .
+_:b82b8e23c357ff5420cd0c5299a91731 rdf:reifies <<( doc:Factsfunc3_8 rdfs:label "potential fault screening" )>> ;
+	prov:wasDerivedFrom doc:4e3518e3a1f1 .
+_:e8241856b33de68ff6822095ac39466d prov:wasDerivedFrom doc:4e3518e3a1f1 .
+doc:Factscost_protocol1 rdfs:label "official cost-matrix protocol defined in the IDA Challenge" .
+_:b16b15db7110834875db2653ce74f93 rdf:reifies <<( doc:Factscost_protocol1 rdfs:label "official cost-matrix protocol defined in the IDA Challenge" )>> ;
+	prov:wasDerivedFrom doc:4e3518e3a1f1 .
+doc:Factsdescriptor1 a cco:DescriptiveInformationContentEntity .
+_:c1b36fe02de144a1ba35bfd34bf7636a rdf:reifies <<( doc:Factsdescriptor1 rdf:type cco:DescriptiveInformationContentEntity )>> ;
+	prov:wasDerivedFrom doc:4e3518e3a1f1 .
+doc:Factsid8_1 cd:has_text_value "[14]" .
+_:b470ec97f9bef3f79dcf61989a318fac rdf:reifies <<( doc:Factsid8_1 cd:has_text_value "[14]" )>> ;
+	prov:wasDerivedFrom doc:4e3518e3a1f1 .
+doc:Factsfunc7_1 a None:Regression .
+_:dc6234abdc4c931804e6385b22310209 rdf:reifies <<( doc:Factsfunc7_1 rdf:type None:Regression )>> ;
+	prov:wasDerivedFrom doc:4e3518e3a1f1 .
+doc:Factsfunc3_8 a None:Fault_detection .
+_:e39bdfbd2c6205eadfeb1e36aaca51e1 rdf:reifies <<( doc:Factsfunc3_8 rdf:type None:Fault_detection )>> ;
+	prov:wasDerivedFrom doc:4e3518e3a1f1 .
+doc:FactslastKSummary rdfs:label "last_k_summary feature engineering method" .
+_:eaa768eb34304b5b66f5f6bdb4023fc0 rdf:reifies <<( doc:FactslastKSummary rdfs:label "last_k_summary feature engineering method" )>> ;
+	prov:wasDerivedFrom doc:4e3518e3a1f1 .
+doc:Factsid8_1 cd:has_text_value "[23]" .
+_:d7aba1c45858372f09c926557f1fbc64 rdf:reifies <<( doc:Factsid8_1 cd:has_text_value "[23]" )>> ;
+	prov:wasDerivedFrom doc:4e3518e3a1f1 .
+doc:Factsid8_1 cd:has_text_value "[18]" .
+_:a033959ca180d7db300199396666daa0 rdf:reifies <<( doc:Factsid8_1 cd:has_text_value "[18]" )>> ;
+	prov:wasDerivedFrom doc:4e3518e3a1f1 .
+doc:Factsdescriptor1 rdfs:label "variability descriptors" .
+_:c751b76f9f96d1dc2ab7b2c66c66e4a6 rdf:reifies <<( doc:Factsdescriptor1 rdfs:label "variability descriptors" )>> ;
+	prov:wasDerivedFrom doc:4e3518e3a1f1 .
+doc:Factspdm_3 cd:describes_type doc:FactslastKSummary .
+_:a5a632dda0d13ed58356ab39b022260 rdf:reifies <<( doc:Factspdm_3 cd:describes_type doc:FactslastKSummary )>> ;
+	prov:wasDerivedFrom doc:4e3518e3a1f1 .
+doc:Factspdm_3 obo:BFO_0000051 doc:FactsstageA .
+_:e8ccf53dd32e4134b4fec818aeb21260 rdf:reifies <<( doc:Factspdm_3 obo:BFO_0000051 doc:FactsstageA )>> ;
+	prov:wasDerivedFrom doc:4e3518e3a1f1 .
+doc:Factsid8_1 cd:has_text_value "[11]" .
+_:ab59c9a16825984acab5fc8cf945348f rdf:reifies <<( doc:Factsid8_1 cd:has_text_value "[11]" )>> ;
+	prov:wasDerivedFrom doc:4e3518e3a1f1 .
+doc:Factsfunc3_8 a None:Fault_identification .
+_:c924b2a3c1d8eaf2e59a4bad432decd8 rdf:reifies <<( doc:Factsfunc3_8 rdf:type None:Fault_identification )>> ;
+	prov:wasDerivedFrom doc:4e3518e3a1f1 .
+doc:Factsbenchmark_metric1 rdfs:label "competition-standard metric" .
+_:a6856664210c2ba811a64574fae504b6 rdf:reifies <<( doc:Factsbenchmark_metric1 rdfs:label "competition-standard metric" )>> ;
+	prov:wasDerivedFrom doc:4e3518e3a1f1 .
+_:f51f6e7efe13e66e3f4d70b2c3537c88 prov:wasDerivedFrom doc:4e3518e3a1f1 .
+doc:Factspdm_3 rdfs:label "last_k_summary and hierarchical LightGBM framework" .
+_:e0e5df77d1aa855ce4bf07b98d079e57 rdf:reifies <<( doc:Factspdm_3 rdfs:label "last_k_summary and hierarchical LightGBM framework" )>> ;
+	prov:wasDerivedFrom doc:4e3518e3a1f1 .
+doc:Factsfunc3_8 rdfs:label "incipient failure detection" .
+_:a6e1b1e7f6d6a4be0e04ce05c23678ed rdf:reifies <<( doc:Factsfunc3_8 rdfs:label "incipient failure detection" )>> ;
+	prov:wasDerivedFrom doc:4e3518e3a1f1 .
+doc:Factsquality2_5 a None:Design_detail .
+_:d78a0e1d40625eff844cb1d48baf6e6b rdf:reifies <<( doc:Factsquality2_5 rdf:type None:Design_detail )>> ;
+	prov:wasDerivedFrom doc:4e3518e3a1f1 .
+doc:Factsid8_1 cd:has_text_value "hierarchical decision-making with asymmetric risk levels" .
+_:c3b4522b46236efd1d5f7a46048d7153 rdf:reifies <<( doc:Factsid8_1 cd:has_text_value "hierarchical decision-making with asymmetric risk levels" )>> ;
+	prov:wasDerivedFrom doc:4e3518e3a1f1 .
+doc:Factsquality2_5 rdfs:label "dataset imbalance" .
+_:f721f2bef19a5e25cb8650db4629825e rdf:reifies <<( doc:Factsquality2_5 rdfs:label "dataset imbalance" )>> ;
+	prov:wasDerivedFrom doc:4e3518e3a1f1 .
+doc:FactsstageA cd:describes_type doc:FactsfaultCandidates .
+_:fb5fe1f91b2a60aff959dfb9f18e7544 rdf:reifies <<( doc:FactsstageA cd:describes_type doc:FactsfaultCandidates )>> ;
+	prov:wasDerivedFrom doc:4e3518e3a1f1 .
+doc:Factsbenchmark_metric1 a cco:DescriptiveInformationContentEntity .
+_:cc62f33f7708a3fdf45c9a8ecf6b2534 rdf:reifies <<( doc:Factsbenchmark_metric1 rdf:type cco:DescriptiveInformationContentEntity )>> ;
+	prov:wasDerivedFrom doc:4e3518e3a1f1 .
+doc:FactsfaultCandidates a cco:DescriptiveInformationContentEntity .
+_:a2f531d0e08d0483d918478f5bbe4e18 rdf:reifies <<( doc:FactsfaultCandidates rdf:type cco:DescriptiveInformationContentEntity )>> ;
+	prov:wasDerivedFrom doc:4e3518e3a1f1 .
+doc:Factsid8_1 cd:has_text_value "Last_k_summary and two-stage hierarchical LightGBM framework for predictive maintenance" .
+_:a0783b20e24b7fb85270b4202d48eadd rdf:reifies <<( doc:Factsid8_1 cd:has_text_value "Last_k_summary and two-stage hierarchical LightGBM framework for predictive maintenance" )>> ;
+	prov:wasDerivedFrom doc:4e3518e3a1f1 .
+doc:Factsdescriptor1 rdfs:label "trend descriptors" .
+_:acc87af4ce7c604fc59d3276f13787f8 rdf:reifies <<( doc:Factsdescriptor1 rdfs:label "trend descriptors" )>> ;
+	prov:wasDerivedFrom doc:4e3518e3a1f1 .
+doc:FactsstageA rdfs:label "Stage A" .
+_:b063ddd4311bf113d1f09df1ea6c621 rdf:reifies <<( doc:FactsstageA rdfs:label "Stage A" )>> ;
+	prov:wasDerivedFrom doc:4e3518e3a1f1 .
+doc:Factsid8_1 cd:has_text_value "[21]" .
+_:e3f6c5b8cc1400b542649977191d7fe2 rdf:reifies <<( doc:Factsid8_1 cd:has_text_value "[21]" )>> ;
+	prov:wasDerivedFrom doc:4e3518e3a1f1 .
+doc:Factsid8_1 cd:has_text_value "[16]" .
+_:ba6fc218e3e9295e531a59f4be528cc6 rdf:reifies <<( doc:Factsid8_1 cd:has_text_value "[16]" )>> ;
+	prov:wasDerivedFrom doc:4e3518e3a1f1 .
+doc:Factsfunc8 rdfs:label "evaluation" .
+_:c2d311f57f562b8a99616091a8362097 rdf:reifies <<( doc:Factsfunc8 rdfs:label "evaluation" )>> ;
+	prov:wasDerivedFrom doc:4e3518e3a1f1 .
+doc:Factscost_protocol1 a cco:Algorithm .
+_:c7abd35c7ba6aa55a4b5153e7f6f578 rdf:reifies <<( doc:Factscost_protocol1 rdf:type cco:Algorithm )>> ;
+	prov:wasDerivedFrom doc:4e3518e3a1f1 .
+doc:Factsfunc6_4 a None:Health_assessment .
+_:fe3c8a600dac93d243ec76b6a3f7b8e3 rdf:reifies <<( doc:Factsfunc6_4 rdf:type None:Health_assessment )>> ;
+	prov:wasDerivedFrom doc:4e3518e3a1f1 .
+doc:Factsfunc3_8 rdfs:label "severity refinement" .
+_:e4d32a8353dedc47c7ee26310d352f87 rdf:reifies <<( doc:Factsfunc3_8 rdfs:label "severity refinement" )>> ;
+	prov:wasDerivedFrom doc:4e3518e3a1f1 .
+doc:Factsid8_1 cd:has_text_value "[17]" .
+_:bda1fe994b6cc35d17d686c63400efe4 rdf:reifies <<( doc:Factsid8_1 cd:has_text_value "[17]" )>> ;
+	prov:wasDerivedFrom doc:4e3518e3a1f1 .
+_:a12a96aaa16a9bc591645a23525502ad prov:wasDerivedFrom doc:4e3518e3a1f1 .
+doc:Factsfunc8 a None:Classification .
+_:d6f6b7f2fcdba4453a40be67d27fa78 rdf:reifies <<( doc:Factsfunc8 rdf:type None:Classification )>> ;
+	prov:wasDerivedFrom doc:4e3518e3a1f1 .
+doc:FactslastKSummary a None:Data_variable .
+_:da296fbe31f8b9e98b59ced261068972 rdf:reifies <<( doc:FactslastKSummary rdf:type None:Data_variable )>> ;
+	prov:wasDerivedFrom doc:4e3518e3a1f1 .
+doc:FactsfaultCandidates rdfs:label "severity categorization" .
+_:de68334a077ff948052ced636dcffe2e rdf:reifies <<( doc:FactsfaultCandidates rdfs:label "severity categorization" )>> ;
+	prov:wasDerivedFrom doc:4e3518e3a1f1 .
+doc:Factsid8_1 cd:has_text_value "[12,13]" .
+_:ef1fe4e6e158680ddfd2b268774ebda3 rdf:reifies <<( doc:Factsid8_1 cd:has_text_value "[12,13]" )>> ;
+	prov:wasDerivedFrom doc:4e3518e3a1f1 .
+doc:Factsid8_1 cd:has_text_value "[15]" .
+_:e251921924a7dca0f161e222a4905e52 rdf:reifies <<( doc:Factsid8_1 cd:has_text_value "[15]" )>> ;
+	prov:wasDerivedFrom doc:4e3518e3a1f1 .
+doc:Factsfunc3_8 rdfs:label "Stage A fault screening" .
+_:bfc73948944d6f4d176d2490f02c071c rdf:reifies <<( doc:Factsfunc3_8 rdfs:label "Stage A fault screening" )>> ;
+	prov:wasDerivedFrom doc:4e3518e3a1f1 .
+doc:Factsid8_1 cd:has_text_value "[20]" .
+_:d21bef4fa4c5f4bba4353082fe467a8a rdf:reifies <<( doc:Factsid8_1 cd:has_text_value "[20]" )>> ;
+	prov:wasDerivedFrom doc:4e3518e3a1f1 .
+doc:Factsyear1_94 cd:has_publication_year doc:Factsyear1_94 .
+_:c9f63ea411c4db23de8fa3f70d31955f rdf:reifies <<( doc:Factsyear1_94 cd:has_publication_year doc:Factsyear1_94 )>> ;
+	prov:wasDerivedFrom doc:4e3518e3a1f1 .
+doc:20cdb20d9ebb a prov:Entity , schema:text ;
+	prov:generatedAtTime "2026-07-13T00:46:26.411274Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+	schema:position 2 ;
+	schema:identifier "20cdb20d9ebb" .
+doc:Factsdoc1_54 cco:describes doc:FactsfeatureCorrelationReduction .
+_:a4f6c183c0d1ea29c732788ba177721c rdf:reifies <<( doc:Factsdoc1_54 cco:describes doc:FactsfeatureCorrelationReduction )>> ;
+	prov:wasDerivedFrom doc:20cdb20d9ebb .
+doc:Factspdm_3 rdfs:label "Bi-LSTM"@en .
+_:f1ed5c3529bd8daf6b70ed86447cf139 rdf:reifies <<( doc:Factspdm_3 rdfs:label "Bi-LSTM"@en )>> ;
+	prov:wasDerivedFrom doc:20cdb20d9ebb .
+doc:FactsfeatureImputation rdfs:label "imputation"@en .
+_:fde06799f1278131548297f23d9e1303 rdf:reifies <<( doc:FactsfeatureImputation rdfs:label "imputation"@en )>> ;
+	prov:wasDerivedFrom doc:20cdb20d9ebb .
+_:eea6d916fc85664fa9f68d45ec6df094 prov:wasDerivedFrom doc:20cdb20d9ebb .
+_:c924b2a3c1d8eaf2e59a4bad432decd8 prov:wasDerivedFrom doc:20cdb20d9ebb .
+doc:Factsdoc1_54 cco:describes doc:Factsdataset1_21 .
+_:f82507d74143094dce11f316d5a5d07c rdf:reifies <<( doc:Factsdoc1_54 cco:describes doc:Factsdataset1_21 )>> ;
+	prov:wasDerivedFrom doc:20cdb20d9ebb .
+doc:FactsfeatureVisibilityGraph rdfs:label "visibility-graph transformation"@en .
+_:fb3c78fae5c8acf76e98603e6eedc8f9 rdf:reifies <<( doc:FactsfeatureVisibilityGraph rdfs:label "visibility-graph transformation"@en )>> ;
+	prov:wasDerivedFrom doc:20cdb20d9ebb .
+doc:Factsdoc1_54 cco:describes doc:FactsfeatureWeightedSampling .
+_:ff243eb030fbcf21030fdc955c883e98 rdf:reifies <<( doc:Factsdoc1_54 cco:describes doc:FactsfeatureWeightedSampling )>> ;
+	prov:wasDerivedFrom doc:20cdb20d9ebb .
+doc:FactsfeatureImputation a None:Data_variable .
+_:c0e9da9a94fc0d8c3c6194f49e1ac9f0 rdf:reifies <<( doc:FactsfeatureImputation rdf:type None:Data_variable )>> ;
+	prov:wasDerivedFrom doc:20cdb20d9ebb .
+doc:FactsfeatureCorrelationReduction rdfs:label "correlation-based feature reduction"@en .
+_:ef9565b2ea4748c0eaa111a2b83fd7f5 rdf:reifies <<( doc:FactsfeatureCorrelationReduction rdfs:label "correlation-based feature reduction"@en )>> ;
+	prov:wasDerivedFrom doc:20cdb20d9ebb .
+doc:Factsdoc1_54 cco:describes doc:FactsfeatureDataAugmentation .
+_:d594a174685e7d876ca1c46f45bfea47 rdf:reifies <<( doc:Factsdoc1_54 cco:describes doc:FactsfeatureDataAugmentation )>> ;
+	prov:wasDerivedFrom doc:20cdb20d9ebb .
+_:da296fbe31f8b9e98b59ced261068972 prov:wasDerivedFrom doc:20cdb20d9ebb .
+doc:FactsfeatureSlidingWindow a None:Data_variable .
+_:c11d59afddcf76c3ddc8d42426606788 rdf:reifies <<( doc:FactsfeatureSlidingWindow rdf:type None:Data_variable )>> ;
+	prov:wasDerivedFrom doc:20cdb20d9ebb .
+doc:Factsdoc1_54 cco:describes doc:Factspdm_3 .
+_:cd4b1c6af97526d76b7e69e34c2a339c rdf:reifies <<( doc:Factsdoc1_54 cco:describes doc:Factspdm_3 )>> ;
+	prov:wasDerivedFrom doc:20cdb20d9ebb .
+doc:Factsdoc1_54 cco:describes doc:FactsfeatureSlidingWindow .
+_:d047c8eb0820f2dcf6dcf81306458559 rdf:reifies <<( doc:Factsdoc1_54 cco:describes doc:FactsfeatureSlidingWindow )>> ;
+	prov:wasDerivedFrom doc:20cdb20d9ebb .
+doc:FactsfeaturePadding a None:Data_variable .
+_:af0d111ff325afac205258ac3c78f5ea rdf:reifies <<( doc:FactsfeaturePadding rdf:type None:Data_variable )>> ;
+	prov:wasDerivedFrom doc:20cdb20d9ebb .
+doc:FactstaskCostSensitiveEvaluation a cco:DescriptiveInformationContentEntity .
+_:fb96c0f56bf9b295a0b6b30f8b96d46c rdf:reifies <<( doc:FactstaskCostSensitiveEvaluation rdf:type cco:DescriptiveInformationContentEntity )>> ;
+	prov:wasDerivedFrom doc:20cdb20d9ebb .
+doc:Factsdoc1_54 cco:describes doc:FactsfuncLime .
+_:de052a20b8026ac68289ccfe4489f08f rdf:reifies <<( doc:Factsdoc1_54 cco:describes doc:FactsfuncLime )>> ;
+	prov:wasDerivedFrom doc:20cdb20d9ebb .
+doc:Factspdm_3 rdfs:label "ResNet18"@en .
+_:d1676fa46571b0b5edda9abe1e9dee8d rdf:reifies <<( doc:Factspdm_3 rdfs:label "ResNet18"@en )>> ;
+	prov:wasDerivedFrom doc:20cdb20d9ebb .
+doc:FactsfuncLime a None:Data_mining_technique_function .
+_:a9a0bbde226035b108c8aad09da47d60 rdf:reifies <<( doc:FactsfuncLime rdf:type None:Data_mining_technique_function )>> ;
+	prov:wasDerivedFrom doc:20cdb20d9ebb .
+doc:Factsdoc1_54 cco:describes doc:Factsfunc3_8 .
+_:a8034e3f3d7ee0a6bcf3f4e9df037f35 rdf:reifies <<( doc:Factsdoc1_54 cco:describes doc:Factsfunc3_8 )>> ;
+	prov:wasDerivedFrom doc:20cdb20d9ebb .
+doc:FactsfuncShap a None:Data_mining_technique_function .
+_:dd8b260d81f668d2d44460e0e34b08a5 rdf:reifies <<( doc:FactsfuncShap rdf:type None:Data_mining_technique_function )>> ;
+	prov:wasDerivedFrom doc:20cdb20d9ebb .
+doc:FactspipelineAutoml rdfs:label "AutoML-based pipeline"@en .
+_:fd2deef49066167ce86876b42bc5d045 rdf:reifies <<( doc:FactspipelineAutoml rdfs:label "AutoML-based pipeline"@en )>> ;
+	prov:wasDerivedFrom doc:20cdb20d9ebb .
+doc:Factspdm_3 rdfs:label "Explainable Predictive Maintenance (XPM)"@en .
+_:b5ab2dd4d488a6562a7551448c6b10f4 rdf:reifies <<( doc:Factspdm_3 rdfs:label "Explainable Predictive Maintenance (XPM)"@en )>> ;
+	prov:wasDerivedFrom doc:20cdb20d9ebb .
+doc:Factsdoc1_54 cco:describes doc:FactspipelineAutoml .
+_:d2e7baf2fef7550920985f5cbe34e544 rdf:reifies <<( doc:Factsdoc1_54 cco:describes doc:FactspipelineAutoml )>> ;
+	prov:wasDerivedFrom doc:20cdb20d9ebb .
+doc:FactsfeatureVisibilityGraph a None:Data_variable .
+_:da4308b3f4986e9b33c550961866e13 rdf:reifies <<( doc:FactsfeatureVisibilityGraph rdf:type None:Data_variable )>> ;
+	prov:wasDerivedFrom doc:20cdb20d9ebb .
+doc:FactsfeatureDataAugmentation a None:Data_variable .
+_:ac2f5b7a968b1c9c12bf38d06fa71521 rdf:reifies <<( doc:FactsfeatureDataAugmentation rdf:type None:Data_variable )>> ;
+	prov:wasDerivedFrom doc:20cdb20d9ebb .
+doc:FactsfeatureNormalization a None:Data_variable .
+_:a650d6924a3b067bfe3d095ba2c3461 rdf:reifies <<( doc:FactsfeatureNormalization rdf:type None:Data_variable )>> ;
+	prov:wasDerivedFrom doc:20cdb20d9ebb .
+doc:FactstaskImpendingFailureClassification rdfs:label "impending-failure classification"@en .
+_:fb1dbc016d5357aee12e734091da632b rdf:reifies <<( doc:FactstaskImpendingFailureClassification rdfs:label "impending-failure classification"@en )>> ;
+	prov:wasDerivedFrom doc:20cdb20d9ebb .
+doc:FactsfuncShap rdfs:label "Grad-CAM integration into PdM workflows"@en .
+_:bf94347f2a7f181096b4ed52faff8129 rdf:reifies <<( doc:FactsfuncShap rdfs:label "Grad-CAM integration into PdM workflows"@en )>> ;
+	prov:wasDerivedFrom doc:20cdb20d9ebb .
+doc:FactstaskCostSensitiveEvaluation rdfs:label "cost-sensitive evaluation"@en .
+_:c732da6ffb69a551df8ef237ddb362a3 rdf:reifies <<( doc:FactstaskCostSensitiveEvaluation rdfs:label "cost-sensitive evaluation"@en )>> ;
+	prov:wasDerivedFrom doc:20cdb20d9ebb .
+doc:Factsfunc3_8 rdfs:label "Stage A fault detection"@en .
+_:d9b6dc99c4bd172ffcbc9fdc43cd0c4b rdf:reifies <<( doc:Factsfunc3_8 rdfs:label "Stage A fault detection"@en )>> ;
+	prov:wasDerivedFrom doc:20cdb20d9ebb .
+doc:FactsmodelRandomForest rdfs:label "Random Forest"@en .
+_:c86a392159889992e76d177962163708 rdf:reifies <<( doc:FactsmodelRandomForest rdfs:label "Random Forest"@en )>> ;
+	prov:wasDerivedFrom doc:20cdb20d9ebb .
+doc:Factsdoc1_54 cco:describes doc:FactsmodelRandomForest .
+_:be40bab80899eee9846c2a50ca2277d4 rdf:reifies <<( doc:Factsdoc1_54 cco:describes doc:FactsmodelRandomForest )>> ;
+	prov:wasDerivedFrom doc:20cdb20d9ebb .
+doc:Factsdoc1_54 cco:describes doc:FactsfeaturePathSignature .
+_:fd8816f3c9c709a12b4a7c93691512bb rdf:reifies <<( doc:Factsdoc1_54 cco:describes doc:FactsfeaturePathSignature )>> ;
+	prov:wasDerivedFrom doc:20cdb20d9ebb .
+doc:Factsdoc1_54 rdfs:label "Document about explainable predictive maintenance and Scania Component X"@en .
+_:f7c897ad09ffb5dcc0b7de404903cdef rdf:reifies <<( doc:Factsdoc1_54 rdfs:label "Document about explainable predictive maintenance and Scania Component X"@en )>> ;
+	prov:wasDerivedFrom doc:20cdb20d9ebb .
+doc:Factsdoc1_54 cco:describes doc:Factschallenge_ida2024 .
+_:e238ff985503b63d2142f9d5bf95406c rdf:reifies <<( doc:Factsdoc1_54 cco:describes doc:Factschallenge_ida2024 )>> ;
+	prov:wasDerivedFrom doc:20cdb20d9ebb .
+doc:Factsdoc1_54 a cco:InformationBearingArtifact .
+_:f5bd13e7a8114ff8f03a732116adae8f rdf:reifies <<( doc:Factsdoc1_54 rdf:type cco:InformationBearingArtifact )>> ;
+	prov:wasDerivedFrom doc:20cdb20d9ebb .
+doc:FactstaskImpendingFailureClassification a None:Classification .
+_:bad75df78b776fe0e61f03794b928fff rdf:reifies <<( doc:FactstaskImpendingFailureClassification rdf:type None:Classification )>> ;
+	prov:wasDerivedFrom doc:20cdb20d9ebb .
+doc:Factsdoc1_54 cco:describes doc:FactslastKSummary .
+_:ca497de64c3567b5aa4cc2603cdbb1cf rdf:reifies <<( doc:Factsdoc1_54 cco:describes doc:FactslastKSummary )>> ;
+	prov:wasDerivedFrom doc:20cdb20d9ebb .
+doc:Factschallenge_ida2024 cd:describes_type doc:FactstaskImpendingFailureClassification .
+_:cead10d99ea3152a4123de8f76a87990 rdf:reifies <<( doc:Factschallenge_ida2024 cd:describes_type doc:FactstaskImpendingFailureClassification )>> ;
+	prov:wasDerivedFrom doc:20cdb20d9ebb .
+doc:Factschallenge_ida2024 cd:describes_type doc:FactstaskCostSensitiveEvaluation .
+_:b0412ca9777df7e26226574b816f961d rdf:reifies <<( doc:Factschallenge_ida2024 cd:describes_type doc:FactstaskCostSensitiveEvaluation )>> ;
+	prov:wasDerivedFrom doc:20cdb20d9ebb .
+doc:Factsdoc1_54 cco:describes doc:FactsfeatureVisibilityGraph .
+_:f77b51d599a35a2f3b23055429738cb9 rdf:reifies <<( doc:Factsdoc1_54 cco:describes doc:FactsfeatureVisibilityGraph )>> ;
+	prov:wasDerivedFrom doc:20cdb20d9ebb .
+doc:FactsfeatureDataAugmentation rdfs:label "data augmentation"@en .
+_:f1ccf2a638897bed22a996f2056862eb rdf:reifies <<( doc:FactsfeatureDataAugmentation rdfs:label "data augmentation"@en )>> ;
+	prov:wasDerivedFrom doc:20cdb20d9ebb .
+doc:FactsfeatureWeightedSampling rdfs:label "weighted sampling"@en .
+_:a7f198214ab9d151c36af0df3615e68 rdf:reifies <<( doc:FactsfeatureWeightedSampling rdfs:label "weighted sampling"@en )>> ;
+	prov:wasDerivedFrom doc:20cdb20d9ebb .
+doc:FactsfeatureCorrelationReduction a None:Data_variable .
+_:a21068857367a1558caf2f558bb2af9a rdf:reifies <<( doc:FactsfeatureCorrelationReduction rdf:type None:Data_variable )>> ;
+	prov:wasDerivedFrom doc:20cdb20d9ebb .
+doc:Factsdoc1_54 cco:describes doc:FactsfuncShap .
+_:ae4f46830322d75f56809e464e37bbe6 rdf:reifies <<( doc:Factsdoc1_54 cco:describes doc:FactsfuncShap )>> ;
+	prov:wasDerivedFrom doc:20cdb20d9ebb .
+doc:Factspdm_3 rdfs:label "XGBoost-AFT survival regression"@en .
+_:d74d365bea6504b370bda4f9b0c7f97f rdf:reifies <<( doc:Factspdm_3 rdfs:label "XGBoost-AFT survival regression"@en )>> ;
+	prov:wasDerivedFrom doc:20cdb20d9ebb .
+doc:FactsfuncShap rdfs:label "SHAP integration into PdM workflows"@en .
+_:a3349784f7be0cb8121ce23b7467e65d rdf:reifies <<( doc:FactsfuncShap rdfs:label "SHAP integration into PdM workflows"@en )>> ;
+	prov:wasDerivedFrom doc:20cdb20d9ebb .
+doc:Factsdoc1_54 cco:describes doc:FactsfeaturePadding .
+_:fd597aab704b8ad87663b38a2da488cf rdf:reifies <<( doc:Factsdoc1_54 cco:describes doc:FactsfeaturePadding )>> ;
+	prov:wasDerivedFrom doc:20cdb20d9ebb .
+doc:FactsfeaturePathSignature rdfs:label "path-signature feature transformation"@en .
+_:faa103291d8cd03ac6c2f2cd93ff9555 rdf:reifies <<( doc:FactsfeaturePathSignature rdfs:label "path-signature feature transformation"@en )>> ;
+	prov:wasDerivedFrom doc:20cdb20d9ebb .
+_:e39bdfbd2c6205eadfeb1e36aaca51e1 prov:wasDerivedFrom doc:20cdb20d9ebb .
+doc:FactsfeatureWeightedSampling a None:Data_variable .
+_:e3fc98b9f7543587f21ae6aaca512b5e rdf:reifies <<( doc:FactsfeatureWeightedSampling rdf:type None:Data_variable )>> ;
+	prov:wasDerivedFrom doc:20cdb20d9ebb .
+doc:Factspdm_3 rdfs:label "LightGBM"@en .
+_:d5fff64f507c9d9f2fef8e0256b3c320 rdf:reifies <<( doc:Factspdm_3 rdfs:label "LightGBM"@en )>> ;
+	prov:wasDerivedFrom doc:20cdb20d9ebb .
+doc:Factschallenge_ida2024 rdfs:label "IDA 2024 Industrial Challenge"@en .
+_:f23347b36c2bf0fae5868d3f910ce9bd rdf:reifies <<( doc:Factschallenge_ida2024 rdfs:label "IDA 2024 Industrial Challenge"@en )>> ;
+	prov:wasDerivedFrom doc:20cdb20d9ebb .
+doc:FactsfeaturePadding rdfs:label "padding"@en .
+_:ebdfd32ef4b749566b5e8f7dccc32a32 rdf:reifies <<( doc:FactsfeaturePadding rdfs:label "padding"@en )>> ;
+	prov:wasDerivedFrom doc:20cdb20d9ebb .
+doc:Factsdataset1_21 rdfs:label "Scania Component X dataset"@en .
+_:ab5838a1787967bc9fb46705121fb502 rdf:reifies <<( doc:Factsdataset1_21 rdfs:label "Scania Component X dataset"@en )>> ;
+	prov:wasDerivedFrom doc:20cdb20d9ebb .
+doc:Factsdataset1_21 a None:Maintainable_item .
+_:e72335a370e65b4dc9b67a249f0befd8 rdf:reifies <<( doc:Factsdataset1_21 rdf:type None:Maintainable_item )>> ;
+	prov:wasDerivedFrom doc:20cdb20d9ebb .
+doc:FactsfeatureNormalization rdfs:label "normalization"@en .
+_:cac1fc9d4795055c68199f5966eed26a rdf:reifies <<( doc:FactsfeatureNormalization rdfs:label "normalization"@en )>> ;
+	prov:wasDerivedFrom doc:20cdb20d9ebb .
+doc:Factspdm_3 rdfs:label "CNN"@en .
+_:c0728a56c423735db166b1acbff01f4d rdf:reifies <<( doc:Factspdm_3 rdfs:label "CNN"@en )>> ;
+	prov:wasDerivedFrom doc:20cdb20d9ebb .
+doc:Factsdoc1_54 a None:Predictive_Maintenance_Article .
+_:ae535e176e7235a32249fce1c63281ae rdf:reifies <<( doc:Factsdoc1_54 rdf:type None:Predictive_Maintenance_Article )>> ;
+	prov:wasDerivedFrom doc:20cdb20d9ebb .
+doc:Factspdm_3 rdfs:label "XGBoost"@en .
+_:bd1ccb9592992f7a0adff5634dc3adc2 rdf:reifies <<( doc:Factspdm_3 rdfs:label "XGBoost"@en )>> ;
+	prov:wasDerivedFrom doc:20cdb20d9ebb .
+doc:Factschallenge_ida2024 a cco:InformationContentEntity .
+_:c42f8328fc5979ba14479f71e4da6b80 rdf:reifies <<( doc:Factschallenge_ida2024 rdf:type cco:InformationContentEntity )>> ;
+	prov:wasDerivedFrom doc:20cdb20d9ebb .
+doc:Factspdm_3 a None:Predictive_maintenance_case .
+_:a37d97a110f3c221f6fd6001ab9f10a8 rdf:reifies <<( doc:Factspdm_3 rdf:type None:Predictive_maintenance_case )>> ;
+	prov:wasDerivedFrom doc:20cdb20d9ebb .
+doc:FactsmodelRandomForest a None:Predictive_maintenance_model .
+_:ddca2ba4f23379e695b4137e9e73435f rdf:reifies <<( doc:FactsmodelRandomForest rdf:type None:Predictive_maintenance_model )>> ;
+	prov:wasDerivedFrom doc:20cdb20d9ebb .
+doc:Factsfunc3_8 rdfs:label "Stage B severity classification"@en .
+_:a3e2d8653de8275f55bfeef8b88571d rdf:reifies <<( doc:Factsfunc3_8 rdfs:label "Stage B severity classification"@en )>> ;
+	prov:wasDerivedFrom doc:20cdb20d9ebb .
+doc:Factsdoc1_54 cco:describes doc:FactsfeatureImputation .
+_:b39f5ed9fe986e491372bed4ef836af7 rdf:reifies <<( doc:Factsdoc1_54 cco:describes doc:FactsfeatureImputation )>> ;
+	prov:wasDerivedFrom doc:20cdb20d9ebb .
+doc:FactsfuncLime rdfs:label "LIME integration into PdM workflows"@en .
+_:c5df2d3fb154700fbcc6c3bfa5f93a43 rdf:reifies <<( doc:FactsfuncLime rdfs:label "LIME integration into PdM workflows"@en )>> ;
+	prov:wasDerivedFrom doc:20cdb20d9ebb .
+doc:Factspdm_3 rdfs:label "BiLSTM-Attention"@en .
+_:b201391b5ce8e477e0105775cc135cc2 rdf:reifies <<( doc:Factspdm_3 rdfs:label "BiLSTM-Attention"@en )>> ;
+	prov:wasDerivedFrom doc:20cdb20d9ebb .
+doc:FactsfeatureSlidingWindow rdfs:label "sliding-window features"@en .
+_:fb891bff49f2c73637d85821d4cb110 rdf:reifies <<( doc:FactsfeatureSlidingWindow rdfs:label "sliding-window features"@en )>> ;
+	prov:wasDerivedFrom doc:20cdb20d9ebb .
+doc:Factsdoc1_54 cco:describes doc:FactsfeatureNormalization .
+_:d05c00423d90202b8d04f7ea183d5a36 rdf:reifies <<( doc:Factsdoc1_54 cco:describes doc:FactsfeatureNormalization )>> ;
+	prov:wasDerivedFrom doc:20cdb20d9ebb .
+doc:FactsfeaturePathSignature a None:Data_variable .
+_:bac29a162d2bf4fca269d3927450421b rdf:reifies <<( doc:FactsfeaturePathSignature rdf:type None:Data_variable )>> ;
+	prov:wasDerivedFrom doc:20cdb20d9ebb .
+doc:Factspdm_3 rdfs:label "MLP"@en .
+_:cf432623c9c70aafc87059dbece585ce rdf:reifies <<( doc:Factspdm_3 rdfs:label "MLP"@en )>> ;
+	prov:wasDerivedFrom doc:20cdb20d9ebb .
+doc:FactspipelineAutoml a cco:Algorithm .
+_:dd9da8038811516effc97c2bae6656a2 rdf:reifies <<( doc:FactspipelineAutoml rdf:type cco:Algorithm )>> ;
+	prov:wasDerivedFrom doc:20cdb20d9ebb .
+_:f2fbad8be0ae6eeab093b2cbdfcd825 prov:wasDerivedFrom doc:20cdb20d9ebb .
+cco:InformationContentEntity owl:sameAs cco:DescriptiveInformationContentEntity .

@@ -1,0 +1,559 @@
+@prefix None: <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD/seed#> .
+@prefix cco: <http://www.ontologyrepository.com/CommonCoreOntologies/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doc: <https://growgraph.dev/doc/78bc5734ed30/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix obo: <http://purl.obolibrary.org/obo/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix schema: <https://schema.org/> .
+@prefix schema1: <http://schema.org/> .
+doc:f11b7423f05e a prov:Entity , schema:text ;
+	prov:generatedAtTime "2026-07-26T04:37:18.122839Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+	schema:position 0 ;
+	schema:identifier "f11b7423f05e" .
+doc:Factscbm a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Performance_indicator> .
+_:d4a24d98e5576fce7c55178d30f12fe5 rdf:reifies <<( doc:Factscbm rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Performance_indicator> )>> ;
+	prov:wasDerivedFrom doc:f11b7423f05e .
+doc:FactsmroAnnualGrowthRate schema1:unitText "percent per year" .
+_:bfbf5b9ffd62a30ac49416ad239fb7f1 rdf:reifies <<( doc:FactsmroAnnualGrowthRate schema1:unitText "percent per year" )>> ;
+	prov:wasDerivedFrom doc:f11b7423f05e .
+doc:FactsappliedSciencesJournal schema1:name "Applied Sciences" .
+_:ca39521360f5b26d66ae564ef276d402 rdf:reifies <<( doc:FactsappliedSciencesJournal schema1:name "Applied Sciences" )>> ;
+	prov:wasDerivedFrom doc:f11b7423f05e .
+doc:FactscranfieldUniversity schema1:addressLocality "Bedford" .
+_:df32b5972ea8db54487074f67630dc8a rdf:reifies <<( doc:FactscranfieldUniversity schema1:addressLocality "Bedford" )>> ;
+	prov:wasDerivedFrom doc:f11b7423f05e .
+doc:FactsarticleFaultDiagnosisAircraft schema1:author doc:FactslilinJia .
+_:be0439d6dbe5433226a66ceb1a33861e rdf:reifies <<( doc:FactsarticleFaultDiagnosisAircraft schema1:author doc:FactslilinJia )>> ;
+	prov:wasDerivedFrom doc:f11b7423f05e .
+doc:FactslilinJia schema1:familyName "Jennions" .
+_:e36f71b12cf63fe5fe4b4e2502ba2d28 rdf:reifies <<( doc:FactslilinJia schema1:familyName "Jennions" )>> ;
+	prov:wasDerivedFrom doc:f11b7423f05e .
+doc:FactsarticleFaultDiagnosisAircraft a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Predictive_maintenance_model> .
+_:b933ecf04fcc3e48f285a0532f13b9c1 rdf:reifies <<( doc:FactsarticleFaultDiagnosisAircraft rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Predictive_maintenance_model> )>> ;
+	prov:wasDerivedFrom doc:f11b7423f05e .
+doc:FactsguoNetworkAccuracy schema1:value 5.04 .
+_:d09acc1a705e310a8383d39cee3b7e2a rdf:reifies <<( doc:FactsguoNetworkAccuracy schema1:value 5.04 )>> ;
+	prov:wasDerivedFrom doc:f11b7423f05e .
+doc:Factscbm a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Fault_detection> .
+_:becaff9b8645ae055232622e026f9db4 rdf:reifies <<( doc:Factscbm rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Fault_detection> )>> ;
+	prov:wasDerivedFrom doc:f11b7423f05e .
+doc:FactscranfieldUniversity schema1:name "Cranfield University" .
+_:dcd4554e6f565dd329baf872f6079547 rdf:reifies <<( doc:FactscranfieldUniversity schema1:name "Cranfield University" )>> ;
+	prov:wasDerivedFrom doc:f11b7423f05e .
+doc:FactsguoNetworkAccuracy cco:describes doc:Factscbm .
+_:b055f39048c6afe56ac3035331eaf9ad rdf:reifies <<( doc:FactsguoNetworkAccuracy cco:describes doc:Factscbm )>> ;
+	prov:wasDerivedFrom doc:f11b7423f05e .
+doc:FactsmroOperationalCostShare schema1:unitText "percent" .
+_:ba1cf3b234f8adedfaabf200fb155593 rdf:reifies <<( doc:FactsmroOperationalCostShare schema1:unitText "percent" )>> ;
+	prov:wasDerivedFrom doc:f11b7423f05e .
+doc:FactscranfieldUniversity a schema1:Organization .
+_:e624b143136884463a454b9894271a9f rdf:reifies <<( doc:FactscranfieldUniversity rdf:type schema1:Organization )>> ;
+	prov:wasDerivedFrom doc:f11b7423f05e .
+doc:FactsarticleFaultDiagnosisAircraft schema1:about doc:FactsfuelSystem .
+_:b7bf995d16fcd13a65e663a72ba38c6c rdf:reifies <<( doc:FactsarticleFaultDiagnosisAircraft schema1:about doc:FactsfuelSystem )>> ;
+	prov:wasDerivedFrom doc:f11b7423f05e .
+doc:FactsarticleFaultDiagnosisAircraft None:has_title doc:FactsarticleTitleFaultDiagnosis .
+_:e69da7474955f92dc991b982d69b4cc9 rdf:reifies <<( doc:FactsarticleFaultDiagnosisAircraft None:has_title doc:FactsarticleTitleFaultDiagnosis )>> ;
+	prov:wasDerivedFrom doc:f11b7423f05e .
+doc:FactslilinJia schema1:affiliation doc:FactscranfieldUniversity .
+_:d2a2f4d64da293416ecfbe76e0592650 rdf:reifies <<( doc:FactslilinJia schema1:affiliation doc:FactscranfieldUniversity )>> ;
+	prov:wasDerivedFrom doc:f11b7423f05e .
+doc:FactsarticleFaultDiagnosisAircraft schema1:keywords "fault diagnosis; machine learning; maintenance; transfer learning; environmental control system; fuel system; auxiliary power unit"@en .
+_:f124eae0b988d2b7900c0201649376cb rdf:reifies <<( doc:FactsarticleFaultDiagnosisAircraft schema1:keywords "fault diagnosis; machine learning; maintenance; transfer learning; environmental control system; fuel system; auxiliary power unit"@en )>> ;
+	prov:wasDerivedFrom doc:f11b7423f05e .
+doc:Factsmro_cost_2023 schema1:validFrom "2023-01-01"^^<http://www.w3.org/2001/XMLSchema#date> .
+_:ce24983382062ad0823f77727bc8a898 rdf:reifies <<( doc:Factsmro_cost_2023 schema1:validFrom "2023-01-01"^^<http://www.w3.org/2001/XMLSchema#date> )>> ;
+	prov:wasDerivedFrom doc:f11b7423f05e .
+doc:FactsmroOperationalCostShare schema1:about doc:Factsmro_cost_2023 .
+_:e6e47f2e78a7240631d897eb25ef090f rdf:reifies <<( doc:FactsmroOperationalCostShare schema1:about doc:Factsmro_cost_2023 )>> ;
+	prov:wasDerivedFrom doc:f11b7423f05e .
+doc:FactsmroOperationalCostShare schema1:value "11"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+_:c2711ab1a10a883a081bedcede15f404 rdf:reifies <<( doc:FactsmroOperationalCostShare schema1:value "11"^^<http://www.w3.org/2001/XMLSchema#decimal> )>> ;
+	prov:wasDerivedFrom doc:f11b7423f05e .
+doc:Factspublication_year_2025_4 a None:Publication_year .
+_:f6a4c9e60cb228a6d8de57c5c024a48b rdf:reifies <<( doc:Factspublication_year_2025_4 rdf:type None:Publication_year )>> ;
+	prov:wasDerivedFrom doc:f11b7423f05e .
+doc:FactsmroAnnualGrowthRate schema1:value 1.8 .
+_:a06a934e2060aa1ccfc282571e7b7713 rdf:reifies <<( doc:FactsmroAnnualGrowthRate schema1:value 1.8 )>> ;
+	prov:wasDerivedFrom doc:f11b7423f05e .
+doc:Factscbm schema1:name "Average accuracy improvement in ECS scenario" .
+_:bf1e68932eb972cc3da1a8ed7c40d684 rdf:reifies <<( doc:Factscbm schema1:name "Average accuracy improvement in ECS scenario" )>> ;
+	prov:wasDerivedFrom doc:f11b7423f05e .
+doc:FactsappliedSciencesJournal a schema1:Periodical .
+_:cf30d5e0c6e505530c56cb4a108d2a77 rdf:reifies <<( doc:FactsappliedSciencesJournal rdf:type schema1:Periodical )>> ;
+	prov:wasDerivedFrom doc:f11b7423f05e .
+doc:FactsarticleFaultDiagnosisAircraft None:has_publication_year doc:Factspublication_year_2025_4 .
+_:f7cc6cdb4c3a767a07efda725c8d4b53 rdf:reifies <<( doc:FactsarticleFaultDiagnosisAircraft None:has_publication_year doc:Factspublication_year_2025_4 )>> ;
+	prov:wasDerivedFrom doc:f11b7423f05e .
+doc:FactsarticleFaultDiagnosisAircraft schema1:isPartOf doc:FactsappliedSciencesJournal .
+_:f362de71c49ac84deee111741e44c124 rdf:reifies <<( doc:FactsarticleFaultDiagnosisAircraft schema1:isPartOf doc:FactsappliedSciencesJournal )>> ;
+	prov:wasDerivedFrom doc:f11b7423f05e .
+doc:FactsarticleFaultDiagnosisAircraft schema1:about doc:Factscbm .
+_:e0c4035ca622d3b9a50a3f1294b1f68c rdf:reifies <<( doc:FactsarticleFaultDiagnosisAircraft schema1:about doc:Factscbm )>> ;
+	prov:wasDerivedFrom doc:f11b7423f05e .
+doc:FactsguoNetworkAccuracy a None:Performance_value .
+_:afd80e14f2aa4833ba576503a10e17c rdf:reifies <<( doc:FactsguoNetworkAccuracy rdf:type None:Performance_value )>> ;
+	prov:wasDerivedFrom doc:f11b7423f05e .
+doc:FactscranfieldUniversity schema1:postalCode "MK43 0AL" .
+_:fe9cab8fb5cc76257c665dc7c616c52f rdf:reifies <<( doc:FactscranfieldUniversity schema1:postalCode "MK43 0AL" )>> ;
+	prov:wasDerivedFrom doc:f11b7423f05e .
+doc:FactsauxiliaryPowerUnit schema1:alternateName "APU" .
+_:ec2936898c564c48bdc7fbe7377059c0 rdf:reifies <<( doc:FactsauxiliaryPowerUnit schema1:alternateName "APU" )>> ;
+	prov:wasDerivedFrom doc:f11b7423f05e .
+doc:FactsarticleFaultDiagnosisAircraft schema1:datePublished "2025-03-16"^^<http://www.w3.org/2001/XMLSchema#date> .
+_:c8e07012d734e9215c033d69b83385c0 rdf:reifies <<( doc:FactsarticleFaultDiagnosisAircraft schema1:datePublished "2025-03-16"^^<http://www.w3.org/2001/XMLSchema#date> )>> ;
+	prov:wasDerivedFrom doc:f11b7423f05e .
+doc:Factscbm rdfs:label "Fault diagnosis"@en .
+_:e6f336b3994358780d410f111931f11c rdf:reifies <<( doc:Factscbm rdfs:label "Fault diagnosis"@en )>> ;
+	prov:wasDerivedFrom doc:f11b7423f05e .
+doc:FactsfuelSystem schema1:alternateName "ECS" .
+_:a0580f18f7baa7db0e8511b261be915 rdf:reifies <<( doc:FactsfuelSystem schema1:alternateName "ECS" )>> ;
+	prov:wasDerivedFrom doc:f11b7423f05e .
+doc:FactslilinJia schema1:familyName "Ezhilarasu" .
+_:df8ff58d85f9e1c9f93f291fb0238690 rdf:reifies <<( doc:FactslilinJia schema1:familyName "Ezhilarasu" )>> ;
+	prov:wasDerivedFrom doc:f11b7423f05e .
+doc:FactsfuelSystem schema1:name "Environmental control system" .
+_:aeb3b6a02376f7490576b283e0b88a20 rdf:reifies <<( doc:FactsfuelSystem schema1:name "Environmental control system" )>> ;
+	prov:wasDerivedFrom doc:f11b7423f05e .
+doc:FactslilinJia schema1:email "i.jennions@cranfield.ac.uk" .
+_:c256837c33970c558482cb226470f54b rdf:reifies <<( doc:FactslilinJia schema1:email "i.jennions@cranfield.ac.uk" )>> ;
+	prov:wasDerivedFrom doc:f11b7423f05e .
+doc:Factsmro_cost_2023 schema1:validFrom "2024-01-01"^^<http://www.w3.org/2001/XMLSchema#date> .
+_:f6bbc69c8aa2ed2f7e1eba853fd9c4ce rdf:reifies <<( doc:Factsmro_cost_2023 schema1:validFrom "2024-01-01"^^<http://www.w3.org/2001/XMLSchema#date> )>> ;
+	prov:wasDerivedFrom doc:f11b7423f05e .
+doc:Factsmro_cost_2023 schema1:value "104"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+_:e34004c384651203a1a420f637bb885d rdf:reifies <<( doc:Factsmro_cost_2023 schema1:value "104"^^<http://www.w3.org/2001/XMLSchema#decimal> )>> ;
+	prov:wasDerivedFrom doc:f11b7423f05e .
+doc:FactsauxiliaryPowerUnit a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Maintainable_item> .
+_:f19adb7c7837106c606e525c7b37acf9 rdf:reifies <<( doc:FactsauxiliaryPowerUnit rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Maintainable_item> )>> ;
+	prov:wasDerivedFrom doc:f11b7423f05e .
+doc:Factscbm schema1:name "Average accuracy improvement in APU scenario" .
+_:b1d6b8e1c565d149c5110fc5a5dabc3 rdf:reifies <<( doc:Factscbm schema1:name "Average accuracy improvement in APU scenario" )>> ;
+	prov:wasDerivedFrom doc:f11b7423f05e .
+doc:Factsdoi_10_3390_app15063232 cco:designates doc:FactsarticleFaultDiagnosisAircraft .
+_:d4ee1dbec1177f002f8daaaf13e8992e rdf:reifies <<( doc:Factsdoi_10_3390_app15063232 cco:designates doc:FactsarticleFaultDiagnosisAircraft )>> ;
+	prov:wasDerivedFrom doc:f11b7423f05e .
+doc:FactsguoNetworkAccuracy schema1:unitText "percent" .
+_:ef8fc23459a44182a4b6555f0f3cae47 rdf:reifies <<( doc:FactsguoNetworkAccuracy schema1:unitText "percent" )>> ;
+	prov:wasDerivedFrom doc:f11b7423f05e .
+doc:FactscranfieldUniversity schema1:addressCountry "UK" .
+_:ec4ff007b9e36b99f9ee5e0e22a61846 rdf:reifies <<( doc:FactscranfieldUniversity schema1:addressCountry "UK" )>> ;
+	prov:wasDerivedFrom doc:f11b7423f05e .
+doc:FactsappliedSciencesJournal schema1:volumeNumber 15 .
+_:b8d87a35e8fb10e42ad55800fa059b39 rdf:reifies <<( doc:FactsappliedSciencesJournal schema1:volumeNumber 15 )>> ;
+	prov:wasDerivedFrom doc:f11b7423f05e .
+doc:FactsfuelSystem schema1:name "Fuel system" .
+_:a829d5fe35c459e446355cefcd6b1f8b rdf:reifies <<( doc:FactsfuelSystem schema1:name "Fuel system" )>> ;
+	prov:wasDerivedFrom doc:f11b7423f05e .
+doc:FactsacademicEditorDouglasOshaughnessy a schema1:Person .
+_:df73d4be2fb5acd850c58b9e4734db5f rdf:reifies <<( doc:FactsacademicEditorDouglasOshaughnessy rdf:type schema1:Person )>> ;
+	prov:wasDerivedFrom doc:f11b7423f05e .
+doc:FactsguoNetworkAccuracy schema1:about doc:FactsfuelSystem .
+_:e8289b58f3f17496ca23b67be4ff5ad4 rdf:reifies <<( doc:FactsguoNetworkAccuracy schema1:about doc:FactsfuelSystem )>> ;
+	prov:wasDerivedFrom doc:f11b7423f05e .
+doc:Factsmro_cost_2023 schema1:currency "USD" .
+_:a535403702d07c59df404a3a7bdf02c4 rdf:reifies <<( doc:Factsmro_cost_2023 schema1:currency "USD" )>> ;
+	prov:wasDerivedFrom doc:f11b7423f05e .
+doc:FactslilinJia schema1:givenName "Ian K." .
+_:d916834ee7efee5ae3393d931c2df32e rdf:reifies <<( doc:FactslilinJia schema1:givenName "Ian K." )>> ;
+	prov:wasDerivedFrom doc:f11b7423f05e .
+doc:FactsarticleTitleFaultDiagnosis cco:designates doc:FactsarticleFaultDiagnosisAircraft .
+_:dffdde7184c72b96ec32d9112f42689d rdf:reifies <<( doc:FactsarticleTitleFaultDiagnosis cco:designates doc:FactsarticleFaultDiagnosisAircraft )>> ;
+	prov:wasDerivedFrom doc:f11b7423f05e .
+doc:FactsintegratedVehicleHealthManagementCentre a schema1:Organization .
+_:afe6af3e130a4756f4a09bcafd8a4cc3 rdf:reifies <<( doc:FactsintegratedVehicleHealthManagementCentre rdf:type schema1:Organization )>> ;
+	prov:wasDerivedFrom doc:f11b7423f05e .
+doc:Factsdoi_10_3390_app15063232 None:has_text_value "10.3390/app15063232" .
+_:a96e76cf6dbef6ac43da155cee51ea6a rdf:reifies <<( doc:Factsdoi_10_3390_app15063232 None:has_text_value "10.3390/app15063232" )>> ;
+	prov:wasDerivedFrom doc:f11b7423f05e .
+doc:FactsmroAnnualGrowthRate a schema1:QuantitativeValue .
+_:e852c52aafcc57effe1d00c5ade6c3c6 rdf:reifies <<( doc:FactsmroAnnualGrowthRate rdf:type schema1:QuantitativeValue )>> ;
+	prov:wasDerivedFrom doc:f11b7423f05e .
+doc:Factsmro_cost_2023 a schema1:MonetaryAmount .
+_:fef70e63dff0c8526c42603d593240d5 rdf:reifies <<( doc:Factsmro_cost_2023 rdf:type schema1:MonetaryAmount )>> ;
+	prov:wasDerivedFrom doc:f11b7423f05e .
+doc:FactsarticleFaultDiagnosisAircraft schema1:about doc:FactsauxiliaryPowerUnit .
+_:decc1ab4e45d7e275f01ad643b14db7d rdf:reifies <<( doc:FactsarticleFaultDiagnosisAircraft schema1:about doc:FactsauxiliaryPowerUnit )>> ;
+	prov:wasDerivedFrom doc:f11b7423f05e .
+doc:FactsintegratedVehicleHealthManagementCentre schema1:parentOrganization doc:FactscranfieldUniversity .
+_:f2345dd4cdd4fb2dc86bc7f4dc6f49c1 rdf:reifies <<( doc:FactsintegratedVehicleHealthManagementCentre schema1:parentOrganization doc:FactscranfieldUniversity )>> ;
+	prov:wasDerivedFrom doc:f11b7423f05e .
+doc:FactslilinJia schema1:email "lilin.jia@cranfield.ac.uk" .
+_:e56d8b4c9c0832cbd7e472c548170339 rdf:reifies <<( doc:FactslilinJia schema1:email "lilin.jia@cranfield.ac.uk" )>> ;
+	prov:wasDerivedFrom doc:f11b7423f05e .
+doc:FactsintegratedVehicleHealthManagementCentre schema1:name "Integrated Vehicle Health Management (IVHM) Centre" .
+_:e39f16ecddab2e3d37acdc86dbb8ff62 rdf:reifies <<( doc:FactsintegratedVehicleHealthManagementCentre schema1:name "Integrated Vehicle Health Management (IVHM) Centre" )>> ;
+	prov:wasDerivedFrom doc:f11b7423f05e .
+doc:FactsarticleTitleFaultDiagnosis a None:Article_title .
+_:cea3ac52600c4446f75583512c6f975b rdf:reifies <<( doc:FactsarticleTitleFaultDiagnosis rdf:type None:Article_title )>> ;
+	prov:wasDerivedFrom doc:f11b7423f05e .
+doc:FactsfuelSystem a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Maintainable_item> .
+_:b2f4c047f6695dcaff4296fa986c1085 rdf:reifies <<( doc:FactsfuelSystem rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Maintainable_item> )>> ;
+	prov:wasDerivedFrom doc:f11b7423f05e .
+doc:Factspublication_year_2025_4 None:has_interger_value 2025 .
+_:da940fbe52a8772a8bf36a200a9255b6 rdf:reifies <<( doc:Factspublication_year_2025_4 None:has_interger_value 2025 )>> ;
+	prov:wasDerivedFrom doc:f11b7423f05e .
+doc:FactsarticleFaultDiagnosisAircraft None:has_identifier doc:Factsdoi_10_3390_app15063232 .
+_:ab27a3bc5535779aeacbd15ef66d964f rdf:reifies <<( doc:FactsarticleFaultDiagnosisAircraft None:has_identifier doc:Factsdoi_10_3390_app15063232 )>> ;
+	prov:wasDerivedFrom doc:f11b7423f05e .
+doc:FactsmroOperationalCostShare a schema1:QuantitativeValue .
+_:de7386894b5a30bd23c52fc820b09d70 rdf:reifies <<( doc:FactsmroOperationalCostShare rdf:type schema1:QuantitativeValue )>> ;
+	prov:wasDerivedFrom doc:f11b7423f05e .
+doc:FactslilinJia schema1:givenName "Lilin" .
+_:ce7abe08fa8e08e608481328854445ec rdf:reifies <<( doc:FactslilinJia schema1:givenName "Lilin" )>> ;
+	prov:wasDerivedFrom doc:f11b7423f05e .
+doc:FactslilinJia schema1:givenName "Cordelia Mattuvarkuzhali" .
+_:a50ec0527c1792f33fbcc7e720a4da4d rdf:reifies <<( doc:FactslilinJia schema1:givenName "Cordelia Mattuvarkuzhali" )>> ;
+	prov:wasDerivedFrom doc:f11b7423f05e .
+doc:FactslilinJia schema1:familyName "Jia" .
+_:fe2f55d8ec4e12cfb4e333eeb50593a9 rdf:reifies <<( doc:FactslilinJia schema1:familyName "Jia" )>> ;
+	prov:wasDerivedFrom doc:f11b7423f05e .
+doc:FactsacademicEditorDouglasOshaughnessy schema1:givenName "Douglas" .
+_:e01299ed04275ce225bddb06b1613d7a rdf:reifies <<( doc:FactsacademicEditorDouglasOshaughnessy schema1:givenName "Douglas" )>> ;
+	prov:wasDerivedFrom doc:f11b7423f05e .
+doc:Factscbm a None:Fault_identification .
+_:a8bed34f8357abd546adbcb9a281f838 rdf:reifies <<( doc:Factscbm rdf:type None:Fault_identification )>> ;
+	prov:wasDerivedFrom doc:f11b7423f05e .
+doc:FactsarticleFaultDiagnosisAircraft schema1:abstract "Transfer learning was explored to transfer diagnostic knowledge between aircraft systems using relational similarity and image recognition as an intermediate domain."@en .
+_:a3d53929cb800112829c05376a0b7d97 rdf:reifies <<( doc:FactsarticleFaultDiagnosisAircraft schema1:abstract "Transfer learning was explored to transfer diagnostic knowledge between aircraft systems using relational similarity and image recognition as an intermediate domain."@en )>> ;
+	prov:wasDerivedFrom doc:f11b7423f05e .
+doc:Factsdoi_10_3390_app15063232 a None:Article_identifier .
+_:a78e8f5df8abc1cc201cf71dd06145cd rdf:reifies <<( doc:Factsdoi_10_3390_app15063232 rdf:type None:Article_identifier )>> ;
+	prov:wasDerivedFrom doc:f11b7423f05e .
+doc:FactsguoNetworkAccuracy schema1:about doc:FactsauxiliaryPowerUnit .
+_:d39e444072e40bb5f320ee7a9a18fce6 rdf:reifies <<( doc:FactsguoNetworkAccuracy schema1:about doc:FactsauxiliaryPowerUnit )>> ;
+	prov:wasDerivedFrom doc:f11b7423f05e .
+doc:Factsmro_cost_2023 schema1:value 93.9 .
+_:c88417ed2ec5b77d876b52162c6b0e10 rdf:reifies <<( doc:Factsmro_cost_2023 schema1:value 93.9 )>> ;
+	prov:wasDerivedFrom doc:f11b7423f05e .
+doc:FactslilinJia a schema1:Person .
+_:eead7338f710bdc83057df1df84ce43d rdf:reifies <<( doc:FactslilinJia rdf:type schema1:Person )>> ;
+	prov:wasDerivedFrom doc:f11b7423f05e .
+doc:FactsauxiliaryPowerUnit schema1:name "Auxiliary power unit" .
+_:c2af15034ff06b25195096d47db67dea rdf:reifies <<( doc:FactsauxiliaryPowerUnit schema1:name "Auxiliary power unit" )>> ;
+	prov:wasDerivedFrom doc:f11b7423f05e .
+doc:FactsarticleTitleFaultDiagnosis None:has_text_value "Fault Diagnosis Across Aircraft Systems Using Image Recognition and Transfer Learning" .
+_:c785fad7e08e73b4a0e4b2b882d2c974 rdf:reifies <<( doc:FactsarticleTitleFaultDiagnosis None:has_text_value "Fault Diagnosis Across Aircraft Systems Using Image Recognition and Transfer Learning" )>> ;
+	prov:wasDerivedFrom doc:f11b7423f05e .
+doc:FactsarticleFaultDiagnosisAircraft schema1:headline "Fault Diagnosis Across Aircraft Systems Using Image Recognition and Transfer Learning"@en .
+_:c4cb43004685dfce7299b4d2b48d5ae3 rdf:reifies <<( doc:FactsarticleFaultDiagnosisAircraft schema1:headline "Fault Diagnosis Across Aircraft Systems Using Image Recognition and Transfer Learning"@en )>> ;
+	prov:wasDerivedFrom doc:f11b7423f05e .
+doc:FactsguoNetworkAccuracy schema1:value 6.9 .
+_:def940af107e7d45d2ed3fd9e0ea167e rdf:reifies <<( doc:FactsguoNetworkAccuracy schema1:value 6.9 )>> ;
+	prov:wasDerivedFrom doc:f11b7423f05e .
+doc:FactsmroAnnualGrowthRate schema1:about doc:Factsmro_cost_2023 .
+_:cbbf54d3ef9b396e0995139ee5ee127f rdf:reifies <<( doc:FactsmroAnnualGrowthRate schema1:about doc:Factsmro_cost_2023 )>> ;
+	prov:wasDerivedFrom doc:f11b7423f05e .
+doc:FactsappliedSciencesJournal schema1:issueNumber 6 .
+_:b628aa95f6368601e886966691cb619c rdf:reifies <<( doc:FactsappliedSciencesJournal schema1:issueNumber 6 )>> ;
+	prov:wasDerivedFrom doc:f11b7423f05e .
+doc:FactsacademicEditorDouglasOshaughnessy schema1:familyName "O'Shaughnessy" .
+_:c7c5b532ca3f2c08aed852f82e9dcc07 rdf:reifies <<( doc:FactsacademicEditorDouglasOshaughnessy schema1:familyName "O'Shaughnessy" )>> ;
+	prov:wasDerivedFrom doc:f11b7423f05e .
+doc:FactslilinJia schema1:email "c.m.ezhilarasu@cranfield.ac.uk" .
+_:a61eb2d45fa22693a50361698e2291b0 rdf:reifies <<( doc:FactslilinJia schema1:email "c.m.ezhilarasu@cranfield.ac.uk" )>> ;
+	prov:wasDerivedFrom doc:f11b7423f05e .
+doc:5587e172cd8c a prov:Entity , schema:text ;
+	prov:generatedAtTime "2026-07-26T04:37:18.127836Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+	schema:position 1 ;
+	schema:identifier "5587e172cd8c" .
+doc:Factsaircraft a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Maintainable_item> .
+_:c3a2d52c42a2cf6f5de52e75359e503b rdf:reifies <<( doc:Factsaircraft rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Maintainable_item> )>> ;
+	prov:wasDerivedFrom doc:5587e172cd8c .
+doc:FactsguoNetworkAccuracy schema:value 86.3 .
+_:b46c9be716664356b067e4db570dc0b3 rdf:reifies <<( doc:FactsguoNetworkAccuracy schema:value 86.3 )>> ;
+	prov:wasDerivedFrom doc:5587e172cd8c .
+doc:Factsaircraft obo:BFO_0000051 doc:Factsaircraft .
+_:fe5fd91e9f93297c16a35f20ac510755 rdf:reifies <<( doc:Factsaircraft obo:BFO_0000051 doc:Factsaircraft )>> ;
+	prov:wasDerivedFrom doc:5587e172cd8c .
+_:becaff9b8645ae055232622e026f9db4 prov:wasDerivedFrom doc:5587e172cd8c .
+doc:Factscbm cco:is_about doc:Factsaircraft .
+_:fad3994b0e0e066c39a683cf1be3fd69 rdf:reifies <<( doc:Factscbm cco:is_about doc:Factsaircraft )>> ;
+	prov:wasDerivedFrom doc:5587e172cd8c .
+doc:FactsguoNetworkAccuracy schema:unitText "%" .
+_:f6b2a639ebd5039d1c0350e262be9965 rdf:reifies <<( doc:FactsguoNetworkAccuracy schema:unitText "%" )>> ;
+	prov:wasDerivedFrom doc:5587e172cd8c .
+doc:Factscbm cco:is_about doc:FactsmotorBearing .
+_:b28c09474daeceeb1c556ee4da981a84 rdf:reifies <<( doc:Factscbm cco:is_about doc:FactsmotorBearing )>> ;
+	prov:wasDerivedFrom doc:5587e172cd8c .
+doc:Factscbm None:has_predictive_maintenance_function doc:Factscbm .
+_:d73b5432239c6b3d584baeeb454b09f8 rdf:reifies <<( doc:Factscbm None:has_predictive_maintenance_function doc:Factscbm )>> ;
+	prov:wasDerivedFrom doc:5587e172cd8c .
+doc:Factscbm a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Predictive_maintenance_model> .
+_:dc1a2a9ab8f843f967fadd3aa8e04783 rdf:reifies <<( doc:Factscbm rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Predictive_maintenance_model> )>> ;
+	prov:wasDerivedFrom doc:5587e172cd8c .
+doc:Factscbm cco:is_about doc:FactssimulationData .
+_:ab10e76ac563d2a5ae53b2b293e07889 rdf:reifies <<( doc:Factscbm cco:is_about doc:FactssimulationData )>> ;
+	prov:wasDerivedFrom doc:5587e172cd8c .
+doc:Factscbm a cco:Algorithm .
+_:d9ccd8478fd758dff619faca9705a95a rdf:reifies <<( doc:Factscbm rdf:type cco:Algorithm )>> ;
+	prov:wasDerivedFrom doc:5587e172cd8c .
+doc:Factscbm a schema:Technology .
+_:deb2500be151f3ff86e3881e193b8487 rdf:reifies <<( doc:Factscbm rdf:type schema:Technology )>> ;
+	prov:wasDerivedFrom doc:5587e172cd8c .
+doc:FactssimulationData a schema:Dataset .
+_:afd90bc053b4ea1463c2e6d7438eda66 rdf:reifies <<( doc:FactssimulationData rdf:type schema:Dataset )>> ;
+	prov:wasDerivedFrom doc:5587e172cd8c .
+doc:Factscbm None:has_predictive_maintenance_function doc:FactscbmHealthAssessment .
+_:bd8faf61b0cdc9aa57d8066a03e8bf5 rdf:reifies <<( doc:Factscbm None:has_predictive_maintenance_function doc:FactscbmHealthAssessment )>> ;
+	prov:wasDerivedFrom doc:5587e172cd8c .
+_:afd80e14f2aa4833ba576503a10e17c prov:wasDerivedFrom doc:5587e172cd8c .
+doc:FactscbmRulEstimation a None:Remaining_useful_life_estimation .
+_:dd1a89ae7e63cf5151dc1225659d50cd rdf:reifies <<( doc:FactscbmRulEstimation rdf:type None:Remaining_useful_life_estimation )>> ;
+	prov:wasDerivedFrom doc:5587e172cd8c .
+doc:Factscbm None:has_predictive_maintenance_function doc:FactscbmRulEstimation .
+_:b0b3ab0824df01b4e453aa0ceb50561d rdf:reifies <<( doc:Factscbm None:has_predictive_maintenance_function doc:FactscbmRulEstimation )>> ;
+	prov:wasDerivedFrom doc:5587e172cd8c .
+doc:FactsmotorBearing a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Maintainable_item> .
+_:baf4700dba721123e0544efc263c3c2f rdf:reifies <<( doc:FactsmotorBearing rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Maintainable_item> )>> ;
+	prov:wasDerivedFrom doc:5587e172cd8c .
+_:a8bed34f8357abd546adbcb9a281f838 prov:wasDerivedFrom doc:5587e172cd8c .
+doc:FactscbmHealthAssessment a None:Health_assessment .
+_:bb9f7a6ecd9fbeade1d1a20184aaed7 rdf:reifies <<( doc:FactscbmHealthAssessment rdf:type None:Health_assessment )>> ;
+	prov:wasDerivedFrom doc:5587e172cd8c .
+doc:FactsguoNetworkAccuracy schema:about doc:Factscbm .
+_:fed1b62585beaebc63c50861fd4100b rdf:reifies <<( doc:FactsguoNetworkAccuracy schema:about doc:Factscbm )>> ;
+	prov:wasDerivedFrom doc:5587e172cd8c .
+doc:747dc611203a a prov:Entity , schema:text ;
+	prov:generatedAtTime "2026-07-26T04:37:18.129469Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+	schema:position 2 ;
+	schema:identifier "747dc611203a" .
+doc:FactsenvironmentalConditions_1 a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Data_variable> .
+_:a33ca77555b43bf3bf84f80970e0042a rdf:reifies <<( doc:FactsenvironmentalConditions_1 rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Data_variable> )>> ;
+	prov:wasDerivedFrom doc:747dc611203a .
+doc:Factsfinetuning a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Model_configuration> .
+_:eb7abce3eca9035a1d5623a293aa226d rdf:reifies <<( doc:Factsfinetuning rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Model_configuration> )>> ;
+	prov:wasDerivedFrom doc:747dc611203a .
+doc:FactsoperatingConditions rdfs:label "operating conditions"@en .
+_:a5571a7ba2cb4ca10282bd68ea7860eb rdf:reifies <<( doc:FactsoperatingConditions rdfs:label "operating conditions"@en )>> ;
+	prov:wasDerivedFrom doc:747dc611203a .
+doc:FactstargetDomainEngine a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Maintainable_item> .
+_:e7a213892e17d8ba94cf11c5b6ec713b rdf:reifies <<( doc:FactstargetDomainEngine rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Maintainable_item> )>> ;
+	prov:wasDerivedFrom doc:747dc611203a .
+doc:FactsaeroengineDatasets schema1:numberOfItems 4 .
+_:aa47d1413650ec53a2921c6747fbf029 rdf:reifies <<( doc:FactsaeroengineDatasets schema1:numberOfItems 4 )>> ;
+	prov:wasDerivedFrom doc:747dc611203a .
+doc:Factscbm a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Fault_identification> .
+_:c482a221ff73442fb84dbfa826415f5b rdf:reifies <<( doc:Factscbm rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Fault_identification> )>> ;
+	prov:wasDerivedFrom doc:747dc611203a .
+doc:FactsacsDeepNetwork rdfs:label "TL-based deep network"@en .
+_:c2dd17f4ff2f98f2d3e425c2838c5b21 rdf:reifies <<( doc:FactsacsDeepNetwork rdfs:label "TL-based deep network"@en )>> ;
+	prov:wasDerivedFrom doc:747dc611203a .
+doc:Factspretraining rdfs:label "pre-training of a deep model"@en .
+_:bf7b28d3f7ecabe367de14e1f02f141d rdf:reifies <<( doc:Factspretraining rdfs:label "pre-training of a deep model"@en )>> ;
+	prov:wasDerivedFrom doc:747dc611203a .
+doc:Factsspacecraft a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Maintainable_item> .
+_:c8cd0bc850964a860cfa828f7ab6ef59 rdf:reifies <<( doc:Factsspacecraft rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Maintainable_item> )>> ;
+	prov:wasDerivedFrom doc:747dc611203a .
+doc:Factscbm rdfs:label "fault diagnosis accuracy improvement"@en .
+_:a85a97a69df0c1521a176a7a9600a6e9 rdf:reifies <<( doc:Factscbm rdfs:label "fault diagnosis accuracy improvement"@en )>> ;
+	prov:wasDerivedFrom doc:747dc611203a .
+doc:FactsstructuralAnalogyTransfer rdfs:label "transfer learning by structural analogy"@en .
+_:e15403205b1b404b512bec29ba12f503 rdf:reifies <<( doc:FactsstructuralAnalogyTransfer rdfs:label "transfer learning by structural analogy"@en )>> ;
+	prov:wasDerivedFrom doc:747dc611203a .
+doc:FactsstructuralAnalogyTransfer a cco:Algorithm .
+_:fba3b818c132cc5e9a6da23e39430565 rdf:reifies <<( doc:FactsstructuralAnalogyTransfer rdf:type cco:Algorithm )>> ;
+	prov:wasDerivedFrom doc:747dc611203a .
+doc:FactsdiagnosticKnowledgeTransfer schema1:mentions doc:FactsgasTurbine .
+_:d0c7c5a5eeb9e86cd66f7e193448e556 rdf:reifies <<( doc:FactsdiagnosticKnowledgeTransfer schema1:mentions doc:FactsgasTurbine )>> ;
+	prov:wasDerivedFrom doc:747dc611203a .
+doc:Factscbm rdfs:label "fault location diagnosis"@en .
+_:c6ca4d4fa26437b0947864176cda3ad2 rdf:reifies <<( doc:Factscbm rdfs:label "fault location diagnosis"@en )>> ;
+	prov:wasDerivedFrom doc:747dc611203a .
+doc:FactssimulationData rdfs:label "simulation-generated source domain dataset"@en .
+_:ec8542bdae2085079c08714aa461d53c rdf:reifies <<( doc:FactssimulationData rdfs:label "simulation-generated source domain dataset"@en )>> ;
+	prov:wasDerivedFrom doc:747dc611203a .
+doc:FactsdistantDomains rdfs:label "distant and dissimilar source and target domains"@en .
+_:c0af83d8f6f7d594e6830ce0324ecf0 rdf:reifies <<( doc:FactsdistantDomains rdfs:label "distant and dissimilar source and target domains"@en )>> ;
+	prov:wasDerivedFrom doc:747dc611203a .
+doc:FactsperformanceDegradations a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Data_variable> .
+_:cddc78e319fbe196881ba9b01830a72a rdf:reifies <<( doc:FactsperformanceDegradations rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Data_variable> )>> ;
+	prov:wasDerivedFrom doc:747dc611203a .
+doc:FactsdistantDomains a cco:DescriptiveInformationContentEntity .
+_:caf7a0f75c8f30d6cb2b453965e49987 rdf:reifies <<( doc:FactsdistantDomains rdf:type cco:DescriptiveInformationContentEntity )>> ;
+	prov:wasDerivedFrom doc:747dc611203a .
+doc:FactsdiagnosticKnowledgeTransfer rdfs:label "diagnostic knowledge transfer"@en .
+_:adb57463c51255b03fc91ce29b79cf1e rdf:reifies <<( doc:FactsdiagnosticKnowledgeTransfer rdfs:label "diagnostic knowledge transfer"@en )>> ;
+	prov:wasDerivedFrom doc:747dc611203a .
+doc:FactssimulationData a cco:Database .
+_:bc47d4bd12f2f7b5815a64499ed46157 rdf:reifies <<( doc:FactssimulationData rdf:type cco:Database )>> ;
+	prov:wasDerivedFrom doc:747dc611203a .
+doc:FactsdiagnosticKnowledgeTransfer a cco:DescriptiveInformationContentEntity .
+_:e9856a5079bfd68cb0ab61e715f44714 rdf:reifies <<( doc:FactsdiagnosticKnowledgeTransfer rdf:type cco:DescriptiveInformationContentEntity )>> ;
+	prov:wasDerivedFrom doc:747dc611203a .
+doc:FactsdiagnosticKnowledgeTransfer schema1:mentions doc:Factsspacecraft .
+_:a962693c9209c875fb1c60be2bd9593a rdf:reifies <<( doc:FactsdiagnosticKnowledgeTransfer schema1:mentions doc:Factsspacecraft )>> ;
+	prov:wasDerivedFrom doc:747dc611203a .
+doc:Factscbm rdfs:label "fault diagnosis"@en .
+_:d6e7f8147aa50e790d87065c798a728d rdf:reifies <<( doc:Factscbm rdfs:label "fault diagnosis"@en )>> ;
+	prov:wasDerivedFrom doc:747dc611203a .
+doc:FactsfaultRichDataset schema1:about doc:FactsattitudeControlSystem .
+_:c4ab5560d43b336cc4b239efc2fec230 rdf:reifies <<( doc:FactsfaultRichDataset schema1:about doc:FactsattitudeControlSystem )>> ;
+	prov:wasDerivedFrom doc:747dc611203a .
+doc:FactsperformanceDegradations rdfs:label "performance degradations"@en .
+_:f164c6c725751ca02aeb1f783044fff0 rdf:reifies <<( doc:FactsperformanceDegradations rdfs:label "performance degradations"@en )>> ;
+	prov:wasDerivedFrom doc:747dc611203a .
+doc:FactsfaultRichDataset rdfs:label "fault-rich dataset"@en .
+_:e2594065fa4432cc36f35d239382eeb6 rdf:reifies <<( doc:FactsfaultRichDataset rdfs:label "fault-rich dataset"@en )>> ;
+	prov:wasDerivedFrom doc:747dc611203a .
+doc:FactsoperatingConditions a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Data_variable> .
+_:d7cca27deed044dc90ccf6f78253a255 rdf:reifies <<( doc:FactsoperatingConditions rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Data_variable> )>> ;
+	prov:wasDerivedFrom doc:747dc611203a .
+doc:FactsaeroengineDatasets schema1:about doc:Factsaeroengine .
+_:dffc7cf5b8c183ddd7f0fd8eefaf1d5b rdf:reifies <<( doc:FactsaeroengineDatasets schema1:about doc:Factsaeroengine )>> ;
+	prov:wasDerivedFrom doc:747dc611203a .
+doc:Factspretraining cco:describes doc:FactsacsDeepNetwork .
+_:efe5ec2f24a0bb508968cc00211294d9 rdf:reifies <<( doc:Factspretraining cco:describes doc:FactsacsDeepNetwork )>> ;
+	prov:wasDerivedFrom doc:747dc611203a .
+_:d4a24d98e5576fce7c55178d30f12fe5 prov:wasDerivedFrom doc:747dc611203a .
+doc:FactsdistantDomains rdfs:label "common intermediate domain"@en .
+_:bd4d46276f242630b4ececc0040ff07e rdf:reifies <<( doc:FactsdistantDomains rdfs:label "common intermediate domain"@en )>> ;
+	prov:wasDerivedFrom doc:747dc611203a .
+doc:Factspretraining a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Model_configuration> .
+_:fcc9488396ca62d6cc125e73019251ea rdf:reifies <<( doc:Factspretraining rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Model_configuration> )>> ;
+	prov:wasDerivedFrom doc:747dc611203a .
+doc:FactscrossSystemApplication a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Predictive_maintenance_system_module> .
+_:a5d6b1a1fc3a5610be2df53566816fa9 rdf:reifies <<( doc:FactscrossSystemApplication rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Predictive_maintenance_system_module> )>> ;
+	prov:wasDerivedFrom doc:747dc611203a .
+doc:FactsstructuralAnalogyTransfer cco:is_about doc:FactsdiagnosticKnowledgeTransfer .
+_:b731ff0d37be108a870d4ad3079e86a rdf:reifies <<( doc:FactsstructuralAnalogyTransfer cco:is_about doc:FactsdiagnosticKnowledgeTransfer )>> ;
+	prov:wasDerivedFrom doc:747dc611203a .
+doc:FactssimulationData schema1:about doc:FactsgyroSystem .
+_:ae757bb892b1cde95476df21b03982aa rdf:reifies <<( doc:FactssimulationData schema1:about doc:FactsgyroSystem )>> ;
+	prov:wasDerivedFrom doc:747dc611203a .
+doc:FactsdiagnosticKnowledgeTransfer schema1:mentions doc:FactsgyroSystem .
+_:a21a78d3a3be2c4d566f6f694ad781fd rdf:reifies <<( doc:FactsdiagnosticKnowledgeTransfer schema1:mentions doc:FactsgyroSystem )>> ;
+	prov:wasDerivedFrom doc:747dc611203a .
+doc:FactsaeroengineDatasets a cco:Database .
+_:dde5729b7cdc373c48db5cb50c4cc05d rdf:reifies <<( doc:FactsaeroengineDatasets rdf:type cco:Database )>> ;
+	prov:wasDerivedFrom doc:747dc611203a .
+doc:FactsdiagnosticKnowledgeTransfer schema1:mentions doc:FactsattitudeControlSystem .
+_:f13cb4d33f1dd77f83ada80804610384 rdf:reifies <<( doc:FactsdiagnosticKnowledgeTransfer schema1:mentions doc:FactsattitudeControlSystem )>> ;
+	prov:wasDerivedFrom doc:747dc611203a .
+doc:FactscrossSystemApplication <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#has_predictive_maintenance_function> doc:Factscbm .
+_:b38a6af510cba6c700e342a6fd6832f0 rdf:reifies <<( doc:FactscrossSystemApplication <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#has_predictive_maintenance_function> doc:Factscbm )>> ;
+	prov:wasDerivedFrom doc:747dc611203a .
+doc:FactsacsDeepNetwork a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Predictive_maintenance_model> .
+_:d2db5ec9539fc94e42a8b3a35675c266 rdf:reifies <<( doc:FactsacsDeepNetwork rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Predictive_maintenance_model> )>> ;
+	prov:wasDerivedFrom doc:747dc611203a .
+doc:FactsliStudyModel a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Predictive_maintenance_model> .
+_:cadbbe24af7c9a12bd38ca82068c6a56 rdf:reifies <<( doc:FactsliStudyModel rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Predictive_maintenance_model> )>> ;
+	prov:wasDerivedFrom doc:747dc611203a .
+doc:FactsstructuralAnalogyTransfer cco:is_about doc:FactsdistantDomains .
+_:f2c44294a72951f46b28f387b8c8d613 rdf:reifies <<( doc:FactsstructuralAnalogyTransfer cco:is_about doc:FactsdistantDomains )>> ;
+	prov:wasDerivedFrom doc:747dc611203a .
+doc:FactshealthyTargetCases rdfs:label "healthy target cases"@en .
+_:d99903cd70b9bc0f1464dfd3245b2cd8 rdf:reifies <<( doc:FactshealthyTargetCases rdfs:label "healthy target cases"@en )>> ;
+	prov:wasDerivedFrom doc:747dc611203a .
+doc:FactsliStudyModel cco:is_about doc:Factscbm .
+_:f0ef7fc717e12bfae4ac250a498cdb0d rdf:reifies <<( doc:FactsliStudyModel cco:is_about doc:Factscbm )>> ;
+	prov:wasDerivedFrom doc:747dc611203a .
+doc:FactsattitudeControlSystem rdfs:label "Attitude Control System"@en .
+_:eb467634e035cb895d94747f073870d4 rdf:reifies <<( doc:FactsattitudeControlSystem rdfs:label "Attitude Control System"@en )>> ;
+	prov:wasDerivedFrom doc:747dc611203a .
+doc:Factsfinetuning rdfs:label "fine-tuning on healthy target cases"@en .
+_:afda95b6e3dc248494a04bc736c54f7a rdf:reifies <<( doc:Factsfinetuning rdfs:label "fine-tuning on healthy target cases"@en )>> ;
+	prov:wasDerivedFrom doc:747dc611203a .
+doc:FactsaeroengineDatasets rdfs:label "aeroengine simulation datasets"@en .
+_:bd26c03588b9270246dbd5bc54a69ded rdf:reifies <<( doc:FactsaeroengineDatasets rdfs:label "aeroengine simulation datasets"@en )>> ;
+	prov:wasDerivedFrom doc:747dc611203a .
+doc:FactsstructuralAnalogyTransfer rdfs:label "transitive transfer learning"@en .
+_:c6d89047a53f07366efb2d795de13c02 rdf:reifies <<( doc:FactsstructuralAnalogyTransfer rdfs:label "transitive transfer learning"@en )>> ;
+	prov:wasDerivedFrom doc:747dc611203a .
+doc:FactshealthyTargetCases a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Data_variable> .
+_:f2c880e50b824dfff25131f81ad29e33 rdf:reifies <<( doc:FactshealthyTargetCases rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Data_variable> )>> ;
+	prov:wasDerivedFrom doc:747dc611203a .
+doc:FactsstructuralAnalogyTransfer rdfs:label "cross-system transfer learning"@en .
+_:e6e811464cb1e709ed6741ee4cb3000 rdf:reifies <<( doc:FactsstructuralAnalogyTransfer rdfs:label "cross-system transfer learning"@en )>> ;
+	prov:wasDerivedFrom doc:747dc611203a .
+doc:Factsaeroengine rdfs:label "aeroengine"@en .
+_:a9135d4191b135070d691da8bf5ba374 rdf:reifies <<( doc:Factsaeroengine rdfs:label "aeroengine"@en )>> ;
+	prov:wasDerivedFrom doc:747dc611203a .
+doc:FactsattitudeControlSystem a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Maintainable_item> .
+_:dabac5f709b3b3549df754f3f1304b15 rdf:reifies <<( doc:FactsattitudeControlSystem rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Maintainable_item> )>> ;
+	prov:wasDerivedFrom doc:747dc611203a .
+doc:FactsunlabelledTargetData a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Data_variable> .
+_:b2cacb31a494d5dd5c5fd55817265ab5 rdf:reifies <<( doc:FactsunlabelledTargetData rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Data_variable> )>> ;
+	prov:wasDerivedFrom doc:747dc611203a .
+doc:FactsdiagnosticKnowledgeTransfer schema1:mentions doc:Factscbm .
+_:ebf006182bba6d11294c4c012a5c0ae6 rdf:reifies <<( doc:FactsdiagnosticKnowledgeTransfer schema1:mentions doc:Factscbm )>> ;
+	prov:wasDerivedFrom doc:747dc611203a .
+doc:FactsacsDeepNetwork cco:is_about doc:Factscbm .
+_:c542c7518e57615914d08a67d2fba378 rdf:reifies <<( doc:FactsacsDeepNetwork cco:is_about doc:Factscbm )>> ;
+	prov:wasDerivedFrom doc:747dc611203a .
+doc:Factscbm rdfs:label "fault states"@en .
+_:ab7cdf120c11a34310669bead224f658 rdf:reifies <<( doc:Factscbm rdfs:label "fault states"@en )>> ;
+	prov:wasDerivedFrom doc:747dc611203a .
+doc:FactsenvironmentalConditions_1 rdfs:label "environmental conditions"@en .
+_:faaeeec3d92cfddd7cf571ec3bca6f3 rdf:reifies <<( doc:FactsenvironmentalConditions_1 rdfs:label "environmental conditions"@en )>> ;
+	prov:wasDerivedFrom doc:747dc611203a .
+doc:FactssimulationData rdfs:label "target domain dataset"@en .
+_:c50f8b3ebbe069adcd41c670e046ee1e rdf:reifies <<( doc:FactssimulationData rdfs:label "target domain dataset"@en )>> ;
+	prov:wasDerivedFrom doc:747dc611203a .
+doc:FactssimulationData schema1:about doc:FactsattitudeControlSystem .
+_:d42c8bd0d8c30835cad98db6004299d6 rdf:reifies <<( doc:FactssimulationData schema1:about doc:FactsattitudeControlSystem )>> ;
+	prov:wasDerivedFrom doc:747dc611203a .
+doc:FactsdiagnosticKnowledgeTransfer a schema1:Article .
+_:b983cdf96180a63c01711985f516d0ff rdf:reifies <<( doc:FactsdiagnosticKnowledgeTransfer rdf:type schema1:Article )>> ;
+	prov:wasDerivedFrom doc:747dc611203a .
+doc:Factscbm rdfs:label "fault diagnosis robustness improvement"@en .
+_:dfa71f0bdeca47686424696de36626d5 rdf:reifies <<( doc:Factscbm rdfs:label "fault diagnosis robustness improvement"@en )>> ;
+	prov:wasDerivedFrom doc:747dc611203a .
+doc:FactsdiagnosticKnowledgeTransfer cco:describes doc:FactstargetDomainEngine .
+_:a219c8586c42e4a3865cd296c7d0b962 rdf:reifies <<( doc:FactsdiagnosticKnowledgeTransfer cco:describes doc:FactstargetDomainEngine )>> ;
+	prov:wasDerivedFrom doc:747dc611203a .
+doc:FactsunlabelledTargetData rdfs:label "unlabelled target data"@en .
+_:a48203a7657cd8271e46d537d48dc43c rdf:reifies <<( doc:FactsunlabelledTargetData rdfs:label "unlabelled target data"@en )>> ;
+	prov:wasDerivedFrom doc:747dc611203a .
+doc:FactstargetDomainEngine rdfs:label "data-poor target-domain engine"@en .
+_:b937993ec753843ff8356d15b85fe358 rdf:reifies <<( doc:FactstargetDomainEngine rdfs:label "data-poor target-domain engine"@en )>> ;
+	prov:wasDerivedFrom doc:747dc611203a .
+doc:FactsliStudyModel rdfs:label "TL-based aeroengine fault diagnosis model"@en .
+_:da4277743b69021d77d8d36b26647e1a rdf:reifies <<( doc:FactsliStudyModel rdfs:label "TL-based aeroengine fault diagnosis model"@en )>> ;
+	prov:wasDerivedFrom doc:747dc611203a .
+doc:FactstargetDomainEngine rdfs:label "data-rich engine"@en .
+_:ac2ad618e45c3d1ac1bab5f4af51f5ca rdf:reifies <<( doc:FactstargetDomainEngine rdfs:label "data-rich engine"@en )>> ;
+	prov:wasDerivedFrom doc:747dc611203a .
+doc:Factscbm cco:is_about doc:Factscbm .
+_:c0c6e803785cf5ba3831a4df54414c0c rdf:reifies <<( doc:Factscbm cco:is_about doc:Factscbm )>> ;
+	prov:wasDerivedFrom doc:747dc611203a .
+doc:FactsdiagnosticKnowledgeTransfer schema1:about doc:FactsstructuralAnalogyTransfer .
+_:d92b0e887aed94e08826f3f6d560f653 rdf:reifies <<( doc:FactsdiagnosticKnowledgeTransfer schema1:about doc:FactsstructuralAnalogyTransfer )>> ;
+	prov:wasDerivedFrom doc:747dc611203a .
+_:becaff9b8645ae055232622e026f9db4 prov:wasDerivedFrom doc:747dc611203a .
+doc:FactsgasTurbine a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Maintainable_item> .
+_:d7ea314595e0e3063fc90b85eea609fa rdf:reifies <<( doc:FactsgasTurbine rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Maintainable_item> )>> ;
+	prov:wasDerivedFrom doc:747dc611203a .
+doc:FactsattitudeControlSystem rdfs:label "ACS"@en .
+_:c55a976ffc7d1a5f27639b3203c5ff9a rdf:reifies <<( doc:FactsattitudeControlSystem rdfs:label "ACS"@en )>> ;
+	prov:wasDerivedFrom doc:747dc611203a .
+doc:FactsgyroSystem a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Maintainable_item> .
+_:e37d3b5aab6d60f4bffe89c16aa6d63c rdf:reifies <<( doc:FactsgyroSystem rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Maintainable_item> )>> ;
+	prov:wasDerivedFrom doc:747dc611203a .
+doc:FactsfaultRichDataset a cco:Database .
+_:ef7d6ab5a2f0f44b5018fb6aac5d3e89 rdf:reifies <<( doc:FactsfaultRichDataset rdf:type cco:Database )>> ;
+	prov:wasDerivedFrom doc:747dc611203a .
+doc:FactsgasTurbine rdfs:label "gas turbine"@en .
+_:e081e40f3888f99ee07ff693ed791730 rdf:reifies <<( doc:FactsgasTurbine rdfs:label "gas turbine"@en )>> ;
+	prov:wasDerivedFrom doc:747dc611203a .
+doc:Factsspacecraft rdfs:label "spacecraft"@en .
+_:c7ab1c08ea33a83b81a6087c562bb716 rdf:reifies <<( doc:Factsspacecraft rdfs:label "spacecraft"@en )>> ;
+	prov:wasDerivedFrom doc:747dc611203a .
+doc:FactscrossSystemApplication rdfs:label "cross-system transfer learning application in aerospace fault diagnosis"@en .
+_:aad3fa3508587f50b4bd0a0312c546a9 rdf:reifies <<( doc:FactscrossSystemApplication rdfs:label "cross-system transfer learning application in aerospace fault diagnosis"@en )>> ;
+	prov:wasDerivedFrom doc:747dc611203a .
+doc:FactsgyroSystem rdfs:label "benchtop gyro system"@en .
+_:eacefea1b035973377ffc04a9c680c37 rdf:reifies <<( doc:FactsgyroSystem rdfs:label "benchtop gyro system"@en )>> ;
+	prov:wasDerivedFrom doc:747dc611203a .
+doc:FactsdiagnosticKnowledgeTransfer schema1:mentions doc:Factsaeroengine .
+_:e4bcb3daa4f19e911ba1c7a14b0727ed rdf:reifies <<( doc:FactsdiagnosticKnowledgeTransfer schema1:mentions doc:Factsaeroengine )>> ;
+	prov:wasDerivedFrom doc:747dc611203a .
+doc:Factsaeroengine a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Maintainable_item> .
+_:ed5bded43b73f838ac4a0abd6730e569 rdf:reifies <<( doc:Factsaeroengine rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Maintainable_item> )>> ;
+	prov:wasDerivedFrom doc:747dc611203a .
+doc:Factsfinetuning cco:describes doc:FactsacsDeepNetwork .
+_:f60d2b49a67029fbbac770812b482156 rdf:reifies <<( doc:Factsfinetuning cco:describes doc:FactsacsDeepNetwork )>> ;
+	prov:wasDerivedFrom doc:747dc611203a .
+<http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Predictive_maintenance_model> owl:sameAs <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Predictive_maintenance_system_module> .

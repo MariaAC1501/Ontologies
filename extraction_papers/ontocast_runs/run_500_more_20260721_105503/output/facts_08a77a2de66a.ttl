@@ -1,0 +1,575 @@
+@prefix None: <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD/seed#> .
+@prefix cco: <http://www.ontologyrepository.com/CommonCoreOntologies/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doc: <https://growgraph.dev/doc/08a77a2de66a/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix obo: <http://purl.obolibrary.org/obo/> .
+@prefix cd: <https://growgraph.dev/facts> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix schema: <https://schema.org/> .
+@prefix schema1: <http://schema.org/> .
+doc:a41e28012ea4 a prov:Entity , schema:text ;
+	prov:generatedAtTime "2026-07-22T18:06:57.540899Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+	schema:position 0 ;
+	schema:identifier "a41e28012ea4" .
+doc:Factsfaults_1 obo:BFO_0000051 doc:Factsdefect2 .
+_:c081457dddbeca2049606edb3749d19 rdf:reifies <<( doc:Factsfaults_1 obo:BFO_0000051 doc:Factsdefect2 )>> ;
+	prov:wasDerivedFrom doc:a41e28012ea4 .
+doc:Factsauthor4_3 a schema:Person .
+_:cf7999533fb46c760668166381225c22 rdf:reifies <<( doc:Factsauthor4_3 rdf:type schema:Person )>> ;
+	prov:wasDerivedFrom doc:a41e28012ea4 .
+doc:Factsarticle1_32 schema:author doc:Factsauthor4_3 .
+_:d2f653413b674d42e8c3a35b7da141e9 rdf:reifies <<( doc:Factsarticle1_32 schema:author doc:Factsauthor4_3 )>> ;
+	prov:wasDerivedFrom doc:a41e28012ea4 .
+doc:Factsfaults_1 cco:is_about doc:Factsfaults_1 .
+_:da9aef3f63cc8ed3c2f6f7bf298e446d rdf:reifies <<( doc:Factsfaults_1 cco:is_about doc:Factsfaults_1 )>> ;
+	prov:wasDerivedFrom doc:a41e28012ea4 .
+doc:Factsstate1 cco:is_about doc:Factsfaults_1 .
+_:c6c60def0cdaa1ceb77683ab412c2b40 rdf:reifies <<( doc:Factsstate1 cco:is_about doc:Factsfaults_1 )>> ;
+	prov:wasDerivedFrom doc:a41e28012ea4 .
+doc:Factsmethod1_6 rdfs:label "envelope analysis" .
+_:f64b7fba8a216e504712065818ab7f0 rdf:reifies <<( doc:Factsmethod1_6 rdfs:label "envelope analysis" )>> ;
+	prov:wasDerivedFrom doc:a41e28012ea4 .
+doc:Factsmethod4_3 rdfs:label "tensor decomposition" .
+_:da702fb43ffd5cd6e51efba074e6dada rdf:reifies <<( doc:Factsmethod4_3 rdfs:label "tensor decomposition" )>> ;
+	prov:wasDerivedFrom doc:a41e28012ea4 .
+doc:Factsorganization2 a schema:Organization .
+_:ca1420c011c22d916bd416be5d406300 rdf:reifies <<( doc:Factsorganization2 rdf:type schema:Organization )>> ;
+	prov:wasDerivedFrom doc:a41e28012ea4 .
+doc:Factsfaults_1 a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Fault_detection> .
+_:d79826784c5f26a2a6b0143e6ed294d4 rdf:reifies <<( doc:Factsfaults_1 rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Fault_detection> )>> ;
+	prov:wasDerivedFrom doc:a41e28012ea4 .
+doc:Factsmethod1_6 rdfs:label "fast Kurtogram" .
+_:f9b2b9ab01ddfb7ccbe99069b3c8cef9 rdf:reifies <<( doc:Factsmethod1_6 rdfs:label "fast Kurtogram" )>> ;
+	prov:wasDerivedFrom doc:a41e28012ea4 .
+doc:Factsimpact1 cco:is_about doc:Factsfaults_1 .
+_:c0f633a5e25b308235c8438747234425 rdf:reifies <<( doc:Factsimpact1 cco:is_about doc:Factsfaults_1 )>> ;
+	prov:wasDerivedFrom doc:a41e28012ea4 .
+doc:Factsfaults_1 rdfs:label "The Effect of Defect Size and Location in Roller Bearing Fault Detection: Experimental Insights for Vibration-Based Diagnosis" .
+_:daf1adc663676cbf1502d84388a7b078 rdf:reifies <<( doc:Factsfaults_1 rdfs:label "The Effect of Defect Size and Location in Roller Bearing Fault Detection: Experimental Insights for Vibration-Based Diagnosis" )>> ;
+	prov:wasDerivedFrom doc:a41e28012ea4 .
+doc:Factsfreq1 rdfs:label "fault characteristic frequencies" .
+_:d630e9e789885c15d3efe53d249f1379 rdf:reifies <<( doc:Factsfreq1 rdfs:label "fault characteristic frequencies" )>> ;
+	prov:wasDerivedFrom doc:a41e28012ea4 .
+doc:Factsimpact1 a obo:BFO_0000019 .
+_:ed09475198a8cb5498c043d16dfc9ecb rdf:reifies <<( doc:Factsimpact1 rdf:type obo:BFO_0000019 )>> ;
+	prov:wasDerivedFrom doc:a41e28012ea4 .
+doc:Factsdefect3 a obo:BFO_0000019 .
+_:c76d41430585f6bb0ed3d961fa40c91c rdf:reifies <<( doc:Factsdefect3 rdf:type obo:BFO_0000019 )>> ;
+	prov:wasDerivedFrom doc:a41e28012ea4 .
+doc:Factsdefect2 rdfs:label "roller defect" .
+_:ee62f3a6ae2aae5c15a616f00034eceb rdf:reifies <<( doc:Factsdefect2 rdfs:label "roller defect" )>> ;
+	prov:wasDerivedFrom doc:a41e28012ea4 .
+doc:Factsmethod3_5 cco:is_about doc:Factssignal1 .
+_:f21ca3c852b7b954ebc7d14f7ea73c8b rdf:reifies <<( doc:Factsmethod3_5 cco:is_about doc:Factssignal1 )>> ;
+	prov:wasDerivedFrom doc:a41e28012ea4 .
+doc:Factsstate1 a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Health_assessment> .
+_:b0264fdc2fc6007e010090dd9d6683cb rdf:reifies <<( doc:Factsstate1 rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Health_assessment> )>> ;
+	prov:wasDerivedFrom doc:a41e28012ea4 .
+doc:Factsarticle1_32 <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#has_publication_year> doc:Factsyear2025_8 .
+_:d04d005d7a689547f380ad3c21f4405 rdf:reifies <<( doc:Factsarticle1_32 <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#has_publication_year> doc:Factsyear2025_8 )>> ;
+	prov:wasDerivedFrom doc:a41e28012ea4 .
+doc:Factsarticle1_32 <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#has_identifier> doc:Factsdoi1_13 .
+_:f0b61ffc41fe05bc34175f66ce6cda62 rdf:reifies <<( doc:Factsarticle1_32 <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#has_identifier> doc:Factsdoi1_13 )>> ;
+	prov:wasDerivedFrom doc:a41e28012ea4 .
+doc:Factsdefect3 rdfs:label "inner-race defect" .
+_:c2feb4caca78c3f719083f17bc50d7da rdf:reifies <<( doc:Factsdefect3 rdfs:label "inner-race defect" )>> ;
+	prov:wasDerivedFrom doc:a41e28012ea4 .
+doc:Factsfaults_1 rdfs:label "experimental bearing rig" .
+_:de29c531066aa41b7f597e1a902a3834 rdf:reifies <<( doc:Factsfaults_1 rdfs:label "experimental bearing rig" )>> ;
+	prov:wasDerivedFrom doc:a41e28012ea4 .
+doc:Factsauthor4_3 schema:name "Jyoti K. Sinha" .
+_:b2c3f81660d92dc0d67d516e16c74f40 rdf:reifies <<( doc:Factsauthor4_3 schema:name "Jyoti K. Sinha" )>> ;
+	prov:wasDerivedFrom doc:a41e28012ea4 .
+doc:Factsorganization2 schema:name "University of Hafr Al Batin" .
+_:d90c3f8e294ec47c985ac8066c253118 rdf:reifies <<( doc:Factsorganization2 schema:name "University of Hafr Al Batin" )>> ;
+	prov:wasDerivedFrom doc:a41e28012ea4 .
+doc:Factsmethod1_6 cco:is_about doc:Factssignal1 .
+_:f213ad967bb807f068b20a47ad9bd74f rdf:reifies <<( doc:Factsmethod1_6 cco:is_about doc:Factssignal1 )>> ;
+	prov:wasDerivedFrom doc:a41e28012ea4 .
+doc:Factsfaults_1 cco:is_about doc:Factsstate1 .
+_:d3e29cb4a3c591aad5064610c515bd5 rdf:reifies <<( doc:Factsfaults_1 cco:is_about doc:Factsstate1 )>> ;
+	prov:wasDerivedFrom doc:a41e28012ea4 .
+doc:Factsdefect1 obo:BFO_0000051 doc:Factscontact1 .
+_:e2191bfd7ebeb5bc3ebf716f46a3cd2 rdf:reifies <<( doc:Factsdefect1 obo:BFO_0000051 doc:Factscontact1 )>> ;
+	prov:wasDerivedFrom doc:a41e28012ea4 .
+doc:Factsauthor4_3 schema:affiliation doc:Factsorganization2 .
+_:c1d4a7323a2c366dcf1f36642e4994f2 rdf:reifies <<( doc:Factsauthor4_3 schema:affiliation doc:Factsorganization2 )>> ;
+	prov:wasDerivedFrom doc:a41e28012ea4 .
+doc:Factsfaults_1 rdfs:label "roller bearing" .
+_:e6f66773382edf423bcf3ec020793b97 rdf:reifies <<( doc:Factsfaults_1 rdfs:label "roller bearing" )>> ;
+	prov:wasDerivedFrom doc:a41e28012ea4 .
+doc:Factsresonance1 a obo:BFO_0000019 .
+_:f4692ddbf62d0ea3b1d082565c06c5da rdf:reifies <<( doc:Factsresonance1 rdf:type obo:BFO_0000019 )>> ;
+	prov:wasDerivedFrom doc:a41e28012ea4 .
+doc:Factsmethod3_5 a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Data_mining_technique_function> .
+_:baa2dceff0c823f74e3db7100e5939a1 rdf:reifies <<( doc:Factsmethod3_5 rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Data_mining_technique_function> )>> ;
+	prov:wasDerivedFrom doc:a41e28012ea4 .
+doc:Factsdefect1 a obo:BFO_0000019 .
+_:a8c621ab2e608f7fff548b4e42f9d559 rdf:reifies <<( doc:Factsdefect1 rdf:type obo:BFO_0000019 )>> ;
+	prov:wasDerivedFrom doc:a41e28012ea4 .
+doc:Factssignal1 a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Data_variable> .
+_:ece7582c5b5907cc84c9ac8986ef3e43 rdf:reifies <<( doc:Factssignal1 rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Data_variable> )>> ;
+	prov:wasDerivedFrom doc:a41e28012ea4 .
+doc:Factsdefect2 a obo:BFO_0000019 .
+_:ff19616e27bfc3a347caaf59423caa17 rdf:reifies <<( doc:Factsdefect2 rdf:type obo:BFO_0000019 )>> ;
+	prov:wasDerivedFrom doc:a41e28012ea4 .
+doc:Factsauthor4_3 schema:name "Haobin Wen" .
+_:d481c1dec600eeaec8bdfff2222f6283 rdf:reifies <<( doc:Factsauthor4_3 schema:name "Haobin Wen" )>> ;
+	prov:wasDerivedFrom doc:a41e28012ea4 .
+doc:Factsmethod1_6 a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Data_mining_technique_function> .
+_:cc936c565055e2b093c04e38b555d3be rdf:reifies <<( doc:Factsmethod1_6 rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Data_mining_technique_function> )>> ;
+	prov:wasDerivedFrom doc:a41e28012ea4 .
+doc:Factsstate1 rdfs:label "healthy" .
+_:dd493e3f4b4d579ac3b364af3c807a6e rdf:reifies <<( doc:Factsstate1 rdfs:label "healthy" )>> ;
+	prov:wasDerivedFrom doc:a41e28012ea4 .
+doc:Factsfaults_1 cco:is_about doc:Factsfreq1 .
+_:dd2bf5bdd572081f9e38d9d995ab0b08 rdf:reifies <<( doc:Factsfaults_1 cco:is_about doc:Factsfreq1 )>> ;
+	prov:wasDerivedFrom doc:a41e28012ea4 .
+doc:Factsfaults_1 obo:BFO_0000051 doc:Factsimpact1 .
+_:a0cd1a1f107067e9458eb281a0664de2 rdf:reifies <<( doc:Factsfaults_1 obo:BFO_0000051 doc:Factsimpact1 )>> ;
+	prov:wasDerivedFrom doc:a41e28012ea4 .
+doc:Factsimpact1 rdfs:label "impact load" .
+_:e6ee552fcb593ed9e013c061a0c6cc35 rdf:reifies <<( doc:Factsimpact1 rdfs:label "impact load" )>> ;
+	prov:wasDerivedFrom doc:a41e28012ea4 .
+doc:Factsfaults_1 a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Maintainable_item> .
+_:c4f46f92c996f2949f93427171424ba1 rdf:reifies <<( doc:Factsfaults_1 rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Maintainable_item> )>> ;
+	prov:wasDerivedFrom doc:a41e28012ea4 .
+doc:Factsyear2025_8 a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Publication_year> .
+_:a339836bc7dc7dc05c1efc526865edcf rdf:reifies <<( doc:Factsyear2025_8 rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Publication_year> )>> ;
+	prov:wasDerivedFrom doc:a41e28012ea4 .
+doc:Factsarticle1_32 <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#has_title> doc:Factsfaults_1 .
+_:fb7ebdb5fdb43a065c6a29a0b141f31 rdf:reifies <<( doc:Factsarticle1_32 <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#has_title> doc:Factsfaults_1 )>> ;
+	prov:wasDerivedFrom doc:a41e28012ea4 .
+doc:Predictive_maintenance_system_module a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Predictive_maintenance_system_module> .
+_:b417391e31f2f5b3c2fb8eca1bf6e4e9 rdf:reifies <<( doc:Predictive_maintenance_system_module rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Predictive_maintenance_system_module> )>> ;
+	prov:wasDerivedFrom doc:a41e28012ea4 .
+doc:Factsarticle1_32 dcterms:title "The Effect of Defect Size and Location in Roller Bearing Fault Detection: Experimental Insights for Vibration-Based Diagnosis" .
+_:d120acf4bcddd42245fbbfe4f2f911f1 rdf:reifies <<( doc:Factsarticle1_32 dcterms:title "The Effect of Defect Size and Location in Roller Bearing Fault Detection: Experimental Insights for Vibration-Based Diagnosis" )>> ;
+	prov:wasDerivedFrom doc:a41e28012ea4 .
+doc:Predictive_maintenance_system_module <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#has_predictive_maintenance_function> doc:Factsfaults_1 .
+_:feea42331f492868a3bd81e55bb5fb9a rdf:reifies <<( doc:Predictive_maintenance_system_module <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#has_predictive_maintenance_function> doc:Factsfaults_1 )>> ;
+	prov:wasDerivedFrom doc:a41e28012ea4 .
+doc:Factsfaults_1 obo:BFO_0000051 doc:Factsresonance1 .
+_:c9fd8a0de5c7da57fabf1472be552018 rdf:reifies <<( doc:Factsfaults_1 obo:BFO_0000051 doc:Factsresonance1 )>> ;
+	prov:wasDerivedFrom doc:a41e28012ea4 .
+doc:Factsdefect1 obo:BFO_0000051 doc:Factsimpact1 .
+_:f73a8021db5e00f4e4a59c51cd261d9f rdf:reifies <<( doc:Factsdefect1 obo:BFO_0000051 doc:Factsimpact1 )>> ;
+	prov:wasDerivedFrom doc:a41e28012ea4 .
+doc:Factsmethod4_3 cco:is_about doc:Factssignal1 .
+_:c919b2e5051d78b7b1af0e814636879d rdf:reifies <<( doc:Factsmethod4_3 cco:is_about doc:Factssignal1 )>> ;
+	prov:wasDerivedFrom doc:a41e28012ea4 .
+doc:Factsdoi1_13 rdfs:label "10.3390/s25164917" .
+_:c3910cda96afac51706bf73f3a10c373 rdf:reifies <<( doc:Factsdoi1_13 rdfs:label "10.3390/s25164917" )>> ;
+	prov:wasDerivedFrom doc:a41e28012ea4 .
+doc:Factsmethod3_5 rdfs:label "cyclic spectral coherence" .
+_:a78e9c90fbfef6eb04ae26bd96963412 rdf:reifies <<( doc:Factsmethod3_5 rdfs:label "cyclic spectral coherence" )>> ;
+	prov:wasDerivedFrom doc:a41e28012ea4 .
+doc:Factsfaults_1 cco:is_about doc:Factsdefect3 .
+_:b3021300954eca20959e7869f82a3817 rdf:reifies <<( doc:Factsfaults_1 cco:is_about doc:Factsdefect3 )>> ;
+	prov:wasDerivedFrom doc:a41e28012ea4 .
+doc:Factsresonance1 rdfs:label "high-frequency resonance response" .
+_:a20986078f532cf82cfabfe3e14ec426 rdf:reifies <<( doc:Factsresonance1 rdfs:label "high-frequency resonance response" )>> ;
+	prov:wasDerivedFrom doc:a41e28012ea4 .
+doc:Factsauthor4_3 schema:name "Long Zhang" .
+_:cfc2562d94925be4ccfcb95a93f0a49b rdf:reifies <<( doc:Factsauthor4_3 schema:name "Long Zhang" )>> ;
+	prov:wasDerivedFrom doc:a41e28012ea4 .
+doc:Factscontact1 cco:is_about doc:Factsfaults_1 .
+_:ed89d25d10469e2eaad81675d9927827 rdf:reifies <<( doc:Factscontact1 cco:is_about doc:Factsfaults_1 )>> ;
+	prov:wasDerivedFrom doc:a41e28012ea4 .
+doc:Factsauthor4_3 schema:name "Khalid Almutairi" .
+_:d4e90f60a9b64ec2a2c3f293ab826a96 rdf:reifies <<( doc:Factsauthor4_3 schema:name "Khalid Almutairi" )>> ;
+	prov:wasDerivedFrom doc:a41e28012ea4 .
+doc:Factssignal1 rdfs:label "vibration signal" .
+_:c0f1d921bb47e48ceeac5d4eea95a78f rdf:reifies <<( doc:Factssignal1 rdfs:label "vibration signal" )>> ;
+	prov:wasDerivedFrom doc:a41e28012ea4 .
+doc:Factscontact1 rdfs:label "persistent contact" .
+_:e33bd9f1f133be0622e8ddcd0c877482 rdf:reifies <<( doc:Factscontact1 rdfs:label "persistent contact" )>> ;
+	prov:wasDerivedFrom doc:a41e28012ea4 .
+doc:Factsfaults_1 cco:is_about doc:Factsdefect2 .
+_:d8727c10199d7135ca4fc8e533fc8093 rdf:reifies <<( doc:Factsfaults_1 cco:is_about doc:Factsdefect2 )>> ;
+	prov:wasDerivedFrom doc:a41e28012ea4 .
+doc:Factscontact1 a obo:BFO_0000019 .
+_:c7a2ffb4955dd904495a8355a43435e3 rdf:reifies <<( doc:Factscontact1 rdf:type obo:BFO_0000019 )>> ;
+	prov:wasDerivedFrom doc:a41e28012ea4 .
+doc:Factsfreq1 a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Performance_indicator> .
+_:b31ebed94a2ee0ca7713418d473fcd6d rdf:reifies <<( doc:Factsfreq1 rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Performance_indicator> )>> ;
+	prov:wasDerivedFrom doc:a41e28012ea4 .
+doc:Factsresonance1 cco:is_about doc:Factsfaults_1 .
+_:aacfd5b7c81185c852dd37a4c7af1a46 rdf:reifies <<( doc:Factsresonance1 cco:is_about doc:Factsfaults_1 )>> ;
+	prov:wasDerivedFrom doc:a41e28012ea4 .
+doc:Factsmethod4_3 a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Data_mining_technique_function> .
+_:df40c203c7b5b2a74caa86bb450ddd23 rdf:reifies <<( doc:Factsmethod4_3 rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Data_mining_technique_function> )>> ;
+	prov:wasDerivedFrom doc:a41e28012ea4 .
+doc:Factsfaults_1 obo:BFO_0000051 doc:Factsdefect3 .
+_:e23549156c1cc83e0ea1db02a886c981 rdf:reifies <<( doc:Factsfaults_1 obo:BFO_0000051 doc:Factsdefect3 )>> ;
+	prov:wasDerivedFrom doc:a41e28012ea4 .
+doc:Factsorganization2 schema:name "Dynamics Laboratory" .
+_:dba515a42902fec1b1f547c6250f5352 rdf:reifies <<( doc:Factsorganization2 schema:name "Dynamics Laboratory" )>> ;
+	prov:wasDerivedFrom doc:a41e28012ea4 .
+doc:Factsfaults_1 a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Article_title> .
+_:bdbf1353b75b3b2fbddd84e6c7178abf rdf:reifies <<( doc:Factsfaults_1 rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Article_title> )>> ;
+	prov:wasDerivedFrom doc:a41e28012ea4 .
+doc:Factsarticle1_32 a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Predictive_Maintenance_Article> .
+_:fa37cde87c0b6e7e79956d49fdb604f1 rdf:reifies <<( doc:Factsarticle1_32 rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Predictive_Maintenance_Article> )>> ;
+	prov:wasDerivedFrom doc:a41e28012ea4 .
+doc:Factsdoi1_13 a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Article_identifier> .
+_:cebac571f372926c31d88f03dce40272 rdf:reifies <<( doc:Factsdoi1_13 rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Article_identifier> )>> ;
+	prov:wasDerivedFrom doc:a41e28012ea4 .
+doc:Factsfaults_1 cco:designates doc:Factsarticle1_32 .
+_:b8e0fadc44448b7faa5824e592884be5 rdf:reifies <<( doc:Factsfaults_1 cco:designates doc:Factsarticle1_32 )>> ;
+	prov:wasDerivedFrom doc:a41e28012ea4 .
+doc:Factsorganization2 schema:name "The University of Manchester" .
+_:e2ef01838fb00b5d6f2e4aa375007ea1 rdf:reifies <<( doc:Factsorganization2 schema:name "The University of Manchester" )>> ;
+	prov:wasDerivedFrom doc:a41e28012ea4 .
+doc:Factsyear2025_8 <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#has_interger_value> 2025 .
+_:f03963df9c8ca0aa138e095daea2fb6e rdf:reifies <<( doc:Factsyear2025_8 <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#has_interger_value> 2025 )>> ;
+	prov:wasDerivedFrom doc:a41e28012ea4 .
+doc:Factsdoi1_13 cco:designates doc:Factsarticle1_32 .
+_:d15b845f6721d45057ddc29652bd79e7 rdf:reifies <<( doc:Factsdoi1_13 cco:designates doc:Factsarticle1_32 )>> ;
+	prov:wasDerivedFrom doc:a41e28012ea4 .
+doc:Factsdefect1 rdfs:label "localised defect" .
+_:fd798701501daf902a7c9336a8fb2bec rdf:reifies <<( doc:Factsdefect1 rdfs:label "localised defect" )>> ;
+	prov:wasDerivedFrom doc:a41e28012ea4 .
+doc:a9a0096b4d27 a prov:Entity , schema:text ;
+	prov:generatedAtTime "2026-07-22T18:06:57.545899Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+	schema:position 1 ;
+	schema:identifier "a9a0096b4d27" .
+doc:Factsdoc1_8 schema1:about doc:FactsrollerBearings .
+_:e9ce8afeefd2f7efb37b3de2c693f9fb rdf:reifies <<( doc:Factsdoc1_8 schema1:about doc:FactsrollerBearings )>> ;
+	prov:wasDerivedFrom doc:a9a0096b4d27 .
+doc:FactssignalDemodulation schema1:description "Signal demodulation in the frequency band of the bearing resonance is used for bearing fault detection by extracting low-energy modulated components and removing carrier frequencies."@en .
+_:c1a12df6e0bf508061434ff61de1205d rdf:reifies <<( doc:FactssignalDemodulation schema1:description "Signal demodulation in the frequency band of the bearing resonance is used for bearing fault detection by extracting low-energy modulated components and removing carrier frequencies."@en )>> ;
+	prov:wasDerivedFrom doc:a9a0096b4d27 .
+doc:Factsfaults_1 a schema1:Thing .
+_:ca586eaefbcbe728e79d8a3488ca6033 rdf:reifies <<( doc:Factsfaults_1 rdf:type schema1:Thing )>> ;
+	prov:wasDerivedFrom doc:a9a0096b4d27 .
+doc:Factsfaults_1 cd:challenged_by doc:FactsweakSignatures .
+_:c058814a2e403920f5ef7878bf1c0d5b rdf:reifies <<( doc:Factsfaults_1 cd:challenged_by doc:FactsweakSignatures )>> ;
+	prov:wasDerivedFrom doc:a9a0096b4d27 .
+doc:Factsdoc1_8 schema1:about doc:Factsfaults_1 .
+_:f86abea11de19b973173c19ba1408455 rdf:reifies <<( doc:Factsdoc1_8 schema1:about doc:Factsfaults_1 )>> ;
+	prov:wasDerivedFrom doc:a9a0096b4d27 .
+doc:FactssignalDemodulation a schema1:Thing .
+_:ced256743fc4053f4edbf18be09ec073 rdf:reifies <<( doc:FactssignalDemodulation rdf:type schema1:Thing )>> ;
+	prov:wasDerivedFrom doc:a9a0096b4d27 .
+doc:Factsdoc1_8 schema1:about doc:Factsrotordynamics .
+_:c5ff6c2fb2ca032638da8569b8db212b rdf:reifies <<( doc:Factsdoc1_8 schema1:about doc:Factsrotordynamics )>> ;
+	prov:wasDerivedFrom doc:a9a0096b4d27 .
+doc:Factsrotordynamics a schema1:Thing .
+_:afaf5cd32a654d49c10ab0d718df1151 rdf:reifies <<( doc:Factsrotordynamics rdf:type schema1:Thing )>> ;
+	prov:wasDerivedFrom doc:a9a0096b4d27 .
+doc:FactsoperationalNoises a schema1:Thing .
+_:c8b037257c1cb5df7c895c51840e804b rdf:reifies <<( doc:FactsoperationalNoises rdf:type schema1:Thing )>> ;
+	prov:wasDerivedFrom doc:a9a0096b4d27 .
+doc:FactsbearingsDefectsRelation a rdf:Statement .
+_:a3aeb0429ac7a30681a3caa6fb9ee6c4 rdf:reifies <<( doc:FactsbearingsDefectsRelation rdf:type rdf:Statement )>> ;
+	prov:wasDerivedFrom doc:a9a0096b4d27 .
+doc:Factsdetectability a schema1:Thing .
+_:dd24d9e0f8cacb7d71630a82d743b6a6 rdf:reifies <<( doc:Factsdetectability rdf:type schema1:Thing )>> ;
+	prov:wasDerivedFrom doc:a9a0096b4d27 .
+doc:FactsbearingsDefectsRelation rdf:subject doc:FactsbearingsDefectsRelation .
+_:b5c1bae131532da0dd888766e12e5784 rdf:reifies <<( doc:FactsbearingsDefectsRelation rdf:subject doc:FactsbearingsDefectsRelation )>> ;
+	prov:wasDerivedFrom doc:a9a0096b4d27 .
+doc:Factsdoc1_8 schema1:keywords "vibration-based condition monitoring" .
+_:b0efc979b69187e7d0a7cea0ce4154ef rdf:reifies <<( doc:Factsdoc1_8 schema1:keywords "vibration-based condition monitoring" )>> ;
+	prov:wasDerivedFrom doc:a9a0096b4d27 .
+_:d79826784c5f26a2a6b0143e6ed294d4 prov:wasDerivedFrom doc:a9a0096b4d27 .
+doc:FactsrollerbeamExperiments a schema1:Thing .
+_:bd1bc93c66f606ca13a29b60db367da rdf:reifies <<( doc:FactsrollerbeamExperiments rdf:type schema1:Thing )>> ;
+	prov:wasDerivedFrom doc:a9a0096b4d27 .
+doc:Factsdoc1_8 a schema1:ScholarlyArticle .
+_:e439ccf6f43cc6e14abe7c2b20a9a6e0 rdf:reifies <<( doc:Factsdoc1_8 rdf:type schema1:ScholarlyArticle )>> ;
+	prov:wasDerivedFrom doc:a9a0096b4d27 .
+doc:Factsdoc1_8 a schema1:ResearchStudy .
+_:ef5e6615b790e2caeea0289c21b6fa0b rdf:reifies <<( doc:Factsdoc1_8 rdf:type schema1:ResearchStudy )>> ;
+	prov:wasDerivedFrom doc:a9a0096b4d27 .
+doc:FactsbearingsDefectsRelation rdf:predicate schema1:about .
+_:be4e294684d132fb1930b98b0f657a9d rdf:reifies <<( doc:FactsbearingsDefectsRelation rdf:predicate schema1:about )>> ;
+	prov:wasDerivedFrom doc:a9a0096b4d27 .
+doc:FactsdefectSize a schema1:Thing .
+_:dac4714b34dfe26267d1b0cdddf2bae1 rdf:reifies <<( doc:FactsdefectSize rdf:type schema1:Thing )>> ;
+	prov:wasDerivedFrom doc:a9a0096b4d27 .
+doc:Factsdoc1_8 schema1:keywords "roller bearings" .
+_:ed0b2d11f49ee8776ac443dbdbe8f079 rdf:reifies <<( doc:Factsdoc1_8 schema1:keywords "roller bearings" )>> ;
+	prov:wasDerivedFrom doc:a9a0096b4d27 .
+doc:Factsdoc1_8 schema1:keywords "fault detection" .
+_:adf9c69c8e29a356c5550989b5f4d9e6 rdf:reifies <<( doc:Factsdoc1_8 schema1:keywords "fault detection" )>> ;
+	prov:wasDerivedFrom doc:a9a0096b4d27 .
+doc:Factsfaults_1 cd:is_foundation_of doc:Factsfaults_1 .
+_:aa8f9e4bfe3352b5545b1e98d623e60a rdf:reifies <<( doc:Factsfaults_1 cd:is_foundation_of doc:Factsfaults_1 )>> ;
+	prov:wasDerivedFrom doc:a9a0096b4d27 .
+doc:FactsrollerBearings a schema1:Thing .
+_:d80bd986d104afea0db2df99a0d1a228 rdf:reifies <<( doc:FactsrollerBearings rdf:type schema1:Thing )>> ;
+	prov:wasDerivedFrom doc:a9a0096b4d27 .
+doc:Factsdoc1_8 schema1:about doc:FactsrollerbeamExperiments .
+_:c555420fee6380f51b70ab047df20ef rdf:reifies <<( doc:Factsdoc1_8 schema1:about doc:FactsrollerbeamExperiments )>> ;
+	prov:wasDerivedFrom doc:a9a0096b4d27 .
+doc:FactsweakSignatures cd:submerged_by doc:FactsoperationalNoises .
+_:c60d8d54f9b24a647a9b423e821a6825 rdf:reifies <<( doc:FactsweakSignatures cd:submerged_by doc:FactsoperationalNoises )>> ;
+	prov:wasDerivedFrom doc:a9a0096b4d27 .
+doc:Factsdoc1_8 schema1:keywords "rotordynamics" .
+_:f949fd3825c51c00794c9c6c24fece42 rdf:reifies <<( doc:Factsdoc1_8 schema1:keywords "rotordynamics" )>> ;
+	prov:wasDerivedFrom doc:a9a0096b4d27 .
+doc:Factsdoc1_8 schema1:description "The study highlights the significance of the dimension and location of defects within bearings on their detectability based on rotordynamics. Simple rollerbeam experiments validate observations on roller bearing dynamics."@en .
+_:ac2af77b7accf0b9de8352c8e99906f3 rdf:reifies <<( doc:Factsdoc1_8 schema1:description "The study highlights the significance of the dimension and location of defects within bearings on their detectability based on rotordynamics. Simple rollerbeam experiments validate observations on roller bearing dynamics."@en )>> ;
+	prov:wasDerivedFrom doc:a9a0096b4d27 .
+doc:FactsbearingsDefectsRelation rdf:object doc:Factsdetectability .
+_:fd6f10a8c2662e88c2325d06fba288d8 rdf:reifies <<( doc:FactsbearingsDefectsRelation rdf:object doc:Factsdetectability )>> ;
+	prov:wasDerivedFrom doc:a9a0096b4d27 .
+doc:Factsdoc1_8 schema1:keywords "defect size" .
+_:b07b599cf275dbee19ca411bc38d79ab rdf:reifies <<( doc:Factsdoc1_8 schema1:keywords "defect size" )>> ;
+	prov:wasDerivedFrom doc:a9a0096b4d27 .
+doc:Factsfaults_1 cd:helps_locate doc:Factsfaults_1 .
+_:da222104663c82d9d0c56b80427ac025 rdf:reifies <<( doc:Factsfaults_1 cd:helps_locate doc:Factsfaults_1 )>> ;
+	prov:wasDerivedFrom doc:a9a0096b4d27 .
+doc:FactsweakSignatures a schema1:Thing .
+_:d686b16b3d48223bd24931c76b7f0998 rdf:reifies <<( doc:FactsweakSignatures rdf:type schema1:Thing )>> ;
+	prov:wasDerivedFrom doc:a9a0096b4d27 .
+doc:Factsdoc1_8 schema1:about doc:FactsdefectSize .
+_:b77c7a11aa1d25aac045a8751df7e1ec rdf:reifies <<( doc:Factsdoc1_8 schema1:about doc:FactsdefectSize )>> ;
+	prov:wasDerivedFrom doc:a9a0096b4d27 .
+doc:Factsfaults_1 cd:mentions doc:Factsfaults_1 .
+_:cdafc5623fb65e2de98fa904da7a6ae4 rdf:reifies <<( doc:Factsfaults_1 cd:mentions doc:Factsfaults_1 )>> ;
+	prov:wasDerivedFrom doc:a9a0096b4d27 .
+doc:7327a0c8c14a a prov:Entity , schema:text ;
+	prov:generatedAtTime "2026-07-22T18:06:57.548899Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+	schema:position 2 ;
+	schema:identifier "7327a0c8c14a" .
+doc:Factsfact12_5 rdfs:label "frequency-frequency representations from correlation between frequency components"@en .
+_:e9d06d22e3c71141a3d3a217af5c3411 rdf:reifies <<( doc:Factsfact12_5 rdfs:label "frequency-frequency representations from correlation between frequency components"@en )>> ;
+	prov:wasDerivedFrom doc:7327a0c8c14a .
+doc:Factsfact52 a None:Design_detail .
+_:ac4f9f9daa73d4a9434d1d95ecc124ce rdf:reifies <<( doc:Factsfact52 rdf:type None:Design_detail )>> ;
+	prov:wasDerivedFrom doc:7327a0c8c14a .
+doc:Factsfaults_1 rdfs:label "bearing defect sizes and locations"@en .
+_:aee51087d7254f2a6afb92e8d25a783c rdf:reifies <<( doc:Factsfaults_1 rdfs:label "bearing defect sizes and locations"@en )>> ;
+	prov:wasDerivedFrom doc:7327a0c8c14a .
+doc:Factsfact10_6 a None:Design_detail .
+_:df390ce2717a4caa0807946228ac2d30 rdf:reifies <<( doc:Factsfact10_6 rdf:type None:Design_detail )>> ;
+	prov:wasDerivedFrom doc:7327a0c8c14a .
+doc:Factsfaults_1 a None:Design_detail .
+_:aa2807e071e64a095b8ea2a7810b6e05 rdf:reifies <<( doc:Factsfaults_1 rdf:type None:Design_detail )>> ;
+	prov:wasDerivedFrom doc:7327a0c8c14a .
+doc:Factsfact41_1 a schema1:Dataset .
+_:a1715eeeb9caa0963e0937d553648ace rdf:reifies <<( doc:Factsfact41_1 rdf:type schema1:Dataset )>> ;
+	prov:wasDerivedFrom doc:7327a0c8c14a .
+doc:Factsfaults_1 cd:has_design_detail doc:Factsfact58_1 .
+_:a77ffe6ed98ecff9106ba2c96289d841 rdf:reifies <<( doc:Factsfaults_1 cd:has_design_detail doc:Factsfact58_1 )>> ;
+	prov:wasDerivedFrom doc:7327a0c8c14a .
+_:c4f46f92c996f2949f93427171424ba1 prov:wasDerivedFrom doc:7327a0c8c14a .
+_:d79826784c5f26a2a6b0143e6ed294d4 prov:wasDerivedFrom doc:7327a0c8c14a .
+doc:Factsfaults_1 rdfs:label "roller bearing"@en .
+_:e7496b2e02b16574690473d16cbec7b0 rdf:reifies <<( doc:Factsfaults_1 rdfs:label "roller bearing"@en )>> ;
+	prov:wasDerivedFrom doc:7327a0c8c14a .
+doc:Factsfaults_1 rdfs:label "CWRU"@en .
+_:df37fe2f093531d649219a01ac8b9542 rdf:reifies <<( doc:Factsfaults_1 rdfs:label "CWRU"@en )>> ;
+	prov:wasDerivedFrom doc:7327a0c8c14a .
+doc:Factsfaults_1 rdfs:label "paper investigates typical roller bearing defects"@en .
+_:fcc18dff28cc28c6e6a86b362fce504d rdf:reifies <<( doc:Factsfaults_1 rdfs:label "paper investigates typical roller bearing defects"@en )>> ;
+	prov:wasDerivedFrom doc:7327a0c8c14a .
+doc:Factsfact11_5 rdfs:label "two-dimensional representation for weak signature enhancement"@en .
+_:bf7cd31035c83d987fdfc3f39e525e15 rdf:reifies <<( doc:Factsfact11_5 rdfs:label "two-dimensional representation for weak signature enhancement"@en )>> ;
+	prov:wasDerivedFrom doc:7327a0c8c14a .
+doc:Factsfaults_1 rdfs:label "modulating vibration responses"@en .
+_:f347b6d9435c2e73e3502900f78af1c4 rdf:reifies <<( doc:Factsfaults_1 rdfs:label "modulating vibration responses"@en )>> ;
+	prov:wasDerivedFrom doc:7327a0c8c14a .
+doc:Factsfact41_1 a None:Design_detail .
+_:cdb5227927691f680bbe4ae07144c6de rdf:reifies <<( doc:Factsfact41_1 rdf:type None:Design_detail )>> ;
+	prov:wasDerivedFrom doc:7327a0c8c14a .
+doc:Factsfaults_1 cd:has_design_detail doc:Factsfaults_1 .
+_:f7e3ce05c07724fcd46b00cd3e3e9bcb rdf:reifies <<( doc:Factsfaults_1 cd:has_design_detail doc:Factsfaults_1 )>> ;
+	prov:wasDerivedFrom doc:7327a0c8c14a .
+doc:Factsfaults_1 rdfs:label "localised defect"@en .
+_:f275ada00f9268008020e9081cc8cadf rdf:reifies <<( doc:Factsfaults_1 rdfs:label "localised defect"@en )>> ;
+	prov:wasDerivedFrom doc:7327a0c8c14a .
+doc:Factsfact49_1 a None:Design_detail .
+_:b73b34d82862a6cd1ef922c2e8abb14b rdf:reifies <<( doc:Factsfact49_1 rdf:type None:Design_detail )>> ;
+	prov:wasDerivedFrom doc:7327a0c8c14a .
+doc:Factsfaults_1 rdfs:label "tensor decomposition"@en .
+_:d54b25215efc64d56d6ba914d13e3216 rdf:reifies <<( doc:Factsfaults_1 rdfs:label "tensor decomposition"@en )>> ;
+	prov:wasDerivedFrom doc:7327a0c8c14a .
+doc:Factsfaults_1 rdfs:label "detectability through envelope analysis and other advanced VBMs"@en .
+_:a0525afb3634698aaecfbdbd8e2833da rdf:reifies <<( doc:Factsfaults_1 rdfs:label "detectability through envelope analysis and other advanced VBMs"@en )>> ;
+	prov:wasDerivedFrom doc:7327a0c8c14a .
+doc:Factsfaults_1 rdfs:label "relationship between defect characteristics and impact loadings during operation"@en .
+_:adef6b93e4465af7122b80cfbda33ea3 rdf:reifies <<( doc:Factsfaults_1 rdfs:label "relationship between defect characteristics and impact loadings during operation"@en )>> ;
+	prov:wasDerivedFrom doc:7327a0c8c14a .
+doc:Factsfaults_1 rdfs:label "VBMs"@en .
+_:cbc576a15c950477295f049d63c4b051 rdf:reifies <<( doc:Factsfaults_1 rdfs:label "VBMs"@en )>> ;
+	prov:wasDerivedFrom doc:7327a0c8c14a .
+doc:Factsfaults_1 rdfs:label "ball bearing"@en .
+_:dce271514959f2fbcba64b06d96c655a rdf:reifies <<( doc:Factsfaults_1 rdfs:label "ball bearing"@en )>> ;
+	prov:wasDerivedFrom doc:7327a0c8c14a .
+doc:Factsfaults_1 rdfs:label "adaptive band decomposition"@en .
+_:efc1668700af0438719014f3fcfdb823 rdf:reifies <<( doc:Factsfaults_1 rdfs:label "adaptive band decomposition"@en )>> ;
+	prov:wasDerivedFrom doc:7327a0c8c14a .
+doc:Factsfact41_1 rdfs:label "Prognostia dataset"@en .
+_:c4863f6ffa515b5a88076699f07fb0ef rdf:reifies <<( doc:Factsfact41_1 rdfs:label "Prognostia dataset"@en )>> ;
+	prov:wasDerivedFrom doc:7327a0c8c14a .
+doc:Factsfaults_1 rdfs:label "vibration-based fault detection methods"@en .
+_:e9bb53c7db2a2a300c7d426cf7971c8e rdf:reifies <<( doc:Factsfaults_1 rdfs:label "vibration-based fault detection methods"@en )>> ;
+	prov:wasDerivedFrom doc:7327a0c8c14a .
+doc:Factsfaults_1 rdfs:label "fault detection by nonnegative matrix factorisation"@en .
+_:ba39774fb454e9ca01bdbcf5482676fc rdf:reifies <<( doc:Factsfaults_1 rdfs:label "fault detection by nonnegative matrix factorisation"@en )>> ;
+	prov:wasDerivedFrom doc:7327a0c8c14a .
+doc:Factsfaults_1 rdfs:label "ball"@en .
+_:a3170b8cb2254b9757fe1e7d48f53f54 rdf:reifies <<( doc:Factsfaults_1 rdfs:label "ball"@en )>> ;
+	prov:wasDerivedFrom doc:7327a0c8c14a .
+doc:Factsfaults_1 rdfs:label "varying dimensions of defects"@en .
+_:b0e3d6cb2ca5423c592ca47eb6577385 rdf:reifies <<( doc:Factsfaults_1 rdfs:label "varying dimensions of defects"@en )>> ;
+	prov:wasDerivedFrom doc:7327a0c8c14a .
+doc:Factsfaults_1 rdfs:label "no machine malfunctions"@en .
+_:e24aebc5bbfa7494dcbf8d6b3304a312 rdf:reifies <<( doc:Factsfaults_1 rdfs:label "no machine malfunctions"@en )>> ;
+	prov:wasDerivedFrom doc:7327a0c8c14a .
+doc:Factsfact41_1 rdfs:label "Prognostia"@en .
+_:c6c6dc61dd1cfcad9e6240bf6f9fd2b6 rdf:reifies <<( doc:Factsfact41_1 rdfs:label "Prognostia"@en )>> ;
+	prov:wasDerivedFrom doc:7327a0c8c14a .
+doc:Factsfact58_1 rdfs:label "contact geometry between roller and raceway"@en .
+_:e872f0768c3fa39ac08a059f3c94b1e5 rdf:reifies <<( doc:Factsfact58_1 rdfs:label "contact geometry between roller and raceway"@en )>> ;
+	prov:wasDerivedFrom doc:7327a0c8c14a .
+doc:Factsfaults_1 cd:has_design_detail doc:Factsfact12_5 .
+_:ce607024a0559b751e2b738d8467b73c rdf:reifies <<( doc:Factsfaults_1 cd:has_design_detail doc:Factsfact12_5 )>> ;
+	prov:wasDerivedFrom doc:7327a0c8c14a .
+doc:Factsfaults_1 rdfs:label "independent component analysis"@en .
+_:f0c0ce96654bc4856574961d9c28f689 rdf:reifies <<( doc:Factsfaults_1 rdfs:label "independent component analysis"@en )>> ;
+	prov:wasDerivedFrom doc:7327a0c8c14a .
+doc:Factsfaults_1 rdfs:label "MtM impacts"@en .
+_:fc81d141fbebbb7282651a7417106862 rdf:reifies <<( doc:Factsfaults_1 rdfs:label "MtM impacts"@en )>> ;
+	prov:wasDerivedFrom doc:7327a0c8c14a .
+doc:Factsfact49_1 rdfs:label "lower contact stresses"@en .
+_:d7959943134e8dcbb45f88a956d65ef0 rdf:reifies <<( doc:Factsfact49_1 rdfs:label "lower contact stresses"@en )>> ;
+	prov:wasDerivedFrom doc:7327a0c8c14a .
+doc:Factsfaults_1 rdfs:label "FCF peaks identification"@en .
+_:f7e0dc5726b4cb242a2a2d5c964b7435 rdf:reifies <<( doc:Factsfaults_1 rdfs:label "FCF peaks identification"@en )>> ;
+	prov:wasDerivedFrom doc:7327a0c8c14a .
+doc:Factsfact11_5 a None:Design_detail .
+_:e1afbde716776512f120136ec57fc43d rdf:reifies <<( doc:Factsfact11_5 rdf:type None:Design_detail )>> ;
+	prov:wasDerivedFrom doc:7327a0c8c14a .
+doc:Factsfaults_1 rdfs:label "fault detection using time-frequency analysis"@en .
+_:cea8c3192d9448dd95bc8eb78ce043e1 rdf:reifies <<( doc:Factsfaults_1 rdfs:label "fault detection using time-frequency analysis"@en )>> ;
+	prov:wasDerivedFrom doc:7327a0c8c14a .
+doc:Factsfaults_1 rdfs:label "roller bearing rig developed for experiments"@en .
+_:af7ebdc9566256d22ec2f9851a6239da rdf:reifies <<( doc:Factsfaults_1 rdfs:label "roller bearing rig developed for experiments"@en )>> ;
+	prov:wasDerivedFrom doc:7327a0c8c14a .
+doc:Factsfaults_1 rdfs:label "impact loads during rotation"@en .
+_:c3654f65c1ac51a80a944575e951ffae rdf:reifies <<( doc:Factsfaults_1 rdfs:label "impact loads during rotation"@en )>> ;
+	prov:wasDerivedFrom doc:7327a0c8c14a .
+doc:Factsfaults_1 cd:has_design_detail doc:Factsfact49_1 .
+_:a886953c749d353a0e8b248921aceb82 rdf:reifies <<( doc:Factsfaults_1 cd:has_design_detail doc:Factsfact49_1 )>> ;
+	prov:wasDerivedFrom doc:7327a0c8c14a .
+doc:Factsfaults_1 rdfs:label "bearing"@en .
+_:be3560b705297fe28ffd3de7bc1c7bc6 rdf:reifies <<( doc:Factsfaults_1 rdfs:label "bearing"@en )>> ;
+	prov:wasDerivedFrom doc:7327a0c8c14a .
+doc:Factsfaults_1 rdfs:label "raceway"@en .
+_:a5f80c2e3d9f14d9fd18872d9b1aaf63 rdf:reifies <<( doc:Factsfaults_1 rdfs:label "raceway"@en )>> ;
+	prov:wasDerivedFrom doc:7327a0c8c14a .
+doc:Factsfact10_6 rdfs:label "sparsity regularisation and dictionary learning"@en .
+_:a253c2572da702e69cca450c94a1f290 rdf:reifies <<( doc:Factsfact10_6 rdfs:label "sparsity regularisation and dictionary learning"@en )>> ;
+	prov:wasDerivedFrom doc:7327a0c8c14a .
+doc:Factsfaults_1 rdfs:label "roller bearing rig"@en .
+_:e93086a4e71e4464f097c161967a23d7 rdf:reifies <<( doc:Factsfaults_1 rdfs:label "roller bearing rig"@en )>> ;
+	prov:wasDerivedFrom doc:7327a0c8c14a .
+doc:Factsfaults_1 rdfs:label "fault detection by tensor decomposition"@en .
+_:b1bc1bdceb65be0c31cc24fd022d9466 rdf:reifies <<( doc:Factsfaults_1 rdfs:label "fault detection by tensor decomposition"@en )>> ;
+	prov:wasDerivedFrom doc:7327a0c8c14a .
+doc:Factsfaults_1 rdfs:label "sensitivity influenced by defect severity, damage mode, and bearing type"@en .
+_:bdedf85f1a7e33a7c8579054bf73a49d rdf:reifies <<( doc:Factsfaults_1 rdfs:label "sensitivity influenced by defect severity, damage mode, and bearing type"@en )>> ;
+	prov:wasDerivedFrom doc:7327a0c8c14a .
+doc:Factsfaults_1 rdfs:label "CWRU dataset"@en .
+_:a9c2b3add1f4b4969204edaedf6d1413 rdf:reifies <<( doc:Factsfaults_1 rdfs:label "CWRU dataset"@en )>> ;
+	prov:wasDerivedFrom doc:7327a0c8c14a .
+doc:Factsfact58_1 rdfs:label "bearing ball and raceway point contact causing localized defect impact loads"@en .
+_:cc1935e6d3b7293cb958721bba98acf1 rdf:reifies <<( doc:Factsfact58_1 rdfs:label "bearing ball and raceway point contact causing localized defect impact loads"@en )>> ;
+	prov:wasDerivedFrom doc:7327a0c8c14a .
+doc:Factsfaults_1 rdfs:label "healthy bearing"@en .
+_:f84a2154ec2ddb550d2a3f9e41b99930 rdf:reifies <<( doc:Factsfaults_1 rdfs:label "healthy bearing"@en )>> ;
+	prov:wasDerivedFrom doc:7327a0c8c14a .
+doc:Factsfaults_1 rdfs:label "fault detection in faulty bearings"@en .
+_:a8c0873cddec4d8c9f9b656c00172d01 rdf:reifies <<( doc:Factsfaults_1 rdfs:label "fault detection in faulty bearings"@en )>> ;
+	prov:wasDerivedFrom doc:7327a0c8c14a .
+doc:Factsfact49_1 rdfs:label "rectangular area contact"@en .
+_:e85f51ce547e85d867ce3933d93a3ce2 rdf:reifies <<( doc:Factsfact49_1 rdfs:label "rectangular area contact"@en )>> ;
+	prov:wasDerivedFrom doc:7327a0c8c14a .
+doc:Factsfact52 rdfs:label "higher load capacity"@en .
+_:a53a3b072249f2ee4bba8516d077d9ef rdf:reifies <<( doc:Factsfact52 rdfs:label "higher load capacity"@en )>> ;
+	prov:wasDerivedFrom doc:7327a0c8c14a .
+doc:Factsfaults_1 rdfs:label "cylindrical roller bearing"@en .
+_:fafe3f678512a6066d2838d67bf672ab rdf:reifies <<( doc:Factsfaults_1 rdfs:label "cylindrical roller bearing"@en )>> ;
+	prov:wasDerivedFrom doc:7327a0c8c14a .
+doc:Factsfaults_1 rdfs:label "fault"@en .
+_:b26ca50973af817f0cd56d5fc7f1c362 rdf:reifies <<( doc:Factsfaults_1 rdfs:label "fault"@en )>> ;
+	prov:wasDerivedFrom doc:7327a0c8c14a .
+doc:Factsfaults_1 rdfs:label "vibration-based fault detection experiments"@en .
+_:c0da9bda7b84ef3f3bbdc20cb2fa5102 rdf:reifies <<( doc:Factsfaults_1 rdfs:label "vibration-based fault detection experiments"@en )>> ;
+	prov:wasDerivedFrom doc:7327a0c8c14a .
+doc:Factsfaults_1 rdfs:label "nonnegative matrix factorisation"@en .
+_:b8e7b6a817be569dd7ebba854f176e7b rdf:reifies <<( doc:Factsfaults_1 rdfs:label "nonnegative matrix factorisation"@en )>> ;
+	prov:wasDerivedFrom doc:7327a0c8c14a .
+doc:Factsfaults_1 rdfs:label "fault detection through sparse representation and compressive sensing"@en .
+_:d022f3dd72513f94c2d15a66eb199989 rdf:reifies <<( doc:Factsfaults_1 rdfs:label "fault detection through sparse representation and compressive sensing"@en )>> ;
+	prov:wasDerivedFrom doc:7327a0c8c14a .
+doc:Factsfact58_1 a None:Design_detail .
+_:cde69bf459f8b9384ff0b843f6ea6b10 rdf:reifies <<( doc:Factsfact58_1 rdf:type None:Design_detail )>> ;
+	prov:wasDerivedFrom doc:7327a0c8c14a .
+doc:Factsfaults_1 rdfs:label "fault detection in roller bearing defects"@en .
+_:d06c6417d88c9220942c46beae62e971 rdf:reifies <<( doc:Factsfaults_1 rdfs:label "fault detection in roller bearing defects"@en )>> ;
+	prov:wasDerivedFrom doc:7327a0c8c14a .
+doc:Factsfaults_1 rdfs:label "advanced VBMs"@en .
+_:ec8c51f37b64f1ab8dd62d5d0ddb1850 rdf:reifies <<( doc:Factsfaults_1 rdfs:label "advanced VBMs"@en )>> ;
+	prov:wasDerivedFrom doc:7327a0c8c14a .
+doc:Factsfaults_1 rdfs:label "fault detection by cyclostationary analysis"@en .
+_:ac61932dec4579f0884d9f8b71442516 rdf:reifies <<( doc:Factsfaults_1 rdfs:label "fault detection by cyclostationary analysis"@en )>> ;
+	prov:wasDerivedFrom doc:7327a0c8c14a .
+doc:Factsfaults_1 a schema1:Dataset .
+_:c872751e8618880bc42cdfe809be50cc rdf:reifies <<( doc:Factsfaults_1 rdf:type schema1:Dataset )>> ;
+	prov:wasDerivedFrom doc:7327a0c8c14a .
+doc:Factsfaults_1 rdfs:label "roller"@en .
+_:deda8658af98731ab0918491309cb281 rdf:reifies <<( doc:Factsfaults_1 rdfs:label "roller"@en )>> ;
+	prov:wasDerivedFrom doc:7327a0c8c14a .
+doc:Factsfaults_1 rdfs:label "faulty bearing"@en .
+_:d6a8a0a79e015d26d9db0f73835a3734 rdf:reifies <<( doc:Factsfaults_1 rdfs:label "faulty bearing"@en )>> ;
+	prov:wasDerivedFrom doc:7327a0c8c14a .
+doc:Factsfaults_1 rdfs:label "impulsive vibration responses"@en .
+_:fb36378fd37574c4013b14f5973fdffd rdf:reifies <<( doc:Factsfaults_1 rdfs:label "impulsive vibration responses"@en )>> ;
+	prov:wasDerivedFrom doc:7327a0c8c14a .
+doc:Factsfaults_1 rdfs:label "bearing defect"@en .
+_:d08e3cf2342313095a2b5074c8516a9c rdf:reifies <<( doc:Factsfaults_1 rdfs:label "bearing defect"@en )>> ;
+	prov:wasDerivedFrom doc:7327a0c8c14a .
+doc:Factsfaults_1 cd:has_design_detail doc:Factsfact11_5 .
+_:f63c470dd56f5e3cc95e303360b32629 rdf:reifies <<( doc:Factsfaults_1 cd:has_design_detail doc:Factsfact11_5 )>> ;
+	prov:wasDerivedFrom doc:7327a0c8c14a .
+doc:Factsfact58_1 rdfs:label "point contact between bearing ball and raceway"@en .
+_:c07b8da4b3fd3620178e51ef3813d67a rdf:reifies <<( doc:Factsfact58_1 rdfs:label "point contact between bearing ball and raceway"@en )>> ;
+	prov:wasDerivedFrom doc:7327a0c8c14a .
+doc:Factsfact49_1 rdfs:label "line contact"@en .
+_:d5191a2fbf741a9ac50dea87ac6b9a31 rdf:reifies <<( doc:Factsfact49_1 rdfs:label "line contact"@en )>> ;
+	prov:wasDerivedFrom doc:7327a0c8c14a .
+doc:Factsfaults_1 rdfs:label "fault detection by independent component analysis"@en .
+_:dc3b12b3c4a1e7731017dd461041b936 rdf:reifies <<( doc:Factsfaults_1 rdfs:label "fault detection by independent component analysis"@en )>> ;
+	prov:wasDerivedFrom doc:7327a0c8c14a .
+doc:Factsfact12_5 a None:Design_detail .
+_:e33c195b7c6f18cfa052ea3a5d7f4e9f rdf:reifies <<( doc:Factsfact12_5 rdf:type None:Design_detail )>> ;
+	prov:wasDerivedFrom doc:7327a0c8c14a .
+doc:Factsfaults_1 rdfs:label "no MtM impacts"@en .
+_:c315729ed5069859500b7455060199be rdf:reifies <<( doc:Factsfaults_1 rdfs:label "no MtM impacts"@en )>> ;
+	prov:wasDerivedFrom doc:7327a0c8c14a .
+doc:Factsfact49_1 rdfs:label "complete loss of contact"@en .
+_:aeeed45d898802d9b5b804fa40a62b4e rdf:reifies <<( doc:Factsfact49_1 rdfs:label "complete loss of contact"@en )>> ;
+	prov:wasDerivedFrom doc:7327a0c8c14a .
+doc:Factsfaults_1 rdfs:label "defect"@en .
+_:df180efcf66b1a66c68a426e97f0833a rdf:reifies <<( doc:Factsfaults_1 rdfs:label "defect"@en )>> ;
+	prov:wasDerivedFrom doc:7327a0c8c14a .
+doc:Factsfaults_1 rdfs:label "fault detection through blind source separation"@en .
+_:d9508e15b410df611da6e03f4a705e6c rdf:reifies <<( doc:Factsfaults_1 rdfs:label "fault detection through blind source separation"@en )>> ;
+	prov:wasDerivedFrom doc:7327a0c8c14a .
+doc:Factsfaults_1 rdfs:label "envelope analysis"@en .
+_:d67a436bed903caba4f763e5f156d032 rdf:reifies <<( doc:Factsfaults_1 rdfs:label "envelope analysis"@en )>> ;
+	prov:wasDerivedFrom doc:7327a0c8c14a .
+doc:Factsfaults_1 cd:has_design_detail doc:Factsfact10_6 .
+_:f124662f686d2b8037a9d23bed0d4773 rdf:reifies <<( doc:Factsfaults_1 cd:has_design_detail doc:Factsfact10_6 )>> ;
+	prov:wasDerivedFrom doc:7327a0c8c14a .
+doc:Factsfaults_1 rdfs:label "inner-race"@en .
+_:ee75a0d7957b22e933203d9750271237 rdf:reifies <<( doc:Factsfaults_1 rdfs:label "inner-race"@en )>> ;
+	prov:wasDerivedFrom doc:7327a0c8c14a .

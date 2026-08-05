@@ -108,7 +108,7 @@ public class HeadlessCBR {
                         entry.getOrDefault("Input type", ""),
                         entry.getOrDefault("Number of cases to retrieve", ""),
                         entry.getOrDefault("Amalgamation function", "euclidean"),
-                        LocalDateTime.now().getYear(),
+                        parseQueryYear(entry.getOrDefault("Query Year", "")),
                         entry.getOrDefault("w1", "1"),
                         entry.getOrDefault("w2", "1"),
                         entry.getOrDefault("w3", "1"),
@@ -139,7 +139,7 @@ public class HeadlessCBR {
                 options.getOrDefault("input-type", ""),
                 options.getOrDefault("number-of-cases", "5"),
                 options.getOrDefault("amalgamation", "euclidean"),
-                LocalDateTime.now().getYear(),
+                parseQueryYear(options.getOrDefault("query-year", "")),
                 options.getOrDefault("w1", "1"),
                 options.getOrDefault("w2", "1"),
                 options.getOrDefault("w3", "1"),
@@ -310,6 +310,17 @@ public class HeadlessCBR {
         }
     }
 
+    private static int parseQueryYear(String value) {
+        if (value == null || value.isBlank()) {
+            return LocalDateTime.now().getYear();
+        }
+        try {
+            return Integer.parseInt(value.trim());
+        } catch (NumberFormatException error) {
+            throw new IllegalArgumentException("Invalid query year: " + value, error);
+        }
+    }
+
     private static void parseArgs(String[] args, Map<String, String> options, List<String> positional) {
         for (int i = 0; i < args.length; i++) {
             String arg = args[i];
@@ -334,8 +345,8 @@ public class HeadlessCBR {
         System.out.println("  ontologies-cbr [--data-dir DIR] [--csv FILE] [--base-ont FILE] [--ont FILE] [--project FILE] csv-to-ontology");
         System.out.println("  ontologies-cbr [--data-dir DIR] [--csv FILE] [--base-ont FILE] [--ont FILE] [--project FILE] prepare-project");
         System.out.println("  ontologies-cbr [--data-dir DIR] [--csv FILE] [--base-ont FILE] [--ont FILE] [--project FILE] rebuild");
-        System.out.println("  ontologies-cbr [--data-dir DIR] [--project FILE] query-batch <input.csv> <output-prefix>");
-        System.out.println("  ontologies-cbr [--data-dir DIR] [--project FILE] query-one [--task VALUE] [--case-study-type VALUE] [--case-study VALUE] [--online-offline VALUE] [--input-for-model VALUE] [--input-type VALUE] [--number-of-cases N] [--amalgamation VALUE] [--w1 N] [--w2 N] [--w3 N] [--w4 N] [--w5 N] [--w6 N]");
+        System.out.println("  ontologies-cbr [--data-dir DIR] [--project FILE] query-batch <input.csv> <output-prefix>  # optional CSV column: Query Year");
+        System.out.println("  ontologies-cbr [--data-dir DIR] [--project FILE] query-one [--task VALUE] [--case-study-type VALUE] [--case-study VALUE] [--online-offline VALUE] [--input-for-model VALUE] [--input-type VALUE] [--number-of-cases N] [--query-year YYYY] [--amalgamation VALUE] [--w1 N] [--w2 N] [--w3 N] [--w4 N] [--w5 N] [--w6 N]");
         System.out.println();
         System.out.println("Data directory resolution order:");
         System.out.println("  1. --data-dir");

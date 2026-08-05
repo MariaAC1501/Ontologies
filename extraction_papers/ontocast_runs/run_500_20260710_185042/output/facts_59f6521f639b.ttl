@@ -1,0 +1,512 @@
+@prefix None: <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD/seed#> .
+@prefix cco: <http://www.ontologyrepository.com/CommonCoreOntologies/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doc: <https://growgraph.dev/doc/59f6521f639b/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix obo: <http://purl.obolibrary.org/obo/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix schema: <https://schema.org/> .
+@prefix schema1: <http://schema.org/> .
+doc:132063c91e42 a prov:Entity , schema:text ;
+	prov:generatedAtTime "2026-07-13T15:04:05.124288Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+	schema:position 0 ;
+	schema:identifier "132063c91e42" .
+doc:Factsarticle1_183 None:has_publication_year doc:Factsyear1_151 .
+_:de0df3286d15c3f035d622c943d63b23 rdf:reifies <<( doc:Factsarticle1_183 None:has_publication_year doc:Factsyear1_151 )>> ;
+	prov:wasDerivedFrom doc:132063c91e42 .
+doc:Factsauthor6_25 a schema1:Person .
+_:e43ec9ca7f3271de7c5589af687b054e rdf:reifies <<( doc:Factsauthor6_25 rdf:type schema1:Person )>> ;
+	prov:wasDerivedFrom doc:132063c91e42 .
+doc:Factscase1_46 cco:is_about doc:Factsmethod1_24 .
+_:e9f6bca34f5ade54c137a5f844253d28 rdf:reifies <<( doc:Factscase1_46 cco:is_about doc:Factsmethod1_24 )>> ;
+	prov:wasDerivedFrom doc:132063c91e42 .
+doc:Factsenterprise1 a schema1:Organization .
+_:a6660696ccf7c2e18cbd9b9ea316374a rdf:reifies <<( doc:Factsenterprise1 rdf:type schema1:Organization )>> ;
+	prov:wasDerivedFrom doc:132063c91e42 .
+doc:Factsmethod1_24 a cco:Algorithm .
+_:ae440fc8efc8bcdd35e2f8df3dbc184a rdf:reifies <<( doc:Factsmethod1_24 rdf:type cco:Algorithm )>> ;
+	prov:wasDerivedFrom doc:132063c91e42 .
+doc:Factsfunction1_31 a None:Fault_detection .
+_:a757487eda2db701faecd96cf1a335cf rdf:reifies <<( doc:Factsfunction1_31 rdf:type None:Fault_detection )>> ;
+	prov:wasDerivedFrom doc:132063c91e42 .
+doc:Factsmethod1_24 cco:designates doc:Factsarticle1_183 .
+_:eb4aa6f3bf184141a1382be7a874716b rdf:reifies <<( doc:Factsmethod1_24 cco:designates doc:Factsarticle1_183 )>> ;
+	prov:wasDerivedFrom doc:132063c91e42 .
+doc:Factstitle1_129 cco:designates doc:Factsarticle1_183 .
+_:da23499906411bc8ceccaab470fd90fe rdf:reifies <<( doc:Factstitle1_129 cco:designates doc:Factsarticle1_183 )>> ;
+	prov:wasDerivedFrom doc:132063c91e42 .
+doc:Factscaseid1 a None:Article_identifier .
+_:d2f65122676212b47396b61007c6ef rdf:reifies <<( doc:Factscaseid1 rdf:type None:Article_identifier )>> ;
+	prov:wasDerivedFrom doc:132063c91e42 .
+doc:Factsmethod1_24 a cco:DirectiveInformationContentEntity .
+_:b0a230d9e631fce1b605062fd1c7cb7e rdf:reifies <<( doc:Factsmethod1_24 rdf:type cco:DirectiveInformationContentEntity )>> ;
+	prov:wasDerivedFrom doc:132063c91e42 .
+doc:Factsfact8_30 rdfs:comment "A maintainable item studied for fault prediction in forging production lines." .
+_:b37fcefeabd25bd9cf07ac9d76f8a0b9 rdf:reifies <<( doc:Factsfact8_30 rdfs:comment "A maintainable item studied for fault prediction in forging production lines." )>> ;
+	prov:wasDerivedFrom doc:132063c91e42 .
+doc:Factsfunction1_31 rdfs:label "fault prediction" .
+_:df852bf21f95a2ea8e4849495606c620 rdf:reifies <<( doc:Factsfunction1_31 rdfs:label "fault prediction" )>> ;
+	prov:wasDerivedFrom doc:132063c91e42 .
+doc:Factsmethod1_24 None:has_function doc:Factsfunction1_31 .
+_:d658182b7a8778ec83c58f4e77f79333 rdf:reifies <<( doc:Factsmethod1_24 None:has_function doc:Factsfunction1_31 )>> ;
+	prov:wasDerivedFrom doc:132063c91e42 .
+doc:Factsconfig1_23 a None:Model_configuration .
+_:ff79299180ba547012a1e465d2d9e097 rdf:reifies <<( doc:Factsconfig1_23 rdf:type None:Model_configuration )>> ;
+	prov:wasDerivedFrom doc:132063c91e42 .
+doc:Factstitle1_129 a None:Article_title .
+_:a3672647e4eac10af72f59681dba84d4 rdf:reifies <<( doc:Factstitle1_129 rdf:type None:Article_title )>> ;
+	prov:wasDerivedFrom doc:132063c91e42 .
+doc:Factsfact8_30 rdfs:label "large forging press" .
+_:ed1f6215776b87875094226c724c0eed rdf:reifies <<( doc:Factsfact8_30 rdfs:label "large forging press" )>> ;
+	prov:wasDerivedFrom doc:132063c91e42 .
+doc:Factsarticle1_183 dcterms:title "Fault prediction method of large forging press based on a multi scale and multi model integrated method" .
+_:db0c412213a27e9435f97ec43846e731 rdf:reifies <<( doc:Factsarticle1_183 dcterms:title "Fault prediction method of large forging press based on a multi scale and multi model integrated method" )>> ;
+	prov:wasDerivedFrom doc:132063c91e42 .
+doc:Factsarticle1_183 schema1:author doc:Factsauthor6_25 .
+_:c8e514d4f0ba9b640ff33e8a59c9df5d rdf:reifies <<( doc:Factsarticle1_183 schema1:author doc:Factsauthor6_25 )>> ;
+	prov:wasDerivedFrom doc:132063c91e42 .
+doc:Factsindicator2_2 rdfs:label "Root Mean Square Error" .
+_:b2d66beb05f8d46fa0e3342194e8d364 rdf:reifies <<( doc:Factsindicator2_2 rdfs:label "Root Mean Square Error" )>> ;
+	prov:wasDerivedFrom doc:132063c91e42 .
+doc:Factscase1_46 cco:is_about doc:Factsfact8_30 .
+_:ac53240b22fe16241e1fb4cd6a62e07d rdf:reifies <<( doc:Factscase1_46 cco:is_about doc:Factsfact8_30 )>> ;
+	prov:wasDerivedFrom doc:132063c91e42 .
+doc:Factsmodeltype1_12 rdfs:label "multi-model ensemble" .
+_:e59df2c9e51c3aac64523cfc67574812 rdf:reifies <<( doc:Factsmodeltype1_12 rdfs:label "multi-model ensemble" )>> ;
+	prov:wasDerivedFrom doc:132063c91e42 .
+doc:Factsfact8_30 a None:Maintainable_item .
+_:dba6b96b4b4fbf18606e69d92def1fce rdf:reifies <<( doc:Factsfact8_30 rdf:type None:Maintainable_item )>> ;
+	prov:wasDerivedFrom doc:132063c91e42 .
+doc:Factscase1_46 a None:Data_variable .
+_:dffb63d1caffe54fd4ba07fd59c1843a rdf:reifies <<( doc:Factscase1_46 rdf:type None:Data_variable )>> ;
+	prov:wasDerivedFrom doc:132063c91e42 .
+doc:Factsmethod1_24 None:describes_type doc:Factsmodeltype1_12 .
+_:f96a6a99205968a81f4dc626a96d6f9 rdf:reifies <<( doc:Factsmethod1_24 None:describes_type doc:Factsmodeltype1_12 )>> ;
+	prov:wasDerivedFrom doc:132063c91e42 .
+doc:Factsfact8_30 a cco:Artifact .
+_:a9e41d6b6ffa878b628b08938e04bb9c rdf:reifies <<( doc:Factsfact8_30 rdf:type cco:Artifact )>> ;
+	prov:wasDerivedFrom doc:132063c91e42 .
+doc:Factsarticle1_183 a None:Predictive_Maintenance_Article .
+_:af44d506598807e9d08125f08b427a90 rdf:reifies <<( doc:Factsarticle1_183 rdf:type None:Predictive_Maintenance_Article )>> ;
+	prov:wasDerivedFrom doc:132063c91e42 .
+doc:Factscase1_46 None:has_publication_year doc:Factsyear1_151 .
+_:b59781622e85529550b8956f18fa99b rdf:reifies <<( doc:Factscase1_46 None:has_publication_year doc:Factsyear1_151 )>> ;
+	prov:wasDerivedFrom doc:132063c91e42 .
+doc:Factsauthor6_25 schema1:name "Yeyingnan Cao" .
+_:d025db549deab9734f23f8bc9950db27 rdf:reifies <<( doc:Factsauthor6_25 schema1:name "Yeyingnan Cao" )>> ;
+	prov:wasDerivedFrom doc:132063c91e42 .
+doc:Factscase1_46 None:has_identifier doc:Factscaseid1 .
+_:df626112f2560d0c75a499c946e709aa rdf:reifies <<( doc:Factscase1_46 None:has_identifier doc:Factscaseid1 )>> ;
+	prov:wasDerivedFrom doc:132063c91e42 .
+doc:Factsauthor6_25 schema1:name "Lidong Pan" .
+_:bd21420dd1b558ada27ca5453cdefc65 rdf:reifies <<( doc:Factsauthor6_25 schema1:name "Lidong Pan" )>> ;
+	prov:wasDerivedFrom doc:132063c91e42 .
+doc:Factscase1_46 rdfs:label "monitoring signal data of brake oil pressure" .
+_:fb3c2e608be864f4c3e16900ddc75ed rdf:reifies <<( doc:Factscase1_46 rdfs:label "monitoring signal data of brake oil pressure" )>> ;
+	prov:wasDerivedFrom doc:132063c91e42 .
+doc:Factsfunction1_31 a None:Fault_prediction .
+_:fc5d7b4d25012d1077f2c05607a03a1c rdf:reifies <<( doc:Factsfunction1_31 rdf:type None:Fault_prediction )>> ;
+	prov:wasDerivedFrom doc:132063c91e42 .
+doc:Factscaseid1 rdfs:label "case study" .
+_:e9ff0e9105b2b73a7c62127b1cafe655 rdf:reifies <<( doc:Factscaseid1 rdfs:label "case study" )>> ;
+	prov:wasDerivedFrom doc:132063c91e42 .
+doc:Factsauthor6_25 schema1:name "Yuxi Tang" .
+_:df39ec078aae0425861020a95105b34c rdf:reifies <<( doc:Factsauthor6_25 schema1:name "Yuxi Tang" )>> ;
+	prov:wasDerivedFrom doc:132063c91e42 .
+doc:Factsmethod1_24 rdfs:label "multi-scale Autoregressive-Support Vector Regression-Long Short-Term Memory (AR-SVRLSTM)" .
+_:c666387f4732597193ad1ab988b33ee0 rdf:reifies <<( doc:Factsmethod1_24 rdfs:label "multi-scale Autoregressive-Support Vector Regression-Long Short-Term Memory (AR-SVRLSTM)" )>> ;
+	prov:wasDerivedFrom doc:132063c91e42 .
+doc:Factsauthor6_25 schema1:name "Chao Yuan" .
+_:fab5ce6f246dda8eb651a1a2a71b3d9a rdf:reifies <<( doc:Factsauthor6_25 schema1:name "Chao Yuan" )>> ;
+	prov:wasDerivedFrom doc:132063c91e42 .
+doc:Factstitle1_129 a cco:DesignativeName .
+_:e3979794cc23c468a5b2a8519a70450b rdf:reifies <<( doc:Factstitle1_129 rdf:type cco:DesignativeName )>> ;
+	prov:wasDerivedFrom doc:132063c91e42 .
+doc:Factsindicator2_2 a None:Performance_indicator .
+_:c12e63b184f987975897d40127bb7e26 rdf:reifies <<( doc:Factsindicator2_2 rdf:type None:Performance_indicator )>> ;
+	prov:wasDerivedFrom doc:132063c91e42 .
+doc:Factscase1_46 rdfs:label "case study on brake oil pressure monitoring signal data" .
+_:da61088aa06348f629e69f42ec340d81 rdf:reifies <<( doc:Factscase1_46 rdfs:label "case study on brake oil pressure monitoring signal data" )>> ;
+	prov:wasDerivedFrom doc:132063c91e42 .
+doc:Factsconfig1_23 rdfs:label "multi-scale and multi model integrated method" .
+_:f583ec03fee8bad9308d62a7545ecf78 rdf:reifies <<( doc:Factsconfig1_23 rdfs:label "multi-scale and multi model integrated method" )>> ;
+	prov:wasDerivedFrom doc:132063c91e42 .
+doc:Factsindicator2_2 rdfs:label "Mean Absolute Error" .
+_:b8585ea7d89196c219e2e4acd0d6523a rdf:reifies <<( doc:Factsindicator2_2 rdfs:label "Mean Absolute Error" )>> ;
+	prov:wasDerivedFrom doc:132063c91e42 .
+doc:Factsmethod1_24 a None:Predictive_maintenance_model .
+_:b778abe165a13f6931fb219e33236953 rdf:reifies <<( doc:Factsmethod1_24 rdf:type None:Predictive_maintenance_model )>> ;
+	prov:wasDerivedFrom doc:132063c91e42 .
+doc:Factscase1_46 cco:is_about doc:Factsenterprise1 .
+_:c60794a5e029ef349e767b19950022f5 rdf:reifies <<( doc:Factscase1_46 cco:is_about doc:Factsenterprise1 )>> ;
+	prov:wasDerivedFrom doc:132063c91e42 .
+doc:Factsfact8_30 rdfs:label "large crank press" .
+_:f2304640aaa2861bf3ea9a470c86606b rdf:reifies <<( doc:Factsfact8_30 rdfs:label "large crank press" )>> ;
+	prov:wasDerivedFrom doc:132063c91e42 .
+doc:Factsmethod1_24 None:describes_configuration doc:Factsconfig1_23 .
+_:d22fa2d9c36aed257dc4a2e72fce85c4 rdf:reifies <<( doc:Factsmethod1_24 None:describes_configuration doc:Factsconfig1_23 )>> ;
+	prov:wasDerivedFrom doc:132063c91e42 .
+doc:Factsauthor6_25 schema1:name "Nan Zhang" .
+_:f795e7c9494d7bb10d53a95d4af8774e rdf:reifies <<( doc:Factsauthor6_25 schema1:name "Nan Zhang" )>> ;
+	prov:wasDerivedFrom doc:132063c91e42 .
+doc:Factsyear1_151 a None:Publication_year .
+_:fb972f1772d02b713f3dec69247544bb rdf:reifies <<( doc:Factsyear1_151 rdf:type None:Publication_year )>> ;
+	prov:wasDerivedFrom doc:132063c91e42 .
+doc:Factsmodeltype1_12 a None:Model_type .
+_:d7adc11e61806e0fa9094bf712db2748 rdf:reifies <<( doc:Factsmodeltype1_12 rdf:type None:Model_type )>> ;
+	prov:wasDerivedFrom doc:132063c91e42 .
+doc:Factsmethod1_24 rdfs:label "AR-SVRLSTM multi-model ensemble prediction approach" .
+_:e844d2653cad616c4ab80fe47108cd2c rdf:reifies <<( doc:Factsmethod1_24 rdfs:label "AR-SVRLSTM multi-model ensemble prediction approach" )>> ;
+	prov:wasDerivedFrom doc:132063c91e42 .
+doc:Factsenterprise1 schema1:name "a certain enterprise" .
+_:f6491bbf08e028823aa9d0ef4bf56e2a rdf:reifies <<( doc:Factsenterprise1 schema1:name "a certain enterprise" )>> ;
+	prov:wasDerivedFrom doc:132063c91e42 .
+doc:Factsfact8_30 rdfs:label "large screw press" .
+_:a3f4fd0cdde0f22ba572ead7d2c03926 rdf:reifies <<( doc:Factsfact8_30 rdfs:label "large screw press" )>> ;
+	prov:wasDerivedFrom doc:132063c91e42 .
+doc:Factsyear1_151 None:has_interger_value 2024 .
+_:d59aaea701b60fd8f09fe38c0664c2fe rdf:reifies <<( doc:Factsyear1_151 None:has_interger_value 2024 )>> ;
+	prov:wasDerivedFrom doc:132063c91e42 .
+doc:Factscaseid1 a cco:ArtifactIdentifier .
+_:c5a2267597b8ed711f26f526d5f46d44 rdf:reifies <<( doc:Factscaseid1 rdf:type cco:ArtifactIdentifier )>> ;
+	prov:wasDerivedFrom doc:132063c91e42 .
+doc:Factsfact8_30 rdfs:label "hot large forging press" .
+_:c71fabaf1942088a6970b8c91a597879 rdf:reifies <<( doc:Factsfact8_30 rdfs:label "hot large forging press" )>> ;
+	prov:wasDerivedFrom doc:132063c91e42 .
+doc:Factsindicator2_2 cco:designates doc:Factsvalue2_5 .
+_:d8a851a0d55f583c92cca24878a7b11d rdf:reifies <<( doc:Factsindicator2_2 cco:designates doc:Factsvalue2_5 )>> ;
+	prov:wasDerivedFrom doc:132063c91e42 .
+doc:Factsvalue2_5 rdfs:label "5%" .
+_:d0425781d6c70901739121b9fbdf35b6 rdf:reifies <<( doc:Factsvalue2_5 rdfs:label "5%" )>> ;
+	prov:wasDerivedFrom doc:132063c91e42 .
+doc:Factsauthor6_25 schema1:name "Tianmin Zhang" .
+_:e9be421779f6d09a59074901d183b9f8 rdf:reifies <<( doc:Factsauthor6_25 schema1:name "Tianmin Zhang" )>> ;
+	prov:wasDerivedFrom doc:132063c91e42 .
+doc:Factsarticle1_183 None:has_identifier doc:Factscaseid1 .
+_:f65e22c0a54b27470c4f5fe91f2328d5 rdf:reifies <<( doc:Factsarticle1_183 None:has_identifier doc:Factscaseid1 )>> ;
+	prov:wasDerivedFrom doc:132063c91e42 .
+doc:Factsvalue2_5 a None:Performance_value .
+_:f48d521b8874c36a626828c4a63cfffd rdf:reifies <<( doc:Factsvalue2_5 rdf:type None:Performance_value )>> ;
+	prov:wasDerivedFrom doc:132063c91e42 .
+doc:Factscase1_46 a None:Predictive_maintenance_case .
+_:c728fe2b95fab86835644998c662aa7b rdf:reifies <<( doc:Factscase1_46 rdf:type None:Predictive_maintenance_case )>> ;
+	prov:wasDerivedFrom doc:132063c91e42 .
+doc:Factsarticle1_183 None:has_title doc:Factstitle1_129 .
+_:bd1cd251eac4e960dad273bd3eb66250 rdf:reifies <<( doc:Factsarticle1_183 None:has_title doc:Factstitle1_129 )>> ;
+	prov:wasDerivedFrom doc:132063c91e42 .
+doc:Factsauthor6_25 schema1:name "Hao Zhang" .
+_:a64530e9bbae18f2df7f09f0de2fec8a rdf:reifies <<( doc:Factsauthor6_25 schema1:name "Hao Zhang" )>> ;
+	prov:wasDerivedFrom doc:132063c91e42 .
+doc:Factsmethod1_24 cco:is_about doc:Factsfact8_30 .
+_:caf3c882c9c2bd61ecee3210be83dae8 rdf:reifies <<( doc:Factsmethod1_24 cco:is_about doc:Factsfact8_30 )>> ;
+	prov:wasDerivedFrom doc:132063c91e42 .
+doc:Factsauthor6_25 schema1:name "Yiqing Shi" .
+_:e17094cf70543740ba95fd36905c759f rdf:reifies <<( doc:Factsauthor6_25 schema1:name "Yiqing Shi" )>> ;
+	prov:wasDerivedFrom doc:132063c91e42 .
+doc:Factsauthor6_25 schema1:name "Yunhan Ling" .
+_:ae67738a6cbf1a0b002617728e65eac3 rdf:reifies <<( doc:Factsauthor6_25 schema1:name "Yunhan Ling" )>> ;
+	prov:wasDerivedFrom doc:132063c91e42 .
+doc:Factsvalue2_5 rdfs:label "1%" .
+_:b664573b0b2018891fb74ef6e7ae837c rdf:reifies <<( doc:Factsvalue2_5 rdfs:label "1%" )>> ;
+	prov:wasDerivedFrom doc:132063c91e42 .
+doc:Factsauthor6_25 schema1:name "Huize Li" .
+_:fef9c9155b28cb6cbba9836678146a91 rdf:reifies <<( doc:Factsauthor6_25 schema1:name "Huize Li" )>> ;
+	prov:wasDerivedFrom doc:132063c91e42 .
+doc:Factsfact8_30 a obo:BFO_0000030 .
+_:ed1bac9aea405f507806930763088a0a rdf:reifies <<( doc:Factsfact8_30 rdf:type obo:BFO_0000030 )>> ;
+	prov:wasDerivedFrom doc:132063c91e42 .
+doc:d6fb5bf6cde6 a prov:Entity , schema:text ;
+	prov:generatedAtTime "2026-07-13T15:04:05.129288Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+	schema:position 1 ;
+	schema:identifier "d6fb5bf6cde6" .
+doc:Factsfact13_20 a None:Health_assessment .
+_:a27f502f4641a116032da306f2fd7213 rdf:reifies <<( doc:Factsfact13_20 rdf:type None:Health_assessment )>> ;
+	prov:wasDerivedFrom doc:d6fb5bf6cde6 .
+doc:Factsfact14_18 a None:Remaining_useful_life_estimation .
+_:e1536a49d3c2091ecf7d7b4f33619afc rdf:reifies <<( doc:Factsfact14_18 rdf:type None:Remaining_useful_life_estimation )>> ;
+	prov:wasDerivedFrom doc:d6fb5bf6cde6 .
+doc:Factsfact4_49 None:has_predictive_maintenance_function doc:Factsfact13_20 .
+_:a0ba4526b9c784f45c29f76303f21e0f rdf:reifies <<( doc:Factsfact4_49 None:has_predictive_maintenance_function doc:Factsfact13_20 )>> ;
+	prov:wasDerivedFrom doc:d6fb5bf6cde6 .
+doc:Factsfact18_37 None:has_text_value "environmental conditions" .
+_:b6f400f8807f6cad632ca355137dffc4 rdf:reifies <<( doc:Factsfact18_37 None:has_text_value "environmental conditions" )>> ;
+	prov:wasDerivedFrom doc:d6fb5bf6cde6 .
+doc:FactstraditionalFaultPrediction a None:Future_state_forecast .
+_:d162d99310564bce6871f7fa775dc56a rdf:reifies <<( doc:FactstraditionalFaultPrediction rdf:type None:Future_state_forecast )>> ;
+	prov:wasDerivedFrom doc:d6fb5bf6cde6 .
+doc:FactsproductQualityConsistency a None:Performance_indicator .
+_:a857d547c1781393586a5d7442986f27 rdf:reifies <<( doc:FactsproductQualityConsistency rdf:type None:Performance_indicator )>> ;
+	prov:wasDerivedFrom doc:d6fb5bf6cde6 .
+doc:FactsindustrialInternet a cco:InformationContentEntity .
+_:a5582dd5d3780572af2ca03716b92261 rdf:reifies <<( doc:FactsindustrialInternet rdf:type cco:InformationContentEntity )>> ;
+	prov:wasDerivedFrom doc:d6fb5bf6cde6 .
+doc:FactsproductQualityConsistency None:has_text_value "equipment performance stability" .
+_:bf5b8af68d315e716336ef0ac75d338f rdf:reifies <<( doc:FactsproductQualityConsistency None:has_text_value "equipment performance stability" )>> ;
+	prov:wasDerivedFrom doc:d6fb5bf6cde6 .
+doc:FactsindustrialInternet rdfs:label "industrial internet"@en .
+_:d42217fa51751859558ef6dca2830c2c rdf:reifies <<( doc:FactsindustrialInternet rdfs:label "industrial internet"@en )>> ;
+	prov:wasDerivedFrom doc:d6fb5bf6cde6 .
+doc:FactsabnormalSymptoms None:has_text_value "subtle abnormal symptoms" .
+_:b2089a0c867715e797c9df7a4101a683 rdf:reifies <<( doc:FactsabnormalSymptoms None:has_text_value "subtle abnormal symptoms" )>> ;
+	prov:wasDerivedFrom doc:d6fb5bf6cde6 .
+doc:FactsphmTechnology a cco:Algorithm .
+_:db1d7865b7ec21035a8a69a4ba3cb5c1 rdf:reifies <<( doc:FactsphmTechnology rdf:type cco:Algorithm )>> ;
+	prov:wasDerivedFrom doc:d6fb5bf6cde6 .
+doc:FactsfilterPrediction a None:Regression .
+_:b0e2e32fb411f309568a0109ffd6de89 rdf:reifies <<( doc:FactsfilterPrediction rdf:type None:Regression )>> ;
+	prov:wasDerivedFrom doc:d6fb5bf6cde6 .
+doc:FactsreliabilityBasedPrediction a None:Association_discovery .
+_:fe5d1c2f69566fd743efff1a8a631b22 rdf:reifies <<( doc:FactsreliabilityBasedPrediction rdf:type None:Association_discovery )>> ;
+	prov:wasDerivedFrom doc:d6fb5bf6cde6 .
+doc:FactsphmTechnology rdfs:label "Prognostics Health Management (PHM)"@en .
+_:be45333263056ddffc10bb474d0aaa6f rdf:reifies <<( doc:FactsphmTechnology rdfs:label "Prognostics Health Management (PHM)"@en )>> ;
+	prov:wasDerivedFrom doc:d6fb5bf6cde6 .
+_:a757487eda2db701faecd96cf1a335cf prov:wasDerivedFrom doc:d6fb5bf6cde6 .
+doc:Factsfact18_37 None:has_text_value "system operating status" .
+_:b355a96ae733d356c8afd5b17981d465 rdf:reifies <<( doc:Factsfact18_37 None:has_text_value "system operating status" )>> ;
+	prov:wasDerivedFrom doc:d6fb5bf6cde6 .
+_:ed1bac9aea405f507806930763088a0a prov:wasDerivedFrom doc:d6fb5bf6cde6 .
+doc:Factsfact18_37 a None:Data_variable .
+_:ff4166debc38c961abd14b92375d6cb7 rdf:reifies <<( doc:Factsfact18_37 rdf:type None:Data_variable )>> ;
+	prov:wasDerivedFrom doc:d6fb5bf6cde6 .
+doc:FactsabnormalSymptoms a None:Fault_feature_extraction .
+_:b1a6508e70bee1bdf37479c50c689cba rdf:reifies <<( doc:FactsabnormalSymptoms rdf:type None:Fault_feature_extraction )>> ;
+	prov:wasDerivedFrom doc:d6fb5bf6cde6 .
+_:bd1cd251eac4e960dad273bd3eb66250 prov:wasDerivedFrom doc:d6fb5bf6cde6 .
+doc:FactsphmTechnology rdfs:label "PHM technology"@en .
+_:cb5f90ae87c1debc60d42acff45c2b52 rdf:reifies <<( doc:FactsphmTechnology rdfs:label "PHM technology"@en )>> ;
+	prov:wasDerivedFrom doc:d6fb5bf6cde6 .
+doc:FactsspareParts rdfs:label "spare parts"@en .
+_:b8c33eb5e44d6b8ab19d29e4187d909c rdf:reifies <<( doc:FactsspareParts rdfs:label "spare parts"@en )>> ;
+	prov:wasDerivedFrom doc:d6fb5bf6cde6 .
+doc:Factsfact15_20 a None:Future_state_forecast .
+_:f79bea32861392b138a5f05869ce2023 rdf:reifies <<( doc:Factsfact15_20 rdf:type None:Future_state_forecast )>> ;
+	prov:wasDerivedFrom doc:d6fb5bf6cde6 .
+_:af44d506598807e9d08125f08b427a90 prov:wasDerivedFrom doc:d6fb5bf6cde6 .
+_:a3672647e4eac10af72f59681dba84d4 prov:wasDerivedFrom doc:d6fb5bf6cde6 .
+doc:Factsfact4_49 None:has_predictive_maintenance_function doc:Factsfact14_18 .
+_:fe03b1ae462572c4eab99904802f64f rdf:reifies <<( doc:Factsfact4_49 None:has_predictive_maintenance_function doc:Factsfact14_18 )>> ;
+	prov:wasDerivedFrom doc:d6fb5bf6cde6 .
+doc:FactsproductionDowntime_2 a None:Design_detail .
+_:f054f681c3e002db4d57d39a2dffeca rdf:reifies <<( doc:FactsproductionDowntime_2 rdf:type None:Design_detail )>> ;
+	prov:wasDerivedFrom doc:d6fb5bf6cde6 .
+doc:FactsmaintenancePlanning_2 rdfs:label "maintenance and production scheduling plans"@en .
+_:bf2706412da367c9c401ce0b868b5f52 rdf:reifies <<( doc:FactsmaintenancePlanning_2 rdfs:label "maintenance and production scheduling plans"@en )>> ;
+	prov:wasDerivedFrom doc:d6fb5bf6cde6 .
+doc:Factsfact4_49 a None:Predictive_maintenance_model .
+_:b3783a9478bd089246717bafe509dfad rdf:reifies <<( doc:Factsfact4_49 rdf:type None:Predictive_maintenance_model )>> ;
+	prov:wasDerivedFrom doc:d6fb5bf6cde6 .
+doc:FactsbigData_1 a cco:InformationContentEntity .
+_:f2a27ea5630871d3e43ef5260ed97f09 rdf:reifies <<( doc:FactsbigData_1 rdf:type cco:InformationContentEntity )>> ;
+	prov:wasDerivedFrom doc:d6fb5bf6cde6 .
+doc:Factsfact8_30 rdfs:label "large forging presses"@en .
+_:aa0744a7a50f434603bb2620543dcea3 rdf:reifies <<( doc:Factsfact8_30 rdfs:label "large forging presses"@en )>> ;
+	prov:wasDerivedFrom doc:d6fb5bf6cde6 .
+doc:FactsbigData_1 rdfs:label "big data"@en .
+_:ee51c3a7e2ae1250dab2dc9009a84e42 rdf:reifies <<( doc:FactsbigData_1 rdfs:label "big data"@en )>> ;
+	prov:wasDerivedFrom doc:d6fb5bf6cde6 .
+doc:Factsfunction1_31 a None:Fault_identification .
+_:c09edc05185e2a38df89409ae68beb95 rdf:reifies <<( doc:Factsfunction1_31 rdf:type None:Fault_identification )>> ;
+	prov:wasDerivedFrom doc:d6fb5bf6cde6 .
+doc:FactsmaintenancePlanning_2 a cco:DirectiveInformationContentEntity .
+_:c1935200c935c7fcc5105d870043e2b8 rdf:reifies <<( doc:FactsmaintenancePlanning_2 rdf:type cco:DirectiveInformationContentEntity )>> ;
+	prov:wasDerivedFrom doc:d6fb5bf6cde6 .
+doc:FactsproductQualityConsistency None:has_text_value "product quality consistency" .
+_:c72131853949b5a4379f7c1de213c8b1 rdf:reifies <<( doc:FactsproductQualityConsistency None:has_text_value "product quality consistency" )>> ;
+	prov:wasDerivedFrom doc:d6fb5bf6cde6 .
+doc:FactsreliabilityTheory a cco:Algorithm .
+_:dfcd3e18e924d25113ebfae2ba822df6 rdf:reifies <<( doc:FactsreliabilityTheory rdf:type cco:Algorithm )>> ;
+	prov:wasDerivedFrom doc:d6fb5bf6cde6 .
+doc:Factscaseid1 None:has_text_value "email: shiyiqing213@126.com" .
+_:f6e7f2f548b5e03e2a9c85af7e02a5e9 rdf:reifies <<( doc:Factscaseid1 None:has_text_value "email: shiyiqing213@126.com" )>> ;
+	prov:wasDerivedFrom doc:d6fb5bf6cde6 .
+doc:Factstitle1_129 None:has_text_value "Fault diagnosis and prediction methods for large forging presses" .
+_:a6591522f211f0891dca18aea4f7d9ae rdf:reifies <<( doc:Factstitle1_129 None:has_text_value "Fault diagnosis and prediction methods for large forging presses" )>> ;
+	prov:wasDerivedFrom doc:d6fb5bf6cde6 .
+doc:FactsreliabilityTheory rdfs:label "reliability theory"@en .
+_:c916bb91c0ba8e47215382f026522038 rdf:reifies <<( doc:FactsreliabilityTheory rdfs:label "reliability theory"@en )>> ;
+	prov:wasDerivedFrom doc:d6fb5bf6cde6 .
+doc:Factsfact14_18 None:has_text_value "degradation trajectory" .
+_:d85d2f67003c04869ae28f29fba305d0 rdf:reifies <<( doc:Factsfact14_18 None:has_text_value "degradation trajectory" )>> ;
+	prov:wasDerivedFrom doc:d6fb5bf6cde6 .
+_:de0df3286d15c3f035d622c943d63b23 prov:wasDerivedFrom doc:d6fb5bf6cde6 .
+_:dba6b96b4b4fbf18606e69d92def1fce prov:wasDerivedFrom doc:d6fb5bf6cde6 .
+_:f65e22c0a54b27470c4f5fe91f2328d5 prov:wasDerivedFrom doc:d6fb5bf6cde6 .
+doc:Factsfact4_49 None:has_predictive_maintenance_function doc:Factsfunction1_31 .
+_:f679516f95c7ab70a4af851d9122ca5f rdf:reifies <<( doc:Factsfact4_49 None:has_predictive_maintenance_function doc:Factsfunction1_31 )>> ;
+	prov:wasDerivedFrom doc:d6fb5bf6cde6 .
+_:fb972f1772d02b713f3dec69247544bb prov:wasDerivedFrom doc:d6fb5bf6cde6 .
+_:d2f65122676212b47396b61007c6ef prov:wasDerivedFrom doc:d6fb5bf6cde6 .
+doc:Factsfact4_49 a None:Predictive_maintenance_system_module .
+_:e8f0d9b44584ffbc9c7b05af2d477753 rdf:reifies <<( doc:Factsfact4_49 rdf:type None:Predictive_maintenance_system_module )>> ;
+	prov:wasDerivedFrom doc:d6fb5bf6cde6 .
+doc:Factsfact18_37 None:has_text_value "system failures" .
+_:cdefacd3d74fad19bb04a14a1926fb15 rdf:reifies <<( doc:Factsfact18_37 None:has_text_value "system failures" )>> ;
+	prov:wasDerivedFrom doc:d6fb5bf6cde6 .
+_:d59aaea701b60fd8f09fe38c0664c2fe prov:wasDerivedFrom doc:d6fb5bf6cde6 .
+doc:Factsfact4_49 None:has_predictive_maintenance_function doc:Factsfact15_20 .
+_:b2d3d1cbae907bb2e2f9faa62922907c rdf:reifies <<( doc:Factsfact4_49 None:has_predictive_maintenance_function doc:Factsfact15_20 )>> ;
+	prov:wasDerivedFrom doc:d6fb5bf6cde6 .
+doc:Factsfact18_37 None:has_text_value "monitoring data for large forging presses" .
+_:ad50d5f0664f6ac8c3b7afe09291efb7 rdf:reifies <<( doc:Factsfact18_37 None:has_text_value "monitoring data for large forging presses" )>> ;
+	prov:wasDerivedFrom doc:d6fb5bf6cde6 .
+doc:FactsspareParts a cco:Artifact .
+_:bf4c13d61e2dbab3120ce639f213a410 rdf:reifies <<( doc:FactsspareParts rdf:type cco:Artifact )>> ;
+	prov:wasDerivedFrom doc:d6fb5bf6cde6 .
+doc:FactsproductionDowntime_2 None:has_text_value "production downtime" .
+_:f2c4c7a8f12f516055d8b0175014a6fd rdf:reifies <<( doc:FactsproductionDowntime_2 None:has_text_value "production downtime" )>> ;
+	prov:wasDerivedFrom doc:d6fb5bf6cde6 .
+doc:Factsfact18_37 None:has_text_value "mechanisms of failure occurrence" .
+_:c7b258e7f7d742eaf66b5f9b063ea60 rdf:reifies <<( doc:Factsfact18_37 None:has_text_value "mechanisms of failure occurrence" )>> ;
+	prov:wasDerivedFrom doc:d6fb5bf6cde6 .
+doc:FactsfilterPrediction a None:Classification .
+_:bf90f4660e88aa1054c31b91d77f386 rdf:reifies <<( doc:FactsfilterPrediction rdf:type None:Classification )>> ;
+	prov:wasDerivedFrom doc:d6fb5bf6cde6 .
+doc:FactspredictionFocus a None:Future_state_forecast .
+_:a8aba360b009ece8204d037f1736030a rdf:reifies <<( doc:FactspredictionFocus rdf:type None:Future_state_forecast )>> ;
+	prov:wasDerivedFrom doc:d6fb5bf6cde6 .
+doc:Factsfact18_37 None:has_text_value "system historical data" .
+_:dcda22fa8448d36a8474c2b18ec2f6fd rdf:reifies <<( doc:Factsfact18_37 None:has_text_value "system historical data" )>> ;
+	prov:wasDerivedFrom doc:d6fb5bf6cde6 .
+doc:dbd192425da7 a prov:Entity , schema:text ;
+	prov:generatedAtTime "2026-07-13T15:04:05.132288Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+	schema:position 2 ;
+	schema:identifier "dbd192425da7" .
+_:c12e63b184f987975897d40127bb7e26 prov:wasDerivedFrom doc:dbd192425da7 .
+_:e1536a49d3c2091ecf7d7b4f33619afc prov:wasDerivedFrom doc:dbd192425da7 .
+doc:Factsvalue2_5 None:has_text_value "less than 5%" .
+_:b9dfa3015ca6a791ebda2f4e1f8d22c7 rdf:reifies <<( doc:Factsvalue2_5 None:has_text_value "less than 5%" )>> ;
+	prov:wasDerivedFrom doc:dbd192425da7 .
+doc:Factsfact10_24 rdfs:label "80MN electric screw press" .
+_:c7926618db5d5012c34ee96634743f34 rdf:reifies <<( doc:Factsfact10_24 rdfs:label "80MN electric screw press" )>> ;
+	prov:wasDerivedFrom doc:dbd192425da7 .
+doc:Factsfact4_49 None:describes_type doc:Factsfunction1_31 .
+_:a7394ba8ee88790753e84ae1c830e3 rdf:reifies <<( doc:Factsfact4_49 None:describes_type doc:Factsfunction1_31 )>> ;
+	prov:wasDerivedFrom doc:dbd192425da7 .
+doc:Factsfact27_15 a None:Performance_value .
+_:bec96ce37708e6659e9660424e2d0d05 rdf:reifies <<( doc:Factsfact27_15 rdf:type None:Performance_value )>> ;
+	prov:wasDerivedFrom doc:dbd192425da7 .
+doc:Factsfact24_30 a schema1:Organization .
+_:b4abe2da2a2107f6d6a0efda85ac7ad4 rdf:reifies <<( doc:Factsfact24_30 rdf:type schema1:Organization )>> ;
+	prov:wasDerivedFrom doc:dbd192425da7 .
+doc:Factsfact17_29 a None:Sequential_pattern_discovery .
+_:a3004a6ea24f5aa37ae7f16ecdf403a8 rdf:reifies <<( doc:Factsfact17_29 rdf:type None:Sequential_pattern_discovery )>> ;
+	prov:wasDerivedFrom doc:dbd192425da7 .
+_:b3783a9478bd089246717bafe509dfad prov:wasDerivedFrom doc:dbd192425da7 .
+doc:Factsfact27_15 rdfs:label "product quality" .
+_:a603d81469ef486e0ebad9013f8ae99b rdf:reifies <<( doc:Factsfact27_15 rdfs:label "product quality" )>> ;
+	prov:wasDerivedFrom doc:dbd192425da7 .
+doc:Factsfact14_18 None:has_predictive_maintenance_function None:Remaining_useful_life_estimation .
+_:e2ff064c649dad455802118461b7997c rdf:reifies <<( doc:Factsfact14_18 None:has_predictive_maintenance_function None:Remaining_useful_life_estimation )>> ;
+	prov:wasDerivedFrom doc:dbd192425da7 .
+doc:Factsvalue2_5 rdfs:label "less than 1%" .
+_:f69cce486c44b5e2adc8ea5d976e6f9f rdf:reifies <<( doc:Factsvalue2_5 rdfs:label "less than 1%" )>> ;
+	prov:wasDerivedFrom doc:dbd192425da7 .
+_:ed1f6215776b87875094226c724c0eed prov:wasDerivedFrom doc:dbd192425da7 .
+_:a757487eda2db701faecd96cf1a335cf prov:wasDerivedFrom doc:dbd192425da7 .
+doc:Factsfact13_20 None:has_predictive_maintenance_function None:Health_assessment .
+_:a76c389271fbf57072918aa2cd76f415 rdf:reifies <<( doc:Factsfact13_20 None:has_predictive_maintenance_function None:Health_assessment )>> ;
+	prov:wasDerivedFrom doc:dbd192425da7 .
+doc:Factsfunction1_31 None:has_predictive_maintenance_function None:Fault_detection .
+_:ce39865ff727ba68a659ec6ce9515923 rdf:reifies <<( doc:Factsfunction1_31 None:has_predictive_maintenance_function None:Fault_detection )>> ;
+	prov:wasDerivedFrom doc:dbd192425da7 .
+doc:Factsfact28_20 rdfs:label "Dwarf Mongoose Optimization (DMO) algorithm" .
+_:df53cfc9192893a5b82da5a718d0d83d rdf:reifies <<( doc:Factsfact28_20 rdfs:label "Dwarf Mongoose Optimization (DMO) algorithm" )>> ;
+	prov:wasDerivedFrom doc:dbd192425da7 .
+doc:Factsfunction1_31 rdfs:label "fault diagnosis" .
+_:d56c27d0d9c50a826f7ade1abaeb6a85 rdf:reifies <<( doc:Factsfunction1_31 rdfs:label "fault diagnosis" )>> ;
+	prov:wasDerivedFrom doc:dbd192425da7 .
+doc:Factsfact26_18 rdfs:label "equipment lifespan" .
+_:b3a38a6e7ab2d9135ee0a8612248bc8b rdf:reifies <<( doc:Factsfact26_18 rdfs:label "equipment lifespan" )>> ;
+	prov:wasDerivedFrom doc:dbd192425da7 .
+_:dba6b96b4b4fbf18606e69d92def1fce prov:wasDerivedFrom doc:dbd192425da7 .
+_:df852bf21f95a2ea8e4849495606c620 prov:wasDerivedFrom doc:dbd192425da7 .
+doc:Factscase1_46 rdfs:label "oil pressure signals" .
+_:e4db35feaba26bc5a43112cea91154e0 rdf:reifies <<( doc:Factscase1_46 rdfs:label "oil pressure signals" )>> ;
+	prov:wasDerivedFrom doc:dbd192425da7 .
+doc:Factsfact4_49 rdfs:label "AR model" .
+_:dea29804faf343912774205c94fcbb17 rdf:reifies <<( doc:Factsfact4_49 rdfs:label "AR model" )>> ;
+	prov:wasDerivedFrom doc:dbd192425da7 .
+doc:Factsfact4_49 rdfs:label "weighted integration of prediction results" .
+_:ef37e7fc99aa756280b0978d2d14a403 rdf:reifies <<( doc:Factsfact4_49 rdfs:label "weighted integration of prediction results" )>> ;
+	prov:wasDerivedFrom doc:dbd192425da7 .
+_:f48d521b8874c36a626828c4a63cfffd prov:wasDerivedFrom doc:dbd192425da7 .
+doc:Factsfunction1_31 rdfs:label "signal data statistics, patterns, and trends analysis" .
+_:a12f6f5d2b3c23b26388244894409cc1 rdf:reifies <<( doc:Factsfunction1_31 rdfs:label "signal data statistics, patterns, and trends analysis" )>> ;
+	prov:wasDerivedFrom doc:dbd192425da7 .
+doc:Factsfact4_49 rdfs:label "multi-model integrated prediction method" .
+_:e2501dd51536689a11e6cf5dc39004cf rdf:reifies <<( doc:Factsfact4_49 rdfs:label "multi-model integrated prediction method" )>> ;
+	prov:wasDerivedFrom doc:dbd192425da7 .
+doc:Factsfact4_49 rdfs:label "SVR model" .
+_:bf4099dc4ddf1a2dba1656c40dcd683 rdf:reifies <<( doc:Factsfact4_49 rdfs:label "SVR model" )>> ;
+	prov:wasDerivedFrom doc:dbd192425da7 .
+doc:Factsfunction1_31 a None:Fault_feature_extraction .
+_:aacbc3f564feeea640feab4dd791256 rdf:reifies <<( doc:Factsfunction1_31 rdf:type None:Fault_feature_extraction )>> ;
+	prov:wasDerivedFrom doc:dbd192425da7 .
+doc:Factsfact4_49 rdfs:label "multi-scale AR-SVR-LSTM ensemble learning prediction model" .
+_:fe2fe52b63f210197aaa1878e76b2e91 rdf:reifies <<( doc:Factsfact4_49 rdfs:label "multi-scale AR-SVR-LSTM ensemble learning prediction model" )>> ;
+	prov:wasDerivedFrom doc:dbd192425da7 .
+doc:Factsfact15_20 None:has_predictive_maintenance_function None:Future_state_forecast .
+_:dd1002eb812e22dd9cddd59a2737eaa rdf:reifies <<( doc:Factsfact15_20 None:has_predictive_maintenance_function None:Future_state_forecast )>> ;
+	prov:wasDerivedFrom doc:dbd192425da7 .
+_:dffb63d1caffe54fd4ba07fd59c1843a prov:wasDerivedFrom doc:dbd192425da7 .
+_:a27f502f4641a116032da306f2fd7213 prov:wasDerivedFrom doc:dbd192425da7 .
+doc:Factsfact14_18 rdfs:label "state prediction" .
+_:fd0970f15d4b606e829e32d2ad20cc8e rdf:reifies <<( doc:Factsfact14_18 rdfs:label "state prediction" )>> ;
+	prov:wasDerivedFrom doc:dbd192425da7 .
+doc:Factsfact15_20 rdfs:label "future state prediction" .
+_:e62a32155bb72cc23a62d6bb5c4f00fa rdf:reifies <<( doc:Factsfact15_20 rdfs:label "future state prediction" )>> ;
+	prov:wasDerivedFrom doc:dbd192425da7 .
+doc:Factsfact8_30 rdfs:label "critical components of large forging presses" .
+_:d1143abd3a44a5dfe19395d828b759ac rdf:reifies <<( doc:Factsfact8_30 rdfs:label "critical components of large forging presses" )>> ;
+	prov:wasDerivedFrom doc:dbd192425da7 .
+doc:Factsindicator2_2 rdfs:label "Mean Absolute Error (MAE)" .
+_:cec22268e835a9897ff457ed47ac6eb rdf:reifies <<( doc:Factsindicator2_2 rdfs:label "Mean Absolute Error (MAE)" )>> ;
+	prov:wasDerivedFrom doc:dbd192425da7 .
+doc:Factsfact10_24 a None:Maintainable_item .
+_:c7bdc4b50dfcf0a548d8d7531c945615 rdf:reifies <<( doc:Factsfact10_24 rdf:type None:Maintainable_item )>> ;
+	prov:wasDerivedFrom doc:dbd192425da7 .
+doc:Factsvalue2_5 None:has_text_value "less than 1%" .
+_:ee942fe66f83defd6632068e00be6f6b rdf:reifies <<( doc:Factsvalue2_5 None:has_text_value "less than 1%" )>> ;
+	prov:wasDerivedFrom doc:dbd192425da7 .
+doc:Factsfact27_15 rdfs:label "production safety" .
+_:facb2e9d4c9cc4cb5f0c15c51e825913 rdf:reifies <<( doc:Factsfact27_15 rdfs:label "production safety" )>> ;
+	prov:wasDerivedFrom doc:dbd192425da7 .
+doc:Factsfact13_20 rdfs:label "health management" .
+_:b36aced50db6851405dc010d658f1cc4 rdf:reifies <<( doc:Factsfact13_20 rdfs:label "health management" )>> ;
+	prov:wasDerivedFrom doc:dbd192425da7 .
+doc:Factsfact24_30 rdfs:label "certain enterprise" .
+_:c99e836d79fb53e80eb0ef88c49e76a9 rdf:reifies <<( doc:Factsfact24_30 rdfs:label "certain enterprise" )>> ;
+	prov:wasDerivedFrom doc:dbd192425da7 .
+_:ff4166debc38c961abd14b92375d6cb7 prov:wasDerivedFrom doc:dbd192425da7 .
+_:f79bea32861392b138a5f05869ce2023 prov:wasDerivedFrom doc:dbd192425da7 .
+doc:Factsfact4_49 None:describes_type doc:Factsfact8_30 .
+_:e372747347d111c773144a9835eee448 rdf:reifies <<( doc:Factsfact4_49 None:describes_type doc:Factsfact8_30 )>> ;
+	prov:wasDerivedFrom doc:dbd192425da7 .
+doc:Factsfact18_37 rdfs:label "signal data" .
+_:b6469334a4069c2b36540285bb2d59eb rdf:reifies <<( doc:Factsfact18_37 rdfs:label "signal data" )>> ;
+	prov:wasDerivedFrom doc:dbd192425da7 .
+doc:Factsfact26_18 a None:Performance_value .
+_:a878167536b14e66e76b537bbb75d454 rdf:reifies <<( doc:Factsfact26_18 rdf:type None:Performance_value )>> ;
+	prov:wasDerivedFrom doc:dbd192425da7 .
+doc:Factsindicator2_2 rdfs:label "Root Mean Square Error (RMSE)" .
+_:d8a48724b65d7d0c2a5e189009a81326 rdf:reifies <<( doc:Factsindicator2_2 rdfs:label "Root Mean Square Error (RMSE)" )>> ;
+	prov:wasDerivedFrom doc:dbd192425da7 .
+doc:Factsfact17_29 rdfs:label "time series signal interrelationships analysis" .
+_:dffa2a8483efdbb2cb5467179333e11d rdf:reifies <<( doc:Factsfact17_29 rdfs:label "time series signal interrelationships analysis" )>> ;
+	prov:wasDerivedFrom doc:dbd192425da7 .
+doc:Factsfact28_20 a None:Predictive_maintenance_model .
+_:f3cf63b73a2fb6d3d52e236b45fd39c6 rdf:reifies <<( doc:Factsfact28_20 rdf:type None:Predictive_maintenance_model )>> ;
+	prov:wasDerivedFrom doc:dbd192425da7 .
+doc:Factsfact4_49 rdfs:label "LSTM model" .
+_:daf5b6769afa4fe6d5ee91ffed510b0 rdf:reifies <<( doc:Factsfact4_49 rdfs:label "LSTM model" )>> ;
+	prov:wasDerivedFrom doc:dbd192425da7 .
+doc:Factsvalue2_5 rdfs:label "less than 5%" .
+_:eb441e9e6392b811cb36e4a2fed1369d rdf:reifies <<( doc:Factsvalue2_5 rdfs:label "less than 5%" )>> ;
+	prov:wasDerivedFrom doc:dbd192425da7 .
+doc:Factsfact4_49 rdfs:label "ensemble learning prediction technique" .
+_:c97d25c81222a7b3e485c1ae896f135f rdf:reifies <<( doc:Factsfact4_49 rdfs:label "ensemble learning prediction technique" )>> ;
+	prov:wasDerivedFrom doc:dbd192425da7 .
+cco:InformationContentEntity owl:sameAs cco:DirectiveInformationContentEntity .

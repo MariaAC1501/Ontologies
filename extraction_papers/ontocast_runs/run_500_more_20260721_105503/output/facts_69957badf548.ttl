@@ -1,0 +1,385 @@
+@prefix None: <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD/seed#> .
+@prefix cco: <http://www.ontologyrepository.com/CommonCoreOntologies/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doc: <https://growgraph.dev/doc/69957badf548/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix cd: <https://growgraph.dev/facts> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix schema: <https://schema.org/> .
+@prefix schema1: <http://schema.org/> .
+doc:a46c6fba0b2c a prov:Entity , schema:text ;
+	prov:generatedAtTime "2026-07-22T06:46:37.346692Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+	schema:position 0 ;
+	schema:identifier "a46c6fba0b2c" .
+doc:Factsml2 a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Classification> .
+_:a1a9e02e4ffdd656bd0b419dbba681ab rdf:reifies <<( doc:Factsml2 rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Classification> )>> ;
+	prov:wasDerivedFrom doc:a46c6fba0b2c .
+doc:Factsdoc1_60 cd:mentionsDefectModel doc:Factsdefect2 .
+_:ab38c92ab0cb5ac76da561a050429f1d rdf:reifies <<( doc:Factsdoc1_60 cd:mentionsDefectModel doc:Factsdefect2 )>> ;
+	prov:wasDerivedFrom doc:a46c6fba0b2c .
+doc:Factsdoc1_60 cd:usesAlgorithm doc:Factsml2 .
+_:a0bb80cf7e9807b6ec178ea215ddee8 rdf:reifies <<( doc:Factsdoc1_60 cd:usesAlgorithm doc:Factsml2 )>> ;
+	prov:wasDerivedFrom doc:a46c6fba0b2c .
+doc:Factsdoc1_60 schema:author doc:Factsauthor1_77 .
+_:d79d2202ae60bd65153331f197157842 rdf:reifies <<( doc:Factsdoc1_60 schema:author doc:Factsauthor1_77 )>> ;
+	prov:wasDerivedFrom doc:a46c6fba0b2c .
+doc:Factsdefect2 schema:name "metal protrusion" .
+_:baaed2ad99a3385a2c6639a0904c47e8 rdf:reifies <<( doc:Factsdefect2 schema:name "metal protrusion" )>> ;
+	prov:wasDerivedFrom doc:a46c6fba0b2c .
+doc:Factsdoc1_60 a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Predictive_maintenance_model> .
+_:a5fcc2ab65b2b7bc666eba182524ff30 rdf:reifies <<( doc:Factsdoc1_60 rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Predictive_maintenance_model> )>> ;
+	prov:wasDerivedFrom doc:a46c6fba0b2c .
+doc:Factsdoc1_60 None:has_title doc:Factsdoc1_60 .
+_:cb11ca93f8d5010361d12d3891d10430 rdf:reifies <<( doc:Factsdoc1_60 None:has_title doc:Factsdoc1_60 )>> ;
+	prov:wasDerivedFrom doc:a46c6fba0b2c .
+doc:Factsdoc1_60 cd:reportsPerformance doc:Factsperf1_5 .
+_:f149a11db685f4e0ee6efa0c07d5a482 rdf:reifies <<( doc:Factsdoc1_60 cd:reportsPerformance doc:Factsperf1_5 )>> ;
+	prov:wasDerivedFrom doc:a46c6fba0b2c .
+doc:Factsdoc1_60 a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Article_title> .
+_:d1f34e16d2873e7805e9879ae05412a6 rdf:reifies <<( doc:Factsdoc1_60 rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Article_title> )>> ;
+	prov:wasDerivedFrom doc:a46c6fba0b2c .
+doc:Factsdoc1_60 schema:about doc:FactsmachineLearningAlgorithms_1 .
+_:fd0d7e2f060b0107bc139e3a017b9fda rdf:reifies <<( doc:Factsdoc1_60 schema:about doc:FactsmachineLearningAlgorithms_1 )>> ;
+	prov:wasDerivedFrom doc:a46c6fba0b2c .
+doc:Factsauthor1_77 a schema:Person .
+_:e9401f5dcaffb5cef6cb15cd2dfcc811 rdf:reifies <<( doc:Factsauthor1_77 rdf:type schema:Person )>> ;
+	prov:wasDerivedFrom doc:a46c6fba0b2c .
+doc:Factsdoc1_60 schema:about doc:Factsdefect3 .
+_:c72e2c6e07215298be1dd7be13c25f65 rdf:reifies <<( doc:Factsdoc1_60 schema:about doc:Factsdefect3 )>> ;
+	prov:wasDerivedFrom doc:a46c6fba0b2c .
+doc:Factsauthor1_77 schema:name "Gyeong-Yeol Lee" .
+_:ae97bdba69411e57a051ca5c149ef688 rdf:reifies <<( doc:Factsauthor1_77 schema:name "Gyeong-Yeol Lee" )>> ;
+	prov:wasDerivedFrom doc:a46c6fba0b2c .
+doc:FactsmachineLearningAlgorithms_1 a None:Data_mining_technique_function .
+_:e6e18c639793fa591b83b60faca0dab3 rdf:reifies <<( doc:FactsmachineLearningAlgorithms_1 rdf:type None:Data_mining_technique_function )>> ;
+	prov:wasDerivedFrom doc:a46c6fba0b2c .
+doc:Factsdefect3 a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Classification> .
+_:ef74dcc23fe6519fa8a3781386afeccd rdf:reifies <<( doc:Factsdefect3 rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Classification> )>> ;
+	prov:wasDerivedFrom doc:a46c6fba0b2c .
+doc:Factsdefect2 schema:name "a particle on insulator" .
+_:dbf81a499189e904ac84d306e22d8bbe rdf:reifies <<( doc:Factsdefect2 schema:name "a particle on insulator" )>> ;
+	prov:wasDerivedFrom doc:a46c6fba0b2c .
+doc:Factsdefect3 schema:name "delamination" .
+_:f2854fb19bb06cd2a2c7471375b895e4 rdf:reifies <<( doc:Factsdefect3 schema:name "delamination" )>> ;
+	prov:wasDerivedFrom doc:a46c6fba0b2c .
+doc:Factsdefect3 a schema:CreativeWork .
+_:b03cb7711d9ca5a1b0d8ca310d7e0c7a rdf:reifies <<( doc:Factsdefect3 rdf:type schema:CreativeWork )>> ;
+	prov:wasDerivedFrom doc:a46c6fba0b2c .
+doc:Factsitem1_27 a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Maintainable_item> .
+_:db3b32d8a1a3ca732a35a5da405dc566 rdf:reifies <<( doc:Factsitem1_27 rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Maintainable_item> )>> ;
+	prov:wasDerivedFrom doc:a46c6fba0b2c .
+doc:Factsdoc1_60 None:has_text_value "Partial discharge defect classification in cast-resin transformers using machine learning-based algorithms" .
+_:a246963a242482f07137ce2cf4d8721 rdf:reifies <<( doc:Factsdoc1_60 None:has_text_value "Partial discharge defect classification in cast-resin transformers using machine learning-based algorithms" )>> ;
+	prov:wasDerivedFrom doc:a46c6fba0b2c .
+doc:Factsdefect2 a schema:CreativeWork .
+_:f2d2644e75a9c9ee2f408c23c73e3aa9 rdf:reifies <<( doc:Factsdefect2 rdf:type schema:CreativeWork )>> ;
+	prov:wasDerivedFrom doc:a46c6fba0b2c .
+doc:Factsperf1_5 None:has_text_value "over 90%" .
+_:daa7ccab3e5f6281f2b982b61c86f104 rdf:reifies <<( doc:Factsperf1_5 None:has_text_value "over 90%" )>> ;
+	prov:wasDerivedFrom doc:a46c6fba0b2c .
+doc:Factsdefect4_1 a schema:CreativeWork .
+_:f11db8ffe4caa46a581b13dc37d3d845 rdf:reifies <<( doc:Factsdefect4_1 rdf:type schema:CreativeWork )>> ;
+	prov:wasDerivedFrom doc:a46c6fba0b2c .
+doc:Factsml2 schema:name "random forest" .
+_:c1938d101753c02b43dd8e7e65d3fc41 rdf:reifies <<( doc:Factsml2 schema:name "random forest" )>> ;
+	prov:wasDerivedFrom doc:a46c6fba0b2c .
+doc:Factsml2 schema:name "artificial neural network" .
+_:e5718595c272d07a99d1cb7777b7a1f0 rdf:reifies <<( doc:Factsml2 schema:name "artificial neural network" )>> ;
+	prov:wasDerivedFrom doc:a46c6fba0b2c .
+doc:Factsauthor1_77 schema:name "Gyung-Suk Kil" .
+_:d87cd4e55994935e25e0f108dd0df2d3 rdf:reifies <<( doc:Factsauthor1_77 schema:name "Gyung-Suk Kil" )>> ;
+	prov:wasDerivedFrom doc:a46c6fba0b2c .
+doc:Factsperf1_5 a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Performance_value> .
+_:d564dbd1ab62765cb2a53152d7480673 rdf:reifies <<( doc:Factsperf1_5 rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Performance_value> )>> ;
+	prov:wasDerivedFrom doc:a46c6fba0b2c .
+doc:FactsrogowskiSensor a schema:Sensor .
+_:fe22682c3c45ee22f0ba0347b2eac928 rdf:reifies <<( doc:FactsrogowskiSensor rdf:type schema:Sensor )>> ;
+	prov:wasDerivedFrom doc:a46c6fba0b2c .
+doc:Factsperf1_5 schema:description "PD classification rate using RF model was slightly higher than that of the ANN model" .
+_:e6d1a1a523d91e3870ebedb4b3b3dd2a rdf:reifies <<( doc:Factsperf1_5 schema:description "PD classification rate using RF model was slightly higher than that of the ANN model" )>> ;
+	prov:wasDerivedFrom doc:a46c6fba0b2c .
+doc:Factsdoc1_60 schema:about doc:Factsitem1_27 .
+_:dff6ed7bb5b68616954f0d6d9dbd920b rdf:reifies <<( doc:Factsdoc1_60 schema:about doc:Factsitem1_27 )>> ;
+	prov:wasDerivedFrom doc:a46c6fba0b2c .
+doc:Factsdoc1_60 cd:mentionsDefectModel doc:Factsdefect4_1 .
+_:ae6a3cb9ea51f2b3319622c6c64a64a4 rdf:reifies <<( doc:Factsdoc1_60 cd:mentionsDefectModel doc:Factsdefect4_1 )>> ;
+	prov:wasDerivedFrom doc:a46c6fba0b2c .
+doc:Factsauthor1_77 schema:name "Sung-Wook Kim" .
+_:fb57324f7518e1385c9c90eca1cedad5 rdf:reifies <<( doc:Factsauthor1_77 schema:name "Sung-Wook Kim" )>> ;
+	prov:wasDerivedFrom doc:a46c6fba0b2c .
+doc:Factsdefect4_1 schema:name "a void" .
+_:dd91cfc4056c930faad94c1d124b99dc rdf:reifies <<( doc:Factsdefect4_1 schema:name "a void" )>> ;
+	prov:wasDerivedFrom doc:a46c6fba0b2c .
+doc:Factsdoc1_60 schema:about doc:FactsrogowskiSensor .
+_:f784e6b7b35b932fef13c2470cf9faf7 rdf:reifies <<( doc:Factsdoc1_60 schema:about doc:FactsrogowskiSensor )>> ;
+	prov:wasDerivedFrom doc:a46c6fba0b2c .
+doc:Factsdoc1_60 cd:mentionsDefectModel doc:Factsdefect3 .
+_:ad824c1b6eebb06ce90eb0dadd5237ec rdf:reifies <<( doc:Factsdoc1_60 cd:mentionsDefectModel doc:Factsdefect3 )>> ;
+	prov:wasDerivedFrom doc:a46c6fba0b2c .
+doc:ffd6750cd9bd a prov:Entity , schema:text ;
+	prov:generatedAtTime "2026-07-22T06:46:37.349691Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+	schema:position 1 ;
+	schema:identifier "ffd6750cd9bd" .
+doc:Factsdoc1_60 None:has_text_value "PD defect classification using ANN and RF models for cast-resin transformers" .
+_:ae40c452eea34405bbbc46c7a2835b46 rdf:reifies <<( doc:Factsdoc1_60 None:has_text_value "PD defect classification using ANN and RF models for cast-resin transformers" )>> ;
+	prov:wasDerivedFrom doc:ffd6750cd9bd .
+_:ef74dcc23fe6519fa8a3781386afeccd prov:wasDerivedFrom doc:ffd6750cd9bd .
+doc:Factsfeat2 a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Data_variable> .
+_:bcfd84b6a6d4ca928fa14d0e8ae449fa rdf:reifies <<( doc:Factsfeat2 rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Data_variable> )>> ;
+	prov:wasDerivedFrom doc:ffd6750cd9bd .
+doc:Factssensor1_5 a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Predictive_maintenance_model> .
+_:b5c045b8ceec331586b3495611c5ba8d rdf:reifies <<( doc:Factssensor1_5 rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Predictive_maintenance_model> )>> ;
+	prov:wasDerivedFrom doc:ffd6750cd9bd .
+doc:Factsml2 a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Predictive_maintenance_model> .
+_:ded8dbe7b11de63b1a13144cce275015 rdf:reifies <<( doc:Factsml2 rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Predictive_maintenance_model> )>> ;
+	prov:wasDerivedFrom doc:ffd6750cd9bd .
+doc:Factsid1_75 a None:Article_identifier .
+_:c88f07f97c1c577982fc5150785b35d1 rdf:reifies <<( doc:Factsid1_75 rdf:type None:Article_identifier )>> ;
+	prov:wasDerivedFrom doc:ffd6750cd9bd .
+doc:Factsforecast1_11 a None:Future_state_forecast .
+_:c1daaf613de75fdfae3a11942cac95f6 rdf:reifies <<( doc:Factsforecast1_11 rdf:type None:Future_state_forecast )>> ;
+	prov:wasDerivedFrom doc:ffd6750cd9bd .
+doc:Factsdoc1_60 None:has_identifier doc:Factsid1_75 .
+_:c767f5200faeb6983d679ca616097a79 rdf:reifies <<( doc:Factsdoc1_60 None:has_identifier doc:Factsid1_75 )>> ;
+	prov:wasDerivedFrom doc:ffd6750cd9bd .
+doc:Factsdetail1_23 None:has_text_value "printed circuit board (PCB) based Rogowski-type PD sensor" .
+_:e6a5b7291fea6e1e9b185bc00a59ab78 rdf:reifies <<( doc:Factsdetail1_23 None:has_text_value "printed circuit board (PCB) based Rogowski-type PD sensor" )>> ;
+	prov:wasDerivedFrom doc:ffd6750cd9bd .
+_:d1f34e16d2873e7805e9879ae05412a6 prov:wasDerivedFrom doc:ffd6750cd9bd .
+doc:Factsml2 None:has_text_value "random forest" .
+_:fa52484f620bcd7523f7c380d700fc33 rdf:reifies <<( doc:Factsml2 None:has_text_value "random forest" )>> ;
+	prov:wasDerivedFrom doc:ffd6750cd9bd .
+doc:Factsrl1_1 a None:Remaining_useful_life_estimation .
+_:d3a41c6663d9d105910e51e4a90bdc5c rdf:reifies <<( doc:Factsrl1_1 rdf:type None:Remaining_useful_life_estimation )>> ;
+	prov:wasDerivedFrom doc:ffd6750cd9bd .
+doc:Factsfeat2 None:has_text_value "PRPD pattern" .
+_:edec8a9f2d1d0a8adf852b5436540903 rdf:reifies <<( doc:Factsfeat2 None:has_text_value "PRPD pattern" )>> ;
+	prov:wasDerivedFrom doc:ffd6750cd9bd .
+doc:Factsitem1_27 rdfs:label "cast-resin transformers"@en .
+_:d413daa29f8b0f281f23f5459d7fa17 rdf:reifies <<( doc:Factsitem1_27 rdfs:label "cast-resin transformers"@en )>> ;
+	prov:wasDerivedFrom doc:ffd6750cd9bd .
+doc:Factshealth1_5 a None:Health_assessment .
+_:c347f31ec209a2b894fa167cb2a3b102 rdf:reifies <<( doc:Factshealth1_5 rdf:type None:Health_assessment )>> ;
+	prov:wasDerivedFrom doc:ffd6750cd9bd .
+doc:Factsdefect2 a None:Fault_identification .
+_:ab81f3f8764e96533b727bfae18fb2b4 rdf:reifies <<( doc:Factsdefect2 rdf:type None:Fault_identification )>> ;
+	prov:wasDerivedFrom doc:ffd6750cd9bd .
+doc:Factsforecast1_11 a None:One_step_future_state_forecast .
+_:ed6113684723c0ebb3898618ea7509bb rdf:reifies <<( doc:Factsforecast1_11 rdf:type None:One_step_future_state_forecast )>> ;
+	prov:wasDerivedFrom doc:ffd6750cd9bd .
+doc:Factsdetail1_23 a None:Design_detail .
+_:e68e371ddecec3d2a8e2e4bfa80c42df rdf:reifies <<( doc:Factsdetail1_23 rdf:type None:Design_detail )>> ;
+	prov:wasDerivedFrom doc:ffd6750cd9bd .
+doc:Factsfunc1_9 a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Classification> .
+_:ba392c0bef11b64e0ef405fd4d3ab05c rdf:reifies <<( doc:Factsfunc1_9 rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Classification> )>> ;
+	prov:wasDerivedFrom doc:ffd6750cd9bd .
+doc:Factsid1_75 None:has_text_value "gyeongyeollee1@gmail.com; kilgs@kmou.ac.kr; number1@silla.ac.kr" .
+_:c215adf3c45d22e99ad6012d05ce0fb6 rdf:reifies <<( doc:Factsid1_75 None:has_text_value "gyeongyeollee1@gmail.com; kilgs@kmou.ac.kr; number1@silla.ac.kr" )>> ;
+	prov:wasDerivedFrom doc:ffd6750cd9bd .
+doc:Factsdefect2 a None:Fault_feature_extraction .
+_:da6b7e14bc5471d634737e121ec32092 rdf:reifies <<( doc:Factsdefect2 rdf:type None:Fault_feature_extraction )>> ;
+	prov:wasDerivedFrom doc:ffd6750cd9bd .
+doc:Factsforecast1_11 a None:Multiple_steps_future_state_forecast .
+_:d8c48525234ede867662b360e25125d8 rdf:reifies <<( doc:Factsforecast1_11 rdf:type None:Multiple_steps_future_state_forecast )>> ;
+	prov:wasDerivedFrom doc:ffd6750cd9bd .
+doc:Factsml2 cco:designates doc:Factsann1_1 .
+_:e322a4dd3da4803a769b23a60856cf7d rdf:reifies <<( doc:Factsml2 cco:designates doc:Factsann1_1 )>> ;
+	prov:wasDerivedFrom doc:ffd6750cd9bd .
+_:db3b32d8a1a3ca732a35a5da405dc566 prov:wasDerivedFrom doc:ffd6750cd9bd .
+doc:Factsfeat2 None:has_text_value "PD single pulse" .
+_:f80cfee34375af7cc38e8f230569b6ff rdf:reifies <<( doc:Factsfeat2 None:has_text_value "PD single pulse" )>> ;
+	prov:wasDerivedFrom doc:ffd6750cd9bd .
+doc:Factsml2 cco:describes doc:Factsfunc1_9 .
+_:e05047871c055a2147023a96cb6651f7 rdf:reifies <<( doc:Factsml2 cco:describes doc:Factsfunc1_9 )>> ;
+	prov:wasDerivedFrom doc:ffd6750cd9bd .
+doc:Factsdefect2 a None:Fault_detection .
+_:a8da8d70c70cda24ad3424b3af30f475 rdf:reifies <<( doc:Factsdefect2 rdf:type None:Fault_detection )>> ;
+	prov:wasDerivedFrom doc:ffd6750cd9bd .
+_:cb11ca93f8d5010361d12d3891d10430 prov:wasDerivedFrom doc:ffd6750cd9bd .
+doc:Factsann1_1 a cco:Algorithm .
+_:e63358ccd95ef52c350c44c97e35bc71 rdf:reifies <<( doc:Factsann1_1 rdf:type cco:Algorithm )>> ;
+	prov:wasDerivedFrom doc:ffd6750cd9bd .
+doc:Factsanalysis1_2 a None:Association_discovery .
+_:ff5ca7fd1196fc0c9eeaa23e0fad8c38 rdf:reifies <<( doc:Factsanalysis1_2 rdf:type None:Association_discovery )>> ;
+	prov:wasDerivedFrom doc:ffd6750cd9bd .
+doc:Factsanalysis5 a None:Deviation_detection .
+_:c9db0546e50705a3da58e90b3d73290b rdf:reifies <<( doc:Factsanalysis5 rdf:type None:Deviation_detection )>> ;
+	prov:wasDerivedFrom doc:ffd6750cd9bd .
+doc:Factsyear1_116 None:has_interger_value 1990 .
+_:aea3fbb20072fc0332324fc2493ec564 rdf:reifies <<( doc:Factsyear1_116 None:has_interger_value 1990 )>> ;
+	prov:wasDerivedFrom doc:ffd6750cd9bd .
+doc:Factsfeat2 None:has_text_value "fast Fourier transform (FFT) spectra" .
+_:e74d04991f7f1a042843bab62dabe78f rdf:reifies <<( doc:Factsfeat2 None:has_text_value "fast Fourier transform (FFT) spectra" )>> ;
+	prov:wasDerivedFrom doc:ffd6750cd9bd .
+doc:Factsfeat2 None:has_text_value "kurtosis" .
+_:cc3bc6e850edf3d16e0e4059be96a34b rdf:reifies <<( doc:Factsfeat2 None:has_text_value "kurtosis" )>> ;
+	prov:wasDerivedFrom doc:ffd6750cd9bd .
+doc:Factsdoc1_60 None:has_publication_year doc:Factsyear1_116 .
+_:ea78d58e568bdbbfea8b935e47cd1053 rdf:reifies <<( doc:Factsdoc1_60 None:has_publication_year doc:Factsyear1_116 )>> ;
+	prov:wasDerivedFrom doc:ffd6750cd9bd .
+_:a5fcc2ab65b2b7bc666eba182524ff30 prov:wasDerivedFrom doc:ffd6750cd9bd .
+doc:Factsann1_1 rdfs:label "artificial neural network"@en .
+_:d45585bc79a4bfa4f8efafdcb0b25b82 rdf:reifies <<( doc:Factsann1_1 rdfs:label "artificial neural network"@en )>> ;
+	prov:wasDerivedFrom doc:ffd6750cd9bd .
+doc:Factsrf1_2 rdfs:label "random forest"@en .
+_:d7da31c5e06af6a1b9a18ae7a63afc52 rdf:reifies <<( doc:Factsrf1_2 rdfs:label "random forest"@en )>> ;
+	prov:wasDerivedFrom doc:ffd6750cd9bd .
+doc:Factsml2 cco:designates doc:Factsrf1_2 .
+_:b86c639255510b75fb970fe23e484900 rdf:reifies <<( doc:Factsml2 cco:designates doc:Factsrf1_2 )>> ;
+	prov:wasDerivedFrom doc:ffd6750cd9bd .
+doc:Factsanalysis3 a None:Regression .
+_:e4d64b8a3a82308b6a3ebb3a3bd4c1ad rdf:reifies <<( doc:Factsanalysis3 rdf:type None:Regression )>> ;
+	prov:wasDerivedFrom doc:ffd6750cd9bd .
+doc:Factsyear1_116 a None:Publication_year .
+_:f892e987b2ac1e4078debe617dbf7527 rdf:reifies <<( doc:Factsyear1_116 rdf:type None:Publication_year )>> ;
+	prov:wasDerivedFrom doc:ffd6750cd9bd .
+doc:Factsfunc1_9 rdfs:label "PD defect classification"@en .
+_:ed5c5cfd5c23bebc21a95880e08a0b91 rdf:reifies <<( doc:Factsfunc1_9 rdfs:label "PD defect classification"@en )>> ;
+	prov:wasDerivedFrom doc:ffd6750cd9bd .
+doc:Factshealth1_5 a None:Health_modelling .
+_:e3d245aceab2088b47ef3a784bd9798b rdf:reifies <<( doc:Factshealth1_5 rdf:type None:Health_modelling )>> ;
+	prov:wasDerivedFrom doc:ffd6750cd9bd .
+doc:Factsrf1_2 a cco:Algorithm .
+_:f38d18913a5a5286c51571276f6530a8 rdf:reifies <<( doc:Factsrf1_2 rdf:type cco:Algorithm )>> ;
+	prov:wasDerivedFrom doc:ffd6750cd9bd .
+doc:Factsfeat2 None:has_text_value "skewness" .
+_:e8481eed0c8bc73c0ad8c8b1c41c0d74 rdf:reifies <<( doc:Factsfeat2 None:has_text_value "skewness" )>> ;
+	prov:wasDerivedFrom doc:ffd6750cd9bd .
+doc:Factsml2 None:has_text_value "PD defect classification" .
+_:bd276b5d37d6cadfec58062729c3999 rdf:reifies <<( doc:Factsml2 None:has_text_value "PD defect classification" )>> ;
+	prov:wasDerivedFrom doc:ffd6750cd9bd .
+doc:Factssensor1_5 None:has_design_detail doc:Factsdetail1_23 .
+_:e6e8ea3d877d222abd35abbf57f47a61 rdf:reifies <<( doc:Factssensor1_5 None:has_design_detail doc:Factsdetail1_23 )>> ;
+	prov:wasDerivedFrom doc:ffd6750cd9bd .
+doc:Factsanalysis2_2 a None:Sequential_pattern_discovery .
+_:ee36bd97eb7cc2fa4be1a8d82bfee023 rdf:reifies <<( doc:Factsanalysis2_2 rdf:type None:Sequential_pattern_discovery )>> ;
+	prov:wasDerivedFrom doc:ffd6750cd9bd .
+doc:Factsml2 None:has_text_value "artificial neural network" .
+_:fad792c48ace01818720c19fee465d4e rdf:reifies <<( doc:Factsml2 None:has_text_value "artificial neural network" )>> ;
+	prov:wasDerivedFrom doc:ffd6750cd9bd .
+doc:Factsanalysis4 a None:Clustering .
+_:bc37f53f7a53e2546a839df81e803d23 rdf:reifies <<( doc:Factsanalysis4 rdf:type None:Clustering )>> ;
+	prov:wasDerivedFrom doc:ffd6750cd9bd .
+doc:3644aa66f012 a prov:Entity , schema:text ;
+	prov:generatedAtTime "2026-07-22T06:46:37.352691Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+	schema:position 2 ;
+	schema:identifier "3644aa66f012" .
+doc:Factsdoc1_60 <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#has_title> doc:Factsdoc1_60 .
+_:e579ce0f62bfebfa436d42fff438016b rdf:reifies <<( doc:Factsdoc1_60 <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#has_title> doc:Factsdoc1_60 )>> ;
+	prov:wasDerivedFrom doc:3644aa66f012 .
+doc:Factsdoc1_60 schema1:headline "PD Classification algorithms"@en .
+_:f6373f9f0f819da5bc35da5731f06a93 rdf:reifies <<( doc:Factsdoc1_60 schema1:headline "PD Classification algorithms"@en )>> ;
+	prov:wasDerivedFrom doc:3644aa66f012 .
+doc:FactsdecisionTreeModel rdfs:label "decision tree"@en .
+_:fe1330b3a46e86018b9d64f0f0d1412b rdf:reifies <<( doc:FactsdecisionTreeModel rdfs:label "decision tree"@en )>> ;
+	prov:wasDerivedFrom doc:3644aa66f012 .
+_:ed5c5cfd5c23bebc21a95880e08a0b91 prov:wasDerivedFrom doc:3644aa66f012 .
+doc:FactsrfAlgorithmStructure <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#describes_configuration> doc:Factsml2 .
+_:b269a838b869a2b584321433445b2a05 rdf:reifies <<( doc:FactsrfAlgorithmStructure <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#describes_configuration> doc:Factsml2 )>> ;
+	prov:wasDerivedFrom doc:3644aa66f012 .
+doc:FactspdDataset a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Data_variable> .
+_:e256fc168cd04f98724feb28800414a3 rdf:reifies <<( doc:FactspdDataset rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Data_variable> )>> ;
+	prov:wasDerivedFrom doc:3644aa66f012 .
+doc:FactsdecisionTreeModel a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Predictive_maintenance_model> .
+_:b33d87aa6784316e0f12a6ba52bda0f7 rdf:reifies <<( doc:FactsdecisionTreeModel rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Predictive_maintenance_model> )>> ;
+	prov:wasDerivedFrom doc:3644aa66f012 .
+doc:Factsperf1_5 <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#has_text_value> "slightly higher than ANN model" .
+_:db52b97aee27b1c1fdf0c3e2d98b5d5e rdf:reifies <<( doc:Factsperf1_5 <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#has_text_value> "slightly higher than ANN model" )>> ;
+	prov:wasDerivedFrom doc:3644aa66f012 .
+doc:Factsitem1_27 rdfs:label "cast-resin transformer"@en .
+_:e5bdaa5f808679286d3a79331faa9e5c rdf:reifies <<( doc:Factsitem1_27 rdfs:label "cast-resin transformer"@en )>> ;
+	prov:wasDerivedFrom doc:3644aa66f012 .
+doc:FactsrfAlgorithmStructure a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Model_configuration> .
+_:d667ac7166abd3d71b8c6baa1ef2ae1d rdf:reifies <<( doc:FactsrfAlgorithmStructure rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Model_configuration> )>> ;
+	prov:wasDerivedFrom doc:3644aa66f012 .
+doc:Factsrf1_2 a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Classification> .
+_:f415f1cb25393d13c88978280b3ebe24 rdf:reifies <<( doc:Factsrf1_2 rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Classification> )>> ;
+	prov:wasDerivedFrom doc:3644aa66f012 .
+_:d1f34e16d2873e7805e9879ae05412a6 prov:wasDerivedFrom doc:3644aa66f012 .
+doc:Factsdoc1_60 a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Predictive_Maintenance_Article> .
+_:c71d6474ce9b98c3cf47e17d86b7e3e2 rdf:reifies <<( doc:Factsdoc1_60 rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Predictive_Maintenance_Article> )>> ;
+	prov:wasDerivedFrom doc:3644aa66f012 .
+doc:Factsrelu a cco:Algorithm .
+_:bb4b6ea41643cb0138c543808ed24d42 rdf:reifies <<( doc:Factsrelu rdf:type cco:Algorithm )>> ;
+	prov:wasDerivedFrom doc:3644aa66f012 .
+doc:Factsfunc1_9 a cco:Algorithm .
+_:b9d58670d97fab2b1402008be4febfe5 rdf:reifies <<( doc:Factsfunc1_9 rdf:type cco:Algorithm )>> ;
+	prov:wasDerivedFrom doc:3644aa66f012 .
+doc:Factsrelu rdfs:label "rectified linear unit (ReLU)"@en .
+_:ae2dd5bf90c06bf4770bdb6e0c285831 rdf:reifies <<( doc:Factsrelu rdfs:label "rectified linear unit (ReLU)"@en )>> ;
+	prov:wasDerivedFrom doc:3644aa66f012 .
+doc:Factsrf1_2 rdfs:label "Random forest (RF) algorithm"@en .
+_:e48e6ea95506ba680c9262497f2b7ee4 rdf:reifies <<( doc:Factsrf1_2 rdfs:label "Random forest (RF) algorithm"@en )>> ;
+	prov:wasDerivedFrom doc:3644aa66f012 .
+doc:FactspdDataset rdfs:label "PD features"@en .
+_:f79c8b597f6fd984c0f214edd90c7fda rdf:reifies <<( doc:FactspdDataset rdfs:label "PD features"@en )>> ;
+	prov:wasDerivedFrom doc:3644aa66f012 .
+doc:Factsentropy_1 rdfs:label "entropy"@en .
+_:a2ee3ccb90f9eedc2442a22848e12d1b rdf:reifies <<( doc:Factsentropy_1 rdfs:label "entropy"@en )>> ;
+	prov:wasDerivedFrom doc:3644aa66f012 .
+_:ded8dbe7b11de63b1a13144cce275015 prov:wasDerivedFrom doc:3644aa66f012 .
+doc:FactsginiIndex a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Performance_indicator> .
+_:da564e3bfc1bc73c687b82dd1c7138f2 rdf:reifies <<( doc:FactsginiIndex rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Performance_indicator> )>> ;
+	prov:wasDerivedFrom doc:3644aa66f012 .
+doc:Factsann1_1 cco:describes doc:Factsml2 .
+_:b81b49dbbd1727ad7d253be13fd24a7d rdf:reifies <<( doc:Factsann1_1 cco:describes doc:Factsml2 )>> ;
+	prov:wasDerivedFrom doc:3644aa66f012 .
+doc:Factsann1_1 a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Classification> .
+_:e26b0066bcf323186dce52eb08904036 rdf:reifies <<( doc:Factsann1_1 rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Classification> )>> ;
+	prov:wasDerivedFrom doc:3644aa66f012 .
+doc:Factsentropy_1 a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Performance_indicator> .
+_:b732be15a834cb91c38a2d4769254b7b rdf:reifies <<( doc:Factsentropy_1 rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Performance_indicator> )>> ;
+	prov:wasDerivedFrom doc:3644aa66f012 .
+doc:FactsrfAlgorithmStructure rdfs:label "conceptual structure of the RF algorithm"@en .
+_:adbda35fc508607a250058b96767cb9 rdf:reifies <<( doc:FactsrfAlgorithmStructure rdfs:label "conceptual structure of the RF algorithm"@en )>> ;
+	prov:wasDerivedFrom doc:3644aa66f012 .
+doc:FactsrfAlgorithmStructure rdfs:label "conceptual structure of ANN model"@en .
+_:e9cae1f28e59088e824084f3e621e175 rdf:reifies <<( doc:FactsrfAlgorithmStructure rdfs:label "conceptual structure of ANN model"@en )>> ;
+	prov:wasDerivedFrom doc:3644aa66f012 .
+doc:Factsann1_1 rdfs:label "Artificial neural network (ANN) algorithm"@en .
+_:ec37a398a1458ac58ac1491d9c92b9c1 rdf:reifies <<( doc:Factsann1_1 rdfs:label "Artificial neural network (ANN) algorithm"@en )>> ;
+	prov:wasDerivedFrom doc:3644aa66f012 .
+_:ba392c0bef11b64e0ef405fd4d3ab05c prov:wasDerivedFrom doc:3644aa66f012 .
+doc:Factsperf1_5 rdfs:label "accuracy using RF model"@en .
+_:c4e0b8b591535889bc1e8d054685fdd5 rdf:reifies <<( doc:Factsperf1_5 rdfs:label "accuracy using RF model"@en )>> ;
+	prov:wasDerivedFrom doc:3644aa66f012 .
+doc:FactsmajorityVoting a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Classification> .
+_:be80c5cde0b1fcd548ecd457303de4f rdf:reifies <<( doc:FactsmajorityVoting rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Classification> )>> ;
+	prov:wasDerivedFrom doc:3644aa66f012 .
+doc:Factsdoc1_60 rdfs:label "PD Classification algorithms"@en .
+_:a298e7b689d6032c8e338b9f592cd1bb rdf:reifies <<( doc:Factsdoc1_60 rdfs:label "PD Classification algorithms"@en )>> ;
+	prov:wasDerivedFrom doc:3644aa66f012 .
+_:d564dbd1ab62765cb2a53152d7480673 prov:wasDerivedFrom doc:3644aa66f012 .
+doc:Factsperf1_5 rdfs:label "classification accuracies over 90%"@en .
+_:f1fdbb7fc2ecfd02f4b16b58dd1c6bfb rdf:reifies <<( doc:Factsperf1_5 rdfs:label "classification accuracies over 90%"@en )>> ;
+	prov:wasDerivedFrom doc:3644aa66f012 .
+_:db3b32d8a1a3ca732a35a5da405dc566 prov:wasDerivedFrom doc:3644aa66f012 .
+doc:FactspdDataset rdfs:label "PD datasets"@en .
+_:ca79f3b15266cd0ff36f247ad312b67b rdf:reifies <<( doc:FactspdDataset rdfs:label "PD datasets"@en )>> ;
+	prov:wasDerivedFrom doc:3644aa66f012 .
+doc:Factsml2 rdfs:label "RF model"@en .
+_:a21ec57455714134889bbad655b45f28 rdf:reifies <<( doc:Factsml2 rdfs:label "RF model"@en )>> ;
+	prov:wasDerivedFrom doc:3644aa66f012 .
+doc:Factsfunc1_9 rdfs:label "Overall process of PD defect classification using ML algorithms for the cast-resin transformer"@en .
+_:d963af85758e037afac5569a1443963 rdf:reifies <<( doc:Factsfunc1_9 rdfs:label "Overall process of PD defect classification using ML algorithms for the cast-resin transformer"@en )>> ;
+	prov:wasDerivedFrom doc:3644aa66f012 .
+doc:Factsfunc1_9 <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#describes_type> doc:Factsfunc1_9 .
+_:ec3f058c9cf607325585355a565f32ad rdf:reifies <<( doc:Factsfunc1_9 <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#describes_type> doc:Factsfunc1_9 )>> ;
+	prov:wasDerivedFrom doc:3644aa66f012 .
+doc:Factsperf1_5 <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#has_text_value> "over 90%" .
+_:a5d9044d1711eced49e7ad936308e421 rdf:reifies <<( doc:Factsperf1_5 <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#has_text_value> "over 90%" )>> ;
+	prov:wasDerivedFrom doc:3644aa66f012 .
+doc:Factsml2 rdfs:label "ANN model"@en .
+_:e79ab3f5eb6726c1923f05674ccfa434 rdf:reifies <<( doc:Factsml2 rdfs:label "ANN model"@en )>> ;
+	prov:wasDerivedFrom doc:3644aa66f012 .
+doc:Factsrf1_2 cco:describes doc:Factsml2 .
+_:ae1e500824d2ab82472439d286d05461 rdf:reifies <<( doc:Factsrf1_2 cco:describes doc:Factsml2 )>> ;
+	prov:wasDerivedFrom doc:3644aa66f012 .
+doc:FactsmajorityVoting rdfs:label "majority voting"@en .
+_:d35c5fc3861131b2eca8370247f15e6 rdf:reifies <<( doc:FactsmajorityVoting rdfs:label "majority voting"@en )>> ;
+	prov:wasDerivedFrom doc:3644aa66f012 .
+doc:FactsginiIndex rdfs:label "Gini Index"@en .
+_:ea6a061f441bcf43088298606002669 rdf:reifies <<( doc:FactsginiIndex rdfs:label "Gini Index"@en )>> ;
+	prov:wasDerivedFrom doc:3644aa66f012 .
+<http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Predictive_maintenance_model> owl:sameAs <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Predictive_Maintenance_Article> .

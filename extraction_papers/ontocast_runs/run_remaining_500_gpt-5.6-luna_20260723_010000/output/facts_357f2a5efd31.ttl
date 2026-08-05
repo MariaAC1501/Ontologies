@@ -1,0 +1,533 @@
+@prefix None: <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#> .
+@prefix cco: <http://www.ontologyrepository.com/CommonCoreOntologies/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doc: <https://growgraph.dev/doc/357f2a5efd31/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix csvw: <http://www.w3.org/ns/csvw#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix schema: <https://schema.org/> .
+doc:ffa2f468829c a prov:Entity , schema:text ;
+	prov:generatedAtTime "2026-07-24T17:29:43.491231Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+	schema:position 0 ;
+	schema:identifier "ffa2f468829c" .
+doc:Factsoffshore_capacity_2014 schema:about doc:FactsturbineComponent .
+_:cc9b1524b5fc4cba0222c2b8dbf3c434 rdf:reifies <<( doc:Factsoffshore_capacity_2014 schema:about doc:FactsturbineComponent )>> ;
+	prov:wasDerivedFrom doc:ffa2f468829c .
+doc:FactsdataEnvelopmentAnalysis schema:description "Algorithm used to select the component with the lowest maintenance cost rate" .
+_:c685b6a44e7dcc379a02334ba9f7dfc9 rdf:reifies <<( doc:FactsdataEnvelopmentAnalysis schema:description "Algorithm used to select the component with the lowest maintenance cost rate" )>> ;
+	prov:wasDerivedFrom doc:ffa2f468829c .
+doc:FactsmaintenanceStrategyDomain schema:usesAlgorithm doc:FactsdataEnvelopmentAnalysis .
+_:c0cc10cd04c7f95942f569da523f5410 rdf:reifies <<( doc:FactsmaintenanceStrategyDomain schema:usesAlgorithm doc:FactsdataEnvelopmentAnalysis )>> ;
+	prov:wasDerivedFrom doc:ffa2f468829c .
+doc:FactsturbineComponent schema:name "offshore wind farm" .
+_:f73f734088961f6b56858ad8de2337c8 rdf:reifies <<( doc:FactsturbineComponent schema:name "offshore wind farm" )>> ;
+	prov:wasDerivedFrom doc:ffa2f468829c .
+doc:Predictive_Maintenance_Article schema:author doc:FactsxuBai .
+_:fd29c6b50db3ada22137e0bcdc5e7e81 rdf:reifies <<( doc:Predictive_Maintenance_Article schema:author doc:FactsxuBai )>> ;
+	prov:wasDerivedFrom doc:ffa2f468829c .
+doc:Factsglobal_wind_report_2024 schema:datePublished "2024"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+_:db47e5c51b2658ee1da6194c9fdd3012 rdf:reifies <<( doc:Factsglobal_wind_report_2024 schema:datePublished "2024"^^<http://www.w3.org/2001/XMLSchema#gYear> )>> ;
+	prov:wasDerivedFrom doc:ffa2f468829c .
+doc:FactsxuBai schema:affiliation doc:FactslancasterUniversity .
+_:f60c3e1e190247ccaa21a31ec968489b rdf:reifies <<( doc:FactsxuBai schema:affiliation doc:FactslancasterUniversity )>> ;
+	prov:wasDerivedFrom doc:ffa2f468829c .
+doc:Predictive_Maintenance_Article a None:Predictive_Maintenance_Article .
+_:bfbc4a40dff722fd7fa4b53a7181de38 rdf:reifies <<( doc:Predictive_Maintenance_Article rdf:type None:Predictive_Maintenance_Article )>> ;
+	prov:wasDerivedFrom doc:ffa2f468829c .
+doc:FactscomponentHealthIndex schema:name "maintenance priority index" .
+_:bff313cd4cb039e4c266d47a2fa02f4b rdf:reifies <<( doc:FactscomponentHealthIndex schema:name "maintenance priority index" )>> ;
+	prov:wasDerivedFrom doc:ffa2f468829c .
+doc:Factsoffshore_capacity_2014 a schema:Observation .
+_:d036282385ea7a74984c2895dbee0141 rdf:reifies <<( doc:Factsoffshore_capacity_2014 rdf:type schema:Observation )>> ;
+	prov:wasDerivedFrom doc:ffa2f468829c .
+doc:FactsdataEnvelopmentAnalysis schema:name "Exhaustive search algorithm" .
+_:c72d54f4511912e6ca6476467c47ef3e rdf:reifies <<( doc:FactsdataEnvelopmentAnalysis schema:name "Exhaustive search algorithm" )>> ;
+	prov:wasDerivedFrom doc:ffa2f468829c .
+doc:FactsdataEnvelopmentAnalysis a cco:Algorithm .
+_:e34dfb4a118b1b19b9270682b8f47575 rdf:reifies <<( doc:FactsdataEnvelopmentAnalysis rdf:type cco:Algorithm )>> ;
+	prov:wasDerivedFrom doc:ffa2f468829c .
+doc:FactswindFarmComponents schema:isPartOf doc:FactsturbineComponent .
+_:ce47080739c837db8ba9b3ef08c78d22 rdf:reifies <<( doc:FactswindFarmComponents schema:isPartOf doc:FactsturbineComponent )>> ;
+	prov:wasDerivedFrom doc:ffa2f468829c .
+doc:Factsoffshore_capacity_2014 schema:unitText "GW" .
+_:e15b6a446b530fc30b40e1053d12887f rdf:reifies <<( doc:Factsoffshore_capacity_2014 schema:unitText "GW" )>> ;
+	prov:wasDerivedFrom doc:ffa2f468829c .
+doc:FactsmaintenanceStrategyDomain schema:description "Framework balancing maintenance cost and component condition for offshore wind farms" .
+_:ad38d703681d179bccc4ee2dd1311db1 rdf:reifies <<( doc:FactsmaintenanceStrategyDomain schema:description "Framework balancing maintenance cost and component condition for offshore wind farms" )>> ;
+	prov:wasDerivedFrom doc:ffa2f468829c .
+doc:Predictive_Maintenance_Article schema:about doc:FactsmaintenanceStrategyDomain .
+_:fbe80f9819ee95235710d7eddf549bcf rdf:reifies <<( doc:Predictive_Maintenance_Article schema:about doc:FactsmaintenanceStrategyDomain )>> ;
+	prov:wasDerivedFrom doc:ffa2f468829c .
+doc:FactsxuBai schema:givenName "Xu" .
+_:f3f3dd66571dd1db95190eff51c1fede rdf:reifies <<( doc:FactsxuBai schema:givenName "Xu" )>> ;
+	prov:wasDerivedFrom doc:ffa2f468829c .
+doc:FactslancasterUniversity schema:addressCountry "China" .
+_:d5faf6148247bc535d7274d9282ab7bf rdf:reifies <<( doc:FactslancasterUniversity schema:addressCountry "China" )>> ;
+	prov:wasDerivedFrom doc:ffa2f468829c .
+doc:FactsremainingUsefulLifeEstimationFunction_5 a None:Remaining_useful_life_estimation .
+_:f62dd1f26e9cd003820b3281558aceb6 rdf:reifies <<( doc:FactsremainingUsefulLifeEstimationFunction_5 rdf:type None:Remaining_useful_life_estimation )>> ;
+	prov:wasDerivedFrom doc:ffa2f468829c .
+doc:FactsdataEnvelopmentAnalysis schema:name "Data envelopment analysis" .
+_:cb291038b7d01bce8b3b90c00e9a808d rdf:reifies <<( doc:FactsdataEnvelopmentAnalysis schema:name "Data envelopment analysis" )>> ;
+	prov:wasDerivedFrom doc:ffa2f468829c .
+doc:FactscomponentHealthIndex a None:Performance_indicator .
+_:cfaa3c5e21513b89af5732c47bd52f4d rdf:reifies <<( doc:FactscomponentHealthIndex rdf:type None:Performance_indicator )>> ;
+	prov:wasDerivedFrom doc:ffa2f468829c .
+doc:Factsoffshore_capacity_2014 schema:value "2000"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+_:fe25732a7b5d2df941701cceb76ec046 rdf:reifies <<( doc:Factsoffshore_capacity_2014 schema:value "2000"^^<http://www.w3.org/2001/XMLSchema#decimal> )>> ;
+	prov:wasDerivedFrom doc:ffa2f468829c .
+doc:FactsxuBai a schema:Person .
+_:d39a4af90c737a9b99d79f1cf256d88d rdf:reifies <<( doc:FactsxuBai rdf:type schema:Person )>> ;
+	prov:wasDerivedFrom doc:ffa2f468829c .
+doc:Factsarticle_title_1_5 a None:Article_title .
+_:eb002ec79e5cf36691cf7e8fccc6a7d9 rdf:reifies <<( doc:Factsarticle_title_1_5 rdf:type None:Article_title )>> ;
+	prov:wasDerivedFrom doc:ffa2f468829c .
+doc:Factsoffshore_capacity_2014 schema:propertyID "projected global installed offshore wind power capacity" .
+_:fe77d76f12265f1db5ffde58078bec18 rdf:reifies <<( doc:Factsoffshore_capacity_2014 schema:propertyID "projected global installed offshore wind power capacity" )>> ;
+	prov:wasDerivedFrom doc:ffa2f468829c .
+doc:FactsxuBai schema:familyName "Ma" .
+_:dcada28cd4a6ca46959ddc1ddca7072c rdf:reifies <<( doc:FactsxuBai schema:familyName "Ma" )>> ;
+	prov:wasDerivedFrom doc:ffa2f468829c .
+doc:Factsoffshore_capacity_2014 schema:observationDate "2050"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+_:cc90dbc94165e1feee942f683caca1bd rdf:reifies <<( doc:Factsoffshore_capacity_2014 schema:observationDate "2050"^^<http://www.w3.org/2001/XMLSchema#gYear> )>> ;
+	prov:wasDerivedFrom doc:ffa2f468829c .
+doc:Factsglobal_wind_report_2024 schema:name "Global Wind Report 2024" .
+_:ca90742b6bfdb5e94cfacb4c4ef066d rdf:reifies <<( doc:Factsglobal_wind_report_2024 schema:name "Global Wind Report 2024" )>> ;
+	prov:wasDerivedFrom doc:ffa2f468829c .
+doc:FactswindFarmComponents schema:name "individual wind farm components" .
+_:e2b63d5893f3a0590bb02456215211e4 rdf:reifies <<( doc:FactswindFarmComponents schema:name "individual wind farm components" )>> ;
+	prov:wasDerivedFrom doc:ffa2f468829c .
+doc:FactsmaintenanceStrategyDomain None:has_predictive_maintenance_function doc:FactsremainingUsefulLifeEstimationFunction_5 .
+_:ae8630eb055b4a72b67638f76085aa1b rdf:reifies <<( doc:FactsmaintenanceStrategyDomain None:has_predictive_maintenance_function doc:FactsremainingUsefulLifeEstimationFunction_5 )>> ;
+	prov:wasDerivedFrom doc:ffa2f468829c .
+doc:FactsxuBai schema:givenName "Xiaofang" .
+_:c5d72c6c300b727ab862de29edab6d4 rdf:reifies <<( doc:FactsxuBai schema:givenName "Xiaofang" )>> ;
+	prov:wasDerivedFrom doc:ffa2f468829c .
+doc:FactscomponentHealthIndex schema:description "Priority index calculated using data envelopment analysis to determine maintenance mode and sequence" .
+_:beae86b554711624419b478f2775c72b rdf:reifies <<( doc:FactscomponentHealthIndex schema:description "Priority index calculated using data envelopment analysis to determine maintenance mode and sequence" )>> ;
+	prov:wasDerivedFrom doc:ffa2f468829c .
+doc:Predictive_Maintenance_Article None:has_title doc:Factsarticle_title_1_5 .
+_:a30906da146e8363fa538f27ecce9c0a rdf:reifies <<( doc:Predictive_Maintenance_Article None:has_title doc:Factsarticle_title_1_5 )>> ;
+	prov:wasDerivedFrom doc:ffa2f468829c .
+doc:Factsoffshore_capacity_2014 schema:propertyID "global cumulative installed offshore wind power capacity" .
+_:c56f2b7618cefd4deac180bbf3b34315 rdf:reifies <<( doc:Factsoffshore_capacity_2014 schema:propertyID "global cumulative installed offshore wind power capacity" )>> ;
+	prov:wasDerivedFrom doc:ffa2f468829c .
+doc:FactslancasterUniversity schema:addressLocality "Harbin" .
+_:d084ae19c5c13288cecaf99d8884cde rdf:reifies <<( doc:FactslancasterUniversity schema:addressLocality "Harbin" )>> ;
+	prov:wasDerivedFrom doc:ffa2f468829c .
+doc:FactsxuBai schema:familyName "Luo" .
+_:aa9b89fa92cb8d371622f6505053b7f8 rdf:reifies <<( doc:FactsxuBai schema:familyName "Luo" )>> ;
+	prov:wasDerivedFrom doc:ffa2f468829c .
+doc:Factsoffshore_capacity_2014 schema:value "75"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+_:ecebd8b81c5fe36632402d051ea1e809 rdf:reifies <<( doc:Factsoffshore_capacity_2014 schema:value "75"^^<http://www.w3.org/2001/XMLSchema#decimal> )>> ;
+	prov:wasDerivedFrom doc:ffa2f468829c .
+doc:FactslancasterUniversity schema:addressCountry "United Kingdom" .
+_:ed12b1e4c7ddaa846bd40aa85cc96266 rdf:reifies <<( doc:FactslancasterUniversity schema:addressCountry "United Kingdom" )>> ;
+	prov:wasDerivedFrom doc:ffa2f468829c .
+doc:FactsturbineComponent a None:Maintainable_item .
+_:c4a2a189cdd167be984f47367f5f87b6 rdf:reifies <<( doc:FactsturbineComponent rdf:type None:Maintainable_item )>> ;
+	prov:wasDerivedFrom doc:ffa2f468829c .
+doc:Factsarticle_title_1_5 None:has_text_value "An integrated condition-based opportunistic maintenance framework for offshore wind farms" .
+_:cf324601d9683f1e8757f1048df33c3a rdf:reifies <<( doc:Factsarticle_title_1_5 None:has_text_value "An integrated condition-based opportunistic maintenance framework for offshore wind farms" )>> ;
+	prov:wasDerivedFrom doc:ffa2f468829c .
+doc:FactsmaintenanceStrategyDomain None:has_predictive_maintenance_function doc:FactshealthAssessmentFunction_32 .
+_:e1b924bad41b876373aee77e16e0fbff rdf:reifies <<( doc:FactsmaintenanceStrategyDomain None:has_predictive_maintenance_function doc:FactshealthAssessmentFunction_32 )>> ;
+	prov:wasDerivedFrom doc:ffa2f468829c .
+doc:FactslancasterUniversity a schema:Organization .
+_:c3c936ba238301ddcdf40150ae6370fc rdf:reifies <<( doc:FactslancasterUniversity rdf:type schema:Organization )>> ;
+	prov:wasDerivedFrom doc:ffa2f468829c .
+doc:FactsxuBai schema:givenName "Xiandong" .
+_:d702a38661c3a85631d546ff12c073d4 rdf:reifies <<( doc:FactsxuBai schema:givenName "Xiandong" )>> ;
+	prov:wasDerivedFrom doc:ffa2f468829c .
+doc:Predictive_Maintenance_Article schema:keywords "Maintenance framework" .
+_:edee4dc3713d0cda97fd72b806fa7b2d rdf:reifies <<( doc:Predictive_Maintenance_Article schema:keywords "Maintenance framework" )>> ;
+	prov:wasDerivedFrom doc:ffa2f468829c .
+doc:FactsxuBai schema:familyName "Bai" .
+_:a81ec8352c30ca55e25a446cc386eccc rdf:reifies <<( doc:FactsxuBai schema:familyName "Bai" )>> ;
+	prov:wasDerivedFrom doc:ffa2f468829c .
+doc:FactsremainingUsefulLifeEstimationFunction_5 schema:name "Remaining useful life estimation from P-F intervals" .
+_:a7f21bb61fd95c4e113748ee0beda7f9 rdf:reifies <<( doc:FactsremainingUsefulLifeEstimationFunction_5 schema:name "Remaining useful life estimation from P-F intervals" )>> ;
+	prov:wasDerivedFrom doc:ffa2f468829c .
+doc:FactsxuBai schema:familyName "Zan" .
+_:ab8fbe1aac0625f0156accc143c30777 rdf:reifies <<( doc:FactsxuBai schema:familyName "Zan" )>> ;
+	prov:wasDerivedFrom doc:ffa2f468829c .
+doc:Predictive_Maintenance_Article schema:keywords "Component condition" .
+_:a42e3c18703bf9e106fb2bb8e6467625 rdf:reifies <<( doc:Predictive_Maintenance_Article schema:keywords "Component condition" )>> ;
+	prov:wasDerivedFrom doc:ffa2f468829c .
+doc:FactsxuBai schema:givenName "Jiaxuan" .
+_:c6a242c73882ee12bd2ab7382b332fdb rdf:reifies <<( doc:FactsxuBai schema:givenName "Jiaxuan" )>> ;
+	prov:wasDerivedFrom doc:ffa2f468829c .
+doc:FactscomponentHealthIndex schema:name "component health index" .
+_:f00d13456daa9585c3840b6205352aa6 rdf:reifies <<( doc:FactscomponentHealthIndex schema:name "component health index" )>> ;
+	prov:wasDerivedFrom doc:ffa2f468829c .
+doc:Factsglobal_wind_report_2024 a schema:CreativeWork .
+_:ece96b7ac16f3efa8d8b923d06e292e4 rdf:reifies <<( doc:Factsglobal_wind_report_2024 rdf:type schema:CreativeWork )>> ;
+	prov:wasDerivedFrom doc:ffa2f468829c .
+doc:Predictive_Maintenance_Article schema:about doc:FactsturbineComponent .
+_:c751233646ad69e979cddef0465472eb rdf:reifies <<( doc:Predictive_Maintenance_Article schema:about doc:FactsturbineComponent )>> ;
+	prov:wasDerivedFrom doc:ffa2f468829c .
+doc:Factsoffshore_capacity_2014 schema:observationDate "2023"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+_:ab9d9c63b81263f76f3cf6c134bb17e1 rdf:reifies <<( doc:Factsoffshore_capacity_2014 schema:observationDate "2023"^^<http://www.w3.org/2001/XMLSchema#gYear> )>> ;
+	prov:wasDerivedFrom doc:ffa2f468829c .
+doc:Predictive_Maintenance_Article schema:keywords "Offshore wind farms" .
+_:daac610fdeea6a5e28d94e41452e3c07 rdf:reifies <<( doc:Predictive_Maintenance_Article schema:keywords "Offshore wind farms" )>> ;
+	prov:wasDerivedFrom doc:ffa2f468829c .
+doc:FactsdataEnvelopmentAnalysis schema:description "Method used to calculate the maintenance priority index" .
+_:b7ed55d6b625727a8aa384dfe2efa877 rdf:reifies <<( doc:FactsdataEnvelopmentAnalysis schema:description "Method used to calculate the maintenance priority index" )>> ;
+	prov:wasDerivedFrom doc:ffa2f468829c .
+doc:FactslancasterUniversity schema:name "Jiangsu University of Science and Technology" .
+_:a9452d86077dcb99607b5e3ed794b749 rdf:reifies <<( doc:FactslancasterUniversity schema:name "Jiangsu University of Science and Technology" )>> ;
+	prov:wasDerivedFrom doc:ffa2f468829c .
+doc:FactsxuBai schema:givenName "Yingfei" .
+_:cd6332f44a9c15704401bb4a91caa69f rdf:reifies <<( doc:FactsxuBai schema:givenName "Yingfei" )>> ;
+	prov:wasDerivedFrom doc:ffa2f468829c .
+doc:Factsoffshore_capacity_2014 schema:observationDate "2014"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+_:cf222c0defa27ba38e8169e1da6c650d rdf:reifies <<( doc:Factsoffshore_capacity_2014 schema:observationDate "2014"^^<http://www.w3.org/2001/XMLSchema#gYear> )>> ;
+	prov:wasDerivedFrom doc:ffa2f468829c .
+doc:FactsmaintenanceStrategyDomain a None:Predictive_maintenance_system_module .
+_:cc0b2ad70dcccc6046d647b0fa2019a0 rdf:reifies <<( doc:FactsmaintenanceStrategyDomain rdf:type None:Predictive_maintenance_system_module )>> ;
+	prov:wasDerivedFrom doc:ffa2f468829c .
+doc:FactsmaintenanceStrategyDomain schema:name "Integrated condition-based opportunistic maintenance framework" .
+_:dc04f8f96845aee596810fa5a9c5489e rdf:reifies <<( doc:FactsmaintenanceStrategyDomain schema:name "Integrated condition-based opportunistic maintenance framework" )>> ;
+	prov:wasDerivedFrom doc:ffa2f468829c .
+doc:Predictive_Maintenance_Article schema:keywords "Maintenance cost" .
+_:a6082c01bb55e3ab08abe7e587d95883 rdf:reifies <<( doc:Predictive_Maintenance_Article schema:keywords "Maintenance cost" )>> ;
+	prov:wasDerivedFrom doc:ffa2f468829c .
+doc:Factsoffshore_capacity_2014 schema:value "8"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+_:bd893ea274e91986a8b1f18c14f3fe5a rdf:reifies <<( doc:Factsoffshore_capacity_2014 schema:value "8"^^<http://www.w3.org/2001/XMLSchema#decimal> )>> ;
+	prov:wasDerivedFrom doc:ffa2f468829c .
+doc:FactshealthAssessmentFunction_32 a None:Health_assessment .
+_:cfa6f65d176c907c8dbfb5b1fad28fb0 rdf:reifies <<( doc:FactshealthAssessmentFunction_32 rdf:type None:Health_assessment )>> ;
+	prov:wasDerivedFrom doc:ffa2f468829c .
+doc:Predictive_Maintenance_Article schema:name "An integrated condition-based opportunistic maintenance framework for offshore wind farms" .
+_:ebd4e5eca36c041bae91907ae2c40c7f rdf:reifies <<( doc:Predictive_Maintenance_Article schema:name "An integrated condition-based opportunistic maintenance framework for offshore wind farms" )>> ;
+	prov:wasDerivedFrom doc:ffa2f468829c .
+doc:FactshealthAssessmentFunction_32 schema:name "Component health assessment using a health index" .
+_:e939b9f4ae40b4cf5c5b613d1eb3778f rdf:reifies <<( doc:FactshealthAssessmentFunction_32 schema:name "Component health assessment using a health index" )>> ;
+	prov:wasDerivedFrom doc:ffa2f468829c .
+doc:FactslancasterUniversity schema:addressLocality "Lancaster" .
+_:bc18cd9a09a9f9259f5ca8c89f29efb4 rdf:reifies <<( doc:FactslancasterUniversity schema:addressLocality "Lancaster" )>> ;
+	prov:wasDerivedFrom doc:ffa2f468829c .
+doc:FactscomponentHealthIndex schema:description "Health index calculated from P-F intervals to divide component health stages" .
+_:b75f27170477e3560835ecbf412517bf rdf:reifies <<( doc:FactscomponentHealthIndex schema:description "Health index calculated from P-F intervals to divide component health stages" )>> ;
+	prov:wasDerivedFrom doc:ffa2f468829c .
+doc:Predictive_Maintenance_Article schema:keywords "Condition-based opportunistic maintenance" .
+_:b2cd675f9475c902f42b730e3d50db0e rdf:reifies <<( doc:Predictive_Maintenance_Article schema:keywords "Condition-based opportunistic maintenance" )>> ;
+	prov:wasDerivedFrom doc:ffa2f468829c .
+doc:FactslancasterUniversity schema:addressLocality "Zhenjiang" .
+_:c6d0369a02151c22e06f564aa9319c9 rdf:reifies <<( doc:FactslancasterUniversity schema:addressLocality "Zhenjiang" )>> ;
+	prov:wasDerivedFrom doc:ffa2f468829c .
+doc:Factsoffshore_capacity_2014 schema:observationDate "2030"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+_:ecaeb95dea197e164ac9e5e4094eb9c8 rdf:reifies <<( doc:Factsoffshore_capacity_2014 schema:observationDate "2030"^^<http://www.w3.org/2001/XMLSchema#gYear> )>> ;
+	prov:wasDerivedFrom doc:ffa2f468829c .
+doc:FactslancasterUniversity schema:name "Harbin Engineering University" .
+_:c7bb2bd5ff4a46d48e82dea62f919717 rdf:reifies <<( doc:FactslancasterUniversity schema:name "Harbin Engineering University" )>> ;
+	prov:wasDerivedFrom doc:ffa2f468829c .
+doc:FactslancasterUniversity schema:name "Lancaster University" .
+_:b991fdc32df17f251bcd0490909da9b8 rdf:reifies <<( doc:FactslancasterUniversity schema:name "Lancaster University" )>> ;
+	prov:wasDerivedFrom doc:ffa2f468829c .
+doc:Factsoffshore_capacity_2014 schema:value "270"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+_:f54d3af90754ff63186fb3ba406a6171 rdf:reifies <<( doc:Factsoffshore_capacity_2014 schema:value "270"^^<http://www.w3.org/2001/XMLSchema#decimal> )>> ;
+	prov:wasDerivedFrom doc:ffa2f468829c .
+doc:FactswindFarmComponents a None:Maintainable_item .
+_:f9d7cb6356124397c2e1b9def37f52ee rdf:reifies <<( doc:FactswindFarmComponents rdf:type None:Maintainable_item )>> ;
+	prov:wasDerivedFrom doc:ffa2f468829c .
+doc:5ab297505a12 a prov:Entity , schema:text ;
+	prov:generatedAtTime "2026-07-24T17:29:43.49823Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+	schema:position 1 ;
+	schema:identifier "5ab297505a12" .
+doc:Factsliterature_review_table_1 csvw:row doc:FactsstrategyTypeRow .
+_:a38bb9e132e78d82deb2130bfbe8ed69 rdf:reifies <<( doc:Factsliterature_review_table_1 csvw:row doc:FactsstrategyTypeRow )>> ;
+	prov:wasDerivedFrom doc:5ab297505a12 .
+doc:FactsturbineComponent schema:availability doc:FactsonshoreAvailability .
+_:e27eefbc7d1520ab83dcdb00e6cb5522 rdf:reifies <<( doc:FactsturbineComponent schema:availability doc:FactsonshoreAvailability )>> ;
+	prov:wasDerivedFrom doc:5ab297505a12 .
+doc:FactsturbineComponent schema:hasPart doc:FactsturbineComponent .
+_:c0de6a3f239cf2412a3727e625160e4e rdf:reifies <<( doc:FactsturbineComponent schema:hasPart doc:FactsturbineComponent )>> ;
+	prov:wasDerivedFrom doc:5ab297505a12 .
+doc:FactsoffshoreMaintenanceCost schema:name "maintenance cost" .
+_:ad66e3b18e9772a739b202c1d5cf012b rdf:reifies <<( doc:FactsoffshoreMaintenanceCost schema:name "maintenance cost" )>> ;
+	prov:wasDerivedFrom doc:5ab297505a12 .
+doc:FactsoffshoreMaintenanceCost schema:description "Offshore wind turbine installation and maintenance costs are higher than onshore costs."@en .
+_:d61efc1322304d4089aab4beb01196a3 rdf:reifies <<( doc:FactsoffshoreMaintenanceCost schema:description "Offshore wind turbine installation and maintenance costs are higher than onshore costs."@en )>> ;
+	prov:wasDerivedFrom doc:5ab297505a12 .
+doc:FactsonshoreAvailability schema:maxValue "99"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+_:ea5300728fef083d3236125ffa97757a rdf:reifies <<( doc:FactsonshoreAvailability schema:maxValue "99"^^<http://www.w3.org/2001/XMLSchema#decimal> )>> ;
+	prov:wasDerivedFrom doc:5ab297505a12 .
+doc:FactsonshoreAvailability schema:minValue "60"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+_:f55ea0106807ebb54be6e1bea6363848 rdf:reifies <<( doc:FactsonshoreAvailability schema:minValue "60"^^<http://www.w3.org/2001/XMLSchema#decimal> )>> ;
+	prov:wasDerivedFrom doc:5ab297505a12 .
+doc:FactsoffshoreMaintenanceCost a schema:PropertyValue .
+_:a829446516f61cf6247bfab3d9b4a9b3 rdf:reifies <<( doc:FactsoffshoreMaintenanceCost rdf:type schema:PropertyValue )>> ;
+	prov:wasDerivedFrom doc:5ab297505a12 .
+_:c4a2a189cdd167be984f47367f5f87b6 prov:wasDerivedFrom doc:5ab297505a12 .
+doc:FactsturbineComponent rdfs:label "offshore wind farm"@en .
+_:c6d6a3e60f7c12045634e1b7b95c8ca7 rdf:reifies <<( doc:FactsturbineComponent rdfs:label "offshore wind farm"@en )>> ;
+	prov:wasDerivedFrom doc:5ab297505a12 .
+doc:FactsonshoreAvailability schema:minValue "95"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+_:aa439e347a951ba13f8b7778ef93dec3 rdf:reifies <<( doc:FactsonshoreAvailability schema:minValue "95"^^<http://www.w3.org/2001/XMLSchema#decimal> )>> ;
+	prov:wasDerivedFrom doc:5ab297505a12 .
+_:bfbc4a40dff722fd7fa4b53a7181de38 prov:wasDerivedFrom doc:5ab297505a12 .
+_:c751233646ad69e979cddef0465472eb prov:wasDerivedFrom doc:5ab297505a12 .
+doc:FactsonshoreAvailability a schema:QuantitativeValue .
+_:c97a59d461be9745b7910524b90522d rdf:reifies <<( doc:FactsonshoreAvailability rdf:type schema:QuantitativeValue )>> ;
+	prov:wasDerivedFrom doc:5ab297505a12 .
+doc:FactsxuBai schema:email "xiandong.ma@lancaster.ac.uk" .
+_:bdf0f97e9ead31d887cc960429b2433 rdf:reifies <<( doc:FactsxuBai schema:email "xiandong.ma@lancaster.ac.uk" )>> ;
+	prov:wasDerivedFrom doc:5ab297505a12 .
+doc:FactsstrategyTypeRow a csvw:Row .
+_:f7dfbac0826f002ee35d8ec99767b09d rdf:reifies <<( doc:FactsstrategyTypeRow rdf:type csvw:Row )>> ;
+	prov:wasDerivedFrom doc:5ab297505a12 .
+doc:FactsxuBai schema:name "X. Ma" .
+_:c67a262427c80654dfdbe4fce6bf3c4f rdf:reifies <<( doc:FactsxuBai schema:name "X. Ma" )>> ;
+	prov:wasDerivedFrom doc:5ab297505a12 .
+_:fd29c6b50db3ada22137e0bcdc5e7e81 prov:wasDerivedFrom doc:5ab297505a12 .
+doc:FactsturbineComponent rdfs:label "onshore wind turbine"@en .
+_:a535b33947850e15406802e9d4960c50 rdf:reifies <<( doc:FactsturbineComponent rdfs:label "onshore wind turbine"@en )>> ;
+	prov:wasDerivedFrom doc:5ab297505a12 .
+doc:Predictive_Maintenance_Article schema:description "The article reviews maintenance strategies for offshore wind farms."@en .
+_:d84735e436c8b6340ae10678571f39b8 rdf:reifies <<( doc:Predictive_Maintenance_Article schema:description "The article reviews maintenance strategies for offshore wind farms."@en )>> ;
+	prov:wasDerivedFrom doc:5ab297505a12 .
+doc:FactsxuBai schema:email "luoxiaofang@just.edu.cn" .
+_:fc2165dc8651d639532aeb6f5c94a238 rdf:reifies <<( doc:FactsxuBai schema:email "luoxiaofang@just.edu.cn" )>> ;
+	prov:wasDerivedFrom doc:5ab297505a12 .
+doc:FactsxuBai schema:name "X. Luo" .
+_:f03f6defbe99168c2631e4418a70760a rdf:reifies <<( doc:FactsxuBai schema:name "X. Luo" )>> ;
+	prov:wasDerivedFrom doc:5ab297505a12 .
+doc:FactsturbineComponent rdfs:label "offshore wind turbine"@en .
+_:c26543b12652b74cd4cb53c47deb7a01 rdf:reifies <<( doc:FactsturbineComponent rdfs:label "offshore wind turbine"@en )>> ;
+	prov:wasDerivedFrom doc:5ab297505a12 .
+doc:FactsonshoreAvailability schema:unitText "%" .
+_:c2c8c0e3eccae4a1cbfeda745c0a8f79 rdf:reifies <<( doc:FactsonshoreAvailability schema:unitText "%" )>> ;
+	prov:wasDerivedFrom doc:5ab297505a12 .
+doc:Factsliterature_review_table_1 schema:name "Literature review on the maintenance strategy of offshore wind farm" .
+_:cdc2bbd6f6cac097b9bb8326fddcc18f rdf:reifies <<( doc:Factsliterature_review_table_1 schema:name "Literature review on the maintenance strategy of offshore wind farm" )>> ;
+	prov:wasDerivedFrom doc:5ab297505a12 .
+doc:FactsstrategyTypeRow schema:text "Strategy type: CM, PM, OM, CBM"@en .
+_:d9dbbd368125dcaccfd00981f6c0b865 rdf:reifies <<( doc:FactsstrategyTypeRow schema:text "Strategy type: CM, PM, OM, CBM"@en )>> ;
+	prov:wasDerivedFrom doc:5ab297505a12 .
+doc:FactsturbineComponent schema:additionalProperty doc:FactsoffshoreMaintenanceCost .
+_:a7de4a7999525d61aa87fe2913e1112c rdf:reifies <<( doc:FactsturbineComponent schema:additionalProperty doc:FactsoffshoreMaintenanceCost )>> ;
+	prov:wasDerivedFrom doc:5ab297505a12 .
+doc:Factsliterature_review_table_1 a csvw:Table .
+_:bd417dda05540e107c715ec9b3154e9d rdf:reifies <<( doc:Factsliterature_review_table_1 rdf:type csvw:Table )>> ;
+	prov:wasDerivedFrom doc:5ab297505a12 .
+_:d39a4af90c737a9b99d79f1cf256d88d prov:wasDerivedFrom doc:5ab297505a12 .
+doc:FactsturbineComponent rdfs:label "onshore wind farm"@en .
+_:a4a18827fea7a045b1503b00c350c9ee rdf:reifies <<( doc:FactsturbineComponent rdfs:label "onshore wind farm"@en )>> ;
+	prov:wasDerivedFrom doc:5ab297505a12 .
+doc:FactsonshoreAvailability schema:maxValue "70"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+_:d0dcac2b45c31470bedf5af18ffbb4d8 rdf:reifies <<( doc:FactsonshoreAvailability schema:maxValue "70"^^<http://www.w3.org/2001/XMLSchema#decimal> )>> ;
+	prov:wasDerivedFrom doc:5ab297505a12 .
+doc:FactsstrategyTypeRow schema:text "Strategy composition: mode, sequence, components to maintain"@en .
+_:a1f55903f490a88eb32a33693b0dd24d rdf:reifies <<( doc:FactsstrategyTypeRow schema:text "Strategy composition: mode, sequence, components to maintain"@en )>> ;
+	prov:wasDerivedFrom doc:5ab297505a12 .
+doc:FactsstrategyTypeRow schema:text "Strategy level: component level, turbine level, farm level, time/condition threshold"@en .
+_:a99c912d859217775a0a4a88a98eacba rdf:reifies <<( doc:FactsstrategyTypeRow schema:text "Strategy level: component level, turbine level, farm level, time/condition threshold"@en )>> ;
+	prov:wasDerivedFrom doc:5ab297505a12 .
+doc:e01a9d8eeddd a prov:Entity , schema:text ;
+	prov:generatedAtTime "2026-07-24T17:29:43.500738Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+	schema:position 2 ;
+	schema:identifier "e01a9d8eeddd" .
+doc:FactsconditionMonitoringSystem_2 schema:installedOn doc:FactsturbineComponent .
+_:e23ef70dba67a6d2a788a8188faf948c rdf:reifies <<( doc:FactsconditionMonitoringSystem_2 schema:installedOn doc:FactsturbineComponent )>> ;
+	prov:wasDerivedFrom doc:e01a9d8eeddd .
+doc:FactsmaintenanceStrategyDomain schema:hasPart doc:FactsmaintenanceStrategyDomain .
+_:ccd3c3ea1c7ec1d2456788e3120fddb9 rdf:reifies <<( doc:FactsmaintenanceStrategyDomain schema:hasPart doc:FactsmaintenanceStrategyDomain )>> ;
+	prov:wasDerivedFrom doc:e01a9d8eeddd .
+doc:FactsconditionMonitoringSystem_2 a schema:Thing .
+_:a0408705417ebd11d01312cc5ed08bdd rdf:reifies <<( doc:FactsconditionMonitoringSystem_2 rdf:type schema:Thing )>> ;
+	prov:wasDerivedFrom doc:e01a9d8eeddd .
+doc:FactsturbineComponent rdfs:label "wind turbine component"@en .
+_:b836f8f7fe9cff09d8d06d4583cc8f71 rdf:reifies <<( doc:FactsturbineComponent rdfs:label "wind turbine component"@en )>> ;
+	prov:wasDerivedFrom doc:e01a9d8eeddd .
+doc:FactsmaintenanceStrategyDomain a schema:DefinedTerm .
+_:b67f666d7baf2d2f07d937ff600b0d17 rdf:reifies <<( doc:FactsmaintenanceStrategyDomain rdf:type schema:DefinedTerm )>> ;
+	prov:wasDerivedFrom doc:e01a9d8eeddd .
+doc:FactsmaintenanceStrategyDomain schema:description "A maintenance strategy integrating a data-driven approach with a condition monitoring system to assess turbine condition and degradation."@en .
+_:bdf8ca4136c8af097d1965ae13dfc201 rdf:reifies <<( doc:FactsmaintenanceStrategyDomain schema:description "A maintenance strategy integrating a data-driven approach with a condition monitoring system to assess turbine condition and degradation."@en )>> ;
+	prov:wasDerivedFrom doc:e01a9d8eeddd .
+_:c4a2a189cdd167be984f47367f5f87b6 prov:wasDerivedFrom doc:e01a9d8eeddd .
+doc:FactsmaintenanceStrategyDomain schema:considers doc:FactsturbineComponent .
+_:bc1c12fe902f8b43e7807cb21c7d4c94 rdf:reifies <<( doc:FactsmaintenanceStrategyDomain schema:considers doc:FactsturbineComponent )>> ;
+	prov:wasDerivedFrom doc:e01a9d8eeddd .
+doc:FactsmaintenanceStrategyDomain schema:alternateName "CM"@en .
+_:e2618672ff809feeaf5696518870becd rdf:reifies <<( doc:FactsmaintenanceStrategyDomain schema:alternateName "CM"@en )>> ;
+	prov:wasDerivedFrom doc:e01a9d8eeddd .
+doc:FactsmaintenanceOpportunity a schema:Event .
+_:af97ff652fbaee7d612bbb1744a99ed5 rdf:reifies <<( doc:FactsmaintenanceOpportunity rdf:type schema:Event )>> ;
+	prov:wasDerivedFrom doc:e01a9d8eeddd .
+doc:FactsmaintenanceStrategyDomain schema:uses doc:FactsconditionMonitoringSystem_2 .
+_:b90f178ff0ac65cf29ce2d8f8570df81 rdf:reifies <<( doc:FactsmaintenanceStrategyDomain schema:uses doc:FactsconditionMonitoringSystem_2 )>> ;
+	prov:wasDerivedFrom doc:e01a9d8eeddd .
+doc:FactsmaintenanceStrategyDomain schema:description "An integrated maintenance approach that uses an opportunity to address other components eligible for maintenance."@en .
+_:ba97fdb64c51d9c6949e3e217227c12e rdf:reifies <<( doc:FactsmaintenanceStrategyDomain schema:description "An integrated maintenance approach that uses an opportunity to address other components eligible for maintenance."@en )>> ;
+	prov:wasDerivedFrom doc:e01a9d8eeddd .
+doc:FactsmaintenanceStrategyDomain rdfs:label "corrective maintenance"@en .
+_:ea0d0a250f9e2e77917709d608af121b rdf:reifies <<( doc:FactsmaintenanceStrategyDomain rdfs:label "corrective maintenance"@en )>> ;
+	prov:wasDerivedFrom doc:e01a9d8eeddd .
+doc:FactsunplannedFailure schema:about doc:FactsturbineComponent .
+_:f874aa5b12d4ed28ebcff317f8cbceb5 rdf:reifies <<( doc:FactsunplannedFailure schema:about doc:FactsturbineComponent )>> ;
+	prov:wasDerivedFrom doc:e01a9d8eeddd .
+_:c751233646ad69e979cddef0465472eb prov:wasDerivedFrom doc:e01a9d8eeddd .
+doc:FactsoperationalCondition a schema:PropertyValue .
+_:f71257995ba2d50621ab06cbd10d86f8 rdf:reifies <<( doc:FactsoperationalCondition rdf:type schema:PropertyValue )>> ;
+	prov:wasDerivedFrom doc:e01a9d8eeddd .
+doc:FactsunplannedFailure rdfs:label "unplanned failure"@en .
+_:eed0f54a82cea94394c5dd5b87f28132 rdf:reifies <<( doc:FactsunplannedFailure rdfs:label "unplanned failure"@en )>> ;
+	prov:wasDerivedFrom doc:e01a9d8eeddd .
+doc:FactsoffshoreWindPower a schema:Product .
+_:b6f815318af022d4e1892a713f1d175a rdf:reifies <<( doc:FactsoffshoreWindPower rdf:type schema:Product )>> ;
+	prov:wasDerivedFrom doc:e01a9d8eeddd .
+doc:FactsmaintenanceStrategyDomain schema:alternateName "CBM"@en .
+_:de0318fa2da65e302bdc2da320ce9fb9 rdf:reifies <<( doc:FactsmaintenanceStrategyDomain schema:alternateName "CBM"@en )>> ;
+	prov:wasDerivedFrom doc:e01a9d8eeddd .
+doc:FactsmaintenanceStrategyDomain schema:isPartOf doc:FactsmaintenanceStrategyDomain .
+_:ccc831be4b5272f82706767ae2edc5c2 rdf:reifies <<( doc:FactsmaintenanceStrategyDomain schema:isPartOf doc:FactsmaintenanceStrategyDomain )>> ;
+	prov:wasDerivedFrom doc:e01a9d8eeddd .
+doc:FactscomponentReliabilityLevel schema:about doc:FactsturbineComponent .
+_:f2c506bf719093d87bad2a9c50e9d3f6 rdf:reifies <<( doc:FactscomponentReliabilityLevel schema:about doc:FactsturbineComponent )>> ;
+	prov:wasDerivedFrom doc:e01a9d8eeddd .
+doc:FactsmaintenanceTeamDispatch a schema:Action .
+_:d247f86c63ea258517a085d111802298 rdf:reifies <<( doc:FactsmaintenanceTeamDispatch rdf:type schema:Action )>> ;
+	prov:wasDerivedFrom doc:e01a9d8eeddd .
+doc:FactsmaintenanceStrategyDomain schema:reducesCosts true .
+_:bb8f87166124528a8128a00f8ea3c49b rdf:reifies <<( doc:FactsmaintenanceStrategyDomain schema:reducesCosts true )>> ;
+	prov:wasDerivedFrom doc:e01a9d8eeddd .
+doc:FactsmaintenanceStrategyDomain schema:description "A strategy that considers both the condition of each component and maintenance opportunities for other components before failure."@en .
+_:b8ae443fef61cf4cccfe9f3b026e5bdb rdf:reifies <<( doc:FactsmaintenanceStrategyDomain schema:description "A strategy that considers both the condition of each component and maintenance opportunities for other components before failure."@en )>> ;
+	prov:wasDerivedFrom doc:e01a9d8eeddd .
+_:c6d6a3e60f7c12045634e1b7b95c8ca7 prov:wasDerivedFrom doc:e01a9d8eeddd .
+doc:FactsmaintenanceStrategyDomain schema:considers doc:FactscomponentReliabilityLevel .
+_:df5d32658783811f7a946716eafebcde rdf:reifies <<( doc:FactsmaintenanceStrategyDomain schema:considers doc:FactscomponentReliabilityLevel )>> ;
+	prov:wasDerivedFrom doc:e01a9d8eeddd .
+doc:FactsmaintenanceStrategyDomain schema:uses doc:FactsdataDrivenApproach_3 .
+_:ba0e191feded643bb0f17ab885f747de rdf:reifies <<( doc:FactsmaintenanceStrategyDomain schema:uses doc:FactsdataDrivenApproach_3 )>> ;
+	prov:wasDerivedFrom doc:e01a9d8eeddd .
+doc:FactsmaintenanceStrategyDomain schema:considers doc:FactsmaintenanceOpportunity .
+_:efb7384516731d1db1ec0724cfa56eb3 rdf:reifies <<( doc:FactsmaintenanceStrategyDomain schema:considers doc:FactsmaintenanceOpportunity )>> ;
+	prov:wasDerivedFrom doc:e01a9d8eeddd .
+doc:FactsmaintenanceStrategyDomain rdfs:label "opportunistic maintenance"@en .
+_:f0f069984733523da2d562ad12f56115 rdf:reifies <<( doc:FactsmaintenanceStrategyDomain rdfs:label "opportunistic maintenance"@en )>> ;
+	prov:wasDerivedFrom doc:e01a9d8eeddd .
+doc:FactsoperationalCondition rdfs:label "operational condition"@en .
+_:e5656d93574ff1fa6198f7fe429f61b0 rdf:reifies <<( doc:FactsoperationalCondition rdfs:label "operational condition"@en )>> ;
+	prov:wasDerivedFrom doc:e01a9d8eeddd .
+doc:FactsmaintenanceStrategyDomain schema:considers doc:FactsoperationalCondition .
+_:a5710af5d59a279345732cfb6b99a628 rdf:reifies <<( doc:FactsmaintenanceStrategyDomain schema:considers doc:FactsoperationalCondition )>> ;
+	prov:wasDerivedFrom doc:e01a9d8eeddd .
+doc:FactsmaintenanceStrategyDomain schema:numberOfItems 2 .
+_:cced76a927eab431da16b6ccbb67f75c rdf:reifies <<( doc:FactsmaintenanceStrategyDomain schema:numberOfItems 2 )>> ;
+	prov:wasDerivedFrom doc:e01a9d8eeddd .
+doc:FactsmaintenanceStrategyDomain schema:description "A run-to-failure strategy carried out to restore equipment to a normal operational state."@en .
+_:f62702705fdeab429bfc1da8ba6ca73f rdf:reifies <<( doc:FactsmaintenanceStrategyDomain schema:description "A run-to-failure strategy carried out to restore equipment to a normal operational state."@en )>> ;
+	prov:wasDerivedFrom doc:e01a9d8eeddd .
+_:bfbc4a40dff722fd7fa4b53a7181de38 prov:wasDerivedFrom doc:e01a9d8eeddd .
+doc:FactsturbineComponent schema:isPartOf doc:FactsturbineComponent .
+_:d17ed1ddef5fa221fb9956dc13cd3b0a rdf:reifies <<( doc:FactsturbineComponent schema:isPartOf doc:FactsturbineComponent )>> ;
+	prov:wasDerivedFrom doc:e01a9d8eeddd .
+doc:FactshighOperationAndMaintenanceCost a schema:PriceSpecification .
+_:a44d755bf3fdf3bbe8c627c852e22125 rdf:reifies <<( doc:FactshighOperationAndMaintenanceCost rdf:type schema:PriceSpecification )>> ;
+	prov:wasDerivedFrom doc:e01a9d8eeddd .
+doc:FactsmaintenanceStrategyDomain rdfs:label "condition-based opportunistic maintenance"@en .
+_:df8e0e7f799863225ba78ac1ff03799f rdf:reifies <<( doc:FactsmaintenanceStrategyDomain rdfs:label "condition-based opportunistic maintenance"@en )>> ;
+	prov:wasDerivedFrom doc:e01a9d8eeddd .
+doc:FactsmaintenanceStrategyDomain rdfs:label "preventive maintenance"@en .
+_:dbabec55ece1725042428447dfb48d11 rdf:reifies <<( doc:FactsmaintenanceStrategyDomain rdfs:label "preventive maintenance"@en )>> ;
+	prov:wasDerivedFrom doc:e01a9d8eeddd .
+doc:FactsmaintenanceStrategyDomain rdfs:label "periodic maintenance"@en .
+_:ff57c9123e5768233612e8a67690ee7a rdf:reifies <<( doc:FactsmaintenanceStrategyDomain rdfs:label "periodic maintenance"@en )>> ;
+	prov:wasDerivedFrom doc:e01a9d8eeddd .
+doc:FactsmaintenanceStrategyDomain schema:description "A maintenance strategy in which activities are carried out at periodic time intervals."@en .
+_:d8e7f85c060d07cc4ceb7c39dd8406ba rdf:reifies <<( doc:FactsmaintenanceStrategyDomain schema:description "A maintenance strategy in which activities are carried out at periodic time intervals."@en )>> ;
+	prov:wasDerivedFrom doc:e01a9d8eeddd .
+doc:FactsmaintenanceTeamDispatch schema:about doc:FactsturbineComponent .
+_:c857db52640a6f5bb326dafab91f55cd rdf:reifies <<( doc:FactsmaintenanceTeamDispatch schema:about doc:FactsturbineComponent )>> ;
+	prov:wasDerivedFrom doc:e01a9d8eeddd .
+doc:FactsreliableOperation rdfs:label "reliable operation"@en .
+_:ea3120342e92f11dffbe91be2ddb4172 rdf:reifies <<( doc:FactsreliableOperation rdfs:label "reliable operation"@en )>> ;
+	prov:wasDerivedFrom doc:e01a9d8eeddd .
+doc:FactsreliableOperation schema:about doc:FactsturbineComponent .
+_:c615003f99dc2b3b510541a6aaebb104 rdf:reifies <<( doc:FactsreliableOperation schema:about doc:FactsturbineComponent )>> ;
+	prov:wasDerivedFrom doc:e01a9d8eeddd .
+doc:FactseconomicCompetitiveness a schema:DefinedTerm .
+_:f0d8c0b5f3962b74c3b5f34e2c66a0f1 rdf:reifies <<( doc:FactseconomicCompetitiveness rdf:type schema:DefinedTerm )>> ;
+	prov:wasDerivedFrom doc:e01a9d8eeddd .
+doc:FactsoffshoreWindPower schema:contributesTo doc:FactseconomicCompetitiveness .
+_:c85d00bd7bbb26a46d7f11dab20fecdb rdf:reifies <<( doc:FactsoffshoreWindPower schema:contributesTo doc:FactseconomicCompetitiveness )>> ;
+	prov:wasDerivedFrom doc:e01a9d8eeddd .
+_:c26543b12652b74cd4cb53c47deb7a01 prov:wasDerivedFrom doc:e01a9d8eeddd .
+doc:FactsunplannedFailure a schema:Event .
+_:a275e37cf377a8fd36151c375af72e48 rdf:reifies <<( doc:FactsunplannedFailure rdf:type schema:Event )>> ;
+	prov:wasDerivedFrom doc:e01a9d8eeddd .
+doc:FactsmaintenanceStrategyDomain schema:alternateName "CBOM"@en .
+_:a8992e43042be3a11919828f709248d2 rdf:reifies <<( doc:FactsmaintenanceStrategyDomain schema:alternateName "CBOM"@en )>> ;
+	prov:wasDerivedFrom doc:e01a9d8eeddd .
+doc:FactsconditionMonitoringSystem_2 rdfs:label "condition monitoring system"@en .
+_:de7a82a09dfedd38dc300031c89d2363 rdf:reifies <<( doc:FactsconditionMonitoringSystem_2 rdfs:label "condition monitoring system"@en )>> ;
+	prov:wasDerivedFrom doc:e01a9d8eeddd .
+doc:FactsmaintenanceStrategyDomain schema:description "A maintenance strategy obtained before implementation and not dynamically adjusted according to component or turbine condition."@en .
+_:d7d101d5eb2047b2879bafbcad5462b3 rdf:reifies <<( doc:FactsmaintenanceStrategyDomain schema:description "A maintenance strategy obtained before implementation and not dynamically adjusted according to component or turbine condition."@en )>> ;
+	prov:wasDerivedFrom doc:e01a9d8eeddd .
+doc:FactscomponentReliabilityLevel a schema:PropertyValue .
+_:efc1b18bbc8df0d9d1ea0eb70539e53d rdf:reifies <<( doc:FactscomponentReliabilityLevel rdf:type schema:PropertyValue )>> ;
+	prov:wasDerivedFrom doc:e01a9d8eeddd .
+doc:FactshighOperationAndMaintenanceCost rdfs:label "high operation and maintenance cost"@en .
+_:f5b855a9cd43aa05c8739cf11161fac2 rdf:reifies <<( doc:FactshighOperationAndMaintenanceCost rdfs:label "high operation and maintenance cost"@en )>> ;
+	prov:wasDerivedFrom doc:e01a9d8eeddd .
+doc:FactsmaintenanceOpportunity schema:about doc:FactsturbineComponent .
+_:a1e017af1c49374510f82f5d9938eeb rdf:reifies <<( doc:FactsmaintenanceOpportunity schema:about doc:FactsturbineComponent )>> ;
+	prov:wasDerivedFrom doc:e01a9d8eeddd .
+doc:FactsmaintenanceStrategyDomain schema:alternateName "PM"@en .
+_:ee34b95ab77e3ba84a3c320ea8cd3d63 rdf:reifies <<( doc:FactsmaintenanceStrategyDomain schema:alternateName "PM"@en )>> ;
+	prov:wasDerivedFrom doc:e01a9d8eeddd .
+doc:FactsmaintenanceStrategyDomain rdfs:label "condition-based maintenance"@en .
+_:caa7382d5f9d60a841137655acc4e7db rdf:reifies <<( doc:FactsmaintenanceStrategyDomain rdfs:label "condition-based maintenance"@en )>> ;
+	prov:wasDerivedFrom doc:e01a9d8eeddd .
+doc:FactsmaintenanceOpportunity rdfs:label "maintenance opportunity"@en .
+_:c9cf57974e8b452039a31615a57e46a7 rdf:reifies <<( doc:FactsmaintenanceOpportunity rdfs:label "maintenance opportunity"@en )>> ;
+	prov:wasDerivedFrom doc:e01a9d8eeddd .
+doc:FactsmaintenanceStrategyDomain schema:combines doc:FactsmaintenanceStrategyDomain .
+_:b66fec4ab1e7b161865cbaabcbeacf7b rdf:reifies <<( doc:FactsmaintenanceStrategyDomain schema:combines doc:FactsmaintenanceStrategyDomain )>> ;
+	prov:wasDerivedFrom doc:e01a9d8eeddd .
+doc:FactsmaintenanceStrategyDomain rdfs:label "maintenance strategy"@en .
+_:c832ededbd2304c35ca7d6910c53b085 rdf:reifies <<( doc:FactsmaintenanceStrategyDomain rdfs:label "maintenance strategy"@en )>> ;
+	prov:wasDerivedFrom doc:e01a9d8eeddd .
+doc:FactsoperationalCondition schema:about doc:FactsturbineComponent .
+_:d96d47cf5b167b8d828a5439e46c0e87 rdf:reifies <<( doc:FactsoperationalCondition schema:about doc:FactsturbineComponent )>> ;
+	prov:wasDerivedFrom doc:e01a9d8eeddd .
+doc:FactsmaintenanceTeamDispatch rdfs:label "dispatching a maintenance team to the site"@en .
+_:c35b9d96707c5e8a5fcec953da8aac7c rdf:reifies <<( doc:FactsmaintenanceTeamDispatch rdfs:label "dispatching a maintenance team to the site"@en )>> ;
+	prov:wasDerivedFrom doc:e01a9d8eeddd .
+_:c0de6a3f239cf2412a3727e625160e4e prov:wasDerivedFrom doc:e01a9d8eeddd .
+doc:FactsreliableOperation a schema:DefinedTerm .
+_:d683ba1160a7437fce6d2adb608a555a rdf:reifies <<( doc:FactsreliableOperation rdf:type schema:DefinedTerm )>> ;
+	prov:wasDerivedFrom doc:e01a9d8eeddd .
+doc:FactsoffshoreWindPower rdfs:label "offshore wind power"@en .
+_:d8e94ae7b90a6bf161a8c62735ee305b rdf:reifies <<( doc:FactsoffshoreWindPower rdfs:label "offshore wind power"@en )>> ;
+	prov:wasDerivedFrom doc:e01a9d8eeddd .
+doc:FactsmaintenanceStrategyDomain schema:prevents doc:FactsunplannedFailure .
+_:f5085c4328eb6c8279ffde4dc3c1c959 rdf:reifies <<( doc:FactsmaintenanceStrategyDomain schema:prevents doc:FactsunplannedFailure )>> ;
+	prov:wasDerivedFrom doc:e01a9d8eeddd .
+doc:FactsturbineComponent a schema:Place .
+_:a98e4725a86af199c87acae01f24b3ed rdf:reifies <<( doc:FactsturbineComponent rdf:type schema:Place )>> ;
+	prov:wasDerivedFrom doc:e01a9d8eeddd .
+_:fbe80f9819ee95235710d7eddf549bcf prov:wasDerivedFrom doc:e01a9d8eeddd .
+doc:FactscomponentReliabilityLevel rdfs:label "component reliability level"@en .
+_:debea453a77e92fd877223193757a9 rdf:reifies <<( doc:FactscomponentReliabilityLevel rdfs:label "component reliability level"@en )>> ;
+	prov:wasDerivedFrom doc:e01a9d8eeddd .
+doc:FactsmaintenanceStrategyDomain schema:assesses doc:FactsturbineComponent .
+_:b82c6f08d0f9fefa80ef6cea5ffbf89 rdf:reifies <<( doc:FactsmaintenanceStrategyDomain schema:assesses doc:FactsturbineComponent )>> ;
+	prov:wasDerivedFrom doc:e01a9d8eeddd .
+doc:FactsmaintenanceStrategyDomain schema:alternateName "OM"@en .
+_:c4b7f9de536897c0bd6633997e4c2301 rdf:reifies <<( doc:FactsmaintenanceStrategyDomain schema:alternateName "OM"@en )>> ;
+	prov:wasDerivedFrom doc:e01a9d8eeddd .
+doc:FactseconomicCompetitiveness rdfs:label "economic competitiveness of offshore wind power"@en .
+_:e82dac79a1580dd98529ee78f788a4cf rdf:reifies <<( doc:FactseconomicCompetitiveness rdfs:label "economic competitiveness of offshore wind power"@en )>> ;
+	prov:wasDerivedFrom doc:e01a9d8eeddd .
+doc:FactsdataDrivenApproach_3 a schema:DefinedTerm .
+_:fd67043aee0fcacbbda14f3b2866a19a rdf:reifies <<( doc:FactsdataDrivenApproach_3 rdf:type schema:DefinedTerm )>> ;
+	prov:wasDerivedFrom doc:e01a9d8eeddd .
+doc:FactsdataDrivenApproach_3 rdfs:label "data-driven approach"@en .
+_:fc2be395aad278db91a3ef2c7c1f5bd7 rdf:reifies <<( doc:FactsdataDrivenApproach_3 rdfs:label "data-driven approach"@en )>> ;
+	prov:wasDerivedFrom doc:e01a9d8eeddd .

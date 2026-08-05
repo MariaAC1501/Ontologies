@@ -1,0 +1,149 @@
+@prefix None: <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD/seed#> .
+@prefix cco: <http://www.ontologyrepository.com/CommonCoreOntologies/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doc: <https://growgraph.dev/doc/c5c01e9a5c74/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix schema: <https://schema.org/> .
+@prefix schema1: <http://schema.org/> .
+doc:6d3edbe6a722 a prov:Entity , schema:text ;
+	prov:generatedAtTime "2026-07-26T14:03:51.597554Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+	schema:position 0 ;
+	schema:identifier "6d3edbe6a722" .
+doc:Factsarticle1_2 schema1:keywords "multibody model" .
+_:a3a510d0b921dadf4af1ece2e40518e9 rdf:reifies <<( doc:Factsarticle1_2 schema1:keywords "multibody model" )>> ;
+	prov:wasDerivedFrom doc:6d3edbe6a722 .
+doc:Factsarticle1_2 schema1:author doc:Factsperson2 .
+_:ce4eeb8b725dbcbc5510a89364878ab7 rdf:reifies <<( doc:Factsarticle1_2 schema1:author doc:Factsperson2 )>> ;
+	prov:wasDerivedFrom doc:6d3edbe6a722 .
+doc:FactsfaultDetection1 a None:Fault_detection .
+_:f262c05a991d7f74aa7c04b80ec0f020 rdf:reifies <<( doc:FactsfaultDetection1 rdf:type None:Fault_detection )>> ;
+	prov:wasDerivedFrom doc:6d3edbe6a722 .
+doc:Factsarticle1_2 schema1:keywords "condition monitoring" .
+_:f9160b46bac5300f4b72ff4cae546f85 rdf:reifies <<( doc:Factsarticle1_2 schema1:keywords "condition monitoring" )>> ;
+	prov:wasDerivedFrom doc:6d3edbe6a722 .
+doc:Factstitle1_2 cco:designates doc:Factsarticle1_2 .
+_:e2c755c313e700a3f59f806c58e610d5 rdf:reifies <<( doc:Factstitle1_2 cco:designates doc:Factsarticle1_2 )>> ;
+	prov:wasDerivedFrom doc:6d3edbe6a722 .
+doc:Factsperson2 schema1:givenName "Lorenzo" .
+_:bf076d9484863213de8fa2db31255c4d rdf:reifies <<( doc:Factsperson2 schema1:givenName "Lorenzo" )>> ;
+	prov:wasDerivedFrom doc:6d3edbe6a722 .
+doc:Factstitle1_2 None:has_text_value "Dynamic Multibody Modeling of Spherical Roller Bearings with Localized Defects for Large-Scale Rotating Machinery" .
+_:a17cff3ffd6bd2f805647f91c3d54348 rdf:reifies <<( doc:Factstitle1_2 None:has_text_value "Dynamic Multibody Modeling of Spherical Roller Bearings with Localized Defects for Large-Scale Rotating Machinery" )>> ;
+	prov:wasDerivedFrom doc:6d3edbe6a722 .
+doc:Factsorganization1 schema1:address doc:Factsaddress1 .
+_:fa5c833c50d890d8ac11d4f393262b5b rdf:reifies <<( doc:Factsorganization1 schema1:address doc:Factsaddress1 )>> ;
+	prov:wasDerivedFrom doc:6d3edbe6a722 .
+doc:Factsmodel1 None:has_predictive_maintenance_function doc:FactsfaultDetection1 .
+_:acbfdb00945c71a0eb26a7a55ae92984 rdf:reifies <<( doc:Factsmodel1 None:has_predictive_maintenance_function doc:FactsfaultDetection1 )>> ;
+	prov:wasDerivedFrom doc:6d3edbe6a722 .
+doc:Factsperson2 schema1:familyName "Delprete" .
+_:cae3f02807a06225698ab675dfabe16b rdf:reifies <<( doc:Factsperson2 schema1:familyName "Delprete" )>> ;
+	prov:wasDerivedFrom doc:6d3edbe6a722 .
+doc:Factsperson2 a schema1:Person .
+_:d52dfe0362c7604cd5bdb6aa662f4f0a rdf:reifies <<( doc:Factsperson2 rdf:type schema1:Person )>> ;
+	prov:wasDerivedFrom doc:6d3edbe6a722 .
+doc:Factsaddress1 schema1:addressCountry "Italy" .
+_:b27658361899f9ae1c789b139f0f4d45 rdf:reifies <<( doc:Factsaddress1 schema1:addressCountry "Italy" )>> ;
+	prov:wasDerivedFrom doc:6d3edbe6a722 .
+doc:Factsconfiguration1 None:describes_configuration doc:Factsmodel1 .
+_:e6bb93f946d82570641d3b0dd3676b81 rdf:reifies <<( doc:Factsconfiguration1 None:describes_configuration doc:Factsmodel1 )>> ;
+	prov:wasDerivedFrom doc:6d3edbe6a722 .
+doc:Factsarticle1_2 schema1:keywords "rotating machinery" .
+_:cb7d8e4e37b40b90d4fd5417d3ab558 rdf:reifies <<( doc:Factsarticle1_2 schema1:keywords "rotating machinery" )>> ;
+	prov:wasDerivedFrom doc:6d3edbe6a722 .
+doc:Factsperson2 schema1:familyName "Giraudo" .
+_:f84b2eb82a759504deb9e15daa7e3103 rdf:reifies <<( doc:Factsperson2 schema1:familyName "Giraudo" )>> ;
+	prov:wasDerivedFrom doc:6d3edbe6a722 .
+doc:Factsmodel1 a None:Predictive_maintenance_system_module .
+_:e757f7e09f378f70de3b29230497c65d rdf:reifies <<( doc:Factsmodel1 rdf:type None:Predictive_maintenance_system_module )>> ;
+	prov:wasDerivedFrom doc:6d3edbe6a722 .
+doc:Factsperson2 schema1:familyName "Di Maggio" .
+_:a0e895b80e247e280abb47b413d5f506 rdf:reifies <<( doc:Factsperson2 schema1:familyName "Di Maggio" )>> ;
+	prov:wasDerivedFrom doc:6d3edbe6a722 .
+doc:Factsbearing1 schema1:name "medium-sized spherical roller bearing" .
+_:bdf3e2693287a53686243d06d5af7f1f rdf:reifies <<( doc:Factsbearing1 schema1:name "medium-sized spherical roller bearing" )>> ;
+	prov:wasDerivedFrom doc:6d3edbe6a722 .
+doc:Factsperson2 schema1:givenName "Cristiana" .
+_:f6682eefbdf259086351c6a2f8594d6b rdf:reifies <<( doc:Factsperson2 schema1:givenName "Cristiana" )>> ;
+	prov:wasDerivedFrom doc:6d3edbe6a722 .
+doc:Factsarticle1_2 schema1:keywords "fault detection" .
+_:c43c821feab96c8617e58ba19eb9c4af rdf:reifies <<( doc:Factsarticle1_2 schema1:keywords "fault detection" )>> ;
+	prov:wasDerivedFrom doc:6d3edbe6a722 .
+doc:Factsarticle1_2 schema1:keywords "predictive maintenance" .
+_:c602336ddf09c33249c72ab26f800726 rdf:reifies <<( doc:Factsarticle1_2 schema1:keywords "predictive maintenance" )>> ;
+	prov:wasDerivedFrom doc:6d3edbe6a722 .
+doc:Factsaddress1 schema1:streetAddress "Corso Duca Degli Abruzzi 24" .
+_:abd126b0876a6b888ab32f8a30f18992 rdf:reifies <<( doc:Factsaddress1 schema1:streetAddress "Corso Duca Degli Abruzzi 24" )>> ;
+	prov:wasDerivedFrom doc:6d3edbe6a722 .
+doc:Factsarticle1_2 None:has_title doc:Factstitle1_2 .
+_:eae4b233a9937a68830af9c6e98091a3 rdf:reifies <<( doc:Factsarticle1_2 None:has_title doc:Factstitle1_2 )>> ;
+	prov:wasDerivedFrom doc:6d3edbe6a722 .
+doc:Factsperson2 schema1:familyName "Giorio" .
+_:d7886bf05ee9c54c4bddfac502717d97 rdf:reifies <<( doc:Factsperson2 schema1:familyName "Giorio" )>> ;
+	prov:wasDerivedFrom doc:6d3edbe6a722 .
+doc:Factsconfiguration1 a None:Model_configuration .
+_:b152bea1a5673e2b6cdce7cb54664f4d rdf:reifies <<( doc:Factsconfiguration1 rdf:type None:Model_configuration )>> ;
+	prov:wasDerivedFrom doc:6d3edbe6a722 .
+doc:Factsperson2 schema1:affiliation doc:Factsorganization1 .
+_:e7ac43ff52d7659357f5c1b07387735c rdf:reifies <<( doc:Factsperson2 schema1:affiliation doc:Factsorganization1 )>> ;
+	prov:wasDerivedFrom doc:6d3edbe6a722 .
+doc:Factsmodel1 cco:is_about doc:Factsbearing1 .
+_:bd193494893dc7642c8daffc9e178ac rdf:reifies <<( doc:Factsmodel1 cco:is_about doc:Factsbearing1 )>> ;
+	prov:wasDerivedFrom doc:6d3edbe6a722 .
+doc:Factsbearing1 a None:Maintainable_item .
+_:f1c4edfa45ac81a7e1d01309746dc4b9 rdf:reifies <<( doc:Factsbearing1 rdf:type None:Maintainable_item )>> ;
+	prov:wasDerivedFrom doc:6d3edbe6a722 .
+doc:Factstitle1_2 a None:Article_title .
+_:db9e4fee244bd8a392be8568036a9c66 rdf:reifies <<( doc:Factstitle1_2 rdf:type None:Article_title )>> ;
+	prov:wasDerivedFrom doc:6d3edbe6a722 .
+doc:Factsorganization1 a schema1:Organization .
+_:ab90ab8eeb502793c8c4a21393c944f3 rdf:reifies <<( doc:Factsorganization1 rdf:type schema1:Organization )>> ;
+	prov:wasDerivedFrom doc:6d3edbe6a722 .
+doc:Factsorganization1 schema1:name "Dipartimento di Ingegneria Meccanica e Aerospaziale (DIMEAS), Politecnico di Torino" .
+_:a8c1115c521ee7bfa2ae78f63f457a5a rdf:reifies <<( doc:Factsorganization1 schema1:name "Dipartimento di Ingegneria Meccanica e Aerospaziale (DIMEAS), Politecnico di Torino" )>> ;
+	prov:wasDerivedFrom doc:6d3edbe6a722 .
+doc:Factsaddress1 schema1:postalCode "10129" .
+_:de0c696f27e7a47a30c7099381693214 rdf:reifies <<( doc:Factsaddress1 schema1:postalCode "10129" )>> ;
+	prov:wasDerivedFrom doc:6d3edbe6a722 .
+doc:Factsarticle1_2 schema1:keywords "mechanical vibration" .
+_:c2d400b6df8e08b188398597019fefbc rdf:reifies <<( doc:Factsarticle1_2 schema1:keywords "mechanical vibration" )>> ;
+	prov:wasDerivedFrom doc:6d3edbe6a722 .
+doc:Factsperson2 schema1:givenName "Luigi Gianpio" .
+_:eb196279910c28b81b6f4c958feed962 rdf:reifies <<( doc:Factsperson2 schema1:givenName "Luigi Gianpio" )>> ;
+	prov:wasDerivedFrom doc:6d3edbe6a722 .
+doc:Factsarticle1_2 schema1:keywords "machine diagnosis" .
+_:c41519b2f65b9bbd3bd6abefd4f1b5ae rdf:reifies <<( doc:Factsarticle1_2 schema1:keywords "machine diagnosis" )>> ;
+	prov:wasDerivedFrom doc:6d3edbe6a722 .
+doc:Factsarticle1_2 schema1:keywords "rolling element bearings" .
+_:da88eb4242f8a196ea1a7c64de76ef4 rdf:reifies <<( doc:Factsarticle1_2 schema1:keywords "rolling element bearings" )>> ;
+	prov:wasDerivedFrom doc:6d3edbe6a722 .
+doc:Factsaddress1 schema1:addressLocality "Torino" .
+_:b409e06bf015cac9581a1a7244a55add rdf:reifies <<( doc:Factsaddress1 schema1:addressLocality "Torino" )>> ;
+	prov:wasDerivedFrom doc:6d3edbe6a722 .
+doc:Factsarticle1_2 a None:Predictive_Maintenance_Article .
+_:b1e313fcec5b91dd569f38e2ef0c0214 rdf:reifies <<( doc:Factsarticle1_2 rdf:type None:Predictive_Maintenance_Article )>> ;
+	prov:wasDerivedFrom doc:6d3edbe6a722 .
+doc:Factsarticle1_2 schema1:abstract "Early fault detection in rotating machinery is crucial for optimizing maintenance and minimizing downtime costs. The study presents a multibody model developed in the Simulink Simscape environment to simulate the dynamic behavior of medium-sized spherical bearings."@en .
+_:e71070ed7c1b0a48fa0a5728b28846f6 rdf:reifies <<( doc:Factsarticle1_2 schema1:abstract "Early fault detection in rotating machinery is crucial for optimizing maintenance and minimizing downtime costs. The study presents a multibody model developed in the Simulink Simscape environment to simulate the dynamic behavior of medium-sized spherical bearings."@en )>> ;
+	prov:wasDerivedFrom doc:6d3edbe6a722 .
+doc:Factsperson2 schema1:givenName "Luca" .
+_:acf0fb13886a4d7f0e84f196180a7ce9 rdf:reifies <<( doc:Factsperson2 schema1:givenName "Luca" )>> ;
+	prov:wasDerivedFrom doc:6d3edbe6a722 .
+doc:Factsmodel1 a None:Predictive_maintenance_model .
+_:e0bbb6d66d04ad198c3b70966dd516c8 rdf:reifies <<( doc:Factsmodel1 rdf:type None:Predictive_maintenance_model )>> ;
+	prov:wasDerivedFrom doc:6d3edbe6a722 .
+doc:Factsmodel1 None:has_design_detail doc:FactsdesignDetail1 .
+_:b39eb8c98311b64575fe93d5b09314a8 rdf:reifies <<( doc:Factsmodel1 None:has_design_detail doc:FactsdesignDetail1 )>> ;
+	prov:wasDerivedFrom doc:6d3edbe6a722 .
+doc:FactsdesignDetail1 None:has_text_value "Dynamic multibody model for simulating vibrations and localized bearing defects" .
+_:d3e7d19f89152b4bb393b705b081c0cd rdf:reifies <<( doc:FactsdesignDetail1 None:has_text_value "Dynamic multibody model for simulating vibrations and localized bearing defects" )>> ;
+	prov:wasDerivedFrom doc:6d3edbe6a722 .
+doc:Factsaddress1 a schema1:PostalAddress .
+_:b501ed04a27d24ba5fdeaae116611487 rdf:reifies <<( doc:Factsaddress1 rdf:type schema1:PostalAddress )>> ;
+	prov:wasDerivedFrom doc:6d3edbe6a722 .
+doc:FactsdesignDetail1 a None:Design_detail .
+_:fd37574b0f7a5a3c8be30b5f5e928673 rdf:reifies <<( doc:FactsdesignDetail1 rdf:type None:Design_detail )>> ;
+	prov:wasDerivedFrom doc:6d3edbe6a722 .
+doc:Factsmodel1 schema1:softwareRequirements "Simulink Simscape" .
+_:b5d155dbca3f438669c39ce71b656b2c rdf:reifies <<( doc:Factsmodel1 schema1:softwareRequirements "Simulink Simscape" )>> ;
+	prov:wasDerivedFrom doc:6d3edbe6a722 .

@@ -19,9 +19,34 @@ from pipeline.facts_to_csv import (
 )
 
 
-REPO_ROOT = Path(__file__).resolve().parents[2]
-FACTS_PATH = REPO_ROOT / "pipeline/test_output/facts_5cc89b5bfaf6.ttl"
-ONTOLOGY_PATH = REPO_ROOT / "pipeline/seed_ontology/opmad_seed.ttl"
+FIXTURES_DIR = Path(__file__).resolve().parent / "fixtures"
+FACTS_PATH = FIXTURES_DIR / "fixed_mode_facts.ttl"
+ONTOLOGY_LABELS_PATH = FIXTURES_DIR / "opmad_labels.ttl"
+
+EXPECTED_ROW = {
+    "Reference": "1",
+    "Publication Year": "2024",
+    "Task": "One step future state forecast",
+    "Case study": "Hydraulic press",
+    "Case study type": "Maintainable item",
+    "Input for the model": "SCADA record",
+    "Number of input variables": "2",
+    "Input type": "Temperature, Vibration",
+    "Data Pre-processing": "yes",
+    "Model Approach": "Single model",
+    "Model Type": "Random forest",
+    "Models": "Random forest classifier",
+    "Online/Off-line": "Unknown synchronization",
+    "Number of failure modes": "0",
+    "Performance indicator": "Not reported",
+    "Performance": "Not reported",
+    "Complementary notes": (
+        "Keywords: predictive maintenance, sensors; Design details: Min-max scaling; "
+        "Instruments: Vibration sensor"
+    ),
+    "Study title": "Unit test predictive maintenance study",
+    "Publication identifier": "doi:10.0000/unit",
+}
 
 
 class FactsToCsvTests(unittest.TestCase):
@@ -29,43 +54,48 @@ class FactsToCsvTests(unittest.TestCase):
         raw = FACTS_PATH.read_text(encoding="utf-8")
         cleaned = strip_rdf_star_statements(raw)
         self.assertNotIn("rdf:reifies <<(", cleaned)
-        self.assertIn("doc:FactsMachineLearningForPredictiveMaintenance", cleaned)
+        self.assertNotIn("prov:wasDerivedFrom", cleaned)
+        self.assertIn("doc:Paper a opmad:Predictive_Maintenance_Article", cleaned)
+        self.assertTrue(cleaned.endswith("\n"))
 
-    def test_real_facts_generate_valid_csv_rows(self) -> None:
-        cases = build_cases_from_fact_files([FACTS_PATH], ONTOLOGY_PATH)
+    def test_fixture_facts_generate_valid_csv_rows(self) -> None:
+        cases = build_cases_from_fact_files([FACTS_PATH], ONTOLOGY_LABELS_PATH)
         self.assertEqual(len(cases), 1)
 
+        case = cases[0]
+        self.assertEqual(case.reference, 1)
+        self.assertEqual(case.publication_year, 2024)
+        self.assertEqual(case.task, "One step future state forecast")
+        self.assertEqual(case.case_study, "Hydraulic press")
+        self.assertEqual(case.input_for_model, "SCADA record")
+        self.assertEqual(case.input_types, ["Temperature", "Vibration"])
+        self.assertTrue(case.data_preprocessing)
+        self.assertEqual(case.model_approach, "Single model")
+        self.assertEqual(case.model_types, ["Random forest"])
+        self.assertEqual(case.models, ["Random forest classifier"])
+
         rows = cases_to_csv_rows(cases)
+        self.assertEqual(len(rows), 1)
         self.assertEqual(list(rows[0].keys()), HEADERS)
+        self.assertEqual(rows[0], EXPECTED_ROW)
 
-        row = rows[0]
-        self.assertEqual(row["Study title"], "Machine Learning for Predictive Maintenance of Industrial Machines using IoT Sensor Data")
-        self.assertEqual(row["Case study"], "Slitting Machine")
-        self.assertEqual(row["Task"], "One step future state forecast")
-        self.assertEqual(row["Online/Off-line"], "Unknown synchronization")
-        self.assertIn("ARIMA Model", row["Models"])
-        self.assertIn(", ", row["Input type"], "multi-value fields must use ', ' separator")
-        self.assertEqual(
-            set(PredictiveMaintenanceCase.from_csv_row(row).input_types),
-            {"Width", "Tension", "Pressure", "Time Stamp"},
-        )
-
-        validated = PredictiveMaintenanceCase.from_csv_row(row)
-        self.assertEqual(validated.number_of_input_variables, 4)
+        validated = PredictiveMaintenanceCase.from_csv_row(rows[0])
+        self.assertEqual(validated.number_of_input_variables, 2)
+        self.assertEqual(validated.input_types, ["Temperature", "Vibration"])
         self.assertTrue(validated.data_preprocessing)
 
-    def test_write_csv_uses_semicolon_delimiter(self) -> None:
-        rows = cases_to_csv_rows(build_cases_from_fact_files([FACTS_PATH], ONTOLOGY_PATH))
+    def test_write_csv_uses_semicolon_delimiter_and_stable_headers(self) -> None:
+        rows = cases_to_csv_rows(build_cases_from_fact_files([FACTS_PATH], ONTOLOGY_LABELS_PATH))
         with tempfile.TemporaryDirectory() as tmpdir:
             output = Path(tmpdir) / "cases.csv"
             write_csv(output, rows)
             text = output.read_text(encoding="utf-8")
-            self.assertIn(";", text.splitlines()[0])
+            self.assertEqual(text.splitlines()[0], ";".join(HEADERS))
             with output.open("r", encoding="utf-8", newline="") as handle:
                 parsed = list(csv.DictReader(handle, delimiter=";"))
-        self.assertEqual(len(parsed), 1)
+        self.assertEqual(parsed, rows)
         validated = PredictiveMaintenanceCase.from_csv_row(parsed[0])
-        self.assertEqual(validated.study_title, rows[0]["Study title"])
+        self.assertEqual(validated.study_title, EXPECTED_ROW["Study title"])
 
 
 if __name__ == "__main__":

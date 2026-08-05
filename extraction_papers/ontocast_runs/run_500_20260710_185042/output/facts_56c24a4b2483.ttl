@@ -1,0 +1,541 @@
+@prefix None: <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD/seed#> .
+@prefix cco: <http://www.ontologyrepository.com/CommonCoreOntologies/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doc: <https://growgraph.dev/doc/56c24a4b2483/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix obo: <http://purl.obolibrary.org/obo/> .
+@prefix cd: <https://growgraph.dev/facts> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix schema: <https://schema.org/> .
+@prefix schema1: <http://schema.org/> .
+doc:49cb9692966c a prov:Entity , schema:text ;
+	prov:generatedAtTime "2026-07-12T23:15:57.93143Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+	schema:position 0 ;
+	schema:identifier "49cb9692966c" .
+doc:Factsauthor3_31 a schema1:Person .
+_:ca34abb929febe9c1a5a5aed8d2769d3 rdf:reifies <<( doc:Factsauthor3_31 rdf:type schema1:Person )>> ;
+	prov:wasDerivedFrom doc:49cb9692966c .
+doc:FactsforecastFunction1 cd:predicts doc:Factsexhaust_temperature1 .
+_:aa9eff1b06ea114eab5e5f44e66ad472 rdf:reifies <<( doc:FactsforecastFunction1 cd:predicts doc:Factsexhaust_temperature1 )>> ;
+	prov:wasDerivedFrom doc:49cb9692966c .
+doc:Factstitle1_46 None:has_text_value "Marine engine cylinder exhaust temperature prediction based on PSOoptimized CNN-LSTM-attention network" .
+_:f2f064c6e1c8eb8835f5a65ee23f36d7 rdf:reifies <<( doc:Factstitle1_46 None:has_text_value "Marine engine cylinder exhaust temperature prediction based on PSOoptimized CNN-LSTM-attention network" )>> ;
+	prov:wasDerivedFrom doc:49cb9692966c .
+doc:Factsmae1_3 schema1:value 14.3743 .
+_:ed32705d762d7570971d826c61b26c6 rdf:reifies <<( doc:Factsmae1_3 schema1:value 14.3743 )>> ;
+	prov:wasDerivedFrom doc:49cb9692966c .
+doc:Factspso1_1 a cco:InformationContentEntity .
+_:c9879dd02031e277eea1915c3f173cbd rdf:reifies <<( doc:Factspso1_1 rdf:type cco:InformationContentEntity )>> ;
+	prov:wasDerivedFrom doc:49cb9692966c .
+doc:Factsmarine_engine_faults1 a None:Fault_detection .
+_:d707b13dcd8fef358b825ce8ad33babb rdf:reifies <<( doc:Factsmarine_engine_faults1 rdf:type None:Fault_detection )>> ;
+	prov:wasDerivedFrom doc:49cb9692966c .
+doc:Factspso1_1 schema1:name "real-time monitoring" .
+_:d4fbda522bc6bd5b2ee803480813b8cc rdf:reifies <<( doc:Factspso1_1 schema1:name "real-time monitoring" )>> ;
+	prov:wasDerivedFrom doc:49cb9692966c .
+doc:Factsjournal1_7 schema1:name "Brodogradnja" .
+_:f52e17b2eaa0d8e87df67ad11836413b rdf:reifies <<( doc:Factsjournal1_7 schema1:name "Brodogradnja" )>> ;
+	prov:wasDerivedFrom doc:49cb9692966c .
+doc:Factscnn2 schema1:name "CNN-LSTM-Attention model" .
+_:b9584bb352311bea3de9d07bd504c205 rdf:reifies <<( doc:Factscnn2 schema1:name "CNN-LSTM-Attention model" )>> ;
+	prov:wasDerivedFrom doc:49cb9692966c .
+doc:Factsmae1_3 a None:Performance_indicator .
+_:df1a3e288b1d58ef203b4d8973a015d6 rdf:reifies <<( doc:Factsmae1_3 rdf:type None:Performance_indicator )>> ;
+	prov:wasDerivedFrom doc:49cb9692966c .
+doc:Factsmae1_3 schema1:name "Mean Absolute Percentage Error" .
+_:e1540fb4154cbd5cd047331aeb24556f rdf:reifies <<( doc:Factsmae1_3 schema1:name "Mean Absolute Percentage Error" )>> ;
+	prov:wasDerivedFrom doc:49cb9692966c .
+doc:Factscnn2 cd:uses_data doc:Factspso1_1 .
+_:bf2e30319ce9f1496c498ed4f742ad49 rdf:reifies <<( doc:Factscnn2 cd:uses_data doc:Factspso1_1 )>> ;
+	prov:wasDerivedFrom doc:49cb9692966c .
+doc:Factsmae1_3 schema1:measurementTechnique doc:Factsmae1_3 .
+_:c776d89a488f57d6a2fdf64ec9582f86 rdf:reifies <<( doc:Factsmae1_3 schema1:measurementTechnique doc:Factsmae1_3 )>> ;
+	prov:wasDerivedFrom doc:49cb9692966c .
+doc:FactsforecastFunction1 a None:Future_state_forecast .
+_:f301d169010890917b2e58b19b6158b3 rdf:reifies <<( doc:FactsforecastFunction1 rdf:type None:Future_state_forecast )>> ;
+	prov:wasDerivedFrom doc:49cb9692966c .
+doc:Factsexhaust_temperature1 schema1:name "cylinder exhaust gas temperature" .
+_:c118f3573b568a7090bdb2aa0c3ee81f rdf:reifies <<( doc:Factsexhaust_temperature1 schema1:name "cylinder exhaust gas temperature" )>> ;
+	prov:wasDerivedFrom doc:49cb9692966c .
+doc:Factsjournal1_7 dcterms:title "Brodogradnja" .
+_:fb9b9de97b778cfafe88353e2bcb04cb rdf:reifies <<( doc:Factsjournal1_7 dcterms:title "Brodogradnja" )>> ;
+	prov:wasDerivedFrom doc:49cb9692966c .
+doc:Factspso1_1 schema1:name "real-world sensor data" .
+_:ba12d5e8d7be25ddb4b358fdd7f9a22b rdf:reifies <<( doc:Factspso1_1 schema1:name "real-world sensor data" )>> ;
+	prov:wasDerivedFrom doc:49cb9692966c .
+doc:Factsyear1_54 schema1:author doc:Factsauthor3_31 .
+_:f62993e05fd8a8111112fd2342ee84d5 rdf:reifies <<( doc:Factsyear1_54 schema1:author doc:Factsauthor3_31 )>> ;
+	prov:wasDerivedFrom doc:49cb9692966c .
+doc:Factsmaintainable_item1_1 schema1:name "marine diesel engine" .
+_:aeff60e7f9f861fa26f1d29154e2381e rdf:reifies <<( doc:Factsmaintainable_item1_1 schema1:name "marine diesel engine" )>> ;
+	prov:wasDerivedFrom doc:49cb9692966c .
+doc:Factsyear1_54 schema1:keywords "Exhaust temperature prediction" .
+_:c8380d8f6656e680185f9ad40b4c29a0 rdf:reifies <<( doc:Factsyear1_54 schema1:keywords "Exhaust temperature prediction" )>> ;
+	prov:wasDerivedFrom doc:49cb9692966c .
+doc:Factscondition_based_maintenance1 schema1:name "condition-based maintenance" .
+_:e63898d2ec8ad797beebb8cc4bb81ef3 rdf:reifies <<( doc:Factscondition_based_maintenance1 schema1:name "condition-based maintenance" )>> ;
+	prov:wasDerivedFrom doc:49cb9692966c .
+doc:Factsyear1_54 None:has_title doc:Factstitle1_46 .
+_:f145570a20b1f306da8c3aa4781c2aa2 rdf:reifies <<( doc:Factsyear1_54 None:has_title doc:Factstitle1_46 )>> ;
+	prov:wasDerivedFrom doc:49cb9692966c .
+doc:Factsmae1_3 None:has_text_value "decreased by 14.3743" .
+_:c513e3a6def58657e915d6897e718fb1 rdf:reifies <<( doc:Factsmae1_3 None:has_text_value "decreased by 14.3743" )>> ;
+	prov:wasDerivedFrom doc:49cb9692966c .
+doc:Factsauthor3_31 schema1:name "Jiale Liu" .
+_:e0c8bb3bebc4fbb725ad970093cdf6f5 rdf:reifies <<( doc:Factsauthor3_31 schema1:name "Jiale Liu" )>> ;
+	prov:wasDerivedFrom doc:49cb9692966c .
+doc:Factspso1_1 a schema1:Action .
+_:b4b6df35ae90d65f14cd9c5c8db1919b rdf:reifies <<( doc:Factspso1_1 rdf:type schema1:Action )>> ;
+	prov:wasDerivedFrom doc:49cb9692966c .
+doc:FactsforecastFunction1 schema1:name "long-range prediction" .
+_:f286680f5ff4e1b592bf8f1d58278b11 rdf:reifies <<( doc:FactsforecastFunction1 schema1:name "long-range prediction" )>> ;
+	prov:wasDerivedFrom doc:49cb9692966c .
+doc:Factsyear1_54 a None:Predictive_Maintenance_Article .
+_:a2ec4ec5f425977d0f00ca75f338c177 rdf:reifies <<( doc:Factsyear1_54 rdf:type None:Predictive_Maintenance_Article )>> ;
+	prov:wasDerivedFrom doc:49cb9692966c .
+doc:Factstitle1_46 a None:Article_title .
+_:e12296178d30f2c19c5ebe8cd5f1eda0 rdf:reifies <<( doc:Factstitle1_46 rdf:type None:Article_title )>> ;
+	prov:wasDerivedFrom doc:49cb9692966c .
+doc:Factsconfig1_7 None:has_text_value "hybrid CNN-LSTM-Attention" .
+_:d6c43fe82a90acef92701df565b102fc rdf:reifies <<( doc:Factsconfig1_7 None:has_text_value "hybrid CNN-LSTM-Attention" )>> ;
+	prov:wasDerivedFrom doc:49cb9692966c .
+doc:Factsmae1_3 schema1:name "coefficient of determination" .
+_:d523ae61139cf2169000997a84b777bb rdf:reifies <<( doc:Factsmae1_3 schema1:name "coefficient of determination" )>> ;
+	prov:wasDerivedFrom doc:49cb9692966c .
+doc:Factsmae1_3 schema1:value 1.3481 .
+_:ab4f006b361888745e73b274a62f91d0 rdf:reifies <<( doc:Factsmae1_3 schema1:value 1.3481 )>> ;
+	prov:wasDerivedFrom doc:49cb9692966c .
+doc:Factsmae1_3 None:has_text_value "3.9944" .
+_:fc39f72cee6d2547e205d4c1d0e4dddf rdf:reifies <<( doc:Factsmae1_3 None:has_text_value "3.9944" )>> ;
+	prov:wasDerivedFrom doc:49cb9692966c .
+doc:Factsyear1_54 schema1:keywords "CNN-LSTM-Attention model" .
+_:f59ce273a9cc338a37a666aaa4b219f3 rdf:reifies <<( doc:Factsyear1_54 schema1:keywords "CNN-LSTM-Attention model" )>> ;
+	prov:wasDerivedFrom doc:49cb9692966c .
+doc:Factsyear1_54 schema1:isPartOf doc:Factsjournal1_7 .
+_:cf0a13e90136fc2851f58327c2fae004 rdf:reifies <<( doc:Factsyear1_54 schema1:isPartOf doc:Factsjournal1_7 )>> ;
+	prov:wasDerivedFrom doc:49cb9692966c .
+doc:Factsmarine_engine_faults1 schema1:name "potential mechanical faults and irregularities" .
+_:fc5421ef0cbf506ae6749037563c46da rdf:reifies <<( doc:Factsmarine_engine_faults1 schema1:name "potential mechanical faults and irregularities" )>> ;
+	prov:wasDerivedFrom doc:49cb9692966c .
+doc:Factsexhaust_temperature1 None:has_text_value "cylinder exhaust gas temperature" .
+_:b52f0f08ce63786407b496f42a953ae1 rdf:reifies <<( doc:Factsexhaust_temperature1 None:has_text_value "cylinder exhaust gas temperature" )>> ;
+	prov:wasDerivedFrom doc:49cb9692966c .
+doc:Factsjournal1_7 a schema1:Periodical .
+_:c598cdc90b3301a281697bc0fcee6d0 rdf:reifies <<( doc:Factsjournal1_7 rdf:type schema1:Periodical )>> ;
+	prov:wasDerivedFrom doc:49cb9692966c .
+doc:Factsyear1_54 schema1:name "Marine engine cylinder exhaust temperature prediction based on PSOoptimized CNN-LSTM-attention network" .
+_:d1425e91aa2aa67d6ec54f1bf5a4aca7 rdf:reifies <<( doc:Factsyear1_54 schema1:name "Marine engine cylinder exhaust temperature prediction based on PSOoptimized CNN-LSTM-attention network" )>> ;
+	prov:wasDerivedFrom doc:49cb9692966c .
+doc:Factsyear1_54 schema1:email "zhjundong@dlmu.edu.cn" .
+_:ae7d242ffa721aa52613185b9ecde0e1 rdf:reifies <<( doc:Factsyear1_54 schema1:email "zhjundong@dlmu.edu.cn" )>> ;
+	prov:wasDerivedFrom doc:49cb9692966c .
+doc:Factscnn2 None:describes_configuration doc:Factsconfig1_7 .
+_:a73ac4064a97c64a3b0242e3fc125184 rdf:reifies <<( doc:Factscnn2 None:describes_configuration doc:Factsconfig1_7 )>> ;
+	prov:wasDerivedFrom doc:49cb9692966c .
+doc:Factsauthor3_31 schema1:name "Yang Cao" .
+_:ed2f9d8b15cfeee6bb5a736355c609e rdf:reifies <<( doc:Factsauthor3_31 schema1:name "Yang Cao" )>> ;
+	prov:wasDerivedFrom doc:49cb9692966c .
+doc:Factscondition_based_maintenance1 a None:Health_assessment .
+_:cc2da97b9dd83d0f35e02cdab17c7c44 rdf:reifies <<( doc:Factscondition_based_maintenance1 rdf:type None:Health_assessment )>> ;
+	prov:wasDerivedFrom doc:49cb9692966c .
+doc:Factspso1_1 cd:comes_from doc:Factspso1_1 .
+_:d869dbb3462008cf00545ea970da2c90 rdf:reifies <<( doc:Factspso1_1 cd:comes_from doc:Factspso1_1 )>> ;
+	prov:wasDerivedFrom doc:49cb9692966c .
+doc:Factspso1_1 a cco:InformationProcessingArtifact .
+_:abfdcf921b01c9607e9dbb42369379d9 rdf:reifies <<( doc:Factspso1_1 rdf:type cco:InformationProcessingArtifact )>> ;
+	prov:wasDerivedFrom doc:49cb9692966c .
+doc:Factscnn2 cd:has_performance doc:Factsmae1_3 .
+_:c8add11665bd6784cc9a89805660729b rdf:reifies <<( doc:Factscnn2 cd:has_performance doc:Factsmae1_3 )>> ;
+	prov:wasDerivedFrom doc:49cb9692966c .
+doc:Factsmae1_3 a None:Performance_value .
+_:e25df114d1cac61ab85982f35369b9d1 rdf:reifies <<( doc:Factsmae1_3 rdf:type None:Performance_value )>> ;
+	prov:wasDerivedFrom doc:49cb9692966c .
+doc:Factsauthor3_31 schema1:name "Ao Ma" .
+_:b3ac97f50fc71792d214913ea0fc49ff rdf:reifies <<( doc:Factsauthor3_31 schema1:name "Ao Ma" )>> ;
+	prov:wasDerivedFrom doc:49cb9692966c .
+doc:Factsyear1_54 dcterms:title "Marine engine cylinder exhaust temperature prediction based on PSOoptimized CNN-LSTM-attention network" .
+_:f83875e6e83362ce51e0a0edc5986b2c rdf:reifies <<( doc:Factsyear1_54 dcterms:title "Marine engine cylinder exhaust temperature prediction based on PSOoptimized CNN-LSTM-attention network" )>> ;
+	prov:wasDerivedFrom doc:49cb9692966c .
+doc:Factsmae1_3 None:has_text_value "0.9805" .
+_:c1a0ad607332d604887a115d8f8768b2 rdf:reifies <<( doc:Factsmae1_3 None:has_text_value "0.9805" )>> ;
+	prov:wasDerivedFrom doc:49cb9692966c .
+doc:Factsconfig1_7 a None:Model_configuration .
+_:bf7da6e3c54b96decff7bb316e528a28 rdf:reifies <<( doc:Factsconfig1_7 rdf:type None:Model_configuration )>> ;
+	prov:wasDerivedFrom doc:49cb9692966c .
+doc:Factscnn2 cd:is_optimized_by doc:Factspso1_1 .
+_:a43d292604e366191431a4e7d7f3dd29 rdf:reifies <<( doc:Factscnn2 cd:is_optimized_by doc:Factspso1_1 )>> ;
+	prov:wasDerivedFrom doc:49cb9692966c .
+doc:Factsmae1_3 schema1:name "Mean Squared Error" .
+_:dfe4547e8946f6ae286f122124a32c5b rdf:reifies <<( doc:Factsmae1_3 schema1:name "Mean Squared Error" )>> ;
+	prov:wasDerivedFrom doc:49cb9692966c .
+doc:Factsyear1_54 schema1:keywords "Marine engine" .
+_:af502085f9846173ae9859702fca9c1c rdf:reifies <<( doc:Factsyear1_54 schema1:keywords "Marine engine" )>> ;
+	prov:wasDerivedFrom doc:49cb9692966c .
+doc:Factsmaintainable_item1_1 a None:Maintainable_item .
+_:f1c674601443332645e6990768c13eb9 rdf:reifies <<( doc:Factsmaintainable_item1_1 rdf:type None:Maintainable_item )>> ;
+	prov:wasDerivedFrom doc:49cb9692966c .
+doc:Factsexhaust_temperature1 a None:Data_variable .
+_:c7feb312701d50b35b0f0ea294e09546 rdf:reifies <<( doc:Factsexhaust_temperature1 rdf:type None:Data_variable )>> ;
+	prov:wasDerivedFrom doc:49cb9692966c .
+doc:Factsyear1_54 schema1:keywords "Particle swarm optimization" .
+_:e13a0ebc10956d911538eb3ce33c6565 rdf:reifies <<( doc:Factsyear1_54 schema1:keywords "Particle swarm optimization" )>> ;
+	prov:wasDerivedFrom doc:49cb9692966c .
+doc:Factsmae1_3 schema1:value 0.9805 .
+_:ded3e24fe8117ddc8aa0b8617ee6a5a1 rdf:reifies <<( doc:Factsmae1_3 schema1:value 0.9805 )>> ;
+	prov:wasDerivedFrom doc:49cb9692966c .
+doc:Factsauthor3_31 schema1:name "Jundong Zhang" .
+_:b9daaad8daa2760dce760c0e6784c75a rdf:reifies <<( doc:Factsauthor3_31 schema1:name "Jundong Zhang" )>> ;
+	prov:wasDerivedFrom doc:49cb9692966c .
+doc:Factscnn2 cd:predicts doc:Factsexhaust_temperature1 .
+_:dc8d23763f52e1b7e8465f5690ac9c47 rdf:reifies <<( doc:Factscnn2 cd:predicts doc:Factsexhaust_temperature1 )>> ;
+	prov:wasDerivedFrom doc:49cb9692966c .
+doc:Factspso1_1 a cco:Algorithm .
+_:b75bce68edeee72627182f63b2c1a60 rdf:reifies <<( doc:Factspso1_1 rdf:type cco:Algorithm )>> ;
+	prov:wasDerivedFrom doc:49cb9692966c .
+doc:Factspso1_1 schema1:name "Particle Swarm Optimization" .
+_:cd059f4d3d8b9cfb760d8623c381131 rdf:reifies <<( doc:Factspso1_1 schema1:name "Particle Swarm Optimization" )>> ;
+	prov:wasDerivedFrom doc:49cb9692966c .
+doc:Factsauthor3_31 schema1:name "Hongbo Xu" .
+_:f7e2922a60cb66a4a181f210113610d6 rdf:reifies <<( doc:Factsauthor3_31 schema1:name "Hongbo Xu" )>> ;
+	prov:wasDerivedFrom doc:49cb9692966c .
+doc:Factsmae1_3 schema1:name "Mean Absolute Error" .
+_:f7f917566bdddbe61075a428c8b6f9a2 rdf:reifies <<( doc:Factsmae1_3 schema1:name "Mean Absolute Error" )>> ;
+	prov:wasDerivedFrom doc:49cb9692966c .
+doc:Factsmae1_3 None:has_text_value "1.3481%" .
+_:abf187134f62c6a65dc3167f333b7468 rdf:reifies <<( doc:Factsmae1_3 None:has_text_value "1.3481%" )>> ;
+	prov:wasDerivedFrom doc:49cb9692966c .
+doc:Factsmae1_3 schema1:value 3.9944 .
+_:ba1358f3457be81d264c782c4daad060 rdf:reifies <<( doc:Factsmae1_3 schema1:value 3.9944 )>> ;
+	prov:wasDerivedFrom doc:49cb9692966c .
+doc:Factsmae1_3 None:has_text_value "MAE 3.9944; MAPE 1.3481%; R2 0.9805; MAE reduction 1.5431; MSE decrease 14.3743" .
+_:dcdf9deb847d1238731fda2ee0f826c7 rdf:reifies <<( doc:Factsmae1_3 None:has_text_value "MAE 3.9944; MAPE 1.3481%; R2 0.9805; MAE reduction 1.5431; MSE decrease 14.3743" )>> ;
+	prov:wasDerivedFrom doc:49cb9692966c .
+doc:Factspso1_1 schema1:name "shipboard monitoring system" .
+_:c789f2d30a31619134e790189367aeee rdf:reifies <<( doc:Factspso1_1 schema1:name "shipboard monitoring system" )>> ;
+	prov:wasDerivedFrom doc:49cb9692966c .
+doc:Factscnn2 a None:Predictive_maintenance_model .
+_:eec58fd5d6e4d014b32d3954ed24a07c rdf:reifies <<( doc:Factscnn2 rdf:type None:Predictive_maintenance_model )>> ;
+	prov:wasDerivedFrom doc:49cb9692966c .
+doc:Factspso1_1 cd:optimizes doc:Factscnn2 .
+_:bad2452c2fc54c62a094e3e1a98550e0 rdf:reifies <<( doc:Factspso1_1 cd:optimizes doc:Factscnn2 )>> ;
+	prov:wasDerivedFrom doc:49cb9692966c .
+doc:ba1437c0145b a prov:Entity , schema:text ;
+	prov:generatedAtTime "2026-07-12T23:15:57.937434Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+	schema:position 1 ;
+	schema:identifier "ba1437c0145b" .
+doc:Factspso1_1 a cco:Database .
+_:fc1ebc3243785ab7c1fe3ffa4734b512 rdf:reifies <<( doc:Factspso1_1 rdf:type cco:Database )>> ;
+	prov:wasDerivedFrom doc:ba1437c0145b .
+doc:Factsmaint1_2 a None:Number_of_failure_modes .
+_:aecc341d3b6dcc908ea4f64e58da167f rdf:reifies <<( doc:Factsmaint1_2 rdf:type None:Number_of_failure_modes )>> ;
+	prov:wasDerivedFrom doc:ba1437c0145b .
+doc:Factscondition1_1 rdfs:label "engine thermal behavior" .
+_:e618b298044f1d5270b2e1f920528333 rdf:reifies <<( doc:Factscondition1_1 rdfs:label "engine thermal behavior" )>> ;
+	prov:wasDerivedFrom doc:ba1437c0145b .
+doc:Factsconfig1_7 None:describes_configuration doc:Factscnn2 .
+_:ea850b656c3d5ae09be961f2c41720f0 rdf:reifies <<( doc:Factsconfig1_7 None:describes_configuration doc:Factscnn2 )>> ;
+	prov:wasDerivedFrom doc:ba1437c0145b .
+doc:Factsmae1_3 cd:has_text_value "Mean Squared Error" .
+_:eb91b2140bc755bd7f218f4f338fcaf2 rdf:reifies <<( doc:Factsmae1_3 cd:has_text_value "Mean Squared Error" )>> ;
+	prov:wasDerivedFrom doc:ba1437c0145b .
+doc:Factsengine1_1 rdfs:label "No. 1 WÃRTSILÃ 8L20 diesel engine" .
+_:d4b676fdb694f524c03726395a748554 rdf:reifies <<( doc:Factsengine1_1 rdfs:label "No. 1 WÃRTSILÃ 8L20 diesel engine" )>> ;
+	prov:wasDerivedFrom doc:ba1437c0145b .
+doc:Factspressure1 rdfs:label "cylinder pressure" .
+_:ae5588771c5c3363dc7e43344900fd57 rdf:reifies <<( doc:Factspressure1 rdfs:label "cylinder pressure" )>> ;
+	prov:wasDerivedFrom doc:ba1437c0145b .
+_:f301d169010890917b2e58b19b6158b3 prov:wasDerivedFrom doc:ba1437c0145b .
+doc:Factsfn7 a None:Sequential_pattern_discovery .
+_:caf4fb7bdc8925dbf2fd55e14e2d3d61 rdf:reifies <<( doc:Factsfn7 rdf:type None:Sequential_pattern_discovery )>> ;
+	prov:wasDerivedFrom doc:ba1437c0145b .
+doc:Factspso1_1 rdfs:label "real-world sensor data" .
+_:a39756079bf81e23653e6eaee3d01091 rdf:reifies <<( doc:Factspso1_1 rdfs:label "real-world sensor data" )>> ;
+	prov:wasDerivedFrom doc:ba1437c0145b .
+_:e25df114d1cac61ab85982f35369b9d1 prov:wasDerivedFrom doc:ba1437c0145b .
+doc:Factsquality1 a None:Module_synchronization .
+_:dcc8b2e93341c4ac0de1a5ce4c73e14c rdf:reifies <<( doc:Factsquality1 rdf:type None:Module_synchronization )>> ;
+	prov:wasDerivedFrom doc:ba1437c0145b .
+doc:Factsmae1_3 cd:has_text_value "reduced prediction errors" .
+_:c5398b66bf753e4fea5d7c95baa12c16 rdf:reifies <<( doc:Factsmae1_3 cd:has_text_value "reduced prediction errors" )>> ;
+	prov:wasDerivedFrom doc:ba1437c0145b .
+doc:Factsmaint2 cd:has_interger_value 2 .
+_:c6c28827b14d0f7e72e6bb6acf54da16 rdf:reifies <<( doc:Factsmaint2 cd:has_interger_value 2 )>> ;
+	prov:wasDerivedFrom doc:ba1437c0145b .
+doc:Factspso1_1 cd:has_text_value "time-series and multidimensional data" .
+_:f8b2b95eaab90b430877bfc15f1849c8 rdf:reifies <<( doc:Factspso1_1 cd:has_text_value "time-series and multidimensional data" )>> ;
+	prov:wasDerivedFrom doc:ba1437c0145b .
+_:bf7da6e3c54b96decff7bb316e528a28 prov:wasDerivedFrom doc:ba1437c0145b .
+doc:Factsyear1_54 cd:has_title doc:Factstitle1_46 .
+_:c459ab1f9e8603df81af5482d6c62e4 rdf:reifies <<( doc:Factsyear1_54 cd:has_title doc:Factstitle1_46 )>> ;
+	prov:wasDerivedFrom doc:ba1437c0145b .
+doc:Factsfn4 a None:Association_discovery .
+_:fe005de6b3702c537a3b4f2c09fc9d3d rdf:reifies <<( doc:Factsfn4 rdf:type None:Association_discovery )>> ;
+	prov:wasDerivedFrom doc:ba1437c0145b .
+_:e12296178d30f2c19c5ebe8cd5f1eda0 prov:wasDerivedFrom doc:ba1437c0145b .
+doc:Factsfn3_1 a None:Remaining_useful_life_estimation .
+_:be4d032bc44fcb501fb618ae894fbca6 rdf:reifies <<( doc:Factsfn3_1 rdf:type None:Remaining_useful_life_estimation )>> ;
+	prov:wasDerivedFrom doc:ba1437c0145b .
+doc:Factsyear1_54 cd:has_interger_value 2024 .
+_:cadd396fd148bf2b60bed40728afc978 rdf:reifies <<( doc:Factsyear1_54 cd:has_interger_value 2024 )>> ;
+	prov:wasDerivedFrom doc:ba1437c0145b .
+doc:Factstemperature2 rdfs:label "cylinder exhaust temperature" .
+_:aed11824b64a3c7ed3b814a7dcf87d04 rdf:reifies <<( doc:Factstemperature2 rdfs:label "cylinder exhaust temperature" )>> ;
+	prov:wasDerivedFrom doc:ba1437c0145b .
+doc:Factspso1_1 a doc:Factspso1_1 .
+_:f126af11ddf371578fe41ce287a00d8a rdf:reifies <<( doc:Factspso1_1 rdf:type doc:Factspso1_1 )>> ;
+	prov:wasDerivedFrom doc:ba1437c0145b .
+doc:Factsmaint1_2 cd:has_interger_value 3 .
+_:a078f8fc246ed9ccdf42d6ae7844d26 rdf:reifies <<( doc:Factsmaint1_2 cd:has_interger_value 3 )>> ;
+	prov:wasDerivedFrom doc:ba1437c0145b .
+_:a2ec4ec5f425977d0f00ca75f338c177 prov:wasDerivedFrom doc:ba1437c0145b .
+doc:Factsquality1 rdfs:label "online monitoring" .
+_:a9273544b8af0a9a2ea0132f7097ec87 rdf:reifies <<( doc:Factsquality1 rdfs:label "online monitoring" )>> ;
+	prov:wasDerivedFrom doc:ba1437c0145b .
+doc:Factsmae1_3 cd:has_text_value "MSE decrease of 104.9556 versus LSTM baseline" .
+_:cb8ddacd6539572e4dd3f3602840e69c rdf:reifies <<( doc:Factsmae1_3 cd:has_text_value "MSE decrease of 104.9556 versus LSTM baseline" )>> ;
+	prov:wasDerivedFrom doc:ba1437c0145b .
+doc:Factslube1 a None:Data_variable .
+_:c11a6084d115ca04891aadf855dad53d rdf:reifies <<( doc:Factslube1 rdf:type None:Data_variable )>> ;
+	prov:wasDerivedFrom doc:ba1437c0145b .
+doc:Factsquality3 a None:Design_detail .
+_:f47f33d5700194e913bc6cd4e184677a rdf:reifies <<( doc:Factsquality3 rdf:type None:Design_detail )>> ;
+	prov:wasDerivedFrom doc:ba1437c0145b .
+doc:Factstemperature2 a None:Data_variable .
+_:ca989c5e43b81a1c1283199ed7655b52 rdf:reifies <<( doc:Factstemperature2 rdf:type None:Data_variable )>> ;
+	prov:wasDerivedFrom doc:ba1437c0145b .
+_:a73ac4064a97c64a3b0242e3fc125184 prov:wasDerivedFrom doc:ba1437c0145b .
+doc:Factsmaint2 a None:number_if_input_variables .
+_:d0511bc0dd73570e00df76de776a9885 rdf:reifies <<( doc:Factsmaint2 rdf:type None:number_if_input_variables )>> ;
+	prov:wasDerivedFrom doc:ba1437c0145b .
+doc:Factsmae1_3 cd:has_text_value "improved prediction accuracy" .
+_:f102dae006582c5829033d3c8b054f4e rdf:reifies <<( doc:Factsmae1_3 cd:has_text_value "improved prediction accuracy" )>> ;
+	prov:wasDerivedFrom doc:ba1437c0145b .
+doc:Factsmae1_3 cd:has_text_value "Mean Absolute Error" .
+_:b757c16ea7c3076b8b2fc68635c759b0 rdf:reifies <<( doc:Factsmae1_3 cd:has_text_value "Mean Absolute Error" )>> ;
+	prov:wasDerivedFrom doc:ba1437c0145b .
+doc:Factsvessel1 a None:Maintainable_item .
+_:a32f791d804c431fc4ee860a78bf15de rdf:reifies <<( doc:Factsvessel1 rdf:type None:Maintainable_item )>> ;
+	prov:wasDerivedFrom doc:ba1437c0145b .
+_:df1a3e288b1d58ef203b4d8973a015d6 prov:wasDerivedFrom doc:ba1437c0145b .
+_:eec58fd5d6e4d014b32d3954ed24a07c prov:wasDerivedFrom doc:ba1437c0145b .
+doc:Factsvessel1 rdfs:label "Xin Hong Zhuan" .
+_:c12ed202302af5c4c86f2de04d0d337d rdf:reifies <<( doc:Factsvessel1 rdfs:label "Xin Hong Zhuan" )>> ;
+	prov:wasDerivedFrom doc:ba1437c0145b .
+doc:Factscnn2 rdfs:label "PSO-optimized CNN-LSTM-Attention architecture" .
+_:e57af74f1f5dc37be21d601e12db204c rdf:reifies <<( doc:Factscnn2 rdfs:label "PSO-optimized CNN-LSTM-Attention architecture" )>> ;
+	prov:wasDerivedFrom doc:ba1437c0145b .
+doc:Factsengine1_1 a None:Maintainable_item .
+_:db76732b7dfe4daaa7956b51b6dc280a rdf:reifies <<( doc:Factsengine1_1 rdf:type None:Maintainable_item )>> ;
+	prov:wasDerivedFrom doc:ba1437c0145b .
+doc:Factscondition1_1 a None:Data_variable .
+_:a559f3e68878eb2e6893648bc574255d rdf:reifies <<( doc:Factscondition1_1 rdf:type None:Data_variable )>> ;
+	prov:wasDerivedFrom doc:ba1437c0145b .
+doc:Factsyear1_54 a None:Publication_year .
+_:d35266e01065263e9a0023bebb413b31 rdf:reifies <<( doc:Factsyear1_54 rdf:type None:Publication_year )>> ;
+	prov:wasDerivedFrom doc:ba1437c0145b .
+doc:Factsfn4 a None:Classification .
+_:b4abacd256575fb684cfb67dbfeda5e6 rdf:reifies <<( doc:Factsfn4 rdf:type None:Classification )>> ;
+	prov:wasDerivedFrom doc:ba1437c0145b .
+doc:Factspressure1 a None:Data_variable .
+_:d5077520138a15da140162a84eeed258 rdf:reifies <<( doc:Factspressure1 rdf:type None:Data_variable )>> ;
+	prov:wasDerivedFrom doc:ba1437c0145b .
+doc:Factsengine1_1 obo:BFO_0000051 doc:Factsvessel1 .
+_:b0129a023abceca45b0dae9ae5a3b22c rdf:reifies <<( doc:Factsengine1_1 obo:BFO_0000051 doc:Factsvessel1 )>> ;
+	prov:wasDerivedFrom doc:ba1437c0145b .
+doc:Factsquality2 a None:Design_detail .
+_:fac62697404de61cecfd4963603d6020 rdf:reifies <<( doc:Factsquality2 rdf:type None:Design_detail )>> ;
+	prov:wasDerivedFrom doc:ba1437c0145b .
+doc:Factsquality3 rdfs:label "hyperparameter tuning" .
+_:a53adee240a283fa3563cad375fd6770 rdf:reifies <<( doc:Factsquality3 rdfs:label "hyperparameter tuning" )>> ;
+	prov:wasDerivedFrom doc:ba1437c0145b .
+doc:Factsfn1_1 a None:Fault_detection .
+_:c6f9cdfb9055973060bbfa8df1993bd rdf:reifies <<( doc:Factsfn1_1 rdf:type None:Fault_detection )>> ;
+	prov:wasDerivedFrom doc:ba1437c0145b .
+doc:Factscnn2 cd:has_function doc:FactsforecastFunction1 .
+_:d4bc42cbe75cc14d5a6f0b8461c63c62 rdf:reifies <<( doc:Factscnn2 cd:has_function doc:FactsforecastFunction1 )>> ;
+	prov:wasDerivedFrom doc:ba1437c0145b .
+doc:Factstitle1_46 cd:has_text_value "CNN-LSTM-Attention based exhaust temperature prediction for intelligent vessel diesel engines" .
+_:cfe043373ccdf1a49e4ef522ca833f6d rdf:reifies <<( doc:Factstitle1_46 cd:has_text_value "CNN-LSTM-Attention based exhaust temperature prediction for intelligent vessel diesel engines" )>> ;
+	prov:wasDerivedFrom doc:ba1437c0145b .
+doc:Factstemperature2 rdfs:label "exhaust gas temperature" .
+_:f0ec7b20fc8f2ea7f8edc310ed22f920 rdf:reifies <<( doc:Factstemperature2 rdfs:label "exhaust gas temperature" )>> ;
+	prov:wasDerivedFrom doc:ba1437c0145b .
+doc:Factsmae1_3 cd:has_text_value "MAE reduction of 2.7394 versus LSTM baseline" .
+_:f3510d2151356c41daad14827f8a0392 rdf:reifies <<( doc:Factsmae1_3 cd:has_text_value "MAE reduction of 2.7394 versus LSTM baseline" )>> ;
+	prov:wasDerivedFrom doc:ba1437c0145b .
+doc:Factsfn9 a None:Deviation_detection .
+_:db0e01f465721faaa1958d6cc224ba2d rdf:reifies <<( doc:Factsfn9 rdf:type None:Deviation_detection )>> ;
+	prov:wasDerivedFrom doc:ba1437c0145b .
+doc:Factsspeed1 rdfs:label "turbocharger speed" .
+_:c7a58d5c736050d6b75035bc79b6e376 rdf:reifies <<( doc:Factsspeed1 rdfs:label "turbocharger speed" )>> ;
+	prov:wasDerivedFrom doc:ba1437c0145b .
+doc:Factsquality2 rdfs:label "adaptive mechanism to augment CNN structure flexibility" .
+_:b74fea096fb152282299b2122f1d5dda rdf:reifies <<( doc:Factsquality2 rdfs:label "adaptive mechanism to augment CNN structure flexibility" )>> ;
+	prov:wasDerivedFrom doc:ba1437c0145b .
+doc:Factslube1 rdfs:label "lubrication conditions" .
+_:fb656a50e9591ec04343ec56376b586d rdf:reifies <<( doc:Factslube1 rdfs:label "lubrication conditions" )>> ;
+	prov:wasDerivedFrom doc:ba1437c0145b .
+doc:Factsfn6 a None:Clustering .
+_:b4d533aae9bf86f54ae4d35fc50369e7 rdf:reifies <<( doc:Factsfn6 rdf:type None:Clustering )>> ;
+	prov:wasDerivedFrom doc:ba1437c0145b .
+doc:Factsfn5 a None:Regression .
+_:e15d5663c99d7a667fa200133ab06cf5 rdf:reifies <<( doc:Factsfn5 rdf:type None:Regression )>> ;
+	prov:wasDerivedFrom doc:ba1437c0145b .
+doc:Factsyear1_54 cd:has_publication_year doc:Factsyear1_54 .
+_:c25fc153d5476ef157dd8d0aeec9c8be rdf:reifies <<( doc:Factsyear1_54 cd:has_publication_year doc:Factsyear1_54 )>> ;
+	prov:wasDerivedFrom doc:ba1437c0145b .
+doc:Factsspeed1 a None:Data_variable .
+_:c7ff4e72e84206e04afefc14a1adc1ba rdf:reifies <<( doc:Factsspeed1 rdf:type None:Data_variable )>> ;
+	prov:wasDerivedFrom doc:ba1437c0145b .
+doc:Factsfn2_1 a None:Health_assessment .
+_:afd83c1b83c4952bcbbc3eed01a384e1 rdf:reifies <<( doc:Factsfn2_1 rdf:type None:Health_assessment )>> ;
+	prov:wasDerivedFrom doc:ba1437c0145b .
+doc:f17d032697c0 a prov:Entity , schema:text ;
+	prov:generatedAtTime "2026-07-12T23:15:57.942434Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+	schema:position 2 ;
+	schema:identifier "f17d032697c0" .
+doc:Factsdoc1_26 rdfs:label "Deep learning model theory" .
+_:e22d58d2a1f0b6ef0f7c74a7196e26f3 rdf:reifies <<( doc:Factsdoc1_26 rdfs:label "Deep learning model theory" )>> ;
+	prov:wasDerivedFrom doc:f17d032697c0 .
+doc:FactscnnInputLayer a None:Design_detail .
+_:b0db892fd0c3e4adee7de55e7bc9aa3a rdf:reifies <<( doc:FactscnnInputLayer rdf:type None:Design_detail )>> ;
+	prov:wasDerivedFrom doc:f17d032697c0 .
+doc:FactslstmContextualRelationships a None:Data_variable .
+_:c045488e4fe5e632077b62f3577c2bd8 rdf:reifies <<( doc:FactslstmContextualRelationships rdf:type None:Data_variable )>> ;
+	prov:wasDerivedFrom doc:f17d032697c0 .
+doc:Factslstm1_3 cco:is_about doc:FactslstmMemoryCell .
+_:a1083018f63a307758e0329cac36844e rdf:reifies <<( doc:Factslstm1_3 cco:is_about doc:FactslstmMemoryCell )>> ;
+	prov:wasDerivedFrom doc:f17d032697c0 .
+_:ea850b656c3d5ae09be961f2c41720f0 prov:wasDerivedFrom doc:f17d032697c0 .
+doc:Factsrnn1 cco:describes doc:Factsconfig1_7 .
+_:cc8b8275da0852423accac78f4936e9c rdf:reifies <<( doc:Factsrnn1 cco:describes doc:Factsconfig1_7 )>> ;
+	prov:wasDerivedFrom doc:f17d032697c0 .
+doc:FactscnnRelu a None:Design_detail .
+_:e5710c396c5ea0095876b474157e51a8 rdf:reifies <<( doc:FactscnnRelu rdf:type None:Design_detail )>> ;
+	prov:wasDerivedFrom doc:f17d032697c0 .
+doc:FactscnnInputLayer rdfs:label "Pooling Layer" .
+_:d509a4f995cd3d4ee79afb953ed01963 rdf:reifies <<( doc:FactscnnInputLayer rdfs:label "Pooling Layer" )>> ;
+	prov:wasDerivedFrom doc:f17d032697c0 .
+doc:Factsconfig1_7 cco:is_about doc:FactscnnRelu .
+_:b86e1116796493ba391e09d945ff46fc rdf:reifies <<( doc:Factsconfig1_7 cco:is_about doc:FactscnnRelu )>> ;
+	prov:wasDerivedFrom doc:f17d032697c0 .
+doc:Factsconfig1_7 cco:is_about doc:FactscnnInputLayer .
+_:cf500983750105501aba053377fd0ce1 rdf:reifies <<( doc:Factsconfig1_7 cco:is_about doc:FactscnnInputLayer )>> ;
+	prov:wasDerivedFrom doc:f17d032697c0 .
+doc:FactscnnInputLayer rdfs:label "Output Layer" .
+_:c9a746b298a5b232ccad0a0bf99117cd rdf:reifies <<( doc:FactscnnInputLayer rdfs:label "Output Layer" )>> ;
+	prov:wasDerivedFrom doc:f17d032697c0 .
+doc:FactscnnInputLayer rdfs:label "Input Layer" .
+_:dce5cccdfa0033824ca9b88d09bdfabb rdf:reifies <<( doc:FactscnnInputLayer rdfs:label "Input Layer" )>> ;
+	prov:wasDerivedFrom doc:f17d032697c0 .
+doc:Factsconfig1_7 rdfs:label "standard architecture of a CNN" .
+_:f6d1704a5b0ecb91f2d850036844d27f rdf:reifies <<( doc:Factsconfig1_7 rdfs:label "standard architecture of a CNN" )>> ;
+	prov:wasDerivedFrom doc:f17d032697c0 .
+doc:Factsrnn1 cco:is_about doc:FactscnnGridData .
+_:b67d1c5d90dbf60a1a0041e5a2d176c3 rdf:reifies <<( doc:Factsrnn1 cco:is_about doc:FactscnnGridData )>> ;
+	prov:wasDerivedFrom doc:f17d032697c0 .
+doc:Factslstm1_3 cco:is_about doc:Factsrnn1 .
+_:c44732390aad2e64c6a987180070625b rdf:reifies <<( doc:Factslstm1_3 cco:is_about doc:Factsrnn1 )>> ;
+	prov:wasDerivedFrom doc:f17d032697c0 .
+doc:Factslstm1_3 cco:is_about doc:FactslstmGatedMechanism .
+_:f0f2f51f63480620afff7ec727ee53f1 rdf:reifies <<( doc:Factslstm1_3 cco:is_about doc:FactslstmGatedMechanism )>> ;
+	prov:wasDerivedFrom doc:f17d032697c0 .
+doc:Factslstm1_3 a cco:Algorithm .
+_:aea42680f79f1f58caec60895e04c389 rdf:reifies <<( doc:Factslstm1_3 rdf:type cco:Algorithm )>> ;
+	prov:wasDerivedFrom doc:f17d032697c0 .
+doc:FactscnnSpatialFeatures a None:Data_variable .
+_:d4922845dba87b3056e341698c8f7bfd rdf:reifies <<( doc:FactscnnSpatialFeatures rdf:type None:Data_variable )>> ;
+	prov:wasDerivedFrom doc:f17d032697c0 .
+doc:Factsrnn1 cco:is_about doc:FactscnnSequenceData .
+_:ac95cccc9c7750c01cd061ea22a4a6b8 rdf:reifies <<( doc:Factsrnn1 cco:is_about doc:FactscnnSequenceData )>> ;
+	prov:wasDerivedFrom doc:f17d032697c0 .
+doc:Factsrnn1 rdfs:label "Recurrent Neural Network" .
+_:d4b97a0e3e55fb31f95f050e8557c95a rdf:reifies <<( doc:Factsrnn1 rdfs:label "Recurrent Neural Network" )>> ;
+	prov:wasDerivedFrom doc:f17d032697c0 .
+doc:Factslstm1_3 cco:is_about doc:FactslstmContextualRelationships .
+_:e1b79654587fee0dcce54c3d0238f1af rdf:reifies <<( doc:Factslstm1_3 cco:is_about doc:FactslstmContextualRelationships )>> ;
+	prov:wasDerivedFrom doc:f17d032697c0 .
+doc:Factscnn2 rdfs:label "CNN" .
+_:dd6dd82a26ebb376c6ac40fb373c85fe rdf:reifies <<( doc:Factscnn2 rdfs:label "CNN" )>> ;
+	prov:wasDerivedFrom doc:f17d032697c0 .
+doc:Factsrnn1 rdfs:label "Convolutional Neural Network" .
+_:c8177a64b616a5e26776c83faef6e43b rdf:reifies <<( doc:Factsrnn1 rdfs:label "Convolutional Neural Network" )>> ;
+	prov:wasDerivedFrom doc:f17d032697c0 .
+doc:FactscnnSequenceData a None:Data_variable .
+_:d7135df11c905d299ac20a733333f615 rdf:reifies <<( doc:FactscnnSequenceData rdf:type None:Data_variable )>> ;
+	prov:wasDerivedFrom doc:f17d032697c0 .
+doc:FactslstmMemoryCell a None:Design_detail .
+_:d3df962fb042f4da05b371a720306e9e rdf:reifies <<( doc:FactslstmMemoryCell rdf:type None:Design_detail )>> ;
+	prov:wasDerivedFrom doc:f17d032697c0 .
+doc:Factsrnn1 cco:is_about doc:Factscnn2 .
+_:ec08a3f4aa832365c969fc92742a6b76 rdf:reifies <<( doc:Factsrnn1 cco:is_about doc:Factscnn2 )>> ;
+	prov:wasDerivedFrom doc:f17d032697c0 .
+doc:Factsrnn1 a cco:Algorithm .
+_:d3b201e645de0546e3be5c0c15006c7 rdf:reifies <<( doc:Factsrnn1 rdf:type cco:Algorithm )>> ;
+	prov:wasDerivedFrom doc:f17d032697c0 .
+doc:Factsdoc1_26 a None:Predictive_Maintenance_Article .
+_:c4c8b4dd267fc70063229b21b4614544 rdf:reifies <<( doc:Factsdoc1_26 rdf:type None:Predictive_Maintenance_Article )>> ;
+	prov:wasDerivedFrom doc:f17d032697c0 .
+doc:FactscnnSequenceData rdfs:label "sequential data" .
+_:c42d8802688bdb78eda49d39fb0284e2 rdf:reifies <<( doc:FactscnnSequenceData rdfs:label "sequential data" )>> ;
+	prov:wasDerivedFrom doc:f17d032697c0 .
+doc:FactscnnRelu rdfs:label "ReLU" .
+_:b2e3aaec80c5d1af9001991afd10dc95 rdf:reifies <<( doc:FactscnnRelu rdfs:label "ReLU" )>> ;
+	prov:wasDerivedFrom doc:f17d032697c0 .
+doc:FactslstmGatedMechanism rdfs:label "gated mechanism" .
+_:e73c7aa7b3fc169f822c35282c77120b rdf:reifies <<( doc:FactslstmGatedMechanism rdfs:label "gated mechanism" )>> ;
+	prov:wasDerivedFrom doc:f17d032697c0 .
+doc:FactscnnSoftmax a None:Model_type .
+_:bd750c158a8e403123070be5e9960a2e rdf:reifies <<( doc:FactscnnSoftmax rdf:type None:Model_type )>> ;
+	prov:wasDerivedFrom doc:f17d032697c0 .
+doc:FactscnnSpatialFeatures rdfs:label "spatial features" .
+_:e6d1db743121457a87251983d50bfa13 rdf:reifies <<( doc:FactscnnSpatialFeatures rdfs:label "spatial features" )>> ;
+	prov:wasDerivedFrom doc:f17d032697c0 .
+doc:Factscnn2 cco:is_about doc:FactscnnSpatialFeatures .
+_:b625cfd5d87599abac3d1da4fe5f862e rdf:reifies <<( doc:Factscnn2 cco:is_about doc:FactscnnSpatialFeatures )>> ;
+	prov:wasDerivedFrom doc:f17d032697c0 .
+doc:FactscnnInputLayer rdfs:label "Fully Connected Layer" .
+_:f2c5bc19f94affd1caf4044a3ddb775d rdf:reifies <<( doc:FactscnnInputLayer rdfs:label "Fully Connected Layer" )>> ;
+	prov:wasDerivedFrom doc:f17d032697c0 .
+doc:FactscnnGridData rdfs:label "grid-structured data" .
+_:e1ec50b6116e209d5ed0d3c517058d11 rdf:reifies <<( doc:FactscnnGridData rdfs:label "grid-structured data" )>> ;
+	prov:wasDerivedFrom doc:f17d032697c0 .
+doc:FactslstmTemporalPatterns a None:Data_variable .
+_:e2ef94bc091713430a5f81c422ad2d60 rdf:reifies <<( doc:FactslstmTemporalPatterns rdf:type None:Data_variable )>> ;
+	prov:wasDerivedFrom doc:f17d032697c0 .
+doc:FactscnnSoftmax rdfs:label "Softmax" .
+_:c838864a4095951272349b4f7f202e6d rdf:reifies <<( doc:FactscnnSoftmax rdfs:label "Softmax" )>> ;
+	prov:wasDerivedFrom doc:f17d032697c0 .
+doc:FactscnnGridData a None:Data_variable .
+_:a005764e2425f9805ff3622f21f6812a rdf:reifies <<( doc:FactscnnGridData rdf:type None:Data_variable )>> ;
+	prov:wasDerivedFrom doc:f17d032697c0 .
+doc:FactslstmGatedMechanism a None:Design_detail .
+_:e7c5b64f20100894ca038e709f37095e rdf:reifies <<( doc:FactslstmGatedMechanism rdf:type None:Design_detail )>> ;
+	prov:wasDerivedFrom doc:f17d032697c0 .
+_:eec58fd5d6e4d014b32d3954ed24a07c prov:wasDerivedFrom doc:f17d032697c0 .
+doc:FactscnnInputLayer rdfs:label "Convolutional Layer" .
+_:afa0358f62dc7b4fd8483a7e97eaab13 rdf:reifies <<( doc:FactscnnInputLayer rdfs:label "Convolutional Layer" )>> ;
+	prov:wasDerivedFrom doc:f17d032697c0 .
+doc:FactslstmMemoryCell rdfs:label "memory cell" .
+_:ed9ae20ede7d1e2ddd3b789935ab7aa3 rdf:reifies <<( doc:FactslstmMemoryCell rdfs:label "memory cell" )>> ;
+	prov:wasDerivedFrom doc:f17d032697c0 .
+doc:FactslstmContextualRelationships rdfs:label "global contextual relationships" .
+_:a74f00676c76f4b0385d9733b3460f2f rdf:reifies <<( doc:FactslstmContextualRelationships rdfs:label "global contextual relationships" )>> ;
+	prov:wasDerivedFrom doc:f17d032697c0 .
+doc:Factslstm1_3 cco:is_about doc:FactslstmTemporalPatterns .
+_:a3ad2caa336a23b14868322bad756f5a rdf:reifies <<( doc:Factslstm1_3 cco:is_about doc:FactslstmTemporalPatterns )>> ;
+	prov:wasDerivedFrom doc:f17d032697c0 .
+_:bf7da6e3c54b96decff7bb316e528a28 prov:wasDerivedFrom doc:f17d032697c0 .
+doc:FactscnnRelu rdfs:label "Rectified Linear Unit" .
+_:a262482b6da2382b90ec297a45f47f1a rdf:reifies <<( doc:FactscnnRelu rdfs:label "Rectified Linear Unit" )>> ;
+	prov:wasDerivedFrom doc:f17d032697c0 .
+doc:FactslstmTemporalPatterns rdfs:label "long-range temporal patterns" .
+_:d15abe70d26addd0f0a01ea051aba082 rdf:reifies <<( doc:FactslstmTemporalPatterns rdfs:label "long-range temporal patterns" )>> ;
+	prov:wasDerivedFrom doc:f17d032697c0 .
+doc:Factsconfig1_7 cco:is_about doc:FactscnnSoftmax .
+_:f1c3b66079821fcfb5ae904432715b1e rdf:reifies <<( doc:Factsconfig1_7 cco:is_about doc:FactscnnSoftmax )>> ;
+	prov:wasDerivedFrom doc:f17d032697c0 .
+doc:Factslstm1_3 rdfs:label "Long Short-Term Memory network" .
+_:abf5250cb05a7e4cd8d36aed629a0fd rdf:reifies <<( doc:Factslstm1_3 rdfs:label "Long Short-Term Memory network" )>> ;
+	prov:wasDerivedFrom doc:f17d032697c0 .

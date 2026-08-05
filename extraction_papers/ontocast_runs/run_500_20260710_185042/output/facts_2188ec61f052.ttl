@@ -1,0 +1,669 @@
+@prefix None: <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD/seed#> .
+@prefix cco: <http://www.ontologyrepository.com/CommonCoreOntologies/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doc: <https://growgraph.dev/doc/2188ec61f052/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix obo: <http://purl.obolibrary.org/obo/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix cd: <https://growgraph.dev/facts> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix schema: <https://schema.org/> .
+@prefix schema1: <http://schema.org/> .
+doc:c607b797b4d4 a prov:Entity , schema:text ;
+	prov:generatedAtTime "2026-07-13T14:53:21.372182Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+	schema:position 0 ;
+	schema:identifier "c607b797b4d4" .
+doc:FactstheStudy schema1:mentions doc:Factselevator .
+_:e90314b46e422680a83005629e14bc2b rdf:reifies <<( doc:FactstheStudy schema1:mentions doc:Factselevator )>> ;
+	prov:wasDerivedFrom doc:c607b797b4d4 .
+doc:FactsphysicalFaultMechanisms rdfs:label "physical fault mechanisms" .
+_:a97b4577be700504d64048c929e5ca30 rdf:reifies <<( doc:FactsphysicalFaultMechanisms rdfs:label "physical fault mechanisms" )>> ;
+	prov:wasDerivedFrom doc:c607b797b4d4 .
+doc:FactselevatorFaultDiagnosis rdfs:label "elevator fault diagnosis" .
+_:f58563fd65eca0e2022c80b088e2a9ce rdf:reifies <<( doc:FactselevatorFaultDiagnosis rdfs:label "elevator fault diagnosis" )>> ;
+	prov:wasDerivedFrom doc:c607b797b4d4 .
+doc:FactselevatorFaultDiagnosis a None:Fault_detection .
+_:f2a4bf3d55f4a6f7c47123263e0864db rdf:reifies <<( doc:FactselevatorFaultDiagnosis rdf:type None:Fault_detection )>> ;
+	prov:wasDerivedFrom doc:c607b797b4d4 .
+doc:FactsexpertRules a None:Classification .
+_:c0e6de76d3eb1fafb8647b9794a1929f rdf:reifies <<( doc:FactsexpertRules rdf:type None:Classification )>> ;
+	prov:wasDerivedFrom doc:c607b797b4d4 .
+doc:FactsmanualInspectionProcedures a schema1:Procedure .
+_:a065bcd552a1c919b444c464aa3c2678 rdf:reifies <<( doc:FactsmanualInspectionProcedures rdf:type schema1:Procedure )>> ;
+	prov:wasDerivedFrom doc:c607b797b4d4 .
+doc:Factsautomation rdfs:label "automation" .
+_:d02cb4fc7693669492a4b35e27b9e090 rdf:reifies <<( doc:Factsautomation rdfs:label "automation" )>> ;
+	prov:wasDerivedFrom doc:c607b797b4d4 .
+doc:Factsreliability_9 rdfs:label "diagnostic accuracy" .
+_:ff2d5e017cd595889b12ba57a4ded7e0 rdf:reifies <<( doc:Factsreliability_9 rdfs:label "diagnostic accuracy" )>> ;
+	prov:wasDerivedFrom doc:c607b797b4d4 .
+doc:Factsautomation a None:Predictive_maintenance_module_function .
+_:e229444d9585c3ec1d9a9b228bd42a7f rdf:reifies <<( doc:Factsautomation rdf:type None:Predictive_maintenance_module_function )>> ;
+	prov:wasDerivedFrom doc:c607b797b4d4 .
+doc:FactstheStudy schema1:mentions doc:FactselevatorSafetyManagementAct .
+_:e9c033cf4b64a46679d7a55dede3bf02 rdf:reifies <<( doc:FactstheStudy schema1:mentions doc:FactselevatorSafetyManagementAct )>> ;
+	prov:wasDerivedFrom doc:c607b797b4d4 .
+doc:FactselevatorFaultDiagnosis rdfs:label "elevator state recognition" .
+_:abc2ac33ac2a198cf9c37c316075bcb2 rdf:reifies <<( doc:FactselevatorFaultDiagnosis rdfs:label "elevator state recognition" )>> ;
+	prov:wasDerivedFrom doc:c607b797b4d4 .
+doc:Factselevator a None:Maintainable_item .
+_:d42a01de6ec6227de32940c0276974c5 rdf:reifies <<( doc:Factselevator rdf:type None:Maintainable_item )>> ;
+	prov:wasDerivedFrom doc:c607b797b4d4 .
+doc:Factsarticle1_180 dcterms:title "Development of Rule-Based Diagnostic Automation Technology for Elevator Fault Diagnosis" .
+_:ec3a680b95ab9e22ad52120d5623c073 rdf:reifies <<( doc:Factsarticle1_180 dcterms:title "Development of Rule-Based Diagnostic Automation Technology for Elevator Fault Diagnosis" )>> ;
+	prov:wasDerivedFrom doc:c607b797b4d4 .
+doc:FactselevatorSafetyManagementAct a schema1:Legislation .
+_:d18ff02f667e29f0f034c8c69c0d87b8 rdf:reifies <<( doc:FactselevatorSafetyManagementAct rdf:type schema1:Legislation )>> ;
+	prov:wasDerivedFrom doc:c607b797b4d4 .
+doc:Factsarticle1_180 schema1:about doc:FactselevatorFaultDiagnosis .
+_:ded66c87ef861aed8f98f8244fcbb188 rdf:reifies <<( doc:Factsarticle1_180 schema1:about doc:FactselevatorFaultDiagnosis )>> ;
+	prov:wasDerivedFrom doc:c607b797b4d4 .
+doc:FactsrealOperationalData a schema1:Dataset .
+_:d164124ca91ad40d9d97736828b7bfa8 rdf:reifies <<( doc:FactsrealOperationalData rdf:type schema1:Dataset )>> ;
+	prov:wasDerivedFrom doc:c607b797b4d4 .
+doc:Factsreliability_9 rdfs:label "reliability" .
+_:ba9625bed928c03ec73a2913b3c6123c rdf:reifies <<( doc:Factsreliability_9 rdfs:label "reliability" )>> ;
+	prov:wasDerivedFrom doc:c607b797b4d4 .
+doc:FactscomputationalEfficiency_2 rdfs:label "computational efficiency" .
+_:fdeef6ee07a4f90bd2da1458430383b1 rdf:reifies <<( doc:FactscomputationalEfficiency_2 rdfs:label "computational efficiency" )>> ;
+	prov:wasDerivedFrom doc:c607b797b4d4 .
+doc:Factsstandards a schema1:CreativeWork .
+_:dbebcf0fa66c9f190e9d25583123de4b rdf:reifies <<( doc:Factsstandards rdf:type schema1:CreativeWork )>> ;
+	prov:wasDerivedFrom doc:c607b797b4d4 .
+doc:Factsautomation rdfs:label "smart maintenance" .
+_:a99b50a5e03f5c5c27c8250a7cd83315 rdf:reifies <<( doc:Factsautomation rdfs:label "smart maintenance" )>> ;
+	prov:wasDerivedFrom doc:c607b797b4d4 .
+doc:FactsrealOperationalData rdfs:label "real operational data" .
+_:d82f3bad18ac3c45346a282661407a57 rdf:reifies <<( doc:FactsrealOperationalData rdfs:label "real operational data" )>> ;
+	prov:wasDerivedFrom doc:c607b797b4d4 .
+doc:FactsexpertRules rdfs:label "expert rules" .
+_:c7b7f1f5fe456be938e01e4243f698de rdf:reifies <<( doc:FactsexpertRules rdfs:label "expert rules" )>> ;
+	prov:wasDerivedFrom doc:c607b797b4d4 .
+doc:FactstheStudy schema1:mentions doc:FactsruleBasedAutomatedDiagnosticFramework .
+_:d4ff3a14ef1e934e6fee7996b5d6cfdc rdf:reifies <<( doc:FactstheStudy schema1:mentions doc:FactsruleBasedAutomatedDiagnosticFramework )>> ;
+	prov:wasDerivedFrom doc:c607b797b4d4 .
+doc:FactsruleBasedAutomatedDiagnosticFramework a None:Fault_detection .
+_:ef559a8407ffbe256ef185fa0eb75c1b rdf:reifies <<( doc:FactsruleBasedAutomatedDiagnosticFramework rdf:type None:Fault_detection )>> ;
+	prov:wasDerivedFrom doc:c607b797b4d4 .
+doc:FactsdominantFrequencyComponents a None:Fault_feature_extraction .
+_:fa451b2cb23916468653f70e607441af rdf:reifies <<( doc:FactsdominantFrequencyComponents rdf:type None:Fault_feature_extraction )>> ;
+	prov:wasDerivedFrom doc:c607b797b4d4 .
+doc:Factsstandards rdfs:label "standards" .
+_:acdb09b735da1885625b076b5d023988 rdf:reifies <<( doc:Factsstandards rdfs:label "standards" )>> ;
+	prov:wasDerivedFrom doc:c607b797b4d4 .
+doc:FactsbreakdownMaintenance a schema1:Service .
+_:c1af2465639808071ab11214991cc63a rdf:reifies <<( doc:FactsbreakdownMaintenance rdf:type schema1:Service )>> ;
+	prov:wasDerivedFrom doc:c607b797b4d4 .
+doc:FactssignalRecognition a None:Classification .
+_:bae472213d409acc3f89914b7f5e4c9c rdf:reifies <<( doc:FactssignalRecognition rdf:type None:Classification )>> ;
+	prov:wasDerivedFrom doc:c607b797b4d4 .
+doc:FactsmanualInspectionProcedures rdfs:label "manual inspection procedures" .
+_:c30a4ade9f17692f62d19132277e1d6f rdf:reifies <<( doc:FactsmanualInspectionProcedures rdfs:label "manual inspection procedures" )>> ;
+	prov:wasDerivedFrom doc:c607b797b4d4 .
+doc:Factsautomation rdfs:label "preventive safety systems" .
+_:abb9c00e8ca15157c8bbd4981d588d29 rdf:reifies <<( doc:Factsautomation rdfs:label "preventive safety systems" )>> ;
+	prov:wasDerivedFrom doc:c607b797b4d4 .
+doc:Factsreliability_9 a None:Performance_indicator .
+_:f44a64731360b3d5a183c35aa3fa6023 rdf:reifies <<( doc:Factsreliability_9 rdf:type None:Performance_indicator )>> ;
+	prov:wasDerivedFrom doc:c607b797b4d4 .
+doc:Factsarticle1_180 a None:Predictive_Maintenance_Article .
+_:d8784733a756e95ae6e4aa111463e18c rdf:reifies <<( doc:Factsarticle1_180 rdf:type None:Predictive_Maintenance_Article )>> ;
+	prov:wasDerivedFrom doc:c607b797b4d4 .
+doc:Factsarticle1_180 a schema1:ScholarlyArticle .
+_:cc1fc1c7f125b8372053b5a6d4afcf5b rdf:reifies <<( doc:Factsarticle1_180 rdf:type schema1:ScholarlyArticle )>> ;
+	prov:wasDerivedFrom doc:c607b797b4d4 .
+doc:FactsdominantFrequencyComponents rdfs:label "dominant frequency components" .
+_:dcbce9b407a3ba7b9758e7866d78957f rdf:reifies <<( doc:FactsdominantFrequencyComponents rdfs:label "dominant frequency components" )>> ;
+	prov:wasDerivedFrom doc:c607b797b4d4 .
+doc:FactsphysicalFaultMechanisms a None:Fault_feature_extraction .
+_:a1947d91fdecdfd83c074fdaf7e0376 rdf:reifies <<( doc:FactsphysicalFaultMechanisms rdf:type None:Fault_feature_extraction )>> ;
+	prov:wasDerivedFrom doc:c607b797b4d4 .
+doc:Factselevator rdfs:label "elevator" .
+_:f6555bbe3eae258607281e03618fd4ac rdf:reifies <<( doc:Factselevator rdfs:label "elevator" )>> ;
+	prov:wasDerivedFrom doc:c607b797b4d4 .
+doc:FactsrealTimePerformance a None:Performance_indicator .
+_:c8da6097dae1a592ec81016871f3e40 rdf:reifies <<( doc:FactsrealTimePerformance rdf:type None:Performance_indicator )>> ;
+	prov:wasDerivedFrom doc:c607b797b4d4 .
+doc:FactscomputationalEfficiency_2 a None:Performance_indicator .
+_:ee2150dc4519ffd0318040783fcd6626 rdf:reifies <<( doc:FactscomputationalEfficiency_2 rdf:type None:Performance_indicator )>> ;
+	prov:wasDerivedFrom doc:c607b797b4d4 .
+doc:Factselevator a schema1:Product .
+_:e1bd7e4e8f4c5136df8dfddbbc5ff58d rdf:reifies <<( doc:Factselevator rdf:type schema1:Product )>> ;
+	prov:wasDerivedFrom doc:c607b797b4d4 .
+doc:FactssignalRecognition rdfs:label "signal recognition" .
+_:be4968849482279dff587e083f5dc5c5 rdf:reifies <<( doc:FactssignalRecognition rdfs:label "signal recognition" )>> ;
+	prov:wasDerivedFrom doc:c607b797b4d4 .
+doc:Factsreliability_9 rdfs:label "interpretability" .
+_:d8919b180067fbf5b48c3b4acbd49076 rdf:reifies <<( doc:Factsreliability_9 rdfs:label "interpretability" )>> ;
+	prov:wasDerivedFrom doc:c607b797b4d4 .
+doc:FactselevatorSafetyManagementAct rdfs:label "Elevator Safety Management Act" .
+_:ef4beffa084c2c782b97147b2485540 rdf:reifies <<( doc:FactselevatorSafetyManagementAct rdfs:label "Elevator Safety Management Act" )>> ;
+	prov:wasDerivedFrom doc:c607b797b4d4 .
+doc:FactstheStudy schema1:mentions doc:FactsrealOperationalData .
+_:c3f3b9c535cda65a7e3c2cb82a84765f rdf:reifies <<( doc:FactstheStudy schema1:mentions doc:FactsrealOperationalData )>> ;
+	prov:wasDerivedFrom doc:c607b797b4d4 .
+doc:FactsruleBasedAutomatedDiagnosticFramework rdfs:label "rule-based automated diagnostic framework" .
+_:ffbf18b42c93dba6b6263ac4cffa398b rdf:reifies <<( doc:FactsruleBasedAutomatedDiagnosticFramework rdfs:label "rule-based automated diagnostic framework" )>> ;
+	prov:wasDerivedFrom doc:c607b797b4d4 .
+doc:FactsrealTimePerformance rdfs:label "real-time performance" .
+_:a9e52c450e839a8a2ca7bee4a74ac777 rdf:reifies <<( doc:FactsrealTimePerformance rdfs:label "real-time performance" )>> ;
+	prov:wasDerivedFrom doc:c607b797b4d4 .
+doc:FactselevatorFaultDiagnosis rdfs:label "intelligent elevator condition monitoring" .
+_:bc42bee3d53b40b1a442040e2a14fa83 rdf:reifies <<( doc:FactselevatorFaultDiagnosis rdfs:label "intelligent elevator condition monitoring" )>> ;
+	prov:wasDerivedFrom doc:c607b797b4d4 .
+doc:FactstheStudy schema1:mentions doc:FactsbreakdownMaintenance .
+_:a798c95df8b7624273ccf7054f092d16 rdf:reifies <<( doc:FactstheStudy schema1:mentions doc:FactsbreakdownMaintenance )>> ;
+	prov:wasDerivedFrom doc:c607b797b4d4 .
+doc:Factselevator rdfs:label "in-service elevator" .
+_:a2778c2b0abd25284eaf80b56c3dccd3 rdf:reifies <<( doc:Factselevator rdfs:label "in-service elevator" )>> ;
+	prov:wasDerivedFrom doc:c607b797b4d4 .
+doc:FactstheStudy a schema1:ScholarlyArticle .
+_:add5f51ec5ae0376093287d05be8d702 rdf:reifies <<( doc:FactstheStudy rdf:type schema1:ScholarlyArticle )>> ;
+	prov:wasDerivedFrom doc:c607b797b4d4 .
+doc:FactsbreakdownMaintenance rdfs:label "breakdown maintenance" .
+_:ca6d185b7dd91d060dbad8a636767cf rdf:reifies <<( doc:FactsbreakdownMaintenance rdfs:label "breakdown maintenance" )>> ;
+	prov:wasDerivedFrom doc:c607b797b4d4 .
+doc:Factsreliability_9 rdfs:label "generalizability" .
+_:adb8f897ee1569e9f2729c49f7350ddd rdf:reifies <<( doc:Factsreliability_9 rdfs:label "generalizability" )>> ;
+	prov:wasDerivedFrom doc:c607b797b4d4 .
+doc:FactstheStudy rdfs:label "the study" .
+_:c1a957eb0ce0f229365a77094212a7fb rdf:reifies <<( doc:FactstheStudy rdfs:label "the study" )>> ;
+	prov:wasDerivedFrom doc:c607b797b4d4 .
+doc:4b94cf282da4 a prov:Entity , schema:text ;
+	prov:generatedAtTime "2026-07-13T14:53:21.375186Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+	schema:position 1 ;
+	schema:identifier "4b94cf282da4" .
+doc:Factsarticle1_180 None:has_publication_year doc:Factsyear1_147 .
+_:a85ff73831763c2b85e711013bb9c697 rdf:reifies <<( doc:Factsarticle1_180 None:has_publication_year doc:Factsyear1_147 )>> ;
+	prov:wasDerivedFrom doc:4b94cf282da4 .
+doc:Factsautomation None:has_predictive_maintenance_function doc:Factsfaults1_4 .
+_:ef92c24094c411bcd7810aff4a732ae4 rdf:reifies <<( doc:Factsautomation None:has_predictive_maintenance_function doc:Factsfaults1_4 )>> ;
+	prov:wasDerivedFrom doc:4b94cf282da4 .
+doc:Factsfourth_industrial_revolution_technologies1 a cco:Algorithm .
+_:a1a2e5de16a87cf280cb9ccd7406cb0b rdf:reifies <<( doc:Factsfourth_industrial_revolution_technologies1 rdf:type cco:Algorithm )>> ;
+	prov:wasDerivedFrom doc:4b94cf282da4 .
+doc:Factseditor2_3 schema1:name "Zhihui Lai" .
+_:a4b8360a2b217f1f6f890603772d6efb rdf:reifies <<( doc:Factseditor2_3 schema1:name "Zhihui Lai" )>> ;
+	prov:wasDerivedFrom doc:4b94cf282da4 .
+doc:Factsfault_data1 a None:Data_variable .
+_:fbb82b2bb947d75e0a5e2a9250b9b68a rdf:reifies <<( doc:Factsfault_data1 rdf:type None:Data_variable )>> ;
+	prov:wasDerivedFrom doc:4b94cf282da4 .
+doc:Factsfaults1_4 a None:Regression .
+_:dad2cea32cdcdd37a2dc7c6a98252b41 rdf:reifies <<( doc:Factsfaults1_4 rdf:type None:Regression )>> ;
+	prov:wasDerivedFrom doc:4b94cf282da4 .
+doc:Factsfaults1_4 a None:Clustering .
+_:cc497ba5d53e33407148475a75a527f1 rdf:reifies <<( doc:Factsfaults1_4 rdf:type None:Clustering )>> ;
+	prov:wasDerivedFrom doc:4b94cf282da4 .
+doc:Factselectrical_current1 a None:Data_variable .
+_:be1bd5af6c5c50e4821d0eae82cc454a rdf:reifies <<( doc:Factselectrical_current1 rdf:type None:Data_variable )>> ;
+	prov:wasDerivedFrom doc:4b94cf282da4 .
+doc:FactscomputationalEfficiency_2 rdfs:label "maintenance efficiency" .
+_:d5b7021db7343be597331c0a2c6502af rdf:reifies <<( doc:FactscomputationalEfficiency_2 rdfs:label "maintenance efficiency" )>> ;
+	prov:wasDerivedFrom doc:4b94cf282da4 .
+doc:Factsride_comfort_criteria1 a None:Performance_indicator .
+_:b6928da29604dabdba9decd46c85f40d rdf:reifies <<( doc:Factsride_comfort_criteria1 rdf:type None:Performance_indicator )>> ;
+	prov:wasDerivedFrom doc:4b94cf282da4 .
+doc:Factsvibration1_6 rdfs:label "vibration" .
+_:ae881301489bc24fb859c7a9462f772d rdf:reifies <<( doc:Factsvibration1_6 rdfs:label "vibration" )>> ;
+	prov:wasDerivedFrom doc:4b94cf282da4 .
+_:c0e6de76d3eb1fafb8647b9794a1929f prov:wasDerivedFrom doc:4b94cf282da4 .
+doc:Factsinspector_experience1 a None:Data_variable .
+_:f55d9140f45cb814ae6433c993759ff2 rdf:reifies <<( doc:Factsinspector_experience1 rdf:type None:Data_variable )>> ;
+	prov:wasDerivedFrom doc:4b94cf282da4 .
+doc:Factsdata_imbalance1_1 a None:Design_detail .
+_:b93db597e2bac175782a05f1ab63b074 rdf:reifies <<( doc:Factsdata_imbalance1_1 rdf:type None:Design_detail )>> ;
+	prov:wasDerivedFrom doc:4b94cf282da4 .
+doc:Factsdata_scarcity1_1 a None:Design_detail .
+_:d31a63e5f7827a0bc48f7eb2e0bbb29d rdf:reifies <<( doc:Factsdata_scarcity1_1 rdf:type None:Design_detail )>> ;
+	prov:wasDerivedFrom doc:4b94cf282da4 .
+doc:Factsfault_management_strategies1 a None:Design_detail .
+_:a16afbfc83b663bb6b450435bdf38e1 rdf:reifies <<( doc:Factsfault_management_strategies1 rdf:type None:Design_detail )>> ;
+	prov:wasDerivedFrom doc:4b94cf282da4 .
+doc:Factseditor2_3 a schema1:Person .
+_:a489473b5f307a40095229bd329ffe31 rdf:reifies <<( doc:Factseditor2_3 rdf:type schema1:Person )>> ;
+	prov:wasDerivedFrom doc:4b94cf282da4 .
+doc:Factstitle1_127 a None:Article_title .
+_:a3e8bd621fc5b85071c20c1ae69aa35f rdf:reifies <<( doc:Factstitle1_127 rdf:type None:Article_title )>> ;
+	prov:wasDerivedFrom doc:4b94cf282da4 .
+doc:Factsccbylicense a owl:NamedIndividual .
+_:ddcc57f4bfee0c8c4b95e6bd83071802 rdf:reifies <<( doc:Factsccbylicense rdf:type owl:NamedIndividual )>> ;
+	prov:wasDerivedFrom doc:4b94cf282da4 .
+doc:Factsrights1 a cco:DesignativeInformationContentEntity .
+_:b07c1b578ec2db88172f14cbc43b092c rdf:reifies <<( doc:Factsrights1 rdf:type cco:DesignativeInformationContentEntity )>> ;
+	prov:wasDerivedFrom doc:4b94cf282da4 .
+doc:Factssafety1_1 a None:Design_detail .
+_:dceb0fb529cb7925d8768165879c6a10 rdf:reifies <<( doc:Factssafety1_1 rdf:type None:Design_detail )>> ;
+	prov:wasDerivedFrom doc:4b94cf282da4 .
+doc:Factsremaining_useful_life1_1 a None:Remaining_useful_life_estimation .
+_:bb238c3e99c5816f9a202e3f0432b415 rdf:reifies <<( doc:Factsremaining_useful_life1_1 rdf:type None:Remaining_useful_life_estimation )>> ;
+	prov:wasDerivedFrom doc:4b94cf282da4 .
+doc:Factsdeep_learning1 rdfs:label "deep learning" .
+_:b231301a7ed0922652d6b9c2cda72e22 rdf:reifies <<( doc:Factsdeep_learning1 rdfs:label "deep learning" )>> ;
+	prov:wasDerivedFrom doc:4b94cf282da4 .
+doc:Factsrights1 cco:designates doc:Factsccbylicense .
+_:bc08fc496ed7519e27b3e69ade7ff7b1 rdf:reifies <<( doc:Factsrights1 cco:designates doc:Factsccbylicense )>> ;
+	prov:wasDerivedFrom doc:4b94cf282da4 .
+doc:Factsvibration1_6 a None:Data_variable .
+_:d7b134cd4eefc7333cb758d783fc353f rdf:reifies <<( doc:Factsvibration1_6 rdf:type None:Data_variable )>> ;
+	prov:wasDerivedFrom doc:4b94cf282da4 .
+doc:Factsnoise1_6 rdfs:label "noise" .
+_:bad05056c74d9dd4631b5f6a72d41d29 rdf:reifies <<( doc:Factsnoise1_6 rdfs:label "noise" )>> ;
+	prov:wasDerivedFrom doc:4b94cf282da4 .
+doc:Factsfourth_industrial_revolution_technologies1 rdfs:label "Fourth Industrial Revolution technologies" .
+_:f181c95084c68008612ccfc51229e062 rdf:reifies <<( doc:Factsfourth_industrial_revolution_technologies1 rdfs:label "Fourth Industrial Revolution technologies" )>> ;
+	prov:wasDerivedFrom doc:4b94cf282da4 .
+doc:Factsautomation a None:Predictive_maintenance_system_module .
+_:a21fa710de75639eb36cfe0849b30824 rdf:reifies <<( doc:Factsautomation rdf:type None:Predictive_maintenance_system_module )>> ;
+	prov:wasDerivedFrom doc:4b94cf282da4 .
+doc:Factsfault_data1 rdfs:label "defect data" .
+_:de8d9fcf530de3dfd055a7e225e18f06 rdf:reifies <<( doc:Factsfault_data1 rdfs:label "defect data" )>> ;
+	prov:wasDerivedFrom doc:4b94cf282da4 .
+doc:Factsindustrial_fields1 a schema1:Place .
+_:b32463e3063eac5fabd496d3e10b689 rdf:reifies <<( doc:Factsindustrial_fields1 rdf:type schema1:Place )>> ;
+	prov:wasDerivedFrom doc:4b94cf282da4 .
+doc:Factsfault_management_strategies1 rdfs:label "fault management strategies" .
+_:a4a5623c6e380958e7ec4f9366abbcfa rdf:reifies <<( doc:Factsfault_management_strategies1 rdfs:label "fault management strategies" )>> ;
+	prov:wasDerivedFrom doc:4b94cf282da4 .
+doc:Factssensor_signals1 a None:Data_variable .
+_:eb3c74a42a35ae68db4db4cf3c878b51 rdf:reifies <<( doc:Factssensor_signals1 rdf:type None:Data_variable )>> ;
+	prov:wasDerivedFrom doc:4b94cf282da4 .
+_:d8784733a756e95ae6e4aa111463e18c prov:wasDerivedFrom doc:4b94cf282da4 .
+doc:Factsindustrial_fields1 rdfs:label "industrial fields" .
+_:a81da67889e646f45b5de9cd992577ad rdf:reifies <<( doc:Factsindustrial_fields1 rdfs:label "industrial fields" )>> ;
+	prov:wasDerivedFrom doc:4b94cf282da4 .
+doc:Factsfaults1_4 rdfs:label "abnormalities" .
+_:ef79aa5340e751add4cc4a1cbe426139 rdf:reifies <<( doc:Factsfaults1_4 rdfs:label "abnormalities" )>> ;
+	prov:wasDerivedFrom doc:4b94cf282da4 .
+doc:Factsyear1_147 None:has_interger_value 2025 .
+_:eb19e3c923d58237b353774995a37aad rdf:reifies <<( doc:Factsyear1_147 None:has_interger_value 2025 )>> ;
+	prov:wasDerivedFrom doc:4b94cf282da4 .
+doc:Factsdeep_learning1 rdfs:label "machine learning" .
+_:ae8c9dfb8befcfc0c6a5b68fd173ef73 rdf:reifies <<( doc:Factsdeep_learning1 rdfs:label "machine learning" )>> ;
+	prov:wasDerivedFrom doc:4b94cf282da4 .
+doc:Factsfaults1_4 rdfs:label "breakdowns" .
+_:d1eeb1e141b906e501caac4ae03f5f0a rdf:reifies <<( doc:Factsfaults1_4 rdfs:label "breakdowns" )>> ;
+	prov:wasDerivedFrom doc:4b94cf282da4 .
+doc:Factsfaults1_4 rdfs:label "accidents" .
+_:b347a0226d5731ade69f99a0305e2ee7 rdf:reifies <<( doc:Factsfaults1_4 rdfs:label "accidents" )>> ;
+	prov:wasDerivedFrom doc:4b94cf282da4 .
+doc:Factsfaults1_4 a None:Fault_detection .
+_:bd6c5f90804f7459d6071f12e2bafe2e rdf:reifies <<( doc:Factsfaults1_4 rdf:type None:Fault_detection )>> ;
+	prov:wasDerivedFrom doc:4b94cf282da4 .
+doc:Factsvibration_based_approach1 a None:Classification .
+_:ee634131e20f7e9ed165d5838febd1a6 rdf:reifies <<( doc:Factsvibration_based_approach1 rdf:type None:Classification )>> ;
+	prov:wasDerivedFrom doc:4b94cf282da4 .
+doc:Factsarticle1_180 dcterms:dateRevised "2025-12-10"^^<http://www.w3.org/2001/XMLSchema#date> .
+_:bd188371365cb1f63bd55ee3557264f5 rdf:reifies <<( doc:Factsarticle1_180 dcterms:dateRevised "2025-12-10"^^<http://www.w3.org/2001/XMLSchema#date> )>> ;
+	prov:wasDerivedFrom doc:4b94cf282da4 .
+doc:Factsthreshold_based_judgment1 a None:Classification .
+_:d4f09e5cb9405bad64a0f0ca85636763 rdf:reifies <<( doc:Factsthreshold_based_judgment1 rdf:type None:Classification )>> ;
+	prov:wasDerivedFrom doc:4b94cf282da4 .
+doc:Factselevator_industry1 a schema1:Organization .
+_:b0a9bd288425d0431af88f4226166a7b rdf:reifies <<( doc:Factselevator_industry1 rdf:type schema1:Organization )>> ;
+	prov:wasDerivedFrom doc:4b94cf282da4 .
+doc:Factspassengers1 a schema1:Person .
+_:a8c09149d9bd0d74a08f3e577d611852 rdf:reifies <<( doc:Factspassengers1 rdf:type schema1:Person )>> ;
+	prov:wasDerivedFrom doc:4b94cf282da4 .
+doc:FactsexpertRules rdfs:label "rule-based" .
+_:d9d461b33e4c629daf83a6d3e4db7171 rdf:reifies <<( doc:FactsexpertRules rdfs:label "rule-based" )>> ;
+	prov:wasDerivedFrom doc:4b94cf282da4 .
+doc:Factsinspector_experience1 rdfs:label "inspectors' experience" .
+_:d016ca3112ce60e6569e1f17fbc2cc0c rdf:reifies <<( doc:Factsinspector_experience1 rdfs:label "inspectors' experience" )>> ;
+	prov:wasDerivedFrom doc:4b94cf282da4 .
+doc:Factsarticle1_180 dcterms:dateAccepted "2025-12-24"^^<http://www.w3.org/2001/XMLSchema#date> .
+_:ba857bf42e3d26f60f58007c09d7a0d4 rdf:reifies <<( doc:Factsarticle1_180 dcterms:dateAccepted "2025-12-24"^^<http://www.w3.org/2001/XMLSchema#date> )>> ;
+	prov:wasDerivedFrom doc:4b94cf282da4 .
+doc:Factssensor_signals1 rdfs:label "sensor signals" .
+_:fda1c2e14279ce2f26272a537ed8be6b rdf:reifies <<( doc:Factssensor_signals1 rdfs:label "sensor signals" )>> ;
+	prov:wasDerivedFrom doc:4b94cf282da4 .
+doc:Factsself_inspections1 rdfs:label "self-inspections" .
+_:bf8422d5376cc56606461cd06cf10db7 rdf:reifies <<( doc:Factsself_inspections1 rdfs:label "self-inspections" )>> ;
+	prov:wasDerivedFrom doc:4b94cf282da4 .
+doc:Factsself_inspections1 a None:Data_variable .
+_:ae07627cbab157765d335fe227b7cd82 rdf:reifies <<( doc:Factsself_inspections1 rdf:type None:Data_variable )>> ;
+	prov:wasDerivedFrom doc:4b94cf282da4 .
+doc:Factsyear1_147 a None:Publication_year .
+_:f9fbc2fc2fe4dd72dbd515c6fd60c6da rdf:reifies <<( doc:Factsyear1_147 rdf:type None:Publication_year )>> ;
+	prov:wasDerivedFrom doc:4b94cf282da4 .
+doc:FactscomputationalEfficiency_2 a None:Performance_value .
+_:dc2d4327a489285c0548acf65e63b7fa rdf:reifies <<( doc:FactscomputationalEfficiency_2 rdf:type None:Performance_value )>> ;
+	prov:wasDerivedFrom doc:4b94cf282da4 .
+_:b66bb875e78d624609286956a3dd7421 rdf:reifies <<( doc:Factselevator rdfs:label "elevator" )>> ;
+	prov:wasDerivedFrom doc:4b94cf282da4 .
+doc:Factsfaults1_4 a None:Deviation_detection .
+_:e2c01a87293fb3c407a71df822f09a2c rdf:reifies <<( doc:Factsfaults1_4 rdf:type None:Deviation_detection )>> ;
+	prov:wasDerivedFrom doc:4b94cf282da4 .
+doc:Factssafety1_1 rdfs:label "user safety" .
+_:e15a16bdb910d1ea9a1aa79a910287bb rdf:reifies <<( doc:Factssafety1_1 rdfs:label "user safety" )>> ;
+	prov:wasDerivedFrom doc:4b94cf282da4 .
+doc:Factspassengers1 rdfs:label "passengers" .
+_:ab14838ca1d266c0bc13f9449966ffc5 rdf:reifies <<( doc:Factspassengers1 rdfs:label "passengers" )>> ;
+	prov:wasDerivedFrom doc:4b94cf282da4 .
+doc:Factsfaults1_4 a None:Sequential_pattern_discovery .
+_:cac2a28f45ce5e686248a8e6c855c4c2 rdf:reifies <<( doc:Factsfaults1_4 rdf:type None:Sequential_pattern_discovery )>> ;
+	prov:wasDerivedFrom doc:4b94cf282da4 .
+_:f44a64731360b3d5a183c35aa3fa6023 prov:wasDerivedFrom doc:4b94cf282da4 .
+_:d42a01de6ec6227de32940c0276974c5 prov:wasDerivedFrom doc:4b94cf282da4 .
+doc:Factselevator_industry1 schema1:name "National Elevator Information Center" .
+_:c773478123c9276cdc1c09fde662b70e rdf:reifies <<( doc:Factselevator_industry1 schema1:name "National Elevator Information Center" )>> ;
+	prov:wasDerivedFrom doc:4b94cf282da4 .
+doc:Factsarticle1_180 dcterms:issued "2025-12-29"^^<http://www.w3.org/2001/XMLSchema#date> .
+_:d71eb459ced2293049d92cc4d7399941 rdf:reifies <<( doc:Factsarticle1_180 dcterms:issued "2025-12-29"^^<http://www.w3.org/2001/XMLSchema#date> )>> ;
+	prov:wasDerivedFrom doc:4b94cf282da4 .
+doc:Factsarticle1_180 dcterms:rights doc:Factsrights1 .
+_:a091d37bde5f2539bb7aa65fb4fa51d rdf:reifies <<( doc:Factsarticle1_180 dcterms:rights doc:Factsrights1 )>> ;
+	prov:wasDerivedFrom doc:4b94cf282da4 .
+doc:Factsthreshold_based_judgment1 rdfs:label "threshold-based judgments" .
+_:b7a51c0091b72b007378ee68042ac075 rdf:reifies <<( doc:Factsthreshold_based_judgment1 rdfs:label "threshold-based judgments" )>> ;
+	prov:wasDerivedFrom doc:4b94cf282da4 .
+doc:Factstitle1_127 None:has_text_value "Moreover, most elevator" .
+_:e189dc047792698d365e1d2fe89c4590 rdf:reifies <<( doc:Factstitle1_127 None:has_text_value "Moreover, most elevator" )>> ;
+	prov:wasDerivedFrom doc:4b94cf282da4 .
+doc:Factselevator_industry1 rdfs:label "elevator industry" .
+_:cdb2e19e2981576b5c40fc45a02e745 rdf:reifies <<( doc:Factselevator_industry1 rdfs:label "elevator industry" )>> ;
+	prov:wasDerivedFrom doc:4b94cf282da4 .
+doc:Factsdeep_learning1 a None:Classification .
+_:ff87cff8d7b099851aad6e049ff0042d rdf:reifies <<( doc:Factsdeep_learning1 rdf:type None:Classification )>> ;
+	prov:wasDerivedFrom doc:4b94cf282da4 .
+doc:Factsfaults1_4 rdfs:label "faults" .
+_:fde4bb142a85776cbd7c26907a09d4da rdf:reifies <<( doc:Factsfaults1_4 rdfs:label "faults" )>> ;
+	prov:wasDerivedFrom doc:4b94cf282da4 .
+doc:Factselectrical_current1 rdfs:label "electrical current" .
+_:d6708ea459dc8b84215b897b46da06a8 rdf:reifies <<( doc:Factselectrical_current1 rdfs:label "electrical current" )>> ;
+	prov:wasDerivedFrom doc:4b94cf282da4 .
+doc:Factsautomation None:has_predictive_maintenance_function doc:Factsremaining_useful_life1_1 .
+_:f73c285fc022ec7efb5e03d1b8cc2317 rdf:reifies <<( doc:Factsautomation None:has_predictive_maintenance_function doc:Factsremaining_useful_life1_1 )>> ;
+	prov:wasDerivedFrom doc:4b94cf282da4 .
+doc:Factsvisual_checks1 rdfs:label "visual checks" .
+_:dfe4b9692be3f63ae4231baac9c87bc0 rdf:reifies <<( doc:Factsvisual_checks1 rdfs:label "visual checks" )>> ;
+	prov:wasDerivedFrom doc:4b94cf282da4 .
+doc:Factsfault_data1 rdfs:label "fault data" .
+_:d9a396ad3e455b6bacac6f150cd22837 rdf:reifies <<( doc:Factsfault_data1 rdfs:label "fault data" )>> ;
+	prov:wasDerivedFrom doc:4b94cf282da4 .
+doc:Factsautomation rdfs:label "AI-based facility diagnostic systems" .
+_:dd335b21d5668af8950d740a8034c0cb rdf:reifies <<( doc:Factsautomation rdfs:label "AI-based facility diagnostic systems" )>> ;
+	prov:wasDerivedFrom doc:4b94cf282da4 .
+doc:Factsarticle1_180 dcterms:dateReceived "2025-10-31"^^<http://www.w3.org/2001/XMLSchema#date> .
+_:a476ba6bed3d47fab2e53897cccf14b rdf:reifies <<( doc:Factsarticle1_180 dcterms:dateReceived "2025-10-31"^^<http://www.w3.org/2001/XMLSchema#date> )>> ;
+	prov:wasDerivedFrom doc:4b94cf282da4 .
+doc:Factsfaults1_4 a None:Classification .
+_:eb40a0da3d6d5f820a7527d320a347aa rdf:reifies <<( doc:Factsfaults1_4 rdf:type None:Classification )>> ;
+	prov:wasDerivedFrom doc:4b94cf282da4 .
+doc:Factseditor2_3 schema1:name "Jiawei Xiang" .
+_:c73ac033356bd0fe901c3d7c356df3ed rdf:reifies <<( doc:Factseditor2_3 schema1:name "Jiawei Xiang" )>> ;
+	prov:wasDerivedFrom doc:4b94cf282da4 .
+doc:Factsautomation None:has_predictive_maintenance_function doc:Factshealth_assessment1_7 .
+_:be03aedabc8c36d38723970d77978fae rdf:reifies <<( doc:Factsautomation None:has_predictive_maintenance_function doc:Factshealth_assessment1_7 )>> ;
+	prov:wasDerivedFrom doc:4b94cf282da4 .
+doc:Factsarticle1_180 None:has_title doc:Factstitle1_127 .
+_:a1ed76bf7de1b8e043ad3d996f3e92c1 rdf:reifies <<( doc:Factsarticle1_180 None:has_title doc:Factstitle1_127 )>> ;
+	prov:wasDerivedFrom doc:4b94cf282da4 .
+doc:Factsarticle1_180 dcterms:creator doc:Factseditor2_3 .
+_:e165a89dcb0108f2461069c4fbc278cf rdf:reifies <<( doc:Factsarticle1_180 dcterms:creator doc:Factseditor2_3 )>> ;
+	prov:wasDerivedFrom doc:4b94cf282da4 .
+doc:Factstraining_data1_1 a None:Data_variable .
+_:b33dc980e37fa3b559a2d750a959fe6e rdf:reifies <<( doc:Factstraining_data1_1 rdf:type None:Data_variable )>> ;
+	prov:wasDerivedFrom doc:4b94cf282da4 .
+doc:Factsdata_imbalance1_1 rdfs:label "data imbalance" .
+_:a64772c0cf1ef6ab9cc832c10568f54d rdf:reifies <<( doc:Factsdata_imbalance1_1 rdfs:label "data imbalance" )>> ;
+	prov:wasDerivedFrom doc:4b94cf282da4 .
+doc:Factsfaults1_4 a None:Association_discovery .
+_:cddf6c6078483103205f3e78ecc7158c rdf:reifies <<( doc:Factsfaults1_4 rdf:type None:Association_discovery )>> ;
+	prov:wasDerivedFrom doc:4b94cf282da4 .
+doc:Factsarticle1_180 dcterms:publisher doc:Factspublisher1_15 .
+_:f1ee219da86c10f31188b83e9f63f7a rdf:reifies <<( doc:Factsarticle1_180 dcterms:publisher doc:Factspublisher1_15 )>> ;
+	prov:wasDerivedFrom doc:4b94cf282da4 .
+doc:Factsvibration_based_approach1 rdfs:label "vibration-based" .
+_:c1bb76cae2237ebec36ea72b9cff8ffc rdf:reifies <<( doc:Factsvibration_based_approach1 rdfs:label "vibration-based" )>> ;
+	prov:wasDerivedFrom doc:4b94cf282da4 .
+doc:Factsnoise1_6 a None:Data_variable .
+_:e10bde03669a5d88d0b8f7a3d446f14a rdf:reifies <<( doc:Factsnoise1_6 rdf:type None:Data_variable )>> ;
+	prov:wasDerivedFrom doc:4b94cf282da4 .
+doc:Factshealth_assessment1_7 a None:Health_assessment .
+_:b74f61278c4687fab3d4494ce06c53c2 rdf:reifies <<( doc:Factshealth_assessment1_7 rdf:type None:Health_assessment )>> ;
+	prov:wasDerivedFrom doc:4b94cf282da4 .
+doc:Factstraining_data1_1 rdfs:label "training data" .
+_:f1ec5b85b6f3afb37b13055045aa6c3d rdf:reifies <<( doc:Factstraining_data1_1 rdfs:label "training data" )>> ;
+	prov:wasDerivedFrom doc:4b94cf282da4 .
+doc:Factsreliability_9 rdfs:label "objective and data-driven assessment" .
+_:adcdb2cb6f405f6db97275f10762db00 rdf:reifies <<( doc:Factsreliability_9 rdfs:label "objective and data-driven assessment" )>> ;
+	prov:wasDerivedFrom doc:4b94cf282da4 .
+doc:Factsvisual_checks1 a None:Data_variable .
+_:dfb1bff3cac94b1f0fbd461f6c25f1c5 rdf:reifies <<( doc:Factsvisual_checks1 rdf:type None:Data_variable )>> ;
+	prov:wasDerivedFrom doc:4b94cf282da4 .
+doc:Factspublisher1_15 a schema1:Organization .
+_:bb5f6963fbae3f0a990d1d24090130f4 rdf:reifies <<( doc:Factspublisher1_15 rdf:type schema1:Organization )>> ;
+	prov:wasDerivedFrom doc:4b94cf282da4 .
+doc:Factsdata_scarcity1_1 rdfs:label "data scarcity" .
+_:de0c935dcba96812d072223121168b9c rdf:reifies <<( doc:Factsdata_scarcity1_1 rdfs:label "data scarcity" )>> ;
+	prov:wasDerivedFrom doc:4b94cf282da4 .
+doc:Factsalarm_level1 a None:Performance_indicator .
+_:dee294a73f0783870101644bfc5d003f rdf:reifies <<( doc:Factsalarm_level1 rdf:type None:Performance_indicator )>> ;
+	prov:wasDerivedFrom doc:4b94cf282da4 .
+doc:Factsalarm_level1 rdfs:label "alarm level" .
+_:b75b5bed4792f100f12e28601ba1d6d3 rdf:reifies <<( doc:Factsalarm_level1 rdfs:label "alarm level" )>> ;
+	prov:wasDerivedFrom doc:4b94cf282da4 .
+doc:Factsride_comfort_criteria1 rdfs:label "ride comfort criteria" .
+_:eee0809399e2d62193b5430d804ca364 rdf:reifies <<( doc:Factsride_comfort_criteria1 rdfs:label "ride comfort criteria" )>> ;
+	prov:wasDerivedFrom doc:4b94cf282da4 .
+doc:919f7029a246 a prov:Entity , schema:text ;
+	prov:generatedAtTime "2026-07-13T14:53:21.381186Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+	schema:position 2 ;
+	schema:identifier "919f7029a246" .
+doc:FactsBuildingType rdfs:label "elevator facility"@en .
+_:d3fdc3098229ec8cb961c9170d709a63 rdf:reifies <<( doc:FactsBuildingType rdfs:label "elevator facility"@en )>> ;
+	prov:wasDerivedFrom doc:919f7029a246 .
+doc:FactsMovingCar rdfs:label "moving car"@en .
+_:e2ba74fb360c9d6f08b48aba049a4c8 rdf:reifies <<( doc:FactsMovingCar rdfs:label "moving car"@en )>> ;
+	prov:wasDerivedFrom doc:919f7029a246 .
+doc:FactsBuildingType rdfs:label "commercial building"@en .
+_:f9801039260d3e0536cd3f4a91b538a3 rdf:reifies <<( doc:FactsBuildingType rdfs:label "commercial building"@en )>> ;
+	prov:wasDerivedFrom doc:919f7029a246 .
+doc:Fault_detection rdfs:subClassOf None:Fault_detection .
+_:d08f8b636f976b128b0f33b79d247785 rdf:reifies <<( doc:Fault_detection rdfs:subClassOf None:Fault_detection )>> ;
+	prov:wasDerivedFrom doc:919f7029a246 .
+doc:FactsGuideRail a owl:Class .
+_:fc102de4d1eb75d780cb7c2edfe4f3f6 rdf:reifies <<( doc:FactsGuideRail rdf:type owl:Class )>> ;
+	prov:wasDerivedFrom doc:919f7029a246 .
+doc:FactsRatedSpeed rdfs:label "rated speed"@en .
+_:ed352072972d3ff11e8d7d29b1d4f3e9 rdf:reifies <<( doc:FactsRatedSpeed rdfs:label "rated speed"@en )>> ;
+	prov:wasDerivedFrom doc:919f7029a246 .
+doc:FactsBuildingType cd:has_part doc:FactsDataDistribution .
+_:ce60ec3934d6c949504921d1c7738c72 rdf:reifies <<( doc:FactsBuildingType cd:has_part doc:FactsDataDistribution )>> ;
+	prov:wasDerivedFrom doc:919f7029a246 .
+doc:FactsDataDistribution rdfs:label "data distribution"@en .
+_:e3f78d8320de902b61cab55fe95d4488 rdf:reifies <<( doc:FactsDataDistribution rdfs:label "data distribution"@en )>> ;
+	prov:wasDerivedFrom doc:919f7029a246 .
+doc:FactsMovingCar a owl:Class .
+_:e02fa2bdec2e3eea4e4bf5be1454e595 rdf:reifies <<( doc:FactsMovingCar rdf:type owl:Class )>> ;
+	prov:wasDerivedFrom doc:919f7029a246 .
+doc:FactsBuildingType rdfs:subClassOf cco:Artifact .
+_:fb0156352a63b3c6cc0a69354a026e81 rdf:reifies <<( doc:FactsBuildingType rdfs:subClassOf cco:Artifact )>> ;
+	prov:wasDerivedFrom doc:919f7029a246 .
+doc:FactsDriveMechanism rdfs:subClassOf cco:Artifact .
+_:adb7792aafbead74d7fc48308a15e26f rdf:reifies <<( doc:FactsDriveMechanism rdfs:subClassOf cco:Artifact )>> ;
+	prov:wasDerivedFrom doc:919f7029a246 .
+doc:FactsBuildingType rdfs:subClassOf cco:DescriptiveInformationContentEntity .
+_:e59de7c02c4f8adaa7d3a1e2a04ac008 rdf:reifies <<( doc:FactsBuildingType rdfs:subClassOf cco:DescriptiveInformationContentEntity )>> ;
+	prov:wasDerivedFrom doc:919f7029a246 .
+doc:FactsBuildingType cd:has_part doc:FactsGuideRail .
+_:c57a75e905105a5a2d3fd0d7be02e7cc rdf:reifies <<( doc:FactsBuildingType cd:has_part doc:FactsGuideRail )>> ;
+	prov:wasDerivedFrom doc:919f7029a246 .
+doc:FactsMachineLearningModel rdfs:subClassOf None:Predictive_maintenance_model .
+_:dfe1f70b150339aed9469ad14348006d rdf:reifies <<( doc:FactsMachineLearningModel rdfs:subClassOf None:Predictive_maintenance_model )>> ;
+	prov:wasDerivedFrom doc:919f7029a246 .
+doc:FactsBuildingType rdfs:subClassOf doc:FactsBuildingType .
+_:c293e5668680172dd8e11f5e65cf8200 rdf:reifies <<( doc:FactsBuildingType rdfs:subClassOf doc:FactsBuildingType )>> ;
+	prov:wasDerivedFrom doc:919f7029a246 .
+doc:FactsFacilitySpecificModel cd:describes_type doc:FactsBuildingType .
+_:a6f3763f935688bf87ee77d4fa2280c3 rdf:reifies <<( doc:FactsFacilitySpecificModel cd:describes_type doc:FactsBuildingType )>> ;
+	prov:wasDerivedFrom doc:919f7029a246 .
+doc:FactsGuideRail rdfs:subClassOf None:Fault_detection .
+_:d50fe15c556c3103edbd76ed69684475 rdf:reifies <<( doc:FactsGuideRail rdfs:subClassOf None:Fault_detection )>> ;
+	prov:wasDerivedFrom doc:919f7029a246 .
+doc:FactsGuideRail rdfs:label "guide rail misalignment"@en .
+_:cf4286e9fe491ff38602332cc769dd4d rdf:reifies <<( doc:FactsGuideRail rdfs:label "guide rail misalignment"@en )>> ;
+	prov:wasDerivedFrom doc:919f7029a246 .
+doc:FactsBuildingType rdfs:subClassOf obo:BFO_0000030 .
+_:e40a274021b61e441b68ba914d2cde34 rdf:reifies <<( doc:FactsBuildingType rdfs:subClassOf obo:BFO_0000030 )>> ;
+	prov:wasDerivedFrom doc:919f7029a246 .
+doc:FactsMachineLearningModel a owl:Class .
+_:fd5d8f0c524b6fa3bc570e5ed0727369 rdf:reifies <<( doc:FactsMachineLearningModel rdf:type owl:Class )>> ;
+	prov:wasDerivedFrom doc:919f7029a246 .
+doc:FactsPhysicsInformedNeuralNetworks a owl:Class .
+_:d424747ce2ac47baab4cfc4dee33c7f3 rdf:reifies <<( doc:FactsPhysicsInformedNeuralNetworks rdf:type owl:Class )>> ;
+	prov:wasDerivedFrom doc:919f7029a246 .
+doc:FactsRopeTensionImbalance rdfs:subClassOf None:Fault_detection .
+_:b44ea991b7821aea70f905d2a4238471 rdf:reifies <<( doc:FactsRopeTensionImbalance rdfs:subClassOf None:Fault_detection )>> ;
+	prov:wasDerivedFrom doc:919f7029a246 .
+doc:FactsBuildingType cd:has_part doc:FactsLoadCapacity .
+_:ce5c2df616f958b40113869f1975d834 rdf:reifies <<( doc:FactsBuildingType cd:has_part doc:FactsLoadCapacity )>> ;
+	prov:wasDerivedFrom doc:919f7029a246 .
+doc:Fault_detection rdfs:label "rule-based diagnostic automation"@en .
+_:cf2b8ad79f6d1d1bad5e8e59e1ac7d76 rdf:reifies <<( doc:Fault_detection rdfs:label "rule-based diagnostic automation"@en )>> ;
+	prov:wasDerivedFrom doc:919f7029a246 .
+doc:FactsBuildingType cd:has_part doc:FactsMovingCar .
+_:febb9466e023245d5f8facadf0d2efe9 rdf:reifies <<( doc:FactsBuildingType cd:has_part doc:FactsMovingCar )>> ;
+	prov:wasDerivedFrom doc:919f7029a246 .
+doc:FactsBuildingType a owl:Class .
+_:dd50e1ebebb2a57839cd79872e4073b7 rdf:reifies <<( doc:FactsBuildingType rdf:type owl:Class )>> ;
+	prov:wasDerivedFrom doc:919f7029a246 .
+doc:FactsFacilitySpecificModel rdfs:label "generalized diagnostic model"@en .
+_:de75b83e180cdba59eba91facc2d796b rdf:reifies <<( doc:FactsFacilitySpecificModel rdfs:label "generalized diagnostic model"@en )>> ;
+	prov:wasDerivedFrom doc:919f7029a246 .
+doc:FactsGuideRail a None:Fault_detection .
+_:dd0b6103bb6487b1945ae2fe99ef5339 rdf:reifies <<( doc:FactsGuideRail rdf:type None:Fault_detection )>> ;
+	prov:wasDerivedFrom doc:919f7029a246 .
+doc:FactsSuspensionRope rdfs:label "suspension rope"@en .
+_:c9e54ad97250cb53ad385dc1e040e9a1 rdf:reifies <<( doc:FactsSuspensionRope rdfs:label "suspension rope"@en )>> ;
+	prov:wasDerivedFrom doc:919f7029a246 .
+doc:FactsBuildingType cd:has_part doc:FactsBuildingType .
+_:b899a5ba120cb22786319a51fba01b8a rdf:reifies <<( doc:FactsBuildingType cd:has_part doc:FactsBuildingType )>> ;
+	prov:wasDerivedFrom doc:919f7029a246 .
+doc:FactsFacilitySpecificModel a None:Predictive_maintenance_model .
+_:d0e7417a16302d8fc008ef39ee195fcc rdf:reifies <<( doc:FactsFacilitySpecificModel rdf:type None:Predictive_maintenance_model )>> ;
+	prov:wasDerivedFrom doc:919f7029a246 .
+doc:FactsBuildingType cd:has_part doc:FactsSuspensionRope .
+_:dac80f3785299c9fc3c37089aeb20003 rdf:reifies <<( doc:FactsBuildingType cd:has_part doc:FactsSuspensionRope )>> ;
+	prov:wasDerivedFrom doc:919f7029a246 .
+doc:FactsRopeTensionImbalance a None:Fault_detection .
+_:ce0d535f5ea5d6a0dfcce19564b41a40 rdf:reifies <<( doc:FactsRopeTensionImbalance rdf:type None:Fault_detection )>> ;
+	prov:wasDerivedFrom doc:919f7029a246 .
+doc:FactsRatedSpeed rdfs:subClassOf obo:BFO_0000019 .
+_:fb2f71c90ab53da8d3b40397620395d1 rdf:reifies <<( doc:FactsRatedSpeed rdfs:subClassOf obo:BFO_0000019 )>> ;
+	prov:wasDerivedFrom doc:919f7029a246 .
+doc:FactsFacilitySpecificModel a owl:Class .
+_:bbaddf776cff6040106fd2c5a8559c18 rdf:reifies <<( doc:FactsFacilitySpecificModel rdf:type owl:Class )>> ;
+	prov:wasDerivedFrom doc:919f7029a246 .
+doc:FactsPhysicsInformedNeuralNetworks rdfs:subClassOf None:Predictive_maintenance_module_function .
+_:e49052338075281d0417d825fc92a674 rdf:reifies <<( doc:FactsPhysicsInformedNeuralNetworks rdfs:subClassOf None:Predictive_maintenance_module_function )>> ;
+	prov:wasDerivedFrom doc:919f7029a246 .
+doc:FactsPhysicsGuidedDegradationTrajectoryModeling rdfs:subClassOf None:Predictive_maintenance_module_function .
+_:d6ec333745e534fb7874c24c9cc3ffca rdf:reifies <<( doc:FactsPhysicsGuidedDegradationTrajectoryModeling rdfs:subClassOf None:Predictive_maintenance_module_function )>> ;
+	prov:wasDerivedFrom doc:919f7029a246 .
+doc:FactsRatedSpeed a owl:Class .
+_:d921c1183832bebdd33427f43e93e881 rdf:reifies <<( doc:FactsRatedSpeed rdf:type owl:Class )>> ;
+	prov:wasDerivedFrom doc:919f7029a246 .
+doc:FactsBuildingType rdfs:label "residential building"@en .
+_:b84785009c53d0b9a8fc68808ef2162c rdf:reifies <<( doc:FactsBuildingType rdfs:label "residential building"@en )>> ;
+	prov:wasDerivedFrom doc:919f7029a246 .
+doc:FactsBuildingType rdfs:label "office building"@en .
+_:bb16832855d23b66bab447970a0c9028 rdf:reifies <<( doc:FactsBuildingType rdfs:label "office building"@en )>> ;
+	prov:wasDerivedFrom doc:919f7029a246 .
+doc:FactsPhysicsInformedNeuralNetworks a None:Predictive_maintenance_module_function .
+_:a59f7d5d79b76b2a60674c8f0448baec rdf:reifies <<( doc:FactsPhysicsInformedNeuralNetworks rdf:type None:Predictive_maintenance_module_function )>> ;
+	prov:wasDerivedFrom doc:919f7029a246 .
+doc:FactsBuildingType rdfs:label "elevator system"@en .
+_:e46fc207d07a1a70e9fb915a21e3b414 rdf:reifies <<( doc:FactsBuildingType rdfs:label "elevator system"@en )>> ;
+	prov:wasDerivedFrom doc:919f7029a246 .
+doc:FactsDriveMechanism a owl:Class .
+_:d6c3bead726ab5950f1117993d1a21a8 rdf:reifies <<( doc:FactsDriveMechanism rdf:type owl:Class )>> ;
+	prov:wasDerivedFrom doc:919f7029a246 .
+doc:FactsLoadCapacity a owl:Class .
+_:a8a4399e965dfd8a0563da67d77c5026 rdf:reifies <<( doc:FactsLoadCapacity rdf:type owl:Class )>> ;
+	prov:wasDerivedFrom doc:919f7029a246 .
+doc:FactsMovingCar rdfs:subClassOf obo:BFO_0000030 .
+_:f2a048bacb5cf6c43df37e9e37937b86 rdf:reifies <<( doc:FactsMovingCar rdfs:subClassOf obo:BFO_0000030 )>> ;
+	prov:wasDerivedFrom doc:919f7029a246 .
+doc:FactsRopeTensionImbalance a owl:Class .
+_:f0278c199759455a619bdcf359d59de9 rdf:reifies <<( doc:FactsRopeTensionImbalance rdf:type owl:Class )>> ;
+	prov:wasDerivedFrom doc:919f7029a246 .
+doc:FactsLoadCapacity rdfs:label "load capacity"@en .
+_:bcb22eac2e7e099505e01bb6937e6a9d rdf:reifies <<( doc:FactsLoadCapacity rdfs:label "load capacity"@en )>> ;
+	prov:wasDerivedFrom doc:919f7029a246 .
+doc:FactsGuideRail rdfs:label "guide rail"@en .
+_:ec8b7fe39a26e568864dc2e07a395a4 rdf:reifies <<( doc:FactsGuideRail rdfs:label "guide rail"@en )>> ;
+	prov:wasDerivedFrom doc:919f7029a246 .
+doc:FactsPhysicsGuidedDegradationTrajectoryModeling a None:Future_state_forecast .
+_:dbf6deecb23e7ae862fa7e8160becf51 rdf:reifies <<( doc:FactsPhysicsGuidedDegradationTrajectoryModeling rdf:type None:Future_state_forecast )>> ;
+	prov:wasDerivedFrom doc:919f7029a246 .
+doc:FactsBuildingType a cco:Artifact .
+_:a07d3020a5fdf232d0b2de9924138756 rdf:reifies <<( doc:FactsBuildingType rdf:type cco:Artifact )>> ;
+	prov:wasDerivedFrom doc:919f7029a246 .
+doc:FactsBuildingType a cco:InformationProcessingArtifact .
+_:a186413c415fd883dc92ce2f45c4344e rdf:reifies <<( doc:FactsBuildingType rdf:type cco:InformationProcessingArtifact )>> ;
+	prov:wasDerivedFrom doc:919f7029a246 .
+doc:Fault_detection a None:Fault_detection .
+_:e17c3ec1b3b9c6cfde01ff6949bda5ee rdf:reifies <<( doc:Fault_detection rdf:type None:Fault_detection )>> ;
+	prov:wasDerivedFrom doc:919f7029a246 .
+doc:FactsBuildingType rdfs:label "signal characteristic"@en .
+_:c4f12bccb36d35e76bdab71107c0a17 rdf:reifies <<( doc:FactsBuildingType rdfs:label "signal characteristic"@en )>> ;
+	prov:wasDerivedFrom doc:919f7029a246 .
+doc:FactsSuspensionRope rdfs:subClassOf obo:BFO_0000030 .
+_:dae8ee5fc436b38860ced5166fd3391c rdf:reifies <<( doc:FactsSuspensionRope rdfs:subClassOf obo:BFO_0000030 )>> ;
+	prov:wasDerivedFrom doc:919f7029a246 .
+doc:FactsFacilitySpecificModel rdfs:subClassOf doc:FactsMachineLearningModel .
+_:f757a8b04c51e9762f90732e9715117 rdf:reifies <<( doc:FactsFacilitySpecificModel rdfs:subClassOf doc:FactsMachineLearningModel )>> ;
+	prov:wasDerivedFrom doc:919f7029a246 .
+doc:FactsBuildingType cd:has_part doc:FactsRopeTensionImbalance .
+_:f78cff5e359b902a208437c84626ad88 rdf:reifies <<( doc:FactsBuildingType cd:has_part doc:FactsRopeTensionImbalance )>> ;
+	prov:wasDerivedFrom doc:919f7029a246 .
+doc:FactsPhysicsGuidedDegradationTrajectoryModeling a owl:Class .
+_:ddeee65a5e88da1a5362333fc5191c41 rdf:reifies <<( doc:FactsPhysicsGuidedDegradationTrajectoryModeling rdf:type owl:Class )>> ;
+	prov:wasDerivedFrom doc:919f7029a246 .
+doc:FactsBuildingType cd:has_part doc:FactsDriveMechanism .
+_:d423e6ca0eccbdd162826ee3bb256cba rdf:reifies <<( doc:FactsBuildingType cd:has_part doc:FactsDriveMechanism )>> ;
+	prov:wasDerivedFrom doc:919f7029a246 .
+doc:FactsPhysicsInformedNeuralNetworks rdfs:label "Physics-Informed Neural Networks"@en .
+_:eda41606829b82131189a79d1d06db00 rdf:reifies <<( doc:FactsPhysicsInformedNeuralNetworks rdfs:label "Physics-Informed Neural Networks"@en )>> ;
+	prov:wasDerivedFrom doc:919f7029a246 .
+doc:Fault_detection a owl:Class .
+_:efec326da03d51f7346f4dd57ae16872 rdf:reifies <<( doc:Fault_detection rdf:type owl:Class )>> ;
+	prov:wasDerivedFrom doc:919f7029a246 .
+doc:FactsFacilitySpecificModel rdfs:label "facility-specific model"@en .
+_:c85dafe2a19d5d14ee23b2b60ae982f6 rdf:reifies <<( doc:FactsFacilitySpecificModel rdfs:label "facility-specific model"@en )>> ;
+	prov:wasDerivedFrom doc:919f7029a246 .
+doc:FactsLoadCapacity rdfs:subClassOf obo:BFO_0000019 .
+_:c84dbb91df5521e66ae45a755c9273cc rdf:reifies <<( doc:FactsLoadCapacity rdfs:subClassOf obo:BFO_0000019 )>> ;
+	prov:wasDerivedFrom doc:919f7029a246 .
+doc:FactsBuildingType rdfs:label "building type"@en .
+_:a187781ec3f68bd114ee6214507273c2 rdf:reifies <<( doc:FactsBuildingType rdfs:label "building type"@en )>> ;
+	prov:wasDerivedFrom doc:919f7029a246 .
+doc:FactsRopeTensionImbalance rdfs:label "rope tension imbalance"@en .
+_:c7700c826650d902aac2f36b65a7f88a rdf:reifies <<( doc:FactsRopeTensionImbalance rdfs:label "rope tension imbalance"@en )>> ;
+	prov:wasDerivedFrom doc:919f7029a246 .
+doc:FactsSuspensionRope a owl:Class .
+_:ccdc42a66820df1dfd7e6e59c09a377d rdf:reifies <<( doc:FactsSuspensionRope rdf:type owl:Class )>> ;
+	prov:wasDerivedFrom doc:919f7029a246 .
+doc:FactsGuideRail rdfs:subClassOf obo:BFO_0000030 .
+_:fb097d623acb382ebb26917a8f47049a rdf:reifies <<( doc:FactsGuideRail rdfs:subClassOf obo:BFO_0000030 )>> ;
+	prov:wasDerivedFrom doc:919f7029a246 .
+doc:FactsDataDistribution rdfs:subClassOf cco:DescriptiveInformationContentEntity .
+_:d88764f699430f90a5f6c24264f3586f rdf:reifies <<( doc:FactsDataDistribution rdfs:subClassOf cco:DescriptiveInformationContentEntity )>> ;
+	prov:wasDerivedFrom doc:919f7029a246 .
+doc:FactsMachineLearningModel rdfs:label "machine learning model"@en .
+_:bc0cf5760dac0017aaa57499707c5b12 rdf:reifies <<( doc:FactsMachineLearningModel rdfs:label "machine learning model"@en )>> ;
+	prov:wasDerivedFrom doc:919f7029a246 .
+doc:FactsDataDistribution a owl:Class .
+_:caf55aed0f71f477a2fa61509152f765 rdf:reifies <<( doc:FactsDataDistribution rdf:type owl:Class )>> ;
+	prov:wasDerivedFrom doc:919f7029a246 .
+doc:FactsPhysicsGuidedDegradationTrajectoryModeling rdfs:label "Physics-guided Degradation Trajectory Modeling"@en .
+_:f3d44d8955dd50719d0501835d2fe3b5 rdf:reifies <<( doc:FactsPhysicsGuidedDegradationTrajectoryModeling rdfs:label "Physics-guided Degradation Trajectory Modeling"@en )>> ;
+	prov:wasDerivedFrom doc:919f7029a246 .
+doc:FactsBuildingType cd:has_part doc:FactsRatedSpeed .
+_:a82e0c90dd2701f384551e1cb376ca79 rdf:reifies <<( doc:FactsBuildingType cd:has_part doc:FactsRatedSpeed )>> ;
+	prov:wasDerivedFrom doc:919f7029a246 .
+doc:FactsDriveMechanism rdfs:label "drive mechanism"@en .
+_:d570acbde2c429390185f64a048e4b38 rdf:reifies <<( doc:FactsDriveMechanism rdfs:label "drive mechanism"@en )>> ;
+	prov:wasDerivedFrom doc:919f7029a246 .

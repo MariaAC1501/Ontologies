@@ -1,0 +1,384 @@
+@prefix None: <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD/seed#> .
+@prefix cco: <http://www.ontologyrepository.com/CommonCoreOntologies/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doc: <https://growgraph.dev/doc/2eb6f4c9e7ab/> .
+@prefix obo: <http://purl.obolibrary.org/obo/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix cd: <https://growgraph.dev/facts> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix schema: <https://schema.org/> .
+doc:dea1dc94a3b6 a prov:Entity , schema:text ;
+	prov:generatedAtTime "2026-07-22T10:06:51.079993Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+	schema:position 0 ;
+	schema:identifier "dea1dc94a3b6" .
+doc:Factsarticle_1_14 schema:description "The findings provide technical support for condition monitoring, health management, and predictive maintenance of reciprocating compressors." .
+_:d88dbf5f4104e79a6170cf603dbfb726 rdf:reifies <<( doc:Factsarticle_1_14 schema:description "The findings provide technical support for condition monitoring, health management, and predictive maintenance of reciprocating compressors." )>> ;
+	prov:wasDerivedFrom doc:dea1dc94a3b6 .
+doc:Predictive_maintenance_model a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Model_type> .
+_:ad5ab2171341bbd3952bfacd7fbdb2de rdf:reifies <<( doc:Predictive_maintenance_model rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Model_type> )>> ;
+	prov:wasDerivedFrom doc:dea1dc94a3b6 .
+doc:Factsprediction_method_1 a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Remaining_useful_life_estimation> .
+_:e7dc90cd9698563ae74f0a11aa655f0b rdf:reifies <<( doc:Factsprediction_method_1 rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Remaining_useful_life_estimation> )>> ;
+	prov:wasDerivedFrom doc:dea1dc94a3b6 .
+doc:FactsauthorYanfeiLi a schema:Person .
+_:f11f2c7e148a4180c3642f175c57a665 rdf:reifies <<( doc:FactsauthorYanfeiLi rdf:type schema:Person )>> ;
+	prov:wasDerivedFrom doc:dea1dc94a3b6 .
+doc:Predictive_maintenance_model schema:name "physics-guided VAE-CNN-SSM" .
+_:b14b2327f884e43a96afdf85e04b7cbe rdf:reifies <<( doc:Predictive_maintenance_model schema:name "physics-guided VAE-CNN-SSM" )>> ;
+	prov:wasDerivedFrom doc:dea1dc94a3b6 .
+doc:Factsarticle_1_14 schema:author doc:FactsauthorYanfeiLi .
+_:ed4aa3afdaf7a89e90acd0a1d8a70b4b rdf:reifies <<( doc:Factsarticle_1_14 schema:author doc:FactsauthorYanfeiLi )>> ;
+	prov:wasDerivedFrom doc:dea1dc94a3b6 .
+doc:Factsarticle_title_1_1 a None:Article_identifier .
+_:b4c363e452da74ffe55a3730891b2189 rdf:reifies <<( doc:Factsarticle_title_1_1 rdf:type None:Article_identifier )>> ;
+	prov:wasDerivedFrom doc:dea1dc94a3b6 .
+doc:Factsarticle_1_14 None:has_title doc:Factsarticle_title_1_1 .
+_:eeb6fd211fc812724d2ee5d502a3c46f rdf:reifies <<( doc:Factsarticle_1_14 None:has_title doc:Factsarticle_title_1_1 )>> ;
+	prov:wasDerivedFrom doc:dea1dc94a3b6 .
+doc:Predictive_maintenance_model a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Predictive_Maintenance_Article> .
+_:c6c99ebe9fd9acfbc17d3f1805b7524c rdf:reifies <<( doc:Predictive_maintenance_model rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Predictive_Maintenance_Article> )>> ;
+	prov:wasDerivedFrom doc:dea1dc94a3b6 .
+doc:Factsarticle_1_14 schema:keywords "variational autoencoder" .
+_:e2dd71723cd6df56e23e5ef1f79eb82b rdf:reifies <<( doc:Factsarticle_1_14 schema:keywords "variational autoencoder" )>> ;
+	prov:wasDerivedFrom doc:dea1dc94a3b6 .
+doc:Predictive_maintenance_model cco:is_about doc:Factsvalve_leakage_1 .
+_:f0795c2cabcafb66a025c15f526c0a90 rdf:reifies <<( doc:Predictive_maintenance_model cco:is_about doc:Factsvalve_leakage_1 )>> ;
+	prov:wasDerivedFrom doc:dea1dc94a3b6 .
+doc:Factsarticle_1_14 schema:keywords "valve leakage" .
+_:b5e0c5d58c92aad7335d6c364dd880a1 rdf:reifies <<( doc:Factsarticle_1_14 schema:keywords "valve leakage" )>> ;
+	prov:wasDerivedFrom doc:dea1dc94a3b6 .
+doc:Factsarticle_1_14 schema:description "The method uses a physics-guided VAE-CNN-SSM to predict cylinder pressure dynamics and characterize valve degradation behaviors." .
+_:de03fa0d68c502fda5ab519375ab72a2 rdf:reifies <<( doc:Factsarticle_1_14 schema:description "The method uses a physics-guided VAE-CNN-SSM to predict cylinder pressure dynamics and characterize valve degradation behaviors." )>> ;
+	prov:wasDerivedFrom doc:dea1dc94a3b6 .
+doc:FactsauthorYanfeiLi schema:name "Shan Jiang" .
+_:c4c825e4dba069afca3c6ef020da9e14 rdf:reifies <<( doc:FactsauthorYanfeiLi schema:name "Shan Jiang" )>> ;
+	prov:wasDerivedFrom doc:dea1dc94a3b6 .
+doc:Factsvalve_leakage_1 schema:name "valve leakage failure" .
+_:be9750dee7c6b73905858cc6e62ba526 rdf:reifies <<( doc:Factsvalve_leakage_1 schema:name "valve leakage failure" )>> ;
+	prov:wasDerivedFrom doc:dea1dc94a3b6 .
+doc:Factsarticle_1_14 schema:description "This paper presents an adaptive prediction method for compressor cylinder pressure dynamics under valve leakage failure." .
+_:ee57e30ba2441ae1f33a5d31545b6e20 rdf:reifies <<( doc:Factsarticle_1_14 schema:description "This paper presents an adaptive prediction method for compressor cylinder pressure dynamics under valve leakage failure." )>> ;
+	prov:wasDerivedFrom doc:dea1dc94a3b6 .
+doc:Factsvalve_leakage_1 schema:description "A typical failure mode of reciprocating compressors." .
+_:a8370dfdb0e5bcdcd9e552c327354986 rdf:reifies <<( doc:Factsvalve_leakage_1 schema:description "A typical failure mode of reciprocating compressors." )>> ;
+	prov:wasDerivedFrom doc:dea1dc94a3b6 .
+doc:Factsarticle_1_14 None:has_identifier doc:Factsarticle_title_1_1 .
+_:bda329b004215efe6e9c5c7fe766ca5f rdf:reifies <<( doc:Factsarticle_1_14 None:has_identifier doc:Factsarticle_title_1_1 )>> ;
+	prov:wasDerivedFrom doc:dea1dc94a3b6 .
+doc:Factsarticle_title_1_1 None:has_text_value "Adaptive Prediction of Compressor Cylinder Pressure Dynamics Using a Physics-Guided VAE-CNN State Space Model" .
+_:af9fd7231d7b4977ecc67f1ce65b420 rdf:reifies <<( doc:Factsarticle_title_1_1 None:has_text_value "Adaptive Prediction of Compressor Cylinder Pressure Dynamics Using a Physics-Guided VAE-CNN State Space Model" )>> ;
+	prov:wasDerivedFrom doc:dea1dc94a3b6 .
+doc:Factsarticle_1_14 schema:keywords "adaptive prediction" .
+_:f50b70e0e94f9287c0404bd6bde14f28 rdf:reifies <<( doc:Factsarticle_1_14 schema:keywords "adaptive prediction" )>> ;
+	prov:wasDerivedFrom doc:dea1dc94a3b6 .
+doc:FactsauthorYanfeiLi schema:name "Gaocai Fu" .
+_:b68b7034ce1e98abe0c6b6ace4f6cae7 rdf:reifies <<( doc:FactsauthorYanfeiLi schema:name "Gaocai Fu" )>> ;
+	prov:wasDerivedFrom doc:dea1dc94a3b6 .
+doc:FactsauthorYanfeiLi schema:name "Buyun Sheng" .
+_:b4cec6ceb06ae3f2a33b12e73999b2d3 rdf:reifies <<( doc:FactsauthorYanfeiLi schema:name "Buyun Sheng" )>> ;
+	prov:wasDerivedFrom doc:dea1dc94a3b6 .
+doc:Factsarticle_1_14 schema:description "Air compressor valves are prone to mechanical wear and elastic fatigue during long-term operation, often leading to poor sealing or leakage." .
+_:a9353874bd6e132e6311ef670764fc47 rdf:reifies <<( doc:Factsarticle_1_14 schema:description "Air compressor valves are prone to mechanical wear and elastic fatigue during long-term operation, often leading to poor sealing or leakage." )>> ;
+	prov:wasDerivedFrom doc:dea1dc94a3b6 .
+doc:Factsprediction_method_1 schema:name "adaptive prediction method" .
+_:a3d94f4f52d78e360e9a96c1536e2e54 rdf:reifies <<( doc:Factsprediction_method_1 schema:name "adaptive prediction method" )>> ;
+	prov:wasDerivedFrom doc:dea1dc94a3b6 .
+doc:Factsarticle_1_14 cco:is_about doc:Factsvalve_leakage_1 .
+_:ea53576961597b96746a9afe1c127302 rdf:reifies <<( doc:Factsarticle_1_14 cco:is_about doc:Factsvalve_leakage_1 )>> ;
+	prov:wasDerivedFrom doc:dea1dc94a3b6 .
+doc:Factsvalve_leakage_1 a None:Fault_detection .
+_:ba023842130e79514225ddc3a46a08fd rdf:reifies <<( doc:Factsvalve_leakage_1 rdf:type None:Fault_detection )>> ;
+	prov:wasDerivedFrom doc:dea1dc94a3b6 .
+doc:Predictive_maintenance_model a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Maintainable_item> .
+_:f5a4c0372c68330058f93fc5a390c009 rdf:reifies <<( doc:Predictive_maintenance_model rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Maintainable_item> )>> ;
+	prov:wasDerivedFrom doc:dea1dc94a3b6 .
+doc:Predictive_maintenance_model None:has_text_value "VAE-CNN state space model" .
+_:f24dec3af08cb3d02490fe8eb3df934 rdf:reifies <<( doc:Predictive_maintenance_model None:has_text_value "VAE-CNN state space model" )>> ;
+	prov:wasDerivedFrom doc:dea1dc94a3b6 .
+doc:Factsarticle_title_1_1 None:has_text_value "https://doi.org/10.3390/act14110535" .
+_:d1cea7331000f773eaafe3a63a20aa46 rdf:reifies <<( doc:Factsarticle_title_1_1 None:has_text_value "https://doi.org/10.3390/act14110535" )>> ;
+	prov:wasDerivedFrom doc:dea1dc94a3b6 .
+doc:Factsprediction_method_1 schema:description "A method for predicting compressor cylinder pressure dynamics under valve leakage failure." .
+_:eea74755dede22e6b340f07008e3070b rdf:reifies <<( doc:Factsprediction_method_1 schema:description "A method for predicting compressor cylinder pressure dynamics under valve leakage failure." )>> ;
+	prov:wasDerivedFrom doc:dea1dc94a3b6 .
+doc:Factsarticle_1_14 schema:keywords "state space model" .
+_:fd0360153d3eab1ef87e132cc0524919 rdf:reifies <<( doc:Factsarticle_1_14 schema:keywords "state space model" )>> ;
+	prov:wasDerivedFrom doc:dea1dc94a3b6 .
+doc:Factsarticle_1_14 schema:name "Adaptive Prediction of Compressor Cylinder Pressure Dynamics Using a Physics-Guided VAE-CNN State Space Model" .
+_:d6e2b356df950a6377fe9645e692c5d7 rdf:reifies <<( doc:Factsarticle_1_14 schema:name "Adaptive Prediction of Compressor Cylinder Pressure Dynamics Using a Physics-Guided VAE-CNN State Space Model" )>> ;
+	prov:wasDerivedFrom doc:dea1dc94a3b6 .
+doc:Factsarticle_1_14 schema:datePublished "2025-11-05"^^<http://www.w3.org/2001/XMLSchema#date> .
+_:cfd2e50cc97625a669ccbdf286b46a0d rdf:reifies <<( doc:Factsarticle_1_14 schema:datePublished "2025-11-05"^^<http://www.w3.org/2001/XMLSchema#date> )>> ;
+	prov:wasDerivedFrom doc:dea1dc94a3b6 .
+doc:Factsarticle_1_14 a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Predictive_Maintenance_Article> .
+_:c86dfaaa0652154de621a8fc2f9721e7 rdf:reifies <<( doc:Factsarticle_1_14 rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Predictive_Maintenance_Article> )>> ;
+	prov:wasDerivedFrom doc:dea1dc94a3b6 .
+doc:Factspublication_year_2025_3 a None:Publication_year .
+_:c32bed6b1b7b51255b618119c8ac8452 rdf:reifies <<( doc:Factspublication_year_2025_3 rdf:type None:Publication_year )>> ;
+	prov:wasDerivedFrom doc:dea1dc94a3b6 .
+doc:Factsarticle_1_14 cco:is_about doc:Predictive_maintenance_model .
+_:a454b2f0ace603fbf65ebb6fe83f61de rdf:reifies <<( doc:Factsarticle_1_14 cco:is_about doc:Predictive_maintenance_model )>> ;
+	prov:wasDerivedFrom doc:dea1dc94a3b6 .
+doc:Factsarticle_1_14 schema:citation "Lu, Y.; Sheng, B.; Li, Y.; Fu, G.; Jiang, S.; Jiang, Z. Adaptive Prediction of Compressor Cylinder Pressure Dynamics Using a Physics-Guided VAE-CNN State Space Model. Actuators 2025, 14, 535. https://doi.org/10.3390/act14110535" .
+_:ac56a20a47793b7806030d5142476fd3 rdf:reifies <<( doc:Factsarticle_1_14 schema:citation "Lu, Y.; Sheng, B.; Li, Y.; Fu, G.; Jiang, S.; Jiang, Z. Adaptive Prediction of Compressor Cylinder Pressure Dynamics Using a Physics-Guided VAE-CNN State Space Model. Actuators 2025, 14, 535. https://doi.org/10.3390/act14110535" )>> ;
+	prov:wasDerivedFrom doc:dea1dc94a3b6 .
+doc:Predictive_maintenance_model cco:is_about doc:Predictive_maintenance_model .
+_:a6e3c193de25e4548375da3b5f2522f7 rdf:reifies <<( doc:Predictive_maintenance_model cco:is_about doc:Predictive_maintenance_model )>> ;
+	prov:wasDerivedFrom doc:dea1dc94a3b6 .
+doc:FactsauthorYanfeiLi schema:name "Yingkang Lu" .
+_:fd5f2792efcc73359429a15db4e16be0 rdf:reifies <<( doc:FactsauthorYanfeiLi schema:name "Yingkang Lu" )>> ;
+	prov:wasDerivedFrom doc:dea1dc94a3b6 .
+doc:Factsarticle_title_1_1 a None:Article_title .
+_:c1dabdbd060d4d8f5acd7cffe8123dad rdf:reifies <<( doc:Factsarticle_title_1_1 rdf:type None:Article_title )>> ;
+	prov:wasDerivedFrom doc:dea1dc94a3b6 .
+doc:Predictive_maintenance_model schema:description "A vital component in industrial manufacturing used to provide compressed air power for production processes." .
+_:dd256422fb6782790e28f46344dee469 rdf:reifies <<( doc:Predictive_maintenance_model schema:description "A vital component in industrial manufacturing used to provide compressed air power for production processes." )>> ;
+	prov:wasDerivedFrom doc:dea1dc94a3b6 .
+doc:Predictive_maintenance_model cco:is_about doc:Factsprediction_method_1 .
+_:c9d9a17ec0f1b917cd987c38c537277a rdf:reifies <<( doc:Predictive_maintenance_model cco:is_about doc:Factsprediction_method_1 )>> ;
+	prov:wasDerivedFrom doc:dea1dc94a3b6 .
+doc:Factspublication_year_2025_3 None:has_interger_value 2025 .
+_:d939d65fd58f8cfb89873189eaca8dea rdf:reifies <<( doc:Factspublication_year_2025_3 None:has_interger_value 2025 )>> ;
+	prov:wasDerivedFrom doc:dea1dc94a3b6 .
+doc:FactsauthorYanfeiLi schema:name "Yanfei Li" .
+_:fec05c7da1ebf5b322179b135bfe36a4 rdf:reifies <<( doc:FactsauthorYanfeiLi schema:name "Yanfei Li" )>> ;
+	prov:wasDerivedFrom doc:dea1dc94a3b6 .
+doc:Factsarticle_1_14 None:has_publication_year doc:Factspublication_year_2025_3 .
+_:c4a93dca33cd9b8edd0ddfafdbd19eb2 rdf:reifies <<( doc:Factsarticle_1_14 None:has_publication_year doc:Factspublication_year_2025_3 )>> ;
+	prov:wasDerivedFrom doc:dea1dc94a3b6 .
+doc:Predictive_maintenance_model schema:name "reciprocating compressor" .
+_:d2ee0f2b7de4fde939d20abb0d89077d rdf:reifies <<( doc:Predictive_maintenance_model schema:name "reciprocating compressor" )>> ;
+	prov:wasDerivedFrom doc:dea1dc94a3b6 .
+doc:FactsauthorYanfeiLi schema:name "Zeyang Jiang" .
+_:ca76ade89eece2f7f2a17d98a3fa2449 rdf:reifies <<( doc:FactsauthorYanfeiLi schema:name "Zeyang Jiang" )>> ;
+	prov:wasDerivedFrom doc:dea1dc94a3b6 .
+doc:Factsvalve_leakage_1 cco:is_about doc:Predictive_maintenance_model .
+_:a74efb902e0153000ca43991c69bf723 rdf:reifies <<( doc:Factsvalve_leakage_1 cco:is_about doc:Predictive_maintenance_model )>> ;
+	prov:wasDerivedFrom doc:dea1dc94a3b6 .
+doc:Predictive_maintenance_model schema:description "A hybrid model combining a physics-guided VAE and a CNN-based state space model." .
+_:e0bba9855242ed6d59197d2022885da0 rdf:reifies <<( doc:Predictive_maintenance_model schema:description "A hybrid model combining a physics-guided VAE and a CNN-based state space model." )>> ;
+	prov:wasDerivedFrom doc:dea1dc94a3b6 .
+doc:Predictive_maintenance_model None:describes_type doc:Predictive_maintenance_model .
+_:e9d079c5800a25adb68422f9021c9fa7 rdf:reifies <<( doc:Predictive_maintenance_model None:describes_type doc:Predictive_maintenance_model )>> ;
+	prov:wasDerivedFrom doc:dea1dc94a3b6 .
+doc:bba968db4d63 a prov:Entity , schema:text ;
+	prov:generatedAtTime "2026-07-22T10:06:51.081993Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+	schema:position 1 ;
+	schema:identifier "bba968db4d63" .
+doc:Predictive_maintenance_model a obo:BFO_0000019 .
+_:a46503783dadde334870d1590f1a525 rdf:reifies <<( doc:Predictive_maintenance_model rdf:type obo:BFO_0000019 )>> ;
+	prov:wasDerivedFrom doc:bba968db4d63 .
+doc:Predictive_maintenance_model a cco:DescriptiveInformationContentEntity .
+_:b48520280f66f54566063df58919aa71 rdf:reifies <<( doc:Predictive_maintenance_model rdf:type cco:DescriptiveInformationContentEntity )>> ;
+	prov:wasDerivedFrom doc:bba968db4d63 .
+doc:Predictive_maintenance_model cd:based_on doc:Predictive_maintenance_model .
+_:a88776d0ad2008e65ba7d23621d65548 rdf:reifies <<( doc:Predictive_maintenance_model cd:based_on doc:Predictive_maintenance_model )>> ;
+	prov:wasDerivedFrom doc:bba968db4d63 .
+doc:Predictive_maintenance_model cd:has_property doc:Predictive_maintenance_model .
+_:bec5c5ea99893d05edd0c416713d164c rdf:reifies <<( doc:Predictive_maintenance_model cd:has_property doc:Predictive_maintenance_model )>> ;
+	prov:wasDerivedFrom doc:bba968db4d63 .
+doc:Predictive_maintenance_model a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Predictive_maintenance_module_function> .
+_:e7b5a3f50ef11432d7d10f603c610786 rdf:reifies <<( doc:Predictive_maintenance_model rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Predictive_maintenance_module_function> )>> ;
+	prov:wasDerivedFrom doc:bba968db4d63 .
+doc:Predictive_maintenance_model a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Design_detail> .
+_:b4b7297250c0f440996cc25b409c5a1f rdf:reifies <<( doc:Predictive_maintenance_model rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Design_detail> )>> ;
+	prov:wasDerivedFrom doc:bba968db4d63 .
+doc:FactslargeNumberOfEquations a obo:BFO_0000019 .
+_:e1987ef490ba0d24fd49ded1db5f9694 rdf:reifies <<( doc:FactslargeNumberOfEquations rdf:type obo:BFO_0000019 )>> ;
+	prov:wasDerivedFrom doc:bba968db4d63 .
+doc:Predictive_maintenance_model cd:cannot_be_directly_measured_by doc:FactsconventionalSensors .
+_:cf9620b2bd97d2927af4f3dff97b2721 rdf:reifies <<( doc:Predictive_maintenance_model cd:cannot_be_directly_measured_by doc:FactsconventionalSensors )>> ;
+	prov:wasDerivedFrom doc:bba968db4d63 .
+doc:FactslargeNumberOfEquations a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#number_of_input_variables> .
+_:c8de43bf2ff12b3323f1c63e7f3727ba rdf:reifies <<( doc:FactslargeNumberOfEquations rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#number_of_input_variables> )>> ;
+	prov:wasDerivedFrom doc:bba968db4d63 .
+doc:Predictive_maintenance_model a cco:DirectiveInformationContentEntity .
+_:a3e2ee25f1889fecffcd11e7c8a89505 rdf:reifies <<( doc:Predictive_maintenance_model rdf:type cco:DirectiveInformationContentEntity )>> ;
+	prov:wasDerivedFrom doc:bba968db4d63 .
+_:c6c99ebe9fd9acfbc17d3f1805b7524c prov:wasDerivedFrom doc:bba968db4d63 .
+doc:Predictive_maintenance_model cd:is_divided_into doc:Predictive_maintenance_model .
+_:f282548ace27af188dc67f825ce8d2d6 rdf:reifies <<( doc:Predictive_maintenance_model cd:is_divided_into doc:Predictive_maintenance_model )>> ;
+	prov:wasDerivedFrom doc:bba968db4d63 .
+doc:FactshealthAssessment_4 a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Health_assessment> .
+_:c3f87af58dd88d6d2691a1786017a8f8 rdf:reifies <<( doc:FactshealthAssessment_4 rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Health_assessment> )>> ;
+	prov:wasDerivedFrom doc:bba968db4d63 .
+doc:Predictive_maintenance_model a cco:Algorithm .
+_:bac0523f53020fa9c2917c062c9f7f26 rdf:reifies <<( doc:Predictive_maintenance_model rdf:type cco:Algorithm )>> ;
+	prov:wasDerivedFrom doc:bba968db4d63 .
+doc:Predictive_maintenance_model cd:compromises doc:Predictive_maintenance_model .
+_:b9b046478398103f433eef92fde9147e rdf:reifies <<( doc:Predictive_maintenance_model cd:compromises doc:Predictive_maintenance_model )>> ;
+	prov:wasDerivedFrom doc:bba968db4d63 .
+doc:Predictive_maintenance_model a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Model_configuration> .
+_:d9e401c9fdc054a407c3b0d4e6d16699 rdf:reifies <<( doc:Predictive_maintenance_model rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Model_configuration> )>> ;
+	prov:wasDerivedFrom doc:bba968db4d63 .
+doc:Predictive_maintenance_model cd:has_function doc:Predictive_maintenance_model .
+_:f646a3e916f69ab2e0e098f51507f1af rdf:reifies <<( doc:Predictive_maintenance_model cd:has_function doc:Predictive_maintenance_model )>> ;
+	prov:wasDerivedFrom doc:bba968db4d63 .
+doc:Predictive_maintenance_model a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Performance_value> .
+_:bd7c745fea9253f00a109dccc3092399 rdf:reifies <<( doc:Predictive_maintenance_model rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Performance_value> )>> ;
+	prov:wasDerivedFrom doc:bba968db4d63 .
+doc:Predictive_maintenance_model cd:capture doc:Predictive_maintenance_model .
+_:fba4a1fa33a302a5106bf1dc0b07b0fa rdf:reifies <<( doc:Predictive_maintenance_model cd:capture doc:Predictive_maintenance_model )>> ;
+	prov:wasDerivedFrom doc:bba968db4d63 .
+doc:Predictive_maintenance_model a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Predictive_maintenance_model> .
+_:b9b43e88326f0ace953f51ce13c14c9f rdf:reifies <<( doc:Predictive_maintenance_model rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Predictive_maintenance_model> )>> ;
+	prov:wasDerivedFrom doc:bba968db4d63 .
+doc:Predictive_maintenance_model cd:requires doc:FactslargeNumberOfEquations .
+_:e55a8ca11ad69aeba6f7f3790e7466d6 rdf:reifies <<( doc:Predictive_maintenance_model cd:requires doc:FactslargeNumberOfEquations )>> ;
+	prov:wasDerivedFrom doc:bba968db4d63 .
+doc:Predictive_maintenance_model a cco:InformationBearingArtifact .
+_:eb81d43c332f898609b83136c460a505 rdf:reifies <<( doc:Predictive_maintenance_model rdf:type cco:InformationBearingArtifact )>> ;
+	prov:wasDerivedFrom doc:bba968db4d63 .
+doc:FactshealthAssessment_4 a obo:BFO_0000034 .
+_:d5608133f1d4b5a27e1b09ed10a09af1 rdf:reifies <<( doc:FactshealthAssessment_4 rdf:type obo:BFO_0000034 )>> ;
+	prov:wasDerivedFrom doc:bba968db4d63 .
+doc:Predictive_maintenance_model a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Performance_indicator> .
+_:de8614cfba84dfd2f1cdfeae9f7ee73b rdf:reifies <<( doc:Predictive_maintenance_model rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Performance_indicator> )>> ;
+	prov:wasDerivedFrom doc:bba968db4d63 .
+doc:Predictive_maintenance_model cd:ensure doc:Predictive_maintenance_model .
+_:a90c00fd7e62d7fd83d317ae7473bc8f rdf:reifies <<( doc:Predictive_maintenance_model cd:ensure doc:Predictive_maintenance_model )>> ;
+	prov:wasDerivedFrom doc:bba968db4d63 .
+doc:Predictive_maintenance_model cd:alters doc:Predictive_maintenance_model .
+_:ab011fcbbbe5349b7e816bc067416182 rdf:reifies <<( doc:Predictive_maintenance_model cd:alters doc:Predictive_maintenance_model )>> ;
+	prov:wasDerivedFrom doc:bba968db4d63 .
+doc:Predictive_maintenance_model cd:increase doc:Predictive_maintenance_model .
+_:d6fac7febd67969a631afcc0294d0cc0 rdf:reifies <<( doc:Predictive_maintenance_model cd:increase doc:Predictive_maintenance_model )>> ;
+	prov:wasDerivedFrom doc:bba968db4d63 .
+doc:FactsconventionalSensors a cco:Artifact .
+_:e86300760af65e641b00b30099d90f1 rdf:reifies <<( doc:FactsconventionalSensors rdf:type cco:Artifact )>> ;
+	prov:wasDerivedFrom doc:bba968db4d63 .
+_:f5a4c0372c68330058f93fc5a390c009 prov:wasDerivedFrom doc:bba968db4d63 .
+_:ad5ab2171341bbd3952bfacd7fbdb2de prov:wasDerivedFrom doc:bba968db4d63 .
+doc:Predictive_maintenance_model a obo:BFO_0000030 .
+_:b60a1c3967690ec08d47afbbf6aedefe rdf:reifies <<( doc:Predictive_maintenance_model rdf:type obo:BFO_0000030 )>> ;
+	prov:wasDerivedFrom doc:bba968db4d63 .
+doc:Predictive_maintenance_model cd:causes doc:Predictive_maintenance_model .
+_:c4db865ed02df3125467f356c7474c7b rdf:reifies <<( doc:Predictive_maintenance_model cd:causes doc:Predictive_maintenance_model )>> ;
+	prov:wasDerivedFrom doc:bba968db4d63 .
+doc:Predictive_maintenance_model cd:results_in doc:Predictive_maintenance_model .
+_:f501849eb8a29e8526548dc0a80f884b rdf:reifies <<( doc:Predictive_maintenance_model cd:results_in doc:Predictive_maintenance_model )>> ;
+	prov:wasDerivedFrom doc:bba968db4d63 .
+doc:FactspredictiveMaintenance_9 a obo:BFO_0000034 .
+_:ce4632633b4a93488e3c6eeb786ffce1 rdf:reifies <<( doc:FactspredictiveMaintenance_9 rdf:type obo:BFO_0000034 )>> ;
+	prov:wasDerivedFrom doc:bba968db4d63 .
+doc:Predictive_maintenance_model cd:introduces doc:Predictive_maintenance_model .
+_:f9b181184dfb009c38ffbfe6766a6e5d rdf:reifies <<( doc:Predictive_maintenance_model cd:introduces doc:Predictive_maintenance_model )>> ;
+	prov:wasDerivedFrom doc:bba968db4d63 .
+doc:Predictive_maintenance_model a obo:BFO_0000034 .
+_:a006e6e4d168c20e67f197201702ad6f rdf:reifies <<( doc:Predictive_maintenance_model rdf:type obo:BFO_0000034 )>> ;
+	prov:wasDerivedFrom doc:bba968db4d63 .
+doc:Predictive_maintenance_model cd:are_implicit_in doc:Predictive_maintenance_model .
+_:dadc6c728c9272c3ff8dfb96ad6ecbf2 rdf:reifies <<( doc:Predictive_maintenance_model cd:are_implicit_in doc:Predictive_maintenance_model )>> ;
+	prov:wasDerivedFrom doc:bba968db4d63 .
+doc:Predictive_maintenance_model cd:arises_from doc:Predictive_maintenance_model .
+_:bb9808e82300971f15d1f523ade9d428 rdf:reifies <<( doc:Predictive_maintenance_model cd:arises_from doc:Predictive_maintenance_model )>> ;
+	prov:wasDerivedFrom doc:bba968db4d63 .
+doc:FactsconventionalSensors a obo:BFO_0000030 .
+_:ac9d703c6c4a8a647a845031133dfa7c rdf:reifies <<( doc:FactsconventionalSensors rdf:type obo:BFO_0000030 )>> ;
+	prov:wasDerivedFrom doc:bba968db4d63 .
+doc:FactspredictiveMaintenance_9 a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Remaining_useful_life_estimation> .
+_:f32d518b443fa275d6bdba49c942d0e4 rdf:reifies <<( doc:FactspredictiveMaintenance_9 rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Remaining_useful_life_estimation> )>> ;
+	prov:wasDerivedFrom doc:bba968db4d63 .
+doc:84a86e59c99c a prov:Entity , schema:text ;
+	prov:generatedAtTime "2026-07-22T10:06:51.084993Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+	schema:position 2 ;
+	schema:identifier "84a86e59c99c" .
+_:e7b5a3f50ef11432d7d10f603c610786 prov:wasDerivedFrom doc:84a86e59c99c .
+doc:Predictive_maintenance_model cd:has_text_value "performance analysis and prediction of compressors" .
+_:aaa909f82cc8cd351fa5f69f375ca5b4 rdf:reifies <<( doc:Predictive_maintenance_model cd:has_text_value "performance analysis and prediction of compressors" )>> ;
+	prov:wasDerivedFrom doc:84a86e59c99c .
+doc:Predictive_maintenance_model cd:has_text_value "artificial intelligence algorithm model" .
+_:b499f6e30cd58e096683a5515427aa37 rdf:reifies <<( doc:Predictive_maintenance_model cd:has_text_value "artificial intelligence algorithm model" )>> ;
+	prov:wasDerivedFrom doc:84a86e59c99c .
+doc:Predictive_maintenance_model cd:has_text_value "simulation software based on computer technology" .
+_:f3b625ca7a966cf2107c61422e0372d3 rdf:reifies <<( doc:Predictive_maintenance_model cd:has_text_value "simulation software based on computer technology" )>> ;
+	prov:wasDerivedFrom doc:84a86e59c99c .
+doc:Predictive_maintenance_model cd:has_predictive_maintenance_function doc:Predictive_maintenance_model .
+_:a48bc2b3fa62e7232862915962604d65 rdf:reifies <<( doc:Predictive_maintenance_model cd:has_predictive_maintenance_function doc:Predictive_maintenance_model )>> ;
+	prov:wasDerivedFrom doc:84a86e59c99c .
+doc:Predictive_maintenance_model cco:describes doc:Predictive_maintenance_model .
+_:e85391a850e1233000a6d161b82d6643 rdf:reifies <<( doc:Predictive_maintenance_model cco:describes doc:Predictive_maintenance_model )>> ;
+	prov:wasDerivedFrom doc:84a86e59c99c .
+doc:Predictive_maintenance_model cd:has_text_value "reed valve" .
+_:bd5b6f2d6d07d8b6dd5ec9e36b5caf2d rdf:reifies <<( doc:Predictive_maintenance_model cd:has_text_value "reed valve" )>> ;
+	prov:wasDerivedFrom doc:84a86e59c99c .
+_:bac0523f53020fa9c2917c062c9f7f26 prov:wasDerivedFrom doc:84a86e59c99c .
+_:a6e3c193de25e4548375da3b5f2522f7 prov:wasDerivedFrom doc:84a86e59c99c .
+doc:Predictive_maintenance_model cd:has_text_value "computational fluid dynamics model" .
+_:c71cb99c519bb93a9e5a6daac6430918 rdf:reifies <<( doc:Predictive_maintenance_model cd:has_text_value "computational fluid dynamics model" )>> ;
+	prov:wasDerivedFrom doc:84a86e59c99c .
+doc:Predictive_maintenance_model cd:has_text_value "three-dimensional fluid structure interaction model" .
+_:d9933f6740fb637f4212fcef8c0a6882 rdf:reifies <<( doc:Predictive_maintenance_model cd:has_text_value "three-dimensional fluid structure interaction model" )>> ;
+	prov:wasDerivedFrom doc:84a86e59c99c .
+_:f5a4c0372c68330058f93fc5a390c009 prov:wasDerivedFrom doc:84a86e59c99c .
+_:b9b43e88326f0ace953f51ce13c14c9f prov:wasDerivedFrom doc:84a86e59c99c .
+doc:Predictive_maintenance_model a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Future_state_forecast> .
+_:d708947985f8604e0b2955cf84ceb2c2 rdf:reifies <<( doc:Predictive_maintenance_model rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Future_state_forecast> )>> ;
+	prov:wasDerivedFrom doc:84a86e59c99c .
+_:b60a1c3967690ec08d47afbbf6aedefe prov:wasDerivedFrom doc:84a86e59c99c .
+doc:Predictive_maintenance_model a cco:InformationContentEntity .
+_:a7ffee0c8e58501c831ed141061f942a rdf:reifies <<( doc:Predictive_maintenance_model rdf:type cco:InformationContentEntity )>> ;
+	prov:wasDerivedFrom doc:84a86e59c99c .
+doc:FactssimulationSoftware a cco:InformationProcessingArtifact .
+_:c8b9c7b4c26edd029396b00cbfff77a8 rdf:reifies <<( doc:FactssimulationSoftware rdf:type cco:InformationProcessingArtifact )>> ;
+	prov:wasDerivedFrom doc:84a86e59c99c .
+doc:FactssimulationSoftware cd:has_text_value "simulation software" .
+_:d949a36dea6c7a95e339af13944ae137 rdf:reifies <<( doc:FactssimulationSoftware cd:has_text_value "simulation software" )>> ;
+	prov:wasDerivedFrom doc:84a86e59c99c .
+_:b48520280f66f54566063df58919aa71 prov:wasDerivedFrom doc:84a86e59c99c .
+doc:Predictive_maintenance_model cd:has_text_value "predicting the performance of reciprocating compressors" .
+_:c71fd0e4f2a71a04f44f458f6440f392 rdf:reifies <<( doc:Predictive_maintenance_model cd:has_text_value "predicting the performance of reciprocating compressors" )>> ;
+	prov:wasDerivedFrom doc:84a86e59c99c .
+doc:Predictive_maintenance_model cco:designates doc:Predictive_maintenance_model .
+_:e2fd619700356928ee6e43dc4190595d rdf:reifies <<( doc:Predictive_maintenance_model cco:designates doc:Predictive_maintenance_model )>> ;
+	prov:wasDerivedFrom doc:84a86e59c99c .
+doc:Predictive_maintenance_model cco:describes doc:FactssimulationSoftware .
+_:aaecb4ede981ff63178a0cb941adf99d rdf:reifies <<( doc:Predictive_maintenance_model cco:describes doc:FactssimulationSoftware )>> ;
+	prov:wasDerivedFrom doc:84a86e59c99c .
+doc:FactssimulationSoftware a cco:Artifact .
+_:b09514e69ecd6f00e2171f74178a85ea rdf:reifies <<( doc:FactssimulationSoftware rdf:type cco:Artifact )>> ;
+	prov:wasDerivedFrom doc:84a86e59c99c .
+doc:Predictive_maintenance_model a cco:DesignativeInformationContentEntity .
+_:a53d173e7d39ee9918fed1d21e98cd7e rdf:reifies <<( doc:Predictive_maintenance_model rdf:type cco:DesignativeInformationContentEntity )>> ;
+	prov:wasDerivedFrom doc:84a86e59c99c .
+doc:Predictive_maintenance_model cd:has_text_value "fluid structure interaction simulation method" .
+_:a1b039520ac10806a60741be65c4654d rdf:reifies <<( doc:Predictive_maintenance_model cd:has_text_value "fluid structure interaction simulation method" )>> ;
+	prov:wasDerivedFrom doc:84a86e59c99c .
+doc:Predictive_maintenance_model cd:has_text_value "machine learning and deep learning techniques" .
+_:b205d92671a0bbd5f4ee76ac1502668b rdf:reifies <<( doc:Predictive_maintenance_model cd:has_text_value "machine learning and deep learning techniques" )>> ;
+	prov:wasDerivedFrom doc:84a86e59c99c .
+doc:Predictive_maintenance_model cd:has_text_value "motion of valve plates" .
+_:b3c46cc1efec39be4028a893fbf03687 rdf:reifies <<( doc:Predictive_maintenance_model cd:has_text_value "motion of valve plates" )>> ;
+	prov:wasDerivedFrom doc:84a86e59c99c .
+doc:Predictive_maintenance_model cd:has_text_value "computationally expensive model for compressor performance analysis and prediction" .
+_:f0022db954eb4c401615d40c4ddcc3ba rdf:reifies <<( doc:Predictive_maintenance_model cd:has_text_value "computationally expensive model for compressor performance analysis and prediction" )>> ;
+	prov:wasDerivedFrom doc:84a86e59c99c .
+doc:Predictive_maintenance_model cd:describes_type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Predictive_maintenance_model> .
+_:b6270d97580cc3c021954f53085a701a rdf:reifies <<( doc:Predictive_maintenance_model cd:describes_type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Predictive_maintenance_model> )>> ;
+	prov:wasDerivedFrom doc:84a86e59c99c .
+doc:Predictive_maintenance_model cd:has_text_value "compressor operating status" .
+_:c8712eedae6b1313013cdb5b97486b85 rdf:reifies <<( doc:Predictive_maintenance_model cd:has_text_value "compressor operating status" )>> ;
+	prov:wasDerivedFrom doc:84a86e59c99c .
+doc:Predictive_maintenance_model cd:has_interger_value 0 .
+_:ff5229735900bfdb7a0f5eb90de1d36 rdf:reifies <<( doc:Predictive_maintenance_model cd:has_interger_value 0 )>> ;
+	prov:wasDerivedFrom doc:84a86e59c99c .
+doc:Predictive_maintenance_model cd:has_text_value "accurate prediction of compressor operating status" .
+_:ca8a10a5e6754636a301acd43333a1c8 rdf:reifies <<( doc:Predictive_maintenance_model cd:has_text_value "accurate prediction of compressor operating status" )>> ;
+	prov:wasDerivedFrom doc:84a86e59c99c .
+doc:Predictive_maintenance_model cd:has_text_value "three-dimensional fluid structure interaction model of a reciprocating compressor with a reed valve" .
+_:b3e21ca9f165fe4cf4ebb8415e94f16e rdf:reifies <<( doc:Predictive_maintenance_model cd:has_text_value "three-dimensional fluid structure interaction model of a reciprocating compressor with a reed valve" )>> ;
+	prov:wasDerivedFrom doc:84a86e59c99c .
+doc:Predictive_maintenance_model a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Remaining_useful_life_estimation> .
+_:d459817dbfa920062ff4b9d18a548481 rdf:reifies <<( doc:Predictive_maintenance_model rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Remaining_useful_life_estimation> )>> ;
+	prov:wasDerivedFrom doc:84a86e59c99c .
+doc:Predictive_maintenance_model cd:has_text_value "rigid body model of a reed valve" .
+_:ab35c43bbc4d1f57a6152ed5dcbe15ca rdf:reifies <<( doc:Predictive_maintenance_model cd:has_text_value "rigid body model of a reed valve" )>> ;
+	prov:wasDerivedFrom doc:84a86e59c99c .
+doc:Predictive_maintenance_model cd:has_text_value "compressor" .
+_:c2401748d49daa23af53210c84cd81cb rdf:reifies <<( doc:Predictive_maintenance_model cd:has_text_value "compressor" )>> ;
+	prov:wasDerivedFrom doc:84a86e59c99c .
+doc:Predictive_maintenance_model a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Predictive_maintenance_system_module> .
+_:ce2e3bb37be885d0aa5bdc298a84451a rdf:reifies <<( doc:Predictive_maintenance_model rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Predictive_maintenance_system_module> )>> ;
+	prov:wasDerivedFrom doc:84a86e59c99c .
+cco:InformationContentEntity owl:sameAs cco:DirectiveInformationContentEntity , cco:DesignativeInformationContentEntity , cco:DescriptiveInformationContentEntity .
+cco:InformationBearingArtifact owl:sameAs cco:InformationProcessingArtifact .

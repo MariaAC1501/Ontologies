@@ -41,7 +41,7 @@ Start the proxy in another terminal before running extraction:
 node tools/pi_codex_openai_proxy.mjs
 ```
 
-- Model sent to the OpenAI-compatible proxy: `gpt-5-mini` (the proxy can route to `PI_CODEX_MODEL`)
+- Default model: `gpt-5.6-luna` (override the actual Pi model with `PI_CODEX_MODEL`)
 - Default chunk limit: `--head-chunks 2` (to control subscription usage)
 
 ## OntoCast patches

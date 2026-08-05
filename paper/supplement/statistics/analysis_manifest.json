@@ -1,0 +1,144 @@
+{
+  "analysis_scope": ".build\\diversity_comparison_1821_v12_no_default_sync",
+  "primary_experiment": "V12/263, query-year 2026, Unknown synchronization discarded as default evidence; this no-default-sync experiment should be principal",
+  "descriptive_ablation_scope": ".build\\diversity_comparison_1821_v12_final",
+  "source_protocol": "paper\\analysis\\statistical_protocol.py",
+  "casebase_csv": ".build\\diversity_comparison_1821_v12_no_default_sync\\cbr_data\\CleanedDATA V12-05-2021.csv",
+  "casebase_rows_loaded": 263,
+  "summary_casebase_rows_loaded": 263,
+  "taxonomy_terms_loaded": 131,
+  "top_k": 5,
+  "main_lambda_relevance": 0.7,
+  "sensitivity_lambdas": [
+    0.5,
+    0.6,
+    0.7,
+    0.8,
+    0.9
+  ],
+  "keep_top1": true,
+  "bootstrap_resamples": 20000,
+  "bootstrap_seed": 20260727,
+  "solution_weights": [
+    0.2,
+    0.25,
+    0.4,
+    0.15
+  ],
+  "primary_query_year": 2026,
+  "primary_drop_default_synchronization": true,
+  "default_ablation_drop_default_synchronization": false,
+  "queries": 1821,
+  "task_counts": [
+    {
+      "task": "Fault detection",
+      "n": 782
+    },
+    {
+      "task": "Remaining useful life estimation",
+      "n": 371
+    },
+    {
+      "task": "Health assessment",
+      "n": 303
+    },
+    {
+      "task": "One step future state forecast",
+      "n": 136
+    },
+    {
+      "task": "Fault identification",
+      "n": 122
+    },
+    {
+      "task": "Fault feature extraction",
+      "n": 93
+    },
+    {
+      "task": "Health modelling",
+      "n": 8
+    },
+    {
+      "task": "Multiple steps future state forecast",
+      "n": 6
+    }
+  ],
+  "lambda_0_70_sensitivity_matches_existing_diverse_rankings": 1821,
+  "default_sync_ablation": [
+    {
+      "comparison_scope": "baseline_headless_cbr_top5",
+      "description": "Top-5 HeadlessCBR sin diversidad: no-default-sync frente a V12 final con default ponderado",
+      "n_queries": 1821,
+      "facts_file_equal_n": 1821,
+      "task_equal_n": 1821,
+      "rankings_equal_n": 1314,
+      "rankings_equal_percent": 72.15815485996706,
+      "top1_equal_n": 1338,
+      "top1_equal_percent": 73.47611202635915,
+      "refsets_equal_n": 1330,
+      "refsets_equal_percent": 73.03679297089512,
+      "primary_no_default_mean_top_similarity": 0.5630340472267984,
+      "default_sync_mean_top_similarity": 0.5811109280615047,
+      "diff_primary_minus_default_mean_top_similarity": -0.018076880834706266,
+      "primary_no_default_mean_similarity_top5": 0.5563079626578802,
+      "default_sync_mean_similarity_top5": 0.5596765513454146,
+      "diff_primary_minus_default_mean_similarity_top5": -0.003368588687534424,
+      "primary_no_default_mean_unique_models_top5": 4.633168588687535,
+      "default_sync_mean_unique_models_top5": 4.7775947281713345,
+      "diff_primary_minus_default_mean_unique_models_top5": -0.1444261394837998,
+      "primary_no_default_duplicate_model_lists": 610,
+      "default_sync_duplicate_model_lists": 381,
+      "diff_primary_minus_default_duplicate_model_lists": 229,
+      "primary_no_default_mean_intra_list_dissimilarity": 0.4215541497208697,
+      "default_sync_mean_intra_list_dissimilarity": 0.42732074245878654,
+      "diff_primary_minus_default_mean_intra_list_dissimilarity": -0.0057665927379168536,
+      "primary_no_default_changed_order_vs_own_baseline_n": null,
+      "default_sync_changed_order_vs_own_baseline_n": null,
+      "diff_primary_minus_default_changed_order_vs_own_baseline_n": null,
+      "primary_no_default_changed_refset_vs_own_baseline_n": null,
+      "default_sync_changed_refset_vs_own_baseline_n": null,
+      "diff_primary_minus_default_changed_refset_vs_own_baseline_n": null,
+      "primary_no_default_top1_preserved_vs_own_baseline_n": null,
+      "default_sync_top1_preserved_vs_own_baseline_n": null,
+      "diff_primary_minus_default_top1_preserved_vs_own_baseline_n": null
+    },
+    {
+      "comparison_scope": "mmr_lambda_0.70_keep_top1",
+      "description": "Ranking principal MMR λ=0.70, top-1 fijo: no-default-sync frente a V12 final con default ponderado",
+      "n_queries": 1821,
+      "facts_file_equal_n": 1821,
+      "task_equal_n": 1821,
+      "rankings_equal_n": 1097,
+      "rankings_equal_percent": 60.24162548050521,
+      "top1_equal_n": 1338,
+      "top1_equal_percent": 73.47611202635915,
+      "refsets_equal_n": 1136,
+      "refsets_equal_percent": 62.38330587589237,
+      "primary_no_default_mean_top_similarity": 0.5630340472267984,
+      "default_sync_mean_top_similarity": 0.5811109280615047,
+      "diff_primary_minus_default_mean_top_similarity": -0.018076880834706266,
+      "primary_no_default_mean_similarity_top5": 0.5536417353102691,
+      "default_sync_mean_similarity_top5": 0.5517569467325646,
+      "diff_primary_minus_default_mean_similarity_top5": 0.001884788577704466,
+      "primary_no_default_mean_unique_models_top5": 4.99725425590335,
+      "default_sync_mean_unique_models_top5": 5.0,
+      "diff_primary_minus_default_mean_unique_models_top5": -0.0027457440966500712,
+      "primary_no_default_duplicate_model_lists": 5,
+      "default_sync_duplicate_model_lists": 0,
+      "diff_primary_minus_default_duplicate_model_lists": 5,
+      "primary_no_default_mean_intra_list_dissimilarity": 0.526472971220212,
+      "default_sync_mean_intra_list_dissimilarity": 0.5348838865393786,
+      "diff_primary_minus_default_mean_intra_list_dissimilarity": -0.0084109153191666,
+      "primary_no_default_changed_order_vs_own_baseline_n": 1821.0,
+      "default_sync_changed_order_vs_own_baseline_n": 1821.0,
+      "diff_primary_minus_default_changed_order_vs_own_baseline_n": 0.0,
+      "primary_no_default_changed_refset_vs_own_baseline_n": 1819.0,
+      "default_sync_changed_refset_vs_own_baseline_n": 1819.0,
+      "diff_primary_minus_default_changed_refset_vs_own_baseline_n": 0.0,
+      "primary_no_default_top1_preserved_vs_own_baseline_n": 1821.0,
+      "default_sync_top1_preserved_vs_own_baseline_n": 1821.0,
+      "diff_primary_minus_default_top1_preserved_vs_own_baseline_n": 0.0
+    }
+  ],
+  "outputs_dir": ".build\\diversity_comparison_1821_v12_no_default_sync\\statistical_analysis_outputs"
+}

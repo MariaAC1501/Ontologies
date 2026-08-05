@@ -1,0 +1,518 @@
+@prefix None: <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD/seed#> .
+@prefix cco: <http://www.ontologyrepository.com/CommonCoreOntologies/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doc: <https://growgraph.dev/doc/b1a4fd9a1f86/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix obo: <http://purl.obolibrary.org/obo/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix schema: <https://schema.org/> .
+@prefix schema1: <http://schema.org/> .
+doc:a0cc771fdde3 a prov:Entity , schema:text ;
+	prov:generatedAtTime "2026-07-11T06:27:56.183421Z"^^xsd:dateTime ;
+	schema:position 0 ;
+	schema:identifier "a0cc771fdde3" .
+doc:Factsauthor1_1 schema1:affiliation doc:Factsorg1_2 .
+_:cae635ffaa4311db842ee086d6e79af6 rdf:reifies <<( doc:Factsauthor1_1 schema1:affiliation doc:Factsorg1_2 )>> ;
+	prov:wasDerivedFrom doc:a0cc771fdde3 .
+doc:Factsdataset1 schema1:provider doc:FactsmanufacturerA .
+_:d3065d27cefe5364a04eb7360e3eddce rdf:reifies <<( doc:Factsdataset1 schema1:provider doc:FactsmanufacturerA )>> ;
+	prov:wasDerivedFrom doc:a0cc771fdde3 .
+doc:Factstitle1_4 a None:Article_title .
+_:e955a7206fdbc7880651d6995f6faafa rdf:reifies <<( doc:Factstitle1_4 rdf:type None:Article_title )>> ;
+	prov:wasDerivedFrom doc:a0cc771fdde3 .
+doc:Factsautoencoder a None:Model_type .
+_:fec523f6050915cc97eadb70530f4ced rdf:reifies <<( doc:Factsautoencoder rdf:type None:Model_type )>> ;
+	prov:wasDerivedFrom doc:a0cc771fdde3 .
+doc:FactsArcana a cco:Algorithm .
+_:b0fc06e82b8592cc770f5af9c6edfa88 rdf:reifies <<( doc:FactsArcana rdf:type cco:Algorithm )>> ;
+	prov:wasDerivedFrom doc:a0cc771fdde3 .
+doc:FactsleadTimeMax None:has_interger_value 93 .
+_:f73e109e37e54c05ffa3a29499f318fe rdf:reifies <<( doc:FactsleadTimeMax None:has_interger_value 93 )>> ;
+	prov:wasDerivedFrom doc:a0cc771fdde3 .
+doc:FactsEnergyFaultDetector obo:RO_0000086 doc:FactsleadTimeMax .
+_:b748eee4c755339c8c3583099aa0f196 rdf:reifies <<( doc:FactsEnergyFaultDetector obo:RO_0000086 doc:FactsleadTimeMax )>> ;
+	prov:wasDerivedFrom doc:a0cc771fdde3 .
+doc:Factsarticle1_15 schema1:author doc:Factsauthor1_1 .
+_:d75649503e8bec8cf40ced58109ea8d1 rdf:reifies <<( doc:Factsarticle1_15 schema1:author doc:Factsauthor1_1 )>> ;
+	prov:wasDerivedFrom doc:a0cc771fdde3 .
+doc:FactsFscoreValue a None:Performance_value .
+_:d4b6744723c6fd6b280e0e45502b1877 rdf:reifies <<( doc:FactsFscoreValue rdf:type None:Performance_value )>> ;
+	prov:wasDerivedFrom doc:a0cc771fdde3 .
+doc:FactsleadTimeMax a obo:BFO_0000019 .
+_:ea16fa111197e592e24b24d784c2b4ee rdf:reifies <<( doc:FactsleadTimeMax rdf:type obo:BFO_0000019 )>> ;
+	prov:wasDerivedFrom doc:a0cc771fdde3 .
+doc:Factsauthor1_1 a schema1:Person .
+_:fc7bb4535b59b3d953fdf467199cd533 rdf:reifies <<( doc:Factsauthor1_1 rdf:type schema1:Person )>> ;
+	prov:wasDerivedFrom doc:a0cc771fdde3 .
+doc:Factsauthor1_1 rdfs:label "Stefan Faulstich" .
+_:a4933ec313e9c15f5486cde05a667130 rdf:reifies <<( doc:Factsauthor1_1 rdfs:label "Stefan Faulstich" )>> ;
+	prov:wasDerivedFrom doc:a0cc771fdde3 .
+doc:FactsearlyDetectIndicator cco:describes doc:FactsFscoreValue .
+_:ae8ca4b95d43c047ba23370782a321e9 rdf:reifies <<( doc:FactsearlyDetectIndicator cco:describes doc:FactsFscoreValue )>> ;
+	prov:wasDerivedFrom doc:a0cc771fdde3 .
+doc:FactsEnergyFaultDetector rdfs:label "EnergyFaultDetector (open-source Python framework for automated anomaly detection in energy systems)" .
+_:c51a3717d89abc9795b0dbec3124599b rdf:reifies <<( doc:FactsEnergyFaultDetector rdfs:label "EnergyFaultDetector (open-source Python framework for automated anomaly detection in energy systems)" )>> ;
+	prov:wasDerivedFrom doc:a0cc771fdde3 .
+doc:FactsaccuracyIndicator rdfs:label "normal-behaviour accuracy" .
+_:e836358e464f425ced1bdb86ae238d18 rdf:reifies <<( doc:FactsaccuracyIndicator rdfs:label "normal-behaviour accuracy" )>> ;
+	prov:wasDerivedFrom doc:a0cc771fdde3 .
+doc:FactsaccuracyIndicator cco:describes doc:FactsFscoreValue .
+_:fd8722b5f2d4dbef184db9b68b7e31fb rdf:reifies <<( doc:FactsaccuracyIndicator cco:describes doc:FactsFscoreValue )>> ;
+	prov:wasDerivedFrom doc:a0cc771fdde3 .
+doc:Factsarticle1_15 a None:Predictive_Maintenance_Article .
+_:b651a103b08c3792ad3bff997b252abc rdf:reifies <<( doc:Factsarticle1_15 rdf:type None:Predictive_Maintenance_Article )>> ;
+	prov:wasDerivedFrom doc:a0cc771fdde3 .
+doc:FactsearlyDetectIndicator a None:Performance_indicator .
+_:ccb21e647b18f715fa3bb598b7b379cc rdf:reifies <<( doc:FactsearlyDetectIndicator rdf:type None:Performance_indicator )>> ;
+	prov:wasDerivedFrom doc:a0cc771fdde3 .
+doc:Factsauthor1_1 rdfs:label "Cyriana M.A. Roelofs" .
+_:dd63e49e592811aa529f9a496b6540e8 rdf:reifies <<( doc:Factsauthor1_1 rdfs:label "Cyriana M.A. Roelofs" )>> ;
+	prov:wasDerivedFrom doc:a0cc771fdde3 .
+doc:FactsFscoreValue schema1:value 0.6 .
+_:f0bb31348b7796f50d8aa93b514bcd74 rdf:reifies <<( doc:FactsFscoreValue schema1:value 0.6 )>> ;
+	prov:wasDerivedFrom doc:a0cc771fdde3 .
+doc:FactsaccuracyIndicator cco:describes doc:FactsEnergyFaultDetector .
+_:bf7a1713985a234c59894ca9992a35b8 rdf:reifies <<( doc:FactsaccuracyIndicator cco:describes doc:FactsEnergyFaultDetector )>> ;
+	prov:wasDerivedFrom doc:a0cc771fdde3 .
+doc:Factsdataset1 obo:RO_0010002 doc:Factsannotations1 .
+_:f892c448d16cdc38139479bd0f8ff6c9 rdf:reifies <<( doc:Factsdataset1 obo:RO_0010002 doc:Factsannotations1 )>> ;
+	prov:wasDerivedFrom doc:a0cc771fdde3 .
+doc:FactsaccuracyIndicator a None:Performance_indicator .
+_:a2fe0768d2220845728a56cffa36a548 rdf:reifies <<( doc:FactsaccuracyIndicator rdf:type None:Performance_indicator )>> ;
+	prov:wasDerivedFrom doc:a0cc771fdde3 .
+doc:FactsmanufacturerA a schema1:Organization .
+_:d00503477d8cd6f16ae6c7cb579cb1e6 rdf:reifies <<( doc:FactsmanufacturerA rdf:type schema1:Organization )>> ;
+	prov:wasDerivedFrom doc:a0cc771fdde3 .
+doc:FactsFscoreIndicator cco:describes doc:FactsFscoreValue .
+_:e1cd2c85729d1d226a6422470c9036a7 rdf:reifies <<( doc:FactsFscoreIndicator cco:describes doc:FactsFscoreValue )>> ;
+	prov:wasDerivedFrom doc:a0cc771fdde3 .
+doc:FactsleadTimeMax None:has_interger_value 3 .
+_:e3a4e829603fda17ea8554f28521378e rdf:reifies <<( doc:FactsleadTimeMax None:has_interger_value 3 )>> ;
+	prov:wasDerivedFrom doc:a0cc771fdde3 .
+doc:FactsleadTimeMax None:has_interger_value 5 .
+_:c0ff8a330e79a55c3ebd42f0d85c2986 rdf:reifies <<( doc:FactsleadTimeMax None:has_interger_value 5 )>> ;
+	prov:wasDerivedFrom doc:a0cc771fdde3 .
+doc:Factsautoencoder rdfs:label "autoencoder (model type)" .
+_:a88ed3b4980b628f9c1a6a0e3d38b982 rdf:reifies <<( doc:Factsautoencoder rdfs:label "autoencoder (model type)" )>> ;
+	prov:wasDerivedFrom doc:a0cc771fdde3 .
+doc:FactsmanufacturerA rdfs:label "Manufacturer A" .
+_:da6ba4fbd1686d5e618f48c369594ab6 rdf:reifies <<( doc:FactsmanufacturerA rdfs:label "Manufacturer A" )>> ;
+	prov:wasDerivedFrom doc:a0cc771fdde3 .
+doc:Factsusecase1 cco:describes doc:FactsEnergyFaultDetector .
+_:d7bf8198fe589a9a3b5f99e98ad02eb4 rdf:reifies <<( doc:Factsusecase1 cco:describes doc:FactsEnergyFaultDetector )>> ;
+	prov:wasDerivedFrom doc:a0cc771fdde3 .
+doc:Factsannotations1 a cco:DescriptiveInformationContentEntity .
+_:c2a20d581ad073e6bedcdea5f7ce4fd9 rdf:reifies <<( doc:Factsannotations1 rdf:type cco:DescriptiveInformationContentEntity )>> ;
+	prov:wasDerivedFrom doc:a0cc771fdde3 .
+doc:Factsarticle1_15 cco:is_about doc:FactsEnergyFaultDetector .
+_:c449be0bbe9705aba5ee1508a0075c7a rdf:reifies <<( doc:Factsarticle1_15 cco:is_about doc:FactsEnergyFaultDetector )>> ;
+	prov:wasDerivedFrom doc:a0cc771fdde3 .
+doc:Factsauthor1_1 rdfs:label "Anna Cadenbach" .
+_:e8bb0ffeba9465560bc0be08bf3df8a7 rdf:reifies <<( doc:Factsauthor1_1 rdfs:label "Anna Cadenbach" )>> ;
+	prov:wasDerivedFrom doc:a0cc771fdde3 .
+doc:Factstitle1_4 None:has_text_value "Enabling Predictive Maintenance in District Heating Substations: A Labelled Dataset and Fault Detection Evaluation Framework based on Service Data" .
+_:ef6fdc343d67a68d497c9dbcea9c6d7a rdf:reifies <<( doc:Factstitle1_4 None:has_text_value "Enabling Predictive Maintenance in District Heating Substations: A Labelled Dataset and Fault Detection Evaluation Framework based on Service Data" )>> ;
+	prov:wasDerivedFrom doc:a0cc771fdde3 .
+doc:Factsorg1_2 rdfs:label "Fraunhofer IEE" .
+_:b88757d46ad3e84129ad69edec4615e9 rdf:reifies <<( doc:Factsorg1_2 rdfs:label "Fraunhofer IEE" )>> ;
+	prov:wasDerivedFrom doc:a0cc771fdde3 .
+doc:Factsauthor1_1 rdfs:label "Thomas Hugo" .
+_:a7257629b543af80bbb86bfdb2b55ef8 rdf:reifies <<( doc:Factsauthor1_1 rdfs:label "Thomas Hugo" )>> ;
+	prov:wasDerivedFrom doc:a0cc771fdde3 .
+doc:Factsdataset1 a cco:Database .
+_:f12c34fa4858955c3e738896cc9ce695 rdf:reifies <<( doc:Factsdataset1 rdf:type cco:Database )>> ;
+	prov:wasDerivedFrom doc:a0cc771fdde3 .
+doc:Factsdataset1 obo:RO_0000086 doc:FactsleadTimeMax .
+_:c241fe4bef89f58abcb639d8a1629e66 rdf:reifies <<( doc:Factsdataset1 obo:RO_0000086 doc:FactsleadTimeMax )>> ;
+	prov:wasDerivedFrom doc:a0cc771fdde3 .
+doc:FactsFscoreIndicator cco:describes doc:FactsEnergyFaultDetector .
+_:cc8eea53d3dd3b60178ce5d195c06fd9 rdf:reifies <<( doc:FactsFscoreIndicator cco:describes doc:FactsEnergyFaultDetector )>> ;
+	prov:wasDerivedFrom doc:a0cc771fdde3 .
+doc:FactsearlyDetectIndicator cco:describes doc:FactsEnergyFaultDetector .
+_:d4c579822bf9c94f16f9361a122d918d rdf:reifies <<( doc:FactsearlyDetectIndicator cco:describes doc:FactsEnergyFaultDetector )>> ;
+	prov:wasDerivedFrom doc:a0cc771fdde3 .
+doc:Factsusecase1 a cco:InformationProcessingArtifact .
+_:c201c9f9f01c4eade5dae906bbb07d62 rdf:reifies <<( doc:Factsusecase1 rdf:type cco:InformationProcessingArtifact )>> ;
+	prov:wasDerivedFrom doc:a0cc771fdde3 .
+doc:FactsArcana None:describes_type doc:Factsautoencoder .
+_:e529911e6734d835c05e7cbb0c6fa799 rdf:reifies <<( doc:FactsArcana None:describes_type doc:Factsautoencoder )>> ;
+	prov:wasDerivedFrom doc:a0cc771fdde3 .
+doc:FactsFscoreIndicator a None:Performance_indicator .
+_:b01181c0a852cd2cfdf49fcd3579063a rdf:reifies <<( doc:FactsFscoreIndicator rdf:type None:Performance_indicator )>> ;
+	prov:wasDerivedFrom doc:a0cc771fdde3 .
+doc:FactsmanufacturerA rdfs:label "Manufacturer B" .
+_:b6f61a4e4ff30bfd95ca3091d8751e33 rdf:reifies <<( doc:FactsmanufacturerA rdfs:label "Manufacturer B" )>> ;
+	prov:wasDerivedFrom doc:a0cc771fdde3 .
+doc:Factsauthor1_1 rdfs:label "Edison Guevara Bastidas" .
+_:ef47b61abd2feb122e16737af62481fa rdf:reifies <<( doc:Factsauthor1_1 rdfs:label "Edison Guevara Bastidas" )>> ;
+	prov:wasDerivedFrom doc:a0cc771fdde3 .
+doc:FactsArcana rdfs:label "ARCANA (feature-attribution method for autoencoders)" .
+_:d95dae5113f2a8d49567fe42ac9c4d59 rdf:reifies <<( doc:FactsArcana rdfs:label "ARCANA (feature-attribution method for autoencoders)" )>> ;
+	prov:wasDerivedFrom doc:a0cc771fdde3 .
+doc:Factsannotations1 rdfs:label "annotated disturbances, normal-event examples and detailed fault metadata" .
+_:ac8823a97be7259a19cf2c13508b4ad0 rdf:reifies <<( doc:Factsannotations1 rdfs:label "annotated disturbances, normal-event examples and detailed fault metadata" )>> ;
+	prov:wasDerivedFrom doc:a0cc771fdde3 .
+doc:Factsusecase1 rdfs:label "root-cause analysis and three operator use-cases enabled by ARCANA and EnergyFaultDetector" .
+_:fe42b496a91ee6e9ed598b5ef4891186 rdf:reifies <<( doc:Factsusecase1 rdfs:label "root-cause analysis and three operator use-cases enabled by ARCANA and EnergyFaultDetector" )>> ;
+	prov:wasDerivedFrom doc:a0cc771fdde3 .
+doc:Factsarticle1_15 None:has_title doc:Factstitle1_4 .
+_:c80088358715470647cf717e14c7ea5a rdf:reifies <<( doc:Factsarticle1_15 None:has_title doc:Factstitle1_4 )>> ;
+	prov:wasDerivedFrom doc:a0cc771fdde3 .
+doc:Factsarticle1_15 obo:RO_0010002 doc:Factsdataset1 .
+_:c682e0528e3c6aa2859297e4fd1f72a9 rdf:reifies <<( doc:Factsarticle1_15 obo:RO_0010002 doc:Factsdataset1 )>> ;
+	prov:wasDerivedFrom doc:a0cc771fdde3 .
+doc:Factsorg1_2 a schema1:Organization .
+_:d774a46637200c02002dfa465f516a1e rdf:reifies <<( doc:Factsorg1_2 rdf:type schema1:Organization )>> ;
+	prov:wasDerivedFrom doc:a0cc771fdde3 .
+doc:Factsorg1_2 schema1:address "Joseph-Beuys-StraÃe 8, 34117 Kassel, Germany" .
+_:c732ee4f38611e2998577bbf359f0ebf rdf:reifies <<( doc:Factsorg1_2 schema1:address "Joseph-Beuys-StraÃe 8, 34117 Kassel, Germany" )>> ;
+	prov:wasDerivedFrom doc:a0cc771fdde3 .
+doc:FactsEnergyFaultDetector a None:Predictive_maintenance_model .
+_:c0b72854ff6bce565f8ad9f3985eda84 rdf:reifies <<( doc:FactsEnergyFaultDetector rdf:type None:Predictive_maintenance_model )>> ;
+	prov:wasDerivedFrom doc:a0cc771fdde3 .
+doc:FactsearlyDetectIndicator rdfs:label "fraction of faults detected before customer report" .
+_:afbcd64778cf750315e22e5169e67ec7 rdf:reifies <<( doc:FactsearlyDetectIndicator rdfs:label "fraction of faults detected before customer report" )>> ;
+	prov:wasDerivedFrom doc:a0cc771fdde3 .
+doc:FactsEnergyFaultDetector schema1:programmingLanguage "Python" .
+_:d8e7e1c3a03db528cdb171702d04737c rdf:reifies <<( doc:FactsEnergyFaultDetector schema1:programmingLanguage "Python" )>> ;
+	prov:wasDerivedFrom doc:a0cc771fdde3 .
+doc:Factsdataset1 rdfs:label "Public, service-report-validated labelled dataset of 93 district heating substations" .
+_:bcb7aa7489635eea2c128314ae0a358e rdf:reifies <<( doc:Factsdataset1 rdfs:label "Public, service-report-validated labelled dataset of 93 district heating substations" )>> ;
+	prov:wasDerivedFrom doc:a0cc771fdde3 .
+doc:FactsFscoreValue schema1:value 0.98 .
+_:dbe71c0d899070bf48b06b7d623d1594 rdf:reifies <<( doc:FactsFscoreValue schema1:value 0.98 )>> ;
+	prov:wasDerivedFrom doc:a0cc771fdde3 .
+doc:FactsFscoreValue schema1:value 0.83 .
+_:c7d9621ce3a577c31e003102ba15096d rdf:reifies <<( doc:FactsFscoreValue schema1:value 0.83 )>> ;
+	prov:wasDerivedFrom doc:a0cc771fdde3 .
+doc:FactsFscoreIndicator rdfs:label "eventwise F0.5" .
+_:e3958e9591ddd8a3607f61d0fd85a5ed rdf:reifies <<( doc:FactsFscoreIndicator rdfs:label "eventwise F0.5" )>> ;
+	prov:wasDerivedFrom doc:a0cc771fdde3 .
+doc:6d4e45d0b5ef a prov:Entity , schema:text ;
+	prov:generatedAtTime "2026-07-11T06:27:56.186419Z"^^xsd:dateTime ;
+	schema:position 1 ;
+	schema:identifier "6d4e45d0b5ef" .
+doc:FactsAutoencoder_2 rdfs:label "autoencoder (AE)"@en .
+_:e6c9733c46007d0ac3d6ffdd15f21b2e rdf:reifies <<( doc:FactsAutoencoder_2 rdfs:label "autoencoder (AE)"@en )>> ;
+	prov:wasDerivedFrom doc:6d4e45d0b5ef .
+doc:Factsarticle1_15 rdfs:label "Gadd and Werner (cited as [8])"@en .
+_:e201cb2ca2c33fd5b1086ae2d08d50a rdf:reifies <<( doc:Factsarticle1_15 rdfs:label "Gadd and Werner (cited as [8])"@en )>> ;
+	prov:wasDerivedFrom doc:6d4e45d0b5ef .
+doc:factslistsFaultCategory a rdf:Property .
+_:ad59ab0ef0aebed9f9db9fc4160d66de rdf:reifies <<( doc:factslistsFaultCategory rdf:type rdf:Property )>> ;
+	prov:wasDerivedFrom doc:6d4e45d0b5ef .
+doc:FactsPoorSubstationControl a obo:BFO_0000019 .
+_:dbcf73fc07447aac79664dd26234028 rdf:reifies <<( doc:FactsPoorSubstationControl rdf:type obo:BFO_0000019 )>> ;
+	prov:wasDerivedFrom doc:6d4e45d0b5ef .
+doc:Factsarticle1_15 doc:factslistsFaultCategory doc:FactsLeakage .
+_:cf48427bdd6b629487d86b18b39bdf23 rdf:reifies <<( doc:Factsarticle1_15 doc:factslistsFaultCategory doc:FactsLeakage )>> ;
+	prov:wasDerivedFrom doc:6d4e45d0b5ef .
+doc:FactsLeakage rdfs:label "leakage (fault category)"@en .
+_:bb4beac31c84ee7f65561ce690867374 rdf:reifies <<( doc:FactsLeakage rdfs:label "leakage (fault category)"@en )>> ;
+	prov:wasDerivedFrom doc:6d4e45d0b5ef .
+doc:Factsarticle1_15 rdfs:label "MÃ¥nsson et al. survey (cited as [7])"@en .
+_:af9bd313c134b594c6cf22f8bd88432 rdf:reifies <<( doc:Factsarticle1_15 rdfs:label "MÃ¥nsson et al. survey (cited as [7])"@en )>> ;
+	prov:wasDerivedFrom doc:6d4e45d0b5ef .
+doc:FactsPmModuleDhs a None:Predictive_maintenance_system_module .
+_:bdb060574e6c84b108a4120fc15bc21f rdf:reifies <<( doc:FactsPmModuleDhs rdf:type None:Predictive_maintenance_system_module )>> ;
+	prov:wasDerivedFrom doc:6d4e45d0b5ef .
+doc:FactsLeakage a obo:BFO_0000019 .
+_:c60682e8c9723e71ce5367ade607acc2 rdf:reifies <<( doc:FactsLeakage rdf:type obo:BFO_0000019 )>> ;
+	prov:wasDerivedFrom doc:6d4e45d0b5ef .
+doc:FactsMachineLearning_2 rdfs:comment "Machine learning methods enable data-driven anomaly detection and predictive maintenance"@en .
+_:adfd056955bbfd97c7242154d17e0407 rdf:reifies <<( doc:FactsMachineLearning_2 rdfs:comment "Machine learning methods enable data-driven anomaly detection and predictive maintenance"@en )>> ;
+	prov:wasDerivedFrom doc:6d4e45d0b5ef .
+doc:Factsarticle1_15 doc:factslistsFaultCategory doc:FactsThreeGroups .
+_:a5d05545dff60e4d4528899e92524432 rdf:reifies <<( doc:Factsarticle1_15 doc:factslistsFaultCategory doc:FactsThreeGroups )>> ;
+	prov:wasDerivedFrom doc:6d4e45d0b5ef .
+doc:FactsDigitalisation rdfs:label "digitalisation measures for collection of operating data"@en .
+_:d069ae712363cd5f2aa73c977ede0ce6 rdf:reifies <<( doc:FactsDigitalisation rdfs:label "digitalisation measures for collection of operating data"@en )>> ;
+	prov:wasDerivedFrom doc:6d4e45d0b5ef .
+doc:FactsDistrictHeatingSubstation a None:Maintainable_item .
+_:b400de35a36ac228e0bdd6c6d11879c2 rdf:reifies <<( doc:FactsDistrictHeatingSubstation rdf:type None:Maintainable_item )>> ;
+	prov:wasDerivedFrom doc:6d4e45d0b5ef .
+doc:FactsThreeGroups None:has_interger_value 3 .
+_:c1ffb71101447368be62d7198978a5a4 rdf:reifies <<( doc:FactsThreeGroups None:has_interger_value 3 )>> ;
+	prov:wasDerivedFrom doc:6d4e45d0b5ef .
+doc:factsidentifies rdfs:label "identifies"@en .
+_:d390385c56658ee8e5e7bc2e5fc9bf56 rdf:reifies <<( doc:factsidentifies rdfs:label "identifies"@en )>> ;
+	prov:wasDerivedFrom doc:6d4e45d0b5ef .
+doc:Factsarticle1_15 doc:factsidentifies doc:FactsLeakage .
+_:d182022b8c5d162401602d5bd2dce756 rdf:reifies <<( doc:Factsarticle1_15 doc:factsidentifies doc:FactsLeakage )>> ;
+	prov:wasDerivedFrom doc:6d4e45d0b5ef .
+doc:factslistsFaultCategory rdfs:label "reports number of fault categories"@en .
+_:bff5c6d0ee1aba1f72616e6d355d2e40 rdf:reifies <<( doc:factslistsFaultCategory rdfs:label "reports number of fault categories"@en )>> ;
+	prov:wasDerivedFrom doc:6d4e45d0b5ef .
+doc:FactsMachineLearning_2 rdfs:label "machine learning (ML)"@en .
+_:eb85d8a8dd1629c0da86d3f234089d2 rdf:reifies <<( doc:FactsMachineLearning_2 rdfs:label "machine learning (ML)"@en )>> ;
+	prov:wasDerivedFrom doc:6d4e45d0b5ef .
+doc:FactsAutoencoder_2 a cco:Algorithm .
+_:a704f6d653f9845d7826b09df36f9460 rdf:reifies <<( doc:FactsAutoencoder_2 rdf:type cco:Algorithm )>> ;
+	prov:wasDerivedFrom doc:6d4e45d0b5ef .
+_:b651a103b08c3792ad3bff997b252abc prov:wasDerivedFrom doc:6d4e45d0b5ef .
+doc:FactsRe rdfs:label "reconstruction error (RE)"@en .
+_:a0680464118ab467e1807b092c34edc8 rdf:reifies <<( doc:FactsRe rdfs:label "reconstruction error (RE)"@en )>> ;
+	prov:wasDerivedFrom doc:6d4e45d0b5ef .
+doc:FactsFdd_1 a None:Fault_detection .
+_:de812c258bcc8ca312d9cdef64cc0c62 rdf:reifies <<( doc:FactsFdd_1 rdf:type None:Fault_detection )>> ;
+	prov:wasDerivedFrom doc:6d4e45d0b5ef .
+doc:FactsUnsuitableHeatLoadPattern rdfs:label "unsuitable heat load pattern"@en .
+_:dca333288833568936df7ddaf78381e1 rdf:reifies <<( doc:FactsUnsuitableHeatLoadPattern rdfs:label "unsuitable heat load pattern"@en )>> ;
+	prov:wasDerivedFrom doc:6d4e45d0b5ef .
+doc:FactsLowAnnualTempDiffValue rdfs:label "occurrence of low annual temperature difference (Gadd & Werner)"@en .
+_:f67785ca2ee06a5e3771d1221ab0eb9a rdf:reifies <<( doc:FactsLowAnnualTempDiffValue rdfs:label "occurrence of low annual temperature difference (Gadd & Werner)"@en )>> ;
+	prov:wasDerivedFrom doc:6d4e45d0b5ef .
+doc:FactsThreeGroups rdfs:label "three fault groups reported by Gadd and Werner"@en .
+_:a7d167d9b609d4e36a9c6b1b4ad090c9 rdf:reifies <<( doc:FactsThreeGroups rdfs:label "three fault groups reported by Gadd and Werner"@en )>> ;
+	prov:wasDerivedFrom doc:6d4e45d0b5ef .
+doc:FactsRmse a None:Performance_indicator .
+_:acce0fb3fe0a7612f9c5741ce40224a4 rdf:reifies <<( doc:FactsRmse rdf:type None:Performance_indicator )>> ;
+	prov:wasDerivedFrom doc:6d4e45d0b5ef .
+doc:FactsFdd_1 rdfs:label "fault detection function"@en .
+_:ae8087af1a5477d298e4aa92e2090236 rdf:reifies <<( doc:FactsFdd_1 rdfs:label "fault detection function"@en )>> ;
+	prov:wasDerivedFrom doc:6d4e45d0b5ef .
+doc:factslistsFaultCategory rdfs:label "lists fault category"@en .
+_:fcdceb3cd10b104ecf5fcff0b4732c9d rdf:reifies <<( doc:factslistsFaultCategory rdfs:label "lists fault category"@en )>> ;
+	prov:wasDerivedFrom doc:6d4e45d0b5ef .
+doc:factsreportedPercentage rdfs:label "reports percentage for"@en .
+_:bf31edf97a52e896125f630670588a7d rdf:reifies <<( doc:factsreportedPercentage rdfs:label "reports percentage for"@en )>> ;
+	prov:wasDerivedFrom doc:6d4e45d0b5ef .
+doc:FactsPoorSubstationControl rdfs:label "poor substation control"@en .
+_:d178f8d884796fae53393ca1077135c8 rdf:reifies <<( doc:FactsPoorSubstationControl rdfs:label "poor substation control"@en )>> ;
+	prov:wasDerivedFrom doc:6d4e45d0b5ef .
+doc:FactsLeakage doc:factsrank 2 .
+_:a04df4338ae0b13b3cb0112c37a8c4a1 rdf:reifies <<( doc:FactsLeakage doc:factsrank 2 )>> ;
+	prov:wasDerivedFrom doc:6d4e45d0b5ef .
+doc:factsrank rdfs:label "rank (1 = most common)"@en .
+_:e14098de3ba945f7ea5acc9e9ddd9cd3 rdf:reifies <<( doc:factsrank rdfs:label "rank (1 = most common)"@en )>> ;
+	prov:wasDerivedFrom doc:6d4e45d0b5ef .
+doc:factsidentifies a rdf:Property .
+_:c6dd81fb9fb3a88a7e9d6d2087063490 rdf:reifies <<( doc:factsidentifies rdf:type rdf:Property )>> ;
+	prov:wasDerivedFrom doc:6d4e45d0b5ef .
+doc:FactsLeakage doc:factsrank 1 .
+_:e690307d7b61cb7d485b13868082347d rdf:reifies <<( doc:FactsLeakage doc:factsrank 1 )>> ;
+	prov:wasDerivedFrom doc:6d4e45d0b5ef .
+doc:Factsarticle1_15 doc:factsreportedPercentage doc:FactsLowAnnualTempDiffValue .
+_:d05773a168e1327995062c4a0100b57b rdf:reifies <<( doc:Factsarticle1_15 doc:factsreportedPercentage doc:FactsLowAnnualTempDiffValue )>> ;
+	prov:wasDerivedFrom doc:6d4e45d0b5ef .
+doc:FactsThreeGroups rdfs:label "number of fault categories identified by MÃ¥nsson et al."@en .
+_:fae0e1b9507ab5eec940ea2403cc73c1 rdf:reifies <<( doc:FactsThreeGroups rdfs:label "number of fault categories identified by MÃ¥nsson et al."@en )>> ;
+	prov:wasDerivedFrom doc:6d4e45d0b5ef .
+doc:FactsThreeGroups None:has_interger_value 6 .
+_:ee7b8c645e4268b757045000effad7a8 rdf:reifies <<( doc:FactsThreeGroups None:has_interger_value 6 )>> ;
+	prov:wasDerivedFrom doc:6d4e45d0b5ef .
+doc:FactsRe a None:Performance_indicator .
+_:eaae5187c241672919f0c6a86bc1fb5e rdf:reifies <<( doc:FactsRe rdf:type None:Performance_indicator )>> ;
+	prov:wasDerivedFrom doc:6d4e45d0b5ef .
+doc:FactsUnsuitableHeatLoadPattern a obo:BFO_0000019 .
+_:edeb03cca3d8fb5697b6d3acef347911 rdf:reifies <<( doc:FactsUnsuitableHeatLoadPattern rdf:type obo:BFO_0000019 )>> ;
+	prov:wasDerivedFrom doc:6d4e45d0b5ef .
+doc:FactsHeatExchangerFault rdfs:label "heat exchanger faults"@en .
+_:c41948daf43904c40461e474499b2119 rdf:reifies <<( doc:FactsHeatExchangerFault rdfs:label "heat exchanger faults"@en )>> ;
+	prov:wasDerivedFrom doc:6d4e45d0b5ef .
+doc:FactsThreeGroups a None:Number_of_failure_modes .
+_:c5ccc6caa74df5d8dd8d5cfc1946f58e rdf:reifies <<( doc:FactsThreeGroups rdf:type None:Number_of_failure_modes )>> ;
+	prov:wasDerivedFrom doc:6d4e45d0b5ef .
+doc:FactsLeakage rdfs:comment "Reported as the most common category of faults in MÃ¥nsson et al."@en .
+_:cb4bd42611a04d73c5e53d7105752456 rdf:reifies <<( doc:FactsLeakage rdfs:comment "Reported as the most common category of faults in MÃ¥nsson et al."@en )>> ;
+	prov:wasDerivedFrom doc:6d4e45d0b5ef .
+doc:FactsDistrictHeatingSubstation rdfs:label "district heating substation"@en .
+_:bb685fd4a6834e9e27eec383601de7cb rdf:reifies <<( doc:FactsDistrictHeatingSubstation rdfs:label "district heating substation"@en )>> ;
+	prov:wasDerivedFrom doc:6d4e45d0b5ef .
+doc:factsreportedPercentage rdfs:label "reported percentage (numeric)"@en .
+_:f8cc70c9b7e267b6676000644449910 rdf:reifies <<( doc:factsreportedPercentage rdfs:label "reported percentage (numeric)"@en )>> ;
+	prov:wasDerivedFrom doc:6d4e45d0b5ef .
+doc:FactsMse a None:Performance_indicator .
+_:db447b9fb3033e7c9b8c6ecc510c9eac rdf:reifies <<( doc:FactsMse rdf:type None:Performance_indicator )>> ;
+	prov:wasDerivedFrom doc:6d4e45d0b5ef .
+doc:factsreportedPercentage a rdf:Property .
+_:d34ef47de18a2ed9e0c08d0bc38307fc rdf:reifies <<( doc:factsreportedPercentage rdf:type rdf:Property )>> ;
+	prov:wasDerivedFrom doc:6d4e45d0b5ef .
+doc:FactsLowAvgAnnualTempDiff rdfs:label "low average annual temperature difference"@en .
+_:bf33b8a70eb558d9d2c8d5760c9b7f49 rdf:reifies <<( doc:FactsLowAvgAnnualTempDiff rdfs:label "low average annual temperature difference"@en )>> ;
+	prov:wasDerivedFrom doc:6d4e45d0b5ef .
+doc:FactsLeakage rdfs:label "actuator faults"@en .
+_:dffb07e08d116aec565ed658d6a730a2 rdf:reifies <<( doc:FactsLeakage rdfs:label "actuator faults"@en )>> ;
+	prov:wasDerivedFrom doc:6d4e45d0b5ef .
+doc:FactsLowAvgAnnualTempDiff a obo:BFO_0000019 .
+_:d7b9ddfa460648c7f9286feea83fda3b rdf:reifies <<( doc:FactsLowAvgAnnualTempDiff rdf:type obo:BFO_0000019 )>> ;
+	prov:wasDerivedFrom doc:6d4e45d0b5ef .
+doc:FactsAutoencoder_2 a None:Predictive_maintenance_model .
+_:e7cb8d12457bac29e7e4ce81f7a329e9 rdf:reifies <<( doc:FactsAutoencoder_2 rdf:type None:Predictive_maintenance_model )>> ;
+	prov:wasDerivedFrom doc:6d4e45d0b5ef .
+doc:factsrank a rdf:Property .
+_:ed7a00e7602175a0532625f04ef4709 rdf:reifies <<( doc:factsrank rdf:type rdf:Property )>> ;
+	prov:wasDerivedFrom doc:6d4e45d0b5ef .
+doc:Factsarticle1_15 doc:factslistsFaultCategory doc:FactsHeatExchangerFault .
+_:e77cc690b2ea977a7be2db99f2174c18 rdf:reifies <<( doc:Factsarticle1_15 doc:factslistsFaultCategory doc:FactsHeatExchangerFault )>> ;
+	prov:wasDerivedFrom doc:6d4e45d0b5ef .
+doc:FactsFdd_1 rdfs:label "fault detection and diagnosis (FDD)"@en .
+_:e0fd7d3bcec6850eb5daea71ecf3bdd5 rdf:reifies <<( doc:FactsFdd_1 rdfs:label "fault detection and diagnosis (FDD)"@en )>> ;
+	prov:wasDerivedFrom doc:6d4e45d0b5ef .
+doc:FactsFdd_1 a None:Predictive_maintenance_module_function .
+_:adedd4c4f32d3f039acf7a5b3628e2ae rdf:reifies <<( doc:FactsFdd_1 rdf:type None:Predictive_maintenance_module_function )>> ;
+	prov:wasDerivedFrom doc:6d4e45d0b5ef .
+doc:FactsLeakage rdfs:label "control valve faults"@en .
+_:d956fbb6fd4dc81fbd13054013509218 rdf:reifies <<( doc:FactsLeakage rdfs:label "control valve faults"@en )>> ;
+	prov:wasDerivedFrom doc:6d4e45d0b5ef .
+doc:FactsDigitalisation a cco:InformationProcessingArtifact .
+_:c6d1a785f29a95a816853b3fecee4761 rdf:reifies <<( doc:FactsDigitalisation rdf:type cco:InformationProcessingArtifact )>> ;
+	prov:wasDerivedFrom doc:6d4e45d0b5ef .
+doc:FactsMachineLearning_2 a cco:Algorithm .
+_:fbea59eaadde5c563d60ee2dd85c9af7 rdf:reifies <<( doc:FactsMachineLearning_2 rdf:type cco:Algorithm )>> ;
+	prov:wasDerivedFrom doc:6d4e45d0b5ef .
+doc:FactsLeakage rdfs:label "customer internal heating system faults"@en .
+_:e98e58c3fc3ef5a89c368404ff945994 rdf:reifies <<( doc:FactsLeakage rdfs:label "customer internal heating system faults"@en )>> ;
+	prov:wasDerivedFrom doc:6d4e45d0b5ef .
+doc:FactsPmModuleDhs None:has_predictive_maintenance_function doc:FactsFdd_1 .
+_:ca1d5148e67879434cd482f46e0ef4c rdf:reifies <<( doc:FactsPmModuleDhs None:has_predictive_maintenance_function doc:FactsFdd_1 )>> ;
+	prov:wasDerivedFrom doc:6d4e45d0b5ef .
+doc:FactsRmse rdfs:label "root mean square error (RMSE)"@en .
+_:eef0af926d3f39144b5a7a818455c716 rdf:reifies <<( doc:FactsRmse rdfs:label "root mean square error (RMSE)"@en )>> ;
+	prov:wasDerivedFrom doc:6d4e45d0b5ef .
+doc:FactsLeakage rdfs:label "control systems and controllers faults"@en .
+_:a2ee4a935380739dec0647f7f1c07978 rdf:reifies <<( doc:FactsLeakage rdfs:label "control systems and controllers faults"@en )>> ;
+	prov:wasDerivedFrom doc:6d4e45d0b5ef .
+doc:FactsPmModuleDhs rdfs:label "predictive maintenance module for district heating substation"@en .
+_:a480f3f6da0b033f3175f4cbbe0c67ef rdf:reifies <<( doc:FactsPmModuleDhs rdfs:label "predictive maintenance module for district heating substation"@en )>> ;
+	prov:wasDerivedFrom doc:6d4e45d0b5ef .
+doc:FactsDigitalisation rdfs:comment "Digitalisation enables collection of operational data used for anomaly detection"@en .
+_:d65e8185ae1d8fdab2baf939c4ec997a rdf:reifies <<( doc:FactsDigitalisation rdfs:comment "Digitalisation enables collection of operational data used for anomaly detection"@en )>> ;
+	prov:wasDerivedFrom doc:6d4e45d0b5ef .
+doc:FactsMachineLearning_2 a None:Data_mining_technique_function .
+_:cd63c71fea4fd6b36dde2d3e36767046 rdf:reifies <<( doc:FactsMachineLearning_2 rdf:type None:Data_mining_technique_function )>> ;
+	prov:wasDerivedFrom doc:6d4e45d0b5ef .
+doc:FactsMse rdfs:label "mean square error (MSE)"@en .
+_:d299d4fdb5fb5e6e3f24ab8d24000385 rdf:reifies <<( doc:FactsMse rdfs:label "mean square error (MSE)"@en )>> ;
+	prov:wasDerivedFrom doc:6d4e45d0b5ef .
+doc:FactsHeatExchangerFault a obo:BFO_0000019 .
+_:e34a2960e0e266a05d4b1a04f56fc89 rdf:reifies <<( doc:FactsHeatExchangerFault rdf:type obo:BFO_0000019 )>> ;
+	prov:wasDerivedFrom doc:6d4e45d0b5ef .
+doc:factslistsFaultCategory rdfs:label "reports number of fault groups"@en .
+_:de051d68a724b62805dec2b72fa2907f rdf:reifies <<( doc:factslistsFaultCategory rdfs:label "reports number of fault groups"@en )>> ;
+	prov:wasDerivedFrom doc:6d4e45d0b5ef .
+doc:FactsLowAnnualTempDiffValue doc:factsreportedPercentage "70"^^xsd:decimal .
+_:bab9c0511ed2d083de1b380c5f2bf89a rdf:reifies <<( doc:FactsLowAnnualTempDiffValue doc:factsreportedPercentage "70"^^xsd:decimal )>> ;
+	prov:wasDerivedFrom doc:6d4e45d0b5ef .
+doc:FactsLowAnnualTempDiffValue a None:Performance_value .
+_:ebaa8507fbcc2f19c6005a29848ddbb8 rdf:reifies <<( doc:FactsLowAnnualTempDiffValue rdf:type None:Performance_value )>> ;
+	prov:wasDerivedFrom doc:6d4e45d0b5ef .
+doc:e55e87170c1f a prov:Entity , schema:text ;
+	prov:generatedAtTime "2026-07-11T06:27:56.18942Z"^^xsd:dateTime ;
+	schema:position 2 ;
+	schema:identifier "e55e87170c1f" .
+doc:FactsEnergyFaultDetector None:has_predictive_maintenance_function None:Fault_detection .
+_:c39ed23db242b0df97bbcb0e4007ecd7 rdf:reifies <<( doc:FactsEnergyFaultDetector None:has_predictive_maintenance_function None:Fault_detection )>> ;
+	prov:wasDerivedFrom doc:e55e87170c1f .
+_:b651a103b08c3792ad3bff997b252abc prov:wasDerivedFrom doc:e55e87170c1f .
+doc:FactsEnergyFaultDetector schema1:softwareVersion "v0.3.0" .
+_:dc51ffd025255e66c24566f4067ff262 rdf:reifies <<( doc:FactsEnergyFaultDetector schema1:softwareVersion "v0.3.0" )>> ;
+	prov:wasDerivedFrom doc:e55e87170c1f .
+doc:Factspredist_dataset_v1 schema1:license "CC BY 4.0" .
+_:c2601429af816dd60d44e96f1ab2d140 rdf:reifies <<( doc:Factspredist_dataset_v1 schema1:license "CC BY 4.0" )>> ;
+	prov:wasDerivedFrom doc:e55e87170c1f .
+doc:FactsAutoencoderDesignDetail a None:Design_detail .
+_:a3b9281916b40cc3d59215093e3943ac rdf:reifies <<( doc:FactsAutoencoderDesignDetail rdf:type None:Design_detail )>> ;
+	prov:wasDerivedFrom doc:e55e87170c1f .
+doc:FactsGitHubRepoEnergyFaultDetector a schema1:SoftwareSourceCode .
+_:b216a0f13598ac95ac5fc0f7df6c9ae3 rdf:reifies <<( doc:FactsGitHubRepoEnergyFaultDetector rdf:type schema1:SoftwareSourceCode )>> ;
+	prov:wasDerivedFrom doc:e55e87170c1f .
+doc:FactsLackOfPublicDatasets a None:Design_detail .
+_:ee192409c63bd4623b83d59523cf94c5 rdf:reifies <<( doc:FactsLackOfPublicDatasets rdf:type None:Design_detail )>> ;
+	prov:wasDerivedFrom doc:e55e87170c1f .
+_:b400de35a36ac228e0bdd6c6d11879c2 prov:wasDerivedFrom doc:e55e87170c1f .
+doc:Factspredist_dataset_v1 schema1:temporalResolution "PT10M"^^xsd:duration .
+_:b183a24d1cf11944abb1fdbe0abebc7f rdf:reifies <<( doc:Factspredist_dataset_v1 schema1:temporalResolution "PT10M"^^xsd:duration )>> ;
+	prov:wasDerivedFrom doc:e55e87170c1f .
+doc:FactsEnergyFaultDetector rdfs:label "EnergyFaultDetector" .
+_:e288af87571accbb7456e077de49a072 rdf:reifies <<( doc:FactsEnergyFaultDetector rdfs:label "EnergyFaultDetector" )>> ;
+	prov:wasDerivedFrom doc:e55e87170c1f .
+doc:Factsarticle1_15 schema1:description "Publishes PreDist dataset v1 (labelled, service-report-validated), provides an open-source EnergyFaultDetector baseline (autoencoder-based), and defines an evaluation protocol based on accuracy, reliability, and earliness." .
+_:d99b98f6428bd79dab24cb06c05cd658 rdf:reifies <<( doc:Factsarticle1_15 schema1:description "Publishes PreDist dataset v1 (labelled, service-report-validated), provides an open-source EnergyFaultDetector baseline (autoencoder-based), and defines an evaluation protocol based on accuracy, reliability, and earliness." )>> ;
+	prov:wasDerivedFrom doc:e55e87170c1f .
+doc:FactsEnergyFaultDetector schema1:url "https://github.com/AEFDI/EnergyFaultDetector/tree/v0.3.0" .
+_:afd16afe9a6c0e58c916103fe5043a60 rdf:reifies <<( doc:FactsEnergyFaultDetector schema1:url "https://github.com/AEFDI/EnergyFaultDetector/tree/v0.3.0" )>> ;
+	prov:wasDerivedFrom doc:e55e87170c1f .
+doc:FactsAutoencoderDesignDetail None:has_text_value "Autoencoder-based fault detection framework originally developed for early FDD in wind turbines and adapted and validated for district heating substations (DHS)." .
+_:e43fa403194d69fc779983cd94d55046 rdf:reifies <<( doc:FactsAutoencoderDesignDetail None:has_text_value "Autoencoder-based fault detection framework originally developed for early FDD in wind turbines and adapted and validated for district heating substations (DHS)." )>> ;
+	prov:wasDerivedFrom doc:e55e87170c1f .
+doc:Factspredist_dataset_v1 a schema1:Dataset .
+_:c897ebc9ce16cf61c446ac6b9a863e3e rdf:reifies <<( doc:Factspredist_dataset_v1 rdf:type schema1:Dataset )>> ;
+	prov:wasDerivedFrom doc:e55e87170c1f .
+doc:factsnumberOfSubstations rdfs:label "number of substations" .
+_:b110b59153519ba71a5d95e6d7f42788 rdf:reifies <<( doc:factsnumberOfSubstations rdfs:label "number of substations" )>> ;
+	prov:wasDerivedFrom doc:e55e87170c1f .
+doc:Factspredist_dataset_v1 schema1:description "Time series of 93 district heating substations (DHS) belonging to one operator; includes timestamps of disturbances due to maintenance tasks, incident reports from customers, and derived fault labels; service-report-validated labelled dataset for fault detection in DHS." .
+_:fe79622a05c671969f818ed15f68c034 rdf:reifies <<( doc:Factspredist_dataset_v1 schema1:description "Time series of 93 district heating substations (DHS) belonging to one operator; includes timestamps of disturbances due to maintenance tasks, incident reports from customers, and derived fault labels; service-report-validated labelled dataset for fault detection in DHS." )>> ;
+	prov:wasDerivedFrom doc:e55e87170c1f .
+doc:FactsEnergyFaultDetector a None:Predictive_maintenance_system_module .
+_:c020e213a394fbbb6c627bc4ac94be5c rdf:reifies <<( doc:FactsEnergyFaultDetector rdf:type None:Predictive_maintenance_system_module )>> ;
+	prov:wasDerivedFrom doc:e55e87170c1f .
+doc:FactsLackOfPublicDatasets None:has_text_value "Lack of public, labelled, real-world datasets and consistent evaluation metrics hinders progress in intelligent FDD for district heating substations." .
+_:bd48c01d21db6cfbfe6e56b455863033 rdf:reifies <<( doc:FactsLackOfPublicDatasets None:has_text_value "Lack of public, labelled, real-world datasets and consistent evaluation metrics hinders progress in intelligent FDD for district heating substations." )>> ;
+	prov:wasDerivedFrom doc:e55e87170c1f .
+doc:FactsEnergyFaultDetector None:has_design_detail doc:FactsAutoencoderDesignDetail .
+_:b964a6580e433a4e1e583fa435f6c92c rdf:reifies <<( doc:FactsEnergyFaultDetector None:has_design_detail doc:FactsAutoencoderDesignDetail )>> ;
+	prov:wasDerivedFrom doc:e55e87170c1f .
+doc:Factsarticle1_15 None:has_title "Framework for evaluation of early fault detection methods" .
+_:b10f4dec4c0ed8f59337790ede3d73ea rdf:reifies <<( doc:Factsarticle1_15 None:has_title "Framework for evaluation of early fault detection methods" )>> ;
+	prov:wasDerivedFrom doc:e55e87170c1f .
+doc:FactsEarlinessAdaptation a None:Design_detail .
+_:daaf873553b584cbfcc43fd2580d5be3 rdf:reifies <<( doc:FactsEarlinessAdaptation rdf:type None:Design_detail )>> ;
+	prov:wasDerivedFrom doc:e55e87170c1f .
+doc:FactsGitHubRepoEnergyFaultDetector schema1:url "https://github.com/AEFDI/EnergyFaultDetector/tree/v0.3.0" .
+_:a2d2e4dd34f04672b76c4a3d9f23b644 rdf:reifies <<( doc:FactsGitHubRepoEnergyFaultDetector schema1:url "https://github.com/AEFDI/EnergyFaultDetector/tree/v0.3.0" )>> ;
+	prov:wasDerivedFrom doc:e55e87170c1f .
+doc:FactsaccuracyIndicator None:has_text_value "earliness" .
+_:e7a5882bcaf2e46c61967e12f95ca33e rdf:reifies <<( doc:FactsaccuracyIndicator None:has_text_value "earliness" )>> ;
+	prov:wasDerivedFrom doc:e55e87170c1f .
+doc:Factsarticle1_15 schema1:name "Framework and benchmark for early fault detection in district heating substations" .
+_:b339714b12d1ce3ca65156634c59bfa4 rdf:reifies <<( doc:Factsarticle1_15 schema1:name "Framework and benchmark for early fault detection in district heating substations" )>> ;
+	prov:wasDerivedFrom doc:e55e87170c1f .
+doc:FactsStudyIdentifier None:has_text_value "DOI: https://doi.org/10.5281/zenodo.17522255" .
+_:eb2464fa992c596aec765ee2f5c97690 rdf:reifies <<( doc:FactsStudyIdentifier None:has_text_value "DOI: https://doi.org/10.5281/zenodo.17522255" )>> ;
+	prov:wasDerivedFrom doc:e55e87170c1f .
+doc:FactsGitHubRepoEnergyFaultDetector schema1:isPartOf doc:FactsEnergyFaultDetector .
+_:e83253f4820d6a9233c5a1e1b8bd6e2b rdf:reifies <<( doc:FactsGitHubRepoEnergyFaultDetector schema1:isPartOf doc:FactsEnergyFaultDetector )>> ;
+	prov:wasDerivedFrom doc:e55e87170c1f .
+doc:factsnumberOfSubstations a rdf:Property .
+_:f66634a0c5504185852d7a0244d10a56 rdf:reifies <<( doc:factsnumberOfSubstations rdf:type rdf:Property )>> ;
+	prov:wasDerivedFrom doc:e55e87170c1f .
+doc:FactsEarlinessAdaptation None:has_text_value "Earliness score adapted to compare detection timestamp with an actionable window before the incident report when exact fault onset is unknown." .
+_:aeb40ab4b9139c7fdc999e38a0fd2bb rdf:reifies <<( doc:FactsEarlinessAdaptation None:has_text_value "Earliness score adapted to compare detection timestamp with an actionable window before the incident report when exact fault onset is unknown." )>> ;
+	prov:wasDerivedFrom doc:e55e87170c1f .
+doc:FactsStudyIdentifier a None:Article_identifier .
+_:b7ef396b9d3852106882bd0aee20a98e rdf:reifies <<( doc:FactsStudyIdentifier rdf:type None:Article_identifier )>> ;
+	prov:wasDerivedFrom doc:e55e87170c1f .
+doc:FactsaccuracyIndicator None:has_text_value "reliability" .
+_:e84258e2a5043f3ce7cce9571be38ee6 rdf:reifies <<( doc:FactsaccuracyIndicator None:has_text_value "reliability" )>> ;
+	prov:wasDerivedFrom doc:e55e87170c1f .
+doc:Factsarticle1_15 None:has_identifier doc:FactsStudyIdentifier .
+_:eaab2a475df6141f8aaa1f1eec11ef5c rdf:reifies <<( doc:Factsarticle1_15 None:has_identifier doc:FactsStudyIdentifier )>> ;
+	prov:wasDerivedFrom doc:e55e87170c1f .
+doc:Factspredist_dataset_v1 a cco:Database .
+_:fccf6f173df5273318ffedad5ac0d21b rdf:reifies <<( doc:Factspredist_dataset_v1 rdf:type cco:Database )>> ;
+	prov:wasDerivedFrom doc:e55e87170c1f .
+doc:Factspredist_dataset_v1 schema1:url "https://doi.org/10.5281/zenodo.17522255" .
+_:dd33f2fb1b6478104a32eda31a1be399 rdf:reifies <<( doc:Factspredist_dataset_v1 schema1:url "https://doi.org/10.5281/zenodo.17522255" )>> ;
+	prov:wasDerivedFrom doc:e55e87170c1f .
+_:a2fe0768d2220845728a56cffa36a548 prov:wasDerivedFrom doc:e55e87170c1f .
+doc:Factspredist_dataset_v1 schema1:name "PreDist dataset v1" .
+_:cba7142bbe82c46552329040c0eea6bb rdf:reifies <<( doc:Factspredist_dataset_v1 schema1:name "PreDist dataset v1" )>> ;
+	prov:wasDerivedFrom doc:e55e87170c1f .
+doc:FactsDistrictHeatingSubstation rdfs:label "District heating substation (DHS)" .
+_:f92cd85fda8b09b3c12303827a2b2248 rdf:reifies <<( doc:FactsDistrictHeatingSubstation rdfs:label "District heating substation (DHS)" )>> ;
+	prov:wasDerivedFrom doc:e55e87170c1f .
+doc:Factspredist_dataset_v1 doc:factsnumberOfSubstations 93 .
+_:c8a9f3be6d0b748f53538763d298328c rdf:reifies <<( doc:Factspredist_dataset_v1 doc:factsnumberOfSubstations 93 )>> ;
+	prov:wasDerivedFrom doc:e55e87170c1f .
+doc:FactsEnergyFaultDetector a cco:Algorithm .
+_:d8b867c0708aa67d10c23ace5a89b631 rdf:reifies <<( doc:FactsEnergyFaultDetector rdf:type cco:Algorithm )>> ;
+	prov:wasDerivedFrom doc:e55e87170c1f .
+doc:factsnumberOfSubstations rdfs:range xsd:integer .
+_:f8b90157cdf90f16a0c34d5588281eba rdf:reifies <<( doc:factsnumberOfSubstations rdfs:range xsd:integer )>> ;
+	prov:wasDerivedFrom doc:e55e87170c1f .
+doc:FactsaccuracyIndicator None:has_text_value "accuracy" .
+_:d7da4bf868d588a7dfa60e7ffc83a205 rdf:reifies <<( doc:FactsaccuracyIndicator None:has_text_value "accuracy" )>> ;
+	prov:wasDerivedFrom doc:e55e87170c1f .

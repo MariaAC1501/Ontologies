@@ -13,6 +13,16 @@ This document describes the repository-owned integration check from extracted On
 
 The generated files in `pipeline/test_output/` are working artifacts, not a versioned test fixture. A clean checkout must run fixed-mode extraction before the integration scripts can use them.
 
+## Unit test suite
+
+Run the deterministic Python unit tests from the repository root:
+
+```bash
+python -m unittest discover -s pipeline/tests -p "test_*.py"
+```
+
+These tests use committed minimal fixtures and temporary files; they do not require OntoCast-generated outputs or the Java CBR stack.
+
 ## Current validation procedure
 
 1. Run fixed-mode extraction for a PDF:
@@ -21,7 +31,7 @@ The generated files in `pipeline/test_output/` are working artifacts, not a vers
    bash pipeline/run_extraction.sh your_paper.pdf
    ```
 
-2. Select the facts file from that run and pass it explicitly to the end-to-end script. The explicit value prevents a historical default from selecting a missing file:
+2. Select the facts file from that run and pass it explicitly to the end-to-end script. `test_e2e.sh` intentionally has no facts-file default; generated facts are integration artifacts, not versioned unit-test fixtures:
 
    ```bash
    FACTS_PATH=pipeline/test_output/facts_<run-id>.ttl \
@@ -31,13 +41,13 @@ The generated files in `pipeline/test_output/` are working artifacts, not a vers
 
    The script converts the facts with `pipeline/facts_to_csv.py`, verifies the 19-column semicolon-delimited header against the legacy CBR case base, derives a query that only uses compatible CBR vocabulary, runs `query-one`, and writes its CSV/log artifacts under `pipeline/test_output/`.
 
-3. Run the broader regression check once one or more fixed-mode facts files exist:
+3. Run the broader integration regression check once one or more fixed-mode facts files exist:
 
    ```bash
    PYTHON_BIN=python bash pipeline/tests/test_regression.sh
    ```
 
-   This test consumes every `pipeline/test_output/facts_*.ttl` file. Clear or archive older outputs before running it when you need a single-paper result.
+   This test consumes every artifact matching `FACTS_GLOB` (default: `pipeline/test_output/facts_*.ttl`). Clear or archive older outputs, or set `FACTS_GLOB` to a concrete `facts_*.ttl` path/glob, when you need a single-paper result.
 
 ## Latest local check
 
@@ -55,9 +65,11 @@ The extracted labels can be broader or different from the legacy CBR case-base v
 
 A successful retrieval therefore proves technical interoperability; it does not prove an exact semantic match between the extracted paper and the returned legacy cases.
 
-## Test-fixture caveat
+## Unit/integration boundary
 
-Some Python unit tests and the default `test_e2e.sh` path retain identifiers from an earlier, generated fixture (`facts_5cc89b5bfaf6.ttl`, and full-mode files with the same identifier). That fixture is not present in this checkout. Use the explicit `FACTS_PATH` command above for the end-to-end test. The fixture-dependent Python tests need either that historical output restored or their fixture constants updated before they can be used as a clean-checkout test suite.
+The shell scripts in `pipeline/tests/` are integration checks. They consume generated fixed-mode artifacts from `pipeline/test_output/` and must not default to historical run identifiers such as `facts_5cc89b5bfaf6.ttl`.
+
+Python unit tests do not depend on `pipeline/test_output/` generated artifacts. Converter/query/reranker unit coverage uses committed minimal fixtures under `pipeline/tests/fixtures/` or in-test temporary files.
 
 ## Historical result
 

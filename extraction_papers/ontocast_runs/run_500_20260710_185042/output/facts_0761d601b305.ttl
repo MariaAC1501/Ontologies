@@ -1,0 +1,684 @@
+@prefix None: <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD/seed#> .
+@prefix cco: <http://www.ontologyrepository.com/CommonCoreOntologies/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doc: <https://growgraph.dev/doc/0761d601b305/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix obo: <http://purl.obolibrary.org/obo/> .
+@prefix cd: <https://growgraph.dev/facts> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix schema: <https://schema.org/> .
+@prefix schema1: <http://schema.org/> .
+doc:1ddcbd334231 a prov:Entity , schema:text ;
+	prov:generatedAtTime "2026-07-13T19:22:29.301832Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+	schema:position 0 ;
+	schema:identifier "1ddcbd334231" .
+doc:Factsload1_1 a None:Data_variable .
+_:b6c35c7f1d212f6ea51ef11cbbb45923 rdf:reifies <<( doc:Factsload1_1 rdf:type None:Data_variable )>> ;
+	prov:wasDerivedFrom doc:1ddcbd334231 .
+doc:Factsmodel1_58 dcterms:creator doc:Factsauthor3_117 .
+_:a32ea68e76d86e0bb841c21b1c2b4422 rdf:reifies <<( doc:Factsmodel1_58 dcterms:creator doc:Factsauthor3_117 )>> ;
+	prov:wasDerivedFrom doc:1ddcbd334231 .
+doc:Factsmodel1_58 cco:is_about doc:Factsbearing1_14 .
+_:a6f96492c30e45ed98442270f92a966 rdf:reifies <<( doc:Factsmodel1_58 cco:is_about doc:Factsbearing1_14 )>> ;
+	prov:wasDerivedFrom doc:1ddcbd334231 .
+doc:Factsauthor3_117 a schema1:Person .
+_:fd8d79252ecdcb13627f000cc91f454b rdf:reifies <<( doc:Factsauthor3_117 rdf:type schema1:Person )>> ;
+	prov:wasDerivedFrom doc:1ddcbd334231 .
+doc:Factspubyear1_11 a None:Publication_year .
+_:bed78ac4904c264e650a138b839d68bc rdf:reifies <<( doc:Factspubyear1_11 rdf:type None:Publication_year )>> ;
+	prov:wasDerivedFrom doc:1ddcbd334231 .
+doc:Factsmodel1_58 cd:uses_single_sensor_data doc:Factsload1_1 .
+_:f8b2fc042e20e0073a8ae48a340edb66 rdf:reifies <<( doc:Factsmodel1_58 cd:uses_single_sensor_data doc:Factsload1_1 )>> ;
+	prov:wasDerivedFrom doc:1ddcbd334231 .
+doc:Factsmodel1_58 cd:uses_machine_learning_model doc:Factsrf1_7 .
+_:a645305c1abfbca22dedff324b579380 rdf:reifies <<( doc:Factsmodel1_58 cd:uses_machine_learning_model doc:Factsrf1_7 )>> ;
+	prov:wasDerivedFrom doc:1ddcbd334231 .
+doc:Factsauthor3_117 schema1:name "Jin Yin Cheah" .
+_:d80d63fbe14c49b221ecd6de0def699e rdf:reifies <<( doc:Factsauthor3_117 schema1:name "Jin Yin Cheah" )>> ;
+	prov:wasDerivedFrom doc:1ddcbd334231 .
+doc:Factsmodel1_58 cd:improves_accuracy_by doc:FactsaccGainRf .
+_:a0ea50742ffb93ee9145aad8673fdd24 rdf:reifies <<( doc:Factsmodel1_58 cd:improves_accuracy_by doc:FactsaccGainRf )>> ;
+	prov:wasDerivedFrom doc:1ddcbd334231 .
+doc:Factsorg3_16 schema1:address "86400 Parit Raja, Batu Pahat, Johor, Malaysia" .
+_:fbe37d6dd2fda96f2ea473d7c67fbd78 rdf:reifies <<( doc:Factsorg3_16 schema1:address "86400 Parit Raja, Batu Pahat, Johor, Malaysia" )>> ;
+	prov:wasDerivedFrom doc:1ddcbd334231 .
+doc:Factsauthor3_117 schema1:affiliation doc:Factsorg3_16 .
+_:b205f6372af289eba46083fa9ed5374f rdf:reifies <<( doc:Factsauthor3_117 schema1:affiliation doc:Factsorg3_16 )>> ;
+	prov:wasDerivedFrom doc:1ddcbd334231 .
+doc:Factsorg3_16 a schema1:Organization .
+_:d13827f72466b3cb9654467266d61dbc rdf:reifies <<( doc:Factsorg3_16 rdf:type schema1:Organization )>> ;
+	prov:wasDerivedFrom doc:1ddcbd334231 .
+doc:Factstitle1_171 cco:designates doc:Factsmodel1_58 .
+_:ee9d9b69ca97ef512fd96a653e709609 rdf:reifies <<( doc:Factstitle1_171 cco:designates doc:Factsmodel1_58 )>> ;
+	prov:wasDerivedFrom doc:1ddcbd334231 .
+doc:Factsrf1_7 a cco:Algorithm .
+_:d79fd1bb86158ec5b02e68dba21c7630 rdf:reifies <<( doc:Factsrf1_7 rdf:type cco:Algorithm )>> ;
+	prov:wasDerivedFrom doc:1ddcbd334231 .
+doc:Factsload1_1 a doc:Factsload1_1 .
+_:dbc0e731a72c3175e68933244e20efe rdf:reifies <<( doc:Factsload1_1 rdf:type doc:Factsload1_1 )>> ;
+	prov:wasDerivedFrom doc:1ddcbd334231 .
+doc:Factsload1_1 None:has_text_value "vibration signal" .
+_:f1a96f975e2dbf34833c12a16bcb34d0 rdf:reifies <<( doc:Factsload1_1 None:has_text_value "vibration signal" )>> ;
+	prov:wasDerivedFrom doc:1ddcbd334231 .
+doc:Factsorg3_16 schema1:address "168, Jifeng E. Road, Wufeng District, Taichung 413310, Taiwan" .
+_:bff3ce74fbed8abbf1754df1ba4194a2 rdf:reifies <<( doc:Factsorg3_16 schema1:address "168, Jifeng E. Road, Wufeng District, Taichung 413310, Taiwan" )>> ;
+	prov:wasDerivedFrom doc:1ddcbd334231 .
+doc:Factsload1_1 None:has_text_value "outer-ring fault" .
+_:b68ce0b29ef846e7e0d4b87b88667e34 rdf:reifies <<( doc:Factsload1_1 None:has_text_value "outer-ring fault" )>> ;
+	prov:wasDerivedFrom doc:1ddcbd334231 .
+doc:Factsfusion1_3 cco:is_about doc:Factsspectrogram1 .
+_:a5f4d6f377404c35516fc3b29e4cf2f1 rdf:reifies <<( doc:Factsfusion1_3 cco:is_about doc:Factsspectrogram1 )>> ;
+	prov:wasDerivedFrom doc:1ddcbd334231 .
+doc:FactsaccGainRf a None:Performance_value .
+_:c3952085bd358705e52d5967755b44c6 rdf:reifies <<( doc:FactsaccGainRf rdf:type None:Performance_value )>> ;
+	prov:wasDerivedFrom doc:1ddcbd334231 .
+doc:Factsload1_1 None:has_text_value "acoustic signal" .
+_:c7145f814766250b49715baffe9b833c rdf:reifies <<( doc:Factsload1_1 None:has_text_value "acoustic signal" )>> ;
+	prov:wasDerivedFrom doc:1ddcbd334231 .
+doc:Factsload1_1 None:has_text_value "single-sensor data" .
+_:cf8c8c3aa7ebe264a112da2ec469b986 rdf:reifies <<( doc:Factsload1_1 None:has_text_value "single-sensor data" )>> ;
+	prov:wasDerivedFrom doc:1ddcbd334231 .
+doc:Factsorg3_16 schema1:name "Chaoyang University of Technology" .
+_:fada2654af875cb17ac4f474869ea034 rdf:reifies <<( doc:Factsorg3_16 schema1:name "Chaoyang University of Technology" )>> ;
+	prov:wasDerivedFrom doc:1ddcbd334231 .
+doc:Factsmodel1_58 cd:has_fault_type doc:Factsload1_1 .
+_:c10e196f22014635706ee4ed825bbd19 rdf:reifies <<( doc:Factsmodel1_58 cd:has_fault_type doc:Factsload1_1 )>> ;
+	prov:wasDerivedFrom doc:1ddcbd334231 .
+doc:Factstitle1_171 a None:Article_title .
+_:a363c65c43c97d9d714755effa514887 rdf:reifies <<( doc:Factstitle1_171 rdf:type None:Article_title )>> ;
+	prov:wasDerivedFrom doc:1ddcbd334231 .
+doc:Factsspectrogram1 a cco:Algorithm .
+_:acbfb447bc75cee80c8e8cb3b141778b rdf:reifies <<( doc:Factsspectrogram1 rdf:type cco:Algorithm )>> ;
+	prov:wasDerivedFrom doc:1ddcbd334231 .
+doc:Factsspectrogram1 rdfs:label "spectrogram" .
+_:d5deb2178ca5a5f0eb02a96569246396 rdf:reifies <<( doc:Factsspectrogram1 rdfs:label "spectrogram" )>> ;
+	prov:wasDerivedFrom doc:1ddcbd334231 .
+doc:Factspubyear1_11 None:has_interger_value 2025 .
+_:a65a99d49c7f42931f781263d2df5fb0 rdf:reifies <<( doc:Factspubyear1_11 None:has_interger_value 2025 )>> ;
+	prov:wasDerivedFrom doc:1ddcbd334231 .
+doc:Factsload1_1 None:has_text_value "inner-ring fault" .
+_:ea971cd4b8f247dd932d092f92a1a53e rdf:reifies <<( doc:Factsload1_1 None:has_text_value "inner-ring fault" )>> ;
+	prov:wasDerivedFrom doc:1ddcbd334231 .
+doc:Factsmodel1_58 a None:Predictive_Maintenance_Article .
+_:a41131923c91766b2f2f7bed05abb102 rdf:reifies <<( doc:Factsmodel1_58 rdf:type None:Predictive_Maintenance_Article )>> ;
+	prov:wasDerivedFrom doc:1ddcbd334231 .
+doc:Factsbearing1_14 a None:Maintainable_item .
+_:c2dbad849dee1020fe0c53942f76f6b7 rdf:reifies <<( doc:Factsbearing1_14 rdf:type None:Maintainable_item )>> ;
+	prov:wasDerivedFrom doc:1ddcbd334231 .
+doc:Factsorg3_16 schema1:name "Taylor's University" .
+_:b0c8572a7698e872e708f208366edfdd rdf:reifies <<( doc:Factsorg3_16 schema1:name "Taylor's University" )>> ;
+	prov:wasDerivedFrom doc:1ddcbd334231 .
+doc:Factsrf1_7 rdfs:label "support vector machine" .
+_:a6a7470de8b261e113bd0204e2259c4a rdf:reifies <<( doc:Factsrf1_7 rdfs:label "support vector machine" )>> ;
+	prov:wasDerivedFrom doc:1ddcbd334231 .
+doc:Factsmodel1_58 schema1:datePublished "2025-08-04"^^<http://www.w3.org/2001/XMLSchema#date> .
+_:fff34c141568c7a1bf1db8fc60f5f09d rdf:reifies <<( doc:Factsmodel1_58 schema1:datePublished "2025-08-04"^^<http://www.w3.org/2001/XMLSchema#date> )>> ;
+	prov:wasDerivedFrom doc:1ddcbd334231 .
+doc:Factsmodel1_58 None:has_publication_year doc:Factspubyear1_11 .
+_:f4161a7cbfa4c48016ba2ba7131fffa rdf:reifies <<( doc:Factsmodel1_58 None:has_publication_year doc:Factspubyear1_11 )>> ;
+	prov:wasDerivedFrom doc:1ddcbd334231 .
+doc:Factsload1_1 None:has_text_value "ball fault" .
+_:c394b095bc551126325a79a7fbfedb69 rdf:reifies <<( doc:Factsload1_1 None:has_text_value "ball fault" )>> ;
+	prov:wasDerivedFrom doc:1ddcbd334231 .
+doc:Factsstft1_1 rdfs:label "Short-Time Fourier Transform" .
+_:f2eacd8498620800d984ac2b955ce2a5 rdf:reifies <<( doc:Factsstft1_1 rdfs:label "Short-Time Fourier Transform" )>> ;
+	prov:wasDerivedFrom doc:1ddcbd334231 .
+doc:Factsfusion1_3 cco:is_about doc:Factsstft1_1 .
+_:a2a7abcdc087b02f35dacec82d839818 rdf:reifies <<( doc:Factsfusion1_3 cco:is_about doc:Factsstft1_1 )>> ;
+	prov:wasDerivedFrom doc:1ddcbd334231 .
+doc:Factstitle1_171 a cco:DesignativeName .
+_:a1cce5d36a5255e7dce8f004d5916508 rdf:reifies <<( doc:Factstitle1_171 rdf:type cco:DesignativeName )>> ;
+	prov:wasDerivedFrom doc:1ddcbd334231 .
+doc:Factsload1_1 None:has_interger_value 450 .
+_:bacbb716e50bc2eb1c19f3149a6b5911 rdf:reifies <<( doc:Factsload1_1 None:has_interger_value 450 )>> ;
+	prov:wasDerivedFrom doc:1ddcbd334231 .
+doc:Factsauthor3_117 schema1:name "Chee Kiong Sia" .
+_:a5d400b79a4d835a5db7c4ed53bdd0e5 rdf:reifies <<( doc:Factsauthor3_117 schema1:name "Chee Kiong Sia" )>> ;
+	prov:wasDerivedFrom doc:1ddcbd334231 .
+doc:Factsauthor3_117 schema1:name "Kuo-Chih Tung" .
+_:d313fe21973c47635f67c07345216830 rdf:reifies <<( doc:Factsauthor3_117 schema1:name "Kuo-Chih Tung" )>> ;
+	prov:wasDerivedFrom doc:1ddcbd334231 .
+doc:FactsaccGainRf None:has_text_value "3.33%" .
+_:de9c16f567cfc2628350acd1030cdfba rdf:reifies <<( doc:FactsaccGainRf None:has_text_value "3.33%" )>> ;
+	prov:wasDerivedFrom doc:1ddcbd334231 .
+doc:Factsmodel1_58 cd:uses_data_variable doc:Factsload1_1 .
+_:bd7a77285d3ed7c11a02bb9e9be1a892 rdf:reifies <<( doc:Factsmodel1_58 cd:uses_data_variable doc:Factsload1_1 )>> ;
+	prov:wasDerivedFrom doc:1ddcbd334231 .
+doc:Factsload1_1 None:has_text_value "multi-sensor approach" .
+_:b9bcad797460d81e003e58c07db31e48 rdf:reifies <<( doc:Factsload1_1 None:has_text_value "multi-sensor approach" )>> ;
+	prov:wasDerivedFrom doc:1ddcbd334231 .
+doc:Factsmodel1_58 cd:has_sample_count doc:Factsload1_1 .
+_:b9e3be6654553170ef1e1e4199bcd427 rdf:reifies <<( doc:Factsmodel1_58 cd:has_sample_count doc:Factsload1_1 )>> ;
+	prov:wasDerivedFrom doc:1ddcbd334231 .
+doc:FactsaccGainRf None:has_text_value "5.68%" .
+_:bf61669bac257385479c02b095cf3cc9 rdf:reifies <<( doc:FactsaccGainRf None:has_text_value "5.68%" )>> ;
+	prov:wasDerivedFrom doc:1ddcbd334231 .
+doc:Factsrf1_7 rdfs:label "random forest" .
+_:d6a7db3f1823f4630b28ce7b633a83b2 rdf:reifies <<( doc:Factsrf1_7 rdfs:label "random forest" )>> ;
+	prov:wasDerivedFrom doc:1ddcbd334231 .
+doc:Factsstft1_1 a cco:Algorithm .
+_:f38f08b482c409f4cbef139ee9165807 rdf:reifies <<( doc:Factsstft1_1 rdf:type cco:Algorithm )>> ;
+	prov:wasDerivedFrom doc:1ddcbd334231 .
+doc:Factsauthor3_117 schema1:name "Pauline Ong" .
+_:c5ca89b3e92b6d2f5cc77a71b188963a rdf:reifies <<( doc:Factsauthor3_117 schema1:name "Pauline Ong" )>> ;
+	prov:wasDerivedFrom doc:1ddcbd334231 .
+doc:Factsauthor3_117 schema1:email "ongp@uthm.edu.my" .
+_:ce60b3249fb67dd936b0a1c31715a6c1 rdf:reifies <<( doc:Factsauthor3_117 schema1:email "ongp@uthm.edu.my" )>> ;
+	prov:wasDerivedFrom doc:1ddcbd334231 .
+doc:Factsfusion1_3 a cco:Algorithm .
+_:c57dca7d90b50e8f934309353f791d21 rdf:reifies <<( doc:Factsfusion1_3 rdf:type cco:Algorithm )>> ;
+	prov:wasDerivedFrom doc:1ddcbd334231 .
+doc:Factsbearing1_14 rdfs:label "bearing" .
+_:c46fccab45e4afc3d51ca4d8f394044f rdf:reifies <<( doc:Factsbearing1_14 rdfs:label "bearing" )>> ;
+	prov:wasDerivedFrom doc:1ddcbd334231 .
+doc:Factsload1_1 None:has_text_value "cage fault" .
+_:fcf62e231a98268f724fd0be9bf1ee79 rdf:reifies <<( doc:Factsload1_1 None:has_text_value "cage fault" )>> ;
+	prov:wasDerivedFrom doc:1ddcbd334231 .
+doc:Factsmodel1_58 cd:uses_multi_sensor_data doc:Factsload1_1 .
+_:f63a3f783aac80ed891525f86953770c rdf:reifies <<( doc:Factsmodel1_58 cd:uses_multi_sensor_data doc:Factsload1_1 )>> ;
+	prov:wasDerivedFrom doc:1ddcbd334231 .
+doc:FactsaccGainRf None:has_text_value "10.11%" .
+_:e5922f6eac1e6f7d58c6ff538750ee52 rdf:reifies <<( doc:FactsaccGainRf None:has_text_value "10.11%" )>> ;
+	prov:wasDerivedFrom doc:1ddcbd334231 .
+doc:Factsauthor3_117 schema1:name "Kee Huong Lai" .
+_:ddc80caccea7a12a4377227bfcf32af2 rdf:reifies <<( doc:Factsauthor3_117 schema1:name "Kee Huong Lai" )>> ;
+	prov:wasDerivedFrom doc:1ddcbd334231 .
+doc:Factsorg3_16 schema1:address "No. 1, Jalan Taylor's, 47500 Subang Jaya, Selangor Darul Ehsan, Malaysia" .
+_:a33530a12bd5303f90f5fde967a00f90 rdf:reifies <<( doc:Factsorg3_16 schema1:address "No. 1, Jalan Taylor's, 47500 Subang Jaya, Selangor Darul Ehsan, Malaysia" )>> ;
+	prov:wasDerivedFrom doc:1ddcbd334231 .
+doc:Factsfusion1_3 rdfs:label "feature-level fusion" .
+_:eec3f8d4ecceba64cba9f5499f3d5a34 rdf:reifies <<( doc:Factsfusion1_3 rdfs:label "feature-level fusion" )>> ;
+	prov:wasDerivedFrom doc:1ddcbd334231 .
+doc:Factsorg3_16 schema1:name "Universiti Tun Hussein Onn Malaysia (UTHM)" .
+_:d3070263e101b277ea85e13033677cd9 rdf:reifies <<( doc:Factsorg3_16 schema1:name "Universiti Tun Hussein Onn Malaysia (UTHM)" )>> ;
+	prov:wasDerivedFrom doc:1ddcbd334231 .
+doc:Factsmodel1_58 None:has_title doc:Factstitle1_171 .
+_:f0557fc1b7d8324987f527fc6f7d080a rdf:reifies <<( doc:Factsmodel1_58 None:has_title doc:Factstitle1_171 )>> ;
+	prov:wasDerivedFrom doc:1ddcbd334231 .
+doc:Factsfact2_38 a None:Fault_detection .
+_:e071deb5e322ce236f8f54a301578bf9 rdf:reifies <<( doc:Factsfact2_38 rdf:type None:Fault_detection )>> ;
+	prov:wasDerivedFrom doc:1ddcbd334231 .
+doc:Factsfact2_38 cco:is_about doc:Factsbearing1_14 .
+_:d67965534329f48d2eb1d2312f8759b4 rdf:reifies <<( doc:Factsfact2_38 cco:is_about doc:Factsbearing1_14 )>> ;
+	prov:wasDerivedFrom doc:1ddcbd334231 .
+doc:Factsrf1_7 rdfs:label "convolutional neural network" .
+_:b92388999087daf1126ff8c5a27ca012 rdf:reifies <<( doc:Factsrf1_7 rdfs:label "convolutional neural network" )>> ;
+	prov:wasDerivedFrom doc:1ddcbd334231 .
+doc:Factstitle1_171 None:has_text_value "Intelligent fault diagnosis of bearings using multi-sensor spectrogram fusion and machine learning models" .
+_:f6d18fe2d0470266554cb1beb7b8fd96 rdf:reifies <<( doc:Factstitle1_171 None:has_text_value "Intelligent fault diagnosis of bearings using multi-sensor spectrogram fusion and machine learning models" )>> ;
+	prov:wasDerivedFrom doc:1ddcbd334231 .
+doc:Factsload1_1 None:has_text_value "healthy" .
+_:f62aee57d703d15cddbaaaa703f3ef77 rdf:reifies <<( doc:Factsload1_1 None:has_text_value "healthy" )>> ;
+	prov:wasDerivedFrom doc:1ddcbd334231 .
+doc:Factsmodel1_58 a None:Predictive_maintenance_model .
+_:c7fdf22b955a42cec3eb90dd2ae27b03 rdf:reifies <<( doc:Factsmodel1_58 rdf:type None:Predictive_maintenance_model )>> ;
+	prov:wasDerivedFrom doc:1ddcbd334231 .
+doc:6023850f55f5 a prov:Entity , schema:text ;
+	prov:generatedAtTime "2026-07-13T19:22:29.306832Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+	schema:position 1 ;
+	schema:identifier "6023850f55f5" .
+doc:Factsfact15_23 rdfs:label "remaining useful life estimation"@en .
+_:c929e27fff15219a4550b5f337a7de7 rdf:reifies <<( doc:Factsfact15_23 rdfs:label "remaining useful life estimation"@en )>> ;
+	prov:wasDerivedFrom doc:6023850f55f5 .
+doc:Factsfact26_26 a None:Data_variable .
+_:f95e4a626225e70b777e8ab89ada9b14 rdf:reifies <<( doc:Factsfact26_26 rdf:type None:Data_variable )>> ;
+	prov:wasDerivedFrom doc:6023850f55f5 .
+doc:Factsmodel1_58 rdfs:label "VGG16"@en .
+_:c74bde6512aeaea16e40f39680f13af7 rdf:reifies <<( doc:Factsmodel1_58 rdfs:label "VGG16"@en )>> ;
+	prov:wasDerivedFrom doc:6023850f55f5 .
+doc:Factsfact4_63 a None:Association_discovery .
+_:d4efe0bce5a7195a3949a2bde6511a42 rdf:reifies <<( doc:Factsfact4_63 rdf:type None:Association_discovery )>> ;
+	prov:wasDerivedFrom doc:6023850f55f5 .
+doc:Factsmodel1_58 rdfs:label "CNN"@en .
+_:ddd8a684b1ade0a8756a6edd1ac975ec rdf:reifies <<( doc:Factsmodel1_58 rdfs:label "CNN"@en )>> ;
+	prov:wasDerivedFrom doc:6023850f55f5 .
+doc:Factsload1_1 rdfs:label "raw data"@en .
+_:fe32f84241bc1f239268370b1cf4dc40 rdf:reifies <<( doc:Factsload1_1 rdfs:label "raw data"@en )>> ;
+	prov:wasDerivedFrom doc:6023850f55f5 .
+doc:Factsmodel1_58 rdfs:label "normalization"@en .
+_:d8efe7bbcb312a31fda9a82d5ca89147 rdf:reifies <<( doc:Factsmodel1_58 rdfs:label "normalization"@en )>> ;
+	prov:wasDerivedFrom doc:6023850f55f5 .
+doc:Factsfact4_63 a None:Classification .
+_:d8ad1c048b01b29ada1da915955e39d7 rdf:reifies <<( doc:Factsfact4_63 rdf:type None:Classification )>> ;
+	prov:wasDerivedFrom doc:6023850f55f5 .
+doc:Factsmodel1_58 a None:Predictive_maintenance_module_function .
+_:e9a5a2096015d2911af3a069c4f74718 rdf:reifies <<( doc:Factsmodel1_58 rdf:type None:Predictive_maintenance_module_function )>> ;
+	prov:wasDerivedFrom doc:6023850f55f5 .
+doc:Factsfact2_38 rdfs:label "fault detection"@en .
+_:f0aa4cb141ac122b9be091e749a4af49 rdf:reifies <<( doc:Factsfact2_38 rdfs:label "fault detection"@en )>> ;
+	prov:wasDerivedFrom doc:6023850f55f5 .
+doc:Factsfact44_5 rdfs:label "gray texture images"@en .
+_:b6d28d85099d88a78d00ac003d820a0a rdf:reifies <<( doc:Factsfact44_5 rdfs:label "gray texture images"@en )>> ;
+	prov:wasDerivedFrom doc:6023850f55f5 .
+doc:Factsfact43_3 rdfs:label "Fourier transform-encoded representations"@en .
+_:d999ddd88c5ac42a7ef8d03475f26f3 rdf:reifies <<( doc:Factsfact43_3 rdfs:label "Fourier transform-encoded representations"@en )>> ;
+	prov:wasDerivedFrom doc:6023850f55f5 .
+doc:Factsevaluation1 a None:Performance_value .
+_:fbbd5e510ac8384262ce6f74c7656f28 rdf:reifies <<( doc:Factsevaluation1 rdf:type None:Performance_value )>> ;
+	prov:wasDerivedFrom doc:6023850f55f5 .
+doc:Factsfact6_52 a None:Regression .
+_:a1aea55da5117cf25dcfb4cde7caf192 rdf:reifies <<( doc:Factsfact6_52 rdf:type None:Regression )>> ;
+	prov:wasDerivedFrom doc:6023850f55f5 .
+doc:Factsfact42_8 rdfs:label "vibration data"@en .
+_:a764aae920072738b7fe6e9e7681b474 rdf:reifies <<( doc:Factsfact42_8 rdfs:label "vibration data"@en )>> ;
+	prov:wasDerivedFrom doc:6023850f55f5 .
+doc:Factsfact39_11 a None:Design_detail .
+_:af0ac2efb5dee027088920b8f20f9cbc rdf:reifies <<( doc:Factsfact39_11 rdf:type None:Design_detail )>> ;
+	prov:wasDerivedFrom doc:6023850f55f5 .
+doc:Factsfusion1_3 rdfs:label "multi-fusion convolution layer"@en .
+_:d8fbdeebcccbeedb381b60056f5a087a rdf:reifies <<( doc:Factsfusion1_3 rdfs:label "multi-fusion convolution layer"@en )>> ;
+	prov:wasDerivedFrom doc:6023850f55f5 .
+doc:Factsfact21_26 rdfs:label "Random Forest"@en .
+_:f244a2869b4d10d5ad8fc2df4ae3c8d0 rdf:reifies <<( doc:Factsfact21_26 rdfs:label "Random Forest"@en )>> ;
+	prov:wasDerivedFrom doc:6023850f55f5 .
+doc:Factsfact9_32 a None:Deviation_detection .
+_:ffc670f1369067095d105268d8fbd004 rdf:reifies <<( doc:Factsfact9_32 rdf:type None:Deviation_detection )>> ;
+	prov:wasDerivedFrom doc:6023850f55f5 .
+doc:Factsevaluation1 rdfs:label "100%"@en .
+_:fd9d7d2ccf968ce1134ba0e36d4fb2b7 rdf:reifies <<( doc:Factsevaluation1 rdfs:label "100%"@en )>> ;
+	prov:wasDerivedFrom doc:6023850f55f5 .
+doc:Factsfact4_63 a None:Clustering .
+_:a3c1a99749af5982a71781c7f8385d88 rdf:reifies <<( doc:Factsfact4_63 rdf:type None:Clustering )>> ;
+	prov:wasDerivedFrom doc:6023850f55f5 .
+doc:Factsfact34_15 a None:Predictive_maintenance_system_module .
+_:b32e2f2d50b5433fad3dc5fcd4bfff32 rdf:reifies <<( doc:Factsfact34_15 rdf:type None:Predictive_maintenance_system_module )>> ;
+	prov:wasDerivedFrom doc:6023850f55f5 .
+doc:Factsfact20_24 a None:Predictive_maintenance_model .
+_:b2a45ee11f1d7883e54b86b740c22e27 rdf:reifies <<( doc:Factsfact20_24 rdf:type None:Predictive_maintenance_model )>> ;
+	prov:wasDerivedFrom doc:6023850f55f5 .
+doc:Factsfact39_11 rdfs:label "bidirectional feature interaction modules"@en .
+_:b10a1587ce9e50d50434bfee1e931031 rdf:reifies <<( doc:Factsfact39_11 rdfs:label "bidirectional feature interaction modules"@en )>> ;
+	prov:wasDerivedFrom doc:6023850f55f5 .
+doc:Factsfact2_38 a None:Fault_identification .
+_:d4d5fcdac42990377a94b3230ab8fa3c rdf:reifies <<( doc:Factsfact2_38 rdf:type None:Fault_identification )>> ;
+	prov:wasDerivedFrom doc:6023850f55f5 .
+doc:Factsfact26_26 rdfs:label "time-domain features"@en .
+_:a09067dc75f1db0ee18a4671c9c9b4c1 rdf:reifies <<( doc:Factsfact26_26 rdfs:label "time-domain features"@en )>> ;
+	prov:wasDerivedFrom doc:6023850f55f5 .
+doc:Factsload1_1 rdfs:label "modified scalograms"@en .
+_:be7e510de8d230962b1cfdd6172373ea rdf:reifies <<( doc:Factsload1_1 rdfs:label "modified scalograms"@en )>> ;
+	prov:wasDerivedFrom doc:6023850f55f5 .
+_:c7fdf22b955a42cec3eb90dd2ae27b03 prov:wasDerivedFrom doc:6023850f55f5 .
+doc:Factsfact38_12 rdfs:label "attention mechanism"@en .
+_:ca4708d341ca7c13d129ece94fbed1d4 rdf:reifies <<( doc:Factsfact38_12 rdfs:label "attention mechanism"@en )>> ;
+	prov:wasDerivedFrom doc:6023850f55f5 .
+_:b6c35c7f1d212f6ea51ef11cbbb45923 prov:wasDerivedFrom doc:6023850f55f5 .
+doc:Factsfusion1_3 a None:Design_detail .
+_:b4efe53e603262fe9c752e862ffdf306 rdf:reifies <<( doc:Factsfusion1_3 rdf:type None:Design_detail )>> ;
+	prov:wasDerivedFrom doc:6023850f55f5 .
+doc:Factsmodel1_58 rdfs:label "preprocessing"@en .
+_:c951da01f09784dd6a8d36bbde6ba8b0 rdf:reifies <<( doc:Factsmodel1_58 rdfs:label "preprocessing"@en )>> ;
+	prov:wasDerivedFrom doc:6023850f55f5 .
+doc:Factsfact14_22 a None:Future_state_forecast .
+_:c7c3d73107c6170d00c72d10fd98457c rdf:reifies <<( doc:Factsfact14_22 rdf:type None:Future_state_forecast )>> ;
+	prov:wasDerivedFrom doc:6023850f55f5 .
+_:e071deb5e322ce236f8f54a301578bf9 prov:wasDerivedFrom doc:6023850f55f5 .
+doc:Factsfact20_24 rdfs:label "K-Nearest Neighbor"@en .
+_:bf62e7e0bf1bdaaebb3f2312a5e2dd78 rdf:reifies <<( doc:Factsfact20_24 rdfs:label "K-Nearest Neighbor"@en )>> ;
+	prov:wasDerivedFrom doc:6023850f55f5 .
+doc:Factsfact34_15 rdfs:label "vibro-acoustic fusion"@en .
+_:e0708a94554740dd1e8dbeaa887b3c13 rdf:reifies <<( doc:Factsfact34_15 rdfs:label "vibro-acoustic fusion"@en )>> ;
+	prov:wasDerivedFrom doc:6023850f55f5 .
+doc:Factsfact43_3 a None:Data_variable .
+_:ba08b7097116613104467adadf481d7a rdf:reifies <<( doc:Factsfact43_3 rdf:type None:Data_variable )>> ;
+	prov:wasDerivedFrom doc:6023850f55f5 .
+doc:Factsfact42_8 rdfs:label "vibration-derived images"@en .
+_:ae2252cbb893fcf4ebc7d453d18487fc rdf:reifies <<( doc:Factsfact42_8 rdfs:label "vibration-derived images"@en )>> ;
+	prov:wasDerivedFrom doc:6023850f55f5 .
+doc:Factsfact8_41 a None:Sequential_pattern_discovery .
+_:a63abc8d62c98eb8163240f37d01edf rdf:reifies <<( doc:Factsfact8_41 rdf:type None:Sequential_pattern_discovery )>> ;
+	prov:wasDerivedFrom doc:6023850f55f5 .
+doc:Factsfact30_16 a None:Data_variable .
+_:af789fc394fcaf2806a3bb9b372910d2 rdf:reifies <<( doc:Factsfact30_16 rdf:type None:Data_variable )>> ;
+	prov:wasDerivedFrom doc:6023850f55f5 .
+doc:Factsevaluation1 a None:Performance_indicator .
+_:a06d5c8ab628b5e91c01fac453a395c1 rdf:reifies <<( doc:Factsevaluation1 rdf:type None:Performance_indicator )>> ;
+	prov:wasDerivedFrom doc:6023850f55f5 .
+doc:Factsfact2_38 rdfs:label "fault identification"@en .
+_:b70930b2970e6cf3ac7c70561bf8e0cf rdf:reifies <<( doc:Factsfact2_38 rdfs:label "fault identification"@en )>> ;
+	prov:wasDerivedFrom doc:6023850f55f5 .
+doc:Factsfact2_38 a None:Fault_feature_extraction .
+_:e4eec068e46d6ffdd0220026c0a172f7 rdf:reifies <<( doc:Factsfact2_38 rdf:type None:Fault_feature_extraction )>> ;
+	prov:wasDerivedFrom doc:6023850f55f5 .
+doc:Factsevaluation1 rdfs:label "accuracy"@en .
+_:e2550658991f286edf5ebe1f42bef7fc rdf:reifies <<( doc:Factsevaluation1 rdfs:label "accuracy"@en )>> ;
+	prov:wasDerivedFrom doc:6023850f55f5 .
+doc:Factsfact15_23 a None:Remaining_useful_life_estimation .
+_:a648fc516f5131fdae67747775073009 rdf:reifies <<( doc:Factsfact15_23 rdf:type None:Remaining_useful_life_estimation )>> ;
+	prov:wasDerivedFrom doc:6023850f55f5 .
+doc:Factsmodel1_58 rdfs:label "feature extraction"@en .
+_:d384394df72e3901c61a5b89dd61804c rdf:reifies <<( doc:Factsmodel1_58 rdfs:label "feature extraction"@en )>> ;
+	prov:wasDerivedFrom doc:6023850f55f5 .
+doc:Factsfact17_39 rdfs:label "health modelling"@en .
+_:e5fcb9b0ac33aa539736ca595460e833 rdf:reifies <<( doc:Factsfact17_39 rdfs:label "health modelling"@en )>> ;
+	prov:wasDerivedFrom doc:6023850f55f5 .
+doc:Factsfact26_26 rdfs:label "frequency-domain features"@en .
+_:a9764c8fd61464fb0431154598f875fb rdf:reifies <<( doc:Factsfact26_26 rdfs:label "frequency-domain features"@en )>> ;
+	prov:wasDerivedFrom doc:6023850f55f5 .
+doc:Factsmodel1_58 rdfs:label "Support Vector Machine"@en .
+_:ded6bf79a7c42d03fc7d53234ae9872d rdf:reifies <<( doc:Factsmodel1_58 rdfs:label "Support Vector Machine"@en )>> ;
+	prov:wasDerivedFrom doc:6023850f55f5 .
+doc:Factsfact33_12 rdfs:label "multi-sensor fusion"@en .
+_:f10c27d62916d60eef930e8a40227724 rdf:reifies <<( doc:Factsfact33_12 rdfs:label "multi-sensor fusion"@en )>> ;
+	prov:wasDerivedFrom doc:6023850f55f5 .
+doc:Factsmodel1_58 rdfs:label "denoising"@en .
+_:b4cf5935c4d9b26c0eaa04e408c38e9e rdf:reifies <<( doc:Factsmodel1_58 rdfs:label "denoising"@en )>> ;
+	prov:wasDerivedFrom doc:6023850f55f5 .
+doc:Factsfact44_5 a None:Data_variable .
+_:a8b07f538d5e8034b0e24782060c2ed0 rdf:reifies <<( doc:Factsfact44_5 rdf:type None:Data_variable )>> ;
+	prov:wasDerivedFrom doc:6023850f55f5 .
+doc:Factsfact3_29 a None:Data_mining_technique_function .
+_:d7506d745411ea84be4447b785e326cd rdf:reifies <<( doc:Factsfact3_29 rdf:type None:Data_mining_technique_function )>> ;
+	prov:wasDerivedFrom doc:6023850f55f5 .
+doc:Factsevaluation1 rdfs:label "99.92%"@en .
+_:a002e77e66418ef78f18b1539d92fb8f rdf:reifies <<( doc:Factsevaluation1 rdfs:label "99.92%"@en )>> ;
+	prov:wasDerivedFrom doc:6023850f55f5 .
+doc:Factsfact3_29 rdfs:label "data mining technique function"@en .
+_:c5d7d8a5aa3ad3e054fe3857bde3294a rdf:reifies <<( doc:Factsfact3_29 rdfs:label "data mining technique function"@en )>> ;
+	prov:wasDerivedFrom doc:6023850f55f5 .
+doc:Factsfact33_12 a None:Predictive_maintenance_system_module .
+_:a77a14eb62317d15bb11cddc4bfa9e7a rdf:reifies <<( doc:Factsfact33_12 rdf:type None:Predictive_maintenance_system_module )>> ;
+	prov:wasDerivedFrom doc:6023850f55f5 .
+doc:Factsfact38_12 a None:Design_detail .
+_:b38e506e53581bf5f64012246295b303 rdf:reifies <<( doc:Factsfact38_12 rdf:type None:Design_detail )>> ;
+	prov:wasDerivedFrom doc:6023850f55f5 .
+doc:Factsload1_1 rdfs:label "features extracted from input data"@en .
+_:d8ab476e70d578983b2237bcfdc03b27 rdf:reifies <<( doc:Factsload1_1 rdfs:label "features extracted from input data"@en )>> ;
+	prov:wasDerivedFrom doc:6023850f55f5 .
+doc:Factsfact16_23 rdfs:label "health assessment"@en .
+_:fb1ee62e9f16cf71947f0cc0008c84fb rdf:reifies <<( doc:Factsfact16_23 rdfs:label "health assessment"@en )>> ;
+	prov:wasDerivedFrom doc:6023850f55f5 .
+doc:Factsfact42_8 a None:Data_variable .
+_:d67ba4ff1d09dfd786a37cd5f50a19e8 rdf:reifies <<( doc:Factsfact42_8 rdf:type None:Data_variable )>> ;
+	prov:wasDerivedFrom doc:6023850f55f5 .
+doc:Factsfact30_16 rdfs:label "acoustic signals"@en .
+_:e64a47f2ea4b980d26c85d78ad38962 rdf:reifies <<( doc:Factsfact30_16 rdfs:label "acoustic signals"@en )>> ;
+	prov:wasDerivedFrom doc:6023850f55f5 .
+doc:Factsmodel1_58 rdfs:label "machine learning models"@en .
+_:d00f184ea7f1850d087172ee98cca2e rdf:reifies <<( doc:Factsmodel1_58 rdfs:label "machine learning models"@en )>> ;
+	prov:wasDerivedFrom doc:6023850f55f5 .
+doc:Factsload1_1 rdfs:label "sensor-acquired data"@en .
+_:d25b4ea25485ab78e01dbb6a7d7bae3f rdf:reifies <<( doc:Factsload1_1 rdfs:label "sensor-acquired data"@en )>> ;
+	prov:wasDerivedFrom doc:6023850f55f5 .
+doc:Factsfact17_39 a None:Health_modelling .
+_:ae9ba31e606a2a9004b7672596e9679b rdf:reifies <<( doc:Factsfact17_39 rdf:type None:Health_modelling )>> ;
+	prov:wasDerivedFrom doc:6023850f55f5 .
+doc:Factsfact16_23 a None:Health_assessment .
+_:b8d3877704d03a5411d0ec8c8b7433b rdf:reifies <<( doc:Factsfact16_23 rdf:type None:Health_assessment )>> ;
+	prov:wasDerivedFrom doc:6023850f55f5 .
+doc:Factsfact26_26 rdfs:label "time-frequency features"@en .
+_:d77a7d740aae14fba9bb816e986e2d2 rdf:reifies <<( doc:Factsfact26_26 rdfs:label "time-frequency features"@en )>> ;
+	prov:wasDerivedFrom doc:6023850f55f5 .
+doc:Factsfact14_22 rdfs:label "future state forecast"@en .
+_:e78b41eac915b3a4a85ad8017f0bcc85 rdf:reifies <<( doc:Factsfact14_22 rdfs:label "future state forecast"@en )>> ;
+	prov:wasDerivedFrom doc:6023850f55f5 .
+doc:Factsfact21_26 a None:Predictive_maintenance_model .
+_:d771247c2f319c11ce399794334d7273 rdf:reifies <<( doc:Factsfact21_26 rdf:type None:Predictive_maintenance_model )>> ;
+	prov:wasDerivedFrom doc:6023850f55f5 .
+doc:52b03830c6e3 a prov:Entity , schema:text ;
+	prov:generatedAtTime "2026-07-13T19:22:29.311832Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+	schema:position 2 ;
+	schema:identifier "52b03830c6e3" .
+doc:Factsgear_set1 a cco:Artifact .
+_:fbb86196ae5d0e1572c26249b5ebe0ab rdf:reifies <<( doc:Factsgear_set1 rdf:type cco:Artifact )>> ;
+	prov:wasDerivedFrom doc:52b03830c6e3 .
+doc:Factsload1_1 rdfs:label "raw signals"@en .
+_:c875ddaaa58641cb0b497d5f56a8e5a8 rdf:reifies <<( doc:Factsload1_1 rdfs:label "raw signals"@en )>> ;
+	prov:wasDerivedFrom doc:52b03830c6e3 .
+doc:Factsmodel1_58 obo:BFO_0000051 doc:Factsspectrogram1 .
+_:b5ea40155735da5b4e9d38438fe49444 rdf:reifies <<( doc:Factsmodel1_58 obo:BFO_0000051 doc:Factsspectrogram1 )>> ;
+	prov:wasDerivedFrom doc:52b03830c6e3 .
+doc:Factsmodel1_58 obo:BFO_0000051 doc:Factsrf1_7 .
+_:f3e96764915e17c9c63afb0e53acca1f rdf:reifies <<( doc:Factsmodel1_58 obo:BFO_0000051 doc:Factsrf1_7 )>> ;
+	prov:wasDerivedFrom doc:52b03830c6e3 .
+_:c2dbad849dee1020fe0c53942f76f6b7 prov:wasDerivedFrom doc:52b03830c6e3 .
+doc:Factsdata_acquisition1 rdfs:label "data acquisition"@en .
+_:b074d4a12adea040952639ee014ace88 rdf:reifies <<( doc:Factsdata_acquisition1 rdfs:label "data acquisition"@en )>> ;
+	prov:wasDerivedFrom doc:52b03830c6e3 .
+doc:Factstraining1_2 rdfs:label "model training"@en .
+_:a7fd04331ce215bc42e0bf38d5dafe9f rdf:reifies <<( doc:Factstraining1_2 rdfs:label "model training"@en )>> ;
+	prov:wasDerivedFrom doc:52b03830c6e3 .
+doc:Factsload1_1 a cco:DescriptiveInformationContentEntity .
+_:f13e3db6cafcac99471b4bd5215eb0e7 rdf:reifies <<( doc:Factsload1_1 rdf:type cco:DescriptiveInformationContentEntity )>> ;
+	prov:wasDerivedFrom doc:52b03830c6e3 .
+doc:Factstest_rig1 obo:BFO_0000051 doc:Factsbearing_housing1 .
+_:da0349616ff7a5fb2670234bfb0fb7b9 rdf:reifies <<( doc:Factstest_rig1 obo:BFO_0000051 doc:Factsbearing_housing1 )>> ;
+	prov:wasDerivedFrom doc:52b03830c6e3 .
+doc:Factsdataset1_47 a cco:Database .
+_:dcb2d1bef18ed5553fb453f372ceddbd rdf:reifies <<( doc:Factsdataset1_47 rdf:type cco:Database )>> ;
+	prov:wasDerivedFrom doc:52b03830c6e3 .
+doc:Factsfact2_38 rdfs:label "cage fault"@en .
+_:a16bad5776eba656815a3f70d4ef721f rdf:reifies <<( doc:Factsfact2_38 rdfs:label "cage fault"@en )>> ;
+	prov:wasDerivedFrom doc:52b03830c6e3 .
+doc:Factsload1_1 cd:has_text_value "200 rpm" .
+_:b250e1e105ed8739b86d509362988d5c rdf:reifies <<( doc:Factsload1_1 cd:has_text_value "200 rpm" )>> ;
+	prov:wasDerivedFrom doc:52b03830c6e3 .
+doc:Factsgear_set1 rdfs:label "gear reducer"@en .
+_:e1f2312f7ec35d290e8852a4820fbac2 rdf:reifies <<( doc:Factsgear_set1 rdfs:label "gear reducer"@en )>> ;
+	prov:wasDerivedFrom doc:52b03830c6e3 .
+doc:Factstest_rig1 rdfs:label "experimental test rig"@en .
+_:aa5a34dd9ae2cc72fab2472b3f31e9de rdf:reifies <<( doc:Factstest_rig1 rdfs:label "experimental test rig"@en )>> ;
+	prov:wasDerivedFrom doc:52b03830c6e3 .
+_:d79fd1bb86158ec5b02e68dba21c7630 prov:wasDerivedFrom doc:52b03830c6e3 .
+doc:Factsload1_1 rdfs:label "fixed load"@en .
+_:cbfd4456336428d792c1d15cb6b7aff0 rdf:reifies <<( doc:Factsload1_1 rdfs:label "fixed load"@en )>> ;
+	prov:wasDerivedFrom doc:52b03830c6e3 .
+doc:Factsfact2_38 rdfs:label "ball fault"@en .
+_:b930770e6bed1711c0e2b65ba87f000f rdf:reifies <<( doc:Factsfact2_38 rdfs:label "ball fault"@en )>> ;
+	prov:wasDerivedFrom doc:52b03830c6e3 .
+doc:Factsfact2_38 rdfs:label "inner-ring fault"@en .
+_:f3918ba8c3c9b121ffdd587df4cd8f50 rdf:reifies <<( doc:Factsfact2_38 rdfs:label "inner-ring fault"@en )>> ;
+	prov:wasDerivedFrom doc:52b03830c6e3 .
+doc:Factsdata_acquisition1 schema1:measurementTechnique doc:Factsload1_1 .
+_:ecb46301544623a97b9def8ff31a4093 rdf:reifies <<( doc:Factsdata_acquisition1 schema1:measurementTechnique doc:Factsload1_1 )>> ;
+	prov:wasDerivedFrom doc:52b03830c6e3 .
+doc:FactsanalogDevices_1 a schema1:Organization .
+_:d7b5cdd6ed83de00aac2bd6c9d11649b rdf:reifies <<( doc:FactsanalogDevices_1 rdf:type schema1:Organization )>> ;
+	prov:wasDerivedFrom doc:52b03830c6e3 .
+doc:Factstest_rig1 obo:BFO_0000051 doc:Factsfact2_38 .
+_:d4a4a4c71754f26f2a427cffdc561a9a rdf:reifies <<( doc:Factstest_rig1 obo:BFO_0000051 doc:Factsfact2_38 )>> ;
+	prov:wasDerivedFrom doc:52b03830c6e3 .
+doc:Factsvibro_acoustic_fusion1 a None:Design_detail .
+_:a5960fea4e603abcf9b89785f10c9aba rdf:reifies <<( doc:Factsvibro_acoustic_fusion1 rdf:type None:Design_detail )>> ;
+	prov:wasDerivedFrom doc:52b03830c6e3 .
+doc:Factsdata_acquisition1 obo:BFO_0000051 doc:Factsaccelerometer1 .
+_:b8b540c15eb7d9d2e16d61a2ea0feb41 rdf:reifies <<( doc:Factsdata_acquisition1 obo:BFO_0000051 doc:Factsaccelerometer1 )>> ;
+	prov:wasDerivedFrom doc:52b03830c6e3 .
+doc:Factsfact30_16 rdfs:label "vibration signals"@en .
+_:d4e484740875c5c1259f32608f825d85 rdf:reifies <<( doc:Factsfact30_16 rdfs:label "vibration signals"@en )>> ;
+	prov:wasDerivedFrom doc:52b03830c6e3 .
+doc:Factsmodel1_58 a None:Predictive_maintenance_system_module .
+_:ef6492198a732fb326624d13508ffedb rdf:reifies <<( doc:Factsmodel1_58 rdf:type None:Predictive_maintenance_system_module )>> ;
+	prov:wasDerivedFrom doc:52b03830c6e3 .
+doc:Factsvibro_acoustic_fusion1 rdfs:label "vibro-acoustic spectrogram fusion"@en .
+_:ef0e98730744ab287a842e71f37d18a6 rdf:reifies <<( doc:Factsvibro_acoustic_fusion1 rdfs:label "vibro-acoustic spectrogram fusion"@en )>> ;
+	prov:wasDerivedFrom doc:52b03830c6e3 .
+doc:Factstest_rig1 obo:BFO_0000051 doc:Factselectric_motor1_1 .
+_:af068fa4c4eae76a990f5d66efe0870a rdf:reifies <<( doc:Factstest_rig1 obo:BFO_0000051 doc:Factselectric_motor1_1 )>> ;
+	prov:wasDerivedFrom doc:52b03830c6e3 .
+doc:Factsmodel_calibration1 a None:Model_configuration .
+_:fba5bcea6c270bc9793a994f02540af8 rdf:reifies <<( doc:Factsmodel_calibration1 rdf:type None:Model_configuration )>> ;
+	prov:wasDerivedFrom doc:52b03830c6e3 .
+doc:Factsrf1_7 rdfs:label "CNN"@en .
+_:c87f090f7dd703dd5182c66b8ae6eb10 rdf:reifies <<( doc:Factsrf1_7 rdfs:label "CNN"@en )>> ;
+	prov:wasDerivedFrom doc:52b03830c6e3 .
+doc:Factsvibro_acoustic_fusion1 obo:BFO_0000051 doc:Factsfact2_38 .
+_:ef9536528abb7e36931d616bae79cd6 rdf:reifies <<( doc:Factsvibro_acoustic_fusion1 obo:BFO_0000051 doc:Factsfact2_38 )>> ;
+	prov:wasDerivedFrom doc:52b03830c6e3 .
+doc:Factssingular_spectrum_analysis1 rdfs:label "Singular Spectrum Analysis"@en .
+_:a2623cc3473477a7453b83739bc5e508 rdf:reifies <<( doc:Factssingular_spectrum_analysis1 rdfs:label "Singular Spectrum Analysis"@en )>> ;
+	prov:wasDerivedFrom doc:52b03830c6e3 .
+doc:Factsmodel1_58 obo:BFO_0000051 doc:Factsdataset1_47 .
+_:d17b4a2e59ff0c6d3dd9ebc03d09c46a rdf:reifies <<( doc:Factsmodel1_58 obo:BFO_0000051 doc:Factsdataset1_47 )>> ;
+	prov:wasDerivedFrom doc:52b03830c6e3 .
+doc:Factsevaluation1 a cco:Algorithm .
+_:ebca4bc6bb331f320ce8b5ba2ca7f6fb rdf:reifies <<( doc:Factsevaluation1 rdf:type cco:Algorithm )>> ;
+	prov:wasDerivedFrom doc:52b03830c6e3 .
+doc:FactsanalogDevices_1 rdfs:label "Analog Devices"@en .
+_:f8ad542e0dfa2877b872afe9dee2e496 rdf:reifies <<( doc:FactsanalogDevices_1 rdfs:label "Analog Devices"@en )>> ;
+	prov:wasDerivedFrom doc:52b03830c6e3 .
+doc:Factsspectrogram1 rdfs:label "spectrogram"@en .
+_:df8e2a22980180c57869a942099f34a8 rdf:reifies <<( doc:Factsspectrogram1 rdfs:label "spectrogram"@en )>> ;
+	prov:wasDerivedFrom doc:52b03830c6e3 .
+doc:FactsjoyIt a schema1:Organization .
+_:c67e873f7f1674e88ed8cb722529a2ad rdf:reifies <<( doc:FactsjoyIt rdf:type schema1:Organization )>> ;
+	prov:wasDerivedFrom doc:52b03830c6e3 .
+doc:Factsload1_1 cd:has_interger_value 10 .
+_:c2d0a81224702f4e96ff0fa7682613f3 rdf:reifies <<( doc:Factsload1_1 cd:has_interger_value 10 )>> ;
+	prov:wasDerivedFrom doc:52b03830c6e3 .
+doc:Factshealthy_state1 rdfs:label "healthy"@en .
+_:f2feb0846a59275c07337be486c92478 rdf:reifies <<( doc:Factshealthy_state1 rdfs:label "healthy"@en )>> ;
+	prov:wasDerivedFrom doc:52b03830c6e3 .
+doc:Factsevaluation1 rdfs:label "performance evaluation"@en .
+_:f2b4bcaae901ec41e521368c1cbc609c rdf:reifies <<( doc:Factsevaluation1 rdfs:label "performance evaluation"@en )>> ;
+	prov:wasDerivedFrom doc:52b03830c6e3 .
+_:e4eec068e46d6ffdd0220026c0a172f7 prov:wasDerivedFrom doc:52b03830c6e3 .
+doc:Factsmulti_sensor_fusion1 obo:RO_0000085 doc:Factsfact2_38 .
+_:e275f61b76f050fa64bbd71434c5ffa1 rdf:reifies <<( doc:Factsmulti_sensor_fusion1 obo:RO_0000085 doc:Factsfact2_38 )>> ;
+	prov:wasDerivedFrom doc:52b03830c6e3 .
+doc:Factsgear_set1 rdfs:label "gear set"@en .
+_:aa2e854c9f903945a5c500c7441373aa rdf:reifies <<( doc:Factsgear_set1 rdfs:label "gear set"@en )>> ;
+	prov:wasDerivedFrom doc:52b03830c6e3 .
+doc:Factsspectrogram1 a cco:DescriptiveInformationContentEntity .
+_:d7f5877407d9f92076c55d964a703ab8 rdf:reifies <<( doc:Factsspectrogram1 rdf:type cco:DescriptiveInformationContentEntity )>> ;
+	prov:wasDerivedFrom doc:52b03830c6e3 .
+doc:Factscomparison1_1 rdfs:label "model comparison"@en .
+_:d02ef121ef448901faa4b5d4004d54b8 rdf:reifies <<( doc:Factscomparison1_1 rdfs:label "model comparison"@en )>> ;
+	prov:wasDerivedFrom doc:52b03830c6e3 .
+doc:Factsdata_acquisition1 a cco:Algorithm .
+_:d081ab77d9a49e387d81558da0cacf8d rdf:reifies <<( doc:Factsdata_acquisition1 rdf:type cco:Algorithm )>> ;
+	prov:wasDerivedFrom doc:52b03830c6e3 .
+doc:Factsload1_1 rdfs:label "conventional single-sensor approaches"@en .
+_:b2d0e5ffe14d5d7a918e040c4bb13824 rdf:reifies <<( doc:Factsload1_1 rdfs:label "conventional single-sensor approaches"@en )>> ;
+	prov:wasDerivedFrom doc:52b03830c6e3 .
+doc:Factstest_rig1 obo:BFO_0000051 doc:Factsbearing1_14 .
+_:efdc1dcdca64a114581aeea92099651b rdf:reifies <<( doc:Factstest_rig1 obo:BFO_0000051 doc:Factsbearing1_14 )>> ;
+	prov:wasDerivedFrom doc:52b03830c6e3 .
+doc:Factsfact2_38 a cco:DescriptiveInformationContentEntity .
+_:d969bc9361b98a5e71d0943947fcd300 rdf:reifies <<( doc:Factsfact2_38 rdf:type cco:DescriptiveInformationContentEntity )>> ;
+	prov:wasDerivedFrom doc:52b03830c6e3 .
+doc:Factssignal_transformation1 a cco:Algorithm .
+_:dd0a0af4d56a352c88c2f604a16fef90 rdf:reifies <<( doc:Factssignal_transformation1 rdf:type cco:Algorithm )>> ;
+	prov:wasDerivedFrom doc:52b03830c6e3 .
+doc:Factstest_rig1 obo:BFO_0000051 doc:Factshealthy_state1 .
+_:ff9a347fb02bacbe25466946b0603e5f rdf:reifies <<( doc:Factstest_rig1 obo:BFO_0000051 doc:Factshealthy_state1 )>> ;
+	prov:wasDerivedFrom doc:52b03830c6e3 .
+doc:Factsmicrophone1 a cco:Artifact .
+_:ac2453c8684ec99148174f727a63652e rdf:reifies <<( doc:Factsmicrophone1 rdf:type cco:Artifact )>> ;
+	prov:wasDerivedFrom doc:52b03830c6e3 .
+doc:Factsmodel1_58 obo:BFO_0000051 doc:Factsfact30_16 .
+_:b7f21ae85a6926a4d50ebe96a34c4cc9 rdf:reifies <<( doc:Factsmodel1_58 obo:BFO_0000051 doc:Factsfact30_16 )>> ;
+	prov:wasDerivedFrom doc:52b03830c6e3 .
+doc:Factsload1_1 cd:has_text_value "2000 rpm" .
+_:ab9726e2e86cd60edf1abcda936c4a1f rdf:reifies <<( doc:Factsload1_1 cd:has_text_value "2000 rpm" )>> ;
+	prov:wasDerivedFrom doc:52b03830c6e3 .
+doc:Factsload1_1 rdfs:label "single-sensor approaches"@en .
+_:a892fc11d6ade50bfb74a12a50bd432b rdf:reifies <<( doc:Factsload1_1 rdfs:label "single-sensor approaches"@en )>> ;
+	prov:wasDerivedFrom doc:52b03830c6e3 .
+doc:Factsaccelerometer1 schema1:manufacturer doc:FactsanalogDevices_1 .
+_:e87149c17ffce2b495d3e4ef7e91e19e rdf:reifies <<( doc:Factsaccelerometer1 schema1:manufacturer doc:FactsanalogDevices_1 )>> ;
+	prov:wasDerivedFrom doc:52b03830c6e3 .
+doc:Factstraining1_2 a cco:Algorithm .
+_:c73d13474b9c6334283eb6d467d6a0e4 rdf:reifies <<( doc:Factstraining1_2 rdf:type cco:Algorithm )>> ;
+	prov:wasDerivedFrom doc:52b03830c6e3 .
+doc:Factsvibro_acoustic_fusion1 obo:BFO_0000051 doc:Factsdata_acquisition1 .
+_:eaa11d0dffc286b7098488c8ee04fe3e rdf:reifies <<( doc:Factsvibro_acoustic_fusion1 obo:BFO_0000051 doc:Factsdata_acquisition1 )>> ;
+	prov:wasDerivedFrom doc:52b03830c6e3 .
+doc:Factsfact30_16 a cco:DescriptiveInformationContentEntity .
+_:ef4c46642672ecb904ea8ab93177e48e rdf:reifies <<( doc:Factsfact30_16 rdf:type cco:DescriptiveInformationContentEntity )>> ;
+	prov:wasDerivedFrom doc:52b03830c6e3 .
+_:b4efe53e603262fe9c752e862ffdf306 prov:wasDerivedFrom doc:52b03830c6e3 .
+doc:Factsload1_1 cd:has_text_value "12 s" .
+_:c84d272872e03bb243125541d43f9cc2 rdf:reifies <<( doc:Factsload1_1 cd:has_text_value "12 s" )>> ;
+	prov:wasDerivedFrom doc:52b03830c6e3 .
+doc:Factscomparison1_1 a cco:Algorithm .
+_:b5d380afd48e8f1a238b6a529df02c48 rdf:reifies <<( doc:Factscomparison1_1 rdf:type cco:Algorithm )>> ;
+	prov:wasDerivedFrom doc:52b03830c6e3 .
+doc:Factsfact2_38 rdfs:label "outer-ring fault"@en .
+_:f37db6eccc01e407cdbf42cc54ca0f23 rdf:reifies <<( doc:Factsfact2_38 rdfs:label "outer-ring fault"@en )>> ;
+	prov:wasDerivedFrom doc:52b03830c6e3 .
+doc:Factsvibro_acoustic_fusion1 obo:BFO_0000051 doc:Factssignal_transformation1 .
+_:e5d7f4667cb26fe95ff2b917e25714e6 rdf:reifies <<( doc:Factsvibro_acoustic_fusion1 obo:BFO_0000051 doc:Factssignal_transformation1 )>> ;
+	prov:wasDerivedFrom doc:52b03830c6e3 .
+doc:Factsvibro_acoustic_fusion1 obo:BFO_0000051 doc:Factsmodel_calibration1 .
+_:abcbc0de723b585243f9a5ee162a5f8c rdf:reifies <<( doc:Factsvibro_acoustic_fusion1 obo:BFO_0000051 doc:Factsmodel_calibration1 )>> ;
+	prov:wasDerivedFrom doc:52b03830c6e3 .
+doc:Factsdata_acquisition1 obo:BFO_0000051 doc:Factsmicrophone1 .
+_:e193ed099be84b30fbc4ac3fc99756d0 rdf:reifies <<( doc:Factsdata_acquisition1 obo:BFO_0000051 doc:Factsmicrophone1 )>> ;
+	prov:wasDerivedFrom doc:52b03830c6e3 .
+doc:Factsload1_1 schema1:description "outperforms conventional single-sensor approaches"@en .
+_:a94925979b2d1db6f5bdfa22cdd7cdaf rdf:reifies <<( doc:Factsload1_1 schema1:description "outperforms conventional single-sensor approaches"@en )>> ;
+	prov:wasDerivedFrom doc:52b03830c6e3 .
+doc:Factsbearing_housing1 rdfs:label "bearing housing"@en .
+_:e4052bb6470305e979d1958d6cbe958c rdf:reifies <<( doc:Factsbearing_housing1 rdfs:label "bearing housing"@en )>> ;
+	prov:wasDerivedFrom doc:52b03830c6e3 .
+doc:FactsjoyIt rdfs:label "Joy-IT"@en .
+_:c859c1e33b7fbb57c94af4f4fee0e965 rdf:reifies <<( doc:FactsjoyIt rdfs:label "Joy-IT"@en )>> ;
+	prov:wasDerivedFrom doc:52b03830c6e3 .
+doc:Factsload1_1 cd:has_text_value "2.5 kHz" .
+_:a3725246357b55d3549d3de47c8b1cc4 rdf:reifies <<( doc:Factsload1_1 cd:has_text_value "2.5 kHz" )>> ;
+	prov:wasDerivedFrom doc:52b03830c6e3 .
+doc:Factsload1_1 cd:has_text_value "600 mm" .
+_:d5df85d0c72d821f4d4dcfa3b48dfd9c rdf:reifies <<( doc:Factsload1_1 cd:has_text_value "600 mm" )>> ;
+	prov:wasDerivedFrom doc:52b03830c6e3 .
+doc:Factsbearing1_14 rdfs:label "bearing set"@en .
+_:bcbeade25c22b28cf3944e9ac4dc10a9 rdf:reifies <<( doc:Factsbearing1_14 rdfs:label "bearing set"@en )>> ;
+	prov:wasDerivedFrom doc:52b03830c6e3 .
+_:e64a47f2ea4b980d26c85d78ad38962 prov:wasDerivedFrom doc:52b03830c6e3 .
+doc:Factsrf1_7 rdfs:label "SVM"@en .
+_:efcf1a78c7370a27dbb3365008e77ff1 rdf:reifies <<( doc:Factsrf1_7 rdfs:label "SVM"@en )>> ;
+	prov:wasDerivedFrom doc:52b03830c6e3 .
+doc:Factsmodel_calibration1 rdfs:label "model calibration"@en .
+_:f6c0293ea6b6672bc7a6cba096beab97 rdf:reifies <<( doc:Factsmodel_calibration1 rdfs:label "model calibration"@en )>> ;
+	prov:wasDerivedFrom doc:52b03830c6e3 .
+doc:Factsfusion1_3 rdfs:label "multi-sensor fusion framework"@en .
+_:c1b95b6374292bbd8f4c1400bd78daa9 rdf:reifies <<( doc:Factsfusion1_3 rdfs:label "multi-sensor fusion framework"@en )>> ;
+	prov:wasDerivedFrom doc:52b03830c6e3 .
+_:a41131923c91766b2f2f7bed05abb102 prov:wasDerivedFrom doc:52b03830c6e3 .
+doc:Factstest_rig1 a cco:Artifact .
+_:abe94251ed2f02ea1a035d3372c26df rdf:reifies <<( doc:Factstest_rig1 rdf:type cco:Artifact )>> ;
+	prov:wasDerivedFrom doc:52b03830c6e3 .
+doc:Factssignal_transformation1 rdfs:label "signal transformation"@en .
+_:c93cc328ea0f3bfe8ad48c4f12f84429 rdf:reifies <<( doc:Factssignal_transformation1 rdfs:label "signal transformation"@en )>> ;
+	prov:wasDerivedFrom doc:52b03830c6e3 .
+doc:Factstest_rig1 obo:BFO_0000051 doc:Factsgear_set1 .
+_:f06e118929b0791b7630aab3d5ed56f3 rdf:reifies <<( doc:Factstest_rig1 obo:BFO_0000051 doc:Factsgear_set1 )>> ;
+	prov:wasDerivedFrom doc:52b03830c6e3 .
+doc:Factselectric_motor1_1 a cco:Artifact .
+_:f7a60e076b53b8ca43a85bd47847a350 rdf:reifies <<( doc:Factselectric_motor1_1 rdf:type cco:Artifact )>> ;
+	prov:wasDerivedFrom doc:52b03830c6e3 .
+doc:Factsdataset1_47 rdfs:label "self-acquired dataset"@en .
+_:b5984e738cb614dad3d615d867803cc4 rdf:reifies <<( doc:Factsdataset1_47 rdfs:label "self-acquired dataset"@en )>> ;
+	prov:wasDerivedFrom doc:52b03830c6e3 .
+doc:Factsrf1_7 rdfs:label "RF"@en .
+_:e9310b2bb7875452c5fa40739d42cf58 rdf:reifies <<( doc:Factsrf1_7 rdfs:label "RF"@en )>> ;
+	prov:wasDerivedFrom doc:52b03830c6e3 .
+doc:Factselectric_motor1_1 rdfs:label "electric motor"@en .
+_:f82b707dba7daeed14af853838381914 rdf:reifies <<( doc:Factselectric_motor1_1 rdfs:label "electric motor"@en )>> ;
+	prov:wasDerivedFrom doc:52b03830c6e3 .
+doc:Factshealthy_state1 a None:Maintainable_item .
+_:c5f1248afca4ee47ae8ea1ee9dfccb2e rdf:reifies <<( doc:Factshealthy_state1 rdf:type None:Maintainable_item )>> ;
+	prov:wasDerivedFrom doc:52b03830c6e3 .
+doc:Factsmicrophone1 rdfs:label "KY-037 microphone"@en .
+_:eecf9620d494d5937def180091910748 rdf:reifies <<( doc:Factsmicrophone1 rdfs:label "KY-037 microphone"@en )>> ;
+	prov:wasDerivedFrom doc:52b03830c6e3 .
+doc:Factsload1_1 rdfs:label "multi-modal input"@en .
+_:d21b4b1ac535625aa44c32b8b240c0cc rdf:reifies <<( doc:Factsload1_1 rdfs:label "multi-modal input"@en )>> ;
+	prov:wasDerivedFrom doc:52b03830c6e3 .
+doc:Factsaccelerometer1 a cco:Artifact .
+_:e48a386f0a427b9b4cb86b0304d9b598 rdf:reifies <<( doc:Factsaccelerometer1 rdf:type cco:Artifact )>> ;
+	prov:wasDerivedFrom doc:52b03830c6e3 .
+doc:Factsbearing_housing1 a cco:Artifact .
+_:c593cc256b20d1e5d8ba4b77ed03fef7 rdf:reifies <<( doc:Factsbearing_housing1 rdf:type cco:Artifact )>> ;
+	prov:wasDerivedFrom doc:52b03830c6e3 .
+doc:Factssingular_spectrum_analysis1 a cco:Algorithm .
+_:d62e2c52ee4727c16eacde7b7188714d rdf:reifies <<( doc:Factssingular_spectrum_analysis1 rdf:type cco:Algorithm )>> ;
+	prov:wasDerivedFrom doc:52b03830c6e3 .
+doc:Factsaccelerometer1 rdfs:label "ADXL335 accelerometer"@en .
+_:bdaf14c7aea328936c947fcd4587acc2 rdf:reifies <<( doc:Factsaccelerometer1 rdfs:label "ADXL335 accelerometer"@en )>> ;
+	prov:wasDerivedFrom doc:52b03830c6e3 .
+_:e071deb5e322ce236f8f54a301578bf9 prov:wasDerivedFrom doc:52b03830c6e3 .
+doc:Factsmicrophone1 schema1:manufacturer doc:FactsjoyIt .
+_:bcc327f28adbf760145277c12037b342 rdf:reifies <<( doc:Factsmicrophone1 schema1:manufacturer doc:FactsjoyIt )>> ;
+	prov:wasDerivedFrom doc:52b03830c6e3 .

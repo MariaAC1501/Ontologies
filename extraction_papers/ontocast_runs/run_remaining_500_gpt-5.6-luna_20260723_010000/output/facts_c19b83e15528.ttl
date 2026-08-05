@@ -1,0 +1,443 @@
+@prefix None: <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD/seed#> .
+@prefix cco: <http://www.ontologyrepository.com/CommonCoreOntologies/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doc: <https://growgraph.dev/doc/c19b83e15528/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix obo: <http://purl.obolibrary.org/obo/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix schema: <https://schema.org/> .
+doc:633e49395e74 a prov:Entity , schema:text ;
+	prov:generatedAtTime "2026-07-24T05:13:03.467184Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+	schema:position 0 ;
+	schema:identifier "633e49395e74" .
+doc:FactsarticleIdentifier None:has_text_value "10.3390/lubricants13070306" .
+_:d490f56b59a5eb683ecc44c1efad6447 rdf:reifies <<( doc:FactsarticleIdentifier None:has_text_value "10.3390/lubricants13070306" )>> ;
+	prov:wasDerivedFrom doc:633e49395e74 .
+doc:FactsyingDu schema:email "shaotao@xaut.edu.cn" .
+_:c45325ecaa04d2e0e9533af8cf2f421 rdf:reifies <<( doc:FactsyingDu schema:email "shaotao@xaut.edu.cn" )>> ;
+	prov:wasDerivedFrom doc:633e49395e74 .
+doc:Factsarticle_3 schema:isPartOf doc:Factslubricants .
+_:f75ef5bd80ed95d9fea6f427cabe452 rdf:reifies <<( doc:Factsarticle_3 schema:isPartOf doc:Factslubricants )>> ;
+	prov:wasDerivedFrom doc:633e49395e74 .
+doc:Factsschool a schema:CollegeOrUniversity .
+_:a69a6016c36f83ef2c2b135a60402443 rdf:reifies <<( doc:Factsschool rdf:type schema:CollegeOrUniversity )>> ;
+	prov:wasDerivedFrom doc:633e49395e74 .
+doc:Predictive_maintenance_model a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Predictive_maintenance_model> .
+_:e347552bbafcbb3f84058dad54f4e3bd rdf:reifies <<( doc:Predictive_maintenance_model rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Predictive_maintenance_model> )>> ;
+	prov:wasDerivedFrom doc:633e49395e74 .
+doc:FactsthreeStagePipeline None:has_text_value "Three-stage computational pipeline integrating convolutional feature extraction, self-attention refinement, and bidirectional LSTM temporal modeling" .
+_:afed75697d46f6672f2685ad4706c4f8 rdf:reifies <<( doc:FactsthreeStagePipeline None:has_text_value "Three-stage computational pipeline integrating convolutional feature extraction, self-attention refinement, and bidirectional LSTM temporal modeling" )>> ;
+	prov:wasDerivedFrom doc:633e49395e74 .
+doc:FactsyingDu schema:affiliation doc:Factsschool .
+_:a1485c1b664f651cefcdf0313a31b4a rdf:reifies <<( doc:FactsyingDu schema:affiliation doc:Factsschool )>> ;
+	prov:wasDerivedFrom doc:633e49395e74 .
+doc:Factsarticle_3 schema:author doc:FactsyingDu .
+_:ee055b119ffedf728745119d2ad7e2e2 rdf:reifies <<( doc:Factsarticle_3 schema:author doc:FactsyingDu )>> ;
+	prov:wasDerivedFrom doc:633e49395e74 .
+doc:Factsarticle_3 schema:volumeNumber 13 .
+_:a19aadf01b32b756b427c9b1386ae38 rdf:reifies <<( doc:Factsarticle_3 schema:volumeNumber 13 )>> ;
+	prov:wasDerivedFrom doc:633e49395e74 .
+doc:FactsoilMonitoringData cco:is_about doc:FactsballBearing .
+_:fc4f771135be413857c9d71c59b17dd7 rdf:reifies <<( doc:FactsoilMonitoringData cco:is_about doc:FactsballBearing )>> ;
+	prov:wasDerivedFrom doc:633e49395e74 .
+doc:FactsmodelConfiguration_1 a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Model_configuration> .
+_:f303651f39180bc9f84bd87fbcbd18b0 rdf:reifies <<( doc:FactsmodelConfiguration_1 rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Model_configuration> )>> ;
+	prov:wasDerivedFrom doc:633e49395e74 .
+doc:FactscnnComponent a cco:Algorithm .
+_:e6df7fa15fe1e910a49ee6dd04da3792 rdf:reifies <<( doc:FactscnnComponent rdf:type cco:Algorithm )>> ;
+	prov:wasDerivedFrom doc:633e49395e74 .
+doc:Factslubricants a schema:Periodical .
+_:bc96560aa63cad8c441ddf88ca72c270 rdf:reifies <<( doc:Factslubricants rdf:type schema:Periodical )>> ;
+	prov:wasDerivedFrom doc:633e49395e74 .
+doc:Predictive_maintenance_model None:has_design_detail doc:FactsthreeStagePipeline .
+_:e6a5a5a5c9d3b66c491e355cce3ba1e6 rdf:reifies <<( doc:Predictive_maintenance_model None:has_design_detail doc:FactsthreeStagePipeline )>> ;
+	prov:wasDerivedFrom doc:633e49395e74 .
+doc:FactsoilMonitoringData a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Data_variable> .
+_:b152418f21cfc70e58dcedc25002f87a rdf:reifies <<( doc:FactsoilMonitoringData rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Data_variable> )>> ;
+	prov:wasDerivedFrom doc:633e49395e74 .
+doc:Predictive_maintenance_model obo:BFO_0000051 doc:FactscnnComponent .
+_:ffd4d7558cc8b754d8a0ca285e46aab0 rdf:reifies <<( doc:Predictive_maintenance_model obo:BFO_0000051 doc:FactscnnComponent )>> ;
+	prov:wasDerivedFrom doc:633e49395e74 .
+doc:FactswearStateForecastFunction a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Future_state_forecast> .
+_:eaaebf39b43f19e6bfc7b6c9dcf5f08f rdf:reifies <<( doc:FactswearStateForecastFunction rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Future_state_forecast> )>> ;
+	prov:wasDerivedFrom doc:633e49395e74 .
+doc:Predictive_maintenance_model cco:is_about doc:FactsoilMonitoringData .
+_:ba8f185d0a4455b88715eebafa4f0ada rdf:reifies <<( doc:Predictive_maintenance_model cco:is_about doc:FactsoilMonitoringData )>> ;
+	prov:wasDerivedFrom doc:633e49395e74 .
+doc:Factsschool schema:name "School of Mechanical and Precision Instrument Engineering" .
+_:d17def8bcf2728d1e6721dd38c7b826c rdf:reifies <<( doc:Factsschool schema:name "School of Mechanical and Precision Instrument Engineering" )>> ;
+	prov:wasDerivedFrom doc:633e49395e74 .
+doc:FactsyingDu schema:familyName "Zhou" .
+_:bf2ac65bd2994ef3d462adceb9933b61 rdf:reifies <<( doc:FactsyingDu schema:familyName "Zhou" )>> ;
+	prov:wasDerivedFrom doc:633e49395e74 .
+doc:FactsyingDu schema:familyName "Du" .
+_:d08627caeab89cb8ab10941965a385bc rdf:reifies <<( doc:FactsyingDu schema:familyName "Du" )>> ;
+	prov:wasDerivedFrom doc:633e49395e74 .
+doc:FactsballBearing a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Maintainable_item> .
+_:af77b69c95d161640144f23f6f70caf5 rdf:reifies <<( doc:FactsballBearing rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Maintainable_item> )>> ;
+	prov:wasDerivedFrom doc:633e49395e74 .
+doc:Factsarticle_3 schema:about doc:Predictive_maintenance_model .
+_:bd30a3c45c52d312a9f5bd1244155bb3 rdf:reifies <<( doc:Factsarticle_3 schema:about doc:Predictive_maintenance_model )>> ;
+	prov:wasDerivedFrom doc:633e49395e74 .
+doc:FactsyingDu schema:familyName "Shao" .
+_:bebbd60998761459645b3896606ba98b rdf:reifies <<( doc:FactsyingDu schema:familyName "Shao" )>> ;
+	prov:wasDerivedFrom doc:633e49395e74 .
+doc:Factsarticle_3 None:has_identifier doc:FactsarticleIdentifier .
+_:e5ca16571e4621522df0bf1e2eb60ab9 rdf:reifies <<( doc:Factsarticle_3 None:has_identifier doc:FactsarticleIdentifier )>> ;
+	prov:wasDerivedFrom doc:633e49395e74 .
+doc:FactsballBearing schema:name "Mechanical equipment" .
+_:a02bc7382f10558625d01fca9cfc930a rdf:reifies <<( doc:FactsballBearing schema:name "Mechanical equipment" )>> ;
+	prov:wasDerivedFrom doc:633e49395e74 .
+doc:FactsoilMonitoringData None:has_text_value "Lubricating oil monitoring data" .
+_:cebe387856e0f2837e8a610d8c182586 rdf:reifies <<( doc:FactsoilMonitoringData None:has_text_value "Lubricating oil monitoring data" )>> ;
+	prov:wasDerivedFrom doc:633e49395e74 .
+doc:FactscnnComponent schema:name "Convolutional neural network" .
+_:b5663c9607cd9f515225cc790f30003e rdf:reifies <<( doc:FactscnnComponent schema:name "Convolutional neural network" )>> ;
+	prov:wasDerivedFrom doc:633e49395e74 .
+doc:FactsballBearing a schema:Thing .
+_:dac46edcecaa6a533c7546fe08235df2 rdf:reifies <<( doc:FactsballBearing rdf:type schema:Thing )>> ;
+	prov:wasDerivedFrom doc:633e49395e74 .
+doc:FactspublicationYear None:has_interger_value 2025 .
+_:a6b123374a3800ab8c1d6553a3ee3fa5 rdf:reifies <<( doc:FactspublicationYear None:has_interger_value 2025 )>> ;
+	prov:wasDerivedFrom doc:633e49395e74 .
+doc:FactsyingDu a schema:Person .
+_:c80483169bcf189f19f45f8a420b195b rdf:reifies <<( doc:FactsyingDu rdf:type schema:Person )>> ;
+	prov:wasDerivedFrom doc:633e49395e74 .
+doc:Factsarticle_3 schema:name "Convolutional Neural Networks-Long Short-Term Memory-Attention: A Novel Model for Wear State Prediction Based on Oil Monitoring Data" .
+_:e426aa58141e5eabfe4347eb29b09a05 rdf:reifies <<( doc:Factsarticle_3 schema:name "Convolutional Neural Networks-Long Short-Term Memory-Attention: A Novel Model for Wear State Prediction Based on Oil Monitoring Data" )>> ;
+	prov:wasDerivedFrom doc:633e49395e74 .
+doc:FactsmodelConfiguration_1 None:describes_configuration doc:Predictive_maintenance_model .
+_:c28b813c11d21df925cb0f647adb3a2 rdf:reifies <<( doc:FactsmodelConfiguration_1 None:describes_configuration doc:Predictive_maintenance_model )>> ;
+	prov:wasDerivedFrom doc:633e49395e74 .
+doc:FactsyingDu schema:givenName "Chunguo" .
+_:b1cdc3dee344d1a7c06cf89d2802defc rdf:reifies <<( doc:FactsyingDu schema:givenName "Chunguo" )>> ;
+	prov:wasDerivedFrom doc:633e49395e74 .
+doc:FactsyingDu schema:familyName "Zhang" .
+_:aa0109511dcd420b42ad895cc28e1c2f rdf:reifies <<( doc:FactsyingDu schema:familyName "Zhang" )>> ;
+	prov:wasDerivedFrom doc:633e49395e74 .
+doc:FactsarticleTitle_3 a None:Article_title .
+_:daa5d36586630d23d5ebf849de3bea1c rdf:reifies <<( doc:FactsarticleTitle_3 rdf:type None:Article_title )>> ;
+	prov:wasDerivedFrom doc:633e49395e74 .
+doc:Factsarticle_3 schema:license <https://creativecommons.org/licenses/by/4.0/> .
+_:efec7b42072965d66656cfd4c00ba0cb rdf:reifies <<( doc:Factsarticle_3 schema:license <https://creativecommons.org/licenses/by/4.0/> )>> ;
+	prov:wasDerivedFrom doc:633e49395e74 .
+doc:FactsoilMonitoringData None:has_text_value "Multi-sensor tribological signals" .
+_:feee9a7e32ff00cc200e34f4ea98cbc5 rdf:reifies <<( doc:FactsoilMonitoringData None:has_text_value "Multi-sensor tribological signals" )>> ;
+	prov:wasDerivedFrom doc:633e49395e74 .
+doc:FactsyingDu schema:givenName "Shishuai" .
+_:ee5b26efc421969f08900c098a71e10a rdf:reifies <<( doc:FactsyingDu schema:givenName "Shishuai" )>> ;
+	prov:wasDerivedFrom doc:633e49395e74 .
+doc:FactsyingDu schema:givenName "Ying" .
+_:a23691056ad4d6ef39dfc8469f1ce3ac rdf:reifies <<( doc:FactsyingDu schema:givenName "Ying" )>> ;
+	prov:wasDerivedFrom doc:633e49395e74 .
+doc:Factsarticle_3 schema:issueNumber 7 .
+_:d635652fc04681c6fef1f9ac3469b1c0 rdf:reifies <<( doc:Factsarticle_3 schema:issueNumber 7 )>> ;
+	prov:wasDerivedFrom doc:633e49395e74 .
+doc:FactsyingDu schema:familyName "Chen" .
+_:c9c2e791b5f1861646036a9581937df0 rdf:reifies <<( doc:FactsyingDu schema:familyName "Chen" )>> ;
+	prov:wasDerivedFrom doc:633e49395e74 .
+doc:FactsyingDu schema:givenName "Tao" .
+_:b175bec0e168cf15fe3998170d909162 rdf:reifies <<( doc:FactsyingDu schema:givenName "Tao" )>> ;
+	prov:wasDerivedFrom doc:633e49395e74 .
+doc:FactscnnComponent schema:name "Self-attention mechanism" .
+_:ffa29dd9c0dce60c10c44e7c4ef2804 rdf:reifies <<( doc:FactscnnComponent schema:name "Self-attention mechanism" )>> ;
+	prov:wasDerivedFrom doc:633e49395e74 .
+doc:FactsyingDu schema:givenName "Jianlei" .
+_:fb5ef616ee76962179e2902f33b8af7e rdf:reifies <<( doc:FactsyingDu schema:givenName "Jianlei" )>> ;
+	prov:wasDerivedFrom doc:633e49395e74 .
+doc:FactsthreeStagePipeline a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Design_detail> .
+_:b2180c644906beb82a30637840b73b9a rdf:reifies <<( doc:FactsthreeStagePipeline rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Design_detail> )>> ;
+	prov:wasDerivedFrom doc:633e49395e74 .
+doc:Predictive_maintenance_model a cco:Algorithm .
+_:a01a1e49f42dfd83917428b17c0ff968 rdf:reifies <<( doc:Predictive_maintenance_model rdf:type cco:Algorithm )>> ;
+	prov:wasDerivedFrom doc:633e49395e74 .
+doc:Factsarticle_3 schema:dateReceived "2025-04-22"^^<http://www.w3.org/2001/XMLSchema#date> .
+_:de11de0cac24e9d5fc41b7269be1e64 rdf:reifies <<( doc:Factsarticle_3 schema:dateReceived "2025-04-22"^^<http://www.w3.org/2001/XMLSchema#date> )>> ;
+	prov:wasDerivedFrom doc:633e49395e74 .
+doc:Factsarticle_3 a schema:ScholarlyArticle .
+_:f25a0e6a1d2474d8cb08c4c1e848da42 rdf:reifies <<( doc:Factsarticle_3 rdf:type schema:ScholarlyArticle )>> ;
+	prov:wasDerivedFrom doc:633e49395e74 .
+doc:Factsschool schema:name "Xi'an University of Technology" .
+_:d8ff1bf9ff3e115cc36600e8e2ece3f4 rdf:reifies <<( doc:Factsschool schema:name "Xi'an University of Technology" )>> ;
+	prov:wasDerivedFrom doc:633e49395e74 .
+doc:Factsarticle_3 schema:pagination "306" .
+_:c9bcd0223349ae20046120990a29dc58 rdf:reifies <<( doc:Factsarticle_3 schema:pagination "306" )>> ;
+	prov:wasDerivedFrom doc:633e49395e74 .
+doc:Predictive_maintenance_model None:describes_configuration doc:FactsmodelConfiguration_1 .
+_:cf8a60ef975a2944513403df4b9eb0d8 rdf:reifies <<( doc:Predictive_maintenance_model None:describes_configuration doc:FactsmodelConfiguration_1 )>> ;
+	prov:wasDerivedFrom doc:633e49395e74 .
+doc:Predictive_maintenance_model schema:name "CNN-LSTM-Attention network" .
+_:a4be2b24ab380ca5e35a77914b8095c7 rdf:reifies <<( doc:Predictive_maintenance_model schema:name "CNN-LSTM-Attention network" )>> ;
+	prov:wasDerivedFrom doc:633e49395e74 .
+doc:FactsarticleTitle_3 None:has_text_value "Convolutional Neural Networks-Long Short-Term Memory-Attention: A Novel Model for Wear State Prediction Based on Oil Monitoring Data" .
+_:c691a0833577295063efa0433f5e4bd4 rdf:reifies <<( doc:FactsarticleTitle_3 None:has_text_value "Convolutional Neural Networks-Long Short-Term Memory-Attention: A Novel Model for Wear State Prediction Based on Oil Monitoring Data" )>> ;
+	prov:wasDerivedFrom doc:633e49395e74 .
+doc:Factsarticle_3 a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Predictive_maintenance_model> .
+_:b1bb228da50beec1cc233d0f4d261bf8 rdf:reifies <<( doc:Factsarticle_3 rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Predictive_maintenance_model> )>> ;
+	prov:wasDerivedFrom doc:633e49395e74 .
+doc:Factsarticle_3 dcterms:modified "2025-06-25"^^<http://www.w3.org/2001/XMLSchema#date> .
+_:d48b9f3109e99a9ce35cf84f39307ac2 rdf:reifies <<( doc:Factsarticle_3 dcterms:modified "2025-06-25"^^<http://www.w3.org/2001/XMLSchema#date> )>> ;
+	prov:wasDerivedFrom doc:633e49395e74 .
+doc:FactsyingDu schema:givenName "Yanchao" .
+_:be5d6841b920ebd81f6698338ed9ae48 rdf:reifies <<( doc:FactsyingDu schema:givenName "Yanchao" )>> ;
+	prov:wasDerivedFrom doc:633e49395e74 .
+doc:Factsarticle_3 None:has_publication_year doc:FactspublicationYear .
+_:a3e49f1b1b1146a5a974bd3ed839f273 rdf:reifies <<( doc:Factsarticle_3 None:has_publication_year doc:FactspublicationYear )>> ;
+	prov:wasDerivedFrom doc:633e49395e74 .
+doc:Factsschool schema:parentOrganization doc:Factsschool .
+_:fa313573e70f3f673a4a7a5db40b6833 rdf:reifies <<( doc:Factsschool schema:parentOrganization doc:Factsschool )>> ;
+	prov:wasDerivedFrom doc:633e49395e74 .
+doc:FactsyingDu schema:familyName "Wei" .
+_:f3e75036613ee95a6d5fca56a8dad7b3 rdf:reifies <<( doc:FactsyingDu schema:familyName "Wei" )>> ;
+	prov:wasDerivedFrom doc:633e49395e74 .
+doc:Predictive_maintenance_model None:has_predictive_maintenance_function doc:FactswearStateForecastFunction .
+_:b7908b1724366ca91867a49a3a597b8a rdf:reifies <<( doc:Predictive_maintenance_model None:has_predictive_maintenance_function doc:FactswearStateForecastFunction )>> ;
+	prov:wasDerivedFrom doc:633e49395e74 .
+doc:FactspublicationYear a None:Publication_year .
+_:f0f356840006d068b328083a1e8a23b4 rdf:reifies <<( doc:FactspublicationYear rdf:type None:Publication_year )>> ;
+	prov:wasDerivedFrom doc:633e49395e74 .
+doc:Factsarticle_3 schema:datePublished "2025-07-15"^^<http://www.w3.org/2001/XMLSchema#date> .
+_:cc6fa1b99e6495aa8afdc956c78cce03 rdf:reifies <<( doc:Factsarticle_3 schema:datePublished "2025-07-15"^^<http://www.w3.org/2001/XMLSchema#date> )>> ;
+	prov:wasDerivedFrom doc:633e49395e74 .
+doc:FactsyingDu schema:givenName "Hui" .
+_:ca6be599454fbb8c18a7521beb25fa74 rdf:reifies <<( doc:FactsyingDu schema:givenName "Hui" )>> ;
+	prov:wasDerivedFrom doc:633e49395e74 .
+doc:FactsyingDu schema:familyName "Wang" .
+_:b5830513705ea6655dfdc6963e6cfc1f rdf:reifies <<( doc:FactsyingDu schema:familyName "Wang" )>> ;
+	prov:wasDerivedFrom doc:633e49395e74 .
+doc:Factsarticle_3 dcterms:dateAccepted "2025-06-27"^^<http://www.w3.org/2001/XMLSchema#date> .
+_:a0fb2ea9da2ebcbc325ce8387a4029dd rdf:reifies <<( doc:Factsarticle_3 dcterms:dateAccepted "2025-06-27"^^<http://www.w3.org/2001/XMLSchema#date> )>> ;
+	prov:wasDerivedFrom doc:633e49395e74 .
+doc:FactsarticleIdentifier a None:Article_identifier .
+_:af30a49c1fef3a39bddb02aafcd03241 rdf:reifies <<( doc:FactsarticleIdentifier rdf:type None:Article_identifier )>> ;
+	prov:wasDerivedFrom doc:633e49395e74 .
+doc:FactscnnComponent schema:name "Bidirectional long short-term memory network" .
+_:bd53a7e3cf160216edf53cc032ce178d rdf:reifies <<( doc:FactscnnComponent schema:name "Bidirectional long short-term memory network" )>> ;
+	prov:wasDerivedFrom doc:633e49395e74 .
+doc:Factslubricants schema:name "Lubricants" .
+_:dfebcd2dfc6fe22fe38f4c8280c0fc02 rdf:reifies <<( doc:Factslubricants schema:name "Lubricants" )>> ;
+	prov:wasDerivedFrom doc:633e49395e74 .
+doc:Factsschool a schema:Organization .
+_:d5d0e9ec31a937ab48344173404065ed rdf:reifies <<( doc:Factsschool rdf:type schema:Organization )>> ;
+	prov:wasDerivedFrom doc:633e49395e74 .
+doc:Factsarticle_3 None:has_title doc:FactsarticleTitle_3 .
+_:edb61cea51ede5b39abc5103f6244014 rdf:reifies <<( doc:Factsarticle_3 None:has_title doc:FactsarticleTitle_3 )>> ;
+	prov:wasDerivedFrom doc:633e49395e74 .
+doc:0e4f73a87cc0 a prov:Entity , schema:text ;
+	prov:generatedAtTime "2026-07-24T05:13:03.472753Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+	schema:position 1 ;
+	schema:identifier "0e4f73a87cc0" .
+_:e347552bbafcbb3f84058dad54f4e3bd prov:wasDerivedFrom doc:0e4f73a87cc0 .
+doc:Predictive_maintenance_model <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#describes_type> doc:FactsstatisticalMethodType .
+_:f1f89ef5306d6bdab4a01461bb200743 rdf:reifies <<( doc:Predictive_maintenance_model <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#describes_type> doc:FactsstatisticalMethodType )>> ;
+	prov:wasDerivedFrom doc:0e4f73a87cc0 .
+doc:FactsstatisticalMethodType a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Model_type> .
+_:a8a8005571b1e32b49dbd273e2c428aa rdf:reifies <<( doc:FactsstatisticalMethodType rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Model_type> )>> ;
+	prov:wasDerivedFrom doc:0e4f73a87cc0 .
+doc:Predictive_maintenance_model <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#has_predictive_maintenance_function> doc:FactsregressionFunction_1 .
+_:d33691bb214899f1acb421c93de2f455 rdf:reifies <<( doc:Predictive_maintenance_model <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#has_predictive_maintenance_function> doc:FactsregressionFunction_1 )>> ;
+	prov:wasDerivedFrom doc:0e4f73a87cc0 .
+doc:FactslubricantViscosity rdfs:label "lubricant viscosity"@en .
+_:d2fb64234913137631f7fa2800ea4b7a rdf:reifies <<( doc:FactslubricantViscosity rdfs:label "lubricant viscosity"@en )>> ;
+	prov:wasDerivedFrom doc:0e4f73a87cc0 .
+_:a01a1e49f42dfd83917428b17c0ff968 prov:wasDerivedFrom doc:0e4f73a87cc0 .
+doc:FactslubricantViscosity a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Data_variable> .
+_:abe49f89b698ce155d03367e33c34f71 rdf:reifies <<( doc:FactslubricantViscosity rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Data_variable> )>> ;
+	prov:wasDerivedFrom doc:0e4f73a87cc0 .
+doc:FactsregressionFunction_1 a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Regression> .
+_:ee1f8c18fe4f5402c605d875ec893e1e rdf:reifies <<( doc:FactsregressionFunction_1 rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Regression> )>> ;
+	prov:wasDerivedFrom doc:0e4f73a87cc0 .
+doc:FactsstatisticalMethodType <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#has_text_value> "AI-based method" .
+_:c3c57f7bef760527e858be2d78c9efc0 rdf:reifies <<( doc:FactsstatisticalMethodType <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#has_text_value> "AI-based method" )>> ;
+	prov:wasDerivedFrom doc:0e4f73a87cc0 .
+doc:FactsspectralData rdfs:label "spectral data"@en .
+_:ac9269003c7fae9284b5870851717b6e rdf:reifies <<( doc:FactsspectralData rdfs:label "spectral data"@en )>> ;
+	prov:wasDerivedFrom doc:0e4f73a87cc0 .
+doc:FactslubricatingOil a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#item_type> .
+_:ea1ea6cedaebfd6ac74688f5c1781fbe rdf:reifies <<( doc:FactslubricatingOil rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#item_type> )>> ;
+	prov:wasDerivedFrom doc:0e4f73a87cc0 .
+doc:FactswearStates rdfs:label "wear states"@en .
+_:fefb8c8fb7f2410930971554a7a72026 rdf:reifies <<( doc:FactswearStates rdfs:label "wear states"@en )>> ;
+	prov:wasDerivedFrom doc:0e4f73a87cc0 .
+doc:Predictive_maintenance_model a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Classification> .
+_:c2d8282da38c5b5a65298e2df4977dc5 rdf:reifies <<( doc:Predictive_maintenance_model rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Classification> )>> ;
+	prov:wasDerivedFrom doc:0e4f73a87cc0 .
+doc:FactslubricatingOilMonitoringData rdfs:label "lubricating oil monitoring data"@en .
+_:a8b2f169843ab9ebef64f2342b191d24 rdf:reifies <<( doc:FactslubricatingOilMonitoringData rdfs:label "lubricating oil monitoring data"@en )>> ;
+	prov:wasDerivedFrom doc:0e4f73a87cc0 .
+doc:Predictive_maintenance_model a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Predictive_Maintenance_Article> .
+_:ca28ba3ebcefd937d0f0542552b48605 rdf:reifies <<( doc:Predictive_maintenance_model rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Predictive_Maintenance_Article> )>> ;
+	prov:wasDerivedFrom doc:0e4f73a87cc0 .
+doc:Predictive_maintenance_model <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#has_predictive_maintenance_function> doc:Predictive_maintenance_model .
+_:a0bedada1fb043271aa475d6d9de0507 rdf:reifies <<( doc:Predictive_maintenance_model <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#has_predictive_maintenance_function> doc:Predictive_maintenance_model )>> ;
+	prov:wasDerivedFrom doc:0e4f73a87cc0 .
+doc:FactsfeatureExtractionFunction a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Fault_feature_extraction> .
+_:f249f3cee46bdf22ca1e901e46959019 rdf:reifies <<( doc:FactsfeatureExtractionFunction rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Fault_feature_extraction> )>> ;
+	prov:wasDerivedFrom doc:0e4f73a87cc0 .
+doc:FactsceramicPair a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Maintainable_item> .
+_:afdd0e93e7e856ba44557d06540e1760 rdf:reifies <<( doc:FactsceramicPair rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Maintainable_item> )>> ;
+	prov:wasDerivedFrom doc:0e4f73a87cc0 .
+doc:Predictive_maintenance_model <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#has_predictive_maintenance_function> doc:Remaining_useful_life_estimation .
+_:e31b90f52bea117ea1fbfb6934fb328 rdf:reifies <<( doc:Predictive_maintenance_model <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#has_predictive_maintenance_function> doc:Remaining_useful_life_estimation )>> ;
+	prov:wasDerivedFrom doc:0e4f73a87cc0 .
+doc:FactsfrictionCoefficient a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Data_variable> .
+_:d710b83858c773a10158ad6d9ec101bb rdf:reifies <<( doc:FactsfrictionCoefficient rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Data_variable> )>> ;
+	prov:wasDerivedFrom doc:0e4f73a87cc0 .
+doc:FactswearParticleImages a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Data_variable> .
+_:f0edd8a344767c9e025d60ca225368bc rdf:reifies <<( doc:FactswearParticleImages rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Data_variable> )>> ;
+	prov:wasDerivedFrom doc:0e4f73a87cc0 .
+doc:FactsregressionFunction_1 a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Deviation_detection> .
+_:eed7bac98fa7fba682fbb99f5bb27056 rdf:reifies <<( doc:FactsregressionFunction_1 rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Deviation_detection> )>> ;
+	prov:wasDerivedFrom doc:0e4f73a87cc0 .
+doc:Predictive_maintenance_model <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#has_predictive_maintenance_function> doc:FactswearStateForecastFunction .
+_:b4bf88cdbc1506edbd97399c7f5ceb7c rdf:reifies <<( doc:Predictive_maintenance_model <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#has_predictive_maintenance_function> doc:FactswearStateForecastFunction )>> ;
+	prov:wasDerivedFrom doc:0e4f73a87cc0 .
+doc:FactsfrictionCoefficient rdfs:label "friction coefficient"@en .
+_:fc46e1a866e2553c1aaa7bcd75b8c13d rdf:reifies <<( doc:FactsfrictionCoefficient rdfs:label "friction coefficient"@en )>> ;
+	prov:wasDerivedFrom doc:0e4f73a87cc0 .
+_:af77b69c95d161640144f23f6f70caf5 prov:wasDerivedFrom doc:0e4f73a87cc0 .
+doc:FactswearStates a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Data_variable> .
+_:f258972f6152c4801bead5997d44d165 rdf:reifies <<( doc:FactswearStates rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Data_variable> )>> ;
+	prov:wasDerivedFrom doc:0e4f73a87cc0 .
+doc:FactslubricatingOilMonitoringData a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Data_variable> .
+_:a90206a7d4a008235cb0c0839585b84e rdf:reifies <<( doc:FactslubricatingOilMonitoringData rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Data_variable> )>> ;
+	prov:wasDerivedFrom doc:0e4f73a87cc0 .
+doc:Predictive_maintenance_model <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#has_predictive_maintenance_function> doc:FactsfeatureExtractionFunction .
+_:bcdcfa519f4d15ef94db277bc77368ad rdf:reifies <<( doc:Predictive_maintenance_model <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#has_predictive_maintenance_function> doc:FactsfeatureExtractionFunction )>> ;
+	prov:wasDerivedFrom doc:0e4f73a87cc0 .
+_:eaaebf39b43f19e6bfc7b6c9dcf5f08f prov:wasDerivedFrom doc:0e4f73a87cc0 .
+doc:Remaining_useful_life_estimation a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Remaining_useful_life_estimation> .
+_:e23407d079938e9e9e5061912dbb9d86 rdf:reifies <<( doc:Remaining_useful_life_estimation rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Remaining_useful_life_estimation> )>> ;
+	prov:wasDerivedFrom doc:0e4f73a87cc0 .
+doc:FactswearParticleImages rdfs:label "wear particle images"@en .
+_:f8b07e12666173c88ade0fb933e5cbc5 rdf:reifies <<( doc:FactswearParticleImages rdfs:label "wear particle images"@en )>> ;
+	prov:wasDerivedFrom doc:0e4f73a87cc0 .
+doc:Predictive_maintenance_model a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Predictive_maintenance_system_module> .
+_:e4d142b8763da727566179c07d2513b4 rdf:reifies <<( doc:Predictive_maintenance_model rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Predictive_maintenance_system_module> )>> ;
+	prov:wasDerivedFrom doc:0e4f73a87cc0 .
+doc:Predictive_maintenance_model a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Clustering> .
+_:d90e2d51781aa7b8b3e6bb516c28d956 rdf:reifies <<( doc:Predictive_maintenance_model rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Clustering> )>> ;
+	prov:wasDerivedFrom doc:0e4f73a87cc0 .
+doc:FactsstatisticalMethodType <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#has_text_value> "statistical method" .
+_:e2b3fe16f41e00a72ad1fcebedd9aa50 rdf:reifies <<( doc:FactsstatisticalMethodType <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#has_text_value> "statistical method" )>> ;
+	prov:wasDerivedFrom doc:0e4f73a87cc0 .
+doc:FactsspectralData a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Data_variable> .
+_:c9ffc93a1e3b9925f5634b2682a29499 rdf:reifies <<( doc:FactsspectralData rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Data_variable> )>> ;
+	prov:wasDerivedFrom doc:0e4f73a87cc0 .
+doc:db69bd31733f a prov:Entity , schema:text ;
+	prov:generatedAtTime "2026-07-24T05:13:03.47575Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+	schema:position 2 ;
+	schema:identifier "db69bd31733f" .
+doc:FactsmechanicalEquipmentWearState rdfs:label "mechanical equipment wear state"@en .
+_:c2ab3e9184a1d5050cda3c5f5bc43108 rdf:reifies <<( doc:FactsmechanicalEquipmentWearState rdfs:label "mechanical equipment wear state"@en )>> ;
+	prov:wasDerivedFrom doc:db69bd31733f .
+doc:FactswearDebrisConcentration rdfs:label "wear debris concentration"@en .
+_:b517e6b0741512a3c9d29494d3a60cb6 rdf:reifies <<( doc:FactswearDebrisConcentration rdfs:label "wear debris concentration"@en )>> ;
+	prov:wasDerivedFrom doc:db69bd31733f .
+doc:FactsonlineSynchronization rdfs:label "online"@en .
+_:c59bf8b1f5623c10479a42fc777f27ad rdf:reifies <<( doc:FactsonlineSynchronization rdfs:label "online"@en )>> ;
+	prov:wasDerivedFrom doc:db69bd31733f .
+doc:FactslubricatingOilMonitoringSystem <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#has_predictive_maintenance_function> doc:FactsfeatureExtractionFunction .
+_:eb520c3309e2ab13f6c6932adc25d525 rdf:reifies <<( doc:FactslubricatingOilMonitoringSystem <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#has_predictive_maintenance_function> doc:FactsfeatureExtractionFunction )>> ;
+	prov:wasDerivedFrom doc:db69bd31733f .
+doc:FactslubricatingOilTemporalEvolutionData a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Data_variable> .
+_:c6eeaa266cad3dc90252b2952e1c348c rdf:reifies <<( doc:FactslubricatingOilTemporalEvolutionData rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Data_variable> )>> ;
+	prov:wasDerivedFrom doc:db69bd31733f .
+doc:FactslubricatingOilMonitoringSystem <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#has_design_detail> doc:FactsfeatureSelfAttentionDesignDetail .
+_:c17ab1988ee934dc3213fefc93ff3c7c rdf:reifies <<( doc:FactslubricatingOilMonitoringSystem <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#has_design_detail> doc:FactsfeatureSelfAttentionDesignDetail )>> ;
+	prov:wasDerivedFrom doc:db69bd31733f .
+doc:FactsmechanicalEquipmentWearState a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Data_variable> .
+_:a376df2f23dddc602dfa7216f51c6abe rdf:reifies <<( doc:FactsmechanicalEquipmentWearState rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Data_variable> )>> ;
+	prov:wasDerivedFrom doc:db69bd31733f .
+doc:FactscnnComponent rdfs:label "LSTM model"@en .
+_:f9059461688e6d69fba90f96637a97 rdf:reifies <<( doc:FactscnnComponent rdfs:label "LSTM model"@en )>> ;
+	prov:wasDerivedFrom doc:db69bd31733f .
+doc:FactscnnLstmAttentionModel obo:BFO_0000051 doc:FactsfeatureSelfAttentionMechanism .
+_:aa8a424e456a387b88e558f8a6d0e969 rdf:reifies <<( doc:FactscnnLstmAttentionModel obo:BFO_0000051 doc:FactsfeatureSelfAttentionMechanism )>> ;
+	prov:wasDerivedFrom doc:db69bd31733f .
+doc:FactswearStateForecastFunction rdfs:label "wear state evolution prediction"@en .
+_:d19c618236102a0e7b982b9768a77b72 rdf:reifies <<( doc:FactswearStateForecastFunction rdfs:label "wear state evolution prediction"@en )>> ;
+	prov:wasDerivedFrom doc:db69bd31733f .
+doc:FactslubricatingOilMonitoringSystem rdfs:label "online lubricating oil monitoring system"@en .
+_:e24a09d63b4bfeabbdb495211e5d385 rdf:reifies <<( doc:FactslubricatingOilMonitoringSystem rdfs:label "online lubricating oil monitoring system"@en )>> ;
+	prov:wasDerivedFrom doc:db69bd31733f .
+doc:FactsfeatureSelfAttentionMechanism rdfs:label "feature self-attention mechanism"@en .
+_:d15ec507b1df64fb216a50fa397830b8 rdf:reifies <<( doc:FactsfeatureSelfAttentionMechanism rdfs:label "feature self-attention mechanism"@en )>> ;
+	prov:wasDerivedFrom doc:db69bd31733f .
+doc:FactscnnLstmAttentionModel cco:is_about doc:FactslubricatingOilTemporalEvolutionData .
+_:b1b9b699e9d0e600c82ff7a93d20dcce rdf:reifies <<( doc:FactscnnLstmAttentionModel cco:is_about doc:FactslubricatingOilTemporalEvolutionData )>> ;
+	prov:wasDerivedFrom doc:db69bd31733f .
+doc:FactscnnComponent rdfs:label "CNN model"@en .
+_:e9e322eb84f41919c9be27b43d5c87d3 rdf:reifies <<( doc:FactscnnComponent rdfs:label "CNN model"@en )>> ;
+	prov:wasDerivedFrom doc:db69bd31733f .
+doc:FactsfeatureExtractionFunction rdfs:label "high-dimensional feature extraction"@en .
+_:a8c3f6179f428c38aee7332c592382de rdf:reifies <<( doc:FactsfeatureExtractionFunction rdfs:label "high-dimensional feature extraction"@en )>> ;
+	prov:wasDerivedFrom doc:db69bd31733f .
+doc:FactshistoricalLubricantData rdfs:label "historical lubricant data"@en .
+_:bad42c430bb5321a3abda3a2fd099129 rdf:reifies <<( doc:FactshistoricalLubricantData rdfs:label "historical lubricant data"@en )>> ;
+	prov:wasDerivedFrom doc:db69bd31733f .
+doc:FactsfeatureSelfAttentionDesignDetail a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Design_detail> .
+_:c5e4e406d3cbafc28be0ce8416ef071b rdf:reifies <<( doc:FactsfeatureSelfAttentionDesignDetail rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Design_detail> )>> ;
+	prov:wasDerivedFrom doc:db69bd31733f .
+doc:FactsonlineSynchronization a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Module_synchronization> .
+_:c4bc4c16d26ac3572a8d78751c8d760f rdf:reifies <<( doc:FactsonlineSynchronization rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Module_synchronization> )>> ;
+	prov:wasDerivedFrom doc:db69bd31733f .
+_:e6df7fa15fe1e910a49ee6dd04da3792 prov:wasDerivedFrom doc:db69bd31733f .
+_:af77b69c95d161640144f23f6f70caf5 prov:wasDerivedFrom doc:db69bd31733f .
+doc:FactsmodelConfiguration_1 rdfs:label "CNN-LSTM-Attention model configuration"@en .
+_:c0e19d32ba87d58d58d0ff2d60992bf6 rdf:reifies <<( doc:FactsmodelConfiguration_1 rdfs:label "CNN-LSTM-Attention model configuration"@en )>> ;
+	prov:wasDerivedFrom doc:db69bd31733f .
+doc:FactscnnLstmAttentionModel cco:is_about doc:FactshistoricalLubricantData .
+_:f899a3afe33312712298e8df23a85ce8 rdf:reifies <<( doc:FactscnnLstmAttentionModel cco:is_about doc:FactshistoricalLubricantData )>> ;
+	prov:wasDerivedFrom doc:db69bd31733f .
+doc:FactscnnLstmAttentionModel cco:is_about doc:FactsmechanicalEquipmentWearState .
+_:f88378f65ee528aa2ca2e6a9c0e487f0 rdf:reifies <<( doc:FactscnnLstmAttentionModel cco:is_about doc:FactsmechanicalEquipmentWearState )>> ;
+	prov:wasDerivedFrom doc:db69bd31733f .
+doc:FactslubricatingOilMonitoringSystem a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Predictive_maintenance_system_module> .
+_:c679c06f4f143aa98fc674fd23a11f0d rdf:reifies <<( doc:FactslubricatingOilMonitoringSystem rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Predictive_maintenance_system_module> )>> ;
+	prov:wasDerivedFrom doc:db69bd31733f .
+doc:FactscnnLstmAttentionModel rdfs:label "CNN-LSTM-Attention temporal prediction model"@en .
+_:d1b7bd7e5c7dbf11ff660535212725d rdf:reifies <<( doc:FactscnnLstmAttentionModel rdfs:label "CNN-LSTM-Attention temporal prediction model"@en )>> ;
+	prov:wasDerivedFrom doc:db69bd31733f .
+doc:FactsballBearing rdfs:label "mechanical equipment"@en .
+_:a27e3b284171048679997b05ee1c5293 rdf:reifies <<( doc:FactsballBearing rdfs:label "mechanical equipment"@en )>> ;
+	prov:wasDerivedFrom doc:db69bd31733f .
+doc:FactscnnLstmAttentionModel obo:BFO_0000051 doc:FactscnnComponent .
+_:cfb1715898fd0ab5ef38c69bee287951 rdf:reifies <<( doc:FactscnnLstmAttentionModel obo:BFO_0000051 doc:FactscnnComponent )>> ;
+	prov:wasDerivedFrom doc:db69bd31733f .
+_:eaaebf39b43f19e6bfc7b6c9dcf5f08f prov:wasDerivedFrom doc:db69bd31733f .
+doc:FactslubricatingOilMonitoringSystem <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#has_synchronization> doc:FactsonlineSynchronization .
+_:ddf86f6889221faa237ee6ddb62eb9d4 rdf:reifies <<( doc:FactslubricatingOilMonitoringSystem <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#has_synchronization> doc:FactsonlineSynchronization )>> ;
+	prov:wasDerivedFrom doc:db69bd31733f .
+doc:FactsmodelConfiguration_1 <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#describes_configuration> doc:FactscnnLstmAttentionModel .
+_:fc6651baf03976db3fa0b498f3db6f69 rdf:reifies <<( doc:FactsmodelConfiguration_1 <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#describes_configuration> doc:FactscnnLstmAttentionModel )>> ;
+	prov:wasDerivedFrom doc:db69bd31733f .
+doc:FactscnnLstmAttentionModel a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Predictive_maintenance_model> .
+_:e81580ceef82336d72ead3658d40b8b9 rdf:reifies <<( doc:FactscnnLstmAttentionModel rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Predictive_maintenance_model> )>> ;
+	prov:wasDerivedFrom doc:db69bd31733f .
+doc:FactsfeatureSelfAttentionDesignDetail rdfs:label "dynamic feature-weight adjustment"@en .
+_:bd589d746b089e7c83c6029d95bda769 rdf:reifies <<( doc:FactsfeatureSelfAttentionDesignDetail rdfs:label "dynamic feature-weight adjustment"@en )>> ;
+	prov:wasDerivedFrom doc:db69bd31733f .
+doc:FactslubricatingOilMonitoringSystem <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#has_predictive_maintenance_function> doc:FactswearStateForecastFunction .
+_:f1021f1b5235a92cd0ca88f1d5cf993a rdf:reifies <<( doc:FactslubricatingOilMonitoringSystem <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#has_predictive_maintenance_function> doc:FactswearStateForecastFunction )>> ;
+	prov:wasDerivedFrom doc:db69bd31733f .
+_:f249f3cee46bdf22ca1e901e46959019 prov:wasDerivedFrom doc:db69bd31733f .
+_:f303651f39180bc9f84bd87fbcbd18b0 prov:wasDerivedFrom doc:db69bd31733f .
+doc:FactswearDebrisConcentration a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Data_variable> .
+_:acaa3715c8939dfd4262e772e2d02ff1 rdf:reifies <<( doc:FactswearDebrisConcentration rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Data_variable> )>> ;
+	prov:wasDerivedFrom doc:db69bd31733f .
+doc:FactscnnLstmAttentionModel cco:is_about doc:FactswearDebrisConcentration .
+_:d509b323f43a0ad00c7411daf0d65625 rdf:reifies <<( doc:FactscnnLstmAttentionModel cco:is_about doc:FactswearDebrisConcentration )>> ;
+	prov:wasDerivedFrom doc:db69bd31733f .
+doc:FactshistoricalLubricantData a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Data_variable> .
+_:c9dd27d38f7f8a85cf02d316b35b81ae rdf:reifies <<( doc:FactshistoricalLubricantData rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Data_variable> )>> ;
+	prov:wasDerivedFrom doc:db69bd31733f .
+doc:FactsfeatureSelfAttentionMechanism a cco:Algorithm .
+_:b96036169f0adb1957ad19cac557afc4 rdf:reifies <<( doc:FactsfeatureSelfAttentionMechanism rdf:type cco:Algorithm )>> ;
+	prov:wasDerivedFrom doc:db69bd31733f .
+doc:FactslubricatingOilTemporalEvolutionData rdfs:label "lubricating oil temporal evolution data"@en .
+_:ca6ef4da8feeb2951b11cf93ed39ff08 rdf:reifies <<( doc:FactslubricatingOilTemporalEvolutionData rdfs:label "lubricating oil temporal evolution data"@en )>> ;
+	prov:wasDerivedFrom doc:db69bd31733f .
+<http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Predictive_maintenance_model> owl:sameAs <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Predictive_maintenance_system_module> , <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Predictive_Maintenance_Article> .

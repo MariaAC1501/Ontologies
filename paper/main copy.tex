@@ -1,0 +1,293 @@
+\documentclass[11pt,a4paper]{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[spanish,es-tabla]{babel}
+\usepackage{lmodern}
+\usepackage{microtype}
+\usepackage[a4paper,margin=2.35cm]{geometry}
+\usepackage{amsmath,amssymb}
+\usepackage{booktabs,tabularx,multirow,threeparttable}
+\usepackage{graphicx}
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage{placeins}
+\usepackage{float}
+\usepackage{xcolor}
+\usepackage{enumitem}
+\usepackage{tikz}
+\usetikzlibrary{arrows.meta,positioning,fit,shapes.geometric}
+\usepackage[numbers,sort&compress]{natbib}
+\usepackage{hyperref}
+\usepackage[nameinlink,noabbrev]{cleveref}
+
+\definecolor{cbrblue}{HTML}{4C78A8}
+\definecolor{mmrred}{HTML}{E45756}
+\definecolor{ontogreen}{HTML}{54A24B}
+\hypersetup{
+  colorlinks=true,
+  linkcolor=black,
+  citecolor=cbrblue,
+  urlcolor=cbrblue,
+  pdftitle={OntoCast y OPMAD para extracción estructurada de conocimiento desde literatura científica de mantenimiento predictivo},
+  pdfauthor={}
+}
+\captionsetup{font=small,labelfont=bf}
+\setlist{nosep,leftmargin=*}
+\newcommand{\OPMAD}{\textsc{opmad}}
+\newcommand{\OntoCast}{\textsc{OntoCast}}
+\newcommand{\myCBR}{\textsc{myCBR}}
+\newcommand{\MMR}{\textsc{mmr}}
+\newcommand{\RDF}{\textsc{rdf}}
+\newcommand{\ILD}{\textsc{ild}}
+
+\title{\textbf{OntoCast y OPMAD para extracción estructurada de conocimiento desde literatura científica de mantenimiento predictivo}}
+\author{}
+\date{}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+La literatura científica contiene descripciones de activos, señales, tareas y modelos útiles para el diseño conceptual de sistemas de mantenimiento predictivo, pero transformar esos textos en conocimiento estructurado sigue siendo costoso y difícil de auditar. Se propone una metodología para evaluar extracción estructurada con \OntoCast{} condicionada por \OPMAD{}: texto científico $\rightarrow$ hechos \RDF/Turtle $\rightarrow$ esquema de 19 campos $\rightarrow$ consulta \myCBR{} $\rightarrow$ tarea downstream de reranking por relevancia marginal máxima (\MMR). De 3.990 registros Scopus de 2025--2026 se incluyeron 2.768 y se recuperaron 1.822 PDF (1.821 documentos únicos). Todos los documentos recuperados generaron artefactos parseables y consultas ejecutables contra 263 casos históricos después de limpiar RDF-star; además, las auditorías cuantificaron cobertura de campos, valores predeterminados, conformidad SHACL, trazabilidad y efectos del modelo extractor. En la tarea downstream, con pool 15, top-5 y $\lambda=0{,}70$, la disimilitud intra-lista aumentó de 0,4216 a 0,5265 y las listas con firmas repetidas bajaron de 610 a 5; la similitud media pasó de 0,5563 a 0,5536 ($-0{,}48\%$). Comparadores max-sum y MAP-DPP confirmaron que el resultado depende del criterio de diversidad, mientras pools de 10--30 mostraron un compromiso graduable. La disimilitud reutiliza la similitud optimizada por MMR y no constituye validación independiente. Como extensión metodológica, se especifica una anotación humana a nivel de texto congelado para comparar \OntoCast{}--\OPMAD{} con extracción JSON genérica, esquemas generados por LLM y ontologías generadas por LLM sin auditar la conversión PDF--texto. La evidencia presentada respalda interoperabilidad ejecutable y comportamiento algorítmico de ranking; la fidelidad factual y la utilidad decisional quedan delimitadas para validación experta.
+\end{abstract}
+
+\noindent\textbf{Palabras clave:} 
+
+\begin{center}
+\rule{0.92\linewidth}{0.4pt}
+\end{center}
+
+\begin{otherlanguage}{english}
+\renewcommand{\abstractname}{Abstract}
+\begin{abstract}
+Scientific literature describes assets, signals, tasks, and models that can inform conceptual design of predictive-maintenance systems, but transforming those texts into structured and auditable knowledge remains costly. A methodology is proposed to evaluate structured extraction with OPMAD-constrained \OntoCast{}: scientific text $\rightarrow$ RDF/Turtle facts $\rightarrow$ a 19-field schema $\rightarrow$ myCBR retrieval $\rightarrow$ a downstream maximal marginal relevance (MMR) reranking task. From 3,990 Scopus records published in 2025--2026, 2,768 were included and 1,822 PDFs were retrieved (1,821 unique documents). All retrieved documents yielded parseable artifacts and executable queries against 263 historical cases after RDF-star cleanup; the audits further quantified field coverage, defaults, SHACL conformance, traceability, and extractor-model effects. In the downstream task, with a pool of 15, top-5, and $\lambda=0.70$, mean intra-list dissimilarity increased from 0.4216 to 0.5265 and lists with repeated model signatures fell from 610 to 5; mean similarity decreased from 0.5563 to 0.5536 ($-0.48\%$). Max-sum and MAP-DPP comparators showed dependence on the diversity criterion, while candidate pools from 10 to 30 yielded a tunable trade-off. Intra-list dissimilarity reuses the similarity optimized by MMR and is not independent validation. As a methodological extension, text-level human annotation over frozen evidence packages is specified to compare \OntoCast{}--OPMAD with generic JSON extraction, LLM-generated schemas, and LLM-generated ontologies without auditing PDF-to-text conversion. The evidence supports executable interoperability and algorithmic ranking behavior; factual fidelity and decision utility are reserved for expert validation.
+
+\textbf{Keywords:} 
+\end{abstract}
+\end{otherlanguage}
+
+\crefname{figure}{figura}{figuras}
+\crefname{table}{tabla}{tablas}
+\crefname{equation}{ecuación}{ecuaciones}
+\Crefname{figure}{Figura}{Figuras}
+\Crefname{table}{Tabla}{Tablas}
+\Crefname{equation}{Ecuación}{Ecuaciones}
+
+\section{Introducción}
+\label{sec:intro}
+
+El mantenimiento predictivo organiza decisiones de intervención a partir de la condición y evolución esperada de un activo. Sus arquitecturas combinan adquisición, preprocesamiento, diagnóstico, pronóstico y comunicación; cada función admite modelos basados en conocimiento, datos o física y configuraciones multimodelo \citep{MonteroJimenez2020Survey}. Durante el diseño conceptual, esta amplitud dificulta seleccionar componentes y justificar alternativas.
+
+En términos operativos, el problema estudiado es el siguiente: un artículo describe un activo, señales, una tarea y modelos; esos hechos deben convertirse en los atributos que entiende un sistema de razonamiento basado en casos (CBR), el cual devuelve experiencias históricas y modelos candidatos. El CBR reutiliza experiencias mediante recuperación, reutilización, revisión y retención \citep{Aamodt1994CBR,LopezDeMantaras2005CBR}; una ontología puede aportar vocabulario, estructura y similitud semántica \citep{Gruber1993Ontology,AmailefLu2013OntologyCBR,Qin2018OntologyCBR}. La infraestructura previa basada en el modelo ontológico para arquitectura y diseño de mantenimiento predictivo (\OPMAD{}, por \emph{Ontology model for Predictive Maintenance Architecture and Design}) y en la plataforma \myCBR{} recomienda modelos de mantenimiento predictivo \citep{MonteroJimenez2021OPMADCBR,MunozHernandez2021OntologyCBR}, pero depende de incorporación manual y puede devolver soluciones homogéneas.
+
+El estudio parte de tres observaciones. Primero, los modelos de lenguaje de gran tamaño (LLM, por \emph{large language models}) pueden extraer grafos desde texto \citep{Pan2024LLMKG,Lairgi2024IText2KG}, pero un archivo en Resource Description Framework (RDF) parseable no garantiza que los hechos sean correctos, completos o útiles para una herramienta de decisión. Segundo, si esos hechos se usarán en un sistema CBR existente, deben traducirse a un esquema fijo de atributos; en ese paso pueden aparecer pérdidas de información, valores predeterminados y normalizaciones discutibles. Tercero, una lista CBR ordenada solo por similitud puede repetir alternativas muy parecidas. La diversidad se trata aquí como una tarea downstream separada: el método de vecinos más cercanos condensados (CNN, por \emph{Condensed Nearest Neighbour}) modifica la memoria CBR \citep{MunozPena2025Diversity}; la relevancia marginal máxima (MMR, por \emph{maximal marginal relevance}) reordena reversiblemente un conjunto candidato \citep{CarbonellGoldstein1998MMR}; y familias como xQuAD (\emph{explicit Query Aspect Diversification}) o los procesos puntuales determinantes (DPP, por \emph{determinantal point processes}) representan otras formas de cubrir intenciones o subconjuntos \citep{Santos2010xQuAD,Gan2020DPP}.
+
+El estudio no propone una ontología, un motor CBR ni un algoritmo de diversificación nuevos. Se propone una metodología de evaluación para convertir textos científicos en conocimiento estructurado con \OntoCast{} y \OPMAD{}, auditar esa conversión y observar su efecto en una tarea CBR downstream. Se plantean cuatro preguntas:
+
+\begin{description}[style=nextline,leftmargin=1.5cm,labelwidth=1.2cm]
+  \item[P1.] ¿En qué medida \OntoCast{} condicionado por \OPMAD{} permite producir una representación estructurada, trazable y auditable de artículos científicos de mantenimiento predictivo?
+  \item[P2.] ¿Qué parte de esa representación puede transformarse en el esquema CBR de 19 campos y en consultas ejecutables, y dónde aparecen pérdidas de información o valores predeterminados?
+  \item[P3.] ¿Qué efecto tiene la representación extraída en una tarea downstream de recuperación y diversificación de recomendaciones, y cuán dependiente es ese efecto de criterios y parámetros de reranking?
+  \item[P4.] ¿Cómo puede validarse la fidelidad semántica de las extracciones mediante anotación humana y comparadores LLM sin confundirla con una auditoría de conversión desde formato de documento portátil (PDF) a texto?
+\end{description}
+
+El aporte se organiza en seis elementos:
+
+\begin{enumerate}[label=(\roman*)]
+  \item una metodología reproducible para transformar hechos extraídos con \OntoCast{} y \OPMAD{} en un esquema de 19 campos compatible con CBR;
+  \item una evaluación por lotes contra una base histórica de 263 casos, usada como tarea downstream y no como validación de verdad factual;
+  \item una capa de reranking MMR y comparadores explícitos para analizar el compromiso entre similitud y diversidad sin modificar la base de casos;
+  \item auditorías de cobertura, conformidad con Shapes Constraint Language (SHACL), valores predeterminados, procedencia, trazabilidad y diferencias entre modelos de extracción;
+  \item análisis pareado y bootstrap por clúster sobre 1.821 consultas, para evitar interpretar rankings repetidos como evidencia independiente
+  \item artefactos reproducibles y un protocolo de anotación humana a nivel de texto congelado, diseñado para evaluar fidelidad semántica sin auditar la conversión PDF--texto.
+\end{enumerate}
+
+\section{Antecedentes y trabajos relacionados}
+\label{sec:related}
+
+\subsection{Ontologías y CBR en mantenimiento predictivo}
+
+Una ontología formaliza conceptos y relaciones compartidos \citep{Gruber1993Ontology,NoyMcGuinness2001Ontology101}. En sistemas CBR, esa estructura ayuda a nombrar atributos, organizar casos y calcular similitudes más informadas que una comparación puramente léxica. Por ello, la integración entre ontologías y CBR se ha usado en dominios como emergencias, tolerancias, diseño y selección de procesos \citep{AmailefLu2013OntologyCBR,Qin2018OntologyCBR,RomeroBejarano2014CBRDesign,Mabkhot2019OntologyCBR}. En mantenimiento también existen grafos orientados a apoyar decisiones, por ejemplo para recomendar planes mediante redes neuronales de grafos \citep{Xia2023MaintenanceKG}.
+
+En esta línea, \OPMAD{} ofrece un vocabulario especializado para artículos, activos, variables, modelos y funciones de mantenimiento predictivo. La infraestructura \OPMAD{}--\myCBR{} ya integra esa terminología con una base histórica de casos y funciones de similitud \citep{MonteroJimenez2021OPMADCBR,MunozHernandez2021OntologyCBR}. Por tanto, el presente trabajo no reclama novedad en la ontología, en la base de casos ni en el motor CBR. El problema abordado es otro: cómo poblar y evaluar esa representación a partir de literatura científica heterogénea y de texto completo.
+
+\subsection{Extracción estructurada con modelos de lenguaje}
+
+Los modelos de lenguaje se han empleado para construir y completar grafos, alinear vocabularios y generar representaciones estructuradas a partir de texto \citep{Pan2024LLMKG}. iText2KG, por ejemplo, construye grafos de conocimiento de forma incremental \citep{Lairgi2024IText2KG}; otros trabajos guían al modelo con ontologías o automatizan mapeos hacia RDF \citep{Mustafa2025OntologyGuided,Marketakis2026RDFMappings}. \OntoCast{} se ubica en esta familia porque usa una ontología como restricción para producir hechos estructurados \citep{Belikov2025OntoCast}.
+
+La dificultad no termina cuando se obtiene un grafo parseable. Un grafo puede estar bien formado y, aun así, omitir modelos, atribuir hechos a un trabajo citado, usar etiquetas demasiado genéricas o generar valores incompatibles con una aplicación downstream. Por eso, la evaluación debe separar al menos tres niveles: conformidad estructural, cobertura de campos y fidelidad semántica respecto del texto. En este manuscrito, la conformidad estructural se comprueba con formas SHACL mínimas \citep{SHACL2017}; la cobertura y la normalización se auditan campo por campo; y la fidelidad semántica se deja preparada mediante anotación humana sobre evidencia textual congelada.
+
+\subsection{Recuperación y diversidad como tarea downstream}
+
+La recuperación CBR se basa en similitud, pero una lista de casos muy similares puede ser poco útil si repite soluciones equivalentes. La literatura distingue por ello entre relevancia y diversidad \citep{SmythMcClave2001Diversity,McSherry2002Diversity}, y los sistemas de recomendación estudian medidas complementarias como cobertura, novedad o serendipia \citep{KaminskasBridge2016BeyondAccuracy}. En este manuscrito, la recuperación CBR no se usa como prueba de verdad factual; se usa como tarea downstream para observar qué ocurre cuando los hechos extraídos se traducen a consultas.
+
+Existen varias formas de introducir diversidad. El CNN modificado condensa o reorganiza la memoria de casos \citep{MunozPena2025Diversity}. En cambio, MMR penaliza la similitud con los elementos ya seleccionados y reordena un conjunto candidato sin modificar la base de casos \citep{CarbonellGoldstein1998MMR}. xQuAD representa explícitamente aspectos o intenciones de búsqueda \citep{Santos2010xQuAD}, mientras que los DPP favorecen subconjuntos diversos mediante un determinante \citep{Gan2020DPP}. Por esa diferencia conceptual, el reranking se interpreta aquí como análisis secundario de uso downstream, no como contribución principal de extracción.
+
+\begin{table}[H]
+\centering
+\caption{Posicionamiento del estudio respecto de familias próximas.}
+\label{tab:positioning}
+\footnotesize
+\begin{tabularx}{\linewidth}{lXXX}
+\toprule
+Familia & Pregunta típica & Evidencia habitual & Papel en este estudio \\
+\midrule
+Modelos de lenguaje y grafos & ¿se puede estructurar texto como grafo? & triples, clases o relaciones & se evalúa además cobertura, trazabilidad y uso downstream \\
+Ontología--CBR & ¿mejora una ontología la recuperación de casos? & similitud, competencia o utilidad & se reutiliza \OPMAD{}--\myCBR{} como infraestructura existente \\
+Grafos de mantenimiento & ¿apoyan decisiones sobre activos? & desempeño en una tarea industrial & se usan como referencia conceptual, no como predictor \\
+Diversificación & ¿la lista recuperada cubre alternativas? & relevancia y diversidad & se analiza como tarea secundaria posterior a la extracción \\
+\bottomrule
+\end{tabularx}
+\end{table}
+
+\section{Materiales y métodos}
+\label{sec:methods}
+
+\subsection{Diseño del estudio}
+
+Se realizó un experimento computacional de evaluación de pipeline. La unidad de análisis fue un documento científico único con un artefacto de extracción asociado. Para cada documento se siguió la misma cadena: extracción de hechos condicionada por \OPMAD{}, limpieza y conversión al esquema de 19 campos, normalización de los campos que puede usar \myCBR{} y generación de una consulta contra la base histórica de 263 casos. De esta forma, cada documento produjo una representación estructurada y una consulta comparable con las demás.
+
+La comparación de recuperación fue pareada porque la misma consulta se evaluó en dos condiciones: (a) el top-5 devuelto directamente por \myCBR{} ordenado por similitud, usado como línea base (\emph{baseline}); y (b) un top-5 reordenado con MMR a partir de los 15 candidatos más similares. Este diseño mantiene constante la extracción, el puente RDF--CBR, la base de casos y la consulta; solo cambia la regla que selecciona la lista final desde el conjunto candidato. Por ello, las diferencias observadas en similitud y diversidad se interpretan como efecto del reranking, no como diferencias entre documentos o entre extracciones.
+
+Además de esa comparación downstream, se realizaron auditorías de interoperabilidad y trazabilidad: cobertura de los 19 campos, conformidad SHACL, uso de valores predeterminados, normalización hacia el vocabulario histórico, modelo de lenguaje que generó cada artefacto, confianza del enlace PDF--facts, atributos activos en la consulta CBR y sensibilidad a parámetros de reranking. El estudio no entrenó un predictor, no evaluó diagnóstico o pronóstico industrial real y no midió utilidad humana. La fidelidad factual de las extracciones se delimita mediante el protocolo de anotación humana descrito en la \cref{sec:human-annotation}, pero sus resultados no forman parte de este experimento computacional.
+
+\subsection{Corpus y cribado}
+
+El corpus se construyó a partir de registros Scopus en inglés publicados en 2025--2026. La estrategia de búsqueda combinó términos de mantenimiento predictivo, mantenimiento basado en condición, pronóstico y salud de sistemas, estimación de vida útil remanente, monitorización de condición y pronóstico de fallas. Para reducir ruido, se excluyeron revisiones y usos ambiguos de acrónimos frecuentes. El cribado aplicó dos criterios de inclusión simultáneos: el artículo debía referirse a un activo físico diseñado y debía tener un propósito explícito de mantenimiento, inspección, diagnóstico, pronóstico o decisión basada en condición.
+
+El flujo de selección separó tres etapas: recuperación bibliográfica, cribado temático y disponibilidad de texto completo. De 3.990 registros recuperados, 2.768 cumplieron los criterios de inclusión y 1.222 fueron excluidos. Para los registros incluidos se intentó recuperar el PDF por vías legales; se obtuvieron 1.822 archivos, de los cuales dos correspondían al mismo contenido, por lo que el análisis usa 1.821 documentos únicos. Los 946 registros incluidos sin PDF accesible no se trataron como fallos de extracción, sino como una fuente de sesgo de cobertura: la disponibilidad de texto completo varió por año y por modalidad de acceso. La \cref{fig:flow-corpus} resume el flujo; la consulta Scopus, las decisiones de cribado por registro y la auditoría de disponibilidad se documentan en el suplemento.
+
+\begin{figure}[t]
+\centering
+\begin{tikzpicture}[
+  node distance=5mm and 7mm,
+  box/.style={draw,rounded corners,align=center,minimum width=2.45cm,minimum height=1.0cm,fill=gray!6,font=\small},
+  keep/.style={box,fill=ontogreen!12},
+  arrow/.style={-{Latex[length=2mm]},thick}
+]
+\node[box] (scopus) {Scopus\\3.990 registros};
+\node[keep,right=of scopus] (screen) {Cribado\\2.768 incluidos};
+\node[box,below=of screen] (excluded) {1.222 excluidos};
+\node[keep,right=of screen] (pdf) {1.822 PDF\\recuperados};
+\node[keep,right=of pdf] (unique) {1.821 documentos\\únicos};
+\node[keep,right=of unique] (facts) {1.821 artefactos\\RDF y consultas};
+\draw[arrow] (scopus) -- (screen);
+\draw[arrow] (screen) -- (pdf);
+\draw[arrow] (pdf) -- (unique);
+\draw[arrow] (unique) -- (facts);
+\draw[arrow] (screen) -- (excluded);
+\node[below=2mm of pdf,font=\scriptsize,align=center,text width=2.6cm] {946 incluidos sin PDF accesible};
+\end{tikzpicture}
+\caption{Flujo del corpus experimental. La diferencia entre 1.822 archivos y 1.821 documentos se debe a un duplicado exacto, no a una extracción ausente.}
+\label{fig:flow-corpus}
+\end{figure}
+
+\subsection{Extracción condicionada por OPMAD}
+
+Los textos se procesaron por lotes con modelos GPT mediante \OntoCast{} en modo de ontología fija. La extracción usó una semilla autocontenida de \OPMAD{} (56 clases, 15 propiedades de objeto y dos propiedades de datos) para restringir el vocabulario a artículos, activos, variables, modelos y funciones de mantenimiento. En esta configuración, \OntoCast{} no debía crear clases nuevas ni modificar la ontología; debía generar, para cada documento, un archivo Turtle con hechos compatibles con \OPMAD{}.
+
+Esos archivos Turtle fueron la entrada del puente RDF--CBR descrito en la siguiente subsección. La procedencia de los hechos se conservó para auditoría, pero no se utilizó como criterio de similitud ni de recuperación CBR.
+
+\subsection{Puente RDF--CBR y normalización}
+
+El archivo \texttt{facts\_to\_csv.py} actúa como puente entre los hechos RDF y el esquema CBR. Para cada archivo Turtle, el puente lee el grafo, identifica entidades por tipo y recupera sus nombres mediante etiquetas como \texttt{schema:name} y \texttt{rdfs:label}. Después transforma la información disponible en una fila validada por un modelo Pydantic de 19 campos. Esos campos agrupan metadatos bibliográficos, tarea de mantenimiento, activo, señales o variables de entrada, preprocesamiento, configuración y nombres de modelos, sincronización, modos de falla, desempeño y notas complementarias.
+
+Cuando el grafo no contiene evidencia para un campo, el puente usa marcas explícitas de ausencia, por ejemplo \texttt{Not reported} o \texttt{Unknown synchronization}; algunos campos numéricos heredados se completan con cero. Estos valores permiten construir archivos CSV válidos y consultas ejecutables, pero no deben interpretarse como hechos extraídos del texto. Por esa razón, la auditoría distingue entre valores informativos, valores predeterminados y etiquetas genéricas generadas automáticamente.
+
+Cada documento se procesó de forma independiente. Si un archivo Turtle contenía más de un posible caso, se seleccionó un caso de manera determinista para evitar duplicar el documento, aunque esa regla no garantiza siempre que el caso elegido corresponda al estudio fuente. Antes de consultar \myCBR{}, los valores se alinearon con el vocabulario histórico de la base de casos; los campos no reconocidos o los valores predeterminados sin evidencia se descartaron o recibieron peso cero. La conformidad estructural se revisó con formas SHACL mínimas sobre título, modelos, activos y variables. Esta validación comprueba que el artefacto tiene la estructura esperada, pero no demuestra exactitud factual respecto del texto.
+
+\subsection{Recuperación CBR}
+
+Las consultas normalizadas se ejecutaron contra la base histórica \myCBR{} utilizada en la infraestructura \OPMAD{}--CBR. Esta base contiene 263 casos documentados de aplicaciones de modelos en mantenimiento predictivo. Para evitar inconsistencias entre la recuperación y el análisis posterior, la misma versión de la base se usó tanto para consultar casos como para leer las firmas de solución empleadas en las métricas de diversidad. Los documentos extraídos pertenecen a 2025--2026, mientras que los casos históricos son anteriores; por ello, la evaluación mantiene una separación temporal entre literatura objetivo y memoria CBR.
+
+Cada consulta contiene únicamente los atributos que sobrevivieron al puente y a la normalización. \myCBR{} calcula la similitud global a partir de similitudes locales para tarea, tipo y nombre del activo, sincronización, modalidad, variables de entrada y año. La tarea utiliza relaciones ontológicas, el nombre del activo se compara mediante distancia de Levenshtein y las variables de entrada se tratan como conjuntos; otros atributos emplean tablas simbólicas heredadas de la infraestructura previa \citep{Sanchez2012SemanticSimilarity,MonteroJimenez2021OPMADCBR}. Los atributos vacíos no aportan peso a la consulta, y los valores usados solo como marcas de ausencia no se trataron como evidencia.
+
+La salida directa de \myCBR{} se usó como línea base: los cinco casos más similares forman el top-5 sin diversificación. Para la condición con diversidad, primero se recuperó un conjunto candidato de 15 casos y después se aplicó el reranking descrito en la siguiente subsección. El año de consulta se fijó en 2026 para mantener constante la función de recencia. Como controles de sensibilidad se evaluaron consultas con diferentes subconjuntos de atributos y años alternativos, con el fin de identificar qué parte del ranking dependía de tarea, activo, variables o recencia.
+
+\subsection{Reranking MMR}
+\label{sec:mmr}
+
+El reranking se añadió como postproceso de la recuperación CBR. Su objetivo no es cambiar la similitud calculada por \myCBR{} ni modificar la base de casos, sino seleccionar una lista final menos redundante a partir de un conjunto candidato ya recuperado. En términos prácticos, cada consulta produce primero un pool de casos similares; después MMR escoge una lista corta que balancea dos criterios: conservar casos relevantes para la consulta y evitar soluciones demasiado parecidas entre sí.
+
+Para medir si dos recomendaciones son parecidas se definió una similitud de solución, $s_{\mathrm{sol}}$. Esta función no compara los problemas descritos por los artículos, sino las soluciones recomendadas por la base CBR. Combina cuatro componentes: enfoque del modelo, tipo de modelo, nombres de modelos y preprocesamiento:
+\begin{equation}
+ s_{\mathrm{sol}}(x,y)=0{,}20s_{\mathrm{enfoque}}+0{,}25s_{\mathrm{tipo}}+0{,}40s_{\mathrm{modelos}}+0{,}15s_{\mathrm{prep}}.
+ \label{eq:solution-sim}
+\end{equation}
+El mayor peso se asignó a los nombres de modelos porque el objetivo de la diversificación era reducir listas con alternativas modelísticas repetidas. Para enfoque y tipo se combinaron coincidencias léxicas; para modelos se añadió una taxonomía de términos de la base histórica; y para preprocesamiento se usó coincidencia exacta. Cuando una recomendación enumera varios algoritmos en el campo \texttt{Models}, la firma de modelos se interpreta como una cadena multivalor normalizada, no como un único algoritmo.
+
+MMR selecciona los elementos de forma voraz. El primer resultado de \myCBR{} se conserva para no alterar la recomendación más similar. Luego, cada nuevo elemento se elige maximizando:
+\begin{equation}
+ x^{*}=\arg\max_{x\in R\setminus S}\left[\lambda\,\mathrm{rel}(x)-(1-\lambda)\max_{y\in S}s_{\mathrm{sol}}(x,y)\right],
+ \label{eq:mmr}
+\end{equation}
+donde $R$ es el pool candidato, $S$ la lista ya seleccionada y $\mathrm{rel}(x)$ la similitud global calculada por \myCBR{}. El parámetro $\lambda$ controla el compromiso: valores altos priorizan relevancia CBR y valores bajos penalizan con más fuerza la redundancia entre soluciones. La configuración principal usó $\lambda=0{,}70$, pool 15 y salida top-5.
+
+Para comprobar que las conclusiones no dependieran de una sola parametrización, se evaluaron valores alternativos de $\lambda$, tamaños de pool, tamaños de lista y pesos de $s_{\mathrm{sol}}$. También se comparó MMR con reglas que responden a criterios diferentes: deduplicación exacta de firmas de modelos, selección max-sum y MAP-DPP. Estos comparadores no se presentan como métodos nuevos; sirven para mostrar si la reducción de redundancia observada es propia de MMR o del objetivo de diversidad elegido.
+
+\begin{figure}[H]
+\centering
+\begin{tikzpicture}[
+  node distance=6mm and 7mm,
+  proc/.style={draw,rounded corners,align=center,minimum width=2.25cm,minimum height=1.05cm,fill=gray!6,font=\small},
+  data/.style={proc,fill=cbrblue!10},
+  sem/.style={proc,fill=ontogreen!12},
+  rank/.style={proc,fill=mmrred!10},
+  arrow/.style={-{Latex[length=2mm]},thick}
+]
+\node[data] (pdf) {PDF};
+\node[sem,right=of pdf] (cast) {\OntoCast{}\\\OPMAD{} fija};
+\node[data,right=of cast] (rdf) {Hechos RDF-star\\por documento};
+\node[sem,right=of rdf] (bridge) {Limpieza + puente\\19 campos};
+\node[data,below=of bridge] (query) {Consulta\\normalizada};
+\node[proc,left=of query] (cbr) {\myCBR{}\\pool top-15};
+\node[rank,left=of cbr] (mmr) {MMR\\top-5};
+\node[sem,below=of cbr] (base) {Base OPMAD\\263 casos};
+\node[sem,below=of mmr] (tax) {Taxonomía\\131 términos};
+\draw[arrow] (pdf) -- (cast);
+\draw[arrow] (cast) -- (rdf);
+\draw[arrow] (rdf) -- (bridge);
+\draw[arrow] (bridge) -- (query);
+\draw[arrow] (query) -- (cbr);
+\draw[arrow] (cbr) -- (mmr);
+\draw[arrow] (base) -- (cbr);
+\draw[arrow] (tax) -- (mmr);
+\end{tikzpicture}
+\caption{Arquitectura evaluada. El reranking no modifica la base de casos ni los puntajes CBR; selecciona cinco recomendaciones desde el pool de 15.}
+\label{fig:architecture}
+\end{figure}
+
+\subsection{Anotación humana a nivel de texto congelado}
+\label{sec:human-annotation}
+
+Para evaluar la fidelidad de la extracción sin convertir el estudio en una auditoría de conversión PDF--texto, se definió una validación humana sobre paquetes de evidencia congelados. Cada paquete contiene identificador, título, metadatos mínimos y el texto usado como entrada por los brazos de extracción. Los PDF quedan como referencia documental, pero los anotadores no deben verificar si la conversión reproduce fielmente el PDF; el constructo evaluado es la extracción desde el texto disponible.
+
+La unidad de anotación es el documento. Dos especialistas independientes reciben los paquetes en orden aleatorio y sin acceso a predicciones, hechos RDF, consultas CBR ni rankings. Para cada documento registran un valor de referencia para tarea, activo o caso de estudio, tipo de caso, entrada del modelo, número y tipos de variables, preprocesamiento, enfoque, tipos y nombres de modelos, sincronización, modos de falla, indicadores y valores de desempeño, título e identificador. Los campos escalares se anotan como cadena, número o \texttt{null}; los campos multivalor como listas. Cuando el texto congelado no contiene evidencia suficiente, el valor se marca como ausente, no se infiere desde conocimiento externo.
+
+Además del valor, cada anotador registra una localización textual breve en un bloque de evidencia y notas libres. La evidencia puede ser una sección, página convertida, encabezado o frase corta dentro del paquete; su función es hacer auditable la decisión, no medir calidad OCR. Después de un piloto de calibración fuera de la estimación final, los desacuerdos se resuelven por adjudicación documentada o por un tercer experto. El archivo adjudicado constituye el patrón de referencia para comparar OntoCast--\OPMAD{}, extracción JSON genérica, esquema generado por LLM y ontología generada por LLM en vistas de resumen, secciones y texto completo.
+
+Las métricas de esta validación se calculan por documento y campo. En campos multivalor se comparan conjuntos normalizados y se reportan precisión, exhaustividad y F1; en campos escalares se reporta coincidencia exacta normalizada y errores de omisión o comisión. Una predicción con valor no respaldado por el patrón de referencia cuenta como falso positivo o alucinación operacional; un valor presente en el patrón de referencia y ausente en la predicción cuenta como falso negativo. El acuerdo entre anotadores se estima antes de la adjudicación. Este protocolo queda especificado para una fase de validación semántica y no introduce resultados humanos en los análisis reportados a continuación.
+
+\subsection{Métricas y análisis estadístico}
+
+Las métricas se organizaron en tres grupos. El primero evalúa interoperabilidad: número de documentos con artefactos parseables, número de consultas ejecutables, cobertura no predeterminada de los campos del esquema y conformidad estructural mediante SHACL. Estas métricas indican si la cadena produce objetos computables, pero no demuestran que los valores sean correctos respecto del texto.
+
+El segundo grupo describe la recuperación CBR antes y después del reranking. Para cada consulta se registró la similitud del primer resultado, la similitud media del top-5, el número de firmas de modelos distintas, la presencia de firmas repetidas, los cambios de orden y los cambios de conjunto. Estas medidas permiten observar si el postproceso modifica la lista final y cuánto cuesta esa modificación en términos de similitud CBR.
+
+El tercer grupo mide diversidad algorítmica mediante disimilitud intra-lista. Para una lista $L$ de $k=5$ recomendaciones, se calculó:
+\begin{equation}
+ \ILD(L)=\frac{2}{k(k-1)}\sum_{i<j}\left[1-s_{\mathrm{sol}}(x_i,x_j)\right],\qquad k=5.
+ \label{eq:ild}
+\end{equation}
+Esta métrica usa la misma similitud de solución definida para MMR en la \cref{eq:solution-sim}. Por tanto, debe interpretarse como una medida alineada con el objetivo del reranking, no como validación independiente de utilidad, novedad percibida o calidad técnica de los modelos recomendados.
+
+El análisis principal fue pareado: para cada documento se comparó la lista top-5 de \myCBR{} con la lista top-5 obtenida después de MMR. Se reportaron diferencias medias e intervalos de confianza del 95\% mediante 20.000 remuestras bootstrap. Como muchas consultas pueden producir rankings idénticos o muy parecidos, se repitió el bootstrap agrupando por firmas normalizadas y por patrones de ranking; así se evitó tratar rankings duplicados como evidencia completamente independiente.
+
+Los análisis de sensibilidad evaluaron cambios en $\lambda$, tamaño del pool, tamaño de la lista, pesos de la similitud de solución, atributos activos de la consulta y año usado por la función de recencia. Las pruebas estadísticas no se interpretan como inferencia sobre una población clínica o industrial, sino como estabilidad del comportamiento algorítmico bajo el corpus estudiado. La anotación humana descrita en la \cref{sec:human-annotation} queda reservada para medir fidelidad semántica de extracción y no se reemplaza por un juez LLM.
+
+\FloatBarrier
+\bibliographystyle{unsrtnat}
+\bibliography{references}
+
+\end{document}

@@ -1,0 +1,418 @@
+@prefix None: <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD/seed#> .
+@prefix cco: <http://www.ontologyrepository.com/CommonCoreOntologies/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doc: <https://growgraph.dev/doc/4c2b5277dd6e/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix obo: <http://purl.obolibrary.org/obo/> .
+@prefix cd: <https://growgraph.dev/facts> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix schema: <https://schema.org/> .
+@prefix schema1: <http://schema.org/> .
+doc:b4d0cb3b0c0e a prov:Entity , schema:text ;
+	prov:generatedAtTime "2026-07-11T05:06:50.234636Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+	schema:position 0 ;
+	schema:identifier "b4d0cb3b0c0e" .
+doc:Factsarticle1_10 schema1:author doc:FactsauthorMerve .
+_:d507e423a02ee86e022676df588b016e rdf:reifies <<( doc:Factsarticle1_10 schema1:author doc:FactsauthorMerve )>> ;
+	prov:wasDerivedFrom doc:b4d0cb3b0c0e .
+doc:FactsDssm rdfs:label "Deep State Space Model (DSSM)" .
+_:cf52f2b5cd92fb14112dee601603ecb1 rdf:reifies <<( doc:FactsDssm rdfs:label "Deep State Space Model (DSSM)" )>> ;
+	prov:wasDerivedFrom doc:b4d0cb3b0c0e .
+doc:Factsmodule1_1 a None:Predictive_maintenance_system_module .
+_:c3d39ea3c855650ae6a6d858b81ba620 rdf:reifies <<( doc:Factsmodule1_1 rdf:type None:Predictive_maintenance_system_module )>> ;
+	prov:wasDerivedFrom doc:b4d0cb3b0c0e .
+doc:FactsrmseIndicator a None:Performance_indicator .
+_:b831f8cd488c2ac5a7aa06349ef02eb rdf:reifies <<( doc:FactsrmseIndicator rdf:type None:Performance_indicator )>> ;
+	prov:wasDerivedFrom doc:b4d0cb3b0c0e .
+doc:FactspicpValue a None:Performance_value .
+_:fbbd46b29f530a5947a104771c0fb764 rdf:reifies <<( doc:FactspicpValue rdf:type None:Performance_value )>> ;
+	prov:wasDerivedFrom doc:b4d0cb3b0c0e .
+doc:FactsauthorMerve schema1:affiliation doc:FactsorgMunzur .
+_:f27f915f8b345c2aae01eec20807939b rdf:reifies <<( doc:FactsauthorMerve schema1:affiliation doc:FactsorgMunzur )>> ;
+	prov:wasDerivedFrom doc:b4d0cb3b0c0e .
+doc:FactsDssm a None:Predictive_maintenance_model .
+_:d2e40c00672e02fe56bf2e7b00c4b9d4 rdf:reifies <<( doc:FactsDssm rdf:type None:Predictive_maintenance_model )>> ;
+	prov:wasDerivedFrom doc:b4d0cb3b0c0e .
+doc:FactsDssm None:has_text_value "Probabilistic Deep State Space Model with variational inference for RUL prognosis" .
+_:f5e7ae00c1ec11c65dd1aabcd094a24f rdf:reifies <<( doc:FactsDssm None:has_text_value "Probabilistic Deep State Space Model with variational inference for RUL prognosis" )>> ;
+	prov:wasDerivedFrom doc:b4d0cb3b0c0e .
+doc:Factsarticle1_10 cco:is_about doc:Factsmodule1_1 .
+_:f6497bc38992e9a71480d6e0f8ef61b2 rdf:reifies <<( doc:Factsarticle1_10 cco:is_about doc:Factsmodule1_1 )>> ;
+	prov:wasDerivedFrom doc:b4d0cb3b0c0e .
+doc:FactsRlAgent None:has_text_value "Heuristic reinforcement learning agent used for online adaptation / concept drift" .
+_:b48e129e4a192397b062ec80221a7d1d rdf:reifies <<( doc:FactsRlAgent None:has_text_value "Heuristic reinforcement learning agent used for online adaptation / concept drift" )>> ;
+	prov:wasDerivedFrom doc:b4d0cb3b0c0e .
+doc:FactspicpValue schema1:value 8.1829 .
+_:be4cdffdb02a7e2ef2c77928338432c4 rdf:reifies <<( doc:FactspicpValue schema1:value 8.1829 )>> ;
+	prov:wasDerivedFrom doc:b4d0cb3b0c0e .
+doc:Factsarticle1_10 schema1:dateAccepted "2026-04-01"^^<http://www.w3.org/2001/XMLSchema#date> .
+_:b7e82695e2b32d20cc6f94a91cdf5c8b rdf:reifies <<( doc:Factsarticle1_10 schema1:dateAccepted "2026-04-01"^^<http://www.w3.org/2001/XMLSchema#date> )>> ;
+	prov:wasDerivedFrom doc:b4d0cb3b0c0e .
+doc:FactsorgMunzur schema1:name "Wroclaw University of Science and Technology" .
+_:a845aea81d27e94a5dc78a5f7e1b824e rdf:reifies <<( doc:FactsorgMunzur schema1:name "Wroclaw University of Science and Technology" )>> ;
+	prov:wasDerivedFrom doc:b4d0cb3b0c0e .
+doc:FactspicpIndicator a None:Performance_indicator .
+_:cb027480190048105f6edd8ebf49be1c rdf:reifies <<( doc:FactspicpIndicator rdf:type None:Performance_indicator )>> ;
+	prov:wasDerivedFrom doc:b4d0cb3b0c0e .
+doc:FactsauthorMerve a schema1:Person .
+_:e7408fc7280dcd7e8c3ebf304da3595a rdf:reifies <<( doc:FactsauthorMerve rdf:type schema1:Person )>> ;
+	prov:wasDerivedFrom doc:b4d0cb3b0c0e .
+doc:FactsRlAgent rdfs:label "Heuristic reinforcement learning agent (online adaptation)" .
+_:fc4724454f1f4a0f8153ce4cae649235 rdf:reifies <<( doc:FactsRlAgent rdfs:label "Heuristic reinforcement learning agent (online adaptation)" )>> ;
+	prov:wasDerivedFrom doc:b4d0cb3b0c0e .
+doc:Factssection_2 None:has_text_value "A Metric-Driven Evaluation Framework for Remaining Useful Life Prognosis with Quantified Uncertainty" .
+_:fac01c380519dd25716b0245805b61d3 rdf:reifies <<( doc:Factssection_2 None:has_text_value "A Metric-Driven Evaluation Framework for Remaining Useful Life Prognosis with Quantified Uncertainty" )>> ;
+	prov:wasDerivedFrom doc:b4d0cb3b0c0e .
+doc:FactsorgMunzur a schema1:Organization .
+_:a5fd3fe93c541b42aaf6c60b43dc08a0 rdf:reifies <<( doc:FactsorgMunzur rdf:type schema1:Organization )>> ;
+	prov:wasDerivedFrom doc:b4d0cb3b0c0e .
+doc:Factsarticle1_10 a None:Predictive_Maintenance_Article .
+_:f42b044f55d08963f29f089a68a48250 rdf:reifies <<( doc:Factsarticle1_10 rdf:type None:Predictive_Maintenance_Article )>> ;
+	prov:wasDerivedFrom doc:b4d0cb3b0c0e .
+doc:FactsauthorMerve schema1:name "Merve Ertarğın" .
+_:f88db47ed499de368ca4cc6f96da537c rdf:reifies <<( doc:FactsauthorMerve schema1:name "Merve Ertarğın" )>> ;
+	prov:wasDerivedFrom doc:b4d0cb3b0c0e .
+doc:FactsorgMunzur schema1:address "Na Grobli 15, 50-421 Wroclaw, Poland" .
+_:fd8e67c2302905201edaea07566e9552 rdf:reifies <<( doc:FactsorgMunzur schema1:address "Na Grobli 15, 50-421 Wroclaw, Poland" )>> ;
+	prov:wasDerivedFrom doc:b4d0cb3b0c0e .
+doc:FactspicpValue schema1:value 0.59416 .
+_:e4defdb602031e7d4ce228a0cec4133f rdf:reifies <<( doc:FactspicpValue schema1:value 0.59416 )>> ;
+	prov:wasDerivedFrom doc:b4d0cb3b0c0e .
+doc:Factsmodule_sync1 None:has_text_value "online" .
+_:c7ae690f9754456f1da2cc990d2f411c rdf:reifies <<( doc:Factsmodule_sync1 None:has_text_value "online" )>> ;
+	prov:wasDerivedFrom doc:b4d0cb3b0c0e .
+doc:FactsSma None:has_text_value "Slime Mold Algorithm used for hyperparameter optimization" .
+_:a258bf1a29288336da57450917dfdb13 rdf:reifies <<( doc:FactsSma None:has_text_value "Slime Mold Algorithm used for hyperparameter optimization" )>> ;
+	prov:wasDerivedFrom doc:b4d0cb3b0c0e .
+doc:FactsrmseIndicator cco:describes doc:FactspicpValue .
+_:fcaeceece0698eaf6e75e23279b7a224 rdf:reifies <<( doc:FactsrmseIndicator cco:describes doc:FactspicpValue )>> ;
+	prov:wasDerivedFrom doc:b4d0cb3b0c0e .
+doc:Factsarticle1_10 schema1:dateModified "2026-03-30"^^<http://www.w3.org/2001/XMLSchema#date> .
+_:ab54ed2db07d2dde1675eaeab29247fd rdf:reifies <<( doc:Factsarticle1_10 schema1:dateModified "2026-03-30"^^<http://www.w3.org/2001/XMLSchema#date> )>> ;
+	prov:wasDerivedFrom doc:b4d0cb3b0c0e .
+doc:FactsimsDataset a cco:Database .
+_:ad5f275f26e15f07d186fd5720b7171d rdf:reifies <<( doc:FactsimsDataset rdf:type cco:Database )>> ;
+	prov:wasDerivedFrom doc:b4d0cb3b0c0e .
+doc:Factsarticle1_10 None:has_title doc:Factssection_2 .
+_:a5fc13015c945e4a9c82a3f230c27192 rdf:reifies <<( doc:Factsarticle1_10 None:has_title doc:Factssection_2 )>> ;
+	prov:wasDerivedFrom doc:b4d0cb3b0c0e .
+doc:Factsmodule1_1 None:has_synchronization doc:Factsmodule_sync1 .
+_:f0471977f53ece3722b79fd56c89869d rdf:reifies <<( doc:Factsmodule1_1 None:has_synchronization doc:Factsmodule_sync1 )>> ;
+	prov:wasDerivedFrom doc:b4d0cb3b0c0e .
+doc:FactsauthorMerve schema1:name "Govind Vashishtha" .
+_:ee4389dca73d99dd9055f27bad364c8e rdf:reifies <<( doc:FactsauthorMerve schema1:name "Govind Vashishtha" )>> ;
+	prov:wasDerivedFrom doc:b4d0cb3b0c0e .
+doc:Factspubyear1_2 None:has_interger_value 2026 .
+_:ac19a879a6b9d96aac304a2f43fff218 rdf:reifies <<( doc:Factspubyear1_2 None:has_interger_value 2026 )>> ;
+	prov:wasDerivedFrom doc:b4d0cb3b0c0e .
+doc:FactsauthorMerve schema1:name "Sumika Chauhan" .
+_:ebce7213a1ce61c13fce28ae5177dafd rdf:reifies <<( doc:FactsauthorMerve schema1:name "Sumika Chauhan" )>> ;
+	prov:wasDerivedFrom doc:b4d0cb3b0c0e .
+doc:FactsauthorMerve schema1:email "merveboydak@munzur.edu.tr" .
+_:c806ed6f464850625cd2167ba3ec6390 rdf:reifies <<( doc:FactsauthorMerve schema1:email "merveboydak@munzur.edu.tr" )>> ;
+	prov:wasDerivedFrom doc:b4d0cb3b0c0e .
+doc:FactsorgMunzur schema1:address "Dehradun 248002, India" .
+_:e531390d68c2ff241e46c21cba20e90c rdf:reifies <<( doc:FactsorgMunzur schema1:address "Dehradun 248002, India" )>> ;
+	prov:wasDerivedFrom doc:b4d0cb3b0c0e .
+doc:FactsRlAgent a cco:Algorithm .
+_:dcabf7700b8a8158dffbbf2c9c746f1b rdf:reifies <<( doc:FactsRlAgent rdf:type cco:Algorithm )>> ;
+	prov:wasDerivedFrom doc:b4d0cb3b0c0e .
+doc:FactsauthorMerve schema1:email "sumi.chauhan2@gmail.com" .
+_:f12b7fbcf4eae50bfb0e2a2dec47c368 rdf:reifies <<( doc:FactsauthorMerve schema1:email "sumi.chauhan2@gmail.com" )>> ;
+	prov:wasDerivedFrom doc:b4d0cb3b0c0e .
+doc:FactsauthorMerve schema1:email "govindyudivashishtha@gmail.com" .
+_:a8689dd9724270df5cb71549496e0b04 rdf:reifies <<( doc:FactsauthorMerve schema1:email "govindyudivashishtha@gmail.com" )>> ;
+	prov:wasDerivedFrom doc:b4d0cb3b0c0e .
+doc:Factsmodule_sync1 a None:Module_synchronization .
+_:d9a488c25a3a07aff0f82726bed39782 rdf:reifies <<( doc:Factsmodule_sync1 rdf:type None:Module_synchronization )>> ;
+	prov:wasDerivedFrom doc:b4d0cb3b0c0e .
+doc:Factsarticle1_10 obo:RO_0010002 doc:FactspicpValue .
+_:ad6d9393fb9fdf8fa05222951904b24c rdf:reifies <<( doc:Factsarticle1_10 obo:RO_0010002 doc:FactspicpValue )>> ;
+	prov:wasDerivedFrom doc:b4d0cb3b0c0e .
+doc:FactsSma rdfs:label "Slime Mold Algorithm (SMA)" .
+_:e298bb494c63d9ad4d65835ee2e3f1b9 rdf:reifies <<( doc:FactsSma rdfs:label "Slime Mold Algorithm (SMA)" )>> ;
+	prov:wasDerivedFrom doc:b4d0cb3b0c0e .
+doc:FactsorgMunzur schema1:address "Tunceli 62000, Turkey" .
+_:c99fe766da9a38951ca290af3e4496ab rdf:reifies <<( doc:FactsorgMunzur schema1:address "Tunceli 62000, Turkey" )>> ;
+	prov:wasDerivedFrom doc:b4d0cb3b0c0e .
+doc:Factsarticle1_10 rdfs:label "A Metric-Driven Evaluation Framework for Remaining Useful Life Prognosis with Quantified Uncertainty" .
+_:dbee7cda25c583f9311b52b88c720ebd rdf:reifies <<( doc:Factsarticle1_10 rdfs:label "A Metric-Driven Evaluation Framework for Remaining Useful Life Prognosis with Quantified Uncertainty" )>> ;
+	prov:wasDerivedFrom doc:b4d0cb3b0c0e .
+doc:FactsimsDataset rdfs:label "IMS bearing dataset" .
+_:a5b5922f35396ea73f150cd76a12fd6b rdf:reifies <<( doc:FactsimsDataset rdfs:label "IMS bearing dataset" )>> ;
+	prov:wasDerivedFrom doc:b4d0cb3b0c0e .
+doc:FactspicpIndicator rdfs:label "PICP (Prediction Interval Coverage Probability)" .
+_:e8c54f869bcfa087a27be5d0d42b5c38 rdf:reifies <<( doc:FactspicpIndicator rdfs:label "PICP (Prediction Interval Coverage Probability)" )>> ;
+	prov:wasDerivedFrom doc:b4d0cb3b0c0e .
+doc:Factspubyear1_2 a None:Publication_year .
+_:c586cb9bb36d5ccdec8750e549d2f9a3 rdf:reifies <<( doc:Factspubyear1_2 rdf:type None:Publication_year )>> ;
+	prov:wasDerivedFrom doc:b4d0cb3b0c0e .
+doc:FactsorgMunzur schema1:name "Graphic Era Deemed to Be University" .
+_:d8a3bb10ed8ac52d1bc3418fef4816e8 rdf:reifies <<( doc:FactsorgMunzur schema1:name "Graphic Era Deemed to Be University" )>> ;
+	prov:wasDerivedFrom doc:b4d0cb3b0c0e .
+doc:FactspicpIndicator cco:describes doc:FactspicpValue .
+_:a4794d0ec687dc4407ac0216c0f5c735 rdf:reifies <<( doc:FactspicpIndicator cco:describes doc:FactspicpValue )>> ;
+	prov:wasDerivedFrom doc:b4d0cb3b0c0e .
+doc:FactsrmseIndicator rdfs:label "Root Mean Square Error (RMSE)" .
+_:ff62e71494819bf12a8a5cfa1d20e8b1 rdf:reifies <<( doc:FactsrmseIndicator rdfs:label "Root Mean Square Error (RMSE)" )>> ;
+	prov:wasDerivedFrom doc:b4d0cb3b0c0e .
+doc:Factsarticle1_10 cco:is_about doc:FactsDssm .
+_:acd5c0bd29283c0db2a87fc36be448dd rdf:reifies <<( doc:Factsarticle1_10 cco:is_about doc:FactsDssm )>> ;
+	prov:wasDerivedFrom doc:b4d0cb3b0c0e .
+doc:Factsarticle1_10 schema1:datePublished "2026-04-03"^^<http://www.w3.org/2001/XMLSchema#date> .
+_:c7982ac9a0917ce129e08be2cb5969e rdf:reifies <<( doc:Factsarticle1_10 schema1:datePublished "2026-04-03"^^<http://www.w3.org/2001/XMLSchema#date> )>> ;
+	prov:wasDerivedFrom doc:b4d0cb3b0c0e .
+doc:FactsSma a cco:Algorithm .
+_:ce080201c627dfe36ac4a6ba705ef107 rdf:reifies <<( doc:FactsSma rdf:type cco:Algorithm )>> ;
+	prov:wasDerivedFrom doc:b4d0cb3b0c0e .
+doc:Factsarticle1_10 cco:is_about doc:FactsSma .
+_:fdc4704b89b62f8f70b4451a51bbaf76 rdf:reifies <<( doc:Factsarticle1_10 cco:is_about doc:FactsSma )>> ;
+	prov:wasDerivedFrom doc:b4d0cb3b0c0e .
+doc:Factsarticle1_10 cco:is_about doc:FactsimsDataset .
+_:eae4573f5dc5d8e92ab0f143ee5c801a rdf:reifies <<( doc:Factsarticle1_10 cco:is_about doc:FactsimsDataset )>> ;
+	prov:wasDerivedFrom doc:b4d0cb3b0c0e .
+doc:Factssection_2 a None:Article_title .
+_:e60f204dddb13476c6d6276a7678e849 rdf:reifies <<( doc:Factssection_2 rdf:type None:Article_title )>> ;
+	prov:wasDerivedFrom doc:b4d0cb3b0c0e .
+doc:Factsarticle1_10 None:has_publication_year doc:Factspubyear1_2 .
+_:be39eb892de4034d1f8db4ae7d7f758c rdf:reifies <<( doc:Factsarticle1_10 None:has_publication_year doc:Factspubyear1_2 )>> ;
+	prov:wasDerivedFrom doc:b4d0cb3b0c0e .
+doc:Factsarticle1_10 schema1:dateReceived "2026-02-26"^^<http://www.w3.org/2001/XMLSchema#date> .
+_:ad9706eac581f8886456eee9bcaddd52 rdf:reifies <<( doc:Factsarticle1_10 schema1:dateReceived "2026-02-26"^^<http://www.w3.org/2001/XMLSchema#date> )>> ;
+	prov:wasDerivedFrom doc:b4d0cb3b0c0e .
+doc:FactsorgMunzur schema1:name "University of Munzur" .
+_:b290922b9223a415c0a5bf0bfea1b512 rdf:reifies <<( doc:FactsorgMunzur schema1:name "University of Munzur" )>> ;
+	prov:wasDerivedFrom doc:b4d0cb3b0c0e .
+doc:Factsarticle1_10 cco:is_about doc:FactsRlAgent .
+_:c0985f13066efc9a99af36e65169635e rdf:reifies <<( doc:Factsarticle1_10 cco:is_about doc:FactsRlAgent )>> ;
+	prov:wasDerivedFrom doc:b4d0cb3b0c0e .
+doc:6185e9abeefd a prov:Entity , schema:text ;
+	prov:generatedAtTime "2026-07-11T05:06:50.23764Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+	schema:position 1 ;
+	schema:identifier "6185e9abeefd" .
+doc:FactsWienerProcess_2 cd:has_characteristic doc:FactsGaussian .
+_:acef8a5b239c9d1895ae3d6b19a81d6c rdf:reifies <<( doc:FactsWienerProcess_2 cd:has_characteristic doc:FactsGaussian )>> ;
+	prov:wasDerivedFrom doc:6185e9abeefd .
+doc:FactsMdpi_2 a schema1:Organization .
+_:e95ccf557ebcce1086ee0bbff444390d rdf:reifies <<( doc:FactsMdpi_2 rdf:type schema1:Organization )>> ;
+	prov:wasDerivedFrom doc:6185e9abeefd .
+doc:FactsRf None:describes_type doc:FactsRulPrediction_3 .
+_:abca956e7ff469b558d9979bb219f4db rdf:reifies <<( doc:FactsRf None:describes_type doc:FactsRulPrediction_3 )>> ;
+	prov:wasDerivedFrom doc:6185e9abeefd .
+_:ac19a879a6b9d96aac304a2f43fff218 prov:wasDerivedFrom doc:6185e9abeefd .
+doc:FactsGaussian a None:Design_detail .
+_:dada4238426dce03642a76b840a16b09 rdf:reifies <<( doc:FactsGaussian rdf:type None:Design_detail )>> ;
+	prov:wasDerivedFrom doc:6185e9abeefd .
+doc:FactsArticle2026 None:has_publication_year doc:Factspubyear1_2 .
+_:c54af57e548ba5a9dfe90d63631d6c6e rdf:reifies <<( doc:FactsArticle2026 None:has_publication_year doc:Factspubyear1_2 )>> ;
+	prov:wasDerivedFrom doc:6185e9abeefd .
+doc:FactsLstm_9 cd:has_capability doc:FactsRf .
+_:a836dfca4e3bd623d6978c90329d6048 rdf:reifies <<( doc:FactsLstm_9 cd:has_capability doc:FactsRf )>> ;
+	prov:wasDerivedFrom doc:6185e9abeefd .
+doc:FactsLstm_9 None:describes_type doc:FactsRulPrediction_3 .
+_:b95953dd70c3ab16f727832e8cfdea46 rdf:reifies <<( doc:FactsLstm_9 None:describes_type doc:FactsRulPrediction_3 )>> ;
+	prov:wasDerivedFrom doc:6185e9abeefd .
+doc:FactsRulPrediction_3 cco:is_about doc:FactsRotatingMachinery .
+_:ddd35dca71aa53c404b87cd192d066dc rdf:reifies <<( doc:FactsRulPrediction_3 cco:is_about doc:FactsRotatingMachinery )>> ;
+	prov:wasDerivedFrom doc:6185e9abeefd .
+doc:FactsRf cd:has_property doc:FactsUseSoftAttentionMechanism .
+_:cdda327de44ccd879b6fdc30932b2fb9 rdf:reifies <<( doc:FactsRf cd:has_property doc:FactsUseSoftAttentionMechanism )>> ;
+	prov:wasDerivedFrom doc:6185e9abeefd .
+doc:FactsArticle2026 schema1:publisher doc:FactsMdpi_2 .
+_:bd92c332f739252925a85d6790f8e800 rdf:reifies <<( doc:FactsArticle2026 schema1:publisher doc:FactsMdpi_2 )>> ;
+	prov:wasDerivedFrom doc:6185e9abeefd .
+doc:FactsRf a None:Predictive_maintenance_model .
+_:c70a36595e363cef44405d6dd4e3318b rdf:reifies <<( doc:FactsRf rdf:type None:Predictive_maintenance_model )>> ;
+	prov:wasDerivedFrom doc:6185e9abeefd .
+doc:FactsWienerProcess_2 None:describes_type doc:FactsRulPrediction_3 .
+_:eb418b571530275ed7948d77949a53 rdf:reifies <<( doc:FactsWienerProcess_2 None:describes_type doc:FactsRulPrediction_3 )>> ;
+	prov:wasDerivedFrom doc:6185e9abeefd .
+doc:FactsWienerProcess_2 a None:Data_mining_technique_function .
+_:ff76f30667ef85b9304d373dea7c97af rdf:reifies <<( doc:FactsWienerProcess_2 rdf:type None:Data_mining_technique_function )>> ;
+	prov:wasDerivedFrom doc:6185e9abeefd .
+doc:FactsRf cd:has_limitation doc:FactsDifficultyLongTermDependencies .
+_:eb35f731b1062dc0cfc48d7b81bbbe0d rdf:reifies <<( doc:FactsRf cd:has_limitation doc:FactsDifficultyLongTermDependencies )>> ;
+	prov:wasDerivedFrom doc:6185e9abeefd .
+_:c586cb9bb36d5ccdec8750e549d2f9a3 prov:wasDerivedFrom doc:6185e9abeefd .
+doc:FactsRf a None:Predictive_maintenance_module_function .
+_:d7da92481310a9a0be44ed084f191848 rdf:reifies <<( doc:FactsRf rdf:type None:Predictive_maintenance_module_function )>> ;
+	prov:wasDerivedFrom doc:6185e9abeefd .
+doc:FactsWienerProcess_2 cd:has_limitation doc:FactsGaussian .
+_:b9e02a6a23c523a2d9a304234bf87269 rdf:reifies <<( doc:FactsWienerProcess_2 cd:has_limitation doc:FactsGaussian )>> ;
+	prov:wasDerivedFrom doc:6185e9abeefd .
+doc:FactsUseSoftAttentionMechanism a None:Design_detail .
+_:ff83a6a527b629b5d6a787ff18376ad2 rdf:reifies <<( doc:FactsUseSoftAttentionMechanism rdf:type None:Design_detail )>> ;
+	prov:wasDerivedFrom doc:6185e9abeefd .
+doc:FactsArticle2026 None:has_text_value "This article is an open access article distributed under the terms and conditions of the Creative Commons Attribution (CC BY) license." .
+_:fe63a05361b1b9e490edae17f53f0832 rdf:reifies <<( doc:FactsArticle2026 None:has_text_value "This article is an open access article distributed under the terms and conditions of the Creative Commons Attribution (CC BY) license." )>> ;
+	prov:wasDerivedFrom doc:6185e9abeefd .
+doc:FactsRulPrediction_3 a None:Remaining_useful_life_estimation .
+_:a947809dffbcaa9455aa9e83a7fdc0cd rdf:reifies <<( doc:FactsRulPrediction_3 rdf:type None:Remaining_useful_life_estimation )>> ;
+	prov:wasDerivedFrom doc:6185e9abeefd .
+doc:FactsWienerProcess_2 None:has_text_value "widely used for RUL uncertainty quantification because of continuous, Markovian, and Gaussian characteristics" .
+_:f50a33ea509f71bfddf9a600ca4c5ea rdf:reifies <<( doc:FactsWienerProcess_2 None:has_text_value "widely used for RUL uncertainty quantification because of continuous, Markovian, and Gaussian characteristics" )>> ;
+	prov:wasDerivedFrom doc:6185e9abeefd .
+doc:FactsWienerProcess_2 None:has_text_value "difficult to adapt to complex nonlinear degradation due to complexity of physical modeling and limitations of assumptions" .
+_:e8537ecfe35ab829ae41331b5aab1b16 rdf:reifies <<( doc:FactsWienerProcess_2 None:has_text_value "difficult to adapt to complex nonlinear degradation due to complexity of physical modeling and limitations of assumptions" )>> ;
+	prov:wasDerivedFrom doc:6185e9abeefd .
+doc:FactsRf cd:integrates doc:FactsRf .
+_:ddeff1de5ca22d551fb938a00757ef52 rdf:reifies <<( doc:FactsRf cd:integrates doc:FactsRf )>> ;
+	prov:wasDerivedFrom doc:6185e9abeefd .
+doc:FactsWienerProcess_2 cco:is_about doc:FactsRulPredictionAccuracy .
+_:bbdb1ded8ef16f5d7d936c07203a968d rdf:reifies <<( doc:FactsWienerProcess_2 cco:is_about doc:FactsRulPredictionAccuracy )>> ;
+	prov:wasDerivedFrom doc:6185e9abeefd .
+doc:FactsGammaProcess None:describes_type doc:FactsRulPrediction_3 .
+_:c31b42babd64677ed08aa6cd7a14059b rdf:reifies <<( doc:FactsGammaProcess None:describes_type doc:FactsRulPrediction_3 )>> ;
+	prov:wasDerivedFrom doc:6185e9abeefd .
+doc:FactsRf cco:is_about None:Fault_feature_extraction .
+_:aaafaf5d52a14102f52f0c90199f649b rdf:reifies <<( doc:FactsRf cco:is_about None:Fault_feature_extraction )>> ;
+	prov:wasDerivedFrom doc:6185e9abeefd .
+doc:FactsDifficultyLongTermDependencies a None:Design_detail .
+_:c87c2993433917267dbbfdf3c1b2c17e rdf:reifies <<( doc:FactsDifficultyLongTermDependencies rdf:type None:Design_detail )>> ;
+	prov:wasDerivedFrom doc:6185e9abeefd .
+doc:FactsRf cco:is_about doc:FactsRulPredictionAccuracy .
+_:f63b161c7e77f0cb9515d821b7e67856 rdf:reifies <<( doc:FactsRf cco:is_about doc:FactsRulPredictionAccuracy )>> ;
+	prov:wasDerivedFrom doc:6185e9abeefd .
+doc:FactsRulPredictionAccuracy a None:Performance_indicator .
+_:a4789d3f33a7a349ff1d7a1869b52901 rdf:reifies <<( doc:FactsRulPredictionAccuracy rdf:type None:Performance_indicator )>> ;
+	prov:wasDerivedFrom doc:6185e9abeefd .
+doc:FactsRotatingMachinery a None:Maintainable_item .
+_:dda95ad6a113635ef35d02cee36d17b8 rdf:reifies <<( doc:FactsRotatingMachinery rdf:type None:Maintainable_item )>> ;
+	prov:wasDerivedFrom doc:6185e9abeefd .
+doc:FactsRf cd:has_property doc:FactsRf .
+_:a0300d344dc4c097d909b53830e9c8df rdf:reifies <<( doc:FactsRf cd:has_property doc:FactsRf )>> ;
+	prov:wasDerivedFrom doc:6185e9abeefd .
+doc:FactsArticle2026 a None:Predictive_Maintenance_Article .
+_:fa00a700b60dc70a6b2431e2f8a8fc83 rdf:reifies <<( doc:FactsArticle2026 rdf:type None:Predictive_Maintenance_Article )>> ;
+	prov:wasDerivedFrom doc:6185e9abeefd .
+doc:FactsLstm_9 a None:Predictive_maintenance_model .
+_:b0e4d04eaaa55bbde06ee9129031b0a3 rdf:reifies <<( doc:FactsLstm_9 rdf:type None:Predictive_maintenance_model )>> ;
+	prov:wasDerivedFrom doc:6185e9abeefd .
+doc:FactsGammaProcess a None:Data_mining_technique_function .
+_:b509a61774c1fa9eb72df4046ea6b85a rdf:reifies <<( doc:FactsGammaProcess rdf:type None:Data_mining_technique_function )>> ;
+	prov:wasDerivedFrom doc:6185e9abeefd .
+doc:accf98f7b926 a prov:Entity , schema:text ;
+	prov:generatedAtTime "2026-07-11T05:06:50.23964Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+	schema:position 2 ;
+	schema:identifier "accf98f7b926" .
+_:c3d39ea3c855650ae6a6d858b81ba620 prov:wasDerivedFrom doc:accf98f7b926 .
+doc:FactsGaussian None:has_text_value "Hyperparameter optimization strategy utilizing the Slime Mold Algorithm (SMA)." .
+_:e497edc503c83f75e5520b0fc09e2fa6 rdf:reifies <<( doc:FactsGaussian None:has_text_value "Hyperparameter optimization strategy utilizing the Slime Mold Algorithm (SMA)." )>> ;
+	prov:wasDerivedFrom doc:accf98f7b926 .
+doc:FactsIntervalPredictionForRul None:has_text_value "Interval prediction approach that quantifies RUL uncertainty." .
+_:eaf0b975965a1bc221ff1dba5612a839 rdf:reifies <<( doc:FactsIntervalPredictionForRul None:has_text_value "Interval prediction approach that quantifies RUL uncertainty." )>> ;
+	prov:wasDerivedFrom doc:accf98f7b926 .
+doc:FactsGaussian None:has_text_value "Enables few-shot tool-state recognition via adversarial meta-learning combined with physics-guided fault-evolution knowledge." .
+_:eb3263aca37297ae387fe0b0054ba276 rdf:reifies <<( doc:FactsGaussian None:has_text_value "Enables few-shot tool-state recognition via adversarial meta-learning combined with physics-guided fault-evolution knowledge." )>> ;
+	prov:wasDerivedFrom doc:accf98f7b926 .
+doc:Factsmodule1_1 None:has_design_detail doc:FactsGaussian .
+_:e45a81d0f7a5663017222094dfc9b271 rdf:reifies <<( doc:Factsmodule1_1 None:has_design_detail doc:FactsGaussian )>> ;
+	prov:wasDerivedFrom doc:accf98f7b926 .
+doc:FactsAdversarialMetaLearning a cco:Algorithm .
+_:e9dd63967ed315ae129119a11fff925b rdf:reifies <<( doc:FactsAdversarialMetaLearning rdf:type cco:Algorithm )>> ;
+	prov:wasDerivedFrom doc:accf98f7b926 .
+doc:FactsToolStateRecognitionExperiment a None:Performance_value .
+_:a5023e6ffba726d5515b8020508b6404 rdf:reifies <<( doc:FactsToolStateRecognitionExperiment rdf:type None:Performance_value )>> ;
+	prov:wasDerivedFrom doc:accf98f7b926 .
+_:c70a36595e363cef44405d6dd4e3318b prov:wasDerivedFrom doc:accf98f7b926 .
+_:e60f204dddb13476c6d6276a7678e849 prov:wasDerivedFrom doc:accf98f7b926 .
+doc:FactsGaussian None:has_text_value "Probabilistic Deep State-Space Model (DSSM) learned implicitly via variational inference; no parametric assumptions about degradation path." .
+_:f9708a6e430f4d95723de3e1e757de6 rdf:reifies <<( doc:FactsGaussian None:has_text_value "Probabilistic Deep State-Space Model (DSSM) learned implicitly via variational inference; no parametric assumptions about degradation path." )>> ;
+	prov:wasDerivedFrom doc:accf98f7b926 .
+doc:FactsRf None:has_title doc:Factssection_2 .
+_:e09e579b1e69405a68484949ae011615 rdf:reifies <<( doc:FactsRf None:has_title doc:Factssection_2 )>> ;
+	prov:wasDerivedFrom doc:accf98f7b926 .
+doc:FactsGaussian None:has_text_value "Adaptive online learning mechanism to counter concept drift." .
+_:b725f1c853dbd6f54c76fc729e3f729e rdf:reifies <<( doc:FactsGaussian None:has_text_value "Adaptive online learning mechanism to counter concept drift." )>> ;
+	prov:wasDerivedFrom doc:accf98f7b926 .
+_:dada4238426dce03642a76b840a16b09 prov:wasDerivedFrom doc:accf98f7b926 .
+doc:FactsRf a None:Predictive_Maintenance_Article .
+_:cf795c0f5cede12b6b2ec9a977ea450a rdf:reifies <<( doc:FactsRf rdf:type None:Predictive_Maintenance_Article )>> ;
+	prov:wasDerivedFrom doc:accf98f7b926 .
+doc:FactsRf cco:is_about doc:FactsPhysicsGuidedFaultEvolution .
+_:b209312d7d3d80737094791f662b8dd7 rdf:reifies <<( doc:FactsRf cco:is_about doc:FactsPhysicsGuidedFaultEvolution )>> ;
+	prov:wasDerivedFrom doc:accf98f7b926 .
+doc:FactsConditionalParameterizedConvolution a cco:Algorithm .
+_:d8a9fcc5079ecafe52d2f9c29b45c07c rdf:reifies <<( doc:FactsConditionalParameterizedConvolution rdf:type cco:Algorithm )>> ;
+	prov:wasDerivedFrom doc:accf98f7b926 .
+doc:Factssection_2 None:has_text_value "Modeling multi-stage Wiener degradation and RUL improvement via Bayesian information criterion (Wang et al. [23])" .
+_:ae1b6a121528a9e54722ed021b5bb21d rdf:reifies <<( doc:Factssection_2 None:has_text_value "Modeling multi-stage Wiener degradation and RUL improvement via Bayesian information criterion (Wang et al. [23])" )>> ;
+	prov:wasDerivedFrom doc:accf98f7b926 .
+doc:FactsRf None:has_design_detail doc:FactsIntervalPredictionForRul .
+_:e64845a722d23d1de24e0272358817b4 rdf:reifies <<( doc:FactsRf None:has_design_detail doc:FactsIntervalPredictionForRul )>> ;
+	prov:wasDerivedFrom doc:accf98f7b926 .
+doc:Factssection_2 None:has_text_value "Interval prediction based on improved conditional parameterized convolution and nonlinear Wiener process (He et al. [24])" .
+_:d81d8c89733d796d0add439bdd5a3f5c rdf:reifies <<( doc:Factssection_2 None:has_text_value "Interval prediction based on improved conditional parameterized convolution and nonlinear Wiener process (He et al. [24])" )>> ;
+	prov:wasDerivedFrom doc:accf98f7b926 .
+doc:FactsRf None:has_design_detail doc:FactsConditionalParameterizedConvolution .
+_:c6aed6c0af843d9074a9325c15bbbe6e rdf:reifies <<( doc:FactsRf None:has_design_detail doc:FactsConditionalParameterizedConvolution )>> ;
+	prov:wasDerivedFrom doc:accf98f7b926 .
+doc:FactsSma doc:factsrefersTo "Slime Mold Algorithm" .
+_:c248b713026cae0242f8fe9420241885 rdf:reifies <<( doc:FactsSma doc:factsrefersTo "Slime Mold Algorithm" )>> ;
+	prov:wasDerivedFrom doc:accf98f7b926 .
+doc:FactsRf cco:is_about doc:FactsToolStateRecognitionExperiment .
+_:b4b5c2b99ba038bc81391ff8c831f510 rdf:reifies <<( doc:FactsRf cco:is_about doc:FactsToolStateRecognitionExperiment )>> ;
+	prov:wasDerivedFrom doc:accf98f7b926 .
+_:f0471977f53ece3722b79fd56c89869d prov:wasDerivedFrom doc:accf98f7b926 .
+doc:FactsGaussian None:has_text_value "Metric-driven evaluation framework explicitly incorporates quantified uncertainty to produce reliable uncertainty bounds for RUL predictions." .
+_:d1bb3c16b6d652ddb510a64103cbac15 rdf:reifies <<( doc:FactsGaussian None:has_text_value "Metric-driven evaluation framework explicitly incorporates quantified uncertainty to produce reliable uncertainty bounds for RUL predictions." )>> ;
+	prov:wasDerivedFrom doc:accf98f7b926 .
+doc:FactsIntervalPredictionForRul a None:Design_detail .
+_:ab6421605513f31eb1e7233f2f83e172 rdf:reifies <<( doc:FactsIntervalPredictionForRul rdf:type None:Design_detail )>> ;
+	prov:wasDerivedFrom doc:accf98f7b926 .
+doc:Factssection_2 None:has_text_value "A metric-driven probabilistic DSSM framework with variational inference, SMA hyperparameter optimization, and adaptive online learning (this paper)" .
+_:abe93faba49c6c8054a3bd28e7e1a373 rdf:reifies <<( doc:Factssection_2 None:has_text_value "A metric-driven probabilistic DSSM framework with variational inference, SMA hyperparameter optimization, and adaptive online learning (this paper)" )>> ;
+	prov:wasDerivedFrom doc:accf98f7b926 .
+doc:FactsToolStateRecognitionExperiment None:has_text_value "Experiments show superior accuracy detecting healthy, worn, and broken tool conditions with minimal target data requirements." .
+_:fb8db74bf6900ab6ce3fb26788bd7a58 rdf:reifies <<( doc:FactsToolStateRecognitionExperiment None:has_text_value "Experiments show superior accuracy detecting healthy, worn, and broken tool conditions with minimal target data requirements." )>> ;
+	prov:wasDerivedFrom doc:accf98f7b926 .
+doc:FactsRf None:has_design_detail doc:FactsGaussian .
+_:e31721ff208812c0ffda802cc1769c66 rdf:reifies <<( doc:FactsRf None:has_design_detail doc:FactsGaussian )>> ;
+	prov:wasDerivedFrom doc:accf98f7b926 .
+doc:Factsmodule_sync1 None:has_text_value "online (adaptive)" .
+_:ed92b32afacc67ae5e786a8ebe66df9b rdf:reifies <<( doc:Factsmodule_sync1 None:has_text_value "online (adaptive)" )>> ;
+	prov:wasDerivedFrom doc:accf98f7b926 .
+doc:FactsRf cco:is_about doc:FactsRf .
+_:cf48016992bc3fab08f611ebb10435c8 rdf:reifies <<( doc:FactsRf cco:is_about doc:FactsRf )>> ;
+	prov:wasDerivedFrom doc:accf98f7b926 .
+doc:FactsGaussian None:has_text_value "Depends on fixed parametric drift functions (e.g., power or exponential), limiting flexibility to capture complex nonlinear degradation trends." .
+_:b6bd01d4206e4098e24f40660e7e1955 rdf:reifies <<( doc:FactsGaussian None:has_text_value "Depends on fixed parametric drift functions (e.g., power or exponential), limiting flexibility to capture complex nonlinear degradation trends." )>> ;
+	prov:wasDerivedFrom doc:accf98f7b926 .
+doc:FactsLstm_9 a cco:Algorithm .
+_:ccc1633fbee5696b5ab697d8df5461a1 rdf:reifies <<( doc:FactsLstm_9 rdf:type cco:Algorithm )>> ;
+	prov:wasDerivedFrom doc:accf98f7b926 .
+doc:FactsGaussian None:has_text_value "Wiener-process-based models often rely on fixed drift functions and so may fail to capture complex nonlinear degradation." .
+_:e535d4b8fe973b4edf9455a2da9b81a2 rdf:reifies <<( doc:FactsGaussian None:has_text_value "Wiener-process-based models often rely on fixed drift functions and so may fail to capture complex nonlinear degradation." )>> ;
+	prov:wasDerivedFrom doc:accf98f7b926 .
+doc:Factssection_2 None:has_text_value "Physics-guided fault-evolution knowledge with adversarial meta-learning for few-shot tool-state recognition (Yin et al. [25])" .
+_:d05c0db71b72230cc892bfbfe828fb58 rdf:reifies <<( doc:Factssection_2 None:has_text_value "Physics-guided fault-evolution knowledge with adversarial meta-learning for few-shot tool-state recognition (Yin et al. [25])" )>> ;
+	prov:wasDerivedFrom doc:accf98f7b926 .
+doc:Factsmodule1_1 None:has_predictive_maintenance_function None:Remaining_useful_life_estimation .
+_:a680c977642889f8cba4d6357803a040 rdf:reifies <<( doc:Factsmodule1_1 None:has_predictive_maintenance_function None:Remaining_useful_life_estimation )>> ;
+	prov:wasDerivedFrom doc:accf98f7b926 .
+doc:FactsRf cco:is_about doc:FactsAdversarialMetaLearning .
+_:be95969b65dbae1a76642aad92d5af5b rdf:reifies <<( doc:FactsRf cco:is_about doc:FactsAdversarialMetaLearning )>> ;
+	prov:wasDerivedFrom doc:accf98f7b926 .
+_:d9a488c25a3a07aff0f82726bed39782 prov:wasDerivedFrom doc:accf98f7b926 .
+doc:FactsPhysicsGuidedFaultEvolution a None:Design_detail .
+_:ed513766e7c079b5c88435eca414ec1b rdf:reifies <<( doc:FactsPhysicsGuidedFaultEvolution rdf:type None:Design_detail )>> ;
+	prov:wasDerivedFrom doc:accf98f7b926 .
+doc:factsrefersTo a rdf:Property .
+_:d55e5dd387eb9a3d6181a73ff6a78899 rdf:reifies <<( doc:factsrefersTo rdf:type rdf:Property )>> ;
+	prov:wasDerivedFrom doc:accf98f7b926 .
+doc:FactsGaussian None:has_text_value "Hybrid approaches combining deep learning and stochastic processes often have high-dimensional parameter sets that hinder manual tuning; rigorous uncertainty quantification is frequently absent." .
+_:d0ce4d11c70cb3acd9f55b5e5994a177 rdf:reifies <<( doc:FactsGaussian None:has_text_value "Hybrid approaches combining deep learning and stochastic processes often have high-dimensional parameter sets that hinder manual tuning; rigorous uncertainty quantification is frequently absent." )>> ;
+	prov:wasDerivedFrom doc:accf98f7b926 .
+doc:FactsRf cco:is_about doc:Factsmodule1_1 .
+_:c3985638ef0c3cf9067182a122355a24 rdf:reifies <<( doc:FactsRf cco:is_about doc:Factsmodule1_1 )>> ;
+	prov:wasDerivedFrom doc:accf98f7b926 .
+doc:FactsRf None:has_design_detail doc:Factssection_2 .
+_:e10d8d481095c386679aed1206057751 rdf:reifies <<( doc:FactsRf None:has_design_detail doc:Factssection_2 )>> ;
+	prov:wasDerivedFrom doc:accf98f7b926 .
+_:ce080201c627dfe36ac4a6ba705ef107 prov:wasDerivedFrom doc:accf98f7b926 .
+doc:Factssection_2 None:has_text_value "Fundamental theoretical background of Long Short-Term Memory networks and Uncertainty Quantification." .
+_:f6fe489fb3c19bb108da565201c760c3 rdf:reifies <<( doc:Factssection_2 None:has_text_value "Fundamental theoretical background of Long Short-Term Memory networks and Uncertainty Quantification." )>> ;
+	prov:wasDerivedFrom doc:accf98f7b926 .
+doc:Factsmodule1_1 cco:is_about None:Remaining_useful_life_estimation .
+_:be24d172f18e17c04b2652071f4af747 rdf:reifies <<( doc:Factsmodule1_1 cco:is_about None:Remaining_useful_life_estimation )>> ;
+	prov:wasDerivedFrom doc:accf98f7b926 .

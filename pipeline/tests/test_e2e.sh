@@ -6,7 +6,12 @@ cd "$ROOT_DIR"
 
 PYTHON_BIN=${PYTHON_BIN:-python3}
 
-FACTS_PATH=${FACTS_PATH:-pipeline/test_output/facts_5cc89b5bfaf6.ttl}
+if [[ -z "${FACTS_PATH:-}" ]]; then
+  echo "FACTS_PATH is required for this integration test." >&2
+  echo "Run fixed-mode extraction first, then invoke for example:" >&2
+  echo "  FACTS_PATH=pipeline/test_output/facts_<run-id>.ttl PYTHON_BIN=python bash pipeline/tests/test_e2e.sh" >&2
+  exit 1
+fi
 ONTOLOGY_PATH=${ONTOLOGY_PATH:-pipeline/seed_ontology/opmad_seed.ttl}
 CSV_OUTPUT=${CSV_OUTPUT:-pipeline/test_output/extracted_cases.csv}
 QUERY_META=${QUERY_META:-pipeline/test_output/e2e_query_meta.json}

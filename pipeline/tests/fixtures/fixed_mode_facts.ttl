@@ -1,0 +1,45 @@
+@prefix doc: <urn:ontologies-unit:facts#> .
+@prefix opmad: <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+
+# Source chunk metadata kept to mirror OntoCast facts output.
+doc:Chunk1 a prov:Entity ;
+    schema:identifier "chunk-1" .
+
+doc:Paper a opmad:Predictive_Maintenance_Article ;
+    schema:name "Unit test predictive maintenance study" ;
+    schema:datePublished "2024-03-01" ;
+    schema:identifier "doi:10.0000/unit" ;
+    schema:keywords "predictive maintenance, sensors" .
+
+_:ev1 rdf:reifies <<( doc:Paper rdf:type opmad:Predictive_Maintenance_Article )>> ;
+    prov:wasDerivedFrom doc:Chunk1 .
+
+doc:HydraulicPress a opmad:Maintainable_item ;
+    rdfs:label "Hydraulic press" .
+
+doc:ScadaRecord a schema:Action ;
+    schema:name "SCADA record" ;
+    schema:instrument doc:VibrationSensor .
+
+doc:VibrationSensor schema:name "Vibration sensor" .
+
+doc:TemperatureVariable a opmad:Data_variable ;
+    schema:name "Temperature" .
+
+doc:VibrationVariable a opmad:Data_variable ;
+    schema:name "Vibration" .
+
+doc:RandomForestModel a opmad:Predictive_maintenance_model ;
+    schema:name "Random forest classifier" ;
+    schema:object doc:RandomForestType .
+
+doc:RandomForestType schema:name "Random forest" .
+
+doc:ScalingStep a opmad:Design_detail ;
+    schema:name "Min-max scaling" .
+
+doc:ForecastTask a opmad:One_step_future_state_forecast .

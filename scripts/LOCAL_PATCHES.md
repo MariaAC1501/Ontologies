@@ -27,14 +27,14 @@ The following patches are applied to the local `external/ontocast` checkout:
 | Area | Purpose |
 |---|---|
 | Ontology-render prompt | Escapes `ontology_prefix` so fresh ontology bootstrapping does not raise a formatting `KeyError`. |
-| Configuration | Disables direct OpenAI API-key configuration, permits the OpenAI-compatible local subscription proxy via `LLM_BASE_URL`, and adds `skip_ontology_critique`. |
+| Configuration | Disables direct OpenAI API-key configuration, permits the OpenAI-compatible local subscription proxy via `LLM_BASE_URL`, adds `skip_ontology_critique`, and passes arbitrary OpenAI model IDs through so new releases (for example `gpt-5.6-luna`) work without an OntoCast update. |
 | Tool and state graph wiring | Propagates `skip_ontology_critique`; gives parallel ontology/facts workers their configured retry budgets and safely copied budget trackers. |
 | RDF graph copying | Adds `RDFGraph.__deepcopy__`, omitting unsupported RDF-star triple terms while preserving ordinary triples and namespace bindings. |
 | SPARQL updates | Omits tuple-valued RDF-star terms from generated SPARQL update text instead of serializing invalid updates. |
 | Critics | Accepts scores of 80 or higher and makes optional implicit enrichment/minor fact omissions non-blocking. |
 | Quota handling | Retries the same document after subscription usage-limit errors instead of skipping it. The wait is controlled by `ONTOCAST_QUOTA_RETRY_SECONDS` (default: 900 seconds). |
 
-The fixed OPMAD configuration enables `SKIP_ONTOLOGY_CRITIQUE=true`; the full-evolution configuration intentionally leaves it unset. Both configurations use the local Pi Codex subscription proxy and do not carry OpenAI API keys. See `pipeline/ontocast_config.env` and `pipeline/full_mode/ontocast_full_config.env`.
+The fixed OPMAD configuration enables `SKIP_ONTOLOGY_CRITIQUE=true`; the full-evolution configuration intentionally leaves it unset. Both configurations use the local Pi Codex subscription proxy and do not carry OpenAI API keys. To select a newer model, set `LLM_MODEL_NAME` in the OntoCast configuration and set the proxy's actual Pi model with `PI_CODEX_MODEL` (for example, both to `gpt-5.6-luna`). See `pipeline/ontocast_config.env` and `pipeline/full_mode/ontocast_full_config.env`.
 
 ## Diversity-in-CBR
 

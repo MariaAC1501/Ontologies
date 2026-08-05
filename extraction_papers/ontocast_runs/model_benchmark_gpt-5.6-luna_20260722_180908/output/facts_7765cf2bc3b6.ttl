@@ -1,0 +1,766 @@
+@prefix None: <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD/seed#> .
+@prefix cco: <http://www.ontologyrepository.com/CommonCoreOntologies/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doc: <https://growgraph.dev/doc/7765cf2bc3b6/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix obo: <http://purl.obolibrary.org/obo/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix schema: <https://schema.org/> .
+@prefix schema1: <http://schema.org/> .
+doc:0a016d794569 a prov:Entity , schema:text ;
+	prov:generatedAtTime "2026-07-23T00:18:11.295525Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+	schema:position 0 ;
+	schema:identifier "0a016d794569" .
+doc:Factsarticle1 schema:name "Predictive Maintenance of Rotating Machines, Application to the DHB Semolina Decorticator" .
+_:b475c83d70a105cd865eb30c7030b32a rdf:reifies <<( doc:Factsarticle1 schema:name "Predictive Maintenance of Rotating Machines, Application to the DHB Semolina Decorticator" )>> ;
+	prov:wasDerivedFrom doc:0a016d794569 .
+doc:FactsdhbDecorticator schema:location "semolina mill" .
+_:ac396d140248b40adb294cd6f1c48fc9 rdf:reifies <<( doc:FactsdhbDecorticator schema:location "semolina mill" )>> ;
+	prov:wasDerivedFrom doc:0a016d794569 .
+doc:Factsarticle1 schema:author doc:Factszhai .
+_:c38643ded985128d7ce5805785938c75 rdf:reifies <<( doc:Factsarticle1 schema:author doc:Factszhai )>> ;
+	prov:wasDerivedFrom doc:0a016d794569 .
+doc:Factsclearances schema:name "alignment problems" .
+_:af880ea8fc5243803f4390e12c312c4c rdf:reifies <<( doc:Factsclearances schema:name "alignment problems" )>> ;
+	prov:wasDerivedFrom doc:0a016d794569 .
+doc:Factsarticle1 None:has_title doc:Factstitle1 .
+_:c375a490e93bda0838c075532f55d2be rdf:reifies <<( doc:Factsarticle1 None:has_title doc:Factstitle1 )>> ;
+	prov:wasDerivedFrom doc:0a016d794569 .
+doc:Factsclearances schema:name "clearances" .
+_:d7d3b067ffdde5d803b8c71a69476b79 rdf:reifies <<( doc:Factsclearances schema:name "clearances" )>> ;
+	prov:wasDerivedFrom doc:0a016d794569 .
+doc:FactsvibrationMeasurements a schema:Observation .
+_:acdf6ac4440ce1a1b55b22a96be4f99b rdf:reifies <<( doc:FactsvibrationMeasurements rdf:type schema:Observation )>> ;
+	prov:wasDerivedFrom doc:0a016d794569 .
+doc:Factszhai schema:email "r.magraoui.labstructures.usdb@gmail.com" .
+_:ef18439ea4d8c420cae3926a38717bc5 rdf:reifies <<( doc:Factszhai schema:email "r.magraoui.labstructures.usdb@gmail.com" )>> ;
+	prov:wasDerivedFrom doc:0a016d794569 .
+doc:Factsarticle1 None:has_identifier doc:Factsdoi1 .
+_:c3741fd5090c1999df07f331de12bf38 rdf:reifies <<( doc:Factsarticle1 None:has_identifier doc:Factsdoi1 )>> ;
+	prov:wasDerivedFrom doc:0a016d794569 .
+doc:Factsclearances schema:name "bearing issues" .
+_:fccd40c117c046d111e307bafdacdf17 rdf:reifies <<( doc:Factsclearances schema:name "bearing issues" )>> ;
+	prov:wasDerivedFrom doc:0a016d794569 .
+doc:FactshealthAssessmentFunction a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Health_assessment> .
+_:a5f5da43ba6cc779e9aa6f03a65fd2c rdf:reifies <<( doc:FactshealthAssessmentFunction rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Health_assessment> )>> ;
+	prov:wasDerivedFrom doc:0a016d794569 .
+doc:Factslmpmm a schema:Organization .
+_:a1c6a67c8d33ba71a8e17d953b746505 rdf:reifies <<( doc:Factslmpmm rdf:type schema:Organization )>> ;
+	prov:wasDerivedFrom doc:0a016d794569 .
+doc:Factszhai schema:email "ouali_mohammed@univ-blida.dz" .
+_:c593457ebe1182423f94249de8dcb0cd rdf:reifies <<( doc:Factszhai schema:email "ouali_mohammed@univ-blida.dz" )>> ;
+	prov:wasDerivedFrom doc:0a016d794569 .
+doc:Factsclearances schema:name "diagnosis and identification of faults using vibration analysis" .
+_:a027a66e779690645a235d8759475182 rdf:reifies <<( doc:Factsclearances schema:name "diagnosis and identification of faults using vibration analysis" )>> ;
+	prov:wasDerivedFrom doc:0a016d794569 .
+doc:Factsarticle1 a schema:ScholarlyArticle .
+_:dc68820c2958e86c5843603c7730c9db rdf:reifies <<( doc:Factsarticle1 rdf:type schema:ScholarlyArticle )>> ;
+	prov:wasDerivedFrom doc:0a016d794569 .
+doc:Factsarticle1 a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Predictive_maintenance_model> .
+_:ce3ae1f005fe8c504ad78f87c43eb918 rdf:reifies <<( doc:Factsarticle1 rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Predictive_maintenance_model> )>> ;
+	prov:wasDerivedFrom doc:0a016d794569 .
+doc:Factslmpmm schema:name "Mechanical Engineering Department" .
+_:d94bec99e481b82fdbd15771aa1a71e1 rdf:reifies <<( doc:Factslmpmm schema:name "Mechanical Engineering Department" )>> ;
+	prov:wasDerivedFrom doc:0a016d794569 .
+doc:FactsdhbDecorticator schema:description "The decorticator experienced frequent unexpected stops after commissioning." .
+_:a8648cc268ea98070d9ffd989816a13c rdf:reifies <<( doc:FactsdhbDecorticator schema:description "The decorticator experienced frequent unexpected stops after commissioning." )>> ;
+	prov:wasDerivedFrom doc:0a016d794569 .
+doc:Factszhai schema:email "oualimohammed@yahoo.fr" .
+_:ce86fa9efedabf475094d1ea8ff0b5e0 rdf:reifies <<( doc:Factszhai schema:email "oualimohammed@yahoo.fr" )>> ;
+	prov:wasDerivedFrom doc:0a016d794569 .
+doc:Factszhai schema:name "Mohammed OUALI" .
+_:fbcb3ea6134d6ada2865adf85aaaf187 rdf:reifies <<( doc:Factszhai schema:name "Mohammed OUALI" )>> ;
+	prov:wasDerivedFrom doc:0a016d794569 .
+doc:Factszhai schema:name "Adel ZEMIRLINE" .
+_:a7fd560c164e700872e6aee11ae62b36 rdf:reifies <<( doc:Factszhai schema:name "Adel ZEMIRLINE" )>> ;
+	prov:wasDerivedFrom doc:0a016d794569 .
+doc:Factszhai schema:email "magraoui_rabah@univ-blida.dz" .
+_:ca52c6ef017fa8ca8bd8f2dd56d4236b rdf:reifies <<( doc:Factszhai schema:email "magraoui_rabah@univ-blida.dz" )>> ;
+	prov:wasDerivedFrom doc:0a016d794569 .
+doc:Factsdoi1 a None:Article_identifier .
+_:b3e219afe71285e457c5cbc47118d9a1 rdf:reifies <<( doc:Factsdoi1 rdf:type None:Article_identifier )>> ;
+	prov:wasDerivedFrom doc:0a016d794569 .
+doc:Factslmpmm schema:name "Faculty of Engineering Sciences" .
+_:a5941b98bb1219db757c7492475127e5 rdf:reifies <<( doc:Factslmpmm schema:name "Faculty of Engineering Sciences" )>> ;
+	prov:wasDerivedFrom doc:0a016d794569 .
+doc:Factsarticle1 schema:about doc:FactsdhbDecorticator .
+_:a2fed7cfa10b11814a7049146743819b rdf:reifies <<( doc:Factsarticle1 schema:about doc:FactsdhbDecorticator )>> ;
+	prov:wasDerivedFrom doc:0a016d794569 .
+doc:Factsclearances a None:Fault_identification .
+_:c2de77d147f76a73a684a94d78f9e077 rdf:reifies <<( doc:Factsclearances rdf:type None:Fault_identification )>> ;
+	prov:wasDerivedFrom doc:0a016d794569 .
+doc:Factszhai a schema:Person .
+_:f619d6e1ec74051f3bbed85dde3aa3d4 rdf:reifies <<( doc:Factszhai rdf:type schema:Person )>> ;
+	prov:wasDerivedFrom doc:0a016d794569 .
+doc:Factsarticle1 schema:mentions doc:Factsclearances .
+_:dd9722a3069d68d5b6d1bf5e5b0198f2 rdf:reifies <<( doc:Factsarticle1 schema:mentions doc:Factsclearances )>> ;
+	prov:wasDerivedFrom doc:0a016d794569 .
+doc:Factszhai schema:affiliation doc:Factslmpmm .
+_:dede1fe38ab76d1e350464e3e553dccb rdf:reifies <<( doc:Factszhai schema:affiliation doc:Factslmpmm )>> ;
+	prov:wasDerivedFrom doc:0a016d794569 .
+doc:Factslmpmm schema:name "Structural Mechanics Research Laboratory" .
+_:ee642bc477dd870de74799416f58a2b6 rdf:reifies <<( doc:Factslmpmm schema:name "Structural Mechanics Research Laboratory" )>> ;
+	prov:wasDerivedFrom doc:0a016d794569 .
+doc:Factslmpmm schema:name "University of Blida 1" .
+_:aaac0bb393a82f411f2fa6e2f56c94f4 rdf:reifies <<( doc:Factslmpmm schema:name "University of Blida 1" )>> ;
+	prov:wasDerivedFrom doc:0a016d794569 .
+doc:FactsvibrationMeasurements schema:measurementMethod "vibration analysis" .
+_:a69eea9eb8610c5a694b648b601d92e8 rdf:reifies <<( doc:FactsvibrationMeasurements schema:measurementMethod "vibration analysis" )>> ;
+	prov:wasDerivedFrom doc:0a016d794569 .
+doc:FactsdhbDecorticator schema:additionalType "rotating machine" .
+_:f8663a771799c3c3288a2aa53704059b rdf:reifies <<( doc:FactsdhbDecorticator schema:additionalType "rotating machine" )>> ;
+	prov:wasDerivedFrom doc:0a016d794569 .
+doc:Factslmpmm schema:name "Medea University" .
+_:e53838c780e6a9ff0f9cd1000e6af513 rdf:reifies <<( doc:Factslmpmm schema:name "Medea University" )>> ;
+	prov:wasDerivedFrom doc:0a016d794569 .
+doc:Factsclearances a schema:Thing .
+_:d0559f5ba3898086cf8c2e84546eb667 rdf:reifies <<( doc:Factsclearances rdf:type schema:Thing )>> ;
+	prov:wasDerivedFrom doc:0a016d794569 .
+doc:FactsdhbDecorticator schema:name "DHB Semolina Decorticator" .
+_:e9b9c7cbfbc8c2a7bc7b16425fefecbc rdf:reifies <<( doc:FactsdhbDecorticator schema:name "DHB Semolina Decorticator" )>> ;
+	prov:wasDerivedFrom doc:0a016d794569 .
+doc:FactsdhbDecorticator a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Maintainable_item> .
+_:c303154111ab28ee8e1f5e33731fe41f rdf:reifies <<( doc:FactsdhbDecorticator rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Maintainable_item> )>> ;
+	prov:wasDerivedFrom doc:0a016d794569 .
+doc:FactsvibrationMeasurements schema:name "vibration measurements" .
+_:a5ecd297fad15dfdc0a9e08c7ec08f97 rdf:reifies <<( doc:FactsvibrationMeasurements schema:name "vibration measurements" )>> ;
+	prov:wasDerivedFrom doc:0a016d794569 .
+doc:Factszhai schema:email "zemirline.adel@yahoo.com" .
+_:af08768277cde11079961b2f657c24cd rdf:reifies <<( doc:Factszhai schema:email "zemirline.adel@yahoo.com" )>> ;
+	prov:wasDerivedFrom doc:0a016d794569 .
+doc:Factsarticle1 schema:mentions doc:FactshealthAssessmentFunction .
+_:a27691025be494f0acfee594da4f049 rdf:reifies <<( doc:Factsarticle1 schema:mentions doc:FactshealthAssessmentFunction )>> ;
+	prov:wasDerivedFrom doc:0a016d794569 .
+doc:Factsclearances a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Fault_detection> .
+_:d077213063879ef68056cebebfc28710 rdf:reifies <<( doc:Factsclearances rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Fault_detection> )>> ;
+	prov:wasDerivedFrom doc:0a016d794569 .
+doc:Factszhai schema:email "zemirline.adel@univ-medea.dz" .
+_:afc52b1b554cf9944d4c2b90ad20bc73 rdf:reifies <<( doc:Factszhai schema:email "zemirline.adel@univ-medea.dz" )>> ;
+	prov:wasDerivedFrom doc:0a016d794569 .
+doc:Factstitle1 None:has_text_value "Predictive Maintenance of Rotating Machines, Application to the DHB Semolina Decorticator" .
+_:c3614eda85c4e035ade3c3ecf9917624 rdf:reifies <<( doc:Factstitle1 None:has_text_value "Predictive Maintenance of Rotating Machines, Application to the DHB Semolina Decorticator" )>> ;
+	prov:wasDerivedFrom doc:0a016d794569 .
+doc:Factsdoi1 schema:value "10.5755/j02.mech.36611" .
+_:a95dfe6efa6566c61d0c7f66008d242f rdf:reifies <<( doc:Factsdoi1 schema:value "10.5755/j02.mech.36611" )>> ;
+	prov:wasDerivedFrom doc:0a016d794569 .
+doc:Factsclearances schema:name "detection of faults using vibration analysis" .
+_:e5e63a16e3a1552f37eca05aa39cea30 rdf:reifies <<( doc:Factsclearances schema:name "detection of faults using vibration analysis" )>> ;
+	prov:wasDerivedFrom doc:0a016d794569 .
+doc:FactsdhbDecorticator schema:material "mechanical transmission component" .
+_:c7d2d18216f5b6d95bc226c1542c77bf rdf:reifies <<( doc:FactsdhbDecorticator schema:material "mechanical transmission component" )>> ;
+	prov:wasDerivedFrom doc:0a016d794569 .
+doc:Factsclearances schema:name "design flaw in a transmission component" .
+_:d2b7895c28e9fe9c5ec1e62162d2cf09 rdf:reifies <<( doc:Factsclearances schema:name "design flaw in a transmission component" )>> ;
+	prov:wasDerivedFrom doc:0a016d794569 .
+doc:Factsclearances schema:name "imbalances" .
+_:b540974df5e27cd0e6c13b7b3eb70085 rdf:reifies <<( doc:Factsclearances schema:name "imbalances" )>> ;
+	prov:wasDerivedFrom doc:0a016d794569 .
+doc:FactshealthAssessmentFunction schema:name "assessment of the general health state of a machine" .
+_:c6dc42a50f8ae493e3352c3dcd02e858 rdf:reifies <<( doc:FactshealthAssessmentFunction schema:name "assessment of the general health state of a machine" )>> ;
+	prov:wasDerivedFrom doc:0a016d794569 .
+doc:Factsclearances schema:name "coupling faults" .
+_:b350a9a0130d7a45fe8bdef26bf57826 rdf:reifies <<( doc:Factsclearances schema:name "coupling faults" )>> ;
+	prov:wasDerivedFrom doc:0a016d794569 .
+doc:Factstitle1 a None:Article_title .
+_:bda283dce98395156497dffa9cc2e4e rdf:reifies <<( doc:Factstitle1 rdf:type None:Article_title )>> ;
+	prov:wasDerivedFrom doc:0a016d794569 .
+doc:Factszhai schema:name "Rabah MAGRAOUI" .
+_:dc8084af430fed1d647f97c0cb3b5de4 rdf:reifies <<( doc:Factszhai schema:name "Rabah MAGRAOUI" )>> ;
+	prov:wasDerivedFrom doc:0a016d794569 .
+doc:FactsdhbDecorticator schema:description "Unplanned stops caused production and product-quality losses." .
+_:b1519d12425d41c71770c357d27e3e57 rdf:reifies <<( doc:FactsdhbDecorticator schema:description "Unplanned stops caused production and product-quality losses." )>> ;
+	prov:wasDerivedFrom doc:0a016d794569 .
+doc:Factsarticle1 schema:mentions doc:FactsvibrationMeasurements .
+_:bffe84d1ecfcc595d1ce904fdd427a7 rdf:reifies <<( doc:Factsarticle1 schema:mentions doc:FactsvibrationMeasurements )>> ;
+	prov:wasDerivedFrom doc:0a016d794569 .
+doc:Factslmpmm schema:name "Laboratory of Mechanics Physics and Mathematical Modelling LMPMM" .
+_:f93ecb6e3b30aa9b5a9f9f6d58173cea rdf:reifies <<( doc:Factslmpmm schema:name "Laboratory of Mechanics Physics and Mathematical Modelling LMPMM" )>> ;
+	prov:wasDerivedFrom doc:0a016d794569 .
+doc:fcdb51fa0891 a prov:Entity , schema:text ;
+	prov:generatedAtTime "2026-07-23T00:18:11.300032Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+	schema:position 1 ;
+	schema:identifier "fcdb51fa0891" .
+_:d077213063879ef68056cebebfc28710 prov:wasDerivedFrom doc:fcdb51fa0891 .
+doc:FactselectromechanicalSystem rdfs:label "electromechanical system"@en .
+_:d7bf23d62e27a8387a494cfc38c25ca3 rdf:reifies <<( doc:FactselectromechanicalSystem rdfs:label "electromechanical system"@en )>> ;
+	prov:wasDerivedFrom doc:fcdb51fa0891 .
+doc:Factszhai schema1:name "Pachaud" .
+_:e2dbed02074138713ae0eef35a5dcc85 rdf:reifies <<( doc:Factszhai schema1:name "Pachaud" )>> ;
+	prov:wasDerivedFrom doc:fcdb51fa0891 .
+doc:Factsarticle1 schema1:author doc:Factszhai .
+_:ad73f8b1b57cb86dd5133098eab0ec85 rdf:reifies <<( doc:Factsarticle1 schema1:author doc:Factszhai )>> ;
+	prov:wasDerivedFrom doc:fcdb51fa0891 .
+doc:Factsclearances cco:is_about doc:FactselectromechanicalSystem .
+_:e136d53698062f3ced6d103f5850191 rdf:reifies <<( doc:Factsclearances cco:is_about doc:FactselectromechanicalSystem )>> ;
+	prov:wasDerivedFrom doc:fcdb51fa0891 .
+doc:FactsvibrationAccelerationTimeSeries cco:describes doc:FactsaeroEngine .
+_:d35de3af2a117c2141cc0b4d60d75e7a rdf:reifies <<( doc:FactsvibrationAccelerationTimeSeries cco:describes doc:FactsaeroEngine )>> ;
+	prov:wasDerivedFrom doc:fcdb51fa0891 .
+doc:Factsarticle1 schema1:about doc:FactsvibrationAnalysis .
+_:b7234909073621b3cf77fa2fea41d67 rdf:reifies <<( doc:Factsarticle1 schema1:about doc:FactsvibrationAnalysis )>> ;
+	prov:wasDerivedFrom doc:fcdb51fa0891 .
+doc:FactsscaledTestBench cco:is_about doc:FactselectromechanicalSystem .
+_:dfb329534daefe87787957210b9bc7e5 rdf:reifies <<( doc:FactsscaledTestBench cco:is_about doc:FactselectromechanicalSystem )>> ;
+	prov:wasDerivedFrom doc:fcdb51fa0891 .
+_:f619d6e1ec74051f3bbed85dde3aa3d4 prov:wasDerivedFrom doc:fcdb51fa0891 .
+doc:Factszhai schema1:name "Joshi" .
+_:abc166fb306bf8ae95469d1d3a6a54fe rdf:reifies <<( doc:Factszhai schema1:name "Joshi" )>> ;
+	prov:wasDerivedFrom doc:fcdb51fa0891 .
+doc:Factsclearances rdfs:label "electrical fault detection"@en .
+_:f189303f63614aee2c2fd614ae61e282 rdf:reifies <<( doc:Factsclearances rdfs:label "electrical fault detection"@en )>> ;
+	prov:wasDerivedFrom doc:fcdb51fa0891 .
+doc:Factsarticle1 schema1:about doc:FactsscaledTestBench .
+_:f063292551b9e0257933c0d0b742da0a rdf:reifies <<( doc:Factsarticle1 schema1:about doc:FactsscaledTestBench )>> ;
+	prov:wasDerivedFrom doc:fcdb51fa0891 .
+doc:FactsfaultDetection_2 <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#has_predictive_maintenance_function> doc:FactsfaultDetection_2 .
+_:b48b952331b9cc9a7c25af1a640614f6 rdf:reifies <<( doc:FactsfaultDetection_2 <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#has_predictive_maintenance_function> doc:FactsfaultDetection_2 )>> ;
+	prov:wasDerivedFrom doc:fcdb51fa0891 .
+doc:Factsarticle1 a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Predictive_Maintenance_Article> .
+_:f34dee96a3c2c09f01442ef7c7355738 rdf:reifies <<( doc:Factsarticle1 rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Predictive_Maintenance_Article> )>> ;
+	prov:wasDerivedFrom doc:fcdb51fa0891 .
+doc:Factsarticle1 schema1:about doc:FactsrotorBallBearingStatorModel .
+_:d648ede46b214ab3b3af4b8a9ebc3d6b rdf:reifies <<( doc:Factsarticle1 schema1:about doc:FactsrotorBallBearingStatorModel )>> ;
+	prov:wasDerivedFrom doc:fcdb51fa0891 .
+doc:FactsrubbingFaultSimulation a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Predictive_maintenance_model> .
+_:f2421b78286920ab2701c815834399fd rdf:reifies <<( doc:FactsrubbingFaultSimulation rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Predictive_maintenance_model> )>> ;
+	prov:wasDerivedFrom doc:fcdb51fa0891 .
+doc:Factsclearances cco:is_about doc:FactssugarIndustryMachine .
+_:c04ed500581148a286f804f85fb47481 rdf:reifies <<( doc:Factsclearances cco:is_about doc:FactssugarIndustryMachine )>> ;
+	prov:wasDerivedFrom doc:fcdb51fa0891 .
+doc:Factsclearances rdfs:label "mechanical fault detection"@en .
+_:a5cc10e1f7e1183bf6e59c66d0736d8f rdf:reifies <<( doc:Factsclearances rdfs:label "mechanical fault detection"@en )>> ;
+	prov:wasDerivedFrom doc:fcdb51fa0891 .
+doc:Factsmachine a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Maintainable_item> .
+_:af13d534a60ce6e66dc1cac53bcf3e4c rdf:reifies <<( doc:Factsmachine rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Maintainable_item> )>> ;
+	prov:wasDerivedFrom doc:fcdb51fa0891 .
+doc:FactsrotorBallBearingStatorModel rdfs:label "coupled dynamic model of the rotor-ball bearing-stator"@en .
+_:df9e68cadb86b531757d207055eef799 rdf:reifies <<( doc:FactsrotorBallBearingStatorModel rdfs:label "coupled dynamic model of the rotor-ball bearing-stator"@en )>> ;
+	prov:wasDerivedFrom doc:fcdb51fa0891 .
+doc:FactsfrequencyCharacteristics rdfs:label "frequency characteristics"@en .
+_:eb1ec6d65788ea2f0c49e6570e4ca386 rdf:reifies <<( doc:FactsfrequencyCharacteristics rdfs:label "frequency characteristics"@en )>> ;
+	prov:wasDerivedFrom doc:fcdb51fa0891 .
+doc:FactsmeasuredVibration8 a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Data_variable> .
+_:bbe8949be1153d09ee50ecce0f943620 rdf:reifies <<( doc:FactsmeasuredVibration8 rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Data_variable> )>> ;
+	prov:wasDerivedFrom doc:fcdb51fa0891 .
+doc:FactsscaledTestBench rdfs:label "scaled test bench"@en .
+_:f531ff69c325c5f92347859009a9c24c rdf:reifies <<( doc:FactsscaledTestBench rdfs:label "scaled test bench"@en )>> ;
+	prov:wasDerivedFrom doc:fcdb51fa0891 .
+doc:FactscouplingEffect cco:is_about doc:FactsdualRotorSystem .
+_:abe061adaa62852faca6e1c660e1dfa3 rdf:reifies <<( doc:FactscouplingEffect cco:is_about doc:FactsdualRotorSystem )>> ;
+	prov:wasDerivedFrom doc:fcdb51fa0891 .
+doc:FactsmeasuredVibration8 schema1:isPartOf doc:FactsfaultDetection_2 .
+_:b63e62788b33d43e89ecf00cf41406 rdf:reifies <<( doc:FactsmeasuredVibration8 schema1:isPartOf doc:FactsfaultDetection_2 )>> ;
+	prov:wasDerivedFrom doc:fcdb51fa0891 .
+doc:FactsrubbingCouplingFault rdfs:label "rubbing coupling fault"@en .
+_:aa4ab23ef99f132ceffad70f3506faa6 rdf:reifies <<( doc:FactsrubbingCouplingFault rdfs:label "rubbing coupling fault"@en )>> ;
+	prov:wasDerivedFrom doc:fcdb51fa0891 .
+doc:FactsrubbingFaultSimulation cco:is_about doc:FactsdualRotorSystem .
+_:bc78a910625db3827c5d0b4e34bebf19 rdf:reifies <<( doc:FactsrubbingFaultSimulation cco:is_about doc:FactsdualRotorSystem )>> ;
+	prov:wasDerivedFrom doc:fcdb51fa0891 .
+doc:Factszhai schema1:name "Zhai" .
+_:a13f394f53d29cc26f912979b43ff776 rdf:reifies <<( doc:Factszhai schema1:name "Zhai" )>> ;
+	prov:wasDerivedFrom doc:fcdb51fa0891 .
+doc:FactsrubbingFaultSimulation rdfs:label "rubbing fault simulation method"@en .
+_:f1b3783d570028c274f292394c69dc4 rdf:reifies <<( doc:FactsrubbingFaultSimulation rdfs:label "rubbing fault simulation method"@en )>> ;
+	prov:wasDerivedFrom doc:fcdb51fa0891 .
+doc:Factsclearances a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Fault_feature_extraction> .
+_:e8762c911e40f0aa81836317f1be59e8 rdf:reifies <<( doc:Factsclearances rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Fault_feature_extraction> )>> ;
+	prov:wasDerivedFrom doc:fcdb51fa0891 .
+doc:Factsarticle1 schema1:about doc:FactsfaultDetection_2 .
+_:f4f360bfb3a36fbcba1265ce2ffa6eb6 rdf:reifies <<( doc:Factsarticle1 schema1:about doc:FactsfaultDetection_2 )>> ;
+	prov:wasDerivedFrom doc:fcdb51fa0891 .
+doc:Factsengine rdfs:label "engine"@en .
+_:c58879040f4f8e0e86dfbcaba1e9f016 rdf:reifies <<( doc:Factsengine rdfs:label "engine"@en )>> ;
+	prov:wasDerivedFrom doc:fcdb51fa0891 .
+doc:FactsrubImpactCharacteristics a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Data_variable> .
+_:bc370cc9048cae81a8ebfaa2c10034de rdf:reifies <<( doc:FactsrubImpactCharacteristics rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Data_variable> )>> ;
+	prov:wasDerivedFrom doc:fcdb51fa0891 .
+doc:FactssugarIndustryMachine a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Maintainable_item> .
+_:fa4ffe8b8851db8c26b31cb89b181a2c rdf:reifies <<( doc:FactssugarIndustryMachine rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Maintainable_item> )>> ;
+	prov:wasDerivedFrom doc:fcdb51fa0891 .
+doc:FactsvibrationAccelerationTimeSeries rdfs:label "casing vibration acceleration time series data"@en .
+_:be72150d2b8af8dd0d697735c537c98f rdf:reifies <<( doc:FactsvibrationAccelerationTimeSeries rdfs:label "casing vibration acceleration time series data"@en )>> ;
+	prov:wasDerivedFrom doc:fcdb51fa0891 .
+doc:FactssugarIndustryMachine rdfs:label "sugar industry machine"@en .
+_:a9b1e843cebea2517b152d71164c5b04 rdf:reifies <<( doc:FactssugarIndustryMachine rdfs:label "sugar industry machine"@en )>> ;
+	prov:wasDerivedFrom doc:fcdb51fa0891 .
+doc:FactsdualRotorSystem rdfs:label "dual-rotor system"@en .
+_:a25f3c0fd72d80f467fcd683e5db157c rdf:reifies <<( doc:FactsdualRotorSystem rdfs:label "dual-rotor system"@en )>> ;
+	prov:wasDerivedFrom doc:fcdb51fa0891 .
+doc:FactsrubbingCouplingFault a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Design_detail> .
+_:c35e6ea2a5bf4a77722b6dace46d2aa9 rdf:reifies <<( doc:FactsrubbingCouplingFault rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Design_detail> )>> ;
+	prov:wasDerivedFrom doc:fcdb51fa0891 .
+doc:Factsclearances rdfs:label "MATLAB-based fault diagnosis"@en .
+_:f1b11c7ab454ac87dd005736e5e4312e rdf:reifies <<( doc:Factsclearances rdfs:label "MATLAB-based fault diagnosis"@en )>> ;
+	prov:wasDerivedFrom doc:fcdb51fa0891 .
+doc:Factsarticle1 schema1:about doc:FactsrubbingCouplingFault .
+_:ab9d31871fb03888703b0b1cce40cc20 rdf:reifies <<( doc:Factsarticle1 schema1:about doc:FactsrubbingCouplingFault )>> ;
+	prov:wasDerivedFrom doc:fcdb51fa0891 .
+doc:FactsvibrationAccelerationTimeSeries a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Data_variable> .
+_:ce12240de9f05353d6f0b0b60152afb9 rdf:reifies <<( doc:FactsvibrationAccelerationTimeSeries rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Data_variable> )>> ;
+	prov:wasDerivedFrom doc:fcdb51fa0891 .
+doc:Factsmachine rdfs:label "rotating machine"@en .
+_:e5a7046f06b1c8f27c028b0c1bd020d rdf:reifies <<( doc:Factsmachine rdfs:label "rotating machine"@en )>> ;
+	prov:wasDerivedFrom doc:fcdb51fa0891 .
+doc:Factsarticle1 schema1:about doc:FactsaeroEngine .
+_:d5a8e0b319930081ae2e462a0c2cb94c rdf:reifies <<( doc:Factsarticle1 schema1:about doc:FactsaeroEngine )>> ;
+	prov:wasDerivedFrom doc:fcdb51fa0891 .
+doc:FactsrubImpactCharacteristics cco:describes doc:FactsaeroEngine .
+_:ff633df750640b9871897b366297cc19 rdf:reifies <<( doc:FactsrubImpactCharacteristics cco:describes doc:FactsaeroEngine )>> ;
+	prov:wasDerivedFrom doc:fcdb51fa0891 .
+doc:Factsengine a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Maintainable_item> .
+_:b10586f6b657a7e66727dbeb400dec4e rdf:reifies <<( doc:Factsengine rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Maintainable_item> )>> ;
+	prov:wasDerivedFrom doc:fcdb51fa0891 .
+doc:Factsmachine rdfs:label "machine"@en .
+_:dcadec9cc69e56a0b895c4f8a03479a2 rdf:reifies <<( doc:Factsmachine rdfs:label "machine"@en )>> ;
+	prov:wasDerivedFrom doc:fcdb51fa0891 .
+doc:FactsmeasuredVibration8 rdfs:label "vibrational data"@en .
+_:e64cd784b32314281c7d7c9b79c95c26 rdf:reifies <<( doc:FactsmeasuredVibration8 rdfs:label "vibrational data"@en )>> ;
+	prov:wasDerivedFrom doc:fcdb51fa0891 .
+doc:FactsdualRotorSystem a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Maintainable_item> .
+_:f0a10ec11a5ace9449e8ea2a09112489 rdf:reifies <<( doc:FactsdualRotorSystem rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Maintainable_item> )>> ;
+	prov:wasDerivedFrom doc:fcdb51fa0891 .
+doc:FactsoperatingCondition a schema:Thing .
+_:b98ea299f164ef18882380ab08ea978b rdf:reifies <<( doc:FactsoperatingCondition rdf:type schema:Thing )>> ;
+	prov:wasDerivedFrom doc:fcdb51fa0891 .
+doc:Factsclearances rdfs:label "cepstrum analysis"@en .
+_:f5e6eee31d861a795272f86c8aac1610 rdf:reifies <<( doc:Factsclearances rdfs:label "cepstrum analysis"@en )>> ;
+	prov:wasDerivedFrom doc:fcdb51fa0891 .
+doc:FactsfrequencyCharacteristics cco:describes doc:FactsaeroEngine .
+_:a6bcfa2cc6df21c8da893d994393d429 rdf:reifies <<( doc:FactsfrequencyCharacteristics cco:describes doc:FactsaeroEngine )>> ;
+	prov:wasDerivedFrom doc:fcdb51fa0891 .
+doc:FactsfaultFeatures rdfs:label "fault features"@en .
+_:f0e0f71a156a1a2ba0482d73479e7443 rdf:reifies <<( doc:FactsfaultFeatures rdfs:label "fault features"@en )>> ;
+	prov:wasDerivedFrom doc:fcdb51fa0891 .
+doc:FactsvibrationAnalysis a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Fault_feature_extraction> .
+_:bf76a36ba0c808f274ad367ac5ddaf09 rdf:reifies <<( doc:FactsvibrationAnalysis rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Fault_feature_extraction> )>> ;
+	prov:wasDerivedFrom doc:fcdb51fa0891 .
+doc:FactsvibrationAnalysis rdfs:label "vibration analysis"@en .
+_:b3113a7743099d171f487d9e0194e666 rdf:reifies <<( doc:FactsvibrationAnalysis rdfs:label "vibration analysis"@en )>> ;
+	prov:wasDerivedFrom doc:fcdb51fa0891 .
+doc:Factsclearances a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Fault_identification> .
+_:f9971b3724896c3585e7587770e23dac rdf:reifies <<( doc:Factsclearances rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Fault_identification> )>> ;
+	prov:wasDerivedFrom doc:fcdb51fa0891 .
+doc:FactsrotorBallBearingStatorModel a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Predictive_maintenance_model> .
+_:da5e1e35b03b8c7dc1b075281a9e2243 rdf:reifies <<( doc:FactsrotorBallBearingStatorModel rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Predictive_maintenance_model> )>> ;
+	prov:wasDerivedFrom doc:fcdb51fa0891 .
+doc:Factszhai schema1:name "Wang" .
+_:e56a16ded35d5e3a668ce6f8f832005b rdf:reifies <<( doc:Factszhai schema1:name "Wang" )>> ;
+	prov:wasDerivedFrom doc:fcdb51fa0891 .
+doc:FactsaeroEngine a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Maintainable_item> .
+_:ddf7b2cab6d26a702553bdb739336ab0 rdf:reifies <<( doc:FactsaeroEngine rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Maintainable_item> )>> ;
+	prov:wasDerivedFrom doc:fcdb51fa0891 .
+doc:Factszhai schema1:name "Matsushita" .
+_:d5ee8d7d4e0b8e756821a374268fac29 rdf:reifies <<( doc:Factszhai schema1:name "Matsushita" )>> ;
+	prov:wasDerivedFrom doc:fcdb51fa0891 .
+doc:FactsfaultFeatures a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Data_variable> .
+_:ecba18a88daadcb3c7122cd929a268ff rdf:reifies <<( doc:FactsfaultFeatures rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Data_variable> )>> ;
+	prov:wasDerivedFrom doc:fcdb51fa0891 .
+doc:FactsfaultDetection_2 rdfs:label "machine monitoring and diagnostics"@en .
+_:fe11b88333cd6dc5028f6d009e68ea1 rdf:reifies <<( doc:FactsfaultDetection_2 rdfs:label "machine monitoring and diagnostics"@en )>> ;
+	prov:wasDerivedFrom doc:fcdb51fa0891 .
+doc:FactselectromechanicalSystem a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Maintainable_item> .
+_:dcc9d1a0fa5779c79a5925b2b7e411bc rdf:reifies <<( doc:FactselectromechanicalSystem rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Maintainable_item> )>> ;
+	prov:wasDerivedFrom doc:fcdb51fa0891 .
+doc:FactscouplingEffect a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Design_detail> .
+_:f5f6c282ba565b963e73976656c83fed rdf:reifies <<( doc:FactscouplingEffect rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Design_detail> )>> ;
+	prov:wasDerivedFrom doc:fcdb51fa0891 .
+doc:Factsarticle1 schema1:about doc:Factsmachine .
+_:ba6958e262741bb4f67ed985c39fa190 rdf:reifies <<( doc:Factsarticle1 schema1:about doc:Factsmachine )>> ;
+	prov:wasDerivedFrom doc:fcdb51fa0891 .
+doc:FactsaeroEngine rdfs:label "aero-engine"@en .
+_:b82e05abe1a7da72efab926b938d66c8 rdf:reifies <<( doc:FactsaeroEngine rdfs:label "aero-engine"@en )>> ;
+	prov:wasDerivedFrom doc:fcdb51fa0891 .
+doc:FactsoperatingCondition rdfs:label "operating condition"@en .
+_:e0b60b20dd29a009ddda7a669b29ae60 rdf:reifies <<( doc:FactsoperatingCondition rdfs:label "operating condition"@en )>> ;
+	prov:wasDerivedFrom doc:fcdb51fa0891 .
+doc:FactsfaultFeatures cco:describes doc:FactsaeroEngine .
+_:f91c684102fda975d3c791843710c976 rdf:reifies <<( doc:FactsfaultFeatures cco:describes doc:FactsaeroEngine )>> ;
+	prov:wasDerivedFrom doc:fcdb51fa0891 .
+doc:FactsscaledTestBench a cco:Artifact .
+_:a80348164c285683f34703ca040ffb10 rdf:reifies <<( doc:FactsscaledTestBench rdf:type cco:Artifact )>> ;
+	prov:wasDerivedFrom doc:fcdb51fa0891 .
+doc:FactscouplingEffect rdfs:label "coupling effect between the internal and external rotor"@en .
+_:c6287ec0ec6867fde18f7608d4f69e30 rdf:reifies <<( doc:FactscouplingEffect rdfs:label "coupling effect between the internal and external rotor"@en )>> ;
+	prov:wasDerivedFrom doc:fcdb51fa0891 .
+doc:Factszhai schema1:name "Boulenger" .
+_:ae68a1089a51f0d14cc00a2909ef6192 rdf:reifies <<( doc:Factszhai schema1:name "Boulenger" )>> ;
+	prov:wasDerivedFrom doc:fcdb51fa0891 .
+doc:Factsclearances rdfs:label "spectrum analysis"@en .
+_:f70036febc6dac29e46884d6b3b41615 rdf:reifies <<( doc:Factsclearances rdfs:label "spectrum analysis"@en )>> ;
+	prov:wasDerivedFrom doc:fcdb51fa0891 .
+doc:FactsrubImpactCharacteristics rdfs:label "rub-impact characteristics"@en .
+_:a33dd8ffb1d334760e2f57fb477c69c9 rdf:reifies <<( doc:FactsrubImpactCharacteristics rdfs:label "rub-impact characteristics"@en )>> ;
+	prov:wasDerivedFrom doc:fcdb51fa0891 .
+doc:FactsvibrationAnalysis cco:is_about doc:Factsmachine .
+_:f94a112844c58a3699265bea5a0d7a57 rdf:reifies <<( doc:FactsvibrationAnalysis cco:is_about doc:Factsmachine )>> ;
+	prov:wasDerivedFrom doc:fcdb51fa0891 .
+doc:Factsarticle1 schema1:about doc:FactsdualRotorSystem .
+_:d11643257c210951651c9938cb23ec2d rdf:reifies <<( doc:Factsarticle1 schema1:about doc:FactsdualRotorSystem )>> ;
+	prov:wasDerivedFrom doc:fcdb51fa0891 .
+doc:FactsmeasuredVibration8 cco:describes doc:Factsmachine .
+_:bd961d2fed6d3f1ad1c0de72da20573e rdf:reifies <<( doc:FactsmeasuredVibration8 cco:describes doc:Factsmachine )>> ;
+	prov:wasDerivedFrom doc:fcdb51fa0891 .
+doc:Factsmachine schema1:subjectOf doc:FactsfaultDetection_2 .
+_:afa52a5868f5c1dc4ee7683be0e5128e rdf:reifies <<( doc:Factsmachine schema1:subjectOf doc:FactsfaultDetection_2 )>> ;
+	prov:wasDerivedFrom doc:fcdb51fa0891 .
+doc:FactsfrequencyCharacteristics a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Data_variable> .
+_:f172840a25ea39c5d1118d06834a11b6 rdf:reifies <<( doc:FactsfrequencyCharacteristics rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Data_variable> )>> ;
+	prov:wasDerivedFrom doc:fcdb51fa0891 .
+doc:FactsrubbingCouplingFault cco:is_about doc:FactsdualRotorSystem .
+_:de6b212223cb18d82527e66d71609194 rdf:reifies <<( doc:FactsrubbingCouplingFault cco:is_about doc:FactsdualRotorSystem )>> ;
+	prov:wasDerivedFrom doc:fcdb51fa0891 .
+doc:FactsfaultDetection_2 a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Predictive_maintenance_system_module> .
+_:fef3968a07e2c798d52525a4d928b956 rdf:reifies <<( doc:FactsfaultDetection_2 rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Predictive_maintenance_system_module> )>> ;
+	prov:wasDerivedFrom doc:fcdb51fa0891 .
+doc:Factsarticle1 schema1:about doc:Factsclearances .
+_:d9af63f0ec8c712dbe5be5676ba6f4f2 rdf:reifies <<( doc:Factsarticle1 schema1:about doc:Factsclearances )>> ;
+	prov:wasDerivedFrom doc:fcdb51fa0891 .
+doc:Factsmachine schema1:hasCondition doc:FactsoperatingCondition .
+_:cd02346b1c47e36cb745bc3aad546ae2 rdf:reifies <<( doc:Factsmachine schema1:hasCondition doc:FactsoperatingCondition )>> ;
+	prov:wasDerivedFrom doc:fcdb51fa0891 .
+doc:Factsarticle1 schema1:about doc:FactssugarIndustryMachine .
+_:eccf53006055894f4b68dc489c85f91f rdf:reifies <<( doc:Factsarticle1 schema1:about doc:FactssugarIndustryMachine )>> ;
+	prov:wasDerivedFrom doc:fcdb51fa0891 .
+doc:Factszhai schema1:name "Esteban" .
+_:aabd82ef2e155d8118b6ffde81a7010b rdf:reifies <<( doc:Factszhai schema1:name "Esteban" )>> ;
+	prov:wasDerivedFrom doc:fcdb51fa0891 .
+doc:FactsrotorBallBearingStatorModel cco:is_about doc:FactsaeroEngine .
+_:e26462861926c48f5aa50ba96d11403e rdf:reifies <<( doc:FactsrotorBallBearingStatorModel cco:is_about doc:FactsaeroEngine )>> ;
+	prov:wasDerivedFrom doc:fcdb51fa0891 .
+doc:ecdf2b0996c0 a prov:Entity , schema:text ;
+	prov:generatedAtTime "2026-07-23T00:18:11.305539Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+	schema:position 2 ;
+	schema:identifier "ecdf2b0996c0" .
+doc:Factsstudy8 schema:author doc:Factszhai .
+_:c1af8c5709283a5d250d167082be7034 rdf:reifies <<( doc:Factsstudy8 schema:author doc:Factszhai )>> ;
+	prov:wasDerivedFrom doc:ecdf2b0996c0 .
+doc:FactsbearingSignals9 a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Data_variable> .
+_:d591fffa0c3b18adcd888babc0f39c4b rdf:reifies <<( doc:FactsbearingSignals9 rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Data_variable> )>> ;
+	prov:wasDerivedFrom doc:ecdf2b0996c0 .
+doc:Factsclearances schema:name "bevel gear fault"@en .
+_:ee30a470ae3f81a392cf45819420d162 rdf:reifies <<( doc:Factsclearances schema:name "bevel gear fault"@en )>> ;
+	prov:wasDerivedFrom doc:ecdf2b0996c0 .
+doc:Factsclearances schema:label "fault diagnosis"@en .
+_:c26f767a9da0aeeb1b1179d53d61b264 rdf:reifies <<( doc:Factsclearances schema:label "fault diagnosis"@en )>> ;
+	prov:wasDerivedFrom doc:ecdf2b0996c0 .
+doc:Factsclearances schema:label "extraction of expert rules"@en .
+_:cfbd0ae6f62623453a019417b9899214 rdf:reifies <<( doc:Factsclearances schema:label "extraction of expert rules"@en )>> ;
+	prov:wasDerivedFrom doc:ecdf2b0996c0 .
+doc:Factsstudy8 schema:about doc:Factsclearances .
+_:bfc9c74a4e5c2e25f3575032dc7281d5 rdf:reifies <<( doc:Factsstudy8 schema:about doc:Factsclearances )>> ;
+	prov:wasDerivedFrom doc:ecdf2b0996c0 .
+doc:FactshealthAssessmentFunction schema:name "machine health state"@en .
+_:d02d07bc3978c5d0e44069670209161b rdf:reifies <<( doc:FactshealthAssessmentFunction schema:name "machine health state"@en )>> ;
+	prov:wasDerivedFrom doc:ecdf2b0996c0 .
+_:af13d534a60ce6e66dc1cac53bcf3e4c prov:wasDerivedFrom doc:ecdf2b0996c0 .
+_:f9971b3724896c3585e7587770e23dac prov:wasDerivedFrom doc:ecdf2b0996c0 .
+doc:Factszhai schema:name "Bourdim" .
+_:a4f8501fb3e0f292d4f0c033987afc rdf:reifies <<( doc:Factszhai schema:name "Bourdim" )>> ;
+	prov:wasDerivedFrom doc:ecdf2b0996c0 .
+doc:FactsbearingSignals9 schema:name "transmission error"@en .
+_:db4c5264d979b18c5bfb4939d870ae60 rdf:reifies <<( doc:FactsbearingSignals9 schema:name "transmission error"@en )>> ;
+	prov:wasDerivedFrom doc:ecdf2b0996c0 .
+doc:FactsbearingSignals9 schema:name "dynamic behaviour"@en .
+_:f1adf3bcb724768ef41ce20a50894516 rdf:reifies <<( doc:FactsbearingSignals9 schema:name "dynamic behaviour"@en )>> ;
+	prov:wasDerivedFrom doc:ecdf2b0996c0 .
+doc:FactsexperimentalSetup9 schema:name "polytropic working conditions"@en .
+_:a56e004135e315c72c66c94d3f14f51 rdf:reifies <<( doc:FactsexperimentalSetup9 schema:name "polytropic working conditions"@en )>> ;
+	prov:wasDerivedFrom doc:ecdf2b0996c0 .
+doc:Factsskewness13 a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Performance_indicator> .
+_:bd51326fe6d902decd8edf4e0d12789a rdf:reifies <<( doc:Factsskewness13 rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Performance_indicator> )>> ;
+	prov:wasDerivedFrom doc:ecdf2b0996c0 .
+doc:Factsstudy8 schema:about doc:Factsmachine .
+_:ed7bc4aa843932466f6e2bcde41c54dc rdf:reifies <<( doc:Factsstudy8 schema:about doc:Factsmachine )>> ;
+	prov:wasDerivedFrom doc:ecdf2b0996c0 .
+doc:Factszhai schema:name "Jarir" .
+_:c8639789a9768537b0d0f54c6ccb784a rdf:reifies <<( doc:Factszhai schema:name "Jarir" )>> ;
+	prov:wasDerivedFrom doc:ecdf2b0996c0 .
+doc:Factszhai schema:name "Bouzouidja" .
+_:e2b34ed2df75dd201baa035218ccc186 rdf:reifies <<( doc:Factszhai schema:name "Bouzouidja" )>> ;
+	prov:wasDerivedFrom doc:ecdf2b0996c0 .
+doc:Factsclearances schema:name "frequency-domain vibration analysis"@en .
+_:ec60f7c4f96c03de5d4d875accf255ba rdf:reifies <<( doc:Factsclearances schema:name "frequency-domain vibration analysis"@en )>> ;
+	prov:wasDerivedFrom doc:ecdf2b0996c0 .
+doc:Factsstudy8 schema:description "Used time-domain condition indicators, including kurtosis and skewness, to diagnose a bevel gear fault."@en .
+_:db2e5ef01936efb455e3acac46c03d98 rdf:reifies <<( doc:Factsstudy8 schema:description "Used time-domain condition indicators, including kurtosis and skewness, to diagnose a bevel gear fault."@en )>> ;
+	prov:wasDerivedFrom doc:ecdf2b0996c0 .
+doc:Factsclearances schema:name "bearing defect"@en .
+_:ee36b889df18c8d9bf362864b50a28fc rdf:reifies <<( doc:Factsclearances schema:name "bearing defect"@en )>> ;
+	prov:wasDerivedFrom doc:ecdf2b0996c0 .
+doc:Factsmachine schema:name "bevel gear"@en .
+_:c75d7bb097d7b6c4e95f6cb701253c90 rdf:reifies <<( doc:Factsmachine schema:name "bevel gear"@en )>> ;
+	prov:wasDerivedFrom doc:ecdf2b0996c0 .
+doc:FactsmeasuredVibration8 schema:name "multisensory vibration information"@en .
+_:f53cb13a4b8b45897aa97cc0ef2ac8ad rdf:reifies <<( doc:FactsmeasuredVibration8 schema:name "multisensory vibration information"@en )>> ;
+	prov:wasDerivedFrom doc:ecdf2b0996c0 .
+doc:FactsexperimentalSetup9 a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Design_detail> .
+_:d507df5657c11f3b4ce8508b5c60a68e rdf:reifies <<( doc:FactsexperimentalSetup9 rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Design_detail> )>> ;
+	prov:wasDerivedFrom doc:ecdf2b0996c0 .
+doc:Factsmachine schema:name "gearbox system"@en .
+_:b7eafcba7832444a2d57b99325e329ee rdf:reifies <<( doc:Factsmachine schema:name "gearbox system"@en )>> ;
+	prov:wasDerivedFrom doc:ecdf2b0996c0 .
+doc:FactsbearingSignals9 schema:name "overheating"@en .
+_:d6bcb329e91af6613302f36629324da6 rdf:reifies <<( doc:FactsbearingSignals9 schema:name "overheating"@en )>> ;
+	prov:wasDerivedFrom doc:ecdf2b0996c0 .
+_:f619d6e1ec74051f3bbed85dde3aa3d4 prov:wasDerivedFrom doc:ecdf2b0996c0 .
+doc:Factsmachine schema:name "rotating machinery"@en .
+_:b226debce5798b1f65417df8aca1aa02 rdf:reifies <<( doc:Factsmachine schema:name "rotating machinery"@en )>> ;
+	prov:wasDerivedFrom doc:ecdf2b0996c0 .
+doc:Factsclearances schema:name "gear fault"@en .
+_:d0d2a0e4897ff80f4583ef254ea4a320 rdf:reifies <<( doc:Factsclearances schema:name "gear fault"@en )>> ;
+	prov:wasDerivedFrom doc:ecdf2b0996c0 .
+doc:FactsdualRotorTester8 schema:name "dual rotor tester"@en .
+_:bfcf4e844df616bf4ca9b4ee30df8854 rdf:reifies <<( doc:FactsdualRotorTester8 schema:name "dual rotor tester"@en )>> ;
+	prov:wasDerivedFrom doc:ecdf2b0996c0 .
+doc:Factsskewness13 schema:name "kurtosis"@en .
+_:e361221d9a363ccc94550aad9d7d624e rdf:reifies <<( doc:Factsskewness13 schema:name "kurtosis"@en )>> ;
+	prov:wasDerivedFrom doc:ecdf2b0996c0 .
+doc:FactsprognosisTechniques11 a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Future_state_forecast> .
+_:bed8ab9dd1742584f5df6e8d9061e0b7 rdf:reifies <<( doc:FactsprognosisTechniques11 rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Future_state_forecast> )>> ;
+	prov:wasDerivedFrom doc:ecdf2b0996c0 .
+doc:Factsmachine schema:name "rotating machines"@en .
+_:f4bbd1b790e2832bca6836dd2f53ba9e rdf:reifies <<( doc:Factsmachine schema:name "rotating machines"@en )>> ;
+	prov:wasDerivedFrom doc:ecdf2b0996c0 .
+doc:Factsclearances schema:label "vibration condition monitoring"@en .
+_:b8d65688077efa3738ecc8241811ef45 rdf:reifies <<( doc:Factsclearances schema:label "vibration condition monitoring"@en )>> ;
+	prov:wasDerivedFrom doc:ecdf2b0996c0 .
+doc:Factsclassifier10 schema:about <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Classification> .
+_:f933ad5bea070ee38f29f5d22d459d19 rdf:reifies <<( doc:Factsclassifier10 schema:about <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Classification> )>> ;
+	prov:wasDerivedFrom doc:ecdf2b0996c0 .
+doc:Factslmpmm schema:name "sugar industries"@en .
+_:e795e4400882b44a70b189ac1dcda093 rdf:reifies <<( doc:Factslmpmm schema:name "sugar industries"@en )>> ;
+	prov:wasDerivedFrom doc:ecdf2b0996c0 .
+doc:Factsstudy8 a schema:CreativeWork .
+_:d51dedae13fa410d79e1789d4715d8d5 rdf:reifies <<( doc:Factsstudy8 rdf:type schema:CreativeWork )>> ;
+	prov:wasDerivedFrom doc:ecdf2b0996c0 .
+doc:FactsbearingSignals9 schema:name "current data"@en .
+_:dc5b90b035d3d4f13ca636e3396e57b8 rdf:reifies <<( doc:FactsbearingSignals9 schema:name "current data"@en )>> ;
+	prov:wasDerivedFrom doc:ecdf2b0996c0 .
+doc:Factsstudy8 schema:about doc:FactshealthAssessmentFunction .
+_:d182130b8d9341444bdc47e49449789b rdf:reifies <<( doc:Factsstudy8 schema:about doc:FactshealthAssessmentFunction )>> ;
+	prov:wasDerivedFrom doc:ecdf2b0996c0 .
+_:e8762c911e40f0aa81836317f1be59e8 prov:wasDerivedFrom doc:ecdf2b0996c0 .
+doc:Factszhai schema:name "Ouali" .
+_:ceea89793222496c46775c6e695444be rdf:reifies <<( doc:Factszhai schema:name "Ouali" )>> ;
+	prov:wasDerivedFrom doc:ecdf2b0996c0 .
+doc:Factsstudy8 schema:description "Discussed the dynamic behaviour of a primary jaw crusher with cracks and deformations in its structure and flywheel."@en .
+_:a8b513e6e3002ad95714fb7da2b4cd0c rdf:reifies <<( doc:Factsstudy8 schema:description "Discussed the dynamic behaviour of a primary jaw crusher with cracks and deformations in its structure and flywheel."@en )>> ;
+	prov:wasDerivedFrom doc:ecdf2b0996c0 .
+doc:Factsstudy8 schema:description "Proposed a peripheral threshold in a classifier to diagnose new machine health states."@en .
+_:c8f216ee686e199928d17ca529564c0 rdf:reifies <<( doc:Factsstudy8 schema:description "Proposed a peripheral threshold in a classifier to diagnose new machine health states."@en )>> ;
+	prov:wasDerivedFrom doc:ecdf2b0996c0 .
+doc:Factsclearances schema:name "cracks"@en .
+_:ab201bdcf5133f18cc48f41a68b8b978 rdf:reifies <<( doc:Factsclearances schema:name "cracks"@en )>> ;
+	prov:wasDerivedFrom doc:ecdf2b0996c0 .
+doc:Factsclearances a obo:BFO_0000001 .
+_:acc443737e4ebf2d45040780de1d325f rdf:reifies <<( doc:Factsclearances rdf:type obo:BFO_0000001 )>> ;
+	prov:wasDerivedFrom doc:ecdf2b0996c0 .
+_:a1c6a67c8d33ba71a8e17d953b746505 prov:wasDerivedFrom doc:ecdf2b0996c0 .
+doc:Factsmachine schema:name "rolling mill"@en .
+_:d34fdb56c50a8487b6b9e046fab74d55 rdf:reifies <<( doc:Factsmachine schema:name "rolling mill"@en )>> ;
+	prov:wasDerivedFrom doc:ecdf2b0996c0 .
+doc:FactsprimaryJawCrusher17 a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Maintainable_item> .
+_:c4d1fe26eb5b4c88402cf1cc929c4aa3 rdf:reifies <<( doc:FactsprimaryJawCrusher17 rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Maintainable_item> )>> ;
+	prov:wasDerivedFrom doc:ecdf2b0996c0 .
+doc:Factsclearances schema:name "time-domain vibration analysis"@en .
+_:b8aee49400cf4101ac5f09aa856890fa rdf:reifies <<( doc:Factsclearances schema:name "time-domain vibration analysis"@en )>> ;
+	prov:wasDerivedFrom doc:ecdf2b0996c0 .
+doc:Factsstudy8 a schema:Review .
+_:f258210d9bfa83544f98b3fc161c8acb rdf:reifies <<( doc:Factsstudy8 rdf:type schema:Review )>> ;
+	prov:wasDerivedFrom doc:ecdf2b0996c0 .
+doc:Factsstudy8 schema:description "Presented a fault diagnosis approach combining vibration analysis and wear particle analysis for rolling bearings."@en .
+_:a7591da316f76c31d38051b0afe0b963 rdf:reifies <<( doc:Factsstudy8 schema:description "Presented a fault diagnosis approach combining vibration analysis and wear particle analysis for rolling bearings."@en )>> ;
+	prov:wasDerivedFrom doc:ecdf2b0996c0 .
+doc:Factsmachine schema:name "bearing"@en .
+_:b8f0a174621dff668e2f660e644ec16c rdf:reifies <<( doc:Factsmachine schema:name "bearing"@en )>> ;
+	prov:wasDerivedFrom doc:ecdf2b0996c0 .
+doc:FactsbearingSignals9 schema:name "simulation results"@en .
+_:c68c39111e67f66f27d43f10bd9669df rdf:reifies <<( doc:FactsbearingSignals9 schema:name "simulation results"@en )>> ;
+	prov:wasDerivedFrom doc:ecdf2b0996c0 .
+doc:FactspiezoelectricAccelerometer9 schema:name "piezoelectric accelerometer"@en .
+_:db299fef53409414711c0cd67b6ba76d rdf:reifies <<( doc:FactspiezoelectricAccelerometer9 schema:name "piezoelectric accelerometer"@en )>> ;
+	prov:wasDerivedFrom doc:ecdf2b0996c0 .
+doc:FactsbearingSignals9 schema:name "unusual noise"@en .
+_:f278c7d8e011468f69c9081aec9207d4 rdf:reifies <<( doc:FactsbearingSignals9 schema:name "unusual noise"@en )>> ;
+	prov:wasDerivedFrom doc:ecdf2b0996c0 .
+doc:Factszhai schema:name "Raghav" .
+_:a39c31fd4e7f3f3ebd659d4e4af3f2f1 rdf:reifies <<( doc:Factszhai schema:name "Raghav" )>> ;
+	prov:wasDerivedFrom doc:ecdf2b0996c0 .
+doc:Factsclearances schema:label "bearing defect symptoms"@en .
+_:ce52b92af559846f71a5e42348d72fbb rdf:reifies <<( doc:Factsclearances schema:label "bearing defect symptoms"@en )>> ;
+	prov:wasDerivedFrom doc:ecdf2b0996c0 .
+doc:Factsstudy8 schema:description "Proposed a multisource dense adaptation adversarial network for fault diagnosis under polytropic working conditions."@en .
+_:b4e447111225c4b4ddd2798083e539fd rdf:reifies <<( doc:Factsstudy8 schema:description "Proposed a multisource dense adaptation adversarial network for fault diagnosis under polytropic working conditions."@en )>> ;
+	prov:wasDerivedFrom doc:ecdf2b0996c0 .
+doc:Factsclearances schema:name "bearing fault"@en .
+_:bc2b1bc248a07879a308119a04aea967 rdf:reifies <<( doc:Factsclearances schema:name "bearing fault"@en )>> ;
+	prov:wasDerivedFrom doc:ecdf2b0996c0 .
+_:bbe8949be1153d09ee50ecce0f943620 prov:wasDerivedFrom doc:ecdf2b0996c0 .
+doc:FactsexperimentalSetup9 schema:name "variable speed"@en .
+_:be44175b71fea0cdde36dfa54767a9cf rdf:reifies <<( doc:FactsexperimentalSetup9 schema:name "variable speed"@en )>> ;
+	prov:wasDerivedFrom doc:ecdf2b0996c0 .
+doc:Factszhai schema:name "Huang" .
+_:ed25aedd8e70024d61e77fa4ce8e8bea rdf:reifies <<( doc:Factszhai schema:name "Huang" )>> ;
+	prov:wasDerivedFrom doc:ecdf2b0996c0 .
+doc:FactsprimaryJawCrusher17 schema:name "primary jaw crusher"@en .
+_:fac97ddd10170056e27f5004462192c rdf:reifies <<( doc:FactsprimaryJawCrusher17 schema:name "primary jaw crusher"@en )>> ;
+	prov:wasDerivedFrom doc:ecdf2b0996c0 .
+doc:Factsskewness13 schema:name "skewness"@en .
+_:d49ef9f2496075a46b973b6681317a79 rdf:reifies <<( doc:Factsskewness13 schema:name "skewness"@en )>> ;
+	prov:wasDerivedFrom doc:ecdf2b0996c0 .
+doc:FactsequipmentLifespan12 a obo:BFO_0000019 .
+_:b67dab3f8cf72cb20a9028fbf25592f5 rdf:reifies <<( doc:FactsequipmentLifespan12 rdf:type obo:BFO_0000019 )>> ;
+	prov:wasDerivedFrom doc:ecdf2b0996c0 .
+doc:Factsstudy8 schema:description "Compared simulation results with measured vibration of a dual rotor tester with a rubbing fault."@en .
+_:c42d4af6fe605e13db5ad97240408eb0 rdf:reifies <<( doc:Factsstudy8 schema:description "Compared simulation results with measured vibration of a dual rotor tester with a rubbing fault."@en )>> ;
+	prov:wasDerivedFrom doc:ecdf2b0996c0 .
+doc:Factsstudy8 schema:description "Reviewed vibration condition monitoring and prognosis techniques applied to rotating machines in sugar industries."@en .
+_:eddaa31cb4e4097b612cbd80a17bd20c rdf:reifies <<( doc:Factsstudy8 schema:description "Reviewed vibration condition monitoring and prognosis techniques applied to rotating machines in sugar industries."@en )>> ;
+	prov:wasDerivedFrom doc:ecdf2b0996c0 .
+doc:FactsmultisourceDenseAdaptationAdversarialNetwork15 schema:name "multisource dense adaptation adversarial network"@en .
+_:a7cec8b7f63f1b5a44b92f18c2030bf7 rdf:reifies <<( doc:FactsmultisourceDenseAdaptationAdversarialNetwork15 schema:name "multisource dense adaptation adversarial network"@en )>> ;
+	prov:wasDerivedFrom doc:ecdf2b0996c0 .
+doc:Factsstudy8 schema:about doc:FactsbearingSignals9 .
+_:fdace2d13d51f78f43908b1f549a326c rdf:reifies <<( doc:Factsstudy8 schema:about doc:FactsbearingSignals9 )>> ;
+	prov:wasDerivedFrom doc:ecdf2b0996c0 .
+doc:FactsmeasuredVibration8 schema:name "measured vibration"@en .
+_:d66c1ed6f9d1de4a48f1052b6a33d83d rdf:reifies <<( doc:FactsmeasuredVibration8 schema:name "measured vibration"@en )>> ;
+	prov:wasDerivedFrom doc:ecdf2b0996c0 .
+doc:FactsbearingSignals9 schema:name "classification label information"@en .
+_:ced81d52bbf5a2a59aabcbe3c53e750b rdf:reifies <<( doc:FactsbearingSignals9 schema:name "classification label information"@en )>> ;
+	prov:wasDerivedFrom doc:ecdf2b0996c0 .
+doc:FactsprognosisTechniques11 schema:label "prognosis techniques"@en .
+_:e29a2bfb5762a635f8b795cce2e05171 rdf:reifies <<( doc:FactsprognosisTechniques11 schema:label "prognosis techniques"@en )>> ;
+	prov:wasDerivedFrom doc:ecdf2b0996c0 .
+_:d077213063879ef68056cebebfc28710 prov:wasDerivedFrom doc:ecdf2b0996c0 .
+doc:Factsclassifier10 a cco:Algorithm .
+_:af7c008348b568cab9f0a033718603b1 rdf:reifies <<( doc:Factsclassifier10 rdf:type cco:Algorithm )>> ;
+	prov:wasDerivedFrom doc:ecdf2b0996c0 .
+_:a5f5da43ba6cc779e9aa6f03a65fd2c prov:wasDerivedFrom doc:ecdf2b0996c0 .
+doc:Factsclearances schema:name "rubbing fault"@en .
+_:b7a86ace7b9fb5159afa071ddfe12bba rdf:reifies <<( doc:Factsclearances schema:name "rubbing fault"@en )>> ;
+	prov:wasDerivedFrom doc:ecdf2b0996c0 .
+doc:FactsbearingSignals9 schema:name "bearing signals"@en .
+_:aa141428f2a41e55c20e3b278d34f8d4 rdf:reifies <<( doc:FactsbearingSignals9 schema:name "bearing signals"@en )>> ;
+	prov:wasDerivedFrom doc:ecdf2b0996c0 .
+doc:Factsflywheel17 a schema:Product .
+_:e97315ea90b485c128522c38227db261 rdf:reifies <<( doc:Factsflywheel17 rdf:type schema:Product )>> ;
+	prov:wasDerivedFrom doc:ecdf2b0996c0 .
+doc:FactsequipmentLifespan12 schema:name "equipment lifespan"@en .
+_:bc5519b1ec1f34bc80e735973996dd4 rdf:reifies <<( doc:FactsequipmentLifespan12 schema:name "equipment lifespan"@en )>> ;
+	prov:wasDerivedFrom doc:ecdf2b0996c0 .
+doc:FactscrusherStructure17 a schema:Product .
+_:c560f7b939372573c369fe3d1fdf72fe rdf:reifies <<( doc:FactscrusherStructure17 rdf:type schema:Product )>> ;
+	prov:wasDerivedFrom doc:ecdf2b0996c0 .
+doc:Factsclearances schema:name "time-frequency-domain vibration analysis"@en .
+_:ecc9275a41f32e9716753ec90dd78b3b rdf:reifies <<( doc:Factsclearances schema:name "time-frequency-domain vibration analysis"@en )>> ;
+	prov:wasDerivedFrom doc:ecdf2b0996c0 .
+doc:Factsstudy8 schema:description "Presented a methodology for extracting expert rules for identification of bearing defects."@en .
+_:a97d2155f08be1e6ebf44bf694812ea2 rdf:reifies <<( doc:Factsstudy8 schema:description "Presented a methodology for extracting expert rules for identification of bearing defects."@en )>> ;
+	prov:wasDerivedFrom doc:ecdf2b0996c0 .
+doc:Factsflywheel17 schema:name "flywheel"@en .
+_:b8141f91b9c2526c651c8c7fd41e6723 rdf:reifies <<( doc:Factsflywheel17 schema:name "flywheel"@en )>> ;
+	prov:wasDerivedFrom doc:ecdf2b0996c0 .
+doc:Factsclearances schema:name "deformations"@en .
+_:bab0322343a8d7190568814784e2342d rdf:reifies <<( doc:Factsclearances schema:name "deformations"@en )>> ;
+	prov:wasDerivedFrom doc:ecdf2b0996c0 .
+doc:Factsclearances schema:label "fault diagnosis approach"@en .
+_:ffdf78a6fd378e9f3a10b7e7b60de88 rdf:reifies <<( doc:Factsclearances schema:label "fault diagnosis approach"@en )>> ;
+	prov:wasDerivedFrom doc:ecdf2b0996c0 .
+doc:Factsstudy8 schema:description "Investigated bearing faults experimentally using time-, frequency-, and time-frequency-domain vibration analysis techniques."@en .
+_:cad2bf7bcf903df454a1345bd74dfc64 rdf:reifies <<( doc:Factsstudy8 schema:description "Investigated bearing faults experimentally using time-, frequency-, and time-frequency-domain vibration analysis techniques."@en )>> ;
+	prov:wasDerivedFrom doc:ecdf2b0996c0 .
+doc:Factsstudy8 schema:about doc:FactsexperimentalSetup9 .
+_:aff266bb74985f85df484c4f9d5ce1bb rdf:reifies <<( doc:Factsstudy8 schema:about doc:FactsexperimentalSetup9 )>> ;
+	prov:wasDerivedFrom doc:ecdf2b0996c0 .
+doc:Factszhai schema:name "Khadersab" .
+_:ee23f13cdbc05f3e29e82be19bdc371b rdf:reifies <<( doc:Factszhai schema:name "Khadersab" )>> ;
+	prov:wasDerivedFrom doc:ecdf2b0996c0 .
+doc:Factszhai schema:name "Joshi" .
+_:b6c60b6f308c3e77b5e4a97d9ca4eb95 rdf:reifies <<( doc:Factszhai schema:name "Joshi" )>> ;
+	prov:wasDerivedFrom doc:ecdf2b0996c0 .
+doc:Factsclassifier10 schema:name "classifier"@en .
+_:df569079009583c1e99990f8db0585ce rdf:reifies <<( doc:Factsclassifier10 schema:name "classifier"@en )>> ;
+	prov:wasDerivedFrom doc:ecdf2b0996c0 .
+doc:FactsexperimentalSetup9 schema:name "experimental set-up"@en .
+_:bb4b302e0f2979c742f275825d3a06b2 rdf:reifies <<( doc:FactsexperimentalSetup9 schema:name "experimental set-up"@en )>> ;
+	prov:wasDerivedFrom doc:ecdf2b0996c0 .
+doc:FactsmeasuredVibration8 schema:name "abnormal vibration"@en .
+_:a77dd44a927919b9dc03697d5ecb4c0e rdf:reifies <<( doc:FactsmeasuredVibration8 schema:name "abnormal vibration"@en )>> ;
+	prov:wasDerivedFrom doc:ecdf2b0996c0 .
+doc:FactsdualRotorTester8 a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Maintainable_item> .
+_:d9fd1765e6acfbf036b9a1d993eca77d rdf:reifies <<( doc:FactsdualRotorTester8 rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Maintainable_item> )>> ;
+	prov:wasDerivedFrom doc:ecdf2b0996c0 .
+doc:FactsexperimentalSetup9 schema:name "variable load levels"@en .
+_:ce3eb8d017c0d3e2b46bed13dda49113 rdf:reifies <<( doc:FactsexperimentalSetup9 schema:name "variable load levels"@en )>> ;
+	prov:wasDerivedFrom doc:ecdf2b0996c0 .
+doc:FactsbearingSignals9 schema:name "vibration data"@en .
+_:c14fe4d5531d52ea3e575d80457f5f19 rdf:reifies <<( doc:FactsbearingSignals9 schema:name "vibration data"@en )>> ;
+	prov:wasDerivedFrom doc:ecdf2b0996c0 .
+doc:FactsbearingSignals9 schema:name "voltage data"@en .
+_:b8b23730bc4f1a82748fac87925bb21 rdf:reifies <<( doc:FactsbearingSignals9 schema:name "voltage data"@en )>> ;
+	prov:wasDerivedFrom doc:ecdf2b0996c0 .
+doc:FactscrusherStructure17 schema:name "crusher structure"@en .
+_:faf01c3eee86d5e4002b3dea8043b3b rdf:reifies <<( doc:FactscrusherStructure17 schema:name "crusher structure"@en )>> ;
+	prov:wasDerivedFrom doc:ecdf2b0996c0 .
+doc:FactsexperimentalSetup9 schema:name "peripheral threshold"@en .
+_:ece2ebb70c7a731f8b1fa38cf023c831 rdf:reifies <<( doc:FactsexperimentalSetup9 schema:name "peripheral threshold"@en )>> ;
+	prov:wasDerivedFrom doc:ecdf2b0996c0 .
+doc:Factsmachine schema:name "faulty bevel gear"@en .
+_:ab149847e2d64f66e65ef598c15a1ecf rdf:reifies <<( doc:Factsmachine schema:name "faulty bevel gear"@en )>> ;
+	prov:wasDerivedFrom doc:ecdf2b0996c0 .
+doc:Factszhai schema:name "Shivakumar" .
+_:e44352d7773e6a9c23f32518b9100893 rdf:reifies <<( doc:Factszhai schema:name "Shivakumar" )>> ;
+	prov:wasDerivedFrom doc:ecdf2b0996c0 .
+doc:FactsmultisourceDenseAdaptationAdversarialNetwork15 schema:about <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Classification> .
+_:fad46d2334f5aaf6e29715106e392560 rdf:reifies <<( doc:FactsmultisourceDenseAdaptationAdversarialNetwork15 schema:about <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Classification> )>> ;
+	prov:wasDerivedFrom doc:ecdf2b0996c0 .
+doc:Factszhai schema:name "Remond" .
+_:d548fc622fc25e368cc092ddcd56c0eb rdf:reifies <<( doc:Factszhai schema:name "Remond" )>> ;
+	prov:wasDerivedFrom doc:ecdf2b0996c0 .
+doc:FactsmultisourceDenseAdaptationAdversarialNetwork15 a cco:Algorithm .
+_:f33817118b6048f6c339e0af9ef1b1c rdf:reifies <<( doc:FactsmultisourceDenseAdaptationAdversarialNetwork15 rdf:type cco:Algorithm )>> ;
+	prov:wasDerivedFrom doc:ecdf2b0996c0 .
+doc:Factszhai schema:name "Magraoui" .
+_:f1cda1002d017af6f0be885770c2cb2b rdf:reifies <<( doc:Factszhai schema:name "Magraoui" )>> ;
+	prov:wasDerivedFrom doc:ecdf2b0996c0 .
+doc:FactspiezoelectricAccelerometer9 a schema:Product .
+_:a392227a8d32e9eca24740a4a292fe43 rdf:reifies <<( doc:FactspiezoelectricAccelerometer9 rdf:type schema:Product )>> ;
+	prov:wasDerivedFrom doc:ecdf2b0996c0 .
+doc:Factsstudy8 schema:about doc:FactsprimaryJawCrusher17 .
+_:d91deafd4808d5b3b3e1467acf7228f2 rdf:reifies <<( doc:Factsstudy8 schema:about doc:FactsprimaryJawCrusher17 )>> ;
+	prov:wasDerivedFrom doc:ecdf2b0996c0 .
+doc:Factsmachine schema:name "healthy bevel gear"@en .
+_:a99ca8369568e7b3f6263ddd51f34bba rdf:reifies <<( doc:Factsmachine schema:name "healthy bevel gear"@en )>> ;
+	prov:wasDerivedFrom doc:ecdf2b0996c0 .
+doc:FactsexperimentalSetup9 schema:name "operating conditions"@en .
+_:e485af99652a981e39c4adf8266d432e rdf:reifies <<( doc:FactsexperimentalSetup9 schema:name "operating conditions"@en )>> ;
+	prov:wasDerivedFrom doc:ecdf2b0996c0 .
+doc:Factsclearances schema:label "wear particle analysis"@en .
+_:f4bf3519150439f4700f3fc8d6e6d3e8 rdf:reifies <<( doc:Factsclearances schema:label "wear particle analysis"@en )>> ;
+	prov:wasDerivedFrom doc:ecdf2b0996c0 .
+doc:Factsmachine schema:name "gearbox"@en .
+_:be8a6ee2e64617ab239b838d106ad6e3 rdf:reifies <<( doc:Factsmachine schema:name "gearbox"@en )>> ;
+	prov:wasDerivedFrom doc:ecdf2b0996c0 .
+doc:Factsclearances schema:label "vibration analysis"@en .
+_:b8ad74c381032ac1390ce18f1e2d5568 rdf:reifies <<( doc:Factsclearances schema:label "vibration analysis"@en )>> ;
+	prov:wasDerivedFrom doc:ecdf2b0996c0 .
+doc:Factsskewness13 schema:name "time-domain condition indicator"@en .
+_:e8cdb4a3d1e1798ec550fec481fd806c rdf:reifies <<( doc:Factsskewness13 schema:name "time-domain condition indicator"@en )>> ;
+	prov:wasDerivedFrom doc:ecdf2b0996c0 .
+doc:Factsmachine schema:name "rolling bearing"@en .
+_:b9b782d82ecf5fd258b45cf094471730 rdf:reifies <<( doc:Factsmachine schema:name "rolling bearing"@en )>> ;
+	prov:wasDerivedFrom doc:ecdf2b0996c0 .
+doc:Factszhai schema:name "Boumahdi" .
+_:faa9fbb306c1ddeafdb5b24c0577dfb9 rdf:reifies <<( doc:Factszhai schema:name "Boumahdi" )>> ;
+	prov:wasDerivedFrom doc:ecdf2b0996c0 .
+doc:FactsexperimentalSetup9 a schema:Product .
+_:e83929d64fb7e1c50ffa447a6af84414 rdf:reifies <<( doc:FactsexperimentalSetup9 rdf:type schema:Product )>> ;
+	prov:wasDerivedFrom doc:ecdf2b0996c0 .
+doc:Factsstudy8 schema:description "Studied the influence of rolling mill operating conditions on its lifespan."@en .
+_:c21fc77d4781e61eaa01b981dc4252fd rdf:reifies <<( doc:Factsstudy8 schema:description "Studied the influence of rolling mill operating conditions on its lifespan."@en )>> ;
+	prov:wasDerivedFrom doc:ecdf2b0996c0 .
+<http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Predictive_maintenance_model> owl:sameAs <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Predictive_Maintenance_Article> , <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Predictive_maintenance_system_module> .
+obo:BFO_0000019 owl:sameAs obo:BFO_0000001 .

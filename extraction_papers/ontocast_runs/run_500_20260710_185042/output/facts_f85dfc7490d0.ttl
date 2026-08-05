@@ -1,0 +1,585 @@
+@prefix None: <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD/seed#> .
+@prefix cco: <http://www.ontologyrepository.com/CommonCoreOntologies/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doc: <https://growgraph.dev/doc/f85dfc7490d0/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix cd: <https://growgraph.dev/facts> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix schema: <https://schema.org/> .
+@prefix schema1: <http://schema.org/> .
+doc:45b48b84850b a prov:Entity , schema:text ;
+	prov:generatedAtTime "2026-07-13T00:38:04.806525Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+	schema:position 0 ;
+	schema:identifier "45b48b84850b" .
+doc:Factsyear1_91 None:has_interger_value 2026 .
+_:e77dfd34f10d8d09dc0b14c55ae6beaf rdf:reifies <<( doc:Factsyear1_91 None:has_interger_value 2026 )>> ;
+	prov:wasDerivedFrom doc:45b48b84850b .
+doc:FactsmonitoringFunction a None:Fault_detection .
+_:dab52fe2a423bfd2458bbe78fc9da37e rdf:reifies <<( doc:FactsmonitoringFunction rdf:type None:Fault_detection )>> ;
+	prov:wasDerivedFrom doc:45b48b84850b .
+doc:Factspaper1_8 rdfs:label "Virtual Sensors Based on Finite Element Method: Balancing Accuracy, Runtime and Offline Effort" .
+_:bafa9ceed456a7bc01fc8e82aac95c14 rdf:reifies <<( doc:Factspaper1_8 rdfs:label "Virtual Sensors Based on Finite Element Method: Balancing Accuracy, Runtime and Offline Effort" )>> ;
+	prov:wasDerivedFrom doc:45b48b84850b .
+doc:Factslatency a None:Design_detail .
+_:b5cd24a4ae3c71aba17c929220020150 rdf:reifies <<( doc:Factslatency rdf:type None:Design_detail )>> ;
+	prov:wasDerivedFrom doc:45b48b84850b .
+doc:FactslookupDatabaseApproach None:has_design_detail doc:Factslatency .
+_:a334a1401e35f09b53a9b7d0f694ff35 rdf:reifies <<( doc:FactslookupDatabaseApproach None:has_design_detail doc:Factslatency )>> ;
+	prov:wasDerivedFrom doc:45b48b84850b .
+doc:FactsvirtualSensor cco:describes doc:FactsstateEstimation .
+_:f5405e3cea90bc676cb7a536bcbcd540 rdf:reifies <<( doc:FactsvirtualSensor cco:describes doc:FactsstateEstimation )>> ;
+	prov:wasDerivedFrom doc:45b48b84850b .
+doc:Factsauthor3_57 a schema1:Person .
+_:d61fb83e37783ed21f8d283bba153378 rdf:reifies <<( doc:Factsauthor3_57 rdf:type schema1:Person )>> ;
+	prov:wasDerivedFrom doc:45b48b84850b .
+doc:FactsruntimeScaling rdfs:label "runtime scaling" .
+_:c7df7c8275c181383436a145b6a3af40 rdf:reifies <<( doc:FactsruntimeScaling rdfs:label "runtime scaling" )>> ;
+	prov:wasDerivedFrom doc:45b48b84850b .
+doc:FactscpuDieModel a None:Maintainable_item .
+_:fe90a34163cddb0cd749f9ebe46fcbce rdf:reifies <<( doc:FactscpuDieModel rdf:type None:Maintainable_item )>> ;
+	prov:wasDerivedFrom doc:45b48b84850b .
+doc:Factspaper1_8 schema1:keywords "thermal analysis" .
+_:d4d40cc754aaddc85718ec4e06923aad rdf:reifies <<( doc:Factspaper1_8 schema1:keywords "thermal analysis" )>> ;
+	prov:wasDerivedFrom doc:45b48b84850b .
+doc:FactsvirtualSensor rdfs:label "virtual sensor" .
+_:f74ec1db86a9156f6bf3ee14fccc77f7 rdf:reifies <<( doc:FactsvirtualSensor rdfs:label "virtual sensor" )>> ;
+	prov:wasDerivedFrom doc:45b48b84850b .
+doc:Factstitle1_89 rdfs:label "Virtual Sensors Based on Finite Element Method: Balancing Accuracy, Runtime and Offline Effort" .
+_:d5846adebe9cc24372e2b2b09a92f3a7 rdf:reifies <<( doc:Factstitle1_89 rdfs:label "Virtual Sensors Based on Finite Element Method: Balancing Accuracy, Runtime and Offline Effort" )>> ;
+	prov:wasDerivedFrom doc:45b48b84850b .
+doc:FactstensionBarBenchmark a None:Maintainable_item .
+_:a35d459c78d4d7e77634b41176b55277 rdf:reifies <<( doc:FactstensionBarBenchmark rdf:type None:Maintainable_item )>> ;
+	prov:wasDerivedFrom doc:45b48b84850b .
+doc:Factslatency None:has_text_value "high-fidelity estimates" .
+_:e8cdd44d5314ad9b4f0b0e65b9127bb9 rdf:reifies <<( doc:Factslatency None:has_text_value "high-fidelity estimates" )>> ;
+	prov:wasDerivedFrom doc:45b48b84850b .
+doc:Factspower_law_alpha2 None:has_text_value "0.66" .
+_:d50f8449ef962ebc643eea8043c68e36 rdf:reifies <<( doc:Factspower_law_alpha2 None:has_text_value "0.66" )>> ;
+	prov:wasDerivedFrom doc:45b48b84850b .
+doc:FactsstateEstimation a cco:DescriptiveInformationContentEntity .
+_:d323bb63e57cce342d81e7879967d8d0 rdf:reifies <<( doc:FactsstateEstimation rdf:type cco:DescriptiveInformationContentEntity )>> ;
+	prov:wasDerivedFrom doc:45b48b84850b .
+doc:FactslookupDatabaseApproach a None:Predictive_maintenance_system_module .
+_:d42c6b3043c16710d4ec63062c324db5 rdf:reifies <<( doc:FactslookupDatabaseApproach rdf:type None:Predictive_maintenance_system_module )>> ;
+	prov:wasDerivedFrom doc:45b48b84850b .
+doc:Factsarticle_id1 a None:Article_identifier .
+_:de61e8489bdb873505dcf0488f3cfff2 rdf:reifies <<( doc:Factsarticle_id1 rdf:type None:Article_identifier )>> ;
+	prov:wasDerivedFrom doc:45b48b84850b .
+doc:FactsofflineConstructionEffort rdfs:label "offline construction effort" .
+_:ec47e4983d7da1b3df7a040d5046bf7d rdf:reifies <<( doc:FactsofflineConstructionEffort rdfs:label "offline construction effort" )>> ;
+	prov:wasDerivedFrom doc:45b48b84850b .
+doc:FactscostModel rdfs:label "quantitative cost model" .
+_:aab8c84930ce3be8afcc31a648e1b415 rdf:reifies <<( doc:FactscostModel rdfs:label "quantitative cost model" )>> ;
+	prov:wasDerivedFrom doc:45b48b84850b .
+doc:FactscostModel a cco:Algorithm .
+_:a2a139c9006f0627028adb9e7a3b515 rdf:reifies <<( doc:FactscostModel rdf:type cco:Algorithm )>> ;
+	prov:wasDerivedFrom doc:45b48b84850b .
+doc:Factseditor2_1 a schema1:Person .
+_:cbd1a0cc0e0fd15a6d5e805fe78dedfc rdf:reifies <<( doc:Factseditor2_1 rdf:type schema1:Person )>> ;
+	prov:wasDerivedFrom doc:45b48b84850b .
+doc:FactssvsMl a None:Predictive_maintenance_system_module .
+_:c77f1a1fe11050683f64f468f5b19a0f rdf:reifies <<( doc:FactssvsMl rdf:type None:Predictive_maintenance_system_module )>> ;
+	prov:wasDerivedFrom doc:45b48b84850b .
+doc:Factspaper1_8 schema1:dateReceived "2026-01-28"^^<http://www.w3.org/2001/XMLSchema#date> .
+_:d29665848667a26782e6f979174fb43e rdf:reifies <<( doc:Factspaper1_8 schema1:dateReceived "2026-01-28"^^<http://www.w3.org/2001/XMLSchema#date> )>> ;
+	prov:wasDerivedFrom doc:45b48b84850b .
+doc:FactsaccuracyAssessments rdfs:label "accuracy assessments" .
+_:de38d68f1b6b17f172c69876500190b3 rdf:reifies <<( doc:FactsaccuracyAssessments rdfs:label "accuracy assessments" )>> ;
+	prov:wasDerivedFrom doc:45b48b84850b .
+doc:FactssvsMl rdfs:label "live FEM approach" .
+_:ce6cb2b9433f1b26609d74275ab8c90f rdf:reifies <<( doc:FactssvsMl rdfs:label "live FEM approach" )>> ;
+	prov:wasDerivedFrom doc:45b48b84850b .
+doc:Factstitle1_89 a None:Article_title .
+_:c1be38107466e0c5c487ced9c6dd6600 rdf:reifies <<( doc:Factstitle1_89 rdf:type None:Article_title )>> ;
+	prov:wasDerivedFrom doc:45b48b84850b .
+doc:Factspaper1_8 None:has_publication_year doc:Factsyear1_91 .
+_:e4b4396de5a3a7ce38fe39e34c216ca3 rdf:reifies <<( doc:Factspaper1_8 None:has_publication_year doc:Factsyear1_91 )>> ;
+	prov:wasDerivedFrom doc:45b48b84850b .
+doc:Factspaper1_8 schema1:keywords "state estimation" .
+_:dca3c626dbcf0e863f54b4bc21bb3652 rdf:reifies <<( doc:Factspaper1_8 schema1:keywords "state estimation" )>> ;
+	prov:wasDerivedFrom doc:45b48b84850b .
+doc:Factspaper1_8 schema1:author doc:Factsauthor3_57 .
+_:ebb1921d61abaa6fc7c90a99f7e820e3 rdf:reifies <<( doc:Factspaper1_8 schema1:author doc:Factsauthor3_57 )>> ;
+	prov:wasDerivedFrom doc:45b48b84850b .
+doc:Factsauthor3_57 schema1:name "Andreas Kormann" .
+_:bf2f78eee75f6c16cad9d97146f5e17f rdf:reifies <<( doc:Factsauthor3_57 schema1:name "Andreas Kormann" )>> ;
+	prov:wasDerivedFrom doc:45b48b84850b .
+doc:FactsonlineLatency a None:Performance_indicator .
+_:c4c3ea877e45f3f42879dc69f107697c rdf:reifies <<( doc:FactsonlineLatency rdf:type None:Performance_indicator )>> ;
+	prov:wasDerivedFrom doc:45b48b84850b .
+doc:Factsauthor3_57 schema1:name "Stephan Tremmel" .
+_:c88dc854281b005dbf28611b2f6c274b rdf:reifies <<( doc:Factsauthor3_57 schema1:name "Stephan Tremmel" )>> ;
+	prov:wasDerivedFrom doc:45b48b84850b .
+doc:Factspaper1_8 schema1:keywords "design of experiments" .
+_:ace0db38f5941aac0043a8f2995668d3 rdf:reifies <<( doc:Factspaper1_8 schema1:keywords "design of experiments" )>> ;
+	prov:wasDerivedFrom doc:45b48b84850b .
+doc:FactsdigitalTwinPipeline a None:Predictive_maintenance_system_module .
+_:c337ea02c3e8ff3d2c05a7140d3dbcc7 rdf:reifies <<( doc:FactsdigitalTwinPipeline rdf:type None:Predictive_maintenance_system_module )>> ;
+	prov:wasDerivedFrom doc:45b48b84850b .
+doc:FactsmonitoringFunction rdfs:label "monitoring" .
+_:ed007460386bd2e4857af4a79fb221dd rdf:reifies <<( doc:FactsmonitoringFunction rdfs:label "monitoring" )>> ;
+	prov:wasDerivedFrom doc:45b48b84850b .
+doc:Factspaper1_8 schema1:keywords "virtual sensors" .
+_:ea773bc02353e41101f376f561680b3a rdf:reifies <<( doc:Factspaper1_8 schema1:keywords "virtual sensors" )>> ;
+	prov:wasDerivedFrom doc:45b48b84850b .
+doc:Factspaper1_8 a None:Predictive_Maintenance_Article .
+_:b67c8a7b6f31196225d2c4d946fb61f0 rdf:reifies <<( doc:Factspaper1_8 rdf:type None:Predictive_Maintenance_Article )>> ;
+	prov:wasDerivedFrom doc:45b48b84850b .
+doc:Factspaper1_8 schema1:keywords "lookup databases" .
+_:dd4dc3c492ea3e6b75801b3e0480dd82 rdf:reifies <<( doc:Factspaper1_8 schema1:keywords "lookup databases" )>> ;
+	prov:wasDerivedFrom doc:45b48b84850b .
+doc:FactsvirtualSensor a cco:Algorithm .
+_:c5bb4ec4a55dc9228b02279e960fa2e4 rdf:reifies <<( doc:FactsvirtualSensor rdf:type cco:Algorithm )>> ;
+	prov:wasDerivedFrom doc:45b48b84850b .
+doc:Factspaper1_8 schema1:editor doc:Factseditor2_1 .
+_:d101c8929a296344ce34dddba060c79e rdf:reifies <<( doc:Factspaper1_8 schema1:editor doc:Factseditor2_1 )>> ;
+	prov:wasDerivedFrom doc:45b48b84850b .
+doc:FactsruntimeScaling a None:Performance_indicator .
+_:fc034479c793b42883b8af1c43a1d663 rdf:reifies <<( doc:FactsruntimeScaling rdf:type None:Performance_indicator )>> ;
+	prov:wasDerivedFrom doc:45b48b84850b .
+doc:Factslatency None:has_text_value "precomputing responses offline" .
+_:a17cfc97332021c6b5e869e16fdaddf9 rdf:reifies <<( doc:Factslatency None:has_text_value "precomputing responses offline" )>> ;
+	prov:wasDerivedFrom doc:45b48b84850b .
+doc:Factspower_law_alpha2 rdfs:label "alpha" .
+_:e78bfc6ceeba97e489404195d5d95de7 rdf:reifies <<( doc:Factspower_law_alpha2 rdfs:label "alpha" )>> ;
+	prov:wasDerivedFrom doc:45b48b84850b .
+doc:Factsyear1_91 a None:Publication_year .
+_:bb3a3b9600e91b79cf10087453a9fa2 rdf:reifies <<( doc:Factsyear1_91 rdf:type None:Publication_year )>> ;
+	prov:wasDerivedFrom doc:45b48b84850b .
+doc:FactsdigitalTwinPipeline None:has_predictive_maintenance_function doc:FactsmonitoringFunction .
+_:edfe69ac5db9228a57c8cedc69416475 rdf:reifies <<( doc:FactsdigitalTwinPipeline None:has_predictive_maintenance_function doc:FactsmonitoringFunction )>> ;
+	prov:wasDerivedFrom doc:45b48b84850b .
+doc:FactscpuDieModel rdfs:label "steady-state thermal model of a CPU die" .
+_:f809ed7705d69f371ff0862b00b100a6 rdf:reifies <<( doc:FactscpuDieModel rdfs:label "steady-state thermal model of a CPU die" )>> ;
+	prov:wasDerivedFrom doc:45b48b84850b .
+doc:Factspower_law_alpha2 a None:Performance_value .
+_:bf38c86a6ec9a5b9641df481315a87b0 rdf:reifies <<( doc:Factspower_law_alpha2 rdf:type None:Performance_value )>> ;
+	prov:wasDerivedFrom doc:45b48b84850b .
+doc:FactssvsMl None:has_design_detail doc:Factslatency .
+_:a7d027931c572e0c399d3ca7e31ab8d0 rdf:reifies <<( doc:FactssvsMl None:has_design_detail doc:Factslatency )>> ;
+	prov:wasDerivedFrom doc:45b48b84850b .
+doc:FactstimingStudies rdfs:label "timing studies" .
+_:a11468fb12872f9567278aa905b2eb86 rdf:reifies <<( doc:FactstimingStudies rdfs:label "timing studies" )>> ;
+	prov:wasDerivedFrom doc:45b48b84850b .
+doc:Factsauthor3_57 schema1:name "Frank Rieg" .
+_:bdbcadfee2f19561a707be85811674d9 rdf:reifies <<( doc:Factsauthor3_57 schema1:name "Frank Rieg" )>> ;
+	prov:wasDerivedFrom doc:45b48b84850b .
+doc:Factsauthor3_57 schema1:name "Tobias Rosnitschek" .
+_:fd1accdee933530b9d62b99a89ed1c6a rdf:reifies <<( doc:Factsauthor3_57 schema1:name "Tobias Rosnitschek" )>> ;
+	prov:wasDerivedFrom doc:45b48b84850b .
+doc:Factspaper1_8 schema1:dateRevised "2026-02-13"^^<http://www.w3.org/2001/XMLSchema#date> .
+_:b0e8db833183a4e2be0bdfd0b3a322fb rdf:reifies <<( doc:Factspaper1_8 schema1:dateRevised "2026-02-13"^^<http://www.w3.org/2001/XMLSchema#date> )>> ;
+	prov:wasDerivedFrom doc:45b48b84850b .
+doc:Factsabstract1_3 schema1:text "Access to internal fields such as stress, temperature, and fatigue indicators is essential for condition monitoring, yet direct sensing is often impractical. Finite element method (FEM)-based virtual sensors address this gap by combining sparse measurements with physics-based models. This work compares two virtual sensor workflows. The live FEM approach executes a model on demand and provides high-fidelity estimates at the cost of multi-second runtimes. The lookup database approach shifts computation offline by precomputing responses and answering online queries by fast interpolation. We introduce a quantitative cost model that links measured runtime scaling, offline construction effort, and online latency to deployment choices. The cost model is evaluated through timing studies, accuracy assessments, and an empirical break-even analysis relating offline effort to the expected number of online queries. Two case studies illustrate the method, a nonlinear tension-bar benchmark and a steady-state thermal model of a CPU die. Live FEM runtime follows a power law with Î± â 1.2 for the tensile case and an effective Î± â 0.66 for the CPU case due to dominant overheads. The resulting rules translate accuracy targets and latency budgets into workflow-selection criteria that support integration into digital-twin and monitoring pipelines." .
+_:efa2100a3b9d8f7b599af31cf9dedf05 rdf:reifies <<( doc:Factsabstract1_3 schema1:text "Access to internal fields such as stress, temperature, and fatigue indicators is essential for condition monitoring, yet direct sensing is often impractical. Finite element method (FEM)-based virtual sensors address this gap by combining sparse measurements with physics-based models. This work compares two virtual sensor workflows. The live FEM approach executes a model on demand and provides high-fidelity estimates at the cost of multi-second runtimes. The lookup database approach shifts computation offline by precomputing responses and answering online queries by fast interpolation. We introduce a quantitative cost model that links measured runtime scaling, offline construction effort, and online latency to deployment choices. The cost model is evaluated through timing studies, accuracy assessments, and an empirical break-even analysis relating offline effort to the expected number of online queries. Two case studies illustrate the method, a nonlinear tension-bar benchmark and a steady-state thermal model of a CPU die. Live FEM runtime follows a power law with Î± â 1.2 for the tensile case and an effective Î± â 0.66 for the CPU case due to dominant overheads. The resulting rules translate accuracy targets and latency budgets into workflow-selection criteria that support integration into digital-twin and monitoring pipelines." )>> ;
+	prov:wasDerivedFrom doc:45b48b84850b .
+doc:Factslatency None:has_text_value "deployment choices" .
+_:e60ea3364af7a619b15171624c708e60 rdf:reifies <<( doc:Factslatency None:has_text_value "deployment choices" )>> ;
+	prov:wasDerivedFrom doc:45b48b84850b .
+doc:Factspaper1_8 schema1:keywords "nonlinear mechanics" .
+_:c7c5ff19240a101981abe4452a00fa00 rdf:reifies <<( doc:Factspaper1_8 schema1:keywords "nonlinear mechanics" )>> ;
+	prov:wasDerivedFrom doc:45b48b84850b .
+doc:FactslookupDatabaseApproach rdfs:label "lookup database approach" .
+_:bac00c8572a6e1e99c96656be0920bff rdf:reifies <<( doc:FactslookupDatabaseApproach rdfs:label "lookup database approach" )>> ;
+	prov:wasDerivedFrom doc:45b48b84850b .
+doc:Factsfuture_state_forecast1 a None:Future_state_forecast .
+_:dce18e468c7663198698681d47ef9c01 rdf:reifies <<( doc:Factsfuture_state_forecast1 rdf:type None:Future_state_forecast )>> ;
+	prov:wasDerivedFrom doc:45b48b84850b .
+doc:FactssvsMl None:has_predictive_maintenance_function doc:Factsfuture_state_forecast1 .
+_:accda8f8cbcb52b05660c5e394564125 rdf:reifies <<( doc:FactssvsMl None:has_predictive_maintenance_function doc:Factsfuture_state_forecast1 )>> ;
+	prov:wasDerivedFrom doc:45b48b84850b .
+doc:Factspaper1_8 schema1:keywords "finite element method" .
+_:f73f9f305ff13e5118b50eb1e3c2c84e rdf:reifies <<( doc:Factspaper1_8 schema1:keywords "finite element method" )>> ;
+	prov:wasDerivedFrom doc:45b48b84850b .
+doc:FactsaccuracyAssessments a None:Performance_indicator .
+_:abeae9d7053cc11bc1773bb83da1332 rdf:reifies <<( doc:FactsaccuracyAssessments rdf:type None:Performance_indicator )>> ;
+	prov:wasDerivedFrom doc:45b48b84850b .
+doc:Factsabstract1_3 a schema1:Abstract .
+_:ade4690c0a32d30e5aae843d959c3f9 rdf:reifies <<( doc:Factsabstract1_3 rdf:type schema1:Abstract )>> ;
+	prov:wasDerivedFrom doc:45b48b84850b .
+doc:FactstensionBarBenchmark rdfs:label "nonlinear tension-bar benchmark" .
+_:d59558fd2b04c763ffabc73541fdef16 rdf:reifies <<( doc:FactstensionBarBenchmark rdfs:label "nonlinear tension-bar benchmark" )>> ;
+	prov:wasDerivedFrom doc:45b48b84850b .
+doc:Factslatency None:has_text_value "fast interpolation for online queries" .
+_:cd45d8f6fb01cdfd457dacffa9f91755 rdf:reifies <<( doc:Factslatency None:has_text_value "fast interpolation for online queries" )>> ;
+	prov:wasDerivedFrom doc:45b48b84850b .
+doc:Factspower_law_alpha2 rdfs:label "effective alpha" .
+_:b73640e7488b0ee607dcb92522268a32 rdf:reifies <<( doc:Factspower_law_alpha2 rdfs:label "effective alpha" )>> ;
+	prov:wasDerivedFrom doc:45b48b84850b .
+doc:FactsonlineLatency rdfs:label "online latency" .
+_:bfd6f3804e3dc1121f66ed6fdfde6cac rdf:reifies <<( doc:FactsonlineLatency rdfs:label "online latency" )>> ;
+	prov:wasDerivedFrom doc:45b48b84850b .
+doc:FactsofflineConstructionEffort a None:Performance_indicator .
+_:c3ade06c2da0d218c86dc008b251c202 rdf:reifies <<( doc:FactsofflineConstructionEffort rdf:type None:Performance_indicator )>> ;
+	prov:wasDerivedFrom doc:45b48b84850b .
+doc:Factspaper1_8 schema1:datePublished "2026-02-19"^^<http://www.w3.org/2001/XMLSchema#date> .
+_:e280084e650401aa66a1a5bc3d1fbca5 rdf:reifies <<( doc:Factspaper1_8 schema1:datePublished "2026-02-19"^^<http://www.w3.org/2001/XMLSchema#date> )>> ;
+	prov:wasDerivedFrom doc:45b48b84850b .
+doc:FactscostModel rdfs:label "empirical break-even analysis" .
+_:fbc12e183f0067f3c8e5f493a5761cb5 rdf:reifies <<( doc:FactscostModel rdfs:label "empirical break-even analysis" )>> ;
+	prov:wasDerivedFrom doc:45b48b84850b .
+doc:Factseditor2_1 schema1:name "Arkadiusz Poteralski" .
+_:dd56188b50ce179aa9fdcd8ec96cabe1 rdf:reifies <<( doc:Factseditor2_1 schema1:name "Arkadiusz Poteralski" )>> ;
+	prov:wasDerivedFrom doc:45b48b84850b .
+doc:FactsstateEstimation rdfs:label "state estimation" .
+_:ee45410f3194274e3ef8bfe57e4bd667 rdf:reifies <<( doc:FactsstateEstimation rdfs:label "state estimation" )>> ;
+	prov:wasDerivedFrom doc:45b48b84850b .
+doc:Factspower_law_alpha2 None:has_text_value "1.2" .
+_:adbd167ab6bc0b05bced76bbd1eb0519 rdf:reifies <<( doc:Factspower_law_alpha2 None:has_text_value "1.2" )>> ;
+	prov:wasDerivedFrom doc:45b48b84850b .
+doc:Factspaper1_8 None:has_identifier doc:Factsarticle_id1 .
+_:f11e3d9c253477d97dc4be33c3d698df rdf:reifies <<( doc:Factspaper1_8 None:has_identifier doc:Factsarticle_id1 )>> ;
+	prov:wasDerivedFrom doc:45b48b84850b .
+doc:Factspaper1_8 None:has_title doc:Factstitle1_89 .
+_:ae29fe21553a0e4d89f043b3af19a591 rdf:reifies <<( doc:Factspaper1_8 None:has_title doc:Factstitle1_89 )>> ;
+	prov:wasDerivedFrom doc:45b48b84850b .
+doc:FactsdigitalTwinPipeline rdfs:label "digital-twin and monitoring pipelines" .
+_:d4771bd90d16bed2428d943f70e4d75e rdf:reifies <<( doc:FactsdigitalTwinPipeline rdfs:label "digital-twin and monitoring pipelines" )>> ;
+	prov:wasDerivedFrom doc:45b48b84850b .
+doc:Factsfuture_state_forecast1 rdfs:label "model on demand estimation" .
+_:b69351ae8d56d7236dbee5983f7dee47 rdf:reifies <<( doc:Factsfuture_state_forecast1 rdfs:label "model on demand estimation" )>> ;
+	prov:wasDerivedFrom doc:45b48b84850b .
+doc:FactsvirtualSensor rdfs:label "finite element method-based virtual sensor" .
+_:f8e4929c5dcef05680de7fa563fe1b74 rdf:reifies <<( doc:FactsvirtualSensor rdfs:label "finite element method-based virtual sensor" )>> ;
+	prov:wasDerivedFrom doc:45b48b84850b .
+doc:FactstimingStudies a None:Performance_indicator .
+_:db014befe3af26339ed8315b16efeeff rdf:reifies <<( doc:FactstimingStudies rdf:type None:Performance_indicator )>> ;
+	prov:wasDerivedFrom doc:45b48b84850b .
+doc:Factspaper1_8 schema1:abstract doc:Factsabstract1_3 .
+_:bdc8097fcbd7c2497cbfaeb700703902 rdf:reifies <<( doc:Factspaper1_8 schema1:abstract doc:Factsabstract1_3 )>> ;
+	prov:wasDerivedFrom doc:45b48b84850b .
+doc:Factspaper1_8 schema1:keywords "real-time simulation" .
+_:f08283aa727423a11bc3042da8ee7878 rdf:reifies <<( doc:Factspaper1_8 schema1:keywords "real-time simulation" )>> ;
+	prov:wasDerivedFrom doc:45b48b84850b .
+doc:Factsarticle_id1 rdfs:label "MDPI article" .
+_:bfe66cbf6b370965a1894906f417cf5e rdf:reifies <<( doc:Factsarticle_id1 rdfs:label "MDPI article" )>> ;
+	prov:wasDerivedFrom doc:45b48b84850b .
+doc:Factseditor2_1 schema1:name "MirosÅaw Szczepanik" .
+_:ace938f2f61a5ab4095a7f3f8f78cae rdf:reifies <<( doc:Factseditor2_1 schema1:name "MirosÅaw Szczepanik" )>> ;
+	prov:wasDerivedFrom doc:45b48b84850b .
+doc:Factspaper1_8 schema1:dateAccepted "2026-02-16"^^<http://www.w3.org/2001/XMLSchema#date> .
+_:ae4e01534ebf9eb8ae0150599e05cac5 rdf:reifies <<( doc:Factspaper1_8 schema1:dateAccepted "2026-02-16"^^<http://www.w3.org/2001/XMLSchema#date> )>> ;
+	prov:wasDerivedFrom doc:45b48b84850b .
+doc:6d5020ab70e1 a prov:Entity , schema:text ;
+	prov:generatedAtTime "2026-07-13T00:38:04.814033Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+	schema:position 1 ;
+	schema:identifier "6d5020ab70e1" .
+_:e4b4396de5a3a7ce38fe39e34c216ca3 prov:wasDerivedFrom doc:6d5020ab70e1 .
+doc:FactssvsMl a None:Predictive_maintenance_model .
+_:bc9067e5dd33f476102a3357e74649c rdf:reifies <<( doc:FactssvsMl rdf:type None:Predictive_maintenance_model )>> ;
+	prov:wasDerivedFrom doc:6d5020ab70e1 .
+doc:Factsdt_1 None:has_text_value "computing on demand" .
+_:cd22ee039c61cfa108650b9f59ba5ba1 rdf:reifies <<( doc:Factsdt_1 None:has_text_value "computing on demand" )>> ;
+	prov:wasDerivedFrom doc:6d5020ab70e1 .
+doc:FactsonlineLatency None:has_text_value "finer meshes" .
+_:c7be3059918aed92b387fa6087e2dc19 rdf:reifies <<( doc:FactsonlineLatency None:has_text_value "finer meshes" )>> ;
+	prov:wasDerivedFrom doc:6d5020ab70e1 .
+doc:FactssyncLatency a None:Module_synchronization .
+_:b3622f3da6244f501c4acfac2161d7fa rdf:reifies <<( doc:FactssyncLatency rdf:type None:Module_synchronization )>> ;
+	prov:wasDerivedFrom doc:6d5020ab70e1 .
+doc:Factsdt_1 None:has_text_value "finite element model" .
+_:bc0ccbec07eef0ae3401483b5b8f5d8e rdf:reifies <<( doc:Factsdt_1 None:has_text_value "finite element model" )>> ;
+	prov:wasDerivedFrom doc:6d5020ab70e1 .
+doc:FactssvsMl None:describes_type doc:Factsdt_1 .
+_:b2b7c7c8c71b6aa607e9de324647c046 rdf:reifies <<( doc:FactssvsMl None:describes_type doc:Factsdt_1 )>> ;
+	prov:wasDerivedFrom doc:6d5020ab70e1 .
+doc:FactsdamageDetection a None:Fault_detection .
+_:eb1a809f9f89bfd8337feb5fe845bd4f rdf:reifies <<( doc:FactsdamageDetection rdf:type None:Fault_detection )>> ;
+	prov:wasDerivedFrom doc:6d5020ab70e1 .
+_:dce18e468c7663198698681d47ef9c01 prov:wasDerivedFrom doc:6d5020ab70e1 .
+doc:FactscostModel a None:Performance_indicator .
+_:eb908adf90c1f61929a867f362eb98ea rdf:reifies <<( doc:FactscostModel rdf:type None:Performance_indicator )>> ;
+	prov:wasDerivedFrom doc:6d5020ab70e1 .
+doc:Factsonline a None:Predictive_maintenance_system_module .
+_:a53ec7c7af0367615383ccbab770dce7 rdf:reifies <<( doc:Factsonline rdf:type None:Predictive_maintenance_system_module )>> ;
+	prov:wasDerivedFrom doc:6d5020ab70e1 .
+doc:Factsonline None:has_predictive_maintenance_function doc:Factsdt_1 .
+_:db5279abb71d211f64ee8eac44513160 rdf:reifies <<( doc:Factsonline None:has_predictive_maintenance_function doc:Factsdt_1 )>> ;
+	prov:wasDerivedFrom doc:6d5020ab70e1 .
+doc:FactssvsMl None:has_text_value "SVS-LDB" .
+_:cd1e9c92f9f7fd487f5bdf6894869b5d rdf:reifies <<( doc:FactssvsMl None:has_text_value "SVS-LDB" )>> ;
+	prov:wasDerivedFrom doc:6d5020ab70e1 .
+doc:Factslatency None:has_text_value "latency" .
+_:cb12a5e6ce118b887a4ea3edc7c42e83 rdf:reifies <<( doc:Factslatency None:has_text_value "latency" )>> ;
+	prov:wasDerivedFrom doc:6d5020ab70e1 .
+doc:Factsdt_1 a None:Predictive_maintenance_module_function .
+_:d306182b931d58e619e76da86e7ea719 rdf:reifies <<( doc:Factsdt_1 rdf:type None:Predictive_maintenance_module_function )>> ;
+	prov:wasDerivedFrom doc:6d5020ab70e1 .
+doc:FactsdamageDetection None:has_text_value "detect damage" .
+_:f0c4b5e3c7475c43c348630df41d68ac rdf:reifies <<( doc:FactsdamageDetection None:has_text_value "detect damage" )>> ;
+	prov:wasDerivedFrom doc:6d5020ab70e1 .
+_:c1be38107466e0c5c487ced9c6dd6600 prov:wasDerivedFrom doc:6d5020ab70e1 .
+doc:FactssvsMl None:has_text_value "SVS-ML" .
+_:e279f99891050d958bdcdbef99a46fde rdf:reifies <<( doc:FactssvsMl None:has_text_value "SVS-ML" )>> ;
+	prov:wasDerivedFrom doc:6d5020ab70e1 .
+doc:Factsdt_1 a None:Predictive_maintenance_model .
+_:d57a831629f667ce24372ae4751df769 rdf:reifies <<( doc:Factsdt_1 rdf:type None:Predictive_maintenance_model )>> ;
+	prov:wasDerivedFrom doc:6d5020ab70e1 .
+_:b5cd24a4ae3c71aba17c929220020150 prov:wasDerivedFrom doc:6d5020ab70e1 .
+_:b67c8a7b6f31196225d2c4d946fb61f0 prov:wasDerivedFrom doc:6d5020ab70e1 .
+doc:Factscurrent_2 None:describes_type doc:Factsdt_1 .
+_:c5f671e6818d5fdc6fad441b13d59529 rdf:reifies <<( doc:Factscurrent_2 None:describes_type doc:Factsdt_1 )>> ;
+	prov:wasDerivedFrom doc:6d5020ab70e1 .
+doc:Factsdt_1 None:has_text_value "simulation-based virtual sensor" .
+_:d041dd9c9d57f15aa277076ca7172fd9 rdf:reifies <<( doc:Factsdt_1 None:has_text_value "simulation-based virtual sensor" )>> ;
+	prov:wasDerivedFrom doc:6d5020ab70e1 .
+doc:FactscostModel None:has_text_value "unified cost model" .
+_:c9ea862c22f32663cc210e4c5593e0e rdf:reifies <<( doc:FactscostModel None:has_text_value "unified cost model" )>> ;
+	prov:wasDerivedFrom doc:6d5020ab70e1 .
+doc:Factscurrent_2 a None:Data_variable .
+_:ea6428643e2c08a29707fab0d01dc212 rdf:reifies <<( doc:Factscurrent_2 rdf:type None:Data_variable )>> ;
+	prov:wasDerivedFrom doc:6d5020ab70e1 .
+doc:Factsdt_1 None:has_text_value "electrochemical model" .
+_:d58fe7954d6b17e100324da21c52c0b1 rdf:reifies <<( doc:Factsdt_1 None:has_text_value "electrochemical model" )>> ;
+	prov:wasDerivedFrom doc:6d5020ab70e1 .
+doc:FactssyncLatency None:has_text_value "latency in data processing and synchronization" .
+_:bf735a657c9176de11809fd3df6c0533 rdf:reifies <<( doc:FactssyncLatency None:has_text_value "latency in data processing and synchronization" )>> ;
+	prov:wasDerivedFrom doc:6d5020ab70e1 .
+doc:FactscostModel None:describes_type doc:Factsdt_1 .
+_:b74e379f957b61044aad8633808f7e3f rdf:reifies <<( doc:FactscostModel None:describes_type doc:Factsdt_1 )>> ;
+	prov:wasDerivedFrom doc:6d5020ab70e1 .
+doc:FactsonlineLatency a None:Design_detail .
+_:b232540c75ee68d4a2dd932296840fae rdf:reifies <<( doc:FactsonlineLatency rdf:type None:Design_detail )>> ;
+	prov:wasDerivedFrom doc:6d5020ab70e1 .
+doc:FactscostModel None:has_text_value "economic and computational break-even points" .
+_:a0b122e9c8b590eab09f21984a093416 rdf:reifies <<( doc:FactscostModel None:has_text_value "economic and computational break-even points" )>> ;
+	prov:wasDerivedFrom doc:6d5020ab70e1 .
+doc:FactssimulationBasedVirtualSensor None:has_predictive_maintenance_function doc:Factsfuture_state_forecast1 .
+_:db1a4534424c8f1230f76a52aea8f0e rdf:reifies <<( doc:FactssimulationBasedVirtualSensor None:has_predictive_maintenance_function doc:Factsfuture_state_forecast1 )>> ;
+	prov:wasDerivedFrom doc:6d5020ab70e1 .
+_:bb3a3b9600e91b79cf10087453a9fa2 prov:wasDerivedFrom doc:6d5020ab70e1 .
+doc:Factsdt_1 None:has_text_value "precomputing the solution space" .
+_:c1e0c291ce9b5ecd5c2dd4f08e26acb2 rdf:reifies <<( doc:Factsdt_1 None:has_text_value "precomputing the solution space" )>> ;
+	prov:wasDerivedFrom doc:6d5020ab70e1 .
+doc:FactscostModel a None:Predictive_maintenance_model .
+_:e4b124c0f9462c7b413befb1300a5ffb rdf:reifies <<( doc:FactscostModel rdf:type None:Predictive_maintenance_model )>> ;
+	prov:wasDerivedFrom doc:6d5020ab70e1 .
+doc:Factsdt_1 None:describes_type doc:FactssvsMl .
+_:bcd284bcf6c89fb8d6a339c2cbdabc33 rdf:reifies <<( doc:Factsdt_1 None:describes_type doc:FactssvsMl )>> ;
+	prov:wasDerivedFrom doc:6d5020ab70e1 .
+doc:Factslatency None:has_text_value "accuracy-latency trade-off" .
+_:f315e1fac5da15ff94e4c91b76b4d532 rdf:reifies <<( doc:Factslatency None:has_text_value "accuracy-latency trade-off" )>> ;
+	prov:wasDerivedFrom doc:6d5020ab70e1 .
+doc:Factsdt_1 None:has_text_value "digital twin" .
+_:ca8cf0d3f3f32005686c33070ab09b6c rdf:reifies <<( doc:Factsdt_1 None:has_text_value "digital twin" )>> ;
+	prov:wasDerivedFrom doc:6d5020ab70e1 .
+doc:Factsyear1_91 None:has_interger_value 2024 .
+_:fb371771ae360cc5012889f3c4b29fe5 rdf:reifies <<( doc:Factsyear1_91 None:has_interger_value 2024 )>> ;
+	prov:wasDerivedFrom doc:6d5020ab70e1 .
+doc:Factsdt_1 None:describes_type doc:Factsdt_1 .
+_:ee68b5c8aa101e1db582546adbc228f3 rdf:reifies <<( doc:Factsdt_1 None:describes_type doc:Factsdt_1 )>> ;
+	prov:wasDerivedFrom doc:6d5020ab70e1 .
+doc:Factslatency None:has_text_value "fidelity and latency" .
+_:f14dea9f11d14336ca96de5235ffde3c rdf:reifies <<( doc:Factslatency None:has_text_value "fidelity and latency" )>> ;
+	prov:wasDerivedFrom doc:6d5020ab70e1 .
+doc:FactscostModel None:describes_type doc:FactscostModel .
+_:a82be60c52de28ef8cfdcb9aaa26de02 rdf:reifies <<( doc:FactscostModel None:describes_type doc:FactscostModel )>> ;
+	prov:wasDerivedFrom doc:6d5020ab70e1 .
+doc:Factslatency None:has_text_value "real-time performance" .
+_:de179d773f75c2d754d90bb296afca1e rdf:reifies <<( doc:Factslatency None:has_text_value "real-time performance" )>> ;
+	prov:wasDerivedFrom doc:6d5020ab70e1 .
+_:ae29fe21553a0e4d89f043b3af19a591 prov:wasDerivedFrom doc:6d5020ab70e1 .
+doc:Factscurrent_2 None:describes_type doc:FactsdamageDetection .
+_:bc6b0c560a70ff13fed433fda697f408 rdf:reifies <<( doc:Factscurrent_2 None:describes_type doc:FactsdamageDetection )>> ;
+	prov:wasDerivedFrom doc:6d5020ab70e1 .
+doc:FactssimulationBasedVirtualSensor a None:Predictive_maintenance_system_module .
+_:e22bc9363392fa9482309bfb7c00f240 rdf:reifies <<( doc:FactssimulationBasedVirtualSensor rdf:type None:Predictive_maintenance_system_module )>> ;
+	prov:wasDerivedFrom doc:6d5020ab70e1 .
+doc:Factstitle1_89 None:has_text_value "Simulation-based virtual sensors, digital twins, and high-fidelity model trade-offs" .
+_:cc07ef9385206564eb5855ee63ebc798 rdf:reifies <<( doc:Factstitle1_89 None:has_text_value "Simulation-based virtual sensors, digital twins, and high-fidelity model trade-offs" )>> ;
+	prov:wasDerivedFrom doc:6d5020ab70e1 .
+doc:FactssvsMl None:has_text_value "SVS-LFE" .
+_:cf9c1ecc295bb260e9e254e0b0b163eb rdf:reifies <<( doc:FactssvsMl None:has_text_value "SVS-LFE" )>> ;
+	prov:wasDerivedFrom doc:6d5020ab70e1 .
+doc:fd05a6ecbbf1 a prov:Entity , schema:text ;
+	prov:generatedAtTime "2026-07-13T00:38:04.818034Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+	schema:position 2 ;
+	schema:identifier "fd05a6ecbbf1" .
+doc:FactsonlineLatency a schema1:PropertyValue .
+_:e3cf0c4a6e11a24d95c7d6c1e4fa4fff rdf:reifies <<( doc:FactsonlineLatency rdf:type schema1:PropertyValue )>> ;
+	prov:wasDerivedFrom doc:fd05a6ecbbf1 .
+doc:Factsrq2 schema1:text "For a given accuracy target and problem dimension, how the computational break-even depends on offline design size N and expected number of online queries Q" .
+_:af029f008db565f6b990749f104d1551 rdf:reifies <<( doc:Factsrq2 schema1:text "For a given accuracy target and problem dimension, how the computational break-even depends on offline design size N and expected number of online queries Q" )>> ;
+	prov:wasDerivedFrom doc:fd05a6ecbbf1 .
+doc:Factsonline a schema1:DefinedTerm .
+_:eaab36587c43ee4502142e8c41d650b3 rdf:reifies <<( doc:Factsonline rdf:type schema1:DefinedTerm )>> ;
+	prov:wasDerivedFrom doc:fd05a6ecbbf1 .
+doc:FactsonlineLatency schema1:name "surrogate accuracy" .
+_:f4ebd25fe522dceea2061869aad10c55 rdf:reifies <<( doc:FactsonlineLatency schema1:name "surrogate accuracy" )>> ;
+	prov:wasDerivedFrom doc:fd05a6ecbbf1 .
+doc:Factspaper1_8 schema1:about doc:FactssvsMl .
+_:d2267f244dc8e3715ee2f50a081088e2 rdf:reifies <<( doc:Factspaper1_8 schema1:about doc:FactssvsMl )>> ;
+	prov:wasDerivedFrom doc:fd05a6ecbbf1 .
+doc:Factsdt_1 rdfs:label "finite element simulation on demand"@en .
+_:f8143a8ad5dcc3c9a13d068f730ecf4a rdf:reifies <<( doc:Factsdt_1 rdfs:label "finite element simulation on demand"@en )>> ;
+	prov:wasDerivedFrom doc:fd05a6ecbbf1 .
+doc:FactssvsMl rdfs:label "SVS-LFE"@en .
+_:fb951c30924bdc5de504ec3922475b7c rdf:reifies <<( doc:FactssvsMl rdfs:label "SVS-LFE"@en )>> ;
+	prov:wasDerivedFrom doc:fd05a6ecbbf1 .
+doc:FactsonlineLatency schema1:name "accuracy constraint" .
+_:af071a09ea67e5f9ba937bab053cf79c rdf:reifies <<( doc:FactsonlineLatency schema1:name "accuracy constraint" )>> ;
+	prov:wasDerivedFrom doc:fd05a6ecbbf1 .
+doc:FactssvsFramework cd:has_text_value "simulation-based virtual sensors framework" .
+_:cd61420739111a382cc23b4f4874e259 rdf:reifies <<( doc:FactssvsFramework cd:has_text_value "simulation-based virtual sensors framework" )>> ;
+	prov:wasDerivedFrom doc:fd05a6ecbbf1 .
+doc:FactsonlineLatency schema1:value "latency" .
+_:beaebfb71c3ec5102ec2aa212484e1d rdf:reifies <<( doc:FactsonlineLatency schema1:value "latency" )>> ;
+	prov:wasDerivedFrom doc:fd05a6ecbbf1 .
+doc:Factsrq2 a schema1:Question .
+_:dbdafda1d25dc7b1f736b502c6b30b31 rdf:reifies <<( doc:Factsrq2 rdf:type schema1:Question )>> ;
+	prov:wasDerivedFrom doc:fd05a6ecbbf1 .
+_:c77f1a1fe11050683f64f468f5b19a0f prov:wasDerivedFrom doc:fd05a6ecbbf1 .
+doc:FactscostModel schema1:name "break-even analysis" .
+_:e6cd3b8b41eb1d9d3cb6f8acd7d9beec rdf:reifies <<( doc:FactscostModel schema1:name "break-even analysis" )>> ;
+	prov:wasDerivedFrom doc:fd05a6ecbbf1 .
+doc:FactsonlineLatency schema1:name "latency constraint" .
+_:d9649cb03e94983980e94d4c927d0aaf rdf:reifies <<( doc:FactsonlineLatency schema1:name "latency constraint" )>> ;
+	prov:wasDerivedFrom doc:fd05a6ecbbf1 .
+doc:Factspaper1_8 rdfs:label "paper"@en .
+_:f854bcfdda05b32da3c63fa83a07087e rdf:reifies <<( doc:Factspaper1_8 rdfs:label "paper"@en )>> ;
+	prov:wasDerivedFrom doc:fd05a6ecbbf1 .
+doc:Factsonline schema1:name "lookup database" .
+_:d5f0faa8a5855b2201cce998d02aefcc rdf:reifies <<( doc:Factsonline schema1:name "lookup database" )>> ;
+	prov:wasDerivedFrom doc:fd05a6ecbbf1 .
+doc:FactsonlineLatency schema1:name "expected number of online queries Q" .
+_:a1fd8e666bae234a684a350217bc9174 rdf:reifies <<( doc:FactsonlineLatency schema1:name "expected number of online queries Q" )>> ;
+	prov:wasDerivedFrom doc:fd05a6ecbbf1 .
+doc:Factsonline schema1:name "finite element" .
+_:f86c05183840248206214338260b1264 rdf:reifies <<( doc:Factsonline schema1:name "finite element" )>> ;
+	prov:wasDerivedFrom doc:fd05a6ecbbf1 .
+doc:FactssvsMl cd:has_design_detail doc:Factslatency .
+_:e2cbd142a24710a5bdb2ff4c670c9e1f rdf:reifies <<( doc:FactssvsMl cd:has_design_detail doc:Factslatency )>> ;
+	prov:wasDerivedFrom doc:fd05a6ecbbf1 .
+doc:Factspaper1_8 schema1:about doc:FactscostModel .
+_:acf14a01b5e980a04d677c94489d4260 rdf:reifies <<( doc:Factspaper1_8 schema1:about doc:FactscostModel )>> ;
+	prov:wasDerivedFrom doc:fd05a6ecbbf1 .
+doc:Factsonline schema1:name "Sobol sampling" .
+_:b7aaf03397a0ba7573a145f40b28a3c9 rdf:reifies <<( doc:Factsonline schema1:name "Sobol sampling" )>> ;
+	prov:wasDerivedFrom doc:fd05a6ecbbf1 .
+doc:Factsonline schema1:name "live FEM" .
+_:e88e66f85f508f3444f213597ad347de rdf:reifies <<( doc:Factsonline schema1:name "live FEM" )>> ;
+	prov:wasDerivedFrom doc:fd05a6ecbbf1 .
+doc:FactsonlineLatency schema1:name "offline precomputation" .
+_:b1c398c6432f35fc909c5b0d399815d8 rdf:reifies <<( doc:FactsonlineLatency schema1:name "offline precomputation" )>> ;
+	prov:wasDerivedFrom doc:fd05a6ecbbf1 .
+_:c1be38107466e0c5c487ced9c6dd6600 prov:wasDerivedFrom doc:fd05a6ecbbf1 .
+doc:FactscostModel schema1:name "break-even points" .
+_:f8ee7d9119c6cd80c242b2f0fcb9c387 rdf:reifies <<( doc:FactscostModel schema1:name "break-even points" )>> ;
+	prov:wasDerivedFrom doc:fd05a6ecbbf1 .
+doc:Factsonline schema1:name "design of experiments strategies" .
+_:b5d4f430fb6d807c9075959ec36c6f87 rdf:reifies <<( doc:Factsonline schema1:name "design of experiments strategies" )>> ;
+	prov:wasDerivedFrom doc:fd05a6ecbbf1 .
+doc:Factsonline schema1:itemListElement doc:Factsonline .
+_:fcb31c0deb0349062cb903adc4c8be7 rdf:reifies <<( doc:Factsonline schema1:itemListElement doc:Factsonline )>> ;
+	prov:wasDerivedFrom doc:fd05a6ecbbf1 .
+doc:FactsonlineLatency schema1:name "problem dimension" .
+_:c1eb1186e5d55da70ccd6ad2b6e02cb5 rdf:reifies <<( doc:FactsonlineLatency schema1:name "problem dimension" )>> ;
+	prov:wasDerivedFrom doc:fd05a6ecbbf1 .
+doc:Factstitle1_89 cd:has_text_value "Simulation-based virtual sensors: decision-making framework under accuracy and latency constraints" .
+_:cb521559adcf6314fec5eb38e7d6aa63 rdf:reifies <<( doc:Factstitle1_89 cd:has_text_value "Simulation-based virtual sensors: decision-making framework under accuracy and latency constraints" )>> ;
+	prov:wasDerivedFrom doc:fd05a6ecbbf1 .
+doc:FactsempiricalScalingLaws schema1:name "empirical scaling laws" .
+_:bce6e3dd54a8510b96a323aa8fd52162 rdf:reifies <<( doc:FactsempiricalScalingLaws schema1:name "empirical scaling laws" )>> ;
+	prov:wasDerivedFrom doc:fd05a6ecbbf1 .
+doc:FactscostModel a schema1:CreativeWork .
+_:fa19f63b7af2cbb1926237190950bbfb rdf:reifies <<( doc:FactscostModel rdf:type schema1:CreativeWork )>> ;
+	prov:wasDerivedFrom doc:fd05a6ecbbf1 .
+doc:Factsyear1_91 cd:has_interger_value 2024 .
+_:dc5f50434b43a27deb78a85d823bf345 rdf:reifies <<( doc:Factsyear1_91 cd:has_interger_value 2024 )>> ;
+	prov:wasDerivedFrom doc:fd05a6ecbbf1 .
+doc:FactslookupDatabaseSurrogate schema1:name "lookup database surrogate" .
+_:d29cfa21a6a9c6c0020b84f02c36625a rdf:reifies <<( doc:FactslookupDatabaseSurrogate schema1:name "lookup database surrogate" )>> ;
+	prov:wasDerivedFrom doc:fd05a6ecbbf1 .
+doc:FactssvsMl rdfs:label "SVS-ML"@en .
+_:f1da1da5726543e196facd86da1662c2 rdf:reifies <<( doc:FactssvsMl rdfs:label "SVS-ML"@en )>> ;
+	prov:wasDerivedFrom doc:fd05a6ecbbf1 .
+doc:Factsonline schema1:name "orthogonal arrays" .
+_:db63493a81094324f9ddb846eb666974 rdf:reifies <<( doc:Factsonline schema1:name "orthogonal arrays" )>> ;
+	prov:wasDerivedFrom doc:fd05a6ecbbf1 .
+doc:FactsonlineLatency schema1:name "offline design size N" .
+_:e3d84d827c7f698cd71740bcd3835705 rdf:reifies <<( doc:FactsonlineLatency schema1:name "offline design size N" )>> ;
+	prov:wasDerivedFrom doc:fd05a6ecbbf1 .
+doc:FactsonlineLatency schema1:value "accuracy" .
+_:d0c3e97121600434dbf9c467f81759ea rdf:reifies <<( doc:FactsonlineLatency schema1:value "accuracy" )>> ;
+	prov:wasDerivedFrom doc:fd05a6ecbbf1 .
+doc:FactssvsMl cd:has_predictive_maintenance_function doc:Factsdt_1 .
+_:d19f0e2f251b0ae6436ccc6ea03ae1bd rdf:reifies <<( doc:FactssvsMl cd:has_predictive_maintenance_function doc:Factsdt_1 )>> ;
+	prov:wasDerivedFrom doc:fd05a6ecbbf1 .
+doc:Factspaper1_8 schema1:about doc:Factsonline .
+_:a5655d9595ac19bc82512c50222bf909 rdf:reifies <<( doc:Factspaper1_8 schema1:about doc:Factsonline )>> ;
+	prov:wasDerivedFrom doc:fd05a6ecbbf1 .
+_:d306182b931d58e619e76da86e7ea719 prov:wasDerivedFrom doc:fd05a6ecbbf1 .
+doc:Factspaper1_8 cd:has_publication_year doc:Factsyear1_91 .
+_:b0924efef0f7845aacbd52467e76a816 rdf:reifies <<( doc:Factspaper1_8 cd:has_publication_year doc:Factsyear1_91 )>> ;
+	prov:wasDerivedFrom doc:fd05a6ecbbf1 .
+doc:FactssvsMl rdfs:label "SVS-LDB"@en .
+_:eca9fa5419b4ec22779e95641e44c2ec rdf:reifies <<( doc:FactssvsMl rdfs:label "SVS-LDB"@en )>> ;
+	prov:wasDerivedFrom doc:fd05a6ecbbf1 .
+doc:FactsmeasurementCadence a schema1:PropertyValue .
+_:edc5172cc18a989f634f426dfeafd9f rdf:reifies <<( doc:FactsmeasurementCadence rdf:type schema1:PropertyValue )>> ;
+	prov:wasDerivedFrom doc:fd05a6ecbbf1 .
+doc:Factsonline a schema1:ItemList .
+_:a6cb6d23f160473aabc71379be504f68 rdf:reifies <<( doc:Factsonline rdf:type schema1:ItemList )>> ;
+	prov:wasDerivedFrom doc:fd05a6ecbbf1 .
+doc:Factsonline schema1:name "offline" .
+_:bf9369d79bd52e1bfdcc836eeffc5232 rdf:reifies <<( doc:Factsonline schema1:name "offline" )>> ;
+	prov:wasDerivedFrom doc:fd05a6ecbbf1 .
+doc:Factspaper1_8 schema1:about doc:FactssvsFramework .
+_:e1b8213b8e271b228f4f6f22b2ff2b63 rdf:reifies <<( doc:Factspaper1_8 schema1:about doc:FactssvsFramework )>> ;
+	prov:wasDerivedFrom doc:fd05a6ecbbf1 .
+doc:FactsonlineLatency schema1:name "surrogate robustness" .
+_:d93c76952efc48a9255a588b5d9291ca rdf:reifies <<( doc:FactsonlineLatency schema1:name "surrogate robustness" )>> ;
+	prov:wasDerivedFrom doc:fd05a6ecbbf1 .
+_:bb3a3b9600e91b79cf10087453a9fa2 prov:wasDerivedFrom doc:fd05a6ecbbf1 .
+doc:FactscostModel schema1:name "unified cost model" .
+_:f55427472acf5abcbf6603b07cce5159 rdf:reifies <<( doc:FactscostModel schema1:name "unified cost model" )>> ;
+	prov:wasDerivedFrom doc:fd05a6ecbbf1 .
+doc:Factsonline schema1:name "online" .
+_:e3b09ac2114f54020d8d1c62fe80e35d rdf:reifies <<( doc:Factsonline schema1:name "online" )>> ;
+	prov:wasDerivedFrom doc:fd05a6ecbbf1 .
+doc:FactssvsFramework a None:Model_configuration .
+_:c5bfe6bc019573f20f6fb4120dc2f0f6 rdf:reifies <<( doc:FactssvsFramework rdf:type None:Model_configuration )>> ;
+	prov:wasDerivedFrom doc:fd05a6ecbbf1 .
+doc:FactsempiricalScalingLaws a schema1:CreativeWork .
+_:a32e867a8d82e51f5c373b7be87a0f5e rdf:reifies <<( doc:FactsempiricalScalingLaws rdf:type schema1:CreativeWork )>> ;
+	prov:wasDerivedFrom doc:fd05a6ecbbf1 .
+doc:FactsonlineLatency schema1:name "mesh resolution" .
+_:d8fcfa8f3559f7bbd25a4e1b6f9ae5fd rdf:reifies <<( doc:FactsonlineLatency schema1:name "mesh resolution" )>> ;
+	prov:wasDerivedFrom doc:fd05a6ecbbf1 .
+doc:FactscostModel schema1:description "separates offline precomputation, online latency, and measurement cadence" .
+_:e92c90070350ea0baecd77cecec1036b rdf:reifies <<( doc:FactscostModel schema1:description "separates offline precomputation, online latency, and measurement cadence" )>> ;
+	prov:wasDerivedFrom doc:fd05a6ecbbf1 .
+doc:Factscase_study2 a schema1:Dataset .
+_:a433721f5e3562b5039b68e5d7704e4c rdf:reifies <<( doc:Factscase_study2 rdf:type schema1:Dataset )>> ;
+	prov:wasDerivedFrom doc:fd05a6ecbbf1 .
+doc:FactslookupDatabaseSurrogate a schema1:CreativeWork .
+_:a3c563f43bd588874e26e07cf6342faf rdf:reifies <<( doc:FactslookupDatabaseSurrogate rdf:type schema1:CreativeWork )>> ;
+	prov:wasDerivedFrom doc:fd05a6ecbbf1 .
+doc:Factsonline schema1:name "Latin hypercube sampling" .
+_:a2c2a621f20d0aa01d7d971adc2d55fd rdf:reifies <<( doc:Factsonline schema1:name "Latin hypercube sampling" )>> ;
+	prov:wasDerivedFrom doc:fd05a6ecbbf1 .
+doc:Factscase_study2 schema1:about doc:FactssvsMl .
+_:dbd9e04fbd8bd77199f080315e01385d rdf:reifies <<( doc:Factscase_study2 schema1:about doc:FactssvsMl )>> ;
+	prov:wasDerivedFrom doc:fd05a6ecbbf1 .
+doc:FactsonlineLatency schema1:name "prediction error" .
+_:ef1c84ffd7c1d977a9c5e2340e87c451 rdf:reifies <<( doc:FactsonlineLatency schema1:name "prediction error" )>> ;
+	prov:wasDerivedFrom doc:fd05a6ecbbf1 .
+doc:FactsliveFemRuntime a schema1:PropertyValue .
+_:dd42d533d2b740b43fdb2fa20ec5a649 rdf:reifies <<( doc:FactsliveFemRuntime rdf:type schema1:PropertyValue )>> ;
+	prov:wasDerivedFrom doc:fd05a6ecbbf1 .
+doc:FactsonlineLatency schema1:name "online latency" .
+_:c2087a1bfd77016bf29dfe9927b7df9 rdf:reifies <<( doc:FactsonlineLatency schema1:name "online latency" )>> ;
+	prov:wasDerivedFrom doc:fd05a6ecbbf1 .
+doc:Factspaper1_8 cd:has_title doc:Factstitle1_89 .
+_:dc1f95fdecb1e58ce8e3e87146d5f12 rdf:reifies <<( doc:Factspaper1_8 cd:has_title doc:Factstitle1_89 )>> ;
+	prov:wasDerivedFrom doc:fd05a6ecbbf1 .
+doc:Factsrq2 schema1:text "How live FEM runtime and prediction error scale with mesh resolution" .
+_:cadef6eeb64b8a726195521c4779a41a rdf:reifies <<( doc:Factsrq2 schema1:text "How live FEM runtime and prediction error scale with mesh resolution" )>> ;
+	prov:wasDerivedFrom doc:fd05a6ecbbf1 .
+doc:FactsliveFemRuntime schema1:name "live FEM runtime" .
+_:b1116929f960adbb55fb11d3b541f8bd rdf:reifies <<( doc:FactsliveFemRuntime schema1:name "live FEM runtime" )>> ;
+	prov:wasDerivedFrom doc:fd05a6ecbbf1 .
+_:b67c8a7b6f31196225d2c4d946fb61f0 prov:wasDerivedFrom doc:fd05a6ecbbf1 .
+doc:FactsmeasurementCadence schema1:name "measurement cadence" .
+_:a52a192918a582885bafd28bc7b77400 rdf:reifies <<( doc:FactsmeasurementCadence schema1:name "measurement cadence" )>> ;
+	prov:wasDerivedFrom doc:fd05a6ecbbf1 .

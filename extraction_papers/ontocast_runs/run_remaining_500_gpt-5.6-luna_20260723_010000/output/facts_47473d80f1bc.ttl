@@ -1,0 +1,897 @@
+@prefix None: <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD/seed#> .
+@prefix cco: <http://www.ontologyrepository.com/CommonCoreOntologies/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doc: <https://growgraph.dev/doc/47473d80f1bc/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix obo: <http://purl.obolibrary.org/obo/> .
+@prefix cd: <https://growgraph.dev/facts> .
+@prefix csvw: <http://www.w3.org/ns/csvw#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix schema: <https://schema.org/> .
+doc:689566d9f304 a prov:Entity , schema:text ;
+	prov:generatedAtTime "2026-07-25T01:36:58.545829Z"^^xsd:dateTime ;
+	schema:position 0 ;
+	schema:identifier "689566d9f304" .
+doc:FactsminaPascal a schema:Person .
+_:b9267bf95d91fbc1707295b426836b35 rdf:reifies <<( doc:FactsminaPascal rdf:type schema:Person )>> ;
+	prov:wasDerivedFrom doc:689566d9f304 .
+doc:FactspressureVessel_1 a schema:Product .
+_:bb1aa2820494627ca015e6b8a9f1f723 rdf:reifies <<( doc:FactspressureVessel_1 rdf:type schema:Product )>> ;
+	prov:wasDerivedFrom doc:689566d9f304 .
+doc:FactspowerModel schema:additionalType "nonlinear regression model" .
+_:ab28dd045b3667051005c703d0178969 rdf:reifies <<( doc:FactspowerModel schema:additionalType "nonlinear regression model" )>> ;
+	prov:wasDerivedFrom doc:689566d9f304 .
+doc:FactsinitialThickness schema:isInputOf doc:FactspowerModel .
+_:eb74847489cf6baf5cd040acb77e94eb rdf:reifies <<( doc:FactsinitialThickness schema:isInputOf doc:FactspowerModel )>> ;
+	prov:wasDerivedFrom doc:689566d9f304 .
+doc:FactsremainingUsefulLifeFunction_2 a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Remaining_useful_life_estimation> .
+_:c828657801dcbab63d4bc4c55a6ec43c rdf:reifies <<( doc:FactsremainingUsefulLifeFunction_2 rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Remaining_useful_life_estimation> )>> ;
+	prov:wasDerivedFrom doc:689566d9f304 .
+doc:FactscorrosionRate schema:isInputOf doc:FactspowerModel .
+_:cf27c2b7c3589526de9d09d522c6238f rdf:reifies <<( doc:FactscorrosionRate schema:isInputOf doc:FactspowerModel )>> ;
+	prov:wasDerivedFrom doc:689566d9f304 .
+doc:FactsscienceIn schema:name "ScienceIN" .
+_:d361e96c95c074cd0c19b0148656ed7a rdf:reifies <<( doc:FactsscienceIn schema:name "ScienceIN" )>> ;
+	prov:wasDerivedFrom doc:689566d9f304 .
+doc:FactspowerModel None:has_design_detail doc:FactsfiniteElementAnalysisDetail .
+_:c4e809fa47739cf55358f3e0d19b6e77 rdf:reifies <<( doc:FactspowerModel None:has_design_detail doc:FactsfiniteElementAnalysisDetail )>> ;
+	prov:wasDerivedFrom doc:689566d9f304 .
+doc:FactsminaPascal schema:name "Sultanmagomed Magomedtagirovich" .
+_:d79c60fe6faf818744dc74646b649c4e rdf:reifies <<( doc:FactsminaPascal schema:name "Sultanmagomed Magomedtagirovich" )>> ;
+	prov:wasDerivedFrom doc:689566d9f304 .
+doc:FactsnozzleA1 a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Maintainable_item> .
+_:d2dc820f6ce6c450e311148563c743b4 rdf:reifies <<( doc:FactsnozzleA1 rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Maintainable_item> )>> ;
+	prov:wasDerivedFrom doc:689566d9f304 .
+doc:FactsurnIdentifier None:has_text_value "URN:NBN:science.in.jist.2025.v13.1136" .
+_:bc21348c60c42783698ac0996d44af19 rdf:reifies <<( doc:FactsurnIdentifier None:has_text_value "URN:NBN:science.in.jist.2025.v13.1136" )>> ;
+	prov:wasDerivedFrom doc:689566d9f304 .
+doc:FactsufaUniversity schema:name "Ufa State Petroleum Technological University" .
+_:e85c221f9bcd3d5f60dd03ded2beb77 rdf:reifies <<( doc:FactsufaUniversity schema:name "Ufa State Petroleum Technological University" )>> ;
+	prov:wasDerivedFrom doc:689566d9f304 .
+doc:FactsminaPascal schema:affiliation doc:FactsufaUniversity .
+_:f55c405b1e23bcdcd7467ebed23fb59b rdf:reifies <<( doc:FactsminaPascal schema:affiliation doc:FactsufaUniversity )>> ;
+	prov:wasDerivedFrom doc:689566d9f304 .
+doc:FactspowerModel a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Predictive_maintenance_model> .
+_:ac69f7f7d74d010787b91782acd21736 rdf:reifies <<( doc:FactspowerModel rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Predictive_maintenance_model> )>> ;
+	prov:wasDerivedFrom doc:689566d9f304 .
+doc:FactsthicknessTable a csvw:Table .
+_:f523a42d250b86713822f495ba036350 rdf:reifies <<( doc:FactsthicknessTable rdf:type csvw:Table )>> ;
+	prov:wasDerivedFrom doc:689566d9f304 .
+doc:FactspowerModel schema:additionalType "linear regression model" .
+_:db3520f92fe33627a5785a7293311580 rdf:reifies <<( doc:FactspowerModel schema:additionalType "linear regression model" )>> ;
+	prov:wasDerivedFrom doc:689566d9f304 .
+doc:FactsurnIdentifier None:has_text_value "10.62110/sciencein.jist.2025.v13.1136" .
+_:b9f03ea4603d4d4de72f0b06e90e7f5 rdf:reifies <<( doc:FactsurnIdentifier None:has_text_value "10.62110/sciencein.jist.2025.v13.1136" )>> ;
+	prov:wasDerivedFrom doc:689566d9f304 .
+doc:Predictive_maintenance_model schema:mentions doc:FactsnozzleA1 .
+_:e06680750f29c5fb8f1b2e731cdbdd11 rdf:reifies <<( doc:Predictive_maintenance_model schema:mentions doc:FactsnozzleA1 )>> ;
+	prov:wasDerivedFrom doc:689566d9f304 .
+doc:FactsinspectionPeriod_1 a schema:Duration .
+_:e4e6bd67491f7dd8c81b4057850cef69 rdf:reifies <<( doc:FactsinspectionPeriod_1 rdf:type schema:Duration )>> ;
+	prov:wasDerivedFrom doc:689566d9f304 .
+doc:FactsarticleTitle_107 None:has_text_value "Prediction models for remaining life assessment of pressure vessels: A comparative analysis" .
+_:ee5acc7fc020f1e3b13655ef7d9c76f6 rdf:reifies <<( doc:FactsarticleTitle_107 None:has_text_value "Prediction models for remaining life assessment of pressure vessels: A comparative analysis" )>> ;
+	prov:wasDerivedFrom doc:689566d9f304 .
+doc:Factsjournal_4 schema:volumeNumber 13 .
+_:f37404b2b73efc0d73bef6d6e6095e17 rdf:reifies <<( doc:Factsjournal_4 schema:volumeNumber 13 )>> ;
+	prov:wasDerivedFrom doc:689566d9f304 .
+doc:FactspressureVesselItemType None:describes_type doc:FactspressureVessel_1 .
+_:f6ef682eadeef87a3cf9a38f71c9dc25 rdf:reifies <<( doc:FactspressureVesselItemType None:describes_type doc:FactspressureVessel_1 )>> ;
+	prov:wasDerivedFrom doc:689566d9f304 .
+doc:FactsnozzleA1 schema:additionalType "high-risk area" .
+_:cf427e45c561842b392d65386057842 rdf:reifies <<( doc:FactsnozzleA1 schema:additionalType "high-risk area" )>> ;
+	prov:wasDerivedFrom doc:689566d9f304 .
+doc:FactsurnIdentifier a None:Article_identifier .
+_:c1b6a437cc6bdb59e7ea0ef7e4a0c358 rdf:reifies <<( doc:FactsurnIdentifier rdf:type None:Article_identifier )>> ;
+	prov:wasDerivedFrom doc:689566d9f304 .
+doc:Predictive_maintenance_model schema:mentions doc:FactspowerModel .
+_:dade996a7809b6c032087dd117061df9 rdf:reifies <<( doc:Predictive_maintenance_model schema:mentions doc:FactspowerModel )>> ;
+	prov:wasDerivedFrom doc:689566d9f304 .
+doc:FactspowerModel schema:mentions doc:FactsremainingUsefulLifeFunction_2 .
+_:e5e629666e1001ef75b89c98889b9cb3 rdf:reifies <<( doc:FactspowerModel schema:mentions doc:FactsremainingUsefulLifeFunction_2 )>> ;
+	prov:wasDerivedFrom doc:689566d9f304 .
+doc:FactspressureVessel_1 a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Maintainable_item> .
+_:c2c21b8e9f119871dcf08aba84afd630 rdf:reifies <<( doc:FactspressureVessel_1 rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Maintainable_item> )>> ;
+	prov:wasDerivedFrom doc:689566d9f304 .
+doc:FactspublicationYear_82 None:has_interger_value 2025 .
+_:b6dfbf565eb7ee3c5be3af74fdaaf13b rdf:reifies <<( doc:FactspublicationYear_82 None:has_interger_value 2025 )>> ;
+	prov:wasDerivedFrom doc:689566d9f304 .
+doc:FactsnozzleA1 schema:name "Nozzle A1" .
+_:a378aa3f1d7d8854b9956973f58f19f8 rdf:reifies <<( doc:FactsnozzleA1 schema:name "Nozzle A1" )>> ;
+	prov:wasDerivedFrom doc:689566d9f304 .
+doc:FactspressureVessel_1 schema:additionalProperty doc:FactspressureVesselItemType .
+_:b7891006aceeef6666ae59823cea99cf rdf:reifies <<( doc:FactspressureVessel_1 schema:additionalProperty doc:FactspressureVesselItemType )>> ;
+	prov:wasDerivedFrom doc:689566d9f304 .
+doc:Factsapi579AsmeFfs1 a schema:CreativeWork .
+_:fbb89451fa71f599278e1503ed200821 rdf:reifies <<( doc:Factsapi579AsmeFfs1 rdf:type schema:CreativeWork )>> ;
+	prov:wasDerivedFrom doc:689566d9f304 .
+doc:FactsinspectionPointCount schema:propertyID "inspection point count" .
+_:fa443c88007f5fe989925518daedfe37 rdf:reifies <<( doc:FactsinspectionPointCount schema:propertyID "inspection point count" )>> ;
+	prov:wasDerivedFrom doc:689566d9f304 .
+doc:Predictive_maintenance_model schema:mentions doc:FactsthicknessTable .
+_:ee5009334a21c8f3004c808d0c290b3 rdf:reifies <<( doc:Predictive_maintenance_model schema:mentions doc:FactsthicknessTable )>> ;
+	prov:wasDerivedFrom doc:689566d9f304 .
+doc:FactspowerModel a None:Health_assessment .
+_:f8e09fd81d9ffd38c8089111d3aaa6f1 rdf:reifies <<( doc:FactspowerModel rdf:type None:Health_assessment )>> ;
+	prov:wasDerivedFrom doc:689566d9f304 .
+doc:Factsjournal_4 schema:pagination "1136" .
+_:cf3c2a917875ec3ee5827a5643bcaed rdf:reifies <<( doc:Factsjournal_4 schema:pagination "1136" )>> ;
+	prov:wasDerivedFrom doc:689566d9f304 .
+doc:FactsarticleTitle_107 a None:Article_title .
+_:df48db45eb02ef48f5bcfc3776045574 rdf:reifies <<( doc:FactsarticleTitle_107 rdf:type None:Article_title )>> ;
+	prov:wasDerivedFrom doc:689566d9f304 .
+doc:FactsfiniteElementAnalysisDetail None:has_text_value "Finite Element Analysis with stress analysis for structural integrity assessment" .
+_:d63fa3f50c344020ebd8fe3e09392ace rdf:reifies <<( doc:FactsfiniteElementAnalysisDetail None:has_text_value "Finite Element Analysis with stress analysis for structural integrity assessment" )>> ;
+	prov:wasDerivedFrom doc:689566d9f304 .
+doc:Predictive_maintenance_model schema:author doc:FactsminaPascal .
+_:cd6836da0c4ab5356e32e7d435bd199b rdf:reifies <<( doc:Predictive_maintenance_model schema:author doc:FactsminaPascal )>> ;
+	prov:wasDerivedFrom doc:689566d9f304 .
+doc:Predictive_maintenance_model schema:isPartOf doc:Factsjournal_4 .
+_:a9f51c6c09db0f9fa32c4db143a2bade rdf:reifies <<( doc:Predictive_maintenance_model schema:isPartOf doc:Factsjournal_4 )>> ;
+	prov:wasDerivedFrom doc:689566d9f304 .
+doc:Predictive_maintenance_model schema:mentions doc:FactspressureVessel_1 .
+_:ef88a9e248600a61f8567edcfbc7786 rdf:reifies <<( doc:Predictive_maintenance_model schema:mentions doc:FactspressureVessel_1 )>> ;
+	prov:wasDerivedFrom doc:689566d9f304 .
+doc:Predictive_maintenance_model schema:dateSubmitted "2025-03-16"^^xsd:date .
+_:f38603072831b9b87ae0857a3f65c987 rdf:reifies <<( doc:Predictive_maintenance_model schema:dateSubmitted "2025-03-16"^^xsd:date )>> ;
+	prov:wasDerivedFrom doc:689566d9f304 .
+doc:FactsufaUniversity a schema:Organization .
+_:bef01de52e050171ebe939520ec3202b rdf:reifies <<( doc:FactsufaUniversity rdf:type schema:Organization )>> ;
+	prov:wasDerivedFrom doc:689566d9f304 .
+doc:Factsapi579AsmeFfs1 schema:about "Fitness-for-service assessment of pressure vessels" .
+_:e66c3778b4c59d8cf7e4aa184e42925a rdf:reifies <<( doc:Factsapi579AsmeFfs1 schema:about "Fitness-for-service assessment of pressure vessels" )>> ;
+	prov:wasDerivedFrom doc:689566d9f304 .
+doc:FactsthicknessTable schema:name "Vessel thickness readings" .
+_:ba94c0f78217d87267da59127a579df5 rdf:reifies <<( doc:FactsthicknessTable schema:name "Vessel thickness readings" )>> ;
+	prov:wasDerivedFrom doc:689566d9f304 .
+doc:FactsthicknessTable schema:isPartOf doc:Predictive_maintenance_model .
+_:cd30cf719bf296e30fb31221bd56438f rdf:reifies <<( doc:FactsthicknessTable schema:isPartOf doc:Predictive_maintenance_model )>> ;
+	prov:wasDerivedFrom doc:689566d9f304 .
+doc:FactsminaPascal schema:email "mina.apascal@gmail.com" .
+_:a218c7630eca9a318c2b50a2f88f0d20 rdf:reifies <<( doc:FactsminaPascal schema:email "mina.apascal@gmail.com" )>> ;
+	prov:wasDerivedFrom doc:689566d9f304 .
+doc:FactspressureVessel_1 schema:material "low-alloy steel" .
+_:dd51e231a4e4229108d6872c52ffa69e rdf:reifies <<( doc:FactspressureVessel_1 schema:material "low-alloy steel" )>> ;
+	prov:wasDerivedFrom doc:689566d9f304 .
+doc:Predictive_maintenance_model None:has_identifier doc:FactsurnIdentifier .
+_:f6261de21225f5ae729dcf69d0a75d01 rdf:reifies <<( doc:Predictive_maintenance_model None:has_identifier doc:FactsurnIdentifier )>> ;
+	prov:wasDerivedFrom doc:689566d9f304 .
+doc:FactsinspectionPeriod_1 schema:startDate "2002"^^xsd:gYear .
+_:fa0c4ca7926d8c7cdf912571e7264315 rdf:reifies <<( doc:FactsinspectionPeriod_1 schema:startDate "2002"^^xsd:gYear )>> ;
+	prov:wasDerivedFrom doc:689566d9f304 .
+doc:FactscorrosionRate schema:name "Inspection year" .
+_:cf3afc8aa78bee9885e289da31094730 rdf:reifies <<( doc:FactscorrosionRate schema:name "Inspection year" )>> ;
+	prov:wasDerivedFrom doc:689566d9f304 .
+doc:FactspowerModel schema:name "Exponential decay model" .
+_:e864d4ad97c9ec98fe74fd1d53d59cf1 rdf:reifies <<( doc:FactspowerModel schema:name "Exponential decay model" )>> ;
+	prov:wasDerivedFrom doc:689566d9f304 .
+doc:Predictive_maintenance_model a schema:ScholarlyArticle .
+_:a87948e673d638e6d7f0bb73f2974283 rdf:reifies <<( doc:Predictive_maintenance_model rdf:type schema:ScholarlyArticle )>> ;
+	prov:wasDerivedFrom doc:689566d9f304 .
+doc:FactspressureVessel_1 schema:name "Low-alloy steel horizontal pressure vessel" .
+_:b7e5c36f7f643d6180620036b81f621b rdf:reifies <<( doc:FactspressureVessel_1 schema:name "Low-alloy steel horizontal pressure vessel" )>> ;
+	prov:wasDerivedFrom doc:689566d9f304 .
+doc:Predictive_maintenance_model schema:datePublished "2025-05-09"^^xsd:date .
+_:adb5e31ef88e2bc1bd3fc69db0a2ee82 rdf:reifies <<( doc:Predictive_maintenance_model schema:datePublished "2025-05-09"^^xsd:date )>> ;
+	prov:wasDerivedFrom doc:689566d9f304 .
+doc:Predictive_maintenance_model schema:publisher doc:FactsscienceIn .
+_:f6a38a0c01378d68af11ede21497a4a rdf:reifies <<( doc:Predictive_maintenance_model schema:publisher doc:FactsscienceIn )>> ;
+	prov:wasDerivedFrom doc:689566d9f304 .
+doc:Predictive_maintenance_model schema:name "Prediction models for remaining life assessment of pressure vessels: A comparative analysis" .
+_:d400b2ec20af1f547210df2715141cf4 rdf:reifies <<( doc:Predictive_maintenance_model schema:name "Prediction models for remaining life assessment of pressure vessels: A comparative analysis" )>> ;
+	prov:wasDerivedFrom doc:689566d9f304 .
+doc:FactsnozzleA1 a schema:Product .
+_:de6b86673c8db89a307b45d53cc8c3c1 rdf:reifies <<( doc:FactsnozzleA1 rdf:type schema:Product )>> ;
+	prov:wasDerivedFrom doc:689566d9f304 .
+doc:FactsinspectionPointCount schema:value 24 .
+_:ebcf90d5d5460a4392d011800705af0a rdf:reifies <<( doc:FactsinspectionPointCount schema:value 24 )>> ;
+	prov:wasDerivedFrom doc:689566d9f304 .
+doc:FactsfiniteElementAnalysisDetail a None:Design_detail .
+_:fd8d1b11ef48ed202ceb8685f06bce45 rdf:reifies <<( doc:FactsfiniteElementAnalysisDetail rdf:type None:Design_detail )>> ;
+	prov:wasDerivedFrom doc:689566d9f304 .
+doc:Factsjournal_4 a schema:Periodical .
+_:b3d9c7cff8eef32f6f5ace2684872629 rdf:reifies <<( doc:Factsjournal_4 rdf:type schema:Periodical )>> ;
+	prov:wasDerivedFrom doc:689566d9f304 .
+doc:FactspressureVesselItemType None:has_text_value "pressure vessel" .
+_:a813d0dbf6d3496d28e13f9be9be9d08 rdf:reifies <<( doc:FactspressureVesselItemType None:has_text_value "pressure vessel" )>> ;
+	prov:wasDerivedFrom doc:689566d9f304 .
+doc:Predictive_maintenance_model a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Predictive_maintenance_model> .
+_:bf10555d3cd9b3926f96437126bdd314 rdf:reifies <<( doc:Predictive_maintenance_model rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Predictive_maintenance_model> )>> ;
+	prov:wasDerivedFrom doc:689566d9f304 .
+doc:FactspowerModel schema:name "Quadratic model" .
+_:a7742d4dceef4a2579f67779d281eaa2 rdf:reifies <<( doc:FactspowerModel schema:name "Quadratic model" )>> ;
+	prov:wasDerivedFrom doc:689566d9f304 .
+doc:Predictive_maintenance_model schema:author doc:FactssultanmagomedMagomedtagirovich .
+_:b865e643b0e8af55e332f77a0932fda0 rdf:reifies <<( doc:Predictive_maintenance_model schema:author doc:FactssultanmagomedMagomedtagirovich )>> ;
+	prov:wasDerivedFrom doc:689566d9f304 .
+doc:Predictive_maintenance_model schema:mentions doc:Factsapi579AsmeFfs1 .
+_:eeccde26517f1484b80254683ee8d644 rdf:reifies <<( doc:Predictive_maintenance_model schema:mentions doc:Factsapi579AsmeFfs1 )>> ;
+	prov:wasDerivedFrom doc:689566d9f304 .
+doc:Factsjournal_4 schema:issueNumber 6 .
+_:ea017298b22cfd674a2891c296e3e338 rdf:reifies <<( doc:Factsjournal_4 schema:issueNumber 6 )>> ;
+	prov:wasDerivedFrom doc:689566d9f304 .
+doc:FactsinspectionPointCount a schema:PropertyValue .
+_:cd520a54e9f3b61d05e2ab5712ce3c05 rdf:reifies <<( doc:FactsinspectionPointCount rdf:type schema:PropertyValue )>> ;
+	prov:wasDerivedFrom doc:689566d9f304 .
+doc:Predictive_maintenance_model None:has_publication_year doc:FactspublicationYear_82 .
+_:e7a8ee7819df09295a98f2e6701567e rdf:reifies <<( doc:Predictive_maintenance_model None:has_publication_year doc:FactspublicationYear_82 )>> ;
+	prov:wasDerivedFrom doc:689566d9f304 .
+doc:FactsminaPascal schema:name "Timur Sultanmagomedov" .
+_:b54bf1e45bc7f9bc4cdc12b3d65e9981 rdf:reifies <<( doc:FactsminaPascal schema:name "Timur Sultanmagomedov" )>> ;
+	prov:wasDerivedFrom doc:689566d9f304 .
+doc:FactsminaPascal schema:givenName "Mina A." .
+_:bdc60875f699992f550d7f48d8e6c0e3 rdf:reifies <<( doc:FactsminaPascal schema:givenName "Mina A." )>> ;
+	prov:wasDerivedFrom doc:689566d9f304 .
+doc:FactsinitialThickness schema:unitText "thickness" .
+_:c465145cc215f1ad3b0348011ab40a14 rdf:reifies <<( doc:FactsinitialThickness schema:unitText "thickness" )>> ;
+	prov:wasDerivedFrom doc:689566d9f304 .
+doc:FactspressureVesselItemType a None:item_type .
+_:f1a12cffe5806fb12c5e36f572ebe0e2 rdf:reifies <<( doc:FactspressureVesselItemType rdf:type None:item_type )>> ;
+	prov:wasDerivedFrom doc:689566d9f304 .
+doc:FactsminaPascal schema:familyName "Pascal" .
+_:b739041db91c2fbfdc83ad1739170a68 rdf:reifies <<( doc:FactsminaPascal schema:familyName "Pascal" )>> ;
+	prov:wasDerivedFrom doc:689566d9f304 .
+doc:FactspowerModel schema:name "Linear model" .
+_:d68753d790c9c59a1e4d4c8768d605a4 rdf:reifies <<( doc:FactspowerModel schema:name "Linear model" )>> ;
+	prov:wasDerivedFrom doc:689566d9f304 .
+doc:FactspowerModel None:has_predictive_maintenance_function doc:FactsremainingUsefulLifeFunction_2 .
+_:c13af8fa8a051395306b67c72431a30f rdf:reifies <<( doc:FactspowerModel None:has_predictive_maintenance_function doc:FactsremainingUsefulLifeFunction_2 )>> ;
+	prov:wasDerivedFrom doc:689566d9f304 .
+doc:FactsinspectionPeriod_1 schema:about doc:FactspressureVessel_1 .
+_:b2d37d50a7c6c70980a9760852723416 rdf:reifies <<( doc:FactsinspectionPeriod_1 schema:about doc:FactspressureVessel_1 )>> ;
+	prov:wasDerivedFrom doc:689566d9f304 .
+doc:FactsinitialThickness schema:name "Ultrasonic thickness" .
+_:ff9b66cd1570c2e6e589265ce0577d04 rdf:reifies <<( doc:FactsinitialThickness schema:name "Ultrasonic thickness" )>> ;
+	prov:wasDerivedFrom doc:689566d9f304 .
+doc:FactsinspectionPeriod_1 schema:endDate "2008"^^xsd:gYear .
+_:f42205a2c47f1c433671c3a2f10be09a rdf:reifies <<( doc:FactsinspectionPeriod_1 schema:endDate "2008"^^xsd:gYear )>> ;
+	prov:wasDerivedFrom doc:689566d9f304 .
+doc:Factsapi579AsmeFfs1 schema:name "API 579-1/ASME FFS-1" .
+_:ed2d170d2d3a6bc9d8c518228fc0c129 rdf:reifies <<( doc:Factsapi579AsmeFfs1 schema:name "API 579-1/ASME FFS-1" )>> ;
+	prov:wasDerivedFrom doc:689566d9f304 .
+doc:FactscorrosionRate a None:Data_variable .
+_:fe8174051490d931ce1515722c5cae71 rdf:reifies <<( doc:FactscorrosionRate rdf:type None:Data_variable )>> ;
+	prov:wasDerivedFrom doc:689566d9f304 .
+doc:FactspublicationYear_82 a None:Publication_year .
+_:dc6ce176520ec081ab0ee29847ea4dfc rdf:reifies <<( doc:FactspublicationYear_82 rdf:type None:Publication_year )>> ;
+	prov:wasDerivedFrom doc:689566d9f304 .
+doc:FactspowerModel schema:name "Chemical model" .
+_:db4d42b65a3cf48c45d1f5e0b421ef75 rdf:reifies <<( doc:FactspowerModel schema:name "Chemical model" )>> ;
+	prov:wasDerivedFrom doc:689566d9f304 .
+doc:FactsinspectionPointCount schema:about doc:FactspressureVessel_1 .
+_:b343bfbd9f6e79c2502d0e6327ee3550 rdf:reifies <<( doc:FactsinspectionPointCount schema:about doc:FactspressureVessel_1 )>> ;
+	prov:wasDerivedFrom doc:689566d9f304 .
+doc:FactsscienceIn a schema:Organization .
+_:de96bceeac3f84fbdf0d95a502d0aede rdf:reifies <<( doc:FactsscienceIn rdf:type schema:Organization )>> ;
+	prov:wasDerivedFrom doc:689566d9f304 .
+doc:FactsnozzleA1 schema:name "Nozzle A2" .
+_:fe6cbf1e6ab4616faac23956b43a7cfe rdf:reifies <<( doc:FactsnozzleA1 schema:name "Nozzle A2" )>> ;
+	prov:wasDerivedFrom doc:689566d9f304 .
+doc:Factsjournal_4 schema:name "Journal of Integrated SCIENCE & TECHNOLOGY" .
+_:acf7710ec49f1368abdc3ab11cc0fb5 rdf:reifies <<( doc:Factsjournal_4 schema:name "Journal of Integrated SCIENCE & TECHNOLOGY" )>> ;
+	prov:wasDerivedFrom doc:689566d9f304 .
+doc:FactscorrosionRate schema:name "Corrosion rate" .
+_:e42738ce73077d0d0f3cfc90de7c41d4 rdf:reifies <<( doc:FactscorrosionRate schema:name "Corrosion rate" )>> ;
+	prov:wasDerivedFrom doc:689566d9f304 .
+doc:FactsufaUniversity schema:address "Ufa, Russian Federation" .
+_:c98559de9e3d91bc8abb2f835966401d rdf:reifies <<( doc:FactsufaUniversity schema:address "Ufa, Russian Federation" )>> ;
+	prov:wasDerivedFrom doc:689566d9f304 .
+doc:Predictive_maintenance_model None:has_title doc:FactsarticleTitle_107 .
+_:ce3675735c579fab15ba0652de68dcd1 rdf:reifies <<( doc:Predictive_maintenance_model None:has_title doc:FactsarticleTitle_107 )>> ;
+	prov:wasDerivedFrom doc:689566d9f304 .
+doc:FactspowerModel None:has_predictive_maintenance_function doc:FactspowerModel .
+_:c9d40ccc5a4470ea2b34d13e113a88cf rdf:reifies <<( doc:FactspowerModel None:has_predictive_maintenance_function doc:FactspowerModel )>> ;
+	prov:wasDerivedFrom doc:689566d9f304 .
+doc:FactsinitialThickness a None:Data_variable .
+_:efe8022ef87306c9a2e61cbad1a32d4c rdf:reifies <<( doc:FactsinitialThickness rdf:type None:Data_variable )>> ;
+	prov:wasDerivedFrom doc:689566d9f304 .
+doc:9726e0b31216 a prov:Entity , schema:text ;
+	prov:generatedAtTime "2026-07-25T01:36:58.551828Z"^^xsd:dateTime ;
+	schema:position 1 ;
+	schema:identifier "9726e0b31216" .
+doc:FactspointColumn csvw:name "2004 thickness (mm)" .
+_:d0673570d5b287614541466e9ca73cb6 rdf:reifies <<( doc:FactspointColumn csvw:name "2004 thickness (mm)" )>> ;
+	prov:wasDerivedFrom doc:9726e0b31216 .
+doc:FactspowerModel <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#describes_type> doc:FactspowerModel .
+_:db926edabc9b9f8a664c8d5f34deb798 rdf:reifies <<( doc:FactspowerModel <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#describes_type> doc:FactspowerModel )>> ;
+	prov:wasDerivedFrom doc:9726e0b31216 .
+doc:FactsrulAssessment_1 schema:name "remaining useful life assessment" .
+_:dc8e115f40e9ecee674226f0bc3b9ab5 rdf:reifies <<( doc:FactsrulAssessment_1 schema:name "remaining useful life assessment" )>> ;
+	prov:wasDerivedFrom doc:9726e0b31216 .
+doc:FactscorrosionInspectionTable csvw:row doc:Factsrow3_3 .
+_:aa17b7120afdbafe448a6926c0e29f9e rdf:reifies <<( doc:FactscorrosionInspectionTable csvw:row doc:Factsrow3_3 )>> ;
+	prov:wasDerivedFrom doc:9726e0b31216 .
+doc:Factsrow3_3 cd:inspectionPoint 24 .
+_:e96c264b0ebf1912e1929e304b84487e rdf:reifies <<( doc:Factsrow3_3 cd:inspectionPoint 24 )>> ;
+	prov:wasDerivedFrom doc:9726e0b31216 .
+doc:FactspointColumn csvw:datatype xsd:decimal .
+_:d82430e42a294328a2a4d29ab53bac04 rdf:reifies <<( doc:FactspointColumn csvw:datatype xsd:decimal )>> ;
+	prov:wasDerivedFrom doc:9726e0b31216 .
+doc:FactspowerModel a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Model_type> .
+_:f44473b4108ef43cc2c9d2089fd35b26 rdf:reifies <<( doc:FactspowerModel rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Model_type> )>> ;
+	prov:wasDerivedFrom doc:9726e0b31216 .
+doc:FactspowerModel schema:description "Remaining Thickness = T0 - CR * t" .
+_:d1fbafb38904077d769f9b5008706484 rdf:reifies <<( doc:FactspowerModel schema:description "Remaining Thickness = T0 - CR * t" )>> ;
+	prov:wasDerivedFrom doc:9726e0b31216 .
+doc:Factsrow3_3 cd:thickness2004 11.4 .
+_:f9d7544632b6e206175194a5e0a825e7 rdf:reifies <<( doc:Factsrow3_3 cd:thickness2004 11.4 )>> ;
+	prov:wasDerivedFrom doc:9726e0b31216 .
+doc:Factsrow3_3 cd:thickness2002 11.9 .
+_:ea90ffe39b8d08b5eeb127cf63741079 rdf:reifies <<( doc:Factsrow3_3 cd:thickness2002 11.9 )>> ;
+	prov:wasDerivedFrom doc:9726e0b31216 .
+doc:Factsrow3_3 a schema:Observation .
+_:f40d7482ee3e5527e0f993feef1a4076 rdf:reifies <<( doc:Factsrow3_3 rdf:type schema:Observation )>> ;
+	prov:wasDerivedFrom doc:9726e0b31216 .
+doc:FactspowerModel schema:description "y = a * t^2 + b * t + c" .
+_:f55b57a622ea3617137caffaff3b934b rdf:reifies <<( doc:FactspowerModel schema:description "y = a * t^2 + b * t + c" )>> ;
+	prov:wasDerivedFrom doc:9726e0b31216 .
+doc:Factsrow3_3 cd:inspectionPoint 3 .
+_:e7eea9e480fdf26dc9c75eb2f15a5a8d rdf:reifies <<( doc:Factsrow3_3 cd:inspectionPoint 3 )>> ;
+	prov:wasDerivedFrom doc:9726e0b31216 .
+doc:Factsrow3_3 csvw:rownum 14 .
+_:ddcb2ebe5e8667a1cb5e51f997580b84 rdf:reifies <<( doc:Factsrow3_3 csvw:rownum 14 )>> ;
+	prov:wasDerivedFrom doc:9726e0b31216 .
+doc:Factsrow3_3 csvw:rownum 22 .
+_:f07233f2fd12ef49051860dbbb0d8173 rdf:reifies <<( doc:Factsrow3_3 csvw:rownum 22 )>> ;
+	prov:wasDerivedFrom doc:9726e0b31216 .
+doc:Factsrow3_3 csvw:rownum 20 .
+_:ed964472d1614eedc5235f4e424cfb9a rdf:reifies <<( doc:Factsrow3_3 csvw:rownum 20 )>> ;
+	prov:wasDerivedFrom doc:9726e0b31216 .
+doc:Factsrow3_3 cd:inspectionPoint 15 .
+_:b3579f82f6207800c863ca3c269dce7e rdf:reifies <<( doc:Factsrow3_3 cd:inspectionPoint 15 )>> ;
+	prov:wasDerivedFrom doc:9726e0b31216 .
+doc:FactspowerModel schema:name "power corrosion model" .
+_:f422e07536f6ccbba63a3cd33997476 rdf:reifies <<( doc:FactspowerModel schema:name "power corrosion model" )>> ;
+	prov:wasDerivedFrom doc:9726e0b31216 .
+doc:Factsrow3_3 cd:thickness2004 8.2 .
+_:d06cf54ba71a67e0f3868c19514b48c rdf:reifies <<( doc:Factsrow3_3 cd:thickness2004 8.2 )>> ;
+	prov:wasDerivedFrom doc:9726e0b31216 .
+doc:Factsrow3_3 cd:thickness2004 59.8 .
+_:af615b55856df7e4585bd60c9927fb7a rdf:reifies <<( doc:Factsrow3_3 cd:thickness2004 59.8 )>> ;
+	prov:wasDerivedFrom doc:9726e0b31216 .
+doc:Factsrow3_3 cd:inspectionPoint 1 .
+_:b6021120819020ecc2435346572bf04f rdf:reifies <<( doc:Factsrow3_3 cd:inspectionPoint 1 )>> ;
+	prov:wasDerivedFrom doc:9726e0b31216 .
+doc:Factsrow3_3 csvw:rownum 11 .
+_:d39a4f37380d9de2441a49e49ac18540 rdf:reifies <<( doc:Factsrow3_3 csvw:rownum 11 )>> ;
+	prov:wasDerivedFrom doc:9726e0b31216 .
+doc:Factsrow3_3 cd:thickness2006 11.2 .
+_:c14e62534ce905cf0315f18b84a3bb4f rdf:reifies <<( doc:Factsrow3_3 cd:thickness2006 11.2 )>> ;
+	prov:wasDerivedFrom doc:9726e0b31216 .
+doc:Factsrow3_3 cd:thickness2008 15.9 .
+_:b1065f4c9af0ebcdb320dfd6c75b0a3c rdf:reifies <<( doc:Factsrow3_3 cd:thickness2008 15.9 )>> ;
+	prov:wasDerivedFrom doc:9726e0b31216 .
+doc:FactspointColumn csvw:name "2008 thickness (mm)" .
+_:b55e1d6f91f1b45a2c194fa4e34284a rdf:reifies <<( doc:FactspointColumn csvw:name "2008 thickness (mm)" )>> ;
+	prov:wasDerivedFrom doc:9726e0b31216 .
+doc:Factsrow3_3 csvw:rownum 10 .
+_:e7270270cc3d785143816d383ebbd61a rdf:reifies <<( doc:Factsrow3_3 csvw:rownum 10 )>> ;
+	prov:wasDerivedFrom doc:9726e0b31216 .
+doc:Factsrow3_3 cd:inspectionPoint 14 .
+_:f53d9c850b19f9b059e79ff97bc9d31c rdf:reifies <<( doc:Factsrow3_3 cd:inspectionPoint 14 )>> ;
+	prov:wasDerivedFrom doc:9726e0b31216 .
+doc:Factsrow3_3 cd:inspectionPoint 16 .
+_:e017d0ab8cddc75fce2d7edd9c7f2411 rdf:reifies <<( doc:Factsrow3_3 cd:inspectionPoint 16 )>> ;
+	prov:wasDerivedFrom doc:9726e0b31216 .
+doc:FactspointColumn csvw:name "2006 thickness (mm)" .
+_:e0eff4fec309c70bd0b384643b26594c rdf:reifies <<( doc:FactspointColumn csvw:name "2006 thickness (mm)" )>> ;
+	prov:wasDerivedFrom doc:9726e0b31216 .
+doc:Factsrow3_3 csvw:rownum 4 .
+_:c9cd9af4b5548a5ecf1860d3acffd431 rdf:reifies <<( doc:Factsrow3_3 csvw:rownum 4 )>> ;
+	prov:wasDerivedFrom doc:9726e0b31216 .
+doc:Factsrow3_3 cd:thickness2002 "16"^^xsd:decimal .
+_:dc6caedd3b56017a3d77b8c70c3e974a rdf:reifies <<( doc:Factsrow3_3 cd:thickness2002 "16"^^xsd:decimal )>> ;
+	prov:wasDerivedFrom doc:9726e0b31216 .
+doc:FactspointColumn a csvw:Column .
+_:eedc6ae9f98e5e00a47dd1b8079af9c3 rdf:reifies <<( doc:FactspointColumn rdf:type csvw:Column )>> ;
+	prov:wasDerivedFrom doc:9726e0b31216 .
+doc:FactsmaximumCorrosionRate a obo:BFO_0000019 .
+_:dc01af0e8ae80b20a9f58e9fc30a12d8 rdf:reifies <<( doc:FactsmaximumCorrosionRate rdf:type obo:BFO_0000019 )>> ;
+	prov:wasDerivedFrom doc:9726e0b31216 .
+doc:Factsrow3_3 cd:thickness2002 8.7 .
+_:da0804961b79c21c9b3a2003648f2e58 rdf:reifies <<( doc:Factsrow3_3 cd:thickness2002 8.7 )>> ;
+	prov:wasDerivedFrom doc:9726e0b31216 .
+doc:Factsrow3_3 cd:thickness2004 9.5 .
+_:d2fa79869d5a19e1b1233a909062eace rdf:reifies <<( doc:Factsrow3_3 cd:thickness2004 9.5 )>> ;
+	prov:wasDerivedFrom doc:9726e0b31216 .
+doc:Factsrow3_3 cd:thickness2004 11.6 .
+_:ec4d9fa0b4ebfa91e3e4ae262a90b722 rdf:reifies <<( doc:Factsrow3_3 cd:thickness2004 11.6 )>> ;
+	prov:wasDerivedFrom doc:9726e0b31216 .
+doc:FactscorrosionInspectionTable obo:RO_0000086 doc:FactscorrosionProcess .
+_:f7ec95e3403aa9c4bfa7b8ba39633ece rdf:reifies <<( doc:FactscorrosionInspectionTable obo:RO_0000086 doc:FactscorrosionProcess )>> ;
+	prov:wasDerivedFrom doc:9726e0b31216 .
+doc:Factsrow3_3 cd:inspectionPoint 21 .
+_:b84a53c7c2a95eeb7037a639ced4dfcd rdf:reifies <<( doc:Factsrow3_3 cd:inspectionPoint 21 )>> ;
+	prov:wasDerivedFrom doc:9726e0b31216 .
+doc:Factsrow3_3 cd:inspectionPoint 11 .
+_:b2566bb4216aaa74a4256555b0840497 rdf:reifies <<( doc:Factsrow3_3 cd:inspectionPoint 11 )>> ;
+	prov:wasDerivedFrom doc:9726e0b31216 .
+doc:Factsrow3_3 cd:thickness2006 59.6 .
+_:d4cb421c134b4602beef65376c060a27 rdf:reifies <<( doc:Factsrow3_3 cd:thickness2006 59.6 )>> ;
+	prov:wasDerivedFrom doc:9726e0b31216 .
+doc:Factsrow3_3 cd:thickness2008 11.1 .
+_:df3c89b71c3a86fa2eddf6758c81b9c4 rdf:reifies <<( doc:Factsrow3_3 cd:thickness2008 11.1 )>> ;
+	prov:wasDerivedFrom doc:9726e0b31216 .
+doc:Factsrow3_3 csvw:rownum 21 .
+_:d98330b3e36d815e18698490b567a709 rdf:reifies <<( doc:Factsrow3_3 csvw:rownum 21 )>> ;
+	prov:wasDerivedFrom doc:9726e0b31216 .
+doc:FactscorrosionInspectionTable csvw:describes doc:FactspressureVessel_1 .
+_:d35f8c353f63bd97dc263790444316c8 rdf:reifies <<( doc:FactscorrosionInspectionTable csvw:describes doc:FactspressureVessel_1 )>> ;
+	prov:wasDerivedFrom doc:9726e0b31216 .
+doc:Factsrow3_3 csvw:rownum 9 .
+_:f987559f441a57af228f6fe5f5a65052 rdf:reifies <<( doc:Factsrow3_3 csvw:rownum 9 )>> ;
+	prov:wasDerivedFrom doc:9726e0b31216 .
+doc:Factsrow3_3 csvw:rownum 2 .
+_:b892f7d3d99c3ec8f2c6738d3e4dcd5f rdf:reifies <<( doc:Factsrow3_3 csvw:rownum 2 )>> ;
+	prov:wasDerivedFrom doc:9726e0b31216 .
+doc:Factsrow3_3 cd:thickness2008 59.3 .
+_:f75df329c846886557adc2c0e7309bf6 rdf:reifies <<( doc:Factsrow3_3 cd:thickness2008 59.3 )>> ;
+	prov:wasDerivedFrom doc:9726e0b31216 .
+doc:Factsrow3_3 cd:thickness2002 16.2 .
+_:c638cc1c3f856965248c753bd25fd148 rdf:reifies <<( doc:Factsrow3_3 cd:thickness2002 16.2 )>> ;
+	prov:wasDerivedFrom doc:9726e0b31216 .
+doc:Factsrow3_3 cd:thickness2004 15.6 .
+_:d74a34cff43c49dee7168c9b1155b101 rdf:reifies <<( doc:Factsrow3_3 cd:thickness2004 15.6 )>> ;
+	prov:wasDerivedFrom doc:9726e0b31216 .
+doc:Factsrow3_3 cd:thickness2002 11.5 .
+_:f51de6d47543cb67a9b22ad12146bc72 rdf:reifies <<( doc:Factsrow3_3 cd:thickness2002 11.5 )>> ;
+	prov:wasDerivedFrom doc:9726e0b31216 .
+doc:Factsrow3_3 csvw:rownum 19 .
+_:c0fd714c58346dd6ec52fda1fdb4dc85 rdf:reifies <<( doc:Factsrow3_3 csvw:rownum 19 )>> ;
+	prov:wasDerivedFrom doc:9726e0b31216 .
+doc:Factsrow3_3 cd:thickness2008 9.3 .
+_:f028fb6f520374d56bbc7e6fa6419e25 rdf:reifies <<( doc:Factsrow3_3 cd:thickness2008 9.3 )>> ;
+	prov:wasDerivedFrom doc:9726e0b31216 .
+doc:Factsrow3_3 cd:inspectionPoint 20 .
+_:be53b02cb2fae4867423ca010e04940e rdf:reifies <<( doc:Factsrow3_3 cd:inspectionPoint 20 )>> ;
+	prov:wasDerivedFrom doc:9726e0b31216 .
+doc:FactspressureVessel_1 rdfs:label "pressure vessel"@en .
+_:ba0bc0a668ea5ca0a0760e466fef32b2 rdf:reifies <<( doc:FactspressureVessel_1 rdfs:label "pressure vessel"@en )>> ;
+	prov:wasDerivedFrom doc:9726e0b31216 .
+doc:Factsrow3_3 cd:thickness2004 59.5 .
+_:cfaf0a41800b136e0599d0ed002b58bc rdf:reifies <<( doc:Factsrow3_3 cd:thickness2004 59.5 )>> ;
+	prov:wasDerivedFrom doc:9726e0b31216 .
+doc:Factsrow3_3 cd:thickness2002 8.3 .
+_:e614f43f43e4cfae9c0e3b009e6b7410 rdf:reifies <<( doc:Factsrow3_3 cd:thickness2002 8.3 )>> ;
+	prov:wasDerivedFrom doc:9726e0b31216 .
+doc:Factsrow3_3 cd:thickness2006 15.7 .
+_:ac5bb08db742e26b8b0692c13e590226 rdf:reifies <<( doc:Factsrow3_3 cd:thickness2006 15.7 )>> ;
+	prov:wasDerivedFrom doc:9726e0b31216 .
+doc:Factsrow3_3 cd:inspectionPoint 2 .
+_:a0dda6219bab5c9667311052cfa85201 rdf:reifies <<( doc:Factsrow3_3 cd:inspectionPoint 2 )>> ;
+	prov:wasDerivedFrom doc:9726e0b31216 .
+doc:Factsrow3_3 cd:thickness2006 11.1 .
+_:a026f30fb519475acafff0ec6a6e5776 rdf:reifies <<( doc:Factsrow3_3 cd:thickness2006 11.1 )>> ;
+	prov:wasDerivedFrom doc:9726e0b31216 .
+doc:Factsrow3_3 cd:inspectionPoint 23 .
+_:ea3b5bb02d13ce17273e834d267427a8 rdf:reifies <<( doc:Factsrow3_3 cd:inspectionPoint 23 )>> ;
+	prov:wasDerivedFrom doc:9726e0b31216 .
+doc:Factsrow3_3 cd:thickness2006 15.9 .
+_:b932a7c72094112d443a534aa30c110 rdf:reifies <<( doc:Factsrow3_3 cd:thickness2006 15.9 )>> ;
+	prov:wasDerivedFrom doc:9726e0b31216 .
+doc:Factsrow3_3 cd:thickness2002 9.6 .
+_:ccc03f762c7e5f0a4af67a922a8b15b5 rdf:reifies <<( doc:Factsrow3_3 cd:thickness2002 9.6 )>> ;
+	prov:wasDerivedFrom doc:9726e0b31216 .
+doc:Factsrow3_3 cd:thickness2004 "16"^^xsd:decimal .
+_:d4609af1f731ccef8a8146533c601922 rdf:reifies <<( doc:Factsrow3_3 cd:thickness2004 "16"^^xsd:decimal )>> ;
+	prov:wasDerivedFrom doc:9726e0b31216 .
+doc:Factsrow3_3 cd:thickness2006 8.5 .
+_:e877b68690f217ec1b149bb3990c6b48 rdf:reifies <<( doc:Factsrow3_3 cd:thickness2006 8.5 )>> ;
+	prov:wasDerivedFrom doc:9726e0b31216 .
+doc:Factsrow3_3 cd:thickness2004 15.7 .
+_:c84b0cca0c307b1c4ec3b3a8c2c51b1e rdf:reifies <<( doc:Factsrow3_3 cd:thickness2004 15.7 )>> ;
+	prov:wasDerivedFrom doc:9726e0b31216 .
+doc:Factsrow3_3 cd:thickness2002 11.6 .
+_:c75f20deac1420561a1d92012000bd18 rdf:reifies <<( doc:Factsrow3_3 cd:thickness2002 11.6 )>> ;
+	prov:wasDerivedFrom doc:9726e0b31216 .
+doc:Factsrow3_3 cd:inspectionPoint 10 .
+_:b0c8ba26179f2f7a2450b1ffb3b11e98 rdf:reifies <<( doc:Factsrow3_3 cd:inspectionPoint 10 )>> ;
+	prov:wasDerivedFrom doc:9726e0b31216 .
+doc:Factsrow3_3 csvw:rownum 13 .
+_:f563c5833b336b92b67115f8f55ccb90 rdf:reifies <<( doc:Factsrow3_3 csvw:rownum 13 )>> ;
+	prov:wasDerivedFrom doc:9726e0b31216 .
+doc:Factsrow3_3 cd:inspectionPoint 19 .
+_:e204ad27e7bd48a4bea5b28dbd379553 rdf:reifies <<( doc:Factsrow3_3 cd:inspectionPoint 19 )>> ;
+	prov:wasDerivedFrom doc:9726e0b31216 .
+doc:Factsrow3_3 csvw:rownum 6 .
+_:a9943a0207c4e2114c7ea7a4595556c6 rdf:reifies <<( doc:Factsrow3_3 csvw:rownum 6 )>> ;
+	prov:wasDerivedFrom doc:9726e0b31216 .
+doc:Factsrow3_3 cd:thickness2004 59.7 .
+_:f694aa2ed8a969bf7b30a3f8a84409c2 rdf:reifies <<( doc:Factsrow3_3 cd:thickness2004 59.7 )>> ;
+	prov:wasDerivedFrom doc:9726e0b31216 .
+doc:FactspointColumn csvw:datatype xsd:integer .
+_:bc660769be3324a9bba356c0baddcc09 rdf:reifies <<( doc:FactspointColumn csvw:datatype xsd:integer )>> ;
+	prov:wasDerivedFrom doc:9726e0b31216 .
+doc:Factsrow3_3 cd:thickness2004 16.1 .
+_:d261001d7d39858274c77e482719e7a9 rdf:reifies <<( doc:Factsrow3_3 cd:thickness2004 16.1 )>> ;
+	prov:wasDerivedFrom doc:9726e0b31216 .
+doc:FactsthicknessTable a csvw:TableSchema .
+_:b5e2150cfdbcae75867d4c5c072603da rdf:reifies <<( doc:FactsthicknessTable rdf:type csvw:TableSchema )>> ;
+	prov:wasDerivedFrom doc:9726e0b31216 .
+doc:FactsrulAssessment_1 a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Remaining_useful_life_estimation> .
+_:a8bf1e2c4a4a2463998cb12905a3dd8a rdf:reifies <<( doc:FactsrulAssessment_1 rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Remaining_useful_life_estimation> )>> ;
+	prov:wasDerivedFrom doc:9726e0b31216 .
+doc:FactsmaximumCorrosionRate schema:value 0.15 .
+_:b0f79430451c54cade85f1169ef58231 rdf:reifies <<( doc:FactsmaximumCorrosionRate schema:value 0.15 )>> ;
+	prov:wasDerivedFrom doc:9726e0b31216 .
+doc:Factsrow3_3 cd:thickness2004 15.5 .
+_:f1413a31a2946b7891fcc97c6739a775 rdf:reifies <<( doc:Factsrow3_3 cd:thickness2004 15.5 )>> ;
+	prov:wasDerivedFrom doc:9726e0b31216 .
+doc:FactsmaximumCorrosionRate schema:unitText "mm/year" .
+_:b19f62a365298dda39282e66f8f4a8ee rdf:reifies <<( doc:FactsmaximumCorrosionRate schema:unitText "mm/year" )>> ;
+	prov:wasDerivedFrom doc:9726e0b31216 .
+doc:Factsrow3_3 cd:thickness2004 11.5 .
+_:cae28044a90892245d6cb49d0b224875 rdf:reifies <<( doc:Factsrow3_3 cd:thickness2004 11.5 )>> ;
+	prov:wasDerivedFrom doc:9726e0b31216 .
+doc:Factsrow3_3 cd:thickness2008 11.2 .
+_:bed0a39546802d9a249a043d3427656 rdf:reifies <<( doc:Factsrow3_3 cd:thickness2008 11.2 )>> ;
+	prov:wasDerivedFrom doc:9726e0b31216 .
+doc:Factsrow3_3 cd:thickness2008 8.5 .
+_:a98c138b8e0dee071c0596ae133bf751 rdf:reifies <<( doc:Factsrow3_3 cd:thickness2008 8.5 )>> ;
+	prov:wasDerivedFrom doc:9726e0b31216 .
+doc:Factsrow3_3 cd:thickness2002 15.9 .
+_:e789746d1fa8df025c14dc6deadb539f rdf:reifies <<( doc:Factsrow3_3 cd:thickness2002 15.9 )>> ;
+	prov:wasDerivedFrom doc:9726e0b31216 .
+doc:FactspowerModel schema:description "y = a * ln(t) + b" .
+_:ccef5e19c0b60ec0b0f52c8dd36b40c9 rdf:reifies <<( doc:FactspowerModel schema:description "y = a * ln(t) + b" )>> ;
+	prov:wasDerivedFrom doc:9726e0b31216 .
+doc:FactspowerModel schema:name "quadratic corrosion model" .
+_:dd4c53e1257ff37feb5c2ae50b8fe66c rdf:reifies <<( doc:FactspowerModel schema:name "quadratic corrosion model" )>> ;
+	prov:wasDerivedFrom doc:9726e0b31216 .
+doc:Factsrow3_3 cd:thickness2008 15.4 .
+_:b51cf61cf48e5aa9637753b7fcced461 rdf:reifies <<( doc:Factsrow3_3 cd:thickness2008 15.4 )>> ;
+	prov:wasDerivedFrom doc:9726e0b31216 .
+doc:Factsrow3_3 cd:thickness2008 59.5 .
+_:f4f343aaddd630d6d674b786104c856 rdf:reifies <<( doc:Factsrow3_3 cd:thickness2008 59.5 )>> ;
+	prov:wasDerivedFrom doc:9726e0b31216 .
+doc:Factsrow3_3 cd:inspectionPoint 6 .
+_:f968e40351922518bb52c771cc2af1d4 rdf:reifies <<( doc:Factsrow3_3 cd:inspectionPoint 6 )>> ;
+	prov:wasDerivedFrom doc:9726e0b31216 .
+doc:Factsrow3_3 cd:thickness2008 7.9 .
+_:d8daece52335a98f662c77acffbbfb08 rdf:reifies <<( doc:Factsrow3_3 cd:thickness2008 7.9 )>> ;
+	prov:wasDerivedFrom doc:9726e0b31216 .
+doc:Factsrow3_3 cd:inspectionPoint 13 .
+_:e5a3891461fa254a627f068f592114b0 rdf:reifies <<( doc:Factsrow3_3 cd:inspectionPoint 13 )>> ;
+	prov:wasDerivedFrom doc:9726e0b31216 .
+doc:Factsrow3_3 cd:thickness2002 "60"^^xsd:decimal .
+_:d9c8a0241935b51d754e265656b60bfa rdf:reifies <<( doc:Factsrow3_3 cd:thickness2002 "60"^^xsd:decimal )>> ;
+	prov:wasDerivedFrom doc:9726e0b31216 .
+doc:FactsinspectionPeriod_1 a schema:Observation .
+_:abbadb4b0540aa23ac54d8811a5496be rdf:reifies <<( doc:FactsinspectionPeriod_1 rdf:type schema:Observation )>> ;
+	prov:wasDerivedFrom doc:9726e0b31216 .
+doc:Factsrow3_3 cd:inspectionPoint 9 .
+_:e3257ee8babedf9004a8df11d120ee77 rdf:reifies <<( doc:Factsrow3_3 cd:inspectionPoint 9 )>> ;
+	prov:wasDerivedFrom doc:9726e0b31216 .
+doc:Factsrow3_3 csvw:rownum 8 .
+_:f70227cf0bab81999544a89a8f58f65c rdf:reifies <<( doc:Factsrow3_3 csvw:rownum 8 )>> ;
+	prov:wasDerivedFrom doc:9726e0b31216 .
+doc:FactsthicknessTable csvw:column doc:FactspointColumn .
+_:f7e6834d5f69eb058d6c4730883d16cf rdf:reifies <<( doc:FactsthicknessTable csvw:column doc:FactspointColumn )>> ;
+	prov:wasDerivedFrom doc:9726e0b31216 .
+doc:Factsrow3_3 cd:thickness2002 9.7 .
+_:d6134716b651e9b579f5bbd83f2870e4 rdf:reifies <<( doc:Factsrow3_3 cd:thickness2002 9.7 )>> ;
+	prov:wasDerivedFrom doc:9726e0b31216 .
+_:f42205a2c47f1c433671c3a2f10be09a prov:wasDerivedFrom doc:9726e0b31216 .
+doc:Factsrow3_3 csvw:rownum 12 .
+_:f1a5f51de21934ebc0ba75779d20dff6 rdf:reifies <<( doc:Factsrow3_3 csvw:rownum 12 )>> ;
+	prov:wasDerivedFrom doc:9726e0b31216 .
+doc:Factsrow3_3 cd:thickness2004 11.2 .
+_:a2b8357ec23d00e79b0c6a6dbb00d0e8 rdf:reifies <<( doc:Factsrow3_3 cd:thickness2004 11.2 )>> ;
+	prov:wasDerivedFrom doc:9726e0b31216 .
+doc:FactscorrosionProcess rdfs:label "corrosion-induced material degradation"@en .
+_:e05acbdec6429b3ed590900834ca8577 rdf:reifies <<( doc:FactscorrosionProcess rdfs:label "corrosion-induced material degradation"@en )>> ;
+	prov:wasDerivedFrom doc:9726e0b31216 .
+doc:Factsrow3_3 cd:inspectionPoint 22 .
+_:e4fbfc31b3fab1578c8a282fee17e032 rdf:reifies <<( doc:Factsrow3_3 cd:inspectionPoint 22 )>> ;
+	prov:wasDerivedFrom doc:9726e0b31216 .
+doc:FactscorrosionInspectionTable a csvw:Table .
+_:b2b7786561c7e8fad654c146aec56e88 rdf:reifies <<( doc:FactscorrosionInspectionTable rdf:type csvw:Table )>> ;
+	prov:wasDerivedFrom doc:9726e0b31216 .
+doc:Factsrow3_3 cd:thickness2006 "16"^^xsd:decimal .
+_:c7037dea7d717fdb9d3cdb6812f8dd80 rdf:reifies <<( doc:Factsrow3_3 cd:thickness2006 "16"^^xsd:decimal )>> ;
+	prov:wasDerivedFrom doc:9726e0b31216 .
+doc:FactspowerModel schema:description "y = a * t^b" .
+_:a0fba9faf568854cc709f224a9370c52 rdf:reifies <<( doc:FactspowerModel schema:description "y = a * t^b" )>> ;
+	prov:wasDerivedFrom doc:9726e0b31216 .
+doc:Factsrow3_3 cd:thickness2006 15.4 .
+_:f2ca996d76997de3a0a6d22ee28f26d2 rdf:reifies <<( doc:Factsrow3_3 cd:thickness2006 15.4 )>> ;
+	prov:wasDerivedFrom doc:9726e0b31216 .
+doc:Factsrow3_3 csvw:rownum 5 .
+_:f96f22b40e03ac97d4a61f7dc4d30521 rdf:reifies <<( doc:Factsrow3_3 csvw:rownum 5 )>> ;
+	prov:wasDerivedFrom doc:9726e0b31216 .
+doc:Factsrow3_3 cd:thickness2006 10.8 .
+_:b146a5eefc0e91f31ab52f34b0f6719e rdf:reifies <<( doc:Factsrow3_3 cd:thickness2006 10.8 )>> ;
+	prov:wasDerivedFrom doc:9726e0b31216 .
+doc:FactspointColumn csvw:name "2002 thickness (mm)" .
+_:f78b0f6e58bd79a630e7039f77432d6e rdf:reifies <<( doc:FactspointColumn csvw:name "2002 thickness (mm)" )>> ;
+	prov:wasDerivedFrom doc:9726e0b31216 .
+doc:Factsrow3_3 cd:thickness2008 8.6 .
+_:c6b91ffc3fd2e8736e2bb4c7cb809eef rdf:reifies <<( doc:Factsrow3_3 cd:thickness2008 8.6 )>> ;
+	prov:wasDerivedFrom doc:9726e0b31216 .
+doc:Factsrow3_3 cd:inspectionPoint 12 .
+_:f340a714fcdb79f9c531855c2322e8be rdf:reifies <<( doc:Factsrow3_3 cd:inspectionPoint 12 )>> ;
+	prov:wasDerivedFrom doc:9726e0b31216 .
+doc:Factsrow3_3 cd:thickness2002 "11"^^xsd:decimal .
+_:bde2cd93567e75346ee36d77691fddc rdf:reifies <<( doc:Factsrow3_3 cd:thickness2002 "11"^^xsd:decimal )>> ;
+	prov:wasDerivedFrom doc:9726e0b31216 .
+doc:Factsrow3_3 cd:thickness2006 9.4 .
+_:ece8994302688bc1f55af5cf30f27d26 rdf:reifies <<( doc:Factsrow3_3 cd:thickness2006 9.4 )>> ;
+	prov:wasDerivedFrom doc:9726e0b31216 .
+doc:Factsrow3_3 cd:thickness2008 15.6 .
+_:d394ae6fc0b8272ee8b7c6104c5ceb59 rdf:reifies <<( doc:Factsrow3_3 cd:thickness2008 15.6 )>> ;
+	prov:wasDerivedFrom doc:9726e0b31216 .
+doc:Factsrow3_3 cd:inspectionPoint 4 .
+_:c1c595ad8b811e25a439f18c0518af1e rdf:reifies <<( doc:Factsrow3_3 cd:inspectionPoint 4 )>> ;
+	prov:wasDerivedFrom doc:9726e0b31216 .
+doc:FactspowerModel schema:name "linear corrosion rate model" .
+_:df915a4eff20258a71f410da5dd91170 rdf:reifies <<( doc:FactspowerModel schema:name "linear corrosion rate model" )>> ;
+	prov:wasDerivedFrom doc:9726e0b31216 .
+doc:Factsrow3_3 cd:thickness2004 15.9 .
+_:c79bc764623acbf9482176326650a37e rdf:reifies <<( doc:Factsrow3_3 cd:thickness2004 15.9 )>> ;
+	prov:wasDerivedFrom doc:9726e0b31216 .
+_:c2c21b8e9f119871dcf08aba84afd630 prov:wasDerivedFrom doc:9726e0b31216 .
+doc:Factsrow3_3 cd:thickness2008 11.4 .
+_:c48aeaf710ad917a395ac6042cf62851 rdf:reifies <<( doc:Factsrow3_3 cd:thickness2008 11.4 )>> ;
+	prov:wasDerivedFrom doc:9726e0b31216 .
+doc:Factsrow3_3 csvw:rownum 24 .
+_:e967d123c3c5b8de1bb8bbd37cfe82c2 rdf:reifies <<( doc:Factsrow3_3 csvw:rownum 24 )>> ;
+	prov:wasDerivedFrom doc:9726e0b31216 .
+doc:Factsrow3_3 cd:inspectionPoint 5 .
+_:eab1981daf078acc989ada7b5756531a rdf:reifies <<( doc:Factsrow3_3 cd:inspectionPoint 5 )>> ;
+	prov:wasDerivedFrom doc:9726e0b31216 .
+doc:Factsrow3_3 cd:thickness2008 15.3 .
+_:bec532d1e0b7886a18e345093bd9b22a rdf:reifies <<( doc:Factsrow3_3 cd:thickness2008 15.3 )>> ;
+	prov:wasDerivedFrom doc:9726e0b31216 .
+doc:Factsrow3_3 cd:thickness2002 11.4 .
+_:a067283835112930443c3c3299e8a49a rdf:reifies <<( doc:Factsrow3_3 cd:thickness2002 11.4 )>> ;
+	prov:wasDerivedFrom doc:9726e0b31216 .
+doc:Factsrow3_3 cd:thickness2008 10.8 .
+_:a55dfdbcd41339361ec60c9ca5aadc45 rdf:reifies <<( doc:Factsrow3_3 cd:thickness2008 10.8 )>> ;
+	prov:wasDerivedFrom doc:9726e0b31216 .
+_:ac69f7f7d74d010787b91782acd21736 prov:wasDerivedFrom doc:9726e0b31216 .
+doc:FactspowerModel cco:is_about doc:FactspressureVessel_1 .
+_:f6127d07fbdcbd22d529ac174c154f32 rdf:reifies <<( doc:FactspowerModel cco:is_about doc:FactspressureVessel_1 )>> ;
+	prov:wasDerivedFrom doc:9726e0b31216 .
+doc:Factsrow3_3 csvw:rownum 3 .
+_:de38dea7e85900ad022cc444e9ab0aaf rdf:reifies <<( doc:Factsrow3_3 csvw:rownum 3 )>> ;
+	prov:wasDerivedFrom doc:9726e0b31216 .
+doc:Factsrow3_3 cd:thickness2008 15.5 .
+_:e763a4f4084a7d386d3adadfa6731257 rdf:reifies <<( doc:Factsrow3_3 cd:thickness2008 15.5 )>> ;
+	prov:wasDerivedFrom doc:9726e0b31216 .
+doc:Factsrow3_3 csvw:rownum 15 .
+_:d5d770f8e5a467872dc1287c3a402512 rdf:reifies <<( doc:Factsrow3_3 csvw:rownum 15 )>> ;
+	prov:wasDerivedFrom doc:9726e0b31216 .
+doc:FactspointColumn csvw:name "Inspection Points" .
+_:dc2e53461e33e036330d03b0f4a492e8 rdf:reifies <<( doc:FactspointColumn csvw:name "Inspection Points" )>> ;
+	prov:wasDerivedFrom doc:9726e0b31216 .
+_:fa0c4ca7926d8c7cdf912571e7264315 prov:wasDerivedFrom doc:9726e0b31216 .
+doc:Factsrow3_3 cd:thickness2006 11.3 .
+_:fe8220fd359d7778a5fa2acbe466e72 rdf:reifies <<( doc:Factsrow3_3 cd:thickness2006 11.3 )>> ;
+	prov:wasDerivedFrom doc:9726e0b31216 .
+doc:Factsrow3_3 cd:thickness2006 59.7 .
+_:d26601710a643f66576ba7f2c81e6d5e rdf:reifies <<( doc:Factsrow3_3 cd:thickness2006 59.7 )>> ;
+	prov:wasDerivedFrom doc:9726e0b31216 .
+doc:Factsrow3_3 cd:inspectionPoint 8 .
+_:f01ea02ec2bf6498478bfe5623acab15 rdf:reifies <<( doc:Factsrow3_3 cd:inspectionPoint 8 )>> ;
+	prov:wasDerivedFrom doc:9726e0b31216 .
+doc:Factsrow3_3 cd:thickness2004 11.3 .
+_:be6d56c5b9979b7f4b11977be2aa88d2 rdf:reifies <<( doc:Factsrow3_3 cd:thickness2004 11.3 )>> ;
+	prov:wasDerivedFrom doc:9726e0b31216 .
+doc:FactsmaximumCorrosionRate schema:value 0.065 .
+_:ca11fd486f8caace1e04f65a2088862 rdf:reifies <<( doc:FactsmaximumCorrosionRate schema:value 0.065 )>> ;
+	prov:wasDerivedFrom doc:9726e0b31216 .
+doc:Factsrow3_3 cd:thickness2006 15.6 .
+_:f850a3cf4a6b87ac36fa3e3bcbbf2e99 rdf:reifies <<( doc:Factsrow3_3 cd:thickness2006 15.6 )>> ;
+	prov:wasDerivedFrom doc:9726e0b31216 .
+doc:FactspowerModel schema:name "logarithmic corrosion model" .
+_:e6eb8ac30864e800ffc065bffa5a913b rdf:reifies <<( doc:FactspowerModel schema:name "logarithmic corrosion model" )>> ;
+	prov:wasDerivedFrom doc:9726e0b31216 .
+doc:Factsrow3_3 cd:thickness2008 11.3 .
+_:ee3dc2c512bcf21ff453f25e3cf89610 rdf:reifies <<( doc:Factsrow3_3 cd:thickness2008 11.3 )>> ;
+	prov:wasDerivedFrom doc:9726e0b31216 .
+doc:Factsrow3_3 csvw:rownum 18 .
+_:ff7ff686844af60b3efe85fa651f68dc rdf:reifies <<( doc:Factsrow3_3 csvw:rownum 18 )>> ;
+	prov:wasDerivedFrom doc:9726e0b31216 .
+doc:Factsrow3_3 cd:inspectionPoint 7 .
+_:e5a2a32e7206cf0dd0789d860e2e4ad8 rdf:reifies <<( doc:Factsrow3_3 cd:inspectionPoint 7 )>> ;
+	prov:wasDerivedFrom doc:9726e0b31216 .
+doc:FactscorrosionProcess a obo:BFO_0000019 .
+_:d5cec73af2f9b79ebddc0f784f49c959 rdf:reifies <<( doc:FactscorrosionProcess rdf:type obo:BFO_0000019 )>> ;
+	prov:wasDerivedFrom doc:9726e0b31216 .
+doc:Factsrow3_3 cd:thickness2002 16.1 .
+_:e96bf10ef1d3409adeb479ac44d51dec rdf:reifies <<( doc:Factsrow3_3 cd:thickness2002 16.1 )>> ;
+	prov:wasDerivedFrom doc:9726e0b31216 .
+doc:Factsrow3_3 csvw:rownum 7 .
+_:c34de27780f6aefaab2debb2b20af3b4 rdf:reifies <<( doc:Factsrow3_3 csvw:rownum 7 )>> ;
+	prov:wasDerivedFrom doc:9726e0b31216 .
+doc:FactscorrosionInspectionTable csvw:tableSchema doc:FactsthicknessTable .
+_:adc616adb4169c9b1b0a0c399ae77283 rdf:reifies <<( doc:FactscorrosionInspectionTable csvw:tableSchema doc:FactsthicknessTable )>> ;
+	prov:wasDerivedFrom doc:9726e0b31216 .
+doc:Factsrow3_3 cd:inspectionPoint 18 .
+_:ce7fd48be9c7f5839b1234ba247e1069 rdf:reifies <<( doc:Factsrow3_3 cd:inspectionPoint 18 )>> ;
+	prov:wasDerivedFrom doc:9726e0b31216 .
+doc:Factsrow3_3 cd:thickness2008 15.8 .
+_:f741e0569aa8f39e381fe90ca401a45d rdf:reifies <<( doc:Factsrow3_3 cd:thickness2008 15.8 )>> ;
+	prov:wasDerivedFrom doc:9726e0b31216 .
+doc:Factsrow3_3 cd:thickness2004 "11"^^xsd:decimal .
+_:dd08e88dcf06b3facb887fb082a5c116 rdf:reifies <<( doc:Factsrow3_3 cd:thickness2004 "11"^^xsd:decimal )>> ;
+	prov:wasDerivedFrom doc:9726e0b31216 .
+doc:Factsrow3_3 cd:thickness2004 8.6 .
+_:e1530844616016c62cdb633156d52375 rdf:reifies <<( doc:Factsrow3_3 cd:thickness2004 8.6 )>> ;
+	prov:wasDerivedFrom doc:9726e0b31216 .
+doc:Factsrow3_3 cd:thickness2002 11.3 .
+_:dc52df75bedfd64de79b148009cc0859 rdf:reifies <<( doc:Factsrow3_3 cd:thickness2002 11.3 )>> ;
+	prov:wasDerivedFrom doc:9726e0b31216 .
+doc:Factsrow3_3 cd:thickness2006 8.9 .
+_:d6914440c99ec61160e1e561e596844a rdf:reifies <<( doc:Factsrow3_3 cd:thickness2006 8.9 )>> ;
+	prov:wasDerivedFrom doc:9726e0b31216 .
+doc:Factsrow3_3 csvw:rownum 1 .
+_:b0977fb256de955b83206ae28e33e498 rdf:reifies <<( doc:Factsrow3_3 csvw:rownum 1 )>> ;
+	prov:wasDerivedFrom doc:9726e0b31216 .
+doc:Factsrow3_3 csvw:rownum 23 .
+_:b97876f232f8c958a7bd496b8a21d389 rdf:reifies <<( doc:Factsrow3_3 csvw:rownum 23 )>> ;
+	prov:wasDerivedFrom doc:9726e0b31216 .
+doc:Factsrow3_3 csvw:rownum 17 .
+_:c84a3866ecd13aba0cf3c3bf65e71f91 rdf:reifies <<( doc:Factsrow3_3 csvw:rownum 17 )>> ;
+	prov:wasDerivedFrom doc:9726e0b31216 .
+doc:FactsrulAssessment_1 cco:is_about doc:FactspressureVessel_1 .
+_:dc3516a96d5c2d399626a9e1d10345c7 rdf:reifies <<( doc:FactsrulAssessment_1 cco:is_about doc:FactspressureVessel_1 )>> ;
+	prov:wasDerivedFrom doc:9726e0b31216 .
+doc:Factsrow3_3 csvw:rownum 16 .
+_:a4ef6eebbf1a38cdf64095614ff8cff7 rdf:reifies <<( doc:Factsrow3_3 csvw:rownum 16 )>> ;
+	prov:wasDerivedFrom doc:9726e0b31216 .
+doc:Factsrow3_3 cd:thickness2006 11.5 .
+_:ff2c52034efb9d9ae50d0cdf07b48572 rdf:reifies <<( doc:Factsrow3_3 cd:thickness2006 11.5 )>> ;
+	prov:wasDerivedFrom doc:9726e0b31216 .
+doc:Factsrow3_3 cd:thickness2006 15.5 .
+_:d78b43949ced15fb89db72171b5ffa23 rdf:reifies <<( doc:Factsrow3_3 cd:thickness2006 15.5 )>> ;
+	prov:wasDerivedFrom doc:9726e0b31216 .
+doc:Factsrow3_3 cd:thickness2006 59.4 .
+_:fb7cbeb97e82b75ee5cd4a6dc6cfba7c rdf:reifies <<( doc:Factsrow3_3 cd:thickness2006 59.4 )>> ;
+	prov:wasDerivedFrom doc:9726e0b31216 .
+doc:FactscorrosionInspectionTable rdfs:label "Corrosion inspection thickness table"@en .
+_:d5fc7f1b11c261d5a0bf0c6eca284d75 rdf:reifies <<( doc:FactscorrosionInspectionTable rdfs:label "Corrosion inspection thickness table"@en )>> ;
+	prov:wasDerivedFrom doc:9726e0b31216 .
+doc:Factsrow3_3 cd:thickness2002 9.5 .
+_:c32c4bc9d40a26c532dbeb1522939a5c rdf:reifies <<( doc:Factsrow3_3 cd:thickness2002 9.5 )>> ;
+	prov:wasDerivedFrom doc:9726e0b31216 .
+doc:Factsrow3_3 cd:thickness2006 7.9 .
+_:c394f713dcc42437241c52ff876d8f7 rdf:reifies <<( doc:Factsrow3_3 cd:thickness2006 7.9 )>> ;
+	prov:wasDerivedFrom doc:9726e0b31216 .
+doc:Factsrow3_3 cd:inspectionPoint 17 .
+_:df574abb1d25b2ea738957baaf5e1822 rdf:reifies <<( doc:Factsrow3_3 cd:inspectionPoint 17 )>> ;
+	prov:wasDerivedFrom doc:9726e0b31216 .
+doc:7f940289274f a prov:Entity , schema:text ;
+	prov:generatedAtTime "2026-07-25T01:36:58.564963Z"^^xsd:dateTime ;
+	schema:position 2 ;
+	schema:identifier "7f940289274f" .
+doc:FactsmaximumCorrosionRate schema:unitCode "MM/YR" .
+_:d1efe662d479ef83b80979af6bcca309 rdf:reifies <<( doc:FactsmaximumCorrosionRate schema:unitCode "MM/YR" )>> ;
+	prov:wasDerivedFrom doc:7f940289274f .
+_:e771d49a2247d1fc6fcdf8e35e0a6ea1 rdf:reifies <<( doc:FactspointColumn csvw:name "2004 thickness (mm)" )>> ;
+	prov:wasDerivedFrom doc:7f940289274f .
+_:f7e6834d5f69eb058d6c4730883d16cf prov:wasDerivedFrom doc:7f940289274f .
+doc:FactspowerModel None:has_text_value "Linear" .
+_:e41c246d5b001ca5b9bf625b76a6d803 rdf:reifies <<( doc:FactspowerModel None:has_text_value "Linear" )>> ;
+	prov:wasDerivedFrom doc:7f940289274f .
+doc:FactsinspectionPoint1 a schema:Observation .
+_:e04d11cfd645a1265d0a87ac8e8d3904 rdf:reifies <<( doc:FactsinspectionPoint1 rdf:type schema:Observation )>> ;
+	prov:wasDerivedFrom doc:7f940289274f .
+_:c270319885fdde0e73fb0c4fb2dad18e rdf:reifies <<( doc:FactspointColumn csvw:name "2008 thickness (mm)" )>> ;
+	prov:wasDerivedFrom doc:7f940289274f .
+doc:FactsinspectionPoint1 schema:identifier "2" .
+_:f69f1082b2ed1d1c0e5aba2f60889f10 rdf:reifies <<( doc:FactsinspectionPoint1 schema:identifier "2" )>> ;
+	prov:wasDerivedFrom doc:7f940289274f .
+doc:FactsinspectionPoint1 schema:observationAbout doc:FactspressureVessel_1 .
+_:e7d568cc5758c66ae358be77a5bbaf2f rdf:reifies <<( doc:FactsinspectionPoint1 schema:observationAbout doc:FactspressureVessel_1 )>> ;
+	prov:wasDerivedFrom doc:7f940289274f .
+_:ac69f7f7d74d010787b91782acd21736 prov:wasDerivedFrom doc:7f940289274f .
+doc:FactsinspectionPoint1 schema:value "11.5, 11.4, 11.2, 11.1" .
+_:bb12cddbbb8cc41de69957356a68cfd7 rdf:reifies <<( doc:FactsinspectionPoint1 schema:value "11.5, 11.4, 11.2, 11.1" )>> ;
+	prov:wasDerivedFrom doc:7f940289274f .
+doc:FactsinspectionPoint1 schema:identifier "1" .
+_:d5f7ae88756538570f752ccc419b6462 rdf:reifies <<( doc:FactsinspectionPoint1 schema:identifier "1" )>> ;
+	prov:wasDerivedFrom doc:7f940289274f .
+_:f44473b4108ef43cc2c9d2089fd35b26 prov:wasDerivedFrom doc:7f940289274f .
+doc:FactsmaximumCorrosionRate schema:name "Maximum corrosion rate" .
+_:fbf935777c4ec007bcb0f49c3823fe5d rdf:reifies <<( doc:FactsmaximumCorrosionRate schema:name "Maximum corrosion rate" )>> ;
+	prov:wasDerivedFrom doc:7f940289274f .
+doc:FactspowerModel None:has_text_value "T(t)=T0-CRt" .
+_:c9692712fca8741dacf120ebf88e8d3b rdf:reifies <<( doc:FactspowerModel None:has_text_value "T(t)=T0-CRt" )>> ;
+	prov:wasDerivedFrom doc:7f940289274f .
+_:eedc6ae9f98e5e00a47dd1b8079af9c3 prov:wasDerivedFrom doc:7f940289274f .
+doc:FactspowerModel None:has_text_value "y=aÂ·t^b" .
+_:d0df56d836f7512d65e87ce85839dcb6 rdf:reifies <<( doc:FactspowerModel None:has_text_value "y=aÂ·t^b" )>> ;
+	prov:wasDerivedFrom doc:7f940289274f .
+_:b5e2150cfdbcae75867d4c5c072603da prov:wasDerivedFrom doc:7f940289274f .
+doc:FactsinitialThickness schema:name "Initial thickness" .
+_:ca035597d26b0ccdfdc5e4ab465c0c85 rdf:reifies <<( doc:FactsinitialThickness schema:name "Initial thickness" )>> ;
+	prov:wasDerivedFrom doc:7f940289274f .
+_:c9d40ccc5a4470ea2b34d13e113a88cf prov:wasDerivedFrom doc:7f940289274f .
+doc:FactspowerModel None:describes_type doc:FactspowerModel .
+_:ad15d8664b522824cf497dccfe169a59 rdf:reifies <<( doc:FactspowerModel None:describes_type doc:FactspowerModel )>> ;
+	prov:wasDerivedFrom doc:7f940289274f .
+doc:FactsinitialThickness schema:value 11.5 .
+_:a5af7ca32a9390e0e1a46f92f3a34d00 rdf:reifies <<( doc:FactsinitialThickness schema:value 11.5 )>> ;
+	prov:wasDerivedFrom doc:7f940289274f .
+doc:FactsarticleTitle_107 None:has_text_value "Inspection-based corrosion thickness models" .
+_:a99460819bf5c9bb03fb14b16864be12 rdf:reifies <<( doc:FactsarticleTitle_107 None:has_text_value "Inspection-based corrosion thickness models" )>> ;
+	prov:wasDerivedFrom doc:7f940289274f .
+doc:FactsinspectionPoint1 schema:value "11.9, 11.6, 11.5, 11.4" .
+_:f30d9692b8cd0f8c1981c8c08d308657 rdf:reifies <<( doc:FactsinspectionPoint1 schema:value "11.9, 11.6, 11.5, 11.4" )>> ;
+	prov:wasDerivedFrom doc:7f940289274f .
+doc:FactspowerModel None:has_text_value "Exponential decay" .
+_:e7c424b91fc28cd05aafe117e389d211 rdf:reifies <<( doc:FactspowerModel None:has_text_value "Exponential decay" )>> ;
+	prov:wasDerivedFrom doc:7f940289274f .
+_:c2c21b8e9f119871dcf08aba84afd630 prov:wasDerivedFrom doc:7f940289274f .
+doc:FactsthicknessTable schema:name "Pressure vessel section 1 thickness" .
+_:ac8f5fc78d32560d53f4811890aa0622 rdf:reifies <<( doc:FactsthicknessTable schema:name "Pressure vessel section 1 thickness" )>> ;
+	prov:wasDerivedFrom doc:7f940289274f .
+doc:FactspowerModel None:has_text_value "T(t)=T0e^(-kt)" .
+_:a7407503fd1024c699be1774c2080d38 rdf:reifies <<( doc:FactspowerModel None:has_text_value "T(t)=T0e^(-kt)" )>> ;
+	prov:wasDerivedFrom doc:7f940289274f .
+doc:FactsmaximumCorrosionRate a None:Data_variable .
+_:d2b6d2041d44f643acb8aefc0b3dab79 rdf:reifies <<( doc:FactsmaximumCorrosionRate rdf:type None:Data_variable )>> ;
+	prov:wasDerivedFrom doc:7f940289274f .
+doc:FactspowerModel schema:name "Nonlinear model" .
+_:d32d67c4d538443c206d04e68ea98370 rdf:reifies <<( doc:FactspowerModel schema:name "Nonlinear model" )>> ;
+	prov:wasDerivedFrom doc:7f940289274f .
+_:b4eb336705dfac75ff9299feefe923cc rdf:reifies <<( doc:FactspowerModel schema:name "Linear model" )>> ;
+	prov:wasDerivedFrom doc:7f940289274f .
+doc:FactspressureVessel_1 schema:name "Pressure vessel section 1" .
+_:ecb07cbefaaac1b5e542aeb9883709bf rdf:reifies <<( doc:FactspressureVessel_1 schema:name "Pressure vessel section 1" )>> ;
+	prov:wasDerivedFrom doc:7f940289274f .
+doc:FactspowerModel cco:describes doc:FactspressureVessel_1 .
+_:f098a23708ab2e79e925a24e57da557c rdf:reifies <<( doc:FactspowerModel cco:describes doc:FactspressureVessel_1 )>> ;
+	prov:wasDerivedFrom doc:7f940289274f .
+doc:FactsthicknessTable csvw:tableSchema doc:FactsthicknessTable .
+_:d789f689077fc2e5e20f12dd403aa71f rdf:reifies <<( doc:FactsthicknessTable csvw:tableSchema doc:FactsthicknessTable )>> ;
+	prov:wasDerivedFrom doc:7f940289274f .
+_:df48db45eb02ef48f5bcfc3776045574 prov:wasDerivedFrom doc:7f940289274f .
+doc:FactspowerModel schema:name "Logarithmic model" .
+_:d5287022f67cd539d3b41c452c440afd rdf:reifies <<( doc:FactspowerModel schema:name "Logarithmic model" )>> ;
+	prov:wasDerivedFrom doc:7f940289274f .
+_:b0f79430451c54cade85f1169ef58231 prov:wasDerivedFrom doc:7f940289274f .
+doc:FactspowerModel None:has_text_value "Nonlinear" .
+_:bd69bd5c574dfaa391d06ecea8f120a0 rdf:reifies <<( doc:FactspowerModel None:has_text_value "Nonlinear" )>> ;
+	prov:wasDerivedFrom doc:7f940289274f .
+_:f523a42d250b86713822f495ba036350 prov:wasDerivedFrom doc:7f940289274f .
+_:bf10555d3cd9b3926f96437126bdd314 prov:wasDerivedFrom doc:7f940289274f .
+doc:FactspowerModel schema:name "Power model" .
+_:bf97242fd68eb5f6ea696e77f8a5022 rdf:reifies <<( doc:FactspowerModel schema:name "Power model" )>> ;
+	prov:wasDerivedFrom doc:7f940289274f .
+_:e14f79fb37e58839d6d3747a9515ea10 rdf:reifies <<( doc:FactspointColumn csvw:name "2006 thickness (mm)" )>> ;
+	prov:wasDerivedFrom doc:7f940289274f .
+_:a687cea92b59f8b7a870c91edb49b6db rdf:reifies <<( doc:FactspointColumn csvw:name "Inspection Points" )>> ;
+	prov:wasDerivedFrom doc:7f940289274f .
+doc:FactsinspectionPoint1 schema:identifier "18" .
+_:c66aafb9190eb372787284417326573e rdf:reifies <<( doc:FactsinspectionPoint1 schema:identifier "18" )>> ;
+	prov:wasDerivedFrom doc:7f940289274f .
+doc:FactspowerModel None:has_text_value "y=aÂ·ln(t)+b" .
+_:a22b87cc341ecafdb8d621ae7bf901a rdf:reifies <<( doc:FactspowerModel None:has_text_value "y=aÂ·ln(t)+b" )>> ;
+	prov:wasDerivedFrom doc:7f940289274f .
+_:ca11fd486f8caace1e04f65a2088862 prov:wasDerivedFrom doc:7f940289274f .
+_:e2ae6f66168e36ff3403a7c90af1cce1 rdf:reifies <<( doc:FactspowerModel schema:name "Quadratic model" )>> ;
+	prov:wasDerivedFrom doc:7f940289274f .
+doc:FactspowerModel None:has_text_value "y=aÂ·t^2+bÂ·t+c" .
+_:c9ebbaf25e38ea2e55a2c0a7ebde7bc7 rdf:reifies <<( doc:FactspowerModel None:has_text_value "y=aÂ·t^2+bÂ·t+c" )>> ;
+	prov:wasDerivedFrom doc:7f940289274f .
+doc:FactsinitialThickness schema:unitCode "MM" .
+_:e3f2ef862aa383b4efa451c7e26dde65 rdf:reifies <<( doc:FactsinitialThickness schema:unitCode "MM" )>> ;
+	prov:wasDerivedFrom doc:7f940289274f .
+doc:FactsinspectionPoint1 schema:value "11.6, 11.5, 11.3, 11.3" .
+_:f524b63c58da7f76ed39511689eb162b rdf:reifies <<( doc:FactsinspectionPoint1 schema:value "11.6, 11.5, 11.3, 11.3" )>> ;
+	prov:wasDerivedFrom doc:7f940289274f .
+_:ac7aab22113025a52aa789de304a1937 rdf:reifies <<( doc:FactspointColumn csvw:name "2002 thickness (mm)" )>> ;
+	prov:wasDerivedFrom doc:7f940289274f .
+doc:FactspowerModel a None:Regression .
+_:e82b42bace77d9a5f47de2c15987b077 rdf:reifies <<( doc:FactspowerModel rdf:type None:Regression )>> ;
+	prov:wasDerivedFrom doc:7f940289274f .
+_:efe8022ef87306c9a2e61cbad1a32d4c prov:wasDerivedFrom doc:7f940289274f .
+_:cde403d05b6773d3af44063a4d484d49 rdf:reifies <<( doc:FactspowerModel schema:name "Exponential decay model" )>> ;
+	prov:wasDerivedFrom doc:7f940289274f .
+_:ce3675735c579fab15ba0652de68dcd1 prov:wasDerivedFrom doc:7f940289274f .
+doc:FactsmaximumCorrosionRate schema:name "Average corrosion rate" .
+_:ade79bf9a803360deca2f342af53181a rdf:reifies <<( doc:FactsmaximumCorrosionRate schema:name "Average corrosion rate" )>> ;
+	prov:wasDerivedFrom doc:7f940289274f .

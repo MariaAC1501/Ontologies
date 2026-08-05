@@ -266,6 +266,53 @@ def apply_ontocast(patcher: LocalPatcher) -> None:
         "OpenAI provider requires subscription proxy and rejects direct keys",
     )
 
+    # --- Patch 1c: keep the OpenAI-compatible proxy forward-compatible ---
+    patcher.replace_exact(
+        "ontocast",
+        target("config.py"),
+        'class OpenAIModel(LLMModelNameAbstract):\n    """OpenAI model names."""\n\n    GPT4_O = "gpt-4o"\n    GPT4_O_MINI = "gpt-4o-mini"\n    GPT4_1 = "gpt-41"\n    GPT4_1_MINI = "gpt-41-mini"\n    GPT5 = "gpt-5"\n    GPT5_MINI = "gpt-5-mini"\n    GPT5_NANO = "gpt-5-nano"\n\n\nclass OllamaModel(LLMModelNameAbstract):\n    """Ollama model names."""\n\n    QWEN2_5 = "qwen2.5"\n    QWEN2_5_72B = "qwen2.5:72b"\n    LLAMA3_1 = "llama3.1"\n    LLAMA3_1_70B = "llama3.1:70b"\n    GRANITE3_3_2B = "granite3.3:2b"\n    GRANITE3_3_8B = "granite3.3:8b"\n\n\nLLMModelName = OpenAIModel | OllamaModel\n',
+        'class OpenAIModel(LLMModelNameAbstract):\n    """Known OpenAI model names kept for backwards-compatible defaults."""\n\n    GPT4_O = "gpt-4o"\n    GPT4_O_MINI = "gpt-4o-mini"\n    GPT4_1 = "gpt-4.1"\n    GPT4_1_MINI = "gpt-4.1-mini"\n    GPT4_1_NANO = "gpt-4.1-nano"\n    GPT5 = "gpt-5"\n    GPT5_MINI = "gpt-5-mini"\n    GPT5_NANO = "gpt-5-nano"\n\n\nclass OllamaModel(LLMModelNameAbstract):\n    """Ollama model names."""\n\n    QWEN2_5 = "qwen2.5"\n    QWEN2_5_72B = "qwen2.5:72b"\n    LLAMA3_1 = "llama3.1"\n    LLAMA3_1_70B = "llama3.1:70b"\n    GRANITE3_3_2B = "granite3.3:2b"\n    GRANITE3_3_8B = "granite3.3:8b"\n\n\nLLMModelName = OpenAIModel | OllamaModel\n',
+        "OpenAI model names correct GPT-4.1 and retain extensible IDs",
+    )
+    patcher.replace_exact(
+        "ontocast",
+        target("config.py"),
+        '    model_name: LLMModelName = Field(\n        default=OpenAIModel.GPT4_O_MINI, description="LLM model name"\n    )',
+        '    model_name: str = Field(\n        default=OpenAIModel.GPT4_O_MINI,\n        description=(\n            "LLM model name. OpenAI-compatible providers accept arbitrary model IDs "\n            "so newly released OpenAI models work without a OntoCast update."\n        ),\n    )',
+        "OpenAI model name accepts forward-compatible IDs",
+    )
+    patcher.replace_exact(
+        "ontocast",
+        target("config.py"),
+        '    def validate_model_name(cls, v: LLMModelName, info) -> LLMModelName:',
+        '    def validate_model_name(cls, v: str, info) -> str:',
+        "OpenAI model validator uses string model IDs",
+    )
+    patcher.replace_exact(
+        "ontocast",
+        target("config.py"),
+        '        if provider == LLMProvider.OPENAI and not isinstance(v, OpenAIModel):\n            raise ValueError(\n                f"Model {v} is not compatible with OpenAI provider. Use OpenAIModel values."\n            )\n\n        if provider == LLMProvider.OLLAMA and not isinstance(v, OllamaModel):\n            raise ValueError(\n                f"Model {v} is not compatible with Ollama provider. Use OllamaModel values."\n            )\n\n        return v\n',
+        '        model_name = v.strip()\n        if not model_name:\n            raise ValueError("LLM model name must not be empty.")\n\n        # The local proxy is OpenAI-compatible and forwards the model ID to Pi.\n        # Do not enumerate OpenAI IDs here: doing so would reject newly released\n        # models (for example gpt-5.4-mini) until OntoCast itself is updated.\n        if provider == LLMProvider.OPENAI:\n            return model_name\n\n        if (\n            provider == LLMProvider.OLLAMA\n            and model_name not in OllamaModel._value2member_map_\n        ):\n            raise ValueError(\n                f"Model {model_name} is not compatible with Ollama provider. "\n                "Use OllamaModel values."\n            )\n\n        return model_name\n',
+        "OpenAI model validation passes through new model IDs",
+    )
+    patcher.replace_any_exact(
+        "ontocast",
+        submodule / ".env.example",
+        (
+            "# Available OpenAI models: gpt-4o, gpt-4o-mini etc",
+            "# Any OpenAI-compatible model ID works (e.g., gpt-4.1, gpt-5.4-mini).",
+        ),
+        "# Any OpenAI-compatible model ID works (e.g., gpt-4.1, gpt-5.6-luna).",
+        "OpenAI environment example documents forward-compatible model IDs",
+    )
+    patcher.replace_exact(
+        "ontocast",
+        submodule / "test" / "conftest.py",
+        '    return OpenAIModel(os.getenv("LLM_MODEL_NAME", OpenAIModel.GPT4_O_MINI))',
+        '    return os.getenv("LLM_MODEL_NAME", OpenAIModel.GPT4_O_MINI)',
+        "test model fixture accepts newly released OpenAI model IDs",
+    )
+
     patcher.replace_exact(
         "ontocast",
         target("tool/llm.py"),

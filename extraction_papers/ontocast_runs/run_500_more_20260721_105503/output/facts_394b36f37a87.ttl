@@ -1,0 +1,439 @@
+@prefix None: <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD/seed#> .
+@prefix cco: <http://www.ontologyrepository.com/CommonCoreOntologies/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doc: <https://growgraph.dev/doc/394b36f37a87/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix obo: <http://purl.obolibrary.org/obo/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix cd: <https://growgraph.dev/facts> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix schema: <https://schema.org/> .
+@prefix schema1: <http://schema.org/> .
+doc:1d33d36d25d0 a prov:Entity , schema:text ;
+	prov:generatedAtTime "2026-07-22T01:25:56.662261Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+	schema:position 0 ;
+	schema:identifier "1d33d36d25d0" .
+doc:Factsresult2_6 schema1:value "lowest misclassification cost" .
+_:aebf5bd4b7986cac7b379064c954dd3c rdf:reifies <<( doc:Factsresult2_6 schema1:value "lowest misclassification cost" )>> ;
+	prov:wasDerivedFrom doc:1d33d36d25d0 .
+doc:Factsresult2_6 schema1:about doc:Factsmlp .
+_:d57adf74d9a604cda4d9dcad077e47b8 rdf:reifies <<( doc:Factsresult2_6 schema1:about doc:Factsmlp )>> ;
+	prov:wasDerivedFrom doc:1d33d36d25d0 .
+doc:Factsstudy1_16 schema1:keywords "fault detection" .
+_:ae2cfc1b2382b33b751dc1797e2b8540 rdf:reifies <<( doc:Factsstudy1_16 schema1:keywords "fault detection" )>> ;
+	prov:wasDerivedFrom doc:1d33d36d25d0 .
+doc:Factsresult2_6 schema1:measurementTechnique "F1-score" .
+_:b4049b720282c8c10427ac7fc12c5efa rdf:reifies <<( doc:Factsresult2_6 schema1:measurementTechnique "F1-score" )>> ;
+	prov:wasDerivedFrom doc:1d33d36d25d0 .
+doc:Factsresult2_6 schema1:measurementTechnique "testing accuracy" .
+_:f31a33aeb28700279631488db5c50c9c rdf:reifies <<( doc:Factsresult2_6 schema1:measurementTechnique "testing accuracy" )>> ;
+	prov:wasDerivedFrom doc:1d33d36d25d0 .
+doc:Factsmlp a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Predictive_maintenance_model> .
+_:ec36174dc922f477c6b55598fa26f970 rdf:reifies <<( doc:Factsmlp rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Predictive_maintenance_model> )>> ;
+	prov:wasDerivedFrom doc:1d33d36d25d0 .
+doc:Factsid1_43 a None:Article_identifier .
+_:d2023937a6073a2c833ea93a369beece rdf:reifies <<( doc:Factsid1_43 rdf:type None:Article_identifier )>> ;
+	prov:wasDerivedFrom doc:1d33d36d25d0 .
+doc:Factsdataset1_10 schema1:name "Case Western Reserve University (CWRU) dataset" .
+_:d1ded20c87b917007114413dc9ff29a0 rdf:reifies <<( doc:Factsdataset1_10 schema1:name "Case Western Reserve University (CWRU) dataset" )>> ;
+	prov:wasDerivedFrom doc:1d33d36d25d0 .
+doc:Factsarticle1_86 None:has_identifier doc:Factsid1_43 .
+_:d3d6651eea6f5d320d2947870117f957 rdf:reifies <<( doc:Factsarticle1_86 None:has_identifier doc:Factsid1_43 )>> ;
+	prov:wasDerivedFrom doc:1d33d36d25d0 .
+doc:Factsjournal1_4 schema1:url <http://iieta.org/journals/jesa> .
+_:d072cbc2dc86cfbeeed832ccec6c44b3 rdf:reifies <<( doc:Factsjournal1_4 schema1:url <http://iieta.org/journals/jesa> )>> ;
+	prov:wasDerivedFrom doc:1d33d36d25d0 .
+doc:Factsmlp schema1:name "automatically optimized neural network (ONN)" .
+_:f04a1c1577463c8002f992cccbff4751 rdf:reifies <<( doc:Factsmlp schema1:name "automatically optimized neural network (ONN)" )>> ;
+	prov:wasDerivedFrom doc:1d33d36d25d0 .
+doc:Factsresult2_6 a schema1:Observation .
+_:f55378486a32b9b85cee1009ebb71d28 rdf:reifies <<( doc:Factsresult2_6 rdf:type schema1:Observation )>> ;
+	prov:wasDerivedFrom doc:1d33d36d25d0 .
+doc:Factsdataset1_10 a schema1:Dataset .
+_:a8f9d7a1bee0367bcf9b7b2a953ba737 rdf:reifies <<( doc:Factsdataset1_10 rdf:type schema1:Dataset )>> ;
+	prov:wasDerivedFrom doc:1d33d36d25d0 .
+doc:Factsstudy1_16 schema1:about doc:Factsmlp .
+_:de501bad7cb4f56c5d0c34f5d933f1ee rdf:reifies <<( doc:Factsstudy1_16 schema1:about doc:Factsmlp )>> ;
+	prov:wasDerivedFrom doc:1d33d36d25d0 .
+doc:Factsmethod1_19 schema1:name "vibration signal acquisition, feature extraction, and dataset preparation" .
+_:f4897ca96db8df3a511f667735fa5df1 rdf:reifies <<( doc:Factsmethod1_19 schema1:name "vibration signal acquisition, feature extraction, and dataset preparation" )>> ;
+	prov:wasDerivedFrom doc:1d33d36d25d0 .
+doc:Factsimplication1 a schema1:Statement .
+_:b60766bce0d5596fb6cd9e229eeddbfe rdf:reifies <<( doc:Factsimplication1 rdf:type schema1:Statement )>> ;
+	prov:wasDerivedFrom doc:1d33d36d25d0 .
+doc:Factsarticle1_86 schema1:name "Robust Bearing Fault Detection and Classification Using Deep Neural Networks: A Comprehensive Study on the CWRU Dataset" .
+_:bbcc35b0e054dcc41894e98198553b86 rdf:reifies <<( doc:Factsarticle1_86 schema1:name "Robust Bearing Fault Detection and Classification Using Deep Neural Networks: A Comprehensive Study on the CWRU Dataset" )>> ;
+	prov:wasDerivedFrom doc:1d33d36d25d0 .
+doc:Factsid1_43 a None:Article_title .
+_:c5a0d2c1ec43fb4ca3eae39e698a8db1 rdf:reifies <<( doc:Factsid1_43 rdf:type None:Article_title )>> ;
+	prov:wasDerivedFrom doc:1d33d36d25d0 .
+doc:Factsstudy1_16 schema1:about doc:Factsdataset1_10 .
+_:cc352eb96fc65d8c022f95acd6b3a17a rdf:reifies <<( doc:Factsstudy1_16 schema1:about doc:Factsdataset1_10 )>> ;
+	prov:wasDerivedFrom doc:1d33d36d25d0 .
+doc:Factsstudy1_16 a schema1:MedicalStudy .
+_:d1e8c769819f6d13d52f672f3f0ca637 rdf:reifies <<( doc:Factsstudy1_16 rdf:type schema1:MedicalStudy )>> ;
+	prov:wasDerivedFrom doc:1d33d36d25d0 .
+doc:Factsmlp schema1:additionalType "Bayesian optimization" .
+_:b0449f2b1db834ade5291073caaa2c5c rdf:reifies <<( doc:Factsmlp schema1:additionalType "Bayesian optimization" )>> ;
+	prov:wasDerivedFrom doc:1d33d36d25d0 .
+doc:Factsworkflow schema1:name "bearing fault detection" .
+_:f598f8048fdf3053184b9f2c9e2bf2d3 rdf:reifies <<( doc:Factsworkflow schema1:name "bearing fault detection" )>> ;
+	prov:wasDerivedFrom doc:1d33d36d25d0 .
+doc:Factsimplication1 schema1:text "supports predictive maintenance and reliability enhancement" .
+_:e52b0297c2100b7b5a6182ad85acf54d rdf:reifies <<( doc:Factsimplication1 schema1:text "supports predictive maintenance and reliability enhancement" )>> ;
+	prov:wasDerivedFrom doc:1d33d36d25d0 .
+doc:Factsarticle1_86 dcterms:title "Robust Bearing Fault Detection and Classification Using Deep Neural Networks: A Comprehensive Study on the CWRU Dataset" .
+_:bed7dbbbf4b3434ad30b23f94b9d8134 rdf:reifies <<( doc:Factsarticle1_86 dcterms:title "Robust Bearing Fault Detection and Classification Using Deep Neural Networks: A Comprehensive Study on the CWRU Dataset" )>> ;
+	prov:wasDerivedFrom doc:1d33d36d25d0 .
+doc:Factsyear2025_19 None:has_interger_value 2025 .
+_:cbe234195fc192ad889cca45279e454d rdf:reifies <<( doc:Factsyear2025_19 None:has_interger_value 2025 )>> ;
+	prov:wasDerivedFrom doc:1d33d36d25d0 .
+doc:Factsstudy1_16 schema1:keywords "bearing faults" .
+_:e365b3b50734bcfd00ffb14929ecf182 rdf:reifies <<( doc:Factsstudy1_16 schema1:keywords "bearing faults" )>> ;
+	prov:wasDerivedFrom doc:1d33d36d25d0 .
+doc:Factsid1_43 cco:designates doc:Factsarticle1_86 .
+_:a2255651fccb54e1c4389606af4d4be5 rdf:reifies <<( doc:Factsid1_43 cco:designates doc:Factsarticle1_86 )>> ;
+	prov:wasDerivedFrom doc:1d33d36d25d0 .
+doc:Factsid1_43 schema1:name "Robust Bearing Fault Detection and Classification Using Deep Neural Networks: A Comprehensive Study on the CWRU Dataset" .
+_:ef067c2ca94e423f52d03e9c39e3e00b rdf:reifies <<( doc:Factsid1_43 schema1:name "Robust Bearing Fault Detection and Classification Using Deep Neural Networks: A Comprehensive Study on the CWRU Dataset" )>> ;
+	prov:wasDerivedFrom doc:1d33d36d25d0 .
+doc:Factsmlp schema1:additionalType "cross-validation" .
+_:d653f03280dacc8bb87d25646876e09d rdf:reifies <<( doc:Factsmlp schema1:additionalType "cross-validation" )>> ;
+	prov:wasDerivedFrom doc:1d33d36d25d0 .
+doc:Factsworkflow a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Fault_detection> .
+_:d3c636dc178e9007cd8a40c33959ff6c rdf:reifies <<( doc:Factsworkflow rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Fault_detection> )>> ;
+	prov:wasDerivedFrom doc:1d33d36d25d0 .
+doc:Factsbearing1_5 schema1:name "rotating machinery" .
+_:df1981ea6c207d967efda4df3456acaa rdf:reifies <<( doc:Factsbearing1_5 schema1:name "rotating machinery" )>> ;
+	prov:wasDerivedFrom doc:1d33d36d25d0 .
+doc:Factsarticle1_86 None:has_title doc:Factsid1_43 .
+_:e250b4f25eb08b779867485a8a4cdab5 rdf:reifies <<( doc:Factsarticle1_86 None:has_title doc:Factsid1_43 )>> ;
+	prov:wasDerivedFrom doc:1d33d36d25d0 .
+doc:Factsarticle1_86 None:has_publication_year doc:Factsyear2025_19 .
+_:f2ce0b8530b391046a29d9dc49e3ffe9 rdf:reifies <<( doc:Factsarticle1_86 None:has_publication_year doc:Factsyear2025_19 )>> ;
+	prov:wasDerivedFrom doc:1d33d36d25d0 .
+doc:Factsid1_43 schema1:identifier "10.18280/jesa.581120" .
+_:e82998890a3c8650e7c56b14c2454c3a rdf:reifies <<( doc:Factsid1_43 schema1:identifier "10.18280/jesa.581120" )>> ;
+	prov:wasDerivedFrom doc:1d33d36d25d0 .
+doc:Factsstudy1_16 schema1:keywords "artificial intelligence" .
+_:fd3193126a484b77ca488b7eba4212d9 rdf:reifies <<( doc:Factsstudy1_16 schema1:keywords "artificial intelligence" )>> ;
+	prov:wasDerivedFrom doc:1d33d36d25d0 .
+doc:Factsjournal1_4 a schema1:Periodical .
+_:d80e99961c58d4401d1892e265de8cdf rdf:reifies <<( doc:Factsjournal1_4 rdf:type schema1:Periodical )>> ;
+	prov:wasDerivedFrom doc:1d33d36d25d0 .
+doc:Factsresult2_6 schema1:value "92% to 95%" .
+_:d19a0661c8d617330d236092b471f325 rdf:reifies <<( doc:Factsresult2_6 schema1:value "92% to 95%" )>> ;
+	prov:wasDerivedFrom doc:1d33d36d25d0 .
+doc:Factsimplication1 schema1:about doc:Factsbearing1_5 .
+_:ea7a963dc97d4f1bd2d63142520271f8 rdf:reifies <<( doc:Factsimplication1 schema1:about doc:Factsbearing1_5 )>> ;
+	prov:wasDerivedFrom doc:1d33d36d25d0 .
+doc:Factsbearing1_5 a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Maintainable_item> .
+_:dcf5f31e5209cf3200f08a630653d2e9 rdf:reifies <<( doc:Factsbearing1_5 rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Maintainable_item> )>> ;
+	prov:wasDerivedFrom doc:1d33d36d25d0 .
+doc:Factsmlp schema1:additionalType "Artificial Neural Network" .
+_:f1eae34d3af0db1460544857f163c321 rdf:reifies <<( doc:Factsmlp schema1:additionalType "Artificial Neural Network" )>> ;
+	prov:wasDerivedFrom doc:1d33d36d25d0 .
+doc:Factsstudy1_16 schema1:about doc:Factsworkflow .
+_:d49ffa9145e75c0b4f0170489dbf64ac rdf:reifies <<( doc:Factsstudy1_16 schema1:about doc:Factsworkflow )>> ;
+	prov:wasDerivedFrom doc:1d33d36d25d0 .
+doc:Factsarticle1_86 schema1:isPartOf doc:Factsjournal1_4 .
+_:ed8073851562b4292b704640218755c7 rdf:reifies <<( doc:Factsarticle1_86 schema1:isPartOf doc:Factsjournal1_4 )>> ;
+	prov:wasDerivedFrom doc:1d33d36d25d0 .
+doc:Factsarticle1_86 a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Predictive_maintenance_model> .
+_:e6eb388c78ce26fc7af5620912c06c36 rdf:reifies <<( doc:Factsarticle1_86 rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Predictive_maintenance_model> )>> ;
+	prov:wasDerivedFrom doc:1d33d36d25d0 .
+doc:Factsstudy1_16 schema1:name "bearing fault diagnosis study" .
+_:a7e121c36760a2cbd08a64e4963baad0 rdf:reifies <<( doc:Factsstudy1_16 schema1:name "bearing fault diagnosis study" )>> ;
+	prov:wasDerivedFrom doc:1d33d36d25d0 .
+doc:Factsstudy1_16 schema1:keywords "rotating machines" .
+_:fe21532328ff7bc0929102a36d823758 rdf:reifies <<( doc:Factsstudy1_16 schema1:keywords "rotating machines" )>> ;
+	prov:wasDerivedFrom doc:1d33d36d25d0 .
+doc:Factsresult2_6 schema1:value "0.99" .
+_:cd3588f42e9918b5961932bb41ccb484 rdf:reifies <<( doc:Factsresult2_6 schema1:value "0.99" )>> ;
+	prov:wasDerivedFrom doc:1d33d36d25d0 .
+doc:Factsbearing1_5 schema1:additionalType "bearing" .
+_:bfa0b95a68614158a40e66971bb72676 rdf:reifies <<( doc:Factsbearing1_5 schema1:additionalType "bearing" )>> ;
+	prov:wasDerivedFrom doc:1d33d36d25d0 .
+doc:Factsmethod1_19 a schema1:HowTo .
+_:feb50f8fdc1a058b4f857f60f18486a7 rdf:reifies <<( doc:Factsmethod1_19 rdf:type schema1:HowTo )>> ;
+	prov:wasDerivedFrom doc:1d33d36d25d0 .
+doc:Factsarticle1_86 schema1:datePublished "2025-11-30"^^<http://www.w3.org/2001/XMLSchema#date> .
+_:ee70a8242ffa6eb91baafd16cb810df0 rdf:reifies <<( doc:Factsarticle1_86 schema1:datePublished "2025-11-30"^^<http://www.w3.org/2001/XMLSchema#date> )>> ;
+	prov:wasDerivedFrom doc:1d33d36d25d0 .
+doc:Factsyear2025_19 a None:Publication_year .
+_:eec950ebe353303d5cd70482a6d48dbd rdf:reifies <<( doc:Factsyear2025_19 rdf:type None:Publication_year )>> ;
+	prov:wasDerivedFrom doc:1d33d36d25d0 .
+doc:Factsresult2_6 schema1:value "98.6%" .
+_:b17498f126e9c612b2161fdfd32fe19d rdf:reifies <<( doc:Factsresult2_6 schema1:value "98.6%" )>> ;
+	prov:wasDerivedFrom doc:1d33d36d25d0 .
+doc:Factsjournal1_4 schema1:name "Journal EuropÃ©en des SystÃ¨mes AutomatisÃ©s" .
+_:c3abf80601bb3887ce508dcc3aae90e3 rdf:reifies <<( doc:Factsjournal1_4 schema1:name "Journal EuropÃ©en des SystÃ¨mes AutomatisÃ©s" )>> ;
+	prov:wasDerivedFrom doc:1d33d36d25d0 .
+doc:Factsmethod1_19 schema1:about doc:Factsdataset1_10 .
+_:c25564f39a480dc55b59faca9da7bfb7 rdf:reifies <<( doc:Factsmethod1_19 schema1:about doc:Factsdataset1_10 )>> ;
+	prov:wasDerivedFrom doc:1d33d36d25d0 .
+doc:Factsstudy1_16 schema1:keywords "neural networks" .
+_:a357b0ca4a31ae8c87a98465ad744aa4 rdf:reifies <<( doc:Factsstudy1_16 schema1:keywords "neural networks" )>> ;
+	prov:wasDerivedFrom doc:1d33d36d25d0 .
+doc:Factsresult2_6 schema1:measurementTechnique "baseline accuracies of predefined ANN architectures" .
+_:e048c82d3afbbf5be0197bfdbeb811f7 rdf:reifies <<( doc:Factsresult2_6 schema1:measurementTechnique "baseline accuracies of predefined ANN architectures" )>> ;
+	prov:wasDerivedFrom doc:1d33d36d25d0 .
+doc:e5f5087a1fbb a prov:Entity , schema:text ;
+	prov:generatedAtTime "2026-07-22T01:25:56.666259Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+	schema:position 1 ;
+	schema:identifier "e5f5087a1fbb" .
+doc:Factsrotating_machinery1 a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Maintainable_item> .
+_:bc6240d43e82ee5525800cd8ca9d49c9 rdf:reifies <<( doc:Factsrotating_machinery1 rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Maintainable_item> )>> ;
+	prov:wasDerivedFrom doc:e5f5087a1fbb .
+doc:Factsworkflow cd:mentions doc:Factsdiagnostic_accuracy1 .
+_:e095823eb48074000ed298ef801b6f1c rdf:reifies <<( doc:Factsworkflow cd:mentions doc:Factsdiagnostic_accuracy1 )>> ;
+	prov:wasDerivedFrom doc:e5f5087a1fbb .
+doc:Factsworkflow cd:mentions doc:Factsrotating_machinery1 .
+_:c169aaa62de4b4607b657ce545ecb96e rdf:reifies <<( doc:Factsworkflow cd:mentions doc:Factsrotating_machinery1 )>> ;
+	prov:wasDerivedFrom doc:e5f5087a1fbb .
+doc:Factsworkflow cd:mentions doc:Factsindustrial_applications1 .
+_:f38fea008b539a7a2d5f380f5f55d667 rdf:reifies <<( doc:Factsworkflow cd:mentions doc:Factsindustrial_applications1 )>> ;
+	prov:wasDerivedFrom doc:e5f5087a1fbb .
+doc:Factsworkflow cd:mentions doc:Factsmlp .
+_:a2c063d24235bc35a848965850c89199 rdf:reifies <<( doc:Factsworkflow cd:mentions doc:Factsmlp )>> ;
+	prov:wasDerivedFrom doc:e5f5087a1fbb .
+_:dcf5f31e5209cf3200f08a630653d2e9 prov:wasDerivedFrom doc:e5f5087a1fbb .
+doc:Factsfeature_extraction1_2 rdfs:label "systematic feature extraction"@en .
+_:a43a7d197813bd78f2ef724dd34bc3bc rdf:reifies <<( doc:Factsfeature_extraction1_2 rdfs:label "systematic feature extraction"@en )>> ;
+	prov:wasDerivedFrom doc:e5f5087a1fbb .
+doc:Factsdiagnostic_accuracy1 rdfs:label "operational reliability"@en .
+_:c964e44bf1a3023e6a2d5ef7c2ef88fe rdf:reifies <<( doc:Factsdiagnostic_accuracy1 rdfs:label "operational reliability"@en )>> ;
+	prov:wasDerivedFrom doc:e5f5087a1fbb .
+_:d3c636dc178e9007cd8a40c33959ff6c prov:wasDerivedFrom doc:e5f5087a1fbb .
+doc:Factsrotating_machinery1 rdfs:label "rotating machinery"@en .
+_:f4e5756f637797dae95a389efbc19bab rdf:reifies <<( doc:Factsrotating_machinery1 rdfs:label "rotating machinery"@en )>> ;
+	prov:wasDerivedFrom doc:e5f5087a1fbb .
+doc:Factsdataset1_10 cd:abbreviation "CWRU"@en .
+_:bf0409ab28f35c74ebcf2b2aae3460f rdf:reifies <<( doc:Factsdataset1_10 cd:abbreviation "CWRU"@en )>> ;
+	prov:wasDerivedFrom doc:e5f5087a1fbb .
+doc:Factsworkflow a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Predictive_Maintenance_Article> .
+_:f848c377d20938b955bf193bcba9af4a rdf:reifies <<( doc:Factsworkflow rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Predictive_Maintenance_Article> )>> ;
+	prov:wasDerivedFrom doc:e5f5087a1fbb .
+doc:Factsfeature_extraction1_2 cco:describes doc:FactsvibrationSignals_3 .
+_:b712013e34bd392d20f9fbf05e9f76cd rdf:reifies <<( doc:Factsfeature_extraction1_2 cco:describes doc:FactsvibrationSignals_3 )>> ;
+	prov:wasDerivedFrom doc:e5f5087a1fbb .
+doc:Factsmlp cco:designates doc:Factsmlp .
+_:d50271ec7e28253a737c1c50a9fdc4d2 rdf:reifies <<( doc:Factsmlp cco:designates doc:Factsmlp )>> ;
+	prov:wasDerivedFrom doc:e5f5087a1fbb .
+doc:Factsmlp cd:abbreviation "MLP"@en .
+_:e67edf27f8a8747dcbaa89728470cc27 rdf:reifies <<( doc:Factsmlp cd:abbreviation "MLP"@en )>> ;
+	prov:wasDerivedFrom doc:e5f5087a1fbb .
+doc:Factsworkflow rdfs:label "bearing fault detection"@en .
+_:f4f45c54932c050118806c1f4d64b91f rdf:reifies <<( doc:Factsworkflow rdfs:label "bearing fault detection"@en )>> ;
+	prov:wasDerivedFrom doc:e5f5087a1fbb .
+doc:Factsrotating_machinery1 cd:has_part doc:Factsbearing1_5 .
+_:d352597a8544050896c454e4ba0d88cc rdf:reifies <<( doc:Factsrotating_machinery1 cd:has_part doc:Factsbearing1_5 )>> ;
+	prov:wasDerivedFrom doc:e5f5087a1fbb .
+doc:Factsworkflow cd:mentions doc:Factsdataset1_10 .
+_:bf40c350ec50ed05cd74183ff2d687f9 rdf:reifies <<( doc:Factsworkflow cd:mentions doc:Factsdataset1_10 )>> ;
+	prov:wasDerivedFrom doc:e5f5087a1fbb .
+doc:Factsmlp rdfs:label "predictive maintenance"@en .
+_:f93be85c75126a50067002797ea4f219 rdf:reifies <<( doc:Factsmlp rdfs:label "predictive maintenance"@en )>> ;
+	prov:wasDerivedFrom doc:e5f5087a1fbb .
+doc:Factsdataset1_10 rdfs:label "Case Western Reserve University dataset"@en .
+_:e41d167bb89b16edb8bdad370bcb8b8e rdf:reifies <<( doc:Factsdataset1_10 rdfs:label "Case Western Reserve University dataset"@en )>> ;
+	prov:wasDerivedFrom doc:e5f5087a1fbb .
+doc:Factsmlp rdfs:label "Multilayer Perceptron"@en .
+_:a36084b18015df57bc1d8da0abecd7c9 rdf:reifies <<( doc:Factsmlp rdfs:label "Multilayer Perceptron"@en )>> ;
+	prov:wasDerivedFrom doc:e5f5087a1fbb .
+doc:Factsdataset1_10 a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#maintainable_item_record> .
+_:d6f269470987e3b1b1d4545676e1bb76 rdf:reifies <<( doc:Factsdataset1_10 rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#maintainable_item_record> )>> ;
+	prov:wasDerivedFrom doc:e5f5087a1fbb .
+doc:Factsindustrial_applications1 rdfs:label "industrial applications"@en .
+_:d63906a703c0754e3fa5179ba863c8d2 rdf:reifies <<( doc:Factsindustrial_applications1 rdfs:label "industrial applications"@en )>> ;
+	prov:wasDerivedFrom doc:e5f5087a1fbb .
+doc:Factsdiagnostic_accuracy1 cco:is_about doc:Factsmlp .
+_:f3390a19651e12f63058f7a2b2309837 rdf:reifies <<( doc:Factsdiagnostic_accuracy1 cco:is_about doc:Factsmlp )>> ;
+	prov:wasDerivedFrom doc:e5f5087a1fbb .
+doc:Factsmlp a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Predictive_maintenance_system_module> .
+_:e493f2e2013efd66f2176ab777a6539b rdf:reifies <<( doc:Factsmlp rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Predictive_maintenance_system_module> )>> ;
+	prov:wasDerivedFrom doc:e5f5087a1fbb .
+doc:Factsworkflow cd:mentions doc:Factsfeature_extraction1_2 .
+_:ef51fd770bfee02afcb295591400c3ba rdf:reifies <<( doc:Factsworkflow cd:mentions doc:Factsfeature_extraction1_2 )>> ;
+	prov:wasDerivedFrom doc:e5f5087a1fbb .
+doc:Factsdiagnostic_accuracy1 rdfs:label "diagnostic accuracy"@en .
+_:f8fcd7bb4ea5fb8fc5a2126af6e8d6cd rdf:reifies <<( doc:Factsdiagnostic_accuracy1 rdfs:label "diagnostic accuracy"@en )>> ;
+	prov:wasDerivedFrom doc:e5f5087a1fbb .
+_:ec36174dc922f477c6b55598fa26f970 prov:wasDerivedFrom doc:e5f5087a1fbb .
+doc:Factsworkflow cd:mentions doc:Factsworkflow .
+_:d99e02645634f79d78df4faea4ad7b5b rdf:reifies <<( doc:Factsworkflow cd:mentions doc:Factsworkflow )>> ;
+	prov:wasDerivedFrom doc:e5f5087a1fbb .
+doc:Factsbearing1_5 rdfs:label "bearing"@en .
+_:ebed2fa43dc2b4abda7847fe16e62ab6 rdf:reifies <<( doc:Factsbearing1_5 rdfs:label "bearing"@en )>> ;
+	prov:wasDerivedFrom doc:e5f5087a1fbb .
+doc:FactsvibrationSignals_3 rdfs:label "vibration signals"@en .
+_:a52c07758dcf3cb7a3446c4c4e35f9df rdf:reifies <<( doc:FactsvibrationSignals_3 rdfs:label "vibration signals"@en )>> ;
+	prov:wasDerivedFrom doc:e5f5087a1fbb .
+doc:Factsfeature_extraction1_2 a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Data_variable> .
+_:d63d0ddf0d3a7d36cc200b985bc8a261 rdf:reifies <<( doc:Factsfeature_extraction1_2 rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Data_variable> )>> ;
+	prov:wasDerivedFrom doc:e5f5087a1fbb .
+doc:FactsvibrationSignals_3 a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Data_variable> .
+_:ab125bf4e32cc86ff2bbbec79fa35765 rdf:reifies <<( doc:FactsvibrationSignals_3 rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Data_variable> )>> ;
+	prov:wasDerivedFrom doc:e5f5087a1fbb .
+doc:Factsworkflow rdfs:label "paper on MLP bearing fault detection"@en .
+_:cbcda18903b74ab40520b6188448b1b9 rdf:reifies <<( doc:Factsworkflow rdfs:label "paper on MLP bearing fault detection"@en )>> ;
+	prov:wasDerivedFrom doc:e5f5087a1fbb .
+doc:Factsdiagnostic_accuracy1 a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Performance_indicator> .
+_:f8bb917e41a2a1eb85c686d69cd82781 rdf:reifies <<( doc:Factsdiagnostic_accuracy1 rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Performance_indicator> )>> ;
+	prov:wasDerivedFrom doc:e5f5087a1fbb .
+doc:Factsindustrial_applications1 a schema1:Thing .
+_:cbdb1fcd56612ec51e169d18a918d1bc rdf:reifies <<( doc:Factsindustrial_applications1 rdf:type schema1:Thing )>> ;
+	prov:wasDerivedFrom doc:e5f5087a1fbb .
+doc:Factsworkflow cco:is_about doc:Factsrotating_machinery1 .
+_:fc9c746a8d5210321c7dde75cc65b132 rdf:reifies <<( doc:Factsworkflow cco:is_about doc:Factsrotating_machinery1 )>> ;
+	prov:wasDerivedFrom doc:e5f5087a1fbb .
+doc:Factsmlp obo:RO_0000085 <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Fault_detection> .
+_:a61cad71deb4a20871b6e4e020193ba rdf:reifies <<( doc:Factsmlp obo:RO_0000085 <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Fault_detection> )>> ;
+	prov:wasDerivedFrom doc:e5f5087a1fbb .
+doc:Factsworkflow cd:mentions doc:FactsvibrationSignals_3 .
+_:fe9f16cf068c465a1cd0f2d2665ec6c8 rdf:reifies <<( doc:Factsworkflow cd:mentions doc:FactsvibrationSignals_3 )>> ;
+	prov:wasDerivedFrom doc:e5f5087a1fbb .
+doc:758acecb1388 a prov:Entity , schema:text ;
+	prov:generatedAtTime "2026-07-22T01:25:56.668259Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+	schema:position 2 ;
+	schema:identifier "758acecb1388" .
+_:ec36174dc922f477c6b55598fa26f970 prov:wasDerivedFrom doc:758acecb1388 .
+doc:FactsfaultyState rdfs:label "healthy bearing condition"@en .
+_:a53c7fddeb1713ce440636e7af4d9f7c rdf:reifies <<( doc:FactsfaultyState rdfs:label "healthy bearing condition"@en )>> ;
+	prov:wasDerivedFrom doc:758acecb1388 .
+doc:Factsmlp rdfs:label "Artificial Neural Networks"@en .
+_:decd9f551bdd50db735c01ff259e7259 rdf:reifies <<( doc:Factsmlp rdfs:label "Artificial Neural Networks"@en )>> ;
+	prov:wasDerivedFrom doc:758acecb1388 .
+doc:FactsrawDataFeatures a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Data_variable> .
+_:ee577ae518d9b53ba6398f18f4b02be5 rdf:reifies <<( doc:FactsrawDataFeatures rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Data_variable> )>> ;
+	prov:wasDerivedFrom doc:758acecb1388 .
+doc:Factsworkflow a None:Design_detail .
+_:cf6d2a6d1931d3afa41d63a888e22b0a rdf:reifies <<( doc:Factsworkflow rdf:type None:Design_detail )>> ;
+	prov:wasDerivedFrom doc:758acecb1388 .
+doc:Factsworkflow a None:Association_discovery .
+_:af6360523a268b02e1c5c2722ae7de07 rdf:reifies <<( doc:Factsworkflow rdf:type None:Association_discovery )>> ;
+	prov:wasDerivedFrom doc:758acecb1388 .
+doc:Factsworkflow rdfs:label "bearing fault diagnosis workflow"@en .
+_:a77671f52224748330170e18338bdaa rdf:reifies <<( doc:Factsworkflow rdfs:label "bearing fault diagnosis workflow"@en )>> ;
+	prov:wasDerivedFrom doc:758acecb1388 .
+doc:Factsworkflow a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Predictive_maintenance_model> .
+_:f9e21091f3d0cf35f1872e019fe4a6b5 rdf:reifies <<( doc:Factsworkflow rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Predictive_maintenance_model> )>> ;
+	prov:wasDerivedFrom doc:758acecb1388 .
+doc:Factsvalidation rdfs:label "validation"@en .
+_:e0022083353e7baea6d7c15d8a5503ed rdf:reifies <<( doc:Factsvalidation rdfs:label "validation"@en )>> ;
+	prov:wasDerivedFrom doc:758acecb1388 .
+_:ab125bf4e32cc86ff2bbbec79fa35765 prov:wasDerivedFrom doc:758acecb1388 .
+_:d3c636dc178e9007cd8a40c33959ff6c prov:wasDerivedFrom doc:758acecb1388 .
+doc:FactsexperimentSetup a cco:Artifact .
+_:c0e9dc060ee8a072f877dca253866a6a rdf:reifies <<( doc:FactsexperimentSetup rdf:type cco:Artifact )>> ;
+	prov:wasDerivedFrom doc:758acecb1388 .
+doc:Factsmlp cd:has_function doc:Factsworkflow .
+_:d1f4061572f6009036283672e3aa7f8f rdf:reifies <<( doc:Factsmlp cd:has_function doc:Factsworkflow )>> ;
+	prov:wasDerivedFrom doc:758acecb1388 .
+doc:Factsorf rdfs:label "IRF"@en .
+_:b972bbea1d5426b5f57dc9f012d47f93 rdf:reifies <<( doc:Factsorf rdfs:label "IRF"@en )>> ;
+	prov:wasDerivedFrom doc:758acecb1388 .
+doc:FactsmeasuredSignals a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Data_variable> .
+_:a8dd44f17f36f0e800347c402c322aa9 rdf:reifies <<( doc:FactsmeasuredSignals rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Data_variable> )>> ;
+	prov:wasDerivedFrom doc:758acecb1388 .
+doc:FactscwruDataset rdfs:label "CWRU bearing dataset"@en .
+_:b30401c8c7f45b99f820281075336ce5 rdf:reifies <<( doc:FactscwruDataset rdfs:label "CWRU bearing dataset"@en )>> ;
+	prov:wasDerivedFrom doc:758acecb1388 .
+doc:FactsfaultyState rdfs:label "faulty bearing condition"@en .
+_:e88d5a249ad9ee097cc9bbf54204b474 rdf:reifies <<( doc:FactsfaultyState rdfs:label "faulty bearing condition"@en )>> ;
+	prov:wasDerivedFrom doc:758acecb1388 .
+doc:FactsmeasuredSignals rdfs:label "measured signals"@en .
+_:f8d44c5ec66e82eb62808e2335ade568 rdf:reifies <<( doc:FactsmeasuredSignals rdfs:label "measured signals"@en )>> ;
+	prov:wasDerivedFrom doc:758acecb1388 .
+doc:FactsvibrationSignalAcquisition a cco:Algorithm .
+_:c9a4e0d611247762819cc7ecafdf3412 rdf:reifies <<( doc:FactsvibrationSignalAcquisition rdf:type cco:Algorithm )>> ;
+	prov:wasDerivedFrom doc:758acecb1388 .
+doc:Factsmlp rdfs:label "automatically ONN"@en .
+_:c29ccf531822c02b660a384f7703c01b rdf:reifies <<( doc:Factsmlp rdfs:label "automatically ONN"@en )>> ;
+	prov:wasDerivedFrom doc:758acecb1388 .
+doc:Factsworkflow cd:has_text_value "bearing fault diagnosis" .
+_:a9ef2f781d79b3c94bb52d617b334d1 rdf:reifies <<( doc:Factsworkflow cd:has_text_value "bearing fault diagnosis" )>> ;
+	prov:wasDerivedFrom doc:758acecb1388 .
+doc:Factsworkflow cd:has_text_value "0 to 3 horsepower" .
+_:c9cf9c8e44960ab172995b55ca56a8d7 rdf:reifies <<( doc:Factsworkflow cd:has_text_value "0 to 3 horsepower" )>> ;
+	prov:wasDerivedFrom doc:758acecb1388 .
+doc:Factstraining_1 a cco:Algorithm .
+_:a14255246a54b295c6c1d829c804d124 rdf:reifies <<( doc:Factstraining_1 rdf:type cco:Algorithm )>> ;
+	prov:wasDerivedFrom doc:758acecb1388 .
+doc:Factsmlp rdfs:label "MLP"@en .
+_:f1cc0ac067a8dad9a9c76dde80f03fd3 rdf:reifies <<( doc:Factsmlp rdfs:label "MLP"@en )>> ;
+	prov:wasDerivedFrom doc:758acecb1388 .
+doc:Factstraining_1 rdfs:label "training"@en .
+_:ccc5882d8dbd8e5135dd99acb14cf491 rdf:reifies <<( doc:Factstraining_1 rdfs:label "training"@en )>> ;
+	prov:wasDerivedFrom doc:758acecb1388 .
+doc:Factsworkflow cd:has_text_value "workflow of the bearing fault diagnosis methodology using neural networks" .
+_:c337a60636fdd719fd8829788bcce8b9 rdf:reifies <<( doc:Factsworkflow cd:has_text_value "workflow of the bearing fault diagnosis methodology using neural networks" )>> ;
+	prov:wasDerivedFrom doc:758acecb1388 .
+doc:FactsvibrationSignalAcquisition rdfs:label "vibration signal acquisition"@en .
+_:d730d44d11a36b9d69bd6f7373522e40 rdf:reifies <<( doc:FactsvibrationSignalAcquisition rdfs:label "vibration signal acquisition"@en )>> ;
+	prov:wasDerivedFrom doc:758acecb1388 .
+doc:Factsvalidation a cco:Algorithm .
+_:cfe28a407c11e6bf3d8590f82ec8f8a0 rdf:reifies <<( doc:Factsvalidation rdf:type cco:Algorithm )>> ;
+	prov:wasDerivedFrom doc:758acecb1388 .
+doc:FactsrawDataFeatures rdfs:label "raw data features"@en .
+_:bdfd0320e147160f55dc72ef947572a5 rdf:reifies <<( doc:FactsrawDataFeatures rdfs:label "raw data features"@en )>> ;
+	prov:wasDerivedFrom doc:758acecb1388 .
+doc:FactsclassificationTask a cco:Algorithm .
+_:f782cf6cb87cf8fee18b91f13e0926ff rdf:reifies <<( doc:FactsclassificationTask rdf:type cco:Algorithm )>> ;
+	prov:wasDerivedFrom doc:758acecb1388 .
+doc:FactspredictionFunction_1 a None:Future_state_forecast .
+_:f5e3142fc5473481e0edd1d00f07e118 rdf:reifies <<( doc:FactspredictionFunction_1 rdf:type None:Future_state_forecast )>> ;
+	prov:wasDerivedFrom doc:758acecb1388 .
+doc:Factsorf rdfs:label "ORF"@en .
+_:ec179a944b4d9ffad2735d2ca783c4d8 rdf:reifies <<( doc:Factsorf rdfs:label "ORF"@en )>> ;
+	prov:wasDerivedFrom doc:758acecb1388 .
+doc:Factsorf a None:Fault_identification .
+_:de9dac504e94d280fcbd140868d70ff rdf:reifies <<( doc:Factsorf rdf:type None:Fault_identification )>> ;
+	prov:wasDerivedFrom doc:758acecb1388 .
+doc:FactsfaultyState a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Maintainable_item> .
+_:e160a2f8b254a9a426f18fc0b1863f03 rdf:reifies <<( doc:FactsfaultyState rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Maintainable_item> )>> ;
+	prov:wasDerivedFrom doc:758acecb1388 .
+doc:FactsvibrationSignals_3 rdfs:label "vibration signal data"@en .
+_:b3a35eab275143988ae04c37c31a1f54 rdf:reifies <<( doc:FactsvibrationSignals_3 rdfs:label "vibration signal data"@en )>> ;
+	prov:wasDerivedFrom doc:758acecb1388 .
+doc:FactsmeasuredSignals rdfs:label "acceleration signals"@en .
+_:cdcb5ef6350e27bda4a1311ffb61d905 rdf:reifies <<( doc:FactsmeasuredSignals rdfs:label "acceleration signals"@en )>> ;
+	prov:wasDerivedFrom doc:758acecb1388 .
+doc:FactsexperimentSetup rdfs:label "experimental setup"@en .
+_:c91b963fdd01c40ec87354830478de8e rdf:reifies <<( doc:FactsexperimentSetup rdfs:label "experimental setup"@en )>> ;
+	prov:wasDerivedFrom doc:758acecb1388 .
+doc:Factsworkflow cd:has_text_value "0.007 to 0.028 inches" .
+_:e84f62ffb748c6ab6ca301102f15fa27 rdf:reifies <<( doc:Factsworkflow cd:has_text_value "0.007 to 0.028 inches" )>> ;
+	prov:wasDerivedFrom doc:758acecb1388 .
+doc:FactscwruDataset a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#maintainable_item_record> .
+_:a9914fecde4c924a8280552bd42cd5fd rdf:reifies <<( doc:FactscwruDataset rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#maintainable_item_record> )>> ;
+	prov:wasDerivedFrom doc:758acecb1388 .
+doc:FactsclassificationTask rdfs:label "classification task"@en .
+_:ecb63d4bf883fa6cedc77295d1d573d7 rdf:reifies <<( doc:FactsclassificationTask rdfs:label "classification task"@en )>> ;
+	prov:wasDerivedFrom doc:758acecb1388 .
+doc:Factsmlp cd:has_function doc:FactspredictionFunction_1 .
+_:fbf00f2f4a2ab26dad246930ae6a99d6 rdf:reifies <<( doc:Factsmlp cd:has_function doc:FactspredictionFunction_1 )>> ;
+	prov:wasDerivedFrom doc:758acecb1388 .
+doc:Factsbf rdfs:label "BF"@en .
+_:a3480a0d7587f413a642f9891f87381b rdf:reifies <<( doc:Factsbf rdfs:label "BF"@en )>> ;
+	prov:wasDerivedFrom doc:758acecb1388 .
+doc:Factsworkflow a None:Classification .
+_:f72da22b25d4db8e05e3206b2d807e5c rdf:reifies <<( doc:Factsworkflow rdf:type None:Classification )>> ;
+	prov:wasDerivedFrom doc:758acecb1388 .
+doc:Factsmlp cd:has_text_value "Artificial Neural Networks" .
+_:b0d4915cec302793c84bd4f083c581cf rdf:reifies <<( doc:Factsmlp cd:has_text_value "Artificial Neural Networks" )>> ;
+	prov:wasDerivedFrom doc:758acecb1388 .
+doc:Factsworkflow a cco:Algorithm .
+_:a72de5d87636bc317a65d613d6830184 rdf:reifies <<( doc:Factsworkflow rdf:type cco:Algorithm )>> ;
+	prov:wasDerivedFrom doc:758acecb1388 .
+doc:Factsworkflow cd:has_text_value "1720 to 1797 RPM" .
+_:d9d7a738f62d517f70fca256bbb43b53 rdf:reifies <<( doc:Factsworkflow cd:has_text_value "1720 to 1797 RPM" )>> ;
+	prov:wasDerivedFrom doc:758acecb1388 .
+doc:Factsbf a None:Fault_identification .
+_:fd380dd24a895e7bfc896621f5edf4fa rdf:reifies <<( doc:Factsbf rdf:type None:Fault_identification )>> ;
+	prov:wasDerivedFrom doc:758acecb1388 .
+doc:Factsworkflow cd:has_function doc:Factsworkflow .
+_:fb3532c6773eaff9ca54a80b22d56682 rdf:reifies <<( doc:Factsworkflow cd:has_function doc:Factsworkflow )>> ;
+	prov:wasDerivedFrom doc:758acecb1388 .
+<http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Predictive_maintenance_model> owl:sameAs <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Predictive_maintenance_system_module> , <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Predictive_Maintenance_Article> .

@@ -1,0 +1,525 @@
+@prefix None: <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD/seed#> .
+@prefix cco: <http://www.ontologyrepository.com/CommonCoreOntologies/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doc: <https://growgraph.dev/doc/258e3e8931aa/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix obo: <http://purl.obolibrary.org/obo/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix schema: <https://schema.org/> .
+@prefix schema1: <http://schema.org/> .
+doc:802aceabc92d a prov:Entity , schema:text ;
+	prov:generatedAtTime "2026-07-13T15:21:55.564098Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+	schema:position 0 ;
+	schema:identifier "802aceabc92d" .
+doc:Factsauthor2_23 schema1:givenName "Jian-Hua" .
+_:d7c5a793fc988fa2608bd75f56aae601 rdf:reifies <<( doc:Factsauthor2_23 schema1:givenName "Jian-Hua" )>> ;
+	prov:wasDerivedFrom doc:802aceabc92d .
+doc:Factsyear1_155 None:has_interger_value 2026 .
+_:f326fd4847d9f0ae76697a14da2df1b4 rdf:reifies <<( doc:Factsyear1_155 None:has_interger_value 2026 )>> ;
+	prov:wasDerivedFrom doc:802aceabc92d .
+doc:Factstitle1_131 a None:Article_identifier .
+_:ec4c354008d059ecef179104407b8d4b rdf:reifies <<( doc:Factstitle1_131 rdf:type None:Article_identifier )>> ;
+	prov:wasDerivedFrom doc:802aceabc92d .
+doc:Factsdeployment1_1 a None:Module_synchronization .
+_:b32a000e565cc0416c3a81545863c331 rdf:reifies <<( doc:Factsdeployment1_1 rdf:type None:Module_synchronization )>> ;
+	prov:wasDerivedFrom doc:802aceabc92d .
+doc:Factsauthor2_23 a schema1:Person .
+_:dac6dc7da9a0e9a5f94e9c01dc1bdd64 rdf:reifies <<( doc:Factsauthor2_23 rdf:type schema1:Person )>> ;
+	prov:wasDerivedFrom doc:802aceabc92d .
+doc:Factstitle1_131 None:has_text_value "kjchung@cc.ncue.edu.tw" .
+_:dfb626bf5e6fedffba1fa40960bfa37b rdf:reifies <<( doc:Factstitle1_131 None:has_text_value "kjchung@cc.ncue.edu.tw" )>> ;
+	prov:wasDerivedFrom doc:802aceabc92d .
+doc:Factsfault1_3 rdfs:label "real-time prognostic framework" .
+_:c8125f611ab5f2f7addc7864a4d8d3b3 rdf:reifies <<( doc:Factsfault1_3 rdfs:label "real-time prognostic framework" )>> ;
+	prov:wasDerivedFrom doc:802aceabc92d .
+doc:Factsfunction4_18 a None:Remaining_useful_life_estimation .
+_:c3bbf1b6d83cdbf509f1abfdff978b5a rdf:reifies <<( doc:Factsfunction4_18 rdf:type None:Remaining_useful_life_estimation )>> ;
+	prov:wasDerivedFrom doc:802aceabc92d .
+doc:Factsfault1_3 a doc:FactsPositioningShiftFailure .
+_:d82b379e8ff6ff5a70b9d7cd5d1a1fe5 rdf:reifies <<( doc:Factsfault1_3 rdf:type doc:FactsPositioningShiftFailure )>> ;
+	prov:wasDerivedFrom doc:802aceabc92d .
+doc:Factsfault1_3 a schema1:Action .
+_:a6de319872b986d9a45289141bed904f rdf:reifies <<( doc:Factsfault1_3 rdf:type schema1:Action )>> ;
+	prov:wasDerivedFrom doc:802aceabc92d .
+doc:Factsfault1_3 a None:Fault_detection .
+_:c695a0ddc22f5476b2c889e5277715fc rdf:reifies <<( doc:Factsfault1_3 rdf:type None:Fault_detection )>> ;
+	prov:wasDerivedFrom doc:802aceabc92d .
+doc:Factsorganization1_16 schema1:addressLocality "Changhua" .
+_:f9f29e516fbb9fcc08e6a7248bdccd20 rdf:reifies <<( doc:Factsorganization1_16 schema1:addressLocality "Changhua" )>> ;
+	prov:wasDerivedFrom doc:802aceabc92d .
+doc:Factsfault1_3 None:has_predictive_maintenance_function doc:Factsfunction4_18 .
+_:e3ac52d3132db2f1e52b3237faeb6518 rdf:reifies <<( doc:Factsfault1_3 None:has_predictive_maintenance_function doc:Factsfunction4_18 )>> ;
+	prov:wasDerivedFrom doc:802aceabc92d .
+doc:Factsrepair1 schema1:unitText "1-min operating interval" .
+_:c07ddbb211795a19410af40edac09c60 rdf:reifies <<( doc:Factsrepair1 schema1:unitText "1-min operating interval" )>> ;
+	prov:wasDerivedFrom doc:802aceabc92d .
+doc:Factsfault1_3 None:has_predictive_maintenance_function doc:Factsfault1_3 .
+_:a2249b31f5233697250effde4df4a487 rdf:reifies <<( doc:Factsfault1_3 None:has_predictive_maintenance_function doc:Factsfault1_3 )>> ;
+	prov:wasDerivedFrom doc:802aceabc92d .
+doc:Factsslippage1 rdfs:label "slippage" .
+_:b246d5ec5966b6a3f06d44f28e8cfb58 rdf:reifies <<( doc:Factsslippage1 rdfs:label "slippage" )>> ;
+	prov:wasDerivedFrom doc:802aceabc92d .
+doc:Factstitle1_131 None:has_text_value "Real-time prognostics of the positioning-shift failure for waferhandling robot arms using stacked LSTM deep-learning model and IoT edge computing" .
+_:bfda7978f18f587ecfaecb921cff87bb rdf:reifies <<( doc:Factstitle1_131 None:has_text_value "Real-time prognostics of the positioning-shift failure for waferhandling robot arms using stacked LSTM deep-learning model and IoT edge computing" )>> ;
+	prov:wasDerivedFrom doc:802aceabc92d .
+doc:Factsauthor2_23 schema1:email <mailto:kjchung@cc.ncue.edu.tw> .
+_:bbdb2cd997e6c0ab9d58f4ab7bf5ae02 rdf:reifies <<( doc:Factsauthor2_23 schema1:email <mailto:kjchung@cc.ncue.edu.tw> )>> ;
+	prov:wasDerivedFrom doc:802aceabc92d .
+doc:Factsauthor2_23 schema1:familyName "Huang" .
+_:f1107e76641333d94218b8b73092aa8b rdf:reifies <<( doc:Factsauthor2_23 schema1:familyName "Huang" )>> ;
+	prov:wasDerivedFrom doc:802aceabc92d .
+doc:Factsfault1_3 schema1:name "positioning-shift failure" .
+_:b0fefdeb435873970c359b77b83006bb rdf:reifies <<( doc:Factsfault1_3 schema1:name "positioning-shift failure" )>> ;
+	prov:wasDerivedFrom doc:802aceabc92d .
+doc:Factsmovement1 rdfs:label "sudden movements" .
+_:dafc62312fa64de66e22a23624a63535 rdf:reifies <<( doc:Factsmovement1 rdfs:label "sudden movements" )>> ;
+	prov:wasDerivedFrom doc:802aceabc92d .
+doc:Factscondition_monitoring1_4 a schema1:Action .
+_:d8a226d2119dea15fcc2e708855623b7 rdf:reifies <<( doc:Factscondition_monitoring1_4 rdf:type schema1:Action )>> ;
+	prov:wasDerivedFrom doc:802aceabc92d .
+doc:Factsorganization1_16 a schema1:Organization .
+_:daf748199bb588aceda8e19f1bb8c70 rdf:reifies <<( doc:Factsorganization1_16 rdf:type schema1:Organization )>> ;
+	prov:wasDerivedFrom doc:802aceabc92d .
+doc:Factsfault1_3 a None:Predictive_maintenance_system_module .
+_:f737ddd9d3e3c4b569a9cd68badf239d rdf:reifies <<( doc:Factsfault1_3 rdf:type None:Predictive_maintenance_system_module )>> ;
+	prov:wasDerivedFrom doc:802aceabc92d .
+doc:Factswear1 a schema1:MedicalEntity .
+_:aa9299d095e388a4caae30292f8dccf4 rdf:reifies <<( doc:Factswear1 rdf:type schema1:MedicalEntity )>> ;
+	prov:wasDerivedFrom doc:802aceabc92d .
+doc:Factsfault1_3 rdfs:label "predictive maintenance" .
+_:df833c57f8c89764589f115b85f37acf rdf:reifies <<( doc:Factsfault1_3 rdfs:label "predictive maintenance" )>> ;
+	prov:wasDerivedFrom doc:802aceabc92d .
+doc:Factsyield1 schema1:name "yield of semiconductor fabrication" .
+_:b0ddc880ba87f96d3611c81ecefc92e5 rdf:reifies <<( doc:Factsyield1 schema1:name "yield of semiconductor fabrication" )>> ;
+	prov:wasDerivedFrom doc:802aceabc92d .
+doc:Factsmovement1 a schema1:PropertyValue .
+_:f7aafd8417cf6dba96c82f813eeffe76 rdf:reifies <<( doc:Factsmovement1 rdf:type schema1:PropertyValue )>> ;
+	prov:wasDerivedFrom doc:802aceabc92d .
+doc:Factsrobot_arm1 schema1:name "wafer-handling robot arm" .
+_:bdb3c0599eaedbf018b59bc34905dbdb rdf:reifies <<( doc:Factsrobot_arm1 schema1:name "wafer-handling robot arm" )>> ;
+	prov:wasDerivedFrom doc:802aceabc92d .
+doc:Factsrepair1 schema1:name "maximum eccentric quantity" .
+_:d36207777c52ff78a3c9ce9dbc50f580 rdf:reifies <<( doc:Factsrepair1 schema1:name "maximum eccentric quantity" )>> ;
+	prov:wasDerivedFrom doc:802aceabc92d .
+doc:Factsmodel1_40 rdfs:label "stacked LSTM deep-learning model" .
+_:ab12816acc837da5bf76e9c11ea09d2e rdf:reifies <<( doc:Factsmodel1_40 rdfs:label "stacked LSTM deep-learning model" )>> ;
+	prov:wasDerivedFrom doc:802aceabc92d .
+doc:Factsrobot_arm1 a None:Maintainable_item .
+_:b7ada699f5c876fbc519ed90e076a1cf rdf:reifies <<( doc:Factsrobot_arm1 rdf:type None:Maintainable_item )>> ;
+	prov:wasDerivedFrom doc:802aceabc92d .
+doc:Factstitle1_131 a None:Article_title .
+_:e90b9480e740712f0de11560daeb7075 rdf:reifies <<( doc:Factstitle1_131 rdf:type None:Article_title )>> ;
+	prov:wasDerivedFrom doc:802aceabc92d .
+doc:Factsarticle1_186 None:has_publication_year doc:Factsyear1_155 .
+_:dade60a7e105514d1cfa109c34f01a88 rdf:reifies <<( doc:Factsarticle1_186 None:has_publication_year doc:Factsyear1_155 )>> ;
+	prov:wasDerivedFrom doc:802aceabc92d .
+doc:Factsyield1 a schema1:PropertyValue .
+_:d74c0dba37255f72cd57a90f66b47303 rdf:reifies <<( doc:Factsyield1 rdf:type schema1:PropertyValue )>> ;
+	prov:wasDerivedFrom doc:802aceabc92d .
+doc:Factsfault1_3 rdfs:label "positioning-shift failure" .
+_:ad04f77c6597085c248f86deff257736 rdf:reifies <<( doc:Factsfault1_3 rdfs:label "positioning-shift failure" )>> ;
+	prov:wasDerivedFrom doc:802aceabc92d .
+doc:Factsyield1 schema1:value "predefined" .
+_:deff382b30b82a6fd979877e466a98c7 rdf:reifies <<( doc:Factsyield1 schema1:value "predefined" )>> ;
+	prov:wasDerivedFrom doc:802aceabc92d .
+doc:Factswear1 rdfs:label "wear on the belt teeth" .
+_:f732d5e65bc0a5e0831428d2dedf03f9 rdf:reifies <<( doc:Factswear1 rdfs:label "wear on the belt teeth" )>> ;
+	prov:wasDerivedFrom doc:802aceabc92d .
+doc:Factsauthor2_23 schema1:givenName "Kuan-Jung" .
+_:d519ce1a9c6e72596a58a7a344677818 rdf:reifies <<( doc:Factsauthor2_23 schema1:givenName "Kuan-Jung" )>> ;
+	prov:wasDerivedFrom doc:802aceabc92d .
+doc:Factsmonitoring1_7 a None:Design_detail .
+_:c272283fdd228c95055dffa44ea9acd7 rdf:reifies <<( doc:Factsmonitoring1_7 rdf:type None:Design_detail )>> ;
+	prov:wasDerivedFrom doc:802aceabc92d .
+doc:Factsarticle1_186 None:has_title doc:Factstitle1_131 .
+_:d14921c244d3b1764dd8f20305fe76bf rdf:reifies <<( doc:Factsarticle1_186 None:has_title doc:Factstitle1_131 )>> ;
+	prov:wasDerivedFrom doc:802aceabc92d .
+doc:Factsorganization1_16 schema1:postalCode "500" .
+_:fa63306486f7f66e7738094879620aa3 rdf:reifies <<( doc:Factsorganization1_16 schema1:postalCode "500" )>> ;
+	prov:wasDerivedFrom doc:802aceabc92d .
+doc:Factsorganization1_16 schema1:name "Department of Mechatronics Engineering, National Changhua University of Education" .
+_:a15dc773799c308eae2c230a557a6c2a rdf:reifies <<( doc:Factsorganization1_16 schema1:name "Department of Mechatronics Engineering, National Changhua University of Education" )>> ;
+	prov:wasDerivedFrom doc:802aceabc92d .
+doc:Factsdeployment1_1 rdfs:label "edge-enabled online deployment" .
+_:c09e6dd115e54edb238376a95b043e6c rdf:reifies <<( doc:Factsdeployment1_1 rdfs:label "edge-enabled online deployment" )>> ;
+	prov:wasDerivedFrom doc:802aceabc92d .
+doc:Factsorganization1_16 schema1:addressCountry "Taiwan" .
+_:d31784b98d0fded98f7e6b37703d6e73 rdf:reifies <<( doc:Factsorganization1_16 schema1:addressCountry "Taiwan" )>> ;
+	prov:wasDerivedFrom doc:802aceabc92d .
+doc:Factsrobot_arm1 rdfs:label "wafer-handling robot arm" .
+_:fd6b65756f554751b248b63105f6f129 rdf:reifies <<( doc:Factsrobot_arm1 rdfs:label "wafer-handling robot arm" )>> ;
+	prov:wasDerivedFrom doc:802aceabc92d .
+doc:Factscondition_monitoring1_4 rdfs:label "condition monitoring" .
+_:e2f8666eba4b051522ec0f1f85ed75b4 rdf:reifies <<( doc:Factscondition_monitoring1_4 rdfs:label "condition monitoring" )>> ;
+	prov:wasDerivedFrom doc:802aceabc92d .
+doc:Factsarticle1_186 a None:Predictive_Maintenance_Article .
+_:cc8674ef0fa67f737cbf628bb4f0484 rdf:reifies <<( doc:Factsarticle1_186 rdf:type None:Predictive_Maintenance_Article )>> ;
+	prov:wasDerivedFrom doc:802aceabc92d .
+doc:Factsfault1_3 a None:Fault_feature_extraction .
+_:ddfabea14cbc52d128e55da4205f38f1 rdf:reifies <<( doc:Factsfault1_3 rdf:type None:Fault_feature_extraction )>> ;
+	prov:wasDerivedFrom doc:802aceabc92d .
+doc:Factsfault1_3 a None:Classification .
+_:cb39ed66fc3399add64bb4117180e4ee rdf:reifies <<( doc:Factsfault1_3 rdf:type None:Classification )>> ;
+	prov:wasDerivedFrom doc:802aceabc92d .
+doc:Factsauthor2_23 schema1:familyName "Chung" .
+_:f9a689aef42d1bdb90726f9df0f19b83 rdf:reifies <<( doc:Factsauthor2_23 schema1:familyName "Chung" )>> ;
+	prov:wasDerivedFrom doc:802aceabc92d .
+doc:Factsslippage1 a schema1:PropertyValue .
+_:d8d4b6af998e4694b364638b01cca662 rdf:reifies <<( doc:Factsslippage1 rdf:type schema1:PropertyValue )>> ;
+	prov:wasDerivedFrom doc:802aceabc92d .
+doc:Factsarticle1_186 None:has_identifier doc:Factstitle1_131 .
+_:d1ed0c68b2154d054d4b4796b8765637 rdf:reifies <<( doc:Factsarticle1_186 None:has_identifier doc:Factstitle1_131 )>> ;
+	prov:wasDerivedFrom doc:802aceabc92d .
+doc:Factsmonitoring1_7 rdfs:label "CCD-based eccentricity monitoring" .
+_:ae58aa368309e2daa916f83c6c9385b3 rdf:reifies <<( doc:Factsmonitoring1_7 rdfs:label "CCD-based eccentricity monitoring" )>> ;
+	prov:wasDerivedFrom doc:802aceabc92d .
+doc:Factsrepair1 a schema1:QuantitativeValue .
+_:ad7fc352b235d7a04b518e653e675ba7 rdf:reifies <<( doc:Factsrepair1 rdf:type schema1:QuantitativeValue )>> ;
+	prov:wasDerivedFrom doc:802aceabc92d .
+doc:Factsmodel1_40 schema1:name "stacked LSTM deep-learning model" .
+_:db839503ce424e3f5c02095cdbf5a397 rdf:reifies <<( doc:Factsmodel1_40 schema1:name "stacked LSTM deep-learning model" )>> ;
+	prov:wasDerivedFrom doc:802aceabc92d .
+doc:Factsyield1 schema1:name "warning threshold" .
+_:adc2e16803daf2e1e165ebac12257bb2 rdf:reifies <<( doc:Factsyield1 schema1:name "warning threshold" )>> ;
+	prov:wasDerivedFrom doc:802aceabc92d .
+doc:Factsmodel1_40 a None:Predictive_maintenance_model .
+_:ea619ef36f0dc9d6d2fcfe7f0b201072 rdf:reifies <<( doc:Factsmodel1_40 rdf:type None:Predictive_maintenance_model )>> ;
+	prov:wasDerivedFrom doc:802aceabc92d .
+doc:Factsyear1_155 a None:Publication_year .
+_:c32d36e6b07fbe67e524c302fac8f7c9 rdf:reifies <<( doc:Factsyear1_155 rdf:type None:Publication_year )>> ;
+	prov:wasDerivedFrom doc:802aceabc92d .
+doc:62f49302939c a prov:Entity , schema:text ;
+	prov:generatedAtTime "2026-07-13T15:21:55.568098Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+	schema:position 1 ;
+	schema:identifier "62f49302939c" .
+_:dade60a7e105514d1cfa109c34f01a88 prov:wasDerivedFrom doc:62f49302939c .
+doc:Factsrepair_duration1 a None:Performance_value .
+_:fbc7113ee3da4a1a501dadfb27faab00 rdf:reifies <<( doc:Factsrepair_duration1 rdf:type None:Performance_value )>> ;
+	prov:wasDerivedFrom doc:62f49302939c .
+doc:Factsrepair_duration1 a cco:Algorithm .
+_:f44dc23f438f9b9a62abe5b5cb74e1b8 rdf:reifies <<( doc:Factsrepair_duration1 rdf:type cco:Algorithm )>> ;
+	prov:wasDerivedFrom doc:62f49302939c .
+doc:Factsmodel2_3 rdfs:label "motion reliability model for robots"@en .
+_:fa14a7e7a33350432477425d252c38fc rdf:reifies <<( doc:Factsmodel2_3 rdfs:label "motion reliability model for robots"@en )>> ;
+	prov:wasDerivedFrom doc:62f49302939c .
+doc:Factsarticle1_186 rdfs:label "article about robot positioning shifts and reliability"@en .
+_:f610e4fcf7dd6de20cead49e9ecf2e3a rdf:reifies <<( doc:Factsarticle1_186 rdfs:label "article about robot positioning shifts and reliability"@en )>> ;
+	prov:wasDerivedFrom doc:62f49302939c .
+doc:Factsrepair1 None:has_text_value "field operational conditions" .
+_:abfc4dcc8302e94c8a7986721db6a828 rdf:reifies <<( doc:Factsrepair1 None:has_text_value "field operational conditions" )>> ;
+	prov:wasDerivedFrom doc:62f49302939c .
+doc:Factswafer_drop1 a None:Fault_detection .
+_:f49f8bb0f5f8fde21578f40553aaca5b rdf:reifies <<( doc:Factswafer_drop1 rdf:type None:Fault_detection )>> ;
+	prov:wasDerivedFrom doc:62f49302939c .
+doc:Factsrepair1 None:has_text_value "inappropriate manufacturing tolerances" .
+_:a2906d51f93c35869a48bcf49376d52b rdf:reifies <<( doc:Factsrepair1 None:has_text_value "inappropriate manufacturing tolerances" )>> ;
+	prov:wasDerivedFrom doc:62f49302939c .
+doc:Factssurface_scratch_failure1 a None:Fault_detection .
+_:c6640b629d7a025e6973c754b2714c82 rdf:reifies <<( doc:Factssurface_scratch_failure1 rdf:type None:Fault_detection )>> ;
+	prov:wasDerivedFrom doc:62f49302939c .
+doc:Factsrobot3_pickups a None:Performance_value .
+_:fe1c506eabd375a08360c24968afe24d rdf:reifies <<( doc:Factsrobot3_pickups rdf:type None:Performance_value )>> ;
+	prov:wasDerivedFrom doc:62f49302939c .
+doc:Factswafer_drop1 rdfs:label "wafer dropping"@en .
+_:ae089b28c4bc68729df55ad3617340ff rdf:reifies <<( doc:Factswafer_drop1 rdfs:label "wafer dropping"@en )>> ;
+	prov:wasDerivedFrom doc:62f49302939c .
+doc:Factsrepair1 a None:Design_detail .
+_:ebf5cd1d096f3faebcc18f0e246571f6 rdf:reifies <<( doc:Factsrepair1 rdf:type None:Design_detail )>> ;
+	prov:wasDerivedFrom doc:62f49302939c .
+doc:Factsfta1 rdfs:label "advanced Fault Tree Analysis"@en .
+_:aedc27d4f90d5b7797dfd6b5b4ca3f7e rdf:reifies <<( doc:Factsfta1 rdfs:label "advanced Fault Tree Analysis"@en )>> ;
+	prov:wasDerivedFrom doc:62f49302939c .
+doc:Factsmodel2_3 cco:describes doc:Factsrepair_duration1 .
+_:e0b4eb982cd59af691a065063589616 rdf:reifies <<( doc:Factsmodel2_3 cco:describes doc:Factsrepair_duration1 )>> ;
+	prov:wasDerivedFrom doc:62f49302939c .
+doc:Factsrepair1 None:has_text_value "controlled laboratory setting" .
+_:ac2f0a69d10a7d74104c68d5a0ab93ca rdf:reifies <<( doc:Factsrepair1 None:has_text_value "controlled laboratory setting" )>> ;
+	prov:wasDerivedFrom doc:62f49302939c .
+doc:Factsrepair1 a None:Performance_indicator .
+_:faae0b3b6aa1e9754b806d78116fdc84 rdf:reifies <<( doc:Factsrepair1 rdf:type None:Performance_indicator )>> ;
+	prov:wasDerivedFrom doc:62f49302939c .
+doc:Factsrepair_duration1 None:has_text_value "0.52 mm" .
+_:ceb0f8d5894a1c8828b92e74c8aa8c73 rdf:reifies <<( doc:Factsrepair_duration1 None:has_text_value "0.52 mm" )>> ;
+	prov:wasDerivedFrom doc:62f49302939c .
+_:c695a0ddc22f5476b2c889e5277715fc prov:wasDerivedFrom doc:62f49302939c .
+_:e90b9480e740712f0de11560daeb7075 prov:wasDerivedFrom doc:62f49302939c .
+doc:Factsrepair1 None:has_text_value "diverse spectrum of field scenarios" .
+_:b6fdb21a6b6a06f2062b733dad4a4cac rdf:reifies <<( doc:Factsrepair1 None:has_text_value "diverse spectrum of field scenarios" )>> ;
+	prov:wasDerivedFrom doc:62f49302939c .
+doc:Factsmodel2_3 a None:Predictive_maintenance_model .
+_:d958c8b9a8f501d1d9164faa9c0bce90 rdf:reifies <<( doc:Factsmodel2_3 rdf:type None:Predictive_maintenance_model )>> ;
+	prov:wasDerivedFrom doc:62f49302939c .
+doc:Factstitle1_131 None:has_text_value "Monitoring of positioning shifts of three wafer-handling robots" .
+_:b653cc4c9da2389f894786b3015dfc76 rdf:reifies <<( doc:Factstitle1_131 None:has_text_value "Monitoring of positioning shifts of three wafer-handling robots" )>> ;
+	prov:wasDerivedFrom doc:62f49302939c .
+doc:Factsrepair_duration1 None:has_text_value "0.13 mm" .
+_:f8e6da17836067acbbf75f21ddb98362 rdf:reifies <<( doc:Factsrepair_duration1 None:has_text_value "0.13 mm" )>> ;
+	prov:wasDerivedFrom doc:62f49302939c .
+doc:Factsrepair1 None:has_text_value "eccentric quantity" .
+_:a562c5fd0c3cdda1cac0537d632305ed rdf:reifies <<( doc:Factsrepair1 None:has_text_value "eccentric quantity" )>> ;
+	prov:wasDerivedFrom doc:62f49302939c .
+doc:Factsrepair1 None:has_text_value "assembling processes" .
+_:c1d1bc463c51f56389cc63e40c098c3b rdf:reifies <<( doc:Factsrepair1 None:has_text_value "assembling processes" )>> ;
+	prov:wasDerivedFrom doc:62f49302939c .
+doc:Factswafer_drop1 rdfs:label "wafer shifting"@en .
+_:a5f2c9f167ba8ed83371ca99d7e0aceb rdf:reifies <<( doc:Factswafer_drop1 rdfs:label "wafer shifting"@en )>> ;
+	prov:wasDerivedFrom doc:62f49302939c .
+doc:Factsrepair_duration1 None:has_text_value "failure threshold" .
+_:b3dc2381f6c2c6cd1233d8af5434e493 rdf:reifies <<( doc:Factsrepair_duration1 None:has_text_value "failure threshold" )>> ;
+	prov:wasDerivedFrom doc:62f49302939c .
+_:cc8674ef0fa67f737cbf628bb4f0484 prov:wasDerivedFrom doc:62f49302939c .
+doc:Factsrobot3_pickups None:has_interger_value 664 .
+_:ad89f5e8841fe6c704b9db08432b2131 rdf:reifies <<( doc:Factsrobot3_pickups None:has_interger_value 664 )>> ;
+	prov:wasDerivedFrom doc:62f49302939c .
+doc:Factsmodel1_40 rdfs:label "kinematic model of positioning variance"@en .
+_:c7edff3d5576889d7766acca79f6eff rdf:reifies <<( doc:Factsmodel1_40 rdfs:label "kinematic model of positioning variance"@en )>> ;
+	prov:wasDerivedFrom doc:62f49302939c .
+doc:Factsrepair_duration1 None:has_text_value "8 h" .
+_:ae0ce7c6d6f8b6607a04fe332b670368 rdf:reifies <<( doc:Factsrepair_duration1 None:has_text_value "8 h" )>> ;
+	prov:wasDerivedFrom doc:62f49302939c .
+doc:Factsrepair1 None:has_text_value "cleaning, component replacement, and testing" .
+_:ce4e2a51662ce0b32f513fc6715cfb64 rdf:reifies <<( doc:Factsrepair1 None:has_text_value "cleaning, component replacement, and testing" )>> ;
+	prov:wasDerivedFrom doc:62f49302939c .
+doc:Factsrobot_arm1 rdfs:label "robot 2"@en .
+_:be2ff3cb1050d9b18326acb0fae16347 rdf:reifies <<( doc:Factsrobot_arm1 rdfs:label "robot 2"@en )>> ;
+	prov:wasDerivedFrom doc:62f49302939c .
+doc:Factsrepair_duration1 None:has_text_value "1 mm" .
+_:acf1549b68e509185a234eced5bcc109 rdf:reifies <<( doc:Factsrepair_duration1 None:has_text_value "1 mm" )>> ;
+	prov:wasDerivedFrom doc:62f49302939c .
+doc:Factsfta1 a cco:Algorithm .
+_:d25706a75577ccdb3582cba5d011e33c rdf:reifies <<( doc:Factsfta1 rdf:type cco:Algorithm )>> ;
+	prov:wasDerivedFrom doc:62f49302939c .
+_:b7ada699f5c876fbc519ed90e076a1cf prov:wasDerivedFrom doc:62f49302939c .
+doc:Factsrobot_arm1 rdfs:label "robot 3"@en .
+_:c7d64c7eef4973971ad401f69b9c5213 rdf:reifies <<( doc:Factsrobot_arm1 rdfs:label "robot 3"@en )>> ;
+	prov:wasDerivedFrom doc:62f49302939c .
+doc:Factsrepair_duration1 None:has_text_value "positioning variance" .
+_:ddb4f59979e4835ea87655e51bf3113f rdf:reifies <<( doc:Factsrepair_duration1 None:has_text_value "positioning variance" )>> ;
+	prov:wasDerivedFrom doc:62f49302939c .
+doc:Factsfault1_3 rdfs:label "fault"@en .
+_:df21b0e4c0277408df1a08741afc1cc0 rdf:reifies <<( doc:Factsfault1_3 rdfs:label "fault"@en )>> ;
+	prov:wasDerivedFrom doc:62f49302939c .
+doc:Factsrobot_arm1 a cco:Artifact .
+_:ca56358ad579de509184026d1faf89d rdf:reifies <<( doc:Factsrobot_arm1 rdf:type cco:Artifact )>> ;
+	prov:wasDerivedFrom doc:62f49302939c .
+doc:Factsrobot_arm1 rdfs:label "industrial robot systems"@en .
+_:bc682ba30cff2b6dd7646899b52157ae rdf:reifies <<( doc:Factsrobot_arm1 rdfs:label "industrial robot systems"@en )>> ;
+	prov:wasDerivedFrom doc:62f49302939c .
+_:c32d36e6b07fbe67e524c302fac8f7c9 prov:wasDerivedFrom doc:62f49302939c .
+doc:Factsfta1 None:describes_type doc:Factsrepair_duration1 .
+_:bc722ed42450926d2ae23494f762524f rdf:reifies <<( doc:Factsfta1 None:describes_type doc:Factsrepair_duration1 )>> ;
+	prov:wasDerivedFrom doc:62f49302939c .
+doc:Factssurface_scratch_failure1 rdfs:label "surface scratch failures"@en .
+_:e526cc3c5f94858ac90f734beb24c0aa rdf:reifies <<( doc:Factssurface_scratch_failure1 rdfs:label "surface scratch failures"@en )>> ;
+	prov:wasDerivedFrom doc:62f49302939c .
+doc:Factsrepair_duration1 rdfs:label "system level reliability methodology"@en .
+_:f3dfee7a14f3e81ce3a0367289f76910 rdf:reifies <<( doc:Factsrepair_duration1 rdfs:label "system level reliability methodology"@en )>> ;
+	prov:wasDerivedFrom doc:62f49302939c .
+doc:Factsyear1_155 None:has_interger_value 2024 .
+_:eac048991d4c9d3f27f62c556d7e853 rdf:reifies <<( doc:Factsyear1_155 None:has_interger_value 2024 )>> ;
+	prov:wasDerivedFrom doc:62f49302939c .
+doc:Factsrepair_duration1 a None:Performance_indicator .
+_:f577b819c4457f6965c42d969e5c5b5b rdf:reifies <<( doc:Factsrepair_duration1 rdf:type None:Performance_indicator )>> ;
+	prov:wasDerivedFrom doc:62f49302939c .
+doc:Factsfault1_3 rdfs:label "task failure"@en .
+_:c09dbd2a9e10909e82cd9ca1d5457dc1 rdf:reifies <<( doc:Factsfault1_3 rdfs:label "task failure"@en )>> ;
+	prov:wasDerivedFrom doc:62f49302939c .
+doc:Factsrepair_duration1 None:has_text_value "monitoring profile of eccentric quantities at critical pick-up positions" .
+_:d2fc2171ec30bec420486132b4c8be0d rdf:reifies <<( doc:Factsrepair_duration1 None:has_text_value "monitoring profile of eccentric quantities at critical pick-up positions" )>> ;
+	prov:wasDerivedFrom doc:62f49302939c .
+doc:Factsrepair1 None:has_text_value "joint clearances" .
+_:fbfb31e79386b7b93287fe3a491dc86c rdf:reifies <<( doc:Factsrepair1 None:has_text_value "joint clearances" )>> ;
+	prov:wasDerivedFrom doc:62f49302939c .
+_:d14921c244d3b1764dd8f20305fe76bf prov:wasDerivedFrom doc:62f49302939c .
+doc:Factsmodel1_40 cco:describes doc:Factsrepair_duration1 .
+_:aa68e8f7dc87266edf1fc3677cd50579 rdf:reifies <<( doc:Factsmodel1_40 cco:describes doc:Factsrepair_duration1 )>> ;
+	prov:wasDerivedFrom doc:62f49302939c .
+doc:Factsrobot3_pickups None:has_interger_value 1180 .
+_:f939bd4340b2df552d02643f73e2649b rdf:reifies <<( doc:Factsrobot3_pickups None:has_interger_value 1180 )>> ;
+	prov:wasDerivedFrom doc:62f49302939c .
+doc:Factsrepair_duration1 None:has_text_value "motion reliability" .
+_:ca94c49f254cf97fdcf5cbce9914e941 rdf:reifies <<( doc:Factsrepair_duration1 None:has_text_value "motion reliability" )>> ;
+	prov:wasDerivedFrom doc:62f49302939c .
+_:ea619ef36f0dc9d6d2fcfe7f0b201072 prov:wasDerivedFrom doc:62f49302939c .
+doc:476226ac7d0a a prov:Entity , schema:text ;
+	prov:generatedAtTime "2026-07-13T15:21:55.572607Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+	schema:position 2 ;
+	schema:identifier "476226ac7d0a" .
+doc:Factsmonte_carlo_simulation1 rdfs:label "Monte Carlo simulation"@en .
+_:c9a91152bafc9f19517586dffc460bde rdf:reifies <<( doc:Factsmonte_carlo_simulation1 rdfs:label "Monte Carlo simulation"@en )>> ;
+	prov:wasDerivedFrom doc:476226ac7d0a .
+doc:Factspulley_surface1 a None:Maintainable_item .
+_:bb23b4f1752eea8ab2ceabc9ffc930a8 rdf:reifies <<( doc:Factspulley_surface1 rdf:type None:Maintainable_item )>> ;
+	prov:wasDerivedFrom doc:476226ac7d0a .
+doc:Factsrobot_manufacturer_facility1 rdfs:label "robot manufacturer's facility"@en .
+_:c8c88e1eba97d903cae671129da4c6e6 rdf:reifies <<( doc:Factsrobot_manufacturer_facility1 rdfs:label "robot manufacturer's facility"@en )>> ;
+	prov:wasDerivedFrom doc:476226ac7d0a .
+doc:Factsfault1_3 rdfs:label "current task"@en .
+_:d176a7caafd18d3e6d3914cb21b2cde0 rdf:reifies <<( doc:Factsfault1_3 rdfs:label "current task"@en )>> ;
+	prov:wasDerivedFrom doc:476226ac7d0a .
+doc:Factssuccess_prediction1 a None:Fault_detection .
+_:eae528b583a7eea1c00276fee9e12c32 rdf:reifies <<( doc:Factssuccess_prediction1 rdf:type None:Fault_detection )>> ;
+	prov:wasDerivedFrom doc:476226ac7d0a .
+doc:Factsrepair1 None:has_text_value "belt friction" .
+_:b8817ce144156783c6006972c2879f04 rdf:reifies <<( doc:Factsrepair1 None:has_text_value "belt friction" )>> ;
+	prov:wasDerivedFrom doc:476226ac7d0a .
+doc:Factscondition_monitoring1_4 rdfs:label "continual monitoring"@en .
+_:c15644221991f7bbfa8f0958c5bb4c5f rdf:reifies <<( doc:Factscondition_monitoring1_4 rdfs:label "continual monitoring"@en )>> ;
+	prov:wasDerivedFrom doc:476226ac7d0a .
+doc:Factslaboratory1 rdfs:label "laboratory"@en .
+_:f55a941cf6a9eea3375fad98c4e2620f rdf:reifies <<( doc:Factslaboratory1 rdfs:label "laboratory"@en )>> ;
+	prov:wasDerivedFrom doc:476226ac7d0a .
+doc:Factsgear1_2 rdfs:label "gear"@en .
+_:ddb11b76546a0adb7068f14c2c2b9cd5 rdf:reifies <<( doc:Factsgear1_2 rdfs:label "gear"@en )>> ;
+	prov:wasDerivedFrom doc:476226ac7d0a .
+doc:Factswiener_stochastic_process_model1 a cco:Algorithm .
+_:cb2cf1564c309b4f587bf756292d4098 rdf:reifies <<( doc:Factswiener_stochastic_process_model1 rdf:type cco:Algorithm )>> ;
+	prov:wasDerivedFrom doc:476226ac7d0a .
+doc:Factssemiconductor_production_line1 rdfs:label "semiconductor production line"@en .
+_:d1c83b56a45e546bc69448308122c661 rdf:reifies <<( doc:Factssemiconductor_production_line1 rdfs:label "semiconductor production line"@en )>> ;
+	prov:wasDerivedFrom doc:476226ac7d0a .
+doc:Factsrepair1 None:has_text_value "maximum eccentric quantity" .
+_:b67878eb65f3df33e18bebcfd3847459 rdf:reifies <<( doc:Factsrepair1 None:has_text_value "maximum eccentric quantity" )>> ;
+	prov:wasDerivedFrom doc:476226ac7d0a .
+doc:Factssuccess_prediction1 rdfs:label "predicting the probability of success for the next handling cycle"@en .
+_:be10e77a70977e1cdc4a40ce795ead46 rdf:reifies <<( doc:Factssuccess_prediction1 rdfs:label "predicting the probability of success for the next handling cycle"@en )>> ;
+	prov:wasDerivedFrom doc:476226ac7d0a .
+doc:Factspulley_surface1 rdfs:label "pulley surface"@en .
+_:a3a9c21b82d82f17b632fad483c51c62 rdf:reifies <<( doc:Factspulley_surface1 rdfs:label "pulley surface"@en )>> ;
+	prov:wasDerivedFrom doc:476226ac7d0a .
+doc:Factsmaintenance_time1 rdfs:label "best time to maintenance"@en .
+_:e37e19794389f5412f36a22f1ffaf829 rdf:reifies <<( doc:Factsmaintenance_time1 rdfs:label "best time to maintenance"@en )>> ;
+	prov:wasDerivedFrom doc:476226ac7d0a .
+_:b7ada699f5c876fbc519ed90e076a1cf prov:wasDerivedFrom doc:476226ac7d0a .
+_:ebf5cd1d096f3faebcc18f0e246571f6 prov:wasDerivedFrom doc:476226ac7d0a .
+_:c3bbf1b6d83cdbf509f1abfdff978b5a prov:wasDerivedFrom doc:476226ac7d0a .
+doc:Factscondition_monitoring1_4 a None:Health_assessment .
+_:ea5af4133105d0cb2d08e35d0a17a14d rdf:reifies <<( doc:Factscondition_monitoring1_4 rdf:type None:Health_assessment )>> ;
+	prov:wasDerivedFrom doc:476226ac7d0a .
+doc:Factsrepair1 None:has_text_value "wear debris" .
+_:b788b4a35bbeb01248bad5ad0cadd303 rdf:reifies <<( doc:Factsrepair1 None:has_text_value "wear debris" )>> ;
+	prov:wasDerivedFrom doc:476226ac7d0a .
+doc:Factsnext_pickup_event1 rdfs:label "next pick-up event"@en .
+_:e276ed1c4915577e80dde5b6b755015d rdf:reifies <<( doc:Factsnext_pickup_event1 rdfs:label "next pick-up event"@en )>> ;
+	prov:wasDerivedFrom doc:476226ac7d0a .
+doc:Factsbelt_teeth_wear1 a None:Design_detail .
+_:e38902f8d97ac9327ca629d800f5b2c2 rdf:reifies <<( doc:Factsbelt_teeth_wear1 rdf:type None:Design_detail )>> ;
+	prov:wasDerivedFrom doc:476226ac7d0a .
+doc:Factsnext_pickup_event1 a None:Predictive_maintenance_case .
+_:d1a1fd469e0337ccef11531cc67cbc71 rdf:reifies <<( doc:Factsnext_pickup_event1 rdf:type None:Predictive_maintenance_case )>> ;
+	prov:wasDerivedFrom doc:476226ac7d0a .
+doc:Factsphm1_6 a None:Health_modelling .
+_:c2e8c857c1bebff1432b5d6dfb8b99be rdf:reifies <<( doc:Factsphm1_6 rdf:type None:Health_modelling )>> ;
+	prov:wasDerivedFrom doc:476226ac7d0a .
+doc:Factsfault1_3 rdfs:label "real-time prognostic framework"@en .
+_:a757dc2e6eccfc35d4ac0ca36c5f0640 rdf:reifies <<( doc:Factsfault1_3 rdfs:label "real-time prognostic framework"@en )>> ;
+	prov:wasDerivedFrom doc:476226ac7d0a .
+doc:Factsphm1_6 rdfs:label "prognostics and health management"@en .
+_:de78d202c476bb65761d1293dfd7c169 rdf:reifies <<( doc:Factsphm1_6 rdfs:label "prognostics and health management"@en )>> ;
+	prov:wasDerivedFrom doc:476226ac7d0a .
+_:c695a0ddc22f5476b2c889e5277715fc prov:wasDerivedFrom doc:476226ac7d0a .
+_:d14921c244d3b1764dd8f20305fe76bf prov:wasDerivedFrom doc:476226ac7d0a .
+doc:Factscondition_monitoring1_4 rdfs:label "monitoring of operating conditions"@en .
+_:aa65c84d9914d72e32990d974b270d11 rdf:reifies <<( doc:Factscondition_monitoring1_4 rdfs:label "monitoring of operating conditions"@en )>> ;
+	prov:wasDerivedFrom doc:476226ac7d0a .
+doc:Factsrepair1 None:has_text_value "pick-up positioning errors" .
+_:c62b96e26de79d7b056f524a94397757 rdf:reifies <<( doc:Factsrepair1 None:has_text_value "pick-up positioning errors" )>> ;
+	prov:wasDerivedFrom doc:476226ac7d0a .
+_:cc8674ef0fa67f737cbf628bb4f0484 prov:wasDerivedFrom doc:476226ac7d0a .
+doc:Factstitle1_131 None:has_text_value "Fig. 3" .
+_:e9be63f5ee2e7d5ade974fe66c971b1 rdf:reifies <<( doc:Factstitle1_131 None:has_text_value "Fig. 3" )>> ;
+	prov:wasDerivedFrom doc:476226ac7d0a .
+_:f737ddd9d3e3c4b569a9cd68badf239d prov:wasDerivedFrom doc:476226ac7d0a .
+doc:Factsmonte_carlo_simulation1 a cco:Algorithm .
+_:e8335994c0c63e46a29548f091d71694 rdf:reifies <<( doc:Factsmonte_carlo_simulation1 rdf:type cco:Algorithm )>> ;
+	prov:wasDerivedFrom doc:476226ac7d0a .
+doc:Factsvisual_recognition_system1 rdfs:label "visual recognition system"@en .
+_:c06dfe953cd781e3990ffdd7563df8a6 rdf:reifies <<( doc:Factsvisual_recognition_system1 rdfs:label "visual recognition system"@en )>> ;
+	prov:wasDerivedFrom doc:476226ac7d0a .
+_:e90b9480e740712f0de11560daeb7075 prov:wasDerivedFrom doc:476226ac7d0a .
+doc:Factsrepair1 None:has_text_value "positioning shift" .
+_:cd42102d72ef6312f35dc5057d248203 rdf:reifies <<( doc:Factsrepair1 None:has_text_value "positioning shift" )>> ;
+	prov:wasDerivedFrom doc:476226ac7d0a .
+doc:Factsfault1_3 rdfs:label "current operation"@en .
+_:b150715243d437bdcdbe1fb77b42bf90 rdf:reifies <<( doc:Factsfault1_3 rdfs:label "current operation"@en )>> ;
+	prov:wasDerivedFrom doc:476226ac7d0a .
+doc:Factsbelt_teeth_wear1 None:has_text_value "belt-teeth wear" .
+_:b09dfe2407502882263bb1ab9f78d7df rdf:reifies <<( doc:Factsbelt_teeth_wear1 None:has_text_value "belt-teeth wear" )>> ;
+	prov:wasDerivedFrom doc:476226ac7d0a .
+doc:Factscondition_monitoring1_4 rdfs:label "equipment condition monitoring"@en .
+_:d1d8177987a19c811692dd8fef95e044 rdf:reifies <<( doc:Factscondition_monitoring1_4 rdfs:label "equipment condition monitoring"@en )>> ;
+	prov:wasDerivedFrom doc:476226ac7d0a .
+doc:Factswiener_stochastic_process_model1 rdfs:label "Wiener stochastic process model"@en .
+_:cb419dad0e378f91199c8200535e5915 rdf:reifies <<( doc:Factswiener_stochastic_process_model1 rdfs:label "Wiener stochastic process model"@en )>> ;
+	prov:wasDerivedFrom doc:476226ac7d0a .
+doc:Factsfault1_3 None:has_text_value "pick-up task" .
+_:e2fba91f73fe2b2391f8a9488837a2c1 rdf:reifies <<( doc:Factsfault1_3 None:has_text_value "pick-up task" )>> ;
+	prov:wasDerivedFrom doc:476226ac7d0a .
+doc:Factsrobot_arm1 rdfs:label "wafer-handling robot arm"@en .
+_:f181eb20087ba6d27ed88988c6120680 rdf:reifies <<( doc:Factsrobot_arm1 rdfs:label "wafer-handling robot arm"@en )>> ;
+	prov:wasDerivedFrom doc:476226ac7d0a .
+doc:Factsbelt_drive_degradation1 a None:Design_detail .
+_:c6e958cab885feca1c44a18ab7d46982 rdf:reifies <<( doc:Factsbelt_drive_degradation1 rdf:type None:Design_detail )>> ;
+	prov:wasDerivedFrom doc:476226ac7d0a .
+doc:Factsfault1_3 a None:Predictive_maintenance_case .
+_:fd8ef007bf38ca05ca64fa67c4012db9 rdf:reifies <<( doc:Factsfault1_3 rdf:type None:Predictive_maintenance_case )>> ;
+	prov:wasDerivedFrom doc:476226ac7d0a .
+doc:Factstitle1_131 None:has_text_value "Representatives teardown evidence of belt-drive wear in a failed same type robot" .
+_:bc7ce2f3a8759f4006b8b10ded470507 rdf:reifies <<( doc:Factstitle1_131 None:has_text_value "Representatives teardown evidence of belt-drive wear in a failed same type robot" )>> ;
+	prov:wasDerivedFrom doc:476226ac7d0a .
+doc:Factssemiconductor_production_line1 a schema1:Place .
+_:fb5798e48b4792cbe1fccf4e192fc608 rdf:reifies <<( doc:Factssemiconductor_production_line1 rdf:type schema1:Place )>> ;
+	prov:wasDerivedFrom doc:476226ac7d0a .
+doc:Factsrepair1 None:has_text_value "debris adhesion" .
+_:a1aaff07982b4f8df9c4e535cda102ad rdf:reifies <<( doc:Factsrepair1 None:has_text_value "debris adhesion" )>> ;
+	prov:wasDerivedFrom doc:476226ac7d0a .
+doc:Factsrepair1 None:has_text_value "jumping behavior" .
+_:dcec32a84271967bbd9035788b5f3117 rdf:reifies <<( doc:Factsrepair1 None:has_text_value "jumping behavior" )>> ;
+	prov:wasDerivedFrom doc:476226ac7d0a .
+doc:Factsfault1_3 None:has_text_value "next operation" .
+_:f5b6df22bdf7c4ac0391fc064906a39a rdf:reifies <<( doc:Factsfault1_3 None:has_text_value "next operation" )>> ;
+	prov:wasDerivedFrom doc:476226ac7d0a .
+_:dade60a7e105514d1cfa109c34f01a88 prov:wasDerivedFrom doc:476226ac7d0a .
+doc:Factsvisual_recognition_system1 a None:Predictive_maintenance_system_module .
+_:c0820a8b026879b336c16c222128da6 rdf:reifies <<( doc:Factsvisual_recognition_system1 rdf:type None:Predictive_maintenance_system_module )>> ;
+	prov:wasDerivedFrom doc:476226ac7d0a .
+doc:Factsstatus_of_health1 a None:Health_assessment .
+_:b4365f4608b433271b4097b30c120a2a rdf:reifies <<( doc:Factsstatus_of_health1 rdf:type None:Health_assessment )>> ;
+	prov:wasDerivedFrom doc:476226ac7d0a .
+doc:Factsfault1_3 rdfs:label "operation failure"@en .
+_:b3d140af58275730fd2fe493e40e41ef rdf:reifies <<( doc:Factsfault1_3 rdfs:label "operation failure"@en )>> ;
+	prov:wasDerivedFrom doc:476226ac7d0a .
+doc:Factsrepair1 None:has_text_value "subsequent 1-min operating interval" .
+_:b05be565d610e9783dacb1c3a1a6eafb rdf:reifies <<( doc:Factsrepair1 None:has_text_value "subsequent 1-min operating interval" )>> ;
+	prov:wasDerivedFrom doc:476226ac7d0a .
+_:d1ed0c68b2154d054d4b4796b8765637 prov:wasDerivedFrom doc:476226ac7d0a .
+doc:Factslaboratory1 a schema1:Place .
+_:eca2e050f5eddfe801feb27ef06765b rdf:reifies <<( doc:Factslaboratory1 rdf:type schema1:Place )>> ;
+	prov:wasDerivedFrom doc:476226ac7d0a .
+_:c32d36e6b07fbe67e524c302fac8f7c9 prov:wasDerivedFrom doc:476226ac7d0a .
+_:ec4c354008d059ecef179104407b8d4b prov:wasDerivedFrom doc:476226ac7d0a .
+_:eac048991d4c9d3f27f62c556d7e853 prov:wasDerivedFrom doc:476226ac7d0a .
+doc:Factsbelt_drive_degradation1 None:has_text_value "belt-drive degradation" .
+_:bcb688b43e559946cb3f51c8a87d4293 rdf:reifies <<( doc:Factsbelt_drive_degradation1 None:has_text_value "belt-drive degradation" )>> ;
+	prov:wasDerivedFrom doc:476226ac7d0a .
+doc:Factsrepair1 None:has_text_value "intermittent slipping" .
+_:ecefe980bcf533ca97ce5fe4b355bd68 rdf:reifies <<( doc:Factsrepair1 None:has_text_value "intermittent slipping" )>> ;
+	prov:wasDerivedFrom doc:476226ac7d0a .
+doc:Factsgear1_2 a None:Maintainable_item .
+_:e05fd6e591f4a8910d9d22e3424133c4 rdf:reifies <<( doc:Factsgear1_2 rdf:type None:Maintainable_item )>> ;
+	prov:wasDerivedFrom doc:476226ac7d0a .
+doc:Factsmaintenance_time1 a None:Health_modelling .
+_:a79db70ba8fadef9c284a6d1d6034b9a rdf:reifies <<( doc:Factsmaintenance_time1 rdf:type None:Health_modelling )>> ;
+	prov:wasDerivedFrom doc:476226ac7d0a .
+doc:Factsrobot_arm1 obo:BFO_0000051 doc:Factsfault1_3 .
+_:b0f14a02effe218245da4ec4abb8d21e rdf:reifies <<( doc:Factsrobot_arm1 obo:BFO_0000051 doc:Factsfault1_3 )>> ;
+	prov:wasDerivedFrom doc:476226ac7d0a .
+doc:Factsrobot_arm1 rdfs:label "robot arm"@en .
+_:a8df99399cd115878786a580dfbf216e rdf:reifies <<( doc:Factsrobot_arm1 rdfs:label "robot arm"@en )>> ;
+	prov:wasDerivedFrom doc:476226ac7d0a .
+doc:Factsstatus_of_health1 rdfs:label "state of health"@en .
+_:cfb1be1e1f9caa375d670567b61623e0 rdf:reifies <<( doc:Factsstatus_of_health1 rdfs:label "state of health"@en )>> ;
+	prov:wasDerivedFrom doc:476226ac7d0a .
+doc:Factsrobot_manufacturer_facility1 a schema1:Place .
+_:bb74c95c434eff1f391782f1bc2fb9d5 rdf:reifies <<( doc:Factsrobot_manufacturer_facility1 rdf:type schema1:Place )>> ;
+	prov:wasDerivedFrom doc:476226ac7d0a .

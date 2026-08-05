@@ -1,0 +1,639 @@
+@prefix None: <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD/seed#> .
+@prefix cco: <http://www.ontologyrepository.com/CommonCoreOntologies/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doc: <https://growgraph.dev/doc/96ec88c731fe/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix obo: <http://purl.obolibrary.org/obo/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix cd: <https://growgraph.dev/facts> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix schema: <https://schema.org/> .
+@prefix schema1: <http://schema.org/> .
+doc:de2b7ad758d3 a prov:Entity , schema:text ;
+	prov:generatedAtTime "2026-07-13T01:21:46.726733Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+	schema:position 0 ;
+	schema:identifier "de2b7ad758d3" .
+doc:Factsyear2026_30 None:has_interger_value 2026 .
+_:ef967d84f2b8e4fdfdae33339fee1bfd rdf:reifies <<( doc:Factsyear2026_30 None:has_interger_value 2026 )>> ;
+	prov:wasDerivedFrom doc:de2b7ad758d3 .
+doc:Factsauthor3_74 a schema1:Person .
+_:f9f282c6043ec9d2e4c9251f0354c1 rdf:reifies <<( doc:Factsauthor3_74 rdf:type schema1:Person )>> ;
+	prov:wasDerivedFrom doc:de2b7ad758d3 .
+doc:Factsauthor3_74 schema1:affiliation doc:Factsinstitution2_1 .
+_:b5cdebff3d8456878c7ee1bdefd57659 rdf:reifies <<( doc:Factsauthor3_74 schema1:affiliation doc:Factsinstitution2_1 )>> ;
+	prov:wasDerivedFrom doc:de2b7ad758d3 .
+doc:Factsfunction1_21 a None:Fault_detection .
+_:e510167df653848d42305569eacfdda9 rdf:reifies <<( doc:Factsfunction1_21 rdf:type None:Fault_detection )>> ;
+	prov:wasDerivedFrom doc:de2b7ad758d3 .
+doc:Factssensitivity1 rdfs:label "signal-to-noise ratio"@en .
+_:d0a3df6f69a755a7ff54c337ab31d8ce rdf:reifies <<( doc:Factssensitivity1 rdfs:label "signal-to-noise ratio"@en )>> ;
+	prov:wasDerivedFrom doc:de2b7ad758d3 .
+doc:Factssurface_discharge_model1 a None:Maintainable_item .
+_:f710a51277e56ed87c16f936ee5381bf rdf:reifies <<( doc:Factssurface_discharge_model1 rdf:type None:Maintainable_item )>> ;
+	prov:wasDerivedFrom doc:de2b7ad758d3 .
+doc:FactsgainValue dcterms:title "Guided Ultrasound Horn-Enhanced Fiber Bragg Grating Sensor for Partial Discharge Detection in HV Equipment" .
+_:e514a55538a502a5d196066ba47189f7 rdf:reifies <<( doc:FactsgainValue dcterms:title "Guided Ultrasound Horn-Enhanced Fiber Bragg Grating Sensor for Partial Discharge Detection in HV Equipment" )>> ;
+	prov:wasDerivedFrom doc:de2b7ad758d3 .
+doc:Factsresonance_detail1 a None:Design_detail .
+_:d99136a745fcec3dd8133c4a9bc45fa2 rdf:reifies <<( doc:Factsresonance_detail1 rdf:type None:Design_detail )>> ;
+	prov:wasDerivedFrom doc:de2b7ad758d3 .
+doc:Factsfbg_detail1 a None:Design_detail .
+_:b704b257b24802727a0045306f70f84d rdf:reifies <<( doc:Factsfbg_detail1 rdf:type None:Design_detail )>> ;
+	prov:wasDerivedFrom doc:de2b7ad758d3 .
+doc:Factsresonance_detail1 rdfs:label "resonance at higher ultrasonic frequencies"@en .
+_:d2470e37a78ff40d2ae36fdb81c5713c rdf:reifies <<( doc:Factsresonance_detail1 rdfs:label "resonance at higher ultrasonic frequencies"@en )>> ;
+	prov:wasDerivedFrom doc:de2b7ad758d3 .
+doc:Factsauthor3_74 schema1:name "Akshay Kumar Saha" .
+_:c0223962844a2b095595ec6c83dda9a8 rdf:reifies <<( doc:Factsauthor3_74 schema1:name "Akshay Kumar Saha" )>> ;
+	prov:wasDerivedFrom doc:de2b7ad758d3 .
+doc:FactsgainValue a None:Design_detail .
+_:d69115ac9cc4fbf284d00d36993b4c3c rdf:reifies <<( doc:FactsgainValue rdf:type None:Design_detail )>> ;
+	prov:wasDerivedFrom doc:de2b7ad758d3 .
+doc:FactsgainValue None:has_design_detail doc:Factshorn_detail1 .
+_:ea2ff289fec8b7644a4e99196c908cb3 rdf:reifies <<( doc:FactsgainValue None:has_design_detail doc:Factshorn_detail1 )>> ;
+	prov:wasDerivedFrom doc:de2b7ad758d3 .
+doc:FactsgainValue None:has_design_detail doc:Factsfbg_detail1 .
+_:c371f01e3f8c03260d3bb7118911ccc9 rdf:reifies <<( doc:FactsgainValue None:has_design_detail doc:Factsfbg_detail1 )>> ;
+	prov:wasDerivedFrom doc:de2b7ad758d3 .
+doc:FactsgainValue None:has_text_value "doi-not-provided" .
+_:f61b9ab2095a8a4af39fbf6c0a6b36cc rdf:reifies <<( doc:FactsgainValue None:has_text_value "doi-not-provided" )>> ;
+	prov:wasDerivedFrom doc:de2b7ad758d3 .
+doc:FactsgainValue a None:Article_title .
+_:effb0b8be94c61b9e8c03c2186111b37 rdf:reifies <<( doc:FactsgainValue rdf:type None:Article_title )>> ;
+	prov:wasDerivedFrom doc:de2b7ad758d3 .
+doc:FactsgainValue None:has_publication_year doc:Factsyear2026_30 .
+_:f7271483411ab17d38809cd30bc42ce5 rdf:reifies <<( doc:FactsgainValue None:has_publication_year doc:Factsyear2026_30 )>> ;
+	prov:wasDerivedFrom doc:de2b7ad758d3 .
+doc:FactsgainValue a None:Article_identifier .
+_:e142dc83d651bd53e6cd9f8a7699be75 rdf:reifies <<( doc:FactsgainValue rdf:type None:Article_identifier )>> ;
+	prov:wasDerivedFrom doc:de2b7ad758d3 .
+doc:Factssensitivity1 a None:Performance_indicator .
+_:bcb7b7fc3273309cf92b348aad824fb4 rdf:reifies <<( doc:Factssensitivity1 rdf:type None:Performance_indicator )>> ;
+	prov:wasDerivedFrom doc:de2b7ad758d3 .
+doc:FactsgainValue schema1:author doc:Factsauthor3_74 .
+_:a98b8ab240c80f7bf413f40ae1538656 rdf:reifies <<( doc:FactsgainValue schema1:author doc:Factsauthor3_74 )>> ;
+	prov:wasDerivedFrom doc:de2b7ad758d3 .
+doc:Factshv_equipment1 rdfs:label "high-voltage equipment"@en .
+_:d071fcb30acf2f69352ae2177c9d1818 rdf:reifies <<( doc:Factshv_equipment1 rdfs:label "high-voltage equipment"@en )>> ;
+	prov:wasDerivedFrom doc:de2b7ad758d3 .
+doc:Factsiec60270 a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Predictive_maintenance_system_module> .
+_:e28b1b362f755ed68af8c8fc053bb88f rdf:reifies <<( doc:Factsiec60270 rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Predictive_maintenance_system_module> )>> ;
+	prov:wasDerivedFrom doc:de2b7ad758d3 .
+doc:Factssensitivity1 rdfs:label "sensitivity"@en .
+_:e86311b6d422980c0ca605e348bb9d53 rdf:reifies <<( doc:Factssensitivity1 rdfs:label "sensitivity"@en )>> ;
+	prov:wasDerivedFrom doc:de2b7ad758d3 .
+doc:FactsgainValue a None:Predictive_Maintenance_Article .
+_:f3e75663c6cb902307b1f00c65689e2 rdf:reifies <<( doc:FactsgainValue rdf:type None:Predictive_Maintenance_Article )>> ;
+	prov:wasDerivedFrom doc:de2b7ad758d3 .
+doc:Factshv_operation1 rdfs:label "HV operations"@en .
+_:a200cf782ae99dab3128a32273929f4f rdf:reifies <<( doc:Factshv_operation1 rdfs:label "HV operations"@en )>> ;
+	prov:wasDerivedFrom doc:de2b7ad758d3 .
+doc:FactsgainValue None:has_predictive_maintenance_function doc:Factspd1 .
+_:df2e6cb8039e65f928beb8f2a094bcac rdf:reifies <<( doc:FactsgainValue None:has_predictive_maintenance_function doc:Factspd1 )>> ;
+	prov:wasDerivedFrom doc:de2b7ad758d3 .
+doc:Factsauthor3_74 schema1:name "Aashish Kumar Bohre" .
+_:ca826989c6c6edfc6fda5be5214de87d rdf:reifies <<( doc:Factsauthor3_74 schema1:name "Aashish Kumar Bohre" )>> ;
+	prov:wasDerivedFrom doc:de2b7ad758d3 .
+doc:Factsauthor3_74 schema1:name "Nirmal Kumar Roy" .
+_:aa24508711537cbbf1c496588f88628d rdf:reifies <<( doc:Factsauthor3_74 schema1:name "Nirmal Kumar Roy" )>> ;
+	prov:wasDerivedFrom doc:de2b7ad758d3 .
+doc:Factsinsulation_deterioration1 rdfs:label "insulation deterioration"@en .
+_:d0f6fd8c93c687b577e862efc0ef5681 rdf:reifies <<( doc:Factsinsulation_deterioration1 rdfs:label "insulation deterioration"@en )>> ;
+	prov:wasDerivedFrom doc:de2b7ad758d3 .
+doc:Factsinstitution2_1 a schema1:Organization .
+_:f35ed7eb8ccf21affd5762b353521d89 rdf:reifies <<( doc:Factsinstitution2_1 rdf:type schema1:Organization )>> ;
+	prov:wasDerivedFrom doc:de2b7ad758d3 .
+doc:Factsfunction1_21 rdfs:label "real-time PD detection"@en .
+_:b7fdfd9a852f87e66df2545999319e50 rdf:reifies <<( doc:Factsfunction1_21 rdfs:label "real-time PD detection"@en )>> ;
+	prov:wasDerivedFrom doc:de2b7ad758d3 .
+doc:Factsyear2026_30 a None:Publication_year .
+_:ecf7873614e0838201f16e6517200daa rdf:reifies <<( doc:Factsyear2026_30 rdf:type None:Publication_year )>> ;
+	prov:wasDerivedFrom doc:de2b7ad758d3 .
+doc:Factspd1 rdfs:label "partial discharge detection"@en .
+_:d0f3aef9bc7cb21a2813b87b8e3a0ba7 rdf:reifies <<( doc:Factspd1 rdfs:label "partial discharge detection"@en )>> ;
+	prov:wasDerivedFrom doc:de2b7ad758d3 .
+doc:Factssensitivity1 None:has_text_value "~21 dB" .
+_:cbdfeb655bc50c260021c6407a6856c3 rdf:reifies <<( doc:Factssensitivity1 None:has_text_value "~21 dB" )>> ;
+	prov:wasDerivedFrom doc:de2b7ad758d3 .
+doc:Factsauthor3_74 schema1:name "Chiranjib Koley" .
+_:cfff8be6d1cf2849860ba6f848f75f4a rdf:reifies <<( doc:Factsauthor3_74 schema1:name "Chiranjib Koley" )>> ;
+	prov:wasDerivedFrom doc:de2b7ad758d3 .
+doc:FactsgainValue None:has_design_detail doc:Factsresonance_detail1 .
+_:b84bda73234c362b4a060fc385e93d40 rdf:reifies <<( doc:FactsgainValue None:has_design_detail doc:Factsresonance_detail1 )>> ;
+	prov:wasDerivedFrom doc:de2b7ad758d3 .
+doc:Factscorona_model1 rdfs:label "corona laboratory model"@en .
+_:c5643282943d26db0027d5cff68bc771 rdf:reifies <<( doc:Factscorona_model1 rdfs:label "corona laboratory model"@en )>> ;
+	prov:wasDerivedFrom doc:de2b7ad758d3 .
+doc:Factssensitivity1 None:has_text_value "2.2 pm/Pa" .
+_:e68c5721c6c0af19c6dc7bd0c19f2203 rdf:reifies <<( doc:Factssensitivity1 None:has_text_value "2.2 pm/Pa" )>> ;
+	prov:wasDerivedFrom doc:de2b7ad758d3 .
+doc:FactsgainValue rdfs:label "dielectric construction"@en .
+_:c938456fbdce35b4c6681faaf7cf4d26 rdf:reifies <<( doc:FactsgainValue rdfs:label "dielectric construction"@en )>> ;
+	prov:wasDerivedFrom doc:de2b7ad758d3 .
+doc:FactsgainValue None:has_design_detail doc:Factsemi_detail1 .
+_:d07e477c2a8bee6bdbe1d7370bc3118c rdf:reifies <<( doc:FactsgainValue None:has_design_detail doc:Factsemi_detail1 )>> ;
+	prov:wasDerivedFrom doc:de2b7ad758d3 .
+doc:Factssurface_discharge_model1 rdfs:label "surface discharge laboratory model"@en .
+_:fc6c059053bd1968a452b908cd6923d9 rdf:reifies <<( doc:Factssurface_discharge_model1 rdfs:label "surface discharge laboratory model"@en )>> ;
+	prov:wasDerivedFrom doc:de2b7ad758d3 .
+doc:Factsinsulation_deterioration1 a None:Degradation_state .
+_:d07747d419a6ecbf25418fb43dc923e4 rdf:reifies <<( doc:Factsinsulation_deterioration1 rdf:type None:Degradation_state )>> ;
+	prov:wasDerivedFrom doc:de2b7ad758d3 .
+doc:Factsemi_detail1 rdfs:label "resistance to electromagnetic interference"@en .
+_:d182e0a969748bcc10475ad667ec4d31 rdf:reifies <<( doc:Factsemi_detail1 rdfs:label "resistance to electromagnetic interference"@en )>> ;
+	prov:wasDerivedFrom doc:de2b7ad758d3 .
+doc:Factsiec60270 rdfs:label "IEC 60270 standard method"@en .
+_:cac2f5dfab6525a08db7acf9232aa4d9 rdf:reifies <<( doc:Factsiec60270 rdfs:label "IEC 60270 standard method"@en )>> ;
+	prov:wasDerivedFrom doc:de2b7ad758d3 .
+doc:Factspd1 a None:Fault_detection .
+_:fca3b211145d58a911de05a644c8e6ba rdf:reifies <<( doc:Factspd1 rdf:type None:Fault_detection )>> ;
+	prov:wasDerivedFrom doc:de2b7ad758d3 .
+doc:Factshorn_detail1 rdfs:label "exponential acoustic horn"@en .
+_:ca1cdbc27be92ba4edf59818e348a7d0 rdf:reifies <<( doc:Factshorn_detail1 rdfs:label "exponential acoustic horn"@en )>> ;
+	prov:wasDerivedFrom doc:de2b7ad758d3 .
+doc:Factsopen_access1 schema1:isAccessibleForFree true .
+_:f7dceda1cd0bb45f456362f53381218 rdf:reifies <<( doc:Factsopen_access1 schema1:isAccessibleForFree true )>> ;
+	prov:wasDerivedFrom doc:de2b7ad758d3 .
+doc:Factsauthor3_74 schema1:name "Krishanlal Adhikari" .
+_:c0f8e5095ccbb248af7e9dd509794762 rdf:reifies <<( doc:Factsauthor3_74 schema1:name "Krishanlal Adhikari" )>> ;
+	prov:wasDerivedFrom doc:de2b7ad758d3 .
+doc:FactsgainValue None:has_text_value "HV equipment" .
+_:ed4ab95c9d09ca3bd09736d85ecbbf6c rdf:reifies <<( doc:FactsgainValue None:has_text_value "HV equipment" )>> ;
+	prov:wasDerivedFrom doc:de2b7ad758d3 .
+doc:FactsgainValue None:has_design_detail doc:FactsgainValue .
+_:b3480d3c52bb718e046235a783983631 rdf:reifies <<( doc:FactsgainValue None:has_design_detail doc:FactsgainValue )>> ;
+	prov:wasDerivedFrom doc:de2b7ad758d3 .
+doc:FactsgainValue None:has_identifier doc:FactsgainValue .
+_:ee42bea618afca3d2fab83b21d1ca25 rdf:reifies <<( doc:FactsgainValue None:has_identifier doc:FactsgainValue )>> ;
+	prov:wasDerivedFrom doc:de2b7ad758d3 .
+doc:Factsemi_detail1 a None:Design_detail .
+_:b67f0074f4803dae34f9cc6a6e0a7f09 rdf:reifies <<( doc:Factsemi_detail1 rdf:type None:Design_detail )>> ;
+	prov:wasDerivedFrom doc:de2b7ad758d3 .
+doc:Factshv_operation1 a schema1:Event .
+_:acd20325e08caf2660de1b5c8e3ce4e8 rdf:reifies <<( doc:Factshv_operation1 rdf:type schema1:Event )>> ;
+	prov:wasDerivedFrom doc:de2b7ad758d3 .
+doc:Factshorn_detail1 a None:Design_detail .
+_:eca0f1d619ace7a0ab5173952ec6adbf rdf:reifies <<( doc:Factshorn_detail1 rdf:type None:Design_detail )>> ;
+	prov:wasDerivedFrom doc:de2b7ad758d3 .
+doc:Factshv_equipment1 None:has_identifier doc:FactsgainValue .
+_:cf5bb5a5410244b337d050604ab7aeeb rdf:reifies <<( doc:Factshv_equipment1 None:has_identifier doc:FactsgainValue )>> ;
+	prov:wasDerivedFrom doc:de2b7ad758d3 .
+doc:FactsgainValue a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Predictive_maintenance_system_module> .
+_:cb485c0f7f848eb4825694f886ea046 rdf:reifies <<( doc:FactsgainValue rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Predictive_maintenance_system_module> )>> ;
+	prov:wasDerivedFrom doc:de2b7ad758d3 .
+doc:FactsgainValue None:has_title doc:FactsgainValue .
+_:cfbe8cebb6734119e7f81f803cbfaf3 rdf:reifies <<( doc:FactsgainValue None:has_title doc:FactsgainValue )>> ;
+	prov:wasDerivedFrom doc:de2b7ad758d3 .
+doc:Factsopen_access1 a schema1:CreativeWork .
+_:dd4e887d7af4dd58394fd49e61f0ab2 rdf:reifies <<( doc:Factsopen_access1 rdf:type schema1:CreativeWork )>> ;
+	prov:wasDerivedFrom doc:de2b7ad758d3 .
+doc:Factsinstitution2_1 schema1:name "University of KwaZulu-Natal" .
+_:c494aafe1557f0ffd6c3d7e83c0307e2 rdf:reifies <<( doc:Factsinstitution2_1 schema1:name "University of KwaZulu-Natal" )>> ;
+	prov:wasDerivedFrom doc:de2b7ad758d3 .
+doc:Factsfbg_detail1 rdfs:label "fiber Bragg grating"@en .
+_:addc21eb5d4ade059098eda174e5d222 rdf:reifies <<( doc:Factsfbg_detail1 rdfs:label "fiber Bragg grating"@en )>> ;
+	prov:wasDerivedFrom doc:de2b7ad758d3 .
+doc:FactsgainValue None:has_text_value "Guided Ultrasound Horn-Enhanced Fiber Bragg Grating Sensor for Partial Discharge Detection in HV Equipment" .
+_:b0cbdee374bd6763ccb5f6d39bf6eb43 rdf:reifies <<( doc:FactsgainValue None:has_text_value "Guided Ultrasound Horn-Enhanced Fiber Bragg Grating Sensor for Partial Discharge Detection in HV Equipment" )>> ;
+	prov:wasDerivedFrom doc:de2b7ad758d3 .
+doc:Factscorona_model1 a None:Maintainable_item .
+_:ff541c4b0092bff233f34e318bf80332 rdf:reifies <<( doc:Factscorona_model1 rdf:type None:Maintainable_item )>> ;
+	prov:wasDerivedFrom doc:de2b7ad758d3 .
+doc:Factsinstitution2_1 schema1:name "National Institute of Technology Durgapur" .
+_:a0549edbac135509e7c0591f7a7ac196 rdf:reifies <<( doc:Factsinstitution2_1 schema1:name "National Institute of Technology Durgapur" )>> ;
+	prov:wasDerivedFrom doc:de2b7ad758d3 .
+doc:Factshv_equipment1 a None:Maintainable_item .
+_:faa80c477b43cc324b0005600c76bfe5 rdf:reifies <<( doc:Factshv_equipment1 rdf:type None:Maintainable_item )>> ;
+	prov:wasDerivedFrom doc:de2b7ad758d3 .
+doc:b88c9a6ca135 a prov:Entity , schema:text ;
+	prov:generatedAtTime "2026-07-13T01:21:46.732733Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+	schema:position 1 ;
+	schema:identifier "b88c9a6ca135" .
+_:d69115ac9cc4fbf284d00d36993b4c3c prov:wasDerivedFrom doc:b88c9a6ca135 .
+doc:FactsgainValue cd:has_text_value "Bragg wavelength" .
+_:dd9d6fefb8064cfef461c6ba4addfad3 rdf:reifies <<( doc:FactsgainValue cd:has_text_value "Bragg wavelength" )>> ;
+	prov:wasDerivedFrom doc:b88c9a6ca135 .
+doc:FactsgainValue cd:has_predictive_maintenance_function doc:Factsfunction1_21 .
+_:c35b101d1d16a7e5e8a3e2d587fff0cc rdf:reifies <<( doc:FactsgainValue cd:has_predictive_maintenance_function doc:Factsfunction1_21 )>> ;
+	prov:wasDerivedFrom doc:b88c9a6ca135 .
+doc:FactsgainValue a None:Data_variable .
+_:e7b3c65fffcbb63c22a6f7a00658a3c4 rdf:reifies <<( doc:FactsgainValue rdf:type None:Data_variable )>> ;
+	prov:wasDerivedFrom doc:b88c9a6ca135 .
+doc:FactsgainValue cd:describes_configuration doc:FactsgainValue .
+_:ecdc5a29898b450984bbd2d190a6e27e rdf:reifies <<( doc:FactsgainValue cd:describes_configuration doc:FactsgainValue )>> ;
+	prov:wasDerivedFrom doc:b88c9a6ca135 .
+doc:FactsgainValue cd:has_text_value "exponential horn-aided FBG-based sensor module" .
+_:bc5b5ae2c6b838a26c2727b914bbedac rdf:reifies <<( doc:FactsgainValue cd:has_text_value "exponential horn-aided FBG-based sensor module" )>> ;
+	prov:wasDerivedFrom doc:b88c9a6ca135 .
+doc:FactsgainValue cd:describes_type doc:FactsgainValue .
+_:e6d6845b3154d5901ff53f777187d709 rdf:reifies <<( doc:FactsgainValue cd:describes_type doc:FactsgainValue )>> ;
+	prov:wasDerivedFrom doc:b88c9a6ca135 .
+doc:FactsgainValue cd:has_text_value "Underlying Sensing Mechanism of the FBG-Based Sensor Module" .
+_:c14f98c5998e81f8cafecc6158d3737 rdf:reifies <<( doc:FactsgainValue cd:has_text_value "Underlying Sensing Mechanism of the FBG-Based Sensor Module" )>> ;
+	prov:wasDerivedFrom doc:b88c9a6ca135 .
+doc:FactsprocessingUnit1 a cco:Artifact .
+_:c9608cba9827f3d12d8e133e6859f3a4 rdf:reifies <<( doc:FactsprocessingUnit1 rdf:type cco:Artifact )>> ;
+	prov:wasDerivedFrom doc:b88c9a6ca135 .
+doc:FactsgainValue cd:has_text_value "temperature variation does not affect PD detection accuracy under ambient conditions" .
+_:de3c33d930b75cf8f7e9911271665b4c rdf:reifies <<( doc:FactsgainValue cd:has_text_value "temperature variation does not affect PD detection accuracy under ambient conditions" )>> ;
+	prov:wasDerivedFrom doc:b88c9a6ca135 .
+_:e510167df653848d42305569eacfdda9 prov:wasDerivedFrom doc:b88c9a6ca135 .
+doc:Factsyear2026_30 cd:has_interger_value 2021 .
+_:d454c80a9b407fdad4e513b678e032a4 rdf:reifies <<( doc:Factsyear2026_30 cd:has_interger_value 2021 )>> ;
+	prov:wasDerivedFrom doc:b88c9a6ca135 .
+doc:Factsanalyzer1 rdfs:label "fiber Bragg grating analyzer" .
+_:fc5d754ba4adec40d3268cd876ea3f2f rdf:reifies <<( doc:Factsanalyzer1 rdfs:label "fiber Bragg grating analyzer" )>> ;
+	prov:wasDerivedFrom doc:b88c9a6ca135 .
+doc:FactsgainValue rdfs:label "FBG-Based Sensor Module" .
+_:a78339285886fba8cdf5e581ff08e0f6 rdf:reifies <<( doc:FactsgainValue rdfs:label "FBG-Based Sensor Module" )>> ;
+	prov:wasDerivedFrom doc:b88c9a6ca135 .
+doc:FactsgainValue a None:Model_configuration .
+_:e0cf654b9eb6802d369ce66c9cc2fecd rdf:reifies <<( doc:FactsgainValue rdf:type None:Model_configuration )>> ;
+	prov:wasDerivedFrom doc:b88c9a6ca135 .
+doc:FactsgainValue cd:has_text_value "fixed resonating structure" .
+_:c4339d27fe6e5e4fad90788e0bf07c02 rdf:reifies <<( doc:FactsgainValue cd:has_text_value "fixed resonating structure" )>> ;
+	prov:wasDerivedFrom doc:b88c9a6ca135 .
+doc:Factsanalyzer2 a cco:Artifact .
+_:d35248cb1608fcf58b09166bb0821120 rdf:reifies <<( doc:Factsanalyzer2 rdf:type cco:Artifact )>> ;
+	prov:wasDerivedFrom doc:b88c9a6ca135 .
+doc:FactsgainValue cd:has_text_value "acoustic pressure" .
+_:a785c492222c9e17a2af6a79447195ab rdf:reifies <<( doc:FactsgainValue cd:has_text_value "acoustic pressure" )>> ;
+	prov:wasDerivedFrom doc:b88c9a6ca135 .
+doc:Factsanalyzer2 rdfs:label "optical spectrum analyzer" .
+_:d9c6a69b290c7ec9c1e4aa5fa8567ea3 rdf:reifies <<( doc:Factsanalyzer2 rdfs:label "optical spectrum analyzer" )>> ;
+	prov:wasDerivedFrom doc:b88c9a6ca135 .
+doc:FactsgainValue cd:has_text_value "Figure 1" .
+_:b4e0ae238f1532e9c6215d51dc0908c9 rdf:reifies <<( doc:FactsgainValue cd:has_text_value "Figure 1" )>> ;
+	prov:wasDerivedFrom doc:b88c9a6ca135 .
+doc:Factsfunction1_21 cd:has_text_value "detecting partial discharge acoustic signals" .
+_:c928b03f1dc136319566a396601ed206 rdf:reifies <<( doc:Factsfunction1_21 cd:has_text_value "detecting partial discharge acoustic signals" )>> ;
+	prov:wasDerivedFrom doc:b88c9a6ca135 .
+doc:FactsgainValue cd:has_design_detail doc:FactsgainValue .
+_:d603a56a5f2ecbcf2e90dcb1d0dc75d2 rdf:reifies <<( doc:FactsgainValue cd:has_design_detail doc:FactsgainValue )>> ;
+	prov:wasDerivedFrom doc:b88c9a6ca135 .
+doc:FactsgainValue cd:has_text_value "exponential acoustic horn" .
+_:d9156003eb864552cead10408c3952a7 rdf:reifies <<( doc:FactsgainValue cd:has_text_value "exponential acoustic horn" )>> ;
+	prov:wasDerivedFrom doc:b88c9a6ca135 .
+doc:FactsgainValue cd:has_text_value "throat-mounted FBG structure" .
+_:a20275a5ed977c14255df754863ae6a rdf:reifies <<( doc:FactsgainValue cd:has_text_value "throat-mounted FBG structure" )>> ;
+	prov:wasDerivedFrom doc:b88c9a6ca135 .
+_:ecf7873614e0838201f16e6517200daa prov:wasDerivedFrom doc:b88c9a6ca135 .
+doc:FactsgainValue cd:has_text_value "far-field acoustic sensing configuration" .
+_:d023eedeed35c22131ced98166b72205 rdf:reifies <<( doc:FactsgainValue cd:has_text_value "far-field acoustic sensing configuration" )>> ;
+	prov:wasDerivedFrom doc:b88c9a6ca135 .
+doc:FactsgainValue cd:has_text_value "FBG-based PD monitoring model" .
+_:d3896b681d26c57edefc47801149e92 rdf:reifies <<( doc:FactsgainValue cd:has_text_value "FBG-based PD monitoring model" )>> ;
+	prov:wasDerivedFrom doc:b88c9a6ca135 .
+_:cb485c0f7f848eb4825694f886ea046 prov:wasDerivedFrom doc:b88c9a6ca135 .
+doc:FactsgainValue cd:has_title doc:FactsgainValue .
+_:b60c4047e4cb9bb6b07e7ae38911ba62 rdf:reifies <<( doc:FactsgainValue cd:has_title doc:FactsgainValue )>> ;
+	prov:wasDerivedFrom doc:b88c9a6ca135 .
+doc:FactsgainValue rdfs:label "proposed methodology" .
+_:b713aeab0e54dd90023fd8381fb37caa rdf:reifies <<( doc:FactsgainValue rdfs:label "proposed methodology" )>> ;
+	prov:wasDerivedFrom doc:b88c9a6ca135 .
+doc:FactsgainValue a None:Model_type .
+_:e2258a80f76cc79491a930204157a5fb rdf:reifies <<( doc:FactsgainValue rdf:type None:Model_type )>> ;
+	prov:wasDerivedFrom doc:b88c9a6ca135 .
+doc:FactsgainValue a None:item_type .
+_:cc1091dbf51dceaf4bc64007ff7c4165 rdf:reifies <<( doc:FactsgainValue rdf:type None:item_type )>> ;
+	prov:wasDerivedFrom doc:b88c9a6ca135 .
+doc:FactsgainValue cd:has_text_value "acoustic plane wave" .
+_:df8ddce766cad26eb29c1b2c1f99358c rdf:reifies <<( doc:FactsgainValue cd:has_text_value "acoustic plane wave" )>> ;
+	prov:wasDerivedFrom doc:b88c9a6ca135 .
+_:effb0b8be94c61b9e8c03c2186111b37 prov:wasDerivedFrom doc:b88c9a6ca135 .
+doc:FactsgainValue cd:has_identifier doc:FactsgainValue .
+_:a38db5e720fb5d041a9ff6ca4bcfa37f rdf:reifies <<( doc:FactsgainValue cd:has_identifier doc:FactsgainValue )>> ;
+	prov:wasDerivedFrom doc:b88c9a6ca135 .
+_:e142dc83d651bd53e6cd9f8a7699be75 prov:wasDerivedFrom doc:b88c9a6ca135 .
+doc:FactsgainValue cd:has_text_value "sound pressure" .
+_:f88ac30c09409a6ee7e157d1ec666548 rdf:reifies <<( doc:FactsgainValue cd:has_text_value "sound pressure" )>> ;
+	prov:wasDerivedFrom doc:b88c9a6ca135 .
+doc:FactsgainValue cd:has_interger_value 0 .
+_:ab3f19a7824dae99b5fc82d9c7e15e98 rdf:reifies <<( doc:FactsgainValue cd:has_interger_value 0 )>> ;
+	prov:wasDerivedFrom doc:b88c9a6ca135 .
+doc:FactsgainValue cd:has_text_value "ultrasonic acoustic wave" .
+_:ec2ce928ef32ea777a16003985a4b2a5 rdf:reifies <<( doc:FactsgainValue cd:has_text_value "ultrasonic acoustic wave" )>> ;
+	prov:wasDerivedFrom doc:b88c9a6ca135 .
+doc:FactsgainValue a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Performance_value> .
+_:e8910e773658321eeeae6b5954ffaf51 rdf:reifies <<( doc:FactsgainValue rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Performance_value> )>> ;
+	prov:wasDerivedFrom doc:b88c9a6ca135 .
+doc:FactsgainValue cd:has_text_value "PD acoustic sensing and wavelength modulation model" .
+_:eb890f800cd77a6039a465462413d54a rdf:reifies <<( doc:FactsgainValue cd:has_text_value "PD acoustic sensing and wavelength modulation model" )>> ;
+	prov:wasDerivedFrom doc:b88c9a6ca135 .
+doc:Factsfunction1_21 rdfs:label "PD detection" .
+_:abb66b2b20c21a57196265951698bc38 rdf:reifies <<( doc:Factsfunction1_21 rdfs:label "PD detection" )>> ;
+	prov:wasDerivedFrom doc:b88c9a6ca135 .
+_:f3e75663c6cb902307b1f00c65689e2 prov:wasDerivedFrom doc:b88c9a6ca135 .
+doc:Factsanalyzer1 a cco:Artifact .
+_:ed20055a0f2d6a2ae1abf77cc31fb458 rdf:reifies <<( doc:Factsanalyzer1 rdf:type cco:Artifact )>> ;
+	prov:wasDerivedFrom doc:b88c9a6ca135 .
+doc:FactsgainValue cd:has_text_value "reflected wavelength" .
+_:b38df2167ef5b8c9e915abb3307c06f0 rdf:reifies <<( doc:FactsgainValue cd:has_text_value "reflected wavelength" )>> ;
+	prov:wasDerivedFrom doc:b88c9a6ca135 .
+doc:FactsgainValue cd:has_text_value "wavelength modulation due to pressure-induced strain" .
+_:b87ae36563b7cff371eb543df272a0ae rdf:reifies <<( doc:FactsgainValue cd:has_text_value "wavelength modulation due to pressure-induced strain" )>> ;
+	prov:wasDerivedFrom doc:b88c9a6ca135 .
+doc:FactsprocessingUnit1 rdfs:label "LabVIEW-based data processing unit" .
+_:d9ab3020915f34217fef73a98f784c62 rdf:reifies <<( doc:FactsprocessingUnit1 rdfs:label "LabVIEW-based data processing unit" )>> ;
+	prov:wasDerivedFrom doc:b88c9a6ca135 .
+doc:19fe98f30ca1 a prov:Entity , schema:text ;
+	prov:generatedAtTime "2026-07-13T01:21:46.73674Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+	schema:position 2 ;
+	schema:identifier "19fe98f30ca1" .
+doc:FactsprincipalStrainDirection rdfs:label "principal strain direction" .
+_:aeca0e654da739759c5a4208382d2bf2 rdf:reifies <<( doc:FactsprincipalStrainDirection rdfs:label "principal strain direction" )>> ;
+	prov:wasDerivedFrom doc:19fe98f30ca1 .
+doc:FactsparticleSwarmOptimization_1 rdfs:label "particle swarm optimization" .
+_:b8b1f8f3136e9125dfcbfd0b883d9dba rdf:reifies <<( doc:FactsparticleSwarmOptimization_1 rdfs:label "particle swarm optimization" )>> ;
+	prov:wasDerivedFrom doc:19fe98f30ca1 .
+doc:FactsansysSoftware rdfs:label "ANSYS 2023 R1" .
+_:aac146c1225179d67098c374c9ea5970 rdf:reifies <<( doc:FactsansysSoftware rdfs:label "ANSYS 2023 R1" )>> ;
+	prov:wasDerivedFrom doc:19fe98f30ca1 .
+doc:FactswaveguideMaterial schema:material "polymer" .
+_:c1d25a93822e3f006be7fdfd1f96baf2 rdf:reifies <<( doc:FactswaveguideMaterial schema:material "polymer" )>> ;
+	prov:wasDerivedFrom doc:19fe98f30ca1 .
+doc:FactshornLength rdfs:label "horn throat" .
+_:ed8fdef6f63473883109c6a135649cd4 rdf:reifies <<( doc:FactshornLength rdfs:label "horn throat" )>> ;
+	prov:wasDerivedFrom doc:19fe98f30ca1 .
+doc:FactsparticleSwarmOptimization_1 a cco:Algorithm .
+_:f2ab2c069aacc5f8a3f214dcd1cf3dc4 rdf:reifies <<( doc:FactsparticleSwarmOptimization_1 rdf:type cco:Algorithm )>> ;
+	prov:wasDerivedFrom doc:19fe98f30ca1 .
+doc:FactspdGeneratedAcousticWave a cco:Artifact .
+_:e1c9f6c41fcde32f36e8172955e77619 rdf:reifies <<( doc:FactspdGeneratedAcousticWave rdf:type cco:Artifact )>> ;
+	prov:wasDerivedFrom doc:19fe98f30ca1 .
+doc:FactshornLength a obo:BFO_0000030 .
+_:c07f3e274ef27786b849f6e91694d829 rdf:reifies <<( doc:FactshornLength rdf:type obo:BFO_0000030 )>> ;
+	prov:wasDerivedFrom doc:19fe98f30ca1 .
+doc:FactsacousticGuidanceFunction rdfs:label "guiding acoustic energy toward the detector" .
+_:e13d8d81e03c7d5d78e1e5637eba5eea rdf:reifies <<( doc:FactsacousticGuidanceFunction rdfs:label "guiding acoustic energy toward the detector" )>> ;
+	prov:wasDerivedFrom doc:19fe98f30ca1 .
+doc:FactsfixedResonatingStructure cd:has_part doc:FactsprincipalStrainDirection .
+_:cd0cc9403a7e5721a22cb82bbeb7277f rdf:reifies <<( doc:FactsfixedResonatingStructure cd:has_part doc:FactsprincipalStrainDirection )>> ;
+	prov:wasDerivedFrom doc:19fe98f30ca1 .
+doc:FactsfbgSensor_1 cd:has_part doc:Factsgroove .
+_:f754eecd3a006a02c4f4abfe4323c053 rdf:reifies <<( doc:FactsfbgSensor_1 cd:has_part doc:Factsgroove )>> ;
+	prov:wasDerivedFrom doc:19fe98f30ca1 .
+doc:FactspressureAmplification cd:has_interger_value 8 .
+_:eab7e912c729a02280003b3a8e349b13 rdf:reifies <<( doc:FactspressureAmplification cd:has_interger_value 8 )>> ;
+	prov:wasDerivedFrom doc:19fe98f30ca1 .
+doc:FactsacousticImpedance a obo:BFO_0000019 .
+_:c86a7e435812d380c49b3b3fea3e4f4 rdf:reifies <<( doc:FactsacousticImpedance rdf:type obo:BFO_0000019 )>> ;
+	prov:wasDerivedFrom doc:19fe98f30ca1 .
+doc:FactspdEvents rdfs:label "partial discharge events" .
+_:bea2c1901d0eed376596325e03fde2cf rdf:reifies <<( doc:FactspdEvents rdfs:label "partial discharge events" )>> ;
+	prov:wasDerivedFrom doc:19fe98f30ca1 .
+doc:FactscutOffFrequency a obo:BFO_0000019 .
+_:e1e20a5c0105ed0d3f6376af9f8a99db rdf:reifies <<( doc:FactscutOffFrequency rdf:type obo:BFO_0000019 )>> ;
+	prov:wasDerivedFrom doc:19fe98f30ca1 .
+doc:FactstestPlatform cd:has_part doc:FactsfunctionGenerator .
+_:d2016786bda228baae8e05ec85a38ef1 rdf:reifies <<( doc:FactstestPlatform cd:has_part doc:FactsfunctionGenerator )>> ;
+	prov:wasDerivedFrom doc:19fe98f30ca1 .
+doc:FactsbraggGrating cd:has_text_value "1548.345 nm" .
+_:e10eb8bc59cb2ff2a96f70ae11e15e84 rdf:reifies <<( doc:FactsbraggGrating cd:has_text_value "1548.345 nm" )>> ;
+	prov:wasDerivedFrom doc:19fe98f30ca1 .
+doc:FactswaveguideMaterial schema:name "polyethylene terephthalate glycol" .
+_:b555ac51f3ed114665dc7ac91cec7719 rdf:reifies <<( doc:FactswaveguideMaterial schema:name "polyethylene terephthalate glycol" )>> ;
+	prov:wasDerivedFrom doc:19fe98f30ca1 .
+doc:FactstestPlatform cd:has_part doc:FactsfbgSensor_1 .
+_:ea6449e4e46e8d05f8c6df4891b66b85 rdf:reifies <<( doc:FactstestPlatform cd:has_part doc:FactsfbgSensor_1 )>> ;
+	prov:wasDerivedFrom doc:19fe98f30ca1 .
+doc:FactshornWaveguide cd:has_function doc:FactsnoiseFilteringFunction .
+_:e36cbd436cbfd932d9f0ef54aa4f983a rdf:reifies <<( doc:FactshornWaveguide cd:has_function doc:FactsnoiseFilteringFunction )>> ;
+	prov:wasDerivedFrom doc:19fe98f30ca1 .
+doc:FactsprincipalStrainDirection a obo:BFO_0000019 .
+_:f90be6df1017edf458d6aa2a02fc61f3 rdf:reifies <<( doc:FactsprincipalStrainDirection rdf:type obo:BFO_0000019 )>> ;
+	prov:wasDerivedFrom doc:19fe98f30ca1 .
+doc:FactsultrasonicTransmitter schema:model "MA40S4S" .
+_:d65d3e609fbf431385bc7750441c3161 rdf:reifies <<( doc:FactsultrasonicTransmitter schema:model "MA40S4S" )>> ;
+	prov:wasDerivedFrom doc:19fe98f30ca1 .
+doc:FactshornLength cd:has_text_value "15 cm" .
+_:dcac8acd3a93aacd0e49f04516e76bd6 rdf:reifies <<( doc:FactshornLength cd:has_text_value "15 cm" )>> ;
+	prov:wasDerivedFrom doc:19fe98f30ca1 .
+doc:FactstestPlatform cd:has_part doc:FactsreferenceReceiver .
+_:a2eb4e528e3d05cd3a4fd88ced8129f6 rdf:reifies <<( doc:FactstestPlatform cd:has_part doc:FactsreferenceReceiver )>> ;
+	prov:wasDerivedFrom doc:19fe98f30ca1 .
+doc:FactshornLength rdfs:label "mouth radius" .
+_:d9371d091cb8fbe84494be6007b1d892 rdf:reifies <<( doc:FactshornLength rdfs:label "mouth radius" )>> ;
+	prov:wasDerivedFrom doc:19fe98f30ca1 .
+doc:FactspdDetectionWindow rdfs:label "PD detection window" .
+_:d0c161a0b5127a636966952bad70e43a rdf:reifies <<( doc:FactspdDetectionWindow rdfs:label "PD detection window" )>> ;
+	prov:wasDerivedFrom doc:19fe98f30ca1 .
+doc:FactsbondingAdhesive rdfs:label "EPO-TEK 353ND" .
+_:d6a739d4864767abdc8e3ea4560ab7e6 rdf:reifies <<( doc:FactsbondingAdhesive rdfs:label "EPO-TEK 353ND" )>> ;
+	prov:wasDerivedFrom doc:19fe98f30ca1 .
+doc:FactscutOffFrequency rdfs:label "cut-off frequency" .
+_:ccf52f97c8fa685128f6e597eb0063ab rdf:reifies <<( doc:FactscutOffFrequency rdfs:label "cut-off frequency" )>> ;
+	prov:wasDerivedFrom doc:19fe98f30ca1 .
+doc:FactsacousticImpedance rdfs:label "acoustic impedance" .
+_:d9c280e84faeb9c0a0da029e89785ba rdf:reifies <<( doc:FactsacousticImpedance rdfs:label "acoustic impedance" )>> ;
+	prov:wasDerivedFrom doc:19fe98f30ca1 .
+doc:FactsfbgSensor_1 rdfs:label "FBG sensor" .
+_:c6f909a33edebee9c2314a899c59dd48 rdf:reifies <<( doc:FactsfbgSensor_1 rdfs:label "FBG sensor" )>> ;
+	prov:wasDerivedFrom doc:19fe98f30ca1 .
+doc:Factssensitivity1 a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Performance_indicator> .
+_:b8f2d99beee56eb4ea9a7b6779461c2a rdf:reifies <<( doc:Factssensitivity1 rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Performance_indicator> )>> ;
+	prov:wasDerivedFrom doc:19fe98f30ca1 .
+doc:FactsnoiseFilteringFunction a obo:BFO_0000034 .
+_:b49f5016ac8da7ebbeb8336f44ba42b4 rdf:reifies <<( doc:FactsnoiseFilteringFunction rdf:type obo:BFO_0000034 )>> ;
+	prov:wasDerivedFrom doc:19fe98f30ca1 .
+doc:FactsnoiseFilteringFunction rdfs:label "filtering random noise from other axes" .
+_:d0b14ab40b589e5c799fa97dbdf0f49b rdf:reifies <<( doc:FactsnoiseFilteringFunction rdfs:label "filtering random noise from other axes" )>> ;
+	prov:wasDerivedFrom doc:19fe98f30ca1 .
+doc:FactsultrasonicTransmitter schema:manufacturer "muRata" .
+_:a1c1c99ee420b9d41e3ed1a8c9630401 rdf:reifies <<( doc:FactsultrasonicTransmitter schema:manufacturer "muRata" )>> ;
+	prov:wasDerivedFrom doc:19fe98f30ca1 .
+doc:FactsultrasonicTransmitter a cco:Artifact .
+_:fa6cfe23739faa484b7fcaaea8dab7c9 rdf:reifies <<( doc:FactsultrasonicTransmitter rdf:type cco:Artifact )>> ;
+	prov:wasDerivedFrom doc:19fe98f30ca1 .
+doc:FactshornWaveguide cd:has_function doc:FactspressureAmplification .
+_:f3c82ef41a3f54773bac33e5a81fd995 rdf:reifies <<( doc:FactshornWaveguide cd:has_function doc:FactspressureAmplification )>> ;
+	prov:wasDerivedFrom doc:19fe98f30ca1 .
+doc:FactsfunctionGenerator rdfs:label "function generator" .
+_:ab36d8f3d44047431ee148bab3810e01 rdf:reifies <<( doc:FactsfunctionGenerator rdfs:label "function generator" )>> ;
+	prov:wasDerivedFrom doc:19fe98f30ca1 .
+_:e8910e773658321eeeae6b5954ffaf51 prov:wasDerivedFrom doc:19fe98f30ca1 .
+doc:FactspressureAmplification a obo:BFO_0000019 .
+_:ba09764c159cf3b10e515a77dc1e7f35 rdf:reifies <<( doc:FactspressureAmplification rdf:type obo:BFO_0000019 )>> ;
+	prov:wasDerivedFrom doc:19fe98f30ca1 .
+doc:FactspdGeneratedAcousticWave rdfs:label "PD-generated acoustic wave" .
+_:e66512dc841ff0726d620409d7375ec7 rdf:reifies <<( doc:FactspdGeneratedAcousticWave rdfs:label "PD-generated acoustic wave" )>> ;
+	prov:wasDerivedFrom doc:19fe98f30ca1 .
+doc:FactspdAcousticEmissions rdfs:label "partial discharge acoustic emissions" .
+_:bc7be86bdb8364f7a4c0bebf5d5caa0c rdf:reifies <<( doc:FactspdAcousticEmissions rdfs:label "partial discharge acoustic emissions" )>> ;
+	prov:wasDerivedFrom doc:19fe98f30ca1 .
+doc:FactsbraggGrating rdfs:label "fiber Bragg grating" .
+_:bc6c36ccc74991a0e647d70dce93ddf4 rdf:reifies <<( doc:FactsbraggGrating rdfs:label "fiber Bragg grating" )>> ;
+	prov:wasDerivedFrom doc:19fe98f30ca1 .
+doc:FactsreferenceReceiver a cco:Artifact .
+_:a44695ad68fe9e60ea34c9a81bd241b3 rdf:reifies <<( doc:FactsreferenceReceiver rdf:type cco:Artifact )>> ;
+	prov:wasDerivedFrom doc:19fe98f30ca1 .
+doc:FactswaveguideMaterial schema:isAccessibleForFree true .
+_:e65f72e6e2eeb3e68c60fa3414e04d5e rdf:reifies <<( doc:FactswaveguideMaterial schema:isAccessibleForFree true )>> ;
+	prov:wasDerivedFrom doc:19fe98f30ca1 .
+doc:FactsreferenceReceiver rdfs:label "calibrated reference receiver" .
+_:c951e986a5347179f17727d9e4343ebe rdf:reifies <<( doc:FactsreferenceReceiver rdfs:label "calibrated reference receiver" )>> ;
+	prov:wasDerivedFrom doc:19fe98f30ca1 .
+doc:FactsansysSoftware a cco:Artifact .
+_:dc89911a6e21c5a331c545ae2558c012 rdf:reifies <<( doc:FactsansysSoftware rdf:type cco:Artifact )>> ;
+	prov:wasDerivedFrom doc:19fe98f30ca1 .
+doc:FactswaveguideMaterial a cco:Artifact .
+_:b34d9eb364d028df8339ccdd3bad46c7 rdf:reifies <<( doc:FactswaveguideMaterial rdf:type cco:Artifact )>> ;
+	prov:wasDerivedFrom doc:19fe98f30ca1 .
+doc:FactsfunctionGenerator a cco:Artifact .
+_:ec1553c8fed1e50c4b8f887f76381cdd rdf:reifies <<( doc:FactsfunctionGenerator rdf:type cco:Artifact )>> ;
+	prov:wasDerivedFrom doc:19fe98f30ca1 .
+doc:FactsbondingAdhesive schema:material "epoxy" .
+_:e5d1256f9c3ea3d5aa1fd7a9ebbc800d rdf:reifies <<( doc:FactsbondingAdhesive schema:material "epoxy" )>> ;
+	prov:wasDerivedFrom doc:19fe98f30ca1 .
+doc:FactshornLength cd:has_text_value "5.5 cm" .
+_:b99e6558382dac8ece5673b8abc9596 rdf:reifies <<( doc:FactshornLength cd:has_text_value "5.5 cm" )>> ;
+	prov:wasDerivedFrom doc:19fe98f30ca1 .
+doc:FactshornWaveguide cd:has_part doc:FactshornLength .
+_:aae1befc89ec765ae649a22b4488f802 rdf:reifies <<( doc:FactshornWaveguide cd:has_part doc:FactshornLength )>> ;
+	prov:wasDerivedFrom doc:19fe98f30ca1 .
+doc:FactspdEvents a cco:Artifact .
+_:aebf8041b034c104c4160dec70338a15 rdf:reifies <<( doc:FactspdEvents rdf:type cco:Artifact )>> ;
+	prov:wasDerivedFrom doc:19fe98f30ca1 .
+doc:FactshornWaveguide a cco:Artifact .
+_:c40bdc149e43cb1a02ab6d91d97cd55f rdf:reifies <<( doc:FactshornWaveguide rdf:type cco:Artifact )>> ;
+	prov:wasDerivedFrom doc:19fe98f30ca1 .
+doc:FactshornWaveguide a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Predictive_maintenance_system_module> .
+_:a1a6386fd439ecdc05908e1f8a032a6 rdf:reifies <<( doc:FactshornWaveguide rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Predictive_maintenance_system_module> )>> ;
+	prov:wasDerivedFrom doc:19fe98f30ca1 .
+doc:FactswaveguideMaterial rdfs:label "PETG" .
+_:b29546281bb5cb855481684615f7d382 rdf:reifies <<( doc:FactswaveguideMaterial rdfs:label "PETG" )>> ;
+	prov:wasDerivedFrom doc:19fe98f30ca1 .
+doc:FactspdDetectionWindow a obo:BFO_0000019 .
+_:e823882f64c739c71ab3e87c354ddff1 rdf:reifies <<( doc:FactspdDetectionWindow rdf:type obo:BFO_0000019 )>> ;
+	prov:wasDerivedFrom doc:19fe98f30ca1 .
+doc:FactsactualPressure a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Performance_value> .
+_:ad9653b1e90e93425257e69f9c3a0053 rdf:reifies <<( doc:FactsactualPressure rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Performance_value> )>> ;
+	prov:wasDerivedFrom doc:19fe98f30ca1 .
+doc:FactsfixedResonatingStructure a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Predictive_maintenance_system_module> .
+_:e9368431573fbd56ac24382560c31b1b rdf:reifies <<( doc:FactsfixedResonatingStructure rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Predictive_maintenance_system_module> )>> ;
+	prov:wasDerivedFrom doc:19fe98f30ca1 .
+doc:FactswaveguideMaterial a schema:Product .
+_:c979d700c0cc7830ec7d115b09201b8f rdf:reifies <<( doc:FactswaveguideMaterial rdf:type schema:Product )>> ;
+	prov:wasDerivedFrom doc:19fe98f30ca1 .
+doc:FactsfixedResonatingStructure a cco:Artifact .
+_:d6e81c08e5a2f7b7dc93ed89ddfbe0db rdf:reifies <<( doc:FactsfixedResonatingStructure rdf:type cco:Artifact )>> ;
+	prov:wasDerivedFrom doc:19fe98f30ca1 .
+doc:FactshornWaveguide cd:has_function doc:FactsacousticGuidanceFunction .
+_:b4037e7f3e4be88f30aaa622f0cc54de rdf:reifies <<( doc:FactshornWaveguide cd:has_function doc:FactsacousticGuidanceFunction )>> ;
+	prov:wasDerivedFrom doc:19fe98f30ca1 .
+doc:FactspressureAmplification a obo:BFO_0000034 .
+_:d104e92ca1cca6deee41f9e568bd780b rdf:reifies <<( doc:FactspressureAmplification rdf:type obo:BFO_0000034 )>> ;
+	prov:wasDerivedFrom doc:19fe98f30ca1 .
+doc:FactsactualPressure rdfs:label "actual pressure PF" .
+_:b8c954a7caa98a03f1971a150cb53d5f rdf:reifies <<( doc:FactsactualPressure rdfs:label "actual pressure PF" )>> ;
+	prov:wasDerivedFrom doc:19fe98f30ca1 .
+doc:FactshornLength rdfs:label "horn length" .
+_:dc72b048c47ad4251cea98336e19f8ff rdf:reifies <<( doc:FactshornLength rdfs:label "horn length" )>> ;
+	prov:wasDerivedFrom doc:19fe98f30ca1 .
+doc:FactstestPlatform a cco:Artifact .
+_:b61ab4e6c711472e990d5561170df43e rdf:reifies <<( doc:FactstestPlatform rdf:type cco:Artifact )>> ;
+	prov:wasDerivedFrom doc:19fe98f30ca1 .
+doc:FactshornLength a obo:BFO_0000019 .
+_:e198bf48d5b9ecb996442b656571338c rdf:reifies <<( doc:FactshornLength rdf:type obo:BFO_0000019 )>> ;
+	prov:wasDerivedFrom doc:19fe98f30ca1 .
+doc:FactsbondingAdhesive schema:name "epoxy adhesive" .
+_:be30f34120110cd2a4c886c4e2960e8e rdf:reifies <<( doc:FactsbondingAdhesive schema:name "epoxy adhesive" )>> ;
+	prov:wasDerivedFrom doc:19fe98f30ca1 .
+doc:FactsbraggGrating a cco:Artifact .
+_:bbfa6537ac4ed563b1a0ce53f20c4014 rdf:reifies <<( doc:FactsbraggGrating rdf:type cco:Artifact )>> ;
+	prov:wasDerivedFrom doc:19fe98f30ca1 .
+doc:FactsfbgSensor_1 a cco:Artifact .
+_:f6b8b807e8fdb7659ed825e46b9928fe rdf:reifies <<( doc:FactsfbgSensor_1 rdf:type cco:Artifact )>> ;
+	prov:wasDerivedFrom doc:19fe98f30ca1 .
+doc:FactspdAcousticEmissions a cco:Artifact .
+_:e35a72169f61c996952d325531e8a359 rdf:reifies <<( doc:FactspdAcousticEmissions rdf:type cco:Artifact )>> ;
+	prov:wasDerivedFrom doc:19fe98f30ca1 .
+doc:FactsfixedDistance rdfs:label "fixed distance" .
+_:aba9d1b5737382ebea84187a1eb85862 rdf:reifies <<( doc:FactsfixedDistance rdfs:label "fixed distance" )>> ;
+	prov:wasDerivedFrom doc:19fe98f30ca1 .
+doc:FactshornLength cd:has_text_value "0.75 cm" .
+_:c20c3a6b26b94e0fc0da14763df5f704 rdf:reifies <<( doc:FactshornLength cd:has_text_value "0.75 cm" )>> ;
+	prov:wasDerivedFrom doc:19fe98f30ca1 .
+doc:FactsbondingAdhesive a cco:Artifact .
+_:b25b93215a6fac67cbeaace6739461d6 rdf:reifies <<( doc:FactsbondingAdhesive rdf:type cco:Artifact )>> ;
+	prov:wasDerivedFrom doc:19fe98f30ca1 .
+doc:FactsfbgSensor_1 cd:has_part doc:FactsfixedResonatingStructure .
+_:a64f2dc672ce55f6e01ef1f60ac20c1a rdf:reifies <<( doc:FactsfbgSensor_1 cd:has_part doc:FactsfixedResonatingStructure )>> ;
+	prov:wasDerivedFrom doc:19fe98f30ca1 .
+doc:FactshornLength rdfs:label "throat radius" .
+_:eee9e742cf798d276135ca081536e3a4 rdf:reifies <<( doc:FactshornLength rdfs:label "throat radius" )>> ;
+	prov:wasDerivedFrom doc:19fe98f30ca1 .
+doc:Factssensitivity1 rdfs:label "directional sensitivity" .
+_:a7139728c1e3fc0f207a258c82cb5dcb rdf:reifies <<( doc:Factssensitivity1 rdfs:label "directional sensitivity" )>> ;
+	prov:wasDerivedFrom doc:19fe98f30ca1 .
+doc:FactstestPlatform rdfs:label "frequency response characterization test platform" .
+_:f2177d31505bf60b3267bc87dfae5c18 rdf:reifies <<( doc:FactstestPlatform rdfs:label "frequency response characterization test platform" )>> ;
+	prov:wasDerivedFrom doc:19fe98f30ca1 .
+doc:FactspressureAmplification rdfs:label "theoretical pressure amplification" .
+_:a7134c2956cc11dea8d52e1f38c9e110 rdf:reifies <<( doc:FactspressureAmplification rdfs:label "theoretical pressure amplification" )>> ;
+	prov:wasDerivedFrom doc:19fe98f30ca1 .
+doc:FactstestPlatform cd:has_part doc:FactsultrasonicTransmitter .
+_:a5e71a84f94d9cb65c2a6004d2ff60b1 rdf:reifies <<( doc:FactstestPlatform cd:has_part doc:FactsultrasonicTransmitter )>> ;
+	prov:wasDerivedFrom doc:19fe98f30ca1 .
+doc:FactsfbgSensor_1 cd:has_part doc:FactsbraggGrating .
+_:e4be27c1cf188a58bb3b533ced8a6af5 rdf:reifies <<( doc:FactsfbgSensor_1 cd:has_part doc:FactsbraggGrating )>> ;
+	prov:wasDerivedFrom doc:19fe98f30ca1 .
+doc:FactsgainValue rdfs:label "gain" .
+_:eb7ea41c87a01b4cb3e9b3969dae7613 rdf:reifies <<( doc:FactsgainValue rdfs:label "gain" )>> ;
+	prov:wasDerivedFrom doc:19fe98f30ca1 .
+doc:FactsfbgSensor_1 cd:has_part doc:FactsbondingAdhesive .
+_:a85f938971dd761f245e4ecc4fe76b27 rdf:reifies <<( doc:FactsfbgSensor_1 cd:has_part doc:FactsbondingAdhesive )>> ;
+	prov:wasDerivedFrom doc:19fe98f30ca1 .
+doc:FactshornWaveguide rdfs:label "exponential horn waveguide" .
+_:e4772b14050d2d3d08538c042438594c rdf:reifies <<( doc:FactshornWaveguide rdfs:label "exponential horn waveguide" )>> ;
+	prov:wasDerivedFrom doc:19fe98f30ca1 .
+doc:FactscutOffFrequency cd:has_text_value "4.2 kHz" .
+_:b2b270731d1a768bc5aaab9a9cf18a31 rdf:reifies <<( doc:FactscutOffFrequency cd:has_text_value "4.2 kHz" )>> ;
+	prov:wasDerivedFrom doc:19fe98f30ca1 .
+doc:FactsultrasonicTransmitter rdfs:label "calibrated ultrasonic transmitter" .
+_:e6381b8caf470b451f92511d71869610 rdf:reifies <<( doc:FactsultrasonicTransmitter rdfs:label "calibrated ultrasonic transmitter" )>> ;
+	prov:wasDerivedFrom doc:19fe98f30ca1 .
+doc:FactsfixedResonatingStructure rdfs:label "fixed resonating structure" .
+_:ac49b2abee14a34e9d003dbe15643c2e rdf:reifies <<( doc:FactsfixedResonatingStructure rdfs:label "fixed resonating structure" )>> ;
+	prov:wasDerivedFrom doc:19fe98f30ca1 .
+doc:FactsfixedDistance a obo:BFO_0000019 .
+_:e64903f28f613a567d51f7b753eb1e86 rdf:reifies <<( doc:FactsfixedDistance rdf:type obo:BFO_0000019 )>> ;
+	prov:wasDerivedFrom doc:19fe98f30ca1 .
+doc:Factsgroove a obo:BFO_0000030 .
+_:ab37f5e1b556342236b8a6b7ae7df7bd rdf:reifies <<( doc:Factsgroove rdf:type obo:BFO_0000030 )>> ;
+	prov:wasDerivedFrom doc:19fe98f30ca1 .
+doc:FactspressureAmplification rdfs:label "passive pressure amplification" .
+_:fab0a010831b0872dbf84395f05591e5 rdf:reifies <<( doc:FactspressureAmplification rdfs:label "passive pressure amplification" )>> ;
+	prov:wasDerivedFrom doc:19fe98f30ca1 .
+doc:FactsfixedDistance cd:has_text_value "0.5 m to 2.5 m" .
+_:eb61fcd209c9f29725b8a6ac639f80d2 rdf:reifies <<( doc:FactsfixedDistance cd:has_text_value "0.5 m to 2.5 m" )>> ;
+	prov:wasDerivedFrom doc:19fe98f30ca1 .
+doc:Factsgroove rdfs:label "longitudinal groove" .
+_:cd9c1970bbec5e8314d4022f7fec2b3a rdf:reifies <<( doc:Factsgroove rdfs:label "longitudinal groove" )>> ;
+	prov:wasDerivedFrom doc:19fe98f30ca1 .
+doc:FactsgainValue cd:has_text_value "17.5 dB" .
+_:f5981cbcb5ea879414bfedaf711b610f rdf:reifies <<( doc:FactsgainValue cd:has_text_value "17.5 dB" )>> ;
+	prov:wasDerivedFrom doc:19fe98f30ca1 .
+doc:FactshornLength rdfs:label "horn mouth" .
+_:b034272c72fba632a6fb1ac2bf32190b rdf:reifies <<( doc:FactshornLength rdfs:label "horn mouth" )>> ;
+	prov:wasDerivedFrom doc:19fe98f30ca1 .
+doc:FactspdDetectionWindow cd:has_text_value "20-80 kHz" .
+_:d877b82268237ca55e9c5c53357f211f rdf:reifies <<( doc:FactspdDetectionWindow cd:has_text_value "20-80 kHz" )>> ;
+	prov:wasDerivedFrom doc:19fe98f30ca1 .
+doc:FactsansysSoftware a cco:InformationProcessingArtifact .
+_:b8296b2149f8610ac13c115cf925196 rdf:reifies <<( doc:FactsansysSoftware rdf:type cco:InformationProcessingArtifact )>> ;
+	prov:wasDerivedFrom doc:19fe98f30ca1 .
+doc:FactsacousticGuidanceFunction a obo:BFO_0000034 .
+_:b5ae4185e168ea59107ae9031ce268a1 rdf:reifies <<( doc:FactsacousticGuidanceFunction rdf:type obo:BFO_0000034 )>> ;
+	prov:wasDerivedFrom doc:19fe98f30ca1 .
+doc:FactsreferenceReceiver schema:manufacturer "muRata" .
+_:ac0ec38b00ef1d516da85cb9ffaaad02 rdf:reifies <<( doc:FactsreferenceReceiver schema:manufacturer "muRata" )>> ;
+	prov:wasDerivedFrom doc:19fe98f30ca1 .
+doc:FactsreferenceReceiver schema:model "MA40S4R" .
+_:e8038ae0b57811ff5d483a36c391f5f8 rdf:reifies <<( doc:FactsreferenceReceiver schema:model "MA40S4R" )>> ;
+	prov:wasDerivedFrom doc:19fe98f30ca1 .
+doc:FactsfixedResonatingStructure cd:has_part doc:Factsgroove .
+_:dea1aeeb7598e95028c8b1aaddb3cff4 rdf:reifies <<( doc:FactsfixedResonatingStructure cd:has_part doc:Factsgroove )>> ;
+	prov:wasDerivedFrom doc:19fe98f30ca1 .
+obo:BFO_0000034 owl:sameAs obo:BFO_0000030 .

@@ -1,0 +1,540 @@
+@prefix None: <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD/seed#> .
+@prefix cco: <http://www.ontologyrepository.com/CommonCoreOntologies/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doc: <https://growgraph.dev/doc/132fb3c19ecf/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix cd: <https://growgraph.dev/facts> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix schema: <https://schema.org/> .
+@prefix schema1: <http://schema.org/> .
+doc:ff1ceb625b40 a prov:Entity , schema:text ;
+	prov:generatedAtTime "2026-07-22T21:32:47.959135Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+	schema:position 0 ;
+	schema:identifier "ff1ceb625b40" .
+doc:FactskeywordElevators a schema1:DefinedTerm .
+_:f780b4b727d2af45ab5a58904d9f92cd rdf:reifies <<( doc:FactskeywordElevators rdf:type schema1:DefinedTerm )>> ;
+	prov:wasDerivedFrom doc:ff1ceb625b40 .
+doc:Predictive_maintenance_model a schema1:Thing .
+_:b6da01d4d57a2a5dff19910e2fafa4b rdf:reifies <<( doc:Predictive_maintenance_model rdf:type schema1:Thing )>> ;
+	prov:wasDerivedFrom doc:ff1ceb625b40 .
+doc:Predictive_maintenance_model a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Predictive_maintenance_system_module> .
+_:c3a2605e17b21df857a3afcbd97d3224 rdf:reifies <<( doc:Predictive_maintenance_model rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Predictive_maintenance_system_module> )>> ;
+	prov:wasDerivedFrom doc:ff1ceb625b40 .
+doc:Predictive_maintenance_model a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Fault_identification> .
+_:cf33a11dfd4e239733e0db4fdb12a436 rdf:reifies <<( doc:Predictive_maintenance_model rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Fault_identification> )>> ;
+	prov:wasDerivedFrom doc:ff1ceb625b40 .
+doc:Predictive_maintenance_model schema1:name "predictive maintenance" .
+_:b87f286db6947f5096c050790e8bbe48 rdf:reifies <<( doc:Predictive_maintenance_model schema1:name "predictive maintenance" )>> ;
+	prov:wasDerivedFrom doc:ff1ceb625b40 .
+doc:Factsarticle1_70 dcterms:subject doc:Predictive_maintenance_model .
+_:ae54d70c5d0db89077b4171a612de6c6 rdf:reifies <<( doc:Factsarticle1_70 dcterms:subject doc:Predictive_maintenance_model )>> ;
+	prov:wasDerivedFrom doc:ff1ceb625b40 .
+doc:FactsmodelTypeMl a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Model_type> .
+_:aee3a5d1c1e6e068977139b557ac6737 rdf:reifies <<( doc:FactsmodelTypeMl rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Model_type> )>> ;
+	prov:wasDerivedFrom doc:ff1ceb625b40 .
+doc:Factsarticle1_70 cco:is_about doc:Factselevator_1 .
+_:a3f49558e22a47f39493dcfc6f8dbd4d rdf:reifies <<( doc:Factsarticle1_70 cco:is_about doc:Factselevator_1 )>> ;
+	prov:wasDerivedFrom doc:ff1ceb625b40 .
+doc:Predictive_maintenance_model schema1:name "machine learning" .
+_:d2b66ab710051c2e6ae010d24bc8dc09 rdf:reifies <<( doc:Predictive_maintenance_model schema1:name "machine learning" )>> ;
+	prov:wasDerivedFrom doc:ff1ceb625b40 .
+doc:Factsauthor4_13 schema1:name "Dariusz Czerwinski" .
+_:c9eec699fef1959c17fd8a09b3df370f rdf:reifies <<( doc:Factsauthor4_13 schema1:name "Dariusz Czerwinski" )>> ;
+	prov:wasDerivedFrom doc:ff1ceb625b40 .
+doc:Factselevator_1 <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#has_interger_value> 11 .
+_:f3569b980152d767f27f94414c71e480 rdf:reifies <<( doc:Factselevator_1 <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#has_interger_value> 11 )>> ;
+	prov:wasDerivedFrom doc:ff1ceb625b40 .
+doc:Factsauthor4_13 a schema1:Person .
+_:a2562fd64b92419e5079ec404560f350 rdf:reifies <<( doc:Factsauthor4_13 rdf:type schema1:Person )>> ;
+	prov:wasDerivedFrom doc:ff1ceb625b40 .
+doc:Factsarticle1_70 schema1:about doc:Predictive_maintenance_model .
+_:b3b253cb1d82b70be3af8cdeabc095ab rdf:reifies <<( doc:Factsarticle1_70 schema1:about doc:Predictive_maintenance_model )>> ;
+	prov:wasDerivedFrom doc:ff1ceb625b40 .
+doc:Predictive_maintenance_model <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#has_synchronization> doc:FactssyncOnline .
+_:b1cd9a6e8297ddd5700d293946bf3a4a rdf:reifies <<( doc:Predictive_maintenance_model <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#has_synchronization> doc:FactssyncOnline )>> ;
+	prov:wasDerivedFrom doc:ff1ceb625b40 .
+doc:Factsarticle1_70 schema1:abstract "This article addresses the issue of the elevator cabin door drive system failure diagnosis. The analyzed component is one of the most critical and the most vulnerable part of the entire elevator. Existing solutions in the literature include methods such as spectral analysis of system vibrations, motor current signature analysis, fishbone diagrams, fault trees, multi-agent systems, image recognition, and machine learning techniques. However, there is a noticeable gap in comprehensive studies that specifically address classification of the multiple types of system components failures, class imbalance in the dataset, and the need to reduce data transmitted over the elevator's internal bus. The developed diagnostic system measures the drive system's parameters, processes them to reduce data, and classifies 11 device failures. This was achieved by constructing a test bench with a prototype cabin door drive system, identifying the most frequent system faults, developing a data preprocessing method that aggregates every driving cycle to one sample, reducing the transmitted data by 300 times, and using machine learning for modeling. A comparative analysis of the fault detection performance of seven different machine learning algorithms was conducted. An optimal cross-validation method and hyperparameter optimization techniques were employed to fine-tune each model, achieving a recall of over 97% and an F1 score approximately 97%. Finally, the developed data preparation method was implemented in the cabin door drive controller." .
+_:c0bea177db147117abfdb04b7394bd23 rdf:reifies <<( doc:Factsarticle1_70 schema1:abstract "This article addresses the issue of the elevator cabin door drive system failure diagnosis. The analyzed component is one of the most critical and the most vulnerable part of the entire elevator. Existing solutions in the literature include methods such as spectral analysis of system vibrations, motor current signature analysis, fishbone diagrams, fault trees, multi-agent systems, image recognition, and machine learning techniques. However, there is a noticeable gap in comprehensive studies that specifically address classification of the multiple types of system components failures, class imbalance in the dataset, and the need to reduce data transmitted over the elevator's internal bus. The developed diagnostic system measures the drive system's parameters, processes them to reduce data, and classifies 11 device failures. This was achieved by constructing a test bench with a prototype cabin door drive system, identifying the most frequent system faults, developing a data preprocessing method that aggregates every driving cycle to one sample, reducing the transmitted data by 300 times, and using machine learning for modeling. A comparative analysis of the fault detection performance of seven different machine learning algorithms was conducted. An optimal cross-validation method and hyperparameter optimization techniques were employed to fine-tune each model, achieving a recall of over 97% and an F1 score approximately 97%. Finally, the developed data preparation method was implemented in the cabin door drive controller." )>> ;
+	prov:wasDerivedFrom doc:ff1ceb625b40 .
+doc:Factsreliability <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#has_text_value> "approximately 97%" .
+_:d4b992915828671cc38b6882566ddf9e rdf:reifies <<( doc:Factsreliability <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#has_text_value> "approximately 97%" )>> ;
+	prov:wasDerivedFrom doc:ff1ceb625b40 .
+doc:Predictive_maintenance_model <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#has_design_detail> doc:FactsdetailDataReduction .
+_:b902c3be85908db5eafe3b10fedb7860 rdf:reifies <<( doc:Predictive_maintenance_model <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#has_design_detail> doc:FactsdetailDataReduction )>> ;
+	prov:wasDerivedFrom doc:ff1ceb625b40 .
+doc:Predictive_maintenance_model a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Fault_detection> .
+_:c834cf52a8eed1d8dc13ae8b85eaa9c6 rdf:reifies <<( doc:Predictive_maintenance_model rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Fault_detection> )>> ;
+	prov:wasDerivedFrom doc:ff1ceb625b40 .
+doc:FactsfailureModesCount a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Number_of_failure_modes> .
+_:f55ff5a94eaa586f4ed69575fa3445aa rdf:reifies <<( doc:FactsfailureModesCount rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Number_of_failure_modes> )>> ;
+	prov:wasDerivedFrom doc:ff1ceb625b40 .
+doc:Predictive_maintenance_model <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#has_text_value> "fault detection and diagnosis model" .
+_:dd2fb9df6e79794d4dc03e04e8735775 rdf:reifies <<( doc:Predictive_maintenance_model <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#has_text_value> "fault detection and diagnosis model" )>> ;
+	prov:wasDerivedFrom doc:ff1ceb625b40 .
+doc:Predictive_maintenance_model schema1:name "preventive maintenance" .
+_:f782bfc52b8ccdcc3a24909a1d0ab89d rdf:reifies <<( doc:Predictive_maintenance_model schema1:name "preventive maintenance" )>> ;
+	prov:wasDerivedFrom doc:ff1ceb625b40 .
+doc:Predictive_maintenance_model a schema1:DefinedTerm .
+_:f12954fd9f298295d36a63e0e3119292 rdf:reifies <<( doc:Predictive_maintenance_model rdf:type schema1:DefinedTerm )>> ;
+	prov:wasDerivedFrom doc:ff1ceb625b40 .
+doc:Factsarticle1_70 cco:is_about doc:Predictive_maintenance_model .
+_:a16bd09e8413f60a899b4ca02103a143 rdf:reifies <<( doc:Factsarticle1_70 cco:is_about doc:Predictive_maintenance_model )>> ;
+	prov:wasDerivedFrom doc:ff1ceb625b40 .
+doc:FactskeywordDataTransmission schema1:name "data transmission" .
+_:a48874d1778c3cdc8b2d7e09cfcaaffa rdf:reifies <<( doc:FactskeywordDataTransmission schema1:name "data transmission" )>> ;
+	prov:wasDerivedFrom doc:ff1ceb625b40 .
+doc:Factsarticle1_70 schema1:publisher doc:Factspublisher1_3 .
+_:a1a4c1f616f9ded0acbce1b0f835e77 rdf:reifies <<( doc:Factsarticle1_70 schema1:publisher doc:Factspublisher1_3 )>> ;
+	prov:wasDerivedFrom doc:ff1ceb625b40 .
+doc:FactsfailureModesCount <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#has_interger_value> 11 .
+_:ad49a2621cf9689234c73a6cb04cb9a0 rdf:reifies <<( doc:FactsfailureModesCount <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#has_interger_value> 11 )>> ;
+	prov:wasDerivedFrom doc:ff1ceb625b40 .
+doc:Predictive_maintenance_model <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#describes_type> doc:FactsmodelTypeMl .
+_:d82bbc8f7542fd12185c5f6a08d33956 rdf:reifies <<( doc:Predictive_maintenance_model <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#describes_type> doc:FactsmodelTypeMl )>> ;
+	prov:wasDerivedFrom doc:ff1ceb625b40 .
+doc:Factsarticle1_70 <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#has_publication_year> doc:Factsyear1_45 .
+_:cb0f016a3b1a6cc456055376fd6dbaf0 rdf:reifies <<( doc:Factsarticle1_70 <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#has_publication_year> doc:Factsyear1_45 )>> ;
+	prov:wasDerivedFrom doc:ff1ceb625b40 .
+doc:FactssyncOnline a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Module_synchronization> .
+_:cbbe85261878dd7ff49676e5079185c rdf:reifies <<( doc:FactssyncOnline rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Module_synchronization> )>> ;
+	prov:wasDerivedFrom doc:ff1ceb625b40 .
+doc:Factsreliability <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#has_text_value> "recall" .
+_:b03dbaab4bd1ea33c95856f07ad259ba rdf:reifies <<( doc:Factsreliability <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#has_text_value> "recall" )>> ;
+	prov:wasDerivedFrom doc:ff1ceb625b40 .
+doc:Factsarticle1_70 <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#has_identifier> doc:Factsdoi1_34 .
+_:c3d3674ba7dc01611991f76f91893bde rdf:reifies <<( doc:Factsarticle1_70 <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#has_identifier> doc:Factsdoi1_34 )>> ;
+	prov:wasDerivedFrom doc:ff1ceb625b40 .
+doc:Factsarticle1_70 schema1:headline "Efficient Fault Diagnosis of Elevator Cabin Door Drives Using Machine Learning with Data Reduction for Reliable Transmission" .
+_:dc4ccb0a53e1fd78efdf5f713ba9447f rdf:reifies <<( doc:Factsarticle1_70 schema1:headline "Efficient Fault Diagnosis of Elevator Cabin Door Drives Using Machine Learning with Data Reduction for Reliable Transmission" )>> ;
+	prov:wasDerivedFrom doc:ff1ceb625b40 .
+doc:Factsarticle1_70 dcterms:subject doc:FactskeywordDataTransmission .
+_:b06a07b7966f2eeddd87e6dc0bd4c715 rdf:reifies <<( doc:Factsarticle1_70 dcterms:subject doc:FactskeywordDataTransmission )>> ;
+	prov:wasDerivedFrom doc:ff1ceb625b40 .
+doc:FactsinputVarCount <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#has_interger_value> 1 .
+_:dedbe3f94b3eb126185fbe7b1c62504e rdf:reifies <<( doc:FactsinputVarCount <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#has_interger_value> 1 )>> ;
+	prov:wasDerivedFrom doc:ff1ceb625b40 .
+doc:Factsarticle1_70 schema1:author doc:Factsauthor4_13 .
+_:e9590d79cf1dba4d981d727f4adbb031 rdf:reifies <<( doc:Factsarticle1_70 schema1:author doc:Factsauthor4_13 )>> ;
+	prov:wasDerivedFrom doc:ff1ceb625b40 .
+doc:Factsreliability a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Performance_indicator> .
+_:f8e6e66ad98e0cc5f7bb04809eb51164 rdf:reifies <<( doc:Factsreliability rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Performance_indicator> )>> ;
+	prov:wasDerivedFrom doc:ff1ceb625b40 .
+doc:Factsreliability <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#has_text_value> "over 97%" .
+_:f13b7178dad8d28927016af467ae168 rdf:reifies <<( doc:Factsreliability <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#has_text_value> "over 97%" )>> ;
+	prov:wasDerivedFrom doc:ff1ceb625b40 .
+doc:Factselevator_1 a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Maintainable_item> .
+_:ea07fee88c9d9b19bda03e6edb030532 rdf:reifies <<( doc:Factselevator_1 rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Maintainable_item> )>> ;
+	prov:wasDerivedFrom doc:ff1ceb625b40 .
+doc:Predictive_maintenance_model schema1:name "fault diagnosis" .
+_:dc857d7fcb5ff20d818c2268eb4ea70d rdf:reifies <<( doc:Predictive_maintenance_model schema1:name "fault diagnosis" )>> ;
+	prov:wasDerivedFrom doc:ff1ceb625b40 .
+doc:FactsmodelTypeMl <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#has_text_value> "machine learning" .
+_:db4920c49a42ced61a8d0f9cad282a76 rdf:reifies <<( doc:FactsmodelTypeMl <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#has_text_value> "machine learning" )>> ;
+	prov:wasDerivedFrom doc:ff1ceb625b40 .
+doc:Factspublisher1_3 a schema1:Organization .
+_:d67d310601bb9771be7a2ecde2c11b8a rdf:reifies <<( doc:Factspublisher1_3 rdf:type schema1:Organization )>> ;
+	prov:wasDerivedFrom doc:ff1ceb625b40 .
+doc:FactskeywordElevators schema1:name "elevators" .
+_:bc3a491b9de6cf3be98cd8e7b02f5e1a rdf:reifies <<( doc:FactskeywordElevators schema1:name "elevators" )>> ;
+	prov:wasDerivedFrom doc:ff1ceb625b40 .
+doc:FactsmodelConfiguration1 a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Model_configuration> .
+_:daf0330aec2db75582d7717243af1d9f rdf:reifies <<( doc:FactsmodelConfiguration1 rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Model_configuration> )>> ;
+	prov:wasDerivedFrom doc:ff1ceb625b40 .
+doc:Predictive_maintenance_model <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#has_predictive_maintenance_function> doc:FactsfunctionRemainingUsefulLife .
+_:d4aae5180abcb39d99b9dfeeca893af2 rdf:reifies <<( doc:Predictive_maintenance_model <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#has_predictive_maintenance_function> doc:FactsfunctionRemainingUsefulLife )>> ;
+	prov:wasDerivedFrom doc:ff1ceb625b40 .
+doc:Predictive_maintenance_model schema1:name "classification algorithms" .
+_:b8295182c081765aa05fc787d2ec442 rdf:reifies <<( doc:Predictive_maintenance_model schema1:name "classification algorithms" )>> ;
+	prov:wasDerivedFrom doc:ff1ceb625b40 .
+doc:FactssyncOnline <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#has_text_value> "online" .
+_:e89acb5e547e6ebd226b52b608e1d46a rdf:reifies <<( doc:FactssyncOnline <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#has_text_value> "online" )>> ;
+	prov:wasDerivedFrom doc:ff1ceb625b40 .
+doc:Factsreliability <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#has_text_value> "F1 score" .
+_:d5065aa2cd88e160c65617b7e006b826 rdf:reifies <<( doc:Factsreliability <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#has_text_value> "F1 score" )>> ;
+	prov:wasDerivedFrom doc:ff1ceb625b40 .
+doc:Predictive_maintenance_model <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#has_predictive_maintenance_function> doc:Predictive_maintenance_model .
+_:aa7bf88f4304b517578cdffb26a9e73b rdf:reifies <<( doc:Predictive_maintenance_model <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#has_predictive_maintenance_function> doc:Predictive_maintenance_model )>> ;
+	prov:wasDerivedFrom doc:ff1ceb625b40 .
+doc:Factsyear1_45 a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Publication_year> .
+_:d19faa78d44049672592ea6eb7491415 rdf:reifies <<( doc:Factsyear1_45 rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Publication_year> )>> ;
+	prov:wasDerivedFrom doc:ff1ceb625b40 .
+doc:Factsarticle1_70 <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#has_title> doc:Factsdoi1_34 .
+_:ebfad34df9303cac47fc8683c3ce481a rdf:reifies <<( doc:Factsarticle1_70 <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#has_title> doc:Factsdoi1_34 )>> ;
+	prov:wasDerivedFrom doc:ff1ceb625b40 .
+doc:Predictive_maintenance_model <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#has_predictive_maintenance_function> doc:FactsfunctionFutureForecast .
+_:e35a24c8f7e3db7347c064b49ea7c3f6 rdf:reifies <<( doc:Predictive_maintenance_model <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#has_predictive_maintenance_function> doc:FactsfunctionFutureForecast )>> ;
+	prov:wasDerivedFrom doc:ff1ceb625b40 .
+doc:FactsmodelConfiguration1 <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#describes_configuration> doc:Predictive_maintenance_model .
+_:ea3507fcfde0a5787c33d4cc28f8bf42 rdf:reifies <<( doc:FactsmodelConfiguration1 <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#describes_configuration> doc:Predictive_maintenance_model )>> ;
+	prov:wasDerivedFrom doc:ff1ceb625b40 .
+doc:FactsdetailDataReduction a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Design_detail> .
+_:b4c7f3634f9a24dd8e013e1fd92045ec rdf:reifies <<( doc:FactsdetailDataReduction rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Design_detail> )>> ;
+	prov:wasDerivedFrom doc:ff1ceb625b40 .
+doc:Predictive_maintenance_model schema1:name "fault detection" .
+_:e5aa9110e66fda9ed6e6d2b8bfaad50 rdf:reifies <<( doc:Predictive_maintenance_model schema1:name "fault detection" )>> ;
+	prov:wasDerivedFrom doc:ff1ceb625b40 .
+doc:FactskeywordDataTransmission a schema1:DefinedTerm .
+_:b9d496fbeccf60105a934e0becd4a117 rdf:reifies <<( doc:FactskeywordDataTransmission rdf:type schema1:DefinedTerm )>> ;
+	prov:wasDerivedFrom doc:ff1ceb625b40 .
+doc:Factsauthor4_13 schema1:name "Krzysztof Kolano" .
+_:ad7142394d64ae6d89c61f871b8cbd9e rdf:reifies <<( doc:Factsauthor4_13 schema1:name "Krzysztof Kolano" )>> ;
+	prov:wasDerivedFrom doc:ff1ceb625b40 .
+doc:Predictive_maintenance_model <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#has_design_detail> doc:FactsdetailHyperparameterOptimization .
+_:cb875e5ec8084a8d721cd6698a24cd09 rdf:reifies <<( doc:Predictive_maintenance_model <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#has_design_detail> doc:FactsdetailHyperparameterOptimization )>> ;
+	prov:wasDerivedFrom doc:ff1ceb625b40 .
+doc:Predictive_maintenance_model <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#has_predictive_maintenance_function> doc:FactsfunctionHealthAssessment .
+_:af35824930d0360ad29bd2deb111dbef rdf:reifies <<( doc:Predictive_maintenance_model <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#has_predictive_maintenance_function> doc:FactsfunctionHealthAssessment )>> ;
+	prov:wasDerivedFrom doc:ff1ceb625b40 .
+doc:Factsauthor4_13 schema1:name "Jakub Geca" .
+_:b729f8b53b53b3ebfb0114fe54443e4d rdf:reifies <<( doc:Factsauthor4_13 schema1:name "Jakub Geca" )>> ;
+	prov:wasDerivedFrom doc:ff1ceb625b40 .
+doc:Factsauthor4_13 schema1:name "Bartosz Drzymala" .
+_:bd2bb3a3447aa0ca51693b3b020defad rdf:reifies <<( doc:Factsauthor4_13 schema1:name "Bartosz Drzymala" )>> ;
+	prov:wasDerivedFrom doc:ff1ceb625b40 .
+doc:Factspublisher1_3 schema1:name "MDPI" .
+_:b1cd454d631b1cf1df02aecbf7d94368 rdf:reifies <<( doc:Factspublisher1_3 schema1:name "MDPI" )>> ;
+	prov:wasDerivedFrom doc:ff1ceb625b40 .
+doc:Factsarticle1_70 schema1:datePublished "2025-06-22"^^<http://www.w3.org/2001/XMLSchema#date> .
+_:a342929a1e14035e0d68d096ec3ec7a7 rdf:reifies <<( doc:Factsarticle1_70 schema1:datePublished "2025-06-22"^^<http://www.w3.org/2001/XMLSchema#date> )>> ;
+	prov:wasDerivedFrom doc:ff1ceb625b40 .
+doc:Factselevator_1 rdfs:label "elevator cabin door drive system"@en .
+_:f5ccaf1f08488078bdcf4786df7e4afa rdf:reifies <<( doc:Factselevator_1 rdfs:label "elevator cabin door drive system"@en )>> ;
+	prov:wasDerivedFrom doc:ff1ceb625b40 .
+doc:Factsdoi1_34 rdfs:label "Efficient Fault Diagnosis of Elevator Cabin Door Drives Using Machine Learning with Data Reduction for Reliable Transmission"@en .
+_:bafd52cf37cf0fc4da7fb6014bd7397e rdf:reifies <<( doc:Factsdoi1_34 rdfs:label "Efficient Fault Diagnosis of Elevator Cabin Door Drives Using Machine Learning with Data Reduction for Reliable Transmission"@en )>> ;
+	prov:wasDerivedFrom doc:ff1ceb625b40 .
+doc:Factsreliability a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Performance_value> .
+_:fd1ac0974d53e9a6f9a08fa916e21c8e rdf:reifies <<( doc:Factsreliability rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Performance_value> )>> ;
+	prov:wasDerivedFrom doc:ff1ceb625b40 .
+doc:Factsarticle1_70 dcterms:subject doc:FactskeywordElevators .
+_:b492e0f8bd6908b3513f0a6f7d8e49d3 rdf:reifies <<( doc:Factsarticle1_70 dcterms:subject doc:FactskeywordElevators )>> ;
+	prov:wasDerivedFrom doc:ff1ceb625b40 .
+doc:FactsfunctionRemainingUsefulLife a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Remaining_useful_life_estimation> .
+_:d81e02c8110eab6aeebfe66378c774ad rdf:reifies <<( doc:FactsfunctionRemainingUsefulLife rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Remaining_useful_life_estimation> )>> ;
+	prov:wasDerivedFrom doc:ff1ceb625b40 .
+doc:FactsdetailHyperparameterOptimization a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Design_detail> .
+_:bab0c91646f73bf1c726acf137c3c0cc rdf:reifies <<( doc:FactsdetailHyperparameterOptimization rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Design_detail> )>> ;
+	prov:wasDerivedFrom doc:ff1ceb625b40 .
+doc:Factsdoi1_34 <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#has_text_value> "10.3390/app15137017" .
+_:de56a27cb91c9eaad33562b3d4ce64d6 rdf:reifies <<( doc:Factsdoi1_34 <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#has_text_value> "10.3390/app15137017" )>> ;
+	prov:wasDerivedFrom doc:ff1ceb625b40 .
+doc:FactsinputVarCount a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#number_if_input_variables> .
+_:cb5d51c2e7e896f931edfe3aa7c5fb5f rdf:reifies <<( doc:FactsinputVarCount rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#number_if_input_variables> )>> ;
+	prov:wasDerivedFrom doc:ff1ceb625b40 .
+doc:Factsdoi1_34 a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Article_title> .
+_:f04092e0be24abeb6ce263fff5d88ae4 rdf:reifies <<( doc:Factsdoi1_34 rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Article_title> )>> ;
+	prov:wasDerivedFrom doc:ff1ceb625b40 .
+doc:Factsarticle1_70 a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Predictive_Maintenance_Article> .
+_:b61a13c61aa6d1adbe9d205a315b868e rdf:reifies <<( doc:Factsarticle1_70 rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Predictive_Maintenance_Article> )>> ;
+	prov:wasDerivedFrom doc:ff1ceb625b40 .
+doc:Predictive_maintenance_model a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Predictive_maintenance_model> .
+_:bbcec325da0a7b89caa79b43c7ada004 rdf:reifies <<( doc:Predictive_maintenance_model rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Predictive_maintenance_model> )>> ;
+	prov:wasDerivedFrom doc:ff1ceb625b40 .
+doc:Factsdoi1_34 a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Article_identifier> .
+_:f8bc157c6cd11ec4cf98e32f95249bc1 rdf:reifies <<( doc:Factsdoi1_34 rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Article_identifier> )>> ;
+	prov:wasDerivedFrom doc:ff1ceb625b40 .
+doc:FactsfunctionHealthAssessment a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Health_assessment> .
+_:a6636512b1e8869712c1464b2181f142 rdf:reifies <<( doc:FactsfunctionHealthAssessment rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Health_assessment> )>> ;
+	prov:wasDerivedFrom doc:ff1ceb625b40 .
+doc:Factselevator_1 dcterms:description "Prototype cabin door drive system used in the test bench" .
+_:e1f77fa8b9e74148abf2a73b4fa04fdd rdf:reifies <<( doc:Factselevator_1 dcterms:description "Prototype cabin door drive system used in the test bench" )>> ;
+	prov:wasDerivedFrom doc:ff1ceb625b40 .
+doc:Factsyear1_45 <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#has_interger_value> 2025 .
+_:cff15aef1801f3fc9fbb4f5f125ac576 rdf:reifies <<( doc:Factsyear1_45 <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#has_interger_value> 2025 )>> ;
+	prov:wasDerivedFrom doc:ff1ceb625b40 .
+doc:FactsfunctionFutureForecast a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Future_state_forecast> .
+_:d325de25504ab119720e0bfb17c0e66c rdf:reifies <<( doc:FactsfunctionFutureForecast rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Future_state_forecast> )>> ;
+	prov:wasDerivedFrom doc:ff1ceb625b40 .
+doc:628c7dedb0fa a prov:Entity , schema:text ;
+	prov:generatedAtTime "2026-07-22T21:32:47.965134Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+	schema:position 1 ;
+	schema:identifier "628c7dedb0fa" .
+_:ea07fee88c9d9b19bda03e6edb030532 prov:wasDerivedFrom doc:628c7dedb0fa .
+doc:FactsdataAcquisitionSystem cd:has_text_value "storage" .
+_:cb98fde828b8562fb1df8b9369617910 rdf:reifies <<( doc:FactsdataAcquisitionSystem cd:has_text_value "storage" )>> ;
+	prov:wasDerivedFrom doc:628c7dedb0fa .
+doc:Factselevator_1 rdfs:label "elevators"@en .
+_:de0126dd25c2c71bd4a3f5631cc143c2 rdf:reifies <<( doc:Factselevator_1 rdfs:label "elevators"@en )>> ;
+	prov:wasDerivedFrom doc:628c7dedb0fa .
+doc:Predictive_maintenance_model cco:is_about doc:Factselevator_1 .
+_:c73f1c11bce78947e473eefeaad02642 rdf:reifies <<( doc:Predictive_maintenance_model cco:is_about doc:Factselevator_1 )>> ;
+	prov:wasDerivedFrom doc:628c7dedb0fa .
+_:c834cf52a8eed1d8dc13ae8b85eaa9c6 prov:wasDerivedFrom doc:628c7dedb0fa .
+doc:Factsreliability rdfs:label "reliability"@en .
+_:a67fe3afae20b43fec5873ca8a510c0 rdf:reifies <<( doc:Factsreliability rdfs:label "reliability"@en )>> ;
+	prov:wasDerivedFrom doc:628c7dedb0fa .
+doc:FactstravelSpeed a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Data_variable> .
+_:b4bd92b6d784f0119ec4d8d2ebb4a8bf rdf:reifies <<( doc:FactstravelSpeed rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Data_variable> )>> ;
+	prov:wasDerivedFrom doc:628c7dedb0fa .
+_:f8e6e66ad98e0cc5f7bb04809eb51164 prov:wasDerivedFrom doc:628c7dedb0fa .
+doc:FactscontrolAlgorithm cd:describes_type doc:FactsremoteDataAcquisition .
+_:d29c8f1f9a4bde74699b7967cce8feda rdf:reifies <<( doc:FactscontrolAlgorithm cd:describes_type doc:FactsremoteDataAcquisition )>> ;
+	prov:wasDerivedFrom doc:628c7dedb0fa .
+doc:Factsdowntime_1 rdfs:label "downtime"@en .
+_:f5b0cfd18b763e05d025b4bf7b36660a rdf:reifies <<( doc:Factsdowntime_1 rdfs:label "downtime"@en )>> ;
+	prov:wasDerivedFrom doc:628c7dedb0fa .
+doc:FactsspeedCurve rdfs:label "optimized speed curve"@en .
+_:ac494c276161c4aba0505c3f02a7136e rdf:reifies <<( doc:FactsspeedCurve rdfs:label "optimized speed curve"@en )>> ;
+	prov:wasDerivedFrom doc:628c7dedb0fa .
+doc:FactsloadCapacity a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Data_variable> .
+_:dbca0149f7aead4f8b313f883c22053a rdf:reifies <<( doc:FactsloadCapacity rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Data_variable> )>> ;
+	prov:wasDerivedFrom doc:628c7dedb0fa .
+doc:FactsspeedCurve a schema1:PropertyValue .
+_:c10240c7d0a9192f9202eb4c1617f37 rdf:reifies <<( doc:FactsspeedCurve rdf:type schema1:PropertyValue )>> ;
+	prov:wasDerivedFrom doc:628c7dedb0fa .
+doc:FactsbuildingAccessibility cco:is_about doc:Factselevator_1 .
+_:c9236789002e5a612c3efd20ff0840a3 rdf:reifies <<( doc:FactsbuildingAccessibility cco:is_about doc:Factselevator_1 )>> ;
+	prov:wasDerivedFrom doc:628c7dedb0fa .
+doc:FactselderlyIndividuals rdfs:label "elderly individuals"@en .
+_:c31d7460fff309d76195285b3ca8cfd2 rdf:reifies <<( doc:FactselderlyIndividuals rdfs:label "elderly individuals"@en )>> ;
+	prov:wasDerivedFrom doc:628c7dedb0fa .
+doc:Factsdowntime_1 cco:describes doc:Factselevator_1 .
+_:cfaaa1ea219a0ee3f5c94447befb41c7 rdf:reifies <<( doc:Factsdowntime_1 cco:describes doc:Factselevator_1 )>> ;
+	prov:wasDerivedFrom doc:628c7dedb0fa .
+doc:Predictive_maintenance_model cd:has_text_value "rapid" .
+_:fcfc5e3f498fe341d9445bdbb524de22 rdf:reifies <<( doc:Predictive_maintenance_model cd:has_text_value "rapid" )>> ;
+	prov:wasDerivedFrom doc:628c7dedb0fa .
+doc:FactsbuildingAccessibility a schema1:DefinedTerm .
+_:e0bd2de3b531fb2c08f88b2c9fff99fc rdf:reifies <<( doc:FactsbuildingAccessibility rdf:type schema1:DefinedTerm )>> ;
+	prov:wasDerivedFrom doc:628c7dedb0fa .
+doc:FactscontrolAlgorithm rdfs:label "control algorithm"@en .
+_:bd05334f8858f713538b07bc6de86376 rdf:reifies <<( doc:FactscontrolAlgorithm rdfs:label "control algorithm"@en )>> ;
+	prov:wasDerivedFrom doc:628c7dedb0fa .
+doc:FactselderlyIndividuals cco:is_about doc:Factselevator_1 .
+_:eb1726063c87251f9e87ef3eed546005 rdf:reifies <<( doc:FactselderlyIndividuals cco:is_about doc:Factselevator_1 )>> ;
+	prov:wasDerivedFrom doc:628c7dedb0fa .
+doc:FactsmaintenanceStrategy rdfs:label "maintenance strategy"@en .
+_:a71afb7d4a1f066f207c33c74ff05c28 rdf:reifies <<( doc:FactsmaintenanceStrategy rdfs:label "maintenance strategy"@en )>> ;
+	prov:wasDerivedFrom doc:628c7dedb0fa .
+doc:FactsenergyEfficiency rdfs:label "energy efficiency"@en .
+_:d5492bafb4d29feb97523853e79fabae rdf:reifies <<( doc:FactsenergyEfficiency rdfs:label "energy efficiency"@en )>> ;
+	prov:wasDerivedFrom doc:628c7dedb0fa .
+doc:FactsliftingHeight rdfs:label "lifting height"@en .
+_:f219a8550ad9ed1ec9e1e2af813ea6ec rdf:reifies <<( doc:FactsliftingHeight rdfs:label "lifting height"@en )>> ;
+	prov:wasDerivedFrom doc:628c7dedb0fa .
+doc:Predictive_maintenance_model rdfs:label "fault detection"@en .
+_:fa7d92ec3550810bd034a59e7295cd89 rdf:reifies <<( doc:Predictive_maintenance_model rdfs:label "fault detection"@en )>> ;
+	prov:wasDerivedFrom doc:628c7dedb0fa .
+doc:FactselevatorSystemFailure rdfs:label "elevator system failures"@en .
+_:ee878f93b406bac6e776fa4a8193558 rdf:reifies <<( doc:FactselevatorSystemFailure rdfs:label "elevator system failures"@en )>> ;
+	prov:wasDerivedFrom doc:628c7dedb0fa .
+doc:FactsmaintenanceStrategy cco:is_about doc:Factselevator_1 .
+_:e08b5c9c6fe35ab5b29aaccc5d066ea4 rdf:reifies <<( doc:FactsmaintenanceStrategy cco:is_about doc:Factselevator_1 )>> ;
+	prov:wasDerivedFrom doc:628c7dedb0fa .
+_:cf33a11dfd4e239733e0db4fdb12a436 prov:wasDerivedFrom doc:628c7dedb0fa .
+doc:FactsmaintenanceStrategy a cco:DirectiveInformationContentEntity .
+_:e7465a97a68fbbe659182532a217becb rdf:reifies <<( doc:FactsmaintenanceStrategy rdf:type cco:DirectiveInformationContentEntity )>> ;
+	prov:wasDerivedFrom doc:628c7dedb0fa .
+doc:FactseuropesAgingPopulation cco:is_about doc:FactselderlyIndividuals .
+_:b6779467bb3f988877af6a6ccb2f2a3f rdf:reifies <<( doc:FactseuropesAgingPopulation cco:is_about doc:FactselderlyIndividuals )>> ;
+	prov:wasDerivedFrom doc:628c7dedb0fa .
+doc:FactsenergyEfficiency a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Data_variable> .
+_:e8084e0b70550264facff806cb0c9f7a rdf:reifies <<( doc:FactsenergyEfficiency rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Data_variable> )>> ;
+	prov:wasDerivedFrom doc:628c7dedb0fa .
+doc:FactsdataAcquisitionSystem cco:is_about doc:Factselevator_1 .
+_:d7f0c62412fdc6c1ef4d8bcf5267b273 rdf:reifies <<( doc:FactsdataAcquisitionSystem cco:is_about doc:Factselevator_1 )>> ;
+	prov:wasDerivedFrom doc:628c7dedb0fa .
+doc:FactscabinDoorFailure rdfs:label "cabin door failures"@en .
+_:e97eec59f6c29e9b39aa2f48f2387021 rdf:reifies <<( doc:FactscabinDoorFailure rdfs:label "cabin door failures"@en )>> ;
+	prov:wasDerivedFrom doc:628c7dedb0fa .
+doc:FactstravelSpeed rdfs:label "travel speed"@en .
+_:c092bbf27a1aef6b81a605c88a581c41 rdf:reifies <<( doc:FactstravelSpeed rdfs:label "travel speed"@en )>> ;
+	prov:wasDerivedFrom doc:628c7dedb0fa .
+doc:FactsdataAcquisitionSystem rdfs:label "data acquisition and storage"@en .
+_:e59c3d7791c0901578d6d3c37c8ea65c rdf:reifies <<( doc:FactsdataAcquisitionSystem rdfs:label "data acquisition and storage"@en )>> ;
+	prov:wasDerivedFrom doc:628c7dedb0fa .
+doc:Factsdowntime_1 a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Performance_indicator> .
+_:f04be6af3b331ef17aa95431cf9163a6 rdf:reifies <<( doc:Factsdowntime_1 rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Performance_indicator> )>> ;
+	prov:wasDerivedFrom doc:628c7dedb0fa .
+doc:FactsbuildingAccessibility rdfs:label "building accessibility"@en .
+_:d04cea76cfe157479c30f4c920fc11d rdf:reifies <<( doc:FactsbuildingAccessibility rdfs:label "building accessibility"@en )>> ;
+	prov:wasDerivedFrom doc:628c7dedb0fa .
+doc:Factsreliability cd:has_text_value "important" .
+_:c53c90bc0d9e28d9fba4f52d1484aed1 rdf:reifies <<( doc:Factsreliability cd:has_text_value "important" )>> ;
+	prov:wasDerivedFrom doc:628c7dedb0fa .
+doc:FactstravelSpeed cco:describes doc:Factselevator_1 .
+_:ca1b363e8cfe9d8dbe3c9eff20b8b9fe rdf:reifies <<( doc:FactstravelSpeed cco:describes doc:Factselevator_1 )>> ;
+	prov:wasDerivedFrom doc:628c7dedb0fa .
+doc:FactsliftingHeight a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Data_variable> .
+_:ecd533c76d36aaa35ec58e387284cff4 rdf:reifies <<( doc:FactsliftingHeight rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Data_variable> )>> ;
+	prov:wasDerivedFrom doc:628c7dedb0fa .
+doc:Factselevator_1 cd:has_text_value "complex electromechanical systems" .
+_:f317d552754804182da4659ab04e8c74 rdf:reifies <<( doc:Factselevator_1 cd:has_text_value "complex electromechanical systems" )>> ;
+	prov:wasDerivedFrom doc:628c7dedb0fa .
+doc:FactsloadCapacity cco:describes doc:Factselevator_1 .
+_:eca63ef6a52f8d10c29fa2564be784ec rdf:reifies <<( doc:FactsloadCapacity cco:describes doc:Factselevator_1 )>> ;
+	prov:wasDerivedFrom doc:628c7dedb0fa .
+doc:FactscabinDoorFailure a schema1:MedicalCondition .
+_:c51ddaea32cc300b3af9139014884100 rdf:reifies <<( doc:FactscabinDoorFailure rdf:type schema1:MedicalCondition )>> ;
+	prov:wasDerivedFrom doc:628c7dedb0fa .
+doc:FactselderlyIndividuals a schema1:PersonGroup .
+_:faeb917f5f2aac0dfc93553ce4645ab7 rdf:reifies <<( doc:FactselderlyIndividuals rdf:type schema1:PersonGroup )>> ;
+	prov:wasDerivedFrom doc:628c7dedb0fa .
+doc:FactseuropesAgingPopulation a schema1:Population .
+_:d8428ab39f8f7afaf99ac506a57385cf rdf:reifies <<( doc:FactseuropesAgingPopulation rdf:type schema1:Population )>> ;
+	prov:wasDerivedFrom doc:628c7dedb0fa .
+doc:FactsenergyEfficiency cco:describes doc:Factselevator_1 .
+_:d2b0aa2fc30008932a7439a702950b09 rdf:reifies <<( doc:FactsenergyEfficiency cco:describes doc:Factselevator_1 )>> ;
+	prov:wasDerivedFrom doc:628c7dedb0fa .
+doc:FactselevatorSystemFailure a schema1:MedicalCondition .
+_:ce8453be07bd58d4b47e6e1dfda414a3 rdf:reifies <<( doc:FactselevatorSystemFailure rdf:type schema1:MedicalCondition )>> ;
+	prov:wasDerivedFrom doc:628c7dedb0fa .
+doc:FactscontrolAlgorithm a cco:Algorithm .
+_:eef3f0457ba22d8febe6af5a1d1cd1c rdf:reifies <<( doc:FactscontrolAlgorithm rdf:type cco:Algorithm )>> ;
+	prov:wasDerivedFrom doc:628c7dedb0fa .
+doc:FactseuropesAgingPopulation rdfs:label "Europe's aging population"@en .
+_:d7498281da823c49fd17fe1f2a239bdb rdf:reifies <<( doc:FactseuropesAgingPopulation rdfs:label "Europe's aging population"@en )>> ;
+	prov:wasDerivedFrom doc:628c7dedb0fa .
+doc:FactspeopleWithDisabilities a schema1:PersonGroup .
+_:acf72b1c350e20d4dfe7bad5141fb77b rdf:reifies <<( doc:FactspeopleWithDisabilities rdf:type schema1:PersonGroup )>> ;
+	prov:wasDerivedFrom doc:628c7dedb0fa .
+doc:FactsloadCapacity rdfs:label "load capacity"@en .
+_:ef05eefaf06428d8838c951e91740012 rdf:reifies <<( doc:FactsloadCapacity rdfs:label "load capacity"@en )>> ;
+	prov:wasDerivedFrom doc:628c7dedb0fa .
+doc:FactsdataAcquisitionSystem a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Predictive_maintenance_system_module> .
+_:e4044309573cd6f7f45d753aa29245f1 rdf:reifies <<( doc:FactsdataAcquisitionSystem rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Predictive_maintenance_system_module> )>> ;
+	prov:wasDerivedFrom doc:628c7dedb0fa .
+doc:FactspeopleWithDisabilities cco:is_about doc:FactsbuildingAccessibility .
+_:b3835971798981f97e658d0022047dec rdf:reifies <<( doc:FactspeopleWithDisabilities cco:is_about doc:FactsbuildingAccessibility )>> ;
+	prov:wasDerivedFrom doc:628c7dedb0fa .
+doc:Predictive_maintenance_model rdfs:label "identification"@en .
+_:faaea0e637ebd2e5f44a62ca96dbb324 rdf:reifies <<( doc:Predictive_maintenance_model rdfs:label "identification"@en )>> ;
+	prov:wasDerivedFrom doc:628c7dedb0fa .
+doc:FactspeopleWithDisabilities rdfs:label "people with disabilities"@en .
+_:b637d22b6830d9a3b3400083c0827513 rdf:reifies <<( doc:FactspeopleWithDisabilities rdfs:label "people with disabilities"@en )>> ;
+	prov:wasDerivedFrom doc:628c7dedb0fa .
+doc:FactsremoteDataAcquisition a cco:Algorithm .
+_:e54a5424b6556f7c1c8e2f38dfee1ad4 rdf:reifies <<( doc:FactsremoteDataAcquisition rdf:type cco:Algorithm )>> ;
+	prov:wasDerivedFrom doc:628c7dedb0fa .
+doc:FactsliftingHeight cco:describes doc:Factselevator_1 .
+_:c8078e55a765e9c20ff5ec02d1530d1f rdf:reifies <<( doc:FactsliftingHeight cco:describes doc:Factselevator_1 )>> ;
+	prov:wasDerivedFrom doc:628c7dedb0fa .
+doc:Factsreliability cco:describes doc:Factselevator_1 .
+_:a6a3d3c34f9260ab7743d1a8c4db810f rdf:reifies <<( doc:Factsreliability cco:describes doc:Factselevator_1 )>> ;
+	prov:wasDerivedFrom doc:628c7dedb0fa .
+doc:FactscabinDoorFailure cd:has_text_value "up to 80% of all elevator system failures" .
+_:c3d1cd3f1b597833b4588cd96e053d70 rdf:reifies <<( doc:FactscabinDoorFailure cd:has_text_value "up to 80% of all elevator system failures" )>> ;
+	prov:wasDerivedFrom doc:628c7dedb0fa .
+doc:Factsdowntime_1 cd:has_text_value "associated with potential failures" .
+_:ec1961d0f77a59876f480bb32eae6db8 rdf:reifies <<( doc:Factsdowntime_1 cd:has_text_value "associated with potential failures" )>> ;
+	prov:wasDerivedFrom doc:628c7dedb0fa .
+doc:FactsremoteDataAcquisition rdfs:label "data acquisition from various devices performed remotely"@en .
+_:e9f9c8a654fe7c3026c57209fbec80fd rdf:reifies <<( doc:FactsremoteDataAcquisition rdfs:label "data acquisition from various devices performed remotely"@en )>> ;
+	prov:wasDerivedFrom doc:628c7dedb0fa .
+doc:6e40af68c9cd a prov:Entity , schema:text ;
+	prov:generatedAtTime "2026-07-22T21:32:47.968637Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+	schema:position 2 ;
+	schema:identifier "6e40af68c9cd" .
+doc:Predictive_maintenance_model None:has_predictive_maintenance_function doc:Predictive_maintenance_model .
+_:d36210d03755329fc5c7e9918e3825ca rdf:reifies <<( doc:Predictive_maintenance_model None:has_predictive_maintenance_function doc:Predictive_maintenance_model )>> ;
+	prov:wasDerivedFrom doc:6e40af68c9cd .
+doc:FactsmodelTypeMl None:has_text_value "generalized linear model" .
+_:c74042b7ef87447e5830bdffbbd2f82 rdf:reifies <<( doc:FactsmodelTypeMl None:has_text_value "generalized linear model" )>> ;
+	prov:wasDerivedFrom doc:6e40af68c9cd .
+doc:Predictive_maintenance_model None:describes_type doc:FactsmodelTypeMl .
+_:fb0081dc0d9412960db28a315420b866 rdf:reifies <<( doc:Predictive_maintenance_model None:describes_type doc:FactsmodelTypeMl )>> ;
+	prov:wasDerivedFrom doc:6e40af68c9cd .
+_:bbcec325da0a7b89caa79b43c7ada004 prov:wasDerivedFrom doc:6e40af68c9cd .
+doc:Factsdata3_1 a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Data_variable> .
+_:afc1d3f620db75b062e2d8153a6c5bbf rdf:reifies <<( doc:Factsdata3_1 rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Data_variable> )>> ;
+	prov:wasDerivedFrom doc:6e40af68c9cd .
+_:aee3a5d1c1e6e068977139b557ac6737 prov:wasDerivedFrom doc:6e40af68c9cd .
+doc:Factsyear1_45 None:has_interger_value 0 .
+_:d11eb17e4cad6901e95a3aa55d609326 rdf:reifies <<( doc:Factsyear1_45 None:has_interger_value 0 )>> ;
+	prov:wasDerivedFrom doc:6e40af68c9cd .
+doc:Factsitem2_4 rdfs:label "electromechanical systems"@en .
+_:e2fac7bffc3cea063de44cba26b69c92 rdf:reifies <<( doc:Factsitem2_4 rdfs:label "electromechanical systems"@en )>> ;
+	prov:wasDerivedFrom doc:6e40af68c9cd .
+doc:Factsreliability a None:Performance_indicator .
+_:f5ccbad7a696f931d1dbc62121008d64 rdf:reifies <<( doc:Factsreliability rdf:type None:Performance_indicator )>> ;
+	prov:wasDerivedFrom doc:6e40af68c9cd .
+doc:FactsmodelTypeMl None:has_text_value "random forest" .
+_:a67f69cfc4aced10ba0d77d85fa701a9 rdf:reifies <<( doc:FactsmodelTypeMl None:has_text_value "random forest" )>> ;
+	prov:wasDerivedFrom doc:6e40af68c9cd .
+doc:Factsdata3_1 None:has_text_value "accelerometer signals" .
+_:bc890769e074b1fc2c3a139da522b97 rdf:reifies <<( doc:Factsdata3_1 None:has_text_value "accelerometer signals" )>> ;
+	prov:wasDerivedFrom doc:6e40af68c9cd .
+doc:Factsreliability None:has_text_value "feature dimensionality" .
+_:ddf8e78122301cc9847ac63d9e775c71 rdf:reifies <<( doc:Factsreliability None:has_text_value "feature dimensionality" )>> ;
+	prov:wasDerivedFrom doc:6e40af68c9cd .
+doc:FactsmodelTypeMl None:has_text_value "unsupervised artificial neural network" .
+_:a593b18928182868e3e0f6c5af81e516 rdf:reifies <<( doc:FactsmodelTypeMl None:has_text_value "unsupervised artificial neural network" )>> ;
+	prov:wasDerivedFrom doc:6e40af68c9cd .
+doc:Factsarticle1_70 None:has_title doc:Factsdoi1_34 .
+_:c40d8b57d2566f37712cfc6b25974842 rdf:reifies <<( doc:Factsarticle1_70 None:has_title doc:Factsdoi1_34 )>> ;
+	prov:wasDerivedFrom doc:6e40af68c9cd .
+doc:Factsdata3_1 None:has_text_value "internal control signals" .
+_:b2816891d7fa455f9b41f027387913be rdf:reifies <<( doc:Factsdata3_1 None:has_text_value "internal control signals" )>> ;
+	prov:wasDerivedFrom doc:6e40af68c9cd .
+_:c834cf52a8eed1d8dc13ae8b85eaa9c6 prov:wasDerivedFrom doc:6e40af68c9cd .
+doc:Factsreliability None:has_text_value "sampling rate" .
+_:d4f7051dcda654ee200b527ad9b605ac rdf:reifies <<( doc:Factsreliability None:has_text_value "sampling rate" )>> ;
+	prov:wasDerivedFrom doc:6e40af68c9cd .
+doc:Factsdata3_1 None:has_text_value "acoustic signals" .
+_:f6a2bfe53e6d00892e095f4c76f592d4 rdf:reifies <<( doc:Factsdata3_1 None:has_text_value "acoustic signals" )>> ;
+	prov:wasDerivedFrom doc:6e40af68c9cd .
+doc:Factsreliability None:has_text_value "detection accuracy" .
+_:d87ce10e10ac5f509f0599d6eb553f17 rdf:reifies <<( doc:Factsreliability None:has_text_value "detection accuracy" )>> ;
+	prov:wasDerivedFrom doc:6e40af68c9cd .
+doc:Factsdata3_1 None:has_text_value "door opening signals" .
+_:fa742fac3cec86894fe91a22d662386 rdf:reifies <<( doc:Factsdata3_1 None:has_text_value "door opening signals" )>> ;
+	prov:wasDerivedFrom doc:6e40af68c9cd .
+doc:FactsmodelTypeMl None:has_text_value "bi-spectrum autoregressive model" .
+_:b57a0050c07eebcaaa0dd6750feb3096 rdf:reifies <<( doc:FactsmodelTypeMl None:has_text_value "bi-spectrum autoregressive model" )>> ;
+	prov:wasDerivedFrom doc:6e40af68c9cd .
+doc:Factsarticle1_70 a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Predictive_maintenance_model> .
+_:d5b80cae5f724c0b812ec90b3254f38a rdf:reifies <<( doc:Factsarticle1_70 rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Predictive_maintenance_model> )>> ;
+	prov:wasDerivedFrom doc:6e40af68c9cd .
+doc:Factsdoi1_34 None:has_text_value "[4]" .
+_:dc042d949f04d57ac2746620ec0e3aff rdf:reifies <<( doc:Factsdoi1_34 None:has_text_value "[4]" )>> ;
+	prov:wasDerivedFrom doc:6e40af68c9cd .
+doc:FactsmodelTypeMl None:has_text_value "inhomogeneous Poisson process" .
+_:bb3c0dfc9cf77edf2b186cfd72f03f6f rdf:reifies <<( doc:FactsmodelTypeMl None:has_text_value "inhomogeneous Poisson process" )>> ;
+	prov:wasDerivedFrom doc:6e40af68c9cd .
+_:ea07fee88c9d9b19bda03e6edb030532 prov:wasDerivedFrom doc:6e40af68c9cd .
+doc:Factsdata3_1 None:has_text_value "door closing signals" .
+_:d8a3c624e1bf9c4c1b5e4d186af5ebcf rdf:reifies <<( doc:Factsdata3_1 None:has_text_value "door closing signals" )>> ;
+	prov:wasDerivedFrom doc:6e40af68c9cd .
+_:f8bc157c6cd11ec4cf98e32f95249bc1 prov:wasDerivedFrom doc:6e40af68c9cd .
+doc:Predictive_maintenance_model None:has_predictive_maintenance_function doc:FactsfunctionHealthAssessment .
+_:b3591ca1261520043775b24538310de2 rdf:reifies <<( doc:Predictive_maintenance_model None:has_predictive_maintenance_function doc:FactsfunctionHealthAssessment )>> ;
+	prov:wasDerivedFrom doc:6e40af68c9cd .
+doc:Factsarticle1_70 None:has_identifier doc:Factsdoi1_34 .
+_:dfb4146a06e6606867c6a36ddaa20aad rdf:reifies <<( doc:Factsarticle1_70 None:has_identifier doc:Factsdoi1_34 )>> ;
+	prov:wasDerivedFrom doc:6e40af68c9cd .
+doc:Predictive_maintenance_model a None:Fault_feature_extraction .
+_:c9256fede61e8c4855cce3fba10a4f3e rdf:reifies <<( doc:Predictive_maintenance_model rdf:type None:Fault_feature_extraction )>> ;
+	prov:wasDerivedFrom doc:6e40af68c9cd .
+doc:Factsdata3_1 None:has_text_value "magnetic signals" .
+_:e49785f2d0659e824e00802d1a621e23 rdf:reifies <<( doc:Factsdata3_1 None:has_text_value "magnetic signals" )>> ;
+	prov:wasDerivedFrom doc:6e40af68c9cd .
+_:a6636512b1e8869712c1464b2181f142 prov:wasDerivedFrom doc:6e40af68c9cd .
+doc:Factsdata3_1 None:has_text_value "vibration levels" .
+_:e1b4a28c7bc0ea1fea548538fc43801e rdf:reifies <<( doc:Factsdata3_1 None:has_text_value "vibration levels" )>> ;
+	prov:wasDerivedFrom doc:6e40af68c9cd .
+doc:Factsdoi1_34 None:has_text_value "Remote data acquisition and monitoring systems for elevators" .
+_:ee238ce0de65a188efc988688428c2c6 rdf:reifies <<( doc:Factsdoi1_34 None:has_text_value "Remote data acquisition and monitoring systems for elevators" )>> ;
+	prov:wasDerivedFrom doc:6e40af68c9cd .
+doc:Factselevator_1 rdfs:label "elevator"@en .
+_:b99ffa29e5f4ff5a0dd87fd85629bdd4 rdf:reifies <<( doc:Factselevator_1 rdfs:label "elevator"@en )>> ;
+	prov:wasDerivedFrom doc:6e40af68c9cd .
+_:f04092e0be24abeb6ce263fff5d88ae4 prov:wasDerivedFrom doc:6e40af68c9cd .
+doc:Factsdata3_1 None:has_text_value "elevator stop signal" .
+_:dc9c856dfa1c4936f450eb25139e7492 rdf:reifies <<( doc:Factsdata3_1 None:has_text_value "elevator stop signal" )>> ;
+	prov:wasDerivedFrom doc:6e40af68c9cd .
+doc:FactsmodelTypeMl None:has_text_value "autoencoder" .
+_:ac13a9baac431065fe0cc1c7d645ab47 rdf:reifies <<( doc:FactsmodelTypeMl None:has_text_value "autoencoder" )>> ;
+	prov:wasDerivedFrom doc:6e40af68c9cd .
+_:d19faa78d44049672592ea6eb7491415 prov:wasDerivedFrom doc:6e40af68c9cd .
+doc:Predictive_maintenance_model cco:designates doc:Predictive_maintenance_model .
+_:eb3b201e315b1143ccb8ffdbf3bd833e rdf:reifies <<( doc:Predictive_maintenance_model cco:designates doc:Predictive_maintenance_model )>> ;
+	prov:wasDerivedFrom doc:6e40af68c9cd .
+doc:Factsarticle1_70 None:has_publication_year doc:Factsyear1_45 .
+_:ee10d84055a5ef17e10f053f00acd6fb rdf:reifies <<( doc:Factsarticle1_70 None:has_publication_year doc:Factsyear1_45 )>> ;
+	prov:wasDerivedFrom doc:6e40af68c9cd .
+doc:Factsitem2_4 a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Maintainable_item> .
+_:d49d2d483f474509edb94dac2a8724f4 rdf:reifies <<( doc:Factsitem2_4 rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Maintainable_item> )>> ;
+	prov:wasDerivedFrom doc:6e40af68c9cd .
+<http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Predictive_maintenance_model> owl:sameAs <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Predictive_maintenance_system_module> , <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Predictive_Maintenance_Article> .

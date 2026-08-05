@@ -179,14 +179,27 @@ The reranked files preserve the original CBR columns and add `cbr_rank`,
 `cbr_score`, `diversity_penalty`, `diversity_score`, `rerank_score`, and
 `rerank_method`.
 
+The bundled `PredictMaint_myCBR.prj` contains the 263 cases from
+`CleanedDATA V12-05-2021.csv`, which is therefore the default enrichment CSV
+for diversity scoring. Use a different `--casebase-csv` only when it matches
+the project file loaded by myCBR; otherwise retrieved references can have
+incomplete solution signatures and biased dissimilarities.
+
 ### 6. Batch comparison over extracted papers
 
 To compare plain top-5 CBR retrieval against a pool-15 MMR rerank for every
 canonical `facts_*.ttl` artifact under `extraction_papers/ontocast_runs/*/output/`, run:
 
 ```bash
-python scripts/compare_diversity_all_papers.py
+python scripts/compare_diversity_all_papers.py --query-year 2026
 ```
+
+`--query-year` freezes the year supplied to the legacy publication-recency
+similarity. Without it, the current system year is used. The comparison also
+accepts `--casebase-csv`; its default matches the bundled 263-case project.
+Use `--drop-default-synchronization` when the extraction bridge produced
+`Unknown synchronization` only as a missing-value default; the option assigns
+that field weight zero instead of treating the default as query evidence.
 
 The script rebuilds CBR, uses one deterministic extracted case per facts file,
 and writes the queries, raw CBR results, reranked results, per-query metrics,
@@ -226,8 +239,11 @@ Optional fields:
 The header must match upstream `GUI3` expectations:
 
 ```csv
-Task;w1;Case study type;w2;Case study;w3;Online/Offline;w4;Input for the model;w5;Input type;w6;Number of cases to retrieve;Amalgamation function
+Task;w1;Case study type;w2;Case study;w3;Online/Offline;w4;Input for the model;w5;Input type;w6;Query Year;Number of cases to retrieve;Amalgamation function
 ```
+
+`Query Year` is optional for backward compatibility; when omitted, the current
+system year is used.
 
 A sample file already exists at:
 

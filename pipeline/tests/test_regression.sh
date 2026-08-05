@@ -8,10 +8,12 @@ PYTHON_BIN=${PYTHON_BIN:-python3}
 SEED_ONTOLOGY=${SEED_ONTOLOGY:-pipeline/seed_ontology/opmad_seed.ttl}
 REFERENCE_CSV=${REFERENCE_CSV:-external/CBR-Ontology-For-Predictive-Maintenance/CBR-Ontology/CBRproject/data/CleanedDATA V21-07-2021.csv}
 NUMBER_OF_CASES=${NUMBER_OF_CASES:-3}
+FACTS_GLOB=${FACTS_GLOB:-pipeline/test_output/facts_*.ttl}
 
-shopt -s nullglob
-FACTS_FIXTURES=(pipeline/test_output/facts_*.ttl)
-shopt -u nullglob
+FACTS_ARTIFACTS=()
+while IFS= read -r facts_path; do
+  FACTS_ARTIFACTS+=("$facts_path")
+done < <({ compgen -G "$FACTS_GLOB" || true; } | sort)
 
 TMP_DIR=$(mktemp -d "${TMPDIR:-/tmp}/ontologies-regression.XXXXXX")
 CSV_OUTPUT="$TMP_DIR/extracted_cases.csv"
@@ -40,7 +42,7 @@ step() {
 
 [[ -f "$SEED_ONTOLOGY" ]] || fail "Missing seed ontology: $SEED_ONTOLOGY"
 [[ -f "$REFERENCE_CSV" ]] || fail "Missing reference CSV: $REFERENCE_CSV"
-(( ${#FACTS_FIXTURES[@]} > 0 )) || fail "No frozen facts fixtures found at pipeline/test_output/facts_*.ttl"
+(( ${#FACTS_ARTIFACTS[@]} > 0 )) || fail "No integration facts artifacts found matching $FACTS_GLOB. Run fixed-mode extraction first or set FACTS_GLOB to a concrete facts_*.ttl path/glob"
 
 step "1/6 Validate seed ontology parses with rdflib"
 "$PYTHON_BIN" - <<'PY' "$SEED_ONTOLOGY"
@@ -83,13 +85,13 @@ print(f"Validated reference row for study: {case.study_title}")
 PY
 pass "Extraction schema matches reference CSV"
 
-step "3/6 Run facts_to_csv.py on frozen facts fixtures"
+step "3/6 Run facts_to_csv.py on fixed-mode facts artifacts"
 "$PYTHON_BIN" pipeline/facts_to_csv.py \
   --ontology "$SEED_ONTOLOGY" \
   --output "$CSV_OUTPUT" \
-  --facts "${FACTS_FIXTURES[@]}"
+  --facts "${FACTS_ARTIFACTS[@]}"
 [[ -f "$CSV_OUTPUT" ]] || fail "facts_to_csv.py did not produce output: $CSV_OUTPUT"
-pass "facts_to_csv.py generated CSV from ${#FACTS_FIXTURES[@]} fixture(s)"
+pass "facts_to_csv.py generated CSV from ${#FACTS_ARTIFACTS[@]} artifact(s)"
 
 step "4/6 Validate output CSV structure and schema compliance"
 "$PYTHON_BIN" - <<'PY' "$CSV_OUTPUT" "$REFERENCE_CSV" "$QUERY_META"
@@ -239,5 +241,6 @@ pass "CBR returned $((RESULT_LINES - 1)) result row(s)"
 
 echo
 echo "Regression test passed"
-echo "- Facts fixtures: ${#FACTS_FIXTURES[@]}"
+echo "- Facts artifacts: ${#FACTS_ARTIFACTS[@]}"
+echo "- Facts glob: $FACTS_GLOB"
 echo "- Temporary output dir: $TMP_DIR"

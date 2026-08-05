@@ -1,0 +1,528 @@
+@prefix None: <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD/seed#> .
+@prefix cco: <http://www.ontologyrepository.com/CommonCoreOntologies/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doc: <https://growgraph.dev/doc/32cdd644a2e6/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix obo: <http://purl.obolibrary.org/obo/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix schema: <https://schema.org/> .
+doc:f5b7ab859abc a prov:Entity , schema:text ;
+	prov:generatedAtTime "2026-07-25T08:57:14.676388Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+	schema:position 0 ;
+	schema:identifier "f5b7ab859abc" .
+doc:Factssource9 schema:datePublished "2025-03-13"^^<http://www.w3.org/2001/XMLSchema#date> .
+_:c82ea78dceff24cac8ed52ba4bc614b5 rdf:reifies <<( doc:Factssource9 schema:datePublished "2025-03-13"^^<http://www.w3.org/2001/XMLSchema#date> )>> ;
+	prov:wasDerivedFrom doc:f5b7ab859abc .
+doc:FactsmunichAddress schema:postalCode "85748" .
+_:a14b1f3322025df3c52440ee9fb03e34 rdf:reifies <<( doc:FactsmunichAddress schema:postalCode "85748" )>> ;
+	prov:wasDerivedFrom doc:f5b7ab859abc .
+doc:FactsinstituteMachineElements a schema:Organization .
+_:b262066566439629f05e236f3c1a0cbc rdf:reifies <<( doc:FactsinstituteMachineElements rdf:type schema:Organization )>> ;
+	prov:wasDerivedFrom doc:f5b7ab859abc .
+doc:FactsGear schema:name "housing" .
+_:e2d7207523c557aaeaadc25b0f7b3223 rdf:reifies <<( doc:FactsGear schema:name "housing" )>> ;
+	prov:wasDerivedFrom doc:f5b7ab859abc .
+doc:FactserichKnoll schema:familyName "Chen" .
+_:f0324cae4eaa9f02367238ce49a75258 rdf:reifies <<( doc:FactserichKnoll schema:familyName "Chen" )>> ;
+	prov:wasDerivedFrom doc:f5b7ab859abc .
+doc:FactsGear schema:name "shafts" .
+_:dfafad35332f002ccb7fee54c184ec89 rdf:reifies <<( doc:FactsGear schema:name "shafts" )>> ;
+	prov:wasDerivedFrom doc:f5b7ab859abc .
+doc:FactsGear schema:hasPart doc:FactsGear .
+_:e24636a8455cb375d5579e8cc8f3d05b rdf:reifies <<( doc:FactsGear schema:hasPart doc:FactsGear )>> ;
+	prov:wasDerivedFrom doc:f5b7ab859abc .
+doc:FactserichKnoll schema:givenName "Karsten" .
+_:eadbd953aadf50a94d7ee934ff9c1475 rdf:reifies <<( doc:FactserichKnoll schema:givenName "Karsten" )>> ;
+	prov:wasDerivedFrom doc:f5b7ab859abc .
+doc:FactsinstituteMachineElements schema:address doc:FactsmunichAddress .
+_:c2069fcff0c8f01fe5f046b3295e37eb rdf:reifies <<( doc:FactsinstituteMachineElements schema:address doc:FactsmunichAddress )>> ;
+	prov:wasDerivedFrom doc:f5b7ab859abc .
+doc:FactsGear a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Maintainable_item> .
+_:f5eebc77da37fa34dc2e92b39c9d6495 rdf:reifies <<( doc:FactsGear rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Maintainable_item> )>> ;
+	prov:wasDerivedFrom doc:f5b7ab859abc .
+doc:Factssource9 schema:author doc:FactserichKnoll .
+_:cb50227b8fa7bfc32f428ab45efa1e6e rdf:reifies <<( doc:Factssource9 schema:author doc:FactserichKnoll )>> ;
+	prov:wasDerivedFrom doc:f5b7ab859abc .
+doc:Factssource9 schema:about doc:Factsfault_detection_1 .
+_:a99bd763b2e4728dcf6e93355311d72b rdf:reifies <<( doc:Factssource9 schema:about doc:Factsfault_detection_1 )>> ;
+	prov:wasDerivedFrom doc:f5b7ab859abc .
+doc:Factssource9 schema:about doc:FactsGear .
+_:ddb6c9bb0521a58d516eb156ba742730 rdf:reifies <<( doc:Factssource9 schema:about doc:FactsGear )>> ;
+	prov:wasDerivedFrom doc:f5b7ab859abc .
+doc:FactsappliedSciences_1 schema:name "Applied Sciences" .
+_:e573b52bf3224cbf0b2f6a66f4a23e05 rdf:reifies <<( doc:FactsappliedSciences_1 schema:name "Applied Sciences" )>> ;
+	prov:wasDerivedFrom doc:f5b7ab859abc .
+doc:FactsgearItemType cco:describes doc:FactsGear .
+_:a13a418902208b1dce47c680d378b2bc rdf:reifies <<( doc:FactsgearItemType cco:describes doc:FactsGear )>> ;
+	prov:wasDerivedFrom doc:f5b7ab859abc .
+doc:Factssource9 schema:keywords "gearbox" .
+_:c2d82f469673666b31a99c5967ac7c5d rdf:reifies <<( doc:Factssource9 schema:keywords "gearbox" )>> ;
+	prov:wasDerivedFrom doc:f5b7ab859abc .
+doc:Factspublication_year_1 None:has_interger_value 2025 .
+_:eb05a772374b13c2c5a4c315785a2cc2 rdf:reifies <<( doc:Factspublication_year_1 None:has_interger_value 2025 )>> ;
+	prov:wasDerivedFrom doc:f5b7ab859abc .
+doc:Factsfault_detection_1 a None:Fault_detection .
+_:a3ad8f54ca41ab2dbfbf3d4d21d6b3ed rdf:reifies <<( doc:Factsfault_detection_1 rdf:type None:Fault_detection )>> ;
+	prov:wasDerivedFrom doc:f5b7ab859abc .
+doc:FactserichKnoll a schema:Person .
+_:f7c0a78d11f950fc803273e687a855b2 rdf:reifies <<( doc:FactserichKnoll rdf:type schema:Person )>> ;
+	prov:wasDerivedFrom doc:f5b7ab859abc .
+doc:Factstitle_1 None:has_text_value "Simulative and Experimental Investigation of Vibration Transfer Path at Gearboxes" .
+_:ecdd7b5bbd6bdce49ccb0844e7d46df4 rdf:reifies <<( doc:Factstitle_1 None:has_text_value "Simulative and Experimental Investigation of Vibration Transfer Path at Gearboxes" )>> ;
+	prov:wasDerivedFrom doc:f5b7ab859abc .
+doc:FactserichKnoll schema:affiliation doc:FactsinstituteMachineElements .
+_:dd8e03349d679b198e113525eaca94cb rdf:reifies <<( doc:FactserichKnoll schema:affiliation doc:FactsinstituteMachineElements )>> ;
+	prov:wasDerivedFrom doc:f5b7ab859abc .
+doc:Factsdoi_1 schema:value "10.3390/app15063109" .
+_:bfc5fd51dd9278ec2997ca8211ad0989 rdf:reifies <<( doc:Factsdoi_1 schema:value "10.3390/app15063109" )>> ;
+	prov:wasDerivedFrom doc:f5b7ab859abc .
+doc:Factspublication_year_1 a None:Publication_year .
+_:ce4c88ddc1229ee61d2ece06dded2406 rdf:reifies <<( doc:Factspublication_year_1 rdf:type None:Publication_year )>> ;
+	prov:wasDerivedFrom doc:f5b7ab859abc .
+doc:Factstitle_1 a None:Article_title .
+_:ad27c31c3b725a22264d909349410f81 rdf:reifies <<( doc:Factstitle_1 rdf:type None:Article_title )>> ;
+	prov:wasDerivedFrom doc:f5b7ab859abc .
+doc:FactserichKnoll schema:familyName "Knoll" .
+_:b1c21304028a9fdc03dafa1a6f0b3e61 rdf:reifies <<( doc:FactserichKnoll schema:familyName "Knoll" )>> ;
+	prov:wasDerivedFrom doc:f5b7ab859abc .
+doc:Factssource9 schema:keywords "vibration transmission" .
+_:ebb87b70ecdbf370cc93b84d554ce0fa rdf:reifies <<( doc:Factssource9 schema:keywords "vibration transmission" )>> ;
+	prov:wasDerivedFrom doc:f5b7ab859abc .
+doc:FactsmunichAddress schema:streetAddress "BoltzmannstraÃe 15" .
+_:b8b3c47d4cc6ad5888e79ad4f3787b59 rdf:reifies <<( doc:FactsmunichAddress schema:streetAddress "BoltzmannstraÃe 15" )>> ;
+	prov:wasDerivedFrom doc:f5b7ab859abc .
+doc:Factssource9 schema:name "Simulative and Experimental Investigation of Vibration Transfer Path at Gearboxes" .
+_:b449edc58073a8f3976c05c9ab5407d1 rdf:reifies <<( doc:Factssource9 schema:name "Simulative and Experimental Investigation of Vibration Transfer Path at Gearboxes" )>> ;
+	prov:wasDerivedFrom doc:f5b7ab859abc .
+doc:Factssource9 schema:keywords "CM" .
+_:e4917b78a69a0f634ccbbf32bd997fe9 rdf:reifies <<( doc:Factssource9 schema:keywords "CM" )>> ;
+	prov:wasDerivedFrom doc:f5b7ab859abc .
+doc:FactserichKnoll schema:email "erich.knoll@tum.de" .
+_:ec5498e40f9a9da8d11ffa7be6f1fc6f rdf:reifies <<( doc:FactserichKnoll schema:email "erich.knoll@tum.de" )>> ;
+	prov:wasDerivedFrom doc:f5b7ab859abc .
+doc:FactsappliedSciences_1 a schema:Periodical .
+_:b53ad8ddee804d80c33291b4be12ff8 rdf:reifies <<( doc:FactsappliedSciences_1 rdf:type schema:Periodical )>> ;
+	prov:wasDerivedFrom doc:f5b7ab859abc .
+doc:FactsGear a schema:Product .
+_:f3460087cf9920c1fa784b810edc663b rdf:reifies <<( doc:FactsGear rdf:type schema:Product )>> ;
+	prov:wasDerivedFrom doc:f5b7ab859abc .
+doc:FactserichKnoll schema:familyName "Stahl" .
+_:a1e4373853f370e19e38df2f18053272 rdf:reifies <<( doc:FactserichKnoll schema:familyName "Stahl" )>> ;
+	prov:wasDerivedFrom doc:f5b7ab859abc .
+doc:Factssource9 schema:about doc:Factsvibration_transmission_1 .
+_:ee0170aa3c2c9fb3c0c7a1b0eaf5e2c7 rdf:reifies <<( doc:Factssource9 schema:about doc:Factsvibration_transmission_1 )>> ;
+	prov:wasDerivedFrom doc:f5b7ab859abc .
+doc:FactserichKnoll schema:givenName "Michael" .
+_:e24be7a98a89ba570386a62547413be5 rdf:reifies <<( doc:FactserichKnoll schema:givenName "Michael" )>> ;
+	prov:wasDerivedFrom doc:f5b7ab859abc .
+doc:FactsappliedSciences_1 schema:pagination "3109" .
+_:fee66f97121ad1c960476c983eadaf7e rdf:reifies <<( doc:FactsappliedSciences_1 schema:pagination "3109" )>> ;
+	prov:wasDerivedFrom doc:f5b7ab859abc .
+doc:FactsappliedSciences_1 schema:issueNumber 6 .
+_:d4667833f63954ee792a8dc4ee3d09e6 rdf:reifies <<( doc:FactsappliedSciences_1 schema:issueNumber 6 )>> ;
+	prov:wasDerivedFrom doc:f5b7ab859abc .
+doc:Factsvibration_transmission_1 schema:name "vibration transmission through gearbox components" .
+_:f9f646ac99078eeb6e7421e82c7dde2a rdf:reifies <<( doc:Factsvibration_transmission_1 schema:name "vibration transmission through gearbox components" )>> ;
+	prov:wasDerivedFrom doc:f5b7ab859abc .
+doc:Factssource9 a schema:ScholarlyArticle .
+_:b453d1fd53dbd99592f9f31d81cf0bfa rdf:reifies <<( doc:Factssource9 rdf:type schema:ScholarlyArticle )>> ;
+	prov:wasDerivedFrom doc:f5b7ab859abc .
+doc:FactsinstituteMachineElements schema:name "Institute of Machine Elements, Gear Research Center (FZG), Technical University of Munich (TUM)" .
+_:c46a15e3a0208e9ddbb3a9f7e2119487 rdf:reifies <<( doc:FactsinstituteMachineElements schema:name "Institute of Machine Elements, Gear Research Center (FZG), Technical University of Munich (TUM)" )>> ;
+	prov:wasDerivedFrom doc:f5b7ab859abc .
+doc:FactsmunichAddress schema:addressCountry "Germany" .
+_:eae747a68e57b3a98b0849213b2aa814 rdf:reifies <<( doc:FactsmunichAddress schema:addressCountry "Germany" )>> ;
+	prov:wasDerivedFrom doc:f5b7ab859abc .
+doc:FactsGear schema:name "bearings" .
+_:e317d7dae78d018e64a5aefc21fedcb rdf:reifies <<( doc:FactsGear schema:name "bearings" )>> ;
+	prov:wasDerivedFrom doc:f5b7ab859abc .
+doc:FactsgearItemType None:has_text_value "gearbox" .
+_:f769cd893887321ab6bbb62629166e5 rdf:reifies <<( doc:FactsgearItemType None:has_text_value "gearbox" )>> ;
+	prov:wasDerivedFrom doc:f5b7ab859abc .
+doc:Factsvibration_transmission_1 a None:Design_detail .
+_:d776eb674b5cc90d0464a692441b4e1a rdf:reifies <<( doc:Factsvibration_transmission_1 rdf:type None:Design_detail )>> ;
+	prov:wasDerivedFrom doc:f5b7ab859abc .
+doc:Factssource9 a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Predictive_maintenance_model> .
+_:c06d0390d9574132caf27b568f12f10f rdf:reifies <<( doc:Factssource9 rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Predictive_maintenance_model> )>> ;
+	prov:wasDerivedFrom doc:f5b7ab859abc .
+doc:Factssource9 None:has_identifier doc:Factsdoi_1 .
+_:a7b1c351ff4b5f542b6c740adfcac3dd rdf:reifies <<( doc:Factssource9 None:has_identifier doc:Factsdoi_1 )>> ;
+	prov:wasDerivedFrom doc:f5b7ab859abc .
+doc:Factssource9 None:has_title doc:Factstitle_1 .
+_:c1cbf2250c1797b1b9a7e9113280f8e2 rdf:reifies <<( doc:Factssource9 None:has_title doc:Factstitle_1 )>> ;
+	prov:wasDerivedFrom doc:f5b7ab859abc .
+doc:Factssource9 schema:keywords "condition monitoring" .
+_:a23f2c266f75f6aece21eeb5538dd246 rdf:reifies <<( doc:Factssource9 schema:keywords "condition monitoring" )>> ;
+	prov:wasDerivedFrom doc:f5b7ab859abc .
+doc:FactserichKnoll schema:givenName "Erich" .
+_:aa81d3f1c00e035b478ce29e7701a492 rdf:reifies <<( doc:FactserichKnoll schema:givenName "Erich" )>> ;
+	prov:wasDerivedFrom doc:f5b7ab859abc .
+doc:FactsgearItemType a None:item_type .
+_:c23be8b38dc0cecef75b82f172fc8bc9 rdf:reifies <<( doc:FactsgearItemType rdf:type None:item_type )>> ;
+	prov:wasDerivedFrom doc:f5b7ab859abc .
+doc:FactserichKnoll schema:familyName "Otto" .
+_:dec1172fb4f661a97086fa47df216d03 rdf:reifies <<( doc:FactserichKnoll schema:familyName "Otto" )>> ;
+	prov:wasDerivedFrom doc:f5b7ab859abc .
+doc:Factsdoi_1 schema:propertyID "DOI" .
+_:dbfdff066759f8327e7d199fbb3e8039 rdf:reifies <<( doc:Factsdoi_1 schema:propertyID "DOI" )>> ;
+	prov:wasDerivedFrom doc:f5b7ab859abc .
+doc:FactsappliedSciences_1 schema:volumeNumber 15 .
+_:a2c6d1a64b8c1f08232083c78eb4ee4e rdf:reifies <<( doc:FactsappliedSciences_1 schema:volumeNumber 15 )>> ;
+	prov:wasDerivedFrom doc:f5b7ab859abc .
+doc:FactsGear schema:name "gears" .
+_:cbc47cc562a095708ba5b522fddc0fac rdf:reifies <<( doc:FactsGear schema:name "gears" )>> ;
+	prov:wasDerivedFrom doc:f5b7ab859abc .
+doc:Factssource9 None:has_publication_year doc:Factspublication_year_1 .
+_:ce73e951d15933fbd8c527d391cf0941 rdf:reifies <<( doc:Factssource9 None:has_publication_year doc:Factspublication_year_1 )>> ;
+	prov:wasDerivedFrom doc:f5b7ab859abc .
+doc:Factsfault_detection_1 schema:name "automatic fault detection in gearboxes" .
+_:d2f3187f55c95aec103e545ef4e45b8f rdf:reifies <<( doc:Factsfault_detection_1 schema:name "automatic fault detection in gearboxes" )>> ;
+	prov:wasDerivedFrom doc:f5b7ab859abc .
+doc:FactsmunichAddress a schema:PostalAddress .
+_:bdceef2815326669902865ee8b00859d rdf:reifies <<( doc:FactsmunichAddress rdf:type schema:PostalAddress )>> ;
+	prov:wasDerivedFrom doc:f5b7ab859abc .
+doc:FactsmunichAddress schema:addressLocality "Garching bei MÃ¼nchen" .
+_:ec8f6d5e4b4825dfe3ba291e940d4430 rdf:reifies <<( doc:FactsmunichAddress schema:addressLocality "Garching bei MÃ¼nchen" )>> ;
+	prov:wasDerivedFrom doc:f5b7ab859abc .
+doc:Factsdoi_1 a None:Article_identifier .
+_:b3a2e94afd260d5d653b9c4318f83ed9 rdf:reifies <<( doc:Factsdoi_1 rdf:type None:Article_identifier )>> ;
+	prov:wasDerivedFrom doc:f5b7ab859abc .
+doc:FactserichKnoll schema:givenName "Chaokai" .
+_:b74caccdc775552fef17adc8589bfbb2 rdf:reifies <<( doc:FactserichKnoll schema:givenName "Chaokai" )>> ;
+	prov:wasDerivedFrom doc:f5b7ab859abc .
+doc:FactsGear schema:name "gearbox" .
+_:e91f5f0d4ee40bc6e9834a568281bd9a rdf:reifies <<( doc:FactsGear schema:name "gearbox" )>> ;
+	prov:wasDerivedFrom doc:f5b7ab859abc .
+doc:Factssource9 schema:isPartOf doc:FactsappliedSciences_1 .
+_:c83443977d289dfa98975dcf35a814e6 rdf:reifies <<( doc:Factssource9 schema:isPartOf doc:FactsappliedSciences_1 )>> ;
+	prov:wasDerivedFrom doc:f5b7ab859abc .
+doc:04461b6baaf0 a prov:Entity , schema:text ;
+	prov:generatedAtTime "2026-07-25T08:57:14.680896Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+	schema:position 1 ;
+	schema:identifier "04461b6baaf0" .
+doc:Factssource9 schema:mentions doc:FactsInnerRace .
+_:fcefb9cc6f8c38776c31fb516ae32971 rdf:reifies <<( doc:Factssource9 schema:mentions doc:FactsInnerRace )>> ;
+	prov:wasDerivedFrom doc:04461b6baaf0 .
+doc:Factssource9 schema:mentions doc:FactsTransferPath .
+_:f611a3f3b0bc6279a2ae46c5e66fb3ea rdf:reifies <<( doc:Factssource9 schema:mentions doc:FactsTransferPath )>> ;
+	prov:wasDerivedFrom doc:04461b6baaf0 .
+_:c06d0390d9574132caf27b568f12f10f prov:wasDerivedFrom doc:04461b6baaf0 .
+doc:FactsTransferPath a cco:DescriptiveInformationContentEntity .
+_:ed76ec66e799058075ff15ba8aed3621 rdf:reifies <<( doc:FactsTransferPath rdf:type cco:DescriptiveInformationContentEntity )>> ;
+	prov:wasDerivedFrom doc:04461b6baaf0 .
+doc:FactsYu a schema:Person .
+_:e9884bd2011dc41a429756a1330505d rdf:reifies <<( doc:FactsYu rdf:type schema:Person )>> ;
+	prov:wasDerivedFrom doc:04461b6baaf0 .
+_:f5eebc77da37fa34dc2e92b39c9d6495 prov:wasDerivedFrom doc:04461b6baaf0 .
+doc:FactsVibrationPowerFlow a cco:Algorithm .
+_:a32ee27eeba2ca3d66806faf166b00ac rdf:reifies <<( doc:FactsVibrationPowerFlow rdf:type cco:Algorithm )>> ;
+	prov:wasDerivedFrom doc:04461b6baaf0 .
+doc:Factssource9 schema:mentions doc:FactsGear .
+_:e0b2d37d42916bb6b2376a7044788f03 rdf:reifies <<( doc:Factssource9 schema:mentions doc:FactsGear )>> ;
+	prov:wasDerivedFrom doc:04461b6baaf0 .
+doc:FactsFiniteElementMethod a cco:Algorithm .
+_:b3408a06c00e7fc39737809b3c758fb7 rdf:reifies <<( doc:FactsFiniteElementMethod rdf:type cco:Algorithm )>> ;
+	prov:wasDerivedFrom doc:04461b6baaf0 .
+doc:FactsGearMeshFrequency a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Data_variable> .
+_:d75097b497f785fb0c0cc05fd968f3ea rdf:reifies <<( doc:FactsGearMeshFrequency rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Data_variable> )>> ;
+	prov:wasDerivedFrom doc:04461b6baaf0 .
+doc:Factssource9 schema:mentions doc:FactsFiniteElementMethod .
+_:ae4955b067349e50dab7ce101ddf68a rdf:reifies <<( doc:Factssource9 schema:mentions doc:FactsFiniteElementMethod )>> ;
+	prov:wasDerivedFrom doc:04461b6baaf0 .
+_:ddb6c9bb0521a58d516eb156ba742730 prov:wasDerivedFrom doc:04461b6baaf0 .
+doc:Factssource9 schema:mentions doc:FactsVibrationPowerFlow .
+_:c2aea5babd1ea2a9d6adc701d5ba6491 rdf:reifies <<( doc:Factssource9 schema:mentions doc:FactsVibrationPowerFlow )>> ;
+	prov:wasDerivedFrom doc:04461b6baaf0 .
+doc:FactsStructureBorneSoundInsulation a cco:DescriptiveInformationContentEntity .
+_:d43d3d5e44a5e0cd7a7071f91dad4c40 rdf:reifies <<( doc:FactsStructureBorneSoundInsulation rdf:type cco:DescriptiveInformationContentEntity )>> ;
+	prov:wasDerivedFrom doc:04461b6baaf0 .
+doc:FactsInnerRace a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Maintainable_item> .
+_:b87729da30a5817a9f02eaadfc9b9e48 rdf:reifies <<( doc:FactsInnerRace rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Maintainable_item> )>> ;
+	prov:wasDerivedFrom doc:04461b6baaf0 .
+doc:Factssource9 schema:author doc:FactsYu .
+_:ccd77c528d2b19e13cddbc56d625d15e rdf:reifies <<( doc:Factssource9 schema:author doc:FactsYu )>> ;
+	prov:wasDerivedFrom doc:04461b6baaf0 .
+doc:Factssource9 schema:mentions doc:FactsLumpedParameterModel .
+_:c7db0333d1e6f3c2ac2b4612b48359cb rdf:reifies <<( doc:Factssource9 schema:mentions doc:FactsLumpedParameterModel )>> ;
+	prov:wasDerivedFrom doc:04461b6baaf0 .
+doc:FactsFiniteElementMethod schema:description "An analysis method used for complex gearbox housing geometry and dynamic behavior simulation."@en .
+_:d57d944e2406340123cb17a4f7be3dee rdf:reifies <<( doc:FactsFiniteElementMethod schema:description "An analysis method used for complex gearbox housing geometry and dynamic behavior simulation."@en )>> ;
+	prov:wasDerivedFrom doc:04461b6baaf0 .
+doc:Factssource9 schema:description "Uses a lumped parameter model to simulate dynamic behavior and vibration transmission through a bearing."@en .
+_:ace2c6b705642b246422e77b8bd6a888 rdf:reifies <<( doc:Factssource9 schema:description "Uses a lumped parameter model to simulate dynamic behavior and vibration transmission through a bearing."@en )>> ;
+	prov:wasDerivedFrom doc:04461b6baaf0 .
+doc:FactsLumpedParameterModel a cco:Algorithm .
+_:df3e0b924532e6b33456b31712ca76fe rdf:reifies <<( doc:FactsLumpedParameterModel rdf:type cco:Algorithm )>> ;
+	prov:wasDerivedFrom doc:04461b6baaf0 .
+doc:Factssource9 schema:description "Analyzes gearbox vibration and transfer paths using gear mesh frequency and finite element simulation."@en .
+_:b25b67bbe9d61fbea815899b8fe84e14 rdf:reifies <<( doc:Factssource9 schema:description "Analyzes gearbox vibration and transfer paths using gear mesh frequency and finite element simulation."@en )>> ;
+	prov:wasDerivedFrom doc:04461b6baaf0 .
+doc:Factssource9 schema:description "Reports maximum attenuation between the inner race and outer race and minimum attenuation between the outer race and housing."@en .
+_:e18e29073cc84c13b2a5a5b1b3b7b9a4 rdf:reifies <<( doc:Factssource9 schema:description "Reports maximum attenuation between the inner race and outer race and minimum attenuation between the outer race and housing."@en )>> ;
+	prov:wasDerivedFrom doc:04461b6baaf0 .
+doc:FactsGearMeshFrequency schema:description "Frequency of mating teeth during gear operation."@en .
+_:fb3aced9a353f8b662d65242b4ff77e8 rdf:reifies <<( doc:FactsGearMeshFrequency schema:description "Frequency of mating teeth during gear operation."@en )>> ;
+	prov:wasDerivedFrom doc:04461b6baaf0 .
+doc:FactsPeriodicStructuralDriveShaft schema:description "A drive shaft whose sections are modeled periodically after one another."@en .
+_:cb46aa8b3170c5a5e83d8075b3c3f22f rdf:reifies <<( doc:FactsPeriodicStructuralDriveShaft schema:description "A drive shaft whose sections are modeled periodically after one another."@en )>> ;
+	prov:wasDerivedFrom doc:04461b6baaf0 .
+doc:Factssource9 schema:description "Investigates transfer paths from a ship engine through connected machinery and the hull."@en .
+_:a4cac1d00db5a79d339f0d20f1b98518 rdf:reifies <<( doc:Factssource9 schema:description "Investigates transfer paths from a ship engine through connected machinery and the hull."@en )>> ;
+	prov:wasDerivedFrom doc:04461b6baaf0 .
+doc:Factssource9 schema:mentions doc:FactsTimeDomain .
+_:d1ed3d7a089b089f25e136ee6292d4c3 rdf:reifies <<( doc:Factssource9 schema:mentions doc:FactsTimeDomain )>> ;
+	prov:wasDerivedFrom doc:04461b6baaf0 .
+doc:Factssource9 schema:description "Shows that lumped parameter modeling is suitable for parametric studies of dynamic response."@en .
+_:b90eff1ff7cbf1352cb52c529d4f4428 rdf:reifies <<( doc:Factssource9 schema:description "Shows that lumped parameter modeling is suitable for parametric studies of dynamic response."@en )>> ;
+	prov:wasDerivedFrom doc:04461b6baaf0 .
+doc:FactsclassicalTpa a cco:Algorithm .
+_:b09c0c4a1db8ae786dafb21e44c6eeb6 rdf:reifies <<( doc:FactsclassicalTpa rdf:type cco:Algorithm )>> ;
+	prov:wasDerivedFrom doc:04461b6baaf0 .
+doc:Factssource9 schema:description "Evaluates vibration levels at different gearbox positions using experiment and simulation in the time domain."@en .
+_:dbac00d8dad9db9b7c6dbe40ca89627d rdf:reifies <<( doc:Factssource9 schema:description "Evaluates vibration levels at different gearbox positions using experiment and simulation in the time domain."@en )>> ;
+	prov:wasDerivedFrom doc:04461b6baaf0 .
+doc:Factssource9 schema:description "Investigates a bearing transfer function using theoretical calculations and experiments."@en .
+_:f4ff21cd297838abd51e47394f1f224b rdf:reifies <<( doc:Factssource9 schema:description "Investigates a bearing transfer function using theoretical calculations and experiments."@en )>> ;
+	prov:wasDerivedFrom doc:04461b6baaf0 .
+doc:FactsSingleShaftBearingPlateSystem a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Maintainable_item> .
+_:fb9d1b06d2001af8ee5e7efe5be548e rdf:reifies <<( doc:FactsSingleShaftBearingPlateSystem rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Maintainable_item> )>> ;
+	prov:wasDerivedFrom doc:04461b6baaf0 .
+doc:FactsPeriodicStructuralDriveShaft a cco:Algorithm .
+_:d209099efcd9745d4620351e49bc7922 rdf:reifies <<( doc:FactsPeriodicStructuralDriveShaft rdf:type cco:Algorithm )>> ;
+	prov:wasDerivedFrom doc:04461b6baaf0 .
+doc:Factssource9 schema:description "Investigates vibration transmission through gearbox housing using finite element analysis."@en .
+_:f6711cf333468430e1ebb468ab2bcdfb rdf:reifies <<( doc:Factssource9 schema:description "Investigates vibration transmission through gearbox housing using finite element analysis."@en )>> ;
+	prov:wasDerivedFrom doc:04461b6baaf0 .
+doc:Factssource9 schema:description "Investigates gearbox transfer paths by analyzing vibration with gear mesh frequency."@en .
+_:b4f9ba941a3e926f586b01165b6cf268 rdf:reifies <<( doc:Factssource9 schema:description "Investigates gearbox transfer paths by analyzing vibration with gear mesh frequency."@en )>> ;
+	prov:wasDerivedFrom doc:04461b6baaf0 .
+doc:Factssource9 schema:mentions doc:FactsStructureBorneSoundInsulation .
+_:ef9a919ca37d9803cd614a729a19fe6d rdf:reifies <<( doc:Factssource9 schema:mentions doc:FactsStructureBorneSoundInsulation )>> ;
+	prov:wasDerivedFrom doc:04461b6baaf0 .
+doc:FactsTransferPath schema:description "Ratio of vibration speed between the bearing outer ring and bearing inner ring."@en .
+_:c9a320162e9fe5ada83154b86f65db75 rdf:reifies <<( doc:FactsTransferPath schema:description "Ratio of vibration speed between the bearing outer ring and bearing inner ring."@en )>> ;
+	prov:wasDerivedFrom doc:04461b6baaf0 .
+doc:Factssource9 schema:description "Evaluates vibration levels caused by a bearing defect at different housing positions."@en .
+_:be720b24155c69458636567660a2e8fe rdf:reifies <<( doc:Factssource9 schema:description "Evaluates vibration levels caused by a bearing defect at different housing positions."@en )>> ;
+	prov:wasDerivedFrom doc:04461b6baaf0 .
+doc:Factssource9 schema:mentions doc:FactsclassicalTpa .
+_:eabdf5bd449e6834819829088eea2612 rdf:reifies <<( doc:Factssource9 schema:mentions doc:FactsclassicalTpa )>> ;
+	prov:wasDerivedFrom doc:04461b6baaf0 .
+doc:FactsTimeDomain a cco:DescriptiveInformationContentEntity .
+_:d7d690851f0b3193a6076fcabe25b140 rdf:reifies <<( doc:FactsTimeDomain rdf:type cco:DescriptiveInformationContentEntity )>> ;
+	prov:wasDerivedFrom doc:04461b6baaf0 .
+doc:Factssource9 schema:mentions doc:FactsPeriodicStructuralDriveShaft .
+_:c0251952edff74058fee2faea75508bb rdf:reifies <<( doc:Factssource9 schema:mentions doc:FactsPeriodicStructuralDriveShaft )>> ;
+	prov:wasDerivedFrom doc:04461b6baaf0 .
+doc:Factssource9 schema:description "Defines a periodic structural drive shaft intended to reduce gear mesh vibration transmission."@en .
+_:d73de8c29d3c947947fb121449f88d08 rdf:reifies <<( doc:Factssource9 schema:description "Defines a periodic structural drive shaft intended to reduce gear mesh vibration transmission."@en )>> ;
+	prov:wasDerivedFrom doc:04461b6baaf0 .
+doc:FactsGearMeshFrequency rdfs:label "gear mesh frequency (GMF)"@en .
+_:badf1a7c07420b833fc5e18fb0352d86 rdf:reifies <<( doc:FactsGearMeshFrequency rdfs:label "gear mesh frequency (GMF)"@en )>> ;
+	prov:wasDerivedFrom doc:04461b6baaf0 .
+doc:Factssource9 schema:mentions doc:FactsSingleShaftBearingPlateSystem .
+_:a4be904b02465704d12ec7f7dc3693e5 rdf:reifies <<( doc:Factssource9 schema:mentions doc:FactsSingleShaftBearingPlateSystem )>> ;
+	prov:wasDerivedFrom doc:04461b6baaf0 .
+doc:Factssource9 schema:mentions doc:FactsConditionMonitoring .
+_:fcfe7eb9a88bcc6e9b4d97494ecec4af rdf:reifies <<( doc:Factssource9 schema:mentions doc:FactsConditionMonitoring )>> ;
+	prov:wasDerivedFrom doc:04461b6baaf0 .
+doc:Factssource9 schema:mentions doc:FactsGearMeshFrequency .
+_:c19204fd6be4d9aa2d7ccdd0274a527c rdf:reifies <<( doc:Factssource9 schema:mentions doc:FactsGearMeshFrequency )>> ;
+	prov:wasDerivedFrom doc:04461b6baaf0 .
+doc:FactsLumpedParameterModel schema:description "A model used to investigate gearbox vibration transmission and dynamic behavior."@en .
+_:c26f9cf3b034ec04e2608c4a6ae5efef rdf:reifies <<( doc:FactsLumpedParameterModel schema:description "A model used to investigate gearbox vibration transmission and dynamic behavior."@en )>> ;
+	prov:wasDerivedFrom doc:04461b6baaf0 .
+doc:Factssource9 schema:description "Analyzes vibration transmission of an entire gearbox using vibration power flow and identifies bearings and housing as critical transmission components."@en .
+_:abcc4f73554a64589561b81b3521306f rdf:reifies <<( doc:Factssource9 schema:description "Analyzes vibration transmission of an entire gearbox using vibration power flow and identifies bearings and housing as critical transmission components."@en )>> ;
+	prov:wasDerivedFrom doc:04461b6baaf0 .
+doc:FactsConditionMonitoring a cco:Algorithm .
+_:ec3295ba01452f58d8883364dd54ffc7 rdf:reifies <<( doc:FactsConditionMonitoring rdf:type cco:Algorithm )>> ;
+	prov:wasDerivedFrom doc:04461b6baaf0 .
+doc:Factssource9 schema:description "Finds that discontinuity in the gear body helps structure-borne sound insulation."@en .
+_:a45f5ad42915819b28247203796e69ac rdf:reifies <<( doc:Factssource9 schema:description "Finds that discontinuity in the gear body helps structure-borne sound insulation."@en )>> ;
+	prov:wasDerivedFrom doc:04461b6baaf0 .
+doc:35607cd54a5b a prov:Entity , schema:text ;
+	prov:generatedAtTime "2026-07-25T08:57:14.685896Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+	schema:position 2 ;
+	schema:identifier "35607cd54a5b" .
+doc:FactsfrequencyDomain a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Data_variable> .
+_:c691b5c4c9fe1ad19105c69ec469ced2 rdf:reifies <<( doc:FactsfrequencyDomain rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Data_variable> )>> ;
+	prov:wasDerivedFrom doc:35607cd54a5b .
+doc:Factsarticle_4 schema:mentions doc:Factsmeasurements .
+_:b645f2f9fb6546c2d7b9ec99178d771 rdf:reifies <<( doc:Factsarticle_4 schema:mentions doc:Factsmeasurements )>> ;
+	prov:wasDerivedFrom doc:35607cd54a5b .
+doc:FactsGear rdfs:label "helical gears"@en .
+_:b6c2b4b4d366103afd742b2a4583f45f rdf:reifies <<( doc:FactsGear rdfs:label "helical gears"@en )>> ;
+	prov:wasDerivedFrom doc:35607cd54a5b .
+doc:Factsmeasurements a schema:Dataset .
+_:b94adcaa6ebe951ee792f5caf0b85f6b rdf:reifies <<( doc:Factsmeasurements rdf:type schema:Dataset )>> ;
+	prov:wasDerivedFrom doc:35607cd54a5b .
+doc:Factsmotor rdfs:label "drive gearbox"@en .
+_:df334ed7077e1abe6b2b2fc8f768c6c8 rdf:reifies <<( doc:Factsmotor rdfs:label "drive gearbox"@en )>> ;
+	prov:wasDerivedFrom doc:35607cd54a5b .
+doc:FactssimulationData a schema:Dataset .
+_:ed1ba00571d7a8cfd113ceb16c130672 rdf:reifies <<( doc:FactssimulationData rdf:type schema:Dataset )>> ;
+	prov:wasDerivedFrom doc:35607cd54a5b .
+doc:Factsarticle_4 schema:mentions doc:FactsinverseSubstructuring .
+_:bb4732b8bdcc3c71bdb9a41f1b7a424a rdf:reifies <<( doc:Factsarticle_4 schema:mentions doc:FactsinverseSubstructuring )>> ;
+	prov:wasDerivedFrom doc:35607cd54a5b .
+doc:Factsmotor rdfs:label "motor"@en .
+_:c153d52b808886c3a7dcf18cc10f9260 rdf:reifies <<( doc:Factsmotor rdfs:label "motor"@en )>> ;
+	prov:wasDerivedFrom doc:35607cd54a5b .
+doc:FactsgearMesh a cco:Artifact .
+_:cc11c1550056342692669fc42f7545d3 rdf:reifies <<( doc:FactsgearMesh rdf:type cco:Artifact )>> ;
+	prov:wasDerivedFrom doc:35607cd54a5b .
+doc:Factsarticle_4 a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Predictive_Maintenance_Article> .
+_:dc9c2f431466bae7c8fa8288318e0522 rdf:reifies <<( doc:Factsarticle_4 rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Predictive_Maintenance_Article> )>> ;
+	prov:wasDerivedFrom doc:35607cd54a5b .
+doc:FactsdualDecoupling rdfs:label "dual decoupling"@en .
+_:db54a5407cba8ca241eab9c884b08065 rdf:reifies <<( doc:FactsdualDecoupling rdfs:label "dual decoupling"@en )>> ;
+	prov:wasDerivedFrom doc:35607cd54a5b .
+doc:Factstorque a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Data_variable> .
+_:a8e6afa2c973ebdd3f5816241932b6ec rdf:reifies <<( doc:Factstorque rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Data_variable> )>> ;
+	prov:wasDerivedFrom doc:35607cd54a5b .
+doc:Factsmotor a cco:Artifact .
+_:ceb699455b7069791cb4cba784c706b3 rdf:reifies <<( doc:Factsmotor rdf:type cco:Artifact )>> ;
+	prov:wasDerivedFrom doc:35607cd54a5b .
+doc:FactsgearMesh rdfs:label "gear mesh"@en .
+_:f4ba01b3c8a28fa6edaf2e13e87fb706 rdf:reifies <<( doc:FactsgearMesh rdfs:label "gear mesh"@en )>> ;
+	prov:wasDerivedFrom doc:35607cd54a5b .
+doc:Factsarticle_4 schema:mentions doc:FactstaperedRollerBearings .
+_:a979d9f1ce1c5b1dd422b5518958a16b rdf:reifies <<( doc:Factsarticle_4 schema:mentions doc:FactstaperedRollerBearings )>> ;
+	prov:wasDerivedFrom doc:35607cd54a5b .
+doc:FactsvibrationAnalysis cco:is_about doc:FactsGear .
+_:ccb1869cfad99b55d6e2db410694809b rdf:reifies <<( doc:FactsvibrationAnalysis cco:is_about doc:FactsGear )>> ;
+	prov:wasDerivedFrom doc:35607cd54a5b .
+doc:FactsGear obo:BFO_0000051 doc:FactsgearMesh .
+_:c707b154ee1c584be3a967143ce17124 rdf:reifies <<( doc:FactsGear obo:BFO_0000051 doc:FactsgearMesh )>> ;
+	prov:wasDerivedFrom doc:35607cd54a5b .
+_:f5eebc77da37fa34dc2e92b39c9d6495 prov:wasDerivedFrom doc:35607cd54a5b .
+doc:FactsdualDecoupling rdfs:label "primal decoupling"@en .
+_:e08c6a6ef050653916d2b82133555f62 rdf:reifies <<( doc:FactsdualDecoupling rdfs:label "primal decoupling"@en )>> ;
+	prov:wasDerivedFrom doc:35607cd54a5b .
+doc:FactsclassicalTpa rdfs:label "classical transfer path analysis"@en .
+_:fed4a536ab9952a58d80261f84ed6fea rdf:reifies <<( doc:FactsclassicalTpa rdfs:label "classical transfer path analysis"@en )>> ;
+	prov:wasDerivedFrom doc:35607cd54a5b .
+doc:Factsarticle_4 schema:mentions doc:FactsclassicalTpa .
+_:a46e747b8669ebc64451039d82cf65a5 rdf:reifies <<( doc:Factsarticle_4 schema:mentions doc:FactsclassicalTpa )>> ;
+	prov:wasDerivedFrom doc:35607cd54a5b .
+doc:FactsconditionMonitoringModule <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#has_predictive_maintenance_function> doc:FactsvibrationAnalysis .
+_:e6edf03a52255104a0f9c6845d514f96 rdf:reifies <<( doc:FactsconditionMonitoringModule <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#has_predictive_maintenance_function> doc:FactsvibrationAnalysis )>> ;
+	prov:wasDerivedFrom doc:35607cd54a5b .
+doc:FactsfzgTestRig a cco:Artifact .
+_:dfbc845f7507aaad0d1f29993aab8796 rdf:reifies <<( doc:FactsfzgTestRig rdf:type cco:Artifact )>> ;
+	prov:wasDerivedFrom doc:35607cd54a5b .
+doc:Factsmotor rdfs:label "test gearbox"@en .
+_:ee5973dc22d6f5bf2d128fa4035056d1 rdf:reifies <<( doc:Factsmotor rdfs:label "test gearbox"@en )>> ;
+	prov:wasDerivedFrom doc:35607cd54a5b .
+doc:FactsrotationalSpeed rdfs:label "rotational speed"@en .
+_:b62e0cefc105bea43e8fd73f6028507c rdf:reifies <<( doc:FactsrotationalSpeed rdfs:label "rotational speed"@en )>> ;
+	prov:wasDerivedFrom doc:35607cd54a5b .
+doc:Factsarticle_4 schema:mentions doc:FactsGear .
+_:a381c5ccddae5de38377808456b912ff rdf:reifies <<( doc:Factsarticle_4 schema:mentions doc:FactsGear )>> ;
+	prov:wasDerivedFrom doc:35607cd54a5b .
+doc:FactsbearingRings a cco:Artifact .
+_:e5b09dfb3b790cf07b1023f4d81f2bb2 rdf:reifies <<( doc:FactsbearingRings rdf:type cco:Artifact )>> ;
+	prov:wasDerivedFrom doc:35607cd54a5b .
+doc:FactsclassicalTpa rdfs:label "component-based transfer path analysis"@en .
+_:c0e3c7958f61084cbce673ba071a1498 rdf:reifies <<( doc:FactsclassicalTpa rdfs:label "component-based transfer path analysis"@en )>> ;
+	prov:wasDerivedFrom doc:35607cd54a5b .
+doc:FactssimulationData rdfs:label "test rig simulation data"@en .
+_:c3d70d6cc294add9cc41bbaaa2005476 rdf:reifies <<( doc:FactssimulationData rdfs:label "test rig simulation data"@en )>> ;
+	prov:wasDerivedFrom doc:35607cd54a5b .
+doc:FactsdualDecoupling a cco:Algorithm .
+_:ce1d2ede72c11d54105b1068931c0881 rdf:reifies <<( doc:FactsdualDecoupling rdf:type cco:Algorithm )>> ;
+	prov:wasDerivedFrom doc:35607cd54a5b .
+doc:FactsvibrationLevel rdfs:label "vibration level"@en .
+_:aedef32bd2771c8623104f6c3a00f4df rdf:reifies <<( doc:FactsvibrationLevel rdfs:label "vibration level"@en )>> ;
+	prov:wasDerivedFrom doc:35607cd54a5b .
+doc:Factsarticle_4 schema:mentions doc:FactssimulationModel .
+_:c004cea2a95a8bab98e2115b9790de95 rdf:reifies <<( doc:Factsarticle_4 schema:mentions doc:FactssimulationModel )>> ;
+	prov:wasDerivedFrom doc:35607cd54a5b .
+doc:FactsfzgTestRig obo:BFO_0000051 doc:Factsmotor .
+_:e56dabdbd50598f77c9b1c5d117e4979 rdf:reifies <<( doc:FactsfzgTestRig obo:BFO_0000051 doc:Factsmotor )>> ;
+	prov:wasDerivedFrom doc:35607cd54a5b .
+doc:Factsarticle_4 rdfs:label "Article on vibration transmission in a gear test rig"@en .
+_:bfdb6f7ec028fbbb916df59ac4645076 rdf:reifies <<( doc:Factsarticle_4 rdfs:label "Article on vibration transmission in a gear test rig"@en )>> ;
+	prov:wasDerivedFrom doc:35607cd54a5b .
+doc:FactsvibrationLevel a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Data_variable> .
+_:e356e8e4aafc885113f85cebf055bf81 rdf:reifies <<( doc:FactsvibrationLevel rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Data_variable> )>> ;
+	prov:wasDerivedFrom doc:35607cd54a5b .
+doc:FactsfrequencyDomain rdfs:label "frequency domain"@en .
+_:c0c96887c52368cc319af289234fa059 rdf:reifies <<( doc:FactsfrequencyDomain rdfs:label "frequency domain"@en )>> ;
+	prov:wasDerivedFrom doc:35607cd54a5b .
+doc:Factsmotor schema:distance 112.5 .
+_:ffb0efbe7fccaab8bf930790fbe41392 rdf:reifies <<( doc:Factsmotor schema:distance 112.5 )>> ;
+	prov:wasDerivedFrom doc:35607cd54a5b .
+doc:FactsfzgTestRig rdfs:label "FZG back-to-back test rig"@en .
+_:c337369e3ec6333e025007451f39c50d rdf:reifies <<( doc:FactsfzgTestRig rdfs:label "FZG back-to-back test rig"@en )>> ;
+	prov:wasDerivedFrom doc:35607cd54a5b .
+doc:FactsclassicalTpa rdfs:label "transmissibility transfer path analysis"@en .
+_:f840165853e4b91ef12351814ccc043b rdf:reifies <<( doc:FactsclassicalTpa rdfs:label "transmissibility transfer path analysis"@en )>> ;
+	prov:wasDerivedFrom doc:35607cd54a5b .
+doc:FactsinverseSubstructuring a cco:Algorithm .
+_:f2c4842bbc450c58d15bb98fd5b3c23c rdf:reifies <<( doc:FactsinverseSubstructuring rdf:type cco:Algorithm )>> ;
+	prov:wasDerivedFrom doc:35607cd54a5b .
+doc:FactsbearingRings rdfs:label "bearing rings"@en .
+_:ad25fca985480adf1bb82d3425cc5c38 rdf:reifies <<( doc:FactsbearingRings rdfs:label "bearing rings"@en )>> ;
+	prov:wasDerivedFrom doc:35607cd54a5b .
+doc:FactsinverseSubstructuring rdfs:label "inverse substructuring"@en .
+_:c7953579400e5f80157b5cdfff2d62de rdf:reifies <<( doc:FactsinverseSubstructuring rdfs:label "inverse substructuring"@en )>> ;
+	prov:wasDerivedFrom doc:35607cd54a5b .
+doc:Factsarticle_4 schema:mentions doc:FactsdualDecoupling .
+_:da8c4c4f1561a86cca9b4bd7bed692f6 rdf:reifies <<( doc:Factsarticle_4 schema:mentions doc:FactsdualDecoupling )>> ;
+	prov:wasDerivedFrom doc:35607cd54a5b .
+doc:FactsconditionMonitoringModule a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Predictive_maintenance_system_module> .
+_:e84991d43dad0d7132606cae0d3041ca rdf:reifies <<( doc:FactsconditionMonitoringModule rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Predictive_maintenance_system_module> )>> ;
+	prov:wasDerivedFrom doc:35607cd54a5b .
+doc:Factsmeasurements schema:measurementMethod "frequency-domain vibration measurement"@en .
+_:c54b8024ac06d0bf2f78da4b6a64ed87 rdf:reifies <<( doc:Factsmeasurements schema:measurementMethod "frequency-domain vibration measurement"@en )>> ;
+	prov:wasDerivedFrom doc:35607cd54a5b .
+doc:Factstorque rdfs:label "torque"@en .
+_:f2fa942dc5f45f455cf5b2d4739a0626 rdf:reifies <<( doc:Factstorque rdfs:label "torque"@en )>> ;
+	prov:wasDerivedFrom doc:35607cd54a5b .
+doc:FactsvibrationAnalysis a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Health_assessment> .
+_:ac4360ac2f4a1b8d47aa968b355f2e0a rdf:reifies <<( doc:FactsvibrationAnalysis rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Health_assessment> )>> ;
+	prov:wasDerivedFrom doc:35607cd54a5b .
+doc:Factsarticle_4 schema:mentions doc:FactssimulationData .
+_:c83ceb50fb792b5368f885fbc684c238 rdf:reifies <<( doc:Factsarticle_4 schema:mentions doc:FactssimulationData )>> ;
+	prov:wasDerivedFrom doc:35607cd54a5b .
+doc:FactssimulationModel cco:is_about doc:FactsfzgTestRig .
+_:b49010a687864cd1e34cba8d66a60ed7 rdf:reifies <<( doc:FactssimulationModel cco:is_about doc:FactsfzgTestRig )>> ;
+	prov:wasDerivedFrom doc:35607cd54a5b .
+doc:FactstaperedRollerBearings obo:BFO_0000051 doc:FactsbearingRings .
+_:d331aa53e3ce56432286975e158dc315 rdf:reifies <<( doc:FactstaperedRollerBearings obo:BFO_0000051 doc:FactsbearingRings )>> ;
+	prov:wasDerivedFrom doc:35607cd54a5b .
+doc:FactsrotationalSpeed a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Data_variable> .
+_:f1a35c8adf68a885aed1259e7c990c2b rdf:reifies <<( doc:FactsrotationalSpeed rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Data_variable> )>> ;
+	prov:wasDerivedFrom doc:35607cd54a5b .
+doc:Factsarticle_4 schema:about doc:FactsfzgTestRig .
+_:b865156ff163937778b1d32c2b77faff rdf:reifies <<( doc:Factsarticle_4 schema:about doc:FactsfzgTestRig )>> ;
+	prov:wasDerivedFrom doc:35607cd54a5b .
+doc:FactsvibrationAnalysis rdfs:label "vibration-based condition monitoring"@en .
+_:b576334af978ef278a7e6b846ac33b6c rdf:reifies <<( doc:FactsvibrationAnalysis rdfs:label "vibration-based condition monitoring"@en )>> ;
+	prov:wasDerivedFrom doc:35607cd54a5b .
+doc:FactsconditionMonitoringModule rdfs:label "gear condition monitoring module"@en .
+_:d85af6d34339c0ee27bc69d34695ade7 rdf:reifies <<( doc:FactsconditionMonitoringModule rdfs:label "gear condition monitoring module"@en )>> ;
+	prov:wasDerivedFrom doc:35607cd54a5b .
+_:b09c0c4a1db8ae786dafb21e44c6eeb6 prov:wasDerivedFrom doc:35607cd54a5b .
+doc:FactssimulationModel rdfs:label "test rig simulation model"@en .
+_:d07def81906c83e17ea3978ee77d129 rdf:reifies <<( doc:FactssimulationModel rdfs:label "test rig simulation model"@en )>> ;
+	prov:wasDerivedFrom doc:35607cd54a5b .
+doc:FactssimulationModel a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Predictive_maintenance_model> .
+_:ae1917c3ec9871958aae75c4a0ef20fb rdf:reifies <<( doc:FactssimulationModel rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Predictive_maintenance_model> )>> ;
+	prov:wasDerivedFrom doc:35607cd54a5b .
+doc:Factsmeasurements rdfs:label "test rig measurements"@en .
+_:dfef794bc2fbbddb7588582654f1ea49 rdf:reifies <<( doc:Factsmeasurements rdfs:label "test rig measurements"@en )>> ;
+	prov:wasDerivedFrom doc:35607cd54a5b .
+doc:FactstaperedRollerBearings rdfs:label "tapered roller bearings"@en .
+_:ec70ba2b06e230044e8b9a0c3f9f98f7 rdf:reifies <<( doc:FactstaperedRollerBearings rdfs:label "tapered roller bearings"@en )>> ;
+	prov:wasDerivedFrom doc:35607cd54a5b .
+doc:Factsmotor schema:unitText "mm" .
+_:f35b7606e4c45340815d0822cb656de3 rdf:reifies <<( doc:Factsmotor schema:unitText "mm" )>> ;
+	prov:wasDerivedFrom doc:35607cd54a5b .
+doc:FactstaperedRollerBearings a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Maintainable_item> .
+_:ba5b6d958fa0cf8860c9481f7185b851 rdf:reifies <<( doc:FactstaperedRollerBearings rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Maintainable_item> )>> ;
+	prov:wasDerivedFrom doc:35607cd54a5b .
+<http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Predictive_maintenance_model> owl:sameAs <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Predictive_Maintenance_Article> , <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Predictive_maintenance_system_module> .

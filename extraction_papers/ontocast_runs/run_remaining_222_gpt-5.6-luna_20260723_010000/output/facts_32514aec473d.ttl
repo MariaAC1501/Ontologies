@@ -1,0 +1,465 @@
+@prefix None: <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD/seed#> .
+@prefix cco: <http://www.ontologyrepository.com/CommonCoreOntologies/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doc: <https://growgraph.dev/doc/32514aec473d/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix obo: <http://purl.obolibrary.org/obo/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix schema: <https://schema.org/> .
+doc:19cc4c07470d a prov:Entity , schema:text ;
+	prov:generatedAtTime "2026-07-25T13:06:20.312348Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+	schema:position 0 ;
+	schema:identifier "19cc4c07470d" .
+doc:FactsindustrialMonitoringApplication schema:about doc:FactsElectricMotor .
+_:b201e4f08241039b06dac8d920b10b4a rdf:reifies <<( doc:FactsindustrialMonitoringApplication schema:about doc:FactsElectricMotor )>> ;
+	prov:wasDerivedFrom doc:19cc4c07470d .
+doc:FactsPredictiveMaintenanceArticle schema:mentions doc:FactsMeanFeature .
+_:a410e136934a1893fa686e9125ec873d rdf:reifies <<( doc:FactsPredictiveMaintenanceArticle schema:mentions doc:FactsMeanFeature )>> ;
+	prov:wasDerivedFrom doc:19cc4c07470d .
+doc:FactsconvolutionalNeuralNetwork schema:instrument doc:Factsspectrogram_1 .
+_:e168d176a9c19c91507408fb216cf246 rdf:reifies <<( doc:FactsconvolutionalNeuralNetwork schema:instrument doc:Factsspectrogram_1 )>> ;
+	prov:wasDerivedFrom doc:19cc4c07470d .
+doc:FactsindustrialMonitoringApplication rdfs:label "automated industrial equipment condition monitoring"@en .
+_:cd53ac1777a6d974276275d414552ddb rdf:reifies <<( doc:FactsindustrialMonitoringApplication rdfs:label "automated industrial equipment condition monitoring"@en )>> ;
+	prov:wasDerivedFrom doc:19cc4c07470d .
+doc:FactsDiagnosticProcess rdfs:label "engine malfunction diagnostic model"@en .
+_:ca0f4aad20698759bcb7fd13de78cf83 rdf:reifies <<( doc:FactsDiagnosticProcess rdfs:label "engine malfunction diagnostic model"@en )>> ;
+	prov:wasDerivedFrom doc:19cc4c07470d .
+doc:FactsPredictiveMaintenanceArticle schema:mentions doc:FactsDiagnosticProcess .
+_:aceddc6b2fa594ae19a4562450b3c12c rdf:reifies <<( doc:FactsPredictiveMaintenanceArticle schema:mentions doc:FactsDiagnosticProcess )>> ;
+	prov:wasDerivedFrom doc:19cc4c07470d .
+doc:FactsengineDefects schema:about doc:FactsElectricMotor .
+_:fdd7d523b8080c50f39d226a7dc315cd rdf:reifies <<( doc:FactsengineDefects schema:about doc:FactsElectricMotor )>> ;
+	prov:wasDerivedFrom doc:19cc4c07470d .
+doc:FactsconvolutionalNeuralNetwork a cco:Algorithm .
+_:e15c4d46554bfc19aa75efdbc85129c0 rdf:reifies <<( doc:FactsconvolutionalNeuralNetwork rdf:type cco:Algorithm )>> ;
+	prov:wasDerivedFrom doc:19cc4c07470d .
+doc:FactsDiagnosticProcess None:has_predictive_maintenance_function doc:FactsDiagnosticProcess .
+_:a4676d49102a135e8ce2e2160dbd9ba0 rdf:reifies <<( doc:FactsDiagnosticProcess None:has_predictive_maintenance_function doc:FactsDiagnosticProcess )>> ;
+	prov:wasDerivedFrom doc:19cc4c07470d .
+doc:FactsfastFourierTransform a cco:Algorithm .
+_:fcca7f4a590b40d547bb0382d9c2624d rdf:reifies <<( doc:FactsfastFourierTransform rdf:type cco:Algorithm )>> ;
+	prov:wasDerivedFrom doc:19cc4c07470d .
+doc:FactsfastFourierTransform schema:output doc:Factsspectrogram_1 .
+_:e37cbbbd58109c7175d7f4ee00d1cf43 rdf:reifies <<( doc:FactsfastFourierTransform schema:output doc:Factsspectrogram_1 )>> ;
+	prov:wasDerivedFrom doc:19cc4c07470d .
+doc:FactsDiagnosticProcess schema:accuracy "100%" .
+_:e81b37c69d3af7e5cf2ec4379b4a25f5 rdf:reifies <<( doc:FactsDiagnosticProcess schema:accuracy "100%" )>> ;
+	prov:wasDerivedFrom doc:19cc4c07470d .
+doc:FactsElectricMotor rdfs:label "electric motor"@en .
+_:ced3705e582556192e8674e4269ad079 rdf:reifies <<( doc:FactsElectricMotor rdfs:label "electric motor"@en )>> ;
+	prov:wasDerivedFrom doc:19cc4c07470d .
+doc:FactsDiagnosticProcess schema:accuracy "100"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+_:fd9db2704d7fdab7a9fd3466922ac3e9 rdf:reifies <<( doc:FactsDiagnosticProcess schema:accuracy "100"^^<http://www.w3.org/2001/XMLSchema#decimal> )>> ;
+	prov:wasDerivedFrom doc:19cc4c07470d .
+doc:FactsElectricMotor a None:Maintainable_item .
+_:f043f47a6eaa70e7dffac2be9bcdb51e rdf:reifies <<( doc:FactsElectricMotor rdf:type None:Maintainable_item )>> ;
+	prov:wasDerivedFrom doc:19cc4c07470d .
+doc:FactsDiagnosticProcess a None:Classification .
+_:e5ba8da8f36eb9c3e530dca80a458f9d rdf:reifies <<( doc:FactsDiagnosticProcess rdf:type None:Classification )>> ;
+	prov:wasDerivedFrom doc:19cc4c07470d .
+doc:FactsPredictiveMaintenanceArticle schema:about doc:FactsElectricMotor .
+_:e5418b5f15972b1cc28dfe0c8790b9f0 rdf:reifies <<( doc:FactsPredictiveMaintenanceArticle schema:about doc:FactsElectricMotor )>> ;
+	prov:wasDerivedFrom doc:19cc4c07470d .
+doc:FactsElectricMotor schema:additionalType "engine" .
+_:fa38e33796349875ff864bd36a91a605 rdf:reifies <<( doc:FactsElectricMotor schema:additionalType "engine" )>> ;
+	prov:wasDerivedFrom doc:19cc4c07470d .
+doc:FactsfastFourierTransform rdfs:label "short-time Fourier transform"@en .
+_:c39964823427868b214c6f8b043425ab rdf:reifies <<( doc:FactsfastFourierTransform rdfs:label "short-time Fourier transform"@en )>> ;
+	prov:wasDerivedFrom doc:19cc4c07470d .
+doc:FactsfastFourierTransform schema:output doc:FactsspectralComponents .
+_:b60337f67b0e8f7c4197aa94854d416f rdf:reifies <<( doc:FactsfastFourierTransform schema:output doc:FactsspectralComponents )>> ;
+	prov:wasDerivedFrom doc:19cc4c07470d .
+doc:FactsPredictiveMaintenanceArticle dcterms:date "2025-02-05"^^<http://www.w3.org/2001/XMLSchema#date> .
+_:a8d54384d172898eefbeb5d0a00b6538 rdf:reifies <<( doc:FactsPredictiveMaintenanceArticle dcterms:date "2025-02-05"^^<http://www.w3.org/2001/XMLSchema#date> )>> ;
+	prov:wasDerivedFrom doc:19cc4c07470d .
+doc:FactsPredictiveMaintenanceArticle schema:keywords "vibration analysis" .
+_:acf9f6c5638342a8b43719f7a49edf30 rdf:reifies <<( doc:FactsPredictiveMaintenanceArticle schema:keywords "vibration analysis" )>> ;
+	prov:wasDerivedFrom doc:19cc4c07470d .
+doc:Factsdoi_320425 a None:Article_title .
+_:bbe3ee36086ebf9bf2c76b1dd794451b rdf:reifies <<( doc:Factsdoi_320425 rdf:type None:Article_title )>> ;
+	prov:wasDerivedFrom doc:19cc4c07470d .
+doc:Factsspectrogram_1 schema:about doc:FactsMeanFeature .
+_:b81a297cdea8cea9bf680f5c94835bc9 rdf:reifies <<( doc:Factsspectrogram_1 schema:about doc:FactsMeanFeature )>> ;
+	prov:wasDerivedFrom doc:19cc4c07470d .
+doc:FactsMeanFeature a schema:Thing .
+_:ea8318bb30d4c82a2bfe256abdf7b400 rdf:reifies <<( doc:FactsMeanFeature rdf:type schema:Thing )>> ;
+	prov:wasDerivedFrom doc:19cc4c07470d .
+doc:FactsDiagnosticProcess rdfs:label "detection of engine malfunctions"@en .
+_:c4280ab047b7c4de5f61ce6048b269fa rdf:reifies <<( doc:FactsDiagnosticProcess rdfs:label "detection of engine malfunctions"@en )>> ;
+	prov:wasDerivedFrom doc:19cc4c07470d .
+doc:FactsfastFourierTransform schema:input doc:FactsMeanFeature .
+_:aeddbd9710d61a6bacc8322488280a72 rdf:reifies <<( doc:FactsfastFourierTransform schema:input doc:FactsMeanFeature )>> ;
+	prov:wasDerivedFrom doc:19cc4c07470d .
+doc:FactsPredictiveMaintenanceArticle a None:Predictive_Maintenance_Article .
+_:a619762786e9cde67cf22c96a31e4691 rdf:reifies <<( doc:FactsPredictiveMaintenanceArticle rdf:type None:Predictive_Maintenance_Article )>> ;
+	prov:wasDerivedFrom doc:19cc4c07470d .
+doc:FactsDiagnosticProcess schema:accuracy "1"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+_:fc433c6bb23fcda14b368fa0e99cc18e rdf:reifies <<( doc:FactsDiagnosticProcess schema:accuracy "1"^^<http://www.w3.org/2001/XMLSchema#decimal> )>> ;
+	prov:wasDerivedFrom doc:19cc4c07470d .
+doc:FactsconvolutionalNeuralNetwork rdfs:label "convolutional neural network"@en .
+_:d8beff632c35664e708476043575860b rdf:reifies <<( doc:FactsconvolutionalNeuralNetwork rdfs:label "convolutional neural network"@en )>> ;
+	prov:wasDerivedFrom doc:19cc4c07470d .
+doc:FactsMeanFeature rdfs:label "vibration signal"@en .
+_:b1035fa11b4da75ee8df536e6f445830 rdf:reifies <<( doc:FactsMeanFeature rdfs:label "vibration signal"@en )>> ;
+	prov:wasDerivedFrom doc:19cc4c07470d .
+doc:FactsPredictiveMaintenanceArticle None:has_publication_year doc:Factspublication_year_2025_8 .
+_:df9f5068b6f4beed0bce90cf8d9980a3 rdf:reifies <<( doc:FactsPredictiveMaintenanceArticle None:has_publication_year doc:Factspublication_year_2025_8 )>> ;
+	prov:wasDerivedFrom doc:19cc4c07470d .
+doc:Factspublication_year_2025_8 None:has_interger_value 2025 .
+_:d1e44bef1549e4290bf5fa0dd57251f7 rdf:reifies <<( doc:Factspublication_year_2025_8 None:has_interger_value 2025 )>> ;
+	prov:wasDerivedFrom doc:19cc4c07470d .
+doc:Factsspectrogram_1 rdfs:label "spectrogram"@en .
+_:b590dbc4cdb3f0f51eb9d9fdd5cdb425 rdf:reifies <<( doc:Factsspectrogram_1 rdfs:label "spectrogram"@en )>> ;
+	prov:wasDerivedFrom doc:19cc4c07470d .
+doc:FactsDiagnosticProcess a None:Predictive_maintenance_model .
+_:fc6e19efa9db43a07fb132d9814bcd50 rdf:reifies <<( doc:FactsDiagnosticProcess rdf:type None:Predictive_maintenance_model )>> ;
+	prov:wasDerivedFrom doc:19cc4c07470d .
+doc:Factsdoi_320425 None:has_text_value "Vibration-based diagnosis of electric motor malfunctions using convolutional neural networks" .
+_:da7d1dd935acd81025e370775d523d27 rdf:reifies <<( doc:Factsdoi_320425 None:has_text_value "Vibration-based diagnosis of electric motor malfunctions using convolutional neural networks" )>> ;
+	prov:wasDerivedFrom doc:19cc4c07470d .
+doc:FactsMeanFeature schema:about doc:FactsElectricMotor .
+_:fb347b51c17cd5bd8581c7cc8767f756 rdf:reifies <<( doc:FactsMeanFeature schema:about doc:FactsElectricMotor )>> ;
+	prov:wasDerivedFrom doc:19cc4c07470d .
+doc:FactsindustrialMonitoringApplication a schema:Thing .
+_:a7224d481d3b9c0be4399d2251f58c3e rdf:reifies <<( doc:FactsindustrialMonitoringApplication rdf:type schema:Thing )>> ;
+	prov:wasDerivedFrom doc:19cc4c07470d .
+doc:FactsDiagnosticProcess rdfs:label "predictive maintenance diagnostic module"@en .
+_:efe9546eae2f7403cc2267556bfcbd03 rdf:reifies <<( doc:FactsDiagnosticProcess rdfs:label "predictive maintenance diagnostic module"@en )>> ;
+	prov:wasDerivedFrom doc:19cc4c07470d .
+doc:FactsengineDefects a schema:Thing .
+_:afe7ff5288d56cc3ef60fd34a241196d rdf:reifies <<( doc:FactsengineDefects rdf:type schema:Thing )>> ;
+	prov:wasDerivedFrom doc:19cc4c07470d .
+doc:FactsPredictiveMaintenanceArticle schema:keywords "predictive maintenance" .
+_:b667ba5580524a35738ffae3c59d7935 rdf:reifies <<( doc:FactsPredictiveMaintenanceArticle schema:keywords "predictive maintenance" )>> ;
+	prov:wasDerivedFrom doc:19cc4c07470d .
+doc:FactsPredictiveMaintenanceArticle schema:keywords "machine learning" .
+_:be99ebe3738d9a9042533496077f4782 rdf:reifies <<( doc:FactsPredictiveMaintenanceArticle schema:keywords "machine learning" )>> ;
+	prov:wasDerivedFrom doc:19cc4c07470d .
+doc:FactsPredictiveMaintenanceArticle schema:keywords "neural networks" .
+_:e29f3456c5c04c51bd9dead71663e121 rdf:reifies <<( doc:FactsPredictiveMaintenanceArticle schema:keywords "neural networks" )>> ;
+	prov:wasDerivedFrom doc:19cc4c07470d .
+doc:FactsengineDefects rdfs:label "existing engine defects"@en .
+_:bbbac77463b5c86fde92b56d5ba4284c rdf:reifies <<( doc:FactsengineDefects rdfs:label "existing engine defects"@en )>> ;
+	prov:wasDerivedFrom doc:19cc4c07470d .
+doc:FactsfastFourierTransform rdfs:label "Fast Fourier Transform"@en .
+_:ce65910b3660dbeda32cabac99f103bb rdf:reifies <<( doc:FactsfastFourierTransform rdfs:label "Fast Fourier Transform"@en )>> ;
+	prov:wasDerivedFrom doc:19cc4c07470d .
+doc:FactsDiagnosticProcess a None:Fault_detection .
+_:f104cb7f3868ff3a2375d5f84271f34b rdf:reifies <<( doc:FactsDiagnosticProcess rdf:type None:Fault_detection )>> ;
+	prov:wasDerivedFrom doc:19cc4c07470d .
+doc:FactsDiagnosticProcess schema:output doc:Factsspectrogram_1 .
+_:a691f68a25ac058c2f29ef6b603d1073 rdf:reifies <<( doc:FactsDiagnosticProcess schema:output doc:Factsspectrogram_1 )>> ;
+	prov:wasDerivedFrom doc:19cc4c07470d .
+doc:FactsPredictiveMaintenanceArticle schema:keywords "frequency analysis" .
+_:a506db18bde924e39e10024d5ae16a04 rdf:reifies <<( doc:FactsPredictiveMaintenanceArticle schema:keywords "frequency analysis" )>> ;
+	prov:wasDerivedFrom doc:19cc4c07470d .
+doc:Factsspectrogram_1 a schema:Thing .
+_:fa366c3ebde7895b602fa8a73eb9a9ec rdf:reifies <<( doc:Factsspectrogram_1 rdf:type schema:Thing )>> ;
+	prov:wasDerivedFrom doc:19cc4c07470d .
+doc:FactsPredictiveMaintenanceArticle rdfs:label "Article on vibration-based predictive maintenance of electric motors"@en .
+_:e89b67c1540714ba728e5848bcf301db rdf:reifies <<( doc:FactsPredictiveMaintenanceArticle rdfs:label "Article on vibration-based predictive maintenance of electric motors"@en )>> ;
+	prov:wasDerivedFrom doc:19cc4c07470d .
+doc:FactsDiagnosticProcess schema:measurementTechnique doc:FactsconvolutionalNeuralNetwork .
+_:e5a37caffb0d79c72ea4d3261bc49d3d rdf:reifies <<( doc:FactsDiagnosticProcess schema:measurementTechnique doc:FactsconvolutionalNeuralNetwork )>> ;
+	prov:wasDerivedFrom doc:19cc4c07470d .
+doc:FactsDiagnosticProcess a None:Predictive_maintenance_system_module .
+_:e33efe9b30ac4ff4c352d92864a71c32 rdf:reifies <<( doc:FactsDiagnosticProcess rdf:type None:Predictive_maintenance_system_module )>> ;
+	prov:wasDerivedFrom doc:19cc4c07470d .
+doc:FactsDiagnosticProcess rdfs:label "classification of engine states"@en .
+_:dbe3fe2aacbbb010d2405e292784804e rdf:reifies <<( doc:FactsDiagnosticProcess rdfs:label "classification of engine states"@en )>> ;
+	prov:wasDerivedFrom doc:19cc4c07470d .
+doc:Factspublication_year_2025_8 a None:Publication_year .
+_:d5d0dab08081ffa768614848cc3b5c37 rdf:reifies <<( doc:Factspublication_year_2025_8 rdf:type None:Publication_year )>> ;
+	prov:wasDerivedFrom doc:19cc4c07470d .
+doc:FactsPredictiveMaintenanceArticle None:has_title doc:Factsdoi_320425 .
+_:ea51c29f9522cced01efee558c777909 rdf:reifies <<( doc:FactsPredictiveMaintenanceArticle None:has_title doc:Factsdoi_320425 )>> ;
+	prov:wasDerivedFrom doc:19cc4c07470d .
+doc:FactsDiagnosticProcess schema:input doc:FactsMeanFeature .
+_:b045987d33e40c16c6ff3f77e51a349d rdf:reifies <<( doc:FactsDiagnosticProcess schema:input doc:FactsMeanFeature )>> ;
+	prov:wasDerivedFrom doc:19cc4c07470d .
+doc:FactsDiagnosticProcess None:describes_configuration doc:FactsDiagnosticProcess .
+_:d184eaeebd26c0a1a1700facac5c0aee rdf:reifies <<( doc:FactsDiagnosticProcess None:describes_configuration doc:FactsDiagnosticProcess )>> ;
+	prov:wasDerivedFrom doc:19cc4c07470d .
+doc:81a28c8cec9c a prov:Entity , schema:text ;
+	prov:generatedAtTime "2026-07-25T13:06:20.315345Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+	schema:position 1 ;
+	schema:identifier "81a28c8cec9c" .
+doc:Factsarticle_320425 None:has_identifier doc:Factsdoi_320425 .
+_:fbc4c4751466f355045d778d01586799 rdf:reifies <<( doc:Factsarticle_320425 None:has_identifier doc:Factsdoi_320425 )>> ;
+	prov:wasDerivedFrom doc:81a28c8cec9c .
+doc:Factsdoi_320425 None:has_text_value "681.518.5" .
+_:ac2a2dc27e90ea21f927dbc0607ae0b3 rdf:reifies <<( doc:Factsdoi_320425 None:has_text_value "681.518.5" )>> ;
+	prov:wasDerivedFrom doc:81a28c8cec9c .
+_:a4676d49102a135e8ce2e2160dbd9ba0 prov:wasDerivedFrom doc:81a28c8cec9c .
+_:bbe3ee36086ebf9bf2c76b1dd794451b prov:wasDerivedFrom doc:81a28c8cec9c .
+doc:FactspersonTarasBahan schema:givenName "Valerii" .
+_:a7ffb775e5b05ec903b6cc0270bae19e rdf:reifies <<( doc:FactspersonTarasBahan schema:givenName "Valerii" )>> ;
+	prov:wasDerivedFrom doc:81a28c8cec9c .
+doc:Factsengine_1 a None:Maintainable_item .
+_:edfb4054732b51e2e5d063a71cf96efa rdf:reifies <<( doc:Factsengine_1 rdf:type None:Maintainable_item )>> ;
+	prov:wasDerivedFrom doc:81a28c8cec9c .
+doc:FactspersonTarasBahan schema:givenName "Vladyslav" .
+_:f028b403dff63532c70225745f2ff006 rdf:reifies <<( doc:FactspersonTarasBahan schema:givenName "Vladyslav" )>> ;
+	prov:wasDerivedFrom doc:81a28c8cec9c .
+doc:Factsarticle_320425 schema:author doc:FactspersonTarasBahan .
+_:d19f6bc12fb819df905455f395e45696 rdf:reifies <<( doc:Factsarticle_320425 schema:author doc:FactspersonTarasBahan )>> ;
+	prov:wasDerivedFrom doc:81a28c8cec9c .
+_:f043f47a6eaa70e7dffac2be9bcdb51e prov:wasDerivedFrom doc:81a28c8cec9c .
+doc:Factspressure_2 a None:Data_variable .
+_:fa41b258dbf8ed93120f0037deeea451 rdf:reifies <<( doc:Factspressure_2 rdf:type None:Data_variable )>> ;
+	prov:wasDerivedFrom doc:81a28c8cec9c .
+doc:Factsarticle_320425 a schema:ScholarlyArticle .
+_:b22ea1a2077071f4f4256d5af662d90c rdf:reifies <<( doc:Factsarticle_320425 rdf:type schema:ScholarlyArticle )>> ;
+	prov:wasDerivedFrom doc:81a28c8cec9c .
+doc:Factsdoi_320425 None:has_text_value "10.15587/1729-4061.2025.320425" .
+_:d62bc3d9f16376728b5ace7af5bc452 rdf:reifies <<( doc:Factsdoi_320425 None:has_text_value "10.15587/1729-4061.2025.320425" )>> ;
+	prov:wasDerivedFrom doc:81a28c8cec9c .
+doc:Factspressure_2 None:has_text_value "acoustic characteristics" .
+_:ee338cf1ce63a39caa942662dbb5b7e6 rdf:reifies <<( doc:Factspressure_2 None:has_text_value "acoustic characteristics" )>> ;
+	prov:wasDerivedFrom doc:81a28c8cec9c .
+doc:FactspersonTarasBahan a schema:Person .
+_:c359b6fd65e9f64648634306f929ca8d rdf:reifies <<( doc:FactspersonTarasBahan rdf:type schema:Person )>> ;
+	prov:wasDerivedFrom doc:81a28c8cec9c .
+doc:Factsarticle_320425 schema:isPartOf doc:FactseasternEuropeanJournalEnterpriseTechnologies .
+_:d1486db37530313d0ff53eb89086cb48 rdf:reifies <<( doc:Factsarticle_320425 schema:isPartOf doc:FactseasternEuropeanJournalEnterpriseTechnologies )>> ;
+	prov:wasDerivedFrom doc:81a28c8cec9c .
+_:e33efe9b30ac4ff4c352d92864a71c32 prov:wasDerivedFrom doc:81a28c8cec9c .
+doc:FactspersonTarasBahan schema:familyName "Temchur" .
+_:d8d3284ca35cd82d0e8c5d476064737e rdf:reifies <<( doc:FactspersonTarasBahan schema:familyName "Temchur" )>> ;
+	prov:wasDerivedFrom doc:81a28c8cec9c .
+doc:Factspressure_2 None:has_text_value "temperature" .
+_:dae48f124662e628071b92ef70539c0b rdf:reifies <<( doc:Factspressure_2 None:has_text_value "temperature" )>> ;
+	prov:wasDerivedFrom doc:81a28c8cec9c .
+doc:Factspressure_2 None:has_text_value "electrical characteristics" .
+_:af958d47bdd2e73271a750c76807c008 rdf:reifies <<( doc:Factspressure_2 None:has_text_value "electrical characteristics" )>> ;
+	prov:wasDerivedFrom doc:81a28c8cec9c .
+doc:Factsdoi_320425 cco:designates doc:Factsarticle_320425 .
+_:db94e57a2ad7f16b34aae8d3c81a38a2 rdf:reifies <<( doc:Factsdoi_320425 cco:designates doc:Factsarticle_320425 )>> ;
+	prov:wasDerivedFrom doc:81a28c8cec9c .
+doc:Factsengine_1 schema:name "worn parts" .
+_:f68a607678538b45a4fb869b99f766c8 rdf:reifies <<( doc:Factsengine_1 schema:name "worn parts" )>> ;
+	prov:wasDerivedFrom doc:81a28c8cec9c .
+doc:FactshealthAssessment_7 a None:Health_assessment .
+_:e2d1c17b66045cdb33d92ff312c7cd63 rdf:reifies <<( doc:FactshealthAssessment_7 rdf:type None:Health_assessment )>> ;
+	prov:wasDerivedFrom doc:81a28c8cec9c .
+doc:Factsengine_1 schema:name "bearing" .
+_:b4d659885819cdf75d5dd2034206166f rdf:reifies <<( doc:Factsengine_1 schema:name "bearing" )>> ;
+	prov:wasDerivedFrom doc:81a28c8cec9c .
+doc:FactsElectricMotor schema:name "electric motor" .
+_:aa3cd3598479603211172d89873fd8ad rdf:reifies <<( doc:FactsElectricMotor schema:name "electric motor" )>> ;
+	prov:wasDerivedFrom doc:81a28c8cec9c .
+doc:Factsarticle_320425 None:has_publication_year doc:Factspublication_year_2025_8 .
+_:ecc87c42773e0e2358cc1d8336a1c98d rdf:reifies <<( doc:Factsarticle_320425 None:has_publication_year doc:Factspublication_year_2025_8 )>> ;
+	prov:wasDerivedFrom doc:81a28c8cec9c .
+doc:FactspersonTarasBahan schema:familyName "Bahan" .
+_:c46284c5e3ae525513c7407aa296452d rdf:reifies <<( doc:FactspersonTarasBahan schema:familyName "Bahan" )>> ;
+	prov:wasDerivedFrom doc:81a28c8cec9c .
+doc:Factsarticle_320425 a None:Predictive_Maintenance_Article .
+_:af6b5b5047ec6884aa1dedc7c5d7950b rdf:reifies <<( doc:Factsarticle_320425 rdf:type None:Predictive_Maintenance_Article )>> ;
+	prov:wasDerivedFrom doc:81a28c8cec9c .
+doc:FactsvibrationSignalProcessing None:has_text_value "vibration signal processing methods" .
+_:c7ec3a050480ce9ee182afb0a98ec386 rdf:reifies <<( doc:FactsvibrationSignalProcessing None:has_text_value "vibration signal processing methods" )>> ;
+	prov:wasDerivedFrom doc:81a28c8cec9c .
+_:d1e44bef1549e4290bf5fa0dd57251f7 prov:wasDerivedFrom doc:81a28c8cec9c .
+doc:FactseasternEuropeanJournalEnterpriseTechnologies a schema:Periodical .
+_:e047b49826ebacb887f181eadcca3801 rdf:reifies <<( doc:FactseasternEuropeanJournalEnterpriseTechnologies rdf:type schema:Periodical )>> ;
+	prov:wasDerivedFrom doc:81a28c8cec9c .
+doc:Factsengine_1 schema:name "engine" .
+_:dbe874c0ab1aac7b501eefa856522536 rdf:reifies <<( doc:Factsengine_1 schema:name "engine" )>> ;
+	prov:wasDerivedFrom doc:81a28c8cec9c .
+_:f104cb7f3868ff3a2375d5f84271f34b prov:wasDerivedFrom doc:81a28c8cec9c .
+doc:Factspressure_2 None:has_text_value "vibrations" .
+_:b800a4889d5a1ae54b8690ed04918917 rdf:reifies <<( doc:Factspressure_2 None:has_text_value "vibrations" )>> ;
+	prov:wasDerivedFrom doc:81a28c8cec9c .
+doc:Factsdoi_320425 a None:Article_identifier .
+_:f104a000ec1a9e0008ac2422c015ba70 rdf:reifies <<( doc:Factsdoi_320425 rdf:type None:Article_identifier )>> ;
+	prov:wasDerivedFrom doc:81a28c8cec9c .
+doc:FactsDiagnosticProcess None:has_design_detail doc:FactsvibrationSignalProcessing .
+_:f4b0090b30174b2bfe595684773b2e36 rdf:reifies <<( doc:FactsDiagnosticProcess None:has_design_detail doc:FactsvibrationSignalProcessing )>> ;
+	prov:wasDerivedFrom doc:81a28c8cec9c .
+doc:FactspersonTarasBahan schema:givenName "Taras" .
+_:cbdbe0fe4d6feadcc66495e6860232d9 rdf:reifies <<( doc:FactspersonTarasBahan schema:givenName "Taras" )>> ;
+	prov:wasDerivedFrom doc:81a28c8cec9c .
+doc:FactsvibrationSignalProcessing a None:Design_detail .
+_:aecc55595d59bf5d62f41fa656b8790d rdf:reifies <<( doc:FactsvibrationSignalProcessing rdf:type None:Design_detail )>> ;
+	prov:wasDerivedFrom doc:81a28c8cec9c .
+doc:Factsdoi_320425 None:has_text_value "Determining the efficiency of vibration signal processing methods for predictive diagnostics of electric motors" .
+_:f3530a065eafb64b3fd9d8859d2234d2 rdf:reifies <<( doc:Factsdoi_320425 None:has_text_value "Determining the efficiency of vibration signal processing methods for predictive diagnostics of electric motors" )>> ;
+	prov:wasDerivedFrom doc:81a28c8cec9c .
+doc:Factspressure_2 None:has_text_value "pressure" .
+_:ee1864daddadcc616ddbd8f298234f5a rdf:reifies <<( doc:Factspressure_2 None:has_text_value "pressure" )>> ;
+	prov:wasDerivedFrom doc:81a28c8cec9c .
+doc:FactspersonTarasBahan schema:email "dypomat4@gmail.com" .
+_:ebbc238c00385e4f967336e7dc1a4c66 rdf:reifies <<( doc:FactspersonTarasBahan schema:email "dypomat4@gmail.com" )>> ;
+	prov:wasDerivedFrom doc:81a28c8cec9c .
+doc:Factsarticle_320425 None:has_title doc:Factsdoi_320425 .
+_:e2baead9752cb312d24db379343522a9 rdf:reifies <<( doc:Factsarticle_320425 None:has_title doc:Factsdoi_320425 )>> ;
+	prov:wasDerivedFrom doc:81a28c8cec9c .
+doc:FactseasternEuropeanJournalEnterpriseTechnologies schema:name "Eastern-European Journal of Enterprise Technologies" .
+_:c7df84f521041899eb604ed147911db9 rdf:reifies <<( doc:FactseasternEuropeanJournalEnterpriseTechnologies schema:name "Eastern-European Journal of Enterprise Technologies" )>> ;
+	prov:wasDerivedFrom doc:81a28c8cec9c .
+_:d5d0dab08081ffa768614848cc3b5c37 prov:wasDerivedFrom doc:81a28c8cec9c .
+doc:FactspersonTarasBahan schema:familyName "Boun" .
+_:ef04b7fafca97bfa010cf0b1cb39b89 rdf:reifies <<( doc:FactspersonTarasBahan schema:familyName "Boun" )>> ;
+	prov:wasDerivedFrom doc:81a28c8cec9c .
+doc:FactsDiagnosticProcess None:has_predictive_maintenance_function doc:FactshealthAssessment_7 .
+_:dd8e45bf0c9e9554889c702985f84aa7 rdf:reifies <<( doc:FactsDiagnosticProcess None:has_predictive_maintenance_function doc:FactshealthAssessment_7 )>> ;
+	prov:wasDerivedFrom doc:81a28c8cec9c .
+doc:76dc1bc152bf a prov:Entity , schema:text ;
+	prov:generatedAtTime "2026-07-25T13:06:20.317849Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+	schema:position 2 ;
+	schema:identifier "76dc1bc152bf" .
+doc:FactsDiagnosticProcess rdfs:label "fault classification"@en .
+_:a055936d4e3d2ee4e471f083a42745b0 rdf:reifies <<( doc:FactsDiagnosticProcess rdfs:label "fault classification"@en )>> ;
+	prov:wasDerivedFrom doc:76dc1bc152bf .
+doc:FactsMeanFeature rdfs:label "mean vibration feature"@en .
+_:ca8b921e41a96db1db59ddfa548b054 rdf:reifies <<( doc:FactsMeanFeature rdfs:label "mean vibration feature"@en )>> ;
+	prov:wasDerivedFrom doc:76dc1bc152bf .
+doc:FactsDiagnosticProcess obo:BFO_0000051 doc:FactsDecisionTree .
+_:b4b032f81c97dcf301764062afbedbfe rdf:reifies <<( doc:FactsDiagnosticProcess obo:BFO_0000051 doc:FactsDecisionTree )>> ;
+	prov:wasDerivedFrom doc:76dc1bc152bf .
+doc:FactsVibrationDiagnosticModel a None:Predictive_maintenance_model .
+_:e68e3df4266263ebe4c5b961ef974425 rdf:reifies <<( doc:FactsVibrationDiagnosticModel rdf:type None:Predictive_maintenance_model )>> ;
+	prov:wasDerivedFrom doc:76dc1bc152bf .
+_:a619762786e9cde67cf22c96a31e4691 prov:wasDerivedFrom doc:76dc1bc152bf .
+doc:FactsLongShortTermMemoryNetwork a cco:Algorithm .
+_:c6e8e4d6117fd7f23245744116d0b7fc rdf:reifies <<( doc:FactsLongShortTermMemoryNetwork rdf:type cco:Algorithm )>> ;
+	prov:wasDerivedFrom doc:76dc1bc152bf .
+doc:FactsMultilayeredPerceptron a cco:Algorithm .
+_:d7598284443426d2cfa0a2e36040accb rdf:reifies <<( doc:FactsMultilayeredPerceptron rdf:type cco:Algorithm )>> ;
+	prov:wasDerivedFrom doc:76dc1bc152bf .
+doc:FactsMultilayeredPerceptron rdfs:label "multilayered perceptron (MLP)"@en .
+_:b314c41d2e6a47a156e82a7774867ae rdf:reifies <<( doc:FactsMultilayeredPerceptron rdfs:label "multilayered perceptron (MLP)"@en )>> ;
+	prov:wasDerivedFrom doc:76dc1bc152bf .
+doc:FactsVibrationDiagnosticModel cco:is_about doc:FactsMeanFeature .
+_:b80cd0abd522a0e7522e9df656bdc2 rdf:reifies <<( doc:FactsVibrationDiagnosticModel cco:is_about doc:FactsMeanFeature )>> ;
+	prov:wasDerivedFrom doc:76dc1bc152bf .
+doc:FactsSupportVectorMethod a cco:Algorithm .
+_:de349e10171dcbbc56cf6989ab0e84ee rdf:reifies <<( doc:FactsSupportVectorMethod rdf:type cco:Algorithm )>> ;
+	prov:wasDerivedFrom doc:76dc1bc152bf .
+doc:FactsMeanFeature rdfs:label "median vibration feature"@en .
+_:de25d52686714be368ca45a1113809fc rdf:reifies <<( doc:FactsMeanFeature rdfs:label "median vibration feature"@en )>> ;
+	prov:wasDerivedFrom doc:76dc1bc152bf .
+doc:FactsDiagnosticProcess rdfs:label "anomaly detection"@en .
+_:f32b46c1fe82c810ec03e5d8b843e53a rdf:reifies <<( doc:FactsDiagnosticProcess rdfs:label "anomaly detection"@en )>> ;
+	prov:wasDerivedFrom doc:76dc1bc152bf .
+doc:FactsMeanFeature a None:Data_variable .
+_:df29e242af273a5b1080bd523f5d6677 rdf:reifies <<( doc:FactsMeanFeature rdf:type None:Data_variable )>> ;
+	prov:wasDerivedFrom doc:76dc1bc152bf .
+doc:FactsVibrationDiagnosticModel cco:is_about doc:FactsElectricMotor .
+_:e4ca244139a98e3521fbc39c990cc23d rdf:reifies <<( doc:FactsVibrationDiagnosticModel cco:is_about doc:FactsElectricMotor )>> ;
+	prov:wasDerivedFrom doc:76dc1bc152bf .
+doc:FactsMedianBasedOutlierDetection a cco:Algorithm .
+_:a5bf50af32d75fff3ae4bf10964b3d89 rdf:reifies <<( doc:FactsMedianBasedOutlierDetection rdf:type cco:Algorithm )>> ;
+	prov:wasDerivedFrom doc:76dc1bc152bf .
+doc:FactsDiagnosticProcess rdfs:label "vibration fault feature extraction"@en .
+_:a318661a8eaa85ce8401e1667b62f426 rdf:reifies <<( doc:FactsDiagnosticProcess rdfs:label "vibration fault feature extraction"@en )>> ;
+	prov:wasDerivedFrom doc:76dc1bc152bf .
+doc:FactsDiagnosticProcess a None:Deviation_detection .
+_:eb20c54bf9badb7199fd68831eb438de rdf:reifies <<( doc:FactsDiagnosticProcess rdf:type None:Deviation_detection )>> ;
+	prov:wasDerivedFrom doc:76dc1bc152bf .
+doc:FactsOldIndustrialEngine a None:Maintainable_item .
+_:a5d3894bcd6388069e13cf379763624 rdf:reifies <<( doc:FactsOldIndustrialEngine rdf:type None:Maintainable_item )>> ;
+	prov:wasDerivedFrom doc:76dc1bc152bf .
+doc:FactsMeanFeature rdfs:label "range vibration feature"@en .
+_:a4ed99e53479662578dc3bd247e49bcb rdf:reifies <<( doc:FactsMeanFeature rdfs:label "range vibration feature"@en )>> ;
+	prov:wasDerivedFrom doc:76dc1bc152bf .
+doc:FactsDiagnosticProcess a None:Fault_feature_extraction .
+_:b6b61fd9050f3bd375a94af14fca6176 rdf:reifies <<( doc:FactsDiagnosticProcess rdf:type None:Fault_feature_extraction )>> ;
+	prov:wasDerivedFrom doc:76dc1bc152bf .
+doc:FactsVibrationDiagnosticModel None:has_predictive_maintenance_function doc:FactsDiagnosticProcess .
+_:c9d943c75a98ce4fbb246041a575b4cf rdf:reifies <<( doc:FactsVibrationDiagnosticModel None:has_predictive_maintenance_function doc:FactsDiagnosticProcess )>> ;
+	prov:wasDerivedFrom doc:76dc1bc152bf .
+_:b1035fa11b4da75ee8df536e6f445830 prov:wasDerivedFrom doc:76dc1bc152bf .
+doc:FactsMeanFeature rdfs:label "kurtosis vibration feature"@en .
+_:a5117fe81ce61e31e3a4c17661d22990 rdf:reifies <<( doc:FactsMeanFeature rdfs:label "kurtosis vibration feature"@en )>> ;
+	prov:wasDerivedFrom doc:76dc1bc152bf .
+doc:FactsDiagnosticProcess obo:BFO_0000051 doc:FactsVibrationDiagnosticModel .
+_:dfb8e55594c40089c42e8d34ad1acce0 rdf:reifies <<( doc:FactsDiagnosticProcess obo:BFO_0000051 doc:FactsVibrationDiagnosticModel )>> ;
+	prov:wasDerivedFrom doc:76dc1bc152bf .
+doc:FactsUnsupervisedAnomalyDetectionModel rdfs:label "unsupervised anomaly detection model"@en .
+_:b7d7349881d18498f1a8bdc7e60dd1a8 rdf:reifies <<( doc:FactsUnsupervisedAnomalyDetectionModel rdfs:label "unsupervised anomaly detection model"@en )>> ;
+	prov:wasDerivedFrom doc:76dc1bc152bf .
+_:f043f47a6eaa70e7dffac2be9bcdb51e prov:wasDerivedFrom doc:76dc1bc152bf .
+doc:FactsUnsupervisedAnomalyDetectionModel cco:is_about doc:FactsMeanFeature .
+_:ce1b5669445d3de8ee0d856c01a69d24 rdf:reifies <<( doc:FactsUnsupervisedAnomalyDetectionModel cco:is_about doc:FactsMeanFeature )>> ;
+	prov:wasDerivedFrom doc:76dc1bc152bf .
+_:ced3705e582556192e8674e4269ad079 prov:wasDerivedFrom doc:76dc1bc152bf .
+doc:FactsDiagnosticProcess obo:BFO_0000051 doc:FactsSupportVectorMethod .
+_:ed64b42aa3b8d2d1bb1522f4c6f9a464 rdf:reifies <<( doc:FactsDiagnosticProcess obo:BFO_0000051 doc:FactsSupportVectorMethod )>> ;
+	prov:wasDerivedFrom doc:76dc1bc152bf .
+doc:FactsVibrationDiagnosticModel rdfs:label "vibration diagnostic machine-learning model"@en .
+_:bcb06f5e0b8209be2481512f1b916c37 rdf:reifies <<( doc:FactsVibrationDiagnosticModel rdfs:label "vibration diagnostic machine-learning model"@en )>> ;
+	prov:wasDerivedFrom doc:76dc1bc152bf .
+doc:FactsDiagnosticProcess obo:BFO_0000051 doc:FactsLongShortTermMemoryNetwork .
+_:ff626bbdbc7015bb212894dd437df774 rdf:reifies <<( doc:FactsDiagnosticProcess obo:BFO_0000051 doc:FactsLongShortTermMemoryNetwork )>> ;
+	prov:wasDerivedFrom doc:76dc1bc152bf .
+_:e33efe9b30ac4ff4c352d92864a71c32 prov:wasDerivedFrom doc:76dc1bc152bf .
+doc:FactsMeanFeature cco:is_about doc:FactsElectricMotor .
+_:a51ce1cb3d3fcf7b3f1f5543fa8ff9b6 rdf:reifies <<( doc:FactsMeanFeature cco:is_about doc:FactsElectricMotor )>> ;
+	prov:wasDerivedFrom doc:76dc1bc152bf .
+doc:FactsAsynchronousMotorBearing a None:Maintainable_item .
+_:f208293eb271e832dd00497c78b1d4e9 rdf:reifies <<( doc:FactsAsynchronousMotorBearing rdf:type None:Maintainable_item )>> ;
+	prov:wasDerivedFrom doc:76dc1bc152bf .
+doc:FactsDecisionTree a cco:Algorithm .
+_:aac36e773efe6344f39c187400417083 rdf:reifies <<( doc:FactsDecisionTree rdf:type cco:Algorithm )>> ;
+	prov:wasDerivedFrom doc:76dc1bc152bf .
+doc:FactsUnsupervisedAnomalyDetectionModel cco:is_about doc:FactsOldIndustrialEngine .
+_:b4ebf4dc8afec8e617f06e5b1840dffb rdf:reifies <<( doc:FactsUnsupervisedAnomalyDetectionModel cco:is_about doc:FactsOldIndustrialEngine )>> ;
+	prov:wasDerivedFrom doc:76dc1bc152bf .
+_:f104cb7f3868ff3a2375d5f84271f34b prov:wasDerivedFrom doc:76dc1bc152bf .
+doc:FactsDiagnosticProcess obo:BFO_0000051 doc:FactsMedianBasedOutlierDetection .
+_:a296f1fe19e3a6bf6b33f46a49659775 rdf:reifies <<( doc:FactsDiagnosticProcess obo:BFO_0000051 doc:FactsMedianBasedOutlierDetection )>> ;
+	prov:wasDerivedFrom doc:76dc1bc152bf .
+doc:FactsDiagnosticProcess obo:BFO_0000051 doc:FactsMultilayeredPerceptron .
+_:a5e1ea29d17f62998711fb1eee500771 rdf:reifies <<( doc:FactsDiagnosticProcess obo:BFO_0000051 doc:FactsMultilayeredPerceptron )>> ;
+	prov:wasDerivedFrom doc:76dc1bc152bf .
+doc:FactsMeanFeature rdfs:label "variance vibration feature"@en .
+_:b8956bffddea2192200fe7af44f090b1 rdf:reifies <<( doc:FactsMeanFeature rdfs:label "variance vibration feature"@en )>> ;
+	prov:wasDerivedFrom doc:76dc1bc152bf .
+doc:FactsDecisionTree rdfs:label "decision tree"@en .
+_:de3bec90927cd21fb9b5c9146c3b1a6b rdf:reifies <<( doc:FactsDecisionTree rdfs:label "decision tree"@en )>> ;
+	prov:wasDerivedFrom doc:76dc1bc152bf .
+doc:FactsLongShortTermMemoryNetwork rdfs:label "long short-term memory (LSTM) network"@en .
+_:e0b235344232e8f23ec98c04ea92f6d2 rdf:reifies <<( doc:FactsLongShortTermMemoryNetwork rdfs:label "long short-term memory (LSTM) network"@en )>> ;
+	prov:wasDerivedFrom doc:76dc1bc152bf .
+_:e89b67c1540714ba728e5848bcf301db prov:wasDerivedFrom doc:76dc1bc152bf .
+doc:FactsDiagnosticProcess rdfs:label "fault detection from vibration signals"@en .
+_:a2a2aa547cef5154fd4222de2fab0763 rdf:reifies <<( doc:FactsDiagnosticProcess rdfs:label "fault detection from vibration signals"@en )>> ;
+	prov:wasDerivedFrom doc:76dc1bc152bf .
+doc:FactsMeanFeature rdfs:label "skewness vibration feature"@en .
+_:f946a14e0449a4b72083ebfd9b6bbee0 rdf:reifies <<( doc:FactsMeanFeature rdfs:label "skewness vibration feature"@en )>> ;
+	prov:wasDerivedFrom doc:76dc1bc152bf .
+doc:FactsUnsupervisedAnomalyDetectionModel a None:Predictive_maintenance_model .
+_:f5c628d387e74c556c3dd89e4b2c2347 rdf:reifies <<( doc:FactsUnsupervisedAnomalyDetectionModel rdf:type None:Predictive_maintenance_model )>> ;
+	prov:wasDerivedFrom doc:76dc1bc152bf .
+doc:FactsAsynchronousMotorBearing rdfs:label "asynchronous motor bearing"@en .
+_:ce47001f0066897d830ed86c3787f37b rdf:reifies <<( doc:FactsAsynchronousMotorBearing rdfs:label "asynchronous motor bearing"@en )>> ;
+	prov:wasDerivedFrom doc:76dc1bc152bf .
+_:e5ba8da8f36eb9c3e530dca80a458f9d prov:wasDerivedFrom doc:76dc1bc152bf .
+doc:FactsMedianBasedOutlierDetection cco:is_about doc:FactsMeanFeature .
+_:c6432c96936da64fd6fee5fda217efbf rdf:reifies <<( doc:FactsMedianBasedOutlierDetection cco:is_about doc:FactsMeanFeature )>> ;
+	prov:wasDerivedFrom doc:76dc1bc152bf .
+doc:FactsVibrationDiagnosticModel a None:Predictive_maintenance_system_module .
+_:a1a347daff6bb6c574f67bdbce8cec0 rdf:reifies <<( doc:FactsVibrationDiagnosticModel rdf:type None:Predictive_maintenance_system_module )>> ;
+	prov:wasDerivedFrom doc:76dc1bc152bf .
+doc:FactsVibrationDiagnosticModel rdfs:label "vibration diagnostic module"@en .
+_:eecce1de35d2694180296417ca5d6b56 rdf:reifies <<( doc:FactsVibrationDiagnosticModel rdfs:label "vibration diagnostic module"@en )>> ;
+	prov:wasDerivedFrom doc:76dc1bc152bf .
+doc:FactsDiagnosticProcess rdfs:label "diagnostic process"@en .
+_:cdb1509a58d96b6f703650f3c3d8287e rdf:reifies <<( doc:FactsDiagnosticProcess rdfs:label "diagnostic process"@en )>> ;
+	prov:wasDerivedFrom doc:76dc1bc152bf .
+doc:FactsMedianBasedOutlierDetection rdfs:label "Median-Based Outlier Detection (MOD)"@en .
+_:bf2a63281b012be6993ac368bff27945 rdf:reifies <<( doc:FactsMedianBasedOutlierDetection rdfs:label "Median-Based Outlier Detection (MOD)"@en )>> ;
+	prov:wasDerivedFrom doc:76dc1bc152bf .
+doc:FactsOldIndustrialEngine rdfs:label "new experimental engine"@en .
+_:a4246bf53ffad06ea29cd4363935645f rdf:reifies <<( doc:FactsOldIndustrialEngine rdfs:label "new experimental engine"@en )>> ;
+	prov:wasDerivedFrom doc:76dc1bc152bf .
+doc:FactsOldIndustrialEngine rdfs:label "old industrial engine"@en .
+_:b00214541d1ee3c6927aa64bab797f6e rdf:reifies <<( doc:FactsOldIndustrialEngine rdfs:label "old industrial engine"@en )>> ;
+	prov:wasDerivedFrom doc:76dc1bc152bf .
+doc:FactsSupportVectorMethod rdfs:label "support vector method (SVM)"@en .
+_:fc07c68b5c8741396885b3e210fc8bb5 rdf:reifies <<( doc:FactsSupportVectorMethod rdfs:label "support vector method (SVM)"@en )>> ;
+	prov:wasDerivedFrom doc:76dc1bc152bf .

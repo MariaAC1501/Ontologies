@@ -1,0 +1,529 @@
+@prefix None: <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD/seed#> .
+@prefix cco: <http://www.ontologyrepository.com/CommonCoreOntologies/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doc: <https://growgraph.dev/doc/60eade06be07/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix schema: <https://schema.org/> .
+doc:ec7312df778b a prov:Entity , schema:text ;
+	prov:generatedAtTime "2026-07-26T06:56:28.45244Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+	schema:position 0 ;
+	schema:identifier "ec7312df778b" .
+doc:FactsthermalRunaway rdfs:label "proposed electrothermal model"@en .
+_:b3e767c3d0199930497c2cc6c02fb68a rdf:reifies <<( doc:FactsthermalRunaway rdfs:label "proposed electrothermal model"@en )>> ;
+	prov:wasDerivedFrom doc:ec7312df778b .
+doc:FactslfpOpenCircuitVoltage schema:value 3.34 .
+_:d529ed273d0fbf2b9b83f301d02e7f4e rdf:reifies <<( doc:FactslfpOpenCircuitVoltage schema:value 3.34 )>> ;
+	prov:wasDerivedFrom doc:ec7312df778b .
+doc:FactslfpBattery schema:additionalProperty doc:FactslfpOpenCircuitVoltage .
+_:ff1fe2ddd21dc5482529bceea80c7970 rdf:reifies <<( doc:FactslfpBattery schema:additionalProperty doc:FactslfpOpenCircuitVoltage )>> ;
+	prov:wasDerivedFrom doc:ec7312df778b .
+doc:FactslfpBattery schema:additionalProperty doc:FactslfpStabilityAt45c .
+_:f8c923b4bd18630cea7f9f336da191b4 rdf:reifies <<( doc:FactslfpBattery schema:additionalProperty doc:FactslfpStabilityAt45c )>> ;
+	prov:wasDerivedFrom doc:ec7312df778b .
+doc:FactsarticleTitle_24 a None:Article_title .
+_:f6f0c5362f5ee446dfd9a6ea74d20aa5 rdf:reifies <<( doc:FactsarticleTitle_24 rdf:type None:Article_title )>> ;
+	prov:wasDerivedFrom doc:ec7312df778b .
+doc:FactspalestineTechnicalUniversityKadoorie schema:name "Palestine Technical University-Kadoorie" .
+_:d17892e70a4fa2ec348d1163f9622fcc rdf:reifies <<( doc:FactspalestineTechnicalUniversityKadoorie schema:name "Palestine Technical University-Kadoorie" )>> ;
+	prov:wasDerivedFrom doc:ec7312df778b .
+doc:FactsauthorAmer schema:affiliation doc:FactspalestineTechnicalUniversityKadoorie .
+_:ecf585338e29bcacb93486b6523556a4 rdf:reifies <<( doc:FactsauthorAmer schema:affiliation doc:FactspalestineTechnicalUniversityKadoorie )>> ;
+	prov:wasDerivedFrom doc:ec7312df778b .
+doc:FactsrulEstimation_4 rdfs:label "remaining useful life estimation"@en .
+_:b6d0bc37f08e337b0be6d8b99fef8c8c rdf:reifies <<( doc:FactsrulEstimation_4 rdfs:label "remaining useful life estimation"@en )>> ;
+	prov:wasDerivedFrom doc:ec7312df778b .
+doc:FactslfpSelfDischargeComparison a schema:QuantitativeValue .
+_:fd7c77409d8349db888aedab7bf30be2 rdf:reifies <<( doc:FactslfpSelfDischargeComparison rdf:type schema:QuantitativeValue )>> ;
+	prov:wasDerivedFrom doc:ec7312df778b .
+doc:Factsarticle1_16 a None:Predictive_Maintenance_Article .
+_:ff2520b6813da04c9b63fb4d61c99457 rdf:reifies <<( doc:Factsarticle1_16 rdf:type None:Predictive_Maintenance_Article )>> ;
+	prov:wasDerivedFrom doc:ec7312df778b .
+doc:FactsauthorAmer a schema:Person .
+_:e7edff28551b88d9f76af62a80b46eea rdf:reifies <<( doc:FactsauthorAmer rdf:type schema:Person )>> ;
+	prov:wasDerivedFrom doc:ec7312df778b .
+doc:FactsthermalRunaway cco:is_about doc:Factsev .
+_:c59f9ea23b4216b18dc2c8b7c782115b rdf:reifies <<( doc:FactsthermalRunaway cco:is_about doc:Factsev )>> ;
+	prov:wasDerivedFrom doc:ec7312df778b .
+doc:Factsarticle1_16 cco:is_about doc:FactsrulEstimation_4 .
+_:f116078e11e71a5d71a794ace143ced9 rdf:reifies <<( doc:Factsarticle1_16 cco:is_about doc:FactsrulEstimation_4 )>> ;
+	prov:wasDerivedFrom doc:ec7312df778b .
+doc:FactslfpOpenCircuitVoltage schema:value 0.053 .
+_:c0124efa80519c43a3583af11f401855 rdf:reifies <<( doc:FactslfpOpenCircuitVoltage schema:value 0.053 )>> ;
+	prov:wasDerivedFrom doc:ec7312df778b .
+doc:FactslfpBattery rdfs:label "LFP battery"@en .
+_:d54c469364f85d2dfa3d9cf5dfbe2915 rdf:reifies <<( doc:FactslfpBattery rdfs:label "LFP battery"@en )>> ;
+	prov:wasDerivedFrom doc:ec7312df778b .
+doc:FactslfpOpenCircuitVoltage a schema:QuantitativeValue .
+_:d365b92256819db073ceaf7a95f27ac8 rdf:reifies <<( doc:FactslfpOpenCircuitVoltage rdf:type schema:QuantitativeValue )>> ;
+	prov:wasDerivedFrom doc:ec7312df778b .
+doc:FactslfpBattery schema:name "lithium manganese nickel cobalt battery" .
+_:a96db2e03bd204c69c1da0fec324762f rdf:reifies <<( doc:FactslfpBattery schema:name "lithium manganese nickel cobalt battery" )>> ;
+	prov:wasDerivedFrom doc:ec7312df778b .
+doc:FactslfpOpenCircuitVoltage schema:description "Open-circuit voltage variation of NMC batteries" .
+_:e5cb371bdc3e51fca972f04d5a22cba2 rdf:reifies <<( doc:FactslfpOpenCircuitVoltage schema:description "Open-circuit voltage variation of NMC batteries" )>> ;
+	prov:wasDerivedFrom doc:ec7312df778b .
+doc:FactsworldElectricVehicleAssociation schema:name "Sunonwealth Electric Machine Industry Co., Ltd." .
+_:a8fac2a8bf87ea6f85a8bde7138b3611 rdf:reifies <<( doc:FactsworldElectricVehicleAssociation schema:name "Sunonwealth Electric Machine Industry Co., Ltd." )>> ;
+	prov:wasDerivedFrom doc:ec7312df778b .
+doc:FactspalestineTechnicalUniversityKadoorie schema:address "Tulkarm, Palestine" .
+_:fce99e1733c50e7c8917d0fffdb2db07 rdf:reifies <<( doc:FactspalestineTechnicalUniversityKadoorie schema:address "Tulkarm, Palestine" )>> ;
+	prov:wasDerivedFrom doc:ec7312df778b .
+doc:Factsev a schema:Vehicle .
+_:da2af23ee458bb49e05487912bd0aa19 rdf:reifies <<( doc:Factsev rdf:type schema:Vehicle )>> ;
+	prov:wasDerivedFrom doc:ec7312df778b .
+doc:FactslfpBattery a None:Maintainable_item .
+_:f37f6573862f12517750a3a9b49be82a rdf:reifies <<( doc:FactslfpBattery rdf:type None:Maintainable_item )>> ;
+	prov:wasDerivedFrom doc:ec7312df778b .
+doc:FactslfpBattery schema:additionalProperty doc:FactsnmcEnergyDensityComparison .
+_:a4d2f492b97a6551d6d8ba3c0ace206b rdf:reifies <<( doc:FactslfpBattery schema:additionalProperty doc:FactsnmcEnergyDensityComparison )>> ;
+	prov:wasDerivedFrom doc:ec7312df778b .
+doc:FactsworldElectricVehicleAssociation a schema:Organization .
+_:dd8b24a88d5e6c3514e90c150fd61b05 rdf:reifies <<( doc:FactsworldElectricVehicleAssociation rdf:type schema:Organization )>> ;
+	prov:wasDerivedFrom doc:ec7312df778b .
+doc:FactslfpBattery schema:name "lithium ferrous phosphate battery" .
+_:b4c8407c87b8299470e9bad768b0b500 rdf:reifies <<( doc:FactslfpBattery schema:name "lithium ferrous phosphate battery" )>> ;
+	prov:wasDerivedFrom doc:ec7312df778b .
+doc:FactsauthorAmer schema:name "Mohammad Assi" .
+_:d12c944ba19130ef8e7a898f6d25999 rdf:reifies <<( doc:FactsauthorAmer schema:name "Mohammad Assi" )>> ;
+	prov:wasDerivedFrom doc:ec7312df778b .
+doc:FactsthermalRunaway cco:is_about doc:FactslfpBattery .
+_:eb2b3afffa912b6bd6961bef27d59a19 rdf:reifies <<( doc:FactsthermalRunaway cco:is_about doc:FactslfpBattery )>> ;
+	prov:wasDerivedFrom doc:ec7312df778b .
+doc:FactsauthorAmer schema:name "Mohammed Amer" .
+_:e6b47a0250b55bee52f26e5129841b28 rdf:reifies <<( doc:FactsauthorAmer schema:name "Mohammed Amer" )>> ;
+	prov:wasDerivedFrom doc:ec7312df778b .
+doc:FactslfpBattery schema:additionalProperty doc:FactslfpSelfDischargeComparison .
+_:eea4b5e6999ea495b96a7b52c8a07907 rdf:reifies <<( doc:FactslfpBattery schema:additionalProperty doc:FactslfpSelfDischargeComparison )>> ;
+	prov:wasDerivedFrom doc:ec7312df778b .
+doc:FactslfpBattery rdfs:label "NMC battery"@en .
+_:faba1f039af54b1232711eafbaeebee rdf:reifies <<( doc:FactslfpBattery rdfs:label "NMC battery"@en )>> ;
+	prov:wasDerivedFrom doc:ec7312df778b .
+doc:FactslfpOpenCircuitVoltage schema:unitText "V" .
+_:ab1c168da10f29603de45291fec94b71 rdf:reifies <<( doc:FactslfpOpenCircuitVoltage schema:unitText "V" )>> ;
+	prov:wasDerivedFrom doc:ec7312df778b .
+doc:FactslfpStabilityAt45c schema:unitText "Â°C" .
+_:ae91033121b228fd07ee8f3c6643ba1 rdf:reifies <<( doc:FactslfpStabilityAt45c schema:unitText "Â°C" )>> ;
+	prov:wasDerivedFrom doc:ec7312df778b .
+doc:Factsarticle1_16 None:has_title doc:FactsarticleTitle_24 .
+_:d5b4adbad555e8d85a43942580d8a44d rdf:reifies <<( doc:Factsarticle1_16 None:has_title doc:FactsarticleTitle_24 )>> ;
+	prov:wasDerivedFrom doc:ec7312df778b .
+doc:FactsnmcEnergyDensityComparison schema:value "150"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+_:cea2d1de088349906ff6bf2fdbcb4403 rdf:reifies <<( doc:FactsnmcEnergyDensityComparison schema:value "150"^^<http://www.w3.org/2001/XMLSchema#decimal> )>> ;
+	prov:wasDerivedFrom doc:ec7312df778b .
+doc:Factsarticle1_16 schema:author doc:FactsauthorAmer .
+_:e13c158b24b2b1a59e0217d093e570c6 rdf:reifies <<( doc:Factsarticle1_16 schema:author doc:FactsauthorAmer )>> ;
+	prov:wasDerivedFrom doc:ec7312df778b .
+doc:FactslfpSelfDischargeComparison schema:value "12"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+_:f93c11a9e36f67eb85045d97f95dd06 rdf:reifies <<( doc:FactslfpSelfDischargeComparison schema:value "12"^^<http://www.w3.org/2001/XMLSchema#decimal> )>> ;
+	prov:wasDerivedFrom doc:ec7312df778b .
+doc:Factsarticle1_16 cco:is_about doc:FactslfpBattery .
+_:fe47fadac3e21131ad9b58387236ef6 rdf:reifies <<( doc:Factsarticle1_16 cco:is_about doc:FactslfpBattery )>> ;
+	prov:wasDerivedFrom doc:ec7312df778b .
+doc:FactsauthorAmer schema:affiliation doc:FactsworldElectricVehicleAssociation .
+_:d66b8ebca5c3370dae5fb1cb18218be1 rdf:reifies <<( doc:FactsauthorAmer schema:affiliation doc:FactsworldElectricVehicleAssociation )>> ;
+	prov:wasDerivedFrom doc:ec7312df778b .
+doc:FactsarticleTitle_24 None:has_text_value "A Comparative Analysis of Lithium-Ion Baeries Using a Proposed Electrothermal Model Based on Numerical Simulation" .
+_:fa3e5f6db06ee17ade44c1c9e12aff55 rdf:reifies <<( doc:FactsarticleTitle_24 None:has_text_value "A Comparative Analysis of Lithium-Ion Baeries Using a Proposed Electrothermal Model Based on Numerical Simulation" )>> ;
+	prov:wasDerivedFrom doc:ec7312df778b .
+doc:FactsrulEstimation_4 a None:Remaining_useful_life_estimation .
+_:fcfb9cfffc764d21be2aca8ce2739297 rdf:reifies <<( doc:FactsrulEstimation_4 rdf:type None:Remaining_useful_life_estimation )>> ;
+	prov:wasDerivedFrom doc:ec7312df778b .
+doc:FactsworldElectricVehicleAssociation schema:address "Kaohsiung City 806, Taiwan" .
+_:c908a817fbb40f9caff77338073c7843 rdf:reifies <<( doc:FactsworldElectricVehicleAssociation schema:address "Kaohsiung City 806, Taiwan" )>> ;
+	prov:wasDerivedFrom doc:ec7312df778b .
+doc:Factsev schema:name "electric vehicle system" .
+_:f699d41b4c57549ace4f0b63985e16ae rdf:reifies <<( doc:Factsev schema:name "electric vehicle system" )>> ;
+	prov:wasDerivedFrom doc:ec7312df778b .
+doc:FactslfpStabilityAt45c schema:value "45"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+_:f2bbc5b362c1b3bce9768ee76057b139 rdf:reifies <<( doc:FactslfpStabilityAt45c schema:value "45"^^<http://www.w3.org/2001/XMLSchema#decimal> )>> ;
+	prov:wasDerivedFrom doc:ec7312df778b .
+doc:FactslfpStabilityAt45c a schema:QuantitativeValue .
+_:d8828aa1dd236a5f4d64e7a049075f10 rdf:reifies <<( doc:FactslfpStabilityAt45c rdf:type schema:QuantitativeValue )>> ;
+	prov:wasDerivedFrom doc:ec7312df778b .
+doc:FactspalestineTechnicalUniversityKadoorie a schema:Organization .
+_:a031da8e996330dbe016f336af8bc469 rdf:reifies <<( doc:FactspalestineTechnicalUniversityKadoorie rdf:type schema:Organization )>> ;
+	prov:wasDerivedFrom doc:ec7312df778b .
+doc:FactslfpOpenCircuitVoltage schema:description "Open-circuit voltage of LFP batteries" .
+_:efce35bff466f86f6c74d9d0034bbc4c rdf:reifies <<( doc:FactslfpOpenCircuitVoltage schema:description "Open-circuit voltage of LFP batteries" )>> ;
+	prov:wasDerivedFrom doc:ec7312df778b .
+doc:FactslfpSelfDischargeComparison schema:unitText "times lower than NMC self-discharge current" .
+_:e51da783b47947c6d5fc478db691312a rdf:reifies <<( doc:FactslfpSelfDischargeComparison schema:unitText "times lower than NMC self-discharge current" )>> ;
+	prov:wasDerivedFrom doc:ec7312df778b .
+doc:Factsarticle1_16 cco:is_about doc:FactsthermalRunaway .
+_:a23765890d94f0931f4652e26af9b0aa rdf:reifies <<( doc:Factsarticle1_16 cco:is_about doc:FactsthermalRunaway )>> ;
+	prov:wasDerivedFrom doc:ec7312df778b .
+doc:FactsthermalRunaway a None:Predictive_maintenance_model .
+_:f34582a6c7edee115e0cb3f23c2f12cc rdf:reifies <<( doc:FactsthermalRunaway rdf:type None:Predictive_maintenance_model )>> ;
+	prov:wasDerivedFrom doc:ec7312df778b .
+doc:FactsnmcEnergyDensityComparison schema:unitText "% of LFP energy density per unit mass" .
+_:b9aba269310b031fdc7ba857af57e2d rdf:reifies <<( doc:FactsnmcEnergyDensityComparison schema:unitText "% of LFP energy density per unit mass" )>> ;
+	prov:wasDerivedFrom doc:ec7312df778b .
+doc:FactsnmcEnergyDensityComparison a schema:QuantitativeValue .
+_:a9cfc0216bd57e7cc370923b3b548bee rdf:reifies <<( doc:FactsnmcEnergyDensityComparison rdf:type schema:QuantitativeValue )>> ;
+	prov:wasDerivedFrom doc:ec7312df778b .
+doc:FactslfpStabilityAt45c schema:description "Temperature at which LFP batteries are reported to be about two times more stable during discharging" .
+_:bae20e3e1302a8588fd25e692b7b28cf rdf:reifies <<( doc:FactslfpStabilityAt45c schema:description "Temperature at which LFP batteries are reported to be about two times more stable during discharging" )>> ;
+	prov:wasDerivedFrom doc:ec7312df778b .
+doc:025c77c574e6 a prov:Entity , schema:text ;
+	prov:generatedAtTime "2026-07-26T06:56:28.455443Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+	schema:position 1 ;
+	schema:identifier "025c77c574e6" .
+doc:FactsccByLicense schema:url <https://creativecommons.org/licenses/by/4.0/> .
+_:b90ea4cb04bdc697d9bf17f49f0ba02c rdf:reifies <<( doc:FactsccByLicense schema:url <https://creativecommons.org/licenses/by/4.0/> )>> ;
+	prov:wasDerivedFrom doc:025c77c574e6 .
+doc:Factsarticle_14 schema:about doc:FactselectricVehicle_1 .
+_:ab8225466349e6fa24c109485d40bb0 rdf:reifies <<( doc:Factsarticle_14 schema:about doc:FactselectricVehicle_1 )>> ;
+	prov:wasDerivedFrom doc:025c77c574e6 .
+doc:FactselectricVehicle_1 schema:name "electric vehicle" .
+_:e8179753636a51f9d7c4da33e7e6c4a7 rdf:reifies <<( doc:FactselectricVehicle_1 schema:name "electric vehicle" )>> ;
+	prov:wasDerivedFrom doc:025c77c574e6 .
+doc:FactsccByLicense schema:name "Creative Commons Attribution (CC BY) license" .
+_:d8cc8eae69168d632671fa37fc3e05d8 rdf:reifies <<( doc:FactsccByLicense schema:name "Creative Commons Attribution (CC BY) license" )>> ;
+	prov:wasDerivedFrom doc:025c77c574e6 .
+doc:Factsarticle_14 schema:publisher doc:Factsmdpi_9 .
+_:bc4228755ff7bb78f9ff6f0139d84cb7 rdf:reifies <<( doc:Factsarticle_14 schema:publisher doc:Factsmdpi_9 )>> ;
+	prov:wasDerivedFrom doc:025c77c574e6 .
+doc:Factsarticle_14 schema:about doc:FactsthermalRunaway .
+_:a0c22c3d06ed2a20e5efd17d15bbe00b rdf:reifies <<( doc:Factsarticle_14 schema:about doc:FactsthermalRunaway )>> ;
+	prov:wasDerivedFrom doc:025c77c574e6 .
+doc:FactsenergyStorageSystem schema:name "energy storage system" .
+_:a003f269ace526cadc26dbbcd1dd034d rdf:reifies <<( doc:FactsenergyStorageSystem schema:name "energy storage system" )>> ;
+	prov:wasDerivedFrom doc:025c77c574e6 .
+doc:FactsthermalRunaway a schema:Thing .
+_:acb6a9ee7c236a36d41eff87a6002b91 rdf:reifies <<( doc:FactsthermalRunaway rdf:type schema:Thing )>> ;
+	prov:wasDerivedFrom doc:025c77c574e6 .
+doc:FactsauthorAmer schema:givenName "M." .
+_:ae80f4a3f8fb81e85dfbc010b5297472 rdf:reifies <<( doc:FactsauthorAmer schema:givenName "M." )>> ;
+	prov:wasDerivedFrom doc:025c77c574e6 .
+doc:Factsdoi_5 cco:designates doc:Factsarticle_14 .
+_:bfadbccb7a54e8323445a3bae2aecfa7 rdf:reifies <<( doc:Factsdoi_5 cco:designates doc:Factsarticle_14 )>> ;
+	prov:wasDerivedFrom doc:025c77c574e6 .
+_:fab586bf1e33ef9329b59940d685be87 rdf:reifies <<( doc:FactslfpBattery schema:name "lithium manganese nickel cobalt battery" )>> ;
+	prov:wasDerivedFrom doc:025c77c574e6 .
+doc:Factsarticle_14 schema:about doc:FactsenergyStorageSystem .
+_:df60219e532a7626e27fe0f3450b3bf5 rdf:reifies <<( doc:Factsarticle_14 schema:about doc:FactsenergyStorageSystem )>> ;
+	prov:wasDerivedFrom doc:025c77c574e6 .
+doc:Factsarticle_14 schema:author doc:FactsauthorAmer .
+_:b8118c0c3c27c939eed37baa8cea5460 rdf:reifies <<( doc:Factsarticle_14 schema:author doc:FactsauthorAmer )>> ;
+	prov:wasDerivedFrom doc:025c77c574e6 .
+doc:FactsthermalRunaway a schema:CreativeWork .
+_:c2e0601356e5ae7fec9b8bc0d07e5079 rdf:reifies <<( doc:FactsthermalRunaway rdf:type schema:CreativeWork )>> ;
+	prov:wasDerivedFrom doc:025c77c574e6 .
+doc:Factsarticle_14 schema:dateModified "2025-01-15"^^<http://www.w3.org/2001/XMLSchema#date> .
+_:d191e9e58dfbfae69ac0fb35eee12b6e rdf:reifies <<( doc:Factsarticle_14 schema:dateModified "2025-01-15"^^<http://www.w3.org/2001/XMLSchema#date> )>> ;
+	prov:wasDerivedFrom doc:025c77c574e6 .
+_:dd8b24a88d5e6c3514e90c150fd61b05 prov:wasDerivedFrom doc:025c77c574e6 .
+doc:FactslfpBattery a schema:Product .
+_:b23f47e14d01623a8450824865fd1db9 rdf:reifies <<( doc:FactslfpBattery rdf:type schema:Product )>> ;
+	prov:wasDerivedFrom doc:025c77c574e6 .
+doc:Factsarticle_14 schema:about doc:FactsnumericalSimulation .
+_:c257eb2681bd19d84d8e55419c5e8486 rdf:reifies <<( doc:Factsarticle_14 schema:about doc:FactsnumericalSimulation )>> ;
+	prov:wasDerivedFrom doc:025c77c574e6 .
+_:f6f0c5362f5ee446dfd9a6ea74d20aa5 prov:wasDerivedFrom doc:025c77c574e6 .
+doc:FactsnumericalSimulation a schema:Thing .
+_:c44d6abb34efdec47bb457cbe3d5bf51 rdf:reifies <<( doc:FactsnumericalSimulation rdf:type schema:Thing )>> ;
+	prov:wasDerivedFrom doc:025c77c574e6 .
+doc:Factsarticle_14 schema:headline doc:FactsarticleTitle_24 .
+_:fff16b51366800a7f830ac01007633b rdf:reifies <<( doc:Factsarticle_14 schema:headline doc:FactsarticleTitle_24 )>> ;
+	prov:wasDerivedFrom doc:025c77c574e6 .
+doc:FactslfpBattery schema:description "NMC batteries provide higher energy density than LFP batteries but have higher thermal runaway risk and higher overall cost." .
+_:c7bfd75f12a4b2a8b1561464386763ac rdf:reifies <<( doc:FactslfpBattery schema:description "NMC batteries provide higher energy density than LFP batteries but have higher thermal runaway risk and higher overall cost." )>> ;
+	prov:wasDerivedFrom doc:025c77c574e6 .
+doc:FactslfpBattery schema:description "LFP batteries have lower material and manufacturing costs, superior thermal stability, and better capacity retention over time than NMC batteries." .
+_:e878b9779eb42c119eeae7e0e00a4ab0 rdf:reifies <<( doc:FactslfpBattery schema:description "LFP batteries have lower material and manufacturing costs, superior thermal stability, and better capacity retention over time than NMC batteries." )>> ;
+	prov:wasDerivedFrom doc:025c77c574e6 .
+doc:FactsauthorAmer schema:familyName "Assi" .
+_:fe17111aefbf7f0a0826af24b6b12018 rdf:reifies <<( doc:FactsauthorAmer schema:familyName "Assi" )>> ;
+	prov:wasDerivedFrom doc:025c77c574e6 .
+doc:Factsarticle_14 schema:about doc:FactslfpBattery .
+_:c3fba5aa1dc11dc9ca6d809ec3129d3b rdf:reifies <<( doc:Factsarticle_14 schema:about doc:FactslfpBattery )>> ;
+	prov:wasDerivedFrom doc:025c77c574e6 .
+doc:Factsarticle_14 schema:volumeNumber 16 .
+_:c57bf5ad05528f1fbd036dbab5246c33 rdf:reifies <<( doc:Factsarticle_14 schema:volumeNumber 16 )>> ;
+	prov:wasDerivedFrom doc:025c77c574e6 .
+doc:FactsthermalRunaway schema:name "thermal runaway" .
+_:cd2953d2adea29b261145938a25fe1b7 rdf:reifies <<( doc:FactsthermalRunaway schema:name "thermal runaway" )>> ;
+	prov:wasDerivedFrom doc:025c77c574e6 .
+doc:Factsarticle_14 schema:datePublished "2025-01-21"^^<http://www.w3.org/2001/XMLSchema#date> .
+_:d135a837bfc42781f8c1b68d3c2cd03 rdf:reifies <<( doc:Factsarticle_14 schema:datePublished "2025-01-21"^^<http://www.w3.org/2001/XMLSchema#date> )>> ;
+	prov:wasDerivedFrom doc:025c77c574e6 .
+doc:FactslfpBattery schema:name "lithium-ion battery" .
+_:dbb6fd5f362ff6a7e7476dae65ab317d rdf:reifies <<( doc:FactslfpBattery schema:name "lithium-ion battery" )>> ;
+	prov:wasDerivedFrom doc:025c77c574e6 .
+doc:Factsmdpi_9 a schema:Organization .
+_:e15e1f3edb83e10f84329f8846307b51 rdf:reifies <<( doc:Factsmdpi_9 rdf:type schema:Organization )>> ;
+	prov:wasDerivedFrom doc:025c77c574e6 .
+_:e7edff28551b88d9f76af62a80b46eea prov:wasDerivedFrom doc:025c77c574e6 .
+doc:Factsdoi_5 a None:Article_identifier .
+_:ecfd00a62415cde4316a5e14feb806dc rdf:reifies <<( doc:Factsdoi_5 rdf:type None:Article_identifier )>> ;
+	prov:wasDerivedFrom doc:025c77c574e6 .
+doc:FactsccByLicense a schema:CreativeWork .
+_:f67f4b8e1813ce1e086902925fce498f rdf:reifies <<( doc:FactsccByLicense rdf:type schema:CreativeWork )>> ;
+	prov:wasDerivedFrom doc:025c77c574e6 .
+doc:FactselectricVehicle_1 a schema:Product .
+_:b6f474ad0529e46d2a48259a4f583730 rdf:reifies <<( doc:FactselectricVehicle_1 rdf:type schema:Product )>> ;
+	prov:wasDerivedFrom doc:025c77c574e6 .
+doc:Factsarticle_14 schema:dateAccepted "2025-01-19"^^<http://www.w3.org/2001/XMLSchema#date> .
+_:cce9512cf7f9d5982a0009a9a28bd72e rdf:reifies <<( doc:Factsarticle_14 schema:dateAccepted "2025-01-19"^^<http://www.w3.org/2001/XMLSchema#date> )>> ;
+	prov:wasDerivedFrom doc:025c77c574e6 .
+doc:FactsthermalRunaway schema:description "Thermal runaway is an uncontrolled increase in battery cell temperature that can result in smoke, heat, or explosion." .
+_:de4da589e593394321c2fbaaa144ada7 rdf:reifies <<( doc:FactsthermalRunaway schema:description "Thermal runaway is an uncontrolled increase in battery cell temperature that can result in smoke, heat, or explosion." )>> ;
+	prov:wasDerivedFrom doc:025c77c574e6 .
+doc:Factsarticle_14 schema:dateReceived "2024-12-19"^^<http://www.w3.org/2001/XMLSchema#date> .
+_:b4347f7a8c857c05753050ba0da48d24 rdf:reifies <<( doc:Factsarticle_14 schema:dateReceived "2024-12-19"^^<http://www.w3.org/2001/XMLSchema#date> )>> ;
+	prov:wasDerivedFrom doc:025c77c574e6 .
+doc:Factsarticle_14 a schema:ScholarlyArticle .
+_:f0d24fbab0e3867e12c095afeb44acc3 rdf:reifies <<( doc:Factsarticle_14 rdf:type schema:ScholarlyArticle )>> ;
+	prov:wasDerivedFrom doc:025c77c574e6 .
+doc:FactsauthorAmer schema:familyName "Amer" .
+_:dbd3cf9dac176909b006ba99817594ec rdf:reifies <<( doc:FactsauthorAmer schema:familyName "Amer" )>> ;
+	prov:wasDerivedFrom doc:025c77c574e6 .
+doc:Factsarticle_14 schema:identifier doc:Factsdoi_5 .
+_:c0b433eeaee7d0327ed4be28c861b01b rdf:reifies <<( doc:Factsarticle_14 schema:identifier doc:Factsdoi_5 )>> ;
+	prov:wasDerivedFrom doc:025c77c574e6 .
+doc:FactsworldElectricVehicleAssociation schema:name "World Electric Vehicle Association" .
+_:d9ad1d48a87f416da41f22d9c376e71c rdf:reifies <<( doc:FactsworldElectricVehicleAssociation schema:name "World Electric Vehicle Association" )>> ;
+	prov:wasDerivedFrom doc:025c77c574e6 .
+doc:FactslfpBattery schema:description "Lithium-ion batteries are used in electric vehicles because of their high energy density, high efficiency, long life cycle, and reliability." .
+_:bb0d6fcd0c74c86b1ce3d1bfa4e8c830 rdf:reifies <<( doc:FactslfpBattery schema:description "Lithium-ion batteries are used in electric vehicles because of their high energy density, high efficiency, long life cycle, and reliability." )>> ;
+	prov:wasDerivedFrom doc:025c77c574e6 .
+doc:FactsthermalRunaway schema:name "proposed electrothermal model" .
+_:bb05add7c557b5e288c8005190c43e9b rdf:reifies <<( doc:FactsthermalRunaway schema:name "proposed electrothermal model" )>> ;
+	prov:wasDerivedFrom doc:025c77c574e6 .
+doc:Factsmdpi_9 schema:name "MDPI" .
+_:ad0ca538b8b3a7bcfbbfcc35ff2ce790 rdf:reifies <<( doc:Factsmdpi_9 schema:name "MDPI" )>> ;
+	prov:wasDerivedFrom doc:025c77c574e6 .
+doc:Factsdoi_5 None:has_text_value "10.3390/wevj16020060" .
+_:ee68383da27e392b17f546acf3a9092e rdf:reifies <<( doc:Factsdoi_5 None:has_text_value "10.3390/wevj16020060" )>> ;
+	prov:wasDerivedFrom doc:025c77c574e6 .
+doc:FactslfpBattery schema:name "lithium ferro phosphate battery" .
+_:f1944012cf9bc242de90dffcceb4e766 rdf:reifies <<( doc:FactslfpBattery schema:name "lithium ferro phosphate battery" )>> ;
+	prov:wasDerivedFrom doc:025c77c574e6 .
+doc:FactsnumericalSimulation schema:name "numerical simulation" .
+_:a582c08e0ec3be6f2132369c30aa8eb7 rdf:reifies <<( doc:FactsnumericalSimulation schema:name "numerical simulation" )>> ;
+	prov:wasDerivedFrom doc:025c77c574e6 .
+doc:FactsthermalRunaway schema:name "thermal management" .
+_:cfb765b172b1d2a6e22798e9bd56572c rdf:reifies <<( doc:FactsthermalRunaway schema:name "thermal management" )>> ;
+	prov:wasDerivedFrom doc:025c77c574e6 .
+doc:Factsarticle_14 schema:issueNumber 2 .
+_:b9a05e7ed81f2dbdd5ff5a37344cb28a rdf:reifies <<( doc:Factsarticle_14 schema:issueNumber 2 )>> ;
+	prov:wasDerivedFrom doc:025c77c574e6 .
+doc:FactsenergyStorageSystem a schema:Thing .
+_:db9adcd5a6d0a7116ec664c30efa43b3 rdf:reifies <<( doc:FactsenergyStorageSystem rdf:type schema:Thing )>> ;
+	prov:wasDerivedFrom doc:025c77c574e6 .
+doc:FactsarticleTitle_24 None:has_text_value "A Comparative Analysis of Lithium-Ion Batteries Using a Proposed Electrothermal Model Based on Numerical Simulation" .
+_:d0c5adb645aa136fa5c5e19129d8bd67 rdf:reifies <<( doc:FactsarticleTitle_24 None:has_text_value "A Comparative Analysis of Lithium-Ion Batteries Using a Proposed Electrothermal Model Based on Numerical Simulation" )>> ;
+	prov:wasDerivedFrom doc:025c77c574e6 .
+doc:f367e258bb76 a prov:Entity , schema:text ;
+	prov:generatedAtTime "2026-07-26T06:56:28.457443Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+	schema:position 2 ;
+	schema:identifier "f367e258bb76" .
+doc:Factsev schema:uses doc:FactslfpBattery .
+_:fb5e0df39e71d0b89ff425f36a635e2d rdf:reifies <<( doc:Factsev schema:uses doc:FactslfpBattery )>> ;
+	prov:wasDerivedFrom doc:f367e258bb76 .
+doc:Factssafety a None:Data_variable .
+_:ce7e57d9b52bce913eec0d493bcdbef0 rdf:reifies <<( doc:Factssafety rdf:type None:Data_variable )>> ;
+	prov:wasDerivedFrom doc:f367e258bb76 .
+doc:Factsev schema:alternateName "UAV" .
+_:c386c246f946a23656f305b6ef37082b rdf:reifies <<( doc:Factsev schema:alternateName "UAV" )>> ;
+	prov:wasDerivedFrom doc:f367e258bb76 .
+doc:FactslfpBattery schema:additionalProperty doc:Factssafety .
+_:d3643549381e55ebf8426c35111f3771 rdf:reifies <<( doc:FactslfpBattery schema:additionalProperty doc:Factssafety )>> ;
+	prov:wasDerivedFrom doc:f367e258bb76 .
+doc:FactslfpBattery schema:description "NMC batteries offer higher capacity and energy density than other batteries." .
+_:a317b8b85fa45e1a6bed2d6b3fb32381 rdf:reifies <<( doc:FactslfpBattery schema:description "NMC batteries offer higher capacity and energy density than other batteries." )>> ;
+	prov:wasDerivedFrom doc:f367e258bb76 .
+doc:FactslfpEvShare a schema:PropertyValue .
+_:c0d548498f2b2469ccd443c8343d4566 rdf:reifies <<( doc:FactslfpEvShare rdf:type schema:PropertyValue )>> ;
+	prov:wasDerivedFrom doc:f367e258bb76 .
+doc:Factssafety schema:propertyID "temperature_stability" .
+_:b3d637689c2cdaef7fd7d41acf8b05e rdf:reifies <<( doc:Factssafety schema:propertyID "temperature_stability" )>> ;
+	prov:wasDerivedFrom doc:f367e258bb76 .
+doc:Factssafety schema:name "operating temperature range" .
+_:dc5ea9527d723cc31128078f62cb4d63 rdf:reifies <<( doc:Factssafety schema:name "operating temperature range" )>> ;
+	prov:wasDerivedFrom doc:f367e258bb76 .
+doc:FactslfpEvShare schema:unitText "percent" .
+_:a297ada63eb807b49fa66c7beb8d81b2 rdf:reifies <<( doc:FactslfpEvShare schema:unitText "percent" )>> ;
+	prov:wasDerivedFrom doc:f367e258bb76 .
+doc:FactslfpBattery schema:name "LFP battery" .
+_:e3b81e390ae6eb19368ef000bfe8dc3e rdf:reifies <<( doc:FactslfpBattery schema:name "LFP battery" )>> ;
+	prov:wasDerivedFrom doc:f367e258bb76 .
+doc:FactslfpItemType cco:describes doc:FactslfpBattery .
+_:fd78c57b8134091afe38efa7e798adba rdf:reifies <<( doc:FactslfpItemType cco:describes doc:FactslfpBattery )>> ;
+	prov:wasDerivedFrom doc:f367e258bb76 .
+doc:Factssafety a schema:PropertyValue .
+_:e21f887df0034d3abffb660d134b6af5 rdf:reifies <<( doc:Factssafety rdf:type schema:PropertyValue )>> ;
+	prov:wasDerivedFrom doc:f367e258bb76 .
+doc:Factssafety schema:value 166.4 .
+_:a8fc4af285ffd2a8a5d94ffe9e29df50 rdf:reifies <<( doc:Factssafety schema:value 166.4 )>> ;
+	prov:wasDerivedFrom doc:f367e258bb76 .
+_:cd2953d2adea29b261145938a25fe1b7 prov:wasDerivedFrom doc:f367e258bb76 .
+doc:FactsthermalRunaway schema:about doc:FactslfpBattery .
+_:a453fe5cdc7a03473d509bdb3fabdb3b rdf:reifies <<( doc:FactsthermalRunaway schema:about doc:FactslfpBattery )>> ;
+	prov:wasDerivedFrom doc:f367e258bb76 .
+doc:Factssafety schema:unitText "degrees Celsius" .
+_:bb985b55f8017b698c54ad49ab50ac77 rdf:reifies <<( doc:Factssafety schema:unitText "degrees Celsius" )>> ;
+	prov:wasDerivedFrom doc:f367e258bb76 .
+doc:FactslfpEvShare schema:propertyID "EVs using NMC batteries" .
+_:da88cd822c8fcee53d09cef08e27076d rdf:reifies <<( doc:FactslfpEvShare schema:propertyID "EVs using NMC batteries" )>> ;
+	prov:wasDerivedFrom doc:f367e258bb76 .
+doc:Factssafety cco:describes doc:FactslfpBattery .
+_:d5271359ae52364086a2105ee418d86c rdf:reifies <<( doc:Factssafety cco:describes doc:FactslfpBattery )>> ;
+	prov:wasDerivedFrom doc:f367e258bb76 .
+doc:Factssafety schema:about doc:FactslfpBattery .
+_:f814df8cb3ca6d1ed23b2c95da5e864c rdf:reifies <<( doc:Factssafety schema:about doc:FactslfpBattery )>> ;
+	prov:wasDerivedFrom doc:f367e258bb76 .
+doc:Factssafety schema:propertyID "operating_temperature_range" .
+_:c95f465965abbd3619a26d474295b765 rdf:reifies <<( doc:Factssafety schema:propertyID "operating_temperature_range" )>> ;
+	prov:wasDerivedFrom doc:f367e258bb76 .
+_:b23f47e14d01623a8450824865fd1db9 prov:wasDerivedFrom doc:f367e258bb76 .
+doc:FactsevBatteryStatistics schema:additionalProperty doc:FactslfpEvShare .
+_:d88f6c8bed3d32bdb824533986241966 rdf:reifies <<( doc:FactsevBatteryStatistics schema:additionalProperty doc:FactslfpEvShare )>> ;
+	prov:wasDerivedFrom doc:f367e258bb76 .
+doc:FactsotherLithiumBatteryShare schema:unitText "percent" .
+_:ac30a744041a56d9d8caa155506f743b rdf:reifies <<( doc:FactsotherLithiumBatteryShare schema:unitText "percent" )>> ;
+	prov:wasDerivedFrom doc:f367e258bb76 .
+doc:Factsev schema:additionalProperty doc:Factssafety .
+_:c74cf4db136eb6a9ab8a321f8ba1bdce rdf:reifies <<( doc:Factsev schema:additionalProperty doc:Factssafety )>> ;
+	prov:wasDerivedFrom doc:f367e258bb76 .
+doc:FactslfpItemType a None:item_type .
+_:fcad686615a5b1656808e365872e648e rdf:reifies <<( doc:FactslfpItemType rdf:type None:item_type )>> ;
+	prov:wasDerivedFrom doc:f367e258bb76 .
+doc:Factssafety schema:value "45"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+_:b6bff6704c36b363c144f8b14d4d490b rdf:reifies <<( doc:Factssafety schema:value "45"^^<http://www.w3.org/2001/XMLSchema#decimal> )>> ;
+	prov:wasDerivedFrom doc:f367e258bb76 .
+doc:FactslfpBattery schema:material doc:FactslithiumFluoroSulfonylImide .
+_:e36e8f36ce8c42cdb0ebe3057c3829f5 rdf:reifies <<( doc:FactslfpBattery schema:material doc:FactslithiumFluoroSulfonylImide )>> ;
+	prov:wasDerivedFrom doc:f367e258bb76 .
+doc:Factsev schema:name "Uncrewed Aerial Vehicle" .
+_:a8c2c51ca5a3434a82d6d9dda64b7311 rdf:reifies <<( doc:Factsev schema:name "Uncrewed Aerial Vehicle" )>> ;
+	prov:wasDerivedFrom doc:f367e258bb76 .
+doc:Factssafety schema:description "Measured during self-heating at 50 degrees Celsius." .
+_:ac350b6db1411fc7eacfad923c87d36c rdf:reifies <<( doc:Factssafety schema:description "Measured during self-heating at 50 degrees Celsius." )>> ;
+	prov:wasDerivedFrom doc:f367e258bb76 .
+doc:Factssafety schema:unitText "Wh/kg" .
+_:abc2f7ddba56a1865cedf9e9dca5ed6a rdf:reifies <<( doc:Factssafety schema:unitText "Wh/kg" )>> ;
+	prov:wasDerivedFrom doc:f367e258bb76 .
+doc:Factssafety schema:propertyID "undesirable_temperature" .
+_:c6005c5b96f8dec6ee11dc1ac8b94edf rdf:reifies <<( doc:Factssafety schema:propertyID "undesirable_temperature" )>> ;
+	prov:wasDerivedFrom doc:f367e258bb76 .
+doc:FactsthermalRunaway schema:name "thermal effects" .
+_:e7141bf55f45717a5c381bd92d2e482e rdf:reifies <<( doc:FactsthermalRunaway schema:name "thermal effects" )>> ;
+	prov:wasDerivedFrom doc:f367e258bb76 .
+doc:FactslfpEvShare schema:propertyID "EVs using LFP batteries" .
+_:affd09721256bd4bc46b8f21ef87809e rdf:reifies <<( doc:FactslfpEvShare schema:propertyID "EVs using LFP batteries" )>> ;
+	prov:wasDerivedFrom doc:f367e258bb76 .
+doc:Factssafety schema:value "220"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+_:bbb8b48c4e29b32286c85c7eeab4ef13 rdf:reifies <<( doc:Factssafety schema:value "220"^^<http://www.w3.org/2001/XMLSchema#decimal> )>> ;
+	prov:wasDerivedFrom doc:f367e258bb76 .
+doc:Factssafety schema:minValue "15"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+_:e966b7ff0baf7dceb51fb400bb2fbe8c rdf:reifies <<( doc:Factssafety schema:minValue "15"^^<http://www.w3.org/2001/XMLSchema#decimal> )>> ;
+	prov:wasDerivedFrom doc:f367e258bb76 .
+doc:FactsthermalRunaway a None:Design_detail .
+_:d0f4d16599552a5289801cc2e5fba1d2 rdf:reifies <<( doc:FactsthermalRunaway rdf:type None:Design_detail )>> ;
+	prov:wasDerivedFrom doc:f367e258bb76 .
+doc:FactslfpBattery schema:description "LFP batteries have superior thermal stability to NMC batteries." .
+_:fc5c061c968870aa498ccb0b84ac5057 rdf:reifies <<( doc:FactslfpBattery schema:description "LFP batteries have superior thermal stability to NMC batteries." )>> ;
+	prov:wasDerivedFrom doc:f367e258bb76 .
+doc:Factssafety schema:name "operating current range" .
+_:f4248e4692abf8a14d04cf4482270061 rdf:reifies <<( doc:Factssafety schema:name "operating current range" )>> ;
+	prov:wasDerivedFrom doc:f367e258bb76 .
+doc:Factssafety schema:maxValue "35"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+_:f802783636f6d892829e8c29a78e5059 rdf:reifies <<( doc:Factssafety schema:maxValue "35"^^<http://www.w3.org/2001/XMLSchema#decimal> )>> ;
+	prov:wasDerivedFrom doc:f367e258bb76 .
+doc:FactslithiumFluoroSulfonylImide schema:name "lithium fluoro-sulfonyl imide" .
+_:e3b50c0948b2c9caab339c9953c92c3b rdf:reifies <<( doc:FactslithiumFluoroSulfonylImide schema:name "lithium fluoro-sulfonyl imide" )>> ;
+	prov:wasDerivedFrom doc:f367e258bb76 .
+doc:Factssafety schema:name "efficiency" .
+_:f656828c56aad0a41917909eceeaccd2 rdf:reifies <<( doc:Factssafety schema:name "efficiency" )>> ;
+	prov:wasDerivedFrom doc:f367e258bb76 .
+doc:Factssafety schema:value "1227"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+_:a81e60c40c018d15abf3a5fe9b3c05c2 rdf:reifies <<( doc:Factssafety schema:value "1227"^^<http://www.w3.org/2001/XMLSchema#decimal> )>> ;
+	prov:wasDerivedFrom doc:f367e258bb76 .
+doc:FactsotherLithiumBatteryShare schema:description "The remaining percentage of EVs uses other lithium battery types." .
+_:ca93cc0194cee893edb83f5fde0c224d rdf:reifies <<( doc:FactsotherLithiumBatteryShare schema:description "The remaining percentage of EVs uses other lithium battery types." )>> ;
+	prov:wasDerivedFrom doc:f367e258bb76 .
+doc:FactslfpItemType schema:name "NMC" .
+_:be9b827de46dd5730f5929b3b67756bf rdf:reifies <<( doc:FactslfpItemType schema:name "NMC" )>> ;
+	prov:wasDerivedFrom doc:f367e258bb76 .
+doc:FactsotherLithiumBatteryShare a schema:PropertyValue .
+_:ad6d8ad53de52af6dee5064b0442ce1f rdf:reifies <<( doc:FactsotherLithiumBatteryShare rdf:type schema:PropertyValue )>> ;
+	prov:wasDerivedFrom doc:f367e258bb76 .
+doc:FactslfpItemType schema:name "LFP" .
+_:b7d8315b94da1b4a37319a93193e645b rdf:reifies <<( doc:FactslfpItemType schema:name "LFP" )>> ;
+	prov:wasDerivedFrom doc:f367e258bb76 .
+doc:Factssafety schema:propertyID "energy_density" .
+_:d7679d281ac87b7fdf2f9b55fceebf1c rdf:reifies <<( doc:Factssafety schema:propertyID "energy_density" )>> ;
+	prov:wasDerivedFrom doc:f367e258bb76 .
+doc:FactslfpBattery schema:name "NMC battery" .
+_:d7808109536aad97c1fbdd622a67602a rdf:reifies <<( doc:FactslfpBattery schema:name "NMC battery" )>> ;
+	prov:wasDerivedFrom doc:f367e258bb76 .
+doc:Factsfigure_1 schema:about doc:FactslfpBattery .
+_:d96a6cb81a3bc469e1c2643a6cb630dc rdf:reifies <<( doc:Factsfigure_1 schema:about doc:FactslfpBattery )>> ;
+	prov:wasDerivedFrom doc:f367e258bb76 .
+doc:Factssafety schema:name "energy density" .
+_:b07de05232bb94c31e4891b5a6da3151 rdf:reifies <<( doc:Factssafety schema:name "energy density" )>> ;
+	prov:wasDerivedFrom doc:f367e258bb76 .
+doc:Factssafety schema:value "60"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+_:c7643e192ad61a3c38a6943b55fe1923 rdf:reifies <<( doc:Factssafety schema:value "60"^^<http://www.w3.org/2001/XMLSchema#decimal> )>> ;
+	prov:wasDerivedFrom doc:f367e258bb76 .
+doc:Factsfigure_1 schema:name "Spider figures of LFP and NMC battery characteristics" .
+_:e272e21a2df650025a3500f395f801d5 rdf:reifies <<( doc:Factsfigure_1 schema:name "Spider figures of LFP and NMC battery characteristics" )>> ;
+	prov:wasDerivedFrom doc:f367e258bb76 .
+doc:FactslfpEvShare schema:value "18"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+_:abe8d7c940fd12e1f813e2877601b274 rdf:reifies <<( doc:FactslfpEvShare schema:value "18"^^<http://www.w3.org/2001/XMLSchema#decimal> )>> ;
+	prov:wasDerivedFrom doc:f367e258bb76 .
+doc:FactsevBatteryStatistics a schema:Dataset .
+_:d1ac95261b3c17d94878e02c108417ed rdf:reifies <<( doc:FactsevBatteryStatistics rdf:type schema:Dataset )>> ;
+	prov:wasDerivedFrom doc:f367e258bb76 .
+doc:Factssafety schema:propertyID "power_density" .
+_:e0125c9460c2ec9ccefab6cc35d25507 rdf:reifies <<( doc:Factssafety schema:propertyID "power_density" )>> ;
+	prov:wasDerivedFrom doc:f367e258bb76 .
+_:da2af23ee458bb49e05487912bd0aa19 prov:wasDerivedFrom doc:f367e258bb76 .
+doc:FactslfpEvShare schema:value "76"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+_:a0d617785072299ab538abefca19d844 rdf:reifies <<( doc:FactslfpEvShare schema:value "76"^^<http://www.w3.org/2001/XMLSchema#decimal> )>> ;
+	prov:wasDerivedFrom doc:f367e258bb76 .
+doc:Factssafety schema:name "charging time" .
+_:b3e18e5b01eb94bc2f335eef5c9740b9 rdf:reifies <<( doc:Factssafety schema:name "charging time" )>> ;
+	prov:wasDerivedFrom doc:f367e258bb76 .
+doc:Factsfigure_1 a schema:ImageObject .
+_:acf7e2642bf88cc164189169701899a2 rdf:reifies <<( doc:Factsfigure_1 rdf:type schema:ImageObject )>> ;
+	prov:wasDerivedFrom doc:f367e258bb76 .
+doc:FactsevBatteryStatistics schema:additionalProperty doc:FactsotherLithiumBatteryShare .
+_:d93e4664099b989f96b7b5b10744e89b rdf:reifies <<( doc:FactsevBatteryStatistics schema:additionalProperty doc:FactsotherLithiumBatteryShare )>> ;
+	prov:wasDerivedFrom doc:f367e258bb76 .
+doc:FactslithiumFluoroSulfonylImide schema:alternateName "LiFSI" .
+_:ff28a9bdf8aedd1cfa915c7621af988a rdf:reifies <<( doc:FactslithiumFluoroSulfonylImide schema:alternateName "LiFSI" )>> ;
+	prov:wasDerivedFrom doc:f367e258bb76 .
+doc:Factssafety schema:unitText "W/kg" .
+_:e2a6f0752daf2d6cf40e81790b5ba5b4 rdf:reifies <<( doc:Factssafety schema:unitText "W/kg" )>> ;
+	prov:wasDerivedFrom doc:f367e258bb76 .
+doc:FactsthermalRunaway schema:name "performance effects" .
+_:fcaa97009e10f5166227913190a5586 rdf:reifies <<( doc:FactsthermalRunaway schema:name "performance effects" )>> ;
+	prov:wasDerivedFrom doc:f367e258bb76 .
+doc:FactsevBatteryStatistics schema:about doc:FactslfpBattery .
+_:d94174e7b1c2a603dc24cf12237213c3 rdf:reifies <<( doc:FactsevBatteryStatistics schema:about doc:FactslfpBattery )>> ;
+	prov:wasDerivedFrom doc:f367e258bb76 .
+doc:FactslithiumFluoroSulfonylImide a schema:ChemicalSubstance .
+_:d1cc09838185545b7998900c25fb3ff2 rdf:reifies <<( doc:FactslithiumFluoroSulfonylImide rdf:type schema:ChemicalSubstance )>> ;
+	prov:wasDerivedFrom doc:f367e258bb76 .
+doc:Factssafety schema:value 90.2 .
+_:dec1e58d438ca1d5ed2794f80605fdee rdf:reifies <<( doc:Factssafety schema:value 90.2 )>> ;
+	prov:wasDerivedFrom doc:f367e258bb76 .
+_:f37f6573862f12517750a3a9b49be82a prov:wasDerivedFrom doc:f367e258bb76 .
+doc:Factsev schema:name "electric vehicle" .
+_:f86e2c54ed81a5f747cbb297a3f27ce rdf:reifies <<( doc:Factsev schema:name "electric vehicle" )>> ;
+	prov:wasDerivedFrom doc:f367e258bb76 .
+doc:Factssafety schema:name "safety" .
+_:fada60ee0af75603fae544864c581488 rdf:reifies <<( doc:Factssafety schema:name "safety" )>> ;
+	prov:wasDerivedFrom doc:f367e258bb76 .
+doc:FactsotherLithiumBatteryShare schema:propertyID "EVs using other lithium batteries" .
+_:c3293537b3f21ba9510cec85a8ee5e60 rdf:reifies <<( doc:FactsotherLithiumBatteryShare schema:propertyID "EVs using other lithium batteries" )>> ;
+	prov:wasDerivedFrom doc:f367e258bb76 .
+doc:Factssafety schema:name "cycle life" .
+_:fe9c200e110e72a0e5c021917ed48439 rdf:reifies <<( doc:Factssafety schema:name "cycle life" )>> ;
+	prov:wasDerivedFrom doc:f367e258bb76 .
+doc:Factsfigure_1 schema:caption "The green line represents the LFP battery cell and the blue line represents the NMC battery cell." .
+_:de07acfbf0bd605b64feef94eb50c33c rdf:reifies <<( doc:Factsfigure_1 schema:caption "The green line represents the LFP battery cell and the blue line represents the NMC battery cell." )>> ;
+	prov:wasDerivedFrom doc:f367e258bb76 .

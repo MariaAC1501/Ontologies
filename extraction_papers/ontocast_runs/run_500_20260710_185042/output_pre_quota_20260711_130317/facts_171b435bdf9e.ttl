@@ -1,0 +1,492 @@
+@prefix None: <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD/seed#> .
+@prefix cco: <http://www.ontologyrepository.com/CommonCoreOntologies/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doc: <https://growgraph.dev/doc/171b435bdf9e/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix obo: <http://purl.obolibrary.org/obo/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix cd: <https://growgraph.dev/facts> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix schema: <https://schema.org/> .
+@prefix schema1: <http://schema.org/> .
+doc:d721f0ec3db9 a prov:Entity , schema:text ;
+	prov:generatedAtTime "2026-07-11T04:07:42.93981Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+	schema:position 0 ;
+	schema:identifier "d721f0ec3db9" .
+doc:FactsarticleTitle1 None:has_text_value "Remaining useful life prediction and early warning model for highspeed railway contact system based on error-improved PSOBiLSTM" .
+_:acc60f314aa518b819f11ea3689b5c76 rdf:reifies <<( doc:FactsarticleTitle1 None:has_text_value "Remaining useful life prediction and early warning model for highspeed railway contact system based on error-improved PSOBiLSTM" )>> ;
+	prov:wasDerivedFrom doc:d721f0ec3db9 .
+doc:FactsauthorLiLiu schema1:name "Yuting Gan" .
+_:e899954ca8e660bc4c21d4e26041496c rdf:reifies <<( doc:FactsauthorLiLiu schema1:name "Yuting Gan" )>> ;
+	prov:wasDerivedFrom doc:d721f0ec3db9 .
+doc:FactsmaeValue a None:Performance_indicator .
+_:e0f69db82262ed2a695374e652abe019 rdf:reifies <<( doc:FactsmaeValue rdf:type None:Performance_indicator )>> ;
+	prov:wasDerivedFrom doc:d721f0ec3db9 .
+doc:FactsnormalizedContactSystemData None:has_text_value "normalized contact system data (input to model)" .
+_:cca419f5e604271b7d7cd14a4ffff2b7 rdf:reifies <<( doc:FactsnormalizedContactSystemData None:has_text_value "normalized contact system data (input to model)" )>> ;
+	prov:wasDerivedFrom doc:d721f0ec3db9 .
+doc:FactspoleNumberIndex rdfs:label "pole number (index used to reorder maintenance data)" .
+_:e5d2e319a515e5b3cdb3a8bcaaa119d1 rdf:reifies <<( doc:FactspoleNumberIndex rdfs:label "pole number (index used to reorder maintenance data)" )>> ;
+	prov:wasDerivedFrom doc:d721f0ec3db9 .
+doc:FactsauthorLiLiu schema1:name "Li Liu" .
+_:b7b183cc514c307fd973b3cb7669ac24 rdf:reifies <<( doc:FactsauthorLiLiu schema1:name "Li Liu" )>> ;
+	prov:wasDerivedFrom doc:d721f0ec3db9 .
+doc:FactsauthorLiLiu schema1:name "ZiJian Deng" .
+_:fcd3eef246b077a382d621c43c309567 rdf:reifies <<( doc:FactsauthorLiLiu schema1:name "ZiJian Deng" )>> ;
+	prov:wasDerivedFrom doc:d721f0ec3db9 .
+doc:FactsmodelErrorImprovedPsoBiLstm rdfs:label "error-improved PSO-BiLSTM early warning model" .
+_:e3fb2bdbfe4c371ff7227cd3d42118d8 rdf:reifies <<( doc:FactsmodelErrorImprovedPsoBiLstm rdfs:label "error-improved PSO-BiLSTM early warning model" )>> ;
+	prov:wasDerivedFrom doc:d721f0ec3db9 .
+doc:FactsmaeValue cco:describes doc:FactsmaeValue .
+_:f35345b59899fc2c6a0a7b4ad5bd2281 rdf:reifies <<( doc:FactsmaeValue cco:describes doc:FactsmaeValue )>> ;
+	prov:wasDerivedFrom doc:d721f0ec3db9 .
+doc:FactsRulPredictionModel schema1:keywords "Contact system, BiLSTM, Extreme gradient boosting, RUL prediction, Early warning" .
+_:c4dc8fc86aa9a0660c53056fcd09a413 rdf:reifies <<( doc:FactsRulPredictionModel schema1:keywords "Contact system, BiLSTM, Extreme gradient boosting, RUL prediction, Early warning" )>> ;
+	prov:wasDerivedFrom doc:d721f0ec3db9 .
+doc:FactscontactSystem a None:Maintainable_item .
+_:c910971b05e1d30e7c0d13ea8334dfbe rdf:reifies <<( doc:FactscontactSystem rdf:type None:Maintainable_item )>> ;
+	prov:wasDerivedFrom doc:d721f0ec3db9 .
+doc:FactsnormalizedContactSystemData a None:Data_variable .
+_:da96072743b11d9b0f10b6cbe35bf4be rdf:reifies <<( doc:FactsnormalizedContactSystemData rdf:type None:Data_variable )>> ;
+	prov:wasDerivedFrom doc:d721f0ec3db9 .
+doc:FactsmaeValue a None:Performance_value .
+_:b81d7f828709206229dedf57915f1fe3 rdf:reifies <<( doc:FactsmaeValue rdf:type None:Performance_value )>> ;
+	prov:wasDerivedFrom doc:d721f0ec3db9 .
+doc:FactsalgoKde rdfs:label "Kernel density estimation (KDE)" .
+_:beede2dc6c946566ab44be01161f6461 rdf:reifies <<( doc:FactsalgoKde rdfs:label "Kernel density estimation (KDE)" )>> ;
+	prov:wasDerivedFrom doc:d721f0ec3db9 .
+doc:FactsauthorLiLiu a schema1:Person .
+_:cc3801d0b70bdea6206a0d7d77c56f30 rdf:reifies <<( doc:FactsauthorLiLiu rdf:type schema1:Person )>> ;
+	prov:wasDerivedFrom doc:d721f0ec3db9 .
+doc:FactsearlyWarningHorizon schema1:value 30 .
+_:dac8a79a5669d6b10c32ba5e68b829b5 rdf:reifies <<( doc:FactsearlyWarningHorizon schema1:value 30 )>> ;
+	prov:wasDerivedFrom doc:d721f0ec3db9 .
+doc:FactspoleNumberIndex a None:Data_variable .
+_:e2cb2817a449f9403767d91a7d95ef77 rdf:reifies <<( doc:FactspoleNumberIndex rdf:type None:Data_variable )>> ;
+	prov:wasDerivedFrom doc:d721f0ec3db9 .
+doc:FactsRulPredictionModel schema1:author doc:FactsauthorLiLiu .
+_:eb37e68282f5e4ce1f4afb333ab2ed68 rdf:reifies <<( doc:FactsRulPredictionModel schema1:author doc:FactsauthorLiLiu )>> ;
+	prov:wasDerivedFrom doc:d721f0ec3db9 .
+doc:FactsmodelErrorImprovedPsoBiLstm None:has_design_detail doc:Factsdesign_detail1_1 .
+_:dcff093e473c7fd651551491fd231af rdf:reifies <<( doc:FactsmodelErrorImprovedPsoBiLstm None:has_design_detail doc:Factsdesign_detail1_1 )>> ;
+	prov:wasDerivedFrom doc:d721f0ec3db9 .
+doc:FactsarticleTitle1 a None:Article_title .
+_:a78b2c3b4e2fcb266149a06486166821 rdf:reifies <<( doc:FactsarticleTitle1 rdf:type None:Article_title )>> ;
+	prov:wasDerivedFrom doc:d721f0ec3db9 .
+doc:Factsdesign_detail1_1 None:has_text_value "Normalized contact system data are input into a PSO-BiLSTM model; prediction residuals are corrected using XGBoost; kernel density estimation is used to determine the warning threshold; maintenance data are reordered with pole number as index; feature parameter fusion is performed based on prediction residuals; model predicts up to 30 days in advance; RMSE 11.6293; MAE 7.9643." .
+_:c9fc4760769ffe2d3b43364d465c3a85 rdf:reifies <<( doc:Factsdesign_detail1_1 None:has_text_value "Normalized contact system data are input into a PSO-BiLSTM model; prediction residuals are corrected using XGBoost; kernel density estimation is used to determine the warning threshold; maintenance data are reordered with pole number as index; feature parameter fusion is performed based on prediction residuals; model predicts up to 30 days in advance; RMSE 11.6293; MAE 7.9643." )>> ;
+	prov:wasDerivedFrom doc:d721f0ec3db9 .
+doc:FactsmodelErrorImprovedPsoBiLstm a None:Predictive_maintenance_model .
+_:b5b5c1c045e262d6139218cd294b8994 rdf:reifies <<( doc:FactsmodelErrorImprovedPsoBiLstm rdf:type None:Predictive_maintenance_model )>> ;
+	prov:wasDerivedFrom doc:d721f0ec3db9 .
+doc:FactsalgoPsoBiLstm rdfs:label "PSO-BiLSTM" .
+_:e3eb4a8d671f44d983e7c8e326e329b7 rdf:reifies <<( doc:FactsalgoPsoBiLstm rdfs:label "PSO-BiLSTM" )>> ;
+	prov:wasDerivedFrom doc:d721f0ec3db9 .
+doc:FactsearlyWarningHorizon a None:Performance_value .
+_:b1fa76a7006ef424ba9fb1f9bc8779ed rdf:reifies <<( doc:FactsearlyWarningHorizon rdf:type None:Performance_value )>> ;
+	prov:wasDerivedFrom doc:d721f0ec3db9 .
+doc:FactsearlyWarningHorizon schema1:unitText "days" .
+_:d83ae2c023ff5fa2976aca231c2a82f4 rdf:reifies <<( doc:FactsearlyWarningHorizon schema1:unitText "days" )>> ;
+	prov:wasDerivedFrom doc:d721f0ec3db9 .
+doc:FactsmodelErrorImprovedPsoBiLstm cco:is_about doc:FactscontactSystem .
+_:b5634b1029d5554a736143e0e524d77a rdf:reifies <<( doc:FactsmodelErrorImprovedPsoBiLstm cco:is_about doc:FactscontactSystem )>> ;
+	prov:wasDerivedFrom doc:d721f0ec3db9 .
+doc:FactscontactSystem rdfs:label "high-speed railway contact system" .
+_:ff043eedfa2b3ef4c727679e7a2e6930 rdf:reifies <<( doc:FactscontactSystem rdfs:label "high-speed railway contact system" )>> ;
+	prov:wasDerivedFrom doc:d721f0ec3db9 .
+doc:FactsmodelErrorImprovedPsoBiLstm None:describes_type None:Remaining_useful_life_estimation .
+_:b13bd4d676d9cc36795388b94ff9329a rdf:reifies <<( doc:FactsmodelErrorImprovedPsoBiLstm None:describes_type None:Remaining_useful_life_estimation )>> ;
+	prov:wasDerivedFrom doc:d721f0ec3db9 .
+doc:FactsauthorLiLiu schema1:name "PeiWen Cheng" .
+_:f955932b005d32aff1dab9a119312421 rdf:reifies <<( doc:FactsauthorLiLiu schema1:name "PeiWen Cheng" )>> ;
+	prov:wasDerivedFrom doc:d721f0ec3db9 .
+doc:FactsRulPredictionModel a None:Predictive_Maintenance_Article .
+_:bc6f9feb249c6d3eed67afc3974f5eec rdf:reifies <<( doc:FactsRulPredictionModel rdf:type None:Predictive_Maintenance_Article )>> ;
+	prov:wasDerivedFrom doc:d721f0ec3db9 .
+doc:FactsRulPredictionModel None:has_title doc:FactsarticleTitle1 .
+_:e279df0dbc4563554b695337a4f01afc rdf:reifies <<( doc:FactsRulPredictionModel None:has_title doc:FactsarticleTitle1 )>> ;
+	prov:wasDerivedFrom doc:d721f0ec3db9 .
+doc:FactsmaeValue schema1:value 7.9643 .
+_:f9ee8ce3fd1d7dd7bf72b2734ce843af rdf:reifies <<( doc:FactsmaeValue schema1:value 7.9643 )>> ;
+	prov:wasDerivedFrom doc:d721f0ec3db9 .
+doc:FactsalgoXgBoost rdfs:label "Extreme gradient boosting (XGBoost)" .
+_:a1b34d4d3da538ab51dfef4156c02cb6 rdf:reifies <<( doc:FactsalgoXgBoost rdfs:label "Extreme gradient boosting (XGBoost)" )>> ;
+	prov:wasDerivedFrom doc:d721f0ec3db9 .
+doc:FactsalgoKde a cco:Algorithm .
+_:c2d1d845a874656b80a61c57dfe3a35f rdf:reifies <<( doc:FactsalgoKde rdf:type cco:Algorithm )>> ;
+	prov:wasDerivedFrom doc:d721f0ec3db9 .
+doc:FactsmaeValue schema1:value 11.6293 .
+_:f8fa6119478112bd18391c0da006ed83 rdf:reifies <<( doc:FactsmaeValue schema1:value 11.6293 )>> ;
+	prov:wasDerivedFrom doc:d721f0ec3db9 .
+doc:FactsfeatureParameterFusion a None:Design_detail .
+_:ba4af94baaebbc3ad084660e7c668a2f rdf:reifies <<( doc:FactsfeatureParameterFusion rdf:type None:Design_detail )>> ;
+	prov:wasDerivedFrom doc:d721f0ec3db9 .
+doc:FactsRulPredictionModel cco:is_about doc:FactscontactSystem .
+_:f65a9df652fbc9e5710ec5f424bf304f rdf:reifies <<( doc:FactsRulPredictionModel cco:is_about doc:FactscontactSystem )>> ;
+	prov:wasDerivedFrom doc:d721f0ec3db9 .
+doc:FactsfeatureParameterFusion None:has_text_value "Feature parameter fusion based on prediction residuals and pole-number indexed maintenance data." .
+_:e31f5902ede1c878ee2fd53c4ee9369 rdf:reifies <<( doc:FactsfeatureParameterFusion None:has_text_value "Feature parameter fusion based on prediction residuals and pole-number indexed maintenance data." )>> ;
+	prov:wasDerivedFrom doc:d721f0ec3db9 .
+doc:FactsmodelErrorImprovedPsoBiLstm cco:describes doc:FactsnormalizedContactSystemData .
+_:e93ad1d843300824202d01f130662674 rdf:reifies <<( doc:FactsmodelErrorImprovedPsoBiLstm cco:describes doc:FactsnormalizedContactSystemData )>> ;
+	prov:wasDerivedFrom doc:d721f0ec3db9 .
+doc:FactsalgoXgBoost a cco:Algorithm .
+_:f15f4929c4bec564cf01b1b5d3d9c875 rdf:reifies <<( doc:FactsalgoXgBoost rdf:type cco:Algorithm )>> ;
+	prov:wasDerivedFrom doc:d721f0ec3db9 .
+doc:Factsdesign_detail1_1 a None:Design_detail .
+_:a7179afb23f025e3f4b817974d610715 rdf:reifies <<( doc:Factsdesign_detail1_1 rdf:type None:Design_detail )>> ;
+	prov:wasDerivedFrom doc:d721f0ec3db9 .
+doc:FactsalgoPsoBiLstm a cco:Algorithm .
+_:da8a6a6fd2fb01e9360f864f97bd6605 rdf:reifies <<( doc:FactsalgoPsoBiLstm rdf:type cco:Algorithm )>> ;
+	prov:wasDerivedFrom doc:d721f0ec3db9 .
+doc:FactsmodelErrorImprovedPsoBiLstm cco:describes doc:FactsearlyWarningHorizon .
+_:fd364ffaa4d979b052eb1bee915b302c rdf:reifies <<( doc:FactsmodelErrorImprovedPsoBiLstm cco:describes doc:FactsearlyWarningHorizon )>> ;
+	prov:wasDerivedFrom doc:d721f0ec3db9 .
+doc:e2cc523d947b a prov:Entity , schema:text ;
+	prov:generatedAtTime "2026-07-11T04:07:42.942825Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+	schema:position 1 ;
+	schema:identifier "e2cc523d947b" .
+doc:FactsContactSystem rdfs:label "contact system"@en .
+_:a1684d852c23c7a2ff7cd98682ee99ed rdf:reifies <<( doc:FactsContactSystem rdfs:label "contact system"@en )>> ;
+	prov:wasDerivedFrom doc:e2cc523d947b .
+doc:FactsPeriodicMaintenance rdfs:label "periodic maintenance"@en .
+_:aa157206ede6f8bd934c80912e48225c rdf:reifies <<( doc:FactsPeriodicMaintenance rdfs:label "periodic maintenance"@en )>> ;
+	prov:wasDerivedFrom doc:e2cc523d947b .
+doc:FactsOverMaintenance doc:factsuses_3 doc:FactsEconomicPerformance .
+_:f0f5de99aded3c41f491b332f763507f rdf:reifies <<( doc:FactsOverMaintenance doc:factsuses_3 doc:FactsEconomicPerformance )>> ;
+	prov:wasDerivedFrom doc:e2cc523d947b .
+doc:factsuses_3 a owl:ObjectProperty .
+_:b6f4f6b1f4f9a173459ff88facb9cd58 rdf:reifies <<( doc:factsuses_3 rdf:type owl:ObjectProperty )>> ;
+	prov:wasDerivedFrom doc:e2cc523d947b .
+doc:FactsClosedLoopSystem rdfs:label "closed-loop system"@en .
+_:a2478719dd32ea2b563cdb4a6a62b02c rdf:reifies <<( doc:FactsClosedLoopSystem rdfs:label "closed-loop system"@en )>> ;
+	prov:wasDerivedFrom doc:e2cc523d947b .
+doc:FactsOptimizationAndUpdating rdfs:label "optimization and updating"@en .
+_:ac426ce408609f7a9cc85b129b10c22 rdf:reifies <<( doc:FactsOptimizationAndUpdating rdfs:label "optimization and updating"@en )>> ;
+	prov:wasDerivedFrom doc:e2cc523d947b .
+doc:FactsRulPredictionModel doc:factsuses_3 doc:FactsModelDevelopment .
+_:ccd86621820177ce8ba47c449f39a713 rdf:reifies <<( doc:FactsRulPredictionModel doc:factsuses_3 doc:FactsModelDevelopment )>> ;
+	prov:wasDerivedFrom doc:e2cc523d947b .
+doc:FactsFeatureExtraction a None:Fault_feature_extraction .
+_:fd8cc07a267d4eb86b5ed1132b218ab2 rdf:reifies <<( doc:FactsFeatureExtraction rdf:type None:Fault_feature_extraction )>> ;
+	prov:wasDerivedFrom doc:e2cc523d947b .
+doc:FactsClosedLoopSystem rdfs:comment "The RUL forecasting pipeline (data gathering -> preprocessing -> feature extraction -> model development -> assessment -> real-time forecasting -> optimization) forms a closed-loop predictive maintenance system."@en .
+_:a25e701cdf2781a34caf092f0a3aed2f rdf:reifies <<( doc:FactsClosedLoopSystem rdfs:comment "The RUL forecasting pipeline (data gathering -> preprocessing -> feature extraction -> model development -> assessment -> real-time forecasting -> optimization) forms a closed-loop predictive maintenance system."@en )>> ;
+	prov:wasDerivedFrom doc:e2cc523d947b .
+doc:FactsMaintenanceResources rdfs:label "maintenance resources"@en .
+_:d1d971442b99860ef951424799164d36 rdf:reifies <<( doc:FactsMaintenanceResources rdfs:label "maintenance resources"@en )>> ;
+	prov:wasDerivedFrom doc:e2cc523d947b .
+doc:FactsOverMaintenance rdfs:label "over-maintenance"@en .
+_:dd1813408b7e081b9012634e72580011 rdf:reifies <<( doc:FactsOverMaintenance rdfs:label "over-maintenance"@en )>> ;
+	prov:wasDerivedFrom doc:e2cc523d947b .
+doc:FactsRulPredictionModel doc:factsuses_3 doc:FactsRealTimeForecasting .
+_:c18c5e7d0c6f1b1cb4e90d95bdd77c3a rdf:reifies <<( doc:FactsRulPredictionModel doc:factsuses_3 doc:FactsRealTimeForecasting )>> ;
+	prov:wasDerivedFrom doc:e2cc523d947b .
+doc:FactsOverMaintenance rdfs:label "under-maintenance"@en .
+_:f05e94d4f0bef6371405ea3001218a35 rdf:reifies <<( doc:FactsOverMaintenance rdfs:label "under-maintenance"@en )>> ;
+	prov:wasDerivedFrom doc:e2cc523d947b .
+doc:FactsRulPredictionModel doc:factsuses_3 doc:FactsSensorData_2 .
+_:c89169be4dde1f4395cccd1aeeabdb04 rdf:reifies <<( doc:FactsRulPredictionModel doc:factsuses_3 doc:FactsSensorData_2 )>> ;
+	prov:wasDerivedFrom doc:e2cc523d947b .
+doc:FactsRulDefinition_1 rdfs:label "remaining useful life (RUL)"@en .
+_:f073e0b9fede978a2cccf8abd4a11f0c rdf:reifies <<( doc:FactsRulDefinition_1 rdfs:label "remaining useful life (RUL)"@en )>> ;
+	prov:wasDerivedFrom doc:e2cc523d947b .
+doc:FactsClosedLoopSystem a cco:InformationProcessingArtifact .
+_:f8d26ebcffa0ecf7a87a58c7feb82e87 rdf:reifies <<( doc:FactsClosedLoopSystem rdf:type cco:InformationProcessingArtifact )>> ;
+	prov:wasDerivedFrom doc:e2cc523d947b .
+doc:FactsEconomicPerformance rdfs:label "operational efficiency"@en .
+_:f7d081978e9a99e0e6843c38a320040a rdf:reifies <<( doc:FactsEconomicPerformance rdfs:label "operational efficiency"@en )>> ;
+	prov:wasDerivedFrom doc:e2cc523d947b .
+doc:FactsPeriodicMaintenance rdfs:comment "Periodic maintenance ensures contact system equipment is regularly maintained and can prevent sudden failures due to long unmaintained periods."@en .
+_:d0ad682d083e57bb4e7ebd7605b66297 rdf:reifies <<( doc:FactsPeriodicMaintenance rdfs:comment "Periodic maintenance ensures contact system equipment is regularly maintained and can prevent sudden failures due to long unmaintained periods."@en )>> ;
+	prov:wasDerivedFrom doc:e2cc523d947b .
+doc:FactsFailureMode rdfs:label "failure mode"@en .
+_:ffbab84cc8a67b283f2759a5ece68788 rdf:reifies <<( doc:FactsFailureMode rdfs:label "failure mode"@en )>> ;
+	prov:wasDerivedFrom doc:e2cc523d947b .
+doc:FactsRulEstimationOfContactSystem rdfs:comment "Estimating the remaining useful life (RUL) of the contact system enables maintenance strategies driven by real-time condition assessments."@en .
+_:f0e3be26f76e489603b56acbfbc56b90 rdf:reifies <<( doc:FactsRulEstimationOfContactSystem rdfs:comment "Estimating the remaining useful life (RUL) of the contact system enables maintenance strategies driven by real-time condition assessments."@en )>> ;
+	prov:wasDerivedFrom doc:e2cc523d947b .
+doc:FactsFeatureExtraction rdfs:comment "Feature extraction and data fusion produce inputs used by RUL prediction models."@en .
+_:c7c62bb2336ccae9979de1766bd62180 rdf:reifies <<( doc:FactsFeatureExtraction rdfs:comment "Feature extraction and data fusion produce inputs used by RUL prediction models."@en )>> ;
+	prov:wasDerivedFrom doc:e2cc523d947b .
+doc:FactsMaintenanceCosts_1 a obo:BFO_0000019 .
+_:c1d41323b67aa3e304cf17641bffc0ea rdf:reifies <<( doc:FactsMaintenanceCosts_1 rdf:type obo:BFO_0000019 )>> ;
+	prov:wasDerivedFrom doc:e2cc523d947b .
+doc:FactsFailureMechanismBasedAnalysis rdfs:comment "Failure-mechanism analysis requires mathematical-physical models and accurate identification of failure modes; it relies on understanding internal operating principles."@en .
+_:affc18f4c76c38557fa1ce9ab630567c rdf:reifies <<( doc:FactsFailureMechanismBasedAnalysis rdfs:comment "Failure-mechanism analysis requires mathematical-physical models and accurate identification of failure modes; it relies on understanding internal operating principles."@en )>> ;
+	prov:wasDerivedFrom doc:e2cc523d947b .
+doc:FactsRulPredictionModel cco:is_about doc:FactsRulDefinition_1 .
+_:bb813b1f590454bc8063fae9427b2cb4 rdf:reifies <<( doc:FactsRulPredictionModel cco:is_about doc:FactsRulDefinition_1 )>> ;
+	prov:wasDerivedFrom doc:e2cc523d947b .
+doc:FactsRulEstimationOfContactSystem None:describes_type doc:FactsContactSystem .
+_:c83ed992c89a8e2c1eeb82196d2afc7d rdf:reifies <<( doc:FactsRulEstimationOfContactSystem None:describes_type doc:FactsContactSystem )>> ;
+	prov:wasDerivedFrom doc:e2cc523d947b .
+doc:FactsOverMaintenance a obo:BFO_0000019 .
+_:f179d3c737f3d9871d5e3e26908663aa rdf:reifies <<( doc:FactsOverMaintenance rdf:type obo:BFO_0000019 )>> ;
+	prov:wasDerivedFrom doc:e2cc523d947b .
+doc:FactsFailureMechanismBasedAnalysis doc:factsuses_3 doc:FactsFailureMode .
+_:b13bb73f6cb280620ec2f30fbb969b5 rdf:reifies <<( doc:FactsFailureMechanismBasedAnalysis doc:factsuses_3 doc:FactsFailureMode )>> ;
+	prov:wasDerivedFrom doc:e2cc523d947b .
+doc:FactsRulPredictionModel doc:factsuses_3 doc:FactsFeatureExtraction .
+_:c9c5d131defc2385d39090eba30ca8ec rdf:reifies <<( doc:FactsRulPredictionModel doc:factsuses_3 doc:FactsFeatureExtraction )>> ;
+	prov:wasDerivedFrom doc:e2cc523d947b .
+doc:FactsFailureMechanismBasedAnalysis rdfs:label "failure mechanism-based analysis"@en .
+_:c9cc61960ad64d931950cf810b12c885 rdf:reifies <<( doc:FactsFailureMechanismBasedAnalysis rdfs:label "failure mechanism-based analysis"@en )>> ;
+	prov:wasDerivedFrom doc:e2cc523d947b .
+doc:FactsHistoricalData_1 rdfs:label "historical data"@en .
+_:a0493f28359a4c82926adebc2d220472 rdf:reifies <<( doc:FactsHistoricalData_1 rdfs:label "historical data"@en )>> ;
+	prov:wasDerivedFrom doc:e2cc523d947b .
+doc:FactsHistoricalData_1 a cco:InformationBearingArtifact .
+_:d81ebac03918c648364a3615e13bc1c4 rdf:reifies <<( doc:FactsHistoricalData_1 rdf:type cco:InformationBearingArtifact )>> ;
+	prov:wasDerivedFrom doc:e2cc523d947b .
+doc:FactsSensorData_2 a None:Data_variable .
+_:df3a64d0a8d1d95d61f17b0ed52c403e rdf:reifies <<( doc:FactsSensorData_2 rdf:type None:Data_variable )>> ;
+	prov:wasDerivedFrom doc:e2cc523d947b .
+doc:FactsDataOrientedApproach rdfs:comment "Data-oriented approaches rely on large historical datasets (sensor data, operation records) to train prediction models and extract features for RUL forecasting."@en .
+_:e45e71167ac9a3f5c868cea3fb84ad65 rdf:reifies <<( doc:FactsDataOrientedApproach rdfs:comment "Data-oriented approaches rely on large historical datasets (sensor data, operation records) to train prediction models and extract features for RUL forecasting."@en )>> ;
+	prov:wasDerivedFrom doc:e2cc523d947b .
+doc:FactsRulPredictionModel a None:Predictive_maintenance_model .
+_:eb92a4cd75a5c2cf3df459fa4f9c715f rdf:reifies <<( doc:FactsRulPredictionModel rdf:type None:Predictive_maintenance_model )>> ;
+	prov:wasDerivedFrom doc:e2cc523d947b .
+doc:FactsDataOrientedApproach doc:factsuses_3 doc:FactsHistoricalData_1 .
+_:d0150e2e90e5b8010b54f72646794d7d rdf:reifies <<( doc:FactsDataOrientedApproach doc:factsuses_3 doc:FactsHistoricalData_1 )>> ;
+	prov:wasDerivedFrom doc:e2cc523d947b .
+doc:FactsDataOrientedApproach a None:Data_mining_technique_function .
+_:d2d289249036c5a53e8233ef0bfc4e03 rdf:reifies <<( doc:FactsDataOrientedApproach rdf:type None:Data_mining_technique_function )>> ;
+	prov:wasDerivedFrom doc:e2cc523d947b .
+doc:FactsRulEstimationOfContactSystem a None:Remaining_useful_life_estimation .
+_:e7bdc50bc88b208132cdc7869e6ecfa6 rdf:reifies <<( doc:FactsRulEstimationOfContactSystem rdf:type None:Remaining_useful_life_estimation )>> ;
+	prov:wasDerivedFrom doc:e2cc523d947b .
+doc:FactsMathematicalPhysicalModel rdfs:label "mathematical-physical model"@en .
+_:c090f53d409a7e5a7dcd9a96a7992566 rdf:reifies <<( doc:FactsMathematicalPhysicalModel rdfs:label "mathematical-physical model"@en )>> ;
+	prov:wasDerivedFrom doc:e2cc523d947b .
+doc:FactsRulPredictionModel doc:factsuses_3 doc:FactsLoadChanges .
+_:f5277775fb1454de45426f6a1abc5f3f rdf:reifies <<( doc:FactsRulPredictionModel doc:factsuses_3 doc:FactsLoadChanges )>> ;
+	prov:wasDerivedFrom doc:e2cc523d947b .
+doc:FactsRealTimeForecasting rdfs:label "real-time forecasting"@en .
+_:b9ee3b117a095edd7e1cd73a4a714dc4 rdf:reifies <<( doc:FactsRealTimeForecasting rdfs:label "real-time forecasting"@en )>> ;
+	prov:wasDerivedFrom doc:e2cc523d947b .
+doc:FactsContactSystem a None:Maintainable_item .
+_:e859ad4d1637f2db2a74048b825025ce rdf:reifies <<( doc:FactsContactSystem rdf:type None:Maintainable_item )>> ;
+	prov:wasDerivedFrom doc:e2cc523d947b .
+doc:FactsRulEstimationOfContactSystem cco:is_about doc:FactsRulDefinition_1 .
+_:d91dedbeae67547c637fb2697d65ba0d rdf:reifies <<( doc:FactsRulEstimationOfContactSystem cco:is_about doc:FactsRulDefinition_1 )>> ;
+	prov:wasDerivedFrom doc:e2cc523d947b .
+doc:FactsEconomicPerformance a obo:BFO_0000019 .
+_:d9c3162007e057c5cc79e491272017e3 rdf:reifies <<( doc:FactsEconomicPerformance rdf:type obo:BFO_0000019 )>> ;
+	prov:wasDerivedFrom doc:e2cc523d947b .
+doc:FactsHistoricalData_1 rdfs:comment "Historical operational data used to train data-oriented RUL prediction models."@en .
+_:fe9977be6db9191f52c7a580f778f524 rdf:reifies <<( doc:FactsHistoricalData_1 rdfs:comment "Historical operational data used to train data-oriented RUL prediction models."@en )>> ;
+	prov:wasDerivedFrom doc:e2cc523d947b .
+doc:FactsMaintenanceResources a cco:Artifact .
+_:da8736d079a86a002ade9147e518e088 rdf:reifies <<( doc:FactsMaintenanceResources rdf:type cco:Artifact )>> ;
+	prov:wasDerivedFrom doc:e2cc523d947b .
+doc:FactsFailureMode a obo:BFO_0000001 .
+_:df58f7f0110e1769ff4631330a0c6e1b rdf:reifies <<( doc:FactsFailureMode rdf:type obo:BFO_0000001 )>> ;
+	prov:wasDerivedFrom doc:e2cc523d947b .
+doc:FactsDataOrientedApproach rdfs:label "data-oriented approach"@en .
+_:de073c1afd5cbf1847cf71e74e071c49 rdf:reifies <<( doc:FactsDataOrientedApproach rdfs:label "data-oriented approach"@en )>> ;
+	prov:wasDerivedFrom doc:e2cc523d947b .
+doc:FactsLoadChanges a None:Data_variable .
+_:ac26638a36cc4505e938b23dfbdb25a2 rdf:reifies <<( doc:FactsLoadChanges rdf:type None:Data_variable )>> ;
+	prov:wasDerivedFrom doc:e2cc523d947b .
+doc:FactsOverMaintenance a obo:BFO_0000034 .
+_:cdc79adcc51dea9ce42b694c7626a58b rdf:reifies <<( doc:FactsOverMaintenance rdf:type obo:BFO_0000034 )>> ;
+	prov:wasDerivedFrom doc:e2cc523d947b .
+doc:FactsMathematicalPhysicalModel a cco:DirectiveInformationContentEntity .
+_:a51dcdeddee1722590cf9fb2d0eaa989 rdf:reifies <<( doc:FactsMathematicalPhysicalModel rdf:type cco:DirectiveInformationContentEntity )>> ;
+	prov:wasDerivedFrom doc:e2cc523d947b .
+doc:FactsMaintenanceCosts_1 rdfs:label "maintenance costs"@en .
+_:ffbb9232dabf3794c40e4880e76bddc1 rdf:reifies <<( doc:FactsMaintenanceCosts_1 rdfs:label "maintenance costs"@en )>> ;
+	prov:wasDerivedFrom doc:e2cc523d947b .
+doc:FactsEconomicPerformance rdfs:label "operational readiness"@en .
+_:a7337d78a32cd17673fee3cb7f7a2d1b rdf:reifies <<( doc:FactsEconomicPerformance rdfs:label "operational readiness"@en )>> ;
+	prov:wasDerivedFrom doc:e2cc523d947b .
+doc:FactsOverMaintenance rdfs:comment "Conditional maintenance improves equipment reliability and operational readiness, reduces operational disruptions, and can reduce maintenance costs by optimizing allocation of maintenance resources."@en .
+_:b9021353dcdb7c44a158997b3b9f0969 rdf:reifies <<( doc:FactsOverMaintenance rdfs:comment "Conditional maintenance improves equipment reliability and operational readiness, reduces operational disruptions, and can reduce maintenance costs by optimizing allocation of maintenance resources."@en )>> ;
+	prov:wasDerivedFrom doc:e2cc523d947b .
+doc:FactsRulEstimationOfContactSystem rdfs:label "RUL estimation of contact system"@en .
+_:f2b5160b38d4307948dd3007b8faa2d2 rdf:reifies <<( doc:FactsRulEstimationOfContactSystem rdfs:label "RUL estimation of contact system"@en )>> ;
+	prov:wasDerivedFrom doc:e2cc523d947b .
+doc:FactsOverMaintenance rdfs:label "conditional maintenance"@en .
+_:c7be5d9b15d6636bbf862ad5382b9743 rdf:reifies <<( doc:FactsOverMaintenance rdfs:label "conditional maintenance"@en )>> ;
+	prov:wasDerivedFrom doc:e2cc523d947b .
+doc:FactsModelDevelopment a obo:BFO_0000034 .
+_:aaedc774a212e7bde2c95aae9787c139 rdf:reifies <<( doc:FactsModelDevelopment rdf:type obo:BFO_0000034 )>> ;
+	prov:wasDerivedFrom doc:e2cc523d947b .
+doc:FactsFailureMechanismBasedAnalysis a None:Data_mining_technique_function .
+_:da8ec0884c35796c15bab486a56ca252 rdf:reifies <<( doc:FactsFailureMechanismBasedAnalysis rdf:type None:Data_mining_technique_function )>> ;
+	prov:wasDerivedFrom doc:e2cc523d947b .
+doc:FactsRulDefinition_1 a cco:DesignativeInformationContentEntity .
+_:a6e9499fb23fd36e772ddfacd76b9ce1 rdf:reifies <<( doc:FactsRulDefinition_1 rdf:type cco:DesignativeInformationContentEntity )>> ;
+	prov:wasDerivedFrom doc:e2cc523d947b .
+doc:FactsEconomicPerformance rdfs:label "economic performance"@en .
+_:a1046441a82f3ecf6779ba1554f4ad44 rdf:reifies <<( doc:FactsEconomicPerformance rdfs:label "economic performance"@en )>> ;
+	prov:wasDerivedFrom doc:e2cc523d947b .
+doc:FactsOptimizationAndUpdating a obo:BFO_0000034 .
+_:ae73f26f95ac70d0f289b72f74eced9c rdf:reifies <<( doc:FactsOptimizationAndUpdating rdf:type obo:BFO_0000034 )>> ;
+	prov:wasDerivedFrom doc:e2cc523d947b .
+doc:FactsFailureMechanismBasedAnalysis doc:factsuses_3 doc:FactsMathematicalPhysicalModel .
+_:f1db47a245c85dcbf5347ed69b50aea0 rdf:reifies <<( doc:FactsFailureMechanismBasedAnalysis doc:factsuses_3 doc:FactsMathematicalPhysicalModel )>> ;
+	prov:wasDerivedFrom doc:e2cc523d947b .
+doc:FactsPeriodicMaintenance a obo:BFO_0000034 .
+_:c29d646af4fd6892524038d4f58b1444 rdf:reifies <<( doc:FactsPeriodicMaintenance rdf:type obo:BFO_0000034 )>> ;
+	prov:wasDerivedFrom doc:e2cc523d947b .
+doc:FactsSensorData_2 rdfs:label "sensor data"@en .
+_:e6b0dbb59bdc1b50d7b10d0bb30e6252 rdf:reifies <<( doc:FactsSensorData_2 rdfs:label "sensor data"@en )>> ;
+	prov:wasDerivedFrom doc:e2cc523d947b .
+doc:FactsModelAssessment a obo:BFO_0000034 .
+_:f86c6c8362da7f1905c3be0ee403df3c rdf:reifies <<( doc:FactsModelAssessment rdf:type obo:BFO_0000034 )>> ;
+	prov:wasDerivedFrom doc:e2cc523d947b .
+doc:FactsRulPredictionModel cco:is_about doc:FactsContactSystem .
+_:e52a71d548edaaab29b95c7a27bbbf7f rdf:reifies <<( doc:FactsRulPredictionModel cco:is_about doc:FactsContactSystem )>> ;
+	prov:wasDerivedFrom doc:e2cc523d947b .
+doc:FactsFeatureExtraction rdfs:label "feature extraction"@en .
+_:a580f7f6f2f79052fb32a4eb6d029430 rdf:reifies <<( doc:FactsFeatureExtraction rdfs:label "feature extraction"@en )>> ;
+	prov:wasDerivedFrom doc:e2cc523d947b .
+doc:FactsRulPredictionModel rdfs:label "data-driven RUL predictive model"@en .
+_:edf9ca325416da9b70f6a2d4c953349f rdf:reifies <<( doc:FactsRulPredictionModel rdfs:label "data-driven RUL predictive model"@en )>> ;
+	prov:wasDerivedFrom doc:e2cc523d947b .
+doc:FactsModelAssessment rdfs:label "model assessment"@en .
+_:f1fb757cf40cb312c4f3344938bd600a rdf:reifies <<( doc:FactsModelAssessment rdfs:label "model assessment"@en )>> ;
+	prov:wasDerivedFrom doc:e2cc523d947b .
+doc:FactsModelDevelopment rdfs:label "model development"@en .
+_:a1f6b315f62f040c04d8b0f3d14401b rdf:reifies <<( doc:FactsModelDevelopment rdfs:label "model development"@en )>> ;
+	prov:wasDerivedFrom doc:e2cc523d947b .
+doc:FactsRulPredictionModel rdfs:comment "A data-driven predictive maintenance model that forecasts RUL using historical and operational data (sensor data, operation records) and typical data-processing pipeline steps."@en .
+_:fe580d583ab2a49997e5a6a208390a47 rdf:reifies <<( doc:FactsRulPredictionModel rdfs:comment "A data-driven predictive maintenance model that forecasts RUL using historical and operational data (sensor data, operation records) and typical data-processing pipeline steps."@en )>> ;
+	prov:wasDerivedFrom doc:e2cc523d947b .
+doc:FactsRulDefinition_1 rdfs:comment "RUL represents the remaining time period of normal use between the current moment and the subsequent failure event."@en .
+_:d24deb0c2d1088de0ac9a705a2848534 rdf:reifies <<( doc:FactsRulDefinition_1 rdfs:comment "RUL represents the remaining time period of normal use between the current moment and the subsequent failure event."@en )>> ;
+	prov:wasDerivedFrom doc:e2cc523d947b .
+doc:FactsLoadChanges rdfs:label "operation records"@en .
+_:ff75142839d28234050b1b65ed8441d6 rdf:reifies <<( doc:FactsLoadChanges rdfs:label "operation records"@en )>> ;
+	prov:wasDerivedFrom doc:e2cc523d947b .
+doc:FactsRealTimeForecasting a None:Future_state_forecast .
+_:a5222e49d0f87930058ab68b869c69dc rdf:reifies <<( doc:FactsRealTimeForecasting rdf:type None:Future_state_forecast )>> ;
+	prov:wasDerivedFrom doc:e2cc523d947b .
+doc:8985da1ceacb a prov:Entity , schema:text ;
+	prov:generatedAtTime "2026-07-11T04:07:42.946826Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+	schema:position 2 ;
+	schema:identifier "8985da1ceacb" .
+_:b6f4f6b1f4f9a173459ff88facb9cd58 prov:wasDerivedFrom doc:8985da1ceacb .
+doc:FactsHighDimensionalData a cco:DescriptiveInformationContentEntity .
+_:fc9c56b7cbccc5815295886fbc0b4047 rdf:reifies <<( doc:FactsHighDimensionalData rdf:type cco:DescriptiveInformationContentEntity )>> ;
+	prov:wasDerivedFrom doc:8985da1ceacb .
+doc:FactsLassoRegression a None:Regression .
+_:b2247bd2196f0cc009eab0f073d50f61 rdf:reifies <<( doc:FactsLassoRegression rdf:type None:Regression )>> ;
+	prov:wasDerivedFrom doc:8985da1ceacb .
+doc:FactsRulPredictionModel doc:factsuses_3 doc:FactsRandomForest_6 .
+_:f740d1d8ce64f0dd740e47b4d67e6e67 rdf:reifies <<( doc:FactsRulPredictionModel doc:factsuses_3 doc:FactsRandomForest_6 )>> ;
+	prov:wasDerivedFrom doc:8985da1ceacb .
+doc:FactsLstm_6 a cco:Algorithm .
+_:ed04c9f4b663b39a3fe83cb56d3c8795 rdf:reifies <<( doc:FactsLstm_6 rdf:type cco:Algorithm )>> ;
+	prov:wasDerivedFrom doc:8985da1ceacb .
+doc:FactsDeepNeuralNetwork cd:is_effective_for doc:FactsHighDimensionalData .
+_:bc2f87e7aa392beeb43c6e4e4c5db925 rdf:reifies <<( doc:FactsDeepNeuralNetwork cd:is_effective_for doc:FactsHighDimensionalData )>> ;
+	prov:wasDerivedFrom doc:8985da1ceacb .
+doc:FactsRulPredictionModel doc:factsuses_3 doc:FactsDeepNeuralNetwork .
+_:d1d1d42534a2ef1ad1b060061c12aac9 rdf:reifies <<( doc:FactsRulPredictionModel doc:factsuses_3 doc:FactsDeepNeuralNetwork )>> ;
+	prov:wasDerivedFrom doc:8985da1ceacb .
+doc:FactsLstm_6 doc:factsuses_3 doc:FactsRulPredictionModel .
+_:d23a7bfb6b931c13492c9e9f1582dc8d rdf:reifies <<( doc:FactsLstm_6 doc:factsuses_3 doc:FactsRulPredictionModel )>> ;
+	prov:wasDerivedFrom doc:8985da1ceacb .
+doc:FactsDeepNeuralNetwork doc:factsuses_3 doc:FactsRealTimeForecasting .
+_:a3fe607f16d37662599c709bed58ff2d rdf:reifies <<( doc:FactsDeepNeuralNetwork doc:factsuses_3 doc:FactsRealTimeForecasting )>> ;
+	prov:wasDerivedFrom doc:8985da1ceacb .
+doc:FactsForwardLstmLayer a cco:Artifact .
+_:ccf38fac11350d37d73c2542ca8ed3fd rdf:reifies <<( doc:FactsForwardLstmLayer rdf:type cco:Artifact )>> ;
+	prov:wasDerivedFrom doc:8985da1ceacb .
+_:eb92a4cd75a5c2cf3df459fa4f9c715f prov:wasDerivedFrom doc:8985da1ceacb .
+doc:FactsLstm_6 doc:factsuses_3 doc:FactsLstm_6 .
+_:d951b7001132c1cfbb618c553eaf16ea rdf:reifies <<( doc:FactsLstm_6 doc:factsuses_3 doc:FactsLstm_6 )>> ;
+	prov:wasDerivedFrom doc:8985da1ceacb .
+doc:FactsLstm_6 doc:factsuses_3 "bidirectional" .
+_:f43005a652395a04967b7452c3064d9d rdf:reifies <<( doc:FactsLstm_6 doc:factsuses_3 "bidirectional" )>> ;
+	prov:wasDerivedFrom doc:8985da1ceacb .
+doc:FactsLstm_6 doc:factsuses_3 doc:FactsForwardLstmLayer .
+_:ec3979bc1a91111742922f788d0eb4f8 rdf:reifies <<( doc:FactsLstm_6 doc:factsuses_3 doc:FactsForwardLstmLayer )>> ;
+	prov:wasDerivedFrom doc:8985da1ceacb .
+doc:FactsRulPredictionModel doc:factsuses_3 doc:FactsLassoRegression .
+_:c0b6c4039b29fe73dead57c434a8787d rdf:reifies <<( doc:FactsRulPredictionModel doc:factsuses_3 doc:FactsLassoRegression )>> ;
+	prov:wasDerivedFrom doc:8985da1ceacb .
+doc:FactsFailureMode a obo:BFO_0000019 .
+_:b7121ad604380eecf3485277e48993b3 rdf:reifies <<( doc:FactsFailureMode rdf:type obo:BFO_0000019 )>> ;
+	prov:wasDerivedFrom doc:8985da1ceacb .
+doc:FactsParticleSwarmOptimization_1 a cco:Algorithm .
+_:fb33d51ad0172703a046b09fda22154c rdf:reifies <<( doc:FactsParticleSwarmOptimization_1 rdf:type cco:Algorithm )>> ;
+	prov:wasDerivedFrom doc:8985da1ceacb .
+doc:FactsRulPredictionModel doc:factsuses_3 doc:FactsDataOrientedApproach .
+_:a74d1eabe326d1506e770c45e40b7836 rdf:reifies <<( doc:FactsRulPredictionModel doc:factsuses_3 doc:FactsDataOrientedApproach )>> ;
+	prov:wasDerivedFrom doc:8985da1ceacb .
+_:d2d289249036c5a53e8233ef0bfc4e03 prov:wasDerivedFrom doc:8985da1ceacb .
+doc:factsprocessesTimeDirection a owl:DatatypeProperty .
+_:c1466e3d9086911d5c807017f4c321bf rdf:reifies <<( doc:factsprocessesTimeDirection rdf:type owl:DatatypeProperty )>> ;
+	prov:wasDerivedFrom doc:8985da1ceacb .
+doc:FactsLstm_6 doc:factsuses_3 "unidirectional" .
+_:c95e2a08035848fbe48eb810e87b2544 rdf:reifies <<( doc:FactsLstm_6 doc:factsuses_3 "unidirectional" )>> ;
+	prov:wasDerivedFrom doc:8985da1ceacb .
+doc:FactsEquipmentAging doc:factsuses_3 doc:FactsFailureMode .
+_:df2b96166ac80ae4c81dc359f4d6d3d4 rdf:reifies <<( doc:FactsEquipmentAging doc:factsuses_3 doc:FactsFailureMode )>> ;
+	prov:wasDerivedFrom doc:8985da1ceacb .
+doc:FactsLstm_6 doc:factsuses_3 doc:FactsRealTimeForecasting .
+_:c3708e60bbd3faa0024ffcc4736b5654 rdf:reifies <<( doc:FactsLstm_6 doc:factsuses_3 doc:FactsRealTimeForecasting )>> ;
+	prov:wasDerivedFrom doc:8985da1ceacb .
+doc:FactsLoadChanges doc:factsuses_3 doc:FactsFailureMode .
+_:fafc0c7aab05e2b89b413185f64a868d rdf:reifies <<( doc:FactsLoadChanges doc:factsuses_3 doc:FactsFailureMode )>> ;
+	prov:wasDerivedFrom doc:8985da1ceacb .
+doc:factsuses_3 a owl:DatatypeProperty .
+_:de1581df3a0c7deec28e0ed960494ff4 rdf:reifies <<( doc:factsuses_3 rdf:type owl:DatatypeProperty )>> ;
+	prov:wasDerivedFrom doc:8985da1ceacb .
+doc:FactsRandomForest_6 a None:Data_mining_technique_function .
+_:dd5836b828750bd4e0cbeca1b0dc09fd rdf:reifies <<( doc:FactsRandomForest_6 rdf:type None:Data_mining_technique_function )>> ;
+	prov:wasDerivedFrom doc:8985da1ceacb .
+doc:FactsParticleSwarmOptimization_1 doc:factsuses_3 "obtain best hyperparameter coefficients for BiLSTM to improve RUL prediction" .
+_:e0e8259b72737fabf9219bada18c9924 rdf:reifies <<( doc:FactsParticleSwarmOptimization_1 doc:factsuses_3 "obtain best hyperparameter coefficients for BiLSTM to improve RUL prediction" )>> ;
+	prov:wasDerivedFrom doc:8985da1ceacb .
+doc:FactsLstm_6 doc:factsuses_3 "adaptively adjust predictions on poorly predicted regions to enhance stability and reduce bias" .
+_:db5c16cb87a7cfc99707d5a662bf448d rdf:reifies <<( doc:FactsLstm_6 doc:factsuses_3 "adaptively adjust predictions on poorly predicted regions to enhance stability and reduce bias" )>> ;
+	prov:wasDerivedFrom doc:8985da1ceacb .
+doc:FactsStability a obo:BFO_0000019 .
+_:aacedc6802d90095511624617b9e0eec rdf:reifies <<( doc:FactsStability rdf:type obo:BFO_0000019 )>> ;
+	prov:wasDerivedFrom doc:8985da1ceacb .
+doc:FactsLstm_6 doc:factsuses_3 "past inputs to predict future outputs" .
+_:d72de548cfd715aa0b9161319fd4e516 rdf:reifies <<( doc:FactsLstm_6 doc:factsuses_3 "past inputs to predict future outputs" )>> ;
+	prov:wasDerivedFrom doc:8985da1ceacb .
+_:ac26638a36cc4505e938b23dfbdb25a2 prov:wasDerivedFrom doc:8985da1ceacb .
+doc:FactsLstm_6 doc:factsprocessesTimeDirection "front-to-back" .
+_:cf6af466d7a62d9af32381203a83109e rdf:reifies <<( doc:FactsLstm_6 doc:factsprocessesTimeDirection "front-to-back" )>> ;
+	prov:wasDerivedFrom doc:8985da1ceacb .
+doc:FactsRulPredictionModel None:describes_type None:Remaining_useful_life_estimation .
+_:ef4cc25643cfc38bc287a361749191b4 rdf:reifies <<( doc:FactsRulPredictionModel None:describes_type None:Remaining_useful_life_estimation )>> ;
+	prov:wasDerivedFrom doc:8985da1ceacb .
+_:a5222e49d0f87930058ab68b869c69dc prov:wasDerivedFrom doc:8985da1ceacb .
+doc:FactsRulPredictionModel doc:factsuses_3 doc:FactsLstm_6 .
+_:e3382bb5ee68b73128a7952454435160 rdf:reifies <<( doc:FactsRulPredictionModel doc:factsuses_3 doc:FactsLstm_6 )>> ;
+	prov:wasDerivedFrom doc:8985da1ceacb .
+doc:FactsBias a obo:BFO_0000019 .
+_:cf8a01d330443de4be66e0e7fbdb6baa rdf:reifies <<( doc:FactsBias rdf:type obo:BFO_0000019 )>> ;
+	prov:wasDerivedFrom doc:8985da1ceacb .
+doc:FactsParticleSwarmOptimization_1 doc:factsuses_3 doc:FactsLstm_6 .
+_:cda38dda37b93d3855399b169e0bfef rdf:reifies <<( doc:FactsParticleSwarmOptimization_1 doc:factsuses_3 doc:FactsLstm_6 )>> ;
+	prov:wasDerivedFrom doc:8985da1ceacb .
+doc:FactsDeepNeuralNetwork doc:factsuses_3 doc:FactsRulPredictionModel .
+_:ef29e42066f03102c79572bb2961a000 rdf:reifies <<( doc:FactsDeepNeuralNetwork doc:factsuses_3 doc:FactsRulPredictionModel )>> ;
+	prov:wasDerivedFrom doc:8985da1ceacb .
+doc:FactsEquipmentAging a None:Data_variable .
+_:bf8740f06cfa01b9ffd0aadd4e047568 rdf:reifies <<( doc:FactsEquipmentAging rdf:type None:Data_variable )>> ;
+	prov:wasDerivedFrom doc:8985da1ceacb .
+doc:FactsFailureMode doc:factsuses_3 None:Data_mining_technique_function .
+_:c6a5f8de3145c9a0fb79fc8c04a9a27a rdf:reifies <<( doc:FactsFailureMode doc:factsuses_3 None:Data_mining_technique_function )>> ;
+	prov:wasDerivedFrom doc:8985da1ceacb .
+doc:FactsDeepNeuralNetwork a cco:Algorithm .
+_:d6d981bc61303e273528c301a9e98bd6 rdf:reifies <<( doc:FactsDeepNeuralNetwork rdf:type cco:Algorithm )>> ;
+	prov:wasDerivedFrom doc:8985da1ceacb .
+doc:FactsLstm_6 doc:factsuses_3 true .
+_:d752bd112bc8192e068ed88e3853fd0 rdf:reifies <<( doc:FactsLstm_6 doc:factsuses_3 true )>> ;
+	prov:wasDerivedFrom doc:8985da1ceacb .
+doc:FactsFailureMode doc:factsuses_3 None:Regression .
+_:ed66f32f0dd89e791f747659826cfda1 rdf:reifies <<( doc:FactsFailureMode doc:factsuses_3 None:Regression )>> ;
+	prov:wasDerivedFrom doc:8985da1ceacb .
+cco:DirectiveInformationContentEntity owl:sameAs cco:DesignativeInformationContentEntity , cco:DescriptiveInformationContentEntity .
+cco:InformationBearingArtifact owl:sameAs cco:InformationProcessingArtifact .

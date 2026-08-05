@@ -1,0 +1,621 @@
+@prefix None: <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD/seed#> .
+@prefix cco: <http://www.ontologyrepository.com/CommonCoreOntologies/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doc: <https://growgraph.dev/doc/7341cad185f7/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix obo: <http://purl.obolibrary.org/obo/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix schema: <https://schema.org/> .
+doc:f1a827663ac7 a prov:Entity , schema:text ;
+	prov:generatedAtTime "2026-07-25T06:15:43.391168Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+	schema:position 0 ;
+	schema:identifier "f1a827663ac7" .
+doc:Factspaper_13 schema:author doc:Factsmihai .
+_:e3a6e943a2a61830615c381fc7429f98 rdf:reifies <<( doc:Factspaper_13 schema:author doc:Factsmihai )>> ;
+	prov:wasDerivedFrom doc:f1a827663ac7 .
+doc:Factsmihai schema:affiliation doc:FactsfacultyMachinesManufacturingIndustrialManagement .
+_:e5ca32cfb925fbaa9696da41f9a7435c rdf:reifies <<( doc:Factsmihai schema:affiliation doc:FactsfacultyMachinesManufacturingIndustrialManagement )>> ;
+	prov:wasDerivedFrom doc:f1a827663ac7 .
+doc:FactsarticleDoi_31 None:has_text_value "A Signal Pattern Extraction Method Useful for Monitoring the Condition of Actuated Mechanical Systems Operating in Steady State Regimes" .
+_:ad1ca023b6575b1df6134f510c35e312 rdf:reifies <<( doc:FactsarticleDoi_31 None:has_text_value "A Signal Pattern Extraction Method Useful for Monitoring the Condition of Actuated Mechanical Systems Operating in Steady State Regimes" )>> ;
+	prov:wasDerivedFrom doc:f1a827663ac7 .
+doc:Factsmihai schema:name "Lucian Oancea"@en .
+_:ab9658f4cf33634abcb30402a960d65b rdf:reifies <<( doc:Factsmihai schema:name "Lucian Oancea"@en )>> ;
+	prov:wasDerivedFrom doc:f1a827663ac7 .
+doc:FactslatheHeadstockGearbox a schema:Thing .
+_:d33d87bfe6c5242e60c7d5e4b5c69305 rdf:reifies <<( doc:FactslatheHeadstockGearbox rdf:type schema:Thing )>> ;
+	prov:wasDerivedFrom doc:f1a827663ac7 .
+doc:FactsasynchronousAcElectricMotor a schema:Thing .
+_:b7ba9f71de323f41e2d89b41d4b075ac rdf:reifies <<( doc:FactsasynchronousAcElectricMotor rdf:type schema:Thing )>> ;
+	prov:wasDerivedFrom doc:f1a827663ac7 .
+doc:FactsiasiRomania schema:name "Iasi, Romania"@en .
+_:d7be4f8e4ae9d36d6d047803a1f48879 rdf:reifies <<( doc:FactsiasiRomania schema:name "Iasi, Romania"@en )>> ;
+	prov:wasDerivedFrom doc:f1a827663ac7 .
+doc:FactsrotaryMachines obo:hasPart doc:FactslatheHeadstockGearbox .
+_:d5f3a31d402c2cfb8df389c93e69478e rdf:reifies <<( doc:FactsrotaryMachines obo:hasPart doc:FactslatheHeadstockGearbox )>> ;
+	prov:wasDerivedFrom doc:f1a827663ac7 .
+doc:FactssignalPatternRecognition schema:name "Signal pattern extraction method"@en .
+_:a2acafd5401f7fd2358250603f222140 rdf:reifies <<( doc:FactssignalPatternRecognition schema:name "Signal pattern extraction method"@en )>> ;
+	prov:wasDerivedFrom doc:f1a827663ac7 .
+doc:FactsiasiPostalAddress schema:addressLocality "Iasi"@en .
+_:fc7758f1f717b0d757447c231b39399c rdf:reifies <<( doc:FactsiasiPostalAddress schema:addressLocality "Iasi"@en )>> ;
+	prov:wasDerivedFrom doc:f1a827663ac7 .
+doc:FactsoutputSpindleAngularSpeedSignal None:has_text_value "Instantaneous angular speed of the output spindle" .
+_:bf2b3ac5308715455cdeddc2ad6e5bf3 rdf:reifies <<( doc:FactsoutputSpindleAngularSpeedSignal None:has_text_value "Instantaneous angular speed of the output spindle" )>> ;
+	prov:wasDerivedFrom doc:f1a827663ac7 .
+doc:Factspaper_13 schema:about doc:FactsrotaryMachines .
+_:d0c576978442bf14e1cdc0e1a93f97f rdf:reifies <<( doc:Factspaper_13 schema:about doc:FactsrotaryMachines )>> ;
+	prov:wasDerivedFrom doc:f1a827663ac7 .
+doc:Factsmihai schema:email "catalin-gabriel.dumitras@academic.tuiasi.ro" .
+_:ab5f322958d2280fafadf773c9ce4dfa rdf:reifies <<( doc:Factsmihai schema:email "catalin-gabriel.dumitras@academic.tuiasi.ro" )>> ;
+	prov:wasDerivedFrom doc:f1a827663ac7 .
+doc:Factspaper_13 None:has_title doc:FactsarticleDoi_31 .
+_:cac023ce7f6c71fe9fdbad4e9160db7c rdf:reifies <<( doc:Factspaper_13 None:has_title doc:FactsarticleDoi_31 )>> ;
+	prov:wasDerivedFrom doc:f1a827663ac7 .
+doc:Factsmihai schema:name "Adriana Munteanu"@en .
+_:e38d471b6ff1ae500ec44abdd4c48074 rdf:reifies <<( doc:Factsmihai schema:name "Adriana Munteanu"@en )>> ;
+	prov:wasDerivedFrom doc:f1a827663ac7 .
+doc:FactsactiveElectricalPowerSignal None:has_text_value "Active electrical power absorbed by an asynchronous AC electric motor driving a lathe headstock gearbox" .
+_:f5b2b06888e08a809767f3290f2f482a rdf:reifies <<( doc:FactsactiveElectricalPowerSignal None:has_text_value "Active electrical power absorbed by an asynchronous AC electric motor driving a lathe headstock gearbox" )>> ;
+	prov:wasDerivedFrom doc:f1a827663ac7 .
+doc:Factsmihai a schema:Person .
+_:abb385dd12e86cb535931f3efaebab6f rdf:reifies <<( doc:Factsmihai rdf:type schema:Person )>> ;
+	prov:wasDerivedFrom doc:f1a827663ac7 .
+doc:FactsrotaryMachines a None:Maintainable_item .
+_:e035bebdf4f9819954f924f3041a13d8 rdf:reifies <<( doc:FactsrotaryMachines rdf:type None:Maintainable_item )>> ;
+	prov:wasDerivedFrom doc:f1a827663ac7 .
+doc:FactsrotaryMachines schema:name "Actuated mechanical system"@en .
+_:a980e517aaf1fad8385de026b9a6676d rdf:reifies <<( doc:FactsrotaryMachines schema:name "Actuated mechanical system"@en )>> ;
+	prov:wasDerivedFrom doc:f1a827663ac7 .
+doc:Factspaper_13 schema:description "The paper presents an approach to condition monitoring of an actuated mechanical system operating in a steady-state regime. It extracts time-domain patterns of significant periodic signal components by arithmetic averaging of signal samples selected at constant time intervals."@en .
+_:a599a315bdb553e5999ef7a3391a6f41 rdf:reifies <<( doc:Factspaper_13 schema:description "The paper presents an approach to condition monitoring of an actuated mechanical system operating in a steady-state regime. It extracts time-domain patterns of significant periodic signal components by arithmetic averaging of signal samples selected at constant time intervals."@en )>> ;
+	prov:wasDerivedFrom doc:f1a827663ac7 .
+doc:FactsarticleDoi_31 cco:designates doc:Factspaper_13 .
+_:be3aabb253af5c7c9790c60a65b74d3f rdf:reifies <<( doc:FactsarticleDoi_31 cco:designates doc:Factspaper_13 )>> ;
+	prov:wasDerivedFrom doc:f1a827663ac7 .
+doc:Factsmihai schema:email "mohammed.khdair@student.tuiasi.ro" .
+_:c5ecc07db4fc2e902e50d0cad0662dce rdf:reifies <<( doc:Factsmihai schema:email "mohammed.khdair@student.tuiasi.ro" )>> ;
+	prov:wasDerivedFrom doc:f1a827663ac7 .
+doc:Factsmihai schema:email "adriana.munteanu@academic.tuiasi.ro" .
+_:b2246f0b0e581188c0ef14b0f046c5b1 rdf:reifies <<( doc:Factsmihai schema:email "adriana.munteanu@academic.tuiasi.ro" )>> ;
+	prov:wasDerivedFrom doc:f1a827663ac7 .
+doc:FactsgearboxVibrationSignal None:has_text_value "Vibration of the lathe headstock gearbox" .
+_:bc26978e435d33d95fc9455640c0be25 rdf:reifies <<( doc:FactsgearboxVibrationSignal None:has_text_value "Vibration of the lathe headstock gearbox" )>> ;
+	prov:wasDerivedFrom doc:f1a827663ac7 .
+doc:Factspaper_13 schema:keywords "mechanical system"@en .
+_:b2931a76b984804bd5a42aa07d0cf7d8 rdf:reifies <<( doc:Factspaper_13 schema:keywords "mechanical system"@en )>> ;
+	prov:wasDerivedFrom doc:f1a827663ac7 .
+doc:FactssignalPatternRecognition a None:Predictive_maintenance_model .
+_:fafea20042b9bc2fd26258cd395d0628 rdf:reifies <<( doc:FactssignalPatternRecognition rdf:type None:Predictive_maintenance_model )>> ;
+	prov:wasDerivedFrom doc:f1a827663ac7 .
+doc:FactsrotaryMachines a schema:Thing .
+_:c145eacc04017ea223a5af3ef7b615a4 rdf:reifies <<( doc:FactsrotaryMachines rdf:type schema:Thing )>> ;
+	prov:wasDerivedFrom doc:f1a827663ac7 .
+doc:FactsgheorgheAsachiTechnicalUniversityIasi a schema:Organization .
+_:bda80c30959fcb333c2b3b97163c46fc rdf:reifies <<( doc:FactsgheorgheAsachiTechnicalUniversityIasi rdf:type schema:Organization )>> ;
+	prov:wasDerivedFrom doc:f1a827663ac7 .
+doc:FactsoutputSpindle a None:Maintainable_item .
+_:f7d1b09efecc50ccc28dfd068b15b396 rdf:reifies <<( doc:FactsoutputSpindle rdf:type None:Maintainable_item )>> ;
+	prov:wasDerivedFrom doc:f1a827663ac7 .
+doc:FactsiasiPostalAddress schema:postalCode "700050" .
+_:f8c8bff2018281aee0525e18cad58e53 rdf:reifies <<( doc:FactsiasiPostalAddress schema:postalCode "700050" )>> ;
+	prov:wasDerivedFrom doc:f1a827663ac7 .
+doc:Factsmihai schema:email "mihaita.horodinca@academic.tuiasi.ro" .
+_:a816b75fd2699e98cc5244b459b53209 rdf:reifies <<( doc:Factsmihai schema:email "mihaita.horodinca@academic.tuiasi.ro" )>> ;
+	prov:wasDerivedFrom doc:f1a827663ac7 .
+doc:FactslatheHeadstockGearbox schema:about doc:FactsoutputSpindle .
+_:eb0f9783588568ae4bcc0c1b0c107ded rdf:reifies <<( doc:FactslatheHeadstockGearbox schema:about doc:FactsoutputSpindle )>> ;
+	prov:wasDerivedFrom doc:f1a827663ac7 .
+doc:FactsoutputSpindleAngularSpeedSignal a None:Data_variable .
+_:d488105ea6ef9d46e5e1ad22020fbf24 rdf:reifies <<( doc:FactsoutputSpindleAngularSpeedSignal rdf:type None:Data_variable )>> ;
+	prov:wasDerivedFrom doc:f1a827663ac7 .
+doc:Factsmihai schema:name "Catalin Gabriel Dumitras"@en .
+_:dbadfdf5bba6949375261787a01650fb rdf:reifies <<( doc:Factsmihai schema:name "Catalin Gabriel Dumitras"@en )>> ;
+	prov:wasDerivedFrom doc:f1a827663ac7 .
+doc:FactslatheHeadstockGearbox schema:name "Lathe headstock gearbox"@en .
+_:b8ac20be1d072eb80c35a774707eaa4 rdf:reifies <<( doc:FactslatheHeadstockGearbox schema:name "Lathe headstock gearbox"@en )>> ;
+	prov:wasDerivedFrom doc:f1a827663ac7 .
+doc:FactsiasiPostalAddress a schema:PostalAddress .
+_:fd31d8ec8de7fa6fac25e24c15126e23 rdf:reifies <<( doc:FactsiasiPostalAddress rdf:type schema:PostalAddress )>> ;
+	prov:wasDerivedFrom doc:f1a827663ac7 .
+doc:FactsoutputSpindle schema:name "Output spindle"@en .
+_:ca378632594da6f47e1fa133d5678d46 rdf:reifies <<( doc:FactsoutputSpindle schema:name "Output spindle"@en )>> ;
+	prov:wasDerivedFrom doc:f1a827663ac7 .
+doc:FactsoutputSpindle a schema:Thing .
+_:a1b4f132962d6093d8cdfafa96fae903 rdf:reifies <<( doc:FactsoutputSpindle rdf:type schema:Thing )>> ;
+	prov:wasDerivedFrom doc:f1a827663ac7 .
+doc:Factsmihai schema:email "neculai-eduard.bumbu@academic.tuiasi.ro" .
+_:e8cc74dbc62537a3cab7ad943f27ad4f rdf:reifies <<( doc:Factsmihai schema:email "neculai-eduard.bumbu@academic.tuiasi.ro" )>> ;
+	prov:wasDerivedFrom doc:f1a827663ac7 .
+doc:FactsiasiRomania schema:address doc:FactsiasiPostalAddress .
+_:ac4de72bd8d504884aae57b3ad6f4eb6 rdf:reifies <<( doc:FactsiasiRomania schema:address doc:FactsiasiPostalAddress )>> ;
+	prov:wasDerivedFrom doc:f1a827663ac7 .
+doc:Factsmihai schema:email "lucian.oancea@student.tuiasi.ro" .
+_:fe1a3b398daa27c4646087cb27a5cb33 rdf:reifies <<( doc:Factsmihai schema:email "lucian.oancea@student.tuiasi.ro" )>> ;
+	prov:wasDerivedFrom doc:f1a827663ac7 .
+doc:FactsiasiPostalAddress schema:addressCountry "Romania"@en .
+_:ed251b52bc2894504fad9d94947716c6 rdf:reifies <<( doc:FactsiasiPostalAddress schema:addressCountry "Romania"@en )>> ;
+	prov:wasDerivedFrom doc:f1a827663ac7 .
+doc:FactsgheorgheAsachiTechnicalUniversityIasi schema:location doc:FactsiasiRomania .
+_:f29acae4e094f07febe7f66e76126b47 rdf:reifies <<( doc:FactsgheorgheAsachiTechnicalUniversityIasi schema:location doc:FactsiasiRomania )>> ;
+	prov:wasDerivedFrom doc:f1a827663ac7 .
+doc:Factspaper_13 schema:about doc:FactslatheHeadstockGearbox .
+_:d663bd8eb474c58b951ff8fa3b0001e5 rdf:reifies <<( doc:Factspaper_13 schema:about doc:FactslatheHeadstockGearbox )>> ;
+	prov:wasDerivedFrom doc:f1a827663ac7 .
+doc:Factspaper_13 schema:keywords "signal pattern recognition"@en .
+_:eff10523f208f7851f45f857d75d3d3 rdf:reifies <<( doc:Factspaper_13 schema:keywords "signal pattern recognition"@en )>> ;
+	prov:wasDerivedFrom doc:f1a827663ac7 .
+doc:Factsmihai schema:name "Constantin-Gheorghe Mihai"@en .
+_:f051355532b1d085ec767774ba59f087 rdf:reifies <<( doc:Factsmihai schema:name "Constantin-Gheorghe Mihai"@en )>> ;
+	prov:wasDerivedFrom doc:f1a827663ac7 .
+doc:FactsasynchronousAcElectricMotor schema:name "Asynchronous AC electric motor"@en .
+_:eaccabf7377c81214bf5cb668af8f821 rdf:reifies <<( doc:FactsasynchronousAcElectricMotor schema:name "Asynchronous AC electric motor"@en )>> ;
+	prov:wasDerivedFrom doc:f1a827663ac7 .
+doc:FactsgearboxVibrationSignal schema:about doc:FactslatheHeadstockGearbox .
+_:c9410b8b3dc57ad546d71d18a96a90f4 rdf:reifies <<( doc:FactsgearboxVibrationSignal schema:about doc:FactslatheHeadstockGearbox )>> ;
+	prov:wasDerivedFrom doc:f1a827663ac7 .
+doc:Factsmihai schema:email "constantin-gheorghe.mihai@student.tuiasi.ro" .
+_:ce750e997d294919575b14cea9ac8129 rdf:reifies <<( doc:Factsmihai schema:email "constantin-gheorghe.mihai@student.tuiasi.ro" )>> ;
+	prov:wasDerivedFrom doc:f1a827663ac7 .
+doc:Factsmihai schema:name "Mohammed Khdair"@en .
+_:b604a1081dfedf8db5975836ee122538 rdf:reifies <<( doc:Factsmihai schema:name "Mohammed Khdair"@en )>> ;
+	prov:wasDerivedFrom doc:f1a827663ac7 .
+doc:FactsfacultyMachinesManufacturingIndustrialManagement schema:parentOrganization doc:FactsgheorgheAsachiTechnicalUniversityIasi .
+_:fdc71602fc5c4a9a4fc00d69399223fc rdf:reifies <<( doc:FactsfacultyMachinesManufacturingIndustrialManagement schema:parentOrganization doc:FactsgheorgheAsachiTechnicalUniversityIasi )>> ;
+	prov:wasDerivedFrom doc:f1a827663ac7 .
+doc:Factsmihai schema:name "Neculai-Eduard Bumbu"@en .
+_:a2d06c67c5d17e8f04af5aa7b156aea6 rdf:reifies <<( doc:Factsmihai schema:name "Neculai-Eduard Bumbu"@en )>> ;
+	prov:wasDerivedFrom doc:f1a827663ac7 .
+doc:FactsgearboxVibrationSignal a None:Data_variable .
+_:af6b0791f70076cf677f612a6b96a4da rdf:reifies <<( doc:FactsgearboxVibrationSignal rdf:type None:Data_variable )>> ;
+	prov:wasDerivedFrom doc:f1a827663ac7 .
+doc:FactsoutputSpindleAngularSpeedSignal schema:about doc:FactsoutputSpindle .
+_:e7aca1ef9713ff1ccd54214a2aa77836 rdf:reifies <<( doc:FactsoutputSpindleAngularSpeedSignal schema:about doc:FactsoutputSpindle )>> ;
+	prov:wasDerivedFrom doc:f1a827663ac7 .
+doc:Factspaper_13 schema:keywords "sensors"@en .
+_:d0366bbcf5df954395923b9763c4bb3c rdf:reifies <<( doc:Factspaper_13 schema:keywords "sensors"@en )>> ;
+	prov:wasDerivedFrom doc:f1a827663ac7 .
+doc:FactsactiveElectricalPowerSignal schema:about doc:FactsasynchronousAcElectricMotor .
+_:f02a9bdd97e7b1bf0b6110574a6982c8 rdf:reifies <<( doc:FactsactiveElectricalPowerSignal schema:about doc:FactsasynchronousAcElectricMotor )>> ;
+	prov:wasDerivedFrom doc:f1a827663ac7 .
+doc:FactssignalPatternRecognition schema:description "A method based on arithmetic averaging of signal samples selected at constant time regular intervals."@en .
+_:b41e56234df5c97f87cd466ef6aa73e9 rdf:reifies <<( doc:FactssignalPatternRecognition schema:description "A method based on arithmetic averaging of signal samples selected at constant time regular intervals."@en )>> ;
+	prov:wasDerivedFrom doc:f1a827663ac7 .
+doc:Factspaper_13 schema:keywords "gearbox"@en .
+_:a58db76807da2f1f284f51678d604491 rdf:reifies <<( doc:Factspaper_13 schema:keywords "gearbox"@en )>> ;
+	prov:wasDerivedFrom doc:f1a827663ac7 .
+doc:Factspaper_13 schema:mentions doc:FactssignalPatternRecognition .
+_:ff92a1d0f7412aa8b419f4d8c4693554 rdf:reifies <<( doc:Factspaper_13 schema:mentions doc:FactssignalPatternRecognition )>> ;
+	prov:wasDerivedFrom doc:f1a827663ac7 .
+doc:FactssignalPatternRecognition a schema:Thing .
+_:d443f76b3a32f115b99617ebdb42bf9c rdf:reifies <<( doc:FactssignalPatternRecognition rdf:type schema:Thing )>> ;
+	prov:wasDerivedFrom doc:f1a827663ac7 .
+doc:FactsgheorgheAsachiTechnicalUniversityIasi schema:name "Gheorghe Asachi Technical University of Iasi"@en .
+_:fc537b0ef4bbcaea5c2695396908dc71 rdf:reifies <<( doc:FactsgheorgheAsachiTechnicalUniversityIasi schema:name "Gheorghe Asachi Technical University of Iasi"@en )>> ;
+	prov:wasDerivedFrom doc:f1a827663ac7 .
+doc:Factspaper_13 a schema:ScholarlyArticle .
+_:ae5e5937f139d259d5a569e89b02f46a rdf:reifies <<( doc:Factspaper_13 rdf:type schema:ScholarlyArticle )>> ;
+	prov:wasDerivedFrom doc:f1a827663ac7 .
+doc:Factspaper_13 schema:keywords "condition monitoring"@en .
+_:dff12b91de148e0c186d1a3aac6dcdbe rdf:reifies <<( doc:Factspaper_13 schema:keywords "condition monitoring"@en )>> ;
+	prov:wasDerivedFrom doc:f1a827663ac7 .
+doc:Factsmihai schema:name "Mihaita Horodinca"@en .
+_:ba5571f6b46f80450e422ca12f9414c0 rdf:reifies <<( doc:Factsmihai schema:name "Mihaita Horodinca"@en )>> ;
+	prov:wasDerivedFrom doc:f1a827663ac7 .
+doc:FactsiasiRomania a schema:Place .
+_:e3d6573abe0da5e4c29b1e256f11d12e rdf:reifies <<( doc:FactsiasiRomania rdf:type schema:Place )>> ;
+	prov:wasDerivedFrom doc:f1a827663ac7 .
+doc:FactssignalPatternRecognition schema:about doc:FactslatheHeadstockGearbox .
+_:e2fc7f3c2becf5388ce41f794880990a rdf:reifies <<( doc:FactssignalPatternRecognition schema:about doc:FactslatheHeadstockGearbox )>> ;
+	prov:wasDerivedFrom doc:f1a827663ac7 .
+doc:FactslatheHeadstockGearbox schema:about doc:FactsasynchronousAcElectricMotor .
+_:aefc6f8d139b26ff6a6b07419649cda2 rdf:reifies <<( doc:FactslatheHeadstockGearbox schema:about doc:FactsasynchronousAcElectricMotor )>> ;
+	prov:wasDerivedFrom doc:f1a827663ac7 .
+doc:Factspaper_13 a None:Predictive_Maintenance_Article .
+_:a0d5faea412945a21095fc7e50db70bf rdf:reifies <<( doc:Factspaper_13 rdf:type None:Predictive_Maintenance_Article )>> ;
+	prov:wasDerivedFrom doc:f1a827663ac7 .
+doc:FactsarticleDoi_31 a None:Article_title .
+_:f6fec0f1c59a6b2500141496f888f0f9 rdf:reifies <<( doc:FactsarticleDoi_31 rdf:type None:Article_title )>> ;
+	prov:wasDerivedFrom doc:f1a827663ac7 .
+doc:FactslatheHeadstockGearbox a None:Maintainable_item .
+_:ff24f6bb849e4fcfcf793e6e2d733179 rdf:reifies <<( doc:FactslatheHeadstockGearbox rdf:type None:Maintainable_item )>> ;
+	prov:wasDerivedFrom doc:f1a827663ac7 .
+doc:FactsfacultyMachinesManufacturingIndustrialManagement a schema:Organization .
+_:aad35c5ca16053ca0e4324276d27e93f rdf:reifies <<( doc:FactsfacultyMachinesManufacturingIndustrialManagement rdf:type schema:Organization )>> ;
+	prov:wasDerivedFrom doc:f1a827663ac7 .
+doc:Factsmihai schema:email "dragos-florin.chitariu@academic.tuiasi.ro" .
+_:f98505ed960e78a0ae8c8df46d146573 rdf:reifies <<( doc:Factsmihai schema:email "dragos-florin.chitariu@academic.tuiasi.ro" )>> ;
+	prov:wasDerivedFrom doc:f1a827663ac7 .
+doc:Factsmihai schema:name "Dragos-Florin Chitariu"@en .
+_:c4d22dcee7765f99e35c3143fce36807 rdf:reifies <<( doc:Factsmihai schema:name "Dragos-Florin Chitariu"@en )>> ;
+	prov:wasDerivedFrom doc:f1a827663ac7 .
+doc:FactsasynchronousAcElectricMotor a None:Maintainable_item .
+_:c940fb9e57b0172dfed9dcffa2fb6d0b rdf:reifies <<( doc:FactsasynchronousAcElectricMotor rdf:type None:Maintainable_item )>> ;
+	prov:wasDerivedFrom doc:f1a827663ac7 .
+doc:FactsactiveElectricalPowerSignal a None:Data_variable .
+_:cce45850acbf7132756807690f623731 rdf:reifies <<( doc:FactsactiveElectricalPowerSignal rdf:type None:Data_variable )>> ;
+	prov:wasDerivedFrom doc:f1a827663ac7 .
+doc:Factspaper_13 schema:keywords "state signals"@en .
+_:f0f0865756d88f377def7715402338dd rdf:reifies <<( doc:Factspaper_13 schema:keywords "state signals"@en )>> ;
+	prov:wasDerivedFrom doc:f1a827663ac7 .
+doc:FactsfacultyMachinesManufacturingIndustrialManagement schema:name "Faculty of Machines Manufacturing and Industrial Management"@en .
+_:d86c7db278bfde0685306a7be96c2a2d rdf:reifies <<( doc:FactsfacultyMachinesManufacturingIndustrialManagement schema:name "Faculty of Machines Manufacturing and Industrial Management"@en )>> ;
+	prov:wasDerivedFrom doc:f1a827663ac7 .
+doc:9e4ba05f06d4 a prov:Entity , schema:text ;
+	prov:generatedAtTime "2026-07-25T06:15:43.39517Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+	schema:position 1 ;
+	schema:identifier "9e4ba05f06d4" .
+doc:FactswaveletTransform_8 a cco:Algorithm .
+_:eb67e53d72e3c1926a540c2e2141c63c rdf:reifies <<( doc:FactswaveletTransform_8 rdf:type cco:Algorithm )>> ;
+	prov:wasDerivedFrom doc:9e4ba05f06d4 .
+doc:Factsfft_4 a schema:Thing .
+_:ed501df92a3ca78c5f598ab2c0285127 rdf:reifies <<( doc:Factsfft_4 rdf:type schema:Thing )>> ;
+	prov:wasDerivedFrom doc:9e4ba05f06d4 .
+_:e3a6e943a2a61830615c381fc7429f98 prov:wasDerivedFrom doc:9e4ba05f06d4 .
+_:abb385dd12e86cb535931f3efaebab6f prov:wasDerivedFrom doc:9e4ba05f06d4 .
+doc:FactsarticleDoi_31 None:has_text_value "https://doi.org/10.3390/s25041119" .
+_:e304b15550bbef2dacc5f74b189b211e rdf:reifies <<( doc:FactsarticleDoi_31 None:has_text_value "https://doi.org/10.3390/s25041119" )>> ;
+	prov:wasDerivedFrom doc:9e4ba05f06d4 .
+_:a0d5faea412945a21095fc7e50db70bf prov:wasDerivedFrom doc:9e4ba05f06d4 .
+doc:Factspaper_13 schema:isPartOf doc:FactssensorsJournal_27 .
+_:f966fb8e8d6aced48e9a719f2b8f7480 rdf:reifies <<( doc:Factspaper_13 schema:isPartOf doc:FactssensorsJournal_27 )>> ;
+	prov:wasDerivedFrom doc:9e4ba05f06d4 .
+doc:Factsmdpi_61 schema:location "Basel, Switzerland" .
+_:e73d873e58cf1b13fe96d72d3f472252 rdf:reifies <<( doc:Factsmdpi_61 schema:location "Basel, Switzerland" )>> ;
+	prov:wasDerivedFrom doc:9e4ba05f06d4 .
+doc:Factsmihai schema:name "M. Khdair" .
+_:c7407527c67a16006df6815a9ee12bc0 rdf:reifies <<( doc:Factsmihai schema:name "M. Khdair" )>> ;
+	prov:wasDerivedFrom doc:9e4ba05f06d4 .
+_:be3aabb253af5c7c9790c60a65b74d3f prov:wasDerivedFrom doc:9e4ba05f06d4 .
+doc:Factsmihai schema:name "M. Horodinca" .
+_:ec79873b17acc26899098bd981aa41af rdf:reifies <<( doc:Factsmihai schema:name "M. Horodinca" )>> ;
+	prov:wasDerivedFrom doc:9e4ba05f06d4 .
+doc:Factspaper_13 schema:citation "Sensors 2025, 25, 1119" .
+_:f7993af8271874243cef27a9cd195ef8 rdf:reifies <<( doc:Factspaper_13 schema:citation "Sensors 2025, 25, 1119" )>> ;
+	prov:wasDerivedFrom doc:9e4ba05f06d4 .
+doc:FactssensorsJournal_27 schema:name "Sensors" .
+_:ea8682ae0f6a382a3ada2b29f3d165fe rdf:reifies <<( doc:FactssensorsJournal_27 schema:name "Sensors" )>> ;
+	prov:wasDerivedFrom doc:9e4ba05f06d4 .
+doc:Factsmihai schema:name "N.-E. Bumbu" .
+_:b30fcc1eb3fb7d059c31b057d6289dbf rdf:reifies <<( doc:Factsmihai schema:name "N.-E. Bumbu" )>> ;
+	prov:wasDerivedFrom doc:9e4ba05f06d4 .
+doc:FactssimonLaflamme schema:name "Simon Laflamme" .
+_:a2ba6efee66dae4f17438d1e6f72ebeb rdf:reifies <<( doc:FactssimonLaflamme schema:name "Simon Laflamme" )>> ;
+	prov:wasDerivedFrom doc:9e4ba05f06d4 .
+doc:Factspaper_13 schema:dateReceived "2025-01-11"^^<http://www.w3.org/2001/XMLSchema#date> .
+_:ea11abd01f828992765632e8042f2de3 rdf:reifies <<( doc:Factspaper_13 schema:dateReceived "2025-01-11"^^<http://www.w3.org/2001/XMLSchema#date> )>> ;
+	prov:wasDerivedFrom doc:9e4ba05f06d4 .
+doc:FactswaveletTransform_8 a schema:Thing .
+_:aa1baa57cfe6b742b13e14023363d6ec rdf:reifies <<( doc:FactswaveletTransform_8 rdf:type schema:Thing )>> ;
+	prov:wasDerivedFrom doc:9e4ba05f06d4 .
+doc:Factspaper_13 schema:mentions doc:Factsfft_4 .
+_:f0ec546dcb6ec742d3b669a0b7a3c627 rdf:reifies <<( doc:Factspaper_13 schema:mentions doc:Factsfft_4 )>> ;
+	prov:wasDerivedFrom doc:9e4ba05f06d4 .
+doc:FactssensorsJournal_27 a schema:Periodical .
+_:eaed274b62f56e3bc78f442d267da67 rdf:reifies <<( doc:FactssensorsJournal_27 rdf:type schema:Periodical )>> ;
+	prov:wasDerivedFrom doc:9e4ba05f06d4 .
+_:e035bebdf4f9819954f924f3041a13d8 prov:wasDerivedFrom doc:9e4ba05f06d4 .
+doc:Factspaper_13 schema:dateModified "2025-02-08"^^<http://www.w3.org/2001/XMLSchema#date> .
+_:a7bfb560820ec3c6a637e182a0f361dc rdf:reifies <<( doc:Factspaper_13 schema:dateModified "2025-02-08"^^<http://www.w3.org/2001/XMLSchema#date> )>> ;
+	prov:wasDerivedFrom doc:9e4ba05f06d4 .
+doc:Factspaper_13 schema:datePublished "2025-02-12"^^<http://www.w3.org/2001/XMLSchema#date> .
+_:c7dddaf756ef159710b70fc8563d57a6 rdf:reifies <<( doc:Factspaper_13 schema:datePublished "2025-02-12"^^<http://www.w3.org/2001/XMLSchema#date> )>> ;
+	prov:wasDerivedFrom doc:9e4ba05f06d4 .
+_:c145eacc04017ea223a5af3ef7b615a4 prov:wasDerivedFrom doc:9e4ba05f06d4 .
+doc:Factsmihai schema:name "A. Munteanu" .
+_:c4443de21a90ea6d575fa44dcf2b9225 rdf:reifies <<( doc:Factsmihai schema:name "A. Munteanu" )>> ;
+	prov:wasDerivedFrom doc:9e4ba05f06d4 .
+doc:Factspaper_13 schema:mentions doc:FactsrotaryMachines .
+_:a2e193ffa1e109e7bf1d1703bc3616da rdf:reifies <<( doc:Factspaper_13 schema:mentions doc:FactsrotaryMachines )>> ;
+	prov:wasDerivedFrom doc:9e4ba05f06d4 .
+_:ae5e5937f139d259d5a569e89b02f46a prov:wasDerivedFrom doc:9e4ba05f06d4 .
+doc:Factspaper_13 schema:dateAccepted "2025-02-11"^^<http://www.w3.org/2001/XMLSchema#date> .
+_:ffb97501b15c49e0520f6fb40c41e77d rdf:reifies <<( doc:Factspaper_13 schema:dateAccepted "2025-02-11"^^<http://www.w3.org/2001/XMLSchema#date> )>> ;
+	prov:wasDerivedFrom doc:9e4ba05f06d4 .
+doc:Factsmihai schema:name "C.G. Dumitras" .
+_:a438f878ca7b9c2da878313666f87b14 rdf:reifies <<( doc:Factsmihai schema:name "C.G. Dumitras" )>> ;
+	prov:wasDerivedFrom doc:9e4ba05f06d4 .
+doc:FactspublicationYear_102 None:has_interger_value 2025 .
+_:a1d0d9961b96c0a6dd0e76e68fd8c0d4 rdf:reifies <<( doc:FactspublicationYear_102 None:has_interger_value 2025 )>> ;
+	prov:wasDerivedFrom doc:9e4ba05f06d4 .
+doc:Factspaper_13 schema:editor doc:FactssimonLaflamme .
+_:e1e4f1f478e632affff98d51ec2649e3 rdf:reifies <<( doc:Factspaper_13 schema:editor doc:FactssimonLaflamme )>> ;
+	prov:wasDerivedFrom doc:9e4ba05f06d4 .
+doc:Factsmdpi_61 schema:name "MDPI" .
+_:b50a66c0e3b89febc9d37755c33a1ce4 rdf:reifies <<( doc:Factsmdpi_61 schema:name "MDPI" )>> ;
+	prov:wasDerivedFrom doc:9e4ba05f06d4 .
+doc:FactssimonLaflamme a schema:Person .
+_:ea9996e42672a0f85c80216565e6ed35 rdf:reifies <<( doc:FactssimonLaflamme rdf:type schema:Person )>> ;
+	prov:wasDerivedFrom doc:9e4ba05f06d4 .
+doc:Factspaper_13 schema:headline "A Signal Pattern Extraction Method Useful for Monitoring the Condition of Actuated Mechanical Systems Operating in Steady State Regimes" .
+_:e998bd04b93c4141f82ac1ec9db23786 rdf:reifies <<( doc:Factspaper_13 schema:headline "A Signal Pattern Extraction Method Useful for Monitoring the Condition of Actuated Mechanical Systems Operating in Steady State Regimes" )>> ;
+	prov:wasDerivedFrom doc:9e4ba05f06d4 .
+doc:Factsfft_4 rdfs:label "Fast Fourier Transform"@en .
+_:b7032884b091f43d713bb6d92d786d0 rdf:reifies <<( doc:Factsfft_4 rdfs:label "Fast Fourier Transform"@en )>> ;
+	prov:wasDerivedFrom doc:9e4ba05f06d4 .
+doc:FactspublicationYear_102 a None:Publication_year .
+_:ef39429595b69612db2f5733d8d4e366 rdf:reifies <<( doc:FactspublicationYear_102 rdf:type None:Publication_year )>> ;
+	prov:wasDerivedFrom doc:9e4ba05f06d4 .
+doc:Factspaper_13 schema:license <https://creativecommons.org/licenses/by/4.0/> .
+_:fb929f054b8e7166b6a8e9211906fba3 rdf:reifies <<( doc:Factspaper_13 schema:license <https://creativecommons.org/licenses/by/4.0/> )>> ;
+	prov:wasDerivedFrom doc:9e4ba05f06d4 .
+doc:Factspaper_13 None:has_publication_year doc:FactspublicationYear_102 .
+_:c95845cdf9296014ec4fec6fca3a0931 rdf:reifies <<( doc:Factspaper_13 None:has_publication_year doc:FactspublicationYear_102 )>> ;
+	prov:wasDerivedFrom doc:9e4ba05f06d4 .
+_:f6fec0f1c59a6b2500141496f888f0f9 prov:wasDerivedFrom doc:9e4ba05f06d4 .
+doc:FactsarticleDoi_31 a None:Article_identifier .
+_:e78d324f24da3f4bd8c6545f6b728edb rdf:reifies <<( doc:FactsarticleDoi_31 rdf:type None:Article_identifier )>> ;
+	prov:wasDerivedFrom doc:9e4ba05f06d4 .
+_:cac023ce7f6c71fe9fdbad4e9160db7c prov:wasDerivedFrom doc:9e4ba05f06d4 .
+doc:Factspaper_13 schema:mentions doc:FactswaveletTransform_8 .
+_:bb761ab054eb814550861ebbe182fed2 rdf:reifies <<( doc:Factspaper_13 schema:mentions doc:FactswaveletTransform_8 )>> ;
+	prov:wasDerivedFrom doc:9e4ba05f06d4 .
+doc:FactswaveletTransform_8 rdfs:label "wavelet transform"@en .
+_:af8cfe49d2ded88bf19b9ff2c57621b9 rdf:reifies <<( doc:FactswaveletTransform_8 rdfs:label "wavelet transform"@en )>> ;
+	prov:wasDerivedFrom doc:9e4ba05f06d4 .
+_:b2a8675969ab66945d4676403c07e8ad rdf:reifies <<( doc:FactsarticleDoi_31 None:has_text_value "A Signal Pattern Extraction Method Useful for Monitoring the Condition of Actuated Mechanical Systems Operating in Steady State Regimes" )>> ;
+	prov:wasDerivedFrom doc:9e4ba05f06d4 .
+doc:Factsfft_4 a cco:Algorithm .
+_:ad2eac2fe2b587f2bf493d8a0ab14a8b rdf:reifies <<( doc:Factsfft_4 rdf:type cco:Algorithm )>> ;
+	prov:wasDerivedFrom doc:9e4ba05f06d4 .
+doc:Factsmihai schema:name "C.-G. Mihai" .
+_:c29d881b4bc0d00a122157f59f2fe45f rdf:reifies <<( doc:Factsmihai schema:name "C.-G. Mihai" )>> ;
+	prov:wasDerivedFrom doc:9e4ba05f06d4 .
+doc:Factsmihai schema:name "L. Oancea" .
+_:a2d0b17e16798b56825b2e1af7d17f58 rdf:reifies <<( doc:Factsmihai schema:name "L. Oancea" )>> ;
+	prov:wasDerivedFrom doc:9e4ba05f06d4 .
+doc:Factspaper_13 schema:publisher doc:Factsmdpi_61 .
+_:c267f524328ae490c03921d0adaa2105 rdf:reifies <<( doc:Factspaper_13 schema:publisher doc:Factsmdpi_61 )>> ;
+	prov:wasDerivedFrom doc:9e4ba05f06d4 .
+doc:FactsrotaryMachines rdfs:label "actuated mechanical system"@en .
+_:f8ddefec39fbea33a78fe935014cbbe8 rdf:reifies <<( doc:FactsrotaryMachines rdfs:label "actuated mechanical system"@en )>> ;
+	prov:wasDerivedFrom doc:9e4ba05f06d4 .
+doc:Factsmihai schema:name "D.-F. Chitariu" .
+_:ce3cad3fd095c7acf0df6b36428f7946 rdf:reifies <<( doc:Factsmihai schema:name "D.-F. Chitariu" )>> ;
+	prov:wasDerivedFrom doc:9e4ba05f06d4 .
+doc:Factsmdpi_61 a schema:Organization .
+_:a729a03ba3554283c381078273d0a53 rdf:reifies <<( doc:Factsmdpi_61 rdf:type schema:Organization )>> ;
+	prov:wasDerivedFrom doc:9e4ba05f06d4 .
+doc:Factspaper_13 None:has_identifier doc:FactsarticleDoi_31 .
+_:fc191c210fa0adaddf6e17b2e3a2bfdd rdf:reifies <<( doc:Factspaper_13 None:has_identifier doc:FactsarticleDoi_31 )>> ;
+	prov:wasDerivedFrom doc:9e4ba05f06d4 .
+doc:6aa15d306c80 a prov:Entity , schema:text ;
+	prov:generatedAtTime "2026-07-25T06:15:43.398168Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+	schema:position 2 ;
+	schema:identifier "6aa15d306c80" .
+doc:Factspaper_13 schema:mentions doc:FactsaveragedCyclicPeriodogram .
+_:ad4c0a621e2659d1755cc4e5adff82e4 rdf:reifies <<( doc:Factspaper_13 schema:mentions doc:FactsaveragedCyclicPeriodogram )>> ;
+	prov:wasDerivedFrom doc:6aa15d306c80 .
+doc:Factsfft_4 schema:about doc:FactsstateSignals .
+_:f88265453cf39267dfb041c00c3e90ac rdf:reifies <<( doc:Factsfft_4 schema:about doc:FactsstateSignals )>> ;
+	prov:wasDerivedFrom doc:6aa15d306c80 .
+doc:FactsdeepLearning_21 schema:description "Deep learning based on neural networks is used for signal pattern recognition."@en .
+_:ebd57a124ffa7feeb5bc5b5243cf986a rdf:reifies <<( doc:FactsdeepLearning_21 schema:description "Deep learning based on neural networks is used for signal pattern recognition."@en )>> ;
+	prov:wasDerivedFrom doc:6aa15d306c80 .
+doc:FactsperiodT rdfs:label "period T of the fundamental sine wave"@en .
+_:d9c3abef469ba22f1712f2a8bf28ef2c rdf:reifies <<( doc:FactsperiodT rdfs:label "period T of the fundamental sine wave"@en )>> ;
+	prov:wasDerivedFrom doc:6aa15d306c80 .
+doc:FactsdeepLearning_21 rdfs:label "neural networks"@en .
+_:b0acb27ebe0bd77c1eed2985c37a5696 rdf:reifies <<( doc:FactsdeepLearning_21 rdfs:label "neural networks"@en )>> ;
+	prov:wasDerivedFrom doc:6aa15d306c80 .
+doc:FactsaveragedSinglePeriodRepresentation schema:description "A PVSC representation obtained by appropriate averaging."@en .
+_:fac21276f68aeb264fa251635379b65f rdf:reifies <<( doc:FactsaveragedSinglePeriodRepresentation schema:description "A PVSC representation obtained by appropriate averaging."@en )>> ;
+	prov:wasDerivedFrom doc:6aa15d306c80 .
+doc:FactsfaultDetectionFunction_67 a None:Fault_detection .
+_:db00774d330ed7b35722ddff1843e559 rdf:reifies <<( doc:FactsfaultDetectionFunction_67 rdf:type None:Fault_detection )>> ;
+	prov:wasDerivedFrom doc:6aa15d306c80 .
+doc:FactsdeepLearning_21 schema:about doc:FactsdeepLearning_21 .
+_:dc8abc6816143c1c2dee15a25e57aba2 rdf:reifies <<( doc:FactsdeepLearning_21 schema:about doc:FactsdeepLearning_21 )>> ;
+	prov:wasDerivedFrom doc:6aa15d306c80 .
+doc:FactspredictiveMaintenanceModule_4 a None:Predictive_maintenance_system_module .
+_:afaf967f92b902cf4d302ca40e1b731e rdf:reifies <<( doc:FactspredictiveMaintenanceModule_4 rdf:type None:Predictive_maintenance_system_module )>> ;
+	prov:wasDerivedFrom doc:6aa15d306c80 .
+doc:FactspredictiveMaintenanceModule_4 schema:about doc:FactsstateSignals .
+_:ed045ce1750978205f87845085082a9b rdf:reifies <<( doc:FactspredictiveMaintenanceModule_4 schema:about doc:FactsstateSignals )>> ;
+	prov:wasDerivedFrom doc:6aa15d306c80 .
+doc:FactspredictiveMaintenanceModule_4 None:has_predictive_maintenance_function doc:FactsfaultDetectionFunction_67 .
+_:bc9fb14fb4401ae9d742ea4541f17a30 rdf:reifies <<( doc:FactspredictiveMaintenanceModule_4 None:has_predictive_maintenance_function doc:FactsfaultDetectionFunction_67 )>> ;
+	prov:wasDerivedFrom doc:6aa15d306c80 .
+doc:FactstimeDomainPvscRepresentation schema:derivedFrom doc:Factspvsc .
+_:a4fd5654be8e9e30f817f06bafd7cbd1 rdf:reifies <<( doc:FactstimeDomainPvscRepresentation schema:derivedFrom doc:Factspvsc )>> ;
+	prov:wasDerivedFrom doc:6aa15d306c80 .
+doc:Factspaper_13 schema:mentions doc:FactscepstrumTechnique .
+_:c1ce653d6e354b2c69f50f56e0a6b89b rdf:reifies <<( doc:Factspaper_13 schema:mentions doc:FactscepstrumTechnique )>> ;
+	prov:wasDerivedFrom doc:6aa15d306c80 .
+doc:FactsperiodicPatternDiscoveryFunction a None:Sequential_pattern_discovery .
+_:a314b283d0aa34e6c784b60538258697 rdf:reifies <<( doc:FactsperiodicPatternDiscoveryFunction rdf:type None:Sequential_pattern_discovery )>> ;
+	prov:wasDerivedFrom doc:6aa15d306c80 .
+doc:FactstunableNarrowBandPassFilter schema:about doc:Factspvsc .
+_:dd484f614d429f94a34d5d71666d9bfd rdf:reifies <<( doc:FactstunableNarrowBandPassFilter schema:about doc:Factspvsc )>> ;
+	prov:wasDerivedFrom doc:6aa15d306c80 .
+doc:FactsperiodicPatternDiscoveryFunction schema:about doc:FactsstateSignals .
+_:a914212997be948a31e3abea086ea131 rdf:reifies <<( doc:FactsperiodicPatternDiscoveryFunction schema:about doc:FactsstateSignals )>> ;
+	prov:wasDerivedFrom doc:6aa15d306c80 .
+doc:FactsspectralCorrelationDensity schema:description "Examines correlations between frequency-related signal components."@en .
+_:e43b0a65be663411b71690b042fed6d9 rdf:reifies <<( doc:FactsspectralCorrelationDensity schema:description "Examines correlations between frequency-related signal components."@en )>> ;
+	prov:wasDerivedFrom doc:6aa15d306c80 .
+doc:Factspaper_13 schema:mentions doc:FactsspectralCorrelationDensity .
+_:d4b1c3ba7173a72c5bf40f29bedfc453 rdf:reifies <<( doc:Factspaper_13 schema:mentions doc:FactsspectralCorrelationDensity )>> ;
+	prov:wasDerivedFrom doc:6aa15d306c80 .
+doc:Factspvsc rdfs:label "particular PVSC"@en .
+_:f06ec1b36df29d2d04bd0a3ca2dfab4d rdf:reifies <<( doc:Factspvsc rdfs:label "particular PVSC"@en )>> ;
+	prov:wasDerivedFrom doc:6aa15d306c80 .
+doc:FactsaveragedSinglePeriodRepresentation rdfs:label "single-period averaged PVSC representation"@en .
+_:c34c41552dc9629055fee47de2fc930c rdf:reifies <<( doc:FactsaveragedSinglePeriodRepresentation rdfs:label "single-period averaged PVSC representation"@en )>> ;
+	prov:wasDerivedFrom doc:6aa15d306c80 .
+doc:FactsaveragedSinglePeriodRepresentation a schema:Thing .
+_:ad6d313a0aad9cf8b6c10eb32c49d88f rdf:reifies <<( doc:FactsaveragedSinglePeriodRepresentation rdf:type schema:Thing )>> ;
+	prov:wasDerivedFrom doc:6aa15d306c80 .
+doc:Factspaper_13 schema:mentions doc:FactscyclostationaryAnalysis .
+_:cc4aa5638feededa351a063a0c5ba00c rdf:reifies <<( doc:Factspaper_13 schema:mentions doc:FactscyclostationaryAnalysis )>> ;
+	prov:wasDerivedFrom doc:6aa15d306c80 .
+doc:Factsautocorrelation schema:about doc:FactsstateSignals .
+_:d3c7064c9249142dd5978a8f1b30c88b rdf:reifies <<( doc:Factsautocorrelation schema:about doc:FactsstateSignals )>> ;
+	prov:wasDerivedFrom doc:6aa15d306c80 .
+doc:FactscepstrumTechnique rdfs:label "Cepstrum technique"@en .
+_:a8088e7c8bb160c958871e9497323e9b rdf:reifies <<( doc:FactscepstrumTechnique rdfs:label "Cepstrum technique"@en )>> ;
+	prov:wasDerivedFrom doc:6aa15d306c80 .
+doc:FactsaveragedCyclicPeriodogram rdfs:label "averaged cyclic periodogram"@en .
+_:ccda82804aaa5265ba59b7b014cfe98d rdf:reifies <<( doc:FactsaveragedCyclicPeriodogram rdfs:label "averaged cyclic periodogram"@en )>> ;
+	prov:wasDerivedFrom doc:6aa15d306c80 .
+doc:FactsstateSignals rdfs:label "state signals"@en .
+_:d1e1658c635b6594ca3157865b95dad5 rdf:reifies <<( doc:FactsstateSignals rdfs:label "state signals"@en )>> ;
+	prov:wasDerivedFrom doc:6aa15d306c80 .
+doc:Factspaper_13 schema:mentions doc:Factsautocorrelation .
+_:ef20a6f18954b01df141dea6e693f07 rdf:reifies <<( doc:Factspaper_13 schema:mentions doc:Factsautocorrelation )>> ;
+	prov:wasDerivedFrom doc:6aa15d306c80 .
+doc:Factspaper_13 schema:mentions doc:FactsdeepLearning_21 .
+_:dc6130c1f05baeab381c0bd9b81fb197 rdf:reifies <<( doc:Factspaper_13 schema:mentions doc:FactsdeepLearning_21 )>> ;
+	prov:wasDerivedFrom doc:6aa15d306c80 .
+doc:FactsrotaryMachines rdfs:label "rotary machines"@en .
+_:f9b000f11ceee6f16849f5612e92467d rdf:reifies <<( doc:FactsrotaryMachines rdfs:label "rotary machines"@en )>> ;
+	prov:wasDerivedFrom doc:6aa15d306c80 .
+doc:FactstimeDomainPvscRepresentation rdfs:label "time-domain representation of the PVSC"@en .
+_:f9e54c67c4aa1bbd27040f5baf034025 rdf:reifies <<( doc:FactstimeDomainPvscRepresentation rdfs:label "time-domain representation of the PVSC"@en )>> ;
+	prov:wasDerivedFrom doc:6aa15d306c80 .
+doc:FactsfaultDetectionFunction_67 rdfs:label "fault detection"@en .
+_:f394ea3dd2f11563af55e5a0eecce664 rdf:reifies <<( doc:FactsfaultDetectionFunction_67 rdfs:label "fault detection"@en )>> ;
+	prov:wasDerivedFrom doc:6aa15d306c80 .
+doc:Factsautocorrelation rdfs:label "autocorrelation"@en .
+_:af748a0cbf71bc4efc99986538abd3cc rdf:reifies <<( doc:Factsautocorrelation rdfs:label "autocorrelation"@en )>> ;
+	prov:wasDerivedFrom doc:6aa15d306c80 .
+doc:FactsdeepLearning_21 a cco:Algorithm .
+_:a40e36d61bb6ab44ed998aee8aa5b37b rdf:reifies <<( doc:FactsdeepLearning_21 rdf:type cco:Algorithm )>> ;
+	prov:wasDerivedFrom doc:6aa15d306c80 .
+doc:Factspvsc schema:description "A periodic component of a state signal represented as a periodic signal."@en .
+_:d5735a1a1da53b7f676781ca69670de2 rdf:reifies <<( doc:Factspvsc schema:description "A periodic component of a state signal represented as a periodic signal."@en )>> ;
+	prov:wasDerivedFrom doc:6aa15d306c80 .
+doc:FactspredictiveMaintenanceModule_4 None:has_predictive_maintenance_function doc:FactsperiodicPatternDiscoveryFunction .
+_:b7006f4f6a990a6c81595d2c1d629e47 rdf:reifies <<( doc:FactspredictiveMaintenanceModule_4 None:has_predictive_maintenance_function doc:FactsperiodicPatternDiscoveryFunction )>> ;
+	prov:wasDerivedFrom doc:6aa15d306c80 .
+doc:FactstunableNarrowBandPassFilter schema:additionalProperty "The original phases at the origin of time are preserved."@en .
+_:ff966257b8848884d027e282a3f8f848 rdf:reifies <<( doc:FactstunableNarrowBandPassFilter schema:additionalProperty "The original phases at the origin of time are preserved."@en )>> ;
+	prov:wasDerivedFrom doc:6aa15d306c80 .
+doc:FactssignalPatternRecognition rdfs:label "signal pattern recognition"@en .
+_:e51d841c12ab5c27560934dd7da647c2 rdf:reifies <<( doc:FactssignalPatternRecognition rdfs:label "signal pattern recognition"@en )>> ;
+	prov:wasDerivedFrom doc:6aa15d306c80 .
+doc:FactsmechanicalFaults_2 schema:about doc:FactsrotaryMachines .
+_:b953cbfcd8e8239382cedcf9ef86cabb rdf:reifies <<( doc:FactsmechanicalFaults_2 schema:about doc:FactsrotaryMachines )>> ;
+	prov:wasDerivedFrom doc:6aa15d306c80 .
+_:f0ec546dcb6ec742d3b669a0b7a3c627 prov:wasDerivedFrom doc:6aa15d306c80 .
+doc:FactsaveragedCyclicPeriodogram schema:about doc:FactsstateSignals .
+_:ee8cc33479f1c784cf7e12b0fbc38a2f rdf:reifies <<( doc:FactsaveragedCyclicPeriodogram schema:about doc:FactsstateSignals )>> ;
+	prov:wasDerivedFrom doc:6aa15d306c80 .
+doc:FactssignalPatternRecognition a cco:Algorithm .
+_:f74ed8800c56d16b65ffea3bfc2acc08 rdf:reifies <<( doc:FactssignalPatternRecognition rdf:type cco:Algorithm )>> ;
+	prov:wasDerivedFrom doc:6aa15d306c80 .
+doc:FactsaveragedSinglePeriodRepresentation schema:about doc:Factspvsc .
+_:de78cdbd173c19e0735b151aeb1e14b rdf:reifies <<( doc:FactsaveragedSinglePeriodRepresentation schema:about doc:Factspvsc )>> ;
+	prov:wasDerivedFrom doc:6aa15d306c80 .
+doc:FactstunableNarrowBandPassFilter a cco:Algorithm .
+_:a1c5d82f62d328875b7a9809379faef3 rdf:reifies <<( doc:FactstunableNarrowBandPassFilter rdf:type cco:Algorithm )>> ;
+	prov:wasDerivedFrom doc:6aa15d306c80 .
+doc:Factsautocorrelation a cco:Algorithm .
+_:ffee5a825b4a18dca57ccdd691f8b5db rdf:reifies <<( doc:Factsautocorrelation rdf:type cco:Algorithm )>> ;
+	prov:wasDerivedFrom doc:6aa15d306c80 .
+doc:FactsperiodT schema:description "The period of the fundamental sine wave in the PVSC is known."@en .
+_:d74becd616cc59a7cd27ca61acfa1b70 rdf:reifies <<( doc:FactsperiodT schema:description "The period of the fundamental sine wave in the PVSC is known."@en )>> ;
+	prov:wasDerivedFrom doc:6aa15d306c80 .
+doc:FactscyclostationaryAnalysis a cco:Algorithm .
+_:d7d465e59a1462c7c2acd6cf281e69c5 rdf:reifies <<( doc:FactscyclostationaryAnalysis rdf:type cco:Algorithm )>> ;
+	prov:wasDerivedFrom doc:6aa15d306c80 .
+doc:FactstimeDomainPvscRepresentation schema:derivedFrom doc:FactstunableNarrowBandPassFilter .
+_:eec17d3a932b927c1920b3425219c799 rdf:reifies <<( doc:FactstimeDomainPvscRepresentation schema:derivedFrom doc:FactstunableNarrowBandPassFilter )>> ;
+	prov:wasDerivedFrom doc:6aa15d306c80 .
+doc:FactscepstrumTechnique a cco:Algorithm .
+_:ae68922de027817e6e1b4ad16ebfa5f7 rdf:reifies <<( doc:FactscepstrumTechnique rdf:type cco:Algorithm )>> ;
+	prov:wasDerivedFrom doc:6aa15d306c80 .
+doc:FactsspectralCorrelationDensity a cco:Algorithm .
+_:ce95d0811b932a545dae0c469e2c83b4 rdf:reifies <<( doc:FactsspectralCorrelationDensity rdf:type cco:Algorithm )>> ;
+	prov:wasDerivedFrom doc:6aa15d306c80 .
+doc:FactssignalPatternRecognition schema:about doc:FactsstateSignals .
+_:f592dd96126d088b55fa620badd00807 rdf:reifies <<( doc:FactssignalPatternRecognition schema:about doc:FactsstateSignals )>> ;
+	prov:wasDerivedFrom doc:6aa15d306c80 .
+doc:FactssignalPatternRecognition schema:subjectOf doc:FactsfaultDetectionFunction_67 .
+_:c1ea07474b01a5d2023ed810824fb418 rdf:reifies <<( doc:FactssignalPatternRecognition schema:subjectOf doc:FactsfaultDetectionFunction_67 )>> ;
+	prov:wasDerivedFrom doc:6aa15d306c80 .
+doc:FactsperiodT a schema:Quantity .
+_:ad0a2188d989d03c71a791be4526fab rdf:reifies <<( doc:FactsperiodT rdf:type schema:Quantity )>> ;
+	prov:wasDerivedFrom doc:6aa15d306c80 .
+doc:FactsmechanicalFaults_2 rdfs:label "mechanical faults"@en .
+_:c23312a9f672e4577583eb2a0d9bbffe rdf:reifies <<( doc:FactsmechanicalFaults_2 rdfs:label "mechanical faults"@en )>> ;
+	prov:wasDerivedFrom doc:6aa15d306c80 .
+doc:FactsdeepLearning_21 schema:about doc:FactssignalPatternRecognition .
+_:e33d5621e15a233169f8b9b395b0313b rdf:reifies <<( doc:FactsdeepLearning_21 schema:about doc:FactssignalPatternRecognition )>> ;
+	prov:wasDerivedFrom doc:6aa15d306c80 .
+doc:Factsfft_4 schema:relatedTo doc:FactstunableNarrowBandPassFilter .
+_:e391c41c491360faac35f9715918dfa2 rdf:reifies <<( doc:Factsfft_4 schema:relatedTo doc:FactstunableNarrowBandPassFilter )>> ;
+	prov:wasDerivedFrom doc:6aa15d306c80 .
+_:ff92a1d0f7412aa8b419f4d8c4693554 prov:wasDerivedFrom doc:6aa15d306c80 .
+_:e035bebdf4f9819954f924f3041a13d8 prov:wasDerivedFrom doc:6aa15d306c80 .
+doc:FactsdeepLearning_21 rdfs:label "machine learning"@en .
+_:e9a506c7e12f65beff355e8a943d423d rdf:reifies <<( doc:FactsdeepLearning_21 rdfs:label "machine learning"@en )>> ;
+	prov:wasDerivedFrom doc:6aa15d306c80 .
+doc:FactsdeepLearning_21 rdfs:label "deep learning"@en .
+_:a86f06fcafafc9c3b2e0faad047ce3cc rdf:reifies <<( doc:FactsdeepLearning_21 rdfs:label "deep learning"@en )>> ;
+	prov:wasDerivedFrom doc:6aa15d306c80 .
+doc:FactsstateSignals a schema:Thing .
+_:bd06224dbcfe84ad797ca574cc07093d rdf:reifies <<( doc:FactsstateSignals rdf:type schema:Thing )>> ;
+	prov:wasDerivedFrom doc:6aa15d306c80 .
+doc:Factspaper_13 rdfs:label "the paper"@en .
+_:df746a4b13c2542031d4ac1fe0736416 rdf:reifies <<( doc:Factspaper_13 rdfs:label "the paper"@en )>> ;
+	prov:wasDerivedFrom doc:6aa15d306c80 .
+doc:FactstunableNarrowBandPassFilter schema:additionalProperty "Pass frequencies are harmonically correlated at 1/T Hz, 2/T Hz, 3/T Hz, and so on up to the Nyquist limit."@en .
+_:e6aa18f1c3f160ab48f32392835bc609 rdf:reifies <<( doc:FactstunableNarrowBandPassFilter schema:additionalProperty "Pass frequencies are harmonically correlated at 1/T Hz, 2/T Hz, 3/T Hz, and so on up to the Nyquist limit."@en )>> ;
+	prov:wasDerivedFrom doc:6aa15d306c80 .
+_:a0d5faea412945a21095fc7e50db70bf prov:wasDerivedFrom doc:6aa15d306c80 .
+doc:FactscyclostationaryAnalysis schema:about doc:FactsstateSignals .
+_:b44caafc46257248e236237e78fbe7aa rdf:reifies <<( doc:FactscyclostationaryAnalysis schema:about doc:FactsstateSignals )>> ;
+	prov:wasDerivedFrom doc:6aa15d306c80 .
+doc:FactstimeDomainPvscRepresentation a schema:Thing .
+_:f6ad44c6625aa7922d8daf9c66149cab rdf:reifies <<( doc:FactstimeDomainPvscRepresentation rdf:type schema:Thing )>> ;
+	prov:wasDerivedFrom doc:6aa15d306c80 .
+doc:FactscepstrumTechnique schema:about doc:FactsstateSignals .
+_:be2c360091a9a0e3cfb7aa158102c109 rdf:reifies <<( doc:FactscepstrumTechnique schema:about doc:FactsstateSignals )>> ;
+	prov:wasDerivedFrom doc:6aa15d306c80 .
+doc:FactscepstrumTechnique schema:description "Applies the inverse Fourier transform to the logarithm of power-spectrum magnitudes."@en .
+_:b3eec7dbabff03798d2f1f528881f1e4 rdf:reifies <<( doc:FactscepstrumTechnique schema:description "Applies the inverse Fourier transform to the logarithm of power-spectrum magnitudes."@en )>> ;
+	prov:wasDerivedFrom doc:6aa15d306c80 .
+doc:FactsspectralCorrelationDensity schema:about doc:FactsstateSignals .
+_:ad83caf99c3aee230124b28f380ea88b rdf:reifies <<( doc:FactsspectralCorrelationDensity schema:about doc:FactsstateSignals )>> ;
+	prov:wasDerivedFrom doc:6aa15d306c80 .
+doc:FactsperiodicPatternDiscoveryFunction rdfs:label "periodic pattern discovery"@en .
+_:e4a789f76a53642bfbeaf851b0d8cb15 rdf:reifies <<( doc:FactsperiodicPatternDiscoveryFunction rdfs:label "periodic pattern discovery"@en )>> ;
+	prov:wasDerivedFrom doc:6aa15d306c80 .
+doc:FactssignalPatternRecognition schema:description "Automatically finds patterns in signals and is used to detect abnormal working conditions."@en .
+_:afc6778300e535f8a339505a979e55d1 rdf:reifies <<( doc:FactssignalPatternRecognition schema:description "Automatically finds patterns in signals and is used to detect abnormal working conditions."@en )>> ;
+	prov:wasDerivedFrom doc:6aa15d306c80 .
+_:ad2eac2fe2b587f2bf493d8a0ab14a8b prov:wasDerivedFrom doc:6aa15d306c80 .
+doc:Factsfft_4 rdfs:label "fast Fourier transform"@en .
+_:cc7d6a0a8289479c582724c86e31742e rdf:reifies <<( doc:Factsfft_4 rdfs:label "fast Fourier transform"@en )>> ;
+	prov:wasDerivedFrom doc:6aa15d306c80 .
+doc:FactspredictiveMaintenanceModule_4 schema:about doc:FactsrotaryMachines .
+_:d46fcc662abd5ee27b34779bfaf3277b rdf:reifies <<( doc:FactspredictiveMaintenanceModule_4 schema:about doc:FactsrotaryMachines )>> ;
+	prov:wasDerivedFrom doc:6aa15d306c80 .
+doc:Factspvsc a schema:Thing .
+_:baa87b65713335781a6f7b3818c13a35 rdf:reifies <<( doc:Factspvsc rdf:type schema:Thing )>> ;
+	prov:wasDerivedFrom doc:6aa15d306c80 .
+doc:FactstunableNarrowBandPassFilter rdfs:label "tunable numerical multiple narrow band pass filter"@en .
+_:a433ee0685db5f37cfcccae587e07cbe rdf:reifies <<( doc:FactstunableNarrowBandPassFilter rdfs:label "tunable numerical multiple narrow band pass filter"@en )>> ;
+	prov:wasDerivedFrom doc:6aa15d306c80 .
+doc:FactsfaultDetectionFunction_67 schema:about doc:FactsrotaryMachines .
+_:b0c5b7faa7b0f0d65a3cd71b7903db8c rdf:reifies <<( doc:FactsfaultDetectionFunction_67 schema:about doc:FactsrotaryMachines )>> ;
+	prov:wasDerivedFrom doc:6aa15d306c80 .
+doc:FactspredictiveMaintenanceModule_4 rdfs:label "signal monitoring module"@en .
+_:e84273b5d5dbfb1c06f739d3b6f29a51 rdf:reifies <<( doc:FactspredictiveMaintenanceModule_4 rdfs:label "signal monitoring module"@en )>> ;
+	prov:wasDerivedFrom doc:6aa15d306c80 .
+doc:FactscyclostationaryAnalysis rdfs:label "cyclostationary analysis"@en .
+_:d71387e33de55d723531e7db72c93bf2 rdf:reifies <<( doc:FactscyclostationaryAnalysis rdfs:label "cyclostationary analysis"@en )>> ;
+	prov:wasDerivedFrom doc:6aa15d306c80 .
+doc:FactsspectralCorrelationDensity rdfs:label "spectral correlation density"@en .
+_:a2cb6297c775eca2fcf974cb0b6f1bba rdf:reifies <<( doc:FactsspectralCorrelationDensity rdfs:label "spectral correlation density"@en )>> ;
+	prov:wasDerivedFrom doc:6aa15d306c80 .
+doc:FactsmechanicalFaults_2 a schema:Thing .
+_:f43851c54db7d53ab0ebed64090c643a rdf:reifies <<( doc:FactsmechanicalFaults_2 rdf:type schema:Thing )>> ;
+	prov:wasDerivedFrom doc:6aa15d306c80 .
+doc:FactstunableNarrowBandPassFilter schema:description "Filters the variable part of a numerically converted status signal."@en .
+_:b066d604ef3bf8089ff2f8ec3f374358 rdf:reifies <<( doc:FactstunableNarrowBandPassFilter schema:description "Filters the variable part of a numerically converted status signal."@en )>> ;
+	prov:wasDerivedFrom doc:6aa15d306c80 .
+doc:FactsaveragedCyclicPeriodogram a cco:Algorithm .
+_:cddd653b984839b45d95f45fbe4768e2 rdf:reifies <<( doc:FactsaveragedCyclicPeriodogram rdf:type cco:Algorithm )>> ;
+	prov:wasDerivedFrom doc:6aa15d306c80 .

@@ -1,0 +1,348 @@
+@prefix None: <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD/seed#> .
+@prefix cco: <http://www.ontologyrepository.com/CommonCoreOntologies/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doc: <https://growgraph.dev/doc/ff3a1cbf129d/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix obo: <http://purl.obolibrary.org/obo/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix cd: <https://growgraph.dev/facts> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix schema: <https://schema.org/> .
+@prefix schema1: <http://schema.org/> .
+doc:cff8b47b8302 a prov:Entity , schema:text ;
+	prov:generatedAtTime "2026-07-21T23:01:08.176807Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+	schema:position 0 ;
+	schema:identifier "cff8b47b8302" .
+doc:Factsmaintainable_item1 cd:has_degradation_data doc:Factsdata1_2 .
+_:f813ea2ac74c3d7a432d3fc2b3d42785 rdf:reifies <<( doc:Factsmaintainable_item1 cd:has_degradation_data doc:Factsdata1_2 )>> ;
+	prov:wasDerivedFrom doc:cff8b47b8302 .
+doc:FactschangePoint2 rdfs:label "structural change point" .
+_:acb0433b6b879ed1f72b3de3495fba5b rdf:reifies <<( doc:FactschangePoint2 rdfs:label "structural change point" )>> ;
+	prov:wasDerivedFrom doc:cff8b47b8302 .
+doc:Factsmodel1_13 rdfs:label "two-stage Inverse Gaussian process degradation model" .
+_:a9d2b8c8b8a58aaf9f720616c943e982 rdf:reifies <<( doc:Factsmodel1_13 rdfs:label "two-stage Inverse Gaussian process degradation model" )>> ;
+	prov:wasDerivedFrom doc:cff8b47b8302 .
+doc:Factsarticle1_58 dcterms:creator doc:Factsauthor1_35 .
+_:bfc8ae3da4ecafee26ac003d19506b6a rdf:reifies <<( doc:Factsarticle1_58 dcterms:creator doc:Factsauthor1_35 )>> ;
+	prov:wasDerivedFrom doc:cff8b47b8302 .
+doc:Factsmodel1_13 a None:Predictive_maintenance_model .
+_:c5b2b9fc6d0722a726166ff23fd7bd1f rdf:reifies <<( doc:Factsmodel1_13 rdf:type None:Predictive_maintenance_model )>> ;
+	prov:wasDerivedFrom doc:cff8b47b8302 .
+doc:Factsauthor1_35 a schema1:Person .
+_:f6d23be6a3014444f65840a28e83c1f6 rdf:reifies <<( doc:Factsauthor1_35 rdf:type schema1:Person )>> ;
+	prov:wasDerivedFrom doc:cff8b47b8302 .
+doc:Factsdoi1_19 a None:Article_identifier .
+_:ad4e4ba070d7f4ec3148185dccd0ef2f rdf:reifies <<( doc:Factsdoi1_19 rdf:type None:Article_identifier )>> ;
+	prov:wasDerivedFrom doc:cff8b47b8302 .
+doc:Factsdoi1_19 a None:Article_title .
+_:e03cffdf4b6cf4b245d1784e584fbe49 rdf:reifies <<( doc:Factsdoi1_19 rdf:type None:Article_title )>> ;
+	prov:wasDerivedFrom doc:cff8b47b8302 .
+doc:Factsmodel1_13 cd:uses_function doc:Factsfunc1_4 .
+_:d2b55c778b0e2481653f842ec18ef812 rdf:reifies <<( doc:Factsmodel1_13 cd:uses_function doc:Factsfunc1_4 )>> ;
+	prov:wasDerivedFrom doc:cff8b47b8302 .
+doc:Factstopic3_2 rdfs:label "fault risk identification" .
+_:b5b450c40a30e02d3abbda9d9c2bfeef rdf:reifies <<( doc:Factstopic3_2 rdfs:label "fault risk identification" )>> ;
+	prov:wasDerivedFrom doc:cff8b47b8302 .
+doc:Factsfunc1_4 rdfs:label "adjusted CUSUM-based change-point detection" .
+_:a3b7adcd74ba95cb2d061978e040b88 rdf:reifies <<( doc:Factsfunc1_4 rdfs:label "adjusted CUSUM-based change-point detection" )>> ;
+	prov:wasDerivedFrom doc:cff8b47b8302 .
+doc:Factsdata1_2 a schema1:Dataset .
+_:b75c3047e6b1501e3da1a21afd5652db rdf:reifies <<( doc:Factsdata1_2 rdf:type schema1:Dataset )>> ;
+	prov:wasDerivedFrom doc:cff8b47b8302 .
+doc:Factsmaintainable_item1 a None:Maintainable_item .
+_:f398bc8a5c086c041f2558303acedebc rdf:reifies <<( doc:Factsmaintainable_item1 rdf:type None:Maintainable_item )>> ;
+	prov:wasDerivedFrom doc:cff8b47b8302 .
+doc:Factsdata1_2 cd:about_item doc:Factsmaintainable_item1 .
+_:e029918f055e3f8a4387ef051b4adaef rdf:reifies <<( doc:Factsdata1_2 cd:about_item doc:Factsmaintainable_item1 )>> ;
+	prov:wasDerivedFrom doc:cff8b47b8302 .
+doc:Factsfunc1_4 a None:Deviation_detection .
+_:f7d01e3ba6fc0d60bb4c1631b05c9f32 rdf:reifies <<( doc:Factsfunc1_4 rdf:type None:Deviation_detection )>> ;
+	prov:wasDerivedFrom doc:cff8b47b8302 .
+doc:Factsfunc1_4 rdfs:label "change-point detection" .
+_:be8a9848448e3d8b6abe5449ecd8df24 rdf:reifies <<( doc:Factsfunc1_4 rdfs:label "change-point detection" )>> ;
+	prov:wasDerivedFrom doc:cff8b47b8302 .
+doc:Factsauthor1_35 schema1:name "Mei Li" .
+_:cca215dc669f74dddf4fc9dd7aef434e rdf:reifies <<( doc:Factsauthor1_35 schema1:name "Mei Li" )>> ;
+	prov:wasDerivedFrom doc:cff8b47b8302 .
+doc:Factspaper_claim1 a schema1:Statement .
+_:fb6f8429e521dbec687330f442ea6fc5 rdf:reifies <<( doc:Factspaper_claim1 rdf:type schema1:Statement )>> ;
+	prov:wasDerivedFrom doc:cff8b47b8302 .
+doc:Factsyear2025_12 None:has_interger_value 2025 .
+_:ff5e6c3137667fbfdf2dab3fb9eaaf1c rdf:reifies <<( doc:Factsyear2025_12 None:has_interger_value 2025 )>> ;
+	prov:wasDerivedFrom doc:cff8b47b8302 .
+doc:Factstopic1_3 rdfs:label "remaining useful life prediction" .
+_:b175a6335f426ba5067b5cd173973436 rdf:reifies <<( doc:Factstopic1_3 rdfs:label "remaining useful life prediction" )>> ;
+	prov:wasDerivedFrom doc:cff8b47b8302 .
+doc:Factsdata1_2 rdfs:label "real degradation data" .
+_:c849559dc4251ada7bef2106be213754 rdf:reifies <<( doc:Factsdata1_2 rdfs:label "real degradation data" )>> ;
+	prov:wasDerivedFrom doc:cff8b47b8302 .
+doc:Factstopic4_1 a None:Data_mining_technique_function .
+_:d553d9dbc76dc581b9c79f866c048866 rdf:reifies <<( doc:Factstopic4_1 rdf:type None:Data_mining_technique_function )>> ;
+	prov:wasDerivedFrom doc:cff8b47b8302 .
+doc:Factsarticle1_58 schema1:name "An Adjusted CUSUM-Based Method for Change-Point Detection in Two-Phase Inverse Gaussian Degradation Processes" .
+_:e2dbe95904cc2620c53359e676d3f2bc rdf:reifies <<( doc:Factsarticle1_58 schema1:name "An Adjusted CUSUM-Based Method for Change-Point Detection in Two-Phase Inverse Gaussian Degradation Processes" )>> ;
+	prov:wasDerivedFrom doc:cff8b47b8302 .
+doc:Factsarticle1_58 None:has_title doc:Factsdoi1_19 .
+_:a9921ee69f5bd723ab721881ce1285a8 rdf:reifies <<( doc:Factsarticle1_58 None:has_title doc:Factsdoi1_19 )>> ;
+	prov:wasDerivedFrom doc:cff8b47b8302 .
+doc:Factsarticle1_58 None:has_publication_year doc:Factsyear2025_12 .
+_:d60bf6e583897368a5d00c058210c03b rdf:reifies <<( doc:Factsarticle1_58 None:has_publication_year doc:Factsyear2025_12 )>> ;
+	prov:wasDerivedFrom doc:cff8b47b8302 .
+doc:Factsdoi1_19 None:has_text_value "10.3390/math13193167" .
+_:efa456ef1b517b71c60848e574f535b8 rdf:reifies <<( doc:Factsdoi1_19 None:has_text_value "10.3390/math13193167" )>> ;
+	prov:wasDerivedFrom doc:cff8b47b8302 .
+doc:Factsmaintainable_item1 rdfs:label "hydraulic piston pump" .
+_:b35fa9d0a1aae747b107d37bbbd6bcd rdf:reifies <<( doc:Factsmaintainable_item1 rdfs:label "hydraulic piston pump" )>> ;
+	prov:wasDerivedFrom doc:cff8b47b8302 .
+doc:Factsstage2 rdfs:label "second degradation stage" .
+_:b4757ab769e3c8deac8d0e2e18d1d1c2 rdf:reifies <<( doc:Factsstage2 rdfs:label "second degradation stage" )>> ;
+	prov:wasDerivedFrom doc:cff8b47b8302 .
+doc:Factsstage2 a schema1:Event .
+_:ec5b8427af45788e1d28569beac0f513 rdf:reifies <<( doc:Factsstage2 rdf:type schema1:Event )>> ;
+	prov:wasDerivedFrom doc:cff8b47b8302 .
+doc:FactschangePoint2 a schema1:Event .
+_:bf85d7833fffbdd1ec0617035b2ffb7c rdf:reifies <<( doc:FactschangePoint2 rdf:type schema1:Event )>> ;
+	prov:wasDerivedFrom doc:cff8b47b8302 .
+doc:Factsauthor1_35 schema1:name "Qian Li" .
+_:fb65fae804e30c25f271122e35c764f3 rdf:reifies <<( doc:Factsauthor1_35 schema1:name "Qian Li" )>> ;
+	prov:wasDerivedFrom doc:cff8b47b8302 .
+doc:Factstopic1_3 a None:Future_state_forecast .
+_:f54b60d52de6a1438101ee67e49d18ab rdf:reifies <<( doc:Factstopic1_3 rdf:type None:Future_state_forecast )>> ;
+	prov:wasDerivedFrom doc:cff8b47b8302 .
+doc:Factstopic3_2 a None:Fault_detection .
+_:d4ec99eb801380d12a15110966ff2948 rdf:reifies <<( doc:Factstopic3_2 rdf:type None:Fault_detection )>> ;
+	prov:wasDerivedFrom doc:cff8b47b8302 .
+doc:Factsarticle1_58 a None:Predictive_Maintenance_Article .
+_:dfb6c18c18ee7ddf443b8b607d9769a9 rdf:reifies <<( doc:Factsarticle1_58 rdf:type None:Predictive_Maintenance_Article )>> ;
+	prov:wasDerivedFrom doc:cff8b47b8302 .
+doc:Factsyear2025_12 a None:Publication_year .
+_:e571ea6032f9df7c946833ca4a6873e9 rdf:reifies <<( doc:Factsyear2025_12 rdf:type None:Publication_year )>> ;
+	prov:wasDerivedFrom doc:cff8b47b8302 .
+doc:Factsdoi1_19 None:has_text_value "An Adjusted CUSUM-Based Method for Change-Point Detection in Two-Phase Inverse Gaussian Degradation Processes" .
+_:a8f440e0eceb65b1ebfbad4b0c49d19a rdf:reifies <<( doc:Factsdoi1_19 None:has_text_value "An Adjusted CUSUM-Based Method for Change-Point Detection in Two-Phase Inverse Gaussian Degradation Processes" )>> ;
+	prov:wasDerivedFrom doc:cff8b47b8302 .
+doc:Factsauthor1_35 schema1:name "Tian Fu" .
+_:a89755f6683d945841186220d218a167 rdf:reifies <<( doc:Factsauthor1_35 schema1:name "Tian Fu" )>> ;
+	prov:wasDerivedFrom doc:cff8b47b8302 .
+doc:Factspaper_claim1 schema1:text "The proposed method identified two structural change points in the hydraulic piston pump degradation process." .
+_:f442b87da9c5e55172da8aacadc7ac00 rdf:reifies <<( doc:Factspaper_claim1 schema1:text "The proposed method identified two structural change points in the hydraulic piston pump degradation process." )>> ;
+	prov:wasDerivedFrom doc:cff8b47b8302 .
+doc:Factsstage2 rdfs:label "first degradation stage" .
+_:fdb2e8bf084596c41b8c731f2dfea9b4 rdf:reifies <<( doc:Factsstage2 rdfs:label "first degradation stage" )>> ;
+	prov:wasDerivedFrom doc:cff8b47b8302 .
+doc:Factstopic4_1 rdfs:label "CUSUM statistic" .
+_:d223d3b8e3e8192d58bbf82a6df8736 rdf:reifies <<( doc:Factstopic4_1 rdfs:label "CUSUM statistic" )>> ;
+	prov:wasDerivedFrom doc:cff8b47b8302 .
+doc:Factsarticle1_58 None:has_identifier doc:Factsdoi1_19 .
+_:de97edf0d9cf5321479218863096bb2b rdf:reifies <<( doc:Factsarticle1_58 None:has_identifier doc:Factsdoi1_19 )>> ;
+	prov:wasDerivedFrom doc:cff8b47b8302 .
+doc:0bd391e4124e a prov:Entity , schema:text ;
+	prov:generatedAtTime "2026-07-21T23:01:08.180505Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+	schema:position 1 ;
+	schema:identifier "0bd391e4124e" .
+doc:Factsdata1_2 a None:Data_variable .
+_:ad6ef09ce28d34cd7c24fb5be712ddc2 rdf:reifies <<( doc:Factsdata1_2 rdf:type None:Data_variable )>> ;
+	prov:wasDerivedFrom doc:0bd391e4124e .
+doc:FactsDevice a cco:Artifact .
+_:c2e9c912076ce83cd3b40937b2cd96dc rdf:reifies <<( doc:FactsDevice rdf:type cco:Artifact )>> ;
+	prov:wasDerivedFrom doc:0bd391e4124e .
+_:c5b2b9fc6d0722a726166ff23fd7bd1f prov:wasDerivedFrom doc:0bd391e4124e .
+doc:Factsdata1_2 cd:has_design_detail doc:FactschangePoint .
+_:fa6be87186451f29dc52536b29f68d68 rdf:reifies <<( doc:Factsdata1_2 cd:has_design_detail doc:FactschangePoint )>> ;
+	prov:wasDerivedFrom doc:0bd391e4124e .
+doc:FactsinverseGaussianDistribution rdfs:label "Inverse Gaussian distribution" .
+_:e8ad8abdb2d65d8f44a40f10e0b3eda1 rdf:reifies <<( doc:FactsinverseGaussianDistribution rdfs:label "Inverse Gaussian distribution" )>> ;
+	prov:wasDerivedFrom doc:0bd391e4124e .
+doc:FactsinverseGaussianDistribution a owl:Class .
+_:dbfb25f8f3e07753c45d0ba927077231 rdf:reifies <<( doc:FactsinverseGaussianDistribution rdf:type owl:Class )>> ;
+	prov:wasDerivedFrom doc:0bd391e4124e .
+doc:FactschangePoint cco:designates doc:FactsDevice .
+_:ab97d4c5802ff5a30adc890fbe964d39 rdf:reifies <<( doc:FactschangePoint cco:designates doc:FactsDevice )>> ;
+	prov:wasDerivedFrom doc:0bd391e4124e .
+doc:FactsinverseGaussianDistribution a cco:Algorithm .
+_:f3cc4f495ab9373ae8739fccfe6c11b3 rdf:reifies <<( doc:FactsinverseGaussianDistribution rdf:type cco:Algorithm )>> ;
+	prov:wasDerivedFrom doc:0bd391e4124e .
+doc:FactsmeanParameter a None:Model_type .
+_:b0e2e58f826bbd9792c28b78eb0008c2 rdf:reifies <<( doc:FactsmeanParameter rdf:type None:Model_type )>> ;
+	prov:wasDerivedFrom doc:0bd391e4124e .
+doc:FactsmeanParameter rdfs:label "scale parameter" .
+_:e22a8e7b2bf9f5d0af7f013b36854348 rdf:reifies <<( doc:FactsmeanParameter rdfs:label "scale parameter" )>> ;
+	prov:wasDerivedFrom doc:0bd391e4124e .
+doc:Factsdata1_2 cd:has_design_detail doc:FactsmeanParameter .
+_:bc9b4a11ef4091eb40de90e72ddb712a rdf:reifies <<( doc:Factsdata1_2 cd:has_design_detail doc:FactsmeanParameter )>> ;
+	prov:wasDerivedFrom doc:0bd391e4124e .
+doc:FactschangePoint a None:Design_detail .
+_:da3fc4301f28d0725ae215a12e1b2957 rdf:reifies <<( doc:FactschangePoint rdf:type None:Design_detail )>> ;
+	prov:wasDerivedFrom doc:0bd391e4124e .
+doc:Factsmodel1_13 a cco:DirectiveInformationContentEntity .
+_:aa9b35934e50a3fe5fdebdd0ef9c72c3 rdf:reifies <<( doc:Factsmodel1_13 rdf:type cco:DirectiveInformationContentEntity )>> ;
+	prov:wasDerivedFrom doc:0bd391e4124e .
+doc:Factsmodel1_13 rdfs:label "Two-Stage Inverse Gaussian Degradation Model" .
+_:e441cb5c13e60d2dd3b3198bd9a03e6f rdf:reifies <<( doc:Factsmodel1_13 rdfs:label "Two-Stage Inverse Gaussian Degradation Model" )>> ;
+	prov:wasDerivedFrom doc:0bd391e4124e .
+doc:FactsmeanParameter rdfs:label "mean parameter" .
+_:ea5cd483977ed5b52140f1382d080a73 rdf:reifies <<( doc:FactsmeanParameter rdfs:label "mean parameter" )>> ;
+	prov:wasDerivedFrom doc:0bd391e4124e .
+doc:FactsDevice a obo:BFO_0000030 .
+_:ce37e8be44358beebe675c30a14c6227 rdf:reifies <<( doc:FactsDevice rdf:type obo:BFO_0000030 )>> ;
+	prov:wasDerivedFrom doc:0bd391e4124e .
+doc:Factsdata1_2 rdfs:label "degradation process" .
+_:dfdae822e456cf390a624b5f6af452ba rdf:reifies <<( doc:Factsdata1_2 rdfs:label "degradation process" )>> ;
+	prov:wasDerivedFrom doc:0bd391e4124e .
+doc:FactsDevice rdfs:label "device" .
+_:bcd6365d5b596c38f78d593388e62448 rdf:reifies <<( doc:FactsDevice rdfs:label "device" )>> ;
+	prov:wasDerivedFrom doc:0bd391e4124e .
+doc:FactstimeVariable rdfs:label "time" .
+_:e1e04aca58740afb856188f413405900 rdf:reifies <<( doc:FactstimeVariable rdfs:label "time" )>> ;
+	prov:wasDerivedFrom doc:0bd391e4124e .
+doc:FactstimeVariable a None:Data_variable .
+_:ee76f5d64ea1fd0597b5cd6179167240 rdf:reifies <<( doc:FactstimeVariable rdf:type None:Data_variable )>> ;
+	prov:wasDerivedFrom doc:0bd391e4124e .
+doc:FactsDevice a None:Maintainable_item .
+_:ae7473f52ca38dca1815fa24d1182e42 rdf:reifies <<( doc:FactsDevice rdf:type None:Maintainable_item )>> ;
+	prov:wasDerivedFrom doc:0bd391e4124e .
+doc:FactsinverseGaussianDistribution a cco:DirectiveInformationContentEntity .
+_:c43b60f3b7a18aa38787a70b9c08ec86 rdf:reifies <<( doc:FactsinverseGaussianDistribution rdf:type cco:DirectiveInformationContentEntity )>> ;
+	prov:wasDerivedFrom doc:0bd391e4124e .
+doc:FactschangePoint rdfs:label "change point" .
+_:b5629d1bcf2deb55bf75239e39ff4487 rdf:reifies <<( doc:FactschangePoint rdfs:label "change point" )>> ;
+	prov:wasDerivedFrom doc:0bd391e4124e .
+doc:Factsmodel1_13 cco:describes doc:Factsdata1_2 .
+_:da9f7ba789014f6834b78e1a4796bd2b rdf:reifies <<( doc:Factsmodel1_13 cco:describes doc:Factsdata1_2 )>> ;
+	prov:wasDerivedFrom doc:0bd391e4124e .
+doc:Factsmodel1_13 a cco:Algorithm .
+_:c2767d01b6e5fb474270fd1a1d8ff999 rdf:reifies <<( doc:Factsmodel1_13 rdf:type cco:Algorithm )>> ;
+	prov:wasDerivedFrom doc:0bd391e4124e .
+doc:0865894c470a a prov:Entity , schema:text ;
+	prov:generatedAtTime "2026-07-21T23:01:08.181513Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+	schema:position 2 ;
+	schema:identifier "0865894c470a" .
+doc:FactsDevice obo:RO_0000085 doc:Factsfunc1_4 .
+_:f445a600456649b489fb57fc3a2b0053 rdf:reifies <<( doc:FactsDevice obo:RO_0000085 doc:Factsfunc1_4 )>> ;
+	prov:wasDerivedFrom doc:0865894c470a .
+doc:Factsdata1_2 cco:describes doc:FactsDevice .
+_:dc04b5f5ea8b458158dddde1b72d76d2 rdf:reifies <<( doc:Factsdata1_2 cco:describes doc:FactsDevice )>> ;
+	prov:wasDerivedFrom doc:0865894c470a .
+doc:FactsMuJ rdfs:label "Î¸ j = ( Âµ j , Î· j )"@en .
+_:c9bead92bd85ac07fad000790a5154e4 rdf:reifies <<( doc:FactsMuJ rdfs:label "Î¸ j = ( Âµ j , Î· j )"@en )>> ;
+	prov:wasDerivedFrom doc:0865894c470a .
+doc:Factsnull_hypothesis_H0j rdfs:label "null hypothesis H 0 j"@en .
+_:a561be79dcb1eadfe3a59ad8041f67f6 rdf:reifies <<( doc:Factsnull_hypothesis_H0j rdfs:label "null hypothesis H 0 j"@en )>> ;
+	prov:wasDerivedFrom doc:0865894c470a .
+doc:Factsdata1_2 a cco:InformationContentEntity .
+_:be7d17867cbaac0c894bfd2d759ac756 rdf:reifies <<( doc:Factsdata1_2 rdf:type cco:InformationContentEntity )>> ;
+	prov:wasDerivedFrom doc:0865894c470a .
+doc:Factsdata1_2 obo:BFO_0000051 doc:Factsdata1_2 .
+_:d4bd50d547ca9f72060bc6bb8e654a89 rdf:reifies <<( doc:Factsdata1_2 obo:BFO_0000051 doc:Factsdata1_2 )>> ;
+	prov:wasDerivedFrom doc:0865894c470a .
+doc:FactsLikelihoodFunction obo:BFO_0000051 doc:FactsInverseGaussianProcess .
+_:b2dea4b1d522a9e520cb77ddec0f5eae rdf:reifies <<( doc:FactsLikelihoodFunction obo:BFO_0000051 doc:FactsInverseGaussianProcess )>> ;
+	prov:wasDerivedFrom doc:0865894c470a .
+doc:FactsMuJ a cco:DesignativeInformationContentEntity .
+_:c366fad9127dbda73a0bdf81b8056a9 rdf:reifies <<( doc:FactsMuJ rdf:type cco:DesignativeInformationContentEntity )>> ;
+	prov:wasDerivedFrom doc:0865894c470a .
+doc:FactsMaximumLikelihoodEstimation obo:RO_0000085 doc:FactsLikelihoodFunction .
+_:ec1d444c8acfb6b8a1f180ffd65f248 rdf:reifies <<( doc:FactsMaximumLikelihoodEstimation obo:RO_0000085 doc:FactsLikelihoodFunction )>> ;
+	prov:wasDerivedFrom doc:0865894c470a .
+doc:FactsMuJ cco:designates doc:FactsMuJ .
+_:d6b6b913776f12e0a5da34a39bae50f1 rdf:reifies <<( doc:FactsMuJ cco:designates doc:FactsMuJ )>> ;
+	prov:wasDerivedFrom doc:0865894c470a .
+doc:FactsHypothesisTest rdfs:label "equivalent hypothesis test"@en .
+_:ad68729a5103df269376e77175381f76 rdf:reifies <<( doc:FactsHypothesisTest rdfs:label "equivalent hypothesis test"@en )>> ;
+	prov:wasDerivedFrom doc:0865894c470a .
+doc:FactsHypothesisTest obo:BFO_0000051 doc:FactsMuJ .
+_:e6373ef5dd42ed8bbc0c11300e280ded rdf:reifies <<( doc:FactsHypothesisTest obo:BFO_0000051 doc:FactsMuJ )>> ;
+	prov:wasDerivedFrom doc:0865894c470a .
+doc:FactsMuJ a cco:DescriptiveInformationContentEntity .
+_:e18bb058b06014d289de322caa00ee54 rdf:reifies <<( doc:FactsMuJ rdf:type cco:DescriptiveInformationContentEntity )>> ;
+	prov:wasDerivedFrom doc:0865894c470a .
+_:ae7473f52ca38dca1815fa24d1182e42 prov:wasDerivedFrom doc:0865894c470a .
+doc:Factsdata1_2 rdfs:label "degradation process"@en .
+_:e10d1c1d15fc9bd648a8258116f42ab0 rdf:reifies <<( doc:Factsdata1_2 rdfs:label "degradation process"@en )>> ;
+	prov:wasDerivedFrom doc:0865894c470a .
+doc:FactsMuJ rdfs:label "Âµ j"@en .
+_:d2890c0e7e67e3c2941359c046fec04d rdf:reifies <<( doc:FactsMuJ rdfs:label "Âµ j"@en )>> ;
+	prov:wasDerivedFrom doc:0865894c470a .
+doc:FactsHypothesisTest cco:describes doc:Factsnull_hypothesis_H0j .
+_:ba80e2dbd209873870f1e4ba6a8e9ffe rdf:reifies <<( doc:FactsHypothesisTest cco:describes doc:Factsnull_hypothesis_H0j )>> ;
+	prov:wasDerivedFrom doc:0865894c470a .
+doc:FactsLikelihoodFunction obo:BFO_0000051 doc:FactsMuJ .
+_:f9faa6969346e6087e6451aa39bdc3f7 rdf:reifies <<( doc:FactsLikelihoodFunction obo:BFO_0000051 doc:FactsMuJ )>> ;
+	prov:wasDerivedFrom doc:0865894c470a .
+doc:Factsnull_hypothesis_H0j obo:BFO_0000051 doc:FactsMuJ .
+_:d212c174b160fe13e20398b82cc56629 rdf:reifies <<( doc:Factsnull_hypothesis_H0j obo:BFO_0000051 doc:FactsMuJ )>> ;
+	prov:wasDerivedFrom doc:0865894c470a .
+doc:FactsInverseGaussianProcess a cco:InformationContentEntity .
+_:a88d0dc0e242abbb837a04e3777ac8e8 rdf:reifies <<( doc:FactsInverseGaussianProcess rdf:type cco:InformationContentEntity )>> ;
+	prov:wasDerivedFrom doc:0865894c470a .
+doc:Factsfunc1_4 rdfs:label "Change-Point Detection Method"@en .
+_:dd151c04aa6f932ef663090a96786222 rdf:reifies <<( doc:Factsfunc1_4 rdfs:label "Change-Point Detection Method"@en )>> ;
+	prov:wasDerivedFrom doc:0865894c470a .
+doc:FactsDevice rdfs:label "device"@en .
+_:e25a2b9600742031d3d6e090f656a6f2 rdf:reifies <<( doc:FactsDevice rdfs:label "device"@en )>> ;
+	prov:wasDerivedFrom doc:0865894c470a .
+doc:Factsdata1_2 rdfs:label "degradation increment"@en .
+_:d6b52ea7ff62a9c3121bcfb3a8bae7ae rdf:reifies <<( doc:Factsdata1_2 rdfs:label "degradation increment"@en )>> ;
+	prov:wasDerivedFrom doc:0865894c470a .
+doc:FactsMaximumLikelihoodEstimation a cco:Algorithm .
+_:a7c865233b8e53a9c1f75a317ab37032 rdf:reifies <<( doc:FactsMaximumLikelihoodEstimation rdf:type cco:Algorithm )>> ;
+	prov:wasDerivedFrom doc:0865894c470a .
+doc:FactsTimeIncrement rdfs:label "time increment"@en .
+_:da129503a76b5c53c8798894d263fe21 rdf:reifies <<( doc:FactsTimeIncrement rdfs:label "time increment"@en )>> ;
+	prov:wasDerivedFrom doc:0865894c470a .
+doc:FactsHypothesisTest obo:BFO_0000051 doc:Factsdata1_2 .
+_:bd3365db8449093fcf7d366f329571b5 rdf:reifies <<( doc:FactsHypothesisTest obo:BFO_0000051 doc:Factsdata1_2 )>> ;
+	prov:wasDerivedFrom doc:0865894c470a .
+doc:FactsTimeIncrement a cco:InformationContentEntity .
+_:c373cefcff72c5667c703d65688fdcdd rdf:reifies <<( doc:FactsTimeIncrement rdf:type cco:InformationContentEntity )>> ;
+	prov:wasDerivedFrom doc:0865894c470a .
+doc:Factsfunc1_4 obo:RO_0000085 doc:FactsMaximumLikelihoodEstimation .
+_:f3be349624581f4ea4f94231676b953f rdf:reifies <<( doc:Factsfunc1_4 obo:RO_0000085 doc:FactsMaximumLikelihoodEstimation )>> ;
+	prov:wasDerivedFrom doc:0865894c470a .
+doc:FactsHypothesisTest a cco:Algorithm .
+_:f11f74f827556bd47d4e68eddb6fc1c7 rdf:reifies <<( doc:FactsHypothesisTest rdf:type cco:Algorithm )>> ;
+	prov:wasDerivedFrom doc:0865894c470a .
+doc:FactsLikelihoodFunction a cco:InformationContentEntity .
+_:bdff23fa42b368bb0ba9718e009352c8 rdf:reifies <<( doc:FactsLikelihoodFunction rdf:type cco:InformationContentEntity )>> ;
+	prov:wasDerivedFrom doc:0865894c470a .
+doc:FactsLikelihoodFunction rdfs:label "log-likelihood function"@en .
+_:c614b184720746d98205a671f29274a5 rdf:reifies <<( doc:FactsLikelihoodFunction rdfs:label "log-likelihood function"@en )>> ;
+	prov:wasDerivedFrom doc:0865894c470a .
+doc:FactsMaximumLikelihoodEstimation obo:RO_0000085 doc:FactsHypothesisTest .
+_:c852fd202aed240ee00da45741537564 rdf:reifies <<( doc:FactsMaximumLikelihoodEstimation obo:RO_0000085 doc:FactsHypothesisTest )>> ;
+	prov:wasDerivedFrom doc:0865894c470a .
+doc:Factsdata1_2 obo:BFO_0000051 doc:FactsTimeIncrement .
+_:df8683704b68305848c9eadaedefc7f3 rdf:reifies <<( doc:Factsdata1_2 obo:BFO_0000051 doc:FactsTimeIncrement )>> ;
+	prov:wasDerivedFrom doc:0865894c470a .
+doc:Factsnull_hypothesis_H0j a cco:InformationContentEntity .
+_:a3193b64087948f707edc93d3c418ad1 rdf:reifies <<( doc:Factsnull_hypothesis_H0j rdf:type cco:InformationContentEntity )>> ;
+	prov:wasDerivedFrom doc:0865894c470a .
+doc:FactsMuJ rdfs:label "change point Ï j"@en .
+_:b7ec3e5dbc89f5673415184f35d50e6e rdf:reifies <<( doc:FactsMuJ rdfs:label "change point Ï j"@en )>> ;
+	prov:wasDerivedFrom doc:0865894c470a .
+doc:FactsLikelihoodFunction rdfs:label "likelihood function"@en .
+_:ac6375009abc0046276f5ad5e1561ab0 rdf:reifies <<( doc:FactsLikelihoodFunction rdfs:label "likelihood function"@en )>> ;
+	prov:wasDerivedFrom doc:0865894c470a .
+doc:FactsMuJ rdfs:label "Î· j"@en .
+_:b816a4f4229f8e474d840eee19fa65ef rdf:reifies <<( doc:FactsMuJ rdfs:label "Î· j"@en )>> ;
+	prov:wasDerivedFrom doc:0865894c470a .
+doc:FactsInverseGaussianProcess rdfs:label "Inverse Gaussian process"@en .
+_:dd56a5f9ca7643e94c57ef8a7e51dfb1 rdf:reifies <<( doc:FactsInverseGaussianProcess rdfs:label "Inverse Gaussian process"@en )>> ;
+	prov:wasDerivedFrom doc:0865894c470a .
+doc:Factsfunc1_4 a None:Data_mining_technique_function .
+_:a4467fca4a6f9b45e19b275c1c02878e rdf:reifies <<( doc:Factsfunc1_4 rdf:type None:Data_mining_technique_function )>> ;
+	prov:wasDerivedFrom doc:0865894c470a .
+doc:FactsMaximumLikelihoodEstimation cco:describes doc:FactsLikelihoodFunction .
+_:c77d1797f6cb03f3b533d03a1e9bc02e rdf:reifies <<( doc:FactsMaximumLikelihoodEstimation cco:describes doc:FactsLikelihoodFunction )>> ;
+	prov:wasDerivedFrom doc:0865894c470a .
+doc:Factsdata1_2 obo:BFO_0000051 doc:FactsMuJ .
+_:eb1817bf3b93adfbb261c3660b02cf3b rdf:reifies <<( doc:Factsdata1_2 obo:BFO_0000051 doc:FactsMuJ )>> ;
+	prov:wasDerivedFrom doc:0865894c470a .
+doc:FactsMaximumLikelihoodEstimation rdfs:label "Maximum Likelihood Estimation"@en .
+_:c29b3a57f7e71151defbaab3b3a33bd0 rdf:reifies <<( doc:FactsMaximumLikelihoodEstimation rdfs:label "Maximum Likelihood Estimation"@en )>> ;
+	prov:wasDerivedFrom doc:0865894c470a .
+doc:Factsdata1_2 rdfs:label "degradation observation sequence X j ( t )"@en .
+_:eec20ba65a4f317698816eadde043bc1 rdf:reifies <<( doc:Factsdata1_2 rdfs:label "degradation observation sequence X j ( t )"@en )>> ;
+	prov:wasDerivedFrom doc:0865894c470a .
+cco:InformationContentEntity owl:sameAs cco:DirectiveInformationContentEntity , cco:DesignativeInformationContentEntity , cco:DescriptiveInformationContentEntity .

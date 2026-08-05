@@ -1,0 +1,528 @@
+@prefix None: <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD/seed#> .
+@prefix cco: <http://www.ontologyrepository.com/CommonCoreOntologies/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doc: <https://growgraph.dev/doc/859d81e681ce/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix obo: <http://purl.obolibrary.org/obo/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix schema: <https://schema.org/> .
+@prefix schema1: <http://schema.org/> .
+doc:1338047e5b61 a prov:Entity , schema:text ;
+	prov:generatedAtTime "2026-07-22T11:27:48.377166Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+	schema:position 0 ;
+	schema:identifier "1338047e5b61" .
+doc:Factsaffiliation1_7 a schema1:Organization .
+_:cf5649c5f7287f3599a389e64bec6d40 rdf:reifies <<( doc:Factsaffiliation1_7 rdf:type schema1:Organization )>> ;
+	prov:wasDerivedFrom doc:1338047e5b61 .
+doc:Factsfouling_1 a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Fault_detection> .
+_:e81d0cb8111895e48855a0676e116df2 rdf:reifies <<( doc:Factsfouling_1 rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Fault_detection> )>> ;
+	prov:wasDerivedFrom doc:1338047e5b61 .
+doc:FactsbaselinePerformance1 rdfs:label "baseline performance"@en .
+_:dfd8db7c089eb28befd3632e168e6e47 rdf:reifies <<( doc:FactsbaselinePerformance1 rdfs:label "baseline performance"@en )>> ;
+	prov:wasDerivedFrom doc:1338047e5b61 .
+doc:Factsarticle1_194 schema1:about doc:Factsfouling_1 .
+_:ee6575090018ef88ea5062b0d1bb7ad1 rdf:reifies <<( doc:Factsarticle1_194 schema1:about doc:Factsfouling_1 )>> ;
+	prov:wasDerivedFrom doc:1338047e5b61 .
+doc:FactseconomicLoss1 rdfs:label "effectiveness loss"@en .
+_:e3d0fd2c58e0ed666d75a5ee0ebd82c9 rdf:reifies <<( doc:FactseconomicLoss1 rdfs:label "effectiveness loss"@en )>> ;
+	prov:wasDerivedFrom doc:1338047e5b61 .
+doc:FactseconomicLoss1 rdfs:label "economic loss"@en .
+_:b2145f3d8c73ff08a37b6d7418176ff4 rdf:reifies <<( doc:FactseconomicLoss1 rdfs:label "economic loss"@en )>> ;
+	prov:wasDerivedFrom doc:1338047e5b61 .
+doc:Factsarticle1_194 schema1:author doc:Factsauthor1_101 .
+_:eeb863e6c0abfad6c38a43868a19285 rdf:reifies <<( doc:Factsarticle1_194 schema1:author doc:Factsauthor1_101 )>> ;
+	prov:wasDerivedFrom doc:1338047e5b61 .
+doc:Factsmonths2 a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Design_detail> .
+_:dba64c3359de56e2a6bf18006593b5c1 rdf:reifies <<( doc:Factsmonths2 rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Design_detail> )>> ;
+	prov:wasDerivedFrom doc:1338047e5b61 .
+doc:FactsfoulingResistance1 a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Data_variable> .
+_:bd8a83de42a386e650daf90d44f2b153 rdf:reifies <<( doc:FactsfoulingResistance1 rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Data_variable> )>> ;
+	prov:wasDerivedFrom doc:1338047e5b61 .
+doc:Factsid1_103 a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Article_title> .
+_:eae4404abd8b7c9f747f2a1695e5bea6 rdf:reifies <<( doc:Factsid1_103 rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Article_title> )>> ;
+	prov:wasDerivedFrom doc:1338047e5b61 .
+doc:Factsfouling_1 a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Predictive_maintenance_model> .
+_:c5666a7553512e6f479eb37e5ab4a7c6 rdf:reifies <<( doc:Factsfouling_1 rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Predictive_maintenance_model> )>> ;
+	prov:wasDerivedFrom doc:1338047e5b61 .
+doc:Factsfouling_1 cco:is_about doc:FactsheatExchanger1 .
+_:c028dd0b2a0e9f6f594060d94436fc83 rdf:reifies <<( doc:Factsfouling_1 cco:is_about doc:FactsheatExchanger1 )>> ;
+	prov:wasDerivedFrom doc:1338047e5b61 .
+doc:Factsarticle1_194 dcterms:subject doc:Factsfouling_1 .
+_:b0d37faea0b6bead89db0ceb274017f8 rdf:reifies <<( doc:Factsarticle1_194 dcterms:subject doc:Factsfouling_1 )>> ;
+	prov:wasDerivedFrom doc:1338047e5b61 .
+doc:Factsfouling_1 cco:is_about doc:FactsoutletTemperature1 .
+_:c944140f161121fc8fa15a2be213f4d0 rdf:reifies <<( doc:Factsfouling_1 cco:is_about doc:FactsoutletTemperature1 )>> ;
+	prov:wasDerivedFrom doc:1338047e5b61 .
+doc:Factscost1_2 a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Performance_value> .
+_:a6be98d005316fef9202865a543ee765 rdf:reifies <<( doc:Factscost1_2 rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Performance_value> )>> ;
+	prov:wasDerivedFrom doc:1338047e5b61 .
+doc:FactsheatExchanger1 a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Maintainable_item> .
+_:d7b71ce9793f6bcf329854c30a28a49b rdf:reifies <<( doc:FactsheatExchanger1 rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Maintainable_item> )>> ;
+	prov:wasDerivedFrom doc:1338047e5b61 .
+doc:Factsfouling_1 obo:RO_0000085 <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Health_assessment> .
+_:f633cdfc92890e2adc172659050fa546 rdf:reifies <<( doc:Factsfouling_1 obo:RO_0000085 <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Health_assessment> )>> ;
+	prov:wasDerivedFrom doc:1338047e5b61 .
+doc:FactsoutletTemperature1 a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Data_variable> .
+_:c56164c51377ed4680f5f06846f12bd9 rdf:reifies <<( doc:FactsoutletTemperature1 rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Data_variable> )>> ;
+	prov:wasDerivedFrom doc:1338047e5b61 .
+doc:Factsarticle1_194 dcterms:subject doc:FactsheatExchanger1 .
+_:a3e1d949c4f30b2b50352c15d6a1a83e rdf:reifies <<( doc:Factsarticle1_194 dcterms:subject doc:FactsheatExchanger1 )>> ;
+	prov:wasDerivedFrom doc:1338047e5b61 .
+doc:Factsarticle1_194 dcterms:subject doc:Factsco2Emissions1 .
+_:a5456e68632c8522b18a0f05be50e3d5 rdf:reifies <<( doc:Factsarticle1_194 dcterms:subject doc:Factsco2Emissions1 )>> ;
+	prov:wasDerivedFrom doc:1338047e5b61 .
+doc:FactsoperationalReliability1 a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Performance_indicator> .
+_:bf6be611d69ad61c887d9a234872efb8 rdf:reifies <<( doc:FactsoperationalReliability1 rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Performance_indicator> )>> ;
+	prov:wasDerivedFrom doc:1338047e5b61 .
+doc:FactscrudeDistillationUnit1 rdfs:label "crude distillation unit"@en .
+_:d4b11e7fe41a034da50c6f79ceeb2241 rdf:reifies <<( doc:FactscrudeDistillationUnit1 rdfs:label "crude distillation unit"@en )>> ;
+	prov:wasDerivedFrom doc:1338047e5b61 .
+doc:FactseconomicLoss1 a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Performance_indicator> .
+_:eb10c36b9a6e2f4d0f15dd8a5e3ce9e0 rdf:reifies <<( doc:FactseconomicLoss1 rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Performance_indicator> )>> ;
+	prov:wasDerivedFrom doc:1338047e5b61 .
+doc:Factsfouling_1 rdfs:label "Long Short-Term Memory (LSTM) neural network"@en .
+_:a84c5dd40ce2e6a677493556765a0c42 rdf:reifies <<( doc:Factsfouling_1 rdfs:label "Long Short-Term Memory (LSTM) neural network"@en )>> ;
+	prov:wasDerivedFrom doc:1338047e5b61 .
+doc:FactsfoulingResistance1 rdfs:label "fouling resistance"@en .
+_:eec865bdf89a99ccd8753766cc613f6c rdf:reifies <<( doc:FactsfoulingResistance1 rdfs:label "fouling resistance"@en )>> ;
+	prov:wasDerivedFrom doc:1338047e5b61 .
+doc:Factsmonths2 rdfs:label "two months"@en .
+_:b0b7a5cad16f87e68f0571f8d9f41608 rdf:reifies <<( doc:Factsmonths2 rdfs:label "two months"@en )>> ;
+	prov:wasDerivedFrom doc:1338047e5b61 .
+doc:Factscost1_2 <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#has_text_value> "175 tons of CO2" .
+_:a6fc4fa27ad371b06da64041f9698bdd rdf:reifies <<( doc:Factscost1_2 <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#has_text_value> "175 tons of CO2" )>> ;
+	prov:wasDerivedFrom doc:1338047e5b61 .
+doc:Factsfouling_1 rdfs:label "Extreme Gradient Boosting (XGB)"@en .
+_:b01f30abc5660e1002c6e08e07d3f493 rdf:reifies <<( doc:Factsfouling_1 rdfs:label "Extreme Gradient Boosting (XGB)"@en )>> ;
+	prov:wasDerivedFrom doc:1338047e5b61 .
+doc:Factsauthor1_101 a schema1:Person .
+_:bc1b67eb05504c479686e97dc2a21e36 rdf:reifies <<( doc:Factsauthor1_101 rdf:type schema1:Person )>> ;
+	prov:wasDerivedFrom doc:1338047e5b61 .
+doc:FactsenergyEfficiency1 a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Performance_indicator> .
+_:fbf679cbd7f7a7f17d9889b680704964 rdf:reifies <<( doc:FactsenergyEfficiency1 rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Performance_indicator> )>> ;
+	prov:wasDerivedFrom doc:1338047e5b61 .
+doc:Factsarticle1_194 dcterms:subject doc:FactseconomicLoss1 .
+_:bfc206e1c561c186ccc3cc286001f80c rdf:reifies <<( doc:Factsarticle1_194 dcterms:subject doc:FactseconomicLoss1 )>> ;
+	prov:wasDerivedFrom doc:1338047e5b61 .
+doc:Factsauthor1_101 schema1:name "Å½eljka UjeviÂ´ c AndrijiÂ´ c" .
+_:e404f30d516189865e961f1930a9c91a rdf:reifies <<( doc:Factsauthor1_101 schema1:name "Å½eljka UjeviÂ´ c AndrijiÂ´ c" )>> ;
+	prov:wasDerivedFrom doc:1338047e5b61 .
+doc:Factsarticle1_194 schema1:about doc:FactsheatExchanger1 .
+_:aca73da21664a87e6933e50ba075df9e rdf:reifies <<( doc:Factsarticle1_194 schema1:about doc:FactsheatExchanger1 )>> ;
+	prov:wasDerivedFrom doc:1338047e5b61 .
+doc:Factsfouling_1 obo:RO_0000085 <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Fault_detection> .
+_:f58542e14d33acfb899b6cfdc351c202 rdf:reifies <<( doc:Factsfouling_1 obo:RO_0000085 <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Fault_detection> )>> ;
+	prov:wasDerivedFrom doc:1338047e5b61 .
+doc:FactscrudeDistillationUnit1 a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Maintainable_item> .
+_:cc73b36f3e4532dc51eb18a962bbe2b6 rdf:reifies <<( doc:FactscrudeDistillationUnit1 rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Maintainable_item> )>> ;
+	prov:wasDerivedFrom doc:1338047e5b61 .
+doc:Factscost1_2 <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#has_text_value> "EUR 12,000" .
+_:b2ed1c3c73822dd55645f0a4ca030950 rdf:reifies <<( doc:Factscost1_2 <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#has_text_value> "EUR 12,000" )>> ;
+	prov:wasDerivedFrom doc:1338047e5b61 .
+doc:FactspreheatTrain1 a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Maintainable_item> .
+_:c7d8c292da3eb6f77369cb71ab58ffac rdf:reifies <<( doc:FactspreheatTrain1 rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Maintainable_item> )>> ;
+	prov:wasDerivedFrom doc:1338047e5b61 .
+doc:FactspreheatTrain1 rdfs:label "preheat train"@en .
+_:cee09fc505456b9cb97864298c577920 rdf:reifies <<( doc:FactspreheatTrain1 rdfs:label "preheat train"@en )>> ;
+	prov:wasDerivedFrom doc:1338047e5b61 .
+doc:Factsarticle1_194 schema1:publisher doc:Factsaffiliation1_7 .
+_:dc85e659cc7dec990f8c2681c93b8712 rdf:reifies <<( doc:Factsarticle1_194 schema1:publisher doc:Factsaffiliation1_7 )>> ;
+	prov:wasDerivedFrom doc:1338047e5b61 .
+doc:Factsco2Emissions1 a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Performance_indicator> .
+_:c588f42843d3b378271c4621421eca93 rdf:reifies <<( doc:Factsco2Emissions1 rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Performance_indicator> )>> ;
+	prov:wasDerivedFrom doc:1338047e5b61 .
+doc:Factsarticle1_194 dcterms:subject doc:FactscrudeDistillationUnit1 .
+_:f9c9b645f861ab970703422ad95323a8 rdf:reifies <<( doc:Factsarticle1_194 dcterms:subject doc:FactscrudeDistillationUnit1 )>> ;
+	prov:wasDerivedFrom doc:1338047e5b61 .
+doc:FactsoutletTemperature1 rdfs:label "heat exchanger outlet temperature"@en .
+_:d155ec729da154d5934c4873d952f4da rdf:reifies <<( doc:FactsoutletTemperature1 rdfs:label "heat exchanger outlet temperature"@en )>> ;
+	prov:wasDerivedFrom doc:1338047e5b61 .
+doc:Factsfouling_1 rdfs:label "fouling detection"@en .
+_:a8e3ca4cc5424a596f73013c33cd9346 rdf:reifies <<( doc:Factsfouling_1 rdfs:label "fouling detection"@en )>> ;
+	prov:wasDerivedFrom doc:1338047e5b61 .
+doc:FactsenergyEfficiency1 rdfs:label "energy efficiency"@en .
+_:e172393d5217a09e9fc8586c126a62c3 rdf:reifies <<( doc:FactsenergyEfficiency1 rdfs:label "energy efficiency"@en )>> ;
+	prov:wasDerivedFrom doc:1338047e5b61 .
+doc:Factsauthor1_101 schema1:name "Nikola Rimac" .
+_:db9d1a09c4422742916d6f0a6616aa70 rdf:reifies <<( doc:Factsauthor1_101 schema1:name "Nikola Rimac" )>> ;
+	prov:wasDerivedFrom doc:1338047e5b61 .
+doc:Factsarticle1_194 <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#has_title> doc:Factsid1_103 .
+_:d5a524feecd943212707dc20fff55a37 rdf:reifies <<( doc:Factsarticle1_194 <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#has_title> doc:Factsid1_103 )>> ;
+	prov:wasDerivedFrom doc:1338047e5b61 .
+doc:Factsarticle1_194 dcterms:subject doc:FactsenergyEfficiency1 .
+_:dc8b99a7e0d28045c55a4103c6154c96 rdf:reifies <<( doc:Factsarticle1_194 dcterms:subject doc:FactsenergyEfficiency1 )>> ;
+	prov:wasDerivedFrom doc:1338047e5b61 .
+doc:FactsheatExchanger1 rdfs:label "heat exchanger"@en .
+_:a037d9c6e164d85868e94c4b2bcc1ab7 rdf:reifies <<( doc:FactsheatExchanger1 rdfs:label "heat exchanger"@en )>> ;
+	prov:wasDerivedFrom doc:1338047e5b61 .
+doc:Factsarticle1_194 dcterms:subject doc:FactsoperationalReliability1 .
+_:ff454a326a5992b0ca00e51402922cf0 rdf:reifies <<( doc:Factsarticle1_194 dcterms:subject doc:FactsoperationalReliability1 )>> ;
+	prov:wasDerivedFrom doc:1338047e5b61 .
+doc:FactsoperationalReliability1 rdfs:label "operational reliability"@en .
+_:a97a0834f92503101504b2a7376c204 rdf:reifies <<( doc:FactsoperationalReliability1 rdfs:label "operational reliability"@en )>> ;
+	prov:wasDerivedFrom doc:1338047e5b61 .
+doc:Factsid1_103 rdfs:label "Data-Driven Fouling Detection in Refinery Preheat Train Heat Exchangers Using Neural Networks and Gradient Boosting"@en .
+_:b01b73209428e6029e78f8d0de9d55ec rdf:reifies <<( doc:Factsid1_103 rdfs:label "Data-Driven Fouling Detection in Refinery Preheat Train Heat Exchangers Using Neural Networks and Gradient Boosting"@en )>> ;
+	prov:wasDerivedFrom doc:1338047e5b61 .
+doc:Factsaffiliation1_7 schema1:name "Department of Measurements and Process Control, Faculty of Chemical Engineering and Technology, University of Zagreb" .
+_:deb0d9adbca10c3a7d4fb276de4badcc rdf:reifies <<( doc:Factsaffiliation1_7 schema1:name "Department of Measurements and Process Control, Faculty of Chemical Engineering and Technology, University of Zagreb" )>> ;
+	prov:wasDerivedFrom doc:1338047e5b61 .
+doc:Factsfouling_1 rdfs:label "epsilon-NTU method"@en .
+_:ddebafbc534a6866eac53c6b910bc728 rdf:reifies <<( doc:Factsfouling_1 rdfs:label "epsilon-NTU method"@en )>> ;
+	prov:wasDerivedFrom doc:1338047e5b61 .
+doc:FactsbaselinePerformance1 a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Performance_indicator> .
+_:cb151d519464d0189b28fbe11fb4465f rdf:reifies <<( doc:FactsbaselinePerformance1 rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Performance_indicator> )>> ;
+	prov:wasDerivedFrom doc:1338047e5b61 .
+doc:Factsarticle1_194 a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Predictive_Maintenance_Article> .
+_:a834511755f5032f44fbd7f379655e91 rdf:reifies <<( doc:Factsarticle1_194 rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Predictive_Maintenance_Article> )>> ;
+	prov:wasDerivedFrom doc:1338047e5b61 .
+doc:Factsarticle1_194 dcterms:subject doc:FactspreheatTrain1 .
+_:bfa3930959d4205650fcd2a10884609 rdf:reifies <<( doc:Factsarticle1_194 dcterms:subject doc:FactspreheatTrain1 )>> ;
+	prov:wasDerivedFrom doc:1338047e5b61 .
+doc:Factsco2Emissions1 rdfs:label "CO2 emissions"@en .
+_:c35e26161d5c9921dda43e06753b633d rdf:reifies <<( doc:Factsco2Emissions1 rdfs:label "CO2 emissions"@en )>> ;
+	prov:wasDerivedFrom doc:1338047e5b61 .
+doc:dea2f7997817 a prov:Entity , schema:text ;
+	prov:generatedAtTime "2026-07-22T11:27:48.381168Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+	schema:position 1 ;
+	schema:identifier "dea2f7997817" .
+doc:Factsfouling_1 rdfs:label "data-driven fouling detection model" .
+_:f1b38fe0d7e128dd5aad6e0738d96823 rdf:reifies <<( doc:Factsfouling_1 rdfs:label "data-driven fouling detection model" )>> ;
+	prov:wasDerivedFrom doc:dea2f7997817 .
+doc:Factsdata_driven_models1 rdfs:label "data-driven models" .
+_:f05ead568e5e1fdd17aa785b218bbc93 rdf:reifies <<( doc:Factsdata_driven_models1 rdfs:label "data-driven models" )>> ;
+	prov:wasDerivedFrom doc:dea2f7997817 .
+doc:Factsdomain1_1 a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Maintainable_item> .
+_:f36de1fac1e05db0d42d91e002eecb4e rdf:reifies <<( doc:Factsdomain1_1 rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Maintainable_item> )>> ;
+	prov:wasDerivedFrom doc:dea2f7997817 .
+doc:Factsfouling_1 rdfs:label "gradient boosting model" .
+_:e215d239f86cb4c9367178fd3eb7c277 rdf:reifies <<( doc:Factsfouling_1 rdfs:label "gradient boosting model" )>> ;
+	prov:wasDerivedFrom doc:dea2f7997817 .
+doc:Factsmodeltype1_6 <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#has_text_value> "gradient boosting" .
+_:c8762c63c4f4e36f2fb0810f0a7bf8a7 rdf:reifies <<( doc:Factsmodeltype1_6 <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#has_text_value> "gradient boosting" )>> ;
+	prov:wasDerivedFrom doc:dea2f7997817 .
+doc:Factsmodeltype1_6 a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Model_type> .
+_:ab930ee50d00c2c629c3e9156043fa16 rdf:reifies <<( doc:Factsmodeltype1_6 rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Model_type> )>> ;
+	prov:wasDerivedFrom doc:dea2f7997817 .
+_:bc1b67eb05504c479686e97dc2a21e36 prov:wasDerivedFrom doc:dea2f7997817 .
+_:eeb863e6c0abfad6c38a43868a19285 prov:wasDerivedFrom doc:dea2f7997817 .
+doc:Factsid1_103 <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#has_text_value> "Data-Driven Fouling Detection in Refinery Preheat Train Heat Exchangers Using Neural Networks and Gradient Boosting" .
+_:c8ba648bc388b57934b0ae27eb065398 rdf:reifies <<( doc:Factsid1_103 <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#has_text_value> "Data-Driven Fouling Detection in Refinery Preheat Train Heat Exchangers Using Neural Networks and Gradient Boosting" )>> ;
+	prov:wasDerivedFrom doc:dea2f7997817 .
+doc:Factsauthor1_101 schema1:name "N. Rimac" .
+_:cf79a77841669a9d533edbd7511eb599 rdf:reifies <<( doc:Factsauthor1_101 schema1:name "N. Rimac" )>> ;
+	prov:wasDerivedFrom doc:dea2f7997817 .
+doc:Factscost1_2 schema1:value "1"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+_:a0550092af5c2701f75481b1057e13f4 rdf:reifies <<( doc:Factscost1_2 schema1:value "1"^^<http://www.w3.org/2001/XMLSchema#decimal> )>> ;
+	prov:wasDerivedFrom doc:dea2f7997817 .
+doc:Factscost1_2 schema1:priceCurrency "USD" .
+_:d9092baf5db343f48a5346bcbc0c9cb rdf:reifies <<( doc:Factscost1_2 schema1:priceCurrency "USD" )>> ;
+	prov:wasDerivedFrom doc:dea2f7997817 .
+doc:Factsauthor1_101 schema1:name "Å½. UjeviÄ AndrijiÄ" .
+_:d3622d93ad3ec785cf0f7755a2b5d4f7 rdf:reifies <<( doc:Factsauthor1_101 schema1:name "Å½. UjeviÄ AndrijiÄ" )>> ;
+	prov:wasDerivedFrom doc:dea2f7997817 .
+_:eae4404abd8b7c9f747f2a1695e5bea6 prov:wasDerivedFrom doc:dea2f7997817 .
+doc:Factsfouling_1 <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#describes_type> doc:Factsmodeltype1_6 .
+_:db7b8b8934d9313709f4e667debe705 rdf:reifies <<( doc:Factsfouling_1 <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#describes_type> doc:Factsmodeltype1_6 )>> ;
+	prov:wasDerivedFrom doc:dea2f7997817 .
+doc:Factscost1_2 <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#has_text_value> "excessive carbon emissions" .
+_:bce05350e709b489184c0a66d724db3f rdf:reifies <<( doc:Factscost1_2 <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#has_text_value> "excessive carbon emissions" )>> ;
+	prov:wasDerivedFrom doc:dea2f7997817 .
+doc:Factscost1_2 a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Performance_indicator> .
+_:c6c72e4320e85855668612c36d5923cd rdf:reifies <<( doc:Factscost1_2 rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Performance_indicator> )>> ;
+	prov:wasDerivedFrom doc:dea2f7997817 .
+doc:Factsmodeltype1_6 <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#has_text_value> "neural network" .
+_:b66339b3b5a42cc774fb98fcad3da2ce rdf:reifies <<( doc:Factsmodeltype1_6 <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#has_text_value> "neural network" )>> ;
+	prov:wasDerivedFrom doc:dea2f7997817 .
+_:c5666a7553512e6f479eb37e5ab4a7c6 prov:wasDerivedFrom doc:dea2f7997817 .
+doc:Factspubyear1_17 <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#has_interger_value> 2025 .
+_:bcc947f1891b7face5129cc365f3364 rdf:reifies <<( doc:Factspubyear1_17 <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#has_interger_value> 2025 )>> ;
+	prov:wasDerivedFrom doc:dea2f7997817 .
+doc:Factsfouling_1 rdfs:label "artificial neural network model" .
+_:a5a7b50aecf08a12c155edb6fb3fe72b rdf:reifies <<( doc:Factsfouling_1 rdfs:label "artificial neural network model" )>> ;
+	prov:wasDerivedFrom doc:dea2f7997817 .
+doc:Factsdomain1_1 obo:RO_0000085 doc:Factsfouling_1 .
+_:cb639b9204b61f736375ab2ee75f1353 rdf:reifies <<( doc:Factsdomain1_1 obo:RO_0000085 doc:Factsfouling_1 )>> ;
+	prov:wasDerivedFrom doc:dea2f7997817 .
+doc:Factsfouling1 a schema1:MedicalCondition .
+_:acd109eb94893c75e703483571fde04f rdf:reifies <<( doc:Factsfouling1 rdf:type schema1:MedicalCondition )>> ;
+	prov:wasDerivedFrom doc:dea2f7997817 .
+doc:Factsarticle1_194 <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#has_publication_year> doc:Factspubyear1_17 .
+_:ded9b0eada64cde5f65bd93181ae4712 rdf:reifies <<( doc:Factsarticle1_194 <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#has_publication_year> doc:Factspubyear1_17 )>> ;
+	prov:wasDerivedFrom doc:dea2f7997817 .
+doc:Factsfouling_1 cco:is_about doc:Factsfouling_1 .
+_:c7e38bd32bc9da8790fdbcd4df770cd3 rdf:reifies <<( doc:Factsfouling_1 cco:is_about doc:Factsfouling_1 )>> ;
+	prov:wasDerivedFrom doc:dea2f7997817 .
+doc:Factsarticle1_194 schema1:datePublished "2025-08-09"^^<http://www.w3.org/2001/XMLSchema#date> .
+_:efa88939e1f6db1e5070c77b87252353 rdf:reifies <<( doc:Factsarticle1_194 schema1:datePublished "2025-08-09"^^<http://www.w3.org/2001/XMLSchema#date> )>> ;
+	prov:wasDerivedFrom doc:dea2f7997817 .
+doc:Factsdata_driven_models1 a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Classification> .
+_:da9a3d921dc2af59afa0d4a2e58297a1 rdf:reifies <<( doc:Factsdata_driven_models1 rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Classification> )>> ;
+	prov:wasDerivedFrom doc:dea2f7997817 .
+doc:Factscost1_2 schema1:value 1.2 .
+_:edca909eadaa5ad028f066d3cd63d11f rdf:reifies <<( doc:Factscost1_2 schema1:value 1.2 )>> ;
+	prov:wasDerivedFrom doc:dea2f7997817 .
+doc:Factsfouling1 rdfs:label "fouling" .
+_:c9a20110c1df85c96d45a148a2b234b2 rdf:reifies <<( doc:Factsfouling1 rdfs:label "fouling" )>> ;
+	prov:wasDerivedFrom doc:dea2f7997817 .
+doc:Factsid1_103 <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#has_text_value> "10.3390/s25164936" .
+_:b742200b06ac40ebe5eaf7c802efa3b3 rdf:reifies <<( doc:Factsid1_103 <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#has_text_value> "10.3390/s25164936" )>> ;
+	prov:wasDerivedFrom doc:dea2f7997817 .
+doc:Factscost1_2 <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#has_text_value> "1 to 1.2 billion USD" .
+_:fbfa3a9ab7c83800c9c9bd1a360179d4 rdf:reifies <<( doc:Factscost1_2 <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#has_text_value> "1 to 1.2 billion USD" )>> ;
+	prov:wasDerivedFrom doc:dea2f7997817 .
+_:d5a524feecd943212707dc20fff55a37 prov:wasDerivedFrom doc:dea2f7997817 .
+doc:Factsmodeltype1_6 <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#has_text_value> "neural networks and gradient boosting" .
+_:f128f00dec08902ca9a5c145ab9edd21 rdf:reifies <<( doc:Factsmodeltype1_6 <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#has_text_value> "neural networks and gradient boosting" )>> ;
+	prov:wasDerivedFrom doc:dea2f7997817 .
+_:e81d0cb8111895e48855a0676e116df2 prov:wasDerivedFrom doc:dea2f7997817 .
+doc:Factsdomain1_1 rdfs:label "refinery preheat train heat exchangers" .
+_:e0838ad7d5d53d7fd2f34fd7af78e8f5 rdf:reifies <<( doc:Factsdomain1_1 rdfs:label "refinery preheat train heat exchangers" )>> ;
+	prov:wasDerivedFrom doc:dea2f7997817 .
+doc:Factscost1_2 <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#has_text_value> "operational disruptions minimization" .
+_:d2de95eb0d395fb0fb2adaa67ab731ab rdf:reifies <<( doc:Factscost1_2 <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#has_text_value> "operational disruptions minimization" )>> ;
+	prov:wasDerivedFrom doc:dea2f7997817 .
+doc:Factscost1_2 <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#has_text_value> "equipment lifetime extension" .
+_:fff5ebe9fb1fe72255f57896c27e736f rdf:reifies <<( doc:Factscost1_2 <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#has_text_value> "equipment lifetime extension" )>> ;
+	prov:wasDerivedFrom doc:dea2f7997817 .
+doc:Factscost1_2 <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#has_text_value> "avoidance of expensive repairs" .
+_:e2e5df181f7ba211167b3a7becef2e21 rdf:reifies <<( doc:Factscost1_2 <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#has_text_value> "avoidance of expensive repairs" )>> ;
+	prov:wasDerivedFrom doc:dea2f7997817 .
+_:a6be98d005316fef9202865a543ee765 prov:wasDerivedFrom doc:dea2f7997817 .
+doc:Factspubyear1_17 a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Publication_year> .
+_:dd101bdfde2a4cbabf5297b725ecdda8 rdf:reifies <<( doc:Factspubyear1_17 rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Publication_year> )>> ;
+	prov:wasDerivedFrom doc:dea2f7997817 .
+_:a834511755f5032f44fbd7f379655e91 prov:wasDerivedFrom doc:dea2f7997817 .
+doc:Factsid1_103 a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Article_identifier> .
+_:efd1cebba976486a78393462ae6c58e5 rdf:reifies <<( doc:Factsid1_103 rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Article_identifier> )>> ;
+	prov:wasDerivedFrom doc:dea2f7997817 .
+doc:Factsarticle1_194 dcterms:subject doc:Factsfouling1 .
+_:c827b8a795f92635b4677ae7f8223cf0 rdf:reifies <<( doc:Factsarticle1_194 dcterms:subject doc:Factsfouling1 )>> ;
+	prov:wasDerivedFrom doc:dea2f7997817 .
+doc:Factsfouling_1 rdfs:label "fouling detection" .
+_:b9b91a86b8f51762128bee7963767d93 rdf:reifies <<( doc:Factsfouling_1 rdfs:label "fouling detection" )>> ;
+	prov:wasDerivedFrom doc:dea2f7997817 .
+doc:Factsarticle1_194 <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#has_identifier> doc:Factsid1_103 .
+_:c3bcd3edfea368b04e28defc73090484 rdf:reifies <<( doc:Factsarticle1_194 <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#has_identifier> doc:Factsid1_103 )>> ;
+	prov:wasDerivedFrom doc:dea2f7997817 .
+doc:79175f371060 a prov:Entity , schema:text ;
+	prov:generatedAtTime "2026-07-22T11:27:48.383174Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+	schema:position 2 ;
+	schema:identifier "79175f371060" .
+doc:FactsgravimetricAnalysis a schema:DiagnosticProcedure .
+_:e7ed538e59696cd5394f238779b00fb0 rdf:reifies <<( doc:FactsgravimetricAnalysis rdf:type schema:DiagnosticProcedure )>> ;
+	prov:wasDerivedFrom doc:79175f371060 .
+doc:FactsrealOperationalData a schema:DataFeed .
+_:d4b6646984795138a16ca2ae846c9294 rdf:reifies <<( doc:FactsrealOperationalData rdf:type schema:DataFeed )>> ;
+	prov:wasDerivedFrom doc:79175f371060 .
+doc:Factsstudy_7 schema:mentions doc:FactsultrasonicTechniques .
+_:ad4b5ce6900220ed4996b129ee2ba6b rdf:reifies <<( doc:Factsstudy_7 schema:mentions doc:FactsultrasonicTechniques )>> ;
+	prov:wasDerivedFrom doc:79175f371060 .
+doc:FactsprocessConditions rdfs:label "actual process conditions"@en .
+_:d2d4f3e8a33dabdf15f198264f35f7d5 rdf:reifies <<( doc:FactsprocessConditions rdfs:label "actual process conditions"@en )>> ;
+	prov:wasDerivedFrom doc:79175f371060 .
+doc:FactsfeedstockChanges a schema:Text .
+_:ad35fbe7bc470e81635a7c3e71ab8084 rdf:reifies <<( doc:FactsfeedstockChanges rdf:type schema:Text )>> ;
+	prov:wasDerivedFrom doc:79175f371060 .
+doc:FactsrefineryHeatExchangers a schema:Product .
+_:b635e6379af141a48661a370abfc0699 rdf:reifies <<( doc:FactsrefineryHeatExchangers rdf:type schema:Product )>> ;
+	prov:wasDerivedFrom doc:79175f371060 .
+doc:FactsoperationalDynamics a schema:Text .
+_:a91aaddd753cee2dc6252b31c59dadac rdf:reifies <<( doc:FactsoperationalDynamics rdf:type schema:Text )>> ;
+	prov:wasDerivedFrom doc:79175f371060 .
+doc:Factsstudy_7 schema:mentions doc:FactsoperationalDynamics .
+_:ea5af3c212e7a840ee6417f9b3619e03 rdf:reifies <<( doc:Factsstudy_7 schema:mentions doc:FactsoperationalDynamics )>> ;
+	prov:wasDerivedFrom doc:79175f371060 .
+doc:Factsstudy_7 schema:mentions doc:FactsexchangerCleanliness .
+_:c2e73d0baea0fd48e7950d27f6e3f588 rdf:reifies <<( doc:Factsstudy_7 schema:mentions doc:FactsexchangerCleanliness )>> ;
+	prov:wasDerivedFrom doc:79175f371060 .
+doc:FactspressureDrops a schema:PropertyValue .
+_:a631767110f120622a880dd3130b6a1 rdf:reifies <<( doc:FactspressureDrops rdf:type schema:PropertyValue )>> ;
+	prov:wasDerivedFrom doc:79175f371060 .
+_:d7b71ce9793f6bcf329854c30a28a49b prov:wasDerivedFrom doc:79175f371060 .
+doc:FactspredictedOutletTemperature schema:about doc:FactsexchangerCleanliness .
+_:b57f086e2962db6fe46d8846a0795d98 rdf:reifies <<( doc:FactspredictedOutletTemperature schema:about doc:FactsexchangerCleanliness )>> ;
+	prov:wasDerivedFrom doc:79175f371060 .
+doc:FactsoperationalDynamics rdfs:label "operational dynamics"@en .
+_:c8e02bf931fd8a713f84b215c25e4570 rdf:reifies <<( doc:FactsoperationalDynamics rdfs:label "operational dynamics"@en )>> ;
+	prov:wasDerivedFrom doc:79175f371060 .
+_:c5666a7553512e6f479eb37e5ab4a7c6 prov:wasDerivedFrom doc:79175f371060 .
+doc:Factsstudy_7 schema:mentions doc:Factsfouling_1 .
+_:fed5eeaaea69ee77f8b5541f640d6afc rdf:reifies <<( doc:Factsstudy_7 schema:mentions doc:Factsfouling_1 )>> ;
+	prov:wasDerivedFrom doc:79175f371060 .
+doc:Factsfouling_1 schema:usesDataset doc:FactshistoricalData_2 .
+_:e89c83761ddde95967e6ec01bcfcfcfa rdf:reifies <<( doc:Factsfouling_1 schema:usesDataset doc:FactshistoricalData_2 )>> ;
+	prov:wasDerivedFrom doc:79175f371060 .
+doc:Factsstudy_7 schema:headline "Practical diagnostic tools for industrial heat exchanger monitoring"@en .
+_:ee447fef3fbb5a005f306c86e3668822 rdf:reifies <<( doc:Factsstudy_7 schema:headline "Practical diagnostic tools for industrial heat exchanger monitoring"@en )>> ;
+	prov:wasDerivedFrom doc:79175f371060 .
+doc:Factsfouling_1 rdfs:label "LSTM neural network model"@en .
+_:d7ca489b9604a8f817fd8cb31fd333e1 rdf:reifies <<( doc:Factsfouling_1 rdfs:label "LSTM neural network model"@en )>> ;
+	prov:wasDerivedFrom doc:79175f371060 .
+doc:FactsexchangerCleanliness rdfs:label "exchanger cleanliness"@en .
+_:ef2d92c392962df38c03aeaadc6025da rdf:reifies <<( doc:FactsexchangerCleanliness rdfs:label "exchanger cleanliness"@en )>> ;
+	prov:wasDerivedFrom doc:79175f371060 .
+doc:FactsidealizedModels rdfs:label "idealized models"@en .
+_:b4918adf2ef4e70db26eb3d54aad440c rdf:reifies <<( doc:FactsidealizedModels rdfs:label "idealized models"@en )>> ;
+	prov:wasDerivedFrom doc:79175f371060 .
+doc:FactselectricalTechniques a schema:MedicalProcedure .
+_:f0a13ea67420df881e6e589163339c88 rdf:reifies <<( doc:FactselectricalTechniques rdf:type schema:MedicalProcedure )>> ;
+	prov:wasDerivedFrom doc:79175f371060 .
+doc:Factsfouling_1 a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Model_type> .
+_:e686c283a9dc4f03b588ed43cef52775 rdf:reifies <<( doc:Factsfouling_1 rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Model_type> )>> ;
+	prov:wasDerivedFrom doc:79175f371060 .
+doc:FactsultrasonicTechniques rdfs:label "ultrasonic techniques"@en .
+_:efa6d63451b49fb42fa3a830420c5236 rdf:reifies <<( doc:FactsultrasonicTechniques rdfs:label "ultrasonic techniques"@en )>> ;
+	prov:wasDerivedFrom doc:79175f371060 .
+doc:FactsrefineryHeatExchangers schema:additionalType doc:FactsheatExchanger1 .
+_:b84fa7e49811d337f61472e57919c725 rdf:reifies <<( doc:FactsrefineryHeatExchangers schema:additionalType doc:FactsheatExchanger1 )>> ;
+	prov:wasDerivedFrom doc:79175f371060 .
+doc:FactspredictedOutletTemperature rdfs:label "predicted outlet temperature"@en .
+_:a584966c2f604f82f07e387c067bd5af rdf:reifies <<( doc:FactspredictedOutletTemperature rdfs:label "predicted outlet temperature"@en )>> ;
+	prov:wasDerivedFrom doc:79175f371060 .
+doc:Factsstudy_7 schema:mentions doc:FactspredictedOutletTemperature .
+_:ed842cb9fd0dcec96812acd403d8a121 rdf:reifies <<( doc:Factsstudy_7 schema:mentions doc:FactspredictedOutletTemperature )>> ;
+	prov:wasDerivedFrom doc:79175f371060 .
+doc:FactsrealTimeMonitoring_5 schema:object doc:FactsheatExchanger1 .
+_:d2f06bc5bc8e11bf7cd9fcfd56fc2080 rdf:reifies <<( doc:FactsrealTimeMonitoring_5 schema:object doc:FactsheatExchanger1 )>> ;
+	prov:wasDerivedFrom doc:79175f371060 .
+doc:Factsfouling_1 None:has_predictive_maintenance_function doc:Factsfouling_1 .
+_:ae4d9fc363348c6f029a01af8c5868fc rdf:reifies <<( doc:Factsfouling_1 None:has_predictive_maintenance_function doc:Factsfouling_1 )>> ;
+	prov:wasDerivedFrom doc:79175f371060 .
+doc:FactshistoricalData_2 schema:isBasedOn doc:FactscontinuousFieldData .
+_:c8c21fc9423ea767c86320b73f8eee9c rdf:reifies <<( doc:FactshistoricalData_2 schema:isBasedOn doc:FactscontinuousFieldData )>> ;
+	prov:wasDerivedFrom doc:79175f371060 .
+doc:Factsstudy_7 schema:mentions doc:FactsfeedstockChanges .
+_:d3ed20c6f535c45cb176d4262c57766a rdf:reifies <<( doc:Factsstudy_7 schema:mentions doc:FactsfeedstockChanges )>> ;
+	prov:wasDerivedFrom doc:79175f371060 .
+doc:FactscontinuousFieldData rdfs:label "continuously collected field data"@en .
+_:eecf88b9228649e614d1ce06f8b8a3bc rdf:reifies <<( doc:FactscontinuousFieldData rdfs:label "continuously collected field data"@en )>> ;
+	prov:wasDerivedFrom doc:79175f371060 .
+doc:Factsstudy_7 schema:about doc:FactsheatExchanger1 .
+_:f60f6d6433504fa383f2524069c79b28 rdf:reifies <<( doc:Factsstudy_7 schema:about doc:FactsheatExchanger1 )>> ;
+	prov:wasDerivedFrom doc:79175f371060 .
+doc:FactsheatTransferCoefficients a schema:PropertyValue .
+_:da04e4d55244c5024d1d4dbb2d3fc04f rdf:reifies <<( doc:FactsheatTransferCoefficients rdf:type schema:PropertyValue )>> ;
+	prov:wasDerivedFrom doc:79175f371060 .
+doc:Factsstudy_7 schema:mentions doc:FactshistoricalData_2 .
+_:acfb1712135ff25a63561a64253acaba rdf:reifies <<( doc:Factsstudy_7 schema:mentions doc:FactshistoricalData_2 )>> ;
+	prov:wasDerivedFrom doc:79175f371060 .
+doc:FactselectricalTechniques rdfs:label "electrical techniques"@en .
+_:a1c8dfde93a0b08ac546f40f0a1dfc2f rdf:reifies <<( doc:FactselectricalTechniques rdfs:label "electrical techniques"@en )>> ;
+	prov:wasDerivedFrom doc:79175f371060 .
+doc:FactsidealizedModels a schema:CreativeWork .
+_:f9b83d1793c3600270138422fc5a85bc rdf:reifies <<( doc:FactsidealizedModels rdf:type schema:CreativeWork )>> ;
+	prov:wasDerivedFrom doc:79175f371060 .
+doc:FactspredictedOutletTemperature schema:measurementTechnique doc:Factsfouling_1 .
+_:c4b3953e1bbd821f0b0dc837369fe0ad rdf:reifies <<( doc:FactspredictedOutletTemperature schema:measurementTechnique doc:Factsfouling_1 )>> ;
+	prov:wasDerivedFrom doc:79175f371060 .
+doc:FactshistoricalData_2 a schema:Dataset .
+_:c8fddf2d5d3044ff7f973e4440cc3c0c rdf:reifies <<( doc:FactshistoricalData_2 rdf:type schema:Dataset )>> ;
+	prov:wasDerivedFrom doc:79175f371060 .
+doc:Factsfouling_1 schema:variableMeasured doc:FactsoperationalDynamics .
+_:e55d8ba936a2f73b183bb6ab4c85c70d rdf:reifies <<( doc:Factsfouling_1 schema:variableMeasured doc:FactsoperationalDynamics )>> ;
+	prov:wasDerivedFrom doc:79175f371060 .
+doc:FactsrealTimeMonitoring_5 rdfs:label "real-time monitoring applications"@en .
+_:ba792b9756db0bc9174f0e14a10c168 rdf:reifies <<( doc:FactsrealTimeMonitoring_5 rdfs:label "real-time monitoring applications"@en )>> ;
+	prov:wasDerivedFrom doc:79175f371060 .
+doc:Factsstudy_7 schema:mentions doc:FactscontinuousFieldData .
+_:aab2e77e4fd607eec8895ddb144cf488 rdf:reifies <<( doc:Factsstudy_7 schema:mentions doc:FactscontinuousFieldData )>> ;
+	prov:wasDerivedFrom doc:79175f371060 .
+doc:FactsultrasonicTechniques a schema:MedicalProcedure .
+_:bb08e4bfc03f0edc5456cc08cd9a9729 rdf:reifies <<( doc:FactsultrasonicTechniques rdf:type schema:MedicalProcedure )>> ;
+	prov:wasDerivedFrom doc:79175f371060 .
+doc:Factsstudy_7 schema:about doc:Factsfouling_1 .
+_:b00686d55a35098bdd5c5aed73205a1a rdf:reifies <<( doc:Factsstudy_7 schema:about doc:Factsfouling_1 )>> ;
+	prov:wasDerivedFrom doc:79175f371060 .
+doc:Factsstudy_7 schema:mentions doc:FactsidealizedModels .
+_:d3b675305609ff49746664b015902fba rdf:reifies <<( doc:Factsstudy_7 schema:mentions doc:FactsidealizedModels )>> ;
+	prov:wasDerivedFrom doc:79175f371060 .
+doc:Factsstudy_7 schema:mentions doc:FactsgravimetricAnalysis .
+_:c09a837fe428ef3568978b238317c6c6 rdf:reifies <<( doc:Factsstudy_7 schema:mentions doc:FactsgravimetricAnalysis )>> ;
+	prov:wasDerivedFrom doc:79175f371060 .
+doc:Factsfouling_1 rdfs:label "predictive maintenance model type"@en .
+_:d29807e03c15002f7ff1f7a00508bbec rdf:reifies <<( doc:Factsfouling_1 rdfs:label "predictive maintenance model type"@en )>> ;
+	prov:wasDerivedFrom doc:79175f371060 .
+doc:FactsheatExchanger1 rdfs:label "heat exchanger monitoring"@en .
+_:a5077880718a21a7241911c46a57d073 rdf:reifies <<( doc:FactsheatExchanger1 rdfs:label "heat exchanger monitoring"@en )>> ;
+	prov:wasDerivedFrom doc:79175f371060 .
+doc:FactsprocessConditions a schema:Text .
+_:e1f7434e401e2e9d560b7376f66bab27 rdf:reifies <<( doc:FactsprocessConditions rdf:type schema:Text )>> ;
+	prov:wasDerivedFrom doc:79175f371060 .
+doc:Factsstudy_7 schema:mentions doc:FactsrealTimeMonitoring_5 .
+_:b52c533719cadaa2dcc35aa75c8d9723 rdf:reifies <<( doc:Factsstudy_7 schema:mentions doc:FactsrealTimeMonitoring_5 )>> ;
+	prov:wasDerivedFrom doc:79175f371060 .
+doc:Factsfouling_1 None:describes_type doc:Factsfouling_1 .
+_:f05fcdd10a17070c3cf9857e2b8202e8 rdf:reifies <<( doc:Factsfouling_1 None:describes_type doc:Factsfouling_1 )>> ;
+	prov:wasDerivedFrom doc:79175f371060 .
+doc:FactshistoricalData_2 rdfs:label "historical data"@en .
+_:bf6b07806cfa59b20d3aa4ccde6443e3 rdf:reifies <<( doc:FactshistoricalData_2 rdfs:label "historical data"@en )>> ;
+	prov:wasDerivedFrom doc:79175f371060 .
+doc:FactsrealTimeMonitoring_5 a schema:Action .
+_:b893e68770bd220093d2606b9cbd6f75 rdf:reifies <<( doc:FactsrealTimeMonitoring_5 rdf:type schema:Action )>> ;
+	prov:wasDerivedFrom doc:79175f371060 .
+doc:FactsheatTransferCoefficients rdfs:label "heat transfer coefficients"@en .
+_:fbeb195fc8cc1a3cd29d6d9f02716389 rdf:reifies <<( doc:FactsheatTransferCoefficients rdfs:label "heat transfer coefficients"@en )>> ;
+	prov:wasDerivedFrom doc:79175f371060 .
+doc:FactsfeedstockChanges rdfs:label "frequent feedstock changes"@en .
+_:b89e6cfd43269b5f4953417e1a1f11b8 rdf:reifies <<( doc:FactsfeedstockChanges rdfs:label "frequent feedstock changes"@en )>> ;
+	prov:wasDerivedFrom doc:79175f371060 .
+_:e81d0cb8111895e48855a0676e116df2 prov:wasDerivedFrom doc:79175f371060 .
+doc:FactstemperatureDifferences rdfs:label "temperature differences"@en .
+_:d1b5bbffb655d71eef7cf9540037df0c rdf:reifies <<( doc:FactstemperatureDifferences rdfs:label "temperature differences"@en )>> ;
+	prov:wasDerivedFrom doc:79175f371060 .
+doc:FactsrealOperationalData rdfs:label "real operational data"@en .
+_:b35c9e2adaf6fd7f6d5f28dd4feb801b rdf:reifies <<( doc:FactsrealOperationalData rdfs:label "real operational data"@en )>> ;
+	prov:wasDerivedFrom doc:79175f371060 .
+_:a8e3ca4cc5424a596f73013c33cd9346 prov:wasDerivedFrom doc:79175f371060 .
+doc:Factsstudy_7 schema:mentions doc:FactsheatTransferCoefficients .
+_:bdb68bfa8ff83dac94bdd7810b9c7d41 rdf:reifies <<( doc:Factsstudy_7 schema:mentions doc:FactsheatTransferCoefficients )>> ;
+	prov:wasDerivedFrom doc:79175f371060 .
+doc:FactsrefineryHeatExchangers rdfs:label "refinery heat exchangers"@en .
+_:af64018e5472225555c23365db7fae26 rdf:reifies <<( doc:FactsrefineryHeatExchangers rdfs:label "refinery heat exchangers"@en )>> ;
+	prov:wasDerivedFrom doc:79175f371060 .
+doc:FactsexchangerCleanliness a schema:PropertyValue .
+_:e77834dd3feb904b2600b4aa7c80441f rdf:reifies <<( doc:FactsexchangerCleanliness rdf:type schema:PropertyValue )>> ;
+	prov:wasDerivedFrom doc:79175f371060 .
+doc:FactscontinuousFieldData a schema:Dataset .
+_:c3f83ef4bf67d6ff3600ab5ca99e81bf rdf:reifies <<( doc:FactscontinuousFieldData rdf:type schema:Dataset )>> ;
+	prov:wasDerivedFrom doc:79175f371060 .
+doc:FactstemperatureDifferences a schema:PropertyValue .
+_:a2d65f1805c5cf9148c1d8f6b8af9adb rdf:reifies <<( doc:FactstemperatureDifferences rdf:type schema:PropertyValue )>> ;
+	prov:wasDerivedFrom doc:79175f371060 .
+doc:FactsgravimetricAnalysis rdfs:label "gravimetric analysis"@en .
+_:e11278ed4fc32563e1feaac3e3efa4dd rdf:reifies <<( doc:FactsgravimetricAnalysis rdfs:label "gravimetric analysis"@en )>> ;
+	prov:wasDerivedFrom doc:79175f371060 .
+doc:Factsstudy_7 schema:mentions doc:FactstemperatureDifferences .
+_:dc00fff9d96f2cf8fbf6b596d38b4a59 rdf:reifies <<( doc:Factsstudy_7 schema:mentions doc:FactstemperatureDifferences )>> ;
+	prov:wasDerivedFrom doc:79175f371060 .
+doc:Factsstudy_7 schema:mentions doc:FactsprocessConditions .
+_:ea2860fb781b9984c3912bbb97757a79 rdf:reifies <<( doc:Factsstudy_7 schema:mentions doc:FactsprocessConditions )>> ;
+	prov:wasDerivedFrom doc:79175f371060 .
+doc:FactspressureDrops rdfs:label "pressure drops"@en .
+_:b45e3c0c455688c31f1361d363147fc9 rdf:reifies <<( doc:FactspressureDrops rdfs:label "pressure drops"@en )>> ;
+	prov:wasDerivedFrom doc:79175f371060 .
+doc:Factsstudy_7 a schema:ScholarlyArticle .
+_:feb1b9ac10d9d4c7d48c1d1e6e356cbb rdf:reifies <<( doc:Factsstudy_7 rdf:type schema:ScholarlyArticle )>> ;
+	prov:wasDerivedFrom doc:79175f371060 .
+doc:Factsstudy_7 schema:mentions doc:FactsrefineryHeatExchangers .
+_:dc3d6f364f0f8bcef0708c439f2f41de rdf:reifies <<( doc:Factsstudy_7 schema:mentions doc:FactsrefineryHeatExchangers )>> ;
+	prov:wasDerivedFrom doc:79175f371060 .
+doc:Factsfouling_1 rdfs:label "fouling"@en .
+_:e4d17f80e3bfbbbfa6cb4079a1ddda84 rdf:reifies <<( doc:Factsfouling_1 rdfs:label "fouling"@en )>> ;
+	prov:wasDerivedFrom doc:79175f371060 .
+doc:FactspredictedOutletTemperature a schema:PropertyValue .
+_:bb545b67b75655b343c41be1997f8bf1 rdf:reifies <<( doc:FactspredictedOutletTemperature rdf:type schema:PropertyValue )>> ;
+	prov:wasDerivedFrom doc:79175f371060 .
+doc:Factsstudy_7 schema:mentions doc:FactspressureDrops .
+_:b8c3741f26481f3927cf08bc32df2322 rdf:reifies <<( doc:Factsstudy_7 schema:mentions doc:FactspressureDrops )>> ;
+	prov:wasDerivedFrom doc:79175f371060 .
+doc:Factsstudy_7 schema:mentions doc:FactsrealOperationalData .
+_:fc0be20abfae638ff0bda2a437fda7 rdf:reifies <<( doc:Factsstudy_7 schema:mentions doc:FactsrealOperationalData )>> ;
+	prov:wasDerivedFrom doc:79175f371060 .
+doc:Factsstudy_7 schema:mentions doc:FactselectricalTechniques .
+_:b7be8ea312c9bc51ed40a6a65e0fccba rdf:reifies <<( doc:Factsstudy_7 schema:mentions doc:FactselectricalTechniques )>> ;
+	prov:wasDerivedFrom doc:79175f371060 .
+<http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Predictive_maintenance_model> owl:sameAs <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Predictive_Maintenance_Article> .

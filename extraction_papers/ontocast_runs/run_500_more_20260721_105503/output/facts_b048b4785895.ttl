@@ -1,0 +1,424 @@
+@prefix None: <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD/seed#> .
+@prefix cco: <http://www.ontologyrepository.com/CommonCoreOntologies/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doc: <https://growgraph.dev/doc/b048b4785895/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix obo: <http://purl.obolibrary.org/obo/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix schema: <https://schema.org/> .
+@prefix schema1: <http://schema.org/> .
+doc:272129d0beea a prov:Entity , schema:text ;
+	prov:generatedAtTime "2026-07-22T03:52:50.050789Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+	schema:position 0 ;
+	schema:identifier "272129d0beea" .
+doc:FactstoolWearState rdfs:label "worn cutting tools" .
+_:e98a575032cbb0ee26ce711126aa00e9 rdf:reifies <<( doc:FactstoolWearState rdfs:label "worn cutting tools" )>> ;
+	prov:wasDerivedFrom doc:272129d0beea .
+doc:FactsmonitoringOfMechanicalContact cco:describes doc:FactstoolholderMainSpindleContact .
+_:ee4afc139396720581742afd9b0e0125 rdf:reifies <<( doc:FactsmonitoringOfMechanicalContact cco:describes doc:FactstoolholderMainSpindleContact )>> ;
+	prov:wasDerivedFrom doc:272129d0beea .
+doc:Factsmethod1_21 rdfs:label "condition monitoring" .
+_:ae0514e81f8d3ebf24563d38546f6502 rdf:reifies <<( doc:Factsmethod1_21 rdfs:label "condition monitoring" )>> ;
+	prov:wasDerivedFrom doc:272129d0beea .
+doc:FactscontactConductivityDistribution rdfs:label "contact conductivity distribution" .
+_:fb1b82e288df20ed6efe2644d3422d4c rdf:reifies <<( doc:FactscontactConductivityDistribution rdfs:label "contact conductivity distribution" )>> ;
+	prov:wasDerivedFrom doc:272129d0beea .
+doc:Factsid1_58 a None:Article_identifier .
+_:dfc0272b9cc729c21d3fb7cde15759a4 rdf:reifies <<( doc:Factsid1_58 rdf:type None:Article_identifier )>> ;
+	prov:wasDerivedFrom doc:272129d0beea .
+doc:FactslongServiceLife rdfs:label "long service life" .
+_:dfcedbc2e1809e9a05d095ea2f409481 rdf:reifies <<( doc:FactslongServiceLife rdfs:label "long service life" )>> ;
+	prov:wasDerivedFrom doc:272129d0beea .
+doc:Factsarticle1_108 None:has_identifier doc:Factsid1_58 .
+_:e83ba25d6fcd5eb33f84eb8ff546aaec rdf:reifies <<( doc:Factsarticle1_108 None:has_identifier doc:Factsid1_58 )>> ;
+	prov:wasDerivedFrom doc:272129d0beea .
+doc:FactsneuralNetworkModel rdfs:label "neural network trained by finite element simulations" .
+_:a26200d73607764111e1fb905f709a5d rdf:reifies <<( doc:FactsneuralNetworkModel rdfs:label "neural network trained by finite element simulations" )>> ;
+	prov:wasDerivedFrom doc:272129d0beea .
+doc:Factsresistance1 rdfs:label "electric contact resistance" .
+_:a7489bacebba9b1fe78bb2a7d75d7584 rdf:reifies <<( doc:Factsresistance1 rdfs:label "electric contact resistance" )>> ;
+	prov:wasDerivedFrom doc:272129d0beea .
+doc:FactssurfaceQuality cco:describes doc:Factsworkpiece_1 .
+_:d7f4803326b498a45b11eded59efc096 rdf:reifies <<( doc:FactssurfaceQuality cco:describes doc:Factsworkpiece_1 )>> ;
+	prov:wasDerivedFrom doc:272129d0beea .
+doc:FactscontactArea a schema1:Place .
+_:b623bbd264e988712f8166ee74cea996 rdf:reifies <<( doc:FactscontactArea rdf:type schema1:Place )>> ;
+	prov:wasDerivedFrom doc:272129d0beea .
+doc:Factsresistance1 cco:describes doc:FactscontactArea .
+_:fd35895cf8b5c7136db93de17c4a3c8b rdf:reifies <<( doc:Factsresistance1 cco:describes doc:FactscontactArea )>> ;
+	prov:wasDerivedFrom doc:272129d0beea .
+doc:FactslongServiceLife cco:describes doc:FactstoolWearState .
+_:dd3798bbf0b00c266b5a4150556d69e3 rdf:reifies <<( doc:FactslongServiceLife cco:describes doc:FactstoolWearState )>> ;
+	prov:wasDerivedFrom doc:272129d0beea .
+doc:Factsarticle1_108 dcterms:title "Experimental characterization of toolholder-main spindle contact" .
+_:c7ac703186aa0c74bd63a3b698c6413d rdf:reifies <<( doc:Factsarticle1_108 dcterms:title "Experimental characterization of toolholder-main spindle contact" )>> ;
+	prov:wasDerivedFrom doc:272129d0beea .
+doc:FactstoolWearState a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Maintainable_item> .
+_:ce13193efe7d4a6ddcd67f26e7688e07 rdf:reifies <<( doc:FactstoolWearState rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Maintainable_item> )>> ;
+	prov:wasDerivedFrom doc:272129d0beea .
+doc:Factsid1_58 a None:Article_title .
+_:df90b96d8ebaaf1d16b3bf2faea5206b rdf:reifies <<( doc:Factsid1_58 rdf:type None:Article_title )>> ;
+	prov:wasDerivedFrom doc:272129d0beea .
+doc:Factsmethod1_21 a None:Predictive_maintenance_module_function .
+_:c7b426b85cbc7005656253af61ea8450 rdf:reifies <<( doc:Factsmethod1_21 rdf:type None:Predictive_maintenance_module_function )>> ;
+	prov:wasDerivedFrom doc:272129d0beea .
+doc:FactsrepeatableFixing a None:Design_detail .
+_:b196a97a626ee12402b7cba0ddb410da rdf:reifies <<( doc:FactsrepeatableFixing rdf:type None:Design_detail )>> ;
+	prov:wasDerivedFrom doc:272129d0beea .
+doc:FactsassemblyMonitoring obo:BFO_0000051 doc:FactsrepeatableFixing .
+_:fff3137657d343c4e0950352ef282703 rdf:reifies <<( doc:FactsassemblyMonitoring obo:BFO_0000051 doc:FactsrepeatableFixing )>> ;
+	prov:wasDerivedFrom doc:272129d0beea .
+doc:Factsid1_58 None:has_text_value "Experimental characterization of toolholder-main spindle contact" .
+_:bc8fd16e4708b5d03bf16eac93536a3e rdf:reifies <<( doc:Factsid1_58 None:has_text_value "Experimental characterization of toolholder-main spindle contact" )>> ;
+	prov:wasDerivedFrom doc:272129d0beea .
+doc:FactsfrequencyResponseFunctions cco:describes doc:Factsworkpiece_1 .
+_:a00f91578fcf9c9a84f8aea6ded86ee6 rdf:reifies <<( doc:FactsfrequencyResponseFunctions cco:describes doc:Factsworkpiece_1 )>> ;
+	prov:wasDerivedFrom doc:272129d0beea .
+doc:FactstoolholderMainSpindleContact rdfs:label "toolholder-main spindle contact" .
+_:d88646900fdd9d1e83bfe5612fd0a471 rdf:reifies <<( doc:FactstoolholderMainSpindleContact rdfs:label "toolholder-main spindle contact" )>> ;
+	prov:wasDerivedFrom doc:272129d0beea .
+doc:FactscontactConductivityDistribution obo:BFO_0000051 doc:FactspressureDistribution .
+_:dfbf8688dc9dcc6aa76f3884637b576b rdf:reifies <<( doc:FactscontactConductivityDistribution obo:BFO_0000051 doc:FactspressureDistribution )>> ;
+	prov:wasDerivedFrom doc:272129d0beea .
+doc:FactsneuralNetworkModel cco:describes doc:FactscontactConductivityDistribution .
+_:affcf9015343e9f47f6db8a03e4db3df rdf:reifies <<( doc:FactsneuralNetworkModel cco:describes doc:FactscontactConductivityDistribution )>> ;
+	prov:wasDerivedFrom doc:272129d0beea .
+doc:FactsassemblyMonitoring a None:Health_assessment .
+_:e1c3a43314b932e87af168245d34bb07 rdf:reifies <<( doc:FactsassemblyMonitoring rdf:type None:Health_assessment )>> ;
+	prov:wasDerivedFrom doc:272129d0beea .
+doc:Factsarticle1_108 None:has_title doc:Factsid1_58 .
+_:c383c1f3c376abf09b7cdb676ee9cfd1 rdf:reifies <<( doc:Factsarticle1_108 None:has_title doc:Factsid1_58 )>> ;
+	prov:wasDerivedFrom doc:272129d0beea .
+doc:Factsarticle1_108 None:has_publication_year doc:Factsyear1_90 .
+_:d0f03ad200fa65958491205e20d3091a rdf:reifies <<( doc:Factsarticle1_108 None:has_publication_year doc:Factsyear1_90 )>> ;
+	prov:wasDerivedFrom doc:272129d0beea .
+doc:FactstoolholderMainSpindleContact a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Maintainable_item> .
+_:eea25f174081b53d09868e08b4732923 rdf:reifies <<( doc:FactstoolholderMainSpindleContact rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Maintainable_item> )>> ;
+	prov:wasDerivedFrom doc:272129d0beea .
+doc:FactspressureDistribution rdfs:label "pressure distribution" .
+_:c4a9da02d7f264c9c9635cefdbc9f478 rdf:reifies <<( doc:FactspressureDistribution rdfs:label "pressure distribution" )>> ;
+	prov:wasDerivedFrom doc:272129d0beea .
+doc:FactsassemblyMonitoring rdfs:label "monitor the correct assembly" .
+_:d7b825d6ac945db40d1d5a0de927f43c rdf:reifies <<( doc:FactsassemblyMonitoring rdfs:label "monitor the correct assembly" )>> ;
+	prov:wasDerivedFrom doc:272129d0beea .
+doc:FactslongServiceLife a None:Performance_value .
+_:a165e210472edda080afc32aca3ce355 rdf:reifies <<( doc:FactslongServiceLife rdf:type None:Performance_value )>> ;
+	prov:wasDerivedFrom doc:272129d0beea .
+doc:Factsmethod1_21 cco:describes doc:FactstoolholderMainSpindleContact .
+_:e15b110b7a77842ac245a9faef2bb901 rdf:reifies <<( doc:Factsmethod1_21 cco:describes doc:FactstoolholderMainSpindleContact )>> ;
+	prov:wasDerivedFrom doc:272129d0beea .
+doc:FactscontactConductivityDistribution a None:Performance_value .
+_:c562ba771baca88d7a1f2dcd0de76410 rdf:reifies <<( doc:FactscontactConductivityDistribution rdf:type None:Performance_value )>> ;
+	prov:wasDerivedFrom doc:272129d0beea .
+doc:FactscontactArea rdfs:label "contact area" .
+_:d41dd037a197a13ae8fd7d2d41146b0a rdf:reifies <<( doc:FactscontactArea rdfs:label "contact area" )>> ;
+	prov:wasDerivedFrom doc:272129d0beea .
+doc:Factsarticle1_108 schema1:datePublished "2025-05-23"^^<http://www.w3.org/2001/XMLSchema#date> .
+_:fd6412d9adb4b54f1af361f6a728a2f8 rdf:reifies <<( doc:Factsarticle1_108 schema1:datePublished "2025-05-23"^^<http://www.w3.org/2001/XMLSchema#date> )>> ;
+	prov:wasDerivedFrom doc:272129d0beea .
+doc:FactsmonitoringOfMechanicalContact rdfs:label "monitoring of mechanical contact" .
+_:a89ee98034d75a35f82ee92fd2e373da rdf:reifies <<( doc:FactsmonitoringOfMechanicalContact rdfs:label "monitoring of mechanical contact" )>> ;
+	prov:wasDerivedFrom doc:272129d0beea .
+doc:Factsarticle1_108 a None:Predictive_Maintenance_Article .
+_:be9a64ae9c100323cb2aeaecf41464c rdf:reifies <<( doc:Factsarticle1_108 rdf:type None:Predictive_Maintenance_Article )>> ;
+	prov:wasDerivedFrom doc:272129d0beea .
+doc:FactscontactArea rdfs:label "contact perimeter" .
+_:e619ede8b948ee4c205da4937e725731 rdf:reifies <<( doc:FactscontactArea rdfs:label "contact perimeter" )>> ;
+	prov:wasDerivedFrom doc:272129d0beea .
+doc:FactsneuralNetworkModel a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Predictive_maintenance_system_module> .
+_:c28e361f98ee221db6da781d0739cd03 rdf:reifies <<( doc:FactsneuralNetworkModel rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Predictive_maintenance_system_module> )>> ;
+	prov:wasDerivedFrom doc:272129d0beea .
+doc:FactsfrequencyResponseFunctions rdfs:label "frequency response functions" .
+_:aad8f043962adb4f865d4e5dc9d80afe rdf:reifies <<( doc:FactsfrequencyResponseFunctions rdfs:label "frequency response functions" )>> ;
+	prov:wasDerivedFrom doc:272129d0beea .
+doc:FactsrepeatableFixing rdfs:label "repeatable fixing" .
+_:a0aaaa9630b33781620311090e8ae06c rdf:reifies <<( doc:FactsrepeatableFixing rdfs:label "repeatable fixing" )>> ;
+	prov:wasDerivedFrom doc:272129d0beea .
+doc:Factsresistance1 a None:Performance_indicator .
+_:ffb3217a15f461cb201cae0031194313 rdf:reifies <<( doc:Factsresistance1 rdf:type None:Performance_indicator )>> ;
+	prov:wasDerivedFrom doc:272129d0beea .
+doc:Factsyear1_90 a None:Publication_year .
+_:af20ee59115a8649f69f401bb47dff7c rdf:reifies <<( doc:Factsyear1_90 rdf:type None:Publication_year )>> ;
+	prov:wasDerivedFrom doc:272129d0beea .
+doc:FactssurfaceQuality rdfs:label "surface quality" .
+_:a793e456412e094d829dc04c7c036b2d rdf:reifies <<( doc:FactssurfaceQuality rdfs:label "surface quality" )>> ;
+	prov:wasDerivedFrom doc:272129d0beea .
+doc:FactsfrequencyResponseFunctions a None:Performance_indicator .
+_:f0deb6f12c7f94f40740289e279422b8 rdf:reifies <<( doc:FactsfrequencyResponseFunctions rdf:type None:Performance_indicator )>> ;
+	prov:wasDerivedFrom doc:272129d0beea .
+doc:FactssurfaceQuality a None:Performance_indicator .
+_:c641c285294ec0563bbf598b85b2473f rdf:reifies <<( doc:FactssurfaceQuality rdf:type None:Performance_indicator )>> ;
+	prov:wasDerivedFrom doc:272129d0beea .
+doc:FactsmonitoringOfMechanicalContact a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Fault_detection> .
+_:a61da9b489b814e8c9fa0cd694bab8fe rdf:reifies <<( doc:FactsmonitoringOfMechanicalContact rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Fault_detection> )>> ;
+	prov:wasDerivedFrom doc:272129d0beea .
+doc:FactspressureDistribution a None:Performance_value .
+_:b95e43b87a3242891ce6d3cf717f9c41 rdf:reifies <<( doc:FactspressureDistribution rdf:type None:Performance_value )>> ;
+	prov:wasDerivedFrom doc:272129d0beea .
+doc:FactscontactArea a schema1:Thing .
+_:e57d4ca5c464dd3bcb4a19f3f00ad510 rdf:reifies <<( doc:FactscontactArea rdf:type schema1:Thing )>> ;
+	prov:wasDerivedFrom doc:272129d0beea .
+doc:Factsyear1_90 None:has_interger_value 2025 .
+_:bbf87024bc333bfb26b9938eb65444e9 rdf:reifies <<( doc:Factsyear1_90 None:has_interger_value 2025 )>> ;
+	prov:wasDerivedFrom doc:272129d0beea .
+doc:654a5ebca2a3 a prov:Entity , schema:text ;
+	prov:generatedAtTime "2026-07-22T03:52:50.054314Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+	schema:position 1 ;
+	schema:identifier "654a5ebca2a3" .
+doc:Factsvoltage1 cco:describes doc:Factsresistance1 .
+_:d6663c2798b1df4d1b2feffb87113169 rdf:reifies <<( doc:Factsvoltage1 cco:describes doc:Factsresistance1 )>> ;
+	prov:wasDerivedFrom doc:654a5ebca2a3 .
+doc:Factsmethod1_21 a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Fault_detection> .
+_:f8dd5c85d49f3dcfcadcf2c3bfd09b69 rdf:reifies <<( doc:Factsmethod1_21 rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Fault_detection> )>> ;
+	prov:wasDerivedFrom doc:654a5ebca2a3 .
+doc:Factsforce1 a obo:BFO_0000019 .
+_:c4fc62dd00248e495a70180be33600b9 rdf:reifies <<( doc:Factsforce1 rdf:type obo:BFO_0000019 )>> ;
+	prov:wasDerivedFrom doc:654a5ebca2a3 .
+doc:Factsmethod1_21 owl:equivalentClass doc:Factsmethod1_21 .
+_:d8542a9ad68cc220ae56bea7bd8c2562 rdf:reifies <<( doc:Factsmethod1_21 owl:equivalentClass doc:Factsmethod1_21 )>> ;
+	prov:wasDerivedFrom doc:654a5ebca2a3 .
+doc:Factsvoltage1 rdfs:label "voltage" .
+_:ff31adfddff27aea1c60f3f9af309b6d rdf:reifies <<( doc:Factsvoltage1 rdfs:label "voltage" )>> ;
+	prov:wasDerivedFrom doc:654a5ebca2a3 .
+doc:Factslocation1_4 a cco:DescriptiveInformationContentEntity .
+_:ff21c14f25a862c379f16a861940e349 rdf:reifies <<( doc:Factslocation1_4 rdf:type cco:DescriptiveInformationContentEntity )>> ;
+	prov:wasDerivedFrom doc:654a5ebca2a3 .
+doc:Factsmethod1_21 a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Predictive_maintenance_system_module> .
+_:f1a3ba15552d0c2ad48ef9789f5fa485 rdf:reifies <<( doc:Factsmethod1_21 rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Predictive_maintenance_system_module> )>> ;
+	prov:wasDerivedFrom doc:654a5ebca2a3 .
+doc:Factselectrode1 rdfs:label "electrodes" .
+_:a98f9cd3f092a1f8a63d2e1da79f5622 rdf:reifies <<( doc:Factselectrode1 rdfs:label "electrodes" )>> ;
+	prov:wasDerivedFrom doc:654a5ebca2a3 .
+doc:Factsrow5 a cco:DescriptiveInformationContentEntity .
+_:aec1cad238f3b070047e9763b573c144 rdf:reifies <<( doc:Factsrow5 rdf:type cco:DescriptiveInformationContentEntity )>> ;
+	prov:wasDerivedFrom doc:654a5ebca2a3 .
+_:a7489bacebba9b1fe78bb2a7d75d7584 prov:wasDerivedFrom doc:654a5ebca2a3 .
+doc:Factsspot1 a cco:DescriptiveInformationContentEntity .
+_:edad42b37f5aca17218c34fe55c602b7 rdf:reifies <<( doc:Factsspot1 rdf:type cco:DescriptiveInformationContentEntity )>> ;
+	prov:wasDerivedFrom doc:654a5ebca2a3 .
+doc:Factsspot1 cco:describes doc:Factscontact1 .
+_:a651f192ff4da9fcefeb558a362167a0 rdf:reifies <<( doc:Factsspot1 cco:describes doc:Factscontact1 )>> ;
+	prov:wasDerivedFrom doc:654a5ebca2a3 .
+doc:Factsforce1 rdfs:label "normal force" .
+_:ff1d8d591f716117683f229c0a680c77 rdf:reifies <<( doc:Factsforce1 rdfs:label "normal force" )>> ;
+	prov:wasDerivedFrom doc:654a5ebca2a3 .
+doc:Factscontact1 rdfs:label "toolholder-spindle socket connection" .
+_:db752832c7b2d4a21d66ff7689fc7c0e rdf:reifies <<( doc:Factscontact1 rdfs:label "toolholder-spindle socket connection" )>> ;
+	prov:wasDerivedFrom doc:654a5ebca2a3 .
+doc:Factsmethod1_21 <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#has_predictive_maintenance_function> doc:Factsmethod1_21 .
+_:cb8083bef1c80aefe4efcbfd2a9bc846 rdf:reifies <<( doc:Factsmethod1_21 <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#has_predictive_maintenance_function> doc:Factsmethod1_21 )>> ;
+	prov:wasDerivedFrom doc:654a5ebca2a3 .
+doc:Factsresistance1 a cco:InformationContentEntity .
+_:cdde58eac1a752d80d3b6578f5d48b42 rdf:reifies <<( doc:Factsresistance1 rdf:type cco:InformationContentEntity )>> ;
+	prov:wasDerivedFrom doc:654a5ebca2a3 .
+doc:Factspressure1_1 a obo:BFO_0000019 .
+_:b9f5aeaa084fee941869f4b4f14d9abc rdf:reifies <<( doc:Factspressure1_1 rdf:type obo:BFO_0000019 )>> ;
+	prov:wasDerivedFrom doc:654a5ebca2a3 .
+doc:Factsresistance1 rdfs:label "measurement of electric contact resistance" .
+_:a0b41dbd589c0c2318b5a872c92f4d1f rdf:reifies <<( doc:Factsresistance1 rdfs:label "measurement of electric contact resistance" )>> ;
+	prov:wasDerivedFrom doc:654a5ebca2a3 .
+doc:Factscontact1 a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Maintainable_item> .
+_:d42cd48e347e3acdc9e79aedd8b66053 rdf:reifies <<( doc:Factscontact1 rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Maintainable_item> )>> ;
+	prov:wasDerivedFrom doc:654a5ebca2a3 .
+doc:Factscircuit1 a cco:Algorithm .
+_:c35e02f40f957fb69bfa53f83cd6e3bc rdf:reifies <<( doc:Factscircuit1 rdf:type cco:Algorithm )>> ;
+	prov:wasDerivedFrom doc:654a5ebca2a3 .
+doc:Factsspot1 rdfs:label "quality of the mechanical contact" .
+_:d8132e8a8d8a2c49684276bd172e1bda rdf:reifies <<( doc:Factsspot1 rdfs:label "quality of the mechanical contact" )>> ;
+	prov:wasDerivedFrom doc:654a5ebca2a3 .
+doc:Factspressure1_1 rdfs:label "contact pressure distribution" .
+_:cd671ccee8d4f374b12c542d0348bd57 rdf:reifies <<( doc:Factspressure1_1 rdfs:label "contact pressure distribution" )>> ;
+	prov:wasDerivedFrom doc:654a5ebca2a3 .
+doc:Factsvoltage1 a obo:BFO_0000019 .
+_:c7a1bbddbfbd559a2e357911901ea167 rdf:reifies <<( doc:Factsvoltage1 rdf:type obo:BFO_0000019 )>> ;
+	prov:wasDerivedFrom doc:654a5ebca2a3 .
+doc:Factsresistance1 cco:describes doc:Factscontact1 .
+_:f758a9742718b360e1b4595574117e81 rdf:reifies <<( doc:Factsresistance1 cco:describes doc:Factscontact1 )>> ;
+	prov:wasDerivedFrom doc:654a5ebca2a3 .
+doc:Factscircuit1 cco:describes doc:Factscontact1 .
+_:db7b563dec29804e3a75bbccd3b801c8 rdf:reifies <<( doc:Factscircuit1 cco:describes doc:Factscontact1 )>> ;
+	prov:wasDerivedFrom doc:654a5ebca2a3 .
+doc:Factslocation1_4 rdfs:label "faults or shear zones" .
+_:e5f27210b21e79f026160f3c7ea8bdc3 rdf:reifies <<( doc:Factslocation1_4 rdfs:label "faults or shear zones" )>> ;
+	prov:wasDerivedFrom doc:654a5ebca2a3 .
+doc:Factsspot1 rdfs:label "contact spots" .
+_:dd9b869b587431c8521dffa16be9564c rdf:reifies <<( doc:Factsspot1 rdfs:label "contact spots" )>> ;
+	prov:wasDerivedFrom doc:654a5ebca2a3 .
+doc:Factsresistance1 rdfs:label "contact resistance" .
+_:e873629d98b6e62a28c29058a608c6b8 rdf:reifies <<( doc:Factsresistance1 rdfs:label "contact resistance" )>> ;
+	prov:wasDerivedFrom doc:654a5ebca2a3 .
+doc:Factsmethod1_21 rdfs:label "proposed method" .
+_:b76085deb1e50f03168be0b660f59448 rdf:reifies <<( doc:Factsmethod1_21 rdfs:label "proposed method" )>> ;
+	prov:wasDerivedFrom doc:654a5ebca2a3 .
+doc:Factsforce1 cco:describes doc:Factscontact1 .
+_:f4aef71583b4b058b97c028476d515ba rdf:reifies <<( doc:Factsforce1 cco:describes doc:Factscontact1 )>> ;
+	prov:wasDerivedFrom doc:654a5ebca2a3 .
+doc:Factscontact1 rdfs:label "workpiece and the fixture" .
+_:c24ee6b7d420d2b16928c7b412417cb rdf:reifies <<( doc:Factscontact1 rdfs:label "workpiece and the fixture" )>> ;
+	prov:wasDerivedFrom doc:654a5ebca2a3 .
+doc:Factselectrode1 a cco:Artifact .
+_:fa717a2787fb90b4999cd1d03a66c3d1 rdf:reifies <<( doc:Factselectrode1 rdf:type cco:Artifact )>> ;
+	prov:wasDerivedFrom doc:654a5ebca2a3 .
+doc:Factsrow5 rdfs:label "regions" .
+_:bb1aeb5ebdc5d1b8345464dea2014fc0 rdf:reifies <<( doc:Factsrow5 rdfs:label "regions" )>> ;
+	prov:wasDerivedFrom doc:654a5ebca2a3 .
+doc:Factsspot1 rdfs:label "contact pattern" .
+_:cc919bcb8ec5efb9d4e80397bd8d80fb rdf:reifies <<( doc:Factsspot1 rdfs:label "contact pattern" )>> ;
+	prov:wasDerivedFrom doc:654a5ebca2a3 .
+doc:Factscontact1 rdfs:label "machine parts" .
+_:a25364b20168643fc9ff9d27f795b1c7 rdf:reifies <<( doc:Factscontact1 rdfs:label "machine parts" )>> ;
+	prov:wasDerivedFrom doc:654a5ebca2a3 .
+doc:Factspressure1_1 cco:describes doc:Factscontact1 .
+_:eba38334e7a3cfa2bef3fe8fc5f4c18b rdf:reifies <<( doc:Factspressure1_1 cco:describes doc:Factscontact1 )>> ;
+	prov:wasDerivedFrom doc:654a5ebca2a3 .
+doc:Factsresistance1 a obo:BFO_0000019 .
+_:bbd6f0cd437b70dbd4b0ea0a62289dcb rdf:reifies <<( doc:Factsresistance1 rdf:type obo:BFO_0000019 )>> ;
+	prov:wasDerivedFrom doc:654a5ebca2a3 .
+doc:Factsresistance1 cco:is_about doc:Factscontact1 .
+_:b0ac49607049b9cb5e3fcf8ba1c3d3 rdf:reifies <<( doc:Factsresistance1 cco:is_about doc:Factscontact1 )>> ;
+	prov:wasDerivedFrom doc:654a5ebca2a3 .
+doc:Factscircuit1 rdfs:label "discrete electrical circuit model" .
+_:d2ed5f3548dbbf3e58757d574096b89f rdf:reifies <<( doc:Factscircuit1 rdfs:label "discrete electrical circuit model" )>> ;
+	prov:wasDerivedFrom doc:654a5ebca2a3 .
+doc:Factsmethod1_21 rdfs:label "analysis" .
+_:e4f2bbb65f126de1011cec24b593d8cc rdf:reifies <<( doc:Factsmethod1_21 rdfs:label "analysis" )>> ;
+	prov:wasDerivedFrom doc:654a5ebca2a3 .
+doc:76f23d76e779 a prov:Entity , schema:text ;
+	prov:generatedAtTime "2026-07-22T03:52:50.056319Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+	schema:position 2 ;
+	schema:identifier "76f23d76e779" .
+doc:Factscurrent_i0 a cco:DescriptiveInformationContentEntity .
+_:a9977c08ebb06d178e58d131f0b8124d rdf:reifies <<( doc:Factscurrent_i0 rdf:type cco:DescriptiveInformationContentEntity )>> ;
+	prov:wasDerivedFrom doc:76f23d76e779 .
+_:aec1cad238f3b070047e9763b573c144 prov:wasDerivedFrom doc:76f23d76e779 .
+doc:Factscurrent_i0 rdfs:label "outflowing current I0" .
+_:b3f3662b8956229deaa011cdcde70f rdf:reifies <<( doc:Factscurrent_i0 rdfs:label "outflowing current I0" )>> ;
+	prov:wasDerivedFrom doc:76f23d76e779 .
+doc:FactsmatrixA cco:describes doc:FactsmatrixA .
+_:bad56eaa5b8e406a819d1d3d4ff5e8d0 rdf:reifies <<( doc:FactsmatrixA cco:describes doc:FactsmatrixA )>> ;
+	prov:wasDerivedFrom doc:76f23d76e779 .
+doc:Factsnode_count1 a None:number_if_input_variables .
+_:aecf51042a2b1b2b8cafce85cce0261a rdf:reifies <<( doc:Factsnode_count1 rdf:type None:number_if_input_variables )>> ;
+	prov:wasDerivedFrom doc:76f23d76e779 .
+doc:FactsmatrixA rdfs:label "A_f" .
+_:cbfcf106a1eace56507d37a382d3d882 rdf:reifies <<( doc:FactsmatrixA rdfs:label "A_f" )>> ;
+	prov:wasDerivedFrom doc:76f23d76e779 .
+_:df90b96d8ebaaf1d16b3bf2faea5206b prov:wasDerivedFrom doc:76f23d76e779 .
+doc:Factscircuit1 obo:BFO_0000051 doc:FactsmatrixA .
+_:ce5a0bbe6a4ec9e74cc445022c0d43af rdf:reifies <<( doc:Factscircuit1 obo:BFO_0000051 doc:FactsmatrixA )>> ;
+	prov:wasDerivedFrom doc:76f23d76e779 .
+doc:Factselectrical_network1 obo:BFO_0000051 doc:Factscircuit1 .
+_:e529e1f63e64571b7694ef034f76e558 rdf:reifies <<( doc:Factselectrical_network1 obo:BFO_0000051 doc:Factscircuit1 )>> ;
+	prov:wasDerivedFrom doc:76f23d76e779 .
+doc:Factselectrical_network1 obo:RO_0000086 doc:Factsnode_count1 .
+_:a7114798b4df2ed11c43c5a0e0f51567 rdf:reifies <<( doc:Factselectrical_network1 obo:RO_0000086 doc:Factsnode_count1 )>> ;
+	prov:wasDerivedFrom doc:76f23d76e779 .
+doc:FactsmatrixA a cco:DescriptiveInformationContentEntity .
+_:e9e0cf0e919b0ec78034e6456b080ec4 rdf:reifies <<( doc:FactsmatrixA rdf:type cco:DescriptiveInformationContentEntity )>> ;
+	prov:wasDerivedFrom doc:76f23d76e779 .
+doc:FactsmatrixA rdfs:label "fundamental cycle matrix" .
+_:b5748dc2c1493deccc8db84556a90b5 rdf:reifies <<( doc:FactsmatrixA rdfs:label "fundamental cycle matrix" )>> ;
+	prov:wasDerivedFrom doc:76f23d76e779 .
+doc:Factskirchhoff_laws1 a None:Predictive_maintenance_module_function .
+_:d00aeed45eb849bc36e79d3985b22064 rdf:reifies <<( doc:Factskirchhoff_laws1 rdf:type None:Predictive_maintenance_module_function )>> ;
+	prov:wasDerivedFrom doc:76f23d76e779 .
+doc:Factsspanning_tree1 a None:Design_detail .
+_:c5586b4bc0c4af416eb4d2722cb42fd3 rdf:reifies <<( doc:Factsspanning_tree1 rdf:type None:Design_detail )>> ;
+	prov:wasDerivedFrom doc:76f23d76e779 .
+doc:FactsmatrixA rdfs:label "incidence matrix of the network" .
+_:e57538214b9e04ae84f081d1c1f4fe62 rdf:reifies <<( doc:FactsmatrixA rdfs:label "incidence matrix of the network" )>> ;
+	prov:wasDerivedFrom doc:76f23d76e779 .
+doc:Factselectrical_network1 rdfs:label "electrical network corresponding to the measurement scheme" .
+_:a6d02f64463832355efe4ad11d70c369 rdf:reifies <<( doc:Factselectrical_network1 rdfs:label "electrical network corresponding to the measurement scheme" )>> ;
+	prov:wasDerivedFrom doc:76f23d76e779 .
+_:c383c1f3c376abf09b7cdb676ee9cfd1 prov:wasDerivedFrom doc:76f23d76e779 .
+doc:Factscircuit1 obo:BFO_0000051 doc:Factsspanning_tree1 .
+_:e57838d981d8081167ac5d263e70fe26 rdf:reifies <<( doc:Factscircuit1 obo:BFO_0000051 doc:Factsspanning_tree1 )>> ;
+	prov:wasDerivedFrom doc:76f23d76e779 .
+doc:Factsnode_count1 None:has_interger_value 6 .
+_:d83aa596b40072eb760e0bd9d3de7ac5 rdf:reifies <<( doc:Factsnode_count1 None:has_interger_value 6 )>> ;
+	prov:wasDerivedFrom doc:76f23d76e779 .
+doc:Factsrow5 cco:describes doc:FactsmatrixA .
+_:c4c17babbf77cc3b7a334f25f7347b25 rdf:reifies <<( doc:Factsrow5 cco:describes doc:FactsmatrixA )>> ;
+	prov:wasDerivedFrom doc:76f23d76e779 .
+doc:Factskirchhoff_laws1 rdfs:label "derivation of Kirchhoff's equations" .
+_:c0c849be0368f92267176bb80eb99c81 rdf:reifies <<( doc:Factskirchhoff_laws1 rdfs:label "derivation of Kirchhoff's equations" )>> ;
+	prov:wasDerivedFrom doc:76f23d76e779 .
+doc:FactsmatrixA rdfs:label "A" .
+_:e946bbfaa901e85a11a46514e187658c rdf:reifies <<( doc:FactsmatrixA rdfs:label "A" )>> ;
+	prov:wasDerivedFrom doc:76f23d76e779 .
+doc:Factscurrent_vector1 rdfs:label "vector of unknown branch currents" .
+_:c5e000d893e56ac0e67b71ea8d626d8b rdf:reifies <<( doc:Factscurrent_vector1 rdfs:label "vector of unknown branch currents" )>> ;
+	prov:wasDerivedFrom doc:76f23d76e779 .
+doc:Factsspanning_tree1 rdfs:label "spanning tree" .
+_:bec9710110fc6a6d24309810f3589a83 rdf:reifies <<( doc:Factsspanning_tree1 rdfs:label "spanning tree" )>> ;
+	prov:wasDerivedFrom doc:76f23d76e779 .
+doc:Factsnode_count1 None:has_interger_value 3 .
+_:bbed50f5cac53364479fc1435ccf0db5 rdf:reifies <<( doc:Factsnode_count1 None:has_interger_value 3 )>> ;
+	prov:wasDerivedFrom doc:76f23d76e779 .
+doc:Factscircuit1 a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Predictive_maintenance_system_module> .
+_:be04325a401a22e91cf5dd329fc70947 rdf:reifies <<( doc:Factscircuit1 rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Predictive_maintenance_system_module> )>> ;
+	prov:wasDerivedFrom doc:76f23d76e779 .
+doc:Factscurrent_vector1 a cco:DescriptiveInformationContentEntity .
+_:da221e2deed939e4111fe5d43cbda446 rdf:reifies <<( doc:Factscurrent_vector1 rdf:type cco:DescriptiveInformationContentEntity )>> ;
+	prov:wasDerivedFrom doc:76f23d76e779 .
+doc:Factscircuit1 rdfs:label "simple circuit with three contacts and six nodes" .
+_:f471b0357d7e21b95fa918de56416877 rdf:reifies <<( doc:Factscircuit1 rdfs:label "simple circuit with three contacts and six nodes" )>> ;
+	prov:wasDerivedFrom doc:76f23d76e779 .
+doc:FactsmatrixA rdfs:label "unit matrix" .
+_:ebbef306a39c085a2db190b1f87fdb86 rdf:reifies <<( doc:FactsmatrixA rdfs:label "unit matrix" )>> ;
+	prov:wasDerivedFrom doc:76f23d76e779 .
+doc:Factsrow5 rdfs:label "5th row" .
+_:a0818e0060c87287caa7d8cf442efc9b rdf:reifies <<( doc:Factsrow5 rdfs:label "5th row" )>> ;
+	prov:wasDerivedFrom doc:76f23d76e779 .
+doc:Factscontacts1 obo:RO_0000085 doc:Factselectrical_network1 .
+_:cbf6d427aabbd4065616e9d6d92aa538 rdf:reifies <<( doc:Factscontacts1 obo:RO_0000085 doc:Factselectrical_network1 )>> ;
+	prov:wasDerivedFrom doc:76f23d76e779 .
+doc:Factsyear1_90 None:has_interger_value 2024 .
+_:be5f9201e0ef872ac11afbfc0aeff50a rdf:reifies <<( doc:Factsyear1_90 None:has_interger_value 2024 )>> ;
+	prov:wasDerivedFrom doc:76f23d76e779 .
+doc:Factscurrent_vector1 cco:describes doc:Factscurrent_i0 .
+_:f3998f1bfab109444041f703fbec3f09 rdf:reifies <<( doc:Factscurrent_vector1 cco:describes doc:Factscurrent_i0 )>> ;
+	prov:wasDerivedFrom doc:76f23d76e779 .
+doc:Factscontacts1 a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Maintainable_item> .
+_:e267578f2464412bfdefcab3d326dad8 rdf:reifies <<( doc:Factscontacts1 rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Maintainable_item> )>> ;
+	prov:wasDerivedFrom doc:76f23d76e779 .
+doc:Factscircuit1 obo:BFO_0000051 doc:Factscurrent_vector1 .
+_:c1ac1d3a950d74de247d90f02963cfbd rdf:reifies <<( doc:Factscircuit1 obo:BFO_0000051 doc:Factscurrent_vector1 )>> ;
+	prov:wasDerivedFrom doc:76f23d76e779 .
+doc:FactsmatrixA rdfs:label "A^T" .
+_:c38a94bd145b5ae044f55672b2869a53 rdf:reifies <<( doc:FactsmatrixA rdfs:label "A^T" )>> ;
+	prov:wasDerivedFrom doc:76f23d76e779 .
+doc:Factsnode5 a cco:Artifact .
+_:a6bc2e6de2bae2e4c26de71e286cf03d rdf:reifies <<( doc:Factsnode5 rdf:type cco:Artifact )>> ;
+	prov:wasDerivedFrom doc:76f23d76e779 .
+doc:Factscontacts1 rdfs:label "touching machine parts contact area" .
+_:becb0664551e6d3813696b89c20c634a rdf:reifies <<( doc:Factscontacts1 rdfs:label "touching machine parts contact area" )>> ;
+	prov:wasDerivedFrom doc:76f23d76e779 .
+doc:FactsmatrixA rdfs:label "fundamental incidence matrix" .
+_:e68976eb56d5f2e9ac566d4983608125 rdf:reifies <<( doc:FactsmatrixA rdfs:label "fundamental incidence matrix" )>> ;
+	prov:wasDerivedFrom doc:76f23d76e779 .
+doc:Factsnode5 rdfs:label "node 5" .
+_:ca18fd596089c442f5f52b5d1b92c5f6 rdf:reifies <<( doc:Factsnode5 rdfs:label "node 5" )>> ;
+	prov:wasDerivedFrom doc:76f23d76e779 .
+doc:Factselectrical_network1 a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Predictive_maintenance_system_module> .
+_:f73248243a854465ae0efd5fad65c51e rdf:reifies <<( doc:Factselectrical_network1 rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Predictive_maintenance_system_module> )>> ;
+	prov:wasDerivedFrom doc:76f23d76e779 .
+_:d0f03ad200fa65958491205e20d3091a prov:wasDerivedFrom doc:76f23d76e779 .
+_:be9a64ae9c100323cb2aeaecf41464c prov:wasDerivedFrom doc:76f23d76e779 .
+doc:Factscircuit1 cco:describes doc:Factselectrical_network1 .
+_:e83b3b603bf064254fc0abf227f604e8 rdf:reifies <<( doc:Factscircuit1 cco:describes doc:Factselectrical_network1 )>> ;
+	prov:wasDerivedFrom doc:76f23d76e779 .
+doc:Factselectrical_network1 cco:describes doc:Factscontacts1 .
+_:b062cfc8fb6beaca7920de98558e858a rdf:reifies <<( doc:Factselectrical_network1 cco:describes doc:Factscontacts1 )>> ;
+	prov:wasDerivedFrom doc:76f23d76e779 .
+doc:Factskirchhoff_laws1 cco:describes doc:Factscircuit1 .
+_:fdca62058c63d508942014956dab01c2 rdf:reifies <<( doc:Factskirchhoff_laws1 cco:describes doc:Factscircuit1 )>> ;
+	prov:wasDerivedFrom doc:76f23d76e779 .
+_:af20ee59115a8649f69f401bb47dff7c prov:wasDerivedFrom doc:76f23d76e779 .
+doc:Factsid1_58 None:has_text_value "Partitioned contact area between toolholder and spindle socket" .
+_:fe1263948a051b45a7f85eda7ca5c5ef rdf:reifies <<( doc:Factsid1_58 None:has_text_value "Partitioned contact area between toolholder and spindle socket" )>> ;
+	prov:wasDerivedFrom doc:76f23d76e779 .
+cco:InformationContentEntity owl:sameAs cco:DescriptiveInformationContentEntity .

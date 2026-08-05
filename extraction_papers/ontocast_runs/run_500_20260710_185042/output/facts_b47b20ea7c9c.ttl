@@ -1,0 +1,420 @@
+@prefix None: <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD/seed#> .
+@prefix cco: <http://www.ontologyrepository.com/CommonCoreOntologies/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doc: <https://growgraph.dev/doc/b47b20ea7c9c/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix obo: <http://purl.obolibrary.org/obo/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix cd: <https://growgraph.dev/facts> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix schema: <https://schema.org/> .
+@prefix schema1: <http://schema.org/> .
+doc:6064b9d13303 a prov:Entity , schema:text ;
+	prov:generatedAtTime "2026-07-11T19:04:51.038952Z"^^xsd:dateTime ;
+	schema:position 0 ;
+	schema:identifier "6064b9d13303" .
+doc:factsuses_1 a rdf:Property .
+_:aba0f59b84e20426f6f4c6fae3d8d983 rdf:reifies <<( doc:factsuses_1 rdf:type rdf:Property )>> ;
+	prov:wasDerivedFrom doc:6064b9d13303 .
+doc:Factsarticle1_1 doc:factsuses_1 doc:FactsImsDataset .
+_:fc835c7a56825482d8ffdddb9920b29c rdf:reifies <<( doc:Factsarticle1_1 doc:factsuses_1 doc:FactsImsDataset )>> ;
+	prov:wasDerivedFrom doc:6064b9d13303 .
+doc:FactsAnfis a None:Predictive_maintenance_model .
+_:a1789c8bd0cd0840b013dfe6a8f8eacf rdf:reifies <<( doc:FactsAnfis rdf:type None:Predictive_maintenance_model )>> ;
+	prov:wasDerivedFrom doc:6064b9d13303 .
+doc:Factsconfiguration1 None:describes_configuration doc:FactsAnfis .
+_:b2514705c19da448c21adca11b54e2a4 rdf:reifies <<( doc:Factsconfiguration1 None:describes_configuration doc:FactsAnfis )>> ;
+	prov:wasDerivedFrom doc:6064b9d13303 .
+doc:FactshealthIndicators a None:Data_variable .
+_:c664de5ef04a6daa2c9a69479e817ec2 rdf:reifies <<( doc:FactshealthIndicators rdf:type None:Data_variable )>> ;
+	prov:wasDerivedFrom doc:6064b9d13303 .
+doc:Factsconfiguration1 a None:Model_configuration .
+_:a29ed10e252af9d420726a3932306ead rdf:reifies <<( doc:Factsconfiguration1 rdf:type None:Model_configuration )>> ;
+	prov:wasDerivedFrom doc:6064b9d13303 .
+doc:FactsRfe doc:factsuses_1 doc:FactshealthIndicators .
+_:f7a097136abd1d500dec6a8924ecd1ad rdf:reifies <<( doc:FactsRfe doc:factsuses_1 doc:FactshealthIndicators )>> ;
+	prov:wasDerivedFrom doc:6064b9d13303 .
+doc:FactsRfe rdfs:label "Recursive Feature Elimination" .
+_:a2392c7cb8d9808b2dc3263524d04ab7 rdf:reifies <<( doc:FactsRfe rdfs:label "Recursive Feature Elimination" )>> ;
+	prov:wasDerivedFrom doc:6064b9d13303 .
+doc:Factsarticle1_1 doc:factsuses_1 doc:FactsAnfis .
+_:bf94d640a6bd722143f581dbcb5e5af rdf:reifies <<( doc:Factsarticle1_1 doc:factsuses_1 doc:FactsAnfis )>> ;
+	prov:wasDerivedFrom doc:6064b9d13303 .
+doc:FactsAnfis doc:factsuses_1 doc:FactshealthIndicators .
+_:a56f5df06a29db95eeaf8e8a1a2932f1 rdf:reifies <<( doc:FactsAnfis doc:factsuses_1 doc:FactshealthIndicators )>> ;
+	prov:wasDerivedFrom doc:6064b9d13303 .
+doc:FactsLaboratoireMecaniqueDesStructures a schema1:Organization .
+_:cfd14fad5a0ed2957ed405a58ff4fcd5 rdf:reifies <<( doc:FactsLaboratoireMecaniqueDesStructures rdf:type schema1:Organization )>> ;
+	prov:wasDerivedFrom doc:6064b9d13303 .
+doc:FactsTarakBenkedjouh schema1:familyName "Benkedjouh" .
+_:ce57248bc00c00f0fd7dc59ddf4e9611 rdf:reifies <<( doc:FactsTarakBenkedjouh schema1:familyName "Benkedjouh" )>> ;
+	prov:wasDerivedFrom doc:6064b9d13303 .
+doc:FactsRulValue None:has_text_value "Hybrid WPD-RFE-ANFIS framework outperforms traditional ANN architectures" .
+_:a06c4f83299a5d897b40604c2e632183 rdf:reifies <<( doc:FactsRulValue None:has_text_value "Hybrid WPD-RFE-ANFIS framework outperforms traditional ANN architectures" )>> ;
+	prov:wasDerivedFrom doc:6064b9d13303 .
+doc:FactsAnfis doc:factsuses_1 doc:FactsRfe .
+_:f01a02926e9b9a08b3d19adaacf4ce73 rdf:reifies <<( doc:FactsAnfis doc:factsuses_1 doc:FactsRfe )>> ;
+	prov:wasDerivedFrom doc:6064b9d13303 .
+doc:FactsTarakBenkedjouh a schema1:Person .
+_:abbb999a1170d76594a3dcd441571109 rdf:reifies <<( doc:FactsTarakBenkedjouh rdf:type schema1:Person )>> ;
+	prov:wasDerivedFrom doc:6064b9d13303 .
+doc:FactsAnfis doc:factsuses_1 doc:FactsAnfis .
+_:d86df2c96c8870c602a44a20675cfb3e rdf:reifies <<( doc:FactsAnfis doc:factsuses_1 doc:FactsAnfis )>> ;
+	prov:wasDerivedFrom doc:6064b9d13303 .
+doc:FactshealthIndicators None:has_text_value "Most relevant features selected by RFE to reduce redundancy and enhance discriminative power" .
+_:ab71786e80959d4fb6900b5d6ac592e5 rdf:reifies <<( doc:FactshealthIndicators None:has_text_value "Most relevant features selected by RFE to reduce redundancy and enhance discriminative power" )>> ;
+	prov:wasDerivedFrom doc:6064b9d13303 .
+doc:FactsAnfis doc:factsuses_1 doc:FactsWpd .
+_:eeba87b47eb68bb3a7c342cf49cadb0b rdf:reifies <<( doc:FactsAnfis doc:factsuses_1 doc:FactsWpd )>> ;
+	prov:wasDerivedFrom doc:6064b9d13303 .
+doc:FactsImsDataset rdfs:label "IMS dataset" .
+_:bf3406b3385e4a3fd5572f860d4977b0 rdf:reifies <<( doc:FactsImsDataset rdfs:label "IMS dataset" )>> ;
+	prov:wasDerivedFrom doc:6064b9d13303 .
+doc:FactsAnfis doc:factshasPerformanceValue_1 doc:FactsRulValue .
+_:aaaea3434db8afe8c8fcb56a2cc7167 rdf:reifies <<( doc:FactsAnfis doc:factshasPerformanceValue_1 doc:FactsRulValue )>> ;
+	prov:wasDerivedFrom doc:6064b9d13303 .
+doc:FactsTarakBenkedjouh schema1:givenName "Abdel wahhab" .
+_:e476e5ba98458137fdcce4133b321af9 rdf:reifies <<( doc:FactsTarakBenkedjouh schema1:givenName "Abdel wahhab" )>> ;
+	prov:wasDerivedFrom doc:6064b9d13303 .
+doc:FactsWpd doc:factsuses_1 doc:FactshealthIndicators .
+_:e3506cccbc0bafeb16dd168ef7fb9e1b rdf:reifies <<( doc:FactsWpd doc:factsuses_1 doc:FactshealthIndicators )>> ;
+	prov:wasDerivedFrom doc:6064b9d13303 .
+doc:FactsWpd rdfs:label "Wavelet Packet Decomposition" .
+_:f8d7fa4e35f61329da823540daeceafb rdf:reifies <<( doc:FactsWpd rdfs:label "Wavelet Packet Decomposition" )>> ;
+	prov:wasDerivedFrom doc:6064b9d13303 .
+doc:FactsRulValue schema1:value 99.98 .
+_:c1cd8db0b21c4ba55bfe0778c9d809b9 rdf:reifies <<( doc:FactsRulValue schema1:value 99.98 )>> ;
+	prov:wasDerivedFrom doc:6064b9d13303 .
+doc:Factsarticle1_1 None:has_title doc:Factsarticle1_title_1 .
+_:feb828df47772575fe20808626463806 rdf:reifies <<( doc:Factsarticle1_1 None:has_title doc:Factsarticle1_title_1 )>> ;
+	prov:wasDerivedFrom doc:6064b9d13303 .
+doc:FactshealthIndicators a None:Design_detail .
+_:c409127ca80905e94c4292991d4fdeef rdf:reifies <<( doc:FactshealthIndicators rdf:type None:Design_detail )>> ;
+	prov:wasDerivedFrom doc:6064b9d13303 .
+doc:factsuses_1 rdfs:label "compares with" .
+_:f30afc603c109813295b6847509b6eab rdf:reifies <<( doc:factsuses_1 rdfs:label "compares with" )>> ;
+	prov:wasDerivedFrom doc:6064b9d13303 .
+doc:Factsarticle1_1 schema1:author doc:FactsTarakBenkedjouh .
+_:d5844cc968e29358fe541a847f13d010 rdf:reifies <<( doc:Factsarticle1_1 schema1:author doc:FactsTarakBenkedjouh )>> ;
+	prov:wasDerivedFrom doc:6064b9d13303 .
+doc:FactsAnfis None:has_design_detail doc:FactshealthIndicators .
+_:be0685478918f75e933735775e668f64 rdf:reifies <<( doc:FactsAnfis None:has_design_detail doc:FactshealthIndicators )>> ;
+	prov:wasDerivedFrom doc:6064b9d13303 .
+doc:factsuses_1 rdfs:label "selects" .
+_:bf87af4f791196e5df043df9f56f9613 rdf:reifies <<( doc:factsuses_1 rdfs:label "selects" )>> ;
+	prov:wasDerivedFrom doc:6064b9d13303 .
+doc:FactsRulValue a None:Performance_value .
+_:d889792aa65958eb78de66fac4959af6 rdf:reifies <<( doc:FactsRulValue rdf:type None:Performance_value )>> ;
+	prov:wasDerivedFrom doc:6064b9d13303 .
+doc:factsuses_1 rdfs:label "uses dataset" .
+_:c3f9afbe4b93784ec42cf249da0e3455 rdf:reifies <<( doc:factsuses_1 rdfs:label "uses dataset" )>> ;
+	prov:wasDerivedFrom doc:6064b9d13303 .
+doc:FactsAnn rdfs:label "ANN-based models" .
+_:b90b513cf1a62da00406fdb82e7211f7 rdf:reifies <<( doc:FactsAnn rdfs:label "ANN-based models" )>> ;
+	prov:wasDerivedFrom doc:6064b9d13303 .
+doc:FactshealthIndicators None:has_text_value "Hybrid framework integrates Wavelet Packet Decomposition (WPD), Recursive Feature Elimination (RFE), and Adaptive Neuro-Fuzzy Inference System (ANFIS) for RUL estimation." .
+_:b36ecc2cb10886125a6aebc003d58b80 rdf:reifies <<( doc:FactshealthIndicators None:has_text_value "Hybrid framework integrates Wavelet Packet Decomposition (WPD), Recursive Feature Elimination (RFE), and Adaptive Neuro-Fuzzy Inference System (ANFIS) for RUL estimation." )>> ;
+	prov:wasDerivedFrom doc:6064b9d13303 .
+doc:FactsTarakBenkedjouh schema1:email "abdelwahhab.lourari@gmail.com" .
+_:f7e5437e8321d13396e36738c53767e5 rdf:reifies <<( doc:FactsTarakBenkedjouh schema1:email "abdelwahhab.lourari@gmail.com" )>> ;
+	prov:wasDerivedFrom doc:6064b9d13303 .
+doc:factsuses_1 rdfs:label "produces" .
+_:df911dcc16869fdfba1c1b26cdedeac5 rdf:reifies <<( doc:factsuses_1 rdfs:label "produces" )>> ;
+	prov:wasDerivedFrom doc:6064b9d13303 .
+doc:FactsTarakBenkedjouh schema1:affiliation doc:FactsLaboratoireMecaniqueDesStructures .
+_:c831d5c7740177a4b9ac12c1700bac76 rdf:reifies <<( doc:FactsTarakBenkedjouh schema1:affiliation doc:FactsLaboratoireMecaniqueDesStructures )>> ;
+	prov:wasDerivedFrom doc:6064b9d13303 .
+doc:FactsAnfis rdfs:label "Adaptive Neuro-Fuzzy Inference System" .
+_:b9ff3c682d486820e518e66ab777fa26 rdf:reifies <<( doc:FactsAnfis rdfs:label "Adaptive Neuro-Fuzzy Inference System" )>> ;
+	prov:wasDerivedFrom doc:6064b9d13303 .
+doc:FactshealthIndicators a cco:DescriptiveInformationContentEntity .
+_:a79ecd112345fc7ab1a313c94a54c33a rdf:reifies <<( doc:FactshealthIndicators rdf:type cco:DescriptiveInformationContentEntity )>> ;
+	prov:wasDerivedFrom doc:6064b9d13303 .
+doc:FactsWpd a cco:Algorithm .
+_:c71f4272d9180d1c055794e15636d1d8 rdf:reifies <<( doc:FactsWpd rdf:type cco:Algorithm )>> ;
+	prov:wasDerivedFrom doc:6064b9d13303 .
+schema1:value a rdf:Property .
+_:f0f44869ad1af6d944167c6e3f0ef7c9 rdf:reifies <<( schema1:value rdf:type rdf:Property )>> ;
+	prov:wasDerivedFrom doc:6064b9d13303 .
+doc:factshasPerformanceValue_1 a rdf:Property .
+_:b0796a03f931eb021529abcb80bceaa8 rdf:reifies <<( doc:factshasPerformanceValue_1 rdf:type rdf:Property )>> ;
+	prov:wasDerivedFrom doc:6064b9d13303 .
+doc:FactsAnfis a None:Predictive_maintenance_system_module .
+_:aa46fe732277f56da79ade58f5926238 rdf:reifies <<( doc:FactsAnfis rdf:type None:Predictive_maintenance_system_module )>> ;
+	prov:wasDerivedFrom doc:6064b9d13303 .
+doc:FactsTarakBenkedjouh schema1:givenName "Tarak" .
+_:d297760f7347e10ee32a1c44e7d1fb41 rdf:reifies <<( doc:FactsTarakBenkedjouh schema1:givenName "Tarak" )>> ;
+	prov:wasDerivedFrom doc:6064b9d13303 .
+doc:FactsLaboratoireMecaniqueDesStructures schema1:name "Laboratoire Mecanique des Structures, Ecole Militaire Polytechnique, Algiers, 16046, Algeria" .
+_:d3395c34c61a361f72244907e95cc4c8 rdf:reifies <<( doc:FactsLaboratoireMecaniqueDesStructures schema1:name "Laboratoire Mecanique des Structures, Ecole Militaire Polytechnique, Algiers, 16046, Algeria" )>> ;
+	prov:wasDerivedFrom doc:6064b9d13303 .
+doc:FactsTarakBenkedjouh schema1:familyName "Lourari" .
+_:ed12bc8bcb98a7bbf9f5c99eb1274a24 rdf:reifies <<( doc:FactsTarakBenkedjouh schema1:familyName "Lourari" )>> ;
+	prov:wasDerivedFrom doc:6064b9d13303 .
+doc:Factsarticle1_1 a None:Predictive_Maintenance_Article .
+_:befb72647ae7029ed3949a109eb06a8b rdf:reifies <<( doc:Factsarticle1_1 rdf:type None:Predictive_Maintenance_Article )>> ;
+	prov:wasDerivedFrom doc:6064b9d13303 .
+doc:factshasPerformanceValue_1 rdfs:label "has performance value" .
+_:baac145787da7b596ed8b12b2e146f62 rdf:reifies <<( doc:factshasPerformanceValue_1 rdfs:label "has performance value" )>> ;
+	prov:wasDerivedFrom doc:6064b9d13303 .
+doc:Factsarticle1_1 a schema1:ScholarlyArticle .
+_:b9d5e539cf2cc1ead8ae4363e9cc600d rdf:reifies <<( doc:Factsarticle1_1 rdf:type schema1:ScholarlyArticle )>> ;
+	prov:wasDerivedFrom doc:6064b9d13303 .
+doc:factsuses_1 rdfs:label "uses" .
+_:a5793a1d80b6e19a68ea9fa255761469 rdf:reifies <<( doc:factsuses_1 rdfs:label "uses" )>> ;
+	prov:wasDerivedFrom doc:6064b9d13303 .
+doc:FactsTarakBenkedjouh schema1:email "bktarek@gmail.com" .
+_:fb575ba77699e8aa88c7cfacf20a8561 rdf:reifies <<( doc:FactsTarakBenkedjouh schema1:email "bktarek@gmail.com" )>> ;
+	prov:wasDerivedFrom doc:6064b9d13303 .
+doc:Factsarticle1_1 doc:factsuses_1 doc:FactsRulValue .
+_:fdae6a4826a2884d5d860dc8c5e242 rdf:reifies <<( doc:Factsarticle1_1 doc:factsuses_1 doc:FactsRulValue )>> ;
+	prov:wasDerivedFrom doc:6064b9d13303 .
+doc:FactsRulValue schema1:unitText "percent" .
+_:a4bb46c9257bc30ff06df3dc1c39fd27 rdf:reifies <<( doc:FactsRulValue schema1:unitText "percent" )>> ;
+	prov:wasDerivedFrom doc:6064b9d13303 .
+doc:FactsAnfis None:has_predictive_maintenance_function None:Remaining_useful_life_estimation .
+_:f2a941c9d6e514fd83dc97cf6ddedd54 rdf:reifies <<( doc:FactsAnfis None:has_predictive_maintenance_function None:Remaining_useful_life_estimation )>> ;
+	prov:wasDerivedFrom doc:6064b9d13303 .
+doc:FactshealthIndicators None:has_text_value "Health indicators computed from each WPD decomposition level" .
+_:f2e3082ef02e9267bd3f88208ffe226d rdf:reifies <<( doc:FactshealthIndicators None:has_text_value "Health indicators computed from each WPD decomposition level" )>> ;
+	prov:wasDerivedFrom doc:6064b9d13303 .
+doc:Factsarticle1_1 doc:factsuses_1 doc:FactsAnn .
+_:b04978c644c235ef3b9807eab786a8e1 rdf:reifies <<( doc:Factsarticle1_1 doc:factsuses_1 doc:FactsAnn )>> ;
+	prov:wasDerivedFrom doc:6064b9d13303 .
+doc:FactsImsDataset a cco:Database .
+_:bcd3db49ec594db7847de8d02095d7fb rdf:reifies <<( doc:FactsImsDataset rdf:type cco:Database )>> ;
+	prov:wasDerivedFrom doc:6064b9d13303 .
+doc:FactsRfe a cco:Algorithm .
+_:cf4fbde21cbeb6eba50586377b1698e1 rdf:reifies <<( doc:FactsRfe rdf:type cco:Algorithm )>> ;
+	prov:wasDerivedFrom doc:6064b9d13303 .
+doc:FactsAnfis a cco:Algorithm .
+_:c5e60ea1e0115648ee754977b558eca4 rdf:reifies <<( doc:FactsAnfis rdf:type cco:Algorithm )>> ;
+	prov:wasDerivedFrom doc:6064b9d13303 .
+doc:Factsarticle1_title_1 a None:Article_title .
+_:fe167f65fe751c96148524d2f69aff7c rdf:reifies <<( doc:Factsarticle1_title_1 rdf:type None:Article_title )>> ;
+	prov:wasDerivedFrom doc:6064b9d13303 .
+doc:Factsarticle1_title_1 None:has_text_value "RUL Estimation of Rolling Element Bearings Using a Hybrid Wavelet Packet Decomposition-Recursive Feature Elimination-Adaptive Neuro Fuzzy Inference System Framework" .
+_:ab857f9f3dfaceef9f57bfdb48a2b04 rdf:reifies <<( doc:Factsarticle1_title_1 None:has_text_value "RUL Estimation of Rolling Element Bearings Using a Hybrid Wavelet Packet Decomposition-Recursive Feature Elimination-Adaptive Neuro Fuzzy Inference System Framework" )>> ;
+	prov:wasDerivedFrom doc:6064b9d13303 .
+doc:factsuses_1 rdfs:label "accepts" .
+_:eb72e34b3f74d22bc1bcc7cb3b5c481c rdf:reifies <<( doc:factsuses_1 rdfs:label "accepts" )>> ;
+	prov:wasDerivedFrom doc:6064b9d13303 .
+doc:factsuses_1 rdfs:label "has comparison result" .
+_:d6a7018e24a2203461d964b17d0038b8 rdf:reifies <<( doc:factsuses_1 rdfs:label "has comparison result" )>> ;
+	prov:wasDerivedFrom doc:6064b9d13303 .
+doc:FactsAnn a cco:Algorithm .
+_:c06b514e75e4ba38b090074befe690d4 rdf:reifies <<( doc:FactsAnn rdf:type cco:Algorithm )>> ;
+	prov:wasDerivedFrom doc:6064b9d13303 .
+doc:4f26c6bdfef2 a prov:Entity , schema:text ;
+	prov:generatedAtTime "2026-07-11T19:04:51.043952Z"^^xsd:dateTime ;
+	schema:position 1 ;
+	schema:identifier "4f26c6bdfef2" .
+doc:FactsUnplannedDowntime a schema1:Event .
+_:f8f34af031b3bbaeeb24b0985180b31b rdf:reifies <<( doc:FactsUnplannedDowntime rdf:type schema1:Event )>> ;
+	prov:wasDerivedFrom doc:4f26c6bdfef2 .
+doc:FactsFatigueQuality None:has_text_value "fatigue" .
+_:c100b34beeb550ce3984a9a570d81382 rdf:reifies <<( doc:FactsFatigueQuality None:has_text_value "fatigue" )>> ;
+	prov:wasDerivedFrom doc:4f26c6bdfef2 .
+doc:FactsHealthIndicatorSet a None:Performance_indicator .
+_:ba86f92b1db04f203cbc772bf27fd233 rdf:reifies <<( doc:FactsHealthIndicatorSet rdf:type None:Performance_indicator )>> ;
+	prov:wasDerivedFrom doc:4f26c6bdfef2 .
+doc:FactsHealthIndicatorSet cco:describes doc:Factsbearing_1 .
+_:e9d7fd2914436ecdd369f63d32345c61 rdf:reifies <<( doc:FactsHealthIndicatorSet cco:describes doc:Factsbearing_1 )>> ;
+	prov:wasDerivedFrom doc:4f26c6bdfef2 .
+doc:Factsbearing_Failure_1 schema1:result doc:FactsMaintenanceCosts .
+_:e9297888a1894f94f8eedff5930b474f rdf:reifies <<( doc:Factsbearing_Failure_1 schema1:result doc:FactsMaintenanceCosts )>> ;
+	prov:wasDerivedFrom doc:4f26c6bdfef2 .
+doc:FactsMaintenanceCosts None:has_text_value "significant maintenance costs" .
+_:ac1dce1c0794086e015acf9d503c8c4f rdf:reifies <<( doc:FactsMaintenanceCosts None:has_text_value "significant maintenance costs" )>> ;
+	prov:wasDerivedFrom doc:4f26c6bdfef2 .
+doc:FactsPhm cco:is_about doc:Factsbearing_1 .
+_:e8173959bdde686b4a8bae7e82a4ae9c rdf:reifies <<( doc:FactsPhm cco:is_about doc:Factsbearing_1 )>> ;
+	prov:wasDerivedFrom doc:4f26c6bdfef2 .
+doc:Factsbearing_1 obo:RO_0000085 doc:FactsRulEstimation .
+_:fd99355b4495dcc28f204b21c7f56081 rdf:reifies <<( doc:Factsbearing_1 obo:RO_0000085 doc:FactsRulEstimation )>> ;
+	prov:wasDerivedFrom doc:4f26c6bdfef2 .
+doc:Factsbearing_Failure_1 schema1:about doc:Factsbearing_1 .
+_:f5414f128d71b7be6d93b586ce993a5a rdf:reifies <<( doc:Factsbearing_Failure_1 schema1:about doc:Factsbearing_1 )>> ;
+	prov:wasDerivedFrom doc:4f26c6bdfef2 .
+doc:FactsWpdAlgorithm a cco:Algorithm .
+_:b7fe6436191c0e53dc8a3a2333b49829 rdf:reifies <<( doc:FactsWpdAlgorithm rdf:type cco:Algorithm )>> ;
+	prov:wasDerivedFrom doc:4f26c6bdfef2 .
+doc:FactsMaintenanceCosts a schema1:MonetaryAmount .
+_:d574cd68d47d7ffad5c1568f8012bef5 rdf:reifies <<( doc:FactsMaintenanceCosts rdf:type schema1:MonetaryAmount )>> ;
+	prov:wasDerivedFrom doc:4f26c6bdfef2 .
+doc:FactsPhm a None:Predictive_maintenance_module_function .
+_:c17112b96cb25b17d29019a2cec949f4 rdf:reifies <<( doc:FactsPhm rdf:type None:Predictive_maintenance_module_function )>> ;
+	prov:wasDerivedFrom doc:4f26c6bdfef2 .
+doc:Factsbearing_1 obo:RO_0000086 doc:FactsWearQuality .
+_:f45c555a48685b0ec585903f76efc954 rdf:reifies <<( doc:Factsbearing_1 obo:RO_0000086 doc:FactsWearQuality )>> ;
+	prov:wasDerivedFrom doc:4f26c6bdfef2 .
+doc:FactsPhm None:describes_type None:Remaining_useful_life_estimation .
+_:bf2593a92749aedae2a7c3e95642dade rdf:reifies <<( doc:FactsPhm None:describes_type None:Remaining_useful_life_estimation )>> ;
+	prov:wasDerivedFrom doc:4f26c6bdfef2 .
+doc:FactsRfe a None:Data_mining_technique_function .
+_:fd8d9bf2d2334505281acb99c48239a5 rdf:reifies <<( doc:FactsRfe rdf:type None:Data_mining_technique_function )>> ;
+	prov:wasDerivedFrom doc:4f26c6bdfef2 .
+doc:Factsbearing_1 a None:Maintainable_item .
+_:a191f26194d3f758dfa3717944447754 rdf:reifies <<( doc:Factsbearing_1 rdf:type None:Maintainable_item )>> ;
+	prov:wasDerivedFrom doc:4f26c6bdfef2 .
+doc:Factsbearing_1 obo:RO_0000086 doc:FactsFatigueQuality .
+_:a2077776a2c372df39501af9e519882a rdf:reifies <<( doc:Factsbearing_1 obo:RO_0000086 doc:FactsFatigueQuality )>> ;
+	prov:wasDerivedFrom doc:4f26c6bdfef2 .
+doc:FactsFatigueQuality a obo:BFO_0000019 .
+_:c5510b8d7256e36e9a46b8a53e4aaf0d rdf:reifies <<( doc:FactsFatigueQuality rdf:type obo:BFO_0000019 )>> ;
+	prov:wasDerivedFrom doc:4f26c6bdfef2 .
+doc:FactsWearQuality None:has_text_value "lubrication issues" .
+_:e9922720f505ddca797edf174092b45 rdf:reifies <<( doc:FactsWearQuality None:has_text_value "lubrication issues" )>> ;
+	prov:wasDerivedFrom doc:4f26c6bdfef2 .
+doc:FactsRfe cd:selects_feature doc:FactsHealthIndicatorSet .
+_:b76beeab16222afec463e90b0509dbd2 rdf:reifies <<( doc:FactsRfe cd:selects_feature doc:FactsHealthIndicatorSet )>> ;
+	prov:wasDerivedFrom doc:4f26c6bdfef2 .
+doc:FactsWearQuality a obo:BFO_0000019 .
+_:baee04859982e8d08e7bf3d7525c5b27 rdf:reifies <<( doc:FactsWearQuality rdf:type obo:BFO_0000019 )>> ;
+	prov:wasDerivedFrom doc:4f26c6bdfef2 .
+doc:FactsReducedProductivity a schema1:Thing .
+_:ee6a07f02f3a40769b723e04a8069893 rdf:reifies <<( doc:FactsReducedProductivity rdf:type schema1:Thing )>> ;
+	prov:wasDerivedFrom doc:4f26c6bdfef2 .
+doc:Factsbearing_Failure_1 schema1:result doc:FactsReducedProductivity .
+_:a797ed0f83dce9bd6c8b5f848f82540b rdf:reifies <<( doc:Factsbearing_Failure_1 schema1:result doc:FactsReducedProductivity )>> ;
+	prov:wasDerivedFrom doc:4f26c6bdfef2 .
+doc:FactsWpdAlgorithm cco:is_about doc:FactsVibrationSignal_1 .
+_:ccbb93cace0f6ec88530b1a4220a0b7b rdf:reifies <<( doc:FactsWpdAlgorithm cco:is_about doc:FactsVibrationSignal_1 )>> ;
+	prov:wasDerivedFrom doc:4f26c6bdfef2 .
+doc:FactsRulEstimation a None:Remaining_useful_life_estimation .
+_:f71a0fc881bbc086801c24d56f32537b rdf:reifies <<( doc:FactsRulEstimation rdf:type None:Remaining_useful_life_estimation )>> ;
+	prov:wasDerivedFrom doc:4f26c6bdfef2 .
+doc:FactsAnfis cco:is_about doc:FactsHealthIndicatorSet .
+_:d54c7cb7b9601aca2087c70a4f639e47 rdf:reifies <<( doc:FactsAnfis cco:is_about doc:FactsHealthIndicatorSet )>> ;
+	prov:wasDerivedFrom doc:4f26c6bdfef2 .
+doc:FactsWpdAlgorithm None:describes_type None:Data_variable .
+_:ebb08480213d4ad9b346a81ebb254e2b rdf:reifies <<( doc:FactsWpdAlgorithm None:describes_type None:Data_variable )>> ;
+	prov:wasDerivedFrom doc:4f26c6bdfef2 .
+doc:Factsbearing_Failure_1 schema1:result doc:FactsUnplannedDowntime .
+_:ee7c3d78e2aa6994ea6a304df17bf684 rdf:reifies <<( doc:Factsbearing_Failure_1 schema1:result doc:FactsUnplannedDowntime )>> ;
+	prov:wasDerivedFrom doc:4f26c6bdfef2 .
+doc:FactsWpdAlgorithm cco:is_about doc:FactsHealthIndicatorSet .
+_:f2b100c51ed3312dbfbdca606d4a4f71 rdf:reifies <<( doc:FactsWpdAlgorithm cco:is_about doc:FactsHealthIndicatorSet )>> ;
+	prov:wasDerivedFrom doc:4f26c6bdfef2 .
+_:c5e60ea1e0115648ee754977b558eca4 prov:wasDerivedFrom doc:4f26c6bdfef2 .
+doc:FactsWearQuality None:has_text_value "wear" .
+_:dc8b0d6bea4d2a990d867733931cf5fe rdf:reifies <<( doc:FactsWearQuality None:has_text_value "wear" )>> ;
+	prov:wasDerivedFrom doc:4f26c6bdfef2 .
+doc:FactsVibrationSignal_1 a None:Data_variable .
+_:b4cab68f8dcb7accec5b0cb1b5af969 rdf:reifies <<( doc:FactsVibrationSignal_1 rdf:type None:Data_variable )>> ;
+	prov:wasDerivedFrom doc:4f26c6bdfef2 .
+doc:Factsbearing_Failure_1 a schema1:Event .
+_:eea137e82f676e16de5591150f62d56 rdf:reifies <<( doc:Factsbearing_Failure_1 rdf:type schema1:Event )>> ;
+	prov:wasDerivedFrom doc:4f26c6bdfef2 .
+doc:FactsAnfis None:describes_type None:Remaining_useful_life_estimation .
+_:eb50726260a266ca071d3fada8677016 rdf:reifies <<( doc:FactsAnfis None:describes_type None:Remaining_useful_life_estimation )>> ;
+	prov:wasDerivedFrom doc:4f26c6bdfef2 .
+doc:d25fece95c2f a prov:Entity , schema:text ;
+	prov:generatedAtTime "2026-07-11T19:04:51.045952Z"^^xsd:dateTime ;
+	schema:position 2 ;
+	schema:identifier "d25fece95c2f" .
+doc:FactsWpdSignalPreprocessing a None:Design_detail .
+_:d4a6a22f553f147c7659b36058bf75d0 rdf:reifies <<( doc:FactsWpdSignalPreprocessing rdf:type None:Design_detail )>> ;
+	prov:wasDerivedFrom doc:d25fece95c2f .
+doc:FactsImsBearingAsMaintainableItem a None:Maintainable_item .
+_:a8fb457cfc1a31e289308db433e931cc rdf:reifies <<( doc:FactsImsBearingAsMaintainableItem rdf:type None:Maintainable_item )>> ;
+	prov:wasDerivedFrom doc:d25fece95c2f .
+doc:factspubyearValue a xsd:integer .
+_:ac394ee843d4b63c4da616b86c33a7b6 rdf:reifies <<( doc:factspubyearValue rdf:type xsd:integer )>> ;
+	prov:wasDerivedFrom doc:d25fece95c2f .
+_:a1789c8bd0cd0840b013dfe6a8f8eacf prov:wasDerivedFrom doc:d25fece95c2f .
+doc:factsuses_1 a owl:ObjectProperty .
+_:cd9b690c7ccb1763c0f736ae4621c327 rdf:reifies <<( doc:factsuses_1 rdf:type owl:ObjectProperty )>> ;
+	prov:wasDerivedFrom doc:d25fece95c2f .
+_:c1cd8db0b21c4ba55bfe0778c9d809b9 prov:wasDerivedFrom doc:d25fece95c2f .
+doc:FactsRulValue schema1:unitText "%" .
+_:f3015fe037f379d7761490f7277c7534 rdf:reifies <<( doc:FactsRulValue schema1:unitText "%" )>> ;
+	prov:wasDerivedFrom doc:d25fece95c2f .
+doc:FactsRulValue None:describes doc:FactsAnfis .
+_:b8b869e0d552d7362a7101bb39702861 rdf:reifies <<( doc:FactsRulValue None:describes doc:FactsAnfis )>> ;
+	prov:wasDerivedFrom doc:d25fece95c2f .
+doc:FactsImsBearingAsMaintainableItem cco:describes doc:FactsImsDataset .
+_:d382d33d84c9009f079a0bce0640e52e rdf:reifies <<( doc:FactsImsBearingAsMaintainableItem cco:describes doc:FactsImsDataset )>> ;
+	prov:wasDerivedFrom doc:d25fece95c2f .
+_:d889792aa65958eb78de66fac4959af6 prov:wasDerivedFrom doc:d25fece95c2f .
+doc:FactscurrentArticle rdfs:label "This study: WPD-RFE-ANFIS for RUL estimation" .
+_:ece044bae77393a0bd344974235ea985 rdf:reifies <<( doc:FactscurrentArticle rdfs:label "This study: WPD-RFE-ANFIS for RUL estimation" )>> ;
+	prov:wasDerivedFrom doc:d25fece95c2f .
+doc:FactsWpd rdfs:label "Wavelet Packet Decomposition (WPD)" .
+_:b0f4f7451ad2dc3ce492da4e17e5ae27 rdf:reifies <<( doc:FactsWpd rdfs:label "Wavelet Packet Decomposition (WPD)" )>> ;
+	prov:wasDerivedFrom doc:d25fece95c2f .
+doc:FactshealthIndicators cco:describes doc:FactsAnfis .
+_:ddb7929112e0a895e2fd029652f431e2 rdf:reifies <<( doc:FactshealthIndicators cco:describes doc:FactsAnfis )>> ;
+	prov:wasDerivedFrom doc:d25fece95c2f .
+doc:FactsWpdSignalPreprocessing None:has_text_value "WPD used for signal preprocessing in the proposed framework." .
+_:ab8ac6f9c95c4db804a6379e6db1f8dd rdf:reifies <<( doc:FactsWpdSignalPreprocessing None:has_text_value "WPD used for signal preprocessing in the proposed framework." )>> ;
+	prov:wasDerivedFrom doc:d25fece95c2f .
+doc:FactshealthIndicators doc:factsuses_1 doc:FactsAnn .
+_:a9d9fce2a9f883fa9e7909e266376b4c rdf:reifies <<( doc:FactshealthIndicators doc:factsuses_1 doc:FactsAnn )>> ;
+	prov:wasDerivedFrom doc:d25fece95c2f .
+_:fd8d9bf2d2334505281acb99c48239a5 prov:wasDerivedFrom doc:d25fece95c2f .
+doc:FactsAnfis rdfs:label "ANFIS" .
+_:c30d3c9c5f6849319b2a2380f7148e9c rdf:reifies <<( doc:FactsAnfis rdfs:label "ANFIS" )>> ;
+	prov:wasDerivedFrom doc:d25fece95c2f .
+doc:FactsImsDataset rdfs:label "IMS bearing dataset" .
+_:a62fd29a0fcd2dffad8188db626c3de0 rdf:reifies <<( doc:FactsImsDataset rdfs:label "IMS bearing dataset" )>> ;
+	prov:wasDerivedFrom doc:d25fece95c2f .
+doc:FactscurrentArticle None:has_title doc:Factsarticle1_title_1 .
+_:cf229c145e47ab5a24a560403405a863 rdf:reifies <<( doc:FactscurrentArticle None:has_title doc:Factsarticle1_title_1 )>> ;
+	prov:wasDerivedFrom doc:d25fece95c2f .
+doc:Factspubyear_2024 doc:factspubyearValue 2024 .
+_:ac40ba1259e09715e7813e03acb530f5 rdf:reifies <<( doc:Factspubyear_2024 doc:factspubyearValue 2024 )>> ;
+	prov:wasDerivedFrom doc:d25fece95c2f .
+doc:FactsWpdSignalPreprocessing cco:describes doc:FactsWpd .
+_:fa2e827a39b625a53bbf462a87c24a94 rdf:reifies <<( doc:FactsWpdSignalPreprocessing cco:describes doc:FactsWpd )>> ;
+	prov:wasDerivedFrom doc:d25fece95c2f .
+doc:FactsAnfis doc:factsuses_1 doc:FactsImsDataset .
+_:f9e70862793ac2db3905d9617d49115f rdf:reifies <<( doc:FactsAnfis doc:factsuses_1 doc:FactsImsDataset )>> ;
+	prov:wasDerivedFrom doc:d25fece95c2f .
+_:f01a02926e9b9a08b3d19adaacf4ce73 prov:wasDerivedFrom doc:d25fece95c2f .
+doc:Factsarticle1_title_1 None:has_text_value "A novel hybrid framework that integrates WPD, RFE and ANFIS for RUL estimation" .
+_:bbb98f51fd04c2bf8ab8fc5702c39ec9 rdf:reifies <<( doc:Factsarticle1_title_1 None:has_text_value "A novel hybrid framework that integrates WPD, RFE and ANFIS for RUL estimation" )>> ;
+	prov:wasDerivedFrom doc:d25fece95c2f .
+doc:FactshealthIndicators None:has_text_value "Comparative experiments were conducted with various ANN-based models to benchmark performance." .
+_:c853e5cc53afc18a017faa3e9e1a9943 rdf:reifies <<( doc:FactshealthIndicators None:has_text_value "Comparative experiments were conducted with various ANN-based models to benchmark performance." )>> ;
+	prov:wasDerivedFrom doc:d25fece95c2f .
+doc:FactsImsDataset a schema1:Dataset .
+_:c5f64a628b1a4a46d8e305aeec66cd05 rdf:reifies <<( doc:FactsImsDataset rdf:type schema1:Dataset )>> ;
+	prov:wasDerivedFrom doc:d25fece95c2f .
+doc:FactsAnn rdfs:label "Artificial Neural Network (ANN)" .
+_:f2dd82fa6d70741deb33f464a4773839 rdf:reifies <<( doc:FactsAnn rdfs:label "Artificial Neural Network (ANN)" )>> ;
+	prov:wasDerivedFrom doc:d25fece95c2f .
+_:d86df2c96c8870c602a44a20675cfb3e prov:wasDerivedFrom doc:d25fece95c2f .
+doc:FactsAnfis rdfs:label "WPD-RFE-ANFIS framework" .
+_:c313c05d81b6ed061b88612ff8a046db rdf:reifies <<( doc:FactsAnfis rdfs:label "WPD-RFE-ANFIS framework" )>> ;
+	prov:wasDerivedFrom doc:d25fece95c2f .
+_:eeba87b47eb68bb3a7c342cf49cadb0b prov:wasDerivedFrom doc:d25fece95c2f .
+_:c06b514e75e4ba38b090074befe690d4 prov:wasDerivedFrom doc:d25fece95c2f .
+_:fe167f65fe751c96148524d2f69aff7c prov:wasDerivedFrom doc:d25fece95c2f .
+doc:FactsWpd a None:Data_mining_technique_function .
+_:d216c5fdb0aacf1b981f7dffebb40394 rdf:reifies <<( doc:FactsWpd rdf:type None:Data_mining_technique_function )>> ;
+	prov:wasDerivedFrom doc:d25fece95c2f .
+doc:FactshealthIndicators None:has_text_value "ANFIS is particularly well-suited for nonlinear and uncertain environments such as bearing prognostics (wahhab Lourari et al., 2024)." .
+_:f151f103105c0adcbfc0be295d848b13 rdf:reifies <<( doc:FactshealthIndicators None:has_text_value "ANFIS is particularly well-suited for nonlinear and uncertain environments such as bearing prognostics (wahhab Lourari et al., 2024)." )>> ;
+	prov:wasDerivedFrom doc:d25fece95c2f .
+_:c409127ca80905e94c4292991d4fdeef prov:wasDerivedFrom doc:d25fece95c2f .
+doc:FactsImsBearingAsMaintainableItem rdfs:label "bearing (IMS dataset maintainable item)" .
+_:e6fd22e7e55ed640d7fd418aefe0aab5 rdf:reifies <<( doc:FactsImsBearingAsMaintainableItem rdfs:label "bearing (IMS dataset maintainable item)" )>> ;
+	prov:wasDerivedFrom doc:d25fece95c2f .
+doc:FactsRfe rdfs:label "Recursive Feature Elimination (RFE)" .
+_:bced2f8f372ba50e21e1d4d4a9e26d58 rdf:reifies <<( doc:FactsRfe rdfs:label "Recursive Feature Elimination (RFE)" )>> ;
+	prov:wasDerivedFrom doc:d25fece95c2f .
+doc:FactscurrentArticle None:has_publication_year doc:Factspubyear_2024 .
+_:ccc4b34bbfd29dbf8aea84e2ec992b45 rdf:reifies <<( doc:FactscurrentArticle None:has_publication_year doc:Factspubyear_2024 )>> ;
+	prov:wasDerivedFrom doc:d25fece95c2f .
+doc:FactshealthIndicators None:has_text_value "The WPD-RFE-ANFIS framework outperforms traditional ANN approaches." .
+_:eb45aa15dd128e1bf54e92baddc9121c rdf:reifies <<( doc:FactshealthIndicators None:has_text_value "The WPD-RFE-ANFIS framework outperforms traditional ANN approaches." )>> ;
+	prov:wasDerivedFrom doc:d25fece95c2f .
+_:f2a941c9d6e514fd83dc97cf6ddedd54 prov:wasDerivedFrom doc:d25fece95c2f .
+doc:FactscurrentArticle a None:Predictive_Maintenance_Article .
+_:cc37362e7f6b8f36c14381021e887ee5 rdf:reifies <<( doc:FactscurrentArticle rdf:type None:Predictive_Maintenance_Article )>> ;
+	prov:wasDerivedFrom doc:d25fece95c2f .
+doc:Factspubyear_2024 a None:Publication_year .
+_:b1522a8101ea215cf68f7fd9885cad13 rdf:reifies <<( doc:Factspubyear_2024 rdf:type None:Publication_year )>> ;
+	prov:wasDerivedFrom doc:d25fece95c2f .

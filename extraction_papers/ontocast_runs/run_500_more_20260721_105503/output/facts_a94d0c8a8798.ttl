@@ -1,0 +1,708 @@
+@prefix None: <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD/seed#> .
+@prefix cco: <http://www.ontologyrepository.com/CommonCoreOntologies/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doc: <https://growgraph.dev/doc/a94d0c8a8798/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix schema: <https://schema.org/> .
+@prefix schema1: <http://schema.org/> .
+doc:4fafc16a9302 a prov:Entity , schema:text ;
+	prov:generatedAtTime "2026-07-22T06:22:53.027778Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+	schema:position 0 ;
+	schema:identifier "4fafc16a9302" .
+doc:Factsaffiliation2_3 a schema:Organization .
+_:a97cc9b01f2b8dc5896a5550007e8c03 rdf:reifies <<( doc:Factsaffiliation2_3 rdf:type schema:Organization )>> ;
+	prov:wasDerivedFrom doc:4fafc16a9302 .
+doc:Factsauthor5_51 schema1:name "Yanjie Guo" .
+_:e5522eba3a9a4017b9c9a7ac4de1ae56 rdf:reifies <<( doc:Factsauthor5_51 schema1:name "Yanjie Guo" )>> ;
+	prov:wasDerivedFrom doc:4fafc16a9302 .
+doc:Factsdetail8_2 None:has_text_value "secure sharing" .
+_:afaf383edebb00616e801b09327b98a8 rdf:reifies <<( doc:Factsdetail8_2 None:has_text_value "secure sharing" )>> ;
+	prov:wasDerivedFrom doc:4fafc16a9302 .
+doc:Factsplatform None:has_design_detail doc:Factsdetail8_2 .
+_:d4c55a48063dc7aa9b716883cf9a0a2b rdf:reifies <<( doc:Factsplatform None:has_design_detail doc:Factsdetail8_2 )>> ;
+	prov:wasDerivedFrom doc:4fafc16a9302 .
+doc:Factsarticle1_138 dcterms:creator doc:Factsauthor5_51 .
+_:fc2cbd33fa9f87475e6f97564ed32786 rdf:reifies <<( doc:Factsarticle1_138 dcterms:creator doc:Factsauthor5_51 )>> ;
+	prov:wasDerivedFrom doc:4fafc16a9302 .
+doc:Factsdetail8_2 None:has_text_value "visualization" .
+_:e7b8764ab59c2905ee0d5249ca14423c rdf:reifies <<( doc:Factsdetail8_2 None:has_text_value "visualization" )>> ;
+	prov:wasDerivedFrom doc:4fafc16a9302 .
+doc:Factsauthor5_51 a schema:Person .
+_:a4cbdd1c12f22290e8abe6c264d2a61d rdf:reifies <<( doc:Factsauthor5_51 rdf:type schema:Person )>> ;
+	prov:wasDerivedFrom doc:4fafc16a9302 .
+doc:Factsdoi1_55 a None:Article_title .
+_:f053c95e3dd92825c9d8df66350f896b rdf:reifies <<( doc:Factsdoi1_55 rdf:type None:Article_title )>> ;
+	prov:wasDerivedFrom doc:4fafc16a9302 .
+doc:Factsdetail8_2 None:has_text_value "supports structural reliability evaluation, predictive maintenance, and intelligent operation and maintenance" .
+_:c56d3526789c71c2d64c63dbed99866b rdf:reifies <<( doc:Factsdetail8_2 None:has_text_value "supports structural reliability evaluation, predictive maintenance, and intelligent operation and maintenance" )>> ;
+	prov:wasDerivedFrom doc:4fafc16a9302 .
+doc:Factsarticle1_138 a cco:InformationBearingArtifact .
+_:c5ea47f0fde1393799a27a4cbd366d2f rdf:reifies <<( doc:Factsarticle1_138 rdf:type cco:InformationBearingArtifact )>> ;
+	prov:wasDerivedFrom doc:4fafc16a9302 .
+doc:Factsauthor5_51 schema1:name "Qiang Fu" .
+_:ae36b7081f43d7aaf8d5e072ab444baf rdf:reifies <<( doc:Factsauthor5_51 schema1:name "Qiang Fu" )>> ;
+	prov:wasDerivedFrom doc:4fafc16a9302 .
+doc:Factsplatform rdfs:label "misalignment faults" .
+_:e05135b983ccc587b173d8113f1ba141 rdf:reifies <<( doc:Factsplatform rdfs:label "misalignment faults" )>> ;
+	prov:wasDerivedFrom doc:4fafc16a9302 .
+doc:Factsaffiliation2_3 schema1:name "School of Mechanical Engineering, Xi'an Jiaotong University" .
+_:f9b5a6c304852c0894ac39541f0a492a rdf:reifies <<( doc:Factsaffiliation2_3 schema1:name "School of Mechanical Engineering, Xi'an Jiaotong University" )>> ;
+	prov:wasDerivedFrom doc:4fafc16a9302 .
+doc:Factsplatform a None:Predictive_maintenance_system_module .
+_:f8d9273e80a6ba7017f20c3330a307 rdf:reifies <<( doc:Factsplatform rdf:type None:Predictive_maintenance_system_module )>> ;
+	prov:wasDerivedFrom doc:4fafc16a9302 .
+doc:Factsplatform None:has_synchronization doc:Factssync1_44 .
+_:bc3afd6b33dad5c4d01e1af7ad3a013a rdf:reifies <<( doc:Factsplatform None:has_synchronization doc:Factssync1_44 )>> ;
+	prov:wasDerivedFrom doc:4fafc16a9302 .
+doc:Factsdetail8_2 a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Design_detail> .
+_:bd85993496ef15bf287fbf04680d9e84 rdf:reifies <<( doc:Factsdetail8_2 rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Design_detail> )>> ;
+	prov:wasDerivedFrom doc:4fafc16a9302 .
+doc:Factsauthor5_51 schema1:name "Bingchang Zhao" .
+_:efbf0e5a6f803a92889719fde3a35be7 rdf:reifies <<( doc:Factsauthor5_51 schema1:name "Bingchang Zhao" )>> ;
+	prov:wasDerivedFrom doc:4fafc16a9302 .
+doc:Factssync1_44 rdfs:label "synchronizes vibration, electrostatic, and laser alignment data streams" .
+_:f1f86f80affd11e39dba7608946951e8 rdf:reifies <<( doc:Factssync1_44 rdfs:label "synchronizes vibration, electrostatic, and laser alignment data streams" )>> ;
+	prov:wasDerivedFrom doc:4fafc16a9302 .
+doc:Factsdetail8_2 None:has_text_value "reduced manual processing time by more than 80%" .
+_:d277071e07edb88805edd01c66aa2859 rdf:reifies <<( doc:Factsdetail8_2 None:has_text_value "reduced manual processing time by more than 80%" )>> ;
+	prov:wasDerivedFrom doc:4fafc16a9302 .
+doc:Factsplatform rdfs:label "misalignment simulation test benches" .
+_:cf96118fae9a7687963a5bdea170cfb0 rdf:reifies <<( doc:Factsplatform rdfs:label "misalignment simulation test benches" )>> ;
+	prov:wasDerivedFrom doc:4fafc16a9302 .
+doc:Factsdetail8_2 None:has_text_value "integrates processed results into fault identification models" .
+_:b28220380da9186999338648ca0cda5d rdf:reifies <<( doc:Factsdetail8_2 None:has_text_value "integrates processed results into fault identification models" )>> ;
+	prov:wasDerivedFrom doc:4fafc16a9302 .
+doc:Factsarticle1_138 None:has_title doc:Factsdoi1_55 .
+_:be2ff916885712777a727de2cfdfe678 rdf:reifies <<( doc:Factsarticle1_138 None:has_title doc:Factsdoi1_55 )>> ;
+	prov:wasDerivedFrom doc:4fafc16a9302 .
+doc:Factsauthor5_51 schema1:name "Zhichao Liu" .
+_:bf2a7c10a481784a57ed838997ce3883 rdf:reifies <<( doc:Factsauthor5_51 schema1:name "Zhichao Liu" )>> ;
+	prov:wasDerivedFrom doc:4fafc16a9302 .
+doc:Factsdetail8_2 None:has_text_value "multi-sensor data acquisition" .
+_:b738f1aea9de56cb8a9cb3657c683208 rdf:reifies <<( doc:Factsdetail8_2 None:has_text_value "multi-sensor data acquisition" )>> ;
+	prov:wasDerivedFrom doc:4fafc16a9302 .
+doc:Factsauthor5_51 schema1:name "Jianlin Cao" .
+_:cd0231eff5d6c19e4e28c39f1ba685fa rdf:reifies <<( doc:Factsauthor5_51 schema1:name "Jianlin Cao" )>> ;
+	prov:wasDerivedFrom doc:4fafc16a9302 .
+doc:Factsplatform rdfs:label "fault identification models" .
+_:e757a36738ce5daa955fafe1e1cbf772 rdf:reifies <<( doc:Factsplatform rdfs:label "fault identification models" )>> ;
+	prov:wasDerivedFrom doc:4fafc16a9302 .
+doc:Factsplatform rdfs:label "wind power applications" .
+_:a7e803af1e32326c273a06dbf021f1bf rdf:reifies <<( doc:Factsplatform rdfs:label "wind power applications" )>> ;
+	prov:wasDerivedFrom doc:4fafc16a9302 .
+doc:Factsauthor5_51 schema1:name "Pengchao Li" .
+_:fc6d835e9091011bd437d5d26e27571c rdf:reifies <<( doc:Factsauthor5_51 schema1:name "Pengchao Li" )>> ;
+	prov:wasDerivedFrom doc:4fafc16a9302 .
+doc:Factsdetail8_2 None:has_text_value "cross-role collaboration" .
+_:e37c526c03dfd1cfb188bfae8bb67a80 rdf:reifies <<( doc:Factsdetail8_2 None:has_text_value "cross-role collaboration" )>> ;
+	prov:wasDerivedFrom doc:4fafc16a9302 .
+doc:Factsarticle1_138 dcterms:title "Design and Implementation of a Misalignment Experimental Data Management Platform for Wind Power Equipment" .
+_:c6cfd1745a17bc4f8da1c13144187fa rdf:reifies <<( doc:Factsarticle1_138 dcterms:title "Design and Implementation of a Misalignment Experimental Data Management Platform for Wind Power Equipment" )>> ;
+	prov:wasDerivedFrom doc:4fafc16a9302 .
+doc:Factsdoi1_55 None:has_text_value "Design and Implementation of a Misalignment Experimental Data Management Platform for Wind Power Equipment" .
+_:d189d0749968a981a80fbeaac72dfecf rdf:reifies <<( doc:Factsdoi1_55 None:has_text_value "Design and Implementation of a Misalignment Experimental Data Management Platform for Wind Power Equipment" )>> ;
+	prov:wasDerivedFrom doc:4fafc16a9302 .
+doc:Factsdetail8_2 None:has_text_value "traceable and reusable data structure linking experimental conditions with sensor outputs" .
+_:a93e0b0533b95ca49066990793fc11a5 rdf:reifies <<( doc:Factsdetail8_2 None:has_text_value "traceable and reusable data structure linking experimental conditions with sensor outputs" )>> ;
+	prov:wasDerivedFrom doc:4fafc16a9302 .
+doc:Factssync1_44 a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Module_synchronization> .
+_:bb3f7f49db72c97499d9ed704cdc79ac rdf:reifies <<( doc:Factssync1_44 rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Module_synchronization> )>> ;
+	prov:wasDerivedFrom doc:4fafc16a9302 .
+doc:Factsplatform a None:Fault_identification .
+_:cae862fc6d3418949417dbf7b5f70d9b rdf:reifies <<( doc:Factsplatform rdf:type None:Fault_identification )>> ;
+	prov:wasDerivedFrom doc:4fafc16a9302 .
+doc:Factsplatform rdfs:label "drivetrain shaft assemblies" .
+_:ed35eed8d831479660cf9c685eadcb5e rdf:reifies <<( doc:Factsplatform rdfs:label "drivetrain shaft assemblies" )>> ;
+	prov:wasDerivedFrom doc:4fafc16a9302 .
+doc:Factsdetail8_2 None:has_text_value "multi-terabyte datasets" .
+_:a399f204b3f33616ddbb453d4d92d651 rdf:reifies <<( doc:Factsdetail8_2 None:has_text_value "multi-terabyte datasets" )>> ;
+	prov:wasDerivedFrom doc:4fafc16a9302 .
+doc:Factsdetail8_2 None:has_text_value "MVC + Spring Boot + B/S architecture" .
+_:cb1d3cd4d77edaca830e7d930cd55dcc rdf:reifies <<( doc:Factsdetail8_2 None:has_text_value "MVC + Spring Boot + B/S architecture" )>> ;
+	prov:wasDerivedFrom doc:4fafc16a9302 .
+doc:Factsyear1_110 None:has_interger_value 2024 .
+_:c272329a2851014ea30c7c80387e3252 rdf:reifies <<( doc:Factsyear1_110 None:has_interger_value 2024 )>> ;
+	prov:wasDerivedFrom doc:4fafc16a9302 .
+doc:Factsdetail8_2 None:has_text_value "LIMS principles" .
+_:c576038b434756f6459ce977ed50ea2b rdf:reifies <<( doc:Factsdetail8_2 None:has_text_value "LIMS principles" )>> ;
+	prov:wasDerivedFrom doc:4fafc16a9302 .
+doc:Factsplatform None:has_predictive_maintenance_function doc:Factsplatform .
+_:c0c3e021b0cf5384f0d95fbbdb3aa652 rdf:reifies <<( doc:Factsplatform None:has_predictive_maintenance_function doc:Factsplatform )>> ;
+	prov:wasDerivedFrom doc:4fafc16a9302 .
+doc:Factsplatform rdfs:label "misalignment experimental data management platform" .
+_:bacb0af779573bab7518517b0cda63e rdf:reifies <<( doc:Factsplatform rdfs:label "misalignment experimental data management platform" )>> ;
+	prov:wasDerivedFrom doc:4fafc16a9302 .
+doc:Factsarticle1_138 None:has_publication_year doc:Factsyear1_110 .
+_:b2c14ac62d8916bf0611e7d5ed4a35bc rdf:reifies <<( doc:Factsarticle1_138 None:has_publication_year doc:Factsyear1_110 )>> ;
+	prov:wasDerivedFrom doc:4fafc16a9302 .
+doc:Factsarticle1_138 a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Predictive_maintenance_case> .
+_:eca4cec769c8c911d294e73f4f0372f7 rdf:reifies <<( doc:Factsarticle1_138 rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Predictive_maintenance_case> )>> ;
+	prov:wasDerivedFrom doc:4fafc16a9302 .
+doc:Factsplatform rdfs:label "SCADA data" .
+_:b6b9eac5440c5d447cc2e88f09185bdb rdf:reifies <<( doc:Factsplatform rdfs:label "SCADA data" )>> ;
+	prov:wasDerivedFrom doc:4fafc16a9302 .
+doc:Factsdetail8_2 None:has_text_value "structured storage" .
+_:c582c71f006bd9db5fa03a92494af9b8 rdf:reifies <<( doc:Factsdetail8_2 None:has_text_value "structured storage" )>> ;
+	prov:wasDerivedFrom doc:4fafc16a9302 .
+doc:Factsdetail8_2 None:has_text_value "automated processing" .
+_:baac87959bddc1d4cb2a33fdcd77157c rdf:reifies <<( doc:Factsdetail8_2 None:has_text_value "automated processing" )>> ;
+	prov:wasDerivedFrom doc:4fafc16a9302 .
+doc:Factsaffiliation2_3 schema1:name "China Guanghe New Energy Holding Co., Ltd. Shaanxi Branch" .
+_:cec4107687eff4dd04ea237b758e31f2 rdf:reifies <<( doc:Factsaffiliation2_3 schema1:name "China Guanghe New Energy Holding Co., Ltd. Shaanxi Branch" )>> ;
+	prov:wasDerivedFrom doc:4fafc16a9302 .
+doc:Factsyear1_110 a None:Publication_year .
+_:ea343e603bb0bc12ff826e79fa110cd8 rdf:reifies <<( doc:Factsyear1_110 rdf:type None:Publication_year )>> ;
+	prov:wasDerivedFrom doc:4fafc16a9302 .
+doc:Factsplatform a cco:InformationProcessingArtifact .
+_:bafa6daa0b821368f92cd04b5130cbd6 rdf:reifies <<( doc:Factsplatform rdf:type cco:InformationProcessingArtifact )>> ;
+	prov:wasDerivedFrom doc:4fafc16a9302 .
+doc:b9b34f85e045 a prov:Entity , schema:text ;
+	prov:generatedAtTime "2026-07-22T06:22:53.031777Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+	schema:position 1 ;
+	schema:identifier "b9b34f85e045" .
+doc:Factsabnormal_records1 rdfs:label "abnormal records" .
+_:fbbf0282ce2bfe6337e96ed3e9c932ec rdf:reifies <<( doc:Factsabnormal_records1 rdfs:label "abnormal records" )>> ;
+	prov:wasDerivedFrom doc:b9b34f85e045 .
+doc:Factsplatform a cco:Artifact .
+_:b8bedd51ab560feacc488fc6373b32be rdf:reifies <<( doc:Factsplatform rdf:type cco:Artifact )>> ;
+	prov:wasDerivedFrom doc:b9b34f85e045 .
+doc:Factsimpact1_1 rdfs:label "reciprocating misalignment" .
+_:e75c7b469dbab41ebcc431cfced1542d rdf:reifies <<( doc:Factsimpact1_1 rdfs:label "reciprocating misalignment" )>> ;
+	prov:wasDerivedFrom doc:b9b34f85e045 .
+_:b2c14ac62d8916bf0611e7d5ed4a35bc prov:wasDerivedFrom doc:b9b34f85e045 .
+doc:Factssemi_supervised_approach1 rdfs:label "semi-supervised approach" .
+_:f1ab9184289f464e4c5d466f2c33aba7 rdf:reifies <<( doc:Factssemi_supervised_approach1 rdfs:label "semi-supervised approach" )>> ;
+	prov:wasDerivedFrom doc:b9b34f85e045 .
+doc:Factslims1 rdfs:label "Laboratory Information Management System" .
+_:d5ef3136a86f5dc2f18a6b2fa19b0fe8 rdf:reifies <<( doc:Factslims1 rdfs:label "Laboratory Information Management System" )>> ;
+	prov:wasDerivedFrom doc:b9b34f85e045 .
+doc:Factsdoi1_55 a None:Article_identifier .
+_:a327c57bff7116ccb5f4966d44590a34 rdf:reifies <<( doc:Factsdoi1_55 rdf:type None:Article_identifier )>> ;
+	prov:wasDerivedFrom doc:b9b34f85e045 .
+doc:DescriptiveInformationContentEntity rdfs:label "metadata management" .
+_:dacf3ec772049b4fcaf1e961c0690e73 rdf:reifies <<( doc:DescriptiveInformationContentEntity rdfs:label "metadata management" )>> ;
+	prov:wasDerivedFrom doc:b9b34f85e045 .
+doc:Factsimpact1_1 rdfs:label "impact misalignment" .
+_:cdd86baa55f8931dccda4e3dfbbcfdfe rdf:reifies <<( doc:Factsimpact1_1 rdfs:label "impact misalignment" )>> ;
+	prov:wasDerivedFrom doc:b9b34f85e045 .
+_:f053c95e3dd92825c9d8df66350f896b prov:wasDerivedFrom doc:b9b34f85e045 .
+doc:Factsimpact1_1 a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Maintainable_item> .
+_:b37bfc546d1f9cf1b2f46c5b06326885 rdf:reifies <<( doc:Factsimpact1_1 rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Maintainable_item> )>> ;
+	prov:wasDerivedFrom doc:b9b34f85e045 .
+doc:Factssurface_treatment_optimization1 a cco:DescriptiveInformationContentEntity .
+_:a4fddba6ce111d35c62474ec4a39d2c6 rdf:reifies <<( doc:Factssurface_treatment_optimization1 rdf:type cco:DescriptiveInformationContentEntity )>> ;
+	prov:wasDerivedFrom doc:b9b34f85e045 .
+doc:Factsdata1_7 rdfs:label "misalignment experimental data" .
+_:f3b189d3fd1276268d69ec0834aa3d38 rdf:reifies <<( doc:Factsdata1_7 rdfs:label "misalignment experimental data" )>> ;
+	prov:wasDerivedFrom doc:b9b34f85e045 .
+doc:Factsdrivetrain_degradation_modeling1 a cco:Algorithm .
+_:e1f1b85bb8a17400ad72db458747a79a rdf:reifies <<( doc:Factsdrivetrain_degradation_modeling1 rdf:type cco:Algorithm )>> ;
+	prov:wasDerivedFrom doc:b9b34f85e045 .
+doc:Factsabnormal_records1 a cco:Database .
+_:f3734bb8616b15c8cff82e081d670711 rdf:reifies <<( doc:Factsabnormal_records1 rdf:type cco:Database )>> ;
+	prov:wasDerivedFrom doc:b9b34f85e045 .
+doc:Factsplatform a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Maintainable_item> .
+_:f24c7821f5223b02d344f4cdc41bfd2b rdf:reifies <<( doc:Factsplatform rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Maintainable_item> )>> ;
+	prov:wasDerivedFrom doc:b9b34f85e045 .
+doc:Factsimpact1_1 a cco:Artifact .
+_:d64c81cdd1b551a8813dd38d6341a740 rdf:reifies <<( doc:Factsimpact1_1 rdf:type cco:Artifact )>> ;
+	prov:wasDerivedFrom doc:b9b34f85e045 .
+doc:Factsyear1_110 None:has_interger_value 2025 .
+_:c9a11659d1ced48e762e36a4df465569 rdf:reifies <<( doc:Factsyear1_110 None:has_interger_value 2025 )>> ;
+	prov:wasDerivedFrom doc:b9b34f85e045 .
+doc:Factsclassification1_7 rdfs:label "standardized classification" .
+_:b7aacd8c5e60bc05f79d614ef90081bc rdf:reifies <<( doc:Factsclassification1_7 rdfs:label "standardized classification" )>> ;
+	prov:wasDerivedFrom doc:b9b34f85e045 .
+_:f8d9273e80a6ba7017f20c3330a307 prov:wasDerivedFrom doc:b9b34f85e045 .
+doc:DescriptiveInformationContentEntity a cco:DescriptiveInformationContentEntity .
+_:a1ed0cc3fa5c2ec123a5058ba1fb7719 rdf:reifies <<( doc:DescriptiveInformationContentEntity rdf:type cco:DescriptiveInformationContentEntity )>> ;
+	prov:wasDerivedFrom doc:b9b34f85e045 .
+doc:Factsrotary1 a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Maintainable_item> .
+_:def6c6a8bd66d76a67c28527f3b10b02 rdf:reifies <<( doc:Factsrotary1 rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Maintainable_item> )>> ;
+	prov:wasDerivedFrom doc:b9b34f85e045 .
+doc:DescriptiveInformationContentEntity rdfs:label "control strategies" .
+_:d61c04d16daa67f09d3327c6017127b8 rdf:reifies <<( doc:DescriptiveInformationContentEntity rdfs:label "control strategies" )>> ;
+	prov:wasDerivedFrom doc:b9b34f85e045 .
+_:be2ff916885712777a727de2cfdfe678 prov:wasDerivedFrom doc:b9b34f85e045 .
+doc:Factsfatigue1_1 a cco:DescriptiveInformationContentEntity .
+_:f52ee5bcbd200e3887e019bfddc6e071 rdf:reifies <<( doc:Factsfatigue1_1 rdf:type cco:DescriptiveInformationContentEntity )>> ;
+	prov:wasDerivedFrom doc:b9b34f85e045 .
+doc:DescriptiveInformationContentEntity rdfs:label "storage requirements" .
+_:c695c6a95586005efa92038dc799e599 rdf:reifies <<( doc:DescriptiveInformationContentEntity rdfs:label "storage requirements" )>> ;
+	prov:wasDerivedFrom doc:b9b34f85e045 .
+doc:Factsrevised1_1 rdf:value "2025-07-05"^^<http://www.w3.org/2001/XMLSchema#date> .
+_:bac75e70d90be47611c0f59dedfe0485 rdf:reifies <<( doc:Factsrevised1_1 rdf:value "2025-07-05"^^<http://www.w3.org/2001/XMLSchema#date> )>> ;
+	prov:wasDerivedFrom doc:b9b34f85e045 .
+doc:Factsretrieval_efficiency1 rdfs:label "retrieval efficiency" .
+_:f85b4cbe315a51edb6ea1084755ea326 rdf:reifies <<( doc:Factsretrieval_efficiency1 rdfs:label "retrieval efficiency" )>> ;
+	prov:wasDerivedFrom doc:b9b34f85e045 .
+doc:Factsrevised1_1 a schema:Date .
+_:ca169c8f759ac82d91380a164d718802 rdf:reifies <<( doc:Factsrevised1_1 rdf:type schema:Date )>> ;
+	prov:wasDerivedFrom doc:b9b34f85e045 .
+doc:Factsclassification1_7 a None:Classification .
+_:e600df7efa41a37e9bd2788cd5bd7ad5 rdf:reifies <<( doc:Factsclassification1_7 rdf:type None:Classification )>> ;
+	prov:wasDerivedFrom doc:b9b34f85e045 .
+doc:Factssurface_treatment_optimization1 rdfs:label "surface treatment optimization" .
+_:dd4a69fa1ff235a3bf9d53fb1d695659 rdf:reifies <<( doc:Factssurface_treatment_optimization1 rdfs:label "surface treatment optimization" )>> ;
+	prov:wasDerivedFrom doc:b9b34f85e045 .
+doc:Factsimpact1_1 rdfs:label "misalignment testing" .
+_:a3e0d69629ca2b85c1b7fd2ffd9b185b rdf:reifies <<( doc:Factsimpact1_1 rdfs:label "misalignment testing" )>> ;
+	prov:wasDerivedFrom doc:b9b34f85e045 .
+doc:Factsmvcspring1 rdfs:label "MVC/Spring Boot architecture" .
+_:f330582c5fcbc13dd1abbbf1f08d2cc1 rdf:reifies <<( doc:Factsmvcspring1 rdfs:label "MVC/Spring Boot architecture" )>> ;
+	prov:wasDerivedFrom doc:b9b34f85e045 .
+doc:Factselastic_supports1 a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Maintainable_item> .
+_:c0b1a4c6f8816e13b9b2033d5da0dac5 rdf:reifies <<( doc:Factselastic_supports1 rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Maintainable_item> )>> ;
+	prov:wasDerivedFrom doc:b9b34f85e045 .
+doc:Factsdoi1_55 None:has_text_value "10.3390/en18195047" .
+_:d2a776a440d511fed209321df38c0787 rdf:reifies <<( doc:Factsdoi1_55 None:has_text_value "10.3390/en18195047" )>> ;
+	prov:wasDerivedFrom doc:b9b34f85e045 .
+doc:Factselastic_supports1 rdfs:label "elastic supports" .
+_:ba3e9da656040a2adfd9f2a2090ae69d rdf:reifies <<( doc:Factselastic_supports1 rdfs:label "elastic supports" )>> ;
+	prov:wasDerivedFrom doc:b9b34f85e045 .
+doc:Factsimage_based_anomaly_detection1 a cco:Algorithm .
+_:fc40b9f60a2ec6322fcc64723d25f82 rdf:reifies <<( doc:Factsimage_based_anomaly_detection1 rdf:type cco:Algorithm )>> ;
+	prov:wasDerivedFrom doc:b9b34f85e045 .
+doc:Factsfederated_learning1 a cco:Algorithm .
+_:e735785ec0fbf9b46d25bd7937f32dee rdf:reifies <<( doc:Factsfederated_learning1 rdf:type cco:Algorithm )>> ;
+	prov:wasDerivedFrom doc:b9b34f85e045 .
+doc:Factsdata1_7 a cco:Database .
+_:dd095d035993ef95dd9ddca3a5f5d213 rdf:reifies <<( doc:Factsdata1_7 rdf:type cco:Database )>> ;
+	prov:wasDerivedFrom doc:b9b34f85e045 .
+doc:Factsimpact1_1 rdfs:label "misalignment experiments" .
+_:f5cec7a2069b13bf7cbd296ea2c52392 rdf:reifies <<( doc:Factsimpact1_1 rdfs:label "misalignment experiments" )>> ;
+	prov:wasDerivedFrom doc:b9b34f85e045 .
+doc:Factsdrivetrain_degradation_modeling1 rdfs:label "drivetrain degradation modeling" .
+_:c33b93507a70a496740190d2bdd30d9e rdf:reifies <<( doc:Factsdrivetrain_degradation_modeling1 rdfs:label "drivetrain degradation modeling" )>> ;
+	prov:wasDerivedFrom doc:b9b34f85e045 .
+doc:Factswind_power_equipment1 a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Maintainable_item> .
+_:c62210c2040b21d38715fc73a9237e73 rdf:reifies <<( doc:Factswind_power_equipment1 rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Maintainable_item> )>> ;
+	prov:wasDerivedFrom doc:b9b34f85e045 .
+_:d189d0749968a981a80fbeaac72dfecf prov:wasDerivedFrom doc:b9b34f85e045 .
+doc:Factsheterogeneous_sensor_data1 rdfs:label "heterogeneous sensor data" .
+_:c78327991415aa9a51ef39d19c3217 rdf:reifies <<( doc:Factsheterogeneous_sensor_data1 rdfs:label "heterogeneous sensor data" )>> ;
+	prov:wasDerivedFrom doc:b9b34f85e045 .
+doc:Factsrotary1 rdfs:label "rotary misalignment" .
+_:b5991472ddb27dfb4d72cf34dfb423d8 rdf:reifies <<( doc:Factsrotary1 rdfs:label "rotary misalignment" )>> ;
+	prov:wasDerivedFrom doc:b9b34f85e045 .
+doc:DescriptiveInformationContentEntity rdfs:label "redundancy" .
+_:ac4fd2ad0e3b643de4387cb6c26f1d52 rdf:reifies <<( doc:DescriptiveInformationContentEntity rdfs:label "redundancy" )>> ;
+	prov:wasDerivedFrom doc:b9b34f85e045 .
+doc:Factsplatform rdfs:label "data management" .
+_:c749b805e0309b7f6b3e439ab1b94e2b rdf:reifies <<( doc:Factsplatform rdfs:label "data management" )>> ;
+	prov:wasDerivedFrom doc:b9b34f85e045 .
+doc:Factsplatform a None:Predictive_maintenance_module_function .
+_:d5e30b566f32dfa1ff28de7153a6edb4 rdf:reifies <<( doc:Factsplatform rdf:type None:Predictive_maintenance_module_function )>> ;
+	prov:wasDerivedFrom doc:b9b34f85e045 .
+doc:Factswind_power_equipment1 rdfs:label "wind power equipment" .
+_:c640f923b52999424178cd1a150c296f rdf:reifies <<( doc:Factswind_power_equipment1 rdfs:label "wind power equipment" )>> ;
+	prov:wasDerivedFrom doc:b9b34f85e045 .
+_:ea343e603bb0bc12ff826e79fa110cd8 prov:wasDerivedFrom doc:b9b34f85e045 .
+doc:Factsdata1_7 cco:is_about doc:Factsplatform .
+_:f319281c5ebe1514eeb888a064ecbd9f rdf:reifies <<( doc:Factsdata1_7 cco:is_about doc:Factsplatform )>> ;
+	prov:wasDerivedFrom doc:b9b34f85e045 .
+doc:Factsdata_sharing_efficiency1 rdfs:label "data sharing efficiency" .
+_:e7071342276c8fb45ccdc56811fdb1cc rdf:reifies <<( doc:Factsdata_sharing_efficiency1 rdfs:label "data sharing efficiency" )>> ;
+	prov:wasDerivedFrom doc:b9b34f85e045 .
+doc:Factsfederated_learning1 rdfs:label "federated learning" .
+_:db8f946e139498d72f59fdc65fd41443 rdf:reifies <<( doc:Factsfederated_learning1 rdfs:label "federated learning" )>> ;
+	prov:wasDerivedFrom doc:b9b34f85e045 .
+doc:Factsdata1_7 cco:is_about doc:Factsimpact1_1 .
+_:ba4500fb8f9e79283ef99683a93a5481 rdf:reifies <<( doc:Factsdata1_7 cco:is_about doc:Factsimpact1_1 )>> ;
+	prov:wasDerivedFrom doc:b9b34f85e045 .
+doc:Factsrevised1_1 rdf:value "2025-09-17"^^<http://www.w3.org/2001/XMLSchema#date> .
+_:ba77ecbd0713df67f37d9b61875c8289 rdf:reifies <<( doc:Factsrevised1_1 rdf:value "2025-09-17"^^<http://www.w3.org/2001/XMLSchema#date> )>> ;
+	prov:wasDerivedFrom doc:b9b34f85e045 .
+doc:Factsdata_sharing_efficiency1 rdfs:label "data management efficiency" .
+_:f93a0919d076f4e01e9a9dfb225a3778 rdf:reifies <<( doc:Factsdata_sharing_efficiency1 rdfs:label "data management efficiency" )>> ;
+	prov:wasDerivedFrom doc:b9b34f85e045 .
+doc:Factsmechanical_design1 rdfs:label "mechanical design" .
+_:f33a9f5bcc6cee607645be6272f63f37 rdf:reifies <<( doc:Factsmechanical_design1 rdfs:label "mechanical design" )>> ;
+	prov:wasDerivedFrom doc:b9b34f85e045 .
+doc:Factsdata_sharing_efficiency1 a None:Performance_indicator .
+_:b27b6782ca15e8344e9280478eb66a77 rdf:reifies <<( doc:Factsdata_sharing_efficiency1 rdf:type None:Performance_indicator )>> ;
+	prov:wasDerivedFrom doc:b9b34f85e045 .
+doc:DescriptiveInformationContentEntity rdfs:label "normalized storage" .
+_:aa2bab497a387b8b0ef9a6409206c37a rdf:reifies <<( doc:DescriptiveInformationContentEntity rdfs:label "normalized storage" )>> ;
+	prov:wasDerivedFrom doc:b9b34f85e045 .
+doc:Factsmvcspring1 a cco:Algorithm .
+_:f7f8615f3729c9f53347193333aa0191 rdf:reifies <<( doc:Factsmvcspring1 rdf:type cco:Algorithm )>> ;
+	prov:wasDerivedFrom doc:b9b34f85e045 .
+doc:DescriptiveInformationContentEntity rdfs:label "poor data reusability" .
+_:e9ede85f4a4e84e070e0dcb9c478fd5d rdf:reifies <<( doc:DescriptiveInformationContentEntity rdfs:label "poor data reusability" )>> ;
+	prov:wasDerivedFrom doc:b9b34f85e045 .
+doc:Factsstructure_selection1 a cco:DescriptiveInformationContentEntity .
+_:acab6a99ba5a097e730f79a91ea841b5 rdf:reifies <<( doc:Factsstructure_selection1 rdf:type cco:DescriptiveInformationContentEntity )>> ;
+	prov:wasDerivedFrom doc:b9b34f85e045 .
+doc:Factsfatigue1_1 rdfs:label "fatigue" .
+_:d77ab0637e8846d99c6db38ba1c223e rdf:reifies <<( doc:Factsfatigue1_1 rdfs:label "fatigue" )>> ;
+	prov:wasDerivedFrom doc:b9b34f85e045 .
+doc:Factslims1 cco:describes doc:Factsplatform .
+_:b1f6cfb508388cd6406d56bf4d7424d0 rdf:reifies <<( doc:Factslims1 cco:describes doc:Factsplatform )>> ;
+	prov:wasDerivedFrom doc:b9b34f85e045 .
+doc:Factsimpact1_1 rdfs:label "fretting misalignment" .
+_:bce4c48d0f4a25687252a64ee67dd989 rdf:reifies <<( doc:Factsimpact1_1 rdfs:label "fretting misalignment" )>> ;
+	prov:wasDerivedFrom doc:b9b34f85e045 .
+_:c0c3e021b0cf5384f0d95fbbdb3aa652 prov:wasDerivedFrom doc:b9b34f85e045 .
+doc:Factssemi_supervised_approach1 a cco:Algorithm .
+_:d376a28abd5b64c52d9b99ae53c70951 rdf:reifies <<( doc:Factssemi_supervised_approach1 rdf:type cco:Algorithm )>> ;
+	prov:wasDerivedFrom doc:b9b34f85e045 .
+doc:DescriptiveInformationContentEntity rdfs:label "traceability" .
+_:cf3c29fad2c4c6629d144ec0b5907e94 rdf:reifies <<( doc:DescriptiveInformationContentEntity rdfs:label "traceability" )>> ;
+	prov:wasDerivedFrom doc:b9b34f85e045 .
+doc:Factsretrieval_efficiency1 a None:Performance_indicator .
+_:a0ca473f56e19327ee1436dfcbc7f936 rdf:reifies <<( doc:Factsretrieval_efficiency1 rdf:type None:Performance_indicator )>> ;
+	prov:wasDerivedFrom doc:b9b34f85e045 .
+_:bacb0af779573bab7518517b0cda63e prov:wasDerivedFrom doc:b9b34f85e045 .
+_:eca4cec769c8c911d294e73f4f0372f7 prov:wasDerivedFrom doc:b9b34f85e045 .
+doc:Factsmechanical_design1 a cco:DescriptiveInformationContentEntity .
+_:f3ca0ba5989c16523c181b1b6e49f59b rdf:reifies <<( doc:Factsmechanical_design1 rdf:type cco:DescriptiveInformationContentEntity )>> ;
+	prov:wasDerivedFrom doc:b9b34f85e045 .
+doc:DescriptiveInformationContentEntity rdfs:label "reusability" .
+_:fd4bad63ee578ed9bd2ea8a5d64a2745 rdf:reifies <<( doc:DescriptiveInformationContentEntity rdfs:label "reusability" )>> ;
+	prov:wasDerivedFrom doc:b9b34f85e045 .
+doc:Factsstructure_selection1 rdfs:label "structure selection" .
+_:fc6d2d6bf5546d33e1ffc8a0df46623c rdf:reifies <<( doc:Factsstructure_selection1 rdfs:label "structure selection" )>> ;
+	prov:wasDerivedFrom doc:b9b34f85e045 .
+doc:Factsrevised1_1 rdf:value "2025-09-23"^^<http://www.w3.org/2001/XMLSchema#date> .
+_:acd4d11d3afa27a8060459c1687e082f rdf:reifies <<( doc:Factsrevised1_1 rdf:value "2025-09-23"^^<http://www.w3.org/2001/XMLSchema#date> )>> ;
+	prov:wasDerivedFrom doc:b9b34f85e045 .
+doc:Factsimage_based_anomaly_detection1 rdfs:label "image-based anomaly detection" .
+_:f956c317ee31d16a103b0b334a3ada2 rdf:reifies <<( doc:Factsimage_based_anomaly_detection1 rdfs:label "image-based anomaly detection" )>> ;
+	prov:wasDerivedFrom doc:b9b34f85e045 .
+doc:Factslims1 a cco:InformationProcessingArtifact .
+_:e16ded82b5dee70e37b98b64bd7fa0f1 rdf:reifies <<( doc:Factslims1 rdf:type cco:InformationProcessingArtifact )>> ;
+	prov:wasDerivedFrom doc:b9b34f85e045 .
+_:bafa6daa0b821368f92cd04b5130cbd6 prov:wasDerivedFrom doc:b9b34f85e045 .
+doc:Factsheterogeneous_sensor_data1 a cco:Database .
+_:c0a8743f8dc506d89aee457f16c46ac2 rdf:reifies <<( doc:Factsheterogeneous_sensor_data1 rdf:type cco:Database )>> ;
+	prov:wasDerivedFrom doc:b9b34f85e045 .
+doc:Factsarticle1_138 None:has_identifier doc:Factsdoi1_55 .
+_:af32b436d9da6a1297c5769093d20780 rdf:reifies <<( doc:Factsarticle1_138 None:has_identifier doc:Factsdoi1_55 )>> ;
+	prov:wasDerivedFrom doc:b9b34f85e045 .
+doc:13d546ce178f a prov:Entity , schema:text ;
+	prov:generatedAtTime "2026-07-22T06:22:53.036777Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+	schema:position 2 ;
+	schema:identifier "13d546ce178f" .
+doc:FactsintegrityVerificationDetail a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Design_detail> .
+_:b557c7ff689f7a67bf19303a4f786c34 rdf:reifies <<( doc:FactsintegrityVerificationDetail rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Design_detail> )>> ;
+	prov:wasDerivedFrom doc:13d546ce178f .
+doc:FactstestIdVariable a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Data_variable> .
+_:c35df634370bd8d03503851688d2590c rdf:reifies <<( doc:FactstestIdVariable rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Data_variable> )>> ;
+	prov:wasDerivedFrom doc:13d546ce178f .
+doc:FactssensorTypeVariable rdfs:label "Sensor type" .
+_:cdd81070359964f329e9ec9d05fc5b9a rdf:reifies <<( doc:FactssensorTypeVariable rdfs:label "Sensor type" )>> ;
+	prov:wasDerivedFrom doc:13d546ce178f .
+doc:FactsautomatedReportingDetail a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Design_detail> .
+_:c345dc4125d4d9dc446c64986b7dda75 rdf:reifies <<( doc:FactsautomatedReportingDetail rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Design_detail> )>> ;
+	prov:wasDerivedFrom doc:13d546ce178f .
+doc:FactssensorTypeVariable a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Data_variable> .
+_:d420eecbeea331160aab3f1bcd0111a4 rdf:reifies <<( doc:FactssensorTypeVariable rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Data_variable> )>> ;
+	prov:wasDerivedFrom doc:13d546ce178f .
+doc:FactselectrostaticSignalsDetail a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Design_detail> .
+_:c184269b15cef55649d44e56ffb4bdb0 rdf:reifies <<( doc:FactselectrostaticSignalsDetail rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Design_detail> )>> ;
+	prov:wasDerivedFrom doc:13d546ce178f .
+doc:Factsplatform schema:audience doc:Factssuppliers_1 .
+_:cd85e6b93d97cdc403e8ae306b86cab2 rdf:reifies <<( doc:Factsplatform schema:audience doc:Factssuppliers_1 )>> ;
+	prov:wasDerivedFrom doc:13d546ce178f .
+doc:FactscsvFormat rdfs:label ".tdms" .
+_:ce1d17883f8ba0681df8ae56b4fd91ab rdf:reifies <<( doc:FactscsvFormat rdfs:label ".tdms" )>> ;
+	prov:wasDerivedFrom doc:13d546ce178f .
+doc:FactshashBasedVerification a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Design_detail> .
+_:e2f6137d7eb9f7c5ac1deb538d9cbbc8 rdf:reifies <<( doc:FactshashBasedVerification rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Design_detail> )>> ;
+	prov:wasDerivedFrom doc:13d546ce178f .
+doc:FactsonlineMonitoringFunction a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Fault_identification> .
+_:e6a1acb926f9ecd3117b584bc880c30 rdf:reifies <<( doc:FactsonlineMonitoringFunction rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Fault_identification> )>> ;
+	prov:wasDerivedFrom doc:13d546ce178f .
+doc:FactslaserAlignmentSignalsDetail a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Design_detail> .
+_:b4634eec000d0ba04f432842d5b3c50e rdf:reifies <<( doc:FactslaserAlignmentSignalsDetail rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Design_detail> )>> ;
+	prov:wasDerivedFrom doc:13d546ce178f .
+doc:FactscontinuousMonitoringFunction a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Health_assessment> .
+_:e92d57082ee26816d40d29237cd79bc6 rdf:reifies <<( doc:FactscontinuousMonitoringFunction rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Health_assessment> )>> ;
+	prov:wasDerivedFrom doc:13d546ce178f .
+doc:Factsplatform <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#has_predictive_maintenance_function> doc:FactsonlineMonitoringFunction .
+_:c60bbe1f1396de6d8ed3a88e69c3d193 rdf:reifies <<( doc:Factsplatform <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#has_predictive_maintenance_function> doc:FactsonlineMonitoringFunction )>> ;
+	prov:wasDerivedFrom doc:13d546ce178f .
+doc:FactsbatchImportDetail a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Design_detail> .
+_:fc8010e360b555917636702af1430243 rdf:reifies <<( doc:FactsbatchImportDetail rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Design_detail> )>> ;
+	prov:wasDerivedFrom doc:13d546ce178f .
+doc:FactssecureSolutionDetail a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Design_detail> .
+_:e906a29556ac502686a3e6c050c0408c rdf:reifies <<( doc:FactssecureSolutionDetail rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Design_detail> )>> ;
+	prov:wasDerivedFrom doc:13d546ce178f .
+doc:FactsexperimentalPlanningDetail a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Design_detail> .
+_:eecde2f80b95995fb5d6652696621e5e rdf:reifies <<( doc:FactsexperimentalPlanningDetail rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Design_detail> )>> ;
+	prov:wasDerivedFrom doc:13d546ce178f .
+doc:FactssensorLayoutDetail rdfs:label "complex sensor and data heterogeneity handling" .
+_:efb7e88907e8c2788ebb758e16567776 rdf:reifies <<( doc:FactssensorLayoutDetail rdfs:label "complex sensor and data heterogeneity handling" )>> ;
+	prov:wasDerivedFrom doc:13d546ce178f .
+doc:FactssensorTypeVariable <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#has_text_value> "enumeration" .
+_:b73697930933b7b9a43f08ebaceea06d rdf:reifies <<( doc:FactssensorTypeVariable <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#has_text_value> "enumeration" )>> ;
+	prov:wasDerivedFrom doc:13d546ce178f .
+doc:FactscsvFormat a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Data_variable> .
+_:bddf34c3143f909b3a6ec9ce9d8451ba rdf:reifies <<( doc:FactscsvFormat rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Data_variable> )>> ;
+	prov:wasDerivedFrom doc:13d546ce178f .
+doc:FactsturbineModelVariable rdfs:label "Turbine model" .
+_:b150bb46fc31a97ac2e46ca9ae089b67 rdf:reifies <<( doc:FactsturbineModelVariable rdfs:label "Turbine model" )>> ;
+	prov:wasDerivedFrom doc:13d546ce178f .
+doc:FactstimeSeriesSynchronizationDetail a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Design_detail> .
+_:f44cf89a1cb9ebecc3ffdd46182e5f6b rdf:reifies <<( doc:FactstimeSeriesSynchronizationDetail rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Design_detail> )>> ;
+	prov:wasDerivedFrom doc:13d546ce178f .
+doc:FactsofflineValidationDetail a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Module_synchronization> .
+_:b69121c1764943e3b3c2dd294ca9008 rdf:reifies <<( doc:FactsofflineValidationDetail rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Module_synchronization> )>> ;
+	prov:wasDerivedFrom doc:13d546ce178f .
+doc:FactsplottingCurvesDetail rdfs:label "plotting curves" .
+_:a9d8c8a99947359fe7bd2c2bddc9a695 rdf:reifies <<( doc:FactsplottingCurvesDetail rdfs:label "plotting curves" )>> ;
+	prov:wasDerivedFrom doc:13d546ce178f .
+doc:FactslaserAlignmentSignalsDetail rdfs:label "laser alignment signals" .
+_:d8a0d1a86499acc3b39d27736a9ffcb6 rdf:reifies <<( doc:FactslaserAlignmentSignalsDetail rdfs:label "laser alignment signals" )>> ;
+	prov:wasDerivedFrom doc:13d546ce178f .
+doc:FactstimeSeriesSynchronizationDetail rdfs:label "synchronize time series data for long-duration tests" .
+_:e307e4b3454f8572d33442d24b722e1b rdf:reifies <<( doc:FactstimeSeriesSynchronizationDetail rdfs:label "synchronize time series data for long-duration tests" )>> ;
+	prov:wasDerivedFrom doc:13d546ce178f .
+doc:FactscontinuousMonitoringDetail a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Design_detail> .
+_:a41dd27c751e86cbc78dcf851c3db59a rdf:reifies <<( doc:FactscontinuousMonitoringDetail rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Design_detail> )>> ;
+	prov:wasDerivedFrom doc:13d546ce178f .
+doc:Factsplatform <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#has_design_detail> doc:FactssecureSolutionDetail .
+_:ff1cfa385db521a57ead7a5a4de11f6d rdf:reifies <<( doc:Factsplatform <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#has_design_detail> doc:FactssecureSolutionDetail )>> ;
+	prov:wasDerivedFrom doc:13d546ce178f .
+doc:FactselectrostaticInductionSensor a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Maintainable_item> .
+_:a480d57bf5106edf4186689d5b1ea7b1 rdf:reifies <<( doc:FactselectrostaticInductionSensor rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Maintainable_item> )>> ;
+	prov:wasDerivedFrom doc:13d546ce178f .
+doc:FactscsvFormat rdfs:label ".txt" .
+_:c20a5a76d59a028091db6a997847abf7 rdf:reifies <<( doc:FactscsvFormat rdfs:label ".txt" )>> ;
+	prov:wasDerivedFrom doc:13d546ce178f .
+doc:FactsturbineModelVariable <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#has_text_value> "string" .
+_:a5b0a2f702c453a7411b9d8fa4281db3 rdf:reifies <<( doc:FactsturbineModelVariable <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#has_text_value> "string" )>> ;
+	prov:wasDerivedFrom doc:13d546ce178f .
+doc:FactscsvFormat rdfs:label ".csv" .
+_:e147f1878206ae97cfb7a5ee04fca2c6 rdf:reifies <<( doc:FactscsvFormat rdfs:label ".csv" )>> ;
+	prov:wasDerivedFrom doc:13d546ce178f .
+doc:FactsmultimodalSensingArchitectureDetail rdfs:label "multimodal sensing architecture" .
+_:d418bbbb60a34ba817375e25c680c9fb rdf:reifies <<( doc:FactsmultimodalSensingArchitectureDetail rdfs:label "multimodal sensing architecture" )>> ;
+	prov:wasDerivedFrom doc:13d546ce178f .
+doc:FactsmetadataIndexingDetail a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Design_detail> .
+_:eaa43d24e4e0598ae3702423d19c84c2 rdf:reifies <<( doc:FactsmetadataIndexingDetail rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Design_detail> )>> ;
+	prov:wasDerivedFrom doc:13d546ce178f .
+doc:FactscontinuousMonitoringDetail rdfs:label "long-duration, continuous monitoring" .
+_:ff69dbba02b7945f97da59c32b1ad073 rdf:reifies <<( doc:FactscontinuousMonitoringDetail rdfs:label "long-duration, continuous monitoring" )>> ;
+	prov:wasDerivedFrom doc:13d546ce178f .
+doc:FactsexperimentTimestampVariable a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Data_variable> .
+_:c30bc4baf1f1a304d394930cf4277266 rdf:reifies <<( doc:FactsexperimentTimestampVariable rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Data_variable> )>> ;
+	prov:wasDerivedFrom doc:13d546ce178f .
+doc:FactssensorLayoutDetail rdfs:label "multi-sensor data acquisition" .
+_:ba9fbc21bc5cef632c41cdf2c4368551 rdf:reifies <<( doc:FactssensorLayoutDetail rdfs:label "multi-sensor data acquisition" )>> ;
+	prov:wasDerivedFrom doc:13d546ce178f .
+doc:FactsnasStorage rdfs:label "NAS servers" .
+_:c41d9b1751625107a633b07a638a6f06 rdf:reifies <<( doc:FactsnasStorage rdfs:label "NAS servers" )>> ;
+	prov:wasDerivedFrom doc:13d546ce178f .
+doc:FactsturbineModelVariable a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Model_type> .
+_:f3d5465328a6230b6adfaca94cb7fd6b rdf:reifies <<( doc:FactsturbineModelVariable rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Model_type> )>> ;
+	prov:wasDerivedFrom doc:13d546ce178f .
+doc:FactsshaftCouplingStructure rdfs:label "drivetrain shafts" .
+_:e7f056d1252d1f04601e2a4b51ce7e8a rdf:reifies <<( doc:FactsshaftCouplingStructure rdfs:label "drivetrain shafts" )>> ;
+	prov:wasDerivedFrom doc:13d546ce178f .
+doc:FactsstatisticalChartsDetail rdfs:label "statistical charts" .
+_:bbe77b26ee755e1be1980e2c73b664be rdf:reifies <<( doc:FactsstatisticalChartsDetail rdfs:label "statistical charts" )>> ;
+	prov:wasDerivedFrom doc:13d546ce178f .
+doc:FactsefficientToolDetail a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Design_detail> .
+_:fcae6c0e4ced109f3b74777ea5a96b10 rdf:reifies <<( doc:FactsefficientToolDetail rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Design_detail> )>> ;
+	prov:wasDerivedFrom doc:13d546ce178f .
+doc:FactsexperimentTimestampVariable rdfs:label "Experiment timestamp" .
+_:dc9b7240c4d94a814f28f58a3def4381 rdf:reifies <<( doc:FactsexperimentTimestampVariable rdfs:label "Experiment timestamp" )>> ;
+	prov:wasDerivedFrom doc:13d546ce178f .
+doc:FactsoracleStorage a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Maintainable_item> .
+_:e7109b4c474ab8d74d3a897762872070 rdf:reifies <<( doc:FactsoracleStorage rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Maintainable_item> )>> ;
+	prov:wasDerivedFrom doc:13d546ce178f .
+doc:FactsnasStorage a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Maintainable_item> .
+_:ffb8c71f09e76d1e021cfc434e13946b rdf:reifies <<( doc:FactsnasStorage rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Maintainable_item> )>> ;
+	prov:wasDerivedFrom doc:13d546ce178f .
+doc:FactssensorLayoutDetail a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Design_detail> .
+_:d43d1e3cd7ab81d5d33e9e94a13708a6 rdf:reifies <<( doc:FactssensorLayoutDetail rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Design_detail> )>> ;
+	prov:wasDerivedFrom doc:13d546ce178f .
+doc:FactsmisalignmentFault rdfs:label "shaft misalignment" .
+_:dd976b5837ab95d47bc39461d853e5e9 rdf:reifies <<( doc:FactsmisalignmentFault rdfs:label "shaft misalignment" )>> ;
+	prov:wasDerivedFrom doc:13d546ce178f .
+doc:FactssecureSolutionDetail rdfs:label "scalable solution for managing misalignment experimental data" .
+_:ae7114debf5c544a6321f308f8d84b86 rdf:reifies <<( doc:FactssecureSolutionDetail rdfs:label "scalable solution for managing misalignment experimental data" )>> ;
+	prov:wasDerivedFrom doc:13d546ce178f .
+doc:FactsonlineMonitoringFunction a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Fault_detection> .
+_:fddb17f0bf4d1aec67804c5e6dbde645 rdf:reifies <<( doc:FactsonlineMonitoringFunction rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Fault_detection> )>> ;
+	prov:wasDerivedFrom doc:13d546ce178f .
+doc:FactsofflineValidationDetail rdfs:label "offline validation only" .
+_:e226f052372a07cfe7b3d06821782c44 rdf:reifies <<( doc:FactsofflineValidationDetail rdfs:label "offline validation only" )>> ;
+	prov:wasDerivedFrom doc:13d546ce178f .
+doc:FactsshaftCouplingStructure a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Maintainable_item> .
+_:a700aa7b2fae72b80486b3fa976ab20f rdf:reifies <<( doc:FactsshaftCouplingStructure rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Maintainable_item> )>> ;
+	prov:wasDerivedFrom doc:13d546ce178f .
+doc:FactssaltSprayCondition rdfs:label "salt spray conditions" .
+_:bf369d8ea3e1da4590ffe2710e3e8969 rdf:reifies <<( doc:FactssaltSprayCondition rdfs:label "salt spray conditions" )>> ;
+	prov:wasDerivedFrom doc:13d546ce178f .
+doc:FactsintegrityVerificationDetail rdfs:label "integrity verification" .
+_:e6a510370beb65d9355d15670ff34cb8 rdf:reifies <<( doc:FactsintegrityVerificationDetail rdfs:label "integrity verification" )>> ;
+	prov:wasDerivedFrom doc:13d546ce178f .
+doc:FactscontinuousMonitoringDetail rdfs:label "long-term, high-volume data monitoring and management" .
+_:f7b88fb90764e49b96dcd81111d71fca rdf:reifies <<( doc:FactscontinuousMonitoringDetail rdfs:label "long-term, high-volume data monitoring and management" )>> ;
+	prov:wasDerivedFrom doc:13d546ce178f .
+doc:FactsvibrationSensor rdfs:label "vibration sensor" .
+_:e0f69a63b5952c77b22394c1f7a61da9 rdf:reifies <<( doc:FactsvibrationSensor rdfs:label "vibration sensor" )>> ;
+	prov:wasDerivedFrom doc:13d546ce178f .
+doc:FactslaserAligner rdfs:label "laser aligner" .
+_:d0ae217286d3df6fce5c77e7e36df3a9 rdf:reifies <<( doc:FactslaserAligner rdfs:label "laser aligner" )>> ;
+	prov:wasDerivedFrom doc:13d546ce178f .
+doc:Factsplatform a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Predictive_maintenance_system_module> .
+_:bd93d7bf105ec153fb249e9c93cb5bf3 rdf:reifies <<( doc:Factsplatform rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Predictive_maintenance_system_module> )>> ;
+	prov:wasDerivedFrom doc:13d546ce178f .
+doc:FactssaltSprayCondition a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Design_detail> .
+_:ad96ab09af38639ec1ab580fd58a564d rdf:reifies <<( doc:FactssaltSprayCondition rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Design_detail> )>> ;
+	prov:wasDerivedFrom doc:13d546ce178f .
+doc:FactsprognosticModelIntegrationFunction a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Remaining_useful_life_estimation> .
+_:e72fe5778b69482054865f4bcdb6c9c6 rdf:reifies <<( doc:FactsprognosticModelIntegrationFunction rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Remaining_useful_life_estimation> )>> ;
+	prov:wasDerivedFrom doc:13d546ce178f .
+doc:Factsplatform <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#has_design_detail> doc:FactsefficientToolDetail .
+_:e4e715c798c78aad6382dbbd897e1387 rdf:reifies <<( doc:Factsplatform <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#has_design_detail> doc:FactsefficientToolDetail )>> ;
+	prov:wasDerivedFrom doc:13d546ce178f .
+doc:Factsplatform <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#has_design_detail> doc:FactstimeSeriesSynchronizationDetail .
+_:ebb1eb733a3aa905135acc50cd5daa97 rdf:reifies <<( doc:Factsplatform <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#has_design_detail> doc:FactstimeSeriesSynchronizationDetail )>> ;
+	prov:wasDerivedFrom doc:13d546ce178f .
+doc:FactsmisalignmentFault a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Fault_detection> .
+_:e91d652b4c3b7b4e685688dcc522d693 rdf:reifies <<( doc:FactsmisalignmentFault rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Fault_detection> )>> ;
+	prov:wasDerivedFrom doc:13d546ce178f .
+doc:FactslaserAligner a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Maintainable_item> .
+_:bc7d9a3a06e0da88933255126efe3067 rdf:reifies <<( doc:FactslaserAligner rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Maintainable_item> )>> ;
+	prov:wasDerivedFrom doc:13d546ce178f .
+doc:FactsonlineMonitoringDetail_1 rdfs:label "online monitoring" .
+_:ebdca9f8f0f02a98ed371922b4a77d4f rdf:reifies <<( doc:FactsonlineMonitoringDetail_1 rdfs:label "online monitoring" )>> ;
+	prov:wasDerivedFrom doc:13d546ce178f .
+doc:FactselectrostaticSignalsDetail rdfs:label "electrostatic signals" .
+_:be5c9c80f6beeb3adb90aefeea08c4d7 rdf:reifies <<( doc:FactselectrostaticSignalsDetail rdfs:label "electrostatic signals" )>> ;
+	prov:wasDerivedFrom doc:13d546ce178f .
+doc:FactssecureSolutionDetail rdfs:label "secure solution for managing misalignment experimental data" .
+_:ef51791433d7fd38273a4d606bbfde2b rdf:reifies <<( doc:FactssecureSolutionDetail rdfs:label "secure solution for managing misalignment experimental data" )>> ;
+	prov:wasDerivedFrom doc:13d546ce178f .
+doc:Factsplatform <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#has_design_detail> doc:FactssensorLayoutDetail .
+_:be320dee2f973ba0b64a7223a19d9c8c rdf:reifies <<( doc:Factsplatform <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#has_design_detail> doc:FactssensorLayoutDetail )>> ;
+	prov:wasDerivedFrom doc:13d546ce178f .
+doc:Factssuppliers_1 a schema:Person .
+_:d106ff3ef7476b74211b40a06892e155 rdf:reifies <<( doc:Factssuppliers_1 rdf:type schema:Person )>> ;
+	prov:wasDerivedFrom doc:13d546ce178f .
+doc:FactselectrostaticInductionSensor rdfs:label "electrostatic induction sensor" .
+_:a0151be563f52286f845bb6a6098c0a5 rdf:reifies <<( doc:FactselectrostaticInductionSensor rdfs:label "electrostatic induction sensor" )>> ;
+	prov:wasDerivedFrom doc:13d546ce178f .
+doc:FactshashBasedVerification rdfs:label "hash-based verification" .
+_:ad957085fa2bbd043cfb9a310c2851b8 rdf:reifies <<( doc:FactshashBasedVerification rdfs:label "hash-based verification" )>> ;
+	prov:wasDerivedFrom doc:13d546ce178f .
+doc:FactsvibrationSignalsDetail a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Design_detail> .
+_:d1c0a59118578504aa304086434fa2e9 rdf:reifies <<( doc:FactsvibrationSignalsDetail rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Design_detail> )>> ;
+	prov:wasDerivedFrom doc:13d546ce178f .
+doc:FactsstructuredStorageDetail rdfs:label "structured storage and metadata modeling" .
+_:acf33654947c3d550d7882664aec2260 rdf:reifies <<( doc:FactsstructuredStorageDetail rdfs:label "structured storage and metadata modeling" )>> ;
+	prov:wasDerivedFrom doc:13d546ce178f .
+doc:FactsstatisticalChartsDetail a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Design_detail> .
+_:ae93854f81f75278b8689e3a8421899 rdf:reifies <<( doc:FactsstatisticalChartsDetail rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Design_detail> )>> ;
+	prov:wasDerivedFrom doc:13d546ce178f .
+doc:FactsautomatedReportingDetail rdfs:label "automated reporting" .
+_:e0ea19bd322cab2bfd0725b6dbad4ec0 rdf:reifies <<( doc:FactsautomatedReportingDetail rdfs:label "automated reporting" )>> ;
+	prov:wasDerivedFrom doc:13d546ce178f .
+doc:FactssensorLayoutDetail rdfs:label "sensor layouts" .
+_:a11b0392ca4b39f0eb5e746a81096edc rdf:reifies <<( doc:FactssensorLayoutDetail rdfs:label "sensor layouts" )>> ;
+	prov:wasDerivedFrom doc:13d546ce178f .
+doc:FactsmultiRoleCollaboration a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Design_detail> .
+_:b14278feec42705be2372992cb75a143 rdf:reifies <<( doc:FactsmultiRoleCollaboration rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Design_detail> )>> ;
+	prov:wasDerivedFrom doc:13d546ce178f .
+doc:FactsautomatedReportingDetail rdfs:label "visualization and reporting" .
+_:cae3ca98c5e24cccef09c514e1de2e89 rdf:reifies <<( doc:FactsautomatedReportingDetail rdfs:label "visualization and reporting" )>> ;
+	prov:wasDerivedFrom doc:13d546ce178f .
+doc:Factsplatform <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#has_design_detail> doc:FactscontinuousMonitoringDetail .
+_:aebda822864a362d893b636d5b751e70 rdf:reifies <<( doc:Factsplatform <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#has_design_detail> doc:FactscontinuousMonitoringDetail )>> ;
+	prov:wasDerivedFrom doc:13d546ce178f .
+doc:FactssandDustCondition rdfs:label "sand-dust conditions" .
+_:bcac5ab62d6aa684c086f6e5411ffe69 rdf:reifies <<( doc:FactssandDustCondition rdfs:label "sand-dust conditions" )>> ;
+	prov:wasDerivedFrom doc:13d546ce178f .
+doc:FactsoracleStorage rdfs:label "Oracle" .
+_:e42e7074fb2895e07412eb61be4e35df rdf:reifies <<( doc:FactsoracleStorage rdfs:label "Oracle" )>> ;
+	prov:wasDerivedFrom doc:13d546ce178f .
+doc:FactstestIdVariable rdfs:label "Test ID" .
+_:d7e4df9663d19bb131c50beffaa850cb rdf:reifies <<( doc:FactstestIdVariable rdfs:label "Test ID" )>> ;
+	prov:wasDerivedFrom doc:13d546ce178f .
+doc:FactsstructuredStorageDetail a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Design_detail> .
+_:c1cbe3722d5b9b2d2bd83c8118b24606 rdf:reifies <<( doc:FactsstructuredStorageDetail rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Design_detail> )>> ;
+	prov:wasDerivedFrom doc:13d546ce178f .
+doc:Factsplatform <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#has_design_detail> doc:FactsmultimodalSensingArchitectureDetail .
+_:bf3d16c906b6ad2dfc02ff67347ba400 rdf:reifies <<( doc:Factsplatform <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#has_design_detail> doc:FactsmultimodalSensingArchitectureDetail )>> ;
+	prov:wasDerivedFrom doc:13d546ce178f .
+doc:FactsbatchImportDetail rdfs:label "batch import" .
+_:d1befcfe0ad1b6f7c40bad98a7913d07 rdf:reifies <<( doc:FactsbatchImportDetail rdfs:label "batch import" )>> ;
+	prov:wasDerivedFrom doc:13d546ce178f .
+doc:FactsonlineMonitoringDetail_1 a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Module_synchronization> .
+_:bf55a9cfb4726695827b2ef38a726b2b rdf:reifies <<( doc:FactsonlineMonitoringDetail_1 rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Module_synchronization> )>> ;
+	prov:wasDerivedFrom doc:13d546ce178f .
+doc:FactsshaftCouplingStructure rdfs:label "shaft/coupling structures" .
+_:c841ed4672f0ebae11f8acdd0880d208 rdf:reifies <<( doc:FactsshaftCouplingStructure rdfs:label "shaft/coupling structures" )>> ;
+	prov:wasDerivedFrom doc:13d546ce178f .
+doc:Factsplatform <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#has_predictive_maintenance_function> doc:FactsprognosticModelIntegrationFunction .
+_:ac2c73415688ca8d9e8da71eec66c913 rdf:reifies <<( doc:Factsplatform <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#has_predictive_maintenance_function> doc:FactsprognosticModelIntegrationFunction )>> ;
+	prov:wasDerivedFrom doc:13d546ce178f .
+doc:FactsplottingCurvesDetail a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Design_detail> .
+_:a274b993b0f2b747fd0763e24d02931 rdf:reifies <<( doc:FactsplottingCurvesDetail rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Design_detail> )>> ;
+	prov:wasDerivedFrom doc:13d546ce178f .
+doc:Factsplatform dcterms:description "systematic handling of the entire lifecycle of experimental data generated in wind turbine misalignment research" .
+_:b1f9871b0827500cb176a9896266e5d9 rdf:reifies <<( doc:Factsplatform dcterms:description "systematic handling of the entire lifecycle of experimental data generated in wind turbine misalignment research" )>> ;
+	prov:wasDerivedFrom doc:13d546ce178f .
+doc:Factsplatform schema:applicationCategory "reliability research" .
+_:f5240dc0f16de78255a9a23cd8aa72f9 rdf:reifies <<( doc:Factsplatform schema:applicationCategory "reliability research" )>> ;
+	prov:wasDerivedFrom doc:13d546ce178f .
+doc:FactsmultimodalSensingArchitectureDetail a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Design_detail> .
+_:d269ce66647255c140593143bc8a266c rdf:reifies <<( doc:FactsmultimodalSensingArchitectureDetail rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Design_detail> )>> ;
+	prov:wasDerivedFrom doc:13d546ce178f .
+doc:FactsexperimentTimestampVariable <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#has_text_value> "datetime" .
+_:fa3c7eab724f5bda5b81793418b3b93e rdf:reifies <<( doc:FactsexperimentTimestampVariable <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#has_text_value> "datetime" )>> ;
+	prov:wasDerivedFrom doc:13d546ce178f .
+doc:FactssandDustCondition a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Design_detail> .
+_:a031845a04ad5aeead827f3d15f24954 rdf:reifies <<( doc:FactssandDustCondition rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Design_detail> )>> ;
+	prov:wasDerivedFrom doc:13d546ce178f .
+doc:FactstestIdVariable <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#has_text_value> "string" .
+_:d7c7d36b7c04dad831739cd5626f3d39 rdf:reifies <<( doc:FactstestIdVariable <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#has_text_value> "string" )>> ;
+	prov:wasDerivedFrom doc:13d546ce178f .
+doc:Factsplatform <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#has_predictive_maintenance_function> doc:FactscontinuousMonitoringFunction .
+_:fefb6edb510e0615a6c9135e894b2fe8 rdf:reifies <<( doc:Factsplatform <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#has_predictive_maintenance_function> doc:FactscontinuousMonitoringFunction )>> ;
+	prov:wasDerivedFrom doc:13d546ce178f .
+doc:FactsexperimentalPlanningDetail rdfs:label "experimental planning" .
+_:a08d54c30d30c561683db42af96a0d21 rdf:reifies <<( doc:FactsexperimentalPlanningDetail rdfs:label "experimental planning" )>> ;
+	prov:wasDerivedFrom doc:13d546ce178f .
+doc:FactsmetadataIndexingDetail rdfs:label "metadata indexing" .
+_:a72bc1c38095f063bfdcaf3d33806703 rdf:reifies <<( doc:FactsmetadataIndexingDetail rdfs:label "metadata indexing" )>> ;
+	prov:wasDerivedFrom doc:13d546ce178f .
+doc:FactsmultiRoleCollaboration rdfs:label "multi-role collaboration" .
+_:b3ae29dcfbdcdede78220fa43fce5b21 rdf:reifies <<( doc:FactsmultiRoleCollaboration rdfs:label "multi-role collaboration" )>> ;
+	prov:wasDerivedFrom doc:13d546ce178f .
+doc:Factsplatform rdfs:label "Misalignment Experimental Data Management" .
+_:d222a99f6f3f31a6d625d8aa45d41256 rdf:reifies <<( doc:Factsplatform rdfs:label "Misalignment Experimental Data Management" )>> ;
+	prov:wasDerivedFrom doc:13d546ce178f .
+doc:Factssuppliers_1 a schema:Organization .
+_:b4f20a2ceab76d004f3f5ac87f1cc959 rdf:reifies <<( doc:Factssuppliers_1 rdf:type schema:Organization )>> ;
+	prov:wasDerivedFrom doc:13d546ce178f .
+doc:FactsefficientToolDetail rdfs:label "efficient tool for reliability research on key components of wind power equipment" .
+_:c0df00d51a39b33b8adcd676ed00163b rdf:reifies <<( doc:FactsefficientToolDetail rdfs:label "efficient tool for reliability research on key components of wind power equipment" )>> ;
+	prov:wasDerivedFrom doc:13d546ce178f .
+doc:FactsonlineMonitoringFunction a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Fault_feature_extraction> .
+_:de6a29f1c727526ca59d355f76aba8ce rdf:reifies <<( doc:FactsonlineMonitoringFunction rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Fault_feature_extraction> )>> ;
+	prov:wasDerivedFrom doc:13d546ce178f .
+doc:FactsvibrationSignalsDetail rdfs:label "vibration signals" .
+_:f28014969e14a9e65c8cd9b68ac83c99 rdf:reifies <<( doc:FactsvibrationSignalsDetail rdfs:label "vibration signals" )>> ;
+	prov:wasDerivedFrom doc:13d546ce178f .
+doc:FactsmisalignmentFault dcterms:description "slow-developing fault evolving over weeks or months" .
+_:b176d87e1db3c4c52a3196a1a48d95af rdf:reifies <<( doc:FactsmisalignmentFault dcterms:description "slow-developing fault evolving over weeks or months" )>> ;
+	prov:wasDerivedFrom doc:13d546ce178f .
+doc:FactssensorLayoutDetail rdfs:label "sensor configuration" .
+_:a8b8e20ced4389088db45861197198a0 rdf:reifies <<( doc:FactssensorLayoutDetail rdfs:label "sensor configuration" )>> ;
+	prov:wasDerivedFrom doc:13d546ce178f .
+doc:FactsvibrationSensor a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Maintainable_item> .
+_:ef3cf438880ccc5389d7c12d3b9dd73d rdf:reifies <<( doc:FactsvibrationSensor rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Maintainable_item> )>> ;
+	prov:wasDerivedFrom doc:13d546ce178f .
+doc:Factsplatform a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Predictive_maintenance_case> .
+_:a401e9cd0446beb2814b1e0badc64c1b rdf:reifies <<( doc:Factsplatform rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Predictive_maintenance_case> )>> ;
+	prov:wasDerivedFrom doc:13d546ce178f .
+cco:InformationBearingArtifact owl:sameAs cco:InformationProcessingArtifact .

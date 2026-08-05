@@ -1,0 +1,585 @@
+@prefix None: <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD/seed#> .
+@prefix cco: <http://www.ontologyrepository.com/CommonCoreOntologies/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doc: <https://growgraph.dev/doc/c8263fe309ca/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix cd: <https://growgraph.dev/facts> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix schema: <https://schema.org/> .
+@prefix schema1: <http://schema.org/> .
+doc:d7da0f1deb1a a prov:Entity , schema:text ;
+	prov:generatedAtTime "2026-07-22T08:43:46.713987Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+	schema:position 0 ;
+	schema:identifier "d7da0f1deb1a" .
+doc:Factsarticle1_166 schema:author doc:Factsauthor5_66 .
+_:e78de482e41a6174fba5c385c1d2682 rdf:reifies <<( doc:Factsarticle1_166 schema:author doc:Factsauthor5_66 )>> ;
+	prov:wasDerivedFrom doc:d7da0f1deb1a .
+doc:Factsarticle1_166 schema:about doc:Factsindustry1 .
+_:ea449bb78345e93cde25c3d7a657a2bf rdf:reifies <<( doc:Factsarticle1_166 schema:about doc:Factsindustry1 )>> ;
+	prov:wasDerivedFrom doc:d7da0f1deb1a .
+doc:Factsarticle1_166 None:has_publication_year doc:Factspubyear1_12 .
+_:f29c8dded300a11a6cca3d98d3d66f57 rdf:reifies <<( doc:Factsarticle1_166 None:has_publication_year doc:Factspubyear1_12 )>> ;
+	prov:wasDerivedFrom doc:d7da0f1deb1a .
+doc:Factsauthor5_66 a schema:Person .
+_:c15e511312fed586bacf9ea9e7f7b578 rdf:reifies <<( doc:Factsauthor5_66 rdf:type schema:Person )>> ;
+	prov:wasDerivedFrom doc:d7da0f1deb1a .
+doc:Factsimpact3 None:has_text_value "94% predictive accuracy" .
+_:ccd0fe08ffe31cf554c8d3fcf125c955 rdf:reifies <<( doc:Factsimpact3 None:has_text_value "94% predictive accuracy" )>> ;
+	prov:wasDerivedFrom doc:d7da0f1deb1a .
+doc:Factsid1_83 a None:Article_identifier .
+_:ab27ee7913c25d0908dea80543071033 rdf:reifies <<( doc:Factsid1_83 rdf:type None:Article_identifier )>> ;
+	prov:wasDerivedFrom doc:d7da0f1deb1a .
+doc:Factsarticle1_166 schema:about doc:Factsapp1 .
+_:c5ca76104f50338dfee73645167aa06c rdf:reifies <<( doc:Factsarticle1_166 schema:about doc:Factsapp1 )>> ;
+	prov:wasDerivedFrom doc:d7da0f1deb1a .
+doc:Factsdoc1_71 a None:Predictive_maintenance_model .
+_:ce4e223c5818b9eb8f5b40c00ee623f1 rdf:reifies <<( doc:Factsdoc1_71 rdf:type None:Predictive_maintenance_model )>> ;
+	prov:wasDerivedFrom doc:d7da0f1deb1a .
+doc:Factsindustry1 schema:name "kilns" .
+_:e6ac7369310d74791055cd972ed68b8e rdf:reifies <<( doc:Factsindustry1 schema:name "kilns" )>> ;
+	prov:wasDerivedFrom doc:d7da0f1deb1a .
+doc:Factsid1_83 a None:Article_title .
+_:a6c2293b775bf9dbef5d43a35bc5a660 rdf:reifies <<( doc:Factsid1_83 rdf:type None:Article_title )>> ;
+	prov:wasDerivedFrom doc:d7da0f1deb1a .
+doc:Factsapp1 None:has_predictive_maintenance_function doc:Factsfunction3_28 .
+_:fa8a95ae05d806be5f799cc6dd759b6c rdf:reifies <<( doc:Factsapp1 None:has_predictive_maintenance_function doc:Factsfunction3_28 )>> ;
+	prov:wasDerivedFrom doc:d7da0f1deb1a .
+doc:Factssync1_49 None:has_text_value "federated learning, edge computing, and distributed intelligence" .
+_:dfdf4aedc5ab86616e5e4a55434edbba rdf:reifies <<( doc:Factssync1_49 None:has_text_value "federated learning, edge computing, and distributed intelligence" )>> ;
+	prov:wasDerivedFrom doc:d7da0f1deb1a .
+doc:Factspubyear1_12 None:has_interger_value 2025 .
+_:cf3b4d076421b49d5ccc128690aadf50 rdf:reifies <<( doc:Factspubyear1_12 None:has_interger_value 2025 )>> ;
+	prov:wasDerivedFrom doc:d7da0f1deb1a .
+doc:Factsdetail1_26 a None:Design_detail .
+_:b2f8531aaf7b3ed442f63a6fcac77af4 rdf:reifies <<( doc:Factsdetail1_26 rdf:type None:Design_detail )>> ;
+	prov:wasDerivedFrom doc:d7da0f1deb1a .
+doc:Factsid1_83 cco:designates doc:Factsarticle1_166 .
+_:dd711fffc96bb1d2c505564c1e05a24 rdf:reifies <<( doc:Factsid1_83 cco:designates doc:Factsarticle1_166 )>> ;
+	prov:wasDerivedFrom doc:d7da0f1deb1a .
+doc:Factsindustry1 a None:Maintainable_item .
+_:b995d80e07ab726a6fd0a3e479876e79 rdf:reifies <<( doc:Factsindustry1 rdf:type None:Maintainable_item )>> ;
+	prov:wasDerivedFrom doc:d7da0f1deb1a .
+doc:Factsfunction1_19 a None:Health_assessment .
+_:bdad5b1cc054de6dba63249d38df5134 rdf:reifies <<( doc:Factsfunction1_19 rdf:type None:Health_assessment )>> ;
+	prov:wasDerivedFrom doc:d7da0f1deb1a .
+doc:Factsarticle1_166 None:has_title doc:Factsid1_83 .
+_:eb8ed63a5671ac39c61140bf7afb0723 rdf:reifies <<( doc:Factsarticle1_166 None:has_title doc:Factsid1_83 )>> ;
+	prov:wasDerivedFrom doc:d7da0f1deb1a .
+doc:Factsimpact3 a None:Performance_value .
+_:ea67a2107fca6195e4f58a8b4e16940b rdf:reifies <<( doc:Factsimpact3 rdf:type None:Performance_value )>> ;
+	prov:wasDerivedFrom doc:d7da0f1deb1a .
+doc:Factsapp1 a None:Predictive_maintenance_system_module .
+_:c04b6fa89c112f2c45f65a18ecb19b2f rdf:reifies <<( doc:Factsapp1 rdf:type None:Predictive_maintenance_system_module )>> ;
+	prov:wasDerivedFrom doc:d7da0f1deb1a .
+doc:Factsapp1 None:has_synchronization doc:Factssync1_49 .
+_:a850f698959b6469c9c500b9f41b3d9b rdf:reifies <<( doc:Factsapp1 None:has_synchronization doc:Factssync1_49 )>> ;
+	prov:wasDerivedFrom doc:d7da0f1deb1a .
+doc:Factsauthor5_66 schema:name "AndrÃ©s FernÃ¡ndez-Miguel" .
+_:ddf802356418744301e6b426d3a38914 rdf:reifies <<( doc:Factsauthor5_66 schema:name "AndrÃ©s FernÃ¡ndez-Miguel" )>> ;
+	prov:wasDerivedFrom doc:d7da0f1deb1a .
+doc:Factsfunction3_28 a None:Remaining_useful_life_estimation .
+_:aea644625972f831534a5ab060957822 rdf:reifies <<( doc:Factsfunction3_28 rdf:type None:Remaining_useful_life_estimation )>> ;
+	prov:wasDerivedFrom doc:d7da0f1deb1a .
+doc:Factsindustry1 schema:name "glazing lines" .
+_:c55e310fb152477cdd8e2a03b1d5be8f rdf:reifies <<( doc:Factsindustry1 schema:name "glazing lines" )>> ;
+	prov:wasDerivedFrom doc:d7da0f1deb1a .
+doc:Factsarticle1_166 schema:name "Agentic AI in Smart Manufacturing: Enabling Human-Centric Predictive Maintenance Ecosystems" .
+_:a906fb2de7778dce79feac6e8e8b9f82 rdf:reifies <<( doc:Factsarticle1_166 schema:name "Agentic AI in Smart Manufacturing: Enabling Human-Centric Predictive Maintenance Ecosystems" )>> ;
+	prov:wasDerivedFrom doc:d7da0f1deb1a .
+doc:Factsfunction2_30 a None:Fault_detection .
+_:c76752767bdad69b9c6583682dc79524 rdf:reifies <<( doc:Factsfunction2_30 rdf:type None:Fault_detection )>> ;
+	prov:wasDerivedFrom doc:d7da0f1deb1a .
+doc:Factsapp1 None:has_predictive_maintenance_function doc:Factsfunction1_19 .
+_:c367f2d3dda4ef7183ccf1ca80243b3 rdf:reifies <<( doc:Factsapp1 None:has_predictive_maintenance_function doc:Factsfunction1_19 )>> ;
+	prov:wasDerivedFrom doc:d7da0f1deb1a .
+doc:Factsimpact3 None:has_text_value "1.6-year payback period" .
+_:c11ee501979277ff5eb2a2b5bcebf024 rdf:reifies <<( doc:Factsimpact3 None:has_text_value "1.6-year payback period" )>> ;
+	prov:wasDerivedFrom doc:d7da0f1deb1a .
+doc:Factsimpact3 None:has_text_value "43% less unplanned downtime" .
+_:a6649698c5eb989edfa09168fcc599bc rdf:reifies <<( doc:Factsimpact3 None:has_text_value "43% less unplanned downtime" )>> ;
+	prov:wasDerivedFrom doc:d7da0f1deb1a .
+doc:Factssync1_49 a None:Module_synchronization .
+_:eca484f499b31101cdbe91ea8a8d072d rdf:reifies <<( doc:Factssync1_49 rdf:type None:Module_synchronization )>> ;
+	prov:wasDerivedFrom doc:d7da0f1deb1a .
+doc:Factsarticle1_166 None:has_identifier doc:Factsid1_83 .
+_:f0e8b8f2e94f57d7574ab608d9b728f8 rdf:reifies <<( doc:Factsarticle1_166 None:has_identifier doc:Factsid1_83 )>> ;
+	prov:wasDerivedFrom doc:d7da0f1deb1a .
+doc:Factsauthor5_66 schema:name "Alfonso P. FernÃ¡ndez del Hoyo" .
+_:a8c0bd17de1435d0ba06ac0e36c876ab rdf:reifies <<( doc:Factsauthor5_66 schema:name "Alfonso P. FernÃ¡ndez del Hoyo" )>> ;
+	prov:wasDerivedFrom doc:d7da0f1deb1a .
+doc:Factsimpact3 None:has_text_value "67% fewer false positives" .
+_:aa8ed383f9b0959ee7d35d165c16c8ad rdf:reifies <<( doc:Factsimpact3 None:has_text_value "67% fewer false positives" )>> ;
+	prov:wasDerivedFrom doc:d7da0f1deb1a .
+doc:Factsindustry1 schema:name "ceramic tile manufacturing equipment" .
+_:b5f579998472d07ff167c474f4ce62ee rdf:reifies <<( doc:Factsindustry1 schema:name "ceramic tile manufacturing equipment" )>> ;
+	prov:wasDerivedFrom doc:d7da0f1deb1a .
+doc:Factspubyear1_12 a None:Publication_year .
+_:a61ef0ce5caf2a82d0e1ada523a4f929 rdf:reifies <<( doc:Factspubyear1_12 rdf:type None:Publication_year )>> ;
+	prov:wasDerivedFrom doc:d7da0f1deb1a .
+doc:Factsauthor5_66 schema:name "Mariano JimÃ©nez-Calzado" .
+_:e902b77101aa683fa8f8d3330f07d864 rdf:reifies <<( doc:Factsauthor5_66 schema:name "Mariano JimÃ©nez-Calzado" )>> ;
+	prov:wasDerivedFrom doc:d7da0f1deb1a .
+doc:Factsindustry1 schema:name "hydraulic presses" .
+_:c849142ad095567b5612f81b21e642fd rdf:reifies <<( doc:Factsindustry1 schema:name "hydraulic presses" )>> ;
+	prov:wasDerivedFrom doc:d7da0f1deb1a .
+doc:Factsauthor5_66 schema:name "Susana OrtÃ­z-Marcos" .
+_:a42e75fc69aa21fae7f1ee2a921f0320 rdf:reifies <<( doc:Factsauthor5_66 schema:name "Susana OrtÃ­z-Marcos" )>> ;
+	prov:wasDerivedFrom doc:d7da0f1deb1a .
+doc:Factsdoc1_71 schema:description "Agentic AI for smart manufacturing predictive maintenance ecosystems" .
+_:f01bef3789da8f6bdc987b9a44ac742b rdf:reifies <<( doc:Factsdoc1_71 schema:description "Agentic AI for smart manufacturing predictive maintenance ecosystems" )>> ;
+	prov:wasDerivedFrom doc:d7da0f1deb1a .
+doc:Factsapp1 None:has_design_detail doc:Factsdetail1_26 .
+_:d2365b1d921e21016ef260b207775bc4 rdf:reifies <<( doc:Factsapp1 None:has_design_detail doc:Factsdetail1_26 )>> ;
+	prov:wasDerivedFrom doc:d7da0f1deb1a .
+doc:Factsapp1 None:has_predictive_maintenance_function doc:Factsfunction2_30 .
+_:af1e92e15273f1f7f0c03bc526a164d8 rdf:reifies <<( doc:Factsapp1 None:has_predictive_maintenance_function doc:Factsfunction2_30 )>> ;
+	prov:wasDerivedFrom doc:d7da0f1deb1a .
+doc:Factsarticle1_166 a None:Predictive_Maintenance_Article .
+_:c22572fabc5e589195f443aa60a147b5 rdf:reifies <<( doc:Factsarticle1_166 rdf:type None:Predictive_Maintenance_Article )>> ;
+	prov:wasDerivedFrom doc:d7da0f1deb1a .
+doc:Factsimpact3 None:has_text_value "â¬447,300 NPV over five years" .
+_:d2d89e1c55867320a4a54fd10462b591 rdf:reifies <<( doc:Factsimpact3 None:has_text_value "â¬447,300 NPV over five years" )>> ;
+	prov:wasDerivedFrom doc:d7da0f1deb1a .
+doc:Factsauthor5_66 schema:name "Davide Settembre-Blundo" .
+_:d031ecac7e747d0a271a8b605d276f5c rdf:reifies <<( doc:Factsauthor5_66 schema:name "Davide Settembre-Blundo" )>> ;
+	prov:wasDerivedFrom doc:d7da0f1deb1a .
+doc:Factsarticle1_166 dcterms:title "Agentic AI in Smart Manufacturing: Enabling Human-Centric Predictive Maintenance Ecosystems" .
+_:ecc7e19d832aef6560c83015a5c1fcb7 rdf:reifies <<( doc:Factsarticle1_166 dcterms:title "Agentic AI in Smart Manufacturing: Enabling Human-Centric Predictive Maintenance Ecosystems" )>> ;
+	prov:wasDerivedFrom doc:d7da0f1deb1a .
+doc:Factsauthor5_66 schema:name "Fernando E. GarcÃ­a-MuiÃ±a" .
+_:cfdd887d42ae2aa1bdb0db87789ea55d rdf:reifies <<( doc:Factsauthor5_66 schema:name "Fernando E. GarcÃ­a-MuiÃ±a" )>> ;
+	prov:wasDerivedFrom doc:d7da0f1deb1a .
+doc:Factsdetail1_26 None:has_text_value "five-level AIMM" .
+_:e22ac01ec3faf65331bcc593a9e12ed1 rdf:reifies <<( doc:Factsdetail1_26 None:has_text_value "five-level AIMM" )>> ;
+	prov:wasDerivedFrom doc:d7da0f1deb1a .
+doc:Factsdoc1_71 None:describes_type doc:Factsdoc1_71 .
+_:b25469644a09aa9ce892087e7032235f rdf:reifies <<( doc:Factsdoc1_71 None:describes_type doc:Factsdoc1_71 )>> ;
+	prov:wasDerivedFrom doc:d7da0f1deb1a .
+doc:90bdc4e833fa a prov:Entity , schema:text ;
+	prov:generatedAtTime "2026-07-22T08:43:46.716493Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+	schema:position 1 ;
+	schema:identifier "90bdc4e833fa" .
+doc:FactsselfLearningMechanisms a cco:InformationContentEntity .
+_:f233c1fac590b3be97b60d73bd02f606 rdf:reifies <<( doc:FactsselfLearningMechanisms rdf:type cco:InformationContentEntity )>> ;
+	prov:wasDerivedFrom doc:90bdc4e833fa .
+doc:FactsremainingUsefulLife_5 a cco:DescriptiveInformationContentEntity .
+_:f780da8a4a5248d09e3cb986af7561d9 rdf:reifies <<( doc:FactsremainingUsefulLife_5 rdf:type cco:DescriptiveInformationContentEntity )>> ;
+	prov:wasDerivedFrom doc:90bdc4e833fa .
+doc:Factsarticle1_166 schema:license <https://creativecommons.org/licenses/by/4.0/> .
+_:b80d388313bf49eedba90f0daa742aa1 rdf:reifies <<( doc:Factsarticle1_166 schema:license <https://creativecommons.org/licenses/by/4.0/> )>> ;
+	prov:wasDerivedFrom doc:90bdc4e833fa .
+doc:Factsarticle1_166 cd:mentions doc:Factsscalability .
+_:fbe0bb9f5cccc1e8619dde7df3768f71 rdf:reifies <<( doc:Factsarticle1_166 cd:mentions doc:Factsscalability )>> ;
+	prov:wasDerivedFrom doc:90bdc4e833fa .
+doc:Factsscalability a cco:DescriptiveInformationContentEntity .
+_:b53df02ef6aa1467489401e225fdab92 rdf:reifies <<( doc:Factsscalability rdf:type cco:DescriptiveInformationContentEntity )>> ;
+	prov:wasDerivedFrom doc:90bdc4e833fa .
+doc:FactsoperationalStates a cco:InformationContentEntity .
+_:b5f407f54138f65853cf6215ba22cb0e rdf:reifies <<( doc:FactsoperationalStates rdf:type cco:InformationContentEntity )>> ;
+	prov:wasDerivedFrom doc:90bdc4e833fa .
+doc:FactsrealTimeChanges rdfs:label "real-time changes"@en .
+_:f1d6d27812a3ef74935da321f09d9458 rdf:reifies <<( doc:FactsrealTimeChanges rdfs:label "real-time changes"@en )>> ;
+	prov:wasDerivedFrom doc:90bdc4e833fa .
+doc:Factsscalability rdfs:label "multi-agent systems"@en .
+_:d1de1d6d32f092bd0c7613adff78d567 rdf:reifies <<( doc:Factsscalability rdfs:label "multi-agent systems"@en )>> ;
+	prov:wasDerivedFrom doc:90bdc4e833fa .
+doc:FactsjournalAppliedSciences a schema:Periodical .
+_:d19f49244d03763b5a1a76a683e2d88a rdf:reifies <<( doc:FactsjournalAppliedSciences rdf:type schema:Periodical )>> ;
+	prov:wasDerivedFrom doc:90bdc4e833fa .
+_:c15e511312fed586bacf9ea9e7f7b578 prov:wasDerivedFrom doc:90bdc4e833fa .
+doc:Factsscalability rdfs:label "human intervention"@en .
+_:ea17fbffa5b1fd2b0c0c9f87afd010dd rdf:reifies <<( doc:Factsscalability rdfs:label "human intervention"@en )>> ;
+	prov:wasDerivedFrom doc:90bdc4e833fa .
+doc:Factsarticle1_166 cd:mentions doc:FactsfaultDetection_8 .
+_:d171eac4b5637629034bbec6913effc7 rdf:reifies <<( doc:Factsarticle1_166 cd:mentions doc:FactsfaultDetection_8 )>> ;
+	prov:wasDerivedFrom doc:90bdc4e833fa .
+doc:Factsarticle1_166 dcterms:title "Agentic AI in Smart Manufacturing: Enabling HumanCentric Predictive Maintenance Ecosystems" .
+_:d458f5238d5ea52cee959bb934d7b464 rdf:reifies <<( doc:Factsarticle1_166 dcterms:title "Agentic AI in Smart Manufacturing: Enabling HumanCentric Predictive Maintenance Ecosystems" )>> ;
+	prov:wasDerivedFrom doc:90bdc4e833fa .
+doc:Factsarticle1_166 schema:copyrightYear 2025 .
+_:e16af2be71c7fda8b2a3336d472f81f1 rdf:reifies <<( doc:Factsarticle1_166 schema:copyrightYear 2025 )>> ;
+	prov:wasDerivedFrom doc:90bdc4e833fa .
+_:e78de482e41a6174fba5c385c1d2682 prov:wasDerivedFrom doc:90bdc4e833fa .
+doc:Factsauthor5_66 schema:name "S. OrtÃ­z-Marcos" .
+_:c8a4ef3217cf74cbb17111766421f3d1 rdf:reifies <<( doc:Factsauthor5_66 schema:name "S. OrtÃ­z-Marcos" )>> ;
+	prov:wasDerivedFrom doc:90bdc4e833fa .
+doc:Factsscalability a cco:InformationContentEntity .
+_:eeb44aea39b37cd055e6cc40d990274b rdf:reifies <<( doc:Factsscalability rdf:type cco:InformationContentEntity )>> ;
+	prov:wasDerivedFrom doc:90bdc4e833fa .
+doc:FactsscalableMonitoringEcosystems rdfs:label "intelligent monitoring ecosystems"@en .
+_:fa18549fe6263bcacbbe6ad8a309a73b rdf:reifies <<( doc:FactsscalableMonitoringEcosystems rdfs:label "intelligent monitoring ecosystems"@en )>> ;
+	prov:wasDerivedFrom doc:90bdc4e833fa .
+doc:Factsscalability rdfs:label "centralized architecture"@en .
+_:f389066364fc70d03bc59e52cb2c6c66 rdf:reifies <<( doc:Factsscalability rdfs:label "centralized architecture"@en )>> ;
+	prov:wasDerivedFrom doc:90bdc4e833fa .
+doc:Factsdoc1_71 a cco:InformationContentEntity .
+_:e048673ba35c497c57d4d5f823fac9d1 rdf:reifies <<( doc:Factsdoc1_71 rdf:type cco:InformationContentEntity )>> ;
+	prov:wasDerivedFrom doc:90bdc4e833fa .
+_:a61ef0ce5caf2a82d0e1ada523a4f929 prov:wasDerivedFrom doc:90bdc4e833fa .
+doc:Factsarticle1_166 schema:isPartOf doc:FactsjournalAppliedSciences .
+_:c8c41c6980e0e5b95af809040940e4f rdf:reifies <<( doc:Factsarticle1_166 schema:isPartOf doc:FactsjournalAppliedSciences )>> ;
+	prov:wasDerivedFrom doc:90bdc4e833fa .
+_:c22572fabc5e589195f443aa60a147b5 prov:wasDerivedFrom doc:90bdc4e833fa .
+doc:Factsauthor5_66 schema:name "F.E. GarcÃ­a-MuiÃ±a" .
+_:d843da3d9cbc5daa457435f3aa7c8118 rdf:reifies <<( doc:Factsauthor5_66 schema:name "F.E. GarcÃ­a-MuiÃ±a" )>> ;
+	prov:wasDerivedFrom doc:90bdc4e833fa .
+doc:Factsarticle1_166 cd:mentions doc:Factsdoc1_71 .
+_:d2a96b66e4fdfba2ab0ff99ba21567f2 rdf:reifies <<( doc:Factsarticle1_166 cd:mentions doc:Factsdoc1_71 )>> ;
+	prov:wasDerivedFrom doc:90bdc4e833fa .
+doc:FactsoperationalStates rdfs:label "operational states"@en .
+_:c8c6516634d9a4bd69379384cf91b71e rdf:reifies <<( doc:FactsoperationalStates rdfs:label "operational states"@en )>> ;
+	prov:wasDerivedFrom doc:90bdc4e833fa .
+doc:Factsarticle1_166 dcterms:issued "2025"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+_:e835ac75c8ca0795a46530953a74602b rdf:reifies <<( doc:Factsarticle1_166 dcterms:issued "2025"^^<http://www.w3.org/2001/XMLSchema#gYear> )>> ;
+	prov:wasDerivedFrom doc:90bdc4e833fa .
+doc:FactsremainingUsefulLife_5 rdfs:label "remaining useful life"@en .
+_:f6f2d4301194b191153de4458c1137ec rdf:reifies <<( doc:FactsremainingUsefulLife_5 rdfs:label "remaining useful life"@en )>> ;
+	prov:wasDerivedFrom doc:90bdc4e833fa .
+doc:Factsscalability rdfs:label "machinery health monitoring"@en .
+_:f27670ef37077e908a23e39192fae550 rdf:reifies <<( doc:Factsscalability rdfs:label "machinery health monitoring"@en )>> ;
+	prov:wasDerivedFrom doc:90bdc4e833fa .
+doc:Factsid1_83 cd:has_text_value "Agentic AI in Smart Manufacturing: Enabling HumanCentric Predictive Maintenance Ecosystems" .
+_:d7741ba052e8d4f69764170e02f5a7ac rdf:reifies <<( doc:Factsid1_83 cd:has_text_value "Agentic AI in Smart Manufacturing: Enabling HumanCentric Predictive Maintenance Ecosystems" )>> ;
+	prov:wasDerivedFrom doc:90bdc4e833fa .
+doc:Factsscalability rdfs:label "condition monitoring"@en .
+_:dc60c1b08daf602fd4144d24b5ee2371 rdf:reifies <<( doc:Factsscalability rdfs:label "condition monitoring"@en )>> ;
+	prov:wasDerivedFrom doc:90bdc4e833fa .
+doc:Factsscalability rdfs:label "human integration"@en .
+_:adf266d6fcb534533687ead21657ba8d rdf:reifies <<( doc:Factsscalability rdfs:label "human integration"@en )>> ;
+	prov:wasDerivedFrom doc:90bdc4e833fa .
+doc:Factsauthor5_66 schema:name "M. JimÃ©nez-Calzado" .
+_:b18e611b37a7dbc1556f368ed315e4e7 rdf:reifies <<( doc:Factsauthor5_66 schema:name "M. JimÃ©nez-Calzado" )>> ;
+	prov:wasDerivedFrom doc:90bdc4e833fa .
+doc:Factsauthor5_66 schema:name "A.P. FernÃ¡ndez del Hoyo" .
+_:ddf2bc4db3e7f8b83cee84b4a0222e97 rdf:reifies <<( doc:Factsauthor5_66 schema:name "A.P. FernÃ¡ndez del Hoyo" )>> ;
+	prov:wasDerivedFrom doc:90bdc4e833fa .
+doc:Factsdoc1_71 rdfs:label "predictive maintenance"@en .
+_:ef4dcd319535b6ee856ed95f8177a522 rdf:reifies <<( doc:Factsdoc1_71 rdfs:label "predictive maintenance"@en )>> ;
+	prov:wasDerivedFrom doc:90bdc4e833fa .
+doc:Factsarticle1_166 cd:mentions doc:FactsselfLearningMechanisms .
+_:a5b19e03769ec516ce9f398c5c3521b7 rdf:reifies <<( doc:Factsarticle1_166 cd:mentions doc:FactsselfLearningMechanisms )>> ;
+	prov:wasDerivedFrom doc:90bdc4e833fa .
+doc:Factsscalability rdfs:label "autonomous decision-making"@en .
+_:b720b762b46494e95c15f5437b9c42ec rdf:reifies <<( doc:Factsscalability rdfs:label "autonomous decision-making"@en )>> ;
+	prov:wasDerivedFrom doc:90bdc4e833fa .
+doc:Factsarticle1_166 cd:has_identifier doc:Factsid1_83 .
+_:c0ee637820239c93d1178fdcfb3fa747 rdf:reifies <<( doc:Factsarticle1_166 cd:has_identifier doc:Factsid1_83 )>> ;
+	prov:wasDerivedFrom doc:90bdc4e833fa .
+doc:Factsscalability rdfs:label "single points of failure"@en .
+_:f35270d9d5892b57b9cf6dc1b0a061fc rdf:reifies <<( doc:Factsscalability rdfs:label "single points of failure"@en )>> ;
+	prov:wasDerivedFrom doc:90bdc4e833fa .
+doc:FactsfaultDetection_8 a None:Fault_detection .
+_:b4dc6bf5e1ceaebe23c4215cadb468d5 rdf:reifies <<( doc:FactsfaultDetection_8 rdf:type None:Fault_detection )>> ;
+	prov:wasDerivedFrom doc:90bdc4e833fa .
+doc:Factsscalability rdfs:label "predictive analytics"@en .
+_:eb62ebccee16cc0eb8e6f9cf0ac417a2 rdf:reifies <<( doc:Factsscalability rdfs:label "predictive analytics"@en )>> ;
+	prov:wasDerivedFrom doc:90bdc4e833fa .
+doc:FactsselfLearningMechanisms rdfs:label "adaptive learning processes"@en .
+_:d7271d94a78048f694ac1e31fbcdfdbe rdf:reifies <<( doc:FactsselfLearningMechanisms rdfs:label "adaptive learning processes"@en )>> ;
+	prov:wasDerivedFrom doc:90bdc4e833fa .
+doc:Factsscalability rdfs:label "scalability"@en .
+_:b98d0afae1aa23445d15fe2ec0ae4890 rdf:reifies <<( doc:Factsscalability rdfs:label "scalability"@en )>> ;
+	prov:wasDerivedFrom doc:90bdc4e833fa .
+doc:FactsremainingUsefulLife_5 a None:Remaining_useful_life_estimation .
+_:aaa8e31f17dc5c4048147cf00b663d2 rdf:reifies <<( doc:FactsremainingUsefulLife_5 rdf:type None:Remaining_useful_life_estimation )>> ;
+	prov:wasDerivedFrom doc:90bdc4e833fa .
+doc:Factsscalability rdfs:label "data analytics"@en .
+_:bac3875485bb274a35178494ee07f8b6 rdf:reifies <<( doc:Factsscalability rdfs:label "data analytics"@en )>> ;
+	prov:wasDerivedFrom doc:90bdc4e833fa .
+doc:FactsjournalAppliedSciences schema:name "Applied Sciences" .
+_:dbf8a675257d1bc6294beb1511b5b6d3 rdf:reifies <<( doc:FactsjournalAppliedSciences schema:name "Applied Sciences" )>> ;
+	prov:wasDerivedFrom doc:90bdc4e833fa .
+doc:Factsscalability rdfs:label "artificial intelligence"@en .
+_:e1af74c22b166d6f218fd7000e2e779a rdf:reifies <<( doc:Factsscalability rdfs:label "artificial intelligence"@en )>> ;
+	prov:wasDerivedFrom doc:90bdc4e833fa .
+doc:Factsauthor5_66 schema:name "A. FernÃ¡ndez-Miguel" .
+_:e2e5da3ad6c2d00a2ff98ff00258e7fe rdf:reifies <<( doc:Factsauthor5_66 schema:name "A. FernÃ¡ndez-Miguel" )>> ;
+	prov:wasDerivedFrom doc:90bdc4e833fa .
+doc:FactsselfLearningMechanisms rdfs:label "self-learning mechanisms"@en .
+_:bade8d0aa2b4314ebb4b350525607f91 rdf:reifies <<( doc:FactsselfLearningMechanisms rdfs:label "self-learning mechanisms"@en )>> ;
+	prov:wasDerivedFrom doc:90bdc4e833fa .
+doc:FactsjournalAppliedSciences rdfs:label "Applied Sciences"@en .
+_:bcda3f31ac352458877da22d0a3bc6bf rdf:reifies <<( doc:FactsjournalAppliedSciences rdfs:label "Applied Sciences"@en )>> ;
+	prov:wasDerivedFrom doc:90bdc4e833fa .
+doc:FactsscalableMonitoringEcosystems a cco:InformationContentEntity .
+_:a704290f5a4bf14b65bc036b791a1a88 rdf:reifies <<( doc:FactsscalableMonitoringEcosystems rdf:type cco:InformationContentEntity )>> ;
+	prov:wasDerivedFrom doc:90bdc4e833fa .
+doc:Factspubyear1_12 cd:has_interger_value 2025 .
+_:b36ae0431a4fcf666ed726c76ab3e647 rdf:reifies <<( doc:Factspubyear1_12 cd:has_interger_value 2025 )>> ;
+	prov:wasDerivedFrom doc:90bdc4e833fa .
+doc:Factsid1_83 cd:has_text_value "10.3390/app152111414" .
+_:e062e88e430b3eef0b16926127d753c4 rdf:reifies <<( doc:Factsid1_83 cd:has_text_value "10.3390/app152111414" )>> ;
+	prov:wasDerivedFrom doc:90bdc4e833fa .
+doc:Factsauthor5_66 schema:name "D. Sette mbreBlundo" .
+_:bc9e274e0eac898bd7977976580fd6a3 rdf:reifies <<( doc:Factsauthor5_66 schema:name "D. Sette mbreBlundo" )>> ;
+	prov:wasDerivedFrom doc:90bdc4e833fa .
+doc:Factsscalability rdfs:label "distributed decision-making"@en .
+_:bf71c61f8fda7ba29a88a0bb5f284869 rdf:reifies <<( doc:Factsscalability rdfs:label "distributed decision-making"@en )>> ;
+	prov:wasDerivedFrom doc:90bdc4e833fa .
+_:ab27ee7913c25d0908dea80543071033 prov:wasDerivedFrom doc:90bdc4e833fa .
+doc:Factsscalability rdfs:label "operational efficiency"@en .
+_:c1bc28c8ad1805f7098c7fe9a7f40412 rdf:reifies <<( doc:Factsscalability rdfs:label "operational efficiency"@en )>> ;
+	prov:wasDerivedFrom doc:90bdc4e833fa .
+doc:Factsarticle1_166 cd:mentions doc:FactsremainingUsefulLife_5 .
+_:f519e3729c68bc162855eda0c59a1872 rdf:reifies <<( doc:Factsarticle1_166 cd:mentions doc:FactsremainingUsefulLife_5 )>> ;
+	prov:wasDerivedFrom doc:90bdc4e833fa .
+doc:Factsarticle1_166 cd:mentions doc:FactsscalableMonitoringEcosystems .
+_:b9f7e8b945808793005c1402864a5a70 rdf:reifies <<( doc:Factsarticle1_166 cd:mentions doc:FactsscalableMonitoringEcosystems )>> ;
+	prov:wasDerivedFrom doc:90bdc4e833fa .
+doc:Factsarticle1_166 cd:mentions doc:FactsrealTimeChanges .
+_:a6fedac03b97765c18ed29fa7c5c109e rdf:reifies <<( doc:Factsarticle1_166 cd:mentions doc:FactsrealTimeChanges )>> ;
+	prov:wasDerivedFrom doc:90bdc4e833fa .
+doc:Factsdoc1_71 rdfs:label "maintenance scheduling"@en .
+_:dae383f1dc11c7f87cdfb01d3568a92c rdf:reifies <<( doc:Factsdoc1_71 rdfs:label "maintenance scheduling"@en )>> ;
+	prov:wasDerivedFrom doc:90bdc4e833fa .
+doc:Factsarticle1_166 cd:mentions doc:FactsoperationalStates .
+_:e6ae3754799c916019a89e09b4f3a0d3 rdf:reifies <<( doc:Factsarticle1_166 cd:mentions doc:FactsoperationalStates )>> ;
+	prov:wasDerivedFrom doc:90bdc4e833fa .
+doc:Factsarticle1_166 cd:has_publication_year doc:Factspubyear1_12 .
+_:d033b411e57473c01b29183cdc17f34 rdf:reifies <<( doc:Factsarticle1_166 cd:has_publication_year doc:Factspubyear1_12 )>> ;
+	prov:wasDerivedFrom doc:90bdc4e833fa .
+doc:Factsscalability rdfs:label "explainability"@en .
+_:f6517eb33745941c2bbcc25202851f9b rdf:reifies <<( doc:Factsscalability rdfs:label "explainability"@en )>> ;
+	prov:wasDerivedFrom doc:90bdc4e833fa .
+_:a6c2293b775bf9dbef5d43a35bc5a660 prov:wasDerivedFrom doc:90bdc4e833fa .
+doc:Factsscalability rdfs:label "failure patterns"@en .
+_:a1b9336902fa3abdfadde3785efd2dbf rdf:reifies <<( doc:Factsscalability rdfs:label "failure patterns"@en )>> ;
+	prov:wasDerivedFrom doc:90bdc4e833fa .
+doc:FactsrealTimeChanges a cco:InformationContentEntity .
+_:a09a2d9987fcc9a63a5887132470653e rdf:reifies <<( doc:FactsrealTimeChanges rdf:type cco:InformationContentEntity )>> ;
+	prov:wasDerivedFrom doc:90bdc4e833fa .
+doc:Factsarticle1_166 cd:has_title doc:Factsid1_83 .
+_:ff39f8b4015e71559dddd593a30f0b9e rdf:reifies <<( doc:Factsarticle1_166 cd:has_title doc:Factsid1_83 )>> ;
+	prov:wasDerivedFrom doc:90bdc4e833fa .
+doc:Factsscalability rdfs:label "distributed intelligence"@en .
+_:d77d8538e08c7f91ca2bb009256fb73a rdf:reifies <<( doc:Factsscalability rdfs:label "distributed intelligence"@en )>> ;
+	prov:wasDerivedFrom doc:90bdc4e833fa .
+doc:6d2e1014fd23 a prov:Entity , schema:text ;
+	prov:generatedAtTime "2026-07-22T08:43:46.719999Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+	schema:position 2 ;
+	schema:identifier "6d2e1014fd23" .
+doc:Factsdoc1_71 rdfs:label "Multi-Agent Systems in Industrial Applications" .
+_:e6f4f642250000b5ca488ac71530a61c rdf:reifies <<( doc:Factsdoc1_71 rdfs:label "Multi-Agent Systems in Industrial Applications" )>> ;
+	prov:wasDerivedFrom doc:6d2e1014fd23 .
+doc:Factsscalability cd:hasAspect doc:Factsscalability .
+_:e192e729c12b347b6c1c62e1645769c rdf:reifies <<( doc:Factsscalability cd:hasAspect doc:Factsscalability )>> ;
+	prov:wasDerivedFrom doc:6d2e1014fd23 .
+doc:Factsdoc1_71 a None:Predictive_Maintenance_Article .
+_:abff6451bcdfdd5322b80c36a3279532 rdf:reifies <<( doc:Factsdoc1_71 rdf:type None:Predictive_Maintenance_Article )>> ;
+	prov:wasDerivedFrom doc:6d2e1014fd23 .
+doc:Factsscalability rdfs:label "Agentic AI" .
+_:dd8e0dbbaccd74855ead0ae63235be30 rdf:reifies <<( doc:Factsscalability rdfs:label "Agentic AI" )>> ;
+	prov:wasDerivedFrom doc:6d2e1014fd23 .
+doc:Factsmonitoring1_8 rdfs:label "machinery health monitoring" .
+_:c977d9444b83fc1d4c9c6d6f65720cd3 rdf:reifies <<( doc:Factsmonitoring1_8 rdfs:label "machinery health monitoring" )>> ;
+	prov:wasDerivedFrom doc:6d2e1014fd23 .
+doc:Factsdata_privacy1 a schema1:Intangible .
+_:bcbeb5bee6b8a45264120cd3f01627c7 rdf:reifies <<( doc:Factsdata_privacy1 rdf:type schema1:Intangible )>> ;
+	prov:wasDerivedFrom doc:6d2e1014fd23 .
+doc:Factsmaturity_model1 a None:Model_configuration .
+_:d44701d4d95e8dd50e7f70bba2a1dad0 rdf:reifies <<( doc:Factsmaturity_model1 rdf:type None:Model_configuration )>> ;
+	prov:wasDerivedFrom doc:6d2e1014fd23 .
+doc:Factspattern_recognition1 rdfs:label "pattern recognition" .
+_:a385df364ab88f5976be9fe130b1cc9a rdf:reifies <<( doc:Factspattern_recognition1 rdfs:label "pattern recognition" )>> ;
+	prov:wasDerivedFrom doc:6d2e1014fd23 .
+doc:Factsdoc1_71 cd:hasPart doc:Factsscalability .
+_:dd454b70af62522f0bd5d9ae7fad6b18 rdf:reifies <<( doc:Factsdoc1_71 cd:hasPart doc:Factsscalability )>> ;
+	prov:wasDerivedFrom doc:6d2e1014fd23 .
+doc:Factsadvantage_fault_tolerance1 a schema1:Intangible .
+_:a6cfdb83100f9c2e75a1600d7b08f692 rdf:reifies <<( doc:Factsadvantage_fault_tolerance1 rdf:type schema1:Intangible )>> ;
+	prov:wasDerivedFrom doc:6d2e1014fd23 .
+doc:Factsdata_acquisition1_1 a None:Data_variable .
+_:aba0ac78a1804288f6d29a7ce1ca2ed0 rdf:reifies <<( doc:Factsdata_acquisition1_1 rdf:type None:Data_variable )>> ;
+	prov:wasDerivedFrom doc:6d2e1014fd23 .
+doc:Factsadvantage_adaptability1 a schema1:Intangible .
+_:a0e40bef3bc61b323884823657a148c1 rdf:reifies <<( doc:Factsadvantage_adaptability1 rdf:type schema1:Intangible )>> ;
+	prov:wasDerivedFrom doc:6d2e1014fd23 .
+doc:Factsdoc1_71 cd:hasPart doc:Factsresearch_gap1 .
+_:b8e2ccd457de8f9f5bb17625d7dffcef rdf:reifies <<( doc:Factsdoc1_71 cd:hasPart doc:Factsresearch_gap1 )>> ;
+	prov:wasDerivedFrom doc:6d2e1014fd23 .
+doc:Factscomputational_resources1 rdfs:label "limited computational resources" .
+_:b660879ed00c241ac96a08ca9cbf5e97 rdf:reifies <<( doc:Factscomputational_resources1 rdfs:label "limited computational resources" )>> ;
+	prov:wasDerivedFrom doc:6d2e1014fd23 .
+doc:Factsscalability rdfs:label "accountable" .
+_:baa3d9261c8fc937dd70584ba0708153 rdf:reifies <<( doc:Factsscalability rdfs:label "accountable" )>> ;
+	prov:wasDerivedFrom doc:6d2e1014fd23 .
+doc:Factsindustrial_environment1 rdfs:label "industrial environments" .
+_:e0ff8c30d0142a441952d959972c318c rdf:reifies <<( doc:Factsindustrial_environment1 rdfs:label "industrial environments" )>> ;
+	prov:wasDerivedFrom doc:6d2e1014fd23 .
+doc:Factssafety_standards1 a schema1:Intangible .
+_:a74ff0cd38951fc4889beb2a6cb823e6 rdf:reifies <<( doc:Factssafety_standards1 rdf:type schema1:Intangible )>> ;
+	prov:wasDerivedFrom doc:6d2e1014fd23 .
+doc:Factsscalability rdfs:label "scalability" .
+_:fc1b63caee8523efa4f2e822584c5f72 rdf:reifies <<( doc:Factsscalability rdfs:label "scalability" )>> ;
+	prov:wasDerivedFrom doc:6d2e1014fd23 .
+doc:Factshuman_centered1 rdfs:label "human-centered industrial ecosystems" .
+_:e528a98389e355d6984e6d7ef8bc0741 rdf:reifies <<( doc:Factshuman_centered1 rdfs:label "human-centered industrial ecosystems" )>> ;
+	prov:wasDerivedFrom doc:6d2e1014fd23 .
+doc:Factsscalability rdfs:label "human oversight" .
+_:cf2ce9b817c6b986a0c0850a420d8f76 rdf:reifies <<( doc:Factsscalability rdfs:label "human oversight" )>> ;
+	prov:wasDerivedFrom doc:6d2e1014fd23 .
+doc:FactsfaultDetection_8 rdfs:label "fault diagnosis" .
+_:dcec245ba83df075927be7a2dadb2d28 rdf:reifies <<( doc:FactsfaultDetection_8 rdfs:label "fault diagnosis" )>> ;
+	prov:wasDerivedFrom doc:6d2e1014fd23 .
+doc:Factsresearch_gap1 rdfs:label "research gap" .
+_:e08d0085e298da4a5e36aa45acb8fb50 rdf:reifies <<( doc:Factsresearch_gap1 rdfs:label "research gap" )>> ;
+	prov:wasDerivedFrom doc:6d2e1014fd23 .
+doc:Factsagent1 rdfs:label "agent" .
+_:cb9ba0718d03987316d05ce968ace159 rdf:reifies <<( doc:Factsagent1 rdfs:label "agent" )>> ;
+	prov:wasDerivedFrom doc:6d2e1014fd23 .
+doc:Factsdoc1_71 cd:mentions doc:Factsscalability .
+_:f317c0e716077fe9e4bb1193793b7be1 rdf:reifies <<( doc:Factsdoc1_71 cd:mentions doc:Factsscalability )>> ;
+	prov:wasDerivedFrom doc:6d2e1014fd23 .
+doc:Factsscalability a owl:Class .
+_:fb11ff51877ae6332d62053537779095 rdf:reifies <<( doc:Factsscalability rdf:type owl:Class )>> ;
+	prov:wasDerivedFrom doc:6d2e1014fd23 .
+doc:Factsmonitoring1_8 rdfs:subClassOf None:Health_assessment .
+_:e270de7f652c2494edcb4a5e06e6e3bf rdf:reifies <<( doc:Factsmonitoring1_8 rdfs:subClassOf None:Health_assessment )>> ;
+	prov:wasDerivedFrom doc:6d2e1014fd23 .
+doc:Factsscalability a schema1:Intangible .
+_:bf731ef838f3472a2c48afbc6739bbae rdf:reifies <<( doc:Factsscalability rdf:type schema1:Intangible )>> ;
+	prov:wasDerivedFrom doc:6d2e1014fd23 .
+doc:Factscomputational_resources1 a schema1:Intangible .
+_:b3da3aa15134442422132dbd96e16d60 rdf:reifies <<( doc:Factscomputational_resources1 rdf:type schema1:Intangible )>> ;
+	prov:wasDerivedFrom doc:6d2e1014fd23 .
+doc:FactsfaultDetection_8 a None:Fault_identification .
+_:f3504b984288631fa76379368da5c237 rdf:reifies <<( doc:FactsfaultDetection_8 rdf:type None:Fault_identification )>> ;
+	prov:wasDerivedFrom doc:6d2e1014fd23 .
+doc:Factsdoc1_71 a schema1:Intangible .
+_:afbd29b06fbaa4ca337d0ab0a388bbff rdf:reifies <<( doc:Factsdoc1_71 rdf:type schema1:Intangible )>> ;
+	prov:wasDerivedFrom doc:6d2e1014fd23 .
+doc:Factsdoc1_71 cd:mentions doc:FactsfederatedLearning1 .
+_:a1035f33541fffd3ea42c00c559fb998 rdf:reifies <<( doc:Factsdoc1_71 cd:mentions doc:FactsfederatedLearning1 )>> ;
+	prov:wasDerivedFrom doc:6d2e1014fd23 .
+doc:Factsdoc1_71 cd:hasPart doc:Factsframework1_10 .
+_:ef734ed752d399c07f8a4b9e776270b7 rdf:reifies <<( doc:Factsdoc1_71 cd:hasPart doc:Factsframework1_10 )>> ;
+	prov:wasDerivedFrom doc:6d2e1014fd23 .
+doc:Factsmas1 rdfs:label "multi-agent architectures" .
+_:d922fdee38500b70069930092b261ee2 rdf:reifies <<( doc:Factsmas1 rdfs:label "multi-agent architectures" )>> ;
+	prov:wasDerivedFrom doc:6d2e1014fd23 .
+doc:Factsframework1_10 rdfs:label "comprehensive frameworks" .
+_:d0bb320e3372f26fe950706738fdefa4 rdf:reifies <<( doc:Factsframework1_10 rdfs:label "comprehensive frameworks" )>> ;
+	prov:wasDerivedFrom doc:6d2e1014fd23 .
+doc:Factsmonitoring1_8 a owl:Class .
+_:ae5f884e6ef9402eaae8c41e82a249bd rdf:reifies <<( doc:Factsmonitoring1_8 rdf:type owl:Class )>> ;
+	prov:wasDerivedFrom doc:6d2e1014fd23 .
+doc:Factsresearch_gap1 a schema1:Intangible .
+_:f6112aef99e1d1f665fa815ad988fbc5 rdf:reifies <<( doc:Factsresearch_gap1 rdf:type schema1:Intangible )>> ;
+	prov:wasDerivedFrom doc:6d2e1014fd23 .
+doc:Factsindustrial_environment1 a schema1:Place .
+_:e14b7ef4a4c5837e04f052278e39d989 rdf:reifies <<( doc:Factsindustrial_environment1 rdf:type schema1:Place )>> ;
+	prov:wasDerivedFrom doc:6d2e1014fd23 .
+doc:Factsdoc1_71 cd:mentions doc:Factsmas1 .
+_:ae6fa233d15e5d049be298d611000a15 rdf:reifies <<( doc:Factsdoc1_71 cd:mentions doc:Factsmas1 )>> ;
+	prov:wasDerivedFrom doc:6d2e1014fd23 .
+doc:Factssystem1_9 rdfs:label "monolithic systems" .
+_:fec2206eaf5533c30bca87c4ba36eed6 rdf:reifies <<( doc:Factssystem1_9 rdfs:label "monolithic systems" )>> ;
+	prov:wasDerivedFrom doc:6d2e1014fd23 .
+doc:Factsconceptual_foundations1 rdfs:label "conceptual foundations" .
+_:dbeb12df065f4c7f19286d37bb204f03 rdf:reifies <<( doc:Factsconceptual_foundations1 rdfs:label "conceptual foundations" )>> ;
+	prov:wasDerivedFrom doc:6d2e1014fd23 .
+doc:Factsmas1 a owl:Class .
+_:bfb094122d4ff618ede5e02cc3b63859 rdf:reifies <<( doc:Factsmas1 rdf:type owl:Class )>> ;
+	prov:wasDerivedFrom doc:6d2e1014fd23 .
+doc:Factsautonomous_agents1 a owl:Class .
+_:d1d4dd77aa310a888e28efe60ce4d259 rdf:reifies <<( doc:Factsautonomous_agents1 rdf:type owl:Class )>> ;
+	prov:wasDerivedFrom doc:6d2e1014fd23 .
+doc:Factsdata_privacy1 rdfs:label "data privacy" .
+_:a8c6545b1706a73d854836dac170ff9f rdf:reifies <<( doc:Factsdata_privacy1 rdfs:label "data privacy" )>> ;
+	prov:wasDerivedFrom doc:6d2e1014fd23 .
+doc:Factscollaborative_ai1 a owl:Class .
+_:fd5fc642cba33819d2cae10de0a63101 rdf:reifies <<( doc:Factscollaborative_ai1 rdf:type owl:Class )>> ;
+	prov:wasDerivedFrom doc:6d2e1014fd23 .
+doc:Factsmaturity_model1 rdfs:label "structured maturity models" .
+_:fe3ec5ab29524db539c25af48cdfb82f rdf:reifies <<( doc:Factsmaturity_model1 rdfs:label "structured maturity models" )>> ;
+	prov:wasDerivedFrom doc:6d2e1014fd23 .
+doc:Factsdata_acquisition1_1 rdfs:label "data acquisition" .
+_:b533d3b1924f30ec1314fa4a1279b6de rdf:reifies <<( doc:Factsdata_acquisition1_1 rdfs:label "data acquisition" )>> ;
+	prov:wasDerivedFrom doc:6d2e1014fd23 .
+doc:Factsscalability cd:hasAspect doc:Factshuman_centered1 .
+_:d29d362d455126fe112d50dacb8a3c08 rdf:reifies <<( doc:Factsscalability cd:hasAspect doc:Factshuman_centered1 )>> ;
+	prov:wasDerivedFrom doc:6d2e1014fd23 .
+doc:Factsmas1 rdfs:label "multi-agent systems" .
+_:c77b9d4313eb9c284f9423ec53317c72 rdf:reifies <<( doc:Factsmas1 rdfs:label "multi-agent systems" )>> ;
+	prov:wasDerivedFrom doc:6d2e1014fd23 .
+doc:Factsautonomous_agents1 cd:relatedTo doc:Factsscalability .
+_:c15c4243dd9044509c1eef31b4d7dcd1 rdf:reifies <<( doc:Factsautonomous_agents1 cd:relatedTo doc:Factsscalability )>> ;
+	prov:wasDerivedFrom doc:6d2e1014fd23 .
+doc:FactsfederatedLearning1 rdfs:label "federated learning" .
+_:f1bcb44e6efe5565b50677e6bb0b1b6 rdf:reifies <<( doc:FactsfederatedLearning1 rdfs:label "federated learning" )>> ;
+	prov:wasDerivedFrom doc:6d2e1014fd23 .
+doc:Factspattern_recognition1 a None:Classification .
+_:a44d619614d782fb51b2ecb850e78b5e rdf:reifies <<( doc:Factspattern_recognition1 rdf:type None:Classification )>> ;
+	prov:wasDerivedFrom doc:6d2e1014fd23 .
+doc:Factssafety_standards1 rdfs:label "rigorous safety standards" .
+_:b134a12716b916f709a19c23e045b2ff rdf:reifies <<( doc:Factssafety_standards1 rdfs:label "rigorous safety standards" )>> ;
+	prov:wasDerivedFrom doc:6d2e1014fd23 .
+doc:Factsscalability rdfs:label "agency" .
+_:c8560ec526450fc8ec135c4d9235a49a rdf:reifies <<( doc:Factsscalability rdfs:label "agency" )>> ;
+	prov:wasDerivedFrom doc:6d2e1014fd23 .
+doc:FactsfederatedLearning1 a owl:Class .
+_:b71b582eb8d95ee960dc29af02717c99 rdf:reifies <<( doc:FactsfederatedLearning1 rdf:type owl:Class )>> ;
+	prov:wasDerivedFrom doc:6d2e1014fd23 .
+doc:Factsdoc1_71 rdfs:label "maintenance scheduling" .
+_:aad499210fbe80c21914832bf11c50eb rdf:reifies <<( doc:Factsdoc1_71 rdfs:label "maintenance scheduling" )>> ;
+	prov:wasDerivedFrom doc:6d2e1014fd23 .
+doc:FactsindustrialIntelligence1 rdfs:label "autonomous industrial intelligence" .
+_:a179a96520933cc7a58afe6f272e8bf rdf:reifies <<( doc:FactsindustrialIntelligence1 rdfs:label "autonomous industrial intelligence" )>> ;
+	prov:wasDerivedFrom doc:6d2e1014fd23 .
+doc:Factsautonomous_agents1 rdfs:label "autonomous agents" .
+_:a28f8a071b074210036232f41c99654a rdf:reifies <<( doc:Factsautonomous_agents1 rdfs:label "autonomous agents" )>> ;
+	prov:wasDerivedFrom doc:6d2e1014fd23 .
+doc:Factsmas1 rdfs:subClassOf doc:Factsmas1 .
+_:fcf53bfc18e5d45e54969532ea613ba rdf:reifies <<( doc:Factsmas1 rdfs:subClassOf doc:Factsmas1 )>> ;
+	prov:wasDerivedFrom doc:6d2e1014fd23 .
+doc:FactsindustrialIntelligence1 a owl:Class .
+_:d3248a64ab8de71b8bb027f0e26094ea rdf:reifies <<( doc:FactsindustrialIntelligence1 rdf:type owl:Class )>> ;
+	prov:wasDerivedFrom doc:6d2e1014fd23 .
+doc:Factsagent1 a schema:Person .
+_:f407ff70bc273ab96fe6ba9099e8b49 rdf:reifies <<( doc:Factsagent1 rdf:type schema:Person )>> ;
+	prov:wasDerivedFrom doc:6d2e1014fd23 .
+doc:Factsceramic_manufacturing1 rdfs:label "ceramic manufacturing" .
+_:c50e7a5b16862f68561280e52b975aab rdf:reifies <<( doc:Factsceramic_manufacturing1 rdfs:label "ceramic manufacturing" )>> ;
+	prov:wasDerivedFrom doc:6d2e1014fd23 .
+doc:Factsadvantage_adaptability1 rdfs:label "adaptability" .
+_:d203440286ff32932b37bff0579f195c rdf:reifies <<( doc:Factsadvantage_adaptability1 rdfs:label "adaptability" )>> ;
+	prov:wasDerivedFrom doc:6d2e1014fd23 .
+doc:Factsframework1_10 a owl:Class .
+_:b5762d8e9f846436806429c76f07b981 rdf:reifies <<( doc:Factsframework1_10 rdf:type owl:Class )>> ;
+	prov:wasDerivedFrom doc:6d2e1014fd23 .
+doc:Factsbandwidth_constraints1 rdfs:label "bandwidth constraints" .
+_:e393ddb5aa4dea1a99a0d7824ddd710d rdf:reifies <<( doc:Factsbandwidth_constraints1 rdfs:label "bandwidth constraints" )>> ;
+	prov:wasDerivedFrom doc:6d2e1014fd23 .
+doc:Factsceramic_manufacturing1 a schema1:Organization .
+_:c33d001025e00a079e883db04e487dbf rdf:reifies <<( doc:Factsceramic_manufacturing1 rdf:type schema1:Organization )>> ;
+	prov:wasDerivedFrom doc:6d2e1014fd23 .
+doc:Factsconceptual_foundations1 a schema1:Intangible .
+_:dadc55e90b28b8e54d5cfe0966ec84ce rdf:reifies <<( doc:Factsconceptual_foundations1 rdf:type schema1:Intangible )>> ;
+	prov:wasDerivedFrom doc:6d2e1014fd23 .
+doc:Factscollaborative_ai1 rdfs:label "collaborative AI" .
+_:e5b64c04edf111162142cd376d6dd7fc rdf:reifies <<( doc:Factscollaborative_ai1 rdfs:label "collaborative AI" )>> ;
+	prov:wasDerivedFrom doc:6d2e1014fd23 .
+doc:Factshuman_centered1 a schema1:Intangible .
+_:d2f4928b63e509e62d83aa9aaac128ec rdf:reifies <<( doc:Factshuman_centered1 rdf:type schema1:Intangible )>> ;
+	prov:wasDerivedFrom doc:6d2e1014fd23 .
+doc:Factsscalability rdfs:label "motivation" .
+_:eff9916a8cf750d4aeea203805edf944 rdf:reifies <<( doc:Factsscalability rdfs:label "motivation" )>> ;
+	prov:wasDerivedFrom doc:6d2e1014fd23 .
+doc:Factsbandwidth_constraints1 a schema1:Intangible .
+_:a243a1ea1c357d10e81154d10db374f6 rdf:reifies <<( doc:Factsbandwidth_constraints1 rdf:type schema1:Intangible )>> ;
+	prov:wasDerivedFrom doc:6d2e1014fd23 .
+doc:Factsadvantage_fault_tolerance1 rdfs:label "fault tolerance" .
+_:fe3fd86d41e596173621642924e76851 rdf:reifies <<( doc:Factsadvantage_fault_tolerance1 rdfs:label "fault tolerance" )>> ;
+	prov:wasDerivedFrom doc:6d2e1014fd23 .
+doc:Factssystem1_9 a owl:Class .
+_:d1306ef9180655178d94cfab962afd1d rdf:reifies <<( doc:Factssystem1_9 rdf:type owl:Class )>> ;
+	prov:wasDerivedFrom doc:6d2e1014fd23 .
+doc:Factsmas1 rdfs:subClassOf None:Predictive_maintenance_system_module .
+_:a0dc8718720951f9996dfe9e90ed0b8b rdf:reifies <<( doc:Factsmas1 rdfs:subClassOf None:Predictive_maintenance_system_module )>> ;
+	prov:wasDerivedFrom doc:6d2e1014fd23 .
+doc:Factsscalability rdfs:label "self-organizing" .
+_:d34ff71f52b21e45ee204b86670d151 rdf:reifies <<( doc:Factsscalability rdfs:label "self-organizing" )>> ;
+	prov:wasDerivedFrom doc:6d2e1014fd23 .
+cco:InformationContentEntity owl:sameAs cco:DescriptiveInformationContentEntity .

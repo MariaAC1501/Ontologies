@@ -1,0 +1,492 @@
+@prefix None: <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD/seed#> .
+@prefix cco: <http://www.ontologyrepository.com/CommonCoreOntologies/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doc: <https://growgraph.dev/doc/21f5994b1922/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix obo: <http://purl.obolibrary.org/obo/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix schema: <https://schema.org/> .
+@prefix schema1: <http://schema.org/> .
+doc:ca9f17d50cc1 a prov:Entity , schema:text ;
+	prov:generatedAtTime "2026-07-11T04:47:51.165126Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+	schema:position 0 ;
+	schema:identifier "ca9f17d50cc1" .
+doc:FactsOrgSitSchoolEe a schema1:Organization .
+_:c38d042532fe64ea49760c4cdea7eff9 rdf:reifies <<( doc:FactsOrgSitSchoolEe rdf:type schema1:Organization )>> ;
+	prov:wasDerivedFrom doc:ca9f17d50cc1 .
+doc:FactsModalitiesConfig cco:describes doc:FactsAudioModalities .
+_:eb28db1c489145bfe9a5723c0bab996 rdf:reifies <<( doc:FactsModalitiesConfig cco:describes doc:FactsAudioModalities )>> ;
+	prov:wasDerivedFrom doc:ca9f17d50cc1 .
+doc:FactsDatasetSelfconstructed a cco:Database .
+_:e5162f9a768bb15484708109cbb74499 rdf:reifies <<( doc:FactsDatasetSelfconstructed rdf:type cco:Database )>> ;
+	prov:wasDerivedFrom doc:ca9f17d50cc1 .
+doc:Factsarticle_2024_Xu_etal cco:describes doc:FactsDatasetSelfconstructed .
+_:d19b7dfc46722d29747a18df03423065 rdf:reifies <<( doc:Factsarticle_2024_Xu_etal cco:describes doc:FactsDatasetSelfconstructed )>> ;
+	prov:wasDerivedFrom doc:ca9f17d50cc1 .
+doc:FactsInferenceSpeed None:has_text_value "0.8 milliseconds per sample end-to-end (including preprocessing, feature extraction, classification)" .
+_:aff6f941b2330c786a7fa023d1f4dca8 rdf:reifies <<( doc:FactsInferenceSpeed None:has_text_value "0.8 milliseconds per sample end-to-end (including preprocessing, feature extraction, classification)" )>> ;
+	prov:wasDerivedFrom doc:ca9f17d50cc1 .
+doc:FactsDesignDetailLightweight a None:Design_detail .
+_:eefc870ad3a390903935449fb836de09 rdf:reifies <<( doc:FactsDesignDetailLightweight rdf:type None:Design_detail )>> ;
+	prov:wasDerivedFrom doc:ca9f17d50cc1 .
+doc:FactsCorrespondingContact a schema1:ContactPoint .
+_:bf582247bb7c402327f4175cd6db89dc rdf:reifies <<( doc:FactsCorrespondingContact rdf:type schema1:ContactPoint )>> ;
+	prov:wasDerivedFrom doc:ca9f17d50cc1 .
+doc:FactsInferenceSpeed cco:describes doc:FactsModule1_2 .
+_:b367475266bfa39966cbfbc5e2ae526c rdf:reifies <<( doc:FactsInferenceSpeed cco:describes doc:FactsModule1_2 )>> ;
+	prov:wasDerivedFrom doc:ca9f17d50cc1 .
+doc:FactsDesignDetailLightweight None:has_text_value "channel-pruned ResNet18 for image spatial feature extraction; hybrid data augmentation strategy for multi-modal engine data; improved lightweight XGBoost classifier; theoretical cosine-similarity derivation and attention weight constraint (Î² = 1 - Î±)" .
+_:fb8deab2d3111435cdf6046e92060b0 rdf:reifies <<( doc:FactsDesignDetailLightweight None:has_text_value "channel-pruned ResNet18 for image spatial feature extraction; hybrid data augmentation strategy for multi-modal engine data; improved lightweight XGBoost classifier; theoretical cosine-similarity derivation and attention weight constraint (Î² = 1 - Î±)" )>> ;
+	prov:wasDerivedFrom doc:ca9f17d50cc1 .
+doc:FactsModule1_2 None:has_predictive_maintenance_function None:Fault_detection .
+_:b450dc4f63520733f7250505d7d159a5 rdf:reifies <<( doc:FactsModule1_2 None:has_predictive_maintenance_function None:Fault_detection )>> ;
+	prov:wasDerivedFrom doc:ca9f17d50cc1 .
+doc:FactsModalitiesConfig cco:describes doc:FactsVibrationVisModalities .
+_:dd428692d8ba1ad4b7d0c4dc77c34e5b rdf:reifies <<( doc:FactsModalitiesConfig cco:describes doc:FactsVibrationVisModalities )>> ;
+	prov:wasDerivedFrom doc:ca9f17d50cc1 .
+doc:FactsYiXu schema1:affiliation doc:FactsOrgSitSchoolEe .
+_:a50f171ada72ea9fa0bd1f9e79c3380f rdf:reifies <<( doc:FactsYiXu schema1:affiliation doc:FactsOrgSitSchoolEe )>> ;
+	prov:wasDerivedFrom doc:ca9f17d50cc1 .
+doc:FactsInferenceSpeed None:has_text_value "average accuracy on SEMFault-2024 open-source dataset" .
+_:bbba629cb0853ed8b87e08f0e03e6269 rdf:reifies <<( doc:FactsInferenceSpeed None:has_text_value "average accuracy on SEMFault-2024 open-source dataset" )>> ;
+	prov:wasDerivedFrom doc:ca9f17d50cc1 .
+doc:FactsYiXu schema1:affiliation doc:FactsOrgSitFacultyMaterials .
+_:a247977749a68cdf9e5eaa38183f1719 rdf:reifies <<( doc:FactsYiXu schema1:affiliation doc:FactsOrgSitFacultyMaterials )>> ;
+	prov:wasDerivedFrom doc:ca9f17d50cc1 .
+doc:FactsVibrationVisModalities a None:Data_variable .
+_:bd83b9967b4761a7a58b05e9c9b73770 rdf:reifies <<( doc:FactsVibrationVisModalities rdf:type None:Data_variable )>> ;
+	prov:wasDerivedFrom doc:ca9f17d50cc1 .
+doc:Factsdataset_2_0T_diesel None:has_text_value "2.0T diesel engine small-sample dataset used for cross-engine validation" .
+_:b4622e158f44763c2fb5bdfebd0658f0 rdf:reifies <<( doc:Factsdataset_2_0T_diesel None:has_text_value "2.0T diesel engine small-sample dataset used for cross-engine validation" )>> ;
+	prov:wasDerivedFrom doc:ca9f17d50cc1 .
+doc:FactsYiXu schema1:email "236101133@mail.sit.edu.cn" .
+_:bc69f4fc1a7c4988137b7b2bfd71be32 rdf:reifies <<( doc:FactsYiXu schema1:email "236101133@mail.sit.edu.cn" )>> ;
+	prov:wasDerivedFrom doc:ca9f17d50cc1 .
+doc:FactsAudioModalities None:has_text_value "engine audio signals" .
+_:cc3070d524a9296fbb079ddf917c09aa rdf:reifies <<( doc:FactsAudioModalities None:has_text_value "engine audio signals" )>> ;
+	prov:wasDerivedFrom doc:ca9f17d50cc1 .
+doc:FactsYiXu schema1:givenName "Xuedong" .
+_:e28e93cee5616e516ba555c882ce015f rdf:reifies <<( doc:FactsYiXu schema1:givenName "Xuedong" )>> ;
+	prov:wasDerivedFrom doc:ca9f17d50cc1 .
+doc:FactsModule1_2 None:has_predictive_maintenance_function None:Fault_feature_extraction .
+_:cf1891f1ca5b729f6f53813acdf89291 rdf:reifies <<( doc:FactsModule1_2 None:has_predictive_maintenance_function None:Fault_feature_extraction )>> ;
+	prov:wasDerivedFrom doc:ca9f17d50cc1 .
+doc:FactsWpd_1 cco:describes doc:FactsModule1_2 .
+_:ee34eb96ed983c8a671b1202cf4f0ce8 rdf:reifies <<( doc:FactsWpd_1 cco:describes doc:FactsModule1_2 )>> ;
+	prov:wasDerivedFrom doc:ca9f17d50cc1 .
+doc:FactsDatasetSelfconstructed None:has_text_value "self-constructed multi-modal dataset (audio, thermal images, vibration visualization) used for experiments" .
+_:b30b2e7b178d8f88fba65ef8402a90ad rdf:reifies <<( doc:FactsDatasetSelfconstructed None:has_text_value "self-constructed multi-modal dataset (audio, thermal images, vibration visualization) used for experiments" )>> ;
+	prov:wasDerivedFrom doc:ca9f17d50cc1 .
+doc:Factsarticle_2024_Xu_etal schema1:contactPoint doc:FactsCorrespondingContact .
+_:da38dee8aa2455e94b6774cb83e117b6 rdf:reifies <<( doc:Factsarticle_2024_Xu_etal schema1:contactPoint doc:FactsCorrespondingContact )>> ;
+	prov:wasDerivedFrom doc:ca9f17d50cc1 .
+doc:Factsdataset_2_0T_diesel a cco:Database .
+_:e6db50d65b84af5d931bd5fceade9469 rdf:reifies <<( doc:Factsdataset_2_0T_diesel rdf:type cco:Database )>> ;
+	prov:wasDerivedFrom doc:ca9f17d50cc1 .
+doc:FactsInferenceSpeed a None:Performance_value .
+_:aee17e5283e0c3711de0430fb3f33e2b rdf:reifies <<( doc:FactsInferenceSpeed rdf:type None:Performance_value )>> ;
+	prov:wasDerivedFrom doc:ca9f17d50cc1 .
+doc:Factsarticle_2024_Xu_etal schema1:author doc:FactsYiXu .
+_:ea312eed988f6ec6f60981fdf8072f5d rdf:reifies <<( doc:Factsarticle_2024_Xu_etal schema1:author doc:FactsYiXu )>> ;
+	prov:wasDerivedFrom doc:ca9f17d50cc1 .
+doc:FactsThermalImageModalities a None:Data_variable .
+_:efc2372644f8dbbf3fd8ca028e3cec0f rdf:reifies <<( doc:FactsThermalImageModalities rdf:type None:Data_variable )>> ;
+	prov:wasDerivedFrom doc:ca9f17d50cc1 .
+doc:FactsOrgSitSchoolEe schema1:name "School of Electrical and Electronic Engineering, Shanghai Institute of Technology" .
+_:f948db6101ac8e4ae2e7540d0fd2b23d rdf:reifies <<( doc:FactsOrgSitSchoolEe schema1:name "School of Electrical and Electronic Engineering, Shanghai Institute of Technology" )>> ;
+	prov:wasDerivedFrom doc:ca9f17d50cc1 .
+doc:FactsEngine1 a None:Maintainable_item .
+_:d6fa3fb80cd1fdf89ebdf28bbca7affe rdf:reifies <<( doc:FactsEngine1 rdf:type None:Maintainable_item )>> ;
+	prov:wasDerivedFrom doc:ca9f17d50cc1 .
+doc:FactsCorrespondingContact schema1:email "jingkd2003@aliyun.com" .
+_:eee38b0fee87c7b4c88f74687e7aed90 rdf:reifies <<( doc:FactsCorrespondingContact schema1:email "jingkd2003@aliyun.com" )>> ;
+	prov:wasDerivedFrom doc:ca9f17d50cc1 .
+doc:FactsModalitiesConfig cco:describes doc:FactsThermalImageModalities .
+_:d4ff5ee4fa0976e90c1e79f53b94ed5f rdf:reifies <<( doc:FactsModalitiesConfig cco:describes doc:FactsThermalImageModalities )>> ;
+	prov:wasDerivedFrom doc:ca9f17d50cc1 .
+doc:Factsdataset_SEMFault_2024 a cco:Database .
+_:db389767d4aaf3adb105480d54e6066d rdf:reifies <<( doc:Factsdataset_SEMFault_2024 rdf:type cco:Database )>> ;
+	prov:wasDerivedFrom doc:ca9f17d50cc1 .
+doc:FactsAudioModalities a None:Data_variable .
+_:b1fee623b9f95e5ba970804950e7aeff rdf:reifies <<( doc:FactsAudioModalities rdf:type None:Data_variable )>> ;
+	prov:wasDerivedFrom doc:ca9f17d50cc1 .
+doc:Factsarticle_2024_Xu_etal None:has_title doc:Factstitle_1 .
+_:c2204c35e3dc63808512c504e691ab91 rdf:reifies <<( doc:Factsarticle_2024_Xu_etal None:has_title doc:Factstitle_1 )>> ;
+	prov:wasDerivedFrom doc:ca9f17d50cc1 .
+doc:FactsXgBoostClassifier a cco:Algorithm .
+_:d708dd1434c9c310b26276435d0c6817 rdf:reifies <<( doc:FactsXgBoostClassifier rdf:type cco:Algorithm )>> ;
+	prov:wasDerivedFrom doc:ca9f17d50cc1 .
+doc:FactsInferenceSpeed schema1:value 0.948 .
+_:c784ff2505833fcaf1970d6ae999b9a4 rdf:reifies <<( doc:FactsInferenceSpeed schema1:value 0.948 )>> ;
+	prov:wasDerivedFrom doc:ca9f17d50cc1 .
+doc:Factsdataset_SEMFault_2024 None:has_text_value "open-source SEMFault-2024 dataset" .
+_:ec76e52a76122527ba3acae17e4c9927 rdf:reifies <<( doc:Factsdataset_SEMFault_2024 None:has_text_value "open-source SEMFault-2024 dataset" )>> ;
+	prov:wasDerivedFrom doc:ca9f17d50cc1 .
+doc:FactsYiXu schema1:familyName "Chen" .
+_:fc367976598ca7d0725b70437cbb56c7 rdf:reifies <<( doc:FactsYiXu schema1:familyName "Chen" )>> ;
+	prov:wasDerivedFrom doc:ca9f17d50cc1 .
+doc:FactsThermalImageModalities None:has_text_value "engine thermal imaging" .
+_:d35d93b3d0443b1385ff323cfc15bec0 rdf:reifies <<( doc:FactsThermalImageModalities None:has_text_value "engine thermal imaging" )>> ;
+	prov:wasDerivedFrom doc:ca9f17d50cc1 .
+doc:FactsModule1_2 None:describes_configuration doc:FactsModalitiesConfig .
+_:ed737011d898e4e726ba23d8d83db3f4 rdf:reifies <<( doc:FactsModule1_2 None:describes_configuration doc:FactsModalitiesConfig )>> ;
+	prov:wasDerivedFrom doc:ca9f17d50cc1 .
+doc:FactsYiXu schema1:givenName "Wenbo" .
+_:be350215bcf90d4f8e709db530330a46 rdf:reifies <<( doc:FactsYiXu schema1:givenName "Wenbo" )>> ;
+	prov:wasDerivedFrom doc:ca9f17d50cc1 .
+doc:FactsWpd_1 None:has_text_value "wavelet packet decomposition (WPD) for time-frequency feature extraction from engine audio" .
+_:ba947d13faf3aad32485d4ba7373ef48 rdf:reifies <<( doc:FactsWpd_1 None:has_text_value "wavelet packet decomposition (WPD) for time-frequency feature extraction from engine audio" )>> ;
+	prov:wasDerivedFrom doc:ca9f17d50cc1 .
+doc:FactsCorrespondingContact schema1:telephone "+86-189-6255-5331" .
+_:eaf89b705da68b75c9108e512bd462ab rdf:reifies <<( doc:FactsCorrespondingContact schema1:telephone "+86-189-6255-5331" )>> ;
+	prov:wasDerivedFrom doc:ca9f17d50cc1 .
+doc:FactsWpd_1 a cco:Algorithm .
+_:d1f21cf6bc70d38c3fc4976e8f292785 rdf:reifies <<( doc:FactsWpd_1 rdf:type cco:Algorithm )>> ;
+	prov:wasDerivedFrom doc:ca9f17d50cc1 .
+doc:FactsYiXu schema1:telephone "+86-189-6255-5331" .
+_:f232ed26cc25f6942358b31f1d12c9a2 rdf:reifies <<( doc:FactsYiXu schema1:telephone "+86-189-6255-5331" )>> ;
+	prov:wasDerivedFrom doc:ca9f17d50cc1 .
+doc:Factsarticle_2024_Xu_etal cco:describes doc:Factsdataset_SEMFault_2024 .
+_:ebfe60f1f4a4dde77c87bfa30374d0e8 rdf:reifies <<( doc:Factsarticle_2024_Xu_etal cco:describes doc:Factsdataset_SEMFault_2024 )>> ;
+	prov:wasDerivedFrom doc:ca9f17d50cc1 .
+doc:Factstitle_1 None:has_text_value "Research on the Diagnosis of Abnormal Sound Defects in Automobile Engines Based on Fusion of Multi-Modal Images and Audio" .
+_:e75b5ef84703940114935597c61dfae8 rdf:reifies <<( doc:Factstitle_1 None:has_text_value "Research on the Diagnosis of Abnormal Sound Defects in Automobile Engines Based on Fusion of Multi-Modal Images and Audio" )>> ;
+	prov:wasDerivedFrom doc:ca9f17d50cc1 .
+doc:Factstitle_1 a None:Article_title .
+_:c286cb63f43809f8721d5640fc3a4b8 rdf:reifies <<( doc:Factstitle_1 rdf:type None:Article_title )>> ;
+	prov:wasDerivedFrom doc:ca9f17d50cc1 .
+doc:Factsarticle_2024_Xu_etal cco:describes doc:Factsdataset_2_0T_diesel .
+_:addbe4142ca53623f8cfffddadd9684a rdf:reifies <<( doc:Factsarticle_2024_Xu_etal cco:describes doc:Factsdataset_2_0T_diesel )>> ;
+	prov:wasDerivedFrom doc:ca9f17d50cc1 .
+doc:FactsOrgSitFacultyMaterials schema1:name "Faculty of Materials Technology, Shanghai Institute of Technology" .
+_:e5a3e270da4904d77b5e480c0ab44ff rdf:reifies <<( doc:FactsOrgSitFacultyMaterials schema1:name "Faculty of Materials Technology, Shanghai Institute of Technology" )>> ;
+	prov:wasDerivedFrom doc:ca9f17d50cc1 .
+doc:FactsXgBoostClassifier None:has_text_value "improved lightweight XGBoost classifier for fault classification" .
+_:ac584843418f8163d836302e2025c94 rdf:reifies <<( doc:FactsXgBoostClassifier None:has_text_value "improved lightweight XGBoost classifier for fault classification" )>> ;
+	prov:wasDerivedFrom doc:ca9f17d50cc1 .
+doc:FactsModalitiesConfig a None:Model_configuration .
+_:e17068837f14431d5b826bb4b4e18ea3 rdf:reifies <<( doc:FactsModalitiesConfig rdf:type None:Model_configuration )>> ;
+	prov:wasDerivedFrom doc:ca9f17d50cc1 .
+doc:FactsModule1_2 None:has_design_detail doc:FactsDesignDetailLightweight .
+_:c09b19e2dd656a2f2c3c685b1e28049b rdf:reifies <<( doc:FactsModule1_2 None:has_design_detail doc:FactsDesignDetailLightweight )>> ;
+	prov:wasDerivedFrom doc:ca9f17d50cc1 .
+doc:FactsVibrationVisModalities None:has_text_value "vibration visualization images" .
+_:e6f61d051f2a5ff91ba133994dcdcb85 rdf:reifies <<( doc:FactsVibrationVisModalities None:has_text_value "vibration visualization images" )>> ;
+	prov:wasDerivedFrom doc:ca9f17d50cc1 .
+doc:FactsYiXu a schema1:Person .
+_:c99441dcb12891c098885d5a8666646e rdf:reifies <<( doc:FactsYiXu rdf:type schema1:Person )>> ;
+	prov:wasDerivedFrom doc:ca9f17d50cc1 .
+doc:FactsOrgSitFacultyMaterials a schema1:Organization .
+_:fb7d8a1c73189852a2106e189f801ead rdf:reifies <<( doc:FactsOrgSitFacultyMaterials rdf:type schema1:Organization )>> ;
+	prov:wasDerivedFrom doc:ca9f17d50cc1 .
+doc:FactsInferenceSpeed a None:Performance_indicator .
+_:f8e471d4163c4ebcafe1ba31a759e745 rdf:reifies <<( doc:FactsInferenceSpeed rdf:type None:Performance_indicator )>> ;
+	prov:wasDerivedFrom doc:ca9f17d50cc1 .
+doc:FactsInferenceSpeed schema1:value 0.982 .
+_:cc16436b19b16b392e7d123e986de13c rdf:reifies <<( doc:FactsInferenceSpeed schema1:value 0.982 )>> ;
+	prov:wasDerivedFrom doc:ca9f17d50cc1 .
+doc:FactsInferenceSpeed None:has_text_value "average accuracy on 2.0T diesel engine small-sample dataset" .
+_:f44fbeb6ab622b8a68f6bfaf0db40dc5 rdf:reifies <<( doc:FactsInferenceSpeed None:has_text_value "average accuracy on 2.0T diesel engine small-sample dataset" )>> ;
+	prov:wasDerivedFrom doc:ca9f17d50cc1 .
+doc:FactsInferenceSpeed schema1:value 0.952 .
+_:f55269c1122659cacf3a90d545940d5b rdf:reifies <<( doc:FactsInferenceSpeed schema1:value 0.952 )>> ;
+	prov:wasDerivedFrom doc:ca9f17d50cc1 .
+doc:FactsYiXu schema1:familyName "Xu" .
+_:c400c0c83e114e16f444678dfe5c4d1b rdf:reifies <<( doc:FactsYiXu schema1:familyName "Xu" )>> ;
+	prov:wasDerivedFrom doc:ca9f17d50cc1 .
+doc:FactsYiXu schema1:familyName "Jing" .
+_:fb76176764e17ff91721e828d553a61f rdf:reifies <<( doc:FactsYiXu schema1:familyName "Jing" )>> ;
+	prov:wasDerivedFrom doc:ca9f17d50cc1 .
+doc:FactsInferenceSpeed schema1:value 0.8 .
+_:c84b651827a4b1c7516aab71116f79e3 rdf:reifies <<( doc:FactsInferenceSpeed schema1:value 0.8 )>> ;
+	prov:wasDerivedFrom doc:ca9f17d50cc1 .
+doc:FactsYiXu schema1:email "jingkd2003@aliyun.com" .
+_:b66dee156fa551d057e5d08c10064a52 rdf:reifies <<( doc:FactsYiXu schema1:email "jingkd2003@aliyun.com" )>> ;
+	prov:wasDerivedFrom doc:ca9f17d50cc1 .
+doc:FactsInferenceSpeed schema1:value 0.987 .
+_:fb48916f828b2d8a147757c3cf5b74e9 rdf:reifies <<( doc:FactsInferenceSpeed schema1:value 0.987 )>> ;
+	prov:wasDerivedFrom doc:ca9f17d50cc1 .
+doc:Factsarticle_2024_Xu_etal a None:Predictive_Maintenance_Article .
+_:d3c0af8337161805b331a5b27168db38 rdf:reifies <<( doc:Factsarticle_2024_Xu_etal rdf:type None:Predictive_Maintenance_Article )>> ;
+	prov:wasDerivedFrom doc:ca9f17d50cc1 .
+doc:FactsModule1_2 a None:Predictive_maintenance_system_module .
+_:e6f83cc8dc951ed6242c7290d0005cbe rdf:reifies <<( doc:FactsModule1_2 rdf:type None:Predictive_maintenance_system_module )>> ;
+	prov:wasDerivedFrom doc:ca9f17d50cc1 .
+doc:FactsInferenceSpeed schema1:value 0.965 .
+_:b1d43a76c5fd3ff90e36c83b003e861c rdf:reifies <<( doc:FactsInferenceSpeed schema1:value 0.965 )>> ;
+	prov:wasDerivedFrom doc:ca9f17d50cc1 .
+doc:FactsDesignDetailLightweight None:has_text_value "channel-pruned ResNet18 for spatial feature extraction from thermal imaging and vibration visualization images" .
+_:ef704ca7aadaddf2c507391a0a9c854c rdf:reifies <<( doc:FactsDesignDetailLightweight None:has_text_value "channel-pruned ResNet18 for spatial feature extraction from thermal imaging and vibration visualization images" )>> ;
+	prov:wasDerivedFrom doc:ca9f17d50cc1 .
+doc:Factsarticle_2024_Xu_etal cco:is_about doc:FactsEngine1 .
+_:d945f529873ed9257294c46811cfe96a rdf:reifies <<( doc:Factsarticle_2024_Xu_etal cco:is_about doc:FactsEngine1 )>> ;
+	prov:wasDerivedFrom doc:ca9f17d50cc1 .
+doc:FactsWpd_1 None:has_text_value "Physical Prior-Embedded Cross-Modal Attention (PPE-CMA) module: adaptively assigns attention weights to audio and image features exploiting acoustic-visual physical coupling; links cosine similarity to physical correlation; enforces attention constraint Î² = 1 - Î±" .
+_:feb6f586c77ff65e1bf49487e79ac838 rdf:reifies <<( doc:FactsWpd_1 None:has_text_value "Physical Prior-Embedded Cross-Modal Attention (PPE-CMA) module: adaptively assigns attention weights to audio and image features exploiting acoustic-visual physical coupling; links cosine similarity to physical correlation; enforces attention constraint Î² = 1 - Î±" )>> ;
+	prov:wasDerivedFrom doc:ca9f17d50cc1 .
+doc:FactsInferenceSpeed None:has_text_value "retains 96.5% accuracy under 90 dB high-level environmental noise" .
+_:e3b02b9562a3b8bf20cc67ce13b4f792 rdf:reifies <<( doc:FactsInferenceSpeed None:has_text_value "retains 96.5% accuracy under 90 dB high-level environmental noise" )>> ;
+	prov:wasDerivedFrom doc:ca9f17d50cc1 .
+doc:FactsWpd_1 None:has_text_value "mel-frequency cepstral coefficients (MFCC) for time-frequency feature extraction from engine audio" .
+_:dfbfd0bc79e3dde74137f690c4067405 rdf:reifies <<( doc:FactsWpd_1 None:has_text_value "mel-frequency cepstral coefficients (MFCC) for time-frequency feature extraction from engine audio" )>> ;
+	prov:wasDerivedFrom doc:ca9f17d50cc1 .
+doc:FactsYiXu schema1:givenName "Yi" .
+_:f194a08da6354119ac0159759047c92e rdf:reifies <<( doc:FactsYiXu schema1:givenName "Yi" )>> ;
+	prov:wasDerivedFrom doc:ca9f17d50cc1 .
+doc:FactsYiXu schema1:email "chenwenbo@sit.edu.cn" .
+_:eb0f81b0755a794a56a381086be63649 rdf:reifies <<( doc:FactsYiXu schema1:email "chenwenbo@sit.edu.cn" )>> ;
+	prov:wasDerivedFrom doc:ca9f17d50cc1 .
+doc:d9322e66e1aa a prov:Entity , schema:text ;
+	prov:generatedAtTime "2026-07-11T04:47:51.170126Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+	schema:position 1 ;
+	schema:identifier "d9322e66e1aa" .
+doc:Factsarticle_2026_EngineSoundDiagnosis cco:is_about doc:FactsModule1_2 .
+_:b44306295207149b040a954dbeba61ff rdf:reifies <<( doc:Factsarticle_2026_EngineSoundDiagnosis cco:is_about doc:FactsModule1_2 )>> ;
+	prov:wasDerivedFrom doc:d9322e66e1aa .
+doc:Factsarticle_2026_EngineSoundDiagnosis schema1:editor doc:FactsMarcinWitczak .
+_:c538df9e195011a3ef2f303cf1f218fe rdf:reifies <<( doc:Factsarticle_2026_EngineSoundDiagnosis schema1:editor doc:FactsMarcinWitczak )>> ;
+	prov:wasDerivedFrom doc:d9322e66e1aa .
+doc:FactsFuelEfficiencyIndicator cco:describes doc:FactsModule1_2 .
+_:fb3446821013020614ee7b5102fac253 rdf:reifies <<( doc:FactsFuelEfficiencyIndicator cco:describes doc:FactsModule1_2 )>> ;
+	prov:wasDerivedFrom doc:d9322e66e1aa .
+_:eefc870ad3a390903935449fb836de09 prov:wasDerivedFrom doc:d9322e66e1aa .
+doc:FactsModule1_2 a None:Predictive_maintenance_model .
+_:b8625f8104585fb2be24fb96ace91dc8 rdf:reifies <<( doc:FactsModule1_2 rdf:type None:Predictive_maintenance_model )>> ;
+	prov:wasDerivedFrom doc:d9322e66e1aa .
+doc:Factsarticle_2026_EngineSoundDiagnosis None:has_publication_year doc:Factspublicationyear_2026_1 .
+_:efa955e99bb4969473df4570b9cd891b rdf:reifies <<( doc:Factsarticle_2026_EngineSoundDiagnosis None:has_publication_year doc:Factspublicationyear_2026_1 )>> ;
+	prov:wasDerivedFrom doc:d9322e66e1aa .
+doc:FactsModule1_2 None:has_synchronization doc:FactsModuleSyncOnline_1 .
+_:b66eaf31c7e1cdef8812272bfec80ef1 rdf:reifies <<( doc:FactsModule1_2 None:has_synchronization doc:FactsModuleSyncOnline_1 )>> ;
+	prov:wasDerivedFrom doc:d9322e66e1aa .
+doc:Factsarticle_2026_EngineSoundDiagnosis schema1:dateReceived "2026-02-25"^^<http://www.w3.org/2001/XMLSchema#date> .
+_:c21a682ca914ed012a8c539c6bbb18e8 rdf:reifies <<( doc:Factsarticle_2026_EngineSoundDiagnosis schema1:dateReceived "2026-02-25"^^<http://www.w3.org/2001/XMLSchema#date> )>> ;
+	prov:wasDerivedFrom doc:d9322e66e1aa .
+doc:FactsModuleSyncOnline_1 a None:Module_synchronization .
+_:c5ff01880a4ce53d810fcd30b572e1a1 rdf:reifies <<( doc:FactsModuleSyncOnline_1 rdf:type None:Module_synchronization )>> ;
+	prov:wasDerivedFrom doc:d9322e66e1aa .
+doc:FactsArticleTitleEngineSoundDiagnosis a None:Article_title .
+_:a526ff2d1238861af12ce57b0ea0eafa rdf:reifies <<( doc:FactsArticleTitleEngineSoundDiagnosis rdf:type None:Article_title )>> ;
+	prov:wasDerivedFrom doc:d9322e66e1aa .
+doc:FactsFuelEfficiencyIndicator a None:Performance_indicator .
+_:f38c537acc84def1722455795cca75d rdf:reifies <<( doc:FactsFuelEfficiencyIndicator rdf:type None:Performance_indicator )>> ;
+	prov:wasDerivedFrom doc:d9322e66e1aa .
+doc:FactsTechCrossModalAttention a cco:Algorithm .
+_:a8e1d6ab788cc1831eca5ae699e56387 rdf:reifies <<( doc:FactsTechCrossModalAttention rdf:type cco:Algorithm )>> ;
+	prov:wasDerivedFrom doc:d9322e66e1aa .
+doc:Factsarticle_2026_EngineSoundDiagnosis obo:RO_0010002 doc:FactsKeywords1 .
+_:f3be903e0f8f562b84c816c31819a52e rdf:reifies <<( doc:Factsarticle_2026_EngineSoundDiagnosis obo:RO_0010002 doc:FactsKeywords1 )>> ;
+	prov:wasDerivedFrom doc:d9322e66e1aa .
+doc:FactsModelTypeLightweight a None:Model_type .
+_:e1c888c4777f1d9f1962552984949f2d rdf:reifies <<( doc:FactsModelTypeLightweight rdf:type None:Model_type )>> ;
+	prov:wasDerivedFrom doc:d9322e66e1aa .
+doc:FactsModule1_2 None:describes_type doc:FactsModelTypeLightweight .
+_:e9c5324cbacd1dab0d59524df1b02f2d rdf:reifies <<( doc:FactsModule1_2 None:describes_type doc:FactsModelTypeLightweight )>> ;
+	prov:wasDerivedFrom doc:d9322e66e1aa .
+doc:Factsarticle_2026_EngineSoundDiagnosis cco:is_about doc:FactsEngine1 .
+_:a6d3af0cf4570831fccee19af8fa09f9 rdf:reifies <<( doc:Factsarticle_2026_EngineSoundDiagnosis cco:is_about doc:FactsEngine1 )>> ;
+	prov:wasDerivedFrom doc:d9322e66e1aa .
+doc:FactsTechCrossModalAttention rdfs:label "cross-modal attention" .
+_:ac64d2bcf5c04c191d117b8c71db7e11 rdf:reifies <<( doc:FactsTechCrossModalAttention rdfs:label "cross-modal attention" )>> ;
+	prov:wasDerivedFrom doc:d9322e66e1aa .
+doc:FactsModule1_2 None:has_predictive_maintenance_function doc:FactsFaultDetectionFunction1_1 .
+_:f695fc9ff02068c06d849835a0f450bc rdf:reifies <<( doc:FactsModule1_2 None:has_predictive_maintenance_function doc:FactsFaultDetectionFunction1_1 )>> ;
+	prov:wasDerivedFrom doc:d9322e66e1aa .
+doc:FactsFuelEfficiencyIndicator None:has_text_value "carbon emission reduction" .
+_:c80a282cc9602efb7fdf04e593d900c5 rdf:reifies <<( doc:FactsFuelEfficiencyIndicator None:has_text_value "carbon emission reduction" )>> ;
+	prov:wasDerivedFrom doc:d9322e66e1aa .
+doc:FactsModelTypeLightweight None:has_text_value "lightweight model" .
+_:cf925f30f2033cf4a9ea2768e16d0255 rdf:reifies <<( doc:FactsModelTypeLightweight None:has_text_value "lightweight model" )>> ;
+	prov:wasDerivedFrom doc:d9322e66e1aa .
+doc:FactsFaultDetectionFunction1_1 a None:Fault_detection .
+_:a1abf11acf4764ed294307324082b68f rdf:reifies <<( doc:FactsFaultDetectionFunction1_1 rdf:type None:Fault_detection )>> ;
+	prov:wasDerivedFrom doc:d9322e66e1aa .
+doc:FactsMarcinWitczak a schema1:Person .
+_:d1af7378e2491bc4d054cdc3beeef3bd rdf:reifies <<( doc:FactsMarcinWitczak rdf:type schema1:Person )>> ;
+	prov:wasDerivedFrom doc:d9322e66e1aa .
+doc:FactsModuleSyncOnline_1 None:has_text_value "online" .
+_:daaa29e78844f2d22db8f38eb9aea41a rdf:reifies <<( doc:FactsModuleSyncOnline_1 None:has_text_value "online" )>> ;
+	prov:wasDerivedFrom doc:d9322e66e1aa .
+doc:FactsEngine1 rdfs:label "engine" .
+_:f3e4f7a8410d883eeb26cac0a59a376c rdf:reifies <<( doc:FactsEngine1 rdfs:label "engine" )>> ;
+	prov:wasDerivedFrom doc:d9322e66e1aa .
+doc:FactsMarcinWitczak rdfs:label "Marcin Witczak" .
+_:dc2c50b6cf0a51931c403bfd47d935aa rdf:reifies <<( doc:FactsMarcinWitczak rdfs:label "Marcin Witczak" )>> ;
+	prov:wasDerivedFrom doc:d9322e66e1aa .
+doc:Factsarticle_2026_EngineSoundDiagnosis None:has_title doc:FactsArticleTitleEngineSoundDiagnosis .
+_:ef6000d0bd99493885003f9f9191582a rdf:reifies <<( doc:Factsarticle_2026_EngineSoundDiagnosis None:has_title doc:FactsArticleTitleEngineSoundDiagnosis )>> ;
+	prov:wasDerivedFrom doc:d9322e66e1aa .
+_:d6fa3fb80cd1fdf89ebdf28bbca7affe prov:wasDerivedFrom doc:d9322e66e1aa .
+doc:FactsTechPhysicalPrior rdfs:label "physical prior" .
+_:f3a48f2d9eff295f9ac53c377c80da0c rdf:reifies <<( doc:FactsTechPhysicalPrior rdfs:label "physical prior" )>> ;
+	prov:wasDerivedFrom doc:d9322e66e1aa .
+doc:FactsModule1_2 cco:describes doc:FactsModule1_2 .
+_:aa491b963e956c516094b48389662bff rdf:reifies <<( doc:FactsModule1_2 cco:describes doc:FactsModule1_2 )>> ;
+	prov:wasDerivedFrom doc:d9322e66e1aa .
+doc:FactsDesignDetailLightweight None:has_text_value "lightweight technical solution suitable for on-board real-time and in-plant online inspection" .
+_:ae1eabf71b23eac98d6518342e00a3 rdf:reifies <<( doc:FactsDesignDetailLightweight None:has_text_value "lightweight technical solution suitable for on-board real-time and in-plant online inspection" )>> ;
+	prov:wasDerivedFrom doc:d9322e66e1aa .
+doc:Factspublicationyear_2026_1 None:has_interger_value 2026 .
+_:b050ddf42a4f0aa92b186fdca6d18243 rdf:reifies <<( doc:Factspublicationyear_2026_1 None:has_interger_value 2026 )>> ;
+	prov:wasDerivedFrom doc:d9322e66e1aa .
+doc:Factsarticle_2026_EngineSoundDiagnosis schema1:dateModified "2026-03-23"^^<http://www.w3.org/2001/XMLSchema#date> .
+_:bbf3c1ab530ddcdf646e7c45c08f7612 rdf:reifies <<( doc:Factsarticle_2026_EngineSoundDiagnosis schema1:dateModified "2026-03-23"^^<http://www.w3.org/2001/XMLSchema#date> )>> ;
+	prov:wasDerivedFrom doc:d9322e66e1aa .
+doc:Factsarticle_2026_EngineSoundDiagnosis schema1:datePublished "2026-03-27"^^<http://www.w3.org/2001/XMLSchema#date> .
+_:c8cc5ee0b65645c7fde133415c5106a6 rdf:reifies <<( doc:Factsarticle_2026_EngineSoundDiagnosis schema1:datePublished "2026-03-27"^^<http://www.w3.org/2001/XMLSchema#date> )>> ;
+	prov:wasDerivedFrom doc:d9322e66e1aa .
+doc:Factspublicationyear_2026_1 a None:Publication_year .
+_:c072a51b1b8c18fa2657feae17c4ea71 rdf:reifies <<( doc:Factspublicationyear_2026_1 rdf:type None:Publication_year )>> ;
+	prov:wasDerivedFrom doc:d9322e66e1aa .
+_:c09b19e2dd656a2f2c3c685b1e28049b prov:wasDerivedFrom doc:d9322e66e1aa .
+doc:Factsarticle_2026_EngineSoundDiagnosis a None:Predictive_Maintenance_Article .
+_:e9833ab097018f81dafb281204866b4f rdf:reifies <<( doc:Factsarticle_2026_EngineSoundDiagnosis rdf:type None:Predictive_Maintenance_Article )>> ;
+	prov:wasDerivedFrom doc:d9322e66e1aa .
+doc:FactsTechPhysicalPrior a cco:Algorithm .
+_:a84c7e2e7eeac4d32d49a0d14a1b6e4f rdf:reifies <<( doc:FactsTechPhysicalPrior rdf:type cco:Algorithm )>> ;
+	prov:wasDerivedFrom doc:d9322e66e1aa .
+doc:FactsMarcinWitczak schema1:roleName "Academic Editor" .
+_:c266ac8416cd14b6fe924759e2881986 rdf:reifies <<( doc:FactsMarcinWitczak schema1:roleName "Academic Editor" )>> ;
+	prov:wasDerivedFrom doc:d9322e66e1aa .
+doc:FactsTechMultiModalFusion a cco:Algorithm .
+_:eabd598413ae2f11d7f32e9d34db0073 rdf:reifies <<( doc:FactsTechMultiModalFusion rdf:type cco:Algorithm )>> ;
+	prov:wasDerivedFrom doc:d9322e66e1aa .
+doc:FactsFuelEfficiencyIndicator None:has_text_value "fuel efficiency improvement" .
+_:ce9dc7dcbd10b19527d57a6e0729201d rdf:reifies <<( doc:FactsFuelEfficiencyIndicator None:has_text_value "fuel efficiency improvement" )>> ;
+	prov:wasDerivedFrom doc:d9322e66e1aa .
+doc:FactsKeywords1 None:has_text_value "automotive engine; abnormal sound defect diagnosis; multi-modal fusion; cross-modal attention; physical prior; predictive maintenance; lightweight model; automotive sustainability" .
+_:e776e60f25e9f158094da121671ef383 rdf:reifies <<( doc:FactsKeywords1 None:has_text_value "automotive engine; abnormal sound defect diagnosis; multi-modal fusion; cross-modal attention; physical prior; predictive maintenance; lightweight model; automotive sustainability" )>> ;
+	prov:wasDerivedFrom doc:d9322e66e1aa .
+doc:FactsTechMultiModalFusion rdfs:label "multi-modal fusion" .
+_:df48873945918ed9c0c15a2dbed42137 rdf:reifies <<( doc:FactsTechMultiModalFusion rdfs:label "multi-modal fusion" )>> ;
+	prov:wasDerivedFrom doc:d9322e66e1aa .
+doc:FactsFaultDetectionFunction1_1 None:has_text_value "on-board real-time fault diagnosis and in-plant online quality inspection" .
+_:ffd0d43381829b90c93e271ae0a3c528 rdf:reifies <<( doc:FactsFaultDetectionFunction1_1 None:has_text_value "on-board real-time fault diagnosis and in-plant online quality inspection" )>> ;
+	prov:wasDerivedFrom doc:d9322e66e1aa .
+doc:FactsKeywords1 cco:describes doc:Factsarticle_2026_EngineSoundDiagnosis .
+_:f45e6035d18a785023c35615267bb51d rdf:reifies <<( doc:FactsKeywords1 cco:describes doc:Factsarticle_2026_EngineSoundDiagnosis )>> ;
+	prov:wasDerivedFrom doc:d9322e66e1aa .
+doc:Factsarticle_2026_EngineSoundDiagnosis schema1:dateAccepted "2026-03-26"^^<http://www.w3.org/2001/XMLSchema#date> .
+_:c1be90f8a5017036d5563821d07ae6fd rdf:reifies <<( doc:Factsarticle_2026_EngineSoundDiagnosis schema1:dateAccepted "2026-03-26"^^<http://www.w3.org/2001/XMLSchema#date> )>> ;
+	prov:wasDerivedFrom doc:d9322e66e1aa .
+_:e6f83cc8dc951ed6242c7290d0005cbe prov:wasDerivedFrom doc:d9322e66e1aa .
+doc:FactsArticleTitleEngineSoundDiagnosis None:has_text_value "Engine abnormal sound defect diagnosis" .
+_:e26393d04cf834dd3d445c000498457f rdf:reifies <<( doc:FactsArticleTitleEngineSoundDiagnosis None:has_text_value "Engine abnormal sound defect diagnosis" )>> ;
+	prov:wasDerivedFrom doc:d9322e66e1aa .
+doc:FactsKeywords1 a cco:DescriptiveInformationContentEntity .
+_:cf442aa4fba11e48f485e9be67c8d7e rdf:reifies <<( doc:FactsKeywords1 rdf:type cco:DescriptiveInformationContentEntity )>> ;
+	prov:wasDerivedFrom doc:d9322e66e1aa .
+doc:0e76787a8607 a prov:Entity , schema:text ;
+	prov:generatedAtTime "2026-07-11T04:47:51.17213Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+	schema:position 2 ;
+	schema:identifier "0e76787a8607" .
+doc:FactsNumPy rdfs:label "NumPy (Python library)" .
+_:f7b520f843994f10fd4002961f3d399c rdf:reifies <<( doc:FactsNumPy rdfs:label "NumPy (Python library)" )>> ;
+	prov:wasDerivedFrom doc:0e76787a8607 .
+doc:FactsChannelPrunedResNet18 rdfs:label "channel-pruned ResNet18" .
+_:a3ea7c2fb6fa2ce991a3d8a538a3d5a3 rdf:reifies <<( doc:FactsChannelPrunedResNet18 rdfs:label "channel-pruned ResNet18" )>> ;
+	prov:wasDerivedFrom doc:0e76787a8607 .
+doc:FactsPpecma a None:Fault_feature_extraction .
+_:c4873f71e8e923c6d2e0b0735b626ed7 rdf:reifies <<( doc:FactsPpecma rdf:type None:Fault_feature_extraction )>> ;
+	prov:wasDerivedFrom doc:0e76787a8607 .
+doc:Factsmatlab_R2022b a schema1:SoftwareApplication .
+_:f90d3808434cdfadae81e305f643f6fe rdf:reifies <<( doc:Factsmatlab_R2022b rdf:type schema1:SoftwareApplication )>> ;
+	prov:wasDerivedFrom doc:0e76787a8607 .
+doc:FactsMultimodalImageAudioFusionDiagnosticMethod None:has_design_detail doc:FactsHybridDataAugmentationStrategy .
+_:a1a08365e2937b007ae4316f1e623ade rdf:reifies <<( doc:FactsMultimodalImageAudioFusionDiagnosticMethod None:has_design_detail doc:FactsHybridDataAugmentationStrategy )>> ;
+	prov:wasDerivedFrom doc:0e76787a8607 .
+doc:FactsNumPy rdfs:label "Python 3.8" .
+_:ff4080ea725e1c16cdafc7422b212c33 rdf:reifies <<( doc:FactsNumPy rdfs:label "Python 3.8" )>> ;
+	prov:wasDerivedFrom doc:0e76787a8607 .
+doc:FactsPandas a schema1:SoftwareApplication .
+_:e8d50c7b1d2e0e5fc3d779de732c4f32 rdf:reifies <<( doc:FactsPandas rdf:type schema1:SoftwareApplication )>> ;
+	prov:wasDerivedFrom doc:0e76787a8607 .
+doc:FactsPpecma rdfs:label "Physical Prior-Embedded Cross-Modal Attention (PPECMA)" .
+_:e29dcf92d88f0e184adad05cd5811631 rdf:reifies <<( doc:FactsPpecma rdfs:label "Physical Prior-Embedded Cross-Modal Attention (PPECMA)" )>> ;
+	prov:wasDerivedFrom doc:0e76787a8607 .
+doc:FactsModalitiesConfig None:describes_configuration doc:FactsChannelPrunedResNet18 .
+_:be1caad3b2139e0752c68a07c67e5aa3 rdf:reifies <<( doc:FactsModalitiesConfig None:describes_configuration doc:FactsChannelPrunedResNet18 )>> ;
+	prov:wasDerivedFrom doc:0e76787a8607 .
+doc:FactsModelEfficiency a obo:BFO_0000019 .
+_:ae1db0d174446fba45207b5cdc1fda4b rdf:reifies <<( doc:FactsModelEfficiency rdf:type obo:BFO_0000019 )>> ;
+	prov:wasDerivedFrom doc:0e76787a8607 .
+doc:FactsImprovedXgBoost a None:Predictive_maintenance_model .
+_:ba196adcf6f9f18826ffbb96e3021abb rdf:reifies <<( doc:FactsImprovedXgBoost rdf:type None:Predictive_maintenance_model )>> ;
+	prov:wasDerivedFrom doc:0e76787a8607 .
+doc:FactsAudioTimeFrequencyFeatures rdfs:label "engine fault time-frequency features (audio)" .
+_:a604c1c7927283ab2a6dbd83bd2366bb rdf:reifies <<( doc:FactsAudioTimeFrequencyFeatures rdfs:label "engine fault time-frequency features (audio)" )>> ;
+	prov:wasDerivedFrom doc:0e76787a8607 .
+doc:FactsModelEfficiency rdfs:label "reduced parameters and computational complexity enabling on-board realtime diagnosis" .
+_:d385d110828741fc86b6ef101bd7032a rdf:reifies <<( doc:FactsModelEfficiency rdfs:label "reduced parameters and computational complexity enabling on-board realtime diagnosis" )>> ;
+	prov:wasDerivedFrom doc:0e76787a8607 .
+doc:FactsMaNet a cco:Algorithm .
+_:a1dc83a5a9b43f219db54432fd9e8c80 rdf:reifies <<( doc:FactsMaNet rdf:type cco:Algorithm )>> ;
+	prov:wasDerivedFrom doc:0e76787a8607 .
+_:e17068837f14431d5b826bb4b4e18ea3 prov:wasDerivedFrom doc:0e76787a8607 .
+doc:FactsNumPy a schema1:SoftwareApplication .
+_:eea54f3b31a96a69c016d7a1d0f88223 rdf:reifies <<( doc:FactsNumPy rdf:type schema1:SoftwareApplication )>> ;
+	prov:wasDerivedFrom doc:0e76787a8607 .
+doc:FactsPandas rdfs:label "Pandas (Python library)" .
+_:e761ad1aae3cdec26791aa459802d583 rdf:reifies <<( doc:FactsPandas rdfs:label "Pandas (Python library)" )>> ;
+	prov:wasDerivedFrom doc:0e76787a8607 .
+doc:FactsModalitiesConfig None:describes_configuration doc:FactsImprovedXgBoost .
+_:f63204b005e32cc263e16b407966e8dc rdf:reifies <<( doc:FactsModalitiesConfig None:describes_configuration doc:FactsImprovedXgBoost )>> ;
+	prov:wasDerivedFrom doc:0e76787a8607 .
+doc:FactsPpecma None:describes_type doc:FactsImageSpatialFeatures .
+_:e11cf770660012aa3ff7a8e942f81626 rdf:reifies <<( doc:FactsPpecma None:describes_type doc:FactsImageSpatialFeatures )>> ;
+	prov:wasDerivedFrom doc:0e76787a8607 .
+doc:FactsModuleSyncOnline_1 rdfs:label "on-board realtime" .
+_:a5032cef236b076fb28d9ed18ad891a0 rdf:reifies <<( doc:FactsModuleSyncOnline_1 rdfs:label "on-board realtime" )>> ;
+	prov:wasDerivedFrom doc:0e76787a8607 .
+doc:FactsImprovedXgBoost rdfs:label "improved XGBoost classifier" .
+_:b832173496dce83668bf80db9393a376 rdf:reifies <<( doc:FactsImprovedXgBoost rdfs:label "improved XGBoost classifier" )>> ;
+	prov:wasDerivedFrom doc:0e76787a8607 .
+doc:FactsScikitLearn rdfs:label "Scikit-learn (Python library)" .
+_:a0aa0d24301c9b69f3159cc3c64d4148 rdf:reifies <<( doc:FactsScikitLearn rdfs:label "Scikit-learn (Python library)" )>> ;
+	prov:wasDerivedFrom doc:0e76787a8607 .
+doc:FactsMultimodalImageAudioFusionDiagnosticMethod None:has_synchronization doc:FactsModuleSyncOnline_1 .
+_:f37a0f18f04e04da43605342f525c7c0 rdf:reifies <<( doc:FactsMultimodalImageAudioFusionDiagnosticMethod None:has_synchronization doc:FactsModuleSyncOnline_1 )>> ;
+	prov:wasDerivedFrom doc:0e76787a8607 .
+doc:FactsMultimodalImageAudioFusionDiagnosticMethod rdfs:label "lightweight multimodal image-audio fusion diagnostic method for automotive engine abnormal sound defects" .
+_:df00db895cef9f5bfee35d115550b72a rdf:reifies <<( doc:FactsMultimodalImageAudioFusionDiagnosticMethod rdfs:label "lightweight multimodal image-audio fusion diagnostic method for automotive engine abnormal sound defects" )>> ;
+	prov:wasDerivedFrom doc:0e76787a8607 .
+doc:FactsMultimodalImageAudioFusionDiagnosticMethod obo:RO_0000086 doc:FactsModelEfficiency .
+_:edb8663e086279136d1160a81193b566 rdf:reifies <<( doc:FactsMultimodalImageAudioFusionDiagnosticMethod obo:RO_0000086 doc:FactsModelEfficiency )>> ;
+	prov:wasDerivedFrom doc:0e76787a8607 .
+doc:FactsMultimodalImageAudioFusionDiagnosticMethod a None:Predictive_maintenance_system_module .
+_:f91a335f3359cd68b55bb37c67e5082b rdf:reifies <<( doc:FactsMultimodalImageAudioFusionDiagnosticMethod rdf:type None:Predictive_maintenance_system_module )>> ;
+	prov:wasDerivedFrom doc:0e76787a8607 .
+doc:FactsImageSpatialFeatures rdfs:label "spatial features (image)" .
+_:e947a5b9e8336a95fa1bf0b8e3fde34e rdf:reifies <<( doc:FactsImageSpatialFeatures rdfs:label "spatial features (image)" )>> ;
+	prov:wasDerivedFrom doc:0e76787a8607 .
+doc:Factsmatlab_R2022b rdfs:label "MATLAB R2022b" .
+_:d2780c0472c8f20ab2dac29380f4492a rdf:reifies <<( doc:Factsmatlab_R2022b rdfs:label "MATLAB R2022b" )>> ;
+	prov:wasDerivedFrom doc:0e76787a8607 .
+doc:FactsHybridDataAugmentationStrategy a None:Design_detail .
+_:b396276d3bc37ca9274775eab985d7ff rdf:reifies <<( doc:FactsHybridDataAugmentationStrategy rdf:type None:Design_detail )>> ;
+	prov:wasDerivedFrom doc:0e76787a8607 .
+doc:FactsImageSpatialFeatures a None:Data_variable .
+_:aa730b349b478ca363f568e253a89dd5 rdf:reifies <<( doc:FactsImageSpatialFeatures rdf:type None:Data_variable )>> ;
+	prov:wasDerivedFrom doc:0e76787a8607 .
+_:c5ff01880a4ce53d810fcd30b572e1a1 prov:wasDerivedFrom doc:0e76787a8607 .
+doc:FactsPpecma None:describes_type doc:FactsAudioTimeFrequencyFeatures .
+_:e394b39c795eb19afb2c68dde1c04d24 rdf:reifies <<( doc:FactsPpecma None:describes_type doc:FactsAudioTimeFrequencyFeatures )>> ;
+	prov:wasDerivedFrom doc:0e76787a8607 .
+doc:FactsHybridDataAugmentationStrategy rdfs:label "hybrid data augmentation strategy for engine multimodal data (audio: time-domain noise addition; frequency-domain stretching; image: random cropping; mixup)" .
+_:a2c6c35872baa70ca427a5f042ed169a rdf:reifies <<( doc:FactsHybridDataAugmentationStrategy rdfs:label "hybrid data augmentation strategy for engine multimodal data (audio: time-domain noise addition; frequency-domain stretching; image: random cropping; mixup)" )>> ;
+	prov:wasDerivedFrom doc:0e76787a8607 .
+doc:FactsAudioTimeFrequencyFeatures a None:Data_variable .
+_:ed51229b1bfa851d8cc2a83c6efe9d74 rdf:reifies <<( doc:FactsAudioTimeFrequencyFeatures rdf:type None:Data_variable )>> ;
+	prov:wasDerivedFrom doc:0e76787a8607 .
+doc:FactsMaNet rdfs:label "MA-Net (end-to-end multi-modal attention network)" .
+_:b783b72e77f40438c967d62e2e786f0e rdf:reifies <<( doc:FactsMaNet rdfs:label "MA-Net (end-to-end multi-modal attention network)" )>> ;
+	prov:wasDerivedFrom doc:0e76787a8607 .
+doc:FactsScikitLearn a schema1:SoftwareApplication .
+_:c491e48c2573f247f543da1d95fc4c82 rdf:reifies <<( doc:FactsScikitLearn rdf:type schema1:SoftwareApplication )>> ;
+	prov:wasDerivedFrom doc:0e76787a8607 .
+doc:FactsMultimodalImageAudioFusionDiagnosticMethod None:has_predictive_maintenance_function doc:FactsPpecma .
+_:de1e80ed20399954123648f910f59bb2 rdf:reifies <<( doc:FactsMultimodalImageAudioFusionDiagnosticMethod None:has_predictive_maintenance_function doc:FactsPpecma )>> ;
+	prov:wasDerivedFrom doc:0e76787a8607 .
+doc:FactsChannelPrunedResNet18 a None:Predictive_maintenance_model .
+_:aa4593fa33e5a29c95ce06eb88be0dce rdf:reifies <<( doc:FactsChannelPrunedResNet18 rdf:type None:Predictive_maintenance_model )>> ;
+	prov:wasDerivedFrom doc:0e76787a8607 .

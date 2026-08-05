@@ -1,0 +1,386 @@
+@prefix None: <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#> .
+@prefix cco: <http://www.ontologyrepository.com/CommonCoreOntologies/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doc: <https://growgraph.dev/doc/195833fe582a/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix schema: <https://schema.org/> .
+@prefix schema1: <http://schema.org/> .
+doc:5bd6d6cff1a0 a prov:Entity , schema:text ;
+	prov:generatedAtTime "2026-07-25T04:42:33.100927Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+	schema:position 0 ;
+	schema:identifier "5bd6d6cff1a0" .
+doc:FactsairTemperature schema1:name "process temperature"@en .
+_:e500a21b699d9732777c16ec52f75fa6 rdf:reifies <<( doc:FactsairTemperature schema1:name "process temperature"@en )>> ;
+	prov:wasDerivedFrom doc:5bd6d6cff1a0 .
+doc:FactssunMoonUniversity schema1:name "Sun Moon University"@en .
+_:f16178fc5cfbfec1810ed2a0fcbe5dbf rdf:reifies <<( doc:FactssunMoonUniversity schema1:name "Sun Moon University"@en )>> ;
+	prov:wasDerivedFrom doc:5bd6d6cff1a0 .
+doc:FactsdcMotorDrive a None:Maintainable_item .
+_:aa5c9a2f8702a095d77ff5b1774f45c8 rdf:reifies <<( doc:FactsdcMotorDrive rdf:type None:Maintainable_item )>> ;
+	prov:wasDerivedFrom doc:5bd6d6cff1a0 .
+doc:Factsarticle_99 None:has_title doc:FactsarticleTitle_124 .
+_:dcf32ed33ab933435a3d9795ad8944cc rdf:reifies <<( doc:Factsarticle_99 None:has_title doc:FactsarticleTitle_124 )>> ;
+	prov:wasDerivedFrom doc:5bd6d6cff1a0 .
+doc:FactssunMoonAddress a schema1:PostalAddress .
+_:c5cce0d62bd624d20edf35657d7ddfa2 rdf:reifies <<( doc:FactssunMoonAddress rdf:type schema1:PostalAddress )>> ;
+	prov:wasDerivedFrom doc:5bd6d6cff1a0 .
+doc:FactscnnRnnModel schema1:about doc:FactsairTemperature .
+_:ab5bd15f8068c17cd3bc566abc885732 rdf:reifies <<( doc:FactscnnRnnModel schema1:about doc:FactsairTemperature )>> ;
+	prov:wasDerivedFrom doc:5bd6d6cff1a0 .
+doc:FactsarticleTitle_124 None:has_text_value "Predictive Maintenance and Fault Detection for Motor Drive Control Systems in Industrial Robots Using CNN-RNN-Based Observers" .
+_:beaf611c051c3f29b51316ae24247598 rdf:reifies <<( doc:FactsarticleTitle_124 None:has_text_value "Predictive Maintenance and Fault Detection for Motor Drive Control Systems in Industrial Robots Using CNN-RNN-Based Observers" )>> ;
+	prov:wasDerivedFrom doc:5bd6d6cff1a0 .
+doc:FactssunMoonAddress schema1:addressCountry "Republic of Korea"@en .
+_:be386fc1819080d4be315cbe3b0db014 rdf:reifies <<( doc:FactssunMoonAddress schema1:addressCountry "Republic of Korea"@en )>> ;
+	prov:wasDerivedFrom doc:5bd6d6cff1a0 .
+doc:FactsauthorLee_1 schema1:name "Seungjae Lee"@en .
+_:aaab19247a5a4e94281fa8b791edb021 rdf:reifies <<( doc:FactsauthorLee_1 schema1:name "Seungjae Lee"@en )>> ;
+	prov:wasDerivedFrom doc:5bd6d6cff1a0 .
+doc:FactssunMoonAddress schema1:postalCode "31460" .
+_:f75363780354a244534d34a71a3b9ff0 rdf:reifies <<( doc:FactssunMoonAddress schema1:postalCode "31460" )>> ;
+	prov:wasDerivedFrom doc:5bd6d6cff1a0 .
+doc:FactscnnRnnModel cco:is_about doc:FactsindustrialRobot_2 .
+_:bc7395a1138ede7110045a34758f5a50 rdf:reifies <<( doc:FactscnnRnnModel cco:is_about doc:FactsindustrialRobot_2 )>> ;
+	prov:wasDerivedFrom doc:5bd6d6cff1a0 .
+doc:FactsrotationalSpeed_1 a None:Data_variable .
+_:a704a6e3da4ef9e7c73c7c28985d27a7 rdf:reifies <<( doc:FactsrotationalSpeed_1 rdf:type None:Data_variable )>> ;
+	prov:wasDerivedFrom doc:5bd6d6cff1a0 .
+doc:FactssunMoonAddress schema1:addressLocality "Asan"@en .
+_:eee885ab11ee0e4f1b8670dcb809964f rdf:reifies <<( doc:FactssunMoonAddress schema1:addressLocality "Asan"@en )>> ;
+	prov:wasDerivedFrom doc:5bd6d6cff1a0 .
+doc:Factsarticle_99 a None:Predictive_Maintenance_Article .
+_:f803cef953578da0d5a4cb28405e3970 rdf:reifies <<( doc:Factsarticle_99 rdf:type None:Predictive_Maintenance_Article )>> ;
+	prov:wasDerivedFrom doc:5bd6d6cff1a0 .
+doc:Factsarticle_99 schema1:about doc:FactsdcMotorDrive .
+_:b5aca5e4b60b5974c8cdadfdb6412487 rdf:reifies <<( doc:Factsarticle_99 schema1:about doc:FactsdcMotorDrive )>> ;
+	prov:wasDerivedFrom doc:5bd6d6cff1a0 .
+doc:Predictive_maintenance_model schema1:name "fault detection"@en .
+_:c7b58658797c1edf9ab33463f0b574ed rdf:reifies <<( doc:Predictive_maintenance_model schema1:name "fault detection"@en )>> ;
+	prov:wasDerivedFrom doc:5bd6d6cff1a0 .
+doc:FactscnnRnnModel schema1:name "CNN-LSTM model"@en .
+_:f7ad4e532625d4021820550a10614ba6 rdf:reifies <<( doc:FactscnnRnnModel schema1:name "CNN-LSTM model"@en )>> ;
+	prov:wasDerivedFrom doc:5bd6d6cff1a0 .
+doc:Predictive_maintenance_model a None:Fault_detection .
+_:a43d8ca51bcd253b0163f10a38345b6b rdf:reifies <<( doc:Predictive_maintenance_model rdf:type None:Fault_detection )>> ;
+	prov:wasDerivedFrom doc:5bd6d6cff1a0 .
+doc:FactsairTemperature a None:Data_variable .
+_:b228b52441dc9a8baf559b791d380b44 rdf:reifies <<( doc:FactsairTemperature rdf:type None:Data_variable )>> ;
+	prov:wasDerivedFrom doc:5bd6d6cff1a0 .
+doc:FactsauthorLee_1 schema1:email "ngchanthol1@gmail.com" .
+_:d0a7ce851bba76272fa7b287946f0bcb rdf:reifies <<( doc:FactsauthorLee_1 schema1:email "ngchanthol1@gmail.com" )>> ;
+	prov:wasDerivedFrom doc:5bd6d6cff1a0 .
+doc:FactssunMoonUniversity a schema1:Organization .
+_:a98e2b4dd37b26e5d47350aba5004cc2 rdf:reifies <<( doc:FactssunMoonUniversity rdf:type schema1:Organization )>> ;
+	prov:wasDerivedFrom doc:5bd6d6cff1a0 .
+doc:FactsauthorLee_1 schema1:name "Chanthol Eang"@en .
+_:c318c293e9d61d2d8b64494e75237efd rdf:reifies <<( doc:FactsauthorLee_1 schema1:name "Chanthol Eang"@en )>> ;
+	prov:wasDerivedFrom doc:5bd6d6cff1a0 .
+doc:Factsarticle_99 schema1:about doc:FactscnnRnnModel .
+_:ef4fd05cccdbcf698b3ff12d96ba4c0c rdf:reifies <<( doc:Factsarticle_99 schema1:about doc:FactscnnRnnModel )>> ;
+	prov:wasDerivedFrom doc:5bd6d6cff1a0 .
+doc:FactsauthorLee_1 schema1:affiliation doc:FactssunMoonUniversity .
+_:e3e8adb1a0bed7a24f9ff056fe4c0496 rdf:reifies <<( doc:FactsauthorLee_1 schema1:affiliation doc:FactssunMoonUniversity )>> ;
+	prov:wasDerivedFrom doc:5bd6d6cff1a0 .
+doc:FactsairTemperature schema1:name "air temperature"@en .
+_:a6f9223ba9801d1d289477c39d663e69 rdf:reifies <<( doc:FactsairTemperature schema1:name "air temperature"@en )>> ;
+	prov:wasDerivedFrom doc:5bd6d6cff1a0 .
+doc:Factsarticle_99 schema1:about doc:FactsindustrialRobot_2 .
+_:db3da16e90793e5048224860d34cbb89 rdf:reifies <<( doc:Factsarticle_99 schema1:about doc:FactsindustrialRobot_2 )>> ;
+	prov:wasDerivedFrom doc:5bd6d6cff1a0 .
+doc:FactsauthorLee_1 a schema:Person .
+_:b9f8785e661cfc6457658780cf19a3f5 rdf:reifies <<( doc:FactsauthorLee_1 rdf:type schema:Person )>> ;
+	prov:wasDerivedFrom doc:5bd6d6cff1a0 .
+doc:FactssunMoonUniversity schema1:address doc:FactssunMoonAddress .
+_:db5a383d478d2fb4316bf022cc642fd2 rdf:reifies <<( doc:FactssunMoonUniversity schema1:address doc:FactssunMoonAddress )>> ;
+	prov:wasDerivedFrom doc:5bd6d6cff1a0 .
+doc:FactscnnRnnModel schema1:name "CNN-RNN-based observer model"@en .
+_:da04964d30e706fe7c63d20010e8133b rdf:reifies <<( doc:FactscnnRnnModel schema1:name "CNN-RNN-based observer model"@en )>> ;
+	prov:wasDerivedFrom doc:5bd6d6cff1a0 .
+doc:FactsdcMotorDrive schema1:name "DC motor drive"@en .
+_:e154dcca0477fe798ecb6e8e622e6059 rdf:reifies <<( doc:FactsdcMotorDrive schema1:name "DC motor drive"@en )>> ;
+	prov:wasDerivedFrom doc:5bd6d6cff1a0 .
+doc:FactsindustrialRobot_2 a None:Maintainable_item .
+_:b6751656eb7df60d71a4906b989426e rdf:reifies <<( doc:FactsindustrialRobot_2 rdf:type None:Maintainable_item )>> ;
+	prov:wasDerivedFrom doc:5bd6d6cff1a0 .
+doc:Factsarticle_99 schema1:author doc:FactsauthorLee_1 .
+_:fe550c46248689d1bbc2dc3617f603af rdf:reifies <<( doc:Factsarticle_99 schema1:author doc:FactsauthorLee_1 )>> ;
+	prov:wasDerivedFrom doc:5bd6d6cff1a0 .
+doc:FactsarticleTitle_124 a None:Article_title .
+_:b917eeace2827d2db40427b3d9641ac2 rdf:reifies <<( doc:FactsarticleTitle_124 rdf:type None:Article_title )>> ;
+	prov:wasDerivedFrom doc:5bd6d6cff1a0 .
+doc:FactsindustrialRobot_2 schema1:name "industrial robot"@en .
+_:d2923f5ab7565eb75ac3ef4a64260ec8 rdf:reifies <<( doc:FactsindustrialRobot_2 schema1:name "industrial robot"@en )>> ;
+	prov:wasDerivedFrom doc:5bd6d6cff1a0 .
+doc:FactsauthorLee_1 schema1:email "leeko@sunmoon.ac.kr" .
+_:b0f0a4c3dccaeaa6112ed729bace60db rdf:reifies <<( doc:FactsauthorLee_1 schema1:email "leeko@sunmoon.ac.kr" )>> ;
+	prov:wasDerivedFrom doc:5bd6d6cff1a0 .
+doc:FactscnnRnnModel cco:is_about doc:Predictive_maintenance_model .
+_:dbd21c8b9d9defabb46ba88f05b98179 rdf:reifies <<( doc:FactscnnRnnModel cco:is_about doc:Predictive_maintenance_model )>> ;
+	prov:wasDerivedFrom doc:5bd6d6cff1a0 .
+doc:FactscnnRnnModel cco:is_about doc:FactsdcMotorDrive .
+_:f780b9cd72a5b388d60124a4be3d0458 rdf:reifies <<( doc:FactscnnRnnModel cco:is_about doc:FactsdcMotorDrive )>> ;
+	prov:wasDerivedFrom doc:5bd6d6cff1a0 .
+doc:Factsarticle_99 schema1:headline "Predictive Maintenance and Fault Detection for Motor Drive Control Systems in Industrial Robots Using CNN-RNN-Based Observers"@en .
+_:f307fb3a426f86c62bbb835012fb9b4a rdf:reifies <<( doc:Factsarticle_99 schema1:headline "Predictive Maintenance and Fault Detection for Motor Drive Control Systems in Industrial Robots Using CNN-RNN-Based Observers"@en )>> ;
+	prov:wasDerivedFrom doc:5bd6d6cff1a0 .
+doc:FactscnnRnnModel a None:Predictive_maintenance_model .
+_:f162cc6d4a803ea3a73387634a070a26 rdf:reifies <<( doc:FactscnnRnnModel rdf:type None:Predictive_maintenance_model )>> ;
+	prov:wasDerivedFrom doc:5bd6d6cff1a0 .
+doc:FactsrotationalSpeed_1 schema1:name "rotational speed"@en .
+_:c9d45ff1ec1669e0857f67ac84cd5a30 rdf:reifies <<( doc:FactsrotationalSpeed_1 schema1:name "rotational speed"@en )>> ;
+	prov:wasDerivedFrom doc:5bd6d6cff1a0 .
+doc:FactscnnRnnModel schema1:about doc:FactsrotationalSpeed_1 .
+_:f28c3f72c0e31996f6eb6528be4f6c2a rdf:reifies <<( doc:FactscnnRnnModel schema1:about doc:FactsrotationalSpeed_1 )>> ;
+	prov:wasDerivedFrom doc:5bd6d6cff1a0 .
+doc:0314249e6719 a prov:Entity , schema:text ;
+	prov:generatedAtTime "2026-07-25T04:42:33.102927Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+	schema:position 1 ;
+	schema:identifier "0314249e6719" .
+_:b917eeace2827d2db40427b3d9641ac2 prov:wasDerivedFrom doc:0314249e6719 .
+doc:FactslowerComplexityDetail rdfs:label "lower model complexity"@en .
+_:f363417be3410edb8c5bd78c32d47e51 rdf:reifies <<( doc:FactslowerComplexityDetail rdfs:label "lower model complexity"@en )>> ;
+	prov:wasDerivedFrom doc:0314249e6719 .
+doc:FactscnnModelType_14 None:has_text_value "RNN" .
+_:e9dde7bd7663c4d2708e3a771bcbf24 rdf:reifies <<( doc:FactscnnModelType_14 None:has_text_value "RNN" )>> ;
+	prov:wasDerivedFrom doc:0314249e6719 .
+_:aa5c9a2f8702a095d77ff5b1774f45c8 prov:wasDerivedFrom doc:0314249e6719 .
+doc:FactscnnModelType_14 a None:Model_type .
+_:f9070d7673a0e1f0f27bd753edc3c168 rdf:reifies <<( doc:FactscnnModelType_14 rdf:type None:Model_type )>> ;
+	prov:wasDerivedFrom doc:0314249e6719 .
+doc:FactsarticleTitle_124 None:has_text_value "CNN-RNN hybrid deep learning framework for predictive maintenance and fault detection in DC motor drives" .
+_:f616961ff79cbdfbbcc2b7f82325d50c rdf:reifies <<( doc:FactsarticleTitle_124 None:has_text_value "CNN-RNN hybrid deep learning framework for predictive maintenance and fault detection in DC motor drives" )>> ;
+	prov:wasDerivedFrom doc:0314249e6719 .
+doc:FactsindustrialRobot_2 rdfs:label "industrial robot"@en .
+_:b52616481a470b6428fbe9b62e66a11d rdf:reifies <<( doc:FactsindustrialRobot_2 rdfs:label "industrial robot"@en )>> ;
+	prov:wasDerivedFrom doc:0314249e6719 .
+doc:FactscnnModelType_14 None:has_text_value "LSTM" .
+_:e28f5f57a90e022329aa7b569c68e5be rdf:reifies <<( doc:FactscnnModelType_14 None:has_text_value "LSTM" )>> ;
+	prov:wasDerivedFrom doc:0314249e6719 .
+doc:Factsarticle_99 schema:dateReceived "2024-11-19"^^<http://www.w3.org/2001/XMLSchema#date> .
+_:f75dea387ce95ed67e72415eeab9848c rdf:reifies <<( doc:Factsarticle_99 schema:dateReceived "2024-11-19"^^<http://www.w3.org/2001/XMLSchema#date> )>> ;
+	prov:wasDerivedFrom doc:0314249e6719 .
+doc:FactsaccuracyIndicator_7 cco:describes doc:FactsaccuracyIndicator_7 .
+_:fb10083e7fb045110881d729ea2da377 rdf:reifies <<( doc:FactsaccuracyIndicator_7 cco:describes doc:FactsaccuracyIndicator_7 )>> ;
+	prov:wasDerivedFrom doc:0314249e6719 .
+_:a704a6e3da4ef9e7c73c7c28985d27a7 prov:wasDerivedFrom doc:0314249e6719 .
+doc:FactsdcMotorDrive rdfs:label "DC motor drive"@en .
+_:f61cffbbfff5fd43d280316999897ebb rdf:reifies <<( doc:FactsdcMotorDrive rdfs:label "DC motor drive"@en )>> ;
+	prov:wasDerivedFrom doc:0314249e6719 .
+doc:FactsaccuracyIndicator_7 a None:Performance_value .
+_:cb0b3a42baa61aa87060fd4fc36edc80 rdf:reifies <<( doc:FactsaccuracyIndicator_7 rdf:type None:Performance_value )>> ;
+	prov:wasDerivedFrom doc:0314249e6719 .
+doc:Factsarticle_99 a schema:ScholarlyArticle .
+_:f7ea3d61ef9b5ed7d23b0094ca2e043e rdf:reifies <<( doc:Factsarticle_99 rdf:type schema:ScholarlyArticle )>> ;
+	prov:wasDerivedFrom doc:0314249e6719 .
+doc:FactscnnModelType_14 None:has_text_value "CNN-LSTM" .
+_:ff1ec9a2c263fbae36dfadb2eadc67f6 rdf:reifies <<( doc:FactscnnModelType_14 None:has_text_value "CNN-LSTM" )>> ;
+	prov:wasDerivedFrom doc:0314249e6719 .
+_:a43d8ca51bcd253b0163f10a38345b6b prov:wasDerivedFrom doc:0314249e6719 .
+_:b228b52441dc9a8baf559b791d380b44 prov:wasDerivedFrom doc:0314249e6719 .
+doc:Predictive_maintenance_model rdfs:label "early fault detection"@en .
+_:ccf32cd27c64e1a248c34420ecd32f9 rdf:reifies <<( doc:Predictive_maintenance_model rdfs:label "early fault detection"@en )>> ;
+	prov:wasDerivedFrom doc:0314249e6719 .
+doc:Predictive_maintenance_model a None:Predictive_maintenance_system_module .
+_:fdddda4e94cfacfc9bef445ddba6c044 rdf:reifies <<( doc:Predictive_maintenance_model rdf:type None:Predictive_maintenance_system_module )>> ;
+	prov:wasDerivedFrom doc:0314249e6719 .
+doc:FactsaccuracyIndicator_7 rdfs:label "accuracy"@en .
+_:b4f69b8e7ea52a8f746c2a32b32f4d3a rdf:reifies <<( doc:FactsaccuracyIndicator_7 rdfs:label "accuracy"@en )>> ;
+	prov:wasDerivedFrom doc:0314249e6719 .
+doc:FactsaccuracyIndicator_7 cco:describes doc:FactscnnRnnModel .
+_:b47bbdfd3aee1ce1ae1cb60287249978 rdf:reifies <<( doc:FactsaccuracyIndicator_7 cco:describes doc:FactscnnRnnModel )>> ;
+	prov:wasDerivedFrom doc:0314249e6719 .
+doc:FactscnnModelType_14 None:has_text_value "CNN" .
+_:d9cfffac4983af81d6ab6ec3e5cafb7c rdf:reifies <<( doc:FactscnnModelType_14 None:has_text_value "CNN" )>> ;
+	prov:wasDerivedFrom doc:0314249e6719 .
+_:f803cef953578da0d5a4cb28405e3970 prov:wasDerivedFrom doc:0314249e6719 .
+doc:FactsfaultFeatureExtractionFunction_6 a None:Fault_feature_extraction .
+_:fb59f8f424a09aa5aa7944f973c7cd33 rdf:reifies <<( doc:FactsfaultFeatureExtractionFunction_6 rdf:type None:Fault_feature_extraction )>> ;
+	prov:wasDerivedFrom doc:0314249e6719 .
+doc:FactsaccuracyIndicator_7 a None:Performance_indicator .
+_:d3b0dda810210aabf4c4135c7ee079d3 rdf:reifies <<( doc:FactsaccuracyIndicator_7 rdf:type None:Performance_indicator )>> ;
+	prov:wasDerivedFrom doc:0314249e6719 .
+doc:FactsaccuracyIndicator_7 rdfs:label "precision"@en .
+_:de6a7d925bc5ada6ebe49a89f4dcc96c rdf:reifies <<( doc:FactsaccuracyIndicator_7 rdfs:label "precision"@en )>> ;
+	prov:wasDerivedFrom doc:0314249e6719 .
+doc:FactssimplerArchitectureDetail rdfs:label "simpler architecture"@en .
+_:dba13b870d8aa9e9014e9f170bdc3aed rdf:reifies <<( doc:FactssimplerArchitectureDetail rdfs:label "simpler architecture"@en )>> ;
+	prov:wasDerivedFrom doc:0314249e6719 .
+doc:FactsrealTimeProcessingDetail rdfs:label "real-time fault detection and faster processing"@en .
+_:bd056b786643b63e372e15441a863e43 rdf:reifies <<( doc:FactsrealTimeProcessingDetail rdfs:label "real-time fault detection and faster processing"@en )>> ;
+	prov:wasDerivedFrom doc:0314249e6719 .
+doc:FactsrotationalSpeed_1 rdfs:label "rotational speed"@en .
+_:c59e16466877c166612e4c5e29690a3a rdf:reifies <<( doc:FactsrotationalSpeed_1 rdfs:label "rotational speed"@en )>> ;
+	prov:wasDerivedFrom doc:0314249e6719 .
+_:dcf32ed33ab933435a3d9795ad8944cc prov:wasDerivedFrom doc:0314249e6719 .
+_:b6751656eb7df60d71a4906b989426e prov:wasDerivedFrom doc:0314249e6719 .
+doc:FactssimplerArchitectureDetail a None:Design_detail .
+_:eae4ef2c3ecb680664fe49c4cdd0379e rdf:reifies <<( doc:FactssimplerArchitectureDetail rdf:type None:Design_detail )>> ;
+	prov:wasDerivedFrom doc:0314249e6719 .
+doc:FactsrealTimeProcessingDetail a None:Design_detail .
+_:a92f791b7c7533d59169e3552d3e56d3 rdf:reifies <<( doc:FactsrealTimeProcessingDetail rdf:type None:Design_detail )>> ;
+	prov:wasDerivedFrom doc:0314249e6719 .
+doc:FactscnnRnnModel rdfs:label "CNN-RNN model"@en .
+_:f9b84844233260349db5a4e75d819c93 rdf:reifies <<( doc:FactscnnRnnModel rdfs:label "CNN-RNN model"@en )>> ;
+	prov:wasDerivedFrom doc:0314249e6719 .
+doc:Predictive_maintenance_model None:has_predictive_maintenance_function doc:FactsfaultFeatureExtractionFunction_6 .
+_:ede4354b9180e5c563e8c7c107dee025 rdf:reifies <<( doc:Predictive_maintenance_model None:has_predictive_maintenance_function doc:FactsfaultFeatureExtractionFunction_6 )>> ;
+	prov:wasDerivedFrom doc:0314249e6719 .
+doc:FactsairTemperature rdfs:label "process temperature"@en .
+_:cdbbe52cb2b4e10c3818f93fb289a572 rdf:reifies <<( doc:FactsairTemperature rdfs:label "process temperature"@en )>> ;
+	prov:wasDerivedFrom doc:0314249e6719 .
+doc:FactsaccuracyIndicator_7 rdfs:label "higher accuracy"@en .
+_:e7bc7dd03b7fd44600457717f03e67a3 rdf:reifies <<( doc:FactsaccuracyIndicator_7 rdfs:label "higher accuracy"@en )>> ;
+	prov:wasDerivedFrom doc:0314249e6719 .
+doc:Factsarticle_99 schema:dateModified "2024-12-20"^^<http://www.w3.org/2001/XMLSchema#date> .
+_:cb631ca47d11b59581dd713bf2913f44 rdf:reifies <<( doc:Factsarticle_99 schema:dateModified "2024-12-20"^^<http://www.w3.org/2001/XMLSchema#date> )>> ;
+	prov:wasDerivedFrom doc:0314249e6719 .
+doc:FactsaccuracyIndicator_7 rdfs:label "superior precision"@en .
+_:c59e0efa6ea340bcd79fb1806934d192 rdf:reifies <<( doc:FactsaccuracyIndicator_7 rdfs:label "superior precision"@en )>> ;
+	prov:wasDerivedFrom doc:0314249e6719 .
+doc:Predictive_maintenance_model None:has_predictive_maintenance_function doc:Predictive_maintenance_model .
+_:a65773171c8e5f78c73da4a9fbdbf2d rdf:reifies <<( doc:Predictive_maintenance_model None:has_predictive_maintenance_function doc:Predictive_maintenance_model )>> ;
+	prov:wasDerivedFrom doc:0314249e6719 .
+doc:FactscnnModelType_14 None:has_text_value "CNN-RNN hybrid deep learning model" .
+_:ebfd0d81e946e000cd73452893148c76 rdf:reifies <<( doc:FactscnnModelType_14 None:has_text_value "CNN-RNN hybrid deep learning model" )>> ;
+	prov:wasDerivedFrom doc:0314249e6719 .
+doc:FactslowerComplexityDetail a None:Design_detail .
+_:d32f8b612520d2a00ff145031d4d22ae rdf:reifies <<( doc:FactslowerComplexityDetail rdf:type None:Design_detail )>> ;
+	prov:wasDerivedFrom doc:0314249e6719 .
+doc:FactsfaultFeatureExtractionFunction_6 rdfs:label "dynamic feature extraction"@en .
+_:cd6a417ffa0c014ff2f6d1116d150f4c rdf:reifies <<( doc:FactsfaultFeatureExtractionFunction_6 rdfs:label "dynamic feature extraction"@en )>> ;
+	prov:wasDerivedFrom doc:0314249e6719 .
+_:f162cc6d4a803ea3a73387634a070a26 prov:wasDerivedFrom doc:0314249e6719 .
+doc:FactsairTemperature rdfs:label "air temperature"@en .
+_:f2eee04521c1fd6b5c43acb0f8dae01c rdf:reifies <<( doc:FactsairTemperature rdfs:label "air temperature"@en )>> ;
+	prov:wasDerivedFrom doc:0314249e6719 .
+_:f780b9cd72a5b388d60124a4be3d0458 prov:wasDerivedFrom doc:0314249e6719 .
+doc:0502da747323 a prov:Entity , schema:text ;
+	prov:generatedAtTime "2026-07-25T04:42:33.104951Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+	schema:position 2 ;
+	schema:identifier "0502da747323" .
+doc:FactscnnRnnModel rdfs:label "CNN-RNN-based observer"@en .
+_:c48e402dc2f8f2f929df4826fe5e3cc1 rdf:reifies <<( doc:FactscnnRnnModel rdfs:label "CNN-RNN-based observer"@en )>> ;
+	prov:wasDerivedFrom doc:0502da747323 .
+doc:Factsarticle_99 schema:keywords "CNN-RNN" .
+_:da3007be609b62e47e1b5788f989027f rdf:reifies <<( doc:Factsarticle_99 schema:keywords "CNN-RNN" )>> ;
+	prov:wasDerivedFrom doc:0502da747323 .
+doc:FactscnnModelType_14 <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD/seed#has_text_value> "CNN-LSTM" .
+_:a29dc7a4878ec200feea81d9a2fc5c62 rdf:reifies <<( doc:FactscnnModelType_14 <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD/seed#has_text_value> "CNN-LSTM" )>> ;
+	prov:wasDerivedFrom doc:0502da747323 .
+doc:Factsarticle_99 schema:author doc:FactsauthorLee_1 .
+_:f006ee1850c3c1b01e442ccc6e93cd9f rdf:reifies <<( doc:Factsarticle_99 schema:author doc:FactsauthorLee_1 )>> ;
+	prov:wasDerivedFrom doc:0502da747323 .
+doc:Factsarticle_99 schema:keywords "fault detection" .
+_:c0270eed8bca93d9561493422d51dc1a rdf:reifies <<( doc:Factsarticle_99 schema:keywords "fault detection" )>> ;
+	prov:wasDerivedFrom doc:0502da747323 .
+doc:Factsarticle_99 schema:about doc:Predictive_maintenance_model .
+_:d3428eea311e19da7dab3fcdf147c15e rdf:reifies <<( doc:Factsarticle_99 schema:about doc:Predictive_maintenance_model )>> ;
+	prov:wasDerivedFrom doc:0502da747323 .
+doc:FactsarticleTitle_124 <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD/seed#has_text_value> "Predictive Maintenance and Fault Detection for Motor Drive Control Systems in Industrial Robots Using CNN-RNN-Based Observers" .
+_:ec5046d3a01d53bda898af954d62c5af rdf:reifies <<( doc:FactsarticleTitle_124 <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD/seed#has_text_value> "Predictive Maintenance and Fault Detection for Motor Drive Control Systems in Industrial Robots Using CNN-RNN-Based Observers" )>> ;
+	prov:wasDerivedFrom doc:0502da747323 .
+doc:FactsarticleDoi_30 a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD/seed#Article_identifier> .
+_:c1154072ad2b5f4eb727ec684a2ea7ef rdf:reifies <<( doc:FactsarticleDoi_30 rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD/seed#Article_identifier> )>> ;
+	prov:wasDerivedFrom doc:0502da747323 .
+doc:Factsarticle_99 schema:datePublished "2024-12-24"^^<http://www.w3.org/2001/XMLSchema#date> .
+_:f8e31d9ec6427db91d7046e7c37cf73c rdf:reifies <<( doc:Factsarticle_99 schema:datePublished "2024-12-24"^^<http://www.w3.org/2001/XMLSchema#date> )>> ;
+	prov:wasDerivedFrom doc:0502da747323 .
+_:b6751656eb7df60d71a4906b989426e prov:wasDerivedFrom doc:0502da747323 .
+doc:FactscnnModelType_14 <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD/seed#has_text_value> "CNN-RNN" .
+_:eb72bf57c18c49b120bf655679ca344c rdf:reifies <<( doc:FactscnnModelType_14 <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD/seed#has_text_value> "CNN-RNN" )>> ;
+	prov:wasDerivedFrom doc:0502da747323 .
+doc:Factsarticle_99 a None:Predictive_maintenance_model .
+_:b22627f92a21a76322958f6578283f5b rdf:reifies <<( doc:Factsarticle_99 rdf:type None:Predictive_maintenance_model )>> ;
+	prov:wasDerivedFrom doc:0502da747323 .
+_:aa5c9a2f8702a095d77ff5b1774f45c8 prov:wasDerivedFrom doc:0502da747323 .
+doc:Factsarticle_99 schema:about doc:FactsdcMotorDrive .
+_:bcf62777cbd1339092b95a6662f9ef88 rdf:reifies <<( doc:Factsarticle_99 schema:about doc:FactsdcMotorDrive )>> ;
+	prov:wasDerivedFrom doc:0502da747323 .
+_:f9070d7673a0e1f0f27bd753edc3c168 prov:wasDerivedFrom doc:0502da747323 .
+_:f162cc6d4a803ea3a73387634a070a26 prov:wasDerivedFrom doc:0502da747323 .
+doc:FactscnnRnnModel rdfs:label "CNN-LSTM"@en .
+_:bb76ecd60afb4382ebd57155da8c0fc3 rdf:reifies <<( doc:FactscnnRnnModel rdfs:label "CNN-LSTM"@en )>> ;
+	prov:wasDerivedFrom doc:0502da747323 .
+doc:Factsarticle_99 schema:isPartOf doc:FactssensorsJournal_24 .
+_:e24482f75672c5e5721cbd0b39df24af rdf:reifies <<( doc:Factsarticle_99 schema:isPartOf doc:FactssensorsJournal_24 )>> ;
+	prov:wasDerivedFrom doc:0502da747323 .
+doc:FactsarticleDoi_30 <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD/seed#has_text_value> "10.3390/s25010025" .
+_:c216563767da7c7b8c705fd94b05648b rdf:reifies <<( doc:FactsarticleDoi_30 <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD/seed#has_text_value> "10.3390/s25010025" )>> ;
+	prov:wasDerivedFrom doc:0502da747323 .
+doc:Factsarticle_99 schema:keywords "DC motor drives" .
+_:faa2b27b528b13b49f1708f71f08b24 rdf:reifies <<( doc:Factsarticle_99 schema:keywords "DC motor drives" )>> ;
+	prov:wasDerivedFrom doc:0502da747323 .
+_:b9f8785e661cfc6457658780cf19a3f5 prov:wasDerivedFrom doc:0502da747323 .
+doc:Factsarticle_99 <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD/seed#has_identifier> doc:FactsarticleDoi_30 .
+_:b7d651e6f782bfc8cd9c4efb23b24828 rdf:reifies <<( doc:Factsarticle_99 <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD/seed#has_identifier> doc:FactsarticleDoi_30 )>> ;
+	prov:wasDerivedFrom doc:0502da747323 .
+doc:Factsarticle_99 <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD/seed#has_publication_year> doc:FactspublicationYear_94 .
+_:a0fc8925549e54a767f91cc7799cbfcd rdf:reifies <<( doc:Factsarticle_99 <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD/seed#has_publication_year> doc:FactspublicationYear_94 )>> ;
+	prov:wasDerivedFrom doc:0502da747323 .
+doc:Factsarticle_99 schema:about doc:FactscnnRnnModel .
+_:ec713a6eedcb2f5aa2c43400ed769baf rdf:reifies <<( doc:Factsarticle_99 schema:about doc:FactscnnRnnModel )>> ;
+	prov:wasDerivedFrom doc:0502da747323 .
+doc:FactsauthorLee_1 schema:familyName "Eang" .
+_:ad29fdc86e8eac0d3e1b751c5d317c73 rdf:reifies <<( doc:FactsauthorLee_1 schema:familyName "Eang" )>> ;
+	prov:wasDerivedFrom doc:0502da747323 .
+doc:Factsarticle_99 schema:keywords "CNN-LSTM" .
+_:d3279f0a6075c7427dd3dd6dadf34716 rdf:reifies <<( doc:Factsarticle_99 schema:keywords "CNN-LSTM" )>> ;
+	prov:wasDerivedFrom doc:0502da747323 .
+doc:Factsarticle_99 schema:about doc:FactsindustrialRobot_2 .
+_:ffde99f4fae76e186c9e1fc0ecfc7fce rdf:reifies <<( doc:Factsarticle_99 schema:about doc:FactsindustrialRobot_2 )>> ;
+	prov:wasDerivedFrom doc:0502da747323 .
+doc:FactsindustrialRobot_2 rdfs:label "industrial robots"@en .
+_:eac37386e770645620cf7746e3338643 rdf:reifies <<( doc:FactsindustrialRobot_2 rdfs:label "industrial robots"@en )>> ;
+	prov:wasDerivedFrom doc:0502da747323 .
+doc:FactsdcMotorDrive rdfs:label "motor drive control system"@en .
+_:ca34fab049b28c4cf80cdf013c4c3da9 rdf:reifies <<( doc:FactsdcMotorDrive rdfs:label "motor drive control system"@en )>> ;
+	prov:wasDerivedFrom doc:0502da747323 .
+doc:Predictive_maintenance_model schema:about doc:FactsdcMotorDrive .
+_:a70e05a79246ea18f0b2fbc81ddc65ac rdf:reifies <<( doc:Predictive_maintenance_model schema:about doc:FactsdcMotorDrive )>> ;
+	prov:wasDerivedFrom doc:0502da747323 .
+doc:FactspublicationYear_94 <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD/seed#has_interger_value> 2025 .
+_:c275fdf2f445cc38fd854427baba950a rdf:reifies <<( doc:FactspublicationYear_94 <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD/seed#has_interger_value> 2025 )>> ;
+	prov:wasDerivedFrom doc:0502da747323 .
+doc:FactscnnModelType_14 <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD/seed#describes_type> doc:FactscnnRnnModel .
+_:c861e00dc8a572e0ea72f2f5bbc7334c rdf:reifies <<( doc:FactscnnModelType_14 <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD/seed#describes_type> doc:FactscnnRnnModel )>> ;
+	prov:wasDerivedFrom doc:0502da747323 .
+doc:FactssensorsJournal_24 schema:name "Sensors" .
+_:da84a01f3dcdd222e02cb20c0bcba2c rdf:reifies <<( doc:FactssensorsJournal_24 schema:name "Sensors" )>> ;
+	prov:wasDerivedFrom doc:0502da747323 .
+doc:Factsarticle_99 schema:dateAccepted "2024-12-22"^^<http://www.w3.org/2001/XMLSchema#date> .
+_:a7177c7629d5b18dc32943a04153bf0e rdf:reifies <<( doc:Factsarticle_99 schema:dateAccepted "2024-12-22"^^<http://www.w3.org/2001/XMLSchema#date> )>> ;
+	prov:wasDerivedFrom doc:0502da747323 .
+doc:FactsdcMotorDrives <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD/seed#has_text_value> "DC motor drives" .
+_:a374fca38e53903af48313734aba324a rdf:reifies <<( doc:FactsdcMotorDrives <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD/seed#has_text_value> "DC motor drives" )>> ;
+	prov:wasDerivedFrom doc:0502da747323 .
+doc:FactspublicationYear_94 a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD/seed#Publication_year> .
+_:a11b99d17ef787c5f49041b537d57e68 rdf:reifies <<( doc:FactspublicationYear_94 rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD/seed#Publication_year> )>> ;
+	prov:wasDerivedFrom doc:0502da747323 .
+doc:Predictive_maintenance_model <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD/seed#has_predictive_maintenance_function> <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD/seed#Fault_detection> .
+_:c7d605eae5b63c766f0c95f4be144397 rdf:reifies <<( doc:Predictive_maintenance_model <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD/seed#has_predictive_maintenance_function> <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD/seed#Fault_detection> )>> ;
+	prov:wasDerivedFrom doc:0502da747323 .
+doc:FactssensorsJournal_24 a schema:Periodical .
+_:e752f374cac32fdea0744498ec6743a1 rdf:reifies <<( doc:FactssensorsJournal_24 rdf:type schema:Periodical )>> ;
+	prov:wasDerivedFrom doc:0502da747323 .
+doc:FactsauthorLee_1 schema:familyName "Lee" .
+_:ec1a84d3436fe7bdd9195ae9db5f0cba rdf:reifies <<( doc:FactsauthorLee_1 schema:familyName "Lee" )>> ;
+	prov:wasDerivedFrom doc:0502da747323 .
+_:b917eeace2827d2db40427b3d9641ac2 prov:wasDerivedFrom doc:0502da747323 .
+doc:Factsarticle_99 schema:license <https://creativecommons.org/licenses/by/4.0/> .
+_:bd20a1558a7cea4ab6474ebd0631d0e9 rdf:reifies <<( doc:Factsarticle_99 schema:license <https://creativecommons.org/licenses/by/4.0/> )>> ;
+	prov:wasDerivedFrom doc:0502da747323 .
+doc:Factsarticle_99 schema:keywords "industrial robots" .
+_:bb31bbec9cc9bf9478de47df17631ab5 rdf:reifies <<( doc:Factsarticle_99 schema:keywords "industrial robots" )>> ;
+	prov:wasDerivedFrom doc:0502da747323 .
+doc:Predictive_maintenance_model a None:Predictive_maintenance_model .
+_:d83f2a094297265d719f632579dc0e7f rdf:reifies <<( doc:Predictive_maintenance_model rdf:type None:Predictive_maintenance_model )>> ;
+	prov:wasDerivedFrom doc:0502da747323 .
+doc:FactsdcMotorDrives a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD/seed#item_type> .
+_:f8135232af4852e30cd3ca2a03439a98 rdf:reifies <<( doc:FactsdcMotorDrives rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD/seed#item_type> )>> ;
+	prov:wasDerivedFrom doc:0502da747323 .
+doc:Factsarticle_99 <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD/seed#has_title> doc:FactsarticleTitle_124 .
+_:e96db135af6f741f6d47d31cced1dc05 rdf:reifies <<( doc:Factsarticle_99 <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD/seed#has_title> doc:FactsarticleTitle_124 )>> ;
+	prov:wasDerivedFrom doc:0502da747323 .
+None:Predictive_maintenance_model owl:sameAs None:Predictive_maintenance_system_module , None:Predictive_Maintenance_Article .

@@ -1,0 +1,490 @@
+@prefix None: <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD/seed#> .
+@prefix cco: <http://www.ontologyrepository.com/CommonCoreOntologies/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doc: <https://growgraph.dev/doc/9dc96976e0bf/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix obo: <http://purl.obolibrary.org/obo/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix cd: <https://growgraph.dev/facts> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix schema: <https://schema.org/> .
+doc:55bb4e622589 a prov:Entity , schema:text ;
+	prov:generatedAtTime "2026-07-22T16:32:02.801098Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+	schema:position 0 ;
+	schema:identifier "55bb4e622589" .
+doc:Factsaccuracy1_1 a None:Performance_indicator .
+_:d4b15c453bbed077d489e4e26df138aa rdf:reifies <<( doc:Factsaccuracy1_1 rdf:type None:Performance_indicator )>> ;
+	prov:wasDerivedFrom doc:55bb4e622589 .
+doc:Factsaccuracy1_1 None:has_text_value "diagnostic accuracy" .
+_:c60d08e164636160cb454e013f9d8d21 rdf:reifies <<( doc:Factsaccuracy1_1 None:has_text_value "diagnostic accuracy" )>> ;
+	prov:wasDerivedFrom doc:55bb4e622589 .
+doc:FactsbiLstm None:has_predictive_maintenance_function doc:FactsTdr .
+_:f51fffc9207f679a46cf13fd97417327 rdf:reifies <<( doc:FactsbiLstm None:has_predictive_maintenance_function doc:FactsTdr )>> ;
+	prov:wasDerivedFrom doc:55bb4e622589 .
+doc:Factsdoi1_6 a None:Article_identifier .
+_:e9c99a12d5123abdcf2caf090c5a888b rdf:reifies <<( doc:Factsdoi1_6 rdf:type None:Article_identifier )>> ;
+	prov:wasDerivedFrom doc:55bb4e622589 .
+doc:Factsfaults rdfs:label "faults" .
+_:a765a8160c411925439ff534e0a699aa rdf:reifies <<( doc:Factsfaults rdfs:label "faults" )>> ;
+	prov:wasDerivedFrom doc:55bb4e622589 .
+doc:Factsdoi1_6 None:has_text_value "10.3390/su17146241" .
+_:ba3f3af12c07cb224e582c313dd21580 rdf:reifies <<( doc:Factsdoi1_6 None:has_text_value "10.3390/su17146241" )>> ;
+	prov:wasDerivedFrom doc:55bb4e622589 .
+doc:Factsarticle1_10 None:has_publication_year doc:Factsyear2025_3 .
+_:ce1dcc5ffa25129c8b92000180c27b90 rdf:reifies <<( doc:Factsarticle1_10 None:has_publication_year doc:Factsyear2025_3 )>> ;
+	prov:wasDerivedFrom doc:55bb4e622589 .
+doc:Factsdetail1 None:has_text_value "End-to-end fault diagnosis framework integrating BiLSTM with Time-Domain Reflectometry for detection, characterization, and localization of wiring faults" .
+_:fc8861f43a3d314900a2539c06e6cfb5 rdf:reifies <<( doc:Factsdetail1 None:has_text_value "End-to-end fault diagnosis framework integrating BiLSTM with Time-Domain Reflectometry for detection, characterization, and localization of wiring faults" )>> ;
+	prov:wasDerivedFrom doc:55bb4e622589 .
+doc:FactsTdr rdfs:label "reflectometry" .
+_:b1aef21ef13a3a44e5b9cfd1143de02a rdf:reifies <<( doc:FactsTdr rdfs:label "reflectometry" )>> ;
+	prov:wasDerivedFrom doc:55bb4e622589 .
+doc:Factsaccuracy1_1 a None:Performance_value .
+_:a63c5a6d7278c9b9d6ef2276de4c0ac3 rdf:reifies <<( doc:Factsaccuracy1_1 rdf:type None:Performance_value )>> ;
+	prov:wasDerivedFrom doc:55bb4e622589 .
+doc:FactsbiLstm a None:Predictive_maintenance_system_module .
+_:ee73e04172f321c6ddd113b0bc18908b rdf:reifies <<( doc:FactsbiLstm rdf:type None:Predictive_maintenance_system_module )>> ;
+	prov:wasDerivedFrom doc:55bb4e622589 .
+doc:FactsTdr a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Data_mining_technique_function> .
+_:b82c732d09533f6de9f857b848e40af9 rdf:reifies <<( doc:FactsTdr rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Data_mining_technique_function> )>> ;
+	prov:wasDerivedFrom doc:55bb4e622589 .
+doc:FactswiringNetwork rdfs:label "wiring network" .
+_:fe3ef9e9ade6ea485db7477cf7e1a945 rdf:reifies <<( doc:FactswiringNetwork rdfs:label "wiring network" )>> ;
+	prov:wasDerivedFrom doc:55bb4e622589 .
+doc:FactsbiLstm rdfs:label "BiLSTM" .
+_:ac63a65075d5ef6f2062cc50e266dda9 rdf:reifies <<( doc:FactsbiLstm rdfs:label "BiLSTM" )>> ;
+	prov:wasDerivedFrom doc:55bb4e622589 .
+doc:Factsarticle1_10 dcterms:creator doc:Factsauthor3_1 .
+_:aabd193a769eb33db5f3c852cf3e391a rdf:reifies <<( doc:Factsarticle1_10 dcterms:creator doc:Factsauthor3_1 )>> ;
+	prov:wasDerivedFrom doc:55bb4e622589 .
+doc:Factsfaults a None:Fault_detection .
+_:a4df303c67cad1ba930df6b759211fc3 rdf:reifies <<( doc:Factsfaults rdf:type None:Fault_detection )>> ;
+	prov:wasDerivedFrom doc:55bb4e622589 .
+doc:Factsaccuracy1_1 None:has_text_value "macro-average sensitivity" .
+_:eea124ed54ff764b8cc20003a911c78b rdf:reifies <<( doc:Factsaccuracy1_1 None:has_text_value "macro-average sensitivity" )>> ;
+	prov:wasDerivedFrom doc:55bb4e622589 .
+doc:Factsdiagnosis a None:Fault_detection .
+_:dfadfb4b9671ec7b960bf72c223f8cef rdf:reifies <<( doc:Factsdiagnosis rdf:type None:Fault_detection )>> ;
+	prov:wasDerivedFrom doc:55bb4e622589 .
+doc:Factsdiagnosis rdfs:label "diagnosis" .
+_:fc3839d4b5595d729a7704f5a877ce77 rdf:reifies <<( doc:Factsdiagnosis rdfs:label "diagnosis" )>> ;
+	prov:wasDerivedFrom doc:55bb4e622589 .
+doc:Factsarticle1_10 dcterms:subject doc:Factsdiagnosis .
+_:b65aa74d3a2e975430e7712d30f62b44 rdf:reifies <<( doc:Factsarticle1_10 dcterms:subject doc:Factsdiagnosis )>> ;
+	prov:wasDerivedFrom doc:55bb4e622589 .
+doc:Factsauthor3_1 a schema:Person .
+_:bd771ce579a2d5e52194c0aa63ec1a21 rdf:reifies <<( doc:Factsauthor3_1 rdf:type schema:Person )>> ;
+	prov:wasDerivedFrom doc:55bb4e622589 .
+doc:Factsdetail1 a None:Design_detail .
+_:e0ee1f3afc09c83ef83be5275860e4b1 rdf:reifies <<( doc:Factsdetail1 rdf:type None:Design_detail )>> ;
+	prov:wasDerivedFrom doc:55bb4e622589 .
+doc:Factsarticle1_10 dcterms:subject doc:FactsbiLstm .
+_:e484530f5c591d691bb6774d636963cd rdf:reifies <<( doc:Factsarticle1_10 dcterms:subject doc:FactsbiLstm )>> ;
+	prov:wasDerivedFrom doc:55bb4e622589 .
+doc:Factsarticle1_10 dcterms:subject doc:FactswiringNetwork .
+_:c3761691af3589edb3318dd43329e95c rdf:reifies <<( doc:Factsarticle1_10 dcterms:subject doc:FactswiringNetwork )>> ;
+	prov:wasDerivedFrom doc:55bb4e622589 .
+doc:FactsbiLstm dcterms:description "Bidirectional Long Short-Term Memory Neural Network" .
+_:c3ba0aae4219d6e0b1385bc6f4570e71 rdf:reifies <<( doc:FactsbiLstm dcterms:description "Bidirectional Long Short-Term Memory Neural Network" )>> ;
+	prov:wasDerivedFrom doc:55bb4e622589 .
+doc:Factsdoi1_6 None:has_text_value "An End-to-End Approach Based on a Bidirectional Long Short-Term Memory Neural Network for Diagnosing Wiring Networks Using Reflectometry" .
+_:ba2fc6093711dac8bc87b3fafaf2e77f rdf:reifies <<( doc:Factsdoi1_6 None:has_text_value "An End-to-End Approach Based on a Bidirectional Long Short-Term Memory Neural Network for Diagnosing Wiring Networks Using Reflectometry" )>> ;
+	prov:wasDerivedFrom doc:55bb4e622589 .
+doc:FactsbiLstm None:has_design_detail doc:Factsdetail1 .
+_:b18f56e4efc69ac388cecc0035693ee4 rdf:reifies <<( doc:FactsbiLstm None:has_design_detail doc:Factsdetail1 )>> ;
+	prov:wasDerivedFrom doc:55bb4e622589 .
+doc:Factsarticle1_10 None:has_title doc:Factsdoi1_6 .
+_:bb4d4053a242e745618b11c19cc3edda rdf:reifies <<( doc:Factsarticle1_10 None:has_title doc:Factsdoi1_6 )>> ;
+	prov:wasDerivedFrom doc:55bb4e622589 .
+doc:Factsarticle1_10 dcterms:subject doc:FactsTdr .
+_:e4a2cec278fb9ffa67cd21ee79a1bd4b rdf:reifies <<( doc:Factsarticle1_10 dcterms:subject doc:FactsTdr )>> ;
+	prov:wasDerivedFrom doc:55bb4e622589 .
+doc:Factsdoi1_6 a None:Article_title .
+_:bb47c2294dd1e557cf8c09217c5fcfd1 rdf:reifies <<( doc:Factsdoi1_6 rdf:type None:Article_title )>> ;
+	prov:wasDerivedFrom doc:55bb4e622589 .
+doc:Factsaccuracy1_1 None:has_text_value "98.97%" .
+_:a5348745b18d2e4f30630818019105ce rdf:reifies <<( doc:Factsaccuracy1_1 None:has_text_value "98.97%" )>> ;
+	prov:wasDerivedFrom doc:55bb4e622589 .
+doc:Factsauthor3_1 schema:name "Mostafa Kamel Smail" .
+_:cf373365b2658a7cac97167bcf68cdf4 rdf:reifies <<( doc:Factsauthor3_1 schema:name "Mostafa Kamel Smail" )>> ;
+	prov:wasDerivedFrom doc:55bb4e622589 .
+doc:Factsyear2025_3 None:has_interger_value 2025 .
+_:a701a1461b4efb864ac364e12c01116f rdf:reifies <<( doc:Factsyear2025_3 None:has_interger_value 2025 )>> ;
+	prov:wasDerivedFrom doc:55bb4e622589 .
+doc:Factsauthor3_1 schema:name "Abdelhak Goudjil" .
+_:ebf8774e573cbb691b922f3d942e8149 rdf:reifies <<( doc:Factsauthor3_1 schema:name "Abdelhak Goudjil" )>> ;
+	prov:wasDerivedFrom doc:55bb4e622589 .
+doc:Factsarticle1_10 None:has_identifier doc:Factsdoi1_6 .
+_:c240292ef31d16f7d69bd0097fe73423 rdf:reifies <<( doc:Factsarticle1_10 None:has_identifier doc:Factsdoi1_6 )>> ;
+	prov:wasDerivedFrom doc:55bb4e622589 .
+doc:FactsbiLstm None:has_predictive_maintenance_function doc:Factsdiagnosis .
+_:ce4272a6d94c87228860f79516b33c1c rdf:reifies <<( doc:FactsbiLstm None:has_predictive_maintenance_function doc:Factsdiagnosis )>> ;
+	prov:wasDerivedFrom doc:55bb4e622589 .
+doc:Factsauthor3_1 schema:name "Mouaaz Nahas" .
+_:bda85af4019c9c28772b7eef152d3419 rdf:reifies <<( doc:Factsauthor3_1 schema:name "Mouaaz Nahas" )>> ;
+	prov:wasDerivedFrom doc:55bb4e622589 .
+doc:Factsarticle1_10 a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Predictive_Maintenance_Article> .
+_:b25af20ffc1179198f87322af92d0ce6 rdf:reifies <<( doc:Factsarticle1_10 rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Predictive_Maintenance_Article> )>> ;
+	prov:wasDerivedFrom doc:55bb4e622589 .
+doc:Factsaccuracy1_1 None:has_text_value ">98%" .
+_:cde6f3df5e123d2d420cbfb376cfdf0d rdf:reifies <<( doc:Factsaccuracy1_1 None:has_text_value ">98%" )>> ;
+	prov:wasDerivedFrom doc:55bb4e622589 .
+doc:Factsyear2025_3 a None:Publication_year .
+_:f1546869dc40651ef89f7c912854c962 rdf:reifies <<( doc:Factsyear2025_3 rdf:type None:Publication_year )>> ;
+	prov:wasDerivedFrom doc:55bb4e622589 .
+doc:FactsbiLstm a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Predictive_Maintenance_Article> .
+_:a028aa3cdfc2e0b9a6bf1b106d6d8a8f rdf:reifies <<( doc:FactsbiLstm rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Predictive_Maintenance_Article> )>> ;
+	prov:wasDerivedFrom doc:55bb4e622589 .
+doc:FactswiringNetwork a None:Maintainable_item .
+_:f189338627825fae6a5f2a4125df9136 rdf:reifies <<( doc:FactswiringNetwork rdf:type None:Maintainable_item )>> ;
+	prov:wasDerivedFrom doc:55bb4e622589 .
+doc:af5bc2d022b2 a prov:Entity , schema:text ;
+	prov:generatedAtTime "2026-07-22T16:32:02.804606Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+	schema:position 1 ;
+	schema:identifier "af5bc2d022b2" .
+doc:FactsoperationalLifespan rdfs:label "operational lifespan"@en .
+_:aec92d195599a06654d0bd16ff3ee4e8 rdf:reifies <<( doc:FactsoperationalLifespan rdfs:label "operational lifespan"@en )>> ;
+	prov:wasDerivedFrom doc:af5bc2d022b2 .
+doc:FactsenergyWaste rdfs:label "energy waste"@en .
+_:c251fd444bf9e489937fa3e92d20995e rdf:reifies <<( doc:FactsenergyWaste rdfs:label "energy waste"@en )>> ;
+	prov:wasDerivedFrom doc:af5bc2d022b2 .
+doc:FactsdiagnosticFramework cd:describes_configuration doc:FactsTdr .
+_:cfce3b23669ebd04479d608f1fcb655d rdf:reifies <<( doc:FactsdiagnosticFramework cd:describes_configuration doc:FactsTdr )>> ;
+	prov:wasDerivedFrom doc:af5bc2d022b2 .
+doc:FactswiringNetwork a cco:DescriptiveInformationContentEntity .
+_:b9bc34cabedd6a166b4c9f307a35e0f rdf:reifies <<( doc:FactswiringNetwork rdf:type cco:DescriptiveInformationContentEntity )>> ;
+	prov:wasDerivedFrom doc:af5bc2d022b2 .
+doc:FactspowerInterruptions a cco:DescriptiveInformationContentEntity .
+_:e17181f944dfe4f06afcc256c0c6b68d rdf:reifies <<( doc:FactspowerInterruptions rdf:type cco:DescriptiveInformationContentEntity )>> ;
+	prov:wasDerivedFrom doc:af5bc2d022b2 .
+doc:FactsoperationalLifespan a cco:DescriptiveInformationContentEntity .
+_:c0fed97f6f8f8567dc124feacb0984ad rdf:reifies <<( doc:FactsoperationalLifespan rdf:type cco:DescriptiveInformationContentEntity )>> ;
+	prov:wasDerivedFrom doc:af5bc2d022b2 .
+doc:FactsenergyWaste a cco:DescriptiveInformationContentEntity .
+_:eef3769d5cdfaa16619284a7c3069fda rdf:reifies <<( doc:FactsenergyWaste rdf:type cco:DescriptiveInformationContentEntity )>> ;
+	prov:wasDerivedFrom doc:af5bc2d022b2 .
+doc:FactswiringNetwork rdfs:label "hard faults"@en .
+_:e5eefd5ed1501c62210f6424758deec8 rdf:reifies <<( doc:FactswiringNetwork rdfs:label "hard faults"@en )>> ;
+	prov:wasDerivedFrom doc:af5bc2d022b2 .
+doc:FactspreciseLocalization rdfs:label "precise localization"@en .
+_:ef82e358971fe031462f8df2a839a0af rdf:reifies <<( doc:FactspreciseLocalization rdfs:label "precise localization"@en )>> ;
+	prov:wasDerivedFrom doc:af5bc2d022b2 .
+doc:FactssystemWideMalfunctions a cco:DescriptiveInformationContentEntity .
+_:a885f6203cf5a13871ab5b1827dadc8b rdf:reifies <<( doc:FactssystemWideMalfunctions rdf:type cco:DescriptiveInformationContentEntity )>> ;
+	prov:wasDerivedFrom doc:af5bc2d022b2 .
+doc:FactssignalIntegrity a obo:BFO_0000019 .
+_:f0f257cec09a50142100923ee31f8405 rdf:reifies <<( doc:FactssignalIntegrity rdf:type obo:BFO_0000019 )>> ;
+	prov:wasDerivedFrom doc:af5bc2d022b2 .
+doc:FactsmaterialUsage a cco:DescriptiveInformationContentEntity .
+_:a410837796ef8d5b0de27e33ec317cc rdf:reifies <<( doc:FactsmaterialUsage rdf:type cco:DescriptiveInformationContentEntity )>> ;
+	prov:wasDerivedFrom doc:af5bc2d022b2 .
+doc:FactsoperationalExpenses a cco:DescriptiveInformationContentEntity .
+_:be3770d87441ebe43adf4aded04fea89 rdf:reifies <<( doc:FactsoperationalExpenses rdf:type cco:DescriptiveInformationContentEntity )>> ;
+	prov:wasDerivedFrom doc:af5bc2d022b2 .
+doc:FactsoperationalExpenses rdfs:label "operational expenses"@en .
+_:a02df7bf1d3f3a9bcad3937005a27de8 rdf:reifies <<( doc:FactsoperationalExpenses rdfs:label "operational expenses"@en )>> ;
+	prov:wasDerivedFrom doc:af5bc2d022b2 .
+doc:FactselectromagneticMethods a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Data_mining_technique_function> .
+_:b688d09a55c93215a09caedee0282597 rdf:reifies <<( doc:FactselectromagneticMethods rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Data_mining_technique_function> )>> ;
+	prov:wasDerivedFrom doc:af5bc2d022b2 .
+doc:Factsdiagnosis cd:mentions doc:FactswiringNetwork .
+_:cc05188a777f6c79c4cabff98d9167c0 rdf:reifies <<( doc:Factsdiagnosis cd:mentions doc:FactswiringNetwork )>> ;
+	prov:wasDerivedFrom doc:af5bc2d022b2 .
+doc:FactssignalIntegrity rdfs:label "signal integrity"@en .
+_:c37efcfdf54a9293bf7af071c0fa444a rdf:reifies <<( doc:FactssignalIntegrity rdfs:label "signal integrity"@en )>> ;
+	prov:wasDerivedFrom doc:af5bc2d022b2 .
+doc:FactscarbonFootprint a cco:DescriptiveInformationContentEntity .
+_:e73f03c41130ad1574d3b422ad9d581d rdf:reifies <<( doc:FactscarbonFootprint rdf:type cco:DescriptiveInformationContentEntity )>> ;
+	prov:wasDerivedFrom doc:af5bc2d022b2 .
+doc:Factsdiagnosis cd:mentions doc:FactsmodelBasedApproaches .
+_:beae8854174230716df4d79175be23ed rdf:reifies <<( doc:Factsdiagnosis cd:mentions doc:FactsmodelBasedApproaches )>> ;
+	prov:wasDerivedFrom doc:af5bc2d022b2 .
+doc:FactsstatisticalLearningFrameworks rdfs:label "statistical learning frameworks"@en .
+_:ca7b5d0ce28a3b46fe93c4050a1b4be0 rdf:reifies <<( doc:FactsstatisticalLearningFrameworks rdfs:label "statistical learning frameworks"@en )>> ;
+	prov:wasDerivedFrom doc:af5bc2d022b2 .
+doc:FactswiringNetwork rdfs:label "soft faults"@en .
+_:b469cc5c84233de2ef3a48a22210ffa7 rdf:reifies <<( doc:FactswiringNetwork rdfs:label "soft faults"@en )>> ;
+	prov:wasDerivedFrom doc:af5bc2d022b2 .
+doc:Factsdiagnosis cd:mentions doc:FactssignalProcessingTechniques .
+_:d9e89b92ef9ea0930940977bde492000 rdf:reifies <<( doc:Factsdiagnosis cd:mentions doc:FactssignalProcessingTechniques )>> ;
+	prov:wasDerivedFrom doc:af5bc2d022b2 .
+doc:Factsdiagnosis rdfs:label "document about diagnostic methods for wiring faults"@en .
+_:e0867e3e6972ae3a3828419f39a01c4f rdf:reifies <<( doc:Factsdiagnosis rdfs:label "document about diagnostic methods for wiring faults"@en )>> ;
+	prov:wasDerivedFrom doc:af5bc2d022b2 .
+doc:FactsearlyIdentification rdfs:label "early identification"@en .
+_:b26a0bbdd1f323bb3b11a0fe3c40481c rdf:reifies <<( doc:FactsearlyIdentification rdfs:label "early identification"@en )>> ;
+	prov:wasDerivedFrom doc:af5bc2d022b2 .
+doc:Factsdiagnosis a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Predictive_Maintenance_Article> .
+_:d7ace68af8f366aa4e44820f5adc6b42 rdf:reifies <<( doc:Factsdiagnosis rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Predictive_Maintenance_Article> )>> ;
+	prov:wasDerivedFrom doc:af5bc2d022b2 .
+doc:FactsstatisticalLearningFrameworks a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Data_mining_technique_function> .
+_:bb4ddab568f03f2514153210eb698950 rdf:reifies <<( doc:FactsstatisticalLearningFrameworks rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Data_mining_technique_function> )>> ;
+	prov:wasDerivedFrom doc:af5bc2d022b2 .
+doc:FactswiringNetwork rdfs:label "wiring defects"@en .
+_:c28e3589a47daac0992671d90a62843d rdf:reifies <<( doc:FactswiringNetwork rdfs:label "wiring defects"@en )>> ;
+	prov:wasDerivedFrom doc:af5bc2d022b2 .
+doc:FactsresistiveLosses a cco:DescriptiveInformationContentEntity .
+_:da080bb214b6877edc6ca3c0d43c02ee rdf:reifies <<( doc:FactsresistiveLosses rdf:type cco:DescriptiveInformationContentEntity )>> ;
+	prov:wasDerivedFrom doc:af5bc2d022b2 .
+doc:FactsTdr cd:has_text_value "diagnostic strategy that injects a known excitation signal and analyzes reflected waveforms" .
+_:e78dcabbb63d4f8311b81af6b5e6898e rdf:reifies <<( doc:FactsTdr cd:has_text_value "diagnostic strategy that injects a known excitation signal and analyzes reflected waveforms" )>> ;
+	prov:wasDerivedFrom doc:af5bc2d022b2 .
+doc:Factsdiagnosis cd:mentions doc:FactsTdr .
+_:d208c4ada79dc6b08ca6b0ce022a174 rdf:reifies <<( doc:Factsdiagnosis cd:mentions doc:FactsTdr )>> ;
+	prov:wasDerivedFrom doc:af5bc2d022b2 .
+doc:FactsresourceAllocation rdfs:label "resource allocation"@en .
+_:ed10bda4ec830e37aeb68e94522337f8 rdf:reifies <<( doc:FactsresourceAllocation rdfs:label "resource allocation"@en )>> ;
+	prov:wasDerivedFrom doc:af5bc2d022b2 .
+doc:FactsTdr rdfs:label "reflectometry"@en .
+_:e783c327e3775ae9aa75dc279930af46 rdf:reifies <<( doc:FactsTdr rdfs:label "reflectometry"@en )>> ;
+	prov:wasDerivedFrom doc:af5bc2d022b2 .
+doc:FactswiringNetwork cd:has_text_value "localized degradation that is often initially undetected" .
+_:a9a6b0ebbd9193ba40a1b864942bc4b4 rdf:reifies <<( doc:FactswiringNetwork cd:has_text_value "localized degradation that is often initially undetected" )>> ;
+	prov:wasDerivedFrom doc:af5bc2d022b2 .
+doc:FactsearlyIdentification a cco:DescriptiveInformationContentEntity .
+_:b6ed2d95eed22a3c46dfaf2e91d5c91e rdf:reifies <<( doc:FactsearlyIdentification rdf:type cco:DescriptiveInformationContentEntity )>> ;
+	prov:wasDerivedFrom doc:af5bc2d022b2 .
+doc:FactsTdr cd:has_text_value "operates by analyzing reflected waveforms from impedance discontinuities" .
+_:c8cf5d1a2a3f499c3fe59cd6ae41ba2b rdf:reifies <<( doc:FactsTdr cd:has_text_value "operates by analyzing reflected waveforms from impedance discontinuities" )>> ;
+	prov:wasDerivedFrom doc:af5bc2d022b2 .
+doc:FactsresourceAllocation a cco:DescriptiveInformationContentEntity .
+_:ec02316b2442f2b111d23144f3dfa117 rdf:reifies <<( doc:FactsresourceAllocation rdf:type cco:DescriptiveInformationContentEntity )>> ;
+	prov:wasDerivedFrom doc:af5bc2d022b2 .
+doc:FactssignalProcessingTechniques a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Data_mining_technique_function> .
+_:cd61339c005d0a73fbf938661a6868a0 rdf:reifies <<( doc:FactssignalProcessingTechniques rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Data_mining_technique_function> )>> ;
+	prov:wasDerivedFrom doc:af5bc2d022b2 .
+doc:FactspowerInterruptions rdfs:label "service disruptions"@en .
+_:e14cd33a200fbf330a98792924d28dff rdf:reifies <<( doc:FactspowerInterruptions rdfs:label "service disruptions"@en )>> ;
+	prov:wasDerivedFrom doc:af5bc2d022b2 .
+doc:FactsunplannedDowntime rdfs:label "unplanned downtime"@en .
+_:a2902d3b1175f085bf06b2eee7c91763 rdf:reifies <<( doc:FactsunplannedDowntime rdfs:label "unplanned downtime"@en )>> ;
+	prov:wasDerivedFrom doc:af5bc2d022b2 .
+doc:FactspreciseLocalization a cco:DescriptiveInformationContentEntity .
+_:e616ec0b442ff62a98e3696767bdffc9 rdf:reifies <<( doc:FactspreciseLocalization rdf:type cco:DescriptiveInformationContentEntity )>> ;
+	prov:wasDerivedFrom doc:af5bc2d022b2 .
+doc:FactsmodelBasedApproaches a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Data_mining_technique_function> .
+_:e6db8f4451e97406ea5434790d5b9ab1 rdf:reifies <<( doc:FactsmodelBasedApproaches rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Data_mining_technique_function> )>> ;
+	prov:wasDerivedFrom doc:af5bc2d022b2 .
+doc:FactspowerInterruptions rdfs:label "power interruptions"@en .
+_:f4b568630c69a5af719b11109a01cd7b rdf:reifies <<( doc:FactspowerInterruptions rdfs:label "power interruptions"@en )>> ;
+	prov:wasDerivedFrom doc:af5bc2d022b2 .
+doc:FactselectromagneticMethods rdfs:label "electromagnetic methods"@en .
+_:adb20789a8929e3cb1e6b7902666478d rdf:reifies <<( doc:FactselectromagneticMethods rdfs:label "electromagnetic methods"@en )>> ;
+	prov:wasDerivedFrom doc:af5bc2d022b2 .
+doc:Factsdiagnosis cd:mentions doc:FactselectromagneticMethods .
+_:e2811bd8f0d706b67897ba295c0e399b rdf:reifies <<( doc:Factsdiagnosis cd:mentions doc:FactselectromagneticMethods )>> ;
+	prov:wasDerivedFrom doc:af5bc2d022b2 .
+doc:FactsdiagnosticFramework a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Model_configuration> .
+_:d6e8f0551c104f01313821d07645234e rdf:reifies <<( doc:FactsdiagnosticFramework rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Model_configuration> )>> ;
+	prov:wasDerivedFrom doc:af5bc2d022b2 .
+doc:FactssystemWideMalfunctions rdfs:label "system-wide malfunctions"@en .
+_:fe47da0752ab71e4938212cce1df414e rdf:reifies <<( doc:FactssystemWideMalfunctions rdfs:label "system-wide malfunctions"@en )>> ;
+	prov:wasDerivedFrom doc:af5bc2d022b2 .
+doc:FactsmodelBasedApproaches rdfs:label "model-based approaches"@en .
+_:ce42a8d7b97560780b949ee3cc5ac992 rdf:reifies <<( doc:FactsmodelBasedApproaches rdfs:label "model-based approaches"@en )>> ;
+	prov:wasDerivedFrom doc:af5bc2d022b2 .
+doc:FactsTdr a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Predictive_maintenance_module_function> .
+_:c48d31e596a20238eab92030b5897332 rdf:reifies <<( doc:FactsTdr rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Predictive_maintenance_module_function> )>> ;
+	prov:wasDerivedFrom doc:af5bc2d022b2 .
+doc:FactsdiagnosticFramework rdfs:label "diagnostic framework"@en .
+_:ec2fd650553592e2b34e8a18debcbe0f rdf:reifies <<( doc:FactsdiagnosticFramework rdfs:label "diagnostic framework"@en )>> ;
+	prov:wasDerivedFrom doc:af5bc2d022b2 .
+doc:FactssignalIntegrity cd:has_text_value "can be compromised by wiring faults" .
+_:f2ee3ed8952ca481002c48aea9da3b8 rdf:reifies <<( doc:FactssignalIntegrity cd:has_text_value "can be compromised by wiring faults" )>> ;
+	prov:wasDerivedFrom doc:af5bc2d022b2 .
+doc:FactswiringNetwork cd:has_text_value "failures typically characterized by open or short circuits" .
+_:e19008f7ca292f309fb8e8763fe2839d rdf:reifies <<( doc:FactswiringNetwork cd:has_text_value "failures typically characterized by open or short circuits" )>> ;
+	prov:wasDerivedFrom doc:af5bc2d022b2 .
+doc:FactssignalProcessingTechniques rdfs:label "signal processing techniques"@en .
+_:dffc8689ec7963cfdef8cc4bee0b708c rdf:reifies <<( doc:FactssignalProcessingTechniques rdfs:label "signal processing techniques"@en )>> ;
+	prov:wasDerivedFrom doc:af5bc2d022b2 .
+doc:FactsTdr cd:has_text_value "is robust, versatile, non-intrusive, and high spatial resolution" .
+_:d81b984d0362f69631713b86e90ba2d9 rdf:reifies <<( doc:FactsTdr cd:has_text_value "is robust, versatile, non-intrusive, and high spatial resolution" )>> ;
+	prov:wasDerivedFrom doc:af5bc2d022b2 .
+doc:FactscarbonFootprint rdfs:label "carbon footprint"@en .
+_:b0844b31a2556f0977d1a37f288f767 rdf:reifies <<( doc:FactscarbonFootprint rdfs:label "carbon footprint"@en )>> ;
+	prov:wasDerivedFrom doc:af5bc2d022b2 .
+doc:FactsmaterialUsage rdfs:label "material usage"@en .
+_:cf66d827f962f152388c2098f338740d rdf:reifies <<( doc:FactsmaterialUsage rdfs:label "material usage"@en )>> ;
+	prov:wasDerivedFrom doc:af5bc2d022b2 .
+doc:FactsunplannedDowntime a cco:DescriptiveInformationContentEntity .
+_:cdfbea0a583018b3bc68e1feaa5e6d0a rdf:reifies <<( doc:FactsunplannedDowntime rdf:type cco:DescriptiveInformationContentEntity )>> ;
+	prov:wasDerivedFrom doc:af5bc2d022b2 .
+doc:FactsresistiveLosses rdfs:label "resistive losses"@en .
+_:ab550491c8be7f478bd8e7627d569cf4 rdf:reifies <<( doc:FactsresistiveLosses rdfs:label "resistive losses"@en )>> ;
+	prov:wasDerivedFrom doc:af5bc2d022b2 .
+doc:Factsdiagnosis cd:mentions doc:FactsstatisticalLearningFrameworks .
+_:e49e6382a3922ebfc2a709ae0ef48d1b rdf:reifies <<( doc:Factsdiagnosis cd:mentions doc:FactsstatisticalLearningFrameworks )>> ;
+	prov:wasDerivedFrom doc:af5bc2d022b2 .
+doc:54966633a38a a prov:Entity , schema:text ;
+	prov:generatedAtTime "2026-07-22T16:32:02.808724Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+	schema:position 2 ;
+	schema:identifier "54966633a38a" .
+doc:FactsSpectrumTdr rdfs:subClassOf doc:FactsTdr .
+_:c6be7eaa2e7fbe4ed932be9574ec6900 rdf:reifies <<( doc:FactsSpectrumTdr rdfs:subClassOf doc:FactsTdr )>> ;
+	prov:wasDerivedFrom doc:54966633a38a .
+doc:FactsTdr a owl:Class .
+_:d012ad61bcbdc6d26174a55df59b0194 rdf:reifies <<( doc:FactsTdr rdf:type owl:Class )>> ;
+	prov:wasDerivedFrom doc:54966633a38a .
+doc:FactsgeneticAlgorithms rdfs:label "Genetic Algorithms"@en .
+_:ee910dea47bcc67f6772813e5fbc602f rdf:reifies <<( doc:FactsgeneticAlgorithms rdfs:label "Genetic Algorithms"@en )>> ;
+	prov:wasDerivedFrom doc:54966633a38a .
+doc:FactssignalProcessingTechniques a cco:Algorithm .
+_:ce872a9a224caa228e016093ce7c5c04 rdf:reifies <<( doc:FactssignalProcessingTechniques rdf:type cco:Algorithm )>> ;
+	prov:wasDerivedFrom doc:54966633a38a .
+doc:FactsexperimentallyAcquiredDatasets a cco:Database .
+_:e8ba3d8f2951e60418ee1554c0829b01 rdf:reifies <<( doc:FactsexperimentallyAcquiredDatasets rdf:type cco:Database )>> ;
+	prov:wasDerivedFrom doc:54966633a38a .
+doc:FactsfourierTransform a cco:Algorithm .
+_:db23735f22bfd729c242d064fa945c4f rdf:reifies <<( doc:FactsfourierTransform rdf:type cco:Algorithm )>> ;
+	prov:wasDerivedFrom doc:54966633a38a .
+doc:FactswiringNetwork a doc:FactsMaintainableItem .
+_:d6e01f724b6b73f02a1f146a877fc512 rdf:reifies <<( doc:FactswiringNetwork rdf:type doc:FactsMaintainableItem )>> ;
+	prov:wasDerivedFrom doc:54966633a38a .
+doc:FactsOpticalSequenceTdr a owl:Class .
+_:f806d272e8b09466779b1604aa111b2b rdf:reifies <<( doc:FactsOpticalSequenceTdr rdf:type owl:Class )>> ;
+	prov:wasDerivedFrom doc:54966633a38a .
+doc:FactsTdrMethod cd:has_design_detail doc:FactsfaultLocalization .
+_:b7bdc6b68d9a756de26d51b6b88ad4ca rdf:reifies <<( doc:FactsTdrMethod cd:has_design_detail doc:FactsfaultLocalization )>> ;
+	prov:wasDerivedFrom doc:54966633a38a .
+doc:FactsparticleSwarmOptimization rdfs:label "Particle Swarm Optimization"@en .
+_:d32ee8f6744903f60c7dbcf2b4dd25b0 rdf:reifies <<( doc:FactsparticleSwarmOptimization rdfs:label "Particle Swarm Optimization"@en )>> ;
+	prov:wasDerivedFrom doc:54966633a38a .
+doc:Factsdetail1 a doc:FactsDesignDetail .
+_:a9d0443bdaa5d3809ba48a931b774987 rdf:reifies <<( doc:Factsdetail1 rdf:type doc:FactsDesignDetail )>> ;
+	prov:wasDerivedFrom doc:54966633a38a .
+doc:FactsTdr rdfs:label "Joint Time-Frequency Reflectometry"@en .
+_:d4e55d6271e17f3e4bbf7def31295cbf rdf:reifies <<( doc:FactsTdr rdfs:label "Joint Time-Frequency Reflectometry"@en )>> ;
+	prov:wasDerivedFrom doc:54966633a38a .
+doc:FactskNearestNeighborModels rdfs:label "k-Nearest Neighbor models"@en .
+_:cf2af1844c289e954ab69000ee381561 rdf:reifies <<( doc:FactskNearestNeighborModels rdfs:label "k-Nearest Neighbor models"@en )>> ;
+	prov:wasDerivedFrom doc:54966633a38a .
+doc:FactsinverseProblemBasedIterativeAlgorithms rdfs:label "inverse problem-based iterative algorithms"@en .
+_:a1b53f712e25f55bf7f811dbe3b1d590 rdf:reifies <<( doc:FactsinverseProblemBasedIterativeAlgorithms rdfs:label "inverse problem-based iterative algorithms"@en )>> ;
+	prov:wasDerivedFrom doc:54966633a38a .
+doc:FactsfourierTransform rdfs:label "Fourier transform"@en .
+_:e9ecb3ca4cce207ccf71a36f486c8631 rdf:reifies <<( doc:FactsfourierTransform rdfs:label "Fourier transform"@en )>> ;
+	prov:wasDerivedFrom doc:54966633a38a .
+doc:FactsOpticalSequenceTdr rdfs:subClassOf doc:FactsTdr .
+_:a081de1b646cf40990441832b7de0a40 rdf:reifies <<( doc:FactsOpticalSequenceTdr rdfs:subClassOf doc:FactsTdr )>> ;
+	prov:wasDerivedFrom doc:54966633a38a .
+doc:FactsfaultLocalization a doc:FactsDataVariable .
+_:ab5e27f9e09e9cfff16d12d2b3709bec rdf:reifies <<( doc:FactsfaultLocalization rdf:type doc:FactsDataVariable )>> ;
+	prov:wasDerivedFrom doc:54966633a38a .
+doc:Factsdiagnosis a doc:Factsdiagnosis .
+_:bc5c161b4a2e20be814a10c331014102 rdf:reifies <<( doc:Factsdiagnosis rdf:type doc:Factsdiagnosis )>> ;
+	prov:wasDerivedFrom doc:54966633a38a .
+doc:FactsinverseProblemBasedIterativeAlgorithms a doc:FactsClassification .
+_:de0224fafa704c6042564e48274ceb69 rdf:reifies <<( doc:FactsinverseProblemBasedIterativeAlgorithms rdf:type doc:FactsClassification )>> ;
+	prov:wasDerivedFrom doc:54966633a38a .
+doc:FactskNearestNeighborModels a doc:FactsClassification .
+_:c155ebbf1e197934d374121d123ba79a rdf:reifies <<( doc:FactskNearestNeighborModels rdf:type doc:FactsClassification )>> ;
+	prov:wasDerivedFrom doc:54966633a38a .
+doc:FactsfaultLocalization rdfs:label "fault localization"@en .
+_:f8b8c88617f34166cd32265748720501 rdf:reifies <<( doc:FactsfaultLocalization rdfs:label "fault localization"@en )>> ;
+	prov:wasDerivedFrom doc:54966633a38a .
+doc:Factsdiagnosis rdfs:label "wiring network diagnosis"@en .
+_:fb36173626f40a2b4e850c46f93feca8 rdf:reifies <<( doc:Factsdiagnosis rdfs:label "wiring network diagnosis"@en )>> ;
+	prov:wasDerivedFrom doc:54966633a38a .
+_:e783c327e3775ae9aa75dc279930af46 prov:wasDerivedFrom doc:54966633a38a .
+doc:FactsOpticalSequenceTdr rdfs:label "Optical Sequence TDR"@en .
+_:c78c9f0187b12a408663372dd36c1e02 rdf:reifies <<( doc:FactsOpticalSequenceTdr rdfs:label "Optical Sequence TDR"@en )>> ;
+	prov:wasDerivedFrom doc:54966633a38a .
+doc:FactsSpectrumTdr a owl:Class .
+_:f4791e18a614a298e73ef682a4937296 rdf:reifies <<( doc:FactsSpectrumTdr rdf:type owl:Class )>> ;
+	prov:wasDerivedFrom doc:54966633a38a .
+doc:FactsneuralNetworks_1 rdfs:label "one-dimensional convolutional neural networks"@en .
+_:a1a43f5bc70b0dde67e37fea2a8267d7 rdf:reifies <<( doc:FactsneuralNetworks_1 rdfs:label "one-dimensional convolutional neural networks"@en )>> ;
+	prov:wasDerivedFrom doc:54966633a38a .
+doc:FactsTdrMethod cd:has_design_detail doc:Factsdetail1 .
+_:d3005b6ecdaa79624eba534b389db5ab rdf:reifies <<( doc:FactsTdrMethod cd:has_design_detail doc:Factsdetail1 )>> ;
+	prov:wasDerivedFrom doc:54966633a38a .
+doc:FactsneuralNetworks_1 a doc:FactsClassification .
+_:dbd4b28e6649ae52ec73b7dd4d63e64f rdf:reifies <<( doc:FactsneuralNetworks_1 rdf:type doc:FactsClassification )>> ;
+	prov:wasDerivedFrom doc:54966633a38a .
+doc:FactsTdrConfiguration a doc:FactsModelConfiguration .
+_:a6c1e204d234bee4fd9c9233d0f104ae rdf:reifies <<( doc:FactsTdrConfiguration rdf:type doc:FactsModelConfiguration )>> ;
+	prov:wasDerivedFrom doc:54966633a38a .
+doc:FactsTdrMethod rdfs:label "TDR"@en .
+_:b4115a171d27a7b6f2decaa87fc49392 rdf:reifies <<( doc:FactsTdrMethod rdfs:label "TDR"@en )>> ;
+	prov:wasDerivedFrom doc:54966633a38a .
+doc:FactsTdr rdfs:subClassOf doc:FactsTdr .
+_:d434e2b59174b10af938128cdfe4fca8 rdf:reifies <<( doc:FactsTdr rdfs:subClassOf doc:FactsTdr )>> ;
+	prov:wasDerivedFrom doc:54966633a38a .
+doc:FactsgeneticAlgorithms a doc:FactsRegression_1 .
+_:ee3bb93db95b9bbd4a973f96722fe217 rdf:reifies <<( doc:FactsgeneticAlgorithms rdf:type doc:FactsRegression_1 )>> ;
+	prov:wasDerivedFrom doc:54966633a38a .
+doc:FactsTdrMethod a doc:Predictive_Maintenance_Article .
+_:f26d10c32b4a1b36e8ee6e99a7026069 rdf:reifies <<( doc:FactsTdrMethod rdf:type doc:Predictive_Maintenance_Article )>> ;
+	prov:wasDerivedFrom doc:54966633a38a .
+doc:FactsTdrMethod cd:has_predictive_maintenance_function doc:Factsdiagnosis .
+_:b48c012247908db6edc226bbb80e41fd rdf:reifies <<( doc:FactsTdrMethod cd:has_predictive_maintenance_function doc:Factsdiagnosis )>> ;
+	prov:wasDerivedFrom doc:54966633a38a .
+doc:FactsdataDrivenMachineLearningFrameworks cd:has_predictive_maintenance_function doc:Factsdiagnosis .
+_:ee6c5b16c3a16048006d8bc6ae110df6 rdf:reifies <<( doc:FactsdataDrivenMachineLearningFrameworks cd:has_predictive_maintenance_function doc:Factsdiagnosis )>> ;
+	prov:wasDerivedFrom doc:54966633a38a .
+doc:FactsTdrConfiguration rdfs:label "TDR configuration"@en .
+_:bd29f4ed0f14e290d41b522699f243be rdf:reifies <<( doc:FactsTdrConfiguration rdfs:label "TDR configuration"@en )>> ;
+	prov:wasDerivedFrom doc:54966633a38a .
+doc:FactsrandomForests_1 a doc:FactsClassification .
+_:c320015b7a0a408176da2188c1746a1 rdf:reifies <<( doc:FactsrandomForests_1 rdf:type doc:FactsClassification )>> ;
+	prov:wasDerivedFrom doc:54966633a38a .
+doc:FactsrandomForests_1 rdfs:label "random forests"@en .
+_:a62eca047e7e4b1ea12457abf768d525 rdf:reifies <<( doc:FactsrandomForests_1 rdfs:label "random forests"@en )>> ;
+	prov:wasDerivedFrom doc:54966633a38a .
+doc:FactsexperimentallyAcquiredDatasets rdfs:label "synthetically generated datasets"@en .
+_:bbe124851eb04c6ab1d1345ee5048632 rdf:reifies <<( doc:FactsexperimentallyAcquiredDatasets rdfs:label "synthetically generated datasets"@en )>> ;
+	prov:wasDerivedFrom doc:54966633a38a .
+doc:FactsTdrMethod cd:describes_configuration doc:FactsTdrConfiguration .
+_:fe49ee8c3c555539b9864789efdc41b3 rdf:reifies <<( doc:FactsTdrMethod cd:describes_configuration doc:FactsTdrConfiguration )>> ;
+	prov:wasDerivedFrom doc:54966633a38a .
+doc:FactsTdrMethod a doc:FactsOneStepFutureStateForecast .
+_:cca89db6b5fa116487a342aa4d3c1953 rdf:reifies <<( doc:FactsTdrMethod rdf:type doc:FactsOneStepFutureStateForecast )>> ;
+	prov:wasDerivedFrom doc:54966633a38a .
+doc:FactssupportVectorMachines_1 a doc:FactsClassification .
+_:edf5fe5e3b699b59d782b5fdc5adcac3 rdf:reifies <<( doc:FactssupportVectorMachines_1 rdf:type doc:FactsClassification )>> ;
+	prov:wasDerivedFrom doc:54966633a38a .
+doc:FactsneuralNetworks_1 rdfs:label "Neural networks"@en .
+_:b8d5add6d514c367b00c27faa9adee5c rdf:reifies <<( doc:FactsneuralNetworks_1 rdfs:label "Neural networks"@en )>> ;
+	prov:wasDerivedFrom doc:54966633a38a .
+doc:FactsTdr rdfs:label "Time-Domain Reflectometry"@en .
+_:c1a3813f9529a46d8dcacb08449d1fac rdf:reifies <<( doc:FactsTdr rdfs:label "Time-Domain Reflectometry"@en )>> ;
+	prov:wasDerivedFrom doc:54966633a38a .
+doc:FactsdataDrivenMachineLearningFrameworks rdfs:label "data-driven machine learning frameworks"@en .
+_:c1c5ad9e985da4c0578c041fe818ed5a rdf:reifies <<( doc:FactsdataDrivenMachineLearningFrameworks rdfs:label "data-driven machine learning frameworks"@en )>> ;
+	prov:wasDerivedFrom doc:54966633a38a .
+doc:FactsSpectrumTdr rdfs:label "Multicarrier TDR"@en .
+_:cae55ec39d2eaa5d10b363419414cc8d rdf:reifies <<( doc:FactsSpectrumTdr rdfs:label "Multicarrier TDR"@en )>> ;
+	prov:wasDerivedFrom doc:54966633a38a .
+doc:FactsinverseProblemBasedIterativeAlgorithms cd:has_predictive_maintenance_function doc:Factsdiagnosis .
+_:a80e726a7282b3ebea582448d4215fad rdf:reifies <<( doc:FactsinverseProblemBasedIterativeAlgorithms cd:has_predictive_maintenance_function doc:Factsdiagnosis )>> ;
+	prov:wasDerivedFrom doc:54966633a38a .
+doc:Factsdetail1 rdfs:label "single access point"@en .
+_:c59e7ffe63821168643282d1e8897a5b rdf:reifies <<( doc:Factsdetail1 rdfs:label "single access point"@en )>> ;
+	prov:wasDerivedFrom doc:54966633a38a .
+doc:FactsTdr rdfs:label "Frequency-Domain Reflectometry"@en .
+_:e0ffd7d1a41a96009c2cee901077ee75 rdf:reifies <<( doc:FactsTdr rdfs:label "Frequency-Domain Reflectometry"@en )>> ;
+	prov:wasDerivedFrom doc:54966633a38a .
+doc:Factsdetail1 rdfs:label "physical access constraint"@en .
+_:dc28e9e5edfc1f1913f42673b5093ce0 rdf:reifies <<( doc:Factsdetail1 rdfs:label "physical access constraint"@en )>> ;
+	prov:wasDerivedFrom doc:54966633a38a .
+doc:FactsSpectrumTdr rdfs:label "Spectrum TDR"@en .
+_:a131a952486608e7b7be4529c4dd83b2 rdf:reifies <<( doc:FactsSpectrumTdr rdfs:label "Spectrum TDR"@en )>> ;
+	prov:wasDerivedFrom doc:54966633a38a .
+doc:FactswiringNetwork rdfs:label "wiring system"@en .
+_:edad432df29d674ba4027bcec73434ed rdf:reifies <<( doc:FactswiringNetwork rdfs:label "wiring system"@en )>> ;
+	prov:wasDerivedFrom doc:54966633a38a .
+doc:FactsparticleSwarmOptimization a doc:FactsRegression_1 .
+_:d6e7d1d7cd4fc69810f286250ebd04c0 rdf:reifies <<( doc:FactsparticleSwarmOptimization rdf:type doc:FactsRegression_1 )>> ;
+	prov:wasDerivedFrom doc:54966633a38a .
+doc:FactsexperimentallyAcquiredDatasets rdfs:label "experimentally acquired datasets"@en .
+_:bcac31359fb8ac9f2abc8971d03d0d01 rdf:reifies <<( doc:FactsexperimentallyAcquiredDatasets rdfs:label "experimentally acquired datasets"@en )>> ;
+	prov:wasDerivedFrom doc:54966633a38a .
+_:dffc8689ec7963cfdef8cc4bee0b708c prov:wasDerivedFrom doc:54966633a38a .
+doc:FactsdataDrivenMachineLearningFrameworks a doc:FactsClassification .
+_:ced848285d9cf282c26f43edb3ad04ed rdf:reifies <<( doc:FactsdataDrivenMachineLearningFrameworks rdf:type doc:FactsClassification )>> ;
+	prov:wasDerivedFrom doc:54966633a38a .
+doc:FactssupportVectorMachines_1 rdfs:label "Support Vector Machines"@en .
+_:f5bf32c3fb6e3629a1b367a7d33667f rdf:reifies <<( doc:FactssupportVectorMachines_1 rdfs:label "Support Vector Machines"@en )>> ;
+	prov:wasDerivedFrom doc:54966633a38a .

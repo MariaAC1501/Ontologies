@@ -1,0 +1,456 @@
+@prefix None: <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD/seed#> .
+@prefix cco: <http://www.ontologyrepository.com/CommonCoreOntologies/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doc: <https://growgraph.dev/doc/bb4a9d52e9cc/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix obo: <http://purl.obolibrary.org/obo/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix schema: <https://schema.org/> .
+@prefix schema1: <http://schema.org/> .
+doc:583bd7e18530 a prov:Entity , schema:text ;
+	prov:generatedAtTime "2026-07-11T06:31:27.458505Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+	schema:position 0 ;
+	schema:identifier "583bd7e18530" .
+doc:FactsPaper1_1 schema1:dateReceived "2025-09-19"^^<http://www.w3.org/2001/XMLSchema#date> .
+_:af6b070418e8d96e0cfb95409b5929e2 rdf:reifies <<( doc:FactsPaper1_1 schema1:dateReceived "2025-09-19"^^<http://www.w3.org/2001/XMLSchema#date> )>> ;
+	prov:wasDerivedFrom doc:583bd7e18530 .
+doc:FactsaccuracyValue cco:describes doc:FactsModule1_3 .
+_:e48ec2c8d34fc4718be2fb472f933202 rdf:reifies <<( doc:FactsaccuracyValue cco:describes doc:FactsModule1_3 )>> ;
+	prov:wasDerivedFrom doc:583bd7e18530 .
+doc:FactsAuthorDiana a schema1:Person .
+_:f5f323a235a5e85fabc6325f01c4e2d7 rdf:reifies <<( doc:FactsAuthorDiana rdf:type schema1:Person )>> ;
+	prov:wasDerivedFrom doc:583bd7e18530 .
+doc:FactsAuthorDiana schema1:givenName "Diana" .
+_:e06b63dee43d8793edf0788d81071dac rdf:reifies <<( doc:FactsAuthorDiana schema1:givenName "Diana" )>> ;
+	prov:wasDerivedFrom doc:583bd7e18530 .
+doc:FactsPaper1_1 schema1:author doc:FactsAuthorDiana .
+_:a69f75e2e533a61f7f4a1fe3d3443536 rdf:reifies <<( doc:FactsPaper1_1 schema1:author doc:FactsAuthorDiana )>> ;
+	prov:wasDerivedFrom doc:583bd7e18530 .
+doc:FactsPaper1_1 schema1:dateAccepted "2026-01-25"^^<http://www.w3.org/2001/XMLSchema#date> .
+_:b83f520cd83b4eb74bb2cf19a21c6975 rdf:reifies <<( doc:FactsPaper1_1 schema1:dateAccepted "2026-01-25"^^<http://www.w3.org/2001/XMLSchema#date> )>> ;
+	prov:wasDerivedFrom doc:583bd7e18530 .
+doc:FactsaccuracyValue None:has_text_value 33.9 .
+_:feec89ee1e20025d4307392adc766f11 rdf:reifies <<( doc:FactsaccuracyValue None:has_text_value 33.9 )>> ;
+	prov:wasDerivedFrom doc:583bd7e18530 .
+doc:FactsModule1_3 None:has_predictive_maintenance_function doc:FactsCavitationDetection .
+_:e3a414e121bd5bc1c758614a538e6933 rdf:reifies <<( doc:FactsModule1_3 None:has_predictive_maintenance_function doc:FactsCavitationDetection )>> ;
+	prov:wasDerivedFrom doc:583bd7e18530 .
+doc:FactsAuthorDiana schema1:familyName "Tejera-BerenguÃ©" .
+_:c1b1d0066fa2001ba0450adf845c84bb rdf:reifies <<( doc:FactsAuthorDiana schema1:familyName "Tejera-BerenguÃ©" )>> ;
+	prov:wasDerivedFrom doc:583bd7e18530 .
+doc:FactsHydraulicMachinery a None:Maintainable_item .
+_:f81f477c1a9513d1f26658c2b7c0fce6 rdf:reifies <<( doc:FactsHydraulicMachinery rdf:type None:Maintainable_item )>> ;
+	prov:wasDerivedFrom doc:583bd7e18530 .
+doc:FactsPaper1_1 None:has_publication_year doc:FactsPubYear2026_6 .
+_:a233baafb8ab880615d5ace6600981e3 rdf:reifies <<( doc:FactsPaper1_1 None:has_publication_year doc:FactsPubYear2026_6 )>> ;
+	prov:wasDerivedFrom doc:583bd7e18530 .
+doc:FactsYamNet a cco:Algorithm .
+_:ff8e2b36276cf95d022f5696616c921d rdf:reifies <<( doc:FactsYamNet rdf:type cco:Algorithm )>> ;
+	prov:wasDerivedFrom doc:583bd7e18530 .
+doc:FactsCavitationDetection a None:Fault_detection .
+_:ee331b7f44c55d9afa1643714d872689 rdf:reifies <<( doc:FactsCavitationDetection rdf:type None:Fault_detection )>> ;
+	prov:wasDerivedFrom doc:583bd7e18530 .
+doc:FactsDatabase1 a cco:Database .
+_:a363eb85f4c21d0c52e403331d0edd9e rdf:reifies <<( doc:FactsDatabase1 rdf:type cco:Database )>> ;
+	prov:wasDerivedFrom doc:583bd7e18530 .
+doc:FactsYamNet cco:describes doc:FactsSbls .
+_:af061c355a18eabea783da94cf3d1a0a rdf:reifies <<( doc:FactsYamNet cco:describes doc:FactsSbls )>> ;
+	prov:wasDerivedFrom doc:583bd7e18530 .
+doc:FactsAuthorDiana schema1:familyName "Zhu-Zhou" .
+_:db57528c3e2fdba974ef06891b72895f rdf:reifies <<( doc:FactsAuthorDiana schema1:familyName "Zhu-Zhou" )>> ;
+	prov:wasDerivedFrom doc:583bd7e18530 .
+doc:FactsDatabase1 cco:is_about doc:FactsHydraulicMachinery .
+_:cf3b080e2c4e40298e8c1eae02baedb5 rdf:reifies <<( doc:FactsDatabase1 cco:is_about doc:FactsHydraulicMachinery )>> ;
+	prov:wasDerivedFrom doc:583bd7e18530 .
+doc:FactsSbls a None:Design_detail .
+_:c5df2de64c3da935e869c36e431f566c rdf:reifies <<( doc:FactsSbls rdf:type None:Design_detail )>> ;
+	prov:wasDerivedFrom doc:583bd7e18530 .
+doc:FactsYamNet None:has_text_value "trimmed YAMNet model with integrated beamforming layers" .
+_:e1878ebc2fb5986466acbf5073c58909 rdf:reifies <<( doc:FactsYamNet None:has_text_value "trimmed YAMNet model with integrated beamforming layers" )>> ;
+	prov:wasDerivedFrom doc:583bd7e18530 .
+doc:FactsEqualContrib1 a cco:InformationContentEntity .
+_:d6296153a4728d1112c183838ad6d0a9 rdf:reifies <<( doc:FactsEqualContrib1 rdf:type cco:InformationContentEntity )>> ;
+	prov:wasDerivedFrom doc:583bd7e18530 .
+doc:FactsPaper1_1 cco:is_about doc:FactsDatabase1 .
+_:df3586225c03e6efb7b899b3a4be4a3f rdf:reifies <<( doc:FactsPaper1_1 cco:is_about doc:FactsDatabase1 )>> ;
+	prov:wasDerivedFrom doc:583bd7e18530 .
+doc:FactsAuthorDiana schema1:familyName "Gil-Pita" .
+_:a5d2de329af0f30841394effafc9608 rdf:reifies <<( doc:FactsAuthorDiana schema1:familyName "Gil-Pita" )>> ;
+	prov:wasDerivedFrom doc:583bd7e18530 .
+doc:FactsModule1_3 None:has_design_detail doc:FactsSbls .
+_:e2df3233a64d2cbda7f54a50a0a5671d rdf:reifies <<( doc:FactsModule1_3 None:has_design_detail doc:FactsSbls )>> ;
+	prov:wasDerivedFrom doc:583bd7e18530 .
+doc:FactsAuthorDiana schema1:givenName "Roberto" .
+_:eff48b40d7ef8e73a5a859a52708b2e1 rdf:reifies <<( doc:FactsAuthorDiana schema1:givenName "Roberto" )>> ;
+	prov:wasDerivedFrom doc:583bd7e18530 .
+doc:FactsAuthorDiana schema1:familyName "Rosa-Zurera" .
+_:af5ecf4d060878f6e06624c83b975c39 rdf:reifies <<( doc:FactsAuthorDiana schema1:familyName "Rosa-Zurera" )>> ;
+	prov:wasDerivedFrom doc:583bd7e18530 .
+doc:FactsModelConfig1_5 None:describes_configuration doc:FactsYamNet .
+_:af5ccd9522ae6f983cbeaa040672115b rdf:reifies <<( doc:FactsModelConfig1_5 None:describes_configuration doc:FactsYamNet )>> ;
+	prov:wasDerivedFrom doc:583bd7e18530 .
+doc:FactsModule1_3 None:has_synchronization doc:FactsOnlineSyncNotExplicit .
+_:f2250e212cb574651addd8497a207f5 rdf:reifies <<( doc:FactsModule1_3 None:has_synchronization doc:FactsOnlineSyncNotExplicit )>> ;
+	prov:wasDerivedFrom doc:583bd7e18530 .
+doc:FactsDatabase1 None:has_text_value "real-world cavitation noise database recorded in an operational hydraulic system" .
+_:a1de62f99ff1dfb6fa089628ccb5be5b rdf:reifies <<( doc:FactsDatabase1 None:has_text_value "real-world cavitation noise database recorded in an operational hydraulic system" )>> ;
+	prov:wasDerivedFrom doc:583bd7e18530 .
+doc:FactsModule1_3 a None:Predictive_maintenance_system_module .
+_:cd783d19a144fd046518b2313c3765bb rdf:reifies <<( doc:FactsModule1_3 rdf:type None:Predictive_maintenance_system_module )>> ;
+	prov:wasDerivedFrom doc:583bd7e18530 .
+doc:FactsEqualContrib1 None:has_text_value "Fangfang Zhu-Zhou, Diana Tejera-BerenguÃ© and Gonzalo Corral-GarcÃ­a contributed equally to this work." .
+_:e1872e9908ffeb48c232e42ed57b2a7f rdf:reifies <<( doc:FactsEqualContrib1 None:has_text_value "Fangfang Zhu-Zhou, Diana Tejera-BerenguÃ© and Gonzalo Corral-GarcÃ­a contributed equally to this work." )>> ;
+	prov:wasDerivedFrom doc:583bd7e18530 .
+doc:FactsOnlineSyncNotExplicit a None:Module_synchronization .
+_:a77ad35856709016188e3e1899933161 rdf:reifies <<( doc:FactsOnlineSyncNotExplicit rdf:type None:Module_synchronization )>> ;
+	prov:wasDerivedFrom doc:583bd7e18530 .
+doc:FactsPaper1_1 None:has_title doc:FactsTitle1_4 .
+_:a56320b85e75195b557bf4e0db66f30a rdf:reifies <<( doc:FactsPaper1_1 None:has_title doc:FactsTitle1_4 )>> ;
+	prov:wasDerivedFrom doc:583bd7e18530 .
+doc:FactsAuthorDiana schema1:familyName "Corral-GarcÃ­a" .
+_:f2029ada27dd44f7a66b354440721ef4 rdf:reifies <<( doc:FactsAuthorDiana schema1:familyName "Corral-GarcÃ­a" )>> ;
+	prov:wasDerivedFrom doc:583bd7e18530 .
+doc:FactsYamNet a None:Predictive_maintenance_model .
+_:e34f9bfe34c3de3c447c30486a816def rdf:reifies <<( doc:FactsYamNet rdf:type None:Predictive_maintenance_model )>> ;
+	prov:wasDerivedFrom doc:583bd7e18530 .
+doc:FactsBaselineSingleMic None:has_text_value "baseline single-microphone setup without beamforming" .
+_:fba51e364929bd9d49500e5f77022a93 rdf:reifies <<( doc:FactsBaselineSingleMic None:has_text_value "baseline single-microphone setup without beamforming" )>> ;
+	prov:wasDerivedFrom doc:583bd7e18530 .
+doc:FactsAuthorDiana schema1:givenName "Manuel" .
+_:b600b7a63a0c9da47c539cdcf5d4d32e rdf:reifies <<( doc:FactsAuthorDiana schema1:givenName "Manuel" )>> ;
+	prov:wasDerivedFrom doc:583bd7e18530 .
+doc:FactsaccuracyValue a None:Performance_value .
+_:c4d23d5e91315fadb2635f6927f00a71 rdf:reifies <<( doc:FactsaccuracyValue rdf:type None:Performance_value )>> ;
+	prov:wasDerivedFrom doc:583bd7e18530 .
+doc:FactsAuthorDiana schema1:familyName "Utrilla-Manso" .
+_:b0a0b4383f430f6e2dfafe5890e1d4d8 rdf:reifies <<( doc:FactsAuthorDiana schema1:familyName "Utrilla-Manso" )>> ;
+	prov:wasDerivedFrom doc:583bd7e18530 .
+doc:FactsBaselineSingleMic a None:Design_detail .
+_:fad9279602560be59e7314a918ccd181 rdf:reifies <<( doc:FactsBaselineSingleMic rdf:type None:Design_detail )>> ;
+	prov:wasDerivedFrom doc:583bd7e18530 .
+doc:FactsTitle1_4 a None:Article_title .
+_:d30d5a8d95a60856bb411d6698d5e0f5 rdf:reifies <<( doc:FactsTitle1_4 rdf:type None:Article_title )>> ;
+	prov:wasDerivedFrom doc:583bd7e18530 .
+doc:FactsOnlineSyncNotExplicit None:has_text_value "not explicitly stated (online/off-line synchronization unspecified)" .
+_:da743f6271e32f1cd029b1649c385852 rdf:reifies <<( doc:FactsOnlineSyncNotExplicit None:has_text_value "not explicitly stated (online/off-line synchronization unspecified)" )>> ;
+	prov:wasDerivedFrom doc:583bd7e18530 .
+doc:FactsTitle1_4 None:has_text_value "A Novel Generalized Beamforming Layer Set for Deep Learning Based Acoustic Cavitation Detection" .
+_:da5565f64cd7c95c29ce4d84a8a9a176 rdf:reifies <<( doc:FactsTitle1_4 None:has_text_value "A Novel Generalized Beamforming Layer Set for Deep Learning Based Acoustic Cavitation Detection" )>> ;
+	prov:wasDerivedFrom doc:583bd7e18530 .
+doc:FactsPaper1_1 schema1:dateModified "2026-01-09"^^<http://www.w3.org/2001/XMLSchema#date> .
+_:bdd2909440bd85ccb6ac48f21d33863a rdf:reifies <<( doc:FactsPaper1_1 schema1:dateModified "2026-01-09"^^<http://www.w3.org/2001/XMLSchema#date> )>> ;
+	prov:wasDerivedFrom doc:583bd7e18530 .
+doc:FactsSbls None:has_text_value "Standard Beamforming Layer Set: embeds domain knowledge into spatial filtering to enhance extraction of cavitation-related features." .
+_:ea5dd15f5219989ae7b5856f9ec8a861 rdf:reifies <<( doc:FactsSbls None:has_text_value "Standard Beamforming Layer Set: embeds domain knowledge into spatial filtering to enhance extraction of cavitation-related features." )>> ;
+	prov:wasDerivedFrom doc:583bd7e18530 .
+doc:FactsPaper1_1 a None:Predictive_Maintenance_Article .
+_:fe970ffebdcf494c37b8584a7e6b4b4 rdf:reifies <<( doc:FactsPaper1_1 rdf:type None:Predictive_Maintenance_Article )>> ;
+	prov:wasDerivedFrom doc:583bd7e18530 .
+doc:FactsEqualContrib1 cco:is_about doc:FactsPaper1_1 .
+_:de7994fa08eab0af64b5ef03aec32635 rdf:reifies <<( doc:FactsEqualContrib1 cco:is_about doc:FactsPaper1_1 )>> ;
+	prov:wasDerivedFrom doc:583bd7e18530 .
+doc:FactsPubYear2026_6 None:has_interger_value 2026 .
+_:d2802ad3d34a874979613dca5dde8076 rdf:reifies <<( doc:FactsPubYear2026_6 None:has_interger_value 2026 )>> ;
+	prov:wasDerivedFrom doc:583bd7e18530 .
+doc:FactsAuthorDiana schema1:givenName "Fangfang" .
+_:a9589e12ee8b09d9dc6b2d69a41cce70 rdf:reifies <<( doc:FactsAuthorDiana schema1:givenName "Fangfang" )>> ;
+	prov:wasDerivedFrom doc:583bd7e18530 .
+doc:FactsAuthorDiana schema1:givenName "Gonzalo" .
+_:c40d9725ab988e12ba464d05201ab19c rdf:reifies <<( doc:FactsAuthorDiana schema1:givenName "Gonzalo" )>> ;
+	prov:wasDerivedFrom doc:583bd7e18530 .
+doc:FactsModelConfig1_5 a None:Model_configuration .
+_:bb8168b9a38e4276e07996f136597609 rdf:reifies <<( doc:FactsModelConfig1_5 rdf:type None:Model_configuration )>> ;
+	prov:wasDerivedFrom doc:583bd7e18530 .
+doc:FactsSbls None:has_text_value "Generalized Beamforming Layer Set: extends conventional beamforming by incorporating multiple summation elements to increase noise robustness and detection reliability in complex industrial environments." .
+_:dec399e81f40f9fffd02512f78a7d9cb rdf:reifies <<( doc:FactsSbls None:has_text_value "Generalized Beamforming Layer Set: extends conventional beamforming by incorporating multiple summation elements to increase noise robustness and detection reliability in complex industrial environments." )>> ;
+	prov:wasDerivedFrom doc:583bd7e18530 .
+doc:FactsHydraulicMachinery None:has_text_value "hydraulic machinery" .
+_:f923e487b7e09e3671fe352138677c7b rdf:reifies <<( doc:FactsHydraulicMachinery None:has_text_value "hydraulic machinery" )>> ;
+	prov:wasDerivedFrom doc:583bd7e18530 .
+doc:FactsPubYear2026_6 a None:Publication_year .
+_:e6023ecca61dba97b90d987c0aa36774 rdf:reifies <<( doc:FactsPubYear2026_6 rdf:type None:Publication_year )>> ;
+	prov:wasDerivedFrom doc:583bd7e18530 .
+doc:43acebeb76ff a prov:Entity , schema:text ;
+	prov:generatedAtTime "2026-07-11T06:31:27.462503Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+	schema:position 1 ;
+	schema:identifier "43acebeb76ff" .
+_:c5df2de64c3da935e869c36e431f566c prov:wasDerivedFrom doc:43acebeb76ff .
+doc:FactscavitationDetection_1 a None:Fault_detection .
+_:cf00402dd6630589ab62c6947df54df4 rdf:reifies <<( doc:FactscavitationDetection_1 rdf:type None:Fault_detection )>> ;
+	prov:wasDerivedFrom doc:43acebeb76ff .
+doc:FactsYamNet doc:factstrainedOn doc:FactsAudioSet .
+_:c2c684b1196e36a5e401374759678c rdf:reifies <<( doc:FactsYamNet doc:factstrainedOn doc:FactsAudioSet )>> ;
+	prov:wasDerivedFrom doc:43acebeb76ff .
+doc:FactsEqualContrib1 None:has_text_value "pre-trained networks offer trade-offs between computational cost and detection accuracy; complex models may be impractical for real-time embedded monitoring" .
+_:ec51c601b5952a7d20f5909a7153eb79 rdf:reifies <<( doc:FactsEqualContrib1 None:has_text_value "pre-trained networks offer trade-offs between computational cost and detection accuracy; complex models may be impractical for real-time embedded monitoring" )>> ;
+	prov:wasDerivedFrom doc:43acebeb76ff .
+doc:FactsAudioSet a schema1:Dataset .
+_:ad23efd5566c9fece9f0f94ddb405b84 rdf:reifies <<( doc:FactsAudioSet rdf:type schema1:Dataset )>> ;
+	prov:wasDerivedFrom doc:43acebeb76ff .
+doc:FactsMobileNetV1 cco:describes "MobileNetV1 CNN architecture used as backbone" .
+_:bfe8a804ba5fad4fa335d1ad5441a994 rdf:reifies <<( doc:FactsMobileNetV1 cco:describes "MobileNetV1 CNN architecture used as backbone" )>> ;
+	prov:wasDerivedFrom doc:43acebeb76ff .
+doc:FactstrimmingApproach None:describes_configuration doc:FactsYamNet .
+_:d5ee234a77780ce9e042a1625434bffc rdf:reifies <<( doc:FactstrimmingApproach None:describes_configuration doc:FactsYamNet )>> ;
+	prov:wasDerivedFrom doc:43acebeb76ff .
+doc:FactsYamNet cco:is_about doc:FactscavitationDetection_1 .
+_:dcb7359de7c7157e69d3515ec051be98 rdf:reifies <<( doc:FactsYamNet cco:is_about doc:FactscavitationDetection_1 )>> ;
+	prov:wasDerivedFrom doc:43acebeb76ff .
+_:cd783d19a144fd046518b2313c3765bb prov:wasDerivedFrom doc:43acebeb76ff .
+doc:FactscavitationDetection_1 None:has_text_value "detection of cavitation acoustic events" .
+_:f22dfde574cd9c0af2cbb578b4acbbd8 rdf:reifies <<( doc:FactscavitationDetection_1 None:has_text_value "detection of cavitation acoustic events" )>> ;
+	prov:wasDerivedFrom doc:43acebeb76ff .
+doc:FactsSbls None:has_text_value "suitable for real-time applications in resource-constrained embedded systems" .
+_:d3acf5a514e26b8bf2054fec3d586598 rdf:reifies <<( doc:FactsSbls None:has_text_value "suitable for real-time applications in resource-constrained embedded systems" )>> ;
+	prov:wasDerivedFrom doc:43acebeb76ff .
+doc:FactsSbls obo:BFO_0000051 doc:FactsSbls .
+_:a080667534652c9aeda2ae0437f0470a rdf:reifies <<( doc:FactsSbls obo:BFO_0000051 doc:FactsSbls )>> ;
+	prov:wasDerivedFrom doc:43acebeb76ff .
+doc:factstrainedOn a owl:ObjectProperty .
+_:e6701eac60173e325b4bb443400f60 rdf:reifies <<( doc:factstrainedOn rdf:type owl:ObjectProperty )>> ;
+	prov:wasDerivedFrom doc:43acebeb76ff .
+doc:factsperformanceEvaluation a None:Performance_indicator .
+_:f9ba58ce3de8d570c3991175012d9a85 rdf:reifies <<( doc:factsperformanceEvaluation rdf:type None:Performance_indicator )>> ;
+	prov:wasDerivedFrom doc:43acebeb76ff .
+doc:FactsOnlineSyncNotExplicit None:has_text_value "online" .
+_:d7df1ca3c27506ebcd0e1addaf4f3606 rdf:reifies <<( doc:FactsOnlineSyncNotExplicit None:has_text_value "online" )>> ;
+	prov:wasDerivedFrom doc:43acebeb76ff .
+doc:Factsconference_abstract_17 a None:Predictive_Maintenance_Article .
+_:e5c1725defd7e76183f802a92eb7abb8 rdf:reifies <<( doc:Factsconference_abstract_17 rdf:type None:Predictive_Maintenance_Article )>> ;
+	prov:wasDerivedFrom doc:43acebeb76ff .
+doc:FactstrimmingApproach None:has_text_value "controlled trimming selecting first L layers of YAMNet to reduce computational complexity and optimize detection performance" .
+_:b26b5c48a0c51bab9c343cbe68b75e11 rdf:reifies <<( doc:FactstrimmingApproach None:has_text_value "controlled trimming selecting first L layers of YAMNet to reduce computational complexity and optimize detection performance" )>> ;
+	prov:wasDerivedFrom doc:43acebeb76ff .
+doc:FactscavitationSoundDatabase dcterms:description "real-world cavitation sound database used for evaluation" .
+_:d0605c32e43967dd18997572a0d50e0c rdf:reifies <<( doc:FactscavitationSoundDatabase dcterms:description "real-world cavitation sound database used for evaluation" )>> ;
+	prov:wasDerivedFrom doc:43acebeb76ff .
+doc:FactsYamNet doc:factstrainedOn doc:FactsMobileNetV1 .
+_:eb2c51c83f9532ec4614be24e31c63f rdf:reifies <<( doc:FactsYamNet doc:factstrainedOn doc:FactsMobileNetV1 )>> ;
+	prov:wasDerivedFrom doc:43acebeb76ff .
+cco:describes doc:factsperformanceEvaluation doc:FactsYamNet .
+_:c2d73f016c417541f63c9f20d98a54a9 rdf:reifies <<( cco:describes doc:factsperformanceEvaluation doc:FactsYamNet )>> ;
+	prov:wasDerivedFrom doc:43acebeb76ff .
+doc:FactsYamNet None:has_text_value "truncated YAMNet using first L layers" .
+_:ecb4ad15f829e7f3885952452902ce24 rdf:reifies <<( doc:FactsYamNet None:has_text_value "truncated YAMNet using first L layers" )>> ;
+	prov:wasDerivedFrom doc:43acebeb76ff .
+doc:FactsSbls None:has_text_value "Standard Beamforming Layer Set (SBLS): beamforming layers designed to integrate with deep learning architectures" .
+_:d9d77321c8cf160d03e37a577870aa2f rdf:reifies <<( doc:FactsSbls None:has_text_value "Standard Beamforming Layer Set (SBLS): beamforming layers designed to integrate with deep learning architectures" )>> ;
+	prov:wasDerivedFrom doc:43acebeb76ff .
+doc:Factsconference_abstract_17 None:has_text_value "preliminary conference abstract presenting truncated YAMNet results on cavitation detection (reference [17])" .
+_:d11067c562fc2cd6fbcb6ad2eab4ba4a rdf:reifies <<( doc:Factsconference_abstract_17 None:has_text_value "preliminary conference abstract presenting truncated YAMNet results on cavitation detection (reference [17])" )>> ;
+	prov:wasDerivedFrom doc:43acebeb76ff .
+doc:Factsconference_abstract_17 None:has_identifier "ref17" .
+_:c141c75c5edd39e17a4519ad1051085 rdf:reifies <<( doc:Factsconference_abstract_17 None:has_identifier "ref17" )>> ;
+	prov:wasDerivedFrom doc:43acebeb76ff .
+doc:FactsYamNet cco:describes "YAMNet (Yet Another Mobile-net) MobileNetV1-based architecture trained on AudioSet; efficient for sound classification and suitable for real-time embedded systems" .
+_:fb1e2887f47854382813bb3b9cfe97de rdf:reifies <<( doc:FactsYamNet cco:describes "YAMNet (Yet Another Mobile-net) MobileNetV1-based architecture trained on AudioSet; efficient for sound classification and suitable for real-time embedded systems" )>> ;
+	prov:wasDerivedFrom doc:43acebeb76ff .
+doc:FactsModule1_3 obo:BFO_0000051 doc:FactsSbls .
+_:ba4bb4382f65a0c27486c5f0ec85dd3d rdf:reifies <<( doc:FactsModule1_3 obo:BFO_0000051 doc:FactsSbls )>> ;
+	prov:wasDerivedFrom doc:43acebeb76ff .
+doc:FactsSbls None:has_text_value "Generalized Beamforming Layer Set (GBLS): extends SBLS by incorporating trainable summation elements to improve detection reliability in noisy environments" .
+_:e00f5baccff0bd63a4f0aebc5071202b rdf:reifies <<( doc:FactsSbls None:has_text_value "Generalized Beamforming Layer Set (GBLS): extends SBLS by incorporating trainable summation elements to improve detection reliability in noisy environments" )>> ;
+	prov:wasDerivedFrom doc:43acebeb76ff .
+doc:FactsMobileNetV1 a cco:Algorithm .
+_:a890d4b238f0ec2daec35ae8d349e90c rdf:reifies <<( doc:FactsMobileNetV1 rdf:type cco:Algorithm )>> ;
+	prov:wasDerivedFrom doc:43acebeb76ff .
+_:f2250e212cb574651addd8497a207f5 prov:wasDerivedFrom doc:43acebeb76ff .
+doc:FactstrimmingApproach a None:Model_configuration .
+_:cefeb27093a58eaff6d4ff5742b93eb2 rdf:reifies <<( doc:FactstrimmingApproach rdf:type None:Model_configuration )>> ;
+	prov:wasDerivedFrom doc:43acebeb76ff .
+doc:FactsaccuracyValue None:has_text_value "detection accuracy (reported as varying across configurations)" .
+_:d54a34a60e6f9c6c98cfee7d2514ad3b rdf:reifies <<( doc:FactsaccuracyValue None:has_text_value "detection accuracy (reported as varying across configurations)" )>> ;
+	prov:wasDerivedFrom doc:43acebeb76ff .
+_:e34f9bfe34c3de3c447c30486a816def prov:wasDerivedFrom doc:43acebeb76ff .
+_:e2df3233a64d2cbda7f54a50a0a5671d prov:wasDerivedFrom doc:43acebeb76ff .
+cco:describes doc:factsperformanceEvaluation doc:FactsModule1_3 .
+_:eb9863f633fb677242296bb400e4327c rdf:reifies <<( cco:describes doc:factsperformanceEvaluation doc:FactsModule1_3 )>> ;
+	prov:wasDerivedFrom doc:43acebeb76ff .
+doc:FactsAudioSet dcterms:description "AudioSet dataset used to train YAMNet" .
+_:beae908cbbbdf1a79398f49d787333a2 rdf:reifies <<( doc:FactsAudioSet dcterms:description "AudioSet dataset used to train YAMNet" )>> ;
+	prov:wasDerivedFrom doc:43acebeb76ff .
+doc:factsperformanceEvaluation obo:RO_0010002 doc:FactsaccuracyValue .
+_:e155ce5480222aac631fa400439689bb rdf:reifies <<( doc:factsperformanceEvaluation obo:RO_0010002 doc:FactsaccuracyValue )>> ;
+	prov:wasDerivedFrom doc:43acebeb76ff .
+doc:FactsSbls None:has_text_value "trainable summation elements that dynamically adjust to acoustic conditions" .
+_:e3e28d044cf91ffb4f34beb85eb95e4d rdf:reifies <<( doc:FactsSbls None:has_text_value "trainable summation elements that dynamically adjust to acoustic conditions" )>> ;
+	prov:wasDerivedFrom doc:43acebeb76ff .
+doc:FactscavitationSoundDatabase a schema1:Dataset .
+_:f7cc7962957b8872828ad003a8e58959 rdf:reifies <<( doc:FactscavitationSoundDatabase rdf:type schema1:Dataset )>> ;
+	prov:wasDerivedFrom doc:43acebeb76ff .
+doc:factsperformanceEvaluation None:has_text_value "evaluation of cavitation detection accuracy across different model configurations and beamforming techniques using a real-world cavitation sound database" .
+_:fe38c681d952e3cb41e2f72bb7d344f9 rdf:reifies <<( doc:factsperformanceEvaluation None:has_text_value "evaluation of cavitation detection accuracy across different model configurations and beamforming techniques using a real-world cavitation sound database" )>> ;
+	prov:wasDerivedFrom doc:43acebeb76ff .
+_:c4d23d5e91315fadb2635f6927f00a71 prov:wasDerivedFrom doc:43acebeb76ff .
+doc:factsperformanceEvaluation obo:RO_0010002 doc:FactscavitationSoundDatabase .
+_:ed7a0690e6760215ecefcafaa6645d06 rdf:reifies <<( doc:factsperformanceEvaluation obo:RO_0010002 doc:FactscavitationSoundDatabase )>> ;
+	prov:wasDerivedFrom doc:43acebeb76ff .
+_:a77ad35856709016188e3e1899933161 prov:wasDerivedFrom doc:43acebeb76ff .
+doc:FactsYamNet doc:factstrainedOn doc:FactsModule1_3 .
+_:ad9013eebfef4c7751eaad14877c6084 rdf:reifies <<( doc:FactsYamNet doc:factstrainedOn doc:FactsModule1_3 )>> ;
+	prov:wasDerivedFrom doc:43acebeb76ff .
+doc:FactsEqualContrib1 a cco:DescriptiveInformationContentEntity .
+_:f9b346e3157132b55b472278b9393dd7 rdf:reifies <<( doc:FactsEqualContrib1 rdf:type cco:DescriptiveInformationContentEntity )>> ;
+	prov:wasDerivedFrom doc:43acebeb76ff .
+doc:3cbdb05fa1e8 a prov:Entity , schema:text ;
+	prov:generatedAtTime "2026-07-11T06:31:27.46461Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+	schema:position 2 ;
+	schema:identifier "3cbdb05fa1e8" .
+doc:FactsBeamforming rdfs:label "Beamforming"@en .
+_:e71bbbdf6d872fc24cac7f4dd5230760 rdf:reifies <<( doc:FactsBeamforming rdfs:label "Beamforming"@en )>> ;
+	prov:wasDerivedFrom doc:3cbdb05fa1e8 .
+doc:FactsDesignDetailLayers None:has_text_value "Output layer adapted to produce a single scalar for binary cavitation detection; thresholding balances misdetection and false alarm rates" .
+_:e6250e16469d28c0f5225ff3a7e8144b rdf:reifies <<( doc:FactsDesignDetailLayers None:has_text_value "Output layer adapted to produce a single scalar for binary cavitation detection; thresholding balances misdetection and false alarm rates" )>> ;
+	prov:wasDerivedFrom doc:3cbdb05fa1e8 .
+_:d30d5a8d95a60856bb411d6698d5e0f5 prov:wasDerivedFrom doc:3cbdb05fa1e8 .
+doc:FactsBeamforming rdfs:comment "Beamforming strategies employed to improve acoustic cavitation detection accuracy" .
+_:a09aa3a22b7c269bb96fe3bf009d7b6c rdf:reifies <<( doc:FactsBeamforming rdfs:comment "Beamforming strategies employed to improve acoustic cavitation detection accuracy" )>> ;
+	prov:wasDerivedFrom doc:3cbdb05fa1e8 .
+_:a56320b85e75195b557bf4e0db66f30a prov:wasDerivedFrom doc:3cbdb05fa1e8 .
+doc:FactsStftMagnitude rdfs:label "STFT magnitude spectrum"@en .
+_:cd15ac714a9ff7ac99f112fcfaf834be rdf:reifies <<( doc:FactsStftMagnitude rdfs:label "STFT magnitude spectrum"@en )>> ;
+	prov:wasDerivedFrom doc:3cbdb05fa1e8 .
+doc:FactsDesignDetailLayers a None:Design_detail .
+_:fb35294279a66e6b914d29bd8f49e557 rdf:reifies <<( doc:FactsDesignDetailLayers rdf:type None:Design_detail )>> ;
+	prov:wasDerivedFrom doc:3cbdb05fa1e8 .
+doc:FactsDesignDetailLayers None:has_interger_value 85 .
+_:c59150afd5ab98dbf7939be703a9499e rdf:reifies <<( doc:FactsDesignDetailLayers None:has_interger_value 85 )>> ;
+	prov:wasDerivedFrom doc:3cbdb05fa1e8 .
+doc:FactsTurbineBlade rdfs:label "turbine blade"@en .
+_:ac34efb3e8b52a6dbe3b4a74ca85182a rdf:reifies <<( doc:FactsTurbineBlade rdfs:label "turbine blade"@en )>> ;
+	prov:wasDerivedFrom doc:3cbdb05fa1e8 .
+doc:FactsFrameLength schema1:value 0.96 .
+_:b4caa7a549e25cc9877e3b865696d999 rdf:reifies <<( doc:FactsFrameLength schema1:value 0.96 )>> ;
+	prov:wasDerivedFrom doc:3cbdb05fa1e8 .
+doc:FactsCavitationErosion a obo:BFO_0000019 .
+_:fef2e38dd6fde793d79cd976e30f5459 rdf:reifies <<( doc:FactsCavitationErosion rdf:type obo:BFO_0000019 )>> ;
+	prov:wasDerivedFrom doc:3cbdb05fa1e8 .
+doc:FactsTurbineBlade a None:Maintainable_item .
+_:bfa073cfdb926fbb1cfcccc7ac4aaa7b rdf:reifies <<( doc:FactsTurbineBlade rdf:type None:Maintainable_item )>> ;
+	prov:wasDerivedFrom doc:3cbdb05fa1e8 .
+doc:FactsCavitationErosion rdfs:label "cavitation erosion"@en .
+_:b94f01f8287399aff9c9f2f955aa2f53 rdf:reifies <<( doc:FactsCavitationErosion rdfs:label "cavitation erosion"@en )>> ;
+	prov:wasDerivedFrom doc:3cbdb05fa1e8 .
+doc:FactsPumpImpeller a None:Maintainable_item .
+_:c007cdbcde550ceb084191c2c0acf953 rdf:reifies <<( doc:FactsPumpImpeller rdf:type None:Maintainable_item )>> ;
+	prov:wasDerivedFrom doc:3cbdb05fa1e8 .
+doc:FactsDesignDetailLayers rdfs:label "YAMNet preprocessing pipeline"@en .
+_:c453764f879d5e9c400b4791c8f903fd rdf:reifies <<( doc:FactsDesignDetailLayers rdfs:label "YAMNet preprocessing pipeline"@en )>> ;
+	prov:wasDerivedFrom doc:3cbdb05fa1e8 .
+doc:FactsYamNet a None:Predictive_maintenance_system_module .
+_:d9d92066e52321ed658d6d2da5887fac rdf:reifies <<( doc:FactsYamNet rdf:type None:Predictive_maintenance_system_module )>> ;
+	prov:wasDerivedFrom doc:3cbdb05fa1e8 .
+doc:FactsCavitation a schema1:Event .
+_:d5f32b591e4af123c29d8fbc1d2fe62 rdf:reifies <<( doc:FactsCavitation rdf:type schema1:Event )>> ;
+	prov:wasDerivedFrom doc:3cbdb05fa1e8 .
+doc:FactsPumpImpeller rdfs:label "pump impeller"@en .
+_:f8ba37f38e37d331b470e8aceed7c29d rdf:reifies <<( doc:FactsPumpImpeller rdfs:label "pump impeller"@en )>> ;
+	prov:wasDerivedFrom doc:3cbdb05fa1e8 .
+doc:FactsYamNet None:has_design_detail doc:FactsDesignDetailLayers .
+_:a4ec5d27d10a99cffb2ac1b0e0587879 rdf:reifies <<( doc:FactsYamNet None:has_design_detail doc:FactsDesignDetailLayers )>> ;
+	prov:wasDerivedFrom doc:3cbdb05fa1e8 .
+doc:FactsDesignDetailLayers rdfs:label "YAMNet classification adaptation"@en .
+_:f20653a0d22c9ae352e766ca45187ee3 rdf:reifies <<( doc:FactsDesignDetailLayers rdfs:label "YAMNet classification adaptation"@en )>> ;
+	prov:wasDerivedFrom doc:3cbdb05fa1e8 .
+doc:FactsMobileNetV1 rdfs:label "MobileNetV1"@en .
+_:fcdd41a31639037d021f99dae3b2ba35 rdf:reifies <<( doc:FactsMobileNetV1 rdfs:label "MobileNetV1"@en )>> ;
+	prov:wasDerivedFrom doc:3cbdb05fa1e8 .
+doc:FactsLayerCount rdfs:label "network layer count"@en .
+_:ce1f937d52c879a9f50e375b19751cde rdf:reifies <<( doc:FactsLayerCount rdfs:label "network layer count"@en )>> ;
+	prov:wasDerivedFrom doc:3cbdb05fa1e8 .
+_:a890d4b238f0ec2daec35ae8d349e90c prov:wasDerivedFrom doc:3cbdb05fa1e8 .
+doc:FactsPipeElbow a None:Maintainable_item .
+_:e9df1b509d1fcf84977556ca589d4e70 rdf:reifies <<( doc:FactsPipeElbow rdf:type None:Maintainable_item )>> ;
+	prov:wasDerivedFrom doc:3cbdb05fa1e8 .
+doc:FactsTurbineBlade obo:RO_0000086 doc:FactsCavitationErosion .
+_:ca1de0b1b98ae971091dfd31821d04e rdf:reifies <<( doc:FactsTurbineBlade obo:RO_0000086 doc:FactsCavitationErosion )>> ;
+	prov:wasDerivedFrom doc:3cbdb05fa1e8 .
+_:e34f9bfe34c3de3c447c30486a816def prov:wasDerivedFrom doc:3cbdb05fa1e8 .
+doc:FactsBeamforming a cco:Algorithm .
+_:f635cb3d5ceaddf2bbecad4469c8b45b rdf:reifies <<( doc:FactsBeamforming rdf:type cco:Algorithm )>> ;
+	prov:wasDerivedFrom doc:3cbdb05fa1e8 .
+doc:FactsFrameLength a None:Data_variable .
+_:e36d78abaf2753d93b1494e384711d8d rdf:reifies <<( doc:FactsFrameLength rdf:type None:Data_variable )>> ;
+	prov:wasDerivedFrom doc:3cbdb05fa1e8 .
+doc:FactsPaper1_1 cco:is_about doc:FactsYamNet .
+_:eb0f5f7f991b56fc42c53b5aa63779c9 rdf:reifies <<( doc:FactsPaper1_1 cco:is_about doc:FactsYamNet )>> ;
+	prov:wasDerivedFrom doc:3cbdb05fa1e8 .
+doc:FactsTitle1_4 None:has_text_value "Materials and Methods: Cavitation detection using beamforming and YAMNet preprocessing" .
+_:d62608fd91c31b08c4148bfe337b8b98 rdf:reifies <<( doc:FactsTitle1_4 None:has_text_value "Materials and Methods: Cavitation detection using beamforming and YAMNet preprocessing" )>> ;
+	prov:wasDerivedFrom doc:3cbdb05fa1e8 .
+doc:FactsResampleRate schema1:value 16000 .
+_:ff610e031b4091dc71ad130ce7af450c rdf:reifies <<( doc:FactsResampleRate schema1:value 16000 )>> ;
+	prov:wasDerivedFrom doc:3cbdb05fa1e8 .
+doc:FactsDesignDetailLayers None:has_text_value "Uniform resampling to 16000 Hz; segmentation into 0.96-second frames; Short-time Fourier Transform (STFT) producing complex-valued outputs with magnitude spectrum |X(k)|; Mel filter bank; logarithm of Mel spectrograms" .
+_:c2af8794253e95e6676ac3be2ff59b6e rdf:reifies <<( doc:FactsDesignDetailLayers None:has_text_value "Uniform resampling to 16000 Hz; segmentation into 0.96-second frames; Short-time Fourier Transform (STFT) producing complex-valued outputs with magnitude spectrum |X(k)|; Mel filter bank; logarithm of Mel spectrograms" )>> ;
+	prov:wasDerivedFrom doc:3cbdb05fa1e8 .
+doc:FactsPumpImpeller obo:RO_0000086 doc:FactsCavitationErosion .
+_:ccf1854ebce85dde165e34b2571807f rdf:reifies <<( doc:FactsPumpImpeller obo:RO_0000086 doc:FactsCavitationErosion )>> ;
+	prov:wasDerivedFrom doc:3cbdb05fa1e8 .
+doc:FactsPipeElbow obo:RO_0000086 doc:FactsCavitationErosion .
+_:fa5b5a4b19dfc16c94213dbf44b7c320 rdf:reifies <<( doc:FactsPipeElbow obo:RO_0000086 doc:FactsCavitationErosion )>> ;
+	prov:wasDerivedFrom doc:3cbdb05fa1e8 .
+doc:FactsLayerCount a None:Design_detail .
+_:aef2447f542eec9e260bb69e04430eb3 rdf:reifies <<( doc:FactsLayerCount rdf:type None:Design_detail )>> ;
+	prov:wasDerivedFrom doc:3cbdb05fa1e8 .
+doc:FactsYamNet cco:is_about doc:FactsCavitation .
+_:e9a12ffeae6e0a5b42b8f89efc589714 rdf:reifies <<( doc:FactsYamNet cco:is_about doc:FactsCavitation )>> ;
+	prov:wasDerivedFrom doc:3cbdb05fa1e8 .
+doc:FactsYamNet rdfs:seeAlso doc:FactsMobileNetV1 .
+_:f9f3f9d395725eb2f35a2491fdeb68b4 rdf:reifies <<( doc:FactsYamNet rdfs:seeAlso doc:FactsMobileNetV1 )>> ;
+	prov:wasDerivedFrom doc:3cbdb05fa1e8 .
+doc:FactsYamNet rdfs:label "YAMNet"@en .
+_:d11cd281c0b90d6cf4e4b44c963ae01d rdf:reifies <<( doc:FactsYamNet rdfs:label "YAMNet"@en )>> ;
+	prov:wasDerivedFrom doc:3cbdb05fa1e8 .
+doc:FactsCavitationErosion None:has_text_value "Progressive damage to metal surfaces (splintering, erosion) caused by bubble collapse producing high-speed jets and shock waves" .
+_:e7a67196e57e76f29b957c9e097c4f67 rdf:reifies <<( doc:FactsCavitationErosion None:has_text_value "Progressive damage to metal surfaces (splintering, erosion) caused by bubble collapse producing high-speed jets and shock waves" )>> ;
+	prov:wasDerivedFrom doc:3cbdb05fa1e8 .
+doc:FactsDesignDetailLayers rdfs:label "YAMNet architecture summary"@en .
+_:bf8a4ee1a21717d40a950cf6a87bf565 rdf:reifies <<( doc:FactsDesignDetailLayers rdfs:label "YAMNet architecture summary"@en )>> ;
+	prov:wasDerivedFrom doc:3cbdb05fa1e8 .
+doc:FactsPipeElbow rdfs:label "pipe elbow"@en .
+_:dfc22120a583b7ff37f3d4ab533f7f22 rdf:reifies <<( doc:FactsPipeElbow rdfs:label "pipe elbow"@en )>> ;
+	prov:wasDerivedFrom doc:3cbdb05fa1e8 .
+doc:FactsFrameLength rdfs:label "analysis frame length (s)"@en .
+_:b1ad7169454018821c06f17eb45e8c5b rdf:reifies <<( doc:FactsFrameLength rdfs:label "analysis frame length (s)"@en )>> ;
+	prov:wasDerivedFrom doc:3cbdb05fa1e8 .
+doc:FactsStftMagnitude None:has_text_value "Magnitude spectrum |X(k)| corresponds to absolute values of complex STFT coefficients representing energy distribution across frequency over time" .
+_:c81e9a0a84ec828a245f9d31e60d0d23 rdf:reifies <<( doc:FactsStftMagnitude None:has_text_value "Magnitude spectrum |X(k)| corresponds to absolute values of complex STFT coefficients representing energy distribution across frequency over time" )>> ;
+	prov:wasDerivedFrom doc:3cbdb05fa1e8 .
+_:fe970ffebdcf494c37b8584a7e6b4b4 prov:wasDerivedFrom doc:3cbdb05fa1e8 .
+doc:FactsDesignDetailLayers None:has_text_value "85 layers; depth-separable convolutions and pointwise convolutions; batch normalization and ReLU activations" .
+_:a5918d36aa99089db899a89f7941685b rdf:reifies <<( doc:FactsDesignDetailLayers None:has_text_value "85 layers; depth-separable convolutions and pointwise convolutions; batch normalization and ReLU activations" )>> ;
+	prov:wasDerivedFrom doc:3cbdb05fa1e8 .
+doc:FactsCavitation rdfs:comment "Formation and violent collapse of vapor cavities (bubbles) in liquids under rapid pressure changes; collapse near metal surfaces causes cavitation erosion and damage to machinery" .
+_:e2ab5debefbfc34a37dc7d28abe2a6c4 rdf:reifies <<( doc:FactsCavitation rdfs:comment "Formation and violent collapse of vapor cavities (bubbles) in liquids under rapid pressure changes; collapse near metal surfaces causes cavitation erosion and damage to machinery" )>> ;
+	prov:wasDerivedFrom doc:3cbdb05fa1e8 .
+doc:FactsYamNet rdfs:seeAlso doc:FactsBeamforming .
+_:b3384dbd20de12c4e720a2c194ab2626 rdf:reifies <<( doc:FactsYamNet rdfs:seeAlso doc:FactsBeamforming )>> ;
+	prov:wasDerivedFrom doc:3cbdb05fa1e8 .
+doc:FactsYamNet rdfs:label "YAMNet inference module"@en .
+_:f5c55a580671cbf8523b424bdc643593 rdf:reifies <<( doc:FactsYamNet rdfs:label "YAMNet inference module"@en )>> ;
+	prov:wasDerivedFrom doc:3cbdb05fa1e8 .
+doc:FactsYamNet None:has_predictive_maintenance_function None:Fault_detection .
+_:d7525d31f9c2ef09eb518a172e51859f rdf:reifies <<( doc:FactsYamNet None:has_predictive_maintenance_function None:Fault_detection )>> ;
+	prov:wasDerivedFrom doc:3cbdb05fa1e8 .
+doc:FactsResampleRate a None:Data_variable .
+_:c5261178e757224260465698817ebc5f rdf:reifies <<( doc:FactsResampleRate rdf:type None:Data_variable )>> ;
+	prov:wasDerivedFrom doc:3cbdb05fa1e8 .
+doc:FactsPaper1_1 rdfs:label "Study (Materials and Methods excerpt)"@en .
+_:a7b7791297e3aaca2cefe4150281cda1 rdf:reifies <<( doc:FactsPaper1_1 rdfs:label "Study (Materials and Methods excerpt)"@en )>> ;
+	prov:wasDerivedFrom doc:3cbdb05fa1e8 .
+doc:FactsResampleRate rdfs:label "audio resampling rate"@en .
+_:e7af1db714078d30e536fccd16b836de rdf:reifies <<( doc:FactsResampleRate rdfs:label "audio resampling rate"@en )>> ;
+	prov:wasDerivedFrom doc:3cbdb05fa1e8 .
+doc:FactsCavitation rdfs:label "Cavitation"@en .
+_:a2023e5fc42658b99eecfe44f0f96d1a rdf:reifies <<( doc:FactsCavitation rdfs:label "Cavitation"@en )>> ;
+	prov:wasDerivedFrom doc:3cbdb05fa1e8 .
+doc:FactsLayerCount None:has_interger_value 85 .
+_:b139dea4bb78b1f9084583fdfa7a8bd0 rdf:reifies <<( doc:FactsLayerCount None:has_interger_value 85 )>> ;
+	prov:wasDerivedFrom doc:3cbdb05fa1e8 .
+doc:FactsStftMagnitude a None:Data_variable .
+_:f093250442daeaa3604b2980a1e665a1 rdf:reifies <<( doc:FactsStftMagnitude rdf:type None:Data_variable )>> ;
+	prov:wasDerivedFrom doc:3cbdb05fa1e8 .
+cco:InformationContentEntity owl:sameAs cco:DescriptiveInformationContentEntity .

@@ -1,0 +1,540 @@
+@prefix None: <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD/seed#> .
+@prefix cco: <http://www.ontologyrepository.com/CommonCoreOntologies/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doc: <https://growgraph.dev/doc/d223bbaa9246/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix obo: <http://purl.obolibrary.org/obo/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix cd: <https://growgraph.dev/facts> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix schema: <https://schema.org/> .
+@prefix schema1: <http://schema.org/> .
+doc:859368be9545 a prov:Entity , schema:text ;
+	prov:generatedAtTime "2026-07-11T04:39:42.308789Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+	schema:position 0 ;
+	schema:identifier "859368be9545" .
+doc:FactsjournalScirep a schema1:Periodical .
+_:b970a8e7f265ad3a8c8e49218f6cd5cf rdf:reifies <<( doc:FactsjournalScirep rdf:type schema1:Periodical )>> ;
+	prov:wasDerivedFrom doc:859368be9545 .
+doc:FactspersonMiralMichel schema1:affiliation doc:FactsorgAast .
+_:aaf0fb5c1d96515c41e6de3b2366f302 rdf:reifies <<( doc:FactspersonMiralMichel schema1:affiliation doc:FactsorgAast )>> ;
+	prov:wasDerivedFrom doc:859368be9545 .
+doc:FactsequalContributionRole schema1:creator doc:FactspersonMiralMichel .
+_:bbe4384d16c3dca2501e1cc5c866c0c9 rdf:reifies <<( doc:FactsequalContributionRole schema1:creator doc:FactspersonMiralMichel )>> ;
+	prov:wasDerivedFrom doc:859368be9545 .
+doc:FactsDieselEngine a None:Maintainable_item .
+_:b575ec7d6f4d27e52c03b0276abe338a rdf:reifies <<( doc:FactsDieselEngine rdf:type None:Maintainable_item )>> ;
+	prov:wasDerivedFrom doc:859368be9545 .
+doc:FactspersonMiralMichel a schema1:Person .
+_:fa1075e84ba9d5bf2f2b2d0ddb25612b rdf:reifies <<( doc:FactspersonMiralMichel rdf:type schema1:Person )>> ;
+	prov:wasDerivedFrom doc:859368be9545 .
+doc:FactsDowntime_1 a None:Predictive_maintenance_system_module .
+_:a40f2af4315a2b512465a94305506c14 rdf:reifies <<( doc:FactsDowntime_1 rdf:type None:Predictive_maintenance_system_module )>> ;
+	prov:wasDerivedFrom doc:859368be9545 .
+doc:Factsdesign_detail_1 a None:Design_detail .
+_:b16300c651ab8470e304fffd6351a24a rdf:reifies <<( doc:Factsdesign_detail_1 rdf:type None:Design_detail )>> ;
+	prov:wasDerivedFrom doc:859368be9545 .
+doc:FactscontactpointMiral a schema1:ContactPoint .
+_:f28c7b990eb995dae47c13c3d7b4f67e rdf:reifies <<( doc:FactscontactpointMiral rdf:type schema1:ContactPoint )>> ;
+	prov:wasDerivedFrom doc:859368be9545 .
+doc:FactsArticle1_2 schema1:publisher doc:FactsjournalScirep .
+_:f31569238c326dcec97aeb5549bbcfe3 rdf:reifies <<( doc:FactsArticle1_2 schema1:publisher doc:FactsjournalScirep )>> ;
+	prov:wasDerivedFrom doc:859368be9545 .
+doc:FactspersonMiralMichel schema1:contactPoint doc:FactscontactpointMiral .
+_:f4098ca2e808bbe9140014ea5bad4e42 rdf:reifies <<( doc:FactspersonMiralMichel schema1:contactPoint doc:FactscontactpointMiral )>> ;
+	prov:wasDerivedFrom doc:859368be9545 .
+doc:FactsorgAast a schema1:Organization .
+_:db832f7b07e526a3be2705bb159531b9 rdf:reifies <<( doc:FactsorgAast rdf:type schema1:Organization )>> ;
+	prov:wasDerivedFrom doc:859368be9545 .
+doc:Factsarticle1_title_5 None:has_text_value "Proactive Fault Prediction in Marine Diesel Engines Using Multivariate Machine Learning" .
+_:a74b596519131682635c23006fa82097 rdf:reifies <<( doc:Factsarticle1_title_5 None:has_text_value "Proactive Fault Prediction in Marine Diesel Engines Using Multivariate Machine Learning" )>> ;
+	prov:wasDerivedFrom doc:859368be9545 .
+None:Fault_detection a owl:Class .
+_:b991c5a93755b9e3f68338d813b59f73 rdf:reifies <<( None:Fault_detection rdf:type owl:Class )>> ;
+	prov:wasDerivedFrom doc:859368be9545 .
+None:Predictive_Maintenance_Article a owl:Class .
+_:f047df6bcdadbecc1d82fec86f3c2f7a rdf:reifies <<( None:Predictive_Maintenance_Article rdf:type owl:Class )>> ;
+	prov:wasDerivedFrom doc:859368be9545 .
+doc:FactsArticle1_2 schema1:author doc:FactspersonMiralMichel .
+_:fa268b7561fe28e2cbace157cb19cdc9 rdf:reifies <<( doc:FactsArticle1_2 schema1:author doc:FactspersonMiralMichel )>> ;
+	prov:wasDerivedFrom doc:859368be9545 .
+doc:FactsmlTech rdfs:label "multivariate machine learning" .
+_:f0962e98ed28b5ae2e4836566c5b8eff rdf:reifies <<( doc:FactsmlTech rdfs:label "multivariate machine learning" )>> ;
+	prov:wasDerivedFrom doc:859368be9545 .
+None:Predictive_maintenance_model a owl:Class .
+_:e1b2e592142af9142a12a9f4702da13c rdf:reifies <<( None:Predictive_maintenance_model rdf:type owl:Class )>> ;
+	prov:wasDerivedFrom doc:859368be9545 .
+doc:FactsArticle1_2 schema1:identifier doc:Factsdoi_2026_michel .
+_:eb7cdb1a97f54790b4d1f5d5cc49dd5 rdf:reifies <<( doc:FactsArticle1_2 schema1:identifier doc:Factsdoi_2026_michel )>> ;
+	prov:wasDerivedFrom doc:859368be9545 .
+doc:FactspersonMiralMichel schema1:email "miral-michel@aast.edu" .
+_:b33978a20437d913573497aa1a96b1e5 rdf:reifies <<( doc:FactspersonMiralMichel schema1:email "miral-michel@aast.edu" )>> ;
+	prov:wasDerivedFrom doc:859368be9545 .
+doc:FactsDowntime_1 None:has_predictive_maintenance_function None:Fault_detection .
+_:f4bae4e0d8ef7cc63c5457879aacc369 rdf:reifies <<( doc:FactsDowntime_1 None:has_predictive_maintenance_function None:Fault_detection )>> ;
+	prov:wasDerivedFrom doc:859368be9545 .
+doc:FactsDowntime_1 cco:is_about doc:FactsDieselEngine .
+_:a76c0bf22b0d8dba39d10c6470a50663 rdf:reifies <<( doc:FactsDowntime_1 cco:is_about doc:FactsDieselEngine )>> ;
+	prov:wasDerivedFrom doc:859368be9545 .
+doc:FactsArticle1_2 schema1:dateAccepted "2026-02-17"^^<http://www.w3.org/2001/XMLSchema#date> .
+_:d2617dbd1f161d042eb43ba01086129a rdf:reifies <<( doc:FactsArticle1_2 schema1:dateAccepted "2026-02-17"^^<http://www.w3.org/2001/XMLSchema#date> )>> ;
+	prov:wasDerivedFrom doc:859368be9545 .
+doc:FactsorgAast schema1:name "Arab Academy for Science, Technology and Maritime Transport" .
+_:ca653c420701b9f0fe29a4509ae949db rdf:reifies <<( doc:FactsorgAast schema1:name "Arab Academy for Science, Technology and Maritime Transport" )>> ;
+	prov:wasDerivedFrom doc:859368be9545 .
+doc:FactsArticle1_2 None:has_title doc:Factsarticle1_title_5 .
+_:b6fb6c991cdcbc5abd908ab08af35c89 rdf:reifies <<( doc:FactsArticle1_2 None:has_title doc:Factsarticle1_title_5 )>> ;
+	prov:wasDerivedFrom doc:859368be9545 .
+doc:FactscontactpointMiral schema1:email "miral-michel@aast.edu" .
+_:c30424f0bc70c100ff11aff2ca172f9d rdf:reifies <<( doc:FactscontactpointMiral schema1:email "miral-michel@aast.edu" )>> ;
+	prov:wasDerivedFrom doc:859368be9545 .
+doc:FactsmlTech None:has_text_value "Multivariate machine learning (ML) algorithms used for diagnostic and predictive tasks in the proposed proactive maintenance strategy." .
+_:facd8fb7d4e00d212e494b83850fdb46 rdf:reifies <<( doc:FactsmlTech None:has_text_value "Multivariate machine learning (ML) algorithms used for diagnostic and predictive tasks in the proposed proactive maintenance strategy." )>> ;
+	prov:wasDerivedFrom doc:859368be9545 .
+doc:FactsArticle1_2 schema1:abstract "Ocean shipping is the backbone of international trade contributing to global economic growth. Consequently, ensuring that ships operate in an energy-efficient manner is crucial to a more sustainable global transportation. Engine failures can lead to severe consequences including compromised safety, operational disruptions, and substantial economic losses. The proposed research integrates marine diesel engines diagnostics with multivariate machine learning algorithms to develop an advanced proactive maintenance strategy to anticipate engine performance trends and proactively identify potential faults before they escalate." .
+_:ece86ac6dcaf1de6820ff6a1c269b4de rdf:reifies <<( doc:FactsArticle1_2 schema1:abstract "Ocean shipping is the backbone of international trade contributing to global economic growth. Consequently, ensuring that ships operate in an energy-efficient manner is crucial to a more sustainable global transportation. Engine failures can lead to severe consequences including compromised safety, operational disruptions, and substantial economic losses. The proposed research integrates marine diesel engines diagnostics with multivariate machine learning algorithms to develop an advanced proactive maintenance strategy to anticipate engine performance trends and proactively identify potential faults before they escalate." )>> ;
+	prov:wasDerivedFrom doc:859368be9545 .
+doc:FactspersonMiralMichel schema1:givenName "Sherine Nagy" .
+_:dbabb09a3d9b43497aa72d2e2a3d4ec9 rdf:reifies <<( doc:FactspersonMiralMichel schema1:givenName "Sherine Nagy" )>> ;
+	prov:wasDerivedFrom doc:859368be9545 .
+doc:FactsArticle1_2 None:has_identifier doc:Factsdoi_2026_michel .
+_:f6cd45ec47e633ca129e8a290b294a8 rdf:reifies <<( doc:FactsArticle1_2 None:has_identifier doc:Factsdoi_2026_michel )>> ;
+	prov:wasDerivedFrom doc:859368be9545 .
+doc:FactseconLossUpper None:has_interger_value 10 .
+_:b3b298946e58796b61e52eabd61fdce2 rdf:reifies <<( doc:FactseconLossUpper None:has_interger_value 10 )>> ;
+	prov:wasDerivedFrom doc:859368be9545 .
+doc:FactsjournalScirep schema1:name "Scientific Reports" .
+_:e64f6abcae445ed80554cf9b908a6ea9 rdf:reifies <<( doc:FactsjournalScirep schema1:name "Scientific Reports" )>> ;
+	prov:wasDerivedFrom doc:859368be9545 .
+doc:FactscontactpointMiral schema1:contactType "corresponding author" .
+_:f34081be59cc477d11b5393e2f24d2c6 rdf:reifies <<( doc:FactscontactpointMiral schema1:contactType "corresponding author" )>> ;
+	prov:wasDerivedFrom doc:859368be9545 .
+doc:FactsmoduleSyncOnline_1 a None:Module_synchronization .
+_:a0a01edd9fc29c5cd9b9f4469ad519fd rdf:reifies <<( doc:FactsmoduleSyncOnline_1 rdf:type None:Module_synchronization )>> ;
+	prov:wasDerivedFrom doc:859368be9545 .
+doc:FactsequalContributionRole a schema1:Role .
+_:da93d3e37986ee6f246d576d0febf746 rdf:reifies <<( doc:FactsequalContributionRole rdf:type schema1:Role )>> ;
+	prov:wasDerivedFrom doc:859368be9545 .
+doc:FactseconLossUpper None:has_text_value "lower bound percent of total operating costs due to unscheduled maintenance" .
+_:e08fa2c6a71203fa9257e74ba9171cef rdf:reifies <<( doc:FactseconLossUpper None:has_text_value "lower bound percent of total operating costs due to unscheduled maintenance" )>> ;
+	prov:wasDerivedFrom doc:859368be9545 .
+doc:FactsArticle1_2 schema1:dateReceived "2025-11-05"^^<http://www.w3.org/2001/XMLSchema#date> .
+_:c737838317129bb07e82c0dcc2fbfa36 rdf:reifies <<( doc:FactsArticle1_2 schema1:dateReceived "2025-11-05"^^<http://www.w3.org/2001/XMLSchema#date> )>> ;
+	prov:wasDerivedFrom doc:859368be9545 .
+doc:FactsDowntime_1 None:has_synchronization doc:FactsmoduleSyncOnline_1 .
+_:fb984f269a06537227cb1fc988847d9b rdf:reifies <<( doc:FactsDowntime_1 None:has_synchronization doc:FactsmoduleSyncOnline_1 )>> ;
+	prov:wasDerivedFrom doc:859368be9545 .
+doc:FactspersonMiralMichel schema1:familyName "Michel" .
+_:c2074968e4e75399f297fb7410ac1251 rdf:reifies <<( doc:FactspersonMiralMichel schema1:familyName "Michel" )>> ;
+	prov:wasDerivedFrom doc:859368be9545 .
+doc:FactsorgAast schema1:department "Marine and Offshore Engineering Department; Computer Engineering Department" .
+_:df40055f9e9c797338b2e9ca307d4bde rdf:reifies <<( doc:FactsorgAast schema1:department "Marine and Offshore Engineering Department; Computer Engineering Department" )>> ;
+	prov:wasDerivedFrom doc:859368be9545 .
+doc:FactsequalContributionRole schema1:roleName "Contributed equally" .
+_:e85e429598049f69108facdee4cbe687 rdf:reifies <<( doc:FactsequalContributionRole schema1:roleName "Contributed equally" )>> ;
+	prov:wasDerivedFrom doc:859368be9545 .
+doc:FactsArticle1_2 None:has_publication_year doc:Factspubyear_2026_michel .
+_:d97fd00dfc533edfe25e09a77c53f593 rdf:reifies <<( doc:FactsArticle1_2 None:has_publication_year doc:Factspubyear_2026_michel )>> ;
+	prov:wasDerivedFrom doc:859368be9545 .
+doc:FactsDowntime_1 cco:describes doc:FactsDieselEngine .
+_:baec067854d2dece6717698b45e1bca5 rdf:reifies <<( doc:FactsDowntime_1 cco:describes doc:FactsDieselEngine )>> ;
+	prov:wasDerivedFrom doc:859368be9545 .
+doc:FactseconLossUpper None:has_interger_value 30 .
+_:adb685bd9500fd68e35c393f89a8e0a7 rdf:reifies <<( doc:FactseconLossUpper None:has_interger_value 30 )>> ;
+	prov:wasDerivedFrom doc:859368be9545 .
+doc:Factspubyear_2026_michel None:has_interger_value 2026 .
+_:aeac3fd3a50de7117b6a344173bfdb6 rdf:reifies <<( doc:Factspubyear_2026_michel None:has_interger_value 2026 )>> ;
+	prov:wasDerivedFrom doc:859368be9545 .
+doc:FactsDowntime_1 a None:Predictive_maintenance_model .
+_:c068c0c459af52cb202280b95c6f3b03 rdf:reifies <<( doc:FactsDowntime_1 rdf:type None:Predictive_maintenance_model )>> ;
+	prov:wasDerivedFrom doc:859368be9545 .
+doc:FactspersonMiralMichel schema1:familyName "Mehanna" .
+_:e515fd0129baf393ff37a2f0b8f2ca9d rdf:reifies <<( doc:FactspersonMiralMichel schema1:familyName "Mehanna" )>> ;
+	prov:wasDerivedFrom doc:859368be9545 .
+doc:FactsmlTech a None:Data_mining_technique_function .
+_:f4b579777b2d50491844eb9e6d2db84e rdf:reifies <<( doc:FactsmlTech rdf:type None:Data_mining_technique_function )>> ;
+	prov:wasDerivedFrom doc:859368be9545 .
+doc:FactsmoduleSyncOnline_1 None:has_text_value "online / real-time relative to the maintainable item" .
+_:f279d84a16043aafe1fd82321ea80ebb rdf:reifies <<( doc:FactsmoduleSyncOnline_1 None:has_text_value "online / real-time relative to the maintainable item" )>> ;
+	prov:wasDerivedFrom doc:859368be9545 .
+doc:Factspubyear_2026_michel a None:Publication_year .
+_:fc2366b64424344c8a944bfac092255d rdf:reifies <<( doc:Factspubyear_2026_michel rdf:type None:Publication_year )>> ;
+	prov:wasDerivedFrom doc:859368be9545 .
+doc:FactsDowntime_1 None:has_design_detail doc:Factsdesign_detail_1 .
+_:b36eb55b9dab8a414909fb216abfcd60 rdf:reifies <<( doc:FactsDowntime_1 None:has_design_detail doc:Factsdesign_detail_1 )>> ;
+	prov:wasDerivedFrom doc:859368be9545 .
+doc:FactspersonMiralMichel schema1:email "ahmed.mehanna@aast.edu" .
+_:bfc563c4735d8cd678a5bdf3b41c3f71 rdf:reifies <<( doc:FactspersonMiralMichel schema1:email "ahmed.mehanna@aast.edu" )>> ;
+	prov:wasDerivedFrom doc:859368be9545 .
+doc:FactsorgAast schema1:address "Alexandria, Egypt" .
+_:c3d31238ada50e797a4eee2580636d6e rdf:reifies <<( doc:FactsorgAast schema1:address "Alexandria, Egypt" )>> ;
+	prov:wasDerivedFrom doc:859368be9545 .
+doc:FactspersonMiralMichel schema1:givenName "Ahmed S." .
+_:b151165f5d034fc814bc3347fb59dd04 rdf:reifies <<( doc:FactspersonMiralMichel schema1:givenName "Ahmed S." )>> ;
+	prov:wasDerivedFrom doc:859368be9545 .
+doc:FactsArticle1_2 schema1:datePublished "2026"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+_:e51f9cf5dcb5d7f01b5a2a97f38fe414 rdf:reifies <<( doc:FactsArticle1_2 schema1:datePublished "2026"^^<http://www.w3.org/2001/XMLSchema#gYear> )>> ;
+	prov:wasDerivedFrom doc:859368be9545 .
+doc:FactspersonMiralMichel schema1:familyName "Saleh" .
+_:ef443ad02ab0e2b22a462e312a92b5a1 rdf:reifies <<( doc:FactspersonMiralMichel schema1:familyName "Saleh" )>> ;
+	prov:wasDerivedFrom doc:859368be9545 .
+doc:FactseconLossUpper a None:Design_detail .
+_:e0659f624ed3c12c1602481d1aeb7ece rdf:reifies <<( doc:FactseconLossUpper rdf:type None:Design_detail )>> ;
+	prov:wasDerivedFrom doc:859368be9545 .
+doc:FactspersonMiralMichel schema1:familyName "Shehata" .
+_:bcef2967dbad9bb2bd26ebea34019346 rdf:reifies <<( doc:FactspersonMiralMichel schema1:familyName "Shehata" )>> ;
+	prov:wasDerivedFrom doc:859368be9545 .
+doc:FactseconLossUpper None:has_text_value "upper bound percent of total operating costs due to unscheduled maintenance" .
+_:b3e8ee5736e6b7337c567602ceb2568f rdf:reifies <<( doc:FactseconLossUpper None:has_text_value "upper bound percent of total operating costs due to unscheduled maintenance" )>> ;
+	prov:wasDerivedFrom doc:859368be9545 .
+doc:Factsdesign_detail_1 None:has_text_value "Integration of multivariate machine learning algorithms for proactive maintenance strategy to anticipate engine performance trends and identify potential faults before escalation." .
+_:b967552feca53f5c12b9865dcf035ce3 rdf:reifies <<( doc:Factsdesign_detail_1 None:has_text_value "Integration of multivariate machine learning algorithms for proactive maintenance strategy to anticipate engine performance trends and identify potential faults before escalation." )>> ;
+	prov:wasDerivedFrom doc:859368be9545 .
+doc:FactsDowntime_1 cco:describes doc:FactsDowntime_1 .
+_:ef58f43d61cfa808b9443b1e0fb0ccfb rdf:reifies <<( doc:FactsDowntime_1 cco:describes doc:FactsDowntime_1 )>> ;
+	prov:wasDerivedFrom doc:859368be9545 .
+doc:Factsdoi_2026_michel a None:Article_identifier .
+_:df825cdd086e37500ab3b7a0d1e92d69 rdf:reifies <<( doc:Factsdoi_2026_michel rdf:type None:Article_identifier )>> ;
+	prov:wasDerivedFrom doc:859368be9545 .
+doc:FactspersonMiralMichel schema1:givenName "Ahmed" .
+_:bde46206bae7070a6dec9d4df6abb450 rdf:reifies <<( doc:FactspersonMiralMichel schema1:givenName "Ahmed" )>> ;
+	prov:wasDerivedFrom doc:859368be9545 .
+doc:Factsarticle1_title_5 a None:Article_title .
+_:b8d25821a5a1fd341e9fa19d08b2653f rdf:reifies <<( doc:Factsarticle1_title_5 rdf:type None:Article_title )>> ;
+	prov:wasDerivedFrom doc:859368be9545 .
+doc:FactspersonMiralMichel schema1:email "a_samir@aast.edu" .
+_:db195cbc8fa6d5efdd698f40c037a882 rdf:reifies <<( doc:FactspersonMiralMichel schema1:email "a_samir@aast.edu" )>> ;
+	prov:wasDerivedFrom doc:859368be9545 .
+doc:FactsArticle1_2 cco:is_about doc:FactsDowntime_1 .
+_:ff385dfed95b2e7638bbc928d6a22e01 rdf:reifies <<( doc:FactsArticle1_2 cco:is_about doc:FactsDowntime_1 )>> ;
+	prov:wasDerivedFrom doc:859368be9545 .
+doc:Factsdoi_2026_michel None:has_text_value "https://doi.org/10.1038/s41598-026-40979-5" .
+_:c9dc8aecfd9e60219a8b9eda4d56e224 rdf:reifies <<( doc:Factsdoi_2026_michel None:has_text_value "https://doi.org/10.1038/s41598-026-40979-5" )>> ;
+	prov:wasDerivedFrom doc:859368be9545 .
+doc:FactsArticle1_2 a None:Predictive_Maintenance_Article .
+_:bee37b7da20041b49488698f4b44060b rdf:reifies <<( doc:FactsArticle1_2 rdf:type None:Predictive_Maintenance_Article )>> ;
+	prov:wasDerivedFrom doc:859368be9545 .
+doc:FactspersonMiralMichel schema1:email "sherine_nagi@aast.edu" .
+_:a9be89248686cf1f6849f5db33a1430f rdf:reifies <<( doc:FactspersonMiralMichel schema1:email "sherine_nagi@aast.edu" )>> ;
+	prov:wasDerivedFrom doc:859368be9545 .
+doc:FactsDieselEngine rdfs:label "marine diesel engine" .
+_:d5dda3380f6c7da5cd7f994c0b676e6d rdf:reifies <<( doc:FactsDieselEngine rdfs:label "marine diesel engine" )>> ;
+	prov:wasDerivedFrom doc:859368be9545 .
+doc:FactspersonMiralMichel schema1:givenName "Miral" .
+_:a2a45408a89989afa0f47c8505e8bbeb rdf:reifies <<( doc:FactspersonMiralMichel schema1:givenName "Miral" )>> ;
+	prov:wasDerivedFrom doc:859368be9545 .
+doc:1f9f91254062 a prov:Entity , schema:text ;
+	prov:generatedAtTime "2026-07-11T04:39:42.312789Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+	schema:position 1 ;
+	schema:identifier "1f9f91254062" .
+doc:FactsKeywordFailurePredictionAndClassification None:has_text_value "Failure Prediction and Classification" .
+_:bc0e4fa52c63eff245d4d6bcbaaacdd1 rdf:reifies <<( doc:FactsKeywordFailurePredictionAndClassification None:has_text_value "Failure Prediction and Classification" )>> ;
+	prov:wasDerivedFrom doc:1f9f91254062 .
+doc:FactsKeywordShipping None:has_text_value "Smart Ship" .
+_:f1be1b5763d29c4113ea1f80c94058cc rdf:reifies <<( doc:FactsKeywordShipping None:has_text_value "Smart Ship" )>> ;
+	prov:wasDerivedFrom doc:1f9f91254062 .
+doc:FactsFailureScenarios cco:is_about doc:FactsTemperatureAcrossCylinders .
+_:eb85c15e9e9360b1946bd6ca48b5183 rdf:reifies <<( doc:FactsFailureScenarios cco:is_about doc:FactsTemperatureAcrossCylinders )>> ;
+	prov:wasDerivedFrom doc:1f9f91254062 .
+doc:FactsAnalysis1 a cco:InformationProcessingArtifact .
+_:f96c463b236679426fa4ad4cc83593bb rdf:reifies <<( doc:FactsAnalysis1 rdf:type cco:InformationProcessingArtifact )>> ;
+	prov:wasDerivedFrom doc:1f9f91254062 .
+doc:FactsKeywordFailurePredictionAndClassification a cco:DesignativeName .
+_:da21d1ab054bf3c603f22f82d4bdc6bd rdf:reifies <<( doc:FactsKeywordFailurePredictionAndClassification rdf:type cco:DesignativeName )>> ;
+	prov:wasDerivedFrom doc:1f9f91254062 .
+doc:FactsDecisionTreeRegression rdfs:label "Decision tree regression (baseline for RMSE comparison)" .
+_:cdbe6c987ebdfb3563517c5876cf9f3 rdf:reifies <<( doc:FactsDecisionTreeRegression rdfs:label "Decision tree regression (baseline for RMSE comparison)" )>> ;
+	prov:wasDerivedFrom doc:1f9f91254062 .
+doc:FactsAnalysis1 cco:is_about doc:FactsConvLstmModel .
+_:a95032b2295367a39a246396b7e2adcd rdf:reifies <<( doc:FactsAnalysis1 cco:is_about doc:FactsConvLstmModel )>> ;
+	prov:wasDerivedFrom doc:1f9f91254062 .
+doc:FactsKeywordShipping None:has_text_value "Marine Engines" .
+_:edac62bdde3a41f39de4dda8b02a17e5 rdf:reifies <<( doc:FactsKeywordShipping None:has_text_value "Marine Engines" )>> ;
+	prov:wasDerivedFrom doc:1f9f91254062 .
+doc:FactsTemperatureAcrossCylinders a None:Data_variable .
+_:cbe36648fd846a5b9f63cbe86da7f9ad rdf:reifies <<( doc:FactsTemperatureAcrossCylinders rdf:type None:Data_variable )>> ;
+	prov:wasDerivedFrom doc:1f9f91254062 .
+doc:FactsConvLstmRmseReduction schema1:value 15.4453 .
+_:a20890ebf24651cc5c3a671773718f44 rdf:reifies <<( doc:FactsConvLstmRmseReduction schema1:value 15.4453 )>> ;
+	prov:wasDerivedFrom doc:1f9f91254062 .
+doc:FactsTemperatureAcrossCylinders None:has_text_value "temperatures across cylinders" .
+_:bc1f6f21606eb112640a082bb07f73af rdf:reifies <<( doc:FactsTemperatureAcrossCylinders None:has_text_value "temperatures across cylinders" )>> ;
+	prov:wasDerivedFrom doc:1f9f91254062 .
+doc:FactsKeywordShipping cco:is_about doc:FactsArticle1_2 .
+_:c0ab32deee516be85a52fe4ee961dd1 rdf:reifies <<( doc:FactsKeywordShipping cco:is_about doc:FactsArticle1_2 )>> ;
+	prov:wasDerivedFrom doc:1f9f91254062 .
+doc:FactsKeywordShipping None:has_text_value "Shipping" .
+_:c8455de69540822c3fe8558669c1dc09 rdf:reifies <<( doc:FactsKeywordShipping None:has_text_value "Shipping" )>> ;
+	prov:wasDerivedFrom doc:1f9f91254062 .
+doc:FactsRfAccuracy None:has_text_value "classification accuracy achieved by RF classifier" .
+_:d9213c8b3a42e9db9ff7f7db8e424991 rdf:reifies <<( doc:FactsRfAccuracy None:has_text_value "classification accuracy achieved by RF classifier" )>> ;
+	prov:wasDerivedFrom doc:1f9f91254062 .
+doc:FactsDieselEngine rdfs:label "4-stroke diesel engine (experimental subject)" .
+_:ca9c164b46f73f054397459bf9cb70c6 rdf:reifies <<( doc:FactsDieselEngine rdfs:label "4-stroke diesel engine (experimental subject)" )>> ;
+	prov:wasDerivedFrom doc:1f9f91254062 .
+doc:FactsKeywordProactiveMaintenance cco:is_about doc:FactsArticle1_2 .
+_:da725d9e208aca42f8feebbd53616a09 rdf:reifies <<( doc:FactsKeywordProactiveMaintenance cco:is_about doc:FactsArticle1_2 )>> ;
+	prov:wasDerivedFrom doc:1f9f91254062 .
+doc:FactsKeywordFailurePredictionAndClassification cco:is_about doc:FactsArticle1_2 .
+_:f9fa4d7114b0702955754dc47b857b66 rdf:reifies <<( doc:FactsKeywordFailurePredictionAndClassification cco:is_about doc:FactsArticle1_2 )>> ;
+	prov:wasDerivedFrom doc:1f9f91254062 .
+doc:FactsFailureScenarios a cco:InformationProcessingArtifact .
+_:b4ef0c2b9a44c2d76035bae68076516b rdf:reifies <<( doc:FactsFailureScenarios rdf:type cco:InformationProcessingArtifact )>> ;
+	prov:wasDerivedFrom doc:1f9f91254062 .
+doc:FactsRfAccuracy schema1:unitText "%" .
+_:f0734f66eca7983100230effbef9f92f rdf:reifies <<( doc:FactsRfAccuracy schema1:unitText "%" )>> ;
+	prov:wasDerivedFrom doc:1f9f91254062 .
+doc:FactsRfAccuracy a None:Performance_value .
+_:bf4b97ba2b900c69e836e2493da879bb rdf:reifies <<( doc:FactsRfAccuracy rdf:type None:Performance_value )>> ;
+	prov:wasDerivedFrom doc:1f9f91254062 .
+doc:FactsKeywordShipping a cco:DesignativeName .
+_:f9b89a04779482c6c249d5ea4c173bd7 rdf:reifies <<( doc:FactsKeywordShipping rdf:type cco:DesignativeName )>> ;
+	prov:wasDerivedFrom doc:1f9f91254062 .
+doc:FactsVibrationAlongAxes a None:Data_variable .
+_:e16fbe8bbe8e2dee97062457dbceee01 rdf:reifies <<( doc:FactsVibrationAlongAxes rdf:type None:Data_variable )>> ;
+	prov:wasDerivedFrom doc:1f9f91254062 .
+doc:FactsRfClassifier a None:Classification .
+_:f4d7ce5672d3e4caa5a20a0fb934d1f6 rdf:reifies <<( doc:FactsRfClassifier rdf:type None:Classification )>> ;
+	prov:wasDerivedFrom doc:1f9f91254062 .
+doc:FactsVibrationAlongAxes None:has_text_value "vibrations along axes" .
+_:e0beeaa24beb57d904c9a6b924c8b78b rdf:reifies <<( doc:FactsVibrationAlongAxes None:has_text_value "vibrations along axes" )>> ;
+	prov:wasDerivedFrom doc:1f9f91254062 .
+doc:FactsFailureScenarios a None:Design_detail .
+_:b526549ca98d913596f6d5ec280d90ca rdf:reifies <<( doc:FactsFailureScenarios rdf:type None:Design_detail )>> ;
+	prov:wasDerivedFrom doc:1f9f91254062 .
+doc:FactsFailureScenarios rdfs:label "controlled simulation to replicate failure scenarios" .
+_:c419502b729b9c653a0a5bc357869b3 rdf:reifies <<( doc:FactsFailureScenarios rdfs:label "controlled simulation to replicate failure scenarios" )>> ;
+	prov:wasDerivedFrom doc:1f9f91254062 .
+doc:FactsConvLstmModel a None:Predictive_maintenance_model .
+_:dc47b3a8b712c9202ff9d50efca47ccf rdf:reifies <<( doc:FactsConvLstmModel rdf:type None:Predictive_maintenance_model )>> ;
+	prov:wasDerivedFrom doc:1f9f91254062 .
+doc:FactsConvLstmRmseReduction cco:describes doc:FactsConvLstmModel .
+_:c439287448607b7afc6e4eb5de628e40 rdf:reifies <<( doc:FactsConvLstmRmseReduction cco:describes doc:FactsConvLstmModel )>> ;
+	prov:wasDerivedFrom doc:1f9f91254062 .
+doc:FactsConvLstmModelType rdfs:label "ConvLSTM (multivariate convolutional LSTM)" .
+_:d346c1af7bf8d65318e7b38782fd5883 rdf:reifies <<( doc:FactsConvLstmModelType rdfs:label "ConvLSTM (multivariate convolutional LSTM)" )>> ;
+	prov:wasDerivedFrom doc:1f9f91254062 .
+doc:FactsFailureScenarios cco:is_about doc:FactsDieselEngine .
+_:b253c89eb628a73ff831d062149b934c rdf:reifies <<( doc:FactsFailureScenarios cco:is_about doc:FactsDieselEngine )>> ;
+	prov:wasDerivedFrom doc:1f9f91254062 .
+doc:FactsAnalysis1 cco:is_about doc:FactsFailureScenarios .
+_:e920a55507749017be891210519c568c rdf:reifies <<( doc:FactsAnalysis1 cco:is_about doc:FactsFailureScenarios )>> ;
+	prov:wasDerivedFrom doc:1f9f91254062 .
+doc:FactsConvLstmRmseReduction schema1:unitText "%" .
+_:a9e2c61ec25b1e0c1007a7f4f39d35eb rdf:reifies <<( doc:FactsConvLstmRmseReduction schema1:unitText "%" )>> ;
+	prov:wasDerivedFrom doc:1f9f91254062 .
+doc:FactsConvLstmRmseReduction a None:Performance_value .
+_:d5a8e091605734208a8c04486c72b232 rdf:reifies <<( doc:FactsConvLstmRmseReduction rdf:type None:Performance_value )>> ;
+	prov:wasDerivedFrom doc:1f9f91254062 .
+doc:FactsTemperatureAcrossCylinders cco:is_about doc:FactsDieselEngine .
+_:aa5b417fd9a98259f6abaa148417a8c0 rdf:reifies <<( doc:FactsTemperatureAcrossCylinders cco:is_about doc:FactsDieselEngine )>> ;
+	prov:wasDerivedFrom doc:1f9f91254062 .
+doc:FactsKeywordProactiveMaintenance None:has_text_value "Proactive Maintenance" .
+_:f842fcff05324d403345e5b21aa9e96f rdf:reifies <<( doc:FactsKeywordProactiveMaintenance None:has_text_value "Proactive Maintenance" )>> ;
+	prov:wasDerivedFrom doc:1f9f91254062 .
+doc:FactsRfClassifier a cco:Algorithm .
+_:efaf8eba61c164c900dbbb35f82ad18f rdf:reifies <<( doc:FactsRfClassifier rdf:type cco:Algorithm )>> ;
+	prov:wasDerivedFrom doc:1f9f91254062 .
+doc:FactsConvLstmModel None:describes_type doc:FactsConvLstmModelType .
+_:c5361af0818c46258d7504012c267b6 rdf:reifies <<( doc:FactsConvLstmModel None:describes_type doc:FactsConvLstmModelType )>> ;
+	prov:wasDerivedFrom doc:1f9f91254062 .
+doc:FactsKeywordProactiveMaintenance a cco:DesignativeName .
+_:e0979f82577303414d5bca4185fb8d51 rdf:reifies <<( doc:FactsKeywordProactiveMaintenance rdf:type cco:DesignativeName )>> ;
+	prov:wasDerivedFrom doc:1f9f91254062 .
+_:b8d25821a5a1fd341e9fa19d08b2653f prov:wasDerivedFrom doc:1f9f91254062 .
+doc:FactsVibrationAlongAxes cco:is_about doc:FactsDieselEngine .
+_:daa8ef7a4c0a1ab1b3b38d9597a985b7 rdf:reifies <<( doc:FactsVibrationAlongAxes cco:is_about doc:FactsDieselEngine )>> ;
+	prov:wasDerivedFrom doc:1f9f91254062 .
+doc:FactsConvLstmRmseReduction None:has_text_value "RMSE reduction relative to decision tree regression models" .
+_:b148b66bf87a55daa329436689752f9e rdf:reifies <<( doc:FactsConvLstmRmseReduction None:has_text_value "RMSE reduction relative to decision tree regression models" )>> ;
+	prov:wasDerivedFrom doc:1f9f91254062 .
+doc:FactsFailureScenarios cco:is_about doc:FactsVibrationAlongAxes .
+_:bb48763364973baae48f1a76c441922d rdf:reifies <<( doc:FactsFailureScenarios cco:is_about doc:FactsVibrationAlongAxes )>> ;
+	prov:wasDerivedFrom doc:1f9f91254062 .
+doc:FactsDecisionTreeRegression a cco:Algorithm .
+_:b63c86dd78b90c4839150b6e6edf249a rdf:reifies <<( doc:FactsDecisionTreeRegression rdf:type cco:Algorithm )>> ;
+	prov:wasDerivedFrom doc:1f9f91254062 .
+doc:FactsTemperatureAcrossCylinders None:has_text_value "fluctuations in cooling water temperatures" .
+_:a18ea08a2c306abbe271bd330673580f rdf:reifies <<( doc:FactsTemperatureAcrossCylinders None:has_text_value "fluctuations in cooling water temperatures" )>> ;
+	prov:wasDerivedFrom doc:1f9f91254062 .
+_:b6fb6c991cdcbc5abd908ab08af35c89 prov:wasDerivedFrom doc:1f9f91254062 .
+doc:Factsarticle1_title_5 None:has_text_value "ACCEPTED MANUSCRIPT ARTICLE IN PRESS" .
+_:d943915ca94db8b98425270cb4b9976 rdf:reifies <<( doc:Factsarticle1_title_5 None:has_text_value "ACCEPTED MANUSCRIPT ARTICLE IN PRESS" )>> ;
+	prov:wasDerivedFrom doc:1f9f91254062 .
+doc:FactsConvLstmModel rdfs:label "multivariate ConvLSTM time-series model" .
+_:ae42034ba0d54ab99fdd9ce300dd5c39 rdf:reifies <<( doc:FactsConvLstmModel rdfs:label "multivariate ConvLSTM time-series model" )>> ;
+	prov:wasDerivedFrom doc:1f9f91254062 .
+_:bee37b7da20041b49488698f4b44060b prov:wasDerivedFrom doc:1f9f91254062 .
+doc:FactsConvLstmModelType None:has_text_value "time series analysis" .
+_:c8e6e2a91acd9ee6f95b97590449117c rdf:reifies <<( doc:FactsConvLstmModelType None:has_text_value "time series analysis" )>> ;
+	prov:wasDerivedFrom doc:1f9f91254062 .
+doc:FactsFailureScenarios rdfs:label "various failure scenarios replicated in controlled simulations" .
+_:aef5c709526a1a455278e304137cd9be rdf:reifies <<( doc:FactsFailureScenarios rdfs:label "various failure scenarios replicated in controlled simulations" )>> ;
+	prov:wasDerivedFrom doc:1f9f91254062 .
+_:b575ec7d6f4d27e52c03b0276abe338a prov:wasDerivedFrom doc:1f9f91254062 .
+doc:FactsRfAccuracy schema1:value 82.168 .
+_:cfe42d71622b5ad24b39a7c14f4e8338 rdf:reifies <<( doc:FactsRfAccuracy schema1:value 82.168 )>> ;
+	prov:wasDerivedFrom doc:1f9f91254062 .
+doc:FactsAnalysis1 cco:is_about doc:FactsRfClassifier .
+_:e5802dcfb1736108e59b82d492edd5cb rdf:reifies <<( doc:FactsAnalysis1 cco:is_about doc:FactsRfClassifier )>> ;
+	prov:wasDerivedFrom doc:1f9f91254062 .
+doc:FactsRfClassifier rdfs:label "Random Forest classifier (RF)" .
+_:bae8802fab3274a057daad25e3928680 rdf:reifies <<( doc:FactsRfClassifier rdfs:label "Random Forest classifier (RF)" )>> ;
+	prov:wasDerivedFrom doc:1f9f91254062 .
+doc:FactsAnalysis1 rdfs:label "analysis of collected data using ConvLSTM and RF classifier" .
+_:f97a14d41628b43d84255a317408fb7b rdf:reifies <<( doc:FactsAnalysis1 rdfs:label "analysis of collected data using ConvLSTM and RF classifier" )>> ;
+	prov:wasDerivedFrom doc:1f9f91254062 .
+doc:FactsRfAccuracy cco:describes doc:FactsRfClassifier .
+_:a762d03876a894d10959e8e5b5a0727c rdf:reifies <<( doc:FactsRfAccuracy cco:describes doc:FactsRfClassifier )>> ;
+	prov:wasDerivedFrom doc:1f9f91254062 .
+doc:FactsConvLstmModelType a None:Model_type .
+_:da699777872fc4441758cf56ee627320 rdf:reifies <<( doc:FactsConvLstmModelType rdf:type None:Model_type )>> ;
+	prov:wasDerivedFrom doc:1f9f91254062 .
+doc:FactsArticle1_2 rdfs:label "Article (accepted manuscript, in press)" .
+_:f7f4738f566212e64e6635ed4647ce66 rdf:reifies <<( doc:FactsArticle1_2 rdfs:label "Article (accepted manuscript, in press)" )>> ;
+	prov:wasDerivedFrom doc:1f9f91254062 .
+doc:4a669f0a6570 a prov:Entity , schema:text ;
+	prov:generatedAtTime "2026-07-11T04:39:42.316793Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+	schema:position 2 ;
+	schema:identifier "4a669f0a6570" .
+_:a40f2af4315a2b512465a94305506c14 prov:wasDerivedFrom doc:4a669f0a6570 .
+doc:FactsDowntime_1 cd:characteristic "addresses emerging faults promptly" .
+_:bc4eca8eec949e9fb21a084242a57a3 rdf:reifies <<( doc:FactsDowntime_1 cd:characteristic "addresses emerging faults promptly" )>> ;
+	prov:wasDerivedFrom doc:4a669f0a6570 .
+doc:FactsShipsSectorEconomicImpact cd:annual_revenues_currency "USD" .
+_:af6d3f29a91d2cccc048b376c91cefff rdf:reifies <<( doc:FactsShipsSectorEconomicImpact cd:annual_revenues_currency "USD" )>> ;
+	prov:wasDerivedFrom doc:4a669f0a6570 .
+doc:FactsDowntime_1 a None:Predictive_maintenance_module_function .
+_:f31637c4dfde6abbafd37532d67f271a rdf:reifies <<( doc:FactsDowntime_1 rdf:type None:Predictive_maintenance_module_function )>> ;
+	prov:wasDerivedFrom doc:4a669f0a6570 .
+doc:FactsStatImproperSelection cd:percentage "33"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+_:a972fd49e6cb083c88680c753a66ef9d rdf:reifies <<( doc:FactsStatImproperSelection cd:percentage "33"^^<http://www.w3.org/2001/XMLSchema#decimal> )>> ;
+	prov:wasDerivedFrom doc:4a669f0a6570 .
+doc:FactsMaintenanceEnvironmentalBenefit cd:reduces_fuel_usage true .
+_:d5e6b44939629bab7657a88ec1a42756 rdf:reifies <<( doc:FactsMaintenanceEnvironmentalBenefit cd:reduces_fuel_usage true )>> ;
+	prov:wasDerivedFrom doc:4a669f0a6570 .
+doc:FactsDowntime_1 cd:ensures doc:FactsDesiredOperatingCondition .
+_:ab09153fb7bb0e47ef88ba402edf8a4c rdf:reifies <<( doc:FactsDowntime_1 cd:ensures doc:FactsDesiredOperatingCondition )>> ;
+	prov:wasDerivedFrom doc:4a669f0a6570 .
+doc:FactsOperationalEfficiency a None:Performance_indicator .
+_:cf5bbaeeb3a0ede1964005dd1dddbe41 rdf:reifies <<( doc:FactsOperationalEfficiency rdf:type None:Performance_indicator )>> ;
+	prov:wasDerivedFrom doc:4a669f0a6570 .
+doc:FactsDowntime_1 cd:requires_investment_in "advanced technology and comprehensive training" .
+_:a6295efe6eaebc0712e56630b5be0b18 rdf:reifies <<( doc:FactsDowntime_1 cd:requires_investment_in "advanced technology and comprehensive training" )>> ;
+	prov:wasDerivedFrom doc:4a669f0a6570 .
+doc:FactsDowntime_1 cd:characteristic "responds to breakdowns" .
+_:b038fc64f54e119cc4590c29fd6acf02 rdf:reifies <<( doc:FactsDowntime_1 cd:characteristic "responds to breakdowns" )>> ;
+	prov:wasDerivedFrom doc:4a669f0a6570 .
+doc:FactsWellMaintainedVessels cd:enable_efficient_movement_of_goods true .
+_:cba0d7f2c5dcb48328e09b764cf6f940 rdf:reifies <<( doc:FactsWellMaintainedVessels cd:enable_efficient_movement_of_goods true )>> ;
+	prov:wasDerivedFrom doc:4a669f0a6570 .
+doc:FactsDowntime_1 cd:benefit doc:FactsOperationalEfficiency .
+_:f1b79b5802ce6c1dfba66a728ce69901 rdf:reifies <<( doc:FactsDowntime_1 cd:benefit doc:FactsOperationalEfficiency )>> ;
+	prov:wasDerivedFrom doc:4a669f0a6570 .
+doc:FactsShipsSectorEconomicImpact cd:percentage_global_output "5"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+_:ca5c510eacb5abd6c7e9dbdd25ac49c7 rdf:reifies <<( doc:FactsShipsSectorEconomicImpact cd:percentage_global_output "5"^^<http://www.w3.org/2001/XMLSchema#decimal> )>> ;
+	prov:wasDerivedFrom doc:4a669f0a6570 .
+doc:FactsMaintenanceEnvironmentalBenefit a None:Performance_value .
+_:c9b82443f1791b0b3fff83e9900c07fc rdf:reifies <<( doc:FactsMaintenanceEnvironmentalBenefit rdf:type None:Performance_value )>> ;
+	prov:wasDerivedFrom doc:4a669f0a6570 .
+doc:FactsDesiredOperatingCondition a obo:BFO_0000019 .
+_:cd0ca18667c09c4e5d5d9ca77b6fdd7f rdf:reifies <<( doc:FactsDesiredOperatingCondition rdf:type obo:BFO_0000019 )>> ;
+	prov:wasDerivedFrom doc:4a669f0a6570 .
+doc:FactsStatImproperSelection cd:reported_by "European Commission" .
+_:f79205d35f8112d74e393b09389e8106 rdf:reifies <<( doc:FactsStatImproperSelection cd:reported_by "European Commission" )>> ;
+	prov:wasDerivedFrom doc:4a669f0a6570 .
+doc:FactsDowntime_1 cd:reduces_downtime true .
+_:b7d6c01a23a324f540f18932d5c9abdd rdf:reifies <<( doc:FactsDowntime_1 cd:reduces_downtime true )>> ;
+	prov:wasDerivedFrom doc:4a669f0a6570 .
+_:b575ec7d6f4d27e52c03b0276abe338a prov:wasDerivedFrom doc:4a669f0a6570 .
+doc:FactsDowntime_1 cd:can_lead_to doc:FactsRepairAndReplacementCosts .
+_:bcb24d7f5d8743384dc360dcef5700be rdf:reifies <<( doc:FactsDowntime_1 cd:can_lead_to doc:FactsRepairAndReplacementCosts )>> ;
+	prov:wasDerivedFrom doc:4a669f0a6570 .
+doc:FactsSectorDependency cd:description "reliable and well-maintained vessels are necessary for efficient movement of goods and commodities globally" .
+_:ddde42aef997719032003b3285da0579 rdf:reifies <<( doc:FactsSectorDependency cd:description "reliable and well-maintained vessels are necessary for efficient movement of goods and commodities globally" )>> ;
+	prov:wasDerivedFrom doc:4a669f0a6570 .
+doc:Factsship_1 cd:contributes_to doc:FactsShipsSectorEconomicImpact .
+_:bbf60addb1bb967157a2e8c0d1f7b4 rdf:reifies <<( doc:Factsship_1 cd:contributes_to doc:FactsShipsSectorEconomicImpact )>> ;
+	prov:wasDerivedFrom doc:4a669f0a6570 .
+doc:Factsship_1 a None:Maintainable_item .
+_:ff40c51ad0aea4014881e304ab7115ef rdf:reifies <<( doc:Factsship_1 rdf:type None:Maintainable_item )>> ;
+	prov:wasDerivedFrom doc:4a669f0a6570 .
+doc:FactsDowntime_1 cd:characteristic "uses data analytics to foresee potential issues" .
+_:f0755c34ca8a7bfd59a4adc82bb97e50 rdf:reifies <<( doc:FactsDowntime_1 cd:characteristic "uses data analytics to foresee potential issues" )>> ;
+	prov:wasDerivedFrom doc:4a669f0a6570 .
+doc:FactsDieselEngine cd:importance "critical" .
+_:ca69a18345276e32c850ccfc5bb17998 rdf:reifies <<( doc:FactsDieselEngine cd:importance "critical" )>> ;
+	prov:wasDerivedFrom doc:4a669f0a6570 .
+doc:FactsRepairAndReplacementCosts a None:Performance_value .
+_:df3002c971ccc78dbace461dd69d197b rdf:reifies <<( doc:FactsRepairAndReplacementCosts rdf:type None:Performance_value )>> ;
+	prov:wasDerivedFrom doc:4a669f0a6570 .
+doc:FactsShipsSectorEconomicImpact cd:annual_revenues "500000000000"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+_:c420c18c53569cadd026d065962b6a6c rdf:reifies <<( doc:FactsShipsSectorEconomicImpact cd:annual_revenues "500000000000"^^<http://www.w3.org/2001/XMLSchema#decimal> )>> ;
+	prov:wasDerivedFrom doc:4a669f0a6570 .
+doc:FactsDowntime_1 cd:risk "may escalate long-term expenses" .
+_:d877ddc9bd4277a8cb9f24dbeaea82ca rdf:reifies <<( doc:FactsDowntime_1 cd:risk "may escalate long-term expenses" )>> ;
+	prov:wasDerivedFrom doc:4a669f0a6570 .
+doc:FactsDowntime_1 cd:characteristic "routine scheduled checks to anticipate deterioration" .
+_:e14326e04c4219e5a30769bf9c0727ee rdf:reifies <<( doc:FactsDowntime_1 cd:characteristic "routine scheduled checks to anticipate deterioration" )>> ;
+	prov:wasDerivedFrom doc:4a669f0a6570 .
+doc:FactsShipsSectorEconomicImpact cd:ship_construction_currency "USD" .
+_:c8cd27e97302c19b9547d126d98917a6 rdf:reifies <<( doc:FactsShipsSectorEconomicImpact cd:ship_construction_currency "USD" )>> ;
+	prov:wasDerivedFrom doc:4a669f0a6570 .
+doc:FactsAiDrivenSolution cd:integrates_into doc:FactsDowntime_1 .
+_:cad9e8964f658d2c48c6bc44ab77c00 rdf:reifies <<( doc:FactsAiDrivenSolution cd:integrates_into doc:FactsDowntime_1 )>> ;
+	prov:wasDerivedFrom doc:4a669f0a6570 .
+doc:FactsAiDrivenSolution cd:improves doc:FactsOperationalEfficiency .
+_:c945752cddcb725c0a962a824f7655ec rdf:reifies <<( doc:FactsAiDrivenSolution cd:improves doc:FactsOperationalEfficiency )>> ;
+	prov:wasDerivedFrom doc:4a669f0a6570 .
+doc:FactsDowntime_1 cd:reduces doc:FactsDowntime_1 .
+_:ee04b2d62941d4ec739a1bb43edaa25a rdf:reifies <<( doc:FactsDowntime_1 cd:reduces doc:FactsDowntime_1 )>> ;
+	prov:wasDerivedFrom doc:4a669f0a6570 .
+doc:FactsDowntime_1 cd:risk "significant costs and operational disruptions" .
+_:cc42eadefe2f1a5f25042a08abc56052 rdf:reifies <<( doc:FactsDowntime_1 cd:risk "significant costs and operational disruptions" )>> ;
+	prov:wasDerivedFrom doc:4a669f0a6570 .
+doc:FactsMaintenanceEnvironmentalBenefit cd:reduces_emissions true .
+_:b1de68d932cbaa70704aaaaff7db3469 rdf:reifies <<( doc:FactsMaintenanceEnvironmentalBenefit cd:reduces_emissions true )>> ;
+	prov:wasDerivedFrom doc:4a669f0a6570 .
+doc:FactsShipsSectorEconomicImpact a cco:DescriptiveInformationContentEntity .
+_:fb61e41bde1b4eba0385a7e3dc6135e9 rdf:reifies <<( doc:FactsShipsSectorEconomicImpact rdf:type cco:DescriptiveInformationContentEntity )>> ;
+	prov:wasDerivedFrom doc:4a669f0a6570 .
+doc:Factsship_1 cd:construction_cost "150000000"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+_:b300ae7c3b3067e1b3e1de7d926d0e16 rdf:reifies <<( doc:Factsship_1 cd:construction_cost "150000000"^^<http://www.w3.org/2001/XMLSchema#decimal> )>> ;
+	prov:wasDerivedFrom doc:4a669f0a6570 .
+doc:Factsship_1 obo:BFO_0000051 doc:FactsDieselEngine .
+_:b06dc9edd5bf02f553514956939b8548 rdf:reifies <<( doc:Factsship_1 obo:BFO_0000051 doc:FactsDieselEngine )>> ;
+	prov:wasDerivedFrom doc:4a669f0a6570 .
+doc:FactsDowntime_1 a obo:BFO_0000019 .
+_:d9420e545f3de76a09883da11ee2df2d rdf:reifies <<( doc:FactsDowntime_1 rdf:type obo:BFO_0000019 )>> ;
+	prov:wasDerivedFrom doc:4a669f0a6570 .
+doc:FactsDowntime_1 a obo:BFO_0000034 .
+_:f7de0617c5e33b68bd4892f104086217 rdf:reifies <<( doc:FactsDowntime_1 rdf:type obo:BFO_0000034 )>> ;
+	prov:wasDerivedFrom doc:4a669f0a6570 .
+doc:Factsship_1 schema1:priceCurrency "USD" .
+_:af7c0cf9dc801d146e5a80a691c571ff rdf:reifies <<( doc:Factsship_1 schema1:priceCurrency "USD" )>> ;
+	prov:wasDerivedFrom doc:4a669f0a6570 .
+doc:FactsAiDrivenSolution a cco:Algorithm .
+_:a79888497164bc1a780c5f1674a47e1e rdf:reifies <<( doc:FactsAiDrivenSolution rdf:type cco:Algorithm )>> ;
+	prov:wasDerivedFrom doc:4a669f0a6570 .
+doc:FactsShipsSectorEconomicImpact cd:ship_construction_cost_each "150000000"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+_:dd9639792b3da62df1c518887db56636 rdf:reifies <<( doc:FactsShipsSectorEconomicImpact cd:ship_construction_cost_each "150000000"^^<http://www.w3.org/2001/XMLSchema#decimal> )>> ;
+	prov:wasDerivedFrom doc:4a669f0a6570 .
+doc:FactsWellMaintainedVessels a None:Maintainable_item .
+_:b96a9f1281804fd8b11df8ff8ed53e95 rdf:reifies <<( doc:FactsWellMaintainedVessels rdf:type None:Maintainable_item )>> ;
+	prov:wasDerivedFrom doc:4a669f0a6570 .
+doc:FactsStatImproperSelection cd:description "percentage of maintenance costs lost due to improper selection of maintenance activities" .
+_:e32af1a7ce0188b14084b543bc6e4fd1 rdf:reifies <<( doc:FactsStatImproperSelection cd:description "percentage of maintenance costs lost due to improper selection of maintenance activities" )>> ;
+	prov:wasDerivedFrom doc:4a669f0a6570 .
+doc:FactsEcSurvey a cco:InformationBearingArtifact .
+_:b075e4247987b8f7a6719f0d585b5cf1 rdf:reifies <<( doc:FactsEcSurvey rdf:type cco:InformationBearingArtifact )>> ;
+	prov:wasDerivedFrom doc:4a669f0a6570 .
+doc:FactsEcSurvey cd:reports_statistic doc:FactsStatImproperSelection .
+_:a84f0da5cae8d23300544cfd187cfa13 rdf:reifies <<( doc:FactsEcSurvey cd:reports_statistic doc:FactsStatImproperSelection )>> ;
+	prov:wasDerivedFrom doc:4a669f0a6570 .
+doc:FactsSectorDependency a cco:DescriptiveInformationContentEntity .
+_:e02b22c8dfa3f1b979f19b83003040f6 rdf:reifies <<( doc:FactsSectorDependency rdf:type cco:DescriptiveInformationContentEntity )>> ;
+	prov:wasDerivedFrom doc:4a669f0a6570 .
+doc:FactsStatImproperSelection a None:Performance_value .
+_:da4ec13e8097547d848d5c6eb508d057 rdf:reifies <<( doc:FactsStatImproperSelection rdf:type None:Performance_value )>> ;
+	prov:wasDerivedFrom doc:4a669f0a6570 .
+cco:InformationBearingArtifact owl:sameAs cco:InformationProcessingArtifact .

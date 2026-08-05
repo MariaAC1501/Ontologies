@@ -1,0 +1,440 @@
+@prefix None: <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD/seed#> .
+@prefix cco: <http://www.ontologyrepository.com/CommonCoreOntologies/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doc: <https://growgraph.dev/doc/e55acaf01cc5/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix cd: <https://growgraph.dev/facts> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix schema: <https://schema.org/> .
+@prefix schema1: <http://schema.org/> .
+doc:eb877ab0f7b9 a prov:Entity , schema:text ;
+	prov:generatedAtTime "2026-07-12T23:41:11.632407Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+	schema:position 0 ;
+	schema:identifier "eb877ab0f7b9" .
+doc:Factsperformance1_2 <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#has_text_value> "0.087 %" .
+_:e1a653cc0ff416a5815bedcc0d743e66 rdf:reifies <<( doc:Factsperformance1_2 <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#has_text_value> "0.087 %" )>> ;
+	prov:wasDerivedFrom doc:eb877ab0f7b9 .
+doc:Factsperformance1_2 <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#has_text_value> "Normalized Sum of Squared Errors" .
+_:c045f79475a581c0d6047f4df9258eda rdf:reifies <<( doc:Factsperformance1_2 <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#has_text_value> "Normalized Sum of Squared Errors" )>> ;
+	prov:wasDerivedFrom doc:eb877ab0f7b9 .
+doc:Factsfaults rdfs:label "sliding mode observer" .
+_:d80d00361b798336cd5c12fac8924305 rdf:reifies <<( doc:Factsfaults rdfs:label "sliding mode observer" )>> ;
+	prov:wasDerivedFrom doc:eb877ab0f7b9 .
+doc:Factsfaults a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Fault_detection> .
+_:c091f5070d0fb8875de1768dac62635d rdf:reifies <<( doc:Factsfaults rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Fault_detection> )>> ;
+	prov:wasDerivedFrom doc:eb877ab0f7b9 .
+doc:Factspaper_model1 a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Predictive_maintenance_model> .
+_:f290762345f0a47f6492f7ca9b999abf rdf:reifies <<( doc:Factspaper_model1 rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Predictive_maintenance_model> )>> ;
+	prov:wasDerivedFrom doc:eb877ab0f7b9 .
+doc:Factsjournal1_10 a schema1:Periodical .
+_:d7c164aa71a8be457e6c5168906c135f rdf:reifies <<( doc:Factsjournal1_10 rdf:type schema1:Periodical )>> ;
+	prov:wasDerivedFrom doc:eb877ab0f7b9 .
+doc:Factsfaults dcterms:description "in blade-pitch measurements" .
+_:ace9d619decea61c252237b115640010 rdf:reifies <<( doc:Factsfaults dcterms:description "in blade-pitch measurements" )>> ;
+	prov:wasDerivedFrom doc:eb877ab0f7b9 .
+doc:FactswindTurbine cd:has_fault_type doc:Factsfaults .
+_:e44d103d507a7d412e10fa843d68ee34 rdf:reifies <<( doc:FactswindTurbine cd:has_fault_type doc:Factsfaults )>> ;
+	prov:wasDerivedFrom doc:eb877ab0f7b9 .
+doc:Factspaper_model1 cco:describes doc:FactswindTurbine .
+_:b8ab86afef8ae3f2500d7417b34df81 rdf:reifies <<( doc:Factspaper_model1 cco:describes doc:FactswindTurbine )>> ;
+	prov:wasDerivedFrom doc:eb877ab0f7b9 .
+doc:Factsrmse_1 a schema1:PropertyValue .
+_:ad096b7a204119cdb6b90998600418b9 rdf:reifies <<( doc:Factsrmse_1 rdf:type schema1:PropertyValue )>> ;
+	prov:wasDerivedFrom doc:eb877ab0f7b9 .
+doc:Factssimulation1_1 rdfs:label "MATLAB/Simulink validations" .
+_:c131f87699ea476683a60610903751af rdf:reifies <<( doc:Factssimulation1_1 rdfs:label "MATLAB/Simulink validations" )>> ;
+	prov:wasDerivedFrom doc:eb877ab0f7b9 .
+doc:Factsjournal1_10 schema1:name "International Journal of Renewable Energy Development" .
+_:ae59cec1ae6d0633e329e10518c6acf1 rdf:reifies <<( doc:Factsjournal1_10 schema1:name "International Journal of Renewable Energy Development" )>> ;
+	prov:wasDerivedFrom doc:eb877ab0f7b9 .
+doc:Factstitle1_55 a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Article_identifier> .
+_:b7a5adac47e671f96ded3ba54294d294 rdf:reifies <<( doc:Factstitle1_55 rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Article_identifier> )>> ;
+	prov:wasDerivedFrom doc:eb877ab0f7b9 .
+doc:Factssimulation1_1 a schema1:Event .
+_:da6f2582bd9cb11a8512fda96714f05f rdf:reifies <<( doc:Factssimulation1_1 rdf:type schema1:Event )>> ;
+	prov:wasDerivedFrom doc:eb877ab0f7b9 .
+doc:Factsarticle1_74 <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#has_identifier> doc:Factstitle1_55 .
+_:a815ee2fe986a608d790032645dea2ee rdf:reifies <<( doc:Factsarticle1_74 <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#has_identifier> doc:Factstitle1_55 )>> ;
+	prov:wasDerivedFrom doc:eb877ab0f7b9 .
+doc:Factsarticle1_74 a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Predictive_Maintenance_Article> .
+_:f03174dc0148f6549f24fcadc84e2eae rdf:reifies <<( doc:Factsarticle1_74 rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Predictive_Maintenance_Article> )>> ;
+	prov:wasDerivedFrom doc:eb877ab0f7b9 .
+doc:Factsjournal1_10 schema1:url <https://ijred.cbiore.id> .
+_:e5780a60b83e1d2641dd3a4c91fa9d43 rdf:reifies <<( doc:Factsjournal1_10 schema1:url <https://ijred.cbiore.id> )>> ;
+	prov:wasDerivedFrom doc:eb877ab0f7b9 .
+doc:Factsarticle1_74 <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#has_title> doc:Factstitle1_55 .
+_:ba4b0b94eda9be5a86c193040cc1ccf9 rdf:reifies <<( doc:Factsarticle1_74 <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#has_title> doc:Factstitle1_55 )>> ;
+	prov:wasDerivedFrom doc:eb877ab0f7b9 .
+doc:Factstitle1_55 <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#has_text_value> "Wind turbine fault estimation using sliding mode observer based on Takagi-Sugeno fuzzy model" .
+_:e33e8ebe45888423794624a3dd5a607e rdf:reifies <<( doc:Factstitle1_55 <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#has_text_value> "Wind turbine fault estimation using sliding mode observer based on Takagi-Sugeno fuzzy model" )>> ;
+	prov:wasDerivedFrom doc:eb877ab0f7b9 .
+doc:Factsperformance1_2 a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Performance_value> .
+_:cbbcd520c13df25bd184fc62187dfff7 rdf:reifies <<( doc:Factsperformance1_2 rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Performance_value> )>> ;
+	prov:wasDerivedFrom doc:eb877ab0f7b9 .
+doc:Factsrmse_1 schema1:name "operating-point variations" .
+_:afeaa7827cba2aeafc97dfc15d044fdf rdf:reifies <<( doc:Factsrmse_1 schema1:name "operating-point variations" )>> ;
+	prov:wasDerivedFrom doc:eb877ab0f7b9 .
+doc:Factstitle1_55 a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Article_title> .
+_:bfc2fb7b1c1ee97ae3b0cee36b78c38a rdf:reifies <<( doc:Factstitle1_55 rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Article_title> )>> ;
+	prov:wasDerivedFrom doc:eb877ab0f7b9 .
+doc:Factssimulation1_1 schema1:variableMeasured doc:Factsrmse_1 .
+_:ff2f19d47679682d8f70531d9dbb4bcf rdf:reifies <<( doc:Factssimulation1_1 schema1:variableMeasured doc:Factsrmse_1 )>> ;
+	prov:wasDerivedFrom doc:eb877ab0f7b9 .
+doc:Factsrmse_1 schema1:name "disturbances" .
+_:fb12f1111314b6386a6eaef9d857ee9b rdf:reifies <<( doc:Factsrmse_1 schema1:name "disturbances" )>> ;
+	prov:wasDerivedFrom doc:eb877ab0f7b9 .
+doc:Factsrmse_1 schema1:name "wind fluctuations" .
+_:e4317f1190c3300bc81d79c4406efa33 rdf:reifies <<( doc:Factsrmse_1 schema1:name "wind fluctuations" )>> ;
+	prov:wasDerivedFrom doc:eb877ab0f7b9 .
+doc:FactswindTurbine rdfs:label "wind turbine" .
+_:d2ab0843741af590e2fdbc94429bd084 rdf:reifies <<( doc:FactswindTurbine rdfs:label "wind turbine" )>> ;
+	prov:wasDerivedFrom doc:eb877ab0f7b9 .
+doc:Factstitle1_55 <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#has_text_value> "International Journal of Renewable Energy Development" .
+_:b0201f152666fcc9eb50fcb63393617d rdf:reifies <<( doc:Factstitle1_55 <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#has_text_value> "International Journal of Renewable Energy Development" )>> ;
+	prov:wasDerivedFrom doc:eb877ab0f7b9 .
+doc:Factsperformance1_2 a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Performance_indicator> .
+_:e29b788d99acd1775abba26f0cc5b173 rdf:reifies <<( doc:Factsperformance1_2 rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Performance_indicator> )>> ;
+	prov:wasDerivedFrom doc:eb877ab0f7b9 .
+doc:Factsfaults rdfs:label "fault estimation" .
+_:ea116dde18c666e969a78e1a49cbfc0a rdf:reifies <<( doc:Factsfaults rdfs:label "fault estimation" )>> ;
+	prov:wasDerivedFrom doc:eb877ab0f7b9 .
+doc:FactswindTurbine a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Maintainable_item> .
+_:c2d743a64203ba4311cd3f8894b81cb7 rdf:reifies <<( doc:FactswindTurbine rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Maintainable_item> )>> ;
+	prov:wasDerivedFrom doc:eb877ab0f7b9 .
+doc:Factspaper_result1 dcterms:description "accurate tracking, fast stable fault reconstruction, bounded residuals, and avoiding drift" .
+_:e8013ff2c2b628554982d0c9e0b99cb8 rdf:reifies <<( doc:Factspaper_result1 dcterms:description "accurate tracking, fast stable fault reconstruction, bounded residuals, and avoiding drift" )>> ;
+	prov:wasDerivedFrom doc:eb877ab0f7b9 .
+doc:Factspaper_model1 rdfs:label "Takagi-Sugeno fuzzy model" .
+_:f3bf8536af977d7425159b2a11f28a2e rdf:reifies <<( doc:Factspaper_model1 rdfs:label "Takagi-Sugeno fuzzy model" )>> ;
+	prov:wasDerivedFrom doc:eb877ab0f7b9 .
+doc:Factsfaults rdfs:label "actuator fault" .
+_:ad882ab4ede143e34aacc43a5e3b896c rdf:reifies <<( doc:Factsfaults rdfs:label "actuator fault" )>> ;
+	prov:wasDerivedFrom doc:eb877ab0f7b9 .
+doc:Factssimulation1_1 dcterms:description "realistic operating conditions" .
+_:d8312516ccf2abfcc3420fd5d186f68b rdf:reifies <<( doc:Factssimulation1_1 dcterms:description "realistic operating conditions" )>> ;
+	prov:wasDerivedFrom doc:eb877ab0f7b9 .
+doc:Factspaper_result1 a schema1:Observation .
+_:dd286ac3626f841575bee3fbf694b5e7 rdf:reifies <<( doc:Factspaper_result1 rdf:type schema1:Observation )>> ;
+	prov:wasDerivedFrom doc:eb877ab0f7b9 .
+doc:Factsperformance1_2 rdfs:label "NSSE" .
+_:a3f04a03474eb3bab732323c12328b4c rdf:reifies <<( doc:Factsperformance1_2 rdfs:label "NSSE" )>> ;
+	prov:wasDerivedFrom doc:eb877ab0f7b9 .
+doc:Factsfaults rdfs:label "sensor fault" .
+_:e2bcfe1f6c14cb5d2b9bb9f123ee3fd3 rdf:reifies <<( doc:Factsfaults rdfs:label "sensor fault" )>> ;
+	prov:wasDerivedFrom doc:eb877ab0f7b9 .
+doc:Factsfaults dcterms:description "affects generator torque" .
+_:c0f9061dc1af641d02971653fa0e611 rdf:reifies <<( doc:Factsfaults dcterms:description "affects generator torque" )>> ;
+	prov:wasDerivedFrom doc:eb877ab0f7b9 .
+doc:4208f22f5020 a prov:Entity , schema:text ;
+	prov:generatedAtTime "2026-07-12T23:41:11.635405Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+	schema:position 1 ;
+	schema:identifier "4208f22f5020" .
+doc:Factsyear2026_18 None:has_interger_value 2026 .
+_:f3fe4b9c02da4008526e9eea6f93d142 rdf:reifies <<( doc:Factsyear2026_18 None:has_interger_value 2026 )>> ;
+	prov:wasDerivedFrom doc:4208f22f5020 .
+doc:FactsslidingModeObserver a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Fault_detection> .
+_:ba0b42d15b2ec98fa9f0f3ed7d273ba0 rdf:reifies <<( doc:FactsslidingModeObserver rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Fault_detection> )>> ;
+	prov:wasDerivedFrom doc:4208f22f5020 .
+doc:FactswindTurbineMonitoring None:has_predictive_maintenance_function doc:FactsslidingModeObserver .
+_:b077e7c97b5ce2467b619fe870fd4444 rdf:reifies <<( doc:FactswindTurbineMonitoring None:has_predictive_maintenance_function doc:FactsslidingModeObserver )>> ;
+	prov:wasDerivedFrom doc:4208f22f5020 .
+doc:Factslicense1_3 a schema1:CreativeWork .
+_:cfe6af8e517243996c33866c501d89b1 rdf:reifies <<( doc:Factslicense1_3 rdf:type schema1:CreativeWork )>> ;
+	prov:wasDerivedFrom doc:4208f22f5020 .
+doc:Factsfaults a None:Design_detail .
+_:c7e2b01fd80914c30a689fd144d3152a rdf:reifies <<( doc:Factsfaults rdf:type None:Design_detail )>> ;
+	prov:wasDerivedFrom doc:4208f22f5020 .
+_:c2d743a64203ba4311cd3f8894b81cb7 prov:wasDerivedFrom doc:4208f22f5020 .
+doc:Factsfaults rdfs:label "sensor faults"@en .
+_:d65d4fabffa82a61ff46f94e93c1d41f rdf:reifies <<( doc:Factsfaults rdfs:label "sensor faults"@en )>> ;
+	prov:wasDerivedFrom doc:4208f22f5020 .
+doc:Factsfaults a None:Fault_identification .
+_:fac5ca6405663d7eace4730fa64b98e3 rdf:reifies <<( doc:Factsfaults rdf:type None:Fault_identification )>> ;
+	prov:wasDerivedFrom doc:4208f22f5020 .
+doc:FactswindTurbineMonitoring None:has_predictive_maintenance_function doc:FactsobserverBank .
+_:d4b87d34591b7ff7385375ce42d18125 rdf:reifies <<( doc:FactswindTurbineMonitoring None:has_predictive_maintenance_function doc:FactsobserverBank )>> ;
+	prov:wasDerivedFrom doc:4208f22f5020 .
+doc:FactsslidingModeObserver rdfs:label "sliding-mode observer"@en .
+_:f99e35064c5bc38113cb3796d268f6b6 rdf:reifies <<( doc:FactsslidingModeObserver rdfs:label "sliding-mode observer"@en )>> ;
+	prov:wasDerivedFrom doc:4208f22f5020 .
+doc:FactsfastConvergence a None:Design_detail .
+_:a466e6a28128b8412649b40852a97b8e rdf:reifies <<( doc:FactsfastConvergence rdf:type None:Design_detail )>> ;
+	prov:wasDerivedFrom doc:4208f22f5020 .
+doc:FactsrealTimeComputationBudgets rdfs:label "real-time computation budgets"@en .
+_:d012dbdf5a646fc099a52c795f10e46f rdf:reifies <<( doc:FactsrealTimeComputationBudgets rdfs:label "real-time computation budgets"@en )>> ;
+	prov:wasDerivedFrom doc:4208f22f5020 .
+doc:FactsobserverBank None:has_design_detail doc:FactsboundedErrorDynamics .
+_:cafe132ba2e8ed645129be6a846d2fef rdf:reifies <<( doc:FactsobserverBank None:has_design_detail doc:FactsboundedErrorDynamics )>> ;
+	prov:wasDerivedFrom doc:4208f22f5020 .
+doc:Factspaper_model1 rdfs:label "TS fuzzy models"@en .
+_:b515a9d05857e21ac515d2bf783508c2 rdf:reifies <<( doc:Factspaper_model1 rdfs:label "TS fuzzy models"@en )>> ;
+	prov:wasDerivedFrom doc:4208f22f5020 .
+doc:FactswindTurbineMonitoring rdfs:label "wind turbine monitoring"@en .
+_:b4fba862690e08bc453da5b1b08ad539 rdf:reifies <<( doc:FactswindTurbineMonitoring rdfs:label "wind turbine monitoring"@en )>> ;
+	prov:wasDerivedFrom doc:4208f22f5020 .
+doc:FactsLpvFormulations rdfs:label "LPV formulations"@en .
+_:d20ff5fcafe11df56da0e3376971c97f rdf:reifies <<( doc:FactsLpvFormulations rdfs:label "LPV formulations"@en )>> ;
+	prov:wasDerivedFrom doc:4208f22f5020 .
+doc:FactswindTurbineMonitoring None:has_design_detail doc:Factsfaults .
+_:f6ac853ecfe466f52a85fb87f122d3f6 rdf:reifies <<( doc:FactswindTurbineMonitoring None:has_design_detail doc:Factsfaults )>> ;
+	prov:wasDerivedFrom doc:4208f22f5020 .
+_:bfc2fb7b1c1ee97ae3b0cee36b78c38a prov:wasDerivedFrom doc:4208f22f5020 .
+doc:Factsarticle1_74 None:has_publication_year doc:Factsyear2026_18 .
+_:e1ce24e1094d0c6aefbf08534e8dac0d rdf:reifies <<( doc:Factsarticle1_74 None:has_publication_year doc:Factsyear2026_18 )>> ;
+	prov:wasDerivedFrom doc:4208f22f5020 .
+doc:FactsrealTimeComputationBudgets a None:Design_detail .
+_:d2167b831d161b33e90dc2e0a6b2f6e9 rdf:reifies <<( doc:FactsrealTimeComputationBudgets rdf:type None:Design_detail )>> ;
+	prov:wasDerivedFrom doc:4208f22f5020 .
+doc:Factspublisher1_6 schema1:name "CBIORE" .
+_:ae21bfe21bfc1dd5e7dce9d190e5a7f5 rdf:reifies <<( doc:Factspublisher1_6 schema1:name "CBIORE" )>> ;
+	prov:wasDerivedFrom doc:4208f22f5020 .
+doc:Factslicense1_3 schema1:name "CC BY-SA 4.0" .
+_:ce5495f365cbd5946c4027eb75b03314 rdf:reifies <<( doc:Factslicense1_3 schema1:name "CC BY-SA 4.0" )>> ;
+	prov:wasDerivedFrom doc:4208f22f5020 .
+_:c091f5070d0fb8875de1768dac62635d prov:wasDerivedFrom doc:4208f22f5020 .
+doc:FactsslidingModeObserver None:has_design_detail doc:FactsfastConvergence .
+_:a87caf405979b3cbab0a29b1bc0f254d rdf:reifies <<( doc:FactsslidingModeObserver None:has_design_detail doc:FactsfastConvergence )>> ;
+	prov:wasDerivedFrom doc:4208f22f5020 .
+doc:FactsobserverBank rdfs:label "Luenberger observer"@en .
+_:e32e5b3831e82e17ab4b6346eca0b30d rdf:reifies <<( doc:FactsobserverBank rdfs:label "Luenberger observer"@en )>> ;
+	prov:wasDerivedFrom doc:4208f22f5020 .
+doc:Factsarticle1_74 a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Predictive_maintenance_model> .
+_:fa2b9163ab9a0f2e875a49fc7491d8ff rdf:reifies <<( doc:Factsarticle1_74 rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Predictive_maintenance_model> )>> ;
+	prov:wasDerivedFrom doc:4208f22f5020 .
+doc:FactswindTurbineMonitoring None:has_design_detail doc:FactsresidualDirectionality .
+_:a5ff00add6250b0eea5d33a1097f2002 rdf:reifies <<( doc:FactswindTurbineMonitoring None:has_design_detail doc:FactsresidualDirectionality )>> ;
+	prov:wasDerivedFrom doc:4208f22f5020 .
+doc:Factsfaults rdfs:label "actuator faults"@en .
+_:f6929ae325a6a9fa080e7a8057e09d43 rdf:reifies <<( doc:Factsfaults rdfs:label "actuator faults"@en )>> ;
+	prov:wasDerivedFrom doc:4208f22f5020 .
+doc:FactsobserverBank a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Fault_detection> .
+_:a34ef0eb94839fda00f2f038292fc360 rdf:reifies <<( doc:FactsobserverBank rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Fault_detection> )>> ;
+	prov:wasDerivedFrom doc:4208f22f5020 .
+doc:Factsarticle1_74 None:has_identifier doc:Factstitle1_55 .
+_:e592263535d728724e1899582c38f90b rdf:reifies <<( doc:Factsarticle1_74 None:has_identifier doc:Factstitle1_55 )>> ;
+	prov:wasDerivedFrom doc:4208f22f5020 .
+_:f290762345f0a47f6492f7ca9b999abf prov:wasDerivedFrom doc:4208f22f5020 .
+doc:FactsresidualDirectionality rdfs:label "residual directionality"@en .
+_:fff419860a9e31e889d6750a30d4d1a1 rdf:reifies <<( doc:FactsresidualDirectionality rdfs:label "residual directionality"@en )>> ;
+	prov:wasDerivedFrom doc:4208f22f5020 .
+doc:FactsfastConvergence rdfs:label "fast convergence"@en .
+_:bf90d2be219087ce6dbce5211f61fde5 rdf:reifies <<( doc:FactsfastConvergence rdfs:label "fast convergence"@en )>> ;
+	prov:wasDerivedFrom doc:4208f22f5020 .
+doc:FactswindTurbineMonitoring a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Predictive_maintenance_model> .
+_:a120e7def0ba945d5c1d4cdbf9aa43e rdf:reifies <<( doc:FactswindTurbineMonitoring rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Predictive_maintenance_model> )>> ;
+	prov:wasDerivedFrom doc:4208f22f5020 .
+doc:FactsdisturbanceDecoupling a None:Design_detail .
+_:cd7b9cb71fe23e7711de3bba59a7bd34 rdf:reifies <<( doc:FactsdisturbanceDecoupling rdf:type None:Design_detail )>> ;
+	prov:wasDerivedFrom doc:4208f22f5020 .
+doc:FactsobserverBank rdfs:label "observer bank"@en .
+_:ea581fbd22c9e91c0bd7f4f81ba2e7db rdf:reifies <<( doc:FactsobserverBank rdfs:label "observer bank"@en )>> ;
+	prov:wasDerivedFrom doc:4208f22f5020 .
+doc:Factslicense1_3 schema1:url <http://creativecommons.org/licenses/by-sa/4.0/> .
+_:e9fc41695b9ca322855a610b8adc79ec rdf:reifies <<( doc:Factslicense1_3 schema1:url <http://creativecommons.org/licenses/by-sa/4.0/> )>> ;
+	prov:wasDerivedFrom doc:4208f22f5020 .
+doc:Factsyear2026_18 a None:Publication_year .
+_:d109d4bbde909e4a84b0f971f3a5ccb3 rdf:reifies <<( doc:Factsyear2026_18 rdf:type None:Publication_year )>> ;
+	prov:wasDerivedFrom doc:4208f22f5020 .
+doc:Factspaper_model1 None:has_design_detail doc:FactsnonlinearTimeVaryingRegimes .
+_:d64e8b29d16d9a45793e61962529a9c0 rdf:reifies <<( doc:Factspaper_model1 None:has_design_detail doc:FactsnonlinearTimeVaryingRegimes )>> ;
+	prov:wasDerivedFrom doc:4208f22f5020 .
+doc:FactsobserverBank None:has_design_detail doc:FactsdisturbanceDecoupling .
+_:c4ce7d7b2ea9ea7728f8149bb3de9775 rdf:reifies <<( doc:FactsobserverBank None:has_design_detail doc:FactsdisturbanceDecoupling )>> ;
+	prov:wasDerivedFrom doc:4208f22f5020 .
+doc:Factsfaults rdfs:label "decision-grade diagnosis"@en .
+_:e4bb8c2e122d31bac0b02c1b88058320 rdf:reifies <<( doc:Factsfaults rdfs:label "decision-grade diagnosis"@en )>> ;
+	prov:wasDerivedFrom doc:4208f22f5020 .
+_:b7a5adac47e671f96ded3ba54294d294 prov:wasDerivedFrom doc:4208f22f5020 .
+doc:FactstsFramework None:describes_configuration doc:Factspaper_model1 .
+_:b3100ab24487091d7a46a23cbb1eb7f0 rdf:reifies <<( doc:FactstsFramework None:describes_configuration doc:Factspaper_model1 )>> ;
+	prov:wasDerivedFrom doc:4208f22f5020 .
+doc:Factsfaults rdfs:label "fault diagnosis"@en .
+_:ec54462e9cf8dfbf5a2c43807275d840 rdf:reifies <<( doc:Factsfaults rdfs:label "fault diagnosis"@en )>> ;
+	prov:wasDerivedFrom doc:4208f22f5020 .
+doc:FactslpvModel rdfs:label "LPV model"@en .
+_:f18c334967c14b2526e90fd14dd6035e rdf:reifies <<( doc:FactslpvModel rdfs:label "LPV model"@en )>> ;
+	prov:wasDerivedFrom doc:4208f22f5020 .
+doc:FactsobserverBank rdfs:label "unknown-input observer"@en .
+_:a6e7107f1c66b717c7a07153cdcbc34d rdf:reifies <<( doc:FactsobserverBank rdfs:label "unknown-input observer"@en )>> ;
+	prov:wasDerivedFrom doc:4208f22f5020 .
+doc:Factsfaults rdfs:label "fault identifiability"@en .
+_:e8274a5c2c9ee78efd4624a20206a2d7 rdf:reifies <<( doc:Factsfaults rdfs:label "fault identifiability"@en )>> ;
+	prov:wasDerivedFrom doc:4208f22f5020 .
+doc:FactswindTurbine rdfs:label "wind turbine"@en .
+_:bcde9114f9b1c1e4ea9b5fc7a0088b00 rdf:reifies <<( doc:FactswindTurbine rdfs:label "wind turbine"@en )>> ;
+	prov:wasDerivedFrom doc:4208f22f5020 .
+doc:FactsobserverBank rdfs:label "Kalman-filter estimator"@en .
+_:fc9dfc1e2a05bec5864bf579a7451388 rdf:reifies <<( doc:FactsobserverBank rdfs:label "Kalman-filter estimator"@en )>> ;
+	prov:wasDerivedFrom doc:4208f22f5020 .
+doc:FactsLpvFormulations a None:Model_configuration .
+_:ab6ee892c66e3002521bc0665ffdd13d rdf:reifies <<( doc:FactsLpvFormulations rdf:type None:Model_configuration )>> ;
+	prov:wasDerivedFrom doc:4208f22f5020 .
+doc:FactsresidualGeneration rdfs:label "residual generation"@en .
+_:c59a09ff83b10ad6161235221194a7d2 rdf:reifies <<( doc:FactsresidualGeneration rdfs:label "residual generation"@en )>> ;
+	prov:wasDerivedFrom doc:4208f22f5020 .
+doc:FactstsFramework a None:Model_configuration .
+_:f10f842c103a9694c89bc32863d3a55d rdf:reifies <<( doc:FactstsFramework rdf:type None:Model_configuration )>> ;
+	prov:wasDerivedFrom doc:4208f22f5020 .
+doc:FactsnonlinearTimeVaryingRegimes rdfs:label "nonlinear and time-varying regimes"@en .
+_:ec9e58654f87cb408ccb52624c241816 rdf:reifies <<( doc:FactsnonlinearTimeVaryingRegimes rdfs:label "nonlinear and time-varying regimes"@en )>> ;
+	prov:wasDerivedFrom doc:4208f22f5020 .
+doc:FactsresidualDirectionality a None:Design_detail .
+_:fd1f45d9655a77f743db0e03311f5007 rdf:reifies <<( doc:FactsresidualDirectionality rdf:type None:Design_detail )>> ;
+	prov:wasDerivedFrom doc:4208f22f5020 .
+doc:FactsboundedErrorDynamics a None:Design_detail .
+_:ea73859f171f7089ae4a5ace9862f6c9 rdf:reifies <<( doc:FactsboundedErrorDynamics rdf:type None:Design_detail )>> ;
+	prov:wasDerivedFrom doc:4208f22f5020 .
+doc:FactslpvModel a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Predictive_maintenance_model> .
+_:e3cd19c5dde06033b3423d6bda5ef896 rdf:reifies <<( doc:FactslpvModel rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Predictive_maintenance_model> )>> ;
+	prov:wasDerivedFrom doc:4208f22f5020 .
+doc:Factsarticle1_74 schema1:datePublished "2026-02-05"^^<http://www.w3.org/2001/XMLSchema#date> .
+_:d81bb0f6878c72c66270b88ea847276a rdf:reifies <<( doc:Factsarticle1_74 schema1:datePublished "2026-02-05"^^<http://www.w3.org/2001/XMLSchema#date> )>> ;
+	prov:wasDerivedFrom doc:4208f22f5020 .
+doc:Factstitle1_55 None:has_text_value "Open access article on robust model-based fault diagnosis for wind turbines" .
+_:c4f14caa72a6d5d2a3b3e39ef891a3a2 rdf:reifies <<( doc:Factstitle1_55 None:has_text_value "Open access article on robust model-based fault diagnosis for wind turbines" )>> ;
+	prov:wasDerivedFrom doc:4208f22f5020 .
+doc:FactsobserverBank None:has_design_detail doc:FactsrealTimeComputationBudgets .
+_:addada4279daa39841d4b81a8b161d3f rdf:reifies <<( doc:FactsobserverBank None:has_design_detail doc:FactsrealTimeComputationBudgets )>> ;
+	prov:wasDerivedFrom doc:4208f22f5020 .
+doc:Factsarticle1_74 None:has_title doc:Factstitle1_55 .
+_:ca8a1982a1dd0b273f250b5c28d1275d rdf:reifies <<( doc:Factsarticle1_74 None:has_title doc:Factstitle1_55 )>> ;
+	prov:wasDerivedFrom doc:4208f22f5020 .
+doc:FactsdisturbanceDecoupling rdfs:label "disturbance decoupling"@en .
+_:e2959357e261952e94b3f8cd6c164f3c rdf:reifies <<( doc:FactsdisturbanceDecoupling rdfs:label "disturbance decoupling"@en )>> ;
+	prov:wasDerivedFrom doc:4208f22f5020 .
+doc:FactsresidualGeneration a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Fault_detection> .
+_:d5e5dfa6d9223ffee054ce48ef43c2b5 rdf:reifies <<( doc:FactsresidualGeneration rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Fault_detection> )>> ;
+	prov:wasDerivedFrom doc:4208f22f5020 .
+doc:FactstsFramework rdfs:label "TS framework"@en .
+_:f0d75d5f9a556b033ac88dffc0c67d2e rdf:reifies <<( doc:FactstsFramework rdfs:label "TS framework"@en )>> ;
+	prov:wasDerivedFrom doc:4208f22f5020 .
+doc:Factstitle1_55 None:has_text_value "CBIORE article" .
+_:b832e207a76ddd6a22d34e1bcd395fe4 rdf:reifies <<( doc:Factstitle1_55 None:has_text_value "CBIORE article" )>> ;
+	prov:wasDerivedFrom doc:4208f22f5020 .
+doc:Factsarticle1_74 dcterms:publisher doc:Factspublisher1_6 .
+_:f700a375f79b1eb03c0de1a2d9480dca rdf:reifies <<( doc:Factsarticle1_74 dcterms:publisher doc:Factspublisher1_6 )>> ;
+	prov:wasDerivedFrom doc:4208f22f5020 .
+doc:Factsarticle1_74 dcterms:rights doc:Factslicense1_3 .
+_:ebab13f636a23c6de2295c721bbd619e rdf:reifies <<( doc:Factsarticle1_74 dcterms:rights doc:Factslicense1_3 )>> ;
+	prov:wasDerivedFrom doc:4208f22f5020 .
+doc:FactsboundedErrorDynamics rdfs:label "bounded error dynamics"@en .
+_:fcbd1454ea175886e434b0681e3be07b rdf:reifies <<( doc:FactsboundedErrorDynamics rdfs:label "bounded error dynamics"@en )>> ;
+	prov:wasDerivedFrom doc:4208f22f5020 .
+doc:FactsnonlinearTimeVaryingRegimes a None:Design_detail .
+_:bdb36250a6b1a8709a4dd85ce49f8c63 rdf:reifies <<( doc:FactsnonlinearTimeVaryingRegimes rdf:type None:Design_detail )>> ;
+	prov:wasDerivedFrom doc:4208f22f5020 .
+doc:Factspaper_model1 rdfs:label "Takagi-Sugeno fuzzy model"@en .
+_:a90fc4f7dbab29521b5d828d64a42f76 rdf:reifies <<( doc:Factspaper_model1 rdfs:label "Takagi-Sugeno fuzzy model"@en )>> ;
+	prov:wasDerivedFrom doc:4208f22f5020 .
+doc:Factspublisher1_6 a schema1:Organization .
+_:be994832a3b766b4946fab42b66c4ef rdf:reifies <<( doc:Factspublisher1_6 rdf:type schema1:Organization )>> ;
+	prov:wasDerivedFrom doc:4208f22f5020 .
+doc:FactsobserverBank rdfs:label "H infinity filtering"@en .
+_:f7052a67a990ae8698c887919d2bf226 rdf:reifies <<( doc:FactsobserverBank rdfs:label "H infinity filtering"@en )>> ;
+	prov:wasDerivedFrom doc:4208f22f5020 .
+doc:f63499d221ce a prov:Entity , schema:text ;
+	prov:generatedAtTime "2026-07-12T23:41:11.64141Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+	schema:position 2 ;
+	schema:identifier "f63499d221ce" .
+doc:Factsdrivetrain schema1:name "MATLAB/Simulink"@en .
+_:cc62fc3037476603cb79990ae563d916 rdf:reifies <<( doc:Factsdrivetrain schema1:name "MATLAB/Simulink"@en )>> ;
+	prov:wasDerivedFrom doc:f63499d221ce .
+doc:FactswindTurbine cd:is_reference_model_for doc:FactstsFramework .
+_:e0bb0843ee9a400e24ce005cdc2459f1 rdf:reifies <<( doc:FactswindTurbine cd:is_reference_model_for doc:FactstsFramework )>> ;
+	prov:wasDerivedFrom doc:f63499d221ce .
+doc:FactswindTurbine rdfs:label "4.8 MW wind turbine benchmark model"@en .
+_:d4b65afb3b577c007c4433c7ffe98f46 rdf:reifies <<( doc:FactswindTurbine rdfs:label "4.8 MW wind turbine benchmark model"@en )>> ;
+	prov:wasDerivedFrom doc:f63499d221ce .
+doc:Factsdrivetrain a schema1:SoftwareApplication .
+_:fa15be145961ee506f17cb8d3e78e5db rdf:reifies <<( doc:Factsdrivetrain rdf:type schema1:SoftwareApplication )>> ;
+	prov:wasDerivedFrom doc:f63499d221ce .
+_:c2d743a64203ba4311cd3f8894b81cb7 prov:wasDerivedFrom doc:f63499d221ce .
+doc:FactsslidingModeObserver rdfs:label "Sliding-Mode Observer"@en .
+_:d62e4616b86f42e745814a7ec52e51c3 rdf:reifies <<( doc:FactsslidingModeObserver rdfs:label "Sliding-Mode Observer"@en )>> ;
+	prov:wasDerivedFrom doc:f63499d221ce .
+doc:Factsdoc1_32 rdfs:label "document about wind turbine fault diagnosis and sliding-mode observation"@en .
+_:e4cce7667de0ec21a57da0927d66e2de rdf:reifies <<( doc:Factsdoc1_32 rdfs:label "document about wind turbine fault diagnosis and sliding-mode observation"@en )>> ;
+	prov:wasDerivedFrom doc:f63499d221ce .
+doc:FactswindTurbine cd:has_subsystem doc:FactsaerodynamicModel .
+_:d62248d7c66adc829e018d4d5a1b6033 rdf:reifies <<( doc:FactswindTurbine cd:has_subsystem doc:FactsaerodynamicModel )>> ;
+	prov:wasDerivedFrom doc:f63499d221ce .
+doc:FactsslidingModeObserver cd:estimates doc:Factsfaults .
+_:dd47671f6dcd9ee77ae55e380112bf23 rdf:reifies <<( doc:FactsslidingModeObserver cd:estimates doc:Factsfaults )>> ;
+	prov:wasDerivedFrom doc:f63499d221ce .
+doc:FactsaerodynamicModel a schema1:Model .
+_:a63468798cca4f85c578f034a3ebc6f0 rdf:reifies <<( doc:FactsaerodynamicModel rdf:type schema1:Model )>> ;
+	prov:wasDerivedFrom doc:f63499d221ce .
+_:c091f5070d0fb8875de1768dac62635d prov:wasDerivedFrom doc:f63499d221ce .
+doc:FactswindTurbine cd:aggregates_faults_in doc:FactsfaultPitchSubsystem .
+_:cf509a74e56f30705d66f669e286357 rdf:reifies <<( doc:FactswindTurbine cd:aggregates_faults_in doc:FactsfaultPitchSubsystem )>> ;
+	prov:wasDerivedFrom doc:f63499d221ce .
+doc:FactswindTurbine cd:has_subsystem doc:Factsdrivetrain .
+_:ea2aab078e9bd005729796a98c56a406 rdf:reifies <<( doc:FactswindTurbine cd:has_subsystem doc:Factsdrivetrain )>> ;
+	prov:wasDerivedFrom doc:f63499d221ce .
+doc:FactsslidingModeObserver a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Predictive_maintenance_model> .
+_:fd31852dba5d4d60da3c56e16dc9f924 rdf:reifies <<( doc:FactsslidingModeObserver rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Predictive_maintenance_model> )>> ;
+	prov:wasDerivedFrom doc:f63499d221ce .
+doc:FactsslidingModeObserver cd:operates_under doc:FactswindScenarios .
+_:e5256d1315a1528feedb2d87a2e64bce rdf:reifies <<( doc:FactsslidingModeObserver cd:operates_under doc:FactswindScenarios )>> ;
+	prov:wasDerivedFrom doc:f63499d221ce .
+doc:FactsslidingModeObserver cd:implemented_in doc:FactstsFramework .
+_:b4cb43191ddb4e8d532acdcef534e766 rdf:reifies <<( doc:FactsslidingModeObserver cd:implemented_in doc:FactstsFramework )>> ;
+	prov:wasDerivedFrom doc:f63499d221ce .
+doc:FactstsFramework a schema1:CreativeWork .
+_:ebfe4cd52913c02bc6c0b7735e0ce493 rdf:reifies <<( doc:FactstsFramework rdf:type schema1:CreativeWork )>> ;
+	prov:wasDerivedFrom doc:f63499d221ce .
+doc:FactswindScenarios a schema1:Event .
+_:a1793454dce3bd505a1d774705c13882 rdf:reifies <<( doc:FactswindScenarios rdf:type schema1:Event )>> ;
+	prov:wasDerivedFrom doc:f63499d221ce .
+doc:FactsslidingModeObserver cd:reconstructs doc:Factsfaults .
+_:ef7f82d4c5e0ce5e2a22c030fcc68e3f rdf:reifies <<( doc:FactsslidingModeObserver cd:reconstructs doc:Factsfaults )>> ;
+	prov:wasDerivedFrom doc:f63499d221ce .
+doc:FactswindTurbine cd:is_used_for doc:Factsrmse_1 .
+_:f4b7e501aa344d502af44a727879349 rdf:reifies <<( doc:FactswindTurbine cd:is_used_for doc:Factsrmse_1 )>> ;
+	prov:wasDerivedFrom doc:f63499d221ce .
+doc:FactstsFuzzyRepresentation a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Predictive_maintenance_model> .
+_:b8efd0006487b78b448ac7505b75bb4a rdf:reifies <<( doc:FactstsFuzzyRepresentation rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Predictive_maintenance_model> )>> ;
+	prov:wasDerivedFrom doc:f63499d221ce .
+doc:FactsslidingModeObserver cd:uses doc:FactslmiBasedSynthesis .
+_:cfef9c4461b7820650d35ef331c6eb3a rdf:reifies <<( doc:FactsslidingModeObserver cd:uses doc:FactslmiBasedSynthesis )>> ;
+	prov:wasDerivedFrom doc:f63499d221ce .
+doc:Factsrmse_1 a schema1:Action .
+_:d8e27bbac52081b70455a33a0e6377a4 rdf:reifies <<( doc:Factsrmse_1 rdf:type schema1:Action )>> ;
+	prov:wasDerivedFrom doc:f63499d221ce .
+doc:Factsdoc1_32 a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Predictive_maintenance_model> .
+_:f90937032fed5984e0bb8a3669ef6510 rdf:reifies <<( doc:Factsdoc1_32 rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Predictive_maintenance_model> )>> ;
+	prov:wasDerivedFrom doc:f63499d221ce .
+doc:Factsdrivetrain a schema1:Device .
+_:b25a41d2c1f2fd81e012e0a5712e629d rdf:reifies <<( doc:Factsdrivetrain rdf:type schema1:Device )>> ;
+	prov:wasDerivedFrom doc:f63499d221ce .
+doc:FactsslidingModeObserver cd:validated_by doc:Factsdrivetrain .
+_:d297be30df0cd5ec45a58d0fe3e59c14 rdf:reifies <<( doc:FactsslidingModeObserver cd:validated_by doc:Factsdrivetrain )>> ;
+	prov:wasDerivedFrom doc:f63499d221ce .
+doc:FactstsFuzzyRepresentation rdfs:label "TS fuzzy representation of the wind turbine"@en .
+_:e2aed25e006aafaa2e8f6298f6f57be rdf:reifies <<( doc:FactstsFuzzyRepresentation rdfs:label "TS fuzzy representation of the wind turbine"@en )>> ;
+	prov:wasDerivedFrom doc:f63499d221ce .
+doc:Factsrmse_1 schema1:name "RMSE"@en .
+_:d87e09cc205772f8bc877a40bf68f5e2 rdf:reifies <<( doc:Factsrmse_1 schema1:name "RMSE"@en )>> ;
+	prov:wasDerivedFrom doc:f63499d221ce .
+doc:FactslmiBasedSynthesis a schema1:HowTo .
+_:aea4458cb3a4a0860e1ff1a77f0f796d rdf:reifies <<( doc:FactslmiBasedSynthesis rdf:type schema1:HowTo )>> ;
+	prov:wasDerivedFrom doc:f63499d221ce .
+doc:FactswindTurbine schema1:name "4.8 MW wind turbine benchmark model"@en .
+_:f94dd4fe0f12a8adf4f331af1c24f7aa rdf:reifies <<( doc:FactswindTurbine schema1:name "4.8 MW wind turbine benchmark model"@en )>> ;
+	prov:wasDerivedFrom doc:f63499d221ce .
+doc:FactsslidingModeObserver cd:uses doc:Factsrmse_1 .
+_:e2092777df4d912a78cc3a15f47c6438 rdf:reifies <<( doc:FactsslidingModeObserver cd:uses doc:Factsrmse_1 )>> ;
+	prov:wasDerivedFrom doc:f63499d221ce .
+doc:FactsslidingModeObserver cd:validated_by doc:Factsrmse_1 .
+_:dc519f1b14744cec5eb2fe1939fcc8ae rdf:reifies <<( doc:FactsslidingModeObserver cd:validated_by doc:Factsrmse_1 )>> ;
+	prov:wasDerivedFrom doc:f63499d221ce .
+doc:FactswindTurbine cd:is_modeled_with doc:FactsslidingModeObserver .
+_:d471e58ca958e04fe089729e055a6958 rdf:reifies <<( doc:FactswindTurbine cd:is_modeled_with doc:FactsslidingModeObserver )>> ;
+	prov:wasDerivedFrom doc:f63499d221ce .
+_:ad096b7a204119cdb6b90998600418b9 prov:wasDerivedFrom doc:f63499d221ce .
+doc:FactswindTurbine cd:is_described_by doc:FactstsFuzzyRepresentation .
+_:c99ba87e9af5280486c8ecfaa196edba rdf:reifies <<( doc:FactswindTurbine cd:is_described_by doc:FactstsFuzzyRepresentation )>> ;
+	prov:wasDerivedFrom doc:f63499d221ce .
+<http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Predictive_maintenance_model> owl:sameAs <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Predictive_Maintenance_Article> .

@@ -1,0 +1,552 @@
+@prefix None: <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD/seed#> .
+@prefix cco: <http://www.ontologyrepository.com/CommonCoreOntologies/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doc: <https://growgraph.dev/doc/7af20d9d3082/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix obo: <http://purl.obolibrary.org/obo/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix schema: <https://schema.org/> .
+doc:9a8a28712aec a prov:Entity , schema:text ;
+	prov:generatedAtTime "2026-07-24T08:32:38.044915Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+	schema:position 0 ;
+	schema:identifier "9a8a28712aec" .
+doc:Predictive_Maintenance_Article a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Predictive_Maintenance_Article> .
+_:fdb2d5969643b58b1c1c4603a35967ab rdf:reifies <<( doc:Predictive_Maintenance_Article rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Predictive_Maintenance_Article> )>> ;
+	prov:wasDerivedFrom doc:9a8a28712aec .
+doc:FactsarticleAnomalyDetectionWaferSawing schema:author doc:FactswenChiehSu .
+_:d68340f3485e830b5fa27e4ecee992a5 rdf:reifies <<( doc:FactsarticleAnomalyDetectionWaferSawing schema:author doc:FactswenChiehSu )>> ;
+	prov:wasDerivedFrom doc:9a8a28712aec .
+doc:FactsreconstructionErrorDetection a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Deviation_detection> .
+_:e550ac881d7fa5d7b69b88ed77543827 rdf:reifies <<( doc:FactsreconstructionErrorDetection rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Deviation_detection> )>> ;
+	prov:wasDerivedFrom doc:9a8a28712aec .
+doc:Predictive_Maintenance_Article a None:Predictive_maintenance_system_module .
+_:e58ab84c3c9fb2d7e3666a3b85fe5f76 rdf:reifies <<( doc:Predictive_Maintenance_Article rdf:type None:Predictive_maintenance_system_module )>> ;
+	prov:wasDerivedFrom doc:9a8a28712aec .
+doc:FactsdiamondWireSawingMachine a schema:Product .
+_:e0c5974ff8fc188eead0873e3e9c226d rdf:reifies <<( doc:FactsdiamondWireSawingMachine rdf:type schema:Product )>> ;
+	prov:wasDerivedFrom doc:9a8a28712aec .
+doc:FactsarticleAnomalyDetectionWaferSawing None:has_publication_year doc:Factspublication_year_2025_22 .
+_:f1017de2d148d29ac05e5933537ccee4 rdf:reifies <<( doc:FactsarticleAnomalyDetectionWaferSawing None:has_publication_year doc:Factspublication_year_2025_22 )>> ;
+	prov:wasDerivedFrom doc:9a8a28712aec .
+doc:Factssensing a schema:Dataset .
+_:fc937ea79e18f157144808728ebb46cd rdf:reifies <<( doc:Factssensing rdf:type schema:Dataset )>> ;
+	prov:wasDerivedFrom doc:9a8a28712aec .
+doc:FactsstatisticalFeatureExtraction a None:Fault_feature_extraction .
+_:ce9743c674ace55b3a901803e4025fb9 rdf:reifies <<( doc:FactsstatisticalFeatureExtraction rdf:type None:Fault_feature_extraction )>> ;
+	prov:wasDerivedFrom doc:9a8a28712aec .
+doc:Factspublication_year_2025_22 None:has_interger_value 2025 .
+_:d1eb59061469a4e52356a5553c179715 rdf:reifies <<( doc:Factspublication_year_2025_22 None:has_interger_value 2025 )>> ;
+	prov:wasDerivedFrom doc:9a8a28712aec .
+doc:Predictive_Maintenance_Article None:describes_configuration doc:Predictive_Maintenance_Article .
+_:c0873de7776786c1de9ce685e91db614 rdf:reifies <<( doc:Predictive_Maintenance_Article None:describes_configuration doc:Predictive_Maintenance_Article )>> ;
+	prov:wasDerivedFrom doc:9a8a28712aec .
+doc:FactsfaultDiagnosisFunction a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Deviation_detection> .
+_:b048da236dc5649818287e790664abe5 rdf:reifies <<( doc:FactsfaultDiagnosisFunction rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Deviation_detection> )>> ;
+	prov:wasDerivedFrom doc:9a8a28712aec .
+doc:FactsarticleAnomalyDetectionWaferSawing schema:dateAccepted "2025-10-14"^^<http://www.w3.org/2001/XMLSchema#date> .
+_:cdff3d97122b51c0271240db1f7b9155 rdf:reifies <<( doc:FactsarticleAnomalyDetectionWaferSawing schema:dateAccepted "2025-10-14"^^<http://www.w3.org/2001/XMLSchema#date> )>> ;
+	prov:wasDerivedFrom doc:9a8a28712aec .
+doc:FactsdiamondWireSawingMachine rdfs:label "diamond multi-wire sawing machine"@en .
+_:c7c7d564f0e2affa06c1663507489159 rdf:reifies <<( doc:FactsdiamondWireSawingMachine rdfs:label "diamond multi-wire sawing machine"@en )>> ;
+	prov:wasDerivedFrom doc:9a8a28712aec .
+doc:Predictive_Maintenance_Article None:has_predictive_maintenance_function doc:FactsfaultDiagnosisFunction .
+_:a087bfef77e060a3dacca55fafe6d575 rdf:reifies <<( doc:Predictive_Maintenance_Article None:has_predictive_maintenance_function doc:FactsfaultDiagnosisFunction )>> ;
+	prov:wasDerivedFrom doc:9a8a28712aec .
+doc:FactswenChiehSu schema:name "Zhen-Yin Annie Chen" .
+_:ff595342020776942666d364b5b16b39 rdf:reifies <<( doc:FactswenChiehSu schema:name "Zhen-Yin Annie Chen" )>> ;
+	prov:wasDerivedFrom doc:9a8a28712aec .
+doc:Factssensing schema:description "Confidential industrial sensor dataset containing normal operating data" .
+_:cced42d241e0f3f4670fa65afc269f86 rdf:reifies <<( doc:Factssensing schema:description "Confidential industrial sensor dataset containing normal operating data" )>> ;
+	prov:wasDerivedFrom doc:9a8a28712aec .
+doc:FactsstatisticalFeatureExtraction rdfs:label "statistical feature extraction"@en .
+_:c069909e27ecc39ae8fbdd6ccdafa6f3 rdf:reifies <<( doc:FactsstatisticalFeatureExtraction rdfs:label "statistical feature extraction"@en )>> ;
+	prov:wasDerivedFrom doc:9a8a28712aec .
+doc:FactsarticleAnomalyDetectionWaferSawing a schema:ScholarlyArticle .
+_:c7fa9e5104516d10514c545b72437365 rdf:reifies <<( doc:FactsarticleAnomalyDetectionWaferSawing rdf:type schema:ScholarlyArticle )>> ;
+	prov:wasDerivedFrom doc:9a8a28712aec .
+doc:FactsarticleAnomalyDetectionWaferSawing schema:about doc:FactsfaultDiagnosisFunction .
+_:f0f6f8ee040af6f2fc1cf3e3d8103b15 rdf:reifies <<( doc:FactsarticleAnomalyDetectionWaferSawing schema:about doc:FactsfaultDiagnosisFunction )>> ;
+	prov:wasDerivedFrom doc:9a8a28712aec .
+doc:Predictive_Maintenance_Article a cco:Algorithm .
+_:d4324c65c2bb28324523e7a15ab44e60 rdf:reifies <<( doc:Predictive_Maintenance_Article rdf:type cco:Algorithm )>> ;
+	prov:wasDerivedFrom doc:9a8a28712aec .
+doc:Factspublication_year_2025_22 a None:Publication_year .
+_:f385b596d17145fbdb0861284791ddef rdf:reifies <<( doc:Factspublication_year_2025_22 rdf:type None:Publication_year )>> ;
+	prov:wasDerivedFrom doc:9a8a28712aec .
+doc:FactsarticleAnomalyDetectionWaferSawing schema:about doc:Predictive_Maintenance_Article .
+_:ae7ffda50abf520ceaee1be999eaa0b4 rdf:reifies <<( doc:FactsarticleAnomalyDetectionWaferSawing schema:about doc:Predictive_Maintenance_Article )>> ;
+	prov:wasDerivedFrom doc:9a8a28712aec .
+doc:FactsarticleTitleAnomalyDetectionWaferSawing a None:Article_title .
+_:b4edb189733d6e6edcb3794f93d9e655 rdf:reifies <<( doc:FactsarticleTitleAnomalyDetectionWaferSawing rdf:type None:Article_title )>> ;
+	prov:wasDerivedFrom doc:9a8a28712aec .
+doc:FactsfaultDiagnosisFunction rdfs:label "anomaly detection"@en .
+_:d521c64ed6f24af91aaa2c66490325ca rdf:reifies <<( doc:FactsfaultDiagnosisFunction rdfs:label "anomaly detection"@en )>> ;
+	prov:wasDerivedFrom doc:9a8a28712aec .
+doc:FactsarticleTitleAnomalyDetectionWaferSawing None:has_text_value "Anomaly Detection for Semiconductor Wafer Multi-wire Sawing Machines Using Statistical and Deep Learning Methods" .
+_:b613f04abc019fc5cfaa049f641df7c6 rdf:reifies <<( doc:FactsarticleTitleAnomalyDetectionWaferSawing None:has_text_value "Anomaly Detection for Semiconductor Wafer Multi-wire Sawing Machines Using Statistical and Deep Learning Methods" )>> ;
+	prov:wasDerivedFrom doc:9a8a28712aec .
+doc:FactsarticleAnomalyDetectionWaferSawing a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Predictive_Maintenance_Article> .
+_:b6916ed9c10348f7e5491ff68e0e07e rdf:reifies <<( doc:FactsarticleAnomalyDetectionWaferSawing rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Predictive_Maintenance_Article> )>> ;
+	prov:wasDerivedFrom doc:9a8a28712aec .
+doc:FactsdiamondWireSawingMachine a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Maintainable_item> .
+_:c028fcb3ad28c69aaa92aee398b8502c rdf:reifies <<( doc:FactsdiamondWireSawingMachine rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Maintainable_item> )>> ;
+	prov:wasDerivedFrom doc:9a8a28712aec .
+doc:FactsarticleAnomalyDetectionWaferSawing None:has_title doc:FactsarticleTitleAnomalyDetectionWaferSawing .
+_:a25a654b4f6f581cef5a266cd15f3157 rdf:reifies <<( doc:FactsarticleAnomalyDetectionWaferSawing None:has_title doc:FactsarticleTitleAnomalyDetectionWaferSawing )>> ;
+	prov:wasDerivedFrom doc:9a8a28712aec .
+doc:FactswenChiehSu schema:name "Wen-Chieh Su" .
+_:d221d6a3ea0846368a7a0eb435a87148 rdf:reifies <<( doc:FactswenChiehSu schema:name "Wen-Chieh Su" )>> ;
+	prov:wasDerivedFrom doc:9a8a28712aec .
+doc:FactsarticleAnomalyDetectionWaferSawing schema:datePublished "2025-10-27"^^<http://www.w3.org/2001/XMLSchema#date> .
+_:f3a9e2b73c242f31adcaf9aac472d81b rdf:reifies <<( doc:FactsarticleAnomalyDetectionWaferSawing schema:datePublished "2025-10-27"^^<http://www.w3.org/2001/XMLSchema#date> )>> ;
+	prov:wasDerivedFrom doc:9a8a28712aec .
+doc:FactswenChiehSu a schema:Person .
+_:f7c62ded7c9c97af81df57010a53a61e rdf:reifies <<( doc:FactswenChiehSu rdf:type schema:Person )>> ;
+	prov:wasDerivedFrom doc:9a8a28712aec .
+doc:Predictive_Maintenance_Article rdfs:label "rule-based anomaly detection model"@en .
+_:ac02534b4b8ceaf222e8a060726d24b5 rdf:reifies <<( doc:Predictive_Maintenance_Article rdfs:label "rule-based anomaly detection model"@en )>> ;
+	prov:wasDerivedFrom doc:9a8a28712aec .
+doc:Predictive_Maintenance_Article rdfs:label "Univariate Autoencoder (UAE)"@en .
+_:a6090eb6c01c3c9df3599742aa515613 rdf:reifies <<( doc:Predictive_Maintenance_Article rdfs:label "Univariate Autoencoder (UAE)"@en )>> ;
+	prov:wasDerivedFrom doc:9a8a28712aec .
+doc:FactswenChiehSu schema:name "Chun-Cheng Lin" .
+_:b0662dd6292e8c6a68d5ece93cc8367d rdf:reifies <<( doc:FactswenChiehSu schema:name "Chun-Cheng Lin" )>> ;
+	prov:wasDerivedFrom doc:9a8a28712aec .
+doc:FactsreconstructionErrorDetection rdfs:label "reconstruction-error anomaly detection"@en .
+_:e50b1a0a0921ce7522e7584bd452dcf rdf:reifies <<( doc:FactsreconstructionErrorDetection rdfs:label "reconstruction-error anomaly detection"@en )>> ;
+	prov:wasDerivedFrom doc:9a8a28712aec .
+doc:FactswenChiehSu schema:name "Cherng-Yow Cheng" .
+_:ae03246cca13a2b3f310813f5c582566 rdf:reifies <<( doc:FactswenChiehSu schema:name "Cherng-Yow Cheng" )>> ;
+	prov:wasDerivedFrom doc:9a8a28712aec .
+doc:FactsarticleAnomalyDetectionWaferSawing schema:about doc:FactsdiamondWireSawingMachine .
+_:c41f5b80081dbf7b0b0434aae1b6eb07 rdf:reifies <<( doc:FactsarticleAnomalyDetectionWaferSawing schema:about doc:FactsdiamondWireSawingMachine )>> ;
+	prov:wasDerivedFrom doc:9a8a28712aec .
+doc:FactswenChiehSu schema:name "Hsin-Cheng Huang" .
+_:ad910326f4a4709e713823dc995fd503 rdf:reifies <<( doc:FactswenChiehSu schema:name "Hsin-Cheng Huang" )>> ;
+	prov:wasDerivedFrom doc:9a8a28712aec .
+doc:6c0284a73a5b a prov:Entity , schema:text ;
+	prov:generatedAtTime "2026-07-24T08:32:38.046915Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+	schema:position 1 ;
+	schema:identifier "6c0284a73a5b" .
+doc:FactsganIngots a schema:Product .
+_:dc6caeeeda45e85b4204ca60e2cbca48 rdf:reifies <<( doc:FactsganIngots rdf:type schema:Product )>> ;
+	prov:wasDerivedFrom doc:6c0284a73a5b .
+doc:FactswenChiehSu schema:familyName "Lin" .
+_:cb28bd9ba7f799f415e64341aed671fe rdf:reifies <<( doc:FactswenChiehSu schema:familyName "Lin" )>> ;
+	prov:wasDerivedFrom doc:6c0284a73a5b .
+doc:Predictive_Maintenance_Article a schema:ScholarlyArticle .
+_:d82b1ac2883945300a92529719095727 rdf:reifies <<( doc:Predictive_Maintenance_Article rdf:type schema:ScholarlyArticle )>> ;
+	prov:wasDerivedFrom doc:6c0284a73a5b .
+doc:Predictive_Maintenance_Article a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Predictive_maintenance_system_module> .
+_:b860a124b56680781265b2d9148dca79 rdf:reifies <<( doc:Predictive_Maintenance_Article rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Predictive_maintenance_system_module> )>> ;
+	prov:wasDerivedFrom doc:6c0284a73a5b .
+doc:FactswenChiehSu schema:givenName "Wen-Chieh" .
+_:fd45d6e286745adc669c229e9a1b32ef rdf:reifies <<( doc:FactswenChiehSu schema:givenName "Wen-Chieh" )>> ;
+	prov:wasDerivedFrom doc:6c0284a73a5b .
+doc:FactswenChiehSu schema:givenName "Hsin-Cheng" .
+_:f989fd9b8b3cb0bbb29ba11176a0c64f rdf:reifies <<( doc:FactswenChiehSu schema:givenName "Hsin-Cheng" )>> ;
+	prov:wasDerivedFrom doc:6c0284a73a5b .
+doc:FactsphmFramework schema:mentions doc:Factsdiagnosis .
+_:d84f0781ba119593ca3f7ee9cd6cd3b5 rdf:reifies <<( doc:FactsphmFramework schema:mentions doc:Factsdiagnosis )>> ;
+	prov:wasDerivedFrom doc:6c0284a73a5b .
+_:fdb2d5969643b58b1c1c4603a35967ab prov:wasDerivedFrom doc:6c0284a73a5b .
+doc:FactssemiconductorWafers a schema:Product .
+_:aeff435ad0e8c31452d03b04b4c25a8f rdf:reifies <<( doc:FactssemiconductorWafers rdf:type schema:Product )>> ;
+	prov:wasDerivedFrom doc:6c0284a73a5b .
+doc:FactswireBreakage schema:affects doc:FactssemiconductorWafers .
+_:a413768ed2cad3940885afc5982b2930 rdf:reifies <<( doc:FactswireBreakage schema:affects doc:FactssemiconductorWafers )>> ;
+	prov:wasDerivedFrom doc:6c0284a73a5b .
+doc:FactsindustrialEquipmentHealthManagement a schema:Thing .
+_:dbaf27f0b5d57124c1448eb4bfd76e84 rdf:reifies <<( doc:FactsindustrialEquipmentHealthManagement rdf:type schema:Thing )>> ;
+	prov:wasDerivedFrom doc:6c0284a73a5b .
+doc:FactswenChiehSu schema:familyName "Chen" .
+_:ed249a3d3d652ec5c92a902b8a29fe9d rdf:reifies <<( doc:FactswenChiehSu schema:familyName "Chen" )>> ;
+	prov:wasDerivedFrom doc:6c0284a73a5b .
+doc:Predictive_Maintenance_Article a schema:Thing .
+_:b0a49726a2f99a71c44a399e30c1b4e2 rdf:reifies <<( doc:Predictive_Maintenance_Article rdf:type schema:Thing )>> ;
+	prov:wasDerivedFrom doc:6c0284a73a5b .
+doc:FactsiemNymcu schema:location doc:FactshsinchuTaiwan .
+_:b2b239a3abe8ecfe9cedb70fffbdccc4 rdf:reifies <<( doc:FactsiemNymcu schema:location doc:FactshsinchuTaiwan )>> ;
+	prov:wasDerivedFrom doc:6c0284a73a5b .
+doc:Factssensing a schema:Thing .
+_:be5b790f045b8e66d5aaa83756774bb7 rdf:reifies <<( doc:Factssensing rdf:type schema:Thing )>> ;
+	prov:wasDerivedFrom doc:6c0284a73a5b .
+doc:FactswenChiehSu schema:affiliation doc:FactsiemNymcu .
+_:d3b2c5a3302a80f1e264f1192ea33014 rdf:reifies <<( doc:FactswenChiehSu schema:affiliation doc:FactsiemNymcu )>> ;
+	prov:wasDerivedFrom doc:6c0284a73a5b .
+doc:FactselectricMotorAssets rdfs:label "electric motors" .
+_:f6bf2bf701dae9f641d6e0bad652f19b rdf:reifies <<( doc:FactselectricMotorAssets rdfs:label "electric motors" )>> ;
+	prov:wasDerivedFrom doc:6c0284a73a5b .
+doc:FactswenChiehSu schema:affiliation doc:FactsresearchDevelopmentAsiaUniversity .
+_:e7094e0417f37cce1bf4edd135c4c83f rdf:reifies <<( doc:FactswenChiehSu schema:affiliation doc:FactsresearchDevelopmentAsiaUniversity )>> ;
+	prov:wasDerivedFrom doc:6c0284a73a5b .
+doc:Predictive_Maintenance_Article schema:author doc:FactswenChiehSu .
+_:a390b54ccbb51f800a28a649916c534f rdf:reifies <<( doc:Predictive_Maintenance_Article schema:author doc:FactswenChiehSu )>> ;
+	prov:wasDerivedFrom doc:6c0284a73a5b .
+doc:FactsresearchDevelopmentAsiaUniversity schema:location doc:FactshsinchuTaiwan .
+_:b3e60f4f0f786f03ff8bcb5f4b916bea rdf:reifies <<( doc:FactsresearchDevelopmentAsiaUniversity schema:location doc:FactshsinchuTaiwan )>> ;
+	prov:wasDerivedFrom doc:6c0284a73a5b .
+doc:FactsdiamondWireSawingMachine obo:BFO_0000051 doc:FactsdiamondCoatedSteelWires .
+_:ed27acdadadcbf38d4f85341f02b580 rdf:reifies <<( doc:FactsdiamondWireSawingMachine obo:BFO_0000051 doc:FactsdiamondCoatedSteelWires )>> ;
+	prov:wasDerivedFrom doc:6c0284a73a5b .
+_:c5184f4ab02c2b963b97393d0fef5be6 rdf:reifies <<( doc:FactswenChiehSu schema:name "Zhen-Yin Annie Chen" )>> ;
+	prov:wasDerivedFrom doc:6c0284a73a5b .
+doc:FactsproductionLosses rdfs:label "production losses" .
+_:c3a739024341e5497e0c7f3d2161878c rdf:reifies <<( doc:FactsproductionLosses rdfs:label "production losses" )>> ;
+	prov:wasDerivedFrom doc:6c0284a73a5b .
+doc:FactswenChiehSu schema:givenName "Chun-Cheng" .
+_:a44e40f94da0fce25c39ab027a5bea14 rdf:reifies <<( doc:FactswenChiehSu schema:givenName "Chun-Cheng" )>> ;
+	prov:wasDerivedFrom doc:6c0284a73a5b .
+doc:FactsdiamondWireSawingMachine schema:produces doc:FactssemiconductorWafers .
+_:aee68f0cc319c7b2c3932457fa5963ef rdf:reifies <<( doc:FactsdiamondWireSawingMachine schema:produces doc:FactssemiconductorWafers )>> ;
+	prov:wasDerivedFrom doc:6c0284a73a5b .
+doc:Predictive_Maintenance_Article <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#has_predictive_maintenance_function> doc:FactsfaultDiagnosisFunction .
+_:b7568c5e5f0b385b37e132b92b190782 rdf:reifies <<( doc:Predictive_Maintenance_Article <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#has_predictive_maintenance_function> doc:FactsfaultDiagnosisFunction )>> ;
+	prov:wasDerivedFrom doc:6c0284a73a5b .
+doc:FactssemiconductorWafers schema:name "semiconductor wafers" .
+_:c8a47271a8847fc50f698baa2bd3692d rdf:reifies <<( doc:FactssemiconductorWafers schema:name "semiconductor wafers" )>> ;
+	prov:wasDerivedFrom doc:6c0284a73a5b .
+_:e72cfc170cec773a760f5192a1512d5f rdf:reifies <<( doc:FactswenChiehSu schema:name "Hsin-Cheng Huang" )>> ;
+	prov:wasDerivedFrom doc:6c0284a73a5b .
+doc:FactswireBreakage a schema:Thing .
+_:a3b1002577cb9f417538f091f8e02da3 rdf:reifies <<( doc:FactswireBreakage rdf:type schema:Thing )>> ;
+	prov:wasDerivedFrom doc:6c0284a73a5b .
+doc:FactsphmFramework schema:mentions doc:Factssensing .
+_:c85d6d977d9e715fd045e27ca344b8ef rdf:reifies <<( doc:FactsphmFramework schema:mentions doc:Factssensing )>> ;
+	prov:wasDerivedFrom doc:6c0284a73a5b .
+doc:Factsvibration schema:affects doc:FactssemiconductorWafers .
+_:bc671c18045766804fa7aedac81a4aaf rdf:reifies <<( doc:Factsvibration schema:affects doc:FactssemiconductorWafers )>> ;
+	prov:wasDerivedFrom doc:6c0284a73a5b .
+doc:FactsproductionLosses a schema:Thing .
+_:d216ea9204afa6eb1f825526216b50b0 rdf:reifies <<( doc:FactsproductionLosses rdf:type schema:Thing )>> ;
+	prov:wasDerivedFrom doc:6c0284a73a5b .
+doc:FactsganIngots schema:name "SiC semiconductor ingots" .
+_:e5ba2df544459843201c4781621ac6ff rdf:reifies <<( doc:FactsganIngots schema:name "SiC semiconductor ingots" )>> ;
+	prov:wasDerivedFrom doc:6c0284a73a5b .
+doc:Factsdiagnosis a schema:Thing .
+_:e60578bcccab8dd5baf62e841f47ae46 rdf:reifies <<( doc:Factsdiagnosis rdf:type schema:Thing )>> ;
+	prov:wasDerivedFrom doc:6c0284a73a5b .
+_:c028fcb3ad28c69aaa92aee398b8502c prov:wasDerivedFrom doc:6c0284a73a5b .
+doc:Factsdiagnosis rdfs:label "diagnosis" .
+_:e92d1a109905e4c1ecb30b3f134bcc03 rdf:reifies <<( doc:Factsdiagnosis rdfs:label "diagnosis" )>> ;
+	prov:wasDerivedFrom doc:6c0284a73a5b .
+doc:FactsresearchDevelopmentAsiaUniversity a schema:Organization .
+_:d0199fcc70e280fff5806e11f52393be rdf:reifies <<( doc:FactsresearchDevelopmentAsiaUniversity rdf:type schema:Organization )>> ;
+	prov:wasDerivedFrom doc:6c0284a73a5b .
+doc:FactsbearingAssets rdfs:label "bearings" .
+_:c2830b19bc41df16b9b0a0038b8e99ff rdf:reifies <<( doc:FactsbearingAssets rdfs:label "bearings" )>> ;
+	prov:wasDerivedFrom doc:6c0284a73a5b .
+_:f7c62ded7c9c97af81df57010a53a61e prov:wasDerivedFrom doc:6c0284a73a5b .
+_:aca8803fd19391f2b9a6ee22b6446b8c rdf:reifies <<( doc:FactswenChiehSu schema:name "Wen-Chieh Su" )>> ;
+	prov:wasDerivedFrom doc:6c0284a73a5b .
+doc:FactswenChiehSu schema:familyName "Su" .
+_:bb64b80cf4e015d92b459a6c2ff5d159 rdf:reifies <<( doc:FactswenChiehSu schema:familyName "Su" )>> ;
+	prov:wasDerivedFrom doc:6c0284a73a5b .
+doc:FactsiemNymcu schema:name "Department of Industrial Engineering and Management, National Yang Ming Chiao Tung University" .
+_:cb977b0efbe7aa8a399101a3633159d3 rdf:reifies <<( doc:FactsiemNymcu schema:name "Department of Industrial Engineering and Management, National Yang Ming Chiao Tung University" )>> ;
+	prov:wasDerivedFrom doc:6c0284a73a5b .
+doc:Predictive_Maintenance_Article schema:description "A data-driven approach that anticipates equipment failures before they occur." .
+_:d9c12dcfdc8fbdae2be96bffb529b337 rdf:reifies <<( doc:Predictive_Maintenance_Article schema:description "A data-driven approach that anticipates equipment failures before they occur." )>> ;
+	prov:wasDerivedFrom doc:6c0284a73a5b .
+doc:FactswireBreakage rdfs:label "wire breakage" .
+_:f92a0a42c93ca5d669b78a5b72366044 rdf:reifies <<( doc:FactswireBreakage rdfs:label "wire breakage" )>> ;
+	prov:wasDerivedFrom doc:6c0284a73a5b .
+doc:Predictive_Maintenance_Article schema:name "machine health monitoring and anomaly detection system" .
+_:c5ee6cbe6bd3a4f42a1c6afee8e866b4 rdf:reifies <<( doc:Predictive_Maintenance_Article schema:name "machine health monitoring and anomaly detection system" )>> ;
+	prov:wasDerivedFrom doc:6c0284a73a5b .
+doc:FactswaferDefects rdfs:label "wafer defects" .
+_:ea42fd8f7223213b2a3a362281aadf79 rdf:reifies <<( doc:FactswaferDefects rdfs:label "wafer defects" )>> ;
+	prov:wasDerivedFrom doc:6c0284a73a5b .
+doc:FactsdiamondWireSawingMachine schema:name "diamond multi-wire sawing machine" .
+_:c64e50f1dcd5198d49f0e416d97fecdd rdf:reifies <<( doc:FactsdiamondWireSawingMachine schema:name "diamond multi-wire sawing machine" )>> ;
+	prov:wasDerivedFrom doc:6c0284a73a5b .
+doc:FactsdiamondCoatedSteelWires a schema:Product .
+_:a102851d50a98ced1711b465c0dd6377 rdf:reifies <<( doc:FactsdiamondCoatedSteelWires rdf:type schema:Product )>> ;
+	prov:wasDerivedFrom doc:6c0284a73a5b .
+doc:FactswenChiehSu schema:email "cclin321@nycu.edu.tw" .
+_:c912961fab6448b74379277fa21fe4c0 rdf:reifies <<( doc:FactswenChiehSu schema:email "cclin321@nycu.edu.tw" )>> ;
+	prov:wasDerivedFrom doc:6c0284a73a5b .
+doc:Factssensing rdfs:label "sensing" .
+_:f35d11e937966b2237800866d5ae505c rdf:reifies <<( doc:Factssensing rdfs:label "sensing" )>> ;
+	prov:wasDerivedFrom doc:6c0284a73a5b .
+doc:FactswenChiehSu schema:givenName "Zhen-Yin Annie" .
+_:c589d457987d8f37ab93b921cae2d16d rdf:reifies <<( doc:FactswenChiehSu schema:givenName "Zhen-Yin Annie" )>> ;
+	prov:wasDerivedFrom doc:6c0284a73a5b .
+doc:FactshsinchuTaiwan schema:postalCode "411" .
+_:b868258bcdde2e9a4d78e27f4d9ff319 rdf:reifies <<( doc:FactshsinchuTaiwan schema:postalCode "411" )>> ;
+	prov:wasDerivedFrom doc:6c0284a73a5b .
+doc:Predictive_Maintenance_Article schema:name "Reactive Maintenance" .
+_:ad61d98466b5ef1e82cf333cb3d3e441 rdf:reifies <<( doc:Predictive_Maintenance_Article schema:name "Reactive Maintenance" )>> ;
+	prov:wasDerivedFrom doc:6c0284a73a5b .
+doc:FactsmediumVoltageCableAssets rdfs:label "medium voltage cables" .
+_:e15070a89ed4799eba6e89fbcba8850 rdf:reifies <<( doc:FactsmediumVoltageCableAssets rdfs:label "medium voltage cables" )>> ;
+	prov:wasDerivedFrom doc:6c0284a73a5b .
+doc:FactswenChiehSu schema:email "hchuangsr@yahoo.com" .
+_:bf9594c5c8a5c59b3c8b900c691e4fa6 rdf:reifies <<( doc:FactswenChiehSu schema:email "hchuangsr@yahoo.com" )>> ;
+	prov:wasDerivedFrom doc:6c0284a73a5b .
+doc:FactsdiamondWireSawingMachine schema:mentions doc:FactsganIngots .
+_:ee737e1754811ab400a288a499593b79 rdf:reifies <<( doc:FactsdiamondWireSawingMachine schema:mentions doc:FactsganIngots )>> ;
+	prov:wasDerivedFrom doc:6c0284a73a5b .
+doc:Factsprognostics a schema:Thing .
+_:c48aeefb14ca7c4a200091e10cf2ed2e rdf:reifies <<( doc:Factsprognostics rdf:type schema:Thing )>> ;
+	prov:wasDerivedFrom doc:6c0284a73a5b .
+doc:FactshsinchuTaiwan a schema:Place .
+_:aabe7c37491b0d53efe8523efd2d6f20 rdf:reifies <<( doc:FactshsinchuTaiwan rdf:type schema:Place )>> ;
+	prov:wasDerivedFrom doc:6c0284a73a5b .
+doc:FactshsinchuTaiwan schema:postalCode "300" .
+_:cf9bbfdd28070ee8049b3ad8eca361e8 rdf:reifies <<( doc:FactshsinchuTaiwan schema:postalCode "300" )>> ;
+	prov:wasDerivedFrom doc:6c0284a73a5b .
+doc:FactswenChiehSu schema:email "ccyyoyo55@gmail.com" .
+_:d3dc85545814ed16338a187d8950c073 rdf:reifies <<( doc:FactswenChiehSu schema:email "ccyyoyo55@gmail.com" )>> ;
+	prov:wasDerivedFrom doc:6c0284a73a5b .
+doc:FactswenChiehSu schema:familyName "Huang" .
+_:a7f5219e2f988435ed7aa60743c7c036 rdf:reifies <<( doc:FactswenChiehSu schema:familyName "Huang" )>> ;
+	prov:wasDerivedFrom doc:6c0284a73a5b .
+doc:FactshsinchuTaiwan schema:name "Taichung, Taiwan" .
+_:f35e7e6babfb8aa829e5d1567ec5d95b rdf:reifies <<( doc:FactshsinchuTaiwan schema:name "Taichung, Taiwan" )>> ;
+	prov:wasDerivedFrom doc:6c0284a73a5b .
+doc:FactsiemNymcu a schema:Organization .
+_:faf2dd3fe21d772ae9c646ab1f3232b5 rdf:reifies <<( doc:FactsiemNymcu rdf:type schema:Organization )>> ;
+	prov:wasDerivedFrom doc:6c0284a73a5b .
+doc:FactsdiamondWireSawingMachine a schema:Machine .
+_:b32565e0bed1f3d79ea7c5489d56145 rdf:reifies <<( doc:FactsdiamondWireSawingMachine rdf:type schema:Machine )>> ;
+	prov:wasDerivedFrom doc:6c0284a73a5b .
+doc:FactsfaultDiagnosisFunction rdfs:label "fault prediction" .
+_:d2ad326092d2df97ba7dab73f9bd17e8 rdf:reifies <<( doc:FactsfaultDiagnosisFunction rdfs:label "fault prediction" )>> ;
+	prov:wasDerivedFrom doc:6c0284a73a5b .
+doc:FactsiemNymcu schema:name "International Master Program of Smart Manufacturing and Applied Information Science, National Chin-Yi University of Technology" .
+_:b027c9657da977b3d0b2f6e524270c0b rdf:reifies <<( doc:FactsiemNymcu schema:name "International Master Program of Smart Manufacturing and Applied Information Science, National Chin-Yi University of Technology" )>> ;
+	prov:wasDerivedFrom doc:6c0284a73a5b .
+doc:FactselectricMotorAssets a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Maintainable_item> .
+_:f2d38425aae1a257bb51bc72be59bff2 rdf:reifies <<( doc:FactselectricMotorAssets rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Maintainable_item> )>> ;
+	prov:wasDerivedFrom doc:6c0284a73a5b .
+doc:FactsganIngots schema:name "GaN semiconductor ingots" .
+_:d5fc7196e0187a118d52f7c515eabc19 rdf:reifies <<( doc:FactsganIngots schema:name "GaN semiconductor ingots" )>> ;
+	prov:wasDerivedFrom doc:6c0284a73a5b .
+doc:FactsphmFramework a schema:Thing .
+_:c476c71e7c5bb2d44910ff058f831d8f rdf:reifies <<( doc:FactsphmFramework rdf:type schema:Thing )>> ;
+	prov:wasDerivedFrom doc:6c0284a73a5b .
+doc:FactswenChiehSu schema:email "zhenyin.mg12@nycu.edu.tw" .
+_:f0d1609da490be8fef3611a04bad7157 rdf:reifies <<( doc:FactswenChiehSu schema:email "zhenyin.mg12@nycu.edu.tw" )>> ;
+	prov:wasDerivedFrom doc:6c0284a73a5b .
+doc:FactsdiamondCoatedSteelWires schema:name "multiple diamond-coated steel wires" .
+_:f8bf15b630b1038c6d0f11e76e4f81 rdf:reifies <<( doc:FactsdiamondCoatedSteelWires schema:name "multiple diamond-coated steel wires" )>> ;
+	prov:wasDerivedFrom doc:6c0284a73a5b .
+doc:FactsbearingAssets a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Maintainable_item> .
+_:cfab187396c59403cd6b070b8e184f4c rdf:reifies <<( doc:FactsbearingAssets rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Maintainable_item> )>> ;
+	prov:wasDerivedFrom doc:6c0284a73a5b .
+doc:Predictive_Maintenance_Article schema:about doc:FactsdiamondWireSawingMachine .
+_:ba7f25ff78a76602b2cfa1d751b3bb58 rdf:reifies <<( doc:Predictive_Maintenance_Article schema:about doc:FactsdiamondWireSawingMachine )>> ;
+	prov:wasDerivedFrom doc:6c0284a73a5b .
+doc:FactsindustrialEquipmentHealthManagement schema:description "A means to reduce operational risks and costs." .
+_:f283631b88117ad093bdc4bda15420cd rdf:reifies <<( doc:FactsindustrialEquipmentHealthManagement schema:description "A means to reduce operational risks and costs." )>> ;
+	prov:wasDerivedFrom doc:6c0284a73a5b .
+doc:FactswenChiehSu schema:givenName "Cherng-Yow" .
+_:f3d4daf8d099c397635444916d61b2c4 rdf:reifies <<( doc:FactswenChiehSu schema:givenName "Cherng-Yow" )>> ;
+	prov:wasDerivedFrom doc:6c0284a73a5b .
+doc:Predictive_Maintenance_Article schema:name "Predictive Maintenance" .
+_:dcce8694a1b7f47ce26c4223281b2c96 rdf:reifies <<( doc:Predictive_Maintenance_Article schema:name "Predictive Maintenance" )>> ;
+	prov:wasDerivedFrom doc:6c0284a73a5b .
+_:f23993deacd6704f2b599d21e85c588e rdf:reifies <<( doc:FactswenChiehSu schema:name "Cherng-Yow Cheng" )>> ;
+	prov:wasDerivedFrom doc:6c0284a73a5b .
+doc:FactshsinchuTaiwan schema:name "Hsinchu, Taiwan" .
+_:fe3a59c74d1b2188a2b1916c877b87b4 rdf:reifies <<( doc:FactshsinchuTaiwan schema:name "Hsinchu, Taiwan" )>> ;
+	prov:wasDerivedFrom doc:6c0284a73a5b .
+_:b048da236dc5649818287e790664abe5 prov:wasDerivedFrom doc:6c0284a73a5b .
+doc:FactswenChiehSu schema:familyName "Cheng" .
+_:ae224787b033b93f9b45c9d457e9f192 rdf:reifies <<( doc:FactswenChiehSu schema:familyName "Cheng" )>> ;
+	prov:wasDerivedFrom doc:6c0284a73a5b .
+doc:FactsphmFramework schema:mentions doc:Factsprognostics .
+_:df1778f567e87d6ef9835a951a47e758 rdf:reifies <<( doc:FactsphmFramework schema:mentions doc:Factsprognostics )>> ;
+	prov:wasDerivedFrom doc:6c0284a73a5b .
+doc:Factsvibration rdfs:label "vibration" .
+_:d44094ddf7664f42f09fd68db19174df rdf:reifies <<( doc:Factsvibration rdfs:label "vibration" )>> ;
+	prov:wasDerivedFrom doc:6c0284a73a5b .
+doc:FactsfaultDiagnosisFunction a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Fault_detection> .
+_:b234cf07e5aa8a788d052eebfcfbedc9 rdf:reifies <<( doc:FactsfaultDiagnosisFunction rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Fault_detection> )>> ;
+	prov:wasDerivedFrom doc:6c0284a73a5b .
+doc:FactsresearchDevelopmentAsiaUniversity schema:name "Department of Research and Development, Asia University" .
+_:a147c919ed8e00131e416a2958e8cf20 rdf:reifies <<( doc:FactsresearchDevelopmentAsiaUniversity schema:name "Department of Research and Development, Asia University" )>> ;
+	prov:wasDerivedFrom doc:6c0284a73a5b .
+doc:FactsmediumVoltageCableAssets a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Maintainable_item> .
+_:ccd744b6cd7b44f15a1dadbfb623d082 rdf:reifies <<( doc:FactsmediumVoltageCableAssets rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Maintainable_item> )>> ;
+	prov:wasDerivedFrom doc:6c0284a73a5b .
+doc:FactsphmFramework schema:name "Prognostics and Health Management framework" .
+_:d0cd49ee26dc6a0877766671c8c93151 rdf:reifies <<( doc:FactsphmFramework schema:name "Prognostics and Health Management framework" )>> ;
+	prov:wasDerivedFrom doc:6c0284a73a5b .
+doc:FactswenChiehSu schema:email "rhema1127@gmail.com" .
+_:dd608de71aee52ac6f8c91eb44ae3978 rdf:reifies <<( doc:FactswenChiehSu schema:email "rhema1127@gmail.com" )>> ;
+	prov:wasDerivedFrom doc:6c0284a73a5b .
+doc:Factsvibration a schema:Thing .
+_:ab3668810257dcb111bed53971338da5 rdf:reifies <<( doc:Factsvibration rdf:type schema:Thing )>> ;
+	prov:wasDerivedFrom doc:6c0284a73a5b .
+doc:FactsfaultDiagnosisFunction rdfs:label "anomaly detection" .
+_:cbd2c3d37b5c2c307256615d3015c2b1 rdf:reifies <<( doc:FactsfaultDiagnosisFunction rdfs:label "anomaly detection" )>> ;
+	prov:wasDerivedFrom doc:6c0284a73a5b .
+doc:Predictive_Maintenance_Article schema:name "Preventive Maintenance" .
+_:d9c2ec355021ec8c4ab82b7b11d25cec rdf:reifies <<( doc:Predictive_Maintenance_Article schema:name "Preventive Maintenance" )>> ;
+	prov:wasDerivedFrom doc:6c0284a73a5b .
+doc:FactsdiamondWireSawingMachine schema:alternateName "DMSM" .
+_:c2b57a56f219864d803ed30ec7169159 rdf:reifies <<( doc:FactsdiamondWireSawingMachine schema:alternateName "DMSM" )>> ;
+	prov:wasDerivedFrom doc:6c0284a73a5b .
+doc:FactswaferDefects a schema:Thing .
+_:d78939c863a8caf6545f7eee85c0875c rdf:reifies <<( doc:FactswaferDefects rdf:type schema:Thing )>> ;
+	prov:wasDerivedFrom doc:6c0284a73a5b .
+doc:FactsindustrialEquipmentHealthManagement schema:name "equipment health management" .
+_:de6d4a0cea5c78962cadc73e22fe09b9 rdf:reifies <<( doc:FactsindustrialEquipmentHealthManagement schema:name "equipment health management" )>> ;
+	prov:wasDerivedFrom doc:6c0284a73a5b .
+doc:Factsprognostics rdfs:label "prognostics" .
+_:b0de5480e20b1db2c8979ba7fb6fd696 rdf:reifies <<( doc:Factsprognostics rdfs:label "prognostics" )>> ;
+	prov:wasDerivedFrom doc:6c0284a73a5b .
+_:d938988ced4cecf4793a1c63401dd5a0 rdf:reifies <<( doc:FactswenChiehSu schema:name "Chun-Cheng Lin" )>> ;
+	prov:wasDerivedFrom doc:6c0284a73a5b .
+doc:e82f5d4b2568 a prov:Entity , schema:text ;
+	prov:generatedAtTime "2026-07-24T08:32:38.050915Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+	schema:position 2 ;
+	schema:identifier "e82f5d4b2568" .
+doc:FactsruleBasedModelType a None:Model_type .
+_:fca6a6a46cbf6e66e2b5c98925d627a rdf:reifies <<( doc:FactsruleBasedModelType rdf:type None:Model_type )>> ;
+	prov:wasDerivedFrom doc:e82f5d4b2568 .
+doc:FactsdynamicThresholding schema:name "transformation of reconstruction errors into anomaly scores"@en .
+_:b93b456e2a5686de6fa3e94d40ea5cb8 rdf:reifies <<( doc:FactsdynamicThresholding schema:name "transformation of reconstruction errors into anomaly scores"@en )>> ;
+	prov:wasDerivedFrom doc:e82f5d4b2568 .
+_:fdb2d5969643b58b1c1c4603a35967ab prov:wasDerivedFrom doc:e82f5d4b2568 .
+doc:FactsdynamicThresholding a None:Design_detail .
+_:ed3a2a520484694a663eb29200f6986b rdf:reifies <<( doc:FactsdynamicThresholding rdf:type None:Design_detail )>> ;
+	prov:wasDerivedFrom doc:e82f5d4b2568 .
+doc:FactshighDetectionAccuracy schema:name "high"@en .
+_:c8159917aa5087bcf40fe9d93d02ab8a rdf:reifies <<( doc:FactshighDetectionAccuracy schema:name "high"@en )>> ;
+	prov:wasDerivedFrom doc:e82f5d4b2568 .
+doc:FactszeroFalsePositives cco:describes doc:FactshighDetectionAccuracy .
+_:d40280fef118cd410dba713e1da9ecab rdf:reifies <<( doc:FactszeroFalsePositives cco:describes doc:FactshighDetectionAccuracy )>> ;
+	prov:wasDerivedFrom doc:e82f5d4b2568 .
+doc:FactsdecisionSupport a None:Design_detail .
+_:eb1d396fa762ab07b57ad7a3a1f46ef9 rdf:reifies <<( doc:FactsdecisionSupport rdf:type None:Design_detail )>> ;
+	prov:wasDerivedFrom doc:e82f5d4b2568 .
+doc:Predictive_Maintenance_Article None:has_predictive_maintenance_function doc:FactsrulPredictionFunction .
+_:ea1ad7d9ecaa58b492a179591fd4f2e4 rdf:reifies <<( doc:Predictive_Maintenance_Article None:has_predictive_maintenance_function doc:FactsrulPredictionFunction )>> ;
+	prov:wasDerivedFrom doc:e82f5d4b2568 .
+doc:FactsslidingWindowFeatureExtraction schema:name "sliding-window extraction of statistical features"@en .
+_:ee90f7cea0aaa35d815d7ff75bcf8fe7 rdf:reifies <<( doc:FactsslidingWindowFeatureExtraction schema:name "sliding-window extraction of statistical features"@en )>> ;
+	prov:wasDerivedFrom doc:e82f5d4b2568 .
+doc:Predictive_Maintenance_Article None:has_synchronization doc:FactsrealTimeSynchronization_4 .
+_:e316a01680375f985f6ec4cdefcc253f rdf:reifies <<( doc:Predictive_Maintenance_Article None:has_synchronization doc:FactsrealTimeSynchronization_4 )>> ;
+	prov:wasDerivedFrom doc:e82f5d4b2568 .
+doc:FactsrealTimeSynchronization_4 a None:Module_synchronization .
+_:ad84fad8cfcd7b407deb533c6a3465d rdf:reifies <<( doc:FactsrealTimeSynchronization_4 rdf:type None:Module_synchronization )>> ;
+	prov:wasDerivedFrom doc:e82f5d4b2568 .
+doc:FactsrealTimeSynchronization_4 schema:name "online real-time operation"@en .
+_:d184470787706c41cb98c5846b257649 rdf:reifies <<( doc:FactsrealTimeSynchronization_4 schema:name "online real-time operation"@en )>> ;
+	prov:wasDerivedFrom doc:e82f5d4b2568 .
+doc:Factssensing a None:maintainable_item_record .
+_:cd1931a99cff5ddc467943c35bdb15e0 rdf:reifies <<( doc:Factssensing rdf:type None:maintainable_item_record )>> ;
+	prov:wasDerivedFrom doc:e82f5d4b2568 .
+doc:Factssensing schema:name "historical normal data"@en .
+_:bb9df11b252595b521899c9fc77ebcbe rdf:reifies <<( doc:Factssensing schema:name "historical normal data"@en )>> ;
+	prov:wasDerivedFrom doc:e82f5d4b2568 .
+doc:Predictive_Maintenance_Article obo:BFO_0000051 doc:FactsdynamicThresholding .
+_:d3fd1f3bc575917eccc815b1842aafa rdf:reifies <<( doc:Predictive_Maintenance_Article obo:BFO_0000051 doc:FactsdynamicThresholding )>> ;
+	prov:wasDerivedFrom doc:e82f5d4b2568 .
+doc:FactsdecisionSupport schema:name "machine status visualization"@en .
+_:b892a50919956a2afd020f6ead92c354 rdf:reifies <<( doc:FactsdecisionSupport schema:name "machine status visualization"@en )>> ;
+	prov:wasDerivedFrom doc:e82f5d4b2568 .
+doc:FactshighDetectionAccuracy cco:describes doc:FactshighDetectionAccuracy .
+_:d4d94a354afcc80483ca14a68b2f6e7b rdf:reifies <<( doc:FactshighDetectionAccuracy cco:describes doc:FactshighDetectionAccuracy )>> ;
+	prov:wasDerivedFrom doc:e82f5d4b2568 .
+doc:FactshighDetectionAccuracy a None:Performance_value .
+_:b70567862c3597cb3d1e313d21357938 rdf:reifies <<( doc:FactshighDetectionAccuracy rdf:type None:Performance_value )>> ;
+	prov:wasDerivedFrom doc:e82f5d4b2568 .
+_:a087bfef77e060a3dacca55fafe6d575 prov:wasDerivedFrom doc:e82f5d4b2568 .
+_:e58ab84c3c9fb2d7e3666a3b85fe5f76 prov:wasDerivedFrom doc:e82f5d4b2568 .
+_:b048da236dc5649818287e790664abe5 prov:wasDerivedFrom doc:e82f5d4b2568 .
+doc:FactsruleBasedModelType schema:name "rule-based model"@en .
+_:bd7eba08763c4591c18bda9d8473bbc6 rdf:reifies <<( doc:FactsruleBasedModelType schema:name "rule-based model"@en )>> ;
+	prov:wasDerivedFrom doc:e82f5d4b2568 .
+doc:FactsdecisionSupport schema:name "early warning support"@en .
+_:d7190eca1e6d576620a819655c37a41c rdf:reifies <<( doc:FactsdecisionSupport schema:name "early warning support"@en )>> ;
+	prov:wasDerivedFrom doc:e82f5d4b2568 .
+doc:FactszeroFalsePositives None:has_interger_value 0 .
+_:bb799e7529b5721bd4d55f05e01bc7a3 rdf:reifies <<( doc:FactszeroFalsePositives None:has_interger_value 0 )>> ;
+	prov:wasDerivedFrom doc:e82f5d4b2568 .
+doc:Predictive_Maintenance_Article schema:name "rule-based anomaly detection model"@en .
+_:ae304c62ef9755be34265b2e296393c9 rdf:reifies <<( doc:Predictive_Maintenance_Article schema:name "rule-based anomaly detection model"@en )>> ;
+	prov:wasDerivedFrom doc:e82f5d4b2568 .
+doc:Factssensing a None:Data_variable .
+_:ef18ee2306693e4b2aae476b94bab087 rdf:reifies <<( doc:Factssensing rdf:type None:Data_variable )>> ;
+	prov:wasDerivedFrom doc:e82f5d4b2568 .
+doc:Predictive_Maintenance_Article None:describes_type doc:FactsruleBasedModelType .
+_:a3389773ee226e7f3750640bc079a461 rdf:reifies <<( doc:Predictive_Maintenance_Article None:describes_type doc:FactsruleBasedModelType )>> ;
+	prov:wasDerivedFrom doc:e82f5d4b2568 .
+doc:Predictive_Maintenance_Article cco:is_about doc:FactsdiamondWireSawingMachine .
+_:f2a5bc00aad8d5e6dee25a569040b73 rdf:reifies <<( doc:Predictive_Maintenance_Article cco:is_about doc:FactsdiamondWireSawingMachine )>> ;
+	prov:wasDerivedFrom doc:e82f5d4b2568 .
+doc:Predictive_Maintenance_Article schema:description "Study on real-time anomaly detection, diagnosis, and remaining useful life prediction for diamond wire sawing machines used in semiconductor wafer slicing."@en .
+_:f85ad6c5db3f57e28b9f9cf038b3f0c2 rdf:reifies <<( doc:Predictive_Maintenance_Article schema:description "Study on real-time anomaly detection, diagnosis, and remaining useful life prediction for diamond wire sawing machines used in semiconductor wafer slicing."@en )>> ;
+	prov:wasDerivedFrom doc:e82f5d4b2568 .
+doc:FactsdecisionSupport schema:name "decision support for predictive maintenance strategies"@en .
+_:d02242b3288268b084a069d708e7a09 rdf:reifies <<( doc:FactsdecisionSupport schema:name "decision support for predictive maintenance strategies"@en )>> ;
+	prov:wasDerivedFrom doc:e82f5d4b2568 .
+doc:Factssensing schema:name "statistical features"@en .
+_:f83eb9774be0bee48ebd94003280559f rdf:reifies <<( doc:Factssensing schema:name "statistical features"@en )>> ;
+	prov:wasDerivedFrom doc:e82f5d4b2568 .
+doc:FactsfaultDiagnosisFunction a None:Fault_identification .
+_:da6d76f3d7d13301e87b96ec03903d00 rdf:reifies <<( doc:FactsfaultDiagnosisFunction rdf:type None:Fault_identification )>> ;
+	prov:wasDerivedFrom doc:e82f5d4b2568 .
+doc:FactszeroFalsePositives a None:Performance_value .
+_:b45b75b5c01216b33a7c4800d60b7fbe rdf:reifies <<( doc:FactszeroFalsePositives rdf:type None:Performance_value )>> ;
+	prov:wasDerivedFrom doc:e82f5d4b2568 .
+doc:Predictive_Maintenance_Article schema:name "PHM system for diamond wire sawing machines"@en .
+_:ba8d339e575061547e5e06b9ce37c9d8 rdf:reifies <<( doc:Predictive_Maintenance_Article schema:name "PHM system for diamond wire sawing machines"@en )>> ;
+	prov:wasDerivedFrom doc:e82f5d4b2568 .
+doc:FactsfaultDiagnosisFunction schema:name "fault diagnosis"@en .
+_:e9bc0efb7d90200dcd903216aa205d85 rdf:reifies <<( doc:FactsfaultDiagnosisFunction schema:name "fault diagnosis"@en )>> ;
+	prov:wasDerivedFrom doc:e82f5d4b2568 .
+doc:FactsdiamondWireSawingMachine schema:name "diamond wire sawing machine"@en .
+_:e3dff34d77500e2d39c71187576d6ee3 rdf:reifies <<( doc:FactsdiamondWireSawingMachine schema:name "diamond wire sawing machine"@en )>> ;
+	prov:wasDerivedFrom doc:e82f5d4b2568 .
+doc:Predictive_Maintenance_Article None:has_design_detail doc:FactsdecisionSupport .
+_:f2e3332b63f9af2fe08e74fa9e71878 rdf:reifies <<( doc:Predictive_Maintenance_Article None:has_design_detail doc:FactsdecisionSupport )>> ;
+	prov:wasDerivedFrom doc:e82f5d4b2568 .
+doc:Factssensing cco:describes doc:FactsdiamondWireSawingMachine .
+_:dd5cdd6520b983deb91a92f580bb541e rdf:reifies <<( doc:Factssensing cco:describes doc:FactsdiamondWireSawingMachine )>> ;
+	prov:wasDerivedFrom doc:e82f5d4b2568 .
+doc:FactshighDetectionAccuracy schema:name "anomaly detection accuracy"@en .
+_:b87a0938453fa4df40452351e8b9a82 rdf:reifies <<( doc:FactshighDetectionAccuracy schema:name "anomaly detection accuracy"@en )>> ;
+	prov:wasDerivedFrom doc:e82f5d4b2568 .
+_:c028fcb3ad28c69aaa92aee398b8502c prov:wasDerivedFrom doc:e82f5d4b2568 .
+doc:FactsrulPredictionFunction a None:Remaining_useful_life_estimation .
+_:c4327a181783d3281d12373937e2c9c4 rdf:reifies <<( doc:FactsrulPredictionFunction rdf:type None:Remaining_useful_life_estimation )>> ;
+	prov:wasDerivedFrom doc:e82f5d4b2568 .
+doc:FactshighDetectionAccuracy a None:Performance_indicator .
+_:a90c71908f4a7726be04bd400aeec846 rdf:reifies <<( doc:FactshighDetectionAccuracy rdf:type None:Performance_indicator )>> ;
+	prov:wasDerivedFrom doc:e82f5d4b2568 .
+doc:Predictive_Maintenance_Article obo:BFO_0000051 doc:FactsslidingWindowFeatureExtraction .
+_:ad7ff2c186bef73ed109d93dddabcbf9 rdf:reifies <<( doc:Predictive_Maintenance_Article obo:BFO_0000051 doc:FactsslidingWindowFeatureExtraction )>> ;
+	prov:wasDerivedFrom doc:e82f5d4b2568 .
+doc:Factssensing schema:name "industrial sensor variables"@en .
+_:a08f686f9501fc38be812f98286fa76f rdf:reifies <<( doc:Factssensing schema:name "industrial sensor variables"@en )>> ;
+	prov:wasDerivedFrom doc:e82f5d4b2568 .
+doc:Predictive_Maintenance_Article schema:name "Univariate Autoencoder (UAE) model"@en .
+_:f819f3f2d408b841bceb01d0584f01c7 rdf:reifies <<( doc:Predictive_Maintenance_Article schema:name "Univariate Autoencoder (UAE) model"@en )>> ;
+	prov:wasDerivedFrom doc:e82f5d4b2568 .
+doc:FactsruleBasedModelType schema:name "unsupervised deep learning model"@en .
+_:e349cb9710855a057d337f5529004cba rdf:reifies <<( doc:FactsruleBasedModelType schema:name "unsupervised deep learning model"@en )>> ;
+	prov:wasDerivedFrom doc:e82f5d4b2568 .
+doc:FactsrulPredictionFunction schema:name "remaining useful life prediction"@en .
+_:a9c3697fee7cbd53e26d6082402cf0ef rdf:reifies <<( doc:FactsrulPredictionFunction schema:name "remaining useful life prediction"@en )>> ;
+	prov:wasDerivedFrom doc:e82f5d4b2568 .
+doc:FactsdynamicThresholding schema:name "dynamic threshold construction and threshold comparison"@en .
+_:e715ee1e477937eed1d7f7a7a6060d03 rdf:reifies <<( doc:FactsdynamicThresholding schema:name "dynamic threshold construction and threshold comparison"@en )>> ;
+	prov:wasDerivedFrom doc:e82f5d4b2568 .
+doc:Factssensing schema:name "confidential unlabeled industrial sensor data"@en .
+_:c541181fdfc6d2cc2284adf3488d5ff9 rdf:reifies <<( doc:Factssensing schema:name "confidential unlabeled industrial sensor data"@en )>> ;
+	prov:wasDerivedFrom doc:e82f5d4b2568 .
+doc:FactsslidingWindowFeatureExtraction a None:Design_detail .
+_:f1899e69fe31b2ed1d57fdcf555ddc21 rdf:reifies <<( doc:FactsslidingWindowFeatureExtraction rdf:type None:Design_detail )>> ;
+	prov:wasDerivedFrom doc:e82f5d4b2568 .
+doc:FactshighDetectionAccuracy schema:name "false positives"@en .
+_:ebb97bab6798bd0048ea70f46d182b0d rdf:reifies <<( doc:FactshighDetectionAccuracy schema:name "false positives"@en )>> ;
+	prov:wasDerivedFrom doc:e82f5d4b2568 .
+doc:FactsfaultDiagnosisFunction schema:name "real-time anomaly detection"@en .
+_:f8e2039c63985ff0f5e95fa462bb7a4c rdf:reifies <<( doc:FactsfaultDiagnosisFunction schema:name "real-time anomaly detection"@en )>> ;
+	prov:wasDerivedFrom doc:e82f5d4b2568 .

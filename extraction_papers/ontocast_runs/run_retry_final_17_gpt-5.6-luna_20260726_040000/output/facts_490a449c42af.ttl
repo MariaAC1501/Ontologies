@@ -1,0 +1,148 @@
+@prefix None: <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD/seed#> .
+@prefix cco: <http://www.ontologyrepository.com/CommonCoreOntologies/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doc: <https://growgraph.dev/doc/490a449c42af/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix schema: <https://schema.org/> .
+doc:2d6da73fda67 a prov:Entity , schema:text ;
+	prov:generatedAtTime "2026-07-26T14:03:45.100131Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+	schema:position 0 ;
+	schema:identifier "2d6da73fda67" .
+doc:FactspublicationYear1 a None:Publication_year .
+_:fac6b874547644255ef0af0325893b53 rdf:reifies <<( doc:FactspublicationYear1 rdf:type None:Publication_year )>> ;
+	prov:wasDerivedFrom doc:2d6da73fda67 .
+doc:Factsarticle1_1 schema:about "automotive sector" .
+_:d078cb90de7a1d37dc76e535b0fb0d1a rdf:reifies <<( doc:Factsarticle1_1 schema:about "automotive sector" )>> ;
+	prov:wasDerivedFrom doc:2d6da73fda67 .
+doc:Factsjournal1 schema:name "Journal of Modelling in Management" .
+_:eb536d688969429f16bb11c256f23733 rdf:reifies <<( doc:Factsjournal1 schema:name "Journal of Modelling in Management" )>> ;
+	prov:wasDerivedFrom doc:2d6da73fda67 .
+doc:Factsarticle1_1 schema:description "A study assessing the feasibility and effectiveness of integrating predictive maintenance with spare part inventory management as a digital supply chain solution."@en .
+_:dbdb309757685292e06d9f5ce2fd9fbc rdf:reifies <<( doc:Factsarticle1_1 schema:description "A study assessing the feasibility and effectiveness of integrating predictive maintenance with spare part inventory management as a digital supply chain solution."@en )>> ;
+	prov:wasDerivedFrom doc:2d6da73fda67 .
+doc:FactsauthorHu schema:familyName "Hu" .
+_:c09b9a3c0e93f76bd71dc25543d52fb1 rdf:reifies <<( doc:FactsauthorHu schema:familyName "Hu" )>> ;
+	prov:wasDerivedFrom doc:2d6da73fda67 .
+doc:Factsarticle1_1 None:has_publication_year doc:FactspublicationYear1 .
+_:d45288f78dfc324aaa37437332ff2eca rdf:reifies <<( doc:Factsarticle1_1 None:has_publication_year doc:FactspublicationYear1 )>> ;
+	prov:wasDerivedFrom doc:2d6da73fda67 .
+doc:Factstitle1_1 cco:designates doc:Factsarticle1_1 .
+_:baa19314aeb1fc4947c7b89d7c3eb683 rdf:reifies <<( doc:Factstitle1_1 cco:designates doc:Factsarticle1_1 )>> ;
+	prov:wasDerivedFrom doc:2d6da73fda67 .
+doc:Factsdoi1 cco:designates doc:Factsarticle1_1 .
+_:bf017eb8dfddf15f5d4d9c58b4031e58 rdf:reifies <<( doc:Factsdoi1 cco:designates doc:Factsarticle1_1 )>> ;
+	prov:wasDerivedFrom doc:2d6da73fda67 .
+doc:FactsauthorHu schema:familyName "Skoumpopoulou" .
+_:ecd6f1c4b6a3df7790ab71e0d245dd02 rdf:reifies <<( doc:FactsauthorHu schema:familyName "Skoumpopoulou" )>> ;
+	prov:wasDerivedFrom doc:2d6da73fda67 .
+doc:Factsarticle1_1 schema:keywords "Procurement" .
+_:d29b1624bb0004d630c0bc8222553ff8 rdf:reifies <<( doc:Factsarticle1_1 schema:keywords "Procurement" )>> ;
+	prov:wasDerivedFrom doc:2d6da73fda67 .
+doc:FactsauthorHu a schema:Person .
+_:b4b8b697aea3dfc5c3efe065c349aa41 rdf:reifies <<( doc:FactsauthorHu rdf:type schema:Person )>> ;
+	prov:wasDerivedFrom doc:2d6da73fda67 .
+doc:Factsemerald1 a schema:Organization .
+_:bac6899d5e19e86cb4b386be08c76b2c rdf:reifies <<( doc:Factsemerald1 rdf:type schema:Organization )>> ;
+	prov:wasDerivedFrom doc:2d6da73fda67 .
+doc:Factsdoi1 None:has_text_value "https://doi.org/10.1108/JM2-05-2024-0131" .
+_:c71e2d0e20feca065edbe7434c946f65 rdf:reifies <<( doc:Factsdoi1 None:has_text_value "https://doi.org/10.1108/JM2-05-2024-0131" )>> ;
+	prov:wasDerivedFrom doc:2d6da73fda67 .
+doc:FactsauthorHu schema:familyName "Toliyat" .
+_:b29fca422d26ce385e76bdba5229cf3f rdf:reifies <<( doc:FactsauthorHu schema:familyName "Toliyat" )>> ;
+	prov:wasDerivedFrom doc:2d6da73fda67 .
+doc:Factstitle1_1 a cco:DesignativeName .
+_:c47fcab166f1a29cb3eaa3ad75bc8b29 rdf:reifies <<( doc:Factstitle1_1 rdf:type cco:DesignativeName )>> ;
+	prov:wasDerivedFrom doc:2d6da73fda67 .
+doc:Factsdoi1 a None:Article_identifier .
+_:edc7994cc87ae23865a8a32614a34037 rdf:reifies <<( doc:Factsdoi1 rdf:type None:Article_identifier )>> ;
+	prov:wasDerivedFrom doc:2d6da73fda67 .
+doc:Factsarticle1_1 None:has_identifier doc:Factsdoi1 .
+_:d654ed15c89ca3d9314ad99dec21738c rdf:reifies <<( doc:Factsarticle1_1 None:has_identifier doc:Factsdoi1 )>> ;
+	prov:wasDerivedFrom doc:2d6da73fda67 .
+doc:Factsarticle1_1 schema:keywords "Artificial Intelligence" .
+_:c8d12342fbb69a65d708e12e1a12903c rdf:reifies <<( doc:Factsarticle1_1 schema:keywords "Artificial Intelligence" )>> ;
+	prov:wasDerivedFrom doc:2d6da73fda67 .
+doc:Factsarticle1_1 None:has_title doc:Factstitle1_1 .
+_:ae90ea15ab12c5bfe5e4e7587d80612d rdf:reifies <<( doc:Factsarticle1_1 None:has_title doc:Factstitle1_1 )>> ;
+	prov:wasDerivedFrom doc:2d6da73fda67 .
+doc:Factsarticle1_1 a schema:ScholarlyArticle .
+_:c873de59d73f14bbd02596fd5043e1b6 rdf:reifies <<( doc:Factsarticle1_1 rdf:type schema:ScholarlyArticle )>> ;
+	prov:wasDerivedFrom doc:2d6da73fda67 .
+doc:Factsarticle1_1 schema:keywords "Predictive Maintenance" .
+_:cbd7ed2057a95587a1ecae8c24e97bc9 rdf:reifies <<( doc:Factsarticle1_1 schema:keywords "Predictive Maintenance" )>> ;
+	prov:wasDerivedFrom doc:2d6da73fda67 .
+doc:Factsjournal1 schema:issueNumber "ahead-of-print" .
+_:bd430d1413612922c4cf8655436f73bb rdf:reifies <<( doc:Factsjournal1 schema:issueNumber "ahead-of-print" )>> ;
+	prov:wasDerivedFrom doc:2d6da73fda67 .
+doc:Factstitle1_1 a None:Article_title .
+_:ee66a06eb3951158ac9c6ffe7acf3059 rdf:reifies <<( doc:Factstitle1_1 rdf:type None:Article_title )>> ;
+	prov:wasDerivedFrom doc:2d6da73fda67 .
+doc:Factsarticle1_1 schema:keywords "Supply Chain Management" .
+_:eaa1464dce6011b6b987786aac961c5d rdf:reifies <<( doc:Factsarticle1_1 schema:keywords "Supply Chain Management" )>> ;
+	prov:wasDerivedFrom doc:2d6da73fda67 .
+doc:FactsauthorHu schema:givenName "D." .
+_:dacce88f08b9f1e4f412b0d55aecd82e rdf:reifies <<( doc:FactsauthorHu schema:givenName "D." )>> ;
+	prov:wasDerivedFrom doc:2d6da73fda67 .
+doc:Factsarticle1_1 schema:about "spare part inventory management" .
+_:bff13f52abc41a3fe9555b8b007b7797 rdf:reifies <<( doc:Factsarticle1_1 schema:about "spare part inventory management" )>> ;
+	prov:wasDerivedFrom doc:2d6da73fda67 .
+doc:Factsemerald1 schema:name "Emerald" .
+_:a697e8c32f6e38b7c1388f103de77c6c rdf:reifies <<( doc:Factsemerald1 schema:name "Emerald" )>> ;
+	prov:wasDerivedFrom doc:2d6da73fda67 .
+doc:Factsarticle1_1 schema:methodology "Two-staged embedded multiple case study with multi-method data collection and combined discrete/continuous simulation."@en .
+_:b5823eee1d599c3b716920f51c5a4687 rdf:reifies <<( doc:Factsarticle1_1 schema:methodology "Two-staged embedded multiple case study with multi-method data collection and combined discrete/continuous simulation."@en )>> ;
+	prov:wasDerivedFrom doc:2d6da73fda67 .
+doc:Factsarticle1_1 schema:author doc:FactsauthorHu .
+_:d9d929e24621ecd2d3147a13e7b399ff rdf:reifies <<( doc:Factsarticle1_1 schema:author doc:FactsauthorHu )>> ;
+	prov:wasDerivedFrom doc:2d6da73fda67 .
+doc:Factstitle1_1 None:has_text_value "Integrating spare part inventory management and predictive maintenance as a digital supply chain solution" .
+_:e0cba2d02afcd78b0810c63a3258be5a rdf:reifies <<( doc:Factstitle1_1 None:has_text_value "Integrating spare part inventory management and predictive maintenance as a digital supply chain solution" )>> ;
+	prov:wasDerivedFrom doc:2d6da73fda67 .
+doc:FactspublicationYear1 None:has_interger_value 2024 .
+_:b26a134d7f2013e1ac1eea9056177db1 rdf:reifies <<( doc:FactspublicationYear1 None:has_interger_value 2024 )>> ;
+	prov:wasDerivedFrom doc:2d6da73fda67 .
+doc:Factsarticle1_1 schema:about "predictive maintenance" .
+_:e6e92565b6c86a4cf48a2d118bdc94f0 rdf:reifies <<( doc:Factsarticle1_1 schema:about "predictive maintenance" )>> ;
+	prov:wasDerivedFrom doc:2d6da73fda67 .
+doc:FactsauthorHu schema:givenName "S." .
+_:d67f11c43f1da584fa8d1d191ba67c11 rdf:reifies <<( doc:FactsauthorHu schema:givenName "S." )>> ;
+	prov:wasDerivedFrom doc:2d6da73fda67 .
+doc:FactsauthorHu schema:givenName "A." .
+_:e33fa145a6be55e2098af282b3ef90f0 rdf:reifies <<( doc:FactsauthorHu schema:givenName "A." )>> ;
+	prov:wasDerivedFrom doc:2d6da73fda67 .
+doc:Factsdoi1 a cco:ArtifactIdentifier .
+_:e5796ccf2eb7671c200fd1b619911801 rdf:reifies <<( doc:Factsdoi1 rdf:type cco:ArtifactIdentifier )>> ;
+	prov:wasDerivedFrom doc:2d6da73fda67 .
+doc:Factsarticle1_1 schema:about "digital supply chain" .
+_:c125c0c0c6a5051dd42b46ea1557067d rdf:reifies <<( doc:Factsarticle1_1 schema:about "digital supply chain" )>> ;
+	prov:wasDerivedFrom doc:2d6da73fda67 .
+doc:Factsjournal1 schema:volumeNumber "ahead-of-print" .
+_:d88d5e0d2842c7f95fbf609583fc45ae rdf:reifies <<( doc:Factsjournal1 schema:volumeNumber "ahead-of-print" )>> ;
+	prov:wasDerivedFrom doc:2d6da73fda67 .
+doc:Factsarticle1_1 schema:license <https://creativecommons.org/licenses/by-nc/4.0/> .
+_:c15d3ab4e9de2e885e85a43a194b37ae rdf:reifies <<( doc:Factsarticle1_1 schema:license <https://creativecommons.org/licenses/by-nc/4.0/> )>> ;
+	prov:wasDerivedFrom doc:2d6da73fda67 .
+doc:Factsarticle1_1 a None:Predictive_Maintenance_Article .
+_:e4b910e2c91740c0d8a463e7eba85e16 rdf:reifies <<( doc:Factsarticle1_1 rdf:type None:Predictive_Maintenance_Article )>> ;
+	prov:wasDerivedFrom doc:2d6da73fda67 .
+doc:Factsarticle1_1 schema:isPartOf doc:Factsjournal1 .
+_:d742bab2a32db77279cd714f5501e43f rdf:reifies <<( doc:Factsarticle1_1 schema:isPartOf doc:Factsjournal1 )>> ;
+	prov:wasDerivedFrom doc:2d6da73fda67 .
+doc:Factsarticle1_1 schema:keywords "simulation" .
+_:e3a2f19b5f0cca93b4e54b9268fa110f rdf:reifies <<( doc:Factsarticle1_1 schema:keywords "simulation" )>> ;
+	prov:wasDerivedFrom doc:2d6da73fda67 .
+doc:FactsauthorHu schema:givenName "S.M.H." .
+_:adf7abb5fe9498706023f27c0fbb3efd rdf:reifies <<( doc:FactsauthorHu schema:givenName "S.M.H." )>> ;
+	prov:wasDerivedFrom doc:2d6da73fda67 .
+doc:Factsjournal1 a schema:Periodical .
+_:ac8e237ff9b2cb920fac5d903297ae0c rdf:reifies <<( doc:Factsjournal1 rdf:type schema:Periodical )>> ;
+	prov:wasDerivedFrom doc:2d6da73fda67 .
+doc:Factsarticle1_1 schema:publisher doc:Factsemerald1 .
+_:b96e17116dc64ae888050a41c59c5692 rdf:reifies <<( doc:Factsarticle1_1 schema:publisher doc:Factsemerald1 )>> ;
+	prov:wasDerivedFrom doc:2d6da73fda67 .
+doc:Factsarticle1_1 schema:keywords "Inventory Management" .
+_:d9b523bb89845e0f947e07e779c5d4bc rdf:reifies <<( doc:Factsarticle1_1 schema:keywords "Inventory Management" )>> ;
+	prov:wasDerivedFrom doc:2d6da73fda67 .
+doc:FactsauthorHu schema:familyName "Shokri" .
+_:d1c1e3ae223a7aec8f2e06d8913e65cf rdf:reifies <<( doc:FactsauthorHu schema:familyName "Shokri" )>> ;
+	prov:wasDerivedFrom doc:2d6da73fda67 .

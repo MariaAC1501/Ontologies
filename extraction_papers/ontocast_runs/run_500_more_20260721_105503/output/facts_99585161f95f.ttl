@@ -1,0 +1,360 @@
+@prefix None: <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD/seed#> .
+@prefix cco: <http://www.ontologyrepository.com/CommonCoreOntologies/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doc: <https://growgraph.dev/doc/99585161f95f/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix cd: <https://growgraph.dev/facts> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix schema: <https://schema.org/> .
+@prefix schema1: <http://schema.org/> .
+doc:59406432569b a prov:Entity , schema:text ;
+	prov:generatedAtTime "2026-07-22T06:54:50.206632Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+	schema:position 0 ;
+	schema:identifier "59406432569b" .
+doc:Factsdoc1_62 schema:about doc:FactsClassification .
+_:eba220e22228f3eeef2289a52530cdd7 rdf:reifies <<( doc:Factsdoc1_62 schema:about doc:FactsClassification )>> ;
+	prov:wasDerivedFrom doc:59406432569b .
+doc:Factsconfig1_18 a None:Model_type .
+_:b6e6962801c132abd0e6c484c47c4d1b rdf:reifies <<( doc:Factsconfig1_18 rdf:type None:Model_type )>> ;
+	prov:wasDerivedFrom doc:59406432569b .
+doc:Factsauthor1_78 schema:name "Zhen Guo" .
+_:d63b4c35ebe4c725bce631e56d7b768e rdf:reifies <<( doc:Factsauthor1_78 schema:name "Zhen Guo" )>> ;
+	prov:wasDerivedFrom doc:59406432569b .
+doc:Factsocsvm1 None:describes_type doc:Factsconfig1_18 .
+_:e7f3c524d78ad11d2e978be5d8a774fd rdf:reifies <<( doc:Factsocsvm1 None:describes_type doc:Factsconfig1_18 )>> ;
+	prov:wasDerivedFrom doc:59406432569b .
+doc:Factsgithub1 a cco:InformationBearingArtifact .
+_:d85a7c23cdd7f3c6534ecaa920c14208 rdf:reifies <<( doc:Factsgithub1 rdf:type cco:InformationBearingArtifact )>> ;
+	prov:wasDerivedFrom doc:59406432569b .
+doc:Factsdoc1_62 None:has_publication_year doc:Factsyear1_118 .
+_:acf88fa4333208025cd8ea2c828f8046 rdf:reifies <<( doc:Factsdoc1_62 None:has_publication_year doc:Factsyear1_118 )>> ;
+	prov:wasDerivedFrom doc:59406432569b .
+doc:Factsdoc1_62 a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Predictive_maintenance_model> .
+_:ae433b43f58ab2c28a597484d6185dae rdf:reifies <<( doc:Factsdoc1_62 rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Predictive_maintenance_model> )>> ;
+	prov:wasDerivedFrom doc:59406432569b .
+doc:Factsauthor1_78 schema:name "Chengguang Zhang" .
+_:f7f2ca906b7645b4ce27d2f0b28210a6 rdf:reifies <<( doc:Factsauthor1_78 schema:name "Chengguang Zhang" )>> ;
+	prov:wasDerivedFrom doc:59406432569b .
+doc:Factsdoc1_62 None:has_title doc:Factstitle1_92 .
+_:b5bd77f89b0ebfa25a1e8e0317751636 rdf:reifies <<( doc:Factsdoc1_62 None:has_title doc:Factstitle1_92 )>> ;
+	prov:wasDerivedFrom doc:59406432569b .
+doc:Factsconfig1_18 None:has_text_value "one-class support vector machine" .
+_:eba185998c14ce8358c9ef4ad32ae39c rdf:reifies <<( doc:Factsconfig1_18 None:has_text_value "one-class support vector machine" )>> ;
+	prov:wasDerivedFrom doc:59406432569b .
+doc:Factsgenerator1_1 None:has_predictive_maintenance_function doc:Factsfeature_extraction1_5 .
+_:a64d21132b03d7ea542ef6fe5ca718d9 rdf:reifies <<( doc:Factsgenerator1_1 None:has_predictive_maintenance_function doc:Factsfeature_extraction1_5 )>> ;
+	prov:wasDerivedFrom doc:59406432569b .
+doc:Factsdoc1_62 schema:mentions doc:Factsocsvm1 .
+_:e91a8407589e10b785b72ad576e62d1f rdf:reifies <<( doc:Factsdoc1_62 schema:mentions doc:Factsocsvm1 )>> ;
+	prov:wasDerivedFrom doc:59406432569b .
+doc:Factsdoi_or_url1 None:has_text_value "https://github.com/MR-ach/DCSGAN" .
+_:c1e87c4ba2e5c8a3bad68f9ee68f6b53 rdf:reifies <<( doc:Factsdoi_or_url1 None:has_text_value "https://github.com/MR-ach/DCSGAN" )>> ;
+	prov:wasDerivedFrom doc:59406432569b .
+doc:Factsgearbox1_4 rdfs:label "gearbox" .
+_:e35d8fd6e2ba42473b1b90607a722d5f rdf:reifies <<( doc:Factsgearbox1_4 rdfs:label "gearbox" )>> ;
+	prov:wasDerivedFrom doc:59406432569b .
+doc:Factsfeature_extraction1_5 a None:Fault_feature_extraction .
+_:ab52947a5d89e363b70370ffafdf1f5b rdf:reifies <<( doc:Factsfeature_extraction1_5 rdf:type None:Fault_feature_extraction )>> ;
+	prov:wasDerivedFrom doc:59406432569b .
+doc:Factsgenerator1_1 rdfs:label "generator" .
+_:beb09a474c21968cbe829624bc4c2dbb rdf:reifies <<( doc:Factsgenerator1_1 rdfs:label "generator" )>> ;
+	prov:wasDerivedFrom doc:59406432569b .
+doc:Factstitle1_92 a None:Article_title .
+_:ec6dbe15a0345c8dfc0535d0096395a3 rdf:reifies <<( doc:Factstitle1_92 rdf:type None:Article_title )>> ;
+	prov:wasDerivedFrom doc:59406432569b .
+doc:Factsauthor1_78 a schema:Person .
+_:ddaf0b664629cc809d22786763bc1f14 rdf:reifies <<( doc:Factsauthor1_78 rdf:type schema:Person )>> ;
+	prov:wasDerivedFrom doc:59406432569b .
+doc:Factsdoc1_62 schema:about doc:Factsgenerator1_1 .
+_:ed6ec3a28f653cd85ba2a7447f6c3de7 rdf:reifies <<( doc:Factsdoc1_62 schema:about doc:Factsgenerator1_1 )>> ;
+	prov:wasDerivedFrom doc:59406432569b .
+doc:Factsconfig1_18 None:has_text_value "unsupervised" .
+_:cacb50c072815b4ec93fb2717c7e73a1 rdf:reifies <<( doc:Factsconfig1_18 None:has_text_value "unsupervised" )>> ;
+	prov:wasDerivedFrom doc:59406432569b .
+doc:FactsClassification None:describes_configuration doc:Factsconfig1_18 .
+_:e1b14cc7d83977166fd971db2fa7ea24 rdf:reifies <<( doc:FactsClassification None:describes_configuration doc:Factsconfig1_18 )>> ;
+	prov:wasDerivedFrom doc:59406432569b .
+doc:Factsgenerator1_1 a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Predictive_maintenance_model> .
+_:dfa3b723229ce679b53ef28b8c6d960f rdf:reifies <<( doc:Factsgenerator1_1 rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Predictive_maintenance_model> )>> ;
+	prov:wasDerivedFrom doc:59406432569b .
+doc:Factsdoc1_62 schema:mentions doc:FactsClassification .
+_:d0af23eface7fca79beb01308ae43ff3 rdf:reifies <<( doc:Factsdoc1_62 schema:mentions doc:FactsClassification )>> ;
+	prov:wasDerivedFrom doc:59406432569b .
+doc:Factsyear1_118 None:has_interger_value 2024 .
+_:cc889558da650056ac28b8bfb10d5df8 rdf:reifies <<( doc:Factsyear1_118 None:has_interger_value 2024 )>> ;
+	prov:wasDerivedFrom doc:59406432569b .
+doc:Factsdoc1_62 None:has_identifier doc:Factsdoi_or_url1 .
+_:c223bcf5a9dcd8096a05be2e147be89a rdf:reifies <<( doc:Factsdoc1_62 None:has_identifier doc:Factsdoi_or_url1 )>> ;
+	prov:wasDerivedFrom doc:59406432569b .
+doc:Factsdoc1_62 schema:about doc:Factsgearbox1_4 .
+_:d220560af4d46ba2cebd8d10236ff6fa rdf:reifies <<( doc:Factsdoc1_62 schema:about doc:Factsgearbox1_4 )>> ;
+	prov:wasDerivedFrom doc:59406432569b .
+doc:Factsgenerator1_1 rdfs:label "condition monitoring" .
+_:d126ac2e22679bcf1192b13cc6b5061b rdf:reifies <<( doc:Factsgenerator1_1 rdfs:label "condition monitoring" )>> ;
+	prov:wasDerivedFrom doc:59406432569b .
+doc:Factsdoc1_62 schema:about doc:Factsfeature_extraction1_5 .
+_:bc43558a0c36fb8a7302c87cd16a50bd rdf:reifies <<( doc:Factsdoc1_62 schema:about doc:Factsfeature_extraction1_5 )>> ;
+	prov:wasDerivedFrom doc:59406432569b .
+doc:Factsunsupervised_learning1 rdfs:label "unsupervised learning" .
+_:c009d01609e28b844d5d82ac0abf5fe6 rdf:reifies <<( doc:Factsunsupervised_learning1 rdfs:label "unsupervised learning" )>> ;
+	prov:wasDerivedFrom doc:59406432569b .
+doc:Factsdoc1_62 schema:author doc:Factsauthor1_78 .
+_:ebd7554f06487f2089506c138202ef0 rdf:reifies <<( doc:Factsdoc1_62 schema:author doc:Factsauthor1_78 )>> ;
+	prov:wasDerivedFrom doc:59406432569b .
+doc:Factsocsvm1 rdfs:label "one-class support vector machine (OCSVM)" .
+_:c1cb366fa0391c7c156a8a20786dd4db rdf:reifies <<( doc:Factsocsvm1 rdfs:label "one-class support vector machine (OCSVM)" )>> ;
+	prov:wasDerivedFrom doc:59406432569b .
+doc:Factsdoc1_62 a schema:ScholarlyArticle .
+_:d4eb7378a43ba3e8c322d4dd507f684d rdf:reifies <<( doc:Factsdoc1_62 rdf:type schema:ScholarlyArticle )>> ;
+	prov:wasDerivedFrom doc:59406432569b .
+doc:Factsgithub1 schema:url <https://github.com/MR-ach/DCSGAN> .
+_:e38746ca53b28ebb33a2a7d7102f5b6a rdf:reifies <<( doc:Factsgithub1 schema:url <https://github.com/MR-ach/DCSGAN> )>> ;
+	prov:wasDerivedFrom doc:59406432569b .
+doc:FactsClassification None:describes_type doc:Factsconfig1_18 .
+_:d57536279cc260797a4766778819b0d5 rdf:reifies <<( doc:FactsClassification None:describes_type doc:Factsconfig1_18 )>> ;
+	prov:wasDerivedFrom doc:59406432569b .
+doc:Factsgenerator1_1 a None:Predictive_maintenance_module_function .
+_:efc20f543e8cacf7bb25d1b5d594750e rdf:reifies <<( doc:Factsgenerator1_1 rdf:type None:Predictive_maintenance_module_function )>> ;
+	prov:wasDerivedFrom doc:59406432569b .
+doc:Factsdataset1_16 rdfs:label "real gearbox dataset" .
+_:f99c62589c94c70a7312cd74804db87c rdf:reifies <<( doc:Factsdataset1_16 rdfs:label "real gearbox dataset" )>> ;
+	prov:wasDerivedFrom doc:59406432569b .
+doc:Factsdoc1_62 schema:name "Unsupervised anomaly detection for gearboxes based on the deep convolutional support generative adversarial network" .
+_:bdeb2c6a225b5a7d211f58d9597ea979 rdf:reifies <<( doc:Factsdoc1_62 schema:name "Unsupervised anomaly detection for gearboxes based on the deep convolutional support generative adversarial network" )>> ;
+	prov:wasDerivedFrom doc:59406432569b .
+doc:Factsdoi_or_url1 a None:Article_identifier .
+_:cb0e2b4dd730662a06c692a225a7c437 rdf:reifies <<( doc:Factsdoi_or_url1 rdf:type None:Article_identifier )>> ;
+	prov:wasDerivedFrom doc:59406432569b .
+doc:Factsanomaly_detection1_4 a None:Fault_detection .
+_:abd9360b07447505f164bbd0e8013be0 rdf:reifies <<( doc:Factsanomaly_detection1_4 rdf:type None:Fault_detection )>> ;
+	prov:wasDerivedFrom doc:59406432569b .
+doc:Factsanomaly_detection1_4 rdfs:label "anomaly detection" .
+_:bad624767ea90ce564989b231cf333b9 rdf:reifies <<( doc:Factsanomaly_detection1_4 rdfs:label "anomaly detection" )>> ;
+	prov:wasDerivedFrom doc:59406432569b .
+doc:Factsdoc1_62 schema:mentions doc:Factsgearbox1_4 .
+_:ca612dc563df4c5e7ca83193a57cc248 rdf:reifies <<( doc:Factsdoc1_62 schema:mentions doc:Factsgearbox1_4 )>> ;
+	prov:wasDerivedFrom doc:59406432569b .
+doc:Factsdoc1_62 rdfs:label "Unsupervised anomaly detection for gearboxes based on the deep convolutional support generative adversarial network" .
+_:d03da121c82fa6393b97d87552d22f27 rdf:reifies <<( doc:Factsdoc1_62 rdfs:label "Unsupervised anomaly detection for gearboxes based on the deep convolutional support generative adversarial network" )>> ;
+	prov:wasDerivedFrom doc:59406432569b .
+doc:Factsauthor1_78 schema:name "Chuan Li" .
+_:bd01e4226a6a8f7fe5c7b9eba5f63192 rdf:reifies <<( doc:Factsauthor1_78 schema:name "Chuan Li" )>> ;
+	prov:wasDerivedFrom doc:59406432569b .
+doc:FactsClassification rdfs:label "deep convolutional support generative adversarial network (DCSGAN)" .
+_:fa9630911b5b27e096281ade310ee8d rdf:reifies <<( doc:FactsClassification rdfs:label "deep convolutional support generative adversarial network (DCSGAN)" )>> ;
+	prov:wasDerivedFrom doc:59406432569b .
+doc:Factsconfig1_18 None:has_text_value "deep convolutional support generative adversarial network" .
+_:f394e2042b2b334bb73267debc1423cc rdf:reifies <<( doc:Factsconfig1_18 None:has_text_value "deep convolutional support generative adversarial network" )>> ;
+	prov:wasDerivedFrom doc:59406432569b .
+doc:Factsfeature_extraction1_5 rdfs:label "reconstruction error calculation" .
+_:acec814fd2300d4b7b59e70f2182d800 rdf:reifies <<( doc:Factsfeature_extraction1_5 rdfs:label "reconstruction error calculation" )>> ;
+	prov:wasDerivedFrom doc:59406432569b .
+doc:Factsgithub1 rdfs:label "GitHub code repository" .
+_:a64ae5cf779a99f1a3aa1c412f81a28a rdf:reifies <<( doc:Factsgithub1 rdfs:label "GitHub code repository" )>> ;
+	prov:wasDerivedFrom doc:59406432569b .
+doc:Factsgearbox1_4 a None:Maintainable_item .
+_:e8831c358a467b67efb87962d2389dbb rdf:reifies <<( doc:Factsgearbox1_4 rdf:type None:Maintainable_item )>> ;
+	prov:wasDerivedFrom doc:59406432569b .
+doc:Factstitle1_92 None:has_text_value "Unsupervised anomaly detection for gearboxes based on the deep convolutional support generative adversarial network" .
+_:c96fba574950258206d41719f5d18df2 rdf:reifies <<( doc:Factstitle1_92 None:has_text_value "Unsupervised anomaly detection for gearboxes based on the deep convolutional support generative adversarial network" )>> ;
+	prov:wasDerivedFrom doc:59406432569b .
+doc:Factsocsvm1 a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Predictive_maintenance_model> .
+_:b13b5f03d1e1e39ffeb3ec22e8a74395 rdf:reifies <<( doc:Factsocsvm1 rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Predictive_maintenance_model> )>> ;
+	prov:wasDerivedFrom doc:59406432569b .
+doc:Factsdoc1_62 schema:about doc:Factsanomaly_detection1_4 .
+_:d714b23bf7398cbaba2d578e33f69b5b rdf:reifies <<( doc:Factsdoc1_62 schema:about doc:Factsanomaly_detection1_4 )>> ;
+	prov:wasDerivedFrom doc:59406432569b .
+doc:Factsyear1_118 a None:Publication_year .
+_:beb9c0b903bcb3694370712c6b236830 rdf:reifies <<( doc:Factsyear1_118 rdf:type None:Publication_year )>> ;
+	prov:wasDerivedFrom doc:59406432569b .
+doc:Factsunsupervised_learning1 a None:Data_mining_technique_function .
+_:ec6d66cefc44dda840878285b3579874 rdf:reifies <<( doc:Factsunsupervised_learning1 rdf:type None:Data_mining_technique_function )>> ;
+	prov:wasDerivedFrom doc:59406432569b .
+doc:FactsClassification a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Predictive_maintenance_model> .
+_:e7f88d2b5e1be34915327dd77adca5c4 rdf:reifies <<( doc:FactsClassification rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Predictive_maintenance_model> )>> ;
+	prov:wasDerivedFrom doc:59406432569b .
+doc:Factsdoc1_62 schema:about doc:Factsocsvm1 .
+_:b5fb1cd56f7f5442fdca6260c0a66b17 rdf:reifies <<( doc:Factsdoc1_62 schema:about doc:Factsocsvm1 )>> ;
+	prov:wasDerivedFrom doc:59406432569b .
+doc:Factsconfig1_18 a None:Model_configuration .
+_:dfb6dc71de4bae0f851fdb6202893bcf rdf:reifies <<( doc:Factsconfig1_18 rdf:type None:Model_configuration )>> ;
+	prov:wasDerivedFrom doc:59406432569b .
+doc:Factsdataset1_16 a None:maintainable_item_record .
+_:a8ce0bb6025599d2ba742d34a7071b5 rdf:reifies <<( doc:Factsdataset1_16 rdf:type None:maintainable_item_record )>> ;
+	prov:wasDerivedFrom doc:59406432569b .
+doc:Factsdoc1_62 schema:about doc:Factsunsupervised_learning1 .
+_:ae4900031807c9d998e26981e94abdd7 rdf:reifies <<( doc:Factsdoc1_62 schema:about doc:Factsunsupervised_learning1 )>> ;
+	prov:wasDerivedFrom doc:59406432569b .
+doc:dc5507dcd28e a prov:Entity , schema:text ;
+	prov:generatedAtTime "2026-07-22T06:54:50.210632Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+	schema:position 1 ;
+	schema:identifier "dc5507dcd28e" .
+doc:Factsmodel1_29 cco:describes doc:FactsmseLossTask1 .
+_:a2984d85dc3c28b2bf3da838c686c4f2 rdf:reifies <<( doc:Factsmodel1_29 cco:describes doc:FactsmseLossTask1 )>> ;
+	prov:wasDerivedFrom doc:dc5507dcd28e .
+doc:Factsmodel1_29 cco:describes doc:FactswaveletRandomForestComparisonTask1 .
+_:f4d67f2d9528b755557a55c08d1c57f3 rdf:reifies <<( doc:Factsmodel1_29 cco:describes doc:FactswaveletRandomForestComparisonTask1 )>> ;
+	prov:wasDerivedFrom doc:dc5507dcd28e .
+doc:FactsmseLossTask1 a cco:DescriptiveInformationContentEntity .
+_:d4e88fccd186d5058abef9ae9028a0cb rdf:reifies <<( doc:FactsmseLossTask1 rdf:type cco:DescriptiveInformationContentEntity )>> ;
+	prov:wasDerivedFrom doc:dc5507dcd28e .
+doc:Factsdoc1_62 a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Predictive_Maintenance_Article> .
+_:fec2b7f7dba55f2dd78d211ea8585ada rdf:reifies <<( doc:Factsdoc1_62 rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Predictive_Maintenance_Article> )>> ;
+	prov:wasDerivedFrom doc:dc5507dcd28e .
+doc:Factsmodel1_29 a cco:Algorithm .
+_:f1ca446fc1b34b050dcab724fcb40ca1 rdf:reifies <<( doc:Factsmodel1_29 rdf:type cco:Algorithm )>> ;
+	prov:wasDerivedFrom doc:dc5507dcd28e .
+doc:Factsdoc1_62 cco:describes doc:FactsmseLossTask1 .
+_:a44e5a43d5dc6e8c79bd8a8ad751628c rdf:reifies <<( doc:Factsdoc1_62 cco:describes doc:FactsmseLossTask1 )>> ;
+	prov:wasDerivedFrom doc:dc5507dcd28e .
+doc:Factsmodel1_29 rdfs:label "DCSGAN" .
+_:d8a65b407604601281fcb3b79bb714b7 rdf:reifies <<( doc:Factsmodel1_29 rdfs:label "DCSGAN" )>> ;
+	prov:wasDerivedFrom doc:dc5507dcd28e .
+doc:FactswaveletRandomForestComparisonTask1 a cco:DescriptiveInformationContentEntity .
+_:d953acb26df283a2529aa6dae54131a1 rdf:reifies <<( doc:FactswaveletRandomForestComparisonTask1 rdf:type cco:DescriptiveInformationContentEntity )>> ;
+	prov:wasDerivedFrom doc:dc5507dcd28e .
+doc:Factsmodel1_29 a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Predictive_maintenance_model> .
+_:c75ee63d92225372ad8b8d20b4b29562 rdf:reifies <<( doc:Factsmodel1_29 rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Predictive_maintenance_model> )>> ;
+	prov:wasDerivedFrom doc:dc5507dcd28e .
+doc:Factsdoc1_62 cco:describes doc:Factsmodel1_29 .
+_:ba5719af12628cf18c3fafef5793071a rdf:reifies <<( doc:Factsdoc1_62 cco:describes doc:Factsmodel1_29 )>> ;
+	prov:wasDerivedFrom doc:dc5507dcd28e .
+doc:6bfd3d7604c7 a prov:Entity , schema:text ;
+	prov:generatedAtTime "2026-07-22T06:54:50.212632Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+	schema:position 2 ;
+	schema:identifier "6bfd3d7604c7" .
+doc:FactsClassification cd:has_part doc:FactsNoiseDistribution .
+_:a9c98e90a0ff40dee059194fbc2dbdd8 rdf:reifies <<( doc:FactsClassification cd:has_part doc:FactsNoiseDistribution )>> ;
+	prov:wasDerivedFrom doc:6bfd3d7604c7 .
+doc:FactsRawData rdfs:label "obtain the error value for each sample"@en .
+_:cb6b7925e5e7f7b16c5eca8bbe984b71 rdf:reifies <<( doc:FactsRawData rdfs:label "obtain the error value for each sample"@en )>> ;
+	prov:wasDerivedFrom doc:6bfd3d7604c7 .
+doc:FactsRawData a owl:Class .
+_:d80ae855acd6b3971fc9294a2aee914d rdf:reifies <<( doc:FactsRawData rdf:type owl:Class )>> ;
+	prov:wasDerivedFrom doc:6bfd3d7604c7 .
+doc:FactsRawData cd:describes_type doc:FactsRawData .
+_:de442a21a716e8457f96797da613bf3e rdf:reifies <<( doc:FactsRawData cd:describes_type doc:FactsRawData )>> ;
+	prov:wasDerivedFrom doc:6bfd3d7604c7 .
+doc:FactsRawData rdfs:label "test set"@en .
+_:f7e002dcdc90030ee8974df3da77167d rdf:reifies <<( doc:FactsRawData rdfs:label "test set"@en )>> ;
+	prov:wasDerivedFrom doc:6bfd3d7604c7 .
+doc:FactsRawData rdfs:label "train the generator and discriminator alternately"@en .
+_:d3346a31c1fa20dbcc0aa35527e3fa5c rdf:reifies <<( doc:FactsRawData rdfs:label "train the generator and discriminator alternately"@en )>> ;
+	prov:wasDerivedFrom doc:6bfd3d7604c7 .
+doc:FactsOneClassSvm cd:has_predictive_maintenance_function doc:FactsRawData .
+_:aa26f561816936ce2c1e79b0bf2f648a rdf:reifies <<( doc:FactsOneClassSvm cd:has_predictive_maintenance_function doc:FactsRawData )>> ;
+	prov:wasDerivedFrom doc:6bfd3d7604c7 .
+doc:Factsdoc1_62 cd:mentions doc:FactsRawData .
+_:d7859a4392b28663e8c25e66394cbc1e rdf:reifies <<( doc:Factsdoc1_62 cd:mentions doc:FactsRawData )>> ;
+	prov:wasDerivedFrom doc:6bfd3d7604c7 .
+doc:Factsdoc1_62 cd:mentions doc:FactsDcsganProcedure .
+_:d7457584e1d07c4e4ca8a262168b2ad2 rdf:reifies <<( doc:Factsdoc1_62 cd:mentions doc:FactsDcsganProcedure )>> ;
+	prov:wasDerivedFrom doc:6bfd3d7604c7 .
+doc:FactsRawData None:describes_type doc:FactsRawData .
+_:ef227c765e776d35290463922e93691b rdf:reifies <<( doc:FactsRawData None:describes_type doc:FactsRawData )>> ;
+	prov:wasDerivedFrom doc:6bfd3d7604c7 .
+doc:FactsDcsganProcedure cd:has_part doc:FactsRawData .
+_:fef1574145def93baaa0e64e5eed6d05 rdf:reifies <<( doc:FactsDcsganProcedure cd:has_part doc:FactsRawData )>> ;
+	prov:wasDerivedFrom doc:6bfd3d7604c7 .
+doc:FactsClassification cd:has_part doc:FactsClassification .
+_:e5338595e84a531147bb1f38dd8cc5e5 rdf:reifies <<( doc:FactsClassification cd:has_part doc:FactsClassification )>> ;
+	prov:wasDerivedFrom doc:6bfd3d7604c7 .
+doc:FactsRawData a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Predictive_maintenance_model> .
+_:d1244137570d0e360e125a0e96e110c5 rdf:reifies <<( doc:FactsRawData rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Predictive_maintenance_model> )>> ;
+	prov:wasDerivedFrom doc:6bfd3d7604c7 .
+doc:FactsClassification cd:has_part doc:FactsRawData .
+_:b1bac077b8d1a939a3efcf113d47b638 rdf:reifies <<( doc:FactsClassification cd:has_part doc:FactsRawData )>> ;
+	prov:wasDerivedFrom doc:6bfd3d7604c7 .
+doc:FactsRawData rdfs:label "raw data"@en .
+_:f8d9121d96b9402c7b5406ee7eecf4a2 rdf:reifies <<( doc:FactsRawData rdfs:label "raw data"@en )>> ;
+	prov:wasDerivedFrom doc:6bfd3d7604c7 .
+doc:Factsdoc1_62 cd:mentions doc:FactsClassification .
+_:e449e26ff5eb639d28d286537d0281b5 rdf:reifies <<( doc:Factsdoc1_62 cd:mentions doc:FactsClassification )>> ;
+	prov:wasDerivedFrom doc:6bfd3d7604c7 .
+doc:FactsNoiseDistribution a owl:Class .
+_:eef8aae5c25297a4bf084d8902e17c6e rdf:reifies <<( doc:FactsNoiseDistribution rdf:type owl:Class )>> ;
+	prov:wasDerivedFrom doc:6bfd3d7604c7 .
+doc:FactsRawData a None:Model_configuration .
+_:ef029f37701859bc88fc093e2ec2408e rdf:reifies <<( doc:FactsRawData rdf:type None:Model_configuration )>> ;
+	prov:wasDerivedFrom doc:6bfd3d7604c7 .
+doc:FactsClassification cd:has_predictive_maintenance_function doc:FactsRawData .
+_:f3c5a173708e98fe8750b446125dc5b3 rdf:reifies <<( doc:FactsClassification cd:has_predictive_maintenance_function doc:FactsRawData )>> ;
+	prov:wasDerivedFrom doc:6bfd3d7604c7 .
+doc:FactsRawData a None:Performance_value .
+_:e61e1ad58e034cfc7a995e7dcd073529 rdf:reifies <<( doc:FactsRawData rdf:type None:Performance_value )>> ;
+	prov:wasDerivedFrom doc:6bfd3d7604c7 .
+doc:FactsRawData None:describes_configuration doc:FactsClassification .
+_:c7e1361a72c61632ba439deb164c2830 rdf:reifies <<( doc:FactsRawData None:describes_configuration doc:FactsClassification )>> ;
+	prov:wasDerivedFrom doc:6bfd3d7604c7 .
+doc:FactsDcsganProcedure a owl:Class .
+_:d07b04b8e80355eb9561dcafda7a2f45 rdf:reifies <<( doc:FactsDcsganProcedure rdf:type owl:Class )>> ;
+	prov:wasDerivedFrom doc:6bfd3d7604c7 .
+doc:FactsRawData cd:has_predictive_maintenance_function doc:FactsRawData .
+_:eeb880fc5d748ecb36813a8639a0fa68 rdf:reifies <<( doc:FactsRawData cd:has_predictive_maintenance_function doc:FactsRawData )>> ;
+	prov:wasDerivedFrom doc:6bfd3d7604c7 .
+doc:Factsdoc1_62 a schema1:Article .
+_:ca62f296c81a2bb4956cf11c2ebb9eaa rdf:reifies <<( doc:Factsdoc1_62 rdf:type schema1:Article )>> ;
+	prov:wasDerivedFrom doc:6bfd3d7604c7 .
+doc:FactsRawData rdfs:label "training"@en .
+_:a87ce355a0ddfa0c5cc934afeb4047db rdf:reifies <<( doc:FactsRawData rdfs:label "training"@en )>> ;
+	prov:wasDerivedFrom doc:6bfd3d7604c7 .
+doc:FactsFeatureScaling rdfs:label "feature scaling"@en .
+_:c1e600f03a5db0d403e37b9b28bfdfa6 rdf:reifies <<( doc:FactsFeatureScaling rdfs:label "feature scaling"@en )>> ;
+	prov:wasDerivedFrom doc:6bfd3d7604c7 .
+doc:FactsClassification cd:has_part doc:FactsOneClassSvm .
+_:ff0dc8b41cedb6b4f4e5ca2874335989 rdf:reifies <<( doc:FactsClassification cd:has_part doc:FactsOneClassSvm )>> ;
+	prov:wasDerivedFrom doc:6bfd3d7604c7 .
+_:e7f88d2b5e1be34915327dd77adca5c4 prov:wasDerivedFrom doc:6bfd3d7604c7 .
+doc:FactsRawData cd:designates doc:FactsRawData .
+_:a5dde420f1d4589b20f80fdb1eed9793 rdf:reifies <<( doc:FactsRawData cd:designates doc:FactsRawData )>> ;
+	prov:wasDerivedFrom doc:6bfd3d7604c7 .
+doc:FactsDcsganProcedure rdfs:label "deep convolutional support generation adversarial network anomaly detection procedure"@en .
+_:a49e96eb1772413c760d855d07c78f2a rdf:reifies <<( doc:FactsDcsganProcedure rdfs:label "deep convolutional support generation adversarial network anomaly detection procedure"@en )>> ;
+	prov:wasDerivedFrom doc:6bfd3d7604c7 .
+doc:Factsdoc1_62 cd:mentions doc:FactsOneClassSvm .
+_:eea923d191701c5d756e9dbe1f2b5200 rdf:reifies <<( doc:Factsdoc1_62 cd:mentions doc:FactsOneClassSvm )>> ;
+	prov:wasDerivedFrom doc:6bfd3d7604c7 .
+doc:FactsRawData rdfs:label "calculate the reconstruction error"@en .
+_:f4bf70fac212510e736d75c6ae8dcf50 rdf:reifies <<( doc:FactsRawData rdfs:label "calculate the reconstruction error"@en )>> ;
+	prov:wasDerivedFrom doc:6bfd3d7604c7 .
+doc:FactsOneClassSvm a None:Classification .
+_:eae3877633ff88aeee5cc34a0e438368 rdf:reifies <<( doc:FactsOneClassSvm rdf:type None:Classification )>> ;
+	prov:wasDerivedFrom doc:6bfd3d7604c7 .
+doc:FactsRawData cd:has_part doc:FactsRawData .
+_:cddfecf9908d6db6e80c6e9a7996d71b rdf:reifies <<( doc:FactsRawData cd:has_part doc:FactsRawData )>> ;
+	prov:wasDerivedFrom doc:6bfd3d7604c7 .
+doc:Factsdoc1_62 cd:mentions doc:FactsNoiseDistribution .
+_:df16d774ce6159d36fbc880fe55eb3ba rdf:reifies <<( doc:Factsdoc1_62 cd:mentions doc:FactsNoiseDistribution )>> ;
+	prov:wasDerivedFrom doc:6bfd3d7604c7 .
+doc:FactsNoiseDistribution rdfs:label "noise distribution"@en .
+_:cd10c89b8786db691839befc0b4a7a61 rdf:reifies <<( doc:FactsNoiseDistribution rdfs:label "noise distribution"@en )>> ;
+	prov:wasDerivedFrom doc:6bfd3d7604c7 .
+doc:FactsRawData rdfs:label "load and normalize the dataset"@en .
+_:a9a579d01796c292ac1846a579a71feb rdf:reifies <<( doc:FactsRawData rdfs:label "load and normalize the dataset"@en )>> ;
+	prov:wasDerivedFrom doc:6bfd3d7604c7 .
+doc:FactsRawData rdfs:label "training set"@en .
+_:a35d7a570eb4797c37afa8f5455a2606 rdf:reifies <<( doc:FactsRawData rdfs:label "training set"@en )>> ;
+	prov:wasDerivedFrom doc:6bfd3d7604c7 .
+doc:FactsRawData cd:describes_type doc:FactsClassification .
+_:dc9c481fdb70ac80a852e9f9ba67f3e5 rdf:reifies <<( doc:FactsRawData cd:describes_type doc:FactsClassification )>> ;
+	prov:wasDerivedFrom doc:6bfd3d7604c7 .
+doc:FactsNoiseDistribution rdfs:label "normal distribution"@en .
+_:acb66771259397e32047518852c02c05 rdf:reifies <<( doc:FactsNoiseDistribution rdfs:label "normal distribution"@en )>> ;
+	prov:wasDerivedFrom doc:6bfd3d7604c7 .
+doc:FactsFeatureScaling a owl:Class .
+_:f6498f2086d054a54705b5e97d52b98 rdf:reifies <<( doc:FactsFeatureScaling rdf:type owl:Class )>> ;
+	prov:wasDerivedFrom doc:6bfd3d7604c7 .
+doc:FactsRawData cd:has_part doc:FactsFeatureScaling .
+_:a9caf994bad60b397391d27b2fa65f1f rdf:reifies <<( doc:FactsRawData cd:has_part doc:FactsFeatureScaling )>> ;
+	prov:wasDerivedFrom doc:6bfd3d7604c7 .
+doc:Factsdoc1_62 cd:mentions doc:FactsFeatureScaling .
+_:a47a9d727ab3d7fd4f38d421c32f1564 rdf:reifies <<( doc:Factsdoc1_62 cd:mentions doc:FactsFeatureScaling )>> ;
+	prov:wasDerivedFrom doc:6bfd3d7604c7 .
+doc:FactsRawData rdfs:label "construct the DCGAN model"@en .
+_:a5e45ec814a663ae1c95952df22479c7 rdf:reifies <<( doc:FactsRawData rdfs:label "construct the DCGAN model"@en )>> ;
+	prov:wasDerivedFrom doc:6bfd3d7604c7 .
+doc:FactsRawData cd:has_predictive_maintenance_function doc:FactsClassification .
+_:e74120132e79eb229799c0f01195deaa rdf:reifies <<( doc:FactsRawData cd:has_predictive_maintenance_function doc:FactsClassification )>> ;
+	prov:wasDerivedFrom doc:6bfd3d7604c7 .
+<http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Predictive_maintenance_model> owl:sameAs <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Predictive_Maintenance_Article> .

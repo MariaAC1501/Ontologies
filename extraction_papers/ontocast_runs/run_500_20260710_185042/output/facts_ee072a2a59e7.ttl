@@ -1,0 +1,372 @@
+@prefix None: <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD/seed#> .
+@prefix cco: <http://www.ontologyrepository.com/CommonCoreOntologies/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doc: <https://growgraph.dev/doc/ee072a2a59e7/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix obo: <http://purl.obolibrary.org/obo/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix schema: <https://schema.org/> .
+@prefix schema1: <http://schema.org/> .
+doc:1a35c0d02208 a prov:Entity , schema:text ;
+	prov:generatedAtTime "2026-07-12T21:47:11.498365Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+	schema:position 0 ;
+	schema:identifier "1a35c0d02208" .
+doc:Factsperf2 cco:designates doc:Factsperf2 .
+_:aa1fb3e05b4cb7fb01a455ca07782dc5 rdf:reifies <<( doc:Factsperf2 cco:designates doc:Factsperf2 )>> ;
+	prov:wasDerivedFrom doc:1a35c0d02208 .
+doc:Factsarticle1 dcterms:creator doc:Factsauthor3 .
+_:f1238bf02b539bfd082100061693d27d rdf:reifies <<( doc:Factsarticle1 dcterms:creator doc:Factsauthor3 )>> ;
+	prov:wasDerivedFrom doc:1a35c0d02208 .
+doc:Factsauthor3 a schema:Person .
+_:b3e48796cd68e7c664632b98afc0120 rdf:reifies <<( doc:Factsauthor3 rdf:type schema:Person )>> ;
+	prov:wasDerivedFrom doc:1a35c0d02208 .
+doc:Factsperf2 None:has_text_value "99.80%" .
+_:e6e8db0b9451bdafc4ae64d4c636bee3 rdf:reifies <<( doc:Factsperf2 None:has_text_value "99.80%" )>> ;
+	prov:wasDerivedFrom doc:1a35c0d02208 .
+doc:Factsmethod3 a None:Clustering .
+_:e45b632405a793571c3746a329b0d70d rdf:reifies <<( doc:Factsmethod3 rdf:type None:Clustering )>> ;
+	prov:wasDerivedFrom doc:1a35c0d02208 .
+doc:Factsstudy1 a None:Predictive_maintenance_module_function .
+_:f3ee52e3070f0b7d340c094d184fa6b1 rdf:reifies <<( doc:Factsstudy1 rdf:type None:Predictive_maintenance_module_function )>> ;
+	prov:wasDerivedFrom doc:1a35c0d02208 .
+doc:Factsforecast2 a None:Remaining_useful_life_estimation .
+_:ee73722223357b249ee16818db26e7f3 rdf:reifies <<( doc:Factsforecast2 rdf:type None:Remaining_useful_life_estimation )>> ;
+	prov:wasDerivedFrom doc:1a35c0d02208 .
+doc:Factsstudy1 None:has_predictive_maintenance_function doc:Factsstudy1 .
+_:de9fb3f77699c3cfb58bf01d65b0d766 rdf:reifies <<( doc:Factsstudy1 None:has_predictive_maintenance_function doc:Factsstudy1 )>> ;
+	prov:wasDerivedFrom doc:1a35c0d02208 .
+doc:Factsdoi1 a None:Article_identifier .
+_:df21d888f0495d540479aa33c6d1ae6c rdf:reifies <<( doc:Factsdoi1 rdf:type None:Article_identifier )>> ;
+	prov:wasDerivedFrom doc:1a35c0d02208 .
+doc:Factsdetail3 a None:Design_detail .
+_:c8b82701970eab79701b7d4949a5d774 rdf:reifies <<( doc:Factsdetail3 rdf:type None:Design_detail )>> ;
+	prov:wasDerivedFrom doc:1a35c0d02208 .
+doc:Factsstudy1 rdfs:label "K-Nearest Neighbors" .
+_:b7364e0035c930b5acf228e0287301f1 rdf:reifies <<( doc:Factsstudy1 rdfs:label "K-Nearest Neighbors" )>> ;
+	prov:wasDerivedFrom doc:1a35c0d02208 .
+doc:Factsitem1 cco:is_about doc:Factsdetail3 .
+_:fcdfd8a981487d0295283ff02f6aa300 rdf:reifies <<( doc:Factsitem1 cco:is_about doc:Factsdetail3 )>> ;
+	prov:wasDerivedFrom doc:1a35c0d02208 .
+doc:Factsmethod4 rdfs:label "NaÃ¯ve Bayes" .
+_:ebc2e0947819c539a4f84a94cff29131 rdf:reifies <<( doc:Factsmethod4 rdfs:label "NaÃ¯ve Bayes" )>> ;
+	prov:wasDerivedFrom doc:1a35c0d02208 .
+doc:Factsforecast2 a None:Future_state_forecast .
+_:aebc6f0673519a8ef5adc4dba9fbe773 rdf:reifies <<( doc:Factsforecast2 rdf:type None:Future_state_forecast )>> ;
+	prov:wasDerivedFrom doc:1a35c0d02208 .
+doc:Factsstudy1 None:has_design_detail doc:Factsdetail3 .
+_:e91f5f751bf7b6c104e9a0288117a6bb rdf:reifies <<( doc:Factsstudy1 None:has_design_detail doc:Factsdetail3 )>> ;
+	prov:wasDerivedFrom doc:1a35c0d02208 .
+doc:Factsstudy1 a None:Predictive_maintenance_system_module .
+_:afa921b5441ea85b70d4a92ad1220550 rdf:reifies <<( doc:Factsstudy1 rdf:type None:Predictive_maintenance_system_module )>> ;
+	prov:wasDerivedFrom doc:1a35c0d02208 .
+doc:Factsmethod5 rdfs:label "XGBoost" .
+_:d5253c260ed56f5bb123b759a43b73e6 rdf:reifies <<( doc:Factsmethod5 rdfs:label "XGBoost" )>> ;
+	prov:wasDerivedFrom doc:1a35c0d02208 .
+doc:Factsdetail3 None:has_text_value "sensor data" .
+_:d02ebb2830686843202e6e63fe601fc3 rdf:reifies <<( doc:Factsdetail3 None:has_text_value "sensor data" )>> ;
+	prov:wasDerivedFrom doc:1a35c0d02208 .
+doc:Factsstudy1 rdfs:label "Artificial Intelligence" .
+_:bd1022bc3f910827825e83944ee486eb rdf:reifies <<( doc:Factsstudy1 rdfs:label "Artificial Intelligence" )>> ;
+	prov:wasDerivedFrom doc:1a35c0d02208 .
+doc:Factsarticle1 dcterms:title "Predictive Maintenance of Mining Centrifuges Using Machine Learning and Deep Learning Models" .
+_:ea519ffe23a5f4746e63365d87f04395 rdf:reifies <<( doc:Factsarticle1 dcterms:title "Predictive Maintenance of Mining Centrifuges Using Machine Learning and Deep Learning Models" )>> ;
+	prov:wasDerivedFrom doc:1a35c0d02208 .
+doc:Factsmethod2 a None:Regression .
+_:d8abaf59423fd3591603c249eb36e39b rdf:reifies <<( doc:Factsmethod2 rdf:type None:Regression )>> ;
+	prov:wasDerivedFrom doc:1a35c0d02208 .
+doc:Factsstudy1 rdfs:label "Machine Learning" .
+_:cbd1e432965f418d8a0223051b9ebd88 rdf:reifies <<( doc:Factsstudy1 rdfs:label "Machine Learning" )>> ;
+	prov:wasDerivedFrom doc:1a35c0d02208 .
+doc:Factstitle1 a None:Article_title .
+_:dae0ef0ac1476a72b69b567fffd10e4d rdf:reifies <<( doc:Factstitle1 rdf:type None:Article_title )>> ;
+	prov:wasDerivedFrom doc:1a35c0d02208 .
+doc:Factsdetail3 None:has_text_value "time-series data" .
+_:f614033f1273e8ea4d021c5b58750499 rdf:reifies <<( doc:Factsdetail3 None:has_text_value "time-series data" )>> ;
+	prov:wasDerivedFrom doc:1a35c0d02208 .
+doc:Factsmethod2 rdfs:label "logistic regression" .
+_:f923aefa03ee50acca8f43848dff5e6d rdf:reifies <<( doc:Factsmethod2 rdfs:label "logistic regression" )>> ;
+	prov:wasDerivedFrom doc:1a35c0d02208 .
+doc:Factsmethod3 rdfs:label "K-Nearest Neighbors" .
+_:abec9dc3fe3d4a663ba40353575d93cc rdf:reifies <<( doc:Factsmethod3 rdfs:label "K-Nearest Neighbors" )>> ;
+	prov:wasDerivedFrom doc:1a35c0d02208 .
+doc:Factsarticle1 dcterms:identifier doc:Factsdoi1 .
+_:f32f080090a92057317e5fbc9fe26407 rdf:reifies <<( doc:Factsarticle1 dcterms:identifier doc:Factsdoi1 )>> ;
+	prov:wasDerivedFrom doc:1a35c0d02208 .
+doc:Factsstudy1 rdfs:label "Deep Neural Networks" .
+_:c1ec755e560368166eabe386de2bb860 rdf:reifies <<( doc:Factsstudy1 rdfs:label "Deep Neural Networks" )>> ;
+	prov:wasDerivedFrom doc:1a35c0d02208 .
+doc:Factsarticle1 None:has_publication_year doc:Factsyear2025 .
+_:fc44e5a8c75ab37ac861574b290e02be rdf:reifies <<( doc:Factsarticle1 None:has_publication_year doc:Factsyear2025 )>> ;
+	prov:wasDerivedFrom doc:1a35c0d02208 .
+doc:Factsarticle1 a None:Predictive_Maintenance_Article .
+_:e6fb4d8d3b9cc1fcd88127920a03cb86 rdf:reifies <<( doc:Factsarticle1 rdf:type None:Predictive_Maintenance_Article )>> ;
+	prov:wasDerivedFrom doc:1a35c0d02208 .
+doc:Factsmethod1 a None:Classification .
+_:ddf9722ab07b23b13aa34a86c4912fc2 rdf:reifies <<( doc:Factsmethod1 rdf:type None:Classification )>> ;
+	prov:wasDerivedFrom doc:1a35c0d02208 .
+doc:Factsmethod1 rdfs:label "machine learning model evaluation" .
+_:acbe91796687ca7ba10e49d437d08205 rdf:reifies <<( doc:Factsmethod1 rdfs:label "machine learning model evaluation" )>> ;
+	prov:wasDerivedFrom doc:1a35c0d02208 .
+doc:Factsauthor3 schema:name "Hassan Mohamed" .
+_:c4b0c4a3adeec5e07ca2777cf9e19b33 rdf:reifies <<( doc:Factsauthor3 schema:name "Hassan Mohamed" )>> ;
+	prov:wasDerivedFrom doc:1a35c0d02208 .
+doc:Factsmethod4 a None:Association_discovery .
+_:c3d09f051a745149f38c68e08f1a27 rdf:reifies <<( doc:Factsmethod4 rdf:type None:Association_discovery )>> ;
+	prov:wasDerivedFrom doc:1a35c0d02208 .
+doc:Factsstudy1 None:has_predictive_maintenance_function doc:Factsforecast2 .
+_:a7335aab873fe6f88f6ccfd11e14daeb rdf:reifies <<( doc:Factsstudy1 None:has_predictive_maintenance_function doc:Factsforecast2 )>> ;
+	prov:wasDerivedFrom doc:1a35c0d02208 .
+doc:Factsyear2025 None:has_interger_value 2025 .
+_:ad19d6ec7956b1507d4a2badf2360835 rdf:reifies <<( doc:Factsyear2025 None:has_interger_value 2025 )>> ;
+	prov:wasDerivedFrom doc:1a35c0d02208 .
+doc:Factsperf2 a None:Performance_value .
+_:c756d9359885696cb303be079b18c78 rdf:reifies <<( doc:Factsperf2 rdf:type None:Performance_value )>> ;
+	prov:wasDerivedFrom doc:1a35c0d02208 .
+doc:Factsdetail3 None:has_text_value "accuracy 99.80%" .
+_:a3aae2f86d9ed9a49bd1db708b60468b rdf:reifies <<( doc:Factsdetail3 None:has_text_value "accuracy 99.80%" )>> ;
+	prov:wasDerivedFrom doc:1a35c0d02208 .
+doc:Factsstudy1 rdfs:label "Long Short-Term Memory" .
+_:d08892af70f65270a8d9945c9f557ea8 rdf:reifies <<( doc:Factsstudy1 rdfs:label "Long Short-Term Memory" )>> ;
+	prov:wasDerivedFrom doc:1a35c0d02208 .
+doc:Factsmethod5 a None:Sequential_pattern_discovery .
+_:cf362439932f0322d9bf1aae3876de56 rdf:reifies <<( doc:Factsmethod5 rdf:type None:Sequential_pattern_discovery )>> ;
+	prov:wasDerivedFrom doc:1a35c0d02208 .
+doc:Factsperf2 None:has_text_value "accuracy" .
+_:a3335183f73628267756d32b8a35743d rdf:reifies <<( doc:Factsperf2 None:has_text_value "accuracy" )>> ;
+	prov:wasDerivedFrom doc:1a35c0d02208 .
+doc:Factsauthor3 schema:name "Doaa Ahmad Alqaraleh" .
+_:ddb3ea5753dcbd2a731c267b207a0fa9 rdf:reifies <<( doc:Factsauthor3 schema:name "Doaa Ahmad Alqaraleh" )>> ;
+	prov:wasDerivedFrom doc:1a35c0d02208 .
+doc:Factsitem1 rdfs:label "industrial centrifuges" .
+_:f7550d52df72c00243dc9eb4dde263ba rdf:reifies <<( doc:Factsitem1 rdfs:label "industrial centrifuges" )>> ;
+	prov:wasDerivedFrom doc:1a35c0d02208 .
+doc:Factsauthor3 schema:name "Mohd Zafri Bin Baharuddin" .
+_:ad018f5ec5e3fff2848cd07306795ad6 rdf:reifies <<( doc:Factsauthor3 schema:name "Mohd Zafri Bin Baharuddin" )>> ;
+	prov:wasDerivedFrom doc:1a35c0d02208 .
+doc:Factsauthor3 schema:name "Sami Salama Hussen Hajjaj" .
+_:cbf57fb0dc14245571311624ead6d3dc rdf:reifies <<( doc:Factsauthor3 schema:name "Sami Salama Hussen Hajjaj" )>> ;
+	prov:wasDerivedFrom doc:1a35c0d02208 .
+doc:Factsstudy1 rdfs:label "XGBoost" .
+_:caf4605ed84c6616c0eeafe4d8b8f65a rdf:reifies <<( doc:Factsstudy1 rdfs:label "XGBoost" )>> ;
+	prov:wasDerivedFrom doc:1a35c0d02208 .
+doc:Factsdetail3 None:has_text_value "mining sector" .
+_:bf18cdfd075b7d1a226b0fe2ba7ebbde rdf:reifies <<( doc:Factsdetail3 None:has_text_value "mining sector" )>> ;
+	prov:wasDerivedFrom doc:1a35c0d02208 .
+doc:Factsarticle1 None:has_title doc:Factstitle1 .
+_:aa57b4c545dff1e59a8bc11d0405dcc1 rdf:reifies <<( doc:Factsarticle1 None:has_title doc:Factstitle1 )>> ;
+	prov:wasDerivedFrom doc:1a35c0d02208 .
+doc:Factsyear2025 a None:Publication_year .
+_:faea68c837528cc10f652b46d018324e rdf:reifies <<( doc:Factsyear2025 rdf:type None:Publication_year )>> ;
+	prov:wasDerivedFrom doc:1a35c0d02208 .
+doc:Factsperf2 a None:Performance_indicator .
+_:e9030bbeade1482d74e3193a8e50f1e8 rdf:reifies <<( doc:Factsperf2 rdf:type None:Performance_indicator )>> ;
+	prov:wasDerivedFrom doc:1a35c0d02208 .
+doc:Factsdetail3 None:has_text_value "industrial centrifuges" .
+_:f4dd1571930bb2e9db66b1cd24c39dcf rdf:reifies <<( doc:Factsdetail3 None:has_text_value "industrial centrifuges" )>> ;
+	prov:wasDerivedFrom doc:1a35c0d02208 .
+doc:Factsauthor3 schema:name "Mohd Radzi Aridi" .
+_:b4f2b97afadbe86d98d16b57cd1b4e25 rdf:reifies <<( doc:Factsauthor3 schema:name "Mohd Radzi Aridi" )>> ;
+	prov:wasDerivedFrom doc:1a35c0d02208 .
+doc:Factsdoi1 None:has_text_value "10.48084/etasr.15162" .
+_:c22ca6077971c6860010f83799bb9251 rdf:reifies <<( doc:Factsdoi1 None:has_text_value "10.48084/etasr.15162" )>> ;
+	prov:wasDerivedFrom doc:1a35c0d02208 .
+doc:Factstitle1 None:has_text_value "Predictive Maintenance of Mining Centrifuges Using Machine Learning and Deep Learning Models" .
+_:df166ee704adecf7972ccdfa239c665c rdf:reifies <<( doc:Factstitle1 None:has_text_value "Predictive Maintenance of Mining Centrifuges Using Machine Learning and Deep Learning Models" )>> ;
+	prov:wasDerivedFrom doc:1a35c0d02208 .
+doc:Factsitem1 a None:Maintainable_item .
+_:f599cafac50b6f4a6b89921851d1bfac rdf:reifies <<( doc:Factsitem1 rdf:type None:Maintainable_item )>> ;
+	prov:wasDerivedFrom doc:1a35c0d02208 .
+doc:99b66412aff5 a prov:Entity , schema:text ;
+	prov:generatedAtTime "2026-07-12T21:47:11.502873Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+	schema:position 1 ;
+	schema:identifier "99b66412aff5" .
+doc:Factsuniten schema1:name "Universiti Tenaga Nasional"@en .
+_:ff178299149bf15e47784d2dcd4dfca7 rdf:reifies <<( doc:Factsuniten schema1:name "Universiti Tenaga Nasional"@en )>> ;
+	prov:wasDerivedFrom doc:99b66412aff5 .
+doc:FactsminingOperations a obo:BFO_0000004 .
+_:de1ab23cd9f7e23f29b958104142e3c1 rdf:reifies <<( doc:FactsminingOperations rdf:type obo:BFO_0000004 )>> ;
+	prov:wasDerivedFrom doc:99b66412aff5 .
+doc:FactsproductionRate a cco:DescriptiveInformationContentEntity .
+_:ace3b2a2fb3a7890e92b125ed1a20591 rdf:reifies <<( doc:FactsproductionRate rdf:type cco:DescriptiveInformationContentEntity )>> ;
+	prov:wasDerivedFrom doc:99b66412aff5 .
+doc:Factsstudy1 rdfs:comment "used to detect and correct system faults before operations are affected"@en .
+_:b82d273e3943aab9f0b303e7d33e9b73 rdf:reifies <<( doc:Factsstudy1 rdfs:comment "used to detect and correct system faults before operations are affected"@en )>> ;
+	prov:wasDerivedFrom doc:99b66412aff5 .
+doc:Factssdg9 a schema1:DefinedTerm .
+_:ff556229a4c77f327ec71e0304298f75 rdf:reifies <<( doc:Factssdg9 rdf:type schema1:DefinedTerm )>> ;
+	prov:wasDerivedFrom doc:99b66412aff5 .
+doc:Factssdg9 schema1:name "Climate Action"@en .
+_:d3e5c9f6cb1f09b8d89bd31d64412fd7 rdf:reifies <<( doc:Factssdg9 schema1:name "Climate Action"@en )>> ;
+	prov:wasDerivedFrom doc:99b66412aff5 .
+doc:FactscostLoss schema1:priceCurrency "USD" .
+_:b1798eda41e400be6614649d5987341e rdf:reifies <<( doc:FactscostLoss schema1:priceCurrency "USD" )>> ;
+	prov:wasDerivedFrom doc:99b66412aff5 .
+doc:Factsstudy1 a cco:DirectiveInformationContentEntity .
+_:c282615d7af86e57eec83f3f38b483c7 rdf:reifies <<( doc:Factsstudy1 rdf:type cco:DirectiveInformationContentEntity )>> ;
+	prov:wasDerivedFrom doc:99b66412aff5 .
+doc:FactsminingOperations a cco:Artifact .
+_:b227889911f4172f57d88488c082b46a rdf:reifies <<( doc:FactsminingOperations rdf:type cco:Artifact )>> ;
+	prov:wasDerivedFrom doc:99b66412aff5 .
+doc:Factscentrifuge_1 a cco:Artifact .
+_:cf10994cf86ac15b6348016c1f7761f5 rdf:reifies <<( doc:Factscentrifuge_1 rdf:type cco:Artifact )>> ;
+	prov:wasDerivedFrom doc:99b66412aff5 .
+doc:Factscent_1_failure a schema1:Event .
+_:d14dab98c68d147280dd6be37303906e rdf:reifies <<( doc:Factscent_1_failure rdf:type schema1:Event )>> ;
+	prov:wasDerivedFrom doc:99b66412aff5 .
+doc:Factsstudy1 rdfs:label "predictive maintenance"@en .
+_:f976cc4a4fb5e29abd90287b182d1b93 rdf:reifies <<( doc:Factsstudy1 rdfs:label "predictive maintenance"@en )>> ;
+	prov:wasDerivedFrom doc:99b66412aff5 .
+doc:Factsstudy1 a None:Deviation_detection .
+_:fbb9bf6d7bec8f07261db65b768ea2e0 rdf:reifies <<( doc:Factsstudy1 rdf:type None:Deviation_detection )>> ;
+	prov:wasDerivedFrom doc:99b66412aff5 .
+doc:Factsreliability rdfs:label "reliability"@en .
+_:ace40f34dfc2c148160826c62de50a6d rdf:reifies <<( doc:Factsreliability rdfs:label "reliability"@en )>> ;
+	prov:wasDerivedFrom doc:99b66412aff5 .
+doc:Factsstudy1 a obo:BFO_0000034 .
+_:f537b121aa7303bd225f9b348f690fd8 rdf:reifies <<( doc:Factsstudy1 rdf:type obo:BFO_0000034 )>> ;
+	prov:wasDerivedFrom doc:99b66412aff5 .
+doc:Factsstudy1 cco:describes doc:FactsminingOperations .
+_:e97f5de775b249f7e74157437abc35f1 rdf:reifies <<( doc:Factsstudy1 cco:describes doc:FactsminingOperations )>> ;
+	prov:wasDerivedFrom doc:99b66412aff5 .
+doc:Factsmethod1 a None:Clustering .
+_:b00194ce5e683c08764e50790fb93fbc rdf:reifies <<( doc:Factsmethod1 rdf:type None:Clustering )>> ;
+	prov:wasDerivedFrom doc:99b66412aff5 .
+_:a7335aab873fe6f88f6ccfd11e14daeb prov:wasDerivedFrom doc:99b66412aff5 .
+doc:Factscent_1_failure schema1:description "unexpected centrifuge failure"@en .
+_:cb68e387163385fceb7787d84ef458b9 rdf:reifies <<( doc:Factscent_1_failure schema1:description "unexpected centrifuge failure"@en )>> ;
+	prov:wasDerivedFrom doc:99b66412aff5 .
+doc:Factsstudy1 a cco:InformationProcessingArtifact .
+_:d1aa4bfb56e4c0d7e791e09346ca9419 rdf:reifies <<( doc:Factsstudy1 rdf:type cco:InformationProcessingArtifact )>> ;
+	prov:wasDerivedFrom doc:99b66412aff5 .
+doc:Factsstudy1 cco:describes doc:Factscentrifuge_1 .
+_:dacfc10a7ecc3c75188cd7873645d4d0 rdf:reifies <<( doc:Factsstudy1 cco:describes doc:Factscentrifuge_1 )>> ;
+	prov:wasDerivedFrom doc:99b66412aff5 .
+doc:FactswearAndTear a obo:BFO_0000019 .
+_:c900f6432556259048ba450ace6a53aa rdf:reifies <<( doc:FactswearAndTear rdf:type obo:BFO_0000019 )>> ;
+	prov:wasDerivedFrom doc:99b66412aff5 .
+_:f3ee52e3070f0b7d340c094d184fa6b1 prov:wasDerivedFrom doc:99b66412aff5 .
+_:afa921b5441ea85b70d4a92ad1220550 prov:wasDerivedFrom doc:99b66412aff5 .
+doc:FactsunexpectedBreakdowns a schema1:Event .
+_:af501ff6abad94512da421f8df9dcc89 rdf:reifies <<( doc:FactsunexpectedBreakdowns rdf:type schema1:Event )>> ;
+	prov:wasDerivedFrom doc:99b66412aff5 .
+doc:Factsmethod1 a None:Regression .
+_:f78395c46a404c0388cfb6caa0e92683 rdf:reifies <<( doc:Factsmethod1 rdf:type None:Regression )>> ;
+	prov:wasDerivedFrom doc:99b66412aff5 .
+doc:Factsmethod1 rdfs:label "machine learning technique"@en .
+_:b5d05f7b4c9d758d4b4b37a70d5efaa5 rdf:reifies <<( doc:Factsmethod1 rdfs:label "machine learning technique"@en )>> ;
+	prov:wasDerivedFrom doc:99b66412aff5 .
+doc:Factsreliability a obo:BFO_0000019 .
+_:c08d4b6726d3155cf34300153ef2244 rdf:reifies <<( doc:Factsreliability rdf:type obo:BFO_0000019 )>> ;
+	prov:wasDerivedFrom doc:99b66412aff5 .
+_:ee73722223357b249ee16818db26e7f3 prov:wasDerivedFrom doc:99b66412aff5 .
+doc:Factsstudy1 None:describes_configuration doc:Factsstudy1 .
+_:a5f5146ea1c6a4b4a9c2d598f33afebd rdf:reifies <<( doc:Factsstudy1 None:describes_configuration doc:Factsstudy1 )>> ;
+	prov:wasDerivedFrom doc:99b66412aff5 .
+_:aebc6f0673519a8ef5adc4dba9fbe773 prov:wasDerivedFrom doc:99b66412aff5 .
+doc:FactsdlTechnique a None:Data_mining_technique_function .
+_:be9610f6fe5b8d310bc33b509f5df9ba rdf:reifies <<( doc:FactsdlTechnique rdf:type None:Data_mining_technique_function )>> ;
+	prov:wasDerivedFrom doc:99b66412aff5 .
+doc:FactsmanufacturingDisturbances a schema1:Event .
+_:da15ca183a616681d7e4ced2d0afd62a rdf:reifies <<( doc:FactsmanufacturingDisturbances rdf:type schema1:Event )>> ;
+	prov:wasDerivedFrom doc:99b66412aff5 .
+doc:FactsresourceRecoveryEfficiency a cco:DescriptiveInformationContentEntity .
+_:e0c2b7a7395b83bf0f64dc614715b74d rdf:reifies <<( doc:FactsresourceRecoveryEfficiency rdf:type cco:DescriptiveInformationContentEntity )>> ;
+	prov:wasDerivedFrom doc:99b66412aff5 .
+doc:Factsdowntime a obo:BFO_0000019 .
+_:c88eb4aa05e509b22f4657f6cfa712c7 rdf:reifies <<( doc:Factsdowntime rdf:type obo:BFO_0000019 )>> ;
+	prov:wasDerivedFrom doc:99b66412aff5 .
+doc:FactsdlTechnique rdfs:label "deep learning technique"@en .
+_:b178b78080ed53628dd93b258c6afa58 rdf:reifies <<( doc:FactsdlTechnique rdfs:label "deep learning technique"@en )>> ;
+	prov:wasDerivedFrom doc:99b66412aff5 .
+doc:FactsrepairExpenses a schema1:MonetaryAmount .
+_:e36cabceb4c3a7b456cd3d1eba07618 rdf:reifies <<( doc:FactsrepairExpenses rdf:type schema1:MonetaryAmount )>> ;
+	prov:wasDerivedFrom doc:99b66412aff5 .
+doc:Factsstudy1 cco:describes doc:Factsstudy1 .
+_:f68c4643e06426fd98bc927328230ef1 rdf:reifies <<( doc:Factsstudy1 cco:describes doc:Factsstudy1 )>> ;
+	prov:wasDerivedFrom doc:99b66412aff5 .
+doc:Factscentrifuge_1 obo:RO_0000085 doc:Factsstudy1 .
+_:fe36a835a8523f555ab3a2a41ee86cda rdf:reifies <<( doc:Factscentrifuge_1 obo:RO_0000085 doc:Factsstudy1 )>> ;
+	prov:wasDerivedFrom doc:99b66412aff5 .
+doc:Factsstudy1 a None:Fault_detection .
+_:b26aefd63779850276d8869930d9330c rdf:reifies <<( doc:Factsstudy1 rdf:type None:Fault_detection )>> ;
+	prov:wasDerivedFrom doc:99b66412aff5 .
+doc:FactscostLoss a schema1:MonetaryAmount .
+_:b872abf8871b9bc5de3ef662041fc71e rdf:reifies <<( doc:FactscostLoss rdf:type schema1:MonetaryAmount )>> ;
+	prov:wasDerivedFrom doc:99b66412aff5 .
+doc:FactsjointUndertaking a schema1:Action .
+_:d7a6a3b002c055bc227328758d341f75 rdf:reifies <<( doc:FactsjointUndertaking rdf:type schema1:Action )>> ;
+	prov:wasDerivedFrom doc:99b66412aff5 .
+doc:Factsuniten schema1:name "Arab Potash Company"@en .
+_:ac89e0a311f42e7ccb8b34b5206c7e34 rdf:reifies <<( doc:Factsuniten schema1:name "Arab Potash Company"@en )>> ;
+	prov:wasDerivedFrom doc:99b66412aff5 .
+doc:Factscentrifuge_1 a None:Maintainable_item .
+_:c1174bc0062b6e5d770862a7d1832d98 rdf:reifies <<( doc:Factscentrifuge_1 rdf:type None:Maintainable_item )>> ;
+	prov:wasDerivedFrom doc:99b66412aff5 .
+_:ddf9722ab07b23b13aa34a86c4912fc2 prov:wasDerivedFrom doc:99b66412aff5 .
+doc:Factsuniten a schema1:Organization .
+_:f2c9c7fcc66700049298036f136af052 rdf:reifies <<( doc:Factsuniten rdf:type schema1:Organization )>> ;
+	prov:wasDerivedFrom doc:99b66412aff5 .
+doc:Factssdg9 schema1:name "Industry, Innovation, and Infrastructure"@en .
+_:e5b90d65b670c822574ff30496f78a9b rdf:reifies <<( doc:Factssdg9 schema1:name "Industry, Innovation, and Infrastructure"@en )>> ;
+	prov:wasDerivedFrom doc:99b66412aff5 .
+doc:Factsstudy1 a None:Predictive_maintenance_model .
+_:f2caf745eda7fc5ab507d4a336c4899f rdf:reifies <<( doc:Factsstudy1 rdf:type None:Predictive_maintenance_model )>> ;
+	prov:wasDerivedFrom doc:99b66412aff5 .
+doc:Factsstudy1 a cco:Algorithm .
+_:f2c281d4d196913e09419b41f9fe5aba rdf:reifies <<( doc:Factsstudy1 rdf:type cco:Algorithm )>> ;
+	prov:wasDerivedFrom doc:99b66412aff5 .
+_:de9fb3f77699c3cfb58bf01d65b0d766 prov:wasDerivedFrom doc:99b66412aff5 .
+doc:FactscostLoss schema1:value "15-20"@en .
+_:de50a6d95d965621c1fe17afc9435021 rdf:reifies <<( doc:FactscostLoss schema1:value "15-20"@en )>> ;
+	prov:wasDerivedFrom doc:99b66412aff5 .
+doc:ff59633b6bc6 a prov:Entity , schema:text ;
+	prov:generatedAtTime "2026-07-12T21:47:11.505873Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+	schema:position 2 ;
+	schema:identifier "ff59633b6bc6" .
+doc:FactsvibrationSignals a None:Data_variable .
+_:d580c3fe40e9df65e2393bb06c48f239 rdf:reifies <<( doc:FactsvibrationSignals rdf:type None:Data_variable )>> ;
+	prov:wasDerivedFrom doc:ff59633b6bc6 .
+_:ddf9722ab07b23b13aa34a86c4912fc2 prov:wasDerivedFrom doc:ff59633b6bc6 .
+_:dae0ef0ac1476a72b69b567fffd10e4d prov:wasDerivedFrom doc:ff59633b6bc6 .
+doc:Factscentrifuge a None:Maintainable_item .
+_:bcafc0d68c06b22aee5b16451e34a991 rdf:reifies <<( doc:Factscentrifuge rdf:type None:Maintainable_item )>> ;
+	prov:wasDerivedFrom doc:ff59633b6bc6 .
+doc:Factsstudy1 a None:Fault_feature_extraction .
+_:fdd6bd917e64806a259ef1a3ae1b0fc8 rdf:reifies <<( doc:Factsstudy1 rdf:type None:Fault_feature_extraction )>> ;
+	prov:wasDerivedFrom doc:ff59633b6bc6 .
+_:e6fb4d8d3b9cc1fcd88127920a03cb86 prov:wasDerivedFrom doc:ff59633b6bc6 .
+_:b26aefd63779850276d8869930d9330c prov:wasDerivedFrom doc:ff59633b6bc6 .
+doc:FactsreducedFalseFailureProjections a None:Performance_indicator .
+_:d17e7dc7cf0d32c1bc3c072ce3be3bca rdf:reifies <<( doc:FactsreducedFalseFailureProjections rdf:type None:Performance_indicator )>> ;
+	prov:wasDerivedFrom doc:ff59633b6bc6 .
+doc:FactsreducedRunningCosts a None:Performance_indicator .
+_:fe3e492c2caa500e426e173e968149dc rdf:reifies <<( doc:FactsreducedRunningCosts rdf:type None:Performance_indicator )>> ;
+	prov:wasDerivedFrom doc:ff59633b6bc6 .
+doc:FactssequenceMining a None:Sequential_pattern_discovery .
+_:c39bd58b8b43257e37e984b4f397d056 rdf:reifies <<( doc:FactssequenceMining rdf:type None:Sequential_pattern_discovery )>> ;
+	prov:wasDerivedFrom doc:ff59633b6bc6 .
+_:f3ee52e3070f0b7d340c094d184fa6b1 prov:wasDerivedFrom doc:ff59633b6bc6 .
+doc:FactsincreasedEquipmentReliability a None:Performance_indicator .
+_:fb61e32a2a54e25c941ed2c9a8b08fe5 rdf:reifies <<( doc:FactsincreasedEquipmentReliability rdf:type None:Performance_indicator )>> ;
+	prov:wasDerivedFrom doc:ff59633b6bc6 .
+_:c756d9359885696cb303be079b18c78 prov:wasDerivedFrom doc:ff59633b6bc6 .
+_:de9fb3f77699c3cfb58bf01d65b0d766 prov:wasDerivedFrom doc:ff59633b6bc6 .
+_:afa921b5441ea85b70d4a92ad1220550 prov:wasDerivedFrom doc:ff59633b6bc6 .
+doc:FactsdegradationDetection a None:Deviation_detection .
+_:dbd70d0f609ac214af29e59c1a51caf0 rdf:reifies <<( doc:FactsdegradationDetection rdf:type None:Deviation_detection )>> ;
+	prov:wasDerivedFrom doc:ff59633b6bc6 .
+_:aa57b4c545dff1e59a8bc11d0405dcc1 prov:wasDerivedFrom doc:ff59633b6bc6 .
+_:aebc6f0673519a8ef5adc4dba9fbe773 prov:wasDerivedFrom doc:ff59633b6bc6 .
+doc:Factsperf2 None:has_text_value "more than 90%" .
+_:b5af19b614bf7c4d22d2d6cb87e348ae rdf:reifies <<( doc:Factsperf2 None:has_text_value "more than 90%" )>> ;
+	prov:wasDerivedFrom doc:ff59633b6bc6 .
+doc:FactsindustrialSensors a None:Data_variable .
+_:f1f24dccf805b19faff3fd8103a77a07 rdf:reifies <<( doc:FactsindustrialSensors rdf:type None:Data_variable )>> ;
+	prov:wasDerivedFrom doc:ff59633b6bc6 .
+doc:Factstitle1 None:has_text_value "The proposed system integrates data-driven modeling techniques and real-time sensor information to provide a sustainable and smarter maintenance strategy for the mining industry." .
+_:b5203bd2827642965e72a4978ebba741 rdf:reifies <<( doc:Factstitle1 None:has_text_value "The proposed system integrates data-driven modeling techniques and real-time sensor information to provide a sustainable and smarter maintenance strategy for the mining industry." )>> ;
+	prov:wasDerivedFrom doc:ff59633b6bc6 .
+obo:BFO_0000034 owl:sameAs obo:BFO_0000004 .
+cco:DirectiveInformationContentEntity owl:sameAs cco:DescriptiveInformationContentEntity .

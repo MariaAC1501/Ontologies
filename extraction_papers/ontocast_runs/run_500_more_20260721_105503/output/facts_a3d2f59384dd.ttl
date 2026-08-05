@@ -1,0 +1,349 @@
+@prefix None: <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD/seed#> .
+@prefix cco: <http://www.ontologyrepository.com/CommonCoreOntologies/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doc: <https://growgraph.dev/doc/a3d2f59384dd/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix obo: <http://purl.obolibrary.org/obo/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix schema: <https://schema.org/> .
+doc:765d5a50ee38 a prov:Entity , schema:text ;
+	prov:generatedAtTime "2026-07-22T03:08:13.18376Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+	schema:position 0 ;
+	schema:identifier "765d5a50ee38" .
+doc:Predictive_maintenance_model a cco:Algorithm .
+_:eada1d32ce3428ada0b77f9ad936eb88 rdf:reifies <<( doc:Predictive_maintenance_model rdf:type cco:Algorithm )>> ;
+	prov:wasDerivedFrom doc:765d5a50ee38 .
+doc:FactsdeepLearning1_1 a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Classification> .
+_:f55d50ee0a1117d0a44e263e9fb03aa2 rdf:reifies <<( doc:FactsdeepLearning1_1 rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Classification> )>> ;
+	prov:wasDerivedFrom doc:765d5a50ee38 .
+doc:FactsSift a None:Model_type .
+_:ec60a346a8f05ed4c55905f40b84eeb2 rdf:reifies <<( doc:FactsSift rdf:type None:Model_type )>> ;
+	prov:wasDerivedFrom doc:765d5a50ee38 .
+doc:FactsdeepLearning1_1 None:has_text_value "deep learning" .
+_:cdee9145f268296d2a7686f59ae18bcc rdf:reifies <<( doc:FactsdeepLearning1_1 None:has_text_value "deep learning" )>> ;
+	prov:wasDerivedFrom doc:765d5a50ee38 .
+doc:FactsSift None:has_text_value "AUROC" .
+_:a49bcf520ad514103584f8689284b33e rdf:reifies <<( doc:FactsSift None:has_text_value "AUROC" )>> ;
+	prov:wasDerivedFrom doc:765d5a50ee38 .
+doc:Predictive_maintenance_model None:describes_configuration doc:Predictive_maintenance_model .
+_:d2332d02ea184adcd90524e676118681 rdf:reifies <<( doc:Predictive_maintenance_model None:describes_configuration doc:Predictive_maintenance_model )>> ;
+	prov:wasDerivedFrom doc:765d5a50ee38 .
+doc:FactsSift None:has_text_value "state space model (SSM)" .
+_:ef9baa06604c620b75ad145f9dd6e213 rdf:reifies <<( doc:FactsSift None:has_text_value "state space model (SSM)" )>> ;
+	prov:wasDerivedFrom doc:765d5a50ee38 .
+doc:FactsSift None:has_text_value "MLP" .
+_:cca4a853bb0c915ab278e6557000e30d rdf:reifies <<( doc:FactsSift None:has_text_value "MLP" )>> ;
+	prov:wasDerivedFrom doc:765d5a50ee38 .
+doc:Predictive_maintenance_model None:describes_type doc:FactsSift .
+_:c7fdc505b4393f44d1970eb8e026cbcc rdf:reifies <<( doc:Predictive_maintenance_model None:describes_type doc:FactsSift )>> ;
+	prov:wasDerivedFrom doc:765d5a50ee38 .
+doc:FactsarticleId1_4 a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Article_identifier> .
+_:c8e09a5dae486624382ee72352b0de4f rdf:reifies <<( doc:FactsarticleId1_4 rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Article_identifier> )>> ;
+	prov:wasDerivedFrom doc:765d5a50ee38 .
+doc:Factsdoc1_42 None:has_publication_year doc:FactspubYear1_3 .
+_:d93e9bf7f2427100f4900acb70f544ed rdf:reifies <<( doc:Factsdoc1_42 None:has_publication_year doc:FactspubYear1_3 )>> ;
+	prov:wasDerivedFrom doc:765d5a50ee38 .
+doc:FactsSift None:has_text_value "Mamba" .
+_:bd8c9d951d7ec24f8506a9e45c462397 rdf:reifies <<( doc:FactsSift None:has_text_value "Mamba" )>> ;
+	prov:wasDerivedFrom doc:765d5a50ee38 .
+doc:Factstitle1_69 a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Article_title> .
+_:b0739ce441a87467e4ecaa4bace9a82d rdf:reifies <<( doc:Factstitle1_69 rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Article_title> )>> ;
+	prov:wasDerivedFrom doc:765d5a50ee38 .
+doc:FactspubYear1_3 a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Publication_year> .
+_:b89ac5ff26d5a7c7526182037e231ed8 rdf:reifies <<( doc:FactspubYear1_3 rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Publication_year> )>> ;
+	prov:wasDerivedFrom doc:765d5a50ee38 .
+doc:Predictive_maintenance_model None:has_predictive_maintenance_function doc:Factsloosening1 .
+_:f73345526767f6bc44294544586e1179 rdf:reifies <<( doc:Predictive_maintenance_model None:has_predictive_maintenance_function doc:Factsloosening1 )>> ;
+	prov:wasDerivedFrom doc:765d5a50ee38 .
+doc:Factsloosening1 None:has_text_value "loosening anomalies" .
+_:dbbe7c4000525182d7c52b8df3d2656d rdf:reifies <<( doc:Factsloosening1 None:has_text_value "loosening anomalies" )>> ;
+	prov:wasDerivedFrom doc:765d5a50ee38 .
+doc:FactsSift None:has_text_value "0.986" .
+_:f50b9a607914785004d088b6937e8140 rdf:reifies <<( doc:FactsSift None:has_text_value "0.986" )>> ;
+	prov:wasDerivedFrom doc:765d5a50ee38 .
+doc:FactsSift a None:Performance_indicator .
+_:a0334c195e697da9c6ee64896dd177f6 rdf:reifies <<( doc:FactsSift rdf:type None:Performance_indicator )>> ;
+	prov:wasDerivedFrom doc:765d5a50ee38 .
+doc:FactsSift None:has_text_value "CBAM attention mechanism" .
+_:e6b0807b3b6cc8d7bc059807115fcba9 rdf:reifies <<( doc:FactsSift None:has_text_value "CBAM attention mechanism" )>> ;
+	prov:wasDerivedFrom doc:765d5a50ee38 .
+doc:FactspubYear1_3 None:has_interger_value 2025 .
+_:b0eda593abcf7bfb5ab7f035baf1ef82 rdf:reifies <<( doc:FactspubYear1_3 None:has_interger_value 2025 )>> ;
+	prov:wasDerivedFrom doc:765d5a50ee38 .
+doc:Factsdoc1_42 cco:describes doc:Predictive_maintenance_model .
+_:f75f6c16c8be12bad4876ee4986cf84a rdf:reifies <<( doc:Factsdoc1_42 cco:describes doc:Predictive_maintenance_model )>> ;
+	prov:wasDerivedFrom doc:765d5a50ee38 .
+doc:FactsSift a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Performance_value> .
+_:f5ab520b95b54f6b6f97ff2d9ec187b8 rdf:reifies <<( doc:FactsSift rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Performance_value> )>> ;
+	prov:wasDerivedFrom doc:765d5a50ee38 .
+doc:Factsdoc1_42 None:has_title doc:Factstitle1_69 .
+_:d44e9f1000ebb591704d6046c56d573 rdf:reifies <<( doc:Factsdoc1_42 None:has_title doc:Factstitle1_69 )>> ;
+	prov:wasDerivedFrom doc:765d5a50ee38 .
+doc:Factsloosening1 a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Fault_detection> .
+_:d0636e64eec0891004b845f06892e570 rdf:reifies <<( doc:Factsloosening1 rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Fault_detection> )>> ;
+	prov:wasDerivedFrom doc:765d5a50ee38 .
+doc:Predictive_maintenance_model None:has_text_value "VSM-UNet" .
+_:f2de5bdb47680927a780b3f1013318a8 rdf:reifies <<( doc:Predictive_maintenance_model None:has_text_value "VSM-UNet" )>> ;
+	prov:wasDerivedFrom doc:765d5a50ee38 .
+doc:Factsdoc1_42 None:has_identifier doc:FactsarticleId1_4 .
+_:eff8bf9f303ee8bdd1c285f9c50b3e4a rdf:reifies <<( doc:Factsdoc1_42 None:has_identifier doc:FactsarticleId1_4 )>> ;
+	prov:wasDerivedFrom doc:765d5a50ee38 .
+doc:Predictive_maintenance_model a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Predictive_maintenance_model> .
+_:e89c1342918d7e99c19cb1efa9570ea5 rdf:reifies <<( doc:Predictive_maintenance_model rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Predictive_maintenance_model> )>> ;
+	prov:wasDerivedFrom doc:765d5a50ee38 .
+doc:Factscscs1 a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Maintainable_item> .
+_:efbb251a1b5acfe051a7b53ea5415343 rdf:reifies <<( doc:Factscscs1 rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Maintainable_item> )>> ;
+	prov:wasDerivedFrom doc:765d5a50ee38 .
+doc:Factscscs1 None:has_text_value "catenary support components" .
+_:d8054f1570332b9ac45160f8f347b25f rdf:reifies <<( doc:Factscscs1 None:has_text_value "catenary support components" )>> ;
+	prov:wasDerivedFrom doc:765d5a50ee38 .
+doc:Factstitle1_69 None:has_text_value "VSM-UNet: A Visual State Space Reconstruction Network for Anomaly Detection of Catenary Support Components" .
+_:db39a992b4e1af7160cfaae354ad6d10 rdf:reifies <<( doc:Factstitle1_69 None:has_text_value "VSM-UNet: A Visual State Space Reconstruction Network for Anomaly Detection of Catenary Support Components" )>> ;
+	prov:wasDerivedFrom doc:765d5a50ee38 .
+doc:Factsdoc1_42 a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Predictive_maintenance_model> .
+_:ceebe6a9a9ba4e421efa1dcec4b8eb42 rdf:reifies <<( doc:Factsdoc1_42 rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Predictive_maintenance_model> )>> ;
+	prov:wasDerivedFrom doc:765d5a50ee38 .
+doc:Factsloosening1 None:has_text_value "anomaly detection of catenary support components" .
+_:eb8c4773c2714ea7bfb4316bd29f5df8 rdf:reifies <<( doc:Factsloosening1 None:has_text_value "anomaly detection of catenary support components" )>> ;
+	prov:wasDerivedFrom doc:765d5a50ee38 .
+doc:FactsarticleId1_4 None:has_text_value "10.3390/s25195967" .
+_:df1af8004f6a4680d5e01070d22a7a96 rdf:reifies <<( doc:FactsarticleId1_4 None:has_text_value "10.3390/s25195967" )>> ;
+	prov:wasDerivedFrom doc:765d5a50ee38 .
+doc:FactsSift None:has_text_value "FPS" .
+_:be401384a666228615d441e234b72efd rdf:reifies <<( doc:FactsSift None:has_text_value "FPS" )>> ;
+	prov:wasDerivedFrom doc:765d5a50ee38 .
+doc:FactsSift None:has_text_value "26.56" .
+_:cf3a43f27619923fe50e8670e8d296d3 rdf:reifies <<( doc:FactsSift None:has_text_value "26.56" )>> ;
+	prov:wasDerivedFrom doc:765d5a50ee38 .
+doc:FactsSift a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Design_detail> .
+_:a82f6958651c48dd2e7dec206b16bbb4 rdf:reifies <<( doc:FactsSift rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Design_detail> )>> ;
+	prov:wasDerivedFrom doc:765d5a50ee38 .
+doc:ef556d182a1e a prov:Entity , schema:text ;
+	prov:generatedAtTime "2026-07-22T03:08:13.186867Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+	schema:position 1 ;
+	schema:identifier "ef556d182a1e" .
+doc:Factsfact9_21 <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#describes_type> doc:FactsSift .
+_:cdb71e8a80b2100c9c06bee6fe5c4d61 rdf:reifies <<( doc:Factsfact9_21 <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#describes_type> doc:FactsSift )>> ;
+	prov:wasDerivedFrom doc:ef556d182a1e .
+doc:Factsdoc1_42 <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#has_publication_year> doc:FactspubYear1_3 .
+_:f76b46177ce6fa0897ad7def6013ae92 rdf:reifies <<( doc:Factsdoc1_42 <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#has_publication_year> doc:FactspubYear1_3 )>> ;
+	prov:wasDerivedFrom doc:ef556d182a1e .
+doc:Factsfact9_21 <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#describes_type> doc:Factsfact9_21 .
+_:ee2562294d8f1ac7334e4e2c95b990bc rdf:reifies <<( doc:Factsfact9_21 <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#describes_type> doc:Factsfact9_21 )>> ;
+	prov:wasDerivedFrom doc:ef556d182a1e .
+doc:FactsSift a cco:DescriptiveInformationContentEntity .
+_:b760134fa52edb4a3994c64862e0fa73 rdf:reifies <<( doc:FactsSift rdf:type cco:DescriptiveInformationContentEntity )>> ;
+	prov:wasDerivedFrom doc:ef556d182a1e .
+doc:Factstitle1_69 a cco:DesignativeName .
+_:b4fde48049409e4d8ef41ab301152829 rdf:reifies <<( doc:Factstitle1_69 rdf:type cco:DesignativeName )>> ;
+	prov:wasDerivedFrom doc:ef556d182a1e .
+doc:FactsmultiChannelFeatureExtraction a obo:BFO_0000034 .
+_:ad143cbcd95379d4dce87fa0fd08a99c rdf:reifies <<( doc:FactsmultiChannelFeatureExtraction rdf:type obo:BFO_0000034 )>> ;
+	prov:wasDerivedFrom doc:ef556d182a1e .
+doc:Factsfact9_21 a obo:BFO_0000034 .
+_:be77b1cbeff0aa6c92e0e398e61f2944 rdf:reifies <<( doc:Factsfact9_21 rdf:type obo:BFO_0000034 )>> ;
+	prov:wasDerivedFrom doc:ef556d182a1e .
+doc:Factsfact9_21 a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Clustering> .
+_:d44d50e1fbcd30ad6f58aed438e3eb62 rdf:reifies <<( doc:Factsfact9_21 rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Clustering> )>> ;
+	prov:wasDerivedFrom doc:ef556d182a1e .
+doc:FactsSift a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Data_variable> .
+_:ba8072c8aed63418a91fd0c33d48df1b rdf:reifies <<( doc:FactsSift rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Data_variable> )>> ;
+	prov:wasDerivedFrom doc:ef556d182a1e .
+doc:Factsfasteners a cco:Artifact .
+_:e4c74a1a30497cd2298c5b28367a160a rdf:reifies <<( doc:Factsfasteners rdf:type cco:Artifact )>> ;
+	prov:wasDerivedFrom doc:ef556d182a1e .
+doc:FactsintenseVibration a obo:BFO_0000019 .
+_:e159d3a259c89bd89789d5d7029c6efd rdf:reifies <<( doc:FactsintenseVibration rdf:type obo:BFO_0000019 )>> ;
+	prov:wasDerivedFrom doc:ef556d182a1e .
+doc:Factsfasteners a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Maintainable_item> .
+_:b6b7992ca65b92169a8dac70ce249f2b rdf:reifies <<( doc:Factsfasteners rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Maintainable_item> )>> ;
+	prov:wasDerivedFrom doc:ef556d182a1e .
+doc:Factsdoc1_42 <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#has_identifier> doc:FactsarticleId1_4 .
+_:e1cdd4d06921f04c9fb322f00a3fe94b rdf:reifies <<( doc:Factsdoc1_42 <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#has_identifier> doc:FactsarticleId1_4 )>> ;
+	prov:wasDerivedFrom doc:ef556d182a1e .
+doc:Factsdoc1_42 a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Predictive_Maintenance_Article> .
+_:dbe823edb7f8080a89d932db034c1d2c rdf:reifies <<( doc:Factsdoc1_42 rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Predictive_Maintenance_Article> )>> ;
+	prov:wasDerivedFrom doc:ef556d182a1e .
+doc:FactsmultiChannelFeatureExtraction a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Fault_feature_extraction> .
+_:f8a9faea0903bb881a5acaa0b16d7f1e rdf:reifies <<( doc:FactsmultiChannelFeatureExtraction rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Fault_feature_extraction> )>> ;
+	prov:wasDerivedFrom doc:ef556d182a1e .
+doc:Factsfact9_21 a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Classification> .
+_:d29ebfd80b8d93d15cc9f839d217bc08 rdf:reifies <<( doc:Factsfact9_21 rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Classification> )>> ;
+	prov:wasDerivedFrom doc:ef556d182a1e .
+doc:Factsfact9_21 a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Fault_detection> .
+_:d355e588e25ada2f55573a12026ffc75 rdf:reifies <<( doc:Factsfact9_21 rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Fault_detection> )>> ;
+	prov:wasDerivedFrom doc:ef556d182a1e .
+doc:Factsfact9_21 a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Regression> .
+_:dbb9fc667cc73da60a177d7b5aceba16 rdf:reifies <<( doc:Factsfact9_21 rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Regression> )>> ;
+	prov:wasDerivedFrom doc:ef556d182a1e .
+doc:Factsfact9_21 a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Deviation_detection> .
+_:e4a4c6fb9176d4661a4795c1eb448793 rdf:reifies <<( doc:Factsfact9_21 rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Deviation_detection> )>> ;
+	prov:wasDerivedFrom doc:ef556d182a1e .
+doc:Factsfasteners obo:BFO_0000051 doc:Factsfasteners .
+_:f9457450fd46818bc50bd3ce58932006 rdf:reifies <<( doc:Factsfasteners obo:BFO_0000051 doc:Factsfasteners )>> ;
+	prov:wasDerivedFrom doc:ef556d182a1e .
+doc:FactsSift a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Model_configuration> .
+_:d20fc52314718e2e496bbc460f2f654 rdf:reifies <<( doc:FactsSift rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Model_configuration> )>> ;
+	prov:wasDerivedFrom doc:ef556d182a1e .
+doc:FactsSift a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Performance_indicator> .
+_:a620a08149e26590d483e312ef6dad96 rdf:reifies <<( doc:FactsSift rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Performance_indicator> )>> ;
+	prov:wasDerivedFrom doc:ef556d182a1e .
+_:c8e09a5dae486624382ee72352b0de4f prov:wasDerivedFrom doc:ef556d182a1e .
+_:b0739ce441a87467e4ecaa4bace9a82d prov:wasDerivedFrom doc:ef556d182a1e .
+doc:Predictive_maintenance_model <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#describes_type> doc:Factsfact9_21 .
+_:af0d6d5cfd95ed31c583d8be1e2e69b8 rdf:reifies <<( doc:Predictive_maintenance_model <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#describes_type> doc:Factsfact9_21 )>> ;
+	prov:wasDerivedFrom doc:ef556d182a1e .
+doc:Factsdoc1_42 <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#has_title> doc:Factstitle1_69 .
+_:a0739905e2011d353116eaa93c7b0049 rdf:reifies <<( doc:Factsdoc1_42 <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#has_title> doc:Factstitle1_69 )>> ;
+	prov:wasDerivedFrom doc:ef556d182a1e .
+doc:FactsSift a obo:BFO_0000019 .
+_:f4ca7c9f48ea014c41ba416eeb936284 rdf:reifies <<( doc:FactsSift rdf:type obo:BFO_0000019 )>> ;
+	prov:wasDerivedFrom doc:ef556d182a1e .
+doc:Factsfact9_21 a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Association_discovery> .
+_:fa89389534fb2fc0024f639792c7d98f rdf:reifies <<( doc:Factsfact9_21 rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Association_discovery> )>> ;
+	prov:wasDerivedFrom doc:ef556d182a1e .
+doc:FactspubYear1_3 <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#has_interger_value> 2024 .
+_:add12823a7426d7c99302028a7eb8ee5 rdf:reifies <<( doc:FactspubYear1_3 <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#has_interger_value> 2024 )>> ;
+	prov:wasDerivedFrom doc:ef556d182a1e .
+doc:FactsarticleId1_4 a cco:ArtifactIdentifier .
+_:bdef677b536602e4167dfc549aaf3c5d rdf:reifies <<( doc:FactsarticleId1_4 rdf:type cco:ArtifactIdentifier )>> ;
+	prov:wasDerivedFrom doc:ef556d182a1e .
+_:b89ac5ff26d5a7c7526182037e231ed8 prov:wasDerivedFrom doc:ef556d182a1e .
+_:e89c1342918d7e99c19cb1efa9570ea5 prov:wasDerivedFrom doc:ef556d182a1e .
+doc:FactspubYear1_3 a cco:DescriptiveInformationContentEntity .
+_:ba11f2dbcf3f1fb75e0a9d7bc9011523 rdf:reifies <<( doc:FactspubYear1_3 rdf:type cco:DescriptiveInformationContentEntity )>> ;
+	prov:wasDerivedFrom doc:ef556d182a1e .
+doc:FactsintenseVibration a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Design_detail> .
+_:b6fd0df9e9d1db5c622505c8d3edfd70 rdf:reifies <<( doc:FactsintenseVibration rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Design_detail> )>> ;
+	prov:wasDerivedFrom doc:ef556d182a1e .
+_:f5ab520b95b54f6b6f97ff2d9ec187b8 prov:wasDerivedFrom doc:ef556d182a1e .
+_:a82f6958651c48dd2e7dec206b16bbb4 prov:wasDerivedFrom doc:ef556d182a1e .
+doc:Factsdoc1_42 <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#has_design_detail> doc:FactsSift .
+_:fb2adca46093021b2c8801cce3b505fe rdf:reifies <<( doc:Factsdoc1_42 <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#has_design_detail> doc:FactsSift )>> ;
+	prov:wasDerivedFrom doc:ef556d182a1e .
+doc:Factsdoc1_42 <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#has_design_detail> doc:FactsintenseVibration .
+_:e4cad11b97492d19bcb027e81ab2d7b6 rdf:reifies <<( doc:Factsdoc1_42 <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#has_design_detail> doc:FactsintenseVibration )>> ;
+	prov:wasDerivedFrom doc:ef556d182a1e .
+_:eada1d32ce3428ada0b77f9ad936eb88 prov:wasDerivedFrom doc:ef556d182a1e .
+doc:3e0b76fa01c6 a prov:Entity , schema:text ;
+	prov:generatedAtTime "2026-07-22T03:08:13.190996Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+	schema:position 2 ;
+	schema:identifier "3e0b76fa01c6" .
+doc:Factsfact15_19 a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Maintainable_item> .
+_:c08d63030ef92f089e27213cb72a2695 rdf:reifies <<( doc:Factsfact15_19 rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Maintainable_item> )>> ;
+	prov:wasDerivedFrom doc:3e0b76fa01c6 .
+doc:Factsfact23_9 rdfs:label "pixel-level anomaly maps"@en .
+_:eaa20e275ba8f0e1c7b5c6e1339405d8 rdf:reifies <<( doc:Factsfact23_9 rdfs:label "pixel-level anomaly maps"@en )>> ;
+	prov:wasDerivedFrom doc:3e0b76fa01c6 .
+doc:Factsfact1_19 cco:describes doc:Factsfact15_19 .
+_:da0c4a198fa0c960af8ee7859c5040d1 rdf:reifies <<( doc:Factsfact1_19 cco:describes doc:Factsfact15_19 )>> ;
+	prov:wasDerivedFrom doc:3e0b76fa01c6 .
+doc:Predictive_maintenance_model rdfs:label "model"@en .
+_:bbe7f235a82744d0e2c7464fd039d0bd rdf:reifies <<( doc:Predictive_maintenance_model rdfs:label "model"@en )>> ;
+	prov:wasDerivedFrom doc:3e0b76fa01c6 .
+_:e89c1342918d7e99c19cb1efa9570ea5 prov:wasDerivedFrom doc:3e0b76fa01c6 .
+doc:Predictive_maintenance_model None:has_predictive_maintenance_function doc:Predictive_maintenance_model .
+_:b76ac7b3177702a5ee768784e9a107d2 rdf:reifies <<( doc:Predictive_maintenance_model None:has_predictive_maintenance_function doc:Predictive_maintenance_model )>> ;
+	prov:wasDerivedFrom doc:3e0b76fa01c6 .
+doc:Predictive_maintenance_model cco:describes doc:Factsfact23_9 .
+_:dd69a6f95cbe1ff436b08f9bdf24ea40 rdf:reifies <<( doc:Predictive_maintenance_model cco:describes doc:Factsfact23_9 )>> ;
+	prov:wasDerivedFrom doc:3e0b76fa01c6 .
+_:ba8072c8aed63418a91fd0c33d48df1b prov:wasDerivedFrom doc:3e0b76fa01c6 .
+doc:Predictive_maintenance_model a None:Predictive_maintenance_module_function .
+_:d3b617ed4815d8ec47ba2508031cd561 rdf:reifies <<( doc:Predictive_maintenance_model rdf:type None:Predictive_maintenance_module_function )>> ;
+	prov:wasDerivedFrom doc:3e0b76fa01c6 .
+doc:Factsfact2_15 cco:describes doc:FactsSift .
+_:cef38cf19c7406d9a045bcf62a6a9768 rdf:reifies <<( doc:Factsfact2_15 cco:describes doc:FactsSift )>> ;
+	prov:wasDerivedFrom doc:3e0b76fa01c6 .
+doc:Predictive_maintenance_model rdfs:label "feature vectors"@en .
+_:b7a3636cbddf92850bb9919bb8413c24 rdf:reifies <<( doc:Predictive_maintenance_model rdfs:label "feature vectors"@en )>> ;
+	prov:wasDerivedFrom doc:3e0b76fa01c6 .
+doc:Predictive_maintenance_model cco:describes doc:Factsfact15_19 .
+_:c6f1d7af407adc2a844fa2e82d79af78 rdf:reifies <<( doc:Predictive_maintenance_model cco:describes doc:Factsfact15_19 )>> ;
+	prov:wasDerivedFrom doc:3e0b76fa01c6 .
+doc:Predictive_maintenance_model rdfs:label "decoding module"@en .
+_:b6ed1fb8889c42d8d9be3802af6e21d5 rdf:reifies <<( doc:Predictive_maintenance_model rdfs:label "decoding module"@en )>> ;
+	prov:wasDerivedFrom doc:3e0b76fa01c6 .
+doc:Factsfact6_21 None:describes_configuration doc:Predictive_maintenance_model .
+_:e3db13977962060a15314a18584f6f66 rdf:reifies <<( doc:Factsfact6_21 None:describes_configuration doc:Predictive_maintenance_model )>> ;
+	prov:wasDerivedFrom doc:3e0b76fa01c6 .
+doc:FactsSift rdfs:label "high-dimensional data"@en .
+_:f1bd51cbac910eca2d9558fb6550a000 rdf:reifies <<( doc:FactsSift rdfs:label "high-dimensional data"@en )>> ;
+	prov:wasDerivedFrom doc:3e0b76fa01c6 .
+doc:Factsfact1_19 a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Classification> .
+_:a74ab801eace0f4b3b439f4cad646a05 rdf:reifies <<( doc:Factsfact1_19 rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Classification> )>> ;
+	prov:wasDerivedFrom doc:3e0b76fa01c6 .
+doc:Factsfact15_19 rdfs:label "abnormal sample"@en .
+_:e6f3e6b2ab2b6a5dea098a1265da3118 rdf:reifies <<( doc:Factsfact15_19 rdfs:label "abnormal sample"@en )>> ;
+	prov:wasDerivedFrom doc:3e0b76fa01c6 .
+doc:Predictive_maintenance_model rdfs:label "feature extraction"@en .
+_:daaa468f67380896ecb6161196155e65 rdf:reifies <<( doc:Predictive_maintenance_model rdfs:label "feature extraction"@en )>> ;
+	prov:wasDerivedFrom doc:3e0b76fa01c6 .
+doc:Predictive_maintenance_model rdfs:label "decision boundaries"@en .
+_:c38c6ebfcd86c529a20e2b74f9c3cd37 rdf:reifies <<( doc:Predictive_maintenance_model rdfs:label "decision boundaries"@en )>> ;
+	prov:wasDerivedFrom doc:3e0b76fa01c6 .
+doc:Factsfact15_19 rdfs:label "normal sample"@en .
+_:c16520413f853142f07806fa522bb4ff rdf:reifies <<( doc:Factsfact15_19 rdfs:label "normal sample"@en )>> ;
+	prov:wasDerivedFrom doc:3e0b76fa01c6 .
+doc:Predictive_maintenance_model rdfs:label "image reconstruction method"@en .
+_:f3b0981e5378c9fb9dc84cb3f1af41d0 rdf:reifies <<( doc:Predictive_maintenance_model rdfs:label "image reconstruction method"@en )>> ;
+	prov:wasDerivedFrom doc:3e0b76fa01c6 .
+doc:Predictive_maintenance_model cco:describes doc:FactsSift .
+_:e42bc04561dfd0725aa18831aaaac92f rdf:reifies <<( doc:Predictive_maintenance_model cco:describes doc:FactsSift )>> ;
+	prov:wasDerivedFrom doc:3e0b76fa01c6 .
+doc:Factsfact2_15 rdfs:label "distance anomaly metrics"@en .
+_:f9a8079495f3a16cc28ebc0e02ac3a3f rdf:reifies <<( doc:Factsfact2_15 rdfs:label "distance anomaly metrics"@en )>> ;
+	prov:wasDerivedFrom doc:3e0b76fa01c6 .
+doc:Factsfact8_23 a None:Model_type .
+_:ae92fcc194d86dd6ba219e209f6c5669 rdf:reifies <<( doc:Factsfact8_23 rdf:type None:Model_type )>> ;
+	prov:wasDerivedFrom doc:3e0b76fa01c6 .
+doc:Factsfact6_21 a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Model_configuration> .
+_:e02e0539c3fc050bc948eeda05fd2c0a rdf:reifies <<( doc:Factsfact6_21 rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Model_configuration> )>> ;
+	prov:wasDerivedFrom doc:3e0b76fa01c6 .
+doc:Factsfact8_23 rdfs:label "deep learning-based distance metric"@en .
+_:c2a9590bdfa51a8d4626338a72dc9d3b rdf:reifies <<( doc:Factsfact8_23 rdfs:label "deep learning-based distance metric"@en )>> ;
+	prov:wasDerivedFrom doc:3e0b76fa01c6 .
+doc:Predictive_maintenance_model rdfs:label "Transformers"@en .
+_:b9350a7c4c8a30c3f6df76d0004199e3 rdf:reifies <<( doc:Predictive_maintenance_model rdfs:label "Transformers"@en )>> ;
+	prov:wasDerivedFrom doc:3e0b76fa01c6 .
+doc:Factsfact6_21 rdfs:label "encoder-decoder architectures"@en .
+_:ae468749952465099ce6c89afab9f5f4 rdf:reifies <<( doc:Factsfact6_21 rdfs:label "encoder-decoder architectures"@en )>> ;
+	prov:wasDerivedFrom doc:3e0b76fa01c6 .
+doc:Factsfact9_21 a None:Model_type .
+_:a15a5f16e2cb9b437777780e25265da9 rdf:reifies <<( doc:Factsfact9_21 rdf:type None:Model_type )>> ;
+	prov:wasDerivedFrom doc:3e0b76fa01c6 .
+doc:Predictive_maintenance_model rdfs:label "anomaly detection"@en .
+_:d203ed1cf63d1b1c65f6f2a06de12d3a rdf:reifies <<( doc:Predictive_maintenance_model rdfs:label "anomaly detection"@en )>> ;
+	prov:wasDerivedFrom doc:3e0b76fa01c6 .
+doc:Factsfact1_19 rdfs:label "classification sub-task"@en .
+_:e9250a97a5e92bc806e804852ca13f89 rdf:reifies <<( doc:Factsfact1_19 rdfs:label "classification sub-task"@en )>> ;
+	prov:wasDerivedFrom doc:3e0b76fa01c6 .
+doc:Predictive_maintenance_model rdfs:label "GANomaly"@en .
+_:c2a87d9fb7aeee99cbb3ab6977b53919 rdf:reifies <<( doc:Predictive_maintenance_model rdfs:label "GANomaly"@en )>> ;
+	prov:wasDerivedFrom doc:3e0b76fa01c6 .
+doc:Predictive_maintenance_model rdfs:label "autoencoder"@en .
+_:bfddb4266d6162d09897e1230faec73e rdf:reifies <<( doc:Predictive_maintenance_model rdfs:label "autoencoder"@en )>> ;
+	prov:wasDerivedFrom doc:3e0b76fa01c6 .
+doc:Predictive_maintenance_model rdfs:label "significant anomalous features detection"@en .
+_:e574a6d7e3c860868837d9a54f28c6f7 rdf:reifies <<( doc:Predictive_maintenance_model rdfs:label "significant anomalous features detection"@en )>> ;
+	prov:wasDerivedFrom doc:3e0b76fa01c6 .
+doc:Factsfact23_9 a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Data_variable> .
+_:dbbae59b6b67f62ccd5958cf5bec19e4 rdf:reifies <<( doc:Factsfact23_9 rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Data_variable> )>> ;
+	prov:wasDerivedFrom doc:3e0b76fa01c6 .
+doc:Predictive_maintenance_model rdfs:label "generative adversarial network"@en .
+_:ba81380d3c1eca522ce6803f075e67f6 rdf:reifies <<( doc:Predictive_maintenance_model rdfs:label "generative adversarial network"@en )>> ;
+	prov:wasDerivedFrom doc:3e0b76fa01c6 .
+doc:FactsSift rdfs:label "low-dimensional space"@en .
+_:c1e8fd1db37608d0f621ea28e2a320cb rdf:reifies <<( doc:FactsSift rdfs:label "low-dimensional space"@en )>> ;
+	prov:wasDerivedFrom doc:3e0b76fa01c6 .
+doc:Factsfact9_21 rdfs:label "one-class classification-based methods"@en .
+_:a62becd3673b02a9ed0c555aab4e93f0 rdf:reifies <<( doc:Factsfact9_21 rdfs:label "one-class classification-based methods"@en )>> ;
+	prov:wasDerivedFrom doc:3e0b76fa01c6 .
+doc:Factsfact2_15 a None:Data_mining_technique_function .
+_:c0bce1f40020d47edbb4d2034f9a0c8 rdf:reifies <<( doc:Factsfact2_15 rdf:type None:Data_mining_technique_function )>> ;
+	prov:wasDerivedFrom doc:3e0b76fa01c6 .
+doc:Predictive_maintenance_model rdfs:label "CNNs"@en .
+_:d96adba6b7809b01b7ec7e238c2daa1b rdf:reifies <<( doc:Predictive_maintenance_model rdfs:label "CNNs"@en )>> ;
+	prov:wasDerivedFrom doc:3e0b76fa01c6 .
+<http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Predictive_maintenance_model> owl:sameAs <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Predictive_Maintenance_Article> .

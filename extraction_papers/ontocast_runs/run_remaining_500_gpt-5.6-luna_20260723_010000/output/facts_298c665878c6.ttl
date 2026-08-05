@@ -1,0 +1,583 @@
+@prefix None: <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD/seed#> .
+@prefix cco: <http://www.ontologyrepository.com/CommonCoreOntologies/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doc: <https://growgraph.dev/doc/298c665878c6/> .
+@prefix obo: <http://purl.obolibrary.org/obo/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix schema: <https://schema.org/> .
+doc:0be5743d3891 a prov:Entity , schema:text ;
+	prov:generatedAtTime "2026-07-24T19:15:45.597489Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+	schema:position 0 ;
+	schema:identifier "0be5743d3891" .
+doc:Factsarticle1_65 a schema:ScholarlyArticle .
+_:a1a83b8eea7515f233db99a7aab42a31 rdf:reifies <<( doc:Factsarticle1_65 rdf:type schema:ScholarlyArticle )>> ;
+	prov:wasDerivedFrom doc:0be5743d3891 .
+doc:FactsauthorBlazej schema:familyName "Rzeszowska" .
+_:d8ada69f490003daf9ca5c861be02270 rdf:reifies <<( doc:FactsauthorBlazej schema:familyName "Rzeszowska" )>> ;
+	prov:wasDerivedFrom doc:0be5743d3891 .
+doc:FactsauthorBlazej schema:givenName "Aleksandra" .
+_:c8500704943fb6d5307d2fb2ec6f5a13 rdf:reifies <<( doc:FactsauthorBlazej schema:givenName "Aleksandra" )>> ;
+	prov:wasDerivedFrom doc:0be5743d3891 .
+doc:Factsarticle1_65 schema:author doc:FactsauthorBlazej .
+_:e140b7143f1709d2272897e0fe6d08c rdf:reifies <<( doc:Factsarticle1_65 schema:author doc:FactsauthorBlazej )>> ;
+	prov:wasDerivedFrom doc:0be5743d3891 .
+doc:Factsconveyor schema:name "conveyor belt" .
+_:c6670d1ece0450cd400fc62b31b46f44 rdf:reifies <<( doc:Factsconveyor schema:name "conveyor belt" )>> ;
+	prov:wasDerivedFrom doc:0be5743d3891 .
+doc:Factsarticle1_65 schema:keywords "refurbishment" .
+_:e7eadc7409fa4a5b174bed9f129df253 rdf:reifies <<( doc:Factsarticle1_65 schema:keywords "refurbishment" )>> ;
+	prov:wasDerivedFrom doc:0be5743d3891 .
+doc:FactssuccessRateIndicator1 schema:unitText "percent" .
+_:dd9a2c38c47eae3fc51a0a8501080fdb rdf:reifies <<( doc:FactssuccessRateIndicator1 schema:unitText "percent" )>> ;
+	prov:wasDerivedFrom doc:0be5743d3891 .
+doc:Predictive_maintenance_system_module a None:Predictive_maintenance_module_function .
+_:ea1b975535d15bca5f8faa037513a7e9 rdf:reifies <<( doc:Predictive_maintenance_system_module rdf:type None:Predictive_maintenance_module_function )>> ;
+	prov:wasDerivedFrom doc:0be5743d3891 .
+doc:Factsarticle1_65 schema:about doc:Factsconveyor .
+_:e9f83de78ac35d671dd3dee11fc193ba rdf:reifies <<( doc:Factsarticle1_65 schema:about doc:Factsconveyor )>> ;
+	prov:wasDerivedFrom doc:0be5743d3891 .
+doc:FactsbelchatowLigniteMines a schema:Place .
+_:c04c2a01457ade2a75cdec4bddbfade5 rdf:reifies <<( doc:FactsbelchatowLigniteMines rdf:type schema:Place )>> ;
+	prov:wasDerivedFrom doc:0be5743d3891 .
+doc:FactsarticleAddress1 schema:addressCountry "Poland" .
+_:be66c21dddd504e1afadcf23d2498612 rdf:reifies <<( doc:FactsarticleAddress1 schema:addressCountry "Poland" )>> ;
+	prov:wasDerivedFrom doc:0be5743d3891 .
+doc:FactsauthorBlazej a schema:Person .
+_:e0d8f7d93d485ad5a9dee2f75ee3f8e1 rdf:reifies <<( doc:FactsauthorBlazej rdf:type schema:Person )>> ;
+	prov:wasDerivedFrom doc:0be5743d3891 .
+doc:Predictive_maintenance_system_module None:has_predictive_maintenance_function doc:FactsfaultDetectionFunction_38 .
+_:ed5642d6b48764af5c05cf3588939143 rdf:reifies <<( doc:Predictive_maintenance_system_module None:has_predictive_maintenance_function doc:FactsfaultDetectionFunction_38 )>> ;
+	prov:wasDerivedFrom doc:0be5743d3891 .
+doc:FactsarticleTitle1_53 None:has_text_value "Sensor-Based Diagnostics for Conveyor Belt Condition Monitoring and Predictive Refurbishment" .
+_:be302ed0a31a4ae0b119f9067d13a720 rdf:reifies <<( doc:FactsarticleTitle1_53 None:has_text_value "Sensor-Based Diagnostics for Conveyor Belt Condition Monitoring and Predictive Refurbishment" )>> ;
+	prov:wasDerivedFrom doc:0be5743d3891 .
+doc:Factsarticle1_65 schema:mentions doc:FactssuccessRateIndicator1 .
+_:fdd1f4aa9bfe5cb2b76b3e979288e8aa rdf:reifies <<( doc:Factsarticle1_65 schema:mentions doc:FactssuccessRateIndicator1 )>> ;
+	prov:wasDerivedFrom doc:0be5743d3891 .
+doc:Factsarticle1_65 schema:keywords "predictive maintenance" .
+_:ad91c22e19af68d6d4b8ab20a7c19bc0 rdf:reifies <<( doc:Factsarticle1_65 schema:keywords "predictive maintenance" )>> ;
+	prov:wasDerivedFrom doc:0be5743d3891 .
+doc:Factsarticle1_65 schema:mentions doc:FactsbelchatowLigniteMines .
+_:ded67b9a8eddf629c7f194db0df1f6d3 rdf:reifies <<( doc:Factsarticle1_65 schema:mentions doc:FactsbelchatowLigniteMines )>> ;
+	prov:wasDerivedFrom doc:0be5743d3891 .
+doc:FactsarticleAddress1 schema:postalCode "50-421" .
+_:b002a8812ce71f14b64e21d21b045a30 rdf:reifies <<( doc:FactsarticleAddress1 schema:postalCode "50-421" )>> ;
+	prov:wasDerivedFrom doc:0be5743d3891 .
+doc:Factsarticle1_65 schema:abstract "Rising raw material costs and complex global supply chains have reduced the durability and availability of conveyor belts. In response, condition-based maintenance with in situ diagnostics has become essential. Sensor-based monitoring enables predictive maintenance, reduces premature or delayed replacements, increases belt reuse, lowers costs, and supports the circular economy by extending belt core life and reducing raw material demand."@en .
+_:b24b1545adf40e6851fc2d6c41cfeb45 rdf:reifies <<( doc:Factsarticle1_65 schema:abstract "Rising raw material costs and complex global supply chains have reduced the durability and availability of conveyor belts. In response, condition-based maintenance with in situ diagnostics has become essential. Sensor-based monitoring enables predictive maintenance, reduces premature or delayed replacements, increases belt reuse, lowers costs, and supports the circular economy by extending belt core life and reducing raw material demand."@en )>> ;
+	prov:wasDerivedFrom doc:0be5743d3891 .
+doc:Factsbestgum schema:address doc:FactsarticleAddress1 .
+_:db21c23d2cd4cbfe99445915c7e2bf5b rdf:reifies <<( doc:Factsbestgum schema:address doc:FactsarticleAddress1 )>> ;
+	prov:wasDerivedFrom doc:0be5743d3891 .
+doc:FactsauthorBlazej schema:affiliation doc:Factsbestgum .
+_:ff7fc78adb7de638e16b32a8e73f9e1a rdf:reifies <<( doc:FactsauthorBlazej schema:affiliation doc:Factsbestgum )>> ;
+	prov:wasDerivedFrom doc:0be5743d3891 .
+doc:FactsauthorBlazej schema:givenName "Leszek" .
+_:b109a24c603dd7e1a7f274dee55c763b rdf:reifies <<( doc:FactsauthorBlazej schema:givenName "Leszek" )>> ;
+	prov:wasDerivedFrom doc:0be5743d3891 .
+doc:FactsfaultDetectionFunction_38 schema:name "sensor-based diagnostics" .
+_:cb70dda375321afe9c64ed93816b5f39 rdf:reifies <<( doc:FactsfaultDetectionFunction_38 schema:name "sensor-based diagnostics" )>> ;
+	prov:wasDerivedFrom doc:0be5743d3891 .
+doc:Factsconveyor schema:hasPart doc:Factsconveyor .
+_:ad64defbc9da355f14d9ecb7af371c56 rdf:reifies <<( doc:Factsconveyor schema:hasPart doc:Factsconveyor )>> ;
+	prov:wasDerivedFrom doc:0be5743d3891 .
+doc:FactssuccessRateIndicator1 schema:name "initial refurbishment success rate" .
+_:fd63cdace1a4b77193b869bf3c59becc rdf:reifies <<( doc:FactssuccessRateIndicator1 schema:name "initial refurbishment success rate" )>> ;
+	prov:wasDerivedFrom doc:0be5743d3891 .
+doc:FactsauthorBlazej schema:familyName "BÅaÅ¼ej" .
+_:faf7663d2f9d71f66ec719aece16fceb rdf:reifies <<( doc:FactsauthorBlazej schema:familyName "BÅaÅ¼ej" )>> ;
+	prov:wasDerivedFrom doc:0be5743d3891 .
+doc:FactssuccessRateIndicator1 schema:value "70"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+_:b42c9f9886539e5069bf77c81b48d998 rdf:reifies <<( doc:FactssuccessRateIndicator1 schema:value "70"^^<http://www.w3.org/2001/XMLSchema#decimal> )>> ;
+	prov:wasDerivedFrom doc:0be5743d3891 .
+doc:FactsinductiveTechnology1 schema:name "ultrasonic sensing technology" .
+_:e973ce1b7dbb58100a36afb2485d0a7c rdf:reifies <<( doc:FactsinductiveTechnology1 schema:name "ultrasonic sensing technology" )>> ;
+	prov:wasDerivedFrom doc:0be5743d3891 .
+doc:FactshealthAssessmentFunction_37 a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Health_assessment> .
+_:c1f11520fa3974829079c0abdd853624 rdf:reifies <<( doc:FactshealthAssessmentFunction_37 rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Health_assessment> )>> ;
+	prov:wasDerivedFrom doc:0be5743d3891 .
+doc:Factsbestgum a schema:Organization .
+_:bdfa5c61542d1fdc453d2f3ab1bff2fb rdf:reifies <<( doc:Factsbestgum rdf:type schema:Organization )>> ;
+	prov:wasDerivedFrom doc:0be5743d3891 .
+doc:FactsfaultDetectionFunction_38 a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Fault_detection> .
+_:f85edd4b5199ea3da8cc9067aff9bc87 rdf:reifies <<( doc:FactsfaultDetectionFunction_38 rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Fault_detection> )>> ;
+	prov:wasDerivedFrom doc:0be5743d3891 .
+doc:FactsfaultDetectionFunction_38 schema:about doc:Factsconveyor .
+_:bc619897b00860c630b28d5f9a39af89 rdf:reifies <<( doc:FactsfaultDetectionFunction_38 schema:about doc:Factsconveyor )>> ;
+	prov:wasDerivedFrom doc:0be5743d3891 .
+doc:Factsarticle1_65 schema:about doc:FactsinductiveTechnology1 .
+_:bfa9fb182963744b7dcc11754dfff756 rdf:reifies <<( doc:Factsarticle1_65 schema:about doc:FactsinductiveTechnology1 )>> ;
+	prov:wasDerivedFrom doc:0be5743d3891 .
+doc:FactshealthAssessmentFunction_37 schema:name "condition monitoring" .
+_:a2d629d09f94a84aed9f85dfb09275c rdf:reifies <<( doc:FactshealthAssessmentFunction_37 schema:name "condition monitoring" )>> ;
+	prov:wasDerivedFrom doc:0be5743d3891 .
+doc:FactshealthAssessmentFunction_37 schema:about doc:Factsconveyor .
+_:dd5981a54196c1d99ddc558c3facba23 rdf:reifies <<( doc:FactshealthAssessmentFunction_37 schema:about doc:Factsconveyor )>> ;
+	prov:wasDerivedFrom doc:0be5743d3891 .
+doc:FactsauthorBlazej schema:familyName "Jurdziak" .
+_:cf237009216b8ac5006c74f21a24a945 rdf:reifies <<( doc:FactsauthorBlazej schema:familyName "Jurdziak" )>> ;
+	prov:wasDerivedFrom doc:0be5743d3891 .
+doc:Factsarticle1_65 schema:publisher doc:Factsbestgum .
+_:c0016c4f4eb1b4841dfa8bebe0ec4c1e rdf:reifies <<( doc:Factsarticle1_65 schema:publisher doc:Factsbestgum )>> ;
+	prov:wasDerivedFrom doc:0be5743d3891 .
+doc:FactssuccessRateIndicator1 schema:name "improved refurbishment success rate" .
+_:c6c3ef2c5b8451e67e0c7adb3ac091f0 rdf:reifies <<( doc:FactssuccessRateIndicator1 schema:name "improved refurbishment success rate" )>> ;
+	prov:wasDerivedFrom doc:0be5743d3891 .
+doc:FactssuccessRateIndicator1 schema:value "90"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+_:a7bc8580215cea5f190eed9ebf35ce4c rdf:reifies <<( doc:FactssuccessRateIndicator1 schema:value "90"^^<http://www.w3.org/2001/XMLSchema#decimal> )>> ;
+	prov:wasDerivedFrom doc:0be5743d3891 .
+doc:FactsbelchatowLigniteMines schema:name "Polish lignite mine" .
+_:d27b60d5501c1185decd7b7a4f779a8 rdf:reifies <<( doc:FactsbelchatowLigniteMines schema:name "Polish lignite mine" )>> ;
+	prov:wasDerivedFrom doc:0be5743d3891 .
+doc:Factsarticle1_65 a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Predictive_Maintenance_Article> .
+_:ddf792b355b5558c62fb450347fd7978 rdf:reifies <<( doc:Factsarticle1_65 rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Predictive_Maintenance_Article> )>> ;
+	prov:wasDerivedFrom doc:0be5743d3891 .
+doc:Factsconveyor schema:name "belt conveyor system" .
+_:e2ea4c8fc52c9070405246caef66b5d3 rdf:reifies <<( doc:Factsconveyor schema:name "belt conveyor system" )>> ;
+	prov:wasDerivedFrom doc:0be5743d3891 .
+doc:FactssuccessRateIndicator1 a None:Performance_indicator .
+_:f142b74d4a33166d92912e8cd6421654 rdf:reifies <<( doc:FactssuccessRateIndicator1 rdf:type None:Performance_indicator )>> ;
+	prov:wasDerivedFrom doc:0be5743d3891 .
+doc:FactsbelchatowLigniteMines schema:addressCountry "Poland" .
+_:ac3e196134d66892187494c03ccacab7 rdf:reifies <<( doc:FactsbelchatowLigniteMines schema:addressCountry "Poland" )>> ;
+	prov:wasDerivedFrom doc:0be5743d3891 .
+doc:Factsarticle1_65 None:has_title doc:FactsarticleTitle1_53 .
+_:d0442333da2d4e2323039906a4fbed37 rdf:reifies <<( doc:Factsarticle1_65 None:has_title doc:FactsarticleTitle1_53 )>> ;
+	prov:wasDerivedFrom doc:0be5743d3891 .
+doc:Factsarticle1_65 schema:about doc:Predictive_maintenance_system_module .
+_:fd36513851b989eb8b2c5ca97ea9e49d rdf:reifies <<( doc:Factsarticle1_65 schema:about doc:Predictive_maintenance_system_module )>> ;
+	prov:wasDerivedFrom doc:0be5743d3891 .
+doc:FactsarticleAddress1 schema:streetAddress "Na Grobli 15 St." .
+_:ddaaf785eb20c39105653542c8789308 rdf:reifies <<( doc:FactsarticleAddress1 schema:streetAddress "Na Grobli 15 St." )>> ;
+	prov:wasDerivedFrom doc:0be5743d3891 .
+doc:Factsconveyor a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Maintainable_item> .
+_:f77354fa092672f8152244948586aead rdf:reifies <<( doc:Factsconveyor rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Maintainable_item> )>> ;
+	prov:wasDerivedFrom doc:0be5743d3891 .
+doc:Predictive_maintenance_system_module None:has_predictive_maintenance_function doc:FactshealthAssessmentFunction_37 .
+_:aad9a760a0031480d5ddb6373f5b0c6c rdf:reifies <<( doc:Predictive_maintenance_system_module None:has_predictive_maintenance_function doc:FactshealthAssessmentFunction_37 )>> ;
+	prov:wasDerivedFrom doc:0be5743d3891 .
+doc:Predictive_maintenance_system_module schema:name "predictive maintenance" .
+_:e3a9a3a6c53edfac9ab15f06e41354d0 rdf:reifies <<( doc:Predictive_maintenance_system_module schema:name "predictive maintenance" )>> ;
+	prov:wasDerivedFrom doc:0be5743d3891 .
+doc:Predictive_maintenance_system_module None:has_predictive_maintenance_function doc:Predictive_maintenance_system_module .
+_:e0b1f92a7113e3ec4636cc91ea4a0c96 rdf:reifies <<( doc:Predictive_maintenance_system_module None:has_predictive_maintenance_function doc:Predictive_maintenance_system_module )>> ;
+	prov:wasDerivedFrom doc:0be5743d3891 .
+doc:FactsarticleTitle1_53 a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Article_title> .
+_:cc9ad9fa887c52c7a0b655c0398d05d9 rdf:reifies <<( doc:FactsarticleTitle1_53 rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Article_title> )>> ;
+	prov:wasDerivedFrom doc:0be5743d3891 .
+doc:Factsconveyor schema:category "mechanical transportation equipment" .
+_:bac14e62489200ef91b350f2e37093ba rdf:reifies <<( doc:Factsconveyor schema:category "mechanical transportation equipment" )>> ;
+	prov:wasDerivedFrom doc:0be5743d3891 .
+doc:Factsarticle1_65 schema:keywords "circular economy" .
+_:ea84398a81f7a563dee7e0d6ac99b4e9 rdf:reifies <<( doc:Factsarticle1_65 schema:keywords "circular economy" )>> ;
+	prov:wasDerivedFrom doc:0be5743d3891 .
+doc:FactsauthorBlazej schema:givenName "Ryszard" .
+_:feac485a9c46aa5c62f0b241df095e6b rdf:reifies <<( doc:FactsauthorBlazej schema:givenName "Ryszard" )>> ;
+	prov:wasDerivedFrom doc:0be5743d3891 .
+doc:FactssuccessRateIndicator1 schema:description "over 90 percent"@en .
+_:fce2224960bb2a97ff8d19b8a82ef900 rdf:reifies <<( doc:FactssuccessRateIndicator1 schema:description "over 90 percent"@en )>> ;
+	prov:wasDerivedFrom doc:0be5743d3891 .
+doc:FactsarticleAddress1 schema:addressLocality "WrocÅaw" .
+_:cb5f2700510e8cb1d65a76612a29cd71 rdf:reifies <<( doc:FactsarticleAddress1 schema:addressLocality "WrocÅaw" )>> ;
+	prov:wasDerivedFrom doc:0be5743d3891 .
+doc:Predictive_maintenance_system_module a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Predictive_maintenance_system_module> .
+_:fafdf8f2b666c5f1c01ea518613d07d2 rdf:reifies <<( doc:Predictive_maintenance_system_module rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Predictive_maintenance_system_module> )>> ;
+	prov:wasDerivedFrom doc:0be5743d3891 .
+doc:Factsarticle1_65 schema:keywords "conveyor belt" .
+_:fbb5b5bb92ae41662f237775fbedb79 rdf:reifies <<( doc:Factsarticle1_65 schema:keywords "conveyor belt" )>> ;
+	prov:wasDerivedFrom doc:0be5743d3891 .
+doc:FactsinductiveTechnology1 schema:name "inductive sensing technology" .
+_:e85e75018dfb743d203ce4cdc9e9c295 rdf:reifies <<( doc:FactsinductiveTechnology1 schema:name "inductive sensing technology" )>> ;
+	prov:wasDerivedFrom doc:0be5743d3891 .
+doc:FactshealthAssessmentFunction_37 schema:name "predictive refurbishment decision support" .
+_:f8987a1032034bd0523978a5657507a6 rdf:reifies <<( doc:FactshealthAssessmentFunction_37 schema:name "predictive refurbishment decision support" )>> ;
+	prov:wasDerivedFrom doc:0be5743d3891 .
+doc:Factsbestgum schema:department "Faculty of Geoengineering, Mining and Geology" .
+_:a034f844bff491dcb3e171b05afe712d rdf:reifies <<( doc:Factsbestgum schema:department "Faculty of Geoengineering, Mining and Geology" )>> ;
+	prov:wasDerivedFrom doc:0be5743d3891 .
+doc:Factsbestgum schema:name "Wroclaw University of Science and Technology" .
+_:eb1bb681aa568435972ed5b60ca609cc rdf:reifies <<( doc:Factsbestgum schema:name "Wroclaw University of Science and Technology" )>> ;
+	prov:wasDerivedFrom doc:0be5743d3891 .
+doc:FactsarticleAddress1 a schema:PostalAddress .
+_:ea51e51cf01422f501c646a504b314ee rdf:reifies <<( doc:FactsarticleAddress1 rdf:type schema:PostalAddress )>> ;
+	prov:wasDerivedFrom doc:0be5743d3891 .
+doc:Factsarticle1_65 schema:keywords "condition monitoring" .
+_:e6f85c204154d876397f0b4df766d2d0 rdf:reifies <<( doc:Factsarticle1_65 schema:keywords "condition monitoring" )>> ;
+	prov:wasDerivedFrom doc:0be5743d3891 .
+doc:FactsinductiveTechnology1 a schema:DefinedTerm .
+_:ad6f026825575ad6c39392b03fa4cad5 rdf:reifies <<( doc:FactsinductiveTechnology1 rdf:type schema:DefinedTerm )>> ;
+	prov:wasDerivedFrom doc:0be5743d3891 .
+doc:120452abe281 a prov:Entity , schema:text ;
+	prov:generatedAtTime "2026-07-24T19:15:45.603585Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+	schema:position 1 ;
+	schema:identifier "120452abe281" .
+doc:Factsarticle1_65 <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#has_title> doc:FactsarticleTitle1_53 .
+_:bd4b205b45e30e968d70a58a1ae84047 rdf:reifies <<( doc:Factsarticle1_65 <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#has_title> doc:FactsarticleTitle1_53 )>> ;
+	prov:wasDerivedFrom doc:120452abe281 .
+doc:FactsbelchatowLigniteMines schema:containedInPlace doc:FactsbelchatowLigniteMines .
+_:cd46d491bdf1ea630955460e2bfa4e9c rdf:reifies <<( doc:FactsbelchatowLigniteMines schema:containedInPlace doc:FactsbelchatowLigniteMines )>> ;
+	prov:wasDerivedFrom doc:120452abe281 .
+doc:FactsrefurbishmentPractice a cco:Algorithm .
+_:c768b3f946bd8bc14515939dd7af545c rdf:reifies <<( doc:FactsrefurbishmentPractice rdf:type cco:Algorithm )>> ;
+	prov:wasDerivedFrom doc:120452abe281 .
+doc:Factsconveyor cco:describes doc:Factsconveyor .
+_:a18b0b5952182b707e164b31ebadfe70 rdf:reifies <<( doc:Factsconveyor cco:describes doc:Factsconveyor )>> ;
+	prov:wasDerivedFrom doc:120452abe281 .
+doc:Predictive_maintenance_system_module schema:name "in situ belt condition diagnostics module" .
+_:a41082c61e19439781c77a9660476454 rdf:reifies <<( doc:Predictive_maintenance_system_module schema:name "in situ belt condition diagnostics module" )>> ;
+	prov:wasDerivedFrom doc:120452abe281 .
+doc:Factsconveyor schema:name "textile-reinforced belt" .
+_:d8caed6746ce1420a306b27251e1b6b rdf:reifies <<( doc:Factsconveyor schema:name "textile-reinforced belt" )>> ;
+	prov:wasDerivedFrom doc:120452abe281 .
+doc:FactspublicationYear2025_26 a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Publication_year> .
+_:b631cf1d7ee6757b67ef17bbbef49fd6 rdf:reifies <<( doc:FactspublicationYear2025_26 rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Publication_year> )>> ;
+	prov:wasDerivedFrom doc:120452abe281 .
+doc:FactsbelchatowLigniteMines schema:name "BeÅchatÃ³w lignite mines" .
+_:ea6b378ec029099677fbe88401e94ec8 rdf:reifies <<( doc:FactsbelchatowLigniteMines schema:name "BeÅchatÃ³w lignite mines" )>> ;
+	prov:wasDerivedFrom doc:120452abe281 .
+_:e140b7143f1709d2272897e0fe6d08c prov:wasDerivedFrom doc:120452abe281 .
+_:e0d8f7d93d485ad5a9dee2f75ee3f8e1 prov:wasDerivedFrom doc:120452abe281 .
+_:ddf792b355b5558c62fb450347fd7978 prov:wasDerivedFrom doc:120452abe281 .
+doc:FactsarticleTitle1_53 cco:designates doc:Factsarticle1_65 .
+_:e5d47cbfb9ba38d8963b627016074489 rdf:reifies <<( doc:FactsarticleTitle1_53 cco:designates doc:Factsarticle1_65 )>> ;
+	prov:wasDerivedFrom doc:120452abe281 .
+doc:FactsauthorBlazej schema:name "A. Rzeszowska" .
+_:ca93c3369ca5273d71fcd1dc82d4f6cc rdf:reifies <<( doc:FactsauthorBlazej schema:name "A. Rzeszowska" )>> ;
+	prov:wasDerivedFrom doc:120452abe281 .
+doc:Factsconveyor schema:name "solid woven belt" .
+_:c51ce43823695e300e9870d48a3b499e rdf:reifies <<( doc:Factsconveyor schema:name "solid woven belt" )>> ;
+	prov:wasDerivedFrom doc:120452abe281 .
+doc:FactsauthorBlazej schema:name "R. BÅaÅ¼ej" .
+_:f88b291276c5dbcd7978a01f8e292c5b rdf:reifies <<( doc:FactsauthorBlazej schema:name "R. BÅaÅ¼ej" )>> ;
+	prov:wasDerivedFrom doc:120452abe281 .
+doc:FactsarticleTitle1_53 a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Article_identifier> .
+_:b0bdd77cb76f570631f81291581595b4 rdf:reifies <<( doc:FactsarticleTitle1_53 rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Article_identifier> )>> ;
+	prov:wasDerivedFrom doc:120452abe281 .
+_:bdfa5c61542d1fdc453d2f3ab1bff2fb prov:wasDerivedFrom doc:120452abe281 .
+doc:FactshealthAssessmentFunction_37 a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Remaining_useful_life_estimation> .
+_:f1f4a2251074c8eacb21d5a42c945d70 rdf:reifies <<( doc:FactshealthAssessmentFunction_37 rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Remaining_useful_life_estimation> )>> ;
+	prov:wasDerivedFrom doc:120452abe281 .
+_:c6670d1ece0450cd400fc62b31b46f44 prov:wasDerivedFrom doc:120452abe281 .
+doc:Factsbestgum schema:name "MDPI" .
+_:f5b9ddceb72f619d69728272e53591f8 rdf:reifies <<( doc:Factsbestgum schema:name "MDPI" )>> ;
+	prov:wasDerivedFrom doc:120452abe281 .
+doc:FactsfaultDetectionFunction_38 cco:is_about doc:Factsconveyor .
+_:a15cc242f7243f827ccefe3ae0d2f247 rdf:reifies <<( doc:FactsfaultDetectionFunction_38 cco:is_about doc:Factsconveyor )>> ;
+	prov:wasDerivedFrom doc:120452abe281 .
+doc:Factsconveyor cco:has_part doc:FactssteelCordCore .
+_:b23ca39b539945eec4212979d28149a0 rdf:reifies <<( doc:Factsconveyor cco:has_part doc:FactssteelCordCore )>> ;
+	prov:wasDerivedFrom doc:120452abe281 .
+doc:Factsarticle1_65 <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#has_identifier> doc:FactsarticleTitle1_53 .
+_:e4755569a6780f21f14110df85e3bbb4 rdf:reifies <<( doc:Factsarticle1_65 <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#has_identifier> doc:FactsarticleTitle1_53 )>> ;
+	prov:wasDerivedFrom doc:120452abe281 .
+doc:FactsrefurbishmentPractice cco:is_about doc:Factsconveyor .
+_:fa403cc9a1d623bcf85f5c604110608 rdf:reifies <<( doc:FactsrefurbishmentPractice cco:is_about doc:Factsconveyor )>> ;
+	prov:wasDerivedFrom doc:120452abe281 .
+doc:Factsbestgum schema:location "Basel, Switzerland" .
+_:fb6ce80698690a7883b311b6692b67c8 rdf:reifies <<( doc:Factsbestgum schema:location "Basel, Switzerland" )>> ;
+	prov:wasDerivedFrom doc:120452abe281 .
+doc:FactsmagneticDiagnosticsTechnique a cco:Algorithm .
+_:da6bb63ce4cb2c51464cb6ad64348560 rdf:reifies <<( doc:FactsmagneticDiagnosticsTechnique rdf:type cco:Algorithm )>> ;
+	prov:wasDerivedFrom doc:120452abe281 .
+doc:FactsrefurbishmentPractice schema:name "preventive belt replacement strategy" .
+_:ea46c54026326bffbd4d61cdc00ca16 rdf:reifies <<( doc:FactsrefurbishmentPractice schema:name "preventive belt replacement strategy" )>> ;
+	prov:wasDerivedFrom doc:120452abe281 .
+doc:FactspublicationYear2025_26 <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#has_interger_value> 2025 .
+_:cf0e8e627390a70fcf63ab15200a9553 rdf:reifies <<( doc:FactspublicationYear2025_26 <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#has_interger_value> 2025 )>> ;
+	prov:wasDerivedFrom doc:120452abe281 .
+doc:FactsbelchatowLigniteMines schema:name "Polish lignite mines" .
+_:a9da2e3a151a0421c883ff5afc76353f rdf:reifies <<( doc:FactsbelchatowLigniteMines schema:name "Polish lignite mines" )>> ;
+	prov:wasDerivedFrom doc:120452abe281 .
+doc:Factsconveyor <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#has_text_value> "conveyor belt" .
+_:c60337b087d092ee2aa61a7e51a930 rdf:reifies <<( doc:Factsconveyor <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#has_text_value> "conveyor belt" )>> ;
+	prov:wasDerivedFrom doc:120452abe281 .
+doc:FactshealthAssessmentFunction_37 schema:name "belt lifecycle and refurbishment estimation" .
+_:c95f0d96b68c47a5dce0b6aa213955e rdf:reifies <<( doc:FactshealthAssessmentFunction_37 schema:name "belt lifecycle and refurbishment estimation" )>> ;
+	prov:wasDerivedFrom doc:120452abe281 .
+doc:Factsarticle1_65 <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#has_publication_year> doc:FactspublicationYear2025_26 .
+_:c0c28f808fa5f1a6c22ae8803fb74b04 rdf:reifies <<( doc:Factsarticle1_65 <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#has_publication_year> doc:FactspublicationYear2025_26 )>> ;
+	prov:wasDerivedFrom doc:120452abe281 .
+doc:FactshealthAssessmentFunction_37 cco:is_about doc:Factsconveyor .
+_:f6c81357981ec1d123979478f3420566 rdf:reifies <<( doc:FactshealthAssessmentFunction_37 cco:is_about doc:Factsconveyor )>> ;
+	prov:wasDerivedFrom doc:120452abe281 .
+doc:Factsarticle1_65 schema:headline "Sensor-Based Diagnostics for Conveyor Belt Condition Monitoring and Predictive Refurbishment" .
+_:af6ef5e130829123811cf20afc6191e4 rdf:reifies <<( doc:Factsarticle1_65 schema:headline "Sensor-Based Diagnostics for Conveyor Belt Condition Monitoring and Predictive Refurbishment" )>> ;
+	prov:wasDerivedFrom doc:120452abe281 .
+_:f77354fa092672f8152244948586aead prov:wasDerivedFrom doc:120452abe281 .
+_:c04c2a01457ade2a75cdec4bddbfade5 prov:wasDerivedFrom doc:120452abe281 .
+doc:Factsarticle1_65 schema:datePublished "2025-05-30"^^<http://www.w3.org/2001/XMLSchema#date> .
+_:f4c62197c7ffb9017a480069b32e38ec rdf:reifies <<( doc:Factsarticle1_65 schema:datePublished "2025-05-30"^^<http://www.w3.org/2001/XMLSchema#date> )>> ;
+	prov:wasDerivedFrom doc:120452abe281 .
+doc:FactsmagneticDiagnosticsTechnique cco:is_about doc:Factsconveyor .
+_:d208d2dcb9b75cf6a518f4f41e8b332b rdf:reifies <<( doc:FactsmagneticDiagnosticsTechnique cco:is_about doc:Factsconveyor )>> ;
+	prov:wasDerivedFrom doc:120452abe281 .
+doc:FactsrefurbishmentPractice schema:name "conveyor belt refurbishment practice" .
+_:c943d923f9377ac57d52af0bb2f9c50 rdf:reifies <<( doc:FactsrefurbishmentPractice schema:name "conveyor belt refurbishment practice" )>> ;
+	prov:wasDerivedFrom doc:120452abe281 .
+doc:FactseditorHarris schema:name "Nick Harris" .
+_:f86ed8373be6623a29668c1a2976226 rdf:reifies <<( doc:FactseditorHarris schema:name "Nick Harris" )>> ;
+	prov:wasDerivedFrom doc:120452abe281 .
+_:c1f11520fa3974829079c0abdd853624 prov:wasDerivedFrom doc:120452abe281 .
+_:fafdf8f2b666c5f1c01ea518613d07d2 prov:wasDerivedFrom doc:120452abe281 .
+doc:FactsauthorBlazej schema:name "L. Jurdziak" .
+_:b5691c316903e3041b2226d97bae9cfe rdf:reifies <<( doc:FactsauthorBlazej schema:name "L. Jurdziak" )>> ;
+	prov:wasDerivedFrom doc:120452abe281 .
+doc:FactseditorHarris a schema:Person .
+_:ef6e5aff2f35065fb92c2d1be28e0a93 rdf:reifies <<( doc:FactseditorHarris rdf:type schema:Person )>> ;
+	prov:wasDerivedFrom doc:120452abe281 .
+doc:FactssteelCordCore a obo:BFO_0000030 .
+_:ac413a2ae15be3039a2f5dc2e83f5a63 rdf:reifies <<( doc:FactssteelCordCore rdf:type obo:BFO_0000030 )>> ;
+	prov:wasDerivedFrom doc:120452abe281 .
+doc:FactshealthAssessmentFunction_37 schema:name "belt condition assessment" .
+_:efa9c7f58a2d3bc77d3ad094409b05eb rdf:reifies <<( doc:FactshealthAssessmentFunction_37 schema:name "belt condition assessment" )>> ;
+	prov:wasDerivedFrom doc:120452abe281 .
+doc:Predictive_maintenance_system_module <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#has_predictive_maintenance_function> doc:FactshealthAssessmentFunction_37 .
+_:fb742e30f3fbf2bc0ab08945285e8d72 rdf:reifies <<( doc:Predictive_maintenance_system_module <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#has_predictive_maintenance_function> doc:FactshealthAssessmentFunction_37 )>> ;
+	prov:wasDerivedFrom doc:120452abe281 .
+doc:Factsarticle1_65 schema:dateReceived "2025-05-04"^^<http://www.w3.org/2001/XMLSchema#date> .
+_:a3e7ffd9a4097560903c6c31ccaebc28 rdf:reifies <<( doc:Factsarticle1_65 schema:dateReceived "2025-05-04"^^<http://www.w3.org/2001/XMLSchema#date> )>> ;
+	prov:wasDerivedFrom doc:120452abe281 .
+doc:Factsarticle1_65 schema:editor doc:FactseditorHarris .
+_:c087cf2ed68b54d0cbfd8913cb986350 rdf:reifies <<( doc:Factsarticle1_65 schema:editor doc:FactseditorHarris )>> ;
+	prov:wasDerivedFrom doc:120452abe281 .
+doc:Factsconveyor schema:name "steel-cord belt" .
+_:e727aae45e5cb7e1bc7eb411eb7b9b7a rdf:reifies <<( doc:Factsconveyor schema:name "steel-cord belt" )>> ;
+	prov:wasDerivedFrom doc:120452abe281 .
+_:f85edd4b5199ea3da8cc9067aff9bc87 prov:wasDerivedFrom doc:120452abe281 .
+doc:FactsfaultDetectionFunction_38 schema:name "internal core damage detection" .
+_:aa26cfd2f8564a4fe057a7f2ebeb7cab rdf:reifies <<( doc:FactsfaultDetectionFunction_38 schema:name "internal core damage detection" )>> ;
+	prov:wasDerivedFrom doc:120452abe281 .
+doc:FactsmagneticDiagnosticsTechnique schema:name "in situ magnetic diagnostics" .
+_:ea771624650407323de96ab5e65ae3a2 rdf:reifies <<( doc:FactsmagneticDiagnosticsTechnique schema:name "in situ magnetic diagnostics" )>> ;
+	prov:wasDerivedFrom doc:120452abe281 .
+doc:Predictive_maintenance_system_module <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#has_predictive_maintenance_function> doc:FactsfaultDetectionFunction_38 .
+_:eacd5440daeb32e66cb5ea07eaff2b2f rdf:reifies <<( doc:Predictive_maintenance_system_module <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#has_predictive_maintenance_function> doc:FactsfaultDetectionFunction_38 )>> ;
+	prov:wasDerivedFrom doc:120452abe281 .
+doc:Factsarticle1_65 schema:dateModified "2025-05-29"^^<http://www.w3.org/2001/XMLSchema#date> .
+_:cba6ebdf8c556ec630973b4804b62091 rdf:reifies <<( doc:Factsarticle1_65 schema:dateModified "2025-05-29"^^<http://www.w3.org/2001/XMLSchema#date> )>> ;
+	prov:wasDerivedFrom doc:120452abe281 .
+_:c0016c4f4eb1b4841dfa8bebe0ec4c1e prov:wasDerivedFrom doc:120452abe281 .
+doc:FactssteelCordCore schema:name "steel-cord belt core" .
+_:ae39f167c527bc8c933d5781888bbf98 rdf:reifies <<( doc:FactssteelCordCore schema:name "steel-cord belt core" )>> ;
+	prov:wasDerivedFrom doc:120452abe281 .
+_:cc9ad9fa887c52c7a0b655c0398d05d9 prov:wasDerivedFrom doc:120452abe281 .
+doc:Factsarticle1_65 schema:license <https://creativecommons.org/licenses/by/4.0/> .
+_:b2647c475145675c576900777b39e70 rdf:reifies <<( doc:Factsarticle1_65 schema:license <https://creativecommons.org/licenses/by/4.0/> )>> ;
+	prov:wasDerivedFrom doc:120452abe281 .
+doc:FactsarticleTitle1_53 <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#has_text_value> "Sensor-Based Diagnostics for Conveyor Belt Condition Monitoring and Predictive Refurbishment" .
+_:c94872de795064ca5fef4ac824ebbb87 rdf:reifies <<( doc:FactsarticleTitle1_53 <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#has_text_value> "Sensor-Based Diagnostics for Conveyor Belt Condition Monitoring and Predictive Refurbishment" )>> ;
+	prov:wasDerivedFrom doc:120452abe281 .
+doc:FactsarticleTitle1_53 <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#has_text_value> "10.3390/s25113459" .
+_:c0e48989bd8c6bf47f17a45afc098826 rdf:reifies <<( doc:FactsarticleTitle1_53 <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#has_text_value> "10.3390/s25113459" )>> ;
+	prov:wasDerivedFrom doc:120452abe281 .
+doc:Factsconveyor a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#item_type> .
+_:ae30144009bcce7bdb299d0b28ccd73c rdf:reifies <<( doc:Factsconveyor rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#item_type> )>> ;
+	prov:wasDerivedFrom doc:120452abe281 .
+doc:Factsconveyor cco:has_part doc:Factsconveyor .
+_:a53aedddc0131be749bb0f2a076511f8 rdf:reifies <<( doc:Factsconveyor cco:has_part doc:Factsconveyor )>> ;
+	prov:wasDerivedFrom doc:120452abe281 .
+doc:Factsarticle1_65 schema:dateAccepted "2025-05-29"^^<http://www.w3.org/2001/XMLSchema#date> .
+_:c108f2e5249b1467a1bd1ae979fb5561 rdf:reifies <<( doc:Factsarticle1_65 schema:dateAccepted "2025-05-29"^^<http://www.w3.org/2001/XMLSchema#date> )>> ;
+	prov:wasDerivedFrom doc:120452abe281 .
+doc:bee8668e5d5c a prov:Entity , schema:text ;
+	prov:generatedAtTime "2026-07-24T19:15:45.607589Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+	schema:position 2 ;
+	schema:identifier "bee8668e5d5c" .
+doc:Factscut a schema:Event .
+_:e1e670f03ca4314ecd130c807f9073fe rdf:reifies <<( doc:Factscut rdf:type schema:Event )>> ;
+	prov:wasDerivedFrom doc:bee8668e5d5c .
+_:ad64defbc9da355f14d9ecb7af371c56 prov:wasDerivedFrom doc:bee8668e5d5c .
+doc:FactsdoubleReel schema:unitCode "MTR" .
+_:f68babebeaf58d324eb7818b552cc28b rdf:reifies <<( doc:FactsdoubleReel schema:unitCode "MTR" )>> ;
+	prov:wasDerivedFrom doc:bee8668e5d5c .
+doc:Factsconveyor schema:name "conveyor"@en .
+_:bb1741fa2ed8a3662f0f5113969e56cf rdf:reifies <<( doc:Factsconveyor schema:name "conveyor"@en )>> ;
+	prov:wasDerivedFrom doc:bee8668e5d5c .
+doc:Factsconveyor a None:Design_detail .
+_:dc5cf3f4fb216aa327b2c97a8d8bb302 rdf:reifies <<( doc:Factsconveyor rdf:type None:Design_detail )>> ;
+	prov:wasDerivedFrom doc:bee8668e5d5c .
+doc:FactsrepairAction schema:object doc:Factsconveyor .
+_:aeac3c4dc48b4b881587b608e3919a98 rdf:reifies <<( doc:FactsrepairAction schema:object doc:Factsconveyor )>> ;
+	prov:wasDerivedFrom doc:bee8668e5d5c .
+doc:FactsfennerDunlop schema:location doc:Factsbestgum .
+_:c0edb6853e11a4a4b4b9e11eeb2deb26 rdf:reifies <<( doc:FactsfennerDunlop schema:location doc:Factsbestgum )>> ;
+	prov:wasDerivedFrom doc:bee8668e5d5c .
+_:f77354fa092672f8152244948586aead prov:wasDerivedFrom doc:bee8668e5d5c .
+doc:FactsmulticriteriaAnalysis a schema:Action .
+_:bcc05f3d04770066d85f086c94ba811b rdf:reifies <<( doc:FactsmulticriteriaAnalysis rdf:type schema:Action )>> ;
+	prov:wasDerivedFrom doc:bee8668e5d5c .
+_:bdfa5c61542d1fdc453d2f3ab1bff2fb prov:wasDerivedFrom doc:bee8668e5d5c .
+doc:Factsconveyor schema:name "spliced section"@en .
+_:dcdf90dee7e161afe13bcce9d6437c88 rdf:reifies <<( doc:Factsconveyor schema:name "spliced section"@en )>> ;
+	prov:wasDerivedFrom doc:bee8668e5d5c .
+doc:Factsconveyor schema:name "material type"@en .
+_:ea1656163d462fad8efe879e7ee6efde rdf:reifies <<( doc:Factsconveyor schema:name "material type"@en )>> ;
+	prov:wasDerivedFrom doc:bee8668e5d5c .
+doc:Factsconveyor a schema:Product .
+_:c3d9e64f8b62cb3823942fa70ccb9aa9 rdf:reifies <<( doc:Factsconveyor rdf:type schema:Product )>> ;
+	prov:wasDerivedFrom doc:bee8668e5d5c .
+doc:FactsbeltRenewal schema:name "belt renewal"@en .
+_:e5af8e055796d18819aa87543db2e71e rdf:reifies <<( doc:FactsbeltRenewal schema:name "belt renewal"@en )>> ;
+	prov:wasDerivedFrom doc:bee8668e5d5c .
+doc:Factsconveyor schema:name "belt construction"@en .
+_:abaa9c8531b35143ea16c4c1d0c1e0e6 rdf:reifies <<( doc:Factsconveyor schema:name "belt construction"@en )>> ;
+	prov:wasDerivedFrom doc:bee8668e5d5c .
+doc:Factsbestgum schema:location doc:Factsbestgum .
+_:f8feda4c0b431dccb68872450d7dad8d rdf:reifies <<( doc:Factsbestgum schema:location doc:Factsbestgum )>> ;
+	prov:wasDerivedFrom doc:bee8668e5d5c .
+doc:FactsdoubleReel a schema:Product .
+_:e94644863dabc1378ffa71aeae77402b rdf:reifies <<( doc:FactsdoubleReel rdf:type schema:Product )>> ;
+	prov:wasDerivedFrom doc:bee8668e5d5c .
+doc:FactsbeltRenewal schema:object doc:Factsconveyor .
+_:aa097b32bc3152bebcf15c585e9be312 rdf:reifies <<( doc:FactsbeltRenewal schema:object doc:Factsconveyor )>> ;
+	prov:wasDerivedFrom doc:bee8668e5d5c .
+doc:FactsfennerDunlop schema:name "Fenner Dunlop Conveyor Belting"@en .
+_:f0c75c276741cb2c5e49a0ea29cc81e3 rdf:reifies <<( doc:FactsfennerDunlop schema:name "Fenner Dunlop Conveyor Belting"@en )>> ;
+	prov:wasDerivedFrom doc:bee8668e5d5c .
+doc:FactsbeltRenewal a schema:Action .
+_:d7bb6c9ddcf265ee4cc878030c14e04c rdf:reifies <<( doc:FactsbeltRenewal rdf:type schema:Action )>> ;
+	prov:wasDerivedFrom doc:bee8668e5d5c .
+doc:FactsbeltDurability a schema:Property .
+_:f73dc211da73e3d9e95f9501bff7685c rdf:reifies <<( doc:FactsbeltDurability rdf:type schema:Property )>> ;
+	prov:wasDerivedFrom doc:bee8668e5d5c .
+doc:Factsconveyor schema:name "refurbished belt"@en .
+_:f22e0bba158bb5e3ef5c25d8b2d1daa0 rdf:reifies <<( doc:Factsconveyor schema:name "refurbished belt"@en )>> ;
+	prov:wasDerivedFrom doc:bee8668e5d5c .
+doc:Factsconveyor schema:about doc:Factsconveyor .
+_:b83541b13d1aeb40de1d9bf892588e37 rdf:reifies <<( doc:Factsconveyor schema:about doc:Factsconveyor )>> ;
+	prov:wasDerivedFrom doc:bee8668e5d5c .
+doc:Factsbestgum a schema:Place .
+_:bf75e19f2b2bc2af99a5c209c4a01595 rdf:reifies <<( doc:Factsbestgum rdf:type schema:Place )>> ;
+	prov:wasDerivedFrom doc:bee8668e5d5c .
+doc:FactsbeltDurability schema:name "belt durability"@en .
+_:d0cae483e6dd88674cacf33313696644 rdf:reifies <<( doc:FactsbeltDurability schema:name "belt durability"@en )>> ;
+	prov:wasDerivedFrom doc:bee8668e5d5c .
+doc:Factsconveyor schema:name "belt loop"@en .
+_:b32f5478057460ddf8945df357a47b29 rdf:reifies <<( doc:Factsconveyor schema:name "belt loop"@en )>> ;
+	prov:wasDerivedFrom doc:bee8668e5d5c .
+doc:FactsdoubleReel schema:maxValue "400"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+_:cec535c899f21788ed248178cf7c4b4f rdf:reifies <<( doc:FactsdoubleReel schema:maxValue "400"^^<http://www.w3.org/2001/XMLSchema#decimal> )>> ;
+	prov:wasDerivedFrom doc:bee8668e5d5c .
+doc:FactsrepairAction schema:location doc:FactsonSiteRefurbishment .
+_:c76382479f7e62e94144140e6807e663 rdf:reifies <<( doc:FactsrepairAction schema:location doc:FactsonSiteRefurbishment )>> ;
+	prov:wasDerivedFrom doc:bee8668e5d5c .
+doc:Factscut schema:affects doc:Factsconveyor .
+_:c6f0b5c2bf9aa8912661e5fb1c829fb rdf:reifies <<( doc:Factscut schema:affects doc:Factsconveyor )>> ;
+	prov:wasDerivedFrom doc:bee8668e5d5c .
+doc:Factsbestgum schema:name "Hanover, Germany"@en .
+_:df428b7366542570eb40fccea566b29a rdf:reifies <<( doc:Factsbestgum schema:name "Hanover, Germany"@en )>> ;
+	prov:wasDerivedFrom doc:bee8668e5d5c .
+doc:FactsmulticriteriaAnalysis schema:name "multicriteria analysis"@en .
+_:c2b5a2df551c8e4cb3874463408b715d rdf:reifies <<( doc:FactsmulticriteriaAnalysis schema:name "multicriteria analysis"@en )>> ;
+	prov:wasDerivedFrom doc:bee8668e5d5c .
+doc:FactsonSiteRefurbishment schema:name "on-site refurbishment"@en .
+_:e16b5ade00e810a65c30596ebccf3d95 rdf:reifies <<( doc:FactsonSiteRefurbishment schema:name "on-site refurbishment"@en )>> ;
+	prov:wasDerivedFrom doc:bee8668e5d5c .
+doc:Factscut schema:name "cut"@en .
+_:a3c863ad3dd5d15591545479cb096e98 rdf:reifies <<( doc:Factscut schema:name "cut"@en )>> ;
+	prov:wasDerivedFrom doc:bee8668e5d5c .
+doc:FactsbeltDurabilityEvaluation schema:instrument doc:FactsmulticriteriaAnalysis .
+_:ae5dbc51e2ca6d64e2e97bf8ca014020 rdf:reifies <<( doc:FactsbeltDurabilityEvaluation schema:instrument doc:FactsmulticriteriaAnalysis )>> ;
+	prov:wasDerivedFrom doc:bee8668e5d5c .
+doc:FactsfennerDunlop a schema:Organization .
+_:f721d0c2d7f44f66d0b2cd0be53c822b rdf:reifies <<( doc:FactsfennerDunlop rdf:type schema:Organization )>> ;
+	prov:wasDerivedFrom doc:bee8668e5d5c .
+doc:FactsdoubleReel schema:maxValue "700"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+_:c6e46e77c70cb1db5c49d1ee0dc1afdc rdf:reifies <<( doc:FactsdoubleReel schema:maxValue "700"^^<http://www.w3.org/2001/XMLSchema#decimal> )>> ;
+	prov:wasDerivedFrom doc:bee8668e5d5c .
+doc:Factsconveyor schema:name "working conditions"@en .
+_:b781931f0a32a652588cc4db573c7b6a rdf:reifies <<( doc:Factsconveyor schema:name "working conditions"@en )>> ;
+	prov:wasDerivedFrom doc:bee8668e5d5c .
+doc:Factsconveyor schema:name "operational regime"@en .
+_:c842b8c3a4d8f7fa1e954ce3fd6065ee rdf:reifies <<( doc:Factsconveyor schema:name "operational regime"@en )>> ;
+	prov:wasDerivedFrom doc:bee8668e5d5c .
+doc:FactsdoubleReel schema:minValue "250"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+_:e70cdd2690aaf48835e71cd660883b2e rdf:reifies <<( doc:FactsdoubleReel schema:minValue "250"^^<http://www.w3.org/2001/XMLSchema#decimal> )>> ;
+	prov:wasDerivedFrom doc:bee8668e5d5c .
+doc:Factsconveyor schema:name "renewed belt"@en .
+_:df67f128873d893df624834a2a5fe219 rdf:reifies <<( doc:Factsconveyor schema:name "renewed belt"@en )>> ;
+	prov:wasDerivedFrom doc:bee8668e5d5c .
+doc:Factsconveyor schema:additionalType "vulcanized splice"@en .
+_:dd872125890c91e5ce878b4b95aa0598 rdf:reifies <<( doc:Factsconveyor schema:additionalType "vulcanized splice"@en )>> ;
+	prov:wasDerivedFrom doc:bee8668e5d5c .
+doc:FactsbeltDurability schema:about doc:Factsconveyor .
+_:fd5c92beb8a353d590fd9ae6c25b4604 rdf:reifies <<( doc:FactsbeltDurability schema:about doc:Factsconveyor )>> ;
+	prov:wasDerivedFrom doc:bee8668e5d5c .
+doc:Factsconveyor schema:subjectOf doc:FactsbeltDurabilityEvaluation .
+_:ff27ba32da13f2ac921581b500df91a1 rdf:reifies <<( doc:Factsconveyor schema:subjectOf doc:FactsbeltDurabilityEvaluation )>> ;
+	prov:wasDerivedFrom doc:bee8668e5d5c .
+doc:FactsrepairAction schema:name "in situ belt repair"@en .
+_:d57fda22525a675aaf1712eaf86f2de3 rdf:reifies <<( doc:FactsrepairAction schema:name "in situ belt repair"@en )>> ;
+	prov:wasDerivedFrom doc:bee8668e5d5c .
+doc:FactsbeltDurabilityEvaluation a schema:AssessAction .
+_:e8caefdd96b624ff59dcff148dacf743 rdf:reifies <<( doc:FactsbeltDurabilityEvaluation rdf:type schema:AssessAction )>> ;
+	prov:wasDerivedFrom doc:bee8668e5d5c .
+doc:Factsconveyor schema:name "conveyor belt"@en .
+_:c0b19c8ec2a650d3ed5c6e4e73499ce0 rdf:reifies <<( doc:Factsconveyor schema:name "conveyor belt"@en )>> ;
+	prov:wasDerivedFrom doc:bee8668e5d5c .
+doc:Factsbestgum schema:name "Pittsburgh, PA, USA"@en .
+_:a4f87016541f8241f09d4213cf107882 rdf:reifies <<( doc:Factsbestgum schema:name "Pittsburgh, PA, USA"@en )>> ;
+	prov:wasDerivedFrom doc:bee8668e5d5c .
+doc:Factsconveyor schema:material "belt material"@en .
+_:d7f6b3a057014e162baae94762704770 rdf:reifies <<( doc:Factsconveyor schema:material "belt material"@en )>> ;
+	prov:wasDerivedFrom doc:bee8668e5d5c .
+doc:Factsbestgum schema:name "ContiTech AG"@en .
+_:f1f55eded2047e49d09e2cb3a671a2e rdf:reifies <<( doc:Factsbestgum schema:name "ContiTech AG"@en )>> ;
+	prov:wasDerivedFrom doc:bee8668e5d5c .
+doc:FactsonSiteRefurbishment schema:name "specialized refurbishment plant"@en .
+_:b864dba2d38fea6410d19171586ae138 rdf:reifies <<( doc:FactsonSiteRefurbishment schema:name "specialized refurbishment plant"@en )>> ;
+	prov:wasDerivedFrom doc:bee8668e5d5c .
+doc:FactsbeltDurabilityEvaluation schema:object doc:FactsbeltDurability .
+_:e8e301332f0443e0419d73443f8b92 rdf:reifies <<( doc:FactsbeltDurabilityEvaluation schema:object doc:FactsbeltDurability )>> ;
+	prov:wasDerivedFrom doc:bee8668e5d5c .
+doc:Factsbestgum schema:name "Bestgum Sp. z o.o."@en .
+_:afa89549b7d562d2b44dab394e0ff742 rdf:reifies <<( doc:Factsbestgum schema:name "Bestgum Sp. z o.o."@en )>> ;
+	prov:wasDerivedFrom doc:bee8668e5d5c .
+doc:FactsdoubleReel schema:name "single reel"@en .
+_:b50071067aadb754d505b120ddd445a2 rdf:reifies <<( doc:FactsdoubleReel schema:name "single reel"@en )>> ;
+	prov:wasDerivedFrom doc:bee8668e5d5c .
+doc:Factspuncture schema:affects doc:Factsconveyor .
+_:b709abf0e9728c93eda92a9a749c6580 rdf:reifies <<( doc:Factspuncture schema:affects doc:Factsconveyor )>> ;
+	prov:wasDerivedFrom doc:bee8668e5d5c .
+doc:FactsrepairAction a schema:Action .
+_:c47adf67875773d59cfcd701f6989b03 rdf:reifies <<( doc:FactsrepairAction rdf:type schema:Action )>> ;
+	prov:wasDerivedFrom doc:bee8668e5d5c .
+doc:FactsdoubleReel schema:name "double reel"@en .
+_:ca831018d7a61ddf382a7a1358d9329e rdf:reifies <<( doc:FactsdoubleReel schema:name "double reel"@en )>> ;
+	prov:wasDerivedFrom doc:bee8668e5d5c .
+doc:FactsrepairAction schema:name "belt replacement"@en .
+_:b6557c6af1f4e2aa981587df1b7f1481 rdf:reifies <<( doc:FactsrepairAction schema:name "belt replacement"@en )>> ;
+	prov:wasDerivedFrom doc:bee8668e5d5c .
+doc:Factsconveyor schema:additionalType "adhesive splice"@en .
+_:f6a9a044324c0137e9283bc4aaa5c72b rdf:reifies <<( doc:Factsconveyor schema:additionalType "adhesive splice"@en )>> ;
+	prov:wasDerivedFrom doc:bee8668e5d5c .
+doc:Factspuncture a schema:Event .
+_:d733be26cdfa05e690199d3d44608236 rdf:reifies <<( doc:Factspuncture rdf:type schema:Event )>> ;
+	prov:wasDerivedFrom doc:bee8668e5d5c .
+doc:FactsonSiteRefurbishment a schema:Place .
+_:d141788eda9c279a227dc36f963c0da3 rdf:reifies <<( doc:FactsonSiteRefurbishment rdf:type schema:Place )>> ;
+	prov:wasDerivedFrom doc:bee8668e5d5c .
+doc:FactsbeltDurabilityEvaluation schema:name "belt durability evaluation"@en .
+_:a6f22d0910e110daef0eb1316351dbdf rdf:reifies <<( doc:FactsbeltDurabilityEvaluation schema:name "belt durability evaluation"@en )>> ;
+	prov:wasDerivedFrom doc:bee8668e5d5c .
+doc:Factsconveyor schema:additionalType "mechanical splice"@en .
+_:ce786cdb6da9d52e6456bfe893fc5d0e rdf:reifies <<( doc:Factsconveyor schema:additionalType "mechanical splice"@en )>> ;
+	prov:wasDerivedFrom doc:bee8668e5d5c .
+doc:Factspuncture schema:name "puncture"@en .
+_:be47a11f427bc3a1daa9d35740fa9af0 rdf:reifies <<( doc:Factspuncture schema:name "puncture"@en )>> ;
+	prov:wasDerivedFrom doc:bee8668e5d5c .
+doc:Factsbestgum schema:name "Rogowiec, Poland"@en .
+_:ffbcfeedf409eb80fa30abbbd3602d2 rdf:reifies <<( doc:Factsbestgum schema:name "Rogowiec, Poland"@en )>> ;
+	prov:wasDerivedFrom doc:bee8668e5d5c .
+doc:FactsrepairAction schema:name "belt refurbishment"@en .
+_:d15353df7544096621a8b379d7d422f1 rdf:reifies <<( doc:FactsrepairAction schema:name "belt refurbishment"@en )>> ;
+	prov:wasDerivedFrom doc:bee8668e5d5c .
+doc:FactsrepairAction schema:name "preventive refurbishment replacement"@en .
+_:ce71d3821e9be8b4cef5de6db4785866 rdf:reifies <<( doc:FactsrepairAction schema:name "preventive refurbishment replacement"@en )>> ;
+	prov:wasDerivedFrom doc:bee8668e5d5c .
+doc:Factsconveyor schema:name "conveyor design"@en .
+_:b4cb2a5bc3d714f3e7b767199809be03 rdf:reifies <<( doc:Factsconveyor schema:name "conveyor design"@en )>> ;
+	prov:wasDerivedFrom doc:bee8668e5d5c .
+doc:FactsbeltRenewal schema:result doc:Factsconveyor .
+_:bd0fe1d67d3e2efa2f11b88ba97f1a85 rdf:reifies <<( doc:FactsbeltRenewal schema:result doc:Factsconveyor )>> ;
+	prov:wasDerivedFrom doc:bee8668e5d5c .

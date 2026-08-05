@@ -40,6 +40,7 @@ Both modes can be run on the same paper for side-by-side comparison. Fixed OPMAD
 | `pipeline/SCHEMA_MAPPING.md` | OPMAD/CSV field mapping and the facts-to-CSV bridge |
 | `pipeline/full_mode/README.md` | Full ontology-evolution mode, outputs, and caveats |
 | `pipeline/INTEGRATION_RESULTS.md` | Integration-validation procedure and historical evidence |
+| `paper/experiments/README.md` | Gold evaluation, LLM baselines, and RQ2 schema/ontology generation workflow |
 
 Documentation under `external/` belongs to its upstream projects and is deliberately not maintained here.
 
@@ -273,6 +274,29 @@ ontologies-cbr query-one `
 | `pipeline/facts_to_csv.py` | Standalone bridge that converts existing RDF/Turtle facts to CBR-compatible CSV |
 | `pipeline/SCHEMA_MAPPING.md` | Detailed documentation of the OPMAD field mapping |
 | `pipeline/INTEGRATION_RESULTS.md` | End-to-end validation procedure and historical evidence |
+
+### RQ2 LLM-generated schema/ontology flow
+
+The paper experiment harness can generate an LLM-designed schema or ontology from `evidence.jsonl`, then use it as context for no-OntoCast JSON extraction:
+
+```bash
+python paper/experiments/generate_llm_schema_or_ontology.py \
+  --evidence paper/experiments/llm_baselines/abstract/evidence.jsonl \
+  --artifact schema_json \
+  --dry-run \
+  --model dry-run-model \
+  --output-dir paper/experiments/llm_baselines/rq2_schema
+
+python paper/experiments/run_llm_json_extraction.py \
+  --evidence paper/experiments/llm_baselines/abstract/evidence.jsonl \
+  --condition llm_schema \
+  --schema-context paper/experiments/llm_baselines/rq2_schema/generated_schema.json \
+  --dry-run \
+  --model dry-run-model \
+  --output paper/experiments/llm_baselines/abstract/llm_schema/predictions.jsonl
+```
+
+For the ontology arm, generate `--artifact ontology_ttl` and pass `--ontology .../generated_ontology.ttl` to `run_llm_json_extraction.py`. Omit `--dry-run` only for approved real API runs with `LLM_BASE_URL`, `LLM_API_KEY`, and `--model` configured. See `paper/experiments/README.md` for the full RQ2/RQ3/RQ4 experiment workflow.
 
 ## Full OntoCast mode (evolved ontology)
 

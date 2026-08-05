@@ -1,0 +1,503 @@
+@prefix None: <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#> .
+@prefix cco: <http://www.ontologyrepository.com/CommonCoreOntologies/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doc: <https://growgraph.dev/doc/ae10bdfec88d/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix obo: <http://purl.obolibrary.org/obo/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix schema: <https://schema.org/> .
+doc:0ccdf551e7bd a prov:Entity , schema:text ;
+	prov:generatedAtTime "2026-07-24T08:12:00.281647Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+	schema:position 0 ;
+	schema:identifier "0ccdf551e7bd" .
+doc:Factsarticle_15 schema:author doc:FactsauthorMochen .
+_:e71362faa0b86c31b9dfec27626dedf1 rdf:reifies <<( doc:Factsarticle_15 schema:author doc:FactsauthorMochen )>> ;
+	prov:wasDerivedFrom doc:0ccdf551e7bd .
+doc:FactsauthorMochen a schema:Person .
+_:e960854ffef0c0bc13d3b805f61fc92e rdf:reifies <<( doc:FactsauthorMochen rdf:type schema:Person )>> ;
+	prov:wasDerivedFrom doc:0ccdf551e7bd .
+doc:FactsrollingBearing_1 a None:Maintainable_item .
+_:c167897fb116ea05bce7b2102be37b64 rdf:reifies <<( doc:FactsrollingBearing_1 rdf:type None:Maintainable_item )>> ;
+	prov:wasDerivedFrom doc:0ccdf551e7bd .
+doc:Factsarticle_15 a None:Predictive_Maintenance_Article .
+_:cf0d32e1ebf737493723257a62cab8bf rdf:reifies <<( doc:Factsarticle_15 rdf:type None:Predictive_Maintenance_Article )>> ;
+	prov:wasDerivedFrom doc:0ccdf551e7bd .
+doc:Predictive_maintenance_model schema:output doc:Factsimf .
+_:f3888fcac7f79e9aed699473a2f1be9b rdf:reifies <<( doc:Predictive_maintenance_model schema:output doc:Factsimf )>> ;
+	prov:wasDerivedFrom doc:0ccdf551e7bd .
+doc:FactsphysicsBasedKalmanFiltering a cco:Algorithm .
+_:c685373fa0f3cc38f4c85502f60e58ec rdf:reifies <<( doc:FactsphysicsBasedKalmanFiltering rdf:type cco:Algorithm )>> ;
+	prov:wasDerivedFrom doc:0ccdf551e7bd .
+doc:Factsarticle_15 None:has_publication_year doc:Factspublication_year_2025_20 .
+_:fd6896545757f3cd08e1fb5aed512473 rdf:reifies <<( doc:Factsarticle_15 None:has_publication_year doc:Factspublication_year_2025_20 )>> ;
+	prov:wasDerivedFrom doc:0ccdf551e7bd .
+doc:Predictive_maintenance_model a None:Predictive_maintenance_model .
+_:f3769478f6316d57556d7710f4c312c5 rdf:reifies <<( doc:Predictive_maintenance_model rdf:type None:Predictive_maintenance_model )>> ;
+	prov:wasDerivedFrom doc:0ccdf551e7bd .
+doc:FactsauthorMochen schema:familyName "Wei" .
+_:db00f38b153e49929e20b9556c643fc1 rdf:reifies <<( doc:FactsauthorMochen schema:familyName "Wei" )>> ;
+	prov:wasDerivedFrom doc:0ccdf551e7bd .
+doc:Predictive_maintenance_model None:has_predictive_maintenance_function doc:FactsrulEstimation_1 .
+_:bd03183272d766552f3469092da1b89a rdf:reifies <<( doc:Predictive_maintenance_model None:has_predictive_maintenance_function doc:FactsrulEstimation_1 )>> ;
+	prov:wasDerivedFrom doc:0ccdf551e7bd .
+doc:Factsarticle_15 None:has_title doc:FactsarticleTitle_18 .
+_:f848bcc1f9ecd13f918e31a736d81bfa rdf:reifies <<( doc:Factsarticle_15 None:has_title doc:FactsarticleTitle_18 )>> ;
+	prov:wasDerivedFrom doc:0ccdf551e7bd .
+doc:FactsauthorMochen schema:familyName "Chen" .
+_:d2f38bf969c7df9e4b788f2f05ae71b2 rdf:reifies <<( doc:FactsauthorMochen schema:familyName "Chen" )>> ;
+	prov:wasDerivedFrom doc:0ccdf551e7bd .
+doc:Predictive_maintenance_model schema:component doc:FactsphysicsBasedKalmanFiltering .
+_:b0d39ff0d6522a931cd303a5be2b4fab rdf:reifies <<( doc:Predictive_maintenance_model schema:component doc:FactsphysicsBasedKalmanFiltering )>> ;
+	prov:wasDerivedFrom doc:0ccdf551e7bd .
+doc:FactsauthorMochen schema:givenName "MoChen" .
+_:c78675d595195a31bce0c478f7e976a4 rdf:reifies <<( doc:FactsauthorMochen schema:givenName "MoChen" )>> ;
+	prov:wasDerivedFrom doc:0ccdf551e7bd .
+doc:FactsauthorMochen schema:givenName "Enguo" .
+_:c285657c73cd5e76956b4f242b3c4b6b rdf:reifies <<( doc:FactsauthorMochen schema:givenName "Enguo" )>> ;
+	prov:wasDerivedFrom doc:0ccdf551e7bd .
+doc:FactsarticleTitle_18 a None:Article_title .
+_:e25033c8ffd7e4dcb751de79d3801aee rdf:reifies <<( doc:FactsarticleTitle_18 rdf:type None:Article_title )>> ;
+	prov:wasDerivedFrom doc:0ccdf551e7bd .
+doc:FactstfcrModelType None:has_text_value "one-dimensional temporal feature convolution-reallocation network" .
+_:ab0fa85de2b9ed657c85bb467b4cbfe7 rdf:reifies <<( doc:FactstfcrModelType None:has_text_value "one-dimensional temporal feature convolution-reallocation network" )>> ;
+	prov:wasDerivedFrom doc:0ccdf551e7bd .
+doc:Factsarticle_15 schema:issueNumber 9 .
+_:d580320ceb3a3cfbea87a84fcbc40e78 rdf:reifies <<( doc:Factsarticle_15 schema:issueNumber 9 )>> ;
+	prov:wasDerivedFrom doc:0ccdf551e7bd .
+doc:Factsarticle_15 schema:affiliation doc:FactsansteelGroupAutomation .
+_:e9c30eb18413dc2c21c1a5d60492011 rdf:reifies <<( doc:Factsarticle_15 schema:affiliation doc:FactsansteelGroupAutomation )>> ;
+	prov:wasDerivedFrom doc:0ccdf551e7bd .
+doc:Factsimf a None:Data_variable .
+_:c1e0bd2a2cee376fe7fd0cf57274fc72 rdf:reifies <<( doc:Factsimf rdf:type None:Data_variable )>> ;
+	prov:wasDerivedFrom doc:0ccdf551e7bd .
+doc:FactsarticleTitle_18 None:has_text_value "A Hybrid Approach Based on a Windowed-EMD Temporal Convolution-Reallocation Network and Physical Kalman Filtering for Bearing Remaining Useful Life Estimation" .
+_:c29b103de633b691515812c3207f016a rdf:reifies <<( doc:FactsarticleTitle_18 None:has_text_value "A Hybrid Approach Based on a Windowed-EMD Temporal Convolution-Reallocation Network and Physical Kalman Filtering for Bearing Remaining Useful Life Estimation" )>> ;
+	prov:wasDerivedFrom doc:0ccdf551e7bd .
+doc:FactsauthorMochen schema:givenName "Zhe" .
+_:c4ec51e60ce3503e8c4984be331e26c2 rdf:reifies <<( doc:FactsauthorMochen schema:givenName "Zhe" )>> ;
+	prov:wasDerivedFrom doc:0ccdf551e7bd .
+doc:Factsarticle_15 schema:affiliation doc:FactsschoolOfMechanicalEngineering .
+_:f80e029256614fb673db55f07b575b3d rdf:reifies <<( doc:Factsarticle_15 schema:affiliation doc:FactsschoolOfMechanicalEngineering )>> ;
+	prov:wasDerivedFrom doc:0ccdf551e7bd .
+doc:Predictive_maintenance_model None:describes_type doc:FactstfcrModelType .
+_:bb64a07f4aca8ed075a479895b9ae2a5 rdf:reifies <<( doc:Predictive_maintenance_model None:describes_type doc:FactstfcrModelType )>> ;
+	prov:wasDerivedFrom doc:0ccdf551e7bd .
+doc:Predictive_maintenance_model schema:component doc:FactswindowedEmd .
+_:ffaeee94facf164304cd3081110b3fa1 rdf:reifies <<( doc:Predictive_maintenance_model schema:component doc:FactswindowedEmd )>> ;
+	prov:wasDerivedFrom doc:0ccdf551e7bd .
+doc:Factsarticle_15 schema:datePublished "2025-09-03"^^<http://www.w3.org/2001/XMLSchema#date> .
+_:fc2e963831d7a0648bc0bca4dc9355ea rdf:reifies <<( doc:Factsarticle_15 schema:datePublished "2025-09-03"^^<http://www.w3.org/2001/XMLSchema#date> )>> ;
+	prov:wasDerivedFrom doc:0ccdf551e7bd .
+doc:Factsarticle_15 schema:volumeNumber 13 .
+_:fb5372d14356620cbe289e777380dce7 rdf:reifies <<( doc:Factsarticle_15 schema:volumeNumber 13 )>> ;
+	prov:wasDerivedFrom doc:0ccdf551e7bd .
+doc:FactsauthorMochen schema:familyName "Lang" .
+_:f5c7d21c5bb3ce59dff33db8a110b0f0 rdf:reifies <<( doc:FactsauthorMochen schema:familyName "Lang" )>> ;
+	prov:wasDerivedFrom doc:0ccdf551e7bd .
+doc:Predictive_maintenance_model schema:input doc:Factsimf .
+_:b697119d72e53e727eec5ea77163a83b rdf:reifies <<( doc:Predictive_maintenance_model schema:input doc:Factsimf )>> ;
+	prov:wasDerivedFrom doc:0ccdf551e7bd .
+doc:Factsarticle_15 schema:pageNumber 802 .
+_:b9f541bb4a3d341b59fa47a43e884cba rdf:reifies <<( doc:Factsarticle_15 schema:pageNumber 802 )>> ;
+	prov:wasDerivedFrom doc:0ccdf551e7bd .
+doc:Factsarticle_15 schema:affiliation doc:FactskeyLaboratoryIntelligentManufacturingIndustrialRobotsLiaoning .
+_:b34076a87bf77314e66a537583b5e649 rdf:reifies <<( doc:Factsarticle_15 schema:affiliation doc:FactskeyLaboratoryIntelligentManufacturingIndustrialRobotsLiaoning )>> ;
+	prov:wasDerivedFrom doc:0ccdf551e7bd .
+doc:FactsauthorMochen schema:givenName "Lang" .
+_:c9f7f036cd39acb2424e7c86cf2c6f92 rdf:reifies <<( doc:FactsauthorMochen schema:givenName "Lang" )>> ;
+	prov:wasDerivedFrom doc:0ccdf551e7bd .
+doc:FactskeyLaboratoryIntelligentManufacturingIndustrialRobotsLiaoning a schema:Organization .
+_:dead18123ff994ff444928d0737f34fd rdf:reifies <<( doc:FactskeyLaboratoryIntelligentManufacturingIndustrialRobotsLiaoning rdf:type schema:Organization )>> ;
+	prov:wasDerivedFrom doc:0ccdf551e7bd .
+doc:FactsauthorMochen schema:givenName "Liang" .
+_:dc5b3852552830a08638b129c48885d6 rdf:reifies <<( doc:FactsauthorMochen schema:givenName "Liang" )>> ;
+	prov:wasDerivedFrom doc:0ccdf551e7bd .
+doc:Factsarticle_15 schema:about doc:FactsrollingBearing_1 .
+_:f0d01167ea54c712cbea0f9e0b1179bc rdf:reifies <<( doc:Factsarticle_15 schema:about doc:FactsrollingBearing_1 )>> ;
+	prov:wasDerivedFrom doc:0ccdf551e7bd .
+doc:Factspublication_year_2025_20 None:has_interger_value 2025 .
+_:a4603bf57db30c19778754e5cbe8f4c3 rdf:reifies <<( doc:Factspublication_year_2025_20 None:has_interger_value 2025 )>> ;
+	prov:wasDerivedFrom doc:0ccdf551e7bd .
+doc:Factsdoi_10_3390_machines13090802 a None:Article_identifier .
+_:f0af88cc8f4f39f16938c2aa40885c37 rdf:reifies <<( doc:Factsdoi_10_3390_machines13090802 rdf:type None:Article_identifier )>> ;
+	prov:wasDerivedFrom doc:0ccdf551e7bd .
+doc:FactsansteelGroupAutomation a schema:Organization .
+_:b6f31ed53f4611a62714967bb4111c5e rdf:reifies <<( doc:FactsansteelGroupAutomation rdf:type schema:Organization )>> ;
+	prov:wasDerivedFrom doc:0ccdf551e7bd .
+doc:Factsdoi_10_3390_machines13090802 None:has_text_value "10.3390/machines13090802" .
+_:e5c9875ef1cbce612763c1ce9db9961b rdf:reifies <<( doc:Factsdoi_10_3390_machines13090802 None:has_text_value "10.3390/machines13090802" )>> ;
+	prov:wasDerivedFrom doc:0ccdf551e7bd .
+doc:FactsschoolOfMechanicalEngineering schema:parentOrganization doc:FactsshenyangUniversityOfTechnology .
+_:c43293e98817e14f80689fd7d9bf818d rdf:reifies <<( doc:FactsschoolOfMechanicalEngineering schema:parentOrganization doc:FactsshenyangUniversityOfTechnology )>> ;
+	prov:wasDerivedFrom doc:0ccdf551e7bd .
+doc:FactsauthorMochen schema:givenName "Chao" .
+_:e1aa991a029585e94510cbe6022f1852 rdf:reifies <<( doc:FactsauthorMochen schema:givenName "Chao" )>> ;
+	prov:wasDerivedFrom doc:0ccdf551e7bd .
+doc:FactsxjtuSyDataset a schema:Dataset .
+_:ef9dc144fc65feff0049671ff4ad1bbe rdf:reifies <<( doc:FactsxjtuSyDataset rdf:type schema:Dataset )>> ;
+	prov:wasDerivedFrom doc:0ccdf551e7bd .
+doc:FactshiddenHighDimensionalFeatures a None:Data_variable .
+_:fd289572168b0047371b5e19cb283e5b rdf:reifies <<( doc:FactshiddenHighDimensionalFeatures rdf:type None:Data_variable )>> ;
+	prov:wasDerivedFrom doc:0ccdf551e7bd .
+doc:FactswindowedEmd a cco:Algorithm .
+_:c693f4d685f0db636ba46191098a7bae rdf:reifies <<( doc:FactswindowedEmd rdf:type cco:Algorithm )>> ;
+	prov:wasDerivedFrom doc:0ccdf551e7bd .
+doc:FactsschoolOfMechanicalEngineering a schema:Organization .
+_:fc3c7d0eae9afa9f439c8201aa83bded rdf:reifies <<( doc:FactsschoolOfMechanicalEngineering rdf:type schema:Organization )>> ;
+	prov:wasDerivedFrom doc:0ccdf551e7bd .
+doc:Factsarticle_15 schema:mentions doc:Predictive_maintenance_model .
+_:b650f9f1a1e348b29e03bcf0b08854c4 rdf:reifies <<( doc:Factsarticle_15 schema:mentions doc:Predictive_maintenance_model )>> ;
+	prov:wasDerivedFrom doc:0ccdf551e7bd .
+doc:Factsarticle_15 None:has_identifier doc:Factsdoi_10_3390_machines13090802 .
+_:aae7971f82a11acd026d86965323a392 rdf:reifies <<( doc:Factsarticle_15 None:has_identifier doc:Factsdoi_10_3390_machines13090802 )>> ;
+	prov:wasDerivedFrom doc:0ccdf551e7bd .
+doc:Factspublication_year_2025_20 a None:Publication_year .
+_:c2c074060a30b07da759b421302252a8 rdf:reifies <<( doc:Factspublication_year_2025_20 rdf:type None:Publication_year )>> ;
+	prov:wasDerivedFrom doc:0ccdf551e7bd .
+doc:FactsrollingBearing_1 schema:name "rolling bearing" .
+_:cc9fcac0d96b21ccc9cab364096ce19c rdf:reifies <<( doc:FactsrollingBearing_1 schema:name "rolling bearing" )>> ;
+	prov:wasDerivedFrom doc:0ccdf551e7bd .
+doc:FactsauthorMochen schema:familyName "Ge" .
+_:b9966a0e0e73ec5c0caccbf9415f28e2 rdf:reifies <<( doc:FactsauthorMochen schema:familyName "Ge" )>> ;
+	prov:wasDerivedFrom doc:0ccdf551e7bd .
+doc:FactsshenyangUniversityOfTechnology a schema:Organization .
+_:e751d1d54a51936974e989ab4da9eb4d rdf:reifies <<( doc:FactsshenyangUniversityOfTechnology rdf:type schema:Organization )>> ;
+	prov:wasDerivedFrom doc:0ccdf551e7bd .
+doc:FactsxjtuSyDataset schema:name "XJTU-SY dataset" .
+_:b93b7811d8349a3dc66439e286d407bb rdf:reifies <<( doc:FactsxjtuSyDataset schema:name "XJTU-SY dataset" )>> ;
+	prov:wasDerivedFrom doc:0ccdf551e7bd .
+doc:FactsauthorMochen schema:familyName "Tong" .
+_:b68fb6d313e0b5fdec74715c59c621bc rdf:reifies <<( doc:FactsauthorMochen schema:familyName "Tong" )>> ;
+	prov:wasDerivedFrom doc:0ccdf551e7bd .
+doc:Factsarticle_15 a schema:ScholarlyArticle .
+_:fc605150f97bd37a5dba934f48a471a2 rdf:reifies <<( doc:Factsarticle_15 rdf:type schema:ScholarlyArticle )>> ;
+	prov:wasDerivedFrom doc:0ccdf551e7bd .
+doc:Predictive_maintenance_model a None:Predictive_maintenance_system_module .
+_:ada128bf2548b41be687e6bd24f232f4 rdf:reifies <<( doc:Predictive_maintenance_model rdf:type None:Predictive_maintenance_system_module )>> ;
+	prov:wasDerivedFrom doc:0ccdf551e7bd .
+doc:FactstfcrModelType a None:Model_type .
+_:ef5df2d4fa6e38e90f8d70b9f0eb69ae rdf:reifies <<( doc:FactstfcrModelType rdf:type None:Model_type )>> ;
+	prov:wasDerivedFrom doc:0ccdf551e7bd .
+doc:Factsarticle_15 schema:dataset doc:FactsxjtuSyDataset .
+_:db5f0e607de95a6d2359810c28f2b6dd rdf:reifies <<( doc:Factsarticle_15 schema:dataset doc:FactsxjtuSyDataset )>> ;
+	prov:wasDerivedFrom doc:0ccdf551e7bd .
+doc:FactsrulEstimation_1 a None:Remaining_useful_life_estimation .
+_:f387bff545517fa83a2a5e1c96b2cdd0 rdf:reifies <<( doc:FactsrulEstimation_1 rdf:type None:Remaining_useful_life_estimation )>> ;
+	prov:wasDerivedFrom doc:0ccdf551e7bd .
+doc:ebd203d5894a a prov:Entity , schema:text ;
+	prov:generatedAtTime "2026-07-24T08:12:00.285647Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+	schema:position 1 ;
+	schema:identifier "ebd203d5894a" .
+_:f3769478f6316d57556d7710f4c312c5 prov:wasDerivedFrom doc:ebd203d5894a .
+doc:Factspassage_1 schema:mentions doc:FactsstatisticalDistributions .
+_:acf475e3a27fc0c124e8ecdd64168e84 rdf:reifies <<( doc:Factspassage_1 schema:mentions doc:FactsstatisticalDistributions )>> ;
+	prov:wasDerivedFrom doc:ebd203d5894a .
+doc:Factspassage_1 rdfs:label "Provided text passage"@en .
+_:b95f411f6da298679f36688df6af668a rdf:reifies <<( doc:Factspassage_1 rdfs:label "Provided text passage"@en )>> ;
+	prov:wasDerivedFrom doc:ebd203d5894a .
+doc:Factsimf rdfs:label "monitoring information"@en .
+_:bcf3f0beaac93c171431bb82aac3bcfd rdf:reifies <<( doc:Factsimf rdfs:label "monitoring information"@en )>> ;
+	prov:wasDerivedFrom doc:ebd203d5894a .
+doc:FactscomplexSystem rdfs:label "complex system"@en .
+_:b12c813a954727e2b25b666197450a66 rdf:reifies <<( doc:FactscomplexSystem rdfs:label "complex system"@en )>> ;
+	prov:wasDerivedFrom doc:ebd203d5894a .
+doc:FactscomplexSystem a obo:BFO_0000030 .
+_:c8ff56f2dc5fd7d4d222aa0a6286da74 rdf:reifies <<( doc:FactscomplexSystem rdf:type obo:BFO_0000030 )>> ;
+	prov:wasDerivedFrom doc:ebd203d5894a .
+_:c1e0bd2a2cee376fe7fd0cf57274fc72 prov:wasDerivedFrom doc:ebd203d5894a .
+doc:Factsimf rdfs:label "estimation"@en .
+_:ad7e0753ad6588f5370729e65199f33d rdf:reifies <<( doc:Factsimf rdfs:label "estimation"@en )>> ;
+	prov:wasDerivedFrom doc:ebd203d5894a .
+doc:Factspassage_1 schema:mentions doc:FactssourceDomain_2 .
+_:df6347b5f756e415fee2a9e4badaa8c6 rdf:reifies <<( doc:Factspassage_1 schema:mentions doc:FactssourceDomain_2 )>> ;
+	prov:wasDerivedFrom doc:ebd203d5894a .
+doc:FactsdegradationInformation rdfs:label "hidden degradation information"@en .
+_:cc59bcc3c5aa28f2ca96bbe8658e03bb rdf:reifies <<( doc:FactsdegradationInformation rdfs:label "hidden degradation information"@en )>> ;
+	prov:wasDerivedFrom doc:ebd203d5894a .
+doc:Factspassage_1 schema:mentions doc:Factsimf .
+_:db6b7b008212160e809f0ddad7e54a31 rdf:reifies <<( doc:Factspassage_1 schema:mentions doc:Factsimf )>> ;
+	prov:wasDerivedFrom doc:ebd203d5894a .
+doc:FactssourceDomain_2 rdfs:label "source domain"@en .
+_:c83d0a1fca1717b2e671b40304d3aaba rdf:reifies <<( doc:FactssourceDomain_2 rdfs:label "source domain"@en )>> ;
+	prov:wasDerivedFrom doc:ebd203d5894a .
+doc:FactssourceDomain_2 a schema:Thing .
+_:b817f4496ec04103fb75c1af592ff56d rdf:reifies <<( doc:FactssourceDomain_2 rdf:type schema:Thing )>> ;
+	prov:wasDerivedFrom doc:ebd203d5894a .
+doc:Factspassage_1 schema:mentions doc:FactsdegradationInformation .
+_:d74769f6b9ce17c6091c845a33418ea7 rdf:reifies <<( doc:Factspassage_1 schema:mentions doc:FactsdegradationInformation )>> ;
+	prov:wasDerivedFrom doc:ebd203d5894a .
+doc:Factspassage_1 schema:mentions doc:FactsfeatureApproachCount .
+_:f088c58eaa62630b09dafa617364785c rdf:reifies <<( doc:Factspassage_1 schema:mentions doc:FactsfeatureApproachCount )>> ;
+	prov:wasDerivedFrom doc:ebd203d5894a .
+doc:FactsemdMethod rdfs:label "automatic feature extraction"@en .
+_:cad87bf2c02013fcb5229ad6f534108 rdf:reifies <<( doc:FactsemdMethod rdfs:label "automatic feature extraction"@en )>> ;
+	prov:wasDerivedFrom doc:ebd203d5894a .
+doc:FactsfeatureApproachCount a schema:QuantitativeValue .
+_:ae927f6949e2118bf5ea37f86f77cfb6 rdf:reifies <<( doc:FactsfeatureApproachCount rdf:type schema:QuantitativeValue )>> ;
+	prov:wasDerivedFrom doc:ebd203d5894a .
+doc:Factspassage_1 schema:mentions doc:FactscomplexSystem .
+_:b3bf0cc8f3516dfecf86c3147a9dc3b3 rdf:reifies <<( doc:Factspassage_1 schema:mentions doc:FactscomplexSystem )>> ;
+	prov:wasDerivedFrom doc:ebd203d5894a .
+doc:Predictive_maintenance_model cco:is_about doc:FactsdegradationInformation .
+_:b225ab5f1d998dc927e9a65497b6462c rdf:reifies <<( doc:Predictive_maintenance_model cco:is_about doc:FactsdegradationInformation )>> ;
+	prov:wasDerivedFrom doc:ebd203d5894a .
+doc:Factsimf a cco:InformationContentEntity .
+_:ec1fd74afa659c395906d70c460c06ec rdf:reifies <<( doc:Factsimf rdf:type cco:InformationContentEntity )>> ;
+	prov:wasDerivedFrom doc:ebd203d5894a .
+doc:FactsdeepLearningModelType_1 a None:Model_type .
+_:a5bdf8527a9aafc04fd5f12863c8e7f0 rdf:reifies <<( doc:FactsdeepLearningModelType_1 rdf:type None:Model_type )>> ;
+	prov:wasDerivedFrom doc:ebd203d5894a .
+doc:Factspassage_1 schema:mentions doc:Predictive_maintenance_model .
+_:cfd9866228ef85b58d8959c7e0112ff7 rdf:reifies <<( doc:Factspassage_1 schema:mentions doc:Predictive_maintenance_model )>> ;
+	prov:wasDerivedFrom doc:ebd203d5894a .
+doc:FactsstatisticalDistributions a schema:Thing .
+_:c029252efcdd1c98eb3a9a0545b56461 rdf:reifies <<( doc:FactsstatisticalDistributions rdf:type schema:Thing )>> ;
+	prov:wasDerivedFrom doc:ebd203d5894a .
+doc:FactsemdMethod a None:Data_mining_technique_function .
+_:fbcc0a6d9e76f1f9b40878e68c7a415e rdf:reifies <<( doc:FactsemdMethod rdf:type None:Data_mining_technique_function )>> ;
+	prov:wasDerivedFrom doc:ebd203d5894a .
+doc:FactsdeepLearningModelType_1 None:describes_type doc:Predictive_maintenance_model .
+_:a383f1399a6db7e977a55995b0281a97 rdf:reifies <<( doc:FactsdeepLearningModelType_1 None:describes_type doc:Predictive_maintenance_model )>> ;
+	prov:wasDerivedFrom doc:ebd203d5894a .
+doc:FactsdegradationInformation a cco:InformationContentEntity .
+_:ba076295a4fb8a4998bec030fbe0fd96 rdf:reifies <<( doc:FactsdegradationInformation rdf:type cco:InformationContentEntity )>> ;
+	prov:wasDerivedFrom doc:ebd203d5894a .
+doc:FactsstatisticalDistributions rdfs:label "statistical distributions"@en .
+_:c96043cd704470dde0075dd7eea9529a rdf:reifies <<( doc:FactsstatisticalDistributions rdfs:label "statistical distributions"@en )>> ;
+	prov:wasDerivedFrom doc:ebd203d5894a .
+doc:Factsimf rdfs:label "features"@en .
+_:df8c006ff099a03fff2d30aebe28d03d rdf:reifies <<( doc:Factsimf rdfs:label "features"@en )>> ;
+	prov:wasDerivedFrom doc:ebd203d5894a .
+doc:FactsemdMethod cco:is_about doc:Factsimf .
+_:f380454c33e2fbe4539a521ea0714b36 rdf:reifies <<( doc:FactsemdMethod cco:is_about doc:Factsimf )>> ;
+	prov:wasDerivedFrom doc:ebd203d5894a .
+doc:Factspassage_1 schema:mentions doc:FactsemdMethod .
+_:f947f7300f77fb54cc242a5db6de721f rdf:reifies <<( doc:Factspassage_1 schema:mentions doc:FactsemdMethod )>> ;
+	prov:wasDerivedFrom doc:ebd203d5894a .
+doc:FactsdeepLearningModelType_1 rdfs:label "deep learning"@en .
+_:ac228e52833d01156edd699af45f86c6 rdf:reifies <<( doc:FactsdeepLearningModelType_1 rdfs:label "deep learning"@en )>> ;
+	prov:wasDerivedFrom doc:ebd203d5894a .
+doc:FactsemdMethod cco:is_about doc:FactsdegradationInformation .
+_:e52335d065f0a270c7b81d4d4f6aa2c3 rdf:reifies <<( doc:FactsemdMethod cco:is_about doc:FactsdegradationInformation )>> ;
+	prov:wasDerivedFrom doc:ebd203d5894a .
+doc:Predictive_maintenance_model rdfs:label "deep learning"@en .
+_:fb9f653008a9339b8b304bf6c9d9b58b rdf:reifies <<( doc:Predictive_maintenance_model rdfs:label "deep learning"@en )>> ;
+	prov:wasDerivedFrom doc:ebd203d5894a .
+doc:FactsfeatureApproachCount schema:value 3 .
+_:ff7b008536eaa15019eae38619e41ce4 rdf:reifies <<( doc:FactsfeatureApproachCount schema:value 3 )>> ;
+	prov:wasDerivedFrom doc:ebd203d5894a .
+doc:Factspassage_1 a schema:CreativeWork .
+_:f184acbd62e822fb92e870ab8b3e0468 rdf:reifies <<( doc:Factspassage_1 rdf:type schema:CreativeWork )>> ;
+	prov:wasDerivedFrom doc:ebd203d5894a .
+doc:Factsimf cco:is_about doc:Factsimf .
+_:f3457aa68e3be9564ff0f6e7cb6c5ecf rdf:reifies <<( doc:Factsimf cco:is_about doc:Factsimf )>> ;
+	prov:wasDerivedFrom doc:ebd203d5894a .
+doc:FactsfeatureApproachCount schema:unitText "approaches"@en .
+_:eb484953995cd645c6adf489b9ee68bc rdf:reifies <<( doc:FactsfeatureApproachCount schema:unitText "approaches"@en )>> ;
+	prov:wasDerivedFrom doc:ebd203d5894a .
+doc:52f38c1525f3 a prov:Entity , schema:text ;
+	prov:generatedAtTime "2026-07-24T08:12:00.287647Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+	schema:position 2 ;
+	schema:identifier "52f38c1525f3" .
+doc:FactsemdMethod schema:description "Preserves temporal information in the time dimension." .
+_:e1be632162bc47283c45fee53b473ef8 rdf:reifies <<( doc:FactsemdMethod schema:description "Preserves temporal information in the time dimension." )>> ;
+	prov:wasDerivedFrom doc:52f38c1525f3 .
+_:f3769478f6316d57556d7710f4c312c5 prov:wasDerivedFrom doc:52f38c1525f3 .
+doc:FactsarticleTitle_18 <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD/seed#has_text_value> "Physics-informed hybrid bearing RUL estimation method based on windowed EMD feature engineering and temporal convolution neural networks" .
+_:c639f105bc06a329fd8bbaf1dd74cc57 rdf:reifies <<( doc:FactsarticleTitle_18 <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD/seed#has_text_value> "Physics-informed hybrid bearing RUL estimation method based on windowed EMD feature engineering and temporal convolution neural networks" )>> ;
+	prov:wasDerivedFrom doc:52f38c1525f3 .
+doc:Predictive_maintenance_model schema:name "one-dimensional temporal convolutional neural network" .
+_:ceb7b48cd401d45b3b3dc74ed67edabe rdf:reifies <<( doc:Predictive_maintenance_model schema:name "one-dimensional temporal convolutional neural network" )>> ;
+	prov:wasDerivedFrom doc:52f38c1525f3 .
+doc:Predictive_maintenance_model schema:about doc:FactsrollingBearing_1 .
+_:b252b0962a77b1a94db582bdd86a9e36 rdf:reifies <<( doc:Predictive_maintenance_model schema:about doc:FactsrollingBearing_1 )>> ;
+	prov:wasDerivedFrom doc:52f38c1525f3 .
+doc:Predictive_maintenance_model <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD/seed#has_design_detail> doc:FactsbottleneckTopDownDesign .
+_:b3b03a4f5310868d7dd2c36116894ae6 rdf:reifies <<( doc:Predictive_maintenance_model <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD/seed#has_design_detail> doc:FactsbottleneckTopDownDesign )>> ;
+	prov:wasDerivedFrom doc:52f38c1525f3 .
+doc:Predictive_maintenance_model schema:uses doc:FactsemdMethod .
+_:a88684eb78ad9a9cdce5280ebe3f60 rdf:reifies <<( doc:Predictive_maintenance_model schema:uses doc:FactsemdMethod )>> ;
+	prov:wasDerivedFrom doc:52f38c1525f3 .
+doc:Factsimf schema:isPartOf doc:FactsemdMethod .
+_:b03fe5720207be26b1deacdc7e75adec rdf:reifies <<( doc:Factsimf schema:isPartOf doc:FactsemdMethod )>> ;
+	prov:wasDerivedFrom doc:52f38c1525f3 .
+doc:Factsimf schema:name "TIR sequence" .
+_:dc125d9362a345ffc475eeae56c381f3 rdf:reifies <<( doc:Factsimf schema:name "TIR sequence" )>> ;
+	prov:wasDerivedFrom doc:52f38c1525f3 .
+doc:FactsemdMethod schema:uses doc:FactsemdMethod .
+_:b6a4c92046b45c030fe1a56a7de3eb0c rdf:reifies <<( doc:FactsemdMethod schema:uses doc:FactsemdMethod )>> ;
+	prov:wasDerivedFrom doc:52f38c1525f3 .
+doc:FactsfaultFeatureExtraction schema:name "fault feature extraction" .
+_:dab5d82dabacb5ea0388a65307b5d5d1 rdf:reifies <<( doc:FactsfaultFeatureExtraction schema:name "fault feature extraction" )>> ;
+	prov:wasDerivedFrom doc:52f38c1525f3 .
+doc:Factsarticle_15 schema:about doc:FactsemdMethod .
+_:cf9378d31e5954728cae7454aa144042 rdf:reifies <<( doc:Factsarticle_15 schema:about doc:FactsemdMethod )>> ;
+	prov:wasDerivedFrom doc:52f38c1525f3 .
+doc:FactsbottleneckTopDownDesign schema:name "bottleneck top-down channel design" .
+_:acce83d6349b7d872dfae7af84c0b1f8 rdf:reifies <<( doc:FactsbottleneckTopDownDesign schema:name "bottleneck top-down channel design" )>> ;
+	prov:wasDerivedFrom doc:52f38c1525f3 .
+doc:FactsemdMethod a cco:Algorithm .
+_:b03546dfb0c68470a9cfe0c524e1ac96 rdf:reifies <<( doc:FactsemdMethod rdf:type cco:Algorithm )>> ;
+	prov:wasDerivedFrom doc:52f38c1525f3 .
+doc:FactschannelWeightRedistribution a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD/seed#Design_detail> .
+_:f90f506b16e20ad0e646b9ba47b046a9 rdf:reifies <<( doc:FactschannelWeightRedistribution rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD/seed#Design_detail> )>> ;
+	prov:wasDerivedFrom doc:52f38c1525f3 .
+doc:Predictive_maintenance_model schema:description "One-dimensional temporal convolution model for extracting hidden features from TIR sequences and constructing remaining useful life estimates." .
+_:e6faaba8769d587d51a845a8c6b26166 rdf:reifies <<( doc:Predictive_maintenance_model schema:description "One-dimensional temporal convolution model for extracting hidden features from TIR sequences and constructing remaining useful life estimates." )>> ;
+	prov:wasDerivedFrom doc:52f38c1525f3 .
+doc:FactsemdMethod schema:name "Empirical Mode Decomposition" .
+_:c8b03eca34bfd6fe281fd2684c7d06a1 rdf:reifies <<( doc:FactsemdMethod schema:name "Empirical Mode Decomposition" )>> ;
+	prov:wasDerivedFrom doc:52f38c1525f3 .
+doc:Factsimf schema:name "denoised vibration signal" .
+_:fa6f60e4556e3c8665c1e2d8f0b7e5fa rdf:reifies <<( doc:Factsimf schema:name "denoised vibration signal" )>> ;
+	prov:wasDerivedFrom doc:52f38c1525f3 .
+doc:FactsfaultFeatureExtraction a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD/seed#Fault_feature_extraction> .
+_:ff24a84b5c9b614c596afc4fb85a0a74 rdf:reifies <<( doc:FactsfaultFeatureExtraction rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD/seed#Fault_feature_extraction> )>> ;
+	prov:wasDerivedFrom doc:52f38c1525f3 .
+doc:Predictive_maintenance_model <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD/seed#has_predictive_maintenance_function> doc:FactsfaultFeatureExtraction .
+_:fb523fea976993a93d8a1641fe0d3e3b rdf:reifies <<( doc:Predictive_maintenance_model <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD/seed#has_predictive_maintenance_function> doc:FactsfaultFeatureExtraction )>> ;
+	prov:wasDerivedFrom doc:52f38c1525f3 .
+doc:Factsimf schema:name "residual function" .
+_:e8861b640ab4bcb9498576ad5642dbf1 rdf:reifies <<( doc:Factsimf schema:name "residual function" )>> ;
+	prov:wasDerivedFrom doc:52f38c1525f3 .
+doc:Factsimf schema:name "RUL series" .
+_:c7f73049faede717442f7059b9d4e317 rdf:reifies <<( doc:Factsimf schema:name "RUL series" )>> ;
+	prov:wasDerivedFrom doc:52f38c1525f3 .
+doc:Predictive_maintenance_model schema:name "TFCR model module" .
+_:a9efb638f9845354b218207016929add rdf:reifies <<( doc:Predictive_maintenance_model schema:name "TFCR model module" )>> ;
+	prov:wasDerivedFrom doc:52f38c1525f3 .
+doc:Predictive_maintenance_model schema:name "Deep Separable Convolutional Neural Network" .
+_:c186e87bc5754697e2bc7e0624ab5f25 rdf:reifies <<( doc:Predictive_maintenance_model schema:name "Deep Separable Convolutional Neural Network" )>> ;
+	prov:wasDerivedFrom doc:52f38c1525f3 .
+doc:FactsemdMethod schema:name "physics-based Kalman filtering" .
+_:e26539c07181c8a212095a8646568238 rdf:reifies <<( doc:FactsemdMethod schema:name "physics-based Kalman filtering" )>> ;
+	prov:wasDerivedFrom doc:52f38c1525f3 .
+doc:FactsbottleneckTopDownDesign a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD/seed#Design_detail> .
+_:cb534917c7659a6efc6910acf4f25645 rdf:reifies <<( doc:FactsbottleneckTopDownDesign rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD/seed#Design_detail> )>> ;
+	prov:wasDerivedFrom doc:52f38c1525f3 .
+doc:FactsemdMethod schema:name "hybrid approach" .
+_:de2e99e9257550978544cc46b6edc724 rdf:reifies <<( doc:FactsemdMethod schema:name "hybrid approach" )>> ;
+	prov:wasDerivedFrom doc:52f38c1525f3 .
+doc:Factsimf schema:name "filtered RUL series" .
+_:c5c1551439fbe2f4ea99ef1599d854ad rdf:reifies <<( doc:Factsimf schema:name "filtered RUL series" )>> ;
+	prov:wasDerivedFrom doc:52f38c1525f3 .
+doc:Factsimf schema:name "intrinsic mode functions" .
+_:c375d9729272cbcda6a3c94aa6231905 rdf:reifies <<( doc:Factsimf schema:name "intrinsic mode functions" )>> ;
+	prov:wasDerivedFrom doc:52f38c1525f3 .
+_:f0d01167ea54c712cbea0f9e0b1179bc prov:wasDerivedFrom doc:52f38c1525f3 .
+doc:FactsemdMethod schema:name "windowed EMD TIR-sequence extraction" .
+_:f0c6a4225011ff5d4590e01dcb5bd28a rdf:reifies <<( doc:FactsemdMethod schema:name "windowed EMD TIR-sequence extraction" )>> ;
+	prov:wasDerivedFrom doc:52f38c1525f3 .
+doc:FactsemdMethod schema:description "Improves stability, smooths the RUL series, physically constrains estimates, and suppresses outliers." .
+_:cd7abf16f83d6079d9d4dd3898ed8113 rdf:reifies <<( doc:FactsemdMethod schema:description "Improves stability, smooths the RUL series, physically constrains estimates, and suppresses outliers." )>> ;
+	prov:wasDerivedFrom doc:52f38c1525f3 .
+doc:Factsarticle_15 schema:about doc:Predictive_maintenance_model .
+_:ead6b7653a2701b7bd675d7e07ed4dc0 rdf:reifies <<( doc:Factsarticle_15 schema:about doc:Predictive_maintenance_model )>> ;
+	prov:wasDerivedFrom doc:52f38c1525f3 .
+doc:FactsemdMethod schema:output doc:Factsimf .
+_:d37d87750936f42b0e177260103e0ea3 rdf:reifies <<( doc:FactsemdMethod schema:output doc:Factsimf )>> ;
+	prov:wasDerivedFrom doc:52f38c1525f3 .
+doc:FactsemdMethod schema:name "physics-informed hybrid approach" .
+_:d9004ab32f6a3d44dfbce9aa3efb0b78 rdf:reifies <<( doc:FactsemdMethod schema:name "physics-informed hybrid approach" )>> ;
+	prov:wasDerivedFrom doc:52f38c1525f3 .
+_:cc9fcac0d96b21ccc9cab364096ce19c prov:wasDerivedFrom doc:52f38c1525f3 .
+doc:Predictive_maintenance_model schema:name "Long Short-Term Memory neural network" .
+_:f42e7c7a5bf9659c32a5edb9801eb0f2 rdf:reifies <<( doc:Predictive_maintenance_model schema:name "Long Short-Term Memory neural network" )>> ;
+	prov:wasDerivedFrom doc:52f38c1525f3 .
+_:c1e0bd2a2cee376fe7fd0cf57274fc72 prov:wasDerivedFrom doc:52f38c1525f3 .
+_:e25033c8ffd7e4dcb751de79d3801aee prov:wasDerivedFrom doc:52f38c1525f3 .
+doc:FactsemdMethod schema:description "Divides vibration signals into non-overlapping windows, decomposes them with EMD, extracts time-domain features, and arranges the feature vectors chronologically." .
+_:f1614e4f21b3badadd52f4d54cb93961 rdf:reifies <<( doc:FactsemdMethod schema:description "Divides vibration signals into non-overlapping windows, decomposes them with EMD, extracts time-domain features, and arranges the feature vectors chronologically." )>> ;
+	prov:wasDerivedFrom doc:52f38c1525f3 .
+doc:FactsemdMethod a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD/seed#Model_configuration> .
+_:be7ae979a0a4586f0300ecd5cb755ec7 rdf:reifies <<( doc:FactsemdMethod rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD/seed#Model_configuration> )>> ;
+	prov:wasDerivedFrom doc:52f38c1525f3 .
+doc:FactsemdMethod schema:description "Decomposes denoised non-stationary and nonlinear signals into intrinsic mode functions and a residual function." .
+_:e211fbf2fb15aa6f0ff733746113bc rdf:reifies <<( doc:FactsemdMethod schema:description "Decomposes denoised non-stationary and nonlinear signals into intrinsic mode functions and a residual function." )>> ;
+	prov:wasDerivedFrom doc:52f38c1525f3 .
+doc:FactsbottleneckTopDownDesign schema:name "temporal feature compression layers" .
+_:da9f2d1b8ba06165390b8f5f38822508 rdf:reifies <<( doc:FactsbottleneckTopDownDesign schema:name "temporal feature compression layers" )>> ;
+	prov:wasDerivedFrom doc:52f38c1525f3 .
+doc:FactshealthIndicator_1 schema:name "health indicator" .
+_:e8a2b6a78f4a2ce8333188007e68e77 rdf:reifies <<( doc:FactshealthIndicator_1 schema:name "health indicator" )>> ;
+	prov:wasDerivedFrom doc:52f38c1525f3 .
+doc:FactsbottleneckTopDownDesign schema:description "Reallocates channel weights to reduce loss of critical features during channel compression." .
+_:cae173d84a070fff9a5131bf0a198164 rdf:reifies <<( doc:FactsbottleneckTopDownDesign schema:description "Reallocates channel weights to reduce loss of critical features during channel compression." )>> ;
+	prov:wasDerivedFrom doc:52f38c1525f3 .
+doc:FactshealthIndicator_1 schema:about doc:FactsrollingBearing_1 .
+_:d0e403244bbff818ad3e9dcc88ee3117 rdf:reifies <<( doc:FactshealthIndicator_1 schema:about doc:FactsrollingBearing_1 )>> ;
+	prov:wasDerivedFrom doc:52f38c1525f3 .
+_:c167897fb116ea05bce7b2102be37b64 prov:wasDerivedFrom doc:52f38c1525f3 .
+doc:FactsemdMethod schema:input doc:Factsimf .
+_:da59ebfec5f0a343dbcf0ef82fe8e254 rdf:reifies <<( doc:FactsemdMethod schema:input doc:Factsimf )>> ;
+	prov:wasDerivedFrom doc:52f38c1525f3 .
+doc:Factsimf schema:about doc:FactsrollingBearing_1 .
+_:acd1cb40b0a229a1220313c1bf357f79 rdf:reifies <<( doc:Factsimf schema:about doc:FactsrollingBearing_1 )>> ;
+	prov:wasDerivedFrom doc:52f38c1525f3 .
+doc:FactsemdMethod schema:description "Integrates feature extraction directly into an end-to-end prediction model." .
+_:f790e5c1216b84bf63f0ae85d68dc877 rdf:reifies <<( doc:FactsemdMethod schema:description "Integrates feature extraction directly into an end-to-end prediction model." )>> ;
+	prov:wasDerivedFrom doc:52f38c1525f3 .
+doc:Predictive_maintenance_model schema:description "Processes overlapping sampling windows for direct RUL prediction." .
+_:c7b02fda57af8647850bb6ce56839a47 rdf:reifies <<( doc:Predictive_maintenance_model schema:description "Processes overlapping sampling windows for direct RUL prediction." )>> ;
+	prov:wasDerivedFrom doc:52f38c1525f3 .
+_:fc605150f97bd37a5dba934f48a471a2 prov:wasDerivedFrom doc:52f38c1525f3 .
+doc:FactsemdMethod schema:description "Extracts physically meaningful signal features before evaluating the health indicator in two steps." .
+_:d5c8093ce9703669120487608da6baec rdf:reifies <<( doc:FactsemdMethod schema:description "Extracts physically meaningful signal features before evaluating the health indicator in two steps." )>> ;
+	prov:wasDerivedFrom doc:52f38c1525f3 .
+doc:FactsfaultFeatureExtraction schema:name "time-domain feature extraction" .
+_:dc45732b61334875b221e172a3cdb4b5 rdf:reifies <<( doc:FactsfaultFeatureExtraction schema:name "time-domain feature extraction" )>> ;
+	prov:wasDerivedFrom doc:52f38c1525f3 .
+doc:Predictive_maintenance_model schema:name "TFCR" .
+_:a84f929639e8fc370dba4c421b9d5b69 rdf:reifies <<( doc:Predictive_maintenance_model schema:name "TFCR" )>> ;
+	prov:wasDerivedFrom doc:52f38c1525f3 .
+doc:Factsarticle_15 a None:Predictive_maintenance_model .
+_:d40a6bcf3e8c9c40356e7d2f302e017b rdf:reifies <<( doc:Factsarticle_15 rdf:type None:Predictive_maintenance_model )>> ;
+	prov:wasDerivedFrom doc:52f38c1525f3 .
+doc:Factsimf schema:description "Chronologically arranged feature vectors with temporal and feature dimensions used as model input." .
+_:c0e496e33364f6ca64b0d77afc20b128 rdf:reifies <<( doc:Factsimf schema:description "Chronologically arranged feature vectors with temporal and feature dimensions used as model input." )>> ;
+	prov:wasDerivedFrom doc:52f38c1525f3 .
+doc:Predictive_maintenance_model <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD/seed#has_design_detail> doc:FactschannelWeightRedistribution .
+_:f65ee9f559f28b640537b3255d5167fa rdf:reifies <<( doc:Predictive_maintenance_model <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD/seed#has_design_detail> doc:FactschannelWeightRedistribution )>> ;
+	prov:wasDerivedFrom doc:52f38c1525f3 .
+doc:FactsemdMethod schema:uses doc:FactsfaultFeatureExtraction .
+_:f60c08cb992065a46f19649830f3459b rdf:reifies <<( doc:FactsemdMethod schema:uses doc:FactsfaultFeatureExtraction )>> ;
+	prov:wasDerivedFrom doc:52f38c1525f3 .
+doc:FactsemdMethod <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD/seed#describes_configuration> doc:Predictive_maintenance_model .
+_:c0f48f239e09195ebfa4a19c052c9a89 rdf:reifies <<( doc:FactsemdMethod <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD/seed#describes_configuration> doc:Predictive_maintenance_model )>> ;
+	prov:wasDerivedFrom doc:52f38c1525f3 .
+doc:Predictive_maintenance_model schema:uses doc:FactsbottleneckTopDownDesign .
+_:ec11e457845e57f609757a8482ee9344 rdf:reifies <<( doc:Predictive_maintenance_model schema:uses doc:FactsbottleneckTopDownDesign )>> ;
+	prov:wasDerivedFrom doc:52f38c1525f3 .
+doc:FactshealthIndicator_1 a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD/seed#Performance_indicator> .
+_:d8e971bd6bea712f647639b3b4146c82 rdf:reifies <<( doc:FactshealthIndicator_1 rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD/seed#Performance_indicator> )>> ;
+	prov:wasDerivedFrom doc:52f38c1525f3 .
+doc:Factsarticle_15 schema:about doc:Factsimf .
+_:d9a05eb4a16e513c006b9d7a4b073cb5 rdf:reifies <<( doc:Factsarticle_15 schema:about doc:Factsimf )>> ;
+	prov:wasDerivedFrom doc:52f38c1525f3 .
+doc:Predictive_maintenance_model <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD/seed#has_predictive_maintenance_function> doc:FactsrulEstimation_1 .
+_:c9fe35916b0ccd639a6bcf76b6b9e46e rdf:reifies <<( doc:Predictive_maintenance_model <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD/seed#has_predictive_maintenance_function> doc:FactsrulEstimation_1 )>> ;
+	prov:wasDerivedFrom doc:52f38c1525f3 .
+doc:FactsemdMethod schema:name "causal convolution" .
+_:f3dc49161ed28c3294ef2c922c29b4e7 rdf:reifies <<( doc:FactsemdMethod schema:name "causal convolution" )>> ;
+	prov:wasDerivedFrom doc:52f38c1525f3 .
+doc:FactsemdMethod schema:description "Integrates physical degradation laws and domain knowledge into data-driven predictive models." .
+_:ffc23a586d7f90a970879bf85c78a6be rdf:reifies <<( doc:FactsemdMethod schema:description "Integrates physical degradation laws and domain knowledge into data-driven predictive models." )>> ;
+	prov:wasDerivedFrom doc:52f38c1525f3 .
+doc:FactsrulEstimation_1 schema:name "remaining useful life estimation" .
+_:e077e18ba980acb35019460e19d96ee3 rdf:reifies <<( doc:FactsrulEstimation_1 schema:name "remaining useful life estimation" )>> ;
+	prov:wasDerivedFrom doc:52f38c1525f3 .
+_:f387bff545517fa83a2a5e1c96b2cdd0 prov:wasDerivedFrom doc:52f38c1525f3 .
+doc:FactschannelWeightRedistribution schema:name "channel weight redistribution layers" .
+_:f24becbd58eaab6d96ad90f18487563d rdf:reifies <<( doc:FactschannelWeightRedistribution schema:name "channel weight redistribution layers" )>> ;
+	prov:wasDerivedFrom doc:52f38c1525f3 .
+doc:FactsemdMethod schema:name "direct approach" .
+_:e658e3d7545a708b648f79c15b8d9d23 rdf:reifies <<( doc:FactsemdMethod schema:name "direct approach" )>> ;
+	prov:wasDerivedFrom doc:52f38c1525f3 .
+doc:Predictive_maintenance_model schema:description "Segments time-sequence data through sliding windows to extract features and predict RUL." .
+_:caf4d4f9f29d64df5384e6a355f2af81 rdf:reifies <<( doc:Predictive_maintenance_model schema:description "Segments time-sequence data through sliding windows to extract features and predict RUL." )>> ;
+	prov:wasDerivedFrom doc:52f38c1525f3 .
+doc:Factsarticle_15 <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD/seed#has_title> doc:FactsarticleTitle_18 .
+_:fbec622329ad79c795264b6c2c9ef637 rdf:reifies <<( doc:Factsarticle_15 <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD/seed#has_title> doc:FactsarticleTitle_18 )>> ;
+	prov:wasDerivedFrom doc:52f38c1525f3 .
+None:Predictive_maintenance_model owl:sameAs None:Predictive_maintenance_system_module , None:Predictive_Maintenance_Article .

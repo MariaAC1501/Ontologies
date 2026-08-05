@@ -1,0 +1,539 @@
+@prefix None: <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD/seed#> .
+@prefix cco: <http://www.ontologyrepository.com/CommonCoreOntologies/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doc: <https://growgraph.dev/doc/48359801c85a/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix obo: <http://purl.obolibrary.org/obo/> .
+@prefix cd: <https://growgraph.dev/facts> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix schema: <https://schema.org/> .
+@prefix schema1: <http://schema.org/> .
+doc:3f89433eec8a a prov:Entity , schema:text ;
+	prov:generatedAtTime "2026-07-11T03:52:50.192913Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+	schema:position 0 ;
+	schema:identifier "3f89433eec8a" .
+doc:FactsPublicationYear2025 schema1:dateModified "2025-10-19"^^<http://www.w3.org/2001/XMLSchema#date> .
+_:cd76ba28bb2cc98bf529ab4cdc19e02f rdf:reifies <<( doc:FactsPublicationYear2025 schema1:dateModified "2025-10-19"^^<http://www.w3.org/2001/XMLSchema#date> )>> ;
+	prov:wasDerivedFrom doc:3f89433eec8a .
+doc:FactsAuthorPhucDo a schema1:Person .
+_:f4a7806b14ee0ea9b82a97754648671b rdf:reifies <<( doc:FactsAuthorPhucDo rdf:type schema1:Person )>> ;
+	prov:wasDerivedFrom doc:3f89433eec8a .
+doc:FactsAuthorPhucDo schema1:affiliation doc:FactsOrgVnuUniversityOfSciences .
+_:b951734b48960bd022685419bc5ef5bb rdf:reifies <<( doc:FactsAuthorPhucDo schema1:affiliation doc:FactsOrgVnuUniversityOfSciences )>> ;
+	prov:wasDerivedFrom doc:3f89433eec8a .
+doc:FactsAuthorPhucDo schema1:givenName "The-Son" .
+_:a12985ce04ff262a103906a6be4a6fef rdf:reifies <<( doc:FactsAuthorPhucDo schema1:givenName "The-Son" )>> ;
+	prov:wasDerivedFrom doc:3f89433eec8a .
+doc:FactsTcnModel rdfs:seeAlso doc:FactsLstmModel .
+_:e3ed2cdc1d3a8d590fc2003654ac8bb3 rdf:reifies <<( doc:FactsTcnModel rdfs:seeAlso doc:FactsLstmModel )>> ;
+	prov:wasDerivedFrom doc:3f89433eec8a .
+doc:FactsOrgVnuUniversityOfSciences schema1:name "Posts and Telecommunications Institute of Technology" .
+_:b03e017471c1e710f7fac36a966b444b rdf:reifies <<( doc:FactsOrgVnuUniversityOfSciences schema1:name "Posts and Telecommunications Institute of Technology" )>> ;
+	prov:wasDerivedFrom doc:3f89433eec8a .
+doc:FactsTcnModel a None:Predictive_maintenance_model .
+_:e7055e4f66eb3a18165a4284697eb689 rdf:reifies <<( doc:FactsTcnModel rdf:type None:Predictive_maintenance_model )>> ;
+	prov:wasDerivedFrom doc:3f89433eec8a .
+doc:FactsDifferentialPressure cco:describes doc:FactsReverseOsmosisSystem .
+_:f7b857b7026989084940ffee61d6df5b rdf:reifies <<( doc:FactsDifferentialPressure cco:describes doc:FactsReverseOsmosisSystem )>> ;
+	prov:wasDerivedFrom doc:3f89433eec8a .
+doc:FactsPublicationYear2025 a None:Predictive_Maintenance_Article .
+_:cdeff4c6d17b00743c8e6e619da3366 rdf:reifies <<( doc:FactsPublicationYear2025 rdf:type None:Predictive_Maintenance_Article )>> ;
+	prov:wasDerivedFrom doc:3f89433eec8a .
+doc:FactsTcnModel rdfs:label "Temporal Convolutional Network (TCN) model for RO degradation prediction" .
+_:d0773866dce1edc44984416302aa4017 rdf:reifies <<( doc:FactsTcnModel rdfs:label "Temporal Convolutional Network (TCN) model for RO degradation prediction" )>> ;
+	prov:wasDerivedFrom doc:3f89433eec8a .
+doc:Factsdataset_Desalination_2015_2020 schema1:numberOfItems 14 .
+_:a966ea19f41c50dd7452d95a1d3391b3 rdf:reifies <<( doc:Factsdataset_Desalination_2015_2020 schema1:numberOfItems 14 )>> ;
+	prov:wasDerivedFrom doc:3f89433eec8a .
+doc:FactsPublicationYear2025 None:has_title doc:FactsArticleTitle1_2 .
+_:d20a129587bc5753bb723157e73cf75e rdf:reifies <<( doc:FactsPublicationYear2025 None:has_title doc:FactsArticleTitle1_2 )>> ;
+	prov:wasDerivedFrom doc:3f89433eec8a .
+doc:FactsPublicationYear2025 cco:is_about doc:DescriptiveInformationContentEntity .
+_:fd34957b7f21624db2406a2bafdb1f96 rdf:reifies <<( doc:FactsPublicationYear2025 cco:is_about doc:DescriptiveInformationContentEntity )>> ;
+	prov:wasDerivedFrom doc:3f89433eec8a .
+doc:Factsdataset_Desalination_2015_2020 rdfs:label "Real desalination plant dataset (2015-2020)" .
+_:bbc043e771302c5762e582eaf4d0000e rdf:reifies <<( doc:Factsdataset_Desalination_2015_2020 rdfs:label "Real desalination plant dataset (2015-2020)" )>> ;
+	prov:wasDerivedFrom doc:3f89433eec8a .
+doc:FactsOrgVnuUniversityOfSciences a schema1:Organization .
+_:ec3cf060104b91dbca6215de810d31f5 rdf:reifies <<( doc:FactsOrgVnuUniversityOfSciences rdf:type schema1:Organization )>> ;
+	prov:wasDerivedFrom doc:3f89433eec8a .
+doc:FactsAuthorPhucDo schema1:email "dothanhha@ptit.edu.vn" .
+_:f6e8a2dbc05135541e1ce442eab1aed3 rdf:reifies <<( doc:FactsAuthorPhucDo schema1:email "dothanhha@ptit.edu.vn" )>> ;
+	prov:wasDerivedFrom doc:3f89433eec8a .
+doc:FactsDifferentialPressure rdfs:label "differential pressure across RO vessel" .
+_:fbe92cb82916cd1b7ed5bf8df20ea819 rdf:reifies <<( doc:FactsDifferentialPressure rdfs:label "differential pressure across RO vessel" )>> ;
+	prov:wasDerivedFrom doc:3f89433eec8a .
+doc:FactsGruModel rdfs:label "GRU comparative model" .
+_:a1d6fc011600fb99bfcba514040817ed rdf:reifies <<( doc:FactsGruModel rdfs:label "GRU comparative model" )>> ;
+	prov:wasDerivedFrom doc:3f89433eec8a .
+doc:FactsOrgVnuUniversityOfSciences schema1:name "VNU University of Sciences" .
+_:cda01cf63b141f8efe80adc42994895b rdf:reifies <<( doc:FactsOrgVnuUniversityOfSciences schema1:name "VNU University of Sciences" )>> ;
+	prov:wasDerivedFrom doc:3f89433eec8a .
+doc:FactsAuthorPhucDo schema1:familyName "Do" .
+_:a244f19026b70b50ca7ce26927a07c25 rdf:reifies <<( doc:FactsAuthorPhucDo schema1:familyName "Do" )>> ;
+	prov:wasDerivedFrom doc:3f89433eec8a .
+doc:FactsOrgSyCoIaImtMinesAles schema1:address "Ales, France" .
+_:ccd32a3ef8cbad348eb5ddc6a6e48582 rdf:reifies <<( doc:FactsOrgSyCoIaImtMinesAles schema1:address "Ales, France" )>> ;
+	prov:wasDerivedFrom doc:3f89433eec8a .
+doc:FactsAuthorPhucDo schema1:familyName "Phan" .
+_:a7141dda934d8465d6171437e5bd0535 rdf:reifies <<( doc:FactsAuthorPhucDo schema1:familyName "Phan" )>> ;
+	prov:wasDerivedFrom doc:3f89433eec8a .
+doc:FactsLstmModel a cco:Algorithm .
+_:f40ae70fca6c12dc6c30b09ff810697f rdf:reifies <<( doc:FactsLstmModel rdf:type cco:Algorithm )>> ;
+	prov:wasDerivedFrom doc:3f89433eec8a .
+doc:FactsPublicationYear2025 schema1:author doc:FactsAuthorPhucDo .
+_:aade1607f5c75d4c8c4833cced2de346 rdf:reifies <<( doc:FactsPublicationYear2025 schema1:author doc:FactsAuthorPhucDo )>> ;
+	prov:wasDerivedFrom doc:3f89433eec8a .
+doc:FactsGruModel a cco:Algorithm .
+_:fcfab9d74d707f4b10fba2f671206980 rdf:reifies <<( doc:FactsGruModel rdf:type cco:Algorithm )>> ;
+	prov:wasDerivedFrom doc:3f89433eec8a .
+doc:FactsArticleTitle1_2 None:has_text_value "Enhanced Temporal Convolutional Network Based Approach for Degradation Prediction of Reverse Osmosis Systems" .
+_:b7c0758e6350b942b90e1b510bc93c22 rdf:reifies <<( doc:FactsArticleTitle1_2 None:has_text_value "Enhanced Temporal Convolutional Network Based Approach for Degradation Prediction of Reverse Osmosis Systems" )>> ;
+	prov:wasDerivedFrom doc:3f89433eec8a .
+doc:FactsOrgSyCoIaImtMinesAles schema1:name "SyCoIA, IMT Mines Ales" .
+_:d229fc5ca4aab0f4a420c0af32d0a28a rdf:reifies <<( doc:FactsOrgSyCoIaImtMinesAles schema1:name "SyCoIA, IMT Mines Ales" )>> ;
+	prov:wasDerivedFrom doc:3f89433eec8a .
+doc:FactsTcnModel cco:describes doc:FactsReverseOsmosisSystem .
+_:ac8ef571f3a6a1ef081bf516acf05925 rdf:reifies <<( doc:FactsTcnModel cco:describes doc:FactsReverseOsmosisSystem )>> ;
+	prov:wasDerivedFrom doc:3f89433eec8a .
+doc:FactsPublicationYear2025 schema1:dateModified "2025-11-25"^^<http://www.w3.org/2001/XMLSchema#date> .
+_:c7f8a3ea767d04cace5eccc91c25242d rdf:reifies <<( doc:FactsPublicationYear2025 schema1:dateModified "2025-11-25"^^<http://www.w3.org/2001/XMLSchema#date> )>> ;
+	prov:wasDerivedFrom doc:3f89433eec8a .
+doc:FactsOrgVnuUniversityOfSciences schema1:address "Nguyen Trai Street, Ha Dong District, Hanoi, Vietnam" .
+_:aa0d85fc0c427c54a874ae2a8b02cc49 rdf:reifies <<( doc:FactsOrgVnuUniversityOfSciences schema1:address "Nguyen Trai Street, Ha Dong District, Hanoi, Vietnam" )>> ;
+	prov:wasDerivedFrom doc:3f89433eec8a .
+doc:Factsdataset_Desalination_2015_2020 schema1:temporalCoverage "2015-2020" .
+_:f4109acd734409a4671003f3f26cae89 rdf:reifies <<( doc:Factsdataset_Desalination_2015_2020 schema1:temporalCoverage "2015-2020" )>> ;
+	prov:wasDerivedFrom doc:3f89433eec8a .
+doc:FactsLstmModel rdfs:label "CNN-LSTM comparative model" .
+_:a8f102a777a85dc0f6761546dce2811a rdf:reifies <<( doc:FactsLstmModel rdfs:label "CNN-LSTM comparative model" )>> ;
+	prov:wasDerivedFrom doc:3f89433eec8a .
+doc:Factsdataset_Desalination_2015_2020 cco:describes doc:FactsReverseOsmosisSystem .
+_:fe2e60faefba51abdb1a3505f597a13 rdf:reifies <<( doc:Factsdataset_Desalination_2015_2020 cco:describes doc:FactsReverseOsmosisSystem )>> ;
+	prov:wasDerivedFrom doc:3f89433eec8a .
+doc:FactsPmModule None:has_design_detail doc:FactsDesignDetail1 .
+_:f846be9c22d52a8b151ed8a74fe89745 rdf:reifies <<( doc:FactsPmModule None:has_design_detail doc:FactsDesignDetail1 )>> ;
+	prov:wasDerivedFrom doc:3f89433eec8a .
+doc:FactsPublicationYear2025 schema1:dateAccepted "2025-12-20"^^<http://www.w3.org/2001/XMLSchema#date> .
+_:b60a6958633cc19486abe9547be59815 rdf:reifies <<( doc:FactsPublicationYear2025 schema1:dateAccepted "2025-12-20"^^<http://www.w3.org/2001/XMLSchema#date> )>> ;
+	prov:wasDerivedFrom doc:3f89433eec8a .
+doc:FactsPmModule a None:Predictive_maintenance_system_module .
+_:dc16b2ee621472e9c31c63c28b624af0 rdf:reifies <<( doc:FactsPmModule rdf:type None:Predictive_maintenance_system_module )>> ;
+	prov:wasDerivedFrom doc:3f89433eec8a .
+doc:DescriptiveInformationContentEntity a cco:DescriptiveInformationContentEntity .
+_:af3945ec0b5d65aad44e572e7d4a65ca rdf:reifies <<( doc:DescriptiveInformationContentEntity rdf:type cco:DescriptiveInformationContentEntity )>> ;
+	prov:wasDerivedFrom doc:3f89433eec8a .
+doc:FactsPmModule None:has_predictive_maintenance_function None:Future_state_forecast .
+_:c34e342bdfafdfd50772d8fc48cf8d06 rdf:reifies <<( doc:FactsPmModule None:has_predictive_maintenance_function None:Future_state_forecast )>> ;
+	prov:wasDerivedFrom doc:3f89433eec8a .
+doc:FactsAuthorPhucDo schema1:email "phantheson@hus.edu.vn" .
+_:c5ed91e1493fe426ef506e81fb68e6b6 rdf:reifies <<( doc:FactsAuthorPhucDo schema1:email "phantheson@hus.edu.vn" )>> ;
+	prov:wasDerivedFrom doc:3f89433eec8a .
+doc:FactsDifferentialPressure a None:Data_variable .
+_:a0813926e2139a753f19e2afd23fa302 rdf:reifies <<( doc:FactsDifferentialPressure rdf:type None:Data_variable )>> ;
+	prov:wasDerivedFrom doc:3f89433eec8a .
+doc:FactsReverseOsmosisSystem rdfs:label "Reverse Osmosis system" .
+_:cb9fc002bddc2e3f95385390d3febc65 rdf:reifies <<( doc:FactsReverseOsmosisSystem rdfs:label "Reverse Osmosis system" )>> ;
+	prov:wasDerivedFrom doc:3f89433eec8a .
+doc:DescriptiveInformationContentEntity None:has_text_value "Degradation forecasting; Reverse osmosis system; Deep learning; Filters" .
+_:e6df50ad1a42e1d47aa950b50dee1edc rdf:reifies <<( doc:DescriptiveInformationContentEntity None:has_text_value "Degradation forecasting; Reverse osmosis system; Deep learning; Filters" )>> ;
+	prov:wasDerivedFrom doc:3f89433eec8a .
+doc:FactsLstmModel rdfs:label "LSTM comparative model" .
+_:fd37bec1fba987f3adf95b74160c7610 rdf:reifies <<( doc:FactsLstmModel rdfs:label "LSTM comparative model" )>> ;
+	prov:wasDerivedFrom doc:3f89433eec8a .
+doc:FactsAuthorPhucDo schema1:givenName "Phuc" .
+_:d1b4ce46a1aabd929cbffbf97be4bfe4 rdf:reifies <<( doc:FactsAuthorPhucDo schema1:givenName "Phuc" )>> ;
+	prov:wasDerivedFrom doc:3f89433eec8a .
+doc:FactsModelConfig1_3 None:has_text_value "Configuration: temporal convolutional operations to capture dynamic pressure behavior at both ends of the membrane; preprocessing reveals relationships between operating time and pressure dynamics" .
+_:dcf597ac025c2b6d47b60822c9e68f6e rdf:reifies <<( doc:FactsModelConfig1_3 None:has_text_value "Configuration: temporal convolutional operations to capture dynamic pressure behavior at both ends of the membrane; preprocessing reveals relationships between operating time and pressure dynamics" )>> ;
+	prov:wasDerivedFrom doc:3f89433eec8a .
+doc:FactsTcnModel a cco:Algorithm .
+_:b9b10881b55442ae984fb3b47b649a4 rdf:reifies <<( doc:FactsTcnModel rdf:type cco:Algorithm )>> ;
+	prov:wasDerivedFrom doc:3f89433eec8a .
+doc:Factsdataset_Desalination_2015_2020 a None:maintainable_item_record .
+_:de29d2f60328d5e01bdbf73d1b7eeeaa rdf:reifies <<( doc:Factsdataset_Desalination_2015_2020 rdf:type None:maintainable_item_record )>> ;
+	prov:wasDerivedFrom doc:3f89433eec8a .
+doc:FactsPublicationYear2025 schema1:dateReceived "2025-07-22"^^<http://www.w3.org/2001/XMLSchema#date> .
+_:f88aa5ca7fd87ce5d8384bbab5202e5c rdf:reifies <<( doc:FactsPublicationYear2025 schema1:dateReceived "2025-07-22"^^<http://www.w3.org/2001/XMLSchema#date> )>> ;
+	prov:wasDerivedFrom doc:3f89433eec8a .
+doc:FactsModelConfig1_3 None:describes_configuration doc:FactsTcnModel .
+_:e5e705ac09fdabf12d4fedc3c6135867 rdf:reifies <<( doc:FactsModelConfig1_3 None:describes_configuration doc:FactsTcnModel )>> ;
+	prov:wasDerivedFrom doc:3f89433eec8a .
+doc:FactsOrgVnuUniversityOfSciences schema1:address "334 Nguyen Trai Street, Thanh Xuan District, Hanoi, Vietnam" .
+_:fff926ebd06840872f781dbbdf79633d rdf:reifies <<( doc:FactsOrgVnuUniversityOfSciences schema1:address "334 Nguyen Trai Street, Thanh Xuan District, Hanoi, Vietnam" )>> ;
+	prov:wasDerivedFrom doc:3f89433eec8a .
+doc:FactsDesignDetail1 a None:Design_detail .
+_:e868e019e9b8cb69ad3bc1255806d4ec rdf:reifies <<( doc:FactsDesignDetail1 rdf:type None:Design_detail )>> ;
+	prov:wasDerivedFrom doc:3f89433eec8a .
+doc:FactsAuthorPhucDo schema1:affiliation doc:FactsOrgSyCoIaImtMinesAles .
+_:e037f3df8569835db0f63e589c1bcb4c rdf:reifies <<( doc:FactsAuthorPhucDo schema1:affiliation doc:FactsOrgSyCoIaImtMinesAles )>> ;
+	prov:wasDerivedFrom doc:3f89433eec8a .
+doc:FactsReverseOsmosisSystem a None:Maintainable_item .
+_:fcaf06899e4f04c3b067e723cfccebc5 rdf:reifies <<( doc:FactsReverseOsmosisSystem rdf:type None:Maintainable_item )>> ;
+	prov:wasDerivedFrom doc:3f89433eec8a .
+doc:FactsArticleTitle1_2 a None:Article_title .
+_:b5e408f010903dde0e7bd661d2555b70 rdf:reifies <<( doc:FactsArticleTitle1_2 rdf:type None:Article_title )>> ;
+	prov:wasDerivedFrom doc:3f89433eec8a .
+doc:FactsAuthorPhucDo schema1:email "phuc.do@mines-ales.fr" .
+_:de5f481b0eb5565746dade7cbe22100d rdf:reifies <<( doc:FactsAuthorPhucDo schema1:email "phuc.do@mines-ales.fr" )>> ;
+	prov:wasDerivedFrom doc:3f89433eec8a .
+doc:FactsOrgSyCoIaImtMinesAles a schema1:Organization .
+_:b3b9c58241a3a5394f284017e79a5142 rdf:reifies <<( doc:FactsOrgSyCoIaImtMinesAles rdf:type schema1:Organization )>> ;
+	prov:wasDerivedFrom doc:3f89433eec8a .
+doc:FactsModelConfig1_3 a None:Model_configuration .
+_:dcd5d860fb8e48e01dffb666b98f93f2 rdf:reifies <<( doc:FactsModelConfig1_3 rdf:type None:Model_configuration )>> ;
+	prov:wasDerivedFrom doc:3f89433eec8a .
+doc:FactsPublicationYear2025 None:has_interger_value 2025 .
+_:bc85ecf9a6aceab4ceb68a6264aef182 rdf:reifies <<( doc:FactsPublicationYear2025 None:has_interger_value 2025 )>> ;
+	prov:wasDerivedFrom doc:3f89433eec8a .
+doc:FactsDesignDetail1 None:has_text_value "Degradation prediction of RO using TCN with differential pressure as primary indicator; evaluated against LSTM, CNN-LSTM, and GRU; dataset includes routine operations, maintenance events, shutdowns, and element replacements" .
+_:cbada972d70c12b0a37bd8e911c1e17a rdf:reifies <<( doc:FactsDesignDetail1 None:has_text_value "Degradation prediction of RO using TCN with differential pressure as primary indicator; evaluated against LSTM, CNN-LSTM, and GRU; dataset includes routine operations, maintenance events, shutdowns, and element replacements" )>> ;
+	prov:wasDerivedFrom doc:3f89433eec8a .
+doc:FactsAuthorPhucDo schema1:givenName "Thanh-Ha" .
+_:d7fe482b4301cd53b985f509f9c1206b rdf:reifies <<( doc:FactsAuthorPhucDo schema1:givenName "Thanh-Ha" )>> ;
+	prov:wasDerivedFrom doc:3f89433eec8a .
+doc:FactsPublicationYear2025 None:has_publication_year doc:FactsPublicationYear2025 .
+_:f7f865d14439ca804a93f6059a94d8f1 rdf:reifies <<( doc:FactsPublicationYear2025 None:has_publication_year doc:FactsPublicationYear2025 )>> ;
+	prov:wasDerivedFrom doc:3f89433eec8a .
+doc:FactsPublicationYear2025 a None:Publication_year .
+_:f0823001464735e9ded50c14099a778c rdf:reifies <<( doc:FactsPublicationYear2025 rdf:type None:Publication_year )>> ;
+	prov:wasDerivedFrom doc:3f89433eec8a .
+doc:FactsTcnModel rdfs:seeAlso doc:FactsGruModel .
+_:d9705849ae6199eac79e6463d15e83c4 rdf:reifies <<( doc:FactsTcnModel rdfs:seeAlso doc:FactsGruModel )>> ;
+	prov:wasDerivedFrom doc:3f89433eec8a .
+doc:472054aecfc0 a prov:Entity , schema:text ;
+	prov:generatedAtTime "2026-07-11T03:52:50.198435Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+	schema:position 1 ;
+	schema:identifier "472054aecfc0" .
+_:d20a129587bc5753bb723157e73cf75e prov:wasDerivedFrom doc:472054aecfc0 .
+_:f7f865d14439ca804a93f6059a94d8f1 prov:wasDerivedFrom doc:472054aecfc0 .
+_:b5e408f010903dde0e7bd661d2555b70 prov:wasDerivedFrom doc:472054aecfc0 .
+doc:FactsModelConfig1_3 rdfs:label "physical-based model" .
+_:c11e8c4f2c31c521e790ef23f58b161c rdf:reifies <<( doc:FactsModelConfig1_3 rdfs:label "physical-based model" )>> ;
+	prov:wasDerivedFrom doc:472054aecfc0 .
+doc:FactsflowRate rdfs:label "flow rate" .
+_:ac03a248d0a4abd4ea2d32071294f45f rdf:reifies <<( doc:FactsflowRate rdfs:label "flow rate" )>> ;
+	prov:wasDerivedFrom doc:472054aecfc0 .
+doc:FactsfeedwaterTemperature None:describes doc:FactsMfUnit .
+_:d4fd6eb1823463eecd774bd43b2a09bb rdf:reifies <<( doc:FactsfeedwaterTemperature None:describes doc:FactsMfUnit )>> ;
+	prov:wasDerivedFrom doc:472054aecfc0 .
+doc:FactsModelConfig1_3 cco:is_about doc:FactsMfUnit .
+_:e95849b6667f3ee2db658894f35c90a5 rdf:reifies <<( doc:FactsModelConfig1_3 cco:is_about doc:FactsMfUnit )>> ;
+	prov:wasDerivedFrom doc:472054aecfc0 .
+doc:FactstimeSeriesForecasting cco:is_about doc:FactsMfUnit .
+_:c0a1f8ccb47e8b546f17f2766d76478 rdf:reifies <<( doc:FactstimeSeriesForecasting cco:is_about doc:FactsMfUnit )>> ;
+	prov:wasDerivedFrom doc:472054aecfc0 .
+doc:FactsfaultClassificationMethod cco:is_about doc:FactsMfUnit .
+_:bf82c4ad6a0eb7eb3984327d9d43d059 rdf:reifies <<( doc:FactsfaultClassificationMethod cco:is_about doc:FactsMfUnit )>> ;
+	prov:wasDerivedFrom doc:472054aecfc0 .
+doc:FactsReinforcementLearning a cco:Algorithm .
+_:ac90636c9bee20f5de567dba18a861d4 rdf:reifies <<( doc:FactsReinforcementLearning rdf:type cco:Algorithm )>> ;
+	prov:wasDerivedFrom doc:472054aecfc0 .
+doc:FactsArticleTitle1_2 None:has_text_value "Soleimanzade et al., 2022" .
+_:d8b0a178b28360a7542ab2259de1250 rdf:reifies <<( doc:FactsArticleTitle1_2 None:has_text_value "Soleimanzade et al., 2022" )>> ;
+	prov:wasDerivedFrom doc:472054aecfc0 .
+doc:FactsArticleTitle1_2 None:has_text_value "Zhou & Paffenroth, 2017" .
+_:eb0286a71e14ec828ea29e22787ba7b9 rdf:reifies <<( doc:FactsArticleTitle1_2 None:has_text_value "Zhou & Paffenroth, 2017" )>> ;
+	prov:wasDerivedFrom doc:472054aecfc0 .
+doc:FactstimeSeriesForecasting a None:Regression .
+_:b1dabd7f037d25ed6d174edbe898385d rdf:reifies <<( doc:FactstimeSeriesForecasting rdf:type None:Regression )>> ;
+	prov:wasDerivedFrom doc:472054aecfc0 .
+doc:FactsArticleTitle1_2 None:has_text_value "Masum et al., 2018" .
+_:c80b6c6f40a19d013ef83056b3864cf8 rdf:reifies <<( doc:FactsArticleTitle1_2 None:has_text_value "Masum et al., 2018" )>> ;
+	prov:wasDerivedFrom doc:472054aecfc0 .
+_:cdeff4c6d17b00743c8e6e619da3366 prov:wasDerivedFrom doc:472054aecfc0 .
+doc:FactstimeSeriesForecasting rdfs:label "time-series forecasting" .
+_:ffd766224d4b764bf01255c04976af80 rdf:reifies <<( doc:FactstimeSeriesForecasting rdfs:label "time-series forecasting" )>> ;
+	prov:wasDerivedFrom doc:472054aecfc0 .
+doc:FactsPublicationYear2025 None:has_interger_value 2009 .
+_:f67c616f37ed8f100c8e6b0516dc454 rdf:reifies <<( doc:FactsPublicationYear2025 None:has_interger_value 2009 )>> ;
+	prov:wasDerivedFrom doc:472054aecfc0 .
+doc:FactsfaultDetection rdfs:label "fault detection function" .
+_:e9614ab774dbcf74d251c570e761ab19 rdf:reifies <<( doc:FactsfaultDetection rdfs:label "fault detection function" )>> ;
+	prov:wasDerivedFrom doc:472054aecfc0 .
+doc:FactsReinforcementLearning cco:is_about doc:FactsMfUnit .
+_:de0cade3c1852bc8be935b5e9e2850e9 rdf:reifies <<( doc:FactsReinforcementLearning cco:is_about doc:FactsMfUnit )>> ;
+	prov:wasDerivedFrom doc:472054aecfc0 .
+_:f0823001464735e9ded50c14099a778c prov:wasDerivedFrom doc:472054aecfc0 .
+doc:FactsPublicationYear2025 None:has_interger_value 2022 .
+_:ab05bbe6416f5516de9be4af8f161c8e rdf:reifies <<( doc:FactsPublicationYear2025 None:has_interger_value 2022 )>> ;
+	prov:wasDerivedFrom doc:472054aecfc0 .
+doc:FactsMfUnit rdfs:label "RO system" .
+_:c46f161fb9383606fb302cf5b964edf8 rdf:reifies <<( doc:FactsMfUnit rdfs:label "RO system" )>> ;
+	prov:wasDerivedFrom doc:472054aecfc0 .
+doc:FactsflowRate a None:Data_variable .
+_:ad607e55c053e2dc64939509f50005c0 rdf:reifies <<( doc:FactsflowRate rdf:type None:Data_variable )>> ;
+	prov:wasDerivedFrom doc:472054aecfc0 .
+doc:FactsArticleTitle1_2 None:has_text_value "Lim et al., 2019" .
+_:d50780dbf1b6106958eb78655c4de1bd rdf:reifies <<( doc:FactsArticleTitle1_2 None:has_text_value "Lim et al., 2019" )>> ;
+	prov:wasDerivedFrom doc:472054aecfc0 .
+doc:FactsfaultClassificationMethod rdfs:label "fault classification (supervised learning)" .
+_:eaa5b241f5bc8b26e83e39847019f510 rdf:reifies <<( doc:FactsfaultClassificationMethod rdfs:label "fault classification (supervised learning)" )>> ;
+	prov:wasDerivedFrom doc:472054aecfc0 .
+doc:FactsMfUnit a None:Maintainable_item .
+_:e23d4f733237b036d406c8c5f48618bb rdf:reifies <<( doc:FactsMfUnit rdf:type None:Maintainable_item )>> ;
+	prov:wasDerivedFrom doc:472054aecfc0 .
+doc:FactsReinforcementLearning rdfs:label "Q-learning (reinforcement learning)" .
+_:b78fa6c25b3da49f431bfb6b0ba07436 rdf:reifies <<( doc:FactsReinforcementLearning rdfs:label "Q-learning (reinforcement learning)" )>> ;
+	prov:wasDerivedFrom doc:472054aecfc0 .
+doc:FactsPublicationYear2025 None:has_interger_value 2019 .
+_:ee5dd501d25859e0f27b057f7f1c2905 rdf:reifies <<( doc:FactsPublicationYear2025 None:has_interger_value 2019 )>> ;
+	prov:wasDerivedFrom doc:472054aecfc0 .
+_:e868e019e9b8cb69ad3bc1255806d4ec prov:wasDerivedFrom doc:472054aecfc0 .
+doc:FactsautoencoderBasedModel a None:Deviation_detection .
+_:c0d8f79faf5b7cbe2ddc6807495a422c rdf:reifies <<( doc:FactsautoencoderBasedModel rdf:type None:Deviation_detection )>> ;
+	prov:wasDerivedFrom doc:472054aecfc0 .
+doc:FactsflowRate None:describes doc:FactsMfUnit .
+_:da7a6b4c430279d2ffbd87a8a7fb52c8 rdf:reifies <<( doc:FactsflowRate None:describes doc:FactsMfUnit )>> ;
+	prov:wasDerivedFrom doc:472054aecfc0 .
+doc:FactsfeedwaterTemperature a None:Data_variable .
+_:c81c3ab52747ccf6faa19532b734d26 rdf:reifies <<( doc:FactsfeedwaterTemperature rdf:type None:Data_variable )>> ;
+	prov:wasDerivedFrom doc:472054aecfc0 .
+doc:FactsfaultClassificationMethod a None:Classification .
+_:c2ffe11ec2083f783f437db30c21a540 rdf:reifies <<( doc:FactsfaultClassificationMethod rdf:type None:Classification )>> ;
+	prov:wasDerivedFrom doc:472054aecfc0 .
+doc:FactsModelConfig1_3 rdfs:label "hybrid model (physical + data-driven)" .
+_:e81d6f883b07ee9edf4ecda9c9261103 rdf:reifies <<( doc:FactsModelConfig1_3 rdfs:label "hybrid model (physical + data-driven)" )>> ;
+	prov:wasDerivedFrom doc:472054aecfc0 .
+doc:FactsModelConfig1_3 rdfs:label "data-driven (machine learning) model" .
+_:a21ee1cceaf67924f2d71de0febc4adb rdf:reifies <<( doc:FactsModelConfig1_3 rdfs:label "data-driven (machine learning) model" )>> ;
+	prov:wasDerivedFrom doc:472054aecfc0 .
+doc:FactsModelConfig1_3 a None:Predictive_maintenance_model .
+_:f76e592e6131dfea70fbaa635fcedd6 rdf:reifies <<( doc:FactsModelConfig1_3 rdf:type None:Predictive_maintenance_model )>> ;
+	prov:wasDerivedFrom doc:472054aecfc0 .
+doc:FactsmembranePressure None:describes doc:FactsMfUnit .
+_:a2a0bb328a840270f6981e463acf7ce4 rdf:reifies <<( doc:FactsmembranePressure None:describes doc:FactsMfUnit )>> ;
+	prov:wasDerivedFrom doc:472054aecfc0 .
+doc:FactsArticleTitle1_2 None:has_text_value "Guo et al., 2020" .
+_:fc0639309a0016dc5ccd7c29665890b3 rdf:reifies <<( doc:FactsArticleTitle1_2 None:has_text_value "Guo et al., 2020" )>> ;
+	prov:wasDerivedFrom doc:472054aecfc0 .
+doc:FactsPublicationYear2025 None:has_interger_value 2017 .
+_:f9b2268c916d91bf8dbd9d8c088ee12e rdf:reifies <<( doc:FactsPublicationYear2025 None:has_interger_value 2017 )>> ;
+	prov:wasDerivedFrom doc:472054aecfc0 .
+doc:FactsModelConfig1_3 rdfs:label "hybrid model configuration" .
+_:b5283b0017a16891b287440fb3686cb rdf:reifies <<( doc:FactsModelConfig1_3 rdfs:label "hybrid model configuration" )>> ;
+	prov:wasDerivedFrom doc:472054aecfc0 .
+doc:FactsDesignDetail1 None:has_text_value "sensors monitor differential pressure, flow rate, feedwater temperature and membrane pressure" .
+_:fbc091b5ab58756910e006903c3d7cfe rdf:reifies <<( doc:FactsDesignDetail1 None:has_text_value "sensors monitor differential pressure, flow rate, feedwater temperature and membrane pressure" )>> ;
+	prov:wasDerivedFrom doc:472054aecfc0 .
+doc:FactsautoencoderBasedModel rdfs:label "autoencoder-based anomaly detection" .
+_:c8d105b4858668fb2e588d5391b18430 rdf:reifies <<( doc:FactsautoencoderBasedModel rdfs:label "autoencoder-based anomaly detection" )>> ;
+	prov:wasDerivedFrom doc:472054aecfc0 .
+doc:FactsautoencoderBasedModel cco:is_about doc:FactsMfUnit .
+_:ef88c7e37c91a3c9fe82efc075d371f4 rdf:reifies <<( doc:FactsautoencoderBasedModel cco:is_about doc:FactsMfUnit )>> ;
+	prov:wasDerivedFrom doc:472054aecfc0 .
+doc:FactsfaultDetection a None:Fault_detection .
+_:f935f399c77eb2fa6a3d81ff58fdb904 rdf:reifies <<( doc:FactsfaultDetection rdf:type None:Fault_detection )>> ;
+	prov:wasDerivedFrom doc:472054aecfc0 .
+doc:FactsPublicationYear2025 None:has_interger_value 2018 .
+_:cdc89777c7100dcf5d36015d5c3b4953 rdf:reifies <<( doc:FactsPublicationYear2025 None:has_interger_value 2018 )>> ;
+	prov:wasDerivedFrom doc:472054aecfc0 .
+doc:FactsPublicationYear2025 None:has_interger_value 2020 .
+_:acee3d695940cbedc43a7fe9e738e4de rdf:reifies <<( doc:FactsPublicationYear2025 None:has_interger_value 2020 )>> ;
+	prov:wasDerivedFrom doc:472054aecfc0 .
+doc:FactsonlineSync None:has_text_value "online" .
+_:dd3ce507356f1b90602dd3bd19957667 rdf:reifies <<( doc:FactsonlineSync None:has_text_value "online" )>> ;
+	prov:wasDerivedFrom doc:472054aecfc0 .
+doc:FactsReinforcementLearning rdfs:label "Deep Q Network (DQN)" .
+_:f539dd0e11866aa52579c25334b26cfb rdf:reifies <<( doc:FactsReinforcementLearning rdfs:label "Deep Q Network (DQN)" )>> ;
+	prov:wasDerivedFrom doc:472054aecfc0 .
+doc:FactsArticleTitle1_2 None:has_text_value "Inoue et al., 2017" .
+_:af3b7f4065832b0b8936c4f885a63e98 rdf:reifies <<( doc:FactsArticleTitle1_2 None:has_text_value "Inoue et al., 2017" )>> ;
+	prov:wasDerivedFrom doc:472054aecfc0 .
+doc:FactssensorNetwork None:has_design_detail doc:FactsDesignDetail1 .
+_:ad955d47c4e6cde33ad25a532f5bc9c0 rdf:reifies <<( doc:FactssensorNetwork None:has_design_detail doc:FactsDesignDetail1 )>> ;
+	prov:wasDerivedFrom doc:472054aecfc0 .
+doc:FactssensorNetwork rdfs:label "sensor network / IoT for RO monitoring" .
+_:d2090032c1b4f8a21c45b2e7f8437695 rdf:reifies <<( doc:FactssensorNetwork rdfs:label "sensor network / IoT for RO monitoring" )>> ;
+	prov:wasDerivedFrom doc:472054aecfc0 .
+doc:FactshybridModelBenefit a None:Performance_value .
+_:ec2be18375c35724246389f4214230e2 rdf:reifies <<( doc:FactshybridModelBenefit rdf:type None:Performance_value )>> ;
+	prov:wasDerivedFrom doc:472054aecfc0 .
+doc:FactsArticleTitle1_2 None:has_text_value "Wreyford et al., 2020" .
+_:c6716fcb8ec16aace5713fad2531f092 rdf:reifies <<( doc:FactsArticleTitle1_2 None:has_text_value "Wreyford et al., 2020" )>> ;
+	prov:wasDerivedFrom doc:472054aecfc0 .
+doc:FactssensorNetwork a None:Predictive_maintenance_system_module .
+_:f0725153426efb6dbf5e209bb5961a80 rdf:reifies <<( doc:FactssensorNetwork rdf:type None:Predictive_maintenance_system_module )>> ;
+	prov:wasDerivedFrom doc:472054aecfc0 .
+doc:FactsfaultDetection cco:is_about doc:FactsMfUnit .
+_:eeef51ebf9c133b912e8e19fef58e34e rdf:reifies <<( doc:FactsfaultDetection cco:is_about doc:FactsMfUnit )>> ;
+	prov:wasDerivedFrom doc:472054aecfc0 .
+doc:FactssensorNetwork None:has_synchronization doc:FactsonlineSync .
+_:dcfac65ebe58b4c115bffcc57b0d88e2 rdf:reifies <<( doc:FactssensorNetwork None:has_synchronization doc:FactsonlineSync )>> ;
+	prov:wasDerivedFrom doc:472054aecfc0 .
+doc:FactsArticleTitle1_2 None:has_text_value "Bonny et al., 2022" .
+_:bbeae2f1fc2b06d8f81b8b71b14c07cd rdf:reifies <<( doc:FactsArticleTitle1_2 None:has_text_value "Bonny et al., 2022" )>> ;
+	prov:wasDerivedFrom doc:472054aecfc0 .
+doc:FactsArticleTitle1_2 None:has_text_value "Ahmad et al., 2020" .
+_:fec5f4731cfae90da7c3d97f06383479 rdf:reifies <<( doc:FactsArticleTitle1_2 None:has_text_value "Ahmad et al., 2020" )>> ;
+	prov:wasDerivedFrom doc:472054aecfc0 .
+doc:FactsModelConfig1_3 None:describes_configuration doc:FactsModelConfig1_3 .
+_:d242f3c6a3323a19e30eec1dc2e946e5 rdf:reifies <<( doc:FactsModelConfig1_3 None:describes_configuration doc:FactsModelConfig1_3 )>> ;
+	prov:wasDerivedFrom doc:472054aecfc0 .
+doc:FactsmembranePressure rdfs:label "membrane pressure" .
+_:e91a22423a82e0e954f2590c7db1da55 rdf:reifies <<( doc:FactsmembranePressure rdfs:label "membrane pressure" )>> ;
+	prov:wasDerivedFrom doc:472054aecfc0 .
+doc:FactsfeedwaterTemperature rdfs:label "feedwater temperature" .
+_:a1e3c33f65cc8f66a69acc38c49a4841 rdf:reifies <<( doc:FactsfeedwaterTemperature rdfs:label "feedwater temperature" )>> ;
+	prov:wasDerivedFrom doc:472054aecfc0 .
+doc:FactsmembranePressure a None:Data_variable .
+_:f66b8da99add6f8e2604bf33ec9bb5d1 rdf:reifies <<( doc:FactsmembranePressure rdf:type None:Data_variable )>> ;
+	prov:wasDerivedFrom doc:472054aecfc0 .
+doc:FactsonlineSync a None:Module_synchronization .
+_:dbebb88dfb5ad8f507effbd957258ce rdf:reifies <<( doc:FactsonlineSync rdf:type None:Module_synchronization )>> ;
+	prov:wasDerivedFrom doc:472054aecfc0 .
+doc:FactshybridModelBenefit None:has_text_value "integrates noisy sparse data with physical laws to improve prediction accuracy" .
+_:c5a0260fa8eb33ede8d9d5cc930b6c24 rdf:reifies <<( doc:FactshybridModelBenefit None:has_text_value "integrates noisy sparse data with physical laws to improve prediction accuracy" )>> ;
+	prov:wasDerivedFrom doc:472054aecfc0 .
+doc:FactsArticleTitle1_2 None:has_text_value "Chandola et al., 2009" .
+_:e76a3cd7ca48e17246aac90bcc31e549 rdf:reifies <<( doc:FactsArticleTitle1_2 None:has_text_value "Chandola et al., 2009" )>> ;
+	prov:wasDerivedFrom doc:472054aecfc0 .
+doc:FactsModelConfig1_3 rdfs:label "experience-based model" .
+_:f164df46bbb423fef678ffc4cc99937f rdf:reifies <<( doc:FactsModelConfig1_3 rdfs:label "experience-based model" )>> ;
+	prov:wasDerivedFrom doc:472054aecfc0 .
+_:dcd5d860fb8e48e01dffb666b98f93f2 prov:wasDerivedFrom doc:472054aecfc0 .
+doc:4327eeba634c a prov:Entity , schema:text ;
+	prov:generatedAtTime "2026-07-11T03:52:50.204441Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+	schema:position 2 ;
+	schema:identifier "4327eeba634c" .
+doc:FactsGnn_1 cd:has_design_detail doc:FactsparallelizationCapability .
+_:e44925b6f53d1fe218f667dafb8117c7 rdf:reifies <<( doc:FactsGnn_1 cd:has_design_detail doc:FactsparallelizationCapability )>> ;
+	prov:wasDerivedFrom doc:4327eeba634c .
+_:f7f865d14439ca804a93f6059a94d8f1 prov:wasDerivedFrom doc:4327eeba634c .
+doc:FactsGnn_1 cco:is_about doc:FactsMfUnit .
+_:b0f8f9fd65db6bbb35bd17040b86bdc0 rdf:reifies <<( doc:FactsGnn_1 cco:is_about doc:FactsMfUnit )>> ;
+	prov:wasDerivedFrom doc:4327eeba634c .
+doc:FactsPerfNiuAnnRo a None:Performance_value .
+_:bd984108f0381db6308ffe961f4b86ab rdf:reifies <<( doc:FactsPerfNiuAnnRo rdf:type None:Performance_value )>> ;
+	prov:wasDerivedFrom doc:4327eeba634c .
+_:ab05bbe6416f5516de9be4af8f161c8e prov:wasDerivedFrom doc:4327eeba634c .
+doc:FactsGnn_1 a cco:Algorithm .
+_:a761c40623f3e3d0b00da2e0a8e64170 rdf:reifies <<( doc:FactsGnn_1 rdf:type cco:Algorithm )>> ;
+	prov:wasDerivedFrom doc:4327eeba634c .
+doc:FactsPublicationYear2025 None:describes doc:FactsGnn_1 .
+_:e3d7ada8d9a3caafcdb7adc440064f8e rdf:reifies <<( doc:FactsPublicationYear2025 None:describes doc:FactsGnn_1 )>> ;
+	prov:wasDerivedFrom doc:4327eeba634c .
+_:cdeff4c6d17b00743c8e6e619da3366 prov:wasDerivedFrom doc:4327eeba634c .
+doc:FactsPublicationYear2025 doc:factsreportsPerformance doc:FactsPerfNiuAnnRo .
+_:b9359907799152b8aa1b11bc7c9147db rdf:reifies <<( doc:FactsPublicationYear2025 doc:factsreportsPerformance doc:FactsPerfNiuAnnRo )>> ;
+	prov:wasDerivedFrom doc:4327eeba634c .
+doc:FactsGnn_1 cd:describes_type doc:FactsparallelizationCapability .
+_:baa79f616f6d6e0afaa318a39b66d4de rdf:reifies <<( doc:FactsGnn_1 cd:describes_type doc:FactsparallelizationCapability )>> ;
+	prov:wasDerivedFrom doc:4327eeba634c .
+doc:factscomparedTo rdfs:label "superior to" .
+_:d3888a1dfd9037d65c5734e33e471cb4 rdf:reifies <<( doc:factscomparedTo rdfs:label "superior to" )>> ;
+	prov:wasDerivedFrom doc:4327eeba634c .
+doc:FactsPerfNiuAnnRo None:describes doc:FactsPermeateFlowRate .
+_:eb75b1da91640220fe19df3c2667d03e rdf:reifies <<( doc:FactsPerfNiuAnnRo None:describes doc:FactsPermeateFlowRate )>> ;
+	prov:wasDerivedFrom doc:4327eeba634c .
+doc:factshasDecimalValue_2 a rdf:Property .
+_:aff2ae392dbc4ddd02df26c7ea129a16 rdf:reifies <<( doc:factshasDecimalValue_2 rdf:type rdf:Property )>> ;
+	prov:wasDerivedFrom doc:4327eeba634c .
+doc:FactsparallelizationCapability a obo:BFO_0000019 .
+_:d86d25547f3ecc8f4610baa2550e242e rdf:reifies <<( doc:FactsparallelizationCapability rdf:type obo:BFO_0000019 )>> ;
+	prov:wasDerivedFrom doc:4327eeba634c .
+_:e23d4f733237b036d406c8c5f48618bb prov:wasDerivedFrom doc:4327eeba634c .
+doc:DescriptiveInformationContentEntity None:describes doc:FactsGnn_1 .
+_:f0c29a48a5389081989e5f7084aa2552 rdf:reifies <<( doc:DescriptiveInformationContentEntity None:describes doc:FactsGnn_1 )>> ;
+	prov:wasDerivedFrom doc:4327eeba634c .
+doc:FactsGnn_1 doc:factscomparedTo doc:FactsGnn_1 .
+_:cf00fb680e9aec033ccf624ab707c908 rdf:reifies <<( doc:FactsGnn_1 doc:factscomparedTo doc:FactsGnn_1 )>> ;
+	prov:wasDerivedFrom doc:4327eeba634c .
+_:f0823001464735e9ded50c14099a778c prov:wasDerivedFrom doc:4327eeba634c .
+doc:FactsPerfNiuAnnRo None:has_text_value "R2 between 0.85 and 0.99" .
+_:a9a63eabed7a6934d4062c0f7d0dab29 rdf:reifies <<( doc:FactsPerfNiuAnnRo None:has_text_value "R2 between 0.85 and 0.99" )>> ;
+	prov:wasDerivedFrom doc:4327eeba634c .
+doc:FactsPublicationYear2025 None:has_interger_value 2010 .
+_:a557d3cb398e0400bd1388db0c7a96a3 rdf:reifies <<( doc:FactsPublicationYear2025 None:has_interger_value 2010 )>> ;
+	prov:wasDerivedFrom doc:4327eeba634c .
+doc:FactsGnn_1 None:describes doc:FactsFoulingRate .
+_:e8cf66679d47ef9fea845fb79e761b19 rdf:reifies <<( doc:FactsGnn_1 None:describes doc:FactsFoulingRate )>> ;
+	prov:wasDerivedFrom doc:4327eeba634c .
+doc:FactsPerfNiuAnnRo doc:factshasDecimalValue_2 0.94 .
+_:d3dc3133eb472eca320ef0e71395d8d9 rdf:reifies <<( doc:FactsPerfNiuAnnRo doc:factshasDecimalValue_2 0.94 )>> ;
+	prov:wasDerivedFrom doc:4327eeba634c .
+doc:FactsPublicationYear2025 None:has_interger_value 2021 .
+_:f418158658de5df91b7fd5cd9709d196 rdf:reifies <<( doc:FactsPublicationYear2025 None:has_interger_value 2021 )>> ;
+	prov:wasDerivedFrom doc:4327eeba634c .
+doc:FactsGnn_1 None:describes doc:FactsPermeateFlowRate .
+_:f1346805388d76723142ab5d6f7550b5 rdf:reifies <<( doc:FactsGnn_1 None:describes doc:FactsPermeateFlowRate )>> ;
+	prov:wasDerivedFrom doc:4327eeba634c .
+doc:factsreportsPerformance a rdf:Property .
+_:b037ef5cbbb794a2980cda726075aa74 rdf:reifies <<( doc:factsreportsPerformance rdf:type rdf:Property )>> ;
+	prov:wasDerivedFrom doc:4327eeba634c .
+doc:FactsGnn_1 doc:factsforecasts doc:FactsPressureFluctuation .
+_:f6f60577d31a3f25c93fb3d06d1e6f83 rdf:reifies <<( doc:FactsGnn_1 doc:factsforecasts doc:FactsPressureFluctuation )>> ;
+	prov:wasDerivedFrom doc:4327eeba634c .
+doc:DescriptiveInformationContentEntity None:describes doc:FactsPressureFluctuation .
+_:f59b9e9bff042ce7ed5130ecfcb41586 rdf:reifies <<( doc:DescriptiveInformationContentEntity None:describes doc:FactsPressureFluctuation )>> ;
+	prov:wasDerivedFrom doc:4327eeba634c .
+_:cdc89777c7100dcf5d36015d5c3b4953 prov:wasDerivedFrom doc:4327eeba634c .
+doc:FactsOneDirectionConvolutionalLayer a cco:Algorithm .
+_:bbe37d8422b0bd090917784fe2833d5a rdf:reifies <<( doc:FactsOneDirectionConvolutionalLayer rdf:type cco:Algorithm )>> ;
+	prov:wasDerivedFrom doc:4327eeba634c .
+doc:factshasDecimalValue_2 rdfs:label "has decimal value" .
+_:c1cfeae813758fdfd0db84afb24993aa rdf:reifies <<( doc:factshasDecimalValue_2 rdfs:label "has decimal value" )>> ;
+	prov:wasDerivedFrom doc:4327eeba634c .
+doc:FactsPermeateFlowRate a obo:BFO_0000019 .
+_:f54badb846749eb6e30c7ccd0605ee21 rdf:reifies <<( doc:FactsPermeateFlowRate rdf:type obo:BFO_0000019 )>> ;
+	prov:wasDerivedFrom doc:4327eeba634c .
+doc:FactsGnn_1 None:describes doc:FactsFoulingLayerThickness .
+_:ed5d272d0f5ee9a5b43fe7dc4fd050ea rdf:reifies <<( doc:FactsGnn_1 None:describes doc:FactsFoulingLayerThickness )>> ;
+	prov:wasDerivedFrom doc:4327eeba634c .
+doc:factsreportsPerformance rdfs:label "reports performance value" .
+_:feb77d70a6da920917122639850f4714 rdf:reifies <<( doc:factsreportsPerformance rdfs:label "reports performance value" )>> ;
+	prov:wasDerivedFrom doc:4327eeba634c .
+doc:FactsPerfNiuAnnRo doc:factshasDecimalValue_2 0.92 .
+_:b16dadfd0aca0862e682aea502548d43 rdf:reifies <<( doc:FactsPerfNiuAnnRo doc:factshasDecimalValue_2 0.92 )>> ;
+	prov:wasDerivedFrom doc:4327eeba634c .
+doc:FactsPublicationYear2025 None:has_interger_value 2016 .
+_:dff906519154fbf417c37cfdfa5cab02 rdf:reifies <<( doc:FactsPublicationYear2025 None:has_interger_value 2016 )>> ;
+	prov:wasDerivedFrom doc:4327eeba634c .
+doc:DescriptiveInformationContentEntity None:describes doc:FactsReinforcementLearning .
+_:d9c421e9f0d4e162f2f104c147458132 rdf:reifies <<( doc:DescriptiveInformationContentEntity None:describes doc:FactsReinforcementLearning )>> ;
+	prov:wasDerivedFrom doc:4327eeba634c .
+doc:FactsPerfNiuAnnRo None:has_text_value "R2 > 0.97" .
+_:f76f2ffe912b75554f6e63fad295944f rdf:reifies <<( doc:FactsPerfNiuAnnRo None:has_text_value "R2 > 0.97" )>> ;
+	prov:wasDerivedFrom doc:4327eeba634c .
+doc:FactsPerfNiuAnnRo None:describes doc:FactsPermeability .
+_:f05303cbaebb1c43853395491b137955 rdf:reifies <<( doc:FactsPerfNiuAnnRo None:describes doc:FactsPermeability )>> ;
+	prov:wasDerivedFrom doc:4327eeba634c .
+doc:FactsPerfNiuAnnRo None:describes doc:FactsFoulingLayerThickness .
+_:b96f65bd2845cc1dc3ae22f0e45020fc rdf:reifies <<( doc:FactsPerfNiuAnnRo None:describes doc:FactsFoulingLayerThickness )>> ;
+	prov:wasDerivedFrom doc:4327eeba634c .
+doc:factsforecasts rdfs:label "forecasts" .
+_:bd16d1c30abf9eccff2ff5a2fe390941 rdf:reifies <<( doc:factsforecasts rdfs:label "forecasts" )>> ;
+	prov:wasDerivedFrom doc:4327eeba634c .
+_:ee5dd501d25859e0f27b057f7f1c2905 prov:wasDerivedFrom doc:4327eeba634c .
+doc:FactsPerfNiuAnnRo doc:factshasDecimalValue_2 0.9982 .
+_:f80d742c3311a311b3ee632eef4039d0 rdf:reifies <<( doc:FactsPerfNiuAnnRo doc:factshasDecimalValue_2 0.9982 )>> ;
+	prov:wasDerivedFrom doc:4327eeba634c .
+doc:factscomparedTo a rdf:Property .
+_:eb99a5af9dbc38104b71ec4b1fa431ea rdf:reifies <<( doc:factscomparedTo rdf:type rdf:Property )>> ;
+	prov:wasDerivedFrom doc:4327eeba634c .
+_:af3945ec0b5d65aad44e572e7d4a65ca prov:wasDerivedFrom doc:4327eeba634c .
+doc:FactsFoulingRate a obo:BFO_0000019 .
+_:c2e3a996cf6321200dc659302fc2fe08 rdf:reifies <<( doc:FactsFoulingRate rdf:type obo:BFO_0000019 )>> ;
+	prov:wasDerivedFrom doc:4327eeba634c .
+doc:FactsPerfNiuAnnRo doc:factshasDecimalValue_2 0.9987 .
+_:dc0b56ad457f61b800ccf35a56acb15f rdf:reifies <<( doc:FactsPerfNiuAnnRo doc:factshasDecimalValue_2 0.9987 )>> ;
+	prov:wasDerivedFrom doc:4327eeba634c .
+doc:factscomparedTo rdfs:label "compared to" .
+_:bcfcf4b2c11f1c38ef22d0d1552acd62 rdf:reifies <<( doc:factscomparedTo rdfs:label "compared to" )>> ;
+	prov:wasDerivedFrom doc:4327eeba634c .
+doc:FactsPermeability a obo:BFO_0000019 .
+_:f423c9ffff38e40245c7f55c8a4a27c2 rdf:reifies <<( doc:FactsPermeability rdf:type obo:BFO_0000019 )>> ;
+	prov:wasDerivedFrom doc:4327eeba634c .
+doc:factsforecasts a rdf:Property .
+_:e8c694a3e3422731527fdcf87caf581 rdf:reifies <<( doc:factsforecasts rdf:type rdf:Property )>> ;
+	prov:wasDerivedFrom doc:4327eeba634c .
+doc:FactsFoulingLayerThickness a obo:BFO_0000019 .
+_:c7e46df9ef53a21da5fd9159c682db23 rdf:reifies <<( doc:FactsFoulingLayerThickness rdf:type obo:BFO_0000019 )>> ;
+	prov:wasDerivedFrom doc:4327eeba634c .
+doc:FactsPerfNiuAnnRo None:describes doc:FactsFoulingRate .
+_:ba129e2b4f1b04c8f7eda41ed5bd6546 rdf:reifies <<( doc:FactsPerfNiuAnnRo None:describes doc:FactsFoulingRate )>> ;
+	prov:wasDerivedFrom doc:4327eeba634c .
+_:ac90636c9bee20f5de567dba18a861d4 prov:wasDerivedFrom doc:4327eeba634c .
+doc:FactsPressureFluctuation a obo:BFO_0000019 .
+_:ed8928d71082c05493a4b8ba07f262c8 rdf:reifies <<( doc:FactsPressureFluctuation rdf:type obo:BFO_0000019 )>> ;
+	prov:wasDerivedFrom doc:4327eeba634c .

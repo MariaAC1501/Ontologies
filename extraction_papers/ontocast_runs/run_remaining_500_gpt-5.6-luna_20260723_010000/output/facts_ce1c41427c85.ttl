@@ -1,0 +1,526 @@
+@prefix None: <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD/seed#> .
+@prefix cco: <http://www.ontologyrepository.com/CommonCoreOntologies/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doc: <https://growgraph.dev/doc/ce1c41427c85/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix obo: <http://purl.obolibrary.org/obo/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix schema: <https://schema.org/> .
+doc:3fe969e94d5a a prov:Entity , schema:text ;
+	prov:generatedAtTime "2026-07-24T21:51:59.652505Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+	schema:position 0 ;
+	schema:identifier "3fe969e94d5a" .
+doc:Factsarticle1_80 schema:about doc:Factsdataset1_2 .
+_:cc48847dbcc31413b540a4bd2516adb2 rdf:reifies <<( doc:Factsarticle1_80 schema:about doc:Factsdataset1_2 )>> ;
+	prov:wasDerivedFrom doc:3fe969e94d5a .
+doc:Factssuwarno schema:affiliation doc:Factsitb .
+_:b12ba6c7d3357dca1f8d48f85dcf8322 rdf:reifies <<( doc:Factssuwarno schema:affiliation doc:Factsitb )>> ;
+	prov:wasDerivedFrom doc:3fe969e94d5a .
+doc:Factsarticle1_80 a schema:ScholarlyArticle .
+_:d9fd639c7d736576a1ae174bec56bf12 rdf:reifies <<( doc:Factsarticle1_80 rdf:type schema:ScholarlyArticle )>> ;
+	prov:wasDerivedFrom doc:3fe969e94d5a .
+doc:Factsitb schema:postalCode "40132" .
+_:c54cd7e1e7ac7c07b1a4361d82f4275c rdf:reifies <<( doc:Factsitb schema:postalCode "40132" )>> ;
+	prov:wasDerivedFrom doc:3fe969e94d5a .
+doc:FactsoilQuality a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Data_variable> .
+_:df1cd75c37c210ce6b584d22e637e592 rdf:reifies <<( doc:FactsoilQuality rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Data_variable> )>> ;
+	prov:wasDerivedFrom doc:3fe969e94d5a .
+doc:Factssuwarno schema:email "muhammadakmal1318@gmail.com" .
+_:d6135851f858fafe7480db00a2259c28 rdf:reifies <<( doc:Factssuwarno schema:email "muhammadakmal1318@gmail.com" )>> ;
+	prov:wasDerivedFrom doc:3fe969e94d5a .
+doc:Factsitb schema:name "School of Electrical Engineering and Informatics, Institut Teknologi Bandung" .
+_:bc2516b35885cc9cd13ef4f52281d0fa rdf:reifies <<( doc:Factsitb schema:name "School of Electrical Engineering and Informatics, Institut Teknologi Bandung" )>> ;
+	prov:wasDerivedFrom doc:3fe969e94d5a .
+doc:Factssmote_1 a cco:Algorithm .
+_:a6e7c301f77bd500e5d937a1650b5ce rdf:reifies <<( doc:Factssmote_1 rdf:type cco:Algorithm )>> ;
+	prov:wasDerivedFrom doc:3fe969e94d5a .
+doc:FactsmlpModel_1 schema:output doc:Factsrecall .
+_:a2b5fda5f0ac7960d02d38c9ce293425 rdf:reifies <<( doc:FactsmlpModel_1 schema:output doc:Factsrecall )>> ;
+	prov:wasDerivedFrom doc:3fe969e94d5a .
+doc:Factsdataset1_2 schema:numberOfItems 3850 .
+_:ceba8a6491fe2fee8f69dccaa6026d66 rdf:reifies <<( doc:Factsdataset1_2 schema:numberOfItems 3850 )>> ;
+	prov:wasDerivedFrom doc:3fe969e94d5a .
+doc:Factsdataset1_2 schema:spatialCoverage "Indonesia" .
+_:bb32f3136199cd10ef3868efa27dc82f rdf:reifies <<( doc:Factsdataset1_2 schema:spatialCoverage "Indonesia" )>> ;
+	prov:wasDerivedFrom doc:3fe969e94d5a .
+doc:FactsmlpModel_1 a None:Classification .
+_:d3a2e98f5fbcbf92306a232993997a24 rdf:reifies <<( doc:FactsmlpModel_1 rdf:type None:Classification )>> ;
+	prov:wasDerivedFrom doc:3fe969e94d5a .
+doc:Factssmote_1 schema:name "SMOTE-ENN" .
+_:c97c9f76e973241163b6989d2da3e444 rdf:reifies <<( doc:Factssmote_1 schema:name "SMOTE-ENN" )>> ;
+	prov:wasDerivedFrom doc:3fe969e94d5a .
+doc:FactsmlpModel_1 schema:uses doc:Factssmote_1 .
+_:d565c066fb2164b4c90f6eda1a37027d rdf:reifies <<( doc:FactsmlpModel_1 schema:uses doc:Factssmote_1 )>> ;
+	prov:wasDerivedFrom doc:3fe969e94d5a .
+doc:Factsitb schema:addressLocality "Bandung" .
+_:f8d115e8402c676716d26a5952b0a0f4 rdf:reifies <<( doc:Factsitb schema:addressLocality "Bandung" )>> ;
+	prov:wasDerivedFrom doc:3fe969e94d5a .
+doc:FactsmlpModel_1 schema:input doc:FactsdissolvedGasAnalysis_1 .
+_:c0b09d188d11b7f5dabd46a1c93bfdbe rdf:reifies <<( doc:FactsmlpModel_1 schema:input doc:FactsdissolvedGasAnalysis_1 )>> ;
+	prov:wasDerivedFrom doc:3fe969e94d5a .
+doc:Factsarticle1_80 schema:author doc:Factssuwarno .
+_:cf497e1a2a6bc830944e9439293e5015 rdf:reifies <<( doc:Factsarticle1_80 schema:author doc:Factssuwarno )>> ;
+	prov:wasDerivedFrom doc:3fe969e94d5a .
+doc:FactsmlpModel_1 a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Predictive_maintenance_model> .
+_:a5fd784f907472ba35fcf7ee07ab614e rdf:reifies <<( doc:FactsmlpModel_1 rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Predictive_maintenance_model> )>> ;
+	prov:wasDerivedFrom doc:3fe969e94d5a .
+doc:Factsrecall schema:name "recall" .
+_:ce1849437f53f25718d04d3ea241a421 rdf:reifies <<( doc:Factsrecall schema:name "recall" )>> ;
+	prov:wasDerivedFrom doc:3fe969e94d5a .
+doc:Factstransformer_4 a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Maintainable_item> .
+_:d9a13daddd90246e8bdc56403729e23a rdf:reifies <<( doc:Factstransformer_4 rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Maintainable_item> )>> ;
+	prov:wasDerivedFrom doc:3fe969e94d5a .
+doc:Factsarticle1_80 schema:mentions doc:Factssmote_1 .
+_:cccb24615922b2e504819142e9c391cd rdf:reifies <<( doc:Factsarticle1_80 schema:mentions doc:Factssmote_1 )>> ;
+	prov:wasDerivedFrom doc:3fe969e94d5a .
+doc:Factssuwarno schema:email "suwarno@stei.itb.ac.id" .
+_:f1ca126210741465c65c5cc63c3e4f0e rdf:reifies <<( doc:Factssuwarno schema:email "suwarno@stei.itb.ac.id" )>> ;
+	prov:wasDerivedFrom doc:3fe969e94d5a .
+doc:Factsrecall a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Performance_indicator> .
+_:e1515d462efa91adb2477ca9f84051ff rdf:reifies <<( doc:Factsrecall rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Performance_indicator> )>> ;
+	prov:wasDerivedFrom doc:3fe969e94d5a .
+doc:Factsrecall schema:about doc:Factstransformer_4 .
+_:cb7c5933e8b819a5b479107836d80f7d rdf:reifies <<( doc:Factsrecall schema:about doc:Factstransformer_4 )>> ;
+	prov:wasDerivedFrom doc:3fe969e94d5a .
+doc:Factsarticle1_80 schema:about doc:Factsrecall .
+_:f6a5df68e0900fa5a545fdb584a72de0 rdf:reifies <<( doc:Factsarticle1_80 schema:about doc:Factsrecall )>> ;
+	prov:wasDerivedFrom doc:3fe969e94d5a .
+doc:Factssuwarno a schema:Person .
+_:b43cc2dc66ee52e5f4bb00a7d7e39b6e rdf:reifies <<( doc:Factssuwarno rdf:type schema:Person )>> ;
+	prov:wasDerivedFrom doc:3fe969e94d5a .
+doc:Factssuwarno schema:name "Muhammad Akmal A. Putra" .
+_:e18f4e25812d9da53f28f469129c7107 rdf:reifies <<( doc:Factssuwarno schema:name "Muhammad Akmal A. Putra" )>> ;
+	prov:wasDerivedFrom doc:3fe969e94d5a .
+doc:FactsmlpModel_1 schema:input doc:FactsoilQuality .
+_:e4b6c36ca94ff12fcac6edb119611b7e rdf:reifies <<( doc:FactsmlpModel_1 schema:input doc:FactsoilQuality )>> ;
+	prov:wasDerivedFrom doc:3fe969e94d5a .
+doc:FactsoilQuality schema:name "paper condition factors" .
+_:efca7c80f168691935c1b29aba2e8659 rdf:reifies <<( doc:FactsoilQuality schema:name "paper condition factors" )>> ;
+	prov:wasDerivedFrom doc:3fe969e94d5a .
+doc:FactsoilQuality schema:name "oil quality" .
+_:fb383bb78b43937ed3b015db1d22fc3b rdf:reifies <<( doc:FactsoilQuality schema:name "oil quality" )>> ;
+	prov:wasDerivedFrom doc:3fe969e94d5a .
+doc:Factsrecall schema:name "F1-score" .
+_:aa3ea2c1fd3b7fe6a7e2c2b0178b435e rdf:reifies <<( doc:Factsrecall schema:name "F1-score" )>> ;
+	prov:wasDerivedFrom doc:3fe969e94d5a .
+doc:Factssmote_1 schema:name "Synthetic Minority Oversampling Technique (SMOTE)" .
+_:f663a693f92dab623fcca2d3569c3927 rdf:reifies <<( doc:Factssmote_1 schema:name "Synthetic Minority Oversampling Technique (SMOTE)" )>> ;
+	prov:wasDerivedFrom doc:3fe969e94d5a .
+doc:FactsmlpModel_1 a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Health_assessment> .
+_:e0d7ff29c2c8b1cddd4c3ef38204dd04 rdf:reifies <<( doc:FactsmlpModel_1 rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Health_assessment> )>> ;
+	prov:wasDerivedFrom doc:3fe969e94d5a .
+doc:Factsitb schema:addressLocality "Malang" .
+_:b4007f8469ec34a2d31348b4714e56f rdf:reifies <<( doc:Factsitb schema:addressLocality "Malang" )>> ;
+	prov:wasDerivedFrom doc:3fe969e94d5a .
+doc:Factssuwarno schema:name "Suwarno" .
+_:dad62b9085dbfdf346344c8b4f033b21 rdf:reifies <<( doc:Factssuwarno schema:name "Suwarno" )>> ;
+	prov:wasDerivedFrom doc:3fe969e94d5a .
+doc:Factsdataset1_2 schema:name "Transformer tests dataset" .
+_:aea1a8955beeb2ee0f7e1e0ba7290b80 rdf:reifies <<( doc:Factsdataset1_2 schema:name "Transformer tests dataset" )>> ;
+	prov:wasDerivedFrom doc:3fe969e94d5a .
+doc:FactsdissolvedGasAnalysis_1 a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Data_variable> .
+_:fcc28f9b48024bf0a31105c943d7fcfe rdf:reifies <<( doc:FactsdissolvedGasAnalysis_1 rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Data_variable> )>> ;
+	prov:wasDerivedFrom doc:3fe969e94d5a .
+doc:FactsarticleTitle1_64 None:has_text_value "Improving Transformer Health Index Prediction Performance Using Machine Learning Algorithms with a Synthetic Minority Oversampling Technique" .
+_:adeac5bd8f5efb7d5abd967c9a76e1fd rdf:reifies <<( doc:FactsarticleTitle1_64 None:has_text_value "Improving Transformer Health Index Prediction Performance Using Machine Learning Algorithms with a Synthetic Minority Oversampling Technique" )>> ;
+	prov:wasDerivedFrom doc:3fe969e94d5a .
+doc:Factsitb schema:addressCountry "Indonesia" .
+_:beef7b79645e655a92a4f57212aeaf6a rdf:reifies <<( doc:Factsitb schema:addressCountry "Indonesia" )>> ;
+	prov:wasDerivedFrom doc:3fe969e94d5a .
+doc:Factsdataset1_2 schema:about doc:Factstransformer_4 .
+_:aa66f6a392ee80e3f714cba37a824f66 rdf:reifies <<( doc:Factsdataset1_2 schema:about doc:Factstransformer_4 )>> ;
+	prov:wasDerivedFrom doc:3fe969e94d5a .
+doc:FactsmlpModel_1 schema:name "Transformer condition assessment module" .
+_:c8509f9f35e3ff7387c99ddbb7345f2b rdf:reifies <<( doc:FactsmlpModel_1 schema:name "Transformer condition assessment module" )>> ;
+	prov:wasDerivedFrom doc:3fe969e94d5a .
+doc:Factssmote_1 schema:name "SMOTE-Tomek" .
+_:af92388f7f232163c44124c14927921d rdf:reifies <<( doc:Factssmote_1 schema:name "SMOTE-Tomek" )>> ;
+	prov:wasDerivedFrom doc:3fe969e94d5a .
+doc:Factsitb schema:postalCode "65141" .
+_:aaeaa6106d2d263ad7875df6c65e01d8 rdf:reifies <<( doc:Factsitb schema:postalCode "65141" )>> ;
+	prov:wasDerivedFrom doc:3fe969e94d5a .
+doc:Factsarticle1_80 a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Predictive_maintenance_model> .
+_:a56973b3d550584161b8d5f199a6e305 rdf:reifies <<( doc:Factsarticle1_80 rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Predictive_maintenance_model> )>> ;
+	prov:wasDerivedFrom doc:3fe969e94d5a .
+doc:FactsdissolvedGasAnalysis_1 schema:name "dissolved gas analysis" .
+_:acea2ba48d383e8175ec15e453f40f2b rdf:reifies <<( doc:FactsdissolvedGasAnalysis_1 schema:name "dissolved gas analysis" )>> ;
+	prov:wasDerivedFrom doc:3fe969e94d5a .
+doc:Factsarticle1_80 None:has_title doc:FactsarticleTitle1_64 .
+_:af244787a6937ddc6f8a7f27bd73efdf rdf:reifies <<( doc:Factsarticle1_80 None:has_title doc:FactsarticleTitle1_64 )>> ;
+	prov:wasDerivedFrom doc:3fe969e94d5a .
+doc:Factsitb a schema:Organization .
+_:e11c1ceee88104621fcd7dfecc7b3ae4 rdf:reifies <<( doc:Factsitb rdf:type schema:Organization )>> ;
+	prov:wasDerivedFrom doc:3fe969e94d5a .
+doc:Factsitb schema:name "Department of Electrical Engineering, Politeknik Negeri Malang" .
+_:b1089fba77dab8663057930d607c648c rdf:reifies <<( doc:Factsitb schema:name "Department of Electrical Engineering, Politeknik Negeri Malang" )>> ;
+	prov:wasDerivedFrom doc:3fe969e94d5a .
+doc:FactsmlpModel_1 schema:name "Machine learning model for transformer Health Index prediction" .
+_:cad2ead8abf9bfab95899fc1a9056ece rdf:reifies <<( doc:FactsmlpModel_1 schema:name "Machine learning model for transformer Health Index prediction" )>> ;
+	prov:wasDerivedFrom doc:3fe969e94d5a .
+doc:FactsmlpModel_1 None:has_predictive_maintenance_function doc:FactsmlpModel_1 .
+_:a895a21f2b306866ac2dd8b4794ea1e6 rdf:reifies <<( doc:FactsmlpModel_1 None:has_predictive_maintenance_function doc:FactsmlpModel_1 )>> ;
+	prov:wasDerivedFrom doc:3fe969e94d5a .
+doc:Factssmote_1 schema:description "The SMOTE-based method yielding the best reported outcomes and significantly reducing classification errors, particularly for minority classes." .
+_:b332930edef9c5c388d40270d4b19c2a rdf:reifies <<( doc:Factssmote_1 schema:description "The SMOTE-based method yielding the best reported outcomes and significantly reducing classification errors, particularly for minority classes." )>> ;
+	prov:wasDerivedFrom doc:3fe969e94d5a .
+doc:Factssuwarno schema:name "Rahman Azis Prasojo" .
+_:a4e98e659d904a07bf6a3c06c0af941d rdf:reifies <<( doc:Factssuwarno schema:name "Rahman Azis Prasojo" )>> ;
+	prov:wasDerivedFrom doc:3fe969e94d5a .
+doc:FactsarticleTitle1_64 a None:Article_title .
+_:c36c073002b328772689bdc54b9ca316 rdf:reifies <<( doc:FactsarticleTitle1_64 rdf:type None:Article_title )>> ;
+	prov:wasDerivedFrom doc:3fe969e94d5a .
+doc:Factsdataset1_2 a schema:Dataset .
+_:cdef14c07b10b8c89945b9f852aef4d9 rdf:reifies <<( doc:Factsdataset1_2 rdf:type schema:Dataset )>> ;
+	prov:wasDerivedFrom doc:3fe969e94d5a .
+doc:Factssmote_1 schema:name "Borderline-SMOTE" .
+_:f1c05399d86cb91b7dd570799aa0f4e rdf:reifies <<( doc:Factssmote_1 schema:name "Borderline-SMOTE" )>> ;
+	prov:wasDerivedFrom doc:3fe969e94d5a .
+doc:Factsarticle1_80 schema:about doc:Factstransformer_4 .
+_:d5222700cb54f1baf831f55e76f55b5c rdf:reifies <<( doc:Factsarticle1_80 schema:about doc:Factstransformer_4 )>> ;
+	prov:wasDerivedFrom doc:3fe969e94d5a .
+doc:Factssuwarno schema:email "rahmanazisp@polinema.ac.id" .
+_:e73732e9e7cec60d6cf56faeaf6782d4 rdf:reifies <<( doc:Factssuwarno schema:email "rahmanazisp@polinema.ac.id" )>> ;
+	prov:wasDerivedFrom doc:3fe969e94d5a .
+doc:Factstransformer_4 schema:name "power transformer" .
+_:b9e89b9874e9f4dbb7e32f78ba9df2ba rdf:reifies <<( doc:Factstransformer_4 schema:name "power transformer" )>> ;
+	prov:wasDerivedFrom doc:3fe969e94d5a .
+doc:Factsrecall schema:name "precision" .
+_:d42156ca5387e66c23bb94dc892dde95 rdf:reifies <<( doc:Factsrecall schema:name "precision" )>> ;
+	prov:wasDerivedFrom doc:3fe969e94d5a .
+doc:Factsrecall schema:name "Health Index" .
+_:be193256edc93a6cb90ce2d3f6044db4 rdf:reifies <<( doc:Factsrecall schema:name "Health Index" )>> ;
+	prov:wasDerivedFrom doc:3fe969e94d5a .
+doc:Factsrecall schema:name "classification accuracy" .
+_:a04d47739e8bf45d67bf6c85544b31dc rdf:reifies <<( doc:Factsrecall schema:name "classification accuracy" )>> ;
+	prov:wasDerivedFrom doc:3fe969e94d5a .
+doc:8cbd328abd9b a prov:Entity , schema:text ;
+	prov:generatedAtTime "2026-07-24T21:51:59.656508Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+	schema:position 1 ;
+	schema:identifier "8cbd328abd9b" .
+doc:FactsmachineLearningModelType_3 None:has_text_value "Machine learning model" .
+_:e1eb52411d0341bb0a3b1ceead187f20 rdf:reifies <<( doc:FactsmachineLearningModelType_3 None:has_text_value "Machine learning model" )>> ;
+	prov:wasDerivedFrom doc:8cbd328abd9b .
+doc:Factsacidity a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Data_variable> .
+_:f2b6658d1884367d7e99d4187db187ec rdf:reifies <<( doc:Factsacidity rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Data_variable> )>> ;
+	prov:wasDerivedFrom doc:8cbd328abd9b .
+_:adeac5bd8f5efb7d5abd967c9a76e1fd prov:wasDerivedFrom doc:8cbd328abd9b .
+doc:Factstransformer_4 rdfs:label "power transformer"@en .
+_:e8b0afd9fe20f8881db8c4e96bdb22f7 rdf:reifies <<( doc:Factstransformer_4 rdfs:label "power transformer"@en )>> ;
+	prov:wasDerivedFrom doc:8cbd328abd9b .
+_:d9fd639c7d736576a1ae174bec56bf12 prov:wasDerivedFrom doc:8cbd328abd9b .
+doc:FactsbreakdownVoltage rdfs:label "Breakdown Voltage"@en .
+_:fcf926b2c8fa5097e71ed0aca4dd0cde rdf:reifies <<( doc:FactsbreakdownVoltage rdfs:label "Breakdown Voltage"@en )>> ;
+	prov:wasDerivedFrom doc:8cbd328abd9b .
+doc:FactsdegreeOfPolymerization rdfs:label "Degree of Polymerization"@en .
+_:e329ee1811b1e9ef24fa6926443ac617 rdf:reifies <<( doc:FactsdegreeOfPolymerization rdfs:label "Degree of Polymerization"@en )>> ;
+	prov:wasDerivedFrom doc:8cbd328abd9b .
+doc:FactsfuranTesting rdfs:label "furan testing"@en .
+_:f01b286ca1d5aaa46ba64540304bc4ef rdf:reifies <<( doc:FactsfuranTesting rdfs:label "furan testing"@en )>> ;
+	prov:wasDerivedFrom doc:8cbd328abd9b .
+doc:FactsdissipationFactor a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Data_variable> .
+_:e24a86adaa0b8a709e5083daf4f38427 rdf:reifies <<( doc:FactsdissipationFactor rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Data_variable> )>> ;
+	prov:wasDerivedFrom doc:8cbd328abd9b .
+doc:FactssyntheticMinorityOversampling cco:is_about doc:FactsmlpModel_1 .
+_:b3eaa24813a23e52c5cfe2aeda0f26f6 rdf:reifies <<( doc:FactssyntheticMinorityOversampling cco:is_about doc:FactsmlpModel_1 )>> ;
+	prov:wasDerivedFrom doc:8cbd328abd9b .
+_:fcc28f9b48024bf0a31105c943d7fcfe prov:wasDerivedFrom doc:8cbd328abd9b .
+_:a56973b3d550584161b8d5f199a6e305 prov:wasDerivedFrom doc:8cbd328abd9b .
+doc:Factsarticle1_80 schema:dateReceived "2025-03-30"^^<http://www.w3.org/2001/XMLSchema#date> .
+_:b2f1389a6b4d8e35b834f98d2d98437b rdf:reifies <<( doc:Factsarticle1_80 schema:dateReceived "2025-03-30"^^<http://www.w3.org/2001/XMLSchema#date> )>> ;
+	prov:wasDerivedFrom doc:8cbd328abd9b .
+_:af2bf17c3c9d3109a331e3a22b2d888b rdf:reifies <<( doc:Factssuwarno schema:name "Suwarno" )>> ;
+	prov:wasDerivedFrom doc:8cbd328abd9b .
+doc:FactsoilQuality_1 rdfs:label "Oil Quality"@en .
+_:a42e79f988179af30394eb92bfb3754a rdf:reifies <<( doc:FactsoilQuality_1 rdfs:label "Oil Quality"@en )>> ;
+	prov:wasDerivedFrom doc:8cbd328abd9b .
+_:a895a21f2b306866ac2dd8b4794ea1e6 prov:wasDerivedFrom doc:8cbd328abd9b .
+doc:FactssyntheticMinorityOversampling a cco:Algorithm .
+_:a310da06acd5ba8fe0b8ee9afa5116df rdf:reifies <<( doc:FactssyntheticMinorityOversampling rdf:type cco:Algorithm )>> ;
+	prov:wasDerivedFrom doc:8cbd328abd9b .
+doc:FactsmlpModel_1 cco:is_about doc:FactsmlpModel_1 .
+_:e236fbd50b127b41225c06f378490c2a rdf:reifies <<( doc:FactsmlpModel_1 cco:is_about doc:FactsmlpModel_1 )>> ;
+	prov:wasDerivedFrom doc:8cbd328abd9b .
+doc:FactsherveMorel schema:name "HervÃ© Morel" .
+_:f1b3ecf09891705cac1defc3f0f4499 rdf:reifies <<( doc:FactsherveMorel schema:name "HervÃ© Morel" )>> ;
+	prov:wasDerivedFrom doc:8cbd328abd9b .
+doc:Factshumidity_1 a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Data_variable> .
+_:ac04e353a90ff9a58e34a54e42802a86 rdf:reifies <<( doc:Factshumidity_1 rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Data_variable> )>> ;
+	prov:wasDerivedFrom doc:8cbd328abd9b .
+doc:FactsmlpModel_1 cco:is_about doc:FactsinterfacialTension_1 .
+_:fa995b4926dd0e9d82122372ddeb6a24 rdf:reifies <<( doc:FactsmlpModel_1 cco:is_about doc:FactsinterfacialTension_1 )>> ;
+	prov:wasDerivedFrom doc:8cbd328abd9b .
+doc:Factsarticle1_80 None:has_publication_year doc:FactspublicationYear_67 .
+_:f4df42dd7a93ecd8387c9f6dc607a15f rdf:reifies <<( doc:Factsarticle1_80 None:has_publication_year doc:FactspublicationYear_67 )>> ;
+	prov:wasDerivedFrom doc:8cbd328abd9b .
+doc:FactsmachineLearningModelType_3 a None:Model_type .
+_:e5bc61a6260f2f1efbd21f33e63fc9de rdf:reifies <<( doc:FactsmachineLearningModelType_3 rdf:type None:Model_type )>> ;
+	prov:wasDerivedFrom doc:8cbd328abd9b .
+_:b43cc2dc66ee52e5f4bb00a7d7e39b6e prov:wasDerivedFrom doc:8cbd328abd9b .
+_:cf497e1a2a6bc830944e9439293e5015 prov:wasDerivedFrom doc:8cbd328abd9b .
+doc:FactsbreakdownVoltage a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Data_variable> .
+_:df3c82d0f709361cc311f1c1f0a28e16 rdf:reifies <<( doc:FactsbreakdownVoltage rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Data_variable> )>> ;
+	prov:wasDerivedFrom doc:8cbd328abd9b .
+_:af244787a6937ddc6f8a7f27bd73efdf prov:wasDerivedFrom doc:8cbd328abd9b .
+doc:FactssyntheticMinorityOversampling rdfs:label "Synthetic Minority Oversampling Technique"@en .
+_:cc38d77b8bea051b8a5886a1d7237ddf rdf:reifies <<( doc:FactssyntheticMinorityOversampling rdfs:label "Synthetic Minority Oversampling Technique"@en )>> ;
+	prov:wasDerivedFrom doc:8cbd328abd9b .
+_:d9a13daddd90246e8bdc56403729e23a prov:wasDerivedFrom doc:8cbd328abd9b .
+doc:FactsherveMorel a schema:Person .
+_:d181bd652ecdfa4265a1922d72e21b7c rdf:reifies <<( doc:FactsherveMorel rdf:type schema:Person )>> ;
+	prov:wasDerivedFrom doc:8cbd328abd9b .
+doc:FactsmlpModel_1 cco:is_about doc:Factscolor .
+_:c3889f7d8c22a14ed4e5109d42f5fa6a rdf:reifies <<( doc:FactsmlpModel_1 cco:is_about doc:Factscolor )>> ;
+	prov:wasDerivedFrom doc:8cbd328abd9b .
+_:e1515d462efa91adb2477ca9f84051ff prov:wasDerivedFrom doc:8cbd328abd9b .
+doc:Factsarticle1_80 schema:volumeNumber 18 .
+_:f947469c96f07b2ce957e36ac50aac6a rdf:reifies <<( doc:Factsarticle1_80 schema:volumeNumber 18 )>> ;
+	prov:wasDerivedFrom doc:8cbd328abd9b .
+doc:FactsinterfacialTension_1 rdfs:label "Interfacial Tension"@en .
+_:ec314ff1c2543784f74e4b0c0d6cdc04 rdf:reifies <<( doc:FactsinterfacialTension_1 rdfs:label "Interfacial Tension"@en )>> ;
+	prov:wasDerivedFrom doc:8cbd328abd9b .
+doc:Factsacidity rdfs:label "acidity"@en .
+_:f1fdfd0b4a275b755104996dad197f83 rdf:reifies <<( doc:Factsacidity rdfs:label "acidity"@en )>> ;
+	prov:wasDerivedFrom doc:8cbd328abd9b .
+_:a5fd784f907472ba35fcf7ee07ab614e prov:wasDerivedFrom doc:8cbd328abd9b .
+doc:Factssuwarno schema:familyName "Prasojo" .
+_:a3faa71fe033468f68cff4906eab43bf rdf:reifies <<( doc:Factssuwarno schema:familyName "Prasojo" )>> ;
+	prov:wasDerivedFrom doc:8cbd328abd9b .
+doc:Factsrecall rdfs:label "Health Index"@en .
+_:a3910e2d91be9d6fcd584c33991c15a1 rdf:reifies <<( doc:Factsrecall rdfs:label "Health Index"@en )>> ;
+	prov:wasDerivedFrom doc:8cbd328abd9b .
+doc:Factsarticle1_80 None:has_identifier doc:FactsarticleDoi_25 .
+_:ae5d7089725aaa8ea1e7142a4b08e574 rdf:reifies <<( doc:Factsarticle1_80 None:has_identifier doc:FactsarticleDoi_25 )>> ;
+	prov:wasDerivedFrom doc:8cbd328abd9b .
+doc:FactspublicationYear_67 None:has_interger_value 2025 .
+_:ca37f3267d2039b36877406b27461a88 rdf:reifies <<( doc:FactspublicationYear_67 None:has_interger_value 2025 )>> ;
+	prov:wasDerivedFrom doc:8cbd328abd9b .
+doc:FactsmlpModel_1 cco:is_about doc:Factsrecall .
+_:c2e56fa7fe7d564a401ee3642d5b7876 rdf:reifies <<( doc:FactsmlpModel_1 cco:is_about doc:Factsrecall )>> ;
+	prov:wasDerivedFrom doc:8cbd328abd9b .
+doc:FactsinterfacialTension_1 a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Data_variable> .
+_:ebca626797e1fb428c5571afcad936c5 rdf:reifies <<( doc:FactsinterfacialTension_1 rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Data_variable> )>> ;
+	prov:wasDerivedFrom doc:8cbd328abd9b .
+doc:Factsarticle1_80 schema:datePublished "2025-05-06"^^<http://www.w3.org/2001/XMLSchema#date> .
+_:f9022e4997a74149312fa37d17ba3a8e rdf:reifies <<( doc:Factsarticle1_80 schema:datePublished "2025-05-06"^^<http://www.w3.org/2001/XMLSchema#date> )>> ;
+	prov:wasDerivedFrom doc:8cbd328abd9b .
+doc:FactsdissolvedGasAnalysis_1 rdfs:label "Dissolved Gas Analysis"@en .
+_:ad483a568414bc708bebbe243b36db7f rdf:reifies <<( doc:FactsdissolvedGasAnalysis_1 rdfs:label "Dissolved Gas Analysis"@en )>> ;
+	prov:wasDerivedFrom doc:8cbd328abd9b .
+doc:Factscolor a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Data_variable> .
+_:d4c935b59d3161fd41ea335b23a4f64a rdf:reifies <<( doc:Factscolor rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Data_variable> )>> ;
+	prov:wasDerivedFrom doc:8cbd328abd9b .
+doc:Factstransformer_4 a None:item_type .
+_:b98c5483e39effbabfe307e3047e4d39 rdf:reifies <<( doc:Factstransformer_4 rdf:type None:item_type )>> ;
+	prov:wasDerivedFrom doc:8cbd328abd9b .
+doc:FactsmlpModel_1 cco:is_about doc:FactsoilQuality_1 .
+_:b4d889a3f621ec543573027ae8ec0974 rdf:reifies <<( doc:FactsmlpModel_1 cco:is_about doc:FactsoilQuality_1 )>> ;
+	prov:wasDerivedFrom doc:8cbd328abd9b .
+doc:Factsrecall cco:describes doc:Factstransformer_4 .
+_:a7b73fcb29f2e93f417fbb39a3405fea rdf:reifies <<( doc:Factsrecall cco:describes doc:Factstransformer_4 )>> ;
+	prov:wasDerivedFrom doc:8cbd328abd9b .
+doc:FactsmlpModel_1 cco:is_about doc:Factshumidity_1 .
+_:fff1b3ed036b4806b155e6c2a3640ed1 rdf:reifies <<( doc:FactsmlpModel_1 cco:is_about doc:Factshumidity_1 )>> ;
+	prov:wasDerivedFrom doc:8cbd328abd9b .
+doc:Factssuwarno schema:familyName "Putra" .
+_:a9167925ea03fa67357cd2c6a4042e6b rdf:reifies <<( doc:Factssuwarno schema:familyName "Putra" )>> ;
+	prov:wasDerivedFrom doc:8cbd328abd9b .
+doc:Factscolor rdfs:label "color"@en .
+_:b99841be63ec66fac27f5c857a362dec rdf:reifies <<( doc:Factscolor rdfs:label "color"@en )>> ;
+	prov:wasDerivedFrom doc:8cbd328abd9b .
+doc:FactsmlpModel_1 None:describes_type doc:FactsmachineLearningModelType_3 .
+_:ea95abef50efe2a94af01cc33d2081c6 rdf:reifies <<( doc:FactsmlpModel_1 None:describes_type doc:FactsmachineLearningModelType_3 )>> ;
+	prov:wasDerivedFrom doc:8cbd328abd9b .
+doc:Factsarticle1_80 dcterms:dateAccepted "2025-05-01"^^<http://www.w3.org/2001/XMLSchema#date> .
+_:c77fe4c6ea34ee0462ce30223f46d09 rdf:reifies <<( doc:Factsarticle1_80 dcterms:dateAccepted "2025-05-01"^^<http://www.w3.org/2001/XMLSchema#date> )>> ;
+	prov:wasDerivedFrom doc:8cbd328abd9b .
+doc:FactsarticleDoi_25 None:has_text_value "10.3390/en18092364" .
+_:f3aced126d257870b52d06724e218c18 rdf:reifies <<( doc:FactsarticleDoi_25 None:has_text_value "10.3390/en18092364" )>> ;
+	prov:wasDerivedFrom doc:8cbd328abd9b .
+_:e0d7ff29c2c8b1cddd4c3ef38204dd04 prov:wasDerivedFrom doc:8cbd328abd9b .
+doc:FactsmlpModel_1 cco:is_about doc:FactsbreakdownVoltage .
+_:a9cab4accf9503e19babf5c962c4bff9 rdf:reifies <<( doc:FactsmlpModel_1 cco:is_about doc:FactsbreakdownVoltage )>> ;
+	prov:wasDerivedFrom doc:8cbd328abd9b .
+doc:FactspublicationYear_67 a None:Publication_year .
+_:e8a467f839d4520b1ced42ed0156d506 rdf:reifies <<( doc:FactspublicationYear_67 rdf:type None:Publication_year )>> ;
+	prov:wasDerivedFrom doc:8cbd328abd9b .
+doc:FactsmlpModel_1 cco:is_about doc:Factsacidity .
+_:faba54b1233d0a792e34380cf66cf80a rdf:reifies <<( doc:FactsmlpModel_1 cco:is_about doc:Factsacidity )>> ;
+	prov:wasDerivedFrom doc:8cbd328abd9b .
+doc:FactsmlpModel_1 cco:is_about doc:FactsdissipationFactor .
+_:d571a9573808acbc9052d463c1a5d28b rdf:reifies <<( doc:FactsmlpModel_1 cco:is_about doc:FactsdissipationFactor )>> ;
+	prov:wasDerivedFrom doc:8cbd328abd9b .
+doc:Factssuwarno schema:givenName "R.A." .
+_:c6ae8605c816d3b1d58eff92fcfc8410 rdf:reifies <<( doc:Factssuwarno schema:givenName "R.A." )>> ;
+	prov:wasDerivedFrom doc:8cbd328abd9b .
+doc:FactsoilQuality_1 a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Data_variable> .
+_:c1c14e07825b442d8377a5b4f5f1364c rdf:reifies <<( doc:FactsoilQuality_1 rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Data_variable> )>> ;
+	prov:wasDerivedFrom doc:8cbd328abd9b .
+_:c36c073002b328772689bdc54b9ca316 prov:wasDerivedFrom doc:8cbd328abd9b .
+doc:Factsarticle1_80 schema:about doc:FactsmlpModel_1 .
+_:f871e81c703b55ac6f4ad2b8e2b3c015 rdf:reifies <<( doc:Factsarticle1_80 schema:about doc:FactsmlpModel_1 )>> ;
+	prov:wasDerivedFrom doc:8cbd328abd9b .
+doc:FactsarticleDoi_25 a None:Article_identifier .
+_:a2caec468d7835e868ba0a63b4fa3c9b rdf:reifies <<( doc:FactsarticleDoi_25 rdf:type None:Article_identifier )>> ;
+	prov:wasDerivedFrom doc:8cbd328abd9b .
+doc:FactsmlpModel_1 cco:is_about doc:FactsdissolvedGasAnalysis_1 .
+_:e3b0b34199b4f73a4067b9eeb144e76 rdf:reifies <<( doc:FactsmlpModel_1 cco:is_about doc:FactsdissolvedGasAnalysis_1 )>> ;
+	prov:wasDerivedFrom doc:8cbd328abd9b .
+doc:Factshumidity_1 rdfs:label "humidity"@en .
+_:f167dd555a89f27bd705667f2be2c645 rdf:reifies <<( doc:Factshumidity_1 rdfs:label "humidity"@en )>> ;
+	prov:wasDerivedFrom doc:8cbd328abd9b .
+doc:Factsarticle1_80 schema:pagination "2364" .
+_:f1206aa025b4da1cfa6312aee245335 rdf:reifies <<( doc:Factsarticle1_80 schema:pagination "2364" )>> ;
+	prov:wasDerivedFrom doc:8cbd328abd9b .
+doc:Factsarticle1_80 schema:editor doc:FactsherveMorel .
+_:ca5c262bc37facf3253dfe65d3935e75 rdf:reifies <<( doc:Factsarticle1_80 schema:editor doc:FactsherveMorel )>> ;
+	prov:wasDerivedFrom doc:8cbd328abd9b .
+doc:FactsmlpModel_1 rdfs:label "support vector machine"@en .
+_:b427b65c52c083e9e2bb1056e5a66d5b rdf:reifies <<( doc:FactsmlpModel_1 rdfs:label "support vector machine"@en )>> ;
+	prov:wasDerivedFrom doc:8cbd328abd9b .
+doc:FactsmlpModel_1 cco:is_about doc:FactsfuranTesting .
+_:c9283ecb67e1ebc70f4d3e12fefcd190 rdf:reifies <<( doc:FactsmlpModel_1 cco:is_about doc:FactsfuranTesting )>> ;
+	prov:wasDerivedFrom doc:8cbd328abd9b .
+doc:Factssuwarno schema:givenName "M.A.A." .
+_:b9337f1a995645ee531fb4e2a26d06f5 rdf:reifies <<( doc:Factssuwarno schema:givenName "M.A.A." )>> ;
+	prov:wasDerivedFrom doc:8cbd328abd9b .
+doc:FactsmlpModel_1 rdfs:label "Neural Network model"@en .
+_:abeb68cc10b5f4ddda233a6e3c9acf23 rdf:reifies <<( doc:FactsmlpModel_1 rdfs:label "Neural Network model"@en )>> ;
+	prov:wasDerivedFrom doc:8cbd328abd9b .
+doc:FactsdissipationFactor rdfs:label "Dissipation Factor"@en .
+_:ef484532385249ecdcf4c840e4c13a41 rdf:reifies <<( doc:FactsdissipationFactor rdfs:label "Dissipation Factor"@en )>> ;
+	prov:wasDerivedFrom doc:8cbd328abd9b .
+doc:FactsdegreeOfPolymerization a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Data_variable> .
+_:e8fe611a6404991117aa084e3799b565 rdf:reifies <<( doc:FactsdegreeOfPolymerization rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Data_variable> )>> ;
+	prov:wasDerivedFrom doc:8cbd328abd9b .
+doc:FactsmlpModel_1 cco:is_about doc:Factstransformer_4 .
+_:ff07ace35013113ecb553e86bf675ad8 rdf:reifies <<( doc:FactsmlpModel_1 cco:is_about doc:Factstransformer_4 )>> ;
+	prov:wasDerivedFrom doc:8cbd328abd9b .
+doc:FactsarticleDoi_25 cco:designates <https://doi.org/10.3390/en18092364> .
+_:a999811d513fc6b020af37f0d96d3daf rdf:reifies <<( doc:FactsarticleDoi_25 cco:designates <https://doi.org/10.3390/en18092364> )>> ;
+	prov:wasDerivedFrom doc:8cbd328abd9b .
+doc:FactsmlpModel_1 rdfs:label "Random Forest algorithm"@en .
+_:b00256cefde369bbae25abaabd1ae4d7 rdf:reifies <<( doc:FactsmlpModel_1 rdfs:label "Random Forest algorithm"@en )>> ;
+	prov:wasDerivedFrom doc:8cbd328abd9b .
+doc:Factsarticle1_80 dcterms:modified "2025-04-22"^^<http://www.w3.org/2001/XMLSchema#date> .
+_:f7535f81cc1b127c4e5f7dbad61cdea3 rdf:reifies <<( doc:Factsarticle1_80 dcterms:modified "2025-04-22"^^<http://www.w3.org/2001/XMLSchema#date> )>> ;
+	prov:wasDerivedFrom doc:8cbd328abd9b .
+doc:FactsfuranTesting a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Data_variable> .
+_:dc779a2d73b5ffd3bd9a6261dc092771 rdf:reifies <<( doc:FactsfuranTesting rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Data_variable> )>> ;
+	prov:wasDerivedFrom doc:8cbd328abd9b .
+doc:FactsmlpModel_1 cco:is_about doc:FactsdegreeOfPolymerization .
+_:c446793c6c181f09af4eb033afdf6403 rdf:reifies <<( doc:FactsmlpModel_1 cco:is_about doc:FactsdegreeOfPolymerization )>> ;
+	prov:wasDerivedFrom doc:8cbd328abd9b .
+doc:be3a95e41c8b a prov:Entity , schema:text ;
+	prov:generatedAtTime "2026-07-24T21:51:59.660508Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+	schema:position 2 ;
+	schema:identifier "be3a95e41c8b" .
+doc:Factsrecall cco:is_about doc:Factstransformer_4 .
+_:de7a3ff4d6a8a1d817a4c6e0ffda6300 rdf:reifies <<( doc:Factsrecall cco:is_about doc:Factstransformer_4 )>> ;
+	prov:wasDerivedFrom doc:be3a95e41c8b .
+_:f1dfbbbb9c5f06c7893f73f7ccec47d1 rdf:reifies <<( doc:Factssmote_1 schema:name "SMOTE-ENN" )>> ;
+	prov:wasDerivedFrom doc:be3a95e41c8b .
+doc:FactsmlpModel_1 schema:name "MLP (Multi-Layer Perceptron)" .
+_:e044fda47c61ae55bbc4b01b91bad937 rdf:reifies <<( doc:FactsmlpModel_1 schema:name "MLP (Multi-Layer Perceptron)" )>> ;
+	prov:wasDerivedFrom doc:be3a95e41c8b .
+doc:FactsoilQuality schema:name "Paper Condition Factor" .
+_:d4c5390afc016d597c59eccf73d3c4fa rdf:reifies <<( doc:FactsoilQuality schema:name "Paper Condition Factor" )>> ;
+	prov:wasDerivedFrom doc:be3a95e41c8b .
+_:a6e7c301f77bd500e5d937a1650b5ce prov:wasDerivedFrom doc:be3a95e41c8b .
+doc:Factssmote_1 cco:is_about doc:FactsmlpModel_1 .
+_:ae27b61ab7c24c73140eb72f74f411f rdf:reifies <<( doc:Factssmote_1 cco:is_about doc:FactsmlpModel_1 )>> ;
+	prov:wasDerivedFrom doc:be3a95e41c8b .
+doc:Factstransformer_4 a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#maintainable_item_record> .
+_:b13c2014de4653156253bfb3623a6d94 rdf:reifies <<( doc:Factstransformer_4 rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#maintainable_item_record> )>> ;
+	prov:wasDerivedFrom doc:be3a95e41c8b .
+doc:FactsduvalPentagon schema:name "Duval Pentagon" .
+_:cf001055a88d14b89fd3131c3b6296f rdf:reifies <<( doc:FactsduvalPentagon schema:name "Duval Pentagon" )>> ;
+	prov:wasDerivedFrom doc:be3a95e41c8b .
+doc:FactsoilQuality cco:is_about doc:Factstransformer_4 .
+_:ecad2c66ca9a24c44da98302d13a63ea rdf:reifies <<( doc:FactsoilQuality cco:is_about doc:Factstransformer_4 )>> ;
+	prov:wasDerivedFrom doc:be3a95e41c8b .
+_:df1cd75c37c210ce6b584d22e637e592 prov:wasDerivedFrom doc:be3a95e41c8b .
+_:d9a13daddd90246e8bdc56403729e23a prov:wasDerivedFrom doc:be3a95e41c8b .
+doc:Factstransformer_4 schema:contentLocation "Indonesia" .
+_:e25eea8729e24d534cd85d61bdd9e9e6 rdf:reifies <<( doc:Factstransformer_4 schema:contentLocation "Indonesia" )>> ;
+	prov:wasDerivedFrom doc:be3a95e41c8b .
+doc:FactsoilQuality cco:describes doc:Factstransformer_4 .
+_:d1573cde3665918b84e1c971d58446c5 rdf:reifies <<( doc:FactsoilQuality cco:describes doc:Factstransformer_4 )>> ;
+	prov:wasDerivedFrom doc:be3a95e41c8b .
+doc:Factstransformer_4 obo:BFO_0000051 doc:FactsoilQuality .
+_:d1780709b5c92be19b0f6d8dcd3bda20 rdf:reifies <<( doc:Factstransformer_4 obo:BFO_0000051 doc:FactsoilQuality )>> ;
+	prov:wasDerivedFrom doc:be3a95e41c8b .
+doc:Factstransformer_4 schema:name "SMOTE dataset" .
+_:a7f982e2ed537c7496d51b866a5062aa rdf:reifies <<( doc:Factstransformer_4 schema:name "SMOTE dataset" )>> ;
+	prov:wasDerivedFrom doc:be3a95e41c8b .
+_:ff07ace35013113ecb553e86bf675ad8 prov:wasDerivedFrom doc:be3a95e41c8b .
+doc:Factsrecall schema:name "transformer condition prediction" .
+_:abd3cd0ea294f6b6f884b0c9e2a0f0d8 rdf:reifies <<( doc:Factsrecall schema:name "transformer condition prediction" )>> ;
+	prov:wasDerivedFrom doc:be3a95e41c8b .
+doc:Factstransformer_4 schema:name "DGA testing dataset" .
+_:de683770f8844c0e3972a85add5e5f0b rdf:reifies <<( doc:Factstransformer_4 schema:name "DGA testing dataset" )>> ;
+	prov:wasDerivedFrom doc:be3a95e41c8b .
+_:a5fd784f907472ba35fcf7ee07ab614e prov:wasDerivedFrom doc:be3a95e41c8b .
+doc:Factssmote_1 schema:name "fuzzy logic" .
+_:d1a26d0608d91bf6990a8023ca8af8b2 rdf:reifies <<( doc:Factssmote_1 schema:name "fuzzy logic" )>> ;
+	prov:wasDerivedFrom doc:be3a95e41c8b .
+_:f10071c1a5b9a12a4dcbbface63e76a9 rdf:reifies <<( doc:Factssmote_1 schema:name "SMOTE-Tomek" )>> ;
+	prov:wasDerivedFrom doc:be3a95e41c8b .
+doc:FactsmlpModel_1 a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Predictive_maintenance_system_module> .
+_:ad701b5093cf7ca23a076b60592385dd rdf:reifies <<( doc:FactsmlpModel_1 rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Predictive_maintenance_system_module> )>> ;
+	prov:wasDerivedFrom doc:be3a95e41c8b .
+doc:FactsoilQuality schema:name "Fault Factor" .
+_:b267e2e8c35ceca89b5c9a0bbac2cac1 rdf:reifies <<( doc:FactsoilQuality schema:name "Fault Factor" )>> ;
+	prov:wasDerivedFrom doc:be3a95e41c8b .
+doc:FactsmlpModel_1 <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#has_predictive_maintenance_function> doc:FactsmlpModel_1 .
+_:eac832a305c8ada8449c281677cc550c rdf:reifies <<( doc:FactsmlpModel_1 <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#has_predictive_maintenance_function> doc:FactsmlpModel_1 )>> ;
+	prov:wasDerivedFrom doc:be3a95e41c8b .
+doc:Factssmote_1 cco:is_about doc:Factstransformer_4 .
+_:dd56632c2ec2e8b4f33f4211a983651e rdf:reifies <<( doc:Factssmote_1 cco:is_about doc:Factstransformer_4 )>> ;
+	prov:wasDerivedFrom doc:be3a95e41c8b .
+doc:Factstransformer_4 schema:name "transformer test dataset" .
+_:b4eb39dff508998be30dffc5aaed054d rdf:reifies <<( doc:Factstransformer_4 schema:name "transformer test dataset" )>> ;
+	prov:wasDerivedFrom doc:be3a95e41c8b .
+_:e0d7ff29c2c8b1cddd4c3ef38204dd04 prov:wasDerivedFrom doc:be3a95e41c8b .
+_:c2e56fa7fe7d564a401ee3642d5b7876 prov:wasDerivedFrom doc:be3a95e41c8b .
+doc:FactsmlpModel_1 schema:name "Health Index prediction machine learning model" .
+_:db885f28abdd5b48440995445465d24a rdf:reifies <<( doc:FactsmlpModel_1 schema:name "Health Index prediction machine learning model" )>> ;
+	prov:wasDerivedFrom doc:be3a95e41c8b .
+_:c25ebca3e52189a328d4955beff57856 rdf:reifies <<( doc:Factssmote_1 schema:name "Borderline-SMOTE" )>> ;
+	prov:wasDerivedFrom doc:be3a95e41c8b .
+doc:FactsmlpModel_1 schema:name "transformer asset age and condition prediction model" .
+_:f9a4f9700420f398922125463ab7355e rdf:reifies <<( doc:FactsmlpModel_1 schema:name "transformer asset age and condition prediction model" )>> ;
+	prov:wasDerivedFrom doc:be3a95e41c8b .
+doc:FactsduvalPentagon a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Data_variable> .
+_:a055ca1faa67b09df21fc51bcdb0bfe9 rdf:reifies <<( doc:FactsduvalPentagon rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Data_variable> )>> ;
+	prov:wasDerivedFrom doc:be3a95e41c8b .
+doc:FactsmlpModel_1 schema:name "machine learning model" .
+_:f03047ec280099761f10517880568ec2 rdf:reifies <<( doc:FactsmlpModel_1 schema:name "machine learning model" )>> ;
+	prov:wasDerivedFrom doc:be3a95e41c8b .
+doc:FactsoilQuality schema:name "Oil Quality Factor" .
+_:fa96a077b662b0fe669e6a3b46337fae rdf:reifies <<( doc:FactsoilQuality schema:name "Oil Quality Factor" )>> ;
+	prov:wasDerivedFrom doc:be3a95e41c8b .
+doc:Factssmote_1 schema:name "SMOTE (Synthetic Minority Oversampling Technique)" .
+_:d804c6b99be6a0976eb3f13ec348270c rdf:reifies <<( doc:Factssmote_1 schema:name "SMOTE (Synthetic Minority Oversampling Technique)" )>> ;
+	prov:wasDerivedFrom doc:be3a95e41c8b .
+doc:Factsrecall schema:name "Health Index (HI)" .
+_:a681c746b2ff8e6799b9a8a35cebfe20 rdf:reifies <<( doc:Factsrecall schema:name "Health Index (HI)" )>> ;
+	prov:wasDerivedFrom doc:be3a95e41c8b .
+doc:Factstransformer_4 schema:numberOfItems 3850 .
+_:d30aa677f194a44e870fb61940381b57 rdf:reifies <<( doc:Factstransformer_4 schema:numberOfItems 3850 )>> ;
+	prov:wasDerivedFrom doc:be3a95e41c8b .
+doc:FactsmlpModel_1 schema:name "Health Index prediction module" .
+_:c6be06127f99a24c6318e4f9f7b4a57c rdf:reifies <<( doc:FactsmlpModel_1 schema:name "Health Index prediction module" )>> ;
+	prov:wasDerivedFrom doc:be3a95e41c8b .
+doc:FactsmlpModel_1 schema:name "Health Index assessment" .
+_:e11c2cf676b830d1de91942105ececaa rdf:reifies <<( doc:FactsmlpModel_1 schema:name "Health Index assessment" )>> ;
+	prov:wasDerivedFrom doc:be3a95e41c8b .
+_:e1515d462efa91adb2477ca9f84051ff prov:wasDerivedFrom doc:be3a95e41c8b .
+doc:FactsmlpModel_1 schema:name "Random Forest model" .
+_:ad54b876b6f14cf153340f10abc6495b rdf:reifies <<( doc:FactsmlpModel_1 schema:name "Random Forest model" )>> ;
+	prov:wasDerivedFrom doc:be3a95e41c8b .
+doc:Factstransformer_4 schema:name "transformer asset" .
+_:eadd8bf69ae189a79795aae54a97f955 rdf:reifies <<( doc:Factstransformer_4 schema:name "transformer asset" )>> ;
+	prov:wasDerivedFrom doc:be3a95e41c8b .
+<http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Predictive_maintenance_model> owl:sameAs <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Predictive_maintenance_system_module> .

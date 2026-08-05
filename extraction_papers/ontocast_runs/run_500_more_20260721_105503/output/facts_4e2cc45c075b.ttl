@@ -1,0 +1,438 @@
+@prefix None: <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD/seed#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doc: <https://growgraph.dev/doc/4e2cc45c075b/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix cd: <https://growgraph.dev/facts> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix schema: <https://schema.org/> .
+@prefix schema1: <http://schema.org/> .
+doc:01f181f8066d a prov:Entity , schema:text ;
+	prov:generatedAtTime "2026-07-22T12:48:22.416462Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+	schema:position 0 ;
+	schema:identifier "01f181f8066d" .
+doc:FactslubricatingOil_1 a None:Maintainable_item .
+_:a2d581222234724944f171a5c992010c rdf:reifies <<( doc:FactslubricatingOil_1 rdf:type None:Maintainable_item )>> ;
+	prov:wasDerivedFrom doc:01f181f8066d .
+doc:FactslubricatingOil_1 None:has_text_value "diesel engine lubricants" .
+_:cdb1f25d2819aa95f953ade0e506acab rdf:reifies <<( doc:FactslubricatingOil_1 None:has_text_value "diesel engine lubricants" )>> ;
+	prov:wasDerivedFrom doc:01f181f8066d .
+doc:FactsfaultDetectionFn a None:Fault_identification .
+_:ddbe21dc6cb8858f8b95c3d6bc29903b rdf:reifies <<( doc:FactsfaultDetectionFn rdf:type None:Fault_identification )>> ;
+	prov:wasDerivedFrom doc:01f181f8066d .
+doc:Factsquality4_4 a None:Performance_value .
+_:d4efb234bddddfa3d8dc1863ae4b28a4 rdf:reifies <<( doc:Factsquality4_4 rdf:type None:Performance_value )>> ;
+	prov:wasDerivedFrom doc:01f181f8066d .
+doc:FactshealthAssessmentFn a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Health_assessment> .
+_:bd9ce5ed8c3f25f7c35bde6c85a54b26 rdf:reifies <<( doc:FactshealthAssessmentFn rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Health_assessment> )>> ;
+	prov:wasDerivedFrom doc:01f181f8066d .
+doc:FactsfutureStateForecastFn a None:Future_state_forecast .
+_:a04088a8f26243d385fd820c7267ba7e rdf:reifies <<( doc:FactsfutureStateForecastFn rdf:type None:Future_state_forecast )>> ;
+	prov:wasDerivedFrom doc:01f181f8066d .
+doc:Factsid1_111 a None:Article_identifier .
+_:c77d386650329a1c8fef0780d62e582f rdf:reifies <<( doc:Factsid1_111 rdf:type None:Article_identifier )>> ;
+	prov:wasDerivedFrom doc:01f181f8066d .
+doc:Factsid1_111 None:has_text_value "Multi-Sensor Fusion and Deep Learning for Predictive Lubricant Health Assessment" .
+_:eac3d175cb811723a3bbd4c162b610d4 rdf:reifies <<( doc:Factsid1_111 None:has_text_value "Multi-Sensor Fusion and Deep Learning for Predictive Lubricant Health Assessment" )>> ;
+	prov:wasDerivedFrom doc:01f181f8066d .
+doc:Factstopic1_10 a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Health_assessment> .
+_:af4cd5bae7527cfd97a7fd2fdee2c63b rdf:reifies <<( doc:Factstopic1_10 rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Health_assessment> )>> ;
+	prov:wasDerivedFrom doc:01f181f8066d .
+doc:Factsarticle1_213 None:has_identifier doc:Factsid1_111 .
+_:f715e9818c47624eda814bed60716f3a rdf:reifies <<( doc:Factsarticle1_213 None:has_identifier doc:Factsid1_111 )>> ;
+	prov:wasDerivedFrom doc:01f181f8066d .
+doc:Factsmodel7_2 None:has_predictive_maintenance_function doc:FactsfaultDetectionFn .
+_:b475e15cc46b974c8ecc7a6e557b1a6f rdf:reifies <<( doc:Factsmodel7_2 None:has_predictive_maintenance_function doc:FactsfaultDetectionFn )>> ;
+	prov:wasDerivedFrom doc:01f181f8066d .
+doc:Factsquality4_4 a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Performance_indicator> .
+_:d943aeb3385e50872b5d9cac4eaa9cc1 rdf:reifies <<( doc:Factsquality4_4 rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Performance_indicator> )>> ;
+	prov:wasDerivedFrom doc:01f181f8066d .
+doc:Factsquality4_4 cd:numeric_value 6.47 .
+_:d2d55e2051efb923b7ae6c4e14db880a rdf:reifies <<( doc:Factsquality4_4 cd:numeric_value 6.47 )>> ;
+	prov:wasDerivedFrom doc:01f181f8066d .
+doc:FactsfaultDetectionFn a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Fault_detection> .
+_:c83568c09254dded8ff5facf478ed848 rdf:reifies <<( doc:FactsfaultDetectionFn rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Fault_detection> )>> ;
+	prov:wasDerivedFrom doc:01f181f8066d .
+doc:Factsmodel7_2 None:has_predictive_maintenance_function doc:FactsfutureStateForecastFn .
+_:fa5b0966cc7663db51dde236152b0a3f rdf:reifies <<( doc:Factsmodel7_2 None:has_predictive_maintenance_function doc:FactsfutureStateForecastFn )>> ;
+	prov:wasDerivedFrom doc:01f181f8066d .
+doc:Factsmodel7_2 None:has_predictive_maintenance_function doc:FactshealthAssessmentFn .
+_:ef46939db86883fdf8cd046de475ab88 rdf:reifies <<( doc:Factsmodel7_2 None:has_predictive_maintenance_function doc:FactshealthAssessmentFn )>> ;
+	prov:wasDerivedFrom doc:01f181f8066d .
+doc:Factsquality4_4 None:has_text_value "zero false alarms" .
+_:e59050d7861fa51532605b5e3502b75f rdf:reifies <<( doc:Factsquality4_4 None:has_text_value "zero false alarms" )>> ;
+	prov:wasDerivedFrom doc:01f181f8066d .
+doc:Factsmodel7_2 a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Predictive_maintenance_model> .
+_:f93ccbd01b39837b52a38880c7602317 rdf:reifies <<( doc:Factsmodel7_2 rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Predictive_maintenance_model> )>> ;
+	prov:wasDerivedFrom doc:01f181f8066d .
+doc:FactslubricationRegimeTransitions a None:Deviation_detection .
+_:ffeaa7a8789e2343ddec906c60db3d85 rdf:reifies <<( doc:FactslubricationRegimeTransitions rdf:type None:Deviation_detection )>> ;
+	prov:wasDerivedFrom doc:01f181f8066d .
+doc:Factsid1_111 a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Article_title> .
+_:f2ff9d25ea39ed8c455689790d2b084b rdf:reifies <<( doc:Factsid1_111 rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Article_title> )>> ;
+	prov:wasDerivedFrom doc:01f181f8066d .
+doc:FactslubricatingOil_1 None:has_text_value "lubricating oil" .
+_:d0c144b28d16aba81502d6fb2c7d0b53 rdf:reifies <<( doc:FactslubricatingOil_1 None:has_text_value "lubricating oil" )>> ;
+	prov:wasDerivedFrom doc:01f181f8066d .
+doc:FactsviscosityTemperatureRelationships a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Data_variable> .
+_:d153fdb5d43f83a9f682a6d27b6fffc9 rdf:reifies <<( doc:FactsviscosityTemperatureRelationships rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Data_variable> )>> ;
+	prov:wasDerivedFrom doc:01f181f8066d .
+doc:Factsmodel7_2 None:has_title doc:Factsid1_111 .
+_:d2758df381be1bfdbd0609503b3bbe44 rdf:reifies <<( doc:Factsmodel7_2 None:has_title doc:Factsid1_111 )>> ;
+	prov:wasDerivedFrom doc:01f181f8066d .
+doc:FactspredictiveTribologicalManagement a schema1:Action .
+_:d4c1bcffb95ce12d0237efbc1e404e33 rdf:reifies <<( doc:FactspredictiveTribologicalManagement rdf:type schema1:Action )>> ;
+	prov:wasDerivedFrom doc:01f181f8066d .
+doc:Factsyear1_166 None:has_interger_value 2024 .
+_:e956ed32b1971c1c0d06f660b3ac3002 rdf:reifies <<( doc:Factsyear1_166 None:has_interger_value 2024 )>> ;
+	prov:wasDerivedFrom doc:01f181f8066d .
+doc:FactscontinuousTribologicalHealthAssessment a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Health_assessment> .
+_:d883754736689ced8c94240c62a88ccc rdf:reifies <<( doc:FactscontinuousTribologicalHealthAssessment rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Health_assessment> )>> ;
+	prov:wasDerivedFrom doc:01f181f8066d .
+doc:Factsid1_111 None:has_text_value "unknown" .
+_:a1edca861ab70f1ae1a50d17e3418b53 rdf:reifies <<( doc:Factsid1_111 None:has_text_value "unknown" )>> ;
+	prov:wasDerivedFrom doc:01f181f8066d .
+doc:Factsquality4_4 None:has_text_value "zero" .
+_:a6cc513e417a9208232fc30744669867 rdf:reifies <<( doc:Factsquality4_4 None:has_text_value "zero" )>> ;
+	prov:wasDerivedFrom doc:01f181f8066d .
+doc:FactswearParticleEvolution a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Data_variable> .
+_:c8240b6cee597f3400b4416fc4ee589f rdf:reifies <<( doc:FactswearParticleEvolution rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Data_variable> )>> ;
+	prov:wasDerivedFrom doc:01f181f8066d .
+doc:FactsfeatureEvaluation a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Association_discovery> .
+_:a5aa41a23d6ca451459340818b278643 rdf:reifies <<( doc:FactsfeatureEvaluation rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Association_discovery> )>> ;
+	prov:wasDerivedFrom doc:01f181f8066d .
+doc:Factsarticle1_213 None:has_title doc:Factsid1_111 .
+_:a9ecfaf2c51edde54847286b8d63d712 rdf:reifies <<( doc:Factsarticle1_213 None:has_title doc:Factsid1_111 )>> ;
+	prov:wasDerivedFrom doc:01f181f8066d .
+doc:Factsmodel7_2 a schema1:Action .
+_:f3c6b3d8d67a825cad462de297176e11 rdf:reifies <<( doc:Factsmodel7_2 rdf:type schema1:Action )>> ;
+	prov:wasDerivedFrom doc:01f181f8066d .
+doc:FactslubricantHealth a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Data_variable> .
+_:d71d40501741b6d4f81fb3eb0e68b842 rdf:reifies <<( doc:FactslubricantHealth rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Data_variable> )>> ;
+	prov:wasDerivedFrom doc:01f181f8066d .
+doc:Factsquality4_4 cd:numeric_value 96.67 .
+_:b1ef8ed68e1775d0ab67e05697cf94c5 rdf:reifies <<( doc:Factsquality4_4 cd:numeric_value 96.67 )>> ;
+	prov:wasDerivedFrom doc:01f181f8066d .
+doc:Factsid1_111 None:has_text_value "Seasonal-Trend decomposition using Loess, Factor Attention Network, Temporal Convolutional Network, and Informer with Long Short-Term Memory Variational Autoencoder" .
+_:d959ca6803c2219d7daa349e1e7e99c7 rdf:reifies <<( doc:Factsid1_111 None:has_text_value "Seasonal-Trend decomposition using Loess, Factor Attention Network, Temporal Convolutional Network, and Informer with Long Short-Term Memory Variational Autoencoder" )>> ;
+	prov:wasDerivedFrom doc:01f181f8066d .
+doc:Factsquality4_4 None:has_text_value "96.67%" .
+_:f4ffc5a4f353ebc91007e81919e3ade5 rdf:reifies <<( doc:Factsquality4_4 None:has_text_value "96.67%" )>> ;
+	prov:wasDerivedFrom doc:01f181f8066d .
+doc:Factsquality4_4 None:has_text_value "tribological performance indicators" .
+_:c9765a865bc5d40e25543bc3d12e3333 rdf:reifies <<( doc:Factsquality4_4 None:has_text_value "tribological performance indicators" )>> ;
+	prov:wasDerivedFrom doc:01f181f8066d .
+doc:Factsarticle1_213 None:has_publication_year doc:Factsyear1_166 .
+_:a122b3c3bc5ad65695c591e327ddf10c rdf:reifies <<( doc:Factsarticle1_213 None:has_publication_year doc:Factsyear1_166 )>> ;
+	prov:wasDerivedFrom doc:01f181f8066d .
+doc:Factsarticle1_213 a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Predictive_maintenance_model> .
+_:c50973d52ef18b852ce392808cc3b309 rdf:reifies <<( doc:Factsarticle1_213 rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Predictive_maintenance_model> )>> ;
+	prov:wasDerivedFrom doc:01f181f8066d .
+doc:Factstopic1_10 None:has_text_value "continuous tribological health assessment" .
+_:ebe3ca48ba9d8d04f8fcd495fa2dbc9a rdf:reifies <<( doc:Factstopic1_10 None:has_text_value "continuous tribological health assessment" )>> ;
+	prov:wasDerivedFrom doc:01f181f8066d .
+doc:Factsquality4_4 None:has_text_value "continuous health index" .
+_:b840bc65f7af853ef671aa0084e8a610 rdf:reifies <<( doc:Factsquality4_4 None:has_text_value "continuous health index" )>> ;
+	prov:wasDerivedFrom doc:01f181f8066d .
+doc:Factsyear1_166 a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Publication_year> .
+_:c92314507955bd0e5178aa3fbd09e34a rdf:reifies <<( doc:Factsyear1_166 rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Publication_year> )>> ;
+	prov:wasDerivedFrom doc:01f181f8066d .
+doc:Factsmodel7_2 None:has_text_value "SFTI-LVAE" .
+_:f300a6963fda7493f9d5ce32fff7433e rdf:reifies <<( doc:Factsmodel7_2 None:has_text_value "SFTI-LVAE" )>> ;
+	prov:wasDerivedFrom doc:01f181f8066d .
+doc:FactslubricantHealth None:has_text_value "health" .
+_:acec086ee08037e719a2904c0410d848 rdf:reifies <<( doc:FactslubricantHealth None:has_text_value "health" )>> ;
+	prov:wasDerivedFrom doc:01f181f8066d .
+doc:FactsparameterContributionQuantification a None:Classification .
+_:f6651ad6ac3ad81070104a79dfcbf2fe rdf:reifies <<( doc:FactsparameterContributionQuantification rdf:type None:Classification )>> ;
+	prov:wasDerivedFrom doc:01f181f8066d .
+doc:Factsquality4_4 None:has_text_value "6.47 h" .
+_:b6b25ea0b561e048283ab8786ee77f67 rdf:reifies <<( doc:Factsquality4_4 None:has_text_value "6.47 h" )>> ;
+	prov:wasDerivedFrom doc:01f181f8066d .
+doc:efc62f40fd51 a prov:Entity , schema:text ;
+	prov:generatedAtTime "2026-07-22T12:48:22.418462Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+	schema:position 1 ;
+	schema:identifier "efc62f40fd51" .
+doc:Factsarticle1_213 schema1:keywords "variational autoencoder" .
+_:ea8af1302a5d69a4fdf7cc691a4d4f4b rdf:reifies <<( doc:Factsarticle1_213 schema1:keywords "variational autoencoder" )>> ;
+	prov:wasDerivedFrom doc:efc62f40fd51 .
+doc:FactslubricantHealthAssessment a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Health_assessment> .
+_:e824ab7f4ac2234274a92c3d21c38047 rdf:reifies <<( doc:FactslubricantHealthAssessment rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Health_assessment> )>> ;
+	prov:wasDerivedFrom doc:efc62f40fd51 .
+doc:FactsdeepLearning_13 a owl:Class .
+_:b2d08c4d549924665757b69ce77284c rdf:reifies <<( doc:FactsdeepLearning_13 rdf:type owl:Class )>> ;
+	prov:wasDerivedFrom doc:efc62f40fd51 .
+doc:Factsarticle1_213 schema1:name "Multi-Sensor Fusion and Deep Learning for Predictive Lubricant Health Assessment" .
+_:c77687c783d95d9e76a8f1c73be114ba rdf:reifies <<( doc:Factsarticle1_213 schema1:name "Multi-Sensor Fusion and Deep Learning for Predictive Lubricant Health Assessment" )>> ;
+	prov:wasDerivedFrom doc:efc62f40fd51 .
+doc:Factsarticle1_213 schema1:keywords "informer" .
+_:d115f18a92cf744c5584cf2176739f74 rdf:reifies <<( doc:Factsarticle1_213 schema1:keywords "informer" )>> ;
+	prov:wasDerivedFrom doc:efc62f40fd51 .
+doc:Factsarticle1_213 schema1:keywords "deep learning" .
+_:c33dd88a6c27d053862724853b933daa rdf:reifies <<( doc:Factsarticle1_213 schema1:keywords "deep learning" )>> ;
+	prov:wasDerivedFrom doc:efc62f40fd51 .
+doc:Factsarticle1_213 <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#has_title> doc:Factsid1_111 .
+_:ff55578267c10735060f199f62c3ff98 rdf:reifies <<( doc:Factsarticle1_213 <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#has_title> doc:Factsid1_111 )>> ;
+	prov:wasDerivedFrom doc:efc62f40fd51 .
+doc:FactsvariationalAutoencoder a owl:Class .
+_:f95f870db39cc9b3c7144940190ebb6f rdf:reifies <<( doc:FactsvariationalAutoencoder rdf:type owl:Class )>> ;
+	prov:wasDerivedFrom doc:efc62f40fd51 .
+doc:FactslubricantHealthAssessment rdfs:label "Predictive Lubricant Health Assessment"@en .
+_:c457d49d6441e57168e35f1bac3835a rdf:reifies <<( doc:FactslubricantHealthAssessment rdfs:label "Predictive Lubricant Health Assessment"@en )>> ;
+	prov:wasDerivedFrom doc:efc62f40fd51 .
+doc:Factsid1_111 <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#has_text_value> "Multi-Sensor Fusion and Deep Learning for Predictive Lubricant Health Assessment" .
+_:d68df351eb32db93cddd8064fe7a4be rdf:reifies <<( doc:Factsid1_111 <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#has_text_value> "Multi-Sensor Fusion and Deep Learning for Predictive Lubricant Health Assessment" )>> ;
+	prov:wasDerivedFrom doc:efc62f40fd51 .
+doc:FactsdeepLearning_13 rdfs:label "Deep Learning"@en .
+_:b0073a597e65c3e92cd2526243b9250c rdf:reifies <<( doc:FactsdeepLearning_13 rdfs:label "Deep Learning"@en )>> ;
+	prov:wasDerivedFrom doc:efc62f40fd51 .
+_:f2ff9d25ea39ed8c455689790d2b084b prov:wasDerivedFrom doc:efc62f40fd51 .
+doc:Factsquality4_4 <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#has_text_value> "health index" .
+_:dbe03ddbaba240cd1f73ccf312c19c6f rdf:reifies <<( doc:Factsquality4_4 <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#has_text_value> "health index" )>> ;
+	prov:wasDerivedFrom doc:efc62f40fd51 .
+_:d71d40501741b6d4f81fb3eb0e68b842 prov:wasDerivedFrom doc:efc62f40fd51 .
+doc:FactsinformerModel rdfs:label "Informer"@en .
+_:d27ddf7f12764a74ae3b356ff7ed191 rdf:reifies <<( doc:FactsinformerModel rdfs:label "Informer"@en )>> ;
+	prov:wasDerivedFrom doc:efc62f40fd51 .
+_:d943aeb3385e50872b5d9cac4eaa9cc1 prov:wasDerivedFrom doc:efc62f40fd51 .
+_:c92314507955bd0e5178aa3fbd09e34a prov:wasDerivedFrom doc:efc62f40fd51 .
+doc:Factsarticle1_213 a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Predictive_Maintenance_Article> .
+_:e07b0c6de78cef915a93deef5c4a07c0 rdf:reifies <<( doc:Factsarticle1_213 rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Predictive_Maintenance_Article> )>> ;
+	prov:wasDerivedFrom doc:efc62f40fd51 .
+doc:FactslubricantHealth <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#has_text_value> "lubricant monitoring" .
+_:a11538acfc215b104455f046575aa49 rdf:reifies <<( doc:FactslubricantHealth <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#has_text_value> "lubricant monitoring" )>> ;
+	prov:wasDerivedFrom doc:efc62f40fd51 .
+doc:FactsinformerModel a owl:Class .
+_:bf023d016d98ab0b47b52a325486f977 rdf:reifies <<( doc:FactsinformerModel rdf:type owl:Class )>> ;
+	prov:wasDerivedFrom doc:efc62f40fd51 .
+doc:Factsarticle1_213 schema1:datePublished "2025-08-16"^^<http://www.w3.org/2001/XMLSchema#date> .
+_:bbddfc95e168d44c2c9457a48c65dd56 rdf:reifies <<( doc:Factsarticle1_213 schema1:datePublished "2025-08-16"^^<http://www.w3.org/2001/XMLSchema#date> )>> ;
+	prov:wasDerivedFrom doc:efc62f40fd51 .
+doc:Factsyear1_166 <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#has_interger_value> 2025 .
+_:d414a19cf1c59db2b6c7520dacc601f5 rdf:reifies <<( doc:Factsyear1_166 <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#has_interger_value> 2025 )>> ;
+	prov:wasDerivedFrom doc:efc62f40fd51 .
+doc:Factsarticle1_213 schema1:keywords "health index" .
+_:e1a4a784d5b06632b0cbe2ad6f66d4c6 rdf:reifies <<( doc:Factsarticle1_213 schema1:keywords "health index" )>> ;
+	prov:wasDerivedFrom doc:efc62f40fd51 .
+doc:Factsarticle1_213 <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#has_publication_year> doc:Factsyear1_166 .
+_:fd170c33074340b327710177621861bd rdf:reifies <<( doc:Factsarticle1_213 <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#has_publication_year> doc:Factsyear1_166 )>> ;
+	prov:wasDerivedFrom doc:efc62f40fd51 .
+doc:Factsarticle1_213 dcterms:title doc:Factsid1_111 .
+_:aa7b9699753f3551fde1fb379049b69 rdf:reifies <<( doc:Factsarticle1_213 dcterms:title doc:Factsid1_111 )>> ;
+	prov:wasDerivedFrom doc:efc62f40fd51 .
+doc:Factsarticle1_213 schema1:keywords "lubricant monitoring" .
+_:e05414bb1d4fdfac8d59249f412e20a8 rdf:reifies <<( doc:Factsarticle1_213 schema1:keywords "lubricant monitoring" )>> ;
+	prov:wasDerivedFrom doc:efc62f40fd51 .
+doc:FactsvariationalAutoencoder rdfs:label "Variational Autoencoder"@en .
+_:d0bc31506fc072decfb86bb3808a3e38 rdf:reifies <<( doc:FactsvariationalAutoencoder rdfs:label "Variational Autoencoder"@en )>> ;
+	prov:wasDerivedFrom doc:efc62f40fd51 .
+doc:b75891a8171a a prov:Entity , schema:text ;
+	prov:generatedAtTime "2026-07-22T12:48:22.419462Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+	schema:position 2 ;
+	schema:identifier "b75891a8171a" .
+doc:Factsvar1_17 a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Data_variable> .
+_:cff1f9f34fe66b1f61e5667b1c2bea67 rdf:reifies <<( doc:Factsvar1_17 rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Data_variable> )>> ;
+	prov:wasDerivedFrom doc:b75891a8171a .
+_:f93ccbd01b39837b52a38880c7602317 prov:wasDerivedFrom doc:b75891a8171a .
+doc:Factsvar16 a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Data_variable> .
+_:f4efacdee7fe989375fb6b046935d97f rdf:reifies <<( doc:Factsvar16 rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Data_variable> )>> ;
+	prov:wasDerivedFrom doc:b75891a8171a .
+doc:Factstechnique1_12 a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Clustering> .
+_:b0b8cf6612e1c83ef749a04b9a20e268 rdf:reifies <<( doc:Factstechnique1_12 rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Clustering> )>> ;
+	prov:wasDerivedFrom doc:b75891a8171a .
+doc:Factsvar11 a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Data_variable> .
+_:bdcea0b09e0b1864f02fcc640f2d2d3d rdf:reifies <<( doc:Factsvar11 rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Data_variable> )>> ;
+	prov:wasDerivedFrom doc:b75891a8171a .
+_:af4cd5bae7527cfd97a7fd2fdee2c63b prov:wasDerivedFrom doc:b75891a8171a .
+doc:Factsquality4_4 rdfs:label "anomaly detection accuracy" .
+_:ebe1b51d04b53ca65dd0ae2980852e6 rdf:reifies <<( doc:Factsquality4_4 rdfs:label "anomaly detection accuracy" )>> ;
+	prov:wasDerivedFrom doc:b75891a8171a .
+doc:Factsmodel7_2 rdfs:label "autoencoder" .
+_:fde2aeff9da9939b874abc35e6008f4b rdf:reifies <<( doc:Factsmodel7_2 rdfs:label "autoencoder" )>> ;
+	prov:wasDerivedFrom doc:b75891a8171a .
+doc:Factsmodel7_2 rdfs:label "conditional latent space VAE" .
+_:cc2c63cda0a598a13fb9a7d3847d7c6a rdf:reifies <<( doc:Factsmodel7_2 rdfs:label "conditional latent space VAE" )>> ;
+	prov:wasDerivedFrom doc:b75891a8171a .
+doc:Factsdoc1_87 a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Predictive_Maintenance_Article> .
+_:bfeca04044f320558d0d077d48412173 rdf:reifies <<( doc:Factsdoc1_87 rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Predictive_Maintenance_Article> )>> ;
+	prov:wasDerivedFrom doc:b75891a8171a .
+doc:Factsmethod2_29 a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Association_discovery> .
+_:a9ddf40606b3d0bd6919fa35971d4414 rdf:reifies <<( doc:Factsmethod2_29 rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Association_discovery> )>> ;
+	prov:wasDerivedFrom doc:b75891a8171a .
+doc:Factsvar3_27 rdfs:label "seasonal component" .
+_:b83c69ef471ab513b1a5e6bfd107a901 rdf:reifies <<( doc:Factsvar3_27 rdfs:label "seasonal component" )>> ;
+	prov:wasDerivedFrom doc:b75891a8171a .
+doc:Factsmodel7_2 rdfs:label "SFTI-LVAE" .
+_:c52e16e09386a89f945697371e098c1e rdf:reifies <<( doc:Factsmodel7_2 rdfs:label "SFTI-LVAE" )>> ;
+	prov:wasDerivedFrom doc:b75891a8171a .
+doc:Factsmodel7_2 rdfs:label "TCNwith Informer" .
+_:c6456d1c163432f1a92a391bcd1b5372 rdf:reifies <<( doc:Factsmodel7_2 rdfs:label "TCNwith Informer" )>> ;
+	prov:wasDerivedFrom doc:b75891a8171a .
+doc:Factstopic1_10 rdfs:label "health assessment" .
+_:f947b22d30d960b65d52124e6d2b0e89 rdf:reifies <<( doc:Factstopic1_10 rdfs:label "health assessment" )>> ;
+	prov:wasDerivedFrom doc:b75891a8171a .
+doc:Factstopic2_12 a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Fault_identification> .
+_:fc5e0bbb7e615c60c98829da4a8d53c7 rdf:reifies <<( doc:Factstopic2_12 rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Fault_identification> )>> ;
+	prov:wasDerivedFrom doc:b75891a8171a .
+doc:Factsvar3_27 a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Data_variable> .
+_:d68ae0af869463116402148670b98238 rdf:reifies <<( doc:Factsvar3_27 rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Data_variable> )>> ;
+	prov:wasDerivedFrom doc:b75891a8171a .
+doc:Factsvar3_27 rdfs:label "trend component" .
+_:bf7313ef8f8cdf5727de4a3347bd7c8a rdf:reifies <<( doc:Factsvar3_27 rdfs:label "trend component" )>> ;
+	prov:wasDerivedFrom doc:b75891a8171a .
+doc:Factsdoc1_87 cd:has_topic doc:Factstopic1_10 .
+_:f827772aac8c32c31e947e78693d0827 rdf:reifies <<( doc:Factsdoc1_87 cd:has_topic doc:Factstopic1_10 )>> ;
+	prov:wasDerivedFrom doc:b75891a8171a .
+_:d943aeb3385e50872b5d9cac4eaa9cc1 prov:wasDerivedFrom doc:b75891a8171a .
+doc:Factsvar20 a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Data_variable> .
+_:c204d076685278f6259343474514e0b9 rdf:reifies <<( doc:Factsvar20 rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Data_variable> )>> ;
+	prov:wasDerivedFrom doc:b75891a8171a .
+doc:Factsvar8 a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Data_variable> .
+_:ae2469ebd485f0f1953f5c40e7fb4f9b rdf:reifies <<( doc:Factsvar8 rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Data_variable> )>> ;
+	prov:wasDerivedFrom doc:b75891a8171a .
+doc:Factstopic2_12 a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Fault_detection> .
+_:d90494e6bdd0431c28197743eb8e9c0f rdf:reifies <<( doc:Factstopic2_12 rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Fault_detection> )>> ;
+	prov:wasDerivedFrom doc:b75891a8171a .
+doc:Factsvar9 a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Data_variable> .
+_:bd99480e812673abe7d4b1eb96c414c6 rdf:reifies <<( doc:Factsvar9 rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Data_variable> )>> ;
+	prov:wasDerivedFrom doc:b75891a8171a .
+doc:Factsvar15 a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Data_variable> .
+_:a5b43d972e4fb21e1b0c20cabc1b96b7 rdf:reifies <<( doc:Factsvar15 rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Data_variable> )>> ;
+	prov:wasDerivedFrom doc:b75891a8171a .
+doc:Factsvar18 rdfs:label "Kullback-Leibler divergence" .
+_:eb7b27557d2355407db9746eb21a300d rdf:reifies <<( doc:Factsvar18 rdfs:label "Kullback-Leibler divergence" )>> ;
+	prov:wasDerivedFrom doc:b75891a8171a .
+doc:Factsquality1_14 a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Performance_indicator> .
+_:bca9da451aa0b05a1859da1b20be5188 rdf:reifies <<( doc:Factsquality1_14 rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Performance_indicator> )>> ;
+	prov:wasDerivedFrom doc:b75891a8171a .
+doc:Factsvar14 a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Data_variable> .
+_:cac929967bf1739774a0880701b282be rdf:reifies <<( doc:Factsvar14 rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Data_variable> )>> ;
+	prov:wasDerivedFrom doc:b75891a8171a .
+doc:Factsquality4_4 rdfs:label "Health Index" .
+_:beea30742f8b347c22e609cf7aec1925 rdf:reifies <<( doc:Factsquality4_4 rdfs:label "Health Index" )>> ;
+	prov:wasDerivedFrom doc:b75891a8171a .
+doc:Factsmethod3_13 a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Sequential_pattern_discovery> .
+_:ef7a3e4c41952a007a2ebbd6cec799ef rdf:reifies <<( doc:Factsmethod3_13 rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Sequential_pattern_discovery> )>> ;
+	prov:wasDerivedFrom doc:b75891a8171a .
+doc:Factsvar12 a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Data_variable> .
+_:ec3f15bd53fb70295963af820edb2085 rdf:reifies <<( doc:Factsvar12 rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Data_variable> )>> ;
+	prov:wasDerivedFrom doc:b75891a8171a .
+doc:Factsvar5_7 a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Data_variable> .
+_:e7daa7e4f5f426f8fdbc484c2e713be1 rdf:reifies <<( doc:Factsvar5_7 rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Data_variable> )>> ;
+	prov:wasDerivedFrom doc:b75891a8171a .
+doc:Factstopic4_10 rdfs:label "early alerts of impending failures" .
+_:b33a53ba20f615bbf53f90c6f332b323 rdf:reifies <<( doc:Factstopic4_10 rdfs:label "early alerts of impending failures" )>> ;
+	prov:wasDerivedFrom doc:b75891a8171a .
+doc:Factsvar1_17 rdfs:label "multivariate time series input" .
+_:c13cc3e6177b117c7540dca9b9440d20 rdf:reifies <<( doc:Factsvar1_17 rdfs:label "multivariate time series input" )>> ;
+	prov:wasDerivedFrom doc:b75891a8171a .
+doc:Factsmodel7_2 rdfs:label "GMM-VAE" .
+_:eb81e128f0e249da81d7297fac8aaac1 rdf:reifies <<( doc:Factsmodel7_2 rdfs:label "GMM-VAE" )>> ;
+	prov:wasDerivedFrom doc:b75891a8171a .
+doc:Factsvar21 a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Data_variable> .
+_:be1fc17d3d34e8a905b5de5d1960ffb6 rdf:reifies <<( doc:Factsvar21 rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Data_variable> )>> ;
+	prov:wasDerivedFrom doc:b75891a8171a .
+doc:Factsvar8 rdfs:label "query vector" .
+_:e743de644a2f5a13721a2509f587b748 rdf:reifies <<( doc:Factsvar8 rdfs:label "query vector" )>> ;
+	prov:wasDerivedFrom doc:b75891a8171a .
+doc:Factsvar17 a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Data_variable> .
+_:b235fc3d1e5566e8753a9c6c202e5c17 rdf:reifies <<( doc:Factsvar17 rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Data_variable> )>> ;
+	prov:wasDerivedFrom doc:b75891a8171a .
+doc:Factsquality4_4 rdfs:label "precision required for health assessments" .
+_:eae3ed8eaa9fd72a6dbd8888f2c27c5d rdf:reifies <<( doc:Factsquality4_4 rdfs:label "precision required for health assessments" )>> ;
+	prov:wasDerivedFrom doc:b75891a8171a .
+doc:Factsmethod2_29 rdfs:label "feature fusion" .
+_:aa6234dbf60bd1202ce3e5deb1cdc19 rdf:reifies <<( doc:Factsmethod2_29 rdfs:label "feature fusion" )>> ;
+	prov:wasDerivedFrom doc:b75891a8171a .
+doc:Factsvar16 rdfs:label "VAE training loss" .
+_:e03bfa5fdae10601c89212b02d67feb0 rdf:reifies <<( doc:Factsvar16 rdfs:label "VAE training loss" )>> ;
+	prov:wasDerivedFrom doc:b75891a8171a .
+doc:Factsvar8 rdfs:label "value vector" .
+_:a17c421d2b94ba31881f71e91537e304 rdf:reifies <<( doc:Factsvar8 rdfs:label "value vector" )>> ;
+	prov:wasDerivedFrom doc:b75891a8171a .
+doc:Factsvar14 rdfs:label "mean of latent variable distribution" .
+_:e1e2f24da12a5f7180da608674f8ec4d rdf:reifies <<( doc:Factsvar14 rdfs:label "mean of latent variable distribution" )>> ;
+	prov:wasDerivedFrom doc:b75891a8171a .
+doc:Factstopic2_12 rdfs:label "fault source identification" .
+_:ccb11e5992cf3497200ca8f77c0b6695 rdf:reifies <<( doc:Factstopic2_12 rdfs:label "fault source identification" )>> ;
+	prov:wasDerivedFrom doc:b75891a8171a .
+doc:Factsvar10 a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Data_variable> .
+_:a37c01b174aa8716ad915439fb8d0c2 rdf:reifies <<( doc:Factsvar10 rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Data_variable> )>> ;
+	prov:wasDerivedFrom doc:b75891a8171a .
+doc:Factsvar21 rdfs:label "impending failures" .
+_:ecc6c43b08a3a1ce1931b6b1196cceca rdf:reifies <<( doc:Factsvar21 rdfs:label "impending failures" )>> ;
+	prov:wasDerivedFrom doc:b75891a8171a .
+doc:Factsvar18 a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Data_variable> .
+_:fd7bbb822945703a886e1f03fa2265bf rdf:reifies <<( doc:Factsvar18 rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Data_variable> )>> ;
+	prov:wasDerivedFrom doc:b75891a8171a .
+doc:Factsvar10 rdfs:label "output of TCN at time t in layer l" .
+_:b797492de72d39839de10e9f8fa8d9a5 rdf:reifies <<( doc:Factsvar10 rdfs:label "output of TCN at time t in layer l" )>> ;
+	prov:wasDerivedFrom doc:b75891a8171a .
+doc:Factsvar17 rdfs:label "Evidence Lower Bound" .
+_:ae9bf9e469868d6d775d8dbec834fa14 rdf:reifies <<( doc:Factsvar17 rdfs:label "Evidence Lower Bound" )>> ;
+	prov:wasDerivedFrom doc:b75891a8171a .
+doc:Factsdoc1_87 rdfs:label "SFTI-LVAE-based lubricant health forecasting" .
+_:e0b096377142ce1ed83e1b9051a80dc8 rdf:reifies <<( doc:Factsdoc1_87 rdfs:label "SFTI-LVAE-based lubricant health forecasting" )>> ;
+	prov:wasDerivedFrom doc:b75891a8171a .
+doc:Factsvar5_7 rdfs:label "residual component" .
+_:c7100532217971e19b257c876969216d rdf:reifies <<( doc:Factsvar5_7 rdfs:label "residual component" )>> ;
+	prov:wasDerivedFrom doc:b75891a8171a .
+doc:Factsquality1_14 rdfs:label "reconstruction error" .
+_:e54c4f589ff3b0c2805a2f4cba1d4d08 rdf:reifies <<( doc:Factsquality1_14 rdfs:label "reconstruction error" )>> ;
+	prov:wasDerivedFrom doc:b75891a8171a .
+doc:Factsmethod1_40 a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Data_mining_technique_function> .
+_:bba9b8a07bbfa9a1a3e1a51144c9dd8b rdf:reifies <<( doc:Factsmethod1_40 rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Data_mining_technique_function> )>> ;
+	prov:wasDerivedFrom doc:b75891a8171a .
+doc:Factsvar12 rdfs:label "final hidden state from LSTM" .
+_:a9b9ba5cb88cf8965173fb053aa513ed rdf:reifies <<( doc:Factsvar12 rdfs:label "final hidden state from LSTM" )>> ;
+	prov:wasDerivedFrom doc:b75891a8171a .
+doc:Factsmethod3_13 rdfs:label "multiscale time series modeling" .
+_:dfe8d1468325f3a84f225e70c84b2783 rdf:reifies <<( doc:Factsmethod3_13 rdfs:label "multiscale time series modeling" )>> ;
+	prov:wasDerivedFrom doc:b75891a8171a .
+doc:Factsvar14 rdfs:label "standard deviation of latent variable distribution" .
+_:e67372accfb9fae2a5d32863386b1f51 rdf:reifies <<( doc:Factsvar14 rdfs:label "standard deviation of latent variable distribution" )>> ;
+	prov:wasDerivedFrom doc:b75891a8171a .
+doc:Factsvar15 rdfs:label "latent variable sampled from encoder VAE" .
+_:ae64f61b323729beecb3f12028064c1e rdf:reifies <<( doc:Factsvar15 rdfs:label "latent variable sampled from encoder VAE" )>> ;
+	prov:wasDerivedFrom doc:b75891a8171a .
+doc:Factstechnique1_12 rdfs:label "unsupervised anomaly detection" .
+_:c178003640b241a99c4712b004bb54da rdf:reifies <<( doc:Factstechnique1_12 rdfs:label "unsupervised anomaly detection" )>> ;
+	prov:wasDerivedFrom doc:b75891a8171a .
+doc:Factsmodel7_2 rdfs:label "LSTM" .
+_:bef9ad0d73ff37e980ad26de4f47602d rdf:reifies <<( doc:Factsmodel7_2 rdfs:label "LSTM" )>> ;
+	prov:wasDerivedFrom doc:b75891a8171a .
+doc:Factsmethod1_40 rdfs:label "STL decomposition" .
+_:f6e4d5999b35a7db298ccc157d955320 rdf:reifies <<( doc:Factsmethod1_40 rdfs:label "STL decomposition" )>> ;
+	prov:wasDerivedFrom doc:b75891a8171a .
+doc:Factsvar20 rdfs:label "equipment maintenance and repair strategies" .
+_:d3ebc7fe76c1d290441e791e4c0b0c6a rdf:reifies <<( doc:Factsvar20 rdfs:label "equipment maintenance and repair strategies" )>> ;
+	prov:wasDerivedFrom doc:b75891a8171a .
+doc:Factsvar8 rdfs:label "key vector" .
+_:e541abd8ab9a8a62364843f43684c87d rdf:reifies <<( doc:Factsvar8 rdfs:label "key vector" )>> ;
+	prov:wasDerivedFrom doc:b75891a8171a .
+doc:Factsvar11 rdfs:label "convolution kernel weights in TCN for layer l" .
+_:ec18ea987e6af4fc4febaf4d4b28ac7 rdf:reifies <<( doc:Factsvar11 rdfs:label "convolution kernel weights in TCN for layer l" )>> ;
+	prov:wasDerivedFrom doc:b75891a8171a .
+doc:Factsvar19 a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Data_variable> .
+_:ad3269da7f1673eb5ec8f21e6d3293f2 rdf:reifies <<( doc:Factsvar19 rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Data_variable> )>> ;
+	prov:wasDerivedFrom doc:b75891a8171a .
+doc:Factstopic2_12 rdfs:label "anomaly detection" .
+_:e19aa40453032fe4c90039eaeb77ea5d rdf:reifies <<( doc:Factstopic2_12 rdfs:label "anomaly detection" )>> ;
+	prov:wasDerivedFrom doc:b75891a8171a .
+doc:Factstopic4_10 a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Remaining_useful_life_estimation> .
+_:adb5bd99600bb20f8bfc071f04e24a4e rdf:reifies <<( doc:Factstopic4_10 rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Remaining_useful_life_estimation> )>> ;
+	prov:wasDerivedFrom doc:b75891a8171a .
+doc:Factsvar9 rdfs:label "attention dimension normalization factor" .
+_:f1676915013c4c3061fc9b68f25d088e rdf:reifies <<( doc:Factsvar9 rdfs:label "attention dimension normalization factor" )>> ;
+	prov:wasDerivedFrom doc:b75891a8171a .
+doc:Factsmodel7_2 rdfs:label "variational autoencoder" .
+_:c9b6c04c87303ffdb89130aa3888962f rdf:reifies <<( doc:Factsmodel7_2 rdfs:label "variational autoencoder" )>> ;
+	prov:wasDerivedFrom doc:b75891a8171a .
+doc:Factsvar8 rdfs:label "feature dimension" .
+_:b381063264d7b6308cd3c7e4d20fbf0 rdf:reifies <<( doc:Factsvar8 rdfs:label "feature dimension" )>> ;
+	prov:wasDerivedFrom doc:b75891a8171a .
+doc:Factsvar19 rdfs:label "health degradation" .
+_:aaea6a58f7452de1c3897eef93adaa63 rdf:reifies <<( doc:Factsvar19 rdfs:label "health degradation" )>> ;
+	prov:wasDerivedFrom doc:b75891a8171a .
+<http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Predictive_maintenance_model> owl:sameAs <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Predictive_Maintenance_Article> .

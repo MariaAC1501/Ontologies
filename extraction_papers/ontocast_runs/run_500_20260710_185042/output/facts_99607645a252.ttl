@@ -1,0 +1,606 @@
+@prefix None: <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD/seed#> .
+@prefix cco: <http://www.ontologyrepository.com/CommonCoreOntologies/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doc: <https://growgraph.dev/doc/99607645a252/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix obo: <http://purl.obolibrary.org/obo/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix schema: <https://schema.org/> .
+@prefix schema1: <http://schema.org/> .
+doc:f426136b0051 a prov:Entity , schema:text ;
+	prov:generatedAtTime "2026-07-11T19:05:09.286697Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+	schema:position 0 ;
+	schema:identifier "f426136b0051" .
+doc:FactsAuthorGultekinIsik schema1:affiliation doc:FactsOrgIgdirUniversity .
+_:f652517ea4fc33c5f127d0a9f5172d19 rdf:reifies <<( doc:FactsAuthorGultekinIsik schema1:affiliation doc:FactsOrgIgdirUniversity )>> ;
+	prov:wasDerivedFrom doc:f426136b0051 .
+doc:FactsParamReductionMax cco:describes doc:FactsTabEngQLoRa .
+_:a2a8b22b6a594beb6c927dd0a5052ad1 rdf:reifies <<( doc:FactsParamReductionMax cco:describes doc:FactsTabEngQLoRa )>> ;
+	prov:wasDerivedFrom doc:f426136b0051 .
+doc:FactsPerfPeakMemoryMin a None:Performance_value .
+_:f85ac8fc1123974501e0c0379d94224c rdf:reifies <<( doc:FactsPerfPeakMemoryMin rdf:type None:Performance_value )>> ;
+	prov:wasDerivedFrom doc:f426136b0051 .
+doc:FactsDatasetMachinePred rdfs:label "Machine Predictive Maintenance Classification" .
+_:d424eeb3f8f86727a9c4b7a7e840ce0b rdf:reifies <<( doc:FactsDatasetMachinePred rdfs:label "Machine Predictive Maintenance Classification" )>> ;
+	prov:wasDerivedFrom doc:f426136b0051 .
+doc:FactsAuthorGultekinIsik schema1:email "seda.bayat@igdir.edu.tr" .
+_:d1ad872188e51a391b2f1bc2a40f2964 rdf:reifies <<( doc:FactsAuthorGultekinIsik schema1:email "seda.bayat@igdir.edu.tr" )>> ;
+	prov:wasDerivedFrom doc:f426136b0051 .
+doc:FactsOrgIgdirUniversity schema1:name "Igdir University" .
+_:ad46f981540dc55efff8172e67223629 rdf:reifies <<( doc:FactsOrgIgdirUniversity schema1:name "Igdir University" )>> ;
+	prov:wasDerivedFrom doc:f426136b0051 .
+doc:FactsDesign2 None:has_text_value "Saliency-guided rank allocation: compute layer-wise activation norms on a 500-sample calibration set and assign adapter ranks in three tiers (r = 8,16,32) by percentile thresholds." .
+_:b4b259eb7b3cafeef2c4e50bef34d1e2 rdf:reifies <<( doc:FactsDesign2 None:has_text_value "Saliency-guided rank allocation: compute layer-wise activation norms on a 500-sample calibration set and assign adapter ranks in three tiers (r = 8,16,32) by percentile thresholds." )>> ;
+	prov:wasDerivedFrom doc:f426136b0051 .
+doc:FactsDesign2 a None:Design_detail .
+_:f71ae6138967223a95f494e5a7115238 rdf:reifies <<( doc:FactsDesign2 rdf:type None:Design_detail )>> ;
+	prov:wasDerivedFrom doc:f426136b0051 .
+doc:FactsParamReductionMax None:has_text_value "maximum proportion of trainable parameters reduced (99.5%)" .
+_:fbb68d85fb78ec354800df5b3c1c5279 rdf:reifies <<( doc:FactsParamReductionMax None:has_text_value "maximum proportion of trainable parameters reduced (99.5%)" )>> ;
+	prov:wasDerivedFrom doc:f426136b0051 .
+doc:FactsParamReductionMax schema1:value 0.995 .
+_:a0caab12451305448987f58c201c8f3e rdf:reifies <<( doc:FactsParamReductionMax schema1:value 0.995 )>> ;
+	prov:wasDerivedFrom doc:f426136b0051 .
+doc:FactsPerfClosedGap None:has_text_value "reported zero-shot macro F1 for XGBoost retrained on 20% of target-domain data (XGBoost cannot perform zero-shot transfer)" .
+_:da99bc8fb26268297449df13c89555ea rdf:reifies <<( doc:FactsPerfClosedGap None:has_text_value "reported zero-shot macro F1 for XGBoost retrained on 20% of target-domain data (XGBoost cannot perform zero-shot transfer)" )>> ;
+	prov:wasDerivedFrom doc:f426136b0051 .
+doc:FactsCohenD cco:describes doc:FactsTabEngQLoRa .
+_:c1319ff1f7d3e7d75de8b04057986ed rdf:reifies <<( doc:FactsCohenD cco:describes doc:FactsTabEngQLoRa )>> ;
+	prov:wasDerivedFrom doc:f426136b0051 .
+doc:FactsPerfClosedGap cco:describes doc:FactsTabEngQLoRa .
+_:e57c3fff622e4b7721f94cc57b9d407d rdf:reifies <<( doc:FactsPerfClosedGap cco:describes doc:FactsTabEngQLoRa )>> ;
+	prov:wasDerivedFrom doc:f426136b0051 .
+doc:FactsSaliencyRankAllocation None:has_text_value "layer-wise activation norm profiling on a 500-sample calibration set; three-tier rank assignment (r in {8,16,32}) by percentile" .
+_:bd426f7aa1cf51ee713a657bccf9df30 rdf:reifies <<( doc:FactsSaliencyRankAllocation None:has_text_value "layer-wise activation norm profiling on a 500-sample calibration set; three-tier rank assignment (r in {8,16,32}) by percentile" )>> ;
+	prov:wasDerivedFrom doc:f426136b0051 .
+doc:FactsCohenD schema1:value 2.41 .
+_:e773ff10fedc78a67660f11e677f8e77 rdf:reifies <<( doc:FactsCohenD schema1:value 2.41 )>> ;
+	prov:wasDerivedFrom doc:f426136b0051 .
+doc:FactsTabEngQLoRa dcterms:references doc:FactsDatasetMachinePred .
+_:a7701f66d9da080a83cfa8c07ad4a773 rdf:reifies <<( doc:FactsTabEngQLoRa dcterms:references doc:FactsDatasetMachinePred )>> ;
+	prov:wasDerivedFrom doc:f426136b0051 .
+doc:FactsAuthorGultekinIsik a schema1:Person .
+_:da04d82cba42d7410422e843ceba99f8 rdf:reifies <<( doc:FactsAuthorGultekinIsik rdf:type schema1:Person )>> ;
+	prov:wasDerivedFrom doc:f426136b0051 .
+doc:FactsFeedForwardRouter a cco:Algorithm .
+_:d4c1630f3e2c89ac665cbc2a69128791 rdf:reifies <<( doc:FactsFeedForwardRouter rdf:type cco:Algorithm )>> ;
+	prov:wasDerivedFrom doc:f426136b0051 .
+doc:FactsCohenD a cco:DescriptiveInformationContentEntity .
+_:d15179b6a65fecf06576249f7491a283 rdf:reifies <<( doc:FactsCohenD rdf:type cco:DescriptiveInformationContentEntity )>> ;
+	prov:wasDerivedFrom doc:f426136b0051 .
+doc:FactsPerfPeakMemoryMin cco:describes doc:FactsTabEngQLoRa .
+_:aa7228ec64d033232c1c77f990c47fa8 rdf:reifies <<( doc:FactsPerfPeakMemoryMin cco:describes doc:FactsTabEngQLoRa )>> ;
+	prov:wasDerivedFrom doc:f426136b0051 .
+doc:FactsDesign2 None:has_text_value "Lightweight feed-forward domain router for automatic adapter selection (98.1% accuracy, 0.6 ms latency)." .
+_:f2238adf797576a7b509862977d326a8 rdf:reifies <<( doc:FactsDesign2 None:has_text_value "Lightweight feed-forward domain router for automatic adapter selection (98.1% accuracy, 0.6 ms latency)." )>> ;
+	prov:wasDerivedFrom doc:f426136b0051 .
+doc:FactsTabEngQLoRa None:has_design_detail doc:FactsDesign2 .
+_:c6d2f72914f49b7f539a9df08cafa6fa rdf:reifies <<( doc:FactsTabEngQLoRa None:has_design_detail doc:FactsDesign2 )>> ;
+	prov:wasDerivedFrom doc:f426136b0051 .
+doc:FactsPerfClosedGap a None:Performance_value .
+_:c83847ea9662bbb4c0402603d38774bb rdf:reifies <<( doc:FactsPerfClosedGap rdf:type None:Performance_value )>> ;
+	prov:wasDerivedFrom doc:f426136b0051 .
+doc:FactsTabEngQLoRa dcterms:references doc:Factsllama3_8B .
+_:a9931fb28a6638033fa1bd4df30c1509 rdf:reifies <<( doc:FactsTabEngQLoRa dcterms:references doc:Factsllama3_8B )>> ;
+	prov:wasDerivedFrom doc:f426136b0051 .
+doc:FactsTabEngQLoRa dcterms:created "2026-04-01"^^<http://www.w3.org/2001/XMLSchema#date> .
+_:cd86586bbdfda79e6cb8d95fac9a0e34 rdf:reifies <<( doc:FactsTabEngQLoRa dcterms:created "2026-04-01"^^<http://www.w3.org/2001/XMLSchema#date> )>> ;
+	prov:wasDerivedFrom doc:f426136b0051 .
+doc:FactsTabEngQLoRa cco:is_about doc:FactsTabEngQLoRa .
+_:fe9b249f4f2f1e6124a7492a53639242 rdf:reifies <<( doc:FactsTabEngQLoRa cco:is_about doc:FactsTabEngQLoRa )>> ;
+	prov:wasDerivedFrom doc:f426136b0051 .
+doc:FactsTabEngQLoRa cco:describes doc:FactsFeedForwardRouter .
+_:ee9bad7cfb9f120b2778b24df09a4e0f rdf:reifies <<( doc:FactsTabEngQLoRa cco:describes doc:FactsFeedForwardRouter )>> ;
+	prov:wasDerivedFrom doc:f426136b0051 .
+doc:FactsTabEngQLoRa a None:Predictive_Maintenance_Article .
+_:f385148934ca508c40db1d90359da573 rdf:reifies <<( doc:FactsTabEngQLoRa rdf:type None:Predictive_Maintenance_Article )>> ;
+	prov:wasDerivedFrom doc:f426136b0051 .
+doc:FactsQLoRa rdfs:label "QLoRA (Quantized Low-Rank Adaptation)" .
+_:cbd5c3e4fee49b91a1eb58434eb77801 rdf:reifies <<( doc:FactsQLoRa rdfs:label "QLoRA (Quantized Low-Rank Adaptation)" )>> ;
+	prov:wasDerivedFrom doc:f426136b0051 .
+doc:FactsTabEngQLoRa dcterms:creator doc:FactsAuthorGultekinIsik .
+_:edc20dab4f2dabf34366aae07905dc14 rdf:reifies <<( doc:FactsTabEngQLoRa dcterms:creator doc:FactsAuthorGultekinIsik )>> ;
+	prov:wasDerivedFrom doc:f426136b0051 .
+doc:FactsPerfClosedGap None:has_text_value "proportion (82%) of the gap to full fine-tuning closed by the framework" .
+_:fc707da7a0c475e5555fd06b382e82b4 rdf:reifies <<( doc:FactsPerfClosedGap None:has_text_value "proportion (82%) of the gap to full fine-tuning closed by the framework" )>> ;
+	prov:wasDerivedFrom doc:f426136b0051 .
+doc:Factsmistral_7B rdfs:label "Mistral-7B" .
+_:a4e20ee9e301e4b9f805a4dd9795da79 rdf:reifies <<( doc:Factsmistral_7B rdfs:label "Mistral-7B" )>> ;
+	prov:wasDerivedFrom doc:f426136b0051 .
+doc:FactsPubYear2026_4 a None:Publication_year .
+_:f26495fc7d6c068abd7598fc9176e732 rdf:reifies <<( doc:FactsPubYear2026_4 rdf:type None:Publication_year )>> ;
+	prov:wasDerivedFrom doc:f426136b0051 .
+doc:FactsPerfPeakMemoryMin schema1:value 4.6 .
+_:c8100ac746a98ec1accd484056ddb188 rdf:reifies <<( doc:FactsPerfPeakMemoryMin schema1:value 4.6 )>> ;
+	prov:wasDerivedFrom doc:f426136b0051 .
+doc:FactsParamReductionMax schema1:value 0.989 .
+_:daf89acd7dfd90b31f3531225dd6d2ee rdf:reifies <<( doc:FactsParamReductionMax schema1:value 0.989 )>> ;
+	prov:wasDerivedFrom doc:f426136b0051 .
+doc:FactsParamReductionMax a None:Performance_value .
+_:aa4052f1be8ec0df8b04cdfe29c7286d rdf:reifies <<( doc:FactsParamReductionMax rdf:type None:Performance_value )>> ;
+	prov:wasDerivedFrom doc:f426136b0051 .
+doc:FactsTitleTabEngQLoRa None:has_text_value "TabEng-QLoRA: Criticality-Aware Tabular-to-Text Adaptation of Large Language Models via Saliency-Guided Quantized Low-Rank Fine-Tuning" .
+_:b70e8f410148a2811174f27a19ea8087 rdf:reifies <<( doc:FactsTitleTabEngQLoRa None:has_text_value "TabEng-QLoRA: Criticality-Aware Tabular-to-Text Adaptation of Large Language Models via Saliency-Guided Quantized Low-Rank Fine-Tuning" )>> ;
+	prov:wasDerivedFrom doc:f426136b0051 .
+doc:FactsAuthorGultekinIsik schema1:name "Seda Bayat Toksoz" .
+_:c8f97f969bb850bddd66c12c23607ab1 rdf:reifies <<( doc:FactsAuthorGultekinIsik schema1:name "Seda Bayat Toksoz" )>> ;
+	prov:wasDerivedFrom doc:f426136b0051 .
+doc:FactsTitleTabEngQLoRa a None:Article_title .
+_:f3dcb3c87f86151ec53995eedae2f6c1 rdf:reifies <<( doc:FactsTitleTabEngQLoRa rdf:type None:Article_title )>> ;
+	prov:wasDerivedFrom doc:f426136b0051 .
+doc:FactsPerfPeakMemoryMin None:has_text_value "minimum reported peak GPU memory in GB" .
+_:f753ab86427dc0d24bcb87a4f4132924 rdf:reifies <<( doc:FactsPerfPeakMemoryMin None:has_text_value "minimum reported peak GPU memory in GB" )>> ;
+	prov:wasDerivedFrom doc:f426136b0051 .
+doc:FactsPerfClosedGap None:has_text_value "zero-shot macro F1 for cross-equipment transfer" .
+_:b9ed99e3bb25ef9f1530784d6928ab54 rdf:reifies <<( doc:FactsPerfClosedGap None:has_text_value "zero-shot macro F1 for cross-equipment transfer" )>> ;
+	prov:wasDerivedFrom doc:f426136b0051 .
+doc:FactsPubYear2026_4 None:has_interger_value 2026 .
+_:f94f741dcc643944435b6fc9ce806d86 rdf:reifies <<( doc:FactsPubYear2026_4 None:has_interger_value 2026 )>> ;
+	prov:wasDerivedFrom doc:f426136b0051 .
+doc:FactsTabEngQLoRa None:has_title doc:FactsTitleTabEngQLoRa .
+_:dfdc37dc0cad2795b7971c4b3b49314c rdf:reifies <<( doc:FactsTabEngQLoRa None:has_title doc:FactsTitleTabEngQLoRa )>> ;
+	prov:wasDerivedFrom doc:f426136b0051 .
+doc:Factsqwen2_7B rdfs:label "Qwen2-7B" .
+_:c60cfd0cd3f27fd0bab67795d8ba1c01 rdf:reifies <<( doc:Factsqwen2_7B rdfs:label "Qwen2-7B" )>> ;
+	prov:wasDerivedFrom doc:f426136b0051 .
+doc:FactsTabEngQLoRa dcterms:references doc:Factsmistral_7B .
+_:d97fb68b66dd58c62a290d7c38238190 rdf:reifies <<( doc:FactsTabEngQLoRa dcterms:references doc:Factsmistral_7B )>> ;
+	prov:wasDerivedFrom doc:f426136b0051 .
+doc:FactsPerfClosedGap schema1:value 0.743 .
+_:f9b67824ffa7630b6de20cac5770d7c3 rdf:reifies <<( doc:FactsPerfClosedGap schema1:value 0.743 )>> ;
+	prov:wasDerivedFrom doc:f426136b0051 .
+doc:FactsSaliencyRankAllocation rdfs:label "saliency-guided rank allocation" .
+_:d259485727cc22d494d437dd41eb6adf rdf:reifies <<( doc:FactsSaliencyRankAllocation rdfs:label "saliency-guided rank allocation" )>> ;
+	prov:wasDerivedFrom doc:f426136b0051 .
+doc:FactsTabEngQLoRa rdfs:label "TabEng-QLoRA" .
+_:b850d67c877a22e1438adf296e20f600 rdf:reifies <<( doc:FactsTabEngQLoRa rdfs:label "TabEng-QLoRA" )>> ;
+	prov:wasDerivedFrom doc:f426136b0051 .
+doc:FactsPerfPeakMemoryMin None:has_text_value "maximum reported peak GPU memory in GB" .
+_:c58ae3cd5baf2a615c1eb9e36d0fad65 rdf:reifies <<( doc:FactsPerfPeakMemoryMin None:has_text_value "maximum reported peak GPU memory in GB" )>> ;
+	prov:wasDerivedFrom doc:f426136b0051 .
+doc:FactsDatasetMachinePred rdfs:label "AI4I 2020 Predictive Maintenance Dataset" .
+_:d75f0c24b52023c672d35953f6006834 rdf:reifies <<( doc:FactsDatasetMachinePred rdfs:label "AI4I 2020 Predictive Maintenance Dataset" )>> ;
+	prov:wasDerivedFrom doc:f426136b0051 .
+doc:FactsParamReductionMax None:has_text_value "minimum proportion of trainable parameters reduced (98.9%)" .
+_:bb8e0b2d791ac43f3b33380594c0229 rdf:reifies <<( doc:FactsParamReductionMax None:has_text_value "minimum proportion of trainable parameters reduced (98.9%)" )>> ;
+	prov:wasDerivedFrom doc:f426136b0051 .
+doc:Factsqwen2_7B a None:Model_type .
+_:f59c5ba68a13b2a9e5f1c7919c8210b3 rdf:reifies <<( doc:Factsqwen2_7B rdf:type None:Model_type )>> ;
+	prov:wasDerivedFrom doc:f426136b0051 .
+doc:FactsDatasetMachinePred a cco:Database .
+_:f4171fc97b6e493c78285026bb2be92f rdf:reifies <<( doc:FactsDatasetMachinePred rdf:type cco:Database )>> ;
+	prov:wasDerivedFrom doc:f426136b0051 .
+doc:FactsTabEngQLoRa dcterms:issued "2026-04-19"^^<http://www.w3.org/2001/XMLSchema#date> .
+_:ff7592afb2b70f4d96e77e4005fc75f5 rdf:reifies <<( doc:FactsTabEngQLoRa dcterms:issued "2026-04-19"^^<http://www.w3.org/2001/XMLSchema#date> )>> ;
+	prov:wasDerivedFrom doc:f426136b0051 .
+doc:FactsTabEngQLoRa dcterms:modified "2026-04-14"^^<http://www.w3.org/2001/XMLSchema#date> .
+_:fc265350671830f909808e5b1022916d rdf:reifies <<( doc:FactsTabEngQLoRa dcterms:modified "2026-04-14"^^<http://www.w3.org/2001/XMLSchema#date> )>> ;
+	prov:wasDerivedFrom doc:f426136b0051 .
+doc:FactsPerfPeakMemoryMin schema1:value 5.2 .
+_:fea62be8de70fa09580db9f132e74b89 rdf:reifies <<( doc:FactsPerfPeakMemoryMin schema1:value 5.2 )>> ;
+	prov:wasDerivedFrom doc:f426136b0051 .
+doc:FactsTabEngQLoRa dcterms:references doc:FactsQLoRa .
+_:c1d45fd3e6e207fa77df0cc537073616 rdf:reifies <<( doc:FactsTabEngQLoRa dcterms:references doc:FactsQLoRa )>> ;
+	prov:wasDerivedFrom doc:f426136b0051 .
+doc:FactsTabEngQLoRa None:has_publication_year doc:FactsPubYear2026_4 .
+_:ac6ca92d2515eb027c34b7b00a9af7ee rdf:reifies <<( doc:FactsTabEngQLoRa None:has_publication_year doc:FactsPubYear2026_4 )>> ;
+	prov:wasDerivedFrom doc:f426136b0051 .
+doc:FactsTabEngQLoRa cco:describes doc:FactsSaliencyRankAllocation .
+_:c22bf46d14dbd27e4df9c15e57c75faf rdf:reifies <<( doc:FactsTabEngQLoRa cco:describes doc:FactsSaliencyRankAllocation )>> ;
+	prov:wasDerivedFrom doc:f426136b0051 .
+doc:FactsDesign2 None:has_text_value "Criticality-aware serialization that places fault-critical features in semantically prominent positions and encodes physical units and operational context." .
+_:d81dc00dcc8e754656a5decdc292304f rdf:reifies <<( doc:FactsDesign2 None:has_text_value "Criticality-aware serialization that places fault-critical features in semantically prominent positions and encodes physical units and operational context." )>> ;
+	prov:wasDerivedFrom doc:f426136b0051 .
+doc:FactsFeedForwardRouter rdfs:label "feed-forward domain router" .
+_:ba6fce1433ad216cb01e6e13eef0d312 rdf:reifies <<( doc:FactsFeedForwardRouter rdfs:label "feed-forward domain router" )>> ;
+	prov:wasDerivedFrom doc:f426136b0051 .
+doc:Factsmistral_7B a None:Model_type .
+_:b6a3ebe127443136f218229164ed2ec2 rdf:reifies <<( doc:Factsmistral_7B rdf:type None:Model_type )>> ;
+	prov:wasDerivedFrom doc:f426136b0051 .
+doc:FactsSaliencyRankAllocation a None:Data_mining_technique_function .
+_:cca73c3196a022142cacbec690e681ad rdf:reifies <<( doc:FactsSaliencyRankAllocation rdf:type None:Data_mining_technique_function )>> ;
+	prov:wasDerivedFrom doc:f426136b0051 .
+doc:FactsFeedForwardRouter None:has_text_value "single-layer feed-forward classifier for adapter selection" .
+_:d556b63a332a63c51ccf16f744a57f5d rdf:reifies <<( doc:FactsFeedForwardRouter None:has_text_value "single-layer feed-forward classifier for adapter selection" )>> ;
+	prov:wasDerivedFrom doc:f426136b0051 .
+doc:FactsFeedForwardRouter None:has_text_value "reported domain classification accuracy (98.1%) and inference latency (0.6 ms)" .
+_:b416275c66d8ceeeb6fed3b1c48c6283 rdf:reifies <<( doc:FactsFeedForwardRouter None:has_text_value "reported domain classification accuracy (98.1%) and inference latency (0.6 ms)" )>> ;
+	prov:wasDerivedFrom doc:f426136b0051 .
+doc:FactsOrgIgdirUniversity a schema1:CollegeOrUniversity .
+_:ef5f3ef8bc8020ee2d084fd0d9588e4a rdf:reifies <<( doc:FactsOrgIgdirUniversity rdf:type schema1:CollegeOrUniversity )>> ;
+	prov:wasDerivedFrom doc:f426136b0051 .
+doc:FactsCohenD schema1:value 0.001 .
+_:c35576f634c72ad3e7a1eac997f970c1 rdf:reifies <<( doc:FactsCohenD schema1:value 0.001 )>> ;
+	prov:wasDerivedFrom doc:f426136b0051 .
+doc:FactsAuthorGultekinIsik schema1:email "gultekin.isik@igdir.edu.tr" .
+_:e49c7303156204b5ac8c1f44fadf4e45 rdf:reifies <<( doc:FactsAuthorGultekinIsik schema1:email "gultekin.isik@igdir.edu.tr" )>> ;
+	prov:wasDerivedFrom doc:f426136b0051 .
+doc:FactsPerfClosedGap schema1:value 0.908 .
+_:b18bfaaf348761cda1cb7f1cccb89973 rdf:reifies <<( doc:FactsPerfClosedGap schema1:value 0.908 )>> ;
+	prov:wasDerivedFrom doc:f426136b0051 .
+doc:FactsCohenD None:has_text_value "Ablation results statistically significant" .
+_:c7270c83ce11f369cd3e0eea77c1fc36 rdf:reifies <<( doc:FactsCohenD None:has_text_value "Ablation results statistically significant" )>> ;
+	prov:wasDerivedFrom doc:f426136b0051 .
+doc:FactsPerfClosedGap schema1:value 0.106 .
+_:a58d1544ccab285ea347cd53d49024e3 rdf:reifies <<( doc:FactsPerfClosedGap schema1:value 0.106 )>> ;
+	prov:wasDerivedFrom doc:f426136b0051 .
+doc:FactsPerfClosedGap schema1:value 0.341 .
+_:acc01a3e2b2f6c0e0c22847667e09572 rdf:reifies <<( doc:FactsPerfClosedGap schema1:value 0.341 )>> ;
+	prov:wasDerivedFrom doc:f426136b0051 .
+doc:FactsCohenD None:has_text_value "Cohen's d effect size for reported improvements" .
+_:e3a08f7b2f63dd09c0dba9fcf98ecbf8 rdf:reifies <<( doc:FactsCohenD None:has_text_value "Cohen's d effect size for reported improvements" )>> ;
+	prov:wasDerivedFrom doc:f426136b0051 .
+doc:FactsDatasetCwruBearing rdfs:label "CWRU Bearing Dataset" .
+_:af261f6c2f7d7934393d65bad4e8342d rdf:reifies <<( doc:FactsDatasetCwruBearing rdfs:label "CWRU Bearing Dataset" )>> ;
+	prov:wasDerivedFrom doc:f426136b0051 .
+doc:FactsQLoRa a cco:Algorithm .
+_:c77ef7b896156d96b743db52301566cd rdf:reifies <<( doc:FactsQLoRa rdf:type cco:Algorithm )>> ;
+	prov:wasDerivedFrom doc:f426136b0051 .
+doc:FactsPerfClosedGap None:has_text_value "mean macro F1 achieved by TabEng-QLoRA (mean across evaluated benchmarks)" .
+_:d64e65c2a3d7ef3d9ce39def170185f1 rdf:reifies <<( doc:FactsPerfClosedGap None:has_text_value "mean macro F1 achieved by TabEng-QLoRA (mean across evaluated benchmarks)" )>> ;
+	prov:wasDerivedFrom doc:f426136b0051 .
+doc:FactsAuthorGultekinIsik schema1:name "Gultekin Isik" .
+_:cbc8f72819134de00e6b7a84e434d3ff rdf:reifies <<( doc:FactsAuthorGultekinIsik schema1:name "Gultekin Isik" )>> ;
+	prov:wasDerivedFrom doc:f426136b0051 .
+doc:FactsDatasetCwruBearing a cco:Database .
+_:b3d2642527eaf706a9b023f59e537c07 rdf:reifies <<( doc:FactsDatasetCwruBearing rdf:type cco:Database )>> ;
+	prov:wasDerivedFrom doc:f426136b0051 .
+doc:FactsTabEngQLoRa dcterms:references doc:Factsqwen2_7B .
+_:d0c87c931ce465393dcde9a51efcabc4 rdf:reifies <<( doc:FactsTabEngQLoRa dcterms:references doc:Factsqwen2_7B )>> ;
+	prov:wasDerivedFrom doc:f426136b0051 .
+doc:FactsTabEngQLoRa a None:Predictive_maintenance_model .
+_:cbefe347c3411617cad1e608b2ad6d32 rdf:reifies <<( doc:FactsTabEngQLoRa rdf:type None:Predictive_maintenance_model )>> ;
+	prov:wasDerivedFrom doc:f426136b0051 .
+doc:FactsPerfClosedGap schema1:value 0.82 .
+_:ecbfb3b9518698af10e62fd899a6786f rdf:reifies <<( doc:FactsPerfClosedGap schema1:value 0.82 )>> ;
+	prov:wasDerivedFrom doc:f426136b0051 .
+doc:FactsFeedForwardRouter schema1:value 0.981 .
+_:ebd3352381b89f0079267cdfaa27fe7c rdf:reifies <<( doc:FactsFeedForwardRouter schema1:value 0.981 )>> ;
+	prov:wasDerivedFrom doc:f426136b0051 .
+doc:FactsTabEngQLoRa dcterms:references doc:FactsDatasetCwruBearing .
+_:baa5976f75edd9e6adc3fc5703f5fd rdf:reifies <<( doc:FactsTabEngQLoRa dcterms:references doc:FactsDatasetCwruBearing )>> ;
+	prov:wasDerivedFrom doc:f426136b0051 .
+doc:Factsllama3_8B a None:Model_type .
+_:bdb77fea70cebf61d86e5e79a3a8d3bd rdf:reifies <<( doc:Factsllama3_8B rdf:type None:Model_type )>> ;
+	prov:wasDerivedFrom doc:f426136b0051 .
+doc:Factsllama3_8B rdfs:label "LLaMA-3-8B" .
+_:e98681050bfbc4d8a291dc7b47c31106 rdf:reifies <<( doc:Factsllama3_8B rdfs:label "LLaMA-3-8B" )>> ;
+	prov:wasDerivedFrom doc:f426136b0051 .
+doc:FactsPerfClosedGap None:has_text_value "absolute mean macro F1 gain over standard QLoRA (10.6 percentage points)" .
+_:f565ca5e2bd40366851109b16b76378c rdf:reifies <<( doc:FactsPerfClosedGap None:has_text_value "absolute mean macro F1 gain over standard QLoRA (10.6 percentage points)" )>> ;
+	prov:wasDerivedFrom doc:f426136b0051 .
+doc:8f2c4958a95e a prov:Entity , schema:text ;
+	prov:generatedAtTime "2026-07-11T19:05:09.293696Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+	schema:position 1 ;
+	schema:identifier "8f2c4958a95e" .
+doc:FactsDesign2 None:has_text_value "modal alignment and fuzzy semantic embedding for LLM fine-tuning with LoRA; adapted for fault diagnosis" .
+_:a5f653f9b1c1be16a5ffc7d545585326 rdf:reifies <<( doc:FactsDesign2 None:has_text_value "modal alignment and fuzzy semantic embedding for LLM fine-tuning with LoRA; adapted for fault diagnosis" )>> ;
+	prov:wasDerivedFrom doc:8f2c4958a95e .
+doc:FactsVibrationBearingDatasets None:has_text_value "vibration-based bearing-fault datasets (controlled settings)" .
+_:aca0da274a4472e831383d7ffc713453 rdf:reifies <<( doc:FactsVibrationBearingDatasets None:has_text_value "vibration-based bearing-fault datasets (controlled settings)" )>> ;
+	prov:wasDerivedFrom doc:8f2c4958a95e .
+_:cbefe347c3411617cad1e608b2ad6d32 prov:wasDerivedFrom doc:8f2c4958a95e .
+doc:FactsXgBoost_2 None:describes_type None:Classification .
+_:a816b2a43db7d8fdcf10d7fe93dbfde8 rdf:reifies <<( doc:FactsXgBoost_2 None:describes_type None:Classification )>> ;
+	prov:wasDerivedFrom doc:8f2c4958a95e .
+doc:FactsPerfClosedGap None:has_text_value "classification rates > 98% on controlled vibration-based bearing-fault datasets" .
+_:a8a84f97edfa481dc976345be004b863 rdf:reifies <<( doc:FactsPerfClosedGap None:has_text_value "classification rates > 98% on controlled vibration-based bearing-fault datasets" )>> ;
+	prov:wasDerivedFrom doc:8f2c4958a95e .
+doc:FactsXgBoost_2 cco:is_about doc:FactsPerfClosedGap .
+_:dc762d43daf70cc7ccbf668889fae379 rdf:reifies <<( doc:FactsXgBoost_2 cco:is_about doc:FactsPerfClosedGap )>> ;
+	prov:wasDerivedFrom doc:8f2c4958a95e .
+doc:Factspaper1_2 cco:is_about doc:FactsVibrationBearingDatasets .
+_:ce7ca1d09a8103d5f0bd19e53d9f4a8 rdf:reifies <<( doc:Factspaper1_2 cco:is_about doc:FactsVibrationBearingDatasets )>> ;
+	prov:wasDerivedFrom doc:8f2c4958a95e .
+doc:FactsHybridDlSwarm a cco:Algorithm .
+_:dce6ea4556a65d6093ac5990e483fd48 rdf:reifies <<( doc:FactsHybridDlSwarm rdf:type cco:Algorithm )>> ;
+	prov:wasDerivedFrom doc:8f2c4958a95e .
+doc:Factspaper1_2 cco:is_about doc:FactsTabEngQLoRa .
+_:befab76667b53f38a5522ec98e75e22e rdf:reifies <<( doc:Factspaper1_2 cco:is_about doc:FactsTabEngQLoRa )>> ;
+	prov:wasDerivedFrom doc:8f2c4958a95e .
+doc:FactsDesign2 None:has_text_value "modality gap and edge-deployment constraints often not addressed by non-LLM methods" .
+_:ad37fb1f86aa0d93d38236ea580d9e22 rdf:reifies <<( doc:FactsDesign2 None:has_text_value "modality gap and edge-deployment constraints often not addressed by non-LLM methods" )>> ;
+	prov:wasDerivedFrom doc:8f2c4958a95e .
+doc:FactsCnn_2 cco:is_about doc:FactsPerfClosedGap .
+_:c061a70fec6149feb868e7bbd38dad6b rdf:reifies <<( doc:FactsCnn_2 cco:is_about doc:FactsPerfClosedGap )>> ;
+	prov:wasDerivedFrom doc:8f2c4958a95e .
+doc:FactsSignalToTextEncoding a cco:Algorithm .
+_:e52ff92f884899fcb2af54ae6d0b7c43 rdf:reifies <<( doc:FactsSignalToTextEncoding rdf:type cco:Algorithm )>> ;
+	prov:wasDerivedFrom doc:8f2c4958a95e .
+_:c6d2f72914f49b7f539a9df08cafa6fa prov:wasDerivedFrom doc:8f2c4958a95e .
+doc:FactsEnsembleApproach a cco:Algorithm .
+_:c5ba6bfa5682fe2cbede208c4945c396 rdf:reifies <<( doc:FactsEnsembleApproach rdf:type cco:Algorithm )>> ;
+	prov:wasDerivedFrom doc:8f2c4958a95e .
+doc:FactsGradientBoosting_1 cco:is_about doc:FactstabularSensorData .
+_:e841906851e797ead5d693258c817a54 rdf:reifies <<( doc:FactsGradientBoosting_1 cco:is_about doc:FactstabularSensorData )>> ;
+	prov:wasDerivedFrom doc:8f2c4958a95e .
+doc:FactstabularToTextMethods None:has_text_value "converting tabular data to text for LLM processing has been explored" .
+_:aa7d3727fa99256e213cabab440ccde3 rdf:reifies <<( doc:FactstabularToTextMethods None:has_text_value "converting tabular data to text for LLM processing has been explored" )>> ;
+	prov:wasDerivedFrom doc:8f2c4958a95e .
+doc:FactsVibrationBearingDatasets a cco:Database .
+_:accd5a4aff922dd4ec3cd20caff2ea58 rdf:reifies <<( doc:FactsVibrationBearingDatasets rdf:type cco:Database )>> ;
+	prov:wasDerivedFrom doc:8f2c4958a95e .
+_:f71ae6138967223a95f494e5a7115238 prov:wasDerivedFrom doc:8f2c4958a95e .
+doc:FactsXgBoost_2 a cco:Algorithm .
+_:b6744e835d96981843151fd4b9e1ed18 rdf:reifies <<( doc:FactsXgBoost_2 rdf:type cco:Algorithm )>> ;
+	prov:wasDerivedFrom doc:8f2c4958a95e .
+doc:FactsDesign2 None:has_text_value "multi-task learning with signal-to-text encoding for joint fault diagnosis and remaining useful life prediction" .
+_:f2d68354c5cd89ea838b068cd660f41d rdf:reifies <<( doc:FactsDesign2 None:has_text_value "multi-task learning with signal-to-text encoding for joint fault diagnosis and remaining useful life prediction" )>> ;
+	prov:wasDerivedFrom doc:8f2c4958a95e .
+doc:FactsLlm_1 a cco:Algorithm .
+_:f5c32480ed7905ddadcab15fc1d097a8 rdf:reifies <<( doc:FactsLlm_1 rdf:type cco:Algorithm )>> ;
+	prov:wasDerivedFrom doc:8f2c4958a95e .
+doc:FactsPerfClosedGap None:has_text_value "F1 > 0.99 on binary failure-detection task" .
+_:cfc5a3fffbf5e9a47eab9081ffce39d4 rdf:reifies <<( doc:FactsPerfClosedGap None:has_text_value "F1 > 0.99 on binary failure-detection task" )>> ;
+	prov:wasDerivedFrom doc:8f2c4958a95e .
+_:c83847ea9662bbb4c0402603d38774bb prov:wasDerivedFrom doc:8f2c4958a95e .
+doc:FactsHybridDlSwarm None:describes_type None:Fault_identification .
+_:f13db6f2943c47e724a24d717d2155ac rdf:reifies <<( doc:FactsHybridDlSwarm None:describes_type None:Fault_identification )>> ;
+	prov:wasDerivedFrom doc:8f2c4958a95e .
+doc:FactsHybridDlSwarm None:has_design_detail doc:FactsDesign2 .
+_:d5d8c17cd63dca87432f780dbb0b6720 rdf:reifies <<( doc:FactsHybridDlSwarm None:has_design_detail doc:FactsDesign2 )>> ;
+	prov:wasDerivedFrom doc:8f2c4958a95e .
+doc:FactsSvm_3 a cco:Algorithm .
+_:d1a2da2621799493254c8791c146026c rdf:reifies <<( doc:FactsSvm_3 rdf:type cco:Algorithm )>> ;
+	prov:wasDerivedFrom doc:8f2c4958a95e .
+doc:FactsRandomForest_3 a cco:Algorithm .
+_:c9e864a765e700d5f2189e65d0697cdf rdf:reifies <<( doc:FactsRandomForest_3 rdf:type cco:Algorithm )>> ;
+	prov:wasDerivedFrom doc:8f2c4958a95e .
+doc:FactsCnn_2 a cco:Algorithm .
+_:a034bc9ce46021c7836c01fd120f31f6 rdf:reifies <<( doc:FactsCnn_2 rdf:type cco:Algorithm )>> ;
+	prov:wasDerivedFrom doc:8f2c4958a95e .
+doc:FactstabularToTextMethods a None:Model_type .
+_:a087ec870aba6eb241112ef6e5c05cf1 rdf:reifies <<( doc:FactstabularToTextMethods rdf:type None:Model_type )>> ;
+	prov:wasDerivedFrom doc:8f2c4958a95e .
+doc:FactsSvm_3 None:has_design_detail doc:FactsDesign2 .
+_:d83e045835449f022f1f3bc39fbba700 rdf:reifies <<( doc:FactsSvm_3 None:has_design_detail doc:FactsDesign2 )>> ;
+	prov:wasDerivedFrom doc:8f2c4958a95e .
+doc:Factspaper1_2 None:has_text_value "Paper discussing predictive maintenance methods, LLMs for industrial fault diagnosis, and tabular-to-text methods" .
+_:bf5766100b379dd2570bb9552a0e51a9 rdf:reifies <<( doc:Factspaper1_2 None:has_text_value "Paper discussing predictive maintenance methods, LLMs for industrial fault diagnosis, and tabular-to-text methods" )>> ;
+	prov:wasDerivedFrom doc:8f2c4958a95e .
+doc:FactsHybridDlSwarm None:has_text_value "hybrid deep learning combined with swarm intelligence optimization applied to smart manufacturing PdM for fault identification on robotic platforms" .
+_:d902dae637df27094358251df927252f rdf:reifies <<( doc:FactsHybridDlSwarm None:has_text_value "hybrid deep learning combined with swarm intelligence optimization applied to smart manufacturing PdM for fault identification on robotic platforms" )>> ;
+	prov:wasDerivedFrom doc:8f2c4958a95e .
+doc:FactsRandomForest_3 None:has_design_detail doc:FactsDesign2 .
+_:c4f097c52ce6fa9f815de475d102aae5 rdf:reifies <<( doc:FactsRandomForest_3 None:has_design_detail doc:FactsDesign2 )>> ;
+	prov:wasDerivedFrom doc:8f2c4958a95e .
+doc:Factspaper1_2 cco:is_about doc:Factsai4i_2020_Dataset .
+_:e7d413a926b45e1b11c843eeb978930d rdf:reifies <<( doc:Factspaper1_2 cco:is_about doc:Factsai4i_2020_Dataset )>> ;
+	prov:wasDerivedFrom doc:8f2c4958a95e .
+doc:Factspaper1_2 a None:Predictive_Maintenance_Article .
+_:a89872045d0e000f3efc8d6870032cb3 rdf:reifies <<( doc:Factspaper1_2 rdf:type None:Predictive_Maintenance_Article )>> ;
+	prov:wasDerivedFrom doc:8f2c4958a95e .
+doc:FactstabularSensorData a None:Data_variable .
+_:e0260ae5224aef52be4eb7511dc0a537 rdf:reifies <<( doc:FactstabularSensorData rdf:type None:Data_variable )>> ;
+	prov:wasDerivedFrom doc:8f2c4958a95e .
+doc:FactsTransformerVibrationAnalysis a cco:Algorithm .
+_:ef2bb2a3811fadf6d2c97a7a5868b86a rdf:reifies <<( doc:FactsTransformerVibrationAnalysis rdf:type cco:Algorithm )>> ;
+	prov:wasDerivedFrom doc:8f2c4958a95e .
+doc:FactsPerfClosedGap None:has_text_value "F1 range 0.85-0.96 depending on class imbalance and feature engineering" .
+_:c0c9d52b726db84e557243dd161a1f3d rdf:reifies <<( doc:FactsPerfClosedGap None:has_text_value "F1 range 0.85-0.96 depending on class imbalance and feature engineering" )>> ;
+	prov:wasDerivedFrom doc:8f2c4958a95e .
+doc:FactsLlm_1 cco:is_about doc:FactsPerfClosedGap .
+_:ab86e75b6ec7e990ea247f35e6f1b454 rdf:reifies <<( doc:FactsLlm_1 cco:is_about doc:FactsPerfClosedGap )>> ;
+	prov:wasDerivedFrom doc:8f2c4958a95e .
+doc:FactsGradientBoosting_1 a cco:Algorithm .
+_:eb0f2f9b87eb0253f6e8c38d94d4c22c rdf:reifies <<( doc:FactsGradientBoosting_1 rdf:type cco:Algorithm )>> ;
+	prov:wasDerivedFrom doc:8f2c4958a95e .
+doc:FactsDesign2 None:has_text_value "require signal-specific preprocessing and do not generalize across equipment types without substantial re-engineering" .
+_:f288d42bce682e8b073570de3275d061 rdf:reifies <<( doc:FactsDesign2 None:has_text_value "require signal-specific preprocessing and do not generalize across equipment types without substantial re-engineering" )>> ;
+	prov:wasDerivedFrom doc:8f2c4958a95e .
+doc:FactsSwarmIntelligenceOptimization a cco:Algorithm .
+_:e9ca57c978d28cdd7c8d7832f787faf2 rdf:reifies <<( doc:FactsSwarmIntelligenceOptimization rdf:type cco:Algorithm )>> ;
+	prov:wasDerivedFrom doc:8f2c4958a95e .
+doc:FactsRandomForest_3 cco:is_about doc:FactstabularSensorData .
+_:a40ae8bb5ff29ffe30c29eb24519d68e rdf:reifies <<( doc:FactsRandomForest_3 cco:is_about doc:FactstabularSensorData )>> ;
+	prov:wasDerivedFrom doc:8f2c4958a95e .
+doc:FactsSvm_3 cco:is_about doc:FactstabularSensorData .
+_:bd5a5846ef940c8810e11d092d83ed09 rdf:reifies <<( doc:FactsSvm_3 cco:is_about doc:FactstabularSensorData )>> ;
+	prov:wasDerivedFrom doc:8f2c4958a95e .
+doc:Factsai4i_2020_Dataset a cco:Database .
+_:c900e80d3c7e1bd6e6fed5d01a223da7 rdf:reifies <<( doc:Factsai4i_2020_Dataset rdf:type cco:Database )>> ;
+	prov:wasDerivedFrom doc:8f2c4958a95e .
+doc:FactsGradientBoosting_1 None:has_design_detail doc:FactsDesign2 .
+_:fda53f034ef63e00420314a38be45383 rdf:reifies <<( doc:FactsGradientBoosting_1 None:has_design_detail doc:FactsDesign2 )>> ;
+	prov:wasDerivedFrom doc:8f2c4958a95e .
+doc:FactsTabEngQLoRa None:describes_type None:Remaining_useful_life_estimation .
+_:e57930aa96a1b598fd62bd9bccc51712 rdf:reifies <<( doc:FactsTabEngQLoRa None:describes_type None:Remaining_useful_life_estimation )>> ;
+	prov:wasDerivedFrom doc:8f2c4958a95e .
+doc:FactsDesign2 None:has_text_value "none of the surveyed works addresses criticality-aware rank allocation for resource-constrained deployment" .
+_:d56c3538faa804d9b26624d906ac539b rdf:reifies <<( doc:FactsDesign2 None:has_text_value "none of the surveyed works addresses criticality-aware rank allocation for resource-constrained deployment" )>> ;
+	prov:wasDerivedFrom doc:8f2c4958a95e .
+doc:FactsSignalToTextEncoding None:has_text_value "encode vibration signals as text via string-based tokenization and statistical feature extraction for LLMs" .
+_:f45c078e5d6fb9201820b06ec3505f43 rdf:reifies <<( doc:FactsSignalToTextEncoding None:has_text_value "encode vibration signals as text via string-based tokenization and statistical feature extraction for LLMs" )>> ;
+	prov:wasDerivedFrom doc:8f2c4958a95e .
+doc:Factsai4i_2020_Dataset None:has_text_value "AI4I 2020 Predictive Maintenance Dataset" .
+_:ff1990191d8952686b20a5847286cc74 rdf:reifies <<( doc:Factsai4i_2020_Dataset None:has_text_value "AI4I 2020 Predictive Maintenance Dataset" )>> ;
+	prov:wasDerivedFrom doc:8f2c4958a95e .
+doc:fdf380d9a47b a prov:Entity , schema:text ;
+	prov:generatedAtTime "2026-07-11T19:05:09.297695Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+	schema:position 2 ;
+	schema:identifier "fdf380d9a47b" .
+doc:FactsMeasurableGains schema1:description "higher than raw numerical input" .
+_:f509c075d137735d44477e10c74c3c02 rdf:reifies <<( doc:FactsMeasurableGains schema1:description "higher than raw numerical input" )>> ;
+	prov:wasDerivedFrom doc:fdf380d9a47b .
+doc:FactsDeLTa a cco:Algorithm .
+_:f295824e2a04adc99f04e14e20d861bb rdf:reifies <<( doc:FactsDeLTa rdf:type cco:Algorithm )>> ;
+	prov:wasDerivedFrom doc:fdf380d9a47b .
+doc:FactsLlm_1 rdfs:label "large language model (LLM)" .
+_:e8a64f6506103454525d358bca12128b rdf:reifies <<( doc:FactsLlm_1 rdfs:label "large language model (LLM)" )>> ;
+	prov:wasDerivedFrom doc:fdf380d9a47b .
+doc:FactsDomainAwareTemplates schema1:description "Templates encoding engineering semantics for industrial/tabular applications." .
+_:fd392556fe03f00f9856c710c658f25f rdf:reifies <<( doc:FactsDomainAwareTemplates schema1:description "Templates encoding engineering semantics for industrial/tabular applications." )>> ;
+	prov:wasDerivedFrom doc:fdf380d9a47b .
+doc:FactsDeLTa cco:is_about doc:FactsLlm_1 .
+_:dc2d882ad8c2d47eaf1dd0b121b40b3a rdf:reifies <<( doc:FactsDeLTa cco:is_about doc:FactsLlm_1 )>> ;
+	prov:wasDerivedFrom doc:fdf380d9a47b .
+doc:FactsLlmClassificationTask a None:Classification .
+_:c8016a1f20b62c8792d8d6c2ae2a9ad1 rdf:reifies <<( doc:FactsLlmClassificationTask rdf:type None:Classification )>> ;
+	prov:wasDerivedFrom doc:fdf380d9a47b .
+doc:FactsMeasurableGains cco:describes doc:FactsLlmClassificationTask .
+_:dff5a28a22096be65aa145d3ddbbb3ac rdf:reifies <<( doc:FactsMeasurableGains cco:describes doc:FactsLlmClassificationTask )>> ;
+	prov:wasDerivedFrom doc:fdf380d9a47b .
+doc:FactsDeLTa schema1:result doc:FactsStateOfTheArtOnGeneralTabularBenchmarks .
+_:ad7ae6198095f529cc083f2e88d59865 rdf:reifies <<( doc:FactsDeLTa schema1:result doc:FactsStateOfTheArtOnGeneralTabularBenchmarks )>> ;
+	prov:wasDerivedFrom doc:fdf380d9a47b .
+doc:FactsFeatureNames rdfs:label "feature names" .
+_:cae3a1def2bcb86e21791f75335aec63 rdf:reifies <<( doc:FactsFeatureNames rdfs:label "feature names" )>> ;
+	prov:wasDerivedFrom doc:fdf380d9a47b .
+doc:FactsFangSurvey a schema1:ScholarlyArticle .
+_:e17b4646ea81998218a2049f9c446ec6 rdf:reifies <<( doc:FactsFangSurvey rdf:type schema1:ScholarlyArticle )>> ;
+	prov:wasDerivedFrom doc:fdf380d9a47b .
+_:d15179b6a65fecf06576249f7491a283 prov:wasDerivedFrom doc:fdf380d9a47b .
+doc:FactsFangSurvey cco:describes doc:FactsSerializationQuality .
+_:f33b5a2bc19041b0c1578d1dd4595958 rdf:reifies <<( doc:FactsFangSurvey cco:describes doc:FactsSerializationQuality )>> ;
+	prov:wasDerivedFrom doc:fdf380d9a47b .
+doc:FactsFangSurvey schema1:mentions doc:FactsPredictionTask .
+_:f85ea351a93cb0812df5b8d9e22e7197 rdf:reifies <<( doc:FactsFangSurvey schema1:mentions doc:FactsPredictionTask )>> ;
+	prov:wasDerivedFrom doc:fdf380d9a47b .
+doc:FactsEngineeringSemantics a None:Design_detail .
+_:c058c694307d3359819e38f5f674afec rdf:reifies <<( doc:FactsEngineeringSemantics rdf:type None:Design_detail )>> ;
+	prov:wasDerivedFrom doc:fdf380d9a47b .
+doc:FactsUnits cco:describes doc:FactsLlmClassificationTask .
+_:c8e8a35f5d03ae1ad70a7fa220fc697 rdf:reifies <<( doc:FactsUnits cco:describes doc:FactsLlmClassificationTask )>> ;
+	prov:wasDerivedFrom doc:fdf380d9a47b .
+doc:FactsMeasurableGains a None:Performance_value .
+_:cb377dcd416dcb39a7fdb8d8a85a22dc rdf:reifies <<( doc:FactsMeasurableGains rdf:type None:Performance_value )>> ;
+	prov:wasDerivedFrom doc:fdf380d9a47b .
+doc:FactsSerializationQuality a obo:BFO_0000019 .
+_:f9c9dce5f802dd1b9deb55557138f1fc rdf:reifies <<( doc:FactsSerializationQuality rdf:type obo:BFO_0000019 )>> ;
+	prov:wasDerivedFrom doc:fdf380d9a47b .
+doc:FactsDeLTa cco:is_about doc:FactsIndustrialFaultClassification .
+_:e59123514e6c69f08981fa1dea551af7 rdf:reifies <<( doc:FactsDeLTa cco:is_about doc:FactsIndustrialFaultClassification )>> ;
+	prov:wasDerivedFrom doc:fdf380d9a47b .
+doc:FactsDeLTa schema1:description "Not designed for domain-specific industrial fault classification" .
+_:a063378ba45807a9136469377ad7eb47 rdf:reifies <<( doc:FactsDeLTa schema1:description "Not designed for domain-specific industrial fault classification" )>> ;
+	prov:wasDerivedFrom doc:fdf380d9a47b .
+doc:FactsPredictionTask rdfs:label "understanding (task)" .
+_:b6602ccee808f842c8526b5389274286 rdf:reifies <<( doc:FactsPredictionTask rdfs:label "understanding (task)" )>> ;
+	prov:wasDerivedFrom doc:fdf380d9a47b .
+doc:FactsPredictionTask a cco:InformationContentEntity .
+_:cccd56d23a760227d80e8c135f21713a rdf:reifies <<( doc:FactsPredictionTask rdf:type cco:InformationContentEntity )>> ;
+	prov:wasDerivedFrom doc:fdf380d9a47b .
+doc:FactsDomainAwareTemplates cco:describes doc:FactsEngineeringSemantics .
+_:c5fc9acbfd61b55c045f67094c812297 rdf:reifies <<( doc:FactsDomainAwareTemplates cco:describes doc:FactsEngineeringSemantics )>> ;
+	prov:wasDerivedFrom doc:fdf380d9a47b .
+doc:FactsMeasurableGains rdfs:label "measurable gains in classification performance" .
+_:a1ef08399d71c820d71d1e7eb4e81cf rdf:reifies <<( doc:FactsMeasurableGains rdfs:label "measurable gains in classification performance" )>> ;
+	prov:wasDerivedFrom doc:fdf380d9a47b .
+doc:FactsUnits rdfs:label "units" .
+_:d25efe16ad0d436f7b3c57d9f97a04c7 rdf:reifies <<( doc:FactsUnits rdfs:label "units" )>> ;
+	prov:wasDerivedFrom doc:fdf380d9a47b .
+doc:FactsPredictionTask rdfs:label "generation (task)" .
+_:bb0f40bd98b4ae7005df1ccc336c80b2 rdf:reifies <<( doc:FactsPredictionTask rdfs:label "generation (task)" )>> ;
+	prov:wasDerivedFrom doc:fdf380d9a47b .
+doc:FactsMeasurableGains rdfs:label "improved classification accuracy" .
+_:f528b8fb58ed4cdb29e1296d4ab1855b rdf:reifies <<( doc:FactsMeasurableGains rdfs:label "improved classification accuracy" )>> ;
+	prov:wasDerivedFrom doc:fdf380d9a47b .
+doc:FactsSerializationQuality rdfs:label "serialization quality" .
+_:dc2aec217e97014f018a16dd0a2b9688 rdf:reifies <<( doc:FactsSerializationQuality rdfs:label "serialization quality" )>> ;
+	prov:wasDerivedFrom doc:fdf380d9a47b .
+doc:FactsUnits a cco:DescriptiveInformationContentEntity .
+_:ea8f32ac462f0ee5f6d65704d7efaf3e rdf:reifies <<( doc:FactsUnits rdf:type cco:DescriptiveInformationContentEntity )>> ;
+	prov:wasDerivedFrom doc:fdf380d9a47b .
+doc:FactsSerializationApproachTemplateBased a None:Data_mining_technique_function .
+_:b6bd41a2303921873d441c8b4c7ee9e8 rdf:reifies <<( doc:FactsSerializationApproachTemplateBased rdf:type None:Data_mining_technique_function )>> ;
+	prov:wasDerivedFrom doc:fdf380d9a47b .
+doc:FactsDeLTa rdfs:label "DeLTa" .
+_:d6557f20097f99d457494470b8c4aad1 rdf:reifies <<( doc:FactsDeLTa rdfs:label "DeLTa" )>> ;
+	prov:wasDerivedFrom doc:fdf380d9a47b .
+_:f5c32480ed7905ddadcab15fc1d097a8 prov:wasDerivedFrom doc:fdf380d9a47b .
+doc:FactsPredictionTask rdfs:label "prediction (task)" .
+_:f0012627b2e2162b09b5c16e4fa956fd rdf:reifies <<( doc:FactsPredictionTask rdfs:label "prediction (task)" )>> ;
+	prov:wasDerivedFrom doc:fdf380d9a47b .
+doc:FactsDeLTa cco:is_about doc:FactsTabularData .
+_:f7e36576e04083a81f188b96a4c31b23 rdf:reifies <<( doc:FactsDeLTa cco:is_about doc:FactsTabularData )>> ;
+	prov:wasDerivedFrom doc:fdf380d9a47b .
+doc:FactsTabularData a cco:InformationContentEntity .
+_:f91deedfb09439b37260d7ac9df09fc3 rdf:reifies <<( doc:FactsTabularData rdf:type cco:InformationContentEntity )>> ;
+	prov:wasDerivedFrom doc:fdf380d9a47b .
+doc:FactsDomainAwareTemplates schema1:result doc:FactsMeasurableGains .
+_:f452df78f7ddfadac4d0cc379a04d92f rdf:reifies <<( doc:FactsDomainAwareTemplates schema1:result doc:FactsMeasurableGains )>> ;
+	prov:wasDerivedFrom doc:fdf380d9a47b .
+doc:FactsSerializationApproachColumnValueConcatenation a None:Data_mining_technique_function .
+_:ff71eba16423f2b3176015e801a5d857 rdf:reifies <<( doc:FactsSerializationApproachColumnValueConcatenation rdf:type None:Data_mining_technique_function )>> ;
+	prov:wasDerivedFrom doc:fdf380d9a47b .
+doc:FactsLlmClassificationTask rdfs:label "LLM classification on tabular tasks" .
+_:d9f22ade62518a0b67db7d1ac608987d rdf:reifies <<( doc:FactsLlmClassificationTask rdfs:label "LLM classification on tabular tasks" )>> ;
+	prov:wasDerivedFrom doc:fdf380d9a47b .
+doc:FactsFeatureNames a None:Data_variable .
+_:cda33307ae6e3b356b24658d73410a0e rdf:reifies <<( doc:FactsFeatureNames rdf:type None:Data_variable )>> ;
+	prov:wasDerivedFrom doc:fdf380d9a47b .
+doc:FactsDomainAwareTemplates a None:Model_configuration .
+_:e0dd5dcecd9c9b11760ffd8361bcf1d4 rdf:reifies <<( doc:FactsDomainAwareTemplates rdf:type None:Model_configuration )>> ;
+	prov:wasDerivedFrom doc:fdf380d9a47b .
+doc:FactsEngineeringSemantics rdfs:label "engineering semantics" .
+_:d8faa1240b2bce4749d5e137850ec8ef rdf:reifies <<( doc:FactsEngineeringSemantics rdfs:label "engineering semantics" )>> ;
+	prov:wasDerivedFrom doc:fdf380d9a47b .
+doc:FactsStateOfTheArtOnGeneralTabularBenchmarks rdfs:label "state-of-the-art results on general tabular benchmarks" .
+_:b7c8db3807079824b2ac36e35b57d724 rdf:reifies <<( doc:FactsStateOfTheArtOnGeneralTabularBenchmarks rdfs:label "state-of-the-art results on general tabular benchmarks" )>> ;
+	prov:wasDerivedFrom doc:fdf380d9a47b .
+doc:FactsDomainAwareTemplates rdfs:label "domain-aware templates" .
+_:f2ced834c9eb99c3828a0a3972f25787 rdf:reifies <<( doc:FactsDomainAwareTemplates rdfs:label "domain-aware templates" )>> ;
+	prov:wasDerivedFrom doc:fdf380d9a47b .
+doc:FactsSerializationApproachTemplateBased rdfs:label "template-based serialization" .
+_:e50e55d943a60a06415a9ea679eaa744 rdf:reifies <<( doc:FactsSerializationApproachTemplateBased rdfs:label "template-based serialization" )>> ;
+	prov:wasDerivedFrom doc:fdf380d9a47b .
+doc:FactsRawNumericalInput a cco:DescriptiveInformationContentEntity .
+_:f2be5a6861381e2dfcf60f119bd7f628 rdf:reifies <<( doc:FactsRawNumericalInput rdf:type cco:DescriptiveInformationContentEntity )>> ;
+	prov:wasDerivedFrom doc:fdf380d9a47b .
+doc:FactsDecisionTreeRules rdfs:label "decision-tree rules (intermediaries)" .
+_:c8adfdf107bbd6789f684dbb2ec52768 rdf:reifies <<( doc:FactsDecisionTreeRules rdfs:label "decision-tree rules (intermediaries)" )>> ;
+	prov:wasDerivedFrom doc:fdf380d9a47b .
+doc:FactsIndustrialFaultClassification a None:Fault_detection .
+_:b9b39ded9c4e228326a022273ee15409 rdf:reifies <<( doc:FactsIndustrialFaultClassification rdf:type None:Fault_detection )>> ;
+	prov:wasDerivedFrom doc:fdf380d9a47b .
+doc:FactsStateOfTheArtOnGeneralTabularBenchmarks a None:Performance_value .
+_:a39ff2f104da3c9934718cf4d6d2054f rdf:reifies <<( doc:FactsStateOfTheArtOnGeneralTabularBenchmarks rdf:type None:Performance_value )>> ;
+	prov:wasDerivedFrom doc:fdf380d9a47b .
+doc:FactsMeasurableGains schema1:description "Improvement in LLM classification accuracy when feature names, units and contextual descriptions are included, compared to raw numerical input." .
+_:e8348e5df8224f3bd3bdea073ac593f6 rdf:reifies <<( doc:FactsMeasurableGains schema1:description "Improvement in LLM classification accuracy when feature names, units and contextual descriptions are included, compared to raw numerical input." )>> ;
+	prov:wasDerivedFrom doc:fdf380d9a47b .
+doc:FactsIndustrialFaultClassification rdfs:label "domain-specific industrial fault classification" .
+_:ea990bbd060a5b531a8cc3651e64c57b rdf:reifies <<( doc:FactsIndustrialFaultClassification rdfs:label "domain-specific industrial fault classification" )>> ;
+	prov:wasDerivedFrom doc:fdf380d9a47b .
+doc:FactsLlmClassificationTask rdfs:label "downstream classification tasks" .
+_:fc08bc316eaabb44523bd605fa80e713 rdf:reifies <<( doc:FactsLlmClassificationTask rdfs:label "downstream classification tasks" )>> ;
+	prov:wasDerivedFrom doc:fdf380d9a47b .
+doc:FactsCohenD cco:describes doc:FactsLlmClassificationTask .
+_:f47a0b5d4dfc6dfbbceb9fd4ee0494f3 rdf:reifies <<( doc:FactsCohenD cco:describes doc:FactsLlmClassificationTask )>> ;
+	prov:wasDerivedFrom doc:fdf380d9a47b .
+doc:FactsCohenD rdfs:label "contextual descriptions" .
+_:b2271c825455915abbd41eb81b9d6679 rdf:reifies <<( doc:FactsCohenD rdfs:label "contextual descriptions" )>> ;
+	prov:wasDerivedFrom doc:fdf380d9a47b .
+doc:FactsSerializationApproachColumnValueConcatenation rdfs:label "column-value concatenation" .
+_:c013c8404e7f2fdba0acda9988f37aa1 rdf:reifies <<( doc:FactsSerializationApproachColumnValueConcatenation rdfs:label "column-value concatenation" )>> ;
+	prov:wasDerivedFrom doc:fdf380d9a47b .
+doc:FactsMeasurableGains schema1:description "Empirically observed improvements on downstream classification tasks when using domain-aware, engineering-semantic templates." .
+_:a5f5042833a28229da31d537114de474 rdf:reifies <<( doc:FactsMeasurableGains schema1:description "Empirically observed improvements on downstream classification tasks when using domain-aware, engineering-semantic templates." )>> ;
+	prov:wasDerivedFrom doc:fdf380d9a47b .
+doc:FactsIndustrialFaultClassification a None:Classification .
+_:ce626e278a34aeba02607a74a5f2fafa rdf:reifies <<( doc:FactsIndustrialFaultClassification rdf:type None:Classification )>> ;
+	prov:wasDerivedFrom doc:fdf380d9a47b .
+doc:FactsRawNumericalInput rdfs:label "raw numerical input" .
+_:bbde33add5ac6f6868c20bd68f38b3a0 rdf:reifies <<( doc:FactsRawNumericalInput rdfs:label "raw numerical input" )>> ;
+	prov:wasDerivedFrom doc:fdf380d9a47b .
+doc:FactsFeatureNames cco:describes doc:FactsLlmClassificationTask .
+_:c2ff1721dc99f62f4e0c7532f43b2e29 rdf:reifies <<( doc:FactsFeatureNames cco:describes doc:FactsLlmClassificationTask )>> ;
+	prov:wasDerivedFrom doc:fdf380d9a47b .
+doc:FactsDecisionTreeRules a None:Data_mining_technique_function .
+_:b2856920d4498eb2d1a4a32597c01d09 rdf:reifies <<( doc:FactsDecisionTreeRules rdf:type None:Data_mining_technique_function )>> ;
+	prov:wasDerivedFrom doc:fdf380d9a47b .
+doc:FactsFangSurvey rdfs:label "Fang et al. survey on LLM applications to tabular data" .
+_:c48b0801d2f22b2d1c7710acaa18996c rdf:reifies <<( doc:FactsFangSurvey rdfs:label "Fang et al. survey on LLM applications to tabular data" )>> ;
+	prov:wasDerivedFrom doc:fdf380d9a47b .
+doc:FactsDeLTa schema1:description "Approach integrating LLMs with tabular data using decision-tree rules as intermediaries; avoids direct serialization and leverages LLM reasoning to refine decision boundaries." .
+_:bd37dddacab65ffeda374c7427f64c29 rdf:reifies <<( doc:FactsDeLTa schema1:description "Approach integrating LLMs with tabular data using decision-tree rules as intermediaries; avoids direct serialization and leverages LLM reasoning to refine decision boundaries." )>> ;
+	prov:wasDerivedFrom doc:fdf380d9a47b .
+doc:FactsDeLTa cco:is_about doc:FactsDecisionTreeRules .
+_:c45492f6d1d7d9a9f4269ce815969e70 rdf:reifies <<( doc:FactsDeLTa cco:is_about doc:FactsDecisionTreeRules )>> ;
+	prov:wasDerivedFrom doc:fdf380d9a47b .
+doc:FactsTabularData rdfs:label "tabular data" .
+_:cb649ad4fc76d292c8caa40b51cd2df rdf:reifies <<( doc:FactsTabularData rdfs:label "tabular data" )>> ;
+	prov:wasDerivedFrom doc:fdf380d9a47b .
+cco:InformationContentEntity owl:sameAs cco:DescriptiveInformationContentEntity .

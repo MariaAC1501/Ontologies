@@ -1,0 +1,651 @@
+@prefix None: <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD/seed#> .
+@prefix cco: <http://www.ontologyrepository.com/CommonCoreOntologies/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doc: <https://growgraph.dev/doc/e4726e040ad7/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix cd: <https://growgraph.dev/facts> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix schema: <https://schema.org/> .
+doc:3a40a2d54541 a prov:Entity , schema:text ;
+	prov:generatedAtTime "2026-07-13T15:19:07.811618Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+	schema:position 0 ;
+	schema:identifier "3a40a2d54541" .
+doc:Factsprognosis dcterms:issued "2026-01-23"^^<http://www.w3.org/2001/XMLSchema#date> .
+_:ba419b969329a24e7101a13a76e3316a rdf:reifies <<( doc:Factsprognosis dcterms:issued "2026-01-23"^^<http://www.w3.org/2001/XMLSchema#date> )>> ;
+	prov:wasDerivedFrom doc:3a40a2d54541 .
+doc:Factsauthor6_27 schema:name "Saleh Al Dawsari" .
+_:c7588d6abf8f2de860816078a8b195d3 rdf:reifies <<( doc:Factsauthor6_27 schema:name "Saleh Al Dawsari" )>> ;
+	prov:wasDerivedFrom doc:3a40a2d54541 .
+doc:Factsprognosis dcterms:creator doc:Factsauthor6_27 .
+_:d48e63ac5535b2a523b697cc048a4cac rdf:reifies <<( doc:Factsprognosis dcterms:creator doc:Factsauthor6_27 )>> ;
+	prov:wasDerivedFrom doc:3a40a2d54541 .
+doc:Factsauthor6_27 a schema:Person .
+_:ca8bc19161cd00b43976c2168bb7fc99 rdf:reifies <<( doc:Factsauthor6_27 rdf:type schema:Person )>> ;
+	prov:wasDerivedFrom doc:3a40a2d54541 .
+doc:Factsimprovement None:has_text_value "1.00" .
+_:c8812324228045e26f8ae92c697dd33e rdf:reifies <<( doc:Factsimprovement None:has_text_value "1.00" )>> ;
+	prov:wasDerivedFrom doc:3a40a2d54541 .
+doc:Factsimprovement rdfs:label "F1-score" .
+_:af49cd1b63aa7170b8d1c50856bb8d6a rdf:reifies <<( doc:Factsimprovement rdfs:label "F1-score" )>> ;
+	prov:wasDerivedFrom doc:3a40a2d54541 .
+doc:Factsimprovement a None:Performance_indicator .
+_:e64709da4ad1634c883c25ff6d51b2a rdf:reifies <<( doc:Factsimprovement rdf:type None:Performance_indicator )>> ;
+	prov:wasDerivedFrom doc:3a40a2d54541 .
+doc:Factsprognosis dcterms:subject doc:Factsprognosis .
+_:fb44cd0e19c7b5cb2ec78585a83eb8b8 rdf:reifies <<( doc:Factsprognosis dcterms:subject doc:Factsprognosis )>> ;
+	prov:wasDerivedFrom doc:3a40a2d54541 .
+doc:Factsprognosis None:has_publication_year doc:Factsarticle1_year_12 .
+_:fad9957aa48bf6259b93865787c187b9 rdf:reifies <<( doc:Factsprognosis None:has_publication_year doc:Factsarticle1_year_12 )>> ;
+	prov:wasDerivedFrom doc:3a40a2d54541 .
+doc:Factsprognosis dcterms:subject doc:FactsScada_1 .
+_:ad18e22a0cc887f4834073fd6937ca6a rdf:reifies <<( doc:Factsprognosis dcterms:subject doc:FactsScada_1 )>> ;
+	prov:wasDerivedFrom doc:3a40a2d54541 .
+doc:Factssignal3_3 rdfs:label "wind speed" .
+_:f812d70b876905b4dd768b8592db4361 rdf:reifies <<( doc:Factssignal3_3 rdfs:label "wind speed" )>> ;
+	prov:wasDerivedFrom doc:3a40a2d54541 .
+doc:Factsarticle1_year_12 a None:Publication_year .
+_:ab00bd5e333fbbd98513ca4298d1c78 rdf:reifies <<( doc:Factsarticle1_year_12 rdf:type None:Publication_year )>> ;
+	prov:wasDerivedFrom doc:3a40a2d54541 .
+doc:Factsmodel_type1_2 a None:Model_type .
+_:b337bf2cab834ba6ab6158e79d566d92 rdf:reifies <<( doc:Factsmodel_type1_2 rdf:type None:Model_type )>> ;
+	prov:wasDerivedFrom doc:3a40a2d54541 .
+doc:Factscomponent2_7 a None:Maintainable_item .
+_:b3963ce21e026d6de62f46dac35718ca rdf:reifies <<( doc:Factscomponent2_7 rdf:type None:Maintainable_item )>> ;
+	prov:wasDerivedFrom doc:3a40a2d54541 .
+doc:Factsprognosis schema:keywords "class imbalance" .
+_:d8eac11e314bbc2ddbe615771a70c33b rdf:reifies <<( doc:Factsprognosis schema:keywords "class imbalance" )>> ;
+	prov:wasDerivedFrom doc:3a40a2d54541 .
+doc:Factsimprovement a None:Performance_value .
+_:b61d207eb06ab41f9b027b51987b504e rdf:reifies <<( doc:Factsimprovement rdf:type None:Performance_value )>> ;
+	prov:wasDerivedFrom doc:3a40a2d54541 .
+doc:Factsprognosis a None:Health_assessment .
+_:b68ff76ad20a1f854653751cf942df52 rdf:reifies <<( doc:Factsprognosis rdf:type None:Health_assessment )>> ;
+	prov:wasDerivedFrom doc:3a40a2d54541 .
+doc:Factsauthor6_27 schema:name "Saifur Rahman" .
+_:dd85ed5174cd2a2df4e5f6b5e1815aac rdf:reifies <<( doc:Factsauthor6_27 schema:name "Saifur Rahman" )>> ;
+	prov:wasDerivedFrom doc:3a40a2d54541 .
+doc:Factsmethod1_26 a None:Association_discovery .
+_:eb64eaad376461bcd84faca0f223f0a2 rdf:reifies <<( doc:Factsmethod1_26 rdf:type None:Association_discovery )>> ;
+	prov:wasDerivedFrom doc:3a40a2d54541 .
+doc:Factsprognosis schema:keywords "Wind turbine fault detection" .
+_:af02840ab786d4e51aa71106f891ed10 rdf:reifies <<( doc:Factsprognosis schema:keywords "Wind turbine fault detection" )>> ;
+	prov:wasDerivedFrom doc:3a40a2d54541 .
+doc:Factsprognosis rdfs:label "fault detection" .
+_:ca31fde49f14d280e4d78147f7b2bb41 rdf:reifies <<( doc:Factsprognosis rdfs:label "fault detection" )>> ;
+	prov:wasDerivedFrom doc:3a40a2d54541 .
+doc:Factsprognosis dcterms:publisher doc:Factsjournal1_28 .
+_:fc54e4ae7576eda9e0c6cceb86d45ddb rdf:reifies <<( doc:Factsprognosis dcterms:publisher doc:Factsjournal1_28 )>> ;
+	prov:wasDerivedFrom doc:3a40a2d54541 .
+doc:Factsprognosis None:has_predictive_maintenance_function doc:Factsfuture_state_function1 .
+_:bf0fe7fd11c95ca48e0f2243b5725110 rdf:reifies <<( doc:Factsprognosis None:has_predictive_maintenance_function doc:Factsfuture_state_function1 )>> ;
+	prov:wasDerivedFrom doc:3a40a2d54541 .
+doc:Factsdataset1_31 dcterms:temporal "2018-2019" .
+_:ea5a6e5108bba3f33b26aef6d2c88346 rdf:reifies <<( doc:Factsdataset1_31 dcterms:temporal "2018-2019" )>> ;
+	prov:wasDerivedFrom doc:3a40a2d54541 .
+doc:Factssignal4 rdfs:label "temperature" .
+_:bb52cd98f4272a4dc7a08c4f77088de1 rdf:reifies <<( doc:Factssignal4 rdfs:label "temperature" )>> ;
+	prov:wasDerivedFrom doc:3a40a2d54541 .
+doc:Factsjournal1_28 a schema:Periodical .
+_:bfa531eeb76a0970a4c25e061b846041 rdf:reifies <<( doc:Factsjournal1_28 rdf:type schema:Periodical )>> ;
+	prov:wasDerivedFrom doc:3a40a2d54541 .
+doc:Factsprognosis None:has_title doc:Factsid1_86 .
+_:e5fac9725ceec9ec021b0bd73b502216 rdf:reifies <<( doc:Factsprognosis None:has_title doc:Factsid1_86 )>> ;
+	prov:wasDerivedFrom doc:3a40a2d54541 .
+doc:Factssignal1_7 a None:Data_variable .
+_:d32ebe873b308cc390ea4588896fe570 rdf:reifies <<( doc:Factssignal1_7 rdf:type None:Data_variable )>> ;
+	prov:wasDerivedFrom doc:3a40a2d54541 .
+doc:Factsprognosis None:has_predictive_maintenance_function doc:Factsprognosis .
+_:adba3ed3f0991b64f2acd03a1ac20936 rdf:reifies <<( doc:Factsprognosis None:has_predictive_maintenance_function doc:Factsprognosis )>> ;
+	prov:wasDerivedFrom doc:3a40a2d54541 .
+doc:Factswind_turbine1_2 rdfs:label "wind turbine" .
+_:e894925a5db21038284bf2fccb552e25 rdf:reifies <<( doc:Factswind_turbine1_2 rdfs:label "wind turbine" )>> ;
+	prov:wasDerivedFrom doc:3a40a2d54541 .
+doc:Factssignal5 rdfs:label "rotor speed" .
+_:a478683c78a5a663da915a7c28bf5794 rdf:reifies <<( doc:Factssignal5 rdfs:label "rotor speed" )>> ;
+	prov:wasDerivedFrom doc:3a40a2d54541 .
+doc:Factsprognosis a None:Predictive_Maintenance_Article .
+_:b4db5e62eb2ca75beb7b15dbe630c02a rdf:reifies <<( doc:Factsprognosis rdf:type None:Predictive_Maintenance_Article )>> ;
+	prov:wasDerivedFrom doc:3a40a2d54541 .
+doc:Factsid1_86 a None:Article_title .
+_:abf9b7f0bf61bf557a8086018d5dda1 rdf:reifies <<( doc:Factsid1_86 rdf:type None:Article_title )>> ;
+	prov:wasDerivedFrom doc:3a40a2d54541 .
+doc:Factsprognosis a None:Predictive_maintenance_module_function .
+_:f2f36bb499f7f702dddaac073eaccbf3 rdf:reifies <<( doc:Factsprognosis rdf:type None:Predictive_maintenance_module_function )>> ;
+	prov:wasDerivedFrom doc:3a40a2d54541 .
+doc:Factscomponent2_7 rdfs:label "main bearings" .
+_:f8ed59c0099f382236afa8dbcaadfde9 rdf:reifies <<( doc:Factscomponent2_7 rdfs:label "main bearings" )>> ;
+	prov:wasDerivedFrom doc:3a40a2d54541 .
+doc:Factsprognosis dcterms:subject doc:Factsss_gen1 .
+_:defbe2b18e5270d7d9b970c263a66fc8 rdf:reifies <<( doc:Factsprognosis dcterms:subject doc:Factsss_gen1 )>> ;
+	prov:wasDerivedFrom doc:3a40a2d54541 .
+doc:Factsprognosis a None:Predictive_maintenance_system_module .
+_:e5ebeca8c334868142b7491e32e8dc40 rdf:reifies <<( doc:Factsprognosis rdf:type None:Predictive_maintenance_system_module )>> ;
+	prov:wasDerivedFrom doc:3a40a2d54541 .
+doc:Factsproblem1_4 a None:Deviation_detection .
+_:c7a0d15cfcdba67dbba842e79f9a4f9f rdf:reifies <<( doc:Factsproblem1_4 rdf:type None:Deviation_detection )>> ;
+	prov:wasDerivedFrom doc:3a40a2d54541 .
+doc:Factsmodel_type1_2 None:has_text_value "hybrid state-space and generative model" .
+_:f28c58eabdeadd8be13ee93b398a00bb rdf:reifies <<( doc:Factsmodel_type1_2 None:has_text_value "hybrid state-space and generative model" )>> ;
+	prov:wasDerivedFrom doc:3a40a2d54541 .
+doc:Factscomponent2_7 rdfs:label "gearboxes" .
+_:c93b77cf88c402b7624d84234cb5ccda rdf:reifies <<( doc:Factscomponent2_7 rdfs:label "gearboxes" )>> ;
+	prov:wasDerivedFrom doc:3a40a2d54541 .
+doc:Factsid1_86 None:has_text_value "Enhancing Wind Turbine Reliability: A Hybrid State-Space and Generative Approach to SCADA-Based Fault Detection" .
+_:b6d7a304bbbf00da6db1d98a789323f5 rdf:reifies <<( doc:Factsid1_86 None:has_text_value "Enhancing Wind Turbine Reliability: A Hybrid State-Space and Generative Approach to SCADA-Based Fault Detection" )>> ;
+	prov:wasDerivedFrom doc:3a40a2d54541 .
+doc:Factsjournal1_28 schema:name "Revista Internacional de MÃ©todos NumÃ©ricos para CÃ¡lculo y DiseÃ±o en IngenierÃ­a" .
+_:b76b0abd31144597d3eaa860c076366e rdf:reifies <<( doc:Factsjournal1_28 schema:name "Revista Internacional de MÃ©todos NumÃ©ricos para CÃ¡lculo y DiseÃ±o en IngenierÃ­a" )>> ;
+	prov:wasDerivedFrom doc:3a40a2d54541 .
+doc:Factsdataset1_31 rdfs:label "35,000-sample SCADA dataset (2018-2019)" .
+_:a21b88e678b6cd528f412e71e58005c5 rdf:reifies <<( doc:Factsdataset1_31 rdfs:label "35,000-sample SCADA dataset (2018-2019)" )>> ;
+	prov:wasDerivedFrom doc:3a40a2d54541 .
+doc:Factsprognosis rdfs:label "predictive maintenance" .
+_:daa35cec94475c5d04382a5103f3ecf2 rdf:reifies <<( doc:Factsprognosis rdfs:label "predictive maintenance" )>> ;
+	prov:wasDerivedFrom doc:3a40a2d54541 .
+doc:Factsimprovement rdfs:label "accuracy" .
+_:e25b8c50299b85d4b8c1100cfe0f7029 rdf:reifies <<( doc:Factsimprovement rdfs:label "accuracy" )>> ;
+	prov:wasDerivedFrom doc:3a40a2d54541 .
+doc:Factsprognosis schema:keywords "state-space modeling" .
+_:b80f7e0201e711f00ea2bcb6e2be6571 rdf:reifies <<( doc:Factsprognosis schema:keywords "state-space modeling" )>> ;
+	prov:wasDerivedFrom doc:3a40a2d54541 .
+doc:Factsauthor6_27 schema:name "Abdullah Shaher" .
+_:c7b2d3bd53824d353353e4bbc7ecd46 rdf:reifies <<( doc:Factsauthor6_27 schema:name "Abdullah Shaher" )>> ;
+	prov:wasDerivedFrom doc:3a40a2d54541 .
+doc:Factsauthor6_27 schema:name "Abdullah Hassan" .
+_:a05c48bc2d5be6262d9b95439c1d477b rdf:reifies <<( doc:Factsauthor6_27 schema:name "Abdullah Hassan" )>> ;
+	prov:wasDerivedFrom doc:3a40a2d54541 .
+doc:Factsprognosis schema:keywords "seasonal analysis" .
+_:ed37e78bf1658fb23bff850cb62479ea rdf:reifies <<( doc:Factsprognosis schema:keywords "seasonal analysis" )>> ;
+	prov:wasDerivedFrom doc:3a40a2d54541 .
+doc:Factsprognosis schema:keywords "anomaly detection" .
+_:d6ec6911f271264bb70fb3e0909a6c78 rdf:reifies <<( doc:Factsprognosis schema:keywords "anomaly detection" )>> ;
+	prov:wasDerivedFrom doc:3a40a2d54541 .
+doc:Factssignal3_3 a None:Data_variable .
+_:ceffc3e7d9b461a848005fa9b3d5166e rdf:reifies <<( doc:Factssignal3_3 rdf:type None:Data_variable )>> ;
+	prov:wasDerivedFrom doc:3a40a2d54541 .
+doc:Factsarticle1_year_12 None:has_interger_value 2026 .
+_:bd7b619e3f7bd4cca58ebd53151c7e73 rdf:reifies <<( doc:Factsarticle1_year_12 None:has_interger_value 2026 )>> ;
+	prov:wasDerivedFrom doc:3a40a2d54541 .
+doc:Factsprognosis schema:keywords "machine learning" .
+_:fec7ccca027c4e99152f518098460d7b rdf:reifies <<( doc:Factsprognosis schema:keywords "machine learning" )>> ;
+	prov:wasDerivedFrom doc:3a40a2d54541 .
+doc:Factsprognosis dcterms:title "Enhancing Wind Turbine Reliability: A Hybrid State-Space and Generative Approach to SCADA-Based Fault Detection" .
+_:c594a69ea56e7fdfc927bb880fcd75fe rdf:reifies <<( doc:Factsprognosis dcterms:title "Enhancing Wind Turbine Reliability: A Hybrid State-Space and Generative Approach to SCADA-Based Fault Detection" )>> ;
+	prov:wasDerivedFrom doc:3a40a2d54541 .
+doc:Factsss_gen1 rdfs:label "StateSpaceNetWithGen" .
+_:e57c7d7ba93223a4ad11293749d5f3bb rdf:reifies <<( doc:Factsss_gen1 rdfs:label "StateSpaceNetWithGen" )>> ;
+	prov:wasDerivedFrom doc:3a40a2d54541 .
+doc:Factsauthor6_27 schema:name "Nabeel Ahmed Khan" .
+_:bbe7f7c8dcbece2b1d3d31fd9115a25f rdf:reifies <<( doc:Factsauthor6_27 schema:name "Nabeel Ahmed Khan" )>> ;
+	prov:wasDerivedFrom doc:3a40a2d54541 .
+doc:Factsprognosis schema:keywords "SCADA data" .
+_:bbd4cbb623cb0acd7252afda0d146bfa rdf:reifies <<( doc:Factsprognosis schema:keywords "SCADA data" )>> ;
+	prov:wasDerivedFrom doc:3a40a2d54541 .
+doc:Factssignal2_1 a None:Data_variable .
+_:c6ae5198e53bf43b8bc9e1307c3bc66f rdf:reifies <<( doc:Factssignal2_1 rdf:type None:Data_variable )>> ;
+	prov:wasDerivedFrom doc:3a40a2d54541 .
+doc:Factsdataset1_31 None:has_interger_value 35000 .
+_:ef7c07a409c3aaf33eebb8548ed5c27a rdf:reifies <<( doc:Factsdataset1_31 None:has_interger_value 35000 )>> ;
+	prov:wasDerivedFrom doc:3a40a2d54541 .
+doc:Factsprognosis None:has_identifier doc:Factsid1_86 .
+_:a53f7c9354d08bb37a736c175ac9a943 rdf:reifies <<( doc:Factsprognosis None:has_identifier doc:Factsid1_86 )>> ;
+	prov:wasDerivedFrom doc:3a40a2d54541 .
+doc:Factsprognosis a None:Fault_detection .
+_:b67bf4643756d01bdd6bc92e317370 rdf:reifies <<( doc:Factsprognosis rdf:type None:Fault_detection )>> ;
+	prov:wasDerivedFrom doc:3a40a2d54541 .
+doc:Factssignal5 a None:Data_variable .
+_:db3089e8ae68400077082dd9d58331fd rdf:reifies <<( doc:Factssignal5 rdf:type None:Data_variable )>> ;
+	prov:wasDerivedFrom doc:3a40a2d54541 .
+doc:Factssignal1_7 rdfs:label "vibration" .
+_:fee6b10397c700f901d40ec33286ee02 rdf:reifies <<( doc:Factssignal1_7 rdfs:label "vibration" )>> ;
+	prov:wasDerivedFrom doc:3a40a2d54541 .
+doc:Factsprognosis dcterms:subject doc:Factsdataset1_31 .
+_:cc2bd3c3bffc9e67eeca9cf9c68ab16f rdf:reifies <<( doc:Factsprognosis dcterms:subject doc:Factsdataset1_31 )>> ;
+	prov:wasDerivedFrom doc:3a40a2d54541 .
+doc:Factswind_turbine1_2 a None:Maintainable_item .
+_:f1d4411d581fed8fd82f501fb908242e rdf:reifies <<( doc:Factswind_turbine1_2 rdf:type None:Maintainable_item )>> ;
+	prov:wasDerivedFrom doc:3a40a2d54541 .
+doc:Factsmethod1_26 rdfs:label "hybrid model integrating state-space modeling with generative augmentation" .
+_:ad74bc48effd75d80e78565a6ef75632 rdf:reifies <<( doc:Factsmethod1_26 rdfs:label "hybrid model integrating state-space modeling with generative augmentation" )>> ;
+	prov:wasDerivedFrom doc:3a40a2d54541 .
+doc:Factsid1_86 a None:Article_identifier .
+_:ec7c5e1d8ed69cebef5700993ef6f47 rdf:reifies <<( doc:Factsid1_86 rdf:type None:Article_identifier )>> ;
+	prov:wasDerivedFrom doc:3a40a2d54541 .
+doc:Factsfuture_state_function1 a None:Future_state_forecast .
+_:cbd83834d65b4ba6106af67015d69f2f rdf:reifies <<( doc:Factsfuture_state_function1 rdf:type None:Future_state_forecast )>> ;
+	prov:wasDerivedFrom doc:3a40a2d54541 .
+doc:Factssignal4 a None:Data_variable .
+_:d803569aef50ae22e2ffd81f381bbfa7 rdf:reifies <<( doc:Factssignal4 rdf:type None:Data_variable )>> ;
+	prov:wasDerivedFrom doc:3a40a2d54541 .
+doc:Factscomponent2_7 rdfs:label "blades" .
+_:d235d06082b8acc1029905df49a44ff6 rdf:reifies <<( doc:Factscomponent2_7 rdfs:label "blades" )>> ;
+	prov:wasDerivedFrom doc:3a40a2d54541 .
+doc:Factsprognosis schema:keywords "predictive maintenance" .
+_:d4cebb0900521c25007708b15053ff7a rdf:reifies <<( doc:Factsprognosis schema:keywords "predictive maintenance" )>> ;
+	prov:wasDerivedFrom doc:3a40a2d54541 .
+doc:Factsss_gen1 None:describes_type doc:Factsmodel_type1_2 .
+_:f198d0bfe4a7c0add3e750600e224932 rdf:reifies <<( doc:Factsss_gen1 None:describes_type doc:Factsmodel_type1_2 )>> ;
+	prov:wasDerivedFrom doc:3a40a2d54541 .
+doc:Factsdataset1_31 a None:maintainable_item_record .
+_:fb5320ed394129ff83b1f3483d8c1c28 rdf:reifies <<( doc:Factsdataset1_31 rdf:type None:maintainable_item_record )>> ;
+	prov:wasDerivedFrom doc:3a40a2d54541 .
+doc:FactsScada_1 rdfs:label "SCADA data" .
+_:a1795fc46b792ef86718f1334fedeac rdf:reifies <<( doc:FactsScada_1 rdfs:label "SCADA data" )>> ;
+	prov:wasDerivedFrom doc:3a40a2d54541 .
+doc:Factsauthor6_27 schema:name "Zohaib Mushtaq" .
+_:ed9efce5b63e1375ae0aaf8fe668f590 rdf:reifies <<( doc:Factsauthor6_27 schema:name "Zohaib Mushtaq" )>> ;
+	prov:wasDerivedFrom doc:3a40a2d54541 .
+doc:Factsid1_86 None:has_text_value "10.23967/j.rimni.2025.10.74232" .
+_:c35684acaddbbadb4d47d36e0103d05 rdf:reifies <<( doc:Factsid1_86 None:has_text_value "10.23967/j.rimni.2025.10.74232" )>> ;
+	prov:wasDerivedFrom doc:3a40a2d54541 .
+doc:Factsprognosis dcterms:identifier "10.23967/j.rimni.2025.10.74232" .
+_:ef2cef7da7adcb0c5cbf49536294a375 rdf:reifies <<( doc:Factsprognosis dcterms:identifier "10.23967/j.rimni.2025.10.74232" )>> ;
+	prov:wasDerivedFrom doc:3a40a2d54541 .
+doc:Factsprognosis dcterms:subject doc:Factswind_turbine1_2 .
+_:cde39577d6945a9f605862df923e54af rdf:reifies <<( doc:Factsprognosis dcterms:subject doc:Factswind_turbine1_2 )>> ;
+	prov:wasDerivedFrom doc:3a40a2d54541 .
+doc:Factsauthor6_27 schema:name "Hatim Alwadie" .
+_:a456734c720e358bb5906a6e53ea3ef4 rdf:reifies <<( doc:Factsauthor6_27 schema:name "Hatim Alwadie" )>> ;
+	prov:wasDerivedFrom doc:3a40a2d54541 .
+doc:Factssignal2_1 rdfs:label "power output" .
+_:ab533b976ca353398d004a4643dcbe36 rdf:reifies <<( doc:Factssignal2_1 rdfs:label "power output" )>> ;
+	prov:wasDerivedFrom doc:3a40a2d54541 .
+doc:Factsss_gen1 a None:Predictive_maintenance_model .
+_:c23014dafc4e4142fe7ac0c73a4cc66b rdf:reifies <<( doc:Factsss_gen1 rdf:type None:Predictive_maintenance_model )>> ;
+	prov:wasDerivedFrom doc:3a40a2d54541 .
+doc:Factsprognosis a None:Fault_feature_extraction .
+_:d56088a3540564d0889244460eb48de6 rdf:reifies <<( doc:Factsprognosis rdf:type None:Fault_feature_extraction )>> ;
+	prov:wasDerivedFrom doc:3a40a2d54541 .
+doc:FactsScada_1 a None:Data_variable .
+_:c0d1686a4b742543a37c95c4a2bdbc9a rdf:reifies <<( doc:FactsScada_1 rdf:type None:Data_variable )>> ;
+	prov:wasDerivedFrom doc:3a40a2d54541 .
+doc:Factsimprovement None:has_interger_value 33 .
+_:b3df278c742a775f94ea5f987e61cd79 rdf:reifies <<( doc:Factsimprovement None:has_interger_value 33 )>> ;
+	prov:wasDerivedFrom doc:3a40a2d54541 .
+doc:Factsproblem1_4 rdfs:label "rare faults and imbalanced data" .
+_:de17653a846f90c14f6406169823a07b rdf:reifies <<( doc:Factsproblem1_4 rdfs:label "rare faults and imbalanced data" )>> ;
+	prov:wasDerivedFrom doc:3a40a2d54541 .
+doc:Factsauthor6_27 schema:name "Muhammad Irfan" .
+_:e074e775d8078db06400f3089d67c90b rdf:reifies <<( doc:Factsauthor6_27 schema:name "Muhammad Irfan" )>> ;
+	prov:wasDerivedFrom doc:3a40a2d54541 .
+doc:67ff9b531256 a prov:Entity , schema:text ;
+	prov:generatedAtTime "2026-07-13T15:19:07.817622Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+	schema:position 1 ;
+	schema:identifier "67ff9b531256" .
+doc:FactsMl a owl:Class .
+_:e295880f9ef7bd3cc114f53bbeca1797 rdf:reifies <<( doc:FactsMl rdf:type owl:Class )>> ;
+	prov:wasDerivedFrom doc:67ff9b531256 .
+doc:FactsMl rdfs:label "machine learning"@en .
+_:b1bf1325927dae0996bcc44021d20da4 rdf:reifies <<( doc:FactsMl rdfs:label "machine learning"@en )>> ;
+	prov:wasDerivedFrom doc:67ff9b531256 .
+doc:FactsgraphBasedSpatioTemporalModeling a None:Model_type .
+_:fe3d28d93a60bca010990990f2debf00 rdf:reifies <<( doc:FactsgraphBasedSpatioTemporalModeling rdf:type None:Model_type )>> ;
+	prov:wasDerivedFrom doc:67ff9b531256 .
+doc:FactsRl a None:Predictive_maintenance_module_function .
+_:fe689fc1e529519807d19b3045009f7e rdf:reifies <<( doc:FactsRl rdf:type None:Predictive_maintenance_module_function )>> ;
+	prov:wasDerivedFrom doc:67ff9b531256 .
+doc:FactsdigitalTwins_2 rdfs:label "digital twins"@en .
+_:a787feef412ac340474a216ba82052c3 rdf:reifies <<( doc:FactsdigitalTwins_2 rdfs:label "digital twins"@en )>> ;
+	prov:wasDerivedFrom doc:67ff9b531256 .
+_:e64709da4ad1634c883c25ff6d51b2a prov:wasDerivedFrom doc:67ff9b531256 .
+doc:Factsprognosis cd:mentions doc:FactsMl .
+_:eccd61decaa35f33cb62f776b5c41a07 rdf:reifies <<( doc:Factsprognosis cd:mentions doc:FactsMl )>> ;
+	prov:wasDerivedFrom doc:67ff9b531256 .
+doc:Factsprognosis a None:Number_of_failure_modes .
+_:b7454c42caef4cb7fb53536a0d8c3ecc rdf:reifies <<( doc:Factsprognosis rdf:type None:Number_of_failure_modes )>> ;
+	prov:wasDerivedFrom doc:67ff9b531256 .
+doc:Factsprognosis None:has_design_detail doc:Factsimbalance_1 .
+_:ed646b299953ae2bb798c7f9b6ab6900 rdf:reifies <<( doc:Factsprognosis None:has_design_detail doc:Factsimbalance_1 )>> ;
+	prov:wasDerivedFrom doc:67ff9b531256 .
+doc:FactsMl rdfs:label "deep learning"@en .
+_:cfaaf2eb90c4cd83a4399bfa1d3b69f1 rdf:reifies <<( doc:FactsMl rdfs:label "deep learning"@en )>> ;
+	prov:wasDerivedFrom doc:67ff9b531256 .
+doc:FactsScada_1 rdfs:label "SCADA"@en .
+_:ba8283a9730e354ce9542b3c7af0bd3f rdf:reifies <<( doc:FactsScada_1 rdfs:label "SCADA"@en )>> ;
+	prov:wasDerivedFrom doc:67ff9b531256 .
+_:b67bf4643756d01bdd6bc92e317370 prov:wasDerivedFrom doc:67ff9b531256 .
+doc:FactsopenAccessScadaRepositories a cco:Database .
+_:e7fc1acd1a6e3daed4ad758b79fb82f3 rdf:reifies <<( doc:FactsopenAccessScadaRepositories rdf:type cco:Database )>> ;
+	prov:wasDerivedFrom doc:67ff9b531256 .
+doc:Factsimprovement schema:value 20 .
+_:d3df03e9605ad1c988795f1d111976b9 rdf:reifies <<( doc:Factsimprovement schema:value 20 )>> ;
+	prov:wasDerivedFrom doc:67ff9b531256 .
+doc:Factsprognosis cd:mentions doc:FactsdigitalTwins_2 .
+_:eec11c7454d455fd1f8be5e23d689753 rdf:reifies <<( doc:Factsprognosis cd:mentions doc:FactsdigitalTwins_2 )>> ;
+	prov:wasDerivedFrom doc:67ff9b531256 .
+_:adba3ed3f0991b64f2acd03a1ac20936 prov:wasDerivedFrom doc:67ff9b531256 .
+doc:Factsimbalance_1 a None:Design_detail .
+_:a906682d6e0041b3bdc48459574b0001 rdf:reifies <<( doc:Factsimbalance_1 rdf:type None:Design_detail )>> ;
+	prov:wasDerivedFrom doc:67ff9b531256 .
+doc:FactsMl rdfs:label "transfer learning"@en .
+_:c0ac0846fb3fa49c4ba691dbe1a7db97 rdf:reifies <<( doc:FactsMl rdfs:label "transfer learning"@en )>> ;
+	prov:wasDerivedFrom doc:67ff9b531256 .
+doc:FactsScada_1 None:describes doc:Factsprognosis .
+_:e9551cf51d9400ec612138bce284c5f7 rdf:reifies <<( doc:FactsScada_1 None:describes doc:Factsprognosis )>> ;
+	prov:wasDerivedFrom doc:67ff9b531256 .
+doc:Factsprognosis cd:has_topic doc:FactsstandardizedEvaluationProtocols .
+_:c9dfe69ba4bc5a9162b9a88d9d7bb226 rdf:reifies <<( doc:Factsprognosis cd:has_topic doc:FactsstandardizedEvaluationProtocols )>> ;
+	prov:wasDerivedFrom doc:67ff9b531256 .
+doc:Factsprognosis a None:Predictive_maintenance_model .
+_:c576c5c321318968272de87b4c93adfd rdf:reifies <<( doc:Factsprognosis rdf:type None:Predictive_maintenance_model )>> ;
+	prov:wasDerivedFrom doc:67ff9b531256 .
+doc:Factsprognosis cd:mentions doc:FactsWindFarmMl .
+_:d43826f1e6c649bb8e1d1912ae5d17fa rdf:reifies <<( doc:Factsprognosis cd:mentions doc:FactsWindFarmMl )>> ;
+	prov:wasDerivedFrom doc:67ff9b531256 .
+doc:FactsdigitalTwins_2 a owl:Class .
+_:b0135b789da2a16634e64dfb502aa6ff rdf:reifies <<( doc:FactsdigitalTwins_2 rdf:type owl:Class )>> ;
+	prov:wasDerivedFrom doc:67ff9b531256 .
+doc:FactsMl rdfs:label "graph neural networks"@en .
+_:c58836bd73d9c139dea19fff26b08c7f rdf:reifies <<( doc:FactsMl rdfs:label "graph neural networks"@en )>> ;
+	prov:wasDerivedFrom doc:67ff9b531256 .
+doc:FactsWindFarmMl cd:promotes doc:FactsopenAccessScadaRepositories .
+_:b3c7c186d189b5bc314d4a59292e8ed3 rdf:reifies <<( doc:FactsWindFarmMl cd:promotes doc:FactsopenAccessScadaRepositories )>> ;
+	prov:wasDerivedFrom doc:67ff9b531256 .
+doc:FactsRl a owl:Class .
+_:a2bc09bc58e84cef3b4ec6c818007d6c rdf:reifies <<( doc:FactsRl rdf:type owl:Class )>> ;
+	prov:wasDerivedFrom doc:67ff9b531256 .
+doc:Factsprognosis cd:has_topic doc:Factsprognosis .
+_:b836c62557c50e4a387814fb77afdafa rdf:reifies <<( doc:Factsprognosis cd:has_topic doc:Factsprognosis )>> ;
+	prov:wasDerivedFrom doc:67ff9b531256 .
+doc:FactsRl rdfs:label "reinforcement learning"@en .
+_:fb1b7274fd4da25a1b65eef26a436a59 rdf:reifies <<( doc:FactsRl rdfs:label "reinforcement learning"@en )>> ;
+	prov:wasDerivedFrom doc:67ff9b531256 .
+doc:FactsMl a None:Data_mining_technique_function .
+_:e5f9018e2bd58acf3693c2290969474 rdf:reifies <<( doc:FactsMl rdf:type None:Data_mining_technique_function )>> ;
+	prov:wasDerivedFrom doc:67ff9b531256 .
+doc:Factsprognosis None:has_design_detail doc:FactsdigitalTwins_2 .
+_:e60d43a2e8ec75ec0daf526310c97fe rdf:reifies <<( doc:Factsprognosis None:has_design_detail doc:FactsdigitalTwins_2 )>> ;
+	prov:wasDerivedFrom doc:67ff9b531256 .
+doc:FactsstandardizedEvaluationProtocols a None:Model_configuration .
+_:fba59ec7ab6f6a3c6a1e66cb966b74dd rdf:reifies <<( doc:FactsstandardizedEvaluationProtocols rdf:type None:Model_configuration )>> ;
+	prov:wasDerivedFrom doc:67ff9b531256 .
+doc:Factsprognosis a None:Remaining_useful_life_estimation .
+_:cf97cc407d591574153b3d6a05dc958d rdf:reifies <<( doc:Factsprognosis rdf:type None:Remaining_useful_life_estimation )>> ;
+	prov:wasDerivedFrom doc:67ff9b531256 .
+_:b68ff76ad20a1f854653751cf942df52 prov:wasDerivedFrom doc:67ff9b531256 .
+doc:FactscybersecurityProtocols a None:Design_detail .
+_:a4c52f601e2cc7795d4079bda7eae276 rdf:reifies <<( doc:FactscybersecurityProtocols rdf:type None:Design_detail )>> ;
+	prov:wasDerivedFrom doc:67ff9b531256 .
+_:b61d207eb06ab41f9b027b51987b504e prov:wasDerivedFrom doc:67ff9b531256 .
+_:c0d1686a4b742543a37c95c4a2bdbc9a prov:wasDerivedFrom doc:67ff9b531256 .
+doc:FactsgeneratorOverheating a None:Fault_detection .
+_:a5b27a62ccfd63c4ac9beb736db5e4d5 rdf:reifies <<( doc:FactsgeneratorOverheating rdf:type None:Fault_detection )>> ;
+	prov:wasDerivedFrom doc:67ff9b531256 .
+doc:FactsWindFarmMl a schema:SoftwareApplication .
+_:c55272907eeed0199b83bb8d312c2f1d rdf:reifies <<( doc:FactsWindFarmMl rdf:type schema:SoftwareApplication )>> ;
+	prov:wasDerivedFrom doc:67ff9b531256 .
+doc:Factsimprovement schema:value "10-20" .
+_:f93cb8cd6dfe218eae2dc0890e79900 rdf:reifies <<( doc:Factsimprovement schema:value "10-20" )>> ;
+	prov:wasDerivedFrom doc:67ff9b531256 .
+doc:FactsstandardizedEvaluationProtocols None:describes_configuration doc:Factsprognosis .
+_:e4db9362cc85cf757ac93afead0694cb rdf:reifies <<( doc:FactsstandardizedEvaluationProtocols None:describes_configuration doc:Factsprognosis )>> ;
+	prov:wasDerivedFrom doc:67ff9b531256 .
+doc:FactsMl rdfs:label "data-centric techniques"@en .
+_:a09b08ef3069b45a43ae30b83aaed7ba rdf:reifies <<( doc:FactsMl rdfs:label "data-centric techniques"@en )>> ;
+	prov:wasDerivedFrom doc:67ff9b531256 .
+_:f2f36bb499f7f702dddaac073eaccbf3 prov:wasDerivedFrom doc:67ff9b531256 .
+doc:FactsWindFarmMl a schema:Organization .
+_:e07f2b215df191ee4efe607e0717bddd rdf:reifies <<( doc:FactsWindFarmMl rdf:type schema:Organization )>> ;
+	prov:wasDerivedFrom doc:67ff9b531256 .
+doc:Factsprognosis None:has_design_detail doc:FactscybersecurityProtocols .
+_:a1f079f060aefc228b3628f87b4f1285 rdf:reifies <<( doc:Factsprognosis None:has_design_detail doc:FactscybersecurityProtocols )>> ;
+	prov:wasDerivedFrom doc:67ff9b531256 .
+doc:Factsimprovement schema:value 15 .
+_:d13e79015fab527018ce101ce72101b6 rdf:reifies <<( doc:Factsimprovement schema:value 15 )>> ;
+	prov:wasDerivedFrom doc:67ff9b531256 .
+_:b4db5e62eb2ca75beb7b15dbe630c02a prov:wasDerivedFrom doc:67ff9b531256 .
+doc:FactsopenAccessScadaRepositories rdfs:label "open-access SCADA repositories"@en .
+_:d8804d5e0b937f5e126de6e2e219cd55 rdf:reifies <<( doc:FactsopenAccessScadaRepositories rdfs:label "open-access SCADA repositories"@en )>> ;
+	prov:wasDerivedFrom doc:67ff9b531256 .
+doc:FactsScada_1 a doc:FactsScada_1 .
+_:d85b289cae625c76a7d3cfeb40135d62 rdf:reifies <<( doc:FactsScada_1 rdf:type doc:FactsScada_1 )>> ;
+	prov:wasDerivedFrom doc:67ff9b531256 .
+doc:FactsMl rdfs:label "federated learning"@en .
+_:f16cb13d41ffaddbf63071ef8995fc3b rdf:reifies <<( doc:FactsMl rdfs:label "federated learning"@en )>> ;
+	prov:wasDerivedFrom doc:67ff9b531256 .
+doc:Factsprognosis cd:mentions doc:FactsRl .
+_:ef8ea104340f592903c2ff0d43f9c1a rdf:reifies <<( doc:Factsprognosis cd:mentions doc:FactsRl )>> ;
+	prov:wasDerivedFrom doc:67ff9b531256 .
+doc:FactsWindFarmMl rdfs:label "WindFarmML"@en .
+_:f3c1b53f628852706940e98b51dae9c1 rdf:reifies <<( doc:FactsWindFarmMl rdfs:label "WindFarmML"@en )>> ;
+	prov:wasDerivedFrom doc:67ff9b531256 .
+doc:Factsprognosis None:describes_type doc:FactsgraphBasedSpatioTemporalModeling .
+_:ffb82f8ace98cf766a2a852137f3de4b rdf:reifies <<( doc:Factsprognosis None:describes_type doc:FactsgraphBasedSpatioTemporalModeling )>> ;
+	prov:wasDerivedFrom doc:67ff9b531256 .
+doc:FactsMl rdfs:label "self-supervised learning"@en .
+_:a6e4e558281c40d30b59da987fb1ba5 rdf:reifies <<( doc:FactsMl rdfs:label "self-supervised learning"@en )>> ;
+	prov:wasDerivedFrom doc:67ff9b531256 .
+doc:Factsprognosis cd:mentions doc:FactsScada_1 .
+_:a374a063b3f5007535b9eeb71c97e896 rdf:reifies <<( doc:Factsprognosis cd:mentions doc:FactsScada_1 )>> ;
+	prov:wasDerivedFrom doc:67ff9b531256 .
+doc:FactsopenAccessScadaRepositories a None:maintainable_item_record .
+_:d00c19f03281b909b1faf9eb19d08fc1 rdf:reifies <<( doc:FactsopenAccessScadaRepositories rdf:type None:maintainable_item_record )>> ;
+	prov:wasDerivedFrom doc:67ff9b531256 .
+doc:FactsWindFarmMl cd:promotes doc:Factsimprovement .
+_:a2e5d4cda9c0d8aecdb1d68c4cf4caef rdf:reifies <<( doc:FactsWindFarmMl cd:promotes doc:Factsimprovement )>> ;
+	prov:wasDerivedFrom doc:67ff9b531256 .
+doc:FactsdigitalTwins_2 a None:Design_detail .
+_:ac94accf55aa9eb51c3e18d73b624980 rdf:reifies <<( doc:FactsdigitalTwins_2 rdf:type None:Design_detail )>> ;
+	prov:wasDerivedFrom doc:67ff9b531256 .
+doc:FactsMl rdfs:label "physics-informed deep learning"@en .
+_:d19241477b2384932e5ca56d03ba79d rdf:reifies <<( doc:FactsMl rdfs:label "physics-informed deep learning"@en )>> ;
+	prov:wasDerivedFrom doc:67ff9b531256 .
+doc:e55ed9432a75 a prov:Entity , schema:text ;
+	prov:generatedAtTime "2026-07-13T15:19:07.821622Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+	schema:position 2 ;
+	schema:identifier "e55ed9432a75" .
+_:bd7b619e3f7bd4cca58ebd53151c7e73 prov:wasDerivedFrom doc:e55ed9432a75 .
+_:b61d207eb06ab41f9b027b51987b504e prov:wasDerivedFrom doc:e55ed9432a75 .
+_:b337bf2cab834ba6ab6158e79d566d92 prov:wasDerivedFrom doc:e55ed9432a75 .
+doc:Factsmodule_sync1 None:has_text_value "online and offline" .
+_:e8c3a13c79c6e1a290487ed0412065f7 rdf:reifies <<( doc:Factsmodule_sync1 None:has_text_value "online and offline" )>> ;
+	prov:wasDerivedFrom doc:e55ed9432a75 .
+doc:Factsvar5_13 None:has_text_value "grease models" .
+_:ab88f504048256ff909cbc8e2e87513a rdf:reifies <<( doc:Factsvar5_13 None:has_text_value "grease models" )>> ;
+	prov:wasDerivedFrom doc:e55ed9432a75 .
+doc:Factsvar5_13 a None:Data_variable .
+_:f6d988e289b83ca0cf3aec9c070910bf rdf:reifies <<( doc:Factsvar5_13 rdf:type None:Data_variable )>> ;
+	prov:wasDerivedFrom doc:e55ed9432a75 .
+_:b67bf4643756d01bdd6bc92e317370 prov:wasDerivedFrom doc:e55ed9432a75 .
+doc:Factsvar5_13 None:has_text_value "wavelet analysis" .
+_:be60836eee29615c5a7e965928bd3616 rdf:reifies <<( doc:Factsvar5_13 None:has_text_value "wavelet analysis" )>> ;
+	prov:wasDerivedFrom doc:e55ed9432a75 .
+doc:Factsvar5_13 None:has_text_value "contrastive learning" .
+_:b4dd1a50e374ea0a6216595c484fbf39 rdf:reifies <<( doc:Factsvar5_13 None:has_text_value "contrastive learning" )>> ;
+	prov:wasDerivedFrom doc:e55ed9432a75 .
+doc:Factsvar5_13 None:has_text_value "digital twins" .
+_:b72be865cce827ffce00fd9848ca21b2 rdf:reifies <<( doc:Factsvar5_13 None:has_text_value "digital twins" )>> ;
+	prov:wasDerivedFrom doc:e55ed9432a75 .
+doc:Factsid1_86 None:has_text_value "Experimental validation and implications for advancing predictive maintenance in the wind energy sector" .
+_:b7a6d8652d055c161fa1b79e2d788d5b rdf:reifies <<( doc:Factsid1_86 None:has_text_value "Experimental validation and implications for advancing predictive maintenance in the wind energy sector" )>> ;
+	prov:wasDerivedFrom doc:e55ed9432a75 .
+doc:Factsvar5_13 None:has_text_value "imputed balanced datasets" .
+_:b24b6b5e319af7d40c86e93233a0b1df rdf:reifies <<( doc:Factsvar5_13 None:has_text_value "imputed balanced datasets" )>> ;
+	prov:wasDerivedFrom doc:e55ed9432a75 .
+_:abf9b7f0bf61bf557a8086018d5dda1 prov:wasDerivedFrom doc:e55ed9432a75 .
+_:cf97cc407d591574153b3d6a05dc958d prov:wasDerivedFrom doc:e55ed9432a75 .
+doc:Factsvar5_13 None:has_text_value "environmental impacts" .
+_:f608e75f5a1cc1b623cf66693831b24 rdf:reifies <<( doc:Factsvar5_13 None:has_text_value "environmental impacts" )>> ;
+	prov:wasDerivedFrom doc:e55ed9432a75 .
+_:ec7c5e1d8ed69cebef5700993ef6f47 prov:wasDerivedFrom doc:e55ed9432a75 .
+doc:Factsvar5_13 None:has_text_value "real-time use" .
+_:e9a7ee064dbee3ef5a16d27c69293015 rdf:reifies <<( doc:Factsvar5_13 None:has_text_value "real-time use" )>> ;
+	prov:wasDerivedFrom doc:e55ed9432a75 .
+doc:Factscase1_48 None:has_text_value "wind turbine fault detection on imbalanced SCADA data" .
+_:a935b3867e0d1fd1a338a28088996f2c rdf:reifies <<( doc:Factscase1_48 None:has_text_value "wind turbine fault detection on imbalanced SCADA data" )>> ;
+	prov:wasDerivedFrom doc:e55ed9432a75 .
+doc:Factsimbalance_1 None:has_text_value "hybrid state-space dynamics with generative augmentation" .
+_:beed30bef8cc19493d6eb943d88ebb15 rdf:reifies <<( doc:Factsimbalance_1 None:has_text_value "hybrid state-space dynamics with generative augmentation" )>> ;
+	prov:wasDerivedFrom doc:e55ed9432a75 .
+doc:Factsvar5_13 None:has_text_value "winter peaks" .
+_:d42efa34b97ca451cfa2846b7c5c4043 rdf:reifies <<( doc:Factsvar5_13 None:has_text_value "winter peaks" )>> ;
+	prov:wasDerivedFrom doc:e55ed9432a75 .
+doc:Factsprognosis None:has_synchronization doc:Factsmodule_sync1 .
+_:edcfdf7c211a427456a78669922598b4 rdf:reifies <<( doc:Factsprognosis None:has_synchronization doc:Factsmodule_sync1 )>> ;
+	prov:wasDerivedFrom doc:e55ed9432a75 .
+doc:Factsvar5_13 None:has_text_value "edge compatibility" .
+_:cd4f1fb5890bad413d730e0f5f4061f2 rdf:reifies <<( doc:Factsvar5_13 None:has_text_value "edge compatibility" )>> ;
+	prov:wasDerivedFrom doc:e55ed9432a75 .
+_:e5ebeca8c334868142b7491e32e8dc40 prov:wasDerivedFrom doc:e55ed9432a75 .
+doc:Factsvar5_13 None:has_text_value "seasonal analysis" .
+_:bc9bf92b9240f4cf26ec896f6f764c33 rdf:reifies <<( doc:Factsvar5_13 None:has_text_value "seasonal analysis" )>> ;
+	prov:wasDerivedFrom doc:e55ed9432a75 .
+doc:Factsvar5_13 None:has_text_value "simulated farms" .
+_:a2220146f4a5f693daa3d875efb0caa7 rdf:reifies <<( doc:Factsvar5_13 None:has_text_value "simulated farms" )>> ;
+	prov:wasDerivedFrom doc:e55ed9432a75 .
+_:ab00bd5e333fbbd98513ca4298d1c78 prov:wasDerivedFrom doc:e55ed9432a75 .
+doc:Factsvar5_13 None:has_text_value "generative augmentation" .
+_:bc57479017be6e42261030ec66ee8f7 rdf:reifies <<( doc:Factsvar5_13 None:has_text_value "generative augmentation" )>> ;
+	prov:wasDerivedFrom doc:e55ed9432a75 .
+_:b68ff76ad20a1f854653751cf942df52 prov:wasDerivedFrom doc:e55ed9432a75 .
+_:e64709da4ad1634c883c25ff6d51b2a prov:wasDerivedFrom doc:e55ed9432a75 .
+doc:Factsvar5_13 None:has_text_value "imbalanced SCADA data" .
+_:ad45dd61fe5bb1ce3a2b92eb42ba4984 rdf:reifies <<( doc:Factsvar5_13 None:has_text_value "imbalanced SCADA data" )>> ;
+	prov:wasDerivedFrom doc:e55ed9432a75 .
+doc:Factsprognosis a None:Health_modelling .
+_:a13602e28df995c516fc32e474437522 rdf:reifies <<( doc:Factsprognosis rdf:type None:Health_modelling )>> ;
+	prov:wasDerivedFrom doc:e55ed9432a75 .
+doc:Factsvar5_13 None:has_text_value "class imbalance" .
+_:d66575b58781661725e115bbf19d6954 rdf:reifies <<( doc:Factsvar5_13 None:has_text_value "class imbalance" )>> ;
+	prov:wasDerivedFrom doc:e55ed9432a75 .
+doc:Factsvar5_13 None:has_text_value "normalization" .
+_:d309aa3391c723e92f70eab52fdee303 rdf:reifies <<( doc:Factsvar5_13 None:has_text_value "normalization" )>> ;
+	prov:wasDerivedFrom doc:e55ed9432a75 .
+_:adba3ed3f0991b64f2acd03a1ac20936 prov:wasDerivedFrom doc:e55ed9432a75 .
+doc:Factsvar5_13 None:has_text_value "physics models" .
+_:aa8e9abb502c1796178c3786e54a928b rdf:reifies <<( doc:Factsvar5_13 None:has_text_value "physics models" )>> ;
+	prov:wasDerivedFrom doc:e55ed9432a75 .
+doc:Factsvar5_13 None:has_text_value "fault detection without extensive domain knowledge" .
+_:ff2c58d12d8d4d3e9c0828b3a4f2b0c8 rdf:reifies <<( doc:Factsvar5_13 None:has_text_value "fault detection without extensive domain knowledge" )>> ;
+	prov:wasDerivedFrom doc:e55ed9432a75 .
+doc:Factsvar5_13 None:has_text_value "RNNs" .
+_:e7d42dfddfe4e302aacd3d3f23a54718 rdf:reifies <<( doc:Factsvar5_13 None:has_text_value "RNNs" )>> ;
+	prov:wasDerivedFrom doc:e55ed9432a75 .
+doc:Factsvar5_13 None:has_text_value "state-space dynamics" .
+_:be2a483cb9043a398db8e841912b0d1b rdf:reifies <<( doc:Factsvar5_13 None:has_text_value "state-space dynamics" )>> ;
+	prov:wasDerivedFrom doc:e55ed9432a75 .
+doc:Factsvar5_13 None:has_text_value "synthetic faults" .
+_:b4c45c2cc61eff900e1f18f57aef38f6 rdf:reifies <<( doc:Factsvar5_13 None:has_text_value "synthetic faults" )>> ;
+	prov:wasDerivedFrom doc:e55ed9432a75 .
+doc:Factsprognosis a None:Fault_identification .
+_:e3acf7ba8a46dc1e908c247b12040d0 rdf:reifies <<( doc:Factsprognosis rdf:type None:Fault_identification )>> ;
+	prov:wasDerivedFrom doc:e55ed9432a75 .
+doc:Factsvar5_13 None:has_text_value "uncertainty" .
+_:b5c56d793ea435af66e5b47c014d5adf rdf:reifies <<( doc:Factsvar5_13 None:has_text_value "uncertainty" )>> ;
+	prov:wasDerivedFrom doc:e55ed9432a75 .
+_:e5fac9725ceec9ec021b0bd73b502216 prov:wasDerivedFrom doc:e55ed9432a75 .
+doc:Factsvar5_13 None:has_text_value "fault patterns" .
+_:d2a815a22ec564887aa15113cdb87812 rdf:reifies <<( doc:Factsvar5_13 None:has_text_value "fault patterns" )>> ;
+	prov:wasDerivedFrom doc:e55ed9432a75 .
+doc:Factsmodel_type1_2 None:has_text_value "hybrid SS-Gen" .
+_:b44db751f5b3ddd43cbcc55c21d0a2d6 rdf:reifies <<( doc:Factsmodel_type1_2 None:has_text_value "hybrid SS-Gen" )>> ;
+	prov:wasDerivedFrom doc:e55ed9432a75 .
+doc:Factsmodel_type1_2 None:has_text_value "state-space dynamics plus generative augmentation" .
+_:e2546294dbb54356163a63aa73346760 rdf:reifies <<( doc:Factsmodel_type1_2 None:has_text_value "state-space dynamics plus generative augmentation" )>> ;
+	prov:wasDerivedFrom doc:e55ed9432a75 .
+doc:Factsimprovement None:has_text_value "improvement" .
+_:d67fe96bb6bf5277879afa58c759c421 rdf:reifies <<( doc:Factsimprovement None:has_text_value "improvement" )>> ;
+	prov:wasDerivedFrom doc:e55ed9432a75 .
+_:ed646b299953ae2bb798c7f9b6ab6900 prov:wasDerivedFrom doc:e55ed9432a75 .
+doc:Factsimprovement None:has_text_value "variance" .
+_:da31f6b30d7ee96c2fdeeb8a60978593 rdf:reifies <<( doc:Factsimprovement None:has_text_value "variance" )>> ;
+	prov:wasDerivedFrom doc:e55ed9432a75 .
+doc:Factsvar5_13 None:has_text_value "uncertainty-aware diagnostics" .
+_:d0128670bd788deb9d0f71ca9cb48f48 rdf:reifies <<( doc:Factsvar5_13 None:has_text_value "uncertainty-aware diagnostics" )>> ;
+	prov:wasDerivedFrom doc:e55ed9432a75 .
+doc:Factsid1_86 None:has_text_value "Vol.42, (1), 34" .
+_:e5428d82d6e912d981ef15285750714c rdf:reifies <<( doc:Factsid1_86 None:has_text_value "Vol.42, (1), 34" )>> ;
+	prov:wasDerivedFrom doc:e55ed9432a75 .
+doc:Factsvar5_13 None:has_text_value "ancillary signals" .
+_:ff8ad8459e5ce881f1902946d944a912 rdf:reifies <<( doc:Factsvar5_13 None:has_text_value "ancillary signals" )>> ;
+	prov:wasDerivedFrom doc:e55ed9432a75 .
+doc:Factsimprovement None:has_text_value "95%" .
+_:a5faba3c0aaa85d5579206448d5d916f rdf:reifies <<( doc:Factsimprovement None:has_text_value "95%" )>> ;
+	prov:wasDerivedFrom doc:e55ed9432a75 .
+doc:Factsvar5_13 None:has_text_value "bearing prognosis" .
+_:c2a10b45ba9bcdec4764fcd42244ad5b rdf:reifies <<( doc:Factsvar5_13 None:has_text_value "bearing prognosis" )>> ;
+	prov:wasDerivedFrom doc:e55ed9432a75 .
+doc:Factsvar5_13 None:has_text_value "phase-space analysis" .
+_:c793bbedcef50d0503d602b25595d2d2 rdf:reifies <<( doc:Factsvar5_13 None:has_text_value "phase-space analysis" )>> ;
+	prov:wasDerivedFrom doc:e55ed9432a75 .
+doc:Factsvar5_13 None:has_text_value "ground truth" .
+_:c6cce8e8b870bbc4d2d89f3c7db43fb0 rdf:reifies <<( doc:Factsvar5_13 None:has_text_value "ground truth" )>> ;
+	prov:wasDerivedFrom doc:e55ed9432a75 .
+doc:Factsvar5_13 None:has_text_value "lubrication dynamics" .
+_:dc9e4208df3e3217f95c1ddb60edf95a rdf:reifies <<( doc:Factsvar5_13 None:has_text_value "lubrication dynamics" )>> ;
+	prov:wasDerivedFrom doc:e55ed9432a75 .
+_:fad9957aa48bf6259b93865787c187b9 prov:wasDerivedFrom doc:e55ed9432a75 .
+_:a906682d6e0041b3bdc48459574b0001 prov:wasDerivedFrom doc:e55ed9432a75 .
+doc:Factsvar5_13 None:has_text_value "fleet-wide deployment" .
+_:d514e1d68aaf6fafd9615e6963438ef2 rdf:reifies <<( doc:Factsvar5_13 None:has_text_value "fleet-wide deployment" )>> ;
+	prov:wasDerivedFrom doc:e55ed9432a75 .
+doc:Factsmodel_type1_2 None:describes_configuration doc:Factsprognosis .
+_:a1595669867512e71db00be0ee05b442 rdf:reifies <<( doc:Factsmodel_type1_2 None:describes_configuration doc:Factsprognosis )>> ;
+	prov:wasDerivedFrom doc:e55ed9432a75 .
+doc:Factsvar5_13 None:has_text_value "physics-informed approaches" .
+_:ad701c48c4c04eb12e7f09556101efc rdf:reifies <<( doc:Factsvar5_13 None:has_text_value "physics-informed approaches" )>> ;
+	prov:wasDerivedFrom doc:e55ed9432a75 .
+doc:Factsvar5_13 None:has_text_value "intelligent turbine health management" .
+_:e9e31e9ea3bc55450ecf2faa3a301ad1 rdf:reifies <<( doc:Factsvar5_13 None:has_text_value "intelligent turbine health management" )>> ;
+	prov:wasDerivedFrom doc:e55ed9432a75 .
+doc:Factsvar5_13 None:has_text_value "scalability" .
+_:ddbb5be413475658eb9335a82604245d rdf:reifies <<( doc:Factsvar5_13 None:has_text_value "scalability" )>> ;
+	prov:wasDerivedFrom doc:e55ed9432a75 .
+_:b4db5e62eb2ca75beb7b15dbe630c02a prov:wasDerivedFrom doc:e55ed9432a75 .
+doc:Factsvar5_13 None:has_text_value "seasonal fault patterns" .
+_:b57687dce3c4980023e0b6b2e16ed36c rdf:reifies <<( doc:Factsvar5_13 None:has_text_value "seasonal fault patterns" )>> ;
+	prov:wasDerivedFrom doc:e55ed9432a75 .
+doc:Factsvar5_13 None:has_text_value "sensor faults" .
+_:a71a9ea26c8307e2ac11eedfdc9d3846 rdf:reifies <<( doc:Factsvar5_13 None:has_text_value "sensor faults" )>> ;
+	prov:wasDerivedFrom doc:e55ed9432a75 .
+doc:Factsvar5_13 None:has_text_value "compute" .
+_:c1c1794ffcf601fb710c0417fc713d83 rdf:reifies <<( doc:Factsvar5_13 None:has_text_value "compute" )>> ;
+	prov:wasDerivedFrom doc:e55ed9432a75 .
+doc:Factsvar5_13 None:has_text_value "imbalance mitigation" .
+_:a93b22e7a648f4f7672eb89183b01461 rdf:reifies <<( doc:Factsvar5_13 None:has_text_value "imbalance mitigation" )>> ;
+	prov:wasDerivedFrom doc:e55ed9432a75 .
+doc:Factsvar5_13 None:has_text_value "training time" .
+_:b9a04d8c030f3630d315c54c5ff48358 rdf:reifies <<( doc:Factsvar5_13 None:has_text_value "training time" )>> ;
+	prov:wasDerivedFrom doc:e55ed9432a75 .
+doc:Factsmodel_type1_2 a None:Model_configuration .
+_:bd4377392e47eb343d5b14c8fa3c23f9 rdf:reifies <<( doc:Factsmodel_type1_2 rdf:type None:Model_configuration )>> ;
+	prov:wasDerivedFrom doc:e55ed9432a75 .
+_:a53f7c9354d08bb37a736c175ac9a943 prov:wasDerivedFrom doc:e55ed9432a75 .
+doc:Factsmodule_sync1 a None:Module_synchronization .
+_:c8d42608026383448b0d06afced3d365 rdf:reifies <<( doc:Factsmodule_sync1 rdf:type None:Module_synchronization )>> ;
+	prov:wasDerivedFrom doc:e55ed9432a75 .
+doc:Factsvar5_13 None:has_text_value "gearbox detection" .
+_:e69969d471fb6a4f41730237f24d403f rdf:reifies <<( doc:Factsvar5_13 None:has_text_value "gearbox detection" )>> ;
+	prov:wasDerivedFrom doc:e55ed9432a75 .
+doc:Factsvar5_13 None:has_text_value "wind energy sector" .
+_:df5b467a8c19243e11bcd02884f7790e rdf:reifies <<( doc:Factsvar5_13 None:has_text_value "wind energy sector" )>> ;
+	prov:wasDerivedFrom doc:e55ed9432a75 .
+doc:Factsimprovement None:has_text_value "< 5%" .
+_:e5fb0368a542ffd06e680aa98b372d4b rdf:reifies <<( doc:Factsimprovement None:has_text_value "< 5%" )>> ;
+	prov:wasDerivedFrom doc:e55ed9432a75 .
+doc:Factsvar5_13 None:has_text_value "SCADA data" .
+_:ebe4ee1f566024d13eb5ee32d794bf64 rdf:reifies <<( doc:Factsvar5_13 None:has_text_value "SCADA data" )>> ;
+	prov:wasDerivedFrom doc:e55ed9432a75 .
+doc:Factsvar5_13 None:has_text_value "anomaly labeling pipeline" .
+_:ae1b06fbc5c988e994960f7ecd6ac34d rdf:reifies <<( doc:Factsvar5_13 None:has_text_value "anomaly labeling pipeline" )>> ;
+	prov:wasDerivedFrom doc:e55ed9432a75 .
+doc:Factsvar5_13 None:has_text_value "real SCADA noise" .
+_:a8ed9bdfe1a353205a0289d7fc45b17 rdf:reifies <<( doc:Factsvar5_13 None:has_text_value "real SCADA noise" )>> ;
+	prov:wasDerivedFrom doc:e55ed9432a75 .
+doc:Factscase1_48 a None:Predictive_maintenance_case .
+_:b64966946d8132822963696772a6c244 rdf:reifies <<( doc:Factscase1_48 rdf:type None:Predictive_maintenance_case )>> ;
+	prov:wasDerivedFrom doc:e55ed9432a75 .
+doc:Factsimprovement None:has_text_value "accuracy" .
+_:dc52061c473006757ea6700f64392999 rdf:reifies <<( doc:Factsimprovement None:has_text_value "accuracy" )>> ;
+	prov:wasDerivedFrom doc:e55ed9432a75 .
+doc:Factsimprovement None:has_text_value "33%" .
+_:fdc5b148042ef083af3f6cf44b9436d9 rdf:reifies <<( doc:Factsimprovement None:has_text_value "33%" )>> ;
+	prov:wasDerivedFrom doc:e55ed9432a75 .
+doc:Factsvar5_13 None:has_text_value "rare faults" .
+_:b2123543cc41ac76f0af8f51948c0cd4 rdf:reifies <<( doc:Factsvar5_13 None:has_text_value "rare faults" )>> ;
+	prov:wasDerivedFrom doc:e55ed9432a75 .
+doc:Factsvar5_13 None:has_text_value "interpretability" .
+_:eb25dd5ea1f8aa08922b20efe16d4130 rdf:reifies <<( doc:Factsvar5_13 None:has_text_value "interpretability" )>> ;
+	prov:wasDerivedFrom doc:e55ed9432a75 .

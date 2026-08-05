@@ -1,0 +1,432 @@
+@prefix None: <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#> .
+@prefix cco: <http://www.ontologyrepository.com/CommonCoreOntologies/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doc: <https://growgraph.dev/doc/9f5620430ceb/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix obo: <http://purl.obolibrary.org/obo/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix schema: <https://schema.org/> .
+doc:7d480fcb3c04 a prov:Entity , schema:text ;
+	prov:generatedAtTime "2026-07-23T00:11:21.511565Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+	schema:position 0 ;
+	schema:identifier "7d480fcb3c04" .
+doc:FactsquasiStaticModelType None:has_text_value "quasi-static finite-element-based model" .
+_:ae0b0d1be125774be141643c59530b9e rdf:reifies <<( doc:FactsquasiStaticModelType None:has_text_value "quasi-static finite-element-based model" )>> ;
+	prov:wasDerivedFrom doc:7d480fcb3c04 .
+doc:FactsarticleQuasiStaticAxisDeviations a None:Predictive_Maintenance_Article .
+_:e4b8a88ff435bdb2cea260f687c20321 rdf:reifies <<( doc:FactsarticleQuasiStaticAxisDeviations rdf:type None:Predictive_Maintenance_Article )>> ;
+	prov:wasDerivedFrom doc:7d480fcb3c04 .
+doc:FactsarticleTitleDe a None:Article_title .
+_:ccae3b5828949a618b87532723d87c98 rdf:reifies <<( doc:FactsarticleTitleDe rdf:type None:Article_title )>> ;
+	prov:wasDerivedFrom doc:7d480fcb3c04 .
+doc:FactssimonNohl a schema:Person .
+_:fc86e5432a54bac06be9e7b81cf2853f rdf:reifies <<( doc:FactssimonNohl rdf:type schema:Person )>> ;
+	prov:wasDerivedFrom doc:7d480fcb3c04 .
+doc:FactssimonNohl schema:name "Christian Brecher" .
+_:efcb1950f68d7388d8b7b7a3b21d9059 rdf:reifies <<( doc:FactssimonNohl schema:name "Christian Brecher" )>> ;
+	prov:wasDerivedFrom doc:7d480fcb3c04 .
+doc:FactsquasiStaticModelType a None:Model_type .
+_:a3762513767d99812fa1d0715e870580 rdf:reifies <<( doc:FactsquasiStaticModelType rdf:type None:Model_type )>> ;
+	prov:wasDerivedFrom doc:7d480fcb3c04 .
+doc:FactsarticleQuasiStaticAxisDeviations schema:author doc:FactssimonNohl .
+_:ce5ba03e3adb8036b9abaab6b631b783 rdf:reifies <<( doc:FactsarticleQuasiStaticAxisDeviations schema:author doc:FactssimonNohl )>> ;
+	prov:wasDerivedFrom doc:7d480fcb3c04 .
+doc:FactshealthAssessment rdfs:label "health assessment"@en .
+_:b94dad2a90fb213dffa00eee3fd6fc78 rdf:reifies <<( doc:FactshealthAssessment rdfs:label "health assessment"@en )>> ;
+	prov:wasDerivedFrom doc:7d480fcb3c04 .
+doc:FactsarticleTitleDe None:has_text_value "Quasi-static modeling of long-wave axis deviations in planetary gears for transmission error signal analysis" .
+_:c8a926c70196337b6759237caec62e81 rdf:reifies <<( doc:FactsarticleTitleDe None:has_text_value "Quasi-static modeling of long-wave axis deviations in planetary gears for transmission error signal analysis" )>> ;
+	prov:wasDerivedFrom doc:7d480fcb3c04 .
+doc:Predictive_maintenance_model a None:Predictive_maintenance_system_module .
+_:e1029a3353a98f1e732d5c33c4948267 rdf:reifies <<( doc:Predictive_maintenance_model rdf:type None:Predictive_maintenance_system_module )>> ;
+	prov:wasDerivedFrom doc:7d480fcb3c04 .
+doc:FactssimonNohl schema:name "Christian Westphal" .
+_:ec4754be753c2fea2277135aafd2ff3 rdf:reifies <<( doc:FactssimonNohl schema:name "Christian Westphal" )>> ;
+	prov:wasDerivedFrom doc:7d480fcb3c04 .
+doc:Predictive_maintenance_model None:has_predictive_maintenance_function doc:FactshealthAssessment .
+_:f96c3a3fc4960362b452bb8798d6beff rdf:reifies <<( doc:Predictive_maintenance_model None:has_predictive_maintenance_function doc:FactshealthAssessment )>> ;
+	prov:wasDerivedFrom doc:7d480fcb3c04 .
+doc:Factspublication_year_2025 None:has_interger_value 2025 .
+_:a497fe7580a08abfbe3d32d31f67ef99 rdf:reifies <<( doc:Factspublication_year_2025 None:has_interger_value 2025 )>> ;
+	prov:wasDerivedFrom doc:7d480fcb3c04 .
+doc:FactsplanetaryGearbox a None:Maintainable_item .
+_:f92bf70e4b97d72c345a8f95aab6f340 rdf:reifies <<( doc:FactsplanetaryGearbox rdf:type None:Maintainable_item )>> ;
+	prov:wasDerivedFrom doc:7d480fcb3c04 .
+doc:FactsremainingUsefulLifeEstimation rdfs:label "remaining useful life estimation"@en .
+_:b15bedb44054de19d7c1680101b0d2aa rdf:reifies <<( doc:FactsremainingUsefulLifeEstimation rdfs:label "remaining useful life estimation"@en )>> ;
+	prov:wasDerivedFrom doc:7d480fcb3c04 .
+doc:FactsplanetaryGearbox obo:BFO_0000051 doc:FactsplanetaryGearbox .
+_:aa33808f2d1afab08f527a180c454a25 rdf:reifies <<( doc:FactsplanetaryGearbox obo:BFO_0000051 doc:FactsplanetaryGearbox )>> ;
+	prov:wasDerivedFrom doc:7d480fcb3c04 .
+doc:Predictive_maintenance_model rdfs:label "fault detection"@en .
+_:e55ef4d604dae24b79d859dedb109a29 rdf:reifies <<( doc:Predictive_maintenance_model rdfs:label "fault detection"@en )>> ;
+	prov:wasDerivedFrom doc:7d480fcb3c04 .
+doc:FactsquasiStaticFeMethod cco:is_about doc:FactsplanetaryGearbox .
+_:a014a4b6bf08ddaeb36e30966ad0d184 rdf:reifies <<( doc:FactsquasiStaticFeMethod cco:is_about doc:FactsplanetaryGearbox )>> ;
+	prov:wasDerivedFrom doc:7d480fcb3c04 .
+doc:FactsquasiStaticFeMethod a None:Predictive_maintenance_model .
+_:aaac13c5a1dfe3cc08a03027d16bf3d3 rdf:reifies <<( doc:FactsquasiStaticFeMethod rdf:type None:Predictive_maintenance_model )>> ;
+	prov:wasDerivedFrom doc:7d480fcb3c04 .
+doc:FactscontactBehavior a None:Data_variable .
+_:f556501352d99d1a370f835d83da9cf0 rdf:reifies <<( doc:FactscontactBehavior rdf:type None:Data_variable )>> ;
+	prov:wasDerivedFrom doc:7d480fcb3c04 .
+doc:Predictive_maintenance_model a None:Fault_detection .
+_:dd4515bb49e6ce632b4e932f0f2112bb rdf:reifies <<( doc:Predictive_maintenance_model rdf:type None:Fault_detection )>> ;
+	prov:wasDerivedFrom doc:7d480fcb3c04 .
+doc:Predictive_maintenance_model None:has_predictive_maintenance_function doc:Predictive_maintenance_model .
+_:dde404cbdb0c3e4c7d57cb65d02ace40 rdf:reifies <<( doc:Predictive_maintenance_model None:has_predictive_maintenance_function doc:Predictive_maintenance_model )>> ;
+	prov:wasDerivedFrom doc:7d480fcb3c04 .
+doc:FactssimonNohl schema:name "Simon Nohl" .
+_:be19296f121f147f20fe5bff1c3c0f5d rdf:reifies <<( doc:FactssimonNohl schema:name "Simon Nohl" )>> ;
+	prov:wasDerivedFrom doc:7d480fcb3c04 .
+doc:FactsquasiStaticFeMethod cco:is_about doc:FactscontactBehavior .
+_:c677584187d8a6b9079317406420d67c rdf:reifies <<( doc:FactsquasiStaticFeMethod cco:is_about doc:FactscontactBehavior )>> ;
+	prov:wasDerivedFrom doc:7d480fcb3c04 .
+doc:FactsarticleTitleDe None:has_text_value "Abbildung langwelliger Achslageabweichungen in Planetengetrieben zur Signalanalyse des Drehwegfehlers in der Quasistatik" .
+_:dd3b4665614de20e766287638049b67b rdf:reifies <<( doc:FactsarticleTitleDe None:has_text_value "Abbildung langwelliger Achslageabweichungen in Planetengetrieben zur Signalanalyse des Drehwegfehlers in der Quasistatik" )>> ;
+	prov:wasDerivedFrom doc:7d480fcb3c04 .
+doc:Predictive_maintenance_model None:has_predictive_maintenance_function doc:FactsremainingUsefulLifeEstimation .
+_:f33172cb25336e7bc0f34aa1753e54cb rdf:reifies <<( doc:Predictive_maintenance_model None:has_predictive_maintenance_function doc:FactsremainingUsefulLifeEstimation )>> ;
+	prov:wasDerivedFrom doc:7d480fcb3c04 .
+doc:FactsquasiStaticFeMethod rdfs:label "quasi-static FE-based method"@en .
+_:a882d67abf003550d9ebc48e5b2090a5 rdf:reifies <<( doc:FactsquasiStaticFeMethod rdfs:label "quasi-static FE-based method"@en )>> ;
+	prov:wasDerivedFrom doc:7d480fcb3c04 .
+doc:FactscontactBehavior rdfs:label "contact behavior"@en .
+_:fd333d935c3f127a2d760473ee375e38 rdf:reifies <<( doc:FactscontactBehavior rdfs:label "contact behavior"@en )>> ;
+	prov:wasDerivedFrom doc:7d480fcb3c04 .
+doc:FactswindTurbineGearbox a None:Maintainable_item .
+_:e361a23cfc4d240b8db6908c10a0a3ef rdf:reifies <<( doc:FactswindTurbineGearbox rdf:type None:Maintainable_item )>> ;
+	prov:wasDerivedFrom doc:7d480fcb3c04 .
+doc:FactsplanetaryGearbox rdfs:label "planetary gearbox"@en .
+_:fb2239483845c14a137caf1b3c2b2ca4 rdf:reifies <<( doc:FactsplanetaryGearbox rdfs:label "planetary gearbox"@en )>> ;
+	prov:wasDerivedFrom doc:7d480fcb3c04 .
+doc:FactsarticleQuasiStaticAxisDeviations None:has_publication_year doc:Factspublication_year_2025 .
+_:aa133bf49d6807040116d1efe0fe095b rdf:reifies <<( doc:FactsarticleQuasiStaticAxisDeviations None:has_publication_year doc:Factspublication_year_2025 )>> ;
+	prov:wasDerivedFrom doc:7d480fcb3c04 .
+doc:FactstoothFlankDeviation a None:Data_variable .
+_:f1f858bd8ee0c4d45a0bdd9c96aa2074 rdf:reifies <<( doc:FactstoothFlankDeviation rdf:type None:Data_variable )>> ;
+	prov:wasDerivedFrom doc:7d480fcb3c04 .
+doc:FactsarticleQuasiStaticAxisDeviations None:has_title doc:FactsarticleTitleDe .
+_:cb558f845202f92ba4d8653a17230c0c rdf:reifies <<( doc:FactsarticleQuasiStaticAxisDeviations None:has_title doc:FactsarticleTitleDe )>> ;
+	prov:wasDerivedFrom doc:7d480fcb3c04 .
+doc:FactsquasiStaticFeMethod cco:describes_type doc:FactsquasiStaticModelType .
+_:fe772222d029216b27b4e5ca0d5cd85 rdf:reifies <<( doc:FactsquasiStaticFeMethod cco:describes_type doc:FactsquasiStaticModelType )>> ;
+	prov:wasDerivedFrom doc:7d480fcb3c04 .
+doc:Factspublication_year_2025 a None:Publication_year .
+_:bd2858540c69bf180db4cdeca88ac6aa rdf:reifies <<( doc:Factspublication_year_2025 rdf:type None:Publication_year )>> ;
+	prov:wasDerivedFrom doc:7d480fcb3c04 .
+doc:FactsarticleQuasiStaticAxisDeviations schema:datePublished "2025-02-10"^^<http://www.w3.org/2001/XMLSchema#date> .
+_:f854262169c6489663c2e9beb2eb92a6 rdf:reifies <<( doc:FactsarticleQuasiStaticAxisDeviations schema:datePublished "2025-02-10"^^<http://www.w3.org/2001/XMLSchema#date> )>> ;
+	prov:wasDerivedFrom doc:7d480fcb3c04 .
+doc:FactswindTurbineGearbox rdfs:label "wind turbine gearbox"@en .
+_:a87dac96803ee7d03c4d831d792cdb9f rdf:reifies <<( doc:FactswindTurbineGearbox rdfs:label "wind turbine gearbox"@en )>> ;
+	prov:wasDerivedFrom doc:7d480fcb3c04 .
+doc:FactsaxisMisalignment a None:Data_variable .
+_:cc79388d6c594ce45cee77a12cd7e76a rdf:reifies <<( doc:FactsaxisMisalignment rdf:type None:Data_variable )>> ;
+	prov:wasDerivedFrom doc:7d480fcb3c04 .
+doc:Predictive_maintenance_model rdfs:label "condition monitoring system module"@en .
+_:c8a79e321f8b673e02a973df5c12d8d rdf:reifies <<( doc:Predictive_maintenance_model rdfs:label "condition monitoring system module"@en )>> ;
+	prov:wasDerivedFrom doc:7d480fcb3c04 .
+doc:FactstoothFlankDeviation rdfs:label "tooth flank deviation"@en .
+_:a14531524a2972835db960bb052e258e rdf:reifies <<( doc:FactstoothFlankDeviation rdfs:label "tooth flank deviation"@en )>> ;
+	prov:wasDerivedFrom doc:7d480fcb3c04 .
+doc:FactsaxisMisalignment rdfs:label "axis misalignment"@en .
+_:f17b39bf240450ef498833b9bb711bfb rdf:reifies <<( doc:FactsaxisMisalignment rdfs:label "axis misalignment"@en )>> ;
+	prov:wasDerivedFrom doc:7d480fcb3c04 .
+doc:FactsplanetaryGearbox rdfs:label "planetary gear stage"@en .
+_:bc8315c85ec0c14ee8d3745b8b237dcd rdf:reifies <<( doc:FactsplanetaryGearbox rdfs:label "planetary gear stage"@en )>> ;
+	prov:wasDerivedFrom doc:7d480fcb3c04 .
+doc:FactsquasiStaticFeMethod cco:is_about doc:FactstoothFlankDeviation .
+_:fc83fb03da979500f6c4e41e86be1300 rdf:reifies <<( doc:FactsquasiStaticFeMethod cco:is_about doc:FactstoothFlankDeviation )>> ;
+	prov:wasDerivedFrom doc:7d480fcb3c04 .
+doc:FactsquasiStaticFeMethod cco:is_about doc:FactsaxisMisalignment .
+_:e344e521fb4867f84b919b674c96b817 rdf:reifies <<( doc:FactsquasiStaticFeMethod cco:is_about doc:FactsaxisMisalignment )>> ;
+	prov:wasDerivedFrom doc:7d480fcb3c04 .
+doc:FactsremainingUsefulLifeEstimation a None:Remaining_useful_life_estimation .
+_:d87e36986c5ce0ef43ace5d4542f7e39 rdf:reifies <<( doc:FactsremainingUsefulLifeEstimation rdf:type None:Remaining_useful_life_estimation )>> ;
+	prov:wasDerivedFrom doc:7d480fcb3c04 .
+doc:FactshealthAssessment a None:Health_assessment .
+_:d89d7d6db8190f3cfd4c5bb55d7f362f rdf:reifies <<( doc:FactshealthAssessment rdf:type None:Health_assessment )>> ;
+	prov:wasDerivedFrom doc:7d480fcb3c04 .
+doc:43965367e9a4 a prov:Entity , schema:text ;
+	prov:generatedAtTime "2026-07-23T00:11:21.514567Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+	schema:position 1 ;
+	schema:identifier "43965367e9a4" .
+doc:FactssuperordinateSystem rdfs:label "superordinate system"@en .
+_:cb092ed3ff352064e5872fecef9ab975 rdf:reifies <<( doc:FactssuperordinateSystem rdfs:label "superordinate system"@en )>> ;
+	prov:wasDerivedFrom doc:43965367e9a4 .
+doc:FactsmaintenanceTrigger schema:agent doc:FactstrendInterpreter .
+_:c7d76818ffa3720ff4a45406a70bf6c9 rdf:reifies <<( doc:FactsmaintenanceTrigger schema:agent doc:FactstrendInterpreter )>> ;
+	prov:wasDerivedFrom doc:43965367e9a4 .
+doc:FactsexcitationSignal a schema:Action .
+_:a4da29327439a8f8aca8611df92c41ec rdf:reifies <<( doc:FactsexcitationSignal rdf:type schema:Action )>> ;
+	prov:wasDerivedFrom doc:43965367e9a4 .
+doc:Predictive_maintenance_model rdfs:label "fault mechanism classification"@en .
+_:d9a6387225f1289e37737279bb396d25 rdf:reifies <<( doc:Predictive_maintenance_model rdfs:label "fault mechanism classification"@en )>> ;
+	prov:wasDerivedFrom doc:43965367e9a4 .
+doc:FactsloadReduction rdfs:label "decreased permitted loads"@en .
+_:e7ec84e5e31ef99746ba117ed5c5d186 rdf:reifies <<( doc:FactsloadReduction rdfs:label "decreased permitted loads"@en )>> ;
+	prov:wasDerivedFrom doc:43965367e9a4 .
+doc:Factsshaft a None:Maintainable_item .
+_:cc209072c30fd983613432d68673603c rdf:reifies <<( doc:Factsshaft rdf:type None:Maintainable_item )>> ;
+	prov:wasDerivedFrom doc:43965367e9a4 .
+doc:Factsdamage a schema:Thing .
+_:c1bf23a52b397584ec0a9f26a65773fb rdf:reifies <<( doc:Factsdamage rdf:type schema:Thing )>> ;
+	prov:wasDerivedFrom doc:43965367e9a4 .
+doc:Predictive_maintenance_model schema:object doc:FactsfaultMechanism .
+_:d87efa7ee14bba2b0524db12daf3acbe rdf:reifies <<( doc:Predictive_maintenance_model schema:object doc:FactsfaultMechanism )>> ;
+	prov:wasDerivedFrom doc:43965367e9a4 .
+doc:Predictive_maintenance_model <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD/seed#has_predictive_maintenance_function> doc:Predictive_maintenance_model .
+_:a3b68b969255bb22e9d7d7dd1d00e8d1 rdf:reifies <<( doc:Predictive_maintenance_model <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD/seed#has_predictive_maintenance_function> doc:Predictive_maintenance_model )>> ;
+	prov:wasDerivedFrom doc:43965367e9a4 .
+doc:FactsloadReduction schema:relatedTo doc:Factsdamage .
+_:b88530eb724a0eb637601537d431067 rdf:reifies <<( doc:FactsloadReduction schema:relatedTo doc:Factsdamage )>> ;
+	prov:wasDerivedFrom doc:43965367e9a4 .
+doc:FactsexcitationFrequencyOrOrderSpectrum obo:BFO_0000051 doc:Factssideband .
+_:f6b781ab98b75df15f5fc19663b7f6ba rdf:reifies <<( doc:FactsexcitationFrequencyOrOrderSpectrum obo:BFO_0000051 doc:Factssideband )>> ;
+	prov:wasDerivedFrom doc:43965367e9a4 .
+doc:Factsdamage schema:relatedTo doc:FactssuperordinateSystem .
+_:a8bfdd4fe3e1d68e12850a4176938d1e rdf:reifies <<( doc:Factsdamage schema:relatedTo doc:FactssuperordinateSystem )>> ;
+	prov:wasDerivedFrom doc:43965367e9a4 .
+doc:FactstrendInterpreter a cco:Algorithm .
+_:fbed47db596a7b12bad8a41a52a187dc rdf:reifies <<( doc:FactstrendInterpreter rdf:type cco:Algorithm )>> ;
+	prov:wasDerivedFrom doc:43965367e9a4 .
+doc:FactsexcitationSignal rdfs:label "recording and interpretation of the excitation signal"@en .
+_:be4fc46ce1c3059daa99b7e164cdaea2 rdf:reifies <<( doc:FactsexcitationSignal rdfs:label "recording and interpretation of the excitation signal"@en )>> ;
+	prov:wasDerivedFrom doc:43965367e9a4 .
+doc:FactsgearMeshFrequency a None:Data_variable .
+_:e6eca0ee874432599e0853052f85f82c rdf:reifies <<( doc:FactsgearMeshFrequency rdf:type None:Data_variable )>> ;
+	prov:wasDerivedFrom doc:43965367e9a4 .
+doc:FactssuperordinateSystem a schema:Thing .
+_:c8c0fba5e31b005d4706f43dfd99e057 rdf:reifies <<( doc:FactssuperordinateSystem rdf:type schema:Thing )>> ;
+	prov:wasDerivedFrom doc:43965367e9a4 .
+doc:Predictive_maintenance_model a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD/seed#Classification> .
+_:d48732bf65907a657dca8be2420fb5d0 rdf:reifies <<( doc:Predictive_maintenance_model rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD/seed#Classification> )>> ;
+	prov:wasDerivedFrom doc:43965367e9a4 .
+doc:FactsmaintenanceNeed a schema:Thing .
+_:c46c4d57238f25bea9cd22ea6bedf2cf rdf:reifies <<( doc:FactsmaintenanceNeed rdf:type schema:Thing )>> ;
+	prov:wasDerivedFrom doc:43965367e9a4 .
+doc:FactsexcitationSignal a None:Data_variable .
+_:cbcd36580104370b3d532e32ba1c7d44 rdf:reifies <<( doc:FactsexcitationSignal rdf:type None:Data_variable )>> ;
+	prov:wasDerivedFrom doc:43965367e9a4 .
+doc:Predictive_maintenance_model a None:Predictive_maintenance_model .
+_:d826202a3ccf2e7e04cb67ad8d07d736 rdf:reifies <<( doc:Predictive_maintenance_model rdf:type None:Predictive_maintenance_model )>> ;
+	prov:wasDerivedFrom doc:43965367e9a4 .
+doc:FactsrotationalFrequency rdfs:label "rotational frequency"@en .
+_:def4a0a333cccb4f38fbbf4cd2c7910d rdf:reifies <<( doc:FactsrotationalFrequency rdfs:label "rotational frequency"@en )>> ;
+	prov:wasDerivedFrom doc:43965367e9a4 .
+doc:FactstrendInterpreter rdfs:label "trend interpreter"@en .
+_:e24f964ba79d499ae8766162e872c426 rdf:reifies <<( doc:FactstrendInterpreter rdfs:label "trend interpreter"@en )>> ;
+	prov:wasDerivedFrom doc:43965367e9a4 .
+doc:FactscyclostationaryMovingMachineElement a None:Maintainable_item .
+_:b559ce0dbb69cc7e5613019a19f14ca rdf:reifies <<( doc:FactscyclostationaryMovingMachineElement rdf:type None:Maintainable_item )>> ;
+	prov:wasDerivedFrom doc:43965367e9a4 .
+doc:Factssideband a None:Data_variable .
+_:f6f46f6ed4965b022e053b105caf1ba6 rdf:reifies <<( doc:Factssideband rdf:type None:Data_variable )>> ;
+	prov:wasDerivedFrom doc:43965367e9a4 .
+doc:FactsfaultMechanism rdfs:label "fault mechanism"@en .
+_:cace6a4f8cb37a609c8bd83870ec1a3d rdf:reifies <<( doc:FactsfaultMechanism rdfs:label "fault mechanism"@en )>> ;
+	prov:wasDerivedFrom doc:43965367e9a4 .
+doc:FactsmaintenanceTrigger rdfs:label "maintenance trigger"@en .
+_:c41646833d8b9d032fc2549c243ec6c0 rdf:reifies <<( doc:FactsmaintenanceTrigger rdfs:label "maintenance trigger"@en )>> ;
+	prov:wasDerivedFrom doc:43965367e9a4 .
+doc:FactsmaintenanceNeed rdfs:label "need of maintenance"@en .
+_:f42b5227de2cc11be1b2b0018b92fd80 rdf:reifies <<( doc:FactsmaintenanceNeed rdfs:label "need of maintenance"@en )>> ;
+	prov:wasDerivedFrom doc:43965367e9a4 .
+doc:Factsdamage rdfs:label "damage"@en .
+_:d974863494e5663bb38645fc01e542e1 rdf:reifies <<( doc:Factsdamage rdfs:label "damage"@en )>> ;
+	prov:wasDerivedFrom doc:43965367e9a4 .
+doc:FactsmaintenanceTrigger a schema:Action .
+_:c88af130e87461f06bf568361c87f1ca rdf:reifies <<( doc:FactsmaintenanceTrigger rdf:type schema:Action )>> ;
+	prov:wasDerivedFrom doc:43965367e9a4 .
+doc:Predictive_maintenance_model a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD/seed#Fault_identification> .
+_:e295e0296d43e943169eab13518a998b rdf:reifies <<( doc:Predictive_maintenance_model rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD/seed#Fault_identification> )>> ;
+	prov:wasDerivedFrom doc:43965367e9a4 .
+doc:Predictive_maintenance_model rdfs:label "vibroacoustic condition diagnosis"@en .
+_:ba40a4f821f285bcea95d8217a75767c rdf:reifies <<( doc:Predictive_maintenance_model rdfs:label "vibroacoustic condition diagnosis"@en )>> ;
+	prov:wasDerivedFrom doc:43965367e9a4 .
+doc:FactsmaintenanceTrigger schema:object doc:FactsmaintenanceNeed .
+_:e8e0a53cd08300016baf0597c8365716 rdf:reifies <<( doc:FactsmaintenanceTrigger schema:object doc:FactsmaintenanceNeed )>> ;
+	prov:wasDerivedFrom doc:43965367e9a4 .
+doc:FactsfaultMechanism a schema:Thing .
+_:e726e2f4034cf2de86d64f4c9e883334 rdf:reifies <<( doc:FactsfaultMechanism rdf:type schema:Thing )>> ;
+	prov:wasDerivedFrom doc:43965367e9a4 .
+doc:FactsexcitationSignal rdfs:label "excitation signal"@en .
+_:f17d931cdcff9e72ec9e96fb4f2f2cf6 rdf:reifies <<( doc:FactsexcitationSignal rdfs:label "excitation signal"@en )>> ;
+	prov:wasDerivedFrom doc:43965367e9a4 .
+doc:Predictive_maintenance_model rdfs:label "condition monitoring system"@en .
+_:ed7389e94ec8abbec803b1f7926916de rdf:reifies <<( doc:Predictive_maintenance_model rdfs:label "condition monitoring system"@en )>> ;
+	prov:wasDerivedFrom doc:43965367e9a4 .
+doc:FactsloadReduction a schema:Thing .
+_:b3ac46a72944001bee54346b496e103d rdf:reifies <<( doc:FactsloadReduction rdf:type schema:Thing )>> ;
+	prov:wasDerivedFrom doc:43965367e9a4 .
+doc:FactsexcitationFrequencyOrOrderSpectrum a None:Data_variable .
+_:cc92dfbb63d8dc65ec1548a5f70f47d4 rdf:reifies <<( doc:FactsexcitationFrequencyOrOrderSpectrum rdf:type None:Data_variable )>> ;
+	prov:wasDerivedFrom doc:43965367e9a4 .
+doc:FactsexcitationFrequencyOrOrderSpectrum rdfs:label "excitation frequency or order spectrum"@en .
+_:de80c4bf42c68bbfa9102170ea8378b rdf:reifies <<( doc:FactsexcitationFrequencyOrOrderSpectrum rdfs:label "excitation frequency or order spectrum"@en )>> ;
+	prov:wasDerivedFrom doc:43965367e9a4 .
+doc:Factsshaft rdfs:label "gearbox"@en .
+_:eaeb2f14de0501003b5ca9163fe64390 rdf:reifies <<( doc:Factsshaft rdfs:label "gearbox"@en )>> ;
+	prov:wasDerivedFrom doc:43965367e9a4 .
+doc:FactsexcitationSignal schema:object doc:FactsexcitationSignal .
+_:a55c63df23a8e6a85718b10531c2065a rdf:reifies <<( doc:FactsexcitationSignal schema:object doc:FactsexcitationSignal )>> ;
+	prov:wasDerivedFrom doc:43965367e9a4 .
+doc:Factssideband rdfs:label "sideband"@en .
+_:a1f721bee7c38066c76563e900aeabca rdf:reifies <<( doc:Factssideband rdfs:label "sideband"@en )>> ;
+	prov:wasDerivedFrom doc:43965367e9a4 .
+doc:Factsshaft obo:BFO_0000051 doc:Factsshaft .
+_:ce5455152a9c24237b42dfbb4cf43afb rdf:reifies <<( doc:Factsshaft obo:BFO_0000051 doc:Factsshaft )>> ;
+	prov:wasDerivedFrom doc:43965367e9a4 .
+doc:FactscyclostationaryMovingMachineElement rdfs:label "cyclostationary moving machine element"@en .
+_:d929a54c368ea02e782cfe8bf6ea5837 rdf:reifies <<( doc:FactscyclostationaryMovingMachineElement rdfs:label "cyclostationary moving machine element"@en )>> ;
+	prov:wasDerivedFrom doc:43965367e9a4 .
+doc:FactsexcitationSignal schema:subject doc:FactscyclostationaryMovingMachineElement .
+_:a97e73c938cc6f1d8579ccf18faf2c7c rdf:reifies <<( doc:FactsexcitationSignal schema:subject doc:FactscyclostationaryMovingMachineElement )>> ;
+	prov:wasDerivedFrom doc:43965367e9a4 .
+doc:FactsgearMeshFrequency rdfs:label "gear mesh frequency"@en .
+_:c24843b62c8e5022786651a8b4a5f4c8 rdf:reifies <<( doc:FactsgearMeshFrequency rdfs:label "gear mesh frequency"@en )>> ;
+	prov:wasDerivedFrom doc:43965367e9a4 .
+doc:FactsrotationalFrequency a None:Data_variable .
+_:d821e0e17f9a993b558424141e93912f rdf:reifies <<( doc:FactsrotationalFrequency rdf:type None:Data_variable )>> ;
+	prov:wasDerivedFrom doc:43965367e9a4 .
+doc:Predictive_maintenance_model rdfs:label "fault mechanism identification"@en .
+_:a21155f8e4180cab1444df01f4e13385 rdf:reifies <<( doc:Predictive_maintenance_model rdfs:label "fault mechanism identification"@en )>> ;
+	prov:wasDerivedFrom doc:43965367e9a4 .
+doc:Factsshaft rdfs:label "shaft"@en .
+_:f0ffd360b7d70cc1d672ebf6a25612e6 rdf:reifies <<( doc:Factsshaft rdfs:label "shaft"@en )>> ;
+	prov:wasDerivedFrom doc:43965367e9a4 .
+doc:66440cfa43c2 a prov:Entity , schema:text ;
+	prov:generatedAtTime "2026-07-23T00:11:21.518565Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+	schema:position 2 ;
+	schema:identifier "66440cfa43c2" .
+doc:FactsdynamicModel rdfs:label "Phenomenological planetary gear model"@en .
+_:de401b318e8f9f895dd9d47dbe453782 rdf:reifies <<( doc:FactsdynamicModel rdfs:label "Phenomenological planetary gear model"@en )>> ;
+	prov:wasDerivedFrom doc:66440cfa43c2 .
+doc:FactsdynamicModel None:has_design_detail doc:Factspitting .
+_:af1794ca495b6c128853d92335f96d1 rdf:reifies <<( doc:FactsdynamicModel None:has_design_detail doc:Factspitting )>> ;
+	prov:wasDerivedFrom doc:66440cfa43c2 .
+_:a3762513767d99812fa1d0715e870580 prov:wasDerivedFrom doc:66440cfa43c2 .
+doc:FactstoothRootCrack a None:Design_detail .
+_:b48f8c8659be8a65fca1e035c8324f62 rdf:reifies <<( doc:FactstoothRootCrack rdf:type None:Design_detail )>> ;
+	prov:wasDerivedFrom doc:66440cfa43c2 .
+doc:FactsdynamicModel None:has_predictive_maintenance_function doc:FactsremainingUsefulLifeEstimation .
+_:eb70273fe1be239617d8f6e8efb79f6d rdf:reifies <<( doc:FactsdynamicModel None:has_predictive_maintenance_function doc:FactsremainingUsefulLifeEstimation )>> ;
+	prov:wasDerivedFrom doc:66440cfa43c2 .
+doc:FactsdynamicModel rdfs:label "Planetary gear simulation module"@en .
+_:a26e38a98c35bce566c90e429992cf72 rdf:reifies <<( doc:FactsdynamicModel rdfs:label "Planetary gear simulation module"@en )>> ;
+	prov:wasDerivedFrom doc:66440cfa43c2 .
+doc:FactsdynamicModel a None:Predictive_maintenance_model .
+_:f16f5b2e6c5b7040d6f6e1d58178e739 rdf:reifies <<( doc:FactsdynamicModel rdf:type None:Predictive_maintenance_model )>> ;
+	prov:wasDerivedFrom doc:66440cfa43c2 .
+doc:Factspitting rdfs:label "Pitting"@en .
+_:e84a0dc887c0ac6dde19bad2e1083ebe rdf:reifies <<( doc:Factspitting rdfs:label "Pitting"@en )>> ;
+	prov:wasDerivedFrom doc:66440cfa43c2 .
+doc:Factspitting a None:Design_detail .
+_:da09165b30f6fc0cbcc0f77ea79bb0ec rdf:reifies <<( doc:Factspitting rdf:type None:Design_detail )>> ;
+	prov:wasDerivedFrom doc:66440cfa43c2 .
+doc:FactsdynamicModelType rdfs:label "Finite-element-based model"@en .
+_:ea4fcccf214f6f7b5f65b85ed759feb9 rdf:reifies <<( doc:FactsdynamicModelType rdfs:label "Finite-element-based model"@en )>> ;
+	prov:wasDerivedFrom doc:66440cfa43c2 .
+doc:Predictive_maintenance_model cco:is_about doc:FactsdynamicModel .
+_:cfed53f50f0816444d9ae38704bb010 rdf:reifies <<( doc:Predictive_maintenance_model cco:is_about doc:FactsdynamicModel )>> ;
+	prov:wasDerivedFrom doc:66440cfa43c2 .
+doc:FactsdynamicModel a None:Predictive_maintenance_system_module .
+_:b20fa6b3560692e9c8c7f840740cdf92 rdf:reifies <<( doc:FactsdynamicModel rdf:type None:Predictive_maintenance_system_module )>> ;
+	prov:wasDerivedFrom doc:66440cfa43c2 .
+doc:FactsdynamicModelType rdfs:label "Phenomenological model"@en .
+_:e682aafbbf4e49329b2913b7ef31148d rdf:reifies <<( doc:FactsdynamicModelType rdfs:label "Phenomenological model"@en )>> ;
+	prov:wasDerivedFrom doc:66440cfa43c2 .
+doc:FactsvibrationResponse a None:Data_variable .
+_:f8975b487acb02be4fcc92f02d82c4b rdf:reifies <<( doc:FactsvibrationResponse rdf:type None:Data_variable )>> ;
+	prov:wasDerivedFrom doc:66440cfa43c2 .
+_:f92bf70e4b97d72c345a8f95aab6f340 prov:wasDerivedFrom doc:66440cfa43c2 .
+doc:FactsvibrationResponse rdfs:label "System vibration response"@en .
+_:cc64ef1e455e9db290cbedadc0e32b14 rdf:reifies <<( doc:FactsvibrationResponse rdfs:label "System vibration response"@en )>> ;
+	prov:wasDerivedFrom doc:66440cfa43c2 .
+doc:FactslongWaveDeviation rdfs:label "Long-wave deviation"@en .
+_:e589b6417f1440e32f5209c0d7d76f14 rdf:reifies <<( doc:FactslongWaveDeviation rdfs:label "Long-wave deviation"@en )>> ;
+	prov:wasDerivedFrom doc:66440cfa43c2 .
+doc:FactslongWaveDeviation a None:Data_variable .
+_:c48513869bf50e63b6e6f750e7bf96cf rdf:reifies <<( doc:FactslongWaveDeviation rdf:type None:Data_variable )>> ;
+	prov:wasDerivedFrom doc:66440cfa43c2 .
+doc:FactsdynamicModel rdfs:label "Dynamic planetary gear model"@en .
+_:f1250e67368ea4046cc85bae418c4c39 rdf:reifies <<( doc:FactsdynamicModel rdfs:label "Dynamic planetary gear model"@en )>> ;
+	prov:wasDerivedFrom doc:66440cfa43c2 .
+doc:FactsdynamicModel None:has_predictive_maintenance_function doc:Predictive_maintenance_model .
+_:e74ae640efad647987b6ab349ec46561 rdf:reifies <<( doc:FactsdynamicModel None:has_predictive_maintenance_function doc:Predictive_maintenance_model )>> ;
+	prov:wasDerivedFrom doc:66440cfa43c2 .
+doc:FactsaxisMisalignment rdfs:label "Axis misalignment"@en .
+_:d37403ad00b0d830c2d21b2f154fc223 rdf:reifies <<( doc:FactsaxisMisalignment rdfs:label "Axis misalignment"@en )>> ;
+	prov:wasDerivedFrom doc:66440cfa43c2 .
+doc:FactsquasiStaticModelType cco:describes doc:FactsfeBasedModel .
+_:a830acdef830dcb463a559a4f54c0991 rdf:reifies <<( doc:FactsquasiStaticModelType cco:describes doc:FactsfeBasedModel )>> ;
+	prov:wasDerivedFrom doc:66440cfa43c2 .
+doc:FactscontactStiffness a None:Data_variable .
+_:c9056d43756d449989125c5a318a598 rdf:reifies <<( doc:FactscontactStiffness rdf:type None:Data_variable )>> ;
+	prov:wasDerivedFrom doc:66440cfa43c2 .
+_:dd4515bb49e6ce632b4e932f0f2112bb prov:wasDerivedFrom doc:66440cfa43c2 .
+doc:FactscontactStiffness rdfs:label "Contact stiffness"@en .
+_:eef02a7433d5f09f73e486beabe306dc rdf:reifies <<( doc:FactscontactStiffness rdfs:label "Contact stiffness"@en )>> ;
+	prov:wasDerivedFrom doc:66440cfa43c2 .
+doc:FactsfeBasedModel a None:Predictive_maintenance_model .
+_:d4e4c103d6b3665a426f9a0e285030c6 rdf:reifies <<( doc:FactsfeBasedModel rdf:type None:Predictive_maintenance_model )>> ;
+	prov:wasDerivedFrom doc:66440cfa43c2 .
+doc:FactsdynamicModel None:has_design_detail doc:FactstoothRootCrack .
+_:ed5a1eb9882825e44c5e1f2ad303530a rdf:reifies <<( doc:FactsdynamicModel None:has_design_detail doc:FactstoothRootCrack )>> ;
+	prov:wasDerivedFrom doc:66440cfa43c2 .
+doc:FactsdynamicModelType cco:describes doc:FactsdynamicModel .
+_:ea9997b3db9ef385b7c5b199a08a8bc8 rdf:reifies <<( doc:FactsdynamicModelType cco:describes doc:FactsdynamicModel )>> ;
+	prov:wasDerivedFrom doc:66440cfa43c2 .
+doc:FactsdynamicModelType a None:Model_type .
+_:a1da5f97d6cb472b8db4e1fc4de5b641 rdf:reifies <<( doc:FactsdynamicModelType rdf:type None:Model_type )>> ;
+	prov:wasDerivedFrom doc:66440cfa43c2 .
+doc:FactstransmissionError a None:Data_variable .
+_:f4ad8c122a80fd38cf77cd68fd8fbd6a rdf:reifies <<( doc:FactstransmissionError rdf:type None:Data_variable )>> ;
+	prov:wasDerivedFrom doc:66440cfa43c2 .
+doc:FactstoothRootCrack rdfs:label "Tooth root crack"@en .
+_:aeb3cfbda2ade90a7d9d7f98004cfeee rdf:reifies <<( doc:FactstoothRootCrack rdfs:label "Tooth root crack"@en )>> ;
+	prov:wasDerivedFrom doc:66440cfa43c2 .
+doc:FactsfeBasedModel rdfs:label "Finite-element-based tooth contact model"@en .
+_:fc71fba28dc273ebe2b2f29ef9b0c176 rdf:reifies <<( doc:FactsfeBasedModel rdfs:label "Finite-element-based tooth contact model"@en )>> ;
+	prov:wasDerivedFrom doc:66440cfa43c2 .
+doc:Predictive_maintenance_model rdfs:label "Fault detection for gear defects"@en .
+_:e8010b698560d115edd186266945ba3b rdf:reifies <<( doc:Predictive_maintenance_model rdfs:label "Fault detection for gear defects"@en )>> ;
+	prov:wasDerivedFrom doc:66440cfa43c2 .
+doc:FactsdynamicModel None:has_design_detail doc:FactslongWaveDeviation .
+_:e269c7e19433cc66ca84debb2b87a43d rdf:reifies <<( doc:FactsdynamicModel None:has_design_detail doc:FactslongWaveDeviation )>> ;
+	prov:wasDerivedFrom doc:66440cfa43c2 .
+doc:Factspitting rdfs:label "Spalling"@en .
+_:ad7a67663ad74f7d374b92ac8826da5b rdf:reifies <<( doc:Factspitting rdfs:label "Spalling"@en )>> ;
+	prov:wasDerivedFrom doc:66440cfa43c2 .
+doc:FactsdynamicModel None:has_design_detail doc:FactsaxisMisalignment .
+_:e7193b14d7b906bddf6e8107486f100 rdf:reifies <<( doc:FactsdynamicModel None:has_design_detail doc:FactsaxisMisalignment )>> ;
+	prov:wasDerivedFrom doc:66440cfa43c2 .
+doc:FactsremainingUsefulLifeEstimation rdfs:label "Remaining useful life prediction"@en .
+_:f537380f1f271036203d7250792464fb rdf:reifies <<( doc:FactsremainingUsefulLifeEstimation rdfs:label "Remaining useful life prediction"@en )>> ;
+	prov:wasDerivedFrom doc:66440cfa43c2 .
+doc:Predictive_maintenance_model a None:Predictive_Maintenance_Article .
+_:ab4839cba5db51dc98f6767bbcf894ae rdf:reifies <<( doc:Predictive_maintenance_model rdf:type None:Predictive_Maintenance_Article )>> ;
+	prov:wasDerivedFrom doc:66440cfa43c2 .
+doc:FactsfeBasedModel rdfs:label "Quasi-static tooth contact model"@en .
+_:a401d419901e4a90a8604ffa61c835eb rdf:reifies <<( doc:FactsfeBasedModel rdfs:label "Quasi-static tooth contact model"@en )>> ;
+	prov:wasDerivedFrom doc:66440cfa43c2 .
+_:cc79388d6c594ce45cee77a12cd7e76a prov:wasDerivedFrom doc:66440cfa43c2 .
+doc:FactsplanetaryGearbox rdfs:label "Planetary gearbox"@en .
+_:ae0e9e5383381d25c3fb527eeead0bf5 rdf:reifies <<( doc:FactsplanetaryGearbox rdfs:label "Planetary gearbox"@en )>> ;
+	prov:wasDerivedFrom doc:66440cfa43c2 .
+_:d87e36986c5ce0ef43ace5d4542f7e39 prov:wasDerivedFrom doc:66440cfa43c2 .
+doc:FactsdynamicModelType rdfs:label "Dynamic model"@en .
+_:bd58faa74ab6c5747810e942101caf58 rdf:reifies <<( doc:FactsdynamicModelType rdfs:label "Dynamic model"@en )>> ;
+	prov:wasDerivedFrom doc:66440cfa43c2 .
+doc:FactsquasiStaticModelType rdfs:label "Quasi-static model"@en .
+_:d4a15f3fca81737b270e824d45eba9db rdf:reifies <<( doc:FactsquasiStaticModelType rdfs:label "Quasi-static model"@en )>> ;
+	prov:wasDerivedFrom doc:66440cfa43c2 .
+doc:FactsdynamicModelType cco:describes doc:FactsfeBasedModel .
+_:bd4e3ebd1d4266bbfa3522e65b8c898b rdf:reifies <<( doc:FactsdynamicModelType cco:describes doc:FactsfeBasedModel )>> ;
+	prov:wasDerivedFrom doc:66440cfa43c2 .
+doc:FactstransmissionError rdfs:label "Transmission error"@en .
+_:d2ab35db630463f96db863f6f2aeeeed rdf:reifies <<( doc:FactstransmissionError rdfs:label "Transmission error"@en )>> ;
+	prov:wasDerivedFrom doc:66440cfa43c2 .
+None:Predictive_maintenance_model owl:sameAs None:Predictive_Maintenance_Article , None:Predictive_maintenance_system_module .

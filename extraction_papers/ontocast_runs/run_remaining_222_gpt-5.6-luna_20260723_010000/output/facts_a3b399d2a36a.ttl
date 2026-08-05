@@ -1,0 +1,396 @@
+@prefix None: <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#> .
+@prefix cco: <http://www.ontologyrepository.com/CommonCoreOntologies/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doc: <https://growgraph.dev/doc/a3b399d2a36a/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix obo: <http://purl.obolibrary.org/obo/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix schema: <https://schema.org/> .
+doc:2769790a7b1d a prov:Entity , schema:text ;
+	prov:generatedAtTime "2026-07-25T16:03:00.955061Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+	schema:position 0 ;
+	schema:identifier "2769790a7b1d" .
+doc:Factsarticle_10_1049_elp2_12529 schema:about doc:FactsfemModel_1 .
+_:ec4a5a718cc7be02fd6facc277f6a8f8 rdf:reifies <<( doc:Factsarticle_10_1049_elp2_12529 schema:about doc:FactsfemModel_1 )>> ;
+	prov:wasDerivedFrom doc:2769790a7b1d .
+doc:Factsarticle_10_1049_elp2_12529 schema:author doc:FactsnadaElBouharrouti .
+_:e8d3b0bcf0ea5c79d4cb9fb4a43c5126 rdf:reifies <<( doc:Factsarticle_10_1049_elp2_12529 schema:author doc:FactsnadaElBouharrouti )>> ;
+	prov:wasDerivedFrom doc:2769790a7b1d .
+doc:FactsinnerRingDefect schema:depth "1"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+_:f0bdb8ee829c80aada86e153b412d3c8 rdf:reifies <<( doc:FactsinnerRingDefect schema:depth "1"^^<http://www.w3.org/2001/XMLSchema#decimal> )>> ;
+	prov:wasDerivedFrom doc:2769790a7b1d .
+doc:FactsahmedHemeida schema:affiliation doc:FactsaaltoUniversity .
+_:e7371ab0a2392f95ea72578b6e6db4c3 rdf:reifies <<( doc:FactsahmedHemeida schema:affiliation doc:FactsaaltoUniversity )>> ;
+	prov:wasDerivedFrom doc:2769790a7b1d .
+doc:FactsarticleTitle_37 None:has_text_value "Co-simulations of induction machines coupled with a radial ball bearing for mechanical defects analysis" .
+_:f6e79d6b6d0246431a145dedaf1a82c7 rdf:reifies <<( doc:FactsarticleTitle_37 None:has_text_value "Co-simulations of induction machines coupled with a radial ball bearing for mechanical defects analysis" )>> ;
+	prov:wasDerivedFrom doc:2769790a7b1d .
+doc:FactsbearingFault_1 a schema:Thing .
+_:b5270fea70c22107dd7bb89085c5a80d rdf:reifies <<( doc:FactsbearingFault_1 rdf:type schema:Thing )>> ;
+	prov:wasDerivedFrom doc:2769790a7b1d .
+doc:Factsshaft_2 schema:subjectOf doc:FactsbearingFault_1 .
+_:e2beca0ea50e0959419f96029cf867eb rdf:reifies <<( doc:Factsshaft_2 schema:subjectOf doc:FactsbearingFault_1 )>> ;
+	prov:wasDerivedFrom doc:2769790a7b1d .
+doc:FactsanouarBelahcen schema:affiliation doc:FactsaaltoUniversity .
+_:a9ce3e544188f6b15bf2576a5ee18636 rdf:reifies <<( doc:FactsanouarBelahcen schema:affiliation doc:FactsaaltoUniversity )>> ;
+	prov:wasDerivedFrom doc:2769790a7b1d .
+doc:Factsarticle_10_1049_elp2_12529 schema:about doc:FactsmotorCurrent_3 .
+_:f221d362f73e69c0ba0236588047aaaf rdf:reifies <<( doc:Factsarticle_10_1049_elp2_12529 schema:about doc:FactsmotorCurrent_3 )>> ;
+	prov:wasDerivedFrom doc:2769790a7b1d .
+doc:FactsfemModel_1 None:has_predictive_maintenance_function doc:FactsfaultDetectionFunction_22 .
+_:d7ba7fe49e8cb3df2d49e2bdeb663b0f rdf:reifies <<( doc:FactsfemModel_1 None:has_predictive_maintenance_function doc:FactsfaultDetectionFunction_22 )>> ;
+	prov:wasDerivedFrom doc:2769790a7b1d .
+doc:FactsaaltoUniversity a schema:Organization .
+_:fe32686856a2c12b0964ab9c1f9e0f72 rdf:reifies <<( doc:FactsaaltoUniversity rdf:type schema:Organization )>> ;
+	prov:wasDerivedFrom doc:2769790a7b1d .
+doc:FactsnadaElBouharrouti schema:email "nada.elbouharrouti@aalto.fi" .
+_:b250ce8002e7fd6eeacfd824fe80d9b2 rdf:reifies <<( doc:FactsnadaElBouharrouti schema:email "nada.elbouharrouti@aalto.fi" )>> ;
+	prov:wasDerivedFrom doc:2769790a7b1d .
+doc:FactsmotorCurrent_3 a None:Data_variable .
+_:bd49f98c43bc7703adcde29c588a9b9f rdf:reifies <<( doc:FactsmotorCurrent_3 rdf:type None:Data_variable )>> ;
+	prov:wasDerivedFrom doc:2769790a7b1d .
+doc:FactsballBearing obo:BFO_0000051 doc:Factsshaft_2 .
+_:ff41d356998b663fba6000ebe90e6279 rdf:reifies <<( doc:FactsballBearing obo:BFO_0000051 doc:Factsshaft_2 )>> ;
+	prov:wasDerivedFrom doc:2769790a7b1d .
+doc:FactsballBearing a None:Maintainable_item .
+_:ddd03742fc31e6615bfbc74f1d33fe0c rdf:reifies <<( doc:FactsballBearing rdf:type None:Maintainable_item )>> ;
+	prov:wasDerivedFrom doc:2769790a7b1d .
+doc:Factsdoi_10_1049_elp2_12529 None:has_text_value "10.1049/elp2.12529" .
+_:f2e269fa43bac54af288732f3339da4f rdf:reifies <<( doc:Factsdoi_10_1049_elp2_12529 None:has_text_value "10.1049/elp2.12529" )>> ;
+	prov:wasDerivedFrom doc:2769790a7b1d .
+doc:Factsarticle_10_1049_elp2_12529 None:has_identifier doc:Factsdoi_10_1049_elp2_12529 .
+_:fa909dc217902104ba50ed1072e45387 rdf:reifies <<( doc:Factsarticle_10_1049_elp2_12529 None:has_identifier doc:Factsdoi_10_1049_elp2_12529 )>> ;
+	prov:wasDerivedFrom doc:2769790a7b1d .
+doc:FactsfaultDetectionFunction_22 a None:Fault_identification .
+_:a27179640bec8e9158d0c02e8c238a62 rdf:reifies <<( doc:FactsfaultDetectionFunction_22 rdf:type None:Fault_identification )>> ;
+	prov:wasDerivedFrom doc:2769790a7b1d .
+doc:FactsnadaElBouharrouti schema:familyName "El Bouharrouti" .
+_:e198e665fd292fec97fbe8eb9e2eff19 rdf:reifies <<( doc:FactsnadaElBouharrouti schema:familyName "El Bouharrouti" )>> ;
+	prov:wasDerivedFrom doc:2769790a7b1d .
+doc:FactsarticleTitle_37 a None:Article_title .
+_:c4c05930a02c2b271bd1b5c3edf08408 rdf:reifies <<( doc:FactsarticleTitle_37 rdf:type None:Article_title )>> ;
+	prov:wasDerivedFrom doc:2769790a7b1d .
+doc:Factsarticle_10_1049_elp2_12529 schema:author doc:FactsanouarBelahcen .
+_:c4131144a27b0190b9774158ca215773 rdf:reifies <<( doc:Factsarticle_10_1049_elp2_12529 schema:author doc:FactsanouarBelahcen )>> ;
+	prov:wasDerivedFrom doc:2769790a7b1d .
+doc:Factsarticle_10_1049_elp2_12529 schema:about doc:FactsbearingFault_1 .
+_:e339b25c0fdaa18cd2b6997a16eacae7 rdf:reifies <<( doc:Factsarticle_10_1049_elp2_12529 schema:about doc:FactsbearingFault_1 )>> ;
+	prov:wasDerivedFrom doc:2769790a7b1d .
+doc:FactsnadaElBouharrouti schema:givenName "Nada" .
+_:eb045210fd2a8130f63c8cdf42b6384c rdf:reifies <<( doc:FactsnadaElBouharrouti schema:givenName "Nada" )>> ;
+	prov:wasDerivedFrom doc:2769790a7b1d .
+doc:FactsfloranMartin schema:affiliation doc:FactsaaltoUniversity .
+_:b3bd0774c786c46c151af82f38c602dc rdf:reifies <<( doc:FactsfloranMartin schema:affiliation doc:FactsaaltoUniversity )>> ;
+	prov:wasDerivedFrom doc:2769790a7b1d .
+doc:Factsarticle_10_1049_elp2_12529 None:has_title doc:FactsarticleTitle_37 .
+_:b3198564de7698513e72ae586bacdaa4 rdf:reifies <<( doc:Factsarticle_10_1049_elp2_12529 None:has_title doc:FactsarticleTitle_37 )>> ;
+	prov:wasDerivedFrom doc:2769790a7b1d .
+doc:FactsbearingFault_1 schema:minValue "5"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+_:a98e7721bc00f4cfb805005ed4c77bbb rdf:reifies <<( doc:FactsbearingFault_1 schema:minValue "5"^^<http://www.w3.org/2001/XMLSchema#decimal> )>> ;
+	prov:wasDerivedFrom doc:2769790a7b1d .
+doc:Factsarticle_10_1049_elp2_12529 schema:author doc:FactsmaksimSitnikov .
+_:c044500fc42b46392feb67fbed2dd071 rdf:reifies <<( doc:Factsarticle_10_1049_elp2_12529 schema:author doc:FactsmaksimSitnikov )>> ;
+	prov:wasDerivedFrom doc:2769790a7b1d .
+doc:FactsfemModel_1 a None:Predictive_maintenance_model .
+_:e806730eda7b5e1d9517111de38106f0 rdf:reifies <<( doc:FactsfemModel_1 rdf:type None:Predictive_maintenance_model )>> ;
+	prov:wasDerivedFrom doc:2769790a7b1d .
+doc:FactsfemModel_1 schema:hasPart doc:FactsfemModel_1 .
+_:a468e0e2547f941bf3de5dbdebd7f8b5 rdf:reifies <<( doc:FactsfemModel_1 schema:hasPart doc:FactsfemModel_1 )>> ;
+	prov:wasDerivedFrom doc:2769790a7b1d .
+doc:FactsbearingFault_1 schema:unitCode "%" .
+_:bd976d9bb4438f2975493929e6310124 rdf:reifies <<( doc:FactsbearingFault_1 schema:unitCode "%" )>> ;
+	prov:wasDerivedFrom doc:2769790a7b1d .
+doc:Factsarticle_10_1049_elp2_12529 a None:Predictive_Maintenance_Article .
+_:d33eccc9ec4c3cf1035de921318206e0 rdf:reifies <<( doc:Factsarticle_10_1049_elp2_12529 rdf:type None:Predictive_Maintenance_Article )>> ;
+	prov:wasDerivedFrom doc:2769790a7b1d .
+doc:FactsballBearing schema:subjectOf doc:FactsinnerRingDefect .
+_:a56b9f459c2dcb08ddac5d033db4bfd3 rdf:reifies <<( doc:FactsballBearing schema:subjectOf doc:FactsinnerRingDefect )>> ;
+	prov:wasDerivedFrom doc:2769790a7b1d .
+doc:FactsnadaElBouharrouti a schema:Person .
+_:bb0240631d8126128f5e7fca45f9bc42 rdf:reifies <<( doc:FactsnadaElBouharrouti rdf:type schema:Person )>> ;
+	prov:wasDerivedFrom doc:2769790a7b1d .
+doc:FactsfemModel_1 a None:Predictive_maintenance_system_module .
+_:d21bbd6a7624237e6fb52a7b1c98eb3f rdf:reifies <<( doc:FactsfemModel_1 rdf:type None:Predictive_maintenance_system_module )>> ;
+	prov:wasDerivedFrom doc:2769790a7b1d .
+doc:FactsmaksimSitnikov schema:affiliation doc:FactsaaltoUniversity .
+_:ea41758373ec2ae4d1de68da767d96c1 rdf:reifies <<( doc:FactsmaksimSitnikov schema:affiliation doc:FactsaaltoUniversity )>> ;
+	prov:wasDerivedFrom doc:2769790a7b1d .
+doc:Factsarticle_10_1049_elp2_12529 schema:about doc:Factsshaft_2 .
+_:a85ee182e6ecff0f3b53fae9b959214f rdf:reifies <<( doc:Factsarticle_10_1049_elp2_12529 schema:about doc:Factsshaft_2 )>> ;
+	prov:wasDerivedFrom doc:2769790a7b1d .
+doc:Factsarticle_10_1049_elp2_12529 schema:publisher doc:FactsaaltoUniversity .
+_:f12197c771b2250e53db0ef90e7231b6 rdf:reifies <<( doc:Factsarticle_10_1049_elp2_12529 schema:publisher doc:FactsaaltoUniversity )>> ;
+	prov:wasDerivedFrom doc:2769790a7b1d .
+doc:Factsarticle_10_1049_elp2_12529 schema:author doc:FactsfloranMartin .
+_:af7e8036599b61bc85ef2f9c6e2151cf rdf:reifies <<( doc:Factsarticle_10_1049_elp2_12529 schema:author doc:FactsfloranMartin )>> ;
+	prov:wasDerivedFrom doc:2769790a7b1d .
+doc:Factsshaft_2 obo:BFO_0000051 doc:FactsballBearing .
+_:ca76e10c59a8c85dad15324f80e5cd88 rdf:reifies <<( doc:Factsshaft_2 obo:BFO_0000051 doc:FactsballBearing )>> ;
+	prov:wasDerivedFrom doc:2769790a7b1d .
+doc:Factsshaft_2 a None:Maintainable_item .
+_:e763ea1932b725ae21a0c2ba338efd05 rdf:reifies <<( doc:Factsshaft_2 rdf:type None:Maintainable_item )>> ;
+	prov:wasDerivedFrom doc:2769790a7b1d .
+doc:FactsnadaElBouharrouti schema:affiliation doc:FactsaaltoUniversity .
+_:f1043963b4bb36960c8cddca5428c748 rdf:reifies <<( doc:FactsnadaElBouharrouti schema:affiliation doc:FactsaaltoUniversity )>> ;
+	prov:wasDerivedFrom doc:2769790a7b1d .
+doc:FactsinnerRingDefect schema:unitCode "mm" .
+_:ec06c58122e7554c3762fc3b90c2e679 rdf:reifies <<( doc:FactsinnerRingDefect schema:unitCode "mm" )>> ;
+	prov:wasDerivedFrom doc:2769790a7b1d .
+doc:FactsinnerRingDefect a schema:Thing .
+_:fa162f7fb85aeaff8f72f28c18c2cbfa rdf:reifies <<( doc:FactsinnerRingDefect rdf:type schema:Thing )>> ;
+	prov:wasDerivedFrom doc:2769790a7b1d .
+doc:Factsarticle_10_1049_elp2_12529 schema:about doc:FactsinnerRingDefect .
+_:c75859c2b277623eb1472394df5c6c0 rdf:reifies <<( doc:Factsarticle_10_1049_elp2_12529 schema:about doc:FactsinnerRingDefect )>> ;
+	prov:wasDerivedFrom doc:2769790a7b1d .
+doc:Factsarticle_10_1049_elp2_12529 schema:author doc:FactsahmedHemeida .
+_:dad7c19f003c994aeeb7d1078f5c2f00 rdf:reifies <<( doc:Factsarticle_10_1049_elp2_12529 schema:author doc:FactsahmedHemeida )>> ;
+	prov:wasDerivedFrom doc:2769790a7b1d .
+doc:FactsbearingFault_1 schema:maxValue "40"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+_:b9b0f76c0063628801b41afcbd677d34 rdf:reifies <<( doc:FactsbearingFault_1 schema:maxValue "40"^^<http://www.w3.org/2001/XMLSchema#decimal> )>> ;
+	prov:wasDerivedFrom doc:2769790a7b1d .
+doc:FactsinnerRingDefect schema:width "3"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+_:c45f3ccd1ee2e1bbdbd6224575a80fb8 rdf:reifies <<( doc:FactsinnerRingDefect schema:width "3"^^<http://www.w3.org/2001/XMLSchema#decimal> )>> ;
+	prov:wasDerivedFrom doc:2769790a7b1d .
+doc:FactsmechanicalBearingModel a None:Predictive_maintenance_model .
+_:a85435cd6c69d23d9ad307e6b667ba2f rdf:reifies <<( doc:FactsmechanicalBearingModel rdf:type None:Predictive_maintenance_model )>> ;
+	prov:wasDerivedFrom doc:2769790a7b1d .
+doc:FactsfaultDetectionFunction_22 a None:Fault_detection .
+_:d6007c0726c041b505866c16e228266b rdf:reifies <<( doc:FactsfaultDetectionFunction_22 rdf:type None:Fault_detection )>> ;
+	prov:wasDerivedFrom doc:2769790a7b1d .
+doc:FactsfemModel_1 schema:hasPart doc:FactsmechanicalBearingModel .
+_:a8097f58e37f39f0e6e369fe53c7b5ec rdf:reifies <<( doc:FactsfemModel_1 schema:hasPart doc:FactsmechanicalBearingModel )>> ;
+	prov:wasDerivedFrom doc:2769790a7b1d .
+doc:Factsarticle_10_1049_elp2_12529 schema:identifier doc:Factsdoi_10_1049_elp2_12529 .
+_:f0f57aaa7b5a69fa5caab391369d1c rdf:reifies <<( doc:Factsarticle_10_1049_elp2_12529 schema:identifier doc:Factsdoi_10_1049_elp2_12529 )>> ;
+	prov:wasDerivedFrom doc:2769790a7b1d .
+doc:Factsdoi_10_1049_elp2_12529 a None:Article_identifier .
+_:a5c57b629b452bad5ad1914befa6eca7 rdf:reifies <<( doc:Factsdoi_10_1049_elp2_12529 rdf:type None:Article_identifier )>> ;
+	prov:wasDerivedFrom doc:2769790a7b1d .
+doc:Factsarticle_10_1049_elp2_12529 schema:about doc:FactsballBearing .
+_:df3b66a8f19c2279b88b51f1cfa70675 rdf:reifies <<( doc:Factsarticle_10_1049_elp2_12529 schema:about doc:FactsballBearing )>> ;
+	prov:wasDerivedFrom doc:2769790a7b1d .
+doc:94804b3d1440 a prov:Entity , schema:text ;
+	prov:generatedAtTime "2026-07-25T16:03:00.957834Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+	schema:position 1 ;
+	schema:identifier "94804b3d1440" .
+doc:FactsfemModel_1 <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD/seed#describes_type> doc:FactsmecModelType .
+_:d3f5f333ab5dbfbb66a73bbca9f9812b rdf:reifies <<( doc:FactsfemModel_1 <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD/seed#describes_type> doc:FactsmecModelType )>> ;
+	prov:wasDerivedFrom doc:94804b3d1440 .
+doc:FactsmotorCurrent_3 a schema:Thing .
+_:bc17ff255e30043c05f0d2205ed3cedd rdf:reifies <<( doc:FactsmotorCurrent_3 rdf:type schema:Thing )>> ;
+	prov:wasDerivedFrom doc:94804b3d1440 .
+doc:FactsmotorCurrent_3 schema:about doc:FactsinductionMotor_5 .
+_:ac147cd25ce70e28c84d55221452e05a rdf:reifies <<( doc:FactsmotorCurrent_3 schema:about doc:FactsinductionMotor_5 )>> ;
+	prov:wasDerivedFrom doc:94804b3d1440 .
+doc:FactsinductionMotor_5 schema:subjectOf doc:FactsmotorCurrent_3 .
+_:b8559b9f2320e641f9500fd8577982a0 rdf:reifies <<( doc:FactsinductionMotor_5 schema:subjectOf doc:FactsmotorCurrent_3 )>> ;
+	prov:wasDerivedFrom doc:94804b3d1440 .
+doc:Predictive_maintenance_model schema:about doc:FactscoSimulation .
+_:a65d2f7bb518303f84b48fe353eadc7a rdf:reifies <<( doc:Predictive_maintenance_model schema:about doc:FactscoSimulation )>> ;
+	prov:wasDerivedFrom doc:94804b3d1440 .
+doc:Predictive_maintenance_model schema:about doc:FactsfemModel_1 .
+_:e9cc6a7cf532ddd9270728a05a88595c rdf:reifies <<( doc:Predictive_maintenance_model schema:about doc:FactsfemModel_1 )>> ;
+	prov:wasDerivedFrom doc:94804b3d1440 .
+doc:Predictive_maintenance_model schema:about doc:FactspredictiveMaintenance_1 .
+_:fdb6b679ea58eb889c5f300231ce180e rdf:reifies <<( doc:Predictive_maintenance_model schema:about doc:FactspredictiveMaintenance_1 )>> ;
+	prov:wasDerivedFrom doc:94804b3d1440 .
+_:b5270fea70c22107dd7bb89085c5a80d prov:wasDerivedFrom doc:94804b3d1440 .
+doc:FactsfemModel_1 cco:is_about doc:FactsinductionMotor_5 .
+_:f40d8971b56b2b88b29b9217e36446d8 rdf:reifies <<( doc:FactsfemModel_1 cco:is_about doc:FactsinductionMotor_5 )>> ;
+	prov:wasDerivedFrom doc:94804b3d1440 .
+doc:FactsmecModelType a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD/seed#Model_type> .
+_:a422e4d992bd5a05f34d357810235287 rdf:reifies <<( doc:FactsmecModelType rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD/seed#Model_type> )>> ;
+	prov:wasDerivedFrom doc:94804b3d1440 .
+doc:FactsbearingFault_1 schema:affects doc:FactsinductionMotor_5 .
+_:ac9c1c8d3fee901922d8f986b733a074 rdf:reifies <<( doc:FactsbearingFault_1 schema:affects doc:FactsinductionMotor_5 )>> ;
+	prov:wasDerivedFrom doc:94804b3d1440 .
+doc:FactsmecModelType <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD/seed#has_text_value> "magnetic equivalent circuit model" .
+_:a85dfa658ec98badfe6ad8620fa30133 rdf:reifies <<( doc:FactsmecModelType <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD/seed#has_text_value> "magnetic equivalent circuit model" )>> ;
+	prov:wasDerivedFrom doc:94804b3d1440 .
+doc:FactspredictiveMaintenance_1 a schema:Thing .
+_:f6f747ef8a7b63a4478575c4d2c1e563 rdf:reifies <<( doc:FactspredictiveMaintenance_1 rdf:type schema:Thing )>> ;
+	prov:wasDerivedFrom doc:94804b3d1440 .
+doc:FactsmecModelType <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD/seed#has_text_value> "finite element model" .
+_:de19ebbacc90187ea05306147bb90df5 rdf:reifies <<( doc:FactsmecModelType <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD/seed#has_text_value> "finite element model" )>> ;
+	prov:wasDerivedFrom doc:94804b3d1440 .
+doc:Predictive_maintenance_model schema:about doc:FactsinductionMotor_5 .
+_:d616d8edc310755f40087e1995183ffe rdf:reifies <<( doc:Predictive_maintenance_model schema:about doc:FactsinductionMotor_5 )>> ;
+	prov:wasDerivedFrom doc:94804b3d1440 .
+doc:Predictive_maintenance_model schema:about doc:FactselectromagneticCoupling .
+_:fd934689290d4e3b8ca11f5a3a403049 rdf:reifies <<( doc:Predictive_maintenance_model schema:about doc:FactselectromagneticCoupling )>> ;
+	prov:wasDerivedFrom doc:94804b3d1440 .
+doc:FactsmotorCurrent_3 cco:is_about doc:FactsinductionMotor_5 .
+_:e8886c43a8c5c03ba42e219a474afbe4 rdf:reifies <<( doc:FactsmotorCurrent_3 cco:is_about doc:FactsinductionMotor_5 )>> ;
+	prov:wasDerivedFrom doc:94804b3d1440 .
+_:e806730eda7b5e1d9517111de38106f0 prov:wasDerivedFrom doc:94804b3d1440 .
+doc:Predictive_maintenance_model schema:about doc:FactselectromechanicalEffects .
+_:de211f70d31cd150e8790ee57017e68a rdf:reifies <<( doc:Predictive_maintenance_model schema:about doc:FactselectromechanicalEffects )>> ;
+	prov:wasDerivedFrom doc:94804b3d1440 .
+doc:FactsinductionMotor_5 a None:Maintainable_item .
+_:e97296a71bca472d550d4c44c41de0a4 rdf:reifies <<( doc:FactsinductionMotor_5 rdf:type None:Maintainable_item )>> ;
+	prov:wasDerivedFrom doc:94804b3d1440 .
+doc:Factspublication_year_2024_5 a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD/seed#Publication_year> .
+_:e75d98abcff46a6e0a4494dac9dcf534 rdf:reifies <<( doc:Factspublication_year_2024_5 rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD/seed#Publication_year> )>> ;
+	prov:wasDerivedFrom doc:94804b3d1440 .
+doc:Factspublication_year_2024_5 <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD/seed#has_interger_value> 2024 .
+_:e7a903a8eaf3fbf548e4cb7e55a4acef rdf:reifies <<( doc:Factspublication_year_2024_5 <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD/seed#has_interger_value> 2024 )>> ;
+	prov:wasDerivedFrom doc:94804b3d1440 .
+doc:Predictive_maintenance_model <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD/seed#has_publication_year> doc:Factspublication_year_2024_5 .
+_:c372fd8e214c58a86b20574845498152 rdf:reifies <<( doc:Predictive_maintenance_model <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD/seed#has_publication_year> doc:Factspublication_year_2024_5 )>> ;
+	prov:wasDerivedFrom doc:94804b3d1440 .
+doc:FactsmecModelType <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD/seed#has_text_value> "lumped-parameter model" .
+_:a4f7191d24bfe124635af9437fff613 rdf:reifies <<( doc:FactsmecModelType <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD/seed#has_text_value> "lumped-parameter model" )>> ;
+	prov:wasDerivedFrom doc:94804b3d1440 .
+doc:Predictive_maintenance_model schema:about doc:FactsmotorCurrent_3 .
+_:a8d950db9a5f50f5ec17a20d73af19f2 rdf:reifies <<( doc:Predictive_maintenance_model schema:about doc:FactsmotorCurrent_3 )>> ;
+	prov:wasDerivedFrom doc:94804b3d1440 .
+doc:Predictive_maintenance_model a None:Predictive_maintenance_model .
+_:dc8286af884f40dbf25bb8ccc17c244 rdf:reifies <<( doc:Predictive_maintenance_model rdf:type None:Predictive_maintenance_model )>> ;
+	prov:wasDerivedFrom doc:94804b3d1440 .
+doc:FactscoSimulation a schema:Thing .
+_:ea63a6b4cbffc5447c16fcc5310bc3c1 rdf:reifies <<( doc:FactscoSimulation rdf:type schema:Thing )>> ;
+	prov:wasDerivedFrom doc:94804b3d1440 .
+doc:FactselectromechanicalEffects a schema:Thing .
+_:b932214b854427f19fd06562dbc1f9c4 rdf:reifies <<( doc:FactselectromechanicalEffects rdf:type schema:Thing )>> ;
+	prov:wasDerivedFrom doc:94804b3d1440 .
+_:bd49f98c43bc7703adcde29c588a9b9f prov:wasDerivedFrom doc:94804b3d1440 .
+doc:FactselectromagneticCoupling a schema:Thing .
+_:e304eafd57c9458f11ff1fad5c80b54d rdf:reifies <<( doc:FactselectromagneticCoupling rdf:type schema:Thing )>> ;
+	prov:wasDerivedFrom doc:94804b3d1440 .
+doc:27cedf7174ec a prov:Entity , schema:text ;
+	prov:generatedAtTime "2026-07-25T16:03:00.959821Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+	schema:position 2 ;
+	schema:identifier "27cedf7174ec" .
+doc:FactscoSimulationFramework2 obo:BFO_0000051 doc:FactsfemModel_1 .
+_:b6ac0689cb769a8f74c4b1d1121815d8 rdf:reifies <<( doc:FactscoSimulationFramework2 obo:BFO_0000051 doc:FactsfemModel_1 )>> ;
+	prov:wasDerivedFrom doc:27cedf7174ec .
+doc:FactscoSimulationFramework2 a cco:InformationProcessingArtifact .
+_:f328f85765e877c836ffc245329eb682 rdf:reifies <<( doc:FactscoSimulationFramework2 rdf:type cco:InformationProcessingArtifact )>> ;
+	prov:wasDerivedFrom doc:27cedf7174ec .
+doc:FactselectromagneticTorque a None:Data_variable .
+_:ee55cd202e46aba543607208a4cc546b rdf:reifies <<( doc:FactselectromagneticTorque rdf:type None:Data_variable )>> ;
+	prov:wasDerivedFrom doc:27cedf7174ec .
+doc:FactsinnerRingDefect schema:depth 0.001 .
+_:c806593b6183b98cee53e46bd95fcdeb rdf:reifies <<( doc:FactsinnerRingDefect schema:depth 0.001 )>> ;
+	prov:wasDerivedFrom doc:27cedf7174ec .
+_:f40d8971b56b2b88b29b9217e36446d8 prov:wasDerivedFrom doc:27cedf7174ec .
+doc:FactsfemModel_1 cco:is_about doc:FactsmotorCurrent_3 .
+_:d5172d621c336142979746bb34574a50 rdf:reifies <<( doc:FactsfemModel_1 cco:is_about doc:FactsmotorCurrent_3 )>> ;
+	prov:wasDerivedFrom doc:27cedf7174ec .
+doc:FactsfemModel_1 cco:is_about doc:FactselectromagneticTorque .
+_:cd656949e7435331711c7ba8d6ff14f5 rdf:reifies <<( doc:FactsfemModel_1 cco:is_about doc:FactselectromagneticTorque )>> ;
+	prov:wasDerivedFrom doc:27cedf7174ec .
+_:e97296a71bca472d550d4c44c41de0a4 prov:wasDerivedFrom doc:27cedf7174ec .
+_:a422e4d992bd5a05f34d357810235287 prov:wasDerivedFrom doc:27cedf7174ec .
+doc:FactsfaultDetection_21 a None:Fault_detection .
+_:b1c2c358094f971d9c234e7d00ee852d rdf:reifies <<( doc:FactsfaultDetection_21 rdf:type None:Fault_detection )>> ;
+	prov:wasDerivedFrom doc:27cedf7174ec .
+doc:FactsinnerRingDefect obo:RO_0000086 doc:FactsballBearing .
+_:d41f4940367f89f620ba70c9723f3aba rdf:reifies <<( doc:FactsinnerRingDefect obo:RO_0000086 doc:FactsballBearing )>> ;
+	prov:wasDerivedFrom doc:27cedf7174ec .
+doc:Factspaper_2 schema:about doc:FactsballBearing .
+_:f83d1b621a582ce715602794c2093282 rdf:reifies <<( doc:Factspaper_2 schema:about doc:FactsballBearing )>> ;
+	prov:wasDerivedFrom doc:27cedf7174ec .
+_:ddd03742fc31e6615bfbc74f1d33fe0c prov:wasDerivedFrom doc:27cedf7174ec .
+doc:FactshealthAssessment_12 rdfs:label "motor health assessment"@en .
+_:b6e6572def7f6ec11ec7704c1197f23e rdf:reifies <<( doc:FactshealthAssessment_12 rdfs:label "motor health assessment"@en )>> ;
+	prov:wasDerivedFrom doc:27cedf7174ec .
+doc:FactscoSimulationFramework2 rdfs:label "proposed co-simulation framework 2"@en .
+_:c1d1610b6f67156de60993a2474b966f rdf:reifies <<( doc:FactscoSimulationFramework2 rdfs:label "proposed co-simulation framework 2"@en )>> ;
+	prov:wasDerivedFrom doc:27cedf7174ec .
+doc:FactsfemModel_1 rdfs:label "magnetic equivalent circuit model"@en .
+_:f67d9bb97db174c58ce535a581fd4baf rdf:reifies <<( doc:FactsfemModel_1 rdfs:label "magnetic equivalent circuit model"@en )>> ;
+	prov:wasDerivedFrom doc:27cedf7174ec .
+doc:Factseccentricity schema:maxValue "40"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+_:f3b525a2651a090bf883f4dcc1f9aa0 rdf:reifies <<( doc:Factseccentricity schema:maxValue "40"^^<http://www.w3.org/2001/XMLSchema#decimal> )>> ;
+	prov:wasDerivedFrom doc:27cedf7174ec .
+doc:Factseccentricity schema:unitText "%" .
+_:af3d894dd3d608832da89f1401f73be1 rdf:reifies <<( doc:Factseccentricity schema:unitText "%" )>> ;
+	prov:wasDerivedFrom doc:27cedf7174ec .
+doc:FactsmotorCurrent_3 rdfs:label "motor current"@en .
+_:b90589b135b980bb1386e294ae601d7d rdf:reifies <<( doc:FactsmotorCurrent_3 rdfs:label "motor current"@en )>> ;
+	prov:wasDerivedFrom doc:27cedf7174ec .
+doc:FactsfaultDetection_21 rdfs:label "fault detection"@en .
+_:d4249901a42d2cb450cd2d75972ab17d rdf:reifies <<( doc:FactsfaultDetection_21 rdfs:label "fault detection"@en )>> ;
+	prov:wasDerivedFrom doc:27cedf7174ec .
+_:d3f5f333ab5dbfbb66a73bbca9f9812b prov:wasDerivedFrom doc:27cedf7174ec .
+_:a85435cd6c69d23d9ad307e6b667ba2f prov:wasDerivedFrom doc:27cedf7174ec .
+doc:Factseccentricity schema:minValue "5"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+_:e4fcb89306a6d180ad86ee964af39c5 rdf:reifies <<( doc:Factseccentricity schema:minValue "5"^^<http://www.w3.org/2001/XMLSchema#decimal> )>> ;
+	prov:wasDerivedFrom doc:27cedf7174ec .
+doc:FactsmechanicalBearingModel cco:is_about doc:FactsballBearing .
+_:f4aa780b2153759b4a6820576cb7c340 rdf:reifies <<( doc:FactsmechanicalBearingModel cco:is_about doc:FactsballBearing )>> ;
+	prov:wasDerivedFrom doc:27cedf7174ec .
+doc:FactsfemModel_1 rdfs:label "finite element model"@en .
+_:bf794763f5cdd774c09eab5dbc67271f rdf:reifies <<( doc:FactsfemModel_1 rdfs:label "finite element model"@en )>> ;
+	prov:wasDerivedFrom doc:27cedf7174ec .
+doc:FactselectromagneticTorque rdfs:label "electromagnetic torque"@en .
+_:b9168dcdbb8e86da35eb2958ee7cdd12 rdf:reifies <<( doc:FactselectromagneticTorque rdfs:label "electromagnetic torque"@en )>> ;
+	prov:wasDerivedFrom doc:27cedf7174ec .
+doc:FactsinductionMotor_5 schema:description "A voltage-fed induction motor considered in the co-simulation frameworks."@en .
+_:b04b33ceedceef5a11f37ff5496cb84 rdf:reifies <<( doc:FactsinductionMotor_5 schema:description "A voltage-fed induction motor considered in the co-simulation frameworks."@en )>> ;
+	prov:wasDerivedFrom doc:27cedf7174ec .
+doc:FactsmecModelType rdfs:label "MEC model"@en .
+_:aad3d0a40970a7dc578852a40928c6d3 rdf:reifies <<( doc:FactsmecModelType rdfs:label "MEC model"@en )>> ;
+	prov:wasDerivedFrom doc:27cedf7174ec .
+doc:Factspaper_2 schema:about doc:FactsinductionMotor_5 .
+_:e6bcb62a05c85f2feb2126b7f80ebfd rdf:reifies <<( doc:Factspaper_2 schema:about doc:FactsinductionMotor_5 )>> ;
+	prov:wasDerivedFrom doc:27cedf7174ec .
+doc:FactsballBearing rdfs:label "ball bearing"@en .
+_:cc7a8f66c0f867bf7ce32163f0163094 rdf:reifies <<( doc:FactsballBearing rdfs:label "ball bearing"@en )>> ;
+	prov:wasDerivedFrom doc:27cedf7174ec .
+doc:FactsfemModel_1 cco:is_about doc:Factseccentricity .
+_:a5c722f6833749a13ed4de8a5ac5dc66 rdf:reifies <<( doc:FactsfemModel_1 cco:is_about doc:Factseccentricity )>> ;
+	prov:wasDerivedFrom doc:27cedf7174ec .
+doc:FactsmecModelType rdfs:label "FEM model"@en .
+_:fef649fc783d4a77f023c2adb89a5258 rdf:reifies <<( doc:FactsmecModelType rdfs:label "FEM model"@en )>> ;
+	prov:wasDerivedFrom doc:27cedf7174ec .
+doc:FactsinnerRingDefect rdfs:label "inner ring defect"@en .
+_:a4d8d1a7dfddeb7c89490ac69066ee4e rdf:reifies <<( doc:FactsinnerRingDefect rdfs:label "inner ring defect"@en )>> ;
+	prov:wasDerivedFrom doc:27cedf7174ec .
+_:e806730eda7b5e1d9517111de38106f0 prov:wasDerivedFrom doc:27cedf7174ec .
+doc:FactscoSimulationFramework2 rdfs:label "proposed co-simulation framework 1"@en .
+_:a32ded00eb21b1b3cc99f0bf1be7b479 rdf:reifies <<( doc:FactscoSimulationFramework2 rdfs:label "proposed co-simulation framework 1"@en )>> ;
+	prov:wasDerivedFrom doc:27cedf7174ec .
+doc:FactscoSimulationFramework2 obo:BFO_0000051 doc:FactsmechanicalBearingModel .
+_:d7f2770371d3bfba057f3dc9eb21c273 rdf:reifies <<( doc:FactscoSimulationFramework2 obo:BFO_0000051 doc:FactsmechanicalBearingModel )>> ;
+	prov:wasDerivedFrom doc:27cedf7174ec .
+doc:FactselectromagneticTorque rdfs:label "electromagnetic forces"@en .
+_:e47bd359fe8272cf750bb4c0e2052023 rdf:reifies <<( doc:FactselectromagneticTorque rdfs:label "electromagnetic forces"@en )>> ;
+	prov:wasDerivedFrom doc:27cedf7174ec .
+doc:FactsinnerRingDefect a obo:BFO_0000019 .
+_:a44cbe4a634467353921089dfd2582fc rdf:reifies <<( doc:FactsinnerRingDefect rdf:type obo:BFO_0000019 )>> ;
+	prov:wasDerivedFrom doc:27cedf7174ec .
+doc:FactscoSimulationFramework2 cco:is_about doc:FactsfaultDetection_21 .
+_:a89eea8eacad20dd774ffa5120b7adc3 rdf:reifies <<( doc:FactscoSimulationFramework2 cco:is_about doc:FactsfaultDetection_21 )>> ;
+	prov:wasDerivedFrom doc:27cedf7174ec .
+doc:FactsinductionMotor_5 rdfs:label "induction motor"@en .
+_:cd1900f074ac22d121a0cc3906ea0ce0 rdf:reifies <<( doc:FactsinductionMotor_5 rdfs:label "induction motor"@en )>> ;
+	prov:wasDerivedFrom doc:27cedf7174ec .
+doc:Factseccentricity rdfs:label "eccentricity"@en .
+_:f9c5bfe1ac6446a4f4279c2dda28d2e2 rdf:reifies <<( doc:Factseccentricity rdfs:label "eccentricity"@en )>> ;
+	prov:wasDerivedFrom doc:27cedf7174ec .
+doc:Factseccentricity a None:Data_variable .
+_:bdc57fcc5f9d9e34af0d059db6268ab7 rdf:reifies <<( doc:Factseccentricity rdf:type None:Data_variable )>> ;
+	prov:wasDerivedFrom doc:27cedf7174ec .
+doc:FactsinnerRingDefect schema:unitCode "MTR" .
+_:baa5f51ea0c41a221a37416652d352e2 rdf:reifies <<( doc:FactsinnerRingDefect schema:unitCode "MTR" )>> ;
+	prov:wasDerivedFrom doc:27cedf7174ec .
+_:bd49f98c43bc7703adcde29c588a9b9f prov:wasDerivedFrom doc:27cedf7174ec .
+doc:FactscoSimulationFramework2 cco:is_about doc:FactshealthAssessment_12 .
+_:e9cb74234f8ab12cd2deed3b3b421e03 rdf:reifies <<( doc:FactscoSimulationFramework2 cco:is_about doc:FactshealthAssessment_12 )>> ;
+	prov:wasDerivedFrom doc:27cedf7174ec .
+doc:Factspaper_2 rdfs:label "Paper on co-simulation frameworks for induction motors and ball bearings"@en .
+_:fafa147bbceeb2ef54c5bf069d4e006c rdf:reifies <<( doc:Factspaper_2 rdfs:label "Paper on co-simulation frameworks for induction motors and ball bearings"@en )>> ;
+	prov:wasDerivedFrom doc:27cedf7174ec .
+doc:FactshealthAssessment_12 a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD/seed#Health_assessment> .
+_:cfba74e603b42500d235dae33a5cc961 rdf:reifies <<( doc:FactshealthAssessment_12 rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD/seed#Health_assessment> )>> ;
+	prov:wasDerivedFrom doc:27cedf7174ec .
+doc:Factspaper_2 a None:Predictive_maintenance_model .
+_:d79a71469dd4a0e2cc5a74819e0a9d89 rdf:reifies <<( doc:Factspaper_2 rdf:type None:Predictive_maintenance_model )>> ;
+	prov:wasDerivedFrom doc:27cedf7174ec .
+doc:FactsmechanicalBearingModel rdfs:label "radial lumped-parameter mechanical model of a ball bearing"@en .
+_:be9447597e623f028fbfddf4be1fc455 rdf:reifies <<( doc:FactsmechanicalBearingModel rdfs:label "radial lumped-parameter mechanical model of a ball bearing"@en )>> ;
+	prov:wasDerivedFrom doc:27cedf7174ec .
+None:Predictive_maintenance_model owl:sameAs None:Predictive_Maintenance_Article , None:Predictive_maintenance_system_module .

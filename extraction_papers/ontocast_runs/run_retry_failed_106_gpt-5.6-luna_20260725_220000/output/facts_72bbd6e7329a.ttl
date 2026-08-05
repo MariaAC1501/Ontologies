@@ -1,0 +1,713 @@
+@prefix None: <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD/seed#> .
+@prefix cco: <http://www.ontologyrepository.com/CommonCoreOntologies/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doc: <https://growgraph.dev/doc/72bbd6e7329a/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix obo: <http://purl.obolibrary.org/obo/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix csvw: <http://www.w3.org/ns/csvw#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix schema: <https://schema.org/> .
+doc:e586b470851f a prov:Entity , schema:text ;
+	prov:generatedAtTime "2026-07-26T07:30:12.374738Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+	schema:position 0 ;
+	schema:identifier "e586b470851f" .
+doc:Factskane schema:givenName "Samir" .
+_:bb08c426525b23b21226f32796f858bb rdf:reifies <<( doc:Factskane schema:givenName "Samir" )>> ;
+	prov:wasDerivedFrom doc:e586b470851f .
+doc:Factskane schema:familyName "Elharnaf" .
+_:ec0c0376172ebdcd9a6c98cc10dcf8d4 rdf:reifies <<( doc:Factskane schema:familyName "Elharnaf" )>> ;
+	prov:wasDerivedFrom doc:e586b470851f .
+doc:Factskane schema:givenName "Ibtissam" .
+_:a2d3050f3166f53ff49105d0bffa97fd rdf:reifies <<( doc:Factskane schema:givenName "Ibtissam" )>> ;
+	prov:wasDerivedFrom doc:e586b470851f .
+doc:Predictive_maintenance_model obo:BFO_0000051 doc:FactsgruAlgorithm_1 .
+_:d32431822f1e7c16cc5fa0eb87d4391c rdf:reifies <<( doc:Predictive_maintenance_model obo:BFO_0000051 doc:FactsgruAlgorithm_1 )>> ;
+	prov:wasDerivedFrom doc:e586b470851f .
+doc:FactsmodelConfigurationHybrid None:describes_configuration doc:Predictive_maintenance_model .
+_:b5216ea790e1f97c7d0d5ba412548476 rdf:reifies <<( doc:FactsmodelConfigurationHybrid None:describes_configuration doc:Predictive_maintenance_model )>> ;
+	prov:wasDerivedFrom doc:e586b470851f .
+doc:Predictive_maintenance_model obo:BFO_0000051 doc:FactsrandomForestModel .
+_:caebbe149ce3bf80708d90e29ae23838 rdf:reifies <<( doc:Predictive_maintenance_model obo:BFO_0000051 doc:FactsrandomForestModel )>> ;
+	prov:wasDerivedFrom doc:e586b470851f .
+doc:Factsarticle_2025_improving_predictive_maintenance a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Predictive_maintenance_model> .
+_:a227939d5f26a7bb96498a7bf17c190f rdf:reifies <<( doc:Factsarticle_2025_improving_predictive_maintenance rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Predictive_maintenance_model> )>> ;
+	prov:wasDerivedFrom doc:e586b470851f .
+doc:FactsorganizationLina schema:name "Technologies of Information and Modelisation Laboratory (LTIM)"@en .
+_:caf9b301cbe65f05e777ec0835dce2fc rdf:reifies <<( doc:FactsorganizationLina schema:name "Technologies of Information and Modelisation Laboratory (LTIM)"@en )>> ;
+	prov:wasDerivedFrom doc:e586b470851f .
+doc:Factsarticle_2025_improving_predictive_maintenance schema:author doc:Factskane .
+_:d0edb5ffcf29168abd60ef25cf1d6b1b rdf:reifies <<( doc:Factsarticle_2025_improving_predictive_maintenance schema:author doc:Factskane )>> ;
+	prov:wasDerivedFrom doc:e586b470851f .
+doc:Factsarticle_2025_improving_predictive_maintenance None:has_identifier doc:Factsdoi_10_3390_engproc2025097045 .
+_:ebbff90a79c6504df416c6acbdd71d8a rdf:reifies <<( doc:Factsarticle_2025_improving_predictive_maintenance None:has_identifier doc:Factsdoi_10_3390_engproc2025097045 )>> ;
+	prov:wasDerivedFrom doc:e586b470851f .
+doc:Factskane schema:affiliation doc:FactsorganizationLina .
+_:acb9815a58ca15f0dec8eab22dbb3fc6 rdf:reifies <<( doc:Factskane schema:affiliation doc:FactsorganizationLina )>> ;
+	prov:wasDerivedFrom doc:e586b470851f .
+doc:Factskane schema:familyName "Achtaich" .
+_:fa8767392645daf8fd51fa86890f2f66 rdf:reifies <<( doc:Factskane schema:familyName "Achtaich" )>> ;
+	prov:wasDerivedFrom doc:e586b470851f .
+doc:FactsorganizationHigherSchoolTextileClothingIndustrie a schema:EducationalOrganization .
+_:be8e1a161abff405ca6218e939bcb8ff rdf:reifies <<( doc:FactsorganizationHigherSchoolTextileClothingIndustrie rdf:type schema:EducationalOrganization )>> ;
+	prov:wasDerivedFrom doc:e586b470851f .
+doc:Factsarticle_2025_improving_predictive_maintenance schema:keywords "random forest" .
+_:feca6d32401743fef586ba14317e97a1 rdf:reifies <<( doc:Factsarticle_2025_improving_predictive_maintenance schema:keywords "random forest" )>> ;
+	prov:wasDerivedFrom doc:e586b470851f .
+doc:FactsindustrialMachinery_1 a None:Maintainable_item .
+_:a301e2d76cc08d943a54a589e4374292 rdf:reifies <<( doc:FactsindustrialMachinery_1 rdf:type None:Maintainable_item )>> ;
+	prov:wasDerivedFrom doc:e586b470851f .
+doc:FactsindustrialMachinery_1 rdfs:label "Industrial machinery"@en .
+_:fac94e81e84874f06021c7b7d36a7772 rdf:reifies <<( doc:FactsindustrialMachinery_1 rdfs:label "Industrial machinery"@en )>> ;
+	prov:wasDerivedFrom doc:e586b470851f .
+doc:FactsremainingUsefulLifeEstimationFunction a None:Remaining_useful_life_estimation .
+_:bebf74c8030449498ad0f0c1df299bd4 rdf:reifies <<( doc:FactsremainingUsefulLifeEstimationFunction rdf:type None:Remaining_useful_life_estimation )>> ;
+	prov:wasDerivedFrom doc:e586b470851f .
+doc:Factsdoi_10_3390_engproc2025097045 None:has_text_value "10.3390/engproc2025097045" .
+_:ceafeec2d4310a23650972740dd9ce03 rdf:reifies <<( doc:Factsdoi_10_3390_engproc2025097045 None:has_text_value "10.3390/engproc2025097045" )>> ;
+	prov:wasDerivedFrom doc:e586b470851f .
+doc:FactsgruAlgorithm_1 a cco:Algorithm .
+_:dc2f4566b2e3c8474334197424d937c7 rdf:reifies <<( doc:FactsgruAlgorithm_1 rdf:type cco:Algorithm )>> ;
+	prov:wasDerivedFrom doc:e586b470851f .
+doc:Predictive_maintenance_model cco:designates doc:Factsarticle_2025_improving_predictive_maintenance .
+_:ce0b8bec73505ac21dbcf5187f29379e rdf:reifies <<( doc:Predictive_maintenance_model cco:designates doc:Factsarticle_2025_improving_predictive_maintenance )>> ;
+	prov:wasDerivedFrom doc:e586b470851f .
+doc:Factsarticle_2025_improving_predictive_maintenance schema:isPartOf doc:FactsvenueEngProc .
+_:c95fb5a32a9a530e439bdab797b9366d rdf:reifies <<( doc:Factsarticle_2025_improving_predictive_maintenance schema:isPartOf doc:FactsvenueEngProc )>> ;
+	prov:wasDerivedFrom doc:e586b470851f .
+doc:Predictive_maintenance_model obo:BFO_0000051 doc:FactslstmAlgorithm_1 .
+_:fa8d78240f631ba2e230846c8fec9939 rdf:reifies <<( doc:Predictive_maintenance_model obo:BFO_0000051 doc:FactslstmAlgorithm_1 )>> ;
+	prov:wasDerivedFrom doc:e586b470851f .
+doc:Factspublication_year_2025_23 a None:Publication_year .
+_:df23b0d7ff5dc23d35b9e29144e1c01 rdf:reifies <<( doc:Factspublication_year_2025_23 rdf:type None:Publication_year )>> ;
+	prov:wasDerivedFrom doc:e586b470851f .
+doc:Predictive_maintenance_model None:has_text_value "Improving Predictive Maintenance Performance Using Machine Learning and Vibration Analysis Algorithms" .
+_:cbe5f62613e93c3b445dad225864d338 rdf:reifies <<( doc:Predictive_maintenance_model None:has_text_value "Improving Predictive Maintenance Performance Using Machine Learning and Vibration Analysis Algorithms" )>> ;
+	prov:wasDerivedFrom doc:e586b470851f .
+doc:FactsmodelConfigurationHybrid a None:Model_configuration .
+_:d31c63aa4a76dc05c1cba521515f97ce rdf:reifies <<( doc:FactsmodelConfigurationHybrid rdf:type None:Model_configuration )>> ;
+	prov:wasDerivedFrom doc:e586b470851f .
+doc:Factsarticle_2025_improving_predictive_maintenance schema:name "Improving Predictive Maintenance Performance Using Machine Learning and Vibration Analysis Algorithms"@en .
+_:d8ea148d7d080ecbd05008e5a6592eae rdf:reifies <<( doc:Factsarticle_2025_improving_predictive_maintenance schema:name "Improving Predictive Maintenance Performance Using Machine Learning and Vibration Analysis Algorithms"@en )>> ;
+	prov:wasDerivedFrom doc:e586b470851f .
+doc:Factsdoi_10_3390_engproc2025097045 a None:Article_identifier .
+_:ad449fa4cd09e7bf4785bf8d41c6f946 rdf:reifies <<( doc:Factsdoi_10_3390_engproc2025097045 rdf:type None:Article_identifier )>> ;
+	prov:wasDerivedFrom doc:e586b470851f .
+doc:FactsorganizationLina schema:parentOrganization doc:FactsorganizationHassanIiUniversityCasablanca .
+_:e2a40b433d8e10352997f13235f922d1 rdf:reifies <<( doc:FactsorganizationLina schema:parentOrganization doc:FactsorganizationHassanIiUniversityCasablanca )>> ;
+	prov:wasDerivedFrom doc:e586b470851f .
+doc:Factskane schema:givenName "Khadija" .
+_:cf46674098365fcdd5cd9592c1fdfc13 rdf:reifies <<( doc:Factskane schema:givenName "Khadija" )>> ;
+	prov:wasDerivedFrom doc:e586b470851f .
+doc:Predictive_maintenance_model None:has_predictive_maintenance_function doc:Predictive_maintenance_model .
+_:d56aaeed0d03e029a40dbe10f6c081de rdf:reifies <<( doc:Predictive_maintenance_model None:has_predictive_maintenance_function doc:Predictive_maintenance_model )>> ;
+	prov:wasDerivedFrom doc:e586b470851f .
+doc:Factsarticle_2025_improving_predictive_maintenance None:has_title doc:Predictive_maintenance_model .
+_:c069a2ad08881c3744ff5fd8ef3e9ad3 rdf:reifies <<( doc:Factsarticle_2025_improving_predictive_maintenance None:has_title doc:Predictive_maintenance_model )>> ;
+	prov:wasDerivedFrom doc:e586b470851f .
+doc:Factsarticle_2025_improving_predictive_maintenance rdfs:label "Improving Predictive Maintenance Performance Using Machine Learning and Vibration Analysis Algorithms"@en .
+_:aa5c626e2fbc460dc05df1f98c8b5a25 rdf:reifies <<( doc:Factsarticle_2025_improving_predictive_maintenance rdfs:label "Improving Predictive Maintenance Performance Using Machine Learning and Vibration Analysis Algorithms"@en )>> ;
+	prov:wasDerivedFrom doc:e586b470851f .
+doc:Predictive_maintenance_model cco:is_about doc:FactsindustrialMachinery_1 .
+_:cae54cf1092a61cf9a2b2fcf793addb0 rdf:reifies <<( doc:Predictive_maintenance_model cco:is_about doc:FactsindustrialMachinery_1 )>> ;
+	prov:wasDerivedFrom doc:e586b470851f .
+doc:Predictive_maintenance_model a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Fault_detection> .
+_:bd52164dcbdb1090f027bad2cd031579 rdf:reifies <<( doc:Predictive_maintenance_model rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Fault_detection> )>> ;
+	prov:wasDerivedFrom doc:e586b470851f .
+doc:Predictive_maintenance_model a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Classification> .
+_:f7b7afab989d585500f2ca998bcbfa5d rdf:reifies <<( doc:Predictive_maintenance_model rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Classification> )>> ;
+	prov:wasDerivedFrom doc:e586b470851f .
+doc:FactsrandomForestModel rdfs:label "Random forest classifier"@en .
+_:ac9b066caef7c48c2883f96e34fb7b8b rdf:reifies <<( doc:FactsrandomForestModel rdfs:label "Random forest classifier"@en )>> ;
+	prov:wasDerivedFrom doc:e586b470851f .
+doc:Predictive_maintenance_model a None:Article_title .
+_:d22b2e02e2cc34fe0ad46516fa91d1e rdf:reifies <<( doc:Predictive_maintenance_model rdf:type None:Article_title )>> ;
+	prov:wasDerivedFrom doc:e586b470851f .
+doc:FactsrandomForestModel a cco:Algorithm .
+_:c8e7c633d8e6957502f9e4aa21cb0528 rdf:reifies <<( doc:FactsrandomForestModel rdf:type cco:Algorithm )>> ;
+	prov:wasDerivedFrom doc:e586b470851f .
+doc:FactslstmAlgorithm_1 rdfs:label "Long short-term memory (LSTM) network"@en .
+_:f97b00d92446b64d6eabd9aa59adb4d0 rdf:reifies <<( doc:FactslstmAlgorithm_1 rdfs:label "Long short-term memory (LSTM) network"@en )>> ;
+	prov:wasDerivedFrom doc:e586b470851f .
+doc:FactsorganizationLina a schema:Organization .
+_:dfe24b4ca56c2150110441266fb00823 rdf:reifies <<( doc:FactsorganizationLina rdf:type schema:Organization )>> ;
+	prov:wasDerivedFrom doc:e586b470851f .
+doc:FactsvenueEngProc schema:name "Engineering Proceedings"@en .
+_:cf7a7eecb4827601bc45f64ed2b64d37 rdf:reifies <<( doc:FactsvenueEngProc schema:name "Engineering Proceedings"@en )>> ;
+	prov:wasDerivedFrom doc:e586b470851f .
+doc:Factsarticle_2025_improving_predictive_maintenance schema:datePublished "2025-07-02"^^<http://www.w3.org/2001/XMLSchema#date> .
+_:f89f129262a6e351586e53a8861dd4fd rdf:reifies <<( doc:Factsarticle_2025_improving_predictive_maintenance schema:datePublished "2025-07-02"^^<http://www.w3.org/2001/XMLSchema#date> )>> ;
+	prov:wasDerivedFrom doc:e586b470851f .
+doc:Predictive_maintenance_model a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Predictive_maintenance_model> .
+_:ced7607b24b026d72738e974cd87ab37 rdf:reifies <<( doc:Predictive_maintenance_model rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Predictive_maintenance_model> )>> ;
+	prov:wasDerivedFrom doc:e586b470851f .
+doc:Predictive_maintenance_model schema:name "Hybrid LSTM-GRU and random forest predictive maintenance model"@en .
+_:e688695bd6abb1a001ee5ce89db2b611 rdf:reifies <<( doc:Predictive_maintenance_model schema:name "Hybrid LSTM-GRU and random forest predictive maintenance model"@en )>> ;
+	prov:wasDerivedFrom doc:e586b470851f .
+doc:Factsarticle_2025_improving_predictive_maintenance schema:page "45" .
+_:e0c6d2e541b6a6b0b02ea6eecb5523a0 rdf:reifies <<( doc:Factsarticle_2025_improving_predictive_maintenance schema:page "45" )>> ;
+	prov:wasDerivedFrom doc:e586b470851f .
+doc:Factsarticle_2025_improving_predictive_maintenance schema:keywords "vibration analysis" .
+_:e5584fec67b8961097ca6e64a0cde1ef rdf:reifies <<( doc:Factsarticle_2025_improving_predictive_maintenance schema:keywords "vibration analysis" )>> ;
+	prov:wasDerivedFrom doc:e586b470851f .
+doc:FactsvenueEngProc a schema:Periodical .
+_:d2168b417d07090283b19e81afee7b29 rdf:reifies <<( doc:FactsvenueEngProc rdf:type schema:Periodical )>> ;
+	prov:wasDerivedFrom doc:e586b470851f .
+doc:Predictive_maintenance_model rdfs:label "Hybrid LSTM-GRU and random forest predictive maintenance model"@en .
+_:d4ef3f7ef9901900435d0c779fa74c6f rdf:reifies <<( doc:Predictive_maintenance_model rdfs:label "Hybrid LSTM-GRU and random forest predictive maintenance model"@en )>> ;
+	prov:wasDerivedFrom doc:e586b470851f .
+doc:FactsorganizationHassanIiUniversityCasablanca schema:name "Hassan II University of Casablanca"@en .
+_:b9e20d42b343db51ac36adfd5e606f55 rdf:reifies <<( doc:FactsorganizationHassanIiUniversityCasablanca schema:name "Hassan II University of Casablanca"@en )>> ;
+	prov:wasDerivedFrom doc:e586b470851f .
+doc:FactsvibrationData_4 rdfs:label "Vibration data collected from sensors"@en .
+_:a44ee707f174d20378dd676b70de20e5 rdf:reifies <<( doc:FactsvibrationData_4 rdfs:label "Vibration data collected from sensors"@en )>> ;
+	prov:wasDerivedFrom doc:e586b470851f .
+doc:FactsorganizationLina schema:parentOrganization doc:FactsorganizationHigherSchoolTextileClothingIndustrie .
+_:b8ca364e527136acf0e382c8749a5f86 rdf:reifies <<( doc:FactsorganizationLina schema:parentOrganization doc:FactsorganizationHigherSchoolTextileClothingIndustrie )>> ;
+	prov:wasDerivedFrom doc:e586b470851f .
+doc:Factsarticle_2025_improving_predictive_maintenance schema:keywords "GRU" .
+_:c345ca7d9c2417cd460bf74ad2881b06 rdf:reifies <<( doc:Factsarticle_2025_improving_predictive_maintenance schema:keywords "GRU" )>> ;
+	prov:wasDerivedFrom doc:e586b470851f .
+doc:Factsarticle_2025_improving_predictive_maintenance schema:volumeNumber 97 .
+_:aaba13c95860014f8f43518ce3b903ed rdf:reifies <<( doc:Factsarticle_2025_improving_predictive_maintenance schema:volumeNumber 97 )>> ;
+	prov:wasDerivedFrom doc:e586b470851f .
+doc:Factsarticle_2025_improving_predictive_maintenance dcterms:abstract "This research examines advanced machine learning techniques utilized for the predictive maintenance of industrial machinery."@en .
+_:e62e550d07971fe20aa62860ba550a29 rdf:reifies <<( doc:Factsarticle_2025_improving_predictive_maintenance dcterms:abstract "This research examines advanced machine learning techniques utilized for the predictive maintenance of industrial machinery."@en )>> ;
+	prov:wasDerivedFrom doc:e586b470851f .
+doc:Predictive_maintenance_model schema:description "A hybrid model combining LSTM and GRU networks with a random forest classifier for vibration-based fault classification."@en .
+_:b757f8ed24abccdf5c456b2d708b04f3 rdf:reifies <<( doc:Predictive_maintenance_model schema:description "A hybrid model combining LSTM and GRU networks with a random forest classifier for vibration-based fault classification."@en )>> ;
+	prov:wasDerivedFrom doc:e586b470851f .
+doc:Predictive_maintenance_model None:has_predictive_maintenance_function doc:FactsremainingUsefulLifeEstimationFunction .
+_:b05fbe0214e0118dd8fc2f6b3562fdcf rdf:reifies <<( doc:Predictive_maintenance_model None:has_predictive_maintenance_function doc:FactsremainingUsefulLifeEstimationFunction )>> ;
+	prov:wasDerivedFrom doc:e586b470851f .
+doc:FactsorganizationLina schema:name "Advanced Numerical Engineering Laboratory (LINA)"@en .
+_:a17785c9aa01f574810bb39b76cbb5d9 rdf:reifies <<( doc:FactsorganizationLina schema:name "Advanced Numerical Engineering Laboratory (LINA)"@en )>> ;
+	prov:wasDerivedFrom doc:e586b470851f .
+doc:FactsvibrationData_4 a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Data_variable> .
+_:a368ed018cad328876cf155edf65d030 rdf:reifies <<( doc:FactsvibrationData_4 rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Data_variable> )>> ;
+	prov:wasDerivedFrom doc:e586b470851f .
+doc:Factskane a schema:Person .
+_:d781de736167fe5db3c4604715dc505 rdf:reifies <<( doc:Factskane rdf:type schema:Person )>> ;
+	prov:wasDerivedFrom doc:e586b470851f .
+doc:FactsorganizationHigherSchoolTextileClothingIndustrie schema:name "The Higher School of Textile and Clothing Industrie"@en .
+_:fac627bc3f53a57f86cb88d74a4b918d rdf:reifies <<( doc:FactsorganizationHigherSchoolTextileClothingIndustrie schema:name "The Higher School of Textile and Clothing Industrie"@en )>> ;
+	prov:wasDerivedFrom doc:e586b470851f .
+doc:FactsmodelConfigurationHybrid rdfs:label "Hybrid LSTM-GRU and random forest configuration"@en .
+_:eb818121afc52a1e25a11b866314d3ee rdf:reifies <<( doc:FactsmodelConfigurationHybrid rdfs:label "Hybrid LSTM-GRU and random forest configuration"@en )>> ;
+	prov:wasDerivedFrom doc:e586b470851f .
+doc:Factspublication_year_2025_23 None:has_interger_value 2025 .
+_:e0b9906263165b54019e276c6ff99811 rdf:reifies <<( doc:Factspublication_year_2025_23 None:has_interger_value 2025 )>> ;
+	prov:wasDerivedFrom doc:e586b470851f .
+doc:Factsarticle_2025_improving_predictive_maintenance schema:keywords "predictive maintenance" .
+_:c97bbb161d713f82c15d1a7e3aea2a11 rdf:reifies <<( doc:Factsarticle_2025_improving_predictive_maintenance schema:keywords "predictive maintenance" )>> ;
+	prov:wasDerivedFrom doc:e586b470851f .
+doc:Factsarticle_2025_improving_predictive_maintenance a schema:ScholarlyArticle .
+_:d64807df65953808d54eb2e2cc9e7109 rdf:reifies <<( doc:Factsarticle_2025_improving_predictive_maintenance rdf:type schema:ScholarlyArticle )>> ;
+	prov:wasDerivedFrom doc:e586b470851f .
+doc:Factsdoi_10_3390_engproc2025097045 cco:designates doc:Factsarticle_2025_improving_predictive_maintenance .
+_:a4996883134869d37c08c83aa1aa0f04 rdf:reifies <<( doc:Factsdoi_10_3390_engproc2025097045 cco:designates doc:Factsarticle_2025_improving_predictive_maintenance )>> ;
+	prov:wasDerivedFrom doc:e586b470851f .
+doc:Predictive_maintenance_model a cco:DesignativeName .
+_:d83c7b3c84831fed3b50db74fbf58f5a rdf:reifies <<( doc:Predictive_maintenance_model rdf:type cco:DesignativeName )>> ;
+	prov:wasDerivedFrom doc:e586b470851f .
+doc:Predictive_maintenance_model cco:has_function doc:Predictive_maintenance_model .
+_:f777e068fa6f5ad5300faec4131c1924 rdf:reifies <<( doc:Predictive_maintenance_model cco:has_function doc:Predictive_maintenance_model )>> ;
+	prov:wasDerivedFrom doc:e586b470851f .
+doc:Factsarticle_2025_improving_predictive_maintenance schema:keywords "industry 4.0" .
+_:bb0594f1e6a3372e928b7821eb55d7f2 rdf:reifies <<( doc:Factsarticle_2025_improving_predictive_maintenance schema:keywords "industry 4.0" )>> ;
+	prov:wasDerivedFrom doc:e586b470851f .
+doc:Factsarticle_2025_improving_predictive_maintenance schema:keywords "LSTM" .
+_:f0d82ebf195455645b9e610cbce8a93c rdf:reifies <<( doc:Factsarticle_2025_improving_predictive_maintenance schema:keywords "LSTM" )>> ;
+	prov:wasDerivedFrom doc:e586b470851f .
+doc:Factskane schema:familyName "Tetouani" .
+_:b2024af026ed67ca7fee6fbaf04bea4d rdf:reifies <<( doc:Factskane schema:familyName "Tetouani" )>> ;
+	prov:wasDerivedFrom doc:e586b470851f .
+doc:Factsarticle_2025_improving_predictive_maintenance None:has_publication_year doc:Factspublication_year_2025_23 .
+_:d3118fccd421431a66a0915760f87086 rdf:reifies <<( doc:Factsarticle_2025_improving_predictive_maintenance None:has_publication_year doc:Factspublication_year_2025_23 )>> ;
+	prov:wasDerivedFrom doc:e586b470851f .
+doc:FactsrandomForestModel schema:description "A collection of decision trees used for fault detection and classification."@en .
+_:a9351ff3ba4d27749f39804ff5c0578c rdf:reifies <<( doc:FactsrandomForestModel schema:description "A collection of decision trees used for fault detection and classification."@en )>> ;
+	prov:wasDerivedFrom doc:e586b470851f .
+doc:Factsarticle_2025_improving_predictive_maintenance schema:keywords "machine learning" .
+_:cfcaf188bafcb1dc326ee0f2186fbc2d rdf:reifies <<( doc:Factsarticle_2025_improving_predictive_maintenance schema:keywords "machine learning" )>> ;
+	prov:wasDerivedFrom doc:e586b470851f .
+doc:FactsgruAlgorithm_1 rdfs:label "Gated recurrent unit (GRU) network"@en .
+_:e7a43c5a0b5794d7c6591644073a36de rdf:reifies <<( doc:FactsgruAlgorithm_1 rdfs:label "Gated recurrent unit (GRU) network"@en )>> ;
+	prov:wasDerivedFrom doc:e586b470851f .
+doc:Predictive_maintenance_model cco:is_about doc:FactsvibrationData_4 .
+_:c69792506f66bb623e654baceac8c238 rdf:reifies <<( doc:Predictive_maintenance_model cco:is_about doc:FactsvibrationData_4 )>> ;
+	prov:wasDerivedFrom doc:e586b470851f .
+doc:Factsarticle_2025_improving_predictive_maintenance cco:is_about doc:Predictive_maintenance_model .
+_:efef0bf7531f56baa5e2a222435f28db rdf:reifies <<( doc:Factsarticle_2025_improving_predictive_maintenance cco:is_about doc:Predictive_maintenance_model )>> ;
+	prov:wasDerivedFrom doc:e586b470851f .
+doc:Predictive_maintenance_model a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Fault_feature_extraction> .
+_:aee59a78fad86c9b2335bc6542fa3e66 rdf:reifies <<( doc:Predictive_maintenance_model rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Fault_feature_extraction> )>> ;
+	prov:wasDerivedFrom doc:e586b470851f .
+doc:FactsorganizationHassanIiUniversityCasablanca a schema:CollegeOrUniversity .
+_:b22f6856e3839dbaba7750504adddcb3 rdf:reifies <<( doc:FactsorganizationHassanIiUniversityCasablanca rdf:type schema:CollegeOrUniversity )>> ;
+	prov:wasDerivedFrom doc:e586b470851f .
+doc:FactslstmAlgorithm_1 a cco:Algorithm .
+_:d040e1298711c1bcf16777fd2fafb9b6 rdf:reifies <<( doc:FactslstmAlgorithm_1 rdf:type cco:Algorithm )>> ;
+	prov:wasDerivedFrom doc:e586b470851f .
+doc:ed4e7a724c13 a prov:Entity , schema:text ;
+	prov:generatedAtTime "2026-07-26T07:30:12.378737Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+	schema:position 1 ;
+	schema:identifier "ed4e7a724c13" .
+doc:Factscell1f a csvw:Cell .
+_:fd09c805afe501965221d6ec853c71e5 rdf:reifies <<( doc:Factscell1f rdf:type csvw:Cell )>> ;
+	prov:wasDerivedFrom doc:ed4e7a724c13 .
+doc:Factsdataset csvw:column doc:FactscolFault .
+_:f5e1e739999ab854ac7e3d0d1b58529 rdf:reifies <<( doc:Factsdataset csvw:column doc:FactscolFault )>> ;
+	prov:wasDerivedFrom doc:ed4e7a724c13 .
+doc:Predictive_maintenance_model a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Predictive_maintenance_system_module> .
+_:a12705feaaeb307d790256cea011dcf1 rdf:reifies <<( doc:Predictive_maintenance_model rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Predictive_maintenance_system_module> )>> ;
+	prov:wasDerivedFrom doc:ed4e7a724c13 .
+doc:FactscolVibration a csvw:Column .
+_:f40d4e489d1437f3f1b8fe41e252e596 rdf:reifies <<( doc:FactscolVibration rdf:type csvw:Column )>> ;
+	prov:wasDerivedFrom doc:ed4e7a724c13 .
+doc:Factscell1f csvw:value 9.338974 .
+_:aa9ed36c0bfc9ea9607c8410420bc827 rdf:reifies <<( doc:Factscell1f csvw:value 9.338974 )>> ;
+	prov:wasDerivedFrom doc:ed4e7a724c13 .
+doc:FactscolVibration csvw:name "Vibration" .
+_:e1f9783d9a2a9e89dc2cb260127a8348 rdf:reifies <<( doc:FactscolVibration csvw:name "Vibration" )>> ;
+	prov:wasDerivedFrom doc:ed4e7a724c13 .
+doc:Predictive_maintenance_model <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#has_predictive_maintenance_function> doc:Predictive_maintenance_model .
+_:cc917c434a263a7a33fc6aea3266c92a rdf:reifies <<( doc:Predictive_maintenance_model <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#has_predictive_maintenance_function> doc:Predictive_maintenance_model )>> ;
+	prov:wasDerivedFrom doc:ed4e7a724c13 .
+_:d781de736167fe5db3c4604715dc505 prov:wasDerivedFrom doc:ed4e7a724c13 .
+doc:Factscell1f csvw:column doc:FactscolFault .
+_:d4659e77af102ce2af88d6fa9c3bbaaa rdf:reifies <<( doc:Factscell1f csvw:column doc:FactscolFault )>> ;
+	prov:wasDerivedFrom doc:ed4e7a724c13 .
+doc:FactsaccuracyResult schema:name "Overall accuracy" .
+_:f3e6a48b54ec55bbd8a420e8f6808c4a rdf:reifies <<( doc:FactsaccuracyResult schema:name "Overall accuracy" )>> ;
+	prov:wasDerivedFrom doc:ed4e7a724c13 .
+doc:FactscolFault a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Data_variable> .
+_:f6ae14fc4066b859dd9e90bf5e0fb849 rdf:reifies <<( doc:FactscolFault rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Data_variable> )>> ;
+	prov:wasDerivedFrom doc:ed4e7a724c13 .
+doc:Predictive_maintenance_model schema:name "Regression" .
+_:de74e1a43a9fc1cba687fde5387f1be5 rdf:reifies <<( doc:Predictive_maintenance_model schema:name "Regression" )>> ;
+	prov:wasDerivedFrom doc:ed4e7a724c13 .
+doc:Factscell1f csvw:value "16"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+_:b36a59f71aff787756d97d85664a37c7 rdf:reifies <<( doc:Factscell1f csvw:value "16"^^<http://www.w3.org/2001/XMLSchema#decimal> )>> ;
+	prov:wasDerivedFrom doc:ed4e7a724c13 .
+doc:Factsrecord4 csvw:cell doc:Factscell1f .
+_:fd46912ff0df8764fb7ce0ab6610377b rdf:reifies <<( doc:Factsrecord4 csvw:cell doc:Factscell1f )>> ;
+	prov:wasDerivedFrom doc:ed4e7a724c13 .
+doc:FactscolVibration a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Data_variable> .
+_:dfa7cd40f73674bfa431bdafa41c0682 rdf:reifies <<( doc:FactscolVibration rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Data_variable> )>> ;
+	prov:wasDerivedFrom doc:ed4e7a724c13 .
+doc:Factsdataset schema:name "Dataset used in this project" .
+_:f60ec5a946ece929b079dd29a863263d rdf:reifies <<( doc:Factsdataset schema:name "Dataset used in this project" )>> ;
+	prov:wasDerivedFrom doc:ed4e7a724c13 .
+doc:FactscolFault a csvw:Column .
+_:aa4b2af9bc00e6db6d45a99a01188a89 rdf:reifies <<( doc:FactscolFault rdf:type csvw:Column )>> ;
+	prov:wasDerivedFrom doc:ed4e7a724c13 .
+doc:Factscell1f csvw:value -2.963467 .
+_:d1e984f7f93eefd68db9e69d558cb16a rdf:reifies <<( doc:Factscell1f csvw:value -2.963467 )>> ;
+	prov:wasDerivedFrom doc:ed4e7a724c13 .
+_:ced7607b24b026d72738e974cd87ab37 prov:wasDerivedFrom doc:ed4e7a724c13 .
+_:aee59a78fad86c9b2335bc6542fa3e66 prov:wasDerivedFrom doc:ed4e7a724c13 .
+doc:Factsrecord4 a csvw:Row .
+_:b44e615e3757f9a1655c13b0b527127a rdf:reifies <<( doc:Factsrecord4 rdf:type csvw:Row )>> ;
+	prov:wasDerivedFrom doc:ed4e7a724c13 .
+doc:FactsaccuracyResult schema:measurementOf doc:FactsaccuracyResult .
+_:c6ef90484a6295bb138baebb85a907a1 rdf:reifies <<( doc:FactsaccuracyResult schema:measurementOf doc:FactsaccuracyResult )>> ;
+	prov:wasDerivedFrom doc:ed4e7a724c13 .
+doc:FactsindustrialSensors schema:measuresProperty doc:FactscolFault .
+_:dc41c819b735f3e95436727f266bbf55 rdf:reifies <<( doc:FactsindustrialSensors schema:measuresProperty doc:FactscolFault )>> ;
+	prov:wasDerivedFrom doc:ed4e7a724c13 .
+doc:Factsdataset csvw:row doc:Factsrecord8982 .
+_:bf2cbf89b1a5a4405867df8d5ac6b04b rdf:reifies <<( doc:Factsdataset csvw:row doc:Factsrecord8982 )>> ;
+	prov:wasDerivedFrom doc:ed4e7a724c13 .
+doc:FactscolFault schema:name "Viscosity" .
+_:f3c52c9be00cf60cab79e4f517ad6a68 rdf:reifies <<( doc:FactscolFault schema:name "Viscosity" )>> ;
+	prov:wasDerivedFrom doc:ed4e7a724c13 .
+doc:FactscolFault csvw:name "Pressure" .
+_:ed20bd4a259ccdd00e3955074906b9b5 rdf:reifies <<( doc:FactscolFault csvw:name "Pressure" )>> ;
+	prov:wasDerivedFrom doc:ed4e7a724c13 .
+doc:Factsdataset csvw:row doc:Factsrecord4 .
+_:b88824fd1604bc31d8cd6e6ab85ae855 rdf:reifies <<( doc:Factsdataset csvw:row doc:Factsrecord4 )>> ;
+	prov:wasDerivedFrom doc:ed4e7a724c13 .
+_:f7b7afab989d585500f2ca998bcbfa5d prov:wasDerivedFrom doc:ed4e7a724c13 .
+doc:FactscolFault csvw:name "Temperature" .
+_:ad960060e2d63968fd2e3a728e49e5f0 rdf:reifies <<( doc:FactscolFault csvw:name "Temperature" )>> ;
+	prov:wasDerivedFrom doc:ed4e7a724c13 .
+doc:Factsrecord4 a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#maintainable_item_record> .
+_:d2e5256422d31e6d51e05b4cc803194c rdf:reifies <<( doc:Factsrecord4 rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#maintainable_item_record> )>> ;
+	prov:wasDerivedFrom doc:ed4e7a724c13 .
+doc:Factscell1f csvw:value "outer ring" .
+_:a8bf008327446c4af54b2ba38beeded6 rdf:reifies <<( doc:Factscell1f csvw:value "outer ring" )>> ;
+	prov:wasDerivedFrom doc:ed4e7a724c13 .
+doc:Predictive_maintenance_model <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#has_predictive_maintenance_function> doc:FactsforecastingFunction_1 .
+_:ef7b10ba59985adc0db54fd890f79c80 rdf:reifies <<( doc:Predictive_maintenance_model <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#has_predictive_maintenance_function> doc:FactsforecastingFunction_1 )>> ;
+	prov:wasDerivedFrom doc:ed4e7a724c13 .
+doc:Factsdataset csvw:column doc:FactscolVibration .
+_:fec55fc782cecf7db9fda666eaef057e rdf:reifies <<( doc:Factsdataset csvw:column doc:FactscolVibration )>> ;
+	prov:wasDerivedFrom doc:ed4e7a724c13 .
+doc:Factscell1f csvw:value 10.735138 .
+_:d06f91d92895ad318c480be1bb17957 rdf:reifies <<( doc:Factscell1f csvw:value 10.735138 )>> ;
+	prov:wasDerivedFrom doc:ed4e7a724c13 .
+doc:Factscell1f csvw:column doc:FactscolVibration .
+_:c938b0070f272fec2111000789b6b383 rdf:reifies <<( doc:Factscell1f csvw:column doc:FactscolVibration )>> ;
+	prov:wasDerivedFrom doc:ed4e7a724c13 .
+doc:Factsrecord4 csvw:number 3 .
+_:ac44b0e643404c729ebcb7f32668f361 rdf:reifies <<( doc:Factsrecord4 csvw:number 3 )>> ;
+	prov:wasDerivedFrom doc:ed4e7a724c13 .
+doc:Factscell1f csvw:value 15.38359 .
+_:c20f2b55052ee756fe691e820c131eed rdf:reifies <<( doc:Factscell1f csvw:value 15.38359 )>> ;
+	prov:wasDerivedFrom doc:ed4e7a724c13 .
+doc:Predictive_maintenance_model schema:name "Random forest classifier" .
+_:de658b9448123608dff754fbe494e9ad rdf:reifies <<( doc:Predictive_maintenance_model schema:name "Random forest classifier" )>> ;
+	prov:wasDerivedFrom doc:ed4e7a724c13 .
+doc:FactstestBench schema:purpose "Collect data and evaluate models by simulating operating conditions and bearing failures" .
+_:ec3c136908cdf8b2fad86a5641a236af rdf:reifies <<( doc:FactstestBench schema:purpose "Collect data and evaluate models by simulating operating conditions and bearing failures" )>> ;
+	prov:wasDerivedFrom doc:ed4e7a724c13 .
+doc:FactscolFault schema:name "Pressure" .
+_:e8575964ab60460eb686139f2586c902 rdf:reifies <<( doc:FactscolFault schema:name "Pressure" )>> ;
+	prov:wasDerivedFrom doc:ed4e7a724c13 .
+doc:Predictive_maintenance_model a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Predictive_Maintenance_Article> .
+_:ddbe5a1bc6f8a0d9cdf9b324f49755d1 rdf:reifies <<( doc:Predictive_maintenance_model rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Predictive_Maintenance_Article> )>> ;
+	prov:wasDerivedFrom doc:ed4e7a724c13 .
+doc:Factscell1f csvw:value 10.436429 .
+_:f8e2819d4d5c7e721e11a9756611dd2 rdf:reifies <<( doc:Factscell1f csvw:value 10.436429 )>> ;
+	prov:wasDerivedFrom doc:ed4e7a724c13 .
+doc:Factsrecord4 csvw:number 0 .
+_:f34ecbc5a534eb898e0566bea55342a8 rdf:reifies <<( doc:Factsrecord4 csvw:number 0 )>> ;
+	prov:wasDerivedFrom doc:ed4e7a724c13 .
+doc:Factskane schema:name "AurÃ©lien Teguede Keleko" .
+_:b2a2b53230c859d8c5235da2cb051edb rdf:reifies <<( doc:Factskane schema:name "AurÃ©lien Teguede Keleko" )>> ;
+	prov:wasDerivedFrom doc:ed4e7a724c13 .
+doc:Factsrecord4 csvw:number 1 .
+_:e2e59ba5dbf1e7bf7cadb3aa8d0f1054 rdf:reifies <<( doc:Factsrecord4 csvw:number 1 )>> ;
+	prov:wasDerivedFrom doc:ed4e7a724c13 .
+doc:Factscell1f csvw:value 9.8043 .
+_:e107ad1f965040a55b638774119caa6d rdf:reifies <<( doc:Factscell1f csvw:value 9.8043 )>> ;
+	prov:wasDerivedFrom doc:ed4e7a724c13 .
+doc:Factsdataset a csvw:Schema .
+_:bb2d2fc40e279ce0ac4981ee2de23d84 rdf:reifies <<( doc:Factsdataset rdf:type csvw:Schema )>> ;
+	prov:wasDerivedFrom doc:ed4e7a724c13 .
+doc:FactsforecastingFunction_1 schema:name "Time series forecasting" .
+_:b6fb0f393ac26f00f9959a05d80f9818 rdf:reifies <<( doc:FactsforecastingFunction_1 schema:name "Time series forecasting" )>> ;
+	prov:wasDerivedFrom doc:ed4e7a724c13 .
+doc:Factscell1f csvw:value 0.534767 .
+_:a4a59e55f6b0274309be361597d2b2af rdf:reifies <<( doc:Factscell1f csvw:value 0.534767 )>> ;
+	prov:wasDerivedFrom doc:ed4e7a724c13 .
+doc:Factscell1f csvw:value 9.349178 .
+_:d92184b6f3b23b5562117fb82ee9d91d rdf:reifies <<( doc:Factscell1f csvw:value 9.349178 )>> ;
+	prov:wasDerivedFrom doc:ed4e7a724c13 .
+doc:Factscell1f csvw:value 12.783574 .
+_:d87f31d509eede9ddbdccf0bbc090fb7 rdf:reifies <<( doc:Factscell1f csvw:value 12.783574 )>> ;
+	prov:wasDerivedFrom doc:ed4e7a724c13 .
+doc:Predictive_maintenance_model schema:author doc:Factskane .
+_:fb514157842cb5a907e16941b097c3df rdf:reifies <<( doc:Predictive_maintenance_model schema:author doc:Factskane )>> ;
+	prov:wasDerivedFrom doc:ed4e7a724c13 .
+doc:FactsforecastingFunction_1 a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Future_state_forecast> .
+_:d5c9f4a3ee72da817bd0a68a78021b32 rdf:reifies <<( doc:FactsforecastingFunction_1 rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Future_state_forecast> )>> ;
+	prov:wasDerivedFrom doc:ed4e7a724c13 .
+doc:Predictive_maintenance_model schema:name "Fault detection" .
+_:edeeff991106b5db987ce001868a5c87 rdf:reifies <<( doc:Predictive_maintenance_model schema:name "Fault detection" )>> ;
+	prov:wasDerivedFrom doc:ed4e7a724c13 .
+doc:Factsdataset csvw:tableSchema doc:Factsdataset .
+_:f1e75aa8f9f2bab26d5e2c098ef96b33 rdf:reifies <<( doc:Factsdataset csvw:tableSchema doc:Factsdataset )>> ;
+	prov:wasDerivedFrom doc:ed4e7a724c13 .
+doc:Predictive_maintenance_model schema:citation "[9]" .
+_:e7c60b05943d6cbdf62c5fce6f693be8 rdf:reifies <<( doc:Predictive_maintenance_model schema:citation "[9]" )>> ;
+	prov:wasDerivedFrom doc:ed4e7a724c13 .
+doc:FactsaccuracyResult schema:description "Combined performance of the LSTM-GRU and Random Forest classifier" .
+_:c3e68d0ed054181ef245087f84ce3a6c rdf:reifies <<( doc:FactsaccuracyResult schema:description "Combined performance of the LSTM-GRU and Random Forest classifier" )>> ;
+	prov:wasDerivedFrom doc:ed4e7a724c13 .
+doc:Predictive_maintenance_model schema:citation "[10]" .
+_:bb6f50a2921dac066cdcb8c28124dc8 rdf:reifies <<( doc:Predictive_maintenance_model schema:citation "[10]" )>> ;
+	prov:wasDerivedFrom doc:ed4e7a724c13 .
+doc:FactstestBench a cco:Artifact .
+_:bc1946f746a1de8cde4fdc69f9141561 rdf:reifies <<( doc:FactstestBench rdf:type cco:Artifact )>> ;
+	prov:wasDerivedFrom doc:ed4e7a724c13 .
+doc:FactscolFault csvw:name "Fault" .
+_:f33f1efb6437c98c541151a1439fd9b4 rdf:reifies <<( doc:FactscolFault csvw:name "Fault" )>> ;
+	prov:wasDerivedFrom doc:ed4e7a724c13 .
+_:bd52164dcbdb1090f027bad2cd031579 prov:wasDerivedFrom doc:ed4e7a724c13 .
+doc:Predictive_maintenance_model a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Regression> .
+_:fafc73d556fe03ff72d43b6f99fc96db rdf:reifies <<( doc:Predictive_maintenance_model rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Regression> )>> ;
+	prov:wasDerivedFrom doc:ed4e7a724c13 .
+doc:Factsrecord4 csvw:number 2 .
+_:ebe22c9f210ddc5fa3b5143aba42ad69 rdf:reifies <<( doc:Factsrecord4 csvw:number 2 )>> ;
+	prov:wasDerivedFrom doc:ed4e7a724c13 .
+doc:FactsindustrialSensors schema:name "Industrial sensors" .
+_:be56850612d4bd1f8c3fd21adbe84c29 rdf:reifies <<( doc:FactsindustrialSensors schema:name "Industrial sensors" )>> ;
+	prov:wasDerivedFrom doc:ed4e7a724c13 .
+doc:Factsdataset a cco:Database .
+_:b836fb9c9d033e1cfc06e02fd0b5178d rdf:reifies <<( doc:Factsdataset rdf:type cco:Database )>> ;
+	prov:wasDerivedFrom doc:ed4e7a724c13 .
+doc:FactscolFault schema:name "Temperature" .
+_:aeafb79843eb189acb5c1ee5ff96ee91 rdf:reifies <<( doc:FactscolFault schema:name "Temperature" )>> ;
+	prov:wasDerivedFrom doc:ed4e7a724c13 .
+doc:Factscell1f csvw:value "9"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+_:f99013d3536b336532061b8353a5f463 rdf:reifies <<( doc:Factscell1f csvw:value "9"^^<http://www.w3.org/2001/XMLSchema#decimal> )>> ;
+	prov:wasDerivedFrom doc:ed4e7a724c13 .
+doc:FactsindustrialSensors a cco:Artifact .
+_:c1227dfea3494d35d5e08b7f01cd8c2d rdf:reifies <<( doc:FactsindustrialSensors rdf:type cco:Artifact )>> ;
+	prov:wasDerivedFrom doc:ed4e7a724c13 .
+doc:Factscell1f csvw:value 1.726157 .
+_:dd690f72cf716cdffabdcb9ab4eae166 rdf:reifies <<( doc:Factscell1f csvw:value 1.726157 )>> ;
+	prov:wasDerivedFrom doc:ed4e7a724c13 .
+doc:Predictive_maintenance_model schema:description "Sequence modelling and prediction of continuous variables" .
+_:e549248cd72e4b9263738e2fa8a7d6c1 rdf:reifies <<( doc:Predictive_maintenance_model schema:description "Sequence modelling and prediction of continuous variables" )>> ;
+	prov:wasDerivedFrom doc:ed4e7a724c13 .
+doc:Factskane schema:name "Kane" .
+_:c6fa93bdce5f2a3d16fc07c79674c457 rdf:reifies <<( doc:Factskane schema:name "Kane" )>> ;
+	prov:wasDerivedFrom doc:ed4e7a724c13 .
+doc:Factscell1f csvw:value 9.724877 .
+_:d358a41568b0b59ea3a9909df06c6131 rdf:reifies <<( doc:Factscell1f csvw:value 9.724877 )>> ;
+	prov:wasDerivedFrom doc:ed4e7a724c13 .
+doc:Predictive_maintenance_model schema:description "Classification of faults based on feature predictions" .
+_:e8daec23648158490c96e3f0f7c5b0a9 rdf:reifies <<( doc:Predictive_maintenance_model schema:description "Classification of faults based on feature predictions" )>> ;
+	prov:wasDerivedFrom doc:ed4e7a724c13 .
+doc:Predictive_maintenance_model schema:name "Fault feature extraction" .
+_:efe4d36cc8bc69a41ef6ef9d66d96532 rdf:reifies <<( doc:Predictive_maintenance_model schema:name "Fault feature extraction" )>> ;
+	prov:wasDerivedFrom doc:ed4e7a724c13 .
+doc:FactstestBench schema:name "Test bench" .
+_:f31f048905d1231d81e9b580a8fbaee6 rdf:reifies <<( doc:FactstestBench schema:name "Test bench" )>> ;
+	prov:wasDerivedFrom doc:ed4e7a724c13 .
+doc:Predictive_maintenance_model schema:citation "[11]" .
+_:dd19e9cf9d343df75dbd3bcc72ba873a rdf:reifies <<( doc:Predictive_maintenance_model schema:citation "[11]" )>> ;
+	prov:wasDerivedFrom doc:ed4e7a724c13 .
+doc:Factsrecord4 csvw:number 4 .
+_:d2c74ebee88e2948e0e3252f67690235 rdf:reifies <<( doc:Factsrecord4 csvw:number 4 )>> ;
+	prov:wasDerivedFrom doc:ed4e7a724c13 .
+doc:Factskane schema:name "Wo Jae Lee" .
+_:dfe7da0540df08fc64ffac650655171b rdf:reifies <<( doc:Factskane schema:name "Wo Jae Lee" )>> ;
+	prov:wasDerivedFrom doc:ed4e7a724c13 .
+doc:Factscell1f csvw:value "unbalance" .
+_:adba6d49647bae004d33fa8560d53fd0 rdf:reifies <<( doc:Factscell1f csvw:value "unbalance" )>> ;
+	prov:wasDerivedFrom doc:ed4e7a724c13 .
+doc:Factscell1f csvw:value 2.1233 .
+_:e31ecc6c27c91d4eb2549917506ecccd rdf:reifies <<( doc:Factscell1f csvw:value 2.1233 )>> ;
+	prov:wasDerivedFrom doc:ed4e7a724c13 .
+doc:FactsaccuracyResult a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Performance_value> .
+_:a7f1f1a4c10c8a199cb31f3c552c15fe rdf:reifies <<( doc:FactsaccuracyResult rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Performance_value> )>> ;
+	prov:wasDerivedFrom doc:ed4e7a724c13 .
+doc:Factscell1f csvw:value "inner ring" .
+_:b8c70e8308ae2dd127befee4ed145ed5 rdf:reifies <<( doc:Factscell1f csvw:value "inner ring" )>> ;
+	prov:wasDerivedFrom doc:ed4e7a724c13 .
+doc:Predictive_maintenance_model schema:name "LSTM-GRU Hybrid Model" .
+_:cb2739ce53eb3ddd7d8f41de1eeb5daf rdf:reifies <<( doc:Predictive_maintenance_model schema:name "LSTM-GRU Hybrid Model" )>> ;
+	prov:wasDerivedFrom doc:ed4e7a724c13 .
+doc:Factscell1f csvw:value -1.432904 .
+_:fc7cdaf69c118974ab377050471d014f rdf:reifies <<( doc:Factscell1f csvw:value -1.432904 )>> ;
+	prov:wasDerivedFrom doc:ed4e7a724c13 .
+doc:Factscell1f csvw:value -1.405973 .
+_:d98bc28d4c6e4a2b6a727f315897d652 rdf:reifies <<( doc:Factscell1f csvw:value -1.405973 )>> ;
+	prov:wasDerivedFrom doc:ed4e7a724c13 .
+doc:Factscell1f csvw:value 0.624601 .
+_:b3a7ef963e20d2804aeab39248ee60c5 rdf:reifies <<( doc:Factscell1f csvw:value 0.624601 )>> ;
+	prov:wasDerivedFrom doc:ed4e7a724c13 .
+doc:Predictive_maintenance_model schema:citation "[8]" .
+_:a7b26caffbee5424af91785c6151cfef rdf:reifies <<( doc:Predictive_maintenance_model schema:citation "[8]" )>> ;
+	prov:wasDerivedFrom doc:ed4e7a724c13 .
+doc:Predictive_maintenance_model schema:name "LSTM-GRU hybrid and Random Forest module" .
+_:af14f5f59350360545dbf7f013186e39 rdf:reifies <<( doc:Predictive_maintenance_model schema:name "LSTM-GRU hybrid and Random Forest module" )>> ;
+	prov:wasDerivedFrom doc:ed4e7a724c13 .
+doc:FactscolFault schema:name "Vibration" .
+_:c2b7d582d4c5c5f50f6ecd8ed3061651 rdf:reifies <<( doc:FactscolFault schema:name "Vibration" )>> ;
+	prov:wasDerivedFrom doc:ed4e7a724c13 .
+doc:Predictive_maintenance_model schema:name "Fault classification" .
+_:b388396e533b03c8eae46fb680faaa19 rdf:reifies <<( doc:Predictive_maintenance_model schema:name "Fault classification" )>> ;
+	prov:wasDerivedFrom doc:ed4e7a724c13 .
+doc:Factsdataset a csvw:Table .
+_:fbf04a7ae5b5aa471ee96001971dc00a rdf:reifies <<( doc:Factsdataset rdf:type csvw:Table )>> ;
+	prov:wasDerivedFrom doc:ed4e7a724c13 .
+doc:Factscell1f csvw:value "57"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+_:c40c421516e8eec192614c28bcd381da rdf:reifies <<( doc:Factscell1f csvw:value "57"^^<http://www.w3.org/2001/XMLSchema#decimal> )>> ;
+	prov:wasDerivedFrom doc:ed4e7a724c13 .
+doc:Factskane schema:name "Milena Nacchia" .
+_:f4b229e39452cd31b44372e47e9b03c2 rdf:reifies <<( doc:Factskane schema:name "Milena Nacchia" )>> ;
+	prov:wasDerivedFrom doc:ed4e7a724c13 .
+doc:FactsaccuracyResult schema:value 0.8 .
+_:a24198b94886c20316a00c800184f03 rdf:reifies <<( doc:FactsaccuracyResult schema:value 0.8 )>> ;
+	prov:wasDerivedFrom doc:ed4e7a724c13 .
+doc:Factscell1f csvw:value "94"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+_:fc1e3fc4e41c70e1af412670aa73c258 rdf:reifies <<( doc:Factscell1f csvw:value "94"^^<http://www.w3.org/2001/XMLSchema#decimal> )>> ;
+	prov:wasDerivedFrom doc:ed4e7a724c13 .
+doc:FactscolFault csvw:name "Viscosity" .
+_:bcb55fcc5eccdb6230e7ea4d9104c80 rdf:reifies <<( doc:FactscolFault csvw:name "Viscosity" )>> ;
+	prov:wasDerivedFrom doc:ed4e7a724c13 .
+doc:FactsaccuracyResult a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Performance_indicator> .
+_:fc6f5ad343eed78ed4d2d8cc0e6c0a6b rdf:reifies <<( doc:FactsaccuracyResult rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Performance_indicator> )>> ;
+	prov:wasDerivedFrom doc:ed4e7a724c13 .
+doc:689aef30a67b a prov:Entity , schema:text ;
+	prov:generatedAtTime "2026-07-26T07:30:12.384361Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+	schema:position 2 ;
+	schema:identifier "689aef30a67b" .
+doc:FactsaccuracyResult cco:describes doc:FactsaccuracyResult .
+_:c10efd76dd1e70511ef5ee816446a714 rdf:reifies <<( doc:FactsaccuracyResult cco:describes doc:FactsaccuracyResult )>> ;
+	prov:wasDerivedFrom doc:689aef30a67b .
+doc:FactshybridModelType a None:Model_type .
+_:d331a9b13f7eb023fd4e6b68b4ae9979 rdf:reifies <<( doc:FactshybridModelType rdf:type None:Model_type )>> ;
+	prov:wasDerivedFrom doc:689aef30a67b .
+doc:FactsrandomForestModel rdfs:label "Random Forest"@en .
+_:af7c7fee45154c1970694225c097bb9e rdf:reifies <<( doc:FactsrandomForestModel rdfs:label "Random Forest"@en )>> ;
+	prov:wasDerivedFrom doc:689aef30a67b .
+doc:Predictive_maintenance_model None:describes_type doc:FactshybridModelType .
+_:c916300276d84230bd38c61d60ff286b rdf:reifies <<( doc:Predictive_maintenance_model None:describes_type doc:FactshybridModelType )>> ;
+	prov:wasDerivedFrom doc:689aef30a67b .
+doc:FactsaccuracyResult None:has_text_value "Macro Average" .
+_:b5d89d7a85d962c12bea3aa3b8f49517 rdf:reifies <<( doc:FactsaccuracyResult None:has_text_value "Macro Average" )>> ;
+	prov:wasDerivedFrom doc:689aef30a67b .
+doc:FactsaccuracyResult None:has_text_value "Weighted Average" .
+_:caaf19ba72260b6f3f39c88b5b8d94fc rdf:reifies <<( doc:FactsaccuracyResult None:has_text_value "Weighted Average" )>> ;
+	prov:wasDerivedFrom doc:689aef30a67b .
+doc:FactsaccuracyResult schema:value 0.77 .
+_:dc5d100fe1f34a43fcb9fea4b3d73d64 rdf:reifies <<( doc:FactsaccuracyResult schema:value 0.77 )>> ;
+	prov:wasDerivedFrom doc:689aef30a67b .
+doc:Factsdataset a csvw:TableSchema .
+_:d0ce2a4b3f4cf3c4a8c7f909e8468168 rdf:reifies <<( doc:Factsdataset rdf:type csvw:TableSchema )>> ;
+	prov:wasDerivedFrom doc:689aef30a67b .
+doc:Factsprediction_2 schema:time 14 .
+_:b0a69534c27311885fefc315258033c0 rdf:reifies <<( doc:Factsprediction_2 schema:time 14 )>> ;
+	prov:wasDerivedFrom doc:689aef30a67b .
+doc:Factsprediction_2 a schema:Observation .
+_:b5daa4c52d4a933059ec6231e9a1c94f rdf:reifies <<( doc:Factsprediction_2 rdf:type schema:Observation )>> ;
+	prov:wasDerivedFrom doc:689aef30a67b .
+_:f5e1e739999ab854ac7e3d0d1b58529 prov:wasDerivedFrom doc:689aef30a67b .
+doc:Factsprediction_2 schema:time 8 .
+_:db330b5ba9d7c07934cfc303865155bd rdf:reifies <<( doc:Factsprediction_2 schema:time 8 )>> ;
+	prov:wasDerivedFrom doc:689aef30a67b .
+_:fbf04a7ae5b5aa471ee96001971dc00a prov:wasDerivedFrom doc:689aef30a67b .
+_:f1e75aa8f9f2bab26d5e2c098ef96b33 prov:wasDerivedFrom doc:689aef30a67b .
+doc:FactscolFault csvw:name "Fault type" .
+_:ee01f16e8b9d3052a6f4dbdd5ff78e99 rdf:reifies <<( doc:FactscolFault csvw:name "Fault type" )>> ;
+	prov:wasDerivedFrom doc:689aef30a67b .
+_:d56aaeed0d03e029a40dbe10f6c081de prov:wasDerivedFrom doc:689aef30a67b .
+doc:Factsprediction_2 schema:result doc:FactsaccuracyResult .
+_:c026835320e2dbfa1259160640c960ac rdf:reifies <<( doc:Factsprediction_2 schema:result doc:FactsaccuracyResult )>> ;
+	prov:wasDerivedFrom doc:689aef30a67b .
+doc:FactscolFault csvw:name "F-Score" .
+_:f51cbec47c2527d83845979c9c6c4738 rdf:reifies <<( doc:FactscolFault csvw:name "F-Score" )>> ;
+	prov:wasDerivedFrom doc:689aef30a67b .
+_:a7f1f1a4c10c8a199cb31f3c552c15fe prov:wasDerivedFrom doc:689aef30a67b .
+_:f7b7afab989d585500f2ca998bcbfa5d prov:wasDerivedFrom doc:689aef30a67b .
+doc:FactscolFault csvw:name "Recall" .
+_:b9d425154e9b48669f399a95fe9773bd rdf:reifies <<( doc:FactscolFault csvw:name "Recall" )>> ;
+	prov:wasDerivedFrom doc:689aef30a67b .
+_:aa4b2af9bc00e6db6d45a99a01188a89 prov:wasDerivedFrom doc:689aef30a67b .
+doc:FactscolFault csvw:name "Precision" .
+_:b1156abb7faf333825dd5119e3a7d284 rdf:reifies <<( doc:FactscolFault csvw:name "Precision" )>> ;
+	prov:wasDerivedFrom doc:689aef30a67b .
+_:c8e7c633d8e6957502f9e4aa21cb0528 prov:wasDerivedFrom doc:689aef30a67b .
+doc:FactsaccuracyResult a None:Performance_indicator .
+_:ed01b67125621ce81d32c80088931447 rdf:reifies <<( doc:FactsaccuracyResult rdf:type None:Performance_indicator )>> ;
+	prov:wasDerivedFrom doc:689aef30a67b .
+doc:FactsaccuracyResult schema:value "0"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+_:def1006e4f0b6fc1dc6d9e11d0c88fcd rdf:reifies <<( doc:FactsaccuracyResult schema:value "0"^^<http://www.w3.org/2001/XMLSchema#decimal> )>> ;
+	prov:wasDerivedFrom doc:689aef30a67b .
+doc:Factsprediction_2 schema:time 4 .
+_:e3764d69bf90964cd031632a34bbf2f9 rdf:reifies <<( doc:Factsprediction_2 schema:time 4 )>> ;
+	prov:wasDerivedFrom doc:689aef30a67b .
+doc:FactsaccuracyResult schema:value 0.87 .
+_:f28c7bb070fb0a21c9df2b4dad2cbd5b rdf:reifies <<( doc:FactsaccuracyResult schema:value 0.87 )>> ;
+	prov:wasDerivedFrom doc:689aef30a67b .
+doc:FactsinnerRingFault rdfs:label "Outer ring"@en .
+_:fec9ba672bfef8797824dfa9980d7e78 rdf:reifies <<( doc:FactsinnerRingFault rdfs:label "Outer ring"@en )>> ;
+	prov:wasDerivedFrom doc:689aef30a67b .
+doc:Factsprediction_2 schema:result doc:FactsinnerRingFault .
+_:eb6e4ac835bd1f5ccdb79a5b8cc7ef9f rdf:reifies <<( doc:Factsprediction_2 schema:result doc:FactsinnerRingFault )>> ;
+	prov:wasDerivedFrom doc:689aef30a67b .
+doc:FactsaccuracyResult rdfs:label "Unbalance"@en .
+_:e71c895e52a589e3d551c0bcacfead11 rdf:reifies <<( doc:FactsaccuracyResult rdfs:label "Unbalance"@en )>> ;
+	prov:wasDerivedFrom doc:689aef30a67b .
+doc:FactsaccuracyResult schema:value "0.65, 0.80, 0.71" .
+_:f65f734924848830ce72cc415ac981c7 rdf:reifies <<( doc:FactsaccuracyResult schema:value "0.65, 0.80, 0.71" )>> ;
+	prov:wasDerivedFrom doc:689aef30a67b .
+doc:FactsinnerRingFault a schema:Thing .
+_:abe51c3b19a5d962c7951a196d68c6a1 rdf:reifies <<( doc:FactsinnerRingFault rdf:type schema:Thing )>> ;
+	prov:wasDerivedFrom doc:689aef30a67b .
+doc:FactshybridModelType None:has_text_value "Hybrid model integrating LSTMGRU deep learning and Random Forest ensemble classification" .
+_:ae9c536fd7bf8810c7507fb59be4c946 rdf:reifies <<( doc:FactshybridModelType None:has_text_value "Hybrid model integrating LSTMGRU deep learning and Random Forest ensemble classification" )>> ;
+	prov:wasDerivedFrom doc:689aef30a67b .
+doc:Factsprediction_2 schema:time 9 .
+_:b702810ce9313cc1e9da05f806f2da5a rdf:reifies <<( doc:Factsprediction_2 schema:time 9 )>> ;
+	prov:wasDerivedFrom doc:689aef30a67b .
+doc:FactsaccuracyResult a schema:Thing .
+_:e350979dafa9cb84e673e824828f2477 rdf:reifies <<( doc:FactsaccuracyResult rdf:type schema:Thing )>> ;
+	prov:wasDerivedFrom doc:689aef30a67b .
+doc:FactsaccuracyResult None:has_text_value "Recall" .
+_:dc5683d2f971dbff15a3c721c15409b7 rdf:reifies <<( doc:FactsaccuracyResult None:has_text_value "Recall" )>> ;
+	prov:wasDerivedFrom doc:689aef30a67b .
+doc:Factsprediction_2 schema:time 1 .
+_:b322d2d466a86f3a50cc87d501b224ae rdf:reifies <<( doc:Factsprediction_2 schema:time 1 )>> ;
+	prov:wasDerivedFrom doc:689aef30a67b .
+doc:Factsprediction_2 schema:time 2 .
+_:e86833b0d89ad953bbbf01a123c7891f rdf:reifies <<( doc:Factsprediction_2 schema:time 2 )>> ;
+	prov:wasDerivedFrom doc:689aef30a67b .
+doc:FactsaccuracyResult None:has_text_value "Precision" .
+_:ad911105db64354b580cec616ce0f162 rdf:reifies <<( doc:FactsaccuracyResult None:has_text_value "Precision" )>> ;
+	prov:wasDerivedFrom doc:689aef30a67b .
+doc:FactsarticleTitle_26 None:has_text_value "Results of the performance of the hybrid model" .
+_:f9975045da51de3acd6955b3ebfad95 rdf:reifies <<( doc:FactsarticleTitle_26 None:has_text_value "Results of the performance of the hybrid model" )>> ;
+	prov:wasDerivedFrom doc:689aef30a67b .
+_:ced7607b24b026d72738e974cd87ab37 prov:wasDerivedFrom doc:689aef30a67b .
+_:a24198b94886c20316a00c800184f03 prov:wasDerivedFrom doc:689aef30a67b .
+doc:FactsaccuracyResult None:has_text_value "F-Score" .
+_:b6860d0c677730412c3b439365727b2d rdf:reifies <<( doc:FactsaccuracyResult None:has_text_value "F-Score" )>> ;
+	prov:wasDerivedFrom doc:689aef30a67b .
+doc:Factsprediction_2 schema:time 12 .
+_:d970326755efca7050a228a2ae0fccf7 rdf:reifies <<( doc:Factsprediction_2 schema:time 12 )>> ;
+	prov:wasDerivedFrom doc:689aef30a67b .
+doc:FactsaccuracyResult schema:value "0.59, 0.67, 0.62" .
+_:b4efd52dd50e92576f13f34c8cea91b7 rdf:reifies <<( doc:FactsaccuracyResult schema:value "0.59, 0.67, 0.62" )>> ;
+	prov:wasDerivedFrom doc:689aef30a67b .
+doc:FactsaccuracyResult schema:value "1"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+_:e524fe735826447698ae510d3a13b066 rdf:reifies <<( doc:FactsaccuracyResult schema:value "1"^^<http://www.w3.org/2001/XMLSchema#decimal> )>> ;
+	prov:wasDerivedFrom doc:689aef30a67b .
+_:bd52164dcbdb1090f027bad2cd031579 prov:wasDerivedFrom doc:689aef30a67b .
+doc:Factsprediction_2 schema:time 15 .
+_:e73187d2b37316b2be7afd15a8045df2 rdf:reifies <<( doc:Factsprediction_2 schema:time 15 )>> ;
+	prov:wasDerivedFrom doc:689aef30a67b .
+doc:FactslstmgruModel rdfs:label "LSTMGRU"@en .
+_:dde74ca2e2ef60b6723e62846f3b21ce rdf:reifies <<( doc:FactslstmgruModel rdfs:label "LSTMGRU"@en )>> ;
+	prov:wasDerivedFrom doc:689aef30a67b .
+doc:FactsaccuracyResult None:has_text_value "Accuracy" .
+_:e4a1eee47dc37ab6410bdcfa06eca83c rdf:reifies <<( doc:FactsaccuracyResult None:has_text_value "Accuracy" )>> ;
+	prov:wasDerivedFrom doc:689aef30a67b .
+doc:FactslstmgruModel a cco:Algorithm .
+_:d89dbb75987711b58a1a66546a90225a rdf:reifies <<( doc:FactslstmgruModel rdf:type cco:Algorithm )>> ;
+	prov:wasDerivedFrom doc:689aef30a67b .
+doc:Factsprediction_2 schema:time 5 .
+_:b89f7c86d4c4074695ede7e769f6352 rdf:reifies <<( doc:Factsprediction_2 schema:time 5 )>> ;
+	prov:wasDerivedFrom doc:689aef30a67b .
+doc:FactscolFault csvw:name "Predicted Fault" .
+_:a56defc13509ceecd66c621d8f917187 rdf:reifies <<( doc:FactscolFault csvw:name "Predicted Fault" )>> ;
+	prov:wasDerivedFrom doc:689aef30a67b .
+doc:FactsresponseWindow schema:duration "PT15M"^^<http://www.w3.org/2001/XMLSchema#duration> .
+_:a0d5eb93052d47c0f2f7a61cbc97b350 rdf:reifies <<( doc:FactsresponseWindow schema:duration "PT15M"^^<http://www.w3.org/2001/XMLSchema#duration> )>> ;
+	prov:wasDerivedFrom doc:689aef30a67b .
+doc:FactscolFault None:has_text_value "Vibration analysis" .
+_:ee380d028bf14b8ed046cbf7ff97df5b rdf:reifies <<( doc:FactscolFault None:has_text_value "Vibration analysis" )>> ;
+	prov:wasDerivedFrom doc:689aef30a67b .
+doc:Factsprediction_2 schema:time 3 .
+_:c3201950650b88bcd67ed0a56849863a rdf:reifies <<( doc:Factsprediction_2 schema:time 3 )>> ;
+	prov:wasDerivedFrom doc:689aef30a67b .
+doc:FactscolFault csvw:name "Time" .
+_:e831318e4a04d841ac8ea04cf547d1da rdf:reifies <<( doc:FactscolFault csvw:name "Time" )>> ;
+	prov:wasDerivedFrom doc:689aef30a67b .
+doc:FactsresponseWindow a None:Design_detail .
+_:d393c79c833d8e3606524fb2bb8dabe7 rdf:reifies <<( doc:FactsresponseWindow rdf:type None:Design_detail )>> ;
+	prov:wasDerivedFrom doc:689aef30a67b .
+doc:FactsinnerRingFault rdfs:label "Inner ring"@en .
+_:feac2be32d3455ce11db1f2eec257b33 rdf:reifies <<( doc:FactsinnerRingFault rdfs:label "Inner ring"@en )>> ;
+	prov:wasDerivedFrom doc:689aef30a67b .
+doc:Factsprediction_2 schema:time 6 .
+_:a30ae691f3fc16872e6d468d55142c27 rdf:reifies <<( doc:Factsprediction_2 schema:time 6 )>> ;
+	prov:wasDerivedFrom doc:689aef30a67b .
+doc:FactsarticleTitle_26 a None:Article_title .
+_:b3207d355497a46d7c9f6f04c465142d rdf:reifies <<( doc:FactsarticleTitle_26 rdf:type None:Article_title )>> ;
+	prov:wasDerivedFrom doc:689aef30a67b .
+doc:Predictive_maintenance_model None:has_title doc:FactsarticleTitle_26 .
+_:ef7cfa630c6f601c9f3f377cfebd4fb rdf:reifies <<( doc:Predictive_maintenance_model None:has_title doc:FactsarticleTitle_26 )>> ;
+	prov:wasDerivedFrom doc:689aef30a67b .
+_:f6ae14fc4066b859dd9e90bf5e0fb849 prov:wasDerivedFrom doc:689aef30a67b .
+doc:Factsprediction_2 schema:time 13 .
+_:df0d317cd2c6a5b09d7f5484cb706a14 rdf:reifies <<( doc:Factsprediction_2 schema:time 13 )>> ;
+	prov:wasDerivedFrom doc:689aef30a67b .
+<http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Predictive_maintenance_model> owl:sameAs <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Predictive_Maintenance_Article> , <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Predictive_maintenance_system_module> .

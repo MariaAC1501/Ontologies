@@ -1,0 +1,41 @@
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix seed: <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD/seed#> .
+@prefix opmad: <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#> .
+@prefix schema: <http://schema.org/> .
+@prefix schemas: <https://schema.org/> .
+
+seed:ArticleShape a sh:NodeShape ;
+    sh:targetClass seed:Predictive_Maintenance_Article, opmad:Predictive_Maintenance_Article ;
+    sh:or (
+      [ sh:path seed:has_title ; sh:minCount 1 ]
+      [ sh:path opmad:has_title ; sh:minCount 1 ]
+      [ sh:path schema:name ; sh:minCount 1 ]
+      [ sh:path schemas:name ; sh:minCount 1 ]
+    ) ;
+    sh:message "An extracted article must expose a title link or name." .
+
+seed:PredictiveModelShape a sh:NodeShape ;
+    sh:targetClass seed:Predictive_maintenance_model, opmad:Predictive_maintenance_model ;
+    sh:or (
+      [ sh:path schema:name ; sh:minCount 1 ]
+      [ sh:path schemas:name ; sh:minCount 1 ]
+      [ sh:path schema:algorithm ; sh:minCount 1 ]
+      [ sh:path schemas:algorithm ; sh:minCount 1 ]
+    ) ;
+    sh:message "A predictive model must have a lexical name or algorithm link." .
+
+seed:MaintainableItemShape a sh:NodeShape ;
+    sh:targetClass seed:Maintainable_item, opmad:Maintainable_item ;
+    sh:or (
+      [ sh:path schema:name ; sh:minCount 1 ]
+      [ sh:path schemas:name ; sh:minCount 1 ]
+    ) ;
+    sh:message "A maintainable item must have a lexical name." .
+
+seed:DataVariableShape a sh:NodeShape ;
+    sh:targetClass seed:Data_variable, opmad:Data_variable ;
+    sh:or (
+      [ sh:path schema:name ; sh:minCount 1 ]
+      [ sh:path schemas:name ; sh:minCount 1 ]
+    ) ;
+    sh:message "A data variable must have a lexical name." .

@@ -1,0 +1,318 @@
+@prefix None: <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD/seed#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doc: <https://growgraph.dev/doc/eb27293fafa8/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix cd: <https://growgraph.dev/facts> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix schema: <https://schema.org/> .
+@prefix schema1: <http://schema.org/> .
+doc:55cee847f527 a prov:Entity , schema:text ;
+	prov:generatedAtTime "2026-07-12T21:49:31.510959Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+	schema:position 0 ;
+	schema:identifier "55cee847f527" .
+doc:Factsyear2026 None:has_interger_value 2026 .
+_:ee97e17b9402bb3a6dcf64924e1df0b0 rdf:reifies <<( doc:Factsyear2026 None:has_interger_value 2026 )>> ;
+	prov:wasDerivedFrom doc:55cee847f527 .
+doc:Factsarticle1_2 schema1:author doc:Factsauthor2 .
+_:f73779a82cb7d2dde61880d7d00e51e1 rdf:reifies <<( doc:Factsarticle1_2 schema1:author doc:Factsauthor2 )>> ;
+	prov:wasDerivedFrom doc:55cee847f527 .
+doc:Factsanalysis1 a None:Classification .
+_:f89e9cfdc69971c1576e847e20417681 rdf:reifies <<( doc:Factsanalysis1 rdf:type None:Classification )>> ;
+	prov:wasDerivedFrom doc:55cee847f527 .
+doc:Factsdata1 a None:Data_variable .
+_:f4daddf7ba78311c18875ed23e63884e rdf:reifies <<( doc:Factsdata1 rdf:type None:Data_variable )>> ;
+	prov:wasDerivedFrom doc:55cee847f527 .
+doc:Fault_detection None:has_text_value "industrial ring rolling process" .
+_:c61e4175b4e86ac8a7a8cade5b3f1635 rdf:reifies <<( doc:Fault_detection None:has_text_value "industrial ring rolling process" )>> ;
+	prov:wasDerivedFrom doc:55cee847f527 .
+doc:Fault_detection a None:Predictive_maintenance_system_module .
+_:f196da793893f0c60366be12357c0286 rdf:reifies <<( doc:Fault_detection rdf:type None:Predictive_maintenance_system_module )>> ;
+	prov:wasDerivedFrom doc:55cee847f527 .
+doc:Fault_detection a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Fault_detection> .
+_:a5cb682b512601a6f8b04424c57302dc rdf:reifies <<( doc:Fault_detection rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Fault_detection> )>> ;
+	prov:wasDerivedFrom doc:55cee847f527 .
+doc:Factsauthor2 a schema1:Person .
+_:b593b75b1fc5c9007e20c4024518132d rdf:reifies <<( doc:Factsauthor2 rdf:type schema1:Person )>> ;
+	prov:wasDerivedFrom doc:55cee847f527 .
+doc:Factsadaptability a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Design_detail> .
+_:c51f812d4a23597832ba0785134d70e rdf:reifies <<( doc:Factsadaptability rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Design_detail> )>> ;
+	prov:wasDerivedFrom doc:55cee847f527 .
+doc:Factsfunc3 a None:Health_assessment .
+_:d0075a78959923a728e8703124b31b13 rdf:reifies <<( doc:Factsfunc3 rdf:type None:Health_assessment )>> ;
+	prov:wasDerivedFrom doc:55cee847f527 .
+doc:Fault_detection None:has_predictive_maintenance_function doc:Factsfunc3 .
+_:f619529b9624be02dbcbef3b099033ee rdf:reifies <<( doc:Fault_detection None:has_predictive_maintenance_function doc:Factsfunc3 )>> ;
+	prov:wasDerivedFrom doc:55cee847f527 .
+doc:Factstitle1_1 None:has_text_value "System and system-of-systems digital twins for predictive maintenance and root cause analysis" .
+_:e02dca6b5d2472f5176fe5ed8120d388 rdf:reifies <<( doc:Factstitle1_1 None:has_text_value "System and system-of-systems digital twins for predictive maintenance and root cause analysis" )>> ;
+	prov:wasDerivedFrom doc:55cee847f527 .
+doc:Fault_detection a None:Fault_identification .
+_:a6aa09dc25ddd1b641f749579e9a3f39 rdf:reifies <<( doc:Fault_detection rdf:type None:Fault_identification )>> ;
+	prov:wasDerivedFrom doc:55cee847f527 .
+doc:Fault_detection None:has_predictive_maintenance_function doc:Fault_detection .
+_:e810bfeb172259937a4c2ed54ef2ef80 rdf:reifies <<( doc:Fault_detection None:has_predictive_maintenance_function doc:Fault_detection )>> ;
+	prov:wasDerivedFrom doc:55cee847f527 .
+doc:Factsanalysis1 rdfs:label "Principal Component Analysis" .
+_:c4ca4a7b4be58d99a5b10843ab2f5825 rdf:reifies <<( doc:Factsanalysis1 rdfs:label "Principal Component Analysis" )>> ;
+	prov:wasDerivedFrom doc:55cee847f527 .
+doc:Fault_detection a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Deviation_detection> .
+_:af63ededc2bf3602a9ab0b95d755d36b rdf:reifies <<( doc:Fault_detection rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Deviation_detection> )>> ;
+	prov:wasDerivedFrom doc:55cee847f527 .
+doc:Factsauthor2 schema1:name "Niclas BjÃ¶rsell" .
+_:f32ab1f6a122e822f3205beba5a0573c rdf:reifies <<( doc:Factsauthor2 schema1:name "Niclas BjÃ¶rsell" )>> ;
+	prov:wasDerivedFrom doc:55cee847f527 .
+doc:Fault_detection None:has_design_detail doc:Factsadaptability .
+_:d895ea6845a1f8babc3911127e1b8313 rdf:reifies <<( doc:Fault_detection None:has_design_detail doc:Factsadaptability )>> ;
+	prov:wasDerivedFrom doc:55cee847f527 .
+doc:Factsyear2026 a None:Publication_year .
+_:a1dbd0bc4ef181c2ab391017e6ea33a rdf:reifies <<( doc:Factsyear2026 rdf:type None:Publication_year )>> ;
+	prov:wasDerivedFrom doc:55cee847f527 .
+doc:Factsfunc3 a None:Remaining_useful_life_estimation .
+_:bf338ddda170113800ae2964e6624c0 rdf:reifies <<( doc:Factsfunc3 rdf:type None:Remaining_useful_life_estimation )>> ;
+	prov:wasDerivedFrom doc:55cee847f527 .
+doc:Factsarticle1_2 dcterms:issued "2026"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+_:ca0799277cf892dc0775df5e69897fd1 rdf:reifies <<( doc:Factsarticle1_2 dcterms:issued "2026"^^<http://www.w3.org/2001/XMLSchema#gYear> )>> ;
+	prov:wasDerivedFrom doc:55cee847f527 .
+doc:Factsprocess rdfs:label "processing tool" .
+_:a1403745a7f4b82d4fd1878613903d5c rdf:reifies <<( doc:Factsprocess rdfs:label "processing tool" )>> ;
+	prov:wasDerivedFrom doc:55cee847f527 .
+doc:Factsadaptability None:has_text_value "computing and managing real-time data" .
+_:f374ac2a2cee95fe5c15f138f1f62eee rdf:reifies <<( doc:Factsadaptability None:has_text_value "computing and managing real-time data" )>> ;
+	prov:wasDerivedFrom doc:55cee847f527 .
+doc:Fault_detection a None:Predictive_maintenance_case .
+_:c3b763637c218692fd52807dd8689023 rdf:reifies <<( doc:Fault_detection rdf:type None:Predictive_maintenance_case )>> ;
+	prov:wasDerivedFrom doc:55cee847f527 .
+doc:Factsprocess a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Maintainable_item> .
+_:b1c9dd30588b3568a7ee25fcc507c430 rdf:reifies <<( doc:Factsprocess rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Maintainable_item> )>> ;
+	prov:wasDerivedFrom doc:55cee847f527 .
+doc:Factsadaptability None:has_text_value "handling false alarm" .
+_:f2ac4ff563f6c78dd41d1d2a5233c251 rdf:reifies <<( doc:Factsadaptability None:has_text_value "handling false alarm" )>> ;
+	prov:wasDerivedFrom doc:55cee847f527 .
+doc:Fault_detection a None:Health_assessment .
+_:a8743e224d657f844197e9b7e7478eb4 rdf:reifies <<( doc:Fault_detection rdf:type None:Health_assessment )>> ;
+	prov:wasDerivedFrom doc:55cee847f527 .
+doc:Factstitle1_1 a None:Article_title .
+_:aabf1185f3e8c55693473c36cb46d5cc rdf:reifies <<( doc:Factstitle1_1 rdf:type None:Article_title )>> ;
+	prov:wasDerivedFrom doc:55cee847f527 .
+doc:Factsarticle1_2 None:has_publication_year doc:Factsyear2026 .
+_:e0f1f6953820631a66b4fa0b0177f4bb rdf:reifies <<( doc:Factsarticle1_2 None:has_publication_year doc:Factsyear2026 )>> ;
+	prov:wasDerivedFrom doc:55cee847f527 .
+doc:Factsarticle1_2 dcterms:title "System and system-of-systems digital twins for predictive maintenance and root cause analysis" .
+_:f7ab8529525e60ddae84bdc136df0b3c rdf:reifies <<( doc:Factsarticle1_2 dcterms:title "System and system-of-systems digital twins for predictive maintenance and root cause analysis" )>> ;
+	prov:wasDerivedFrom doc:55cee847f527 .
+doc:Factsarticle1_2 None:has_title doc:Factstitle1_1 .
+_:b8b0f26d5d58dcc7e57e7446603a0118 rdf:reifies <<( doc:Factsarticle1_2 None:has_title doc:Factstitle1_1 )>> ;
+	prov:wasDerivedFrom doc:55cee847f527 .
+doc:Factsadaptability None:has_text_value "processing data close to edge devices" .
+_:fae8f0d487878c1dbd491672c9ab4ef3 rdf:reifies <<( doc:Factsadaptability None:has_text_value "processing data close to edge devices" )>> ;
+	prov:wasDerivedFrom doc:55cee847f527 .
+doc:Factsarticle1_2 a None:Predictive_Maintenance_Article .
+_:d571a7299a4ee387b1d1955a56a481c9 rdf:reifies <<( doc:Factsarticle1_2 rdf:type None:Predictive_Maintenance_Article )>> ;
+	prov:wasDerivedFrom doc:55cee847f527 .
+doc:Factsadaptability None:has_text_value "system-of-systems digital twin" .
+_:c1281cbfa62e18b1983523b924b6eeb2 rdf:reifies <<( doc:Factsadaptability None:has_text_value "system-of-systems digital twin" )>> ;
+	prov:wasDerivedFrom doc:55cee847f527 .
+doc:Factsdata1 None:has_text_value "real-time data" .
+_:b90a46326d9aa2160beb0ee27b4afb4e rdf:reifies <<( doc:Factsdata1 None:has_text_value "real-time data" )>> ;
+	prov:wasDerivedFrom doc:55cee847f527 .
+doc:Factsauthor2 schema1:name "Muhammad Hassan" .
+_:b877729cf129585e4d7165f72e2cddb0 rdf:reifies <<( doc:Factsauthor2 schema1:name "Muhammad Hassan" )>> ;
+	prov:wasDerivedFrom doc:55cee847f527 .
+doc:Fault_detection dcterms:subject doc:Factsprocess .
+_:d2f2ddac76cc84e6a46ef05d4365198b rdf:reifies <<( doc:Fault_detection dcterms:subject doc:Factsprocess )>> ;
+	prov:wasDerivedFrom doc:55cee847f527 .
+doc:Factsadaptability None:has_text_value "monitoring and troubleshooting complexity" .
+_:e9730d1dec6cefca9329434a3a23a620 rdf:reifies <<( doc:Factsadaptability None:has_text_value "monitoring and troubleshooting complexity" )>> ;
+	prov:wasDerivedFrom doc:55cee847f527 .
+doc:Factsadaptability None:has_text_value "digital twin" .
+_:a645660adeade341680cdeb82c5029f rdf:reifies <<( doc:Factsadaptability None:has_text_value "digital twin" )>> ;
+	prov:wasDerivedFrom doc:55cee847f527 .
+doc:9a4f1960f2c0 a prov:Entity , schema:text ;
+	prov:generatedAtTime "2026-07-12T21:49:31.513959Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+	schema:position 1 ;
+	schema:identifier "9a4f1960f2c0" .
+doc:Fault_detection a None:Predictive_maintenance_module_function .
+_:dd0c5c044868e9ba6d2677f2179eb316 rdf:reifies <<( doc:Fault_detection rdf:type None:Predictive_maintenance_module_function )>> ;
+	prov:wasDerivedFrom doc:9a4f1960f2c0 .
+doc:FactsmaintenanceTeam a schema1:Organization .
+_:eac3346b498a812cb08feb308a37c0fd rdf:reifies <<( doc:FactsmaintenanceTeam rdf:type schema1:Organization )>> ;
+	prov:wasDerivedFrom doc:9a4f1960f2c0 .
+doc:Factsprocess a schema1:Thing .
+_:d69efe721880ee4058c2196825532555 rdf:reifies <<( doc:Factsprocess rdf:type schema1:Thing )>> ;
+	prov:wasDerivedFrom doc:9a4f1960f2c0 .
+_:b1c9dd30588b3568a7ee25fcc507c430 prov:wasDerivedFrom doc:9a4f1960f2c0 .
+_:a5cb682b512601a6f8b04424c57302dc prov:wasDerivedFrom doc:9a4f1960f2c0 .
+doc:FactsRootCause a doc:FactsRootCause .
+_:ccd504a7b5ce6cbd583ab3918556b137 rdf:reifies <<( doc:FactsRootCause rdf:type doc:FactsRootCause )>> ;
+	prov:wasDerivedFrom doc:9a4f1960f2c0 .
+doc:Factsprocess cd:has_part doc:Factsprocess .
+_:d37c773bee06698256a3ee2b59d628e6 rdf:reifies <<( doc:Factsprocess cd:has_part doc:Factsprocess )>> ;
+	prov:wasDerivedFrom doc:9a4f1960f2c0 .
+doc:FactsrealTimeData a schema1:DataFeed .
+_:bc8ea8d245e602d38fb918fcddffe0db rdf:reifies <<( doc:FactsrealTimeData rdf:type schema1:DataFeed )>> ;
+	prov:wasDerivedFrom doc:9a4f1960f2c0 .
+doc:FactsconfigurationData a schema1:PropertyValue .
+_:bcf94d5d309729e8bbe188078277724 rdf:reifies <<( doc:FactsconfigurationData rdf:type schema1:PropertyValue )>> ;
+	prov:wasDerivedFrom doc:9a4f1960f2c0 .
+doc:FactsrestorationOfTheProcess a doc:FactsRestorationEvent .
+_:b9b27a871eaf4b3f3aa6137578d3be20 rdf:reifies <<( doc:FactsrestorationOfTheProcess rdf:type doc:FactsRestorationEvent )>> ;
+	prov:wasDerivedFrom doc:9a4f1960f2c0 .
+doc:FactsunplannedDowntimes a schema1:Event .
+_:eedad2a32d59564bb168afd688451630 rdf:reifies <<( doc:FactsunplannedDowntimes rdf:type schema1:Event )>> ;
+	prov:wasDerivedFrom doc:9a4f1960f2c0 .
+doc:FactsconfigurationData a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Model_configuration> .
+_:b09c4b0061c30ba969d096dbaa2e1fbf rdf:reifies <<( doc:FactsconfigurationData rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Model_configuration> )>> ;
+	prov:wasDerivedFrom doc:9a4f1960f2c0 .
+doc:Fault_detection a None:Predictive_maintenance_model .
+_:b3dda9e6fe0c5990067a4a7613f16b8e rdf:reifies <<( doc:Fault_detection rdf:type None:Predictive_maintenance_model )>> ;
+	prov:wasDerivedFrom doc:9a4f1960f2c0 .
+doc:Factsprocess a doc:Factsprocess .
+_:e2aeca4bb61d96c2381d0652a9a1e8ab rdf:reifies <<( doc:Factsprocess rdf:type doc:Factsprocess )>> ;
+	prov:wasDerivedFrom doc:9a4f1960f2c0 .
+doc:FactstroubleshootingTime a schema1:Duration .
+_:a43af186e7a8c5be464dd839274f3923 rdf:reifies <<( doc:FactstroubleshootingTime rdf:type schema1:Duration )>> ;
+	prov:wasDerivedFrom doc:9a4f1960f2c0 .
+doc:FactslifecycleHistory a doc:FactsHistory .
+_:f394ad532b5ba16a9f2218f203688534 rdf:reifies <<( doc:FactslifecycleHistory rdf:type doc:FactsHistory )>> ;
+	prov:wasDerivedFrom doc:9a4f1960f2c0 .
+doc:Factsprocess a schema1:Event .
+_:b2566399e9fe67900a8469a0418060eb rdf:reifies <<( doc:Factsprocess rdf:type schema1:Event )>> ;
+	prov:wasDerivedFrom doc:9a4f1960f2c0 .
+_:f196da793893f0c60366be12357c0286 prov:wasDerivedFrom doc:9a4f1960f2c0 .
+doc:Fault_detection cd:has_predictive_maintenance_function doc:Fault_detection .
+_:a5f382b2b95a666f1a612686c8db7d20 rdf:reifies <<( doc:Fault_detection cd:has_predictive_maintenance_function doc:Fault_detection )>> ;
+	prov:wasDerivedFrom doc:9a4f1960f2c0 .
+doc:f7ec563fcae8 a prov:Entity , schema:text ;
+	prov:generatedAtTime "2026-07-12T21:49:31.515959Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+	schema:position 2 ;
+	schema:identifier "f7ec563fcae8" .
+doc:FactsrealWorldValidation rdfs:label "real-world validation"@en .
+_:b7c7cbfa692db27eccb316914dc8e26f rdf:reifies <<( doc:FactsrealWorldValidation rdfs:label "real-world validation"@en )>> ;
+	prov:wasDerivedFrom doc:f7ec563fcae8 .
+doc:Fault_detection a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Predictive_maintenance_model> .
+_:df554596bfcd1bd4528ebd093ee1235d rdf:reifies <<( doc:Fault_detection rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Predictive_maintenance_model> )>> ;
+	prov:wasDerivedFrom doc:f7ec563fcae8 .
+doc:Fault_detection cd:describes_configuration doc:Fault_detection .
+_:c1817e3ec757ab31054ee420e3aca2fa rdf:reifies <<( doc:Fault_detection cd:describes_configuration doc:Fault_detection )>> ;
+	prov:wasDerivedFrom doc:f7ec563fcae8 .
+_:a5cb682b512601a6f8b04424c57302dc prov:wasDerivedFrom doc:f7ec563fcae8 .
+doc:Factsadaptability rdfs:label "practical implementation"@en .
+_:c10d9e2069e4cadbf4e2eda8738aab04 rdf:reifies <<( doc:Factsadaptability rdfs:label "practical implementation"@en )>> ;
+	prov:wasDerivedFrom doc:f7ec563fcae8 .
+doc:Factscosts rdfs:label "costs"@en .
+_:cb221e48fbf8e0e9353aac709b4a2322 rdf:reifies <<( doc:Factscosts rdfs:label "costs"@en )>> ;
+	prov:wasDerivedFrom doc:f7ec563fcae8 .
+doc:Fault_detection rdfs:label "system-level DT"@en .
+_:afa97df3deceec20dbac10f62431f25b rdf:reifies <<( doc:Fault_detection rdfs:label "system-level DT"@en )>> ;
+	prov:wasDerivedFrom doc:f7ec563fcae8 .
+doc:Factsadaptability rdfs:label "adaptability"@en .
+_:de234cbe4e2dd5591b124a5c20326d88 rdf:reifies <<( doc:Factsadaptability rdfs:label "adaptability"@en )>> ;
+	prov:wasDerivedFrom doc:f7ec563fcae8 .
+doc:FactsconfigurationData rdfs:label "conceptual framework"@en .
+_:c9440282fc0ad563ec971323c5ef8006 rdf:reifies <<( doc:FactsconfigurationData rdfs:label "conceptual framework"@en )>> ;
+	prov:wasDerivedFrom doc:f7ec563fcae8 .
+doc:FactssosLevelDtType rdfs:label "system-of-systems digital twin"@en .
+_:a2fbdc7365ebfb4a61e4e8037bfa6ff6 rdf:reifies <<( doc:FactssosLevelDtType rdfs:label "system-of-systems digital twin"@en )>> ;
+	prov:wasDerivedFrom doc:f7ec563fcae8 .
+doc:Factsadaptability rdfs:label "practical deployment"@en .
+_:ff6aca65bbf3e210f213020bd04ed447 rdf:reifies <<( doc:Factsadaptability rdfs:label "practical deployment"@en )>> ;
+	prov:wasDerivedFrom doc:f7ec563fcae8 .
+doc:Fault_detection a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Model_configuration> .
+_:fd14a3a377b6eb4850a4235c313cb5e3 rdf:reifies <<( doc:Fault_detection rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Model_configuration> )>> ;
+	prov:wasDerivedFrom doc:f7ec563fcae8 .
+_:b1c9dd30588b3568a7ee25fcc507c430 prov:wasDerivedFrom doc:f7ec563fcae8 .
+_:b09c4b0061c30ba969d096dbaa2e1fbf prov:wasDerivedFrom doc:f7ec563fcae8 .
+doc:FactssustainabilityMetrics a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Performance_indicator> .
+_:eb575c73720a6aa9acddd09eaa5e289c rdf:reifies <<( doc:FactssustainabilityMetrics rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Performance_indicator> )>> ;
+	prov:wasDerivedFrom doc:f7ec563fcae8 .
+doc:Fault_detection cd:has_text_value "SoS-level DT" .
+_:c9f7a1090dbbf9cc1842f68252a022 rdf:reifies <<( doc:Fault_detection cd:has_text_value "SoS-level DT" )>> ;
+	prov:wasDerivedFrom doc:f7ec563fcae8 .
+doc:Factsprocess rdfs:label "Industry 4.0"@en .
+_:be204d00a10798da314b47401a1a745d rdf:reifies <<( doc:Factsprocess rdfs:label "Industry 4.0"@en )>> ;
+	prov:wasDerivedFrom doc:f7ec563fcae8 .
+doc:FactsinterconnectedSystems rdfs:label "interconnected systems"@en .
+_:df655c116c457a4c0514ff21e00ddbf6 rdf:reifies <<( doc:FactsinterconnectedSystems rdfs:label "interconnected systems"@en )>> ;
+	prov:wasDerivedFrom doc:f7ec563fcae8 .
+doc:FactsrootCauseAnalysis rdfs:label "root cause analysis"@en .
+_:e0001c4c7c1c6b2c7116a7e64c7d4fc3 rdf:reifies <<( doc:FactsrootCauseAnalysis rdfs:label "root cause analysis"@en )>> ;
+	prov:wasDerivedFrom doc:f7ec563fcae8 .
+doc:Fault_detection rdfs:label "SoS-level DT configuration"@en .
+_:e59e42f4f11900733718ed7e66f3348d rdf:reifies <<( doc:Fault_detection rdfs:label "SoS-level DT configuration"@en )>> ;
+	prov:wasDerivedFrom doc:f7ec563fcae8 .
+doc:Factsprocess rdfs:label "continuous industrial production process"@en .
+_:f2e2424e92db325405bc564a9cf7fd14 rdf:reifies <<( doc:Factsprocess rdfs:label "continuous industrial production process"@en )>> ;
+	prov:wasDerivedFrom doc:f7ec563fcae8 .
+doc:Fault_detection rdfs:label "SoS-level DT"@en .
+_:b6f48c575a3f5b38c4f910bef47e69c5 rdf:reifies <<( doc:Fault_detection rdfs:label "SoS-level DT"@en )>> ;
+	prov:wasDerivedFrom doc:f7ec563fcae8 .
+doc:FactsrealWorldValidation a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Design_detail> .
+_:d6aed0d47f46c4ab9a7e85cd10ad7af8 rdf:reifies <<( doc:FactsrealWorldValidation rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Design_detail> )>> ;
+	prov:wasDerivedFrom doc:f7ec563fcae8 .
+doc:Fault_detection cd:describes_type doc:FactssosLevelDtType .
+_:b514926320e05ce31e2b8bd6d6519845 rdf:reifies <<( doc:Fault_detection cd:describes_type doc:FactssosLevelDtType )>> ;
+	prov:wasDerivedFrom doc:f7ec563fcae8 .
+doc:FactsrealTimeData cd:has_text_value "real-time industrial process data" .
+_:daf63f6b1dc9e7ab26bd7de64e623c15 rdf:reifies <<( doc:FactsrealTimeData cd:has_text_value "real-time industrial process data" )>> ;
+	prov:wasDerivedFrom doc:f7ec563fcae8 .
+doc:FactsconfigurationData rdfs:label "theoretical foundation"@en .
+_:ab3efdb5c9f6fa94c4f4ef245a0fd7e9 rdf:reifies <<( doc:FactsconfigurationData rdfs:label "theoretical foundation"@en )>> ;
+	prov:wasDerivedFrom doc:f7ec563fcae8 .
+doc:Fault_detection a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Predictive_maintenance_system_module> .
+_:df48b7aa83947f5703301d6401c47595 rdf:reifies <<( doc:Fault_detection rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Predictive_maintenance_system_module> )>> ;
+	prov:wasDerivedFrom doc:f7ec563fcae8 .
+doc:Fault_detection rdfs:label "maintenance activities"@en .
+_:b4e89d2b50849404575bc1a24b3b0b8a rdf:reifies <<( doc:Fault_detection rdfs:label "maintenance activities"@en )>> ;
+	prov:wasDerivedFrom doc:f7ec563fcae8 .
+_:a5f382b2b95a666f1a612686c8db7d20 prov:wasDerivedFrom doc:f7ec563fcae8 .
+_:eedad2a32d59564bb168afd688451630 prov:wasDerivedFrom doc:f7ec563fcae8 .
+doc:FactsrealTimeData rdfs:label "real-time industrial process data"@en .
+_:b78705750d8ce8413c4741bb20a298c3 rdf:reifies <<( doc:FactsrealTimeData rdfs:label "real-time industrial process data"@en )>> ;
+	prov:wasDerivedFrom doc:f7ec563fcae8 .
+doc:Fault_detection cd:has_text_value "system-level DT" .
+_:ca482682c1bc982143a13f77be71e0c rdf:reifies <<( doc:Fault_detection cd:has_text_value "system-level DT" )>> ;
+	prov:wasDerivedFrom doc:f7ec563fcae8 .
+_:af63ededc2bf3602a9ab0b95d755d36b prov:wasDerivedFrom doc:f7ec563fcae8 .
+_:c51f812d4a23597832ba0785134d70e prov:wasDerivedFrom doc:f7ec563fcae8 .
+doc:Fault_detection cd:has_design_detail doc:Factsadaptability .
+_:f1f5d61df1b50b7e36464ffcb325fd4e rdf:reifies <<( doc:Fault_detection cd:has_design_detail doc:Factsadaptability )>> ;
+	prov:wasDerivedFrom doc:f7ec563fcae8 .
+doc:FactsunplannedDowntimes rdfs:label "unplanned downtimes"@en .
+_:f92e3c6dbdeb698d9e8adba416e1b1ba rdf:reifies <<( doc:FactsunplannedDowntimes rdfs:label "unplanned downtimes"@en )>> ;
+	prov:wasDerivedFrom doc:f7ec563fcae8 .
+doc:FactssosLevelDtType rdfs:label "system-level digital twin"@en .
+_:fb76b0ba9a0a277f0f282d52e7bed8f3 rdf:reifies <<( doc:FactssosLevelDtType rdfs:label "system-level digital twin"@en )>> ;
+	prov:wasDerivedFrom doc:f7ec563fcae8 .
+doc:FactsrootCauseAnalysis a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Fault_identification> .
+_:f98a0beeb33dc1e1fab17b0c3f8bd399 rdf:reifies <<( doc:FactsrootCauseAnalysis rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Fault_identification> )>> ;
+	prov:wasDerivedFrom doc:f7ec563fcae8 .
+doc:Fault_detection rdfs:label "system-level DT configuration"@en .
+_:dab1d907e7f9fccbab52e497e30e7d68 rdf:reifies <<( doc:Fault_detection rdfs:label "system-level DT configuration"@en )>> ;
+	prov:wasDerivedFrom doc:f7ec563fcae8 .
+doc:Fault_detection rdfs:label "deviation detection"@en .
+_:b3dc6588368b75fda1b8ea0a9c29475c rdf:reifies <<( doc:Fault_detection rdfs:label "deviation detection"@en )>> ;
+	prov:wasDerivedFrom doc:f7ec563fcae8 .
+doc:FactsinterconnectedSystems a schema1:Organization .
+_:d148fcb45e362e442155ae8ebb702a1a rdf:reifies <<( doc:FactsinterconnectedSystems rdf:type schema1:Organization )>> ;
+	prov:wasDerivedFrom doc:f7ec563fcae8 .
+doc:FactssustainabilityMetrics rdfs:label "sustainability metrics"@en .
+_:f0fe474b8edd8a9886a1032f002068cc rdf:reifies <<( doc:FactssustainabilityMetrics rdfs:label "sustainability metrics"@en )>> ;
+	prov:wasDerivedFrom doc:f7ec563fcae8 .
+doc:FactssosLevelDtType a owl:Class .
+_:d9e22048a20e31ab771876ffe6823177 rdf:reifies <<( doc:FactssosLevelDtType rdf:type owl:Class )>> ;
+	prov:wasDerivedFrom doc:f7ec563fcae8 .
+doc:Fault_detection a schema1:Action .
+_:f71632f06308c9e781d0f3c1584f4d13 rdf:reifies <<( doc:Fault_detection rdf:type schema1:Action )>> ;
+	prov:wasDerivedFrom doc:f7ec563fcae8 .
+_:d69efe721880ee4058c2196825532555 prov:wasDerivedFrom doc:f7ec563fcae8 .
+doc:Fault_detection rdfs:label "early failure detection"@en .
+_:cc635e30deaf7648a3fabc4c632f504c rdf:reifies <<( doc:Fault_detection rdfs:label "early failure detection"@en )>> ;
+	prov:wasDerivedFrom doc:f7ec563fcae8 .
+doc:FactsrealTimeData a schema1:Dataset .
+_:d998fa40afc33b2a5404f79e89a3de9e rdf:reifies <<( doc:FactsrealTimeData rdf:type schema1:Dataset )>> ;
+	prov:wasDerivedFrom doc:f7ec563fcae8 .
+doc:Factscosts a schema1:MonetaryAmount .
+_:a3784f7d4273e84b1210b2009db855c7 rdf:reifies <<( doc:Factscosts rdf:type schema1:MonetaryAmount )>> ;
+	prov:wasDerivedFrom doc:f7ec563fcae8 .

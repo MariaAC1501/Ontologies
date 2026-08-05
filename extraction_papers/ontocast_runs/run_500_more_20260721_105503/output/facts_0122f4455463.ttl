@@ -1,0 +1,593 @@
+@prefix None: <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD/seed#> .
+@prefix cco: <http://www.ontologyrepository.com/CommonCoreOntologies/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doc: <https://growgraph.dev/doc/0122f4455463/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix cd: <https://growgraph.dev/facts> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix schema: <https://schema.org/> .
+@prefix schema1: <http://schema.org/> .
+doc:cfe4f28ed074 a prov:Entity , schema:text ;
+	prov:generatedAtTime "2026-07-22T11:49:15.403687Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+	schema:position 0 ;
+	schema:identifier "cfe4f28ed074" .
+doc:Factsdoi1_86 None:has_text_value "Dynamic Vision-Based Non-Contact Rotating Machine Fault Diagnosis with EViT" .
+_:dacfdf3d9f7b715c1394e0a8030b999 rdf:reifies <<( doc:Factsdoi1_86 None:has_text_value "Dynamic Vision-Based Non-Contact Rotating Machine Fault Diagnosis with EViT" )>> ;
+	prov:wasDerivedFrom doc:cfe4f28ed074 .
+doc:Factsevit schema:name "EViT" .
+_:da7b29b056702c9adfd7a5a12dfc11ce rdf:reifies <<( doc:Factsevit schema:name "EViT" )>> ;
+	prov:wasDerivedFrom doc:cfe4f28ed074 .
+doc:Factsapplication1_2 a schema:CreativeWork .
+_:f8acd81725daeeb3d59f3afb9de7262e rdf:reifies <<( doc:Factsapplication1_2 rdf:type schema:CreativeWork )>> ;
+	prov:wasDerivedFrom doc:cfe4f28ed074 .
+doc:Factsarticle1_199 None:has_identifier doc:Factsdoi1_86 .
+_:f6255b6bf881ec130e77c77cb9478854 rdf:reifies <<( doc:Factsarticle1_199 None:has_identifier doc:Factsdoi1_86 )>> ;
+	prov:wasDerivedFrom doc:cfe4f28ed074 .
+doc:Factsmachine1_4 schema:name "rotating machines" .
+_:aad334e6825c0bbe66e4650fd3f66d3a rdf:reifies <<( doc:Factsmachine1_4 schema:name "rotating machines" )>> ;
+	prov:wasDerivedFrom doc:cfe4f28ed074 .
+doc:Factsarticle1_199 dcterms:creator doc:Factsauthor1_104 .
+_:cacba95dc7341bdc43c35b5bbf8ddad0 rdf:reifies <<( doc:Factsarticle1_199 dcterms:creator doc:Factsauthor1_104 )>> ;
+	prov:wasDerivedFrom doc:cfe4f28ed074 .
+doc:Factscnn_14 None:has_predictive_maintenance_function doc:Factsmethod1_37 .
+_:ee60e0db1566314d9c4411f649ac3345 rdf:reifies <<( doc:Factscnn_14 None:has_predictive_maintenance_function doc:Factsmethod1_37 )>> ;
+	prov:wasDerivedFrom doc:cfe4f28ed074 .
+doc:Factscamera1_2 cd:enables doc:FactsvibrationSensing .
+_:cc0b36c63881d81e0926af4939816f85 rdf:reifies <<( doc:Factscamera1_2 cd:enables doc:FactsvibrationSensing )>> ;
+	prov:wasDerivedFrom doc:cfe4f28ed074 .
+doc:Factsauthor1_104 schema:name "Cuiying Sun" .
+_:e6bf99acd20eab2ea570e7aceb650843 rdf:reifies <<( doc:Factsauthor1_104 schema:name "Cuiying Sun" )>> ;
+	prov:wasDerivedFrom doc:cfe4f28ed074 .
+doc:Factsauthor1_104 schema:affiliation doc:Factsorg1_31 .
+_:d1b17e600f68f8b8a5d8604439c1dc21 rdf:reifies <<( doc:Factsauthor1_104 schema:affiliation doc:Factsorg1_31 )>> ;
+	prov:wasDerivedFrom doc:cfe4f28ed074 .
+doc:Factsorg1_31 schema:name "Key Laboratory of Education Ministry for Modern Design and Rotor-Bearing System, Xi'an Jiaotong University" .
+_:c7330e277fe72984365bb7dbf55ac87f rdf:reifies <<( doc:Factsorg1_31 schema:name "Key Laboratory of Education Ministry for Modern Design and Rotor-Bearing System, Xi'an Jiaotong University" )>> ;
+	prov:wasDerivedFrom doc:cfe4f28ed074 .
+doc:Factsorg1_31 schema:name "State Key Laboratory of Engine and Powertrain System, Weichai Power Co., Ltd." .
+_:ef0f1069092b3dea08795ad5de33f430 rdf:reifies <<( doc:Factsorg1_31 schema:name "State Key Laboratory of Engine and Powertrain System, Weichai Power Co., Ltd." )>> ;
+	prov:wasDerivedFrom doc:cfe4f28ed074 .
+doc:Factsorg1_31 schema:address "Xi'an 710049, China" .
+_:cb34a8816b985fc32a2a4c14bda5fe23 rdf:reifies <<( doc:Factsorg1_31 schema:address "Xi'an 710049, China" )>> ;
+	prov:wasDerivedFrom doc:cfe4f28ed074 .
+doc:Factscamera1_2 a schema:Device .
+_:f59f02fa72227781c45387ca143c62c5 rdf:reifies <<( doc:Factscamera1_2 rdf:type schema:Device )>> ;
+	prov:wasDerivedFrom doc:cfe4f28ed074 .
+doc:Factsevit a None:Predictive_maintenance_model .
+_:ae3ab5fc0cea65cb496d016c021dc4b9 rdf:reifies <<( doc:Factsevit rdf:type None:Predictive_maintenance_model )>> ;
+	prov:wasDerivedFrom doc:cfe4f28ed074 .
+doc:Factsauthor1_104 schema:name "Xiang Li" .
+_:c38832eafcf2202c17be4dc4f9108140 rdf:reifies <<( doc:Factsauthor1_104 schema:name "Xiang Li" )>> ;
+	prov:wasDerivedFrom doc:cfe4f28ed074 .
+doc:Factsdoi1_86 a None:Article_title .
+_:cf6104cbf3bd7e626e09873a78b225b2 rdf:reifies <<( doc:Factsdoi1_86 rdf:type None:Article_title )>> ;
+	prov:wasDerivedFrom doc:cfe4f28ed074 .
+doc:Factsmethod1_37 cco:is_about doc:Factsmachine1_4 .
+_:a2fed2c4b8f305f0a0956fa54f70bbb6 rdf:reifies <<( doc:Factsmethod1_37 cco:is_about doc:Factsmachine1_4 )>> ;
+	prov:wasDerivedFrom doc:cfe4f28ed074 .
+doc:Factsauthor1_104 a schema:Person .
+_:f84f9c64116771f24032b0221ad51813 rdf:reifies <<( doc:Factsauthor1_104 rdf:type schema:Person )>> ;
+	prov:wasDerivedFrom doc:cfe4f28ed074 .
+doc:Factsmethod1_37 a None:Fault_detection .
+_:e122e41ff5bd0e56b90a61aaa84459c2 rdf:reifies <<( doc:Factsmethod1_37 rdf:type None:Fault_detection )>> ;
+	prov:wasDerivedFrom doc:cfe4f28ed074 .
+doc:Factsmethod1_37 schema:name "fault diagnosis" .
+_:c987d6ab8fe3b7e934f70c50dd968b36 rdf:reifies <<( doc:Factsmethod1_37 schema:name "fault diagnosis" )>> ;
+	prov:wasDerivedFrom doc:cfe4f28ed074 .
+doc:Factsyear1_156 None:has_interger_value 2024 .
+_:e7e2cf9b2cd7edfae288387774277af2 rdf:reifies <<( doc:Factsyear1_156 None:has_interger_value 2024 )>> ;
+	prov:wasDerivedFrom doc:cfe4f28ed074 .
+doc:Factsorg1_31 a schema:Organization .
+_:d97553a8a406df0850653709f177ddd3 rdf:reifies <<( doc:Factsorg1_31 rdf:type schema:Organization )>> ;
+	prov:wasDerivedFrom doc:cfe4f28ed074 .
+doc:Factshealth1_10 a None:Health_assessment .
+_:eef676be3e54c03df595d7c3503373f2 rdf:reifies <<( doc:Factshealth1_10 rdf:type None:Health_assessment )>> ;
+	prov:wasDerivedFrom doc:cfe4f28ed074 .
+doc:Factsevit rdfs:label "Eagle Vision Transformer" .
+_:cfd91915f642582fd14598cfc177af96 rdf:reifies <<( doc:Factsevit rdfs:label "Eagle Vision Transformer" )>> ;
+	prov:wasDerivedFrom doc:cfe4f28ed074 .
+doc:Factsauthor1_104 schema:email "lixiang@xjtu.edu.cn" .
+_:cf87eabfeaa6cf3121492d2fb37631d4 rdf:reifies <<( doc:Factsauthor1_104 schema:email "lixiang@xjtu.edu.cn" )>> ;
+	prov:wasDerivedFrom doc:cfe4f28ed074 .
+doc:Factscnn_14 a None:Predictive_maintenance_system_module .
+_:e48fa0ca5ad0cfb37e55e13697aa5e7e rdf:reifies <<( doc:Factscnn_14 rdf:type None:Predictive_maintenance_system_module )>> ;
+	prov:wasDerivedFrom doc:cfe4f28ed074 .
+doc:Factsmachine1_4 a None:Maintainable_item .
+_:ecb40ba186a8f59351237e46327f0e5d rdf:reifies <<( doc:Factsmachine1_4 rdf:type None:Maintainable_item )>> ;
+	prov:wasDerivedFrom doc:cfe4f28ed074 .
+doc:Factscamera1_2 schema:description "dynamic vision sensor" .
+_:e945e2438ff849098896301ba7c90503 rdf:reifies <<( doc:Factscamera1_2 schema:description "dynamic vision sensor" )>> ;
+	prov:wasDerivedFrom doc:cfe4f28ed074 .
+doc:Factsauthor1_104 schema:email "suncuiy@weichai.com" .
+_:b785f9ec44b51e63931ce51b237667ac rdf:reifies <<( doc:Factsauthor1_104 schema:email "suncuiy@weichai.com" )>> ;
+	prov:wasDerivedFrom doc:cfe4f28ed074 .
+doc:Factscamera1_2 schema:name "event-based camera" .
+_:a150e5d15ad30711c1674d3390dc5b09 rdf:reifies <<( doc:Factscamera1_2 schema:name "event-based camera" )>> ;
+	prov:wasDerivedFrom doc:cfe4f28ed074 .
+doc:Factsarticle1_199 None:has_title doc:Factsdoi1_86 .
+_:a386b9ec9cbcc6fa055bf58c9b247a14 rdf:reifies <<( doc:Factsarticle1_199 None:has_title doc:Factsdoi1_86 )>> ;
+	prov:wasDerivedFrom doc:cfe4f28ed074 .
+doc:Factsmethod1_37 schema:name "dynamic vision-based non-contact machine fault diagnosis method" .
+_:de548cb5f394eee3f5bca5f717da98e6 rdf:reifies <<( doc:Factsmethod1_37 schema:name "dynamic vision-based non-contact machine fault diagnosis method" )>> ;
+	prov:wasDerivedFrom doc:cfe4f28ed074 .
+doc:Factshealth1_10 schema:name "machine health assessment" .
+_:dbfcb1f4c90e9ef07cb049f9cb74672e rdf:reifies <<( doc:Factshealth1_10 schema:name "machine health assessment" )>> ;
+	prov:wasDerivedFrom doc:cfe4f28ed074 .
+doc:Factsapplication1_2 schema:name "predictive maintenance applications in smart manufacturing environments" .
+_:d441051184aee852729d6e50cc0ccf9d rdf:reifies <<( doc:Factsapplication1_2 schema:name "predictive maintenance applications in smart manufacturing environments" )>> ;
+	prov:wasDerivedFrom doc:cfe4f28ed074 .
+doc:FactsvibrationSensing a schema:Action .
+_:bff87decbfbf1426149bc4d65a59a051 rdf:reifies <<( doc:FactsvibrationSensing rdf:type schema:Action )>> ;
+	prov:wasDerivedFrom doc:cfe4f28ed074 .
+doc:Factsarticle1_199 None:has_publication_year doc:Factsyear1_156 .
+_:c1aee31042c0b49407473a27bfda7c9b rdf:reifies <<( doc:Factsarticle1_199 None:has_publication_year doc:Factsyear1_156 )>> ;
+	prov:wasDerivedFrom doc:cfe4f28ed074 .
+doc:Factsarticle1_199 a None:Predictive_Maintenance_Article .
+_:d7f219b2522c5787d01ab632eb20eda4 rdf:reifies <<( doc:Factsarticle1_199 rdf:type None:Predictive_Maintenance_Article )>> ;
+	prov:wasDerivedFrom doc:cfe4f28ed074 .
+doc:Factsorg1_31 schema:address "Weifang 261061, China" .
+_:f72863faafe4a5861e07147e3ec04c06 rdf:reifies <<( doc:Factsorg1_31 schema:address "Weifang 261061, China" )>> ;
+	prov:wasDerivedFrom doc:cfe4f28ed074 .
+doc:Factsdoi1_86 a None:Article_identifier .
+_:bc163b85a9abc558aadcbee8c4444fef rdf:reifies <<( doc:Factsdoi1_86 rdf:type None:Article_identifier )>> ;
+	prov:wasDerivedFrom doc:cfe4f28ed074 .
+doc:Factsyear1_156 a None:Publication_year .
+_:da8031393cdcb4c122daf8478fe6418 rdf:reifies <<( doc:Factsyear1_156 rdf:type None:Publication_year )>> ;
+	prov:wasDerivedFrom doc:cfe4f28ed074 .
+doc:Factscnn_14 None:has_predictive_maintenance_function doc:Factshealth1_10 .
+_:eee06c3f40277010508e46f06377d004 rdf:reifies <<( doc:Factscnn_14 None:has_predictive_maintenance_function doc:Factshealth1_10 )>> ;
+	prov:wasDerivedFrom doc:cfe4f28ed074 .
+doc:Factsmethod1_37 cco:is_about doc:Factsarticle1_199 .
+_:f69d0389a8ec21c0c95767f6093169dd rdf:reifies <<( doc:Factsmethod1_37 cco:is_about doc:Factsarticle1_199 )>> ;
+	prov:wasDerivedFrom doc:cfe4f28ed074 .
+doc:Factsauthor1_104 schema:name "Zhenning Jin" .
+_:a730032a8a549d6e2573364217a50f40 rdf:reifies <<( doc:Factsauthor1_104 schema:name "Zhenning Jin" )>> ;
+	prov:wasDerivedFrom doc:cfe4f28ed074 .
+doc:Factsarticle1_199 schema:name "Dynamic Vision-Based Non-Contact Rotating Machine Fault Diagnosis with EViT" .
+_:c965f91559d8e7114d7f4969961bebf7 rdf:reifies <<( doc:Factsarticle1_199 schema:name "Dynamic Vision-Based Non-Contact Rotating Machine Fault Diagnosis with EViT" )>> ;
+	prov:wasDerivedFrom doc:cfe4f28ed074 .
+doc:92c89c56d6b6 a prov:Entity , schema:text ;
+	prov:generatedAtTime "2026-07-22T11:49:15.40625Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+	schema:position 1 ;
+	schema:identifier "92c89c56d6b6" .
+_:dacfdf3d9f7b715c1394e0a8030b999 prov:wasDerivedFrom doc:92c89c56d6b6 .
+doc:Factscnn_14 rdfs:label "EViT model"@en .
+_:bddc780aa60f68b76ac2b927d64c9dc2 rdf:reifies <<( doc:Factscnn_14 rdfs:label "EViT model"@en )>> ;
+	prov:wasDerivedFrom doc:92c89c56d6b6 .
+doc:Factsarticle1_199 a None:Predictive_maintenance_system_module .
+_:f0fd12cd9419c3d3f3168b89e8e0d47e rdf:reifies <<( doc:Factsarticle1_199 rdf:type None:Predictive_maintenance_system_module )>> ;
+	prov:wasDerivedFrom doc:92c89c56d6b6 .
+doc:FactsnonContactMeasurement a None:Design_detail .
+_:d830274b0a3111fd80139520d1dab28 rdf:reifies <<( doc:FactsnonContactMeasurement rdf:type None:Design_detail )>> ;
+	prov:wasDerivedFrom doc:92c89c56d6b6 .
+doc:FactspublicationType a cco:DesignativeInformationContentEntity .
+_:c387ed4f871245eeb26a63ade6c53691 rdf:reifies <<( doc:FactspublicationType rdf:type cco:DesignativeInformationContentEntity )>> ;
+	prov:wasDerivedFrom doc:92c89c56d6b6 .
+doc:FactscontactSensor a cco:Artifact .
+_:bd6bed69be7eb8bd5f10df4b50cf9686 rdf:reifies <<( doc:FactscontactSensor rdf:type cco:Artifact )>> ;
+	prov:wasDerivedFrom doc:92c89c56d6b6 .
+doc:FactsdynamicMachineVisionData rdfs:label "dynamic machine vision data"@en .
+_:c8b5e89b53300edd8f1416e04ed41be2 rdf:reifies <<( doc:FactsdynamicMachineVisionData rdfs:label "dynamic machine vision data"@en )>> ;
+	prov:wasDerivedFrom doc:92c89c56d6b6 .
+_:bc163b85a9abc558aadcbee8c4444fef prov:wasDerivedFrom doc:92c89c56d6b6 .
+doc:Factsdoi1_86 None:has_text_value "10.3390/s25175472" .
+_:bc1ef35f39bdd5eb099e2c46ae7549a7 rdf:reifies <<( doc:Factsdoi1_86 None:has_text_value "10.3390/s25175472" )>> ;
+	prov:wasDerivedFrom doc:92c89c56d6b6 .
+doc:FactsvibrationAnalysis_6 rdfs:label "vibration analysis"@en .
+_:e6a1f23f061a8bd09aa606c6e83353b rdf:reifies <<( doc:FactsvibrationAnalysis_6 rdfs:label "vibration analysis"@en )>> ;
+	prov:wasDerivedFrom doc:92c89c56d6b6 .
+_:da8031393cdcb4c122daf8478fe6418 prov:wasDerivedFrom doc:92c89c56d6b6 .
+doc:FactscomputerVision_3 a cco:InformationContentEntity .
+_:a75d77230fb16b2d6c077c8578e782c9 rdf:reifies <<( doc:FactscomputerVision_3 rdf:type cco:InformationContentEntity )>> ;
+	prov:wasDerivedFrom doc:92c89c56d6b6 .
+doc:FactsrotatingMachine a None:Maintainable_item .
+_:d5c12d79265f1a4c4f4bdd0a0bfbc686 rdf:reifies <<( doc:FactsrotatingMachine rdf:type None:Maintainable_item )>> ;
+	prov:wasDerivedFrom doc:92c89c56d6b6 .
+doc:Factsevit rdfs:label "Eagle Vision Transformer"@en .
+_:c9feb6bea4a1e9aa2d196f2944875900 rdf:reifies <<( doc:Factsevit rdfs:label "Eagle Vision Transformer"@en )>> ;
+	prov:wasDerivedFrom doc:92c89c56d6b6 .
+doc:FactsnonContactMeasurement None:has_text_value "non-contact vibration measurement" .
+_:b7bb589b106e2e8d362a3bf46941c9b1 rdf:reifies <<( doc:FactsnonContactMeasurement None:has_text_value "non-contact vibration measurement" )>> ;
+	prov:wasDerivedFrom doc:92c89c56d6b6 .
+doc:Factscnn_14 a None:Predictive_maintenance_model .
+_:d68233dcdc969775dea171353d7c789b rdf:reifies <<( doc:Factscnn_14 rdf:type None:Predictive_maintenance_model )>> ;
+	prov:wasDerivedFrom doc:92c89c56d6b6 .
+_:cf6104cbf3bd7e626e09873a78b225b2 prov:wasDerivedFrom doc:92c89c56d6b6 .
+doc:Factsyear1_156 None:has_interger_value 2025 .
+_:e8df06f59c8dbeab1c10042fbc518eb5 rdf:reifies <<( doc:Factsyear1_156 None:has_interger_value 2025 )>> ;
+	prov:wasDerivedFrom doc:92c89c56d6b6 .
+doc:FactseventData rdfs:label "event data"@en .
+_:b5841ff4696ba228b4b881413e0ea742 rdf:reifies <<( doc:FactseventData rdfs:label "event data"@en )>> ;
+	prov:wasDerivedFrom doc:92c89c56d6b6 .
+doc:FactsrotatingMachine rdfs:label "rotating machine"@en .
+_:fd6e4de2bd0fa9c2ae7c6c062ae9db6c rdf:reifies <<( doc:FactsrotatingMachine rdfs:label "rotating machine"@en )>> ;
+	prov:wasDerivedFrom doc:92c89c56d6b6 .
+doc:FactsvibrationAnalysis_6 a None:Data_variable .
+_:dcdf53a4471a03c183dd31156d600d31 rdf:reifies <<( doc:FactsvibrationAnalysis_6 rdf:type None:Data_variable )>> ;
+	prov:wasDerivedFrom doc:92c89c56d6b6 .
+doc:Factsarticle1_199 schema1:dateRevised "2025-08-18"^^<http://www.w3.org/2001/XMLSchema#date> .
+_:a4b7f80e5ba7280e6427a63fe0c127cf rdf:reifies <<( doc:Factsarticle1_199 schema1:dateRevised "2025-08-18"^^<http://www.w3.org/2001/XMLSchema#date> )>> ;
+	prov:wasDerivedFrom doc:92c89c56d6b6 .
+doc:Factsaccelerometer_1 a cco:Artifact .
+_:a7c17a27790dabda862304124fea67bd rdf:reifies <<( doc:Factsaccelerometer_1 rdf:type cco:Artifact )>> ;
+	prov:wasDerivedFrom doc:92c89c56d6b6 .
+doc:FactspublicationType rdfs:label "open access article"@en .
+_:b7eb14bd48f956e6707137ee0a8e8fb0 rdf:reifies <<( doc:FactspublicationType rdfs:label "open access article"@en )>> ;
+	prov:wasDerivedFrom doc:92c89c56d6b6 .
+_:e122e41ff5bd0e56b90a61aaa84459c2 prov:wasDerivedFrom doc:92c89c56d6b6 .
+doc:Factsevit cco:is_about doc:FactseventData .
+_:f239e932a12befa4c115dbbf692f6a4f rdf:reifies <<( doc:Factsevit cco:is_about doc:FactseventData )>> ;
+	prov:wasDerivedFrom doc:92c89c56d6b6 .
+_:a386b9ec9cbcc6fa055bf58c9b247a14 prov:wasDerivedFrom doc:92c89c56d6b6 .
+doc:Factsarticle1_199 dcterms:issued "2025-09-03"^^<http://www.w3.org/2001/XMLSchema#date> .
+_:c048765a939be6487790b2b22c7cb641 rdf:reifies <<( doc:Factsarticle1_199 dcterms:issued "2025-09-03"^^<http://www.w3.org/2001/XMLSchema#date> )>> ;
+	prov:wasDerivedFrom doc:92c89c56d6b6 .
+doc:FactspublicationType cco:designates doc:Factsarticle1_199 .
+_:db5cb5133915e75e1881be37f70161dc rdf:reifies <<( doc:FactspublicationType cco:designates doc:Factsarticle1_199 )>> ;
+	prov:wasDerivedFrom doc:92c89c56d6b6 .
+doc:Factsarticle1_199 rdfs:label "Dynamic Vision-Based Non-Contact Rotating Machine Fault Diagnosis with EViT"@en .
+_:b2c167bde8a205f7c0fce4fb27f2072d rdf:reifies <<( doc:Factsarticle1_199 rdfs:label "Dynamic Vision-Based Non-Contact Rotating Machine Fault Diagnosis with EViT"@en )>> ;
+	prov:wasDerivedFrom doc:92c89c56d6b6 .
+doc:Factsarticle1_199 rdfs:label "vision-based non-contact rotating machine fault diagnosis"@en .
+_:a2dfadcfdd202592d03976c4d59e2fe1 rdf:reifies <<( doc:Factsarticle1_199 rdfs:label "vision-based non-contact rotating machine fault diagnosis"@en )>> ;
+	prov:wasDerivedFrom doc:92c89c56d6b6 .
+doc:FactscontactSensor rdfs:label "contact sensor"@en .
+_:e44398b721eddcc786a8a91cf1cacaa0 rdf:reifies <<( doc:FactscontactSensor rdfs:label "contact sensor"@en )>> ;
+	prov:wasDerivedFrom doc:92c89c56d6b6 .
+doc:FactscontactSensor None:has_text_value "event-based or laser sensor" .
+_:e91618d0ed0dbe16a98eee3e672ab819 rdf:reifies <<( doc:FactscontactSensor None:has_text_value "event-based or laser sensor" )>> ;
+	prov:wasDerivedFrom doc:92c89c56d6b6 .
+doc:FactsnonContactMeasurement None:has_text_value "minimally contact vibration measurement" .
+_:aae9feb24456d837fa998f5afa575da3 rdf:reifies <<( doc:FactsnonContactMeasurement None:has_text_value "minimally contact vibration measurement" )>> ;
+	prov:wasDerivedFrom doc:92c89c56d6b6 .
+doc:Factsarticle1_199 None:has_predictive_maintenance_function doc:Factsmethod1_37 .
+_:a7fa833b235d4f9ed1fcf891a2a01db2 rdf:reifies <<( doc:Factsarticle1_199 None:has_predictive_maintenance_function doc:Factsmethod1_37 )>> ;
+	prov:wasDerivedFrom doc:92c89c56d6b6 .
+doc:FactsdynamicMachineVisionData a None:Data_variable .
+_:c51550813bc5a97eb4432fd3f0049e2f rdf:reifies <<( doc:FactsdynamicMachineVisionData rdf:type None:Data_variable )>> ;
+	prov:wasDerivedFrom doc:92c89c56d6b6 .
+doc:Factscnn_14 rdfs:label "Convolutional Neural Network"@en .
+_:b91cc3e2ce43e864504d0a329dc6b94a rdf:reifies <<( doc:Factscnn_14 rdfs:label "Convolutional Neural Network"@en )>> ;
+	prov:wasDerivedFrom doc:92c89c56d6b6 .
+_:d7f219b2522c5787d01ab632eb20eda4 prov:wasDerivedFrom doc:92c89c56d6b6 .
+doc:FactseventData a None:Data_variable .
+_:aaebe53c55e798b47ff5ead4dfff530e rdf:reifies <<( doc:FactseventData rdf:type None:Data_variable )>> ;
+	prov:wasDerivedFrom doc:92c89c56d6b6 .
+doc:FactsdynamicMachineVisionData cco:is_about doc:FactseventData .
+_:a77945e0f26887656779e5d1840adcd0 rdf:reifies <<( doc:FactsdynamicMachineVisionData cco:is_about doc:FactseventData )>> ;
+	prov:wasDerivedFrom doc:92c89c56d6b6 .
+doc:Factsarticle1_199 schema1:dateAccepted "2025-09-02"^^<http://www.w3.org/2001/XMLSchema#date> .
+_:e42b479575574a88d13ba21d44e1fd0e rdf:reifies <<( doc:Factsarticle1_199 schema1:dateAccepted "2025-09-02"^^<http://www.w3.org/2001/XMLSchema#date> )>> ;
+	prov:wasDerivedFrom doc:92c89c56d6b6 .
+doc:Factsarticle1_199 None:has_design_detail doc:FactsnonContactMeasurement .
+_:c012446ec93a048b0f2cc5d062513d3c rdf:reifies <<( doc:Factsarticle1_199 None:has_design_detail doc:FactsnonContactMeasurement )>> ;
+	prov:wasDerivedFrom doc:92c89c56d6b6 .
+doc:Factscnn_14 cco:is_about doc:FactscomputerVision_3 .
+_:b2fbcf268c23fc14872183453bdf5d93 rdf:reifies <<( doc:Factscnn_14 cco:is_about doc:FactscomputerVision_3 )>> ;
+	prov:wasDerivedFrom doc:92c89c56d6b6 .
+doc:Factsaccelerometer_1 rdfs:label "accelerometer"@en .
+_:cafb67c92f90ad5902832833023aae1f rdf:reifies <<( doc:Factsaccelerometer_1 rdfs:label "accelerometer"@en )>> ;
+	prov:wasDerivedFrom doc:92c89c56d6b6 .
+doc:Factsmethod1_37 rdfs:label "fault diagnosis"@en .
+_:f5a4ed01b4f2aabc0a39d5e60bf76dd7 rdf:reifies <<( doc:Factsmethod1_37 rdfs:label "fault diagnosis"@en )>> ;
+	prov:wasDerivedFrom doc:92c89c56d6b6 .
+doc:Factsarticle1_199 schema1:dateReceived "2025-07-30"^^<http://www.w3.org/2001/XMLSchema#date> .
+_:e23953dd385ce7660fbb8bab2e5dae3a rdf:reifies <<( doc:Factsarticle1_199 schema1:dateReceived "2025-07-30"^^<http://www.w3.org/2001/XMLSchema#date> )>> ;
+	prov:wasDerivedFrom doc:92c89c56d6b6 .
+doc:Factsmethod1_37 cco:is_about doc:FactsrotatingMachine .
+_:e5ede286af3dece9e8a4e86c7a03afb3 rdf:reifies <<( doc:Factsmethod1_37 cco:is_about doc:FactsrotatingMachine )>> ;
+	prov:wasDerivedFrom doc:92c89c56d6b6 .
+_:ae3ab5fc0cea65cb496d016c021dc4b9 prov:wasDerivedFrom doc:92c89c56d6b6 .
+_:c1aee31042c0b49407473a27bfda7c9b prov:wasDerivedFrom doc:92c89c56d6b6 .
+doc:FactscontactSensor rdfs:label "non-contact sensor"@en .
+_:f9a1d9384d62cd91fefa5441a315a081 rdf:reifies <<( doc:FactscontactSensor rdfs:label "non-contact sensor"@en )>> ;
+	prov:wasDerivedFrom doc:92c89c56d6b6 .
+doc:Factscnn_14 cco:is_about doc:FactseventData .
+_:c5531e1aaff8b88a8eae9a64ea4897bb rdf:reifies <<( doc:Factscnn_14 cco:is_about doc:FactseventData )>> ;
+	prov:wasDerivedFrom doc:92c89c56d6b6 .
+doc:FactscomputerVision_3 rdfs:label "computer vision"@en .
+_:f037183e7ece5a8deeba3b7c0f3db671 rdf:reifies <<( doc:FactscomputerVision_3 rdfs:label "computer vision"@en )>> ;
+	prov:wasDerivedFrom doc:92c89c56d6b6 .
+_:f6255b6bf881ec130e77c77cb9478854 prov:wasDerivedFrom doc:92c89c56d6b6 .
+doc:52724b8de30c a prov:Entity , schema:text ;
+	prov:generatedAtTime "2026-07-22T11:49:15.40825Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+	schema:position 2 ;
+	schema:identifier "52724b8de30c" .
+doc:FactslowLatency_1 a schema:Duration .
+_:c380e69ffb8809fd2643b2e2251ec3d7 rdf:reifies <<( doc:FactslowLatency_1 rdf:type schema:Duration )>> ;
+	prov:wasDerivedFrom doc:52724b8de30c .
+doc:FactslowLatency_1 a schema:PropertyValue .
+_:bdcf47483f21085353e35caa992ba47f rdf:reifies <<( doc:FactslowLatency_1 rdf:type schema:PropertyValue )>> ;
+	prov:wasDerivedFrom doc:52724b8de30c .
+doc:FactsparallelInformationProcessing rdfs:label "parallel information processing"@en .
+_:a3942ac3ede6e09abe7cdecde7dff4ae rdf:reifies <<( doc:FactsparallelInformationProcessing rdfs:label "parallel information processing"@en )>> ;
+	prov:wasDerivedFrom doc:52724b8de30c .
+doc:Factsframe_rate_10kHz schema:value 120 .
+_:ed1e57760893a2c4d23488d4ec8ec901 rdf:reifies <<( doc:Factsframe_rate_10kHz schema:value 120 )>> ;
+	prov:wasDerivedFrom doc:52724b8de30c .
+doc:FactseventBasedCamera cd:achieves_power_reduction doc:Factspower_reduction_10_100x .
+_:b6d2994aa52a32cd65b26ced0901d1a9 rdf:reifies <<( doc:FactseventBasedCamera cd:achieves_power_reduction doc:Factspower_reduction_10_100x )>> ;
+	prov:wasDerivedFrom doc:52724b8de30c .
+doc:FactsBfviStructure cd:has_quality doc:FactsparallelInformationProcessing .
+_:bf9dce759ce3e20668bde633e6305be0 rdf:reifies <<( doc:FactsBfviStructure cd:has_quality doc:FactsparallelInformationProcessing )>> ;
+	prov:wasDerivedFrom doc:52724b8de30c .
+doc:Factscnn_14 cd:has_design_detail doc:FactsBffn .
+_:b985e1dc24153b5ce2441f496b9d4f67 rdf:reifies <<( doc:Factscnn_14 cd:has_design_detail doc:FactsBffn )>> ;
+	prov:wasDerivedFrom doc:52724b8de30c .
+doc:Factspower_reduction_10_100x schema:maxValue 100 .
+_:c6df4d078c134c7aab4e4f65068e2924 rdf:reifies <<( doc:Factspower_reduction_10_100x schema:maxValue 100 )>> ;
+	prov:wasDerivedFrom doc:52724b8de30c .
+doc:FactseventBasedCamera cd:offers_advantage doc:FactslowLatency_1 .
+_:cd23d7b6d75fab9ca7d860d4a431bcdc rdf:reifies <<( doc:FactseventBasedCamera cd:offers_advantage doc:FactslowLatency_1 )>> ;
+	prov:wasDerivedFrom doc:52724b8de30c .
+doc:FactsautonomousForklifts a schema:Thing .
+_:b1da521498dd9cf2ee342c334c7dd1ad rdf:reifies <<( doc:FactsautonomousForklifts rdf:type schema:Thing )>> ;
+	prov:wasDerivedFrom doc:52724b8de30c .
+doc:FactsBffn cd:mimics doc:FactsbiologicalVisualCortex .
+_:a46eef66f324fc108eb52dc0b6b27522 rdf:reifies <<( doc:FactsBffn cd:mimics doc:FactsbiologicalVisualCortex )>> ;
+	prov:wasDerivedFrom doc:52724b8de30c .
+doc:FactseventBasedCamera rdfs:label "event-based camera"@en .
+_:dc5e1cc5dcd821da0aca3c1047295848 rdf:reifies <<( doc:FactseventBasedCamera rdfs:label "event-based camera"@en )>> ;
+	prov:wasDerivedFrom doc:52724b8de30c .
+doc:FactseventBasedCamera cd:records doc:FactslowLatency_1 .
+_:ba4952a4a08901f93e16315601cd5a78 rdf:reifies <<( doc:FactseventBasedCamera cd:records doc:FactslowLatency_1 )>> ;
+	prov:wasDerivedFrom doc:52724b8de30c .
+doc:Factscnn_14 rdfs:label "EViTs"@en .
+_:dfcb9bcc302710c5a33b6045513356a7 rdf:reifies <<( doc:Factscnn_14 rdfs:label "EViTs"@en )>> ;
+	prov:wasDerivedFrom doc:52724b8de30c .
+doc:Factsconvolution rdfs:label "convolution"@en .
+_:b56858725d4db2e5e76a8ae967f18b6a rdf:reifies <<( doc:Factsconvolution rdfs:label "convolution"@en )>> ;
+	prov:wasDerivedFrom doc:52724b8de30c .
+doc:FactslowLatency_1 a schema:Thing .
+_:c3e24198e2cf9da362333779ab13a372 rdf:reifies <<( doc:FactslowLatency_1 rdf:type schema:Thing )>> ;
+	prov:wasDerivedFrom doc:52724b8de30c .
+doc:Factsframe_rate_10kHz a schema:QuantitativeValue .
+_:da21323f1f935277820e8305768758bc rdf:reifies <<( doc:Factsframe_rate_10kHz rdf:type schema:QuantitativeValue )>> ;
+	prov:wasDerivedFrom doc:52724b8de30c .
+doc:Factsconvolution a schema:Thing .
+_:a8f3bc975ca0cd8a92bd519048a7f70b rdf:reifies <<( doc:Factsconvolution rdf:type schema:Thing )>> ;
+	prov:wasDerivedFrom doc:52724b8de30c .
+doc:FactseventBasedCamera schema:additionalType None:Predictive_maintenance_system_module .
+_:e028d2eb5d2ea0a4e56bc884baa1a235 rdf:reifies <<( doc:FactseventBasedCamera schema:additionalType None:Predictive_maintenance_system_module )>> ;
+	prov:wasDerivedFrom doc:52724b8de30c .
+doc:FactsparallelArchitecture a schema:Thing .
+_:d7e48c2a109542751304f4eec4ac432a rdf:reifies <<( doc:FactsparallelArchitecture rdf:type schema:Thing )>> ;
+	prov:wasDerivedFrom doc:52724b8de30c .
+doc:Factsframe_rate_10kHz schema:unitText "kHz equivalent frame rate" .
+_:fef4bd63caecbfabb8589caf6847c949 rdf:reifies <<( doc:Factsframe_rate_10kHz schema:unitText "kHz equivalent frame rate" )>> ;
+	prov:wasDerivedFrom doc:52724b8de30c .
+doc:FactseventBasedCamera cd:has_frame_rate_equivalent doc:Factsframe_rate_10kHz .
+_:d8ccb11dac71ee22357f26ba94670e23 rdf:reifies <<( doc:FactseventBasedCamera cd:has_frame_rate_equivalent doc:Factsframe_rate_10kHz )>> ;
+	prov:wasDerivedFrom doc:52724b8de30c .
+doc:FactseventBasedCamera schema:description "asynchronous sensor"@en .
+_:bc59f7776da612543a0b878f49edd37b rdf:reifies <<( doc:FactseventBasedCamera schema:description "asynchronous sensor"@en )>> ;
+	prov:wasDerivedFrom doc:52724b8de30c .
+doc:FactssparseTimestampedEvents rdfs:label "sparse, timestamped events"@en .
+_:b91e114357e026a800de163253d7e21e rdf:reifies <<( doc:FactssparseTimestampedEvents rdfs:label "sparse, timestamped events"@en )>> ;
+	prov:wasDerivedFrom doc:52724b8de30c .
+doc:FactsBfviStructure a None:Design_detail .
+_:e1a7b53de2c97c7ff64f7b77341824d3 rdf:reifies <<( doc:FactsBfviStructure rdf:type None:Design_detail )>> ;
+	prov:wasDerivedFrom doc:52724b8de30c .
+doc:FactsBffn rdfs:label "Bi-Fovea Feedforward Network (BFFN)"@en .
+_:cb9de38515ad212b2fbed6da828d872d rdf:reifies <<( doc:FactsBffn rdfs:label "Bi-Fovea Feedforward Network (BFFN)"@en )>> ;
+	prov:wasDerivedFrom doc:52724b8de30c .
+doc:FactseventBasedCamera cd:used_in doc:FactsautonomousForklifts .
+_:c6a3b0b400e108e00cf95e4526d84a97 rdf:reifies <<( doc:FactseventBasedCamera cd:used_in doc:FactsautonomousForklifts )>> ;
+	prov:wasDerivedFrom doc:52724b8de30c .
+doc:FactseventBasedCamera cd:used_in doc:FactsindustrialApplications .
+_:cb4b9f9888aea2c01894170e4cb0a3f4 rdf:reifies <<( doc:FactseventBasedCamera cd:used_in doc:FactsindustrialApplications )>> ;
+	prov:wasDerivedFrom doc:52724b8de30c .
+doc:FactslowLatency_1 cd:has_text_value "below 1 ms" .
+_:ab2bce08e10e89c7efe79e4a2463a8da rdf:reifies <<( doc:FactslowLatency_1 cd:has_text_value "below 1 ms" )>> ;
+	prov:wasDerivedFrom doc:52724b8de30c .
+doc:FactshierarchicalOrganization a schema:Thing .
+_:ddea0c40509aa665147337e775ec5a9b rdf:reifies <<( doc:FactshierarchicalOrganization rdf:type schema:Thing )>> ;
+	prov:wasDerivedFrom doc:52724b8de30c .
+doc:FactsBffn a None:Design_detail .
+_:d8b4817110862b251a24a46c18a15a2e rdf:reifies <<( doc:FactsBffn rdf:type None:Design_detail )>> ;
+	prov:wasDerivedFrom doc:52724b8de30c .
+doc:FactseventBasedCamera cd:supports_application doc:FactshighSpeedCounting .
+_:ab691dd9b1c1b1c5b9f4cf7db23b7f6e rdf:reifies <<( doc:FactseventBasedCamera cd:supports_application doc:FactshighSpeedCounting )>> ;
+	prov:wasDerivedFrom doc:52724b8de30c .
+doc:FactsdroneVision a schema:Thing .
+_:baea4f1bb423475bf8356d9c9ab8e7c8 rdf:reifies <<( doc:FactsdroneVision rdf:type schema:Thing )>> ;
+	prov:wasDerivedFrom doc:52724b8de30c .
+doc:FactsautonomousForklifts rdfs:label "autonomous forklifts"@en .
+_:f331d7a37b677e730e89e3944f94f0bb rdf:reifies <<( doc:FactsautonomousForklifts rdfs:label "autonomous forklifts"@en )>> ;
+	prov:wasDerivedFrom doc:52724b8de30c .
+doc:Factsframe_rate_10kHz schema:unitText "dB" .
+_:d3098d074dee9290ceb6c616d49a7188 rdf:reifies <<( doc:Factsframe_rate_10kHz schema:unitText "dB" )>> ;
+	prov:wasDerivedFrom doc:52724b8de30c .
+doc:FactsdroneVision rdfs:label "drone vision"@en .
+_:d1875597bfca93704e617a6f5fffc6e0 rdf:reifies <<( doc:FactsdroneVision rdfs:label "drone vision"@en )>> ;
+	prov:wasDerivedFrom doc:52724b8de30c .
+doc:FactsBfsaMechanism cd:mimics doc:FactsbiologicalVisualCortex .
+_:b6c22a07bcf80ea26dbe6b367d55629b rdf:reifies <<( doc:FactsBfsaMechanism cd:mimics doc:FactsbiologicalVisualCortex )>> ;
+	prov:wasDerivedFrom doc:52724b8de30c .
+doc:Factscnn_14 cd:has_design_detail doc:FactsBfviStructure .
+_:ee9a736308a2815ffa60cdcb15946ded rdf:reifies <<( doc:Factscnn_14 cd:has_design_detail doc:FactsBfviStructure )>> ;
+	prov:wasDerivedFrom doc:52724b8de30c .
+doc:FactshighSpeedCounting rdfs:label "high-speed counting"@en .
+_:f6b5828923aff864baddabe3abca7dec rdf:reifies <<( doc:FactshighSpeedCounting rdfs:label "high-speed counting"@en )>> ;
+	prov:wasDerivedFrom doc:52724b8de30c .
+doc:FactsbiologicalVisualCortex rdfs:label "biological visual cortex"@en .
+_:b9d70e1e78dc266c6292aba27235e7a1 rdf:reifies <<( doc:FactsbiologicalVisualCortex rdfs:label "biological visual cortex"@en )>> ;
+	prov:wasDerivedFrom doc:52724b8de30c .
+doc:FactseventBasedCamera cd:has_dynamic_range doc:Factsframe_rate_10kHz .
+_:a51d9c2cb18510463c41fac2b92b4bce rdf:reifies <<( doc:FactseventBasedCamera cd:has_dynamic_range doc:Factsframe_rate_10kHz )>> ;
+	prov:wasDerivedFrom doc:52724b8de30c .
+doc:FactseventBasedCamera cd:detects doc:FactslowLatency_1 .
+_:c9f85777f679759392c502c2f0f5baa5 rdf:reifies <<( doc:FactseventBasedCamera cd:detects doc:FactslowLatency_1 )>> ;
+	prov:wasDerivedFrom doc:52724b8de30c .
+_:e48fa0ca5ad0cfb37e55e13697aa5e7e prov:wasDerivedFrom doc:52724b8de30c .
+doc:FactsparallelArchitecture rdfs:label "parallel architecture"@en .
+_:aedb703325ce6b8a7a2a7b95bf3ecfa0 rdf:reifies <<( doc:FactsparallelArchitecture rdfs:label "parallel architecture"@en )>> ;
+	prov:wasDerivedFrom doc:52724b8de30c .
+doc:FactslowLatency_1 cd:has_text_value "microsecond-level" .
+_:b07fe7d6e602db3b01f13b60611e2286 rdf:reifies <<( doc:FactslowLatency_1 cd:has_text_value "microsecond-level" )>> ;
+	prov:wasDerivedFrom doc:52724b8de30c .
+doc:FactseagleEyeCharacteristics a schema:Thing .
+_:ac173a568195336731ffa4c4e0dac3 rdf:reifies <<( doc:FactseagleEyeCharacteristics rdf:type schema:Thing )>> ;
+	prov:wasDerivedFrom doc:52724b8de30c .
+doc:FactseventBasedCamera cd:used_in doc:FactssteelMills .
+_:db7f6f928fa6682febb06831a5ca0aa9 rdf:reifies <<( doc:FactseventBasedCamera cd:used_in doc:FactssteelMills )>> ;
+	prov:wasDerivedFrom doc:52724b8de30c .
+doc:FactseventBasedCamera cd:used_in doc:FactshighSpeedSpindles .
+_:aa9af9cc365e59ecaef52785e0b47843 rdf:reifies <<( doc:FactseventBasedCamera cd:used_in doc:FactshighSpeedSpindles )>> ;
+	prov:wasDerivedFrom doc:52724b8de30c .
+doc:FactsmotionRecognition a schema:Thing .
+_:c1955c0278c568ff89b44fa9b2bc196d rdf:reifies <<( doc:FactsmotionRecognition rdf:type schema:Thing )>> ;
+	prov:wasDerivedFrom doc:52724b8de30c .
+doc:FactsvisionData a schema:Dataset .
+_:f89ed7234c53a3ea84872ad728c06148 rdf:reifies <<( doc:FactsvisionData rdf:type schema:Dataset )>> ;
+	prov:wasDerivedFrom doc:52724b8de30c .
+doc:FactsindustrialApplications rdfs:label "industrial applications"@en .
+_:edd807c9e6541bedff8d06e7520d6117 rdf:reifies <<( doc:FactsindustrialApplications rdfs:label "industrial applications"@en )>> ;
+	prov:wasDerivedFrom doc:52724b8de30c .
+doc:FactsbiologicalVisualCortex a schema:Thing .
+_:eff31f6d5bd3749b1bfbffe1e66ae1d1 rdf:reifies <<( doc:FactsbiologicalVisualCortex rdf:type schema:Thing )>> ;
+	prov:wasDerivedFrom doc:52724b8de30c .
+doc:FactsindustrialApplications a schema:Thing .
+_:f822b27705618819142937dda67778bd rdf:reifies <<( doc:FactsindustrialApplications rdf:type schema:Thing )>> ;
+	prov:wasDerivedFrom doc:52724b8de30c .
+doc:FactsBfsaMechanism rdfs:label "BiFovea Self-Attention (BFSA)"@en .
+_:e17529f8b1cb53911be029781c64b08 rdf:reifies <<( doc:FactsBfsaMechanism rdfs:label "BiFovea Self-Attention (BFSA)"@en )>> ;
+	prov:wasDerivedFrom doc:52724b8de30c .
+doc:FactsBfviStructure cd:combines doc:FactsparallelArchitecture .
+_:da17ceac90f8a56bdf67ad1d7084449c rdf:reifies <<( doc:FactsBfviStructure cd:combines doc:FactsparallelArchitecture )>> ;
+	prov:wasDerivedFrom doc:52724b8de30c .
+doc:FactssteelMills rdfs:label "steel mills"@en .
+_:b141bcb8a3eac8d7950c3b948568ffd4 rdf:reifies <<( doc:FactssteelMills rdfs:label "steel mills"@en )>> ;
+	prov:wasDerivedFrom doc:52724b8de30c .
+doc:Factspower_reduction_10_100x schema:minValue 10 .
+_:d20d4b26961826b2c0e441c00bdc933f rdf:reifies <<( doc:Factspower_reduction_10_100x schema:minValue 10 )>> ;
+	prov:wasDerivedFrom doc:52724b8de30c .
+doc:Factscnn_14 cd:integrates doc:FactsvisionTransformerArchitecture .
+_:e4924cb5d2f370e6dba529b03e2d7746 rdf:reifies <<( doc:Factscnn_14 cd:integrates doc:FactsvisionTransformerArchitecture )>> ;
+	prov:wasDerivedFrom doc:52724b8de30c .
+doc:Factspower_reduction_10_100x a schema:QuantitativeValue .
+_:da59ea7f97a76491ce585c9b2ff630e7 rdf:reifies <<( doc:Factspower_reduction_10_100x rdf:type schema:QuantitativeValue )>> ;
+	prov:wasDerivedFrom doc:52724b8de30c .
+doc:FactseventBasedCamera a schema:Product .
+_:fd987cd05da3d3c0afa6d7d34a1fa055 rdf:reifies <<( doc:FactseventBasedCamera rdf:type schema:Product )>> ;
+	prov:wasDerivedFrom doc:52724b8de30c .
+doc:FactssparseTimestampedEvents a schema:Thing .
+_:e49745a70d2970ad130dfce253736858 rdf:reifies <<( doc:FactssparseTimestampedEvents rdf:type schema:Thing )>> ;
+	prov:wasDerivedFrom doc:52724b8de30c .
+doc:FactslowLatency_1 rdfs:label "per-pixel brightness changes"@en .
+_:e6e9cca6bfd2ce2175b8a3d42d3c9b99 rdf:reifies <<( doc:FactslowLatency_1 rdfs:label "per-pixel brightness changes"@en )>> ;
+	prov:wasDerivedFrom doc:52724b8de30c .
+doc:FactsBfsaMechanism a None:Predictive_maintenance_module_function .
+_:b74dd541bc97882c2806abe98af11d80 rdf:reifies <<( doc:FactsBfsaMechanism rdf:type None:Predictive_maintenance_module_function )>> ;
+	prov:wasDerivedFrom doc:52724b8de30c .
+doc:FactsglobalBiFoveaSelfAttention cd:operates_on doc:FactssparseTimestampedEvents .
+_:ccf8e385518677fe35c97bf543657670 rdf:reifies <<( doc:FactsglobalBiFoveaSelfAttention cd:operates_on doc:FactssparseTimestampedEvents )>> ;
+	prov:wasDerivedFrom doc:52724b8de30c .
+doc:FactseventBasedCamera cd:supports_application doc:FactsmotionRecognition .
+_:daf783ba44caf1f18169c8a36f2c1300 rdf:reifies <<( doc:FactseventBasedCamera cd:supports_application doc:FactsmotionRecognition )>> ;
+	prov:wasDerivedFrom doc:52724b8de30c .
+doc:FactsBfviStructure rdfs:label "Bi-Fovea Visual Interaction (BFVI) structure"@en .
+_:adff7381a8c8776e5b4af2b27ee9e9b3 rdf:reifies <<( doc:FactsBfviStructure rdfs:label "Bi-Fovea Visual Interaction (BFVI) structure"@en )>> ;
+	prov:wasDerivedFrom doc:52724b8de30c .
+doc:FactslowLatency_1 rdfs:label "sudden brightness changes"@en .
+_:d58932bc01559f8602defa38d562c8df rdf:reifies <<( doc:FactslowLatency_1 rdfs:label "sudden brightness changes"@en )>> ;
+	prov:wasDerivedFrom doc:52724b8de30c .
+doc:FactseventBasedCamera cd:has_functionality doc:FactsbiologicalRetinaEmulation .
+_:b6eb0799ef6dc883577f550a6059199c rdf:reifies <<( doc:FactseventBasedCamera cd:has_functionality doc:FactsbiologicalRetinaEmulation )>> ;
+	prov:wasDerivedFrom doc:52724b8de30c .
+doc:FactshighSpeedSpindles rdfs:label "high-speed spindles"@en .
+_:c0a793a9ef167910694543e70b77498c rdf:reifies <<( doc:FactshighSpeedSpindles rdfs:label "high-speed spindles"@en )>> ;
+	prov:wasDerivedFrom doc:52724b8de30c .
+doc:FactsBfviStructure cd:has_quality doc:FactshierarchicalOrganization .
+_:e4de5d94575e741bb9d39dfff15187f0 rdf:reifies <<( doc:FactsBfviStructure cd:has_quality doc:FactshierarchicalOrganization )>> ;
+	prov:wasDerivedFrom doc:52724b8de30c .
+doc:FactsmotionRecognition rdfs:label "motion recognition"@en .
+_:e3250422ddd927a7bcb8f69e5e319379 rdf:reifies <<( doc:FactsmotionRecognition rdfs:label "motion recognition"@en )>> ;
+	prov:wasDerivedFrom doc:52724b8de30c .
+doc:FactslowLatency_1 cd:has_text_value "high dynamic range" .
+_:a637c745a56e7d192383d0def5bc9922 rdf:reifies <<( doc:FactslowLatency_1 cd:has_text_value "high dynamic range" )>> ;
+	prov:wasDerivedFrom doc:52724b8de30c .
+doc:FactseventBasedCamera cd:supports_application doc:FactsdroneVision .
+_:d055e80a44627552f84fcd739217c8ac rdf:reifies <<( doc:FactseventBasedCamera cd:supports_application doc:FactsdroneVision )>> ;
+	prov:wasDerivedFrom doc:52724b8de30c .
+doc:FactsparallelArchitecture rdfs:label "cascaded architecture"@en .
+_:a434d2f032ebadecb6685d3a0ae049ee rdf:reifies <<( doc:FactsparallelArchitecture rdfs:label "cascaded architecture"@en )>> ;
+	prov:wasDerivedFrom doc:52724b8de30c .
+doc:FactsvisionTransformerArchitecture rdfs:label "vision transformers"@en .
+_:ca11c51110e9f1f3d406913f2a18ddeb rdf:reifies <<( doc:FactsvisionTransformerArchitecture rdfs:label "vision transformers"@en )>> ;
+	prov:wasDerivedFrom doc:52724b8de30c .
+doc:FactsbiologicalRetinaEmulation a None:Predictive_maintenance_module_function .
+_:af2e7845807c11201046c7bb83279492 rdf:reifies <<( doc:FactsbiologicalRetinaEmulation rdf:type None:Predictive_maintenance_module_function )>> ;
+	prov:wasDerivedFrom doc:52724b8de30c .
+doc:FactseventBasedCamera cd:used_in doc:FactsbottlingLines .
+_:faa8c7a03f9111db5fdf3a3feebb120a rdf:reifies <<( doc:FactseventBasedCamera cd:used_in doc:FactsbottlingLines )>> ;
+	prov:wasDerivedFrom doc:52724b8de30c .
+doc:Factsframe_rate_10kHz schema:value 10 .
+_:b777d751936608ca964f98f6bebc612d rdf:reifies <<( doc:Factsframe_rate_10kHz schema:value 10 )>> ;
+	prov:wasDerivedFrom doc:52724b8de30c .
+doc:FactslowLatency_1 cd:has_text_value "high temporal resolution" .
+_:c282ea55303602570afb4d888e5b3ab4 rdf:reifies <<( doc:FactslowLatency_1 cd:has_text_value "high temporal resolution" )>> ;
+	prov:wasDerivedFrom doc:52724b8de30c .
+doc:FactslowLatency_1 cd:has_text_value "low latency" .
+_:ab2c8a80d39239a395d125aa3f6de310 rdf:reifies <<( doc:FactslowLatency_1 cd:has_text_value "low latency" )>> ;
+	prov:wasDerivedFrom doc:52724b8de30c .
+doc:FactsbottlingLines a schema:Thing .
+_:bb10fe127ed355a2b18c6f984f8353e8 rdf:reifies <<( doc:FactsbottlingLines rdf:type schema:Thing )>> ;
+	prov:wasDerivedFrom doc:52724b8de30c .
+doc:FactseventBasedCamera cd:has_temporal_resolution doc:FactslowLatency_1 .
+_:a990ee33e2c59615a5885fa2d533a351 rdf:reifies <<( doc:FactseventBasedCamera cd:has_temporal_resolution doc:FactslowLatency_1 )>> ;
+	prov:wasDerivedFrom doc:52724b8de30c .
+doc:Factscnn_14 cd:has_predictive_maintenance_function doc:FactsBfsaMechanism .
+_:df0b6fb662e4e992a95f74c6e9940ee6 rdf:reifies <<( doc:Factscnn_14 cd:has_predictive_maintenance_function doc:FactsBfsaMechanism )>> ;
+	prov:wasDerivedFrom doc:52724b8de30c .
+doc:FactslowLatency_1 cd:has_text_value "low power consumption" .
+_:bfa71c65abd94af45c956d0cc6b5e172 rdf:reifies <<( doc:FactslowLatency_1 cd:has_text_value "low power consumption" )>> ;
+	prov:wasDerivedFrom doc:52724b8de30c .
+doc:FactshighSpeedCounting a schema:Thing .
+_:a4c5b59cef796c42ce3693aa8a93e758 rdf:reifies <<( doc:FactshighSpeedCounting rdf:type schema:Thing )>> ;
+	prov:wasDerivedFrom doc:52724b8de30c .
+doc:FactseagleEyeCharacteristics rdfs:label "unique physiological and visual characteristics of eagle eyes"@en .
+_:d481fece989a8c3ce2cfdc87a1ea38ea rdf:reifies <<( doc:FactseagleEyeCharacteristics rdfs:label "unique physiological and visual characteristics of eagle eyes"@en )>> ;
+	prov:wasDerivedFrom doc:52724b8de30c .
+doc:FactsbottlingLines rdfs:label "bottling lines"@en .
+_:ddfe3e02c7e68a7fe7888fe37f15d31f rdf:reifies <<( doc:FactsbottlingLines rdfs:label "bottling lines"@en )>> ;
+	prov:wasDerivedFrom doc:52724b8de30c .
+doc:FactseventBasedCamera cd:achieves_delay doc:FactslowLatency_1 .
+_:edd5d38cb5359837ad37250aeb09be7b rdf:reifies <<( doc:FactseventBasedCamera cd:achieves_delay doc:FactslowLatency_1 )>> ;
+	prov:wasDerivedFrom doc:52724b8de30c .
+doc:FactsglobalBiFoveaSelfAttention a schema:Thing .
+_:b9a014f8fd45d4350f5608e2f814ff28 rdf:reifies <<( doc:FactsglobalBiFoveaSelfAttention rdf:type schema:Thing )>> ;
+	prov:wasDerivedFrom doc:52724b8de30c .
+doc:FactslowLatency_1 cd:has_text_value "events" .
+_:d385ab54f80e32a23e339ef903769cb8 rdf:reifies <<( doc:FactslowLatency_1 cd:has_text_value "events" )>> ;
+	prov:wasDerivedFrom doc:52724b8de30c .
+doc:FactssteelMills a schema:Thing .
+_:e8196e5bce2dc49ad59d9aeca8e764dc rdf:reifies <<( doc:FactssteelMills rdf:type schema:Thing )>> ;
+	prov:wasDerivedFrom doc:52724b8de30c .
+doc:Factscnn_14 cd:uses doc:FactsglobalBiFoveaSelfAttention .
+_:bc1c1f05e558d9f72802b9884d5be747 rdf:reifies <<( doc:Factscnn_14 cd:uses doc:FactsglobalBiFoveaSelfAttention )>> ;
+	prov:wasDerivedFrom doc:52724b8de30c .
+doc:FactsparallelInformationProcessing a schema:Thing .
+_:e4e87c2bf544a74a9fbb4d55335388f5 rdf:reifies <<( doc:FactsparallelInformationProcessing rdf:type schema:Thing )>> ;
+	prov:wasDerivedFrom doc:52724b8de30c .
+doc:FactshighSpeedSpindles a schema:Thing .
+_:c24aa41dbf231c0f47dfd87a288a0a8d rdf:reifies <<( doc:FactshighSpeedSpindles rdf:type schema:Thing )>> ;
+	prov:wasDerivedFrom doc:52724b8de30c .
+doc:Factscnn_14 cd:integrates doc:FactseagleEyeCharacteristics .
+_:a36fbfc859e3d5ab70f6fb655395f08f rdf:reifies <<( doc:Factscnn_14 cd:integrates doc:FactseagleEyeCharacteristics )>> ;
+	prov:wasDerivedFrom doc:52724b8de30c .
+doc:FactsvisionTransformerArchitecture a schema:Thing .
+_:a6b9c2907d77226080cb3fa8ed9751ca rdf:reifies <<( doc:FactsvisionTransformerArchitecture rdf:type schema:Thing )>> ;
+	prov:wasDerivedFrom doc:52724b8de30c .
+doc:FactshierarchicalOrganization rdfs:label "hierarchical organization"@en .
+_:f46121d036072a9ba1fda996e75dfbf4 rdf:reifies <<( doc:FactshierarchicalOrganization rdfs:label "hierarchical organization"@en )>> ;
+	prov:wasDerivedFrom doc:52724b8de30c .
+doc:FactsglobalBiFoveaSelfAttention rdfs:label "global Bi-Fovea Self-Attention"@en .
+_:c203151e9f7823c668a509e0fec2c0c7 rdf:reifies <<( doc:FactsglobalBiFoveaSelfAttention rdfs:label "global Bi-Fovea Self-Attention"@en )>> ;
+	prov:wasDerivedFrom doc:52724b8de30c .
+doc:Factscnn_14 cd:replaces doc:Factsconvolution .
+_:b9c2662232e1657601d17985b5da89ac rdf:reifies <<( doc:Factscnn_14 cd:replaces doc:Factsconvolution )>> ;
+	prov:wasDerivedFrom doc:52724b8de30c .
+cco:InformationContentEntity owl:sameAs cco:DesignativeInformationContentEntity .

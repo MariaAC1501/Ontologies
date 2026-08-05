@@ -1,0 +1,534 @@
+@prefix None: <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD/seed#> .
+@prefix cco: <http://www.ontologyrepository.com/CommonCoreOntologies/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doc: <https://growgraph.dev/doc/4500579a6de3/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix obo: <http://purl.obolibrary.org/obo/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix schema: <https://schema.org/> .
+@prefix schema1: <http://schema.org/> .
+doc:5cfd75c265e5 a prov:Entity , schema:text ;
+	prov:generatedAtTime "2026-07-11T03:21:05.004001Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+	schema:position 0 ;
+	schema:identifier "5cfd75c265e5" .
+doc:Factsrmse_std_FD001 a None:Performance_value .
+_:b0d4d3f2e3c1b7c89088587edbc67d50 rdf:reifies <<( doc:Factsrmse_std_FD001 rdf:type None:Performance_value )>> ;
+	prov:wasDerivedFrom doc:5cfd75c265e5 .
+doc:Factsmodule1 a None:Predictive_maintenance_system_module .
+_:e5d786df46ba69cb9343aaf3e84ca40d rdf:reifies <<( doc:Factsmodule1 rdf:type None:Predictive_maintenance_system_module )>> ;
+	prov:wasDerivedFrom doc:5cfd75c265e5 .
+doc:Factsrmse_std_FD001 None:has_text_value 21.758 .
+_:b1c3d0fa821bd625ed8fb522223098e2 rdf:reifies <<( doc:Factsrmse_std_FD001 None:has_text_value 21.758 )>> ;
+	prov:wasDerivedFrom doc:5cfd75c265e5 .
+doc:FactsauthorShanzeWang a schema1:Person .
+_:d242c15a47887e15649615ea4569a965 rdf:reifies <<( doc:FactsauthorShanzeWang rdf:type schema1:Person )>> ;
+	prov:wasDerivedFrom doc:5cfd75c265e5 .
+doc:Factsarticle1_5 schema1:author doc:FactsauthorShanzeWang .
+_:eabb0a33926e4776c93a55031daacdf6 rdf:reifies <<( doc:Factsarticle1_5 schema1:author doc:FactsauthorShanzeWang )>> ;
+	prov:wasDerivedFrom doc:5cfd75c265e5 .
+doc:Factsrmse_std_FD001 cco:describes doc:factsmethodLstmQr .
+_:ec002d926cd04e81ce3a376fbde6ec42 rdf:reifies <<( doc:Factsrmse_std_FD001 cco:describes doc:factsmethodLstmQr )>> ;
+	prov:wasDerivedFrom doc:5cfd75c265e5 .
+doc:Factsmodel_config1 a None:Model_configuration .
+_:b7ab5a0b41b06fb3ce88f33b46266c1b rdf:reifies <<( doc:Factsmodel_config1 rdf:type None:Model_configuration )>> ;
+	prov:wasDerivedFrom doc:5cfd75c265e5 .
+doc:FactsCqr rdfs:label "Conformalized Quantile Regression (CQR)" .
+_:c04c72322a296f875f66b7b4834aeca9 rdf:reifies <<( doc:FactsCqr rdfs:label "Conformalized Quantile Regression (CQR)" )>> ;
+	prov:wasDerivedFrom doc:5cfd75c265e5 .
+doc:Factsexperiment_FD002_FD002 a None:Predictive_maintenance_case .
+_:a8952a9003b93e8782a00c82769fb5ec rdf:reifies <<( doc:Factsexperiment_FD002_FD002 rdf:type None:Predictive_maintenance_case )>> ;
+	prov:wasDerivedFrom doc:5cfd75c265e5 .
+doc:FactskeywordRul None:has_text_value "LSTM" .
+_:ff6a9236997633344985d0c43a17690e rdf:reifies <<( doc:FactskeywordRul None:has_text_value "LSTM" )>> ;
+	prov:wasDerivedFrom doc:5cfd75c265e5 .
+doc:Factsarticle1_5 dcterms:subject doc:FactskeywordRul .
+_:d9e5a7b08933141c65eeb14c020c2f41 rdf:reifies <<( doc:Factsarticle1_5 dcterms:subject doc:FactskeywordRul )>> ;
+	prov:wasDerivedFrom doc:5cfd75c265e5 .
+doc:Factsmodel_config1 None:has_text_value "Single forward pass outputs point prediction plus upper and lower predictive bounds with nominal coverage 80%" .
+_:e729c9335135b3b2f2db7b04bfd5ebd4 rdf:reifies <<( doc:Factsmodel_config1 None:has_text_value "Single forward pass outputs point prediction plus upper and lower predictive bounds with nominal coverage 80%" )>> ;
+	prov:wasDerivedFrom doc:5cfd75c265e5 .
+doc:FactskeywordRul None:has_text_value "uncertainty quantification" .
+_:afcddd72914a78955e2059ed35fa0b50 rdf:reifies <<( doc:FactskeywordRul None:has_text_value "uncertainty quantification" )>> ;
+	prov:wasDerivedFrom doc:5cfd75c265e5 .
+doc:FactsauthorShanzeWang schema1:affiliation doc:FactsorgSchoolOfAutomation .
+_:c3726d2d4816827498f99333c9ce959e rdf:reifies <<( doc:FactsauthorShanzeWang schema1:affiliation doc:FactsorgSchoolOfAutomation )>> ;
+	prov:wasDerivedFrom doc:5cfd75c265e5 .
+doc:FactsauthorShanzeWang rdfs:label "Runsheng Diao" .
+_:cd11377ee5d084f19d53d1e65d7b748d rdf:reifies <<( doc:FactsauthorShanzeWang rdfs:label "Runsheng Diao" )>> ;
+	prov:wasDerivedFrom doc:5cfd75c265e5 .
+doc:Factsexperiment_FD002_FD002 dcterms:isPartOf doc:FactsdatasetNasaCmapss .
+_:d6a42597a01b66e56620da4d7ab2c79c rdf:reifies <<( doc:Factsexperiment_FD002_FD002 dcterms:isPartOf doc:FactsdatasetNasaCmapss )>> ;
+	prov:wasDerivedFrom doc:5cfd75c265e5 .
+doc:Factsrmse_std_FD001 None:has_text_value 17.562 .
+_:e7305067e5e14b006b8a47e4b925a370 rdf:reifies <<( doc:Factsrmse_std_FD001 None:has_text_value 17.562 )>> ;
+	prov:wasDerivedFrom doc:5cfd75c265e5 .
+doc:FactsdatasetNasaCmapss rdfs:label "NASA C-MAPSS dataset" .
+_:e7c513925590b66919bba9bc09ef684a rdf:reifies <<( doc:FactsdatasetNasaCmapss rdfs:label "NASA C-MAPSS dataset" )>> ;
+	prov:wasDerivedFrom doc:5cfd75c265e5 .
+doc:FactskeywordRul a cco:DescriptiveInformationContentEntity .
+_:ab505d075f067313a69420e4f8e5465e rdf:reifies <<( doc:FactskeywordRul rdf:type cco:DescriptiveInformationContentEntity )>> ;
+	prov:wasDerivedFrom doc:5cfd75c265e5 .
+doc:Factsrmse_std_FD001 None:has_text_value 1.297 .
+_:e1a67cff87b3283d8a99c76d34ce439a rdf:reifies <<( doc:Factsrmse_std_FD001 None:has_text_value 1.297 )>> ;
+	prov:wasDerivedFrom doc:5cfd75c265e5 .
+doc:Factsrmse_std_FD001 None:has_text_value 1.208 .
+_:da18f51f30ec7db63fbb35850dad310 rdf:reifies <<( doc:Factsrmse_std_FD001 None:has_text_value 1.208 )>> ;
+	prov:wasDerivedFrom doc:5cfd75c265e5 .
+doc:factsmethodLstmQr rdfs:label "LSTM-based quantile regression (LSTM-QR)" .
+_:c3f4708dff4cd1558473417b93585846 rdf:reifies <<( doc:factsmethodLstmQr rdfs:label "LSTM-based quantile regression (LSTM-QR)" )>> ;
+	prov:wasDerivedFrom doc:5cfd75c265e5 .
+doc:Factsrmse_std_FD001 None:has_text_value 0.046 .
+_:db8f527a819cd1d0c33435833b8e048b rdf:reifies <<( doc:Factsrmse_std_FD001 None:has_text_value 0.046 )>> ;
+	prov:wasDerivedFrom doc:5cfd75c265e5 .
+doc:Factsrmse_std_FD001 None:has_text_value "21"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+_:afc64e715c7e2d4e3bfe4f03bf324371 rdf:reifies <<( doc:Factsrmse_std_FD001 None:has_text_value "21"^^<http://www.w3.org/2001/XMLSchema#decimal> )>> ;
+	prov:wasDerivedFrom doc:5cfd75c265e5 .
+doc:Factsrmse_std_FD001 None:has_text_value 0.793 .
+_:e7c271276d21a590111411387d4f0858 rdf:reifies <<( doc:Factsrmse_std_FD001 None:has_text_value 0.793 )>> ;
+	prov:wasDerivedFrom doc:5cfd75c265e5 .
+doc:Factsrmse_std_FD001 None:has_text_value "11"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+_:c8102d57fa010ce77d2328b2d4066e4b rdf:reifies <<( doc:Factsrmse_std_FD001 None:has_text_value "11"^^<http://www.w3.org/2001/XMLSchema#decimal> )>> ;
+	prov:wasDerivedFrom doc:5cfd75c265e5 .
+doc:Factsrmse_std_FD001 None:has_text_value 0.803 .
+_:e5e08e0e6a70e81849eac512a501b0b1 rdf:reifies <<( doc:Factsrmse_std_FD001 None:has_text_value 0.803 )>> ;
+	prov:wasDerivedFrom doc:5cfd75c265e5 .
+doc:Factsrmse_std_FD001 None:has_text_value 0.806 .
+_:d24779b9b442bb1ff5a2319cfb07c9db rdf:reifies <<( doc:Factsrmse_std_FD001 None:has_text_value 0.806 )>> ;
+	prov:wasDerivedFrom doc:5cfd75c265e5 .
+doc:FactsorgSchoolOfAutomation rdfs:label "School of Automation, Shenyang Aerospace University, Shenyang 110136, China" .
+_:d1bb29aaa703db9f51647dc515a0131a rdf:reifies <<( doc:FactsorgSchoolOfAutomation rdfs:label "School of Automation, Shenyang Aerospace University, Shenyang 110136, China" )>> ;
+	prov:wasDerivedFrom doc:5cfd75c265e5 .
+doc:FactskeywordRul None:has_text_value "Conformalized Quantile Regression (CQR)" .
+_:ddb2af203f7ca4383175bbab5526e94b rdf:reifies <<( doc:FactskeywordRul None:has_text_value "Conformalized Quantile Regression (CQR)" )>> ;
+	prov:wasDerivedFrom doc:5cfd75c265e5 .
+doc:Factsmodule1 None:has_design_detail doc:Factsdesign1_2 .
+_:c49317152b93a8616ce3f733858d900a rdf:reifies <<( doc:Factsmodule1 None:has_design_detail doc:Factsdesign1_2 )>> ;
+	prov:wasDerivedFrom doc:5cfd75c265e5 .
+doc:Factsmodule1 dcterms:references doc:FactsdatasetNasaCmapss .
+_:d7bb418f7ab6af0b4d4e3624da43c98b rdf:reifies <<( doc:Factsmodule1 dcterms:references doc:FactsdatasetNasaCmapss )>> ;
+	prov:wasDerivedFrom doc:5cfd75c265e5 .
+doc:Factsdesign1_2 None:has_text_value "LSTM-based quantile regression with weighted pinball loss, overestimation penalty, and Conformalized Quantile Regression (CQR) post hoc calibration" .
+_:bf9d0fd094971ee4aac5a70d5a9c0b64 rdf:reifies <<( doc:Factsdesign1_2 None:has_text_value "LSTM-based quantile regression with weighted pinball loss, overestimation penalty, and Conformalized Quantile Regression (CQR) post hoc calibration" )>> ;
+	prov:wasDerivedFrom doc:5cfd75c265e5 .
+doc:Factstitle1_1 a None:Article_title .
+_:b13a7c946e1318f4e7a7b9934b4441eb rdf:reifies <<( doc:Factstitle1_1 rdf:type None:Article_title )>> ;
+	prov:wasDerivedFrom doc:5cfd75c265e5 .
+doc:FactsdatasetNasaCmapss a cco:Database .
+_:b050bbe6b7cfbd4f31c567c91e06895 rdf:reifies <<( doc:FactsdatasetNasaCmapss rdf:type cco:Database )>> ;
+	prov:wasDerivedFrom doc:5cfd75c265e5 .
+doc:Factstitle1_1 None:has_text_value "Turbofan Engine Remaining Useful Life Prediction with Reliable Prediction Intervals via LSTM-Based Quantile Regression and Conformal Calibration" .
+_:ff0e8469dba039de84da45f4ed93bf6b rdf:reifies <<( doc:Factstitle1_1 None:has_text_value "Turbofan Engine Remaining Useful Life Prediction with Reliable Prediction Intervals via LSTM-Based Quantile Regression and Conformal Calibration" )>> ;
+	prov:wasDerivedFrom doc:5cfd75c265e5 .
+doc:factsmethodLstmQr dcterms:hasPart doc:FactsCqr .
+_:be8aebeefe276d0bd648100b77e09c49 rdf:reifies <<( doc:factsmethodLstmQr dcterms:hasPart doc:FactsCqr )>> ;
+	prov:wasDerivedFrom doc:5cfd75c265e5 .
+doc:FactsauthorShanzeWang schema1:email "diaorunsheng@stu.sau.edu.cn" .
+_:ef95878b47a5a1137c35fa3c4862b115 rdf:reifies <<( doc:FactsauthorShanzeWang schema1:email "diaorunsheng@stu.sau.edu.cn" )>> ;
+	prov:wasDerivedFrom doc:5cfd75c265e5 .
+doc:FactsQuantileRegression rdfs:label "Quantile regression" .
+_:a4c31ea9825617313500fe7d1b3af90a rdf:reifies <<( doc:FactsQuantileRegression rdfs:label "Quantile regression" )>> ;
+	prov:wasDerivedFrom doc:5cfd75c265e5 .
+doc:Factsrmse_std_FD001 None:has_text_value 16.235 .
+_:dc38cb24def221d414beb6db54d509b1 rdf:reifies <<( doc:Factsrmse_std_FD001 None:has_text_value 16.235 )>> ;
+	prov:wasDerivedFrom doc:5cfd75c265e5 .
+doc:factsmethodLstmQr dcterms:isPartOf doc:Factsmodule1 .
+_:f10059d2d92c8385ee2d02a74688e51 rdf:reifies <<( doc:factsmethodLstmQr dcterms:isPartOf doc:Factsmodule1 )>> ;
+	prov:wasDerivedFrom doc:5cfd75c265e5 .
+doc:Factsexperiment_FD002_FD002 None:has_text_value "FD002 â FD002 experiment on NASA C-MAPSS" .
+_:add7d6b79b036b1d563d53c08358a763 rdf:reifies <<( doc:Factsexperiment_FD002_FD002 None:has_text_value "FD002 â FD002 experiment on NASA C-MAPSS" )>> ;
+	prov:wasDerivedFrom doc:5cfd75c265e5 .
+doc:Factsarticle1_5 a None:Predictive_Maintenance_Article .
+_:d80743b7ac47f5cb6ec40af163e187e2 rdf:reifies <<( doc:Factsarticle1_5 rdf:type None:Predictive_Maintenance_Article )>> ;
+	prov:wasDerivedFrom doc:5cfd75c265e5 .
+doc:Factsrmse_std_FD001 None:has_text_value 0.8 .
+_:f91d975780e25b1dc07dabc41b32e129 rdf:reifies <<( doc:Factsrmse_std_FD001 None:has_text_value 0.8 )>> ;
+	prov:wasDerivedFrom doc:5cfd75c265e5 .
+doc:Factsrmse_std_FD001 None:has_text_value 0.59 .
+_:da6f55d8cf0c8bf6c7cc5070467805d5 rdf:reifies <<( doc:Factsrmse_std_FD001 None:has_text_value 0.59 )>> ;
+	prov:wasDerivedFrom doc:5cfd75c265e5 .
+doc:Factsrmse_std_FD001 None:has_text_value 0.062 .
+_:def0072628c8a71b5a1ad56c4da716ed rdf:reifies <<( doc:Factsrmse_std_FD001 None:has_text_value 0.062 )>> ;
+	prov:wasDerivedFrom doc:5cfd75c265e5 .
+doc:Factsexperiment_FD002_FD002 None:has_text_value "FD002 â FD001 cross-condition transfer experiment on NASA C-MAPSS" .
+_:bddee0ba831c083fa7cc3a016a3f08c2 rdf:reifies <<( doc:Factsexperiment_FD002_FD002 None:has_text_value "FD002 â FD001 cross-condition transfer experiment on NASA C-MAPSS" )>> ;
+	prov:wasDerivedFrom doc:5cfd75c265e5 .
+doc:FactsorgSchoolOfAutomation a schema1:Organization .
+_:dc3d4a15a8bd5db8994d7ecd0aa6b3a1 rdf:reifies <<( doc:FactsorgSchoolOfAutomation rdf:type schema1:Organization )>> ;
+	prov:wasDerivedFrom doc:5cfd75c265e5 .
+doc:Factsrmse_std_FD001 None:has_text_value 18.323 .
+_:fb3e0a7a7f1d33ec8d618b1cde1e1a2f rdf:reifies <<( doc:Factsrmse_std_FD001 None:has_text_value 18.323 )>> ;
+	prov:wasDerivedFrom doc:5cfd75c265e5 .
+doc:FactskeywordRul None:has_text_value "quantile regression" .
+_:b4e9e176d6a6822bce2a7dad1f531f10 rdf:reifies <<( doc:FactskeywordRul None:has_text_value "quantile regression" )>> ;
+	prov:wasDerivedFrom doc:5cfd75c265e5 .
+doc:factsmethodLstmQr a None:Predictive_maintenance_model .
+_:a34a1dde5816b1643cbd12c396cbe0f8 rdf:reifies <<( doc:factsmethodLstmQr rdf:type None:Predictive_maintenance_model )>> ;
+	prov:wasDerivedFrom doc:5cfd75c265e5 .
+doc:Factsrmse_std_FD001 None:has_text_value 7.1 .
+_:fca9df08f852e2526281a39a119a3014 rdf:reifies <<( doc:Factsrmse_std_FD001 None:has_text_value 7.1 )>> ;
+	prov:wasDerivedFrom doc:5cfd75c265e5 .
+doc:FactsauthorShanzeWang schema1:email "20113239@stu.sau.edu.cn" .
+_:ea8f44e1776a16d9296d941468b6a375 rdf:reifies <<( doc:FactsauthorShanzeWang schema1:email "20113239@stu.sau.edu.cn" )>> ;
+	prov:wasDerivedFrom doc:5cfd75c265e5 .
+doc:FactsCqr a cco:Algorithm .
+_:d9155a108778910994177417e05558bd rdf:reifies <<( doc:FactsCqr rdf:type cco:Algorithm )>> ;
+	prov:wasDerivedFrom doc:5cfd75c265e5 .
+doc:Factsexperiment_FD002_FD002 None:has_text_value "FD001 â FD001 experiment on NASA C-MAPSS" .
+_:a0ba277ee361ec04279a0d11cb42c4cb rdf:reifies <<( doc:Factsexperiment_FD002_FD002 None:has_text_value "FD001 â FD001 experiment on NASA C-MAPSS" )>> ;
+	prov:wasDerivedFrom doc:5cfd75c265e5 .
+doc:FactsQuantileRegression a None:Regression .
+_:f40137a75e466b44d12ae11f6f1ea5d3 rdf:reifies <<( doc:FactsQuantileRegression rdf:type None:Regression )>> ;
+	prov:wasDerivedFrom doc:5cfd75c265e5 .
+doc:Factsmodule1 None:describes_configuration doc:Factsmodel_config1 .
+_:f7e7f6b199653188a3cc2a5693935e5f rdf:reifies <<( doc:Factsmodule1 None:describes_configuration doc:Factsmodel_config1 )>> ;
+	prov:wasDerivedFrom doc:5cfd75c265e5 .
+doc:Factsmodule1 None:has_predictive_maintenance_function None:Remaining_useful_life_estimation .
+_:a45676680b0cedf5b38d1b06c4fdd17d rdf:reifies <<( doc:Factsmodule1 None:has_predictive_maintenance_function None:Remaining_useful_life_estimation )>> ;
+	prov:wasDerivedFrom doc:5cfd75c265e5 .
+doc:FactsauthorShanzeWang rdfs:label "Mingzhe Zhou" .
+_:d67afb726361a40a6e99415bdb37aa6b rdf:reifies <<( doc:FactsauthorShanzeWang rdfs:label "Mingzhe Zhou" )>> ;
+	prov:wasDerivedFrom doc:5cfd75c265e5 .
+doc:factsmethodLstmQr cco:describes doc:FactsQuantileRegression .
+_:d406eae2fba05b0be548b2674543af3e rdf:reifies <<( doc:factsmethodLstmQr cco:describes doc:FactsQuantileRegression )>> ;
+	prov:wasDerivedFrom doc:5cfd75c265e5 .
+doc:Factsdesign1_2 a None:Design_detail .
+_:e40ced9c85e35fe7e2c3cb8ecb95524 rdf:reifies <<( doc:Factsdesign1_2 rdf:type None:Design_detail )>> ;
+	prov:wasDerivedFrom doc:5cfd75c265e5 .
+doc:FactsauthorShanzeWang rdfs:label "Guanglei Meng" .
+_:aa3e7d501b108ce66d33ca66d82bab72 rdf:reifies <<( doc:FactsauthorShanzeWang rdfs:label "Guanglei Meng" )>> ;
+	prov:wasDerivedFrom doc:5cfd75c265e5 .
+doc:Factsrmse_std_FD001 None:has_text_value 0.411 .
+_:d131bad0486923f0ffa00fea38929b56 rdf:reifies <<( doc:Factsrmse_std_FD001 None:has_text_value 0.411 )>> ;
+	prov:wasDerivedFrom doc:5cfd75c265e5 .
+doc:FactskeywordRul None:has_text_value "remaining useful life prediction" .
+_:ea02fbcf4df78a295cc3b255b1e22f29 rdf:reifies <<( doc:FactskeywordRul None:has_text_value "remaining useful life prediction" )>> ;
+	prov:wasDerivedFrom doc:5cfd75c265e5 .
+doc:Factsrmse_std_FD001 None:has_text_value 0.696 .
+_:c1d10fe9c7ef75ec95e9bb641c77a70b rdf:reifies <<( doc:Factsrmse_std_FD001 None:has_text_value 0.696 )>> ;
+	prov:wasDerivedFrom doc:5cfd75c265e5 .
+doc:Factsrmse_std_FD001 None:has_text_value 0.035 .
+_:a564a01036a380052ae0e2ac90befeae rdf:reifies <<( doc:Factsrmse_std_FD001 None:has_text_value 0.035 )>> ;
+	prov:wasDerivedFrom doc:5cfd75c265e5 .
+doc:Factsrmse_std_FD001 None:has_text_value 0.593 .
+_:c0215323dfec5e083dc4b4913b7df8cf rdf:reifies <<( doc:Factsrmse_std_FD001 None:has_text_value 0.593 )>> ;
+	prov:wasDerivedFrom doc:5cfd75c265e5 .
+doc:FactsauthorShanzeWang schema1:email "wangshanze@stu.sau.edu.cn" .
+_:d73f8ce93da51ba7ff6a4477e392d428 rdf:reifies <<( doc:FactsauthorShanzeWang schema1:email "wangshanze@stu.sau.edu.cn" )>> ;
+	prov:wasDerivedFrom doc:5cfd75c265e5 .
+doc:Factsarticle1_5 None:has_title doc:Factstitle1_1 .
+_:a528c664ea4e27e2800ad83708caab18 rdf:reifies <<( doc:Factsarticle1_5 None:has_title doc:Factstitle1_1 )>> ;
+	prov:wasDerivedFrom doc:5cfd75c265e5 .
+doc:Factsrmse_std_FD001 None:has_text_value 0.05 .
+_:a07bbf91e2d0bb9316a7b11437fb7eec rdf:reifies <<( doc:Factsrmse_std_FD001 None:has_text_value 0.05 )>> ;
+	prov:wasDerivedFrom doc:5cfd75c265e5 .
+doc:FactsauthorShanzeWang rdfs:label "Shanze Wang" .
+_:d7542fc4c782f10b85ce28669b1b5879 rdf:reifies <<( doc:FactsauthorShanzeWang rdfs:label "Shanze Wang" )>> ;
+	prov:wasDerivedFrom doc:5cfd75c265e5 .
+doc:FactsauthorShanzeWang schema1:email "20210011@sau.edu.cn" .
+_:bc10c6d5a1222581432c2f8128549474 rdf:reifies <<( doc:FactsauthorShanzeWang schema1:email "20210011@sau.edu.cn" )>> ;
+	prov:wasDerivedFrom doc:5cfd75c265e5 .
+doc:Factsrmse_std_FD001 None:has_text_value 0.722 .
+_:ec6bfe71dcf7b1dd2345670025fda250 rdf:reifies <<( doc:Factsrmse_std_FD001 None:has_text_value 0.722 )>> ;
+	prov:wasDerivedFrom doc:5cfd75c265e5 .
+doc:Factsexperiment_FD002_FD002 None:has_text_value "FD001 â FD002 cross-condition transfer experiment on NASA C-MAPSS" .
+_:dc3fa074dc3f9de8162f460d1bd5c06b rdf:reifies <<( doc:Factsexperiment_FD002_FD002 None:has_text_value "FD001 â FD002 cross-condition transfer experiment on NASA C-MAPSS" )>> ;
+	prov:wasDerivedFrom doc:5cfd75c265e5 .
+cco:is_about doc:factsmethodLstmQr None:Remaining_useful_life_estimation .
+_:a9eb81535f9ea0bf536e34344ff8cd79 rdf:reifies <<( cco:is_about doc:factsmethodLstmQr None:Remaining_useful_life_estimation )>> ;
+	prov:wasDerivedFrom doc:5cfd75c265e5 .
+doc:Factsrmse_std_FD001 None:has_text_value 0.071 .
+_:caa9bca0a9e9c90457ea4fe549357a2c rdf:reifies <<( doc:Factsrmse_std_FD001 None:has_text_value 0.071 )>> ;
+	prov:wasDerivedFrom doc:5cfd75c265e5 .
+doc:d7a5df49ec1d a prov:Entity , schema:text ;
+	prov:generatedAtTime "2026-07-11T03:21:05.009502Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+	schema:position 1 ;
+	schema:identifier "d7a5df49ec1d" .
+doc:FactsHealthIndicator_1 rdfs:label "Health indicator (HI)"@en .
+_:f89d66f6734e6ff093fad2537c5d9917 rdf:reifies <<( doc:FactsHealthIndicator_1 rdfs:label "Health indicator (HI)"@en )>> ;
+	prov:wasDerivedFrom doc:d7a5df49ec1d .
+doc:FactsphysicsBasedDegradationModel rdfs:label "physics-based degradation model"@en .
+_:c29ef5db170a70672c576f1542d28d7 rdf:reifies <<( doc:FactsphysicsBasedDegradationModel rdfs:label "physics-based degradation model"@en )>> ;
+	prov:wasDerivedFrom doc:d7a5df49ec1d .
+doc:Factsarticle1_5 schema1:dateReceived "2026-03-09"^^<http://www.w3.org/2001/XMLSchema#date> .
+_:ecf7e87134c85aa2dc7bd469309149f rdf:reifies <<( doc:Factsarticle1_5 schema1:dateReceived "2026-03-09"^^<http://www.w3.org/2001/XMLSchema#date> )>> ;
+	prov:wasDerivedFrom doc:d7a5df49ec1d .
+doc:FactsPDmPipeline a cco:InformationProcessingArtifact .
+_:ae7c07fc3c4e75d68cee17449164efb8 rdf:reifies <<( doc:FactsPDmPipeline rdf:type cco:InformationProcessingArtifact )>> ;
+	prov:wasDerivedFrom doc:d7a5df49ec1d .
+doc:FactsRandomForest_4 a None:Predictive_maintenance_model .
+_:bc677fe8a4168256e1a4b620cb669d84 rdf:reifies <<( doc:FactsRandomForest_4 rdf:type None:Predictive_maintenance_model )>> ;
+	prov:wasDerivedFrom doc:d7a5df49ec1d .
+doc:FactsDeepLearning_4 a None:Predictive_maintenance_model .
+_:c7150082f22827b42482d89b4688c379 rdf:reifies <<( doc:FactsDeepLearning_4 rdf:type None:Predictive_maintenance_model )>> ;
+	prov:wasDerivedFrom doc:d7a5df49ec1d .
+doc:FactsregressionViaRandomforest a None:Regression .
+_:f60843cb31de512be97fdbea8471117e rdf:reifies <<( doc:FactsregressionViaRandomforest rdf:type None:Regression )>> ;
+	prov:wasDerivedFrom doc:d7a5df49ec1d .
+doc:FactsendToEndRepresentationLearning rdfs:label "end-to-end representation learning for degradation"@en .
+_:a03813c664671c66e777fd8179d18f2f rdf:reifies <<( doc:FactsendToEndRepresentationLearning rdfs:label "end-to-end representation learning for degradation"@en )>> ;
+	prov:wasDerivedFrom doc:d7a5df49ec1d .
+doc:FactsregressionViaRandomforest cco:is_about doc:FactsengineSystem .
+_:b6da66806032561094549da3d5d205fb rdf:reifies <<( doc:FactsregressionViaRandomforest cco:is_about doc:FactsengineSystem )>> ;
+	prov:wasDerivedFrom doc:d7a5df49ec1d .
+doc:FactsAttentionMechanism_2 rdfs:label "attention mechanism"@en .
+_:a3b71c6aa36b196ae951e471ffe7ae4d rdf:reifies <<( doc:FactsAttentionMechanism_2 rdfs:label "attention mechanism"@en )>> ;
+	prov:wasDerivedFrom doc:d7a5df49ec1d .
+doc:FactsliteratureReview a cco:InformationBearingArtifact .
+_:c72a5933f92cc54213dcfd59f4488a96 rdf:reifies <<( doc:FactsliteratureReview rdf:type cco:InformationBearingArtifact )>> ;
+	prov:wasDerivedFrom doc:d7a5df49ec1d .
+doc:Factsarticle1_5 dcterms:modified "2026-03-28"^^<http://www.w3.org/2001/XMLSchema#date> .
+_:ca3816eff1967cb6e3cb4f3a8ee02f4b rdf:reifies <<( doc:Factsarticle1_5 dcterms:modified "2026-03-28"^^<http://www.w3.org/2001/XMLSchema#date> )>> ;
+	prov:wasDerivedFrom doc:d7a5df49ec1d .
+doc:FactsRulPrediction_1 rdfs:label "Remaining useful life (RUL) prediction"@en .
+_:d946cd124bf05965a675bcda7911377a rdf:reifies <<( doc:FactsRulPrediction_1 rdfs:label "Remaining useful life (RUL) prediction"@en )>> ;
+	prov:wasDerivedFrom doc:d7a5df49ec1d .
+doc:FactsTransformer rdfs:label "Transformer-based architecture"@en .
+_:c24863d222708bc70979f7294a6d5caf rdf:reifies <<( doc:FactsTransformer rdfs:label "Transformer-based architecture"@en )>> ;
+	prov:wasDerivedFrom doc:d7a5df49ec1d .
+doc:FactsHealthIndicator_1 cco:describes doc:FactsengineSystem .
+_:a21cd698fa8294b1d79186e75e70bf62 rdf:reifies <<( doc:FactsHealthIndicator_1 cco:describes doc:FactsengineSystem )>> ;
+	prov:wasDerivedFrom doc:d7a5df49ec1d .
+doc:FactsliteratureReview rdfs:label "review studies summarizing PdM / CBM components and challenges"@en .
+_:c1767ea3313f3c757ce88525adb5e73a rdf:reifies <<( doc:FactsliteratureReview rdfs:label "review studies summarizing PdM / CBM components and challenges"@en )>> ;
+	prov:wasDerivedFrom doc:d7a5df49ec1d .
+doc:FactsAttentionMechanism_2 a None:Predictive_maintenance_model .
+_:efb407f6dee637aac6ae1c23cfd12e27 rdf:reifies <<( doc:FactsAttentionMechanism_2 rdf:type None:Predictive_maintenance_model )>> ;
+	prov:wasDerivedFrom doc:d7a5df49ec1d .
+doc:FactsmultisourceSensorData rdfs:label "multisource sensor data"@en .
+_:cfc55d0f71a328ec478e534549026bb rdf:reifies <<( doc:FactsmultisourceSensorData rdfs:label "multisource sensor data"@en )>> ;
+	prov:wasDerivedFrom doc:d7a5df49ec1d .
+doc:FactsLstm_5 rdfs:comment "introduces explicit memory cells via gating mechanisms to mitigate vanishing-gradient and capture long-term dependencies"@en .
+_:c5c658dc672323337c910152327916bd rdf:reifies <<( doc:FactsLstm_5 rdfs:comment "introduces explicit memory cells via gating mechanisms to mitigate vanishing-gradient and capture long-term dependencies"@en )>> ;
+	prov:wasDerivedFrom doc:d7a5df49ec1d .
+doc:FactsopenAccessLicense a cco:DesignativeInformationContentEntity .
+_:ec9279718897b0e9701135b59f8c7578 rdf:reifies <<( doc:FactsopenAccessLicense rdf:type cco:DesignativeInformationContentEntity )>> ;
+	prov:wasDerivedFrom doc:d7a5df49ec1d .
+doc:Factspubyear_2026_12 None:has_interger_value 2026 .
+_:f7a9223a583bef1931a10d7623fd3ba2 rdf:reifies <<( doc:Factspubyear_2026_12 None:has_interger_value 2026 )>> ;
+	prov:wasDerivedFrom doc:d7a5df49ec1d .
+doc:FactsstatisticalMlModel rdfs:label "statistical / machine-learning model (data-driven)"@en .
+_:a8fb2aa8aa9e7d687b827364cb989689 rdf:reifies <<( doc:FactsstatisticalMlModel rdfs:label "statistical / machine-learning model (data-driven)"@en )>> ;
+	prov:wasDerivedFrom doc:d7a5df49ec1d .
+doc:FactsRnn_2 a None:Predictive_maintenance_model .
+_:c2da993609d7ee5d2588e184772ae621 rdf:reifies <<( doc:FactsRnn_2 rdf:type None:Predictive_maintenance_model )>> ;
+	prov:wasDerivedFrom doc:d7a5df49ec1d .
+doc:FactsregressionViaRandomforest rdfs:label "regression using random forest"@en .
+_:f9abd23ac912986f3cd09912a92d756a rdf:reifies <<( doc:FactsregressionViaRandomforest rdfs:label "regression using random forest"@en )>> ;
+	prov:wasDerivedFrom doc:d7a5df49ec1d .
+doc:FactsstatisticalMlModel cco:is_about doc:FactsmultisourceSensorData .
+_:abea546f471948150bf825b4d578119b rdf:reifies <<( doc:FactsstatisticalMlModel cco:is_about doc:FactsmultisourceSensorData )>> ;
+	prov:wasDerivedFrom doc:d7a5df49ec1d .
+doc:Factsarticle1_5 cco:is_about doc:FactsopenAccessLicense .
+_:eae243843bf8dcc2df63c72e9dcfac98 rdf:reifies <<( doc:Factsarticle1_5 cco:is_about doc:FactsopenAccessLicense )>> ;
+	prov:wasDerivedFrom doc:d7a5df49ec1d .
+doc:FactsRandomForest_4 rdfs:label "random forest"@en .
+_:a211e16e116cb9db59f81a7fb7fa3484 rdf:reifies <<( doc:FactsRandomForest_4 rdfs:label "random forest"@en )>> ;
+	prov:wasDerivedFrom doc:d7a5df49ec1d .
+doc:Factsarticle1_5 dcterms:issued "2026-04-05"^^<http://www.w3.org/2001/XMLSchema#date> .
+_:a7ea933de8ab6793ba3c6c760e8f555e rdf:reifies <<( doc:Factsarticle1_5 dcterms:issued "2026-04-05"^^<http://www.w3.org/2001/XMLSchema#date> )>> ;
+	prov:wasDerivedFrom doc:d7a5df49ec1d .
+doc:FactsDeepLearning_4 rdfs:label "deep learning (end-to-end representation learning)"@en .
+_:d3567d6f4b8763fba01d548d1ea8a8da rdf:reifies <<( doc:FactsDeepLearning_4 rdfs:label "deep learning (end-to-end representation learning)"@en )>> ;
+	prov:wasDerivedFrom doc:d7a5df49ec1d .
+doc:Factspubyear_2026_12 a None:Publication_year .
+_:eba3b1a7016189981f03afa1d341828 rdf:reifies <<( doc:Factspubyear_2026_12 rdf:type None:Publication_year )>> ;
+	prov:wasDerivedFrom doc:d7a5df49ec1d .
+doc:FactsCMapssDataset a cco:Database .
+_:efe69686868e71029a2053af6cc2dd9a rdf:reifies <<( doc:FactsCMapssDataset rdf:type cco:Database )>> ;
+	prov:wasDerivedFrom doc:d7a5df49ec1d .
+doc:FactsregressionViaSvm rdfs:label "regression using SVM"@en .
+_:a15c9443f3f49133c96716c2ae9caf60 rdf:reifies <<( doc:FactsregressionViaSvm rdfs:label "regression using SVM"@en )>> ;
+	prov:wasDerivedFrom doc:d7a5df49ec1d .
+doc:Factsarticle1_5 None:has_publication_year doc:Factspubyear_2026_12 .
+_:bb12ef79effcb02fab426157e3038400 rdf:reifies <<( doc:Factsarticle1_5 None:has_publication_year doc:Factspubyear_2026_12 )>> ;
+	prov:wasDerivedFrom doc:d7a5df49ec1d .
+doc:FactsPDmPipeline rdfs:label "data acquisition -> HI construction -> life prediction modeling"@en .
+_:ac699db8c612894e8c1b8ccdcd23b24d rdf:reifies <<( doc:FactsPDmPipeline rdfs:label "data acquisition -> HI construction -> life prediction modeling"@en )>> ;
+	prov:wasDerivedFrom doc:d7a5df49ec1d .
+doc:FactsengineSystem rdfs:label "engine system"@en .
+_:dc2735d7068021086beab33fd990f870 rdf:reifies <<( doc:FactsengineSystem rdfs:label "engine system"@en )>> ;
+	prov:wasDerivedFrom doc:d7a5df49ec1d .
+doc:FactsRnn_2 cco:is_about doc:FactsengineSystem .
+_:d4615622156681ca00f21fc34bcaa771 rdf:reifies <<( doc:FactsRnn_2 cco:is_about doc:FactsengineSystem )>> ;
+	prov:wasDerivedFrom doc:d7a5df49ec1d .
+doc:FactsPhmBenchmarking a cco:InformationBearingArtifact .
+_:d6223d530c2c8dc1411e0272fa73f94e rdf:reifies <<( doc:FactsPhmBenchmarking rdf:type cco:InformationBearingArtifact )>> ;
+	prov:wasDerivedFrom doc:d7a5df49ec1d .
+doc:FactsSupportVectorMachine rdfs:label "support vector machine (SVM)"@en .
+_:ca796d968caed1931d2cf455e3314c0c rdf:reifies <<( doc:FactsSupportVectorMachine rdfs:label "support vector machine (SVM)"@en )>> ;
+	prov:wasDerivedFrom doc:d7a5df49ec1d .
+doc:FactsSupportVectorMachine a None:Regression .
+_:ac5e8f69ca091259bf91694ef2f1a70e rdf:reifies <<( doc:FactsSupportVectorMachine rdf:type None:Regression )>> ;
+	prov:wasDerivedFrom doc:d7a5df49ec1d .
+doc:FactsengineSystem a None:Maintainable_item .
+_:e7240eb926cfbfa44dfe0ffa3776a089 rdf:reifies <<( doc:FactsengineSystem rdf:type None:Maintainable_item )>> ;
+	prov:wasDerivedFrom doc:d7a5df49ec1d .
+doc:FactsLstm_5 cco:is_about doc:FactsengineSystem .
+_:fb4aa4d6c1d5ed0d7ca673dad60d96b4 rdf:reifies <<( doc:FactsLstm_5 cco:is_about doc:FactsengineSystem )>> ;
+	prov:wasDerivedFrom doc:d7a5df49ec1d .
+doc:FactsTransformer a None:Predictive_maintenance_model .
+_:f3649ac77317eaea745a87d0d44bd610 rdf:reifies <<( doc:FactsTransformer rdf:type None:Predictive_maintenance_model )>> ;
+	prov:wasDerivedFrom doc:d7a5df49ec1d .
+doc:FactsRnn_2 rdfs:label "convolutional neural network (CNN)"@en .
+_:ff084fd12a0ce304acbd45934d48a205 rdf:reifies <<( doc:FactsRnn_2 rdfs:label "convolutional neural network (CNN)"@en )>> ;
+	prov:wasDerivedFrom doc:d7a5df49ec1d .
+doc:FactsRulPrediction_1 cco:is_about doc:FactsengineSystem .
+_:ebf9021f860f0775c70db1f49bdf3b56 rdf:reifies <<( doc:FactsRulPrediction_1 cco:is_about doc:FactsengineSystem )>> ;
+	prov:wasDerivedFrom doc:d7a5df49ec1d .
+doc:FactsstatisticalMlModel a None:Predictive_maintenance_model .
+_:cc7091b9489273cd121d95b4e1ad39b4 rdf:reifies <<( doc:FactsstatisticalMlModel rdf:type None:Predictive_maintenance_model )>> ;
+	prov:wasDerivedFrom doc:d7a5df49ec1d .
+doc:FactsRulPrediction_1 rdfs:comment "Task that estimates the time remaining before a system reaches a failure threshold"@en .
+_:c5fba724d3bb56ca2105ac4a7cd0aa7e rdf:reifies <<( doc:FactsRulPrediction_1 rdfs:comment "Task that estimates the time remaining before a system reaches a failure threshold"@en )>> ;
+	prov:wasDerivedFrom doc:d7a5df49ec1d .
+doc:FactsRandomForest_4 a None:Regression .
+_:d9dbbaa627f1bbbfccf6bfbb8eeb9eeb rdf:reifies <<( doc:FactsRandomForest_4 rdf:type None:Regression )>> ;
+	prov:wasDerivedFrom doc:d7a5df49ec1d .
+doc:FactsPDmPipeline cco:is_about doc:FactsengineSystem .
+_:af7dcc9d17c255e4ae337dadecef57a2 rdf:reifies <<( doc:FactsPDmPipeline cco:is_about doc:FactsengineSystem )>> ;
+	prov:wasDerivedFrom doc:d7a5df49ec1d .
+doc:FactsopenAccessLicense rdfs:label "Creative Commons Attribution (CC BY)"@en .
+_:f56b24efcf14e5879b18e49489d32054 rdf:reifies <<( doc:FactsopenAccessLicense rdfs:label "Creative Commons Attribution (CC BY)"@en )>> ;
+	prov:wasDerivedFrom doc:d7a5df49ec1d .
+doc:FactsRnn_2 rdfs:label "recurrent neural network (RNN)"@en .
+_:a1d6bc58d19123117beb2481f4449056 rdf:reifies <<( doc:FactsRnn_2 rdfs:label "recurrent neural network (RNN)"@en )>> ;
+	prov:wasDerivedFrom doc:d7a5df49ec1d .
+doc:Factsphm2008_challenge rdfs:label "PHM 2008 data challenge"@en .
+_:f2a8069d82b3b92693605fb899527ae8 rdf:reifies <<( doc:Factsphm2008_challenge rdfs:label "PHM 2008 data challenge"@en )>> ;
+	prov:wasDerivedFrom doc:d7a5df49ec1d .
+doc:FactsRulPrediction_1 a None:Remaining_useful_life_estimation .
+_:eb3ef27e415c95e33f53e3b9e5555092 rdf:reifies <<( doc:FactsRulPrediction_1 rdf:type None:Remaining_useful_life_estimation )>> ;
+	prov:wasDerivedFrom doc:d7a5df49ec1d .
+doc:FactsregressionViaSvm a None:Regression .
+_:da3413de68229e0b8814f4f9700be1 rdf:reifies <<( doc:FactsregressionViaSvm rdf:type None:Regression )>> ;
+	prov:wasDerivedFrom doc:d7a5df49ec1d .
+doc:FactsendToEndRepresentationLearning a None:Data_mining_technique_function .
+_:b610ecad25216b6fc39a4c954d899353 rdf:reifies <<( doc:FactsendToEndRepresentationLearning rdf:type None:Data_mining_technique_function )>> ;
+	prov:wasDerivedFrom doc:d7a5df49ec1d .
+doc:FactsregressionViaSvm cco:is_about doc:FactsengineSystem .
+_:bc0ebd17a8a2cec48bf6e9c339acbcca rdf:reifies <<( doc:FactsregressionViaSvm cco:is_about doc:FactsengineSystem )>> ;
+	prov:wasDerivedFrom doc:d7a5df49ec1d .
+_:d80743b7ac47f5cb6ec40af163e187e2 prov:wasDerivedFrom doc:d7a5df49ec1d .
+doc:FactsPhmBenchmarking rdfs:label "standardized and reproducible algorithm evaluation (benchmarks)"@en .
+_:b255a74f2106bd084b66dacc19c1ebb rdf:reifies <<( doc:FactsPhmBenchmarking rdfs:label "standardized and reproducible algorithm evaluation (benchmarks)"@en )>> ;
+	prov:wasDerivedFrom doc:d7a5df49ec1d .
+doc:Factsarticle1_5 schema1:dateAccepted "2026-04-03"^^<http://www.w3.org/2001/XMLSchema#date> .
+_:f7e8bd542066adbd9f49dda7478c1f56 rdf:reifies <<( doc:Factsarticle1_5 schema1:dateAccepted "2026-04-03"^^<http://www.w3.org/2001/XMLSchema#date> )>> ;
+	prov:wasDerivedFrom doc:d7a5df49ec1d .
+doc:FactsLstm_5 rdfs:label "long short-term memory (LSTM)"@en .
+_:ecf1577a07c6bcc1556c09112054d676 rdf:reifies <<( doc:FactsLstm_5 rdfs:label "long short-term memory (LSTM)"@en )>> ;
+	prov:wasDerivedFrom doc:d7a5df49ec1d .
+doc:FactsPhmBenchmarking cco:is_about doc:FactsCMapssDataset .
+_:c5f5ae3399cfc606377ee225aa5dad56 rdf:reifies <<( doc:FactsPhmBenchmarking cco:is_about doc:FactsCMapssDataset )>> ;
+	prov:wasDerivedFrom doc:d7a5df49ec1d .
+doc:FactsTransformer cco:is_about doc:FactsengineSystem .
+_:ee4b63bf440d621ba7c38ea11df4dede rdf:reifies <<( doc:FactsTransformer cco:is_about doc:FactsengineSystem )>> ;
+	prov:wasDerivedFrom doc:d7a5df49ec1d .
+doc:Factsphm2008_challenge a cco:InformationBearingArtifact .
+_:e0b61f2988f297e90ff3fe042732a8b8 rdf:reifies <<( doc:Factsphm2008_challenge rdf:type cco:InformationBearingArtifact )>> ;
+	prov:wasDerivedFrom doc:d7a5df49ec1d .
+doc:FactsSupportVectorMachine a None:Predictive_maintenance_model .
+_:e469650d2c68634f5a6c47c9bb30d48 rdf:reifies <<( doc:FactsSupportVectorMachine rdf:type None:Predictive_maintenance_model )>> ;
+	prov:wasDerivedFrom doc:d7a5df49ec1d .
+doc:FactsLstm_5 a None:Predictive_maintenance_model .
+_:d2aa27361f11ae4163a01ced085d82b7 rdf:reifies <<( doc:FactsLstm_5 rdf:type None:Predictive_maintenance_model )>> ;
+	prov:wasDerivedFrom doc:d7a5df49ec1d .
+doc:FactsHealthIndicator_1 a None:Data_variable .
+_:a0884f538b5323cd826ba62f296e5b7b rdf:reifies <<( doc:FactsHealthIndicator_1 rdf:type None:Data_variable )>> ;
+	prov:wasDerivedFrom doc:d7a5df49ec1d .
+doc:FactsCMapssDataset rdfs:label "C-MAPSS turbofan engine degradation datasets (NASA)"@en .
+_:a930b47f117af10e456c21f430cf5b5e rdf:reifies <<( doc:FactsCMapssDataset rdfs:label "C-MAPSS turbofan engine degradation datasets (NASA)"@en )>> ;
+	prov:wasDerivedFrom doc:d7a5df49ec1d .
+doc:FactsphysicsBasedDegradationModel a None:Predictive_maintenance_model .
+_:d2b747bfc21176f15d719c02f618a752 rdf:reifies <<( doc:FactsphysicsBasedDegradationModel rdf:type None:Predictive_maintenance_model )>> ;
+	prov:wasDerivedFrom doc:d7a5df49ec1d .
+doc:Factsarticle1_5 schema1:license "CC BY"@en .
+_:f2cf62208308d62d19ae19dbf026a801 rdf:reifies <<( doc:Factsarticle1_5 schema1:license "CC BY"@en )>> ;
+	prov:wasDerivedFrom doc:d7a5df49ec1d .
+doc:FactsmultisourceSensorData a cco:DescriptiveInformationContentEntity .
+_:d7598ad4722087a9ef6221b0fb8a67f4 rdf:reifies <<( doc:FactsmultisourceSensorData rdf:type cco:DescriptiveInformationContentEntity )>> ;
+	prov:wasDerivedFrom doc:d7a5df49ec1d .
+doc:4daa26ab4fed a prov:Entity , schema:text ;
+	prov:generatedAtTime "2026-07-11T03:21:05.015039Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+	schema:position 2 ;
+	schema:identifier "4daa26ab4fed" .
+_:d80743b7ac47f5cb6ec40af163e187e2 prov:wasDerivedFrom doc:4daa26ab4fed .
+doc:FactstransferLearning a None:Data_mining_technique_function .
+_:b98d93ef0f26b10df7ded095802198f rdf:reifies <<( doc:FactstransferLearning rdf:type None:Data_mining_technique_function )>> ;
+	prov:wasDerivedFrom doc:4daa26ab4fed .
+doc:FactsLstmQuantileRegressionFramework None:describes_configuration doc:Factsmodel_config1 .
+_:f9a7fe617923621079596b7737f00826 rdf:reifies <<( doc:FactsLstmQuantileRegressionFramework None:describes_configuration doc:Factsmodel_config1 )>> ;
+	prov:wasDerivedFrom doc:4daa26ab4fed .
+_:e40ced9c85e35fe7e2c3cb8ecb95524 prov:wasDerivedFrom doc:4daa26ab4fed .
+doc:FactspredictionInterval None:has_text_value "Prediction interval derived from quantile regression" .
+_:fbbb5f01975358e0b0b6fc0e6ec8c735 rdf:reifies <<( doc:FactspredictionInterval None:has_text_value "Prediction interval derived from quantile regression" )>> ;
+	prov:wasDerivedFrom doc:4daa26ab4fed .
+doc:Factstitle1_1 None:has_text_value "Reliability-oriented LSTM-based quantile regression framework for turbofan engine RUL prediction" .
+_:ecca8bd470d49c821369945ec9deeb87 rdf:reifies <<( doc:Factstitle1_1 None:has_text_value "Reliability-oriented LSTM-based quantile regression framework for turbofan engine RUL prediction" )>> ;
+	prov:wasDerivedFrom doc:4daa26ab4fed .
+doc:FactspredictionInterval a None:Performance_value .
+_:b3cb590827dca0cc333de4a2284ae5fb rdf:reifies <<( doc:FactspredictionInterval rdf:type None:Performance_value )>> ;
+	prov:wasDerivedFrom doc:4daa26ab4fed .
+doc:FactsdistributionShift a obo:BFO_0000019 .
+_:ac4409fe80dd146816daf99c718a6c8d rdf:reifies <<( doc:FactsdistributionShift rdf:type obo:BFO_0000019 )>> ;
+	prov:wasDerivedFrom doc:4daa26ab4fed .
+doc:FactsupperBound a None:Performance_value .
+_:ada0349455568466b1fc52853c7de139 rdf:reifies <<( doc:FactsupperBound rdf:type None:Performance_value )>> ;
+	prov:wasDerivedFrom doc:4daa26ab4fed .
+doc:FactstransferLearning cco:is_about doc:FactsdistributionShift .
+_:c7ec9ccd8122c8784afbc0c7613ed8d5 rdf:reifies <<( doc:FactstransferLearning cco:is_about doc:FactsdistributionShift )>> ;
+	prov:wasDerivedFrom doc:4daa26ab4fed .
+doc:Factsarticle1_5 cco:describes doc:FactsLstmQuantileRegressionFramework .
+_:b0ffc6112ce00b357b76f08ff23cc72d rdf:reifies <<( doc:Factsarticle1_5 cco:describes doc:FactsLstmQuantileRegressionFramework )>> ;
+	prov:wasDerivedFrom doc:4daa26ab4fed .
+doc:Factsarticle1_5 cco:describes_type None:Remaining_useful_life_estimation .
+_:efaa0a835b1c6c0a7d40bad32677af03 rdf:reifies <<( doc:Factsarticle1_5 cco:describes_type None:Remaining_useful_life_estimation )>> ;
+	prov:wasDerivedFrom doc:4daa26ab4fed .
+doc:Factsmodel_config1 None:has_design_detail doc:Factsdesign1_2 .
+_:e311164f609d198fbd7209f0a6ef85ed rdf:reifies <<( doc:Factsmodel_config1 None:has_design_detail doc:Factsdesign1_2 )>> ;
+	prov:wasDerivedFrom doc:4daa26ab4fed .
+_:a528c664ea4e27e2800ad83708caab18 prov:wasDerivedFrom doc:4daa26ab4fed .
+doc:FactsLstmQuantileRegressionFramework None:describes_type doc:FactsupperBound .
+_:fd2643373cdd5db963c3627143c551de rdf:reifies <<( doc:FactsLstmQuantileRegressionFramework None:describes_type doc:FactsupperBound )>> ;
+	prov:wasDerivedFrom doc:4daa26ab4fed .
+doc:FactsoverestimationPenalty a None:Design_detail .
+_:e8fa6576f35eec8b4a01dfa7935f0b6a rdf:reifies <<( doc:FactsoverestimationPenalty rdf:type None:Design_detail )>> ;
+	prov:wasDerivedFrom doc:4daa26ab4fed .
+_:b13a7c946e1318f4e7a7b9934b4441eb prov:wasDerivedFrom doc:4daa26ab4fed .
+doc:FactsLstmQuantileRegressionFramework None:describes_type doc:FactspredictionInterval .
+_:a26d97ee7a28951897a3e3ddc9c2216d rdf:reifies <<( doc:FactsLstmQuantileRegressionFramework None:describes_type doc:FactspredictionInterval )>> ;
+	prov:wasDerivedFrom doc:4daa26ab4fed .
+doc:Factsarticle1_5 None:has_text_value "Battery-oriented multi-action predictive maintenance coupling probabilistic RUL prediction with downstream maintenance optimization" .
+_:bf9cda11bc6a36a55052b57c9f0feefe rdf:reifies <<( doc:Factsarticle1_5 None:has_text_value "Battery-oriented multi-action predictive maintenance coupling probabilistic RUL prediction with downstream maintenance optimization" )>> ;
+	prov:wasDerivedFrom doc:4daa26ab4fed .
+_:e7240eb926cfbfa44dfe0ffa3776a089 prov:wasDerivedFrom doc:4daa26ab4fed .
+_:b7ab5a0b41b06fb3ce88f33b46266c1b prov:wasDerivedFrom doc:4daa26ab4fed .
+doc:FactsQuantileRegression cco:describes doc:FactspredictionInterval .
+_:e4942eaeb980d27071402fbce2ce42ca rdf:reifies <<( doc:FactsQuantileRegression cco:describes doc:FactspredictionInterval )>> ;
+	prov:wasDerivedFrom doc:4daa26ab4fed .
+doc:FactsLstmQuantileRegressionFramework None:has_predictive_maintenance_function None:Remaining_useful_life_estimation .
+_:acbc7c45be993889c92d3b81729c2929 rdf:reifies <<( doc:FactsLstmQuantileRegressionFramework None:has_predictive_maintenance_function None:Remaining_useful_life_estimation )>> ;
+	prov:wasDerivedFrom doc:4daa26ab4fed .
+doc:FactsLstmModelType a None:Model_type .
+_:f112f132fd50a984d8394935a1400b9c rdf:reifies <<( doc:FactsLstmModelType rdf:type None:Model_type )>> ;
+	prov:wasDerivedFrom doc:4daa26ab4fed .
+doc:Factsmodel_config1 None:has_design_detail doc:FactsoverestimationPenalty .
+_:d3093318d424395ca824503d9f71752a rdf:reifies <<( doc:Factsmodel_config1 None:has_design_detail doc:FactsoverestimationPenalty )>> ;
+	prov:wasDerivedFrom doc:4daa26ab4fed .
+doc:FactsLstmQuantileRegressionFramework a None:Predictive_maintenance_model .
+_:e1d7b1ddd208e8d9a1128dd42fcb4ba0 rdf:reifies <<( doc:FactsLstmQuantileRegressionFramework rdf:type None:Predictive_maintenance_model )>> ;
+	prov:wasDerivedFrom doc:4daa26ab4fed .
+doc:FactsconformalCalibration a cco:Algorithm .
+_:c5f471d0fa524e5c108f117449a81c9 rdf:reifies <<( doc:FactsconformalCalibration rdf:type cco:Algorithm )>> ;
+	prov:wasDerivedFrom doc:4daa26ab4fed .
+_:f40137a75e466b44d12ae11f6f1ea5d3 prov:wasDerivedFrom doc:4daa26ab4fed .
+doc:FactsLstmQuantileRegressionFramework cco:describes doc:FactsconformalCalibration .
+_:aa9bdfeeb85d22b71c5fcde35ef0f04f rdf:reifies <<( doc:FactsLstmQuantileRegressionFramework cco:describes doc:FactsconformalCalibration )>> ;
+	prov:wasDerivedFrom doc:4daa26ab4fed .
+doc:FactsLstmQuantileRegressionFramework cco:is_about doc:FactsengineSystem .
+_:b431f4e0e2ae9a9fb8046a71ecd00f9f rdf:reifies <<( doc:FactsLstmQuantileRegressionFramework cco:is_about doc:FactsengineSystem )>> ;
+	prov:wasDerivedFrom doc:4daa26ab4fed .
+cco:DescriptiveInformationContentEntity owl:sameAs cco:DesignativeInformationContentEntity .
+cco:InformationBearingArtifact owl:sameAs cco:InformationProcessingArtifact .

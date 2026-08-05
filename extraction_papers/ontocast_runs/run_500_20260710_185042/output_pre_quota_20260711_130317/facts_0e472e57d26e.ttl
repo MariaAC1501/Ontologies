@@ -1,0 +1,595 @@
+@prefix None: <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD/seed#> .
+@prefix cco: <http://www.ontologyrepository.com/CommonCoreOntologies/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doc: <https://growgraph.dev/doc/0e472e57d26e/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix obo: <http://purl.obolibrary.org/obo/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix schema: <https://schema.org/> .
+@prefix schema1: <http://schema.org/> .
+doc:be0d53d76800 a prov:Entity , schema:text ;
+	prov:generatedAtTime "2026-07-11T05:58:40.55469Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+	schema:position 0 ;
+	schema:identifier "be0d53d76800" .
+doc:FactsFinding1 a cco:DescriptiveInformationContentEntity .
+_:e3cd6e8bb10ee4c03a48872ff315e583 rdf:reifies <<( doc:FactsFinding1 rdf:type cco:DescriptiveInformationContentEntity )>> ;
+	prov:wasDerivedFrom doc:be0d53d76800 .
+doc:FactsFinding1 None:has_text_value "Mileage alone does not reliably correlate with oil degradation in urban fleets" .
+_:ed54c4b47e96a1279ff5a7f32c33179f rdf:reifies <<( doc:FactsFinding1 None:has_text_value "Mileage alone does not reliably correlate with oil degradation in urban fleets" )>> ;
+	prov:wasDerivedFrom doc:be0d53d76800 .
+doc:FactsGolebiowskiEtAl cco:is_about doc:FactsDataset1_2 .
+_:f09e26e9b3f892374d01565a8f014828 rdf:reifies <<( doc:FactsGolebiowskiEtAl cco:is_about doc:FactsDataset1_2 )>> ;
+	prov:wasDerivedFrom doc:be0d53d76800 .
+doc:FactsAuthorMateusMendes a schema1:Person .
+_:ba5899482478a0cc43ba1be3592107a3 rdf:reifies <<( doc:FactsAuthorMateusMendes rdf:type schema1:Person )>> ;
+	prov:wasDerivedFrom doc:be0d53d76800 .
+doc:Factslukoil_10W40 a schema1:Product .
+_:faa4e0b231ae903c783c17f348111129 rdf:reifies <<( doc:Factslukoil_10W40 rdf:type schema1:Product )>> ;
+	prov:wasDerivedFrom doc:be0d53d76800 .
+doc:FactsNewEnginesBreakin rdfs:label "new engines (break-in phase)" .
+_:ea145e5b9f94e485298293f182dad93e rdf:reifies <<( doc:FactsNewEnginesBreakin rdfs:label "new engines (break-in phase)" )>> ;
+	prov:wasDerivedFrom doc:be0d53d76800 .
+doc:FactsFleet1 cco:describes doc:FactsCityBusEngine .
+_:fd19e0ad54b598584039339b2c6362c1 rdf:reifies <<( doc:FactsFleet1 cco:describes doc:FactsCityBusEngine )>> ;
+	prov:wasDerivedFrom doc:be0d53d76800 .
+doc:Factsoperational_cluster_1 rdfs:label "Urban-use buses with frequent idling and stop-start cycles" .
+_:a069fc5c87176f6f6a328afbc3826f52 rdf:reifies <<( doc:Factsoperational_cluster_1 rdfs:label "Urban-use buses with frequent idling and stop-start cycles" )>> ;
+	prov:wasDerivedFrom doc:be0d53d76800 .
+doc:FactsWaterContamination rdfs:label "physicochemical variables (oil analysis)" .
+_:fb1db10095ec94f47bb9f14281200b8f rdf:reifies <<( doc:FactsWaterContamination rdfs:label "physicochemical variables (oil analysis)" )>> ;
+	prov:wasDerivedFrom doc:be0d53d76800 .
+doc:Factsoperational_cluster_3 rdfs:label "Mature engines under regular operating conditions" .
+_:da5683196b354cdc71464da404cc1c0 rdf:reifies <<( doc:Factsoperational_cluster_3 rdfs:label "Mature engines under regular operating conditions" )>> ;
+	prov:wasDerivedFrom doc:be0d53d76800 .
+doc:FactsWearMetalsVariable a None:Data_variable .
+_:c3c3b07018aaca6d9f3eed529e952dce rdf:reifies <<( doc:FactsWearMetalsVariable rdf:type None:Data_variable )>> ;
+	prov:wasDerivedFrom doc:be0d53d76800 .
+doc:FactsGolebiowskiEtAl None:has_text_value "Study applied multivariate statistical techniques (PCA and K-Means clustering) to in-service oil samples from a fleet using Lukoil 10W40 and identified four operational clusters; result emphasizes physicochemical and contamination variables for CBM." .
+_:b19d6c7900ca86773f97ec021a313800 rdf:reifies <<( doc:FactsGolebiowskiEtAl None:has_text_value "Study applied multivariate statistical techniques (PCA and K-Means clustering) to in-service oil samples from a fleet using Lukoil 10W40 and identified four operational clusters; result emphasizes physicochemical and contamination variables for CBM." )>> ;
+	prov:wasDerivedFrom doc:be0d53d76800 .
+doc:FactsGolebiowskiEtAl cco:is_about doc:Factslukoil_10W40 .
+_:d96470ed990dcb06d187f5631b02f874 rdf:reifies <<( doc:FactsGolebiowskiEtAl cco:is_about doc:Factslukoil_10W40 )>> ;
+	prov:wasDerivedFrom doc:be0d53d76800 .
+doc:Factsoperational_cluster_2 cco:describes doc:FactsNewEnginesBreakin .
+_:b5efec8e33b21166c0f5f31cdc8e250b rdf:reifies <<( doc:Factsoperational_cluster_2 cco:describes doc:FactsNewEnginesBreakin )>> ;
+	prov:wasDerivedFrom doc:be0d53d76800 .
+doc:FactsNewEnginesBreakin a None:item_type .
+_:f4030e01a90bf94bec2d9b0b5a2e9cee rdf:reifies <<( doc:FactsNewEnginesBreakin rdf:type None:item_type )>> ;
+	prov:wasDerivedFrom doc:be0d53d76800 .
+doc:FactsOutlierBus rdfs:label "outlier bus" .
+_:a7094132e2d3aa8ca41eb5257328bf4b rdf:reifies <<( doc:FactsOutlierBus rdfs:label "outlier bus" )>> ;
+	prov:wasDerivedFrom doc:be0d53d76800 .
+doc:FactsWearMetalsVariable rdfs:label "wear metals concentration (oil)" .
+_:d24a50b1f8e2b582a290e1003ba23c69 rdf:reifies <<( doc:FactsWearMetalsVariable rdfs:label "wear metals concentration (oil)" )>> ;
+	prov:wasDerivedFrom doc:be0d53d76800 .
+doc:Factsoperational_cluster_3 cco:describes doc:FactsMatureEnginesGroup .
+_:ba0c4e55370e4e7b3a3d0da9b60615ba rdf:reifies <<( doc:Factsoperational_cluster_3 cco:describes doc:FactsMatureEnginesGroup )>> ;
+	prov:wasDerivedFrom doc:be0d53d76800 .
+doc:FactsKMeans rdfs:label "K-Means clustering" .
+_:ad55d7e3fa82bd56a87a74b876056933 rdf:reifies <<( doc:FactsKMeans rdfs:label "K-Means clustering" )>> ;
+	prov:wasDerivedFrom doc:be0d53d76800 .
+doc:FactsOilDegradation_2 rdfs:label "oil degradation / contamination state" .
+_:c3ae0d52b1d57d4234f89000c49c8b10 rdf:reifies <<( doc:FactsOilDegradation_2 rdfs:label "oil degradation / contamination state" )>> ;
+	prov:wasDerivedFrom doc:be0d53d76800 .
+doc:FactsCityBusEngine a None:Maintainable_item .
+_:d602a98fd3cc01bca7cc09c23e7f24ac rdf:reifies <<( doc:FactsCityBusEngine rdf:type None:Maintainable_item )>> ;
+	prov:wasDerivedFrom doc:be0d53d76800 .
+doc:Factsoperational_cluster_4 a cco:DescriptiveInformationContentEntity .
+_:e6cb2a4baf3b01cb898f6057a2b0734c rdf:reifies <<( doc:Factsoperational_cluster_4 rdf:type cco:DescriptiveInformationContentEntity )>> ;
+	prov:wasDerivedFrom doc:be0d53d76800 .
+doc:FactsGolebiowskiEtAl schema1:author doc:FactsAuthorMateusMendes .
+_:dc658a7357bf74ffa393a11736cba965 rdf:reifies <<( doc:FactsGolebiowskiEtAl schema1:author doc:FactsAuthorMateusMendes )>> ;
+	prov:wasDerivedFrom doc:be0d53d76800 .
+doc:Factsoperational_cluster_2 cco:describes doc:FactsWearMetalsVariable .
+_:b5253e68ea1972b1da40c14d4e693213 rdf:reifies <<( doc:Factsoperational_cluster_2 cco:describes doc:FactsWearMetalsVariable )>> ;
+	prov:wasDerivedFrom doc:be0d53d76800 .
+doc:Factsoperational_cluster_4 cco:describes doc:FactsWaterContamination .
+_:f04aef99b0558010582126f7edbb2c61 rdf:reifies <<( doc:Factsoperational_cluster_4 cco:describes doc:FactsWaterContamination )>> ;
+	prov:wasDerivedFrom doc:be0d53d76800 .
+doc:factspurpose a rdf:Property .
+_:f91ef98768c38f1db890e2a85f924ff9 rdf:reifies <<( doc:factspurpose rdf:type rdf:Property )>> ;
+	prov:wasDerivedFrom doc:be0d53d76800 .
+doc:FactsOilDegradation_2 a None:Design_detail .
+_:a7d2b0346f24212c4b9ec8d54abdad41 rdf:reifies <<( doc:FactsOilDegradation_2 rdf:type None:Design_detail )>> ;
+	prov:wasDerivedFrom doc:be0d53d76800 .
+doc:FactsUrbanBusesGroup a None:item_type .
+_:fb668b5dd7bc512e27828f22a38e82ab rdf:reifies <<( doc:FactsUrbanBusesGroup rdf:type None:item_type )>> ;
+	prov:wasDerivedFrom doc:be0d53d76800 .
+doc:FactsPca_3 rdfs:label "Principal Component Analysis" .
+_:dccef5ee9a76b00a24199e4f5eae4096 rdf:reifies <<( doc:FactsPca_3 rdfs:label "Principal Component Analysis" )>> ;
+	prov:wasDerivedFrom doc:be0d53d76800 .
+doc:FactsAuthorMateusMendes schema1:familyName "Melo Margalho" .
+_:c9158b5d1f9375332f445611e5012813 rdf:reifies <<( doc:FactsAuthorMateusMendes schema1:familyName "Melo Margalho" )>> ;
+	prov:wasDerivedFrom doc:be0d53d76800 .
+doc:FactsGolebiowskiEtAl None:has_title doc:FactsArticleTitle1_8 .
+_:a4213aedcf86b76c4068f5002eef5c69 rdf:reifies <<( doc:FactsGolebiowskiEtAl None:has_title doc:FactsArticleTitle1_8 )>> ;
+	prov:wasDerivedFrom doc:be0d53d76800 .
+doc:FactsFinding1 cco:describes doc:FactsMileage .
+_:f7dd3c8352c475b124b75527756976d6 rdf:reifies <<( doc:FactsFinding1 cco:describes doc:FactsMileage )>> ;
+	prov:wasDerivedFrom doc:be0d53d76800 .
+doc:FactsWaterContamination rdfs:label "contamination variables (oil analysis)" .
+_:bffd1d9a5ca5564ea0bc367f80e0fefa rdf:reifies <<( doc:FactsWaterContamination rdfs:label "contamination variables (oil analysis)" )>> ;
+	prov:wasDerivedFrom doc:be0d53d76800 .
+doc:FactsAuthorMateusMendes schema1:givenName "LuÃ­s" .
+_:a3b85884d181a880c8d0ab29e00796f8 rdf:reifies <<( doc:FactsAuthorMateusMendes schema1:givenName "LuÃ­s" )>> ;
+	prov:wasDerivedFrom doc:be0d53d76800 .
+doc:FactsArticleTitle1_8 a None:Article_title .
+_:b3992c8154e1f2f692b61a3002d1609e rdf:reifies <<( doc:FactsArticleTitle1_8 rdf:type None:Article_title )>> ;
+	prov:wasDerivedFrom doc:be0d53d76800 .
+doc:FactsGolebiowskiEtAl cco:is_about doc:FactsKMeans .
+_:fdc1eb5599c9b88bb73547a66ce4dc0d rdf:reifies <<( doc:FactsGolebiowskiEtAl cco:is_about doc:FactsKMeans )>> ;
+	prov:wasDerivedFrom doc:be0d53d76800 .
+doc:FactsMileage rdfs:label "mileage (vehicle odometer)" .
+_:f7fc1dcbf187fb049b16d14f747d39b9 rdf:reifies <<( doc:FactsMileage rdfs:label "mileage (vehicle odometer)" )>> ;
+	prov:wasDerivedFrom doc:be0d53d76800 .
+doc:FactsAuthorMateusMendes schema1:givenName "Mateus" .
+_:fa3c5790e8083e86d0d4211185e3c2c1 rdf:reifies <<( doc:FactsAuthorMateusMendes schema1:givenName "Mateus" )>> ;
+	prov:wasDerivedFrom doc:be0d53d76800 .
+doc:FactsWaterContamination a None:Data_variable .
+_:a5ec7456fd9c20c7a6cef5536fc1b71c rdf:reifies <<( doc:FactsWaterContamination rdf:type None:Data_variable )>> ;
+	prov:wasDerivedFrom doc:be0d53d76800 .
+doc:FactsAuthorMateusMendes schema1:familyName "GoÅÄbiowski" .
+_:e3107894133d925b3224ced71dcef01f rdf:reifies <<( doc:FactsAuthorMateusMendes schema1:familyName "GoÅÄbiowski" )>> ;
+	prov:wasDerivedFrom doc:be0d53d76800 .
+doc:FactsPca_3 a cco:Algorithm .
+_:c9fb8f3797d9209bc10f88d0af5fbb30 rdf:reifies <<( doc:FactsPca_3 rdf:type cco:Algorithm )>> ;
+	prov:wasDerivedFrom doc:be0d53d76800 .
+doc:Factsoperational_cluster_4 cco:describes doc:FactsOilLeakage .
+_:c717ce383f1dd720af5107bca7c54618 rdf:reifies <<( doc:Factsoperational_cluster_4 cco:describes doc:FactsOilLeakage )>> ;
+	prov:wasDerivedFrom doc:be0d53d76800 .
+doc:FactsGolebiowskiEtAl a None:Predictive_Maintenance_Article .
+_:a8e956d2e7039f0371825b77a4d0ea9f rdf:reifies <<( doc:FactsGolebiowskiEtAl rdf:type None:Predictive_Maintenance_Article )>> ;
+	prov:wasDerivedFrom doc:be0d53d76800 .
+doc:Factsoperational_cluster_4 cco:describes doc:FactsOutlierBus .
+_:dfcfbe9f7d8f276484742197cac52aca rdf:reifies <<( doc:Factsoperational_cluster_4 cco:describes doc:FactsOutlierBus )>> ;
+	prov:wasDerivedFrom doc:be0d53d76800 .
+doc:FactsGolebiowskiEtAl cco:is_about doc:FactsPca_3 .
+_:c4967917905c6e600472002685bc64fd rdf:reifies <<( doc:FactsGolebiowskiEtAl cco:is_about doc:FactsPca_3 )>> ;
+	prov:wasDerivedFrom doc:be0d53d76800 .
+doc:FactsKMeans a None:Clustering .
+_:ce48a7c8bf2740c0fd021d00171511c3 rdf:reifies <<( doc:FactsKMeans rdf:type None:Clustering )>> ;
+	prov:wasDerivedFrom doc:be0d53d76800 .
+doc:FactsCityBusEngine rdfs:label "city bus engine" .
+_:c6c98fa251582c6642d1934d3b9e95f7 rdf:reifies <<( doc:FactsCityBusEngine rdfs:label "city bus engine" )>> ;
+	prov:wasDerivedFrom doc:be0d53d76800 .
+doc:FactsDataset1_2 a cco:Database .
+_:c0e0d3c0fcb530365127f0ffc20b45b0 rdf:reifies <<( doc:FactsDataset1_2 rdf:type cco:Database )>> ;
+	prov:wasDerivedFrom doc:be0d53d76800 .
+doc:FactsOilAnalysisModule cco:describes doc:FactsWaterContamination .
+_:d6df32acb36780ae702b8ed22f577c8c rdf:reifies <<( doc:FactsOilAnalysisModule cco:describes doc:FactsWaterContamination )>> ;
+	prov:wasDerivedFrom doc:be0d53d76800 .
+doc:FactsAuthorMateusMendes schema1:givenName "Branislav" .
+_:dad428d4ee8d22b4c0c72aaed9ca9df6 rdf:reifies <<( doc:FactsAuthorMateusMendes schema1:givenName "Branislav" )>> ;
+	prov:wasDerivedFrom doc:be0d53d76800 .
+doc:FactsPca_3 a None:Data_mining_technique_function .
+_:c8aee2b5f7bb1b91d5e947fe9439d7a1 rdf:reifies <<( doc:FactsPca_3 rdf:type None:Data_mining_technique_function )>> ;
+	prov:wasDerivedFrom doc:be0d53d76800 .
+doc:Factsoperational_cluster_1 a cco:DescriptiveInformationContentEntity .
+_:d3d77c39d3c94c261475442ca52c085d rdf:reifies <<( doc:Factsoperational_cluster_1 rdf:type cco:DescriptiveInformationContentEntity )>> ;
+	prov:wasDerivedFrom doc:be0d53d76800 .
+doc:Factsoperational_cluster_3 a cco:DescriptiveInformationContentEntity .
+_:e128c9c0affdce5ec810148977191e8d rdf:reifies <<( doc:Factsoperational_cluster_3 rdf:type cco:DescriptiveInformationContentEntity )>> ;
+	prov:wasDerivedFrom doc:be0d53d76800 .
+doc:FactsOilAnalysisModule rdfs:label "Condition-Based Maintenance (CBM) strategy" .
+_:e592f417fd0e40a4efd2b32a1f552a3e rdf:reifies <<( doc:FactsOilAnalysisModule rdfs:label "Condition-Based Maintenance (CBM) strategy" )>> ;
+	prov:wasDerivedFrom doc:be0d53d76800 .
+doc:FactsFleet1 a None:maintainable_item_record .
+_:f55dfdd29f9b60b5f2f464f648895ced rdf:reifies <<( doc:FactsFleet1 rdf:type None:maintainable_item_record )>> ;
+	prov:wasDerivedFrom doc:be0d53d76800 .
+doc:FactsAuthorMateusMendes schema1:givenName "Margarida" .
+_:a2b9cb289e4cf5280506d6ab6b292938 rdf:reifies <<( doc:FactsAuthorMateusMendes schema1:givenName "Margarida" )>> ;
+	prov:wasDerivedFrom doc:be0d53d76800 .
+doc:FactsOutlierBus a None:item_type .
+_:b308b2a0a41304bb61a1a2166f282fa rdf:reifies <<( doc:FactsOutlierBus rdf:type None:item_type )>> ;
+	prov:wasDerivedFrom doc:be0d53d76800 .
+doc:FactsFleet1 rdfs:label "urban bus fleet (in-service oil samples)" .
+_:dabe364b7c5be1d3423bb08856cf1908 rdf:reifies <<( doc:FactsFleet1 rdfs:label "urban bus fleet (in-service oil samples)" )>> ;
+	prov:wasDerivedFrom doc:be0d53d76800 .
+doc:FactsGolebiowskiEtAl doc:factspurpose doc:FactsFinding1 .
+_:fd12b05a43f1ff4e574b1b6f16af24c9 rdf:reifies <<( doc:FactsGolebiowskiEtAl doc:factspurpose doc:FactsFinding1 )>> ;
+	prov:wasDerivedFrom doc:be0d53d76800 .
+doc:FactsUrbanBusesGroup rdfs:label "urban-use buses" .
+_:f77a10ab4309f547aa5d5eacfab0cbbd rdf:reifies <<( doc:FactsUrbanBusesGroup rdfs:label "urban-use buses" )>> ;
+	prov:wasDerivedFrom doc:be0d53d76800 .
+doc:FactsKMeans a cco:Algorithm .
+_:bc4421b52e66e27764f85ecdbe33dbc3 rdf:reifies <<( doc:FactsKMeans rdf:type cco:Algorithm )>> ;
+	prov:wasDerivedFrom doc:be0d53d76800 .
+doc:FactsWaterContamination rdfs:label "extreme contamination (oil)" .
+_:d8cae07221084c051a4c63b69625d4dd rdf:reifies <<( doc:FactsWaterContamination rdfs:label "extreme contamination (oil)" )>> ;
+	prov:wasDerivedFrom doc:be0d53d76800 .
+doc:FactsMileage a None:Performance_indicator .
+_:fc078c5cf47d14bf22f8b661925afb49 rdf:reifies <<( doc:FactsMileage rdf:type None:Performance_indicator )>> ;
+	prov:wasDerivedFrom doc:be0d53d76800 .
+doc:Factslukoil_10W40 schema1:name "Lukoil 10W40" .
+_:bb8d1b72cf946a9740d7ada1efcd00f3 rdf:reifies <<( doc:Factslukoil_10W40 schema1:name "Lukoil 10W40" )>> ;
+	prov:wasDerivedFrom doc:be0d53d76800 .
+doc:FactsMatureEnginesGroup rdfs:label "mature engines" .
+_:cd669cf6a10308458b526b561300ea3 rdf:reifies <<( doc:FactsMatureEnginesGroup rdfs:label "mature engines" )>> ;
+	prov:wasDerivedFrom doc:be0d53d76800 .
+doc:FactsAuthorMateusMendes schema1:familyName "Å arkan" .
+_:ad2f1ab97d5c0a41e7732b92758a6de0 rdf:reifies <<( doc:FactsAuthorMateusMendes schema1:familyName "Å arkan" )>> ;
+	prov:wasDerivedFrom doc:be0d53d76800 .
+doc:FactsFinding1 cco:describes doc:FactsOilDegradation_2 .
+_:f34a84046c98b7f908fe2fa33750926f rdf:reifies <<( doc:FactsFinding1 cco:describes doc:FactsOilDegradation_2 )>> ;
+	prov:wasDerivedFrom doc:be0d53d76800 .
+doc:FactsAuthorMateusMendes schema1:familyName "Oliveira Duarte" .
+_:d69998de45af93000062e97876a15c56 rdf:reifies <<( doc:FactsAuthorMateusMendes schema1:familyName "Oliveira Duarte" )>> ;
+	prov:wasDerivedFrom doc:be0d53d76800 .
+doc:FactsMatureEnginesGroup a None:item_type .
+_:c993d8ce99688aaa19ecbe8d88f8e371 rdf:reifies <<( doc:FactsMatureEnginesGroup rdf:type None:item_type )>> ;
+	prov:wasDerivedFrom doc:be0d53d76800 .
+doc:FactsAuthorMateusMendes schema1:familyName "Torres Farinha" .
+_:eeecd33f640a0834367baa7defd000e0 rdf:reifies <<( doc:FactsAuthorMateusMendes schema1:familyName "Torres Farinha" )>> ;
+	prov:wasDerivedFrom doc:be0d53d76800 .
+doc:FactsAuthorMateusMendes schema1:givenName "Wojciech" .
+_:ac7ea3f29851c1099168299163a27e1d rdf:reifies <<( doc:FactsAuthorMateusMendes schema1:givenName "Wojciech" )>> ;
+	prov:wasDerivedFrom doc:be0d53d76800 .
+doc:Factsoperational_cluster_2 rdfs:label "New engines in break-in phase with high levels of wear metals" .
+_:a98eb8ed362875e25b3f44c8e6ec752d rdf:reifies <<( doc:Factsoperational_cluster_2 rdfs:label "New engines in break-in phase with high levels of wear metals" )>> ;
+	prov:wasDerivedFrom doc:be0d53d76800 .
+doc:FactsOilLeakage a None:Design_detail .
+_:b84f02addfd77733fb7ace26d32a5295 rdf:reifies <<( doc:FactsOilLeakage rdf:type None:Design_detail )>> ;
+	prov:wasDerivedFrom doc:be0d53d76800 .
+doc:Factsoperational_cluster_4 rdfs:label "Outlier bus affected by oil leakage and extreme contamination" .
+_:a264db612cde6c3ea82df02fb1424a51 rdf:reifies <<( doc:Factsoperational_cluster_4 rdfs:label "Outlier bus affected by oil leakage and extreme contamination" )>> ;
+	prov:wasDerivedFrom doc:be0d53d76800 .
+doc:FactsArticleTitle1_8 None:has_text_value "Monitoring the condition of city bus engines by analysing used oil using PCA and K-Means clustering" .
+_:d6690457f1b8ad0e38360954d74dadb2 rdf:reifies <<( doc:FactsArticleTitle1_8 None:has_text_value "Monitoring the condition of city bus engines by analysing used oil using PCA and K-Means clustering" )>> ;
+	prov:wasDerivedFrom doc:be0d53d76800 .
+doc:FactsGolebiowskiEtAl cco:is_about doc:FactsOilAnalysisModule .
+_:e48a1718b44535648e98db2fb3dd8142 rdf:reifies <<( doc:FactsGolebiowskiEtAl cco:is_about doc:FactsOilAnalysisModule )>> ;
+	prov:wasDerivedFrom doc:be0d53d76800 .
+doc:FactsDataset1_2 cco:describes doc:FactsFleet1 .
+_:d5485dd9791c30ca06a9ab8464b2981 rdf:reifies <<( doc:FactsDataset1_2 cco:describes doc:FactsFleet1 )>> ;
+	prov:wasDerivedFrom doc:be0d53d76800 .
+doc:FactsDataset1_2 rdfs:label "in-service oil samples from a fleet" .
+_:e9b033d1befcd8aa0edf0942fbf4a794 rdf:reifies <<( doc:FactsDataset1_2 rdfs:label "in-service oil samples from a fleet" )>> ;
+	prov:wasDerivedFrom doc:be0d53d76800 .
+doc:Factsoperational_cluster_2 a cco:DescriptiveInformationContentEntity .
+_:f984a5de629e57caabce8224dad48ff7 rdf:reifies <<( doc:Factsoperational_cluster_2 rdf:type cco:DescriptiveInformationContentEntity )>> ;
+	prov:wasDerivedFrom doc:be0d53d76800 .
+doc:FactsOilLeakage rdfs:label "oil leakage" .
+_:f2527994b0a15f9926d58a6d58a7c4ac rdf:reifies <<( doc:FactsOilLeakage rdfs:label "oil leakage" )>> ;
+	prov:wasDerivedFrom doc:be0d53d76800 .
+doc:FactsOilAnalysisModule a None:Predictive_maintenance_module_function .
+_:aba07d56acc4368ca64a13fc11a8bd74 rdf:reifies <<( doc:FactsOilAnalysisModule rdf:type None:Predictive_maintenance_module_function )>> ;
+	prov:wasDerivedFrom doc:be0d53d76800 .
+doc:FactsAuthorMateusMendes schema1:familyName "Mendes" .
+_:a0688bacd1ad7516752b7f8ea164d049 rdf:reifies <<( doc:FactsAuthorMateusMendes schema1:familyName "Mendes" )>> ;
+	prov:wasDerivedFrom doc:be0d53d76800 .
+doc:FactsAuthorMateusMendes schema1:givenName "JosÃ© Manuel" .
+_:a020a435b04a0640c2d9a28488db20f8 rdf:reifies <<( doc:FactsAuthorMateusMendes schema1:givenName "JosÃ© Manuel" )>> ;
+	prov:wasDerivedFrom doc:be0d53d76800 .
+doc:Factsoperational_cluster_1 cco:describes doc:FactsUrbanBusesGroup .
+_:f1729be79d6c560e033e5e1b955c8c9 rdf:reifies <<( doc:Factsoperational_cluster_1 cco:describes doc:FactsUrbanBusesGroup )>> ;
+	prov:wasDerivedFrom doc:be0d53d76800 .
+doc:a87095997484 a prov:Entity , schema:text ;
+	prov:generatedAtTime "2026-07-11T05:58:40.559689Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+	schema:position 1 ;
+	schema:identifier "a87095997484" .
+doc:FactsEngineLoadVariability a None:Data_variable .
+_:e98afe18624184b4e137c7219a9917d6 rdf:reifies <<( doc:FactsEngineLoadVariability rdf:type None:Data_variable )>> ;
+	prov:wasDerivedFrom doc:a87095997484 .
+doc:FactsOperatingProfiles a None:Data_variable .
+_:d15d71d76385cd561da2631d08dd21f6 rdf:reifies <<( doc:FactsOperatingProfiles rdf:type None:Data_variable )>> ;
+	prov:wasDerivedFrom doc:a87095997484 .
+doc:FactsEnvironmentalConditions doc:factsaffectsDegradation doc:FactsOilDegradation_1 .
+_:fe5e720e988d9faf968ff9406af76e9e rdf:reifies <<( doc:FactsEnvironmentalConditions doc:factsaffectsDegradation doc:FactsOilDegradation_1 )>> ;
+	prov:wasDerivedFrom doc:a87095997484 .
+doc:FactsDataset1_2 doc:factspurpose doc:FactsFleet1 .
+_:b86db42f9d3a63c877f73af54deeb963 rdf:reifies <<( doc:FactsDataset1_2 doc:factspurpose doc:FactsFleet1 )>> ;
+	prov:wasDerivedFrom doc:a87095997484 .
+doc:FactsProlongedIdling None:has_text_value "Oil degradation is significantly impacted by frequent stop-and-go conditions common in urban bus operations" .
+_:f38ac299bcd8347067f63e891bb67db2 rdf:reifies <<( doc:FactsProlongedIdling None:has_text_value "Oil degradation is significantly impacted by frequent stop-and-go conditions common in urban bus operations" )>> ;
+	prov:wasDerivedFrom doc:a87095997484 .
+doc:factsaffectsDegradation a rdf:Property .
+_:f9d33d0766f0ba106d77e3457889f912 rdf:reifies <<( doc:factsaffectsDegradation rdf:type rdf:Property )>> ;
+	prov:wasDerivedFrom doc:a87095997484 .
+doc:FactsMultivariateAnalyticalTools a None:Data_mining_technique_function .
+_:ac8f6028a9b34ab59b4af3524a1c1d4d rdf:reifies <<( doc:FactsMultivariateAnalyticalTools rdf:type None:Data_mining_technique_function )>> ;
+	prov:wasDerivedFrom doc:a87095997484 .
+doc:FactsDataset1_2 rdfs:label "FTIR spectra from in-service engine oil samples" .
+_:dd80b35ab750d2bb44c81ae682757714 rdf:reifies <<( doc:FactsDataset1_2 rdfs:label "FTIR spectra from in-service engine oil samples" )>> ;
+	prov:wasDerivedFrom doc:a87095997484 .
+doc:FactsFinding1 None:has_text_value "conventional univariate indicators" .
+_:b88680bf883e19a18875ef882cecc6b rdf:reifies <<( doc:FactsFinding1 None:has_text_value "conventional univariate indicators" )>> ;
+	prov:wasDerivedFrom doc:a87095997484 .
+_:f91ef98768c38f1db890e2a85f924ff9 prov:wasDerivedFrom doc:a87095997484 .
+doc:FactsProlongedIdling doc:factsaffectsDegradation doc:FactsOilDegradation_1 .
+_:d1f5442fd2a34109752eff0321a67aae rdf:reifies <<( doc:FactsProlongedIdling doc:factsaffectsDegradation doc:FactsOilDegradation_1 )>> ;
+	prov:wasDerivedFrom doc:a87095997484 .
+doc:FactsOilDegradation_1 a obo:BFO_0000019 .
+_:f0c0ca368d987fb53b5109bf609eeca4 rdf:reifies <<( doc:FactsOilDegradation_1 rdf:type obo:BFO_0000019 )>> ;
+	prov:wasDerivedFrom doc:a87095997484 .
+_:ad55d7e3fa82bd56a87a74b876056933 prov:wasDerivedFrom doc:a87095997484 .
+doc:FactsEnvironmentalConditions a None:Data_variable .
+_:da33993bb59989080120f73a9ae9e38b rdf:reifies <<( doc:FactsEnvironmentalConditions rdf:type None:Data_variable )>> ;
+	prov:wasDerivedFrom doc:a87095997484 .
+doc:FactsFleet1 a None:Maintainable_item .
+_:b5a5fdac9414a27e7f671d95829f3f4b rdf:reifies <<( doc:FactsFleet1 rdf:type None:Maintainable_item )>> ;
+	prov:wasDerivedFrom doc:a87095997484 .
+doc:FactsEngineLoadVariability rdfs:label "Engine load variability" .
+_:b3827be7c818f9dfa31ee2276e77eff rdf:reifies <<( doc:FactsEngineLoadVariability rdfs:label "Engine load variability" )>> ;
+	prov:wasDerivedFrom doc:a87095997484 .
+doc:FactsOilDegradation_1 doc:factspurpose doc:FactsEngineLoadVariability .
+_:d7bffe1b4bc72ee0ca4fadd181e11c39 rdf:reifies <<( doc:FactsOilDegradation_1 doc:factspurpose doc:FactsEngineLoadVariability )>> ;
+	prov:wasDerivedFrom doc:a87095997484 .
+doc:FactsGolebiowskiEtAl doc:factspurpose doc:FactsDataset1_2 .
+_:c3650b3f5e7ecc8a77c3323e96a63484 rdf:reifies <<( doc:FactsGolebiowskiEtAl doc:factspurpose doc:FactsDataset1_2 )>> ;
+	prov:wasDerivedFrom doc:a87095997484 .
+doc:FactsMultivariateAnalyticalTools doc:factspurpose doc:FactsFinding1 .
+_:a922dd8f14bb94648063f970d8d5f909 rdf:reifies <<( doc:FactsMultivariateAnalyticalTools doc:factspurpose doc:FactsFinding1 )>> ;
+	prov:wasDerivedFrom doc:a87095997484 .
+doc:FactsEnvironmentalConditions rdfs:label "Environmental conditions" .
+_:bb033cc6df6bfd948dac826a2079f84e rdf:reifies <<( doc:FactsEnvironmentalConditions rdfs:label "Environmental conditions" )>> ;
+	prov:wasDerivedFrom doc:a87095997484 .
+doc:FactsEngineLoadVariability doc:factsaffectsDegradation doc:FactsOilDegradation_1 .
+_:a258885ff2c9bc42c4dd2eddcac331d4 rdf:reifies <<( doc:FactsEngineLoadVariability doc:factsaffectsDegradation doc:FactsOilDegradation_1 )>> ;
+	prov:wasDerivedFrom doc:a87095997484 .
+doc:FactsDataset1_2 a schema1:Product .
+_:a608d7510b2088fc707b8c4eaa5b127e rdf:reifies <<( doc:FactsDataset1_2 rdf:type schema1:Product )>> ;
+	prov:wasDerivedFrom doc:a87095997484 .
+doc:FactsFleet1 a schema1:Organization .
+_:feeabdb6493ad03437e00c1ac4291091 rdf:reifies <<( doc:FactsFleet1 rdf:type schema1:Organization )>> ;
+	prov:wasDerivedFrom doc:a87095997484 .
+_:dccef5ee9a76b00a24199e4f5eae4096 prov:wasDerivedFrom doc:a87095997484 .
+doc:FactsOilDegradation_1 doc:factspurpose doc:FactsProlongedIdling .
+_:bbe15c9b325c159e2291f9469cab9e68 rdf:reifies <<( doc:FactsOilDegradation_1 doc:factspurpose doc:FactsProlongedIdling )>> ;
+	prov:wasDerivedFrom doc:a87095997484 .
+doc:FactsOilDegradation_1 doc:factspurpose doc:FactsEnvironmentalConditions .
+_:ddc0aa773e77bb1ffc71bd63f69c90a5 rdf:reifies <<( doc:FactsOilDegradation_1 doc:factspurpose doc:FactsEnvironmentalConditions )>> ;
+	prov:wasDerivedFrom doc:a87095997484 .
+doc:FactsProlongedIdling rdfs:label "Prolonged idling" .
+_:f11b7bb94b0a39b997a6f78693c22bd3 rdf:reifies <<( doc:FactsProlongedIdling rdfs:label "Prolonged idling" )>> ;
+	prov:wasDerivedFrom doc:a87095997484 .
+doc:FactsDataset1_2 a schema1:Dataset .
+_:b65e3906e657cfd0b82b96a8ad859917 rdf:reifies <<( doc:FactsDataset1_2 rdf:type schema1:Dataset )>> ;
+	prov:wasDerivedFrom doc:a87095997484 .
+doc:FactsDataset1_2 doc:factspurpose doc:FactsDataset1_2 .
+_:c1cb859e879f12e8f5328c900b6c8286 rdf:reifies <<( doc:FactsDataset1_2 doc:factspurpose doc:FactsDataset1_2 )>> ;
+	prov:wasDerivedFrom doc:a87095997484 .
+doc:FactsGolebiowskiEtAl doc:factspurpose doc:FactsPca_3 .
+_:aeebf016cfc470a0b75528ff7f51b538 rdf:reifies <<( doc:FactsGolebiowskiEtAl doc:factspurpose doc:FactsPca_3 )>> ;
+	prov:wasDerivedFrom doc:a87095997484 .
+_:a8e956d2e7039f0371825b77a4d0ea9f prov:wasDerivedFrom doc:a87095997484 .
+_:ce48a7c8bf2740c0fd021d00171511c3 prov:wasDerivedFrom doc:a87095997484 .
+_:c8aee2b5f7bb1b91d5e947fe9439d7a1 prov:wasDerivedFrom doc:a87095997484 .
+doc:FactsOilDegradation_1 doc:factspurpose doc:FactsMaintenanceHistory .
+_:a789dc92c3f84555f940626d3bfe81c5 rdf:reifies <<( doc:FactsOilDegradation_1 doc:factspurpose doc:FactsMaintenanceHistory )>> ;
+	prov:wasDerivedFrom doc:a87095997484 .
+_:e3cd6e8bb10ee4c03a48872ff315e583 prov:wasDerivedFrom doc:a87095997484 .
+doc:FactsGolebiowskiEtAl doc:factspurpose doc:FactsMultivariateAnalyticalTools .
+_:ae852ef6029328284c31d8269e4d9e7b rdf:reifies <<( doc:FactsGolebiowskiEtAl doc:factspurpose doc:FactsMultivariateAnalyticalTools )>> ;
+	prov:wasDerivedFrom doc:a87095997484 .
+doc:FactsMaintenanceHistory doc:factsaffectsDegradation doc:FactsOilDegradation_1 .
+_:a30d376c0c89a8e37d59158a85c05935 rdf:reifies <<( doc:FactsMaintenanceHistory doc:factsaffectsDegradation doc:FactsOilDegradation_1 )>> ;
+	prov:wasDerivedFrom doc:a87095997484 .
+doc:FactsProlongedIdling rdfs:label "Stop-and-go driving" .
+_:a7240e7ae91a75ed7d83535452098491 rdf:reifies <<( doc:FactsProlongedIdling rdfs:label "Stop-and-go driving" )>> ;
+	prov:wasDerivedFrom doc:a87095997484 .
+doc:FactsEnvironmentalConditions rdfs:label "Physicochemical properties" .
+_:bd91741d24f262d2a22acad751365f05 rdf:reifies <<( doc:FactsEnvironmentalConditions rdfs:label "Physicochemical properties" )>> ;
+	prov:wasDerivedFrom doc:a87095997484 .
+doc:FactsProlongedIdling a None:Data_variable .
+_:afcd4db0234cd7c3e6a777b7cbcd8c1c rdf:reifies <<( doc:FactsProlongedIdling rdf:type None:Data_variable )>> ;
+	prov:wasDerivedFrom doc:a87095997484 .
+doc:FactsMaintenanceHistory rdfs:label "Maintenance histories" .
+_:aba04644da9d6692d634310b6c1b5f72 rdf:reifies <<( doc:FactsMaintenanceHistory rdfs:label "Maintenance histories" )>> ;
+	prov:wasDerivedFrom doc:a87095997484 .
+doc:FactsMaintenanceHistory a None:Data_variable .
+_:cc9577a3c7b70debf7ea292e4f1ab451 rdf:reifies <<( doc:FactsMaintenanceHistory rdf:type None:Data_variable )>> ;
+	prov:wasDerivedFrom doc:a87095997484 .
+doc:FactsDataset1_2 None:has_text_value "in-service engine oil samples from a municipal bus fleet" .
+_:ba071c6c6fd4d8fc76527ed0b64fa0a6 rdf:reifies <<( doc:FactsDataset1_2 None:has_text_value "in-service engine oil samples from a municipal bus fleet" )>> ;
+	prov:wasDerivedFrom doc:a87095997484 .
+_:b3992c8154e1f2f692b61a3002d1609e prov:wasDerivedFrom doc:a87095997484 .
+doc:FactsOilDegradation_1 doc:factspurpose doc:FactsOperatingProfiles .
+_:d21498482074c5c79dc91ceeeea6560 rdf:reifies <<( doc:FactsOilDegradation_1 doc:factspurpose doc:FactsOperatingProfiles )>> ;
+	prov:wasDerivedFrom doc:a87095997484 .
+doc:FactsArticleTitle1_8 None:has_text_value "Evaluation of degradation patterns of used engine oils from a municipal bus fleet" .
+_:d567b7a305116412cc95b2f2f7fc47b5 rdf:reifies <<( doc:FactsArticleTitle1_8 None:has_text_value "Evaluation of degradation patterns of used engine oils from a municipal bus fleet" )>> ;
+	prov:wasDerivedFrom doc:a87095997484 .
+doc:FactsGolebiowskiEtAl doc:factspurpose doc:FactsProlongedIdling .
+_:e0f1565ab1ebb8ff521490c34316aeca rdf:reifies <<( doc:FactsGolebiowskiEtAl doc:factspurpose doc:FactsProlongedIdling )>> ;
+	prov:wasDerivedFrom doc:a87095997484 .
+doc:FactsFinding1 None:has_text_value "capture interactions between physicochemical properties, operating profiles, and maintenance histories" .
+_:eb1b027e57053603527efce07e29ed63 rdf:reifies <<( doc:FactsFinding1 None:has_text_value "capture interactions between physicochemical properties, operating profiles, and maintenance histories" )>> ;
+	prov:wasDerivedFrom doc:a87095997484 .
+doc:FactsOperatingProfiles rdfs:label "Operating profiles" .
+_:a64cef960a79719840156488fee1cba6 rdf:reifies <<( doc:FactsOperatingProfiles rdfs:label "Operating profiles" )>> ;
+	prov:wasDerivedFrom doc:a87095997484 .
+doc:FactsProlongedIdling a cco:DescriptiveInformationContentEntity .
+_:ad231e7b3ae52f0344cb8b63fb5f0fea rdf:reifies <<( doc:FactsProlongedIdling rdf:type cco:DescriptiveInformationContentEntity )>> ;
+	prov:wasDerivedFrom doc:a87095997484 .
+doc:FactsOperatingProfiles doc:factsaffectsDegradation doc:FactsOilDegradation_1 .
+_:e485a2508b351c2c9e0b73585fe399c1 rdf:reifies <<( doc:FactsOperatingProfiles doc:factsaffectsDegradation doc:FactsOilDegradation_1 )>> ;
+	prov:wasDerivedFrom doc:a87095997484 .
+_:a4213aedcf86b76c4068f5002eef5c69 prov:wasDerivedFrom doc:a87095997484 .
+doc:FactsGolebiowskiEtAl doc:factspurpose doc:FactsKMeans .
+_:dcefbfb6abe6307293bbb8b5edb3ec88 rdf:reifies <<( doc:FactsGolebiowskiEtAl doc:factspurpose doc:FactsKMeans )>> ;
+	prov:wasDerivedFrom doc:a87095997484 .
+doc:8e9bea83a024 a prov:Entity , schema:text ;
+	prov:generatedAtTime "2026-07-11T05:58:40.562692Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+	schema:position 2 ;
+	schema:identifier "8e9bea83a024" .
+doc:FactsGolebiowskiEtAl schema1:mentions doc:FactsNitration_1 .
+_:ca66bb5c478c143cda60058856113c91 rdf:reifies <<( doc:FactsGolebiowskiEtAl schema1:mentions doc:FactsNitration_1 )>> ;
+	prov:wasDerivedFrom doc:8e9bea83a024 .
+doc:FactsOilAnalysisModule cco:describes doc:FactsNitration_1 .
+_:c7f327ad3e1e830afdda24d2a2048117 rdf:reifies <<( doc:FactsOilAnalysisModule cco:describes doc:FactsNitration_1 )>> ;
+	prov:wasDerivedFrom doc:8e9bea83a024 .
+doc:FactsGolebiowskiEtAl schema1:mentions doc:FactsRecommendationRegularOilAnalysis .
+_:be488ec81281606e95f7ed2cc04f64c2 rdf:reifies <<( doc:FactsGolebiowskiEtAl schema1:mentions doc:FactsRecommendationRegularOilAnalysis )>> ;
+	prov:wasDerivedFrom doc:8e9bea83a024 .
+doc:FactsClusteringAnalysis a None:Clustering .
+_:fee3198d0a6e896203b6614228777b4c rdf:reifies <<( doc:FactsClusteringAnalysis rdf:type None:Clustering )>> ;
+	prov:wasDerivedFrom doc:8e9bea83a024 .
+doc:FactsGolebiowskiEtAl schema1:mentions doc:FactsMultivariateAnalyticalTools .
+_:c2e77aecb68ed7e4d64a1d222f1d332f rdf:reifies <<( doc:FactsGolebiowskiEtAl schema1:mentions doc:FactsMultivariateAnalyticalTools )>> ;
+	prov:wasDerivedFrom doc:8e9bea83a024 .
+doc:FactsGolebiowskiEtAl schema1:mentions doc:Factsfinding_Golebiowski7_CoolingFailures .
+_:c16c1a3e5e0cf7067ae3dbb87c8281ad rdf:reifies <<( doc:FactsGolebiowskiEtAl schema1:mentions doc:Factsfinding_Golebiowski7_CoolingFailures )>> ;
+	prov:wasDerivedFrom doc:8e9bea83a024 .
+doc:FactsRecommendationRegularOilAnalysis a None:Design_detail .
+_:a1c480f0aee466f8f6fcc3b6100aab09 rdf:reifies <<( doc:FactsRecommendationRegularOilAnalysis rdf:type None:Design_detail )>> ;
+	prov:wasDerivedFrom doc:8e9bea83a024 .
+doc:Factsfinding_Raposo4_IntervalChange a None:Performance_value .
+_:bb92f1729e94e761d724616a1dacb642 rdf:reifies <<( doc:Factsfinding_Raposo4_IntervalChange rdf:type None:Performance_value )>> ;
+	prov:wasDerivedFrom doc:8e9bea83a024 .
+doc:FactsOilAnalysisModule cco:describes doc:FactsOxidation_1 .
+_:e194b9195f5d26ceddd26b861e92d822 rdf:reifies <<( doc:FactsOilAnalysisModule cco:describes doc:FactsOxidation_1 )>> ;
+	prov:wasDerivedFrom doc:8e9bea83a024 .
+doc:FactsGolebiowskiEtAl schema1:mentions doc:FactsFtirSpectroscopy .
+_:a183652919fb0b0a32fb0e67ecf59f2d rdf:reifies <<( doc:FactsGolebiowskiEtAl schema1:mentions doc:FactsFtirSpectroscopy )>> ;
+	prov:wasDerivedFrom doc:8e9bea83a024 .
+doc:FactsGolebiowskiEtAl schema1:mentions doc:FactsWaterContamination .
+_:e48526bd9142f2d7963d3f7eae761317 rdf:reifies <<( doc:FactsGolebiowskiEtAl schema1:mentions doc:FactsWaterContamination )>> ;
+	prov:wasDerivedFrom doc:8e9bea83a024 .
+doc:FactsGolebiowskiEtAl schema1:mentions doc:FactsSulfation .
+_:b55a73b363a02ec00a6fceaa46e790a5 rdf:reifies <<( doc:FactsGolebiowskiEtAl schema1:mentions doc:FactsSulfation )>> ;
+	prov:wasDerivedFrom doc:8e9bea83a024 .
+doc:FactsOilAnalysisModule cco:describes doc:FactsSulfation .
+_:b2bd3d57d059572aaf3ebf45acd03ed7 rdf:reifies <<( doc:FactsOilAnalysisModule cco:describes doc:FactsSulfation )>> ;
+	prov:wasDerivedFrom doc:8e9bea83a024 .
+doc:Factsfinding_Golebiowski3_Inefficiency rdfs:label "fixed mileage intervals for oil changes are inefficient" .
+_:bb0df3ebbc243b39523318abd3c78e1e rdf:reifies <<( doc:Factsfinding_Golebiowski3_Inefficiency rdfs:label "fixed mileage intervals for oil changes are inefficient" )>> ;
+	prov:wasDerivedFrom doc:8e9bea83a024 .
+doc:FactsHdxrfElementalAnalysis rdfs:label "HDXRF elemental analysis (elemental/trace metals)" .
+_:f15e110cfe99037fba2f34f1c69e1b81 rdf:reifies <<( doc:FactsHdxrfElementalAnalysis rdfs:label "HDXRF elemental analysis (elemental/trace metals)" )>> ;
+	prov:wasDerivedFrom doc:8e9bea83a024 .
+doc:FactsGolebiowskiEtAl schema1:mentions doc:FactsMultivariateAnalysis .
+_:b06dc6e3904185b7cfa9ca509e18830e rdf:reifies <<( doc:FactsGolebiowskiEtAl schema1:mentions doc:FactsMultivariateAnalysis )>> ;
+	prov:wasDerivedFrom doc:8e9bea83a024 .
+doc:FactsGolebiowskiEtAl schema1:mentions doc:FactsFindingLenzaAcceleratedDegradation .
+_:aad91ade8d42627458a41e91d9b796c rdf:reifies <<( doc:FactsGolebiowskiEtAl schema1:mentions doc:FactsFindingLenzaAcceleratedDegradation )>> ;
+	prov:wasDerivedFrom doc:8e9bea83a024 .
+doc:FactsGolebiowskiEtAl schema1:mentions doc:FactsOilAnalysisMethod .
+_:a91ca550dcd55e501da351939db46836 rdf:reifies <<( doc:FactsGolebiowskiEtAl schema1:mentions doc:FactsOilAnalysisMethod )>> ;
+	prov:wasDerivedFrom doc:8e9bea83a024 .
+doc:FactsFindingLenzaParticulateBuildup rdfs:label "particulate buildup from stop-and-go driving cycles" .
+_:ed838228461223e71e5f7c66d06bea0d rdf:reifies <<( doc:FactsFindingLenzaParticulateBuildup rdfs:label "particulate buildup from stop-and-go driving cycles" )>> ;
+	prov:wasDerivedFrom doc:8e9bea83a024 .
+doc:FactsMultivariateAnalysis a None:Data_mining_technique_function .
+_:a0c05c9b6186cc3db36839cb91d7dc61 rdf:reifies <<( doc:FactsMultivariateAnalysis rdf:type None:Data_mining_technique_function )>> ;
+	prov:wasDerivedFrom doc:8e9bea83a024 .
+doc:FactsGolebiowskiEtAl schema1:mentions doc:FactsRegressionAnalysis .
+_:cf167c42bdda00f52729eeeefa9c1b11 rdf:reifies <<( doc:FactsGolebiowskiEtAl schema1:mentions doc:FactsRegressionAnalysis )>> ;
+	prov:wasDerivedFrom doc:8e9bea83a024 .
+doc:Factsfinding_Golebiowski7_CoolingFailures rdfs:label "oil degradation signatures associated with critical cooling system failures" .
+_:e412b4eea8ce9a8687842ccd1bd792d2 rdf:reifies <<( doc:Factsfinding_Golebiowski7_CoolingFailures rdfs:label "oil degradation signatures associated with critical cooling system failures" )>> ;
+	prov:wasDerivedFrom doc:8e9bea83a024 .
+doc:FactsOilAnalysisModule None:has_predictive_maintenance_function None:Fault_feature_extraction .
+_:c8c467fee2a94e4b27ecdc8dbf64d462 rdf:reifies <<( doc:FactsOilAnalysisModule None:has_predictive_maintenance_function None:Fault_feature_extraction )>> ;
+	prov:wasDerivedFrom doc:8e9bea83a024 .
+doc:FactsGolebiowskiEtAl schema1:mentions doc:FactsWearMetalsVariable .
+_:f60a19f7078e372ba7a4d561b5998c68 rdf:reifies <<( doc:FactsGolebiowskiEtAl schema1:mentions doc:FactsWearMetalsVariable )>> ;
+	prov:wasDerivedFrom doc:8e9bea83a024 .
+doc:FactsOilAnalysisModule None:has_design_detail doc:FactsOilAnalysisMethod .
+_:f15e40141ca0699bf1856ffe1042a48a rdf:reifies <<( doc:FactsOilAnalysisModule None:has_design_detail doc:FactsOilAnalysisMethod )>> ;
+	prov:wasDerivedFrom doc:8e9bea83a024 .
+doc:FactsOilAnalysisMethod a None:Design_detail .
+_:e6c88422251fd8c1948f7f8b0f863b96 rdf:reifies <<( doc:FactsOilAnalysisMethod rdf:type None:Design_detail )>> ;
+	prov:wasDerivedFrom doc:8e9bea83a024 .
+doc:FactsNitration_1 a None:Data_variable .
+_:e17265e3a1274e661b2fdefc3b9bd040 rdf:reifies <<( doc:FactsNitration_1 rdf:type None:Data_variable )>> ;
+	prov:wasDerivedFrom doc:8e9bea83a024 .
+doc:FactsFindingLenzaAcceleratedDegradation a obo:BFO_0000019 .
+_:aff6921cfc4ee75452a3717ffce8c765 rdf:reifies <<( doc:FactsFindingLenzaAcceleratedDegradation rdf:type obo:BFO_0000019 )>> ;
+	prov:wasDerivedFrom doc:8e9bea83a024 .
+doc:FactsOilAnalysisModule None:has_predictive_maintenance_function None:Health_assessment .
+_:b8243bd85ed5bd3631ed44ceda7cf0ee rdf:reifies <<( doc:FactsOilAnalysisModule None:has_predictive_maintenance_function None:Health_assessment )>> ;
+	prov:wasDerivedFrom doc:8e9bea83a024 .
+doc:FactsNitration_1 None:has_interger_value 100 .
+_:ffbbc4e0b4308d308144723d29751400 rdf:reifies <<( doc:FactsNitration_1 None:has_interger_value 100 )>> ;
+	prov:wasDerivedFrom doc:8e9bea83a024 .
+doc:FactsRecommendationRegularOilAnalysis rdfs:label "regular oil analysis optimizes oil change intervals and improves predictive maintenance, enhancing reliability and reducing operational costs" .
+_:cf6628874dc116e12188f1606515e79f rdf:reifies <<( doc:FactsRecommendationRegularOilAnalysis rdfs:label "regular oil analysis optimizes oil change intervals and improves predictive maintenance, enhancing reliability and reducing operational costs" )>> ;
+	prov:wasDerivedFrom doc:8e9bea83a024 .
+doc:FactsOilAnalysisModule a None:Predictive_maintenance_system_module .
+_:dab69baff7d17b332191e4bfc7e755c4 rdf:reifies <<( doc:FactsOilAnalysisModule rdf:type None:Predictive_maintenance_system_module )>> ;
+	prov:wasDerivedFrom doc:8e9bea83a024 .
+doc:Factsfinding_Golebiowski3_Inefficiency a obo:BFO_0000019 .
+_:b46f6161de093fe363821ab38c096451 rdf:reifies <<( doc:Factsfinding_Golebiowski3_Inefficiency rdf:type obo:BFO_0000019 )>> ;
+	prov:wasDerivedFrom doc:8e9bea83a024 .
+doc:Factsoilchangeinterval_After_Raposo4 None:has_interger_value 25000 .
+_:dbe7d0aa8ce00f7b622aeaaa869f5fd1 rdf:reifies <<( doc:Factsoilchangeinterval_After_Raposo4 None:has_interger_value 25000 )>> ;
+	prov:wasDerivedFrom doc:8e9bea83a024 .
+_:a8e956d2e7039f0371825b77a4d0ea9f prov:wasDerivedFrom doc:8e9bea83a024 .
+_:c3c3b07018aaca6d9f3eed529e952dce prov:wasDerivedFrom doc:8e9bea83a024 .
+doc:FactsBlotterSpotTest rdfs:label "blotter spot test (particle analysis)" .
+_:c9ad704b3ca1eadf42e7c4d80c1d08bb rdf:reifies <<( doc:FactsBlotterSpotTest rdfs:label "blotter spot test (particle analysis)" )>> ;
+	prov:wasDerivedFrom doc:8e9bea83a024 .
+doc:FactsHdxrfElementalAnalysis a cco:Algorithm .
+_:f472650069a4cd93670ed58a8fbc6580 rdf:reifies <<( doc:FactsHdxrfElementalAnalysis rdf:type cco:Algorithm )>> ;
+	prov:wasDerivedFrom doc:8e9bea83a024 .
+doc:FactsMultivariateAnalysis rdfs:label "multivariate statistical techniques used to correlate lubricant condition with engine usage and maintenance timing" .
+_:b119da62ea26eec21aaf98532489fd75 rdf:reifies <<( doc:FactsMultivariateAnalysis rdfs:label "multivariate statistical techniques used to correlate lubricant condition with engine usage and maintenance timing" )>> ;
+	prov:wasDerivedFrom doc:8e9bea83a024 .
+doc:FactsFtirSpectroscopy a cco:Algorithm .
+_:c87f3482c8336e4a0ab611f502975340 rdf:reifies <<( doc:FactsFtirSpectroscopy rdf:type cco:Algorithm )>> ;
+	prov:wasDerivedFrom doc:8e9bea83a024 .
+doc:FactsOxidation_1 a None:Data_variable .
+_:f6d6c27b328b8d2c6d40ead8e85413ef rdf:reifies <<( doc:FactsOxidation_1 rdf:type None:Data_variable )>> ;
+	prov:wasDerivedFrom doc:8e9bea83a024 .
+doc:FactsGolebiowskiEtAl schema1:mentions doc:FactsOilAnalysisModule .
+_:dc0e5e6b512fea4fecafcc85ae85c2de rdf:reifies <<( doc:FactsGolebiowskiEtAl schema1:mentions doc:FactsOilAnalysisModule )>> ;
+	prov:wasDerivedFrom doc:8e9bea83a024 .
+doc:FactsFindingLenzaParticulateBuildup a obo:BFO_0000019 .
+_:d894dbecd84b0c200e5a3190f4eeed6c rdf:reifies <<( doc:FactsFindingLenzaParticulateBuildup rdf:type obo:BFO_0000019 )>> ;
+	prov:wasDerivedFrom doc:8e9bea83a024 .
+doc:FactsGolebiowskiEtAl schema1:mentions doc:FactsOxidation_1 .
+_:e1f55d46f770c684abd5fcab0acb3d26 rdf:reifies <<( doc:FactsGolebiowskiEtAl schema1:mentions doc:FactsOxidation_1 )>> ;
+	prov:wasDerivedFrom doc:8e9bea83a024 .
+doc:Factsoilchangeinterval_After_Raposo4 a None:Performance_value .
+_:b0b0d0e145591087f2875b10bd9b00bb rdf:reifies <<( doc:Factsoilchangeinterval_After_Raposo4 rdf:type None:Performance_value )>> ;
+	prov:wasDerivedFrom doc:8e9bea83a024 .
+_:a5ec7456fd9c20c7a6cef5536fc1b71c prov:wasDerivedFrom doc:8e9bea83a024 .
+doc:FactsGolebiowskiEtAl schema1:mentions doc:Factsfinding_Golebiowski3_Inefficiency .
+_:d6b0a69479b309abd3168bbfd5f1b837 rdf:reifies <<( doc:FactsGolebiowskiEtAl schema1:mentions doc:Factsfinding_Golebiowski3_Inefficiency )>> ;
+	prov:wasDerivedFrom doc:8e9bea83a024 .
+doc:FactsGolebiowskiEtAl schema1:mentions doc:Factsoilchangeinterval_After_Raposo4 .
+_:ad7e5dc2b6a6f01dd631435f3e8cfec6 rdf:reifies <<( doc:FactsGolebiowskiEtAl schema1:mentions doc:Factsoilchangeinterval_After_Raposo4 )>> ;
+	prov:wasDerivedFrom doc:8e9bea83a024 .
+doc:FactsGolebiowskiEtAl schema1:mentions doc:FactsHdxrfElementalAnalysis .
+_:c5274c42b81b5532420a968fe6f21d83 rdf:reifies <<( doc:FactsGolebiowskiEtAl schema1:mentions doc:FactsHdxrfElementalAnalysis )>> ;
+	prov:wasDerivedFrom doc:8e9bea83a024 .
+doc:FactsSulfation a None:Data_variable .
+_:e5d27a98b954648393ad9bca3573000c rdf:reifies <<( doc:FactsSulfation rdf:type None:Data_variable )>> ;
+	prov:wasDerivedFrom doc:8e9bea83a024 .
+doc:Factsfinding_Golebiowski7_CoolingFailures a obo:BFO_0000019 .
+_:a6015c0b5a8b7f50d9bc782fe4111d01 rdf:reifies <<( doc:Factsfinding_Golebiowski7_CoolingFailures rdf:type obo:BFO_0000019 )>> ;
+	prov:wasDerivedFrom doc:8e9bea83a024 .
+doc:FactsGolebiowskiEtAl schema1:mentions doc:FactsFindingLenzaParticulateBuildup .
+_:bee3a1efde193976d147b1448cba66bc rdf:reifies <<( doc:FactsGolebiowskiEtAl schema1:mentions doc:FactsFindingLenzaParticulateBuildup )>> ;
+	prov:wasDerivedFrom doc:8e9bea83a024 .
+_:ac8f6028a9b34ab59b4af3524a1c1d4d prov:wasDerivedFrom doc:8e9bea83a024 .
+doc:FactsOilAnalysisModule None:has_predictive_maintenance_function None:Fault_detection .
+_:e4de59deb5b5d522227499e6783bc136 rdf:reifies <<( doc:FactsOilAnalysisModule None:has_predictive_maintenance_function None:Fault_detection )>> ;
+	prov:wasDerivedFrom doc:8e9bea83a024 .
+doc:Factsoilchangeinterval_After_Raposo4 None:has_interger_value 20000 .
+_:f28a875bbabde5aec47987afb0059c02 rdf:reifies <<( doc:Factsoilchangeinterval_After_Raposo4 None:has_interger_value 20000 )>> ;
+	prov:wasDerivedFrom doc:8e9bea83a024 .
+doc:FactsNitration_1 None:has_interger_value 40 .
+_:dee5fbbd329d5e64d7999dd5c4499cd9 rdf:reifies <<( doc:FactsNitration_1 None:has_interger_value 40 )>> ;
+	prov:wasDerivedFrom doc:8e9bea83a024 .
+doc:FactsGolebiowskiEtAl schema1:mentions doc:FactsBlotterSpotTest .
+_:c7412053c6f936a5436304e8662beefa rdf:reifies <<( doc:FactsGolebiowskiEtAl schema1:mentions doc:FactsBlotterSpotTest )>> ;
+	prov:wasDerivedFrom doc:8e9bea83a024 .
+doc:FactsFtirSpectroscopy rdfs:label "FTIR spectroscopy (used for oxidation, nitration, TBN, TAN, contaminants)" .
+_:b9bf40aa44990c731fed2d4059f74b18 rdf:reifies <<( doc:FactsFtirSpectroscopy rdfs:label "FTIR spectroscopy (used for oxidation, nitration, TBN, TAN, contaminants)" )>> ;
+	prov:wasDerivedFrom doc:8e9bea83a024 .
+doc:FactsFindingLenzaAcceleratedDegradation rdfs:label "accelerated oil degradation due to stop-and-go driving" .
+_:f0b55be239fc156416c9a3224f92af26 rdf:reifies <<( doc:FactsFindingLenzaAcceleratedDegradation rdfs:label "accelerated oil degradation due to stop-and-go driving" )>> ;
+	prov:wasDerivedFrom doc:8e9bea83a024 .
+doc:FactsOilAnalysisModule cco:describes doc:FactsWearMetalsVariable .
+_:c9aded2c699e44a386ca8361454402a9 rdf:reifies <<( doc:FactsOilAnalysisModule cco:describes doc:FactsWearMetalsVariable )>> ;
+	prov:wasDerivedFrom doc:8e9bea83a024 .
+doc:FactsTan a None:Data_variable .
+_:bbc2413b12dce42cf840545c48b18e6 rdf:reifies <<( doc:FactsTan rdf:type None:Data_variable )>> ;
+	prov:wasDerivedFrom doc:8e9bea83a024 .
+doc:FactsRegressionAnalysis a None:Regression .
+_:f5ad96ef0a89911d7406341a8d15fa09 rdf:reifies <<( doc:FactsRegressionAnalysis rdf:type None:Regression )>> ;
+	prov:wasDerivedFrom doc:8e9bea83a024 .
+doc:FactsBlotterSpotTest a cco:Algorithm .
+_:d816f4776198de02d497455304af8a58 rdf:reifies <<( doc:FactsBlotterSpotTest rdf:type cco:Algorithm )>> ;
+	prov:wasDerivedFrom doc:8e9bea83a024 .

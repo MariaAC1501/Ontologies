@@ -1,0 +1,545 @@
+@prefix None: <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD/seed#> .
+@prefix cco: <http://www.ontologyrepository.com/CommonCoreOntologies/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doc: <https://growgraph.dev/doc/9f5c1c6a6ea2/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix obo: <http://purl.obolibrary.org/obo/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix cd: <https://growgraph.dev/facts> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix schema: <https://schema.org/> .
+@prefix schema1: <http://schema.org/> .
+doc:214ce88ba021 a prov:Entity , schema:text ;
+	prov:generatedAtTime "2026-07-22T03:10:44.966958Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+	schema:position 0 ;
+	schema:identifier "214ce88ba021" .
+doc:FactstestData rdfs:label "test data" .
+_:a13decc6a62be4c0ecd6d20d63a832bf rdf:reifies <<( doc:FactstestData rdfs:label "test data" )>> ;
+	prov:wasDerivedFrom doc:214ce88ba021 .
+doc:Factssync1_32 a None:Module_synchronization .
+_:e5fd30a948c8258b9540588da4061927 rdf:reifies <<( doc:Factssync1_32 rdf:type None:Module_synchronization )>> ;
+	prov:wasDerivedFrom doc:214ce88ba021 .
+doc:Factssync1_32 None:has_text_value "online" .
+_:fb50872d4db4597a461200dab456cffe rdf:reifies <<( doc:Factssync1_32 None:has_text_value "online" )>> ;
+	prov:wasDerivedFrom doc:214ce88ba021 .
+doc:Factskmeans a cco:Algorithm .
+_:fe46b77e0afb7cbbaf9881135a8f59e0 rdf:reifies <<( doc:Factskmeans rdf:type cco:Algorithm )>> ;
+	prov:wasDerivedFrom doc:214ce88ba021 .
+doc:FactsonlineMonitoringDetail a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Design_detail> .
+_:f3e5a1b595fcebf6b25beda03b0e7b1c rdf:reifies <<( doc:FactsonlineMonitoringDetail rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Design_detail> )>> ;
+	prov:wasDerivedFrom doc:214ce88ba021 .
+doc:InformationContentEntity a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Article_identifier> .
+_:ff60e317b611437ad64766919ef6ceb2 rdf:reifies <<( doc:InformationContentEntity rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Article_identifier> )>> ;
+	prov:wasDerivedFrom doc:214ce88ba021 .
+doc:FactstestData rdfs:label "train data" .
+_:be23b0634e411b4cf7807cb3e3bfb47 rdf:reifies <<( doc:FactstestData rdfs:label "train data" )>> ;
+	prov:wasDerivedFrom doc:214ce88ba021 .
+doc:Factsarticle1_101 None:has_identifier doc:InformationContentEntity .
+_:e8133f1daa543cea3384fcf761cd44b7 rdf:reifies <<( doc:Factsarticle1_101 None:has_identifier doc:InformationContentEntity )>> ;
+	prov:wasDerivedFrom doc:214ce88ba021 .
+doc:Factsarticle1_101 dcterms:subject doc:FactsgasLeakage .
+_:b10c757645a0ac2f0181da7d76e72805 rdf:reifies <<( doc:Factsarticle1_101 dcterms:subject doc:FactsgasLeakage )>> ;
+	prov:wasDerivedFrom doc:214ce88ba021 .
+doc:FactsedgeImpulse None:has_design_detail doc:FactsonlineMonitoringDetail .
+_:f2e2f865ca677f376314e631d8976b8c rdf:reifies <<( doc:FactsedgeImpulse None:has_design_detail doc:FactsonlineMonitoringDetail )>> ;
+	prov:wasDerivedFrom doc:214ce88ba021 .
+doc:FactsgasPipeline rdfs:label "gas pipeline" .
+_:e6c4cef417057314510efd57c40dc979 rdf:reifies <<( doc:FactsgasPipeline rdfs:label "gas pipeline" )>> ;
+	prov:wasDerivedFrom doc:214ce88ba021 .
+doc:FactsgasLeakage a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Classification> .
+_:c33ff0c5372b1763e0fb2076e4c2f908 rdf:reifies <<( doc:FactsgasLeakage rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Classification> )>> ;
+	prov:wasDerivedFrom doc:214ce88ba021 .
+doc:Factsarticle1_101 dcterms:subject doc:FactsedgeImpulse .
+_:da0618950f4d3d20787d8b23d098786d rdf:reifies <<( doc:Factsarticle1_101 dcterms:subject doc:FactsedgeImpulse )>> ;
+	prov:wasDerivedFrom doc:214ce88ba021 .
+doc:Factsaudio_signal1 a cco:InformationContentEntity .
+_:d519e3a73a71ac9a0ce2921d80c13142 rdf:reifies <<( doc:Factsaudio_signal1 rdf:type cco:InformationContentEntity )>> ;
+	prov:wasDerivedFrom doc:214ce88ba021 .
+doc:InformationContentEntity a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Article_title> .
+_:cb5c1ca4655c2beacd63ccb1b12bad98 rdf:reifies <<( doc:InformationContentEntity rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Article_title> )>> ;
+	prov:wasDerivedFrom doc:214ce88ba021 .
+doc:InformationContentEntity None:has_text_value "predictive maintenance method for gas leakage detection using IIOT, Edge Impulse, and k-means" .
+_:eaff2b8e748f12ccd58bdb529ff223a rdf:reifies <<( doc:InformationContentEntity None:has_text_value "predictive maintenance method for gas leakage detection using IIOT, Edge Impulse, and k-means" )>> ;
+	prov:wasDerivedFrom doc:214ce88ba021 .
+doc:FactstestData a cco:InformationContentEntity .
+_:d32cf9b806f1d456628aee59cbc97edc rdf:reifies <<( doc:FactstestData rdf:type cco:InformationContentEntity )>> ;
+	prov:wasDerivedFrom doc:214ce88ba021 .
+doc:FactsgasPipeline a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Maintainable_item> .
+_:da5a1ed64694988ff4cfe6aa5af9edb9 rdf:reifies <<( doc:FactsgasPipeline rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Maintainable_item> )>> ;
+	prov:wasDerivedFrom doc:214ce88ba021 .
+doc:FactsgasLeakage rdfs:label "gas leakage" .
+_:ab2bb11fc388f701e9c186f98089bbae rdf:reifies <<( doc:FactsgasLeakage rdfs:label "gas leakage" )>> ;
+	prov:wasDerivedFrom doc:214ce88ba021 .
+doc:FactshealthyTube a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Maintainable_item> .
+_:c73a4aa72ed85295a5bb5448f2430775 rdf:reifies <<( doc:FactshealthyTube rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Maintainable_item> )>> ;
+	prov:wasDerivedFrom doc:214ce88ba021 .
+doc:Factsarticle1_101 dcterms:subject doc:FactshealthyTube .
+_:b6e15444f2a2f195b8a84538161f12cd rdf:reifies <<( doc:Factsarticle1_101 dcterms:subject doc:FactshealthyTube )>> ;
+	prov:wasDerivedFrom doc:214ce88ba021 .
+doc:FactsgasLeakage a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Maintainable_item> .
+_:d7930c3f6904bfb3df6102d5f07fece7 rdf:reifies <<( doc:FactsgasLeakage rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Maintainable_item> )>> ;
+	prov:wasDerivedFrom doc:214ce88ba021 .
+doc:FactsedgeImpulse a None:Predictive_maintenance_system_module .
+_:da397b86b51e8639f64e2d3ce57843c8 rdf:reifies <<( doc:FactsedgeImpulse rdf:type None:Predictive_maintenance_system_module )>> ;
+	prov:wasDerivedFrom doc:214ce88ba021 .
+doc:FactsedgeImpulse None:has_synchronization doc:Factssync1_32 .
+_:ff76e4b764ab65f4fa8b83c2b5cdb5af rdf:reifies <<( doc:FactsedgeImpulse None:has_synchronization doc:Factssync1_32 )>> ;
+	prov:wasDerivedFrom doc:214ce88ba021 .
+doc:FactsalertMechanism rdfs:label "early warning mechanism" .
+_:f3c39f8c10a3060f5c4afeda7c30df62 rdf:reifies <<( doc:FactsalertMechanism rdfs:label "early warning mechanism" )>> ;
+	prov:wasDerivedFrom doc:214ce88ba021 .
+doc:FactshealthyTube rdfs:label "tube with leakage" .
+_:c5fba9e63ea3ee97793b2b6e5ec86be4 rdf:reifies <<( doc:FactshealthyTube rdfs:label "tube with leakage" )>> ;
+	prov:wasDerivedFrom doc:214ce88ba021 .
+doc:FactsedgeImpulse rdfs:label "Edge Impulse Software" .
+_:c526ca4ca9e4e8da0ca301c2af5c9e58 rdf:reifies <<( doc:FactsedgeImpulse rdfs:label "Edge Impulse Software" )>> ;
+	prov:wasDerivedFrom doc:214ce88ba021 .
+doc:Factsarticle1_101 None:has_title doc:InformationContentEntity .
+_:ad65afa99b6c5dd195f5b809f5c72754 rdf:reifies <<( doc:Factsarticle1_101 None:has_title doc:InformationContentEntity )>> ;
+	prov:wasDerivedFrom doc:214ce88ba021 .
+doc:Factsarticle1_101 None:has_publication_year doc:Factsyear2_1 .
+_:ea7db6dff33854206fef3eefd5acc3c2 rdf:reifies <<( doc:Factsarticle1_101 None:has_publication_year doc:Factsyear2_1 )>> ;
+	prov:wasDerivedFrom doc:214ce88ba021 .
+doc:InformationContentEntity None:has_text_value "Corresponding Author: rak2win@gmail.com" .
+_:c834ee3839b7f622c2ec18908bc96405 rdf:reifies <<( doc:InformationContentEntity None:has_text_value "Corresponding Author: rak2win@gmail.com" )>> ;
+	prov:wasDerivedFrom doc:214ce88ba021 .
+doc:FactsgasLeakage a schema1:Event .
+_:c6e6ebc93409ce2eb5e2af48ca7fd6f4 rdf:reifies <<( doc:FactsgasLeakage rdf:type schema1:Event )>> ;
+	prov:wasDerivedFrom doc:214ce88ba021 .
+doc:Factsarticle1_101 dcterms:subject doc:Factskmeans .
+_:d4be215417330bd2f0168641d3205b74 rdf:reifies <<( doc:Factsarticle1_101 dcterms:subject doc:Factskmeans )>> ;
+	prov:wasDerivedFrom doc:214ce88ba021 .
+doc:Factskmeans a None:Clustering .
+_:fd555e4e9ef0c7c5662f5b73942b86b9 rdf:reifies <<( doc:Factskmeans rdf:type None:Clustering )>> ;
+	prov:wasDerivedFrom doc:214ce88ba021 .
+doc:InformationContentEntity None:has_text_value "An IIOT Approach for Prediction of Gas Leakage in Pipeline Using Edge Software via k means" .
+_:ae69a4e426df0ef47dab00a2074dbdd3 rdf:reifies <<( doc:InformationContentEntity None:has_text_value "An IIOT Approach for Prediction of Gas Leakage in Pipeline Using Edge Software via k means" )>> ;
+	prov:wasDerivedFrom doc:214ce88ba021 .
+doc:Factsarticle1_101 a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Predictive_maintenance_case> .
+_:d885d00b74d27cc075a19fc3fe4ba68e rdf:reifies <<( doc:Factsarticle1_101 rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Predictive_maintenance_case> )>> ;
+	prov:wasDerivedFrom doc:214ce88ba021 .
+doc:FactsedgeImpulse None:has_predictive_maintenance_function doc:FactsgasLeakage .
+_:cc975031b886ec58bfab2193b965e7b2 rdf:reifies <<( doc:FactsedgeImpulse None:has_predictive_maintenance_function doc:FactsgasLeakage )>> ;
+	prov:wasDerivedFrom doc:214ce88ba021 .
+doc:Factsiiot_1 rdfs:label "Industrial Internet of Things" .
+_:de401fb5071c793b6f9dbfb6135e078c rdf:reifies <<( doc:Factsiiot_1 rdfs:label "Industrial Internet of Things" )>> ;
+	prov:wasDerivedFrom doc:214ce88ba021 .
+doc:Factskmeans rdfs:label "k-means algorithm" .
+_:c46af412b660445ad4802b4113c144a2 rdf:reifies <<( doc:Factskmeans rdfs:label "k-means algorithm" )>> ;
+	prov:wasDerivedFrom doc:214ce88ba021 .
+doc:FactshealthyTube rdfs:label "healthy tube" .
+_:d6e594e90395168316630c771aea10ea rdf:reifies <<( doc:FactshealthyTube rdfs:label "healthy tube" )>> ;
+	prov:wasDerivedFrom doc:214ce88ba021 .
+doc:Factsarticle1_101 dcterms:subject doc:Factsiiot_1 .
+_:d289de1b4fe29a716164d53d755b7ac9 rdf:reifies <<( doc:Factsarticle1_101 dcterms:subject doc:Factsiiot_1 )>> ;
+	prov:wasDerivedFrom doc:214ce88ba021 .
+doc:Factsyear2_1 a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Publication_year> .
+_:d4182d208c608c5c90a38ca18ce3bcb8 rdf:reifies <<( doc:Factsyear2_1 rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Publication_year> )>> ;
+	prov:wasDerivedFrom doc:214ce88ba021 .
+doc:Factsaudio_signal1 rdfs:label "audio signal of the gas flow in the healthy tube" .
+_:b35153f532adbf027f687bcd004bb4d4 rdf:reifies <<( doc:Factsaudio_signal1 rdfs:label "audio signal of the gas flow in the healthy tube" )>> ;
+	prov:wasDerivedFrom doc:214ce88ba021 .
+doc:FactsgasLeakage rdfs:label "anomaly detection" .
+_:b283838a68bedc22fb5209109cce4867 rdf:reifies <<( doc:FactsgasLeakage rdfs:label "anomaly detection" )>> ;
+	prov:wasDerivedFrom doc:214ce88ba021 .
+doc:FactsonlineMonitoringDetail None:has_text_value "live detection mechanism throughout its length" .
+_:e0c0860db6b692ca1e359d8f39bf91bb rdf:reifies <<( doc:FactsonlineMonitoringDetail None:has_text_value "live detection mechanism throughout its length" )>> ;
+	prov:wasDerivedFrom doc:214ce88ba021 .
+doc:Factsiiot_1 a cco:InformationContentEntity .
+_:d62847fa2f6238a5b4be091f899d9228 rdf:reifies <<( doc:Factsiiot_1 rdf:type cco:InformationContentEntity )>> ;
+	prov:wasDerivedFrom doc:214ce88ba021 .
+doc:FactsalertMechanism a cco:InformationContentEntity .
+_:ba44ee0413808f7985a1076d29e91ee rdf:reifies <<( doc:FactsalertMechanism rdf:type cco:InformationContentEntity )>> ;
+	prov:wasDerivedFrom doc:214ce88ba021 .
+doc:InformationContentEntity a cco:DescriptiveInformationContentEntity .
+_:ce63bb27d88870978b34653e7274618a rdf:reifies <<( doc:InformationContentEntity rdf:type cco:DescriptiveInformationContentEntity )>> ;
+	prov:wasDerivedFrom doc:214ce88ba021 .
+doc:Factsaudio_signal1 rdfs:label "audio signal of the gas flow in the leakage tube" .
+_:b5a22e47227a640d28bae6399bb9bcd rdf:reifies <<( doc:Factsaudio_signal1 rdfs:label "audio signal of the gas flow in the leakage tube" )>> ;
+	prov:wasDerivedFrom doc:214ce88ba021 .
+doc:Factsyear2_1 None:has_interger_value 2025 .
+_:ebf57252a9ee754fa3995c999e725eaf rdf:reifies <<( doc:Factsyear2_1 None:has_interger_value 2025 )>> ;
+	prov:wasDerivedFrom doc:214ce88ba021 .
+doc:Factsarticle1_101 dcterms:description doc:InformationContentEntity .
+_:fb680612cad6aa52f3f583847941fd01 rdf:reifies <<( doc:Factsarticle1_101 dcterms:description doc:InformationContentEntity )>> ;
+	prov:wasDerivedFrom doc:214ce88ba021 .
+doc:f95ddb2a7c87 a prov:Entity , schema:text ;
+	prov:generatedAtTime "2026-07-22T03:10:44.970957Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+	schema:position 1 ;
+	schema:identifier "f95ddb2a7c87" .
+_:d4182d208c608c5c90a38ca18ce3bcb8 prov:wasDerivedFrom doc:f95ddb2a7c87 .
+doc:Factsatmega328p_microcontroller a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Predictive_maintenance_system_module> .
+_:e1595dc277ccd9980456a6905bdc948a rdf:reifies <<( doc:Factsatmega328p_microcontroller rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Predictive_maintenance_system_module> )>> ;
+	prov:wasDerivedFrom doc:f95ddb2a7c87 .
+doc:FactsleakagePoint rdfs:label "leakage point" .
+_:c3ec08b8699448dda75c331ad10f4f1f rdf:reifies <<( doc:FactsleakagePoint rdfs:label "leakage point" )>> ;
+	prov:wasDerivedFrom doc:f95ddb2a7c87 .
+doc:FactsgasLeakage a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Predictive_maintenance_system_module> .
+_:dc0c30e29f592f0a3fffc00a093bb51a rdf:reifies <<( doc:FactsgasLeakage rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Predictive_maintenance_system_module> )>> ;
+	prov:wasDerivedFrom doc:f95ddb2a7c87 .
+doc:FactsgasLeakage rdfs:label "signal is transmitted" .
+_:c7b56057fa808b9e321076aff62ca68f rdf:reifies <<( doc:FactsgasLeakage rdfs:label "signal is transmitted" )>> ;
+	prov:wasDerivedFrom doc:f95ddb2a7c87 .
+doc:FactsartificialNeuralNetworkModel <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#describes_configuration> doc:FactsannConfiguration .
+_:b77c2c4b3ad0280d905b99c578413ffb rdf:reifies <<( doc:FactsartificialNeuralNetworkModel <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#describes_configuration> doc:FactsannConfiguration )>> ;
+	prov:wasDerivedFrom doc:f95ddb2a7c87 .
+doc:FactsbandSelectFilter a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Predictive_maintenance_system_module> .
+_:f1cfcef472fc2df984c23d3fbc182306 rdf:reifies <<( doc:FactsbandSelectFilter rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Predictive_maintenance_system_module> )>> ;
+	prov:wasDerivedFrom doc:f95ddb2a7c87 .
+doc:FactsmultipleConcurrentFaults a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Predictive_maintenance_case> .
+_:c4ad9b8bcc15c1556d9454f4754f94bb rdf:reifies <<( doc:FactsmultipleConcurrentFaults rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Predictive_maintenance_case> )>> ;
+	prov:wasDerivedFrom doc:f95ddb2a7c87 .
+doc:FactsgasLeakage rdfs:label "leakage detection" .
+_:a2dd6586bd95c8b558b794c6c914627d rdf:reifies <<( doc:FactsgasLeakage rdfs:label "leakage detection" )>> ;
+	prov:wasDerivedFrom doc:f95ddb2a7c87 .
+doc:FactsstaticType rdfs:label "static" .
+_:bf8b2ac2b2dc0f2f8e0f50feda271dbf rdf:reifies <<( doc:FactsstaticType rdfs:label "static" )>> ;
+	prov:wasDerivedFrom doc:f95ddb2a7c87 .
+doc:FactsannConfiguration a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Model_configuration> .
+_:b95b3da9dcbba5ba24d7b1d8282e58ad rdf:reifies <<( doc:FactsannConfiguration rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Model_configuration> )>> ;
+	prov:wasDerivedFrom doc:f95ddb2a7c87 .
+_:cb5c1ca4655c2beacd63ccb1b12bad98 prov:wasDerivedFrom doc:f95ddb2a7c87 .
+doc:FactsartificialNeuralNetworkModel a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Predictive_maintenance_model> .
+_:ecd553ee643ab0def5ecc4adec78d57a rdf:reifies <<( doc:FactsartificialNeuralNetworkModel rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Predictive_maintenance_model> )>> ;
+	prov:wasDerivedFrom doc:f95ddb2a7c87 .
+doc:Factsdisplay a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Predictive_maintenance_system_module> .
+_:f82c2cf37461c0cd5ed6ed062a426291 rdf:reifies <<( doc:Factsdisplay rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Predictive_maintenance_system_module> )>> ;
+	prov:wasDerivedFrom doc:f95ddb2a7c87 .
+doc:Factsatmega328p_microcontroller rdfs:label "ATMEGA328p microcontroller" .
+_:bf468238ac14b0d3a475185adfc0183f rdf:reifies <<( doc:Factsatmega328p_microcontroller rdfs:label "ATMEGA328p microcontroller" )>> ;
+	prov:wasDerivedFrom doc:f95ddb2a7c87 .
+doc:FactsgasConcentrationLevel rdfs:label "gas concentration level" .
+_:c11ea5eac955d378dbe7f951822465b2 rdf:reifies <<( doc:FactsgasConcentrationLevel rdfs:label "gas concentration level" )>> ;
+	prov:wasDerivedFrom doc:f95ddb2a7c87 .
+doc:FactsgasLeakage rdfs:label "gas leakage alerting system" .
+_:e393c0f409dd2f261e20a60f4d1dcddd rdf:reifies <<( doc:FactsgasLeakage rdfs:label "gas leakage alerting system" )>> ;
+	prov:wasDerivedFrom doc:f95ddb2a7c87 .
+doc:Factstraining_2 a cco:Algorithm .
+_:cc73b273672fe265732418cfd87e255e rdf:reifies <<( doc:Factstraining_2 rdf:type cco:Algorithm )>> ;
+	prov:wasDerivedFrom doc:f95ddb2a7c87 .
+doc:FactsgasLeakage a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Fault_detection> .
+_:daa6e44305bac598b8b47e520d4c7d6e rdf:reifies <<( doc:FactsgasLeakage rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Fault_detection> )>> ;
+	prov:wasDerivedFrom doc:f95ddb2a7c87 .
+doc:FactsexhaustFan a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Predictive_maintenance_system_module> .
+_:a898dc8b220597832d3d83b936bc45b8 rdf:reifies <<( doc:FactsexhaustFan rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Predictive_maintenance_system_module> )>> ;
+	prov:wasDerivedFrom doc:f95ddb2a7c87 .
+doc:FactsmultipleConcurrentFaults rdfs:label "multiple concurrent faults" .
+_:e543d72d8cedc4743ed891097cda3a2e rdf:reifies <<( doc:FactsmultipleConcurrentFaults rdfs:label "multiple concurrent faults" )>> ;
+	prov:wasDerivedFrom doc:f95ddb2a7c87 .
+doc:FactshealthAssessmentFunction_2 a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Health_assessment> .
+_:fa2bfb815a98de6b359d0f98794642f3 rdf:reifies <<( doc:FactshealthAssessmentFunction_2 rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Health_assessment> )>> ;
+	prov:wasDerivedFrom doc:f95ddb2a7c87 .
+doc:FactsgasConcentrationLevel a obo:BFO_0000019 .
+_:c7f7d503f7a832e149eef700d0421f91 rdf:reifies <<( doc:FactsgasConcentrationLevel rdf:type obo:BFO_0000019 )>> ;
+	prov:wasDerivedFrom doc:f95ddb2a7c87 .
+doc:FactsgasLeakage rdfs:label "diagnosing" .
+_:e2fb49faa6b2e7065933360536afc1a4 rdf:reifies <<( doc:FactsgasLeakage rdfs:label "diagnosing" )>> ;
+	prov:wasDerivedFrom doc:f95ddb2a7c87 .
+doc:FactsgasLeakage a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Predictive_maintenance_case> .
+_:f3dea3b5b7ea09665577f30caa866307 rdf:reifies <<( doc:FactsgasLeakage rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Predictive_maintenance_case> )>> ;
+	prov:wasDerivedFrom doc:f95ddb2a7c87 .
+doc:FactsdifferentialPressure rdfs:label "differential pressure" .
+_:e2eb7a433973a27dafdd628ca8c1cd3b rdf:reifies <<( doc:FactsdifferentialPressure rdfs:label "differential pressure" )>> ;
+	prov:wasDerivedFrom doc:f95ddb2a7c87 .
+doc:Factsdisplay rdfs:label "relay circuit" .
+_:a8ffab6c618348df3f48c6982ef5616 rdf:reifies <<( doc:Factsdisplay rdfs:label "relay circuit" )>> ;
+	prov:wasDerivedFrom doc:f95ddb2a7c87 .
+doc:FactscorrelationCurve a cco:DescriptiveInformationContentEntity .
+_:b5e9d3d411b87150151a1c78021bf0b4 rdf:reifies <<( doc:FactscorrelationCurve rdf:type cco:DescriptiveInformationContentEntity )>> ;
+	prov:wasDerivedFrom doc:f95ddb2a7c87 .
+doc:Factsyear2_1 <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#has_interger_value> 8 .
+_:ce12477f8f367e333ddca51b0a5b1fb4 rdf:reifies <<( doc:Factsyear2_1 <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#has_interger_value> 8 )>> ;
+	prov:wasDerivedFrom doc:f95ddb2a7c87 .
+doc:FactsenergyConverterDevice rdfs:label "energy converter device" .
+_:f7c3afa9fe7ccd5b8bcaad38fee540da rdf:reifies <<( doc:FactsenergyConverterDevice rdfs:label "energy converter device" )>> ;
+	prov:wasDerivedFrom doc:f95ddb2a7c87 .
+_:da5a1ed64694988ff4cfe6aa5af9edb9 prov:wasDerivedFrom doc:f95ddb2a7c87 .
+doc:FactsannConfiguration rdfs:label "irregular computational model of the pipeline" .
+_:a2330b7e55d012039e9faad4a6916c8d rdf:reifies <<( doc:FactsannConfiguration rdfs:label "irregular computational model of the pipeline" )>> ;
+	prov:wasDerivedFrom doc:f95ddb2a7c87 .
+doc:InformationContentEntity rdfs:label "binary information" .
+_:c49ee87ef54345b4c9b3e2be1f9947b8 rdf:reifies <<( doc:InformationContentEntity rdfs:label "binary information" )>> ;
+	prov:wasDerivedFrom doc:f95ddb2a7c87 .
+doc:InformationContentEntity <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#has_text_value> "[6]-[9]" .
+_:f4c68f0d8f3d8d0782673da4ffb73429 rdf:reifies <<( doc:InformationContentEntity <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#has_text_value> "[6]-[9]" )>> ;
+	prov:wasDerivedFrom doc:f95ddb2a7c87 .
+doc:FactsdelayBasedTraining rdfs:label "delays" .
+_:ca5f33bcaaa81cb77567637302599c2a rdf:reifies <<( doc:FactsdelayBasedTraining rdfs:label "delays" )>> ;
+	prov:wasDerivedFrom doc:f95ddb2a7c87 .
+doc:FactsgasLeakage <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#describes_type> doc:FactsstaticType .
+_:ab35f652187f297851c31baefbe84b33 rdf:reifies <<( doc:FactsgasLeakage <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#describes_type> doc:FactsstaticType )>> ;
+	prov:wasDerivedFrom doc:f95ddb2a7c87 .
+doc:FactsgasPipeline rdfs:label "gas pipe network" .
+_:fc10a1a475d3503bb9d978a1fefb2cfa rdf:reifies <<( doc:FactsgasPipeline rdfs:label "gas pipe network" )>> ;
+	prov:wasDerivedFrom doc:f95ddb2a7c87 .
+doc:FactsgasLeakage rdfs:label "dynamic leakage identification model" .
+_:c092e6bca1830fbb88544262d5bd5493 rdf:reifies <<( doc:FactsgasLeakage rdfs:label "dynamic leakage identification model" )>> ;
+	prov:wasDerivedFrom doc:f95ddb2a7c87 .
+doc:FactsgsmModem rdfs:label "GSM modem" .
+_:cf8ac417995ef973e325fc237544182a rdf:reifies <<( doc:FactsgsmModem rdfs:label "GSM modem" )>> ;
+	prov:wasDerivedFrom doc:f95ddb2a7c87 .
+doc:Factsyear2_1 <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#has_interger_value> 7 .
+_:d300339f58ffda1278dee78026f7ed41 rdf:reifies <<( doc:Factsyear2_1 <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#has_interger_value> 7 )>> ;
+	prov:wasDerivedFrom doc:f95ddb2a7c87 .
+_:ce63bb27d88870978b34653e7274618a prov:wasDerivedFrom doc:f95ddb2a7c87 .
+doc:FactsnumberOfReadings a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Data_variable> .
+_:c840f6e15d356fa13f080ec1fc13b468 rdf:reifies <<( doc:FactsnumberOfReadings rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Data_variable> )>> ;
+	prov:wasDerivedFrom doc:f95ddb2a7c87 .
+doc:Factsyear2_1 <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#has_interger_value> 6 .
+_:e608886a4205fc9fe70ad53761fe7fbe rdf:reifies <<( doc:Factsyear2_1 <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#has_interger_value> 6 )>> ;
+	prov:wasDerivedFrom doc:f95ddb2a7c87 .
+doc:FactsgasLeakage <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#has_predictive_maintenance_function> doc:FactsgasLeakage .
+_:c5503ae400555f58fec8056b1e313892 rdf:reifies <<( doc:FactsgasLeakage <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#has_predictive_maintenance_function> doc:FactsgasLeakage )>> ;
+	prov:wasDerivedFrom doc:f95ddb2a7c87 .
+doc:FactsunsynchronousHeatReading a obo:BFO_0000019 .
+_:bdeb58760664bf1f9dd7a9905cedb323 rdf:reifies <<( doc:FactsunsynchronousHeatReading rdf:type obo:BFO_0000019 )>> ;
+	prov:wasDerivedFrom doc:f95ddb2a7c87 .
+_:ff60e317b611437ad64766919ef6ceb2 prov:wasDerivedFrom doc:f95ddb2a7c87 .
+doc:FactsgasLeakage rdfs:label "leakage identification model" .
+_:adc2151a22edcd108b858b1e6ccc56d7 rdf:reifies <<( doc:FactsgasLeakage rdfs:label "leakage identification model" )>> ;
+	prov:wasDerivedFrom doc:f95ddb2a7c87 .
+doc:FactspickOutConfinedSpotStrategy a cco:Algorithm .
+_:f3617560839206dec96d1fad59e62235 rdf:reifies <<( doc:FactspickOutConfinedSpotStrategy rdf:type cco:Algorithm )>> ;
+	prov:wasDerivedFrom doc:f95ddb2a7c87 .
+doc:FactsstaticType a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#item_type> .
+_:ecdb8d7a4cba7e4d6bdd2d040c68683f rdf:reifies <<( doc:FactsstaticType rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#item_type> )>> ;
+	prov:wasDerivedFrom doc:f95ddb2a7c87 .
+doc:FactsfeatureExtractionFunction rdfs:label "detecting a flow method through just two readings" .
+_:b96fb49972bd6ecb8301d35e62bd87b7 rdf:reifies <<( doc:FactsfeatureExtractionFunction rdfs:label "detecting a flow method through just two readings" )>> ;
+	prov:wasDerivedFrom doc:f95ddb2a7c87 .
+doc:FactsdifferentialPressure a obo:BFO_0000019 .
+_:bae004f4a5cd926a1d19e6db038f7ef4 rdf:reifies <<( doc:FactsdifferentialPressure rdf:type obo:BFO_0000019 )>> ;
+	prov:wasDerivedFrom doc:f95ddb2a7c87 .
+doc:FactswaterDistributionNetwork rdfs:label "water distribution network" .
+_:a92e864de153edd5d2a908cc399e3809 rdf:reifies <<( doc:FactswaterDistributionNetwork rdfs:label "water distribution network" )>> ;
+	prov:wasDerivedFrom doc:f95ddb2a7c87 .
+doc:FactsleakageEquationOutcomes a cco:DescriptiveInformationContentEntity .
+_:ba1ab361794a04de71b3d29a9062641 rdf:reifies <<( doc:FactsleakageEquationOutcomes rdf:type cco:DescriptiveInformationContentEntity )>> ;
+	prov:wasDerivedFrom doc:f95ddb2a7c87 .
+doc:FactshealthAssessmentFunction_2 rdfs:label "rating the current condition" .
+_:c9451e8963a1cea0e1e54b487ad2717a rdf:reifies <<( doc:FactshealthAssessmentFunction_2 rdfs:label "rating the current condition" )>> ;
+	prov:wasDerivedFrom doc:f95ddb2a7c87 .
+doc:Remaining_useful_life_estimation a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Remaining_useful_life_estimation> .
+_:bb5f381a535b5d84426431d160d991c4 rdf:reifies <<( doc:Remaining_useful_life_estimation rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Remaining_useful_life_estimation> )>> ;
+	prov:wasDerivedFrom doc:f95ddb2a7c87 .
+doc:Factstraining_2 rdfs:label "trialing, learning, and validation" .
+_:f43c49c31ffadf11c08e5ab33cf5544f rdf:reifies <<( doc:Factstraining_2 rdfs:label "trialing, learning, and validation" )>> ;
+	prov:wasDerivedFrom doc:f95ddb2a7c87 .
+doc:FactswaterDistributionNetwork a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Maintainable_item> .
+_:a53c135e1a4d53e7130c985178e6646f rdf:reifies <<( doc:FactswaterDistributionNetwork rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Maintainable_item> )>> ;
+	prov:wasDerivedFrom doc:f95ddb2a7c87 .
+doc:FactsunsynchronousHeatReading rdfs:label "unsynchronous heat reading" .
+_:dbcfe6dc4cb312fe0c85646cbcc3fcea rdf:reifies <<( doc:FactsunsynchronousHeatReading rdfs:label "unsynchronous heat reading" )>> ;
+	prov:wasDerivedFrom doc:f95ddb2a7c87 .
+doc:FactspickOutConfinedSpotStrategy rdfs:label "pick out confined spot strategy" .
+_:f97aa117abf81e0c4d83d1a3dacceaf rdf:reifies <<( doc:FactspickOutConfinedSpotStrategy rdfs:label "pick out confined spot strategy" )>> ;
+	prov:wasDerivedFrom doc:f95ddb2a7c87 .
+doc:Factsyear2_1 <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#has_interger_value> 9 .
+_:dcbea3d218b51079dbc95dcab2e448b7 rdf:reifies <<( doc:Factsyear2_1 <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#has_interger_value> 9 )>> ;
+	prov:wasDerivedFrom doc:f95ddb2a7c87 .
+doc:Factsdisplay rdfs:label "display" .
+_:dae8d215fbedbfa0370405a0af838561 rdf:reifies <<( doc:Factsdisplay rdfs:label "display" )>> ;
+	prov:wasDerivedFrom doc:f95ddb2a7c87 .
+doc:FactsartificialNeuralNetworkModel rdfs:label "Artificial Neural Networks (ANN)" .
+_:f8a0e423763bce2506c598c34c86aabb rdf:reifies <<( doc:FactsartificialNeuralNetworkModel rdfs:label "Artificial Neural Networks (ANN)" )>> ;
+	prov:wasDerivedFrom doc:f95ddb2a7c87 .
+doc:FactsartificialNeuralNetworkModel rdfs:label "artificial neural network-based system" .
+_:ab44701af958ace7e1647f77d15c620a rdf:reifies <<( doc:FactsartificialNeuralNetworkModel rdfs:label "artificial neural network-based system" )>> ;
+	prov:wasDerivedFrom doc:f95ddb2a7c87 .
+doc:Factsdisplay rdfs:label "alarm system" .
+_:ebc7dee2d0652d378c190f7ff34c06d7 rdf:reifies <<( doc:Factsdisplay rdfs:label "alarm system" )>> ;
+	prov:wasDerivedFrom doc:f95ddb2a7c87 .
+doc:FactsgasLeakage a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Predictive_maintenance_model> .
+_:edba53d4597545a168d9b7033f0f05a3 rdf:reifies <<( doc:FactsgasLeakage rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Predictive_maintenance_model> )>> ;
+	prov:wasDerivedFrom doc:f95ddb2a7c87 .
+doc:FactsnumberOfReadings rdfs:label "two readings" .
+_:eaf1b671c3f946b51ca59efc84737b3f rdf:reifies <<( doc:FactsnumberOfReadings rdfs:label "two readings" )>> ;
+	prov:wasDerivedFrom doc:f95ddb2a7c87 .
+doc:FactspipeNetwork a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Maintainable_item> .
+_:c9897b7aafa5a62dc744b342255f486c rdf:reifies <<( doc:FactspipeNetwork rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Maintainable_item> )>> ;
+	prov:wasDerivedFrom doc:f95ddb2a7c87 .
+doc:FactsdelayBasedTraining a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Data_variable> .
+_:c1e29d9ee0ae7122be832f53bf3d06b5 rdf:reifies <<( doc:FactsdelayBasedTraining rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Data_variable> )>> ;
+	prov:wasDerivedFrom doc:f95ddb2a7c87 .
+doc:Remaining_useful_life_estimation rdfs:label "forecasting the remaining operational life" .
+_:fddf24720a2b310ea49c91d02aa730fb rdf:reifies <<( doc:Remaining_useful_life_estimation rdfs:label "forecasting the remaining operational life" )>> ;
+	prov:wasDerivedFrom doc:f95ddb2a7c87 .
+doc:FactspipeNetwork rdfs:label "pipe network" .
+_:ce272bfc915166302802564bd8d80aa5 rdf:reifies <<( doc:FactspipeNetwork rdfs:label "pipe network" )>> ;
+	prov:wasDerivedFrom doc:f95ddb2a7c87 .
+_:ab2bb11fc388f701e9c186f98089bbae prov:wasDerivedFrom doc:f95ddb2a7c87 .
+doc:FactsacousticSensorSystem rdfs:label "acoustic sensor system" .
+_:ca69f0a2503b82af27aa78a36e97fd0c rdf:reifies <<( doc:FactsacousticSensorSystem rdfs:label "acoustic sensor system" )>> ;
+	prov:wasDerivedFrom doc:f95ddb2a7c87 .
+doc:FactsbandSelectFilter rdfs:label "band-select filter" .
+_:abbc3086c4fccb19dd27daa4f05e70b1 rdf:reifies <<( doc:FactsbandSelectFilter rdfs:label "band-select filter" )>> ;
+	prov:wasDerivedFrom doc:f95ddb2a7c87 .
+doc:FactsenergyConverterDevice a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Predictive_maintenance_system_module> .
+_:c444f2c2bbfc1d69aa71d546207ab4c1 rdf:reifies <<( doc:FactsenergyConverterDevice rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Predictive_maintenance_system_module> )>> ;
+	prov:wasDerivedFrom doc:f95ddb2a7c87 .
+doc:FactsleakagePoint a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Maintainable_item> .
+_:ca63e7c3ef194abfb94c4b3f20fdb76a rdf:reifies <<( doc:FactsleakagePoint rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Maintainable_item> )>> ;
+	prov:wasDerivedFrom doc:f95ddb2a7c87 .
+doc:FactscorrelationCurve rdfs:label "correlation curves" .
+_:be94856eddc85b1c670db3397b4f80cc rdf:reifies <<( doc:FactscorrelationCurve rdfs:label "correlation curves" )>> ;
+	prov:wasDerivedFrom doc:f95ddb2a7c87 .
+doc:FactsgasLeakage a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Fault_identification> .
+_:e175ca58b667ee4003582066067a28f0 rdf:reifies <<( doc:FactsgasLeakage rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Fault_identification> )>> ;
+	prov:wasDerivedFrom doc:f95ddb2a7c87 .
+doc:FactsleakageEquationOutcomes rdfs:label "leakage equation outcomes" .
+_:f9c76e8671501fb2ce5ec135ced4c7e1 rdf:reifies <<( doc:FactsleakageEquationOutcomes rdfs:label "leakage equation outcomes" )>> ;
+	prov:wasDerivedFrom doc:f95ddb2a7c87 .
+doc:FactsdistinctiveForceInterchangeCalculation rdfs:label "distinctive force interchange calculation" .
+_:e205f2ce2c14236cb3fc1ef024012d6c rdf:reifies <<( doc:FactsdistinctiveForceInterchangeCalculation rdfs:label "distinctive force interchange calculation" )>> ;
+	prov:wasDerivedFrom doc:f95ddb2a7c87 .
+doc:Factsarticle1_101 <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#has_title> doc:InformationContentEntity .
+_:a34f40e6f6100104611c9e70b8ebd627 rdf:reifies <<( doc:Factsarticle1_101 <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#has_title> doc:InformationContentEntity )>> ;
+	prov:wasDerivedFrom doc:f95ddb2a7c87 .
+doc:FactsacousticSensorSystem a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Predictive_maintenance_system_module> .
+_:ede2418941127a45784c537a5051444 rdf:reifies <<( doc:FactsacousticSensorSystem rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Predictive_maintenance_system_module> )>> ;
+	prov:wasDerivedFrom doc:f95ddb2a7c87 .
+doc:FactsgsmModem a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Predictive_maintenance_system_module> .
+_:faf18ebcea5bedd0ff8364563370beb3 rdf:reifies <<( doc:FactsgsmModem rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Predictive_maintenance_system_module> )>> ;
+	prov:wasDerivedFrom doc:f95ddb2a7c87 .
+doc:FactsgasLeakage rdfs:label "static leakage identification model" .
+_:fa70a60e46e53d75459e45fca0f1bee8 rdf:reifies <<( doc:FactsgasLeakage rdfs:label "static leakage identification model" )>> ;
+	prov:wasDerivedFrom doc:f95ddb2a7c87 .
+doc:InformationContentEntity <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#has_text_value> "Literature Review" .
+_:e65dc9c5f5c483a6d54549a7dc30c566 rdf:reifies <<( doc:InformationContentEntity <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#has_text_value> "Literature Review" )>> ;
+	prov:wasDerivedFrom doc:f95ddb2a7c87 .
+doc:FactsexhaustFan rdfs:label "exhaust fan" .
+_:dc0920089162ecb7794b38763c67ee03 rdf:reifies <<( doc:FactsexhaustFan rdfs:label "exhaust fan" )>> ;
+	prov:wasDerivedFrom doc:f95ddb2a7c87 .
+doc:Factsarticle1_101 a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Predictive_Maintenance_Article> .
+_:da1454369bdb3579ca21e113290453d5 rdf:reifies <<( doc:Factsarticle1_101 rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Predictive_Maintenance_Article> )>> ;
+	prov:wasDerivedFrom doc:f95ddb2a7c87 .
+doc:FactsgasLeakage rdfs:label "initiate activation" .
+_:b98dd73889b3715b43f29c977e71a6a8 rdf:reifies <<( doc:FactsgasLeakage rdfs:label "initiate activation" )>> ;
+	prov:wasDerivedFrom doc:f95ddb2a7c87 .
+doc:FactsfeatureExtractionFunction a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Fault_feature_extraction> .
+_:bbf9878c102048ca3a70cac1d5c87860 rdf:reifies <<( doc:FactsfeatureExtractionFunction rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Fault_feature_extraction> )>> ;
+	prov:wasDerivedFrom doc:f95ddb2a7c87 .
+doc:Factsarticle1_101 <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#has_identifier> doc:InformationContentEntity .
+_:b4e5e1b873ded7d9f1ffa309a5268529 rdf:reifies <<( doc:Factsarticle1_101 <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#has_identifier> doc:InformationContentEntity )>> ;
+	prov:wasDerivedFrom doc:f95ddb2a7c87 .
+doc:Factsdisplay rdfs:label "computer" .
+_:b06b3646985fb235a9d01ffa10d80a0d rdf:reifies <<( doc:Factsdisplay rdfs:label "computer" )>> ;
+	prov:wasDerivedFrom doc:f95ddb2a7c87 .
+doc:FactsstaticType rdfs:label "dynamic" .
+_:d7dbbe59a561289e02a79c6052dbf0f6 rdf:reifies <<( doc:FactsstaticType rdfs:label "dynamic" )>> ;
+	prov:wasDerivedFrom doc:f95ddb2a7c87 .
+doc:FactsdistinctiveForceInterchangeCalculation a cco:Algorithm .
+_:a870231aa947738ecdbf80e1fc759ac5 rdf:reifies <<( doc:FactsdistinctiveForceInterchangeCalculation rdf:type cco:Algorithm )>> ;
+	prov:wasDerivedFrom doc:f95ddb2a7c87 .
+doc:c8e6928a8c1d a prov:Entity , schema:text ;
+	prov:generatedAtTime "2026-07-22T03:10:44.977465Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+	schema:position 2 ;
+	schema:identifier "c8e6928a8c1d" .
+doc:FactsautomatedAlerts cco:is_about doc:FactsgasLeakage .
+_:f029abe1a158700e159950806319922d rdf:reifies <<( doc:FactsautomatedAlerts cco:is_about doc:FactsgasLeakage )>> ;
+	prov:wasDerivedFrom doc:c8e6928a8c1d .
+doc:FactsindustrialIotMonitoring a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Health_assessment> .
+_:e1d704a7fb6d325348d13b7405064877 rdf:reifies <<( doc:FactsindustrialIotMonitoring rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Health_assessment> )>> ;
+	prov:wasDerivedFrom doc:c8e6928a8c1d .
+doc:Factspipe a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Maintainable_item> .
+_:a155f99b1f995096b6eca65dbfc07b1b rdf:reifies <<( doc:Factspipe rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Maintainable_item> )>> ;
+	prov:wasDerivedFrom doc:c8e6928a8c1d .
+doc:Factsdisplay obo:BFO_0000051 doc:Factsdisplay .
+_:f7536f06718e6e0d9827956803dafae8 rdf:reifies <<( doc:Factsdisplay obo:BFO_0000051 doc:Factsdisplay )>> ;
+	prov:wasDerivedFrom doc:c8e6928a8c1d .
+doc:FactsautomatedAlerts a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Health_assessment> .
+_:da00da49bc0fbb42a78299c48440ceb3 rdf:reifies <<( doc:FactsautomatedAlerts rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Health_assessment> )>> ;
+	prov:wasDerivedFrom doc:c8e6928a8c1d .
+doc:FactsgasLeakage obo:RO_0000085 doc:FactsautomatedAlerts .
+_:c3b49a2cfded5c10b36e6cb0a3af8742 rdf:reifies <<( doc:FactsgasLeakage obo:RO_0000085 doc:FactsautomatedAlerts )>> ;
+	prov:wasDerivedFrom doc:c8e6928a8c1d .
+doc:Factsaccuracy_98958 a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Performance_value> .
+_:f65ca9d34edce6d500e87c5b903f7336 rdf:reifies <<( doc:Factsaccuracy_98958 rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Performance_value> )>> ;
+	prov:wasDerivedFrom doc:c8e6928a8c1d .
+doc:FactspipeFailureCauseMaintenance cco:is_about doc:Factspipe .
+_:e03a1a27391432b55f1133ffc9c308f1 rdf:reifies <<( doc:FactspipeFailureCauseMaintenance cco:is_about doc:Factspipe )>> ;
+	prov:wasDerivedFrom doc:c8e6928a8c1d .
+doc:Factsdisplay obo:BFO_0000051 doc:FactssatelliteNavigationReceiver .
+_:ca729e6b6427c6f7c9b54a22778124a6 rdf:reifies <<( doc:Factsdisplay obo:BFO_0000051 doc:FactssatelliteNavigationReceiver )>> ;
+	prov:wasDerivedFrom doc:c8e6928a8c1d .
+doc:FactspipeFailureCauseMaintenance a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Design_detail> .
+_:dafe89a603a87e56b9d91a63a50b59ab rdf:reifies <<( doc:FactspipeFailureCauseMaintenance rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Design_detail> )>> ;
+	prov:wasDerivedFrom doc:c8e6928a8c1d .
+doc:FactsindustrialIotMonitoring cco:is_about doc:FactsgasLeakage .
+_:fd2764b3879895e3f40927fe8535d80f rdf:reifies <<( doc:FactsindustrialIotMonitoring cco:is_about doc:FactsgasLeakage )>> ;
+	prov:wasDerivedFrom doc:c8e6928a8c1d .
+doc:FactsgasLeakage cco:is_about doc:FactsgasPipeline .
+_:d41793dde3bd0e8433250af4f8c2a84e rdf:reifies <<( doc:FactsgasLeakage cco:is_about doc:FactsgasPipeline )>> ;
+	prov:wasDerivedFrom doc:c8e6928a8c1d .
+doc:Factsdisplay obo:BFO_0000051 doc:Factsmicrocontroller_1 .
+_:a82926fe746c22d165092f45d1803736 rdf:reifies <<( doc:Factsdisplay obo:BFO_0000051 doc:Factsmicrocontroller_1 )>> ;
+	prov:wasDerivedFrom doc:c8e6928a8c1d .
+doc:FactsgasLeakage cco:is_about doc:Factspipe .
+_:e2d446ad4e73aed860a47e8f24a47edb rdf:reifies <<( doc:FactsgasLeakage cco:is_about doc:Factspipe )>> ;
+	prov:wasDerivedFrom doc:c8e6928a8c1d .
+doc:Factsaccuracy_98958 cco:designates doc:FactsgasLeakage .
+_:f7b8e57d057b8dcf7437f54d1a0d56f2 rdf:reifies <<( doc:Factsaccuracy_98958 cco:designates doc:FactsgasLeakage )>> ;
+	prov:wasDerivedFrom doc:c8e6928a8c1d .
+doc:Factsmicrocontroller_1 a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Design_detail> .
+_:d3b940855c6fcd478d1374c66dad140d rdf:reifies <<( doc:Factsmicrocontroller_1 rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Design_detail> )>> ;
+	prov:wasDerivedFrom doc:c8e6928a8c1d .
+_:daa6e44305bac598b8b47e520d4c7d6e prov:wasDerivedFrom doc:c8e6928a8c1d .
+doc:Factsdisplay cco:is_about doc:FactsgasLeakage .
+_:c6393cfe114c9d223ae0bfe68b0145d5 rdf:reifies <<( doc:Factsdisplay cco:is_about doc:FactsgasLeakage )>> ;
+	prov:wasDerivedFrom doc:c8e6928a8c1d .
+doc:FactsmfccFeatureExtraction a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Fault_feature_extraction> .
+_:f1963a0601d4dfbca74c7ac0dd717f0e rdf:reifies <<( doc:FactsmfccFeatureExtraction rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Fault_feature_extraction> )>> ;
+	prov:wasDerivedFrom doc:c8e6928a8c1d .
+_:da5a1ed64694988ff4cfe6aa5af9edb9 prov:wasDerivedFrom doc:c8e6928a8c1d .
+doc:Factsarticle1_101 cco:describes doc:FactsgasLeakage .
+_:db58683ba8243958ab347ae7e108270 rdf:reifies <<( doc:Factsarticle1_101 cco:describes doc:FactsgasLeakage )>> ;
+	prov:wasDerivedFrom doc:c8e6928a8c1d .
+doc:FactsmfccFeatureExtraction cco:is_about doc:FactsgasLeakage .
+_:e25997f5ac8c23b1647b68fe62c6f751 rdf:reifies <<( doc:FactsmfccFeatureExtraction cco:is_about doc:FactsgasLeakage )>> ;
+	prov:wasDerivedFrom doc:c8e6928a8c1d .
+doc:Factsdisplay obo:BFO_0000051 doc:FactstdlasGasSensor .
+_:b34e21db96bdd2c665938607d3e72b42 rdf:reifies <<( doc:Factsdisplay obo:BFO_0000051 doc:FactstdlasGasSensor )>> ;
+	prov:wasDerivedFrom doc:c8e6928a8c1d .
+doc:Factsaccuracy_98958 cd:has_text_value "0.77" .
+_:aded13ca5cd5839849ec4e010ee7bacb rdf:reifies <<( doc:Factsaccuracy_98958 cd:has_text_value "0.77" )>> ;
+	prov:wasDerivedFrom doc:c8e6928a8c1d .
+_:e175ca58b667ee4003582066067a28f0 prov:wasDerivedFrom doc:c8e6928a8c1d .
+doc:Factsaccuracy_98958 cd:has_text_value "0.70" .
+_:c6f52e09fa581612062d4223e20f82ec rdf:reifies <<( doc:Factsaccuracy_98958 cd:has_text_value "0.70" )>> ;
+	prov:wasDerivedFrom doc:c8e6928a8c1d .
+doc:FactscnnModel_2 cco:is_about doc:FactsgasLeakage .
+_:c217f7794654a0e90403cc40331be161 rdf:reifies <<( doc:FactscnnModel_2 cco:is_about doc:FactsgasLeakage )>> ;
+	prov:wasDerivedFrom doc:c8e6928a8c1d .
+doc:FactsgasLeakage cco:is_about doc:Factsdisplay .
+_:adf3c2942bdb89d4eaad09276cc1769f rdf:reifies <<( doc:FactsgasLeakage cco:is_about doc:Factsdisplay )>> ;
+	prov:wasDerivedFrom doc:c8e6928a8c1d .
+doc:FactssatelliteNavigationReceiver a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Design_detail> .
+_:a23b0624b5514ac4f7db0ac6af809285 rdf:reifies <<( doc:FactssatelliteNavigationReceiver rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Design_detail> )>> ;
+	prov:wasDerivedFrom doc:c8e6928a8c1d .
+doc:FactsgasLeakage cco:is_about doc:FactsgasLeakage .
+_:f7c206974a36f18121312d0522faabd8 rdf:reifies <<( doc:FactsgasLeakage cco:is_about doc:FactsgasLeakage )>> ;
+	prov:wasDerivedFrom doc:c8e6928a8c1d .
+doc:Factsaccuracy_98958 cd:has_text_value "98.958%" .
+_:ee713e98d6a4e122687aecb0082a8ca9 rdf:reifies <<( doc:Factsaccuracy_98958 cd:has_text_value "98.958%" )>> ;
+	prov:wasDerivedFrom doc:c8e6928a8c1d .
+_:dc0c30e29f592f0a3fffc00a093bb51a prov:wasDerivedFrom doc:c8e6928a8c1d .
+doc:FactstdlasGasSensor a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Design_detail> .
+_:cb280da80654ae29c869536201112a85 rdf:reifies <<( doc:FactstdlasGasSensor rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Design_detail> )>> ;
+	prov:wasDerivedFrom doc:c8e6928a8c1d .
+_:f82c2cf37461c0cd5ed6ed062a426291 prov:wasDerivedFrom doc:c8e6928a8c1d .
+doc:FactscnnModel_2 a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Classification> .
+_:c8a17e8b1f48783163e4f9d8ecb92403 rdf:reifies <<( doc:FactscnnModel_2 rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Classification> )>> ;
+	prov:wasDerivedFrom doc:c8e6928a8c1d .
+doc:FactspipeFailureCauseWearAndTear a <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Design_detail> .
+_:b532c64ae8e6f9768b766d489d9cc897 rdf:reifies <<( doc:FactspipeFailureCauseWearAndTear rdf:type <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Design_detail> )>> ;
+	prov:wasDerivedFrom doc:c8e6928a8c1d .
+doc:Factsarticle1_101 cco:is_about doc:FactsgasLeakage .
+_:e7d03405520ee2e9b6b5258dc8872209 rdf:reifies <<( doc:Factsarticle1_101 cco:is_about doc:FactsgasLeakage )>> ;
+	prov:wasDerivedFrom doc:c8e6928a8c1d .
+doc:FactspipeFailureCauseWearAndTear cco:is_about doc:Factspipe .
+_:f90746b6c51f707239776c4bddfb1f34 rdf:reifies <<( doc:FactspipeFailureCauseWearAndTear cco:is_about doc:Factspipe )>> ;
+	prov:wasDerivedFrom doc:c8e6928a8c1d .
+_:da1454369bdb3579ca21e113290453d5 prov:wasDerivedFrom doc:c8e6928a8c1d .
+<http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Predictive_maintenance_case> owl:sameAs <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Predictive_Maintenance_Article> , <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Predictive_maintenance_model> .
+cco:InformationContentEntity owl:sameAs cco:DescriptiveInformationContentEntity .
