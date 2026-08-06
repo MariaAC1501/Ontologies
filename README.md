@@ -29,6 +29,12 @@ Both modes can be run on the same paper for side-by-side comparison. Fixed OPMAD
 - `scripts/compare_diversity_all_papers.py` — reproducible baseline-vs-diversity batch comparison for all available OntoCast facts under `extraction_papers/`
 - `tools/pi_codex_openai_proxy.mjs` — local OpenAI-compatible proxy backed by the Pi ChatGPT Plus/Pro (Codex) subscription OAuth credential
 
+## Dependencies and local patches
+
+This repository does **not** use Conda; use `uv` and a `.venv` for Python dependencies. Direct Python dependencies are in `requirements.txt`; no dependency lockfile is currently committed. The three source dependencies under `external/` are Git submodules pinned by this repository. The CBR build also needs a JDK, and extraction uses the local Pi Codex proxy.
+
+`scripts/setup_submodules.sh` (or `.ps1`) initializes the submodules, applies repository-owned patches from `scripts/apply_local_patches.py`, then installs/builds the stack. The patcher makes idempotent, exact-anchor changes only to local OntoCast and Diversity-in-CBR checkouts; it does not commit changes upstream and fails if an upstream anchor has drifted. CBR source is not patched; `tools/cbr/HeadlessCBR.java` adapts it at runtime. Because `.gitmodules` sets `ignore = dirty`, audit local submodule changes with `git status --ignore-submodules=none`.
+
 ## Documentation map
 
 | Document | Scope |
@@ -40,7 +46,6 @@ Both modes can be run on the same paper for side-by-side comparison. Fixed OPMAD
 | `pipeline/SCHEMA_MAPPING.md` | OPMAD/CSV field mapping and the facts-to-CSV bridge |
 | `pipeline/full_mode/README.md` | Full ontology-evolution mode, outputs, and caveats |
 | `pipeline/INTEGRATION_RESULTS.md` | Integration-validation procedure and historical evidence |
-| `paper/experiments/README.md` | Gold evaluation, LLM baselines, and RQ2 schema/ontology generation workflow |
 
 Documentation under `external/` belongs to its upstream projects and is deliberately not maintained here.
 
