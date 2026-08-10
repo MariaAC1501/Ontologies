@@ -8,7 +8,7 @@ This repo combines:
 
 This repo supports two ways to extract knowledge from predictive-maintenance papers:
 
-1. **Fixed OPMAD mode** — OntoCast extracts facts against the pre-defined OPMAD seed ontology, converts them to a 19-column CSV, and feeds them into the myCBR case-based reasoning system. This is the production path.
+1. **Fixed OPMAD mode** — OntoCast extracts facts against the pre-defined OPMAD seed ontology. A separate repository bridge converts those facts to a 19-column CSV, after which the CBR tooling can query or rebuild the myCBR case base. This staged workflow is the production path.
 
 2. **Full evolution mode** — OntoCast bootstraps and evolves its own ontology from scratch, then extracts facts against it. Results are queried via SPARQL. This is useful for comparing what an unconstrained ontology discovers vs the fixed OPMAD vocabulary.
 
@@ -26,7 +26,7 @@ Both modes can be run on the same paper for side-by-side comparison. Fixed OPMAD
 - `scripts/build_cbr.py` / `scripts/build_cbr.sh` — local jar build
 - `scripts/run_cbr.sh` — local jar runner
 - `scripts/diversify_cbr_results.py` / `pipeline/diversity_rerank.py` — Diversity-in-CBR post-processor for reranking CBR result CSVs
-- `scripts/compare_diversity_all_papers.py` — reproducible baseline-vs-diversity batch comparison for all available OntoCast facts under `extraction_papers/`
+- `scripts/compare_diversity_all_papers.py` — reproducible baseline-vs-diversity batch comparison for canonical OntoCast facts matching `extraction_papers/ontocast_runs/*/output/facts_*.ttl`
 - `tools/pi_codex_openai_proxy.mjs` — local OpenAI-compatible proxy backed by the Pi ChatGPT Plus/Pro (Codex) subscription OAuth credential
 
 ## Dependencies and local patches
@@ -42,7 +42,6 @@ This repository does **not** use Conda; use `uv` and a `.venv` for Python depend
 | `README.md` | Installation and end-to-end workflows maintained by this repository |
 | `scripts/README.md` | Headless CBR commands and diversity-aware reranking |
 | `scripts/LOCAL_PATCHES.md` | Locally maintained, reproducible patches for vendored submodules |
-| `DIVERSITY_COMPARISON_RESULTS.md` | Current batch comparison of plain and diversity-aware CBR retrieval |
 | `pipeline/SCHEMA_MAPPING.md` | OPMAD/CSV field mapping and the facts-to-CSV bridge |
 | `pipeline/full_mode/README.md` | Full ontology-evolution mode, outputs, and caveats |
 | `pipeline/INTEGRATION_RESULTS.md` | Integration-validation procedure and historical evidence |
@@ -71,8 +70,16 @@ git submodule update --init --recursive
 - Git, with submodule support
 - Python 3.12 or later
 - [uv](https://docs.astral.sh/uv/) on `PATH` for virtual-environment and dependency management
+- Node.js 22.19 or later, with `node` and `npm` on `PATH`, for the local subscription proxy
+- [Pi coding agent](https://www.npmjs.com/package/@earendil-works/pi-coding-agent), installed globally with the `pi` command on `PATH`; the proxy resolves Pi's bundled `pi-ai` package at runtime
 - A JDK that provides both `javac` and `jar` on `PATH` for the CBR build
 - Bash for the `.sh` helpers on macOS/Linux (Git Bash is suitable on Windows); PowerShell equivalents are provided for setup and extraction
+
+Install Pi if it is not already available:
+
+```bash
+npm install -g --ignore-scripts @earendil-works/pi-coding-agent
+```
 
 ## UV environment setup (recommended)
 
@@ -164,26 +171,46 @@ bash scripts/run_cbr.sh query-one \
 
 ## Extraction pipeline
 
-The integrated pipeline extracts structured data from predictive-maintenance papers and feeds it into the CBR system.
+The repository provides separate commands to extract structured data from predictive-maintenance papers, convert it to CBR-compatible CSV, and query or rebuild the CBR system. No wrapper runs all three stages automatically.
 
 ### Prerequisites
 
 Both extraction modes require:
 - The `.venv` from [UV environment setup](#uv-environment-setup-recommended), activated in your shell
 - A Pi/OpenAI Codex OAuth login backed by the ChatGPT Plus/Pro subscription. Direct OpenAI API keys (`OPENAI_API_KEY` or `LLM_API_KEY`) are intentionally rejected by the extraction wrappers.
-- The local subscription proxy running in a separate terminal:
+- The local subscription proxy running in a separate terminal
+
+Run Pi first and use `/login` to select **ChatGPT Plus/Pro (Codex)** if the OAuth credential is not present. Then start the proxy with its defaults:
 
 ```bash
-# Run Pi login first if the Codex OAuth credential is not present yet.
-# In Pi, use /login and select ChatGPT Plus/Pro (Codex).
 node tools/pi_codex_openai_proxy.mjs
 ```
 
-`.env` is optional and is only used for non-secret proxy overrides such as `LLM_BASE_URL`, `PI_CODEX_PROXY_PORT`, or `PI_CODEX_MODEL`:
+The proxy reads `PI_CODEX_PROXY_HOST`, `PI_CODEX_PROXY_PORT`, `PI_CODEX_MODEL`, and `PI_AUTH_FILE` from the environment of the terminal that starts `node`; it does **not** load the repository `.env` file. Set overrides in that same terminal, for example:
+
+#### Bash
+
+```bash
+PI_CODEX_PROXY_PORT=9000 PI_CODEX_MODEL=gpt-5.6-luna \
+  node tools/pi_codex_openai_proxy.mjs
+```
+
+#### Windows PowerShell
+
+```powershell
+$env:PI_CODEX_PROXY_PORT = "9000"
+$env:PI_CODEX_MODEL = "gpt-5.6-luna"
+node tools/pi_codex_openai_proxy.mjs
+```
+
+The extraction wrappers, unlike the proxy, load the repository `.env` file. Use `LLM_BASE_URL` there when the proxy does not use its default endpoint; its host and port must match the proxy process:
 
 ```bash
 cp .env.example .env
+# Then set, for example: LLM_BASE_URL=http://127.0.0.1:9000/v1
 ```
+
+Putting `PI_CODEX_PROXY_PORT` or `PI_CODEX_MODEL` in `.env` alone does not configure a proxy started separately.
 
 ### Pipeline flow
 
@@ -191,9 +218,9 @@ cp .env.example .env
 PDF paper
   → OntoCast (fixed-ontology, facts-only mode)
   → RDF/Turtle facts (OPMAD-typed)
-  → facts_to_csv.py
+  → facts_to_csv.py (separate command)
   → 19-column semicolon-delimited CSV
-  → HeadlessCBR query
+  → explicit CBR query or case-base rebuild
 ```
 
 This is the logical end-to-end flow. The extraction wrapper scripts run the **OntoCast extraction step only**; the RDF/Turtle → CSV conversion is a separate follow-up step performed by `pipeline/facts_to_csv.py`.
@@ -223,7 +250,13 @@ The extraction scripts call OntoCast through the local subscription proxy config
 
 The extraction scripts write OntoCast outputs such as `facts_*.ttl`, ontology files, and `run.log`. They do **not** automatically call `pipeline/facts_to_csv.py`, and they do **not** remove an existing `pipeline/test_output/extracted_cases.csv` or older fact/ontology outputs. Clear or archive that directory before a new isolated run; otherwise a later wildcard conversion can combine files from different papers. The Bash runner stages the input PDF as a symbolic link, whereas the PowerShell runner copies it.
 
-> **First run required.** The regression tests and comparison scripts need extraction output to exist. Run at least one extraction before running tests.
+#### Test prerequisites
+
+- The deterministic Python unit tests do **not** require extraction output. Run them at any time with `python -m unittest discover -s pipeline/tests -p "test_*.py"`.
+- `pipeline/tests/test_e2e.sh` and `pipeline/tests/test_regression.sh` require fixed-mode `facts_*.ttl` output; `test_e2e.sh` also requires an explicit `FACTS_PATH`.
+- The fixed-vs-evolved comparison runners under `pipeline/comparison/` require outputs from both extraction modes, ideally generated from the same paper.
+
+See `pipeline/INTEGRATION_RESULTS.md` for exact integration-test commands.
 
 ### Convert facts to CSV
 
@@ -279,29 +312,6 @@ ontologies-cbr query-one `
 | `pipeline/facts_to_csv.py` | Standalone bridge that converts existing RDF/Turtle facts to CBR-compatible CSV |
 | `pipeline/SCHEMA_MAPPING.md` | Detailed documentation of the OPMAD field mapping |
 | `pipeline/INTEGRATION_RESULTS.md` | End-to-end validation procedure and historical evidence |
-
-### RQ2 LLM-generated schema/ontology flow
-
-The paper experiment harness can generate an LLM-designed schema or ontology from `evidence.jsonl`, then use it as context for no-OntoCast JSON extraction:
-
-```bash
-python paper/experiments/generate_llm_schema_or_ontology.py \
-  --evidence paper/experiments/llm_baselines/abstract/evidence.jsonl \
-  --artifact schema_json \
-  --dry-run \
-  --model dry-run-model \
-  --output-dir paper/experiments/llm_baselines/rq2_schema
-
-python paper/experiments/run_llm_json_extraction.py \
-  --evidence paper/experiments/llm_baselines/abstract/evidence.jsonl \
-  --condition llm_schema \
-  --schema-context paper/experiments/llm_baselines/rq2_schema/generated_schema.json \
-  --dry-run \
-  --model dry-run-model \
-  --output paper/experiments/llm_baselines/abstract/llm_schema/predictions.jsonl
-```
-
-For the ontology arm, generate `--artifact ontology_ttl` and pass `--ontology .../generated_ontology.ttl` to `run_llm_json_extraction.py`. Omit `--dry-run` only for approved real API runs with `LLM_BASE_URL`, `LLM_API_KEY`, and `--model` configured. See `paper/experiments/README.md` for the full RQ2/RQ3/RQ4 experiment workflow.
 
 ## Full OntoCast mode (evolved ontology)
 
@@ -367,5 +377,5 @@ Both write the report to `pipeline/comparison/COMPARISON_RESULTS.md`.
 ## Notes
 
 - Extraction runs use the Pi Codex subscription proxy only; direct OpenAI API keys are not supported in this repository workflow.
-- The **fixed OPMAD** mode feeds into the CBR system via CSV. The **full evolution** mode is queried via SPARQL.
+- The **fixed OPMAD** mode produces CBR-compatible CSV through a separate conversion command; querying or rebuilding CBR is another explicit step. The **full evolution** mode is queried via SPARQL.
 - Starting the OntoCast server is a blocking command.
