@@ -42,7 +42,8 @@ This repository does **not** use Conda; use `uv` and a `.venv` for Python depend
 | `README.md` | Installation and end-to-end workflows maintained by this repository |
 | `scripts/README.md` | Headless CBR commands and diversity-aware reranking |
 | `scripts/LOCAL_PATCHES.md` | Locally maintained, reproducible patches for vendored submodules |
-| `pipeline/SCHEMA_MAPPING.md` | OPMAD/CSV field mapping and the facts-to-CSV bridge |
+| `pipeline/SCHEMA_MAPPING.md` | OPMAD/CSV field mapping and the legacy facts-to-CSV bridge |
+| `pipeline/STRICT_REVIEW_EXPORT.md` | Nullable, document-isolated JSON/JSONL export for publication review |
 | `pipeline/full_mode/README.md` | Full ontology-evolution mode, outputs, and caveats |
 | `pipeline/INTEGRATION_RESULTS.md` | Integration-validation procedure and historical evidence |
 
@@ -258,9 +259,21 @@ The extraction scripts write OntoCast outputs such as `facts_*.ttl`, ontology fi
 
 See `pipeline/INTEGRATION_RESULTS.md` for exact integration-test commands.
 
-### Convert facts to CSV
+### Export facts for strict publication review
 
-Use this script when you want to turn existing OntoCast facts into the 19-column CBR CSV format without rerunning extraction. This is also how the test scripts regenerate CSV output from facts fixtures when those generated files are available.
+Use the strict JSON Lines path for nullable analytical records. It parses each facts file independently, preserves source identity, flags unresolved case/article links, and does not invent CBR-required defaults:
+
+```bash
+python pipeline/review_export.py \
+  --facts 'pipeline/test_output/facts_*.ttl' \
+  --output pipeline/test_output/review-records.jsonl
+```
+
+See [`pipeline/STRICT_REVIEW_EXPORT.md`](pipeline/STRICT_REVIEW_EXPORT.md) for the status contract, case-isolation rules, and RDF-star provenance boundary.
+
+### Convert facts to legacy CBR CSV
+
+Use this script only when you want to turn existing OntoCast facts into the 19-column CBR interoperability format without rerunning extraction. This bridge intentionally retains its historical schema-valid defaults and graph-combining behavior for compatibility. It is not the publication-review export. This is also how the test scripts regenerate CSV output from facts fixtures when those generated files are available.
 
 ```bash
 python pipeline/facts_to_csv.py \
