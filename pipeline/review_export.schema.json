@@ -35,19 +35,19 @@
         "study_title", "publication_identifier"
       ],
       "properties": {
-        "publication_year": {"$ref": "#/$defs/integerField"},
+        "publication_year": {"$ref": "#/$defs/yearField"},
         "task": {"$ref": "#/$defs/stringField"},
         "case_study": {"$ref": "#/$defs/stringField"},
         "case_study_type": {"$ref": "#/$defs/stringField"},
         "input_for_model": {"$ref": "#/$defs/stringField"},
-        "number_of_input_variables": {"$ref": "#/$defs/integerField"},
+        "number_of_input_variables": {"$ref": "#/$defs/countField"},
         "input_types": {"$ref": "#/$defs/stringListField"},
         "data_preprocessing": {"$ref": "#/$defs/booleanField"},
         "model_approach": {"$ref": "#/$defs/stringField"},
         "model_types": {"$ref": "#/$defs/stringListField"},
         "models": {"$ref": "#/$defs/stringListField"},
         "module_synchronization": {"$ref": "#/$defs/stringField"},
-        "number_of_failure_modes": {"$ref": "#/$defs/integerField"},
+        "number_of_failure_modes": {"$ref": "#/$defs/countField"},
         "performance_indicator": {"$ref": "#/$defs/stringListField"},
         "performance": {"$ref": "#/$defs/stringListField"},
         "complementary_notes": {"$ref": "#/$defs/stringField"},
@@ -91,21 +91,28 @@
       "additionalProperties": false,
       "allOf": [
         {
-          "if": {"properties": {"status": {"not": {"const": "present"}}}, "required": ["status"]},
-          "then": {"properties": {"value": {"type": "null"}}}
+          "if": {"properties": {"status": {"const": "present"}}, "required": ["status"]},
+          "then": {"properties": {"value": {"not": {"type": "null"}}}},
+          "else": {"properties": {"value": {"type": "null"}}}
         }
       ]
     },
     "stringField": {
       "allOf": [
         {"$ref": "#/$defs/fieldBase"},
-        {"properties": {"value": {"type": ["string", "null"]}}}
+        {"properties": {"value": {"type": ["string", "null"], "minLength": 1}}}
       ]
     },
-    "integerField": {
+    "yearField": {
       "allOf": [
         {"$ref": "#/$defs/fieldBase"},
-        {"properties": {"value": {"type": ["integer", "null"]}}}
+        {"properties": {"value": {"type": ["integer", "null"], "minimum": 1900, "maximum": 2100}}}
+      ]
+    },
+    "countField": {
+      "allOf": [
+        {"$ref": "#/$defs/fieldBase"},
+        {"properties": {"value": {"type": ["integer", "null"], "minimum": 0}}}
       ]
     },
     "booleanField": {
@@ -117,17 +124,18 @@
     "stringListField": {
       "allOf": [
         {"$ref": "#/$defs/fieldBase"},
-        {"properties": {"value": {"oneOf": [{"type": "null"}, {"type": "array", "items": {"type": "string"}, "uniqueItems": true}]}}}
+        {"properties": {"value": {"oneOf": [{"type": "null"}, {"type": "array", "minItems": 1, "items": {"type": "string", "minLength": 1}, "uniqueItems": true}]}}}
       ]
     },
     "sourceDocument": {
       "type": "object",
-      "required": ["facts_filename", "facts_path", "document_id", "sha256", "parse_status", "rdf_star_evidence"],
+      "required": ["facts_filename", "facts_path", "source_identity", "document_id", "sha256", "parse_status", "rdf_star_evidence"],
       "properties": {
         "facts_filename": {"type": "string"},
         "facts_path": {"type": "string"},
-        "document_id": {"type": ["string", "null"]},
-        "sha256": {"type": ["string", "null"]},
+        "source_identity": {"type": "string", "pattern": "^[0-9a-f]{24}$"},
+        "document_id": {"type": ["string", "null"], "pattern": "^[0-9a-f]{64}$"},
+        "sha256": {"type": ["string", "null"], "pattern": "^[0-9a-f]{64}$"},
         "parse_status": {"enum": ["present", "extraction_failure"]},
         "rdf_star_evidence": {
           "type": "object",

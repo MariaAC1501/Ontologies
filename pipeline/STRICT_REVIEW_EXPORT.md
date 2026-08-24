@@ -17,18 +17,21 @@ python pipeline/review_export.py \
 
 Use `--format json` (or an output name ending in `.json`) for one JSON array.
 Every input TTL is read and parsed independently, and its records are appended
-only after that graph's records have been constructed. The CLI exits `2` if
-one or more inputs failed to decode or parse, but still writes an
-`extraction_failure` record for each failed input so batch failures are
-machine-visible.
+only after that graph's records have been constructed. Every literal `--facts`
+argument is attempted even when another argument matches. An unmatched glob
+produces an explicit failure record naming the pattern. The CLI exits `2` if
+an input failed to read/decode/parse or if any asserted field failed
+normalization, while still writing the affected `extraction_failure` records.
+The legacy `facts_to_csv.expand_fact_paths` behavior is unchanged.
 
 ## Record contract (`strict-review-export/1.0`)
 
 The machine-readable JSON Schema is [`review_export.schema.json`](review_export.schema.json). Each JSON record carries:
 
-- a stable content-derived `record_id` and `schema_version`;
-- `source_document`, including the facts filename, path, SHA-256 document ID,
-  parse status, and the number/handling boundary of RDF-star annotations;
+- a stable source-and-content-derived `record_id` and `schema_version`;
+- `source_document`, including the facts filename, path, path-derived
+  `source_identity`, SHA-256 document ID, parse status, and the number/handling
+  boundary of RDF-star annotations;
 - nullable `article_identity` and `case_identity` objects;
 - `case_article_link`, whose `resolution` is `resolved`, `unresolved`, or
   `ambiguous` and which includes the RDF link evidence when resolved;
@@ -48,9 +51,11 @@ Every field has the same shape:
 ```
 
 `value` is the normalized analytical value and is always `null` unless the
-available RDF supports assignment. Lists remain JSON arrays and counts remain
-JSON integers. `raw_values` and source IRIs retain the lexical evidence used in
-normalization where practical.
+available RDF supports assignment. Schema-valid `present` values must be
+non-null and usable (non-empty strings/lists, non-negative counts, and years in
+1900–2100); every other status requires `null`. Lists remain JSON arrays and
+counts remain JSON integers. `raw_values` and source IRIs retain the lexical
+evidence used in normalization where practical.
 
 ### Status meanings
 
@@ -86,17 +91,29 @@ Graphs are never unioned. Within a graph, record scope is a bounded traversal
 of domain relations and does not traverse author or provenance/chunk links.
 A case is paired with an article only when the RDF directly connects them or
 when the case and article explicitly refer to the same designated/about
-resource. If no unique link exists, the exporter emits an unresolved or
-ambiguous record rather than pairing by order or globally assigning entities.
-One article may therefore occur on multiple case records when each link is
-explicit. Unmatched articles are retained as unresolved article records.
+resource. Case traversal starts from the case, not from its article, and treats
+other cases and their directly linked module/model roots as hard boundaries.
+Nodes reachable from more than one case (for example one input node shared by
+two case-specific models) are removed from both scopes and retained as
+`unclear` boundary evidence rather than assigned twice. Evidence belonging only
+to another case is not copied into a record's `raw_values` or `source_nodes`.
+If no unique article link exists, the exporter emits an unresolved or ambiguous
+record rather than pairing by order or globally assigning entities. One article
+may therefore occur on multiple case records when each link is explicit.
+Unmatched articles are retained as unresolved article records.
 
 ## Current limitations and provenance boundary
 
 - OPMAD does not itself provide all links needed to identify article-to-case,
   model-to-case, or field-to-case membership in arbitrary extraction output.
-  Unlinked candidate entities are exposed as `unclear`, not guessed. Full
-  multi-case extraction needs explicit case/provenance linkage upstream.
+  The boundary algorithm relies on explicit domain links, direct case roots,
+  and bounded traversal; disconnected evidence is `unclear`, and densely
+  interconnected case graphs can conservatively mark shared evidence unclear.
+  Full multi-case extraction still needs explicit case/provenance linkage
+  upstream.
+- OPMAD class recognition is limited to the authoritative `OPMAD#` namespace
+  and the accepted historical `OPMAD/seed#` namespace. Arbitrary classes that
+  merely reuse an OPMAD local name are ignored.
 - Stock `rdflib` in this project does not parse OntoCast's RDF-star reification
   syntax. As in the compatibility bridge, annotations are removed before
   Turtle parsing. Unlike a silent drop, each record reports their count and
@@ -106,6 +123,11 @@ explicit. Unmatched articles are retained as unresolved article records.
   the original TTL.
 - Lexical evidence is preserved, but this exporter is not an ontology reasoner
   and does not add inferred OPMAD concepts.
+- `record_id` includes a token derived from the normalized absolute source path,
+  preventing collisions when byte-identical TTL files are reviewed together.
+  Consequently IDs are stable at one source location but intentionally change
+  if a file is moved or exported on a machine with a different absolute path;
+  use `sha256`/`document_id` for portable content identity.
 - `not_reported` means absent from the successfully parsed facts output. It
   cannot by itself distinguish an omission in the paper from an upstream
   extraction omission.

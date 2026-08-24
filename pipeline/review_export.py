@@ -9,6 +9,7 @@ RDF graphs.
 from __future__ import annotations
 
 import argparse
+import glob
 import hashlib
 import json
 import re
@@ -23,11 +24,11 @@ if __package__ is None or __package__ == "":
     sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
 
 try:
-    from pipeline.extraction_schema import TASK_CLASS_IRIS
-    from pipeline.facts_to_csv import expand_fact_paths, local_name, strip_rdf_star_statements
+    from pipeline.extraction_schema import OPMAD, TASK_CLASS_IRIS
+    from pipeline.facts_to_csv import local_name, strip_rdf_star_statements
 except ImportError:
-    from .extraction_schema import TASK_CLASS_IRIS
-    from .facts_to_csv import expand_fact_paths, local_name, strip_rdf_star_statements
+    from .extraction_schema import OPMAD, TASK_CLASS_IRIS
+    from .facts_to_csv import local_name, strip_rdf_star_statements
 
 SCHEMA_VERSION = "strict-review-export/1.0"
 STATUSES = ("present", "not_reported", "unclear", "not_applicable", "extraction_failure")
@@ -53,6 +54,13 @@ INTEGER_PREDICATE_NAMES = {"has_interger_value", "has_integer_value"}
 ARTICLE_CLASS = "Predictive_Maintenance_Article"
 CASE_CLASS = "Predictive_maintenance_case"
 TASK_LABELS = {local_name(iri): label for label, iri in TASK_CLASS_IRIS.items()}
+# Authoritative OPMAD is preferred.  The old generated seed namespace remains
+# accepted so existing fixed-mode artifacts can still be reviewed, but an
+# unrelated ontology cannot opt in merely by reusing an OPMAD local name.
+ACCEPTED_OPMAD_CLASS_PREFIXES = (
+    OPMAD,
+    f"{OPMAD.removesuffix('#')}/seed#",
+)
 
 # Traversal is deliberately limited to domain relations.  In particular, it
 # does not walk author/chunk/provenance links that can join otherwise distinct
@@ -117,7 +125,11 @@ def _clean_literals(values: Iterable[Literal]) -> list[str]:
 def _typed_entities(graph: Graph) -> dict[str, set[URIRef]]:
     result: dict[str, set[URIRef]] = defaultdict(set)
     for subject, class_iri in graph.subject_objects(RDF.type):
-        if isinstance(subject, URIRef) and isinstance(class_iri, URIRef):
+        if (
+            isinstance(subject, URIRef)
+            and isinstance(class_iri, URIRef)
+            and str(class_iri).startswith(ACCEPTED_OPMAD_CLASS_PREFIXES)
+        ):
             result[local_name(class_iri)].add(subject)
     return result
 
@@ -127,25 +139,93 @@ def _is_domain_relation(predicate: URIRef) -> bool:
     return name in RELATION_NAMES or name.startswith("has_") or name.startswith("describes_")
 
 
-def _record_scope(graph: Graph, anchors: Iterable[URIRef], articles: set[URIRef]) -> set[URIRef]:
-    """Return a bounded relation neighborhood without traversing other articles."""
+def _adjacent_domain_nodes(graph: Graph, node: URIRef) -> set[URIRef]:
+    adjacent: set[URIRef] = set()
+    for predicate, obj in graph.predicate_objects(node):
+        if isinstance(predicate, URIRef) and isinstance(obj, URIRef) and _is_domain_relation(predicate):
+            adjacent.add(obj)
+    for subject, predicate in graph.subject_predicates(node):
+        if isinstance(subject, URIRef) and isinstance(predicate, URIRef) and _is_domain_relation(predicate):
+            adjacent.add(subject)
+    return adjacent
 
-    anchor_set = set(anchors)
-    seen = set(anchor_set)
-    queue: deque[tuple[URIRef, int]] = deque((anchor, 0) for anchor in anchor_set)
+
+def _case_record_scopes(
+    graph: Graph,
+    cases: set[URIRef],
+    articles: set[URIRef],
+) -> tuple[dict[URIRef, set[URIRef]], dict[URIRef, set[URIRef]]]:
+    """Partition bounded case neighborhoods and expose unsafe shared nodes.
+
+    Direct case targets are boundary roots.  A traversal cannot enter another
+    case's root, even by walking backwards through a shared input or metric.
+    Nodes still reachable from more than one case are removed from every scope
+    and reported as ambiguous rather than assigned to every record.
+    """
+
+    root_owners: dict[URIRef, set[URIRef]] = defaultdict(set)
+    for case in cases:
+        for node in _adjacent_domain_nodes(graph, case) - cases - articles:
+            root_owners[node].add(case)
+
+    shared_roots = {node for node, owners in root_owners.items() if len(owners) > 1}
+
+    def traverse(case: URIRef, barriers: set[URIRef]) -> tuple[set[URIRef], set[URIRef]]:
+        seen = {case}
+        encountered_barriers: set[URIRef] = set()
+        queue: deque[tuple[URIRef, int]] = deque([(case, 0)])
+        while queue:
+            node, depth = queue.popleft()
+            if depth >= 3:
+                continue
+            for other in _adjacent_domain_nodes(graph, node):
+                if other in articles or (other in cases and other != case):
+                    continue
+                owners = root_owners.get(other, set())
+                if owners and case not in owners:
+                    continue
+                if other in barriers:
+                    encountered_barriers.add(other)
+                    continue
+                if other not in seen:
+                    seen.add(other)
+                    queue.append((other, depth + 1))
+        return seen, encountered_barriers
+
+    provisional = {case: traverse(case, shared_roots)[0] for case in cases}
+    reached_by: dict[URIRef, set[URIRef]] = defaultdict(set)
+    for case, nodes in provisional.items():
+        for node in nodes - {case}:
+            reached_by[node].add(case)
+    shared_nodes = shared_roots | {node for node, owners in reached_by.items() if len(owners) > 1}
+
+    # Traverse again with every discovered overlap as a barrier.  This prevents
+    # a uniquely reachable descendant beyond a shared node from being retained
+    # merely because the other case hit the depth limit first.
+    scopes: dict[URIRef, set[URIRef]] = {}
+    ambiguities: dict[URIRef, set[URIRef]] = {}
+    for case in cases:
+        scopes[case], ambiguities[case] = traverse(case, shared_nodes)
+    return scopes, ambiguities
+
+
+def _article_only_scope(
+    graph: Graph,
+    article: URIRef,
+    cases: set[URIRef],
+    articles: set[URIRef],
+) -> set[URIRef]:
+    """Traverse an article only when doing so cannot consume case-owned roots."""
+
+    claimed_roots = set().union(*(_adjacent_domain_nodes(graph, case) for case in cases)) if cases else set()
+    seen = {article}
+    queue: deque[tuple[URIRef, int]] = deque([(article, 0)])
     while queue:
         node, depth = queue.popleft()
         if depth >= 3:
             continue
-        adjacent: list[URIRef] = []
-        for predicate, obj in graph.predicate_objects(node):
-            if isinstance(predicate, URIRef) and isinstance(obj, URIRef) and _is_domain_relation(predicate):
-                adjacent.append(obj)
-        for subject, predicate in graph.subject_predicates(node):
-            if isinstance(subject, URIRef) and isinstance(predicate, URIRef) and _is_domain_relation(predicate):
-                adjacent.append(subject)
-        for other in adjacent:
-            if other in articles and other not in anchor_set:
+        for other in _adjacent_domain_nodes(graph, node):
+            if other in cases or (other in articles and other != article) or other in claimed_roots:
                 continue
             if other not in seen:
                 seen.add(other)
@@ -240,19 +320,29 @@ def _candidate_field(
     graph: Graph,
     entities: dict[str, set[URIRef]],
     scope: set[URIRef],
+    ambiguous_scope: set[URIRef],
     class_names: set[str],
     *,
     multi: bool = False,
 ) -> dict[str, Any]:
     all_candidates = set().union(*(entities.get(name, set()) for name in class_names))
     selected = sorted(all_candidates & scope, key=str)
-    unlinked = sorted(all_candidates - scope, key=str)
+    ambiguous = sorted(all_candidates & ambiguous_scope, key=str)
+    unlinked = sorted(all_candidates - scope - ambiguous_scope, key=str)
+    if ambiguous:
+        relevant = selected + ambiguous
+        raw = list(dict.fromkeys(
+            value for node in relevant for value in _clean_literals(_entity_literals(graph, node))
+        ))
+        return _field(
+            "unclear", raw_values=raw, source_nodes=map(str, relevant),
+            note="Candidate RDF crosses case boundaries; no value was assigned.",
+        )
     if not selected:
         if unlinked:
             return _field(
-                "unclear", raw_values=(value for node in unlinked for value in _clean_literals(_entity_literals(graph, node))),
-                source_nodes=map(str, unlinked),
-                note="Candidate RDF exists in this document but is not linked to this record; it was not assigned.",
+                "unclear",
+                note="Candidate RDF exists elsewhere in this document but is not linked to this record; it was not assigned.",
             )
         return _field("not_reported")
 
@@ -332,18 +422,26 @@ def _numeric_field(
     graph: Graph,
     entities: dict[str, set[URIRef]],
     scope: set[URIRef],
+    ambiguous_scope: set[URIRef],
     class_name: str,
 ) -> dict[str, Any]:
     candidates = entities.get(class_name, set())
     selected = sorted(candidates & scope, key=str)
-    unlinked = sorted(candidates - scope, key=str)
+    ambiguous = sorted(candidates & ambiguous_scope, key=str)
+    unlinked = sorted(candidates - scope - ambiguous_scope, key=str)
+    if ambiguous:
+        relevant = selected + ambiguous
+        raw = [str(value) for node in relevant for predicate, value in graph.predicate_objects(node)
+               if isinstance(value, Literal) and local_name(predicate) in INTEGER_PREDICATE_NAMES]
+        return _field(
+            "unclear", raw_values=raw, source_nodes=map(str, relevant),
+            note="A numeric fact crosses case boundaries; no count was assigned.",
+        )
     if not selected:
         if unlinked:
-            raw = [str(value) for node in unlinked for predicate, value in graph.predicate_objects(node)
-                   if isinstance(value, Literal) and local_name(predicate) in INTEGER_PREDICATE_NAMES]
             return _field(
-                "unclear", raw_values=raw, source_nodes=map(str, unlinked),
-                note="A numeric fact exists but is not linked to this record; zero was not imputed.",
+                "unclear",
+                note="A numeric fact exists elsewhere in this document but is not linked to this record; zero was not imputed.",
             )
         return _field("not_reported")
     literals = [
@@ -356,19 +454,35 @@ def _numeric_field(
     numbers: list[int] = []
     for value in raw:
         try:
-            numbers.append(int(value))
+            number = int(value)
         except ValueError:
             return _field("extraction_failure", raw_values=raw, source_nodes=map(str, selected), note="Count is not an integer.")
+        if number < 0:
+            return _field("extraction_failure", raw_values=raw, source_nodes=map(str, selected), note="Count is negative.")
+        numbers.append(number)
     unique = list(dict.fromkeys(numbers))
     if len(unique) == 1:
         return _field("present", unique[0], raw_values=raw, source_nodes=map(str, selected))
     return _field("unclear", raw_values=raw, source_nodes=map(str, selected), note="Conflicting counts were asserted.")
 
 
-def _task_field(graph: Graph, entities: dict[str, set[URIRef]], scope: set[URIRef]) -> dict[str, Any]:
+def _task_field(
+    graph: Graph,
+    entities: dict[str, set[URIRef]],
+    scope: set[URIRef],
+    ambiguous_scope: set[URIRef],
+) -> dict[str, Any]:
     selected: list[tuple[URIRef, str]] = []
+    ambiguous: list[tuple[URIRef, str]] = []
     for class_name, label in TASK_LABELS.items():
         selected.extend((node, label) for node in entities.get(class_name, set()) if node in scope)
+        ambiguous.extend((node, label) for node in entities.get(class_name, set()) if node in ambiguous_scope)
+    if ambiguous:
+        relevant = sorted(selected + ambiguous, key=lambda item: str(item[0]))
+        return _field(
+            "unclear", raw_values=[label for _, label in relevant], source_nodes=[str(node) for node, _ in relevant],
+            note="Task evidence crosses case boundaries; no task was assigned.",
+        )
     values = list(dict.fromkeys(label for _, label in sorted(selected, key=lambda item: str(item[0]))))
     if len(values) == 1:
         return _field("present", values[0], raw_values=[local_name(node) for node, _ in selected], source_nodes=[str(node) for node, _ in selected])
@@ -377,6 +491,13 @@ def _task_field(graph: Graph, entities: dict[str, set[URIRef]], scope: set[URIRe
 
     all_task_nodes = set().union(*(entities.get(name, set()) for name in TASK_LABELS))
     broad = entities.get("Future_state_forecast", set()) & scope
+    ambiguous_broad = entities.get("Future_state_forecast", set()) & ambiguous_scope
+    if ambiguous_broad:
+        return _field(
+            "unclear", raw_values=["Future_state_forecast"],
+            source_nodes=map(str, sorted(ambiguous_broad, key=str)),
+            note="Forecast evidence crosses case boundaries; no task was assigned.",
+        )
     if broad:
         return _field(
             "unclear", raw_values=["Future_state_forecast"], source_nodes=map(str, sorted(broad, key=str)),
@@ -384,13 +505,18 @@ def _task_field(graph: Graph, entities: dict[str, set[URIRef]], scope: set[URIRe
         )
     if all_task_nodes:
         return _field(
-            "unclear", source_nodes=map(str, sorted(all_task_nodes, key=str)),
-            note="Task facts exist in the document but are not linked to this record.",
+            "unclear",
+            note="Task facts exist elsewhere in this document but are not linked to this record.",
         )
     return _field("not_reported")
 
 
-def _explicit_boolean_field(graph: Graph, scope: set[URIRef], predicate_names: set[str]) -> dict[str, Any]:
+def _explicit_boolean_field(
+    graph: Graph,
+    scope: set[URIRef],
+    ambiguous_scope: set[URIRef],
+    predicate_names: set[str],
+) -> dict[str, Any]:
     raw: list[str] = []
     nodes: list[str] = []
     for node in sorted(scope, key=str):
@@ -398,6 +524,24 @@ def _explicit_boolean_field(graph: Graph, scope: set[URIRef], predicate_names: s
             if isinstance(value, Literal) and local_name(predicate).lower() in predicate_names:
                 raw.append(str(value).strip())
                 nodes.append(str(node))
+    ambiguous_values = [
+        str(value).strip()
+        for node in sorted(ambiguous_scope, key=str)
+        for predicate, value in graph.predicate_objects(node)
+        if isinstance(value, Literal) and local_name(predicate).lower() in predicate_names
+    ]
+    if any(ambiguous_values):
+        relevant_nodes = nodes + [
+            str(node) for node in sorted(ambiguous_scope, key=str)
+            if any(
+                isinstance(value, Literal) and local_name(predicate).lower() in predicate_names
+                for predicate, value in graph.predicate_objects(node)
+            )
+        ]
+        return _field(
+            "unclear", raw_values=[*raw, *ambiguous_values], source_nodes=relevant_nodes,
+            note="Boolean evidence crosses case boundaries; no value was assigned.",
+        )
     raw = list(dict.fromkeys(filter(None, raw)))
     if not raw:
         return _field("not_reported")
@@ -420,33 +564,49 @@ def _build_fields(
     graph: Graph,
     entities: dict[str, set[URIRef]],
     scope: set[URIRef],
+    ambiguous_scope: set[URIRef],
     article: URIRef | None,
 ) -> tuple[dict[str, dict[str, Any]], dict[str, Any]]:
     fields: dict[str, dict[str, Any]] = {
         "publication_year": _publication_year(graph, article),
-        "task": _task_field(graph, entities, scope),
-        "case_study": _candidate_field(graph, entities, scope, {"Maintainable_item"}),
-        "case_study_type": _candidate_field(graph, entities, scope, {"item_type"}),
-        "input_for_model": _candidate_field(graph, entities, scope, {"maintainable_item_record"}),
-        "number_of_input_variables": _numeric_field(graph, entities, scope, "number_if_input_variables"),
-        "input_types": _candidate_field(graph, entities, scope, {"Data_variable"}, multi=True),
-        "data_preprocessing": _explicit_boolean_field(
-            graph, scope, {"data_preprocessing", "has_data_preprocessing", "preprocessing"},
+        "task": _task_field(graph, entities, scope, ambiguous_scope),
+        "case_study": _candidate_field(graph, entities, scope, ambiguous_scope, {"Maintainable_item"}),
+        "case_study_type": _candidate_field(graph, entities, scope, ambiguous_scope, {"item_type"}),
+        "input_for_model": _candidate_field(graph, entities, scope, ambiguous_scope, {"maintainable_item_record"}),
+        "number_of_input_variables": _numeric_field(
+            graph, entities, scope, ambiguous_scope, "number_if_input_variables",
         ),
-        "model_approach": _candidate_field(graph, entities, scope, {"Model_configuration"}),
-        "model_types": _candidate_field(graph, entities, scope, {"Model_type"}, multi=True),
-        "models": _candidate_field(graph, entities, scope, {"Predictive_maintenance_model"}, multi=True),
-        "module_synchronization": _candidate_field(graph, entities, scope, {"Module_synchronization"}),
-        "number_of_failure_modes": _numeric_field(graph, entities, scope, "Number_of_failure_modes"),
-        "performance_indicator": _candidate_field(graph, entities, scope, {"Performance_indicator"}, multi=True),
-        "performance": _candidate_field(graph, entities, scope, {"Performance_value"}, multi=True),
+        "input_types": _candidate_field(graph, entities, scope, ambiguous_scope, {"Data_variable"}, multi=True),
+        "data_preprocessing": _explicit_boolean_field(
+            graph, scope, ambiguous_scope,
+            {"data_preprocessing", "has_data_preprocessing", "preprocessing"},
+        ),
+        "model_approach": _candidate_field(graph, entities, scope, ambiguous_scope, {"Model_configuration"}),
+        "model_types": _candidate_field(graph, entities, scope, ambiguous_scope, {"Model_type"}, multi=True),
+        "models": _candidate_field(
+            graph, entities, scope, ambiguous_scope, {"Predictive_maintenance_model"}, multi=True,
+        ),
+        "module_synchronization": _candidate_field(
+            graph, entities, scope, ambiguous_scope, {"Module_synchronization"},
+        ),
+        "number_of_failure_modes": _numeric_field(
+            graph, entities, scope, ambiguous_scope, "Number_of_failure_modes",
+        ),
+        "performance_indicator": _candidate_field(
+            graph, entities, scope, ambiguous_scope, {"Performance_indicator"}, multi=True,
+        ),
+        "performance": _candidate_field(
+            graph, entities, scope, ambiguous_scope, {"Performance_value"}, multi=True,
+        ),
         "complementary_notes": _field("not_reported"),
         "study_title": _article_text_field(graph, article, SCHEMA_NAMES, "has_title"),
         "publication_identifier": _article_text_field(graph, article, SCHEMA_IDENTIFIERS, "has_identifier"),
     }
     assert tuple(fields) == ANALYTICAL_FIELDS
 
-    design_details = _candidate_field(graph, entities, scope, {"Design_detail"}, multi=True)
+    design_details = _candidate_field(
+        graph, entities, scope, ambiguous_scope, {"Design_detail"}, multi=True,
+    )
     if design_details["status"] == "present":
         fields["data_preprocessing"] = _field(
             "unclear",
@@ -466,6 +626,11 @@ def _build_fields(
     return fields, supplementary
 
 
+def _source_identity(path: Path) -> str:
+    normalized_path = str(path.expanduser().resolve(strict=False))
+    return hashlib.sha256(normalized_path.encode("utf-8")).hexdigest()[:24]
+
+
 def _source_metadata(path: Path, data: bytes | None, text: str | None, parse_status: str) -> dict[str, Any]:
     digest = hashlib.sha256(data).hexdigest() if data is not None else None
     rdf_star_count = len(
@@ -474,6 +639,7 @@ def _source_metadata(path: Path, data: bytes | None, text: str | None, parse_sta
     return {
         "facts_filename": path.name,
         "facts_path": str(path),
+        "source_identity": _source_identity(path),
         "document_id": digest,
         "sha256": digest,
         "parse_status": parse_status,
@@ -487,24 +653,48 @@ def _source_metadata(path: Path, data: bytes | None, text: str | None, parse_sta
     }
 
 
-def _record_id(source_digest: str | None, article: URIRef | None, case: URIRef | None, ordinal: int) -> str:
-    material = "|".join((source_digest or "unreadable", str(article or ""), str(case or ""), str(ordinal)))
+def _record_id(
+    source_digest: str | None,
+    source_identity: str,
+    article: URIRef | None,
+    case: URIRef | None,
+    ordinal: int,
+) -> str:
+    material = "|".join(
+        (source_digest or "unreadable", source_identity, str(article or ""), str(case or ""), str(ordinal))
+    )
     return hashlib.sha256(material.encode("utf-8")).hexdigest()[:24]
 
 
 def graph_to_review_records(graph: Graph, path: Path, source: dict[str, Any]) -> list[dict[str, Any]]:
     entities = _typed_entities(graph)
     articles = entities.get(ARTICLE_CLASS, set())
+    cases = entities.get(CASE_CLASS, set())
+    case_scopes, case_ambiguities = _case_record_scopes(graph, cases, articles)
     contexts = _case_contexts(graph, entities)
     records: list[dict[str, Any]] = []
     for ordinal, (article, case, link) in enumerate(contexts, start=1):
-        anchors = [node for node in (article, case) if node is not None]
-        scope = _record_scope(graph, anchors, articles) if anchors else set()
-        fields, supplementary = _build_fields(graph, entities, scope, article)
-        record_status = "present" if link["resolution"] == "resolved" else "unclear"
+        if case is not None:
+            scope = case_scopes[case]
+            ambiguous_scope = case_ambiguities[case]
+        elif article is not None:
+            scope = _article_only_scope(graph, article, cases, articles)
+            ambiguous_scope = set()
+        else:
+            scope = set()
+            ambiguous_scope = set()
+        fields, supplementary = _build_fields(graph, entities, scope, ambiguous_scope, article)
+        has_field_failure = any(field["status"] == "extraction_failure" for field in fields.values())
+        record_status = (
+            "extraction_failure" if has_field_failure
+            else "present" if link["resolution"] == "resolved"
+            else "unclear"
+        )
         records.append({
             "schema_version": SCHEMA_VERSION,
-            "record_id": _record_id(source.get("sha256"), article, case, ordinal),
+            "record_id": _record_id(
+                source.get("sha256"), source["source_identity"], article, case, ordinal,
+            ),
             "record_status": record_status,
             "source_document": source,
             "article_identity": _field(
@@ -532,7 +722,7 @@ def _failure_record(path: Path, data: bytes | None, text: str | None, error: Exc
     }
     return {
         "schema_version": SCHEMA_VERSION,
-        "record_id": _record_id(source.get("sha256"), None, None, 1),
+        "record_id": _record_id(source.get("sha256"), source["source_identity"], None, None, 1),
         "record_status": "extraction_failure",
         "source_document": source,
         "article_identity": _field("extraction_failure"),
@@ -578,6 +768,32 @@ def write_review_records(path: Path, records: Sequence[dict[str, Any]], output_f
                 handle.write(json.dumps(record, ensure_ascii=False, sort_keys=True) + "\n")
 
 
+def _expand_review_inputs(patterns: Iterable[str]) -> tuple[list[Path], list[dict[str, Any]]]:
+    """Expand review inputs without the legacy helper's missing-path omission.
+
+    Literal arguments are always returned, including missing paths, so normal
+    document failure handling emits a record.  An unmatched glob gets its own
+    explicit failure record.
+    """
+
+    paths: list[Path] = []
+    failures: list[dict[str, Any]] = []
+    for pattern in patterns:
+        literal_path = Path(pattern)
+        if literal_path.exists():
+            paths.append(literal_path)
+        elif glob.has_magic(pattern):
+            matches = sorted(Path(match).resolve() for match in glob.glob(pattern))
+            if matches:
+                paths.extend(matches)
+            else:
+                error = FileNotFoundError(f"No fact files matched glob pattern: {pattern}")
+                failures.append(_failure_record(Path(pattern), None, None, error))
+        else:
+            paths.append(literal_path)
+    return paths, failures
+
+
 def parse_args(argv: Sequence[str] | None = None) -> argparse.Namespace:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--facts", nargs="+", required=True, help="Fact TTL path(s) or glob pattern(s)")
@@ -588,10 +804,9 @@ def parse_args(argv: Sequence[str] | None = None) -> argparse.Namespace:
 
 def main(argv: Sequence[str] | None = None) -> int:
     args = parse_args(argv)
-    paths = expand_fact_paths(args.facts)
-    if not paths:
-        raise SystemExit("No fact files matched --facts input")
+    paths, input_failures = _expand_review_inputs(args.facts)
     records = build_review_records(paths)
+    records.extend(input_failures)
     output_format = args.format or ("json" if Path(args.output).suffix.lower() == ".json" else "jsonl")
     write_review_records(Path(args.output), records, output_format)
     return 2 if any(record["record_status"] == "extraction_failure" for record in records) else 0
