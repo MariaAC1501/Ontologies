@@ -1,0 +1,28 @@
+# Raw run inputs (selection lists and manifests at run roots are intentional records).
+**/input/
+**/inputs/
+
+# Reproducible extraction products and snapshots.
+**/output/
+**/output_*/
+**/facts_*.ttl
+**/ontology_*.ttl
+
+# Run-local logs and process control.
+**/logs/
+**/*.log
+**/*.out
+**/*.pid
+**/*.lock
+**/run_*.sh
+**/monitor_*.sh
+**/status.sh
+**/orchestrate_*.sh
+
+# Interrupted or temporary products.
+**/.tmp/
+**/tmp/
+**/*.tmp
+**/*.partial
+**/*.bak
+**/*~
