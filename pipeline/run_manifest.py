@@ -54,12 +54,24 @@ def _sensitive_key(name: str) -> bool:
     words = _key_words(name)
     segments = set(words)
     if segments & {
-        "auth", "authorization", "bearer", "credential", "credentials", "password",
-        "passwd", "secret", "secrets", "token",
+        "auth", "authentication", "authorization", "bearer", "credential", "credentials",
+        "key", "keys", "oauth", "passphrase", "password", "passwords", "passwd", "pat",
+        "pats", "pwd", "secret", "secrets", "token",
     }:
         return True
-    pairs = set(zip(words, words[1:]))
-    return ("api", "key") in pairs or ("private", "key") in pairs or "apikey" in segments
+    # Recognize common unseparated spellings without treating an arbitrary word
+    # ending in (for example) "key" as a credential name ("monkey", "hockey").
+    compound_prefixes = (
+        "api", "access", "client", "github", "gitlab", "openai", "private", "secret",
+        "signing", "ssh",
+    )
+    compound_suffixes = ("auth", "key", "password", "pat", "token")
+    return any(
+        segment == prefix + suffix
+        for segment in segments
+        for prefix in compound_prefixes
+        for suffix in compound_suffixes
+    )
 
 
 def _secret_bearing_path(path: Path) -> bool:
@@ -662,12 +674,35 @@ def _diff_values(reference: Any, candidate: Any, path: str, differences: list[st
         differences.append(f"{path}: expected {reference!r}, found {candidate!r}")
 
 
+def _code_state_is_dirty(value: Any) -> bool:
+    if not isinstance(value, dict):
+        return False
+    if value.get("dirty") is True:
+        return True
+    submodules = value.get("submodules", [])
+    return isinstance(submodules, list) and any(
+        isinstance(record, dict) and record.get("dirty") is True for record in submodules
+    )
+
+
 def compare_compatibility(reference: Mapping[str, Any], candidate: Mapping[str, Any]) -> list[str]:
     """Compare only resume-compatibility fields, excluding timestamps and outputs."""
 
     reference_compatibility = reference.get("compatibility", {})
     candidate_compatibility = candidate.get("compatibility", {})
     differences: list[str] = []
+    dirty_sides = [
+        label for label, compatibility in (
+            ("reference", reference_compatibility), ("candidate", candidate_compatibility)
+        )
+        if _code_state_is_dirty(compatibility.get("code", {}))
+    ]
+    if dirty_sides:
+        differences.append(
+            "compatibility.code: resume compatibility is fail-closed because "
+            + " and ".join(dirty_sides)
+            + " code state is dirty"
+        )
 
     reference_artifacts = reference_compatibility.get("artifacts", {})
     candidate_artifacts = candidate_compatibility.get("artifacts", {})
@@ -761,26 +796,127 @@ def _glob_variants(pattern: str) -> set[str]:
         variants = expanded
 
 
+def _same_existing_path(first: Path, second: Path) -> bool:
+    try:
+        return os.path.samefile(first, second)
+    except (FileNotFoundError, OSError):
+        return False
+
+
+def _directory_is_case_insensitive(directory: Path) -> bool:
+    """Detect the containing filesystem's case behavior without creating a probe."""
+
+    current = directory
+    while True:
+        name = current.name
+        alias = name.swapcase()
+        if name and alias != name and _same_existing_path(current, current.with_name(alias)):
+            return True
+        if current.parent == current:
+            break
+        current = current.parent
+    try:
+        children = list(directory.iterdir())
+    except OSError:
+        return False
+    for child in children:
+        alias = child.name.swapcase()
+        if alias != child.name and _same_existing_path(child, child.with_name(alias)):
+            return True
+    return False
+
+
+def _relative_to_base_by_identity(path: Path, base: Path) -> str | None:
+    """Relativize a possibly aliased spelling by finding the base directory inode."""
+
+    absolute = Path(os.path.abspath(path))
+    try:
+        return absolute.relative_to(base).as_posix()
+    except ValueError:
+        pass
+    suffix: list[str] = []
+    current = absolute
+    while current.parent != current:
+        if _same_existing_path(current, base):
+            return PurePosixPath(*reversed(suffix)).as_posix()
+        suffix.append(current.name)
+        current = current.parent
+    return None
+
+
+def _same_destination(first: Path, second: Path) -> bool:
+    """Compare existing paths by identity and missing leaf paths by parent identity."""
+
+    if _same_existing_path(first, second):
+        return True
+    if not _same_existing_path(first.parent, second.parent):
+        return False
+    if first.name == second.name:
+        return True
+    return first.name.casefold() == second.name.casefold() and _directory_is_case_insensitive(first.parent)
+
+
+def _destination_under_directory(destination: Path, directory: Path) -> bool:
+    current = destination
+    while current.parent != current:
+        if _same_destination(current, directory):
+            return True
+        current = current.parent
+    return False
+
+
+def _destination_matches_glob_by_identity(
+    destination: Path, pattern: Path, *, case_insensitive: bool
+) -> bool:
+    """Match the glob tail after identifying its non-magic parent directory."""
+
+    parts = pattern.parts
+    magic_index = next((index for index, part in enumerate(parts) if glob.has_magic(part)), None)
+    if magic_index is None:
+        return False
+    prefix = Path(*parts[:magic_index])
+    if not prefix.is_dir():
+        return False
+    relative = _relative_to_base_by_identity(destination, prefix)
+    if relative is None:
+        return False
+    relative_pattern = PurePosixPath(*parts[magic_index:]).as_posix()
+    if case_insensitive:
+        relative = relative.casefold()
+        relative_pattern = relative_pattern.casefold()
+    return any(PurePosixPath(relative).match(item) for item in _glob_variants(relative_pattern))
+
+
 def _destination_is_selected(destination: Path | str, specs: Iterable[str], base_dir: Path | str) -> bool:
     base = _absolute_base(base_dir)
-    raw_destination = Path(destination)
-    absolute = raw_destination.parent.resolve() / raw_destination.name
-    try:
-        relative = absolute.relative_to(base).as_posix()
-    except ValueError:
+    absolute = Path(os.path.abspath(destination))
+    relative = _relative_to_base_by_identity(absolute, base)
+    if relative is None:
         return False
+    case_insensitive = _directory_is_case_insensitive(base)
     for spec in specs:
         raw = Path(spec)
         pattern_path = raw if raw.is_absolute() else base / raw
         pattern = Path(os.path.abspath(pattern_path))
-        try:
-            relative_pattern = pattern.relative_to(base).as_posix()
-        except ValueError:
+        if raw.is_absolute():
+            relative_pattern = _relative_to_base_by_identity(pattern, base)
+        else:
+            relative_pattern = raw.as_posix()
+        if relative_pattern is None:
             continue
         if glob.has_magic(str(pattern_path)):
-            if any(PurePosixPath(relative).match(item) for item in _glob_variants(relative_pattern)):
+            destination_match = relative.casefold() if case_insensitive else relative
+            pattern_match = relative_pattern.casefold() if case_insensitive else relative_pattern
+            if any(
+                PurePosixPath(destination_match).match(item)
+                for item in _glob_variants(pattern_match)
+            ) or _destination_matches_glob_by_identity(
+                absolute, pattern, case_insensitive=case_insensitive
+            ):
                 return True
-        elif absolute == pattern or (pattern.is_dir() and pattern in absolute.parents):
+        elif _same_destination(absolute, pattern) or (
+            pattern.is_dir() and _destination_under_directory(absolute, pattern)
+        ):
             return True
     return False
 

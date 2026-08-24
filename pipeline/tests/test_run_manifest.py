@@ -103,19 +103,30 @@ class RunManifestTests(unittest.TestCase):
 
     def test_parse_settings_rejects_bad_or_duplicate_values(self):
         secret_keys = [
-            "api_token", "github_token", "openaiApiKey", "dbPassword", "auth", "bearer",
+            "api_token", "github_token", "github_pat", "githubPAT", "GITHUBPAT",
+            "openaiApiKey", "OPENAI_KEY", "OPENAIKEY", "sshKey", "ssh_key", "SSHKEY",
+            "signing_key", "signingKey", "dbPassword", "auth", "authentication", "bearer",
             "refreshToken", "access-token", "PRIVATE_KEY", "credentials", "clientSecret",
-            "Authorization",
+            "Authorization", "passphrase", "oauth",
         ]
-        parsed = run_manifest.parse_settings(
-            ["temperature=0", "max_tokens=20", *[f"{key}=SECRET-{index}" for index, key in enumerate(secret_keys)]]
-        )
+        secret_values = {key: f"literal-secret-value-{index}" for index, key in enumerate(secret_keys)}
+        parsed = run_manifest.parse_settings([
+            "temperature=0", "max_tokens=20", "monkey=visible",
+            *[f"{key}={value}" for key, value in secret_values.items()],
+        ])
         self.assertEqual(parsed["temperature"], "0")
         self.assertEqual(parsed["max_tokens"], "20")
+        self.assertEqual(parsed["monkey"], "visible")
         for key in secret_keys:
             self.assertEqual(parsed[key], run_manifest.REDACTED)
         serialized = run_manifest.stable_json({"settings": parsed})
-        self.assertNotIn("SECRET-", serialized)
+        for value in secret_values.values():
+            self.assertNotIn(value, serialized)
+
+        manifest = self.build(settings={**secret_values, "temperature": "0"})
+        manifest_json = run_manifest.stable_json(manifest)
+        for value in secret_values.values():
+            self.assertNotIn(value, manifest_json)
         with self.assertRaises(run_manifest.ManifestError):
             run_manifest.parse_settings(["temperature"])
         with self.assertRaises(run_manifest.ManifestError):
@@ -319,6 +330,91 @@ class RunManifestTests(unittest.TestCase):
                 ]),
                 2,
             )
+
+    def test_manifest_destination_case_alias_is_detected_on_case_insensitive_filesystems(self):
+        selected = self.base / "ManifestCaseAlias.JSON"
+        selected.write_text("selected artifact\n", encoding="utf-8")
+        alias = self.base / "manifestcasealias.json"
+        try:
+            same_file = alias.exists() and os.path.samefile(selected, alias)
+        except OSError:
+            same_file = False
+        if not same_file:
+            self.skipTest("filesystem is case-sensitive")
+        self.assertTrue(run_manifest._destination_is_selected(alias, [selected.name], self.base))
+        self.assertTrue(run_manifest._destination_is_selected(alias, ["*.JSON"], self.base))
+
+        selected_directory = self.base / "ManifestArtifacts"
+        selected_directory.mkdir()
+        directory_alias = self.base / "manifestartifacts"
+        aliased_destination = directory_alias / "FutureManifest.JSON"
+        self.assertTrue(run_manifest._destination_is_selected(
+            aliased_destination, [selected_directory.name], self.base
+        ))
+        self.assertTrue(run_manifest._destination_is_selected(
+            aliased_destination, [f"{selected_directory.name}/*.json"], self.base
+        ))
+
+    def test_manifest_destination_detects_an_existing_parent_alias(self):
+        selected_directory = self.base / "selected-artifacts"
+        selected_directory.mkdir()
+        alias = self.base / "artifact-alias"
+        try:
+            alias.symlink_to(selected_directory, target_is_directory=True)
+        except (OSError, NotImplementedError):
+            self.skipTest("directory symlinks are unavailable")
+        destination = alias / "future-manifest.json"
+        self.assertTrue(run_manifest._destination_is_selected(
+            destination, [selected_directory.name], self.base
+        ))
+        self.assertTrue(run_manifest._destination_is_selected(
+            destination, [f"{selected_directory.name}/**/*"], self.base
+        ))
+
+    @unittest.skipUnless(shutil.which("git"), "git is required")
+    def test_different_dirty_content_at_same_head_is_never_resume_compatible(self):
+        def git(*args):
+            subprocess.run(
+                ["git", *args], cwd=self.base, check=True, text=True,
+                stdout=subprocess.PIPE, stderr=subprocess.PIPE,
+            )
+
+        git("init")
+        git("config", "user.email", "tests@example.invalid")
+        git("config", "user.name", "Manifest Tests")
+        git("add", ".")
+        git("commit", "-m", "clean baseline")
+        dirty_file = self.base / "untracked-code.py"
+        dirty_file.write_text("first dirty implementation\n", encoding="utf-8")
+        reference = self.build()
+        dirty_file.write_text("different dirty implementation\n", encoding="utf-8")
+        candidate = self.build()
+
+        self.assertEqual(reference["compatibility"]["code"], candidate["compatibility"]["code"])
+        self.assertTrue(reference["compatibility"]["code"]["dirty"])
+        differences = run_manifest.compare_compatibility(reference, candidate)
+        self.assertTrue(any("fail-closed" in item and "dirty" in item for item in differences))
+
+    def test_dirty_submodule_state_also_fails_closed(self):
+        reference = self.build()
+        dirty_code = {
+            "present": True,
+            "root_revision": "a" * 40,
+            "dirty": False,
+            "submodules": [{
+                "dirty": True,
+                "expected_revision": "b" * 40,
+                "initialized": True,
+                "path": "vendor/example",
+                "revision": "b" * 40,
+            }],
+        }
+        reference["compatibility"]["code"] = copy.deepcopy(dirty_code)
+        candidate = copy.deepcopy(reference)
+        self.assertTrue(any(
+            "fail-closed" in item
+            for item in run_manifest.compare_compatibility(reference, candidate)
+        ))
 
     def test_code_provenance_is_resume_compatible_but_runtime_is_not(self):
         reference = self.build()
