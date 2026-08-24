@@ -11,7 +11,16 @@ This document maps the 19-column CBR CSV schema in `CleanedDATA V21-07-2021.csv`
 
 ## Scope of this mapping
 
-This is the target mapping for the 19-column CBR schema. It is not a claim that every OntoCast fact is materialized through the same OPMAD property path by the current bridge.
+This is the target mapping for the 19-column CBR schema. It is not a claim that every OntoCast fact is materialized through the same OPMAD property path by the current bridge, nor that CSV-specific normalizations are equivalent to concepts asserted by OPMAD.
+
+The fixed profile is generated from the authoritative file rather than maintained by hand:
+
+```bash
+python3 pipeline/generate_opmad_profile.py
+python3 pipeline/generate_opmad_profile.py --check
+```
+
+The generator starts from all ontology IRIs in `extraction_schema.py`, copies their complete authoritative descriptions and connected blank-node axioms, and follows OPMAD dependencies. It deliberately omits `owl:imports` so fixed extraction does not fetch a dependency chain. Minimal external BFO/RO/CCO declaration triples needed to interpret copied axioms or schema relations are added with an explicit `rdfs:comment` identifying them as support declarations; they are not OPMAD definitions. The generated file uses canonical, sorted N-Triples (a valid Turtle subset) and must not be edited manually. Verification requires the initialized authoritative CBR ontology submodule.
 
 `pipeline/facts_to_csv.py` is a conservative interoperability bridge for OntoCast output. It accepts one or more fact TTL paths or globs, strips OntoCast RDF-star reification statements that stock `rdflib` cannot parse, combines the remaining graphs, and writes a UTF-8 semicolon-delimited CSV. It obtains labels from `schema:name`, `rdfs:label`, and the supplied ontology; unavailable values are represented by schema-valid defaults such as `Not reported`, `Unknown synchronization`, or `0`. It derives preprocessing from design details and model approach from the number of extracted models.
 
@@ -96,18 +105,18 @@ Observed task values in the CSV map cleanly to these OPMAD classes:
 - `One step future state forecast` → `OPMAD:One_step_future_state_forecast`
 - `Remaining useful life estimation` → `OPMAD:Remaining_useful_life_estimation`
 
-## Notes on fields not implemented in the Java loader
+## Authoritative mapping boundary and loader limitations
 
-`CSVtoOntologyExec.java` does **not** currently materialize columns 6, 8, 9, 13, 14, 15, or 16.
+`CSVtoOntologyExec.java` does **not** currently materialize columns 6, 8, 9, 13, 14, 15, or 16. The profile does not add axioms to fill those gaps.
 
-For the extraction target in `pipeline/extraction_schema.py`, those fields are still anchored to real ontology terms in `OPMAD.owl`:
+All named OPMAD terms below exist in `OPMAD.owl`, but the CSV interpretation has these precise limits:
 
-- numeric count fields use `OPMAD:number_if_input_variables` / `OPMAD:Number_of_failure_modes` with `OPMAD:has_interger_value`
-- preprocessing and complementary notes use `OPMAD:Design_detail` with `OPMAD:has_design_detail`
-- model approach uses `OPMAD:Model_configuration` with `OPMAD:describes_configuration`
-- performance fields use `OPMAD:Performance_indicator` and `OPMAD:Performance_value`
+- `OPMAD:number_if_input_variables`, `OPMAD:Number_of_failure_modes`, and `OPMAD:has_interger_value` are authoritative terms. OPMAD does not assert the schema's class-to-value pairing or an attachment property from those count qualities to a case/module; those pairings remain extraction targets only.
+- OPMAD asserts that a predictive-maintenance module may have `OPMAD:Design_detail`. It does not define preprocessing booleans or distinguish preprocessing from complementary notes. Encoding either CSV field as a design detail is an extraction-time normalization, not an OPMAD equivalence.
+- OPMAD asserts `OPMAD:Model_configuration` restrictions using `OPMAD:describes_configuration` and `OPMAD:has_text_value`. The CSV values `Single model` and `Multi model` are not controlled OPMAD individuals or classes.
+- OPMAD's restrictions support `OPMAD:Performance_indicator` describing a module and `OPMAD:Performance_value` being about an indicator. The Java loader still does not materialize those columns.
 
-This gives OntoCast a complete 19-field extraction target without changing files outside `pipeline/`.
+Thus the schema provides a complete 19-field extraction interface while explicitly separating authoritative vocabulary from CSV normalization. Any future semantic equivalence or attachment path requires an upstream OPMAD source change; this repository profile must not assert one.
 
 ## Sample validation target
 

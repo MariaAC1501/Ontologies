@@ -1,394 +1,379 @@
-@prefix : <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#> .
-@prefix cco: <http://www.ontologyrepository.com/CommonCoreOntologies/> .
-@prefix obo: <http://purl.obolibrary.org/obo/> .
-@prefix owl: <http://www.w3.org/2002/07/owl#> .
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
-
-<http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD/seed>
-    a owl:Ontology ;
-    rdfs:label "OPMAD seed ontology for OntoCast fixed-ontology mode"@en ;
-    rdfs:comment "Self-contained Turtle subset of OPMAD plus minimal BFO/CCO/RO vocabulary required by pipeline/extraction_schema.py and OntoCast fixed seed extraction. This file intentionally omits owl:imports and the full external dependency chain."@en .
-
-#################################################################
-# Minimal external hierarchy: BFO / CCO / RO
-#################################################################
-
-obo:BFO_0000001 a owl:Class ;
-    rdfs:label "entity"@en .
-
-obo:BFO_0000002 a owl:Class ;
-    rdfs:subClassOf obo:BFO_0000001 ;
-    rdfs:label "continuant"@en .
-
-obo:BFO_0000004 a owl:Class ;
-    rdfs:subClassOf obo:BFO_0000002 ;
-    rdfs:label "independent continuant"@en ;
-    rdfs:comment "A continuant that does not specifically depend on another entity for its existence."@en .
-
-obo:BFO_0000017 a owl:Class ;
-    rdfs:subClassOf obo:BFO_0000020 ;
-    rdfs:label "realizable entity"@en .
-
-obo:BFO_0000019 a owl:Class ;
-    rdfs:subClassOf obo:BFO_0000020 ;
-    rdfs:label "quality"@en .
-
-obo:BFO_0000020 a owl:Class ;
-    rdfs:subClassOf obo:BFO_0000002 ;
-    rdfs:label "specifically dependent continuant"@en ;
-    rdfs:comment "A continuant that specifically depends on some independent continuant."@en .
-
-obo:BFO_0000030 a owl:Class ;
-    rdfs:subClassOf obo:BFO_0000004 ;
-    rdfs:label "object"@en .
-
-obo:BFO_0000031 a owl:Class ;
-    rdfs:subClassOf obo:BFO_0000002 ;
-    rdfs:label "generically dependent continuant"@en ;
-    rdfs:comment "A continuant that can depend on one or more bearers over time."@en .
-
-obo:BFO_0000034 a owl:Class ;
-    rdfs:subClassOf obo:BFO_0000017 ;
-    rdfs:label "function"@en .
-
-cco:InformationContentEntity a owl:Class ;
-    rdfs:subClassOf obo:BFO_0000031 ;
-    rdfs:label "Information Content Entity"@en ;
-    rdfs:comment "A generically dependent continuant that is about some entity and generically depends on an information bearer."@en .
-
-cco:DesignativeInformationContentEntity a owl:Class ;
-    rdfs:subClassOf cco:InformationContentEntity ;
-    rdfs:label "Designative Information Content Entity"@en ;
-    rdfs:comment "An information content entity consisting of symbols that denote some entity."@en .
-
-cco:DescriptiveInformationContentEntity a owl:Class ;
-    rdfs:subClassOf cco:InformationContentEntity ;
-    rdfs:label "Descriptive Information Content Entity"@en ;
-    rdfs:comment "An information content entity consisting of propositions that describe some entity."@en .
-
-cco:DirectiveInformationContentEntity a owl:Class ;
-    rdfs:subClassOf cco:InformationContentEntity ;
-    rdfs:label "Directive Information Content Entity"@en ;
-    rdfs:comment "An information content entity that prescribes some entity or action."@en .
-
-cco:DesignativeName a owl:Class ;
-    rdfs:subClassOf cco:DesignativeInformationContentEntity ;
-    rdfs:label "Designative Name"@en ;
-    rdfs:comment "A designative information content entity that names something in a social or cultural namespace."@en .
-
-cco:ArtifactIdentifier a owl:Class ;
-    rdfs:subClassOf cco:DesignativeInformationContentEntity ;
-    rdfs:label "Artifact Identifier"@en ;
-    rdfs:comment "A designative information content entity that identifies some artifact."@en .
-
-cco:Algorithm a owl:Class ;
-    rdfs:subClassOf cco:DirectiveInformationContentEntity ;
-    rdfs:label "Algorithm"@en ;
-    rdfs:comment "A directive information content entity prescribing inputs, outputs, and workflow for achieving an objective."@en .
-
-cco:Artifact a owl:Class ;
-    rdfs:subClassOf obo:BFO_0000030 ;
-    rdfs:label "Artifact"@en ;
-    rdfs:comment "An object designed by an agent to realize a function."@en .
-
-cco:InformationBearingArtifact a owl:Class ;
-    rdfs:subClassOf cco:Artifact ;
-    rdfs:label "Information Bearing Artifact"@en ;
-    rdfs:comment "An artifact designed to bear information content entities in some format or structure."@en .
-
-cco:InformationProcessingArtifact a owl:Class ;
-    rdfs:subClassOf cco:Artifact ;
-    rdfs:label "Information Processing Artifact"@en ;
-    rdfs:comment "An artifact designed to transform information using algorithms."@en .
-
-cco:Database a owl:Class ;
-    rdfs:subClassOf cco:InformationBearingArtifact ;
-    rdfs:label "Database"@en ;
-    rdfs:comment "An information bearing artifact designed to store information for searching and retrieval."@en .
-
-cco:is_about a owl:ObjectProperty ;
-    rdfs:domain cco:InformationContentEntity ;
-    rdfs:range obo:BFO_0000001 ;
-    rdfs:label "is about"@en ;
-    rdfs:comment "Primitive relation between an information content entity and some entity."@en .
-
-cco:describes a owl:ObjectProperty ;
-    rdfs:subPropertyOf cco:is_about ;
-    rdfs:domain cco:DescriptiveInformationContentEntity ;
-    rdfs:label "describes"@en ;
-    rdfs:comment "Relates a descriptive information content entity to the entity it describes."@en .
-
-cco:designates a owl:ObjectProperty ;
-    rdfs:subPropertyOf cco:is_about ;
-    rdfs:domain cco:DesignativeInformationContentEntity ;
-    rdfs:label "designates"@en ;
-    rdfs:comment "Relates a designative information content entity to the entity it uniquely picks out in context."@en .
-
-obo:BFO_0000051 a owl:ObjectProperty ;
-    rdfs:label "has part"@en ;
-    rdfs:comment "Core part-whole relation between a whole and its part."@en .
-
-obo:RO_0000085 a owl:ObjectProperty ;
-    rdfs:domain obo:BFO_0000004 ;
-    rdfs:range obo:BFO_0000034 ;
-    rdfs:label "has function"@en ;
-    rdfs:comment "Relation between an independent continuant and a function that specifically depends on it."@en .
-
-obo:RO_0000086 a owl:ObjectProperty ;
-    rdfs:range obo:BFO_0000019 ;
-    rdfs:label "has quality"@en ;
-    rdfs:comment "Relation between a bearer and a quality that specifically depends on it."@en .
-
-obo:RO_0010002 a owl:ObjectProperty ;
-    rdfs:domain obo:BFO_0000004 ;
-    rdfs:range obo:BFO_0000031 ;
-    rdfs:label "is carrier of"@en ;
-    rdfs:comment "Relates an independent continuant to a generically dependent continuant it carries."@en .
-
-#################################################################
-# OPMAD properties used by extraction
-#################################################################
-
-:has_publication_year a owl:ObjectProperty ;
-    rdfs:subPropertyOf obo:RO_0010002 ;
-    rdfs:domain :Predictive_Maintenance_Article ;
-    rdfs:range :Publication_year ;
-    rdfs:label "has publication year"@en .
-
-:has_predictive_maintenance_function a owl:ObjectProperty ;
-    rdfs:subPropertyOf obo:RO_0000085 ;
-    rdfs:domain :Predictive_maintenance_system_module ;
-    rdfs:range :Predictive_maintenance_module_function ;
-    rdfs:label "has predictive maintenance function"@en .
-
-:has_synchronization a owl:ObjectProperty ;
-    rdfs:subPropertyOf obo:RO_0000086 ;
-    rdfs:domain :Predictive_maintenance_system_module ;
-    rdfs:range :Module_synchronization ;
-    rdfs:label "has synchronization"@en .
-
-:has_title a owl:ObjectProperty ;
-    rdfs:subPropertyOf obo:RO_0010002 ;
-    rdfs:domain :Predictive_Maintenance_Article ;
-    rdfs:range :Article_title ;
-    rdfs:label "has title"@en .
-
-:has_identifier a owl:ObjectProperty ;
-    rdfs:subPropertyOf obo:RO_0010002 ;
-    rdfs:domain :Predictive_Maintenance_Article ;
-    rdfs:range :Article_identifier ;
-    rdfs:label "has identifier"@en .
-
-:has_design_detail a owl:ObjectProperty ;
-    rdfs:subPropertyOf obo:RO_0000086 ;
-    rdfs:domain :Predictive_maintenance_system_module ;
-    rdfs:range :Design_detail ;
-    rdfs:label "has design detail"@en .
-
-:describes_configuration a owl:ObjectProperty ;
-    rdfs:subPropertyOf cco:describes ;
-    rdfs:domain :Model_configuration ;
-    rdfs:range :Predictive_maintenance_model ;
-    rdfs:label "describes configuration"@en .
-
-:describes_type a owl:ObjectProperty ;
-    rdfs:subPropertyOf cco:describes ;
-    rdfs:label "describes type"@en .
-
-:has_text_value a owl:DatatypeProperty ;
-    rdfs:range xsd:string ;
-    rdfs:label "information has text value"@en ;
-    rdfs:comment "Constraint for classes whose lexical value is a string."@en .
-
-:has_interger_value a owl:DatatypeProperty ;
-    rdfs:range xsd:integer ;
-    rdfs:label "information has interger value"@en ;
-    rdfs:comment "Constraint for classes whose lexical value is an integer."@en .
-
-#################################################################
-# Core OPMAD classes needed by extraction
-#################################################################
-
-:Predictive_maintenance_case a owl:Class ;
-    rdfs:subClassOf cco:DesignativeName ;
-    rdfs:label "Predictive maintenance case"@en ;
-    rdfs:comment "A designative information content entity that names a case in a predictive maintenance case base and is about a predictive maintenance model explained in an article."@en .
-
-:Publication_year a owl:Class ;
-    rdfs:subClassOf cco:DescriptiveInformationContentEntity ;
-    rdfs:label "Publication year"@en ;
-    rdfs:comment "An integer value representing the Gregorian year in which an article was published."@en .
-
-:Predictive_maintenance_module_function a owl:Class ;
-    rdfs:subClassOf obo:BFO_0000034 ;
-    rdfs:label "predictive maintenance module function"@en ;
-    rdfs:comment "A realizable entity that is the purpose of a predictive maintenance module."@en .
-
-:Maintainable_item a owl:Class ;
-    rdfs:subClassOf obo:BFO_0000030 ;
-    rdfs:label "Maintainable item"@en ;
-    rdfs:comment "Subject being considered for maintenance."@en .
-
-:Data_variable a owl:Class ;
-    rdfs:subClassOf cco:DescriptiveInformationContentEntity ;
-    rdfs:label "Data variable"@en ;
-    rdfs:comment "A descriptive information content entity representing an input variable used by a predictive maintenance model."@en .
-
-:Design_detail a owl:Class ;
-    rdfs:subClassOf obo:BFO_0000019 ;
-    rdfs:label "Design detail"@en ;
-    rdfs:comment "A generic quality of predictive maintenance modules containing design details not covered by other classes."@en .
-
-:Model_configuration a owl:Class ;
-    rdfs:subClassOf cco:DescriptiveInformationContentEntity ;
-    rdfs:label "Model configuration"@en ;
-    rdfs:comment "An arrangement of models in a predictive maintenance module."@en .
-
-:Model_type a owl:Class ;
-    rdfs:subClassOf cco:DescriptiveInformationContentEntity ;
-    rdfs:label "Model type"@en ;
-    rdfs:comment "A descriptive information content entity describing the family of a predictive maintenance model."@en .
-
-:Predictive_maintenance_model a owl:Class ;
-    rdfs:subClassOf cco:Algorithm ;
-    rdfs:label "Predictive maintenance model"@en ;
-    rdfs:comment "A directive information content entity consisting of propositions used for predictive maintenance purposes."@en .
-
-:Module_synchronization a owl:Class ;
-    rdfs:subClassOf obo:BFO_0000019 ;
-    rdfs:label "Module Synchronization"@en ;
-    rdfs:comment "A quality of a predictive maintenance module describing whether it works online, off-line, or both relative to the maintainable item."@en .
-
-:Article_title a owl:Class ;
-    rdfs:subClassOf cco:DesignativeName ;
-    rdfs:label "Article title"@en ;
-    rdfs:comment "A designative name for an article."@en .
-
-:Article_identifier a owl:Class ;
-    rdfs:subClassOf cco:ArtifactIdentifier ;
-    rdfs:label "Article identifier"@en ;
-    rdfs:comment "An artifact identifier that designates an article."@en .
-
-:item_type a owl:Class ;
-    rdfs:subClassOf cco:DescriptiveInformationContentEntity ;
-    rdfs:label "item type"@en ;
-    rdfs:comment "A descriptive information content entity describing the family of a maintainable item from a predictive maintenance perspective."@en .
-
-:maintainable_item_record a owl:Class ;
-    rdfs:subClassOf cco:Database ;
-    rdfs:label "maintainable item record"@en ;
-    rdfs:comment "A database-like record carrying information about a maintainable item."@en .
-
-:number_if_input_variables a owl:Class ;
-    rdfs:subClassOf obo:BFO_0000019 ;
-    rdfs:label "number of input variables"@en ;
-    rdfs:comment "A quality stating the number of input variables used by a predictive maintenance model for a specific item in a case."@en .
-
-:Number_of_failure_modes a owl:Class ;
-    rdfs:subClassOf obo:BFO_0000019 ;
-    rdfs:label "number of failures modes"@en ;
-    rdfs:comment "A quality stating the number of failure modes known for a maintainable item."@en .
-
-:Performance_indicator a owl:Class ;
-    rdfs:subClassOf cco:DescriptiveInformationContentEntity ;
-    rdfs:label "Performance indicator"@en ;
-    rdfs:comment "A descriptive information content entity that describes a predictive maintenance module performance criterion."@en .
-
-:Performance_value a owl:Class ;
-    rdfs:subClassOf cco:DescriptiveInformationContentEntity ;
-    rdfs:label "Performance value"@en ;
-    rdfs:comment "A descriptive information content entity about a performance indicator's reported value."@en .
-
-:Predictive_Maintenance_Article a owl:Class ;
-    rdfs:subClassOf cco:InformationBearingArtifact ;
-    rdfs:label "Predictive Maintenance Article"@en ;
-    rdfs:comment "An information bearing artifact such as a journal or conference article on predictive maintenance."@en .
-
-:Predictive_maintenance_system_module a owl:Class ;
-    rdfs:subClassOf cco:InformationProcessingArtifact ;
-    rdfs:label "Predictive maintenance system module"@en ;
-    rdfs:comment "An information processing artifact that hosts predictive maintenance functions, models, design details, and synchronization qualities."@en .
-
-#################################################################
-# Task taxonomy used by the schema
-#################################################################
-
-:Data_mining_technique_function a owl:Class ;
-    rdfs:subClassOf obo:BFO_0000034 ;
-    rdfs:label "data mining technique fucntion"@en ;
-    rdfs:comment "A realizable entity that is the purpose of a data mining technique."@en .
-
-:Association_discovery a owl:Class ;
-    rdfs:subClassOf :Data_mining_technique_function ;
-    rdfs:label "association discovery"@en ;
-    rdfs:comment "A function whose purpose is discovery of association patterns from data."@en .
-
-:Classification a owl:Class ;
-    rdfs:subClassOf :Data_mining_technique_function ;
-    rdfs:label "classification"@en ;
-    rdfs:comment "A function whose purpose is separation of data based on predefined parameters."@en .
-
-:Clustering a owl:Class ;
-    rdfs:subClassOf :Data_mining_technique_function ;
-    rdfs:label "clustering"@en ;
-    rdfs:comment "A function whose purpose is grouping data with similar characteristics."@en .
-
-:Deviation_detection a owl:Class ;
-    rdfs:subClassOf :Data_mining_technique_function ;
-    rdfs:label "deviation detection"@en ;
-    rdfs:comment "A function whose purpose is detecting changes in known behavior in data."@en .
-
-:Regression a owl:Class ;
-    rdfs:subClassOf :Data_mining_technique_function ;
-    rdfs:label "regression"@en ;
-    rdfs:comment "A function whose purpose is finding trends in data."@en .
-
-:Sequential_pattern_discovery a owl:Class ;
-    rdfs:subClassOf :Data_mining_technique_function ;
-    rdfs:label "sequential pattern discovery"@en ;
-    rdfs:comment "A function whose purpose is finding sequential patterns."@en .
-
-:Fault_detection a owl:Class ;
-    rdfs:subClassOf :Predictive_maintenance_module_function ;
-    rdfs:label "Fault detection"@en ;
-    rdfs:comment "A function whose purpose is searching for faults by assessing maintainable item parameters."@en .
-
-:Fault_feature_extraction a owl:Class ;
-    rdfs:subClassOf :Predictive_maintenance_module_function ;
-    rdfs:label "Fault feature extraction"@en ;
-    rdfs:comment "A function whose purpose is identifying symptoms corresponding to a specific fault."@en .
-
-:Fault_identification a owl:Class ;
-    rdfs:subClassOf :Predictive_maintenance_module_function ;
-    rdfs:label "Fault identification"@en ;
-    rdfs:comment "A function whose purpose is comparing symptoms against known criteria to identify a fault."@en .
-
-:Health_assessment a owl:Class ;
-    rdfs:subClassOf :Predictive_maintenance_module_function ;
-    rdfs:label "Health assessment"@en ;
-    rdfs:comment "A function whose purpose is rating the current condition of a maintainable item against a predefined scale."@en .
-
-:Health_modelling a owl:Class ;
-    rdfs:subClassOf :Predictive_maintenance_module_function ;
-    rdfs:label "Health modelling"@en ;
-    rdfs:comment "A function whose purpose is establishing a scale to rate the condition of a maintainable item."@en .
-
-:Future_state_forecast a owl:Class ;
-    rdfs:subClassOf :Predictive_maintenance_module_function ;
-    rdfs:label "Future state forecast"@en ;
-    rdfs:comment "A function whose purpose is forecasting a near-future condition from the current state of a maintainable item."@en .
-
-:Multiple_steps_future_state_forecast a owl:Class ;
-    rdfs:subClassOf :Future_state_forecast ;
-    rdfs:label "Multiple steps future state forecast"@en .
-
-:One_step_future_state_forecast a owl:Class ;
-    rdfs:subClassOf :Future_state_forecast ;
-    rdfs:label "One step future state forecast"@en .
-
-:Remaining_useful_life_estimation a owl:Class ;
-    rdfs:subClassOf :Predictive_maintenance_module_function ;
-    rdfs:label "Remaining useful life estimation"@en ;
-    rdfs:comment "A function whose purpose is forecasting the remaining operational life based on the current state of the maintainable item."@en .
+# GENERATED FILE - DO NOT EDIT.
+# Source: external/CBR-Ontology-For-Predictive-Maintenance/CBR-Ontology/CBRproject/data/OPMAD.owl
+# Command: python3 pipeline/generate_opmad_profile.py
+# N-Triples is valid Turtle; full IRIs make namespace auditing explicit.
+
+<http://purl.obolibrary.org/obo/BFO_0000019> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.obolibrary.org/obo/BFO_0000019> <http://www.w3.org/2000/01/rdf-schema#comment> "Support declaration only. The term is defined by an external ontology imported by authoritative OPMAD or is an external extraction relation; this profile does not redefine it."@en .
+<http://purl.obolibrary.org/obo/BFO_0000030> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.obolibrary.org/obo/BFO_0000030> <http://www.w3.org/2000/01/rdf-schema#comment> "Support declaration only. The term is defined by an external ontology imported by authoritative OPMAD or is an external extraction relation; this profile does not redefine it."@en .
+<http://purl.obolibrary.org/obo/BFO_0000034> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.obolibrary.org/obo/BFO_0000034> <http://www.w3.org/2000/01/rdf-schema#comment> "Support declaration only. The term is defined by an external ontology imported by authoritative OPMAD or is an external extraction relation; this profile does not redefine it."@en .
+<http://purl.obolibrary.org/obo/BFO_0000051> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.obolibrary.org/obo/BFO_0000051> <http://www.w3.org/2000/01/rdf-schema#comment> "Support declaration only. The term is defined by an external ontology imported by authoritative OPMAD or is an external extraction relation; this profile does not redefine it."@en .
+<http://purl.obolibrary.org/obo/RO_0000079> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.obolibrary.org/obo/RO_0000079> <http://www.w3.org/2000/01/rdf-schema#comment> "Support declaration only. The term is defined by an external ontology imported by authoritative OPMAD or is an external extraction relation; this profile does not redefine it."@en .
+<http://purl.obolibrary.org/obo/RO_0000085> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.obolibrary.org/obo/RO_0000085> <http://www.w3.org/2000/01/rdf-schema#comment> "Support declaration only. The term is defined by an external ontology imported by authoritative OPMAD or is an external extraction relation; this profile does not redefine it."@en .
+<http://purl.obolibrary.org/obo/RO_0000086> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.obolibrary.org/obo/RO_0000086> <http://www.w3.org/2000/01/rdf-schema#comment> "Support declaration only. The term is defined by an external ontology imported by authoritative OPMAD or is an external extraction relation; this profile does not redefine it."@en .
+<http://purl.obolibrary.org/obo/RO_0010001> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.obolibrary.org/obo/RO_0010001> <http://www.w3.org/2000/01/rdf-schema#comment> "Support declaration only. The term is defined by an external ontology imported by authoritative OPMAD or is an external extraction relation; this profile does not redefine it."@en .
+<http://purl.obolibrary.org/obo/RO_0010002> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.obolibrary.org/obo/RO_0010002> <http://www.w3.org/2000/01/rdf-schema#comment> "Support declaration only. The term is defined by an external ontology imported by authoritative OPMAD or is an external extraction relation; this profile does not redefine it."@en .
+<http://www.ontologyrepository.com/CommonCoreOntologies/Algorithm> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.ontologyrepository.com/CommonCoreOntologies/Algorithm> <http://www.w3.org/2000/01/rdf-schema#comment> "Support declaration only. The term is defined by an external ontology imported by authoritative OPMAD or is an external extraction relation; this profile does not redefine it."@en .
+<http://www.ontologyrepository.com/CommonCoreOntologies/ArtifactIdentifier> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.ontologyrepository.com/CommonCoreOntologies/ArtifactIdentifier> <http://www.w3.org/2000/01/rdf-schema#comment> "Support declaration only. The term is defined by an external ontology imported by authoritative OPMAD or is an external extraction relation; this profile does not redefine it."@en .
+<http://www.ontologyrepository.com/CommonCoreOntologies/Database> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.ontologyrepository.com/CommonCoreOntologies/Database> <http://www.w3.org/2000/01/rdf-schema#comment> "Support declaration only. The term is defined by an external ontology imported by authoritative OPMAD or is an external extraction relation; this profile does not redefine it."@en .
+<http://www.ontologyrepository.com/CommonCoreOntologies/DescriptiveInformationContentEntity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.ontologyrepository.com/CommonCoreOntologies/DescriptiveInformationContentEntity> <http://www.w3.org/2000/01/rdf-schema#comment> "Support declaration only. The term is defined by an external ontology imported by authoritative OPMAD or is an external extraction relation; this profile does not redefine it."@en .
+<http://www.ontologyrepository.com/CommonCoreOntologies/DesignativeName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.ontologyrepository.com/CommonCoreOntologies/DesignativeName> <http://www.w3.org/2000/01/rdf-schema#comment> "Support declaration only. The term is defined by an external ontology imported by authoritative OPMAD or is an external extraction relation; this profile does not redefine it."@en .
+<http://www.ontologyrepository.com/CommonCoreOntologies/InformationBearingArtifact> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.ontologyrepository.com/CommonCoreOntologies/InformationBearingArtifact> <http://www.w3.org/2000/01/rdf-schema#comment> "Support declaration only. The term is defined by an external ontology imported by authoritative OPMAD or is an external extraction relation; this profile does not redefine it."@en .
+<http://www.ontologyrepository.com/CommonCoreOntologies/InformationProcessingArtifact> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.ontologyrepository.com/CommonCoreOntologies/InformationProcessingArtifact> <http://www.w3.org/2000/01/rdf-schema#comment> "Support declaration only. The term is defined by an external ontology imported by authoritative OPMAD or is an external extraction relation; this profile does not redefine it."@en .
+<http://www.ontologyrepository.com/CommonCoreOntologies/described_by> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.ontologyrepository.com/CommonCoreOntologies/described_by> <http://www.w3.org/2000/01/rdf-schema#comment> "Support declaration only. The term is defined by an external ontology imported by authoritative OPMAD or is an external extraction relation; this profile does not redefine it."@en .
+<http://www.ontologyrepository.com/CommonCoreOntologies/describes> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.ontologyrepository.com/CommonCoreOntologies/describes> <http://www.w3.org/2000/01/rdf-schema#comment> "Support declaration only. The term is defined by an external ontology imported by authoritative OPMAD or is an external extraction relation; this profile does not redefine it."@en .
+<http://www.ontologyrepository.com/CommonCoreOntologies/designates> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.ontologyrepository.com/CommonCoreOntologies/designates> <http://www.w3.org/2000/01/rdf-schema#comment> "Support declaration only. The term is defined by an external ontology imported by authoritative OPMAD or is an external extraction relation; this profile does not redefine it."@en .
+<http://www.ontologyrepository.com/CommonCoreOntologies/is_about> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.ontologyrepository.com/CommonCoreOntologies/is_about> <http://www.w3.org/2000/01/rdf-schema#comment> "Support declaration only. The term is defined by an external ontology imported by authoritative OPMAD or is an external extraction relation; this profile does not redefine it."@en .
+<http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Article_identifier> <http://www.ontologyrepository.com/CommonCoreOntologies/definition> "An Artifact Indentifier entity that designates some article" .
+<http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Article_identifier> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Article_identifier> <http://www.w3.org/2000/01/rdf-schema#label> "Article identifier" .
+<http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Article_identifier> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.ontologyrepository.com/CommonCoreOntologies/ArtifactIdentifier> .
+<http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Article_identifier> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:cb232c585e31b2b422847ce3040cf31850e1fc7f346a42e370889217eabd9d94c9c .
+<http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Article_identifier> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:cbaa004f53d9d50fd945ea74057f246d5727608ae6a5b3727357226ac5477a25d5 .
+<http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Article_title> <http://www.ontologyrepository.com/CommonCoreOntologies/definition> "A Designative Name for some article" .
+<http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Article_title> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Article_title> <http://www.w3.org/2000/01/rdf-schema#label> "Article title" .
+<http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Article_title> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.ontologyrepository.com/CommonCoreOntologies/DesignativeName> .
+<http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Article_title> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:cb2279a71b64ebd72bdaa34903d877033ea44682ad150a79893c20eb46e6790b048 .
+<http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Article_title> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:cb9ed53b270d67406ea850d40237631c334c00c271522cd3fe900fa087d5318981 .
+<http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Association_discovery> <http://www.ontologyrepository.com/CommonCoreOntologies/definition> "A function whose purpose is the discovery of association pattern from data" .
+<http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Association_discovery> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Association_discovery> <http://www.w3.org/2000/01/rdf-schema#label> "association discovery" .
+<http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Association_discovery> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Data_mining_technique_function> .
+<http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Classification> <http://www.ontologyrepository.com/CommonCoreOntologies/definition> "A function whose purpose is the separation of data based on predefined parameters" .
+<http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Classification> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Classification> <http://www.w3.org/2000/01/rdf-schema#label> "classification" .
+<http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Classification> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Data_mining_technique_function> .
+<http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Clustering> <http://www.ontologyrepository.com/CommonCoreOntologies/definition> "A function whose purpose is the agrupation of data with similar characteristics" .
+<http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Clustering> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Clustering> <http://www.w3.org/2000/01/rdf-schema#label> "clustering" .
+<http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Clustering> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Data_mining_technique_function> .
+<http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Data_mining_technique_function> <http://www.ontologyrepository.com/CommonCoreOntologies/definition> "An realizable entity that is the purpose of data mining technique" .
+<http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Data_mining_technique_function> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Data_mining_technique_function> <http://www.w3.org/2000/01/rdf-schema#label> "data mining technique fucntion" .
+<http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Data_mining_technique_function> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.obolibrary.org/obo/BFO_0000034> .
+<http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Data_variable> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Data_variable> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.ontologyrepository.com/CommonCoreOntologies/DescriptiveInformationContentEntity> .
+<http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Design_detail> <http://www.ontologyrepository.com/CommonCoreOntologies/definition> "A generic quality of predictive maintenance modules that contains important design details that have not been previously designated in other classes." .
+<http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Design_detail> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Design_detail> <http://www.w3.org/2000/01/rdf-schema#label> "Design detail" .
+<http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Design_detail> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.obolibrary.org/obo/BFO_0000019> .
+<http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Deviation_detection> <http://www.ontologyrepository.com/CommonCoreOntologies/definition> "A function whose purpose is to detect changes in the known behavior of a set of data" .
+<http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Deviation_detection> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Deviation_detection> <http://www.w3.org/2000/01/rdf-schema#label> "deviation detection" .
+<http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Deviation_detection> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Data_mining_technique_function> .
+<http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Fault_detection> <http://www.ontologyrepository.com/CommonCoreOntologies/definition> "A function whose purpose is the search of faults by assessing some maintenable item parameters" .
+<http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Fault_detection> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Fault_detection> <http://www.w3.org/2000/01/rdf-schema#label> "Fault detection" .
+<http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Fault_detection> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Predictive_maintenance_module_function> .
+<http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Fault_detection> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:cb14c972f2e7135b4133f304fe4bed57a3eb2b053c65ed3d50f738bbf9c85a722eb .
+<http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Fault_detection> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:cb17aabaaa684ab2c59b4d6f0e51c0dd519d56fa203ecf7ef89aae6cc73e8aea929 .
+<http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Fault_detection> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:cb18bc48c61b93159d57639200dc725164c1f4071618f6e39b182a1907daef3a23a .
+<http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Fault_feature_extraction> <http://www.ontologyrepository.com/CommonCoreOntologies/definition> "A function whose purpose is purpose is the identification of symptoms that correspond to a specific fault" .
+<http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Fault_feature_extraction> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Fault_feature_extraction> <http://www.w3.org/2000/01/rdf-schema#label> "Fault feature extraction" .
+<http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Fault_feature_extraction> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Predictive_maintenance_module_function> .
+<http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Fault_feature_extraction> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:cb138fa5e34032829cd36d243209ccf601c7830511a5f081ca4332b6a3cb7e6bc15 .
+<http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Fault_feature_extraction> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:cb1670ed9ac169da213ac78e420fa07baf79aef9f57ed2c371e6a8677141aee4253 .
+<http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Fault_feature_extraction> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:cb9f4f34cf38d2f4eca1d22e3fb27e15d2c6950d72c40a6308265c76e53dd1c31b .
+<http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Fault_identification> <http://www.ontologyrepository.com/CommonCoreOntologies/definition> "A function whose purpose is the comparison of the symtoms against known criteria to identify a specific fault" .
+<http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Fault_identification> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Fault_identification> <http://www.w3.org/2000/01/rdf-schema#label> "Fault identification" .
+<http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Fault_identification> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Predictive_maintenance_module_function> .
+<http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Fault_identification> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:cb1754dbb8dd04eaf530e3933a875c244e912c5f8cc0d8983c965dceec2e0748ac6 .
+<http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Fault_identification> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:cb186669d4904d4dccecf9b62d120d9861b5c96c829afffcdf13d97b2cca6b983d7 .
+<http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Future_state_forecast> <http://www.ontologyrepository.com/CommonCoreOntologies/definition> "A function whose purpose is the forecast of the condition for the next cycle operational cycle based on the current state of the maintenanble item" .
+<http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Future_state_forecast> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Future_state_forecast> <http://www.w3.org/2000/01/rdf-schema#label> "Future state forecast" .
+<http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Future_state_forecast> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Predictive_maintenance_module_function> .
+<http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Future_state_forecast> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:cb391eb1c64b19b94645fc5b45e0c72aab7047915bf1f8bbb53ef2538def119460 .
+<http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Future_state_forecast> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:cb89039ac56293d498f91a92d8a91195c7568e4c8beed199290f96154114878bc4 .
+<http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Health_assessment> <http://www.ontologyrepository.com/CommonCoreOntologies/definition> "A function whose purpose is to rate the current condition of a maintainable item against a predefined scale" .
+<http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Health_assessment> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Health_assessment> <http://www.w3.org/2000/01/rdf-schema#label> "Health assessment" .
+<http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Health_assessment> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Predictive_maintenance_module_function> .
+<http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Health_assessment> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:cb147f915f5afdfa8575c6d4b8d0b4f8bfe627dc2ae31e35b86e539f4b2ae1b83f9 .
+<http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Health_assessment> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:cb6f208f5d9d8ecdb49064668318aea5a74452616b664b3d48c955307a0aba0bb0 .
+<http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Health_modelling> <http://www.ontologyrepository.com/CommonCoreOntologies/definition> "A function whose purpose is to establish a scale to rate the condition of a maintainable item" .
+<http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Health_modelling> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Health_modelling> <http://www.w3.org/2000/01/rdf-schema#label> "Health modelling" .
+<http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Health_modelling> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Predictive_maintenance_module_function> .
+<http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Health_modelling> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:cb13d91017b2ace0e0c80f678a54fbb72f39db848efb89912d0c0352e963e35a924 .
+<http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Health_modelling> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:cbf3eae968da339451f41a7b8b787cd5d5b84a87ae0ee15b1f808a7ab9faba7e81 .
+<http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Maintainable_item> <http://purl.obolibrary.org/obo/IAO_0000116> "definition based on IEC 60812:2018" .
+<http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Maintainable_item> <http://www.ontologyrepository.com/CommonCoreOntologies/definition> "Subject being considered for maintenance" .
+<http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Maintainable_item> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Maintainable_item> <http://www.w3.org/2000/01/rdf-schema#label> "Maintainable item" .
+<http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Maintainable_item> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.obolibrary.org/obo/BFO_0000030> .
+<http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Maintainable_item> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:cb1c08aa02e24429cdfa33a92ff8e49bbd1d3966671be503e0ffddc3b6257dc8388 .
+<http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Model_configuration> <http://www.ontologyrepository.com/CommonCoreOntologies/definition> "An arrangement of models in a predictive maintenance module" .
+<http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Model_configuration> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Model_configuration> <http://www.w3.org/2000/01/rdf-schema#label> "Model configuration" .
+<http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Model_configuration> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.ontologyrepository.com/CommonCoreOntologies/DescriptiveInformationContentEntity> .
+<http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Model_configuration> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:cb13f7ce914344ddd1c83d143ad15450513b5020f247c15033a203cff7e62beea81 .
+<http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Model_configuration> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:cbb7bbede5db606ccbe846fe6755e30249cc4fb88805bbddbde1cf61e01338db27 .
+<http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Model_type> <http://www.ontologyrepository.com/CommonCoreOntologies/definition> "A descriptive information content entity that describes the family of a predicitive maintenance model" .
+<http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Model_type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Model_type> <http://www.w3.org/2000/01/rdf-schema#label> "Model type" .
+<http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Model_type> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.ontologyrepository.com/CommonCoreOntologies/DescriptiveInformationContentEntity> .
+<http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Model_type> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:cb13115301062b6896ae39966e1b9564cbdf60126d142c9475819b3954d7339f088 .
+<http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Module_synchronization> <http://www.ontologyrepository.com/CommonCoreOntologies/definition> "A quality of a predictive maintenance module that help to classify the work syncronization with the maintenanble item between online and off-line" .
+<http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Module_synchronization> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Module_synchronization> <http://www.w3.org/2000/01/rdf-schema#label> "Module Synchronization" .
+<http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Module_synchronization> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.obolibrary.org/obo/BFO_0000019> .
+<http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Multiple_steps_future_state_forecast> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Multiple_steps_future_state_forecast> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Future_state_forecast> .
+<http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Number_of_failure_modes> <http://www.ontologyrepository.com/CommonCoreOntologies/definition> "A quality that states the number of failures modes that are known from a maintainable item" .
+<http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Number_of_failure_modes> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Number_of_failure_modes> <http://www.w3.org/2000/01/rdf-schema#label> "number of failures modes" .
+<http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Number_of_failure_modes> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.obolibrary.org/obo/BFO_0000019> .
+<http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#One_step_future_state_forecast> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#One_step_future_state_forecast> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Future_state_forecast> .
+<http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Performance_indicator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Performance_indicator> <http://www.w3.org/2000/01/rdf-schema#label> "Performance indicator" .
+<http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Performance_indicator> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.ontologyrepository.com/CommonCoreOntologies/DescriptiveInformationContentEntity> .
+<http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Performance_indicator> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:cbdb5827db6bf8b8be226edf555dd909898a36fe8048e7e735490117a0da9970e0 .
+<http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Performance_value> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Performance_value> <http://www.w3.org/2000/01/rdf-schema#label> "Performance value" .
+<http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Performance_value> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.ontologyrepository.com/CommonCoreOntologies/DescriptiveInformationContentEntity> .
+<http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Performance_value> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:cb1bb7a1af42a0c883c0458a812a82a9b2ae8e8c6fb3c9363c46f2dc1684918f6f5 .
+<http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Predictive_Maintenance_Article> <http://www.ontologyrepository.com/CommonCoreOntologies/definition> "An Information Bearing Artifact that is designed to bear a specific brief composition on predictive mainenance topic as part of a Journal Issue or conference" .
+<http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Predictive_Maintenance_Article> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Predictive_Maintenance_Article> <http://www.w3.org/2000/01/rdf-schema#label> "Predictive Maintenance Article" .
+<http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Predictive_Maintenance_Article> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.ontologyrepository.com/CommonCoreOntologies/InformationBearingArtifact> .
+<http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Predictive_Maintenance_Article> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:cb10daa9e3d24ab61b331ce319d015edd8893625b5958b761bb7edaee5b83f5a4d4 .
+<http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Predictive_Maintenance_Article> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:cb133e17217a72b35d7e4c3d6561f3d78961162ee762466f23ee75a61e7b3f26f9d .
+<http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Predictive_Maintenance_Article> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:cbbb3206ebd4069f8d45735c007e1b88f0a3fdb5aacd17dd3078abfd655a8ae350 .
+<http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Predictive_maintenance_case> <http://www.ontologyrepository.com/CommonCoreOntologies/definition> "A designative information content entity that provides a name to a case in a case base. It is about a predictive maintenance model explained in a predictive maintenance article" .
+<http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Predictive_maintenance_case> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Predictive_maintenance_case> <http://www.w3.org/2000/01/rdf-schema#label> "Predictive maintenance case" .
+<http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Predictive_maintenance_case> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.ontologyrepository.com/CommonCoreOntologies/DesignativeName> .
+<http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Predictive_maintenance_case> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:cb19a6acc9ef1686f6e046376dbe026abb2badd79214351bc077953f3b0d6c7605d .
+<http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Predictive_maintenance_model> <http://www.ontologyrepository.com/CommonCoreOntologies/definition> "A Directive Information Content Entity that consist of a set of propositions for predictive maintenance purposes" .
+<http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Predictive_maintenance_model> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Predictive_maintenance_model> <http://www.w3.org/2000/01/rdf-schema#label> "Predictive maintenance model" .
+<http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Predictive_maintenance_model> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.ontologyrepository.com/CommonCoreOntologies/Algorithm> .
+<http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Predictive_maintenance_model> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:cb1a8c9cd25e9c15fd605623c4966f882e033b9efc992cdbd2caac0aac0bcd0809d .
+<http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Predictive_maintenance_module_function> <http://www.ontologyrepository.com/CommonCoreOntologies/definition> "An realizable entity that is the purpose of a predictive maintenance module" .
+<http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Predictive_maintenance_module_function> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Predictive_maintenance_module_function> <http://www.w3.org/2000/01/rdf-schema#label> "predictive maintenance module function" .
+<http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Predictive_maintenance_module_function> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.obolibrary.org/obo/BFO_0000034> .
+<http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Predictive_maintenance_system_module> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Predictive_maintenance_system_module> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.ontologyrepository.com/CommonCoreOntologies/InformationProcessingArtifact> .
+<http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Predictive_maintenance_system_module> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:cb14c1c8691ad99e6c2c3bb826617d2b641f0b9a09107407abd39f78636f33ae568 .
+<http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Predictive_maintenance_system_module> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:cb1abf82e2d18c80f11fb0b34c206d882f18bf24fa7e0dace430626e2d3c27ef3d3 .
+<http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Predictive_maintenance_system_module> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:cbcc054d5ce3d9b11d0cf4f184d951f8aef35f7bf0c9022b5aa9a98bf383aba8d0 .
+<http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Predictive_maintenance_system_module> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:cbe8709248e33a8aeba11553cff8c4d3a64b5d096dfeb4abfb6e3c5e98beaaee16 .
+<http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Publication_year> <http://www.ontologyrepository.com/CommonCoreOntologies/definition> "A integer value that represents the Gregorian year in which an article was publised" .
+<http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Publication_year> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Publication_year> <http://www.w3.org/2000/01/rdf-schema#label> "Publication year" .
+<http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Publication_year> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.ontologyrepository.com/CommonCoreOntologies/DescriptiveInformationContentEntity> .
+<http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Publication_year> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:cb1f8c9114cb22f0d0431551cb70948e64f611351c035def049fef13663c9632b18 .
+<http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Publication_year> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:cb21e259469c2360b2e329434dcebfb81263d3dff9dc3ef8fd5f44db135cdfd5fc6 .
+<http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Publication_year> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:cb95605dda80dfd8df30b078a19bee696f44d6973dc574cb40c24e9d4f3b9e38ff .
+<http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Regression> <http://www.ontologyrepository.com/CommonCoreOntologies/definition> "A function whose purpose is the search of trends in data" .
+<http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Regression> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Regression> <http://www.w3.org/2000/01/rdf-schema#label> "regression" .
+<http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Regression> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Data_mining_technique_function> .
+<http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Remaining_useful_life_estimation> <http://www.ontologyrepository.com/CommonCoreOntologies/definition> "A function whose purpose is the forecast of the remining operational life based on the current state of the maintenanble item" .
+<http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Remaining_useful_life_estimation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Remaining_useful_life_estimation> <http://www.w3.org/2000/01/rdf-schema#label> "Remaining useful life estimation" .
+<http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Remaining_useful_life_estimation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Predictive_maintenance_module_function> .
+<http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Remaining_useful_life_estimation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:cb4fe4e8ff177a1b52b31e3792c84a6b1be646bb2ffcd8dd73d0a3c1b32575f764 .
+<http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Remaining_useful_life_estimation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:cbd8d886981250daa2cc08e509f2a0e6571e2b6142cb981e3e1be4c438a3617849 .
+<http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Sequential_pattern_discovery> <http://www.ontologyrepository.com/CommonCoreOntologies/definition> "A function whose purpose is the search of sequential patterns" .
+<http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Sequential_pattern_discovery> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Sequential_pattern_discovery> <http://www.w3.org/2000/01/rdf-schema#label> "sequential pattern discovery" .
+<http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Sequential_pattern_discovery> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Data_mining_technique_function> .
+<http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#describes_configuration> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#describes_configuration> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.ontologyrepository.com/CommonCoreOntologies/describes> .
+<http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#describes_type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#describes_type> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.ontologyrepository.com/CommonCoreOntologies/describes> .
+<http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#describes_type> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#type_described_by> .
+<http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#explained_in> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#explained_in> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.obolibrary.org/obo/RO_0010001> .
+<http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#explained_in> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#explains> .
+<http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#explains> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#explains> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.obolibrary.org/obo/RO_0010002> .
+<http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#has_design_detail> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#has_design_detail> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.obolibrary.org/obo/RO_0000086> .
+<http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#has_identifier> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#has_identifier> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.obolibrary.org/obo/RO_0010002> .
+<http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#has_interger_value> <http://purl.obolibrary.org/obo/IAO_0000116> "Similar to the CCO: has integer value, but it is not only linked to Information Bearing Entities" .
+<http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#has_interger_value> <http://www.ontologyrepository.com/CommonCoreOntologies/definition> "Constrain for classes whose instances value can only be integers" .
+<http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#has_interger_value> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#has_interger_value> <http://www.w3.org/2000/01/rdf-schema#label> "information has interger value" .
+<http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#has_interger_value> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#integer> .
+<http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#has_interger_value> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topDataProperty> .
+<http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#has_predictive_maintenance_function> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#has_predictive_maintenance_function> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.obolibrary.org/obo/RO_0000085> .
+<http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#has_predictive_maintenance_function> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#is_predictive_maintenance_function_of> .
+<http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#has_publication_year> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#has_publication_year> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.obolibrary.org/obo/RO_0010002> .
+<http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#has_synchronization> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#has_synchronization> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.obolibrary.org/obo/RO_0000086> .
+<http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#has_text_value> <http://purl.obolibrary.org/obo/IAO_0000116> "Similar to the CCO: has text value, but it is not only linked to Information Bearing Entities" .
+<http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#has_text_value> <http://www.ontologyrepository.com/CommonCoreOntologies/definition> "Constrain for classes whose instances value can only be strings" .
+<http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#has_text_value> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#has_text_value> <http://www.w3.org/2000/01/rdf-schema#label> "information has text value" .
+<http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#has_text_value> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#has_title> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#has_title> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.obolibrary.org/obo/RO_0010002> .
+<http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#implies> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#implies> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#is_implied_by> .
+<http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#is_implied_by> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#is_implied_by> <http://www.w3.org/2000/01/rdf-schema#label> "is implied by" .
+<http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#is_predictive_maintenance_function_of> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#is_predictive_maintenance_function_of> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.obolibrary.org/obo/RO_0000079> .
+<http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#item_type> <http://www.ontologyrepository.com/CommonCoreOntologies/definition> "A descriptive information content entity that describes the family of an item from the predicitive maintenance perspective" .
+<http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#item_type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#item_type> <http://www.w3.org/2000/01/rdf-schema#label> "item type" .
+<http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#item_type> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.ontologyrepository.com/CommonCoreOntologies/DescriptiveInformationContentEntity> .
+<http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#item_type> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:cb736488925eed638659755d5f2cfc313e707bfbf47c7e984fd8ccff1fe768c18c .
+<http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#maintainable_item_record> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#maintainable_item_record> <http://www.w3.org/2000/01/rdf-schema#label> "maintainable item record" .
+<http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#maintainable_item_record> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.ontologyrepository.com/CommonCoreOntologies/Database> .
+<http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#number_if_input_variables> <http://www.ontologyrepository.com/CommonCoreOntologies/definition> "A quality that states the number of input variables that are used in a predictive maintenance model for a specific item in predictive maintenance case." .
+<http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#number_if_input_variables> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#number_if_input_variables> <http://www.w3.org/2000/01/rdf-schema#label> "number of input variables" .
+<http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#number_if_input_variables> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.obolibrary.org/obo/BFO_0000019> .
+<http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#type_described_by> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#type_described_by> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.ontologyrepository.com/CommonCoreOntologies/described_by> .
+<http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+_:cb10daa9e3d24ab61b331ce319d015edd8893625b5958b761bb7edaee5b83f5a4d4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:cb10daa9e3d24ab61b331ce319d015edd8893625b5958b761bb7edaee5b83f5a4d4 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#has_title> .
+_:cb10daa9e3d24ab61b331ce319d015edd8893625b5958b761bb7edaee5b83f5a4d4 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Article_title> .
+_:cb13115301062b6896ae39966e1b9564cbdf60126d142c9475819b3954d7339f088 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:cb13115301062b6896ae39966e1b9564cbdf60126d142c9475819b3954d7339f088 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#describes_type> .
+_:cb13115301062b6896ae39966e1b9564cbdf60126d142c9475819b3954d7339f088 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Predictive_maintenance_model> .
+_:cb133e17217a72b35d7e4c3d6561f3d78961162ee762466f23ee75a61e7b3f26f9d <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:cb133e17217a72b35d7e4c3d6561f3d78961162ee762466f23ee75a61e7b3f26f9d <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#has_publication_year> .
+_:cb133e17217a72b35d7e4c3d6561f3d78961162ee762466f23ee75a61e7b3f26f9d <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Publication_year> .
+_:cb138fa5e34032829cd36d243209ccf601c7830511a5f081ca4332b6a3cb7e6bc15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:cb138fa5e34032829cd36d243209ccf601c7830511a5f081ca4332b6a3cb7e6bc15 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#implies> .
+_:cb138fa5e34032829cd36d243209ccf601c7830511a5f081ca4332b6a3cb7e6bc15 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Deviation_detection> .
+_:cb13d91017b2ace0e0c80f678a54fbb72f39db848efb89912d0c0352e963e35a924 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:cb13d91017b2ace0e0c80f678a54fbb72f39db848efb89912d0c0352e963e35a924 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#implies> .
+_:cb13d91017b2ace0e0c80f678a54fbb72f39db848efb89912d0c0352e963e35a924 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Clustering> .
+_:cb13f7ce914344ddd1c83d143ad15450513b5020f247c15033a203cff7e62beea81 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:cb13f7ce914344ddd1c83d143ad15450513b5020f247c15033a203cff7e62beea81 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#describes_configuration> .
+_:cb13f7ce914344ddd1c83d143ad15450513b5020f247c15033a203cff7e62beea81 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Predictive_maintenance_model> .
+_:cb147f915f5afdfa8575c6d4b8d0b4f8bfe627dc2ae31e35b86e539f4b2ae1b83f9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:cb147f915f5afdfa8575c6d4b8d0b4f8bfe627dc2ae31e35b86e539f4b2ae1b83f9 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#implies> .
+_:cb147f915f5afdfa8575c6d4b8d0b4f8bfe627dc2ae31e35b86e539f4b2ae1b83f9 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Classification> .
+_:cb14c1c8691ad99e6c2c3bb826617d2b641f0b9a09107407abd39f78636f33ae568 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:cb14c1c8691ad99e6c2c3bb826617d2b641f0b9a09107407abd39f78636f33ae568 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#has_predictive_maintenance_function> .
+_:cb14c1c8691ad99e6c2c3bb826617d2b641f0b9a09107407abd39f78636f33ae568 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Predictive_maintenance_module_function> .
+_:cb14c972f2e7135b4133f304fe4bed57a3eb2b053c65ed3d50f738bbf9c85a722eb <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:cb14c972f2e7135b4133f304fe4bed57a3eb2b053c65ed3d50f738bbf9c85a722eb <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#implies> .
+_:cb14c972f2e7135b4133f304fe4bed57a3eb2b053c65ed3d50f738bbf9c85a722eb <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Deviation_detection> .
+_:cb1670ed9ac169da213ac78e420fa07baf79aef9f57ed2c371e6a8677141aee4253 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:cb1670ed9ac169da213ac78e420fa07baf79aef9f57ed2c371e6a8677141aee4253 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#implies> .
+_:cb1670ed9ac169da213ac78e420fa07baf79aef9f57ed2c371e6a8677141aee4253 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Association_discovery> .
+_:cb1754dbb8dd04eaf530e3933a875c244e912c5f8cc0d8983c965dceec2e0748ac6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:cb1754dbb8dd04eaf530e3933a875c244e912c5f8cc0d8983c965dceec2e0748ac6 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#implies> .
+_:cb1754dbb8dd04eaf530e3933a875c244e912c5f8cc0d8983c965dceec2e0748ac6 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Association_discovery> .
+_:cb17aabaaa684ab2c59b4d6f0e51c0dd519d56fa203ecf7ef89aae6cc73e8aea929 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:cb17aabaaa684ab2c59b4d6f0e51c0dd519d56fa203ecf7ef89aae6cc73e8aea929 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#implies> .
+_:cb17aabaaa684ab2c59b4d6f0e51c0dd519d56fa203ecf7ef89aae6cc73e8aea929 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Association_discovery> .
+_:cb186669d4904d4dccecf9b62d120d9861b5c96c829afffcdf13d97b2cca6b983d7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:cb186669d4904d4dccecf9b62d120d9861b5c96c829afffcdf13d97b2cca6b983d7 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#implies> .
+_:cb186669d4904d4dccecf9b62d120d9861b5c96c829afffcdf13d97b2cca6b983d7 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Classification> .
+_:cb18bc48c61b93159d57639200dc725164c1f4071618f6e39b182a1907daef3a23a <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:cb18bc48c61b93159d57639200dc725164c1f4071618f6e39b182a1907daef3a23a <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#implies> .
+_:cb18bc48c61b93159d57639200dc725164c1f4071618f6e39b182a1907daef3a23a <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Classification> .
+_:cb19a6acc9ef1686f6e046376dbe026abb2badd79214351bc077953f3b0d6c7605d <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:cb19a6acc9ef1686f6e046376dbe026abb2badd79214351bc077953f3b0d6c7605d <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#explained_in> .
+_:cb19a6acc9ef1686f6e046376dbe026abb2badd79214351bc077953f3b0d6c7605d <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Predictive_Maintenance_Article> .
+_:cb1a8c9cd25e9c15fd605623c4966f882e033b9efc992cdbd2caac0aac0bcd0809d <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:cb1a8c9cd25e9c15fd605623c4966f882e033b9efc992cdbd2caac0aac0bcd0809d <http://www.w3.org/2002/07/owl#onProperty> <http://www.ontologyrepository.com/CommonCoreOntologies/is_about> .
+_:cb1a8c9cd25e9c15fd605623c4966f882e033b9efc992cdbd2caac0aac0bcd0809d <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Maintainable_item> .
+_:cb1abf82e2d18c80f11fb0b34c206d882f18bf24fa7e0dace430626e2d3c27ef3d3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:cb1abf82e2d18c80f11fb0b34c206d882f18bf24fa7e0dace430626e2d3c27ef3d3 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.obolibrary.org/obo/RO_0010002> .
+_:cb1abf82e2d18c80f11fb0b34c206d882f18bf24fa7e0dace430626e2d3c27ef3d3 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Predictive_maintenance_model> .
+_:cb1bb7a1af42a0c883c0458a812a82a9b2ae8e8c6fb3c9363c46f2dc1684918f6f5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:cb1bb7a1af42a0c883c0458a812a82a9b2ae8e8c6fb3c9363c46f2dc1684918f6f5 <http://www.w3.org/2002/07/owl#onProperty> <http://www.ontologyrepository.com/CommonCoreOntologies/is_about> .
+_:cb1bb7a1af42a0c883c0458a812a82a9b2ae8e8c6fb3c9363c46f2dc1684918f6f5 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Performance_indicator> .
+_:cb1c08aa02e24429cdfa33a92ff8e49bbd1d3966671be503e0ffddc3b6257dc8388 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:cb1c08aa02e24429cdfa33a92ff8e49bbd1d3966671be503e0ffddc3b6257dc8388 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.obolibrary.org/obo/RO_0000085> .
+_:cb1c08aa02e24429cdfa33a92ff8e49bbd1d3966671be503e0ffddc3b6257dc8388 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://purl.obolibrary.org/obo/BFO_0000034> .
+_:cb1f8c9114cb22f0d0431551cb70948e64f611351c035def049fef13663c9632b18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:cb1f8c9114cb22f0d0431551cb70948e64f611351c035def049fef13663c9632b18 <http://www.w3.org/2002/07/owl#onClass> <http://www.ontologyrepository.com/CommonCoreOntologies/CalendarYear> .
+_:cb1f8c9114cb22f0d0431551cb70948e64f611351c035def049fef13663c9632b18 <http://www.w3.org/2002/07/owl#onProperty> <http://www.ontologyrepository.com/CommonCoreOntologies/is_about> .
+_:cb1f8c9114cb22f0d0431551cb70948e64f611351c035def049fef13663c9632b18 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:cb21e259469c2360b2e329434dcebfb81263d3dff9dc3ef8fd5f44db135cdfd5fc6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:cb21e259469c2360b2e329434dcebfb81263d3dff9dc3ef8fd5f44db135cdfd5fc6 <http://www.w3.org/2002/07/owl#onProperty> <http://www.ontologyrepository.com/CommonCoreOntologies/is_about> .
+_:cb21e259469c2360b2e329434dcebfb81263d3dff9dc3ef8fd5f44db135cdfd5fc6 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Predictive_Maintenance_Article> .
+_:cb2279a71b64ebd72bdaa34903d877033ea44682ad150a79893c20eb46e6790b048 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:cb2279a71b64ebd72bdaa34903d877033ea44682ad150a79893c20eb46e6790b048 <http://www.w3.org/2002/07/owl#onProperty> <http://www.ontologyrepository.com/CommonCoreOntologies/is_about> .
+_:cb2279a71b64ebd72bdaa34903d877033ea44682ad150a79893c20eb46e6790b048 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Predictive_Maintenance_Article> .
+_:cb232c585e31b2b422847ce3040cf31850e1fc7f346a42e370889217eabd9d94c9c <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:cb232c585e31b2b422847ce3040cf31850e1fc7f346a42e370889217eabd9d94c9c <http://www.w3.org/2002/07/owl#onProperty> <http://www.ontologyrepository.com/CommonCoreOntologies/is_about> .
+_:cb232c585e31b2b422847ce3040cf31850e1fc7f346a42e370889217eabd9d94c9c <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Predictive_Maintenance_Article> .
+_:cb391eb1c64b19b94645fc5b45e0c72aab7047915bf1f8bbb53ef2538def119460 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:cb391eb1c64b19b94645fc5b45e0c72aab7047915bf1f8bbb53ef2538def119460 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#implies> .
+_:cb391eb1c64b19b94645fc5b45e0c72aab7047915bf1f8bbb53ef2538def119460 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Sequential_pattern_discovery> .
+_:cb4fe4e8ff177a1b52b31e3792c84a6b1be646bb2ffcd8dd73d0a3c1b32575f764 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:cb4fe4e8ff177a1b52b31e3792c84a6b1be646bb2ffcd8dd73d0a3c1b32575f764 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#implies> .
+_:cb4fe4e8ff177a1b52b31e3792c84a6b1be646bb2ffcd8dd73d0a3c1b32575f764 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Regression> .
+_:cb6f208f5d9d8ecdb49064668318aea5a74452616b664b3d48c955307a0aba0bb0 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:cb6f208f5d9d8ecdb49064668318aea5a74452616b664b3d48c955307a0aba0bb0 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#implies> .
+_:cb6f208f5d9d8ecdb49064668318aea5a74452616b664b3d48c955307a0aba0bb0 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Sequential_pattern_discovery> .
+_:cb736488925eed638659755d5f2cfc313e707bfbf47c7e984fd8ccff1fe768c18c <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:cb736488925eed638659755d5f2cfc313e707bfbf47c7e984fd8ccff1fe768c18c <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#describes_type> .
+_:cb736488925eed638659755d5f2cfc313e707bfbf47c7e984fd8ccff1fe768c18c <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Maintainable_item> .
+_:cb89039ac56293d498f91a92d8a91195c7568e4c8beed199290f96154114878bc4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:cb89039ac56293d498f91a92d8a91195c7568e4c8beed199290f96154114878bc4 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#implies> .
+_:cb89039ac56293d498f91a92d8a91195c7568e4c8beed199290f96154114878bc4 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Regression> .
+_:cb95605dda80dfd8df30b078a19bee696f44d6973dc574cb40c24e9d4f3b9e38ff <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:cb95605dda80dfd8df30b078a19bee696f44d6973dc574cb40c24e9d4f3b9e38ff <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#has_interger_value> .
+_:cb95605dda80dfd8df30b078a19bee696f44d6973dc574cb40c24e9d4f3b9e38ff <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2001/XMLSchema#integer> .
+_:cb9ed53b270d67406ea850d40237631c334c00c271522cd3fe900fa087d5318981 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:cb9ed53b270d67406ea850d40237631c334c00c271522cd3fe900fa087d5318981 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#has_text_value> .
+_:cb9ed53b270d67406ea850d40237631c334c00c271522cd3fe900fa087d5318981 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2001/XMLSchema#string> .
+_:cb9f4f34cf38d2f4eca1d22e3fb27e15d2c6950d72c40a6308265c76e53dd1c31b <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:cb9f4f34cf38d2f4eca1d22e3fb27e15d2c6950d72c40a6308265c76e53dd1c31b <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#implies> .
+_:cb9f4f34cf38d2f4eca1d22e3fb27e15d2c6950d72c40a6308265c76e53dd1c31b <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Sequential_pattern_discovery> .
+_:cbaa004f53d9d50fd945ea74057f246d5727608ae6a5b3727357226ac5477a25d5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:cbaa004f53d9d50fd945ea74057f246d5727608ae6a5b3727357226ac5477a25d5 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#has_text_value> .
+_:cbaa004f53d9d50fd945ea74057f246d5727608ae6a5b3727357226ac5477a25d5 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2001/XMLSchema#string> .
+_:cbb7bbede5db606ccbe846fe6755e30249cc4fb88805bbddbde1cf61e01338db27 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:cbb7bbede5db606ccbe846fe6755e30249cc4fb88805bbddbde1cf61e01338db27 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#has_text_value> .
+_:cbb7bbede5db606ccbe846fe6755e30249cc4fb88805bbddbde1cf61e01338db27 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2001/XMLSchema#string> .
+_:cbbb3206ebd4069f8d45735c007e1b88f0a3fdb5aacd17dd3078abfd655a8ae350 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:cbbb3206ebd4069f8d45735c007e1b88f0a3fdb5aacd17dd3078abfd655a8ae350 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#has_identifier> .
+_:cbbb3206ebd4069f8d45735c007e1b88f0a3fdb5aacd17dd3078abfd655a8ae350 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Article_identifier> .
+_:cbcc054d5ce3d9b11d0cf4f184d951f8aef35f7bf0c9022b5aa9a98bf383aba8d0 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:cbcc054d5ce3d9b11d0cf4f184d951f8aef35f7bf0c9022b5aa9a98bf383aba8d0 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#has_synchronization> .
+_:cbcc054d5ce3d9b11d0cf4f184d951f8aef35f7bf0c9022b5aa9a98bf383aba8d0 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Module_synchronization> .
+_:cbd8d886981250daa2cc08e509f2a0e6571e2b6142cb981e3e1be4c438a3617849 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:cbd8d886981250daa2cc08e509f2a0e6571e2b6142cb981e3e1be4c438a3617849 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#implies> .
+_:cbd8d886981250daa2cc08e509f2a0e6571e2b6142cb981e3e1be4c438a3617849 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Classification> .
+_:cbdb5827db6bf8b8be226edf555dd909898a36fe8048e7e735490117a0da9970e0 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:cbdb5827db6bf8b8be226edf555dd909898a36fe8048e7e735490117a0da9970e0 <http://www.w3.org/2002/07/owl#onProperty> <http://www.ontologyrepository.com/CommonCoreOntologies/describes> .
+_:cbdb5827db6bf8b8be226edf555dd909898a36fe8048e7e735490117a0da9970e0 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Predictive_maintenance_system_module> .
+_:cbe8709248e33a8aeba11553cff8c4d3a64b5d096dfeb4abfb6e3c5e98beaaee16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:cbe8709248e33a8aeba11553cff8c4d3a64b5d096dfeb4abfb6e3c5e98beaaee16 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#has_design_detail> .
+_:cbe8709248e33a8aeba11553cff8c4d3a64b5d096dfeb4abfb6e3c5e98beaaee16 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Design_detail> .
+_:cbf3eae968da339451f41a7b8b787cd5d5b84a87ae0ee15b1f808a7ab9faba7e81 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:cbf3eae968da339451f41a7b8b787cd5d5b84a87ae0ee15b1f808a7ab9faba7e81 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#implies> .
+_:cbf3eae968da339451f41a7b8b787cd5d5b84a87ae0ee15b1f808a7ab9faba7e81 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Sequential_pattern_discovery> .

@@ -305,7 +305,8 @@ ontologies-cbr query-one `
 | File | Purpose |
 |------|---------|
 | `pipeline/extraction_schema.py` | Pydantic model mapping 19 CSV columns to OPMAD ontology IRIs |
-| `pipeline/seed_ontology/opmad_seed.ttl` | Self-contained OPMAD seed ontology for fixed-ontology extraction |
+| `pipeline/seed_ontology/opmad_seed.ttl` | Generated, import-free OPMAD extraction profile using authoritative `#` IRIs |
+| `pipeline/generate_opmad_profile.py` | Deterministically regenerate or `--check` the profile against authoritative `OPMAD.owl` |
 | `pipeline/ontocast_config.env` | OntoCast configuration for constrained extraction mode |
 | `pipeline/run_extraction.sh` | macOS/Linux wrapper script that runs OntoCast on a PDF |
 | `pipeline/run_extraction.ps1` | Windows PowerShell wrapper script that runs OntoCast on a PDF |

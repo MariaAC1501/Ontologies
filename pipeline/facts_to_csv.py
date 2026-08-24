@@ -8,8 +8,8 @@ Sample invocation:
       --output pipeline/test_output/extracted_cases.csv
 
 Notes:
-- OntoCast facts may use either the OPMAD `#` namespace or the `OPMAD/seed#`
-  namespace.
+- New fixed-mode facts must use the authoritative OPMAD `#` namespace. The
+  converter's local-name matching remains tolerant of historical artifacts.
 - OntoCast facts currently contain RDF-star reification statements that stock
   rdflib cannot parse. This script strips those statements before parsing.
 - Missing fields are filled with conservative defaults so the output still
