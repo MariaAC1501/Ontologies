@@ -12,12 +12,13 @@ import argparse
 import hashlib
 import re
 import sys
-from dataclasses import dataclass
+from dataclasses import dataclass, field
 from pathlib import Path
 from typing import Any, Iterable
 
 from rdflib import BNode, Graph, Literal, OWL, RDF, RDFS, URIRef
 from rdflib.compare import to_canonical_graph
+from rdflib.util import guess_format
 
 if __package__ is None or __package__ == "":
     sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
@@ -30,6 +31,11 @@ DEFAULT_SOURCE = (
     / "external/CBR-Ontology-For-Predictive-Maintenance/CBR-Ontology/CBRproject/data/OPMAD.owl"
 )
 DEFAULT_OUTPUT = ROOT / "pipeline/seed_ontology/opmad_seed.ttl"
+# Updating the authoritative artifact requires an explicit review and source-pin
+# update here. The gitlink identifies the upstream tree from which it came;
+# the digest pins the exact OPMAD.owl bytes consumed by this generator.
+DEFAULT_SOURCE_SUBMODULE_COMMIT = "a17841db47190465536dfef30fdb1527135a8f74"
+EXPECTED_DEFAULT_SOURCE_SHA256 = "60cb97d62f1e4bc66d2bdc2eaf45d30422414b51a08c47ee24168aa31acb62ac"
 ONTOLOGY_IRI = URIRef(OPMAD.removesuffix("#"))
 OPMAD_BASE = str(ONTOLOGY_IRI)
 LEGACY_SEED_NAMESPACE = f"{OPMAD_BASE}/seed#"
@@ -57,11 +63,14 @@ RESTRICTION_CLASS_PREDICATES = {
 
 @dataclass(frozen=True)
 class SourceProvenance:
+    """Metadata and the immutable byte snapshot to which it applies."""
+
     path: Path
     display_path: str
     identity: str
     sha256: str
     authoritative: bool
+    content: bytes = field(repr=False)
 
 
 def _string_values(value: Any) -> Iterable[str]:
@@ -235,7 +244,7 @@ def validate_profile(source: Graph, profile: Graph) -> None:
 
 
 def source_provenance(path: Path, *, allow_custom_source: bool = False) -> SourceProvenance:
-    """Pin the exact source bytes and reject unacknowledged custom inputs."""
+    """Read one byte snapshot, validate its identity, and record its digest."""
 
     resolved = path.expanduser().resolve()
     authoritative = resolved == DEFAULT_SOURCE.resolve()
@@ -244,17 +253,31 @@ def source_provenance(path: Path, *, allow_custom_source: bool = False) -> Sourc
             f"Custom OPMAD source {resolved} requires --allow-custom-source; "
             "custom output is not authoritative"
         )
-    if not resolved.is_file():
+
+    try:
+        content = resolved.read_bytes()
+    except FileNotFoundError:
         if authoritative:
             raise FileNotFoundError(
                 f"Authoritative OPMAD source not found at {DEFAULT_SOURCE}. "
                 "Initialize the CBR ontology submodule first."
-            )
-        raise FileNotFoundError(f"Custom OPMAD source not found at {resolved}")
+            ) from None
+        raise FileNotFoundError(f"Custom OPMAD source not found at {resolved}") from None
+
+    sha256 = hashlib.sha256(content).hexdigest()
+    if authoritative and sha256 != EXPECTED_DEFAULT_SOURCE_SHA256:
+        raise ValueError(
+            f"Authoritative OPMAD source SHA-256 mismatch at {resolved}: expected "
+            f"{EXPECTED_DEFAULT_SOURCE_SHA256}, found {sha256}. Refusing to label "
+            "these bytes authoritative; updating OPMAD requires an explicit source-pin update."
+        )
 
     if authoritative:
         display_path = DEFAULT_SOURCE.relative_to(ROOT).as_posix()
-        identity = "authoritative CBR ontology submodule OPMAD.owl"
+        identity = (
+            "authoritative CBR ontology submodule OPMAD.owl "
+            f"at {DEFAULT_SOURCE_SUBMODULE_COMMIT}"
+        )
     else:
         display_path = str(resolved)
         identity = "custom source (not authoritative OPMAD submodule)"
@@ -262,18 +285,18 @@ def source_provenance(path: Path, *, allow_custom_source: bool = False) -> Sourc
         path=resolved,
         display_path=display_path,
         identity=identity,
-        sha256=hashlib.sha256(resolved.read_bytes()).hexdigest(),
+        sha256=sha256,
         authoritative=authoritative,
+        content=content,
     )
 
 
 def serialize_deterministic(
     graph: Graph,
-    provenance: SourceProvenance | None = None,
+    provenance: SourceProvenance,
 ) -> str:
     """Serialize canonical RDF as an N-Triples subset of Turtle."""
 
-    provenance = provenance or source_provenance(DEFAULT_SOURCE)
     canonical = to_canonical_graph(graph)
     lines = sorted(f"{s.n3()} {p.n3()} {o.n3()} ." for s, p, o in canonical)
     command = "python3 pipeline/generate_opmad_profile.py"
@@ -290,15 +313,19 @@ def serialize_deterministic(
     return header + "\n".join(lines) + "\n"
 
 
-def load_source(path: Path) -> Graph:
-    if not path.is_file():
-        raise FileNotFoundError(f"OPMAD source not found at {path}")
+def load_source(provenance: SourceProvenance) -> Graph:
+    """Parse the same immutable bytes used for the provenance digest."""
+
     try:
-        return Graph().parse(path)
+        return Graph().parse(
+            data=provenance.content,
+            format=guess_format(provenance.path.name),
+            publicID=provenance.path.as_uri(),
+        )
     except Exception as exc:
         detail = str(exc).strip().splitlines()[0] if str(exc).strip() else type(exc).__name__
         raise ValueError(
-            f"Could not parse OPMAD source {path}: {detail}. "
+            f"Could not parse OPMAD source {provenance.path}: {detail}. "
             "Verify that the file contains valid RDF/XML (or RDF matching its extension)."
         ) from exc
 
@@ -317,7 +344,7 @@ def main(argv: list[str] | None = None) -> int:
 
     try:
         provenance = source_provenance(args.source, allow_custom_source=args.allow_custom_source)
-        source = load_source(provenance.path)
+        source = load_source(provenance)
         profile = build_profile(source)
         validate_profile(source, profile)
         rendered = serialize_deterministic(profile, provenance)
