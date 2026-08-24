@@ -9,8 +9,10 @@ marked as support declarations and do not define or extend OPMAD.
 from __future__ import annotations
 
 import argparse
+import hashlib
 import re
 import sys
+from dataclasses import dataclass
 from pathlib import Path
 from typing import Any, Iterable
 
@@ -46,6 +48,22 @@ SUPPORT_COMMENT = (
     "imported by authoritative OPMAD or is an external extraction relation; "
     "this profile does not redefine it."
 )
+RESTRICTION_CLASS_PREDICATES = {
+    OWL.onClass,
+    OWL.someValuesFrom,
+    OWL.allValuesFrom,
+}
+
+
+@dataclass(frozen=True)
+class SourceProvenance:
+    path: Path
+    display_path: str
+    identity: str
+    sha256: str
+    authoritative: bool
+
+
 def _string_values(value: Any) -> Iterable[str]:
     if isinstance(value, str):
         yield value
@@ -86,13 +104,15 @@ def schema_external_declarations() -> dict[URIRef, URIRef]:
     return result
 
 
-def authoritative_declarations(graph: Graph) -> dict[URIRef, URIRef]:
-    declarations: dict[URIRef, URIRef] = {}
+def authoritative_declarations(graph: Graph) -> dict[URIRef, frozenset[URIRef]]:
+    """Return every authoritative declaration kind, including genuine punning."""
+
+    declarations: dict[URIRef, set[URIRef]] = {}
     for declaration_type in DECLARATION_TYPES:
         for term in graph.subjects(RDF.type, declaration_type):
             if isinstance(term, URIRef) and str(term).startswith(OPMAD):
-                declarations[term] = declaration_type
-    return declarations
+                declarations.setdefault(term, set()).add(declaration_type)
+    return {term: frozenset(kinds) for term, kinds in declarations.items()}
 
 
 def _copy_subject_closure(source: Graph, roots: set[URIRef]) -> Graph:
@@ -135,6 +155,10 @@ def _external_support_declarations(profile: Graph) -> dict[URIRef, URIRef]:
         # OPMAD's external restriction properties in this projection are object
         # properties. Schema-provided declarations above take precedence.
         support.setdefault(prop, OWL.ObjectProperty)
+    for predicate in RESTRICTION_CLASS_PREDICATES:
+        for class_iri in profile.objects(None, predicate):
+            if isinstance(class_iri, URIRef) and not str(class_iri).startswith(OPMAD):
+                support.setdefault(class_iri, OWL.Class)
     return {
         term: declaration
         for term, declaration in support.items()
@@ -198,19 +222,69 @@ def validate_profile(source: Graph, profile: Graph) -> None:
 
     for term in profile_opmad:
         expected = declarations[term]
-        if (term, RDF.type, expected) not in profile:
-            raise ValueError(f"Profile does not preserve authoritative declaration for {term}")
+        actual = frozenset(
+            declaration_type
+            for declaration_type in profile.objects(term, RDF.type)
+            if declaration_type in DECLARATION_TYPES
+        )
+        if actual != expected:
+            raise ValueError(
+                f"Profile declaration kinds for {term} do not match authoritative source "
+                f"(expected {sorted(map(str, expected))}, found {sorted(map(str, actual))})"
+            )
 
 
-def serialize_deterministic(graph: Graph) -> str:
+def source_provenance(path: Path, *, allow_custom_source: bool = False) -> SourceProvenance:
+    """Pin the exact source bytes and reject unacknowledged custom inputs."""
+
+    resolved = path.expanduser().resolve()
+    authoritative = resolved == DEFAULT_SOURCE.resolve()
+    if not authoritative and not allow_custom_source:
+        raise ValueError(
+            f"Custom OPMAD source {resolved} requires --allow-custom-source; "
+            "custom output is not authoritative"
+        )
+    if not resolved.is_file():
+        if authoritative:
+            raise FileNotFoundError(
+                f"Authoritative OPMAD source not found at {DEFAULT_SOURCE}. "
+                "Initialize the CBR ontology submodule first."
+            )
+        raise FileNotFoundError(f"Custom OPMAD source not found at {resolved}")
+
+    if authoritative:
+        display_path = DEFAULT_SOURCE.relative_to(ROOT).as_posix()
+        identity = "authoritative CBR ontology submodule OPMAD.owl"
+    else:
+        display_path = str(resolved)
+        identity = "custom source (not authoritative OPMAD submodule)"
+    return SourceProvenance(
+        path=resolved,
+        display_path=display_path,
+        identity=identity,
+        sha256=hashlib.sha256(resolved.read_bytes()).hexdigest(),
+        authoritative=authoritative,
+    )
+
+
+def serialize_deterministic(
+    graph: Graph,
+    provenance: SourceProvenance | None = None,
+) -> str:
     """Serialize canonical RDF as an N-Triples subset of Turtle."""
 
+    provenance = provenance or source_provenance(DEFAULT_SOURCE)
     canonical = to_canonical_graph(graph)
     lines = sorted(f"{s.n3()} {p.n3()} {o.n3()} ." for s, p, o in canonical)
+    command = "python3 pipeline/generate_opmad_profile.py"
+    if not provenance.authoritative:
+        command += f" --source {provenance.display_path} --allow-custom-source"
     header = (
         "# GENERATED FILE - DO NOT EDIT.\n"
-        "# Source: external/CBR-Ontology-For-Predictive-Maintenance/CBR-Ontology/CBRproject/data/OPMAD.owl\n"
-        "# Command: python3 pipeline/generate_opmad_profile.py\n"
+        f"# Source identity: {provenance.identity}\n"
+        f"# Source path: {provenance.display_path}\n"
+        f"# Source SHA-256: {provenance.sha256}\n"
+        f"# Command: {command}\n"
         "# N-Triples is valid Turtle; full IRIs make namespace auditing explicit.\n\n"
     )
     return header + "\n".join(lines) + "\n"
@@ -218,25 +292,36 @@ def serialize_deterministic(graph: Graph) -> str:
 
 def load_source(path: Path) -> Graph:
     if not path.is_file():
-        raise FileNotFoundError(
-            f"Authoritative OPMAD source not found at {path}. Initialize the CBR ontology submodule first."
-        )
-    return Graph().parse(path)
+        raise FileNotFoundError(f"OPMAD source not found at {path}")
+    try:
+        return Graph().parse(path)
+    except Exception as exc:
+        detail = str(exc).strip().splitlines()[0] if str(exc).strip() else type(exc).__name__
+        raise ValueError(
+            f"Could not parse OPMAD source {path}: {detail}. "
+            "Verify that the file contains valid RDF/XML (or RDF matching its extension)."
+        ) from exc
 
 
 def main(argv: list[str] | None = None) -> int:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--source", type=Path, default=DEFAULT_SOURCE)
+    parser.add_argument(
+        "--allow-custom-source",
+        action="store_true",
+        help="explicitly permit a non-authoritative --source and label its output as custom",
+    )
     parser.add_argument("--output", type=Path, default=DEFAULT_OUTPUT)
     parser.add_argument("--check", action="store_true", help="verify the committed profile is current; do not write")
     args = parser.parse_args(argv)
 
     try:
-        source = load_source(args.source)
+        provenance = source_provenance(args.source, allow_custom_source=args.allow_custom_source)
+        source = load_source(provenance.path)
         profile = build_profile(source)
         validate_profile(source, profile)
-        rendered = serialize_deterministic(profile)
-    except (FileNotFoundError, ValueError) as exc:
+        rendered = serialize_deterministic(profile, provenance)
+    except (OSError, ValueError) as exc:
         parser.exit(1, f"error: {exc}\n")
 
     if args.check:

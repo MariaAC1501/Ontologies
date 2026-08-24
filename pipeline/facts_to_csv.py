@@ -8,8 +8,9 @@ Sample invocation:
       --output pipeline/test_output/extracted_cases.csv
 
 Notes:
-- New fixed-mode facts must use the authoritative OPMAD `#` namespace. The
-  converter's local-name matching remains tolerant of historical artifacts.
+- New fixed-mode facts must use the authoritative OPMAD `#` namespace.
+  OPMAD-sensitive matching also accepts the documented historical `/seed#`
+  namespace, but never grants OPMAD meaning to matching names elsewhere.
 - OntoCast facts currently contain RDF-star reification statements that stock
   rdflib cannot parse. This script strips those statements before parsing.
 - Missing fields are filled with conservative defaults so the output still
@@ -34,9 +35,9 @@ if __package__ is None or __package__ == "":
     sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
 
 try:
-    from pipeline.extraction_schema import PredictiveMaintenanceCase, TASK_CLASS_IRIS
+    from pipeline.extraction_schema import OPMAD, PredictiveMaintenanceCase, TASK_CLASS_IRIS
 except ImportError:
-    from .extraction_schema import PredictiveMaintenanceCase, TASK_CLASS_IRIS
+    from .extraction_schema import OPMAD, PredictiveMaintenanceCase, TASK_CLASS_IRIS
 
 SCHEMA = Namespace("http://schema.org/")
 SCHEMA_ALT = Namespace("https://schema.org/")
@@ -45,6 +46,16 @@ CCO = Namespace("http://www.ontologyrepository.com/CommonCoreOntologies/")
 DEFAULT_PUBLICATION_YEAR = 2021
 DEFAULT_PUBLICATION_IDENTIFIER_PREFIX = "urn:ontocast:facts:"
 DEFAULT_TASK_FOR_FUTURE_STATE_FORECAST = "One step future state forecast"
+LEGACY_OPMAD_SEED_NAMESPACE = f"{OPMAD.removesuffix('#')}/seed#"
+COMPATIBLE_OPMAD_NAMESPACES = (OPMAD, LEGACY_OPMAD_SEED_NAMESPACE)
+OPMAD_SENSITIVE_CLASS_NAMES = {
+    "Predictive_Maintenance_Article",
+    "Maintainable_item",
+    "Data_variable",
+    "Predictive_maintenance_model",
+    "Design_detail",
+    *(local.rsplit("#", 1)[-1] for local in TASK_CLASS_IRIS.values()),
+}
 
 HEADERS = [
     PredictiveMaintenanceCase.CSV_HEADERS[field]
@@ -165,11 +176,21 @@ def parse_ontology_labels(ontology_path: Path | None) -> dict[str, str]:
     return labels
 
 
+def is_compatible_opmad_iri(term: URIRef | str) -> bool:
+    """Recognize authoritative OPMAD and the documented historical seed namespace."""
+
+    return str(term).startswith(COMPATIBLE_OPMAD_NAMESPACES)
+
+
 def typed_entities(graph: Graph) -> dict[str, set[URIRef]]:
     entities: dict[str, set[URIRef]] = defaultdict(set)
     for subject, _, class_iri in graph.triples((None, RDF.type, None)):
-        if isinstance(subject, URIRef) and isinstance(class_iri, URIRef):
-            entities[local_name(class_iri)].add(subject)
+        if not isinstance(subject, URIRef) or not isinstance(class_iri, URIRef):
+            continue
+        class_name = local_name(class_iri)
+        if class_name in OPMAD_SENSITIVE_CLASS_NAMES and not is_compatible_opmad_iri(class_iri):
+            continue
+        entities[class_name].add(subject)
     return entities
 
 
@@ -204,6 +225,8 @@ def choose_task(
     ]
     for predicate in describes_type_predicates:
         for _, _, obj in graph.triples((None, predicate, None)):
+            if not isinstance(obj, URIRef) or not is_compatible_opmad_iri(obj):
+                continue
             type_name = local_name(obj)
             label = ontology_labels.get(type_name, type_name.replace("_", " "))
             if label in TASK_CLASS_IRIS:
