@@ -16,59 +16,137 @@
     "supplementary_evidence"
   ],
   "properties": {
-    "schema_version": {"const": "strict-review-export/1.0"},
-    "record_id": {"type": "string", "pattern": "^[0-9a-f]{24}$"},
-    "record_status": {"enum": ["present", "unclear", "extraction_failure"]},
-    "source_document": {"$ref": "#/$defs/sourceDocument"},
-    "article_identity": {"$ref": "#/$defs/stringField"},
-    "case_identity": {"$ref": "#/$defs/stringField"},
-    "case_article_link": {"$ref": "#/$defs/caseArticleLink"},
+    "schema_version": {
+      "const": "strict-review-export/1.0"
+    },
+    "record_id": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{24}$"
+    },
+    "record_status": {
+      "enum": [
+        "present",
+        "unclear",
+        "extraction_failure"
+      ]
+    },
+    "source_document": {
+      "$ref": "#/$defs/sourceDocument"
+    },
+    "article_identity": {
+      "$ref": "#/$defs/stringField"
+    },
+    "case_identity": {
+      "$ref": "#/$defs/stringField"
+    },
+    "case_article_link": {
+      "$ref": "#/$defs/caseArticleLink"
+    },
     "fields": {
       "type": "object",
       "additionalProperties": false,
       "required": [
-        "publication_year", "task", "case_study", "case_study_type",
-        "input_for_model", "number_of_input_variables", "input_types",
-        "data_preprocessing", "model_approach", "model_types", "models",
-        "module_synchronization", "number_of_failure_modes",
-        "performance_indicator", "performance", "complementary_notes",
-        "study_title", "publication_identifier"
+        "publication_year",
+        "task",
+        "case_study",
+        "case_study_type",
+        "input_for_model",
+        "number_of_input_variables",
+        "input_types",
+        "data_preprocessing",
+        "model_approach",
+        "model_types",
+        "models",
+        "module_synchronization",
+        "number_of_failure_modes",
+        "performance_indicator",
+        "performance",
+        "complementary_notes",
+        "study_title",
+        "publication_identifier"
       ],
       "properties": {
-        "publication_year": {"$ref": "#/$defs/yearField"},
-        "task": {"$ref": "#/$defs/stringField"},
-        "case_study": {"$ref": "#/$defs/stringField"},
-        "case_study_type": {"$ref": "#/$defs/stringField"},
-        "input_for_model": {"$ref": "#/$defs/stringField"},
-        "number_of_input_variables": {"$ref": "#/$defs/countField"},
-        "input_types": {"$ref": "#/$defs/stringListField"},
-        "data_preprocessing": {"$ref": "#/$defs/booleanField"},
-        "model_approach": {"$ref": "#/$defs/stringField"},
-        "model_types": {"$ref": "#/$defs/stringListField"},
-        "models": {"$ref": "#/$defs/stringListField"},
-        "module_synchronization": {"$ref": "#/$defs/stringField"},
-        "number_of_failure_modes": {"$ref": "#/$defs/countField"},
-        "performance_indicator": {"$ref": "#/$defs/stringListField"},
-        "performance": {"$ref": "#/$defs/stringListField"},
-        "complementary_notes": {"$ref": "#/$defs/stringField"},
-        "study_title": {"$ref": "#/$defs/stringField"},
-        "publication_identifier": {"$ref": "#/$defs/stringField"}
+        "publication_year": {
+          "$ref": "#/$defs/yearField"
+        },
+        "task": {
+          "$ref": "#/$defs/stringField"
+        },
+        "case_study": {
+          "$ref": "#/$defs/stringField"
+        },
+        "case_study_type": {
+          "$ref": "#/$defs/stringField"
+        },
+        "input_for_model": {
+          "$ref": "#/$defs/stringField"
+        },
+        "number_of_input_variables": {
+          "$ref": "#/$defs/countField"
+        },
+        "input_types": {
+          "$ref": "#/$defs/stringListField"
+        },
+        "data_preprocessing": {
+          "$ref": "#/$defs/booleanField"
+        },
+        "model_approach": {
+          "$ref": "#/$defs/stringField"
+        },
+        "model_types": {
+          "$ref": "#/$defs/stringListField"
+        },
+        "models": {
+          "$ref": "#/$defs/stringListField"
+        },
+        "module_synchronization": {
+          "$ref": "#/$defs/stringField"
+        },
+        "number_of_failure_modes": {
+          "$ref": "#/$defs/countField"
+        },
+        "performance_indicator": {
+          "$ref": "#/$defs/stringListField"
+        },
+        "performance": {
+          "$ref": "#/$defs/stringListField"
+        },
+        "complementary_notes": {
+          "$ref": "#/$defs/stringField"
+        },
+        "study_title": {
+          "$ref": "#/$defs/stringField"
+        },
+        "publication_identifier": {
+          "$ref": "#/$defs/stringField"
+        }
       }
     },
     "supplementary_evidence": {
       "type": "object",
       "properties": {
-        "design_details": {"$ref": "#/$defs/stringListField"},
-        "keywords": {"$ref": "#/$defs/stringField"}
+        "design_details": {
+          "$ref": "#/$defs/stringListField"
+        },
+        "keywords": {
+          "$ref": "#/$defs/stringField"
+        }
       },
       "additionalProperties": false
     },
     "error": {
       "type": "object",
-      "required": ["type", "message"],
+      "required": [
+        "type",
+        "message"
+      ],
       "properties": {
-        "type": {"type": "string"},
-        "message": {"type": "string"}
+        "type": {
+          "type": "string"
+        },
+        "message": {
+          "type": "string"
+        }
       },
       "additionalProperties": false
     }
@@ -76,73 +154,232 @@
   "additionalProperties": false,
   "$defs": {
     "status": {
-      "enum": ["present", "not_reported", "unclear", "not_applicable", "extraction_failure"]
+      "enum": [
+        "present",
+        "not_reported",
+        "unclear",
+        "not_applicable",
+        "extraction_failure"
+      ]
     },
     "fieldBase": {
       "type": "object",
-      "required": ["status", "value", "raw_values", "source_nodes"],
+      "required": [
+        "status",
+        "value",
+        "raw_values",
+        "source_nodes"
+      ],
       "properties": {
-        "status": {"$ref": "#/$defs/status"},
+        "status": {
+          "$ref": "#/$defs/status"
+        },
         "value": {},
-        "raw_values": {"type": "array", "items": {"type": "string"}, "uniqueItems": true},
-        "source_nodes": {"type": "array", "items": {"type": "string"}, "uniqueItems": true},
-        "note": {"type": "string"}
+        "raw_values": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "uniqueItems": true
+        },
+        "source_nodes": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "uniqueItems": true
+        },
+        "note": {
+          "type": "string"
+        }
       },
       "additionalProperties": false,
       "allOf": [
         {
-          "if": {"properties": {"status": {"const": "present"}}, "required": ["status"]},
-          "then": {"properties": {"value": {"not": {"type": "null"}}}},
-          "else": {"properties": {"value": {"type": "null"}}}
+          "if": {
+            "properties": {
+              "status": {
+                "const": "present"
+              }
+            },
+            "required": [
+              "status"
+            ]
+          },
+          "then": {
+            "properties": {
+              "value": {
+                "not": {
+                  "type": "null"
+                }
+              }
+            }
+          },
+          "else": {
+            "properties": {
+              "value": {
+                "type": "null"
+              }
+            }
+          }
         }
       ]
     },
     "stringField": {
       "allOf": [
-        {"$ref": "#/$defs/fieldBase"},
-        {"properties": {"value": {"type": ["string", "null"], "minLength": 1}}}
+        {
+          "$ref": "#/$defs/fieldBase"
+        },
+        {
+          "properties": {
+            "value": {
+              "type": [
+                "string",
+                "null"
+              ],
+              "minLength": 1
+            }
+          }
+        }
       ]
     },
     "yearField": {
       "allOf": [
-        {"$ref": "#/$defs/fieldBase"},
-        {"properties": {"value": {"type": ["integer", "null"], "minimum": 1900, "maximum": 2100}}}
+        {
+          "$ref": "#/$defs/fieldBase"
+        },
+        {
+          "properties": {
+            "value": {
+              "type": [
+                "integer",
+                "null"
+              ],
+              "minimum": 1900,
+              "maximum": 2100
+            }
+          }
+        }
       ]
     },
     "countField": {
       "allOf": [
-        {"$ref": "#/$defs/fieldBase"},
-        {"properties": {"value": {"type": ["integer", "null"], "minimum": 0}}}
+        {
+          "$ref": "#/$defs/fieldBase"
+        },
+        {
+          "properties": {
+            "value": {
+              "type": [
+                "integer",
+                "null"
+              ],
+              "minimum": 0
+            }
+          }
+        }
       ]
     },
     "booleanField": {
       "allOf": [
-        {"$ref": "#/$defs/fieldBase"},
-        {"properties": {"value": {"type": ["boolean", "null"]}}}
+        {
+          "$ref": "#/$defs/fieldBase"
+        },
+        {
+          "properties": {
+            "value": {
+              "type": [
+                "boolean",
+                "null"
+              ]
+            }
+          }
+        }
       ]
     },
     "stringListField": {
       "allOf": [
-        {"$ref": "#/$defs/fieldBase"},
-        {"properties": {"value": {"oneOf": [{"type": "null"}, {"type": "array", "minItems": 1, "items": {"type": "string", "minLength": 1}, "uniqueItems": true}]}}}
+        {
+          "$ref": "#/$defs/fieldBase"
+        },
+        {
+          "properties": {
+            "value": {
+              "oneOf": [
+                {
+                  "type": "null"
+                },
+                {
+                  "type": "array",
+                  "minItems": 1,
+                  "items": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "uniqueItems": true
+                }
+              ]
+            }
+          }
+        }
       ]
     },
     "sourceDocument": {
       "type": "object",
-      "required": ["facts_filename", "facts_path", "source_identity", "document_id", "sha256", "parse_status", "rdf_star_evidence"],
+      "required": [
+        "facts_filename",
+        "facts_path",
+        "source_identity",
+        "document_id",
+        "sha256",
+        "parse_status",
+        "rdf_star_evidence"
+      ],
       "properties": {
-        "facts_filename": {"type": "string"},
-        "facts_path": {"type": "string"},
-        "source_identity": {"type": "string", "pattern": "^[0-9a-f]{24}$"},
-        "document_id": {"type": ["string", "null"], "pattern": "^[0-9a-f]{64}$"},
-        "sha256": {"type": ["string", "null"], "pattern": "^[0-9a-f]{64}$"},
-        "parse_status": {"enum": ["present", "extraction_failure"]},
+        "facts_filename": {
+          "type": "string"
+        },
+        "facts_path": {
+          "type": "string"
+        },
+        "source_identity": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{24}$"
+        },
+        "document_id": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "pattern": "^[0-9a-f]{64}$"
+        },
+        "sha256": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "pattern": "^[0-9a-f]{64}$"
+        },
+        "parse_status": {
+          "enum": [
+            "present",
+            "extraction_failure"
+          ]
+        },
         "rdf_star_evidence": {
           "type": "object",
-          "required": ["statement_count", "handling"],
+          "required": [
+            "statement_count",
+            "handling"
+          ],
           "properties": {
-            "statement_count": {"type": "integer", "minimum": 0},
-            "handling": {"type": "string"}
+            "statement_count": {
+              "type": "integer",
+              "minimum": 0
+            },
+            "handling": {
+              "type": "string"
+            }
           },
           "additionalProperties": false
         }
@@ -151,15 +388,710 @@
     },
     "caseArticleLink": {
       "type": "object",
-      "required": ["status", "resolution", "evidence"],
+      "required": [
+        "status",
+        "resolution",
+        "evidence"
+      ],
       "properties": {
-        "status": {"$ref": "#/$defs/status"},
-        "resolution": {"enum": ["resolved", "unresolved", "ambiguous"]},
-        "evidence": {"type": "array", "items": {"type": "string"}},
-        "candidate_article_iris": {"type": "array", "items": {"type": "string"}, "uniqueItems": true},
-        "note": {"type": "string"}
+        "status": {
+          "$ref": "#/$defs/status"
+        },
+        "resolution": {
+          "enum": [
+            "resolved",
+            "unresolved",
+            "ambiguous"
+          ]
+        },
+        "evidence": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "candidate_article_iris": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "uniqueItems": true
+        },
+        "note": {
+          "type": "string"
+        }
       },
-      "additionalProperties": false
+      "additionalProperties": false,
+      "allOf": [
+        {
+          "if": {
+            "properties": {
+              "resolution": {
+                "const": "resolved"
+              }
+            },
+            "required": [
+              "resolution"
+            ]
+          },
+          "then": {
+            "properties": {
+              "status": {
+                "const": "present"
+              },
+              "evidence": {
+                "minItems": 1
+              }
+            }
+          },
+          "else": {
+            "properties": {
+              "status": {
+                "not": {
+                  "const": "present"
+                }
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "status": {
+                "const": "extraction_failure"
+              }
+            },
+            "required": [
+              "status"
+            ]
+          },
+          "then": {
+            "properties": {
+              "resolution": {
+                "const": "unresolved"
+              }
+            }
+          }
+        }
+      ]
+    },
+    "fieldsWithExtractionFailure": {
+      "type": "object",
+      "anyOf": [
+        {
+          "properties": {
+            "publication_year": {
+              "properties": {
+                "status": {
+                  "const": "extraction_failure"
+                }
+              },
+              "required": [
+                "status"
+              ]
+            }
+          },
+          "required": [
+            "publication_year"
+          ]
+        },
+        {
+          "properties": {
+            "task": {
+              "properties": {
+                "status": {
+                  "const": "extraction_failure"
+                }
+              },
+              "required": [
+                "status"
+              ]
+            }
+          },
+          "required": [
+            "task"
+          ]
+        },
+        {
+          "properties": {
+            "case_study": {
+              "properties": {
+                "status": {
+                  "const": "extraction_failure"
+                }
+              },
+              "required": [
+                "status"
+              ]
+            }
+          },
+          "required": [
+            "case_study"
+          ]
+        },
+        {
+          "properties": {
+            "case_study_type": {
+              "properties": {
+                "status": {
+                  "const": "extraction_failure"
+                }
+              },
+              "required": [
+                "status"
+              ]
+            }
+          },
+          "required": [
+            "case_study_type"
+          ]
+        },
+        {
+          "properties": {
+            "input_for_model": {
+              "properties": {
+                "status": {
+                  "const": "extraction_failure"
+                }
+              },
+              "required": [
+                "status"
+              ]
+            }
+          },
+          "required": [
+            "input_for_model"
+          ]
+        },
+        {
+          "properties": {
+            "number_of_input_variables": {
+              "properties": {
+                "status": {
+                  "const": "extraction_failure"
+                }
+              },
+              "required": [
+                "status"
+              ]
+            }
+          },
+          "required": [
+            "number_of_input_variables"
+          ]
+        },
+        {
+          "properties": {
+            "input_types": {
+              "properties": {
+                "status": {
+                  "const": "extraction_failure"
+                }
+              },
+              "required": [
+                "status"
+              ]
+            }
+          },
+          "required": [
+            "input_types"
+          ]
+        },
+        {
+          "properties": {
+            "data_preprocessing": {
+              "properties": {
+                "status": {
+                  "const": "extraction_failure"
+                }
+              },
+              "required": [
+                "status"
+              ]
+            }
+          },
+          "required": [
+            "data_preprocessing"
+          ]
+        },
+        {
+          "properties": {
+            "model_approach": {
+              "properties": {
+                "status": {
+                  "const": "extraction_failure"
+                }
+              },
+              "required": [
+                "status"
+              ]
+            }
+          },
+          "required": [
+            "model_approach"
+          ]
+        },
+        {
+          "properties": {
+            "model_types": {
+              "properties": {
+                "status": {
+                  "const": "extraction_failure"
+                }
+              },
+              "required": [
+                "status"
+              ]
+            }
+          },
+          "required": [
+            "model_types"
+          ]
+        },
+        {
+          "properties": {
+            "models": {
+              "properties": {
+                "status": {
+                  "const": "extraction_failure"
+                }
+              },
+              "required": [
+                "status"
+              ]
+            }
+          },
+          "required": [
+            "models"
+          ]
+        },
+        {
+          "properties": {
+            "module_synchronization": {
+              "properties": {
+                "status": {
+                  "const": "extraction_failure"
+                }
+              },
+              "required": [
+                "status"
+              ]
+            }
+          },
+          "required": [
+            "module_synchronization"
+          ]
+        },
+        {
+          "properties": {
+            "number_of_failure_modes": {
+              "properties": {
+                "status": {
+                  "const": "extraction_failure"
+                }
+              },
+              "required": [
+                "status"
+              ]
+            }
+          },
+          "required": [
+            "number_of_failure_modes"
+          ]
+        },
+        {
+          "properties": {
+            "performance_indicator": {
+              "properties": {
+                "status": {
+                  "const": "extraction_failure"
+                }
+              },
+              "required": [
+                "status"
+              ]
+            }
+          },
+          "required": [
+            "performance_indicator"
+          ]
+        },
+        {
+          "properties": {
+            "performance": {
+              "properties": {
+                "status": {
+                  "const": "extraction_failure"
+                }
+              },
+              "required": [
+                "status"
+              ]
+            }
+          },
+          "required": [
+            "performance"
+          ]
+        },
+        {
+          "properties": {
+            "complementary_notes": {
+              "properties": {
+                "status": {
+                  "const": "extraction_failure"
+                }
+              },
+              "required": [
+                "status"
+              ]
+            }
+          },
+          "required": [
+            "complementary_notes"
+          ]
+        },
+        {
+          "properties": {
+            "study_title": {
+              "properties": {
+                "status": {
+                  "const": "extraction_failure"
+                }
+              },
+              "required": [
+                "status"
+              ]
+            }
+          },
+          "required": [
+            "study_title"
+          ]
+        },
+        {
+          "properties": {
+            "publication_identifier": {
+              "properties": {
+                "status": {
+                  "const": "extraction_failure"
+                }
+              },
+              "required": [
+                "status"
+              ]
+            }
+          },
+          "required": [
+            "publication_identifier"
+          ]
+        }
+      ]
+    },
+    "allFieldsExtractionFailure": {
+      "type": "object",
+      "additionalProperties": {
+        "properties": {
+          "status": {
+            "const": "extraction_failure"
+          }
+        },
+        "required": [
+          "status"
+        ]
+      }
     }
-  }
+  },
+  "allOf": [
+    {
+      "if": {
+        "properties": {
+          "record_status": {
+            "const": "present"
+          }
+        },
+        "required": [
+          "record_status"
+        ]
+      },
+      "then": {
+        "properties": {
+          "source_document": {
+            "properties": {
+              "parse_status": {
+                "const": "present"
+              }
+            },
+            "required": [
+              "parse_status"
+            ]
+          },
+          "case_article_link": {
+            "properties": {
+              "resolution": {
+                "const": "resolved"
+              }
+            },
+            "required": [
+              "resolution"
+            ]
+          }
+        },
+        "not": {
+          "required": [
+            "error"
+          ]
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "case_article_link": {
+            "properties": {
+              "resolution": {
+                "const": "resolved"
+              }
+            },
+            "required": [
+              "resolution"
+            ]
+          }
+        },
+        "required": [
+          "case_article_link"
+        ]
+      },
+      "then": {
+        "properties": {
+          "article_identity": {
+            "properties": {
+              "status": {
+                "const": "present"
+              }
+            },
+            "required": [
+              "status"
+            ]
+          },
+          "case_identity": {
+            "properties": {
+              "status": {
+                "const": "present"
+              }
+            },
+            "required": [
+              "status"
+            ]
+          },
+          "record_status": {
+            "enum": [
+              "present",
+              "extraction_failure"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "source_document": {
+            "properties": {
+              "parse_status": {
+                "const": "extraction_failure"
+              }
+            },
+            "required": [
+              "parse_status"
+            ]
+          }
+        },
+        "required": [
+          "source_document"
+        ]
+      },
+      "then": {
+        "required": [
+          "error"
+        ],
+        "properties": {
+          "record_status": {
+            "const": "extraction_failure"
+          },
+          "article_identity": {
+            "properties": {
+              "status": {
+                "const": "extraction_failure"
+              }
+            },
+            "required": [
+              "status"
+            ]
+          },
+          "case_identity": {
+            "properties": {
+              "status": {
+                "const": "extraction_failure"
+              }
+            },
+            "required": [
+              "status"
+            ]
+          },
+          "case_article_link": {
+            "properties": {
+              "status": {
+                "const": "extraction_failure"
+              }
+            },
+            "required": [
+              "status"
+            ]
+          },
+          "fields": {
+            "$ref": "#/$defs/allFieldsExtractionFailure"
+          }
+        }
+      },
+      "else": {
+        "not": {
+          "required": [
+            "error"
+          ]
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "fields": {
+            "$ref": "#/$defs/fieldsWithExtractionFailure"
+          }
+        },
+        "required": [
+          "fields"
+        ]
+      },
+      "then": {
+        "properties": {
+          "record_status": {
+            "const": "extraction_failure"
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "record_status": {
+            "const": "extraction_failure"
+          }
+        },
+        "required": [
+          "record_status"
+        ]
+      },
+      "then": {
+        "anyOf": [
+          {
+            "properties": {
+              "source_document": {
+                "properties": {
+                  "parse_status": {
+                    "const": "extraction_failure"
+                  }
+                },
+                "required": [
+                  "parse_status"
+                ]
+              }
+            },
+            "required": [
+              "source_document"
+            ]
+          },
+          {
+            "properties": {
+              "fields": {
+                "$ref": "#/$defs/fieldsWithExtractionFailure"
+              }
+            },
+            "required": [
+              "fields"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "if": {
+        "anyOf": [
+          {
+            "properties": {
+              "article_identity": {
+                "properties": {
+                  "status": {
+                    "const": "extraction_failure"
+                  }
+                },
+                "required": [
+                  "status"
+                ]
+              }
+            },
+            "required": [
+              "article_identity"
+            ]
+          },
+          {
+            "properties": {
+              "case_identity": {
+                "properties": {
+                  "status": {
+                    "const": "extraction_failure"
+                  }
+                },
+                "required": [
+                  "status"
+                ]
+              }
+            },
+            "required": [
+              "case_identity"
+            ]
+          },
+          {
+            "properties": {
+              "case_article_link": {
+                "properties": {
+                  "status": {
+                    "const": "extraction_failure"
+                  }
+                },
+                "required": [
+                  "status"
+                ]
+              }
+            },
+            "required": [
+              "case_article_link"
+            ]
+          }
+        ]
+      },
+      "then": {
+        "properties": {
+          "source_document": {
+            "properties": {
+              "parse_status": {
+                "const": "extraction_failure"
+              }
+            },
+            "required": [
+              "parse_status"
+            ]
+          }
+        }
+      }
+    }
+  ]
 }

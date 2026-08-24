@@ -80,15 +80,24 @@ The exporter does **not**:
   models; or
 - generate publication identifiers from RDF local names or filenames.
 
-An explicit `Model_configuration`, explicit boolean preprocessing assertion,
-or explicit typed count can be exported. Generic design details are retained
-separately and may make preprocessing `unclear`, but are not converted to a
-boolean. Model labels do not establish model approach.
+An explicit `Model_configuration` or explicit typed count can be exported.
+Unchanged OPMAD has no dedicated preprocessing boolean property, so predicates
+such as `has_data_preprocessing`, `data_preprocessing`, or `preprocessing` are
+not recognized, even when minted in the OPMAD namespace. Generic design details
+are retained separately and may make preprocessing `unclear`, but are not
+converted to a boolean. Model labels do not establish model approach. A future
+boolean mapping must name a stable, documented vocabulary IRI before it can be
+added to this contract.
 
 ## Document and case isolation
 
 Graphs are never unioned. Within a graph, record scope is a bounded traversal
-of domain relations and does not traverse author or provenance/chunk links.
+of an exact-IRI relation allowlist: object properties declared by authoritative
+OPMAD (plus the same names in the documented legacy seed namespace), selected
+`http`/`https` schema.org relations, CCO `described_by`, `describes`,
+`designates`, and `is_about`, and the BFO/RO relations used by the extraction
+mapping. Local-name patterns and arbitrary `has_*`/`describes_*` predicates are
+never traversed, and author or provenance/chunk links are not traversed.
 A case is paired with an article only when the RDF directly connects them or
 when the case and article explicitly refer to the same designated/about
 resource. Case traversal starts from the case, not from its article, and treats
@@ -111,9 +120,16 @@ Unmatched articles are retained as unresolved article records.
   interconnected case graphs can conservatively mark shared evidence unclear.
   Full multi-case extraction still needs explicit case/provenance linkage
   upstream.
-- OPMAD class recognition is limited to the authoritative `OPMAD#` namespace
-  and the accepted historical `OPMAD/seed#` namespace. Arbitrary classes that
-  merely reuse an OPMAD local name are ignored.
+- OPMAD class and property recognition is limited to the authoritative
+  `OPMAD#` namespace and the accepted historical `OPMAD/seed#` namespace.
+  Arbitrary terms that merely reuse an OPMAD local name are ignored. CCO, OBO,
+  and schema.org relations are likewise matched by complete IRI.
+- The JSON Schema enforces generated cross-field invariants: resolved links are
+  present and have evidence, unresolved/ambiguous links cannot be present,
+  `present` records require resolved links, parse failures require the error and
+  failure shapes, and field normalization failures propagate to record status.
+  JSON Schema cannot prove that evidence strings describe real triples or that
+  IRIs occur in the source RDF; those remain exporter and consumer checks.
 - Stock `rdflib` in this project does not parse OntoCast's RDF-star reification
   syntax. As in the compatibility bridge, annotations are removed before
   Turtle parsing. Unlike a silent drop, each record reports their count and

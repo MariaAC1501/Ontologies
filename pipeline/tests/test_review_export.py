@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import json
+import re
 import sys
 import tempfile
 import unittest
@@ -21,6 +22,7 @@ PREFIXES = """\
 @prefix doc: <urn:review-test:> .
 @prefix opmad: <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#> .
 @prefix cco: <http://www.ontologyrepository.com/CommonCoreOntologies/> .
+@prefix obo: <http://purl.obolibrary.org/obo/> .
 @prefix schema: <https://schema.org/> .
 """
 
@@ -29,6 +31,86 @@ def write_ttl(directory: Path, name: str, body: str) -> Path:
     path = directory / name
     path.write_text(PREFIXES + body, encoding="utf-8")
     return path
+
+
+def schema_matches(instance: object, schema: dict, root: dict) -> bool:
+    """Small dependency-free evaluator for the schema keywords used here.
+
+    This keeps contract-logic tests deterministic without making jsonschema a
+    pipeline dependency.  When jsonschema is installed, the tests also run the
+    standards-complete validator below.
+    """
+
+    if "$ref" in schema:
+        target: object = root
+        for part in schema["$ref"].removeprefix("#/").split("/"):
+            target = target[part.replace("~1", "/").replace("~0", "~")]  # type: ignore[index]
+        if not schema_matches(instance, target, root):  # type: ignore[arg-type]
+            return False
+    expected_type = schema.get("type")
+    if expected_type is not None:
+        expected = [expected_type] if isinstance(expected_type, str) else expected_type
+        checks = {
+            "object": lambda value: isinstance(value, dict),
+            "array": lambda value: isinstance(value, list),
+            "string": lambda value: isinstance(value, str),
+            "integer": lambda value: isinstance(value, int) and not isinstance(value, bool),
+            "boolean": lambda value: isinstance(value, bool),
+            "null": lambda value: value is None,
+        }
+        if not any(checks[kind](instance) for kind in expected):
+            return False
+    if "const" in schema and instance != schema["const"]:
+        return False
+    if "enum" in schema and instance not in schema["enum"]:
+        return False
+    if isinstance(instance, dict):
+        if any(name not in instance for name in schema.get("required", [])):
+            return False
+        properties = schema.get("properties", {})
+        for name, child_schema in properties.items():
+            if name in instance and not schema_matches(instance[name], child_schema, root):
+                return False
+        extras = set(instance) - set(properties)
+        additional = schema.get("additionalProperties", True)
+        if additional is False and extras:
+            return False
+        if isinstance(additional, dict) and any(
+            not schema_matches(instance[name], additional, root) for name in extras
+        ):
+            return False
+    if isinstance(instance, list):
+        if len(instance) < schema.get("minItems", 0):
+            return False
+        if schema.get("uniqueItems") and len({json.dumps(item, sort_keys=True) for item in instance}) != len(instance):
+            return False
+        if isinstance(schema.get("items"), dict) and any(
+            not schema_matches(item, schema["items"], root) for item in instance
+        ):
+            return False
+    if isinstance(instance, str):
+        if len(instance) < schema.get("minLength", 0):
+            return False
+        if "pattern" in schema and re.search(schema["pattern"], instance) is None:
+            return False
+    if isinstance(instance, (int, float)) and not isinstance(instance, bool):
+        if "minimum" in schema and instance < schema["minimum"]:
+            return False
+        if "maximum" in schema and instance > schema["maximum"]:
+            return False
+    if "allOf" in schema and not all(schema_matches(instance, item, root) for item in schema["allOf"]):
+        return False
+    if "anyOf" in schema and not any(schema_matches(instance, item, root) for item in schema["anyOf"]):
+        return False
+    if "oneOf" in schema and sum(schema_matches(instance, item, root) for item in schema["oneOf"]) != 1:
+        return False
+    if "not" in schema and schema_matches(instance, schema["not"], root):
+        return False
+    if "if" in schema:
+        branch = "then" if schema_matches(instance, schema["if"], root) else "else"
+        if branch in schema and not schema_matches(instance, schema[branch], root):
+            return False
+    return True
 
 
 class StrictReviewExportTests(unittest.TestCase):
@@ -71,7 +153,7 @@ doc:Module a opmad:Predictive_maintenance_model .
                 """
 doc:Article2 a opmad:Predictive_Maintenance_Article ; schema:name "Zero count" ; schema:about doc:Module2 .
 doc:Case2 a opmad:Predictive_maintenance_case ; cco:designates doc:Module2 .
-doc:Module2 opmad:has_failure_mode_count doc:Count2 .
+doc:Module2 obo:BFO_0000051 doc:Count2 .
 doc:Count2 a opmad:Number_of_failure_modes ; opmad:has_interger_value 0 .
 """,
             )
@@ -127,8 +209,8 @@ doc:ArticleA a opmad:Predictive_Maintenance_Article ; schema:name "Study A" ; sc
 doc:ArticleB a opmad:Predictive_Maintenance_Article ; schema:name "Study B" ; schema:about doc:ModuleB .
 doc:CaseA a opmad:Predictive_maintenance_case ; cco:designates doc:ModuleA .
 doc:CaseB a opmad:Predictive_maintenance_case ; cco:designates doc:ModuleB .
-doc:ModuleA a opmad:Predictive_maintenance_model, opmad:Fault_detection ; schema:name "Model A" ; opmad:has_input doc:Temperature .
-doc:ModuleB a opmad:Predictive_maintenance_model, opmad:Remaining_useful_life_estimation ; schema:name "Model B" ; opmad:has_input doc:Vibration .
+doc:ModuleA a opmad:Predictive_maintenance_model, opmad:Fault_detection ; schema:name "Model A" ; obo:RO_0010002 doc:Temperature .
+doc:ModuleB a opmad:Predictive_maintenance_model, opmad:Remaining_useful_life_estimation ; schema:name "Model B" ; obo:RO_0010002 doc:Vibration .
 doc:Temperature a opmad:Data_variable ; schema:name "Temperature" .
 doc:Vibration a opmad:Data_variable ; schema:name "Vibration" .
 """,
@@ -155,8 +237,8 @@ doc:Article a opmad:Predictive_Maintenance_Article ; schema:name "Combined study
     schema:about doc:ModelA, doc:ModelB .
 doc:CaseA a opmad:Predictive_maintenance_case ; cco:designates doc:ModelA .
 doc:CaseB a opmad:Predictive_maintenance_case ; cco:designates doc:ModelB .
-doc:ModelA a opmad:Predictive_maintenance_model ; schema:name "Case A model" ; opmad:has_input doc:InputA .
-doc:ModelB a opmad:Predictive_maintenance_model ; schema:name "Case B model" ; opmad:has_input doc:InputB .
+doc:ModelA a opmad:Predictive_maintenance_model ; schema:name "Case A model" ; obo:RO_0010002 doc:InputA .
+doc:ModelB a opmad:Predictive_maintenance_model ; schema:name "Case B model" ; obo:RO_0010002 doc:InputB .
 doc:InputA a opmad:Data_variable ; schema:name "Case A temperature" .
 doc:InputB a opmad:Data_variable ; schema:name "Case B vibration" .
 """,
@@ -182,8 +264,8 @@ doc:ArticleA a opmad:Predictive_Maintenance_Article ; schema:name "Study A" ; sc
 doc:ArticleB a opmad:Predictive_Maintenance_Article ; schema:name "Study B" ; schema:about doc:ModelB .
 doc:CaseA a opmad:Predictive_maintenance_case ; cco:designates doc:ModelA .
 doc:CaseB a opmad:Predictive_maintenance_case ; cco:designates doc:ModelB .
-doc:ModelA a opmad:Predictive_maintenance_model ; schema:name "Model A" ; opmad:has_input doc:SharedInput .
-doc:ModelB a opmad:Predictive_maintenance_model ; schema:name "Model B" ; opmad:has_input doc:SharedInput .
+doc:ModelA a opmad:Predictive_maintenance_model ; schema:name "Model A" ; obo:RO_0010002 doc:SharedInput .
+doc:ModelB a opmad:Predictive_maintenance_model ; schema:name "Model B" ; obo:RO_0010002 doc:SharedInput .
 doc:SharedInput a opmad:Data_variable ; schema:name "Shared sensor" .
 """,
             )
@@ -246,7 +328,7 @@ doc:Robustness a opmad:Design_detail ; schema:name "Robust to noise" .
                 """
 doc:Article a opmad:Predictive_Maintenance_Article ; schema:about doc:Model ; schema:datePublished "year unknown" .
 doc:Case a opmad:Predictive_maintenance_case ; cco:designates doc:Model .
-doc:Model a opmad:Predictive_maintenance_model ; opmad:has_failure_mode_count doc:Count ;
+doc:Model a opmad:Predictive_maintenance_model ; obo:BFO_0000051 doc:Count ;
     opmad:has_data_preprocessing "sometimes" .
 doc:Count a opmad:Number_of_failure_modes ; opmad:has_interger_value "many" .
 """,
@@ -257,7 +339,8 @@ doc:Count a opmad:Number_of_failure_modes ; opmad:has_interger_value "many" .
 
         self.assertEqual(record["fields"]["publication_year"]["status"], "extraction_failure")
         self.assertEqual(record["fields"]["number_of_failure_modes"]["status"], "extraction_failure")
-        self.assertEqual(record["fields"]["data_preprocessing"]["status"], "extraction_failure")
+        self.assertEqual(record["fields"]["data_preprocessing"]["status"], "not_reported")
+        self.assertIsNone(record["fields"]["data_preprocessing"]["value"])
         self.assertEqual(record["record_status"], "extraction_failure")
         self.assertEqual(return_code, 2)
 
@@ -301,13 +384,82 @@ doc:Count a opmad:Number_of_failure_modes ; opmad:has_interger_value "many" .
                 """
 doc:Article a opmad:Predictive_Maintenance_Article ; schema:about doc:Model .
 doc:Case a opmad:Predictive_maintenance_case ; cco:designates doc:Model .
-doc:Model a opmad:Predictive_maintenance_model ; opmad:has_input doc:Collision .
+doc:Model a opmad:Predictive_maintenance_model ; obo:RO_0010002 doc:Collision .
 doc:Collision a <urn:unrelated:Data_variable> ; schema:name "Wrong ontology" .
 """,
             )
             record = build_review_records([facts])[0]
 
         self.assertEqual(record["fields"]["input_types"]["status"], "not_reported")
+
+    def test_untrusted_predicates_cannot_expand_scope_or_set_fields(self) -> None:
+        with tempfile.TemporaryDirectory() as tmpdir:
+            facts = write_ttl(
+                Path(tmpdir),
+                "predicate-poisoning.ttl",
+                """
+@prefix evil: <https://attacker.example/ontology#> .
+
+doc:Article a opmad:Predictive_Maintenance_Article ; schema:name "Safe title" ; schema:about doc:Model .
+doc:Case a opmad:Predictive_maintenance_case ; cco:designates doc:Model .
+doc:Model a opmad:Predictive_maintenance_model ; schema:name "Safe model" ;
+    obo:RO_0010002 doc:SafeInput ;
+    evil:has_input doc:PoisonInput ;
+    evil:describes_configuration doc:PoisonConfiguration ;
+    evil:describes_task doc:PoisonTask ;
+    evil:preprocessing true .
+doc:SafeInput a opmad:Data_variable ; schema:name "Safe sensor" ; evil:has_text_value "Poison label" .
+doc:PoisonInput a opmad:Data_variable ; schema:name "Poison sensor" .
+doc:PoisonConfiguration a opmad:Model_configuration ; schema:name "Poison approach" .
+doc:PoisonTask a opmad:Fault_detection .
+""",
+            )
+            record = build_review_records([facts])[0]
+
+        self.assertEqual(record["case_article_link"]["resolution"], "resolved")
+        self.assertEqual(record["fields"]["input_types"]["value"], ["Safe sensor"])
+        self.assertEqual(record["fields"]["model_approach"]["status"], "unclear")
+        self.assertNotIn("Poison approach", record["fields"]["model_approach"]["raw_values"])
+        self.assertEqual(record["fields"]["task"]["status"], "unclear")
+        self.assertEqual(record["fields"]["data_preprocessing"]["status"], "not_reported")
+        serialized = json.dumps(record)
+        self.assertNotIn("Poison sensor", serialized)
+        self.assertNotIn("Poison label", serialized)
+
+    def test_untrusted_direct_relation_does_not_resolve_article_case_link(self) -> None:
+        with tempfile.TemporaryDirectory() as tmpdir:
+            facts = write_ttl(
+                Path(tmpdir),
+                "link-poisoning.ttl",
+                """
+@prefix evil: <https://attacker.example/ontology#> .
+doc:Article a opmad:Predictive_Maintenance_Article ; schema:name "Unlinked" ; evil:describes_case doc:Case .
+doc:Case a opmad:Predictive_maintenance_case .
+""",
+            )
+            records = build_review_records([facts])
+
+        case_record = next(record for record in records if record["case_identity"]["value"])
+        self.assertEqual(case_record["case_article_link"]["resolution"], "unresolved")
+        self.assertEqual(case_record["case_article_link"]["evidence"], [])
+        self.assertIsNone(case_record["article_identity"]["value"])
+
+    def test_unsupported_minted_opmad_preprocessing_predicates_are_ignored(self) -> None:
+        with tempfile.TemporaryDirectory() as tmpdir:
+            facts = write_ttl(
+                Path(tmpdir),
+                "minted-preprocessing.ttl",
+                """
+doc:Article a opmad:Predictive_Maintenance_Article ; schema:about doc:Model .
+doc:Case a opmad:Predictive_maintenance_case ; cco:designates doc:Model .
+doc:Model a opmad:Predictive_maintenance_model ;
+    opmad:data_preprocessing true ; opmad:has_data_preprocessing true ; opmad:preprocessing true .
+""",
+            )
+            record = build_review_records([facts])[0]
+
+        self.assertEqual(record["fields"]["data_preprocessing"]["status"], "not_reported")
+        self.assertIsNone(record["fields"]["data_preprocessing"]["value"])
 
     def test_representative_records_follow_schema_value_status_contract(self) -> None:
         with tempfile.TemporaryDirectory() as tmpdir:
@@ -337,6 +489,77 @@ doc:Collision a <urn:unrelated:Data_variable> ; schema:name "Wrong ontology" .
             invalid["case_identity"]["value"] = "urn:should-be-null"
             with self.assertRaises(jsonschema.ValidationError):
                 jsonschema.validate(invalid, schema)
+
+    def test_schema_conditionals_accept_generated_records_and_reject_contract_contradictions(self) -> None:
+        schema_path = Path(__file__).resolve().parents[1] / "review_export.schema.json"
+        schema = json.loads(schema_path.read_text(encoding="utf-8"))
+        with tempfile.TemporaryDirectory() as tmpdir:
+            root = Path(tmpdir)
+            resolved_path = write_ttl(
+                root,
+                "resolved.ttl",
+                """
+doc:Article a opmad:Predictive_Maintenance_Article ; schema:about doc:Model .
+doc:Case a opmad:Predictive_maintenance_case ; cco:designates doc:Model .
+doc:Model a opmad:Predictive_maintenance_model .
+""",
+            )
+            unresolved_path = write_ttl(
+                root,
+                "unresolved-schema.ttl",
+                "doc:Article2 a opmad:Predictive_Maintenance_Article .\ndoc:Case2 a opmad:Predictive_maintenance_case .\n",
+            )
+            malformed = root / "malformed.ttl"
+            malformed.write_text("not turtle [", encoding="utf-8")
+            resolved = build_review_records([resolved_path])[0]
+            unresolved = next(
+                record for record in build_review_records([unresolved_path])
+                if record["case_identity"]["value"]
+            )
+            failed = build_review_records([malformed])[0]
+
+        for record in (resolved, unresolved, failed):
+            self.assertTrue(schema_matches(record, schema, schema))
+            if jsonschema is not None:
+                jsonschema.validate(record, schema)
+
+        contradictions: list[dict] = []
+        invalid = json.loads(json.dumps(resolved))
+        invalid["case_article_link"]["evidence"] = []
+        contradictions.append(invalid)
+        invalid = json.loads(json.dumps(resolved))
+        invalid["case_article_link"]["status"] = "unclear"
+        contradictions.append(invalid)
+        invalid = json.loads(json.dumps(unresolved))
+        invalid["case_article_link"]["status"] = "present"
+        contradictions.append(invalid)
+        invalid = json.loads(json.dumps(unresolved))
+        invalid["case_article_link"]["status"] = "extraction_failure"
+        contradictions.append(invalid)
+        invalid = json.loads(json.dumps(unresolved))
+        invalid["record_status"] = "present"
+        contradictions.append(invalid)
+        invalid = json.loads(json.dumps(resolved))
+        invalid["record_status"] = "unclear"
+        contradictions.append(invalid)
+        invalid = json.loads(json.dumps(failed))
+        invalid["record_status"] = "unclear"
+        contradictions.append(invalid)
+        invalid = json.loads(json.dumps(unresolved))
+        invalid["record_status"] = "extraction_failure"
+        contradictions.append(invalid)
+        invalid = json.loads(json.dumps(resolved))
+        invalid["fields"]["publication_year"] = {
+            "status": "extraction_failure", "value": None, "raw_values": [], "source_nodes": [],
+        }
+        contradictions.append(invalid)
+
+        for invalid in contradictions:
+            with self.subTest(invalid=invalid["record_id"]):
+                self.assertFalse(schema_matches(invalid, schema, schema))
+                if jsonschema is not None:
+                    with self.assertRaises(jsonschema.ValidationError):
+                        jsonschema.validate(invalid, schema)
 
     def test_malformed_input_emits_failure_record_and_cli_nonzero(self) -> None:
         with tempfile.TemporaryDirectory() as tmpdir:

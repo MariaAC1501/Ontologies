@@ -164,15 +164,30 @@ def join_multi(values: Iterable[str]) -> str:
 
 
 def parse_ontology_labels(ontology_path: Path | None) -> dict[str, str]:
+    """Read labels only from authoritative OPMAD or its documented legacy namespace.
+
+    Labels remain keyed by local name for compatibility with the CSV mapping,
+    but unrelated vocabularies cannot claim that key.  When both supported
+    namespaces define it, authoritative OPMAD wins deterministically.
+    """
+
     if ontology_path is None or not ontology_path.exists():
         return {}
     graph = load_graph_from_ttl(ontology_path)
     labels: dict[str, str] = {}
-    for subject in set(graph.subjects(RDFS.label, None)):
-        name = local_name(subject)
-        label = best_label(graph, subject)
-        if name and label:
-            labels[name] = label
+    for namespace in reversed(COMPATIBLE_OPMAD_NAMESPACES):
+        subjects = sorted(
+            {
+                subject for subject in graph.subjects(RDFS.label, None)
+                if isinstance(subject, URIRef) and str(subject).startswith(namespace)
+            },
+            key=str,
+        )
+        for subject in subjects:
+            name = local_name(subject)
+            label = best_label(graph, subject)
+            if name and label:
+                labels[name] = label
     return labels
 
 

@@ -17,6 +17,7 @@ from pipeline.facts_to_csv import (
     build_cases_from_fact_files,
     cases_to_csv_rows,
     graph_to_cases,
+    parse_ontology_labels,
     strip_rdf_star_statements,
     write_csv,
 )
@@ -112,6 +113,43 @@ class FactsToCsvTests(unittest.TestCase):
         self.assertEqual(case.models, ["Not reported"])
         self.assertFalse(case.data_preprocessing)
         self.assertEqual(case.task, "One step future state forecast")
+
+    def test_unrelated_ontology_label_cannot_override_opmad_task_label(self) -> None:
+        with tempfile.TemporaryDirectory() as tmpdir:
+            ontology = Path(tmpdir) / "poisoned-labels.ttl"
+            ontology.write_text(
+                """
+@prefix opmad: <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#> .
+@prefix seed: <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD/seed#> .
+@prefix evil: <https://attacker.example/ontology#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+seed:Fault_detection rdfs:label "Fault detection" .
+opmad:Fault_detection rdfs:label "Fault detection" .
+evil:Fault_detection rdfs:label "Health assessment" .
+""",
+                encoding="utf-8",
+            )
+            labels = parse_ontology_labels(ontology)
+
+        self.assertEqual(labels["Fault_detection"], "Fault detection")
+        self.assertNotIn("Health assessment", labels.values())
+
+    def test_authoritative_ontology_label_wins_over_legacy_label(self) -> None:
+        with tempfile.TemporaryDirectory() as tmpdir:
+            ontology = Path(tmpdir) / "compatible-labels.ttl"
+            ontology.write_text(
+                """
+@prefix opmad: <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#> .
+@prefix seed: <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD/seed#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+seed:Fault_detection rdfs:label "Legacy spelling" .
+opmad:Fault_detection rdfs:label "Fault detection" .
+""",
+                encoding="utf-8",
+            )
+            labels = parse_ontology_labels(ontology)
+
+        self.assertEqual(labels["Fault_detection"], "Fault detection")
 
     def test_historical_seed_namespace_remains_compatible(self) -> None:
         graph = Graph().parse(

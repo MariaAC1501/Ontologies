@@ -49,8 +49,6 @@ SCHEMA_VALUES = (
     URIRef("http://schema.org/value"),
     URIRef("https://schema.org/value"),
 )
-TEXT_PREDICATE_NAMES = {"has_text_value"}
-INTEGER_PREDICATE_NAMES = {"has_interger_value", "has_integer_value"}
 ARTICLE_CLASS = "Predictive_Maintenance_Article"
 CASE_CLASS = "Predictive_maintenance_case"
 TASK_LABELS = {local_name(iri): label for label, iri in TASK_CLASS_IRIS.items()}
@@ -62,14 +60,62 @@ ACCEPTED_OPMAD_CLASS_PREFIXES = (
     f"{OPMAD.removesuffix('#')}/seed#",
 )
 
-# Traversal is deliberately limited to domain relations.  In particular, it
-# does not walk author/chunk/provenance links that can join otherwise distinct
-# article descriptions in one graph.
-RELATION_NAMES = {
-    "about", "subjectOf", "object", "instrument", "monitors", "uses",
-    "usedIn", "usedFor", "isPartOf", "hasPart", "designates", "describes",
-    "is_about", "BFO_0000051", "RO_0010002",
+# Every traversable relation is identified by its complete IRI.  Local-name
+# matching here would let an unrelated vocabulary attach arbitrary nodes to a
+# case (for example evil:has_input).  The OPMAD list is the set of object
+# properties in the unchanged ontology; the historical seed namespace carries
+# the same terms for compatibility with old fixed-mode artifacts.
+OPMAD_RELATION_NAMES = {
+    "describes_configuration", "describes_type", "explained_in", "explains",
+    "has_design_detail", "has_identifier", "has_predictive_maintenance_function",
+    "has_publication_year", "has_synchronization", "has_title", "implies",
+    "is_implied_by", "is_predictive_maintenance_function_of", "type_described_by",
 }
+OPMAD_RELATIONS = frozenset(
+    URIRef(f"{namespace}{name}")
+    for namespace in ACCEPTED_OPMAD_CLASS_PREFIXES
+    for name in OPMAD_RELATION_NAMES
+)
+SCHEMA_RELATION_NAMES = {
+    "about", "subjectOf", "object", "instrument", "monitors", "uses",
+    "usedIn", "usedFor", "isPartOf", "hasPart",
+}
+SCHEMA_RELATIONS = frozenset(
+    URIRef(f"{namespace}{name}")
+    for namespace in ("http://schema.org/", "https://schema.org/")
+    for name in SCHEMA_RELATION_NAMES
+)
+CCO_RELATIONS = frozenset(
+    URIRef(f"http://www.ontologyrepository.com/CommonCoreOntologies/{name}")
+    for name in ("described_by", "describes", "designates", "is_about")
+)
+OBO_RELATIONS = frozenset(
+    URIRef(f"http://purl.obolibrary.org/obo/{name}")
+    for name in (
+        "BFO_0000051", "RO_0000079", "RO_0000085", "RO_0000086",
+        "RO_0010001", "RO_0010002",
+    )
+)
+DOMAIN_RELATIONS = OPMAD_RELATIONS | SCHEMA_RELATIONS | CCO_RELATIONS | OBO_RELATIONS
+OPMAD_TEXT_PREDICATES = tuple(
+    URIRef(f"{namespace}has_text_value") for namespace in ACCEPTED_OPMAD_CLASS_PREFIXES
+)
+OPMAD_INTEGER_PREDICATES = tuple(
+    URIRef(f"{namespace}has_interger_value") for namespace in ACCEPTED_OPMAD_CLASS_PREFIXES
+)
+OPMAD_TITLE_RELATIONS = tuple(
+    URIRef(f"{namespace}has_title") for namespace in ACCEPTED_OPMAD_CLASS_PREFIXES
+)
+OPMAD_IDENTIFIER_RELATIONS = tuple(
+    URIRef(f"{namespace}has_identifier") for namespace in ACCEPTED_OPMAD_CLASS_PREFIXES
+)
+OPMAD_PUBLICATION_YEAR_RELATIONS = tuple(
+    URIRef(f"{namespace}has_publication_year") for namespace in ACCEPTED_OPMAD_CLASS_PREFIXES
+)
+CCO_CASE_TARGET_RELATIONS = frozenset({
+    URIRef("http://www.ontologyrepository.com/CommonCoreOntologies/designates"),
+    URIRef("http://www.ontologyrepository.com/CommonCoreOntologies/is_about"),
+})
 
 ANALYTICAL_FIELDS = (
     "publication_year", "task", "case_study", "case_study_type",
@@ -108,9 +154,8 @@ def _literals(graph: Graph, subject: URIRef, predicates: Sequence[URIRef] = ()) 
         for predicate in predicates:
             values.extend(obj for obj in graph.objects(subject, predicate) if isinstance(obj, Literal))
     else:
-        for predicate, obj in graph.predicate_objects(subject):
-            if isinstance(obj, Literal) and local_name(predicate) in TEXT_PREDICATE_NAMES:
-                values.append(obj)
+        for predicate in OPMAD_TEXT_PREDICATES:
+            values.extend(obj for obj in graph.objects(subject, predicate) if isinstance(obj, Literal))
     return values
 
 
@@ -135,8 +180,7 @@ def _typed_entities(graph: Graph) -> dict[str, set[URIRef]]:
 
 
 def _is_domain_relation(predicate: URIRef) -> bool:
-    name = local_name(predicate)
-    return name in RELATION_NAMES or name.startswith("has_") or name.startswith("describes_")
+    return predicate in DOMAIN_RELATIONS
 
 
 def _adjacent_domain_nodes(graph: Graph, node: URIRef) -> set[URIRef]:
@@ -236,10 +280,10 @@ def _article_only_scope(
 def _direct_relation_evidence(graph: Graph, left: URIRef, right: URIRef) -> list[str]:
     evidence: list[str] = []
     for subject, predicate, obj in graph.triples((left, None, right)):
-        if predicate != RDF.type:
+        if isinstance(predicate, URIRef) and _is_domain_relation(predicate):
             evidence.append(f"{subject} {predicate} {obj}")
     for subject, predicate, obj in graph.triples((right, None, left)):
-        if predicate != RDF.type:
+        if isinstance(predicate, URIRef) and _is_domain_relation(predicate):
             evidence.append(f"{subject} {predicate} {obj}")
     return evidence
 
@@ -248,7 +292,7 @@ def _article_case_evidence(graph: Graph, article: URIRef, case: URIRef) -> list[
     evidence = _direct_relation_evidence(graph, article, case)
     case_targets = {
         obj for predicate, obj in graph.predicate_objects(case)
-        if isinstance(obj, URIRef) and local_name(predicate) in {"designates", "is_about"}
+        if isinstance(obj, URIRef) and predicate in CCO_CASE_TARGET_RELATIONS
     }
     for target in sorted(case_targets, key=str):
         for predicate in graph.predicates(article, target):
@@ -366,16 +410,17 @@ def _article_text_field(
     graph: Graph,
     article: URIRef | None,
     direct_predicates: Sequence[URIRef],
-    linked_predicate_name: str,
+    linked_predicates: Sequence[URIRef],
 ) -> dict[str, Any]:
     if article is None:
         return _field("not_applicable", note="This field requires a resolved article.")
     raw = _clean_literals(_literals(graph, article, direct_predicates))
     nodes: list[str] = [str(article)] if raw else []
-    for predicate, obj in graph.predicate_objects(article):
-        if isinstance(obj, URIRef) and local_name(predicate) == linked_predicate_name:
-            raw.extend(_clean_literals(_entity_literals(graph, obj)))
-            nodes.append(str(obj))
+    for predicate in linked_predicates:
+        for obj in graph.objects(article, predicate):
+            if isinstance(obj, URIRef):
+                raw.extend(_clean_literals(_entity_literals(graph, obj)))
+                nodes.append(str(obj))
     raw = list(dict.fromkeys(raw))
     if not raw:
         return _field("not_reported")
@@ -389,13 +434,11 @@ def _publication_year(graph: Graph, article: URIRef | None) -> dict[str, Any]:
         return _field("not_applicable", note="Publication year requires a resolved article.")
     literals = _literals(graph, article, SCHEMA_DATES)
     nodes = [str(article)] if literals else []
-    for predicate, obj in graph.predicate_objects(article):
-        if isinstance(obj, URIRef) and local_name(predicate) == "has_publication_year":
-            nodes.append(str(obj))
-            literals.extend(
-                value for child_predicate, value in graph.predicate_objects(obj)
-                if isinstance(value, Literal) and local_name(child_predicate) in INTEGER_PREDICATE_NAMES
-            )
+    for predicate in OPMAD_PUBLICATION_YEAR_RELATIONS:
+        for obj in graph.objects(article, predicate):
+            if isinstance(obj, URIRef):
+                nodes.append(str(obj))
+                literals.extend(_literals(graph, obj, OPMAD_INTEGER_PREDICATES))
     raw = _clean_literals(literals)
     if not raw:
         return _field("not_reported")
@@ -431,8 +474,10 @@ def _numeric_field(
     unlinked = sorted(candidates - scope - ambiguous_scope, key=str)
     if ambiguous:
         relevant = selected + ambiguous
-        raw = [str(value) for node in relevant for predicate, value in graph.predicate_objects(node)
-               if isinstance(value, Literal) and local_name(predicate) in INTEGER_PREDICATE_NAMES]
+        raw = [
+            str(value) for node in relevant
+            for value in _literals(graph, node, OPMAD_INTEGER_PREDICATES)
+        ]
         return _field(
             "unclear", raw_values=raw, source_nodes=map(str, relevant),
             note="A numeric fact crosses case boundaries; no count was assigned.",
@@ -445,8 +490,8 @@ def _numeric_field(
             )
         return _field("not_reported")
     literals = [
-        value for node in selected for predicate, value in graph.predicate_objects(node)
-        if isinstance(value, Literal) and (local_name(predicate) in INTEGER_PREDICATE_NAMES or predicate in SCHEMA_VALUES)
+        value for node in selected
+        for value in _literals(graph, node, (*OPMAD_INTEGER_PREDICATES, *SCHEMA_VALUES))
     ]
     raw = _clean_literals(literals)
     if not raw:
@@ -511,55 +556,6 @@ def _task_field(
     return _field("not_reported")
 
 
-def _explicit_boolean_field(
-    graph: Graph,
-    scope: set[URIRef],
-    ambiguous_scope: set[URIRef],
-    predicate_names: set[str],
-) -> dict[str, Any]:
-    raw: list[str] = []
-    nodes: list[str] = []
-    for node in sorted(scope, key=str):
-        for predicate, value in graph.predicate_objects(node):
-            if isinstance(value, Literal) and local_name(predicate).lower() in predicate_names:
-                raw.append(str(value).strip())
-                nodes.append(str(node))
-    ambiguous_values = [
-        str(value).strip()
-        for node in sorted(ambiguous_scope, key=str)
-        for predicate, value in graph.predicate_objects(node)
-        if isinstance(value, Literal) and local_name(predicate).lower() in predicate_names
-    ]
-    if any(ambiguous_values):
-        relevant_nodes = nodes + [
-            str(node) for node in sorted(ambiguous_scope, key=str)
-            if any(
-                isinstance(value, Literal) and local_name(predicate).lower() in predicate_names
-                for predicate, value in graph.predicate_objects(node)
-            )
-        ]
-        return _field(
-            "unclear", raw_values=[*raw, *ambiguous_values], source_nodes=relevant_nodes,
-            note="Boolean evidence crosses case boundaries; no value was assigned.",
-        )
-    raw = list(dict.fromkeys(filter(None, raw)))
-    if not raw:
-        return _field("not_reported")
-    normalized: list[bool] = []
-    for value in raw:
-        lowered = value.lower()
-        if lowered in {"true", "yes", "1"}:
-            normalized.append(True)
-        elif lowered in {"false", "no", "0"}:
-            normalized.append(False)
-        else:
-            return _field("extraction_failure", raw_values=raw, source_nodes=nodes, note="Explicit preprocessing value is not boolean.")
-    unique = list(dict.fromkeys(normalized))
-    if len(unique) == 1:
-        return _field("present", unique[0], raw_values=raw, source_nodes=nodes)
-    return _field("unclear", raw_values=raw, source_nodes=nodes, note="Conflicting preprocessing values were asserted.")
-
-
 def _build_fields(
     graph: Graph,
     entities: dict[str, set[URIRef]],
@@ -577,10 +573,9 @@ def _build_fields(
             graph, entities, scope, ambiguous_scope, "number_if_input_variables",
         ),
         "input_types": _candidate_field(graph, entities, scope, ambiguous_scope, {"Data_variable"}, multi=True),
-        "data_preprocessing": _explicit_boolean_field(
-            graph, scope, ambiguous_scope,
-            {"data_preprocessing", "has_data_preprocessing", "preprocessing"},
-        ),
+        # Unchanged OPMAD has no dedicated preprocessing boolean property.
+        # Unsupported minted predicates are ignored rather than normalized.
+        "data_preprocessing": _field("not_reported"),
         "model_approach": _candidate_field(graph, entities, scope, ambiguous_scope, {"Model_configuration"}),
         "model_types": _candidate_field(graph, entities, scope, ambiguous_scope, {"Model_type"}, multi=True),
         "models": _candidate_field(
@@ -599,8 +594,10 @@ def _build_fields(
             graph, entities, scope, ambiguous_scope, {"Performance_value"}, multi=True,
         ),
         "complementary_notes": _field("not_reported"),
-        "study_title": _article_text_field(graph, article, SCHEMA_NAMES, "has_title"),
-        "publication_identifier": _article_text_field(graph, article, SCHEMA_IDENTIFIERS, "has_identifier"),
+        "study_title": _article_text_field(graph, article, SCHEMA_NAMES, OPMAD_TITLE_RELATIONS),
+        "publication_identifier": _article_text_field(
+            graph, article, SCHEMA_IDENTIFIERS, OPMAD_IDENTIFIER_RELATIONS,
+        ),
     }
     assert tuple(fields) == ANALYTICAL_FIELDS
 
@@ -620,7 +617,7 @@ def _build_fields(
             graph,
             article,
             (URIRef("http://schema.org/keywords"), URIRef("https://schema.org/keywords")),
-            "__no_linked_property__",
+            (),
         ),
     }
     return fields, supplementary
