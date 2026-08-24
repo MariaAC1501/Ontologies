@@ -14,14 +14,15 @@ import json
 import os
 import platform
 import re
+import stat
 import subprocess
 import sys
 import tempfile
 from datetime import datetime, timezone
-from pathlib import Path
+from pathlib import Path, PurePosixPath
 from typing import Any, Iterable, Mapping, Sequence
 
-SCHEMA_VERSION = 1
+SCHEMA_VERSION = 2
 REDACTED = "[REDACTED]"
 ARTIFACT_KINDS = ("inputs", "config", "prompts", "ontologies")
 _SECRET_FILE_NAMES = {
@@ -42,33 +43,36 @@ def stable_json(data: Mapping[str, Any]) -> str:
     return json.dumps(data, ensure_ascii=False, indent=2, sort_keys=True) + "\n"
 
 
+def _key_words(name: str) -> list[str]:
+    # Split separators and camelCase/acronym boundaries (openaiApiKey, DBPassword).
+    separated = re.sub(r"([a-z0-9])([A-Z])", r"\1_\2", name)
+    separated = re.sub(r"([A-Z]+)([A-Z][a-z])", r"\1_\2", separated)
+    return [word for word in re.sub(r"[^A-Za-z0-9]+", "_", separated).lower().split("_") if word]
+
+
 def _sensitive_key(name: str) -> bool:
-    normalized = re.sub(r"[^a-z0-9]+", "_", name.lower()).strip("_")
-    segments = set(normalized.split("_"))
-    if {"password", "secret", "credential", "credentials", "authorization"} & segments:
+    words = _key_words(name)
+    segments = set(words)
+    if segments & {
+        "auth", "authorization", "bearer", "credential", "credentials", "password",
+        "passwd", "secret", "secrets", "token",
+    }:
         return True
-    return (
-        normalized in {
-            "token", "apikey", "api_key", "private_key", "access_token", "auth_token",
-            "bearer_token", "refresh_token",
-        }
-        or normalized.endswith(("_api_key", "_access_token", "_auth_token", "_bearer_token", "_refresh_token"))
-    )
+    pairs = set(zip(words, words[1:]))
+    return ("api", "key") in pairs or ("private", "key") in pairs or "apikey" in segments
 
 
 def _secret_bearing_path(path: Path) -> bool:
     for component in path.parts:
         name = component.lower()
-        normalized = re.sub(r"[^a-z0-9]+", "_", name).strip("_")
-        segments = set(normalized.split("_"))
+        stem = Path(component).stem
         if (
             name == ".env"
-            or name.startswith(".env.")
+            or name.startswith((".env.", ".env-", ".env_"))
             or name in _SECRET_FILE_NAMES
+            or stem.lower() in _SECRET_FILE_NAMES
             or name in _SECRET_DIRECTORY_NAMES
-            or {"credential", "credentials", "secret", "secrets"} & segments
-            or "api_key" in normalized
-            or "private_key" in normalized
+            or _sensitive_key(stem)
         ):
             return True
     return path.suffix.lower() in _SECRET_FILE_SUFFIXES
@@ -91,34 +95,65 @@ def parse_settings(values: Iterable[str]) -> dict[str, str]:
     return dict(sorted(settings.items()))
 
 
-def _under_base(path: Path, base_dir: Path) -> tuple[Path, str]:
-    if path.is_symlink():
-        raise ManifestError(f"symbolic links are not supported: {path}")
-    resolved = path.resolve()
+def _absolute_base(base_dir: Path | str) -> Path:
+    supplied = Path(base_dir)
+    if supplied.is_symlink():
+        raise ManifestError(f"--base-dir must not be a symbolic link: {supplied}")
     try:
-        relative = resolved.relative_to(base_dir)
-    except ValueError as exc:
-        raise ManifestError(f"path is outside --base-dir: {path}") from exc
+        # Canonicalize platform-level aliases above the selected base (for
+        # example macOS /var -> /private/var). In-base components remain lexical.
+        base = supplied.resolve(strict=True)
+    except OSError as exc:
+        raise ManifestError(f"cannot inspect --base-dir {supplied}: {exc}") from exc
+    try:
+        mode = base.lstat().st_mode
+    except OSError as exc:
+        raise ManifestError(f"cannot inspect --base-dir {base}: {exc}") from exc
+    if not stat.S_ISDIR(mode):
+        raise ManifestError(f"base directory does not exist or is not a directory: {base}")
+    return base
+
+
+def _under_base(path: Path, base_dir: Path) -> tuple[Path, str]:
+    """Apply lexical containment/secret checks, then reject every in-base symlink."""
+
+    absolute = Path(os.path.abspath(path))
+    try:
+        relative = absolute.relative_to(base_dir)
+    except ValueError:
+        try:
+            absolute = absolute.resolve(strict=True)
+            relative = absolute.relative_to(base_dir)
+        except (OSError, ValueError) as exc:
+            raise ManifestError(f"path is outside --base-dir: {path}") from exc
+    if relative == Path(".") or any(part in ("", ".", "..") for part in relative.parts):
+        raise ManifestError(f"path is not a normalized relative path: {path}")
     if _secret_bearing_path(relative):
         raise ManifestError(f"refusing to read a secret-bearing file: {relative.as_posix()}")
-    return resolved, relative.as_posix()
+    current = base_dir
+    for component in relative.parts:
+        current = current / component
+        try:
+            mode = current.lstat().st_mode
+        except OSError as exc:
+            raise ManifestError(f"cannot inspect path component {current}: {exc}") from exc
+        if stat.S_ISLNK(mode):
+            raise ManifestError(f"symbolic links are not supported: {current}")
+    return absolute, relative.as_posix()
 
 
 def resolve_file_specs(specs: Iterable[str], base_dir: Path | str) -> list[tuple[Path, str]]:
-    """Expand file, directory, and glob specs into a sorted, unique file list.
+    """Expand specs into sorted regular files without accepting symlink ancestors."""
 
-    Literal missing paths, unmatched globs, empty directories, symlinks, files
-    outside ``base_dir``, and obvious credential files are errors.
-    """
-
-    base = Path(base_dir).resolve()
-    if not base.is_dir():
-        raise ManifestError(f"base directory does not exist or is not a directory: {base}")
-
+    base = _absolute_base(base_dir)
     found: dict[str, Path] = {}
     for spec in specs:
-        candidate = Path(spec)
-        pattern = str(candidate if candidate.is_absolute() else base / candidate)
+        raw = Path(spec)
+        if any(part == ".." for part in raw.parts):
+            raise ManifestError(f"parent path components are not supported: {spec}")
+        if _secret_bearing_path(raw):
+            raise ManifestError(f"refusing to read a secret-bearing file: {spec}")
+        pattern = str(raw if raw.is_absolute() else base / raw)
         if glob.has_magic(pattern):
             matches = [Path(item) for item in glob.glob(pattern, recursive=True, include_hidden=True)]
             if not matches:
@@ -130,40 +165,112 @@ def resolve_file_specs(specs: Iterable[str], base_dir: Path | str) -> list[tuple
 
         spec_files: list[Path] = []
         for match in matches:
-            if match.is_symlink():
-                raise ManifestError(f"symbolic links are not supported: {match}")
-            if match.is_dir():
-                children = sorted(match.rglob("*"), key=lambda item: item.as_posix())
-                symlinks = [item for item in children if item.is_symlink()]
-                if symlinks:
-                    raise ManifestError(f"symbolic links are not supported: {symlinks[0]}")
-                spec_files.extend(item for item in children if item.is_file())
-            elif match.is_file():
-                spec_files.append(match)
+            safe_match, _ = _under_base(match, base)
+            mode = safe_match.lstat().st_mode
+            if stat.S_ISDIR(mode):
+                children = sorted(safe_match.rglob("*"), key=lambda item: item.as_posix())
+                for child in children:
+                    safe_child, _ = _under_base(child, base)
+                    child_mode = safe_child.lstat().st_mode
+                    if stat.S_ISREG(child_mode):
+                        spec_files.append(safe_child)
+                    elif not stat.S_ISDIR(child_mode):
+                        raise ManifestError(f"path is not a regular file or directory: {child}")
+            elif stat.S_ISREG(mode):
+                spec_files.append(safe_match)
             else:
                 raise ManifestError(f"path is not a regular file or directory: {match}")
         if not spec_files:
             raise ManifestError(f"path specification contains no files: {spec}")
 
         for item in spec_files:
-            resolved, relative = _under_base(item, base)
-            found[relative] = resolved
+            safe, relative = _under_base(item, base)
+            found[relative] = safe
 
     return [(found[relative], relative) for relative in sorted(found)]
 
 
-def sha256_file(path: Path) -> tuple[str, int]:
-    """Hash a stable snapshot of a regular file, detecting concurrent writes."""
+def _snapshot(metadata: os.stat_result) -> tuple[int, int, int, int, int, int]:
+    return (
+        metadata.st_dev,
+        metadata.st_ino,
+        stat.S_IFMT(metadata.st_mode),
+        metadata.st_size,
+        metadata.st_mtime_ns,
+        metadata.st_ctime_ns,
+    )
 
-    before = path.stat()
-    digest = hashlib.sha256()
-    with path.open("rb") as stream:
-        for chunk in iter(lambda: stream.read(1024 * 1024), b""):
+
+def sha256_file(path: Path) -> tuple[str, int]:
+    """Hash one descriptor-pinned regular-file snapshot without following links."""
+
+    absolute = Path(os.path.abspath(path))
+    components = absolute.parts
+    if not absolute.is_absolute() or len(components) < 2:
+        raise ManifestError(f"cannot securely open non-absolute path: {path}")
+    nofollow = getattr(os, "O_NOFOLLOW", 0)
+    cloexec = getattr(os, "O_CLOEXEC", 0)
+    nonblock = getattr(os, "O_NONBLOCK", 0)
+    directory = getattr(os, "O_DIRECTORY", 0)
+    descriptors: list[int] = []
+    ancestors: list[tuple[int, str, tuple[int, int, int]]] = []
+    try:
+        current_fd = os.open(components[0], os.O_RDONLY | directory | cloexec)
+        descriptors.append(current_fd)
+        for component in components[1:-1]:
+            before = os.stat(component, dir_fd=current_fd, follow_symlinks=False)
+            if not stat.S_ISDIR(before.st_mode):
+                raise ManifestError(f"path ancestor is not a directory: {path}")
+            child_fd = os.open(component, os.O_RDONLY | directory | nofollow | cloexec, dir_fd=current_fd)
+            opened = os.fstat(child_fd)
+            identity = (before.st_dev, before.st_ino, stat.S_IFMT(before.st_mode))
+            if identity != (opened.st_dev, opened.st_ino, stat.S_IFMT(opened.st_mode)):
+                raise ManifestError(f"path ancestor was replaced while opening: {path}")
+            ancestors.append((current_fd, component, identity))
+            descriptors.append(child_fd)
+            current_fd = child_fd
+
+        name = components[-1]
+        path_before = os.stat(name, dir_fd=current_fd, follow_symlinks=False)
+        if not stat.S_ISREG(path_before.st_mode):
+            raise ManifestError(f"path is not a regular file: {path}")
+        file_fd = os.open(
+            name, os.O_RDONLY | nofollow | cloexec | nonblock, dir_fd=current_fd
+        )
+        descriptors.append(file_fd)
+        descriptor_before = os.fstat(file_fd)
+        if _snapshot(path_before) != _snapshot(descriptor_before):
+            raise ManifestError(f"file was replaced while opening: {path}")
+
+        digest = hashlib.sha256()
+        while True:
+            chunk = os.read(file_fd, 1024 * 1024)
+            if not chunk:
+                break
             digest.update(chunk)
-    after = path.stat()
-    if (before.st_size, before.st_mtime_ns) != (after.st_size, after.st_mtime_ns):
-        raise ManifestError(f"file changed while it was being hashed: {path}")
-    return digest.hexdigest(), after.st_size
+
+        descriptor_after = os.fstat(file_fd)
+        path_after = os.stat(name, dir_fd=current_fd, follow_symlinks=False)
+        if not stat.S_ISREG(path_after.st_mode) or not (
+            _snapshot(path_before) == _snapshot(descriptor_before)
+            == _snapshot(descriptor_after) == _snapshot(path_after)
+        ):
+            raise ManifestError(f"file changed or was replaced while it was being hashed: {path}")
+        for parent_fd, component, identity in ancestors:
+            after = os.stat(component, dir_fd=parent_fd, follow_symlinks=False)
+            if identity != (after.st_dev, after.st_ino, stat.S_IFMT(after.st_mode)):
+                raise ManifestError(f"path ancestor was replaced while hashing: {path}")
+        return digest.hexdigest(), descriptor_after.st_size
+    except ManifestError:
+        raise
+    except OSError as exc:
+        raise ManifestError(f"cannot securely hash {path}: {exc}") from exc
+    finally:
+        for descriptor in reversed(descriptors):
+            try:
+                os.close(descriptor)
+            except OSError:
+                pass
 
 
 def artifact_records(specs: Iterable[str], base_dir: Path | str) -> list[dict[str, Any]]:
@@ -177,80 +284,102 @@ def artifact_records(specs: Iterable[str], base_dir: Path | str) -> list[dict[st
     return records
 
 
-def _git(args: Sequence[str], cwd: Path, check: bool = True) -> subprocess.CompletedProcess[str]:
-    return subprocess.run(
-        ["git", *args],
-        cwd=cwd,
-        check=check,
-        stdout=subprocess.PIPE,
-        stderr=subprocess.PIPE,
-        text=True,
-    )
+def _git(args: Sequence[str], cwd: Path) -> subprocess.CompletedProcess[str]:
+    environment = os.environ.copy()
+    environment.update({"LC_ALL": "C", "LANG": "C"})
+    try:
+        return subprocess.run(
+            ["git", *args], cwd=cwd, check=False, stdout=subprocess.PIPE,
+            stderr=subprocess.PIPE, text=True, env=environment,
+        )
+    except OSError as exc:
+        raise ManifestError(f"cannot run Git command {' '.join(args)!r}: {exc}") from exc
+
+
+def _git_required(args: Sequence[str], cwd: Path, purpose: str) -> subprocess.CompletedProcess[str]:
+    result = _git(args, cwd)
+    if result.returncode != 0:
+        detail = result.stderr.strip() or result.stdout.strip() or f"exit {result.returncode}"
+        raise ManifestError(f"Git {purpose} failed: {detail}")
+    return result
 
 
 def git_metadata(base_dir: Path | str) -> dict[str, Any]:
-    """Capture the containing repository and initialized submodule states."""
+    """Capture Git state; only a definite 'not a repository' means absent."""
 
-    base = Path(base_dir).resolve()
-    try:
-        root_result = _git(["rev-parse", "--show-toplevel"], base)
-    except (FileNotFoundError, subprocess.CalledProcessError):
-        return {"present": False, "root_revision": None, "dirty": None, "submodules": []}
+    base = _absolute_base(base_dir)
+    root_result = _git(["rev-parse", "--show-toplevel"], base)
+    if root_result.returncode != 0:
+        detail = (root_result.stderr + root_result.stdout).lower()
+        if "not a git repository" in detail:
+            return {"present": False, "root_revision": None, "dirty": None, "submodules": []}
+        message = root_result.stderr.strip() or root_result.stdout.strip() or f"exit {root_result.returncode}"
+        raise ManifestError(f"Git repository discovery failed: {message}")
 
-    root = Path(root_result.stdout.strip()).resolve()
-    revision_result = _git(["rev-parse", "--verify", "HEAD"], root, check=False)
-    revision = revision_result.stdout.strip() if revision_result.returncode == 0 else None
-    status = _git(["status", "--porcelain", "--untracked-files=normal"], root)
+    root_text = root_result.stdout.strip()
+    if not root_text:
+        raise ManifestError("Git repository discovery returned an empty root")
+    root = Path(root_text)
+    revision = _git_required(["rev-parse", "--verify", "HEAD"], root, "HEAD discovery").stdout.strip()
+    if not re.fullmatch(r"[0-9a-fA-F]{40,64}", revision):
+        raise ManifestError(f"Git returned an invalid HEAD revision: {revision!r}")
+    status = _git_required(
+        ["status", "--porcelain", "--untracked-files=normal"], root, "status"
+    )
+    submodule_status = _git_required(
+        ["submodule", "status", "--recursive"], root, "submodule discovery"
+    )
 
     submodules: list[dict[str, Any]] = []
-    submodule_status = _git(["submodule", "status", "--recursive"], root, check=False)
-    if submodule_status.returncode == 0:
-        for line in submodule_status.stdout.splitlines():
-            match = re.match(r"^(.)([0-9a-fA-F]{40,64}) (.+?)(?: \(.*\))?$", line)
-            if not match:
-                continue
-            marker, status_revision, relative = match.groups()
-            initialized = marker != "-"
+    for line in submodule_status.stdout.splitlines():
+        match = re.fullmatch(r"(.)([0-9a-fA-F]{40,64}) (.+?)(?: \(.*\))?", line)
+        if not match:
+            raise ManifestError(f"Git returned malformed submodule status: {line!r}")
+        marker, status_revision, relative = match.groups()
+        if marker not in (" ", "-", "+", "U"):
+            raise ManifestError(f"Git returned unknown submodule marker {marker!r}")
+        initialized = marker != "-"
+        parent_records = [
+            item for item in submodules
+            if item["initialized"] and relative.startswith(item["path"] + "/")
+        ]
+        parent = max(parent_records, key=lambda item: len(item["path"]), default=None)
+        index_root = root / parent["path"] if parent else root
+        index_path = relative[len(parent["path"]) + 1:] if parent else relative
+        index_result = _git_required(
+            ["ls-files", "--stage", "--", index_path], index_root, "submodule index lookup"
+        )
+        expected_revision = None
+        for index_line in index_result.stdout.splitlines():
+            fields = index_line.split(maxsplit=3)
+            if len(fields) >= 3 and fields[0] == "160000" and fields[2] == "0":
+                expected_revision = fields[1].lower()
+                break
+        if expected_revision is None:
+            raise ManifestError(f"Git index has no stage-0 gitlink for submodule {relative!r}")
 
-            # ``git submodule status`` reports the checked-out revision when it
-            # differs from the index. Read the gitlink itself for the expected
-            # revision, using an initialized parent for nested submodules.
-            parent_records = [
-                item for item in submodules
-                if item["initialized"] and relative.startswith(item["path"] + "/")
-            ]
-            parent = max(parent_records, key=lambda item: len(item["path"]), default=None)
-            index_root = root / parent["path"] if parent else root
-            index_path = relative[len(parent["path"]) + 1:] if parent else relative
-            index_result = _git(["ls-files", "--stage", "--", index_path], index_root, check=False)
-            expected_revision = status_revision.lower()
-            for index_line in index_result.stdout.splitlines():
-                fields = index_line.split(maxsplit=3)
-                if len(fields) >= 3 and fields[2] == "0":
-                    expected_revision = fields[1].lower()
-                    break
-
-            record: dict[str, Any] = {
-                "dirty": None,
-                "expected_revision": expected_revision,
-                "initialized": initialized,
-                "path": Path(relative).as_posix(),
-                "revision": None,
-            }
-            if initialized:
-                sub_root = root / relative
-                actual = _git(["rev-parse", "--verify", "HEAD"], sub_root, check=False)
-                sub_status = _git(
-                    ["status", "--porcelain", "--untracked-files=normal"], sub_root, check=False
-                )
-                record["revision"] = actual.stdout.strip() if actual.returncode == 0 else None
-                record["dirty"] = bool(sub_status.stdout.strip()) if sub_status.returncode == 0 else None
-            submodules.append(record)
+        record: dict[str, Any] = {
+            "dirty": None, "expected_revision": expected_revision,
+            "initialized": initialized, "path": Path(relative).as_posix(), "revision": None,
+        }
+        if initialized:
+            sub_root = root / relative
+            actual = _git_required(
+                ["rev-parse", "--verify", "HEAD"], sub_root, f"HEAD discovery for {relative}"
+            ).stdout.strip()
+            if not re.fullmatch(r"[0-9a-fA-F]{40,64}", actual):
+                raise ManifestError(f"Git returned an invalid revision for submodule {relative!r}")
+            sub_status = _git_required(
+                ["status", "--porcelain", "--untracked-files=normal"],
+                sub_root, f"status for {relative}",
+            )
+            record["revision"] = actual.lower()
+            record["dirty"] = bool(sub_status.stdout.strip())
+        submodules.append(record)
 
     return {
-        "dirty": bool(status.stdout.strip()),
-        "present": True,
-        "root_revision": revision,
+        "dirty": bool(status.stdout.strip()), "present": True,
+        "root_revision": revision.lower(),
         "submodules": sorted(submodules, key=lambda item: item["path"]),
     }
 
@@ -300,17 +429,26 @@ def build_manifest(
 ) -> dict[str, Any]:
     """Build a manifest. Compatibility data is isolated from variable metadata."""
 
-    sanitized_settings = {
-        key: REDACTED if _sensitive_key(key) else str(value)
-        for key, value in (settings or {}).items()
+    required_strings = {
+        "provider": provider, "model": model, "parser_version": parser_version,
+        "normalization_version": normalization_version,
     }
+    for label, value in required_strings.items():
+        if not isinstance(value, str) or not value:
+            raise ManifestError(f"{label} must be a non-empty string")
+    sanitized_settings: dict[str, str] = {}
+    for key, value in (settings or {}).items():
+        if not isinstance(key, str) or not key:
+            raise ManifestError("setting keys must be non-empty strings")
+        sanitized_settings[key] = REDACTED if _sensitive_key(key) else str(value)
     timestamps = {"created_at": _timestamp(created_at)}
     if started_at is not None:
         timestamps["run_started_at"] = _timestamp(started_at)
     if finished_at is not None:
         timestamps["run_finished_at"] = _timestamp(finished_at)
 
-    return {
+    git = git_metadata(base_dir)
+    manifest = {
         "compatibility": {
             "artifacts": {
                 "config": artifact_records(config, base_dir),
@@ -318,6 +456,7 @@ def build_manifest(
                 "ontologies": artifact_records(ontologies, base_dir),
                 "prompts": artifact_records(prompts, base_dir),
             },
+            "code": copy.deepcopy(git),
             "request": {
                 "model": model,
                 "provider": provider,
@@ -329,18 +468,21 @@ def build_manifest(
             },
         },
         "metadata": {
-            "git": git_metadata(base_dir),
+            "git": git,
             "runtime": runtime_metadata(),
             "timestamps": timestamps,
         },
         "outputs": artifact_records(outputs, base_dir),
         "schema_version": SCHEMA_VERSION,
     }
+    validate_structure(manifest, "generated manifest")
+    return manifest
 
 
 def write_manifest(path: Path | str, manifest: Mapping[str, Any]) -> None:
     destination = Path(path)
     destination.parent.mkdir(parents=True, exist_ok=True)
+    validate_structure(manifest, "manifest to write")
     serialized = stable_json(manifest)
     fd, temporary = tempfile.mkstemp(prefix=f".{destination.name}.", dir=destination.parent)
     try:
@@ -359,7 +501,7 @@ def load_manifest(path: Path | str) -> dict[str, Any]:
     try:
         with Path(path).open("r", encoding="utf-8") as stream:
             data = json.load(stream)
-    except (OSError, json.JSONDecodeError) as exc:
+    except (OSError, UnicodeError, json.JSONDecodeError) as exc:
         raise ManifestError(f"cannot read manifest {path}: {exc}") from exc
     if not isinstance(data, dict):
         raise ManifestError(f"manifest {path} must contain a JSON object")
@@ -367,38 +509,134 @@ def load_manifest(path: Path | str) -> dict[str, Any]:
     return data
 
 
+def _validate_git(value: Any, label: str) -> None:
+    if not isinstance(value, dict) or set(value) != {"present", "root_revision", "dirty", "submodules"}:
+        raise ManifestError(f"{label} has invalid Git metadata")
+    if not isinstance(value["present"], bool) or not isinstance(value["submodules"], list):
+        raise ManifestError(f"{label} has invalid Git metadata types")
+    if value["present"]:
+        if not isinstance(value["dirty"], bool) or not isinstance(value["root_revision"], str) or not re.fullmatch(
+            r"[0-9a-fA-F]{40,64}", value["root_revision"]
+        ):
+            raise ManifestError(f"{label} has invalid repository revision/state")
+    elif value["dirty"] is not None or value["root_revision"] is not None or value["submodules"]:
+        raise ManifestError(f"{label} absent repository metadata must use null state and no submodules")
+    previous = ""
+    for record in value["submodules"]:
+        expected_keys = {"dirty", "expected_revision", "initialized", "path", "revision"}
+        if not isinstance(record, dict) or set(record) != expected_keys:
+            raise ManifestError(f"{label} has invalid submodule metadata")
+        path = record["path"]
+        if not _safe_relative_path(path) or path <= previous:
+            raise ManifestError(f"{label} submodule paths must be safe, unique, and sorted")
+        previous = path
+        if not isinstance(record["initialized"], bool) or not isinstance(record["expected_revision"], str) or not re.fullmatch(
+            r"[0-9a-fA-F]{40,64}", record["expected_revision"]
+        ):
+            raise ManifestError(f"{label} has invalid submodule revision/state")
+        if record["initialized"]:
+            if not isinstance(record["dirty"], bool) or not isinstance(record["revision"], str) or not re.fullmatch(
+                r"[0-9a-fA-F]{40,64}", record["revision"]
+            ):
+                raise ManifestError(f"{label} has invalid initialized submodule state")
+        elif record["dirty"] is not None or record["revision"] is not None:
+            raise ManifestError(f"{label} has invalid uninitialized submodule state")
+
+
+def _safe_relative_path(value: Any) -> bool:
+    if not isinstance(value, str) or not value or "\\" in value:
+        return False
+    path = PurePosixPath(value)
+    return not path.is_absolute() and value == path.as_posix() and all(
+        part not in ("", ".", "..") for part in path.parts
+    )
+
+
+def _validate_records(records: Any, label: str, all_paths: set[str]) -> None:
+    if not isinstance(records, list):
+        raise ManifestError(f"{label} must be a list")
+    previous = ""
+    for record in records:
+        if not isinstance(record, dict) or set(record) != {"path", "sha256", "size"}:
+            raise ManifestError(f"{label} has an invalid artifact record")
+        path = record["path"]
+        if not _safe_relative_path(path) or _secret_bearing_path(Path(path)):
+            raise ManifestError(f"{label} contains an unsafe artifact path {path!r}")
+        if path <= previous:
+            raise ManifestError(f"{label} artifact paths must be unique and sorted")
+        if path in all_paths:
+            raise ManifestError(f"{label} duplicates artifact path {path!r}")
+        previous = path
+        all_paths.add(path)
+        if not isinstance(record["sha256"], str) or not re.fullmatch(r"[0-9a-f]{64}", record["sha256"]):
+            raise ManifestError(f"{label} has an invalid SHA-256 for {path!r}")
+        if isinstance(record["size"], bool) or not isinstance(record["size"], int) or record["size"] < 0:
+            raise ManifestError(f"{label} has an invalid size for {path!r}")
+
+
 def validate_structure(data: Mapping[str, Any], label: str = "manifest") -> None:
-    if data.get("schema_version") != SCHEMA_VERSION:
+    if not isinstance(data, dict) or set(data) != {"schema_version", "compatibility", "metadata", "outputs"}:
+        raise ManifestError(f"{label} must contain exactly schema_version, compatibility, metadata, and outputs")
+    if type(data.get("schema_version")) is not int or data.get("schema_version") != SCHEMA_VERSION:
         raise ManifestError(
-            f"{label} has unsupported schema_version {data.get('schema_version')!r}; "
-            f"expected {SCHEMA_VERSION}"
+            f"{label} has unsupported schema_version {data.get('schema_version')!r}; expected {SCHEMA_VERSION}"
         )
-    compatibility = data.get("compatibility")
-    if not isinstance(compatibility, dict):
-        raise ManifestError(f"{label} is missing compatibility data")
-    artifacts = compatibility.get("artifacts")
-    if not isinstance(artifacts, dict):
-        raise ManifestError(f"{label} is missing compatibility.artifacts")
+    compatibility = data["compatibility"]
+    if not isinstance(compatibility, dict) or set(compatibility) != {"artifacts", "code", "request", "versions"}:
+        raise ManifestError(f"{label} has invalid compatibility data")
+    artifacts = compatibility["artifacts"]
+    if not isinstance(artifacts, dict) or set(artifacts) != set(ARTIFACT_KINDS):
+        raise ManifestError(f"{label} compatibility.artifacts must contain only {', '.join(ARTIFACT_KINDS)}")
+    all_paths: set[str] = set()
     for kind in ARTIFACT_KINDS:
-        records = artifacts.get(kind)
-        if not isinstance(records, list):
-            raise ManifestError(f"{label} is missing compatibility.artifacts.{kind}")
-        previous = ""
-        for record in records:
-            if not isinstance(record, dict) or not all(key in record for key in ("path", "sha256", "size")):
-                raise ManifestError(f"{label} has an invalid {kind} artifact record")
-            if not isinstance(record["path"], str) or record["path"] <= previous:
-                raise ManifestError(f"{label} {kind} artifact paths must be unique and sorted")
-            previous = record["path"]
-    request = compatibility.get("request")
-    versions = compatibility.get("versions")
-    if not isinstance(request, dict) or not isinstance(request.get("settings"), dict):
-        raise ManifestError(f"{label} is missing compatibility.request settings")
-    if not isinstance(versions, dict):
-        raise ManifestError(f"{label} is missing compatibility.versions")
-    for key, value in request["settings"].items():
-        if _sensitive_key(str(key)) and value != REDACTED:
+        _validate_records(artifacts[kind], f"{label} compatibility.artifacts.{kind}", all_paths)
+    _validate_records(data["outputs"], f"{label} outputs", all_paths)
+
+    request = compatibility["request"]
+    if not isinstance(request, dict) or set(request) != {"model", "provider", "settings"}:
+        raise ManifestError(f"{label} has invalid compatibility.request")
+    for field in ("provider", "model"):
+        if not isinstance(request[field], str) or not request[field]:
+            raise ManifestError(f"{label} compatibility.request.{field} must be a non-empty string")
+    settings = request["settings"]
+    if not isinstance(settings, dict):
+        raise ManifestError(f"{label} compatibility.request.settings must be an object")
+    for key, value in settings.items():
+        if not isinstance(key, str) or not key or not isinstance(value, str):
+            raise ManifestError(f"{label} settings keys and values must be strings")
+        if _sensitive_key(key) and value != REDACTED:
             raise ManifestError(f"{label} contains an unredacted sensitive setting {key!r}")
+
+    versions = compatibility["versions"]
+    if not isinstance(versions, dict) or set(versions) != {"normalization", "parser"}:
+        raise ManifestError(f"{label} has invalid compatibility.versions")
+    for field in ("normalization", "parser"):
+        if not isinstance(versions[field], str) or not versions[field]:
+            raise ManifestError(f"{label} compatibility.versions.{field} must be a non-empty string")
+    _validate_git(compatibility["code"], f"{label} compatibility.code")
+
+    metadata = data["metadata"]
+    if not isinstance(metadata, dict) or set(metadata) != {"git", "runtime", "timestamps"}:
+        raise ManifestError(f"{label} has invalid metadata")
+    _validate_git(metadata["git"], f"{label} metadata.git")
+    if metadata["git"] != compatibility["code"]:
+        raise ManifestError(f"{label} compatibility.code and metadata.git must match")
+    runtime = metadata["runtime"]
+    if not isinstance(runtime, dict) or set(runtime) != {"platform", "python"}:
+        raise ManifestError(f"{label} has invalid metadata.runtime")
+    expected_runtime = {"platform": {"machine", "release", "system"}, "python": {"implementation", "version"}}
+    for group, keys in expected_runtime.items():
+        if not isinstance(runtime[group], dict) or set(runtime[group]) != keys or not all(
+            isinstance(value, str) for value in runtime[group].values()
+        ):
+            raise ManifestError(f"{label} has invalid metadata.runtime.{group}")
+    timestamps = metadata["timestamps"]
+    allowed_timestamps = {"created_at", "run_started_at", "run_finished_at"}
+    if not isinstance(timestamps, dict) or "created_at" not in timestamps or not set(timestamps) <= allowed_timestamps:
+        raise ManifestError(f"{label} has invalid metadata.timestamps")
+    for key, value in timestamps.items():
+        if not isinstance(value, str) or _timestamp(value) != value:
+            raise ManifestError(f"{label} metadata.timestamps.{key} is not canonical UTC ISO-8601")
 
 
 def _diff_values(reference: Any, candidate: Any, path: str, differences: list[str]) -> None:
@@ -468,7 +706,7 @@ def validate_current_files(
 ) -> list[str]:
     """Re-hash compatibility artifacts (and optionally outputs) at their recorded paths."""
 
-    base = Path(base_dir).resolve()
+    base = _absolute_base(base_dir)
     groups: list[tuple[str, Any]] = list(manifest["compatibility"]["artifacts"].items())
     if check_outputs:
         groups.append(("outputs", manifest.get("outputs", [])))
@@ -480,12 +718,12 @@ def validate_current_files(
                 path, normalized = _under_base(base / relative, base)
                 if normalized != record["path"]:
                     raise ManifestError("path is not normalized")
-                if not path.is_file():
-                    differences.append(f"{kind} {record['path']}: file is missing")
-                    continue
                 checksum, size = sha256_file(path)
             except (ManifestError, OSError) as exc:
-                differences.append(f"{kind} {record['path']}: cannot validate ({exc})")
+                if "No such file or directory" in str(exc):
+                    differences.append(f"{kind} {record['path']}: file is missing")
+                else:
+                    differences.append(f"{kind} {record['path']}: cannot validate ({exc})")
                 continue
             if checksum != record["sha256"]:
                 differences.append(
@@ -499,17 +737,58 @@ def validate_current_files(
     return differences
 
 
-def _print_result(differences: Sequence[str]) -> int:
+def _print_result(
+    differences: Sequence[str], *, success: str = "compatible", failure: str = "incompatible"
+) -> int:
     if not differences:
-        print("compatible")
+        print(success)
         return 0
-    print(f"incompatible: {len(differences)} mismatch(es)")
+    print(f"{failure}: {len(differences)} mismatch(es)")
     for difference in differences:
         print(f"- {difference}")
     return 1
 
 
+def _glob_variants(pattern: str) -> set[str]:
+    variants = {pattern}
+    while True:
+        expanded = set(variants)
+        for item in variants:
+            if "**/" in item:
+                expanded.add(item.replace("**/", "", 1))
+        if expanded == variants:
+            return variants
+        variants = expanded
+
+
+def _destination_is_selected(destination: Path | str, specs: Iterable[str], base_dir: Path | str) -> bool:
+    base = _absolute_base(base_dir)
+    raw_destination = Path(destination)
+    absolute = raw_destination.parent.resolve() / raw_destination.name
+    try:
+        relative = absolute.relative_to(base).as_posix()
+    except ValueError:
+        return False
+    for spec in specs:
+        raw = Path(spec)
+        pattern_path = raw if raw.is_absolute() else base / raw
+        pattern = Path(os.path.abspath(pattern_path))
+        try:
+            relative_pattern = pattern.relative_to(base).as_posix()
+        except ValueError:
+            continue
+        if glob.has_magic(str(pattern_path)):
+            if any(PurePosixPath(relative).match(item) for item in _glob_variants(relative_pattern)):
+                return True
+        elif absolute == pattern or (pattern.is_dir() and pattern in absolute.parents):
+            return True
+    return False
+
+
 def _create_command(args: argparse.Namespace) -> int:
+    all_specs = [*args.input, *args.config, *args.prompt, *args.ontology, *args.output]
+    if _destination_is_selected(args.manifest, all_specs, args.base_dir):
+        raise ManifestError("manifest destination is included in a selected artifact specification")
     manifest = build_manifest(
         base_dir=args.base_dir,
         inputs=args.input,
@@ -527,6 +806,13 @@ def _create_command(args: argparse.Namespace) -> int:
         finished_at=args.finished_at,
     )
     write_manifest(args.manifest, manifest)
+    # A manifest inside the repository may itself change dirty state. Capture
+    # the post-write state and rewrite once; that state is then stable.
+    post_write_git = git_metadata(args.base_dir)
+    if post_write_git != manifest["compatibility"]["code"]:
+        manifest["compatibility"]["code"] = copy.deepcopy(post_write_git)
+        manifest["metadata"]["git"] = post_write_git
+        write_manifest(args.manifest, manifest)
     print(f"wrote {args.manifest}")
     return 0
 
@@ -540,20 +826,39 @@ def _compare_command(args: argparse.Namespace) -> int:
 def _validate_command(args: argparse.Namespace) -> int:
     manifest = load_manifest(args.manifest)
     differences = validate_current_files(manifest, args.base_dir, check_outputs=args.check_outputs)
+    settings_supplied = args.setting is not None or args.no_settings
+    proposed = (
+        args.provider, args.model, settings_supplied, args.parser_version, args.normalization_version
+    )
+    supplied = [value is not None and value is not False for value in proposed]
+    if any(supplied) and not all(supplied):
+        raise ManifestError(
+            "resume compatibility requires --provider, --model, either --setting (repeat as needed) "
+            "or --no-settings, --parser-version, and --normalization-version together"
+        )
+    if not any(supplied):
+        return _print_result(
+            differences, success="file integrity valid (resume compatibility not checked)",
+            failure="file integrity mismatch",
+        )
 
+    for label, value in (
+        ("provider", args.provider), ("model", args.model),
+        ("parser version", args.parser_version),
+        ("normalization version", args.normalization_version),
+    ):
+        if not value:
+            raise ManifestError(f"proposed {label} must be a non-empty string")
     current = copy.deepcopy(manifest)
     request = current["compatibility"]["request"]
     versions = current["compatibility"]["versions"]
-    if args.provider is not None:
-        request["provider"] = args.provider
-    if args.model is not None:
-        request["model"] = args.model
-    if args.setting is not None:
-        request["settings"] = parse_settings(args.setting)
-    if args.parser_version is not None:
-        versions["parser"] = args.parser_version
-    if args.normalization_version is not None:
-        versions["normalization"] = args.normalization_version
+    request["provider"] = args.provider
+    request["model"] = args.model
+    request["settings"] = parse_settings(args.setting or [])
+    versions["parser"] = args.parser_version
+    versions["normalization"] = args.normalization_version
+    current_git = git_metadata(args.base_dir)
+    current["compatibility"]["code"] = current_git
     differences.extend(compare_compatibility(manifest, current))
     return _print_result(differences)
 
@@ -591,7 +896,9 @@ def build_parser() -> argparse.ArgumentParser:
     validate.add_argument("--check-outputs", action="store_true")
     validate.add_argument("--provider")
     validate.add_argument("--model")
-    validate.add_argument("--setting", action="append", metavar="KEY=VALUE")
+    settings_group = validate.add_mutually_exclusive_group()
+    settings_group.add_argument("--setting", action="append", metavar="KEY=VALUE")
+    settings_group.add_argument("--no-settings", action="store_true", help="proposed request has no settings")
     validate.add_argument("--parser-version")
     validate.add_argument("--normalization-version")
     validate.set_defaults(func=_validate_command)
