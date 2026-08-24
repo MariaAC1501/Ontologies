@@ -324,6 +324,7 @@ ontologies-cbr query-one `
 | `pipeline/run_extraction.sh` | macOS/Linux wrapper script that runs OntoCast on a PDF |
 | `pipeline/run_extraction.ps1` | Windows PowerShell wrapper script that runs OntoCast on a PDF |
 | `pipeline/facts_to_csv.py` | Standalone bridge that converts existing RDF/Turtle facts to CBR-compatible CSV |
+| `pipeline/run_manifest.py` | Standalone CLI for deterministic extraction manifests and resume-drift checks ([usage](pipeline/RUN_MANIFEST.md)) |
 | `pipeline/SCHEMA_MAPPING.md` | Detailed documentation of the OPMAD field mapping |
 | `pipeline/INTEGRATION_RESULTS.md` | End-to-end validation procedure and historical evidence |
 
