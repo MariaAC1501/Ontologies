@@ -9,6 +9,7 @@
 \usepackage{url}
 \usepackage{listings}
 \usepackage{float}
+\usepackage{xspace}
 
 \lstset{
   basicstyle=\ttfamily\scriptsize,
@@ -17,19 +18,21 @@
   frame=single
 }
 
-\newcommand{\opmad}{OPMAD}
-\newcommand{\todo}[1]{\textbf{[TODO: #1]}}
+\newcommand{\opmad}{OPMAD\xspace}
+% Bold operational text is a working-draft note to remove or recast before submission.
+\newcommand{\operational}[1]{\textbf{#1}}
+\newcommand{\todo}[1]{\operational{[TODO: #1]}}
 
 \title{Mapping Predictive-Maintenance Model-Selection Evidence with a Validated Ontology-Guided LLM Workflow}
 
-\author{Author~Name(s)\thanks{Working draft. Author details, funding, and affiliations will be added after a target venue is selected.}}
+\author{Author~Name(s)\thanks{\operational{Working draft. Author details, funding, and affiliations will be added after a target venue is selected.}}}
 
 \begin{document}
 
 \maketitle
 
 \begin{abstract}
-Predictive-maintenance research reports a large and heterogeneous set of diagnostic and prognostic models, assets, and condition-data configurations. This systematic mapping study will characterize model-selection patterns in 2025--2026 English-language, open-access journal and conference articles indexed in Scopus. It will use a large language model to instantiate the existing Ontology for Predictive Maintenance Architecture and Design (\opmad) from complete article texts, then validate the workflow against independent expert annotation. The study evaluates workflow reliability; it does not claim that ontology guidance improves extraction relative to a non-ontological baseline. Final results are pending corpus construction, annotation, and validation.
+Predictive-maintenance research reports a large and heterogeneous set of diagnostic and prognostic models, assets, and condition-data configurations. This systematic mapping study characterizes model-selection patterns in 2025--2026 English-language, open-access journal and conference articles indexed in Scopus. It uses a large language model to instantiate the existing Ontology for Predictive Maintenance Architecture and Design (\opmad) from complete article texts, then validates the workflow against independent expert annotation. The study evaluates workflow reliability; it does not claim that ontology guidance improves extraction relative to a non-ontological baseline. \operational{Final results are pending corpus construction, annotation, and validation.}
 \end{abstract}
 
 \begin{IEEEkeywords}
@@ -39,21 +42,48 @@ predictive maintenance, systematic mapping study, ontology-guided extraction, la
 \section{Introduction}
 \label{sec:introduction}
 
-\todo{Motivate the model-selection problem in predictive maintenance and the difficulty of synthesizing heterogeneous full-text evidence.}
+Predictive-maintenance studies describe heterogeneous combinations of diagnostic and prognostic functions, maintainable systems, condition data, and models. This heterogeneity makes it difficult to reuse published evidence when selecting models for a new maintenance problem. Rather than rank models across incomparable datasets, metrics, and experiments, this study maps the reported problem--solution configurations.
 
-The existing \opmad ontology was developed to represent the function, maintainable item, condition data, model, configuration, synchronization, performance indicator, and documentary source associated with a predictive-maintenance case~\cite{MonteroJimenez2021OPMADCBR}. This study uses \opmad unchanged: it populates instances rather than proposing ontology classes or properties. OntoCast is the current extraction-system basis~\cite{Belikov2025OntoCast}.
+The scientific objective is to map reusable model-selection knowledge from recent predictive-maintenance literature. Its methodological contribution is a human-validated workflow that uses an LLM to instantiate the existing \opmad ontology from complete article texts. \opmad represents the function, maintainable item, condition data, model, configuration, synchronization, performance indicator, and documentary source associated with a predictive-maintenance case~\cite{MonteroJimenez2021OPMADCBR}. The study populates \opmad instances rather than proposing ontology classes or properties; OntoCast is the current extraction-system basis~\cite{Belikov2025OntoCast}.
+
+The paper does not attempt to review every aspect of predictive maintenance or extend \opmad. Its scope remains within \opmad's competency questions: predictive-maintenance functions, maintainable systems, condition data, models, model types and configurations, synchronization, performance indicators, and documentary sources.
+
+The combined contribution is:
+\begin{enumerate}
+  \item a systematic evidence map of model-selection patterns in open-access predictive-maintenance diagnostics and prognostics;
+  \item a human-validated method for extracting \opmad cases from complete scientific articles with an LLM; and
+  \item an evidence-linked, reproducible population of the existing \opmad ontology to support future retrieval and case-based reasoning.
+\end{enumerate}
+The ontology itself is not a new contribution. The novelty lies in the validated population workflow, the scale and traceability of the resulting case base, and findings derived only from fields shown to be reliable.
+
+\operational{Working-manuscript constraint: this draft uses the generic IEEE journal \LaTeX{} template and a ten-page target; no target venue has yet been selected.}
 
 \section{Review Scope and Research Questions}
 \label{sec:scope}
 
 \subsection{Scope}
 
-The review covers English-language, open-access full-text journal and conference articles indexed in Scopus, published in 2025--2026. Eligible studies must report at least one implemented model for an \opmad-representable diagnostic or prognostic function on an engineered maintainable item. The review is a systematic mapping study, not an effectiveness review or meta-analysis.
+The target corpus comprises English-language, open-access full-text journal and conference articles indexed in Scopus and published in 2025--2026. Eligible studies report at least one implemented model for an \opmad-representable diagnostic or prognostic function on an engineered maintainable item. The study is a systematic mapping study, not an effectiveness review or meta-analysis: it can characterize the solution space and identify associations or evidence gaps, but it cannot determine a universally best model because \opmad does not represent enough experimental context to make performance values comparable across studies.
+
+Claims are explicitly limited to:
+\begin{itemize}
+  \item Scopus-indexed literature retrieved through a documented search;
+  \item the 2025--2026 publication period and the 25 August 2026 search-date cutoff;
+  \item English-language, open-access journal and conference articles; and
+  \item empirical diagnostic and prognostic applications expressible using unchanged \opmad terms.
+\end{itemize}
+Because the search cutoff precedes the end of 2026, the incomplete 2026 portion is not interpreted as an annual trend.
+
+\subsection{Overarching Research Question}
+
+\begin{quote}
+\emph{What model-selection patterns are reported in 2025--2026 English-language, open-access predictive-maintenance journal and conference articles indexed in Scopus for different diagnostic and prognostic functions, maintainable systems, and available condition data, and how reliably can an \opmad-guided LLM workflow recover this knowledge from their full texts?}
+\end{quote}
 
 \subsection{Research Questions}
 
 \begin{table*}[!t]
-\caption{Working research questions.}
+\caption{Research questions.}
 \label{tab:research-questions}
 \centering
 \begin{tabularx}{\textwidth}{@{}lX@{}}
@@ -62,11 +92,19 @@ The review covers English-language, open-access full-text journal and conference
 \midrule
 PM-RQ1 & On which maintainable systems, and for which diagnostic or prognostic functions, have predictive-maintenance models been implemented? \\
 PM-RQ2 & Given the predictive-maintenance function, maintainable-item type, and available condition data, which model types and specific models are used? \\
-PM-RQ3 & How are predictive-maintenance solutions configured and evaluated in terms of single- versus multi-model approaches, online/offline synchronization, and reported performance indicators? \\
+PM-RQ3 & How are predictive-maintenance solutions configured and evaluated in terms of single- versus multi-model approaches, online/off-line synchronization, and reported performance indicators? \\
 M-RQ1 & How accurately and efficiently can an \opmad-guided LLM workflow instantiate predictive-maintenance cases from full-text articles compared with independent expert annotation? \\
 \bottomrule
 \end{tabularx}
 \end{table*}
+
+\subsection{Analytical Focus}
+
+PM-RQ1 maps the distribution and co-occurrence of \opmad predictive-maintenance functions, maintainable items and item types, publication years and sources, and the number of distinct cases represented by each article. PM-RQ2 examines relationships among function, maintainable item and item type, input record or data form, data variables, specific models, and the existing \opmad model-type categories: data-driven, physics-based, knowledge-based, and their combinations. This question directly addresses \opmad's intended use in representing previous cases that can inform model selection for new predictive-maintenance systems.
+
+PM-RQ3 covers single- versus multi-model configurations, combinations of the existing model-type categories, online, off-line, or both synchronization modes, and reported performance indicators and values. Missing or unclear reporting is analyzed only when it can be distinguished from extraction failure. Detailed parallel, serial, or embedded model architectures are not inferred unless the fixed \opmad version represents them.
+
+M-RQ1 evaluates \opmad coverage; entity accuracy for assets, variables, models, indicators, and documentary metadata; relation accuracy for the correct linkage of each model to its function, asset, inputs, configuration, and performance indicator; case-boundary accuracy; normalization accuracy; evidence grounding and hallucination rates; error in corpus-level prevalence estimates; and human annotation and adjudication effort relative to a fully manual review. It evaluates workflow reliability against an independent expert gold standard, not whether ontology guidance outperforms a non-ontological alternative. Flat-schema ablations and title/abstract-only comparisons are outside the study scope.
 
 \section{Methods}
 \label{sec:methods}
@@ -76,13 +114,15 @@ M-RQ1 & How accurately and efficiently can an \opmad-guided LLM workflow instant
 
 \subsubsection{Information source and search limits}
 
-Scopus is the sole information source, accessed through its API. The final primary search (S1), reproduced in Appendix~\ref{app:scopus-search}, is the union of a maintenance/prognostic title-anchor query (S1a) and a diagnostic/condition title-anchor query (S1b). Both queries limit retrieval to English-language, open-access journal articles (document type \texttt{ar}) and conference papers (document type \texttt{cp}) published in 2025--2026. The search-date cutoff was 25 August 2026; the protocol archives the exact API execution times, complete executed queries, and applied filters.
+Scopus is the sole information source, accessed through its API using the same query syntax as the Scopus web interface. The final primary search (S1), reproduced in Appendix~\ref{app:scopus-search}, is the union of a maintenance/prognostic title-anchor query (S1a) and a diagnostic/condition title-anchor query (S1b). Both queries limit retrieval to English-language, open-access journal articles (document type \texttt{ar}) and conference papers (document type \texttt{cp}) published in 2025--2026. The search-date cutoff was 25 August 2026.
 
-No sentinel set was used because the candidate literature is intentionally broad. The final reconciled S1a and S1b exports contained 1,219 and 1,642 records, respectively. Deduplication of their 2,861 source records by Scopus Paper ID and DOI produced 2,770 pre-screening candidate records. Eligibility remains determined through documented title/abstract and full-text screening, not by requiring a noise-free query.
+A pilot Scopus retrieval characterized residual out-of-field retrieval and the resulting screening workload. No sentinel set was used because the candidate literature is intentionally broad. The search strings are aligned with the diagnostic/prognostic scope without being limited to exact \opmad labels. The final reconciled S1a and S1b exports contained 1,219 and 1,642 records, respectively. Deduplication of their 2,861 source records by Scopus Paper ID and DOI produced 2,770 pre-screening candidate records. Eligibility is determined through documented title/abstract and full-text screening, not by requiring a noise-free query.
+
+\operational{Operational recordkeeping: archive exact API execution times, complete executed queries, filters, deduplication decisions, screening decisions, and exclusion reasons; replace the current project-local archive path with a persistent release location before submission. A formal PRESS-style external search-strategy review has been discarded.}
 
 \subsubsection{Eligibility criteria}
 
-The following criteria will be frozen before screening. A record will be included when it:
+The protocol specifies that a record is included when it:
 \begin{itemize}
   \item is an English-language Scopus journal article or conference paper published in 2025--2026 and has an open-access full text that matches the bibliographic record;
   \item reports an implemented and evaluated predictive-maintenance model or coordinated model set, using data, simulation, laboratory, or operational evidence;
@@ -90,34 +130,69 @@ The following criteria will be frozen before screening. A record will be include
   \item addresses at least one existing \opmad diagnostic or prognostic function: fault detection, fault feature extraction, fault identification, health assessment, health modelling, one- or multiple-step future-state forecasting, or remaining useful life estimation.
 \end{itemize}
 
-A record will be excluded when it is a review, editorial, book chapter, duplicate, or lacks a usable matching open-access full text. It will also be excluded when its primary target is a human patient or clinical outcome, biological organism or process, software or IT service, business or social outcome, natural system, or civil/geotechnical infrastructure rather than an industrial or electromechanical asset. Finally, records describing only generic AI, control, optimization, maintenance scheduling, inventory, or conceptual architectures without an implemented diagnostic or prognostic model will be excluded.
+A record is excluded when it is a review, editorial, book chapter, duplicate, or lacks a usable matching open-access full text. It is also excluded when its primary target is a human patient or clinical outcome, biological organism or process, software or IT service, business or social outcome, natural system, or civil/geotechnical infrastructure rather than an industrial or electromechanical asset. Finally, records describing only generic AI, control, optimization, maintenance scheduling, inventory, or conceptual architectures without an implemented diagnostic or prognostic model are excluded.
 
-Search reporting will follow PRISMA-S~\cite{Rethlefsen2021PRISMAS}; study selection will be shown in a PRISMA 2020 flow diagram~\cite{Page2021PRISMA}. A final metadata-only OA-restriction sensitivity analysis is reported in Appendix~\ref{app:oa-sensitivity}; it does not determine final study inclusion.
+Search reporting follows PRISMA-S~\cite{Rethlefsen2021PRISMAS}; study selection will be shown in a PRISMA 2020 flow diagram~\cite{Page2021PRISMA}. The metadata-only OA-restriction sensitivity analysis in Appendix~\ref{app:oa-sensitivity} does not determine final study inclusion.
 
-\todo{Specify the screening procedure, complete the PRISMA-S search report, and insert the PRISMA 2020 flow diagram after title/abstract and full-text screening.}
+\operational{Before final screening, timestamp the protocol; define title/abstract and full-text procedures, conflict resolution, and exclusion-reason rules; retrieve and audit every included PDF for title/DOI matching and text/OCR quality; then complete the PRISMA-S report and PRISMA 2020 flow diagram.}
 
 \subsection{OPMAD Case Representation}
 \label{sec:case-representation}
 
-The unit of analysis is an \opmad predictive-maintenance case rather than necessarily an article. A case binds a documentary source, maintainable item, predictive-maintenance function, model or coordinated model set, and corresponding condition data. Model type, model configuration, synchronization, performance indicator, and performance value are included when reported.
+\opmad remains immutable: the study populates its ABox rather than modifying its TBox. Table~\ref{tab:opmad-operationalization} maps the review information to existing \opmad terms.
 
-\todo{Describe the fixed authoritative OPMAD artifact, extraction profile, operational definitions, and treatment of unreported, unclear, not-applicable, and extraction-failure states.}
+\begin{table*}[!t]
+\caption{Review information and existing \opmad targets.}
+\label{tab:opmad-operationalization}
+\centering
+\small
+\begin{tabularx}{\textwidth}{@{}p{0.31\textwidth}X@{}}
+\toprule
+\textbf{Review information} & \textbf{Existing \opmad target} \\
+\midrule
+Predictive-maintenance purpose & \texttt{Predictive\_maintenance\_module\_function} and its existing subclasses \\
+Maintained system & \texttt{Maintainable\_item} and \texttt{item\_type} \\
+Input record and variables & \texttt{maintainable\_item\_record} and \texttt{Data\_variable} \\
+Specific solution & \texttt{Predictive\_maintenance\_model} \\
+Broad model family & \texttt{Model\_type} \\
+Single/multi-model arrangement & \texttt{Model\_configuration} \\
+Online/off-line operation & \texttt{Module\_synchronization} \\
+Evaluation measure and result & \texttt{Performance\_indicator} and \texttt{Performance\_value} \\
+Documentary source & \texttt{Predictive\_Maintenance\_Article}, \texttt{Article\_title}, \texttt{Article\_identifier}, and \texttt{Publication\_year} \\
+\bottomrule
+\end{tabularx}
+\end{table*}
+
+Specific model and maintainable-item names are represented as labelled instances rather than newly invented ontology classes. No new predictive-maintenance classes, properties, or formal taxonomy are introduced. Supporting quotations, page/section locations, extraction status, confidence, and human-adjudication status are retained in a sidecar annotation dataset or separate provenance layer. Missingness and review-workflow metadata are not encoded as new \opmad concepts.
+
+The unit of analysis is an \opmad predictive-maintenance case, not necessarily an article. Each case binds at least one documentary source, one maintainable item, one predictive-maintenance function, the model or coordinated model set fulfilling that function, and the corresponding condition data. Model configuration, synchronization, model type, performance indicator, and performance value are associated attributes when reported. An article can therefore yield zero, one, or several cases.
+
+\operational{Before extraction, freeze the authoritative \opmad source artifact by version and checksum; select only existing terms needed for its competency questions and mechanically verify the extraction profile; and document operational definitions for every field and relation. Unreported, unclear, not-applicable, and extraction-failure states must remain outside \opmad.}
 
 \subsection{LLM-Assisted Extraction and Provenance}
 \label{sec:extraction}
 
-The final run will process complete article texts under a frozen configuration: ontology profile, LLM and provider, prompts, parser and OCR path, sectioning/chunking policy, normalization rules, retry policy, and software revision. Each analytical assertion will retain a link to its supporting text span.
+The final workflow processes complete article texts and instantiates \opmad cases under a frozen configuration. That configuration covers the \opmad version and extraction profile, LLM provider and exact model, prompts and decoding parameters, document parser and OCR path, sectioning and chunking policy, retry and failure policy, normalization rules, and software revisions. Each analytical assertion retains a link to its supporting text span. Outputs remain isolated by article until corpus-level cases are constructed.
 
-\todo{Describe the final pipeline and machine-readable run manifest.}
+\operational{Existing bulk-run artifacts are development experiments only. The publication corpus and final extraction outputs must be regenerated under the frozen protocol, without mixing development runs with final-study outputs. Insert the final pipeline description and machine-readable run manifest after configuration freeze.}
 
 \subsection{Human Gold Standard and Validation}
 \label{sec:validation}
 
-A development sample will establish the annotation guide and workflow. A separate, stratified held-out sample will be independently annotated and adjudicated. Evaluation will include field- and relation-level precision, recall, F1, controlled-value accuracy, evidence-grounding rate, complete-case accuracy, and error in aggregate prevalence estimates.
+A development sample establishes the annotation guide, prompts, and pipeline. A separate held-out sample is stratified by function, asset type, model type/configuration, article complexity, publication year, and PDF/OCR quality. Annotators record complete cases and supporting evidence rather than isolated labels. Independent double annotation and expert adjudication are used where feasible, and human agreement is measured before evaluating the LLM workflow.
 
-The methodological objective is to establish whether the workflow is reliable enough for assisted evidence synthesis. The study does not include an ontology-benefit ablation or a title/abstract-only comparison.
+Evaluation reports field- and case-level performance with uncertainty intervals. Metrics include precision, recall, F1, multi-label agreement, exact-match accuracy for controlled values, relation-level F1, evidence-entailment rate, complete-case accuracy, and absolute error in aggregate corpus estimates. It also distinguishes hallucinated, conflated, mislinked, and omitted facts, and measures the human annotation and adjudication effort relative to a fully manual review.
 
-\todo{Specify sample size, stratification, inter-annotator agreement, acceptance criteria, confidence intervals, and adjudication process.}
+Acceptance criteria are prespecified before held-out evaluation. A domain result is reported from automatic extraction only when its required fields meet those criteria; otherwise, affected fields are manually completed, clearly qualified, or excluded from the corresponding predictive-maintenance question. The methodological objective is to establish whether the workflow is reliable enough for assisted evidence synthesis, not to conduct an ontology-benefit ablation or a title/abstract-only comparison.
+
+\operational{Before held-out evaluation, set the sample size, field-specific acceptance criteria, confidence-interval/resampling procedure, and detailed adjudication process.}
+
+\subsection{Predictive-Maintenance Synthesis}
+\label{sec:synthesis}
+
+The synthesis reports study and case counts separately. It summarizes systems, functions, condition data, models, and model types; analyzes cross-tabulations and association patterns among problem and solution attributes; compares single- and multi-model use across functions and assets; and summarizes synchronization and performance-indicator reporting. Sparse combinations are interpreted only after checking extraction recall and corpus coverage. Sensitivity analyses address extraction error and the open-access corpus boundary.
+
+The synthesis may identify approaches that are common or uncommon in particular contexts, but it does not rank models by effectiveness across incomparable datasets, metrics, and experiments.
 
 \section{Results}
 \label{sec:results}
@@ -126,7 +201,7 @@ The methodological objective is to establish whether the workflow is reliable en
 \todo{Insert the PRISMA 2020 flow diagram, corpus counts, sources, publication-year coverage, and full-text quality results.}
 
 \subsection{Workflow Validation}
-\todo{Insert gold-standard agreement, extraction metrics, error taxonomy, evidence-grounding results, and aggregate-estimate error.}
+\todo{Insert human-agreement results, gold-standard extraction metrics, error taxonomy, evidence-grounding results, and aggregate-estimate error.}
 
 \subsection{Predictive-Maintenance Evidence Map}
 \todo{Report study and case counts separately, then answer PM-RQ1 through PM-RQ3 using only validated fields.}
@@ -134,21 +209,21 @@ The methodological objective is to establish whether the workflow is reliable en
 \section{Discussion}
 \label{sec:discussion}
 
-\todo{Interpret model-selection patterns without treating heterogeneous reported performance values as a common effectiveness scale. Discuss OPMAD scope, open-access restriction, Scopus-only coverage, PDF parsing, and remaining LLM error.}
+\todo{Interpret model-selection patterns without treating heterogeneous reported performance values as a common effectiveness scale. Discuss \opmad scope, open-access restriction, Scopus-only coverage, PDF parsing, and remaining LLM error.}
 
 \section{Conclusion}
 \label{sec:conclusion}
 
-\todo{Summarize the validated workflow, the evidence map, and the reusable evidence-linked OPMAD case base.}
+\todo{Summarize the validated workflow, the evidence map, and the reusable evidence-linked \opmad case base.}
 
 \section*{Data and Code Availability}
-\todo{State the repository/release location for search strings, screening decisions where permitted, corpus metadata, prompts, code, annotation guide, derived cases, evidence locations, and evaluation outputs. Do not redistribute PDFs unless their licenses permit it.}
+\todo{State the repository/release location for search strings, screening decisions where permitted, corpus metadata, prompts, code, annotation guide, derived cases, evidence locations, and evaluation outputs. Do not redistribute PDFs unless their individual licenses permit it.}
 
 \appendices
 \section{Final Scopus Search Strategy}
 \label{app:scopus-search}
 
-The final S1 strategy is the deduplicated union of S1a and S1b. Both strings use native Scopus API filters and the eligibility criteria in Section~\ref{sec:search} remain the final inclusion decision. Their title anchors reduce incidental retrieval while the title/abstract asset block protects coverage of engineered maintainable items. Ambiguous CBM, PHM, and RUL abbreviations are constrained by adjacent functional terms rather than searched alone. The exact query files and complete API exports are archived in \texttt{.searches/scopus-final-2026-08-25/}.
+The final S1 strategy is the deduplicated union of S1a and S1b. Both strings use native Scopus API filters and the eligibility criteria in Section~\ref{sec:search} remain the final inclusion decision. Their title anchors reduce incidental retrieval while the title/abstract asset block protects coverage of engineered maintainable items. Ambiguous CBM, PHM, and RUL abbreviations are constrained by adjacent functional terms rather than searched alone. \operational{The exact query files and complete API exports are currently archived in \texttt{.searches/scopus-final-2026-08-25/}; cite a persistent release location in the final paper.}
 
 \subsection{S1a: Maintenance and prognostic title anchor}
 
@@ -170,7 +245,7 @@ For a metadata-only assessment of potential open-access selection bias, rerun ea
 \begin{center}
 \texttt{OPENACCESS(1) AND}
 \end{center}
-S2 must not be merged into the final full-text corpus unless the protocol is formally amended.
+\operational{S2 must not be merged into the final full-text corpus unless the protocol is formally amended.}
 
 \clearpage
 \section{Open-Access Restriction Sensitivity Analysis}
@@ -255,7 +330,7 @@ DOI prefixes provide only a source-platform proxy because the export did not pop
 
 The main limitation remains source-platform coverage. The OA subset retained only 198 of 3,014 \texttt{10.1109} records (6.6\%; 7.1\% of OA versus 44.9\% of the complement), while it retained every \texttt{10.3390} and \texttt{10.1038} record. An OA-only corpus is appropriate only if claims remain explicitly limited to English-language, Scopus-indexed OA studies; it cannot support field-wide prevalence claims.
 
-This final sensitivity analysis still concerns candidate metadata. It does not apply the implemented-model and engineered-item criteria or verify usable full text and OA licences. Recalculate the comparison after screening and full-text verification if any field-level synthesis claim extends beyond this explicitly OA-scoped population.
+This final sensitivity analysis still concerns candidate metadata. It does not apply the implemented-model and engineered-item criteria or verify usable full text and OA licences. \operational{Recalculate the comparison after screening and full-text verification if any field-level synthesis claim extends beyond this explicitly OA-scoped population.}
 
 \clearpage
 \bibliographystyle{IEEEtran}

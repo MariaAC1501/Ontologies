@@ -18,7 +18,7 @@ The checked technical tasks reflect the engineering already present in the curre
 ### A1. Freeze the paper's contribution and scope
 
 - [x] **P-SCOPE-01** — Use the combined contribution: an OPMAD-guided systematic mapping study plus human validation of the LLM-assisted extraction method.
-- [x] **P-SCOPE-02** — Use the research questions in `paper/research_questions_reframe.md` as the working protocol.
+- [x] **P-SCOPE-02** — Integrated and retired the working protocol and research questions in `paper/main.tex`.
 - [x] **P-SCOPE-03** — Select a target venue later and check its requirements for systematic reviews, AI-assisted evidence synthesis, supplementary material, and article length. Until then, use the generic IEEE journal LaTeX working manuscript and a ten-page target.
 - [x] **P-SCOPE-04** — Set the publication period to 2025--2026; set the final search-date cutoff to 2026-08-25 and avoid interpreting an incomplete 2026 as an annual trend.
 - [x] **P-SCOPE-05** — State explicitly that the review covers English-language, open-access empirical journal and conference articles indexed in Scopus on OPMAD-representable diagnostic and prognostic functions, not all predictive-maintenance research.
@@ -143,7 +143,7 @@ Checked items below were completed in the initial unblocked engineering pass. Ta
 - [x] **T-ARTIFACT-03** — Preserve only experiment manifests/reports that are needed to document development decisions.
 - [x] **T-ARTIFACT-04** — Archive or remove raw experimental TTL outputs, copied/hard-linked PDFs, logs, PID files, and superseded retry directories after confirming they are not needed.
 - [x] **T-ARTIFACT-05** — Remove local `__pycache__`, `.pyc`, stale test outputs, and OS metadata from working directories.
-- [x] **T-ARTIFACT-06** — Add ignore rules for future corpus PDFs, run inputs, raw outputs, logs, caches, and temporary review files.
+- [x] **T-ARTIFACT-06** — Add ignore rules for future corpus PDFs, local search artifacts, run inputs, raw outputs, logs, caches, and temporary review files.
 - [x] **T-ARTIFACT-07** — Allowlist intentionally versioned manifests, small fixtures, and summary reports rather than tracking whole run directories.
 - [x] **T-ARTIFACT-08** — Mark retained historical reports prominently as development evidence, not publication results.
 - [ ] **T-ARTIFACT-09** — Remove documentation references to historical fact hashes when they are not stable fixtures.
