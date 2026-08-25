@@ -16,6 +16,8 @@ Immutable query companions:
 |---|---|---|
 | S1a | `S1a-maintenance-prognostic-oa.scopus.txt` | `9e699fcba307496cab5aeaab9b42c939e9ba67c488cfc0f6b00f0c61fbedfda5` |
 | S1b | `S1b-diagnostic-condition-oa.scopus.txt` | `17a889199f8be82fdbbe12af71bec20ec5fdd82c5452a4f69760c118e2229816` |
+| S2a | `S2a-maintenance-prognostic-all-access.scopus.txt` | `a4f3303563779b9f078a81358870c88c817697d2d67439fe34da07d735096673` |
+| S2b | `S2b-diagnostic-condition-all-access.scopus.txt` | `6acd476ae8b63f084e85925c613e8db44baecc6e17beb7f88af6e5d10d96e0a4` |
 
 ## Complete source retrieval
 
@@ -43,6 +45,21 @@ The DOI duplicate is one 2025 wind-turbine article (`10.3390/ijtpp10030014`) ind
 
 `pre-screening-union.json` contains canonical database records and S1a/S1b membership. `pre-screening-accounting.json` contains all 91 cross-query/DOI duplicate events, the complete-pass receipts, and input hashes.
 
+## Final OA-restriction sensitivity analysis
+
+S2a removed only the leading OA predicate from S1a. S2b removed the same predicate from S1b, then used disjoint 2025 and 2026 source-side partitions because the unpartitioned run hit the API's 200-page rate ceiling. Reconciled source totals were 4,156 for S2a and 5,168 for S2b.
+
+| Matched comparison transition | Records |
+|---|---:|
+| Raw OA S1 source records | 2,861 |
+| Distinct OA records | 2,770 |
+| Raw all-access S2 source records | 9,324 |
+| Distinct all-access records | 9,036 |
+| Matched OA records | 2,770 (30.7%) |
+| All-access complement (called non-OA) | 6,266 (69.3%) |
+
+`oa-restriction-sensitivity-analysis.json` and `.md` contain recovery receipts, text/marker comparisons, and DOI-prefix skew. The OA subset retained 198 of 3,014 IEEE-prefix (`10.1109`) records but all 787 MDPI-prefix (`10.3390`) records. The analysis script is `scripts/analyze_scopus_oa_sensitivity.py` (SHA-256 `c5c46ce13281a175603d8bcea39a56ccaa802c94f9b12b9215ac1c331722436a`).
+
 ## Coverage and reproduction checks
 
 A comparison with the 1,154 unique records in the earlier S1a/S1b pilot found only two direct-ID absences:
@@ -54,4 +71,4 @@ Thus, the final strategy retained the earlier in-scope pilot coverage while deli
 
 The union was built with `scripts/build_scopus_pre_screening_union.py` (SHA-256 `d0a8173e78ffc0653ba8d5ecce9ec57bc00102936b4240ce0bb898261419162f`). It verifies complete source runs, query echoes, commit markers, S1a recovery-pass totals, and DOI/EID/title accounting before it writes the derived JSON files.
 
-No eligibility decision, full-text retrieval, bibliographic verification, licence verification, or screening conflict resolution has occurred. Residual clinical, civil/structural, IT, and generic-method noise remains for the prespecified screening workflow. The earlier no-OA S2 pilot is not part of this final candidate union and must not be reported as a final sensitivity result.
+No eligibility decision, full-text retrieval, bibliographic verification, licence verification, or screening conflict resolution has occurred. Residual clinical, civil/structural, IT, and generic-method noise remains for the prespecified screening workflow. The final S2 analysis is metadata-only and must not be merged into the OA full-text corpus or interpreted as a verified licence classification.

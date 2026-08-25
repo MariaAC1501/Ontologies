@@ -78,7 +78,7 @@ M-RQ1 & How accurately and efficiently can an \opmad-guided LLM workflow instant
 
 Scopus is the sole information source, accessed through its API. The final primary search (S1), reproduced in Appendix~\ref{app:scopus-search}, is the union of a maintenance/prognostic title-anchor query (S1a) and a diagnostic/condition title-anchor query (S1b). Both queries limit retrieval to English-language, open-access journal articles (document type \texttt{ar}) and conference papers (document type \texttt{cp}) published in 2025--2026. The search-date cutoff was 25 August 2026; the protocol archives the exact API execution times, complete executed queries, and applied filters.
 
-No sentinel set was used because the candidate literature is intentionally broad. The final reconciled S1a and S1b exports contained 1,219 and 1,642 records, respectively. Deduplication of their 2,861 source records by Scopus Paper ID and DOI produced 2,770 pre-screening candidate records (Appendix~\ref{app:pre-screening}). Eligibility remains determined through documented title/abstract and full-text screening, not by requiring a noise-free query.
+No sentinel set was used because the candidate literature is intentionally broad. The final reconciled S1a and S1b exports contained 1,219 and 1,642 records, respectively. Deduplication of their 2,861 source records by Scopus Paper ID and DOI produced 2,770 pre-screening candidate records. Eligibility remains determined through documented title/abstract and full-text screening, not by requiring a noise-free query.
 
 \subsubsection{Eligibility criteria}
 
@@ -92,7 +92,7 @@ The following criteria will be frozen before screening. A record will be include
 
 A record will be excluded when it is a review, editorial, book chapter, duplicate, or lacks a usable matching open-access full text. It will also be excluded when its primary target is a human patient or clinical outcome, biological organism or process, software or IT service, business or social outcome, natural system, or civil/geotechnical infrastructure rather than an industrial or electromechanical asset. Finally, records describing only generic AI, control, optimization, maintenance scheduling, inventory, or conceptual architectures without an implemented diagnostic or prognostic model will be excluded.
 
-Search reporting will follow PRISMA-S~\cite{Rethlefsen2021PRISMAS}; study selection will be shown in a PRISMA 2020 flow diagram~\cite{Page2021PRISMA}. A metadata-only OA-restriction pilot is reported in Appendix~\ref{app:oa-sensitivity}; it does not determine final study inclusion.
+Search reporting will follow PRISMA-S~\cite{Rethlefsen2021PRISMAS}; study selection will be shown in a PRISMA 2020 flow diagram~\cite{Page2021PRISMA}. A final metadata-only OA-restriction sensitivity analysis is reported in Appendix~\ref{app:oa-sensitivity}; it does not determine final study inclusion.
 
 \todo{Specify the screening procedure, complete the PRISMA-S search report, and insert the PRISMA 2020 flow diagram after title/abstract and full-text screening.}
 
@@ -172,43 +172,16 @@ For a metadata-only assessment of potential open-access selection bias, rerun ea
 \end{center}
 S2 must not be merged into the final full-text corpus unless the protocol is formally amended.
 
-\section{Final Pre-screening Results}
-\label{app:pre-screening}
-
-The frozen final API runs completed on 25 August 2026. S1a required three complete 49-page API passes between 16:35:25 and 16:47:32 UTC because the API repeated page rows; the union of their unique Scopus Paper IDs exactly matched the stable source total of 1,219. S1b completed at 16:39:16 UTC after 66 pages with 1,642 unique Scopus Paper IDs. Each reconciled source record had a Scopus Paper ID, DOI, title, year, and abstract. The complete JSON/CSV pairs, recovery-pass receipts, and commit markers are archived with the queries.
-
-\begin{table}[H]
-\caption{Final Scopus pre-screening record accounting.}
-\label{tab:final-pre-screening}
-\centering
-\small
-\begin{tabular}{lr}
-\toprule
-\textbf{Transition} & \textbf{Records} \\
-\midrule
-Reconciled S1a source records & 1,219 \\
-S1b source records & 1,642 \\
-Records before cross-stratum deduplication & 2,861 \\
-Shared Scopus Paper IDs & $-90$ \\
-Additional same-DOI record & $-1$ \\
-\midrule
-Pre-screening candidate records & \textbf{2,770} \\
-\bottomrule
-\end{tabular}
-\end{table}
-
-The additional DOI duplicate was a single 2025 wind-turbine article represented by two Scopus Paper IDs; its normalized title also matched. No unresolved normalized-title/year collision remained. The 2,770 candidates comprise 1,535 records dated 2025 and 1,235 dated 2026. These are database records before any title/abstract eligibility decision, full-text retrieval, bibliographic verification, or licence verification. Residual clinical, civil/structural, IT, and generic-method noise is therefore expected to be removed only through the prespecified screening workflow.
-
 \clearpage
-\section{Open-Access Restriction Sensitivity Pilot}
+\section{Open-Access Restriction Sensitivity Analysis}
 \label{app:oa-sensitivity}
 
-This appendix reports a metadata-only pilot, not a final included-study analysis. On 25 August 2026, two OA-filtered Scopus API queries were run: a prognostic title-anchor query (S1a) and a diagnostic title-anchor query (S1b). The corresponding all-status queries (S2a and S2b) differed only by deletion of the leading \texttt{OPENACCESS(1) AND} predicate. The complete exports and their hash markers are retained in the study repository.
+This appendix reports the final metadata-only OA-restriction sensitivity analysis, not an included-study analysis. S2a was formed by deleting only the leading \texttt{OPENACCESS(1) AND} predicate from final S1a. S2b was formed the same way from final S1b; it was retrieved as disjoint 2025 and 2026 partitions after the unpartitioned API request reached its 200-page rate ceiling. The partition totals summed exactly to the unpartitioned S2b source total.
 
-Every exported row had a Scopus Paper ID, title, and abstract. Paper ID was used for deduplication. The S1a and S1b results overlapped by 27 records; the S2a and S2b results overlapped by 85. S2a contained seven repeated Paper IDs and S2b contained four. One OA diagnostic record was absent from the S2b export obtained a few minutes later; it was excluded only from the matched comparison below. Thus, ``non-OA'' denotes the complement of the OA-filtered set in the matched all-status candidate universe, not a separately verified licence classification.
+Every record had a Scopus Paper ID, DOI, title, year, and abstract. Repeated API passes were reconciled by Paper ID only when their unique-ID union equalled the stable source total: three passes for S1a, four for S2a, five for the 2025 S2b partition, and three for the 2026 S2b partition. Thus, recovery passes did not increase the reported source counts. ``Non-OA'' below denotes the complement of the matched OA set in the all-access S2 universe, not a separately verified licence classification.
 
 \begin{table}[H]
-\caption{Deduplicated OA-restriction sensitivity pilot.}
+\caption{Final OA-restriction sensitivity comparison.}
 \label{tab:oa-pilot-counts}
 \centering
 \small
@@ -216,54 +189,54 @@ Every exported row had a Scopus Paper ID, title, and abstract. Paper ID was used
 \toprule
 \textbf{Candidate-record set} & \textbf{Records} \\
 \midrule
-Raw S1 OA-filtered rows & 1,181 \\
-Distinct S1 OA records & 1,154 \\
-Raw S2 all-status rows & 3,855 \\
-Distinct S2 all-status records & 3,759 \\
-Matched OA records & 1,153 (30.7\%) \\
-Non-OA complement & 2,606 (69.3\%) \\
+Raw S1 OA-filtered source records & 2,861 \\
+Distinct S1 OA records & 2,770 \\
+Raw S2 all-access source records & 9,324 \\
+Distinct S2 all-access records & 9,036 \\
+Matched OA records & 2,770 (30.7\%) \\
+Non-OA complement & 6,266 (69.3\%) \\
 \bottomrule
 \end{tabular}
 \end{table}
 
-The OA restriction retained about 31\% of the all-status candidate records. This is an expected scope reduction, rather than by itself evidence that an OA-scoped review is invalid. The 2026 portion is incomplete because the search occurred before the end of the year.
+The OA restriction retained 30.7\% of the matched all-access candidate universe. The OA subset was slightly more recent (2026: 44.6\% versus 40.0\% in the complement) and slightly more diagnostic-anchor dominated (56.0\% versus 53.1\% diagnostic-only records). The 2026 portion is incomplete because the search occurred before the end of the year.
 
 \subsection{Textual similarity and topic markers}
 
-No author or indexed keywords were available in the exports, so this analysis used title-plus-abstract text. After removal of generic scientific and query wording, a unigram/bigram document-frequency comparison showed high overlap: cosine similarity was 0.977 (1.0 indicates identical profiles), Jensen--Shannon divergence was 0.022 (0 indicates identical profiles), and 18 of the 20 most prevalent terms overlapped. A five-fold held-out text-only classifier distinguished OA status only modestly (AUC 0.65; balanced accuracy 0.61, where 0.50 is chance). The corresponding AUCs within the prognostic and diagnostic search-anchor strata were 0.63 and 0.64.
+No author or indexed keywords were available in the exports, so this analysis used title-plus-abstract text. After removal of generic scientific and query wording, unigram/bigram document-frequency profiles had high cosine similarity (0.988; 1.0 is identical), Jensen--Shannon divergence of 0.275 (0 is identical), and overlap of 17 of the 20 and 89 of the 100 most prevalent terms. A five-fold held-out text-only OA-status classifier had AUC 0.66 and balanced accuracy 0.61 (0.50 is chance). Within the maintenance/prognostic and diagnostic/condition strata, AUC was 0.63 and 0.66, respectively. Thus, the candidate sets have broad topical overlap but are not textually interchangeable.
 
 Table~\ref{tab:oa-topic-markers} gives selected multi-label markers. Each marker was counted at most once per record. The term differences are descriptive of the retrieved candidate records; they are not screening decisions, OPMAD annotations, or claims about model effectiveness.
 
 \begin{table*}[!t]
-\caption{Selected title/abstract topic markers in the matched OA sensitivity pilot.}
+\caption{Selected title/abstract topic markers in the final matched OA sensitivity analysis.}
 \label{tab:oa-topic-markers}
 \centering
 \small
 \begin{tabular*}{\textwidth}{@{\extracolsep{\fill}}lrrr@{}}
 \toprule
-\textbf{Text marker} & \textbf{OA (\%, $n=1{,}153$)} & \textbf{Non-OA (\%, $n=2{,}606$)} & \textbf{Difference (pp)} \\
+\textbf{Text marker} & \textbf{OA (\%, $n=2{,}770$)} & \textbf{Non-OA (\%, $n=6{,}266$)} & \textbf{Difference (pp)} \\
 \midrule
-RUL or remaining-useful-life terms & 35.6 & 45.0 & $-9.5$ \\
-Life-prediction or prognostic terms & 27.8 & 35.9 & $-8.2$ \\
-Fault-diagnosis terms & 30.5 & 25.6 & $+4.9$ \\
-Fault-detection terms & 22.1 & 17.7 & $+4.4$ \\
-Bearing terms & 26.1 & 26.3 & $-0.2$ \\
-Battery terms & 10.7 & 13.9 & $-3.2$ \\
-CNN or convolutional-neural-network terms & 19.2 & 14.7 & $+4.5$ \\
-LSTM or long-short-term-memory terms & 22.5 & 18.3 & $+4.1$ \\
-Domain-adaptation/generalisation terms & 2.3 & 3.8 & $-1.6$ \\
+RUL or remaining-useful-life terms & 24.8 & 28.9 & $-4.1$ \\
+Life-prediction or prognostic terms & 20.2 & 23.1 & $-2.9$ \\
+Fault-diagnosis terms & 25.5 & 24.6 & $+0.8$ \\
+Fault-detection terms & 18.8 & 17.3 & $+1.5$ \\
+Bearing terms & 19.0 & 17.8 & $+1.2$ \\
+Battery terms & 8.0 & 9.4 & $-1.4$ \\
+CNN or convolutional-neural-network terms & 17.0 & 13.1 & $+3.9$ \\
+LSTM or long-short-term-memory terms & 17.2 & 14.6 & $+2.6$ \\
+Domain-adaptation/generalisation terms & 2.1 & 3.0 & $-0.9$ \\
 \bottomrule
 \end{tabular*}
 \end{table*}
 
-The largest difference is a roughly ten-percentage-point lower prevalence of RUL language in OA records. It persists within the prognostic-anchor-only stratum (65.9\% OA versus 74.4\% non-OA). In contrast, the overall fault-diagnosis difference is largely explained by the OA union containing relatively more diagnostic-anchor records; within that stratum, fault-diagnosis language was nearly identical (61.6\% versus 61.2\%). Broad asset language, including bearings, transformers, and engines, was similar across the two sets. The evidence therefore supports describing the OA set as a broadly comparable but incomplete topical subset, not as a wholesale thematic skew.
+RUL/life-prognostic language remained less prevalent in the OA subset, although the final difference was smaller than in the pilot. Fault-diagnosis and broad asset language were comparatively similar. In contrast, the OA subset contained more CNN/LSTM and F1-metric language, while domain-adaptation language was less common. These are retrieval and reporting signals, not evidence that any model or metric is superior.
 
 \subsection{Source-platform composition and interpretation}
 
 DOI prefixes provide only a source-platform proxy because the export did not populate publication-title or document-type fields. Nevertheless, their composition differs substantially (Table~\ref{tab:oa-doi-prefix}).
 
 \begin{table}[!t]
-\caption{Largest DOI-prefix groups in the matched pilot.}
+\caption{Largest DOI-prefix groups in the final matched comparison.}
 \label{tab:oa-doi-prefix}
 \centering
 \small
@@ -271,19 +244,20 @@ DOI prefixes provide only a source-platform proxy because the export did not pop
 \toprule
 \textbf{Prefix} & \textbf{All} & \textbf{OA} & \textbf{OA rate} \\
 \midrule
-\texttt{10.1109} (IEEE) & 1,195 & 81 & 6.8\% \\
-\texttt{10.3390} (MDPI) & 351 & 351 & 100.0\% \\
-\texttt{10.1016} (Elsevier) & 770 & 210 & 27.3\% \\
-\texttt{10.1007} (Springer) & 432 & 50 & 11.6\% \\
-\texttt{10.1038} & 57 & 57 & 100.0\% \\
+\texttt{10.1109} (IEEE) & 3,014 & 198 & 6.6\% \\
+\texttt{10.3390} (MDPI) & 787 & 787 & 100.0\% \\
+\texttt{10.1016} (Elsevier) & 1,658 & 498 & 30.0\% \\
+\texttt{10.1007} (Springer) & 1,010 & 122 & 12.1\% \\
+\texttt{10.1038} & 124 & 124 & 100.0\% \\
 \bottomrule
 \end{tabular}
 \end{table}
 
-The main limitation is therefore source-platform coverage, especially the loss of IEEE-prefix records, rather than a large change in the overall title/abstract topic profile. An OA-only final corpus is appropriate if the review's claims remain explicitly limited to English-language, Scopus-indexed OA studies. It cannot support field-wide prevalence claims.
+The main limitation remains source-platform coverage. The OA subset retained only 198 of 3,014 \texttt{10.1109} records (6.6\%; 7.1\% of OA versus 44.9\% of the complement), while it retained every \texttt{10.3390} and \texttt{10.1038} record. An OA-only corpus is appropriate only if claims remain explicitly limited to English-language, Scopus-indexed OA studies; it cannot support field-wide prevalence claims.
 
-This pilot also cannot freeze the final corpus: it contains residual out-of-scope noise, has not applied the implemented-model and engineered-item eligibility criteria, and does not verify usable full text or OA licences. The final protocol must repeat the sensitivity comparison after the frozen search, deduplication, screening, and full-text verification.
+This final sensitivity analysis still concerns candidate metadata. It does not apply the implemented-model and engineered-item criteria or verify usable full text and OA licences. Recalculate the comparison after screening and full-text verification if any field-level synthesis claim extends beyond this explicitly OA-scoped population.
 
+\clearpage
 \bibliographystyle{IEEEtran}
 \bibliography{references}
 

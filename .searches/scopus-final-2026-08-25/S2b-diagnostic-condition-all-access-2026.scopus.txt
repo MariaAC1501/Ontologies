@@ -1,0 +1,47 @@
+LANGUAGE(English) AND (DOCTYPE(ar) OR DOCTYPE(cp)) AND PUBYEAR > 2025 AND PUBYEAR < 2027
+AND TITLE(
+  (fault W/1 diagnos*)
+  OR (fault W/1 detect*)
+  OR (fault W/1 identif*)
+  OR (fault W/1 isolat*)
+  OR (fault W/1 classif*)
+  OR (fault W/1 recogn*)
+  OR (fault W/1 localiz*)
+  OR (anomal* W/1 detect*)
+  OR (condition W/1 monitor*)
+  OR (condition W/1 assess*)
+  OR (health W/1 assess*)
+  OR (health W/1 model*)
+  OR (health W/1 prognos*)
+  OR (degradation W/1 monitor*)
+)
+AND TITLE-ABS-KEY(
+  "predictive maintenance" OR "condition-based maintenance" OR "condition based maintenance"
+  OR "prognostics and health management" OR "prognostic health management"
+  OR (CBM W/3 (mainten* OR condition))
+  OR (PHM W/3 (prognos* OR health OR mainten*))
+  OR "condition monitoring" OR "health monitoring"
+  OR "asset health" OR "equipment health" OR "machine health"
+  OR "remaining useful life" OR "remaining useful lifetime" OR "remaining service life"
+  OR (RUL W/3 (estim* OR predict* OR prognos*))
+  OR mainten*
+)
+AND TITLE-ABS-KEY(
+  machine* OR machinery OR equipment OR asset* OR component*
+  OR "industrial equipment" OR "industrial system*" OR "industrial process*"
+  OR "production equipment" OR "manufacturing equipment" OR "machine tool*" OR "cutting tool*" OR CNC
+  OR "rotating machinery" OR bearing* OR gear* OR gearbox* OR shaft* OR spindle*
+  OR motor* OR pump* OR compressor* OR turbine* OR engine* OR battery
+  OR "fuel cell" OR transformer* OR inverter* OR cable* OR "power electronic*"
+  OR "circuit breaker*" OR robot* OR vehicle* OR aircraft OR ship* OR railway
+  OR locomotive* OR "rolling stock" OR "wind turbine*" OR "photovoltaic system*"
+  OR "PV system*" OR hydraulic* OR "pressure vessel*" OR pipeline*
+  OR "medical device*" OR "biomedical equipment" OR UAV* OR drone*
+)
+AND NOT TITLE(review OR reviews OR survey OR "state of the art" OR bibliometric OR "meta-analysis")
+AND NOT TITLE-ABS-KEY(
+  "carbohydrate-binding module" OR "primary dermal melanoma" OR prediabetes
+  OR "software fault" OR "software defect" OR "technical debt" OR "code smell"
+  OR "business failure" OR "financial distress" OR bankruptcy
+  OR "contact center" OR "contact centre" OR Kubernetes OR microservice*
+)

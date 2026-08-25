@@ -27,7 +27,7 @@ The checked technical tasks reflect the engineering already present in the curre
 
 ### A2. Write and register the review protocol
 
-- [x] **P-PROTOCOL-01** — Recorded the Scopus API, 2025--2026 period, English-language journal/conference and OA criteria, and the search-date cutoff: **2026-08-25**. Exact pilot and final execution timestamps, queries, exports, and the S1a API-page recovery passes are archived.
+- [x] **P-PROTOCOL-01** — Recorded the Scopus API, 2025--2026 period, English-language journal/conference and OA criteria, and the search-date cutoff: **2026-08-25**. Exact pilot and final S1/S2 execution timestamps, queries, exports, and API-page recovery passes are archived.
 - [x] **P-PROTOCOL-02** — Froze the two-stratum final S1a/S1b Scopus strategy (version 1.1) in `keywords_predictive_maintenance_scopus.txt` and `keywords_predictive_maintenance_scopus_diagnostic.txt`. The 2026-08-25 final runs, immutable query companions, and validated pre-screening union are archived in `.searches/scopus-final-2026-08-25/`; residual noise remains for documented screening.
 - [x] **P-PROTOCOL-03** — Aligned eligibility in `predictive_maintenance_inclusion_exclusion_criteria.md` and `paper/main.tex` with implemented existing OPMAD diagnostic/prognostic functions on engineered maintainable items.
 - [x] **P-PROTOCOL-04** — Defined exclusions in `predictive_maintenance_inclusion_exclusion_criteria.md` and `paper/main.tex` for reviews, non-engineered targets, generic AI/control, non-case maintenance management, and conceptual/unimplemented architectures.
@@ -49,8 +49,8 @@ The checked technical tasks reflect the engineering already present in the curre
 - [ ] **P-CORPUS-07** — Record source URL, retrieval date, OA license when available, file hash, page count, text-extraction status, and OCR status.
 - [ ] **P-CORPUS-08** — Resolve corrupt, partial, supplementary-only, or mismatched files before freezing the corpus.
 - [ ] **P-CORPUS-09** — Ensure 100% full-text availability among the final included set or document and justify every exception.
-- [x] **P-CORPUS-10** — Ran the same S1a/S1b pilot queries without the OA predicate on 2026-08-25 for a metadata-only sensitivity analysis. Repeat after the frozen final search if broad field-level claims are planned.
-- [x] **P-CORPUS-11** — Compared deduplicated OA and non-OA pilot metadata, DOI-prefix composition, and title/abstract topic markers; reported the result in the OA-restriction sensitivity appendix in `paper/main.tex`. Repeat after final screening and full-text verification.
+- [x] **P-CORPUS-10** — Ran final S2a/S2b metadata-only all-access counterparts by deleting only the OA predicate from S1a/S1b. S2b was recovered through disjoint 2025/2026 partitions after the unpartitioned API request hit its 200-page rate ceiling; reconciled S2a/S2b totals were 4,156 and 5,168.
+- [ ] **P-CORPUS-11** — Repeated the final pre-screening OA comparison: 2,770 matched OA candidates versus a 6,266-record all-access complement, with title/abstract and DOI-prefix skew reported in Annex B of `paper/main.tex`. Repeat after final screening and full-text verification before making field-level synthesis claims.
 
 ### A4. Define the OPMAD case-annotation guide
 
@@ -116,7 +116,7 @@ The checked technical tasks reflect the engineering already present in the curre
 - [ ] **P-SYNTH-07** — Summarize performance-indicator usage without treating incomparable values as a common effectiveness scale.
 - [ ] **P-SYNTH-08** — Identify sparse combinations only after checking extraction recall and corpus coverage.
 - [ ] **P-SYNTH-09** — Quantify uncertainty introduced by extraction errors using the held-out validation results.
-- [ ] **P-SYNTH-10** — Perform sensitivity analyses for OA restriction, OCR quality, and any manually corrected fields. The metadata-only OA pilot is complete; repeat it on the final corpus and add the OCR/manual-correction analyses.
+- [ ] **P-SYNTH-10** — Perform sensitivity analyses for OA restriction, OCR quality, and any manually corrected fields. The final metadata-only OA candidate comparison is reported in Annex B; repeat it after screening and full-text verification, then add the OCR/manual-correction analyses.
 - [ ] **P-SYNTH-11** — Do not claim that frequently used models are necessarily superior models.
 
 ### A9. Write and release the paper package
