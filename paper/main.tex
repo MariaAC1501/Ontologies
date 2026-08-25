@@ -179,13 +179,17 @@ The final workflow processes complete article texts and instantiates \opmad case
 \subsection{Human Gold Standard and Validation}
 \label{sec:validation}
 
-A development sample establishes the annotation guide, prompts, and pipeline. A separate held-out sample is stratified by function, asset type, model type/configuration, article complexity, publication year, and PDF/OCR quality. Annotators record complete cases and supporting evidence rather than isolated labels. Independent double annotation and expert adjudication are used where feasible, and human agreement is measured before evaluating the LLM workflow.
+\subsubsection{Minimum human-extraction sample}
+
+The minimum human-extraction set is 250 unique included articles with verified usable full texts. Before final system tuning, stratified random sampling assigns 50 articles to development and 200 to a frozen held-out set. Every selected article receives a complete manual \opmad case extraction, not a spot check. The held-out articles are independently extracted by two annotators blinded to LLM output and then adjudicated into a frozen gold record. This requires at least 450 complete human extraction passes across 250 papers. Annotations record complete cases and supporting evidence rather than isolated labels; human agreement is measured before evaluating the LLM workflow.
+
+The 200 held-out papers are a conservative precision floor. For a binary paper-level accuracy or prevalence estimate under simple random sampling, \(n = 1.96^2 \times 0.5(1-0.5)/0.07^2 = 196\); rounding up to 200 gives a 95\% Wilson interval with a 6.9-percentage-point half-width at the maximum-variance \(p=0.5\) case~\cite{Wilson1927}. The calculation does not apply a finite-population correction. The sampling frame is all included articles, stratified by function, asset type, model type/configuration, article complexity, publication year, and PDF/OCR quality; multi-case and multi-model articles must be represented. Any disproportionate oversampling uses inclusion weights for corpus estimates. Confidence intervals resample papers, retaining all cases within a paper, rather than treating cases as independent. The sample must be enlarged if a reportable field or relation lacks enough gold-positive instances for its prespecified precision. If fewer than 250 articles are included, every article will receive complete human extraction and the paper will report a census rather than claim the planned 200-paper held-out precision.
 
 Evaluation reports field- and case-level performance with uncertainty intervals. Metrics include precision, recall, F1, multi-label agreement, exact-match accuracy for controlled values, relation-level F1, evidence-entailment rate, complete-case accuracy, and absolute error in aggregate corpus estimates. It also distinguishes hallucinated, conflated, mislinked, and omitted facts, and measures the human annotation and adjudication effort relative to a fully manual review.
 
 Acceptance criteria are prespecified before held-out evaluation. A domain result is reported from automatic extraction only when its required fields meet those criteria; otherwise, affected fields are manually completed, clearly qualified, or excluded from the corresponding predictive-maintenance question. The methodological objective is to establish whether the workflow is reliable enough for assisted evidence synthesis, not to conduct an ontology-benefit ablation or a title/abstract-only comparison.
 
-\operational{Before held-out evaluation, set the sample size, field-specific acceptance criteria, confidence-interval/resampling procedure, and detailed adjudication process.}
+\operational{Before held-out evaluation, set field-specific acceptance criteria, finalize the confidence-interval/resampling procedure, and document the detailed adjudication process.}
 
 \subsection{Predictive-Maintenance Synthesis}
 \label{sec:synthesis}

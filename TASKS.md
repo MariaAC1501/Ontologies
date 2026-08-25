@@ -70,7 +70,7 @@ The checked technical tasks reflect the engineering already present in the curre
 
 ### A5. Create the human gold standard
 
-- [ ] **P-GOLD-01** — Determine the validation sample size based on expected field prevalence and desired confidence intervals rather than convenience alone.
+- [x] **P-GOLD-01** — Set a minimum of 250 unique human-extracted papers: 50 development papers and 200 independently double-annotated held-out papers. The 200-paper held-out floor exceeds the conservative 196-paper requirement for a 95% binary paper-level estimate with a $\pm$7 percentage-point margin at $p=0.5$; expand it for any field or relation lacking sufficient gold-positive instances.
 - [ ] **P-GOLD-02** — Reserve separate development and held-out sets.
 - [ ] **P-GOLD-03** — Stratify the held-out set by task, asset type, model type/configuration, paper complexity, publication year, and PDF/OCR quality.
 - [ ] **P-GOLD-04** — Ensure multi-case and multi-model articles are adequately represented.
