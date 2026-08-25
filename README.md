@@ -1,8 +1,11 @@
 # Ontology Extraction for Predictive Maintenance CBR
 
-This repo combines:
-- **OntoCast** as a constrained extractor for papers relevant to predictive-maintenance CBR
-- **headless Java CBR tooling** for querying the predictive-maintenance case base
+This repository has two connected parts:
+
+- **Working paper manuscript:** [`paper/main.tex`](paper/main.tex) is the current IEEE-format draft of the systematic mapping study. It contains the study scope, protocol, research questions, and planned reporting.
+- **Experiment and extraction software:** the OntoCast submodule, the OPMAD profile and tooling under `pipeline/`, and the headless Java CBR tooling provide the code used to develop and run the manuscript's experiments.
+
+The software supports the manuscript; it is not final paper evidence by itself. In particular, historical files under `extraction_papers/ontocast_runs/` are development experiments, not the final review corpus or final study results.
 
 ## Two extraction modes
 
@@ -16,6 +19,8 @@ Both modes can be run on the same paper for side-by-side comparison. Fixed OPMAD
 
 ## Repository layout
 
+- `paper/` — working manuscript (`main.tex`) and bibliography
+- `extraction_papers/` — screening and local experiment material; historical OntoCast runs are not final paper results
 - `external/CBR-Ontology-For-Predictive-Maintenance/` — upstream Java CBR project submodule
 - `external/Diversity-Improvement-in-CBR/` — upstream Diversity-in-CBR Python project submodule
 - `external/ontocast/` — upstream OntoCast Python project submodule
@@ -39,7 +44,8 @@ This repository does **not** use Conda; use `uv` and a `.venv` for Python depend
 
 | Document | Scope |
 |---|---|
-| `README.md` | Installation and end-to-end workflows maintained by this repository |
+| `README.md` | Repository overview, installation, and end-to-end workflows |
+| `paper/main.tex` | Working manuscript for the systematic mapping study |
 | `scripts/README.md` | Headless CBR commands and diversity-aware reranking |
 | `scripts/LOCAL_PATCHES.md` | Locally maintained, reproducible patches for vendored submodules |
 | `pipeline/SCHEMA_MAPPING.md` | OPMAD/CSV field mapping and the legacy facts-to-CSV bridge |
