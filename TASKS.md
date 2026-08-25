@@ -260,7 +260,7 @@ Checked items below were completed in the initial unblocked engineering pass. Ta
 
 ### B12. Update documentation
 
-- [x] **T-DOC-01** — Update `README.md` to distinguish development extraction, publication review extraction, legacy CBR export, and full ontology-evolution experiments.
+- [x] **T-DOC-01** — Update `README.md` to distinguish the working paper manuscript, experiment code, development extraction, publication review extraction, legacy CBR export, and full ontology-evolution experiments.
 - [x] **T-DOC-02** — Update `pipeline/SCHEMA_MAPPING.md` after the review representation and legacy boundary are finalized.
 - [x] **T-DOC-03** — Replace interoperability-only claims with precise statements about what each test validates.
 - [x] **T-DOC-04** — Document the authoritative OPMAD source and generated-profile procedure.
