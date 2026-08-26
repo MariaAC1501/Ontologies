@@ -33,8 +33,8 @@ The checked technical tasks reflect the engineering already present in the curre
 - [x] **P-PROTOCOL-04** — Defined exclusions in `predictive_maintenance_inclusion_exclusion_criteria.md` and `paper/main.tex` for reviews, non-engineered targets, generic AI/control, non-case maintenance management, and conceptual/unimplemented architectures.
 - [x] **P-PROTOCOL-05** — Ran and documented the 2026-08-25 Scopus pilot. Its residual out-of-field noise establishes the need for documented screening; it does not invalidate the candidate query.
 - [x] **P-PROTOCOL-06** — Have the search strategy peer-reviewed, preferably using PRESS-style checks or an information specialist. Discarded; will not be done.
-- [ ] **P-PROTOCOL-07** — Define deduplication, title/abstract screening, full-text screening, conflict resolution, and exclusion-reason procedures.
-- [ ] **P-PROTOCOL-08** — Decide whether screening is human-only, LLM-prioritized, or LLM-assisted. If an LLM can exclude records, validate screening sensitivity separately and audit a random sample of exclusions.
+- [x] **P-PROTOCOL-07** — Defined deduplication, two-stage title/abstract and full-text screening, conflict resolution, and exclusion-reason procedures in `paper/main.tex`.
+- [x] **P-PROTOCOL-08** — Set final study selection to human-only; LLM outputs are evaluated only retrospectively against frozen human decisions and cannot affect final-corpus inclusion, exclusion, or priority.
 - [ ] **P-PROTOCOL-09** — Preregister or timestamp the protocol before final screening.
 - [ ] **P-PROTOCOL-10** — Use PRISMA-S search reporting, a PRISMA 2020 study-selection flow diagram, and counts for every search, screening, retrieval, and inclusion transition.
 
@@ -43,7 +43,7 @@ The checked technical tasks reflect the engineering already present in the curre
 - [x] **P-CORPUS-01** — Ran and archived the exact final S1a/S1b Scopus API JSON/CSV exports, query companions, commit markers, and pre-screening accounting in `.searches/scopus-final-2026-08-25/` without overwriting prior artifacts. Three complete S1a passes reconciled to its stable 1,219-record source total; S1b returned 1,642 unique records. Their 2,770-record pre-screening union is not yet eligibility screened.
 - [ ] **P-CORPUS-02** — Assign stable corpus IDs and retain DOI, EID, title, year, source, authors, abstract, keywords, OA status, and source query.
 - [x] **P-CORPUS-03** — Reconciled the three complete S1a API passes to the stable 1,219-record EID total, then deduplicated the final S1a/S1b pool by Scopus Paper ID and DOI. The one same-DOI wind-turbine alias and 90 cross-stratum EID duplicates are documented in `.searches/scopus-final-2026-08-25/pre-screening-accounting.json`; no unresolved normalized-title/year collision remained.
-- [ ] **P-CORPUS-04** — Screen records against the registered criteria.
+- [ ] **P-CORPUS-04** — Screen records against the registered criteria using the batch generator and two-reviewer templates in `screening/`; final screening has not started.
 - [ ] **P-CORPUS-05** — Retrieve a full text for every included record.
 - [ ] **P-CORPUS-06** — Verify each PDF against title, DOI, authors, and publication year.
 - [ ] **P-CORPUS-07** — Record source URL, retrieval date, OA license when available, file hash, page count, text-extraction status, and OCR status.
@@ -92,7 +92,8 @@ The checked technical tasks reflect the engineering already present in the curre
 - [ ] **P-EVAL-08** — Define confidence intervals and the statistical resampling procedure.
 - [ ] **P-EVAL-09** — Set field-specific acceptance criteria before evaluating held-out data.
 - [ ] **P-EVAL-10** — Decide in advance whether fields below threshold will be manually completed, qualified, or excluded from synthesis.
-- [x] **P-EVAL-11** — Retired: title/abstract-versus-full-text comparison is outside the study scope.
+- [x] **P-EVAL-11** — Retired: a title/abstract-versus-full-text extraction comparison is outside the study scope; this does not apply to the separate screening benchmark.
+- [ ] **P-EVAL-12** — Run the retrospective held-out LLM title/abstract-screening benchmark against frozen human decisions; report inclusion recall at the prespecified exclusion threshold, false exclusions, workload, calibration, and stratum/reason performance.
 
 ### A7. Freeze and run the final extraction
 

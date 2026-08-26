@@ -20,7 +20,8 @@ Both modes can be run on the same paper for side-by-side comparison. Fixed OPMAD
 ## Repository layout
 
 - `paper/` — working manuscript (`main.tex`) and bibliography
-- `extraction_papers/` — screening and local experiment material; historical OntoCast runs are not final paper results
+- `screening/` — final-review templates, local blinded reviewer batches, and adjudicated decision logs
+- `extraction_papers/` — historical screening/development and local experiment material; historical OntoCast runs are not final paper results
 - `external/CBR-Ontology-For-Predictive-Maintenance/` — upstream Java CBR project submodule
 - `external/Diversity-Improvement-in-CBR/` — upstream Diversity-in-CBR Python project submodule
 - `external/ontocast/` — upstream OntoCast Python project submodule
@@ -46,6 +47,7 @@ This repository does **not** use Conda; use `uv` and a `.venv` for Python depend
 |---|---|
 | `README.md` | Repository overview, installation, and end-to-end workflows |
 | `paper/main.tex` | Working manuscript for the systematic mapping study |
+| `screening/README.md` | Human screening batch, adjudication, and benchmark safeguards |
 | `scripts/README.md` | Headless CBR commands and diversity-aware reranking |
 | `scripts/LOCAL_PATCHES.md` | Locally maintained, reproducible patches for vendored submodules |
 | `pipeline/SCHEMA_MAPPING.md` | OPMAD/CSV field mapping and the legacy facts-to-CSV bridge |

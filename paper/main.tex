@@ -134,7 +134,23 @@ A record is excluded when it is a review, editorial, book chapter, duplicate, or
 
 Search reporting follows PRISMA-S~\cite{Rethlefsen2021PRISMAS}; study selection will be shown in a PRISMA 2020 flow diagram~\cite{Page2021PRISMA}. The metadata-only OA-restriction sensitivity analysis in Appendix~\ref{app:oa-sensitivity} does not determine final study inclusion.
 
-\operational{Before final screening, timestamp the protocol; define title/abstract and full-text procedures, conflict resolution, and exclusion-reason rules; retrieve and audit every included PDF for title/DOI matching and text/OCR quality; then complete the PRISMA-S report and PRISMA 2020 flow diagram.}
+\subsubsection{Screening procedure}
+\label{sec:screening}
+
+After forming the S1 union, records are deduplicated first by Scopus Paper ID and then by normalized DOI. Title/year similarity alone never triggers an automatic merge; uncertain matches are manually adjudicated, and retained records preserve source-query provenance.
+
+Two reviewers independently screen every deduplicated record. At title/abstract screening, only a concordant exclusion stops a record; uncertain or discordant records proceed to full text. At full-text screening, both reviewers apply all eligibility criteria and verify that the accessible open-access text matches the bibliographic record. Final study selection is human-only: no LLM output can affect a record's inclusion, exclusion, or screening priority.
+
+The decision log retains each reviewer decision, stage, final decision, and one primary exclusion reason: ineligible bibliographic record/publication, out-of-scope target, no implemented eligible diagnostic or prognostic model, or unavailable/mismatched usable open-access full text. Disagreements are resolved by discussion, then by a third reviewer if needed. The log supplies the PRISMA counts.
+
+\subsubsection{Retrospective LLM-Screening Benchmark}
+\label{sec:screening-benchmark}
+
+The frozen adjudicated log will support a retrospective benchmark of title/abstract triage. The core input is the title and abstract; an optional metadata-aware track adds publication year and S1 stratum. Systems receive neither full text nor external retrieval. The gold standard is the final human full-text inclusion decision and primary exclusion reason. Human screeners are blinded to LLM outputs, which are generated only after the relevant human decisions are frozen.
+
+Each system returns \emph{exclude}, \emph{review}, or \emph{include}, a confidence score, and a primary reason. Prompt, model, and confidence-threshold selection use a development partition; a held-out partition stratified by final decision, S1 stratum, and year is sealed before selection. The primary measure is recall of final included studies when only \emph{exclude} outputs above that threshold are treated as automated removals. Secondary measures are exclusion precision, false exclusions, review workload, calibration, primary-reason agreement, and results by S1 stratum, year, human uncertainty, and exclusion reason; overall accuracy is secondary.
+
+\operational{Before final screening, timestamp this protocol; retrieve and audit every included PDF for title/DOI matching and text/OCR quality; then complete the PRISMA-S report and PRISMA 2020 flow diagram.}
 
 \subsection{OPMAD Case Representation}
 \label{sec:case-representation}
