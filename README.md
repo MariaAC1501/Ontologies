@@ -2,7 +2,7 @@
 
 This repository has two connected parts:
 
-- **Working paper manuscript:** [`paper/main.tex`](paper/main.tex) is the current IEEE-format draft of the systematic mapping study. It contains the study scope, protocol, research questions, and planned reporting.
+- **Working paper manuscript:** [`paper/main.tex`](paper/main.tex) is the current IEEE-format draft of a full-text benchmark and human-in-the-loop study comparing schema-only extraction, fixed OPMAD guidance, and ontology evolution with OntoCast.
 - **Experiment and extraction software:** the OntoCast submodule, the OPMAD profile and tooling under `pipeline/`, and the headless Java CBR tooling provide the code used to develop and run the manuscript's experiments.
 
 The software supports the manuscript; it is not final paper evidence by itself. In particular, historical files under `extraction_papers/ontocast_runs/` are development experiments, not the final review corpus or final study results.
@@ -46,8 +46,9 @@ This repository does **not** use Conda; use `uv` and a `.venv` for Python depend
 | Document | Scope |
 |---|---|
 | `README.md` | Repository overview, installation, and end-to-end workflows |
-| `paper/main.tex` | Working manuscript for the systematic mapping study |
-| `screening/README.md` | Human screening batch, adjudication, and benchmark safeguards |
+| `paper/main.tex` | Working manuscript for the fixed-versus-evolved ontology benchmark and human-in-the-loop study |
+| `paper/challenge_set_candidates.md` | Provisional metadata-level challenge-set shortlist and reserves |
+| `screening/README.md` | Human screening batch, local GUI, adjudication, and benchmark safeguards |
 | `scripts/README.md` | Headless CBR commands and diversity-aware reranking |
 | `scripts/LOCAL_PATCHES.md` | Locally maintained, reproducible patches for vendored submodules |
 | `pipeline/SCHEMA_MAPPING.md` | OPMAD/CSV field mapping and the legacy facts-to-CSV bridge |

@@ -2,57 +2,79 @@
 
 This file separates publication/research work from repository and extraction-engineering work.
 
+The active manuscript is now a compact full-text benchmark and human-in-the-loop study comparing schema-only extraction, fixed OPMAD guidance, and an ontology evolved by OntoCast from development articles.
+
 The existing files under `extraction_papers/ontocast_runs/` are development experiments. They must not be mixed with the corpus or outputs used for the final paper.
 
 ## Task codes and status
 
 - `P-*` identifies paper/research tasks; `T-*` identifies technical/repository tasks.
-- Cite the complete bold code when discussing a task, for example `P-PROTOCOL-03` or `T-EXPORT-07`.
-- `[x]` means the current repository provides and tests the stated capability; `[ ]` means it remains open.
+- Cite the complete bold code when discussing a task, for example `P-BENCH-03` or `T-EXPORT-07`.
+- `[x]` means the stated decision or repository capability is complete; `[ ]` means it remains open.
 - Codes are stable identifiers: completed or retired tasks should keep their codes rather than being renumbered.
-
-The checked technical tasks reflect the engineering already present in the current tree, notably artifact cleanup, the generated authoritative OPMAD profile, the strict nullable review export, namespace/isolation hardening, and reproducible run-manifest validation. Remaining technical tasks depend on the final protocol, corpus, annotation model, upstream extraction behavior, or publication run.
 
 ## A. Paper and research tasks
 
-### A1. Freeze the paper's contribution and scope
+### A0. Active fixed-versus-evolved ontology study
 
-- [x] **P-SCOPE-01** — Use the combined contribution: an OPMAD-guided systematic mapping study plus human validation of the LLM-assisted extraction method.
-- [x] **P-SCOPE-02** — Integrated and retired the working protocol and research questions in `paper/main.tex`.
-- [x] **P-SCOPE-03** — Select a target venue later and check its requirements for systematic reviews, AI-assisted evidence synthesis, supplementary material, and article length. Until then, use the generic IEEE journal LaTeX working manuscript and a ten-page target.
-- [x] **P-SCOPE-04** — Set the publication period to 2025--2026; set the final search-date cutoff to 2026-08-25 and avoid interpreting an incomplete 2026 as an annual trend.
-- [x] **P-SCOPE-05** — State explicitly that the review covers English-language, open-access empirical journal and conference articles indexed in Scopus on OPMAD-representable diagnostic and prognostic functions, not all predictive-maintenance research.
-- [x] **P-SCOPE-06** — Claim workflow reliability against expert annotation only; do not claim that ontology guidance improves extraction.
-- [x] **P-SCOPE-07** — Retired: no ontology-benefit claim will be made, so a controlled flat-schema ablation is out of scope.
+- [x] **P-PIVOT-01** — Replace the broad systematic evidence map with a challenge-set benchmark and human-in-the-loop comparison of schema-only, fixed-OPMAD, and development-evolved ontology extraction.
+- [x] **P-PIVOT-02** — Limit claims to comparative extraction, ontology, and human-effort results. Do not estimate predictive-maintenance literature prevalence.
+- [x] **P-PIVOT-03** — Exclude PDF quality from challenge-set selection and stratification. Record document-processing failures operationally instead.
+- [x] **P-PIVOT-04** — Rewrite `paper/main.tex` around the new research questions and retain the generic IEEE working format until a venue is selected.
+- [x] **P-LIT-01** — Ran a targeted 2026-08-26 Scopus and arXiv prior-work search; added selected sources on ontology-constrained extraction, LLM ontology learning, maintenance-record extraction, and human-validated scientific extraction. This is background discovery, not a systematic review or prevalence search.
+- [ ] **P-BENCH-01** — Select and verify an approximately eight-article development set and 24-article held-out set with variation in function, asset type, model-set complexity, case count, and prose/table evidence. A full-text machine-assisted skim, revised provisional split, boundary cases, and reserves are recorded in `paper/challenge_set_candidates.md`; independent human eligibility confirmation and partition freeze remain open.
+- [ ] **P-BENCH-02** — Freeze a representation-neutral core annotation guide for source, case boundary, item, function, condition data, model set, relations, and exact evidence spans.
+- [ ] **P-BENCH-03** — Assign stable IDs, verify bibliographic identity and eligibility, record licences, and seal the held-out partition before final configuration freeze.
+- [ ] **P-BENCH-04** — Independently double-annotate and adjudicate the held-out benchmark without exposing annotators to LLM output.
+- [ ] **P-EVOLVE-01** — Build and validate a consolidated ontology from development articles only, without the OPMAD domain seed.
+- [ ] **P-EVOLVE-02** — Freeze and checksum the selected evolved ontology before held-out extraction. Do not evolve it on held-out articles in the primary comparison.
+- [ ] **P-EVOLVE-03** — Evaluate evolution stability across repeated runs, article orderings, and nested development subsets.
+- [ ] **P-COMPARE-01** — Freeze fair schema-only, fixed-OPMAD, and evolved-ontology conditions using the same model, parser, complete texts, evidence policy, decoding, and retry rules.
+- [ ] **P-COMPARE-02** — Freeze a development-only crosswalk to the common benchmark while retaining unmapped evolved terms for native-ontology evaluation.
+- [ ] **P-HIL-01** — Run counterbalanced fixed- and evolved-prefill correction sessions on a stratified held-out subset whose reviewers have not previously seen the assigned articles.
+- [ ] **P-HIL-02** — Capture annotation time, atomic edits, unsupported accepted suggestions, omissions, and pre-adjudication quality in a common interface.
+- [ ] **P-ANALYSIS-01** — Prespecify entity, relation, case-boundary, complete-case, evidence-support, and error-type metrics with article-level uncertainty intervals.
+- [ ] **P-ANALYSIS-02** — Prespecify ontology coverage, novelty, redundancy, integrity, reuse, stability, and alignment-effort measures.
+- [ ] **P-RELEASE-01** — Release permissible corpus metadata, codebook, gold cases, evidence locations, prompts, ontology artifacts, crosswalks, manifests, timing/edit logs, and evaluation code.
 
-### A2. Write and register the review protocol
+### A1. Superseded broad-review scope
+
+- [x] **P-SCOPE-01** — Retired: the active paper no longer combines a systematic evidence map with extraction validation.
+- [x] **P-SCOPE-02** — Retired: the broad-review protocol and research questions were removed from the active manuscript when it was overwritten for the benchmark study.
+- [x] **P-SCOPE-03** — Retain the generic IEEE journal LaTeX working manuscript and ten-page target until a venue for ontology learning, scientific extraction, or human-in-the-loop research is selected.
+- [x] **P-SCOPE-04** — Retired: the 2025--2026 period and 2026-08-25 cutoff belong to the deferred broad mapping study, although its candidate pool may supply challenge-set articles.
+- [x] **P-SCOPE-05** — Retired: Scopus-wide open-access review coverage is no longer an active-paper claim.
+- [x] **P-SCOPE-06** — Superseded: the active study now makes a controlled comparative claim rather than validation-only claims.
+- [x] **P-SCOPE-07** — Superseded: a schema-only baseline is now part of the active comparison.
+
+### A2. Deferred: write and register the broad-review protocol
 
 - [x] **P-PROTOCOL-01** — Recorded the Scopus API, 2025--2026 period, English-language journal/conference and OA criteria, and the search-date cutoff: **2026-08-25**. Exact pilot and final S1/S2 execution timestamps, queries, exports, and API-page recovery passes are archived.
 - [x] **P-PROTOCOL-02** — Froze the two-stratum final S1a/S1b Scopus strategy (version 1.1) in `keywords_predictive_maintenance_scopus.txt` and `keywords_predictive_maintenance_scopus_diagnostic.txt`. The 2026-08-25 final runs, immutable query companions, and validated pre-screening union are archived in `.searches/scopus-final-2026-08-25/`; residual noise remains for documented screening.
-- [x] **P-PROTOCOL-03** — Aligned eligibility in `predictive_maintenance_inclusion_exclusion_criteria.md` and `paper/main.tex` with implemented existing OPMAD diagnostic/prognostic functions on engineered maintainable items.
-- [x] **P-PROTOCOL-04** — Defined exclusions in `predictive_maintenance_inclusion_exclusion_criteria.md` and `paper/main.tex` for reviews, non-engineered targets, generic AI/control, non-case maintenance management, and conceptual/unimplemented architectures.
+- [x] **P-PROTOCOL-03** — Aligned eligibility in `predictive_maintenance_inclusion_exclusion_criteria.md` and the superseded broad-review manuscript with implemented existing OPMAD diagnostic/prognostic functions on engineered maintainable items.
+- [x] **P-PROTOCOL-04** — Defined exclusions in `predictive_maintenance_inclusion_exclusion_criteria.md` and the superseded broad-review manuscript for reviews, non-engineered targets, generic AI/control, non-case maintenance management, and conceptual/unimplemented architectures.
 - [x] **P-PROTOCOL-05** — Ran and documented the 2026-08-25 Scopus pilot. Its residual out-of-field noise establishes the need for documented screening; it does not invalidate the candidate query.
 - [x] **P-PROTOCOL-06** — Have the search strategy peer-reviewed, preferably using PRESS-style checks or an information specialist. Discarded; will not be done.
-- [x] **P-PROTOCOL-07** — Defined deduplication, two-stage title/abstract and full-text screening, conflict resolution, and exclusion-reason procedures in `paper/main.tex`.
+- [x] **P-PROTOCOL-07** — Defined deduplication, two-stage title/abstract and full-text screening, conflict resolution, and exclusion-reason procedures for the deferred broad review.
 - [x] **P-PROTOCOL-08** — Set final study selection to human-only; LLM outputs are evaluated only retrospectively against frozen human decisions and cannot affect final-corpus inclusion, exclusion, or priority.
 - [ ] **P-PROTOCOL-09** — Preregister or timestamp the protocol before final screening.
 - [ ] **P-PROTOCOL-10** — Use PRISMA-S search reporting, a PRISMA 2020 study-selection flow diagram, and counts for every search, screening, retrieval, and inclusion transition.
 
-### A3. Build the publication corpus
+### A3. Deferred: build the broad-review publication corpus
 
 - [x] **P-CORPUS-01** — Ran and archived the exact final S1a/S1b Scopus API JSON/CSV exports, query companions, commit markers, and pre-screening accounting in `.searches/scopus-final-2026-08-25/` without overwriting prior artifacts. Three complete S1a passes reconciled to its stable 1,219-record source total; S1b returned 1,642 unique records. Their 2,770-record pre-screening union is not yet eligibility screened.
 - [ ] **P-CORPUS-02** — Assign stable corpus IDs and retain DOI, EID, title, year, source, authors, abstract, keywords, OA status, and source query.
 - [x] **P-CORPUS-03** — Reconciled the three complete S1a API passes to the stable 1,219-record EID total, then deduplicated the final S1a/S1b pool by Scopus Paper ID and DOI. The one same-DOI wind-turbine alias and 90 cross-stratum EID duplicates are documented in `.searches/scopus-final-2026-08-25/pre-screening-accounting.json`; no unresolved normalized-title/year collision remained.
-- [ ] **P-CORPUS-04** — Screen records against the registered criteria using the batch generator and two-reviewer templates in `screening/`; final screening has not started.
+- [ ] **P-CORPUS-04** — Screen records against the registered criteria using the batch generator, local GUI, and two-reviewer templates in `screening/`; final screening has not started.
 - [ ] **P-CORPUS-05** — Retrieve a full text for every included record.
 - [ ] **P-CORPUS-06** — Verify each PDF against title, DOI, authors, and publication year.
 - [ ] **P-CORPUS-07** — Record source URL, retrieval date, OA license when available, file hash, page count, text-extraction status, and OCR status.
 - [ ] **P-CORPUS-08** — Resolve corrupt, partial, supplementary-only, or mismatched files before freezing the corpus.
 - [ ] **P-CORPUS-09** — Ensure 100% full-text availability among the final included set or document and justify every exception.
 - [x] **P-CORPUS-10** — Ran final S2a/S2b metadata-only all-access counterparts by deleting only the OA predicate from S1a/S1b. S2b was recovered through disjoint 2025/2026 partitions after the unpartitioned API request hit its 200-page rate ceiling; reconciled S2a/S2b totals were 4,156 and 5,168.
-- [ ] **P-CORPUS-11** — Repeated the final pre-screening OA comparison: 2,770 matched OA candidates versus a 6,266-record all-access complement, with title/abstract and DOI-prefix skew reported in Annex B of `paper/main.tex`. Repeat after final screening and full-text verification before making field-level synthesis claims.
+- [ ] **P-CORPUS-11** — The final pre-screening OA comparison found 2,770 matched OA candidates versus a 6,266-record all-access complement. If the broad review resumes, repeat it after screening and full-text verification before making field-level synthesis claims.
 
-### A4. Define the OPMAD case-annotation guide
+### A4. Deferred: define the broad-review OPMAD case-annotation guide
 
 - [ ] **P-CODEBOOK-01** — Freeze the exact OPMAD version and list the competency questions used by the review.
 - [ ] **P-CODEBOOK-02** — Define one OPMAD case as a linked article, maintainable item, function, model/configuration, and corresponding condition data.
@@ -68,11 +90,11 @@ The checked technical tasks reflect the engineering already present in the curre
 - [ ] **P-CODEBOOK-12** — Define separate annotation statuses for present, genuinely not reported, unclear, not applicable, and extraction failure.
 - [ ] **P-CODEBOOK-13** — Pilot the guide on heterogeneous papers and revise it before held-out annotation.
 
-### A5. Create the human gold standard
+### A5. Deferred: create the broad-review human gold standard
 
 - [x] **P-GOLD-01** — Set a minimum of 250 unique human-extracted papers: 50 development papers and 200 independently double-annotated held-out papers. The 200-paper held-out floor exceeds the conservative 196-paper requirement for a 95% binary paper-level estimate with a $\pm$7 percentage-point margin at $p=0.5$; expand it for any field or relation lacking sufficient gold-positive instances.
 - [ ] **P-GOLD-02** — Reserve separate development and held-out sets.
-- [ ] **P-GOLD-03** — Stratify the held-out set by task, asset type, model type/configuration, paper complexity, publication year, and PDF/OCR quality.
+- [ ] **P-GOLD-03** — Stratify the held-out set by task, asset type, model type/configuration, paper complexity, and publication year.
 - [ ] **P-GOLD-04** — Ensure multi-case and multi-model articles are adequately represented.
 - [ ] **P-GOLD-05** — Train annotators using the development set only.
 - [ ] **P-GOLD-06** — Independently double-annotate the held-out set where feasible.
@@ -80,7 +102,7 @@ The checked technical tasks reflect the engineering already present in the curre
 - [ ] **P-GOLD-08** — Adjudicate disagreements without exposing held-out gold labels during system tuning.
 - [ ] **P-GOLD-09** — Freeze and version the adjudicated gold dataset.
 
-### A6. Prespecify method evaluation
+### A6. Deferred: prespecify broad-review method evaluation
 
 - [ ] **P-EVAL-01** — Select field-level metrics: precision, recall, F1, exact match, and multi-label agreement as appropriate.
 - [ ] **P-EVAL-02** — Evaluate relations and complete cases, not only extracted entity names.
@@ -95,7 +117,7 @@ The checked technical tasks reflect the engineering already present in the curre
 - [x] **P-EVAL-11** — Retired: a title/abstract-versus-full-text extraction comparison is outside the study scope; this does not apply to the separate screening benchmark.
 - [ ] **P-EVAL-12** — Run the retrospective held-out LLM title/abstract-screening benchmark against frozen human decisions; report inclusion recall at the prespecified exclusion threshold, false exclusions, workload, calibration, and stratum/reason performance.
 
-### A7. Freeze and run the final extraction
+### A7. Deferred: freeze and run the broad-review extraction
 
 - [ ] **P-FINALRUN-01** — Lock the corpus before the publication run.
 - [ ] **P-FINALRUN-02** — Lock the OPMAD artifact/profile, model, prompts, parser, OCR version, sectioning, chunking, retries, normalization, and code revision.
@@ -106,7 +128,7 @@ The checked technical tasks reflect the engineering already present in the curre
 - [ ] **P-FINALRUN-07** — Archive a machine-readable run manifest and checksums for all final outputs.
 - [ ] **P-FINALRUN-08** — Have humans review all low-confidence cases, rare categories, outliers, and evidence supporting major claims.
 
-### A8. Conduct the predictive-maintenance synthesis
+### A8. Deferred: conduct the predictive-maintenance synthesis
 
 - [ ] **P-SYNTH-01** — Report study and case counts separately.
 - [ ] **P-SYNTH-02** — Summarize maintainable items, item types, and OPMAD functions.
@@ -117,10 +139,10 @@ The checked technical tasks reflect the engineering already present in the curre
 - [ ] **P-SYNTH-07** — Summarize performance-indicator usage without treating incomparable values as a common effectiveness scale.
 - [ ] **P-SYNTH-08** — Identify sparse combinations only after checking extraction recall and corpus coverage.
 - [ ] **P-SYNTH-09** — Quantify uncertainty introduced by extraction errors using the held-out validation results.
-- [ ] **P-SYNTH-10** — Perform sensitivity analyses for OA restriction, OCR quality, and any manually corrected fields. The final metadata-only OA candidate comparison is reported in Annex B; repeat it after screening and full-text verification, then add the OCR/manual-correction analyses.
+- [ ] **P-SYNTH-10** — If the broad review resumes, perform sensitivity analyses for OA restriction and manually corrected fields. Repeat the archived metadata-only OA comparison after screening and full-text verification.
 - [ ] **P-SYNTH-11** — Do not claim that frequently used models are necessarily superior models.
 
-### A9. Write and release the paper package
+### A9. Deferred: write and release the broad-review package
 
 - [ ] **P-PACKAGE-01** — Write the introduction around the predictive-maintenance model-selection problem, not around LLM novelty alone.
 - [ ] **P-PACKAGE-02** — Describe OPMAD as an existing validated ontology and clearly distinguish instantiation from extension.
@@ -205,6 +227,7 @@ Checked items below were completed in the initial unblocked engineering pass. Ta
 - [ ] **T-FULLTEXT-06** — Keep title, DOI, year, and corpus ID from the verified manifest rather than relying on LLM extraction for authoritative bibliographic identity.
 - [ ] **T-FULLTEXT-07** — Handle tables and multi-column layouts explicitly where they contain model inputs or results.
 - [ ] **T-FULLTEXT-08** — Test complete-document behavior on long and multi-case papers before the final run.
+- [x] **T-FULLTEXT-09** — Convert all 32 PDFs in `extraction_papers/` to page-delimited GLM-OCR Markdown with retained crop images, retaining each source PDF in its matching `markdown/<stem>/` output folder.
 
 ### B7. Preserve usable evidence and provenance
 

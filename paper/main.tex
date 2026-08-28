@@ -7,23 +7,15 @@
 \usepackage{booktabs}
 \usepackage{tabularx}
 \usepackage{url}
-\usepackage{listings}
-\usepackage{float}
 \usepackage{xspace}
 
-\lstset{
-  basicstyle=\ttfamily\scriptsize,
-  breaklines=true,
-  columns=fullflexible,
-  frame=single
-}
-
 \newcommand{\opmad}{OPMAD\xspace}
+\newcommand{\ontocast}{OntoCast\xspace}
 % Bold operational text is a working-draft note to remove or recast before submission.
 \newcommand{\operational}[1]{\textbf{#1}}
 \newcommand{\todo}[1]{\operational{[TODO: #1]}}
 
-\title{Mapping Predictive-Maintenance Model-Selection Evidence with a Validated Ontology-Guided LLM Workflow}
+\title{Fixed or Evolved Ontologies for LLM-Assisted Predictive-Maintenance Case Extraction: A Full-Text Benchmark and Human-in-the-Loop Study}
 
 \author{Author~Name(s)\thanks{\operational{Working draft. Author details, funding, and affiliations will be added after a target venue is selected.}}}
 
@@ -32,55 +24,61 @@
 \maketitle
 
 \begin{abstract}
-Predictive-maintenance research reports a large and heterogeneous set of diagnostic and prognostic models, assets, and condition-data configurations. This systematic mapping study characterizes model-selection patterns in 2025--2026 English-language, open-access journal and conference articles indexed in Scopus. It uses a large language model to instantiate the existing Ontology for Predictive Maintenance Architecture and Design (\opmad) from complete article texts, then validates the workflow against independent expert annotation. The study evaluates workflow reliability; it does not claim that ontology guidance improves extraction relative to a non-ontological baseline. \operational{Final results are pending corpus construction, annotation, and validation.}
+Large language models can extract scientific evidence against a fixed domain ontology or induce an ontology from example documents before extraction. A fixed ontology provides stable semantics and cross-document comparability, while an evolved ontology may capture concepts that the fixed representation omits. This study compares these strategies for full-text predictive-maintenance case extraction. It defines an evidence-grounded challenge set with a development partition and a held-out partition, then evaluates a schema-only baseline, extraction with the fixed Ontology for Predictive Maintenance Architecture and Design (\opmad), and extraction with an ontology evolved by \ontocast from development articles. A complementary human-in-the-loop experiment compares manual annotation with correction of fixed- and evolved-ontology prefills. Evaluation covers linked case accuracy, evidence support, ontology coverage and stability, annotation time, and correction effort. The study evaluates extraction and curation strategies on a deliberately heterogeneous challenge set. It does not estimate the prevalence of models or practices in predictive-maintenance literature. \operational{Results are pending corpus selection, annotation, ontology evolution, and held-out evaluation.}
 \end{abstract}
 
 \begin{IEEEkeywords}
-predictive maintenance, systematic mapping study, ontology-guided extraction, large language models, \opmad, PRISMA-S
+predictive maintenance, ontology learning, ontology-guided extraction, large language models, human-in-the-loop annotation, \opmad, \ontocast
 \end{IEEEkeywords}
 
 \section{Introduction}
 \label{sec:introduction}
 
-Predictive-maintenance studies describe heterogeneous combinations of diagnostic and prognostic functions, maintainable systems, condition data, and models. This heterogeneity makes it difficult to reuse published evidence when selecting models for a new maintenance problem. Rather than rank models across incomparable datasets, metrics, and experiments, this study maps the reported problem--solution configurations.
+Predictive-maintenance articles describe linked combinations of maintainable items, diagnostic or prognostic functions, condition data, and models. Recovering these combinations requires more than finding isolated entity names. An extraction workflow must identify case boundaries, link each model to the correct asset, function, and inputs, and retain evidence that supports every assertion.
 
-The scientific objective is to map reusable model-selection knowledge from recent predictive-maintenance literature. Its methodological contribution is a human-validated workflow that uses an LLM to instantiate the existing \opmad ontology from complete article texts. \opmad represents the function, maintainable item, condition data, model, configuration, synchronization, performance indicator, and documentary source associated with a predictive-maintenance case~\cite{MonteroJimenez2021OPMADCBR}. The study populates \opmad instances rather than proposing ontology classes or properties; OntoCast is the current extraction-system basis~\cite{Belikov2025OntoCast}.
+A domain ontology can supply stable concepts and relation constraints for this task. \opmad represents predictive-maintenance functions, maintainable items, condition data, models, configurations, synchronization, performance information, and documentary sources~\cite{MonteroJimenez2021OPMADCBR}. Its stable vocabulary supports comparison and case-based retrieval across articles. A fixed ontology can also omit distinctions found in newer literature or impose a granularity that differs from the source text.
 
-The paper does not attempt to review every aspect of predictive maintenance or extend \opmad. Its scope remains within \opmad's competency questions: predictive-maintenance functions, maintainable systems, condition data, models, model types and configurations, synchronization, performance indicators, and documentary sources.
+Ontology evolution offers a contrasting strategy. \ontocast can induce and refine an ontology from source documents while extracting facts~\cite{Belikov2025OntoCast}. An evolved ontology may improve local coverage, but its concepts can be redundant, unstable across runs, or difficult to align across documents. Comparing raw triple or class counts cannot establish which strategy produces more useful evidence.
 
-The combined contribution is:
+The practical objective is also human. Scientific extraction remains useful only if a reviewer can verify and correct the result more efficiently than creating the same record manually. An ontology that improves automated metrics but increases mapping or correction effort may provide little benefit to evidence curation.
+
+This paper therefore studies fixed and evolved ontology support at two levels. The first is a controlled full-text extraction benchmark. The second is a human-in-the-loop annotation study. Its contributions are:
 \begin{enumerate}
-  \item a systematic evidence map of model-selection patterns in open-access predictive-maintenance diagnostics and prognostics;
-  \item a human-validated method for extracting \opmad cases from complete scientific articles with an LLM; and
-  \item an evidence-linked, reproducible population of the existing \opmad ontology to support future retrieval and case-based reasoning.
+  \item an evidence-grounded benchmark of linked predictive-maintenance cases from complete articles;
+  \item a controlled comparison of schema-only extraction, fixed-\opmad extraction, and extraction using an ontology evolved from development articles;
+  \item an evaluation of the evolved ontology's coverage, consistency, stability, and reuse across articles; and
+  \item a comparison of manual annotation with correction of fixed- and evolved-ontology prefills.
 \end{enumerate}
-The ontology itself is not a new contribution. The novelty lies in the validated population workflow, the scale and traceability of the resulting case base, and findings derived only from fields shown to be reliable.
 
-\operational{Working-manuscript constraint: this draft uses the generic IEEE journal \LaTeX{} template and a ten-page target; no target venue has yet been selected.}
+The study is a challenge-set evaluation rather than a systematic mapping study. It supports comparative claims about the evaluated workflows, not field-wide claims about predictive-maintenance models.
 
-\section{Review Scope and Research Questions}
-\label{sec:scope}
+\section{Background}
+\label{sec:background}
 
-\subsection{Scope}
+\subsection{Fixed OPMAD Representation}
 
-The target corpus comprises English-language, open-access full-text journal and conference articles indexed in Scopus and published in 2025--2026. Eligible studies report at least one implemented model for an \opmad-representable diagnostic or prognostic function on an engineered maintainable item. The study is a systematic mapping study, not an effectiveness review or meta-analysis: it can characterize the solution space and identify associations or evidence gaps, but it cannot determine a universally best model because \opmad does not represent enough experimental context to make performance values comparable across studies.
+\opmad was developed to support predictive-maintenance architecture design and ontology-enabled case-based reasoning~\cite{MonteroJimenez2021OPMADCBR}. The present study uses an authoritative, checksummed \opmad artifact. Specific assets and models are represented as labelled individuals. The fixed condition populates the ontology without changing its classes, properties, or axioms.
 
-Claims are explicitly limited to:
-\begin{itemize}
-  \item Scopus-indexed literature retrieved through a documented search;
-  \item the 2025--2026 publication period and the 25 August 2026 search-date cutoff;
-  \item English-language, open-access journal and conference articles; and
-  \item empirical diagnostic and prognostic applications expressible using unchanged \opmad terms.
-\end{itemize}
-Because the search cutoff precedes the end of 2026, the incomplete 2026 portion is not interpreted as an annual trend.
+Related work constrains LLM relation extraction to ontology terms and relations to reduce unsupported output~\cite{Vukovic2024DialogueOntologyRE}, and uses dictionaries and ontologies to extract semantics from noisy maintenance records~\cite{Dixit2021MaintenanceSemantics}. Recent maintenance-report extraction also combines an ontology schema, constrained inference, and evidence localization~\cite{Zhou2026GCIEOM}. These approaches do not compare a fixed domain ontology with a development-evolved ontology on linked cases from complete scientific articles.
 
-\subsection{Overarching Research Question}
+The benchmark focuses on the core information needed to distinguish a predictive-maintenance case: documentary source, maintainable item, maintenance function, condition data, model or coordinated model set, relations among those elements, and supporting evidence. This narrower target avoids turning fields such as heterogeneous performance values into a common effectiveness scale.
 
-\begin{quote}
-\emph{What model-selection patterns are reported in 2025--2026 English-language, open-access predictive-maintenance journal and conference articles indexed in Scopus for different diagnostic and prognostic functions, maintainable systems, and available condition data, and how reliably can an \opmad-guided LLM workflow recover this knowledge from their full texts?}
-\end{quote}
+\subsection{Ontology Evolution with OntoCast}
 
-\subsection{Research Questions}
+\ontocast supports both extraction against a supplied ontology and ontology-and-fact generation from documents~\cite{Belikov2025OntoCast}. In the evolved condition, the system receives development articles without the \opmad domain seed. It induces and consolidates an ontology from those examples. The resulting ontology is frozen before held-out extraction.
+
+Recent LLM ontology-learning work evaluates term typing, taxonomy discovery, and non-taxonomic relation extraction~\cite{Giglou2023LLMs4OL}; end-to-end work also evaluates semantic and structural graph quality~\cite{Lo2024EndToEndOL}. The present study instead tests how the ontology-construction decision changes downstream case extraction and curation.
+
+This design tests whether an induced vocabulary transfers to unseen articles. It also separates ontology construction cost from held-out extraction cost. An ontology evolved independently for every held-out paper may improve local fit while preventing stable cross-paper comparison, so per-paper adaptive evolution is reserved for an exploratory analysis.
+
+\subsection{Human-in-the-Loop Curation}
+
+The assisted conditions present extracted cases and evidence in the same review interface used for manual annotation. Reviewers can add, delete, relink, or normalize values and can replace unsupported evidence. The primary human outcome is time to a record that agrees with the adjudicated reference. First-pass quality and the types of required corrections are also retained.
+
+Ontology-guided scientific-literature extraction with human validation has been demonstrated across tasks~\cite{Chhetri2025StructSense}, while systematic-review experiments show that LLM-extracted data still need explicit human validation~\cite{Schroeder2025AIAssistedDataExtraction}. The study therefore measures correction effort and unsupported evidence, not annotation time alone.
+
+\section{Research Questions}
+\label{sec:research-questions}
 
 \begin{table*}[!t]
 \caption{Research questions.}
@@ -90,269 +88,208 @@ Because the search cutoff precedes the end of 2026, the incomplete 2026 portion 
 \toprule
 \textbf{ID} & \textbf{Question} \\
 \midrule
-PM-RQ1 & On which maintainable systems, and for which diagnostic or prognostic functions, have predictive-maintenance models been implemented? \\
-PM-RQ2 & Given the predictive-maintenance function, maintainable-item type, and available condition data, which model types and specific models are used? \\
-PM-RQ3 & How are predictive-maintenance solutions configured and evaluated in terms of single- versus multi-model approaches, online/off-line synchronization, and reported performance indicators? \\
-M-RQ1 & How accurately and efficiently can an \opmad-guided LLM workflow instantiate predictive-maintenance cases from full-text articles compared with independent expert annotation? \\
+RQ1 & How accurately do schema-only, fixed-\opmad, and development-evolved ontology workflows extract complete, evidence-grounded predictive-maintenance cases? \\
+RQ2 & Which useful concepts and relations does the evolved ontology add, miss, duplicate, or represent inconsistently relative to \opmad and the benchmark information needs? \\
+RQ3 & How stable is the evolved ontology across repeated runs, development-document orderings, and increasing numbers of development examples? \\
+RQ4 & How do fixed-\opmad and evolved-ontology prefills affect human annotation time, correction effort, and first-pass quality relative to manual annotation? \\
 \bottomrule
 \end{tabularx}
 \end{table*}
 
-\subsection{Analytical Focus}
+\section{Study Design}
+\label{sec:study-design}
 
-PM-RQ1 maps the distribution and co-occurrence of \opmad predictive-maintenance functions, maintainable items and item types, publication years and sources, and the number of distinct cases represented by each article. PM-RQ2 examines relationships among function, maintainable item and item type, input record or data form, data variables, specific models, and the existing \opmad model-type categories: data-driven, physics-based, knowledge-based, and their combinations. This question directly addresses \opmad's intended use in representing previous cases that can inform model selection for new predictive-maintenance systems.
+The study contains three linked evaluations. First, all extraction conditions are evaluated against the same held-out gold records. Second, the fixed and evolved ontologies are evaluated as representations independently of fact-extraction scores. Third, a human study measures the effect of ontology-backed prefills on curation effort.
 
-PM-RQ3 covers single- versus multi-model configurations, combinations of the existing model-type categories, online, off-line, or both synchronization modes, and reported performance indicators and values. Missing or unclear reporting is analyzed only when it can be distinguished from extraction failure. Detailed parallel, serial, or embedded model architectures are not inferred unless the fixed \opmad version represents them.
+The development partition supports codebook refinement, prompt development, ontology evolution, output alignment, and annotator training. The held-out partition is sealed before the extraction configurations and evolved ontology are frozen. No held-out text or annotation can influence ontology evolution, prompt selection, normalization rules, or the crosswalk used for primary evaluation.
 
-M-RQ1 evaluates \opmad coverage; entity accuracy for assets, variables, models, indicators, and documentary metadata; relation accuracy for the correct linkage of each model to its function, asset, inputs, configuration, and performance indicator; case-boundary accuracy; normalization accuracy; evidence grounding and hallucination rates; error in corpus-level prevalence estimates; and human annotation and adjudication effort relative to a fully manual review. It evaluates workflow reliability against an independent expert gold standard, not whether ontology guidance outperforms a non-ontological alternative. Flat-schema ablations and title/abstract-only comparisons are outside the study scope.
+\subsection{Challenge-Set Corpus}
+\label{sec:corpus}
 
-\section{Methods}
-\label{sec:methods}
+The planned corpus contains approximately 32 recent open-access predictive-maintenance articles: eight development articles and 24 held-out articles. Candidate articles come from a documented broad literature retrieval, but only selected challenge-set articles undergo final eligibility verification. The challenge set is purposive and is not intended to represent publication prevalence.
 
-\subsection{Search and Study Selection}
-\label{sec:search}
+An article is eligible when it reports an implemented and evaluated diagnostic or prognostic model for an engineered maintainable item and provides a usable matching full text. Reviews, conceptual architectures without an implemented model, and studies of non-engineered targets are excluded.
 
-\subsubsection{Information source and search limits}
-
-Scopus is the sole information source, accessed through its API using the same query syntax as the Scopus web interface. The final primary search (S1), reproduced in Appendix~\ref{app:scopus-search}, is the union of a maintenance/prognostic title-anchor query (S1a) and a diagnostic/condition title-anchor query (S1b). Both queries limit retrieval to English-language, open-access journal articles (document type \texttt{ar}) and conference papers (document type \texttt{cp}) published in 2025--2026. The search-date cutoff was 25 August 2026.
-
-A pilot Scopus retrieval characterized residual out-of-field retrieval and the resulting screening workload. No sentinel set was used because the candidate literature is intentionally broad. The search strings are aligned with the diagnostic/prognostic scope without being limited to exact \opmad labels. The final reconciled S1a and S1b exports contained 1,219 and 1,642 records, respectively. Deduplication of their 2,861 source records by Scopus Paper ID and DOI produced 2,770 pre-screening candidate records. Eligibility is determined through documented title/abstract and full-text screening, not by requiring a noise-free query.
-
-\operational{Operational recordkeeping: archive exact API execution times, complete executed queries, filters, deduplication decisions, screening decisions, and exclusion reasons; replace the current project-local archive path with a persistent release location before submission. A formal PRESS-style external search-strategy review has been discarded.}
-
-\subsubsection{Eligibility criteria}
-
-The protocol specifies that a record is included when it:
+Maximum-variation selection covers:
 \begin{itemize}
-  \item is an English-language Scopus journal article or conference paper published in 2025--2026 and has an open-access full text that matches the bibliographic record;
-  \item reports an implemented and evaluated predictive-maintenance model or coordinated model set, using data, simulation, laboratory, or operational evidence;
-  \item concerns an engineered physical maintainable item or component; and
-  \item addresses at least one existing \opmad diagnostic or prognostic function: fault detection, fault feature extraction, fault identification, health assessment, health modelling, one- or multiple-step future-state forecasting, or remaining useful life estimation.
+  \item diagnostic and prognostic functions;
+  \item different maintainable-item types;
+  \item single-model and coordinated multi-model solutions;
+  \item single-case and multi-case articles; and
+  \item evidence reported in prose or tables.
 \end{itemize}
+Selection does not use outputs from any evaluated extraction condition. PDF quality is not a selection or stratification variable. Document-processing failures are recorded as execution failures. Articles with licences that permit release of derived annotations and short evidence excerpts are preferred.
 
-A record is excluded when it is a review, editorial, book chapter, duplicate, or lacks a usable matching open-access full text. It is also excluded when its primary target is a human patient or clinical outcome, biological organism or process, software or IT service, business or social outcome, natural system, or civil/geotechnical infrastructure rather than an industrial or electromechanical asset. Finally, records describing only generic AI, control, optimization, maintenance scheduling, inventory, or conceptual architectures without an implemented diagnostic or prognostic model are excluded.
+\subsection{Representation-Neutral Annotation Target}
+\label{sec:annotation-target}
 
-Search reporting follows PRISMA-S~\cite{Rethlefsen2021PRISMAS}; study selection will be shown in a PRISMA 2020 flow diagram~\cite{Page2021PRISMA}. The metadata-only OA-restriction sensitivity analysis in Appendix~\ref{app:oa-sensitivity} does not determine final study inclusion.
-
-\subsubsection{Screening procedure}
-\label{sec:screening}
-
-After forming the S1 union, records are deduplicated first by Scopus Paper ID and then by normalized DOI. Title/year similarity alone never triggers an automatic merge; uncertain matches are manually adjudicated, and retained records preserve source-query provenance.
-
-Two reviewers independently screen every deduplicated record. At title/abstract screening, only a concordant exclusion stops a record; uncertain or discordant records proceed to full text. At full-text screening, both reviewers apply all eligibility criteria and verify that the accessible open-access text matches the bibliographic record. Final study selection is human-only: no LLM output can affect a record's inclusion, exclusion, or screening priority.
-
-The decision log retains each reviewer decision, stage, final decision, and one primary exclusion reason: ineligible bibliographic record/publication, out-of-scope target, no implemented eligible diagnostic or prognostic model, or unavailable/mismatched usable open-access full text. Disagreements are resolved by discussion, then by a third reviewer if needed. The log supplies the PRISMA counts.
-
-\subsubsection{Retrospective LLM-Screening Benchmark}
-\label{sec:screening-benchmark}
-
-The frozen adjudicated log will support a retrospective benchmark of title/abstract triage. The core input is the title and abstract; an optional metadata-aware track adds publication year and S1 stratum. Systems receive neither full text nor external retrieval. The gold standard is the final human full-text inclusion decision and primary exclusion reason. Human screeners are blinded to LLM outputs, which are generated only after the relevant human decisions are frozen.
-
-Each system returns \emph{exclude}, \emph{review}, or \emph{include}, a confidence score, and a primary reason. Prompt, model, and confidence-threshold selection use a development partition; a held-out partition stratified by final decision, S1 stratum, and year is sealed before selection. The primary measure is recall of final included studies when only \emph{exclude} outputs above that threshold are treated as automated removals. Secondary measures are exclusion precision, false exclusions, review workload, calibration, primary-reason agreement, and results by S1 stratum, year, human uncertainty, and exclusion reason; overall accuracy is secondary.
-
-\operational{Before final screening, timestamp this protocol; retrieve and audit every included PDF for title/DOI matching and text/OCR quality; then complete the PRISMA-S report and PRISMA 2020 flow diagram.}
-
-\subsection{OPMAD Case Representation}
-\label{sec:case-representation}
-
-\opmad remains immutable: the study populates its ABox rather than modifying its TBox. Table~\ref{tab:opmad-operationalization} maps the review information to existing \opmad terms.
+The gold annotation is defined from the model-selection information need rather than from the native serialization of either ontology. Table~\ref{tab:annotation-target} summarizes the required elements.
 
 \begin{table*}[!t]
-\caption{Review information and existing \opmad targets.}
-\label{tab:opmad-operationalization}
+\caption{Core benchmark annotation target.}
+\label{tab:annotation-target}
 \centering
-\small
-\begin{tabularx}{\textwidth}{@{}p{0.31\textwidth}X@{}}
+\begin{tabularx}{\textwidth}{@{}p{0.23\textwidth}X@{}}
 \toprule
-\textbf{Review information} & \textbf{Existing \opmad target} \\
+\textbf{Element} & \textbf{Annotation requirement} \\
 \midrule
-Predictive-maintenance purpose & \texttt{Predictive\_maintenance\_module\_function} and its existing subclasses \\
-Maintained system & \texttt{Maintainable\_item} and \texttt{item\_type} \\
-Input record and variables & \texttt{maintainable\_item\_record} and \texttt{Data\_variable} \\
-Specific solution & \texttt{Predictive\_maintenance\_model} \\
-Broad model family & \texttt{Model\_type} \\
-Single/multi-model arrangement & \texttt{Model\_configuration} \\
-Online/off-line operation & \texttt{Module\_synchronization} \\
-Evaluation measure and result & \texttt{Performance\_indicator} and \texttt{Performance\_value} \\
-Documentary source & \texttt{Predictive\_Maintenance\_Article}, \texttt{Article\_title}, \texttt{Article\_identifier}, and \texttt{Publication\_year} \\
+Documentary source & Stable corpus identifier and verified bibliographic identity from the corpus manifest. \\
+Case boundary & A distinct implemented function--item--data--model combination. Articles may contain zero, one, or multiple cases. \\
+Maintainable item & Raw item name and a normalized item label when the codebook supports one. \\
+Maintenance function & The diagnostic or prognostic function fulfilled by the model or coordinated model set. \\
+Condition data & Input record or modality and the variables needed to distinguish the case. \\
+Model set & Specific model names and the grouping needed to distinguish a single model from a coordinated set. \\
+Relations & Correct links among the item, function, condition data, and model set within each case. \\
+Evidence & Exact quotation and document location supporting every analytical assertion. \\
 \bottomrule
 \end{tabularx}
 \end{table*}
 
-Specific model and maintainable-item names are represented as labelled instances rather than newly invented ontology classes. No new predictive-maintenance classes, properties, or formal taxonomy are introduced. Supporting quotations, page/section locations, extraction status, confidence, and human-adjudication status are retained in a sidecar annotation dataset or separate provenance layer. Missingness and review-workflow metadata are not encoded as new \opmad concepts.
+Detailed performance values and synchronization status are outside the required core benchmark. They may be retained as optional annotations when they are explicit, but they do not determine primary extraction scores.
 
-The unit of analysis is an \opmad predictive-maintenance case, not necessarily an article. Each case binds at least one documentary source, one maintainable item, one predictive-maintenance function, the model or coordinated model set fulfilling that function, and the corresponding condition data. Model configuration, synchronization, model type, performance indicator, and performance value are associated attributes when reported. An article can therefore yield zero, one, or several cases.
+The codebook defines how to split articles containing multiple assets, tasks, experiments, model stages, or evaluation variants. It also distinguishes an absent fact from an unclear statement, a non-applicable field, and an extraction failure. Raw source wording is retained beside every normalized value.
 
-\operational{Before extraction, freeze the authoritative \opmad source artifact by version and checksum; select only existing terms needed for its competency questions and mechanically verify the extraction profile; and document operational definitions for every field and relation. Unreported, unclear, not-applicable, and extraction-failure states must remain outside \opmad.}
+\subsection{Development and Gold Annotation}
+\label{sec:gold}
 
-\subsection{LLM-Assisted Extraction and Provenance}
-\label{sec:extraction}
+The eight development articles are annotated and discussed during codebook refinement. The guide is frozen before held-out work begins. Held-out articles receive two independent blank-form annotations by trained reviewers who are blinded to all LLM outputs. Agreement is measured before adjudication. Disagreements are resolved against the complete article, and the resulting evidence-linked record is frozen before automated evaluation.
 
-The final workflow processes complete article texts and instantiates \opmad cases under a frozen configuration. That configuration covers the \opmad version and extraction profile, LLM provider and exact model, prompts and decoding parameters, document parser and OCR path, sectioning and chunking policy, retry and failure policy, normalization rules, and software revisions. Each analytical assertion retains a link to its supporting text span. Outputs remain isolated by article until corpus-level cases are constructed.
+The unit used for uncertainty estimation is the article. All cases and assertions from an article remain together during resampling and data partitioning.
 
-\operational{Existing bulk-run artifacts are development experiments only. The publication corpus and final extraction outputs must be regenerated under the frozen protocol, without mixing development runs with final-study outputs. Insert the final pipeline description and machine-readable run manifest after configuration freeze.}
+\section{Extraction Conditions}
+\label{sec:conditions}
 
-\subsection{Human Gold Standard and Validation}
-\label{sec:validation}
+\begin{table*}[!t]
+\caption{Primary automated extraction conditions.}
+\label{tab:conditions}
+\centering
+\begin{tabularx}{\textwidth}{@{}p{0.16\textwidth}p{0.25\textwidth}X@{}}
+\toprule
+\textbf{Condition} & \textbf{Ontology input} & \textbf{Held-out behavior} \\
+\midrule
+Schema-only & Field names, datatypes, cardinalities, and output format without domain ontology definitions. & Produces the common case representation directly. \\
+Fixed \opmad & Frozen authoritative \opmad profile with labels, hierarchy, axioms, and relation constraints. & Extracts facts only. It cannot add or alter \opmad terms. \\
+Evolved & Consolidated ontology induced by \ontocast from development articles without the \opmad domain seed. & Uses the frozen induced ontology for facts-only extraction. No held-out evolution is allowed. \\
+\bottomrule
+\end{tabularx}
+\end{table*}
 
-\subsubsection{Minimum human-extraction sample}
+\subsection{Controlled Configuration}
 
-The minimum human-extraction set is 250 unique included articles with verified usable full texts. Before final system tuning, stratified random sampling assigns 50 articles to development and 200 to a frozen held-out set. Every selected article receives a complete manual \opmad case extraction, not a spot check. The held-out articles are independently extracted by two annotators blinded to LLM output and then adjudicated into a frozen gold record. This requires at least 450 complete human extraction passes across 250 papers. Annotations record complete cases and supporting evidence rather than isolated labels; human agreement is measured before evaluating the LLM workflow.
+All conditions use the same LLM provider and model, complete article text, document parser, sectioning policy, decoding settings, retry policy, and evidence requirements. Held-out extraction receives comparable request and token budgets. Prompt content differs only where the ontology condition requires it. The study records actual models, requests, tokens, latency, retries, failures, and software revisions.
 
-The 200 held-out papers are a conservative precision floor. For a binary paper-level accuracy or prevalence estimate under simple random sampling, \(n = 1.96^2 \times 0.5(1-0.5)/0.07^2 = 196\); rounding up to 200 gives a 95\% Wilson interval with a 6.9-percentage-point half-width at the maximum-variance \(p=0.5\) case~\cite{Wilson1927}. The calculation does not apply a finite-population correction. The sampling frame is all included articles, stratified by function, asset type, model type/configuration, article complexity, publication year, and PDF/OCR quality; multi-case and multi-model articles must be represented. Any disproportionate oversampling uses inclusion weights for corpus estimates. Confidence intervals resample papers, retaining all cases within a paper, rather than treating cases as independent. The sample must be enlarged if a reportable field or relation lacks enough gold-positive instances for its prespecified precision. If fewer than 250 articles are included, every article will receive complete human extraction and the paper will report a census rather than claim the planned 200-paper held-out precision.
+Source bibliographic identity comes from the verified corpus manifest rather than from LLM extraction. Each article remains isolated until its cases have been constructed. The final workflow preserves page, section, and text-span provenance through extraction and normalization.
 
-Evaluation reports field- and case-level performance with uncertainty intervals. Metrics include precision, recall, F1, multi-label agreement, exact-match accuracy for controlled values, relation-level F1, evidence-entailment rate, complete-case accuracy, and absolute error in aggregate corpus estimates. It also distinguishes hallucinated, conflated, mislinked, and omitted facts, and measures the human annotation and adjudication effort relative to a fully manual review.
+\subsection{Ontology Evolution Protocol}
+\label{sec:evolution}
 
-Acceptance criteria are prespecified before held-out evaluation. A domain result is reported from automatic extraction only when its required fields meet those criteria; otherwise, affected fields are manually completed, clearly qualified, or excluded from the corresponding predictive-maintenance question. The methodological objective is to establish whether the workflow is reliable enough for assisted evidence synthesis, not to conduct an ontology-benefit ablation or a title/abstract-only comparison.
+The primary evolved ontology is produced from the complete development texts under a prespecified article order and configuration. Ontology critique and evolution are enabled during development. Corpus-level consolidation resolves repeated or competing terms. The final graph is checked for parseability and logical or structural violations, then frozen by version and checksum.
 
-\operational{Before held-out evaluation, set field-specific acceptance criteria, finalize the confidence-interval/resampling procedure, and document the detailed adjudication process.}
+A development-only selection rule determines the primary evolved ontology. Repeated evolution runs and alternative development-article orderings measure stability. A secondary learning-curve analysis evolves ontologies from nested subsets of two, four, and eight development articles. These analyses do not select a new ontology after held-out results are known.
 
-\subsection{Predictive-Maintenance Synthesis}
-\label{sec:synthesis}
+A run that reaches only salvage output without satisfying the prespecified convergence and integrity criteria is a failed primary run. Salvaged graphs may be analyzed separately as implementation failures.
 
-The synthesis reports study and case counts separately. It summarizes systems, functions, condition data, models, and model types; analyzes cross-tabulations and association patterns among problem and solution attributes; compares single- and multi-model use across functions and assets; and summarizes synchronization and performance-indicator reporting. Sparse combinations are interpreted only after checking extraction recall and corpus coverage. Sensitivity analyses address extraction error and the open-access corpus boundary.
+\subsection{Common Projection and Native Evaluation}
+\label{sec:projection}
 
-The synthesis may identify approaches that are common or uncommon in particular contexts, but it does not rank models by effectiveness across incomparable datasets, metrics, and experiments.
+Automated extraction metrics require a common target. A crosswalk from the evolved ontology to the representation-neutral benchmark fields is developed and frozen using development data only. Terms first observed in held-out output are not silently forced into an existing field. They are flagged as unmapped and evaluated in the native-ontology analysis.
+
+The evolved ontology is also evaluated in its own vocabulary. This prevents a fixed-ontology projection from hiding useful new distinctions. Conversely, native class and triple counts are treated as descriptive quantities rather than evidence of ontology quality.
+
+\section{Human-in-the-Loop Experiment}
+\label{sec:human-study}
+
+The manual timings collected during held-out gold annotation provide the unassisted baseline. A stratified subset of approximately 12 held-out articles then receives two additional review sessions:
+\begin{enumerate}
+  \item correction of a fixed-\opmad prefill; and
+  \item correction of an evolved-ontology prefill projected into the common review form.
+\end{enumerate}
+
+Reviewers assigned to an assisted session have not previously annotated that article. Roles rotate across articles so that reviewer identity is not tied to one condition. Article assignment is balanced for function, asset type, case count, and model-set complexity. Each reviewer receives the same instructions and interface, and the order of assisted conditions is counterbalanced.
+
+The interface records elapsed time and atomic edits. Edit categories include additions, deletions, relinking, normalization changes, case splits or merges, and evidence replacement. A submitted record is compared with the frozen gold standard. Adjudicators remain blinded to the source condition when resolving any evaluation ambiguity.
+
+The human study compares time at a stated level of quality. A faster annotation with more unsupported accepted suggestions is not treated as an improvement. A schema-only prefill may be added as a secondary human condition if the available annotation budget supports it.
+
+\section{Evaluation and Analysis}
+\label{sec:evaluation}
+
+\subsection{Extraction Quality}
+
+Primary extraction measures are:
+\begin{itemize}
+  \item entity precision, recall, and F1 for items, functions, condition data, and models;
+  \item relation-level precision, recall, and F1;
+  \item case-boundary and complete-case exact match;
+  \item evidence-span support and entailment rates; and
+  \item separate counts of hallucinated, omitted, conflated, and mislinked facts.
+\end{itemize}
+
+Matching rules for raw labels, normalized labels, coordinated model sets, and partially overlapping evidence spans are fixed on development data. Confidence intervals resample articles rather than individual assertions. Pairwise system comparisons use the same held-out articles.
+
+\subsection{Ontology Quality}
+
+The fixed and evolved ontologies are compared on:
+\begin{itemize}
+  \item coverage of the benchmark information needs and relevant competency questions;
+  \item supported novel classes and relations;
+  \item missing, redundant, near-duplicate, and inconsistently scoped terms;
+  \item logical and structural integrity;
+  \item reuse of concepts across development and held-out articles;
+  \item stability across repeated runs and article orderings; and
+  \item effort required to align native output with the common case representation.
+\end{itemize}
+
+Two reviewers validate claims that an evolved term is useful, redundant, unsupported, or outside \opmad. Disagreements are adjudicated using the term definition, ontology context, and source evidence.
+
+\subsection{Human Effort and Quality}
+
+Human outcomes include:
+\begin{itemize}
+  \item time to submitted annotation;
+  \item time to an adjudicated correct case set;
+  \item additions, deletions, relinking, normalization, and evidence corrections;
+  \item unsupported suggestions accepted by the reviewer;
+  \item facts omitted despite being present in the prefill or article; and
+  \item field-, relation-, and complete-case quality before adjudication.
+\end{itemize}
+
+Primary comparisons are paired by article where the design permits. Analysis reports effect estimates and uncertainty intervals rather than relying only on null-hypothesis significance. Reviewer and article effects are retained in the analysis model.
 
 \section{Results}
 \label{sec:results}
 
-\subsection{Study Selection and Corpus Characteristics}
-\todo{Insert the PRISMA 2020 flow diagram, corpus counts, sources, publication-year coverage, and full-text quality results.}
+\subsection{Benchmark Characteristics}
+\todo{Report the development and held-out composition, article and case counts, function and asset coverage, and single- versus multi-case complexity.}
 
-\subsection{Workflow Validation}
-\todo{Insert human-agreement results, gold-standard extraction metrics, error taxonomy, evidence-grounding results, and aggregate-estimate error.}
+\subsection{Automated Extraction}
+\todo{Compare schema-only, fixed-OPMAD, and evolved-ontology extraction at entity, relation, evidence, and complete-case levels.}
 
-\subsection{Predictive-Maintenance Evidence Map}
-\todo{Report study and case counts separately, then answer PM-RQ1 through PM-RQ3 using only validated fields.}
+\subsection{Evolved Ontology Coverage and Stability}
+\todo{Report competency-question coverage, supported novel terms, redundancy, integrity, cross-document reuse, learning curves, and run/order stability.}
+
+\subsection{Human Annotation Effort}
+\todo{Report manual and assisted time, correction operations, first-pass quality, accepted unsupported suggestions, and paired article-level differences.}
 
 \section{Discussion}
 \label{sec:discussion}
 
-\todo{Interpret model-selection patterns without treating heterogeneous reported performance values as a common effectiveness scale. Discuss \opmad scope, open-access restriction, Scopus-only coverage, PDF parsing, and remaining LLM error.}
+\todo{Interpret the trade-off between fixed semantic comparability and evolved representational coverage. Relate automated accuracy to actual human correction effort. Discuss when ontology evolution is worth its construction and alignment cost.}
+
+The discussion will distinguish ontology limitations from extraction failures. It will also distinguish useful domain additions from document-specific vocabulary that reduces cross-paper comparability.
+
+\subsection{Limitations}
+
+The challenge set is small and deliberately heterogeneous, so it cannot support estimates of field prevalence. Results depend on one domain ontology, one ontology-evolution implementation, the selected development examples, and the evaluated LLM configurations. Mapping an evolved vocabulary into a common target introduces alignment decisions. Repeated evolution runs can characterize, but cannot eliminate, stochastic and order-dependent behavior. Human-effort estimates also depend on annotator expertise, training, and interface design.
 
 \section{Conclusion}
 \label{sec:conclusion}
 
-\todo{Summarize the validated workflow, the evidence map, and the reusable evidence-linked \opmad case base.}
+\todo{State whether fixed OPMAD, development-evolved ontology support, or schema-only extraction offered the best trade-off among case accuracy, coverage, stability, and human effort. Avoid claiming universal superiority beyond the evaluated challenge set.}
 
 \section*{Data and Code Availability}
-\todo{State the repository/release location for search strings, screening decisions where permitted, corpus metadata, prompts, code, annotation guide, derived cases, evidence locations, and evaluation outputs. Do not redistribute PDFs unless their individual licenses permit it.}
+\todo{Provide a persistent release containing corpus metadata, eligibility decisions for selected articles, annotation instructions, adjudicated cases, evidence locations, prompts, fixed and evolved ontology artifacts, crosswalks, run manifests, timing/edit logs, evaluation code, and result tables. Do not redistribute full articles unless their licences permit it.}
 
-\appendices
-\section{Final Scopus Search Strategy}
-\label{app:scopus-search}
-
-The final S1 strategy is the deduplicated union of S1a and S1b. Both strings use native Scopus API filters and the eligibility criteria in Section~\ref{sec:search} remain the final inclusion decision. Their title anchors reduce incidental retrieval while the title/abstract asset block protects coverage of engineered maintainable items. Ambiguous CBM, PHM, and RUL abbreviations are constrained by adjacent functional terms rather than searched alone. \operational{The exact query files and complete API exports are currently archived in \texttt{.searches/scopus-final-2026-08-25/}; cite a persistent release location in the final paper.}
-
-\subsection{S1a: Maintenance and prognostic title anchor}
-
-\lstinputlisting[
-  caption={Final S1a Scopus API query.},
-  label={lst:scopus-s1a}
-]{../keywords_predictive_maintenance_scopus.txt}
-
-\subsection{S1b: Diagnostic and condition title anchor}
-
-\lstinputlisting[
-  caption={Final S1b Scopus API query.},
-  label={lst:scopus-s1b}
-]{../keywords_predictive_maintenance_scopus_diagnostic.txt}
-
-\subsection{S2: Open-access sensitivity query}
-
-For a metadata-only assessment of potential open-access selection bias, rerun each final API query after deleting only its leading OA predicate:
-\begin{center}
-\texttt{OPENACCESS(1) AND}
-\end{center}
-\operational{S2 must not be merged into the final full-text corpus unless the protocol is formally amended.}
-
-\clearpage
-\section{Open-Access Restriction Sensitivity Analysis}
-\label{app:oa-sensitivity}
-
-This appendix reports the final metadata-only OA-restriction sensitivity analysis, not an included-study analysis. S2a was formed by deleting only the leading \texttt{OPENACCESS(1) AND} predicate from final S1a. S2b was formed the same way from final S1b; it was retrieved as disjoint 2025 and 2026 partitions after the unpartitioned API request reached its 200-page rate ceiling. The partition totals summed exactly to the unpartitioned S2b source total.
-
-Every record had a Scopus Paper ID, DOI, title, year, and abstract. Repeated API passes were reconciled by Paper ID only when their unique-ID union equalled the stable source total: three passes for S1a, four for S2a, five for the 2025 S2b partition, and three for the 2026 S2b partition. Thus, recovery passes did not increase the reported source counts. ``Non-OA'' below denotes the complement of the matched OA set in the all-access S2 universe, not a separately verified licence classification.
-
-\begin{table}[H]
-\caption{Final OA-restriction sensitivity comparison.}
-\label{tab:oa-pilot-counts}
-\centering
-\small
-\begin{tabular}{lr}
-\toprule
-\textbf{Candidate-record set} & \textbf{Records} \\
-\midrule
-Raw S1 OA-filtered source records & 2,861 \\
-Distinct S1 OA records & 2,770 \\
-Raw S2 all-access source records & 9,324 \\
-Distinct S2 all-access records & 9,036 \\
-Matched OA records & 2,770 (30.7\%) \\
-Non-OA complement & 6,266 (69.3\%) \\
-\bottomrule
-\end{tabular}
-\end{table}
-
-The OA restriction retained 30.7\% of the matched all-access candidate universe. The OA subset was slightly more recent (2026: 44.6\% versus 40.0\% in the complement) and slightly more diagnostic-anchor dominated (56.0\% versus 53.1\% diagnostic-only records). The 2026 portion is incomplete because the search occurred before the end of the year.
-
-\subsection{Textual similarity and topic markers}
-
-No author or indexed keywords were available in the exports, so this analysis used title-plus-abstract text. After removal of generic scientific and query wording, unigram/bigram document-frequency profiles had high cosine similarity (0.988; 1.0 is identical), Jensen--Shannon divergence of 0.275 (0 is identical), and overlap of 17 of the 20 and 89 of the 100 most prevalent terms. A five-fold held-out text-only OA-status classifier had AUC 0.66 and balanced accuracy 0.61 (0.50 is chance). Within the maintenance/prognostic and diagnostic/condition strata, AUC was 0.63 and 0.66, respectively. Thus, the candidate sets have broad topical overlap but are not textually interchangeable.
-
-Table~\ref{tab:oa-topic-markers} gives selected multi-label markers. Each marker was counted at most once per record. The term differences are descriptive of the retrieved candidate records; they are not screening decisions, OPMAD annotations, or claims about model effectiveness.
-
-\begin{table*}[!t]
-\caption{Selected title/abstract topic markers in the final matched OA sensitivity analysis.}
-\label{tab:oa-topic-markers}
-\centering
-\small
-\begin{tabular*}{\textwidth}{@{\extracolsep{\fill}}lrrr@{}}
-\toprule
-\textbf{Text marker} & \textbf{OA (\%, $n=2{,}770$)} & \textbf{Non-OA (\%, $n=6{,}266$)} & \textbf{Difference (pp)} \\
-\midrule
-RUL or remaining-useful-life terms & 24.8 & 28.9 & $-4.1$ \\
-Life-prediction or prognostic terms & 20.2 & 23.1 & $-2.9$ \\
-Fault-diagnosis terms & 25.5 & 24.6 & $+0.8$ \\
-Fault-detection terms & 18.8 & 17.3 & $+1.5$ \\
-Bearing terms & 19.0 & 17.8 & $+1.2$ \\
-Battery terms & 8.0 & 9.4 & $-1.4$ \\
-CNN or convolutional-neural-network terms & 17.0 & 13.1 & $+3.9$ \\
-LSTM or long-short-term-memory terms & 17.2 & 14.6 & $+2.6$ \\
-Domain-adaptation/generalisation terms & 2.1 & 3.0 & $-0.9$ \\
-\bottomrule
-\end{tabular*}
-\end{table*}
-
-RUL/life-prognostic language remained less prevalent in the OA subset, although the final difference was smaller than in the pilot. Fault-diagnosis and broad asset language were comparatively similar. In contrast, the OA subset contained more CNN/LSTM and F1-metric language, while domain-adaptation language was less common. These are retrieval and reporting signals, not evidence that any model or metric is superior.
-
-\subsection{Source-platform composition and interpretation}
-
-DOI prefixes provide only a source-platform proxy because the export did not populate publication-title or document-type fields. Nevertheless, their composition differs substantially (Table~\ref{tab:oa-doi-prefix}).
-
-\begin{table}[!t]
-\caption{Largest DOI-prefix groups in the final matched comparison.}
-\label{tab:oa-doi-prefix}
-\centering
-\small
-\begin{tabular}{lrrr}
-\toprule
-\textbf{Prefix} & \textbf{All} & \textbf{OA} & \textbf{OA rate} \\
-\midrule
-\texttt{10.1109} (IEEE) & 3,014 & 198 & 6.6\% \\
-\texttt{10.3390} (MDPI) & 787 & 787 & 100.0\% \\
-\texttt{10.1016} (Elsevier) & 1,658 & 498 & 30.0\% \\
-\texttt{10.1007} (Springer) & 1,010 & 122 & 12.1\% \\
-\texttt{10.1038} & 124 & 124 & 100.0\% \\
-\bottomrule
-\end{tabular}
-\end{table}
-
-The main limitation remains source-platform coverage. The OA subset retained only 198 of 3,014 \texttt{10.1109} records (6.6\%; 7.1\% of OA versus 44.9\% of the complement), while it retained every \texttt{10.3390} and \texttt{10.1038} record. An OA-only corpus is appropriate only if claims remain explicitly limited to English-language, Scopus-indexed OA studies; it cannot support field-wide prevalence claims.
-
-This final sensitivity analysis still concerns candidate metadata. It does not apply the implemented-model and engineered-item criteria or verify usable full text and OA licences. \operational{Recalculate the comparison after screening and full-text verification if any field-level synthesis claim extends beyond this explicitly OA-scoped population.}
-
-\clearpage
 \bibliographystyle{IEEEtran}
 \bibliography{references}
 
