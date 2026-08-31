@@ -16,8 +16,9 @@ CONFIG_FILE="${SCRIPT_DIR}/ontocast_full_config.env"
 OUTPUT_DIR="${SCRIPT_DIR}/test_output"
 INPUT_DIR="${OUTPUT_DIR}/input"
 LOG_FILE="${OUTPUT_DIR}/run.log"
-DEFAULT_HEAD_CHUNKS=2
-HEAD_CHUNKS="${ONTOCAST_HEAD_CHUNKS:-${DEFAULT_HEAD_CHUNKS}}"
+# Complete-document processing is the default. Set a positive second argument or
+# ONTOCAST_HEAD_CHUNKS only for an explicitly labelled development run.
+HEAD_CHUNKS="${ONTOCAST_HEAD_CHUNKS:-}"
 
 if [[ $# -lt 1 || $# -gt 2 ]]; then
   echo "Usage: $0 <pdf-path> [head-chunks]" >&2
@@ -27,6 +28,10 @@ fi
 PDF_PATH="$1"
 if [[ $# -eq 2 ]]; then
   HEAD_CHUNKS="$2"
+fi
+if [[ -n "${HEAD_CHUNKS}" && ! "${HEAD_CHUNKS}" =~ ^[1-9][0-9]*$ ]]; then
+  echo "head-chunks must be a positive integer when supplied" >&2
+  exit 2
 fi
 
 if [[ ! -f "${PDF_PATH}" ]]; then
@@ -75,15 +80,23 @@ echo "  input:  ${PDF_PATH}"
 echo "  staged: ${INPUT_DIR}/$(basename -- "${PDF_PATH}")"
 echo "  output: ${OUTPUT_DIR}"
 echo "  log:    ${LOG_FILE}"
-echo "  chunks: ${HEAD_CHUNKS}"
+if [[ -n "${HEAD_CHUNKS}" ]]; then
+  echo "  chunks: first ${HEAD_CHUNKS} (development limit)"
+else
+  echo "  chunks: complete document"
+fi
 echo "  llm:    Pi Codex subscription proxy (${SUBSCRIPTION_PROXY_BASE})"
 
+ontocast_args=(
+  --env-file "${CONFIG_FILE}"
+  --input-path "${INPUT_DIR}"
+)
+if [[ -n "${HEAD_CHUNKS}" ]]; then
+  ontocast_args+=(--head-chunks "${HEAD_CHUNKS}")
+fi
 (
   cd "${REPO_ROOT}"
-  "${ONTOCAST_BIN}" \
-    --env-file "${CONFIG_FILE}" \
-    --input-path "${INPUT_DIR}" \
-    --head-chunks "${HEAD_CHUNKS}"
+  "${ONTOCAST_BIN}" "${ontocast_args[@]}"
 ) 2>&1 | tee -a "${LOG_FILE}"
 
 shopt -s nullglob

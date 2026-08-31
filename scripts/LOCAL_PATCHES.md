@@ -33,6 +33,8 @@ The following patches are applied to the local `external/ontocast` checkout:
 | SPARQL updates | Omits tuple-valued RDF-star terms from generated SPARQL update text instead of serializing invalid updates. |
 | Critics | Accepts scores of 80 or higher and makes optional implicit enrichment/minor fact omissions non-blocking. |
 | Quota handling | Retries the same document after subscription usage-limit errors instead of skipping it. The wait is controlled by `ONTOCAST_QUOTA_RETRY_SECONDS` (default: 900 seconds). |
+| Complete-text chunking | Retains short final chunks and maps every content unit to converted-text offsets, pages, paragraphs, and section headings. |
+| Extraction provenance | Emits full-text locations on chunk URIs under `https://w3id.org/ontocast/fulltext#`, alongside RDF 1.2 statement-to-chunk provenance. |
 
 The fixed OPMAD configuration enables `SKIP_ONTOLOGY_CRITIQUE=true`; the full-evolution configuration intentionally leaves it unset. Both configurations use the local Pi Codex subscription proxy and do not carry OpenAI API keys. To select a newer model, set `LLM_MODEL_NAME` in the OntoCast configuration and set the proxy's actual Pi model with `PI_CODEX_MODEL` (for example, both to `gpt-5.6-luna`). See `pipeline/ontocast_config.env` and `pipeline/full_mode/ontocast_full_config.env`.
 

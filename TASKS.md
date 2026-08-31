@@ -219,14 +219,14 @@ Checked items below were completed in the initial unblocked engineering pass. Ta
 
 ### B6. Make full-text processing publication-grade
 
-- [ ] **T-FULLTEXT-01** — Replace experimental head-chunk defaults with a complete-document mode for final runs.
-- [ ] **T-FULLTEXT-02** — Preserve section, page, paragraph/chunk, and character-span provenance through parsing and extraction.
-- [ ] **T-FULLTEXT-03** — Add PDF text-quality checks and route low-quality files through OCR.
-- [ ] **T-FULLTEXT-04** — Record parser/OCR software versions and settings per document.
-- [ ] **T-FULLTEXT-05** — Detect truncated text, missing pages, duplicated pages, and publisher boilerplate dominance.
-- [ ] **T-FULLTEXT-06** — Keep title, DOI, year, and corpus ID from the verified manifest rather than relying on LLM extraction for authoritative bibliographic identity.
-- [ ] **T-FULLTEXT-07** — Handle tables and multi-column layouts explicitly where they contain model inputs or results.
-- [ ] **T-FULLTEXT-08** — Test complete-document behavior on long and multi-case papers before the final run.
+- [x] **T-FULLTEXT-01** — Added a publication runner that never accepts `--head-chunks`; the development wrappers now process complete documents by default and require an explicit positive limit for a truncated development run.
+- [x] **T-FULLTEXT-02** — Added exact page/section/paragraph/table source maps and an idempotent OntoCast patch that carries converted-text offsets and locations onto chunk URIs linked by RDF 1.2 statement provenance.
+- [x] **T-FULLTEXT-03** — Added a Docling quality gate that retries failed layout-aware selective OCR with forced full-page OCR and retains the better conversion before extraction.
+- [x] **T-FULLTEXT-04** — Added per-document records for parser, layout, table, OCR engine, language, forced-OCR setting, attempts, package versions, and prepared-output checksums.
+- [x] **T-FULLTEXT-05** — Added deterministic checks for truncation, missing/repeated/out-of-order pages, sparse text, near-duplicate pages, conversion errors, and publisher-boilerplate dominance.
+- [x] **T-FULLTEXT-06** — Added a frozen-manifest and PDF-checksum gate; prepared runs retain corpus ID, title, DOI, year, partition, source URL, and licence in an authoritative non-LLM sidecar.
+- [x] **T-FULLTEXT-07** — Enabled Docling layout-order reconstruction and accurate table structure, retained tables in model input, and mapped Markdown/HTML table blocks with page and character spans.
+- [x] **T-FULLTEXT-08** — Added complete-document tests, including all-page/table checks for the 37-page drivetrain article and a live no-LLM Docling/OCR conversion of the 25-page multi-function servomotor article; all 32 current Markdown conversions pass the deterministic audit.
 - [x] **T-FULLTEXT-09** — Convert all 32 PDFs in `extraction_papers/` to page-delimited GLM-OCR Markdown with retained crop images, retaining each source PDF in its matching `markdown/<stem>/` output folder.
 
 ### B7. Preserve usable evidence and provenance
@@ -262,10 +262,10 @@ Checked items below were completed in the initial unblocked engineering pass. Ta
 
 ### B10. Strengthen tests
 
-- [ ] **T-TEST-01** — Add fixtures for one-paper/one-case, one-paper/multiple-cases, and one-case/multiple-models.
+- [x] **T-TEST-01** — Added deterministic fixtures and tests for one-paper/one-case, one-paper/multiple-cases, and one-case/multiple-models.
 - [x] **T-TEST-02** — Add fixtures for missing versus explicit-zero numeric values.
 - [x] **T-TEST-03** — Add fixtures for unreported, unclear, not-applicable, and failed-extraction states.
-- [ ] **T-TEST-04** — Add fixtures for repeated model names across distinct cases and repeated entities across papers.
+- [x] **T-TEST-04** — Added deterministic fixtures and tests for repeated model labels across distinct cases and repeated entity IRIs across document-isolated graphs.
 - [x] **T-TEST-05** — Add tests for namespace consistency with authoritative OPMAD IRIs.
 - [ ] **T-TEST-06** — Add tests for provenance retention and evidence-span round trips.
 - [ ] **T-TEST-07** — Add tests for malformed Turtle, RDF-star conversion, invalid IRIs, encoding problems, and OCR text.

@@ -42,7 +42,7 @@ node tools/pi_codex_openai_proxy.mjs
 ```
 
 - Default model: `gpt-5.6-luna` (override the actual Pi model with `PI_CODEX_MODEL`)
-- Default chunk limit: `--head-chunks 2` (to control subscription usage)
+- Default document scope: every chunk in the converted article
 
 ## OntoCast patches
 
@@ -56,19 +56,19 @@ Full mode deliberately does **not** set `SKIP_ONTOLOGY_CRITIQUE` or an ontology 
 bash pipeline/full_mode/run_full_extraction.sh example_paper.pdf
 ```
 
-Pass an optional second argument to set the chunk limit:
+Pass an optional positive second argument only for an explicitly limited development run:
 
 ```bash
 bash pipeline/full_mode/run_full_extraction.sh example_paper.pdf 2
 ```
 
-The default is two chunks. On Bash, `ONTOCAST_HEAD_CHUNKS` supplies the default when the argument is omitted. The runners clear previous top-level `*.ttl`, `*.json`, and `*.log` files in `pipeline/full_mode/test_output/`, stage the PDF under `test_output/input/`, and then require at least one of each output:
+With no limit, the complete document is processed. On Bash, `ONTOCAST_HEAD_CHUNKS` can also set a development limit. The runners clear previous top-level `*.ttl`, `*.json`, and `*.log` files in `pipeline/full_mode/test_output/`, stage the PDF under `test_output/input/`, and then require at least one of each output:
 
 - `pipeline/full_mode/test_output/ontology_*.ttl`
 - `pipeline/full_mode/test_output/facts_*.ttl`
 - `pipeline/full_mode/test_output/run.log`
 
-OntoCast serializes RDF-star/Turtle-star provenance (`rdf:reifies <<(...)>>`). Stock `rdflib` does not parse that syntax directly. `pipeline/full_mode/sparql_query.py`, `pipeline/facts_to_csv.py`, and the comparison tool remove those provenance statements before their ordinary-Turtle processing; use an RDF-star-capable parser when provenance itself must be retained.
+OntoCast serializes RDF-star/Turtle-star provenance (`rdf:reifies <<(...)>>`). The repository patch also records each chunk's converted-text offsets, pages, paragraphs, and section headings. Stock `rdflib` does not parse RDF 1.2 triple terms directly. `pipeline/full_mode/sparql_query.py`, `pipeline/facts_to_csv.py`, and the comparison tool remove those provenance statements before their ordinary-Turtle processing.
 
 ## Historical validation record
 
@@ -100,7 +100,11 @@ The run still logs:
 Could not import DocumentConverter: No module named 'docling'
 ```
 
-This did **not** block the recorded run, but it remains a runtime warning.
+This did **not** block the historical run, but publication preparation requires Docling and fails closed when it is unavailable. The standard repository requirements install Docling and EasyOCR.
+
+## Publication full-text path
+
+Use `pipeline/run_complete_extraction.*` for study runs. It verifies frozen bibliographic metadata and the PDF checksum, uses Docling's layout, table, and OCR pipeline, retries low-quality text with full-page OCR, and writes page-linked source maps before running full evolution. See [`../FULLTEXT.md`](../FULLTEXT.md).
 
 ## Validation and caveats
 

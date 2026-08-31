@@ -545,6 +545,325 @@ def apply_ontocast(patcher: LocalPatcher) -> None:
         "retry the same document indefinitely after subscription usage limits",
     )
 
+    # --- Patch 12: complete-document source locations and short-tail retention ---
+    patcher.replace_exact(
+        "ontocast",
+        target("onto/content_unit.py"),
+        '        type: Type of content unit (facts or ontology).\n    """\n',
+        '        type: Type of content unit (facts or ontology).\n        char_start: Start offset in the converted full text, inclusive.\n        char_end: End offset in the converted full text, exclusive.\n        page_start: First source page intersecting this unit.\n        page_end: Last source page intersecting this unit.\n        paragraph_start: First converted-text paragraph intersecting this unit.\n        paragraph_end: Last converted-text paragraph intersecting this unit.\n        section_path: Section headings intersecting or containing this unit.\n    """\n',
+        "ContentUnit documents full-text source locations",
+    )
+    patcher.replace_exact(
+        "ontocast",
+        target("onto/content_unit.py"),
+        '    type: OutputType = Field(\n        default=OutputType.FACTS, description="Type of content unit"\n    )\n    _hid: str = PrivateAttr(default="")\n',
+        '    type: OutputType = Field(\n        default=OutputType.FACTS, description="Type of content unit"\n    )\n    char_start: int | None = Field(\n        default=None, ge=0, description="Inclusive offset in converted source text"\n    )\n    char_end: int | None = Field(\n        default=None, ge=0, description="Exclusive offset in converted source text"\n    )\n    page_start: int | None = Field(default=None, ge=1)\n    page_end: int | None = Field(default=None, ge=1)\n    paragraph_start: int | None = Field(default=None, ge=1)\n    paragraph_end: int | None = Field(default=None, ge=1)\n    section_path: list[str] = Field(default_factory=list)\n    _hid: str = PrivateAttr(default="")\n',
+        "ContentUnit carries full-text source locations",
+    )
+    patcher.replace_exact(
+        "ontocast",
+        target("agent/chunk_text.py"),
+        'import logging\n',
+        'import logging\nimport re\n',
+        "chunk_text imports source-location regex support",
+    )
+    patcher.insert_after_exact(
+        "ontocast",
+        target("agent/chunk_text.py"),
+        'logger = logging.getLogger(__name__)\n',
+        '''
+_PAGE_RE = re.compile(r"(?m)^<!--\\s*PDF_PAGE:\\s*(\\d+)\\s*-->\\s*$")
+_HEADING_RE = re.compile(r"(?m)^(#{1,6})\\s+(.+?)\\s*$")
+_PARAGRAPH_RE = re.compile(r"\\S(?:.*?)(?=\\n\\s*\\n|\\Z)", re.DOTALL)
+
+
+def _locate_chunk(source: str, chunk: str, cursor: int) -> tuple[int, int] | None:
+    """Locate an ordered chunk despite harmless boundary whitespace changes."""
+    candidate = chunk.strip()
+    if not candidate:
+        return None
+    start = source.find(candidate, cursor)
+    if start >= 0:
+        return start, start + len(candidate)
+    tokens = re.findall(r"\\S+", candidate)
+    if not tokens:
+        return None
+    flexible = re.compile(r"\\s+".join(re.escape(token) for token in tokens), re.DOTALL)
+    match = flexible.search(source, cursor)
+    if match is None:
+        return None
+    return match.start(), match.end()
+
+
+def _last_page_before(markers: list[tuple[int, int]], position: int) -> int | None:
+    page: int | None = None
+    for offset, number in markers:
+        if offset > position:
+            break
+        page = number
+    return page
+
+
+def _source_metadata(source: str, start: int, end: int) -> dict:
+    page_markers = [(match.start(), int(match.group(1))) for match in _PAGE_RE.finditer(source)]
+    page_start = _last_page_before(page_markers, start)
+    page_end = _last_page_before(page_markers, max(start, end - 1))
+    paragraphs = [match.span() for match in _PARAGRAPH_RE.finditer(source)]
+    paragraph_numbers = [
+        index
+        for index, (left, right) in enumerate(paragraphs, start=1)
+        if left < end and right > start
+    ]
+    heading_matches = list(_HEADING_RE.finditer(source))
+    active: dict[int, str] = {}
+    encountered: list[str] = []
+    for match in heading_matches:
+        if match.start() >= end:
+            break
+        level = len(match.group(1))
+        heading = match.group(2).strip()
+        active = {key: value for key, value in active.items() if key < level}
+        active[level] = heading
+        if match.end() > start and heading not in encountered:
+            encountered.append(heading)
+    containing = [active[key] for key in sorted(active)]
+    section_path = list(dict.fromkeys([*containing, *encountered]))
+    return {
+        "char_start": start,
+        "char_end": end,
+        "page_start": page_start,
+        "page_end": page_end,
+        "paragraph_start": min(paragraph_numbers) if paragraph_numbers else None,
+        "paragraph_end": max(paragraph_numbers) if paragraph_numbers else None,
+        "section_path": section_path,
+    }
+''',
+        "_PAGE_RE =",
+        "chunk_text source-location helpers",
+    )
+    patcher.replace_exact(
+        "ontocast",
+        target("agent/chunk_text.py"),
+        '''def chunk_text(state: AgentState, tools: ToolBox) -> AgentState:
+    """Split text into manageable chunks.
+
+    This function takes the converted document text and splits it into smaller,
+    manageable chunks that can be processed independently.
+
+    Args:
+        state: The current agent state containing the text to chunk.
+        tools: The toolbox instance providing utility functions.
+
+    Returns:
+        AgentState: Updated state with text chunks.
+    """
+    logger.info("Chunking the text")
+    if state.input_text is not None:
+        chunks_txt: list[str] = tools.chunker(state.input_text)
+        logger.info(
+            f"Created {len(chunks_txt)} chunks for processing: {[len(c) for c in chunks_txt]}"
+        )
+
+        if state.max_chunks is not None:
+            logger.info(f"Selecting {state.max_chunks} chunks")
+
+            chunks_txt = chunks_txt[: state.max_chunks]
+
+        for i, chunk_txt in enumerate(chunks_txt):
+            state.content_units.append(
+                ContentUnit(
+                    text=chunk_txt,
+                    index=i,
+                    doc_iri=state.doc_iri,
+                )
+            )
+
+        logger.info(
+            "Created "
+            f"{len(state.content_units)} content units for processing: "
+            f"{[len(c) for c in state.content_units]}"
+        )
+        state.status = Status.SUCCESS
+    else:
+        state.status = Status.FAILED
+
+    return state
+''',
+        '''def chunk_text(state: AgentState, tools: ToolBox) -> AgentState:
+    """Split text into content units while retaining converted-source locations."""
+    logger.info("Chunking the text")
+    if state.input_text is None:
+        state.status = Status.FAILED
+        return state
+    chunks_txt: list[str] = tools.chunker(state.input_text)
+    logger.info(
+        "Created %s chunks for processing: %s",
+        len(chunks_txt),
+        [len(chunk) for chunk in chunks_txt],
+    )
+    if state.max_chunks is not None:
+        logger.info("Selecting %s chunks", state.max_chunks)
+        chunks_txt = chunks_txt[: state.max_chunks]
+    cursor = 0
+    for index, chunk_txt in enumerate(chunks_txt):
+        location = _locate_chunk(state.input_text, chunk_txt, cursor)
+        metadata = {}
+        if location is None:
+            logger.warning(
+                "Could not map content unit %s back to converted source text; provenance offsets are unavailable",
+                index,
+            )
+        else:
+            start, end = location
+            metadata = _source_metadata(state.input_text, start, end)
+            cursor = end
+        state.content_units.append(
+            ContentUnit(
+                text=chunk_txt,
+                index=index,
+                doc_iri=state.doc_iri,
+                **metadata,
+            )
+        )
+    logger.info(
+        "Created %s content units for processing: %s",
+        len(state.content_units),
+        [len(unit) for unit in state.content_units],
+    )
+    state.status = Status.SUCCESS if state.content_units else Status.FAILED
+    return state
+''',
+        "chunk_text retains source offsets and locations",
+    )
+    patcher.replace_exact(
+        "ontocast",
+        target("tool/chunk/chunker.py"),
+        '        # Filter out chunks that are too small\n        chunks = [chunk for chunk in chunks if len(chunk) >= self.config.min_size]\n\n        logger.info(f"Naive chunking produced {len(chunks)} chunks")',
+        '        # Retain every non-empty chunk. Dropping a short final paragraph would\n        # silently truncate complete-document publication runs.\n        chunks = [chunk for chunk in chunks if chunk.strip()]\n\n        logger.info(f"Naive chunking produced {len(chunks)} chunks")',
+        "naive chunker retains short final content",
+    )
+
+    # --- Patch 13: emit full-text locations with RDF statement provenance ---
+    patcher.replace_exact(
+        "ontocast",
+        target("tool/agg/rewriter.py"),
+        'accumulates several ``prov:wasDerivedFrom`` arcs.  Chunk metadata\n(``index``, ``hid``) is recorded as separate triples on the chunk URI.',
+        'accumulates several ``prov:wasDerivedFrom`` arcs. Chunk metadata records the\nchunk index and hash plus converted-text offsets, pages, paragraphs, and section\nheadings when the document converter supplied them.',
+        "rewriter documents full-text chunk metadata",
+    )
+    patcher.replace_exact(
+        "ontocast",
+        target("tool/agg/rewriter.py"),
+        'from rdflib import Literal, Node, URIRef',
+        'from rdflib import Literal, Namespace, Node, URIRef',
+        "rewriter imports provenance namespace",
+    )
+    patcher.replace_exact(
+        "ontocast",
+        target("tool/agg/rewriter.py"),
+        '_PROV = PROV\n_SCHEMA = SCHEMA\n',
+        '_PROV = PROV\n_SCHEMA = SCHEMA\n_FULLTEXT = Namespace("https://w3id.org/ontocast/fulltext#")\n',
+        "rewriter defines technical full-text provenance namespace",
+    )
+    patcher.replace_exact(
+        "ontocast",
+        target("tool/agg/rewriter.py"),
+        '        graph.add((unit_uri, _SCHEMA.identifier, Literal(unit.hid)))\n        return unit_uri',
+        '        graph.add((unit_uri, _SCHEMA.identifier, Literal(unit.hid)))\n        optional_integer_metadata = (\n            (_FULLTEXT.charStart, unit.char_start),\n            (_FULLTEXT.charEnd, unit.char_end),\n            (_FULLTEXT.pageStart, unit.page_start),\n            (_FULLTEXT.pageEnd, unit.page_end),\n            (_FULLTEXT.paragraphStart, unit.paragraph_start),\n            (_FULLTEXT.paragraphEnd, unit.paragraph_end),\n        )\n        for predicate, value in optional_integer_metadata:\n            if value is not None:\n                graph.add((unit_uri, predicate, Literal(value, datatype=XSD.integer)))\n        for heading in unit.section_path:\n            graph.add((unit_uri, _FULLTEXT.sectionHeading, Literal(heading)))\n        return unit_uri',
+        "rewriter emits full-text chunk locations",
+    )
+    patcher.replace_exact(
+        "ontocast",
+        target("tool/agg/rewriter.py"),
+        '        merged.bind("prov", str(_PROV))\n        merged.bind("schema", str(_SCHEMA))',
+        '        merged.bind("prov", str(_PROV))\n        merged.bind("schema", str(_SCHEMA))\n        merged.bind("fulltext", str(_FULLTEXT))',
+        "rewriter binds full-text provenance namespace",
+    )
+
+    # --- Patch 14: regression tests for source-location retention ---
+    patcher.replace_exact(
+        "ontocast",
+        submodule / "test" / "test_semantic_chunker.py",
+        'from ontocast.config import ChunkConfig\nfrom ontocast.tool.chunk.util import SENTENCE_SPLIT_REGEX, SemanticChunker\n',
+        'from ontocast.agent.chunk_text import _locate_chunk, _source_metadata\nfrom ontocast.config import ChunkConfig\nfrom ontocast.tool.chunk.util import SENTENCE_SPLIT_REGEX, SemanticChunker\n',
+        "semantic chunk tests import source-location helpers",
+    )
+    patcher.replace_exact(
+        "ontocast",
+        submodule / "test" / "test_semantic_chunker.py",
+        'class TestSemanticChunker:\n',
+        r'''def test_fulltext_chunk_location_retains_page_paragraph_and_section() -> None:
+    source = """<!-- PDF_PAGE: 1 -->\n\n# Introduction\n\nFirst paragraph.\n\n<!-- PDF_PAGE: 2 -->\n\n## Methods\n\nSecond paragraph with normalized spacing.\n"""
+    chunk = "## Methods\n\nSecond paragraph with normalized spacing."
+    location = _locate_chunk(source, chunk, 0)
+    assert location is not None
+    metadata = _source_metadata(source, *location)
+    assert metadata["page_start"] == 2
+    assert metadata["page_end"] == 2
+    assert metadata["paragraph_start"] is not None
+    assert metadata["paragraph_end"] is not None
+    assert "Methods" in metadata["section_path"]
+
+
+def test_fulltext_chunk_location_tolerates_whitespace_normalization() -> None:
+    source = "Alpha paragraph.\n\nBeta   paragraph."
+    location = _locate_chunk(source, "Beta paragraph.", 0)
+    assert location is not None
+    assert source[location[0] : location[1]] == "Beta   paragraph."
+
+
+class TestSemanticChunker:
+''',
+        "semantic chunk tests cover source locations",
+    )
+    patcher.replace_exact(
+        "ontocast",
+        submodule / "test" / "aggregation" / "test_provenance.py",
+        'def test_merge_graphs_with_provenance_reifies_mapped_triple(\n',
+        '''def test_chunk_metadata_includes_fulltext_source_locations(
+    graph_rewriter: GraphRewriter,
+) -> None:
+    graph = RDFGraph()
+    graph.add((URIRef(f"{DEFAULT_IRI}/Entity1"), RDF.type, URIRef(f"{DEFAULT_IRI}/Thing")))
+    unit = ContentUnit(
+        text="source chunk",
+        index=2,
+        doc_iri=URIRef("https://example.org/doc/fulltext"),
+        graph=graph,
+        char_start=120,
+        char_end=412,
+        page_start=3,
+        page_end=4,
+        paragraph_start=8,
+        paragraph_end=11,
+        section_path=["Methods", "Data"],
+    )
+    merged = graph_rewriter.merge_graphs_with_provenance([unit], mapping={})
+    unit_uri = URIRef(unit.iri_absolute)
+    fulltext = "https://w3id.org/ontocast/fulltext#"
+    expected = {
+        "charStart": 120,
+        "charEnd": 412,
+        "pageStart": 3,
+        "pageEnd": 4,
+        "paragraphStart": 8,
+        "paragraphEnd": 11,
+    }
+    for name, value in expected.items():
+        assert (
+            unit_uri,
+            URIRef(f"{fulltext}{name}"),
+            Literal(value, datatype=XSD.integer),
+        ) in merged
+    headings = {str(value) for value in merged.objects(unit_uri, URIRef(f"{fulltext}sectionHeading"))}
+    assert headings == {"Methods", "Data"}
+
+
+def test_merge_graphs_with_provenance_reifies_mapped_triple(
+''',
+        "provenance tests cover full-text chunk locations",
+    )
+
 
 def apply_diversity(patcher: LocalPatcher) -> None:
     submodule = patcher.require_submodule(

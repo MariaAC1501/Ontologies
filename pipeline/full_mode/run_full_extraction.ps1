@@ -10,10 +10,14 @@ param(
     [string]$PdfPath,
 
     [Parameter(Position=1)]
-    [int]$HeadChunks = 2
+    [int]$HeadChunks = 0
 )
 
 $ErrorActionPreference = "Stop"
+if ($HeadChunks -lt 0) {
+    Write-Error "HeadChunks must be zero (complete document) or a positive development limit."
+    exit 2
+}
 
 $ScriptDir = Split-Path -Parent $MyInvocation.MyCommand.Path
 $RepoRoot  = Split-Path -Parent (Split-Path -Parent $ScriptDir)
@@ -76,7 +80,13 @@ Write-Host "  input:  $PdfPath"
 Write-Host "  staged: $InputDir\$PdfName"
 Write-Host "  output: $OutputDir"
 Write-Host "  log:    $LogFile"
-Write-Host "  chunks: $HeadChunks"
+if ($HeadChunks -gt 0) {
+    Write-Host "  chunks: first $HeadChunks (development limit)"
+    $ChunkArgument = " --head-chunks $HeadChunks"
+} else {
+    Write-Host "  chunks: complete document"
+    $ChunkArgument = ""
+}
 Write-Host "  llm:    Pi Codex subscription proxy ($SubscriptionProxyBase)"
 
 Push-Location $RepoRoot
@@ -84,7 +94,7 @@ try {
     $OldErrorAction = $ErrorActionPreference
     $ErrorActionPreference = "Continue"
     # Execute through cmd.exe to prevent PowerShell from wrapping stderr in fatal ErrorRecords
-    cmd.exe /c "ontocast --env-file `"$ConfigFile`" --input-path `"$InputDir`" --head-chunks $HeadChunks 2>&1" | Tee-Object -FilePath $LogFile -Append
+    cmd.exe /c "ontocast --env-file `"$ConfigFile`" --input-path `"$InputDir`"$ChunkArgument 2>&1" | Tee-Object -FilePath $LogFile -Append
 } finally {
     $ErrorActionPreference = $OldErrorAction
     Pop-Location

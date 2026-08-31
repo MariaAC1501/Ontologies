@@ -1,0 +1,28 @@
+@prefix doc: <urn:review-fixture:multiple-models:> .
+@prefix opmad: <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#> .
+@prefix cco: <http://www.ontologyrepository.com/CommonCoreOntologies/> .
+@prefix obo: <http://purl.obolibrary.org/obo/> .
+@prefix schema: <https://schema.org/> .
+
+doc:Article a opmad:Predictive_Maintenance_Article ;
+    schema:name "Multi-model article" ;
+    schema:about doc:Pipeline .
+
+doc:Case a opmad:Predictive_maintenance_case ;
+    cco:designates doc:Pipeline .
+
+doc:Pipeline a opmad:Model_configuration ;
+    schema:name "Coordinated model set" ;
+    obo:BFO_0000051 doc:Encoder,
+        doc:Classifier .
+
+doc:Encoder a opmad:Predictive_maintenance_model ;
+    schema:name "Temporal encoder" ;
+    obo:RO_0010002 doc:Temperature .
+
+doc:Classifier a opmad:Predictive_maintenance_model,
+        opmad:Fault_detection ;
+    schema:name "Fault classifier" .
+
+doc:Temperature a opmad:Data_variable ;
+    schema:name "Temperature" .

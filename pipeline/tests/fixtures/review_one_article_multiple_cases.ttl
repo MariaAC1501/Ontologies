@@ -1,0 +1,32 @@
+@prefix doc: <urn:review-fixture:multiple-cases:> .
+@prefix opmad: <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#> .
+@prefix cco: <http://www.ontologyrepository.com/CommonCoreOntologies/> .
+@prefix obo: <http://purl.obolibrary.org/obo/> .
+@prefix schema: <https://schema.org/> .
+
+doc:Article a opmad:Predictive_Maintenance_Article ;
+    schema:name "Two-case article" ;
+    schema:about doc:DiagnosticModel,
+        doc:PrognosticModel .
+
+doc:DiagnosticCase a opmad:Predictive_maintenance_case ;
+    cco:designates doc:DiagnosticModel .
+
+doc:PrognosticCase a opmad:Predictive_maintenance_case ;
+    cco:designates doc:PrognosticModel .
+
+doc:DiagnosticModel a opmad:Predictive_maintenance_model,
+        opmad:Fault_detection ;
+    schema:name "Repeated model label" ;
+    obo:RO_0010002 doc:Current .
+
+doc:PrognosticModel a opmad:Predictive_maintenance_model,
+        opmad:Remaining_useful_life_estimation ;
+    schema:name "Repeated model label" ;
+    obo:RO_0010002 doc:Vibration .
+
+doc:Current a opmad:Data_variable ;
+    schema:name "Current" .
+
+doc:Vibration a opmad:Data_variable ;
+    schema:name "Vibration" .

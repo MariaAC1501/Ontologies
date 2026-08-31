@@ -53,6 +53,8 @@ This repository does **not** use Conda; use `uv` and a `.venv` for Python depend
 | `scripts/LOCAL_PATCHES.md` | Locally maintained, reproducible patches for vendored submodules |
 | `pipeline/SCHEMA_MAPPING.md` | OPMAD/CSV field mapping and the legacy facts-to-CSV bridge |
 | `pipeline/STRICT_REVIEW_EXPORT.md` | Nullable, document-isolated JSON/JSONL export for publication review |
+| `pipeline/FULLTEXT.md` | Complete-document parsing, OCR routing, provenance, quality checks, and publication commands |
+| `pipeline/FULLTEXT_AUDIT.md` | Deterministic audit summary for the 32 current Markdown conversions |
 | `pipeline/full_mode/README.md` | Full ontology-evolution mode, outputs, and caveats |
 | `pipeline/INTEGRATION_RESULTS.md` | Integration-validation procedure and historical evidence |
 
@@ -235,6 +237,17 @@ PDF paper
 
 This is the logical end-to-end flow. The extraction wrapper scripts run the **OntoCast extraction step only**; the RDF/Turtle → CSV conversion is a separate follow-up step performed by `pipeline/facts_to_csv.py`.
 
+### Publication full-text preparation
+
+Final study runs use `pipeline/run_complete_extraction.*`. The runner verifies a frozen corpus-manifest record and PDF checksum, converts the complete PDF with OntoCast's Docling/OCR dependencies, preserves page/section/paragraph/table spans, retries low-quality text with full-page OCR, records parser settings and versions, and then invokes OntoCast without `--head-chunks`.
+
+```bash
+bash pipeline/run_complete_extraction.sh \
+  fixed corpus/manifest.json paper-0001 runs/paper-0001
+```
+
+Use a final `--prepare-only` argument to perform every deterministic full-text step without an LLM request. See [`pipeline/FULLTEXT.md`](pipeline/FULLTEXT.md).
+
 ### Run extraction
 
 #### macOS / Linux
@@ -256,7 +269,7 @@ bash pipeline/run_extraction.sh your_paper.pdf
 > 2. If a PyTorch CUDA wheel fails to load DLLs (e.g., `shm.dll` throwing `WinError 127`), reinstall the CPU wheels with: `uv pip install --python .\.venv\Scripts\python.exe torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cpu --upgrade --reinstall`
 > 3. During its first extraction run, Hugging Face Hub will download models and attempt to cache them using symbolic links. By default, Windows standard users cannot create symlinks, causing a crash (`WinError 1314: El cliente no dispone de un privilegio requerido`). To bypass this one-time cache step, either run your PowerShell terminal as **Administrator** for the very first extraction, or permanently turn on "Developer Mode" in your Windows Settings.
 
-The extraction scripts call OntoCast through the local subscription proxy configured by `LLM_BASE_URL` (default: `http://127.0.0.1:8977/v1`). Output goes to `pipeline/test_output/`. The fixed-mode runners process three chunks by default; pass a second positional `head-chunks` argument to override it. The Bash runner also accepts `ONTOCAST_HEAD_CHUNKS` when that argument is omitted.
+The extraction scripts call OntoCast through the local subscription proxy configured by `LLM_BASE_URL` (default: `http://127.0.0.1:8977/v1`). Output goes to `pipeline/test_output/`. The development runner processes the complete document by default. A positive second positional argument, or `ONTOCAST_HEAD_CHUNKS` on Bash, explicitly limits a development run.
 
 The extraction scripts write OntoCast outputs such as `facts_*.ttl`, ontology files, and `run.log`. They do **not** automatically call `pipeline/facts_to_csv.py`, and they do **not** remove an existing `pipeline/test_output/extracted_cases.csv` or older fact/ontology outputs. Clear or archive that directory before a new isolated run; otherwise a later wildcard conversion can combine files from different papers. The Bash runner stages the input PDF as a symbolic link, whereas the PowerShell runner copies it.
 
@@ -330,7 +343,10 @@ ontologies-cbr query-one `
 | `pipeline/seed_ontology/opmad_seed.ttl` | Generated, import-free OPMAD extraction profile using authoritative `#` IRIs |
 | `pipeline/generate_opmad_profile.py` | Deterministically regenerate or `--check` the profile against authoritative `OPMAD.owl` |
 | `pipeline/ontocast_config.env` | OntoCast configuration for constrained extraction mode |
-| `pipeline/run_extraction.sh` | macOS/Linux wrapper script that runs OntoCast on a PDF |
+| `pipeline/fulltext.py` | Complete PDF conversion, OCR routing, quality checks, and source maps |
+| `pipeline/fulltext_run.py` | Verified complete-document fixed/evolved run orchestrator |
+| `pipeline/run_complete_extraction.*` | Cross-platform publication extraction wrappers |
+| `pipeline/run_extraction.sh` | macOS/Linux development wrapper that runs OntoCast on a PDF |
 | `pipeline/run_extraction.ps1` | Windows PowerShell wrapper script that runs OntoCast on a PDF |
 | `pipeline/facts_to_csv.py` | Standalone bridge that converts existing RDF/Turtle facts to CBR-compatible CSV |
 | `pipeline/run_manifest.py` | Standalone CLI for deterministic extraction manifests and resume-drift checks ([usage](pipeline/RUN_MANIFEST.md)) |
@@ -339,7 +355,7 @@ ontologies-cbr query-one `
 
 ## Full OntoCast mode (evolved ontology)
 
-A second extraction mode runs OntoCast with full ontology evolution — no seed ontology and ontology critique enabled — and queries results via SPARQL instead of CBR. Its runners default to two chunks, clear prior TTL/JSON/log outputs before running, and verify that both `ontology_*.ttl` and `facts_*.ttl` were produced.
+A second extraction mode runs OntoCast with full ontology evolution — no seed ontology and ontology critique enabled — and queries results via SPARQL instead of CBR. Its development runners process the complete document by default, clear prior TTL/JSON/log outputs before running, and verify that both `ontology_*.ttl` and `facts_*.ttl` were produced. A positive second argument creates an explicitly limited development run.
 
 ### Run full-mode extraction
 
