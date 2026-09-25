@@ -1,6 +1,6 @@
 # OPMAD extraction schema mapping
 
-This document maps the 19-column CBR CSV schema in `CleanedDATA V21-07-2021.csv` to the ontology vocabulary in `OPMAD.owl` and to the object/data properties used by `CSVtoOntologyExec.java`.
+This document maps the 19-column CBR CSV schema used by the OPMAD/myCBR project to the ontology vocabulary in `OPMAD.owl` and to the object/data properties used by `CSVtoOntologyExec.java`. The historical mapping was initially audited against `CleanedDATA V21-07-2021.csv`; the paper experiment and diversity evaluation use the 263-case base `CleanedDATA V12-05-2021.csv`, as documented in `paper/README.md`.
 
 ## Sources read
 
@@ -11,7 +11,7 @@ This document maps the 19-column CBR CSV schema in `CleanedDATA V21-07-2021.csv`
 
 ## Scope of this mapping
 
-This is the target mapping for the 19-column CBR schema. It is not a claim that every OntoCast fact is materialized through the same OPMAD property path by the current bridge.
+This is the target mapping for the 19-column CBR schema. It is not a claim that every OntoCast fact is materialized through the same OPMAD property path by the current bridge, nor that every mapped field is active in the paper's myCBR queries.
 
 `pipeline/facts_to_csv.py` is a conservative interoperability bridge for OntoCast output. It accepts one or more fact TTL paths or globs, strips OntoCast RDF-star reification statements that stock `rdflib` cannot parse, combines the remaining graphs, and writes a UTF-8 semicolon-delimited CSV. It obtains labels from `schema:name`, `rdfs:label`, and the supplied ontology; unavailable values are represented by schema-valid defaults such as `Not reported`, `Unknown synchronization`, or `0`. It derives preprocessing from design details and model approach from the number of extracted models.
 

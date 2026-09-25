@@ -1,61 +1,58 @@
-# Comparación de diversidad CBR — 2026-07-10
+# Comparación de diversidad CBR — corpus completo 1.821 documentos
 
-## Alcance
+## Alcance vigente
 
-`extraction_papers/` contiene 1,822 PDFs de primer nivel y 599 artefactos
-canónicos `facts_*.ttl`: 100 de `run_100_20260611_194110/output` y 499 de
-`run_500_20260710_185042/output`. Se ejecutó una consulta CBR por cada uno de
-esos 599 papers ya extraídos.
+El experimento principal usa los artefactos canónicos documentados en `paper/supplement/results/REPORT.md` y reproducidos desde `.build/diversity_comparison_1821_v12_no_default_sync`.
 
-Se excluyeron 82 facts de `output_pre_quota` y un facts de `retries/`, porque
-son resultados intermedios o reintentos y los incluirían dos veces. Los 1,223
-PDFs restantes no tienen facts canónicos; no se enviaron a OntoCast/LLM.
+- Registros Scopus recuperados: **3.990**.
+- Registros incluidos tras cribado: **2.768**.
+- PDF recuperados: **1.822** archivos.
+- Documentos PDF únicos por SHA-256: **1.821**.
+- Artefactos canónicos `facts_*.ttl`: **1.821**.
+- Consultas comparadas: **1.821**, una por documento único.
+- Base CBR: **263** casos de `CleanedDATA V12-05-2021.csv`.
 
-El resultado completo está en
-`.build/diversity_comparison_599_available_20260710/`:
-
-- `REPORT.md` y `summary.json`: métricas agregadas.
-- `queries.csv`: caso extraído y consulta normalizada.
-- `per_query.csv`: referencias, similitud y diversidad por consulta.
-- `cbr_data/`: baseline top-5 y pools top-15.
-- `with_diversity/`: listas MMR top-5.
+La diferencia entre 1.822 archivos PDF y 1.821 documentos se debe a un duplicado exacto; no se contabiliza como fallo de extracción.
 
 ## Método
 
-- **Sin diversidad:** cinco resultados de mayor similitud de `HeadlessCBR`.
-- **Con diversidad:** pool de 15 resultados de `HeadlessCBR`, rerankeado a
-  cinco con MMR (`lambda_relevance=0.70`) y preservando top-1.
-- La disimilitud de soluciones combina enfoque, tipo, modelos y
-  preprocesamiento. `pipeline.diversity_rerank` leyó los 131 términos de
-  `external/Diversity-Improvement-in-CBR/Methods2.py`; no importa la GUI ni los
-  módulos upstream con efectos secundarios.
+- **Sin diversidad:** top-5 por similitud de HeadlessCBR.
+- **Con diversidad:** pool top-15 de HeadlessCBR, rerankeado a top-5 con MMR (`lambda_relevance=0.70`) y top-1 preservado.
+- La similitud entre soluciones combina enfoque, tipo, modelos y preprocesamiento con pesos `0.20/0.25/0.40/0.15`.
+- La taxonomía de diversidad contiene **131** términos leídos de `external/Diversity-Improvement-in-CBR/Methods2.py`.
+- `Unknown synchronization` se trata como ausencia y no se pondera.
 
-Algunos facts incluyen publicaciones citadas junto con el estudio fuente. Se
-retuvo el primer caso determinista de cada facts file para mantener una consulta
-por PDF; 216 casos adicionales se excluyeron por ese motivo.
+## Resultados principales
 
-## Resultados (599 consultas)
-
-| Métrica | Sin diversidad | Con diversidad |
+| Métrica | Sin diversidad | Con MMR |
 |---|---:|---:|
-| Consultas con resultados | 599/599 | 599/599 |
-| Similitud del primer resultado | 0.5785 | 0.5785 |
-| Similitud media del top-5 | 0.5726 | 0.5705 |
-| Modelos únicos por lista | 4.65 | 5.00 |
-| Listas con modelos repetidos | 195 | 1 |
-| Disimilitud intra-lista (0–1) | 0.4949 | 0.6205 |
+| Consultas con resultados | 1.821/1.821 | 1.821/1.821 |
+| Similitud del primer resultado | 0,5630 | 0,5630 |
+| Similitud media top-5 | 0,5563 | 0,5536 |
+| Firmas de modelos únicas por lista | 4,6332 | 4,9973 |
+| Listas con firmas repetidas | 610 | 5 |
+| Disimilitud intra-lista | 0,4216 | 0,5265 |
 
-Las 599 listas cambiaron de orden; 598 cambiaron el conjunto de referencias y
-las 599 preservaron top-1. La ganancia media de diversidad fue **+0.1256** de
-disimilitud intra-lista, a cambio de **-0.0021** de similitud media del top-5.
-En 540 consultas la disimilitud aumentó, en 58 disminuyó y en una no cambió.
+Cambios frente al baseline:
+
+- Orden top-5 cambiado: **1.821/1.821**.
+- Conjunto de referencias top-5 cambiado: **1.819/1.821**.
+- Primer resultado preservado: **1.821/1.821** por diseño.
+- ILD aumentó en **1.707** consultas, disminuyó en **112** y empató en **2**.
+
+## Interpretación
+
+Estos resultados demuestran comportamiento algorítmico de reranking y reducción de redundancia bajo la similitud de solución definida. No demuestran fidelidad factual de extracción ni utilidad humana de las recomendaciones. La ILD comparte la función `s_sol` usada por MMR, por lo que no es una validación independiente.
 
 ## Repetición
 
 ```powershell
-.\.venv\Scripts\python.exe scripts\compare_diversity_all_papers.py
+.\.venv\Scripts\python.exe scripts\compare_diversity_all_papers.py `
+  --facts-glob "extraction_papers/ontocast_runs/run_*/output/facts_*.ttl" `
+  --casebase-csv "external/CBR-Ontology-For-Predictive-Maintenance/CBR-Ontology/CBRproject/data/CleanedDATA V12-05-2021.csv" `
+  --top-k 5 --pool-size 15 --lambda-relevance 0.70 `
+  --query-year 2026 --drop-default-synchronization `
+  --output-dir ".build/diversity_comparison_1821_v12_no_default_sync"
 ```
 
-El comando usa sólo los facts canónicos en `ontocast_runs/*/output/`. Para
-ampliar la comparación, hay que extraer facts de los 1,223 PDFs pendientes y
-volver a ejecutarlo.
+Resultados y auditorías detalladas: `paper/supplement/results/`, `paper/supplement/statistics/` y `paper/supplement/audit/`.

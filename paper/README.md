@@ -1,10 +1,13 @@
 # Manuscrito LaTeX
 
-Manuscrito anónimo en español preparado para revisión por pares:
+Manuscrito anónimo en español preparado para revisión por pares. `paper/main.tex` es la fuente canónica actual y `paper/main copy.tex` se mantiene sincronizado por compatibilidad con borradores previos.
 
-- Fuente: `paper/main.tex`
+- Fuente canónica: `paper/main.tex`
+- Copia sincronizada: `paper/main copy.tex`
+- Borrador IEEE en inglés: `paper/main_copy_en.tex` (no canónico)
 - Bibliografía: `paper/references.bib`
-- PDF: `paper/main.pdf`
+- PDF canónico: `paper/main.pdf`
+- PDF de copia: `paper/main copy.pdf`
 - Figuras: `paper/figures/*.pdf`
 - Suplemento: `paper/supplement/`
 - Análisis: `paper/analysis/`
@@ -23,7 +26,7 @@ El proyecto `PredictMaint_myCBR.prj` contiene 263 casos y corresponde a `Cleaned
 
 ```powershell
 .\.venv\Scripts\python.exe scripts\compare_diversity_all_papers.py `
-  --facts-glob "ontocast_runs/run_*/output/facts_*.ttl" `
+  --facts-glob "extraction_papers/ontocast_runs/run_*/output/facts_*.ttl" `
   --casebase-csv "external/CBR-Ontology-For-Predictive-Maintenance/CBR-Ontology/CBRproject/data/CleanedDATA V12-05-2021.csv" `
   --top-k 5 --pool-size 15 --lambda-relevance 0.70 `
   --query-year 2026 --drop-default-synchronization `
@@ -36,7 +39,7 @@ El año queda fijado porque la recencia histórica depende del año de consulta.
 
 ```powershell
 .\.venv\Scripts\python.exe scripts\compare_diversity_all_papers.py `
-  --facts-glob "ontocast_runs/run_*/output/facts_*.ttl" `
+  --facts-glob "extraction_papers/ontocast_runs/run_*/output/facts_*.ttl" `
   --casebase-csv "external/CBR-Ontology-For-Predictive-Maintenance/CBR-Ontology/CBRproject/data/CleanedDATA V12-05-2021.csv" `
   --top-k 5 --pool-size 30 --lambda-relevance 0.70 `
   --query-year 2026 --drop-default-synchronization --skip-build `
@@ -75,10 +78,10 @@ La versión final debe compilar sin referencias indefinidas ni cajas desbordadas
 ## Antes de enviar
 
 1. Elegir revista y adaptar plantilla/idioma.
-2. Ejecutar la validación experta descrita en `paper/supplement/audit/expert_validation_protocol.md`; la plantilla actual no está anotada.
-3. Sustituir autores, afiliaciones, financiación y correspondencia.
-4. Archivar repositorio y añadir DOI.
-5. Confirmar política de IA generativa y anonimización de metadatos/autocitas.
-6. Reproducir desde un checkout limpio y validar `paper/supplement/SHA256SUMS.txt`.
+2. Sustituir autores, afiliaciones, financiación y correspondencia.
+3. Archivar repositorio y añadir DOI.
+4. Confirmar política de IA generativa y anonimización de metadatos/autocitas.
+5. Reproducir desde un checkout limpio y validar `paper/supplement/SHA256SUMS.txt`.
+6. Si se desea afirmar fidelidad factual o utilidad humana, ejecutar una validación experta independiente; la versión actual no la incluye.
 
 Los PDF del corpus no se redistribuyen por licencia.
