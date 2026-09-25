@@ -24,14 +24,14 @@ an input failed to read/decode/parse or if any asserted field failed
 normalization, while still writing the affected `extraction_failure` records.
 The legacy `facts_to_csv.expand_fact_paths` behavior is unchanged.
 
-## Record contract (`strict-review-export/1.0`)
+## Record contract (`strict-review-export/1.1`)
 
 The machine-readable JSON Schema is [`review_export.schema.json`](review_export.schema.json). Each JSON record carries:
 
 - a stable source-and-content-derived `record_id` and `schema_version`;
 - `source_document`, including the facts filename, path, path-derived
-  `source_identity`, SHA-256 document ID, parse status, and the number/handling
-  boundary of RDF-star annotations;
+  `source_identity`, SHA-256 document ID, parse status, and parsed RDF 1.2
+  statement-provenance records;
 - nullable `article_identity` and `case_identity` objects;
 - `case_article_link`, whose `resolution` is `resolved`, `unresolved`, or
   `ambiguous` and which includes the RDF link evidence when resolved;
@@ -66,6 +66,28 @@ evidence used in normalization where practical.
 | `unclear` | Candidate evidence is ambiguous, conflicting, too broad, or not linked to this record; no candidate is selected. |
 | `not_applicable` | The field cannot be evaluated for this record shape, for example article metadata on an orphan case. |
 | `extraction_failure` | The document could not be parsed or an asserted value could not be normalized. |
+
+## RDF 1.2 provenance
+
+PyOxigraph parses every facts Turtle document before the review fields are
+constructed. The exporter does not use the legacy RDF-star stripping helper.
+It projects ordinary triples to `rdflib` for field extraction and retains each
+`rdf:reifies <<( s p o )>>` statement under
+`source_document.rdf_star_evidence`.
+
+Each retained assertion has a source-scoped `assertion_id`, the quoted RDF
+triple, all annotation predicate/object pairs, and every direct
+`prov:wasDerivedFrom` source. `statement_count` counts `rdf:reifies` links,
+while `assertion_count` counts their distinct quoted triples. A source record
+includes its outgoing metadata, including OntoCast full-text page, character,
+paragraph, and section values when present. `unprojected_rdf_star_quads`
+retains quoted triples outside
+OntoCast's `rdf:reifies` pattern instead of silently omitting them.
+
+The original facts path and SHA-256 remain the authority for the exact Turtle
+bytes. A malformed facts graph produces an `extraction_failure` record and is
+not partially projected. Field-level evidence links and complete evidence-span
+requirements remain separate work.
 
 ## Strict normalization rules
 
@@ -130,13 +152,9 @@ Unmatched articles are retained as unresolved article records.
   failure shapes, and field normalization failures propagate to record status.
   JSON Schema cannot prove that evidence strings describe real triples or that
   IRIs occur in the source RDF; those remain exporter and consumer checks.
-- Stock `rdflib` in this project does not parse OntoCast's RDF-star reification
-  syntax. As in the compatibility bridge, annotations are removed before
-  Turtle parsing. Unlike a silent drop, each record reports their count and
-  handling, retains the original facts path and content digest, and leaves the
-  source file untouched. Statement-level `prov:wasDerivedFrom` is not yet
-  projected into fields; consumers needing chunk-level evidence must consult
-  the original TTL.
+- Statement provenance is retained at the source-document level. It is not yet
+  assigned to individual normalized fields, so the export does not claim that
+  every analytical value has a resolved textual span.
 - Lexical evidence is preserved, but this exporter is not an ontology reasoner
   and does not add inferred OPMAD concepts.
 - `record_id` includes a token derived from the normalized absolute source path,

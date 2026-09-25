@@ -1,5 +1,6 @@
 from __future__ import annotations
 
+import hashlib
 import json
 import re
 import sys
@@ -10,6 +11,7 @@ from pathlib import Path
 if __package__ is None or __package__ == "":
     sys.path.insert(0, str(Path(__file__).resolve().parents[2]))
 
+from pipeline.rdf_provenance import parse_turtle_with_provenance
 from pipeline.review_export import ANALYTICAL_FIELDS, build_review_records, main
 
 try:
@@ -118,6 +120,11 @@ class StrictReviewExportTests(unittest.TestCase):
         schema_path = Path(__file__).resolve().parents[1] / "review_export.schema.json"
         schema = json.loads(schema_path.read_text(encoding="utf-8"))
         field_schema = schema["properties"]["fields"]
+        self.assertEqual(schema["properties"]["schema_version"]["const"], "strict-review-export/1.1")
+        self.assertEqual(
+            schema["$defs"]["sourceDocument"]["properties"]["rdf_star_evidence"]["$ref"],
+            "#/$defs/rdfStarEvidence",
+        )
         self.assertEqual(tuple(field_schema["required"]), ANALYTICAL_FIELDS)
         self.assertEqual(set(field_schema["properties"]), set(ANALYTICAL_FIELDS))
         self.assertEqual(
@@ -134,6 +141,98 @@ class StrictReviewExportTests(unittest.TestCase):
         self.assertEqual(schema["$defs"]["countField"]["allOf"][1]["properties"]["value"]["minimum"], 0)
         year_value = schema["$defs"]["yearField"]["allOf"][1]["properties"]["value"]
         self.assertEqual((year_value["minimum"], year_value["maximum"]), (1900, 2100))
+
+    def test_rdf_star_provenance_is_retained_with_stable_assertion_ids(self) -> None:
+        with tempfile.TemporaryDirectory() as tmpdir:
+            facts = write_ttl(
+                Path(tmpdir),
+                "provenance.ttl",
+                """
+@prefix ex: <urn:review-provenance:> .
+@prefix fulltext: <https://w3id.org/ontocast/fulltext#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+
+doc:Article a opmad:Predictive_Maintenance_Article ; schema:name "Provenance study" ; schema:about doc:Module .
+doc:Case a opmad:Predictive_maintenance_case ; cco:designates doc:Module .
+doc:Module a opmad:Predictive_maintenance_model ; schema:name "Pump model" .
+doc:ChunkA a prov:Entity ; fulltext:pageStart 2 ; fulltext:charStart 120 .
+doc:ChunkB a prov:Entity ; fulltext:pageStart 3 ; fulltext:charStart 480 .
+_:proof rdf:reifies <<( doc:Module schema:name "Pump model" )>> ;
+    prov:wasDerivedFrom doc:ChunkA, doc:ChunkB ;
+    ex:confidence "0.91" .
+doc:Audit ex:mentions <<( doc:Module schema:name "Pump model" )>> .
+""",
+            )
+            first = build_review_records([facts])[0]
+            second = build_review_records([facts])[0]
+
+        evidence = first["source_document"]["rdf_star_evidence"]
+        self.assertEqual(evidence["parser"], "pyoxigraph")
+        self.assertEqual((evidence["statement_count"], evidence["assertion_count"]), (1, 1))
+        self.assertNotIn("removed", evidence["handling"].lower())
+        assertion = evidence["assertions"][0]
+        self.assertEqual(assertion["triple"]["term_type"], "triple")
+        triple = assertion["triple"]["value"]
+        self.assertEqual(triple["subject"]["value"], "urn:review-test:Module")
+        self.assertEqual(triple["predicate"]["value"], "https://schema.org/name")
+        self.assertEqual(triple["object"], {
+            "term_type": "literal",
+            "value": "Pump model",
+            "datatype": "http://www.w3.org/2001/XMLSchema#string",
+            "language": None,
+        })
+        self.assertEqual(assertion["reifier_count"], 1)
+        self.assertEqual(
+            [entry["source"]["value"] for entry in assertion["derived_from"]],
+            ["urn:review-test:ChunkA", "urn:review-test:ChunkB"],
+        )
+        self.assertTrue(any(
+            annotation["predicate"]["value"] == "urn:review-provenance:confidence"
+            and annotation["object"]["value"] == "0.91"
+            for annotation in assertion["annotations"]
+        ))
+        page_starts = {
+            metadata["object"]["value"]
+            for source in assertion["derived_from"]
+            for metadata in source["metadata"]
+            if metadata["predicate"]["value"] == "https://w3id.org/ontocast/fulltext#pageStart"
+        }
+        self.assertEqual(page_starts, {"2", "3"})
+        self.assertEqual(len(evidence["unprojected_rdf_star_quads"]), 1)
+        self.assertEqual(
+            evidence["unprojected_rdf_star_quads"][0]["object"]["term_type"],
+            "triple",
+        )
+        self.assertEqual(
+            assertion["assertion_id"],
+            second["source_document"]["rdf_star_evidence"]["assertions"][0]["assertion_id"],
+        )
+        self.assertEqual(first["fields"]["models"]["value"], ["Pump model"])
+        schema_path = Path(__file__).resolve().parents[1] / "review_export.schema.json"
+        schema = json.loads(schema_path.read_text(encoding="utf-8"))
+        self.assertTrue(schema_matches(first, schema, schema))
+        if jsonschema is not None:
+            jsonschema.validate(first, schema)
+
+    def test_rdf_star_blank_node_assertion_ids_are_repeatable(self) -> None:
+        text = """\
+@prefix ex: <urn:review-provenance:> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+_:proof rdf:reifies <<( _:anonymous ex:observes "pressure" )>> ;
+    prov:wasDerivedFrom ex:Chunk .
+"""
+        digest = hashlib.sha256(text.encode("utf-8")).hexdigest()
+        first = parse_turtle_with_provenance(text, document_sha256=digest)
+        second = parse_turtle_with_provenance(text, document_sha256=digest)
+
+        self.assertEqual(first.rdf_star_evidence, second.rdf_star_evidence)
+        assertion = first.rdf_star_evidence["assertions"][0]
+        self.assertTrue(assertion["assertion_id"])
+        self.assertTrue(
+            assertion["triple"]["value"]["subject"]["value"].startswith("bnode-")
+        )
 
     def test_missing_count_is_null_but_asserted_zero_is_present(self) -> None:
         with tempfile.TemporaryDirectory() as tmpdir:

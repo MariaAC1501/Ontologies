@@ -25,12 +25,14 @@ if __package__ is None or __package__ == "":
 
 try:
     from pipeline.extraction_schema import OPMAD, TASK_CLASS_IRIS
-    from pipeline.facts_to_csv import local_name, strip_rdf_star_statements
+    from pipeline.facts_to_csv import local_name
+    from pipeline.rdf_provenance import parse_turtle_with_provenance, unparsed_rdf_star_evidence
 except ImportError:
     from .extraction_schema import OPMAD, TASK_CLASS_IRIS
-    from .facts_to_csv import local_name, strip_rdf_star_statements
+    from .facts_to_csv import local_name
+    from .rdf_provenance import parse_turtle_with_provenance, unparsed_rdf_star_evidence
 
-SCHEMA_VERSION = "strict-review-export/1.0"
+SCHEMA_VERSION = "strict-review-export/1.1"
 STATUSES = ("present", "not_reported", "unclear", "not_applicable", "extraction_failure")
 
 SCHEMA_NAMES = (
@@ -628,11 +630,14 @@ def _source_identity(path: Path) -> str:
     return hashlib.sha256(normalized_path.encode("utf-8")).hexdigest()[:24]
 
 
-def _source_metadata(path: Path, data: bytes | None, text: str | None, parse_status: str) -> dict[str, Any]:
+def _source_metadata(
+    path: Path,
+    data: bytes | None,
+    text: str | None,
+    parse_status: str,
+    rdf_star_evidence: dict[str, Any] | None = None,
+) -> dict[str, Any]:
     digest = hashlib.sha256(data).hexdigest() if data is not None else None
-    rdf_star_count = len(
-        re.findall(r"(?:[A-Za-z_][\w.-]*:reifies|<[^>]*[/#]reifies>)\s+<<\(", text or "")
-    )
     return {
         "facts_filename": path.name,
         "facts_path": str(path),
@@ -640,13 +645,11 @@ def _source_metadata(path: Path, data: bytes | None, text: str | None, parse_sta
         "document_id": digest,
         "sha256": digest,
         "parse_status": parse_status,
-        "rdf_star_evidence": {
-            "statement_count": rdf_star_count,
-            "handling": (
-                "RDF-star annotations are not interpreted by this exporter. The original source path and digest are "
-                "retained; asserted base triples are parsed after annotations are removed."
-            ),
-        },
+        "rdf_star_evidence": (
+            rdf_star_evidence
+            if rdf_star_evidence is not None
+            else unparsed_rdf_star_evidence(text)
+        ),
     }
 
 
@@ -745,10 +748,19 @@ def build_review_records(fact_paths: Iterable[Path]) -> list[dict[str, Any]]:
         try:
             data = path.read_bytes()
             text = data.decode("utf-8")
-            graph = Graph()
-            graph.parse(data=strip_rdf_star_statements(text), format="turtle")
-            source = _source_metadata(path, data, text, "present")
-            records.extend(graph_to_review_records(graph, path, source))
+            parsed = parse_turtle_with_provenance(
+                text,
+                document_sha256=hashlib.sha256(data).hexdigest(),
+                base_iri=path.expanduser().resolve().as_uri(),
+            )
+            source = _source_metadata(
+                path,
+                data,
+                text,
+                "present",
+                parsed.rdf_star_evidence,
+            )
+            records.extend(graph_to_review_records(parsed.graph, path, source))
         except Exception as error:  # A batch export must preserve the failed document as data.
             records.append(_failure_record(path, data, text, error))
     return records

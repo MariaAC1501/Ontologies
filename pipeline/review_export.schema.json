@@ -1,6 +1,6 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "urn:ontologies:strict-review-export:1.0",
+  "$id": "urn:ontologies:strict-review-export:1.1",
   "title": "Ontologies strict review export record",
   "description": "One nullable, source-document-isolated analytical record. This is not an OPMAD ontology extension.",
   "type": "object",
@@ -17,7 +17,7 @@
   ],
   "properties": {
     "schema_version": {
-      "const": "strict-review-export/1.0"
+      "const": "strict-review-export/1.1"
     },
     "record_id": {
       "type": "string",
@@ -367,21 +367,244 @@
           ]
         },
         "rdf_star_evidence": {
+          "$ref": "#/$defs/rdfStarEvidence"
+        }
+      },
+      "additionalProperties": false
+    },
+    "rdfTerm": {
+      "oneOf": [
+        {
           "type": "object",
           "required": [
-            "statement_count",
-            "handling"
+            "term_type",
+            "value"
           ],
           "properties": {
-            "statement_count": {
-              "type": "integer",
-              "minimum": 0
+            "term_type": {
+              "const": "iri"
             },
-            "handling": {
-              "type": "string"
+            "value": {
+              "type": "string",
+              "minLength": 1
             }
           },
           "additionalProperties": false
+        },
+        {
+          "type": "object",
+          "required": [
+            "term_type",
+            "value"
+          ],
+          "properties": {
+            "term_type": {
+              "const": "blank_node"
+            },
+            "value": {
+              "type": "string",
+              "minLength": 1
+            }
+          },
+          "additionalProperties": false
+        },
+        {
+          "type": "object",
+          "required": [
+            "term_type",
+            "value",
+            "datatype",
+            "language"
+          ],
+          "properties": {
+            "term_type": {
+              "const": "literal"
+            },
+            "value": {
+              "type": "string"
+            },
+            "datatype": {
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "language": {
+              "type": [
+                "string",
+                "null"
+              ]
+            }
+          },
+          "additionalProperties": false
+        },
+        {
+          "type": "object",
+          "required": [
+            "term_type",
+            "value"
+          ],
+          "properties": {
+            "term_type": {
+              "const": "triple"
+            },
+            "value": {
+              "$ref": "#/$defs/rdfStarQuad"
+            }
+          },
+          "additionalProperties": false
+        }
+      ]
+    },
+    "rdfPredicateObject": {
+      "type": "object",
+      "required": [
+        "predicate",
+        "object"
+      ],
+      "properties": {
+        "predicate": {
+          "$ref": "#/$defs/rdfTerm"
+        },
+        "object": {
+          "$ref": "#/$defs/rdfTerm"
+        }
+      },
+      "additionalProperties": false
+    },
+    "rdfStarQuad": {
+      "type": "object",
+      "required": [
+        "subject",
+        "predicate",
+        "object"
+      ],
+      "properties": {
+        "subject": {
+          "$ref": "#/$defs/rdfTerm"
+        },
+        "predicate": {
+          "$ref": "#/$defs/rdfTerm"
+        },
+        "object": {
+          "$ref": "#/$defs/rdfTerm"
+        }
+      },
+      "additionalProperties": false
+    },
+    "rdfStarDerivedSource": {
+      "type": "object",
+      "required": [
+        "source",
+        "metadata"
+      ],
+      "properties": {
+        "source": {
+          "$ref": "#/$defs/rdfTerm"
+        },
+        "metadata": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/rdfPredicateObject"
+          },
+          "uniqueItems": true
+        }
+      },
+      "additionalProperties": false
+    },
+    "rdfStarAssertion": {
+      "type": "object",
+      "required": [
+        "assertion_id",
+        "triple",
+        "reifier_count",
+        "annotations",
+        "derived_from"
+      ],
+      "properties": {
+        "assertion_id": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$"
+        },
+        "triple": {
+          "allOf": [
+            {
+              "$ref": "#/$defs/rdfTerm"
+            },
+            {
+              "required": [
+                "term_type"
+              ],
+              "properties": {
+                "term_type": {
+                  "const": "triple"
+                }
+              }
+            }
+          ]
+        },
+        "reifier_count": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "annotations": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/rdfPredicateObject"
+          },
+          "uniqueItems": true
+        },
+        "derived_from": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/rdfStarDerivedSource"
+          },
+          "uniqueItems": true
+        }
+      },
+      "additionalProperties": false
+    },
+    "rdfStarEvidence": {
+      "type": "object",
+      "required": [
+        "statement_count",
+        "assertion_count",
+        "parser",
+        "handling",
+        "assertions",
+        "unprojected_rdf_star_quads"
+      ],
+      "properties": {
+        "statement_count": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "assertion_count": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "parser": {
+          "enum": [
+            "pyoxigraph",
+            "not_parsed"
+          ]
+        },
+        "handling": {
+          "type": "string"
+        },
+        "assertions": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/rdfStarAssertion"
+          },
+          "uniqueItems": true
+        },
+        "unprojected_rdf_star_quads": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/rdfStarQuad"
+          },
+          "uniqueItems": true
         }
       },
       "additionalProperties": false

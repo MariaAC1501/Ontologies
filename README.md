@@ -291,7 +291,7 @@ python pipeline/review_export.py \
   --output pipeline/test_output/review-records.jsonl
 ```
 
-See [`pipeline/STRICT_REVIEW_EXPORT.md`](pipeline/STRICT_REVIEW_EXPORT.md) for the status contract, case-isolation rules, and RDF-star provenance boundary.
+See [`pipeline/STRICT_REVIEW_EXPORT.md`](pipeline/STRICT_REVIEW_EXPORT.md) for the status contract, case-isolation rules, and retained RDF 1.2 provenance.
 
 ### Convert facts to legacy CBR CSV
 

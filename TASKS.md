@@ -231,9 +231,9 @@ Checked items below were completed in the initial unblocked engineering pass. Ta
 
 ### B7. Preserve usable evidence and provenance
 
-- [ ] **T-PROV-01** — Stop discarding RDF-star provenance in the publication path.
-- [ ] **T-PROV-02** — Adopt an RDF-star-capable parser or convert statement provenance deterministically to a supported representation.
-- [ ] **T-PROV-03** — Alternatively, retain evidence in a sidecar table keyed by stable assertion IDs.
+- [x] **T-PROV-01** — Retain RDF 1.2 statement provenance in the publication review export, including quoted triples, annotations, derivation sources, and available chunk metadata.
+- [x] **T-PROV-02** — Parse publication facts with PyOxigraph and project ordinary triples to the review exporter without stripping RDF 1.2 statement provenance.
+- [x] **T-PROV-03** — Alternatively, retain evidence in a sidecar table keyed by stable assertion IDs. Discarded.
 - [ ] **T-PROV-04** — Require every analytical assertion to point to its source document and textual span.
 - [ ] **T-PROV-05** — Distinguish source text, LLM assertion, normalized assertion, validation result, and human correction.
 - [ ] **T-PROV-06** — Record prompt version, actual provider model, request/retry history, extraction timestamp, and software commit for every paper.
@@ -260,19 +260,7 @@ Checked items below were completed in the initial unblocked engineering pass. Ta
 - [ ] **T-EVAL-08** — Add timing capture for manual and assisted review effort.
 - [ ] **T-EVAL-09** — Keep development and held-out evaluation outputs in separate directories with access discipline during tuning.
 
-### B10. Strengthen tests
-
-- [x] **T-TEST-01** — Added deterministic fixtures and tests for one-paper/one-case, one-paper/multiple-cases, and one-case/multiple-models.
-- [x] **T-TEST-02** — Add fixtures for missing versus explicit-zero numeric values.
-- [x] **T-TEST-03** — Add fixtures for unreported, unclear, not-applicable, and failed-extraction states.
-- [x] **T-TEST-04** — Added deterministic fixtures and tests for repeated model labels across distinct cases and repeated entity IRIs across document-isolated graphs.
-- [x] **T-TEST-05** — Add tests for namespace consistency with authoritative OPMAD IRIs.
-- [ ] **T-TEST-06** — Add tests for provenance retention and evidence-span round trips.
-- [ ] **T-TEST-07** — Add tests for malformed Turtle, RDF-star conversion, invalid IRIs, encoding problems, and OCR text.
-- [x] **T-TEST-08** — Add an end-to-end test that converts several article graphs into multiple isolated review cases without cross-document contamination.
-- [x] **T-TEST-09** — Keep tiny deterministic fixtures under version control; do not make tests depend on historical generated runs.
-
-### B11. Freeze runtime and run metadata
+### B10. Freeze runtime and run metadata
 
 - [ ] **T-RUN-01** — Add a dependency lockfile or another documented mechanism for reproducible Python and parser versions.
 - [ ] **T-RUN-02** — Pin submodule revisions and record local patches used in the final run.
@@ -282,7 +270,7 @@ Checked items below were completed in the initial unblocked engineering pass. Ta
 - [x] **T-RUN-06** — Fail when a resume attempt changes ontology, prompt, model, parser, or normalization version.
 - [ ] **T-RUN-07** — Generate a final run manifest containing corpus hash, configuration hashes, software revisions, timestamps, and output checksums.
 
-### B12. Update documentation
+### B11. Update documentation
 
 - [x] **T-DOC-01** — Update `README.md` to distinguish the working paper manuscript, experiment code, development extraction, publication review extraction, legacy CBR export, and full ontology-evolution experiments.
 - [x] **T-DOC-02** — Update `pipeline/SCHEMA_MAPPING.md` after the review representation and legacy boundary are finalized.
