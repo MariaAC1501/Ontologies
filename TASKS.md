@@ -278,3 +278,10 @@ Checked items below were completed in the initial unblocked engineering pass. Ta
 - [x] **T-DOC-04** — Document the authoritative OPMAD source and generated-profile procedure.
 - [ ] **T-DOC-05** — Document corpus setup, full-text processing, annotation, evaluation, final extraction, and synthesis commands.
 - [ ] **T-DOC-06** — Add a reproducibility checklist linking every paper table/figure to its generating script and input manifest.
+
+### B12. Human-in-the-loop interface (active benchmark)
+
+- [x] **T-HIL-UI-01** — Add a local blank-form held-out gold interface requiring a frozen, verified corpus manifest and prepared page-linked full text; isolate reviewer files, validate evidence and statuses, save drafts, and record manual timer intervals. See `annotation/README.md`. This is tooling, not completed held-out annotation.
+- [ ] **T-HIL-UI-02** — Freeze the representation-neutral codebook and test the form with trained annotators on development articles before using it for final held-out gold.
+- [ ] **T-HIL-UI-03** — Add blind adjudication of independent submissions and freeze the resulting gold records; keep both first-pass files intact.
+- [ ] **T-HIL-UI-04** — Extend the common form to fixed/evolved prefill correction with counterbalanced article assignments, atomic edit events, and quality/effort analysis. No prefill is available in the gold interface.

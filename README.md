@@ -20,6 +20,7 @@ Both modes can be run on the same paper for side-by-side comparison. Fixed OPMAD
 ## Repository layout
 
 - `paper/` — working manuscript (`main.tex`) and bibliography
+- `annotation/` — local, blind held-out gold annotation interface and manual timing baseline (no prefills yet)
 - `screening/` — final-review templates, local blinded reviewer batches, and adjudicated decision logs
 - `extraction_papers/` — historical screening/development and local experiment material; historical OntoCast runs are not final paper results
 - `external/CBR-Ontology-For-Predictive-Maintenance/` — upstream Java CBR project submodule
@@ -48,6 +49,7 @@ This repository does **not** use Conda; use `uv` and a `.venv` for Python depend
 | `README.md` | Repository overview, installation, and end-to-end workflows |
 | `paper/main.tex` | Working manuscript for the fixed-versus-evolved ontology benchmark and human-in-the-loop study |
 | `paper/challenge_set_candidates.md` | Provisional metadata-level challenge-set shortlist and reserves |
+| `annotation/README.md` | Frozen-corpus prerequisites, local held-out gold interface, independent reviewers, evidence, timing, and limits |
 | `screening/README.md` | Human screening batch, local GUI, adjudication, and benchmark safeguards |
 | `scripts/README.md` | Headless CBR commands and diversity-aware reranking |
 | `scripts/LOCAL_PATCHES.md` | Locally maintained, reproducible patches for vendored submodules |
@@ -151,6 +153,36 @@ On Windows PowerShell, verify the launcher installed in `.venv\Scripts` instead:
 ontocast --help
 ontologies-cbr help
 ```
+
+## Held-out gold annotation interface (manual baseline)
+
+The local browser interface in `annotation/` lets two reviewers independently annotate held-out articles **without seeing LLM suggestions or each other's answers**. It records source-linked cases and manual annotation time. The current challenge-set shortlist is provisional: **do not use it as a final held-out gold set**. A coordinator must first confirm eligibility, freeze the representation-neutral annotation codebook and partition, verify bibliographic identities, and provide the frozen manifest and matching PDFs. There is no final frozen corpus manifest in the repository yet.
+
+From the repository root, with the Python environment from [UV environment setup](#uv-environment-setup-recommended) active:
+
+1. **Coordinator: prepare inputs.** Put a manifest matching [`pipeline/fulltext_corpus.schema.json`](pipeline/fulltext_corpus.schema.json) at `corpus/manifest.json`. Set `partition_frozen: true`; all records in this preparation manifest must be verified, and each held-out record must have `bibliographic_status: "verified"`, `partition: "held_out"`, a stable `corpus_id`, title, DOI, year, a PDF path relative to the manifest's `base_dir`, and the PDF's actual SHA-256. Make the matching PDFs available locally. See [`pipeline/FULLTEXT.md`](pipeline/FULLTEXT.md) for manifest requirements and complete-document preparation.
+2. **Coordinator: prepare every held-out article** before starting the interface. This uses Docling to produce page-linked text and sidecars; it does not call an LLM. Repeat the command for every held-out `corpus_id` in the frozen manifest, replacing `YOUR_CORPUS_ID` in both arguments with the exact ID:
+
+   ```bash
+   python -m pipeline.fulltext prepare \
+     --manifest corpus/manifest.json --corpus-id YOUR_CORPUS_ID \
+     --output-dir runs/held-out-fulltext/YOUR_CORPUS_ID
+   ```
+
+3. **Reviewer: start your own local server** from the repository root. Use your assigned reviewer ID; the second reviewer must use another ID and port (for example `R2` and `8766`). Open the printed URL in a browser:
+
+   ```bash
+   python -m annotation.server --manifest corpus/manifest.json \
+     --prepared-dir runs/held-out-fulltext --output-dir annotation/work \
+     --reviewer R1 --port 8765
+   # http://127.0.0.1:8765/
+   ```
+
+   In PowerShell, put each command on a single line rather than using Bash `\` line continuations.
+
+4. **Reviewer: annotate independently.** Select an article; start the timer when you begin work and pause it for breaks or before closing the server. Add cases (or explain why there are none), enter raw wording and applicable normalized labels, and attach exact quotations with PDF pages to present assertions. Select text in the page view and use **Use selection**, or use the PDF option for quotations absent from parsed text (PDF-only quotations require manual verification). Drafts autosave; check the save status. **Submit gold record** validates and locks that reviewer's article record.
+
+Reviewer files are stored at `annotation/work/<reviewer>/<corpus-id>.json`; `annotation/work/` and `runs/` are ignored by Git. Back them up privately. The server runs only on `127.0.0.1` and has **no login or filesystem isolation**: use separate local accounts or otherwise restrict access to the other reviewer's files, and do not put it behind a network proxy. Keep an assignment log so no reviewer later corrects a prefill for an article they already annotated. Submission does not adjudicate the two reviews or create final gold labels; adjudication and assisted correction are separate future steps. See [`annotation/README.md`](annotation/README.md) for field rules, evidence, timing, and limitations.
 
 ## Local CBR workflow
 
