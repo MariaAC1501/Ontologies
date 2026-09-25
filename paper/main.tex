@@ -24,7 +24,7 @@
 \maketitle
 
 \begin{abstract}
-Large language models can extract scientific evidence against a fixed domain ontology or induce an ontology from example documents before extraction. A fixed ontology provides stable semantics and cross-document comparability, while an evolved ontology may capture concepts that the fixed representation omits. This study compares these strategies for full-text predictive-maintenance case extraction. It defines an evidence-grounded challenge set with a development partition and a held-out partition, then evaluates a schema-only baseline, extraction with the fixed Ontology for Predictive Maintenance Architecture and Design (\opmad), and extraction with an ontology evolved by \ontocast from development articles. A complementary human-in-the-loop experiment compares manual annotation with correction of fixed- and evolved-ontology prefills. Evaluation covers linked case accuracy, evidence support, ontology coverage and stability, annotation time, and correction effort. The study evaluates extraction and curation strategies on a deliberately heterogeneous challenge set. It does not estimate the prevalence of models or practices in predictive-maintenance literature. \operational{Results are pending corpus selection, annotation, ontology evolution, and held-out evaluation.}
+Large language models can extract scientific evidence against a fixed domain ontology or induce an ontology from example documents before extraction. A fixed ontology provides stable semantics and cross-document comparability, while an evolved ontology may capture concepts that the fixed representation omits. This study compares these strategies for full-text predictive-maintenance case extraction. It defines an evidence-grounded challenge set with a development partition and a held-out partition, then evaluates a schema-only baseline, extraction with the fixed Ontology for Predictive Maintenance Architecture and Design (\opmad), and extraction with an ontology evolved by \ontocast from development articles. A complementary human-in-the-loop experiment compares manual annotation with correction of fixed- and evolved-ontology prefills. Evaluation covers linked case accuracy, evidence support, ontology coverage and stability, annotation time, and correction effort. The study evaluates extraction and curation strategies on a deliberately heterogeneous challenge set. \operational{Results are pending corpus selection, annotation, ontology evolution, and held-out evaluation.}
 \end{abstract}
 
 \begin{IEEEkeywords}
@@ -50,14 +50,12 @@ This paper therefore studies fixed and evolved ontology support at two levels. T
   \item a comparison of manual annotation with correction of fixed- and evolved-ontology prefills.
 \end{enumerate}
 
-The study is a challenge-set evaluation rather than a systematic mapping study. It supports comparative claims about the evaluated workflows, not field-wide claims about predictive-maintenance models.
-
 \section{Background}
 \label{sec:background}
 
 \subsection{Fixed OPMAD Representation}
 
-\opmad was developed to support predictive-maintenance architecture design and ontology-enabled case-based reasoning~\cite{MonteroJimenez2021OPMADCBR}. The present study uses an authoritative, checksummed \opmad artifact. Specific assets and models are represented as labelled individuals. The fixed condition populates the ontology without changing its classes, properties, or axioms.
+\opmad was developed to support predictive-maintenance architecture design and ontology-enabled case-based reasoning~\cite{MonteroJimenez2021OPMADCBR}. The present study uses an authoritative \opmad artifact. Specific assets and models are represented as labelled individuals. The fixed condition populates the ontology without changing its classes, properties, or axioms.
 
 Related work constrains LLM relation extraction to ontology terms and relations to reduce unsupported output~\cite{Vukovic2024DialogueOntologyRE}, and uses dictionaries and ontologies to extract semantics from noisy maintenance records~\cite{Dixit2021MaintenanceSemantics}. Recent maintenance-report extraction also combines an ontology schema, constrained inference, and evidence localization~\cite{Zhou2026GCIEOM}. These approaches do not compare a fixed domain ontology with a development-evolved ontology on linked cases from complete scientific articles.
 
