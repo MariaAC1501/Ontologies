@@ -7,4 +7,4 @@ This repo contains an experimental comparison of the capabilities of humans (OPM
 0. Convert OPMAD and its bundled dependencies to Turtle with `scripts/convert_opmad.py` ([details and OntoCast usage](ontologies/opmad-ontocast/README.md)). Define comparison criteria.
 1. Extract cases from papers using OntoCast in facts-only (no ontology evolution) mode. The exact extraction instruction used is:
 
-> Extract every predictive maintenance case reported in this paper and all case-related facts expressible using the supplied ontology.
+> Extract every predictive maintenance case reported in this paper, not in other papers cited within it, and all case-related facts expressible using the supplied ontology.
