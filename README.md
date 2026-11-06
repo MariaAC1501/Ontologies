@@ -25,22 +25,24 @@ Both modes can be run on the same paper for side-by-side comparison. Fixed OPMAD
 - `extraction_papers/` — historical screening/development and local experiment material; historical OntoCast runs are not final paper results
 - `external/CBR-Ontology-For-Predictive-Maintenance/` — upstream Java CBR project submodule
 - `external/Diversity-Improvement-in-CBR/` — upstream Diversity-in-CBR Python project submodule
-- `external/ontocast/` — upstream OntoCast Python project submodule
-- `tools/cbr/HeadlessCBR.java` — relocatable CLI adapter for CBR
+- `external/ontocast/` — unmodified upstream OntoCast 0.8.2 Python submodule
+- `pipeline/tools/cbr/HeadlessCBR.java` — relocatable CLI adapter for CBR
 - `pipeline/` — integrated extraction pipeline (schema, seed ontology, bridge, config)
 - `requirements.txt` — UV-installed Python requirements for the pipeline and diversity tooling
 - `scripts/setup_submodules.sh` / `scripts/setup_submodules.ps1` — initialize submodules, apply local patches, install editable Python submodules, and build CBR
 - `scripts/build_cbr.py` / `scripts/build_cbr.sh` — local jar build
 - `scripts/run_cbr.sh` — local jar runner
 - `scripts/diversify_cbr_results.py` / `pipeline/diversity_rerank.py` — Diversity-in-CBR post-processor for reranking CBR result CSVs
-- `scripts/compare_diversity_all_papers.py` — reproducible baseline-vs-diversity batch comparison for canonical OntoCast facts matching `extraction_papers/ontocast_runs/*/output/facts_*.ttl`
-- `tools/pi_codex_openai_proxy.mjs` — local OpenAI-compatible proxy backed by the Pi ChatGPT Plus/Pro (Codex) subscription OAuth credential
+- `scripts/compare_diversity_all_papers.py` — reproducible baseline-vs-diversity batch comparison for canonical `*.facts.ttl` outputs (also accepts legacy `facts_*.ttl`)
+- `pipeline/tools/pi_codex_openai_proxy.mjs` — local OpenAI-compatible proxy backed by the Pi ChatGPT Plus/Pro (Codex) subscription OAuth credential
 
 ## Dependencies and local patches
 
 This repository does **not** use Conda; use `uv` and a `.venv` for Python dependencies. Direct Python dependencies are in `requirements.txt`; no dependency lockfile is currently committed. The three source dependencies under `external/` are Git submodules pinned by this repository. The CBR build also needs a JDK, and extraction uses the local Pi Codex proxy.
 
-`scripts/setup_submodules.sh` (or `.ps1`) initializes the submodules, applies repository-owned patches from `scripts/apply_local_patches.py`, then installs/builds the stack. The patcher makes idempotent, exact-anchor changes only to local OntoCast and Diversity-in-CBR checkouts; it does not commit changes upstream and fails if an upstream anchor has drifted. CBR source is not patched; `tools/cbr/HeadlessCBR.java` adapts it at runtime. Because `.gitmodules` sets `ignore = dirty`, audit local submodule changes with `git status --ignore-submodules=none`.
+`scripts/setup_submodules.sh` (or `.ps1`) initializes the submodules, applies repository-owned patches from `scripts/apply_local_patches.py`, then installs/builds the stack. The patcher makes idempotent, exact-anchor changes only to Diversity-in-CBR. OntoCast 0.8.2 is unmodified: the subscription proxy works through upstream configuration with a non-secret placeholder key. CBR source is not patched; `pipeline/tools/cbr/HeadlessCBR.java` adapts it at runtime. Because `.gitmodules` sets `ignore = dirty`, audit local submodule changes with `git status --ignore-submodules=none`.
+
+**Known upstream blocker:** 0.8.2's default in-memory store rejects RDF 1.2 triple terms when persisting facts, so complete extraction currently fails before writing outputs. `--keep-provenance` remains enabled; no stripping workaround or source patch was added. The subscription connection itself is verified. See **T-RUN-10** in `TASKS.md` and [`scripts/LOCAL_PATCHES.md`](scripts/LOCAL_PATCHES.md).
 
 ## Documentation map
 
@@ -135,7 +137,7 @@ bash scripts/setup_submodules.sh
 .\scripts\setup_submodules.ps1
 ```
 
-The setup script runs `git submodule update --init --recursive`, applies local patches via `scripts/apply_local_patches.py`, installs `external/ontocast` in editable mode, registers `external/Diversity-Improvement-in-CBR` on the Python path, builds the local CBR jar, and installs the `ontologies-cbr` launcher in the active environment. Patch rationale and maintenance rules are in [`scripts/LOCAL_PATCHES.md`](scripts/LOCAL_PATCHES.md).
+The setup script runs `git submodule update --init --recursive`, applies local patches via `scripts/apply_local_patches.py`, installs `external/ontocast[server,openai,doc-processing,semantic-chunking]` in editable mode, registers `external/Diversity-Improvement-in-CBR` on the Python path, builds the local CBR jar, and installs the `ontologies-cbr` launcher in the active environment. Patch rationale and maintenance rules are in [`scripts/LOCAL_PATCHES.md`](scripts/LOCAL_PATCHES.md).
 
 For a partial setup, pass `--help` to either setup wrapper. The available flags can skip submodule initialization, patching, a dependency, the CBR build, or UV dependency installation; use them only when the skipped component is already available.
 
@@ -143,7 +145,7 @@ For a partial setup, pass `--help` to either setup wrapper. The available flags 
 
 ```bash
 ontocast --help
-python -c "import ontocast; import ontocast.cli.serve"
+python -c "import ontocast; import ontocast.cli.server"
 bash scripts/run_cbr.sh help
 ```
 
@@ -221,13 +223,13 @@ The repository provides separate commands to extract structured data from predic
 
 Both extraction modes require:
 - The `.venv` from [UV environment setup](#uv-environment-setup-recommended), activated in your shell
-- A Pi/OpenAI Codex OAuth login backed by the ChatGPT Plus/Pro subscription. Direct OpenAI API keys (`OPENAI_API_KEY` or `LLM_API_KEY`) are intentionally rejected by the extraction wrappers.
+- A Pi/OpenAI Codex OAuth login backed by the ChatGPT Plus/Pro subscription. Real OpenAI API keys are rejected. The runners supply `LLM_API_KEY=subscription-proxy`, a non-secret placeholder required by the SDK; Pi's OAuth credential authenticates the subscription.
 - The local subscription proxy running in a separate terminal
 
 Run Pi first and use `/login` to select **ChatGPT Plus/Pro (Codex)** if the OAuth credential is not present. Then start the proxy with its defaults:
 
 ```bash
-node tools/pi_codex_openai_proxy.mjs
+node pipeline/tools/pi_codex_openai_proxy.mjs
 ```
 
 The proxy reads `PI_CODEX_PROXY_HOST`, `PI_CODEX_PROXY_PORT`, `PI_CODEX_MODEL`, and `PI_AUTH_FILE` from the environment of the terminal that starts `node`; it does **not** load the repository `.env` file. Set overrides in that same terminal, for example:
@@ -236,7 +238,7 @@ The proxy reads `PI_CODEX_PROXY_HOST`, `PI_CODEX_PROXY_PORT`, `PI_CODEX_MODEL`, 
 
 ```bash
 PI_CODEX_PROXY_PORT=9000 PI_CODEX_MODEL=gpt-5.6-luna \
-  node tools/pi_codex_openai_proxy.mjs
+  node pipeline/tools/pi_codex_openai_proxy.mjs
 ```
 
 #### Windows PowerShell
@@ -244,7 +246,7 @@ PI_CODEX_PROXY_PORT=9000 PI_CODEX_MODEL=gpt-5.6-luna \
 ```powershell
 $env:PI_CODEX_PROXY_PORT = "9000"
 $env:PI_CODEX_MODEL = "gpt-5.6-luna"
-node tools/pi_codex_openai_proxy.mjs
+node pipeline/tools/pi_codex_openai_proxy.mjs
 ```
 
 The extraction wrappers, unlike the proxy, load the repository `.env` file. Use `LLM_BASE_URL` there when the proxy does not use its default endpoint; its host and port must match the proxy process:
@@ -271,7 +273,7 @@ This is the logical end-to-end flow. The extraction wrapper scripts run the **On
 
 ### Publication full-text preparation
 
-Final study runs use `pipeline/run_complete_extraction.*`. The runner verifies a frozen corpus-manifest record and PDF checksum, converts the complete PDF with OntoCast's Docling/OCR dependencies, preserves page/section/paragraph/table spans, retries low-quality text with full-page OCR, records parser settings and versions, and then invokes OntoCast without `--head-chunks`.
+Final study runs use `pipeline/run_complete_extraction.*`. The runner verifies a frozen corpus-manifest record and PDF checksum, converts the complete PDF with OntoCast's Docling/OCR dependencies, preserves page/section/paragraph/table spans in source-map sidecars, retries low-quality text with full-page OCR, and records parser settings and versions. It invokes stock OntoCast with `--keep-provenance`, no section exclusions, and no `--head-chunks`. The former custom page/character/paragraph RDF fields are no longer emitted.
 
 ```bash
 bash pipeline/run_complete_extraction.sh \
@@ -301,14 +303,14 @@ bash pipeline/run_extraction.sh your_paper.pdf
 > 2. If a PyTorch CUDA wheel fails to load DLLs (e.g., `shm.dll` throwing `WinError 127`), reinstall the CPU wheels with: `uv pip install --python .\.venv\Scripts\python.exe torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cpu --upgrade --reinstall`
 > 3. During its first extraction run, Hugging Face Hub will download models and attempt to cache them using symbolic links. By default, Windows standard users cannot create symlinks, causing a crash (`WinError 1314: El cliente no dispone de un privilegio requerido`). To bypass this one-time cache step, either run your PowerShell terminal as **Administrator** for the very first extraction, or permanently turn on "Developer Mode" in your Windows Settings.
 
-The extraction scripts call OntoCast through the local subscription proxy configured by `LLM_BASE_URL` (default: `http://127.0.0.1:8977/v1`). Output goes to `pipeline/test_output/`. The development runner processes the complete document by default. A positive second positional argument, or `ONTOCAST_HEAD_CHUNKS` on Bash, explicitly limits a development run.
+The extraction scripts call OntoCast through the local subscription proxy configured by `LLM_BASE_URL` (default: `http://127.0.0.1:8977/v1`). Both modes set `ONTOLOGY_CRITIC_PASSES=0` and `FACTS_CRITIC_PASSES=1`, pass `--keep-provenance --exclude-sections ""`, and retain bibliography text. Output goes to `pipeline/test_output/`. The development runner processes the complete document by default. A positive second positional argument, or `ONTOCAST_HEAD_CHUNKS` on Bash, explicitly limits a development run.
 
-The extraction scripts write OntoCast outputs such as `facts_*.ttl`, ontology files, and `run.log`. They do **not** automatically call `pipeline/facts_to_csv.py`, and they do **not** remove an existing `pipeline/test_output/extracted_cases.csv` or older fact/ontology outputs. Clear or archive that directory before a new isolated run; otherwise a later wildcard conversion can combine files from different papers. The Bash runner stages the input PDF as a symbolic link, whereas the PowerShell runner copies it.
+The extraction scripts write `*.facts.ttl`, `*.ontology.ttl`, `*.units.jsonl` source chunks, validation/run-metadata JSON, and `run.log`. They do **not** automatically call `pipeline/facts_to_csv.py`, and they do **not** remove an existing `pipeline/test_output/extracted_cases.csv` or older fact/ontology outputs. Clear or archive that directory before a new isolated run; otherwise a later wildcard conversion can combine files from different papers. The Bash runner stages the input PDF as a symbolic link, whereas the PowerShell runner copies it.
 
 #### Test prerequisites
 
 - The deterministic Python unit tests do **not** require extraction output. Run them at any time with `python -m unittest discover -s pipeline/tests -p "test_*.py"`.
-- `pipeline/tests/test_e2e.sh` and `pipeline/tests/test_regression.sh` require fixed-mode `facts_*.ttl` output; `test_e2e.sh` also requires an explicit `FACTS_PATH`.
+- `pipeline/tests/test_e2e.sh` and `pipeline/tests/test_regression.sh` require fixed-mode `*.facts.ttl` output; `test_e2e.sh` also requires an explicit `FACTS_PATH`.
 - The fixed-vs-evolved comparison runners under `pipeline/comparison/` require outputs from both extraction modes, ideally generated from the same paper.
 
 See `pipeline/INTEGRATION_RESULTS.md` for exact integration-test commands.
@@ -319,7 +321,7 @@ Use the strict JSON Lines path for nullable analytical records. It parses each f
 
 ```bash
 python pipeline/review_export.py \
-  --facts 'pipeline/test_output/facts_*.ttl' \
+  --facts 'pipeline/test_output/*.facts.ttl' \
   --output pipeline/test_output/review-records.jsonl
 ```
 
@@ -331,7 +333,7 @@ Use this script only when you want to turn existing OntoCast facts into the 19-c
 
 ```bash
 python pipeline/facts_to_csv.py \
-  --facts pipeline/test_output/facts_*.ttl \
+  --facts 'pipeline/test_output/*.facts.ttl' \
   --ontology pipeline/seed_ontology/opmad_seed.ttl \
   --output pipeline/test_output/extracted_cases.csv
 ```
@@ -340,7 +342,7 @@ The same command works in Windows PowerShell:
 
 ```powershell
 python pipeline\facts_to_csv.py `
-  --facts "pipeline\test_output\facts_*.ttl" `
+  --facts "pipeline\test_output\*.facts.ttl" `
   --ontology "pipeline\seed_ontology\opmad_seed.ttl" `
   --output "pipeline\test_output\extracted_cases.csv"
 ```
@@ -387,7 +389,7 @@ ontologies-cbr query-one `
 
 ## Full OntoCast mode (evolved ontology)
 
-A second extraction mode runs OntoCast with full ontology evolution — no seed ontology and ontology critique enabled — and queries results via SPARQL instead of CBR. Its development runners process the complete document by default, clear prior TTL/JSON/log outputs before running, and verify that both `ontology_*.ttl` and `facts_*.ttl` were produced. A positive second argument creates an explicitly limited development run.
+A second extraction mode runs OntoCast with full ontology evolution — no seed ontology, ontology critique off, and facts critique on — and queries results via SPARQL instead of CBR. Its development runners process the complete document by default, clear prior TTL/JSON/JSONL/log outputs before running, and verify that both `*.ontology.ttl` and `*.facts.ttl` were produced. A positive second argument creates an explicitly limited development run.
 
 ### Run full-mode extraction
 
@@ -406,27 +408,27 @@ uv pip install --python .\.venv\Scripts\python.exe docling easyocr sentence-tran
 .\pipeline\full_mode\run_full_extraction.ps1 your_paper.pdf
 ```
 
-> **Note on Windows:** Review the previous Windows note on `docling`, `pytorch`, and `Hugging Face Hub` symlinks if your extraction run crashes. Required OntoCast patches are applied by `scripts/setup_submodules.*`.
+> **Note on Windows:** Review the previous Windows note on `docling`, `pytorch`, and `Hugging Face Hub` symlinks if your extraction run crashes. OntoCast runs without source patches.
 
 ### Query the evolved ontology with SPARQL
 
 ```bash
 # Summary statistics
 python pipeline/full_mode/sparql_query.py \
-  --ontology pipeline/full_mode/test_output/ontology_*.ttl \
-  --facts pipeline/full_mode/test_output/facts_*.ttl \
+  --ontology 'pipeline/full_mode/test_output/*.ontology.ttl' \
+  --facts 'pipeline/full_mode/test_output/*.facts.ttl' \
   --preset summary
 
 # List all discovered classes
 python pipeline/full_mode/sparql_query.py \
-  --ontology pipeline/full_mode/test_output/ontology_*.ttl \
-  --facts pipeline/full_mode/test_output/facts_*.ttl \
+  --ontology 'pipeline/full_mode/test_output/*.ontology.ttl' \
+  --facts 'pipeline/full_mode/test_output/*.facts.ttl' \
   --preset classes
 
 # Custom SPARQL query
 python pipeline/full_mode/sparql_query.py \
-  --ontology pipeline/full_mode/test_output/ontology_*.ttl \
-  --facts pipeline/full_mode/test_output/facts_*.ttl \
+  --ontology 'pipeline/full_mode/test_output/*.ontology.ttl' \
+  --facts 'pipeline/full_mode/test_output/*.facts.ttl' \
   --query "SELECT ?s ?type WHERE { ?s a ?type } LIMIT 10"
 ```
 

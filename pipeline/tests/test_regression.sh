@@ -8,7 +8,7 @@ PYTHON_BIN=${PYTHON_BIN:-python3}
 SEED_ONTOLOGY=${SEED_ONTOLOGY:-pipeline/seed_ontology/opmad_seed.ttl}
 REFERENCE_CSV=${REFERENCE_CSV:-external/CBR-Ontology-For-Predictive-Maintenance/CBR-Ontology/CBRproject/data/CleanedDATA V21-07-2021.csv}
 NUMBER_OF_CASES=${NUMBER_OF_CASES:-3}
-FACTS_GLOB=${FACTS_GLOB:-pipeline/test_output/facts_*.ttl}
+FACTS_GLOB=${FACTS_GLOB:-pipeline/test_output/*.facts.ttl}
 
 FACTS_ARTIFACTS=()
 while IFS= read -r facts_path; do
@@ -42,7 +42,7 @@ step() {
 
 [[ -f "$SEED_ONTOLOGY" ]] || fail "Missing seed ontology: $SEED_ONTOLOGY"
 [[ -f "$REFERENCE_CSV" ]] || fail "Missing reference CSV: $REFERENCE_CSV"
-(( ${#FACTS_ARTIFACTS[@]} > 0 )) || fail "No integration facts artifacts found matching $FACTS_GLOB. Run fixed-mode extraction first or set FACTS_GLOB to a concrete facts_*.ttl path/glob"
+(( ${#FACTS_ARTIFACTS[@]} > 0 )) || fail "No integration facts artifacts found matching $FACTS_GLOB. Run fixed-mode extraction first or set FACTS_GLOB to a concrete *.facts.ttl path/glob"
 
 step "1/6 Validate seed ontology parses with rdflib"
 "$PYTHON_BIN" - <<'PY' "$SEED_ONTOLOGY"

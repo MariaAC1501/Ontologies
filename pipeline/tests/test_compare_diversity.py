@@ -1,8 +1,15 @@
 from __future__ import annotations
 
+import tempfile
 import unittest
+from pathlib import Path
 
-from scripts.compare_diversity_all_papers import normalize_query, query_csv_row
+from scripts.compare_diversity_all_papers import (
+    DEFAULT_FACTS_GLOBS,
+    discover_facts,
+    normalize_query,
+    query_csv_row,
+)
 
 
 class CompareDiversityNormalizationTests(unittest.TestCase):
@@ -23,6 +30,21 @@ class CompareDiversityNormalizationTests(unittest.TestCase):
             "Input type": "vibration",
             "Number of input variables": "1",
         }
+
+    def test_discovers_current_and_legacy_facts_without_duplicates(self) -> None:
+        with tempfile.TemporaryDirectory() as temporary:
+            root = Path(temporary)
+            output = root / "ontocast_runs" / "run-1" / "output"
+            output.mkdir(parents=True)
+            current = output / "paper.facts.ttl"
+            legacy = output / "facts_old.ttl"
+            overlap = output / "facts_paper.facts.ttl"
+            for path in (current, legacy, overlap, output / "paper.ontology.ttl"):
+                path.touch()
+            self.assertEqual(
+                discover_facts(root, DEFAULT_FACTS_GLOBS),
+                sorted([current, legacy, overlap]),
+            )
 
     def test_unknown_synchronization_is_retained_by_default(self) -> None:
         query, _ = normalize_query(self.case_row, self.vocabulary)

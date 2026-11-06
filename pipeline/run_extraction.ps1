@@ -51,20 +51,14 @@ if (Test-Path $EnvFile) {
     }
 }
 
-if ($env:OPENAI_API_KEY -or $env:LLM_API_KEY) {
-    Write-Error "Direct OpenAI API keys are disabled for this workflow. Use the local Pi Codex subscription proxy instead: node tools/pi_codex_openai_proxy.mjs"
-    exit 1
-}
-
 $SubscriptionProxyBase = if ($env:LLM_BASE_URL) { $env:LLM_BASE_URL } else { "http://127.0.0.1:8977/v1" }
-$SubscriptionProxyHealthBase = $SubscriptionProxyBase.TrimEnd('/') -replace '/v1$',''
-$SubscriptionProxyHealth = "$SubscriptionProxyHealthBase/health"
-try {
-    Invoke-RestMethod -Uri $SubscriptionProxyHealth -TimeoutSec 5 | Out-Null
-} catch {
-    Write-Error "Subscription proxy is not reachable at $SubscriptionProxyHealth. Start it with: node tools/pi_codex_openai_proxy.mjs"
-    exit 1
-}
+python (Join-Path $RepoRoot "pipeline/subscription_proxy.py") --base-url $SubscriptionProxyBase
+if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
+# Non-secret SDK placeholder; the local proxy authenticates with Pi subscription OAuth.
+$env:LLM_PROVIDER = "openai"
+$env:LLM_API_KEY = "subscription-proxy"
+$env:LLM_BASE_URL = $SubscriptionProxyBase
+$env:ONTOLOGY_CRITIC_PASSES = "0"
 
 # Prepare directories
 New-Item -ItemType Directory -Force -Path $OutputDir | Out-Null
@@ -94,8 +88,10 @@ try {
     $OldErrorAction = $ErrorActionPreference
     $ErrorActionPreference = "Continue"
     # Execute through cmd.exe to prevent PowerShell from wrapping stderr in fatal ErrorRecords
-    cmd.exe /c "ontocast --env-file `"$ConfigFile`" --input-path `"$InputDir`"$ChunkArgument 2>&1" | Tee-Object -FilePath $LogFile -Append
+    cmd.exe /c "ontocast --env-file `"$ConfigFile`" process --input-path `"$InputDir`" --output-dir `"$OutputDir`" --keep-provenance --exclude-sections `"`"$ChunkArgument 2>&1" | Tee-Object -FilePath $LogFile -Append
+    $OntocastExitCode = $LASTEXITCODE
 } finally {
     $ErrorActionPreference = $OldErrorAction
     Pop-Location
 }
+if ($OntocastExitCode -ne 0) { exit $OntocastExitCode }

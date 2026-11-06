@@ -4,12 +4,9 @@
 from __future__ import annotations
 
 import argparse
-import os
 import shutil
 import subprocess
 import sys
-import urllib.error
-import urllib.request
 from pathlib import Path
 from typing import Sequence
 
@@ -17,6 +14,13 @@ if __package__ is None or __package__ == "":
     sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
 
 from pipeline.fulltext import FullTextError, prepare_document, stable_json, utc_now
+from pipeline.subscription_proxy import (
+    PROXY_API_KEY,
+    SubscriptionProxyError,
+    require_subscription_proxy,
+    subscription_environment,
+    subscription_proxy_base,
+)
 
 REPO_ROOT = Path(__file__).resolve().parents[1]
 CONFIG_TEMPLATES = {
@@ -25,49 +29,7 @@ CONFIG_TEMPLATES = {
 }
 
 
-def _read_env_value(path: Path, name: str) -> str | None:
-    if not path.is_file():
-        return None
-    for raw_line in path.read_text(encoding="utf-8").splitlines():
-        line = raw_line.strip()
-        if not line or line.startswith("#") or "=" not in line:
-            continue
-        key, value = line.split("=", 1)
-        if key.strip() == name:
-            return value.strip().strip('"').strip("'")
-    return None
-
-
-def subscription_proxy_base() -> str:
-    return (
-        os.environ.get("LLM_BASE_URL")
-        or _read_env_value(REPO_ROOT / ".env", "LLM_BASE_URL")
-        or "http://127.0.0.1:8977/v1"
-    )
-
-
-def require_subscription_proxy(base_url: str) -> None:
-    if os.environ.get("OPENAI_API_KEY") or os.environ.get("LLM_API_KEY"):
-        raise FullTextError(
-            "Direct OpenAI API keys are disabled. Use the local Pi Codex subscription proxy."
-        )
-    health = base_url.rstrip("/")
-    if health.endswith("/v1"):
-        health = health[:-3]
-    health += "/health"
-    try:
-        with urllib.request.urlopen(health, timeout=5) as response:
-            if response.status >= 400:
-                raise FullTextError(
-                    f"Subscription proxy health check returned {response.status}"
-                )
-    except (OSError, urllib.error.URLError) as error:
-        raise FullTextError(
-            f"Subscription proxy is not reachable at {health}. Start tools/pi_codex_openai_proxy.mjs."
-        ) from error
-
-
-def effective_config(condition: str, output_dir: Path, proxy_base: str) -> str:
+def effective_config(condition: str, proxy_base: str) -> str:
     template = CONFIG_TEMPLATES[condition]
     values: dict[str, str] = {}
     comments: list[str] = []
@@ -80,7 +42,8 @@ def effective_config(condition: str, output_dir: Path, proxy_base: str) -> str:
             key, value = raw_line.split("=", 1)
             values[key.strip()] = value.strip()
     values["LLM_BASE_URL"] = proxy_base
-    values["ONTOCAST_WORKING_DIRECTORY"] = str(output_dir.resolve())
+    values["LLM_API_KEY"] = PROXY_API_KEY
+    values["ONTOLOGY_CRITIC_PASSES"] = "0"
     if condition == "fixed":
         values["ONTOCAST_ONTOLOGY_DIRECTORY"] = str(
             (REPO_ROOT / "pipeline" / "seed_ontology").resolve()
@@ -94,7 +57,7 @@ def effective_config(condition: str, output_dir: Path, proxy_base: str) -> str:
 
 
 def build_ontocast_command(
-    ontocast_bin: str, config: Path, input_dir: Path
+    ontocast_bin: str, config: Path, input_dir: Path, output_dir: Path
 ) -> list[str]:
     """Build the publication command. A chunk-limit option is intentionally absent."""
 
@@ -102,8 +65,14 @@ def build_ontocast_command(
         ontocast_bin,
         "--env-file",
         str(config),
+        "process",
         "--input-path",
         str(input_dir),
+        "--output-dir",
+        str(output_dir),
+        "--keep-provenance",
+        "--exclude-sections",
+        "",
     ]
 
 
@@ -147,7 +116,7 @@ def run_complete_extraction(
     proxy_base = subscription_proxy_base()
     config_path = run_dir / "ontocast.env"
     config_path.write_text(
-        effective_config(condition, output_dir, proxy_base),
+        effective_config(condition, proxy_base),
         encoding="utf-8",
         newline="\n",
     )
@@ -175,7 +144,7 @@ def run_complete_extraction(
             "OntoCast CLI not found. Activate .venv and run scripts/setup_submodules.* first."
         )
     require_subscription_proxy(proxy_base)
-    command = build_ontocast_command(ontocast_bin, config_path, input_dir)
+    command = build_ontocast_command(ontocast_bin, config_path, input_dir, output_dir)
     if "--head-chunks" in command:
         raise FullTextError("Publication extraction must not use --head-chunks")
 
@@ -184,6 +153,7 @@ def run_complete_extraction(
         process = subprocess.Popen(
             command,
             cwd=REPO_ROOT,
+            env=subscription_environment(proxy_base),
             stdout=subprocess.PIPE,
             stderr=subprocess.STDOUT,
             text=True,
@@ -203,8 +173,8 @@ def run_complete_extraction(
         )
         return return_code
 
-    facts = sorted(output_dir.glob("facts_*.ttl"))
-    ontologies = sorted(output_dir.glob("ontology_*.ttl"))
+    facts = sorted(output_dir.glob("*.facts.ttl"))
+    ontologies = sorted(output_dir.glob("*.ontology.ttl"))
     if not facts:
         raise FullTextError(f"No facts TTL was produced in {output_dir}")
     if condition == "evolved" and not ontologies:
@@ -252,7 +222,7 @@ def main(argv: Sequence[str] | None = None) -> int:
             require_verified=not args.allow_provisional,
             prepare_only=args.prepare_only,
         )
-    except FullTextError as error:
+    except (FullTextError, SubscriptionProxyError) as error:
         print(f"ERROR: {error}", file=sys.stderr)
         return 2
 

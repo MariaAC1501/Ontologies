@@ -39,7 +39,7 @@ Each prepared document directory contains:
 | `quality.json` | Page, truncation, duplication, sparse-text, and boilerplate checks. |
 | `processing.json` | Parser/OCR versions, settings, attempts, selected route, and output checksums/locations. |
 
-The repository's OntoCast patch maps each content unit back to converted-text character offsets, pages, paragraphs, and section headings. These locations are emitted on the chunk URI under `https://w3id.org/ontocast/fulltext#`. RDF 1.2 statement provenance then links each extracted assertion to the corresponding chunk URI.
+OntoCast 0.8.2 runs without source patches. The runner passes `--keep-provenance`, retaining RDF 1.2 assertion-to-chunk links and the upstream `*.units.jsonl` source-text sidecar. Exact page/character/paragraph RDF fields from the former patch are no longer emitted. The prepared `source-map.json` still records exact text locations, but upstream does not automatically link those locations to each assertion.
 
 `document.md` and `document.json` contain article text and belong in ignored local run directories. Do not release them unless the article licence permits redistribution. The source map retains locations and integrity hashes without repeating the text.
 
@@ -62,7 +62,7 @@ python3 -m pipeline.fulltext prepare \
   --output-dir runs/paper-0001/fulltext
 ```
 
-Prepare and run a fixed or evolved complete-document extraction:
+Prepare and run a fixed or evolved complete-document extraction. **Currently blocked after extraction by the upstream 0.8.2 in-memory provenance serialization bug** (see **T-RUN-10** in `TASKS.md`); `--prepare-only` remains usable:
 
 ```bash
 bash pipeline/run_complete_extraction.sh \
@@ -74,7 +74,9 @@ bash pipeline/run_complete_extraction.sh \
 
 Use the final optional `--prepare-only` argument to stop before any LLM request. PowerShell users can run `pipeline/run_complete_extraction.ps1` with the same four positional values and `-PrepareOnly`.
 
-The publication runner never accepts or sends `--head-chunks`. The older single-PDF development wrappers also process the complete document by default. Supplying a positive second argument explicitly creates a limited development run.
+The publication runner uses `ontocast --env-file ... process --output-dir ... --keep-provenance --exclude-sections ""` and never sends `--head-chunks`. Default section exclusions are disabled, and bibliography text is retained. Both conditions set `ONTOLOGY_CRITIC_PASSES=0` and `FACTS_CRITIC_PASSES=1`. Stock OntoCast connects to the Pi Codex subscription proxy with the non-secret `LLM_API_KEY=subscription-proxy` placeholder, not a direct OpenAI API key.
+
+The single-PDF development wrappers use the same settings. Supplying a positive second argument explicitly creates a limited development run. Output names are `*.facts.ttl` and `*.ontology.ttl`, with upstream validation and run-metadata sidecars.
 
 ## Tests
 

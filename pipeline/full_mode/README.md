@@ -7,7 +7,7 @@ Issue: #13
 Run OntoCast in full ontology-evolution mode against `example_paper.pdf` with:
 
 - `RENDER_MODE=ontology_and_facts`
-- ontology critique enabled
+- ontology critique disabled (`ONTOLOGY_CRITIC_PASSES=0`); facts critique enabled
 - no seed ontology directory
 - dedicated output under `pipeline/full_mode/test_output/`
 
@@ -38,19 +38,21 @@ The run script uses `ontocast` from PATH and the local Pi Codex subscription pro
 Start the proxy in another terminal before running extraction:
 
 ```bash
-node tools/pi_codex_openai_proxy.mjs
+node pipeline/tools/pi_codex_openai_proxy.mjs
 ```
 
 - Default model: `gpt-5.6-luna` (override the actual Pi model with `PI_CODEX_MODEL`)
 - Default document scope: every chunk in the converted article
 
-## OntoCast patches
+## Stock OntoCast configuration
 
-All required patches are applied by `scripts/setup_submodules.*` via `scripts/apply_local_patches.py`. The maintained patch inventory and update procedure are in [`../../scripts/LOCAL_PATCHES.md`](../../scripts/LOCAL_PATCHES.md).
+OntoCast is pinned to unmodified **0.8.2**. No OntoCast source patch is applied. The subscription proxy works with `LLM_BASE_URL` and the non-secret `LLM_API_KEY=subscription-proxy` placeholder; Pi's OAuth credential, not this placeholder, authenticates the subscription.
 
-Full mode deliberately does **not** set `SKIP_ONTOLOGY_CRITIQUE` or an ontology directory. In contrast, fixed mode supplies the OPMAD seed and skips ontology critique. The complete effective settings are in `ontocast_full_config.env` and `../ontocast_config.env`.
+Both modes set `ONTOLOGY_CRITIC_PASSES=0` and `FACTS_CRITIC_PASSES=1`. Full mode has no seed ontology directory; fixed mode supplies the OPMAD profile. The complete settings are in `ontocast_full_config.env` and `../ontocast_config.env`. See [`../../scripts/LOCAL_PATCHES.md`](../../scripts/LOCAL_PATCHES.md).
 
 ## Run and outputs
+
+**Known upstream blocker:** the 0.8.2 default in-memory store crashes while persisting RDF 1.2 provenance, before dumping outputs. The proxy connection is verified, but complete extraction needs an upstream fix or a validated alternative backend. See **T-RUN-10** in `TASKS.md`; no extra OntoCast patch is applied.
 
 ```bash
 bash pipeline/full_mode/run_full_extraction.sh example_paper.pdf
@@ -62,13 +64,15 @@ Pass an optional positive second argument only for an explicitly limited develop
 bash pipeline/full_mode/run_full_extraction.sh example_paper.pdf 2
 ```
 
-With no limit, the complete document is processed. On Bash, `ONTOCAST_HEAD_CHUNKS` can also set a development limit. The runners clear previous top-level `*.ttl`, `*.json`, and `*.log` files in `pipeline/full_mode/test_output/`, stage the PDF under `test_output/input/`, and then require at least one of each output:
+With no limit, the complete document is processed. On Bash, `ONTOCAST_HEAD_CHUNKS` can also set a development limit. The runners clear previous top-level `*.ttl`, `*.json`, `*.jsonl`, and `*.log` files in `pipeline/full_mode/test_output/`, stage the PDF under `test_output/input/`, and then require at least one of each output:
 
-- `pipeline/full_mode/test_output/ontology_*.ttl`
-- `pipeline/full_mode/test_output/facts_*.ttl`
+- `pipeline/full_mode/test_output/*.ontology.ttl`
+- `pipeline/full_mode/test_output/*.facts.ttl`
 - `pipeline/full_mode/test_output/run.log`
 
-OntoCast serializes RDF-star/Turtle-star provenance (`rdf:reifies <<(...)>>`). The repository patch also records each chunk's converted-text offsets, pages, paragraphs, and section headings. Stock `rdflib` does not parse RDF 1.2 triple terms directly. `pipeline/full_mode/sparql_query.py`, `pipeline/facts_to_csv.py`, and the comparison tool remove those provenance statements before their ordinary-Turtle processing.
+The runners invoke `ontocast --env-file ... process --output-dir ... --keep-provenance --exclude-sections ""`. They retain every section and bibliography text unless a development chunk limit is supplied. `--keep-provenance` retains RDF 1.2 statement-to-chunk links and a `*.units.jsonl` source-text sidecar. The former custom page/character/paragraph RDF fields are no longer emitted.
+
+Stock `rdflib` does not parse RDF 1.2 triple terms directly. The SPARQL, legacy CSV, and comparison tools strip those statements; the strict review exporter preserves them.
 
 ## Historical validation record
 
@@ -114,6 +118,6 @@ Run the fixed-mode regression only after a fixed-mode facts fixture exists:
 bash pipeline/tests/test_regression.sh
 ```
 
-`pipeline/tests/test_sparql_query.py` runs only when its expected full-mode fixture files are present; otherwise its tests are skipped. Generated outputs are intentionally isolated under `pipeline/full_mode/test_output/` and should not be committed as source documentation.
+`pipeline/tests/test_sparql_query.py` uses temporary fixtures and requires no generated extraction output. Generated outputs are intentionally isolated under `pipeline/full_mode/test_output/` and should not be committed as source documentation.
 
 Full mode remains experimental. It can finish by salvaging non-converged units, so evaluate the produced ontology and facts for completeness and consistency before drawing research conclusions.

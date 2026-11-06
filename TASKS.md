@@ -37,6 +37,12 @@ The existing files under `extraction_papers/ontocast_runs/` are development expe
 - [ ] **P-ANALYSIS-02** — Prespecify ontology coverage, novelty, redundancy, integrity, reuse, stability, and alignment-effort measures.
 - [ ] **P-RELEASE-01** — Release permissible corpus metadata, codebook, gold cases, evidence locations, prompts, ontology artifacts, crosswalks, manifests, timing/edit logs, and evaluation code.
 
+#### Retrospective OPMAD benchmark option (decision pending)
+
+- [ ] **P-RETRO-01** — Verify the legacy case base's article identities, annotation provenance, full-text availability, and reuse permissions. The thesis reports 263 cases from 135 consulted papers. Local `CleanedDATA V12-05-2021.csv` contains 263 rows and 105 distinct nonempty title strings, while `CleanedDATA V21-07-2021.csv` contains 200 rows and 71 title strings. Reconcile these counts before describing the benchmark size.
+- [ ] **P-RETRO-02** — Decide whether to propose retrospective extraction validation before the newer-corpus and human-effort study. Audit a prespecified source-checked sample, establish which fields and cases the legacy annotations cover, and define missing-value and matching rules. The active manuscript remains unchanged while this option is considered.
+- [ ] **P-RETRO-03** — If adopted, freeze article-level development/test partitions, provide schema without held-out case facts, keep reference records out of extraction inputs, document possible LLM training contamination, retain a comparable schema-only baseline, and limit claims to the audited legacy target. Defer claims about newer literature and human time savings to prospective evaluation.
+
 ### A1. Superseded broad-review scope
 
 - [x] **P-SCOPE-01** — Retired: the active paper no longer combines a systematic evidence map with extraction validation.
@@ -220,7 +226,7 @@ Checked items below were completed in the initial unblocked engineering pass. Ta
 ### B6. Make full-text processing publication-grade
 
 - [x] **T-FULLTEXT-01** — Added a publication runner that never accepts `--head-chunks`; the development wrappers now process complete documents by default and require an explicit positive limit for a truncated development run.
-- [x] **T-FULLTEXT-02** — Added exact page/section/paragraph/table source maps and an idempotent OntoCast patch that carries converted-text offsets and locations onto chunk URIs linked by RDF 1.2 statement provenance.
+- [x] **T-FULLTEXT-02** — Added exact page/section/paragraph/table source maps. The former OntoCast chunk-location patch was removed by **T-RUN-09** at the user's request; prepared source-map sidecars remain, but stock RDF provenance no longer carries those exact offsets.
 - [x] **T-FULLTEXT-03** — Added a Docling quality gate that retries failed layout-aware selective OCR with forced full-page OCR and retains the better conversion before extraction.
 - [x] **T-FULLTEXT-04** — Added per-document records for parser, layout, table, OCR engine, language, forced-OCR setting, attempts, package versions, and prepared-output checksums.
 - [x] **T-FULLTEXT-05** — Added deterministic checks for truncation, missing/repeated/out-of-order pages, sparse text, near-duplicate pages, conversion errors, and publisher-boilerplate dominance.
@@ -269,6 +275,9 @@ Checked items below were completed in the initial unblocked engineering pass. Ta
 - [ ] **T-RUN-05** — Make runs resumable and idempotent without mixing configurations.
 - [x] **T-RUN-06** — Fail when a resume attempt changes ontology, prompt, model, parser, or normalization version.
 - [ ] **T-RUN-07** — Generate a final run manifest containing corpus hash, configuration hashes, software revisions, timestamps, and output checksums.
+- [x] **T-RUN-08** — Superseded by **T-RUN-09**: removed the local critique-bypass patch entirely. Native `ONTOLOGY_CRITIC_PASSES=0` and `FACTS_CRITIC_PASSES=1` control the two critics independently.
+- [x] **T-RUN-09** — Upgraded to unmodified OntoCast 0.8.2 and removed every OntoCast source patch. Updated setup, both platform runners, output discovery, tests, and docs. Both modes request `--keep-provenance` with ontology critique off and facts critique on. A live stock-LLMTool call through Pi Codex OAuth succeeded using only the non-secret placeholder key; complete extraction remains blocked by **T-RUN-10**.
+- [ ] **T-RUN-10** — Resolve upstream 0.8.2's in-memory RDF 1.2 persistence failure without reintroducing a local patch: `InMemoryTripleStoreManager.serialize()` rejects provenance triple terms as `Quad` objects before CLI dumps. Reproduced with an offline end-to-end fixed-mode run and an expected-failure unit test. Investigate an upstream fix or validate Fuseki, the other native backend: it uploads Turtle over HTTP and avoids the failing conversion. Verify an RDF 1.2 round-trip and isolate fixed/evolved projects before switching; do not silently strip provenance.
 
 ### B11. Update documentation
 
@@ -278,6 +287,10 @@ Checked items below were completed in the initial unblocked engineering pass. Ta
 - [x] **T-DOC-04** — Document the authoritative OPMAD source and generated-profile procedure.
 - [ ] **T-DOC-05** — Document corpus setup, full-text processing, annotation, evaluation, final extraction, and synthesis commands.
 - [ ] **T-DOC-06** — Add a reproducibility checklist linking every paper table/figure to its generating script and input manifest.
+- [x] **T-DOC-07** — Historical 0.3.0 source review (superseded runtime settings: see **T-RUN-09**): all converted-text chunks by default, independent parallel extraction, cross-chunk entity merging rather than joint text reasoning, and full selected-ontology Turtle prompts with fixed or evolving schema modes. The fixed OPMAD workflow uses a separately generated, import-free profile rather than the original XML. Extraction checks normally use an LLM critic, not formal ontology constraint validation; the fixed-mode critic bypass is tracked in **T-RUN-08**.
+
+- [x] **T-DOC-08** — Verify OntoCast evidence-check limits: LLM source-text review and requested quotations for proposed fixes are not mechanically verified; chunk provenance is not per-fact supporting evidence; non-converged facts can still be retained.
+- [x] **T-DOC-09** — Pre-upgrade analysis: compare locally patched OntoCast 0.3.0 (`ef532db`) with upstream/PyPI 0.8.2 (`4e7a00c`). Upstream covers the RDF-copy/SPARQL fixes, arbitrary model IDs, independent critic controls, and short-tail retention; subscription-proxy policy, indefinite quota retry, and exact full-text locations still need local integration. Audited CLI/configuration/output changes, including default provenance stripping and section exclusions; 62 focused upstream unit tests passed in a temporary checkout. No upgrade applied.
 
 ### B12. Human-in-the-loop interface (active benchmark)
 
@@ -285,3 +298,7 @@ Checked items below were completed in the initial unblocked engineering pass. Ta
 - [ ] **T-HIL-UI-02** — Freeze the representation-neutral codebook and test the form with trained annotators on development articles before using it for final held-out gold.
 - [ ] **T-HIL-UI-03** — Add blind adjudication of independent submissions and freeze the resulting gold records; keep both first-pass files intact.
 - [ ] **T-HIL-UI-04** — Extend the common form to fixed/evolved prefill correction with counterbalanced article assignments, atomic edit events, and quality/effort analysis. No prefill is available in the gold interface.
+
+### B13. Pipeline layout
+
+- [x] **T-LAYOUT-01** — Moved local integration tools into `pipeline/tools/` and updated build paths, proxy instructions, tests, and documentation. Verified the CBR build/CLI, proxy startup/health, and focused tests (15 passed; one known expected failure).

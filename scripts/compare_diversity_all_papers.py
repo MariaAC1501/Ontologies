@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Compare plain CBR retrieval with Diversity-in-CBR-aware MMR reranking.
 
-The comparison uses one CBR query per ``facts_*.ttl`` artifact in a canonical
+The comparison uses one CBR query per ``*.facts.ttl`` (or legacy ``facts_*.ttl``) artifact in a canonical
 ``ontocast_runs/*/output`` directory under ``extraction_papers``. It deliberately does not call OntoCast or spend API
 credits: PDFs without an existing facts artifact are reported as uncovered.
 
@@ -57,6 +57,16 @@ CBR_DATA_RELATIVE = Path(
 # validation target documented in pipeline/SCHEMA_MAPPING.md.
 CASEBASE_RELATIVE = CBR_DATA_RELATIVE / "CleanedDATA V12-05-2021.csv"
 SEED_ONTOLOGY_RELATIVE = Path("pipeline/seed_ontology/opmad_seed.ttl")
+DEFAULT_FACTS_GLOBS = (
+    "ontocast_runs/*/output/*.facts.ttl",
+    "ontocast_runs/*/output/facts_*.ttl",
+)
+
+
+def discover_facts(papers_dir: Path, patterns: Iterable[str]) -> list[Path]:
+    return sorted({path for pattern in patterns for path in papers_dir.glob(pattern)})
+
+
 QUERY_HEADERS = [
     "Task",
     "w1",
@@ -385,7 +395,7 @@ def write_report(path: Path, summary: dict[str, object], *, run_dir: Path) -> No
         f"- Archivos PDF de primer nivel en `extraction_papers`: **{coverage['corpus_pdf_files']}**.",
         f"- Documentos PDF únicos por SHA-256: **{coverage['unique_pdf_documents']}**.",
         f"- Archivos duplicados adicionales: **{coverage['duplicate_pdf_files']}**.",
-        f"- Artefactos canónicos `facts_*.ttl` disponibles: **{coverage['facts_artifacts']}**.",
+        f"- Artefactos canónicos de facts disponibles: **{coverage['facts_artifacts']}**.",
         f"- Consultas comparadas (una por artefacto): **{coverage['queries_analyzed']}**.",
         f"- Documentos únicos sin facts canónicos (estimación por conteo): **{coverage['unique_documents_without_facts_estimate']}**.",
         "",
@@ -422,7 +432,7 @@ def write_report(path: Path, summary: dict[str, object], *, run_dir: Path) -> No
 def parse_args(argv: list[str] | None = None) -> argparse.Namespace:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--papers-dir", default="extraction_papers", help="Corpus directory containing PDFs and OntoCast output.")
-    parser.add_argument("--facts-glob", default="ontocast_runs/*/output/facts_*.ttl", help="Glob relative to --papers-dir used to discover canonical facts artifacts.")
+    parser.add_argument("--facts-glob", nargs="+", default=DEFAULT_FACTS_GLOBS, help="Globs relative to --papers-dir (default: current and legacy OntoCast facts names).")
     parser.add_argument("--ontology", default=str(SEED_ONTOLOGY_RELATIVE), help="OPMAD ontology used to label facts.")
     parser.add_argument(
         "--casebase-csv",
@@ -476,7 +486,7 @@ def main(argv: list[str] | None = None) -> int:
     if not diversity_dir.is_dir():
         raise SystemExit(f"Diversity submodule is missing: {diversity_dir}")
 
-    fact_paths = sorted(papers_dir.glob(args.facts_glob))
+    fact_paths = discover_facts(papers_dir, args.facts_glob)
     if args.max_facts > 0:
         fact_paths = fact_paths[: args.max_facts]
     if not fact_paths:

@@ -11,7 +11,7 @@ JSON Lines is the default and is recommended for batch review:
 
 ```bash
 python pipeline/review_export.py \
-  --facts 'pipeline/test_output/facts_*.ttl' \
+  --facts 'pipeline/test_output/*.facts.ttl' \
   --output pipeline/test_output/review-records.jsonl
 ```
 

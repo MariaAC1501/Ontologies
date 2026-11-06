@@ -7,9 +7,9 @@ cd "$REPO_ROOT"
 
 PYTHON_BIN=${PYTHON_BIN:-python3}
 
-FIXED_FACTS_GLOB="pipeline/test_output/facts_*.ttl"
-EVOLVED_FACTS_GLOB="pipeline/full_mode/test_output/facts_*.ttl"
-EVOLVED_ONTO_GLOB="pipeline/full_mode/test_output/ontology_*.ttl"
+FIXED_FACTS_GLOB="pipeline/test_output/*.facts.ttl"
+EVOLVED_FACTS_GLOB="pipeline/full_mode/test_output/*.facts.ttl"
+EVOLVED_ONTO_GLOB="pipeline/full_mode/test_output/*.ontology.ttl"
 SEED_ONTO="pipeline/seed_ontology/opmad_seed.ttl"
 OUTPUT="pipeline/comparison/COMPARISON_RESULTS.md"
 
@@ -36,9 +36,9 @@ fi
 
 echo "Running side-by-side comparison..."
 "$PYTHON_BIN" pipeline/comparison/compare.py \
-  --fixed-facts $FIXED_FACTS_GLOB \
-  --evolved-facts $EVOLVED_FACTS_GLOB \
-  --evolved-ontology $EVOLVED_ONTO_GLOB \
+  --fixed-facts "${fixed_files[@]}" \
+  --evolved-facts "${evolved_fact_files[@]}" \
+  --evolved-ontology "${evolved_onto_files[@]}" \
   --seed-ontology "$SEED_ONTO" \
   --output "$OUTPUT"
 

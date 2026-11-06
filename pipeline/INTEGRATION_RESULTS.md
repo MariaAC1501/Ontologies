@@ -47,7 +47,7 @@ These tests use committed minimal fixtures and temporary files; they do not requ
    PYTHON_BIN=python bash pipeline/tests/test_regression.sh
    ```
 
-   This test consumes every artifact matching `FACTS_GLOB` (default: `pipeline/test_output/facts_*.ttl`). Clear or archive older outputs, or set `FACTS_GLOB` to a concrete `facts_*.ttl` path/glob, when you need a single-paper result.
+   This test consumes every artifact matching `FACTS_GLOB` (default: `pipeline/test_output/*.facts.ttl`). Clear or archive older outputs, or set `FACTS_GLOB` to a concrete facts path/glob, when you need a single-paper result. Legacy `facts_*.ttl` files remain usable with an explicit glob.
 
 ## Latest local check
 

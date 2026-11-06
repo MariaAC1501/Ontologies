@@ -19,11 +19,7 @@ SUBMODULES = (
     "external/Diversity-Improvement-in-CBR",
     "external/ontocast",
 )
-ONTOCAST_EXTRA_DEPS = (
-    # Imported by OntoCast 0.3.0 but not declared in its pyproject dependencies.
-    "pydantic-settings",
-    "python-dotenv",
-)
+ONTOCAST_EXTRAS = "server,openai,doc-processing,semantic-chunking"
 DIVERSITY_DEPS = (
     "pandas",
     "numpy",
@@ -105,20 +101,10 @@ def install_ontocast(root: Path, *, no_deps: bool) -> None:
     ontocast_dir = root / "external" / "ontocast"
     require_dir(ontocast_dir, "ontocast submodule")
 
-    if no_deps:
-        print("\n==> Install OntoCast extra Python dependencies")
-        print("Skipping uv dependency install because --no-deps was requested")
-    else:
-        uv_pip_install(
-            root,
-            list(ONTOCAST_EXTRA_DEPS),
-            label="Install OntoCast extra Python dependencies with uv",
-        )
-
     command: list[str | Path] = []
     if no_deps:
         command.append("--no-deps")
-    command.extend(["-e", f"{ontocast_dir}[doc-processing]"])
+    command.extend(["-e", f"{ontocast_dir}[{ONTOCAST_EXTRAS}]"])
     uv_pip_install(root, command, label="Install ontocast editable with uv")
 
 

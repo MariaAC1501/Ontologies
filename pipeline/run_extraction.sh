@@ -4,6 +4,7 @@ set -euo pipefail
 SCRIPT_DIR="$(cd -- "$(dirname -- "${BASH_SOURCE[0]}")" && pwd)"
 REPO_ROOT="$(cd -- "${SCRIPT_DIR}/.." && pwd)"
 ONTOCAST_BIN="$(command -v ontocast 2>/dev/null || true)"
+PYTHON_BIN="${PYTHON_BIN:-python3}"
 CONFIG_FILE="${SCRIPT_DIR}/ontocast_config.env"
 OUTPUT_DIR="${SCRIPT_DIR}/test_output"
 INPUT_DIR="${OUTPUT_DIR}/input"
@@ -44,24 +45,11 @@ if [[ -f "${REPO_ROOT}/.env" ]]; then
   set +a
 fi
 
-if [[ -n "${OPENAI_API_KEY:-}" || -n "${LLM_API_KEY:-}" ]]; then
-  echo "Direct OpenAI API keys are disabled for this workflow." >&2
-  echo "Use the local Pi Codex subscription proxy instead: node tools/pi_codex_openai_proxy.mjs" >&2
-  exit 1
-fi
-
 SUBSCRIPTION_PROXY_BASE="${LLM_BASE_URL:-http://127.0.0.1:8977/v1}"
-SUBSCRIPTION_PROXY_HEALTH="${SUBSCRIPTION_PROXY_BASE%/}"
-SUBSCRIPTION_PROXY_HEALTH="${SUBSCRIPTION_PROXY_HEALTH%/v1}/health"
-if command -v curl >/dev/null 2>&1; then
-  if ! curl -fsS --max-time 5 "${SUBSCRIPTION_PROXY_HEALTH}" >/dev/null; then
-    echo "Subscription proxy is not reachable at ${SUBSCRIPTION_PROXY_HEALTH}." >&2
-    echo "Start it with: node tools/pi_codex_openai_proxy.mjs" >&2
-    exit 1
-  fi
-else
-  echo "Warning: curl not found; skipping subscription proxy health check for ${SUBSCRIPTION_PROXY_HEALTH}" >&2
-fi
+"${PYTHON_BIN}" "${SCRIPT_DIR}/subscription_proxy.py" --base-url "${SUBSCRIPTION_PROXY_BASE}"
+# Stock OntoCast requires a key value. This is not a real key; the proxy uses OAuth.
+export LLM_PROVIDER=openai LLM_API_KEY=subscription-proxy
+export LLM_BASE_URL="${SUBSCRIPTION_PROXY_BASE}" ONTOLOGY_CRITIC_PASSES=0
 
 mkdir -p "${OUTPUT_DIR}" "${INPUT_DIR}"
 rm -f "${INPUT_DIR}"/*
@@ -83,7 +71,9 @@ echo "  llm:    Pi Codex subscription proxy (${SUBSCRIPTION_PROXY_BASE})"
 
 ontocast_args=(
   --env-file "${CONFIG_FILE}"
-  --input-path "${INPUT_DIR}"
+  process --input-path "${INPUT_DIR}"
+  --output-dir "${OUTPUT_DIR}"
+  --keep-provenance --exclude-sections ""
 )
 if [[ -n "${HEAD_CHUNKS}" ]]; then
   ontocast_args+=(--head-chunks "${HEAD_CHUNKS}")

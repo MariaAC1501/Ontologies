@@ -13,7 +13,7 @@ from pathlib import Path
 CBR_REL = Path(
     "external/CBR-Ontology-For-Predictive-Maintenance/CBR-Ontology/CBRproject"
 )
-HEADLESS_REL = Path("tools/cbr/HeadlessCBR.java")
+HEADLESS_REL = Path("pipeline/tools/cbr/HeadlessCBR.java")
 
 
 class BuildError(RuntimeError):

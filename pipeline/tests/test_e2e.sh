@@ -9,7 +9,7 @@ PYTHON_BIN=${PYTHON_BIN:-python3}
 if [[ -z "${FACTS_PATH:-}" ]]; then
   echo "FACTS_PATH is required for this integration test." >&2
   echo "Run fixed-mode extraction first, then invoke for example:" >&2
-  echo "  FACTS_PATH=pipeline/test_output/facts_<run-id>.ttl PYTHON_BIN=python bash pipeline/tests/test_e2e.sh" >&2
+  echo "  FACTS_PATH=pipeline/test_output/<paper>.facts.ttl PYTHON_BIN=python bash pipeline/tests/test_e2e.sh" >&2
   exit 1
 fi
 ONTOLOGY_PATH=${ONTOLOGY_PATH:-pipeline/seed_ontology/opmad_seed.ttl}

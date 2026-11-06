@@ -27,7 +27,7 @@ Specifically:
 
 Instead of patching the upstream repo directly, this repository adds a small local adapter:
 
-- `tools/cbr/HeadlessCBR.java`
+- `pipeline/tools/cbr/HeadlessCBR.java`
 
 This adapter:
 - bootstraps `User.AppConfiguration` with the local data directory
@@ -188,7 +188,7 @@ incomplete solution signatures and biased dissimilarities.
 ### 6. Batch comparison over extracted papers
 
 To compare plain top-5 CBR retrieval against a pool-15 MMR rerank for every
-canonical `facts_*.ttl` artifact under `extraction_papers/ontocast_runs/*/output/`, run:
+canonical `*.facts.ttl` artifact (or legacy `facts_*.ttl`) under `extraction_papers/ontocast_runs/*/output/`, run:
 
 ```bash
 python scripts/compare_diversity_all_papers.py --query-year 2026
@@ -266,11 +266,11 @@ bash scripts/run_cbr.sh query-batch input_file.csv retrieval_results
 
 Current CBR status:
 - CBR upstream source patches required: **none**
-- local compatibility layer added: `tools/cbr/HeadlessCBR.java`
+- local compatibility layer added: `pipeline/tools/cbr/HeadlessCBR.java`
 - local build/run scripts added:
   - `scripts/build_cbr.py`
   - `scripts/build_cbr.sh`
   - `scripts/run_cbr.sh`
   - `scripts/install_submodule_stack.py`
 
-OntoCast and Diversity-in-CBR do require repository-owned local patches. Their exact inventory, idempotence behavior, and update procedure are documented in [`LOCAL_PATCHES.md`](LOCAL_PATCHES.md). If a future CBR upstream patch is required, add it to `scripts/apply_local_patches.py` rather than maintaining a manual edit inside the submodule.
+OntoCast 0.8.2 is unmodified; its subscription proxy uses upstream endpoint settings and a non-secret placeholder key. Only Diversity-in-CBR requires repository-owned source patches. The inventory and update procedure are documented in [`LOCAL_PATCHES.md`](LOCAL_PATCHES.md). If a future CBR upstream patch is required, add it to `scripts/apply_local_patches.py` rather than maintaining a manual edit inside the submodule.

@@ -12,9 +12,9 @@ $RepoRoot  = Split-Path -Parent (Split-Path -Parent $ScriptDir)
 Push-Location $RepoRoot
 
 try {
-    $FixedFacts   = Get-ChildItem "pipeline\test_output\facts_*.ttl" -ErrorAction SilentlyContinue
-    $EvolvedFacts = Get-ChildItem "pipeline\full_mode\test_output\facts_*.ttl" -ErrorAction SilentlyContinue
-    $EvolvedOnto  = Get-ChildItem "pipeline\full_mode\test_output\ontology_*.ttl" -ErrorAction SilentlyContinue
+    $FixedFacts   = Get-ChildItem "pipeline\test_output\*.facts.ttl" -ErrorAction SilentlyContinue
+    $EvolvedFacts = Get-ChildItem "pipeline\full_mode\test_output\*.facts.ttl" -ErrorAction SilentlyContinue
+    $EvolvedOnto  = Get-ChildItem "pipeline\full_mode\test_output\*.ontology.ttl" -ErrorAction SilentlyContinue
     $SeedOnto     = "pipeline\seed_ontology\opmad_seed.ttl"
     $Output       = "pipeline\comparison\COMPARISON_RESULTS.md"
 

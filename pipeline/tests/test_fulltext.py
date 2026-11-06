@@ -288,18 +288,25 @@ class FullTextTests(unittest.TestCase):
             "/venv/bin/ontocast",
             Path("run/ontocast.env"),
             Path("run/input"),
+            Path("run/output"),
         )
         self.assertNotIn("--head-chunks", command)
-        self.assertEqual(command[-2:], ["--input-path", "run/input"])
+        self.assertEqual(command[3:6], ["process", "--input-path", "run/input"])
+        self.assertIn("--keep-provenance", command)
+        self.assertEqual(command[command.index("--output-dir") + 1], "run/output")
+        self.assertEqual(command[-2:], ["--exclude-sections", ""])
 
-        config = effective_config(
-            "fixed", self.root / "output", "http://127.0.0.1:9000/v1"
-        )
-        self.assertIn("LLM_BASE_URL=http://127.0.0.1:9000/v1", config)
-        self.assertIn(
-            f"ONTOCAST_WORKING_DIRECTORY={(self.root / 'output').resolve()}", config
-        )
-        self.assertIn("ONTOCAST_ONTOLOGY_DIRECTORY=", config)
+        for condition in ("fixed", "evolved"):
+            config = effective_config(condition, "http://127.0.0.1:9000/v1")
+            self.assertIn("LLM_BASE_URL=http://127.0.0.1:9000/v1", config)
+            self.assertIn("LLM_API_KEY=subscription-proxy", config)
+            self.assertIn("ONTOLOGY_CRITIC_PASSES=0", config)
+            self.assertIn("FACTS_CRITIC_PASSES=1", config)
+            self.assertNotIn("ONTOCAST_WORKING_DIRECTORY", config)
+            self.assertNotIn("SKIP_ONTOLOGY_CRITIQUE", config)
+            self.assertNotIn("PARALLEL_FACTS_RETRIES", config)
+            self.assertNotIn("PARALLEL_ONTOLOGY_RETRIES", config)
+            self.assertEqual("ONTOCAST_ONTOLOGY_DIRECTORY=" in config, condition == "fixed")
 
     def test_tracked_long_and_multicase_markdown_cover_every_page_and_table(
         self,
@@ -340,10 +347,17 @@ class FullTextTests(unittest.TestCase):
             self.assertNotIn("DEFAULT_HEAD_CHUNKS", text)
             self.assertIn("chunks: complete document", text)
             self.assertIn("ontocast_args+=(--head-chunks", text)
+            self.assertIn("process --input-path", text)
+            self.assertIn("--output-dir", text)
+            self.assertIn("--keep-provenance", text)
+            self.assertIn("ONTOLOGY_CRITIC_PASSES=0", text)
         for path in powershell_wrappers:
             text = path.read_text(encoding="utf-8")
             self.assertIn("[int]$HeadChunks = 0", text)
             self.assertIn("chunks: complete document", text)
+            self.assertIn("process --input-path", text)
+            self.assertIn("--keep-provenance", text)
+            self.assertIn('$env:ONTOLOGY_CRITIC_PASSES = "0"', text)
 
 
 if __name__ == "__main__":

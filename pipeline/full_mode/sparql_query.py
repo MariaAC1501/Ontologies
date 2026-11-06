@@ -3,18 +3,18 @@
 
 Sample invocations:
     python pipeline/full_mode/sparql_query.py \
-      --ontology pipeline/full_mode/test_output/ontology_*.ttl \
-      --facts pipeline/full_mode/test_output/facts_*.ttl \
+      --ontology 'pipeline/full_mode/test_output/*.ontology.ttl' \
+      --facts 'pipeline/full_mode/test_output/*.facts.ttl' \
       --preset summary
 
     python pipeline/full_mode/sparql_query.py \
-      --ontology pipeline/full_mode/test_output/ontology_*.ttl \
-      --facts pipeline/full_mode/test_output/facts_*.ttl \
+      --ontology 'pipeline/full_mode/test_output/*.ontology.ttl' \
+      --facts 'pipeline/full_mode/test_output/*.facts.ttl' \
       --preset classes
 
     python pipeline/full_mode/sparql_query.py \
-      --ontology pipeline/full_mode/test_output/ontology_*.ttl \
-      --facts pipeline/full_mode/test_output/facts_*.ttl \
+      --ontology 'pipeline/full_mode/test_output/*.ontology.ttl' \
+      --facts 'pipeline/full_mode/test_output/*.facts.ttl' \
       --query "SELECT ?s ?p ?o WHERE { ?s ?p ?o } LIMIT 10"
 """
 

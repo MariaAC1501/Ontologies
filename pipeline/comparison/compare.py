@@ -7,9 +7,9 @@ unique entities per mode.
 
 Sample invocation:
     python pipeline/comparison/compare.py \
-      --fixed-facts pipeline/test_output/facts_*.ttl \
-      --evolved-facts pipeline/full_mode/test_output/facts_*.ttl \
-      --evolved-ontology pipeline/full_mode/test_output/ontology_*.ttl \
+      --fixed-facts 'pipeline/test_output/*.facts.ttl' \
+      --evolved-facts 'pipeline/full_mode/test_output/*.facts.ttl' \
+      --evolved-ontology 'pipeline/full_mode/test_output/*.ontology.ttl' \
       --seed-ontology pipeline/seed_ontology/opmad_seed.ttl \
       --output pipeline/comparison/COMPARISON_RESULTS.md
 """

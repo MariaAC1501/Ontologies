@@ -1,21 +1,11 @@
 #!/usr/bin/env python3
-"""Apply local, idempotent patches to vendored git submodules.
-
-The patches intentionally live outside the submodules so upstream checkouts can be
-refreshed and then re-patched reproducibly.
-"""
+"""Apply Diversity-in-CBR patches and validate the unpatched dependencies."""
 from __future__ import annotations
 
 import argparse
 import sys
 from dataclasses import dataclass
 from pathlib import Path
-
-
-@dataclass(frozen=True)
-class PatchText:
-    text: str
-    newline: str
 
 
 DEPENDENCIES = ("all", "ontocast", "cbr", "diversity")
@@ -47,40 +37,13 @@ class LocalPatcher:
 
     def require_submodule(self, dependency: str, rel_path: str) -> Path:
         path = self.root / rel_path
-        if not path.exists():
+        if not path.is_dir() or not (path / ".git").exists():
             raise PatchError(
-                f"[{dependency}] Missing submodule at {path}. "
+                f"[{dependency}] Missing initialized submodule: {path}. "
                 f"Run: git submodule update --init --recursive {rel_path}"
-            )
-        if not path.is_dir():
-            raise PatchError(f"[{dependency}] Expected submodule directory at {path}")
-        if not (path / ".git").exists():
-            raise PatchError(
-                f"[{dependency}] {path} exists but does not look like an initialized "
-                f"git submodule (missing .git). Run: git submodule update --init --recursive {rel_path}"
             )
         self.notes.append(f"[{dependency}] validated submodule: {self.rel(path)}")
         return path
-
-    def require_file(self, dependency: str, path: Path) -> None:
-        if not path.exists():
-            raise PatchError(f"[{dependency}] Missing file required by patch: {path}")
-        if not path.is_file():
-            raise PatchError(f"[{dependency}] Expected regular file for patch: {path}")
-
-    def read_patch_text(self, path: Path) -> PatchText:
-        raw = path.read_bytes()
-        text = raw.decode("utf-8")
-        crlf_count = text.count("\r\n")
-        lf_count = text.count("\n") - crlf_count
-        newline = "\r\n" if crlf_count > lf_count else "\n"
-        normalized = text.replace("\r\n", "\n").replace("\r", "\n")
-        return PatchText(normalized, newline)
-
-    def write_patch_text(self, path: Path, text: str, newline: str) -> None:
-        if newline != "\n":
-            text = text.replace("\n", newline)
-        path.write_bytes(text.encode("utf-8"))
 
     def replace_exact(
         self,
@@ -90,778 +53,45 @@ class LocalPatcher:
         new: str,
         label: str,
     ) -> None:
-        """Replace exact anchor occurrences, skipping if already patched."""
-        self.require_file(dependency, path)
-        patch_text = self.read_patch_text(path)
-        text = patch_text.text
+        """Replace exact anchors idempotently, retaining the file's line endings."""
+        if not path.is_file():
+            raise PatchError(f"[{dependency}] Missing file required by patch: {path}")
+        raw = path.read_bytes().decode("utf-8")
+        crlf_count = raw.count("\r\n")
+        newline = "\r\n" if crlf_count > raw.count("\n") - crlf_count else "\n"
+        text = raw.replace("\r\n", "\n").replace("\r", "\n")
         rel_path = self.rel(path)
-
         if new in text:
             self.results.append(PatchResult(dependency, rel_path, label, "already"))
             return
-
-        old_count = text.count(old)
-        if old_count == 0:
+        if old not in text:
             raise PatchError(
                 f"[{dependency}] Expected patch anchor not found in {rel_path} "
-                f"for '{label}'. Anchor preview:\n{preview(old)}"
+                f"for '{label}'. Anchor preview:\n{old[:500]}"
             )
-
-        # Every exact occurrence of an anchor is replaced once per run, while
-        # the `new in text` guard above keeps the operation idempotent on later
-        # runs.
-        self.write_patch_text(path, text.replace(old, new), patch_text.newline)
-        self.results.append(PatchResult(dependency, rel_path, label, "patched"))
-
-    def replace_any_exact(
-        self,
-        dependency: str,
-        path: Path,
-        old_values: tuple[str, ...],
-        new: str,
-        label: str,
-    ) -> None:
-        """Replace the first matching exact anchor from several accepted states."""
-        self.require_file(dependency, path)
-        patch_text = self.read_patch_text(path)
-        text = patch_text.text
-        rel_path = self.rel(path)
-
-        if new in text:
-            self.results.append(PatchResult(dependency, rel_path, label, "already"))
-            return
-
-        for old in old_values:
-            if old in text:
-                self.write_patch_text(path, text.replace(old, new), patch_text.newline)
-                self.results.append(PatchResult(dependency, rel_path, label, "patched"))
-                return
-
-        previews = "\n--- or ---\n".join(preview(old) for old in old_values)
-        raise PatchError(
-            f"[{dependency}] Expected one of several patch anchors not found in {rel_path} "
-            f"for '{label}'. Anchor previews:\n{previews}"
-        )
-
-    def replace_optional_exact(
-        self,
-        dependency: str,
-        path: Path,
-        old: str,
-        new: str,
-        label: str,
-    ) -> None:
-        """Replace an exact anchor when present; skip clean upstream states."""
-        self.require_file(dependency, path)
-        patch_text = self.read_patch_text(path)
-        text = patch_text.text
-        rel_path = self.rel(path)
-
-        if new in text:
-            self.results.append(PatchResult(dependency, rel_path, label, "already"))
-            return
-        if old in text:
-            self.write_patch_text(path, text.replace(old, new), patch_text.newline)
-            self.results.append(PatchResult(dependency, rel_path, label, "patched"))
-            return
-        self.results.append(PatchResult(dependency, rel_path, label, "skipped"))
-
-    def insert_after_exact(
-        self,
-        dependency: str,
-        path: Path,
-        marker: str,
-        insertion: str,
-        already_marker: str,
-        label: str,
-    ) -> None:
-        """Insert text after an exact marker, skipping if already inserted."""
-        self.require_file(dependency, path)
-        patch_text = self.read_patch_text(path)
-        text = patch_text.text
-        rel_path = self.rel(path)
-
-        if already_marker in text:
-            self.results.append(PatchResult(dependency, rel_path, label, "already"))
-            return
-
-        marker_count = text.count(marker)
-        if marker_count == 0:
-            raise PatchError(
-                f"[{dependency}] Expected insertion anchor not found in {rel_path} "
-                f"for '{label}'. Anchor preview:\n{preview(marker)}"
-            )
-        if marker_count > 1:
-            raise PatchError(
-                f"[{dependency}] Insertion anchor for '{label}' is not unique in {rel_path} "
-                f"({marker_count} matches). Refusing to patch."
-            )
-
-        self.write_patch_text(
-            path, text.replace(marker, marker + insertion, 1), patch_text.newline
-        )
+        replacement = text.replace(old, new)
+        if newline != "\n":
+            replacement = replacement.replace("\n", newline)
+        path.write_bytes(replacement.encode("utf-8"))
         self.results.append(PatchResult(dependency, rel_path, label, "patched"))
 
     def changed_files(self) -> list[Path]:
         return sorted({result.path for result in self.results if result.status == "patched"})
 
 
-def preview(anchor: str, max_chars: int = 500) -> str:
-    text = anchor if len(anchor) <= max_chars else anchor[:max_chars] + "..."
-    return "\n".join(f"    {line}" for line in text.splitlines())
-
-
 def locate_repo_root() -> Path:
-    starts = [Path(__file__).resolve(), Path.cwd().resolve()]
-    seen: set[Path] = set()
-    for start in starts:
-        current = start if start.is_dir() else start.parent
-        for candidate in (current, *current.parents):
-            if candidate in seen:
-                continue
-            seen.add(candidate)
+    for start in (Path(__file__).resolve().parent, Path.cwd().resolve()):
+        for candidate in (start, *start.parents):
             if (candidate / ".git").exists() and (candidate / ".gitmodules").exists():
                 return candidate
-    raise PatchError(
-        "Could not locate repository root from script path or current directory "
-        "(expected .git and .gitmodules)."
-    )
+    raise PatchError("Could not locate repository root (expected .git and .gitmodules).")
 
 
-def apply_ontocast(patcher: LocalPatcher) -> None:
-    submodule = patcher.require_submodule("ontocast", "external/ontocast")
-    base = submodule / "ontocast"
-    if not base.is_dir():
-        raise PatchError(f"[ontocast] Missing package directory: {base}")
-
-    def target(rel_path: str) -> Path:
-        return base / rel_path
-
-    # --- Patch 1: ontology_prefix KeyError (upstream #47) ---
-    patcher.replace_exact(
-        "ontocast",
-        target("prompt/render_ontology.py"),
-        'prefix_instruction = """Use prefix `{ontology_prefix}` for entities/properties placed in the current domain ontology. DECLARE the prefix in preamble!"""',
-        'prefix_instruction = """Use prefix `{{ontology_prefix}}` for entities/properties placed in the current domain ontology. DECLARE the prefix in preamble!"""',
-        "ontology_prefix escaped in render ontology prompt",
-    )
-
-    # --- Patch 1b: remove legacy direct OpenAI API-key support from this repo workflow ---
-    patcher.replace_any_exact(
-        "ontocast",
-        target("config.py"),
-        (
-            '    api_key: str | None = Field(\n        default=None,\n        description="API key for LLM provider",\n        validation_alias=AliasChoices("LLM_API_KEY", "OPENAI_API_KEY"),\n    )',
-            '    api_key: str | None = Field(default=None, description="API key for LLM provider")',
-        ),
-        '    api_key: str | None = Field(default=None, description="Direct OpenAI API keys are disabled; use the local subscription proxy via LLM_BASE_URL")',
-        "OpenAI provider documents subscription proxy key policy",
-    )
-
-    patcher.replace_exact(
-        "ontocast",
-        target("config.py"),
-        '    def validate_llm_config(self) -> None:\n        """Validate LLM configuration and raise errors for missing required settings."""\n        if (\n            self.tool_config.llm_config.provider == LLMProvider.OPENAI\n            and not self.tool_config.llm_config.api_key\n        ):\n            raise ValueError(\n                "LLM_API_KEY environment variable is required for OpenAI provider"\n            )\n',
-        '    def validate_llm_config(self) -> None:\n        """Validate LLM configuration and raise errors for missing required settings."""\n        llm_config = self.tool_config.llm_config\n        if llm_config.provider == LLMProvider.OPENAI:\n            if llm_config.api_key:\n                raise ValueError(\n                    "Direct OpenAI API keys are disabled in this repository workflow. "\n                    "Use the local Pi Codex subscription proxy via LLM_BASE_URL instead."\n                )\n            if not llm_config.base_url:\n                raise ValueError(\n                    "LLM_BASE_URL must point to the local Pi Codex subscription proxy "\n                    "for OpenAI-compatible extraction runs."\n                )\n',
-        "OpenAI provider requires subscription proxy and rejects direct keys",
-    )
-
-    # --- Patch 1c: keep the OpenAI-compatible proxy forward-compatible ---
-    patcher.replace_exact(
-        "ontocast",
-        target("config.py"),
-        'class OpenAIModel(LLMModelNameAbstract):\n    """OpenAI model names."""\n\n    GPT4_O = "gpt-4o"\n    GPT4_O_MINI = "gpt-4o-mini"\n    GPT4_1 = "gpt-41"\n    GPT4_1_MINI = "gpt-41-mini"\n    GPT5 = "gpt-5"\n    GPT5_MINI = "gpt-5-mini"\n    GPT5_NANO = "gpt-5-nano"\n\n\nclass OllamaModel(LLMModelNameAbstract):\n    """Ollama model names."""\n\n    QWEN2_5 = "qwen2.5"\n    QWEN2_5_72B = "qwen2.5:72b"\n    LLAMA3_1 = "llama3.1"\n    LLAMA3_1_70B = "llama3.1:70b"\n    GRANITE3_3_2B = "granite3.3:2b"\n    GRANITE3_3_8B = "granite3.3:8b"\n\n\nLLMModelName = OpenAIModel | OllamaModel\n',
-        'class OpenAIModel(LLMModelNameAbstract):\n    """Known OpenAI model names kept for backwards-compatible defaults."""\n\n    GPT4_O = "gpt-4o"\n    GPT4_O_MINI = "gpt-4o-mini"\n    GPT4_1 = "gpt-4.1"\n    GPT4_1_MINI = "gpt-4.1-mini"\n    GPT4_1_NANO = "gpt-4.1-nano"\n    GPT5 = "gpt-5"\n    GPT5_MINI = "gpt-5-mini"\n    GPT5_NANO = "gpt-5-nano"\n\n\nclass OllamaModel(LLMModelNameAbstract):\n    """Ollama model names."""\n\n    QWEN2_5 = "qwen2.5"\n    QWEN2_5_72B = "qwen2.5:72b"\n    LLAMA3_1 = "llama3.1"\n    LLAMA3_1_70B = "llama3.1:70b"\n    GRANITE3_3_2B = "granite3.3:2b"\n    GRANITE3_3_8B = "granite3.3:8b"\n\n\nLLMModelName = OpenAIModel | OllamaModel\n',
-        "OpenAI model names correct GPT-4.1 and retain extensible IDs",
-    )
-    patcher.replace_exact(
-        "ontocast",
-        target("config.py"),
-        '    model_name: LLMModelName = Field(\n        default=OpenAIModel.GPT4_O_MINI, description="LLM model name"\n    )',
-        '    model_name: str = Field(\n        default=OpenAIModel.GPT4_O_MINI,\n        description=(\n            "LLM model name. OpenAI-compatible providers accept arbitrary model IDs "\n            "so newly released OpenAI models work without a OntoCast update."\n        ),\n    )',
-        "OpenAI model name accepts forward-compatible IDs",
-    )
-    patcher.replace_exact(
-        "ontocast",
-        target("config.py"),
-        '    def validate_model_name(cls, v: LLMModelName, info) -> LLMModelName:',
-        '    def validate_model_name(cls, v: str, info) -> str:',
-        "OpenAI model validator uses string model IDs",
-    )
-    patcher.replace_exact(
-        "ontocast",
-        target("config.py"),
-        '        if provider == LLMProvider.OPENAI and not isinstance(v, OpenAIModel):\n            raise ValueError(\n                f"Model {v} is not compatible with OpenAI provider. Use OpenAIModel values."\n            )\n\n        if provider == LLMProvider.OLLAMA and not isinstance(v, OllamaModel):\n            raise ValueError(\n                f"Model {v} is not compatible with Ollama provider. Use OllamaModel values."\n            )\n\n        return v\n',
-        '        model_name = v.strip()\n        if not model_name:\n            raise ValueError("LLM model name must not be empty.")\n\n        # The local proxy is OpenAI-compatible and forwards the model ID to Pi.\n        # Do not enumerate OpenAI IDs here: doing so would reject newly released\n        # models (for example gpt-5.4-mini) until OntoCast itself is updated.\n        if provider == LLMProvider.OPENAI:\n            return model_name\n\n        if (\n            provider == LLMProvider.OLLAMA\n            and model_name not in OllamaModel._value2member_map_\n        ):\n            raise ValueError(\n                f"Model {model_name} is not compatible with Ollama provider. "\n                "Use OllamaModel values."\n            )\n\n        return model_name\n',
-        "OpenAI model validation passes through new model IDs",
-    )
-    patcher.replace_any_exact(
-        "ontocast",
-        submodule / ".env.example",
-        (
-            "# Available OpenAI models: gpt-4o, gpt-4o-mini etc",
-            "# Any OpenAI-compatible model ID works (e.g., gpt-4.1, gpt-5.4-mini).",
-        ),
-        "# Any OpenAI-compatible model ID works (e.g., gpt-4.1, gpt-5.6-luna).",
-        "OpenAI environment example documents forward-compatible model IDs",
-    )
-    patcher.replace_exact(
-        "ontocast",
-        submodule / "test" / "conftest.py",
-        '    return OpenAIModel(os.getenv("LLM_MODEL_NAME", OpenAIModel.GPT4_O_MINI))',
-        '    return os.getenv("LLM_MODEL_NAME", OpenAIModel.GPT4_O_MINI)',
-        "test model fixture accepts newly released OpenAI model IDs",
-    )
-
-    patcher.replace_exact(
-        "ontocast",
-        target("tool/llm.py"),
-        '                api_key=(\n                    SecretStr(self.config.api_key) if self.config.api_key else None\n                ),  # type: ignore\n',
-        '                api_key=SecretStr(self.config.api_key or "subscription-proxy"),  # type: ignore\n',
-        "OpenAI-compatible subscription proxy uses non-secret placeholder key",
-    )
-
-    # --- Patch 2: skip_ontology_critique config flag ---
-    patcher.replace_exact(
-        "ontocast",
-        target("config.py"),
-        '    enable_ontology_consolidation: bool = Field(\n        default=False,\n        description="Run optional ontology consolidation pass after normalization",\n    )\n',
-        '    enable_ontology_consolidation: bool = Field(\n        default=False,\n        description="Run optional ontology consolidation pass after normalization",\n    )\n    skip_ontology_critique: bool = Field(\n        default=False,\n        description=(\n            "Experimental fast path: accept successful ontology render output "\n            "without running the ontology critic loop. This also affects "\n            "bootstrap ontology generation."\n        ),\n    )\n',
-        "skip_ontology_critique config flag",
-    )
-
-    # --- Patch 3: wire skip_ontology_critique through AtomicToolBox ---
-    patcher.replace_exact(
-        "ontocast",
-        target("tool/atomic.py"),
-        '        web_search_for_facts_render: bool = False,\n        web_search_for_facts_critic: bool = False,\n        web_search_planner_enabled: bool = True,\n',
-        '        web_search_for_facts_render: bool = False,\n        web_search_for_facts_critic: bool = False,\n        skip_ontology_critique: bool = False,\n        web_search_planner_enabled: bool = True,\n',
-        "AtomicToolBox constructor skip_ontology_critique argument",
-    )
-    patcher.replace_exact(
-        "ontocast",
-        target("tool/atomic.py"),
-        '            self.web_search_for_facts_render = web_search_config.facts_render_enabled\n            self.web_search_for_facts_critic = web_search_config.facts_critic_enabled\n            self.web_search_planner_enabled = web_search_config.planner_enabled\n',
-        '            self.web_search_for_facts_render = web_search_config.facts_render_enabled\n            self.web_search_for_facts_critic = web_search_config.facts_critic_enabled\n            self.skip_ontology_critique = skip_ontology_critique\n            self.web_search_planner_enabled = web_search_config.planner_enabled\n',
-        "AtomicToolBox config branch skip_ontology_critique assignment",
-    )
-    patcher.replace_exact(
-        "ontocast",
-        target("tool/atomic.py"),
-        '            self.web_search_for_facts_render = web_search_for_facts_render\n            self.web_search_for_facts_critic = web_search_for_facts_critic\n            self.web_search_planner_enabled = web_search_planner_enabled\n',
-        '            self.web_search_for_facts_render = web_search_for_facts_render\n            self.web_search_for_facts_critic = web_search_for_facts_critic\n            self.skip_ontology_critique = skip_ontology_critique\n            self.web_search_planner_enabled = web_search_planner_enabled\n',
-        "AtomicToolBox explicit branch skip_ontology_critique assignment",
-    )
-    patcher.replace_exact(
-        "ontocast",
-        target("toolbox.py"),
-        '        self.atomic_tools = AtomicToolBox(\n            llm_provider=self,\n            search_provider=self.search_provider,\n            web_search_config=tool_config.web_search,\n        )\n',
-        '        self.atomic_tools = AtomicToolBox(\n            llm_provider=self,\n            search_provider=self.search_provider,\n            web_search_config=tool_config.web_search,\n            skip_ontology_critique=config.server.skip_ontology_critique,\n        )\n',
-        "ToolBox passes skip_ontology_critique into AtomicToolBox",
-    )
-
-    # --- Patch 4: skip_ontology_critique in stategraph loop ---
-    patcher.replace_exact(
-        "ontocast",
-        target("stategraph/atomic.py"),
-        '        for critic_attempt in range(1, max_visits + 1):\n',
-        '        if tools.skip_ontology_critique:\n            logger.info(\n                "Unit ontology loop accepted render output without ontology critique at attempt %s/%s",\n                render_attempt,\n                max_visits,\n            )\n            return unit_state\n\n        for critic_attempt in range(1, max_visits + 1):\n',
-        "ontology loop can skip critique",
-    )
-
-    # --- Patch 5: deepcopy fix for parallel workers (upstream #48) ---
-    patcher.replace_exact(
-        "ontocast",
-        target("stategraph/node_factories.py"),
-        '            budget_tracker=state.budget_tracker,\n            max_visits_per_node=tools.config.server.max_visits_per_node,\n            current_domain=state.current_domain,\n            ontology_max_triples=tools.config.server.ontology_max_triples,\n        )\n        result = await ontology_loop(bootstrap_state, atomic_tools)',
-        '            budget_tracker=state.budget_tracker,\n            max_visits_per_node=tools.config.server.parallel_ontology_retries,\n            current_domain=state.current_domain,\n            ontology_max_triples=tools.config.server.ontology_max_triples,\n        )\n        result = await ontology_loop(bootstrap_state, atomic_tools)',
-        "bootstrap ontology retry budget",
-    )
-    patcher.replace_exact(
-        "ontocast",
-        target("stategraph/node_factories.py"),
-        '                base_state = state.model_copy(deep=True)\n                ontology_state = UnitOntologyState(\n                    content_unit=state.content_units[unit_index],\n                    ontology_snapshot=state.current_ontology,\n                    ontology_user_instruction=state.ontology_user_instruction,\n                    budget_tracker=base_state.budget_tracker,\n                    max_visits_per_node=tools.config.server.max_visits_per_node,\n                    current_domain=state.current_domain,\n                    ontology_max_triples=tools.config.server.ontology_max_triples,\n                )\n                result = await ontology_loop(ontology_state, atomic_tools)',
-        '                budget_tracker = state.budget_tracker.model_copy(deep=True)\n                ontology_state = UnitOntologyState(\n                    content_unit=state.content_units[unit_index],\n                    ontology_snapshot=state.current_ontology,\n                    ontology_user_instruction=state.ontology_user_instruction,\n                    budget_tracker=budget_tracker,\n                    max_visits_per_node=tools.config.server.parallel_ontology_retries,\n                    current_domain=state.current_domain,\n                    ontology_max_triples=tools.config.server.ontology_max_triples,\n                )\n                result = await ontology_loop(ontology_state, atomic_tools)',
-        "parallel ontology workers deepcopy budget tracker",
-    )
-    patcher.replace_exact(
-        "ontocast",
-        target("stategraph/node_factories.py"),
-        '                base_state = state.model_copy(deep=True)\n                facts_state = UnitFactsState(\n                    content_unit=state.content_units[unit_index],\n                    ontology_snapshot=state.current_ontology,\n                    facts_user_instruction=state.facts_user_instruction,\n                    budget_tracker=base_state.budget_tracker,\n                    max_visits_per_node=tools.config.server.max_visits_per_node,\n                )\n                result = await facts_loop(facts_state, atomic_tools)',
-        '                budget_tracker = state.budget_tracker.model_copy(deep=True)\n                facts_state = UnitFactsState(\n                    content_unit=state.content_units[unit_index],\n                    ontology_snapshot=state.current_ontology,\n                    facts_user_instruction=state.facts_user_instruction,\n                    budget_tracker=budget_tracker,\n                    max_visits_per_node=tools.config.server.parallel_facts_retries,\n                )\n                result = await facts_loop(facts_state, atomic_tools)',
-        "parallel facts workers deepcopy budget tracker",
-    )
-
-    # --- Patch 6: RDFGraph.__deepcopy__ (upstream #48) ---
-    patcher.insert_after_exact(
-        "ontocast",
-        target("onto/rdfgraph.py"),
-        '    def copy(self) -> "RDFGraph":\n        """Create a copy of this RDFGraph.\n\n        Returns:\n            RDFGraph: A new RDFGraph instance with all triples and namespace bindings copied.\n        """\n        result = RDFGraph()\n\n        # Copy all triples\n        for triple in self:\n            result.add(triple)\n\n        # Copy namespace bindings\n        for prefix, uri in self.namespaces():\n            result.bind(prefix, uri)\n\n        return result\n',
-        '\n    def __deepcopy__(self, memo):\n        """Deep-copy oxigraph-backed graphs into a plain in-memory RDFGraph."""\n        cached = memo.get(id(self))\n        if cached is not None:\n            return cached\n\n        result = RDFGraph()\n        memo[id(self)] = result\n\n        for prefix, uri in self.namespaces():\n            result.bind(prefix, uri)\n\n        skipped = 0\n        for subject, predicate, obj in self:\n            if isinstance(subject, tuple) or isinstance(predicate, tuple) or isinstance(obj, tuple):\n                skipped += 1\n                continue\n            try:\n                result.add((subject, predicate, obj))\n            except Exception as exc:\n                skipped += 1\n                logger.debug("Skipping triple during RDFGraph deepcopy: %s", exc)\n\n        if skipped:\n            logger.warning("Skipped %s RDF-star / unsupported triple(s) during RDFGraph deepcopy", skipped)\n\n        return result\n',
-        "def __deepcopy__(self, memo):",
-        "RDFGraph.__deepcopy__",
-    )
-
-    # --- Patch 7: SPARQL generation for RDF-star triples (upstream #49) ---
-    patcher.replace_exact(
-        "ontocast",
-        target("onto/sparql_models.py"),
-        '    def _generate_insert_query(self, graph: RDFGraph, prefix_block: str) -> str:\n        """Generate a SPARQL INSERT query for the given RDFGraph."""\n        if len(graph) == 0:\n            return ""\n\n        # Format triples for SPARQL using proper RDF term serialization\n        triple_patterns = []\n        for subject, predicate, obj in graph:\n            triple_patterns.append(\n                f"    {self._serialize_rdf_term(subject)} {self._serialize_rdf_term(predicate)} {self._serialize_rdf_term(obj)} ."\n            )\n\n        triples_block = "\\n".join(triple_patterns)\n\n        query_parts = []\n        if prefix_block:\n            query_parts.append(prefix_block)\n        query_parts.append("INSERT DATA {")\n        query_parts.append(triples_block)\n        query_parts.append("}")\n\n        return "\\n".join(query_parts)\n\n    def _generate_delete_query(self, graph: RDFGraph, prefix_block: str) -> str:\n        """Generate a SPARQL DELETE query for the given RDFGraph."""\n        if len(graph) == 0:\n            return ""\n\n        # Format triples for SPARQL using proper RDF term serialization\n        triple_patterns = []\n        for subject, predicate, obj in graph:\n            triple_patterns.append(\n                f"    {self._serialize_rdf_term(subject)} {self._serialize_rdf_term(predicate)} {self._serialize_rdf_term(obj)} ."\n            )\n\n        triples_block = "\\n".join(triple_patterns)\n\n        query_parts = []\n        if prefix_block:\n            query_parts.append(prefix_block)\n        query_parts.append("DELETE DATA {")\n        query_parts.append(triples_block)\n        query_parts.append("}")\n\n        return "\\n".join(query_parts)\n\n    def _serialize_rdf_term(self, term: Node) -> str:\n        """Serialize an RDF term to its SPARQL string representation."""\n',
-        '    def _iter_supported_triples(self, graph: RDFGraph):\n        """Yield only triples safe for SPARQL update text."""\n        skipped = 0\n        for subject, predicate, obj in graph:\n            if isinstance(subject, tuple) or isinstance(predicate, tuple) or isinstance(obj, tuple):\n                skipped += 1\n                continue\n            yield subject, predicate, obj\n        if skipped:\n            logger.warning("Skipped %s tuple-valued RDF-star triple(s) in SPARQL update", skipped)\n\n    def _generate_insert_query(self, graph: RDFGraph, prefix_block: str) -> str:\n        """Generate a SPARQL INSERT query for the given RDFGraph."""\n        if len(graph) == 0:\n            return ""\n        triple_patterns = []\n        for subject, predicate, obj in self._iter_supported_triples(graph):\n            triple_patterns.append(\n                f"    {self._serialize_rdf_term(subject)} {self._serialize_rdf_term(predicate)} {self._serialize_rdf_term(obj)} ."\n            )\n        if not triple_patterns:\n            return ""\n        triples_block = "\\n".join(triple_patterns)\n        query_parts = []\n        if prefix_block:\n            query_parts.append(prefix_block)\n        query_parts.append("INSERT DATA {")\n        query_parts.append(triples_block)\n        query_parts.append("}")\n        return "\\n".join(query_parts)\n\n    def _generate_delete_query(self, graph: RDFGraph, prefix_block: str) -> str:\n        """Generate a SPARQL DELETE query for the given RDFGraph."""\n        if len(graph) == 0:\n            return ""\n        triple_patterns = []\n        for subject, predicate, obj in self._iter_supported_triples(graph):\n            triple_patterns.append(\n                f"    {self._serialize_rdf_term(subject)} {self._serialize_rdf_term(predicate)} {self._serialize_rdf_term(obj)} ."\n            )\n        if not triple_patterns:\n            return ""\n        triples_block = "\\n".join(triple_patterns)\n        query_parts = []\n        if prefix_block:\n            query_parts.append(prefix_block)\n        query_parts.append("DELETE DATA {")\n        query_parts.append(triples_block)\n        query_parts.append("}")\n        return "\\n".join(query_parts)\n\n    def _serialize_rdf_term(self, term: Node) -> str:\n        """Serialize an RDF term to its SPARQL string representation."""\n        if isinstance(term, tuple):\n            raise TypeError(f"Unsupported tuple-valued RDF term: {term!r}")\n',
-        "SPARQL skips tuple-valued RDF-star triples",
-    )
-
-    # --- Patch 8: critic threshold relaxation ---
-    patcher.replace_exact(
-        "ontocast",
-        target("agent/criticise_ontology.py"),
-        "if critique.success or critique.score > 90:",
-        "if critique.success or critique.score >= 80:",
-        "ontology critic threshold relaxation",
-    )
-    patcher.replace_exact(
-        "ontocast",
-        target("agent/criticise_facts.py"),
-        "if critique.success or critique.score > 90:",
-        "if critique.success or critique.score >= 80:",
-        "facts critic threshold relaxation",
-    )
-
-    # --- Patch 9: softer ontology critic prompt ---
-    patcher.replace_exact(
-        "ontocast",
-        target("prompt/criticise_ontology.py"),
-        "6. **Domain Coverage**: Includes implicit domain knowledge beyond literal text\n",
-        "6. **Domain Coverage**: Includes implicit domain knowledge beyond literal text when clearly supported; missing optional enrichment alone should not block an otherwise coherent ontology\n",
-        "ontology critic prompt domain coverage softened",
-    )
-    patcher.replace_exact(
-        "ontocast",
-        target("prompt/criticise_ontology.py"),
-        "- Prioritize fixes that have cascading impact\n",
-        "- Prioritize fixes that have cascading impact\n- Do not fail an otherwise sound ontology solely because it lacks optional implicit-domain enrichment beyond the source text\n",
-        "ontology critic prompt optional enrichment softened",
-    )
-
-    # --- Patch 10: softer facts critic prompt ---
-    patcher.replace_exact(
-        "ontocast",
-        target("prompt/criticise_facts.py"),
-        "2. Completeness: Are all possible facts extracted from the text given the ontology?\n",
-        "2. Completeness: Are all important facts extracted from the text given the ontology? Minor omissions should be treated as non-blocking unless they materially affect graph usefulness.\n",
-        "facts critic prompt completeness softened",
-    )
-
-    # --- Patch 11: retain a document when the provider quota is exhausted ---
-    patcher.replace_exact(
-        "ontocast",
-        target("cli/serve.py"),
-        "import asyncio\nimport logging\n",
-        "import asyncio\nimport logging\nimport os\n",
-        "serve imports os for quota retry configuration",
-    )
-    patcher.replace_optional_exact(
-        "ontocast",
-        target("cli/serve.py"),
-        '"OpenAI quota exhausted while processing %s; "',
-        '"Subscription usage limit reached while processing %s; "',
-        "legacy OpenAI quota log migrated to subscription wording",
-    )
-    patcher.replace_exact(
-        "ontocast",
-        target("cli/serve.py"),
-        '''        async def process_files():
-            for file_path in files:
-                try:
-                    state = AgentState(
-                        files={file_path.as_posix(): file_path.read_bytes()},
-                        max_visits=config.server.max_visits_per_node,
-                        max_chunks=head_chunks,
-                        render_mode=config.server.render_mode,
-                        dataset=config.tool_config.fuseki.dataset,
-                    )
-                    async for _ in workflow.astream(
-                        state,
-                        stream_mode="values",
-                        config=RunnableConfig(recursion_limit=recursion_limit),
-                    ):
-                        pass
-
-                except Exception as e:
-                    logger.error(f"Error processing {file_path}: {str(e)}")
-
-''',
-        '''        async def process_files():
-            try:
-                quota_retry_seconds = max(
-                    60, int(os.getenv("ONTOCAST_QUOTA_RETRY_SECONDS", "900"))
-                )
-            except ValueError:
-                quota_retry_seconds = 900
-
-            for file_path in files:
-                quota_attempt = 0
-                while True:
-                    try:
-                        state = AgentState(
-                            files={file_path.as_posix(): file_path.read_bytes()},
-                            max_visits=config.server.max_visits_per_node,
-                            max_chunks=head_chunks,
-                            render_mode=config.server.render_mode,
-                            dataset=config.tool_config.fuseki.dataset,
-                        )
-                        async for _ in workflow.astream(
-                            state,
-                            stream_mode="values",
-                            config=RunnableConfig(recursion_limit=recursion_limit),
-                        ):
-                            pass
-                        break
-
-                    except Exception as e:
-                        message = str(e)
-                        quota_error_markers = (
-                            "insufficient_quota",
-                            "gousagelimiterror",
-                            "freeusagelimiterror",
-                            "monthly usage limit",
-                            "usage limit reached",
-                        )
-                        if any(marker in message.lower() for marker in quota_error_markers):
-                            quota_attempt += 1
-                            logger.error(
-                                "Subscription usage limit reached while processing %s; "
-                                "retry %s in %s seconds without advancing to the next file.",
-                                file_path,
-                                quota_attempt,
-                                quota_retry_seconds,
-                            )
-                            await asyncio.sleep(quota_retry_seconds)
-                            continue
-                        logger.error(f"Error processing {file_path}: {message}")
-                        break
-
-''',
-        "retry the same document indefinitely after subscription usage limits",
-    )
-
-    # --- Patch 12: complete-document source locations and short-tail retention ---
-    patcher.replace_exact(
-        "ontocast",
-        target("onto/content_unit.py"),
-        '        type: Type of content unit (facts or ontology).\n    """\n',
-        '        type: Type of content unit (facts or ontology).\n        char_start: Start offset in the converted full text, inclusive.\n        char_end: End offset in the converted full text, exclusive.\n        page_start: First source page intersecting this unit.\n        page_end: Last source page intersecting this unit.\n        paragraph_start: First converted-text paragraph intersecting this unit.\n        paragraph_end: Last converted-text paragraph intersecting this unit.\n        section_path: Section headings intersecting or containing this unit.\n    """\n',
-        "ContentUnit documents full-text source locations",
-    )
-    patcher.replace_exact(
-        "ontocast",
-        target("onto/content_unit.py"),
-        '    type: OutputType = Field(\n        default=OutputType.FACTS, description="Type of content unit"\n    )\n    _hid: str = PrivateAttr(default="")\n',
-        '    type: OutputType = Field(\n        default=OutputType.FACTS, description="Type of content unit"\n    )\n    char_start: int | None = Field(\n        default=None, ge=0, description="Inclusive offset in converted source text"\n    )\n    char_end: int | None = Field(\n        default=None, ge=0, description="Exclusive offset in converted source text"\n    )\n    page_start: int | None = Field(default=None, ge=1)\n    page_end: int | None = Field(default=None, ge=1)\n    paragraph_start: int | None = Field(default=None, ge=1)\n    paragraph_end: int | None = Field(default=None, ge=1)\n    section_path: list[str] = Field(default_factory=list)\n    _hid: str = PrivateAttr(default="")\n',
-        "ContentUnit carries full-text source locations",
-    )
-    patcher.replace_exact(
-        "ontocast",
-        target("agent/chunk_text.py"),
-        'import logging\n',
-        'import logging\nimport re\n',
-        "chunk_text imports source-location regex support",
-    )
-    patcher.insert_after_exact(
-        "ontocast",
-        target("agent/chunk_text.py"),
-        'logger = logging.getLogger(__name__)\n',
-        '''
-_PAGE_RE = re.compile(r"(?m)^<!--\\s*PDF_PAGE:\\s*(\\d+)\\s*-->\\s*$")
-_HEADING_RE = re.compile(r"(?m)^(#{1,6})\\s+(.+?)\\s*$")
-_PARAGRAPH_RE = re.compile(r"\\S(?:.*?)(?=\\n\\s*\\n|\\Z)", re.DOTALL)
-
-
-def _locate_chunk(source: str, chunk: str, cursor: int) -> tuple[int, int] | None:
-    """Locate an ordered chunk despite harmless boundary whitespace changes."""
-    candidate = chunk.strip()
-    if not candidate:
-        return None
-    start = source.find(candidate, cursor)
-    if start >= 0:
-        return start, start + len(candidate)
-    tokens = re.findall(r"\\S+", candidate)
-    if not tokens:
-        return None
-    flexible = re.compile(r"\\s+".join(re.escape(token) for token in tokens), re.DOTALL)
-    match = flexible.search(source, cursor)
-    if match is None:
-        return None
-    return match.start(), match.end()
-
-
-def _last_page_before(markers: list[tuple[int, int]], position: int) -> int | None:
-    page: int | None = None
-    for offset, number in markers:
-        if offset > position:
-            break
-        page = number
-    return page
-
-
-def _source_metadata(source: str, start: int, end: int) -> dict:
-    page_markers = [(match.start(), int(match.group(1))) for match in _PAGE_RE.finditer(source)]
-    page_start = _last_page_before(page_markers, start)
-    page_end = _last_page_before(page_markers, max(start, end - 1))
-    paragraphs = [match.span() for match in _PARAGRAPH_RE.finditer(source)]
-    paragraph_numbers = [
-        index
-        for index, (left, right) in enumerate(paragraphs, start=1)
-        if left < end and right > start
-    ]
-    heading_matches = list(_HEADING_RE.finditer(source))
-    active: dict[int, str] = {}
-    encountered: list[str] = []
-    for match in heading_matches:
-        if match.start() >= end:
-            break
-        level = len(match.group(1))
-        heading = match.group(2).strip()
-        active = {key: value for key, value in active.items() if key < level}
-        active[level] = heading
-        if match.end() > start and heading not in encountered:
-            encountered.append(heading)
-    containing = [active[key] for key in sorted(active)]
-    section_path = list(dict.fromkeys([*containing, *encountered]))
-    return {
-        "char_start": start,
-        "char_end": end,
-        "page_start": page_start,
-        "page_end": page_end,
-        "paragraph_start": min(paragraph_numbers) if paragraph_numbers else None,
-        "paragraph_end": max(paragraph_numbers) if paragraph_numbers else None,
-        "section_path": section_path,
-    }
-''',
-        "_PAGE_RE =",
-        "chunk_text source-location helpers",
-    )
-    patcher.replace_exact(
-        "ontocast",
-        target("agent/chunk_text.py"),
-        '''def chunk_text(state: AgentState, tools: ToolBox) -> AgentState:
-    """Split text into manageable chunks.
-
-    This function takes the converted document text and splits it into smaller,
-    manageable chunks that can be processed independently.
-
-    Args:
-        state: The current agent state containing the text to chunk.
-        tools: The toolbox instance providing utility functions.
-
-    Returns:
-        AgentState: Updated state with text chunks.
-    """
-    logger.info("Chunking the text")
-    if state.input_text is not None:
-        chunks_txt: list[str] = tools.chunker(state.input_text)
-        logger.info(
-            f"Created {len(chunks_txt)} chunks for processing: {[len(c) for c in chunks_txt]}"
-        )
-
-        if state.max_chunks is not None:
-            logger.info(f"Selecting {state.max_chunks} chunks")
-
-            chunks_txt = chunks_txt[: state.max_chunks]
-
-        for i, chunk_txt in enumerate(chunks_txt):
-            state.content_units.append(
-                ContentUnit(
-                    text=chunk_txt,
-                    index=i,
-                    doc_iri=state.doc_iri,
-                )
-            )
-
-        logger.info(
-            "Created "
-            f"{len(state.content_units)} content units for processing: "
-            f"{[len(c) for c in state.content_units]}"
-        )
-        state.status = Status.SUCCESS
-    else:
-        state.status = Status.FAILED
-
-    return state
-''',
-        '''def chunk_text(state: AgentState, tools: ToolBox) -> AgentState:
-    """Split text into content units while retaining converted-source locations."""
-    logger.info("Chunking the text")
-    if state.input_text is None:
-        state.status = Status.FAILED
-        return state
-    chunks_txt: list[str] = tools.chunker(state.input_text)
-    logger.info(
-        "Created %s chunks for processing: %s",
-        len(chunks_txt),
-        [len(chunk) for chunk in chunks_txt],
-    )
-    if state.max_chunks is not None:
-        logger.info("Selecting %s chunks", state.max_chunks)
-        chunks_txt = chunks_txt[: state.max_chunks]
-    cursor = 0
-    for index, chunk_txt in enumerate(chunks_txt):
-        location = _locate_chunk(state.input_text, chunk_txt, cursor)
-        metadata = {}
-        if location is None:
-            logger.warning(
-                "Could not map content unit %s back to converted source text; provenance offsets are unavailable",
-                index,
-            )
-        else:
-            start, end = location
-            metadata = _source_metadata(state.input_text, start, end)
-            cursor = end
-        state.content_units.append(
-            ContentUnit(
-                text=chunk_txt,
-                index=index,
-                doc_iri=state.doc_iri,
-                **metadata,
-            )
-        )
-    logger.info(
-        "Created %s content units for processing: %s",
-        len(state.content_units),
-        [len(unit) for unit in state.content_units],
-    )
-    state.status = Status.SUCCESS if state.content_units else Status.FAILED
-    return state
-''',
-        "chunk_text retains source offsets and locations",
-    )
-    patcher.replace_exact(
-        "ontocast",
-        target("tool/chunk/chunker.py"),
-        '        # Filter out chunks that are too small\n        chunks = [chunk for chunk in chunks if len(chunk) >= self.config.min_size]\n\n        logger.info(f"Naive chunking produced {len(chunks)} chunks")',
-        '        # Retain every non-empty chunk. Dropping a short final paragraph would\n        # silently truncate complete-document publication runs.\n        chunks = [chunk for chunk in chunks if chunk.strip()]\n\n        logger.info(f"Naive chunking produced {len(chunks)} chunks")',
-        "naive chunker retains short final content",
-    )
-
-    # --- Patch 13: emit full-text locations with RDF statement provenance ---
-    patcher.replace_exact(
-        "ontocast",
-        target("tool/agg/rewriter.py"),
-        'accumulates several ``prov:wasDerivedFrom`` arcs.  Chunk metadata\n(``index``, ``hid``) is recorded as separate triples on the chunk URI.',
-        'accumulates several ``prov:wasDerivedFrom`` arcs. Chunk metadata records the\nchunk index and hash plus converted-text offsets, pages, paragraphs, and section\nheadings when the document converter supplied them.',
-        "rewriter documents full-text chunk metadata",
-    )
-    patcher.replace_exact(
-        "ontocast",
-        target("tool/agg/rewriter.py"),
-        'from rdflib import Literal, Node, URIRef',
-        'from rdflib import Literal, Namespace, Node, URIRef',
-        "rewriter imports provenance namespace",
-    )
-    patcher.replace_exact(
-        "ontocast",
-        target("tool/agg/rewriter.py"),
-        '_PROV = PROV\n_SCHEMA = SCHEMA\n',
-        '_PROV = PROV\n_SCHEMA = SCHEMA\n_FULLTEXT = Namespace("https://w3id.org/ontocast/fulltext#")\n',
-        "rewriter defines technical full-text provenance namespace",
-    )
-    patcher.replace_exact(
-        "ontocast",
-        target("tool/agg/rewriter.py"),
-        '        graph.add((unit_uri, _SCHEMA.identifier, Literal(unit.hid)))\n        return unit_uri',
-        '        graph.add((unit_uri, _SCHEMA.identifier, Literal(unit.hid)))\n        optional_integer_metadata = (\n            (_FULLTEXT.charStart, unit.char_start),\n            (_FULLTEXT.charEnd, unit.char_end),\n            (_FULLTEXT.pageStart, unit.page_start),\n            (_FULLTEXT.pageEnd, unit.page_end),\n            (_FULLTEXT.paragraphStart, unit.paragraph_start),\n            (_FULLTEXT.paragraphEnd, unit.paragraph_end),\n        )\n        for predicate, value in optional_integer_metadata:\n            if value is not None:\n                graph.add((unit_uri, predicate, Literal(value, datatype=XSD.integer)))\n        for heading in unit.section_path:\n            graph.add((unit_uri, _FULLTEXT.sectionHeading, Literal(heading)))\n        return unit_uri',
-        "rewriter emits full-text chunk locations",
-    )
-    patcher.replace_exact(
-        "ontocast",
-        target("tool/agg/rewriter.py"),
-        '        merged.bind("prov", str(_PROV))\n        merged.bind("schema", str(_SCHEMA))',
-        '        merged.bind("prov", str(_PROV))\n        merged.bind("schema", str(_SCHEMA))\n        merged.bind("fulltext", str(_FULLTEXT))',
-        "rewriter binds full-text provenance namespace",
-    )
-
-    # --- Patch 14: regression tests for source-location retention ---
-    patcher.replace_exact(
-        "ontocast",
-        submodule / "test" / "test_semantic_chunker.py",
-        'from ontocast.config import ChunkConfig\nfrom ontocast.tool.chunk.util import SENTENCE_SPLIT_REGEX, SemanticChunker\n',
-        'from ontocast.agent.chunk_text import _locate_chunk, _source_metadata\nfrom ontocast.config import ChunkConfig\nfrom ontocast.tool.chunk.util import SENTENCE_SPLIT_REGEX, SemanticChunker\n',
-        "semantic chunk tests import source-location helpers",
-    )
-    patcher.replace_exact(
-        "ontocast",
-        submodule / "test" / "test_semantic_chunker.py",
-        'class TestSemanticChunker:\n',
-        r'''def test_fulltext_chunk_location_retains_page_paragraph_and_section() -> None:
-    source = """<!-- PDF_PAGE: 1 -->\n\n# Introduction\n\nFirst paragraph.\n\n<!-- PDF_PAGE: 2 -->\n\n## Methods\n\nSecond paragraph with normalized spacing.\n"""
-    chunk = "## Methods\n\nSecond paragraph with normalized spacing."
-    location = _locate_chunk(source, chunk, 0)
-    assert location is not None
-    metadata = _source_metadata(source, *location)
-    assert metadata["page_start"] == 2
-    assert metadata["page_end"] == 2
-    assert metadata["paragraph_start"] is not None
-    assert metadata["paragraph_end"] is not None
-    assert "Methods" in metadata["section_path"]
-
-
-def test_fulltext_chunk_location_tolerates_whitespace_normalization() -> None:
-    source = "Alpha paragraph.\n\nBeta   paragraph."
-    location = _locate_chunk(source, "Beta paragraph.", 0)
-    assert location is not None
-    assert source[location[0] : location[1]] == "Beta   paragraph."
-
-
-class TestSemanticChunker:
-''',
-        "semantic chunk tests cover source locations",
-    )
-    patcher.replace_exact(
-        "ontocast",
-        submodule / "test" / "aggregation" / "test_provenance.py",
-        'def test_merge_graphs_with_provenance_reifies_mapped_triple(\n',
-        '''def test_chunk_metadata_includes_fulltext_source_locations(
-    graph_rewriter: GraphRewriter,
-) -> None:
-    graph = RDFGraph()
-    graph.add((URIRef(f"{DEFAULT_IRI}/Entity1"), RDF.type, URIRef(f"{DEFAULT_IRI}/Thing")))
-    unit = ContentUnit(
-        text="source chunk",
-        index=2,
-        doc_iri=URIRef("https://example.org/doc/fulltext"),
-        graph=graph,
-        char_start=120,
-        char_end=412,
-        page_start=3,
-        page_end=4,
-        paragraph_start=8,
-        paragraph_end=11,
-        section_path=["Methods", "Data"],
-    )
-    merged = graph_rewriter.merge_graphs_with_provenance([unit], mapping={})
-    unit_uri = URIRef(unit.iri_absolute)
-    fulltext = "https://w3id.org/ontocast/fulltext#"
-    expected = {
-        "charStart": 120,
-        "charEnd": 412,
-        "pageStart": 3,
-        "pageEnd": 4,
-        "paragraphStart": 8,
-        "paragraphEnd": 11,
-    }
-    for name, value in expected.items():
-        assert (
-            unit_uri,
-            URIRef(f"{fulltext}{name}"),
-            Literal(value, datatype=XSD.integer),
-        ) in merged
-    headings = {str(value) for value in merged.objects(unit_uri, URIRef(f"{fulltext}sectionHeading"))}
-    assert headings == {"Methods", "Data"}
-
-
-def test_merge_graphs_with_provenance_reifies_mapped_triple(
-''',
-        "provenance tests cover full-text chunk locations",
+def validate_ontocast(patcher: LocalPatcher) -> None:
+    patcher.require_submodule("ontocast", "external/ontocast")
+    patcher.notes.append(
+        "[ontocast] stock upstream; no source patches. The subscription proxy "
+        "uses LLM_BASE_URL and a non-secret LLM_API_KEY placeholder."
     )
 
 
@@ -877,7 +107,6 @@ def apply_diversity(patcher: LocalPatcher) -> None:
         "try:\n    import gensim.downloader as api\nexcept ImportError:  # Optional; only needed by the unused semantic similarity helper.\n    api = None\nfrom numpy import dot\nfrom numpy.linalg import norm\nimport Levenshtein\nfrom pathlib import Path\n#API for text semantic text similarity\nword2vec_model = None\n#Case Base comes from an Excel provided by the supervisor\n_SUBMODULE_DIR = Path(__file__).resolve().parent\npath = _SUBMODULE_DIR / \"Datasets\" / \"CleanedDATA V12-05-2021.csv\"\ndf = pd.read_csv(path, sep=';', encoding='windows-1252')\n",
         "Methods dataset path relative and optional gensim",
     )
-
     patcher.replace_exact(
         "diversity",
         submodule / "Methods2.py",
@@ -885,7 +114,6 @@ def apply_diversity(patcher: LocalPatcher) -> None:
         "import random\nfrom pathlib import Path\n#API for text semantic text similarity\n#word2vec_model = api.load(\"glove-wiki-gigaword-50\")\n\n#Case Base comes from an Excel provided by the supervisor\n_SUBMODULE_DIR = Path(__file__).resolve().parent\npath = _SUBMODULE_DIR / \"Datasets\" / \"CleanedDATA V12-05-2021.csv\"\npath_performance = _SUBMODULE_DIR / \"Datasets\" / \"performance_normalized_averaged.csv\"\n",
         "Methods2 dataset paths relative to submodule",
     )
-
     patcher.replace_exact(
         "diversity",
         submodule / "Methods2.py",
@@ -893,7 +121,6 @@ def apply_diversity(patcher: LocalPatcher) -> None:
         "        if DistFin==0:\n            Sim=1\n        elif DistFin>=6:\n            Sim=0.1\n        elif (DistFin<5 and DistFin>2):\n            Sim=0.5\n        elif DistFin<2:\n            Sim=0.8\n        return Sim\n",
         "SimTaxon exact match returns 1",
     )
-
     patcher.replace_exact(
         "diversity",
         submodule / "Validation.py",
@@ -901,7 +128,6 @@ def apply_diversity(patcher: LocalPatcher) -> None:
         "        solutions_condensed,descriptions_condensed=apply_CNN(des, sol, CaseBase_Train, weights_description, weights_solution)\n",
         "Validation apply_CNN threshold order",
     )
-
     patcher.replace_exact(
         "diversity",
         submodule / "Validation.py",
@@ -909,7 +135,6 @@ def apply_diversity(patcher: LocalPatcher) -> None:
         "            diversity=retrieval_for_ModCNN(solutions_condensed,descriptions_condensed,query,weights_description,weights_solution)\n",
         "Validation retrieval_for_ModCNN passes weights",
     )
-
     patcher.replace_exact(
         "diversity",
         submodule / "Modified_Condensed_Nearest_Neighbors.py",
@@ -917,7 +142,6 @@ def apply_diversity(patcher: LocalPatcher) -> None:
         "    for most_similar in similar_GC:\n        for generalized_solution in solutions_store:\n            if generalized_solution.parent_description == most_similar[0]:\n                list_solution.append(generalized_solution)\n                if len(list_solution) >= amount:\n                    return list_solution\n    return list_solution\n\n\ndef compute_diversity(candidates,weights):\n",
         "search_solutions_from_descriptions returns partial results",
     )
-
     patcher.replace_exact(
         "diversity",
         submodule / "Performance_Dataset_Generation.py",
@@ -961,68 +185,37 @@ def validate_cbr(patcher: LocalPatcher) -> None:
 
 
 def selected_dependencies(value: str) -> tuple[str, ...]:
-    if value == "all":
-        return ("ontocast", "cbr", "diversity")
-    return (value,)
+    return ("ontocast", "cbr", "diversity") if value == "all" else (value,)
 
 
 def print_summary(patcher: LocalPatcher, dependencies: tuple[str, ...]) -> None:
     print(f"Local patch root: {patcher.root}")
     print(f"Dependencies requested: {', '.join(dependencies)}")
-
-    if patcher.notes:
-        print("\nValidation notes:")
-        for note in patcher.notes:
-            print(f"  - {note}")
-
-    if patcher.results:
-        print("\nPatch operations:")
-        for result in patcher.results:
-            print(
-                f"  - [{result.dependency}] {result.status:7} "
-                f"{result.path} :: {result.label}"
-            )
-
-    changed = patcher.changed_files()
-    print("\nChanged files:")
-    if changed:
-        for path in changed:
-            print(f"  - {path}")
-    else:
+    for note in patcher.notes:
+        print(f"  - {note}")
+    for result in patcher.results:
+        print(f"  - [{result.dependency}] {result.status:7} {result.path} :: {result.label}")
+    print("Changed files:")
+    for path in patcher.changed_files():
+        print(f"  - {path}")
+    if not patcher.changed_files():
         print("  - none (already patched or validation-only run)")
 
 
-def parse_args(argv: list[str]) -> argparse.Namespace:
-    parser = argparse.ArgumentParser(
-        description="Apply idempotent local patches to vendored submodules."
-    )
-    parser.add_argument(
-        "--dependency",
-        choices=DEPENDENCIES,
-        default="all",
-        help="Dependency to patch/validate (default: all)",
-    )
-    return parser.parse_args(argv)
-
-
 def main(argv: list[str] | None = None) -> int:
-    args = parse_args(sys.argv[1:] if argv is None else argv)
-
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument("--dependency", choices=DEPENDENCIES, default="all")
+    args = parser.parse_args(argv)
     try:
-        root = locate_repo_root()
-        patcher = LocalPatcher(root)
+        patcher = LocalPatcher(locate_repo_root())
         dependencies = selected_dependencies(args.dependency)
-
+        actions = {
+            "ontocast": validate_ontocast,
+            "cbr": validate_cbr,
+            "diversity": apply_diversity,
+        }
         for dependency in dependencies:
-            if dependency == "ontocast":
-                apply_ontocast(patcher)
-            elif dependency == "diversity":
-                apply_diversity(patcher)
-            elif dependency == "cbr":
-                validate_cbr(patcher)
-            else:  # Defensive guard; argparse choices should prevent this.
-                raise PatchError(f"Unknown dependency: {dependency}")
-
+            actions[dependency](patcher)
         print_summary(patcher, dependencies)
         return 0
     except PatchError as exc:
