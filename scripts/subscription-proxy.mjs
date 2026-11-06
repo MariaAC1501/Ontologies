@@ -47,8 +47,10 @@ agent directory (`~/.pi/agent`, or `PI_CODING_AGENT_DIR`). It uses only the
   supported. Leave `LLM_JSON_MODE` off (the default); OntoCast still asks for
   JSON and parses it normally.
 - Streaming, images, tool calls, and constrained JSON output are not supported.
-  Requests are limited to 8 MiB and model calls time out after three minutes.
-  Disconnecting the client cancels its upstream call.
+  Requests are limited to 8 MiB. `LLM_REQUEST_TIMEOUT_SECONDS` sets the model-call
+  timeout for both OntoCast and this proxy (default 180 seconds; the project env
+  file sets 600). Restart both processes after changing it. Disconnecting the
+  client cancels its upstream call.
 - Requests consume your ChatGPT subscription quota. Keep the proxy on
   localhost. The dummy key is not a security boundary against other local
   processes. Prompts and credentials are not logged by the script.
@@ -141,6 +143,11 @@ async function main() {
   const modelId = process.env.LLM_MODEL_NAME || "gpt-6.1-sol";
   const port = Number(process.env.PROXY_PORT || 8787);
   if (!Number.isInteger(port) || port < 1 || port > 65535) fail(400, "Invalid PROXY_PORT.");
+  const timeoutSeconds = Number(process.env.LLM_REQUEST_TIMEOUT_SECONDS ?? 180);
+  const timeoutMs = timeoutSeconds * 1000;
+  if (!Number.isFinite(timeoutMs) || timeoutMs <= 0 || timeoutMs > 2_147_483_647) {
+    fail(400, "LLM_REQUEST_TIMEOUT_SECONDS must be positive and within Node's timer limit.");
+  }
   if (!runtime.isUsingSubscription(PROVIDER)) {
     fail(401, "Sign in to your ChatGPT subscription with /login openai-codex inside Pi first.");
   }
@@ -181,7 +188,7 @@ async function main() {
         fail(400, "prompt_cache_key must be a string.");
       }
       const input = context(body.messages, model);
-      timer = setTimeout(() => controller.abort(), 180_000);
+      timer = setTimeout(() => controller.abort(), timeoutMs);
       const result = await runtime.complete(model, input, {
         signal: controller.signal,
         transport: "sse",
@@ -235,7 +242,7 @@ async function main() {
     process.exitCode = 1;
   });
   server.listen(port, "127.0.0.1", () => {
-    console.log(`Subscription proxy: http://127.0.0.1:${port}/v1 (${PROVIDER}/${modelId})`);
+    console.log(`Subscription proxy: http://127.0.0.1:${port}/v1 (${PROVIDER}/${modelId}; timeout ${timeoutSeconds}s)`);
   });
 }
 

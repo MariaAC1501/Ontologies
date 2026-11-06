@@ -13,6 +13,9 @@ Fixes:
 - Keep generated Turtle prefixes from ending in a dot.
 - Preserve RDF 1.2 quoted triples when saving fact provenance.
 
+Timeouts need no OntoCast source patch: LLM_REQUEST_TIMEOUT_SECONDS in
+scripts/ontocast-subscription.env configures both OntoCast and the proxy.
+
 This does not change the ontology, prompt, or model, or run extraction.
 """
 

@@ -27,8 +27,9 @@ SOURCES = ROOT / "papers/opmad_sources.csv"
 PDF_DIR = ROOT / "papers/pdfs"
 ONTOLOGY = ROOT / "ontologies/opmad-ontocast/OPMAD-ontocast.ttl"
 INSTRUCTION = (
-    "Extract every predictive maintenance case reported in this paper and all "
-    "case-related facts expressible using the supplied ontology."
+    "Extract every predictive maintenance case reported in this paper, not in "
+    "other papers cited within it, and all case-related facts expressible using "
+    "the supplied ontology."
 )
 # Exported values take precedence over OntoCast's --env-file settings.
 RUN_ENV = {
@@ -233,6 +234,27 @@ def main() -> int:
         if not facts.is_file() or facts.stat().st_size == 0:
             print(f"Stopped: no facts file for {paper.source_id}. See {output}", file=sys.stderr)
             return 1
+        validation = facts.with_suffix(".validation.json")
+        if validation.is_file():
+            try:
+                report = json.loads(validation.read_text(encoding="utf-8"))
+            except json.JSONDecodeError:
+                print(f"Stopped: unreadable validation report: {validation}", file=sys.stderr)
+                return 1
+            # Empty renders on non-case material have no stage or reason.
+            # Operational failures, such as timeouts, make the paper incomplete
+            # even when OntoCast exits zero and writes a partial facts graph.
+            failures = [
+                failure for failure in report.get("unit_failures", [])
+                if failure.get("stage") or failure.get("reason")
+            ]
+            if failures:
+                print(
+                    f"Stopped: {paper.source_id} has {len(failures)} failed content "
+                    f"unit(s); its facts are incomplete. See {validation}",
+                    file=sys.stderr,
+                )
+                return 1
     print(f"\nFinished {len(selected)} paper(s). Results: {output}")
     return 0
 
