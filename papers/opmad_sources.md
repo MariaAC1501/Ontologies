@@ -12,9 +12,7 @@ DOI comparison is case-insensitive. Empty DOI cells mean not identified.
 
 ## Files
 
-- [opmad_dois.txt](opmad_dois.txt): 102 unique DOIs, one per line, ordered by first case.
 - [opmad_sources.csv](opmad_sources.csv): 104 distinct sources, titles, original identifiers, ontology article IDs, all case IDs, status, and evidence URLs.
-- [opmad_case_sources.csv](opmad_case_sources.csv): all 263 cases mapped to their source and DOI, with original titles, identifiers, and years retained.
 
 The source CSV stores multiple original titles and identifiers as JSON arrays. Case IDs and article IDs are separated by semicolons.
 
