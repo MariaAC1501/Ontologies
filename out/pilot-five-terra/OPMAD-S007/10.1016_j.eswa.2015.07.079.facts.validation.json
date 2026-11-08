@@ -1,0 +1,837 @@
+{
+  "source": "10.1016_j.eswa.2015.07.079.pdf",
+  "conformance": {
+    "shacl_evaluated": null,
+    "conforms": null,
+    "shacl_focus_nodes": null,
+    "shacl_vacuous": false,
+    "findings": 27,
+    "errors": 27,
+    "warnings": 0,
+    "by_kind": {
+      "functional_violation": 17,
+      "suspect_multi_value": 10
+    },
+    "shacl_violations": 0,
+    "shacl_by_constraint": {},
+    "shacl_by_shape": {},
+    "repairs_applied": {}
+  },
+  "gate_repairs": [],
+  "findings": [
+    {
+      "kind": "functional_violation",
+      "severity": "error",
+      "message": "<https://growgraph.dev/doc/937cf3da0e3b/abnormalGuiDescription> holds 3 distinct values for <http://www.ontologyrepository.com/CommonCoreOntologies/is_about>, which the schema constrains to at most one.",
+      "subject": "https://growgraph.dev/doc/937cf3da0e3b/abnormalGuiDescription",
+      "predicate": "http://www.ontologyrepository.com/CommonCoreOntologies/is_about",
+      "values": [
+        "https://growgraph.dev/doc/937cf3da0e3b/abnormalOltcStatus",
+        "https://growgraph.dev/doc/937cf3da0e3b/inrushPortionAbnormality",
+        "https://growgraph.dev/doc/937cf3da0e3b/voicedPortionAbnormality"
+      ],
+      "component": "",
+      "source_shape": ""
+    },
+    {
+      "kind": "suspect_multi_value",
+      "severity": "error",
+      "message": "<https://growgraph.dev/doc/937cf3da0e3b/abnormalTestingSignature> carries 3 mutually irreconcilable string values on <http://www.w3.org/2000/01/rdf-schema#label>, which is single-valued for a dominant majority of other subjects \u2014 the signature of distinct entities collapsed into one node.",
+      "subject": "https://growgraph.dev/doc/937cf3da0e3b/abnormalTestingSignature",
+      "predicate": "http://www.w3.org/2000/01/rdf-schema#label",
+      "values": [
+        "cb acoustic signature used for testing",
+        "testing acoustic current signature set",
+        "testing acoustic signature"
+      ],
+      "component": "",
+      "source_shape": ""
+    },
+    {
+      "kind": "functional_violation",
+      "severity": "error",
+      "message": "<https://growgraph.dev/doc/937cf3da0e3b/cbAcousticDiagnosisAlgorithm> holds 3 distinct values for <http://www.ontologyrepository.com/CommonCoreOntologies/is_about>, which the schema constrains to at most one.",
+      "subject": "https://growgraph.dev/doc/937cf3da0e3b/cbAcousticDiagnosisAlgorithm",
+      "predicate": "http://www.ontologyrepository.com/CommonCoreOntologies/is_about",
+      "values": [
+        "https://growgraph.dev/doc/937cf3da0e3b/cbDiagnosisRule",
+        "https://growgraph.dev/doc/937cf3da0e3b/cbSilenceDifferenceThreshold",
+        "https://growgraph.dev/doc/937cf3da0e3b/cbVoiceDifferenceThreshold"
+      ],
+      "component": "",
+      "source_shape": ""
+    },
+    {
+      "kind": "functional_violation",
+      "severity": "error",
+      "message": "<https://growgraph.dev/doc/937cf3da0e3b/cbDiagnosisRule> holds 2 distinct values for <http://www.ontologyrepository.com/CommonCoreOntologies/is_about>, which the schema constrains to at most one.",
+      "subject": "https://growgraph.dev/doc/937cf3da0e3b/cbDiagnosisRule",
+      "predicate": "http://www.ontologyrepository.com/CommonCoreOntologies/is_about",
+      "values": [
+        "https://growgraph.dev/doc/937cf3da0e3b/cbSilenceDifferenceThreshold",
+        "https://growgraph.dev/doc/937cf3da0e3b/cbVoiceDifferenceThreshold"
+      ],
+      "component": "",
+      "source_shape": ""
+    },
+    {
+      "kind": "suspect_multi_value",
+      "severity": "error",
+      "message": "<https://growgraph.dev/doc/937cf3da0e3b/cbReferenceSignature> carries 4 mutually irreconcilable string values on <http://www.w3.org/2000/01/rdf-schema#label>, which is single-valued for a dominant majority of other subjects \u2014 the signature of distinct entities collapsed into one node.",
+      "subject": "https://growgraph.dev/doc/937cf3da0e3b/cbReferenceSignature",
+      "predicate": "http://www.w3.org/2000/01/rdf-schema#label",
+      "values": [
+        "abnormal case reference current signature",
+        "reference acoustic current signature set",
+        "reference acoustic signature",
+        "reference signature"
+      ],
+      "component": "",
+      "source_shape": ""
+    },
+    {
+      "kind": "functional_violation",
+      "severity": "error",
+      "message": "<https://growgraph.dev/doc/937cf3da0e3b/circuitBreakerCase> holds 3 distinct values for <http://www.ontologyrepository.com/CommonCoreOntologies/is_about>, which the schema constrains to at most one.",
+      "subject": "https://growgraph.dev/doc/937cf3da0e3b/circuitBreakerCase",
+      "predicate": "http://www.ontologyrepository.com/CommonCoreOntologies/is_about",
+      "values": [
+        "https://growgraph.dev/doc/937cf3da0e3b/circuitBreakerDiagnosis",
+        "https://growgraph.dev/doc/937cf3da0e3b/expertSystem",
+        "https://growgraph.dev/doc/937cf3da0e3b/testedCircuitBreakers"
+      ],
+      "component": "",
+      "source_shape": ""
+    },
+    {
+      "kind": "suspect_multi_value",
+      "severity": "error",
+      "message": "<https://growgraph.dev/doc/937cf3da0e3b/currentSignal> carries 3 mutually irreconcilable string values on <http://www.w3.org/2000/01/rdf-schema#label>, which is single-valued for a dominant majority of other subjects \u2014 the signature of distinct entities collapsed into one node.",
+      "subject": "https://growgraph.dev/doc/937cf3da0e3b/currentSignal",
+      "predicate": "http://www.w3.org/2000/01/rdf-schema#label",
+      "values": [
+        "current signal",
+        "inrush current portion",
+        "inrush portion of the current signal"
+      ],
+      "component": "",
+      "source_shape": ""
+    },
+    {
+      "kind": "functional_violation",
+      "severity": "error",
+      "message": "<https://growgraph.dev/doc/937cf3da0e3b/diagnosticApproach> holds 2 distinct values for <http://www.ontologyrepository.com/CommonCoreOntologies/is_about>, which the schema constrains to at most one.",
+      "subject": "https://growgraph.dev/doc/937cf3da0e3b/diagnosticApproach",
+      "predicate": "http://www.ontologyrepository.com/CommonCoreOntologies/is_about",
+      "values": [
+        "https://growgraph.dev/doc/937cf3da0e3b/cb",
+        "https://growgraph.dev/doc/937cf3da0e3b/oltc_1"
+      ],
+      "component": "",
+      "source_shape": ""
+    },
+    {
+      "kind": "suspect_multi_value",
+      "severity": "error",
+      "message": "<https://growgraph.dev/doc/937cf3da0e3b/faultDetectionFunction_1> points at 2 objects via <http://purl.obolibrary.org/obo/BFO_0000054>, which is single-valued for every other subject in this graph.",
+      "subject": "https://growgraph.dev/doc/937cf3da0e3b/faultDetectionFunction_1",
+      "predicate": "http://purl.obolibrary.org/obo/BFO_0000054",
+      "values": [
+        "https://growgraph.dev/doc/937cf3da0e3b/abnormalCbAnalysis",
+        "https://growgraph.dev/doc/937cf3da0e3b/normalCbAnalysis"
+      ],
+      "component": "",
+      "source_shape": ""
+    },
+    {
+      "kind": "functional_violation",
+      "severity": "error",
+      "message": "<https://growgraph.dev/doc/937cf3da0e3b/inrushPortionAbnormality> holds 2 distinct values for <http://www.ontologyrepository.com/CommonCoreOntologies/is_about>, which the schema constrains to at most one.",
+      "subject": "https://growgraph.dev/doc/937cf3da0e3b/inrushPortionAbnormality",
+      "predicate": "http://www.ontologyrepository.com/CommonCoreOntologies/is_about",
+      "values": [
+        "https://growgraph.dev/doc/937cf3da0e3b/controlRodSlack_1",
+        "https://growgraph.dev/doc/937cf3da0e3b/motorStartupContactorSlack_1"
+      ],
+      "component": "",
+      "source_shape": ""
+    },
+    {
+      "kind": "suspect_multi_value",
+      "severity": "error",
+      "message": "<https://growgraph.dev/doc/937cf3da0e3b/normalReferenceSignature> carries 3 mutually irreconcilable string values on <http://www.w3.org/2000/01/rdf-schema#label>, which is single-valued for a dominant majority of other subjects \u2014 the signature of distinct entities collapsed into one node.",
+      "subject": "https://growgraph.dev/doc/937cf3da0e3b/normalReferenceSignature",
+      "predicate": "http://www.w3.org/2000/01/rdf-schema#label",
+      "values": [
+        "normal case reference acoustic signature",
+        "reference acoustic current signature set",
+        "reference acoustic signature"
+      ],
+      "component": "",
+      "source_shape": ""
+    },
+    {
+      "kind": "suspect_multi_value",
+      "severity": "error",
+      "message": "<https://growgraph.dev/doc/937cf3da0e3b/normalTestingOltc> points at 3 objects via <http://www.ontologyrepository.com/CommonCoreOntologies/described_by>, which is single-valued for every other subject in this graph.",
+      "subject": "https://growgraph.dev/doc/937cf3da0e3b/normalTestingOltc",
+      "predicate": "http://www.ontologyrepository.com/CommonCoreOntologies/described_by",
+      "values": [
+        "https://growgraph.dev/doc/937cf3da0e3b/cbReferenceSignature",
+        "https://growgraph.dev/doc/937cf3da0e3b/normalOltcStatus",
+        "https://growgraph.dev/doc/937cf3da0e3b/normalTestingSignature"
+      ],
+      "component": "",
+      "source_shape": ""
+    },
+    {
+      "kind": "suspect_multi_value",
+      "severity": "error",
+      "message": "<https://growgraph.dev/doc/937cf3da0e3b/normalTestingSignature> carries 2 mutually irreconcilable string values on <http://www.w3.org/2000/01/rdf-schema#label>, which is single-valued for a dominant majority of other subjects \u2014 the signature of distinct entities collapsed into one node.",
+      "subject": "https://growgraph.dev/doc/937cf3da0e3b/normalTestingSignature",
+      "predicate": "http://www.w3.org/2000/01/rdf-schema#label",
+      "values": [
+        "testing acoustic current set",
+        "testing acoustic signature"
+      ],
+      "component": "",
+      "source_shape": ""
+    },
+    {
+      "kind": "functional_violation",
+      "severity": "error",
+      "message": "<https://growgraph.dev/doc/937cf3da0e3b/oltcDiagnosisAlgorithm> holds 10 distinct values for <http://www.ontologyrepository.com/CommonCoreOntologies/is_about>, which the schema constrains to at most one.",
+      "subject": "https://growgraph.dev/doc/937cf3da0e3b/oltcDiagnosisAlgorithm",
+      "predicate": "http://www.ontologyrepository.com/CommonCoreOntologies/is_about",
+      "values": [
+        "https://growgraph.dev/doc/937cf3da0e3b/extendedDifferenceThreshold",
+        "https://growgraph.dev/doc/937cf3da0e3b/inrushDifferenceThreshold",
+        "https://growgraph.dev/doc/937cf3da0e3b/oltcAcousticSignalTests",
+        "https://growgraph.dev/doc/937cf3da0e3b/oltcExtendedAnomalyRule",
+        "https://growgraph.dev/doc/937cf3da0e3b/oltcInrushAnomalyRule",
+        "https://growgraph.dev/doc/937cf3da0e3b/oltcNormalDiagnosisRule",
+        "https://growgraph.dev/doc/937cf3da0e3b/oltcSteadyStateAnomalyRule",
+        "https://growgraph.dev/doc/937cf3da0e3b/oltcSynchronizationAnomalyRule",
+        "https://growgraph.dev/doc/937cf3da0e3b/steadyStateDifferenceThreshold",
+        "https://growgraph.dev/doc/937cf3da0e3b/synchronizationTestingAlgorithm"
+      ],
+      "component": "",
+      "source_shape": ""
+    },
+    {
+      "kind": "functional_violation",
+      "severity": "error",
+      "message": "<https://growgraph.dev/doc/937cf3da0e3b/oltcExtendedAnomalyRule> holds 2 distinct values for <http://www.ontologyrepository.com/CommonCoreOntologies/is_about>, which the schema constrains to at most one.",
+      "subject": "https://growgraph.dev/doc/937cf3da0e3b/oltcExtendedAnomalyRule",
+      "predicate": "http://www.ontologyrepository.com/CommonCoreOntologies/is_about",
+      "values": [
+        "https://growgraph.dev/doc/937cf3da0e3b/breakerFailure_1",
+        "https://growgraph.dev/doc/937cf3da0e3b/extendedDifferenceThreshold"
+      ],
+      "component": "",
+      "source_shape": ""
+    },
+    {
+      "kind": "functional_violation",
+      "severity": "error",
+      "message": "<https://growgraph.dev/doc/937cf3da0e3b/oltcInrushAnomalyRule> holds 3 distinct values for <http://www.ontologyrepository.com/CommonCoreOntologies/is_about>, which the schema constrains to at most one.",
+      "subject": "https://growgraph.dev/doc/937cf3da0e3b/oltcInrushAnomalyRule",
+      "predicate": "http://www.ontologyrepository.com/CommonCoreOntologies/is_about",
+      "values": [
+        "https://growgraph.dev/doc/937cf3da0e3b/controlRodSlack",
+        "https://growgraph.dev/doc/937cf3da0e3b/inrushDifferenceThreshold",
+        "https://growgraph.dev/doc/937cf3da0e3b/motorStartupContactorSlack"
+      ],
+      "component": "",
+      "source_shape": ""
+    },
+    {
+      "kind": "functional_violation",
+      "severity": "error",
+      "message": "<https://growgraph.dev/doc/937cf3da0e3b/oltcNormalDiagnosisRule> holds 5 distinct values for <http://www.ontologyrepository.com/CommonCoreOntologies/is_about>, which the schema constrains to at most one.",
+      "subject": "https://growgraph.dev/doc/937cf3da0e3b/oltcNormalDiagnosisRule",
+      "predicate": "http://www.ontologyrepository.com/CommonCoreOntologies/is_about",
+      "values": [
+        "https://growgraph.dev/doc/937cf3da0e3b/extendedDifferenceThreshold",
+        "https://growgraph.dev/doc/937cf3da0e3b/inrushDifferenceThreshold",
+        "https://growgraph.dev/doc/937cf3da0e3b/oltcAcousticSignalTests",
+        "https://growgraph.dev/doc/937cf3da0e3b/steadyStateDifferenceThreshold",
+        "https://growgraph.dev/doc/937cf3da0e3b/synchronizationTestingAlgorithm"
+      ],
+      "component": "",
+      "source_shape": ""
+    },
+    {
+      "kind": "functional_violation",
+      "severity": "error",
+      "message": "<https://growgraph.dev/doc/937cf3da0e3b/oltcSteadyStateAnomalyRule> holds 3 distinct values for <http://www.ontologyrepository.com/CommonCoreOntologies/is_about>, which the schema constrains to at most one.",
+      "subject": "https://growgraph.dev/doc/937cf3da0e3b/oltcSteadyStateAnomalyRule",
+      "predicate": "http://www.ontologyrepository.com/CommonCoreOntologies/is_about",
+      "values": [
+        "https://growgraph.dev/doc/937cf3da0e3b/faultyControlRelay",
+        "https://growgraph.dev/doc/937cf3da0e3b/lackOfLubrication_1",
+        "https://growgraph.dev/doc/937cf3da0e3b/steadyStateDifferenceThreshold"
+      ],
+      "component": "",
+      "source_shape": ""
+    },
+    {
+      "kind": "functional_violation",
+      "severity": "error",
+      "message": "<https://growgraph.dev/doc/937cf3da0e3b/oltcSynchronizationAnomalyRule> holds 2 distinct values for <http://www.ontologyrepository.com/CommonCoreOntologies/is_about>, which the schema constrains to at most one.",
+      "subject": "https://growgraph.dev/doc/937cf3da0e3b/oltcSynchronizationAnomalyRule",
+      "predicate": "http://www.ontologyrepository.com/CommonCoreOntologies/is_about",
+      "values": [
+        "https://growgraph.dev/doc/937cf3da0e3b/switchingSynchronization",
+        "https://growgraph.dev/doc/937cf3da0e3b/synchronizationTestingAlgorithm"
+      ],
+      "component": "",
+      "source_shape": ""
+    },
+    {
+      "kind": "suspect_multi_value",
+      "severity": "error",
+      "message": "<https://growgraph.dev/doc/937cf3da0e3b/oltcTestingSignal> carries 2 mutually irreconcilable string values on <http://www.w3.org/2000/01/rdf-schema#label>, which is single-valued for a dominant majority of other subjects \u2014 the signature of distinct entities collapsed into one node.",
+      "subject": "https://growgraph.dev/doc/937cf3da0e3b/oltcTestingSignal",
+      "predicate": "http://www.w3.org/2000/01/rdf-schema#label",
+      "values": [
+        "oltc testing signal",
+        "testing voice signal"
+      ],
+      "component": "",
+      "source_shape": ""
+    },
+    {
+      "kind": "suspect_multi_value",
+      "severity": "error",
+      "message": "<https://growgraph.dev/doc/937cf3da0e3b/phaseBCb> points at 2 objects via <http://www.ontologyrepository.com/CommonCoreOntologies/described_by>, which is single-valued for every other subject in this graph.",
+      "subject": "https://growgraph.dev/doc/937cf3da0e3b/phaseBCb",
+      "predicate": "http://www.ontologyrepository.com/CommonCoreOntologies/described_by",
+      "values": [
+        "https://growgraph.dev/doc/937cf3da0e3b/cbReferenceSignature",
+        "https://growgraph.dev/doc/937cf3da0e3b/normalReferenceSignature"
+      ],
+      "component": "",
+      "source_shape": ""
+    },
+    {
+      "kind": "suspect_multi_value",
+      "severity": "error",
+      "message": "<https://growgraph.dev/doc/937cf3da0e3b/phaseBCb> carries 2 mutually irreconcilable string values on <http://www.w3.org/2000/01/rdf-schema#label>, which is single-valued for a dominant majority of other subjects \u2014 the signature of distinct entities collapsed into one node.",
+      "subject": "https://growgraph.dev/doc/937cf3da0e3b/phaseBCb",
+      "predicate": "http://www.w3.org/2000/01/rdf-schema#label",
+      "values": [
+        "phase b's cb",
+        "phase c cb"
+      ],
+      "component": "",
+      "source_shape": ""
+    },
+    {
+      "kind": "functional_violation",
+      "severity": "error",
+      "message": "<https://growgraph.dev/doc/937cf3da0e3b/possibleCauseAssessment> holds 6 distinct values for <http://www.ontologyrepository.com/CommonCoreOntologies/is_about>, which the schema constrains to at most one.",
+      "subject": "https://growgraph.dev/doc/937cf3da0e3b/possibleCauseAssessment",
+      "predicate": "http://www.ontologyrepository.com/CommonCoreOntologies/is_about",
+      "values": [
+        "https://growgraph.dev/doc/937cf3da0e3b/contactWear_2",
+        "https://growgraph.dev/doc/937cf3da0e3b/improperBraidInstallation_2",
+        "https://growgraph.dev/doc/937cf3da0e3b/movingArmControlBending",
+        "https://growgraph.dev/doc/937cf3da0e3b/voicedPortionAbnormality_1",
+        "https://growgraph.dev/doc/937cf3da0e3b/voltageLimiterAnomaly_2",
+        "https://growgraph.dev/doc/937cf3da0e3b/wheelSwitchWear_2"
+      ],
+      "component": "",
+      "source_shape": ""
+    },
+    {
+      "kind": "functional_violation",
+      "severity": "error",
+      "message": "<https://growgraph.dev/doc/937cf3da0e3b/synchronizationTestingAlgorithm> holds 3 distinct values for <http://www.ontologyrepository.com/CommonCoreOntologies/is_about>, which the schema constrains to at most one.",
+      "subject": "https://growgraph.dev/doc/937cf3da0e3b/synchronizationTestingAlgorithm",
+      "predicate": "http://www.ontologyrepository.com/CommonCoreOntologies/is_about",
+      "values": [
+        "https://growgraph.dev/doc/937cf3da0e3b/oltcTestingSignal",
+        "https://growgraph.dev/doc/937cf3da0e3b/steadyStateCurrentPortion",
+        "https://growgraph.dev/doc/937cf3da0e3b/testingCurrentSignal"
+      ],
+      "component": "",
+      "source_shape": ""
+    },
+    {
+      "kind": "functional_violation",
+      "severity": "error",
+      "message": "<https://growgraph.dev/doc/937cf3da0e3b/tapChangerCase> holds 3 distinct values for <http://www.ontologyrepository.com/CommonCoreOntologies/is_about>, which the schema constrains to at most one.",
+      "subject": "https://growgraph.dev/doc/937cf3da0e3b/tapChangerCase",
+      "predicate": "http://www.ontologyrepository.com/CommonCoreOntologies/is_about",
+      "values": [
+        "https://growgraph.dev/doc/937cf3da0e3b/expertSystem",
+        "https://growgraph.dev/doc/937cf3da0e3b/tapChangerDiagnosis",
+        "https://growgraph.dev/doc/937cf3da0e3b/testedTapChangers"
+      ],
+      "component": "",
+      "source_shape": ""
+    },
+    {
+      "kind": "functional_violation",
+      "severity": "error",
+      "message": "<https://growgraph.dev/doc/937cf3da0e3b/testingProcedure> holds 7 distinct values for <http://www.ontologyrepository.com/CommonCoreOntologies/is_about>, which the schema constrains to at most one.",
+      "subject": "https://growgraph.dev/doc/937cf3da0e3b/testingProcedure",
+      "predicate": "http://www.ontologyrepository.com/CommonCoreOntologies/is_about",
+      "values": [
+        "https://growgraph.dev/doc/937cf3da0e3b/abnormalCurrentSignature",
+        "https://growgraph.dev/doc/937cf3da0e3b/abnormalTestingSignature",
+        "https://growgraph.dev/doc/937cf3da0e3b/cbTesting",
+        "https://growgraph.dev/doc/937cf3da0e3b/newCaseUpdateRequirement",
+        "https://growgraph.dev/doc/937cf3da0e3b/oltcTesting_1",
+        "https://growgraph.dev/doc/937cf3da0e3b/proposedAlgorithm",
+        "https://growgraph.dev/doc/937cf3da0e3b/typeMatchedReferenceRequirement"
+      ],
+      "component": "",
+      "source_shape": ""
+    },
+    {
+      "kind": "functional_violation",
+      "severity": "error",
+      "message": "<https://growgraph.dev/doc/937cf3da0e3b/voicedPortionAbnormality> holds 5 distinct values for <http://www.ontologyrepository.com/CommonCoreOntologies/is_about>, which the schema constrains to at most one.",
+      "subject": "https://growgraph.dev/doc/937cf3da0e3b/voicedPortionAbnormality",
+      "predicate": "http://www.ontologyrepository.com/CommonCoreOntologies/is_about",
+      "values": [
+        "https://growgraph.dev/doc/937cf3da0e3b/bendingMovingArmControl_1",
+        "https://growgraph.dev/doc/937cf3da0e3b/contactWear_1",
+        "https://growgraph.dev/doc/937cf3da0e3b/improperBraidInstallation_1",
+        "https://growgraph.dev/doc/937cf3da0e3b/voltageLimiterAnomaly_1",
+        "https://growgraph.dev/doc/937cf3da0e3b/wheelSwitchWear_1"
+      ],
+      "component": "",
+      "source_shape": ""
+    }
+  ],
+  "unit_repairs": {
+    "1": [
+      {
+        "kind": "critic_fix",
+        "source": "ids=[143]",
+        "target": "@prefix cd: <https://growgraph.dev/facts/> . @prefix ns1: <http://www.ontologyrepository.com/CommonCoreOntologies/> . cd:tested_tap_changers a ns1:PowerSourceComponent .",
+        "triple_count": 1
+      },
+      {
+        "kind": "critic_fix",
+        "source": "",
+        "target": "@prefix cd: <https://growgraph.dev/facts/> . @prefix ns1: <http://www.ontologyrepository.com/CommonCoreOntologies/> . cd:tap_changer_anomaly_identification a ns1:ActOfIdentifying ; ns1:has_input cd:inrush_current, cd:steady_state_current, cd:extended_current . cd:tap_changer_diagnosis ns1:has_process_part cd:tap_changer_anomaly_identification .",
+        "triple_count": 1
+      },
+      {
+        "kind": "critic_fix",
+        "source": "ids=[155, 156]",
+        "target": "@prefix cd: <https://growgraph.dev/facts/> . @prefix ns1: <http://www.ontologyrepository.com/CommonCoreOntologies/> . cd:signature_browsing_and_loading a ns1:ActOfArtifactEmployment ; ns1:has_input cd:reference_signatures, cd:test_signatures ; ns1:has_object cd:user_interface .",
+        "triple_count": 1
+      },
+      {
+        "kind": "critic_fix",
+        "source": "ids=[16, 18]",
+        "target": "@prefix cd: <https://growgraph.dev/facts/> . @prefix ns1: <http://www.ontologyrepository.com/CommonCoreOntologies/> . cd:article ns1:is_mention_of cd:circuit_breaker_case, cd:tap_changer_case .",
+        "triple_count": 1
+      }
+    ],
+    "2": [
+      {
+        "kind": "critic_fix",
+        "source": "ids=[37, 40]",
+        "target": "@prefix cd: <https://growgraph.dev/facts/> . @prefix ns2: <http://purl.obolibrary.org/obo/> . cd:proposed_expert_system ns2:BFO_0000051 cd:inference_engine, cd:user_interface .",
+        "triple_count": 1
+      },
+      {
+        "kind": "critic_fix",
+        "source": "",
+        "target": "@prefix cd: <https://growgraph.dev/facts/> . @prefix ns2: <http://purl.obolibrary.org/obo/> . cd:circuit_breaker_testing ns2:BFO_0000055 cd:fault_diagnosis_function . cd:oltc_testing ns2:BFO_0000055 cd:fault_diagnosis_function .",
+        "triple_count": 1
+      },
+      {
+        "kind": "critic_fix",
+        "source": "",
+        "target": "@prefix cd: <https://growgraph.dev/facts/> . @prefix ns1: <http://www.ontologyrepository.com/CommonCoreOntologies/> . cd:proposed_expert_system ns1:uses cd:diagnostic_rules . cd:diagnostic_rules a ns1:DirectiveInformationContentEntity .",
+        "triple_count": 1
+      },
+      {
+        "kind": "critic_fix",
+        "source": "",
+        "target": "@prefix cd: <https://growgraph.dev/facts/> . @prefix ns1: <http://www.ontologyrepository.com/CommonCoreOntologies/> . cd:oltc_signal_analysis a ns1:ActOfMeasuring ; ns1:uses cd:proposed_expert_system . cd:oltc_testing ns1:has_process_part cd:oltc_signal_analysis .",
+        "triple_count": 1
+      },
+      {
+        "kind": "critic_fix",
+        "source": "",
+        "target": "@prefix cd: <https://growgraph.dev/facts/> . @prefix ns1: <http://www.ontologyrepository.com/CommonCoreOntologies/> . cd:testing_signature a ns1:DescriptiveInformationContentEntity . cd:reference_signature a ns1:DescriptiveInformationContentEntity . cd:proposed_expert_system ns1:uses cd:testing_signature, cd:reference_signature .",
+        "triple_count": 1
+      }
+    ],
+    "3": [
+      {
+        "kind": "critic_fix",
+        "source": "ids=[3, 4, 40]",
+        "target": "@prefix cd: <https://growgraph.dev/facts/> . @prefix ns1: <http://www.ontologyrepository.com/CommonCoreOntologies/> . cd:acoustic_sampling_frequency ns1:described_by cd:acoustic_sampling_frequency_description . cd:acoustic_sampling_frequency_description a ns1:DescriptiveInformationContentEntity ; ns1:describes cd:cb_acoustic_signal, cd:oltc_acoustic_signal ; <https://www.w3.org/2000/01/rdf-schema#comment> \"Sampling frequency for both acoustic signals.\" . cd:current_sampling_frequency ns1:described_by cd:current_sampling_frequency_description . cd:current_sampling_frequency_description a ns1:DescriptiveInformationContentEntity ; ns1:describes cd:motor_current_signal ; <https://www.w3.org/2000/01/rdf-schema#comment> \"Sampling frequency for the motor current signal.\" .",
+        "triple_count": 1
+      },
+      {
+        "kind": "critic_fix",
+        "source": "ids=[2, 39]",
+        "target": "@prefix cd: <https://growgraph.dev/facts/> . @prefix ns1: <http://www.ontologyrepository.com/CommonCoreOntologies/> . cd:acoustic_sampling_frequency ns1:is_measured_by_ratio cd:acoustic_sampling_frequency_measurement . cd:current_sampling_frequency ns1:is_measured_by_ratio cd:current_sampling_frequency_measurement .",
+        "triple_count": 1
+      },
+      {
+        "kind": "critic_fix",
+        "source": "ids=[68]",
+        "target": "@prefix cd: <https://growgraph.dev/facts/> . @prefix ns1: <http://www.ontologyrepository.com/CommonCoreOntologies/> . cd:motor a ns1:ElectricMotor .",
+        "triple_count": 1
+      },
+      {
+        "kind": "critic_fix",
+        "source": "ids=[102, 105, 106]",
+        "target": "@prefix cd: <https://growgraph.dev/facts/> . @prefix ns1: <http://www.ontologyrepository.com/CommonCoreOntologies/> . cd:acoustic_recording a ns1:ActOfMeasuring ; ns1:uses cd:piezoelectric_accelerometer ; ns1:has_output cd:cb_acoustic_signal, cd:oltc_acoustic_signal . cd:current_measurement a ns1:ActOfMeasuring ; ns1:uses cd:open_clamp_current_sensor ; ns1:has_output cd:motor_current_signal .",
+        "triple_count": 1
+      },
+      {
+        "kind": "critic_fix",
+        "source": "ids=[137, 138]",
+        "target": "@prefix cd: <https://growgraph.dev/facts/> . @prefix ns1: <http://www.ontologyrepository.com/CommonCoreOntologies/> . cd:reference_spectrum a ns1:DescriptiveInformationContentEntity ; ns1:describes cd:reference_acoustic_signal . cd:testing_spectrum a ns1:DescriptiveInformationContentEntity ; ns1:describes cd:testing_acoustic_signal . cd:spectrum_comparison ns1:has_input cd:reference_spectrum, cd:testing_spectrum .",
+        "triple_count": 1
+      },
+      {
+        "kind": "critic_fix",
+        "source": "",
+        "target": "@prefix cd: <https://growgraph.dev/facts/> . @prefix ns1: <http://www.ontologyrepository.com/CommonCoreOntologies/> . cd:spectrum_extraction a ns1:IntentionalAct ; ns1:has_input cd:reference_acoustic_signal, cd:testing_acoustic_signal ; ns1:has_output cd:reference_spectrum, cd:testing_spectrum ; ns1:process_precedes cd:spectrum_comparison .",
+        "triple_count": 1
+      },
+      {
+        "kind": "critic_fix",
+        "source": "",
+        "target": "@prefix cd: <https://growgraph.dev/facts/> . @prefix ns1: <http://www.ontologyrepository.com/CommonCoreOntologies/> . cd:testing_signal_decomposition a ns1:IntentionalAct ; ns1:has_input cd:testing_acoustic_signal ; ns1:has_output cd:testing_voiced_portion, cd:testing_silence_portion ; ns1:process_precedes cd:voiced_comparison, cd:silence_comparison .",
+        "triple_count": 1
+      },
+      {
+        "kind": "critic_fix",
+        "source": "",
+        "target": "@prefix cd: <https://growgraph.dev/facts/> . @prefix ns1: <http://www.ontologyrepository.com/CommonCoreOntologies/> . cd:cb_diagnostic_process ns1:uses cd:signal_processor_module . cd:oltc_diagnostic_process ns1:uses cd:signal_processor_module . cd:voiced_comparison ns1:uses cd:signal_processor_module . cd:silence_comparison ns1:uses cd:signal_processor_module . cd:spectrum_comparison ns1:uses cd:signal_processor_module .",
+        "triple_count": 1
+      },
+      {
+        "kind": "critic_fix",
+        "source": "",
+        "target": "@prefix cd: <https://growgraph.dev/facts/> . @prefix ns1: <http://www.ontologyrepository.com/CommonCoreOntologies/> . cd:diagnostic_approach ns1:described_by cd:signal_processing_configuration . cd:signal_processing_configuration a ns1:DescriptiveInformationContentEntity ; ns1:describes cd:diagnostic_approach ; <http://www.w3.org/2000/01/rdf-schema#comment> \"Acoustic signals are analyzed in time and frequency domains for both equipment types; the OLTC motor-current signal is analyzed only in the time domain.\" .",
+        "triple_count": 1
+      },
+      {
+        "kind": "critic_fix",
+        "source": "",
+        "target": "@prefix cd: <https://growgraph.dev/facts/> . @prefix ns1: <http://www.ontologyrepository.com/CommonCoreOntologies/> . cd:anomaly_reporting_rule a ns1:DescriptiveInformationContentEntity ; ns1:describes cd:diagnostic_approach ; <http://www.w3.org/2000/01/rdf-schema#comment> \"When a portion comparison exceeds its threshold, the possible cause is bookmarked for display at the end of testing and processing continues to the next step.\" .",
+        "triple_count": 1
+      }
+    ],
+    "4": [
+      {
+        "kind": "critic_fix",
+        "source": "",
+        "target": "@prefix cd: <https://growgraph.dev/facts/> . @prefix opmad: <https://w3id.org/opmad#> . @prefix ns1: <http://www.ontologyrepository.com/CommonCoreOntologies/> . @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> . cd:cb_item_type a opmad:item_type ; opmad:has_text_value \"circuit breaker (CB)\" ; ns1:is_about cd:cb_health_assessment ; rdfs:label \"CB item type\" . cd:oltc_item_type a opmad:item_type ; opmad:has_text_value \"on-load tap changer (OLTC)\" ; ns1:is_about cd:oltc_health_assessment ; rdfs:label \"OLTC item type\" .",
+        "triple_count": 1
+      },
+      {
+        "kind": "critic_fix",
+        "source": "",
+        "target": "@prefix cd: <https://growgraph.dev/facts/> . @prefix opmad: <https://w3id.org/opmad#> . @prefix ns1: <http://www.ontologyrepository.com/CommonCoreOntologies/> . @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> . cd:cb_fault_identification a opmad:Fault_identification ; opmad:function_uses_model cd:cb_acoustic_diagnosis_algorithm ; rdfs:label \"CB possible-cause identification\" . cd:oltc_fault_identification a opmad:Fault_identification ; opmad:function_uses_model cd:oltc_diagnosis_algorithm ; rdfs:label \"OLTC possible-cause identification\" . cd:proposed_expert_system opmad:has_predictive_maintenance_function cd:cb_fault_identification, cd:oltc_fault_identification . cd:cb_fault_identification ns1:is_subject_of cd:cb_item_type . cd:oltc_fault_identification ns1:is_subject_of cd:oltc_item_type .",
+        "triple_count": 1
+      },
+      {
+        "kind": "critic_fix",
+        "source": "",
+        "target": "@prefix cd: <https://growgraph.dev/facts/> . @prefix opmad: <https://w3id.org/opmad#> . @prefix ns1: <http://www.ontologyrepository.com/CommonCoreOntologies/> . @prefix ns2: <http://purl.obolibrary.org/obo/> . @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> . cd:signal_processing_act a ns2:BFO_0000015 ; ns2:BFO_0000055 cd:signal_processing_function ; ns2:RO_0000057 cd:signal_processor ; ns1:has_input cd:reference_signal, cd:testing_signal ; ns1:has_output cd:extracted_signal_information ; rdfs:label \"processing of reference and testing signals\" . cd:reference_signal a ns1:DescriptiveInformationContentEntity ; rdfs:label \"reference signal\" . cd:testing_signal a ns1:DescriptiveInformationContentEntity ; rdfs:label \"testing signal\" . cd:extracted_signal_information a ns1:DescriptiveInformationContentEntity ; rdfs:label \"information extracted from signals\" . cd:factual_data_base ns2:RO_0010002 cd:extracted_signal_information .",
+        "triple_count": 1
+      },
+      {
+        "kind": "critic_fix",
+        "source": "",
+        "target": "@prefix cd: <https://growgraph.dev/facts/> . @prefix ns1: <http://www.ontologyrepository.com/CommonCoreOntologies/> . @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> . cd:testing_voice_signal a ns1:DescriptiveInformationContentEntity ; rdfs:label \"testing voice signal\" . cd:testing_current_signal a ns1:DescriptiveInformationContentEntity ; rdfs:label \"testing current signal\" . cd:synchronization_testing_algorithm ns1:is_about cd:testing_voice_signal, cd:testing_current_signal, cd:steady_state_current_portion .",
+        "triple_count": 1
+      },
+      {
+        "kind": "critic_fix",
+        "source": "",
+        "target": "@prefix cd: <https://growgraph.dev/facts/> . @prefix ns2: <http://purl.obolibrary.org/obo/> . cd:knowledge_base ns2:RO_0010002 cd:breaker_failure, cd:control_rod_slack, cd:motor_startup_contactor_slack, cd:faulty_control_relay, cd:lack_of_lubrication, cd:switching_synchronization .",
+        "triple_count": 1
+      },
+      {
+        "kind": "critic_fix",
+        "source": "ids=[27, 38, 128]",
+        "target": "@prefix cd: <https://growgraph.dev/facts/> . @prefix ns1: <http://www.ontologyrepository.com/CommonCoreOntologies/> . @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> . cd:inrush_current_difference a ns1:DescriptiveInformationContentEntity ; ns1:is_about cd:inrush_current_portion ; rdfs:label \"reference versus testing inrush current difference\" . cd:steady_state_current_difference a ns1:DescriptiveInformationContentEntity ; ns1:is_about cd:steady_state_current_portion ; rdfs:label \"reference versus testing steady state current difference\" . cd:extended_current_difference a ns1:DescriptiveInformationContentEntity ; ns1:is_about cd:extended_current_portion ; rdfs:label \"reference versus testing extended current difference\" . cd:inrush_difference_threshold ns1:is_about cd:inrush_current_difference . cd:steady_state_difference_threshold ns1:is_about cd:steady_state_current_difference . cd:extended_difference_threshold ns1:is_about cd:extended_current_difference .",
+        "triple_count": 1
+      },
+      {
+        "kind": "critic_fix",
+        "source": "ids=[17, 20]",
+        "target": "@prefix cd: <https://growgraph.dev/facts/> . @prefix ns1: <http://www.ontologyrepository.com/CommonCoreOntologies/> . @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> . cd:cb_voice_difference a ns1:DescriptiveInformationContentEntity ; ns1:is_about cd:voice_portion ; rdfs:label \"CB reference versus testing voice portion difference\" . cd:cb_silence_difference a ns1:DescriptiveInformationContentEntity ; ns1:is_about cd:silence_portion ; rdfs:label \"CB reference versus testing silence portion difference\" . cd:cb_voice_difference_threshold ns1:is_about cd:cb_voice_difference . cd:cb_silence_difference_threshold ns1:is_about cd:cb_silence_difference .",
+        "triple_count": 1
+      },
+      {
+        "kind": "critic_fix",
+        "source": "ids=[62]",
+        "target": "@prefix cd: <https://growgraph.dev/facts/> . @prefix ns1: <http://www.ontologyrepository.com/CommonCoreOntologies/> . cd:oltc_acoustic_signal_tests a ns1:ActOfMeasuring .",
+        "triple_count": 1
+      }
+    ],
+    "5": [
+      {
+        "kind": "critic_fix",
+        "source": "",
+        "target": "@prefix cd: <https://growgraph.dev/facts/> . @prefix ns1: <http://www.ontologyrepository.com/CommonCoreOntologies/> . @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> . cd:cb_testing_input_description a ns1:DescriptiveInformationContentEntity ; rdfs:label \"CB acoustic signature used for testing\" . cd:oltc_testing_input_description a ns1:DescriptiveInformationContentEntity ; rdfs:label \"OLTC acoustic-current signal pair used for testing\" . cd:testing_procedure ns1:is_about cd:cb_testing_input_description, cd:oltc_testing_input_description .",
+        "triple_count": 1
+      },
+      {
+        "kind": "critic_fix",
+        "source": "",
+        "target": "@prefix cd: <https://growgraph.dev/facts/> . @prefix ns1: <http://www.ontologyrepository.com/CommonCoreOntologies/> . @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> . cd:type_matched_reference_requirement a ns1:ActionRequirement ; rdfs:label \"Select and use a reference signal for each specific CB or OLTC type\" . cd:testing_procedure ns1:is_about cd:type_matched_reference_requirement .",
+        "triple_count": 1
+      },
+      {
+        "kind": "critic_fix",
+        "source": "",
+        "target": "@prefix cd: <https://growgraph.dev/facts/> . @prefix ns1: <http://www.ontologyrepository.com/CommonCoreOntologies/> . @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> . cd:new_case_update_requirement a ns1:ActionRequirement ; rdfs:label \"If a new case arises, update FDB and IE\" . cd:testing_procedure ns1:is_about cd:new_case_update_requirement .",
+        "triple_count": 1
+      }
+    ],
+    "6": [
+      {
+        "kind": "critic_fix",
+        "source": "",
+        "target": "@prefix cd: <https://growgraph.dev/facts/> . @prefix ns1: <http://www.ontologyrepository.com/CommonCoreOntologies/> . cd:sampling_frequency a ns1:InformationBearingEntity .",
+        "triple_count": 1
+      },
+      {
+        "kind": "critic_fix",
+        "source": "ids=[164]",
+        "target": "@prefix cd: <https://growgraph.dev/facts/> . @prefix ns1: <http://www.ontologyrepository.com/CommonCoreOntologies/> . cd:sampling_frequency ns1:is_a_ratio_measurement_of cd:data_acquisition_unit .",
+        "triple_count": 1
+      },
+      {
+        "kind": "critic_fix",
+        "source": "ids=[11, 12, 16]",
+        "target": "@prefix cd: <https://growgraph.dev/facts/> . @prefix ns1: <http://www.ontologyrepository.com/CommonCoreOntologies/> . cd:abnormal_cb_status a ns1:DescriptiveInformationContentEntity ; ns1:describes cd:abnormal_cb .",
+        "triple_count": 1
+      },
+      {
+        "kind": "critic_fix",
+        "source": "ids=[177, 178, 179, 180, 181]",
+        "target": "@prefix cd: <https://growgraph.dev/facts/> . @prefix ns1: <http://www.ontologyrepository.com/CommonCoreOntologies/> . cd:voiced_portion_abnormality ns1:is_about cd:bending_moving_arm_control, cd:contact_wear, cd:improper_braid_installation, cd:voltage_limiter_anomaly, cd:wheel_switch_wear .",
+        "triple_count": 1
+      },
+      {
+        "kind": "critic_fix",
+        "source": "ids=[101, 102]",
+        "target": "@prefix cd: <https://growgraph.dev/facts/> . @prefix ns1: <http://www.ontologyrepository.com/CommonCoreOntologies/> . cd:inrush_portion_abnormality ns1:is_about cd:control_rod_slack, cd:motor_startup_contactor_slack .",
+        "triple_count": 1
+      },
+      {
+        "kind": "critic_fix",
+        "source": "",
+        "target": "@prefix cd: <https://growgraph.dev/facts/> . @prefix ns1: <http://www.ontologyrepository.com/CommonCoreOntologies/> . cd:abnormal_oltc_test ns1:uses cd:expert_system .",
+        "triple_count": 1
+      },
+      {
+        "kind": "critic_fix",
+        "source": "",
+        "target": "@prefix cd: <https://growgraph.dev/facts/> . @prefix ns1: <http://www.ontologyrepository.com/CommonCoreOntologies/> . @prefix ns2: <http://purl.obolibrary.org/obo/> . cd:normal_acoustic_signature a ns1:DescriptiveInformationContentEntity ; ns1:describes cd:normal_testing_oltc ; <http://www.w3.org/2000/01/rdf-schema#label> \"normal-case testing acoustic signature\" . cd:normal_current_signature a ns1:DescriptiveInformationContentEntity ; ns1:describes cd:normal_testing_oltc ; <http://www.w3.org/2000/01/rdf-schema#label> \"normal-case testing current signature\" . cd:normal_testing_signatures ns2:BFO_0000051 cd:normal_acoustic_signature, cd:normal_current_signature .",
+        "triple_count": 1
+      },
+      {
+        "kind": "critic_fix",
+        "source": "",
+        "target": "@prefix cd: <https://growgraph.dev/facts/> . @prefix ns1: <http://www.ontologyrepository.com/CommonCoreOntologies/> . @prefix ns2: <http://purl.obolibrary.org/obo/> . cd:abnormal_reference_acoustic_signature a ns1:DescriptiveInformationContentEntity ; ns1:describes cd:abnormal_reference_oltc ; <http://www.w3.org/2000/01/rdf-schema#label> \"abnormal-case reference acoustic signature\" . cd:abnormal_reference_current_signature a ns1:DescriptiveInformationContentEntity ; ns1:describes cd:abnormal_reference_oltc ; <http://www.w3.org/2000/01/rdf-schema#label> \"abnormal-case reference current signature\" . cd:abnormal_reference_signatures ns2:BFO_0000051 cd:abnormal_reference_acoustic_signature, cd:abnormal_reference_current_signature .",
+        "triple_count": 1
+      },
+      {
+        "kind": "critic_fix",
+        "source": "",
+        "target": "@prefix cd: <https://growgraph.dev/facts/> . @prefix ns1: <http://www.ontologyrepository.com/CommonCoreOntologies/> . @prefix ns2: <http://purl.obolibrary.org/obo/> . cd:normal_reference_acoustic_signature a ns1:DescriptiveInformationContentEntity ; ns1:describes cd:normal_testing_oltc ; <http://www.w3.org/2000/01/rdf-schema#label> \"normal-case reference acoustic signature\" . cd:normal_reference_current_signature a ns1:DescriptiveInformationContentEntity ; ns1:describes cd:normal_testing_oltc ; <http://www.w3.org/2000/01/rdf-schema#label> \"normal-case reference current signature\" . cd:normal_reference_signatures ns2:BFO_0000051 cd:normal_reference_acoustic_signature, cd:normal_reference_current_signature .",
+        "triple_count": 1
+      },
+      {
+        "kind": "critic_fix",
+        "source": "",
+        "target": "@prefix cd: <https://growgraph.dev/facts/> . @prefix ns1: <http://www.ontologyrepository.com/CommonCoreOntologies/> . @prefix ns2: <http://purl.obolibrary.org/obo/> . cd:raw_data_processing ns1:has_output cd:abnormal_reference_signatures, cd:abnormal_testing_signatures, cd:normal_reference_signatures, cd:normal_testing_signatures . cd:acoustic_data_acquisition ns1:process_precedes cd:raw_data_processing . cd:motor_current_recording ns1:process_precedes cd:raw_data_processing . cd:raw_data_processing ns1:process_precedes cd:abnormal_oltc_test, cd:normal_oltc_test .",
+        "triple_count": 1
+      },
+      {
+        "kind": "critic_fix",
+        "source": "",
+        "target": "@prefix cd: <https://growgraph.dev/facts/> . @prefix ns1: <http://www.ontologyrepository.com/CommonCoreOntologies/> . cd:expert_system_development a ns1:IntentionalAct ; ns1:uses cd:matlab_2013b ; ns1:has_output cd:expert_system ; <http://www.w3.org/2000/01/rdf-schema#label> \"development of the expert system\" . cd:gui_development a ns1:IntentionalAct ; ns1:uses cd:matlab_gui ; ns1:has_output cd:developed_gui ; <http://www.w3.org/2000/01/rdf-schema#label> \"development of the user interface\" .",
+        "triple_count": 1
+      },
+      {
+        "kind": "critic_fix",
+        "source": "",
+        "target": "@prefix cd: <https://growgraph.dev/facts/> . @prefix ns1: <http://www.ontologyrepository.com/CommonCoreOntologies/> . @prefix opmad: <https://w3id.org/opmad#> . cd:multiple_signature_diagnostic_rule a ns1:DirectiveInformationContentEntity ; opmad:has_text_value \"If multiple testing signatures have been recorded, test the signals one-by-one and categorize the final cause based on their common results.\" ; ns1:is_about cd:diagnosis_method ; <http://www.w3.org/2000/01/rdf-schema#label> \"multiple-signature diagnostic rule\" .",
+        "triple_count": 1
+      },
+      {
+        "kind": "critic_fix",
+        "source": "",
+        "target": "@prefix cd: <https://growgraph.dev/facts/> . @prefix ns1: <http://www.ontologyrepository.com/CommonCoreOntologies/> . @prefix opmad: <https://w3id.org/opmad#> . cd:abnormal_gui_description a ns1:DescriptiveInformationContentEntity ; ns1:is_about cd:abnormal_oltc_status, cd:voiced_portion_abnormality, cd:inrush_portion_abnormality ; opmad:has_text_value \"The UI displayed a brief description of possible causes; more detail can be viewed via the detailed view tab.\" ; <http://www.w3.org/2000/01/rdf-schema#label> \"abnormal-case GUI description\" . cd:abnormal_oltc_test ns1:has_output cd:abnormal_gui_description .",
+        "triple_count": 1
+      },
+      {
+        "kind": "critic_fix",
+        "source": "ids=[91]",
+        "target": "@prefix cd: <https://growgraph.dev/facts/> . @prefix opmad: <https://w3id.org/opmad#> . cd:expert_system opmad:has_predictive_maintenance_function cd:fault_detection_function .",
+        "triple_count": 1
+      },
+      {
+        "kind": "critic_fix",
+        "source": "",
+        "target": "@prefix cd: <https://growgraph.dev/facts/> . @prefix ns1: <http://www.ontologyrepository.com/CommonCoreOntologies/> . @prefix opmad: <https://w3id.org/opmad#> . cd:fault_identification_function a opmad:Fault_identification ; opmad:function_uses_model cd:diagnosis_algorithm ; <http://www.w3.org/2000/01/rdf-schema#label> \"identification of abnormal signal portions and possible causes\" . cd:expert_system opmad:has_predictive_maintenance_function cd:fault_identification_function .",
+        "triple_count": 1
+      }
+    ],
+    "7": [
+      {
+        "kind": "critic_fix",
+        "source": "",
+        "target": "@prefix cd: <https://growgraph.dev/facts/> . @prefix ns1: <http://www.ontologyrepository.com/CommonCoreOntologies/> . cd:abnormal_cb_analysis ns1:has_output cd:possible_cause_assessment . cd:possible_cause_assessment a ns1:DescriptiveInformationContentEntity ; ns1:is_about cd:voiced_portion_abnormality, cd:improper_braid_installation, cd:moving_arm_control_bending, cd:wheel_switch_wear, cd:voltage_limiter_anomaly, cd:contact_wear ; rdfs:label \"Assessment of possible causes of the voiced-signal abnormality\" .",
+        "triple_count": 1
+      },
+      {
+        "kind": "critic_fix",
+        "source": "",
+        "target": "@prefix cd: <https://growgraph.dev/facts/> . @prefix ns1: <http://www.ontologyrepository.com/CommonCoreOntologies/> . cd:abnormal_testing_acquisition a ns1:ActOfMeasuring ; ns1:has_object cd:phase_b_cb ; ns1:has_output cd:abnormal_testing_signature ; rdfs:label \"Acquisition of the phase-B CB testing signature\" .",
+        "triple_count": 1
+      },
+      {
+        "kind": "critic_fix",
+        "source": "",
+        "target": "@prefix cd: <https://growgraph.dev/facts/> . @prefix ns1: <http://www.ontologyrepository.com/CommonCoreOntologies/> . cd:abnormal_cb_analysis ns1:has_accessory cd:developed_expert_system . cd:normal_cb_analysis ns1:has_accessory cd:developed_expert_system .",
+        "triple_count": 1
+      },
+      {
+        "kind": "critic_fix",
+        "source": "",
+        "target": "@prefix cd: <https://growgraph.dev/facts/> . @prefix ns1: <http://www.ontologyrepository.com/CommonCoreOntologies/> . cd:abnormal_status_panel a ns1:InstrumentDisplayPanel ; ns1:is_mention_of cd:abnormal_cb_status, cd:possible_cause_assessment ; rdfs:label \"Abnormal-case status indication panel\" . cd:developed_expert_system ns1:uses cd:abnormal_status_panel .",
+        "triple_count": 1
+      },
+      {
+        "kind": "critic_fix",
+        "source": "",
+        "target": "@prefix cd: <https://growgraph.dev/facts/> . @prefix ns1: <http://www.ontologyrepository.com/CommonCoreOntologies/> . cd:normal_status_panel a ns1:InstrumentDisplayPanel ; ns1:is_mention_of cd:normal_cb_status ; rdfs:label \"Normal-case status indication panel\" . cd:developed_expert_system ns1:uses cd:normal_status_panel .",
+        "triple_count": 1
+      },
+      {
+        "kind": "critic_fix",
+        "source": "",
+        "target": "@prefix cd: <https://growgraph.dev/facts/> . @prefix ns1: <http://www.ontologyrepository.com/CommonCoreOntologies/> . @prefix opmad: <https://w3id.org/opmad/> . cd:cb_diagnostic_decision_rule a ns1:DirectiveInformationContentEntity ; ns1:is_about cd:diagnosis_algorithm ; opmad:has_text_value \"A CB is declared normal if and only if all acoustic signal-processing tests are fulfilled; failure of any test results in an abnormal declaration.\" . cd:normal_signature_consistency_rule a ns1:DirectiveInformationContentEntity ; ns1:is_about cd:diagnosis_algorithm ; opmad:has_text_value \"To declare a CB normal, all signatures acquired from the same CB under similar conditions should yield consistent normal results.\" .",
+        "triple_count": 1
+      },
+      {
+        "kind": "critic_fix",
+        "source": "",
+        "target": "@prefix cd: <https://growgraph.dev/facts/> . @prefix ns1: <http://www.ontologyrepository.com/CommonCoreOntologies/> . @prefix opmad: <https://w3id.org/opmad/> . cd:diagnostic_signal_requirements a ns1:DirectiveInformationContentEntity ; ns1:is_about cd:diagnosis_algorithm ; opmad:has_text_value \"CB testing requires an acoustic signal; OLTC testing requires both acoustic and current signals. Use a different reference signature if the device type is different.\" .",
+        "triple_count": 1
+      },
+      {
+        "kind": "critic_fix",
+        "source": "",
+        "target": "@prefix cd: <https://growgraph.dev/facts/> . @prefix ns1: <http://www.ontologyrepository.com/CommonCoreOntologies/> . @prefix opmad: <https://w3id.org/opmad/> . cd:diagnostic_repeatability_assessment a ns1:DescriptiveInformationContentEntity ; ns1:describes cd:developed_expert_system ; opmad:has_text_value \"Results may differ for the same device and environmental conditions, possibly because accelerometer location or orientation differs; repeated readings from the same accelerometer under the same conditions are reported to yield unique outcomes.\" .",
+        "triple_count": 1
+      },
+      {
+        "kind": "critic_fix",
+        "source": "ids=[84, 87, 90, 91]",
+        "target": "@prefix cd: <https://growgraph.dev/facts/> . @prefix ns1: <http://www.ontologyrepository.com/CommonCoreOntologies/> . cd:phase_a_cb ns1:is_measured_by_nominal cd:normal_cb_status . cd:phase_b_cb ns1:is_measured_by_nominal cd:abnormal_cb_status . cd:phase_c_reference_cb ns1:described_by cd:abnormal_reference_signature, cd:normal_reference_signature .",
+        "triple_count": 1
+      },
+      {
+        "kind": "critic_fix",
+        "source": "ids=[22, 28]",
+        "target": "@prefix cd: <https://growgraph.dev/facts/> . @prefix ns1: <http://www.ontologyrepository.com/CommonCoreOntologies/> . cd:abnormal_reference_signature a ns1:DescriptiveInformationContentEntity ; rdfs:label \"reference acoustic signature\" . cd:abnormal_testing_signature rdfs:label \"testing acoustic signature\" .",
+        "triple_count": 1
+      }
+    ],
+    "8": [
+      {
+        "kind": "critic_fix",
+        "source": "ids=[26, 27]",
+        "target": "@prefix cd: <https://growgraph.dev/facts/> . @prefix ns1: <http://www.ontologyrepository.com/CommonCoreOntologies/> . cd:fault_identification ns1:uses cd:cb_item_type, cd:oltc_item_type .",
+        "triple_count": 1
+      },
+      {
+        "kind": "critic_fix",
+        "source": "ids=[30, 31]",
+        "target": "@prefix cd: <https://growgraph.dev/facts/> . @prefix ns1: <http://www.ontologyrepository.com/CommonCoreOntologies/> . cd:health_assessment ns1:uses cd:cb_item_type, cd:oltc_item_type .",
+        "triple_count": 1
+      },
+      {
+        "kind": "critic_fix",
+        "source": "ids=[26, 27, 30, 31, 37]",
+        "target": "@prefix cd: <https://growgraph.dev/facts/> . @prefix ns1: <http://www.ontologyrepository.com/CommonCoreOntologies/> . @prefix ns2: <http://purl.obolibrary.org/obo/> . cd:fault_identification ns1:uses cd:cb_item_type, cd:oltc_item_type . cd:health_assessment ns1:uses cd:cb_item_type, cd:oltc_item_type . cd:oltc_diagnosis ns1:has_object cd:oltc_device . cd:oltc_device a ns1:Artifact ; ns1:described_by cd:oltc_item_type . cd:cb_device a ns1:CircuitBreaker ; ns1:described_by cd:cb_item_type . cd:cb_diagnosis a ns1:ActOfObservation ; ns1:has_object cd:cb_device ; ns2:BFO_0000055 cd:health_assessment, cd:fault_identification . cd:oltc_diagnosis ns2:BFO_0000055 cd:fault_identification .",
+        "triple_count": 1
+      },
+      {
+        "kind": "critic_fix",
+        "source": "ids=[35, 36, 38]",
+        "target": "@prefix cd: <https://growgraph.dev/facts/> . @prefix ns1: <http://www.ontologyrepository.com/CommonCoreOntologies/> . @prefix ns2: <http://purl.obolibrary.org/obo/> . cd:oltc_diagnosis a ns1:ActOfObservation ; ns1:has_input cd:acoustic_current_file ; ns2:BFO_0000055 cd:health_assessment .",
+        "triple_count": 1
+      },
+      {
+        "kind": "critic_fix",
+        "source": "ids=[11]",
+        "target": "@prefix cd: <https://growgraph.dev/facts/> . @prefix ns1: <http://www.ontologyrepository.com/CommonCoreOntologies/> . cd:acoustic_signature_analysis a ns1:IntentionalAct .",
+        "triple_count": 1
+      },
+      {
+        "kind": "critic_fix",
+        "source": "",
+        "target": "@prefix cd: <https://growgraph.dev/facts/> . @prefix opmad: <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#> . cd:oltc_diagnosis opmad:has_text_value \"The acoustic-current data may require some additional processing in some cases.\" .",
+        "triple_count": 1
+      },
+      {
+        "kind": "critic_fix",
+        "source": "",
+        "target": "@prefix cd: <https://growgraph.dev/facts/> . @prefix opmad: <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#> . cd:expert_system opmad:has_text_value \"Repeated testing might be required in some cases to make a final decision about the health of the testing device.\" .",
+        "triple_count": 1
+      },
+      {
+        "kind": "critic_fix",
+        "source": "",
+        "target": "@prefix cd: <https://growgraph.dev/facts/> . @prefix ns1: <http://www.ontologyrepository.com/CommonCoreOntologies/> . @prefix opmad: <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#> . cd:accelerometer a ns1:Sensor ; ns1:is_used_by cd:expert_system ; opmad:has_text_value \"Different mounting locations on the same testing device may produce nonhomogeneous outcomes.\" .",
+        "triple_count": 1
+      },
+      {
+        "kind": "critic_fix",
+        "source": "",
+        "target": "@prefix cd: <https://growgraph.dev/facts/> . @prefix ns1: <http://www.ontologyrepository.com/CommonCoreOntologies/> . cd:computer a ns1:Computer ; ns1:is_used_by cd:expert_system . cd:user_interface ns1:uses cd:computer .",
+        "triple_count": 1
+      },
+      {
+        "kind": "critic_fix",
+        "source": "",
+        "target": "@prefix cd: <https://growgraph.dev/facts/> . @prefix opmad: <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#> . cd:knowledge_base opmad:has_text_value \"Newly discovered fault cases can be added without affecting the remaining system.\" .",
+        "triple_count": 1
+      },
+      {
+        "kind": "critic_fix",
+        "source": "",
+        "target": "@prefix cd: <https://growgraph.dev/facts/> . @prefix opmad: <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#> . cd:signal_processing_module opmad:has_text_value \"All analyzed possible failure causes and all necessary tests for complete analysis of OLTCs and CBs are included in the signal processor.\" .",
+        "triple_count": 1
+      },
+      {
+        "kind": "critic_fix",
+        "source": "",
+        "target": "@prefix cd: <https://growgraph.dev/facts/> . @prefix opmad: <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#> . cd:user_interface opmad:has_text_value \"The developed user interface allows non-expert users to interact with the system and select testing and reference signals.\" .",
+        "triple_count": 1
+      },
+      {
+        "kind": "critic_fix",
+        "source": "",
+        "target": "@prefix cd: <https://growgraph.dev/facts/> . @prefix opmad: <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#> . cd:expert_system opmad:has_text_value \"Suggested future enhancements include adding other diagnostic techniques to the knowledge base and accepting several acoustic signals to make an autonomous final decision.\" .",
+        "triple_count": 1
+      }
+    ]
+  },
+  "unit_failures": []
+}

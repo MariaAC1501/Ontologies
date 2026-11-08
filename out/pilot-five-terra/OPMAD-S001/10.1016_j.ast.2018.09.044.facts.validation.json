@@ -1,0 +1,788 @@
+{
+  "source": "10.1016_j.ast.2018.09.044.pdf",
+  "conformance": {
+    "shacl_evaluated": null,
+    "conforms": null,
+    "shacl_focus_nodes": null,
+    "shacl_vacuous": false,
+    "findings": 32,
+    "errors": 28,
+    "warnings": 4,
+    "by_kind": {
+      "functional_violation": 6,
+      "non_catalog_vocabulary": 4,
+      "suspect_multi_value": 22
+    },
+    "shacl_violations": 0,
+    "shacl_by_constraint": {},
+    "shacl_by_shape": {},
+    "repairs_applied": {}
+  },
+  "gate_repairs": [],
+  "findings": [
+    {
+      "kind": "suspect_multi_value",
+      "severity": "error",
+      "message": "<https://growgraph.dev/doc/90aab267ac0f/aekfosError> carries 2 distinct numeric values on <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#has_interger_value> \u2014 the signature of distinct quantities collapsed into one node.",
+      "subject": "https://growgraph.dev/doc/90aab267ac0f/aekfosError",
+      "predicate": "http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#has_interger_value",
+      "values": [
+        "11",
+        "18"
+      ],
+      "component": "",
+      "source_shape": ""
+    },
+    {
+      "kind": "functional_violation",
+      "severity": "error",
+      "message": "<https://growgraph.dev/doc/90aab267ac0f/aircraftEngineDegradationPrognostics> holds 10 distinct values for <http://www.ontologyrepository.com/CommonCoreOntologies/is_about>, which the schema constrains to at most one.",
+      "subject": "https://growgraph.dev/doc/90aab267ac0f/aircraftEngineDegradationPrognostics",
+      "predicate": "http://www.ontologyrepository.com/CommonCoreOntologies/is_about",
+      "values": [
+        "https://growgraph.dev/doc/90aab267ac0f/engineDegradation",
+        "https://growgraph.dev/doc/90aab267ac0f/engineDegradationDataset",
+        "https://growgraph.dev/doc/90aab267ac0f/failureThreshold",
+        "https://growgraph.dev/doc/90aab267ac0f/healthIndex",
+        "https://growgraph.dev/doc/90aab267ac0f/healthIndicator",
+        "https://growgraph.dev/doc/90aab267ac0f/kfosElm",
+        "https://growgraph.dev/doc/90aab267ac0f/logisticRegressionModel_1",
+        "https://growgraph.dev/doc/90aab267ac0f/onlinePredictor",
+        "https://growgraph.dev/doc/90aab267ac0f/rulEstimation",
+        "https://growgraph.dev/doc/90aab267ac0f/turbofanEngine"
+      ],
+      "component": "",
+      "source_shape": ""
+    },
+    {
+      "kind": "functional_violation",
+      "severity": "error",
+      "message": "<https://growgraph.dev/doc/90aab267ac0f/aircraftEnginePrognosticsCase> holds 7 distinct values for <http://www.ontologyrepository.com/CommonCoreOntologies/is_about>, which the schema constrains to at most one.",
+      "subject": "https://growgraph.dev/doc/90aab267ac0f/aircraftEnginePrognosticsCase",
+      "predicate": "http://www.ontologyrepository.com/CommonCoreOntologies/is_about",
+      "values": [
+        "https://growgraph.dev/doc/90aab267ac0f/aircraftEngine_1",
+        "https://growgraph.dev/doc/90aab267ac0f/benchmarkEvaluation",
+        "https://growgraph.dev/doc/90aab267ac0f/enginePrognosticsEvaluation",
+        "https://growgraph.dev/doc/90aab267ac0f/engineRulPrediction",
+        "https://growgraph.dev/doc/90aab267ac0f/multiSensorPrognosticModel",
+        "https://growgraph.dev/doc/90aab267ac0f/nasaEngineDegradationDatasets",
+        "https://growgraph.dev/doc/90aab267ac0f/rulEstimationFunction"
+      ],
+      "component": "",
+      "source_shape": ""
+    },
+    {
+      "kind": "functional_violation",
+      "severity": "error",
+      "message": "<https://growgraph.dev/doc/90aab267ac0f/aircraftEngineRulCase> holds 4 distinct values for <http://www.ontologyrepository.com/CommonCoreOntologies/is_about>, which the schema constrains to at most one.",
+      "subject": "https://growgraph.dev/doc/90aab267ac0f/aircraftEngineRulCase",
+      "predicate": "http://www.ontologyrepository.com/CommonCoreOntologies/is_about",
+      "values": [
+        "https://growgraph.dev/doc/90aab267ac0f/aircraftEngine_2",
+        "https://growgraph.dev/doc/90aab267ac0f/degradationDatasets",
+        "https://growgraph.dev/doc/90aab267ac0f/numericalSimulation",
+        "https://growgraph.dev/doc/90aab267ac0f/prognosticModel"
+      ],
+      "component": "",
+      "source_shape": ""
+    },
+    {
+      "kind": "suspect_multi_value",
+      "severity": "error",
+      "message": "<https://growgraph.dev/doc/90aab267ac0f/aircraftEngine_1> points at 2 objects via <http://www.ontologyrepository.com/CommonCoreOntologies/is_subject_of>, which is single-valued for every other subject in this graph.",
+      "subject": "https://growgraph.dev/doc/90aab267ac0f/aircraftEngine_1",
+      "predicate": "http://www.ontologyrepository.com/CommonCoreOntologies/is_subject_of",
+      "values": [
+        "https://growgraph.dev/doc/90aab267ac0f/enginePerformanceDegradation",
+        "https://growgraph.dev/doc/90aab267ac0f/remainingUsefulLife"
+      ],
+      "component": "",
+      "source_shape": ""
+    },
+    {
+      "kind": "functional_violation",
+      "severity": "error",
+      "message": "<https://growgraph.dev/doc/90aab267ac0f/articleTitle> holds 3 distinct values for <http://www.ontologyrepository.com/CommonCoreOntologies/is_about>, which the schema constrains to at most one.",
+      "subject": "https://growgraph.dev/doc/90aab267ac0f/articleTitle",
+      "predicate": "http://www.ontologyrepository.com/CommonCoreOntologies/is_about",
+      "values": [
+        "https://growgraph.dev/doc/90aab267ac0f/aircraftEnginePrognostics",
+        "https://growgraph.dev/doc/90aab267ac0f/logisticRegressionModel",
+        "https://growgraph.dev/doc/90aab267ac0f/osElmModel"
+      ],
+      "component": "",
+      "source_shape": ""
+    },
+    {
+      "kind": "functional_violation",
+      "severity": "error",
+      "message": "<https://growgraph.dev/doc/90aab267ac0f/caseStudy> holds 3 distinct values for <http://www.ontologyrepository.com/CommonCoreOntologies/is_about>, which the schema constrains to at most one.",
+      "subject": "https://growgraph.dev/doc/90aab267ac0f/caseStudy",
+      "predicate": "http://www.ontologyrepository.com/CommonCoreOntologies/is_about",
+      "values": [
+        "https://growgraph.dev/doc/90aab267ac0f/cMapssDataset",
+        "https://growgraph.dev/doc/90aab267ac0f/representativeEngines",
+        "https://growgraph.dev/doc/90aab267ac0f/testingEngines"
+      ],
+      "component": "",
+      "source_shape": ""
+    },
+    {
+      "kind": "suspect_multi_value",
+      "severity": "error",
+      "message": "<https://growgraph.dev/doc/90aab267ac0f/eosError> carries 2 distinct numeric values on <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#has_interger_value> \u2014 the signature of distinct quantities collapsed into one node.",
+      "subject": "https://growgraph.dev/doc/90aab267ac0f/eosError",
+      "predicate": "http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#has_interger_value",
+      "values": [
+        "11",
+        "19"
+      ],
+      "component": "",
+      "source_shape": ""
+    },
+    {
+      "kind": "suspect_multi_value",
+      "severity": "error",
+      "message": "<https://growgraph.dev/doc/90aab267ac0f/eosError> carries 2 mutually irreconcilable string values on <http://www.w3.org/2000/01/rdf-schema#label>, which is single-valued for a dominant majority of other subjects \u2014 the signature of distinct entities collapsed into one node.",
+      "subject": "https://growgraph.dev/doc/90aab267ac0f/eosError",
+      "predicate": "http://www.w3.org/2000/01/rdf-schema#label",
+      "values": [
+        "error range [11, 19]",
+        "error range [13 . 19]"
+      ],
+      "component": "",
+      "source_shape": ""
+    },
+    {
+      "kind": "suspect_multi_value",
+      "severity": "error",
+      "message": "<https://growgraph.dev/doc/90aab267ac0f/error_1> carries 2 distinct numeric values on <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#has_interger_value> \u2014 the signature of distinct quantities collapsed into one node.",
+      "subject": "https://growgraph.dev/doc/90aab267ac0f/error_1",
+      "predicate": "http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#has_interger_value",
+      "values": [
+        "10",
+        "7"
+      ],
+      "component": "",
+      "source_shape": ""
+    },
+    {
+      "kind": "suspect_multi_value",
+      "severity": "error",
+      "message": "<https://growgraph.dev/doc/90aab267ac0f/error_10> carries 2 distinct numeric values on <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#has_interger_value> \u2014 the signature of distinct quantities collapsed into one node.",
+      "subject": "https://growgraph.dev/doc/90aab267ac0f/error_10",
+      "predicate": "http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#has_interger_value",
+      "values": [
+        "12",
+        "17"
+      ],
+      "component": "",
+      "source_shape": ""
+    },
+    {
+      "kind": "suspect_multi_value",
+      "severity": "error",
+      "message": "<https://growgraph.dev/doc/90aab267ac0f/error_2> carries 2 distinct numeric values on <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#has_interger_value> \u2014 the signature of distinct quantities collapsed into one node.",
+      "subject": "https://growgraph.dev/doc/90aab267ac0f/error_2",
+      "predicate": "http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#has_interger_value",
+      "values": [
+        "12",
+        "15"
+      ],
+      "component": "",
+      "source_shape": ""
+    },
+    {
+      "kind": "suspect_multi_value",
+      "severity": "error",
+      "message": "<https://growgraph.dev/doc/90aab267ac0f/error_3> carries 2 distinct numeric values on <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#has_interger_value> \u2014 the signature of distinct quantities collapsed into one node.",
+      "subject": "https://growgraph.dev/doc/90aab267ac0f/error_3",
+      "predicate": "http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#has_interger_value",
+      "values": [
+        "2",
+        "9"
+      ],
+      "component": "",
+      "source_shape": ""
+    },
+    {
+      "kind": "suspect_multi_value",
+      "severity": "error",
+      "message": "<https://growgraph.dev/doc/90aab267ac0f/error_5> carries 2 distinct numeric values on <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#has_interger_value> \u2014 the signature of distinct quantities collapsed into one node.",
+      "subject": "https://growgraph.dev/doc/90aab267ac0f/error_5",
+      "predicate": "http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#has_interger_value",
+      "values": [
+        "13",
+        "22"
+      ],
+      "component": "",
+      "source_shape": ""
+    },
+    {
+      "kind": "suspect_multi_value",
+      "severity": "error",
+      "message": "<https://growgraph.dev/doc/90aab267ac0f/error_6> carries 2 distinct numeric values on <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#has_interger_value> \u2014 the signature of distinct quantities collapsed into one node.",
+      "subject": "https://growgraph.dev/doc/90aab267ac0f/error_6",
+      "predicate": "http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#has_interger_value",
+      "values": [
+        "2",
+        "5"
+      ],
+      "component": "",
+      "source_shape": ""
+    },
+    {
+      "kind": "suspect_multi_value",
+      "severity": "error",
+      "message": "<https://growgraph.dev/doc/90aab267ac0f/error_8> carries 2 distinct numeric values on <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#has_interger_value> \u2014 the signature of distinct quantities collapsed into one node.",
+      "subject": "https://growgraph.dev/doc/90aab267ac0f/error_8",
+      "predicate": "http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#has_interger_value",
+      "values": [
+        "2",
+        "6"
+      ],
+      "component": "",
+      "source_shape": ""
+    },
+    {
+      "kind": "suspect_multi_value",
+      "severity": "error",
+      "message": "<https://growgraph.dev/doc/90aab267ac0f/error_9> carries 2 distinct numeric values on <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#has_interger_value> \u2014 the signature of distinct quantities collapsed into one node.",
+      "subject": "https://growgraph.dev/doc/90aab267ac0f/error_9",
+      "predicate": "http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#has_interger_value",
+      "values": [
+        "11",
+        "4"
+      ],
+      "component": "",
+      "source_shape": ""
+    },
+    {
+      "kind": "suspect_multi_value",
+      "severity": "error",
+      "message": "<https://growgraph.dev/doc/90aab267ac0f/featureParameterPrediction> points at 2 objects via <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#function_uses_model>, which is single-valued for every other subject in this graph.",
+      "subject": "https://growgraph.dev/doc/90aab267ac0f/featureParameterPrediction",
+      "predicate": "http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#function_uses_model",
+      "values": [
+        "https://growgraph.dev/doc/90aab267ac0f/aekfosElm_2",
+        "https://growgraph.dev/doc/90aab267ac0f/kfosElm"
+      ],
+      "component": "",
+      "source_shape": ""
+    },
+    {
+      "kind": "suspect_multi_value",
+      "severity": "error",
+      "message": "<https://growgraph.dev/doc/90aab267ac0f/healthAssessmentProcess> points at 2 objects via <http://www.ontologyrepository.com/CommonCoreOntologies/has_output>, which is single-valued for every other subject in this graph.",
+      "subject": "https://growgraph.dev/doc/90aab267ac0f/healthAssessmentProcess",
+      "predicate": "http://www.ontologyrepository.com/CommonCoreOntologies/has_output",
+      "values": [
+        "https://growgraph.dev/doc/90aab267ac0f/engineFailureProbability",
+        "https://growgraph.dev/doc/90aab267ac0f/healthIndex"
+      ],
+      "component": "",
+      "source_shape": ""
+    },
+    {
+      "kind": "suspect_multi_value",
+      "severity": "error",
+      "message": "<https://growgraph.dev/doc/90aab267ac0f/healthIndex> points at 2 objects via <http://www.ontologyrepository.com/CommonCoreOntologies/describes>, which is single-valued for every other subject in this graph.",
+      "subject": "https://growgraph.dev/doc/90aab267ac0f/healthIndex",
+      "predicate": "http://www.ontologyrepository.com/CommonCoreOntologies/describes",
+      "values": [
+        "https://growgraph.dev/doc/90aab267ac0f/engineDegradation",
+        "https://growgraph.dev/doc/90aab267ac0f/turbofanEngine"
+      ],
+      "component": "",
+      "source_shape": ""
+    },
+    {
+      "kind": "suspect_multi_value",
+      "severity": "error",
+      "message": "<https://growgraph.dev/doc/90aab267ac0f/healthIndicatorPrediction> points at 2 objects via <http://purl.obolibrary.org/obo/RO_0000057>, which is single-valued for every other subject in this graph.",
+      "subject": "https://growgraph.dev/doc/90aab267ac0f/healthIndicatorPrediction",
+      "predicate": "http://purl.obolibrary.org/obo/RO_0000057",
+      "values": [
+        "https://growgraph.dev/doc/90aab267ac0f/engine_1",
+        "https://growgraph.dev/doc/90aab267ac0f/engine_2"
+      ],
+      "component": "",
+      "source_shape": ""
+    },
+    {
+      "kind": "functional_violation",
+      "severity": "error",
+      "message": "<https://growgraph.dev/doc/90aab267ac0f/initialWearVariation> holds 2 distinct values for <http://www.ontologyrepository.com/CommonCoreOntologies/is_about>, which the schema constrains to at most one.",
+      "subject": "https://growgraph.dev/doc/90aab267ac0f/initialWearVariation",
+      "predicate": "http://www.ontologyrepository.com/CommonCoreOntologies/is_about",
+      "values": [
+        "https://growgraph.dev/doc/90aab267ac0f/assemblyVariation",
+        "https://growgraph.dev/doc/90aab267ac0f/manufacturingVariation"
+      ],
+      "component": "",
+      "source_shape": ""
+    },
+    {
+      "kind": "suspect_multi_value",
+      "severity": "error",
+      "message": "<https://growgraph.dev/doc/90aab267ac0f/kfosError> carries 2 distinct numeric values on <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#has_interger_value> \u2014 the signature of distinct quantities collapsed into one node.",
+      "subject": "https://growgraph.dev/doc/90aab267ac0f/kfosError",
+      "predicate": "http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#has_interger_value",
+      "values": [
+        "15",
+        "22"
+      ],
+      "component": "",
+      "source_shape": ""
+    },
+    {
+      "kind": "suspect_multi_value",
+      "severity": "error",
+      "message": "<https://growgraph.dev/doc/90aab267ac0f/normalizationInterval> carries 2 distinct numeric values on <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#has_interger_value> \u2014 the signature of distinct quantities collapsed into one node.",
+      "subject": "https://growgraph.dev/doc/90aab267ac0f/normalizationInterval",
+      "predicate": "http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#has_interger_value",
+      "values": [
+        "0",
+        "1"
+      ],
+      "component": "",
+      "source_shape": ""
+    },
+    {
+      "kind": "suspect_multi_value",
+      "severity": "error",
+      "message": "<https://growgraph.dev/doc/90aab267ac0f/osError> carries 2 distinct numeric values on <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#has_interger_value> \u2014 the signature of distinct quantities collapsed into one node.",
+      "subject": "https://growgraph.dev/doc/90aab267ac0f/osError",
+      "predicate": "http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#has_interger_value",
+      "values": [
+        "21",
+        "33"
+      ],
+      "component": "",
+      "source_shape": ""
+    },
+    {
+      "kind": "suspect_multi_value",
+      "severity": "error",
+      "message": "<https://growgraph.dev/doc/90aab267ac0f/predictionProcess> points at 2 objects via <http://purl.obolibrary.org/obo/BFO_0000055>, which is single-valued for every other subject in this graph.",
+      "subject": "https://growgraph.dev/doc/90aab267ac0f/predictionProcess",
+      "predicate": "http://purl.obolibrary.org/obo/BFO_0000055",
+      "values": [
+        "https://growgraph.dev/doc/90aab267ac0f/multiStepPrediction",
+        "https://growgraph.dev/doc/90aab267ac0f/oneStepPrediction"
+      ],
+      "component": "",
+      "source_shape": ""
+    },
+    {
+      "kind": "suspect_multi_value",
+      "severity": "error",
+      "message": "<https://growgraph.dev/doc/90aab267ac0f/regressionFunction> points at 2 objects via <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#function_uses_model>, which is single-valued for every other subject in this graph.",
+      "subject": "https://growgraph.dev/doc/90aab267ac0f/regressionFunction",
+      "predicate": "http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#function_uses_model",
+      "values": [
+        "https://growgraph.dev/doc/90aab267ac0f/aekfosElm",
+        "https://growgraph.dev/doc/90aab267ac0f/kfosElm"
+      ],
+      "component": "",
+      "source_shape": ""
+    },
+    {
+      "kind": "suspect_multi_value",
+      "severity": "error",
+      "message": "<https://growgraph.dev/doc/90aab267ac0f/remainingUsefulLife> points at 2 objects via <http://www.ontologyrepository.com/CommonCoreOntologies/describes>, which is single-valued for every other subject in this graph.",
+      "subject": "https://growgraph.dev/doc/90aab267ac0f/remainingUsefulLife",
+      "predicate": "http://www.ontologyrepository.com/CommonCoreOntologies/describes",
+      "values": [
+        "https://growgraph.dev/doc/90aab267ac0f/aircraftEngineFailure",
+        "https://growgraph.dev/doc/90aab267ac0f/aircraftEngine_1"
+      ],
+      "component": "",
+      "source_shape": ""
+    },
+    {
+      "kind": "non_catalog_vocabulary",
+      "severity": "warning",
+      "message": "<https://growgraph.dev/ontology/ns1/has_object> is used by 1 subject(s) but was absent from the ontology context \u2014 the renderer fell back to outside vocabulary, which points at a retrieval miss rather than a modeling choice.",
+      "subject": "https://growgraph.dev/doc/90aab267ac0f/aircraftEnginePrognostics",
+      "predicate": "https://growgraph.dev/ontology/ns1/has_object",
+      "values": [
+        "https://growgraph.dev/doc/90aab267ac0f/aircraftEnginePrognostics"
+      ],
+      "component": "",
+      "source_shape": ""
+    },
+    {
+      "kind": "non_catalog_vocabulary",
+      "severity": "warning",
+      "message": "<https://growgraph.dev/ontology/opmad/Data_variable> is used by 1 subject(s) but was absent from the ontology context \u2014 the renderer fell back to outside vocabulary, which points at a retrieval miss rather than a modeling choice.",
+      "subject": "https://growgraph.dev/doc/90aab267ac0f/engineFailureProbability",
+      "predicate": "https://growgraph.dev/ontology/opmad/Data_variable",
+      "values": [
+        "https://growgraph.dev/doc/90aab267ac0f/engineFailureProbability"
+      ],
+      "component": "",
+      "source_shape": ""
+    },
+    {
+      "kind": "non_catalog_vocabulary",
+      "severity": "warning",
+      "message": "<https://growgraph.dev/ontology/opmad/has_text_value> is used by 2 subject(s) but was absent from the ontology context \u2014 the renderer fell back to outside vocabulary, which points at a retrieval miss rather than a modeling choice.",
+      "subject": "https://growgraph.dev/doc/90aab267ac0f/predictorArchitecture",
+      "predicate": "https://growgraph.dev/ontology/opmad/has_text_value",
+      "values": [
+        "https://growgraph.dev/doc/90aab267ac0f/predictorArchitecture",
+        "https://growgraph.dev/doc/90aab267ac0f/predictorTestingConfiguration"
+      ],
+      "component": "",
+      "source_shape": ""
+    },
+    {
+      "kind": "non_catalog_vocabulary",
+      "severity": "warning",
+      "message": "<https://growgraph.dev/ontology/opmad/type_described_by> is used by 1 subject(s) but was absent from the ontology context \u2014 the renderer fell back to outside vocabulary, which points at a retrieval miss rather than a modeling choice.",
+      "subject": "https://growgraph.dev/doc/90aab267ac0f/logisticRegressionModel_1",
+      "predicate": "https://growgraph.dev/ontology/opmad/type_described_by",
+      "values": [
+        "https://growgraph.dev/doc/90aab267ac0f/logisticRegressionModel_1"
+      ],
+      "component": "",
+      "source_shape": ""
+    }
+  ],
+  "unit_repairs": {
+    "0": [
+      {
+        "kind": "critic_fix",
+        "source": "",
+        "target": "@prefix cd: <https://growgraph.dev/facts/> . @prefix opmad: <https://growgraph.dev/ontology/opmad/> . @prefix ns1: <https://growgraph.dev/ontology/ns1/> . @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> . cd:article_title ns1:is_about cd:aircraft_engine_prognostics . cd:aircraft_engine_prognostics a ns1:ActOfPrediction ; rdfs:label \"Aircraft engine degradation prognostics\" ; ns1:has_object cd:aircraft_engine . cd:aircraft_engine a ns1:Engine ; rdfs:label \"Aircraft engine\" .",
+        "triple_count": 1
+      },
+      {
+        "kind": "critic_fix",
+        "source": "",
+        "target": "@prefix cd: <https://growgraph.dev/facts/> . @prefix opmad: <https://growgraph.dev/ontology/opmad/> . @prefix ns1: <https://growgraph.dev/ontology/ns1/> . @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> . cd:article_title ns1:is_about cd:logistic_regression_model, cd:os_elm_model . cd:logistic_regression_model a opmad:Predictive_maintenance_model ; rdfs:label \"Logistic regression\" . cd:os_elm_model a opmad:Predictive_maintenance_model ; rdfs:label \"Novel OS-ELM algorithm\" .",
+        "triple_count": 1
+      }
+    ],
+    "1": [
+      {
+        "kind": "critic_fix",
+        "source": "",
+        "target": "cd:aircraft_engine_prognostics_case ns1:is_about cd:rul_estimation_function .",
+        "triple_count": 1
+      },
+      {
+        "kind": "critic_fix",
+        "source": "",
+        "target": "cd:benchmark_evaluation a ns1:ActOfAppraisal ; ns1:has_object cd:kfos_elm, cd:aekfos_elm, cd:os_elm, cd:eos_elm ; ns1:has_input cd:benchmark_datasets ; ns1:has_output cd:benchmark_findings . cd:os_elm a ns1:Algorithm ; rdfs:label \"online sequential extreme learning machine (OS-ELM)\" . cd:eos_elm a ns1:Algorithm ; rdfs:label \"ensemble of online sequential extreme learning machines (EOS-ELM)\" . cd:benchmark_datasets a ns1:Database ; rdfs:label \"benchmark datasets\" . cd:benchmark_findings a ns1:DescriptiveInformationContentEntity ; ns1:describes cd:benchmark_evaluation ; opmad:has_text_value \"Both KFOS-ELM and AEKFOS-ELM produced better regression stability and accuracy than their plain OS-ELMs; AEKFOS-ELM had better regression performance than KFOS-ELM but required additional computational time.\" . cd:aircraft_engine_prognostics_case ns1:is_about cd:benchmark_evaluation .",
+        "triple_count": 1
+      },
+      {
+        "kind": "critic_fix",
+        "source": "",
+        "target": "cd:engine_prognostics_evaluation a ns1:ActOfAppraisal ; ns1:has_object cd:multi_sensor_prognostic_model ; ns1:has_input cd:nasa_engine_degradation_datasets ; ns1:has_output cd:engine_prognostics_finding . cd:engine_prognostics_finding a ns1:DescriptiveInformationContentEntity ; ns1:describes cd:engine_prognostics_evaluation ; opmad:has_text_value \"The experimental results confirm the authors' viewpoints on the proposed aircraft-engine prognostic approach.\" . cd:aircraft_engine_prognostics_case ns1:is_about cd:engine_prognostics_evaluation .",
+        "triple_count": 1
+      },
+      {
+        "kind": "critic_fix",
+        "source": "",
+        "target": "cd:regression_function a opmad:Regression ; opmad:function_uses_model cd:kfos_elm, cd:aekfos_elm . cd:benchmark_evaluation ns2:BFO_0000055 cd:regression_function .",
+        "triple_count": 1
+      },
+      {
+        "kind": "critic_fix",
+        "source": "",
+        "target": "cd:regression_accuracy a opmad:Performance_indicator ; opmad:has_text_value \"regression accuracy\" ; ns1:describes cd:benchmark_evaluation . cd:regression_stability a opmad:Performance_indicator ; opmad:has_text_value \"regression stability\" ; ns1:describes cd:benchmark_evaluation . cd:computational_time a opmad:Performance_indicator ; opmad:has_text_value \"computational time\" ; ns1:describes cd:benchmark_evaluation .",
+        "triple_count": 1
+      },
+      {
+        "kind": "critic_fix",
+        "source": "",
+        "target": "cd:kfos_elm_configuration opmad:has_text_value \"Output weights are treated as state variables estimated by Kalman filter propagation; state covariance from measurement error is minimized and used to update the output weights at each step.\" .",
+        "triple_count": 1
+      },
+      {
+        "kind": "critic_fix",
+        "source": "",
+        "target": "cd:adaptive_weighted_ensemble_configuration opmad:has_text_value \"KFOS-ELM individuals run in parallel, with adaptive output-contribution weights tuned to each individual's recent regression accuracy.\" .",
+        "triple_count": 1
+      },
+      {
+        "kind": "critic_fix",
+        "source": "",
+        "target": "cd:adaptive_weighted_ensemble_configuration opmad:has_synchronization cd:parallel_module_synchronization . cd:parallel_module_synchronization a opmad:Module_synchronization ; opmad:has_text_value \"parallel KFOS-ELM individuals\" .",
+        "triple_count": 1
+      },
+      {
+        "kind": "critic_fix",
+        "source": "ids=[5]",
+        "target": "cd:aekfos_elm ns2:BFO_0000051 cd:kfos_elm_ensemble_member . cd:kfos_elm_ensemble_member a opmad:Predictive_maintenance_model ; opmad:configuration_described_by cd:kfos_elm_configuration ; rdfs:label \"KFOS-ELM individual in the adaptive-weighted ensemble\" .",
+        "triple_count": 1
+      },
+      {
+        "kind": "critic_fix",
+        "source": "",
+        "target": "cd:multi_sensor_prognostic_model opmad:type_described_by cd:multi_sensor_model_type . cd:multi_sensor_model_type a opmad:Model_type ; opmad:has_text_value \"enhanced multi-sensor prognostic model combining AEKFOS-ELM and logistic regression\" .",
+        "triple_count": 1
+      },
+      {
+        "kind": "critic_fix",
+        "source": "",
+        "target": "cd:remaining_useful_life opmad:has_text_value \"remaining time before aircraft engine failure\" ; ns1:describes cd:aircraft_engine_failure . cd:aircraft_engine_failure a opmad:Failure ; ns2:RO_0000057 cd:aircraft_engine .",
+        "triple_count": 1
+      },
+      {
+        "kind": "critic_fix",
+        "source": "",
+        "target": "cd:paper ns2:RO_0010002 cd:engine_prognostics_finding, cd:benchmark_findings .",
+        "triple_count": 1
+      }
+    ],
+    "4": [
+      {
+        "kind": "critic_fix",
+        "source": "ids=[3, 20, 24, 28]",
+        "target": "cd:aekfos_elm a ns1:Algorithm . cd:eos_elm a ns1:Algorithm . cd:kfos_elm a ns1:Algorithm . cd:os_elm a ns1:Algorithm .",
+        "triple_count": 1
+      }
+    ],
+    "5": [
+      {
+        "kind": "critic_fix",
+        "source": "",
+        "target": "@prefix cd: <https://growgraph.dev/facts/> . @prefix ns1: <http://www.ontologyrepository.com/CommonCoreOntologies/> . @prefix opmad: <https://growgraph.dev/ontology/opmad/> . cd:aircraft_engine_degradation_prognostics ns1:is_about cd:kfos_elm_model, cd:logistic_regression_model, cd:health_indicator, cd:online_predictor, cd:health_index, cd:failure_threshold, cd:rul_estimation .",
+        "triple_count": 1
+      },
+      {
+        "kind": "critic_fix",
+        "source": "",
+        "target": "@prefix cd: <https://growgraph.dev/facts/> . @prefix ns1: <http://www.ontologyrepository.com/CommonCoreOntologies/> . cd:sensor_signal_specifications ns1:is_mention_of cd:engine_degradation_dataset .",
+        "triple_count": 1
+      },
+      {
+        "kind": "critic_fix",
+        "source": "ids=[15, 23]",
+        "target": "@prefix cd: <https://growgraph.dev/facts/> . @prefix ns1: <http://www.ontologyrepository.com/CommonCoreOntologies/> . @prefix ns2: <http://purl.obolibrary.org/obo/> . cd:dataset_generation a ns2:BFO_0000015 ; ns2:RO_0000057 cd:c_mapss .",
+        "triple_count": 1
+      },
+      {
+        "kind": "critic_fix",
+        "source": "ids=[30]",
+        "target": "@prefix cd: <https://growgraph.dev/facts/> . @prefix ns1: <http://www.ontologyrepository.com/CommonCoreOntologies/> . cd:engine_degradation_dataset ns1:uses cd:engine_unit_time_series .",
+        "triple_count": 1
+      },
+      {
+        "kind": "critic_fix",
+        "source": "ids=[50]",
+        "target": "@prefix cd: <https://growgraph.dev/facts/> . @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> . cd:failure_threshold rdfs:comment \"The dataset failure threshold is unknown to users; the prognostic method introduces a failure threshold \u03b8 f.\" .",
+        "triple_count": 1
+      },
+      {
+        "kind": "critic_fix",
+        "source": "",
+        "target": "@prefix cd: <https://growgraph.dev/facts/> . @prefix ns1: <http://www.ontologyrepository.com/CommonCoreOntologies/> . @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> . cd:method_failure_threshold a ns1:DescriptiveInformationContentEntity ; ns1:alternative_label \"\u03b8 f\" ; ns1:describes cd:engine_degradation ; rdfs:label \"introduced failure threshold\" . cd:health_indicator ns1:uses cd:method_failure_threshold .",
+        "triple_count": 1
+      },
+      {
+        "kind": "critic_fix",
+        "source": "",
+        "target": "@prefix cd: <https://growgraph.dev/facts/> . @prefix ns1: <http://www.ontologyrepository.com/CommonCoreOntologies/> . @prefix ns2: <http://purl.obolibrary.org/obo/> . @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> . cd:sensor_preprocessing a ns1:IntentionalAct ; ns1:has_input cd:sensor_measurements ; ns1:has_output cd:preprocessed_sensor_data ; rdfs:label \"preprocessing of representative raw sensor data\" . cd:preprocessed_sensor_data a ns1:DescriptiveInformationContentEntity ; rdfs:label \"preprocessed sensor data\" . cd:prediction_process ns1:process_preceded_by cd:sensor_preprocessing . cd:prognostic_system ns2:RO_0000056 cd:sensor_preprocessing .",
+        "triple_count": 1
+      },
+      {
+        "kind": "critic_fix",
+        "source": "",
+        "target": "@prefix cd: <https://growgraph.dev/facts/> . @prefix ns1: <http://www.ontologyrepository.com/CommonCoreOntologies/> . @prefix ns2: <http://purl.obolibrary.org/obo/> . cd:prediction_process ns2:BFO_0000055 cd:multi_step_prediction, cd:one_step_prediction ; ns1:process_precedes cd:health_assessment_process .",
+        "triple_count": 1
+      },
+      {
+        "kind": "critic_fix",
+        "source": "",
+        "target": "@prefix cd: <https://growgraph.dev/facts/> . @prefix ns1: <http://www.ontologyrepository.com/CommonCoreOntologies/> . @prefix opmad: <https://growgraph.dev/ontology/opmad/> . @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> . cd:predictor_architecture a opmad:Model_configuration ; opmad:has_text_value \"One independently trained predictor for each selected feature sequence from the raw multidimensional data\" ; rdfs:label \"independent per-feature predictor architecture\" . cd:online_predictor opmad:configuration_described_by cd:predictor_architecture .",
+        "triple_count": 1
+      },
+      {
+        "kind": "critic_fix",
+        "source": "",
+        "target": "@prefix cd: <https://growgraph.dev/facts/> . @prefix ns1: <http://www.ontologyrepository.com/CommonCoreOntologies/> . @prefix opmad: <https://growgraph.dev/ontology/opmad/> . @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> . cd:embedding_dimension a opmad:Model_configuration ; ns1:alternative_label \"d\" ; rdfs:label \"prediction embedding dimension\" . cd:prediction_horizon a opmad:Model_configuration ; ns1:alternative_label \"h\" ; rdfs:label \"prediction horizon\" . cd:kfos_elm_model opmad:configuration_described_by cd:embedding_dimension, cd:prediction_horizon .",
+        "triple_count": 1
+      },
+      {
+        "kind": "critic_fix",
+        "source": "",
+        "target": "@prefix cd: <https://growgraph.dev/facts/> . @prefix ns1: <http://www.ontologyrepository.com/CommonCoreOntologies/> . @prefix opmad: <https://growgraph.dev/ontology/opmad/> . @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> . cd:predictor_testing_configuration a opmad:Model_configuration ; opmad:has_text_value \"Feature prediction is performed online as each new feature value arrives\" ; rdfs:label \"online predictor testing configuration\" . cd:online_predictor opmad:configuration_described_by cd:predictor_testing_configuration .",
+        "triple_count": 1
+      },
+      {
+        "kind": "critic_fix",
+        "source": "",
+        "target": "@prefix cd: <https://growgraph.dev/facts/> . @prefix ns1: <http://www.ontologyrepository.com/CommonCoreOntologies/> . @prefix opmad: <https://growgraph.dev/ontology/opmad/> . @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> . cd:engine_failure_probability a opmad:Data_variable ; ns1:describes cd:engine_degradation ; rdfs:label \"engine performance failure probability\" . cd:health_assessment_process ns1:has_output cd:engine_failure_probability . cd:health_index ns1:describes cd:engine_degradation .",
+        "triple_count": 1
+      },
+      {
+        "kind": "critic_fix",
+        "source": "",
+        "target": "@prefix cd: <https://growgraph.dev/facts/> . @prefix ns1: <http://www.ontologyrepository.com/CommonCoreOntologies/> . @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> . cd:maximum_likelihood_algorithm a ns1:Algorithm ; rdfs:label \"maximum likelihood algorithm\" . cd:lr_parameter_estimation a ns1:ActOfEstimation ; ns1:uses cd:maximum_likelihood_algorithm ; ns1:has_output cd:lr_regression_parameters ; rdfs:label \"logistic regression parameter estimation\" . cd:lr_regression_parameters a ns1:DescriptiveInformationContentEntity ; ns1:alternative_label \"\u03b1 and \u03b2 T\" ; rdfs:label \"logistic regression parameters\" . cd:logistic_regression_model ns1:described_by cd:lr_regression_parameters .",
+        "triple_count": 1
+      },
+      {
+        "kind": "critic_fix",
+        "source": "ids=[141]",
+        "target": "@prefix cd: <https://growgraph.dev/facts/> . @prefix ns1: <http://www.ontologyrepository.com/CommonCoreOntologies/> . cd:physical_fan_speed a ns1:AngularVelocity .",
+        "triple_count": 1
+      },
+      {
+        "kind": "critic_fix",
+        "source": "",
+        "target": "@prefix cd: <https://growgraph.dev/facts/> . @prefix ns1: <http://www.ontologyrepository.com/CommonCoreOntologies/> . @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> . cd:corrected_fan_speed a ns1:AngularVelocity ; rdfs:label \"corrected fan speed\" . cd:nfc ns1:describes cd:corrected_fan_speed .",
+        "triple_count": 1
+      },
+      {
+        "kind": "critic_fix",
+        "source": "ids=[73]",
+        "target": "@prefix cd: <https://growgraph.dev/facts/> . @prefix ns1: <http://www.ontologyrepository.com/CommonCoreOntologies/> . cd:high_pressure_compressor_outlet_pressure ns1:described_by cd:ps30 .",
+        "triple_count": 1
+      },
+      {
+        "kind": "critic_fix",
+        "source": "ids=[142]",
+        "target": "@prefix cd: <https://growgraph.dev/facts/> . @prefix ns1: <http://www.ontologyrepository.com/CommonCoreOntologies/> . cd:physical_fan_speed ns1:described_by cd:nf .",
+        "triple_count": 1
+      },
+      {
+        "kind": "critic_fix",
+        "source": "",
+        "target": "@prefix cd: <https://growgraph.dev/facts/> . @prefix ns1: <http://www.ontologyrepository.com/CommonCoreOntologies/> . @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> . cd:manufacturing_variation a ns1:DescriptiveInformationContentEntity ; rdfs:label \"manufacturing variations\" . cd:assembly_variation a ns1:DescriptiveInformationContentEntity ; rdfs:label \"assembly variations\" . cd:initial_wear_variation ns1:is_about cd:manufacturing_variation, cd:assembly_variation .",
+        "triple_count": 1
+      },
+      {
+        "kind": "critic_fix",
+        "source": "ids=[16]",
+        "target": "@prefix cd: <https://growgraph.dev/facts/> . @prefix ns1: <http://www.ontologyrepository.com/CommonCoreOntologies/> . @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> . cd:c_mapss_development a ns1:ActOfArtifactProcessing ; ns1:has_input cd:component_level_engine_model ; ns1:has_output cd:c_mapss ; rdfs:label \"development of C-MAPSS from a component-level engine model\" .",
+        "triple_count": 1
+      },
+      {
+        "kind": "critic_fix",
+        "source": "ids=[41]",
+        "target": "@prefix cd: <https://growgraph.dev/facts/> . @prefix ns1: <http://www.ontologyrepository.com/CommonCoreOntologies/> . cd:engine_unit_time_series a ns1:DescriptiveInformationContentEntity .",
+        "triple_count": 1
+      },
+      {
+        "kind": "critic_fix",
+        "source": "ids=[90, 121]",
+        "target": "@prefix cd: <https://growgraph.dev/facts/> . @prefix opmad: <https://growgraph.dev/ontology/opmad/> . cd:logistic_regression_model opmad:type_described_by cd:logistic_regression_type . cd:online_predictor opmad:configuration_described_by cd:predictor_training_configuration .",
+        "triple_count": 1
+      }
+    ],
+    "6": [
+      {
+        "kind": "critic_fix",
+        "source": "",
+        "target": "@prefix cd: <https://growgraph.dev/facts/> . @prefix ns1: <http://www.ontologyrepository.com/CommonCoreOntologies/> . cd:aekfos_time a ns1:InformationBearingEntity . cd:eos_time a ns1:InformationBearingEntity . cd:kfos_time a ns1:InformationBearingEntity . cd:os_time a ns1:InformationBearingEntity .",
+        "triple_count": 1
+      },
+      {
+        "kind": "critic_fix",
+        "source": "ids=[409, 410]",
+        "target": "@prefix cd: <https://growgraph.dev/facts/> . @prefix ns2: <http://purl.obolibrary.org/obo/> . cd:representative_engines ns2:BFO_0000051 cd:health_indicator_engines, cd:testing_engines .",
+        "triple_count": 1
+      },
+      {
+        "kind": "critic_fix",
+        "source": "",
+        "target": "@prefix cd: <https://growgraph.dev/facts/> . @prefix ns2: <http://purl.obolibrary.org/obo/> . cd:training_subset ns2:BFO_0000051 cd:train_fd001 .",
+        "triple_count": 1
+      },
+      {
+        "kind": "critic_fix",
+        "source": "",
+        "target": "@prefix cd: <https://growgraph.dev/facts/> . @prefix ns1: <http://www.ontologyrepository.com/CommonCoreOntologies/> . @prefix ns2: <http://purl.obolibrary.org/obo/> . @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> . cd:engine_11 a ns1:Engine ; rdfs:label \"Engine #11\" . cd:engine_12 a ns1:Engine ; rdfs:label \"Engine #12\" . cd:engine_13 a ns1:Engine ; rdfs:label \"Engine #13\" . cd:engine_14 a ns1:Engine ; rdfs:label \"Engine #14\" . cd:engine_15 a ns1:Engine ; rdfs:label \"Engine #15\" . cd:engine_16 a ns1:Engine ; rdfs:label \"Engine #16\" . cd:engine_17 a ns1:Engine ; rdfs:label \"Engine #17\" . cd:engine_18 a ns1:Engine ; rdfs:label \"Engine #18\" . cd:engine_19 a ns1:Engine ; rdfs:label \"Engine #19\" . cd:engine_20 a ns1:Engine ; rdfs:label \"Engine #20\" . cd:testing_engines ns2:RO_0002351 cd:engine_11, cd:engine_12, cd:engine_13, cd:engine_14, cd:engine_15, cd:engine_16, cd:engine_17, cd:engine_18, cd:engine_19, cd:engine_20 .",
+        "triple_count": 1
+      },
+      {
+        "kind": "critic_fix",
+        "source": "",
+        "target": "@prefix cd: <https://growgraph.dev/facts/> . @prefix ns1: <http://www.ontologyrepository.com/CommonCoreOntologies/> . @prefix ns2: <http://purl.obolibrary.org/obo/> . cd:online_predictors ns1:uses cd:kfos_elm . cd:damage_forecasting a ns1:ActOfPrediction ; ns2:BFO_0000055 cd:forecast_function ; ns2:RO_0000057 cd:compressor_degradation .",
+        "triple_count": 1
+      },
+      {
+        "kind": "critic_fix",
+        "source": "ids=[407]",
+        "target": "@prefix cd: <https://growgraph.dev/facts/> . @prefix ns1: <http://www.ontologyrepository.com/CommonCoreOntologies/> . cd:compressor_degradation ns1:affects cd:representative_engines .",
+        "triple_count": 1
+      },
+      {
+        "kind": "critic_fix",
+        "source": "",
+        "target": "@prefix cd: <https://growgraph.dev/facts/> . @prefix opmad: <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#> . @prefix ns1: <http://www.ontologyrepository.com/CommonCoreOntologies/> . @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> . cd:asymmetric_score_indicator a opmad:Performance_indicator ; rdfs:label \"asymmetric RUL score\" ; ns1:describes cd:comparison . cd:os_score ns1:describes cd:asymmetric_score_indicator . cd:kfos_score ns1:describes cd:asymmetric_score_indicator . cd:eos_score ns1:describes cd:asymmetric_score_indicator . cd:aekfos_score ns1:describes cd:asymmetric_score_indicator .",
+        "triple_count": 1
+      },
+      {
+        "kind": "critic_fix",
+        "source": "",
+        "target": "@prefix cd: <https://growgraph.dev/facts/> . @prefix ns1: <http://www.ontologyrepository.com/CommonCoreOntologies/> . @prefix ns2: <http://purl.obolibrary.org/obo/> . @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> . cd:health_indicator_prediction a ns1:ActOfPrediction ; ns2:RO_0000057 cd:engine_1, cd:engine_2 ; ns1:uses cd:kfos_elm ; rdfs:label \"health indicator prediction for engines #1 and #2\" .",
+        "triple_count": 1
+      },
+      {
+        "kind": "critic_fix",
+        "source": "",
+        "target": "@prefix cd: <https://growgraph.dev/facts/> . @prefix ns1: <http://www.ontologyrepository.com/CommonCoreOntologies/> . cd:error_4 a ns1:DataRangeIntervalEstimateInformationContentEntity .",
+        "triple_count": 1
+      },
+      {
+        "kind": "critic_fix",
+        "source": "",
+        "target": "@prefix cd: <https://growgraph.dev/facts/> . @prefix ns1: <http://www.ontologyrepository.com/CommonCoreOntologies/> . cd:eos_error a ns1:DataRangeIntervalEstimateInformationContentEntity .",
+        "triple_count": 1
+      }
+    ],
+    "7": [
+      {
+        "kind": "critic_fix",
+        "source": "ids=[15]",
+        "target": "@prefix cd: <https://growgraph.dev/facts/> . @prefix ns1: <http://www.ontologyrepository.com/CommonCoreOntologies/> . cd:degradation_datasets ns1:is_mention_of cd:engine_degradation .",
+        "triple_count": 1
+      },
+      {
+        "kind": "critic_fix",
+        "source": "",
+        "target": "@prefix cd: <https://growgraph.dev/facts/> . @prefix ns1: <http://www.ontologyrepository.com/CommonCoreOntologies/> . cd:health_indicator ns1:is_subject_of cd:health_assessment .",
+        "triple_count": 1
+      },
+      {
+        "kind": "critic_fix",
+        "source": "",
+        "target": "@prefix cd: <https://growgraph.dev/facts/> . @prefix ns1: <http://www.ontologyrepository.com/CommonCoreOntologies/> . cd:aekfos_elm ns1:uses cd:kfos_elm .",
+        "triple_count": 1
+      },
+      {
+        "kind": "critic_fix",
+        "source": "",
+        "target": "@prefix cd: <https://growgraph.dev/facts/> . @prefix ns1: <http://www.ontologyrepository.com/CommonCoreOntologies/> . @prefix ns2: <http://purl.obolibrary.org/obo/> . cd:c_ampSS a ns1:InformationProcessingArtifact ; ns1:designator_annotation \"C-AMPSS\" . cd:degradation_datasets ns2:RO_0001000 cd:c_ampSS .",
+        "triple_count": 1
+      },
+      {
+        "kind": "critic_fix",
+        "source": "",
+        "target": "@prefix cd: <https://growgraph.dev/facts/> . @prefix ns1: <http://www.ontologyrepository.com/CommonCoreOntologies/> . cd:numerical_simulation ns1:designator_annotation \"evaluation limited to numerical simulation\" .",
+        "triple_count": 1
+      }
+    ]
+  },
+  "unit_failures": [
+    {
+      "unit_index": 2,
+      "phase": "facts",
+      "stage": null,
+      "reason": null
+    },
+    {
+      "unit_index": 3,
+      "phase": "facts",
+      "stage": null,
+      "reason": null
+    }
+  ]
+}

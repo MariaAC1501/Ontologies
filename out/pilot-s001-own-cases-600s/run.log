@@ -1,0 +1,182 @@
+Model 'gpt-6.1-sol' is not a known openai preset (OpenAIModel). Passing it through -- the provider decides whether it exists.
+Selected 1 paper(s). Output: /Users/antho/Ontologies/out/pilot-s001-own-cases-600s
+LLM: openai/gpt-6.1-sol
+  OPMAD-S001: 10.1016_j.ast.2018.09.044.pdf — Aircraft engine degradation prognostics based on logistic regression and novel OS-ELM algorithm
+
+[1/1] Running OPMAD-S001
+Model 'gpt-6.1-sol' is not a known openai preset (OpenAIModel). Passing it through -- the provider decides whether it exists.
+INFO:ontocast.cli.server:Using ontology seed directory /Users/antho/Ontologies/ontologies/opmad-ontocast (--ontology-dir)
+INFO:ontocast.cli.server:No SHACL shapes seed directory configured (FACTS_SHAPES_DIR)
+INFO:ontocast.tool.llm:Not sending temperature to gpt-6.1-sol: the provider rejects it for this model at this reasoning effort, so it samples at its own default
+INFO:ontocast.tool.triple_manager.in_memory:In-memory tenancy set to tenant='ontocast' project='test'
+INFO:ontocast.toolbox:Shapes sync finished in 0.00s
+INFO:ontocast.toolbox:Found 1 seed ontolog(ies) in ontology_directory
+INFO:ontocast.tool.triple_manager.in_memory:Loaded 0 unique ontologies from in-memory store
+INFO:ontocast.toolbox:Found 0 ontologies in triple store
+INFO:ontocast.toolbox:Syncing seed ontology to triple store: http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD (version: 1.0.0)
+INFO:ontocast.toolbox:Ontology sync finished: 1 ontolog(ies) in 1.31s
+INFO:ontocast.toolbox:Materialized ontology http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD in 0.31s (0 atom(s) indexed)
+EXACT CACHE REPLAY 50076 prompt characters
+INFO:ontocast.toolbox:Ontology property enrich finished for 1 ontolog(ies) in 0.32s
+INFO:ontocast.toolbox:Ontology materialize + enrich finished for 1 ontolog(ies) in 0.32s (reindex_concurrency=2); initialize total 1.63s
+INFO:ontocast.agent.chunk_text:Chunking the text
+INFO:ontocast.tool.chunk.prepare:Detected document schema 'academic' via lexical tier (score 3.0, margin infx): Benchmark datasets test, Conclusions, Conflict of interest statement
+INFO:ontocast.tool.chunk.prepare:8 segment(s) remain without section_label after classification
+INFO:ontocast.tool.chunk.prepare:Section exclusion dropped 2/17 segment(s) before sizing: acknowledgements: 2 segment(s), 530 chars (heading_keyword, heading_pattern)
+INFO:ontocast.agent.chunk_text:Created 9 chunks for processing: [823, 9055, 3286, 6876, 10075, 5632, 6897, 1775, 7313]
+INFO:ontocast.agent.chunk_text:Chunk 8 (7313 chars, section_label='references') routed as bibliography (CHUNK_BIBLIOGRAPHY_MODE=skip): dropped
+INFO:ontocast.agent.chunk_text:Dropped 1 bibliography chunk(s) (CHUNK_BIBLIOGRAPHY_MODE=skip)
+INFO:ontocast.agent.chunk_text:Created 8 content units: [823, 9055, 3286, 6876, 10075, 5632, 6897, 1775]
+INFO:ontocast.agent.chunk_text:Section labels: (unlabeled)=3, abstract=1, conclusion=1, data=2, introduction=1
+INFO:ontocast.stategraph.atomic:Ontology context for mode fixed_single_ontology: sources=['http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD'] writable=['http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD']
+INFO:ontocast.agent.render_facts:Render facts for content unit 1
+INFO:ontocast.agent.render_facts:Rendering fresh facts
+WARNING:ontocast.onto.ontology_condense:Ontology context still exceeds the prompt budget after condensing (11951 > 4000 triples; was 14983). Passing it through rather than dropping labels, types, hierarchy or domain/range, which the model needs to use the schema at all. Reduce the catalog, split it, or switch to ONTOLOGY_CONTEXT_MODE=selected_vector_search_ontology, which retrieves only the relevant part.
+EXACT CACHE REPLAY 179877 prompt characters
+INFO:ontocast.agent.render_facts:Fresh facts generated with 26 triple(s).
+INFO:ontocast.agent.criticise_facts:Facts critic for content unit 1: visit 1/1
+EXACT CACHE REPLAY 179605 prompt characters
+INFO:ontocast.agent.criticise_facts:Facts critique passed (score 76.0, no material defect)
+INFO:ontocast.stategraph.atomic:Unit facts critic pass 1/1: 0 applied, 3 residual, 0 no-op, 0 rolled back
+INFO:ontocast.stategraph.atomic:Ontology context for mode fixed_single_ontology: sources=['http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD'] writable=['http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD']
+INFO:ontocast.agent.render_facts:Render facts for content unit 2
+INFO:ontocast.agent.render_facts:Rendering fresh facts
+WARNING:ontocast.onto.ontology_condense:Ontology context still exceeds the prompt budget after condensing (11951 > 4000 triples; was 14983). Passing it through rather than dropping labels, types, hierarchy or domain/range, which the model needs to use the schema at all. Reduce the catalog, split it, or switch to ONTOLOGY_CONTEXT_MODE=selected_vector_search_ontology, which retrieves only the relevant part.
+EXACT CACHE REPLAY 188109 prompt characters
+INFO:ontocast.agent.render_facts:Fresh facts generated with 138 triple(s).
+INFO:ontocast.agent.criticise_facts:Facts critic for content unit 2: visit 1/1
+EXACT CACHE REPLAY 196379 prompt characters
+INFO:ontocast.agent.criticise_facts:Facts critique rejected on critic_critical: GasTurbine is already a valid supplied class. This statement requires no semantic replacement; retain it unchanged.; The supplied ontology defines these BFO predicates under ns2:, not ns:. Resolve them to their canonical BFO IRIs rather than using the unrelated ns: vocabulary. (score 83.0)
+INFO:ontocast.tool.facts_validation.critic_patch:Critic fixes: 2 compiled to patches (-0/+2 triples), 1 need a render, 2 asked for no change, 2 delete half(s) refused, 0 refused as placeholders, 0 with an unresolved prefix, 0 with a quarantined literal
+INFO:ontocast.stategraph.atomic:facts unit clean after critic patch; marking SUCCESS
+INFO:ontocast.stategraph.atomic:Unit facts critic pass 1/1: 2 applied, 1 residual, 2 no-op, 0 rolled back
+INFO:ontocast.stategraph.atomic:Ontology context for mode fixed_single_ontology: sources=['http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD'] writable=['http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD']
+INFO:ontocast.agent.render_facts:Render facts for content unit 3
+INFO:ontocast.agent.render_facts:Rendering fresh facts
+WARNING:ontocast.onto.ontology_condense:Ontology context still exceeds the prompt budget after condensing (11951 > 4000 triples; was 14983). Passing it through rather than dropping labels, types, hierarchy or domain/range, which the model needs to use the schema at all. Reduce the catalog, split it, or switch to ONTOLOGY_CONTEXT_MODE=selected_vector_search_ontology, which retrieves only the relevant part.
+EXACT CACHE REPLAY 182340 prompt characters
+INFO:ontocast.agent.render_facts:Fresh facts generated with 0 triple(s).
+INFO:ontocast.stategraph.atomic:Unit facts critic pass 1 skipped (empty_render)
+INFO:ontocast.stategraph.atomic:Ontology context for mode fixed_single_ontology: sources=['http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD'] writable=['http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD']
+INFO:ontocast.agent.render_facts:Render facts for content unit 4
+INFO:ontocast.agent.render_facts:Rendering fresh facts
+WARNING:ontocast.onto.ontology_condense:Ontology context still exceeds the prompt budget after condensing (11951 > 4000 triples; was 14983). Passing it through rather than dropping labels, types, hierarchy or domain/range, which the model needs to use the schema at all. Reduce the catalog, split it, or switch to ONTOLOGY_CONTEXT_MODE=selected_vector_search_ontology, which retrieves only the relevant part.
+EXACT CACHE REPLAY 185930 prompt characters
+INFO:ontocast.agent.render_facts:Fresh facts generated with 0 triple(s).
+INFO:ontocast.stategraph.atomic:Unit facts critic pass 1 skipped (empty_render)
+INFO:ontocast.stategraph.atomic:Ontology context for mode fixed_single_ontology: sources=['http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD'] writable=['http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD']
+INFO:ontocast.agent.render_facts:Render facts for content unit 5
+INFO:ontocast.agent.render_facts:Rendering fresh facts
+WARNING:ontocast.onto.ontology_condense:Ontology context still exceeds the prompt budget after condensing (11951 > 4000 triples; was 14983). Passing it through rather than dropping labels, types, hierarchy or domain/range, which the model needs to use the schema at all. Reduce the catalog, split it, or switch to ONTOLOGY_CONTEXT_MODE=selected_vector_search_ontology, which retrieves only the relevant part.
+EXACT CACHE REPLAY 189129 prompt characters
+INFO:ontocast.agent.render_facts:Fresh facts generated with 0 triple(s).
+WARNING:ontocast.util.numeric_inventory:Numeric coverage: 238 missing mention(s) truncated to 30 for the prompt
+INFO:ontocast.stategraph.atomic:Unit facts critic pass 1 skipped (empty_render)
+INFO:ontocast.stategraph.atomic:Ontology context for mode fixed_single_ontology: sources=['http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD'] writable=['http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD']
+INFO:ontocast.agent.render_facts:Render facts for content unit 6
+INFO:ontocast.agent.render_facts:Rendering fresh facts
+WARNING:ontocast.onto.ontology_condense:Ontology context still exceeds the prompt budget after condensing (11951 > 4000 triples; was 14983). Passing it through rather than dropping labels, types, hierarchy or domain/range, which the model needs to use the schema at all. Reduce the catalog, split it, or switch to ONTOLOGY_CONTEXT_MODE=selected_vector_search_ontology, which retrieves only the relevant part.
+EXACT CACHE REPLAY 184686 prompt characters
+INFO:ontocast.agent.render_facts:Fresh facts generated with 291 triple(s).
+INFO:ontocast.agent.criticise_facts:Facts critic for content unit 6: visit 1/1
+EXACT CACHE REPLAY 204801 prompt characters
+INFO:ontocast.agent.criticise_facts:Facts critique rejected on mandatory_findings: <https://growgraph.dev/facts/nf> is typed <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Data_variable> but carries <http://www.ontologyrepository.com/CommonCoreOntologies/uses_measurement_unit>, whose rdfs:domain is <http://www.ontologyrepository.com/CommonCoreOntologies/InformationBearingEntity>. Either type the subject as the declared domain, or use the property that fits the type it has.; <https://growgraph.dev/facts/nfc> is typed <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Data_variable> but carries <http://www.ontologyrepository.com/CommonCoreOntologies/uses_measurement_unit>, whose rdfs:domain is <http://www.ontologyrepository.com/CommonCoreOntologies/InformationBearingEntity>. Either type the subject as the declared domain, or use the property that fits the type it has.; <https://growgraph.dev/facts/ps30> is typed <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Data_variable> but carries <http://www.ontologyrepository.com/CommonCoreOntologies/uses_measurement_unit>, whose rdfs:domain is <http://www.ontologyrepository.com/CommonCoreOntologies/InformationBearingEntity>. Either type the subject as the declared domain, or use the property that fits the type it has. (score 79.0)
+INFO:ontocast.tool.facts_validation.critic_patch:Critic fixes: 9 compiled to patches (-16/+17 triples), 1 need a render, 1 asked for no change, 1 delete half(s) refused, 0 refused as placeholders, 0 with an unresolved prefix, 0 with a quarantined literal
+WARNING:ontocast.stategraph.atomic:Critic fix left the unit worse (no_progress; -4/+2 triples, mandatory 0 -> 0) — rolling it back
+INFO:ontocast.stategraph.atomic:facts unit clean after critic patch; marking SUCCESS
+INFO:ontocast.stategraph.atomic:Unit facts critic pass 1/1: 8 applied, 1 residual, 1 no-op, 1 rolled back
+INFO:ontocast.stategraph.atomic:Ontology context for mode fixed_single_ontology: sources=['http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD'] writable=['http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD']
+INFO:ontocast.agent.render_facts:Render facts for content unit 7
+INFO:ontocast.agent.render_facts:Rendering fresh facts
+WARNING:ontocast.onto.ontology_condense:Ontology context still exceeds the prompt budget after condensing (11951 > 4000 triples; was 14983). Passing it through rather than dropping labels, types, hierarchy or domain/range, which the model needs to use the schema at all. Reduce the catalog, split it, or switch to ONTOLOGY_CONTEXT_MODE=selected_vector_search_ontology, which retrieves only the relevant part.
+LIVE FAILED-UNIT CALL 1 facts_render
+WARNING:ontocast.agent.common:Failed to parse LLM response on attempt 1/3: at line 13 of <>:
+Bad syntax (expected '.' or '}' or ']' at end of statement) at ^ in:
+"...b'nes, cd:testing_engines, cd:health_indicator_engines, cd:cm '^b'apss .\ncd:cm apss a ns1:Database ; rdfs:label "C-MAPSS" .\ncd'..."
+LIVE FAILED-UNIT CALL 2 facts_render
+INFO:ontocast.agent.render_facts:Fresh facts generated with 735 triple(s).
+INFO:ontocast.agent.criticise_facts:Facts critic for content unit 7: visit 1/1
+LIVE FAILED-UNIT CALL 3 facts_critic
+INFO:ontocast.agent.criticise_facts:Facts critique rejected on mandatory_findings: <https://growgraph.dev/facts/acc1> is typed <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Performance_value> but carries <http://www.ontologyrepository.com/CommonCoreOntologies/uses_measurement_unit>, whose rdfs:domain is <http://www.ontologyrepository.com/CommonCoreOntologies/InformationBearingEntity>. Either type the subject as the declared domain, or use the property that fits the type it has.; <https://growgraph.dev/facts/acc10> is typed <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Performance_value> but carries <http://www.ontologyrepository.com/CommonCoreOntologies/uses_measurement_unit>, whose rdfs:domain is <http://www.ontologyrepository.com/CommonCoreOntologies/InformationBearingEntity>. Either type the subject as the declared domain, or use the property that fits the type it has.; <https://growgraph.dev/facts/acc2> is typed <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Performance_value> but carries <http://www.ontologyrepository.com/CommonCoreOntologies/uses_measurement_unit>, whose rdfs:domain is <http://www.ontologyrepository.com/CommonCoreOntologies/InformationBearingEntity>. Either type the subject as the declared domain, or use the property that fits the type it has. (score 79.0)
+INFO:ontocast.tool.facts_validation.critic_patch:Critic fixes: 10 compiled to patches (-47/+81 triples), 0 need a render, 1 asked for no change, 0 delete half(s) refused, 0 refused as placeholders, 0 with an unresolved prefix, 0 with a quarantined literal
+WARNING:ontocast.stategraph.atomic:Critic fix left the unit worse (delete_only; -1/+0 triples, mandatory 0 -> 0) — rolling it back
+WARNING:ontocast.stategraph.atomic:Critic fix left the unit worse (delete_only; -1/+0 triples, mandatory 0 -> 0) — rolling it back
+INFO:ontocast.stategraph.atomic:facts unit clean after critic patch; marking SUCCESS
+INFO:ontocast.stategraph.atomic:Unit facts critic pass 1/1: 8 applied, 0 residual, 1 no-op, 2 rolled back
+INFO:ontocast.stategraph.atomic:Ontology context for mode fixed_single_ontology: sources=['http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD'] writable=['http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD']
+INFO:ontocast.agent.render_facts:Render facts for content unit 8
+INFO:ontocast.agent.render_facts:Rendering fresh facts
+WARNING:ontocast.onto.ontology_condense:Ontology context still exceeds the prompt budget after condensing (11951 > 4000 triples; was 14983). Passing it through rather than dropping labels, types, hierarchy or domain/range, which the model needs to use the schema at all. Reduce the catalog, split it, or switch to ONTOLOGY_CONTEXT_MODE=selected_vector_search_ontology, which retrieves only the relevant part.
+EXACT CACHE REPLAY 180829 prompt characters
+WARNING:ontocast.agent.common:Failed to parse LLM response on attempt 1/3: at line 33 of <>:
+Bad syntax (expected '.' or '}' or ']' at end of statement) at ^ in:
+"...b'rdfs:label "degradation datasets" ; ns2:RO_0001000 cd:c_amp '^b'ss .\ncd:c_amp ss a ns1:InformationProcessingArtifact ; rdfs:'..."
+EXACT CACHE REPLAY 183326 prompt characters
+WARNING:ontocast.agent.common:Failed to parse LLM response on attempt 2/3: Expecting ',' delimiter at char 5126
+EXACT CACHE REPLAY 182014 prompt characters
+INFO:ontocast.agent.render_facts:Fresh facts generated with 115 triple(s).
+INFO:ontocast.agent.criticise_facts:Facts critic for content unit 8: visit 1/1
+EXACT CACHE REPLAY 186898 prompt characters
+INFO:ontocast.agent.criticise_facts:Facts critique rejected on critic_critical: The supplied ontology defines these BFO terms under ns2:, not ns:. Correct both process typing and function-realization relations. (score 84.0)
+INFO:ontocast.tool.facts_validation.critic_patch:Critic fixes: 5 compiled to patches (-4/+5 triples), 0 need a render, 1 asked for no change, 0 delete half(s) refused, 0 refused as placeholders, 0 with an unresolved prefix, 0 with a quarantined literal
+WARNING:ontocast.stategraph.atomic:Critic fix left the unit worse (delete_only; -2/+0 triples, mandatory 0 -> 0) — rolling it back
+INFO:ontocast.stategraph.atomic:facts unit clean after critic patch; marking SUCCESS
+INFO:ontocast.stategraph.atomic:Unit facts critic pass 1/1: 4 applied, 0 residual, 1 no-op, 1 rolled back
+WARNING:ontocast.stategraph.node_factories:Parallel facts map failed without usable output for 3/8 unit(s)
+INFO:ontocast.tool.agg.aggregate:Starting aggregation with metadata for 5 units
+INFO:ontocast.tool.agg.aggregate:Aggregation entity classification stats: fact=293 known_ontology=131 tentative_ontology=15
+INFO:ontocast.tool.agg.clustering:Embedding 295 entity representations in parallel...
+INFO:ontocast.tool.sentence_transformer:Loading sentence-transformer model: sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2 (device=auto)
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+WARNING:huggingface_hub.utils._http:Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading weights:   0%|          | 0/199 [00:00<?, ?it/s]Loading weights: 100%|██████████| 199/199 [00:00<00:00, 6449.53it/s]
+Batches:   0%|          | 0/10 [00:00<?, ?it/s]Batches:  10%|█         | 1/10 [00:00<00:04,  2.07it/s]Batches:  30%|███       | 3/10 [00:00<00:01,  5.37it/s]Batches:  50%|█████     | 5/10 [00:00<00:00,  7.21it/s]Batches:  70%|███████   | 7/10 [00:01<00:00,  8.52it/s]Batches:  90%|█████████ | 9/10 [00:01<00:00,  9.64it/s]Batches: 100%|██████████| 10/10 [00:01<00:00,  6.26it/s]
+INFO:ontocast.tool.agg.clustering:Embedded 295 entities
+INFO:ontocast.tool.agg.clustering:Clustering 295 entities...
+INFO:ontocast.tool.agg.clustering:Formed 60 clusters: 42 singletons, 18 multi-entity clusters, max cluster size: 174
+INFO:ontocast.tool.agg.clustering:Embedding 74 entity representations in parallel...
+INFO:ontocast.tool.agg.clustering:Embedded 74 entities
+INFO:ontocast.tool.agg.clustering:Clustering 74 entities...
+INFO:ontocast.tool.agg.clustering:Formed 37 clusters: 23 singletons, 14 multi-entity clusters, max cluster size: 7
+INFO:ontocast.tool.agg.clustering:Embedding 70 entity representations in parallel...
+INFO:ontocast.tool.agg.clustering:Embedded 70 entities
+INFO:ontocast.tool.agg.clustering:Clustering 70 entities...
+INFO:ontocast.tool.agg.clustering:Formed 27 clusters: 13 singletons, 14 multi-entity clusters, max cluster size: 21
+INFO:ontocast.tool.agg.aggregate:Rejected 1196 candidate merges after symbolic validation
+INFO:ontocast.tool.agg.clustering:Created mapping for 439 entities to 404 representatives
+INFO:ontocast.tool.agg.uri_builder:Built URI mapping: 439 entities, 295 normalised
+INFO:ontocast.tool.agg.rewriter:Merged 5 unit graphs with provenance: 1347 -> 3984 triples (266 entities merged)
+INFO:ontocast.tool.agg.aggregate:Aggregation with metadata complete
+INFO:ontocast.stategraph.facts_gate:Facts validation gate: 27 merge-signature error finding(s), re-aggregating with 32 merge veto pair(s)
+INFO:ontocast.tool.agg.aggregate:Starting aggregation with metadata for 5 units
+INFO:ontocast.tool.agg.aggregate:Aggregation entity classification stats: fact=293 known_ontology=131 tentative_ontology=15
+INFO:ontocast.tool.agg.clustering:Embedding 295 entity representations in parallel...
+Batches:   0%|          | 0/10 [00:00<?, ?it/s]Batches:  10%|█         | 1/10 [00:00<00:01,  8.56it/s]Batches:  30%|███       | 3/10 [00:00<00:00, 11.05it/s]Batches:  50%|█████     | 5/10 [00:00<00:00, 11.95it/s]Batches:  70%|███████   | 7/10 [00:00<00:00, 13.01it/s]Batches:  90%|█████████ | 9/10 [00:00<00:00, 14.27it/s]Batches: 100%|██████████| 10/10 [00:00<00:00, 14.25it/s]
+INFO:ontocast.tool.agg.clustering:Embedded 295 entities
+INFO:ontocast.tool.agg.clustering:Clustering 295 entities...
+INFO:ontocast.tool.agg.clustering:Formed 60 clusters: 42 singletons, 18 multi-entity clusters, max cluster size: 174
+INFO:ontocast.tool.agg.clustering:Embedding 74 entity representations in parallel...
+INFO:ontocast.tool.agg.clustering:Embedded 74 entities
+INFO:ontocast.tool.agg.clustering:Clustering 74 entities...
+INFO:ontocast.tool.agg.clustering:Formed 37 clusters: 23 singletons, 14 multi-entity clusters, max cluster size: 7
+INFO:ontocast.tool.agg.clustering:Embedding 70 entity representations in parallel...
+INFO:ontocast.tool.agg.clustering:Embedded 70 entities
+INFO:ontocast.tool.agg.clustering:Clustering 70 entities...
+INFO:ontocast.tool.agg.clustering:Formed 27 clusters: 13 singletons, 14 multi-entity clusters, max cluster size: 21
+INFO:ontocast.tool.agg.aggregate:Rejected 1221 candidate merges after symbolic validation
+INFO:ontocast.tool.agg.clustering:Created mapping for 439 entities to 424 representatives
+INFO:ontocast.tool.agg.uri_builder:Built URI mapping: 439 entities, 295 normalised
+INFO:ontocast.tool.agg.rewriter:Merged 5 unit graphs with provenance: 1347 -> 4047 triples (286 entities merged)
+INFO:ontocast.tool.agg.aggregate:Aggregation with metadata complete
+WARNING:ontocast.stategraph.facts_gate:Facts validation gate: 24 error finding(s) remain after 1 repair pass(es)
+INFO:ontocast.agent.serialize:LLM: 3 calls, 3,050,369 sent, 122,757 received | 13 cache hits | 192,926 in / 21,670 out tokens | 754,378 in / 17,526 out tokens replayed | of which 3,582 reasoning | 9% output is reasoning | Triples: 0 ontology, 1305 facts
+INFO:ontocast.agent.serialize:Durations: Render Facts/worker_wait 492.7s, Render Facts 463.6s, Render Facts/unit_sum 463.6s, llm/provider 442.0s, Render Facts/loop_lag_total 29.6s, Merge Facts 13.0s, prompt/ontology_chapter 3.6s, Validate Facts 3.3s, Render Facts/loop_lag_max 3.1s, repair/deterministic 1.4s, Convert to Text 1.1s, Chunk Text 0.1s, llm/cache_lookup 0.0s, llm/inflight_wait 0.0s, ctx/merge_document_ontology 0.0s
+INFO:ontocast.agent.serialize:Effective workers: Render Facts 1.0x (loop lag 29.6s)
+INFO:ontocast.api.process_helpers:Dumped facts graph with chunk-level provenance retained to /Users/antho/Ontologies/out/pilot-s001-own-cases-600s/OPMAD-S001/10.1016_j.ast.2018.09.044.facts.ttl
+INFO:ontocast.api.process_helpers:Dumped 8 content units to /Users/antho/Ontologies/out/pilot-s001-own-cases-600s/OPMAD-S001/10.1016_j.ast.2018.09.044.units.jsonl
+INFO:ontocast.api.process_helpers:Dumped facts validation report to /Users/antho/Ontologies/out/pilot-s001-own-cases-600s/OPMAD-S001/10.1016_j.ast.2018.09.044.facts.validation.json
+INFO:ontocast.api.process_helpers:Dumped run manifest to /Users/antho/Ontologies/out/pilot-s001-own-cases-600s/OPMAD-S001/10.1016_j.ast.2018.09.044.run.json
+
+Finished 1 paper(s). Results: /Users/antho/Ontologies/out/pilot-s001-own-cases-600s
+
+Runner exit status: 0

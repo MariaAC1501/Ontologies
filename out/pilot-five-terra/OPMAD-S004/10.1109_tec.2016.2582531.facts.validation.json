@@ -1,0 +1,1634 @@
+{
+  "source": "10.1109_tec.2016.2582531.pdf",
+  "conformance": {
+    "shacl_evaluated": null,
+    "conforms": null,
+    "shacl_focus_nodes": null,
+    "shacl_vacuous": false,
+    "findings": 69,
+    "errors": 63,
+    "warnings": 6,
+    "by_kind": {
+      "functional_violation": 27,
+      "non_catalog_vocabulary": 6,
+      "suspect_multi_value": 36
+    },
+    "shacl_violations": 0,
+    "shacl_by_constraint": {},
+    "shacl_by_shape": {},
+    "repairs_applied": {}
+  },
+  "gate_repairs": [],
+  "findings": [
+    {
+      "kind": "functional_violation",
+      "severity": "error",
+      "message": "<https://growgraph.dev/doc/05dcb67f77c3/case_1> holds 2 distinct values for <http://www.ontologyrepository.com/CommonCoreOntologies/is_about>, which the schema constrains to at most one.",
+      "subject": "https://growgraph.dev/doc/05dcb67f77c3/case_1",
+      "predicate": "http://www.ontologyrepository.com/CommonCoreOntologies/is_about",
+      "values": [
+        "https://growgraph.dev/doc/05dcb67f77c3/aging_1",
+        "https://growgraph.dev/doc/05dcb67f77c3/pemfc_stack_1"
+      ],
+      "component": "",
+      "source_shape": ""
+    },
+    {
+      "kind": "functional_violation",
+      "severity": "error",
+      "message": "<https://growgraph.dev/doc/05dcb67f77c3/case_1_2_kw> holds 2 distinct values for <http://www.ontologyrepository.com/CommonCoreOntologies/is_about>, which the schema constrains to at most one.",
+      "subject": "https://growgraph.dev/doc/05dcb67f77c3/case_1_2_kw",
+      "predicate": "http://www.ontologyrepository.com/CommonCoreOntologies/is_about",
+      "values": [
+        "https://growgraph.dev/doc/05dcb67f77c3/forecast_1_2_kw",
+        "https://growgraph.dev/doc/05dcb67f77c3/pemfc_stack_1_2_kw"
+      ],
+      "component": "",
+      "source_shape": ""
+    },
+    {
+      "kind": "functional_violation",
+      "severity": "error",
+      "message": "<https://growgraph.dev/doc/05dcb67f77c3/case_2> holds 2 distinct values for <http://www.ontologyrepository.com/CommonCoreOntologies/is_about>, which the schema constrains to at most one.",
+      "subject": "https://growgraph.dev/doc/05dcb67f77c3/case_2",
+      "predicate": "http://www.ontologyrepository.com/CommonCoreOntologies/is_about",
+      "values": [
+        "https://growgraph.dev/doc/05dcb67f77c3/aging_2",
+        "https://growgraph.dev/doc/05dcb67f77c3/pemfc_stack_2"
+      ],
+      "component": "",
+      "source_shape": ""
+    },
+    {
+      "kind": "functional_violation",
+      "severity": "error",
+      "message": "<https://growgraph.dev/doc/05dcb67f77c3/case_8_kw> holds 2 distinct values for <http://www.ontologyrepository.com/CommonCoreOntologies/is_about>, which the schema constrains to at most one.",
+      "subject": "https://growgraph.dev/doc/05dcb67f77c3/case_8_kw",
+      "predicate": "http://www.ontologyrepository.com/CommonCoreOntologies/is_about",
+      "values": [
+        "https://growgraph.dev/doc/05dcb67f77c3/forecast_8_kw",
+        "https://growgraph.dev/doc/05dcb67f77c3/pemfc_stack_8_kw"
+      ],
+      "component": "",
+      "source_shape": ""
+    },
+    {
+      "kind": "functional_violation",
+      "severity": "error",
+      "message": "<https://growgraph.dev/doc/05dcb67f77c3/case_nexa_12a_30c> holds 3 distinct values for <http://www.ontologyrepository.com/CommonCoreOntologies/is_about>, which the schema constrains to at most one.",
+      "subject": "https://growgraph.dev/doc/05dcb67f77c3/case_nexa_12a_30c",
+      "predicate": "http://www.ontologyrepository.com/CommonCoreOntologies/is_about",
+      "values": [
+        "https://growgraph.dev/doc/05dcb67f77c3/nexaStack_2",
+        "https://growgraph.dev/doc/05dcb67f77c3/nexa_12a_modified_rvm_forecast",
+        "https://growgraph.dev/doc/05dcb67f77c3/nexa_12a_svm_forecast"
+      ],
+      "component": "",
+      "source_shape": ""
+    },
+    {
+      "kind": "functional_violation",
+      "severity": "error",
+      "message": "<https://growgraph.dev/doc/05dcb67f77c3/case_nexa_30a_35c> holds 3 distinct values for <http://www.ontologyrepository.com/CommonCoreOntologies/is_about>, which the schema constrains to at most one.",
+      "subject": "https://growgraph.dev/doc/05dcb67f77c3/case_nexa_30a_35c",
+      "predicate": "http://www.ontologyrepository.com/CommonCoreOntologies/is_about",
+      "values": [
+        "https://growgraph.dev/doc/05dcb67f77c3/nexaStack_2",
+        "https://growgraph.dev/doc/05dcb67f77c3/nexa_30a_modified_rvm_forecast",
+        "https://growgraph.dev/doc/05dcb67f77c3/nexa_30a_svm_forecast"
+      ],
+      "component": "",
+      "source_shape": ""
+    },
+    {
+      "kind": "functional_violation",
+      "severity": "error",
+      "message": "<https://growgraph.dev/doc/05dcb67f77c3/case_nexa_36a_40c> holds 3 distinct values for <http://www.ontologyrepository.com/CommonCoreOntologies/is_about>, which the schema constrains to at most one.",
+      "subject": "https://growgraph.dev/doc/05dcb67f77c3/case_nexa_36a_40c",
+      "predicate": "http://www.ontologyrepository.com/CommonCoreOntologies/is_about",
+      "values": [
+        "https://growgraph.dev/doc/05dcb67f77c3/nexaStack_2",
+        "https://growgraph.dev/doc/05dcb67f77c3/nexa_36a_modified_rvm_forecast",
+        "https://growgraph.dev/doc/05dcb67f77c3/nexa_36a_svm_forecast"
+      ],
+      "component": "",
+      "source_shape": ""
+    },
+    {
+      "kind": "functional_violation",
+      "severity": "error",
+      "message": "<https://growgraph.dev/doc/05dcb67f77c3/case_nexa_44a_40c> holds 3 distinct values for <http://www.ontologyrepository.com/CommonCoreOntologies/is_about>, which the schema constrains to at most one.",
+      "subject": "https://growgraph.dev/doc/05dcb67f77c3/case_nexa_44a_40c",
+      "predicate": "http://www.ontologyrepository.com/CommonCoreOntologies/is_about",
+      "values": [
+        "https://growgraph.dev/doc/05dcb67f77c3/nexaStack_2",
+        "https://growgraph.dev/doc/05dcb67f77c3/nexa_44a_modified_rvm_forecast",
+        "https://growgraph.dev/doc/05dcb67f77c3/nexa_44a_svm_forecast"
+      ],
+      "component": "",
+      "source_shape": ""
+    },
+    {
+      "kind": "functional_violation",
+      "severity": "error",
+      "message": "<https://growgraph.dev/doc/05dcb67f77c3/case_pm_200_mobile> holds 3 distinct values for <http://www.ontologyrepository.com/CommonCoreOntologies/is_about>, which the schema constrains to at most one.",
+      "subject": "https://growgraph.dev/doc/05dcb67f77c3/case_pm_200_mobile",
+      "predicate": "http://www.ontologyrepository.com/CommonCoreOntologies/is_about",
+      "values": [
+        "https://growgraph.dev/doc/05dcb67f77c3/pm_200_modified_rvm_forecast",
+        "https://growgraph.dev/doc/05dcb67f77c3/pm_200_stack_4",
+        "https://growgraph.dev/doc/05dcb67f77c3/pm_200_svm_forecast"
+      ],
+      "component": "",
+      "source_shape": ""
+    },
+    {
+      "kind": "functional_violation",
+      "severity": "error",
+      "message": "<https://growgraph.dev/doc/05dcb67f77c3/case_study_1> holds 9 distinct values for <http://www.ontologyrepository.com/CommonCoreOntologies/is_about>, which the schema constrains to at most one.",
+      "subject": "https://growgraph.dev/doc/05dcb67f77c3/case_study_1",
+      "predicate": "http://www.ontologyrepository.com/CommonCoreOntologies/is_about",
+      "values": [
+        "https://growgraph.dev/doc/05dcb67f77c3/dataset_1",
+        "https://growgraph.dev/doc/05dcb67f77c3/dataset_2",
+        "https://growgraph.dev/doc/05dcb67f77c3/dataset_3",
+        "https://growgraph.dev/doc/05dcb67f77c3/dataset_4",
+        "https://growgraph.dev/doc/05dcb67f77c3/nexaStack_1",
+        "https://growgraph.dev/doc/05dcb67f77c3/test_case_1",
+        "https://growgraph.dev/doc/05dcb67f77c3/test_case_2",
+        "https://growgraph.dev/doc/05dcb67f77c3/test_case_3",
+        "https://growgraph.dev/doc/05dcb67f77c3/test_case_4"
+      ],
+      "component": "",
+      "source_shape": ""
+    },
+    {
+      "kind": "functional_violation",
+      "severity": "error",
+      "message": "<https://growgraph.dev/doc/05dcb67f77c3/case_study_2> holds 3 distinct values for <http://www.ontologyrepository.com/CommonCoreOntologies/is_about>, which the schema constrains to at most one.",
+      "subject": "https://growgraph.dev/doc/05dcb67f77c3/case_study_2",
+      "predicate": "http://www.ontologyrepository.com/CommonCoreOntologies/is_about",
+      "values": [
+        "https://growgraph.dev/doc/05dcb67f77c3/dataset_5",
+        "https://growgraph.dev/doc/05dcb67f77c3/pm_200_stack_2",
+        "https://growgraph.dev/doc/05dcb67f77c3/test_case_5"
+      ],
+      "component": "",
+      "source_shape": ""
+    },
+    {
+      "kind": "suspect_multi_value",
+      "severity": "error",
+      "message": "<https://growgraph.dev/doc/05dcb67f77c3/errorReductionRange> carries 2 distinct numeric values on <http://qudt.org/schema/qudt/numericValue> \u2014 the signature of distinct quantities collapsed into one node.",
+      "subject": "https://growgraph.dev/doc/05dcb67f77c3/errorReductionRange",
+      "predicate": "http://qudt.org/schema/qudt/numericValue",
+      "values": [
+        "30",
+        "40"
+      ],
+      "component": "",
+      "source_shape": ""
+    },
+    {
+      "kind": "functional_violation",
+      "severity": "error",
+      "message": "<https://growgraph.dev/doc/05dcb67f77c3/forecastComparison> holds 3 distinct values for <http://www.ontologyrepository.com/CommonCoreOntologies/is_about>, which the schema constrains to at most one.",
+      "subject": "https://growgraph.dev/doc/05dcb67f77c3/forecastComparison",
+      "predicate": "http://www.ontologyrepository.com/CommonCoreOntologies/is_about",
+      "values": [
+        "https://growgraph.dev/doc/05dcb67f77c3/classicSvm_3",
+        "https://growgraph.dev/doc/05dcb67f77c3/modifiedRvm",
+        "https://growgraph.dev/doc/05dcb67f77c3/originalRvm_2"
+      ],
+      "component": "",
+      "source_shape": ""
+    },
+    {
+      "kind": "suspect_multi_value",
+      "severity": "error",
+      "message": "<https://growgraph.dev/doc/05dcb67f77c3/horizonComparison> points at 2 objects via <http://www.ontologyrepository.com/CommonCoreOntologies/has_object>, which is single-valued for every other subject in this graph.",
+      "subject": "https://growgraph.dev/doc/05dcb67f77c3/horizonComparison",
+      "predicate": "http://www.ontologyrepository.com/CommonCoreOntologies/has_object",
+      "values": [
+        "https://growgraph.dev/doc/05dcb67f77c3/multipleStepForecast",
+        "https://growgraph.dev/doc/05dcb67f77c3/singleStepForecast"
+      ],
+      "component": "",
+      "source_shape": ""
+    },
+    {
+      "kind": "suspect_multi_value",
+      "severity": "error",
+      "message": "<https://growgraph.dev/doc/05dcb67f77c3/methodComparison> points at 3 objects via <http://www.ontologyrepository.com/CommonCoreOntologies/has_object>, which is single-valued for every other subject in this graph.",
+      "subject": "https://growgraph.dev/doc/05dcb67f77c3/methodComparison",
+      "predicate": "http://www.ontologyrepository.com/CommonCoreOntologies/has_object",
+      "values": [
+        "https://growgraph.dev/doc/05dcb67f77c3/classicSvm",
+        "https://growgraph.dev/doc/05dcb67f77c3/originalRvm",
+        "https://growgraph.dev/doc/05dcb67f77c3/selfAdaptiveRvm"
+      ],
+      "component": "",
+      "source_shape": ""
+    },
+    {
+      "kind": "functional_violation",
+      "severity": "error",
+      "message": "<https://growgraph.dev/doc/05dcb67f77c3/modifiedRvm_1> holds 2 distinct values for <http://www.ontologyrepository.com/CommonCoreOntologies/is_about>, which the schema constrains to at most one.",
+      "subject": "https://growgraph.dev/doc/05dcb67f77c3/modifiedRvm_1",
+      "predicate": "http://www.ontologyrepository.com/CommonCoreOntologies/is_about",
+      "values": [
+        "https://growgraph.dev/doc/05dcb67f77c3/fuelCell",
+        "https://growgraph.dev/doc/05dcb67f77c3/voltageDegradationFeature"
+      ],
+      "component": "",
+      "source_shape": ""
+    },
+    {
+      "kind": "functional_violation",
+      "severity": "error",
+      "message": "<https://growgraph.dev/doc/05dcb67f77c3/nexaNonlinearPrediction> holds 2 distinct values for <http://www.ontologyrepository.com/CommonCoreOntologies/is_about>, which the schema constrains to at most one.",
+      "subject": "https://growgraph.dev/doc/05dcb67f77c3/nexaNonlinearPrediction",
+      "predicate": "http://www.ontologyrepository.com/CommonCoreOntologies/is_about",
+      "values": [
+        "https://growgraph.dev/doc/05dcb67f77c3/nexa_36a_5step",
+        "https://growgraph.dev/doc/05dcb67f77c3/voltageDegradation_3"
+      ],
+      "component": "",
+      "source_shape": ""
+    },
+    {
+      "kind": "functional_violation",
+      "severity": "error",
+      "message": "<https://growgraph.dev/doc/05dcb67f77c3/nexa_12_a_results> holds 2 distinct values for <http://www.ontologyrepository.com/CommonCoreOntologies/is_about>, which the schema constrains to at most one.",
+      "subject": "https://growgraph.dev/doc/05dcb67f77c3/nexa_12_a_results",
+      "predicate": "http://www.ontologyrepository.com/CommonCoreOntologies/is_about",
+      "values": [
+        "https://growgraph.dev/doc/05dcb67f77c3/ballardNexaStack",
+        "https://growgraph.dev/doc/05dcb67f77c3/nexa_12_a_voltage"
+      ],
+      "component": "",
+      "source_shape": ""
+    },
+    {
+      "kind": "suspect_multi_value",
+      "severity": "error",
+      "message": "<https://growgraph.dev/doc/05dcb67f77c3/nexa_12_a_validation> points at 2 objects via <http://www.ontologyrepository.com/CommonCoreOntologies/has_input>, which is single-valued for every other subject in this graph.",
+      "subject": "https://growgraph.dev/doc/05dcb67f77c3/nexa_12_a_validation",
+      "predicate": "http://www.ontologyrepository.com/CommonCoreOntologies/has_input",
+      "values": [
+        "https://growgraph.dev/doc/05dcb67f77c3/dataset_3",
+        "https://growgraph.dev/doc/05dcb67f77c3/nexa_12_a_results"
+      ],
+      "component": "",
+      "source_shape": ""
+    },
+    {
+      "kind": "suspect_multi_value",
+      "severity": "error",
+      "message": "<https://growgraph.dev/doc/05dcb67f77c3/nexa_12a_2step> carries 2 mutually irreconcilable string values on <http://www.w3.org/2000/01/rdf-schema#label>, which is single-valued for a dominant majority of other subjects \u2014 the signature of distinct entities collapsed into one node.",
+      "subject": "https://growgraph.dev/doc/05dcb67f77c3/nexa_12a_2step",
+      "predicate": "http://www.w3.org/2000/01/rdf-schema#label",
+      "values": [
+        "2 step prediction, 12 a 30 \u00b0 c (nexa)",
+        "3 step prediction, 30 a 35 \u00b0 c (nexa)"
+      ],
+      "component": "",
+      "source_shape": ""
+    },
+    {
+      "kind": "suspect_multi_value",
+      "severity": "error",
+      "message": "<https://growgraph.dev/doc/05dcb67f77c3/nexa_12a_3step> carries 2 mutually irreconcilable string values on <http://www.w3.org/2000/01/rdf-schema#label>, which is single-valued for a dominant majority of other subjects \u2014 the signature of distinct entities collapsed into one node.",
+      "subject": "https://growgraph.dev/doc/05dcb67f77c3/nexa_12a_3step",
+      "predicate": "http://www.w3.org/2000/01/rdf-schema#label",
+      "values": [
+        "2 step prediction, 30 a 35 \u00b0 c (nexa)",
+        "3 step prediction, 12 a 30 \u00b0 c (nexa)"
+      ],
+      "component": "",
+      "source_shape": ""
+    },
+    {
+      "kind": "suspect_multi_value",
+      "severity": "error",
+      "message": "<https://growgraph.dev/doc/05dcb67f77c3/nexa_12a_4step> carries 2 mutually irreconcilable string values on <http://www.w3.org/2000/01/rdf-schema#label>, which is single-valued for a dominant majority of other subjects \u2014 the signature of distinct entities collapsed into one node.",
+      "subject": "https://growgraph.dev/doc/05dcb67f77c3/nexa_12a_4step",
+      "predicate": "http://www.w3.org/2000/01/rdf-schema#label",
+      "values": [
+        "4 step prediction, 12 a 30 \u00b0 c (nexa)",
+        "5 step prediction, 30 a 35 \u00b0 c (nexa)"
+      ],
+      "component": "",
+      "source_shape": ""
+    },
+    {
+      "kind": "suspect_multi_value",
+      "severity": "error",
+      "message": "<https://growgraph.dev/doc/05dcb67f77c3/nexa_12a_5step> carries 2 mutually irreconcilable string values on <http://www.w3.org/2000/01/rdf-schema#label>, which is single-valued for a dominant majority of other subjects \u2014 the signature of distinct entities collapsed into one node.",
+      "subject": "https://growgraph.dev/doc/05dcb67f77c3/nexa_12a_5step",
+      "predicate": "http://www.w3.org/2000/01/rdf-schema#label",
+      "values": [
+        "4 step prediction, 30 a 35 \u00b0 c (nexa)",
+        "5 step prediction, 12 a 30 \u00b0 c (nexa)"
+      ],
+      "component": "",
+      "source_shape": ""
+    },
+    {
+      "kind": "suspect_multi_value",
+      "severity": "error",
+      "message": "<https://growgraph.dev/doc/05dcb67f77c3/nexa_12a_rvm_mape> carries 2 mutually irreconcilable string values on <http://www.w3.org/2000/01/rdf-schema#comment>, which is single-valued for a dominant majority of other subjects \u2014 the signature of distinct entities collapsed into one node.",
+      "subject": "https://growgraph.dev/doc/05dcb67f77c3/nexa_12a_rvm_mape",
+      "predicate": "http://www.w3.org/2000/01/rdf-schema#comment",
+      "values": [
+        "higher than the svm r2 under the same condition.",
+        "smaller than the svm mape under the same condition."
+      ],
+      "component": "",
+      "source_shape": ""
+    },
+    {
+      "kind": "suspect_multi_value",
+      "severity": "error",
+      "message": "<https://growgraph.dev/doc/05dcb67f77c3/nexa_12a_rvm_mape> carries 3 mutually irreconcilable string values on <http://www.w3.org/2000/01/rdf-schema#label>, which is single-valued for a dominant majority of other subjects \u2014 the signature of distinct entities collapsed into one node.",
+      "subject": "https://growgraph.dev/doc/05dcb67f77c3/nexa_12a_rvm_mape",
+      "predicate": "http://www.w3.org/2000/01/rdf-schema#label",
+      "values": [
+        "nexa 12 a 30 \u00b0c rvm mape",
+        "nexa 12 a 30 \u00b0c svm rmse",
+        "nexa 30 a 35 \u00b0c rvm r2"
+      ],
+      "component": "",
+      "source_shape": ""
+    },
+    {
+      "kind": "suspect_multi_value",
+      "severity": "error",
+      "message": "<https://growgraph.dev/doc/05dcb67f77c3/nexa_12a_rvm_rmse> carries 3 mutually irreconcilable string values on <http://www.w3.org/2000/01/rdf-schema#label>, which is single-valued for a dominant majority of other subjects \u2014 the signature of distinct entities collapsed into one node.",
+      "subject": "https://growgraph.dev/doc/05dcb67f77c3/nexa_12a_rvm_rmse",
+      "predicate": "http://www.w3.org/2000/01/rdf-schema#label",
+      "values": [
+        "nexa 12 a 30 \u00b0c rvm rmse",
+        "nexa 12 a 30 \u00b0c svm r2",
+        "nexa 30 a 35 \u00b0c rvm mape"
+      ],
+      "component": "",
+      "source_shape": ""
+    },
+    {
+      "kind": "suspect_multi_value",
+      "severity": "error",
+      "message": "<https://growgraph.dev/doc/05dcb67f77c3/nexa_12a_svm_mape> carries 2 mutually irreconcilable string values on <http://www.w3.org/2000/01/rdf-schema#label>, which is single-valued for a dominant majority of other subjects \u2014 the signature of distinct entities collapsed into one node.",
+      "subject": "https://growgraph.dev/doc/05dcb67f77c3/nexa_12a_svm_mape",
+      "predicate": "http://www.w3.org/2000/01/rdf-schema#label",
+      "values": [
+        "nexa 12 a 30 \u00b0c svm mape",
+        "nexa 30 a 35 \u00b0c svm r2"
+      ],
+      "component": "",
+      "source_shape": ""
+    },
+    {
+      "kind": "functional_violation",
+      "severity": "error",
+      "message": "<https://growgraph.dev/doc/05dcb67f77c3/nexa_30_a_results> holds 2 distinct values for <http://www.ontologyrepository.com/CommonCoreOntologies/is_about>, which the schema constrains to at most one.",
+      "subject": "https://growgraph.dev/doc/05dcb67f77c3/nexa_30_a_results",
+      "predicate": "http://www.ontologyrepository.com/CommonCoreOntologies/is_about",
+      "values": [
+        "https://growgraph.dev/doc/05dcb67f77c3/ballardNexaStack",
+        "https://growgraph.dev/doc/05dcb67f77c3/nexa_30_a_voltage"
+      ],
+      "component": "",
+      "source_shape": ""
+    },
+    {
+      "kind": "suspect_multi_value",
+      "severity": "error",
+      "message": "<https://growgraph.dev/doc/05dcb67f77c3/nexa_30_a_validation> points at 2 objects via <http://www.ontologyrepository.com/CommonCoreOntologies/has_input>, which is single-valued for every other subject in this graph.",
+      "subject": "https://growgraph.dev/doc/05dcb67f77c3/nexa_30_a_validation",
+      "predicate": "http://www.ontologyrepository.com/CommonCoreOntologies/has_input",
+      "values": [
+        "https://growgraph.dev/doc/05dcb67f77c3/nexa_30_a_data",
+        "https://growgraph.dev/doc/05dcb67f77c3/nexa_30_a_results"
+      ],
+      "component": "",
+      "source_shape": ""
+    },
+    {
+      "kind": "suspect_multi_value",
+      "severity": "error",
+      "message": "<https://growgraph.dev/doc/05dcb67f77c3/nexa_30a_rvm_rmse> carries 2 mutually irreconcilable string values on <http://www.w3.org/2000/01/rdf-schema#label>, which is single-valued for a dominant majority of other subjects \u2014 the signature of distinct entities collapsed into one node.",
+      "subject": "https://growgraph.dev/doc/05dcb67f77c3/nexa_30a_rvm_rmse",
+      "predicate": "http://www.w3.org/2000/01/rdf-schema#label",
+      "values": [
+        "nexa 12 a 30 \u00b0c rvm r2",
+        "nexa 30 a 35 \u00b0c rvm rmse"
+      ],
+      "component": "",
+      "source_shape": ""
+    },
+    {
+      "kind": "functional_violation",
+      "severity": "error",
+      "message": "<https://growgraph.dev/doc/05dcb67f77c3/nexa_36_a_results> holds 2 distinct values for <http://www.ontologyrepository.com/CommonCoreOntologies/is_about>, which the schema constrains to at most one.",
+      "subject": "https://growgraph.dev/doc/05dcb67f77c3/nexa_36_a_results",
+      "predicate": "http://www.ontologyrepository.com/CommonCoreOntologies/is_about",
+      "values": [
+        "https://growgraph.dev/doc/05dcb67f77c3/ballardNexaStack",
+        "https://growgraph.dev/doc/05dcb67f77c3/nexa_36_a_voltage"
+      ],
+      "component": "",
+      "source_shape": ""
+    },
+    {
+      "kind": "suspect_multi_value",
+      "severity": "error",
+      "message": "<https://growgraph.dev/doc/05dcb67f77c3/nexa_36_a_validation> points at 2 objects via <http://www.ontologyrepository.com/CommonCoreOntologies/has_input>, which is single-valued for every other subject in this graph.",
+      "subject": "https://growgraph.dev/doc/05dcb67f77c3/nexa_36_a_validation",
+      "predicate": "http://www.ontologyrepository.com/CommonCoreOntologies/has_input",
+      "values": [
+        "https://growgraph.dev/doc/05dcb67f77c3/dataset_4",
+        "https://growgraph.dev/doc/05dcb67f77c3/nexa_36_a_results"
+      ],
+      "component": "",
+      "source_shape": ""
+    },
+    {
+      "kind": "suspect_multi_value",
+      "severity": "error",
+      "message": "<https://growgraph.dev/doc/05dcb67f77c3/nexa_36a_2step> carries 2 mutually irreconcilable string values on <http://www.w3.org/2000/01/rdf-schema#label>, which is single-valued for a dominant majority of other subjects \u2014 the signature of distinct entities collapsed into one node.",
+      "subject": "https://growgraph.dev/doc/05dcb67f77c3/nexa_36a_2step",
+      "predicate": "http://www.w3.org/2000/01/rdf-schema#label",
+      "values": [
+        "2 step prediction, 36 a 40 \u00b0 c (nexa)",
+        "3 step prediction, 44 a 40 \u00b0 c (nexa)"
+      ],
+      "component": "",
+      "source_shape": ""
+    },
+    {
+      "kind": "suspect_multi_value",
+      "severity": "error",
+      "message": "<https://growgraph.dev/doc/05dcb67f77c3/nexa_36a_3step> carries 2 mutually irreconcilable string values on <http://www.w3.org/2000/01/rdf-schema#label>, which is single-valued for a dominant majority of other subjects \u2014 the signature of distinct entities collapsed into one node.",
+      "subject": "https://growgraph.dev/doc/05dcb67f77c3/nexa_36a_3step",
+      "predicate": "http://www.w3.org/2000/01/rdf-schema#label",
+      "values": [
+        "2 step prediction, 44 a 40 \u00b0 c (nexa)",
+        "3 step prediction, 36 a 40 \u00b0 c (nexa)"
+      ],
+      "component": "",
+      "source_shape": ""
+    },
+    {
+      "kind": "suspect_multi_value",
+      "severity": "error",
+      "message": "<https://growgraph.dev/doc/05dcb67f77c3/nexa_36a_4step> carries 2 mutually irreconcilable string values on <http://www.w3.org/2000/01/rdf-schema#label>, which is single-valued for a dominant majority of other subjects \u2014 the signature of distinct entities collapsed into one node.",
+      "subject": "https://growgraph.dev/doc/05dcb67f77c3/nexa_36a_4step",
+      "predicate": "http://www.w3.org/2000/01/rdf-schema#label",
+      "values": [
+        "4 step prediction, 36 a 40 \u00b0 c (nexa)",
+        "5 step prediction, 44 a 40 \u00b0 c (nexa)"
+      ],
+      "component": "",
+      "source_shape": ""
+    },
+    {
+      "kind": "suspect_multi_value",
+      "severity": "error",
+      "message": "<https://growgraph.dev/doc/05dcb67f77c3/nexa_36a_5step> carries 2 mutually irreconcilable string values on <http://www.w3.org/2000/01/rdf-schema#label>, which is single-valued for a dominant majority of other subjects \u2014 the signature of distinct entities collapsed into one node.",
+      "subject": "https://growgraph.dev/doc/05dcb67f77c3/nexa_36a_5step",
+      "predicate": "http://www.w3.org/2000/01/rdf-schema#label",
+      "values": [
+        "4 step prediction, 44 a 40 \u00b0 c (nexa)",
+        "5 step prediction, 36 a 40 \u00b0 c (nexa)"
+      ],
+      "component": "",
+      "source_shape": ""
+    },
+    {
+      "kind": "functional_violation",
+      "severity": "error",
+      "message": "<https://growgraph.dev/doc/05dcb67f77c3/nexa_36a_comparison> holds 2 distinct values for <http://www.ontologyrepository.com/CommonCoreOntologies/is_about>, which the schema constrains to at most one.",
+      "subject": "https://growgraph.dev/doc/05dcb67f77c3/nexa_36a_comparison",
+      "predicate": "http://www.ontologyrepository.com/CommonCoreOntologies/is_about",
+      "values": [
+        "https://growgraph.dev/doc/05dcb67f77c3/originalRvm_2",
+        "https://growgraph.dev/doc/05dcb67f77c3/voltageDegradation_3"
+      ],
+      "component": "",
+      "source_shape": ""
+    },
+    {
+      "kind": "suspect_multi_value",
+      "severity": "error",
+      "message": "<https://growgraph.dev/doc/05dcb67f77c3/nexa_36a_rvm_mape> carries 3 mutually irreconcilable string values on <http://www.w3.org/2000/01/rdf-schema#comment>, which is single-valued for a dominant majority of other subjects \u2014 the signature of distinct entities collapsed into one node.",
+      "subject": "https://growgraph.dev/doc/05dcb67f77c3/nexa_36a_rvm_mape",
+      "predicate": "http://www.w3.org/2000/01/rdf-schema#comment",
+      "values": [
+        "higher than the svm r2 under the same condition.",
+        "increased through time.",
+        "smaller than the svm mape under the same condition."
+      ],
+      "component": "",
+      "source_shape": ""
+    },
+    {
+      "kind": "suspect_multi_value",
+      "severity": "error",
+      "message": "<https://growgraph.dev/doc/05dcb67f77c3/nexa_36a_rvm_mape> carries 3 mutually irreconcilable string values on <http://www.w3.org/2000/01/rdf-schema#label>, which is single-valued for a dominant majority of other subjects \u2014 the signature of distinct entities collapsed into one node.",
+      "subject": "https://growgraph.dev/doc/05dcb67f77c3/nexa_36a_rvm_mape",
+      "predicate": "http://www.w3.org/2000/01/rdf-schema#label",
+      "values": [
+        "nexa 36 a 40 \u00b0c rvm mape",
+        "nexa 36 a 40 \u00b0c svm rmse",
+        "nexa 44 a 40 \u00b0c rvm r2"
+      ],
+      "component": "",
+      "source_shape": ""
+    },
+    {
+      "kind": "suspect_multi_value",
+      "severity": "error",
+      "message": "<https://growgraph.dev/doc/05dcb67f77c3/nexa_36a_rvm_rmse> carries 2 mutually irreconcilable string values on <http://www.w3.org/2000/01/rdf-schema#comment>, which is single-valued for a dominant majority of other subjects \u2014 the signature of distinct entities collapsed into one node.",
+      "subject": "https://growgraph.dev/doc/05dcb67f77c3/nexa_36a_rvm_rmse",
+      "predicate": "http://www.w3.org/2000/01/rdf-schema#comment",
+      "values": [
+        "remained stable over the entire fuel cell operation time range.",
+        "smaller than the svm mape under the same condition."
+      ],
+      "component": "",
+      "source_shape": ""
+    },
+    {
+      "kind": "suspect_multi_value",
+      "severity": "error",
+      "message": "<https://growgraph.dev/doc/05dcb67f77c3/nexa_36a_rvm_rmse> carries 3 mutually irreconcilable string values on <http://www.w3.org/2000/01/rdf-schema#label>, which is single-valued for a dominant majority of other subjects \u2014 the signature of distinct entities collapsed into one node.",
+      "subject": "https://growgraph.dev/doc/05dcb67f77c3/nexa_36a_rvm_rmse",
+      "predicate": "http://www.w3.org/2000/01/rdf-schema#label",
+      "values": [
+        "nexa 36 a 40 \u00b0c rvm rmse",
+        "nexa 36 a 40 \u00b0c svm r2",
+        "nexa 44 a 40 \u00b0c rvm mape"
+      ],
+      "component": "",
+      "source_shape": ""
+    },
+    {
+      "kind": "suspect_multi_value",
+      "severity": "error",
+      "message": "<https://growgraph.dev/doc/05dcb67f77c3/nexa_36a_svm_mape> carries 2 mutually irreconcilable string values on <http://www.w3.org/2000/01/rdf-schema#label>, which is single-valued for a dominant majority of other subjects \u2014 the signature of distinct entities collapsed into one node.",
+      "subject": "https://growgraph.dev/doc/05dcb67f77c3/nexa_36a_svm_mape",
+      "predicate": "http://www.w3.org/2000/01/rdf-schema#label",
+      "values": [
+        "nexa 36 a 40 \u00b0c svm mape",
+        "nexa 44 a 40 \u00b0c svm r2"
+      ],
+      "component": "",
+      "source_shape": ""
+    },
+    {
+      "kind": "functional_violation",
+      "severity": "error",
+      "message": "<https://growgraph.dev/doc/05dcb67f77c3/nexa_44_a_results> holds 2 distinct values for <http://www.ontologyrepository.com/CommonCoreOntologies/is_about>, which the schema constrains to at most one.",
+      "subject": "https://growgraph.dev/doc/05dcb67f77c3/nexa_44_a_results",
+      "predicate": "http://www.ontologyrepository.com/CommonCoreOntologies/is_about",
+      "values": [
+        "https://growgraph.dev/doc/05dcb67f77c3/ballardNexaStack",
+        "https://growgraph.dev/doc/05dcb67f77c3/nexa_44_a_voltage"
+      ],
+      "component": "",
+      "source_shape": ""
+    },
+    {
+      "kind": "suspect_multi_value",
+      "severity": "error",
+      "message": "<https://growgraph.dev/doc/05dcb67f77c3/nexa_44_a_validation> points at 2 objects via <http://www.ontologyrepository.com/CommonCoreOntologies/has_input>, which is single-valued for every other subject in this graph.",
+      "subject": "https://growgraph.dev/doc/05dcb67f77c3/nexa_44_a_validation",
+      "predicate": "http://www.ontologyrepository.com/CommonCoreOntologies/has_input",
+      "values": [
+        "https://growgraph.dev/doc/05dcb67f77c3/dataset_3",
+        "https://growgraph.dev/doc/05dcb67f77c3/nexa_44_a_results"
+      ],
+      "component": "",
+      "source_shape": ""
+    },
+    {
+      "kind": "suspect_multi_value",
+      "severity": "error",
+      "message": "<https://growgraph.dev/doc/05dcb67f77c3/nexa_44a_rvm_rmse> carries 2 mutually irreconcilable string values on <http://www.w3.org/2000/01/rdf-schema#comment>, which is single-valued for a dominant majority of other subjects \u2014 the signature of distinct entities collapsed into one node.",
+      "subject": "https://growgraph.dev/doc/05dcb67f77c3/nexa_44a_rvm_rmse",
+      "predicate": "http://www.w3.org/2000/01/rdf-schema#comment",
+      "values": [
+        "higher than the svm r2 under the same condition.",
+        "remained stable over the entire fuel cell operation time range."
+      ],
+      "component": "",
+      "source_shape": ""
+    },
+    {
+      "kind": "suspect_multi_value",
+      "severity": "error",
+      "message": "<https://growgraph.dev/doc/05dcb67f77c3/nexa_44a_rvm_rmse> carries 3 mutually irreconcilable string values on <http://www.w3.org/2000/01/rdf-schema#label>, which is single-valued for a dominant majority of other subjects \u2014 the signature of distinct entities collapsed into one node.",
+      "subject": "https://growgraph.dev/doc/05dcb67f77c3/nexa_44a_rvm_rmse",
+      "predicate": "http://www.w3.org/2000/01/rdf-schema#label",
+      "values": [
+        "nexa 36 a 40 \u00b0c rvm r2",
+        "nexa 44 a 40 \u00b0c rvm rmse",
+        "nexa 44 a 40 \u00b0c svm prediction deviation"
+      ],
+      "component": "",
+      "source_shape": ""
+    },
+    {
+      "kind": "suspect_multi_value",
+      "severity": "error",
+      "message": "<https://growgraph.dev/doc/05dcb67f77c3/oneStepPrediction> points at 2 objects via <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#function_uses_model>, which is single-valued for every other subject in this graph.",
+      "subject": "https://growgraph.dev/doc/05dcb67f77c3/oneStepPrediction",
+      "predicate": "http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#function_uses_model",
+      "values": [
+        "https://growgraph.dev/doc/05dcb67f77c3/dynamicTrainingAlgorithm",
+        "https://growgraph.dev/doc/05dcb67f77c3/rvmModel"
+      ],
+      "component": "",
+      "source_shape": ""
+    },
+    {
+      "kind": "suspect_multi_value",
+      "severity": "error",
+      "message": "<https://growgraph.dev/doc/05dcb67f77c3/originalRvm_1> points at 2 objects via <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#type_described_by>, which is single-valued for every other subject in this graph.",
+      "subject": "https://growgraph.dev/doc/05dcb67f77c3/originalRvm_1",
+      "predicate": "http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#type_described_by",
+      "values": [
+        "https://growgraph.dev/doc/05dcb67f77c3/modifiedRvmType",
+        "https://growgraph.dev/doc/05dcb67f77c3/originalRvmType"
+      ],
+      "component": "",
+      "source_shape": ""
+    },
+    {
+      "kind": "functional_violation",
+      "severity": "error",
+      "message": "<https://growgraph.dev/doc/05dcb67f77c3/outputVoltage> holds 3 distinct values for <http://www.ontologyrepository.com/CommonCoreOntologies/is_about>, which the schema constrains to at most one.",
+      "subject": "https://growgraph.dev/doc/05dcb67f77c3/outputVoltage",
+      "predicate": "http://www.ontologyrepository.com/CommonCoreOntologies/is_about",
+      "values": [
+        "https://growgraph.dev/doc/05dcb67f77c3/nexaStack_1",
+        "https://growgraph.dev/doc/05dcb67f77c3/pm_200_stack_2",
+        "https://growgraph.dev/doc/05dcb67f77c3/voltageDegradation_1"
+      ],
+      "component": "",
+      "source_shape": ""
+    },
+    {
+      "kind": "suspect_multi_value",
+      "severity": "error",
+      "message": "<https://growgraph.dev/doc/05dcb67f77c3/paper> points at 3 objects via <http://www.ontologyrepository.com/CommonCoreOntologies/is_mentioned_by>, which is single-valued for every other subject in this graph.",
+      "subject": "https://growgraph.dev/doc/05dcb67f77c3/paper",
+      "predicate": "http://www.ontologyrepository.com/CommonCoreOntologies/is_mentioned_by",
+      "values": [
+        "https://growgraph.dev/doc/05dcb67f77c3/case_1",
+        "https://growgraph.dev/doc/05dcb67f77c3/case_2",
+        "https://growgraph.dev/doc/05dcb67f77c3/paperTitle"
+      ],
+      "component": "",
+      "source_shape": ""
+    },
+    {
+      "kind": "functional_violation",
+      "severity": "error",
+      "message": "<https://growgraph.dev/doc/05dcb67f77c3/pm_200_results> holds 2 distinct values for <http://www.ontologyrepository.com/CommonCoreOntologies/is_about>, which the schema constrains to at most one.",
+      "subject": "https://growgraph.dev/doc/05dcb67f77c3/pm_200_results",
+      "predicate": "http://www.ontologyrepository.com/CommonCoreOntologies/is_about",
+      "values": [
+        "https://growgraph.dev/doc/05dcb67f77c3/pm_200_middle_cell",
+        "https://growgraph.dev/doc/05dcb67f77c3/pm_200_voltage"
+      ],
+      "component": "",
+      "source_shape": ""
+    },
+    {
+      "kind": "suspect_multi_value",
+      "severity": "error",
+      "message": "<https://growgraph.dev/doc/05dcb67f77c3/pm_200_rvm_mape> carries 2 mutually irreconcilable string values on <http://www.w3.org/2000/01/rdf-schema#label>, which is single-valued for a dominant majority of other subjects \u2014 the signature of distinct entities collapsed into one node.",
+      "subject": "https://growgraph.dev/doc/05dcb67f77c3/pm_200_rvm_mape",
+      "predicate": "http://www.w3.org/2000/01/rdf-schema#label",
+      "values": [
+        "pm 200 mobile operation rvm mape",
+        "pm 200 mobile operation svm rmse"
+      ],
+      "component": "",
+      "source_shape": ""
+    },
+    {
+      "kind": "suspect_multi_value",
+      "severity": "error",
+      "message": "<https://growgraph.dev/doc/05dcb67f77c3/pm_200_rvm_rmse> carries 2 mutually irreconcilable string values on <http://www.w3.org/2000/01/rdf-schema#label>, which is single-valued for a dominant majority of other subjects \u2014 the signature of distinct entities collapsed into one node.",
+      "subject": "https://growgraph.dev/doc/05dcb67f77c3/pm_200_rvm_rmse",
+      "predicate": "http://www.w3.org/2000/01/rdf-schema#label",
+      "values": [
+        "pm 200 mobile operation rvm rmse",
+        "pm 200 mobile operation svm mape"
+      ],
+      "component": "",
+      "source_shape": ""
+    },
+    {
+      "kind": "suspect_multi_value",
+      "severity": "error",
+      "message": "<https://growgraph.dev/doc/05dcb67f77c3/pm_200_stack_1> points at 2 objects via <http://www.ontologyrepository.com/CommonCoreOntologies/is_measured_by>, which is single-valued for every other subject in this graph.",
+      "subject": "https://growgraph.dev/doc/05dcb67f77c3/pm_200_stack_1",
+      "predicate": "http://www.ontologyrepository.com/CommonCoreOntologies/is_measured_by",
+      "values": [
+        "https://growgraph.dev/doc/05dcb67f77c3/cellCount",
+        "https://growgraph.dev/doc/05dcb67f77c3/ratedPower"
+      ],
+      "component": "",
+      "source_shape": ""
+    },
+    {
+      "kind": "suspect_multi_value",
+      "severity": "error",
+      "message": "<https://growgraph.dev/doc/05dcb67f77c3/pm_200_stack_3> points at 2 objects via <http://www.ontologyrepository.com/CommonCoreOntologies/is_measured_by_ratio>, which is single-valued for every other subject in this graph.",
+      "subject": "https://growgraph.dev/doc/05dcb67f77c3/pm_200_stack_3",
+      "predicate": "http://www.ontologyrepository.com/CommonCoreOntologies/is_measured_by_ratio",
+      "values": [
+        "https://growgraph.dev/doc/05dcb67f77c3/pm_200_cell_count_1",
+        "https://growgraph.dev/doc/05dcb67f77c3/pm_200_power_rating"
+      ],
+      "component": "",
+      "source_shape": ""
+    },
+    {
+      "kind": "suspect_multi_value",
+      "severity": "error",
+      "message": "<https://growgraph.dev/doc/05dcb67f77c3/pm_200_validation> points at 2 objects via <http://www.ontologyrepository.com/CommonCoreOntologies/has_input>, which is single-valued for every other subject in this graph.",
+      "subject": "https://growgraph.dev/doc/05dcb67f77c3/pm_200_validation",
+      "predicate": "http://www.ontologyrepository.com/CommonCoreOntologies/has_input",
+      "values": [
+        "https://growgraph.dev/doc/05dcb67f77c3/pm_200_data",
+        "https://growgraph.dev/doc/05dcb67f77c3/pm_200_results"
+      ],
+      "component": "",
+      "source_shape": ""
+    },
+    {
+      "kind": "functional_violation",
+      "severity": "error",
+      "message": "<https://growgraph.dev/doc/05dcb67f77c3/test_case_1> holds 3 distinct values for <http://www.ontologyrepository.com/CommonCoreOntologies/is_about>, which the schema constrains to at most one.",
+      "subject": "https://growgraph.dev/doc/05dcb67f77c3/test_case_1",
+      "predicate": "http://www.ontologyrepository.com/CommonCoreOntologies/is_about",
+      "values": [
+        "https://growgraph.dev/doc/05dcb67f77c3/dataset_1",
+        "https://growgraph.dev/doc/05dcb67f77c3/nexaStack_1",
+        "https://growgraph.dev/doc/05dcb67f77c3/operation_1"
+      ],
+      "component": "",
+      "source_shape": ""
+    },
+    {
+      "kind": "functional_violation",
+      "severity": "error",
+      "message": "<https://growgraph.dev/doc/05dcb67f77c3/test_case_2> holds 3 distinct values for <http://www.ontologyrepository.com/CommonCoreOntologies/is_about>, which the schema constrains to at most one.",
+      "subject": "https://growgraph.dev/doc/05dcb67f77c3/test_case_2",
+      "predicate": "http://www.ontologyrepository.com/CommonCoreOntologies/is_about",
+      "values": [
+        "https://growgraph.dev/doc/05dcb67f77c3/dataset_2",
+        "https://growgraph.dev/doc/05dcb67f77c3/nexaStack_1",
+        "https://growgraph.dev/doc/05dcb67f77c3/operation_2"
+      ],
+      "component": "",
+      "source_shape": ""
+    },
+    {
+      "kind": "suspect_multi_value",
+      "severity": "error",
+      "message": "<https://growgraph.dev/doc/05dcb67f77c3/test_case_2> carries 2 mutually irreconcilable string values on <http://www.w3.org/2000/01/rdf-schema#label>, which is single-valued for a dominant majority of other subjects \u2014 the signature of distinct entities collapsed into one node.",
+      "subject": "https://growgraph.dev/doc/05dcb67f77c3/test_case_2",
+      "predicate": "http://www.w3.org/2000/01/rdf-schema#label",
+      "values": [
+        "case study 2",
+        "test case 2"
+      ],
+      "component": "",
+      "source_shape": ""
+    },
+    {
+      "kind": "functional_violation",
+      "severity": "error",
+      "message": "<https://growgraph.dev/doc/05dcb67f77c3/test_case_3> holds 3 distinct values for <http://www.ontologyrepository.com/CommonCoreOntologies/is_about>, which the schema constrains to at most one.",
+      "subject": "https://growgraph.dev/doc/05dcb67f77c3/test_case_3",
+      "predicate": "http://www.ontologyrepository.com/CommonCoreOntologies/is_about",
+      "values": [
+        "https://growgraph.dev/doc/05dcb67f77c3/dataset_3",
+        "https://growgraph.dev/doc/05dcb67f77c3/nexaStack_1",
+        "https://growgraph.dev/doc/05dcb67f77c3/operation_3"
+      ],
+      "component": "",
+      "source_shape": ""
+    },
+    {
+      "kind": "functional_violation",
+      "severity": "error",
+      "message": "<https://growgraph.dev/doc/05dcb67f77c3/test_case_4> holds 3 distinct values for <http://www.ontologyrepository.com/CommonCoreOntologies/is_about>, which the schema constrains to at most one.",
+      "subject": "https://growgraph.dev/doc/05dcb67f77c3/test_case_4",
+      "predicate": "http://www.ontologyrepository.com/CommonCoreOntologies/is_about",
+      "values": [
+        "https://growgraph.dev/doc/05dcb67f77c3/dataset_4",
+        "https://growgraph.dev/doc/05dcb67f77c3/nexaStack_1",
+        "https://growgraph.dev/doc/05dcb67f77c3/operation_4"
+      ],
+      "component": "",
+      "source_shape": ""
+    },
+    {
+      "kind": "functional_violation",
+      "severity": "error",
+      "message": "<https://growgraph.dev/doc/05dcb67f77c3/test_case_5> holds 3 distinct values for <http://www.ontologyrepository.com/CommonCoreOntologies/is_about>, which the schema constrains to at most one.",
+      "subject": "https://growgraph.dev/doc/05dcb67f77c3/test_case_5",
+      "predicate": "http://www.ontologyrepository.com/CommonCoreOntologies/is_about",
+      "values": [
+        "https://growgraph.dev/doc/05dcb67f77c3/dataset_5",
+        "https://growgraph.dev/doc/05dcb67f77c3/operation_5",
+        "https://growgraph.dev/doc/05dcb67f77c3/pm_200_stack_2"
+      ],
+      "component": "",
+      "source_shape": ""
+    },
+    {
+      "kind": "functional_violation",
+      "severity": "error",
+      "message": "<https://growgraph.dev/doc/05dcb67f77c3/voltageDegradation_2> holds 12 distinct values for <http://www.ontologyrepository.com/CommonCoreOntologies/is_about>, which the schema constrains to at most one.",
+      "subject": "https://growgraph.dev/doc/05dcb67f77c3/voltageDegradation_2",
+      "predicate": "http://www.ontologyrepository.com/CommonCoreOntologies/is_about",
+      "values": [
+        "https://growgraph.dev/doc/05dcb67f77c3/nexaStack_2",
+        "https://growgraph.dev/doc/05dcb67f77c3/nexa_12a_modified_rvm_forecast",
+        "https://growgraph.dev/doc/05dcb67f77c3/nexa_12a_svm_forecast",
+        "https://growgraph.dev/doc/05dcb67f77c3/nexa_30a_modified_rvm_forecast",
+        "https://growgraph.dev/doc/05dcb67f77c3/nexa_30a_svm_forecast",
+        "https://growgraph.dev/doc/05dcb67f77c3/nexa_36a_modified_rvm_forecast",
+        "https://growgraph.dev/doc/05dcb67f77c3/nexa_36a_svm_forecast",
+        "https://growgraph.dev/doc/05dcb67f77c3/nexa_44a_modified_rvm_forecast",
+        "https://growgraph.dev/doc/05dcb67f77c3/nexa_44a_svm_forecast",
+        "https://growgraph.dev/doc/05dcb67f77c3/pm_200_modified_rvm_forecast",
+        "https://growgraph.dev/doc/05dcb67f77c3/pm_200_stack_4",
+        "https://growgraph.dev/doc/05dcb67f77c3/pm_200_svm_forecast"
+      ],
+      "component": "",
+      "source_shape": ""
+    },
+    {
+      "kind": "non_catalog_vocabulary",
+      "severity": "warning",
+      "message": "<http://qudt.org/schema/qudt/QuantityValue> is used by 2 subject(s) but was absent from the ontology context \u2014 the renderer took the configured fallback vocabulary, which points at a retrieval miss rather than a modeling choice.",
+      "subject": "https://growgraph.dev/doc/05dcb67f77c3/multiStepPredictionTime",
+      "predicate": "http://qudt.org/schema/qudt/QuantityValue",
+      "values": [
+        "https://growgraph.dev/doc/05dcb67f77c3/multiStepPredictionTime",
+        "https://growgraph.dev/doc/05dcb67f77c3/singleStepPredictionTime"
+      ],
+      "component": "",
+      "source_shape": ""
+    },
+    {
+      "kind": "non_catalog_vocabulary",
+      "severity": "warning",
+      "message": "<http://qudt.org/schema/qudt/numericValue> is used by 4 subject(s) but was absent from the ontology context \u2014 the renderer took the configured fallback vocabulary, which points at a retrieval miss rather than a modeling choice.",
+      "subject": "https://growgraph.dev/doc/05dcb67f77c3/errorReductionRange",
+      "predicate": "http://qudt.org/schema/qudt/numericValue",
+      "values": [
+        "https://growgraph.dev/doc/05dcb67f77c3/errorReductionRange",
+        "https://growgraph.dev/doc/05dcb67f77c3/forecastTime",
+        "https://growgraph.dev/doc/05dcb67f77c3/multiStepPredictionTime",
+        "https://growgraph.dev/doc/05dcb67f77c3/singleStepPredictionTime"
+      ],
+      "component": "",
+      "source_shape": ""
+    },
+    {
+      "kind": "non_catalog_vocabulary",
+      "severity": "warning",
+      "message": "<http://qudt.org/schema/qudt/unit> is used by 3 subject(s) but was absent from the ontology context \u2014 the renderer took the configured fallback vocabulary, which points at a retrieval miss rather than a modeling choice.",
+      "subject": "https://growgraph.dev/doc/05dcb67f77c3/forecastTime",
+      "predicate": "http://qudt.org/schema/qudt/unit",
+      "values": [
+        "https://growgraph.dev/doc/05dcb67f77c3/forecastTime",
+        "https://growgraph.dev/doc/05dcb67f77c3/multiStepPredictionTime",
+        "https://growgraph.dev/doc/05dcb67f77c3/singleStepPredictionTime"
+      ],
+      "component": "",
+      "source_shape": ""
+    },
+    {
+      "kind": "non_catalog_vocabulary",
+      "severity": "warning",
+      "message": "<https://growgraph.dev/ontology/opmad/has_text_value> is used by 1 subject(s) but was absent from the ontology context \u2014 the renderer fell back to outside vocabulary, which points at a retrieval miss rather than a modeling choice.",
+      "subject": "https://growgraph.dev/doc/05dcb67f77c3/originalRvmType",
+      "predicate": "https://growgraph.dev/ontology/opmad/has_text_value",
+      "values": [
+        "https://growgraph.dev/doc/05dcb67f77c3/originalRvmType"
+      ],
+      "component": "",
+      "source_shape": ""
+    },
+    {
+      "kind": "non_catalog_vocabulary",
+      "severity": "warning",
+      "message": "<https://w3id.org/opmad#has_text_value> is used by 4 subject(s) but was absent from the ontology context \u2014 the renderer fell back to outside vocabulary, which points at a retrieval miss rather than a modeling choice.",
+      "subject": "https://growgraph.dev/doc/05dcb67f77c3/degradationNonlinearity",
+      "predicate": "https://w3id.org/opmad#has_text_value",
+      "values": [
+        "https://growgraph.dev/doc/05dcb67f77c3/degradationNonlinearity",
+        "https://growgraph.dev/doc/05dcb67f77c3/forecastComparison",
+        "https://growgraph.dev/doc/05dcb67f77c3/nexa_36a_comparison",
+        "https://growgraph.dev/doc/05dcb67f77c3/predictionTimeRange"
+      ],
+      "component": "",
+      "source_shape": ""
+    },
+    {
+      "kind": "non_catalog_vocabulary",
+      "severity": "warning",
+      "message": "<https://w3id.org/opmad/has_text_value> is used by 8 subject(s) but was absent from the ontology context \u2014 the renderer fell back to outside vocabulary, which points at a retrieval miss rather than a modeling choice.",
+      "subject": "https://growgraph.dev/doc/05dcb67f77c3/ampereUnit",
+      "predicate": "https://w3id.org/opmad/has_text_value",
+      "values": [
+        "https://growgraph.dev/doc/05dcb67f77c3/ampereUnit",
+        "https://growgraph.dev/doc/05dcb67f77c3/datasetNonlinearityComparison",
+        "https://growgraph.dev/doc/05dcb67f77c3/kilowattUnit",
+        "https://growgraph.dev/doc/05dcb67f77c3/mapeConsistencyAssessment",
+        "https://growgraph.dev/doc/05dcb67f77c3/nexa_12a_r2_method_comparison",
+        "https://growgraph.dev/doc/05dcb67f77c3/percentUnit",
+        "https://growgraph.dev/doc/05dcb67f77c3/svmEarlyPredictionAssessment",
+        "https://growgraph.dev/doc/05dcb67f77c3/trainingDataComparison"
+      ],
+      "component": "",
+      "source_shape": ""
+    }
+  ],
+  "unit_repairs": {
+    "0": [
+      {
+        "kind": "critic_fix",
+        "source": "ids=[41, 42, 49, 52]",
+        "target": "@prefix cd: <https://growgraph.dev/facts/> . @prefix ns2: <http://purl.obolibrary.org/obo/> . @prefix ns1: <http://www.ontologyrepository.com/CommonCoreOntologies/> . cd:paper ns1:is_mentioned_by cd:case_1, cd:case_2 . cd:pemfc_stack_1 ns2:RO_0000056 cd:aging_1 . cd:pemfc_stack_2 ns2:RO_0000056 cd:aging_2 .",
+        "triple_count": 1
+      },
+      {
+        "kind": "critic_fix",
+        "source": "ids=[14, 19]",
+        "target": "@prefix cd: <https://growgraph.dev/facts/> . @prefix ns1: <http://www.ontologyrepository.com/CommonCoreOntologies/> . cd:aging_data_1 ns1:describes cd:aging_1 . cd:aging_data_2 ns1:describes cd:aging_2 .",
+        "triple_count": 1
+      },
+      {
+        "kind": "critic_fix",
+        "source": "",
+        "target": "@prefix cd: <https://growgraph.dev/facts/> . @prefix ns1: <http://www.ontologyrepository.com/CommonCoreOntologies/> . cd:case_1 ns1:is_about cd:aging_1 . cd:case_2 ns1:is_about cd:aging_2 .",
+        "triple_count": 1
+      },
+      {
+        "kind": "critic_fix",
+        "source": "",
+        "target": "@prefix cd: <https://growgraph.dev/facts/> . @prefix ns1: <http://www.ontologyrepository.com/CommonCoreOntologies/> . cd:validation_1 a ns1:ActOfMeasuring ; ns1:has_input cd:aging_data_1 ; ns1:has_object cd:self_adaptive_rvm ; rdfs:label \"experimental validation using first PEMFC stack aging data\" . cd:validation_2 a ns1:ActOfMeasuring ; ns1:has_input cd:aging_data_2 ; ns1:has_object cd:self_adaptive_rvm ; rdfs:label \"experimental validation using second PEMFC stack aging data\" .",
+        "triple_count": 1
+      },
+      {
+        "kind": "critic_fix",
+        "source": "",
+        "target": "@prefix cd: <https://growgraph.dev/facts/> . @prefix ns1: <http://www.ontologyrepository.com/CommonCoreOntologies/> . @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> . cd:method_comparison a ns1:ActOfAppraisal ; ns1:has_object cd:self_adaptive_rvm, cd:classic_svm, cd:original_rvm ; rdfs:label \"comparison of proposed and baseline prediction results\" .",
+        "triple_count": 1
+      },
+      {
+        "kind": "critic_fix",
+        "source": "",
+        "target": "@prefix cd: <https://growgraph.dev/facts/> . @prefix ns1: <http://www.ontologyrepository.com/CommonCoreOntologies/> . @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> . cd:horizon_comparison a ns1:ActOfAppraisal ; ns1:has_object cd:single_step_forecast, cd:multiple_step_forecast ; rdfs:label \"comparison of single-step-ahead and multiple-step-ahead predictions\" .",
+        "triple_count": 1
+      }
+    ],
+    "1": [
+      {
+        "kind": "critic_fix",
+        "source": "ids=[3, 38]",
+        "target": "@prefix cd: <https://growgraph.dev/facts/> . @prefix ns1: <http://www.ontologyrepository.com/CommonCoreOntologies/> . cd:classic_svm ns1:described_by cd:performance_comparison . cd:original_rvm ns1:described_by cd:performance_comparison . cd:modified_rvm ns1:described_by cd:performance_comparison .",
+        "triple_count": 1
+      },
+      {
+        "kind": "critic_fix",
+        "source": "",
+        "target": "@prefix cd: <https://growgraph.dev/facts/> . @prefix opmad: <https://growgraph.dev/ontology/opmad/> . cd:original_rvm_type a opmad:Model_type ; opmad:has_text_value \"original relevance vector machine\" . cd:original_rvm opmad:type_described_by cd:original_rvm_type .",
+        "triple_count": 1
+      },
+      {
+        "kind": "critic_fix",
+        "source": "ids=[2, 9, 37]",
+        "target": "@prefix cd: <https://growgraph.dev/facts/> . @prefix opmad: <https://growgraph.dev/ontology/opmad/> . cd:classic_svm opmad:type_described_by cd:svm_type . cd:modified_rvm opmad:type_described_by cd:modified_rvm_type . cd:original_rvm opmad:type_described_by cd:modified_rvm_type .",
+        "triple_count": 1
+      },
+      {
+        "kind": "critic_fix",
+        "source": "",
+        "target": "@prefix cd: <https://growgraph.dev/facts/> . @prefix opmad: <https://growgraph.dev/ontology/opmad/> . cd:nexa_forecast_function a opmad:Future_state_forecast ; opmad:function_uses_model cd:modified_rvm . cd:pm_200_forecast_function a opmad:Future_state_forecast ; opmad:function_uses_model cd:modified_rvm .",
+        "triple_count": 1
+      },
+      {
+        "kind": "critic_fix",
+        "source": "",
+        "target": "@prefix cd: <https://growgraph.dev/facts/> . @prefix ns2: <http://purl.obolibrary.org/obo/> . cd:nexa_forecast_function ns2:BFO_0000054 cd:nexa_forecast . cd:pm_200_forecast_function ns2:BFO_0000054 cd:pm_200_forecast .",
+        "triple_count": 1
+      },
+      {
+        "kind": "critic_fix",
+        "source": "",
+        "target": "@prefix cd: <https://growgraph.dev/facts/> . @prefix ns2: <http://purl.obolibrary.org/obo/> . @prefix ns1: <http://www.ontologyrepository.com/CommonCoreOntologies/> . cd:multistep_prediction_act a ns1:ActOfPrediction . cd:multistep_predictions ns2:BFO_0000054 cd:multistep_prediction_act . cd:paper ns2:RO_0010002 cd:multistep_comparison . cd:multistep_comparison a ns1:DescriptiveInformationContentEntity ; ns1:describes cd:multistep_prediction_act .",
+        "triple_count": 1
+      },
+      {
+        "kind": "critic_fix",
+        "source": "",
+        "target": "@prefix cd: <https://growgraph.dev/facts/> . @prefix ns1: <http://www.ontologyrepository.com/CommonCoreOntologies/> . cd:paper ns1:uses cd:modified_rvm . cd:paper ns1:uses cd:classic_svm . cd:paper ns1:uses cd:original_rvm .",
+        "triple_count": 1
+      }
+    ],
+    "2": [
+      {
+        "kind": "critic_fix",
+        "source": "ids=[15]",
+        "target": "@prefix cd: <https://growgraph.dev/facts/> . @prefix ns1: <http://www.ontologyrepository.com/CommonCoreOntologies/> . cd:operation_duration a ns1:InformationBearingEntity ; ns1:uses_measurement_unit ns1:HourMeasurementUnit .",
+        "triple_count": 1
+      },
+      {
+        "kind": "critic_fix",
+        "source": "ids=[24]",
+        "target": "@prefix cd: <https://growgraph.dev/facts/> . @prefix ns1: <http://www.ontologyrepository.com/CommonCoreOntologies/> . cd:rated_power a ns1:InformationBearingEntity ; ns1:uses_measurement_unit cd:kilowatt .",
+        "triple_count": 1
+      },
+      {
+        "kind": "critic_fix",
+        "source": "ids=[18]",
+        "target": "@prefix cd: <https://growgraph.dev/facts/> . @prefix ns1: <http://www.ontologyrepository.com/CommonCoreOntologies/> . cd:pm_200_stack a ns1:Artifact .",
+        "triple_count": 1
+      },
+      {
+        "kind": "critic_fix",
+        "source": "ids=[11]",
+        "target": "@prefix cd: <https://growgraph.dev/facts/> . @prefix ns1: <http://www.ontologyrepository.com/CommonCoreOntologies/> . cd:load_range a ns1:IntervalMeasurementInformationContentEntity .",
+        "triple_count": 1
+      },
+      {
+        "kind": "critic_fix",
+        "source": "",
+        "target": "@prefix cd: <https://growgraph.dev/facts/> . @prefix ns2: <http://purl.obolibrary.org/obo/> . cd:pm_200_stack ns2:RO_0000056 cd:cyclic_operation .",
+        "triple_count": 1
+      },
+      {
+        "kind": "critic_fix",
+        "source": "",
+        "target": "@prefix cd: <https://growgraph.dev/facts/> . @prefix ns1: <http://www.ontologyrepository.com/CommonCoreOntologies/> . @prefix opmad: <https://w3id.org/opmad#> . cd:degradation_nonlinearity a ns1:DescriptiveInformationContentEntity ; opmad:has_text_value \"The degradation curve contains high portions of non-linearity\" ; ns1:describes cd:voltage_degradation .",
+        "triple_count": 1
+      }
+    ],
+    "4": [
+      {
+        "kind": "critic_fix",
+        "source": "",
+        "target": "@prefix cd: <https://growgraph.dev/facts/> . @prefix ns1: <http://www.ontologyrepository.com/CommonCoreOntologies/> . cd:fuel_pressure_3 a ns1:InformationBearingEntity .",
+        "triple_count": 1
+      },
+      {
+        "kind": "critic_fix",
+        "source": "",
+        "target": "@prefix cd: <https://growgraph.dev/facts/> . @prefix ns1: <http://www.ontologyrepository.com/CommonCoreOntologies/> . cd:fuel_pressure_5 a ns1:InformationBearingEntity .",
+        "triple_count": 1
+      },
+      {
+        "kind": "critic_fix",
+        "source": "",
+        "target": "@prefix cd: <https://growgraph.dev/facts/> . @prefix ns1: <http://www.ontologyrepository.com/CommonCoreOntologies/> . cd:prose_temperature_1 a ns1:InformationBearingEntity .",
+        "triple_count": 1
+      },
+      {
+        "kind": "critic_fix",
+        "source": "",
+        "target": "@prefix cd: <https://growgraph.dev/facts/> . @prefix ns1: <http://www.ontologyrepository.com/CommonCoreOntologies/> . cd:prose_temperature_2 a ns1:InformationBearingEntity .",
+        "triple_count": 1
+      },
+      {
+        "kind": "critic_fix",
+        "source": "",
+        "target": "@prefix cd: <https://growgraph.dev/facts/> . @prefix ns1: <http://www.ontologyrepository.com/CommonCoreOntologies/> . cd:prose_temperature_3 a ns1:InformationBearingEntity .",
+        "triple_count": 1
+      },
+      {
+        "kind": "critic_fix",
+        "source": "",
+        "target": "@prefix cd: <https://growgraph.dev/facts/> . @prefix ns1: <http://www.ontologyrepository.com/CommonCoreOntologies/> . cd:prose_temperature_4 a ns1:InformationBearingEntity .",
+        "triple_count": 1
+      },
+      {
+        "kind": "critic_fix",
+        "source": "",
+        "target": "@prefix cd: <https://growgraph.dev/facts/> . @prefix ns1: <http://www.ontologyrepository.com/CommonCoreOntologies/> . cd:table_temperature_1 a ns1:InformationBearingEntity .",
+        "triple_count": 1
+      },
+      {
+        "kind": "critic_fix",
+        "source": "",
+        "target": "@prefix cd: <https://growgraph.dev/facts/> . @prefix ns1: <http://www.ontologyrepository.com/CommonCoreOntologies/> . cd:table_temperature_2 a ns1:InformationBearingEntity .",
+        "triple_count": 1
+      },
+      {
+        "kind": "critic_fix",
+        "source": "",
+        "target": "@prefix cd: <https://growgraph.dev/facts/> . @prefix ns1: <http://www.ontologyrepository.com/CommonCoreOntologies/> . cd:table_temperature_3 a ns1:InformationBearingEntity .",
+        "triple_count": 1
+      },
+      {
+        "kind": "critic_fix",
+        "source": "",
+        "target": "@prefix cd: <https://growgraph.dev/facts/> . @prefix ns1: <http://www.ontologyrepository.com/CommonCoreOntologies/> . cd:table_temperature_4 a ns1:InformationBearingEntity .",
+        "triple_count": 1
+      },
+      {
+        "kind": "critic_fix",
+        "source": "",
+        "target": "@prefix cd: <https://growgraph.dev/facts/> . @prefix ns1: <http://www.ontologyrepository.com/CommonCoreOntologies/> . cd:table_temperature_5 a ns1:InformationBearingEntity .",
+        "triple_count": 1
+      },
+      {
+        "kind": "critic_fix",
+        "source": "",
+        "target": "@prefix cd: <https://growgraph.dev/facts/> . @prefix ns1: <http://www.ontologyrepository.com/CommonCoreOntologies/> . cd:case_study_1 ns1:is_about cd:dataset_1, cd:dataset_2, cd:dataset_3, cd:dataset_4 . cd:case_study_2 ns1:is_about cd:dataset_5 .",
+        "triple_count": 1
+      },
+      {
+        "kind": "critic_fix",
+        "source": "ids=[82, 92, 102, 112, 122]",
+        "target": "@prefix cd: <https://growgraph.dev/facts/> . @prefix ns1: <http://www.ontologyrepository.com/CommonCoreOntologies/> . cd:output_voltage ns1:is_about cd:nexa_stack, cd:pm_200_stack . cd:dataset_1 ns1:described_by cd:output_voltage . cd:dataset_2 ns1:described_by cd:output_voltage . cd:dataset_3 ns1:described_by cd:output_voltage . cd:dataset_4 ns1:described_by cd:output_voltage . cd:dataset_5 ns1:described_by cd:output_voltage .",
+        "triple_count": 1
+      },
+      {
+        "kind": "critic_fix",
+        "source": "ids=[83, 93, 103, 113, 123]",
+        "target": "@prefix cd: <https://growgraph.dev/facts/> . @prefix ns1: <http://www.ontologyrepository.com/CommonCoreOntologies/> . cd:rvm_model ns1:uses cd:dataset_1, cd:dataset_2, cd:dataset_3, cd:dataset_4, cd:dataset_5 .",
+        "triple_count": 1
+      },
+      {
+        "kind": "critic_fix",
+        "source": "",
+        "target": "@prefix cd: <https://growgraph.dev/facts/> . @prefix ns1: <http://www.ontologyrepository.com/CommonCoreOntologies/> . cd:voltage_degradation a ns1:DecreaseOfQuality ; ns1:affects cd:nexa_stack, cd:pm_200_stack . cd:output_voltage ns1:is_about cd:voltage_degradation . cd:one_step_prediction ns1:is_subject_of cd:output_voltage .",
+        "triple_count": 1
+      },
+      {
+        "kind": "critic_fix",
+        "source": "",
+        "target": "@prefix cd: <https://growgraph.dev/facts/> . @prefix opmad: <https://w3id.org/opmad#> . cd:one_step_prediction opmad:function_uses_model cd:dynamic_training_algorithm .",
+        "triple_count": 1
+      },
+      {
+        "kind": "critic_fix",
+        "source": "ids=[85, 86, 87, 95, 96, 97, 105, 106, 107, 115, 116, 117, 125, 126, 127]",
+        "target": "@prefix cd: <https://growgraph.dev/facts/> . @prefix ns1: <http://www.ontologyrepository.com/CommonCoreOntologies/> . @prefix opmad: <https://w3id.org/opmad#> . @prefix xsd: <http://www.w3.org/2001/XMLSchema#> . cd:dataset_1_count a ns1:CountMeasurementInformationContentEntity ; ns1:is_a_measurement_of cd:dataset_1 ; opmad:has_interger_value \"100\"^^xsd:integer . cd:dataset_2_count a ns1:CountMeasurementInformationContentEntity ; ns1:is_a_measurement_of cd:dataset_2 ; opmad:has_interger_value \"100\"^^xsd:integer . cd:dataset_3_count a ns1:CountMeasurementInformationContentEntity ; ns1:is_a_measurement_of cd:dataset_3 ; opmad:has_interger_value \"100\"^^xsd:integer . cd:dataset_4_count a ns1:CountMeasurementInformationContentEntity ; ns1:is_a_measurement_of cd:dataset_4 ; opmad:has_interger_value \"100\"^^xsd:integer . cd:dataset_5_count a ns1:CountMeasurementInformationContentEntity ; ns1:is_a_measurement_of cd:dataset_5 ; opmad:has_interger_value \"100\"^^xsd:integer .",
+        "triple_count": 1
+      },
+      {
+        "kind": "critic_fix",
+        "source": "ids=[72, 73, 74, 75]",
+        "target": "@prefix cd: <https://growgraph.dev/facts/> . @prefix ns1: <http://www.ontologyrepository.com/CommonCoreOntologies/> . @prefix opmad: <https://w3id.org/opmad#> . @prefix xsd: <http://www.w3.org/2001/XMLSchema#> . cd:current_density_5 a ns1:DataRangeIntervalEstimateInformationContentEntity ; ns1:describes cd:operation_5 ; ns2:BFO_0000051 cd:current_density_5_lower, cd:current_density_5_upper . cd:current_density_5_lower a ns1:RatioMeasurementInformationContentEntity ; opmad:has_double_value \"0.30\"^^xsd:double ; rdfs:label \"lower endpoint 0.30 A/cm\u00b2\" . cd:current_density_5_upper a ns1:RatioMeasurementInformationContentEntity ; opmad:has_double_value \"0.97\"^^xsd:double ; rdfs:label \"upper endpoint 0.97 A/cm\u00b2\" .",
+        "triple_count": 1
+      },
+      {
+        "kind": "critic_fix",
+        "source": "ids=[130, 131, 132, 133, 134, 137, 138, 139, 140, 141, 144, 145, 146, 147, 148, 151, 152, 153, 154, 155, 158, 159, 160, 161, 162]",
+        "target": "@prefix cd: <https://growgraph.dev/facts/> . @prefix ns1: <http://www.ontologyrepository.com/CommonCoreOntologies/> . @prefix ns2: <http://purl.obolibrary.org/obo/> . @prefix opmad: <https://w3id.org/opmad#> . @prefix xsd: <http://www.w3.org/2001/XMLSchema#> . cd:duration_1 a ns1:DataRangeIntervalEstimateInformationContentEntity ; ns1:describes cd:operation_1 ; ns2:BFO_0000051 cd:duration_lower, cd:duration_upper . cd:duration_2 a ns1:DataRangeIntervalEstimateInformationContentEntity ; ns1:describes cd:operation_2 ; ns2:BFO_0000051 cd:duration_lower, cd:duration_upper . cd:duration_3 a ns1:DataRangeIntervalEstimateInformationContentEntity ; ns1:describes cd:operation_3 ; ns2:BFO_0000051 cd:duration_lower, cd:duration_upper . cd:duration_4 a ns1:DataRangeIntervalEstimateInformationContentEntity ; ns1:describes cd:operation_4 ; ns2:BFO_0000051 cd:duration_lower, cd:duration_upper . cd:duration_5 a ns1:DataRangeIntervalEstimateInformationContentEntity ; ns1:describes cd:operation_5 ; ns2:BFO_0000051 cd:duration_lower, cd:duration_upper . cd:duration_lower a ns1:RatioMeasurementInformationContentEntity, ns1:InformationBearingEntity ; opmad:has_interger_value \"400\"^^xsd:integer ; ns1:uses_measurement_unit ns1:HourMeasurementUnit ; rdfs:label \"approximate lower endpoint\" . cd:duration_upper a ns1:RatioMeasurementInformationContentEntity, ns1:InformationBearingEntity ; opmad:has_interger_value \"450\"^^xsd:integer ; ns1:uses_measurement_unit ns1:HourMeasurementUnit ; rdfs:label \"approximate upper endpoint\" .",
+        "triple_count": 1
+      },
+      {
+        "kind": "critic_fix",
+        "source": "ids=[438, 439, 440, 443, 444, 445, 446]",
+        "target": "@prefix cd: <https://growgraph.dev/facts/> . @prefix ns1: <http://www.ontologyrepository.com/CommonCoreOntologies/> . @prefix opmad: <https://w3id.org/opmad#> . @prefix xsd: <http://www.w3.org/2001/XMLSchema#> . cd:training_data_limit a ns1:MaximumOrdinalMeasurementInformationContentEntity ; ns1:describes cd:dynamic_training_algorithm ; opmad:has_interger_value \"100\"^^xsd:integer . cd:training_time a ns1:RatioMeasurementInformationContentEntity, ns1:InformationBearingEntity ; ns1:describes cd:dynamic_training_algorithm ; opmad:has_interger_value \"1\"^^xsd:integer ; ns1:uses_measurement_unit ns1:SecondMeasurementUnit .",
+        "triple_count": 1
+      }
+    ],
+    "5": [
+      {
+        "kind": "critic_fix",
+        "source": "ids=[15]",
+        "target": "@prefix cd: <https://growgraph.dev/facts/> . @prefix ns1: <http://www.ontologyrepository.com/CommonCoreOntologies/> . cd:fuel_cell_aging_test_time_range a ns1:InformationBearingEntity ; ns1:uses_measurement_unit ns1:HourMeasurementUnit .",
+        "triple_count": 1
+      },
+      {
+        "kind": "critic_fix",
+        "source": "ids=[26]",
+        "target": "@prefix cd: <https://growgraph.dev/facts/> . @prefix ns1: <http://www.ontologyrepository.com/CommonCoreOntologies/> . cd:kernel_candidate_count ns1:is_a_ratio_measurement_of cd:kernel_width_candidates .",
+        "triple_count": 1
+      },
+      {
+        "kind": "critic_fix",
+        "source": "ids=[28]",
+        "target": "@prefix cd: <https://growgraph.dev/facts/> . @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> . cd:kernel_width_candidates rdfs:label \"adaptive kernel width candidate values\" .",
+        "triple_count": 1
+      },
+      {
+        "kind": "critic_fix",
+        "source": "ids=[44]",
+        "target": "@prefix cd: <https://growgraph.dev/facts/> . @prefix ns1: <http://www.ontologyrepository.com/CommonCoreOntologies/> . cd:prediction_confidence_interval ns1:describes cd:modified_rvm .",
+        "triple_count": 1
+      },
+      {
+        "kind": "critic_fix",
+        "source": "",
+        "target": "@prefix cd: <https://growgraph.dev/facts/> . @prefix ns1: <http://www.ontologyrepository.com/CommonCoreOntologies/> . @prefix ns2: <http://purl.obolibrary.org/obo/> . @prefix opmad: <https://w3id.org/opmad#> . cd:fuel_cell_aging_test ns2:RO_0000057 cd:voltage_degradation_feature . cd:modified_rvm ns1:is_about cd:voltage_degradation_feature . cd:regression_function a opmad:Regression ; ns2:RO_0000079 cd:regression_module . cd:regression_module a opmad:Predictive_maintenance_system_module ; opmad:function_uses_model cd:modified_rvm .",
+        "triple_count": 1
+      },
+      {
+        "kind": "critic_fix",
+        "source": "",
+        "target": "@prefix cd: <https://growgraph.dev/facts/> . @prefix ns2: <http://purl.obolibrary.org/obo/> . cd:modified_design_matrix ns2:BFO_0000051 cd:gaussian_kernel .",
+        "triple_count": 1
+      },
+      {
+        "kind": "critic_fix",
+        "source": "",
+        "target": "@prefix cd: <https://growgraph.dev/facts/> . @prefix ns1: <http://www.ontologyrepository.com/CommonCoreOntologies/> . @prefix opmad: <https://w3id.org/opmad#> . @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> . cd:modified_weight_vector a opmad:Model_configuration ; rdfs:label \"modified weight vector w with s added weights\" . cd:modified_hyperparameters a opmad:Model_configuration ; rdfs:label \"hyperparameters including s additional alpha parameters\" . cd:modified_rvm opmad:configuration_described_by cd:modified_weight_vector, cd:modified_hyperparameters . cd:modified_weight_vector ns1:is_about cd:linear_columns .",
+        "triple_count": 1
+      },
+      {
+        "kind": "critic_fix",
+        "source": "",
+        "target": "@prefix cd: <https://growgraph.dev/facts/> . @prefix ns1: <http://www.ontologyrepository.com/CommonCoreOntologies/> . @prefix opmad: <https://w3id.org/opmad#> . @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> . cd:time_normalization a opmad:Model_configuration ; rdfs:label \"proportional normalization of fuel-cell aging time points\" ; ns1:is_about cd:time_points ; ns1:described_by cd:normalized_time_range . cd:modified_rvm opmad:configuration_described_by cd:time_normalization .",
+        "triple_count": 1
+      },
+      {
+        "kind": "critic_fix",
+        "source": "ids=[42, 43]",
+        "target": "@prefix cd: <https://growgraph.dev/facts/> . @prefix opmad: <https://w3id.org/opmad#> . cd:modified_rvm opmad:configuration_described_by cd:adaptive_kernel, cd:modified_design_matrix .",
+        "triple_count": 1
+      }
+    ],
+    "6": [
+      {
+        "kind": "critic_fix",
+        "source": "",
+        "target": "@prefix cd: <https://growgraph.dev/facts/> . @prefix ns1: <http://www.ontologyrepository.com/CommonCoreOntologies/> . @prefix opmad: <https://growgraph.dev/ontology/opmad/> . cd:test_cases a opmad:Predictive_maintenance_case ; ns1:is_subject_of cd:modified_rvm .",
+        "triple_count": 1
+      },
+      {
+        "kind": "critic_fix",
+        "source": "",
+        "target": "@prefix cd: <https://growgraph.dev/facts/> . @prefix ns1: <http://www.ontologyrepository.com/CommonCoreOntologies/> . cd:single_step_results a ns1:DescriptiveInformationContentEntity ; ns1:is_output_of cd:single_step_prediction .",
+        "triple_count": 1
+      }
+    ],
+    "7": [
+      {
+        "kind": "critic_fix",
+        "source": "ids=[6]",
+        "target": "@prefix cd: <https://growgraph.dev/facts/> . @prefix ns1: <http://www.ontologyrepository.com/CommonCoreOntologies/> . cd:ballard_nexa_stack a ns1:ElectricalPowerSource .",
+        "triple_count": 1
+      },
+      {
+        "kind": "critic_fix",
+        "source": "ids=[435]",
+        "target": "@prefix cd: <https://growgraph.dev/facts/> . @prefix ns1: <http://www.ontologyrepository.com/CommonCoreOntologies/> . cd:pm_200_stack a ns1:ElectricalPowerSource .",
+        "triple_count": 1
+      },
+      {
+        "kind": "critic_fix",
+        "source": "ids=[109, 195, 281, 367, 413]",
+        "target": "@prefix cd: <https://growgraph.dev/facts/> . @prefix ns1: <http://www.ontologyrepository.com/CommonCoreOntologies/> . cd:nexa_12_a_training a ns1:IntentionalAct . cd:nexa_30_a_training a ns1:IntentionalAct . cd:nexa_36_a_training a ns1:IntentionalAct . cd:nexa_44_a_training a ns1:IntentionalAct . cd:pm_200_model_training a ns1:IntentionalAct .",
+        "triple_count": 1
+      },
+      {
+        "kind": "critic_fix",
+        "source": "ids=[111, 197, 283, 369, 415]",
+        "target": "@prefix cd: <https://growgraph.dev/facts/> . @prefix ns1: <http://www.ontologyrepository.com/CommonCoreOntologies/> . cd:nexa_12_a_training ns1:has_object cd:modified_rvm_model . cd:nexa_30_a_training ns1:has_object cd:modified_rvm_model . cd:nexa_36_a_training ns1:has_object cd:modified_rvm_model . cd:nexa_44_a_training ns1:has_object cd:modified_rvm_model . cd:pm_200_model_training ns1:has_object cd:modified_rvm_model .",
+        "triple_count": 1
+      },
+      {
+        "kind": "critic_fix",
+        "source": "ids=[80, 166, 252, 338]",
+        "target": "@prefix cd: <https://growgraph.dev/facts/> . @prefix ns1: <http://www.ontologyrepository.com/CommonCoreOntologies/> . cd:nexa_12_a_operation ns1:is_measured_by_interval cd:nexa_12_a_temperature . cd:nexa_30_a_operation ns1:is_measured_by_interval cd:nexa_30_a_temperature . cd:nexa_36_a_operation ns1:is_measured_by_interval cd:nexa_36_a_temperature . cd:nexa_44_a_operation ns1:is_measured_by_interval cd:nexa_44_a_temperature .",
+        "triple_count": 1
+      },
+      {
+        "kind": "critic_fix",
+        "source": "ids=[79, 165, 251, 337]",
+        "target": "@prefix cd: <https://growgraph.dev/facts/> . @prefix ns1: <http://www.ontologyrepository.com/CommonCoreOntologies/> . cd:nexa_12_a_operation ns1:is_measured_by_ratio cd:nexa_12_a_current . cd:nexa_30_a_operation ns1:is_measured_by_ratio cd:nexa_30_a_current . cd:nexa_36_a_operation ns1:is_measured_by_ratio cd:nexa_36_a_current . cd:nexa_44_a_operation ns1:is_measured_by_ratio cd:nexa_44_a_current .",
+        "triple_count": 1
+      },
+      {
+        "kind": "critic_fix",
+        "source": "ids=[8, 438]",
+        "target": "@prefix cd: <https://growgraph.dev/facts/> . @prefix ns1: <http://www.ontologyrepository.com/CommonCoreOntologies/> . cd:ballard_nexa_stack ns1:is_measured_by_ratio cd:nexa_power_rating . cd:pm_200_stack ns1:is_measured_by_ratio cd:pm_200_power_rating .",
+        "triple_count": 1
+      },
+      {
+        "kind": "critic_fix",
+        "source": "ids=[65, 151, 237, 323, 405, 437]",
+        "target": "@prefix cd: <https://growgraph.dev/facts/> . @prefix ns1: <http://www.ontologyrepository.com/CommonCoreOntologies/> . cd:nexa_12_a_initial_points ns1:is_measured_by_ratio cd:nexa_12_a_initial_count . cd:nexa_30_a_initial_points ns1:is_measured_by_ratio cd:nexa_30_a_initial_count . cd:nexa_36_a_initial_points ns1:is_measured_by_ratio cd:nexa_36_a_initial_count . cd:nexa_44_a_initial_points ns1:is_measured_by_ratio cd:nexa_44_a_initial_count . cd:pm_200_initial_points ns1:is_measured_by_ratio cd:pm_200_initial_count . cd:pm_200_stack ns1:is_measured_by_ratio cd:pm_200_cell_count .",
+        "triple_count": 1
+      },
+      {
+        "kind": "critic_fix",
+        "source": "ids=[70, 156, 242, 328]",
+        "target": "@prefix cd: <https://growgraph.dev/facts/> . @prefix ns1: <http://www.ontologyrepository.com/CommonCoreOntologies/> . cd:nexa_12_a_interval ns1:is_measured_by_ratio cd:nexa_12_a_duration . cd:nexa_30_a_interval ns1:is_measured_by_ratio cd:nexa_30_a_duration . cd:nexa_36_a_interval ns1:is_measured_by_ratio cd:nexa_36_a_duration . cd:nexa_44_a_interval ns1:is_measured_by_ratio cd:nexa_44_a_duration .",
+        "triple_count": 1
+      },
+      {
+        "kind": "critic_fix",
+        "source": "",
+        "target": "@prefix cd: <https://growgraph.dev/facts/> . @prefix ns1: <http://www.ontologyrepository.com/CommonCoreOntologies/> . cd:pm_200_validation a ns1:ActOfAppraisal ; ns1:has_input cd:pm_200_data, cd:pm_200_results . cd:case_study_2_process ns1:has_process_part cd:pm_200_validation .",
+        "triple_count": 1
+      },
+      {
+        "kind": "critic_fix",
+        "source": "",
+        "target": "@prefix cd: <https://growgraph.dev/facts/> . @prefix ns1: <http://www.ontologyrepository.com/CommonCoreOntologies/> . cd:nexa_12_a_sampling_time ns1:describes cd:nexa_12_a_data . cd:nexa_30_a_sampling_time ns1:describes cd:nexa_30_a_data . cd:nexa_36_a_sampling_time ns1:describes cd:nexa_36_a_data . cd:nexa_44_a_sampling_time ns1:describes cd:nexa_44_a_data .",
+        "triple_count": 1
+      },
+      {
+        "kind": "critic_fix",
+        "source": "",
+        "target": "@prefix cd: <https://growgraph.dev/facts/> . @prefix ns1: <http://www.ontologyrepository.com/CommonCoreOntologies/> . cd:nexa_12_a_results ns1:is_about cd:nexa_12_a_voltage . cd:nexa_30_a_results ns1:is_about cd:nexa_30_a_voltage . cd:nexa_36_a_results ns1:is_about cd:nexa_36_a_voltage . cd:nexa_44_a_results ns1:is_about cd:nexa_44_a_voltage . cd:pm_200_results ns1:is_about cd:pm_200_voltage .",
+        "triple_count": 1
+      },
+      {
+        "kind": "critic_fix",
+        "source": "",
+        "target": "@prefix cd: <https://growgraph.dev/facts/> . @prefix ns1: <http://www.ontologyrepository.com/CommonCoreOntologies/> . cd:pm_200_prediction ns1:has_object cd:pm_200_middle_cell .",
+        "triple_count": 1
+      }
+    ],
+    "8": [
+      {
+        "kind": "critic_fix",
+        "source": "",
+        "target": "@prefix cd: <https://growgraph.dev/facts/> . @prefix ns1: <http://www.ontologyrepository.com/CommonCoreOntologies/> . cd:deviation_after_300h a ns1:InformationBearingEntity .",
+        "triple_count": 1
+      },
+      {
+        "kind": "critic_fix",
+        "source": "",
+        "target": "@prefix cd: <https://growgraph.dev/facts/> . @prefix ns1: <http://www.ontologyrepository.com/CommonCoreOntologies/> . cd:nexa_30c_temperature a ns1:InformationBearingEntity .",
+        "triple_count": 1
+      },
+      {
+        "kind": "critic_fix",
+        "source": "",
+        "target": "@prefix cd: <https://growgraph.dev/facts/> . @prefix ns1: <http://www.ontologyrepository.com/CommonCoreOntologies/> . cd:nexa_35c_temperature a ns1:InformationBearingEntity .",
+        "triple_count": 1
+      },
+      {
+        "kind": "critic_fix",
+        "source": "",
+        "target": "@prefix cd: <https://growgraph.dev/facts/> . @prefix ns1: <http://www.ontologyrepository.com/CommonCoreOntologies/> . cd:nexa_40c_temperature a ns1:InformationBearingEntity .",
+        "triple_count": 1
+      },
+      {
+        "kind": "critic_fix",
+        "source": "ids=[123, 127, 172]",
+        "target": "@prefix cd: <https://growgraph.dev/facts/> . @prefix ns1: <http://www.ontologyrepository.com/CommonCoreOntologies/> . cd:nexa_30c_temperature a ns1:IntervalMeasurementInformationContentEntity . cd:nexa_35c_temperature a ns1:IntervalMeasurementInformationContentEntity . cd:nexa_40c_temperature a ns1:IntervalMeasurementInformationContentEntity .",
+        "triple_count": 1
+      },
+      {
+        "kind": "critic_fix",
+        "source": "ids=[5, 6, 12, 13, 19, 20, 26, 27, 32, 33]",
+        "target": "@prefix cd: <https://growgraph.dev/facts/> . @prefix ns1: <http://www.ontologyrepository.com/CommonCoreOntologies/> . cd:case_nexa_12a_30c ns1:is_about cd:nexa_12a_modified_rvm_forecast, cd:nexa_12a_svm_forecast . cd:case_nexa_30a_35c ns1:is_about cd:nexa_30a_modified_rvm_forecast, cd:nexa_30a_svm_forecast . cd:case_nexa_36a_40c ns1:is_about cd:nexa_36a_modified_rvm_forecast, cd:nexa_36a_svm_forecast . cd:case_nexa_44a_40c ns1:is_about cd:nexa_44a_modified_rvm_forecast, cd:nexa_44a_svm_forecast . cd:case_pm_200_mobile ns1:is_about cd:pm_200_modified_rvm_forecast, cd:pm_200_svm_forecast .",
+        "triple_count": 1
+      },
+      {
+        "kind": "critic_fix",
+        "source": "ids=[55, 73, 93, 111, 139, 158, 184, 208, 245, 281]",
+        "target": "@prefix cd: <https://growgraph.dev/facts/> . @prefix ns1: <http://www.ontologyrepository.com/CommonCoreOntologies/> . cd:voltage_degradation ns1:is_about cd:nexa_12a_modified_rvm_forecast, cd:nexa_12a_svm_forecast, cd:nexa_30a_modified_rvm_forecast, cd:nexa_30a_svm_forecast, cd:nexa_36a_modified_rvm_forecast, cd:nexa_36a_svm_forecast, cd:nexa_44a_modified_rvm_forecast, cd:nexa_44a_svm_forecast, cd:pm_200_modified_rvm_forecast, cd:pm_200_svm_forecast .",
+        "triple_count": 1
+      },
+      {
+        "kind": "critic_fix",
+        "source": "",
+        "target": "@prefix cd: <https://growgraph.dev/facts/> . @prefix ns1: <http://www.ontologyrepository.com/CommonCoreOntologies/> . cd:voltage_degradation ns1:is_about cd:nexa_stack, cd:pm_200_stack .",
+        "triple_count": 1
+      },
+      {
+        "kind": "critic_fix",
+        "source": "",
+        "target": "@prefix cd: <https://growgraph.dev/facts/> . @prefix ns1: <http://www.ontologyrepository.com/CommonCoreOntologies/> . @prefix ns2: <http://purl.obolibrary.org/obo/> . cd:nexa_12a_prediction_module a ns1:InformationProcessingArtifact ; ns2:RO_0000085 cd:nexa_12a_modified_rvm_forecast, cd:nexa_12a_svm_forecast . cd:nexa_30a_prediction_module a ns1:InformationProcessingArtifact ; ns2:RO_0000085 cd:nexa_30a_modified_rvm_forecast, cd:nexa_30a_svm_forecast . cd:nexa_36a_prediction_module a ns1:InformationProcessingArtifact ; ns2:RO_0000085 cd:nexa_36a_modified_rvm_forecast, cd:nexa_36a_svm_forecast . cd:nexa_44a_prediction_module a ns1:InformationProcessingArtifact ; ns2:RO_0000085 cd:nexa_44a_modified_rvm_forecast, cd:nexa_44a_svm_forecast . cd:pm_200_prediction_module a ns1:InformationProcessingArtifact ; ns2:RO_0000085 cd:pm_200_modified_rvm_forecast, cd:pm_200_svm_forecast .",
+        "triple_count": 1
+      },
+      {
+        "kind": "critic_fix",
+        "source": "ids=[58, 62, 66, 76, 79, 82, 96, 100, 104, 114, 117, 120, 142, 146, 150, 161, 165, 168, 187, 191, 195, 199, 211, 215, 218, 256, 260, 264, 272, 284, 287, 290]",
+        "target": "@prefix cd: <https://growgraph.dev/facts/> . @prefix opmad: <https://w3id.org/opmad/> . @prefix ns1: <http://www.ontologyrepository.com/CommonCoreOntologies/> . cd:nexa_12a_rvm_mape a opmad:Performance_value, ns1:MeasurementInformationContentEntity . cd:nexa_12a_rvm_r_squared a opmad:Performance_value, ns1:MeasurementInformationContentEntity . cd:nexa_12a_rvm_rmse a opmad:Performance_value, ns1:MeasurementInformationContentEntity . cd:nexa_12a_svm_mape a opmad:Performance_value, ns1:MeasurementInformationContentEntity . cd:nexa_12a_svm_r_squared a opmad:Performance_value, ns1:MeasurementInformationContentEntity . cd:nexa_12a_svm_rmse a opmad:Performance_value, ns1:MeasurementInformationContentEntity . cd:nexa_30a_rvm_mape a opmad:Performance_value, ns1:MeasurementInformationContentEntity . cd:nexa_30a_rvm_r_squared a opmad:Performance_value, ns1:MeasurementInformationContentEntity . cd:nexa_30a_rvm_rmse a opmad:Performance_value, ns1:MeasurementInformationContentEntity . cd:nexa_30a_svm_mape a opmad:Performance_value, ns1:MeasurementInformationContentEntity . cd:nexa_30a_svm_r_squared a opmad:Performance_value, ns1:MeasurementInformationContentEntity . cd:nexa_30a_svm_rmse a opmad:Performance_value, ns1:MeasurementInformationContentEntity . cd:nexa_36a_rvm_mape a opmad:Performance_value, ns1:MeasurementInformationContentEntity . cd:nexa_36a_rvm_r_squared a opmad:Performance_value, ns1:MeasurementInformationContentEntity . cd:nexa_36a_rvm_rmse a opmad:Performance_value, ns1:MeasurementInformationContentEntity . cd:nexa_36a_svm_mape a opmad:Performance_value, ns1:MeasurementInformationContentEntity . cd:nexa_36a_svm_r_squared a opmad:Performance_value, ns1:MeasurementInformationContentEntity . cd:nexa_36a_svm_rmse a opmad:Performance_value, ns1:MeasurementInformationContentEntity . cd:nexa_44a_rvm_mape a opmad:Performance_value, ns1:MeasurementInformationContentEntity . cd:nexa_44a_rvm_r_squared a opmad:Performance_value, ns1:MeasurementInformationContentEntity . cd:nexa_44a_rvm_rmse a opmad:Performance_value, ns1:MeasurementInformationContentEntity . cd:nexa_44a_svm_deviation a opmad:Performance_value . cd:nexa_44a_svm_mape a opmad:Performance_value, ns1:MeasurementInformationContentEntity . cd:nexa_44a_svm_r_squared a opmad:Performance_value, ns1:MeasurementInformationContentEntity . cd:nexa_44a_svm_rmse a opmad:Performance_value, ns1:MeasurementInformationContentEntity . cd:pm_200_rvm_mape a opmad:Performance_value, ns1:MeasurementInformationContentEntity . cd:pm_200_rvm_r_squared a opmad:Performance_value, ns1:MeasurementInformationContentEntity . cd:pm_200_rvm_rmse a opmad:Performance_value, ns1:MeasurementInformationContentEntity . cd:pm_200_svm_deviation a opmad:Performance_value . cd:pm_200_svm_mape a opmad:Performance_value, ns1:MeasurementInformationContentEntity . cd:pm_200_svm_r_squared a opmad:Performance_value, ns1:MeasurementInformationContentEntity . cd:pm_200_svm_rmse a opmad:Performance_value, ns1:MeasurementInformationContentEntity .",
+        "triple_count": 1
+      },
+      {
+        "kind": "critic_fix",
+        "source": "ids=[235]",
+        "target": "@prefix cd: <https://growgraph.dev/facts/> . @prefix ns1: <http://www.ontologyrepository.com/CommonCoreOntologies/> . cd:pm_200_mape_relative_reduction ns1:describes cd:pm_200_svm_mape, cd:pm_200_rvm_mape .",
+        "triple_count": 1
+      },
+      {
+        "kind": "critic_fix",
+        "source": "",
+        "target": "@prefix cd: <https://growgraph.dev/facts/> . @prefix ns1: <http://www.ontologyrepository.com/CommonCoreOntologies/> . cd:pm_200_nexa_rmse_ratio ns1:describes cd:pm_200_rvm_rmse, cd:pm_200_svm_rmse, cd:nexa_12a_rvm_rmse, cd:nexa_12a_svm_rmse, cd:nexa_30a_rvm_rmse, cd:nexa_30a_svm_rmse, cd:nexa_36a_rvm_rmse, cd:nexa_36a_svm_rmse, cd:nexa_44a_rvm_rmse, cd:nexa_44a_svm_rmse .",
+        "triple_count": 1
+      },
+      {
+        "kind": "critic_fix",
+        "source": "",
+        "target": "@prefix cd: <https://growgraph.dev/facts/> . @prefix ns1: <http://www.ontologyrepository.com/CommonCoreOntologies/> . @prefix opmad: <https://w3id.org/opmad/> . cd:nexa_12a_r2_method_comparison a ns1:DescriptiveInformationContentEntity ; ns1:describes cd:nexa_12a_rvm_r_squared, cd:nexa_12a_svm_r_squared ; opmad:has_text_value \"RVM R2 is higher than SVM R2.\" . cd:nexa_30a_r2_method_comparison a ns1:DescriptiveInformationContentEntity ; ns1:describes cd:nexa_30a_rvm_r_squared, cd:nexa_30a_svm_r_squared ; opmad:has_text_value \"RVM R2 is higher than SVM R2.\" . cd:nexa_36a_r2_method_comparison a ns1:DescriptiveInformationContentEntity ; ns1:describes cd:nexa_36a_rvm_r_squared, cd:nexa_36a_svm_r_squared ; opmad:has_text_value \"RVM R2 is higher than SVM R2.\" . cd:nexa_44a_r2_method_comparison a ns1:DescriptiveInformationContentEntity ; ns1:describes cd:nexa_44a_rvm_r_squared, cd:nexa_44a_svm_r_squared ; opmad:has_text_value \"RVM R2 is higher than SVM R2.\" . cd:pm_200_r2_method_comparison a ns1:DescriptiveInformationContentEntity ; ns1:describes cd:pm_200_rvm_r_squared, cd:pm_200_svm_r_squared ; opmad:has_text_value \"RVM R2 is higher than SVM R2.\" .",
+        "triple_count": 1
+      },
+      {
+        "kind": "critic_fix",
+        "source": "",
+        "target": "@prefix cd: <https://growgraph.dev/facts/> . @prefix ns1: <http://www.ontologyrepository.com/CommonCoreOntologies/> . @prefix opmad: <https://w3id.org/opmad/> . cd:dataset_nonlinearity_comparison a ns1:DescriptiveInformationContentEntity ; ns1:describes cd:case_nexa_12a_30c, cd:case_nexa_36a_40c, cd:case_nexa_44a_40c ; opmad:has_text_value \"The 12 A 30 \u00b0C NEXA data set is the most nonlinear; the 36 A 40 \u00b0C and 44 A 40 \u00b0C data sets are the least fluctuating of the five.\" .",
+        "triple_count": 1
+      },
+      {
+        "kind": "critic_fix",
+        "source": "",
+        "target": "@prefix cd: <https://growgraph.dev/facts/> . @prefix ns1: <http://www.ontologyrepository.com/CommonCoreOntologies/> . @prefix opmad: <https://w3id.org/opmad/> . cd:training_data_comparison a ns1:DescriptiveInformationContentEntity ; ns1:describes cd:classic_svm, cd:modified_rvm, cd:case_nexa_12a_30c, cd:case_nexa_30a_35c, cd:case_nexa_36a_40c, cd:case_nexa_44a_40c, cd:case_pm_200_mobile ; opmad:has_text_value \"The classic SVM and modified RVM comparisons use the same training data sets for the five experimental conditions.\" .",
+        "triple_count": 1
+      },
+      {
+        "kind": "critic_fix",
+        "source": "",
+        "target": "@prefix cd: <https://growgraph.dev/facts/> . @prefix ns1: <http://www.ontologyrepository.com/CommonCoreOntologies/> . @prefix opmad: <https://w3id.org/opmad/> . cd:svm_early_prediction_assessment a ns1:DescriptiveInformationContentEntity ; ns1:describes cd:nexa_12a_svm_forecast, cd:nexa_30a_svm_forecast, cd:nexa_36a_svm_forecast, cd:nexa_44a_svm_forecast, cd:pm_200_svm_forecast ; opmad:has_text_value \"SVM gives fairly good voltage-degradation predictions at the beginning of fuel-cell operation.\" .",
+        "triple_count": 1
+      },
+      {
+        "kind": "critic_fix",
+        "source": "",
+        "target": "@prefix cd: <https://growgraph.dev/facts/> . @prefix ns1: <http://www.ontologyrepository.com/CommonCoreOntologies/> . @prefix opmad: <https://w3id.org/opmad/> . cd:mape_consistency_assessment a ns1:DescriptiveInformationContentEntity ; ns1:describes cd:nexa_12a_rvm_mape, cd:nexa_30a_rvm_mape, cd:nexa_36a_rvm_mape, cd:nexa_44a_rvm_mape, cd:pm_200_rvm_mape, cd:nexa_12a_svm_mape, cd:nexa_30a_svm_mape, cd:nexa_36a_svm_mape, cd:nexa_44a_svm_mape, cd:pm_200_svm_mape ; opmad:has_text_value \"Improved RVM MAPE is much more consistent than SVM MAPE across the five conditions.\" .",
+        "triple_count": 1
+      },
+      {
+        "kind": "critic_fix",
+        "source": "ids=[49, 87, 133, 178]",
+        "target": "@prefix cd: <https://growgraph.dev/facts/> . @prefix ns1: <http://www.ontologyrepository.com/CommonCoreOntologies/> . @prefix opmad: <https://w3id.org/opmad/> . cd:ampere_unit a ns1:MeasurementUnit ; opmad:has_text_value \"A\" . cd:nexa_12a_current a ns1:InformationBearingEntity ; ns1:uses_measurement_unit cd:ampere_unit . cd:nexa_30a_current a ns1:InformationBearingEntity ; ns1:uses_measurement_unit cd:ampere_unit . cd:nexa_36a_current a ns1:InformationBearingEntity ; ns1:uses_measurement_unit cd:ampere_unit . cd:nexa_44a_current a ns1:InformationBearingEntity ; ns1:uses_measurement_unit cd:ampere_unit .",
+        "triple_count": 1
+      },
+      {
+        "kind": "critic_fix",
+        "source": "ids=[254]",
+        "target": "@prefix cd: <https://growgraph.dev/facts/> . @prefix ns1: <http://www.ontologyrepository.com/CommonCoreOntologies/> . @prefix opmad: <https://w3id.org/opmad/> . cd:kilowatt_unit a ns1:MeasurementUnitOfPower ; opmad:has_text_value \"kW\" . cd:pm_200_power a ns1:InformationBearingEntity ; ns1:uses_measurement_unit cd:kilowatt_unit .",
+        "triple_count": 1
+      },
+      {
+        "kind": "critic_fix",
+        "source": "",
+        "target": "@prefix cd: <https://growgraph.dev/facts/> . @prefix ns1: <http://www.ontologyrepository.com/CommonCoreOntologies/> . @prefix opmad: <https://w3id.org/opmad/> . cd:percent_unit a ns1:MeasurementUnit ; opmad:has_text_value \"%\" . cd:pm_200_mape_relative_reduction a ns1:InformationBearingEntity ; ns1:uses_measurement_unit cd:percent_unit .",
+        "triple_count": 1
+      },
+      {
+        "kind": "critic_fix",
+        "source": "ids=[35, 45]",
+        "target": "@prefix cd: <https://growgraph.dev/facts/> . @prefix opmad: <https://w3id.org/opmad/> . @prefix ns2: <http://purl.obolibrary.org/obo/> . cd:classic_svm a opmad:Predictive_maintenance_model ; ns2:RO_0000058 cd:classic_svm_regression_function . cd:modified_rvm a opmad:Predictive_maintenance_model ; ns2:RO_0000058 cd:modified_rvm_regression_function . cd:classic_svm_regression_function a opmad:Regression . cd:modified_rvm_regression_function a opmad:Regression .",
+        "triple_count": 1
+      }
+    ],
+    "9": [
+      {
+        "kind": "critic_fix",
+        "source": "ids=[533]",
+        "target": "@prefix cd: <https://growgraph.dev/facts/> . @prefix ns1: <http://www.ontologyrepository.com/CommonCoreOntologies/> . cd:temperature_value_30c a ns1:InformationBearingEntity, ns1:IntervalMeasurementInformationContentEntity .",
+        "triple_count": 1
+      },
+      {
+        "kind": "critic_fix",
+        "source": "ids=[537]",
+        "target": "@prefix cd: <https://growgraph.dev/facts/> . @prefix ns1: <http://www.ontologyrepository.com/CommonCoreOntologies/> . cd:temperature_value_35c a ns1:InformationBearingEntity, ns1:IntervalMeasurementInformationContentEntity .",
+        "triple_count": 1
+      },
+      {
+        "kind": "critic_fix",
+        "source": "ids=[541]",
+        "target": "@prefix cd: <https://growgraph.dev/facts/> . @prefix ns1: <http://www.ontologyrepository.com/CommonCoreOntologies/> . cd:temperature_value_40c a ns1:InformationBearingEntity, ns1:IntervalMeasurementInformationContentEntity .",
+        "triple_count": 1
+      },
+      {
+        "kind": "critic_fix",
+        "source": "ids=[545]",
+        "target": "@prefix cd: <https://growgraph.dev/facts/> . @prefix ns1: <http://www.ontologyrepository.com/CommonCoreOntologies/> . cd:time_20h a ns1:InformationBearingEntity, ns1:RatioMeasurementInformationContentEntity .",
+        "triple_count": 1
+      },
+      {
+        "kind": "critic_fix",
+        "source": "ids=[549]",
+        "target": "@prefix cd: <https://growgraph.dev/facts/> . @prefix ns1: <http://www.ontologyrepository.com/CommonCoreOntologies/> . cd:time_4h a ns1:InformationBearingEntity, ns1:RatioMeasurementInformationContentEntity .",
+        "triple_count": 1
+      },
+      {
+        "kind": "critic_fix",
+        "source": "ids=[423, 506]",
+        "target": "@prefix cd: <https://growgraph.dev/facts/> . @prefix opmad: <https://w3id.org/opmad#> . cd:nexa_stack a opmad:Maintainable_item . cd:pm_200_stack a opmad:Maintainable_item .",
+        "triple_count": 1
+      },
+      {
+        "kind": "critic_fix",
+        "source": "ids=[1, 6]",
+        "target": "@prefix cd: <https://growgraph.dev/facts/> . @prefix opmad: <https://w3id.org/opmad#> . cd:accuracy_improvement_minimum a opmad:Performance_value . cd:accuracy_improvement_nearly_60 a opmad:Performance_value .",
+        "triple_count": 1
+      },
+      {
+        "kind": "critic_fix",
+        "source": "ids=[3, 8]",
+        "target": "@prefix cd: <https://growgraph.dev/facts/> . @prefix opmad: <https://w3id.org/opmad#> . @prefix xsd: <http://www.w3.org/2001/XMLSchema#> . cd:accuracy_improvement_minimum opmad:has_double_value \"15\"^^xsd:double . cd:accuracy_improvement_nearly_60 opmad:has_double_value \"60\"^^xsd:double .",
+        "triple_count": 1
+      },
+      {
+        "kind": "critic_fix",
+        "source": "ids=[511, 512, 513, 514, 515, 516]",
+        "target": "@prefix cd: <https://growgraph.dev/facts/> . @prefix ns1: <http://www.ontologyrepository.com/CommonCoreOntologies/> . @prefix opmad: <https://w3id.org/opmad#> . @prefix xsd: <http://www.w3.org/2001/XMLSchema#> . cd:prediction_time_range a opmad:Model_configuration ; opmad:has_text_value \"0 - 400 h\" ; ns1:described_by cd:prediction_time_minimum, cd:prediction_time_maximum . cd:prediction_time_minimum a ns1:InformationBearingEntity, ns1:RatioMeasurementInformationContentEntity ; opmad:has_interger_value \"0\"^^xsd:integer ; ns1:uses_measurement_unit ns1:HourMeasurementUnit . cd:prediction_time_maximum a ns1:InformationBearingEntity, ns1:RatioMeasurementInformationContentEntity ; opmad:has_interger_value \"400\"^^xsd:integer ; ns1:uses_measurement_unit ns1:HourMeasurementUnit .",
+        "triple_count": 1
+      },
+      {
+        "kind": "critic_fix",
+        "source": "ids=[519, 520, 521, 522]",
+        "target": "@prefix cd: <https://growgraph.dev/facts/> . @prefix ns1: <http://www.ontologyrepository.com/CommonCoreOntologies/> . @prefix opmad: <https://w3id.org/opmad#> . @prefix xsd: <http://www.w3.org/2001/XMLSchema#> . @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> . cd:sampling_interval a ns1:InformationBearingEntity, ns1:RatioMeasurementInformationContentEntity ; opmad:has_interger_value \"4\"^^xsd:integer ; ns1:uses_measurement_unit ns1:HourMeasurementUnit ; rdfs:comment \"approximately\" .",
+        "triple_count": 1
+      },
+      {
+        "kind": "critic_fix",
+        "source": "ids=[14, 27, 40, 54]",
+        "target": "@prefix cd: <https://growgraph.dev/facts/> . @prefix ns1: <http://www.ontologyrepository.com/CommonCoreOntologies/> . cd:case_nexa_12a_30c ns1:described_by cd:temperature_value_30c . cd:case_nexa_30a_35c ns1:described_by cd:temperature_value_35c . cd:case_nexa_36a_40c ns1:described_by cd:temperature_value_40c . cd:case_nexa_44a_40c ns1:described_by cd:temperature_value_40c .",
+        "triple_count": 1
+      },
+      {
+        "kind": "critic_fix",
+        "source": "",
+        "target": "@prefix cd: <https://growgraph.dev/facts/> . @prefix ns1: <http://www.ontologyrepository.com/CommonCoreOntologies/> . @prefix opmad: <https://w3id.org/opmad#> . cd:nexa_36a_1step ns1:described_by cd:nexa_36a_comparison . cd:nexa_36a_comparison a opmad:Performance_value ; ns1:is_about cd:original_rvm, cd:voltage_degradation ; opmad:has_text_value \"The modified RVM better represents the non-linear part of the observed voltage degradation than the original RVM.\" .",
+        "triple_count": 1
+      },
+      {
+        "kind": "critic_fix",
+        "source": "",
+        "target": "@prefix cd: <https://growgraph.dev/facts/> . @prefix ns1: <http://www.ontologyrepository.com/CommonCoreOntologies/> . @prefix opmad: <https://w3id.org/opmad#> . cd:forecast_comparison opmad:has_text_value \"The modified RVM at 20 hours provided similar prediction accuracy to classic SVM or original RVM at 4 hours in these cases.\" ; ns1:is_about cd:modified_rvm .",
+        "triple_count": 1
+      },
+      {
+        "kind": "critic_fix",
+        "source": "",
+        "target": "@prefix cd: <https://growgraph.dev/facts/> . @prefix ns1: <http://www.ontologyrepository.com/CommonCoreOntologies/> . cd:case_nexa_12a_30c ns1:described_by cd:sampling_interval . cd:case_nexa_30a_35c ns1:described_by cd:sampling_interval . cd:case_nexa_36a_40c ns1:described_by cd:sampling_interval . cd:case_nexa_44a_40c ns1:described_by cd:sampling_interval . cd:case_pm_200 ns1:described_by cd:sampling_interval .",
+        "triple_count": 1
+      },
+      {
+        "kind": "critic_fix",
+        "source": "",
+        "target": "@prefix cd: <https://growgraph.dev/facts/> . @prefix ns1: <http://www.ontologyrepository.com/CommonCoreOntologies/> . cd:case_nexa_12a_30c ns1:described_by cd:voltage_degradation . cd:case_nexa_30a_35c ns1:described_by cd:voltage_degradation . cd:case_nexa_36a_40c ns1:described_by cd:voltage_degradation . cd:case_nexa_44a_40c ns1:described_by cd:voltage_degradation . cd:case_pm_200 ns1:described_by cd:voltage_degradation .",
+        "triple_count": 1
+      }
+    ],
+    "10": [
+      {
+        "kind": "critic_fix",
+        "source": "ids=[66, 67, 68]",
+        "target": "@prefix cd: <https://growgraph.dev/facts/> . @prefix opmad: <https://example.org/opmad/> . cd:paper opmad:explains cd:case_1_2_kw, cd:case_8_kw, cd:improved_rvm .",
+        "triple_count": 1
+      },
+      {
+        "kind": "critic_fix",
+        "source": "ids=[70, 73]",
+        "target": "@prefix cd: <https://growgraph.dev/facts/> . @prefix ns1: <http://www.ontologyrepository.com/CommonCoreOntologies/> . cd:pemfc_stack_1_2_kw a ns1:ElectricalPowerSource . cd:pemfc_stack_8_kw a ns1:ElectricalPowerSource .",
+        "triple_count": 1
+      },
+      {
+        "kind": "critic_fix",
+        "source": "ids=[45]",
+        "target": "@prefix cd: <https://growgraph.dev/facts/> . @prefix ns1: <http://www.ontologyrepository.com/CommonCoreOntologies/> . cd:improved_rvm ns1:uses cd:adaptive_kernel_width_algorithm .",
+        "triple_count": 1
+      },
+      {
+        "kind": "critic_fix",
+        "source": "",
+        "target": "@prefix cd: <https://growgraph.dev/facts/> . @prefix ns1: <http://www.ontologyrepository.com/CommonCoreOntologies/> . @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> . cd:training_1_2_kw a ns1:IntentionalAct ; ns1:has_input cd:voltage_data_1_2_kw ; ns1:uses cd:improved_rvm ; rdfs:label \"Training the improved RVM using voltage degradation data from the 1.2 kW stack\" . cd:training_8_kw a ns1:IntentionalAct ; ns1:has_input cd:voltage_data_8_kw ; ns1:uses cd:improved_rvm ; rdfs:label \"Training the improved RVM using voltage degradation data from the 8 kW stack\" .",
+        "triple_count": 1
+      },
+      {
+        "kind": "critic_fix",
+        "source": "ids=[55]",
+        "target": "@prefix cd: <https://growgraph.dev/facts/> . @prefix ns1: <http://www.ontologyrepository.com/CommonCoreOntologies/> . cd:forecast_time ns1:describes cd:multi_step_forecast .",
+        "triple_count": 1
+      },
+      {
+        "kind": "critic_fix",
+        "source": "ids=[35]",
+        "target": "@prefix cd: <https://growgraph.dev/facts/> . @prefix ns1: <http://www.ontologyrepository.com/CommonCoreOntologies/> . cd:forecast_time a ns1:MaximumOrdinalMeasurementInformationContentEntity .",
+        "triple_count": 1
+      },
+      {
+        "kind": "critic_fix",
+        "source": "ids=[17]",
+        "target": "@prefix cd: <https://growgraph.dev/facts/> . @prefix ns1: <http://www.ontologyrepository.com/CommonCoreOntologies/> . cd:error_reduction_range a ns1:DataRangeIntervalEstimateInformationContentEntity .",
+        "triple_count": 1
+      },
+      {
+        "kind": "critic_fix",
+        "source": "ids=[93]",
+        "target": "@prefix cd: <https://growgraph.dev/facts/> . @prefix ns1: <http://www.ontologyrepository.com/CommonCoreOntologies/> . cd:error_reduction_range ns1:describes cd:svm_comparison .",
+        "triple_count": 1
+      }
+    ]
+  },
+  "unit_failures": []
+}
