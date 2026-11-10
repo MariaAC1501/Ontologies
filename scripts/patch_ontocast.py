@@ -1,17 +1,29 @@
 #!/usr/bin/env python3
-"""Apply the two OntoCast 0.8.2 runtime fixes found during the OPMAD pilot.
+"""Apply OntoCast 0.8.2 runtime fixes and optional experimental patches.
 
 Run from the repository root:
     python3 scripts/patch_ontocast.py
-    python3 scripts/patch_ontocast.py --check
+    python3 scripts/patch_ontocast.py --experimental cross-section-merging --check
+    python3 scripts/patch_ontocast.py --experimental cross-section-merging
 
 Use --source-dir PATH for another OntoCast checkout. This script needs Git,
-not OntoCast's Python dependencies. It skips an already-applied patch and
-refuses incompatible or partly patched code without changing files.
+not OntoCast's Python dependencies. Runtime fixes are always selected; repeat
+--experimental to select additional patches. Every selected patch is checked
+before any changes are applied. Already-applied patches are skipped, and
+incompatible or partly patched code is refused without changing files.
 
-Fixes:
+Runtime fixes:
 - Keep generated Turtle prefixes from ending in a dot.
 - Preserve RDF 1.2 quoted triples when saving fact provenance.
+
+Experimental patches are discovered in scripts/patches/experimental/*.patch.
+Add a <name>.patch file there and select it with --experimental <name>.
+
+Available experiment:
+- cross-section-merging: add CHUNK_MERGE_ACROSS_SECTIONS (default false).
+  Enable it for a run to merge content across section labels after filtering.
+  Separately routed bibliography and skipped non-content units stay isolated.
+  Set CHUNK_MIN_SIZE and CHUNK_MAX_SIZE per run, for example 48000 and 96000.
 
 Timeouts need no OntoCast source patch: LLM_REQUEST_TIMEOUT_SECONDS in
 scripts/ontocast-subscription.env configures both OntoCast and the proxy.
@@ -109,10 +121,20 @@ index 0aeca58..2dad702 100644
 '''
 
 
-def git_apply(source: Path, *options: str) -> subprocess.CompletedProcess[str]:
+EXPERIMENTAL_PATCH_DIR = ROOT / "scripts/patches/experimental"
+EXPERIMENTAL_PATCHES = {
+    path.stem: path
+    for path in sorted(EXPERIMENTAL_PATCH_DIR.glob("*.patch"))
+    if path.is_file()
+}
+
+
+def git_apply(
+    source: Path, *options: str, patch: str = PATCH
+) -> subprocess.CompletedProcess[str]:
     return subprocess.run(
         ["git", "-C", str(source), "apply", *options, "-"],
-        input=PATCH,
+        input=patch,
         text=True,
         capture_output=True,
     )
@@ -130,30 +152,48 @@ def main() -> int:
         "--check", action="store_true",
         help="Check compatibility or report already applied; change no files.",
     )
+    parser.add_argument(
+        "--experimental", action="append", choices=tuple(EXPERIMENTAL_PATCHES),
+        default=[], help="Select an experimental patch; repeat for multiple patches.",
+    )
     args = parser.parse_args()
     source = args.source_dir.expanduser().resolve()
     if not source.is_dir():
         parser.error(f"OntoCast checkout not found: {source}")
 
-    if git_apply(source, "--reverse", "--check").returncode == 0:
-        print(f"Patch already applied: {source}")
-        return 0
+    selected = [("runtime fixes", PATCH)]
+    selected.extend(
+        (f"experimental {name}", EXPERIMENTAL_PATCHES[name].read_text(encoding="utf-8"))
+        for name in dict.fromkeys(args.experimental)
+    )
+    pending = []
+    for name, patch in selected:
+        if git_apply(source, "--reverse", "--check", patch=patch).returncode == 0:
+            print(f"Already applied ({name}): {source}")
+            continue
+        check = git_apply(source, "--check", patch=patch)
+        if check.returncode:
+            parser.exit(
+                1,
+                f"Patch ({name}) does not match this checkout, or is only partly "
+                "applied. No files were changed.\n" + check.stderr,
+            )
+        pending.append((name, patch))
 
-    check = git_apply(source, "--check")
-    if check.returncode:
-        parser.exit(
-            1,
-            "Patch does not match this checkout, or is only partly applied. "
-            "No files were changed.\n" + check.stderr,
-        )
     if args.check:
-        print(f"Patch can be applied: {source} (no files changed)")
+        for name, _ in pending:
+            print(f"Can be applied ({name}): {source} (no files changed)")
+        return 0
+    if not pending:
         return 0
 
-    result = git_apply(source)
+    # Apply all pending patches together so Git checks the whole batch before
+    # writing any files, including when several experimental patches are selected.
+    result = git_apply(source, patch="\n".join(patch for _, patch in pending))
     if result.returncode:
-        parser.exit(1, "Git could not apply the patch:\n" + result.stderr)
-    print(f"Applied both OntoCast fixes: {source}")
+        parser.exit(1, "Git could not apply the patches:\n" + result.stderr)
+    for name, _ in pending:
+        print(f"Applied ({name}): {source}")
     return 0
 
 

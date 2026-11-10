@@ -1,0 +1,118 @@
+diff --git a/ontocast/config/settings.py b/ontocast/config/settings.py
+index 2e3842d..e409eeb 100644
+--- a/ontocast/config/settings.py
++++ b/ontocast/config/settings.py
+@@ -542,6 +542,15 @@ class ChunkConfig(BaseSettings):
+             "of long chunks."
+         ),
+     )
++    merge_across_sections: bool = Field(
++        default=False,
++        description=(
++            "Experimental: merge neighbouring content chunks across section "
++            "labels after section filtering. Keep separately routed bibliography "
++            "and skipped non-content units isolated. Mixed-section chunks have "
++            "no section label. Chunk size bounds still apply."
++        ),
++    )
+     embedding_model: str = Field(
+         default="sentence-transformers/paraphrase-multilingual-mpnet-base-v2",
+         description=(
+diff --git a/ontocast/tool/chunk/prepare.py b/ontocast/tool/chunk/prepare.py
+index a72e859..d3592e3 100644
+--- a/ontocast/tool/chunk/prepare.py
++++ b/ontocast/tool/chunk/prepare.py
+@@ -1,4 +1,4 @@
+-"""Prepare content units: segment, tag, filter, and size within section boundaries."""
++"""Prepare content units: segment, tag, filter, and size document text."""
+
+ from __future__ import annotations
+
+@@ -21,8 +21,10 @@ from ontocast.config.section_labels import (
+ )
+ from ontocast.onto.enum import SectionLabelSource
+ from ontocast.onto.section_models import SectionSpan
++from ontocast.tool.chunk.bibliography import is_bibliography_unit
+ from ontocast.tool.chunk.chunker import ChunkerTool
+ from ontocast.tool.chunk.density import classify_by_density
++from ontocast.tool.chunk.non_content import is_non_content_unit
+ from ontocast.tool.chunk.outline import markdown_headings
+ from ontocast.tool.chunk.schema_detect import SchemaDetection, detect_document_schema
+ from ontocast.tool.chunk.section_llm import llm_backfill_section_labels
+@@ -729,17 +731,45 @@ def _merge_prepared_chunks(
+     chunks: list[PreparedChunk],
+     min_size: int,
+     max_size: int,
++    *,
++    merge_across_sections: bool = False,
++    bibliography_mode: str = "skip",
++    non_content_mode: str = "extract",
+ ) -> list[PreparedChunk]:
++    """Merge to size, optionally crossing labels without mixing routing classes."""
+     if not chunks:
+         return []
+
++    def routing_boundary(chunk: PreparedChunk) -> bool:
++        # Routing happens after sizing. Keep these units separate so merging
++        # cannot hide references or material the caller asked to skip.
++        return merge_across_sections and (
++            (
++                bibliography_mode != "domain_facts"
++                and is_bibliography_unit(chunk.text, chunk.section_label)
++            )
++            or (
++                non_content_mode == "skip"
++                and is_non_content_unit(chunk.text, chunk.headings, chunk.section_label)
++            )
++        )
++
+     merged: list[PreparedChunk] = []
+     index = 0
+     while index < len(chunks):
++        if routing_boundary(chunks[index]):
++            merged.append(chunks[index])
++            index += 1
++            continue
+         label = chunks[index].section_label
+         run: list[PreparedChunk] = []
+-        while index < len(chunks) and chunks[index].section_label == label:
+-            run.append(chunks[index])
++        while index < len(chunks):
++            chunk = chunks[index]
++            if routing_boundary(chunk) or (
++                not merge_across_sections and chunk.section_label != label
++            ):
++                break
++            run.append(chunk)
+             index += 1
+
+         texts = merge_small_parts(
+@@ -758,6 +788,12 @@ def _merge_prepared_chunks(
+             default=None,
+         )
+         confidence = min(chunk.section_label_confidence for chunk in run)
++        if any(chunk.section_label != label for chunk in run):
++            # A cross-section unit must not pretend to be its first section.
++            label = None
++            source = None
++            confidence = 0.0
++            headings = None
+
+         for text in texts:
+             merged.append(
+@@ -814,7 +850,14 @@ def _size_segments(
+     expanded: list[PreparedChunk] = []
+     for segment in segments:
+         expanded.extend(_expand_segment(segment, splitter, config))
+-    merged = _merge_prepared_chunks(expanded, config.min_size, config.max_size)
++    merged = _merge_prepared_chunks(
++        expanded,
++        config.min_size,
++        config.max_size,
++        merge_across_sections=config.merge_across_sections,
++        bibliography_mode=config.bibliography_mode,
++        non_content_mode=config.non_content_mode,
++    )
+     return _split_dense_chunks(merged, config)
+
+
