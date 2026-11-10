@@ -1,0 +1,750 @@
+Experiment: cross-section-merging; CHUNK_MERGE_ACROSS_SECTIONS=true; CHUNK_MIN_SIZE=48000; CHUNK_MAX_SIZE=96000
+Model 'gpt-6.1-terra' is not a known openai preset (OpenAIModel). Passing it through -- the provider decides whether it exists.
+Selected 1 paper(s). Output: /Users/antho/Ontologies/out/pilot-s003-terra-cross-section-large-chunks
+LLM: openai/gpt-6.1-terra
+  OPMAD-S003: 10.1016_j.cie.2018.12.056.pdf — Fuzzy early warning systems for condition based maintenance
+
+[1/1] Running OPMAD-S003
+Model 'gpt-6.1-terra' is not a known openai preset (OpenAIModel). Passing it through -- the provider decides whether it exists.
+INFO:ontocast.cli.server:Using ontology seed directory /Users/antho/Ontologies/ontologies/opmad-ontocast (--ontology-dir)
+INFO:ontocast.cli.server:No SHACL shapes seed directory configured (FACTS_SHAPES_DIR)
+DEBUG:ontocast.tool.cache:Shared cache directory set to: /Users/antho/.cache/ontocast
+INFO:ontocast.tool.llm:Not sending temperature to gpt-6.1-terra: the provider rejects it for this model at this reasoning effort, so it samples at its own default
+INFO:ontocast.tool.triple_manager.in_memory:In-memory tenancy set to tenant='ontocast' project='test'
+INFO:ontocast.toolbox:Shapes sync finished in 0.00s
+DEBUG:ontocast.toolbox:Loaded seed ontology from /Users/antho/Ontologies/ontologies/opmad-ontocast/OPMAD-ontocast.ttl
+INFO:ontocast.toolbox:Found 1 seed ontolog(ies) in ontology_directory
+INFO:ontocast.tool.triple_manager.in_memory:Loaded 0 unique ontologies from in-memory store
+INFO:ontocast.toolbox:Found 0 ontologies in triple store
+INFO:ontocast.toolbox:Syncing seed ontology to triple store: http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD (version: 1.0.0)
+INFO:ontocast.toolbox:Ontology sync finished: 1 ontolog(ies) in 1.29s
+DEBUG:ontocast.tool.ontology_manager:Registered version http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#b4fe2bdc4da65e3e5a5736157d861185e2da7076807943013b710a3c9a9681cc
+INFO:ontocast.toolbox:Materialized ontology http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD in 0.31s (0 atom(s) indexed)
+DEBUG:ontocast.tool.cache:Cache hit for key: a44eebfabf86c3f8...
+DEBUG:ontocast.tool.llm:Cache hit: Below is a sample of an ontology in Turtle format:...
+INFO:ontocast.toolbox:Ontology property enrich finished for 1 ontolog(ies) in 0.31s
+INFO:ontocast.toolbox:Ontology materialize + enrich finished for 1 ontolog(ies) in 0.31s (reindex_concurrency=2); initialize total 1.60s
+DEBUG:ontocast.agent.convert_document:Converting document
+DEBUG:ontocast.agent.convert_document:Converting /Users/antho/Ontologies/papers/pdfs/10.1016_j.cie.2018.12.056.pdf with extension .pdf
+DEBUG:ontocast.tool.cache:Cache hit for key: 7200b76cf428057a...
+DEBUG:ontocast.tool.converter:Cache hit for document conversion
+INFO:ontocast.agent.chunk_text:Chunking the text
+INFO:ontocast.tool.sentence_transformer:Loading sentence-transformer model: sentence-transformers/paraphrase-multilingual-mpnet-base-v2 (device=auto)
+INFO:sentence_transformers.base.model:No device provided, using mps
+INFO:httpx:HTTP Request: HEAD https://huggingface.co/sentence-transformers/paraphrase-multilingual-mpnet-base-v2/resolve/main/modules.json "HTTP/1.1 307 Temporary Redirect"
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+WARNING:huggingface_hub.utils._http:Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+INFO:httpx:HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/paraphrase-multilingual-mpnet-base-v2/4328cf26390c98c5e3c738b4460a05b95f4911f5/modules.json "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: HEAD https://huggingface.co/sentence-transformers/paraphrase-multilingual-mpnet-base-v2/resolve/main/config_sentence_transformers.json "HTTP/1.1 307 Temporary Redirect"
+INFO:httpx:HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/paraphrase-multilingual-mpnet-base-v2/4328cf26390c98c5e3c738b4460a05b95f4911f5/config_sentence_transformers.json "HTTP/1.1 200 OK"
+INFO:sentence_transformers.base.model:Loading SentenceTransformer model from sentence-transformers/paraphrase-multilingual-mpnet-base-v2.
+INFO:httpx:HTTP Request: HEAD https://huggingface.co/sentence-transformers/paraphrase-multilingual-mpnet-base-v2/resolve/main/config_sentence_transformers.json "HTTP/1.1 307 Temporary Redirect"
+INFO:httpx:HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/paraphrase-multilingual-mpnet-base-v2/4328cf26390c98c5e3c738b4460a05b95f4911f5/config_sentence_transformers.json "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: HEAD https://huggingface.co/sentence-transformers/paraphrase-multilingual-mpnet-base-v2/resolve/main/README.md "HTTP/1.1 307 Temporary Redirect"
+INFO:httpx:HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/paraphrase-multilingual-mpnet-base-v2/4328cf26390c98c5e3c738b4460a05b95f4911f5/README.md "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: HEAD https://huggingface.co/sentence-transformers/paraphrase-multilingual-mpnet-base-v2/resolve/main/modules.json "HTTP/1.1 307 Temporary Redirect"
+INFO:httpx:HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/paraphrase-multilingual-mpnet-base-v2/4328cf26390c98c5e3c738b4460a05b95f4911f5/modules.json "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: HEAD https://huggingface.co/sentence-transformers/paraphrase-multilingual-mpnet-base-v2/resolve/main/sentence_bert_config.json "HTTP/1.1 307 Temporary Redirect"
+INFO:httpx:HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/paraphrase-multilingual-mpnet-base-v2/4328cf26390c98c5e3c738b4460a05b95f4911f5/sentence_bert_config.json "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: HEAD https://huggingface.co/sentence-transformers/paraphrase-multilingual-mpnet-base-v2/resolve/main/adapter_config.json "HTTP/1.1 404 Not Found"
+INFO:httpx:HTTP Request: HEAD https://huggingface.co/sentence-transformers/paraphrase-multilingual-mpnet-base-v2/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+INFO:httpx:HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/paraphrase-multilingual-mpnet-base-v2/4328cf26390c98c5e3c738b4460a05b95f4911f5/config.json "HTTP/1.1 200 OK"
+Loading weights:   0%|          | 0/199 [00:00<?, ?it/s]Loading weights: 100%|██████████| 199/199 [00:00<00:00, 6913.15it/s]
+INFO:httpx:HTTP Request: HEAD https://huggingface.co/sentence-transformers/paraphrase-multilingual-mpnet-base-v2/resolve/main/processor_config.json "HTTP/1.1 404 Not Found"
+INFO:httpx:HTTP Request: HEAD https://huggingface.co/sentence-transformers/paraphrase-multilingual-mpnet-base-v2/resolve/main/preprocessor_config.json "HTTP/1.1 404 Not Found"
+INFO:httpx:HTTP Request: HEAD https://huggingface.co/sentence-transformers/paraphrase-multilingual-mpnet-base-v2/resolve/main/video_preprocessor_config.json "HTTP/1.1 404 Not Found"
+INFO:httpx:HTTP Request: HEAD https://huggingface.co/sentence-transformers/paraphrase-multilingual-mpnet-base-v2/resolve/main/preprocessor_config.json "HTTP/1.1 404 Not Found"
+INFO:httpx:HTTP Request: HEAD https://huggingface.co/sentence-transformers/paraphrase-multilingual-mpnet-base-v2/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"
+INFO:httpx:HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/paraphrase-multilingual-mpnet-base-v2/4328cf26390c98c5e3c738b4460a05b95f4911f5/tokenizer_config.json "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: HEAD https://huggingface.co/sentence-transformers/paraphrase-multilingual-mpnet-base-v2/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+INFO:httpx:HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/paraphrase-multilingual-mpnet-base-v2/4328cf26390c98c5e3c738b4460a05b95f4911f5/config.json "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: HEAD https://huggingface.co/sentence-transformers/paraphrase-multilingual-mpnet-base-v2/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+INFO:httpx:HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/paraphrase-multilingual-mpnet-base-v2/4328cf26390c98c5e3c738b4460a05b95f4911f5/config.json "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: HEAD https://huggingface.co/sentence-transformers/paraphrase-multilingual-mpnet-base-v2/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"
+INFO:httpx:HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/paraphrase-multilingual-mpnet-base-v2/4328cf26390c98c5e3c738b4460a05b95f4911f5/tokenizer_config.json "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://huggingface.co/api/models/sentence-transformers/paraphrase-multilingual-mpnet-base-v2/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+INFO:httpx:HTTP Request: GET https://huggingface.co/api/models/sentence-transformers/paraphrase-multilingual-mpnet-base-v2/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://huggingface.co/api/models/sentence-transformers/paraphrase-multilingual-mpnet-base-v2 "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: HEAD https://huggingface.co/sentence-transformers/paraphrase-multilingual-mpnet-base-v2/resolve/main/1_Pooling/config.json "HTTP/1.1 307 Temporary Redirect"
+INFO:httpx:HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/paraphrase-multilingual-mpnet-base-v2/4328cf26390c98c5e3c738b4460a05b95f4911f5/1_Pooling%2Fconfig.json "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://huggingface.co/api/models/sentence-transformers/paraphrase-multilingual-mpnet-base-v2 "HTTP/1.1 200 OK"
+INFO:ontocast.tool.chunk.prepare:No schema evidence; falling back to default schema 'academic'
+INFO:ontocast.tool.chunk.prepare:6 segment(s) remain without section_label after classification
+INFO:ontocast.tool.chunk.prepare:Section exclusion dropped 1/18 segment(s) before sizing: acknowledgements: 1 segment(s), 179 chars (heading_pattern)
+INFO:ontocast.agent.chunk_text:Created 2 chunks for processing: [61342, 8971]
+INFO:ontocast.agent.chunk_text:Chunk 1 (8971 chars, section_label='references') routed as bibliography (CHUNK_BIBLIOGRAPHY_MODE=skip): dropped
+INFO:ontocast.agent.chunk_text:Dropped 1 bibliography chunk(s) (CHUNK_BIBLIOGRAPHY_MODE=skip)
+INFO:ontocast.agent.chunk_text:Created 1 content units: [61342]
+INFO:ontocast.agent.chunk_text:Section labels: (unlabeled)=1
+INFO:ontocast.stategraph.atomic:Ontology context for mode fixed_single_ontology: sources=['http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD'] writable=['http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD']
+INFO:ontocast.agent.render_facts:Render facts for content unit 1
+INFO:ontocast.agent.render_facts:Rendering fresh facts
+WARNING:ontocast.onto.ontology_condense:Ontology context still exceeds the prompt budget after condensing (11951 > 4000 triples; was 14983). Passing it through rather than dropping labels, types, hierarchy or domain/range, which the model needs to use the schema at all. Reduce the catalog, split it, or switch to ONTOLOGY_CONTEXT_MODE=selected_vector_search_ontology, which retrieves only the relevant part.
+DEBUG:ontocast.tool.llm:Cache miss, calling LLM: 
+
+# SYSTEM INSTRUCTION
+
+You are an expert in seman...
+INFO:httpx2:HTTP Request: POST http://127.0.0.1:8787/v1/chat/completions "HTTP/1.1 200 OK"
+DEBUG:ontocast.tool.cache:Cached result to /Users/antho/.cache/ontocast/llm/e2d5172739dcdd4a7cfb8a79838109c7bcfd2282618610e9c2a54161e7de4f95.json
+DEBUG:ontocast.agent.common:Successfully parsed LLM response on attempt 1/3
+INFO:ontocast.agent.render_facts:Fresh facts generated with 537 triple(s).
+WARNING:ontocast.util.numeric_inventory:Numeric coverage: 42 missing mention(s) truncated to 30 for the prompt
+INFO:ontocast.agent.criticise_facts:Facts critic for content unit 1: visit 1/1
+DEBUG:ontocast.tool.llm:Cache miss, calling LLM: 
+
+# SYSTEM INSTRUCTION
+
+You are an expert in seman...
+INFO:httpx2:HTTP Request: POST http://127.0.0.1:8787/v1/chat/completions "HTTP/1.1 200 OK"
+DEBUG:ontocast.tool.cache:Cached result to /Users/antho/.cache/ontocast/llm/553398fdd8641722ae70cb1d5707ffba1432a8b5b7f61e260b70dcbff2814cb0.json
+DEBUG:ontocast.agent.common:Successfully parsed LLM response on attempt 1/3
+DEBUG:ontocast.agent.criticise_facts:Parsed critique report - success: False, score: 73.0
+INFO:ontocast.agent.criticise_facts:Facts critique rejected on mandatory_findings: <https://growgraph.dev/facts/down_time> is typed <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Data_variable> but carries <http://www.ontologyrepository.com/CommonCoreOntologies/uses_measurement_unit>, whose rdfs:domain is <http://www.ontologyrepository.com/CommonCoreOntologies/InformationBearingEntity>. Either type the subject as the declared domain, or use the property that fits the type it has.; <https://growgraph.dev/facts/dt_max> is typed <http://www.ontologyrepository.com/CommonCoreOntologies/MaximumOrdinalMeasurementInformationContentEntity> but carries <http://www.ontologyrepository.com/CommonCoreOntologies/uses_measurement_unit>, whose rdfs:domain is <http://www.ontologyrepository.com/CommonCoreOntologies/InformationBearingEntity>. Either type the subject as the declared domain, or use the property that fits the type it has.; <https://growgraph.dev/facts/dt_max_std> is typed <http://www.ontologyrepository.com/CommonCoreOntologies/DeviationMeasurementInformationContentEntity> but carries <http://www.ontologyrepository.com/CommonCoreOntologies/uses_measurement_unit>, whose rdfs:domain is <http://www.ontologyrepository.com/CommonCoreOntologies/InformationBearingEntity>. Either type the subject as the declared domain, or use the property that fits the type it has. (score 73.0)
+INFO:ontocast.tool.facts_validation.critic_patch:Critic fixes: 29 compiled to patches (-61/+159 triples), 1 need a render, 0 asked for no change, 1 delete half(s) refused, 0 refused as placeholders, 0 with an unresolved prefix, 0 with a quarantined literal
+WARNING:ontocast.util.numeric_inventory:Numeric coverage: 42 missing mention(s) truncated to 30 for the prompt
+WARNING:ontocast.util.numeric_inventory:Numeric coverage: 42 missing mention(s) truncated to 30 for the prompt
+WARNING:ontocast.util.numeric_inventory:Numeric coverage: 42 missing mention(s) truncated to 30 for the prompt
+WARNING:ontocast.util.numeric_inventory:Numeric coverage: 42 missing mention(s) truncated to 30 for the prompt
+WARNING:ontocast.util.numeric_inventory:Numeric coverage: 42 missing mention(s) truncated to 30 for the prompt
+WARNING:ontocast.util.numeric_inventory:Numeric coverage: 42 missing mention(s) truncated to 30 for the prompt
+WARNING:ontocast.util.numeric_inventory:Numeric coverage: 42 missing mention(s) truncated to 30 for the prompt
+WARNING:ontocast.util.numeric_inventory:Numeric coverage: 42 missing mention(s) truncated to 30 for the prompt
+WARNING:ontocast.util.numeric_inventory:Numeric coverage: 42 missing mention(s) truncated to 30 for the prompt
+WARNING:ontocast.util.numeric_inventory:Numeric coverage: 42 missing mention(s) truncated to 30 for the prompt
+WARNING:ontocast.util.numeric_inventory:Numeric coverage: 42 missing mention(s) truncated to 30 for the prompt
+WARNING:ontocast.util.numeric_inventory:Numeric coverage: 42 missing mention(s) truncated to 30 for the prompt
+WARNING:ontocast.util.numeric_inventory:Numeric coverage: 42 missing mention(s) truncated to 30 for the prompt
+WARNING:ontocast.util.numeric_inventory:Numeric coverage: 42 missing mention(s) truncated to 30 for the prompt
+WARNING:ontocast.util.numeric_inventory:Numeric coverage: 42 missing mention(s) truncated to 30 for the prompt
+WARNING:ontocast.util.numeric_inventory:Numeric coverage: 42 missing mention(s) truncated to 30 for the prompt
+WARNING:ontocast.util.numeric_inventory:Numeric coverage: 42 missing mention(s) truncated to 30 for the prompt
+WARNING:ontocast.util.numeric_inventory:Numeric coverage: 42 missing mention(s) truncated to 30 for the prompt
+WARNING:ontocast.util.numeric_inventory:Numeric coverage: 42 missing mention(s) truncated to 30 for the prompt
+WARNING:ontocast.util.numeric_inventory:Numeric coverage: 42 missing mention(s) truncated to 30 for the prompt
+WARNING:ontocast.util.numeric_inventory:Numeric coverage: 42 missing mention(s) truncated to 30 for the prompt
+WARNING:ontocast.stategraph.atomic:Critic fix left the unit worse (new_mandatory; -29/+33 triples, mandatory 0 -> 1; introduced domain_violation) — rolling it back
+WARNING:ontocast.util.numeric_inventory:Numeric coverage: 42 missing mention(s) truncated to 30 for the prompt
+WARNING:ontocast.stategraph.atomic:Critic fix left the unit worse (new_mandatory; -9/+18 triples, mandatory 0 -> 3; introduced domain_violation x3) — rolling it back
+WARNING:ontocast.util.numeric_inventory:Numeric coverage: 42 missing mention(s) truncated to 30 for the prompt
+WARNING:ontocast.util.numeric_inventory:Numeric coverage: 42 missing mention(s) truncated to 30 for the prompt
+WARNING:ontocast.stategraph.atomic:Critic fix left the unit worse (delete_only; -14/+0 triples, mandatory 0 -> 0) — rolling it back
+WARNING:ontocast.util.numeric_inventory:Numeric coverage: 42 missing mention(s) truncated to 30 for the prompt
+WARNING:ontocast.util.numeric_inventory:Numeric coverage: 42 missing mention(s) truncated to 30 for the prompt
+WARNING:ontocast.util.numeric_inventory:Numeric coverage: 40 missing mention(s) truncated to 30 for the prompt
+WARNING:ontocast.util.numeric_inventory:Numeric coverage: 40 missing mention(s) truncated to 30 for the prompt
+WARNING:ontocast.util.numeric_inventory:Numeric coverage: 40 missing mention(s) truncated to 30 for the prompt
+INFO:ontocast.stategraph.atomic:facts unit clean after critic patch; marking SUCCESS
+INFO:ontocast.stategraph.atomic:Unit facts critic pass 1/1: 26 applied, 1 residual, 0 no-op, 3 rolled back
+INFO:ontocast.tool.agg.aggregate:Starting aggregation with metadata for 1 units
+INFO:ontocast.tool.agg.aggregate:Aggregation entity classification stats: fact=120 known_ontology=63 tentative_ontology=0
+INFO:ontocast.tool.agg.clustering:Embedding 123 entity representations in parallel...
+INFO:ontocast.tool.sentence_transformer:Loading sentence-transformer model: sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2 (device=auto)
+INFO:sentence_transformers.base.model:No device provided, using mps
+INFO:httpx:HTTP Request: HEAD https://huggingface.co/sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2/resolve/main/modules.json "HTTP/1.1 307 Temporary Redirect"
+INFO:httpx:HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2/e8f8c211226b894fcb81acc59f3b34ba3efd5f42/modules.json "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: HEAD https://huggingface.co/sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2/resolve/main/config_sentence_transformers.json "HTTP/1.1 307 Temporary Redirect"
+INFO:httpx:HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2/e8f8c211226b894fcb81acc59f3b34ba3efd5f42/config_sentence_transformers.json "HTTP/1.1 200 OK"
+INFO:sentence_transformers.base.model:Loading SentenceTransformer model from sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2.
+INFO:httpx:HTTP Request: HEAD https://huggingface.co/sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2/resolve/main/config_sentence_transformers.json "HTTP/1.1 307 Temporary Redirect"
+INFO:httpx:HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2/e8f8c211226b894fcb81acc59f3b34ba3efd5f42/config_sentence_transformers.json "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: HEAD https://huggingface.co/sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2/resolve/main/README.md "HTTP/1.1 307 Temporary Redirect"
+INFO:httpx:HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2/e8f8c211226b894fcb81acc59f3b34ba3efd5f42/README.md "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: HEAD https://huggingface.co/sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2/resolve/main/modules.json "HTTP/1.1 307 Temporary Redirect"
+INFO:httpx:HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2/e8f8c211226b894fcb81acc59f3b34ba3efd5f42/modules.json "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: HEAD https://huggingface.co/sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2/resolve/main/sentence_bert_config.json "HTTP/1.1 307 Temporary Redirect"
+INFO:httpx:HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2/e8f8c211226b894fcb81acc59f3b34ba3efd5f42/sentence_bert_config.json "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: HEAD https://huggingface.co/sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2/resolve/main/adapter_config.json "HTTP/1.1 404 Not Found"
+INFO:httpx:HTTP Request: HEAD https://huggingface.co/sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+INFO:httpx:HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2/e8f8c211226b894fcb81acc59f3b34ba3efd5f42/config.json "HTTP/1.1 200 OK"
+Loading weights:   0%|          | 0/199 [00:00<?, ?it/s]Loading weights: 100%|██████████| 199/199 [00:00<00:00, 5126.35it/s]
+INFO:httpx:HTTP Request: HEAD https://huggingface.co/sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2/resolve/main/processor_config.json "HTTP/1.1 404 Not Found"
+INFO:httpx:HTTP Request: HEAD https://huggingface.co/sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2/resolve/main/preprocessor_config.json "HTTP/1.1 404 Not Found"
+INFO:httpx:HTTP Request: HEAD https://huggingface.co/sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2/resolve/main/video_preprocessor_config.json "HTTP/1.1 404 Not Found"
+INFO:httpx:HTTP Request: HEAD https://huggingface.co/sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2/resolve/main/preprocessor_config.json "HTTP/1.1 404 Not Found"
+INFO:httpx:HTTP Request: HEAD https://huggingface.co/sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"
+INFO:httpx:HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2/e8f8c211226b894fcb81acc59f3b34ba3efd5f42/tokenizer_config.json "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: HEAD https://huggingface.co/sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+INFO:httpx:HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2/e8f8c211226b894fcb81acc59f3b34ba3efd5f42/config.json "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: HEAD https://huggingface.co/sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+INFO:httpx:HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2/e8f8c211226b894fcb81acc59f3b34ba3efd5f42/config.json "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: HEAD https://huggingface.co/sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"
+INFO:httpx:HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2/e8f8c211226b894fcb81acc59f3b34ba3efd5f42/tokenizer_config.json "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: HEAD https://huggingface.co/sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"
+INFO:httpx:HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2/e8f8c211226b894fcb81acc59f3b34ba3efd5f42/tokenizer_config.json "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://huggingface.co/api/models/sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+INFO:httpx:HTTP Request: GET https://huggingface.co/api/models/sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://huggingface.co/api/models/sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2 "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: HEAD https://huggingface.co/sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2/resolve/main/1_Pooling/config.json "HTTP/1.1 307 Temporary Redirect"
+INFO:httpx:HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2/e8f8c211226b894fcb81acc59f3b34ba3efd5f42/1_Pooling%2Fconfig.json "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://huggingface.co/api/models/sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2 "HTTP/1.1 200 OK"
+Batches:   0%|          | 0/4 [00:00<?, ?it/s]Batches:  25%|██▌       | 1/4 [00:00<00:00,  6.90it/s]Batches:  75%|███████▌  | 3/4 [00:00<00:00,  9.51it/s]Batches: 100%|██████████| 4/4 [00:00<00:00, 10.08it/s]
+INFO:ontocast.tool.agg.clustering:Embedded 123 entities
+INFO:ontocast.tool.agg.clustering:Clustering 123 entities...
+INFO:ontocast.tool.agg.clustering:Formed 16 clusters: 9 singletons, 7 multi-entity clusters, max cluster size: 94
+INFO:ontocast.tool.agg.clustering:Embedding 28 entity representations in parallel...
+INFO:ontocast.tool.agg.clustering:Embedded 28 entities
+INFO:ontocast.tool.agg.clustering:Clustering 28 entities...
+INFO:ontocast.tool.agg.clustering:Formed 17 clusters: 10 singletons, 7 multi-entity clusters, max cluster size: 4
+INFO:ontocast.tool.agg.clustering:Embedding 32 entity representations in parallel...
+INFO:ontocast.tool.agg.clustering:Embedded 32 entities
+INFO:ontocast.tool.agg.clustering:Clustering 32 entities...
+INFO:ontocast.tool.agg.clustering:Formed 15 clusters: 10 singletons, 5 multi-entity clusters, max cluster size: 11
+INFO:ontocast.tool.agg.aggregate:Rejected 536 candidate merges after symbolic validation
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: http://www.ontologyrepository.com/CommonCoreOntologies/HourMeasurementUnit <-> http://www.ontologyrepository.com/CommonCoreOntologies/MinuteMeasurementUnit (score=0.837, failed=lexical)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: http://www.ontologyrepository.com/CommonCoreOntologies/HourMeasurementUnit <-> http://www.ontologyrepository.com/CommonCoreOntologies/MonthMeasurementUnit (score=0.778, failed=lexical)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: http://www.ontologyrepository.com/CommonCoreOntologies/HourMeasurementUnit <-> https://growgraph.dev/facts/full_day__u0 (score=0.724, failed=lexical)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: http://www.ontologyrepository.com/CommonCoreOntologies/HourMeasurementUnit <-> https://growgraph.dev/facts/full_day_hours__u0 (score=0.736, failed=lexical)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: http://www.ontologyrepository.com/CommonCoreOntologies/MinuteMeasurementUnit <-> http://www.ontologyrepository.com/CommonCoreOntologies/MonthMeasurementUnit (score=0.772, failed=lexical)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: http://www.ontologyrepository.com/CommonCoreOntologies/MinuteMeasurementUnit <-> https://growgraph.dev/facts/down_time__u0 (score=0.772, failed=sibling,lexical)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: http://www.ontologyrepository.com/CommonCoreOntologies/MinuteMeasurementUnit <-> https://growgraph.dev/facts/dt_min__u0 (score=0.760, failed=lexical)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: http://www.ontologyrepository.com/CommonCoreOntologies/MinuteMeasurementUnit <-> https://growgraph.dev/facts/v1d_dt__u0 (score=0.706, failed=lexical)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: https://growgraph.dev/facts/alarm_severity__u0 <-> https://growgraph.dev/facts/v1a_alarm__u0 (score=0.760, failed=functional_iri_conflict,type,lexical)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: https://growgraph.dev/facts/alarm_severity__u0 <-> https://growgraph.dev/facts/v1b_alarm__u0 (score=0.722, failed=functional_iri_conflict,type,lexical)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: https://growgraph.dev/facts/alarm_severity__u0 <-> https://growgraph.dev/facts/v1c_alarm__u0 (score=0.732, failed=functional_iri_conflict,type,lexical)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: https://growgraph.dev/facts/alarm_severity__u0 <-> https://growgraph.dev/facts/v1d_alarm__u0 (score=0.729, failed=functional_iri_conflict,type,lexical)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: https://growgraph.dev/facts/article__u0 <-> https://growgraph.dev/facts/article_title__u0 (score=0.887, failed=type)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: https://growgraph.dev/facts/article__u0 <-> https://growgraph.dev/facts/fuzzy_early_warning_module__u0 (score=0.754, failed=type,lexical)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: https://growgraph.dev/facts/article__u0 <-> https://growgraph.dev/facts/fuzzy_inference_model__u0 (score=0.739, failed=type,lexical)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: https://growgraph.dev/facts/article_title__u0 <-> https://growgraph.dev/facts/fuzzy_early_warning_module__u0 (score=0.712, failed=type,lexical)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: https://growgraph.dev/facts/dt_max__u0 <-> https://growgraph.dev/facts/dt_max_std__u0 (score=0.837, failed=literal_conflict,lexical)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: https://growgraph.dev/facts/dt_max__u0 <-> https://growgraph.dev/facts/dt_mean__u0 (score=0.752, failed=literal_conflict,lexical)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: https://growgraph.dev/facts/dt_max__u0 <-> https://growgraph.dev/facts/dt_min__u0 (score=0.908, failed=literal_conflict,lexical)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: https://growgraph.dev/facts/dt_max__u0 <-> https://growgraph.dev/facts/oeie_max__u0 (score=0.753, failed=literal_conflict,functional_iri_conflict,lexical)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: https://growgraph.dev/facts/dt_max__u0 <-> https://growgraph.dev/facts/scr_max__u0 (score=0.740, failed=literal_conflict,functional_iri_conflict,initials_conflict,lexical)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: https://growgraph.dev/facts/dt_max__u0 <-> https://growgraph.dev/facts/v1b_dt__u0 (score=0.753, failed=literal_conflict,lexical)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: https://growgraph.dev/facts/dt_max__u0 <-> https://growgraph.dev/facts/v1c_dt__u0 (score=0.707, failed=literal_conflict,lexical)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: https://growgraph.dev/facts/dt_max__u0 <-> https://growgraph.dev/facts/v1d_dt__u0 (score=0.763, failed=literal_conflict,lexical)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: https://growgraph.dev/facts/dt_max__u0 <-> https://growgraph.dev/facts/v2a_dt__u0 (score=0.777, failed=literal_conflict,lexical)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: https://growgraph.dev/facts/dt_max__u0 <-> https://growgraph.dev/facts/v2e_dt__u0 (score=0.712, failed=literal_conflict,lexical)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: https://growgraph.dev/facts/dt_max_std__u0 <-> https://growgraph.dev/facts/dt_mean__u0 (score=0.729, failed=literal_conflict,lexical)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: https://growgraph.dev/facts/dt_max_std__u0 <-> https://growgraph.dev/facts/dt_mean_std__u0 (score=0.852, failed=literal_conflict,lexical)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: https://growgraph.dev/facts/dt_max_std__u0 <-> https://growgraph.dev/facts/dt_min__u0 (score=0.771, failed=literal_conflict,lexical)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: https://growgraph.dev/facts/dt_max_std__u0 <-> https://growgraph.dev/facts/dt_min_std__u0 (score=0.872, failed=literal_conflict,lexical)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: https://growgraph.dev/facts/dt_max_std__u0 <-> https://growgraph.dev/facts/oeie_max_std__u0 (score=0.789, failed=literal_conflict,functional_iri_conflict,lexical)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: https://growgraph.dev/facts/dt_max_std__u0 <-> https://growgraph.dev/facts/scp_max_std__u0 (score=0.747, failed=literal_conflict,functional_iri_conflict,initials_conflict,lexical)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: https://growgraph.dev/facts/dt_max_std__u0 <-> https://growgraph.dev/facts/scr_max_std__u0 (score=0.768, failed=literal_conflict,functional_iri_conflict,initials_conflict,lexical)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: https://growgraph.dev/facts/dt_max_std__u0 <-> https://growgraph.dev/facts/v1b_dt__u0 (score=0.716, failed=literal_conflict,lexical)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: https://growgraph.dev/facts/dt_max_std__u0 <-> https://growgraph.dev/facts/v1d_dt__u0 (score=0.748, failed=literal_conflict,lexical)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: https://growgraph.dev/facts/dt_max_std__u0 <-> https://growgraph.dev/facts/v2a_dt__u0 (score=0.712, failed=literal_conflict,lexical)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: https://growgraph.dev/facts/dt_mean__u0 <-> https://growgraph.dev/facts/dt_mean_std__u0 (score=0.831, failed=literal_conflict,lexical)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: https://growgraph.dev/facts/dt_mean__u0 <-> https://growgraph.dev/facts/dt_min__u0 (score=0.802, failed=literal_conflict,lexical)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: https://growgraph.dev/facts/dt_mean__u0 <-> https://growgraph.dev/facts/dt_min_std__u0 (score=0.730, failed=literal_conflict,lexical)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: https://growgraph.dev/facts/dt_mean__u0 <-> https://growgraph.dev/facts/v1a_dt__u0 (score=0.728, failed=literal_conflict,lexical)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: https://growgraph.dev/facts/dt_mean__u0 <-> https://growgraph.dev/facts/v1b_dt__u0 (score=0.737, failed=literal_conflict,lexical)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: https://growgraph.dev/facts/dt_mean__u0 <-> https://growgraph.dev/facts/v1c_dt__u0 (score=0.714, failed=literal_conflict,lexical)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: https://growgraph.dev/facts/dt_mean__u0 <-> https://growgraph.dev/facts/v1d_dt__u0 (score=0.762, failed=literal_conflict,lexical)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: https://growgraph.dev/facts/dt_mean__u0 <-> https://growgraph.dev/facts/v2a_dt__u0 (score=0.727, failed=literal_conflict,lexical)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: https://growgraph.dev/facts/dt_mean__u0 <-> https://growgraph.dev/facts/v2e_dt__u0 (score=0.701, failed=literal_conflict,lexical)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: https://growgraph.dev/facts/dt_mean_std__u0 <-> https://growgraph.dev/facts/dt_min_std__u0 (score=0.875, failed=literal_conflict,lexical)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: https://growgraph.dev/facts/dt_mean_std__u0 <-> https://growgraph.dev/facts/oeie_mean_std__u0 (score=0.777, failed=literal_conflict,functional_iri_conflict,lexical)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: https://growgraph.dev/facts/dt_mean_std__u0 <-> https://growgraph.dev/facts/scp_mean_std__u0 (score=0.729, failed=literal_conflict,functional_iri_conflict,initials_conflict,lexical)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: https://growgraph.dev/facts/dt_mean_std__u0 <-> https://growgraph.dev/facts/scr_mean_std__u0 (score=0.749, failed=literal_conflict,functional_iri_conflict,initials_conflict,lexical)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: https://growgraph.dev/facts/dt_mean_std__u0 <-> https://growgraph.dev/facts/v1b_dt__u0 (score=0.706, failed=literal_conflict,lexical)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: https://growgraph.dev/facts/dt_mean_std__u0 <-> https://growgraph.dev/facts/v1d_dt__u0 (score=0.756, failed=literal_conflict,lexical)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: https://growgraph.dev/facts/dt_min__u0 <-> https://growgraph.dev/facts/dt_min_std__u0 (score=0.747, failed=literal_conflict,lexical)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: https://growgraph.dev/facts/dt_min__u0 <-> https://growgraph.dev/facts/oeie_min__u0 (score=0.737, failed=literal_conflict,functional_iri_conflict,lexical)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: https://growgraph.dev/facts/dt_min__u0 <-> https://growgraph.dev/facts/scr_min__u0 (score=0.723, failed=literal_conflict,functional_iri_conflict,initials_conflict,lexical)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: https://growgraph.dev/facts/dt_min__u0 <-> https://growgraph.dev/facts/v1a_dt__u0 (score=0.741, failed=literal_conflict,lexical)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: https://growgraph.dev/facts/dt_min__u0 <-> https://growgraph.dev/facts/v1b_dt__u0 (score=0.775, failed=literal_conflict,lexical)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: https://growgraph.dev/facts/dt_min__u0 <-> https://growgraph.dev/facts/v1c_dt__u0 (score=0.744, failed=literal_conflict,lexical)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: https://growgraph.dev/facts/dt_min__u0 <-> https://growgraph.dev/facts/v1d_dt__u0 (score=0.804, failed=literal_conflict,lexical)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: https://growgraph.dev/facts/dt_min__u0 <-> https://growgraph.dev/facts/v2a_dt__u0 (score=0.818, failed=literal_conflict,lexical)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: https://growgraph.dev/facts/dt_min__u0 <-> https://growgraph.dev/facts/v2e_dt__u0 (score=0.739, failed=literal_conflict,lexical)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: https://growgraph.dev/facts/dt_min_std__u0 <-> https://growgraph.dev/facts/oeie_min_std__u0 (score=0.819, failed=literal_conflict,functional_iri_conflict,lexical)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: https://growgraph.dev/facts/dt_min_std__u0 <-> https://growgraph.dev/facts/scp_min_std__u0 (score=0.777, failed=literal_conflict,functional_iri_conflict,initials_conflict,lexical)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: https://growgraph.dev/facts/dt_min_std__u0 <-> https://growgraph.dev/facts/scr_min_std__u0 (score=0.799, failed=literal_conflict,functional_iri_conflict,initials_conflict,lexical)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: https://growgraph.dev/facts/dt_min_std__u0 <-> https://growgraph.dev/facts/v1b_dt__u0 (score=0.713, failed=literal_conflict,lexical)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: https://growgraph.dev/facts/dt_min_std__u0 <-> https://growgraph.dev/facts/v1d_dt__u0 (score=0.753, failed=literal_conflict,lexical)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: https://growgraph.dev/facts/full_day__u0 <-> https://growgraph.dev/facts/full_day_hours__u0 (score=0.955, failed=literal_conflict,functional_iri_conflict)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: https://growgraph.dev/facts/fuzzy_early_warning_module__u0 <-> https://growgraph.dev/facts/fuzzy_inference_model__u0 (score=0.877, failed=type)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: https://growgraph.dev/facts/fuzzy_inference_model__u0 <-> https://growgraph.dev/facts/model_configuration__u0 (score=0.754, failed=type,lexical)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: https://growgraph.dev/facts/fuzzy_inference_model__u0 <-> https://growgraph.dev/facts/simulation_fifth__u0 (score=0.703, failed=type,lexical)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: https://growgraph.dev/facts/model_configuration__u0 <-> https://growgraph.dev/facts/rule_configuration__u0 (score=0.804, failed=sibling,literal_conflict,lexical)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: https://growgraph.dev/facts/oeie_max__u0 <-> https://growgraph.dev/facts/oeie_max_std__u0 (score=0.809, failed=literal_conflict,type,lexical)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: https://growgraph.dev/facts/oeie_max__u0 <-> https://growgraph.dev/facts/oeie_min__u0 (score=0.896, failed=literal_conflict,type,lexical)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: https://growgraph.dev/facts/oeie_max__u0 <-> https://growgraph.dev/facts/scp_max__u0 (score=0.709, failed=literal_conflict,functional_iri_conflict,lexical)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: https://growgraph.dev/facts/oeie_max__u0 <-> https://growgraph.dev/facts/scr_max__u0 (score=0.761, failed=literal_conflict,functional_iri_conflict,lexical)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: https://growgraph.dev/facts/oeie_max__u0 <-> https://growgraph.dev/facts/v1b_oeie__u0 (score=0.719, failed=literal_conflict,type,lexical)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: https://growgraph.dev/facts/oeie_max__u0 <-> https://growgraph.dev/facts/v1d_oeie__u0 (score=0.722, failed=literal_conflict,type,lexical)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: https://growgraph.dev/facts/oeie_max__u0 <-> https://growgraph.dev/facts/v2a_oeie__u0 (score=0.705, failed=literal_conflict,type,lexical)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: https://growgraph.dev/facts/oeie_max_std__u0 <-> https://growgraph.dev/facts/oeie_mean_std__u0 (score=0.814, failed=literal_conflict,lexical)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: https://growgraph.dev/facts/oeie_max_std__u0 <-> https://growgraph.dev/facts/oeie_min__u0 (score=0.726, failed=literal_conflict,type,lexical)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: https://growgraph.dev/facts/oeie_max_std__u0 <-> https://growgraph.dev/facts/oeie_min_std__u0 (score=0.851, failed=literal_conflict,lexical)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: https://growgraph.dev/facts/oeie_max_std__u0 <-> https://growgraph.dev/facts/scp_max_std__u0 (score=0.712, failed=literal_conflict,functional_iri_conflict,lexical)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: https://growgraph.dev/facts/oeie_max_std__u0 <-> https://growgraph.dev/facts/scr_max_std__u0 (score=0.741, failed=literal_conflict,functional_iri_conflict,lexical)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: https://growgraph.dev/facts/oeie_max_std__u0 <-> https://growgraph.dev/facts/v1b_oeie__u0 (score=0.704, failed=literal_conflict,type,lexical)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: https://growgraph.dev/facts/oeie_max_std__u0 <-> https://growgraph.dev/facts/v1d_oeie__u0 (score=0.721, failed=literal_conflict,type,lexical)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: https://growgraph.dev/facts/oeie_mean__u0 <-> https://growgraph.dev/facts/oeie_mean_std__u0 (score=0.786, failed=literal_conflict,type,lexical)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: https://growgraph.dev/facts/oeie_mean__u0 <-> https://growgraph.dev/facts/oeie_min__u0 (score=0.715, failed=literal_conflict,type,lexical)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: https://growgraph.dev/facts/oeie_mean__u0 <-> https://growgraph.dev/facts/v1a_oeie__u0 (score=0.742, failed=literal_conflict,type,lexical)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: https://growgraph.dev/facts/oeie_mean__u0 <-> https://growgraph.dev/facts/v1b_oeie__u0 (score=0.752, failed=literal_conflict,type,lexical)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: https://growgraph.dev/facts/oeie_mean__u0 <-> https://growgraph.dev/facts/v1c_oeie__u0 (score=0.715, failed=literal_conflict,type,lexical)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: https://growgraph.dev/facts/oeie_mean__u0 <-> https://growgraph.dev/facts/v1d_oeie__u0 (score=0.755, failed=literal_conflict,type,lexical)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: https://growgraph.dev/facts/oeie_mean__u0 <-> https://growgraph.dev/facts/v2b_oeie__u0 (score=0.703, failed=literal_conflict,type,lexical)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: https://growgraph.dev/facts/oeie_mean_std__u0 <-> https://growgraph.dev/facts/oeie_min_std__u0 (score=0.856, failed=literal_conflict,lexical)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: https://growgraph.dev/facts/oeie_mean_std__u0 <-> https://growgraph.dev/facts/scp_mean_std__u0 (score=0.702, failed=literal_conflict,functional_iri_conflict,lexical)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: https://growgraph.dev/facts/oeie_mean_std__u0 <-> https://growgraph.dev/facts/scr_mean_std__u0 (score=0.742, failed=literal_conflict,functional_iri_conflict,lexical)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: https://growgraph.dev/facts/oeie_mean_std__u0 <-> https://growgraph.dev/facts/v1d_oeie__u0 (score=0.732, failed=literal_conflict,type,lexical)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: https://growgraph.dev/facts/oeie_min__u0 <-> https://growgraph.dev/facts/scr_min__u0 (score=0.725, failed=literal_conflict,functional_iri_conflict,lexical)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: https://growgraph.dev/facts/oeie_min__u0 <-> https://growgraph.dev/facts/v1a_oeie__u0 (score=0.738, failed=literal_conflict,type,lexical)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: https://growgraph.dev/facts/oeie_min__u0 <-> https://growgraph.dev/facts/v1b_oeie__u0 (score=0.755, failed=literal_conflict,type,lexical)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: https://growgraph.dev/facts/oeie_min__u0 <-> https://growgraph.dev/facts/v1c_oeie__u0 (score=0.731, failed=literal_conflict,type,lexical)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: https://growgraph.dev/facts/oeie_min__u0 <-> https://growgraph.dev/facts/v1d_oeie__u0 (score=0.765, failed=literal_conflict,type,lexical)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: https://growgraph.dev/facts/oeie_min__u0 <-> https://growgraph.dev/facts/v2a_oeie__u0 (score=0.777, failed=literal_conflict,type,lexical)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: https://growgraph.dev/facts/oeie_min__u0 <-> https://growgraph.dev/facts/v2b_oeie__u0 (score=0.718, failed=literal_conflict,type,lexical)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: https://growgraph.dev/facts/oeie_min_std__u0 <-> https://growgraph.dev/facts/scp_min_std__u0 (score=0.740, failed=literal_conflict,functional_iri_conflict,lexical)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: https://growgraph.dev/facts/oeie_min_std__u0 <-> https://growgraph.dev/facts/scr_min_std__u0 (score=0.783, failed=literal_conflict,functional_iri_conflict,lexical)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: https://growgraph.dev/facts/oeie_min_std__u0 <-> https://growgraph.dev/facts/v1b_oeie__u0 (score=0.716, failed=literal_conflict,type,lexical)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: https://growgraph.dev/facts/oeie_min_std__u0 <-> https://growgraph.dev/facts/v1d_oeie__u0 (score=0.735, failed=literal_conflict,type,lexical)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: https://growgraph.dev/facts/rule_1__u0 <-> https://growgraph.dev/facts/rule_6__u0 (score=0.746, failed=sibling,literal_conflict)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: https://growgraph.dev/facts/rule_1__u0 <-> https://growgraph.dev/facts/v2d_alarm__u0 (score=0.601, failed=type)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: https://growgraph.dev/facts/rule_6__u0 <-> https://growgraph.dev/facts/v2c_alarm__u0 (score=0.706, failed=sibling,type)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: https://growgraph.dev/facts/rule_6__u0 <-> https://growgraph.dev/facts/v2d_alarm__u0 (score=0.678, failed=sibling,type)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: https://growgraph.dev/facts/rule_6__u0 <-> https://growgraph.dev/facts/validation_2c__u0 (score=0.798, failed=sibling,type,lexical)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: https://growgraph.dev/facts/rule_6__u0 <-> https://growgraph.dev/facts/validation_2d__u0 (score=0.783, failed=sibling,type,lexical)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: https://growgraph.dev/facts/scp_max__u0 <-> https://growgraph.dev/facts/scp_max_std__u0 (score=0.811, failed=literal_conflict,type,lexical)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: https://growgraph.dev/facts/scp_max__u0 <-> https://growgraph.dev/facts/scp_min__u0 (score=0.868, failed=literal_conflict,type,lexical)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: https://growgraph.dev/facts/scp_max__u0 <-> https://growgraph.dev/facts/scr_max__u0 (score=0.925, failed=literal_conflict,functional_iri_conflict,lexical)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: https://growgraph.dev/facts/scp_max__u0 <-> https://growgraph.dev/facts/scr_max_std__u0 (score=0.737, failed=literal_conflict,functional_iri_conflict,type,lexical)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: https://growgraph.dev/facts/scp_max__u0 <-> https://growgraph.dev/facts/scr_min__u0 (score=0.789, failed=literal_conflict,functional_iri_conflict,type,lexical)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: https://growgraph.dev/facts/scp_max__u0 <-> https://growgraph.dev/facts/v2a_scp__u0 (score=0.702, failed=literal_conflict,type,lexical)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: https://growgraph.dev/facts/scp_max_std__u0 <-> https://growgraph.dev/facts/scp_mean_std__u0 (score=0.820, failed=literal_conflict,lexical)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: https://growgraph.dev/facts/scp_max_std__u0 <-> https://growgraph.dev/facts/scp_min__u0 (score=0.720, failed=literal_conflict,type,lexical)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: https://growgraph.dev/facts/scp_max_std__u0 <-> https://growgraph.dev/facts/scp_min_std__u0 (score=0.868, failed=literal_conflict,lexical)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: https://growgraph.dev/facts/scp_max_std__u0 <-> https://growgraph.dev/facts/scr_max__u0 (score=0.757, failed=literal_conflict,functional_iri_conflict,type,lexical)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: https://growgraph.dev/facts/scp_max_std__u0 <-> https://growgraph.dev/facts/scr_max_std__u0 (score=0.938, failed=literal_conflict,functional_iri_conflict,lexical)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: https://growgraph.dev/facts/scp_max_std__u0 <-> https://growgraph.dev/facts/scr_mean_std__u0 (score=0.746, failed=literal_conflict,functional_iri_conflict,lexical)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: https://growgraph.dev/facts/scp_max_std__u0 <-> https://growgraph.dev/facts/scr_min_std__u0 (score=0.787, failed=literal_conflict,functional_iri_conflict,lexical)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: https://growgraph.dev/facts/scp_max_std__u0 <-> https://growgraph.dev/facts/v1b_scp__u0 (score=0.706, failed=literal_conflict,type,lexical)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: https://growgraph.dev/facts/scp_max_std__u0 <-> https://growgraph.dev/facts/v1d_scp__u0 (score=0.716, failed=literal_conflict,type,lexical)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: https://growgraph.dev/facts/scp_mean__u0 <-> https://growgraph.dev/facts/scp_mean_std__u0 (score=0.809, failed=literal_conflict,type,lexical)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: https://growgraph.dev/facts/scp_mean__u0 <-> https://growgraph.dev/facts/scr_mean__u0 (score=0.805, failed=literal_conflict,functional_iri_conflict,lexical)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: https://growgraph.dev/facts/scp_mean__u0 <-> https://growgraph.dev/facts/v1b_scp__u0 (score=0.700, failed=literal_conflict,type,lexical)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: https://growgraph.dev/facts/scp_mean__u0 <-> https://growgraph.dev/facts/v1d_scp__u0 (score=0.709, failed=literal_conflict,type,lexical)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: https://growgraph.dev/facts/scp_mean_std__u0 <-> https://growgraph.dev/facts/scp_min_std__u0 (score=0.862, failed=literal_conflict,lexical)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: https://growgraph.dev/facts/scp_mean_std__u0 <-> https://growgraph.dev/facts/scr_max_std__u0 (score=0.755, failed=literal_conflict,functional_iri_conflict,lexical)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: https://growgraph.dev/facts/scp_mean_std__u0 <-> https://growgraph.dev/facts/scr_mean__u0 (score=0.720, failed=literal_conflict,functional_iri_conflict,type,lexical)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: https://growgraph.dev/facts/scp_mean_std__u0 <-> https://growgraph.dev/facts/scr_mean_std__u0 (score=0.921, failed=literal_conflict,functional_iri_conflict,lexical)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: https://growgraph.dev/facts/scp_mean_std__u0 <-> https://growgraph.dev/facts/scr_min_std__u0 (score=0.784, failed=literal_conflict,functional_iri_conflict,lexical)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: https://growgraph.dev/facts/scp_mean_std__u0 <-> https://growgraph.dev/facts/v1b_scp__u0 (score=0.709, failed=literal_conflict,type,lexical)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: https://growgraph.dev/facts/scp_mean_std__u0 <-> https://growgraph.dev/facts/v1d_scp__u0 (score=0.730, failed=literal_conflict,type,lexical)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: https://growgraph.dev/facts/scp_min__u0 <-> https://growgraph.dev/facts/scr_max__u0 (score=0.797, failed=literal_conflict,functional_iri_conflict,type,lexical)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: https://growgraph.dev/facts/scp_min__u0 <-> https://growgraph.dev/facts/scr_min__u0 (score=0.916, failed=literal_conflict,functional_iri_conflict,lexical)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: https://growgraph.dev/facts/scp_min__u0 <-> https://growgraph.dev/facts/v1a_scp__u0 (score=0.711, failed=literal_conflict,type,lexical)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: https://growgraph.dev/facts/scp_min__u0 <-> https://growgraph.dev/facts/v1b_scp__u0 (score=0.732, failed=literal_conflict,type,lexical)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: https://growgraph.dev/facts/scp_min__u0 <-> https://growgraph.dev/facts/v1c_scp__u0 (score=0.719, failed=literal_conflict,type,lexical)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: https://growgraph.dev/facts/scp_min__u0 <-> https://growgraph.dev/facts/v1d_scp__u0 (score=0.750, failed=literal_conflict,type,lexical)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: https://growgraph.dev/facts/scp_min__u0 <-> https://growgraph.dev/facts/v2a_scp__u0 (score=0.766, failed=literal_conflict,type,lexical)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: https://growgraph.dev/facts/scp_min_std__u0 <-> https://growgraph.dev/facts/scr_max_std__u0 (score=0.825, failed=literal_conflict,functional_iri_conflict,lexical)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: https://growgraph.dev/facts/scp_min_std__u0 <-> https://growgraph.dev/facts/scr_mean_std__u0 (score=0.805, failed=literal_conflict,functional_iri_conflict,lexical)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: https://growgraph.dev/facts/scp_min_std__u0 <-> https://growgraph.dev/facts/scr_min_std__u0 (score=0.939, failed=literal_conflict,functional_iri_conflict,lexical)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: https://growgraph.dev/facts/scp_min_std__u0 <-> https://growgraph.dev/facts/v1b_scp__u0 (score=0.730, failed=literal_conflict,type,lexical)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: https://growgraph.dev/facts/scp_min_std__u0 <-> https://growgraph.dev/facts/v1d_scp__u0 (score=0.736, failed=literal_conflict,type,lexical)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: https://growgraph.dev/facts/scr_max__u0 <-> https://growgraph.dev/facts/scr_max_std__u0 (score=0.814, failed=literal_conflict,type,lexical)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: https://growgraph.dev/facts/scr_max__u0 <-> https://growgraph.dev/facts/scr_min__u0 (score=0.873, failed=literal_conflict,type,lexical)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: https://growgraph.dev/facts/scr_max__u0 <-> https://growgraph.dev/facts/v1b_scr__u0 (score=0.701, failed=literal_conflict,type,lexical)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: https://growgraph.dev/facts/scr_max__u0 <-> https://growgraph.dev/facts/v2a_scr__u0 (score=0.715, failed=literal_conflict,type,lexical)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: https://growgraph.dev/facts/scr_max_std__u0 <-> https://growgraph.dev/facts/scr_mean__u0 (score=0.720, failed=literal_conflict,type,lexical)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: https://growgraph.dev/facts/scr_max_std__u0 <-> https://growgraph.dev/facts/scr_mean_std__u0 (score=0.817, failed=literal_conflict,lexical)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: https://growgraph.dev/facts/scr_max_std__u0 <-> https://growgraph.dev/facts/scr_min__u0 (score=0.745, failed=literal_conflict,type,lexical)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: https://growgraph.dev/facts/scr_max_std__u0 <-> https://growgraph.dev/facts/scr_min_std__u0 (score=0.864, failed=literal_conflict,lexical)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: https://growgraph.dev/facts/scr_max_std__u0 <-> https://growgraph.dev/facts/v1b_scr__u0 (score=0.722, failed=literal_conflict,type,lexical)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: https://growgraph.dev/facts/scr_max_std__u0 <-> https://growgraph.dev/facts/v1d_scr__u0 (score=0.727, failed=literal_conflict,type,lexical)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: https://growgraph.dev/facts/scr_max_std__u0 <-> https://growgraph.dev/facts/v2c_scr__u0 (score=0.703, failed=literal_conflict,type,lexical)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: https://growgraph.dev/facts/scr_mean__u0 <-> https://growgraph.dev/facts/scr_mean_std__u0 (score=0.831, failed=literal_conflict,type,lexical)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: https://growgraph.dev/facts/scr_mean__u0 <-> https://growgraph.dev/facts/scr_min_std__u0 (score=0.731, failed=literal_conflict,type,lexical)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: https://growgraph.dev/facts/scr_mean__u0 <-> https://growgraph.dev/facts/v1b_scr__u0 (score=0.706, failed=literal_conflict,type,lexical)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: https://growgraph.dev/facts/scr_mean__u0 <-> https://growgraph.dev/facts/v1d_scr__u0 (score=0.711, failed=literal_conflict,type,lexical)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: https://growgraph.dev/facts/scr_mean_std__u0 <-> https://growgraph.dev/facts/scr_min_std__u0 (score=0.862, failed=literal_conflict,lexical)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: https://growgraph.dev/facts/scr_mean_std__u0 <-> https://growgraph.dev/facts/v1b_scr__u0 (score=0.717, failed=literal_conflict,type,lexical)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: https://growgraph.dev/facts/scr_mean_std__u0 <-> https://growgraph.dev/facts/v1d_scr__u0 (score=0.746, failed=literal_conflict,type,lexical)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: https://growgraph.dev/facts/scr_min__u0 <-> https://growgraph.dev/facts/scr_min_std__u0 (score=0.714, failed=literal_conflict,type,lexical)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: https://growgraph.dev/facts/scr_min__u0 <-> https://growgraph.dev/facts/v1a_scr__u0 (score=0.745, failed=literal_conflict,type,lexical)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: https://growgraph.dev/facts/scr_min__u0 <-> https://growgraph.dev/facts/v1b_scr__u0 (score=0.753, failed=literal_conflict,type,lexical)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: https://growgraph.dev/facts/scr_min__u0 <-> https://growgraph.dev/facts/v1c_scr__u0 (score=0.749, failed=literal_conflict,type,lexical)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: https://growgraph.dev/facts/scr_min__u0 <-> https://growgraph.dev/facts/v1d_scr__u0 (score=0.767, failed=literal_conflict,type,lexical)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: https://growgraph.dev/facts/scr_min__u0 <-> https://growgraph.dev/facts/v2a_scp__u0 (score=0.741, failed=literal_conflict,functional_iri_conflict,type,lexical)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: https://growgraph.dev/facts/scr_min__u0 <-> https://growgraph.dev/facts/v2a_scr__u0 (score=0.794, failed=literal_conflict,type,lexical)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: https://growgraph.dev/facts/scr_min_std__u0 <-> https://growgraph.dev/facts/v1a_scr__u0 (score=0.719, failed=literal_conflict,type,lexical)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: https://growgraph.dev/facts/scr_min_std__u0 <-> https://growgraph.dev/facts/v1b_scr__u0 (score=0.740, failed=literal_conflict,type,lexical)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: https://growgraph.dev/facts/scr_min_std__u0 <-> https://growgraph.dev/facts/v1c_scr__u0 (score=0.710, failed=literal_conflict,type,lexical)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: https://growgraph.dev/facts/scr_min_std__u0 <-> https://growgraph.dev/facts/v1d_scr__u0 (score=0.746, failed=literal_conflict,type,lexical)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: https://growgraph.dev/facts/scr_min_std__u0 <-> https://growgraph.dev/facts/v2a_scr__u0 (score=0.711, failed=literal_conflict,type,lexical)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: https://growgraph.dev/facts/sim1_dt__u0 <-> https://growgraph.dev/facts/sim1_oeie__u0 (score=0.846, failed=sibling,literal_conflict,functional_iri_conflict,lexical)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: https://growgraph.dev/facts/sim1_dt__u0 <-> https://growgraph.dev/facts/sim1_scp__u0 (score=0.844, failed=sibling,literal_conflict,functional_iri_conflict,lexical)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: https://growgraph.dev/facts/sim1_dt__u0 <-> https://growgraph.dev/facts/sim1_scr__u0 (score=0.854, failed=sibling,literal_conflict,functional_iri_conflict,lexical)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: https://growgraph.dev/facts/sim1_dt__u0 <-> https://growgraph.dev/facts/v1a_dt__u0 (score=0.706, failed=literal_conflict,lexical)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: https://growgraph.dev/facts/sim1_dt__u0 <-> https://growgraph.dev/facts/v1b_dt__u0 (score=0.702, failed=literal_conflict,lexical)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: https://growgraph.dev/facts/sim1_dt__u0 <-> https://growgraph.dev/facts/v1c_dt__u0 (score=0.709, failed=literal_conflict,lexical)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: https://growgraph.dev/facts/sim1_dt__u0 <-> https://growgraph.dev/facts/v1d_dt__u0 (score=0.717, failed=lexical)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: https://growgraph.dev/facts/sim1_oeie__u0 <-> https://growgraph.dev/facts/sim1_scp__u0 (score=0.793, failed=sibling,literal_conflict,functional_iri_conflict,lexical)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: https://growgraph.dev/facts/sim1_oeie__u0 <-> https://growgraph.dev/facts/sim1_scr__u0 (score=0.821, failed=sibling,literal_conflict,functional_iri_conflict,lexical)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: https://growgraph.dev/facts/sim1_oeie__u0 <-> https://growgraph.dev/facts/v1a_oeie__u0 (score=0.762, failed=literal_conflict,lexical)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: https://growgraph.dev/facts/sim1_oeie__u0 <-> https://growgraph.dev/facts/v1b_oeie__u0 (score=0.745, failed=literal_conflict,lexical)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: https://growgraph.dev/facts/sim1_oeie__u0 <-> https://growgraph.dev/facts/v1c_oeie__u0 (score=0.769, failed=literal_conflict,lexical)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: https://growgraph.dev/facts/sim1_oeie__u0 <-> https://growgraph.dev/facts/v1d_oeie__u0 (score=0.760, failed=lexical)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: https://growgraph.dev/facts/sim1_oeie__u0 <-> https://growgraph.dev/facts/v2a_oeie__u0 (score=0.762, failed=literal_conflict,lexical)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: https://growgraph.dev/facts/sim1_scp__u0 <-> https://growgraph.dev/facts/sim1_scr__u0 (score=0.926, failed=sibling,literal_conflict,functional_iri_conflict,lexical)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: https://growgraph.dev/facts/sim1_scp__u0 <-> https://growgraph.dev/facts/v1a_scp__u0 (score=0.723, failed=literal_conflict,lexical)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: https://growgraph.dev/facts/sim1_scp__u0 <-> https://growgraph.dev/facts/v1b_scp__u0 (score=0.718, failed=literal_conflict,lexical)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: https://growgraph.dev/facts/sim1_scp__u0 <-> https://growgraph.dev/facts/v1c_scp__u0 (score=0.735, failed=literal_conflict,lexical)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: https://growgraph.dev/facts/sim1_scp__u0 <-> https://growgraph.dev/facts/v1d_scp__u0 (score=0.739, failed=lexical)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: https://growgraph.dev/facts/sim1_scp__u0 <-> https://growgraph.dev/facts/v2a_scp__u0 (score=0.712, failed=literal_conflict,lexical)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: https://growgraph.dev/facts/sim1_scr__u0 <-> https://growgraph.dev/facts/v1a_scr__u0 (score=0.754, failed=literal_conflict,lexical)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: https://growgraph.dev/facts/sim1_scr__u0 <-> https://growgraph.dev/facts/v1b_scr__u0 (score=0.753, failed=literal_conflict,lexical)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: https://growgraph.dev/facts/sim1_scr__u0 <-> https://growgraph.dev/facts/v1c_scr__u0 (score=0.771, failed=literal_conflict,lexical)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: https://growgraph.dev/facts/sim1_scr__u0 <-> https://growgraph.dev/facts/v1d_scr__u0 (score=0.770, failed=lexical)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: https://growgraph.dev/facts/sim1_scr__u0 <-> https://growgraph.dev/facts/v2a_scr__u0 (score=0.762, failed=lexical)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: https://growgraph.dev/facts/sim1_scr__u0 <-> https://growgraph.dev/facts/v2c_scr__u0 (score=0.707, failed=literal_conflict,lexical)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: https://growgraph.dev/facts/simulation__u0 <-> https://growgraph.dev/facts/simulation_third__u0 (score=0.731, failed=lexical)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: https://growgraph.dev/facts/simulation__u0 <-> https://growgraph.dev/facts/validation_1__u0 (score=0.708, failed=lexical)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: https://growgraph.dev/facts/simulation__u0 <-> https://growgraph.dev/facts/validation_2__u0 (score=0.702, failed=lexical)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: https://growgraph.dev/facts/simulation_fifth__u0 <-> https://growgraph.dev/facts/simulation_first__u0 (score=0.845, failed=sibling,functional_iri_conflict)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: https://growgraph.dev/facts/simulation_fifth__u0 <-> https://growgraph.dev/facts/simulation_fourth__u0 (score=0.908, failed=sibling,functional_iri_conflict)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: https://growgraph.dev/facts/simulation_fifth__u0 <-> https://growgraph.dev/facts/simulation_second__u0 (score=0.817, failed=sibling,functional_iri_conflict)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: https://growgraph.dev/facts/simulation_fifth__u0 <-> https://growgraph.dev/facts/simulation_third__u0 (score=0.829, failed=sibling,functional_iri_conflict)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: https://growgraph.dev/facts/simulation_first__u0 <-> https://growgraph.dev/facts/simulation_fourth__u0 (score=0.834, failed=sibling,functional_iri_conflict)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: https://growgraph.dev/facts/simulation_first__u0 <-> https://growgraph.dev/facts/simulation_second__u0 (score=0.898, failed=sibling,functional_iri_conflict)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: https://growgraph.dev/facts/simulation_first__u0 <-> https://growgraph.dev/facts/simulation_third__u0 (score=0.860, failed=sibling,functional_iri_conflict)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: https://growgraph.dev/facts/simulation_first_alarm__u0 <-> https://growgraph.dev/facts/v1a_alarm__u0 (score=0.710, failed=literal_conflict,lexical)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: https://growgraph.dev/facts/simulation_first_alarm__u0 <-> https://growgraph.dev/facts/v1c_alarm__u0 (score=0.758, failed=literal_conflict,lexical)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: https://growgraph.dev/facts/simulation_first_alarm__u0 <-> https://growgraph.dev/facts/v1d_alarm__u0 (score=0.764, failed=literal_conflict,lexical)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: https://growgraph.dev/facts/simulation_fourth__u0 <-> https://growgraph.dev/facts/simulation_second__u0 (score=0.787, failed=sibling,functional_iri_conflict)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: https://growgraph.dev/facts/simulation_fourth__u0 <-> https://growgraph.dev/facts/simulation_third__u0 (score=0.882, failed=sibling,functional_iri_conflict)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: https://growgraph.dev/facts/simulation_second__u0 <-> https://growgraph.dev/facts/simulation_third__u0 (score=0.847, failed=sibling,functional_iri_conflict)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: https://growgraph.dev/facts/v1a_alarm__u0 <-> https://growgraph.dev/facts/v1b_alarm__u0 (score=0.868, failed=literal_conflict,lexical)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: https://growgraph.dev/facts/v1a_alarm__u0 <-> https://growgraph.dev/facts/v1c_alarm__u0 (score=0.905, failed=literal_conflict,lexical)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: https://growgraph.dev/facts/v1a_alarm__u0 <-> https://growgraph.dev/facts/v1d_alarm__u0 (score=0.850, failed=literal_conflict,lexical)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: https://growgraph.dev/facts/v1a_alarm__u0 <-> https://growgraph.dev/facts/v2a_alarm__u0 (score=0.819, failed=literal_conflict,lexical)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: https://growgraph.dev/facts/v1a_alarm__u0 <-> https://growgraph.dev/facts/v2b_alarm__u0 (score=0.766, failed=literal_conflict,lexical)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: https://growgraph.dev/facts/v1a_alarm__u0 <-> https://growgraph.dev/facts/v2c_alarm__u0 (score=0.822, failed=lexical)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: https://growgraph.dev/facts/v1a_alarm__u0 <-> https://growgraph.dev/facts/v2d_alarm__u0 (score=0.811, failed=literal_conflict,lexical)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: https://growgraph.dev/facts/v1a_alarm__u0 <-> https://growgraph.dev/facts/v2e_alarm__u0 (score=0.807, failed=literal_conflict,lexical)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: https://growgraph.dev/facts/v1a_dt__u0 <-> https://growgraph.dev/facts/v1a_oeie__u0 (score=0.828, failed=sibling,literal_conflict,functional_iri_conflict,lexical)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: https://growgraph.dev/facts/v1a_dt__u0 <-> https://growgraph.dev/facts/v1a_scp__u0 (score=0.765, failed=sibling,literal_conflict,functional_iri_conflict,lexical)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: https://growgraph.dev/facts/v1a_dt__u0 <-> https://growgraph.dev/facts/v1a_scr__u0 (score=0.798, failed=sibling,literal_conflict,functional_iri_conflict,lexical)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: https://growgraph.dev/facts/v1a_dt__u0 <-> https://growgraph.dev/facts/v1b_dt__u0 (score=0.931, failed=literal_conflict,lexical)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: https://growgraph.dev/facts/v1a_dt__u0 <-> https://growgraph.dev/facts/v1b_oeie__u0 (score=0.761, failed=literal_conflict,functional_iri_conflict,lexical)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: https://growgraph.dev/facts/v1a_dt__u0 <-> https://growgraph.dev/facts/v1b_scr__u0 (score=0.726, failed=literal_conflict,functional_iri_conflict,lexical)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: https://growgraph.dev/facts/v1a_dt__u0 <-> https://growgraph.dev/facts/v1c_dt__u0 (score=0.935, failed=literal_conflict,lexical)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: https://growgraph.dev/facts/v1a_dt__u0 <-> https://growgraph.dev/facts/v1c_oeie__u0 (score=0.773, failed=literal_conflict,functional_iri_conflict,lexical)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: https://growgraph.dev/facts/v1a_dt__u0 <-> https://growgraph.dev/facts/v1c_scr__u0 (score=0.717, failed=literal_conflict,functional_iri_conflict,lexical)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: https://growgraph.dev/facts/v1a_dt__u0 <-> https://growgraph.dev/facts/v1d_dt__u0 (score=0.886, failed=literal_conflict,lexical)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: https://growgraph.dev/facts/v1a_dt__u0 <-> https://growgraph.dev/facts/v1d_oeie__u0 (score=0.732, failed=literal_conflict,functional_iri_conflict,lexical)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: https://growgraph.dev/facts/v1a_dt__u0 <-> https://growgraph.dev/facts/v1d_scr__u0 (score=0.706, failed=literal_conflict,functional_iri_conflict,lexical)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: https://growgraph.dev/facts/v1a_dt__u0 <-> https://growgraph.dev/facts/v2a_dt__u0 (score=0.861, failed=literal_conflict,lexical)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: https://growgraph.dev/facts/v1a_dt__u0 <-> https://growgraph.dev/facts/v2a_oeie__u0 (score=0.704, failed=literal_conflict,functional_iri_conflict,lexical)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: https://growgraph.dev/facts/v1a_dt__u0 <-> https://growgraph.dev/facts/v2e_dt__u0 (score=0.822, failed=literal_conflict,lexical)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: https://growgraph.dev/facts/v1a_oeie__u0 <-> https://growgraph.dev/facts/v1a_scp__u0 (score=0.713, failed=sibling,literal_conflict,functional_iri_conflict,lexical)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: https://growgraph.dev/facts/v1a_oeie__u0 <-> https://growgraph.dev/facts/v1a_scr__u0 (score=0.748, failed=sibling,literal_conflict,functional_iri_conflict,lexical)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: https://growgraph.dev/facts/v1a_oeie__u0 <-> https://growgraph.dev/facts/v1b_dt__u0 (score=0.772, failed=functional_iri_conflict,lexical)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: https://growgraph.dev/facts/v1a_oeie__u0 <-> https://growgraph.dev/facts/v1b_oeie__u0 (score=0.943, failed=literal_conflict,lexical)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: https://growgraph.dev/facts/v1a_oeie__u0 <-> https://growgraph.dev/facts/v1b_scr__u0 (score=0.703, failed=literal_conflict,functional_iri_conflict,lexical)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: https://growgraph.dev/facts/v1a_oeie__u0 <-> https://growgraph.dev/facts/v1c_dt__u0 (score=0.764, failed=literal_conflict,functional_iri_conflict,lexical)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: https://growgraph.dev/facts/v1a_oeie__u0 <-> https://growgraph.dev/facts/v1c_oeie__u0 (score=0.955, failed=literal_conflict,lexical)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: https://growgraph.dev/facts/v1a_oeie__u0 <-> https://growgraph.dev/facts/v1d_dt__u0 (score=0.732, failed=literal_conflict,functional_iri_conflict,lexical)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: https://growgraph.dev/facts/v1a_oeie__u0 <-> https://growgraph.dev/facts/v1d_oeie__u0 (score=0.926, failed=literal_conflict,lexical)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: https://growgraph.dev/facts/v1a_oeie__u0 <-> https://growgraph.dev/facts/v2a_dt__u0 (score=0.706, failed=literal_conflict,functional_iri_conflict,lexical)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: https://growgraph.dev/facts/v1a_oeie__u0 <-> https://growgraph.dev/facts/v2a_oeie__u0 (score=0.891, failed=literal_conflict,lexical)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: https://growgraph.dev/facts/v1a_oeie__u0 <-> https://growgraph.dev/facts/v2b_oeie__u0 (score=0.851, failed=literal_conflict,lexical)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: https://growgraph.dev/facts/v1a_scp__u0 <-> https://growgraph.dev/facts/v1a_scr__u0 (score=0.913, failed=sibling,literal_conflict,functional_iri_conflict,lexical)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: https://growgraph.dev/facts/v1a_scp__u0 <-> https://growgraph.dev/facts/v1b_dt__u0 (score=0.728, failed=literal_conflict,functional_iri_conflict,lexical)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: https://growgraph.dev/facts/v1a_scp__u0 <-> https://growgraph.dev/facts/v1b_scp__u0 (score=0.939, failed=lexical)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: https://growgraph.dev/facts/v1a_scp__u0 <-> https://growgraph.dev/facts/v1b_scr__u0 (score=0.865, failed=literal_conflict,functional_iri_conflict,lexical)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: https://growgraph.dev/facts/v1a_scp__u0 <-> https://growgraph.dev/facts/v1c_dt__u0 (score=0.736, failed=literal_conflict,functional_iri_conflict,lexical)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: https://growgraph.dev/facts/v1a_scp__u0 <-> https://growgraph.dev/facts/v1c_scp__u0 (score=0.950, failed=lexical)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: https://growgraph.dev/facts/v1a_scp__u0 <-> https://growgraph.dev/facts/v1c_scr__u0 (score=0.868, failed=literal_conflict,functional_iri_conflict,lexical)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: https://growgraph.dev/facts/v1a_scp__u0 <-> https://growgraph.dev/facts/v1d_scp__u0 (score=0.909, failed=literal_conflict,lexical)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: https://growgraph.dev/facts/v1a_scp__u0 <-> https://growgraph.dev/facts/v1d_scr__u0 (score=0.854, failed=functional_iri_conflict,lexical)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: https://growgraph.dev/facts/v1a_scp__u0 <-> https://growgraph.dev/facts/v2a_scp__u0 (score=0.872, failed=lexical)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: https://growgraph.dev/facts/v1a_scp__u0 <-> https://growgraph.dev/facts/v2a_scr__u0 (score=0.811, failed=functional_iri_conflict,lexical)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: https://growgraph.dev/facts/v1a_scp__u0 <-> https://growgraph.dev/facts/v2c_scr__u0 (score=0.757, failed=literal_conflict,functional_iri_conflict,lexical)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: https://growgraph.dev/facts/v1a_scp__u0 <-> https://growgraph.dev/facts/v2d_scp__u0 (score=0.807, failed=literal_conflict,lexical)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: https://growgraph.dev/facts/v1a_scr__u0 <-> https://growgraph.dev/facts/v1b_dt__u0 (score=0.770, failed=literal_conflict,functional_iri_conflict,lexical)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: https://growgraph.dev/facts/v1a_scr__u0 <-> https://growgraph.dev/facts/v1b_oeie__u0 (score=0.711, failed=literal_conflict,functional_iri_conflict,lexical)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: https://growgraph.dev/facts/v1a_scr__u0 <-> https://growgraph.dev/facts/v1b_scp__u0 (score=0.861, failed=literal_conflict,functional_iri_conflict,lexical)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: https://growgraph.dev/facts/v1a_scr__u0 <-> https://growgraph.dev/facts/v1b_scr__u0 (score=0.950, failed=literal_conflict,lexical)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: https://growgraph.dev/facts/v1a_scr__u0 <-> https://growgraph.dev/facts/v1c_dt__u0 (score=0.770, failed=literal_conflict,functional_iri_conflict,lexical)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: https://growgraph.dev/facts/v1a_scr__u0 <-> https://growgraph.dev/facts/v1c_oeie__u0 (score=0.736, failed=literal_conflict,functional_iri_conflict,lexical)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: https://growgraph.dev/facts/v1a_scr__u0 <-> https://growgraph.dev/facts/v1c_scp__u0 (score=0.873, failed=literal_conflict,functional_iri_conflict,lexical)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: https://growgraph.dev/facts/v1a_scr__u0 <-> https://growgraph.dev/facts/v1c_scr__u0 (score=0.957, failed=literal_conflict,lexical)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: https://growgraph.dev/facts/v1a_scr__u0 <-> https://growgraph.dev/facts/v1d_dt__u0 (score=0.724, failed=literal_conflict,functional_iri_conflict,lexical)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: https://growgraph.dev/facts/v1a_scr__u0 <-> https://growgraph.dev/facts/v1d_scp__u0 (score=0.824, failed=literal_conflict,functional_iri_conflict,lexical)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: https://growgraph.dev/facts/v1a_scr__u0 <-> https://growgraph.dev/facts/v1d_scr__u0 (score=0.925, failed=literal_conflict,lexical)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: https://growgraph.dev/facts/v1a_scr__u0 <-> https://growgraph.dev/facts/v2a_dt__u0 (score=0.714, failed=literal_conflict,functional_iri_conflict,lexical)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: https://growgraph.dev/facts/v1a_scr__u0 <-> https://growgraph.dev/facts/v2a_scp__u0 (score=0.833, failed=literal_conflict,functional_iri_conflict,lexical)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: https://growgraph.dev/facts/v1a_scr__u0 <-> https://growgraph.dev/facts/v2a_scr__u0 (score=0.902, failed=literal_conflict,lexical)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: https://growgraph.dev/facts/v1a_scr__u0 <-> https://growgraph.dev/facts/v2c_scr__u0 (score=0.816, failed=literal_conflict,lexical)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: https://growgraph.dev/facts/v1a_scr__u0 <-> https://growgraph.dev/facts/v2d_scp__u0 (score=0.716, failed=literal_conflict,functional_iri_conflict,lexical)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: https://growgraph.dev/facts/v1b_alarm__u0 <-> https://growgraph.dev/facts/v1c_alarm__u0 (score=0.859, failed=literal_conflict,lexical)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: https://growgraph.dev/facts/v1b_alarm__u0 <-> https://growgraph.dev/facts/v1d_alarm__u0 (score=0.839, failed=literal_conflict,lexical)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: https://growgraph.dev/facts/v1b_alarm__u0 <-> https://growgraph.dev/facts/v2a_alarm__u0 (score=0.897, failed=lexical)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: https://growgraph.dev/facts/v1b_alarm__u0 <-> https://growgraph.dev/facts/v2b_alarm__u0 (score=0.878, failed=literal_conflict,lexical)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: https://growgraph.dev/facts/v1b_alarm__u0 <-> https://growgraph.dev/facts/v2c_alarm__u0 (score=0.764, failed=literal_conflict,lexical)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: https://growgraph.dev/facts/v1b_alarm__u0 <-> https://growgraph.dev/facts/v2d_alarm__u0 (score=0.738, failed=literal_conflict,lexical)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: https://growgraph.dev/facts/v1b_alarm__u0 <-> https://growgraph.dev/facts/v2e_alarm__u0 (score=0.851, failed=literal_conflict,lexical)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: https://growgraph.dev/facts/v1b_dt__u0 <-> https://growgraph.dev/facts/v1b_oeie__u0 (score=0.815, failed=sibling,literal_conflict,functional_iri_conflict,lexical)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: https://growgraph.dev/facts/v1b_dt__u0 <-> https://growgraph.dev/facts/v1b_scp__u0 (score=0.762, failed=sibling,literal_conflict,functional_iri_conflict,lexical)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: https://growgraph.dev/facts/v1b_dt__u0 <-> https://growgraph.dev/facts/v1b_scr__u0 (score=0.803, failed=sibling,literal_conflict,functional_iri_conflict,lexical)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: https://growgraph.dev/facts/v1b_dt__u0 <-> https://growgraph.dev/facts/v1c_dt__u0 (score=0.916, failed=literal_conflict,lexical)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: https://growgraph.dev/facts/v1b_dt__u0 <-> https://growgraph.dev/facts/v1c_oeie__u0 (score=0.758, failed=literal_conflict,functional_iri_conflict,lexical)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: https://growgraph.dev/facts/v1b_dt__u0 <-> https://growgraph.dev/facts/v1c_scr__u0 (score=0.722, failed=literal_conflict,functional_iri_conflict,lexical)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: https://growgraph.dev/facts/v1b_dt__u0 <-> https://growgraph.dev/facts/v1d_dt__u0 (score=0.900, failed=literal_conflict,lexical)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: https://growgraph.dev/facts/v1b_dt__u0 <-> https://growgraph.dev/facts/v1d_oeie__u0 (score=0.739, failed=literal_conflict,functional_iri_conflict,lexical)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: https://growgraph.dev/facts/v1b_dt__u0 <-> https://growgraph.dev/facts/v1d_scr__u0 (score=0.734, failed=literal_conflict,functional_iri_conflict,lexical)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: https://growgraph.dev/facts/v1b_dt__u0 <-> https://growgraph.dev/facts/v2a_dt__u0 (score=0.863, failed=literal_conflict,lexical)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: https://growgraph.dev/facts/v1b_dt__u0 <-> https://growgraph.dev/facts/v2a_oeie__u0 (score=0.705, failed=literal_conflict,functional_iri_conflict,lexical)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: https://growgraph.dev/facts/v1b_dt__u0 <-> https://growgraph.dev/facts/v2e_dt__u0 (score=0.839, failed=literal_conflict,lexical)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: https://growgraph.dev/facts/v1b_oeie__u0 <-> https://growgraph.dev/facts/v1b_scp__u0 (score=0.709, failed=sibling,literal_conflict,functional_iri_conflict,lexical)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: https://growgraph.dev/facts/v1b_oeie__u0 <-> https://growgraph.dev/facts/v1b_scr__u0 (score=0.756, failed=sibling,literal_conflict,functional_iri_conflict,lexical)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: https://growgraph.dev/facts/v1b_oeie__u0 <-> https://growgraph.dev/facts/v1c_dt__u0 (score=0.728, failed=literal_conflict,functional_iri_conflict,lexical)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: https://growgraph.dev/facts/v1b_oeie__u0 <-> https://growgraph.dev/facts/v1c_oeie__u0 (score=0.936, failed=literal_conflict,lexical)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: https://growgraph.dev/facts/v1b_oeie__u0 <-> https://growgraph.dev/facts/v1d_dt__u0 (score=0.723, failed=literal_conflict,functional_iri_conflict,lexical)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: https://growgraph.dev/facts/v1b_oeie__u0 <-> https://growgraph.dev/facts/v1d_oeie__u0 (score=0.936, failed=literal_conflict,lexical)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: https://growgraph.dev/facts/v1b_oeie__u0 <-> https://growgraph.dev/facts/v2a_oeie__u0 (score=0.873, failed=literal_conflict,lexical)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: https://growgraph.dev/facts/v1b_oeie__u0 <-> https://growgraph.dev/facts/v2b_oeie__u0 (score=0.873, failed=literal_conflict,lexical)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: https://growgraph.dev/facts/v1b_scp__u0 <-> https://growgraph.dev/facts/v1b_scr__u0 (score=0.919, failed=sibling,literal_conflict,functional_iri_conflict,lexical)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: https://growgraph.dev/facts/v1b_scp__u0 <-> https://growgraph.dev/facts/v1c_scp__u0 (score=0.933, failed=lexical)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: https://growgraph.dev/facts/v1b_scp__u0 <-> https://growgraph.dev/facts/v1c_scr__u0 (score=0.845, failed=literal_conflict,functional_iri_conflict,lexical)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: https://growgraph.dev/facts/v1b_scp__u0 <-> https://growgraph.dev/facts/v1d_scp__u0 (score=0.933, failed=literal_conflict,lexical)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: https://growgraph.dev/facts/v1b_scp__u0 <-> https://growgraph.dev/facts/v1d_scr__u0 (score=0.872, failed=functional_iri_conflict,lexical)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: https://growgraph.dev/facts/v1b_scp__u0 <-> https://growgraph.dev/facts/v2a_scp__u0 (score=0.877, failed=lexical)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: https://growgraph.dev/facts/v1b_scp__u0 <-> https://growgraph.dev/facts/v2a_scr__u0 (score=0.804, failed=functional_iri_conflict,lexical)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: https://growgraph.dev/facts/v1b_scp__u0 <-> https://growgraph.dev/facts/v2c_scr__u0 (score=0.772, failed=literal_conflict,functional_iri_conflict,lexical)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: https://growgraph.dev/facts/v1b_scp__u0 <-> https://growgraph.dev/facts/v2d_scp__u0 (score=0.822, failed=literal_conflict,lexical)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: https://growgraph.dev/facts/v1b_scr__u0 <-> https://growgraph.dev/facts/v1c_dt__u0 (score=0.733, failed=literal_conflict,functional_iri_conflict,lexical)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: https://growgraph.dev/facts/v1b_scr__u0 <-> https://growgraph.dev/facts/v1c_oeie__u0 (score=0.721, failed=literal_conflict,functional_iri_conflict,lexical)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: https://growgraph.dev/facts/v1b_scr__u0 <-> https://growgraph.dev/facts/v1c_scp__u0 (score=0.860, failed=literal_conflict,functional_iri_conflict,lexical)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: https://growgraph.dev/facts/v1b_scr__u0 <-> https://growgraph.dev/facts/v1c_scr__u0 (score=0.936, failed=lexical)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: https://growgraph.dev/facts/v1b_scr__u0 <-> https://growgraph.dev/facts/v1d_dt__u0 (score=0.717, failed=literal_conflict,functional_iri_conflict,lexical)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: https://growgraph.dev/facts/v1b_scr__u0 <-> https://growgraph.dev/facts/v1d_scp__u0 (score=0.842, failed=literal_conflict,functional_iri_conflict,lexical)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: https://growgraph.dev/facts/v1b_scr__u0 <-> https://growgraph.dev/facts/v1d_scr__u0 (score=0.936, failed=literal_conflict,lexical)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: https://growgraph.dev/facts/v1b_scr__u0 <-> https://growgraph.dev/facts/v2a_scp__u0 (score=0.832, failed=literal_conflict,functional_iri_conflict,lexical)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: https://growgraph.dev/facts/v1b_scr__u0 <-> https://growgraph.dev/facts/v2a_scr__u0 (score=0.890, failed=literal_conflict,lexical)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: https://growgraph.dev/facts/v1b_scr__u0 <-> https://growgraph.dev/facts/v2c_scr__u0 (score=0.829, failed=literal_conflict,lexical)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: https://growgraph.dev/facts/v1b_scr__u0 <-> https://growgraph.dev/facts/v2d_scp__u0 (score=0.733, failed=literal_conflict,functional_iri_conflict,lexical)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: https://growgraph.dev/facts/v1c_alarm__u0 <-> https://growgraph.dev/facts/v1d_alarm__u0 (score=0.864, failed=literal_conflict,lexical)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: https://growgraph.dev/facts/v1c_alarm__u0 <-> https://growgraph.dev/facts/v2a_alarm__u0 (score=0.799, failed=literal_conflict,lexical)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: https://growgraph.dev/facts/v1c_alarm__u0 <-> https://growgraph.dev/facts/v2b_alarm__u0 (score=0.788, failed=literal_conflict,lexical)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: https://growgraph.dev/facts/v1c_alarm__u0 <-> https://growgraph.dev/facts/v2c_alarm__u0 (score=0.803, failed=literal_conflict,lexical)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: https://growgraph.dev/facts/v1c_alarm__u0 <-> https://growgraph.dev/facts/v2d_alarm__u0 (score=0.779, failed=literal_conflict,lexical)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: https://growgraph.dev/facts/v1c_alarm__u0 <-> https://growgraph.dev/facts/v2e_alarm__u0 (score=0.787, failed=literal_conflict,lexical)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: https://growgraph.dev/facts/v1c_dt__u0 <-> https://growgraph.dev/facts/v1c_oeie__u0 (score=0.801, failed=sibling,literal_conflict,functional_iri_conflict,lexical)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: https://growgraph.dev/facts/v1c_dt__u0 <-> https://growgraph.dev/facts/v1c_scp__u0 (score=0.753, failed=sibling,literal_conflict,functional_iri_conflict,lexical)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: https://growgraph.dev/facts/v1c_dt__u0 <-> https://growgraph.dev/facts/v1c_scr__u0 (score=0.784, failed=sibling,literal_conflict,functional_iri_conflict,lexical)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: https://growgraph.dev/facts/v1c_dt__u0 <-> https://growgraph.dev/facts/v1d_dt__u0 (score=0.876, failed=literal_conflict,lexical)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: https://growgraph.dev/facts/v1c_dt__u0 <-> https://growgraph.dev/facts/v1d_oeie__u0 (score=0.702, failed=literal_conflict,functional_iri_conflict,lexical)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: https://growgraph.dev/facts/v1c_dt__u0 <-> https://growgraph.dev/facts/v1d_scr__u0 (score=0.714, failed=literal_conflict,functional_iri_conflict,lexical)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: https://growgraph.dev/facts/v1c_dt__u0 <-> https://growgraph.dev/facts/v2a_dt__u0 (score=0.837, failed=literal_conflict,lexical)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: https://growgraph.dev/facts/v1c_dt__u0 <-> https://growgraph.dev/facts/v2e_dt__u0 (score=0.838, failed=literal_conflict,lexical)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: https://growgraph.dev/facts/v1c_oeie__u0 <-> https://growgraph.dev/facts/v1c_scr__u0 (score=0.736, failed=sibling,literal_conflict,functional_iri_conflict,lexical)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: https://growgraph.dev/facts/v1c_oeie__u0 <-> https://growgraph.dev/facts/v1d_dt__u0 (score=0.714, failed=literal_conflict,functional_iri_conflict,lexical)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: https://growgraph.dev/facts/v1c_oeie__u0 <-> https://growgraph.dev/facts/v1d_oeie__u0 (score=0.913, failed=literal_conflict,lexical)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: https://growgraph.dev/facts/v1c_oeie__u0 <-> https://growgraph.dev/facts/v2a_oeie__u0 (score=0.880, failed=literal_conflict,lexical)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: https://growgraph.dev/facts/v1c_oeie__u0 <-> https://growgraph.dev/facts/v2b_oeie__u0 (score=0.865, failed=literal_conflict,lexical)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: https://growgraph.dev/facts/v1c_scp__u0 <-> https://growgraph.dev/facts/v1c_scr__u0 (score=0.915, failed=sibling,literal_conflict,functional_iri_conflict,lexical)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: https://growgraph.dev/facts/v1c_scp__u0 <-> https://growgraph.dev/facts/v1d_scp__u0 (score=0.905, failed=literal_conflict,lexical)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: https://growgraph.dev/facts/v1c_scp__u0 <-> https://growgraph.dev/facts/v1d_scr__u0 (score=0.851, failed=functional_iri_conflict,lexical)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: https://growgraph.dev/facts/v1c_scp__u0 <-> https://growgraph.dev/facts/v2a_scp__u0 (score=0.868, failed=lexical)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: https://growgraph.dev/facts/v1c_scp__u0 <-> https://growgraph.dev/facts/v2a_scr__u0 (score=0.806, failed=functional_iri_conflict,lexical)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: https://growgraph.dev/facts/v1c_scp__u0 <-> https://growgraph.dev/facts/v2c_scr__u0 (score=0.772, failed=literal_conflict,functional_iri_conflict,lexical)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: https://growgraph.dev/facts/v1c_scp__u0 <-> https://growgraph.dev/facts/v2d_scp__u0 (score=0.794, failed=literal_conflict,lexical)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: https://growgraph.dev/facts/v1c_scr__u0 <-> https://growgraph.dev/facts/v1d_scp__u0 (score=0.808, failed=literal_conflict,functional_iri_conflict,lexical)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: https://growgraph.dev/facts/v1c_scr__u0 <-> https://growgraph.dev/facts/v1d_scr__u0 (score=0.912, failed=literal_conflict,lexical)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: https://growgraph.dev/facts/v1c_scr__u0 <-> https://growgraph.dev/facts/v2a_scp__u0 (score=0.819, failed=literal_conflict,functional_iri_conflict,lexical)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: https://growgraph.dev/facts/v1c_scr__u0 <-> https://growgraph.dev/facts/v2a_scr__u0 (score=0.892, failed=literal_conflict,lexical)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: https://growgraph.dev/facts/v1c_scr__u0 <-> https://growgraph.dev/facts/v2c_scr__u0 (score=0.831, failed=literal_conflict,lexical)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: https://growgraph.dev/facts/v1c_scr__u0 <-> https://growgraph.dev/facts/v2d_scp__u0 (score=0.706, failed=literal_conflict,functional_iri_conflict,lexical)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: https://growgraph.dev/facts/v1d_alarm__u0 <-> https://growgraph.dev/facts/v2a_alarm__u0 (score=0.786, failed=literal_conflict,lexical)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: https://growgraph.dev/facts/v1d_alarm__u0 <-> https://growgraph.dev/facts/v2b_alarm__u0 (score=0.778, failed=literal_conflict,lexical)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: https://growgraph.dev/facts/v1d_alarm__u0 <-> https://growgraph.dev/facts/v2c_alarm__u0 (score=0.764, failed=literal_conflict,lexical)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: https://growgraph.dev/facts/v1d_alarm__u0 <-> https://growgraph.dev/facts/v2d_alarm__u0 (score=0.784, failed=literal_conflict,lexical)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: https://growgraph.dev/facts/v1d_alarm__u0 <-> https://growgraph.dev/facts/v2e_alarm__u0 (score=0.783, failed=literal_conflict,lexical)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: https://growgraph.dev/facts/v1d_dt__u0 <-> https://growgraph.dev/facts/v1d_oeie__u0 (score=0.801, failed=sibling,literal_conflict,functional_iri_conflict,lexical)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: https://growgraph.dev/facts/v1d_dt__u0 <-> https://growgraph.dev/facts/v1d_scp__u0 (score=0.764, failed=sibling,literal_conflict,functional_iri_conflict,lexical)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: https://growgraph.dev/facts/v1d_dt__u0 <-> https://growgraph.dev/facts/v1d_scr__u0 (score=0.803, failed=sibling,literal_conflict,functional_iri_conflict,lexical)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: https://growgraph.dev/facts/v1d_dt__u0 <-> https://growgraph.dev/facts/v2a_dt__u0 (score=0.854, failed=literal_conflict,lexical)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: https://growgraph.dev/facts/v1d_dt__u0 <-> https://growgraph.dev/facts/v2e_dt__u0 (score=0.850, failed=literal_conflict,lexical)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: https://growgraph.dev/facts/v1d_oeie__u0 <-> https://growgraph.dev/facts/v1d_scr__u0 (score=0.743, failed=sibling,literal_conflict,functional_iri_conflict,lexical)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: https://growgraph.dev/facts/v1d_oeie__u0 <-> https://growgraph.dev/facts/v2a_oeie__u0 (score=0.870, failed=literal_conflict,lexical)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: https://growgraph.dev/facts/v1d_oeie__u0 <-> https://growgraph.dev/facts/v2b_oeie__u0 (score=0.868, failed=literal_conflict,lexical)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: https://growgraph.dev/facts/v1d_scp__u0 <-> https://growgraph.dev/facts/v1d_scr__u0 (score=0.922, failed=sibling,literal_conflict,functional_iri_conflict,lexical)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: https://growgraph.dev/facts/v1d_scp__u0 <-> https://growgraph.dev/facts/v2a_scp__u0 (score=0.872, failed=literal_conflict,lexical)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: https://growgraph.dev/facts/v1d_scp__u0 <-> https://growgraph.dev/facts/v2a_scr__u0 (score=0.789, failed=literal_conflict,functional_iri_conflict,lexical)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: https://growgraph.dev/facts/v1d_scp__u0 <-> https://growgraph.dev/facts/v2c_scr__u0 (score=0.754, failed=literal_conflict,functional_iri_conflict,lexical)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: https://growgraph.dev/facts/v1d_scp__u0 <-> https://growgraph.dev/facts/v2d_scp__u0 (score=0.842, failed=literal_conflict,lexical)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: https://growgraph.dev/facts/v1d_scr__u0 <-> https://growgraph.dev/facts/v2a_scp__u0 (score=0.836, failed=functional_iri_conflict,lexical)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: https://growgraph.dev/facts/v1d_scr__u0 <-> https://growgraph.dev/facts/v2a_scr__u0 (score=0.882, failed=lexical)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: https://growgraph.dev/facts/v1d_scr__u0 <-> https://growgraph.dev/facts/v2c_scr__u0 (score=0.823, failed=literal_conflict,lexical)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: https://growgraph.dev/facts/v1d_scr__u0 <-> https://growgraph.dev/facts/v2d_scp__u0 (score=0.766, failed=literal_conflict,functional_iri_conflict,lexical)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: https://growgraph.dev/facts/v2a_alarm__u0 <-> https://growgraph.dev/facts/v2b_alarm__u0 (score=0.863, failed=literal_conflict,lexical)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: https://growgraph.dev/facts/v2a_alarm__u0 <-> https://growgraph.dev/facts/v2c_alarm__u0 (score=0.762, failed=literal_conflict,lexical)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: https://growgraph.dev/facts/v2a_alarm__u0 <-> https://growgraph.dev/facts/v2d_alarm__u0 (score=0.748, failed=literal_conflict,lexical)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: https://growgraph.dev/facts/v2a_alarm__u0 <-> https://growgraph.dev/facts/v2e_alarm__u0 (score=0.859, failed=literal_conflict,lexical)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: https://growgraph.dev/facts/v2a_dt__u0 <-> https://growgraph.dev/facts/v2a_oeie__u0 (score=0.800, failed=sibling,functional_iri_conflict,lexical)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: https://growgraph.dev/facts/v2a_dt__u0 <-> https://growgraph.dev/facts/v2a_scp__u0 (score=0.755, failed=sibling,functional_iri_conflict,initials_conflict,lexical)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: https://growgraph.dev/facts/v2a_dt__u0 <-> https://growgraph.dev/facts/v2a_scr__u0 (score=0.791, failed=sibling,functional_iri_conflict,initials_conflict,lexical)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: https://growgraph.dev/facts/v2a_dt__u0 <-> https://growgraph.dev/facts/v2e_dt__u0 (score=0.833, failed=literal_conflict,lexical)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: https://growgraph.dev/facts/v2a_oeie__u0 <-> https://growgraph.dev/facts/v2a_scp__u0 (score=0.721, failed=sibling,functional_iri_conflict,lexical)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: https://growgraph.dev/facts/v2a_oeie__u0 <-> https://growgraph.dev/facts/v2a_scr__u0 (score=0.767, failed=sibling,functional_iri_conflict,lexical)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: https://growgraph.dev/facts/v2a_oeie__u0 <-> https://growgraph.dev/facts/v2b_oeie__u0 (score=0.840, failed=literal_conflict,lexical)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: https://growgraph.dev/facts/v2a_scp__u0 <-> https://growgraph.dev/facts/v2a_scr__u0 (score=0.942, failed=sibling,functional_iri_conflict,lexical)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: https://growgraph.dev/facts/v2a_scp__u0 <-> https://growgraph.dev/facts/v2c_scr__u0 (score=0.769, failed=sibling,literal_conflict,functional_iri_conflict,lexical)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: https://growgraph.dev/facts/v2a_scp__u0 <-> https://growgraph.dev/facts/v2d_scp__u0 (score=0.796, failed=literal_conflict,lexical)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: https://growgraph.dev/facts/v2a_scr__u0 <-> https://growgraph.dev/facts/v2c_scr__u0 (score=0.818, failed=literal_conflict,lexical)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: https://growgraph.dev/facts/v2a_scr__u0 <-> https://growgraph.dev/facts/v2d_scp__u0 (score=0.723, failed=sibling,literal_conflict,functional_iri_conflict,lexical)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: https://growgraph.dev/facts/v2b_alarm__u0 <-> https://growgraph.dev/facts/v2c_alarm__u0 (score=0.711, failed=literal_conflict,lexical)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: https://growgraph.dev/facts/v2b_alarm__u0 <-> https://growgraph.dev/facts/v2e_alarm__u0 (score=0.916, failed=literal_conflict,lexical)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: https://growgraph.dev/facts/v2b_oeie__u0 <-> https://growgraph.dev/facts/v2e_dt__u0 (score=0.771, failed=literal_conflict,functional_iri_conflict,lexical)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: https://growgraph.dev/facts/v2b_oeie__u0 <-> https://growgraph.dev/facts/validation_2b__u0 (score=0.647, failed=type)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: https://growgraph.dev/facts/v2c_alarm__u0 <-> https://growgraph.dev/facts/v2d_alarm__u0 (score=0.951, failed=literal_conflict,lexical)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: https://growgraph.dev/facts/v2c_alarm__u0 <-> https://growgraph.dev/facts/v2e_alarm__u0 (score=0.770, failed=literal_conflict,lexical)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: https://growgraph.dev/facts/v2c_scr__u0 <-> https://growgraph.dev/facts/v2d_scp__u0 (score=0.914, failed=literal_conflict,functional_iri_conflict,lexical)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: https://growgraph.dev/facts/v2c_scr__u0 <-> https://growgraph.dev/facts/validation_2c__u0 (score=0.731, failed=type)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: https://growgraph.dev/facts/v2c_scr__u0 <-> https://growgraph.dev/facts/validation_2d__u0 (score=0.704, failed=type)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: https://growgraph.dev/facts/v2d_alarm__u0 <-> https://growgraph.dev/facts/v2e_alarm__u0 (score=0.753, failed=literal_conflict,lexical)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: https://growgraph.dev/facts/v2d_scp__u0 <-> https://growgraph.dev/facts/validation_2d__u0 (score=0.682, failed=type)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: https://growgraph.dev/facts/v2e_dt__u0 <-> https://growgraph.dev/facts/validation_2e__u0 (score=0.616, failed=type)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: https://growgraph.dev/facts/validation_1__u0 <-> https://growgraph.dev/facts/validation_1a__u0 (score=0.744, failed=unknown)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: https://growgraph.dev/facts/validation_1__u0 <-> https://growgraph.dev/facts/validation_1b__u0 (score=0.735, failed=unknown)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: https://growgraph.dev/facts/validation_1__u0 <-> https://growgraph.dev/facts/validation_1c__u0 (score=0.744, failed=unknown)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: https://growgraph.dev/facts/validation_1__u0 <-> https://growgraph.dev/facts/validation_1d__u0 (score=0.735, failed=unknown)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: https://growgraph.dev/facts/validation_1a__u0 <-> https://growgraph.dev/facts/validation_1b__u0 (score=0.972, failed=sibling,functional_iri_conflict)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: https://growgraph.dev/facts/validation_1a__u0 <-> https://growgraph.dev/facts/validation_1c__u0 (score=0.963, failed=sibling,functional_iri_conflict)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: https://growgraph.dev/facts/validation_1a__u0 <-> https://growgraph.dev/facts/validation_1d__u0 (score=0.953, failed=sibling,functional_iri_conflict)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: https://growgraph.dev/facts/validation_1a__u0 <-> https://growgraph.dev/facts/validation_2a__u0 (score=0.830, failed=sibling,functional_iri_conflict)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: https://growgraph.dev/facts/validation_1a__u0 <-> https://growgraph.dev/facts/validation_2b__u0 (score=0.804, failed=sibling,functional_iri_conflict,lexical)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: https://growgraph.dev/facts/validation_1a__u0 <-> https://growgraph.dev/facts/validation_2c__u0 (score=0.768, failed=sibling,functional_iri_conflict,lexical)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: https://growgraph.dev/facts/validation_1a__u0 <-> https://growgraph.dev/facts/validation_2d__u0 (score=0.798, failed=sibling,functional_iri_conflict,lexical)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: https://growgraph.dev/facts/validation_1a__u0 <-> https://growgraph.dev/facts/validation_2e__u0 (score=0.730, failed=sibling,functional_iri_conflict,lexical)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: https://growgraph.dev/facts/validation_1b__u0 <-> https://growgraph.dev/facts/validation_1c__u0 (score=0.950, failed=sibling,functional_iri_conflict)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: https://growgraph.dev/facts/validation_1b__u0 <-> https://growgraph.dev/facts/validation_1d__u0 (score=0.952, failed=sibling,functional_iri_conflict)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: https://growgraph.dev/facts/validation_1b__u0 <-> https://growgraph.dev/facts/validation_2a__u0 (score=0.818, failed=sibling,functional_iri_conflict,lexical)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: https://growgraph.dev/facts/validation_1b__u0 <-> https://growgraph.dev/facts/validation_2b__u0 (score=0.805, failed=sibling,functional_iri_conflict)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: https://growgraph.dev/facts/validation_1b__u0 <-> https://growgraph.dev/facts/validation_2c__u0 (score=0.756, failed=sibling,functional_iri_conflict,lexical)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: https://growgraph.dev/facts/validation_1b__u0 <-> https://growgraph.dev/facts/validation_2d__u0 (score=0.795, failed=sibling,functional_iri_conflict,lexical)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: https://growgraph.dev/facts/validation_1b__u0 <-> https://growgraph.dev/facts/validation_2e__u0 (score=0.732, failed=sibling,functional_iri_conflict,lexical)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: https://growgraph.dev/facts/validation_1c__u0 <-> https://growgraph.dev/facts/validation_1d__u0 (score=0.957, failed=sibling,functional_iri_conflict)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: https://growgraph.dev/facts/validation_1c__u0 <-> https://growgraph.dev/facts/validation_2a__u0 (score=0.792, failed=sibling,functional_iri_conflict,lexical)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: https://growgraph.dev/facts/validation_1c__u0 <-> https://growgraph.dev/facts/validation_2b__u0 (score=0.814, failed=sibling,functional_iri_conflict,lexical)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: https://growgraph.dev/facts/validation_1c__u0 <-> https://growgraph.dev/facts/validation_2c__u0 (score=0.773, failed=sibling,functional_iri_conflict)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: https://growgraph.dev/facts/validation_1c__u0 <-> https://growgraph.dev/facts/validation_2d__u0 (score=0.784, failed=sibling,functional_iri_conflict,lexical)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: https://growgraph.dev/facts/validation_1c__u0 <-> https://growgraph.dev/facts/validation_2e__u0 (score=0.750, failed=sibling,functional_iri_conflict,lexical)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: https://growgraph.dev/facts/validation_1d__u0 <-> https://growgraph.dev/facts/validation_2a__u0 (score=0.802, failed=sibling,functional_iri_conflict,lexical)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: https://growgraph.dev/facts/validation_1d__u0 <-> https://growgraph.dev/facts/validation_2b__u0 (score=0.817, failed=sibling,functional_iri_conflict,lexical)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: https://growgraph.dev/facts/validation_1d__u0 <-> https://growgraph.dev/facts/validation_2c__u0 (score=0.753, failed=sibling,functional_iri_conflict,lexical)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: https://growgraph.dev/facts/validation_1d__u0 <-> https://growgraph.dev/facts/validation_2d__u0 (score=0.791, failed=sibling,functional_iri_conflict)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: https://growgraph.dev/facts/validation_1d__u0 <-> https://growgraph.dev/facts/validation_2e__u0 (score=0.742, failed=sibling,functional_iri_conflict,lexical)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: https://growgraph.dev/facts/validation_2__u0 <-> https://growgraph.dev/facts/validation_2b__u0 (score=0.707, failed=unknown)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: https://growgraph.dev/facts/validation_2a__u0 <-> https://growgraph.dev/facts/validation_2b__u0 (score=0.779, failed=sibling,functional_iri_conflict)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: https://growgraph.dev/facts/validation_2a__u0 <-> https://growgraph.dev/facts/validation_2c__u0 (score=0.721, failed=sibling,functional_iri_conflict)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: https://growgraph.dev/facts/validation_2a__u0 <-> https://growgraph.dev/facts/validation_2d__u0 (score=0.760, failed=sibling,functional_iri_conflict)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: https://growgraph.dev/facts/validation_2a__u0 <-> https://growgraph.dev/facts/validation_2e__u0 (score=0.720, failed=sibling,functional_iri_conflict)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: https://growgraph.dev/facts/validation_2b__u0 <-> https://growgraph.dev/facts/validation_2c__u0 (score=0.808, failed=sibling,functional_iri_conflict)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: https://growgraph.dev/facts/validation_2b__u0 <-> https://growgraph.dev/facts/validation_2d__u0 (score=0.826, failed=sibling,functional_iri_conflict)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: https://growgraph.dev/facts/validation_2b__u0 <-> https://growgraph.dev/facts/validation_2e__u0 (score=0.917, failed=sibling,functional_iri_conflict)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: https://growgraph.dev/facts/validation_2c__u0 <-> https://growgraph.dev/facts/validation_2d__u0 (score=0.951, failed=sibling,functional_iri_conflict)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: https://growgraph.dev/facts/validation_2c__u0 <-> https://growgraph.dev/facts/validation_2e__u0 (score=0.805, failed=sibling,functional_iri_conflict)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: https://growgraph.dev/facts/validation_2d__u0 <-> https://growgraph.dev/facts/validation_2e__u0 (score=0.795, failed=sibling,functional_iri_conflict)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: https://growgraph.dev/facts/scrap_rate_premium__u0 <-> https://growgraph.dev/facts/scrap_rate_regular__u0 (score=0.905, failed=sibling)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: https://growgraph.dev/facts/car_parts_production_line__u0 <-> https://growgraph.dev/facts/production_line_machine__u0 (score=0.758, failed=type,lexical)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: https://growgraph.dev/facts/machine_description__u0 <-> https://growgraph.dev/facts/production_line_machine__u0 (score=0.846, failed=type)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: https://growgraph.dev/facts/date_2015_01_24__u0 <-> https://growgraph.dev/facts/date_2015_04_01__u0 (score=0.952, failed=literal_conflict,lexical)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: https://growgraph.dev/facts/date_2015_01_24__u0 <-> https://growgraph.dev/facts/date_2015_06_11__u0 (score=0.937, failed=literal_conflict,lexical)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: https://growgraph.dev/facts/date_2015_01_24__u0 <-> https://growgraph.dev/facts/date_2015_10_18__u0 (score=0.956, failed=literal_conflict,lexical)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: https://growgraph.dev/facts/date_2015_01_24__u0 <-> https://growgraph.dev/facts/day_2015_01_24__u0 (score=0.867, failed=type,lexical)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: https://growgraph.dev/facts/date_2015_01_24__u0 <-> https://growgraph.dev/facts/day_2015_04_01__u0 (score=0.826, failed=type,lexical)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: https://growgraph.dev/facts/date_2015_01_24__u0 <-> https://growgraph.dev/facts/day_2015_06_11__u0 (score=0.811, failed=type,lexical)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: https://growgraph.dev/facts/date_2015_01_24__u0 <-> https://growgraph.dev/facts/day_2015_10_18__u0 (score=0.843, failed=type,lexical)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: https://growgraph.dev/facts/date_2015_04_01__u0 <-> https://growgraph.dev/facts/date_2015_06_11__u0 (score=0.953, failed=literal_conflict,lexical)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: https://growgraph.dev/facts/date_2015_04_01__u0 <-> https://growgraph.dev/facts/date_2015_10_18__u0 (score=0.940, failed=literal_conflict,lexical)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: https://growgraph.dev/facts/date_2015_04_01__u0 <-> https://growgraph.dev/facts/day_2015_01_24__u0 (score=0.820, failed=type,lexical)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: https://growgraph.dev/facts/date_2015_04_01__u0 <-> https://growgraph.dev/facts/day_2015_04_01__u0 (score=0.860, failed=type,lexical)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: https://growgraph.dev/facts/date_2015_04_01__u0 <-> https://growgraph.dev/facts/day_2015_06_11__u0 (score=0.817, failed=type,lexical)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: https://growgraph.dev/facts/date_2015_04_01__u0 <-> https://growgraph.dev/facts/day_2015_10_18__u0 (score=0.821, failed=type,lexical)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: https://growgraph.dev/facts/date_2015_06_11__u0 <-> https://growgraph.dev/facts/date_2015_10_18__u0 (score=0.957, failed=literal_conflict,lexical)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: https://growgraph.dev/facts/date_2015_06_11__u0 <-> https://growgraph.dev/facts/day_2015_01_24__u0 (score=0.811, failed=type,lexical)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: https://growgraph.dev/facts/date_2015_06_11__u0 <-> https://growgraph.dev/facts/day_2015_04_01__u0 (score=0.831, failed=type,lexical)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: https://growgraph.dev/facts/date_2015_06_11__u0 <-> https://growgraph.dev/facts/day_2015_06_11__u0 (score=0.860, failed=type,lexical)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: https://growgraph.dev/facts/date_2015_06_11__u0 <-> https://growgraph.dev/facts/day_2015_10_18__u0 (score=0.841, failed=type,lexical)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: https://growgraph.dev/facts/date_2015_10_18__u0 <-> https://growgraph.dev/facts/day_2015_01_24__u0 (score=0.811, failed=type,lexical)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: https://growgraph.dev/facts/date_2015_10_18__u0 <-> https://growgraph.dev/facts/day_2015_04_01__u0 (score=0.800, failed=type,lexical)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: https://growgraph.dev/facts/date_2015_10_18__u0 <-> https://growgraph.dev/facts/day_2015_06_11__u0 (score=0.810, failed=type,lexical)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: https://growgraph.dev/facts/date_2015_10_18__u0 <-> https://growgraph.dev/facts/day_2015_10_18__u0 (score=0.863, failed=type,lexical)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: https://growgraph.dev/facts/day_2015_01_24__u0 <-> https://growgraph.dev/facts/day_2015_04_01__u0 (score=0.962, failed=functional_iri_conflict,lexical)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: https://growgraph.dev/facts/day_2015_01_24__u0 <-> https://growgraph.dev/facts/day_2015_06_11__u0 (score=0.953, failed=functional_iri_conflict,lexical)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: https://growgraph.dev/facts/day_2015_01_24__u0 <-> https://growgraph.dev/facts/day_2015_10_18__u0 (score=0.966, failed=functional_iri_conflict,lexical)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: https://growgraph.dev/facts/day_2015_04_01__u0 <-> https://growgraph.dev/facts/day_2015_06_11__u0 (score=0.967, failed=functional_iri_conflict,lexical)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: https://growgraph.dev/facts/day_2015_04_01__u0 <-> https://growgraph.dev/facts/day_2015_10_18__u0 (score=0.953, failed=functional_iri_conflict,lexical)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: https://growgraph.dev/facts/day_2015_06_11__u0 <-> https://growgraph.dev/facts/day_2015_10_18__u0 (score=0.967, failed=functional_iri_conflict,lexical)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: https://growgraph.dev/facts/fault_detection__u0 <-> https://growgraph.dev/facts/fault_identification__u0 (score=0.861, failed=sibling,type,lexical)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: https://growgraph.dev/facts/fault_detection__u0 <-> https://growgraph.dev/facts/health_assessment__u0 (score=0.797, failed=sibling,type,lexical)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: https://growgraph.dev/facts/fault_identification__u0 <-> https://growgraph.dev/facts/health_assessment__u0 (score=0.780, failed=sibling,type,lexical)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: https://growgraph.dev/facts/luis_camarinha_matos__u0 <-> https://growgraph.dev/facts/rita_ribeiro__u0 (score=0.701, failed=sibling,lexical)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: https://growgraph.dev/facts/ineffectiveness_configuration__u0 <-> https://growgraph.dev/facts/overall_equipment_ineffectiveness__u0 (score=0.720, failed=type,lexical)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: http://www.ontologyrepository.com/CommonCoreOntologies/DeviationMeasurementInformationContentEntity <-> http://www.ontologyrepository.com/CommonCoreOntologies/InformationBearingEntity (score=0.729, failed=lexical)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: http://www.ontologyrepository.com/CommonCoreOntologies/DeviationMeasurementInformationContentEntity <-> http://www.ontologyrepository.com/CommonCoreOntologies/MinimumOrdinalMeasurementInformationContentEntity (score=0.707, failed=lexical)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: http://www.ontologyrepository.com/CommonCoreOntologies/InformationBearingEntity <-> http://www.ontologyrepository.com/CommonCoreOntologies/MinimumOrdinalMeasurementInformationContentEntity (score=0.705, failed=lexical)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Performance_indicator <-> http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Performance_value (score=0.789, failed=lexical)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Fault_detection <-> http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Fault_identification (score=0.930, failed=lexical)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Maintainable_item <-> http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#item_type (score=0.708, failed=lexical)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Predictive_Maintenance_Article <-> http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Predictive_maintenance_case (score=0.704, failed=lexical)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Predictive_Maintenance_Article <-> http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Predictive_maintenance_model (score=0.704, failed=lexical)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Predictive_maintenance_case <-> http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Predictive_maintenance_model (score=0.711, failed=lexical)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Predictive_maintenance_model <-> http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#Predictive_maintenance_system_module (score=0.822, failed=lexical)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: http://www.ontologyrepository.com/CommonCoreOntologies/CalendarDateIdentifier <-> http://www.ontologyrepository.com/CommonCoreOntologies/GregorianDay (score=0.797, failed=lexical)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: http://www.ontologyrepository.com/CommonCoreOntologies/is_a_measurement_of <-> http://www.ontologyrepository.com/CommonCoreOntologies/uses_measurement_unit (score=0.753, failed=lexical)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: http://www.ontologyrepository.com/CommonCoreOntologies/is_a_ratio_measurement_of <-> http://www.ontologyrepository.com/CommonCoreOntologies/is_measured_by_ratio (score=0.715, failed=lexical)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: http://www.ontologyrepository.com/CommonCoreOntologies/describes <-> http://www.ontologyrepository.com/CommonCoreOntologies/is_subject_of (score=0.737, failed=lexical)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: http://www.ontologyrepository.com/CommonCoreOntologies/describes <-> http://www.ontologyrepository.com/CommonCoreOntologies/is_used_by (score=0.735, failed=lexical)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: http://www.ontologyrepository.com/CommonCoreOntologies/describes <-> http://www.ontologyrepository.com/CommonCoreOntologies/prescribes (score=0.757, failed=lexical)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: http://www.ontologyrepository.com/CommonCoreOntologies/describes <-> http://www.ontologyrepository.com/CommonCoreOntologies/uses (score=0.725, failed=lexical)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: http://www.ontologyrepository.com/CommonCoreOntologies/describes <-> http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#explained_in (score=0.737, failed=lexical)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: http://www.ontologyrepository.com/CommonCoreOntologies/is_subject_of <-> http://www.ontologyrepository.com/CommonCoreOntologies/is_used_by (score=0.756, failed=lexical)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: http://www.ontologyrepository.com/CommonCoreOntologies/is_subject_of <-> http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#explained_in (score=0.760, failed=lexical)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: http://www.ontologyrepository.com/CommonCoreOntologies/is_used_by <-> http://www.ontologyrepository.com/CommonCoreOntologies/prescribes (score=0.800, failed=lexical)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: http://www.ontologyrepository.com/CommonCoreOntologies/is_used_by <-> http://www.ontologyrepository.com/CommonCoreOntologies/uses (score=0.752, failed=lexical)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: http://www.ontologyrepository.com/CommonCoreOntologies/is_used_by <-> http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#explained_in (score=0.779, failed=lexical)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: http://www.ontologyrepository.com/CommonCoreOntologies/is_used_by <-> http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#function_uses_model (score=0.718, failed=lexical)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: http://www.ontologyrepository.com/CommonCoreOntologies/is_used_by <-> http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#has_predictive_maintenance_function (score=0.749, failed=lexical)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: http://www.ontologyrepository.com/CommonCoreOntologies/prescribes <-> http://www.ontologyrepository.com/CommonCoreOntologies/uses (score=0.793, failed=lexical)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: http://www.ontologyrepository.com/CommonCoreOntologies/prescribes <-> http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#configuration_described_by (score=0.766, failed=lexical)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: http://www.ontologyrepository.com/CommonCoreOntologies/prescribes <-> http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#explained_in (score=0.790, failed=lexical)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: http://www.ontologyrepository.com/CommonCoreOntologies/prescribes <-> http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#function_uses_model (score=0.793, failed=lexical)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: http://www.ontologyrepository.com/CommonCoreOntologies/prescribes <-> http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#has_predictive_maintenance_function (score=0.726, failed=lexical)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: http://www.ontologyrepository.com/CommonCoreOntologies/uses <-> http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#configuration_described_by (score=0.709, failed=lexical)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: http://www.ontologyrepository.com/CommonCoreOntologies/uses <-> http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#explained_in (score=0.701, failed=lexical)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: http://www.ontologyrepository.com/CommonCoreOntologies/uses <-> http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#function_uses_model (score=0.812, failed=lexical)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: http://www.ontologyrepository.com/CommonCoreOntologies/uses <-> http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#has_predictive_maintenance_function (score=0.700, failed=lexical)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#configuration_described_by <-> http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#function_uses_model (score=0.738, failed=lexical)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#explained_in <-> http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#function_uses_model (score=0.706, failed=lexical)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#function_uses_model <-> http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#has_predictive_maintenance_function (score=0.780, failed=lexical)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#has_predictive_maintenance_function <-> http://www.w3.org/2000/01/rdf-schema#label (score=0.757, failed=lexical)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: http://www.w3.org/1999/02/22-rdf-syntax-ns#type <-> http://www.w3.org/2000/01/rdf-schema#label (score=0.705, failed=lexical)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: http://purl.obolibrary.org/obo/BFO_0000050 <-> http://purl.obolibrary.org/obo/RO_0000057 (score=0.744, failed=lexical)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: http://www.ontologyrepository.com/CommonCoreOntologies/designated_by <-> http://www.ontologyrepository.com/CommonCoreOntologies/occurs_on (score=0.714, failed=lexical)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: http://www.ontologyrepository.com/CommonCoreOntologies/has_input <-> http://www.ontologyrepository.com/CommonCoreOntologies/has_output (score=0.788, failed=lexical)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: http://www.ontologyrepository.com/CommonCoreOntologies/has_input <-> http://www.ontologyrepository.com/CommonCoreOntologies/has_process_part (score=0.766, failed=lexical)
+DEBUG:ontocast.tool.agg.aggregate:Rejected candidate merge: http://www.ontologyrepository.com/CommonCoreOntologies/has_output <-> http://www.ontologyrepository.com/CommonCoreOntologies/has_process_part (score=0.761, failed=lexical)
+DEBUG:ontocast.tool.agg.clustering:Selected representative https://growgraph.dev/facts/validation_1__u0 from cluster of 2 entities (0 ontology, 2 facts)
+DEBUG:ontocast.tool.agg.clustering:Selected representative http://www.ontologyrepository.com/CommonCoreOntologies/MaximumOrdinalMeasurementInformationContentEntity from cluster of 2 entities (2 ontology, 0 facts)
+DEBUG:ontocast.tool.agg.clustering:Selected representative http://www.ontologyrepository.com/CommonCoreOntologies/CountMeasurementInformationContentEntity from cluster of 2 entities (2 ontology, 0 facts)
+DEBUG:ontocast.tool.agg.clustering:Selected representative http://www.ontologyrepository.com/CommonCoreOntologies/is_a_measurement_of from cluster of 2 entities (2 ontology, 0 facts)
+INFO:ontocast.tool.agg.clustering:Created mapping for 183 entities to 179 representatives
+DEBUG:ontocast.tool.agg.clustering:Selected representative http://www.ontologyrepository.com/CommonCoreOntologies/MaximumOrdinalMeasurementInformationContentEntity from cluster of 2 entities (2 ontology, 0 facts)
+DEBUG:ontocast.tool.agg.clustering:Selected representative http://www.ontologyrepository.com/CommonCoreOntologies/CountMeasurementInformationContentEntity from cluster of 2 entities (2 ontology, 0 facts)
+DEBUG:ontocast.tool.agg.clustering:Selected representative http://www.ontologyrepository.com/CommonCoreOntologies/is_a_measurement_of from cluster of 2 entities (2 ontology, 0 facts)
+INFO:ontocast.tool.agg.uri_builder:Built URI mapping: 183 entities, 120 normalised
+INFO:ontocast.tool.agg.rewriter:Merged 1 unit graphs with provenance: 620 -> 1862 triples (119 entities merged)
+INFO:ontocast.tool.agg.aggregate:Aggregation with metadata complete
+WARNING:ontocast.stategraph.facts_gate:Facts validation gate: 1 error finding(s) remain after 0 repair pass(es)
+INFO:ontocast.agent.serialize:LLM: 2 calls, 534,122 sent, 47,189 received | 153,131 in / 13,489 out tokens | Triples: 0 ontology, 537 facts
+INFO:ontocast.agent.serialize:Durations: Render Facts 253.2s, Render Facts/unit_sum 253.1s, llm/provider 248.7s, Render Facts/loop_lag_total 10.5s, Chunk Text 9.1s, Merge Facts 3.9s, Render Facts/loop_lag_max 2.3s, Convert to Text 1.9s, repair/deterministic 1.4s, prompt/ontology_chapter 0.5s, Validate Facts 0.1s, llm/cache_lookup 0.0s, llm/inflight_wait 0.0s, ctx/merge_document_ontology 0.0s, Render Facts/worker_wait 0.0s
+INFO:ontocast.agent.serialize:Effective workers: Render Facts 1.0x (loop lag 10.5s)
+INFO:ontocast.api.process_helpers:Dumped facts graph with chunk-level provenance retained to /Users/antho/Ontologies/out/pilot-s003-terra-cross-section-large-chunks/OPMAD-S003/10.1016_j.cie.2018.12.056.facts.ttl
+INFO:ontocast.api.process_helpers:Dumped 1 content units to /Users/antho/Ontologies/out/pilot-s003-terra-cross-section-large-chunks/OPMAD-S003/10.1016_j.cie.2018.12.056.units.jsonl
+INFO:ontocast.api.process_helpers:Dumped facts validation report to /Users/antho/Ontologies/out/pilot-s003-terra-cross-section-large-chunks/OPMAD-S003/10.1016_j.cie.2018.12.056.facts.validation.json
+INFO:ontocast.api.process_helpers:Dumped run manifest to /Users/antho/Ontologies/out/pilot-s003-terra-cross-section-large-chunks/OPMAD-S003/10.1016_j.cie.2018.12.056.run.json
+
+Finished 1 paper(s). Results: /Users/antho/Ontologies/out/pilot-s003-terra-cross-section-large-chunks

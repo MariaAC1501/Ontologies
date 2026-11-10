@@ -1,0 +1,198 @@
+{
+  "source": "10.1016_j.cie.2018.12.056.pdf",
+  "conformance": {
+    "shacl_evaluated": null,
+    "conforms": null,
+    "shacl_focus_nodes": null,
+    "shacl_vacuous": false,
+    "findings": 1,
+    "errors": 1,
+    "warnings": 0,
+    "by_kind": {
+      "suspect_multi_value": 1
+    },
+    "shacl_violations": 0,
+    "shacl_by_constraint": {},
+    "shacl_by_shape": {},
+    "repairs_applied": {}
+  },
+  "gate_repairs": [],
+  "findings": [
+    {
+      "kind": "suspect_multi_value",
+      "severity": "error",
+      "message": "<https://growgraph.dev/doc/447e6aeb76ca/fuzzyInferenceModel> points at 4 objects via <http://www.ontologyrepository.com/CommonCoreOntologies/uses>, which is single-valued for every other subject in this graph.",
+      "subject": "https://growgraph.dev/doc/447e6aeb76ca/fuzzyInferenceModel",
+      "predicate": "http://www.ontologyrepository.com/CommonCoreOntologies/uses",
+      "values": [
+        "https://growgraph.dev/doc/447e6aeb76ca/downTime",
+        "https://growgraph.dev/doc/447e6aeb76ca/overallEquipmentIneffectiveness",
+        "https://growgraph.dev/doc/447e6aeb76ca/scrapRatePremium",
+        "https://growgraph.dev/doc/447e6aeb76ca/scrapRateRegular"
+      ],
+      "component": "",
+      "source_shape": ""
+    }
+  ],
+  "unit_repairs": {
+    "0": [
+      {
+        "kind": "critic_fix",
+        "source": "ids=[21]",
+        "target": "@prefix cd: <https://growgraph.dev/facts/> . @prefix ns1: <http://www.ontologyrepository.com/CommonCoreOntologies/> . cd:down_time a ns1:InformationBearingEntity ; ns1:uses_measurement_unit ns1:MinuteMeasurementUnit .",
+        "triple_count": 1
+      },
+      {
+        "kind": "critic_fix",
+        "source": "ids=[25]",
+        "target": "@prefix cd: <https://growgraph.dev/facts/> . @prefix ns1: <http://www.ontologyrepository.com/CommonCoreOntologies/> . cd:dt_max a ns1:InformationBearingEntity ; ns1:uses_measurement_unit ns1:MinuteMeasurementUnit .",
+        "triple_count": 1
+      },
+      {
+        "kind": "critic_fix",
+        "source": "ids=[30]",
+        "target": "@prefix cd: <https://growgraph.dev/facts/> . @prefix ns1: <http://www.ontologyrepository.com/CommonCoreOntologies/> . cd:dt_max_std a ns1:InformationBearingEntity ; ns1:uses_measurement_unit ns1:MinuteMeasurementUnit .",
+        "triple_count": 1
+      },
+      {
+        "kind": "critic_fix",
+        "source": "ids=[35]",
+        "target": "@prefix cd: <https://growgraph.dev/facts/> . @prefix ns1: <http://www.ontologyrepository.com/CommonCoreOntologies/> . cd:dt_mean a ns1:InformationBearingEntity ; ns1:uses_measurement_unit ns1:MinuteMeasurementUnit .",
+        "triple_count": 1
+      },
+      {
+        "kind": "critic_fix",
+        "source": "ids=[40]",
+        "target": "@prefix cd: <https://growgraph.dev/facts/> . @prefix ns1: <http://www.ontologyrepository.com/CommonCoreOntologies/> . cd:dt_mean_std a ns1:InformationBearingEntity ; ns1:uses_measurement_unit ns1:MinuteMeasurementUnit .",
+        "triple_count": 1
+      },
+      {
+        "kind": "critic_fix",
+        "source": "ids=[45]",
+        "target": "@prefix cd: <https://growgraph.dev/facts/> . @prefix ns1: <http://www.ontologyrepository.com/CommonCoreOntologies/> . cd:dt_min a ns1:InformationBearingEntity ; ns1:uses_measurement_unit ns1:MinuteMeasurementUnit .",
+        "triple_count": 1
+      },
+      {
+        "kind": "critic_fix",
+        "source": "ids=[50]",
+        "target": "@prefix cd: <https://growgraph.dev/facts/> . @prefix ns1: <http://www.ontologyrepository.com/CommonCoreOntologies/> . cd:dt_min_std a ns1:InformationBearingEntity ; ns1:uses_measurement_unit ns1:MinuteMeasurementUnit .",
+        "triple_count": 1
+      },
+      {
+        "kind": "critic_fix",
+        "source": "ids=[61]",
+        "target": "@prefix cd: <https://growgraph.dev/facts/> . @prefix ns1: <http://www.ontologyrepository.com/CommonCoreOntologies/> . cd:full_day a ns1:InformationBearingEntity ; ns1:uses_measurement_unit ns1:MinuteMeasurementUnit .",
+        "triple_count": 1
+      },
+      {
+        "kind": "critic_fix",
+        "source": "ids=[66]",
+        "target": "@prefix cd: <https://growgraph.dev/facts/> . @prefix ns1: <http://www.ontologyrepository.com/CommonCoreOntologies/> . cd:full_day_hours a ns1:InformationBearingEntity ; ns1:uses_measurement_unit ns1:HourMeasurementUnit .",
+        "triple_count": 1
+      },
+      {
+        "kind": "critic_fix",
+        "source": "ids=[122]",
+        "target": "@prefix cd: <https://growgraph.dev/facts/> . @prefix ns1: <http://www.ontologyrepository.com/CommonCoreOntologies/> . cd:historical_period a ns1:InformationBearingEntity ; ns1:uses_measurement_unit ns1:MonthMeasurementUnit .",
+        "triple_count": 1
+      },
+      {
+        "kind": "critic_fix",
+        "source": "ids=[317]",
+        "target": "@prefix cd: <https://growgraph.dev/facts/> . @prefix ns1: <http://www.ontologyrepository.com/CommonCoreOntologies/> . cd:v1a_dt a ns1:InformationBearingEntity ; ns1:uses_measurement_unit ns1:MinuteMeasurementUnit .",
+        "triple_count": 1
+      },
+      {
+        "kind": "critic_fix",
+        "source": "ids=[342]",
+        "target": "@prefix cd: <https://growgraph.dev/facts/> . @prefix ns1: <http://www.ontologyrepository.com/CommonCoreOntologies/> . cd:v1b_dt a ns1:InformationBearingEntity ; ns1:uses_measurement_unit ns1:MinuteMeasurementUnit .",
+        "triple_count": 1
+      },
+      {
+        "kind": "critic_fix",
+        "source": "ids=[367]",
+        "target": "@prefix cd: <https://growgraph.dev/facts/> . @prefix ns1: <http://www.ontologyrepository.com/CommonCoreOntologies/> . cd:v1c_dt a ns1:InformationBearingEntity ; ns1:uses_measurement_unit ns1:MinuteMeasurementUnit .",
+        "triple_count": 1
+      },
+      {
+        "kind": "critic_fix",
+        "source": "ids=[392]",
+        "target": "@prefix cd: <https://growgraph.dev/facts/> . @prefix ns1: <http://www.ontologyrepository.com/CommonCoreOntologies/> . cd:v1d_dt a ns1:InformationBearingEntity ; ns1:uses_measurement_unit ns1:MinuteMeasurementUnit .",
+        "triple_count": 1
+      },
+      {
+        "kind": "critic_fix",
+        "source": "ids=[417]",
+        "target": "@prefix cd: <https://growgraph.dev/facts/> . @prefix ns1: <http://www.ontologyrepository.com/CommonCoreOntologies/> . cd:v2a_dt a ns1:InformationBearingEntity ; ns1:uses_measurement_unit ns1:MinuteMeasurementUnit .",
+        "triple_count": 1
+      },
+      {
+        "kind": "critic_fix",
+        "source": "ids=[472]",
+        "target": "@prefix cd: <https://growgraph.dev/facts/> . @prefix ns1: <http://www.ontologyrepository.com/CommonCoreOntologies/> . cd:v2e_dt a ns1:InformationBearingEntity ; ns1:uses_measurement_unit ns1:MinuteMeasurementUnit .",
+        "triple_count": 1
+      },
+      {
+        "kind": "critic_fix",
+        "source": "ids=[6, 7, 8]",
+        "target": "@prefix cd: <https://growgraph.dev/facts/> . @prefix dc: <http://purl.org/dc/elements/1.1/> . cd:article dc:contributor cd:luis_camarinha_matos, cd:nazanin_vafaei, cd:rita_ribeiro .",
+        "triple_count": 1
+      },
+      {
+        "kind": "critic_fix",
+        "source": "ids=[70]",
+        "target": "@prefix cd: <https://growgraph.dev/facts/> . @prefix opmad: <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#> . cd:production_line_machine opmad:type_described_by cd:machine_description .",
+        "triple_count": 1
+      },
+      {
+        "kind": "critic_fix",
+        "source": "",
+        "target": "@prefix cd: <https://growgraph.dev/facts/> . @prefix ns1: <http://www.ontologyrepository.com/CommonCoreOntologies/> . @prefix ns2: <http://purl.obolibrary.org/obo/> . cd:machine_monitoring a ns1:ActOfObservation ; ns1:uses cd:fuzzy_early_warning_module ; ns2:RO_0000057 cd:production_line_machine .",
+        "triple_count": 1
+      },
+      {
+        "kind": "critic_fix",
+        "source": "",
+        "target": "@prefix cd: <https://growgraph.dev/facts/> . @prefix opmad: <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#> . cd:fuzzy_inference_model opmad:configuration_described_by cd:membership_configuration .",
+        "triple_count": 1
+      },
+      {
+        "kind": "critic_fix",
+        "source": "ids=[264, 267]",
+        "target": "@prefix cd: <https://growgraph.dev/facts/> . @prefix ns1: <http://www.ontologyrepository.com/CommonCoreOntologies/> . cd:simulation ns1:is_measured_by_ratio cd:simulation_count . cd:simulation_count ns1:is_a_ratio_measurement_of cd:simulation .",
+        "triple_count": 1
+      },
+      {
+        "kind": "critic_fix",
+        "source": "",
+        "target": "@prefix cd: <https://growgraph.dev/facts/> . @prefix ns1: <http://www.ontologyrepository.com/CommonCoreOntologies/> . cd:validation_1 a ns1:ActOfObservation ; ns1:has_process_part cd:validation_1a, cd:validation_1b, cd:validation_1c, cd:validation_1d . cd:validation_2 a ns1:ActOfObservation ; ns1:has_process_part cd:validation_2a, cd:validation_2b, cd:validation_2c, cd:validation_2d, cd:validation_2e .",
+        "triple_count": 1
+      },
+      {
+        "kind": "critic_fix",
+        "source": "",
+        "target": "@prefix cd: <https://growgraph.dev/facts/> . @prefix opmad: <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#> . cd:rule_details a opmad:Model_configuration ; opmad:has_text_value \"Table 6: both scrap rates green with OEIE and DT green or yellow yield green; one scrap rate yellow with the other green and OEIE and DT green or yellow yields yellow; DT red with both scrap rates green and OEIE green or yellow yields orange; OEIE red with a yellow scrap rate and DT green or yellow yields orange; either scrap rate red, both scrap rates yellow, or both OEIE and DT red yield red.\" . cd:fuzzy_inference_model opmad:configuration_described_by cd:rule_details .",
+        "triple_count": 1
+      },
+      {
+        "kind": "critic_fix",
+        "source": "",
+        "target": "@prefix cd: <https://growgraph.dev/facts/> . @prefix ns1: <http://www.ontologyrepository.com/CommonCoreOntologies/> . @prefix opmad: <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#> . @prefix xsd: <http://www.w3.org/2001/XMLSchema#> . cd:validation_1a ns1:occurs_on cd:day_2015_01_24 . cd:validation_1b ns1:occurs_on cd:day_2015_10_18 . cd:validation_1c ns1:occurs_on cd:day_2015_04_01 . cd:validation_1d ns1:occurs_on cd:day_2015_06_11 . cd:day_2015_01_24 a ns1:GregorianDay ; ns1:designated_by cd:date_2015_01_24 . cd:day_2015_10_18 a ns1:GregorianDay ; ns1:designated_by cd:date_2015_10_18 . cd:day_2015_04_01 a ns1:GregorianDay ; ns1:designated_by cd:date_2015_04_01 . cd:day_2015_06_11 a ns1:GregorianDay ; ns1:designated_by cd:date_2015_06_11 . cd:date_2015_01_24 a ns1:CalendarDateIdentifier ; opmad:has_text_value \"2015-01-24\"^^xsd:string . cd:date_2015_10_18 a ns1:CalendarDateIdentifier ; opmad:has_text_value \"2015-10-18\"^^xsd:string . cd:date_2015_04_01 a ns1:CalendarDateIdentifier ; opmad:has_text_value \"2015-04-01\"^^xsd:string . cd:date_2015_06_11 a ns1:CalendarDateIdentifier ; opmad:has_text_value \"2015-06-11\"^^xsd:string .",
+        "triple_count": 1
+      },
+      {
+        "kind": "critic_fix",
+        "source": "ids=[278, 279, 280, 281]",
+        "target": "@prefix cd: <https://growgraph.dev/facts/> . @prefix ns1: <http://www.ontologyrepository.com/CommonCoreOntologies/> . @prefix opmad: <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#> . @prefix xsd: <http://www.w3.org/2001/XMLSchema#> . cd:simulation_first ns1:has_input cd:sim1_dt, cd:sim1_oeie, cd:sim1_scp, cd:sim1_scr . cd:sim1_dt a ns1:RatioMeasurementInformationContentEntity, ns1:InformationBearingEntity ; ns1:is_a_ratio_measurement_of cd:down_time ; ns1:uses_measurement_unit ns1:MinuteMeasurementUnit ; opmad:has_double_value \"68.0\"^^xsd:double . cd:sim1_oeie a ns1:RatioMeasurementInformationContentEntity ; ns1:is_a_ratio_measurement_of cd:overall_equipment_ineffectiveness ; opmad:has_double_value \"23.9\"^^xsd:double ; rdfs:comment \"%\" . cd:sim1_scp a ns1:RatioMeasurementInformationContentEntity ; ns1:is_a_ratio_measurement_of cd:scrap_rate_premium ; opmad:has_double_value \"2.35\"^^xsd:double ; rdfs:comment \"%\" . cd:sim1_scr a ns1:RatioMeasurementInformationContentEntity ; ns1:is_a_ratio_measurement_of cd:scrap_rate_regular ; opmad:has_double_value \"0.0\"^^xsd:double ; rdfs:comment \"%\" .",
+        "triple_count": 1
+      },
+      {
+        "kind": "critic_fix",
+        "source": "",
+        "target": "@prefix cd: <https://growgraph.dev/facts/> . @prefix ns1: <http://www.ontologyrepository.com/CommonCoreOntologies/> . @prefix opmad: <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#> . cd:rule_1 a opmad:Model_configuration ; opmad:has_text_value \"If OEIE is green or yellow, SC-R and SC-P are green, and DT is green or yellow, then the alarm is green.\" . cd:rule_6 a opmad:Model_configuration ; opmad:has_text_value \"If SC-R is red or SC-P is red, then the alarm is red.\" . cd:fuzzy_inference_model opmad:configuration_described_by cd:rule_1, cd:rule_6 . cd:validation_1b ns1:uses cd:rule_1 . cd:validation_1a ns1:uses cd:rule_6 . cd:validation_2a ns1:uses cd:rule_1 . cd:validation_2c ns1:uses cd:rule_6 . cd:validation_2d ns1:uses cd:rule_6 .",
+        "triple_count": 1
+      }
+    ]
+  },
+  "unit_failures": []
+}
