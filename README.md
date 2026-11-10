@@ -1,6 +1,9 @@
-# Benchmarking LLM capabilities for ontology development and case extraction from predictive maintenance literature: A comparison of OPMAD and OntoCast
+# Benchmarking LLM capabilities for ontology development and case extraction from predictive maintenance literature: An OntoCast study informed by the OPMAD ontology
 
-This repo contains an experimental comparison of the capabilities of humans (OPMAD authors) and large language models (LLMs) inferenced via OntoCast, for the task of ontology development and case extraction from predictive maintenance literature.
+**Abstract:** This work presents an experimental comparison of the capabilities of humans (OPMAD authors) and large language models (LLMs) for the tasks of ontology development and case extraction from predictive maintenance literature.
+LLMs were inferenced via the OntoCast Python library using a tailored extraction prompt constrained by a human-made ontology (OPMAD), and tasked to extract predictive maintenance cases and their associated facts from a corpus of 102 papers that had been previously extracted by the same human authors of the OPMAD ontology.
+The LLM- and human-extracted facts were compared using quality metrics.
+Then, the same 102-paper corpus was used to evolve a predictive maintenance case ontology from zero using OntoCast, whose quality was compared against OPMAD.
 
 ## Pipeline
 
