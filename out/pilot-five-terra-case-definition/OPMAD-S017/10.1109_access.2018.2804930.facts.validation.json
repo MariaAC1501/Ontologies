@@ -1,0 +1,987 @@
+{
+  "source": "10.1109_access.2018.2804930.pdf",
+  "conformance": {
+    "shacl_evaluated": null,
+    "conforms": null,
+    "shacl_focus_nodes": null,
+    "shacl_vacuous": false,
+    "findings": 23,
+    "errors": 19,
+    "warnings": 4,
+    "by_kind": {
+      "functional_violation": 4,
+      "non_catalog_vocabulary": 4,
+      "suspect_multi_value": 15
+    },
+    "shacl_violations": 0,
+    "shacl_by_constraint": {},
+    "shacl_by_shape": {},
+    "repairs_applied": {}
+  },
+  "gate_repairs": [],
+  "findings": [
+    {
+      "kind": "suspect_multi_value",
+      "severity": "error",
+      "message": "<https://growgraph.dev/doc/750540728620/acceleratedLifeTest> points at 2 objects via <http://www.ontologyrepository.com/CommonCoreOntologies/has_output>, which is single-valued for every other subject in this graph.",
+      "subject": "https://growgraph.dev/doc/750540728620/acceleratedLifeTest",
+      "predicate": "http://www.ontologyrepository.com/CommonCoreOntologies/has_output",
+      "values": [
+        "https://growgraph.dev/doc/750540728620/horizontalVibrationData",
+        "https://growgraph.dev/doc/750540728620/vibrationSignal"
+      ],
+      "component": "",
+      "source_shape": ""
+    },
+    {
+      "kind": "suspect_multi_value",
+      "severity": "error",
+      "message": "<https://growgraph.dev/doc/750540728620/article_7> points at 4 objects via <http://www.ontologyrepository.com/CommonCoreOntologies/is_mentioned_by>, which is single-valued for every other subject in this graph.",
+      "subject": "https://growgraph.dev/doc/750540728620/article_7",
+      "predicate": "http://www.ontologyrepository.com/CommonCoreOntologies/is_mentioned_by",
+      "values": [
+        "https://growgraph.dev/doc/750540728620/deepCnnModel_5",
+        "https://growgraph.dev/doc/750540728620/dnnModel",
+        "https://growgraph.dev/doc/750540728620/sameFeatureModelComparison",
+        "https://growgraph.dev/doc/750540728620/svmModel"
+      ],
+      "component": "",
+      "source_shape": ""
+    },
+    {
+      "kind": "functional_violation",
+      "severity": "error",
+      "message": "<https://growgraph.dev/doc/750540728620/bearingCase> holds 2 distinct values for <http://www.ontologyrepository.com/CommonCoreOntologies/is_about>, which the schema constrains to at most one.",
+      "subject": "https://growgraph.dev/doc/750540728620/bearingCase",
+      "predicate": "http://www.ontologyrepository.com/CommonCoreOntologies/is_about",
+      "values": [
+        "https://growgraph.dev/doc/750540728620/bearing_4",
+        "https://growgraph.dev/doc/750540728620/lifePredictionModel"
+      ],
+      "component": "",
+      "source_shape": ""
+    },
+    {
+      "kind": "functional_violation",
+      "severity": "error",
+      "message": "<https://growgraph.dev/doc/750540728620/bearingRulCase> holds 3 distinct values for <http://www.ontologyrepository.com/CommonCoreOntologies/designates>, which the schema constrains to at most one.",
+      "subject": "https://growgraph.dev/doc/750540728620/bearingRulCase",
+      "predicate": "http://www.ontologyrepository.com/CommonCoreOntologies/designates",
+      "values": [
+        "https://growgraph.dev/doc/750540728620/bearingRulModule",
+        "https://growgraph.dev/doc/750540728620/bearingRulModule_1",
+        "https://growgraph.dev/doc/750540728620/bearingRulModule_2"
+      ],
+      "component": "",
+      "source_shape": ""
+    },
+    {
+      "kind": "functional_violation",
+      "severity": "error",
+      "message": "<https://growgraph.dev/doc/750540728620/bearingRulPredictionCase> holds 2 distinct values for <http://www.ontologyrepository.com/CommonCoreOntologies/designates>, which the schema constrains to at most one.",
+      "subject": "https://growgraph.dev/doc/750540728620/bearingRulPredictionCase",
+      "predicate": "http://www.ontologyrepository.com/CommonCoreOntologies/designates",
+      "values": [
+        "https://growgraph.dev/doc/750540728620/bearingRulPredictionModule",
+        "https://growgraph.dev/doc/750540728620/bearingRulPredictionModule_2"
+      ],
+      "component": "",
+      "source_shape": ""
+    },
+    {
+      "kind": "suspect_multi_value",
+      "severity": "error",
+      "message": "<https://growgraph.dev/doc/750540728620/bearingVibration> points at 2 objects via <http://purl.obolibrary.org/obo/RO_0000057>, which is single-valued for every other subject in this graph.",
+      "subject": "https://growgraph.dev/doc/750540728620/bearingVibration",
+      "predicate": "http://purl.obolibrary.org/obo/RO_0000057",
+      "values": [
+        "https://growgraph.dev/doc/750540728620/bearing_2",
+        "https://growgraph.dev/doc/750540728620/bearing_4"
+      ],
+      "component": "",
+      "source_shape": ""
+    },
+    {
+      "kind": "functional_violation",
+      "severity": "error",
+      "message": "<https://growgraph.dev/doc/750540728620/discreteFrequencySpectrum> holds 2 distinct values for <http://www.ontologyrepository.com/CommonCoreOntologies/is_about>, which the schema constrains to at most one.",
+      "subject": "https://growgraph.dev/doc/750540728620/discreteFrequencySpectrum",
+      "predicate": "http://www.ontologyrepository.com/CommonCoreOntologies/is_about",
+      "values": [
+        "https://growgraph.dev/doc/750540728620/amplitudeVariable_1",
+        "https://growgraph.dev/doc/750540728620/frequencyVariable"
+      ],
+      "component": "",
+      "source_shape": ""
+    },
+    {
+      "kind": "suspect_multi_value",
+      "severity": "error",
+      "message": "<https://growgraph.dev/doc/750540728620/fastFourierTransform> points at 2 objects via <http://www.ontologyrepository.com/CommonCoreOntologies/prescribes>, which is single-valued for every other subject in this graph.",
+      "subject": "https://growgraph.dev/doc/750540728620/fastFourierTransform",
+      "predicate": "http://www.ontologyrepository.com/CommonCoreOntologies/prescribes",
+      "values": [
+        "https://growgraph.dev/doc/750540728620/fourierTransformProcess",
+        "https://growgraph.dev/doc/750540728620/fourierTransformProcess_1"
+      ],
+      "component": "",
+      "source_shape": ""
+    },
+    {
+      "kind": "suspect_multi_value",
+      "severity": "error",
+      "message": "<https://growgraph.dev/doc/750540728620/featureExtractionStage> points at 2 objects via <http://www.ontologyrepository.com/CommonCoreOntologies/has_output>, which is single-valued for every other subject in this graph.",
+      "subject": "https://growgraph.dev/doc/750540728620/featureExtractionStage",
+      "predicate": "http://www.ontologyrepository.com/CommonCoreOntologies/has_output",
+      "values": [
+        "https://growgraph.dev/doc/750540728620/sampledEnergyVectors",
+        "https://growgraph.dev/doc/750540728620/spectrumPrincipalEnergyVector_3"
+      ],
+      "component": "",
+      "source_shape": ""
+    },
+    {
+      "kind": "suspect_multi_value",
+      "severity": "error",
+      "message": "<https://growgraph.dev/doc/750540728620/featureExtraction_1> points at 4 objects via <http://www.ontologyrepository.com/CommonCoreOntologies/has_output>, which is single-valued for every other subject in this graph.",
+      "subject": "https://growgraph.dev/doc/750540728620/featureExtraction_1",
+      "predicate": "http://www.ontologyrepository.com/CommonCoreOntologies/has_output",
+      "values": [
+        "https://growgraph.dev/doc/750540728620/featureMap_1",
+        "https://growgraph.dev/doc/750540728620/spectralModulusSequence",
+        "https://growgraph.dev/doc/750540728620/spectralSequence",
+        "https://growgraph.dev/doc/750540728620/spectrumPrincipalEnergyVector_4"
+      ],
+      "component": "",
+      "source_shape": ""
+    },
+    {
+      "kind": "suspect_multi_value",
+      "severity": "error",
+      "message": "<https://growgraph.dev/doc/750540728620/individualSampling> points at 2 objects via <http://www.ontologyrepository.com/CommonCoreOntologies/has_output>, which is single-valued for every other subject in this graph.",
+      "subject": "https://growgraph.dev/doc/750540728620/individualSampling",
+      "predicate": "http://www.ontologyrepository.com/CommonCoreOntologies/has_output",
+      "values": [
+        "https://growgraph.dev/doc/750540728620/horizontalVibrationData",
+        "https://growgraph.dev/doc/750540728620/vibrationSignal"
+      ],
+      "component": "",
+      "source_shape": ""
+    },
+    {
+      "kind": "suspect_multi_value",
+      "severity": "error",
+      "message": "<https://growgraph.dev/doc/750540728620/individualSampling> points at 3 objects via <http://www.ontologyrepository.com/CommonCoreOntologies/is_measured_by_ratio>, which is single-valued for every other subject in this graph.",
+      "subject": "https://growgraph.dev/doc/750540728620/individualSampling",
+      "predicate": "http://www.ontologyrepository.com/CommonCoreOntologies/is_measured_by_ratio",
+      "values": [
+        "https://growgraph.dev/doc/750540728620/collectionDuration",
+        "https://growgraph.dev/doc/750540728620/collectionInterval",
+        "https://growgraph.dev/doc/750540728620/samplingFrequency"
+      ],
+      "component": "",
+      "source_shape": ""
+    },
+    {
+      "kind": "suspect_multi_value",
+      "severity": "error",
+      "message": "<https://growgraph.dev/doc/750540728620/predictionProcess> points at 2 objects via <http://www.ontologyrepository.com/CommonCoreOntologies/has_input>, which is single-valued for every other subject in this graph.",
+      "subject": "https://growgraph.dev/doc/750540728620/predictionProcess",
+      "predicate": "http://www.ontologyrepository.com/CommonCoreOntologies/has_input",
+      "values": [
+        "https://growgraph.dev/doc/750540728620/featureMap_2",
+        "https://growgraph.dev/doc/750540728620/testSet"
+      ],
+      "component": "",
+      "source_shape": ""
+    },
+    {
+      "kind": "suspect_multi_value",
+      "severity": "error",
+      "message": "<https://growgraph.dev/doc/750540728620/regressionPrediction> points at 2 objects via <http://purl.obolibrary.org/obo/BFO_0000055>, which is single-valued for every other subject in this graph.",
+      "subject": "https://growgraph.dev/doc/750540728620/regressionPrediction",
+      "predicate": "http://purl.obolibrary.org/obo/BFO_0000055",
+      "values": [
+        "https://growgraph.dev/doc/750540728620/bearingRulEstimation_1",
+        "https://growgraph.dev/doc/750540728620/regression"
+      ],
+      "component": "",
+      "source_shape": ""
+    },
+    {
+      "kind": "suspect_multi_value",
+      "severity": "error",
+      "message": "<https://growgraph.dev/doc/750540728620/regressionPrediction> points at 2 objects via <http://www.ontologyrepository.com/CommonCoreOntologies/prescribed_by>, which is single-valued for every other subject in this graph.",
+      "subject": "https://growgraph.dev/doc/750540728620/regressionPrediction",
+      "predicate": "http://www.ontologyrepository.com/CommonCoreOntologies/prescribed_by",
+      "values": [
+        "https://growgraph.dev/doc/750540728620/deepCnnModel_2",
+        "https://growgraph.dev/doc/750540728620/regressionModel"
+      ],
+      "component": "",
+      "source_shape": ""
+    },
+    {
+      "kind": "suspect_multi_value",
+      "severity": "error",
+      "message": "<https://growgraph.dev/doc/750540728620/rulEstimationProcess> points at 2 objects via <http://www.ontologyrepository.com/CommonCoreOntologies/has_input>, which is single-valued for every other subject in this graph.",
+      "subject": "https://growgraph.dev/doc/750540728620/rulEstimationProcess",
+      "predicate": "http://www.ontologyrepository.com/CommonCoreOntologies/has_input",
+      "values": [
+        "https://growgraph.dev/doc/750540728620/featureMap_1",
+        "https://growgraph.dev/doc/750540728620/vibrationVariable_2"
+      ],
+      "component": "",
+      "source_shape": ""
+    },
+    {
+      "kind": "suspect_multi_value",
+      "severity": "error",
+      "message": "<https://growgraph.dev/doc/750540728620/rulPredictionProcess> points at 3 objects via <http://www.ontologyrepository.com/CommonCoreOntologies/has_input>, which is single-valued for every other subject in this graph.",
+      "subject": "https://growgraph.dev/doc/750540728620/rulPredictionProcess",
+      "predicate": "http://www.ontologyrepository.com/CommonCoreOntologies/has_input",
+      "values": [
+        "https://growgraph.dev/doc/750540728620/energyVariable",
+        "https://growgraph.dev/doc/750540728620/spectralMeanEnergyVector",
+        "https://growgraph.dev/doc/750540728620/spectrumPrincipalEnergyVector_6"
+      ],
+      "component": "",
+      "source_shape": ""
+    },
+    {
+      "kind": "suspect_multi_value",
+      "severity": "error",
+      "message": "<https://growgraph.dev/doc/750540728620/spectrumSegmentation_1> carries 2 distinct numeric values on <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#has_interger_value> \u2014 the signature of distinct quantities collapsed into one node.",
+      "subject": "https://growgraph.dev/doc/750540728620/spectrumSegmentation_1",
+      "predicate": "http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#has_interger_value",
+      "values": [
+        "1",
+        "64"
+      ],
+      "component": "",
+      "source_shape": ""
+    },
+    {
+      "kind": "suspect_multi_value",
+      "severity": "error",
+      "message": "<https://growgraph.dev/doc/750540728620/spevCalculationProcess> points at 2 objects via <http://www.ontologyrepository.com/CommonCoreOntologies/has_input>, which is single-valued for every other subject in this graph.",
+      "subject": "https://growgraph.dev/doc/750540728620/spevCalculationProcess",
+      "predicate": "http://www.ontologyrepository.com/CommonCoreOntologies/has_input",
+      "values": [
+        "https://growgraph.dev/doc/750540728620/spectralAmplitudeVariable",
+        "https://growgraph.dev/doc/750540728620/spectralModulusSequence"
+      ],
+      "component": "",
+      "source_shape": ""
+    },
+    {
+      "kind": "non_catalog_vocabulary",
+      "severity": "warning",
+      "message": "<https://growgraph.dev/ontology/opmad/has_double_value> is used by 1 subject(s) but was absent from the ontology context \u2014 the renderer fell back to outside vocabulary, which points at a retrieval miss rather than a modeling choice.",
+      "subject": "https://growgraph.dev/doc/750540728620/cnnPredictionAccuracy",
+      "predicate": "https://growgraph.dev/ontology/opmad/has_double_value",
+      "values": [
+        "https://growgraph.dev/doc/750540728620/cnnPredictionAccuracy"
+      ],
+      "component": "",
+      "source_shape": ""
+    },
+    {
+      "kind": "non_catalog_vocabulary",
+      "severity": "warning",
+      "message": "<https://w3id.org/opmad#Model_configuration> is used by 1 subject(s) but was absent from the ontology context \u2014 the renderer fell back to outside vocabulary, which points at a retrieval miss rather than a modeling choice.",
+      "subject": "https://growgraph.dev/doc/750540728620/smoothingWindowConfiguration",
+      "predicate": "https://w3id.org/opmad#Model_configuration",
+      "values": [
+        "https://growgraph.dev/doc/750540728620/smoothingWindowConfiguration"
+      ],
+      "component": "",
+      "source_shape": ""
+    },
+    {
+      "kind": "non_catalog_vocabulary",
+      "severity": "warning",
+      "message": "<https://w3id.org/opmad#Model_type> is used by 1 subject(s) but was absent from the ontology context \u2014 the renderer fell back to outside vocabulary, which points at a retrieval miss rather than a modeling choice.",
+      "subject": "https://growgraph.dev/doc/750540728620/cnnModelType",
+      "predicate": "https://w3id.org/opmad#Model_type",
+      "values": [
+        "https://growgraph.dev/doc/750540728620/cnnModelType"
+      ],
+      "component": "",
+      "source_shape": ""
+    },
+    {
+      "kind": "non_catalog_vocabulary",
+      "severity": "warning",
+      "message": "<https://w3id.org/opmad#type_described_by> is used by 1 subject(s) but was absent from the ontology context \u2014 the renderer fell back to outside vocabulary, which points at a retrieval miss rather than a modeling choice.",
+      "subject": "https://growgraph.dev/doc/750540728620/deepCnnModel_1",
+      "predicate": "https://w3id.org/opmad#type_described_by",
+      "values": [
+        "https://growgraph.dev/doc/750540728620/deepCnnModel_1"
+      ],
+      "component": "",
+      "source_shape": ""
+    }
+  ],
+  "unit_repairs": {
+    "0": [
+      {
+        "kind": "critic_fix",
+        "source": "ids=[52]",
+        "target": "@prefix cd: <https://growgraph.dev/facts/> . @prefix ns2: <http://purl.obolibrary.org/obo/> . cd:spectrum_principal_energy_feature_extraction a ns2:BFO_0000034 .",
+        "triple_count": 1
+      },
+      {
+        "kind": "critic_fix",
+        "source": "ids=[56]",
+        "target": "@prefix cd: <https://growgraph.dev/facts/> . @prefix ns1: <http://www.ontologyrepository.com/CommonCoreOntologies/> . cd:spectrum_principal_energy_vector a ns1:DescriptiveInformationContentEntity .",
+        "triple_count": 1
+      },
+      {
+        "kind": "critic_fix",
+        "source": "",
+        "target": "@prefix cd: <https://growgraph.dev/facts/> . @prefix ns1: <http://www.ontologyrepository.com/CommonCoreOntologies/> . @prefix opmad: <https://w3id.org/opmad/> . cd:smoothing_process a ns1:IntentionalAct ; ns1:prescribed_by cd:smoothing_model ; ns1:has_input cd:prediction_results . cd:prediction_results a ns1:PredictiveInformationContentEntity . cd:bearing_rul_prediction ns1:has_output cd:prediction_results . cd:bearing_rul_module ns1:uses cd:smoothing_model .",
+        "triple_count": 1
+      },
+      {
+        "kind": "critic_fix",
+        "source": "",
+        "target": "@prefix cd: <https://growgraph.dev/facts/> . @prefix ns1: <http://www.ontologyrepository.com/CommonCoreOntologies/> . cd:bearing_rul_module ns1:uses cd:feature_extraction_model . cd:feature_extraction ns1:process_precedes cd:bearing_rul_prediction .",
+        "triple_count": 1
+      },
+      {
+        "kind": "critic_fix",
+        "source": "",
+        "target": "@prefix cd: <https://growgraph.dev/facts/> . @prefix opmad: <https://w3id.org/opmad/> . cd:prediction_accuracy a opmad:Performance_indicator ; opmad:has_text_value \"prediction accuracy of bearing RUL\" . cd:reported_accuracy_improvement a opmad:Performance_value ; opmad:has_text_value \"significantly improve the prediction accuracy\" . cd:deep_cnn_model <http://www.ontologyrepository.com/CommonCoreOntologies/described_by> cd:prediction_accuracy, cd:reported_accuracy_improvement .",
+        "triple_count": 1
+      }
+    ],
+    "1": [
+      {
+        "kind": "critic_fix",
+        "source": "ids=[2]",
+        "target": "@prefix cd: <https://growgraph.dev/facts/> . @prefix ns1: <http://www.ontologyrepository.com/CommonCoreOntologies/> . cd:bearing ns1:described_by cd:bearing_rul .",
+        "triple_count": 1
+      },
+      {
+        "kind": "critic_fix",
+        "source": "ids=[3]",
+        "target": "@prefix cd: <https://growgraph.dev/facts/> . @prefix ns1: <http://www.ontologyrepository.com/CommonCoreOntologies/> . cd:bearing ns1:described_by cd:bearing_vibration_amplitude .",
+        "triple_count": 1
+      },
+      {
+        "kind": "critic_fix",
+        "source": "ids=[17]",
+        "target": "@prefix cd: <https://growgraph.dev/facts/> . @prefix ns1: <http://www.ontologyrepository.com/CommonCoreOntologies/> . cd:bearing_rul_module ns1:is_subject_of cd:bearing_rul_case . cd:bearing_rul_case ns1:is_about cd:bearing .",
+        "triple_count": 1
+      },
+      {
+        "kind": "critic_fix",
+        "source": "ids=[27]",
+        "target": "@prefix cd: <https://growgraph.dev/facts/> . @prefix ns2: <http://purl.obolibrary.org/obo/> . cd:feature_extraction_function a ns2:BFO_0000034 .",
+        "triple_count": 1
+      },
+      {
+        "kind": "critic_fix",
+        "source": "ids=[19]",
+        "target": "@prefix cd: <https://growgraph.dev/facts/> . @prefix ns2: <http://purl.obolibrary.org/obo/> . cd:bearing_rul_module ns2:RO_0000085 cd:feature_extraction_function .",
+        "triple_count": 1
+      },
+      {
+        "kind": "critic_fix",
+        "source": "ids=[35]",
+        "target": "@prefix cd: <https://growgraph.dev/facts/> . @prefix ns1: <http://www.ontologyrepository.com/CommonCoreOntologies/> . cd:spectrum_principal_energy_vector a ns1:RepresentationalInformationContentEntity .",
+        "triple_count": 1
+      },
+      {
+        "kind": "critic_fix",
+        "source": "ids=[36]",
+        "target": "@prefix cd: <https://growgraph.dev/facts/> . @prefix ns1: <http://www.ontologyrepository.com/CommonCoreOntologies/> . cd:spectrum_principal_energy_vector ns1:represents cd:bearing_vibration_decay . cd:bearing_vibration_decay a ns1:Change ; ns1:affects cd:bearing_vibration_amplitude .",
+        "triple_count": 1
+      },
+      {
+        "kind": "critic_fix",
+        "source": "",
+        "target": "@prefix cd: <https://growgraph.dev/facts/> . @prefix ns1: <http://www.ontologyrepository.com/CommonCoreOntologies/> . cd:spectrum_principal_energy_vector_method ns1:is_about cd:spectrum_principal_energy_vector .",
+        "triple_count": 1
+      },
+      {
+        "kind": "critic_fix",
+        "source": "",
+        "target": "@prefix cd: <https://growgraph.dev/facts/> . @prefix ns1: <http://www.ontologyrepository.com/CommonCoreOntologies/> . cd:deep_cnn_model ns1:is_about cd:bearing_rul .",
+        "triple_count": 1
+      },
+      {
+        "kind": "critic_fix",
+        "source": "",
+        "target": "@prefix cd: <https://growgraph.dev/facts/> . @prefix opmad: <https://w3id.org/opmad#> . cd:cnn_model_type a opmad:Model_type ; opmad:has_text_value \"deep convolutional neural network\" . cd:deep_cnn_model opmad:type_described_by cd:cnn_model_type .",
+        "triple_count": 1
+      },
+      {
+        "kind": "critic_fix",
+        "source": "",
+        "target": "@prefix cd: <https://growgraph.dev/facts/> . @prefix ns1: <http://www.ontologyrepository.com/CommonCoreOntologies/> . cd:reported_experiments a ns1:Act ; ns1:has_object cd:deep_cnn_model ; ns1:has_object cd:bearing .",
+        "triple_count": 1
+      }
+    ],
+    "2": [
+      {
+        "kind": "critic_fix",
+        "source": "",
+        "target": "@prefix cd: <https://growgraph.dev/facts/> . @prefix opmad: <https://w3id.org/opmad#> . @prefix ns1: <http://www.ontologyrepository.com/CommonCoreOntologies/> . cd:bearing_rul_case a opmad:Predictive_maintenance_case ; ns1:designates cd:prediction_module . cd:prediction_module a opmad:Predictive_maintenance_system_module ; opmad:has_predictive_maintenance_function cd:remaining_useful_life_estimation . cd:remaining_useful_life_estimation opmad:function_uses_model cd:deep_cnn_model, cd:regression_model . cd:article opmad:explains cd:prediction_module .",
+        "triple_count": 1
+      },
+      {
+        "kind": "critic_fix",
+        "source": "",
+        "target": "@prefix cd: <https://growgraph.dev/facts/> . @prefix ns1: <http://www.ontologyrepository.com/CommonCoreOntologies/> . cd:remaining_useful_life_estimation ns1:is_subject_of cd:bearing_case_scope . cd:bearing_case_scope a opmad:Data_variable ; ns1:describes cd:bearing .",
+        "triple_count": 1
+      },
+      {
+        "kind": "critic_fix",
+        "source": "ids=[50, 51, 23]",
+        "target": "@prefix cd: <https://growgraph.dev/facts/> . @prefix ns1: <http://www.ontologyrepository.com/CommonCoreOntologies/> . cd:spectrum_principal_energy_vector a ns1:DescriptiveInformationContentEntity ; ns1:describes cd:bearing_vibration . cd:deep_cnn_eigenvectors a ns1:DescriptiveInformationContentEntity .",
+        "triple_count": 1
+      },
+      {
+        "kind": "critic_fix",
+        "source": "",
+        "target": "@prefix cd: <https://growgraph.dev/facts/> . @prefix ns1: <http://www.ontologyrepository.com/CommonCoreOntologies/> . cd:feature_construction ns1:process_precedes cd:deep_cnn_analysis . cd:deep_cnn_analysis ns1:process_precedes cd:regression_prediction .",
+        "triple_count": 1
+      },
+      {
+        "kind": "critic_fix",
+        "source": "ids=[29, 34]",
+        "target": "@prefix cd: <https://growgraph.dev/facts/> . @prefix ns1: <http://www.ontologyrepository.com/CommonCoreOntologies/> . cd:original_vibration_signal a ns1:DescriptiveInformationContentEntity ; ns1:describes cd:bearing_vibration . cd:feature_construction ns1:has_input cd:original_vibration_signal . cd:feature_construction_model ns1:uses cd:original_vibration_signal .",
+        "triple_count": 1
+      },
+      {
+        "kind": "critic_fix",
+        "source": "",
+        "target": "@prefix cd: <https://growgraph.dev/facts/> . @prefix ns1: <http://www.ontologyrepository.com/CommonCoreOntologies/> . cd:bearing_rul ns1:is_about cd:bearing . cd:regression_model ns1:is_about cd:bearing .",
+        "triple_count": 1
+      },
+      {
+        "kind": "critic_fix",
+        "source": "ids=[7, 38, 39, 44]",
+        "target": "@prefix cd: <https://growgraph.dev/facts/> . @prefix ns1: <http://www.ontologyrepository.com/CommonCoreOntologies/> . cd:deep_cnn_model ns1:uses cd:deep_cnn_eigenvectors . cd:regression_prediction ns1:prescribed_by cd:deep_cnn_model .",
+        "triple_count": 1
+      },
+      {
+        "kind": "critic_fix",
+        "source": "",
+        "target": "@prefix cd: <https://growgraph.dev/facts/> . @prefix ns2: <http://purl.obolibrary.org/obo/> . cd:prediction_module ns2:RO_0000085 cd:regression .",
+        "triple_count": 1
+      },
+      {
+        "kind": "critic_fix",
+        "source": "",
+        "target": "@prefix cd: <https://growgraph.dev/facts/> . @prefix ns1: <http://www.ontologyrepository.com/CommonCoreOntologies/> . cd:vibration_variable a opmad:Data_variable ; ns1:describes cd:bearing_vibration . cd:deep_cnn_model ns1:uses cd:vibration_variable .",
+        "triple_count": 1
+      },
+      {
+        "kind": "critic_fix",
+        "source": "ids=[12]",
+        "target": "@prefix cd: <https://growgraph.dev/facts/> . @prefix ns1: <http://www.ontologyrepository.com/CommonCoreOntologies/> . cd:bearing_rul a ns1:PointEstimateInformationContentEntity .",
+        "triple_count": 1
+      }
+    ],
+    "3": [
+      {
+        "kind": "critic_fix",
+        "source": "ids=[20, 53, 54]",
+        "target": "@prefix cd: <https://growgraph.dev/facts/> . @prefix ns1: <http://www.ontologyrepository.com/CommonCoreOntologies/> . @prefix ns2: <http://purl.obolibrary.org/obo/> . cd:bearing_rul_prediction_module ns2:RO_0000085 cd:feature_extraction_function . cd:feature_extraction_function a ns2:BFO_0000034 ; ns2:BFO_0000054 cd:feature_extraction_stage ; ns1:alternative_label \"feature extraction\" .",
+        "triple_count": 1
+      },
+      {
+        "kind": "critic_fix",
+        "source": "",
+        "target": "@prefix cd: <https://growgraph.dev/facts/> . @prefix ns1: <http://www.ontologyrepository.com/CommonCoreOntologies/> . cd:feature_extraction_stage ns1:has_output cd:sampled_energy_vectors .",
+        "triple_count": 1
+      },
+      {
+        "kind": "critic_fix",
+        "source": "",
+        "target": "@prefix cd: <https://growgraph.dev/facts/> . @prefix ns1: <http://www.ontologyrepository.com/CommonCoreOntologies/> . cd:fourier_transform_process ns1:process_precedes cd:spectrum_partition_process .",
+        "triple_count": 1
+      }
+    ],
+    "4": [
+      {
+        "kind": "entailed_type",
+        "source": "https://growgraph.dev/facts/feature_map http://www.ontologyrepository.com/CommonCoreOntologies/describes",
+        "target": "http://www.ontologyrepository.com/CommonCoreOntologies/DescriptiveInformationContentEntity",
+        "triple_count": 1
+      },
+      {
+        "kind": "entailed_type",
+        "source": "https://growgraph.dev/facts/spectral_modulus_sequence http://www.ontologyrepository.com/CommonCoreOntologies/describes",
+        "target": "http://www.ontologyrepository.com/CommonCoreOntologies/DescriptiveInformationContentEntity",
+        "triple_count": 1
+      },
+      {
+        "kind": "entailed_type",
+        "source": "https://growgraph.dev/facts/spectral_sequence http://www.ontologyrepository.com/CommonCoreOntologies/describes",
+        "target": "http://www.ontologyrepository.com/CommonCoreOntologies/DescriptiveInformationContentEntity",
+        "triple_count": 1
+      },
+      {
+        "kind": "entailed_type",
+        "source": "https://growgraph.dev/facts/spectrum_principal_energy_vector http://www.ontologyrepository.com/CommonCoreOntologies/describes",
+        "target": "http://www.ontologyrepository.com/CommonCoreOntologies/DescriptiveInformationContentEntity",
+        "triple_count": 1
+      },
+      {
+        "kind": "entailed_type",
+        "source": "https://growgraph.dev/facts/vibration_signal http://www.ontologyrepository.com/CommonCoreOntologies/describes",
+        "target": "http://www.ontologyrepository.com/CommonCoreOntologies/DescriptiveInformationContentEntity",
+        "triple_count": 1
+      },
+      {
+        "kind": "critic_fix",
+        "source": "",
+        "target": "@prefix cd: <https://growgraph.dev/facts/> . @prefix opmad: <https://growgraph.dev/ontology/opmad/> . @prefix ns1: <http://www.ontologyrepository.com/CommonCoreOntologies/> . @prefix ns2: <http://purl.obolibrary.org/obo/> . cd:bearing_case a opmad:Predictive_maintenance_case ; ns1:designates cd:prediction_module . cd:prediction_module a opmad:Predictive_maintenance_system_module ; opmad:has_predictive_maintenance_function cd:feature_extraction_function, cd:rul_estimation_function . cd:article opmad:explains cd:prediction_module . cd:rul_estimation_process a ns1:IntentionalAct ; ns2:BFO_0000055 cd:rul_estimation_function ; ns1:has_object cd:bearing ; ns1:has_input cd:feature_map ; ns1:has_output cd:rul_variable .",
+        "triple_count": 1
+      },
+      {
+        "kind": "critic_fix",
+        "source": "",
+        "target": "@prefix cd: <https://growgraph.dev/facts/> . @prefix ns1: <http://www.ontologyrepository.com/CommonCoreOntologies/> . cd:bearing_case ns1:is_about cd:bearing, cd:life_prediction_model .",
+        "triple_count": 1
+      },
+      {
+        "kind": "critic_fix",
+        "source": "",
+        "target": "@prefix cd: <https://growgraph.dev/facts/> . @prefix ns1: <http://www.ontologyrepository.com/CommonCoreOntologies/> . cd:fourier_transform_process a ns1:IntentionalAct ; ns1:has_input cd:vibration_signal ; ns1:has_output cd:spectral_sequence . cd:modulus_process a ns1:IntentionalAct ; ns1:has_input cd:spectral_sequence ; ns1:has_output cd:spectral_modulus_sequence . cd:spev_calculation_process a ns1:IntentionalAct ; ns1:has_input cd:spectral_modulus_sequence ; ns1:has_output cd:spectrum_principal_energy_vector . cd:feature_map_assembly a ns1:IntentionalAct ; ns1:has_input cd:spectrum_principal_energy_vector ; ns1:has_output cd:feature_map . cd:feature_extraction ns1:has_process_part cd:fourier_transform_process, cd:modulus_process, cd:spev_calculation_process, cd:feature_map_assembly . cd:discrete_fourier_transform ns1:prescribes cd:fourier_transform_process . cd:fourier_transform_process ns1:process_precedes cd:modulus_process . cd:modulus_process ns1:process_precedes cd:spev_calculation_process . cd:spev_calculation_process ns1:process_precedes cd:feature_map_assembly .",
+        "triple_count": 1
+      },
+      {
+        "kind": "critic_fix",
+        "source": "",
+        "target": "@prefix cd: <https://growgraph.dev/facts/> . @prefix ns1: <http://www.ontologyrepository.com/CommonCoreOntologies/> . cd:life_prediction_model ns1:uses cd:spectral_sequence, cd:spectrum_principal_energy_vector . cd:rul_estimation_process ns1:has_input cd:vibration_variable .",
+        "triple_count": 1
+      },
+      {
+        "kind": "critic_fix",
+        "source": "ids=[34]",
+        "target": "@prefix cd: <https://growgraph.dev/facts/> . @prefix opmad: <https://growgraph.dev/ontology/opmad/> . cd:feature_extraction_function a opmad:Predictive_maintenance_module_function .",
+        "triple_count": 1
+      },
+      {
+        "kind": "critic_fix",
+        "source": "ids=[24]",
+        "target": "@prefix cd: <https://growgraph.dev/facts/> . @prefix ns1: <http://www.ontologyrepository.com/CommonCoreOntologies/> . cd:fast_fourier_transform a ns1:Algorithm ; ns1:acronym \"FFT\" ; ns1:prescribes cd:fourier_transform_process . cd:spectrum_principal_energy_vector_algorithm ns1:uses cd:fast_fourier_transform .",
+        "triple_count": 1
+      },
+      {
+        "kind": "critic_fix",
+        "source": "",
+        "target": "@prefix cd: <https://growgraph.dev/facts/> . @prefix opmad: <https://growgraph.dev/ontology/opmad/> . @prefix ns1: <http://www.ontologyrepository.com/CommonCoreOntologies/> . cd:spectral_amplitude_variable a opmad:Data_variable ; ns1:describes cd:spectral_sequence . cd:spev_calculation_process ns1:has_input cd:spectral_amplitude_variable .",
+        "triple_count": 1
+      },
+      {
+        "kind": "critic_fix",
+        "source": "ids=[56]",
+        "target": "@prefix cd: <https://growgraph.dev/facts/> . @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> . cd:prediction_step_count rdfs:label \"number of time points in the prediction window\" .",
+        "triple_count": 1
+      }
+    ],
+    "5": [
+      {
+        "kind": "critic_fix",
+        "source": "",
+        "target": "@prefix cd: <https://growgraph.dev/facts/> . @prefix ns1: <http://www.ontologyrepository.com/CommonCoreOntologies/> . cd:bearing_rul_prediction_module ns1:uses cd:bearing .",
+        "triple_count": 1
+      },
+      {
+        "kind": "critic_fix",
+        "source": "ids=[38]",
+        "target": "@prefix cd: <https://growgraph.dev/facts/> . @prefix ns2: <http://purl.obolibrary.org/obo/> . cd:cnn_feature_extraction a ns2:BFO_0000034 .",
+        "triple_count": 1
+      },
+      {
+        "kind": "critic_fix",
+        "source": "ids=[58]",
+        "target": "@prefix cd: <https://growgraph.dev/facts/> . @prefix opmad: <https://w3id.org/opmad#> . cd:deep_cnn opmad:configuration_described_by cd:relu_activation_function . @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> . cd:relu_activation_function opmad:has_text_value \"ReLU\" .",
+        "triple_count": 1
+      },
+      {
+        "kind": "critic_fix",
+        "source": "ids=[71]",
+        "target": "@prefix cd: <https://growgraph.dev/facts/> . @prefix opmad: <https://w3id.org/opmad#> . cd:dnn opmad:configuration_described_by cd:relu_activation_function .",
+        "triple_count": 1
+      },
+      {
+        "kind": "critic_fix",
+        "source": "",
+        "target": "@prefix cd: <https://growgraph.dev/facts/> . @prefix ns1: <http://www.ontologyrepository.com/CommonCoreOntologies/> . cd:cnn_feature_vector ns1:is_output_of cd:cnn_feature_extraction_process . cd:cnn_feature_extraction_process a ns1:IntentionalAct ; ns1:prescribed_by cd:deep_cnn ; ns1:has_input cd:spectrum_principal_energy_vector_feature_map .",
+        "triple_count": 1
+      },
+      {
+        "kind": "critic_fix",
+        "source": "ids=[69, 112]",
+        "target": "@prefix cd: <https://growgraph.dev/facts/> . @prefix ns1: <http://www.ontologyrepository.com/CommonCoreOntologies/> . cd:dnn ns1:described_by cd:mean_square_error . cd:mean_square_error ns1:describes cd:dnn ; ns1:describes cd:bearing_rul .",
+        "triple_count": 1
+      },
+      {
+        "kind": "critic_fix",
+        "source": "",
+        "target": "@prefix cd: <https://growgraph.dev/facts/> . @prefix opmad: <https://w3id.org/opmad#> . @prefix ns1: <http://www.ontologyrepository.com/CommonCoreOntologies/> . cd:rul_running_time_relationship a ns1:DescriptiveInformationContentEntity ; opmad:has_text_value \"The relationship between the RUL of the bearing and the running time is linear.\" ; ns1:describes cd:bearing_rul, cd:running_time .",
+        "triple_count": 1
+      },
+      {
+        "kind": "critic_fix",
+        "source": "",
+        "target": "@prefix cd: <https://growgraph.dev/facts/> . @prefix opmad: <https://w3id.org/opmad#> . cd:linear_regression_smoothing opmad:configuration_described_by cd:smoothing_window_configuration . cd:smoothing_window_configuration a opmad:Model_configuration ; opmad:has_text_value \"Linear regression over the current and nine preceding predicted RUL values; use the regression result at the current time as the final prediction.\" .",
+        "triple_count": 1
+      }
+    ],
+    "6": [
+      {
+        "kind": "critic_fix",
+        "source": "ids=[14]",
+        "target": "@prefix cd: <https://growgraph.dev/facts/> . @prefix ns1: <http://www.ontologyrepository.com/CommonCoreOntologies/> . cd:collection_duration a ns1:RatioMeasurementInformationContentEntity, ns1:InformationBearingEntity .",
+        "triple_count": 1
+      },
+      {
+        "kind": "critic_fix",
+        "source": "ids=[18]",
+        "target": "@prefix cd: <https://growgraph.dev/facts/> . @prefix ns1: <http://www.ontologyrepository.com/CommonCoreOntologies/> . cd:collection_interval a ns1:RatioMeasurementInformationContentEntity, ns1:InformationBearingEntity .",
+        "triple_count": 1
+      },
+      {
+        "kind": "critic_fix",
+        "source": "ids=[73]",
+        "target": "@prefix cd: <https://growgraph.dev/facts/> . @prefix ns1: <http://www.ontologyrepository.com/CommonCoreOntologies/> . cd:sampling_frequency a ns1:RatioMeasurementInformationContentEntity, ns1:InformationBearingEntity .",
+        "triple_count": 1
+      },
+      {
+        "kind": "critic_fix",
+        "source": "ids=[10]",
+        "target": "@prefix cd: <https://growgraph.dev/facts/> . @prefix ns1: <http://www.ontologyrepository.com/CommonCoreOntologies/> . cd:asynchronous_motor a ns1:ElectricMotor .",
+        "triple_count": 1
+      },
+      {
+        "kind": "critic_fix",
+        "source": "",
+        "target": "@prefix cd: <https://growgraph.dev/facts/> . @prefix opmad: <https://growgraph.dev/ontology/opmad/> . cd:current_article opmad:explains cd:horizontal_vibration_variable, cd:vertical_vibration_variable .",
+        "triple_count": 1
+      },
+      {
+        "kind": "critic_fix",
+        "source": "",
+        "target": "@prefix cd: <https://growgraph.dev/facts/> . @prefix ns1: <http://www.ontologyrepository.com/CommonCoreOntologies/> . cd:predictor_challenge_experiment_data ns1:is_subject_of cd:horizontal_vibration_variable, cd:vertical_vibration_variable .",
+        "triple_count": 1
+      },
+      {
+        "kind": "critic_fix",
+        "source": "ids=[7]",
+        "target": "@prefix cd: <https://growgraph.dev/facts/> . @prefix ns1: <http://www.ontologyrepository.com/CommonCoreOntologies/> . cd:sampling_points ns1:is_a_measurement_of cd:individual_sampling . cd:individual_sampling a ns1:ActOfMeasuring ; ns1:is_part_of_process cd:accelerated_life_test ; ns1:has_output cd:horizontal_vibration_data, cd:vertical_vibration_data .",
+        "triple_count": 1
+      },
+      {
+        "kind": "critic_fix",
+        "source": "ids=[99]",
+        "target": "@prefix cd: <https://growgraph.dev/facts/> . @prefix ns1: <http://www.ontologyrepository.com/CommonCoreOntologies/> . cd:y_direction_data_second ns1:is_a_measurement_of cd:horizontal_vibration_data .",
+        "triple_count": 1
+      },
+      {
+        "kind": "critic_fix",
+        "source": "",
+        "target": "@prefix cd: <https://growgraph.dev/facts/> . @prefix ns1: <http://www.ontologyrepository.com/CommonCoreOntologies/> . cd:accelerated_life_test ns1:uses cd:experimental_equipment .",
+        "triple_count": 1
+      },
+      {
+        "kind": "critic_fix",
+        "source": "",
+        "target": "@prefix cd: <https://growgraph.dev/facts/> . @prefix ns1: <http://www.ontologyrepository.com/CommonCoreOntologies/> . cd:predictor_challenge_experiment_data ns1:is_subject_of cd:horizontal_vibration_variable, cd:vertical_vibration_variable .",
+        "triple_count": 1
+      },
+      {
+        "kind": "critic_fix",
+        "source": "",
+        "target": "@prefix cd: <https://growgraph.dev/facts/> . @prefix ns1: <http://www.ontologyrepository.com/CommonCoreOntologies/> . cd:bearing_failure ns1:caused_by cd:working_conditions_impact . cd:working_conditions_impact a ns1:Change .",
+        "triple_count": 1
+      },
+      {
+        "kind": "critic_fix",
+        "source": "ids=[6]",
+        "target": "@prefix cd: <https://growgraph.dev/facts/> . @prefix ns1: <http://www.ontologyrepository.com/CommonCoreOntologies/> . cd:individual_sampling ns1:is_measured_by_ratio cd:sampling_frequency .",
+        "triple_count": 1
+      },
+      {
+        "kind": "critic_fix",
+        "source": "ids=[4, 5]",
+        "target": "@prefix cd: <https://growgraph.dev/facts/> . @prefix ns1: <http://www.ontologyrepository.com/CommonCoreOntologies/> . cd:individual_sampling ns1:is_measured_by_ratio cd:collection_duration, cd:collection_interval .",
+        "triple_count": 1
+      },
+      {
+        "kind": "critic_fix",
+        "source": "ids=[62]",
+        "target": "@prefix cd: <https://growgraph.dev/facts/> . @prefix ns1: <http://www.ontologyrepository.com/CommonCoreOntologies/> . cd:predictor_challenge_experiment_data a ns1:InformationBearingArtifact .",
+        "triple_count": 1
+      },
+      {
+        "kind": "critic_fix",
+        "source": "ids=[27]",
+        "target": "@prefix cd: <https://growgraph.dev/facts/> . @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> . cd:experiment_analysis_section a <http://www.ontologyrepository.com/CommonCoreOntologies/InformationBearingArtifact> ; rdfs:label \"EXPERIMENT AND ANALYSIS\" . cd:experiment_analysis_section <http://purl.obolibrary.org/obo/BFO_0000050> cd:current_article .",
+        "triple_count": 1
+      }
+    ],
+    "7": [
+      {
+        "kind": "critic_fix",
+        "source": "ids=[151]",
+        "target": "@prefix cd: <https://growgraph.dev/facts/> . @prefix ns2: <http://purl.obolibrary.org/obo/> . cd:spectrum_principal_energy_vector ns2:RO_0001000 cd:frequency_spectrum .",
+        "triple_count": 1
+      },
+      {
+        "kind": "critic_fix",
+        "source": "",
+        "target": "@prefix cd: <https://growgraph.dev/facts/> . @prefix opmad: <https://w3id.org/opmad/> . cd:bearing_rul_prediction_module opmad:explains cd:deep_cnn .",
+        "triple_count": 1
+      },
+      {
+        "kind": "critic_fix",
+        "source": "",
+        "target": "@prefix cd: <https://growgraph.dev/facts/> . @prefix ns1: <http://www.ontologyrepository.com/CommonCoreOntologies/> . cd:bearing_rul_prediction_case ns1:is_subject_of cd:remaining_useful_life_variable . cd:remaining_useful_life_estimation ns1:is_subject_of cd:vibration_variable .",
+        "triple_count": 1
+      },
+      {
+        "kind": "critic_fix",
+        "source": "",
+        "target": "@prefix cd: <https://growgraph.dev/facts/> . @prefix ns1: <http://www.ontologyrepository.com/CommonCoreOntologies/> . cd:bearing_rul_prediction_module ns1:uses cd:fft_algorithm .",
+        "triple_count": 1
+      },
+      {
+        "kind": "critic_fix",
+        "source": "ids=[22]",
+        "target": "@prefix cd: <https://growgraph.dev/facts/> . @prefix ns2: <http://purl.obolibrary.org/obo/> . cd:deep_cnn ns2:BFO_0000051 cd:prediction_model .",
+        "triple_count": 1
+      },
+      {
+        "kind": "critic_fix",
+        "source": "ids=[104]",
+        "target": "@prefix cd: <https://growgraph.dev/facts/> . @prefix opmad: <https://w3id.org/opmad/> . cd:deep_cnn opmad:configuration_described_by cd:epoch_count .",
+        "triple_count": 1
+      },
+      {
+        "kind": "critic_fix",
+        "source": "ids=[37, 38, 61, 62, 120, 126, 134, 142, 152, 190]",
+        "target": "@prefix cd: <https://growgraph.dev/facts/> . @prefix ns1: <http://www.ontologyrepository.com/CommonCoreOntologies/> . cd:energy_variable ns1:describes cd:feature_map, cd:spectrum_principal_energy_vector . cd:frequency_variable ns1:describes cd:feature_map, cd:frequency_spectrum . cd:amplitude_variable ns1:describes cd:frequency_spectrum . cd:remaining_useful_life_variable ns1:describes cd:prediction_results, cd:remaining_useful_life_estimation, cd:smoothing_method, cd:smoothing_results . cd:vibration_variable ns1:describes cd:vibration_signal .",
+        "triple_count": 1
+      },
+      {
+        "kind": "critic_fix",
+        "source": "ids=[178]",
+        "target": "@prefix cd: <https://growgraph.dev/facts/> . @prefix ns1: <http://www.ontologyrepository.com/CommonCoreOntologies/> . cd:test_set ns1:described_by cd:remaining_useful_life_variable .",
+        "triple_count": 1
+      },
+      {
+        "kind": "critic_fix",
+        "source": "ids=[170]",
+        "target": "@prefix cd: <https://growgraph.dev/facts/> . @prefix ns1: <http://www.ontologyrepository.com/CommonCoreOntologies/> . cd:test_bearings ns1:is_measured_by_ratio cd:test_bearing_count .",
+        "triple_count": 1
+      },
+      {
+        "kind": "critic_fix",
+        "source": "ids=[119, 181, 183]",
+        "target": "@prefix cd: <https://growgraph.dev/facts/> . @prefix ns1: <http://www.ontologyrepository.com/CommonCoreOntologies/> . cd:smoothing_results ns1:described_by cd:total_mean_square_error . cd:total_mean_square_error ns1:describes cd:smoothing_results . cd:mean_square_error ns1:describes cd:total_mean_square_error .",
+        "triple_count": 1
+      },
+      {
+        "kind": "critic_fix",
+        "source": "",
+        "target": "@prefix cd: <https://growgraph.dev/facts/> . @prefix ns1: <http://www.ontologyrepository.com/CommonCoreOntologies/> . @prefix opmad: <https://w3id.org/opmad/> . cd:prediction_discontinuity a ns1:DescriptiveInformationContentEntity ; opmad:has_text_value \"The unsmoothed RUL predictions are discontinuous and fluctuate greatly.\" ; ns1:describes cd:prediction_results .",
+        "triple_count": 1
+      },
+      {
+        "kind": "critic_fix",
+        "source": "",
+        "target": "@prefix cd: <https://growgraph.dev/facts/> . @prefix ns1: <http://www.ontologyrepository.com/CommonCoreOntologies/> . @prefix opmad: <https://w3id.org/opmad/> . cd:degradation_trend_finding a ns1:DescriptiveInformationContentEntity ; opmad:has_text_value \"The prediction results reflect the trend of bearing degradation.\" ; ns1:describes cd:prediction_results, cd:test_bearings .",
+        "triple_count": 1
+      },
+      {
+        "kind": "critic_fix",
+        "source": "",
+        "target": "@prefix cd: <https://growgraph.dev/facts/> . @prefix ns1: <http://www.ontologyrepository.com/CommonCoreOntologies/> . @prefix opmad: <https://w3id.org/opmad/> . cd:smoothing_objective a ns1:Objective ; opmad:has_text_value \"Ensure that bearing RUL decreases throughout the bearing's cycle.\" ; ns1:is_about cd:smoothing_process .",
+        "triple_count": 1
+      },
+      {
+        "kind": "critic_fix",
+        "source": "",
+        "target": "@prefix cd: <https://growgraph.dev/facts/> . @prefix ns1: <http://www.ontologyrepository.com/CommonCoreOntologies/> . @prefix ns2: <http://purl.obolibrary.org/obo/> . cd:feature_extraction_process a ns1:IntentionalAct ; ns1:has_input cd:vibration_signal ; ns1:has_output cd:feature_map ; ns1:has_process_part cd:fourier_transform . cd:feature_extraction_process ns2:BFO_0000050 cd:prediction_process .",
+        "triple_count": 1
+      },
+      {
+        "kind": "critic_fix",
+        "source": "",
+        "target": "@prefix cd: <https://growgraph.dev/facts/> . @prefix ns1: <http://www.ontologyrepository.com/CommonCoreOntologies/> . @prefix opmad: <https://w3id.org/opmad/> . cd:comparative_experiments a ns1:IntentionalAct ; ns1:has_object cd:feature_map, cd:prediction_model . cd:article opmad:explains cd:comparative_experiments .",
+        "triple_count": 1
+      }
+    ],
+    "8": [
+      {
+        "kind": "critic_fix",
+        "source": "ids=[19]",
+        "target": "@prefix cd: <https://growgraph.dev/facts/> . @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> . cd:article rdfs:label \"Article containing the section \u2018The Validity of the Feature Map\u2019\" .",
+        "triple_count": 1
+      },
+      {
+        "kind": "critic_fix",
+        "source": "ids=[4, 20, 60, 68, 113, 129]",
+        "target": "@prefix cd: <https://growgraph.dev/facts/> . @prefix ns1: <http://www.ontologyrepository.com/CommonCoreOntologies/> . cd:amplitude_mean_extraction_process a ns1:IntentionalAct . cd:band_maximum_selection a ns1:IntentionalAct . cd:feature_extraction_process a ns1:IntentionalAct . cd:fft_transform a ns1:IntentionalAct . cd:spectral_mean_extraction_process a ns1:IntentionalAct . cd:spectrum_segmentation a ns1:IntentionalAct .",
+        "triple_count": 1
+      },
+      {
+        "kind": "critic_fix",
+        "source": "",
+        "target": "@prefix cd: <https://growgraph.dev/facts/> . @prefix ns1: <http://www.ontologyrepository.com/CommonCoreOntologies/> . cd:feature_extraction_method ns1:uses cd:vibration_signal_variable . cd:deep_cnn_model ns1:uses cd:spectrum_principal_energy_vector . cd:spectral_mean_feature_extraction_method ns1:uses cd:signal_spectrum_variable . cd:amplitude_mean_feature_extraction_method ns1:uses cd:vibration_signal_variable .",
+        "triple_count": 1
+      },
+      {
+        "kind": "critic_fix",
+        "source": "",
+        "target": "@prefix cd: <https://growgraph.dev/facts/> . @prefix ns1: <http://www.ontologyrepository.com/CommonCoreOntologies/> . cd:rul_prediction_process ns1:has_input cd:spectral_mean_energy_vector, cd:amplitude_mean_energy_vector .",
+        "triple_count": 1
+      },
+      {
+        "kind": "critic_fix",
+        "source": "",
+        "target": "@prefix cd: <https://growgraph.dev/facts/> . @prefix opmad: <https://w3id.org/opmad#> . cd:article opmad:explains cd:bearing_predictive_maintenance_module .",
+        "triple_count": 1
+      },
+      {
+        "kind": "critic_fix",
+        "source": "",
+        "target": "@prefix cd: <https://growgraph.dev/facts/> . @prefix ns1: <http://www.ontologyrepository.com/CommonCoreOntologies/> . cd:bearing_predictive_maintenance_module ns1:is_subject_of cd:bearing_rul_case .",
+        "triple_count": 1
+      },
+      {
+        "kind": "critic_fix",
+        "source": "",
+        "target": "@prefix cd: <https://growgraph.dev/facts/> . @prefix opmad: <https://w3id.org/opmad#> . @prefix ns1: <http://www.ontologyrepository.com/CommonCoreOntologies/> . @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> . cd:vibration_signal_characterization a ns1:DescriptiveInformationContentEntity ; ns1:describes cd:vibration_signal_variable ; opmad:has_text_value \"The vibration signal is chaotic and contains substantial noise.\" ; rdfs:label \"vibration signal characterization\" .",
+        "triple_count": 1
+      },
+      {
+        "kind": "critic_fix",
+        "source": "",
+        "target": "@prefix cd: <https://growgraph.dev/facts/> . @prefix opmad: <https://w3id.org/opmad#> . @prefix ns1: <http://www.ontologyrepository.com/CommonCoreOntologies/> . @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> . cd:spectral_mean_assessment a ns1:DescriptiveInformationContentEntity ; ns1:describes cd:spectral_mean_feature_extraction_method ; opmad:has_text_value \"Mean spectral information makes variation between features too smooth to reflect change information well.\" ; rdfs:label \"assessment of spectral mean information\" .",
+        "triple_count": 1
+      }
+    ],
+    "9": [
+      {
+        "kind": "critic_fix",
+        "source": "ids=[2, 3, 6]",
+        "target": "@prefix cd: <https://growgraph.dev/facts/> . @prefix ns1: <http://www.ontologyrepository.com/CommonCoreOntologies/> . cd:article ns1:is_mentioned_by cd:deep_cnn_model . cd:article ns1:is_mentioned_by cd:dnn_model . cd:article ns1:is_mentioned_by cd:svm_model .",
+        "triple_count": 1
+      },
+      {
+        "kind": "critic_fix",
+        "source": "ids=[4]",
+        "target": "@prefix cd: <https://growgraph.dev/facts/> . @prefix ns1: <http://www.ontologyrepository.com/CommonCoreOntologies/> . cd:rul_prediction_module ns1:is_mentioned_by cd:article .",
+        "triple_count": 1
+      },
+      {
+        "kind": "critic_fix",
+        "source": "ids=[5]",
+        "target": "@prefix cd: <https://growgraph.dev/facts/> . @prefix ns1: <http://www.ontologyrepository.com/CommonCoreOntologies/> . cd:spectrum_principal_energy_vector_feature_extraction ns1:is_mentioned_by cd:article .",
+        "triple_count": 1
+      },
+      {
+        "kind": "critic_fix",
+        "source": "ids=[2, 3, 6]",
+        "target": "@prefix cd: <https://growgraph.dev/facts/> . @prefix ns1: <http://www.ontologyrepository.com/CommonCoreOntologies/> . cd:deep_cnn_model ns1:is_mentioned_by cd:article . cd:dnn_model ns1:is_mentioned_by cd:article . cd:svm_model ns1:is_mentioned_by cd:article .",
+        "triple_count": 1
+      },
+      {
+        "kind": "critic_fix",
+        "source": "",
+        "target": "@prefix cd: <https://growgraph.dev/facts/> . @prefix ns1: <http://www.ontologyrepository.com/CommonCoreOntologies/> . cd:bearing_rul_prediction_case ns1:is_about cd:bearing . cd:rul_estimation ns1:is_subject_of cd:bearing_rul .",
+        "triple_count": 1
+      },
+      {
+        "kind": "critic_fix",
+        "source": "",
+        "target": "@prefix cd: <https://growgraph.dev/facts/> . @prefix ns1: <http://www.ontologyrepository.com/CommonCoreOntologies/> . cd:dnn_spectrum_prediction a ns1:ActOfPrediction ; ns1:has_input cd:spectrum_principal_energy_vector ; ns1:prescribed_by cd:dnn_model ; ns1:has_output cd:bearing_rul .",
+        "triple_count": 1
+      },
+      {
+        "kind": "critic_fix",
+        "source": "",
+        "target": "@prefix cd: <https://growgraph.dev/facts/> . @prefix ns1: <http://www.ontologyrepository.com/CommonCoreOntologies/> . cd:dnn_time_frequency_prediction a ns1:ActOfPrediction ; ns1:has_input cd:time_frequency_features ; ns1:prescribed_by cd:dnn_model ; ns1:has_output cd:bearing_rul .",
+        "triple_count": 1
+      },
+      {
+        "kind": "critic_fix",
+        "source": "",
+        "target": "@prefix cd: <https://growgraph.dev/facts/> . @prefix ns1: <http://www.ontologyrepository.com/CommonCoreOntologies/> . cd:cnn_spectrum_prediction ns1:has_output cd:bearing_rul . cd:svm_spectrum_prediction ns1:has_output cd:bearing_rul . cd:svm_time_frequency_prediction ns1:has_output cd:bearing_rul .",
+        "triple_count": 1
+      },
+      {
+        "kind": "critic_fix",
+        "source": "",
+        "target": "@prefix cd: <https://growgraph.dev/facts/> . @prefix ns1: <http://www.ontologyrepository.com/CommonCoreOntologies/> . cd:wavelet_transform ns1:has_output cd:time_frequency_features . cd:spectrum_principal_energy_vector_feature_extraction ns1:has_output cd:spectrum_principal_energy_vector .",
+        "triple_count": 1
+      },
+      {
+        "kind": "critic_fix",
+        "source": "",
+        "target": "@prefix cd: <https://growgraph.dev/facts/> . @prefix opmad: <https://growgraph.dev/ontology/opmad/> . @prefix ns1: <http://www.ontologyrepository.com/CommonCoreOntologies/> . cd:svm_prediction_error_indicator a opmad:Performance_indicator ; ns1:describes cd:svm_spectrum_prediction, cd:svm_time_frequency_prediction . cd:cnn_prediction_accuracy_indicator a opmad:Performance_indicator ; ns1:describes cd:cnn_spectrum_prediction .",
+        "triple_count": 1
+      },
+      {
+        "kind": "critic_fix",
+        "source": "ids=[18]",
+        "target": "@prefix cd: <https://growgraph.dev/facts/> . @prefix opmad: <https://growgraph.dev/ontology/opmad/> . @prefix xsd: <http://www.w3.org/2001/XMLSchema#> . cd:cnn_prediction_accuracy opmad:has_double_value \"0.1190\"^^xsd:double .",
+        "triple_count": 1
+      },
+      {
+        "kind": "critic_fix",
+        "source": "",
+        "target": "@prefix cd: <https://growgraph.dev/facts/> . @prefix ns1: <http://www.ontologyrepository.com/CommonCoreOntologies/> . cd:same_feature_model_comparison a ns1:ActOfAppraisal ; ns1:has_object cd:cnn_spectrum_prediction, cd:dnn_spectrum_prediction, cd:svm_spectrum_prediction . cd:article ns1:is_mentioned_by cd:same_feature_model_comparison .",
+        "triple_count": 1
+      },
+      {
+        "kind": "critic_fix",
+        "source": "",
+        "target": "@prefix cd: <https://growgraph.dev/facts/> . @prefix ns1: <http://www.ontologyrepository.com/CommonCoreOntologies/> . cd:different_feature_model_comparison a ns1:ActOfAppraisal ; ns1:has_object cd:cnn_spectrum_prediction, cd:dnn_time_frequency_prediction, cd:svm_time_frequency_prediction .",
+        "triple_count": 1
+      }
+    ],
+    "10": [
+      {
+        "kind": "critic_fix",
+        "source": "ids=[10]",
+        "target": "@prefix cd: <https://growgraph.dev/facts/> . @prefix ns2: <http://purl.obolibrary.org/obo/> . cd:bearing_rul_estimation ns2:RO_0000079 cd:bearing .",
+        "triple_count": 1
+      },
+      {
+        "kind": "critic_fix",
+        "source": "ids=[3]",
+        "target": "@prefix cd: <https://growgraph.dev/facts/> . @prefix ns2: <http://purl.obolibrary.org/obo/> . cd:bearing_fault_feature_extraction a ns2:BFO_0000034 .",
+        "triple_count": 1
+      },
+      {
+        "kind": "critic_fix",
+        "source": "ids=[24, 25]",
+        "target": "@prefix cd: <https://growgraph.dev/facts/> . @prefix ns1: <http://www.ontologyrepository.com/CommonCoreOntologies/> . cd:bearing_rul_module ns1:uses cd:post_smoothing_method, cd:spectrum_principal_energy_vector_method .",
+        "triple_count": 1
+      },
+      {
+        "kind": "critic_fix",
+        "source": "",
+        "target": "@prefix cd: <https://growgraph.dev/facts/> . @prefix ns1: <http://www.ontologyrepository.com/CommonCoreOntologies/> . @prefix opmad: <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#> . @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> . cd:real_world_data a ns1:DescriptiveInformationContentEntity ; rdfs:label \"real-world data\" . cd:bearing_rul_module ns1:uses cd:real_world_data .",
+        "triple_count": 1
+      },
+      {
+        "kind": "critic_fix",
+        "source": "",
+        "target": "@prefix cd: <https://growgraph.dev/facts/> . @prefix ns1: <http://www.ontologyrepository.com/CommonCoreOntologies/> . @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> . cd:post_smoothing_objective a ns1:Objective ; rdfs:label \"address prediction discontinuity and improve interpretability\" ; ns1:is_about cd:post_smoothing_method .",
+        "triple_count": 1
+      }
+    ]
+  },
+  "unit_failures": []
+}

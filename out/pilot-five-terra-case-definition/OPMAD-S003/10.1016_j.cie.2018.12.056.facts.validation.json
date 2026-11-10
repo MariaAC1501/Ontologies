@@ -1,0 +1,1430 @@
+{
+  "source": "10.1016_j.cie.2018.12.056.pdf",
+  "conformance": {
+    "shacl_evaluated": null,
+    "conforms": null,
+    "shacl_focus_nodes": null,
+    "shacl_vacuous": false,
+    "findings": 50,
+    "errors": 41,
+    "warnings": 9,
+    "by_kind": {
+      "degenerate_coreference": 1,
+      "functional_violation": 28,
+      "non_catalog_vocabulary": 9,
+      "suspect_multi_value": 12
+    },
+    "shacl_violations": 0,
+    "shacl_by_constraint": {},
+    "shacl_by_shape": {},
+    "repairs_applied": {}
+  },
+  "gate_repairs": [],
+  "findings": [
+    {
+      "kind": "suspect_multi_value",
+      "severity": "error",
+      "message": "<https://growgraph.dev/doc/447e6aeb76ca/alarmLevelRange> carries 2 distinct numeric values on <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#has_interger_value> \u2014 the signature of distinct quantities collapsed into one node.",
+      "subject": "https://growgraph.dev/doc/447e6aeb76ca/alarmLevelRange",
+      "predicate": "http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#has_interger_value",
+      "values": [
+        "0",
+        "1"
+      ],
+      "component": "",
+      "source_shape": ""
+    },
+    {
+      "kind": "functional_violation",
+      "severity": "error",
+      "message": "<https://growgraph.dev/doc/447e6aeb76ca/aprilAction> holds 3 distinct values for <http://www.ontologyrepository.com/CommonCoreOntologies/is_about>, which the schema constrains to at most one.",
+      "subject": "https://growgraph.dev/doc/447e6aeb76ca/aprilAction",
+      "predicate": "http://www.ontologyrepository.com/CommonCoreOntologies/is_about",
+      "values": [
+        "https://growgraph.dev/doc/447e6aeb76ca/aprilSeverity",
+        "https://growgraph.dev/doc/447e6aeb76ca/dt_2",
+        "https://growgraph.dev/doc/447e6aeb76ca/oeie_3"
+      ],
+      "component": "",
+      "source_shape": ""
+    },
+    {
+      "kind": "suspect_multi_value",
+      "severity": "error",
+      "message": "<https://growgraph.dev/doc/447e6aeb76ca/articleContent> points at 2 objects via <http://www.ontologyrepository.com/CommonCoreOntologies/describes>, which is single-valued for every other subject in this graph.",
+      "subject": "https://growgraph.dev/doc/447e6aeb76ca/articleContent",
+      "predicate": "http://www.ontologyrepository.com/CommonCoreOntologies/describes",
+      "values": [
+        "https://growgraph.dev/doc/447e6aeb76ca/conditionMonitoringFunction",
+        "https://growgraph.dev/doc/447e6aeb76ca/model"
+      ],
+      "component": "",
+      "source_shape": ""
+    },
+    {
+      "kind": "suspect_multi_value",
+      "severity": "error",
+      "message": "<https://growgraph.dev/doc/447e6aeb76ca/carProductionLine> carries 2 mutually irreconcilable string values on <http://www.w3.org/2000/01/rdf-schema#label>, which is single-valued for a dominant majority of other subjects \u2014 the signature of distinct entities collapsed into one node.",
+      "subject": "https://growgraph.dev/doc/447e6aeb76ca/carProductionLine",
+      "predicate": "http://www.w3.org/2000/01/rdf-schema#label",
+      "values": [
+        "car production line",
+        "production line machine"
+      ],
+      "component": "",
+      "source_shape": ""
+    },
+    {
+      "kind": "functional_violation",
+      "severity": "error",
+      "message": "<https://growgraph.dev/doc/447e6aeb76ca/dt_2> holds 2 distinct values for <http://www.ontologyrepository.com/CommonCoreOntologies/is_about>, which the schema constrains to at most one.",
+      "subject": "https://growgraph.dev/doc/447e6aeb76ca/dt_2",
+      "predicate": "http://www.ontologyrepository.com/CommonCoreOntologies/is_about",
+      "values": [
+        "https://growgraph.dev/doc/447e6aeb76ca/manufacturingEquipment",
+        "https://growgraph.dev/doc/447e6aeb76ca/productionOperation"
+      ],
+      "component": "",
+      "source_shape": ""
+    },
+    {
+      "kind": "functional_violation",
+      "severity": "error",
+      "message": "<https://growgraph.dev/doc/447e6aeb76ca/fewsModel> holds 4 distinct values for <http://www.ontologyrepository.com/CommonCoreOntologies/is_about>, which the schema constrains to at most one.",
+      "subject": "https://growgraph.dev/doc/447e6aeb76ca/fewsModel",
+      "predicate": "http://www.ontologyrepository.com/CommonCoreOntologies/is_about",
+      "values": [
+        "https://growgraph.dev/doc/447e6aeb76ca/downTime",
+        "https://growgraph.dev/doc/447e6aeb76ca/overallEquipmentIneffectiveness",
+        "https://growgraph.dev/doc/447e6aeb76ca/scrapRatePremiumCars",
+        "https://growgraph.dev/doc/447e6aeb76ca/scrapRateRegularCars"
+      ],
+      "component": "",
+      "source_shape": ""
+    },
+    {
+      "kind": "suspect_multi_value",
+      "severity": "error",
+      "message": "<https://growgraph.dev/doc/447e6aeb76ca/fuzzyEarlyWarningSystem> points at 2 objects via <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#explained_in>, which is single-valued for every other subject in this graph.",
+      "subject": "https://growgraph.dev/doc/447e6aeb76ca/fuzzyEarlyWarningSystem",
+      "predicate": "http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#explained_in",
+      "values": [
+        "https://growgraph.dev/doc/447e6aeb76ca/article",
+        "https://growgraph.dev/doc/447e6aeb76ca/article_1"
+      ],
+      "component": "",
+      "source_shape": ""
+    },
+    {
+      "kind": "functional_violation",
+      "severity": "error",
+      "message": "<https://growgraph.dev/doc/447e6aeb76ca/illustrativeAction> holds 2 distinct values for <http://www.ontologyrepository.com/CommonCoreOntologies/is_about>, which the schema constrains to at most one.",
+      "subject": "https://growgraph.dev/doc/447e6aeb76ca/illustrativeAction",
+      "predicate": "http://www.ontologyrepository.com/CommonCoreOntologies/is_about",
+      "values": [
+        "https://growgraph.dev/doc/447e6aeb76ca/machineComponents",
+        "https://growgraph.dev/doc/447e6aeb76ca/scR"
+      ],
+      "component": "",
+      "source_shape": ""
+    },
+    {
+      "kind": "functional_violation",
+      "severity": "error",
+      "message": "<https://growgraph.dev/doc/447e6aeb76ca/june_11_required_actions> holds 2 distinct values for <http://www.ontologyrepository.com/CommonCoreOntologies/is_about>, which the schema constrains to at most one.",
+      "subject": "https://growgraph.dev/doc/447e6aeb76ca/june_11_required_actions",
+      "predicate": "http://www.ontologyrepository.com/CommonCoreOntologies/is_about",
+      "values": [
+        "https://growgraph.dev/doc/447e6aeb76ca/dt_3",
+        "https://growgraph.dev/doc/447e6aeb76ca/scP_3"
+      ],
+      "component": "",
+      "source_shape": ""
+    },
+    {
+      "kind": "functional_violation",
+      "severity": "error",
+      "message": "<https://growgraph.dev/doc/447e6aeb76ca/lowerLimitInput> holds 4 distinct values for <http://www.ontologyrepository.com/CommonCoreOntologies/is_a_measurement_of>, which the schema constrains to at most one.",
+      "subject": "https://growgraph.dev/doc/447e6aeb76ca/lowerLimitInput",
+      "predicate": "http://www.ontologyrepository.com/CommonCoreOntologies/is_a_measurement_of",
+      "values": [
+        "https://growgraph.dev/doc/447e6aeb76ca/dt_2",
+        "https://growgraph.dev/doc/447e6aeb76ca/oeie_3",
+        "https://growgraph.dev/doc/447e6aeb76ca/scP_2",
+        "https://growgraph.dev/doc/447e6aeb76ca/scR_2"
+      ],
+      "component": "",
+      "source_shape": ""
+    },
+    {
+      "kind": "suspect_multi_value",
+      "severity": "error",
+      "message": "<https://growgraph.dev/doc/447e6aeb76ca/membershipLimitValidation> points at 4 objects via <http://www.ontologyrepository.com/CommonCoreOntologies/has_object>, which is single-valued for every other subject in this graph.",
+      "subject": "https://growgraph.dev/doc/447e6aeb76ca/membershipLimitValidation",
+      "predicate": "http://www.ontologyrepository.com/CommonCoreOntologies/has_object",
+      "values": [
+        "https://growgraph.dev/doc/447e6aeb76ca/dt",
+        "https://growgraph.dev/doc/447e6aeb76ca/oeie_1",
+        "https://growgraph.dev/doc/447e6aeb76ca/scP",
+        "https://growgraph.dev/doc/447e6aeb76ca/scR"
+      ],
+      "component": "",
+      "source_shape": ""
+    },
+    {
+      "kind": "functional_violation",
+      "severity": "error",
+      "message": "<https://growgraph.dev/doc/447e6aeb76ca/octoberAlarm> holds 2 distinct values for <http://www.ontologyrepository.com/CommonCoreOntologies/is_a_ratio_measurement_of>, which the schema constrains to at most one.",
+      "subject": "https://growgraph.dev/doc/447e6aeb76ca/octoberAlarm",
+      "predicate": "http://www.ontologyrepository.com/CommonCoreOntologies/is_a_ratio_measurement_of",
+      "values": [
+        "https://growgraph.dev/doc/447e6aeb76ca/alarmLevel_1",
+        "https://growgraph.dev/doc/447e6aeb76ca/alarmLevel_3"
+      ],
+      "component": "",
+      "source_shape": ""
+    },
+    {
+      "kind": "suspect_multi_value",
+      "severity": "error",
+      "message": "<https://growgraph.dev/doc/447e6aeb76ca/oeieDomain> carries 2 distinct numeric values on <http://qudt.org/schema/qudt/numericValue> \u2014 the signature of distinct quantities collapsed into one node.",
+      "subject": "https://growgraph.dev/doc/447e6aeb76ca/oeieDomain",
+      "predicate": "http://qudt.org/schema/qudt/numericValue",
+      "values": [
+        "0",
+        "100"
+      ],
+      "component": "",
+      "source_shape": ""
+    },
+    {
+      "kind": "functional_violation",
+      "severity": "error",
+      "message": "<https://growgraph.dev/doc/447e6aeb76ca/oeieTransformation> holds 2 distinct values for <http://www.ontologyrepository.com/CommonCoreOntologies/is_about>, which the schema constrains to at most one.",
+      "subject": "https://growgraph.dev/doc/447e6aeb76ca/oeieTransformation",
+      "predicate": "http://www.ontologyrepository.com/CommonCoreOntologies/is_about",
+      "values": [
+        "https://growgraph.dev/doc/447e6aeb76ca/overallEquipmentEffectiveness",
+        "https://growgraph.dev/doc/447e6aeb76ca/overallEquipmentIneffectiveness"
+      ],
+      "component": "",
+      "source_shape": ""
+    },
+    {
+      "kind": "functional_violation",
+      "severity": "error",
+      "message": "<https://growgraph.dev/doc/447e6aeb76ca/oeie_3> holds 2 distinct values for <http://www.ontologyrepository.com/CommonCoreOntologies/is_about>, which the schema constrains to at most one.",
+      "subject": "https://growgraph.dev/doc/447e6aeb76ca/oeie_3",
+      "predicate": "http://www.ontologyrepository.com/CommonCoreOntologies/is_about",
+      "values": [
+        "https://growgraph.dev/doc/447e6aeb76ca/manufacturingEquipment",
+        "https://growgraph.dev/doc/447e6aeb76ca/productionOperation"
+      ],
+      "component": "",
+      "source_shape": ""
+    },
+    {
+      "kind": "functional_violation",
+      "severity": "error",
+      "message": "<https://growgraph.dev/doc/447e6aeb76ca/ruleReasoningI> holds 5 distinct values for <http://www.ontologyrepository.com/CommonCoreOntologies/is_about>, which the schema constrains to at most one.",
+      "subject": "https://growgraph.dev/doc/447e6aeb76ca/ruleReasoningI",
+      "predicate": "http://www.ontologyrepository.com/CommonCoreOntologies/is_about",
+      "values": [
+        "https://growgraph.dev/doc/447e6aeb76ca/dt",
+        "https://growgraph.dev/doc/447e6aeb76ca/fewsRuleSet",
+        "https://growgraph.dev/doc/447e6aeb76ca/oeie_1",
+        "https://growgraph.dev/doc/447e6aeb76ca/scP",
+        "https://growgraph.dev/doc/447e6aeb76ca/scR"
+      ],
+      "component": "",
+      "source_shape": ""
+    },
+    {
+      "kind": "functional_violation",
+      "severity": "error",
+      "message": "<https://growgraph.dev/doc/447e6aeb76ca/ruleReasoningIi> holds 3 distinct values for <http://www.ontologyrepository.com/CommonCoreOntologies/is_about>, which the schema constrains to at most one.",
+      "subject": "https://growgraph.dev/doc/447e6aeb76ca/ruleReasoningIi",
+      "predicate": "http://www.ontologyrepository.com/CommonCoreOntologies/is_about",
+      "values": [
+        "https://growgraph.dev/doc/447e6aeb76ca/fewsRuleSet",
+        "https://growgraph.dev/doc/447e6aeb76ca/scP",
+        "https://growgraph.dev/doc/447e6aeb76ca/scR"
+      ],
+      "component": "",
+      "source_shape": ""
+    },
+    {
+      "kind": "functional_violation",
+      "severity": "error",
+      "message": "<https://growgraph.dev/doc/447e6aeb76ca/ruleReasoningIii> holds 3 distinct values for <http://www.ontologyrepository.com/CommonCoreOntologies/is_about>, which the schema constrains to at most one.",
+      "subject": "https://growgraph.dev/doc/447e6aeb76ca/ruleReasoningIii",
+      "predicate": "http://www.ontologyrepository.com/CommonCoreOntologies/is_about",
+      "values": [
+        "https://growgraph.dev/doc/447e6aeb76ca/fewsRuleSet",
+        "https://growgraph.dev/doc/447e6aeb76ca/scP",
+        "https://growgraph.dev/doc/447e6aeb76ca/scR"
+      ],
+      "component": "",
+      "source_shape": ""
+    },
+    {
+      "kind": "functional_violation",
+      "severity": "error",
+      "message": "<https://growgraph.dev/doc/447e6aeb76ca/ruleReasoningIv> holds 3 distinct values for <http://www.ontologyrepository.com/CommonCoreOntologies/is_about>, which the schema constrains to at most one.",
+      "subject": "https://growgraph.dev/doc/447e6aeb76ca/ruleReasoningIv",
+      "predicate": "http://www.ontologyrepository.com/CommonCoreOntologies/is_about",
+      "values": [
+        "https://growgraph.dev/doc/447e6aeb76ca/fewsRuleSet",
+        "https://growgraph.dev/doc/447e6aeb76ca/scP",
+        "https://growgraph.dev/doc/447e6aeb76ca/scR"
+      ],
+      "component": "",
+      "source_shape": ""
+    },
+    {
+      "kind": "functional_violation",
+      "severity": "error",
+      "message": "<https://growgraph.dev/doc/447e6aeb76ca/ruleReasoningV> holds 3 distinct values for <http://www.ontologyrepository.com/CommonCoreOntologies/is_about>, which the schema constrains to at most one.",
+      "subject": "https://growgraph.dev/doc/447e6aeb76ca/ruleReasoningV",
+      "predicate": "http://www.ontologyrepository.com/CommonCoreOntologies/is_about",
+      "values": [
+        "https://growgraph.dev/doc/447e6aeb76ca/dt",
+        "https://growgraph.dev/doc/447e6aeb76ca/fewsRuleSet",
+        "https://growgraph.dev/doc/447e6aeb76ca/oeie_1"
+      ],
+      "component": "",
+      "source_shape": ""
+    },
+    {
+      "kind": "functional_violation",
+      "severity": "error",
+      "message": "<https://growgraph.dev/doc/447e6aeb76ca/rule_1> holds 5 distinct values for <http://www.ontologyrepository.com/CommonCoreOntologies/is_about>, which the schema constrains to at most one.",
+      "subject": "https://growgraph.dev/doc/447e6aeb76ca/rule_1",
+      "predicate": "http://www.ontologyrepository.com/CommonCoreOntologies/is_about",
+      "values": [
+        "https://growgraph.dev/doc/447e6aeb76ca/dt_1",
+        "https://growgraph.dev/doc/447e6aeb76ca/oeie_2",
+        "https://growgraph.dev/doc/447e6aeb76ca/scP_1",
+        "https://growgraph.dev/doc/447e6aeb76ca/scR_1",
+        "https://growgraph.dev/doc/447e6aeb76ca/severity"
+      ],
+      "component": "",
+      "source_shape": ""
+    },
+    {
+      "kind": "functional_violation",
+      "severity": "error",
+      "message": "<https://growgraph.dev/doc/447e6aeb76ca/rule_1_2> holds 5 distinct values for <http://www.ontologyrepository.com/CommonCoreOntologies/is_about>, which the schema constrains to at most one.",
+      "subject": "https://growgraph.dev/doc/447e6aeb76ca/rule_1_2",
+      "predicate": "http://www.ontologyrepository.com/CommonCoreOntologies/is_about",
+      "values": [
+        "https://growgraph.dev/doc/447e6aeb76ca/alarmLevel_3",
+        "https://growgraph.dev/doc/447e6aeb76ca/dt_2",
+        "https://growgraph.dev/doc/447e6aeb76ca/oeie_3",
+        "https://growgraph.dev/doc/447e6aeb76ca/scP_2",
+        "https://growgraph.dev/doc/447e6aeb76ca/scR_2"
+      ],
+      "component": "",
+      "source_shape": ""
+    },
+    {
+      "kind": "functional_violation",
+      "severity": "error",
+      "message": "<https://growgraph.dev/doc/447e6aeb76ca/rule_2_1> holds 5 distinct values for <http://www.ontologyrepository.com/CommonCoreOntologies/is_about>, which the schema constrains to at most one.",
+      "subject": "https://growgraph.dev/doc/447e6aeb76ca/rule_2_1",
+      "predicate": "http://www.ontologyrepository.com/CommonCoreOntologies/is_about",
+      "values": [
+        "https://growgraph.dev/doc/447e6aeb76ca/dt_1",
+        "https://growgraph.dev/doc/447e6aeb76ca/oeie_2",
+        "https://growgraph.dev/doc/447e6aeb76ca/scP_1",
+        "https://growgraph.dev/doc/447e6aeb76ca/scR_1",
+        "https://growgraph.dev/doc/447e6aeb76ca/severity"
+      ],
+      "component": "",
+      "source_shape": ""
+    },
+    {
+      "kind": "functional_violation",
+      "severity": "error",
+      "message": "<https://growgraph.dev/doc/447e6aeb76ca/rule_3> holds 5 distinct values for <http://www.ontologyrepository.com/CommonCoreOntologies/is_about>, which the schema constrains to at most one.",
+      "subject": "https://growgraph.dev/doc/447e6aeb76ca/rule_3",
+      "predicate": "http://www.ontologyrepository.com/CommonCoreOntologies/is_about",
+      "values": [
+        "https://growgraph.dev/doc/447e6aeb76ca/dt_1",
+        "https://growgraph.dev/doc/447e6aeb76ca/oeie_2",
+        "https://growgraph.dev/doc/447e6aeb76ca/scP_1",
+        "https://growgraph.dev/doc/447e6aeb76ca/scR_1",
+        "https://growgraph.dev/doc/447e6aeb76ca/severity"
+      ],
+      "component": "",
+      "source_shape": ""
+    },
+    {
+      "kind": "functional_violation",
+      "severity": "error",
+      "message": "<https://growgraph.dev/doc/447e6aeb76ca/rule_4> holds 5 distinct values for <http://www.ontologyrepository.com/CommonCoreOntologies/is_about>, which the schema constrains to at most one.",
+      "subject": "https://growgraph.dev/doc/447e6aeb76ca/rule_4",
+      "predicate": "http://www.ontologyrepository.com/CommonCoreOntologies/is_about",
+      "values": [
+        "https://growgraph.dev/doc/447e6aeb76ca/dt_1",
+        "https://growgraph.dev/doc/447e6aeb76ca/oeie_2",
+        "https://growgraph.dev/doc/447e6aeb76ca/scP_1",
+        "https://growgraph.dev/doc/447e6aeb76ca/scR_1",
+        "https://growgraph.dev/doc/447e6aeb76ca/severity"
+      ],
+      "component": "",
+      "source_shape": ""
+    },
+    {
+      "kind": "functional_violation",
+      "severity": "error",
+      "message": "<https://growgraph.dev/doc/447e6aeb76ca/rule_5> holds 5 distinct values for <http://www.ontologyrepository.com/CommonCoreOntologies/is_about>, which the schema constrains to at most one.",
+      "subject": "https://growgraph.dev/doc/447e6aeb76ca/rule_5",
+      "predicate": "http://www.ontologyrepository.com/CommonCoreOntologies/is_about",
+      "values": [
+        "https://growgraph.dev/doc/447e6aeb76ca/dt_1",
+        "https://growgraph.dev/doc/447e6aeb76ca/oeie_2",
+        "https://growgraph.dev/doc/447e6aeb76ca/scP_1",
+        "https://growgraph.dev/doc/447e6aeb76ca/scR_1",
+        "https://growgraph.dev/doc/447e6aeb76ca/severity"
+      ],
+      "component": "",
+      "source_shape": ""
+    },
+    {
+      "kind": "functional_violation",
+      "severity": "error",
+      "message": "<https://growgraph.dev/doc/447e6aeb76ca/rule_6_1> holds 3 distinct values for <http://www.ontologyrepository.com/CommonCoreOntologies/is_about>, which the schema constrains to at most one.",
+      "subject": "https://growgraph.dev/doc/447e6aeb76ca/rule_6_1",
+      "predicate": "http://www.ontologyrepository.com/CommonCoreOntologies/is_about",
+      "values": [
+        "https://growgraph.dev/doc/447e6aeb76ca/scP_1",
+        "https://growgraph.dev/doc/447e6aeb76ca/scR_1",
+        "https://growgraph.dev/doc/447e6aeb76ca/severity"
+      ],
+      "component": "",
+      "source_shape": ""
+    },
+    {
+      "kind": "functional_violation",
+      "severity": "error",
+      "message": "<https://growgraph.dev/doc/447e6aeb76ca/rule_7> holds 3 distinct values for <http://www.ontologyrepository.com/CommonCoreOntologies/is_about>, which the schema constrains to at most one.",
+      "subject": "https://growgraph.dev/doc/447e6aeb76ca/rule_7",
+      "predicate": "http://www.ontologyrepository.com/CommonCoreOntologies/is_about",
+      "values": [
+        "https://growgraph.dev/doc/447e6aeb76ca/scP_1",
+        "https://growgraph.dev/doc/447e6aeb76ca/scR_1",
+        "https://growgraph.dev/doc/447e6aeb76ca/severity"
+      ],
+      "component": "",
+      "source_shape": ""
+    },
+    {
+      "kind": "functional_violation",
+      "severity": "error",
+      "message": "<https://growgraph.dev/doc/447e6aeb76ca/rule_8> holds 3 distinct values for <http://www.ontologyrepository.com/CommonCoreOntologies/is_about>, which the schema constrains to at most one.",
+      "subject": "https://growgraph.dev/doc/447e6aeb76ca/rule_8",
+      "predicate": "http://www.ontologyrepository.com/CommonCoreOntologies/is_about",
+      "values": [
+        "https://growgraph.dev/doc/447e6aeb76ca/dt_1",
+        "https://growgraph.dev/doc/447e6aeb76ca/oeie_2",
+        "https://growgraph.dev/doc/447e6aeb76ca/severity"
+      ],
+      "component": "",
+      "source_shape": ""
+    },
+    {
+      "kind": "suspect_multi_value",
+      "severity": "error",
+      "message": "<https://growgraph.dev/doc/447e6aeb76ca/scPLevels> points at 2 objects via <http://www.ontologyrepository.com/CommonCoreOntologies/describes>, which is single-valued for every other subject in this graph.",
+      "subject": "https://growgraph.dev/doc/447e6aeb76ca/scPLevels",
+      "predicate": "http://www.ontologyrepository.com/CommonCoreOntologies/describes",
+      "values": [
+        "https://growgraph.dev/doc/447e6aeb76ca/scPSituation",
+        "https://growgraph.dev/doc/447e6aeb76ca/scRSituation"
+      ],
+      "component": "",
+      "source_shape": ""
+    },
+    {
+      "kind": "functional_violation",
+      "severity": "error",
+      "message": "<https://growgraph.dev/doc/447e6aeb76ca/scP_2> holds 2 distinct values for <http://www.ontologyrepository.com/CommonCoreOntologies/is_about>, which the schema constrains to at most one.",
+      "subject": "https://growgraph.dev/doc/447e6aeb76ca/scP_2",
+      "predicate": "http://www.ontologyrepository.com/CommonCoreOntologies/is_about",
+      "values": [
+        "https://growgraph.dev/doc/447e6aeb76ca/manufacturingEquipment",
+        "https://growgraph.dev/doc/447e6aeb76ca/productionOperation"
+      ],
+      "component": "",
+      "source_shape": ""
+    },
+    {
+      "kind": "functional_violation",
+      "severity": "error",
+      "message": "<https://growgraph.dev/doc/447e6aeb76ca/scR_2> holds 2 distinct values for <http://www.ontologyrepository.com/CommonCoreOntologies/is_about>, which the schema constrains to at most one.",
+      "subject": "https://growgraph.dev/doc/447e6aeb76ca/scR_2",
+      "predicate": "http://www.ontologyrepository.com/CommonCoreOntologies/is_about",
+      "values": [
+        "https://growgraph.dev/doc/447e6aeb76ca/manufacturingEquipment",
+        "https://growgraph.dev/doc/447e6aeb76ca/productionOperation"
+      ],
+      "component": "",
+      "source_shape": ""
+    },
+    {
+      "kind": "suspect_multi_value",
+      "severity": "error",
+      "message": "<https://growgraph.dev/doc/447e6aeb76ca/temperatureMonitoring> points at 2 objects via <http://www.ontologyrepository.com/CommonCoreOntologies/has_object>, which is single-valued for every other subject in this graph.",
+      "subject": "https://growgraph.dev/doc/447e6aeb76ca/temperatureMonitoring",
+      "predicate": "http://www.ontologyrepository.com/CommonCoreOntologies/has_object",
+      "values": [
+        "https://growgraph.dev/doc/447e6aeb76ca/equipment",
+        "https://growgraph.dev/doc/447e6aeb76ca/equipmentTemperature"
+      ],
+      "component": "",
+      "source_shape": ""
+    },
+    {
+      "kind": "suspect_multi_value",
+      "severity": "error",
+      "message": "<https://growgraph.dev/doc/447e6aeb76ca/termCount> points at 4 objects via <http://www.ontologyrepository.com/CommonCoreOntologies/describes>, which is single-valued for every other subject in this graph.",
+      "subject": "https://growgraph.dev/doc/447e6aeb76ca/termCount",
+      "predicate": "http://www.ontologyrepository.com/CommonCoreOntologies/describes",
+      "values": [
+        "https://growgraph.dev/doc/447e6aeb76ca/dt",
+        "https://growgraph.dev/doc/447e6aeb76ca/oeie_1",
+        "https://growgraph.dev/doc/447e6aeb76ca/scP",
+        "https://growgraph.dev/doc/447e6aeb76ca/scR"
+      ],
+      "component": "",
+      "source_shape": ""
+    },
+    {
+      "kind": "functional_violation",
+      "severity": "error",
+      "message": "<https://growgraph.dev/doc/447e6aeb76ca/trapezoidalMembershipFunctions> holds 4 distinct values for <http://www.ontologyrepository.com/CommonCoreOntologies/is_about>, which the schema constrains to at most one.",
+      "subject": "https://growgraph.dev/doc/447e6aeb76ca/trapezoidalMembershipFunctions",
+      "predicate": "http://www.ontologyrepository.com/CommonCoreOntologies/is_about",
+      "values": [
+        "https://growgraph.dev/doc/447e6aeb76ca/downtime",
+        "https://growgraph.dev/doc/447e6aeb76ca/oeie",
+        "https://growgraph.dev/doc/447e6aeb76ca/scrapPremium",
+        "https://growgraph.dev/doc/447e6aeb76ca/scrapRegular"
+      ],
+      "component": "",
+      "source_shape": ""
+    },
+    {
+      "kind": "suspect_multi_value",
+      "severity": "error",
+      "message": "<https://growgraph.dev/doc/447e6aeb76ca/validationApril> points at 2 objects via <http://www.ontologyrepository.com/CommonCoreOntologies/has_object>, which is single-valued for every other subject in this graph.",
+      "subject": "https://growgraph.dev/doc/447e6aeb76ca/validationApril",
+      "predicate": "http://www.ontologyrepository.com/CommonCoreOntologies/has_object",
+      "values": [
+        "https://growgraph.dev/doc/447e6aeb76ca/aprAlarmStatus",
+        "https://growgraph.dev/doc/447e6aeb76ca/fewsModel_2"
+      ],
+      "component": "",
+      "source_shape": ""
+    },
+    {
+      "kind": "functional_violation",
+      "severity": "error",
+      "message": "<https://growgraph.dev/doc/447e6aeb76ca/validation_1a_result> holds 2 distinct values for <http://www.ontologyrepository.com/CommonCoreOntologies/is_about>, which the schema constrains to at most one.",
+      "subject": "https://growgraph.dev/doc/447e6aeb76ca/validation_1a_result",
+      "predicate": "http://www.ontologyrepository.com/CommonCoreOntologies/is_about",
+      "values": [
+        "https://growgraph.dev/doc/447e6aeb76ca/scR",
+        "https://growgraph.dev/doc/447e6aeb76ca/validation_1a_sc_r_condition"
+      ],
+      "component": "",
+      "source_shape": ""
+    },
+    {
+      "kind": "suspect_multi_value",
+      "severity": "error",
+      "message": "<https://growgraph.dev/doc/447e6aeb76ca/validation_2> points at 5 objects via <http://www.ontologyrepository.com/CommonCoreOntologies/has_object>, which is single-valued for every other subject in this graph.",
+      "subject": "https://growgraph.dev/doc/447e6aeb76ca/validation_2",
+      "predicate": "http://www.ontologyrepository.com/CommonCoreOntologies/has_object",
+      "values": [
+        "https://growgraph.dev/doc/447e6aeb76ca/dt_2",
+        "https://growgraph.dev/doc/447e6aeb76ca/matlabModel",
+        "https://growgraph.dev/doc/447e6aeb76ca/oeie_3",
+        "https://growgraph.dev/doc/447e6aeb76ca/scP_2",
+        "https://growgraph.dev/doc/447e6aeb76ca/scR_2"
+      ],
+      "component": "",
+      "source_shape": ""
+    },
+    {
+      "kind": "suspect_multi_value",
+      "severity": "error",
+      "message": "<https://growgraph.dev/doc/447e6aeb76ca/validation_2_test_b> carries 2 mutually irreconcilable string values on <http://www.w3.org/2000/01/rdf-schema#label>, which is single-valued for a dominant majority of other subjects \u2014 the signature of distinct entities collapsed into one node.",
+      "subject": "https://growgraph.dev/doc/447e6aeb76ca/validation_2_test_b",
+      "predicate": "http://www.w3.org/2000/01/rdf-schema#label",
+      "values": [
+        "validation 2 test (b)",
+        "validation 2 test (d)"
+      ],
+      "component": "",
+      "source_shape": ""
+    },
+    {
+      "kind": "functional_violation",
+      "severity": "error",
+      "message": "<https://growgraph.dev/doc/447e6aeb76ca/variableCount_1> holds 2 distinct values for <http://www.ontologyrepository.com/CommonCoreOntologies/is_a_measurement_of>, which the schema constrains to at most one.",
+      "subject": "https://growgraph.dev/doc/447e6aeb76ca/variableCount_1",
+      "predicate": "http://www.ontologyrepository.com/CommonCoreOntologies/is_a_measurement_of",
+      "values": [
+        "https://growgraph.dev/doc/447e6aeb76ca/case_2",
+        "https://growgraph.dev/doc/447e6aeb76ca/validation_3"
+      ],
+      "component": "",
+      "source_shape": ""
+    },
+    {
+      "kind": "degenerate_coreference",
+      "severity": "error",
+      "message": "<https://growgraph.dev/doc/447e6aeb76ca/illustrativeCase> reaches <https://growgraph.dev/doc/447e6aeb76ca/article_3> through 2 single-valued predicates (http://purl.obolibrary.org/obo/RO_0010001, http://www.ontologyrepository.com/CommonCoreOntologies/is_mentioned_by) \u2014 distinct endpoints (e.g. range bounds) likely merged.",
+      "subject": "https://growgraph.dev/doc/447e6aeb76ca/illustrativeCase",
+      "predicate": "http://purl.obolibrary.org/obo/RO_0010001, http://www.ontologyrepository.com/CommonCoreOntologies/is_mentioned_by",
+      "values": [
+        "https://growgraph.dev/doc/447e6aeb76ca/article_3"
+      ],
+      "component": "",
+      "source_shape": ""
+    },
+    {
+      "kind": "non_catalog_vocabulary",
+      "severity": "warning",
+      "message": "<http://qudt.org/schema/qudt/QuantityValue> is used by 1 subject(s) but was absent from the ontology context \u2014 the renderer took the configured fallback vocabulary, which points at a retrieval miss rather than a modeling choice.",
+      "subject": "https://growgraph.dev/doc/447e6aeb76ca/oeieDomain",
+      "predicate": "http://qudt.org/schema/qudt/QuantityValue",
+      "values": [
+        "https://growgraph.dev/doc/447e6aeb76ca/oeieDomain"
+      ],
+      "component": "",
+      "source_shape": ""
+    },
+    {
+      "kind": "non_catalog_vocabulary",
+      "severity": "warning",
+      "message": "<http://qudt.org/schema/qudt/numericValue> is used by 1 subject(s) but was absent from the ontology context \u2014 the renderer took the configured fallback vocabulary, which points at a retrieval miss rather than a modeling choice.",
+      "subject": "https://growgraph.dev/doc/447e6aeb76ca/oeieDomain",
+      "predicate": "http://qudt.org/schema/qudt/numericValue",
+      "values": [
+        "https://growgraph.dev/doc/447e6aeb76ca/oeieDomain"
+      ],
+      "component": "",
+      "source_shape": ""
+    },
+    {
+      "kind": "non_catalog_vocabulary",
+      "severity": "warning",
+      "message": "<http://www.w3.org/ns/csvw#Column> is used by 14 subject(s) but was absent from the ontology context \u2014 the renderer fell back to outside vocabulary, which points at a retrieval miss rather than a modeling choice.",
+      "subject": "https://growgraph.dev/doc/447e6aeb76ca/table_4_description_column",
+      "predicate": "http://www.w3.org/ns/csvw#Column",
+      "values": [
+        "https://growgraph.dev/doc/447e6aeb76ca/table_4_description_column",
+        "https://growgraph.dev/doc/447e6aeb76ca/table_4_function_column",
+        "https://growgraph.dev/doc/447e6aeb76ca/table_4_metric_column",
+        "https://growgraph.dev/doc/447e6aeb76ca/table_4_std_column",
+        "https://growgraph.dev/doc/447e6aeb76ca/table_4_term_column",
+        "https://growgraph.dev/doc/447e6aeb76ca/table_4_value_column",
+        "https://growgraph.dev/doc/447e6aeb76ca/table_5_term_column",
+        "https://growgraph.dev/doc/447e6aeb76ca/table_6_output_column",
+        "https://growgraph.dev/doc/447e6aeb76ca/table_6_premise_column",
+        "https://growgraph.dev/doc/447e6aeb76ca/table_6_rule_column",
+        "https://growgraph.dev/doc/447e6aeb76ca/table_7_dt_column",
+        "https://growgraph.dev/doc/447e6aeb76ca/table_7_oeie_column",
+        "https://growgraph.dev/doc/447e6aeb76ca/table_7_output_column",
+        "https://growgraph.dev/doc/447e6aeb76ca/table_7_sc_r_column"
+      ],
+      "component": "",
+      "source_shape": ""
+    },
+    {
+      "kind": "non_catalog_vocabulary",
+      "severity": "warning",
+      "message": "<http://www.w3.org/ns/csvw#Schema> is used by 4 subject(s) but was absent from the ontology context \u2014 the renderer fell back to outside vocabulary, which points at a retrieval miss rather than a modeling choice.",
+      "subject": "https://growgraph.dev/doc/447e6aeb76ca/table_4_schema",
+      "predicate": "http://www.w3.org/ns/csvw#Schema",
+      "values": [
+        "https://growgraph.dev/doc/447e6aeb76ca/table_4_schema",
+        "https://growgraph.dev/doc/447e6aeb76ca/table_5_schema",
+        "https://growgraph.dev/doc/447e6aeb76ca/table_6_schema",
+        "https://growgraph.dev/doc/447e6aeb76ca/table_7_schema"
+      ],
+      "component": "",
+      "source_shape": ""
+    },
+    {
+      "kind": "non_catalog_vocabulary",
+      "severity": "warning",
+      "message": "<http://www.w3.org/ns/csvw#Table> is used by 4 subject(s) but was absent from the ontology context \u2014 the renderer fell back to outside vocabulary, which points at a retrieval miss rather than a modeling choice.",
+      "subject": "https://growgraph.dev/doc/447e6aeb76ca/table_4",
+      "predicate": "http://www.w3.org/ns/csvw#Table",
+      "values": [
+        "https://growgraph.dev/doc/447e6aeb76ca/table_4",
+        "https://growgraph.dev/doc/447e6aeb76ca/table_5",
+        "https://growgraph.dev/doc/447e6aeb76ca/table_6",
+        "https://growgraph.dev/doc/447e6aeb76ca/table_7"
+      ],
+      "component": "",
+      "source_shape": ""
+    },
+    {
+      "kind": "non_catalog_vocabulary",
+      "severity": "warning",
+      "message": "<http://www.w3.org/ns/csvw#column> is used by 4 subject(s) but was absent from the ontology context \u2014 the renderer fell back to outside vocabulary, which points at a retrieval miss rather than a modeling choice.",
+      "subject": "https://growgraph.dev/doc/447e6aeb76ca/table_4_schema",
+      "predicate": "http://www.w3.org/ns/csvw#column",
+      "values": [
+        "https://growgraph.dev/doc/447e6aeb76ca/table_4_schema",
+        "https://growgraph.dev/doc/447e6aeb76ca/table_5_schema",
+        "https://growgraph.dev/doc/447e6aeb76ca/table_6_schema",
+        "https://growgraph.dev/doc/447e6aeb76ca/table_7_schema"
+      ],
+      "component": "",
+      "source_shape": ""
+    },
+    {
+      "kind": "non_catalog_vocabulary",
+      "severity": "warning",
+      "message": "<http://www.w3.org/ns/csvw#tableSchema> is used by 4 subject(s) but was absent from the ontology context \u2014 the renderer fell back to outside vocabulary, which points at a retrieval miss rather than a modeling choice.",
+      "subject": "https://growgraph.dev/doc/447e6aeb76ca/table_4",
+      "predicate": "http://www.w3.org/ns/csvw#tableSchema",
+      "values": [
+        "https://growgraph.dev/doc/447e6aeb76ca/table_4",
+        "https://growgraph.dev/doc/447e6aeb76ca/table_5",
+        "https://growgraph.dev/doc/447e6aeb76ca/table_6",
+        "https://growgraph.dev/doc/447e6aeb76ca/table_7"
+      ],
+      "component": "",
+      "source_shape": ""
+    },
+    {
+      "kind": "non_catalog_vocabulary",
+      "severity": "warning",
+      "message": "<https://w3id.org/opmad#explains> is used by 1 subject(s) but was absent from the ontology context \u2014 the renderer fell back to outside vocabulary, which points at a retrieval miss rather than a modeling choice.",
+      "subject": "https://growgraph.dev/doc/447e6aeb76ca/currentArticle",
+      "predicate": "https://w3id.org/opmad#explains",
+      "values": [
+        "https://growgraph.dev/doc/447e6aeb76ca/currentArticle"
+      ],
+      "component": "",
+      "source_shape": ""
+    },
+    {
+      "kind": "non_catalog_vocabulary",
+      "severity": "warning",
+      "message": "<https://w3id.org/opmad#has_text_value> is used by 12 subject(s) but was absent from the ontology context \u2014 the renderer fell back to outside vocabulary, which points at a retrieval miss rather than a modeling choice.",
+      "subject": "https://growgraph.dev/doc/447e6aeb76ca/actionValidationQualification",
+      "predicate": "https://w3id.org/opmad#has_text_value",
+      "values": [
+        "https://growgraph.dev/doc/447e6aeb76ca/actionValidationQualification",
+        "https://growgraph.dev/doc/447e6aeb76ca/alarmLevel_2",
+        "https://growgraph.dev/doc/447e6aeb76ca/matlabRuleConstraint",
+        "https://growgraph.dev/doc/447e6aeb76ca/membershipLimitValidationDescription",
+        "https://growgraph.dev/doc/447e6aeb76ca/rule_1_2",
+        "https://growgraph.dev/doc/447e6aeb76ca/scPRuleReference",
+        "https://growgraph.dev/doc/447e6aeb76ca/scRRedFormulaNote",
+        "https://growgraph.dev/doc/447e6aeb76ca/scRRuleReference",
+        "https://growgraph.dev/doc/447e6aeb76ca/simulationValidationDescription",
+        "https://growgraph.dev/doc/447e6aeb76ca/validation_1a_result",
+        "https://growgraph.dev/doc/447e6aeb76ca/yellowOverlapDescription",
+        "https://growgraph.dev/doc/447e6aeb76ca/yellowRuleReference"
+      ],
+      "component": "",
+      "source_shape": ""
+    }
+  ],
+  "unit_repairs": {
+    "1": [
+      {
+        "kind": "critic_fix",
+        "source": "ids=[14]",
+        "target": "@prefix cd: <https://growgraph.dev/facts/> . @prefix ns1: <http://www.ontologyrepository.com/CommonCoreOntologies/> . cd:car_production_line_case ns1:is_mentioned_by cd:article .",
+        "triple_count": 1
+      },
+      {
+        "kind": "critic_fix",
+        "source": "ids=[19]",
+        "target": "@prefix cd: <https://growgraph.dev/facts/> . @prefix ns1: <http://www.ontologyrepository.com/CommonCoreOntologies/> . cd:car_production_line ns1:is_mentioned_by cd:article .",
+        "triple_count": 1
+      },
+      {
+        "kind": "critic_fix",
+        "source": "",
+        "target": "@prefix cd: <https://growgraph.dev/facts/> . @prefix ns1: <http://www.ontologyrepository.com/CommonCoreOntologies/> . cd:alarm_level_range ns1:describes cd:alarm_level .",
+        "triple_count": 1
+      },
+      {
+        "kind": "critic_fix",
+        "source": "",
+        "target": "@prefix cd: <https://growgraph.dev/facts/> . @prefix opmad: <https://growgraph.dev/ontology/opmad/> . @prefix xsd: <http://www.w3.org/2001/XMLSchema#> . cd:zero_alarm_level opmad:has_text_value \"Everything is functional/nominal\"^^xsd:string . cd:serious_breakdown_alarm_level opmad:has_text_value \"There is a serious break down\"^^xsd:string .",
+        "triple_count": 1
+      },
+      {
+        "kind": "critic_fix",
+        "source": "",
+        "target": "@prefix cd: <https://growgraph.dev/facts/> . @prefix ns1: <http://www.ontologyrepository.com/CommonCoreOntologies/> . cd:fuzzy_early_warning_system ns1:uses cd:fuzzy_inference_model .",
+        "triple_count": 1
+      },
+      {
+        "kind": "critic_fix",
+        "source": "",
+        "target": "@prefix cd: <https://growgraph.dev/facts/> . @prefix ns1: <http://www.ontologyrepository.com/CommonCoreOntologies/> . @prefix opmad: <https://growgraph.dev/ontology/opmad/> . @prefix xsd: <http://www.w3.org/2001/XMLSchema#> . cd:automatic_warning_level_definition a ns1:ActOfEstimation ; ns1:has_input cd:historical_operational_data ; ns1:has_output cd:alarm_level ; opmad:has_text_value \"Automatically defines warning levels using available historical data\"^^xsd:string . cd:fuzzy_early_warning_system ns1:agent_in cd:automatic_warning_level_definition .",
+        "triple_count": 1
+      },
+      {
+        "kind": "critic_fix",
+        "source": "",
+        "target": "@prefix cd: <https://growgraph.dev/facts/> . @prefix ns1: <http://www.ontologyrepository.com/CommonCoreOntologies/> . @prefix opmad: <https://growgraph.dev/ontology/opmad/> . @prefix xsd: <http://www.w3.org/2001/XMLSchema#> . cd:potential_maintenance_actions a ns1:PlanSpecification ; opmad:has_text_value \"Potential actions associated with output warning levels to improve condition-based maintenance strategies\"^^xsd:string . cd:alarm_level ns1:is_subject_of cd:potential_maintenance_actions .",
+        "triple_count": 1
+      }
+    ],
+    "2": [
+      {
+        "kind": "critic_fix",
+        "source": "ids=[4]",
+        "target": "@prefix cd: <https://growgraph.dev/facts/> . @prefix ns1: <http://www.ontologyrepository.com/CommonCoreOntologies/> . cd:fault_detection ns1:uses cd:production_lines .",
+        "triple_count": 1
+      },
+      {
+        "kind": "critic_fix",
+        "source": "",
+        "target": "@prefix cd: <https://growgraph.dev/facts/> . @prefix ns2: <http://purl.obolibrary.org/obo/> . cd:fault_detection ns2:BFO_0000054 cd:production_line_fault_detection_process . cd:production_line_fault_detection_process a ns2:BFO_0000015 ; ns2:RO_0000057 cd:production_lines .",
+        "triple_count": 1
+      },
+      {
+        "kind": "critic_fix",
+        "source": "",
+        "target": "@prefix cd: <https://growgraph.dev/facts/> . @prefix opmad: <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#> . @prefix ns1: <http://www.ontologyrepository.com/CommonCoreOntologies/> . @prefix ns2: <http://purl.obolibrary.org/obo/> . cd:early_warning_model a opmad:Predictive_maintenance_model ; opmad:explained_in cd:article . cd:diagnostic_module_configuration a opmad:Model_configuration ; opmad:has_text_value \"data-driven approach\" . cd:early_warning_model opmad:configuration_described_by cd:diagnostic_module_configuration . cd:fault_detection opmad:function_uses_model cd:early_warning_model . cd:production_line_monitoring_process a ns1:ActOfObservation ; ns2:RO_0000057 cd:production_lines . cd:early_warning_model ns1:prescribes cd:production_line_monitoring_process .",
+        "triple_count": 1
+      }
+    ],
+    "3": [
+      {
+        "kind": "critic_fix",
+        "source": "ids=[3]",
+        "target": "cd:article ns1:is_mentioned_by cd:fews_function . cd:fews_function ns1:is_mentioned_by cd:article .",
+        "triple_count": 1
+      },
+      {
+        "kind": "critic_fix",
+        "source": "ids=[4]",
+        "target": "cd:article ns2:RO_0010002 cd:fuzzy_inference_model .",
+        "triple_count": 1
+      },
+      {
+        "kind": "critic_fix",
+        "source": "",
+        "target": "cd:fews_method_configuration a opmad:Model_configuration ; opmad:has_text_value \"quantitative approach based on historical data\" . cd:fuzzy_inference_model opmad:configuration_described_by cd:fews_method_configuration . cd:article opmad:explains cd:fews_method_configuration .",
+        "triple_count": 1
+      },
+      {
+        "kind": "critic_fix",
+        "source": "",
+        "target": "cd:fuzzification_configuration a opmad:Model_configuration ; opmad:has_text_value \"Input variables are fuzzified using historical data to automatically construct linguistic variables and membership functions.\" . cd:fuzzy_inference_model opmad:configuration_described_by cd:fuzzification_configuration . cd:article opmad:explains cd:fuzzification_configuration .",
+        "triple_count": 1
+      },
+      {
+        "kind": "critic_fix",
+        "source": "",
+        "target": "cd:rule_set_configuration a opmad:Model_configuration ; opmad:has_text_value \"The rule-set is defined using knowledge acquired from historic numerical data and expert knowledge.\" . cd:fuzzy_inference_model opmad:configuration_described_by cd:rule_set_configuration . cd:article opmad:explains cd:rule_set_configuration .",
+        "triple_count": 1
+      }
+    ],
+    "4": [
+      {
+        "kind": "critic_fix",
+        "source": "ids=[15]",
+        "target": "@prefix cd: <https://growgraph.dev/facts/> . @prefix ns1: <http://www.ontologyrepository.com/CommonCoreOntologies/> . cd:down_time ns1:uses_measurement_unit ns1:MinuteMeasurementUnit . cd:down_time a ns1:InformationBearingEntity .",
+        "triple_count": 1
+      },
+      {
+        "kind": "critic_fix",
+        "source": "ids=[39]",
+        "target": "@prefix cd: <https://growgraph.dev/facts/> . @prefix ns1: <http://www.ontologyrepository.com/CommonCoreOntologies/> . cd:historical_data_duration ns1:uses_measurement_unit ns1:MonthMeasurementUnit . cd:historical_data_duration a ns1:InformationBearingEntity .",
+        "triple_count": 1
+      },
+      {
+        "kind": "critic_fix",
+        "source": "ids=[103]",
+        "target": "@prefix cd: <https://growgraph.dev/facts/> . @prefix ns1: <http://www.ontologyrepository.com/CommonCoreOntologies/> . cd:sample_duration ns1:uses_measurement_unit ns1:DayMeasurementUnit . cd:sample_duration a ns1:InformationBearingEntity .",
+        "triple_count": 1
+      },
+      {
+        "kind": "critic_fix",
+        "source": "",
+        "target": "@prefix cd: <https://growgraph.dev/facts/> . @prefix ns1: <http://www.ontologyrepository.com/CommonCoreOntologies/> . cd:historical_data_sample ns1:is_subject_of cd:down_time, cd:overall_equipment_effectiveness .",
+        "triple_count": 1
+      },
+      {
+        "kind": "critic_fix",
+        "source": "",
+        "target": "@prefix cd: <https://growgraph.dev/facts/> . @prefix ns1: <http://www.ontologyrepository.com/CommonCoreOntologies/> . cd:historical_dataset ns1:is_subject_of cd:production_line_machine, cd:historical_machine_count .",
+        "triple_count": 1
+      },
+      {
+        "kind": "critic_fix",
+        "source": "",
+        "target": "@prefix cd: <https://growgraph.dev/facts/> . @prefix ns1: <http://www.ontologyrepository.com/CommonCoreOntologies/> . cd:historical_dataset ns1:is_subject_of cd:overall_equipment_effectiveness .",
+        "triple_count": 1
+      },
+      {
+        "kind": "critic_fix",
+        "source": "ids=[95]",
+        "target": "@prefix cd: <https://growgraph.dev/facts/> . @prefix ns1: <http://www.ontologyrepository.com/CommonCoreOntologies/> . cd:production_line_machine ns1:is_subject_of cd:historical_data_duration .",
+        "triple_count": 1
+      },
+      {
+        "kind": "critic_fix",
+        "source": "ids=[29]",
+        "target": "@prefix cd: <https://growgraph.dev/facts/> . @prefix ns1: <http://www.ontologyrepository.com/CommonCoreOntologies/> . cd:fuzzy_early_warning_system ns1:acronym \"FEWS\" .",
+        "triple_count": 1
+      },
+      {
+        "kind": "critic_fix",
+        "source": "ids=[2]",
+        "target": "@prefix cd: <https://growgraph.dev/facts/> . @prefix ns1: <http://www.ontologyrepository.com/CommonCoreOntologies/> . cd:illustrative_case ns1:is_mentioned_by cd:article .",
+        "triple_count": 1
+      },
+      {
+        "kind": "critic_fix",
+        "source": "",
+        "target": "@prefix cd: <https://growgraph.dev/facts/> . @prefix ns1: <http://www.ontologyrepository.com/CommonCoreOntologies/> . cd:illustrative_case ns1:is_subject_of cd:down_time, cd:scrap_rate_regular_cars, cd:scrap_rate_premium_cars, cd:overall_equipment_ineffectiveness .",
+        "triple_count": 1
+      },
+      {
+        "kind": "critic_fix",
+        "source": "",
+        "target": "@prefix cd: <https://growgraph.dev/facts/> . @prefix opmad: <http://www.semanticweb.org/j.montero-jimenez/ontologies/2021/2/OPMAD#> . cd:scrap_rate_regular_cars opmad:has_text_value \"percentage\" . cd:scrap_rate_premium_cars opmad:has_text_value \"percentage\" . cd:overall_equipment_ineffectiveness opmad:has_text_value \"percentage\" .",
+        "triple_count": 1
+      }
+    ],
+    "5": [
+      {
+        "kind": "critic_fix",
+        "source": "ids=[178, 184]",
+        "target": "@prefix cd: <https://growgraph.dev/facts/> . @prefix ns1: <http://www.ontologyrepository.com/CommonCoreOntologies/> . cd:trapezoidal_membership_functions a ns1:DescriptiveInformationContentEntity . cd:uniform_output_membership_functions a ns1:DescriptiveInformationContentEntity .",
+        "triple_count": 1
+      },
+      {
+        "kind": "critic_fix",
+        "source": "ids=[31, 36, 41, 46, 153, 158, 163, 168, 188, 193, 198, 203, 208]",
+        "target": "@prefix cd: <https://growgraph.dev/facts/> . @prefix ns1: <http://www.ontologyrepository.com/CommonCoreOntologies/> . cd:green_point_a ns1:describes cd:oeie . cd:green_point_b ns1:describes cd:oeie . cd:green_point_c ns1:describes cd:oeie . cd:green_point_d ns1:describes cd:oeie . cd:red_point_a ns1:describes cd:oeie . cd:red_point_b ns1:describes cd:oeie . cd:red_point_c ns1:describes cd:oeie . cd:red_point_d ns1:describes cd:oeie . cd:yellow_point_a_table ns1:describes cd:oeie . cd:yellow_point_a_text ns1:describes cd:oeie . cd:yellow_point_b ns1:describes cd:oeie . cd:yellow_point_c ns1:describes cd:oeie . cd:yellow_point_d ns1:describes cd:oeie .",
+        "triple_count": 1
+      },
+      {
+        "kind": "critic_fix",
+        "source": "ids=[55, 56, 57, 58, 59, 60]",
+        "target": "@prefix cd: <https://growgraph.dev/facts/> . @prefix ns1: <http://www.ontologyrepository.com/CommonCoreOntologies/> . cd:oeie ns1:is_measured_by cd:oeie_maximum, cd:oeie_maximum_std, cd:oeie_mean, cd:oeie_mean_std, cd:oeie_minimum, cd:oeie_minimum_std .",
+        "triple_count": 1
+      },
+      {
+        "kind": "critic_fix",
+        "source": "ids=[27]",
+        "target": "@prefix cd: <https://growgraph.dev/facts/> . @prefix ns1: <http://www.ontologyrepository.com/CommonCoreOntologies/> . cd:fews_module ns1:designated_by cd:fews_case .",
+        "triple_count": 1
+      },
+      {
+        "kind": "critic_fix",
+        "source": "ids=[146, 147, 148, 149, 150]",
+        "target": "@prefix cd: <https://growgraph.dev/facts/> . @prefix ns1: <http://www.ontologyrepository.com/CommonCoreOntologies/> . cd:production_line ns1:described_by cd:alarm_severity_level, cd:downtime, cd:oeie, cd:scrap_premium, cd:scrap_regular .",
+        "triple_count": 1
+      },
+      {
+        "kind": "critic_fix",
+        "source": "",
+        "target": "@prefix cd: <https://growgraph.dev/facts/> . @prefix ns1: <http://www.ontologyrepository.com/CommonCoreOntologies/> . cd:trapezoidal_membership_functions ns1:definition \"Each of the four input linguistic variables has green nominal, yellow problematic-behavior, and red dangerous terms, represented using trapezoidal membership functions.\" . cd:uniform_output_membership_functions ns1:definition \"The alarm severity-level output has green, yellow, orange, and red terms represented by uniform membership functions.\" .",
+        "triple_count": 1
+      },
+      {
+        "kind": "critic_fix",
+        "source": "",
+        "target": "@prefix cd: <https://growgraph.dev/facts/> . @prefix ns1: <http://www.ontologyrepository.com/CommonCoreOntologies/> . cd:uniform_output_membership_functions ns1:definition \"The uniform output membership functions are implemented in MATLAB.\" .",
+        "triple_count": 1
+      }
+    ],
+    "6": [
+      {
+        "kind": "critic_fix",
+        "source": "",
+        "target": "@prefix cd: <https://growgraph.dev/facts/> . @prefix ns1: <http://www.ontologyrepository.com/CommonCoreOntologies/> . cd:fews_module ns1:uses cd:matlab_fuzzy_toolbox . cd:fews_module ns1:uses cd:fews_implemented_rule_set .",
+        "triple_count": 1
+      },
+      {
+        "kind": "critic_fix",
+        "source": "ids=[17]",
+        "target": "@prefix cd: <https://growgraph.dev/facts/> . @prefix ns1: <http://www.ontologyrepository.com/CommonCoreOntologies/> . cd:fews_implemented_rule_set ns1:is_affected_by cd:rule_expansion . cd:rule_expansion a ns1:ActOfArtifactModification ; ns1:has_input cd:fews_rule_set ; ns1:has_output cd:fews_implemented_rule_set .",
+        "triple_count": 1
+      },
+      {
+        "kind": "critic_fix",
+        "source": "ids=[34, 35, 36, 37, 38]",
+        "target": "@prefix cd: <https://growgraph.dev/facts/> . @prefix ns1: <http://www.ontologyrepository.com/CommonCoreOntologies/> . cd:rule_reasoning_i ns1:is_about cd:fews_rule_set . cd:rule_reasoning_ii ns1:is_about cd:fews_rule_set . cd:rule_reasoning_iii ns1:is_about cd:fews_rule_set . cd:rule_reasoning_iv ns1:is_about cd:fews_rule_set . cd:rule_reasoning_v ns1:is_about cd:fews_rule_set .",
+        "triple_count": 1
+      },
+      {
+        "kind": "critic_fix",
+        "source": "",
+        "target": "@prefix cd: <https://growgraph.dev/facts/> . @prefix opmad: <https://w3id.org/opmad#> . cd:current_article opmad:explains cd:fews_module .",
+        "triple_count": 1
+      },
+      {
+        "kind": "critic_fix",
+        "source": "",
+        "target": "@prefix cd: <https://growgraph.dev/facts/> . @prefix ns1: <http://www.ontologyrepository.com/CommonCoreOntologies/> . cd:fews_model ns1:uses cd:sc_r_green_trapezoid, cd:sc_r_yellow_trapezoid, cd:sc_r_red_trapezoid .",
+        "triple_count": 1
+      },
+      {
+        "kind": "critic_fix",
+        "source": "",
+        "target": "@prefix cd: <https://growgraph.dev/facts/> . @prefix ns1: <http://www.ontologyrepository.com/CommonCoreOntologies/> . @prefix opmad: <https://w3id.org/opmad#> . cd:matlab_rule_constraint a ns1:DescriptiveInformationContentEntity ; ns1:describes cd:fews_implemented_rule_set ; opmad:has_text_value \"MATLAB rules can only use either AND or OR in the rule premise; rule 5 could not be implemented as written because it uses both in the same premise.\" .",
+        "triple_count": 1
+      },
+      {
+        "kind": "critic_fix",
+        "source": "",
+        "target": "@prefix cd: <https://growgraph.dev/facts/> . @prefix ns1: <http://www.ontologyrepository.com/CommonCoreOntologies/> . @prefix opmad: <https://w3id.org/opmad#> . cd:validation_1a_result opmad:has_text_value \"Red output caused by an SC-R Red situation, indicating a high scrap rate for regular cars.\" . cd:validation_1a_result ns1:is_about cd:sc_r .",
+        "triple_count": 1
+      },
+      {
+        "kind": "critic_fix",
+        "source": "",
+        "target": "@prefix cd: <https://growgraph.dev/facts/> . @prefix ns1: <http://www.ontologyrepository.com/CommonCoreOntologies/> . @prefix opmad: <https://w3id.org/opmad#> . cd:action_validation_qualification a ns1:DescriptiveInformationContentEntity ; ns1:describes cd:illustrative_action ; opmad:has_text_value \"Recommended actions are illustrative and based on the authors' experience and literature; real implementations require validation and tuning by factory experts.\" .",
+        "triple_count": 1
+      },
+      {
+        "kind": "critic_fix",
+        "source": "",
+        "target": "@prefix cd: <https://growgraph.dev/facts/> . @prefix ns1: <http://www.ontologyrepository.com/CommonCoreOntologies/> . @prefix opmad: <https://w3id.org/opmad#> . cd:membership_limit_validation_description a ns1:DescriptiveInformationContentEntity ; ns1:describes cd:membership_limit_validation ; opmad:has_text_value \"Tests assess whether alarm levels make sense when input variables violate their membership limits and support defining actions for normal or faulted conditions.\" . cd:simulation_validation_description a ns1:DescriptiveInformationContentEntity ; ns1:describes cd:simulation_validation ; opmad:has_text_value \"Random-number simulation runs FEWS to assess model behavior across each variable's range.\" .",
+        "triple_count": 1
+      },
+      {
+        "kind": "critic_fix",
+        "source": "",
+        "target": "@prefix cd: <https://growgraph.dev/facts/> . @prefix ns1: <http://www.ontologyrepository.com/CommonCoreOntologies/> . @prefix opmad: <https://w3id.org/opmad#> . cd:sc_r_red_formula_note a ns1:DescriptiveInformationContentEntity ; ns1:describes cd:sc_r_red_trapezoid ; opmad:has_text_value \"The printed formula [Max-3STD Max+STD Max 100] is inconsistent with the printed second value 14.6 when Max is 18.3 and STD is 3.7; both are retained as printed.\" .",
+        "triple_count": 1
+      }
+    ],
+    "7": [
+      {
+        "kind": "critic_fix",
+        "source": "ids=[16, 18]",
+        "target": "@prefix cd: <https://growgraph.dev/facts/> . @prefix ns1: <http://www.ontologyrepository.com/CommonCoreOntologies/> . cd:apr_dt a ns1:RatioMeasurementInformationContentEntity, ns1:InformationBearingEntity ; ns1:uses_measurement_unit ns1:MinuteMeasurementUnit .",
+        "triple_count": 1
+      },
+      {
+        "kind": "critic_fix",
+        "source": "ids=[158, 160]",
+        "target": "@prefix cd: <https://growgraph.dev/facts/> . @prefix ns1: <http://www.ontologyrepository.com/CommonCoreOntologies/> . cd:full_day_downtime a ns1:RatioMeasurementInformationContentEntity, ns1:InformationBearingEntity ; ns1:uses_measurement_unit ns1:HourMeasurementUnit .",
+        "triple_count": 1
+      },
+      {
+        "kind": "critic_fix",
+        "source": "ids=[179, 181]",
+        "target": "@prefix cd: <https://growgraph.dev/facts/> . @prefix ns1: <http://www.ontologyrepository.com/CommonCoreOntologies/> . cd:jan_dt a ns1:RatioMeasurementInformationContentEntity, ns1:InformationBearingEntity ; ns1:uses_measurement_unit ns1:MinuteMeasurementUnit .",
+        "triple_count": 1
+      },
+      {
+        "kind": "critic_fix",
+        "source": "ids=[270, 272]",
+        "target": "@prefix cd: <https://growgraph.dev/facts/> . @prefix ns1: <http://www.ontologyrepository.com/CommonCoreOntologies/> . cd:oct_dt a ns1:RatioMeasurementInformationContentEntity, ns1:InformationBearingEntity ; ns1:uses_measurement_unit ns1:MinuteMeasurementUnit .",
+        "triple_count": 1
+      },
+      {
+        "kind": "critic_fix",
+        "source": "ids=[224, 228, 232, 303, 311, 319, 327, 335, 343, 349, 355]",
+        "target": "@prefix cd: <https://growgraph.dev/facts/> . @prefix ns1: <http://www.ontologyrepository.com/CommonCoreOntologies/> . cd:matlab_rule_1 a ns1:DirectiveInformationContentEntity . cd:matlab_rule_14 a ns1:DirectiveInformationContentEntity . cd:matlab_rule_3 a ns1:DirectiveInformationContentEntity . cd:rule_1 a ns1:DirectiveInformationContentEntity . cd:rule_2 a ns1:DirectiveInformationContentEntity . cd:rule_3 a ns1:DirectiveInformationContentEntity . cd:rule_4 a ns1:DirectiveInformationContentEntity . cd:rule_5 a ns1:DirectiveInformationContentEntity . cd:rule_6 a ns1:DirectiveInformationContentEntity . cd:rule_7 a ns1:DirectiveInformationContentEntity . cd:rule_8 a ns1:DirectiveInformationContentEntity .",
+        "triple_count": 1
+      },
+      {
+        "kind": "critic_fix",
+        "source": "ids=[598, 599, 612, 613, 622, 623]",
+        "target": "@prefix cd: <https://growgraph.dev/facts/> . @prefix ns1: <http://www.ontologyrepository.com/CommonCoreOntologies/> . cd:validation_april ns1:uses cd:matlab_rule_14, cd:rule_4 . cd:validation_january ns1:uses cd:matlab_rule_3, cd:rule_6 . cd:validation_october ns1:uses cd:matlab_rule_1, cd:rule_1 .",
+        "triple_count": 1
+      },
+      {
+        "kind": "critic_fix",
+        "source": "",
+        "target": "@prefix cd: <https://growgraph.dev/facts/> . @prefix ns1: <http://www.ontologyrepository.com/CommonCoreOntologies/> . cd:validation_january ns1:has_output cd:jan_alarm_status . cd:validation_october ns1:has_output cd:oct_alarm_status . cd:validation_april ns1:has_output cd:apr_alarm_status .",
+        "triple_count": 1
+      },
+      {
+        "kind": "critic_fix",
+        "source": "",
+        "target": "@prefix cd: <https://growgraph.dev/facts/> . @prefix ns1: <http://www.ontologyrepository.com/CommonCoreOntologies/> . cd:validation_april ns1:has_object cd:apr_alarm_status .",
+        "triple_count": 1
+      },
+      {
+        "kind": "critic_fix",
+        "source": "",
+        "target": "@prefix cd: <https://growgraph.dev/facts/> . @prefix ns1: <http://www.ontologyrepository.com/CommonCoreOntologies/> . cd:oct_sc_r_status a ns1:NominalMeasurementInformationContentEntity ; ns1:is_a_nominal_measurement_of cd:sc_r . cd:oct_sc_p_status a ns1:NominalMeasurementInformationContentEntity ; ns1:is_a_nominal_measurement_of cd:sc_p . cd:validation_october ns1:has_output cd:oct_sc_r_status, cd:oct_sc_p_status .",
+        "triple_count": 1
+      },
+      {
+        "kind": "critic_fix",
+        "source": "",
+        "target": "@prefix cd: <https://growgraph.dev/facts/> . @prefix ns1: <http://www.ontologyrepository.com/CommonCoreOntologies/> . cd:apr_sc_r_status a ns1:NominalMeasurementInformationContentEntity ; ns1:is_a_nominal_measurement_of cd:sc_r . cd:apr_sc_p_status a ns1:NominalMeasurementInformationContentEntity ; ns1:is_a_nominal_measurement_of cd:sc_p . cd:validation_april ns1:has_output cd:apr_sc_r_status, cd:apr_sc_p_status .",
+        "triple_count": 1
+      },
+      {
+        "kind": "critic_fix",
+        "source": "",
+        "target": "@prefix cd: <https://growgraph.dev/facts/> . @prefix ns1: <http://www.ontologyrepository.com/CommonCoreOntologies/> . cd:model ns1:uses cd:sc_p_green, cd:sc_p_yellow, cd:sc_p_red, cd:dt_green, cd:dt_yellow, cd:dt_red .",
+        "triple_count": 1
+      },
+      {
+        "kind": "critic_fix",
+        "source": "ids=[597, 611, 621]",
+        "target": "@prefix cd: <https://growgraph.dev/facts/> . @prefix ns1: <http://www.ontologyrepository.com/CommonCoreOntologies/> . cd:validation_sample ns1:is_subject_of cd:april_1_identifier, cd:january_24_identifier, cd:october_18_identifier .",
+        "triple_count": 1
+      },
+      {
+        "kind": "critic_fix",
+        "source": "ids=[236, 237, 241]",
+        "target": "@prefix cd: <https://growgraph.dev/facts/> . @prefix ns1: <http://www.ontologyrepository.com/CommonCoreOntologies/> . @prefix xsd: <http://www.w3.org/2001/XMLSchema#> . cd:matlab_rule_count a ns1:CountMeasurementInformationContentEntity, ns1:InformationBearingEntity ; ns1:has_integer_value \"29\"^^xsd:integer ; ns1:is_a_measurement_of cd:matlab_ruleset .",
+        "triple_count": 1
+      },
+      {
+        "kind": "critic_fix",
+        "source": "ids=[630, 631, 587]",
+        "target": "@prefix cd: <https://growgraph.dev/facts/> . @prefix ns1: <http://www.ontologyrepository.com/CommonCoreOntologies/> . @prefix xsd: <http://www.w3.org/2001/XMLSchema#> . cd:validation_test_count a ns1:CountMeasurementInformationContentEntity, ns1:InformationBearingEntity ; ns1:has_integer_value \"4\"^^xsd:integer ; ns1:is_a_measurement_of cd:validation .",
+        "triple_count": 1
+      },
+      {
+        "kind": "critic_fix",
+        "source": "ids=[372, 373, 627]",
+        "target": "@prefix cd: <https://growgraph.dev/facts/> . @prefix ns1: <http://www.ontologyrepository.com/CommonCoreOntologies/> . @prefix xsd: <http://www.w3.org/2001/XMLSchema#> . cd:sample_day_count a ns1:CountMeasurementInformationContentEntity, ns1:InformationBearingEntity ; ns1:has_integer_value \"4\"^^xsd:integer ; ns1:is_a_measurement_of cd:validation_sample .",
+        "triple_count": 1
+      },
+      {
+        "kind": "critic_fix",
+        "source": "ids=[489, 490, 491, 516, 517, 518, 558, 559, 560, 561, 562]",
+        "target": "@prefix cd: <https://growgraph.dev/facts/> . @prefix ns2: <http://purl.obolibrary.org/obo/> . cd:sc_p_green ns2:RO_0010001 cd:table_4 . cd:sc_p_red ns2:RO_0010001 cd:table_4 . cd:sc_p_yellow ns2:RO_0010001 cd:table_4 . cd:dt_green ns2:RO_0010001 cd:table_5 . cd:dt_red ns2:RO_0010001 cd:table_5 . cd:dt_yellow ns2:RO_0010001 cd:table_5 . cd:jan_alarm ns2:RO_0010001 cd:table_7 . cd:jan_dt ns2:RO_0010001 cd:table_7 . cd:jan_oeie ns2:RO_0010001 cd:table_7 . cd:jan_sc_p ns2:RO_0010001 cd:table_7 . cd:jan_sc_r ns2:RO_0010001 cd:table_7 .",
+        "triple_count": 1
+      },
+      {
+        "kind": "critic_fix",
+        "source": "",
+        "target": "@prefix cd: <https://growgraph.dev/facts/> . @prefix ns1: <http://www.ontologyrepository.com/CommonCoreOntologies/> . cd:dt_green_min a ns1:InformationBearingEntity ; ns1:uses_measurement_unit ns1:MinuteMeasurementUnit . cd:dt_green_p1 a ns1:InformationBearingEntity ; ns1:uses_measurement_unit ns1:MinuteMeasurementUnit . cd:dt_green_p2 a ns1:InformationBearingEntity ; ns1:uses_measurement_unit ns1:MinuteMeasurementUnit . cd:dt_green_p3 a ns1:InformationBearingEntity ; ns1:uses_measurement_unit ns1:MinuteMeasurementUnit . cd:dt_green_p4 a ns1:InformationBearingEntity ; ns1:uses_measurement_unit ns1:MinuteMeasurementUnit . cd:dt_green_std a ns1:InformationBearingEntity ; ns1:uses_measurement_unit ns1:MinuteMeasurementUnit . cd:dt_yellow_mean a ns1:InformationBearingEntity ; ns1:uses_measurement_unit ns1:MinuteMeasurementUnit . cd:dt_yellow_p1 a ns1:InformationBearingEntity ; ns1:uses_measurement_unit ns1:MinuteMeasurementUnit . cd:dt_yellow_p2 a ns1:InformationBearingEntity ; ns1:uses_measurement_unit ns1:MinuteMeasurementUnit . cd:dt_yellow_p3 a ns1:InformationBearingEntity ; ns1:uses_measurement_unit ns1:MinuteMeasurementUnit . cd:dt_yellow_p4 a ns1:InformationBearingEntity ; ns1:uses_measurement_unit ns1:MinuteMeasurementUnit . cd:dt_yellow_std a ns1:InformationBearingEntity ; ns1:uses_measurement_unit ns1:MinuteMeasurementUnit . cd:dt_red_max a ns1:InformationBearingEntity ; ns1:uses_measurement_unit ns1:MinuteMeasurementUnit . cd:dt_red_p1 a ns1:InformationBearingEntity ; ns1:uses_measurement_unit ns1:MinuteMeasurementUnit . cd:dt_red_p2 a ns1:InformationBearingEntity ; ns1:uses_measurement_unit ns1:MinuteMeasurementUnit . cd:dt_red_p3 a ns1:InformationBearingEntity ; ns1:uses_measurement_unit ns1:MinuteMeasurementUnit . cd:dt_red_p4 a ns1:InformationBearingEntity ; ns1:uses_measurement_unit ns1:MinuteMeasurementUnit . cd:dt_red_std a ns1:InformationBearingEntity ; ns1:uses_measurement_unit ns1:MinuteMeasurementUnit .",
+        "triple_count": 1
+      }
+    ],
+    "8": [
+      {
+        "kind": "critic_fix",
+        "source": "",
+        "target": "@prefix cd: <https://growgraph.dev/facts/> . @prefix ns1: <http://www.ontologyrepository.com/CommonCoreOntologies/> . cd:june_dt ns1:is_about cd:june_11 . cd:june_oeie ns1:is_about cd:june_11 . cd:june_sc_p ns1:is_about cd:june_11 . cd:june_sc_r ns1:is_about cd:june_11 . cd:october_dt ns1:is_about cd:october_18 . cd:october_oeie ns1:is_about cd:october_18 . cd:october_sc_p ns1:is_about cd:october_18 . cd:october_sc_r ns1:is_about cd:october_18 . cd:april_dt ns1:is_about cd:april_1 . cd:april_oeie ns1:is_about cd:april_1 . cd:april_sc_p ns1:is_about cd:april_1 . cd:april_sc_r ns1:is_about cd:april_1 .",
+        "triple_count": 1
+      },
+      {
+        "kind": "critic_fix",
+        "source": "",
+        "target": "@prefix cd: <https://growgraph.dev/facts/> . @prefix ns1: <http://www.ontologyrepository.com/CommonCoreOntologies/> . cd:case ns1:is_about cd:manufacturing_equipment . cd:warning_module ns1:is_subject_of cd:case .",
+        "triple_count": 1
+      },
+      {
+        "kind": "critic_fix",
+        "source": "",
+        "target": "@prefix cd: <https://growgraph.dev/facts/> . @prefix ns1: <http://www.ontologyrepository.com/CommonCoreOntologies/> . cd:dt ns1:is_about cd:manufacturing_equipment . cd:oeie ns1:is_about cd:manufacturing_equipment . cd:sc_p ns1:is_about cd:manufacturing_equipment . cd:sc_r ns1:is_about cd:manufacturing_equipment .",
+        "triple_count": 1
+      },
+      {
+        "kind": "critic_fix",
+        "source": "ids=[94, 96]",
+        "target": "@prefix cd: <https://growgraph.dev/facts/> . @prefix ns1: <http://www.ontologyrepository.com/CommonCoreOntologies/> . cd:june_action ns1:permits cd:checking_parts, cd:replacing_worn_parts .",
+        "triple_count": 1
+      },
+      {
+        "kind": "critic_fix",
+        "source": "ids=[274, 273, 225, 226, 71, 72]",
+        "target": "@prefix cd: <https://growgraph.dev/facts/> . @prefix ns1: <http://www.ontologyrepository.com/CommonCoreOntologies/> . cd:validation_1 ns1:uses cd:rule_2, cd:matlab_rule_6 . cd:october_test ns1:uses cd:rule_1, cd:matlab_rule_1 . cd:april_test ns1:uses cd:rule_4, cd:matlab_rule_14 .",
+        "triple_count": 1
+      },
+      {
+        "kind": "critic_fix",
+        "source": "ids=[249, 246, 253]",
+        "target": "@prefix cd: <https://growgraph.dev/facts/> . @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> . cd:rule_2 rdfs:seeAlso cd:matlab_rule_6 . cd:rule_1 rdfs:seeAlso cd:matlab_rule_1 . cd:rule_4 rdfs:seeAlso cd:matlab_rule_14 .",
+        "triple_count": 1
+      },
+      {
+        "kind": "critic_fix",
+        "source": "",
+        "target": "@prefix cd: <https://growgraph.dev/facts/> . @prefix ns1: <http://www.ontologyrepository.com/CommonCoreOntologies/> . cd:validation_2 ns1:has_object cd:matlab_model ; ns1:uses cd:warning_module .",
+        "triple_count": 1
+      },
+      {
+        "kind": "critic_fix",
+        "source": "ids=[76]",
+        "target": "@prefix cd: <https://growgraph.dev/facts/> . @prefix ns1: <http://www.ontologyrepository.com/CommonCoreOntologies/> . cd:matlab_model ns1:is_mentioned_by cd:article .",
+        "triple_count": 1
+      },
+      {
+        "kind": "critic_fix",
+        "source": "ids=[89]",
+        "target": "@prefix cd: <https://growgraph.dev/facts/> . @prefix opmad: <https://example.org/opmad/> . @prefix ns1: <http://www.ontologyrepository.com/CommonCoreOntologies/> . cd:warning_module ns1:uses cd:matlab_model .",
+        "triple_count": 1
+      },
+      {
+        "kind": "critic_fix",
+        "source": "ids=[147]",
+        "target": "@prefix cd: <https://growgraph.dev/facts/> . @prefix ns1: <http://www.ontologyrepository.com/CommonCoreOntologies/> . cd:manufacturing_equipment a ns1:Artifact .",
+        "triple_count": 1
+      }
+    ],
+    "9": [
+      {
+        "kind": "critic_fix",
+        "source": "ids=[91]",
+        "target": "@prefix cd: <https://growgraph.dev/facts/> . @prefix ns1: <http://www.ontologyrepository.com/CommonCoreOntologies/> . cd:lower_limits_check a ns1:ActOfMeasuring .",
+        "triple_count": 1
+      },
+      {
+        "kind": "critic_fix",
+        "source": "",
+        "target": "@prefix cd: <https://growgraph.dev/facts/> . @prefix ns1: <http://www.ontologyrepository.com/CommonCoreOntologies/> . @prefix opmad: <https://w3id.org/opmad#> . cd:alarm_level a opmad:Data_variable ; opmad:has_text_value \"Alarm-level\" . cd:june_11_alarm_level ns1:is_a_ratio_measurement_of cd:alarm_level . cd:lower_alarm_level ns1:is_a_ratio_measurement_of cd:alarm_level .",
+        "triple_count": 1
+      },
+      {
+        "kind": "critic_fix",
+        "source": "ids=[12, 21, 39, 56, 65, 77, 83, 100, 112, 121]",
+        "target": "@prefix cd: <https://growgraph.dev/facts/> . @prefix ns1: <http://www.ontologyrepository.com/CommonCoreOntologies/> . cd:june_11_alarm_level ns1:is_measured_by_nominal cd:june_11_alarm_yellow . cd:june_11_dt ns1:is_measured_by_nominal cd:june_11_dt_yellow . cd:june_11_oeie ns1:is_measured_by_nominal cd:june_11_oeie_green . cd:june_11_sc_p ns1:is_measured_by_nominal cd:june_11_sc_p_yellow . cd:june_11_sc_r ns1:is_measured_by_nominal cd:june_11_sc_r_green . cd:lower_alarm_level ns1:is_measured_by_nominal cd:lower_alarm_green . cd:lower_dt ns1:is_measured_by_nominal cd:lower_dt_green . cd:lower_oeie ns1:is_measured_by_nominal cd:lower_oeie_green . cd:lower_sc_p ns1:is_measured_by_nominal cd:lower_sc_p_green . cd:lower_sc_r ns1:is_measured_by_nominal cd:lower_sc_r_green .",
+        "triple_count": 1
+      }
+    ],
+    "10": [
+      {
+        "kind": "critic_fix",
+        "source": "ids=[35, 36, 37, 38, 39, 40, 41]",
+        "target": "@prefix cd: <https://growgraph.dev/facts/> . @prefix ns1: <http://www.ontologyrepository.com/CommonCoreOntologies/> . @prefix opmad: <https://w3id.org/opmad#> . @prefix xsd: <http://www.w3.org/2001/XMLSchema#> . cd:lower_limit_oeie a ns1:RatioMeasurementInformationContentEntity ; ns1:is_a_ratio_measurement_of cd:oeie ; opmad:has_interger_value \"0\"^^xsd:integer . cd:lower_limit_sc_r a ns1:RatioMeasurementInformationContentEntity ; ns1:is_a_ratio_measurement_of cd:sc_r ; opmad:has_interger_value \"0\"^^xsd:integer . cd:lower_limit_sc_p a ns1:RatioMeasurementInformationContentEntity ; ns1:is_a_ratio_measurement_of cd:sc_p ; opmad:has_interger_value \"0\"^^xsd:integer . cd:lower_limit_dt a ns1:RatioMeasurementInformationContentEntity ; ns1:is_a_ratio_measurement_of cd:dt ; opmad:has_interger_value \"0\"^^xsd:integer . cd:lower_limit_situation ns1:described_by cd:lower_limit_oeie, cd:lower_limit_sc_r, cd:lower_limit_sc_p, cd:lower_limit_dt .",
+        "triple_count": 1
+      },
+      {
+        "kind": "critic_fix",
+        "source": "ids=[4]",
+        "target": "@prefix cd: <https://growgraph.dev/facts/> . @prefix ns1: <http://www.ontologyrepository.com/CommonCoreOntologies/> . cd:production_line_case ns1:is_mentioned_by cd:article .",
+        "triple_count": 1
+      },
+      {
+        "kind": "critic_fix",
+        "source": "",
+        "target": "@prefix cd: <https://growgraph.dev/facts/> . @prefix ns1: <http://www.ontologyrepository.com/CommonCoreOntologies/> . cd:baseline_no_action a ns1:ActionPermission ; ns1:is_about cd:lower_limit_situation ; opmad:has_text_value \"no action is required\" .",
+        "triple_count": 1
+      },
+      {
+        "kind": "critic_fix",
+        "source": "",
+        "target": "@prefix cd: <https://growgraph.dev/facts/> . @prefix ns1: <http://www.ontologyrepository.com/CommonCoreOntologies/> . cd:lower_limit_situation ns1:is_subject_of cd:rule_1 . cd:yellow_situation ns1:is_subject_of cd:rule_1 .",
+        "triple_count": 1
+      },
+      {
+        "kind": "critic_fix",
+        "source": "ids=[78]",
+        "target": "@prefix cd: <https://growgraph.dev/facts/> . @prefix ns1: <http://www.ontologyrepository.com/CommonCoreOntologies/> . cd:rule_1 a ns1:DirectiveInformationContentEntity .",
+        "triple_count": 1
+      },
+      {
+        "kind": "critic_fix",
+        "source": "",
+        "target": "@prefix cd: <https://growgraph.dev/facts/> . @prefix opmad: <https://w3id.org/opmad#> . cd:rule_1 opmad:has_text_value \"If (OEIE is Green or Yellow) and SC-R is Green and SC-P is Green and (DT is Green or Yellow) Then M is Green.\" .",
+        "triple_count": 1
+      },
+      {
+        "kind": "critic_fix",
+        "source": "",
+        "target": "@prefix cd: <https://growgraph.dev/facts/> . @prefix ns1: <http://www.ontologyrepository.com/CommonCoreOntologies/> . @prefix opmad: <https://w3id.org/opmad#> . cd:sc_r_rule_reference a ns1:DescriptiveInformationContentEntity ; ns1:describes cd:sc_r_situation ; opmad:has_text_value \"Output (rule #6 Table 6 and #3 in Fig. 5)\" .",
+        "triple_count": 1
+      },
+      {
+        "kind": "critic_fix",
+        "source": "",
+        "target": "@prefix cd: <https://growgraph.dev/facts/> . @prefix ns1: <http://www.ontologyrepository.com/CommonCoreOntologies/> . @prefix opmad: <https://w3id.org/opmad#> . cd:sc_p_rule_reference a ns1:DescriptiveInformationContentEntity ; ns1:describes cd:sc_p_situation ; opmad:has_text_value \"Output (rule #1 Table 6 and #1 in Fig. 5)\" .",
+        "triple_count": 1
+      },
+      {
+        "kind": "critic_fix",
+        "source": "",
+        "target": "@prefix cd: <https://growgraph.dev/facts/> . @prefix ns1: <http://www.ontologyrepository.com/CommonCoreOntologies/> . @prefix opmad: <https://w3id.org/opmad#> . cd:yellow_rule_reference a ns1:DescriptiveInformationContentEntity ; ns1:describes cd:yellow_situation ; opmad:has_text_value \"Output (rule #1 Table 6 and #12 in Fig. 5)\" .",
+        "triple_count": 1
+      },
+      {
+        "kind": "critic_fix",
+        "source": "",
+        "target": "@prefix cd: <https://growgraph.dev/facts/> . @prefix ns1: <http://www.ontologyrepository.com/CommonCoreOntologies/> . @prefix opmad: <https://w3id.org/opmad#> . cd:yellow_overlap_description a ns1:DescriptiveInformationContentEntity ; ns1:describes cd:yellow_situation ; opmad:has_text_value \"OEIE overlapping on yellow and red level while the others are in green situations\" .",
+        "triple_count": 1
+      },
+      {
+        "kind": "critic_fix",
+        "source": "ids=[181]",
+        "target": "@prefix cd: <https://growgraph.dev/facts/> . @prefix ns1: <http://www.ontologyrepository.com/CommonCoreOntologies/> . cd:temperature_monitoring ns1:has_object cd:equipment_temperature .",
+        "triple_count": 1
+      },
+      {
+        "kind": "critic_fix",
+        "source": "",
+        "target": "@prefix cd: <https://growgraph.dev/facts/> . @prefix ns1: <http://www.ontologyrepository.com/CommonCoreOntologies/> . @prefix opmad: <https://w3id.org/opmad#> . cd:machine_efficiency a opmad:Data_variable ; ns1:describes cd:equipment . cd:efficiency_check a ns1:ActOfObservation ; ns1:has_object cd:machine_efficiency . cd:yellow_action ns1:requires cd:efficiency_check .",
+        "triple_count": 1
+      },
+      {
+        "kind": "critic_fix",
+        "source": "ids=[58, 59, 60, 61]",
+        "target": "@prefix cd: <https://growgraph.dev/facts/> . @prefix ns1: <http://www.ontologyrepository.com/CommonCoreOntologies/> . cd:production_line ns1:described_by cd:dt, cd:oeie, cd:sc_p, cd:sc_r .",
+        "triple_count": 1
+      },
+      {
+        "kind": "critic_fix",
+        "source": "ids=[31, 94, 100, 109, 114, 127, 140, 146, 155, 160, 173, 193, 199, 208, 213, 218]",
+        "target": "@prefix cd: <https://growgraph.dev/facts/> . @prefix ns1: <http://www.ontologyrepository.com/CommonCoreOntologies/> . cd:lower_limit_alarm ns1:is_a_ratio_measurement_of cd:alarm_level . cd:sc_p_alarm ns1:is_a_ratio_measurement_of cd:alarm_level . cd:sc_p_dt ns1:is_a_ratio_measurement_of cd:dt . cd:sc_p_oeie ns1:is_a_ratio_measurement_of cd:oeie . cd:sc_p_sc_r ns1:is_a_ratio_measurement_of cd:sc_r . cd:sc_p_value ns1:is_a_ratio_measurement_of cd:sc_p . cd:sc_r_alarm ns1:is_a_ratio_measurement_of cd:alarm_level . cd:sc_r_dt ns1:is_a_ratio_measurement_of cd:dt . cd:sc_r_oeie ns1:is_a_ratio_measurement_of cd:oeie . cd:sc_r_sc_p ns1:is_a_ratio_measurement_of cd:sc_p . cd:sc_r_value ns1:is_a_ratio_measurement_of cd:sc_r . cd:yellow_alarm ns1:is_a_ratio_measurement_of cd:alarm_level . cd:yellow_dt ns1:is_a_ratio_measurement_of cd:dt . cd:yellow_oeie ns1:is_a_ratio_measurement_of cd:oeie . cd:yellow_sc_p ns1:is_a_ratio_measurement_of cd:sc_p . cd:yellow_sc_r ns1:is_a_ratio_measurement_of cd:sc_r .",
+        "triple_count": 1
+      },
+      {
+        "kind": "critic_fix",
+        "source": "",
+        "target": "@prefix cd: <https://growgraph.dev/facts/> . @prefix ns1: <http://www.ontologyrepository.com/CommonCoreOntologies/> . cd:matlab_rule_set ns1:uses cd:oeie, cd:sc_r, cd:sc_p, cd:dt .",
+        "triple_count": 1
+      },
+      {
+        "kind": "critic_fix",
+        "source": "",
+        "target": "@prefix cd: <https://growgraph.dev/facts/> . @prefix ns1: <http://www.ontologyrepository.com/CommonCoreOntologies/> . cd:yellow_action ns1:is_subject_of cd:production_line_article_description . cd:sc_r_action ns1:is_subject_of cd:production_line_article_description . cd:sc_p_action ns1:is_subject_of cd:production_line_article_description .",
+        "triple_count": 1
+      }
+    ],
+    "11": [
+      {
+        "kind": "critic_fix",
+        "source": "ids=[101]",
+        "target": "@prefix cd: <https://growgraph.dev/facts/> . @prefix ns1: <http://www.ontologyrepository.com/CommonCoreOntologies/> . cd:e_dt a ns1:RatioMeasurementInformationContentEntity, ns1:InformationBearingEntity .",
+        "triple_count": 1
+      },
+      {
+        "kind": "critic_fix",
+        "source": "ids=[144, 147, 150, 153]",
+        "target": "@prefix cd: <https://growgraph.dev/facts/> . @prefix ns1: <http://www.ontologyrepository.com/CommonCoreOntologies/> . cd:rule_1 a ns1:Algorithm . cd:rule_2 a ns1:Algorithm . cd:rule_4 a ns1:Algorithm . cd:rule_6 a ns1:Algorithm .",
+        "triple_count": 1
+      },
+      {
+        "kind": "critic_fix",
+        "source": "ids=[344, 355]",
+        "target": "@prefix cd: <https://growgraph.dev/facts/> . @prefix ns1: <http://www.ontologyrepository.com/CommonCoreOntologies/> . cd:validation_2_test_c ns1:prescribed_by cd:c_action . cd:validation_2_test_d ns1:prescribed_by cd:d_action .",
+        "triple_count": 1
+      },
+      {
+        "kind": "critic_fix",
+        "source": "",
+        "target": "@prefix cd: <https://growgraph.dev/facts/> . @prefix ns1: <http://www.ontologyrepository.com/CommonCoreOntologies/> . cd:validation_3 ns1:uses cd:fews_module . cd:simulation_1 ns1:uses cd:fews_model . cd:simulation_2 ns1:uses cd:fews_model . cd:simulation_3 ns1:uses cd:fews_model . cd:simulation_4 ns1:uses cd:fews_model . cd:simulation_5 ns1:uses cd:fews_model .",
+        "triple_count": 1
+      },
+      {
+        "kind": "critic_fix",
+        "source": "",
+        "target": "@prefix cd: <https://growgraph.dev/facts/> . @prefix ns1: <http://www.ontologyrepository.com/CommonCoreOntologies/> . @prefix opmad: <https://growgraph.dev/ontology/opmad/> . cd:b_followup a ns1:DescriptiveInformationContentEntity ; opmad:has_text_value \"Some attention should be paid in the next iterations; the green alarm is at its highest level.\" ; ns1:describes cd:validation_2_test_b .",
+        "triple_count": 1
+      },
+      {
+        "kind": "critic_fix",
+        "source": "",
+        "target": "@prefix cd: <https://growgraph.dev/facts/> . @prefix ns1: <http://www.ontologyrepository.com/CommonCoreOntologies/> . @prefix opmad: <https://growgraph.dev/ontology/opmad/> . cd:c_possible_actions a ns1:DescriptiveInformationContentEntity ; opmad:has_text_value \"Potential CBM strategies include checking and cleaning dust from specific components and changing worn parts.\" ; ns1:describes cd:validation_2_test_c .",
+        "triple_count": 1
+      },
+      {
+        "kind": "critic_fix",
+        "source": "",
+        "target": "@prefix cd: <https://growgraph.dev/facts/> . @prefix ns1: <http://www.ontologyrepository.com/CommonCoreOntologies/> . @prefix opmad: <https://growgraph.dev/ontology/opmad/> . cd:d_possible_actions a ns1:DescriptiveInformationContentEntity ; opmad:has_text_value \"Examples of immediate action include substituting input raw materials and replacing faulty spare parts.\" ; ns1:describes cd:validation_2_test_d .",
+        "triple_count": 1
+      },
+      {
+        "kind": "critic_fix",
+        "source": "",
+        "target": "@prefix cd: <https://growgraph.dev/facts/> . @prefix ns1: <http://www.ontologyrepository.com/CommonCoreOntologies/> . @prefix opmad: <https://growgraph.dev/ontology/opmad/> . cd:e_action_assessment a ns1:DescriptiveInformationContentEntity ; opmad:has_text_value \"No mandatory actions are required for this test result.\" ; ns1:describes cd:validation_2_test_e .",
+        "triple_count": 1
+      },
+      {
+        "kind": "critic_fix",
+        "source": "",
+        "target": "@prefix cd: <https://growgraph.dev/facts/> . @prefix ns1: <http://www.ontologyrepository.com/CommonCoreOntologies/> . @prefix opmad: <https://growgraph.dev/ontology/opmad/> . cd:simulation_consistency a ns1:DescriptiveInformationContentEntity ; opmad:has_text_value \"FEWS rule-viewer outputs are consistent with results from the toolbox FEWS model.\" ; ns1:describes cd:validation_3 .",
+        "triple_count": 1
+      },
+      {
+        "kind": "critic_fix",
+        "source": "ids=[129, 130, 131, 132, 133]",
+        "target": "@prefix cd: <https://growgraph.dev/facts/> . @prefix ns1: <http://www.ontologyrepository.com/CommonCoreOntologies/> . cd:fews_model ns1:uses cd:alarm_level, cd:dt, cd:oeie, cd:sc_p, cd:sc_r .",
+        "triple_count": 1
+      },
+      {
+        "kind": "critic_fix",
+        "source": "ids=[387, 383]",
+        "target": "@prefix cd: <https://growgraph.dev/facts/> . @prefix ns1: <http://www.ontologyrepository.com/CommonCoreOntologies/> . cd:variable_count ns1:is_a_measurement_of cd:case . cd:case ns1:is_measured_by cd:variable_count .",
+        "triple_count": 1
+      },
+      {
+        "kind": "critic_fix",
+        "source": "",
+        "target": "@prefix cd: <https://growgraph.dev/facts/> . @prefix ns1: <http://www.ontologyrepository.com/CommonCoreOntologies/> . cd:c_alarm ns1:is_subject_of cd:c_action . cd:d_alarm ns1:is_subject_of cd:d_action .",
+        "triple_count": 1
+      },
+      {
+        "kind": "critic_fix",
+        "source": "",
+        "target": "@prefix cd: <https://growgraph.dev/facts/> . @prefix ns1: <http://www.ontologyrepository.com/CommonCoreOntologies/> . @prefix opmad: <https://growgraph.dev/ontology/opmad/> . cd:matlab_rule_b a ns1:Algorithm ; opmad:has_text_value \"MATLAB rule #12 corresponds to Table 6 rule #1 in validation 2 test (b).\" . cd:validation_2_test_b ns1:uses cd:matlab_rule_b .",
+        "triple_count": 1
+      },
+      {
+        "kind": "critic_fix",
+        "source": "",
+        "target": "@prefix cd: <https://growgraph.dev/facts/> . @prefix ns1: <http://www.ontologyrepository.com/CommonCoreOntologies/> . @prefix opmad: <https://growgraph.dev/ontology/opmad/> . cd:matlab_rule_red a ns1:Algorithm ; opmad:has_text_value \"MATLAB rule #3: If SC-R is Red or SC-P is Red Then M is Red; corresponds to Table 6 rule #6.\" . cd:validation_2_test_c ns1:uses cd:matlab_rule_red . cd:validation_2_test_d ns1:uses cd:matlab_rule_red .",
+        "triple_count": 1
+      },
+      {
+        "kind": "critic_fix",
+        "source": "",
+        "target": "@prefix cd: <https://growgraph.dev/facts/> . @prefix ns1: <http://www.ontologyrepository.com/CommonCoreOntologies/> . @prefix opmad: <https://growgraph.dev/ontology/opmad/> . cd:matlab_rule_e a ns1:Algorithm ; opmad:has_text_value \"MATLAB rule #2 corresponds to Table 6 rule #1 in validation 2 test (e).\" . cd:validation_2_test_e ns1:uses cd:matlab_rule_e .",
+        "triple_count": 1
+      }
+    ],
+    "12": [
+      {
+        "kind": "critic_fix",
+        "source": "ids=[22]",
+        "target": "@prefix cd: <https://growgraph.dev/facts/> . @prefix ns1: <http://www.ontologyrepository.com/CommonCoreOntologies/> . cd:demonstrator_case ns1:is_about cd:spare_parts_production_line .",
+        "triple_count": 1
+      },
+      {
+        "kind": "critic_fix",
+        "source": "ids=[16]",
+        "target": "@prefix cd: <https://growgraph.dev/facts/> . @prefix opmad: <https://w3id.org/opmad#> . cd:production_line_fault_detection opmad:is_predictive_maintenance_function_of cd:fuzzy_early_warning_system .",
+        "triple_count": 1
+      },
+      {
+        "kind": "critic_fix",
+        "source": "ids=[18, 19, 20]",
+        "target": "@prefix cd: <https://growgraph.dev/facts/> . @prefix ns1: <http://www.ontologyrepository.com/CommonCoreOntologies/> . @prefix opmad: <https://w3id.org/opmad#> . cd:production_line_faults a opmad:Failure ; ns1:is_affected_by cd:production_line_fault_detection_process . cd:production_line_fault_detection_process a ns1:ActOfObservation ; ns1:has_object cd:production_line_faults .",
+        "triple_count": 1
+      },
+      {
+        "kind": "critic_fix",
+        "source": "ids=[24]",
+        "target": "@prefix cd: <https://growgraph.dev/facts/> . @prefix ns1: <http://www.ontologyrepository.com/CommonCoreOntologies/> . cd:validation_3 a ns1:ActOfEstimation .",
+        "triple_count": 1
+      },
+      {
+        "kind": "critic_fix",
+        "source": "",
+        "target": "@prefix cd: <https://growgraph.dev/facts/> . @prefix ns1: <http://www.ontologyrepository.com/CommonCoreOntologies/> . cd:fews_what_if_function a ns1:ArtifactFunction . cd:fuzzy_early_warning_system <http://purl.obolibrary.org/obo/RO_0000085> cd:fews_what_if_function .",
+        "triple_count": 1
+      },
+      {
+        "kind": "critic_fix",
+        "source": "",
+        "target": "@prefix cd: <https://growgraph.dev/facts/> . @prefix ns1: <http://www.ontologyrepository.com/CommonCoreOntologies/> . @prefix opmad: <https://w3id.org/opmad#> . cd:fews_interval_configuration a opmad:Model_configuration . cd:fews_approach opmad:configuration_described_by cd:fews_interval_configuration .",
+        "triple_count": 1
+      }
+    ]
+  },
+  "unit_failures": []
+}
