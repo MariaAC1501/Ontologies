@@ -23,8 +23,8 @@ from datetime import datetime, timezone
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
-SOURCES = ROOT / "papers/opmad_sources.csv"
-PDF_DIR = ROOT / "papers/pdfs"
+SOURCES = ROOT / "corpus/opmad_sources.csv"
+PDF_DIR = ROOT / "corpus/pdfs"
 ONTOLOGY = ROOT / "ontologies/opmad-ontocast/OPMAD-ontocast.ttl"
 INSTRUCTION = (
     "The very basic structure of a case starts with an instance of a  "
@@ -96,7 +96,7 @@ def select_papers(papers: list[Paper], selectors: list[str] | None) -> list[Pape
         if paper is None:
             raise ValueError(
                 f"Unknown paper {selector!r}. Use an exact source ID, DOI, "
-                "or PDF filename from papers/opmad_sources.csv and papers/pdfs."
+                "or PDF filename from corpus/opmad_sources.csv and corpus/pdfs."
             )
         if not paper.pdf.is_file():
             raise ValueError(f"No PDF for {paper.source_id}: expected {paper.pdf}")
@@ -143,7 +143,7 @@ def main() -> int:
     selection.add_argument(
         "--all",
         action="store_true",
-        help="Run all locally available PDFs listed in papers/opmad_sources.csv.",
+        help="Run all locally available PDFs listed in corpus/opmad_sources.csv.",
     )
     parser.add_argument(
         "--output-dir",
